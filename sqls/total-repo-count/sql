@@ -1,0 +1,1 @@
+SELECT COUNTDistinct(repo_id) as count FROM {{table}}
