@@ -1,0 +1,4 @@
+{
+  "config": {},
+  "description": "Return the total record count of year {{year}}"
+}
