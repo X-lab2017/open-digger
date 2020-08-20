@@ -97,7 +97,7 @@
       {
         "name": "sql-reviewer",
         "description": "Review the sql related PR to run SQL by command",
-        "users": [ "tianyichow", "sunshinemingo", "JerryKuan" ],
+        "users": [ "tianyichow", "sunshinemingo", "JerryKuan", "frank-zsy" ],
         "commands": [ "/sql-run", "/sql-verified" ]
       },
       {
