@@ -142,7 +142,7 @@
   "self_assign": {
     "version": 1
   },
-  "sql-verified": {
+  "sql_verified": {
     "version": 1
   }
 }
