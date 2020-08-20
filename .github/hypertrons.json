@@ -43,7 +43,13 @@
       },
       {
         "name": "pull/sql-verified",
-        "description": "SQL related pull",
+        "description": "SQL related pull and the sql has been verified",
+        "color": "99ff66",
+        "keywords": []
+      },
+      {
+        "name": "pull/sql-runned",
+        "description": "SQL related pull and the sql has been verified",
         "color": "99ff66",
         "keywords": []
       },
