@@ -1,4 +1,4 @@
-import { configClass, configProp } from '../decorators';
+import { configClass, configProp } from '../../config-generator/decorators';
 import defaultConfig from './defaultConfig';
 
 @configClass({
