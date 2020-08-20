@@ -141,5 +141,8 @@
   },
   "self_assign": {
     "version": 1
+  },
+  "sql-verified": {
+    "version": 1
   }
 }
