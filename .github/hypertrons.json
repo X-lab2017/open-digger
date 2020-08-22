@@ -144,5 +144,8 @@
   },
   "sql_verified": {
     "version": 1
+  },
+  "auto_update_report": {
+    "version": 1
   }
 }
