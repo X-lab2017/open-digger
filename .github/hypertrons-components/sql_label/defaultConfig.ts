@@ -15,27 +15,12 @@
 import Config from './config';
 
 const defaultConfig: Config = {
-  sqlRequestUrl: 'http://localhost:7001/query',
-  command: '/sql-run',
-  sqlFileRegex: 'sqls/([%w|-]+)/sql',
-  manifestFileRegex: 'sqls/([%w|-]+)/manifest%.json',
-  postProcessFileRegex: 'sqls/([%w|-]+)/post%-processor%.js',
-  defaultRenderParams: {
-    year: 2020,
-    table: 'github_log.year2020',
-  },
-  commentItemTemplate: `I found SQL component \`{{sqlName}}\` in this PR, the SQL run result data is:
-\`\`\`
-{{data}}
-\`\`\`
-The renderred text is:
-
-{{text}}
-
-Please check whether the result is as expected.
-
-`,
   label: 'pull/sql',
+  sqlFilesRegex: [
+    'sqls/([%w|-]+)/sql',
+    'sqls/([%w|-]+)/manifest%.json',
+    'sqls/([%w|-]+)/post%-processor%.js',
+  ],
 };
 
 export default defaultConfig;

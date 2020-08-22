@@ -63,4 +63,11 @@ export default class Config {
     defaultValue: defaultConfig.commentItemTemplate,
   })
   commentItemTemplate: string;
+
+
+  @configProp({
+    description: 'The label added to runned pull',
+    defaultValue: defaultConfig.label,
+  })
+  label: string;
 }

@@ -85,6 +85,7 @@ on('CommandEvent', function (e)
       end
 
       addIssueComment(e.number, comment)
+      addLabels(e.number, { compConfig.label })
     end
   end)
 end)
