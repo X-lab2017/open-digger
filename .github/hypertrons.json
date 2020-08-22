@@ -147,5 +147,8 @@
   },
   "auto_update_report": {
     "version": 1
+  },
+  "sql_run": {
+    "version": 1
   }
 }
