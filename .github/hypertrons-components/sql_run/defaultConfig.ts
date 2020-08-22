@@ -35,7 +35,7 @@ The renderred text is:
 Please check whether the result is as expected.
 
 `,
-  label: 'pull/sql',
+  label: 'pull/sql-runned',
 };
 
 export default defaultConfig;
