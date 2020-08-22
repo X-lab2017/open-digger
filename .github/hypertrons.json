@@ -150,5 +150,8 @@
   },
   "sql_run": {
     "version": 1
+  },
+  "sql_label": {
+    "version": 1
   }
 }
