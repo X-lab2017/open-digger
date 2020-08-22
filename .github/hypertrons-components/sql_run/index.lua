@@ -46,7 +46,11 @@ on('CommandEvent', function (e)
         setField(compConfig.manifestFileRegex, 'manifest')
         setField(compConfig.postProcessFileRegex, 'postProcessor')
       end
-      
+      -- if no sqls in PR, just return
+      if (tablelength(sqls) == 0) then
+        log('No sql file found in this PR')
+        return
+      end
       -- if only part component changed, read the origin files to complete the component
       for k, v in pairs(sqls) do
         if (v.sql == nil) then
