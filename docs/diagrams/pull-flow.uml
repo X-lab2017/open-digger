@@ -1,0 +1,19 @@
+@startuml
+
+actor developer as dev #yellow
+participant "pull request" as pull
+actor committer as com #red
+actor "sql-reviewer" as reviewer #red
+actor "github-analysis-robot" as robot #green
+
+dev->pull: create pull request
+robot->pull: add 'pull/sql' label if commit sql related file
+reviewer->robot: review and '/sql-run' for sql releated pr
+robot->pull: run sql with new commit and comment result to pr and add 'pull/sql-runned' label
+reviewer->robot: check sql result and '/sql-verified' command
+robot->pull: add 'pull/sql-verified' label
+com->robot: '/approve' command to approve the pr
+robot->pull: add 'pull/approve' label
+robot->pull: auto merge pr wiht 'pull/approve' label
+
+@enduml
