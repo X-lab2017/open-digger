@@ -14,6 +14,10 @@ Please check the [contributing guide](https://www.x-lab.info/github-analysis-rep
 
 Please check the [architect](https://www.x-lab.info/github-analysis-report-2020/) and [workflow](https://www.x-lab.info/github-analysis-report-2020/) if you want to better understand the project.
 
+## Communication
+
+Click [here](https://join.slack.com/t/x-github-analysis/shared_invite/zt-gz8ykv3l-qP53IpajsZIGsx6dFo_8Lg) to join the Slack communication group if you want to know more about the project and join it.
+
 ## License
 
 We use [Apache-2.0 license](LICENSE) for code part.
