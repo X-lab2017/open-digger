@@ -1,0 +1,38 @@
+@startuml
+
+footer Architect of GitHub Analysis Report 2020
+
+actor Developer as dev
+
+node GitHub as github {
+  node "github-analysis-report-2020" as repo {
+    folder ".github/hypertrons-components" as cwf {
+      file "Custom workflows"
+    }
+    folder "sqls" as sqls {
+      file "All SQLs"
+    }
+    file "REPORT.md" as report
+  }
+}
+
+node "analysis-report-bot" as bot
+note right: A GitHub app powered by Hypertrons
+
+node "data service" as ds
+
+database database as ch
+note right: Clickhouse cluster
+
+database GHArchive as gha
+note right: A public service to archive GitHub logs
+
+dev -down-> repo: Collaborate
+bot -up-> github: "Collaborate & manage"
+
+bot -down-> ds: SQL query
+ds -> ch: "Data import & SQL query"
+
+gha -up-> ds: GitHub logs
+
+@enduml
