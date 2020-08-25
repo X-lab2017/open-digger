@@ -153,5 +153,11 @@
   },
   "sql_label": {
     "version": 1
+  },
+  "auto_update_contribution": {
+    "version": 1
+  },
+  "pr_uml_renderer": {
+    "version": 1
   }
 }

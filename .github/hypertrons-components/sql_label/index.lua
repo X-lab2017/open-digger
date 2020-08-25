@@ -15,21 +15,23 @@
 -- Pull label sql
 on('PullRequestEvent', function (e)
   wrap(function()
-    local prNumer = e.number;
-    local files = listPullRequestFiles(e.number)
-    log('Gonna check sql for '..e.number..', find '..#files..' files in PR')
-    if (#files == 0) then
-      return
-    end
-    local sqls = {}
-    for i=1, #files do
-      local filename = files[i].filename
-      local contentsUrl = files[i].contents_url
-      for j=1, #compConfig.sqlFilesRegex do
-        local sqlName = string.match(filename, compConfig.sqlFilesRegex[j])
-        if (sqlName ~= nil) then
-          addLabels(e.number, { compConfig.label })
-          return
+    if (e.action == 'opened' or e.action == 'synchronize') then
+      local prNumer = e.number;
+      local files = listPullRequestFiles(e.number)
+      log('Gonna check sql for '..e.number..', find '..#files..' files in PR')
+      if (#files == 0) then
+        return
+      end
+      local sqls = {}
+      for i=1, #files do
+        local filename = files[i].filename
+        local contentsUrl = files[i].contents_url
+        for j=1, #compConfig.sqlFilesRegex do
+          local sqlName = string.match(filename, compConfig.sqlFilesRegex[j])
+          if (sqlName ~= nil) then
+            addLabels(e.number, { compConfig.label })
+            return
+          end
         end
       end
     end
