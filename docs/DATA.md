@@ -12,11 +12,7 @@ In order to meet the requirement for high-speed analysis among such big data, we
 
 ## Data Schema in Database
 
-The database table offered by the Clickhouse server is showing below：
-
-<img src="./diagrams/database_table_1.png" style="zoom: 50%;" />
-
-<img src="./diagrams/databse_table_2.png" style="zoom:50%;" />
+The database table offered by the Clickhouse server is showing in [data description](./csv/data_description.csv).
 
 ##  User Guide for Database Service
 
