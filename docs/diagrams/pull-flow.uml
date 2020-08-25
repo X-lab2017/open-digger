@@ -14,6 +14,6 @@ reviewer->robot: check sql result and '/sql-verified' command
 robot->pull: add 'pull/sql-verified' label
 com->robot: '/approve' command to approve the pr
 robot->pull: add 'pull/approve' label
-robot->pull: auto merge pr wiht 'pull/approve' label
+robot->pull: auto merge pr with 'pull/approve' label
 
 @enduml
