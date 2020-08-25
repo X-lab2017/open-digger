@@ -1,5 +1,7 @@
 # GitHub Analysis Report 2020
 
+![apache2](https://img.shields.io/badge/license-Apache%202-blue) ![ccby4](https://img.shields.io/badge/license-CC%20BY%204.0-blue)
+
 GitHub analysis report 2020 is an open source analysis report project initiated by [X-lab](https://x-lab.info), this project aims to combine the wisdom of global developers to jointly analyze and insight into GitHub's developer behavior data during 2020 to help everyone better understand and participate in open source.
 
 ## Data
@@ -20,4 +22,4 @@ Click [here](https://join.slack.com/t/x-github-analysis/shared_invite/zt-gz8ykv3
 
 ## License
 
-We use [Apache-2.0 license](LICENSE) for code part.
+We use [Apache-2.0 license](LICENSE) for code part and [CC-BY-4.0 license](LICENSE-CC-BY) for report part, please make sure abide by the licenses when using the project.
