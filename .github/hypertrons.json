@@ -85,7 +85,7 @@
       {
         "name": "committer",
         "description": "Committer of the project",
-        "users": [ "will-ww", "frank-zsy", "WuShaoling", "heming6666" ],
+        "users": [ "will-ww", "frank-zsy", "WuShaoling", "heming6666", "sunshinemingo" ],
         "commands": [ "/difficulty", "/approve" ]
       },
       {
