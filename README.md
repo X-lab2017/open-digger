@@ -1,6 +1,6 @@
 # GitHub Analysis Report 2020
 
-![apache2](https://img.shields.io/badge/license-Apache%202-blue) ![ccby4](https://img.shields.io/badge/license-CC%20BY%204.0-blue)
+[![apache2](https://img.shields.io/badge/license-Apache%202-blue)](LICENSE) [![ccby4](https://img.shields.io/badge/license-CC%20BY%204.0-blue)](LICENSE-CC-BY) [![slack](https://img.shields.io/badge/slack-join%20chat-green)](https://join.slack.com/t/x-github-analysis/shared_invite/zt-gz8ykv3l-qP53IpajsZIGsx6dFo_8Lg)
 
 GitHub analysis report 2020 is an open source analysis report project initiated by [X-lab](https://x-lab.info), this project aims to combine the wisdom of global developers to jointly analyze and insight into GitHub's developer behavior data during 2020 to help everyone better understand and participate in open source.
 
@@ -18,7 +18,7 @@ Please check the [architect](https://www.x-lab.info/github-analysis-report-2020/
 
 ## Communication
 
-Click [here](https://join.slack.com/t/x-github-analysis/shared_invite/zt-gz8ykv3l-qP53IpajsZIGsx6dFo_8Lg) to join the Slack communication group if you want to know more about the project and join it.
+Welcome to join our Slack workspace by clicking the Slack badge above if you want to communicate with us and learn more about the project.
 
 ## License
 
