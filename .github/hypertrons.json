@@ -38,20 +38,27 @@
       {
         "name": "pull/sql",
         "description": "SQL related pull",
-        "color": "99ff66",
-        "keywords": []
+        "color": "99ff66"
+      },
+      {
+        "name": "pull/website",
+        "description": "Website related pull",
+        "color": "99ff66"
+      },
+      {
+        "name": "pull/hypertrons",
+        "description": "Hypertrons config related pull",
+        "color": "99ff66"
       },
       {
         "name": "pull/sql-verified",
         "description": "SQL related pull and the sql has been verified",
-        "color": "99ff66",
-        "keywords": []
+        "color": "008672"
       },
       {
         "name": "pull/sql-runned",
         "description": "SQL related pull and the sql has been verified",
-        "color": "99ff66",
-        "keywords": []
+        "color": "99ff66"
       },
       {
         "name": "kind/community",
@@ -151,13 +158,36 @@
   "sql_run": {
     "version": 1
   },
-  "sql_label": {
-    "version": 1
-  },
   "auto_update_contribution": {
     "version": 1
   },
   "pr_uml_renderer": {
     "version": 1
+  },
+  "pr_file_label": {
+    "version": 1,
+    "rules": [
+      {
+        "files": [
+          "sqls/.+/sql",
+          "sqls/.+/manifest%.json",
+          "sqls/.+/post%-processor%.js"
+        ],
+        "label": "pull/sql"
+      },
+      {
+        "files": [
+          "docs/.+"
+        ],
+        "label": "pull/website"
+      },
+      {
+        "files": [
+          "%.github/hypertrons%.json",
+          "%.github/hypertrons%-components/.+"
+        ],
+        "label": "pull/hypertrons"
+      }
+    ]
   }
 }
