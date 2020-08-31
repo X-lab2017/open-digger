@@ -1,0 +1,128 @@
+name,type,description,payload_type
+id,UInt64,uique identity of this event instance,general
+type,String,"event instance type,event instances of different event type have different payload from GitHub API",general
+action,String,action in the payload of event instance,general
+actor_id,UInt64,github user id of someone who trigger this envent instance,general
+actor_login,String,github user login of someone who trigger this envent instance,general
+repo_id,UInt64,the unique identity of a repository where this event was tragered,general
+repo_name,String,repository name,general
+org_id,UInt64,organization unique identity of this repository,general
+org_login,String,login name of this organization,general
+created_at,DateTime,when this event instance was generated on GitHub£¬UTC,general
+created_date,Date,"Same as created_at, for Clickhouse",general
+issue_id,UInt64,unique identity of this issue on Github,Issues
+issue_number,UInt32,the id of this issue in this repository,Issues
+issue_title,String,titile of this issue,Issues
+issue_body,String,body of this issue event,Issues
+issue_labels,String,issue labels in this,Issues
+issue_author_id,UInt64,github user id for this issue's author,Issues
+issue_author_login,String,gthub user login,Issues
+issue_author_type,String,github user type,Issues
+issue_author_association,String,"Author association of issue author, like NONE, CONTRIBUTOR, COLLABORATOR, MEMBER, OWNER",Issues
+issue_assignee_id,UInt64,assignee's github user id of this issue,Issues
+issue_assignee_login,String,issue assignee's login name,Issues
+issue_assignees,String,all assignees of this issue,Issues
+issue_created_at,DateTime,"when this issue was created,UTC",Issues
+issue_updated_at,DateTime,"when this issue was updated, UTC",Issues
+issue_comments,UInt16,the number of issue comments,Issues
+issue_closed_at,DateTime,when this issue was closed,Issues
+issue_comment_id,UInt64,issue comment unique identity,IssueComment
+issue_comment_body,String,comment body in the issue comment event,IssueComment
+issue_comment_created_at,DateTime,"when this issue comment was created,UTC",IssueComment
+issue_comment_updated_at,DateTime,"when this issue comment was updated,UTC",IssueComment
+issue_comment_author_association,String,"Author association of issue comment author, like NONE, CONTRIBUTOR, COLLABORATOR, MEMBER, OWNER",IssueComment
+issue_comment_author_id,UInt64,github user id of the issue comment author,IssueComment
+issue_comment_author_login,String,github user login of this issue comment author,IssueComment
+issue_comment_author_type,String,github user type of this issue comment author,IssueComment
+pull_commits,UInt16,when this pull request was merged,PullRequest
+pull_additions,UInt16,additions in this pull request,PullRequest
+pull_deletions,UInt16,deletions in this pull request,PullRequest
+pull_changed_files,UInt32,files name changed by this pull request,PullRequest
+pull_merged,UInt8,Whether the PR is merged,PullRequest
+pull_merged_at,DateTime,when this pull request was merged,PullRequest
+pull_merged_by_id,UInt64,github user id of someone who merged this pull request,PullRequest
+pull_merged_by_login,String,github user login of someone who merged this pull request,PullRequest
+pull_merged_by_type,String,github user type of someone who merged this pull request type,PullRequest
+pull_requested_reviewer_id,UInt64,First requested reviewer id,PullRequest
+pull_requested_reviewer_login,String,First requested reviewer login,PullRequest
+pull_requested_reviewer_type,String,"First requested reviewer type, only USER",PullRequest
+pull_review_comments,UInt16,the number of pull review comments when this event log generated on GitHub,PullRequest
+repo_description,String,repository description,PullRequest
+repo_size,UInt32,reository size when this event log generated from github,PullRequest
+repo_stargazers_count,UInt32,how many people star this project on GitHub,PullRequest
+repo_forks_count,UInt32,how many people fork this repository when this event log generated from GitHb,PullRequest
+repo_language,String,the programming language of this repository,PullRequest
+repo_has_issues,UInt8,the number of issues in this repository when this event log generated from GitHub,PullRequest
+repo_has_projects,UInt8,Whether this project enables Project feature on GitHub,PullRequest
+repo_has_downloads,UInt8,"Whether this project enables Downloads feature on GitHub, deprecated",PullRequest
+repo_has_wiki,UInt8,Whether this project enables Wiki feature on GitHub,PullRequest
+repo_has_pages,UInt8,Whether this project enables Pages feature on GitHub,PullRequest
+repo_license,String,open source license used by this repository,PullRequest
+repo_default_branch,String,default branch of this repository,PullRequest
+repo_created_at,DateTime,when this repository was created,PullRequest
+repo_updated_at,DateTime,when this repository was updated,PullRequest
+repo_pushed_at,DateTime,when this repository was pushed,PullRequest
+pull_review_id,UInt64,unique identity of this review on Github,PullRequestReviewComment
+pull_review_comment_id,UInt64,unique identity of this review comment on Github,PullRequestReviewComment
+pull_review_comment_path,String,the related review file path,PullRequestReviewComment
+pull_review_comment_position,String,the related review file position,PullRequestReviewComment
+pull_review_comment_author_id,UInt64,github user id of someone who made this pull review comment,PullRequestReviewComment
+pull_review_comment_author_login,String,github user login of someone who made this pull review comment,PullRequestReviewComment
+pull_review_comment_author_type,String,github user type of someone who made this pull review comment,PullRequestReviewComment
+pull_review_comment_author_association,String,"Review comment author association, like NONE, CONTRIBUTOR, COLLABORATOR, MEMBER, OWNER",PullRequestReviewComment
+pull_review_comment_body,String,pull review comment body,PullRequestReviewComment
+pull_review_comment_created_at,DateTime,when this pull review comment was created,PullRequestReviewComment
+pull_review_comment_updated_at,DateTime,when this pull review comment was updated,PullRequestReviewComment
+push_id,UInt64,unique push id on GitHub,Push
+push_size,UInt32,The number of commits in the push.,Push
+push_distinct_size,UInt32,The number of distinct commits in the push.,Push
+push_ref,String,the ref branch of the push,Push
+push_head,String,the head of the push,Push
+push_before,String,the head before this push,Push
+push_commits,String,commits in this push event,Push
+fork_forkee_id,UInt64,github user id of forkee,Fork
+fork_forkee_full_name,String,repository full name of forked repository,Fork
+fork_forkee_owner_id,UInt64,github user id of the forked repository¡¯s owner,Fork
+fork_forkee_owner_login,String,github user login of the forked repository¡¯s owner,Fork
+fork_forkee_owner_type,String,github user type of the forked repository¡¯s owner,Fork
+delete_ref,String,the git ref resource,Delete
+delete_ref_type,String,the type of Git ref oject deleted in the repository. Can be branch or tag.,Delete
+delete_pusher_type,String,github user type of the user that trager this event,Delete
+create_ref,String,the git ref resource,Create
+create_ref_type,String,The type of Git ref object created in the repository. Can be either branch or tag,Create
+create_master_branch,String,The name of the repository's default branch (usually master),Create
+create_description,String,The repository's current description,Create
+create_pusher_type,String,github user type of the user that trager this event,Create
+gollum_page_name,String,The name of the page.,Gollum
+gollum_page_title,String,The current page title.,Gollum
+gollum_summary,String,The message of wiki page change,Gollum
+gollum_action,String,The action that was performed on the page. Can be created or edited.,Gollum
+gollum_sha,String,The latest commit SHA of the page.,Gollum
+gollum_json,String,The whole wiki event payload json string,Gollum
+member_id,UInt64,github user id of member,Member
+member_login,String,github user login of member,Member
+member_type,String,github user type of user,Member
+release_id,UInt64,Unique release id on GitHub,Release
+release_tag_name,String,tag name of this release,Release
+release_target_commitish,String,tag related branch head,Release
+release_name,String,name of this release,Release
+release_draft,UInt8,"if this is a draft, true or false",Release
+release_author_id,UInt64,githu user id of the release author,Release
+release_author_login,String,githu user loginof the release author,Release
+release_author_type,String,githu user type of the release author,Release
+release_prerelease,UInt8,"if this is a prerelease, true or false",Release
+release_created_at,DateTime,when this release was created,Release
+release_published_at,DateTime,when this release was published,Release
+release_body,String,text content body of this release,Release
+release_assets,String,the assets attached to the release,Release
+commit_comment_id,UInt64,Unique commit comment id on GitHub,CommitComment
+commit_comment_author_id,UInt64,githu user id of the commit comment author,CommitComment
+commit_comment_author_login,String,githu user login of the commit comment author,CommitComment
+commit_comment_author_type,String,githu user type of the commit comment author,CommitComment
+commit_comment_author_association,String,"The commit comment author association, like NONE, CONTRIBUTOR, COLLABORATOR, MEMBER, OWNER",CommitComment
+commit_comment_body,String,text content body of this commit comment,CommitComment
+commit_comment_path,String,The commit comment file path,CommitComment
+commit_comment_position,String,"The commit comment position when shows on page, not related important",CommitComment
+commit_comment_line,String,The commit comment file line,CommitComment
+commit_comment_created_at,DateTime,when this commit comment was created,CommitComment
+commit_comment_updated_at,DateTime,when this commit comment was updated,CommitComment
