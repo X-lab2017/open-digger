@@ -4,7 +4,7 @@
 
 The data source of this project mainly comes from [GH Archive](https://www.gharchive.org/) which is a project to record the public GitHub timeline, archive it and make it easily accessible for further analysis. Each archive contains JSON encoded events as reported by the GitHub API. The raw JSON data is showing below. There are 6 important data features in this data, namely `id`,`type`,`actor`,`repo`,`payload`,`created_at`.
 
-![](/pic/GHArchive_raw_data.png)
+![](./pic/GHArchive_raw_data.png)
 
 ## Database
 
