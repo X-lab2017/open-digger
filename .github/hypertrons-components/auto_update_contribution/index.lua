@@ -112,6 +112,9 @@ sched(compConfig.schedName, compConfig.sched, function ()
           end
         end
         table.sort(roleContribution[roleName], function(a, b)
+          if (a.score == b.score) then
+            return a.login < b.login
+          end
           return a.score > b.score
         end)
       else
