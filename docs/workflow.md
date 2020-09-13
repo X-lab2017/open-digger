@@ -76,4 +76,4 @@ Component [SQL verified](https://github.com/X-lab2017/github-analysis-report-202
 
 The core workflow of this project is the PR workflow especially with SQL files invovled and the diagram below shows a whole PR workflow:
 
-![pull-flow](http://frank-local.opensource-service.com/umlrenderer/github/X-lab2017/github-analysis-report-2020?path=docs/diagrams/pull-flow.uml)
+![pull-flow](http://gar2020.opensource-service.cn/umlrenderer/github/X-lab2017/github-analysis-report-2020?path=docs/diagrams/pull-flow.uml)

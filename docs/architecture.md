@@ -2,7 +2,7 @@
 
 This project consists of several independent components, the architecture of the system is as follows:
 
-![architect-img](http://frank-local.opensource-service.com/umlrenderer/github/X-lab2017/github-analysis-report-2020?path=docs/diagrams/architect.uml)
+![architect-img](http://gar2020.opensource-service.cn/umlrenderer/github/X-lab2017/github-analysis-report-2020?path=docs/diagrams/architect.uml)
 
 Developers only collaborate in this project on GitHub platform, the technical details of the backend are hidden from developers. The backend consists of several services includes:
 

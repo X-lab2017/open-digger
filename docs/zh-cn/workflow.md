@@ -74,4 +74,4 @@
 
 该项目核心为 PR 协作流程，尤其是 SQL 类 PR 的协作流程，对于上述组件构建的完整 PR 流程，可参考下图：
 
-![pull-flow](http://frank-local.opensource-service.com/umlrenderer/github/X-lab2017/github-analysis-report-2020?path=docs/diagrams/pull-flow.uml)
+![pull-flow](http://gar2020.opensource-service.cn/umlrenderer/github/X-lab2017/github-analysis-report-2020?path=docs/diagrams/pull-flow.uml)

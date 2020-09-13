@@ -2,7 +2,7 @@
 
 本项目由多个独立但相关的系统组成，系统的架构图如下：
 
-![architect-img](http://frank-local.opensource-service.com/umlrenderer/github/X-lab2017/github-analysis-report-2020?path=docs/diagrams/architect.uml)
+![architect-img](http://gar2020.opensource-service.cn/umlrenderer/github/X-lab2017/github-analysis-report-2020?path=docs/diagrams/architect.uml)
 
 在该年报项目中，开发者仅在 GitHub 平台上产生项目协作行为，而后端的技术细节对开发者是屏蔽的。后端由多个服务应用协同构成本项目的协作体系，这些系统包含：
 
