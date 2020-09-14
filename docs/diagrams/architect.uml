@@ -1,11 +1,11 @@
 @startuml
 
-footer Architect of GitHub Analysis Report 2020
+footer Architect of GitHub Analysis Report
 
 actor Developer as dev
 
 node GitHub as github {
-  node "github-analysis-report-2020" as repo {
+  node "github-analysis-report" as repo {
     folder ".github/hypertrons-components" as cwf {
       file "Custom workflows"
     }

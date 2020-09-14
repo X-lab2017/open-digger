@@ -1,4 +1,4 @@
-# GitHub Analysis Report 2020
+# GitHub Analysis Report
 
 > An open source collaborate report for GitHub
 
