@@ -1,20 +1,20 @@
-# GitHub Analysis Report 2020
+# GitHub Analysis Report
 
 [![apache2](https://img.shields.io/badge/license-Apache%202-blue)](LICENSE) [![ccby4](https://img.shields.io/badge/license-CC%20BY%204.0-blue)](LICENSE-CC-BY) [![slack](https://img.shields.io/badge/slack-join%20chat-green)](https://join.slack.com/t/x-github-analysis/shared_invite/zt-gz8ykv3l-qP53IpajsZIGsx6dFo_8Lg)
 
-GitHub analysis report 2020 is an open source analysis report project initiated by [X-lab](https://x-lab.info), this project aims to combine the wisdom of global developers to jointly analyze and insight into GitHub's developer behavior data during 2020 to help everyone better understand and participate in open source.
+GitHub analysis report is an open source analysis report project for GitHub initiated by [X-lab](https://x-lab.info), this project aims to combine the wisdom of global developers to jointly analyze and insight into GitHub's developer behavior data to help everyone better understand and participate in open source.
 
 ## Data
 
-We use [GHArchive](https://www.gharchive.org/) as our data source for GitHub logs and the data service is provided by self host [clickhouse](https://clickhouse.tech/) cluster by X-lab. For data details, please check the [data](https://www.x-lab.info/github-analysis-report-2020/) docs.
+We use [GHArchive](https://www.gharchive.org/) as our data source for GitHub logs and the data service is provided by self host [clickhouse](https://clickhouse.tech/) cluster in X-lab. For data details, please check the [data](https://www.x-lab.info/github-analysis-report/#/data) docs.
 
 ## Contributing guide
 
-Please check the [contributing guide](https://www.x-lab.info/github-analysis-report-2020/) first if you want to be part of the report.
+Please check the [contributing guide](https://www.x-lab.info/github-analysis-report/#/CONTRIBUTING) first if you want to be part of the report.
 
 ## Architect & workflow
 
-Please check the [architect](https://www.x-lab.info/github-analysis-report-2020/) and [workflow](https://www.x-lab.info/github-analysis-report-2020/) if you want to better understand the project.
+Please check the [architect](https://www.x-lab.info/github-analysis-report/#/architecture) and [workflow](https://www.x-lab.info/github-analysis-report/#/workflow) if you want to better understand the project.
 
 ## Communication
 

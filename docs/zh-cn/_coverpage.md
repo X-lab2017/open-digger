@@ -1,4 +1,4 @@
-# GitHub 2020 数字年报
+# GitHub 全域数字报告
 
 > GitHub 开源协作数字报告
 - GitHub 全域数据访问能力
