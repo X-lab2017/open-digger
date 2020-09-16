@@ -75,7 +75,7 @@ on('CommandEvent', function (e)
             ['query'] = sql
           }
         })
-        local text = runJsCode(v.postProcessor, string2table(requestRes).data)
+        local text = runJsCode(v.postProcessor, string2table(requestRes).data, compConfig.defaultRenderParams)
         log('Sql run done for '..k)
         comment = comment..rendStr(compConfig.commentItemTemplate, {
           ['text'] = text,
