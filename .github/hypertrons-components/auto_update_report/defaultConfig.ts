@@ -26,6 +26,9 @@ const defaultConfig: Config = {
   defaultRenderParams: {
     year: 2020,
     table: 'github_log.year2020',
+    owner: 'X-lab2017',
+    repo: 'github-analysis-report',
+    baseUrl: 'http://gar2020.opensource-service.cn/',
   },
   sqlRequestUrl: 'http://localhost:7001/query',
   // report
