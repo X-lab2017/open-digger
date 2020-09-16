@@ -23,9 +23,9 @@ const defaultConfig: Config = {
   defaultRenderParams: {
     year: 2020,
     table: 'github_log.year2020',
-    owner: 'X-lab2017',
-    repo: 'github-analysis-report',
     baseUrl: 'http://gar2020.opensource-service.cn/',
+    owner: 'X-lab2017',
+    repo: 'github-analysis-report'
   },
   commentItemTemplate: `I found SQL component \`{{sqlName}}\` in this PR, the SQL run result data is:
 \`\`\`

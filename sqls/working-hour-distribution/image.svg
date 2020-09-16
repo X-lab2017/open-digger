@@ -1,0 +1,231 @@
+<svg
+    xmlns="http://www.w3.org/2000/svg" width="600" height="250" preserveAspectRatio="xMinYMin meet" viewBox="0 0 600 250" onload="onSvgLoad()">
+    <style type="text/css">
+<![CDATA[
+.bg {
+  fill: white;
+}
+text {
+  text-anchor: middle;
+  dominant-baseline: middle;
+}
+.hour_day_text {
+  font-size: 14px;
+}
+.title_text {
+  font-size: 20px;
+}
+]]>
+    </style>
+
+    <script type="text/ecmascript">
+<![CDATA[
+
+var textMap = new Map([
+  [
+    "mon_text", {
+      "中文": "周一",
+      "EN": "Mon"
+    }
+  ], [
+    "tue_text", {
+      "中文": "周二",
+      "EN": "Tue"
+    }
+  ], [
+    "wed_text", {
+      "中文": "周三",
+      "EN": "Wed"
+    }
+  ], [
+    "thu_text", {
+      "中文": "周四",
+      "EN": "Thu"
+    }
+  ], [
+    "fri_text", {
+      "中文": "周五",
+      "EN": "Fri"
+    }
+  ], [
+    "sat_text", {
+      "中文": "周六",
+      "EN": "Sat"
+    }
+  ], [
+    "sun_text", {
+      "中文": "周日",
+      "EN": "Sun"
+    }
+  ], [
+    "title_text", {
+      "中文": "工作时间分布图",
+      "EN": "Working Hour Distribution"
+    }
+  ]
+]);
+
+function changeLang(btn) {
+  var lang = btn.innerHTML;
+
+  var textElementList = document.getElementsByTagName("text");
+  for (var i = 0; i < textElementList.length; i++) {
+    var elem = textElementList[i];
+    if (!elem.id) continue;
+    var text = textMap.get(elem.id);
+    if (text && text[lang]) {
+      elem.innerHTML = text[lang];
+    }
+  }
+
+  textElementList = document.getElementsByTagName("p");
+  for (var i = 0; i < textElementList.length; i++) {
+    var elem = textElementList[i];
+    if (!elem.id) continue;
+    var text = textMap.get(elem.id);
+    if (text && text[lang]) {
+      elem.innerHTML = text[lang];
+    }
+  }
+
+  var btns = document.getElementsByName("lang_btn");
+  for (var b of btns) {
+    b.style.fill = "lightgrey";
+  }
+  btn.style.fill = "black";
+}
+
+function onLangBtnClick(evt) {
+  changeLang(evt.target);
+}
+
+function getQueryVariable(variable) {
+  var query = window.location.search.substring(1);
+  if (!query) {
+    return false;
+  }
+  var vars = query.split("&");
+  for (var i = 0; i < vars.length; i++) {
+    var pair = vars[i].split("=");
+    if (pair[0] == variable) {
+      return pair[1];
+    }
+  }
+  return false;
+}
+
+var hourColor = ['#bccc92', '#8ab04c', '#8ab04c', '#b5aa4e', '#a68341', '#9f6237', '#9e427e', '#9a462a', '#9f402b', '#983427'];
+var dayId = ['mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun'];
+
+function renderElements(data) {
+  var width = 24;
+  var hight = 24;
+  var startX = 62;
+  var startY = 52;
+  var svg = document.getElementsByTagName("svg")[0];
+  var maxHour = 24;
+  var maxDay = 7;
+  var radius = 22;
+  var length = maxHour * maxDay;
+  if (!data) {
+    data = [];
+    for (var i = 0; i < length; i++) {
+      data.push(Math.ceil(Math.random() * 10));
+    }
+  } else if (data.length < length) {
+    var injectLen = length - data.length;
+    for (var i = 0; i < injectLen; i++) {
+      data.push(Math.ceil(Math.random() * 10));
+    }
+  }
+
+  // render title
+  var e = document.createElementNS("http://www.w3.org/2000/svg", "text");
+  e.setAttribute('x', 300);
+  e.setAttribute('y', 20);
+  e.setAttribute('class', 'title_text');
+  e.setAttribute('id', 'title_text');
+  svg.appendChild(e);
+
+  // render hour
+  for (var hour = 0; hour < maxHour; hour++) {
+    var e = document.createElementNS("http://www.w3.org/2000/svg", "text");
+    e.innerHTML = hour.toString();
+    e.setAttribute('x', startX + hour * radius + radius / 2);
+    e.setAttribute('y', startY - 10);
+    e.setAttribute('class', 'hour_day_text');
+    svg.appendChild(e);
+  }
+
+  // render day
+  for (var day = 0; day < maxDay; day++) {
+    var e = document.createElementNS("http://www.w3.org/2000/svg", "text");
+    e.innerHTML = dayId[day];
+    e.setAttribute('x', startX - 41);
+    e.setAttribute('y', startY + day * radius + radius / 2);
+    e.setAttribute('class', 'hour_day_text');
+    e.setAttribute('id', dayId[day] + '_text');
+    svg.appendChild(e);
+  }
+
+  for (var hour = 0; hour < maxHour; hour++) {
+    for (var day = 0; day < maxDay; day++) {
+      var x = startX + hour * radius + radius / 2;
+      var y = startY + day * radius + radius / 2;
+      var index = day * maxHour + hour;
+      var e = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+      e.setAttribute('class', 'c-10');
+      e.setAttribute('cx', x);
+      e.setAttribute('cy', y);
+      e.setAttribute('r', data[index]);
+      e.setAttribute('fill', hourColor[data[index] - 1]);
+      svg.appendChild(e);
+    }
+  }
+}
+
+function onSvgLoad() {
+  var data = getQueryVariable("data");
+  if (data != false) {
+    try {
+      data = JSON.parse(data);
+    } catch {
+      data = undefined;
+    }
+  } else {
+    data = undefined;
+  }
+  renderElements(data);
+  var lang = getQueryVariable("lang");
+  var langBtn = document.getElementById("en_btn_text");
+  if (lang && (lang == "zh" || lang == "zh-cn")) {
+    langBtn = document.getElementById("zh_btn_text");
+  }
+  changeLang(langBtn);
+  var color = getQueryVariable("bg_color");
+  if (color) {
+    document.getElementById("bg").style.fill = color;
+  }
+}
+
+function show(evt, id) {
+  var elem = document.getElementById(id);
+  if (!elem) return;
+  elem.style.visibility = "visible";
+}
+
+function hide(evt, id) {
+  var elem = document.getElementById(id);
+  if (!elem) return;
+  elem.style.visibility = "hidden";
+}
+
+]]>
+    </script>
+    
+    <rect id="bg" class="bg" x="0" y ="0" width="600" height="250"/>
+
+    <text name="lang_btn" id="en_btn_text" x="280" y="240" onclick="onLangBtnClick(evt)">EN</text>
+    <text name="lang_btn" id="zh_btn_text" x="320" y="240" onclick="onLangBtnClick(evt)">中文</text>
+
+</svg>
