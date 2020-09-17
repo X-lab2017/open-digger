@@ -1,1 +1,1 @@
-SELECT COUNT(*) AS count FROM {{table}} GROUP BY toHour(created_at) AS hour, toDayOfWeek(created_at)
+SELECT COUNT(*) AS count, toDayOfWeek(created_at) AS dayOfWeek, toHour(created_at) AS hour FROM {{table}} GROUP BY hour, dayOfWeek
