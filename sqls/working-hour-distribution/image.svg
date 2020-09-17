@@ -174,11 +174,10 @@ function renderElements(data) {
       var y = startY + day * radius + radius / 2;
       var index = day * maxHour + hour;
       var e = document.createElementNS("http://www.w3.org/2000/svg", "circle");
-      e.setAttribute('class', 'c-10');
       e.setAttribute('cx', x);
       e.setAttribute('cy', y);
       e.setAttribute('r', data[index]);
-      e.setAttribute('fill', hourColor[data[index] - 1]);
+      e.setAttribute('fill', hourColor[Math.max(data[index] - 1, 0)]);
       svg.appendChild(e);
     }
   }

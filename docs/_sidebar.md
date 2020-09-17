@@ -3,3 +3,4 @@
 - [Architecture](/architecture.md)
 - [Workflow](/workflow.md)
 - [Data Description](/data.md)
+- [Report](/report.md)
