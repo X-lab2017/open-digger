@@ -82,6 +82,12 @@ export default class Config {
   reportFile: string;
 
   @configProp({
+    description: 'Report file path',
+    defaultValue: defaultConfig.reportWebFile,
+  })
+  reportWebFile: string;
+
+  @configProp({
     description: 'Default branch to make pull',
     defaultValue: defaultConfig.defaultBranch,
   })

@@ -70,6 +70,7 @@ sched(compConfig.schedName, compConfig.sched, function ()
       })
       newBranch(branchName, compConfig.defaultBranch)
       createOrUpdateFile(compConfig.reportFile, newReport, rendStr(compConfig.commitMessage, { ['branchName'] = branchName }), branchName)
+      createOrUpdateFile(compConfig.reportWebFile, newReport, rendStr(compConfig.commitMessage, { ['branchName'] = branchName }), branchName)
       newPullRequest({
         ['title'] = rendStr(compConfig.pullTitle, { ['branchName'] = branchName }),
         ['body'] = rendStr(compConfig.pullBody, { ['branchName'] = branchName }),
