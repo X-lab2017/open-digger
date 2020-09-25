@@ -34,6 +34,7 @@ const defaultConfig: Config = {
   // report
   reportTemplateFile: 'REPORT_TEMPLATE.md',
   reportFile: 'REPORT.md',
+  reportWebFile: 'docs/report.md',
   // commit and pull
   defaultBranch: 'master',
   newBranchName: 'auto-update-report-{{timestamp}}',
