@@ -1,6 +1,6 @@
 # GitHub Analysis Report
 
-[![apache2](https://img.shields.io/badge/license-Apache%202-blue)](LICENSE) [![ccby4](https://img.shields.io/badge/license-CC%20BY%204.0-blue)](LICENSE-CC-BY) [![slack](https://img.shields.io/badge/slack-join%20chat-green)](https://join.slack.com/t/x-github-analysis/shared_invite/zt-gz8ykv3l-qP53IpajsZIGsx6dFo_8Lg)
+[![apache2](https://img.shields.io/badge/license-Apache%202-blue)](LICENSE) [![ccby4](https://img.shields.io/badge/license-CC%20BY%204.0-blue)](LICENSE-CC-BY) [![slack](https://img.shields.io/badge/slack-join%20chat-green)](https://join.slack.com/t/x-github-analysis/shared_invite/zt-iewbg238-NaAkeRfFQfsEc~FGLVXzsA)
 
 GitHub analysis report is an open source analysis report project for GitHub initiated by [X-lab](https://x-lab.info), this project aims to combine the wisdom of global developers to jointly analyze and insight into GitHub's developer behavior data to help everyone better understand and participate in open source.
 
