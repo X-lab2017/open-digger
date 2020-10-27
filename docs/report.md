@@ -2,6 +2,28 @@
 
 We anaylsis 702,612,319 records of GitHub logs, there are 44,415,764 active repositories and 12,695,064 active developers on GitHub during year 2020.
 
+## Top 10 repositories
+
+We calculated the activity of global repositories and the top 10 most active repositories are as follows.
+
+
+
+| # | repo_id | repo_name | repo_activity |
+|:--:|:--:|:--:|:--:|
+| 1 | 31792824 | flutter/flutter | 30005.37 |
+| 2 | 41881900 | microsoft/vscode | 23051.25 |
+| 3 | 72685026 | MicrosoftDocs/azure-docs | 21260.85 |
+| 4 | 12888993 | home-assistant/core | 18874.87 |
+| 5 | 45717250 | tensorflow/tensorflow | 18656.73 |
+| 6 | 20580498 | kubernetes/kubernetes | 17305.79 |
+| 7 | 4542716 | NixOS/nixpkgs | 15549.12 |
+| 8 | 210716005 | dotnet/runtime | 12224.97 |
+| 9 | 65600975 | pytorch/pytorch | 12200.76 |
+| 10 | 6093316 | DefinitelyTyped/DefinitelyTyped | 10780.8 |
+
+
+
+
 ## GitHub Word Cloud
 
 We select topics of top 10w active repositories, filtered the topics with a frequency of more than 25. Then a word cloud map is generated based on the data. The word cloud visually highlights the topics that appear frequently, so that we can quickly get the more popular topics.
