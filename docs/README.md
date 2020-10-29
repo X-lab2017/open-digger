@@ -1,6 +1,6 @@
 # GitHub Analysis Report
 
-GitHub analysis report is an open source analysis report project for GitHub initiated by [X-lab](https://x-lab.info), this project aims to combine the wisdom of global developers to jointly analyze and insight into GitHub's developer behavior data to help everyone better understand and participate in open source.
+[GitHub analysis report](https://github.com/X-lab2017/github-analysis-report) is an open source analysis report project for GitHub initiated by [X-lab](https://x-lab.info), this project aims to combine the wisdom of global developers to jointly analyze and insight into GitHub's developer behavior data to help everyone better understand and participate in open source.
 
 ## Data
 
