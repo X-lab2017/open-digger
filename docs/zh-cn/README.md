@@ -1,6 +1,6 @@
 # GitHub 全域数字报告
 
-GitHub 数字全域报告是由 X-lab 发起的一个 GitHub 数字分析报告开源项目，这个项目旨在凝聚全球开发者的智慧共同对 GitHub 全域行为日志数据进行分析统计，以使开发者可以更好的理解和参与开源。
+[GitHub 数字全域报告](https://github.com/X-lab2017/github-analysis-report) 是由 X-lab 发起的一个 GitHub 数字分析报告开源项目，这个项目旨在凝聚全球开发者的智慧共同对 GitHub 全域行为日志数据进行分析统计，以使开发者可以更好的理解和参与开源。
 
 ## 数据
 
