@@ -6,7 +6,7 @@ GitHub analysis report is an open source analysis report project for GitHub init
 
 ## Data
 
-We use [GHArchive](https://www.gharchive.org/) as our data source for GitHub logs and the data service is provided by self host [clickhouse](https://clickhouse.tech/) cluster in X-lab. For data details, please check the [data](https://www.x-lab.info/github-analysis-report/#/data) docs.
+We use [GHArchive](https://www.gharchive.org/) as our data source for GitHub logs and the data service is provided by self host [clickhouse](https://clickhouse.tech/) cluster in X-lab. For data details, please check the [data](https://github.com/X-lab2017/github-analysis-report/blob/master/docs/DATA.md) docs.
 
 ## Contributing guide
 
