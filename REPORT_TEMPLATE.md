@@ -6,11 +6,13 @@ We anaylsis {{sqls.total-record-count.text}} records of GitHub logs, there are {
 
 We calculated the activity of global repositories and the top 10 most active repositories are as follows.
 
-
-
 {{sqls.activity-repo-top.text}}
 
+## Top {{sqls.developers-top.config.topN}} active developers
 
+We calculated the activity of global developers on GitHub and the top {{sqls.developers-top.config.topN}} most active developers are as follows.
+
+{{sqls.developers-top.text}}
 
 ## GitHub Word Cloud
 
