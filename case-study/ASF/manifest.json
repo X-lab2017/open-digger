@@ -1,0 +1,12 @@
+{
+  "repos": [
+    {
+      "name": "apache/carbondata",
+      "id": 62117818
+    },
+    {
+      "name": "apache/dubbo",
+      "id": 4710920
+    }
+  ]
+}
