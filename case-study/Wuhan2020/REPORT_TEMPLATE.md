@@ -4,7 +4,7 @@ Wuhan2020 is an open source community initiated in Jan. 2020 to collect informat
 
 # Englist
 
-##Introduction
+## Introduction
 
 The Wuhan2020 open source community was initiated by a Tongji University Ph.D. student on January 24, 2020. Wuhan2020 is a representative of the larger scale of self-organization that emerged during the COVID-19 epidemic and is also one of the typical technology-oriented self-organizations. 
 
