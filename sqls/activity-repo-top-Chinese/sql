@@ -1,0 +1,35 @@
+SELECT language_list.repo_name AS repo_name,language_list.repo_language AS repo_language,activity_list.repo_activity AS repo_activity,activity_list.actor_count AS developer_count,
+    activity_list.icc_count AS issue_comment, activity_list.oic_count AS open_issue,  activity_list.opc_count AS open_pull, activity_list.rcc_count AS pull_review_comment,activity_list.mpc_count AS merge_pull,
+    activity_list.commits AS commits,activity_list.additions AS additions,activity_list.deletions AS deletions
+    FROM
+        (SELECT contribute_list.repo_id AS repo_id, round(sum(sqrt(contribute_list.score)),2) AS repo_activity,
+        COUNTDistinct(contribute_list.actor_id) AS actor_count,  SUM(icc.count) as icc_count,SUM(oic.count) as oic_count, SUM(opc.count) as opc_count, SUM(rcc.count) as rcc_count, SUM(mpc.count) as mpc_count,
+        SUM(contribute_list.commits) AS commits,SUM(contribute_list.additions) AS additions,SUM(contribute_list.deletions) AS deletions
+        FROM
+        (SELECT
+        icc.repo_id AS repo_id, icc.actor_id AS actor_id, icc.count, oic.count, opc.count, rcc.count, mpc.count,
+        {{weight.issueCommentWeight}}*icc.count+{{weight.openIssueWeight}}*oic.count+{{weight.openPullWeight}}*opc.count+{{weight.pullReviewWeight}}*rcc.count+{{weight.mergePullWeight}}*mpc.count AS score,
+        mpc.commits AS commits,mpc.additions AS additions,mpc.deletions AS deletions
+        FROM
+            (SELECT repo_id, actor_id, COUNT(*) count FROM {{table}} WHERE type='IssueCommentEvent' AND action='created' GROUP BY repo_id, actor_id) AS icc
+            LEFT JOIN
+            (SELECT repo_id, actor_id, COUNT(*) count FROM {{table}} WHERE type='IssuesEvent' AND action='opened' GROUP BY repo_id, actor_id) AS oic
+            ON icc.repo_id=oic.repo_id AND icc.actor_id=oic.actor_id
+            LEFT JOIN
+            (SELECT repo_id, actor_id, COUNT(*) count FROM {{table}} WHERE type='PullRequestEvent' AND action='opened' GROUP BY repo_id, actor_id) AS opc
+            ON icc.repo_id=opc.repo_id AND icc.actor_id=opc.actor_id
+            LEFT JOIN
+            (SELECT repo_id, actor_id, COUNT(*) count FROM {{table}} WHERE type='PullRequestReviewCommentEvent' AND action='created' GROUP BY repo_id, actor_id) AS rcc
+            ON icc.repo_id=rcc.repo_id AND icc.actor_id=rcc.actor_id
+            LEFT JOIN
+            (SELECT repo_id, issue_author_id AS actor_id, COUNT(*) as count,SUM(pull_commits) AS commits,SUM(pull_additions) AS additions,SUM(pull_deletions) AS deletions FROM {{table}} WHERE type='PullRequestEvent' AND action='closed' AND pull_merged=1 GROUP BY repo_id, actor_id) AS mpc
+            ON icc.repo_id=mpc.repo_id AND icc.actor_id=mpc.actor_id
+        ) AS contribute_list
+        GROUP BY repo_id
+        ORDER BY repo_activity DESC
+        LIMIT {{topN}}) activity_list
+        INNER JOIN
+        (SELECT repo_id,anyHeavy(repo_name) AS repo_name,anyHeavy(repo_language) AS repo_language FROM
+            (SELECT repo_id,repo_name,repo_language FROM {{table}} WHERE repo_language!='')
+        GROUP BY repo_id) language_list
+        ON activity_list.repo_id=language_list.repo_id
