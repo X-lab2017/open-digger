@@ -20,9 +20,9 @@ We calculated the activity of global developers on GitHub and the top {{sqls.dev
 
 {{sqls.developers-top.text}}
 
-## Top {{sqls.developers-top.config.topN}} Chinese active developers
+## Top {{sqls.developers-top-Chinese.config.topN}} Chinese active developers
 
-We calculated the activity of Chinese developers on GitHub and the top {{sqls.developers-top.config.topN}} most active developers are as follows.
+We calculated the activity of Chinese developers on GitHub and the top {{sqls.developers-top-Chinese.config.topN}} most active developers are as follows.
 
 {{sqls.developers-top-Chinese.text}}
 
