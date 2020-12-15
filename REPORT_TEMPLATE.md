@@ -8,11 +8,23 @@ We calculated the activity of global repositories and the top 10 most active rep
 
 {{sqls.activity-repo-top.text}}
 
+## Top 10 Chinese repositories
+
+We calculated the activity of Chinese repositories and the top 10 most active repositories are as follows.
+
+{{sqls.activity-repo-top-Chinese.text}}
+
 ## Top {{sqls.developers-top.config.topN}} active developers
 
 We calculated the activity of global developers on GitHub and the top {{sqls.developers-top.config.topN}} most active developers are as follows.
 
 {{sqls.developers-top.text}}
+
+## Top {{sqls.developers-top.config.topN}} Chinese active developers
+
+We calculated the activity of Chinese developers on GitHub and the top {{sqls.developers-top.config.topN}} most active developers are as follows.
+
+{{sqls.developers-top-Chinese.text}}
 
 ## GitHub Word Cloud
 
