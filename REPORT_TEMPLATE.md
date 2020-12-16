@@ -20,12 +20,6 @@ We calculated the activity of global developers on GitHub and the top {{sqls.dev
 
 {{sqls.developers-top.text}}
 
-## Top {{sqls.developers-top-Chinese.config.topN}} Chinese active developers
-
-We calculated the activity of Chinese developers on GitHub and the top {{sqls.developers-top-Chinese.config.topN}} most active developers are as follows.
-
-{{sqls.developers-top-Chinese.text}}
-
 ## GitHub Word Cloud
 
 We select topics of top 10w active repositories, filtered the topics with a frequency of more than 25. Then a word cloud map is generated based on the data. The word cloud visually highlights the topics that appear frequently, so that we can quickly get the more popular topics.
