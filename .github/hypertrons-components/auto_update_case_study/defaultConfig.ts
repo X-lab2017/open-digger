@@ -16,8 +16,8 @@ import Config from './config';
 
 const defaultConfig: Config = {
   // schedule
-  schedName: 'Auto report update',
-  sched: '0 0 23 * * *', // update on 11pm UTC+8 by default
+  schedName: 'Auto case study report update',
+  sched: '0 30 22 * * *', // update on 11pm UTC+8 by default
   // sqls
   sqlsDir: 'case-study/sqls',
   sqlFile: '/sql',
