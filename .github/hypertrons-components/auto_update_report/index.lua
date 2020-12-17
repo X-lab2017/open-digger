@@ -33,8 +33,14 @@ sched(compConfig.schedName, compConfig.sched, function ()
         local sqlRaw = getFileContent(sqlMeta.path..compConfig.sqlFile).content
         local manifest = string2table(getFileContent(sqlMeta.path..compConfig.sqlManifestFile).content)
         local postProcessor = getFileContent(sqlMeta.path..compConfig.sqlPostProcessorFile).content
+        local preProcessorFile = getFileContent(sqlMeta.path..compConfig.sqlPreProcessorFile)
+        local preProcessorResult = {}
+        if (preProcessorFile ~= nil) then
+          preProcessorResult = runJsCode(preProcessorFile.content, manifest.config)
+        end
+
         -- render sql
-        local sql = rendStr(sqlRaw, manifest.config, compConfig.defaultRenderParams)
+        local sql = rendStr(sqlRaw, manifest.config, compConfig.defaultRenderParams, preProcessorResult)
         -- request run sql
         local requestRes = requestUrl({
           ['url'] = compConfig.sqlRequestUrl,

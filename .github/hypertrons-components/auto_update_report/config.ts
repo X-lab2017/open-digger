@@ -51,6 +51,12 @@ export default class Config {
   sqlManifestFile: string;
 
   @configProp({
+    description: 'SQL pre processor file path',
+    defaultValue: defaultConfig.sqlPreProcessorFile,
+  })
+  sqlPreProcessorFile: string;
+
+  @configProp({
     description: 'SQL post processor file path',
     defaultValue: defaultConfig.sqlPostProcessorFile,
   })

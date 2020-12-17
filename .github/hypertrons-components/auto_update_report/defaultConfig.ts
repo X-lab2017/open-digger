@@ -22,6 +22,7 @@ const defaultConfig: Config = {
   sqlsDir: 'sqls',
   sqlFile: '/sql',
   sqlManifestFile: '/manifest.json',
+  sqlPreProcessorFile: '/pre-processor.js',
   sqlPostProcessorFile: '/post-processor.js',
   defaultRenderParams: {
     year: 2020,
