@@ -32,10 +32,10 @@ sched(compConfig.schedName, compConfig.sched, function ()
     local reports = {}
     for r=1, #reportDir do
       local caseStudyMeta = reportDir[r]
-      if (caseStudyMeta.type == 'dir' and caseStudyMeta.name != 'sqls') then
+      if (caseStudyMeta.type == 'dir' and caseStudyMeta.name ~= 'sqls') then
         -- form case study repo id list
         local selfManifestFile = getFileContent(caseStudyMeta.path..compConfig.sqlManifestFile)
-        if (selfManifestFile != nil) then
+        if (selfManifestFile ~= nil) then
           local selfManifest = string2table(selfManifestFile.content)
           local idList = ''
           for k=1, #selfManifest.repos do
@@ -91,7 +91,7 @@ sched(compConfig.schedName, compConfig.sched, function ()
     end
 
     -- update report by pull
-    if (tablelength(reports) != 0) then
+    if (tablelength(reports) ~= 0) then
       local branchName = rendStr(compConfig.newBranchName, {
         ['timestamp'] = getNowTime()
       })
