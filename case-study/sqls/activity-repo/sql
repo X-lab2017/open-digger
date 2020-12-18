@@ -11,7 +11,7 @@ SELECT language_list.repo_name AS repo_name,language_list.repo_language AS repo_
         {{weight.issueCommentWeight}}*icc.count+{{weight.openIssueWeight}}*oic.count+{{weight.openPullWeight}}*opc.count+{{weight.pullReviewWeight}}*rcc.count+{{weight.mergePullWeight}}*mpc.count AS score,
         mpc.commits AS commits,mpc.additions AS additions,mpc.deletions AS deletions
         FROM
-            (SELECT repo_id, actor_id, COUNT(*) count FROM {{table}} WHERE type='IssueCommentEvent' AND action='created' GROUP BY repo_id, actor_id) AS icc
+            (SELECT repo_id, actor_id, COUNT(*) count FROM {{table}} WHERE type='IssueCommentEvent' AND action='created' AND repo_id IN [{{repoIdList}}] GROUP BY repo_id, actor_id) AS icc
             LEFT JOIN
             (SELECT repo_id, actor_id, COUNT(*) count FROM {{table}} WHERE type='IssuesEvent' AND action='opened' GROUP BY repo_id, actor_id) AS oic
             ON icc.repo_id=oic.repo_id AND icc.actor_id=oic.actor_id
@@ -26,8 +26,7 @@ SELECT language_list.repo_name AS repo_name,language_list.repo_language AS repo_
             ON icc.repo_id=mpc.repo_id AND icc.actor_id=mpc.actor_id
         ) AS contribute_list
         GROUP BY repo_id
-        ORDER BY repo_activity DESC
-        LIMIT {{topN}}) activity_list
+        ORDER BY repo_activity DESC) activity_list
         INNER JOIN
         (SELECT repo_id,anyHeavy(repo_name) AS repo_name,anyHeavy(repo_language) AS repo_language FROM
             (SELECT repo_id,repo_name,repo_language FROM {{table}} WHERE repo_language!='')

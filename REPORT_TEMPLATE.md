@@ -2,6 +2,18 @@
 
 We anaylsis {{sqls.total-record-count.text}} records of GitHub logs, there are {{sqls.total-repo-count.text}} active repositories and {{sqls.total-developer-count.text}} active developers on GitHub during year {{year}}.
 
+## Top 10 repositories
+
+We calculated the activity of global repositories and the top 10 most active repositories are as follows.
+
+{{sqls.activity-repo-top.text}}
+
+## Top {{sqls.developers-top.config.topN}} active developers
+
+We calculated the activity of global developers on GitHub and the top {{sqls.developers-top.config.topN}} most active developers are as follows.
+
+{{sqls.developers-top.text}}
+
 ## Top {{sqls.language-distribution.config.topN_language}} popular languages in top {{sqls.language-distribution.config.topN_repo}} repositories
 
 We calculated the most popular languages in top {{sqls.language-distribution.config.topN_repo}} repositories, the number of top {{sqls.language-distribution.config.topN_repo}} repositories who are using the language, the most active repositiory using the language and all developers of the top {{sqls.language-distribution.config.topN_repo}} repositories who are using the language. The results are as follows.
