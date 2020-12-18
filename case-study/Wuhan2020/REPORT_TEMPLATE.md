@@ -48,21 +48,37 @@ Analysis of areas in which community members excel
 From the analysis results of the areas in which community members are good at, community members tend to choose the fields of publicity or design when they choose their own areas, which also explains why there is a serious surplus of publicity group members in Wuhan2020, many of them remain in the community. This also has to do with the fact that most of the data comes from WeChat rather than Slack, where there are more programmers or engineers on GitHub and Slack who are directly involved in the project rather than filling out forms.
 
 ## Hack for Wuhan data
-We want to address the social crisis and challenges behind the COVID-19 epidemic through digital open collaboration, and for more than two weeks, we've been supporting this battle as a developer.
+We wanted to address the social crisis and challenges behind the COVID-19 epidemic through digital open collaboration. We encouraged user-centric design by hosting the "Hack for Wuhan" hackathon in early March 2020.
 
-In this event, there are over 700,000 online exposures, over 14,500 activity views, 43 cooperative communities, 5 technical media, 37 professional instructors, and over 50 event volunteers.
+This event had over 700,000 online exposures and over 14,500 activity views. We united 43 cooperative communities, 5 technical media, 10 judges, 37 professional mentors, and over 50 event volunteers to contribute to this event.
 
 ![Hack for Wuhan data](https://github.com/16647615268/python/blob/master/wuhan2020/Hack%20for%20Wuhan%20data.jpg)
 
-A total of 902 contestants from 33 countries entered the competition, and more than 500 people watched. More than 50 teams entered the competition. 33 teams entered the preliminary contest, 12 teams entered the final contest, and 8 teams won the grand prize in the final contest.
+A total of 902 contestants from 33 countries participated the competition, and more than 500 people watched. More than 50 teams entered the competition. 33 teams entered the preliminary contest, 12 teams entered the final contest, and 8 teams won the grand prize in the final contest.
 
 ![Hack for Wuhan data](https://github.com/16647615268/python/blob/master/wuhan2020/Hack%20for%20Wuhan%20data2.jpg)
 
-3 hackthon master classes, 2 lightning speeches attended by over 19 contestants, and more than 90 one-on-one tutoring sessions between mentors and contestants in the preliminary contest.
+### How data helped
 
-In 20 days, from scratch, from one idea to gather more than 900 contestants and observers, 58 shortlisted teams, more than 100 online interactions, and 8 winning teams.
+Before launching the hackathon, we sent out a survey to more than 100 people to discover their needs and expectations of the online hackathon. 80% of the respondents had not participated in hackathons before, 45% were hesitant to join, 68% believed that coaching by industry mentors were their biggest motivation, and 34% were students.
 
-We conducted a questionnaire survey among the contestants, 80% of the respondents had not participated in hackathons before, 45% were hesitant to participate, 68% believed that industry mentors were the motivation to attract contestants, and 34% were students.
+Our biggest takeaway was that learning tops competition as a primary motivator for most of the respondents.
+
+Therefore, in addition to having world-renowned venture capitalists and entrepreneurs as judges of the final demo day, we brainstormed and came with an idea to turn the whole week before the 3-day competition into a warm-up week. We would plan "Masterclass" sessions to educate audiences with human-centered design and lean startup methodologies such as MVP (minimum viable product), trial and error, and iterations.
+
+The masterclasses went very successful. We wanted to maximize the desirability of the hackathon, so we also designed a virtual "office hour" mini product for real-time coaching between mentors and teams during the 3-day competition.
+
+Lecturers of masterclasses, together with other 30+ talents, joined the mentor and advisor committee to coach and help participants in the office-hour sessions. These talented people included strategy directors, product managers, engineers, and designers from Microsoft, Google, Facebook, Pinterest, Alibaba, Scale AI, etc.; CTOs and CEOs from Polarr, Vue Glasses, Gliding Eagle, etc.; VCs from GSR Ventures, Sequoia, and Button.
+
+During the 120+ office-hour sessions, they emphasized with people impacted by the COVID-19 and shared personal stories and constructive feedback with participants. Behind the scene, the organizing team kept collecting feedback from participants and mentors and fine-tuned processes on an hourly basis to maximize everyone's engagement. For example, during the first day, some teams registered more sessions than others but missed a few, making others feel unfair. We adjusted the allocation mechanism for the 2nd and 3rd day, balancing between mandatory sessions and on-demand ones. As a result, the engagement rate increased from 84% to 95%.
+
+It turned out that the office-hour mini product received the most recognition, among all the activities and modules of the hackathon. Many participants feedbacked to us that "this hackathon brought us an unprecedented learning and startup experience."
+
+Remember these moments: 3 hackthon master classes, 2 lightning speeches attended by over 19 contestants, and more than 120 one-on-one mentoring sessions between mentors and participants in the contest.
+
+In 20 days, we made it from scratch, from one idea to a global design challenge that made impact.
+
+
 
 # 中文
 ## 介绍
