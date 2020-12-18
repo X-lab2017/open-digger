@@ -14,6 +14,12 @@ We calculated the activity of global developers on GitHub and the top {{sqls.dev
 
 {{sqls.developers-top.text}}
 
+## Top {{sqls.language-distribution.config.topN_language}} popular languages in top {{sqls.language-distribution.config.topN_repo}} repositories
+
+We calculated the most popular languages in top {{sqls.language-distribution.config.topN_repo}} repositories, the number of top {{sqls.language-distribution.config.topN_repo}} repositories who are using the language, the most active repositiory using the language and all developers of the top {{sqls.language-distribution.config.topN_repo}} repositories who are using the language. The results are as follows.
+
+{{sqls.language-distribution.text}}
+
 ## GitHub Word Cloud
 
 We select topics of top 10w active repositories, filtered the topics with a frequency of more than 25. Then a word cloud map is generated based on the data. The word cloud visually highlights the topics that appear frequently, so that we can quickly get the more popular topics.
