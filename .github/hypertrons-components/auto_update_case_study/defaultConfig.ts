@@ -16,13 +16,12 @@ import Config from './config';
 
 const defaultConfig: Config = {
   // schedule
-  schedName: 'Auto report update',
-  sched: '0 0 23 * * *', // update on 11pm UTC+8 by default
+  schedName: 'Auto case study report update',
+  sched: '0 30 22 * * *', // update on 11pm UTC+8 by default
   // sqls
-  sqlsDir: 'sqls',
+  sqlsDir: 'case-study/sqls',
   sqlFile: '/sql',
   sqlManifestFile: '/manifest.json',
-  sqlPreProcessorFile: '/pre-processor.js',
   sqlPostProcessorFile: '/post-processor.js',
   defaultRenderParams: {
     year: 2020,
@@ -33,14 +32,14 @@ const defaultConfig: Config = {
   },
   sqlRequestUrl: 'http://localhost:7001/query',
   // report
+  reportDir: 'case-study',
   reportTemplateFile: 'REPORT_TEMPLATE.md',
   reportFile: 'REPORT.md',
-  reportWebFile: 'docs/report.md',
   // commit and pull
   defaultBranch: 'master',
-  newBranchName: 'auto-update-report-{{timestamp}}',
+  newBranchName: 'auto-update-case-study-report-{{timestamp}}',
   commitMessage: 'docs: {{branchName}}',
-  pullTitle: '[Docs] Update report {{branchName}}',
+  pullTitle: '[Docs] Update case study report {{branchName}}',
   pullBody: 'Update report automatically by robot from {{branchName}}',
 };
 

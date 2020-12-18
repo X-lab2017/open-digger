@@ -51,12 +51,6 @@ export default class Config {
   sqlManifestFile: string;
 
   @configProp({
-    description: 'SQL pre processor file path',
-    defaultValue: defaultConfig.sqlPreProcessorFile,
-  })
-  sqlPreProcessorFile: string;
-
-  @configProp({
     description: 'SQL post processor file path',
     defaultValue: defaultConfig.sqlPostProcessorFile,
   })
@@ -76,6 +70,12 @@ export default class Config {
   sqlRequestUrl: string;
 
   @configProp({
+    description: 'Report directory',
+    defaultValue: defaultConfig.reportDir,
+  })
+  reportDir: string;
+
+  @configProp({
     description: 'Report template file path',
     defaultValue: defaultConfig.reportTemplateFile,
   })
@@ -86,12 +86,6 @@ export default class Config {
     defaultValue: defaultConfig.reportFile,
   })
   reportFile: string;
-
-  @configProp({
-    description: 'Report file path',
-    defaultValue: defaultConfig.reportWebFile,
-  })
-  reportWebFile: string;
 
   @configProp({
     description: 'Default branch to make pull',
