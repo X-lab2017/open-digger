@@ -1,4 +1,4 @@
-SELECT anyHeavy(contribute_list.repo_name) AS repo_name,anyHeavy(contribute_list.repo_language) AS repo_language, round(sum(sqrt(contribute_list.score)),2) AS repo_activity,COUNTDistinct(contribute_list.actor_id) AS developer_count,  
+SELECT anyHeavy(contribute_list.repo_name) AS repo_name,MAX(contribute_list.repo_language) AS repo_language, round(sum(sqrt(contribute_list.score)),2) AS repo_activity,COUNTDistinct(contribute_list.actor_id) AS developer_count,  
 SUM(icc.count) AS issue_comment,SUM(oic.count) AS open_issue, SUM(opc.count) AS open_pull, SUM(rcc.count) AS pull_review_comment, SUM(mpc.count) AS merge_pull,
 SUM(contribute_list.commits) AS commits,SUM(contribute_list.additions) AS additions,SUM(contribute_list.deletions) AS deletions
 FROM
