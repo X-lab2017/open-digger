@@ -12,9 +12,9 @@ module.exports = async function(config) {
         repo_ids.push(config.repos[i].id);
     }
     let ids={
-        "actor_ids":actor_ids,
-        "org_ids":org_ids,
-        "repo_ids":repo_ids
+        "actor_ids":actor_ids.join(','),
+        "org_ids":org_ids.join(','),
+        "repo_ids":repo_ids.join(',')
     }
     return ids;
 }
