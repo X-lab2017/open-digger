@@ -48,6 +48,34 @@ We calculated the activity of global developers on GitHub and the top 20 most ac
 | 20 | openshift-bot | 210810 | 342 | 190152 | 0 | 2671 | 0 | 2529 | 3861 | 492429 | 228587 |
 
 
+## Top 20 popular languages in top 100000 repositories
+
+We calculated the most popular languages in top 100000 repositories, the number of top 100000 repositories who are using the language, the most active repositiory using the language and all developers of the top 100000 repositories who are using the language. The results are as follows.
+
+| # | repo_language | count | top_repo | activity | actor_count | 
+|:--:|:--:|:--:|:--:|:--:|:--:| 
+| 1 | JavaScript | 15453 | gatsbyjs/gatsby | 11689.72 | 531469 |
+| 2 | Python | 13538 | home-assistant/home-assistant | 22069.22 | 476113 |
+| 3 | TypeScript | 10465 | microsoft/vscode | 26762.27 | 372215 |
+| 4 | Java | 6864 | elastic/elasticsearch | 7017.59 | 242386 |
+| 5 | Go | 4646 | kubernetes/kubernetes | 19600.57 | 220899 |
+| 6 | C++ | 4227 | tensorflow/tensorflow | 21245.83 | 238250 |
+| 7 | Ruby | 3660 | Homebrew/homebrew-core | 6687.17 | 71567 |
+| 8 | PHP | 3620 | magento/magento2 | 8241.97 | 136264 |
+| 9 | C# | 3045 | dotnet/runtime | 13893.74 | 146671 |
+| 10 | Shell | 2766 | conda-forge/staged-recipes | 5275.66 | 103719 |
+| 11 | HTML | 2719 | kubernetes/website | 8959.59 | 71611 |
+| 12 | C | 2440 | zephyrproject-rtos/zephyr | 7522.07 | 126047 |
+| 13 | Rust | 1799 | rust-lang/rust | 11758.48 | 59987 |
+| 14 | Vue | 1220 | tokyo-metropolitan-gov/covid19 | 2960 | 26016 |
+| 15 | Kotlin | 1059 | mozilla-mobile/fenix | 5900.88 | 38038 |
+| 16 | Swift | 847 | corona-warn-app/cwa-app-ios | 2063.24 | 30263 |
+| 17 | Jupyter Notebook | 777 | jupyterlab/jupyterlab | 2033.78 | 22159 |
+| 18 | CSS | 699 | tailwindcss/tailwindcss | 1815.55 | 16368 |
+| 19 | R | 683 | satijalab/seurat | 1800.91 | 18675 |
+| 20 | Scala | 655 | apache/spark | 5199.85 | 15849 |
+
+
 ## GitHub Word Cloud
 
 We select topics of top 10w active repositories, filtered the topics with a frequency of more than 25. Then a word cloud map is generated based on the data. The word cloud visually highlights the topics that appear frequently, so that we can quickly get the more popular topics.
