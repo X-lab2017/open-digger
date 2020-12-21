@@ -1,0 +1,20 @@
+{
+  "config": {
+	"repos": [
+      {
+        "id": 20580498,
+        "name": "unknown"
+      },{
+        "id": 45717250,
+        "name": "unknown"
+      }
+	],
+	"banned_actors": [
+      {
+        "id": 20407524,
+        "name": "anonymous"
+      }
+	]
+  },
+  "description": "Return the statistical characteristics of actions per repository: the repository name, the average resolve period of Issue&PR(Issue and Pull Request), the average first-responce period of Issue&PR, the median of resolve period of Issue&PR, the median first-responce period of Issue&PR, and the count of {{repo_ids}}."
+}

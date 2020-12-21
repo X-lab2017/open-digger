@@ -1,0 +1,116 @@
+SELECT repo_id,
+    anyHeavy(repo_name) AS repo_name,
+    floor(avg(resolve_issue_period)) AS resolve_issue_period_avg,
+    floor(avg(respond_issue_period)) AS respond_issue_period_avg,
+    median(resolve_issue_period) AS resolve_issue_period_median,
+    median(respond_issue_period) AS respond_issue_period_median,
+    floor(avg(resolve_pr_period)) AS resolve_pr_period_avg,
+    floor(avg(respond_pr_period)) AS respond_pr_period_avg,
+    median(resolve_pr_period) AS resolve_pr_period_median,
+    median(respond_pr_period) AS respond_pr_period_median,
+    count(1) AS count
+FROM (
+        SELECT repo_id,
+            repo_name,
+            oi_issue_number,
+            close_issue_at - open_issue_at AS resolve_issue_period,
+            interact_issue_at - open_issue_at AS respond_issue_period,
+            opr_issue_number,
+            close_pr_at - open_pr_at AS resolve_pr_period,
+            interact_pr_at - open_pr_at AS respond_pr_period
+        FROM (
+                SELECT oi.repo_id AS repo_id,
+                    oi.repo_name AS repo_name,
+                    oi.issue_number AS oi_issue_number,
+                    oi.time AS open_issue_at,
+                    ci.time AS close_issue_at,
+                    ii.time AS interact_issue_at
+                FROM (
+                        SELECT repo_id,
+                            anyHeavy(repo_name) AS repo_name,
+                            issue_number,
+                            min(created_at) AS time
+                        FROM {{table}}
+                        WHERE (repo_id IN [{{repo_ids}}])
+                            AND (type IN ['IssuesEvent'])
+                            AND (action IN ['opened'])
+                        GROUP BY repo_id,
+                            issue_number
+                    ) AS oi 
+                    INNER JOIN (
+                        SELECT repo_id,
+                            issue_number,
+                            min(created_at) AS time
+                        FROM {{table}}
+                        WHERE (repo_id IN [{{repo_ids}}])
+                            AND (type IN ['IssuesEvent'])
+                            AND (action IN ['closed'])
+                        GROUP BY repo_id,
+                            issue_number
+                    ) AS ci ON (oi.repo_id = ci.repo_id)
+                    AND (oi.issue_number = ci.issue_number)
+                    INNER JOIN (
+                        SELECT repo_id,
+                            issue_number,
+                            min(created_at) AS time
+                        FROM {{table}}
+                        WHERE (repo_id IN [{{repo_ids}}])
+                            AND (type IN ['IssueCommentEvent', 'IssuesEvent'])
+                            AND (action IN ['created', 'closed'])
+                            AND (actor_id NOT IN [{{banned_actor_ids}}])
+                            AND (actor_id != issue_author_id)
+                            AND (actor_login NOT LIKE '%[bot]')
+                        GROUP BY repo_id,
+                            issue_number
+                    ) AS ii ON (oi.repo_id = ii.repo_id)
+                    AND (oi.issue_number = ii.issue_number)
+            ) AS it
+            LEFT JOIN (
+                SELECT opr.repo_id AS repo_id,
+                    opr.repo_name AS repo_name,
+                    opr.issue_number AS opr_issue_number,
+                    opr.time AS open_pr_at,
+                    cpr.time AS close_pr_at,
+                    ipr.time AS interact_pr_at
+                FROM (
+                        SELECT repo_id,
+                            anyHeavy(repo_name) AS repo_name,
+                            issue_number, 
+                            min(created_at) AS time
+                        FROM {{table}}
+                        WHERE (repo_id IN [{{repo_ids}}])
+                            AND (type IN ['PullRequestEvent'])
+                            AND (action IN ['opened'])
+                        GROUP BY repo_id,
+                            issue_number
+                    ) AS opr 
+                    INNER JOIN (
+                        SELECT repo_id,
+                            issue_number,
+                            min(created_at) AS time
+                        FROM {{table}}
+                        WHERE (repo_id IN [{{repo_ids}}])
+                            AND (type IN ['PullRequestEvent'])
+                            AND (action IN ['closed'])
+                        GROUP BY repo_id,
+                            issue_number
+                    ) AS cpr ON (opr.repo_id = cpr.repo_id)
+                    AND (opr.issue_number = cpr.issue_number)
+                    INNER JOIN (
+                        SELECT repo_id,
+                            issue_number,
+                            min(created_at) AS time
+                        FROM {{table}}
+                        WHERE (repo_id IN [{{repo_ids}}])
+                            AND (type IN ['IssueCommentEvent', 'PullRequestEvent', 'PullRequestReviewCommentEvent'])
+                            AND (action IN ['created', 'closed'])
+                            AND (actor_id NOT IN [{{banned_actor_ids}}])
+                            AND (actor_id != issue_author_id)
+                            AND (actor_login NOT LIKE '%[bot]')
+                        GROUP BY repo_id,
+                            issue_number
+                    ) AS ipr ON (opr.repo_id = ipr.repo_id)
+                    AND (opr.issue_number = ipr.issue_number)
+            ) AS prt ON (it.repo_id = prt.repo_id)
+    )
+GROUP BY repo_id
