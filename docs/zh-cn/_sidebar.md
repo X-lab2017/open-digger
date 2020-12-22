@@ -1,4 +1,8 @@
-- [主页](/zh-cn/)
+- [报告](/report.md)
+- 案例分析
+  - [CNCF](/zh-cn/case-study/CNCF.md)
+  - [LF AI & Data](/zh-cn/case-study/LFAI.md)
+  - [Wuhan2020](/zh-cn/case-study/Wuhan2020.md)
 - [贡献指南](/zh-cn/CONTRIBUTING.md)
 - [架构](/zh-cn/architecture.md)
 - [工作流](/zh-cn/workflow.md)
