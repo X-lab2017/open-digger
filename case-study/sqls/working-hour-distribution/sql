@@ -1,1 +1,1 @@
-SELECT COUNT(*) AS count, toDayOfWeek(created_at) AS dayOfWeek, toHour(created_at) AS hour FROM {{table}} GROUP BY hour, dayOfWeek
+SELECT COUNT(*) AS count, toDayOfWeek(created_at) AS dayOfWeek, toHour(created_at) AS hour FROM {{table}} WHERE repo_id IN [{{repoIdList}}] GROUP BY hour, dayOfWeek
