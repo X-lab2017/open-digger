@@ -24,5 +24,5 @@ module.exports = async function(data, config) {
     }
   }
   
-  return `${config.baseUrl}svgrenderer/github/${config.owner}/${config.repo}?path=case-study/sqls/working-hour-distribution/image.svg&data=${JSON.stringify(d)}`;
+  return `${config.baseUrl}svgrenderer/github/${config.owner}/${config.repo}?path=sqls/working-hour-distribution/image.svg&data=${JSON.stringify(d)}`;
 }
