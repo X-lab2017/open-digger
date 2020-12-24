@@ -67,5 +67,5 @@ module.exports = async function(data,config) {
     });
     top_company+='\n';
   });
-  return {"top_repo":top_repo,"top_company":top_company}
+  return {"top_repo":top_repo,"top_company":top_company};
 }
