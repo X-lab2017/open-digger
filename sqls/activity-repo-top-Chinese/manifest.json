@@ -7,7 +7,7 @@
       "pullReviewWeight": 4,
       "mergePullWeight": 5
     },
-    "topN": 10,
+    "topN": 50,
     "actors": [
       {
         "id": 8266075,
@@ -250,438 +250,545 @@
         "name": "syhyz1990"
       }
     ],
-    "orgs": [
-      {
-        "id": 1309360,
-        "name": "XiaoMi"
-      },
-      {
-        "id": 20021831,
-        "name": "youkuvip"
-      },
-      {
-        "id": 48813648,
-        "name": "seata"
-      },
-      {
-        "id": 48477425,
-        "name": "chaosblade-io"
-      },
-      {
-        "id": 11855343,
-        "name": "pingcap"
-      },
-      {
-        "id": 7145544,
-        "name": "vipshop"
-      },
-      {
-        "id": 14183739,
-        "name": "weixin"
-      },
-      {
-        "id": 43056710,
-        "name": "mars-project"
-      },
-      {
-        "id": 11404085,
-        "name": "youzan"
-      },
-      {
-        "id": 4158466,
-        "name": "bytedance"
-      },
-      {
-        "id": 41812465,
-        "name": "kubegene"
-      },
-      {
-        "id": 22739181,
-        "name": "jdf2e"
-      },
-      {
-        "id": 28768304,
-        "name": "ApolloAuto"
-      },
-      {
-        "id": 41004122,
-        "name": "tikv"
-      },
-      {
-        "id": 39963175,
-        "name": "areslabs"
-      },
-      {
-        "id": 10720307,
-        "name": "ctripcorp"
-      },
-      {
-        "id": 34010907,
-        "name": "mesalock-linux"
-      },
-      {
-        "id": 6365106,
-        "name": "cnpm"
-      },
-      {
-        "id": 1539555,
-        "name": "dianping"
-      },
-      {
-        "id": 20552239,
-        "name": "dvajs"
-      },
-      {
-        "id": 6876878,
-        "name": "huawei-cloudnative"
-      },
-      {
-        "id": 1961952,
-        "name": "alibaba"
-      },
-      {
-        "id": 21099191,
-        "name": "163yun"
-      },
-      {
-        "id": 12892132,
-        "name": "macacajs"
-      },
-      {
-        "id": 229533,
-        "name": "360"
-      },
-      {
-        "id": 14069894,
-        "name": "netease-im"
-      },
-      {
-        "id": 19199542,
-        "name": "antvis"
-      },
-      {
-        "id": 1460597,
-        "name": "NetEase"
-      },
-      {
-        "id": 1503033,
-        "name": "AlloyTeam"
-      },
-      {
-        "id": 977371,
-        "name": "meituan"
-      },
-      {
-        "id": 44993420,
-        "name": "dragonflyoss"
-      },
-      {
-        "id": 5432002,
-        "name": "LCTT"
-      },
-      {
-        "id": 8372490,
-        "name": "be-fe"
-      },
-      {
-        "id": 1592697,
-        "name": "linuxdeepin"
-      },
-      {
-        "id": 15226349,
-        "name": "thinkjs"
-      },
-      {
-        "id": 12334581,
-        "name": "tencentyun"
-      },
-      {
-        "id": 54881990,
-        "name": "0Kee-Team"
-      },
-      {
-        "id": 7741285,
-        "name": "aliqin"
-      },
-      {
-        "id": 22132015,
-        "name": "LiteOS"
-      },
-      {
-        "id": 1299356,
-        "name": "alipay"
-      },
-      {
-        "id": 1220164,
-        "name": "douban"
-      },
-      {
-        "id": 29911379,
-        "name": "spritejs"
-      },
-      {
-        "id": 4538353,
-        "name": "thx"
-      },
-      {
-        "id": 13245940,
-        "name": "baidu"
-      },
-      {
-        "id": 32128461,
-        "name": "midwayjs"
-      },
-      {
-        "id": 1274540,
-        "name": "MiCode"
-      },
-      {
-        "id": 941070,
-        "name": "aliyun"
-      },
-      {
-        "id": 15833670,
-        "name": "eggjs"
-      },
-      {
-        "id": 12810740,
-        "name": "ElemeFE"
-      },
-      {
-        "id": 13144859,
-        "name": "huiyan-fe"
-      },
-      {
-        "id": 12101536,
-        "name": "ant-design"
-      },
-      {
-        "id": 23534030,
-        "name": "PaddlePaddle"
-      },
-      {
-        "id": 4082929,
-        "name": "Qihoo360"
-      },
-      {
-        "id": 20315766,
-        "name": "Huawei"
-      },
-      {
-        "id": 18461506,
-        "name": "Tencent"
-      },
-      {
-        "id": 6668906,
-        "name": "fex-team"
-      },
-      {
-        "id": 19966931,
-        "name": "mipengine"
-      },
-      {
-        "id": 29886630,
-        "name": "Chimeejs"
-      },
-      {
-        "id": 38934544,
-        "name": "AlibabaCloudDocs"
-      },
-      {
-        "id": 12002442,
-        "name": "bilibili"
-      },
-      {
-        "id": 42138346,
-        "name": "TarsCloud"
-      },
-      {
-        "id": 36578213,
-        "name": "huaweicloud"
-      },
-      {
-        "id": 44182399,
-        "name": "WeBankFinTech"
-      },
-      {
-        "id": 539149,
-        "name": "seajs"
-      },
-      {
-        "id": 13003405,
-        "name": "unijs"
-      },
-      {
-        "id": 13195604,
-        "name": "hiloteam"
-      },
-      {
-        "id": 12619994,
-        "name": "huawei-noah"
-      },
-      {
-        "id": 27521938,
-        "name": "didi"
-      },
-      {
-        "id": 11186302,
-        "name": "ali-sdk"
-      },
-      {
-        "id": 34292813,
-        "name": "AirtestProject"
-      },
-      {
-        "id": 43955412,
-        "name": "sentinel-group"
-      },
-      {
-        "id": 41812520,
-        "name": "kubeedge"
-      },
-      {
-        "id": 20238146,
-        "name": "Meituan-Dianping"
-      },
-      {
-        "id": 328318,
-        "name": "kissyteam"
-      },
-      {
-        "id": 10482599,
-        "name": "xitu"
-      },
-      {
-        "id": 2268460,
-        "name": "ecomfe"
-      },
-      {
-        "id": 7857697,
-        "name": "Clouda-team"
-      },
-      {
-        "id": 3334825,
-        "name": "kissygalleryteam"
-      },
-      {
-        "id": 43158242,
-        "name": "qunarcorp"
-      },
-      {
-        "id": 5575368,
-        "name": "75team"
-      },
-      {
-        "id": 36956638,
-        "name": "sofastack"
-      },
-      {
-        "id": 38243092,
-        "name": "swan-team"
-      },
-      {
-        "id": 8051311,
-        "name": "baidu-research"
-      },
-      {
-        "id": 30794937,
-        "name": "NervJS"
-      },
-      {
-        "id": 30042306,
-        "name": "node-honeycomb"
-      },
-      {
-        "id": 16377432,
-        "name": "AliyunContainerService"
-      },
-      {
-        "id": 1560507,
-        "name": "taobao"
-      }
-    ],
     "repos": [
       {
         "id": 91674936,
-        "name": "apache/servicecomb-java-chassis"
+        "name": "apache/servicecomb-java-chassis",
+        "company": "Alibaba"
       },
       {
         "id": 173335706,
-        "name": "apache/incubator-dolphinscheduler"
+        "name": "apache/incubator-dolphinscheduler",
+        "company": "Alibaba"
       },
       {
         "id": 40345658,
-        "name": "recharts/recharts"
+        "name": "recharts/recharts",
+        "company": "Alibaba"
       },
       {
         "id": 4710920,
-        "name": "apache/dubbo"
+        "name": "apache/dubbo",
+        "company": "Alibaba"
       },
       {
         "id": 45721011,
-        "name": "apache/skywalking"
+        "name": "apache/skywalking",
+        "company": "Alibaba"
       },
       {
         "id": 7600409,
-        "name": "shadowsocks/shadowsocks-windows"
+        "name": "shadowsocks/shadowsocks-windows",
+        "company": "Alibaba"
       },
       {
         "id": 99919302,
-        "name": "apache/incubator-doris"
+        "name": "apache/incubator-doris",
+        "company": "Alibaba"
       },
       {
         "id": 180481986,
-        "name": "apache/apisix"
+        "name": "apache/apisix",
+        "company": "Alibaba"
       },
       {
         "id": 60844036,
-        "name": "shadowsocks/ShadowsocksX-NG"
+        "name": "shadowsocks/ShadowsocksX-NG",
+        "company": "Alibaba"
       },
       {
         "id": 131770422,
-        "name": "neoclide/coc.nvim"
+        "name": "neoclide/coc.nvim",
+        "company": "Alibaba"
       },
       {
         "id": 9185792,
-        "name": "apache/incubator-echarts"
+        "name": "apache/incubator-echarts",
+        "company": "Alibaba"
       },
       {
         "id": 102343794,
-        "name": "apache/incubator-brpc"
+        "name": "apache/incubator-brpc",
+        "company": "Alibaba"
       },
       {
         "id": 129345192,
-        "name": "consenlabs/token-profile"
+        "name": "consenlabs/token-profile",
+        "company": "Alibaba"
       },
       {
         "id": 38007053,
-        "name": "dotnet/docfx"
+        "name": "dotnet/docfx",
+        "company": "Alibaba"
       },
       {
         "id": 70746484,
-        "name": "apache/tvm"
+        "name": "apache/tvm",
+        "company": "Alibaba"
       },
       {
         "id": 49876476,
-        "name": "apache/shardingsphere"
+        "name": "apache/shardingsphere",
+        "company": "Alibaba"
       },
       {
         "id": 75164823,
-        "name": "apache/rocketmq"
+        "name": "apache/rocketmq",
+        "company": "Alibaba"
       },
       {
         "id": 97573661,
-        "name": "apache/servicecomb-pack"
+        "name": "apache/servicecomb-pack",
+        "company": "Alibaba"
       },
       {
         "id": 78186814,
-        "name": "apache/incubator-weex"
+        "name": "apache/incubator-weex",
+        "company": "Alibaba"
       },
       {
         "id": 91677514,
-        "name": "apache/servicecomb-service-center"
+        "name": "apache/servicecomb-service-center",
+        "company": "Alibaba"
+      }
+    ],
+    "orgs": [
+      {
+        "id": 1309360,
+        "name": "XiaoMi",
+        "company": "Xiaomi"
+      },
+      {
+        "id": 20021831,
+        "name": "youkuvip",
+        "company": "Alibaba"
+      },
+      {
+        "id": 48813648,
+        "name": "seata",
+        "company": "Alibaba"
+      },
+      {
+        "id": 48477425,
+        "name": "chaosblade-io",
+        "company": "Alibaba"
+      },
+      {
+        "id": 11855343,
+        "name": "pingcap",
+        "company": "PingCAP"
+      },
+      {
+        "id": 7145544,
+        "name": "vipshop",
+        "company": "Vipshop"
+      },
+      {
+        "id": 14183739,
+        "name": "weixin",
+        "company": "Tencent"
+      },
+      {
+        "id": 43056710,
+        "name": "mars-project",
+        "company": "Alibaba"
+      },
+      {
+        "id": 11404085,
+        "name": "youzan",
+        "company": "Youzan"
+      },
+      {
+        "id": 4158466,
+        "name": "bytedance",
+        "company": "Bytedance"
+      },
+      {
+        "id": 41812465,
+        "name": "kubegene",
+        "company": "Huawei"
+      },
+      {
+        "id": 22739181,
+        "name": "jdf2e",
+        "company": "JD"
+      },
+      {
+        "id": 28768304,
+        "name": "ApolloAuto",
+        "company": "Baidu"
+      },
+      {
+        "id": 41004122,
+        "name": "tikv",
+        "company": "PingCAP"
+      },
+      {
+        "id": 39963175,
+        "name": "areslabs",
+        "company": "JD"
+      },
+      {
+        "id": 10720307,
+        "name": "ctripcorp",
+        "company": "CTrip"
+      },
+      {
+        "id": 34010907,
+        "name": "mesalock-linux",
+        "company": "Baidu"
+      },
+      {
+        "id": 6365106,
+        "name": "cnpm",
+        "company": "Alibaba"
+      },
+      {
+        "id": 1539555,
+        "name": "dianping",
+        "company": "Meituan"
+      },
+      {
+        "id": 20552239,
+        "name": "dvajs",
+        "company": "Alibaba"
+      },
+      {
+        "id": 6876878,
+        "name": "huawei-cloudnative",
+        "company": "Huawei"
+      },
+      {
+        "id": 1961952,
+        "name": "alibaba",
+        "company": "Alibaba"
+      },
+      {
+        "id": 21099191,
+        "name": "163yun",
+        "company": "Netease"
+      },
+      {
+        "id": 12892132,
+        "name": "macacajs",
+        "company": "Alibaba"
+      },
+      {
+        "id": 229533,
+        "name": "360",
+        "company": "360"
+      },
+      {
+        "id": 14069894,
+        "name": "netease-im",
+        "company": "Netease"
+      },
+      {
+        "id": 19199542,
+        "name": "antvis",
+        "company": "Alibaba"
+      },
+      {
+        "id": 1460597,
+        "name": "NetEase",
+        "company": "Netease"
+      },
+      {
+        "id": 1503033,
+        "name": "AlloyTeam",
+        "company": null
+      },
+      {
+        "id": 977371,
+        "name": "meituan",
+        "company": "Meituan"
+      },
+      {
+        "id": 44993420,
+        "name": "dragonflyoss",
+        "company": "Alibaba"
+      },
+      {
+        "id": 5432002,
+        "name": "LCTT",
+        "company": "Linux China"
+      },
+      {
+        "id": 8372490,
+        "name": "be-fe",
+        "company": "Baidu"
+      },
+      {
+        "id": 1592697,
+        "name": "linuxdeepin",
+        "company": "Deepin"
+      },
+      {
+        "id": 15226349,
+        "name": "thinkjs",
+        "company": "360"
+      },
+      {
+        "id": 12334581,
+        "name": "tencentyun",
+        "company": "Tencent"
+      },
+      {
+        "id": 54881990,
+        "name": "0Kee-Team",
+        "company": "360"
+      },
+      {
+        "id": 7741285,
+        "name": "aliqin",
+        "company": "Alibaba"
+      },
+      {
+        "id": 22132015,
+        "name": "LiteOS",
+        "company": null
+      },
+      {
+        "id": 1299356,
+        "name": "alipay",
+        "company": "Alibaba"
+      },
+      {
+        "id": 1220164,
+        "name": "douban",
+        "company": "Douban"
+      },
+      {
+        "id": 29911379,
+        "name": "spritejs",
+        "company": "360"
+      },
+      {
+        "id": 4538353,
+        "name": "thx",
+        "company": "Alibaba"
+      },
+      {
+        "id": 13245940,
+        "name": "baidu",
+        "company": "Baidu"
+      },
+      {
+        "id": 32128461,
+        "name": "midwayjs",
+        "company": "Alibaba"
+      },
+      {
+        "id": 1274540,
+        "name": "MiCode",
+        "company": "Xiaomi"
+      },
+      {
+        "id": 941070,
+        "name": "aliyun",
+        "company": "Alibaba"
+      },
+      {
+        "id": 15833670,
+        "name": "eggjs",
+        "company": "Alibaba"
+      },
+      {
+        "id": 12810740,
+        "name": "ElemeFE",
+        "company": "Alibaba"
+      },
+      {
+        "id": 13144859,
+        "name": "huiyan-fe",
+        "company": "Baidu"
+      },
+      {
+        "id": 12101536,
+        "name": "ant-design",
+        "company": "Alibaba"
+      },
+      {
+        "id": 23534030,
+        "name": "PaddlePaddle",
+        "company": "Baidu"
+      },
+      {
+        "id": 4082929,
+        "name": "Qihoo360",
+        "company": "360"
+      },
+      {
+        "id": 20315766,
+        "name": "Huawei",
+        "company": "Huawei"
+      },
+      {
+        "id": 18461506,
+        "name": "Tencent",
+        "company": "Tencent"
+      },
+      {
+        "id": 6668906,
+        "name": "fex-team",
+        "company": "Baidu"
+      },
+      {
+        "id": 19966931,
+        "name": "mipengine",
+        "company": "Baidu"
+      },
+      {
+        "id": 29886630,
+        "name": "Chimeejs",
+        "company": "360"
+      },
+      {
+        "id": 38934544,
+        "name": "AlibabaCloudDocs",
+        "company": "Alibaba"
+      },
+      {
+        "id": 12002442,
+        "name": "bilibili",
+        "company": "Bilibili"
+      },
+      {
+        "id": 42138346,
+        "name": "TarsCloud",
+        "company": "Tencent"
+      },
+      {
+        "id": 36578213,
+        "name": "huaweicloud",
+        "company": "Huawei"
+      },
+      {
+        "id": 44182399,
+        "name": "WeBankFinTech",
+        "company": "WeBank"
+      },
+      {
+        "id": 539149,
+        "name": "seajs",
+        "company": "Alibaba"
+      },
+      {
+        "id": 13003405,
+        "name": "unijs",
+        "company": "Alibaba"
+      },
+      {
+        "id": 13195604,
+        "name": "hiloteam",
+        "company": "Alibaba"
+      },
+      {
+        "id": 12619994,
+        "name": "huawei-noah",
+        "company": "Huawei"
+      },
+      {
+        "id": 27521938,
+        "name": "didi",
+        "company": "DiDi"
+      },
+      {
+        "id": 11186302,
+        "name": "ali-sdk",
+        "company": "Alibaba"
+      },
+      {
+        "id": 34292813,
+        "name": "AirtestProject",
+        "company": "Netease"
+      },
+      {
+        "id": 43955412,
+        "name": "sentinel-group",
+        "company": "Alibaba"
+      },
+      {
+        "id": 41812520,
+        "name": "kubeedge",
+        "company": "Huawei"
+      },
+      {
+        "id": 20238146,
+        "name": "Meituan-Dianping",
+        "company": "Meituan"
+      },
+      {
+        "id": 328318,
+        "name": "kissyteam",
+        "company": "Alibaba"
+      },
+      {
+        "id": 10482599,
+        "name": "xitu",
+        "company": "Juejin"
+      },
+      {
+        "id": 2268460,
+        "name": "ecomfe",
+        "company": "Baidu"
+      },
+      {
+        "id": 7857697,
+        "name": "Clouda-team",
+        "company": "Baidu"
+      },
+      {
+        "id": 3334825,
+        "name": "kissygalleryteam",
+        "company": "Alibaba"
+      },
+      {
+        "id": 43158242,
+        "name": "qunarcorp",
+        "company": "Qunar"
+      },
+      {
+        "id": 5575368,
+        "name": "75team",
+        "company": "360"
+      },
+      {
+        "id": 36956638,
+        "name": "sofastack",
+        "company": "Alibaba"
+      },
+      {
+        "id": 38243092,
+        "name": "swan-team",
+        "company": "Baidu"
+      },
+      {
+        "id": 8051311,
+        "name": "baidu-research",
+        "company": "Baidu"
+      },
+      {
+        "id": 30794937,
+        "name": "NervJS",
+        "company": "JD"
+      },
+      {
+        "id": 30042306,
+        "name": "node-honeycomb",
+        "company": "Alibaba"
+      },
+      {
+        "id": 16377432,
+        "name": "AliyunContainerService",
+        "company": "Alibaba"
+      },
+      {
+        "id": 1560507,
+        "name": "taobao",
+        "company": "Alibaba"
       }
     ]
   },
-  "description": "Return top {{topN}} most active Chinese repo of year {{year}}"
+  "description": "Return top most active Chinese repo and company of year {{year}} "
 }
