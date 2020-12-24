@@ -1,6 +1,9 @@
-- [Home](/)
+- [Report](/report.md)
+- Case study
+  - [CNCF](/case-study/CNCF.md)
+  - [LF AI & Data](/case-study/LFAI.md)
+  - [Wuhan2020](/case-study/Wuhan2020.md)
 - [Contributing Guide](/CONTRIBUTING.md)
 - [Architecture](/architecture.md)
 - [Workflow](/workflow.md)
 - [Data Description](/data.md)
-- [Report](/report.md)

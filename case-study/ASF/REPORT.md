@@ -10,6 +10,6 @@ We calculated the activity of all Apache repositories from China and the data is
 
 | # | name | language | activity | developer_count | issue_comment | open_issue | open_pull | pull_review_comment | merge_pull | pull_commits | pull_additions | pull_deletions |
 |:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
-| 1 | apache/dubbo | Java | 1524.88 | 646 | 2479 | 569 | 548 | 153 | 323 | 3321 | 74577 | 93300 |
-| 2 | apache/carbondata | Scala | 845.61 | 50 | 8762 | 0 | 508 | 4698 | 1 | 1 | 2 | 2 |
+| 1 | apache/dubbo | Java | 1539.08 | 654 | 2504 | 573 | 549 | 153 | 324 | 3322 | 74578 | 93300 |
+| 2 | apache/carbondata | Scala | 849.85 | 50 | 8840 | 0 | 513 | 4736 | 1 | 1 | 2 | 2 |
 
