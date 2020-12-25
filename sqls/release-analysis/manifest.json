@@ -1,0 +1,4 @@
+{
+  "config": {},
+  "description": "Return the total releases count, last release time, average interval and average body length of every repo in year {{year}}"
+}

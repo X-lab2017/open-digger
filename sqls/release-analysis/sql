@@ -1,0 +1,10 @@
+SELECT
+    repo_id,
+    COUNT(*) AS total_releases_count,
+    MAX(release_published_at) AS last_release_time,
+    365 / COUNT(*) AS average_interval,
+    AVG(LENGTH(release_body)) AS average_body_length
+FROM
+    {{table}}
+GROUP BY
+    repo_id
