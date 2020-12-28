@@ -7,8 +7,7 @@
         "pullReviewWeight": 4,
         "mergePullWeight": 5
       },
-      "topN": 20,
-      "RepotopN": 10
+      "topN": 10
     },
     "description": "Return top {{topN}} most active developers of year {{year}}"
   }
