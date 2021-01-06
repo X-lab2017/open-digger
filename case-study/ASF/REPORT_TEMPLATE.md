@@ -39,6 +39,12 @@ We calculated the activity of all Apache repositories from China and the data is
 
 {{sqls.activity-repo.text}}
 
+## Working Hour Distribution
+
+We analyze the working hour distribution for GitHub logs all over the world during year {{year}}, and here are the results of our working hour distribution research for every repo.
+
+{{sqls.working-hour-distribution.text}}
+
 # 中文
 
 ## 简介
@@ -76,3 +82,9 @@ Apache 之道是 ASF 制定的一套行为或者惯例，旨在通过专注于�
 我们计算了所有来自中国的 ASF 项目仓库的活动情况，数据如下。
 
 {{sqls.activity-repo.text}}
+
+## 工作时间分布
+
+我们统计了所有来自中国的 ASF 项目仓库的工作时间情况，为每个仓库绘制而成的图表如下。
+
+{{sqls.working-hour-distribution.text}}
