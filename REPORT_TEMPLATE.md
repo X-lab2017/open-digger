@@ -14,7 +14,7 @@ We calculated the activity of global developers on GitHub and the top {{sqls.dev
 
 {{sqls.developers-top.text}}
 
-## Top {{sqls.activity-repo-top-Chinese.topN}} Chinese repositories
+## Top {{sqls.activity-repo-top-Chinese.config.topN}} Chinese repositories
 
 We calculated the activity of Chinese repositories and the top {{sqls.activity-repo-top-Chinese.topN}} most active repositories are as follows.
 
