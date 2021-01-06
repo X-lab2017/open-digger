@@ -50,7 +50,7 @@ sched(compConfig.schedName, compConfig.sched, function ()
           }
         })
         local renderText = runJsCode(postProcessor, string2table(requestRes).data, compConfig.defaultRenderParams, manifest.config)
-        log('Sql run result for '..sqlMeta.name..' is '..requestRes..', render text is '..renderText)
+        log('Sql run result for '..sqlMeta.name..' is '..requestRes)
         sqlRenderParams[sqlMeta.name] = {
           ['sql'] = sqlRaw,
           ['text'] = renderText,
