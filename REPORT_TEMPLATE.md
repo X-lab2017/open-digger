@@ -11,7 +11,9 @@ We calculated the activity of global repositories and the top 10 most active rep
 ## Top {{sqls.developers-top.config.topN}} active developers
 
 We calculated the activity of global developers on GitHub and the top {{sqls.developers-top.config.topN}} most active developers are as follows.
+-{{sqls.developers-top.text}}
 
+By collecting relevant data on github, we have obtained information about the world's most active robot account on github. In addition, we analyze the robot accounts themselves, including the developer information of the robot accounts, and the domain information to which the robot accounts belong (These accounts are mainly classified based on our own expert experience). In addition, in order to make the warehouses of organizations or individuals on github more convenient to use, we have also summarized the functional information of these robot accounts. Other users or organizations on github can also have a more comprehensive view of these robot tools through the links in the table.
 | Rank | actor_login | location | robot info | Robot developer | Involved areas | Function description | Related Links for more info /
 | :-----| ----: | :----: | :-----| ----:  | :-----| ----: | :----: |
 | 1 | dependabot[bot] | San Francisco, CA | Automated dependency updates built into GitHub |  | Upgrading  dependency | pulling down your dependency files and looking  for any outdated or insecure requirements. | https://github.com/dependabot https://dependabot.com
