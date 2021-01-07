@@ -62,9 +62,23 @@ All exceptions (and "no" outcomes) are handled by the TOC.
 
 ## Data analysis
 
+### Repo activity
+
 We calculated the activity of all CNCF graduated and incubating project repositories and the data is as follows.
 
 {{sqls.activity-repo.text}}
+
+### Developer activity
+
+We also calculate the top {{sqls.top-developer-by-repo.config.topN}} developers data and the data is as follows.
+
+{{sqls.top-developer-by-repo.text}}
+
+### Working Hour Distribution
+
+We analyze the working hour distribution for CNCF during year {{year}}, and here are the results of our working hour distribution research for every repo.
+
+{{sqls.working-hour-distribution.text}}
 
 # 中文
 
@@ -130,6 +144,20 @@ CNCF 对项目提案流程制定了治理政策，提案流程适用于现有要
 
 ## 数据分析
 
+### 项目活跃度
+
 我们计算了所有 CNCF 已毕业和正在孵化的项目仓库的活动情况，数据如下。
 
 {{sqls.activity-repo.text}}
+
+### 开发者活跃度
+
+我们同时也统计了每个项目活跃度前 {{sqls.top-developer-by-repo.config.topN}} 的开发者数据，数据如下。
+
+{{sqls.top-developer-by-repo.text}}
+
+### 工作时间分布
+
+我们统计了 CNCF 项目仓库的工作时间情况，为每个仓库绘制而成的图表如下。
+
+{{sqls.working-hour-distribution.text}}
