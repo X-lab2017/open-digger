@@ -1,6 +1,6 @@
-SELECT anyHeavy(contribute_list.repo_name) AS repo_name,MAX(contribute_list.repo_language) AS repo_language, round(sum(sqrt(contribute_list.score)),2) AS repo_activity,COUNTDistinct(contribute_list.actor_id) AS developer_count,  
-SUM(icc.count) AS issue_comment,SUM(oic.count) AS open_issue, SUM(opc.count) AS open_pull, SUM(rcc.count) AS pull_review_comment, SUM(mpc.count) AS merge_pull,
-SUM(contribute_list.commits) AS commits,SUM(contribute_list.additions) AS additions,SUM(contribute_list.deletions) AS deletions
+SELECT activity_table.repo_name AS repo_name, activity_table.repo_language AS repo_language, activity_table.repo_activity AS repo_activity, activity_table.developer_count AS developer_count, activity_table.issue_comment AS issue_comment, activity_table.open_issue AS open_issue, activity_table.open_pull AS open_pull, activity_table.pull_review_comment AS pull_review_comment, activity_table.merge_pull AS merge_pull, activity_table.commits AS commits, activity_table.additions AS additions, activity_table.deletions AS deletions, release_table.release_num AS release_num, release_table.avg_release_body_len AS avg_release_body_len, issue_response_resolve_period_table.resolve_period_avg AS issue_resolve_period_avg, issue_response_resolve_period_table.response_period_avg AS issue_response_period_avg, issue_response_resolve_period_table.resolve_period_median AS issue_resolve_period_median, issue_response_resolve_period_table.response_period_median AS issue_response_period_median
+FROM
+(SELECT contribute_list.repo_id AS repo_id, anyHeavy(contribute_list.repo_name) AS repo_name, max(contribute_list.repo_language) AS repo_language, round(sum(sqrt(contribute_list.score)), 2) AS repo_activity, COUNTDistinct(contribute_list.actor_id) AS developer_count, sum(icc.count) AS issue_comment, sum(oic.count) AS open_issue, sum(opc.count) AS open_pull, sum(rcc.count) AS pull_review_comment, sum(mpc.count) AS merge_pull, sum(contribute_list.commits) AS commits, sum(contribute_list.additions) AS additions, sum(contribute_list.deletions) AS deletions
 FROM
     (SELECT
     icc.repo_id AS repo_id,icc.repo_name AS repo_name, icc.actor_id AS actor_id, icc.count, oic.count, opc.count, rcc.count, mpc.count,
@@ -18,9 +18,30 @@ FROM
         (SELECT repo_id, actor_id, COUNT(*) count FROM {{table}} WHERE type='PullRequestReviewCommentEvent' AND action='created' GROUP BY repo_id, actor_id) AS rcc
         ON icc.repo_id=rcc.repo_id AND icc.actor_id=rcc.actor_id
         LEFT JOIN
-        (SELECT repo_id, issue_author_id AS actor_id, COUNT(*) as count,SUM(pull_commits) AS commits,SUM(pull_additions) AS additions,SUM(pull_deletions) AS deletions,MAX(repo_language) AS repo_language FROM {{table}} WHERE type='PullRequestEvent' AND action='closed' AND pull_merged=1 GROUP BY repo_id, actor_id) AS mpc
+        (SELECT repo_id, issue_author_id AS actor_id, COUNT(*) as count, sum(pull_commits) AS commits, sum(pull_additions) AS additions, sum(pull_deletions) AS deletions,MAX(repo_language) AS repo_language FROM {{table}} WHERE type='PullRequestEvent' AND action='closed' AND pull_merged=1 GROUP BY repo_id, actor_id) AS mpc
         ON icc.repo_id=mpc.repo_id AND icc.actor_id=mpc.actor_id
     ) AS contribute_list
 GROUP BY repo_id
-ORDER BY repo_activity DESC
+ORDER BY repo_activity DESC) AS activity_table
+LEFT JOIN
+(SELECT repo_id, COUNT() AS release_num, round(avg(lengthUTF8(release_body)), 2) AS avg_release_body_len FROM {{table}} WHERE type='ReleaseEvent' GROUP BY repo_id
+) AS release_table
+ON activity_table.repo_id=release_table.repo_id
+LEFT JOIN
+(SELECT repo_id, floor(avg(resolve_period)) AS resolve_period_avg, floor(avg(response_period)) AS response_period_avg, median(resolve_period) AS resolve_period_median, median(response_period) AS response_period_median
+FROM
+(SELECT repo_id, issue_number, close_at - open_at AS resolve_period, interact_at - open_at AS response_period
+FROM
+  (SELECT oi.repo_id AS repo_id, oi.issue_number AS issue_number, oi.time AS open_at, ci.time AS close_at, ii.time AS interact_at
+  FROM
+    (SELECT repo_id, issue_number, min(created_at) AS time FROM {{table}} WHERE type='IssuesEvent' AND action='opened' GROUP BY repo_id, issue_number) AS oi
+    INNER JOIN
+    (SELECT repo_id, issue_number, min(created_at) AS time FROM {{table}} WHERE type='IssuesEvent' AND action='closed' GROUP BY repo_id, issue_number) AS ci ON (oi.repo_id=ci.repo_id AND oi.issue_number=ci.issue_number)
+    INNER JOIN
+    (SELECT repo_id, issue_number, min(created_at) AS time FROM {{table}} WHERE type IN ['IssuesEvent', 'IssueCommentEvent'] AND action IN ['closed', 'created'] AND actor_login NOT LIKE '%[bot]' GROUP BY repo_id, issue_number) AS ii ON (oi.repo_id=ii.repo_id AND oi.issue_number=ii.issue_number)
+  )
+)
+GROUP BY repo_id
+) AS issue_response_resolve_period_table
+ON activity_table.repo_id=issue_response_resolve_period_table.repo_id
 LIMIT {{topN}}
