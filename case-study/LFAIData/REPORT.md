@@ -149,6 +149,652 @@ Any project may be moved to Emeritus stage by affirmative vote of the TAC, provi
 1. An affirmative ⅔ vote of the TAC
 2. An affirmative ⅔ vote of the GB
 
+## Data analysis
+
+### Repo activity
+
+We calculated the activity of LF AI & Data project repositories and the data is as follows.
+
+| # | name | language | activity | developer_count | issue_comment | open_issue | open_pull | pull_review_comment | merge_pull | pull_commits | pull_additions | pull_deletions |
+|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
+| 1 | horovod/horovod | Python | 1260.96 | 446 | 3564 | 448 | 412 | 947 | 360 | 1380 | 53193 | 23417 |
+| 2 | milvus-io/milvus | C++ | 1234.92 | 239 | 4683 | 1544 | 1865 | 311 | 1681 | 11775 | 788040 | 454149 |
+| 3 | onnx/onnx | PureBasic | 1135.16 | 382 | 2299 | 216 | 301 | 1565 | 232 | 2431 | 42390 | 14042 |
+| 4 | feast-dev/feast | Java | 750.84 | 94 | 8114 | 187 | 646 | 2374 | 557 | 2255 | 182354 | 168855 |
+| 5 | odpi/egeria | Java | 619.93 | 43 | 4509 | 710 | 1298 | 1071 | 1047 | 7746 | 743183 | 342990 |
+| 6 | nnstreamer/nnstreamer | C | 548.22 | 39 | 3963 | 239 | 759 | 2463 | 733 | 938 | 81995 | 26952 |
+| 7 | lyft/amundsen | Smarty | 502.4 | 141 | 1168 | 212 | 393 | 196 | 359 | 543 | 3799 | 1666 |
+| 8 | JanusGraph/janusgraph | Java | 497.19 | 135 | 1223 | 119 | 241 | 965 | 180 | 184 | 21590 | 24111 |
+| 9 | uber/ludwig | Python | 459.1 | 119 | 1783 | 120 | 303 | 620 | 265 | 2139 | 73411 | 100727 |
+| 10 | IBM/adversarial-robustness-toolbox | Python | 447.54 | 87 | 883 | 204 | 308 | 1619 | 269 | 8585 | 214502 | 86926 |
+| 11 | pyro-ppl/pyro | Python | 413.83 | 87 | 982 | 92 | 378 | 1224 | 336 | 1945 | 49294 | 9084 |
+| 12 | sparklyr/sparklyr | R | 387 | 130 | 1429 | 211 | 417 | 93 | 371 | 1129 | 202788 | 112021 |
+| 13 | IBM/AIF360 | Python | 126.96 | 36 | 132 | 17 | 38 | 97 | 33 | 355 | 44441 | 20355 |
+| 14 | Adlik/Adlik | C++ | 122.53 | 11 | 820 | 95 | 228 | 103 | 0 | 0 | 0 | 0 |
+| 15 | MarquezProject/marquez | Java | 102.48 | 15 | 237 | 40 | 145 | 66 | 137 | 952 | 48870 | 6124 |
+| 16 | Angel-ML/angel | Java | 99.63 | 33 | 114 | 37 | 82 | 0 | 79 | 692 | 77462 | 20972 |
+| 17 | IBM/AIX360 | Python | 74.24 | 24 | 109 | 25 | 26 | 0 | 19 | 45 | 11218 | 9697 |
+| 18 | odpi/OpenDS4All | HTML | 57.43 | 10 | 46 | 3 | 84 | 0 | 78 | 309 | 81151 | 11707 |
+| 19 | elasticdeeplearning/edl | Python | 51.78 | 5 | 11 | 3 | 86 | 72 | 71 | 1136 | 54372 | 40732 |
+| 20 | didi/delta | Python | 38.89 | 8 | 50 | 8 | 27 | 14 | 24 | 82 | 8166 | 5841 |
+| 21 | ForestFlow/ForestFlow | Scala | 18.01 | 2 | 4 | 3 | 22 | 18 | 19 | 119 | 4366 | 3177 |
+| 22 | datadotworld/data-practices-site | CSS | 5.74 | 1 | 3 | 0 | 10 | 0 | 0 | 0 | 0 | 0 |
+| 23 | soajs/soajs | JavaScript | 2 | 1 | 1 | 0 | 1 | 0 | 0 | 0 | 0 | 0 |
+
+
+### Developer activity
+
+We also calculate the top 20 developers data and the data is as follows.
+
+
+- nnstreamer/nnstreamer
+
+| # | login | activity | issue_comment | open_issue | open_pull | pull_review_comment | merge_pull | pull_commits | pull_additions | pull_deletions |
+|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
+| 1 | myungjoo | 3795 |  377 | 129 | 103 | 584 | 103 | 136 | 15093 | 8791 |
+| 2 | jaeyun-jung | 3099 |  132 | 3 | 218 | 313 | 211 | 268 | 16616 | 7396 |
+| 3 | taos-ci | 2847 |  2847 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 4 | dongju-chae | 1938 |  70 | 12 | 53 | 360 | 49 | 56 | 8367 | 1822 |
+| 5 | gichan-jang | 1916 |  114 | 7 | 79 | 299 | 71 | 80 | 10781 | 1681 |
+| 6 | kparichay | 1730 |  105 | 16 | 58 | 271 | 67 | 88 | 8903 | 2301 |
+| 7 | wooksong | 1633 |  72 | 17 | 83 | 217 | 82 | 124 | 9129 | 1508 |
+| 8 | anyj0527 | 896 |  56 | 9 | 48 | 112 | 46 | 61 | 3039 | 559 |
+| 9 | again4you | 721 |  45 | 7 | 44 | 80 | 42 | 55 | 4491 | 888 |
+| 10 | helloahn | 609 |  16 | 2 | 28 | 95 | 25 | 28 | 1445 | 264 |
+| 11 | zhoonit | 320 |  15 | 5 | 7 | 61 | 6 | 8 | 413 | 354 |
+| 12 | leemgs | 233 |  20 | 2 | 10 | 36 | 7 | 7 | 1777 | 505 |
+| 13 | kbumsik | 107 |  8 | 0 | 5 | 16 | 4 | 7 | 312 | 161 |
+| 14 | jijoongmoon | 102 |  3 | 0 | 8 | 10 | 7 | 7 | 1545 | 673 |
+| 15 | tony-jinwoo-ahn | 77 |  11 | 3 | 5 | 5 | 5 | 5 | 51 | 29 |
+| 16 | junmin-kim | 42 |  12 | 5 | 2 | 1 | 2 | 2 | 11 | 6 |
+| 17 | lemmaa | 20 |  4 | 0 | 1 | 2 | 1 | 1 | 1 | 1 |
+| 18 | semun-lee | 18 |  2 | 2 | 1 | 1 | 1 | 1 | 6 | 0 |
+| 19 | suehdn | 16 |  8 | 4 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 20 | chunseoklee | 15 |  5 | 1 | 1 | 0 | 1 | 1 | 1 | 1 |
+
+- JanusGraph/janusgraph
+
+| # | login | activity | issue_comment | open_issue | open_pull | pull_review_comment | merge_pull | pull_commits | pull_additions | pull_deletions |
+|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
+| 1 | porunov | 1516 |  246 | 24 | 37 | 234 | 35 | 35 | 3059 | 1659 |
+| 2 | farodin91 | 1063 |  158 | 13 | 47 | 137 | 38 | 39 | 10033 | 20249 |
+| 3 | FlorianHockmann | 1015 |  151 | 4 | 4 | 206 | 4 | 4 | 5 | 8 |
+| 4 | li-boxuan | 852 |  100 | 18 | 28 | 133 | 20 | 20 | 1193 | 312 |
+| 5 | rngcntr | 770 |  60 | 5 | 13 | 149 | 13 | 16 | 3054 | 1183 |
+| 6 | dependabot-preview[bot] | 403 |  31 | 0 | 64 | 0 | 36 | 36 | 36 | 36 |
+| 7 | mad | 146 |  13 | 2 | 9 | 13 | 10 | 10 | 259 | 172 |
+| 8 | mbrukman | 82 |  48 | 1 | 1 | 6 | 1 | 1 | 1 | 0 |
+| 9 | dk-github | 70 |  22 | 0 | 2 | 8 | 2 | 2 | 2858 | 116 |
+| 10 | gguttikonda | 62 |  4 | 1 | 2 | 10 | 2 | 2 | 172 | 21 |
+| 11 | BrunoBerisso | 62 |  3 | 2 | 2 | 11 | 1 | 1 | 46 | 6 |
+| 12 | 9lan9 | 62 |  4 | 0 | 2 | 13 | 0 | 0 | 0 | 0 |
+| 13 | pkendall64 | 44 |  2 | 1 | 1 | 8 | 1 | 1 | 152 | 13 |
+| 14 | VladimirBogomolov | 43 |  9 | 4 | 4 | 1 | 2 | 2 | 151 | 92 |
+| 15 | jiyoungsin | 38 |  11 | 0 | 2 | 4 | 1 | 1 | 3 | 147 |
+| 16 | communitybridge-easycla[bot] | 36 |  36 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 17 | debelyoo | 35 |  1 | 1 | 1 | 6 | 1 | 1 | 48 | 0 |
+| 18 | GeorgeHon | 30 |  1 | 0 | 4 | 3 | 1 | 1 | 6 | 6 |
+| 19 | mmadoo | 29 |  2 | 1 | 1 | 3 | 2 | 2 | 141 | 9 |
+| 20 | mneethiraj | 28 |  3 | 1 | 2 | 3 | 1 | 1 | 100 | 11 |
+
+- IBM/adversarial-robustness-toolbox
+
+| # | login | activity | issue_comment | open_issue | open_pull | pull_review_comment | merge_pull | pull_commits | pull_additions | pull_deletions |
+|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
+| 1 | beat-buesser | 6065 |  362 | 63 | 131 | 1141 | 124 | 5554 | 151573 | 62678 |
+| 2 | minhitbk | 919 |  19 | 5 | 27 | 171 | 25 | 886 | 18547 | 2923 |
+| 3 | shashankkotyan | 358 |  21 | 3 | 2 | 80 | 1 | 16 | 1843 | 1 |
+| 4 | codecov[bot] | 110 |  110 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 5 | keykholt | 51 |  8 | 2 | 4 | 3 | 3 | 15 | 820 | 4 |
+| 6 | kztakemoto | 45 |  9 | 0 | 2 | 5 | 2 | 114 | 919 | 7 |
+| 7 | ririnicolae | 33 |  1 | 0 | 2 | 4 | 2 | 97 | 4840 | 6563 |
+| 8 | tagomaru | 31 |  8 | 2 | 3 | 0 | 2 | 5 | 107 | 121 |
+| 9 | mzweilin | 30 |  2 | 2 | 1 | 4 | 1 | 8 | 694 | 2 |
+| 10 | TreeLLi | 27 |  7 | 2 | 1 | 2 | 1 | 17 | 33 | 21 |
+| 11 | ehsankf | 24 |  10 | 3 | 1 | 0 | 1 | 3 | 24 | 18 |
+| 12 | ng390 | 21 |  1 | 4 | 1 | 1 | 1 | 16 | 291 | 1 |
+| 13 | maliwin | 15 |  9 | 3 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 14 | ahmedomer6 | 14 |  10 | 2 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 15 | akshayag | 14 |  8 | 3 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 16 | henry-eigen | 13 |  2 | 0 | 2 | 0 | 1 | 6 | 19 | 3 |
+| 17 | Tomcli | 12 |  2 | 1 | 1 | 0 | 1 | 1 | 7 | 2 |
+| 18 | Nathalie-B | 11 |  1 | 5 | 0 | 0 | 0 | 0 | 0 | 0 |
+
+- uber/ludwig
+
+| # | login | activity | issue_comment | open_issue | open_pull | pull_review_comment | merge_pull | pull_commits | pull_additions | pull_deletions |
+|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
+| 1 | w4nderlust | 2120 |  784 | 2 | 36 | 271 | 28 | 358 | 14282 | 9028 |
+| 2 | jimthompson5802 | 1570 |  371 | 4 | 78 | 143 | 77 | 971 | 31561 | 19550 |
+| 3 | tgaddair | 1268 |  64 | 1 | 90 | 128 | 84 | 473 | 10455 | 61518 |
+| 4 | carlogrisetti | 302 |  100 | 15 | 15 | 13 | 15 | 59 | 458 | 268 |
+| 5 | kaushikb11 | 180 |  26 | 0 | 10 | 21 | 8 | 52 | 2143 | 219 |
+| 6 | ifokeev | 141 |  37 | 10 | 12 | 2 | 8 | 10 | 24 | 14 |
+| 7 | ydudin3 | 123 |  6 | 0 | 10 | 13 | 7 | 28 | 957 | 506 |
+| 8 | ANarayan | 113 |  1 | 0 | 10 | 8 | 10 | 95 | 1515 | 448 |
+| 9 | flozi00 | 66 |  13 | 3 | 5 | 3 | 4 | 4 | 12 | 7 |
+| 10 | michaelbzhu | 58 |  5 | 3 | 6 | 1 | 5 | 21 | 115 | 15 |
+| 11 | dsblank | 49 |  9 | 0 | 3 | 4 | 3 | 3 | 113 | 0 |
+| 12 | richardliaw | 45 |  1 | 0 | 0 | 11 | 0 | 0 | 0 | 0 |
+| 13 | CLAassistant | 32 |  32 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 14 | mangleddata | 30 |  18 | 6 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 15 | donfour10 | 28 |  16 | 6 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 16 | jenishah | 24 |  11 | 1 | 2 | 0 | 1 | 1 | 1 | 1 |
+| 17 | jmizgajski | 22 |  8 | 3 | 1 | 0 | 1 | 1 | 2 | 0 |
+| 18 | calio | 21 |  3 | 0 | 3 | 1 | 1 | 3 | 129 | 1 |
+| 19 | soovam123 | 20 |  3 | 0 | 4 | 0 | 1 | 9 | 73 | 72 |
+| 20 | msaisumanth | 19 |  16 | 0 | 1 | 0 | 0 | 0 | 0 | 0 |
+
+- Angel-ML/angel
+
+| # | login | activity | issue_comment | open_issue | open_pull | pull_review_comment | merge_pull | pull_commits | pull_additions | pull_deletions |
+|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
+| 1 | xs-li | 580 |  7 | 0 | 71 | 0 | 72 | 88 | 3292 | 5694 |
+| 2 | ouyangwen-it | 54 |  30 | 0 | 3 | 0 | 3 | 595 | 73554 | 15131 |
+| 3 | Gscim | 31 |  1 | 0 | 5 | 0 | 3 | 8 | 612 | 146 |
+| 4 | xiaopqr | 20 |  8 | 2 | 1 | 0 | 1 | 1 | 4 | 1 |
+| 5 | maozida880 | 18 |  10 | 4 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6 | dongxuej | 16 |  6 | 5 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 7 | PayneJoe | 11 |  5 | 3 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 8 | davidxiaozhi | 11 |  3 | 1 | 2 | 0 | 0 | 0 | 0 | 0 |
+
+- odpi/egeria
+
+| # | login | activity | issue_comment | open_issue | open_pull | pull_review_comment | merge_pull | pull_commits | pull_additions | pull_deletions |
+|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
+| 1 | planetf1 | 5106 |  1767 | 253 | 218 | 291 | 203 | 973 | 43128 | 27085 |
+| 2 | davidradl | 2274 |  319 | 122 | 104 | 231 | 95 | 491 | 75171 | 47982 |
+| 3 | dependabot-preview[bot] | 2066 |  69 | 5 | 279 | 0 | 230 | 257 | 508 | 405 |
+| 4 | grahamwallis | 1373 |  298 | 70 | 83 | 69 | 82 | 689 | 80845 | 21195 |
+| 5 | mandy-chessell | 1357 |  318 | 63 | 62 | 108 | 59 | 834 | 271761 | 125014 |
+| 6 | immmus | 905 |  201 | 12 | 31 | 113 | 27 | 283 | 19011 | 38188 |
+| 7 | cmgrote | 896 |  204 | 41 | 57 | 46 | 51 | 516 | 19515 | 9744 |
+| 8 | bogdan-sava | 842 |  116 | 38 | 69 | 27 | 67 | 494 | 4894 | 3714 |
+| 9 | dependabot[bot] | 787 |  129 | 0 | 156 | 0 | 38 | 52 | 628 | 452 |
+| 10 | github-actions[bot] | 771 |  723 | 24 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 11 | lpalashevski | 380 |  38 | 14 | 32 | 17 | 30 | 1961 | 134874 | 29587 |
+| 12 | popa-raluca | 328 |  31 | 8 | 33 | 8 | 30 | 231 | 6353 | 4459 |
+| 13 | marius-patrascu | 303 |  3 | 1 | 40 | 2 | 34 | 152 | 2909 | 1058 |
+| 14 | danielaotelea | 286 |  13 | 11 | 32 | 5 | 27 | 194 | 5969 | 5508 |
+| 15 | lcpopa | 260 |  30 | 3 | 18 | 20 | 18 | 103 | 1932 | 863 |
+| 16 | yevgenmar | 247 |  3 | 2 | 12 | 41 | 8 | 73 | 7952 | 282 |
+| 17 | wbittles | 221 |  52 | 5 | 8 | 25 | 7 | 51 | 4619 | 187 |
+| 18 | jmmadsen | 215 |  33 | 6 | 12 | 26 | 6 | 37 | 49754 | 2993 |
+| 19 | GuyAckermans | 191 |  28 | 3 | 17 | 9 | 14 | 209 | 2245 | 2514 |
+| 20 | DimitriosMaimaris | 132 |  12 | 2 | 14 | 6 | 10 | 89 | 4619 | 5469 |
+
+- horovod/horovod
+
+| # | login | activity | issue_comment | open_issue | open_pull | pull_review_comment | merge_pull | pull_commits | pull_additions | pull_deletions |
+|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
+| 1 | tgaddair | 3302 |  825 | 34 | 147 | 317 | 140 | 562 | 18339 | 13491 |
+| 2 | EnricoMi | 1412 |  154 | 13 | 83 | 157 | 71 | 217 | 13888 | 4157 |
+| 3 | sblotner | 549 |  5 | 0 | 1 | 134 | 1 | 1 | 17 | 17 |
+| 4 | stale[bot] | 542 |  542 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 5 | romerojosh | 541 |  62 | 0 | 29 | 63 | 28 | 75 | 6667 | 766 |
+| 6 | github-actions[bot] | 394 |  394 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 7 | abditag2 | 304 |  21 | 0 | 26 | 25 | 21 | 109 | 898 | 275 |
+| 8 | nvcastet | 300 |  64 | 0 | 14 | 26 | 18 | 51 | 2419 | 2241 |
+| 9 | davidrpugh | 283 |  43 | 2 | 2 | 55 | 2 | 21 | 290 | 1 |
+| 10 | richardliaw | 219 |  11 | 0 | 7 | 38 | 7 | 87 | 2775 | 291 |
+| 11 | aaron276h | 130 |  21 | 3 | 9 | 9 | 8 | 30 | 879 | 78 |
+| 12 | Vikas-kum | 118 |  26 | 1 | 4 | 17 | 2 | 61 | 562 | 140 |
+| 13 | leezu | 105 |  26 | 1 | 9 | 5 | 6 | 12 | 355 | 59 |
+| 14 | jeffdaily | 82 |  22 | 0 | 3 | 9 | 3 | 9 | 853 | 486 |
+| 15 | liangz1 | 80 |  8 | 1 | 6 | 8 | 4 | 31 | 244 | 31 |
+| 16 | apeforest | 78 |  19 | 0 | 4 | 8 | 3 | 24 | 219 | 137 |
+| 17 | alsrgv | 73 |  9 | 0 | 2 | 12 | 2 | 12 | 620 | 281 |
+| 18 | Richie-yan | 73 |  31 | 5 | 4 | 5 | 0 | 0 | 0 | 0 |
+| 19 | shirosankaku | 70 |  16 | 1 | 5 | 3 | 5 | 12 | 2998 | 843 |
+| 20 | eric-haibin-lin | 68 |  9 | 1 | 5 | 8 | 2 | 4 | 9 | 7 |
+
+- onnx/onnx
+
+| # | login | activity | issue_comment | open_issue | open_pull | pull_review_comment | merge_pull | pull_commits | pull_additions | pull_deletions |
+|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
+| 1 | wschin | 1293 |  77 | 1 | 12 | 272 | 18 | 299 | 7517 | 1236 |
+| 2 | gramalingam | 1257 |  89 | 0 | 8 | 276 | 8 | 56 | 447 | 61 |
+| 3 | jcwchen | 1132 |  257 | 2 | 60 | 129 | 35 | 395 | 1351 | 517 |
+| 4 | askhade | 1027 |  211 | 3 | 22 | 171 | 12 | 42 | 594 | 410 |
+| 5 | linkerzhang | 580 |  174 | 4 | 8 | 86 | 6 | 27 | 203 | 80 |
+| 6 | vinitra | 421 |  37 | 1 | 13 | 72 | 11 | 471 | 1258 | 442 |
+| 7 | codemzs | 294 |  44 | 0 | 16 | 33 | 14 | 90 | 3500 | 2910 |
+| 8 | TMVector | 292 |  76 | 4 | 5 | 42 | 5 | 57 | 1054 | 64 |
+| 9 | chinhuang007 | 275 |  56 | 2 | 19 | 22 | 14 | 43 | 4140 | 965 |
+| 10 | snnn | 237 |  58 | 2 | 7 | 31 | 6 | 20 | 318 | 238 |
+| 11 | lara-hdr | 226 |  22 | 0 | 4 | 43 | 4 | 52 | 3126 | 254 |
+| 12 | neginraoof | 222 |  44 | 0 | 12 | 23 | 10 | 178 | 1905 | 59 |
+| 13 | daquexian | 196 |  47 | 2 | 7 | 21 | 8 | 97 | 1271 | 724 |
+| 14 | prasanthpul | 174 |  37 | 3 | 13 | 8 | 12 | 30 | 180 | 15 |
+| 15 | tbennun | 167 |  3 | 0 | 0 | 41 | 0 | 0 | 0 | 0 |
+| 16 | BowenBao | 144 |  16 | 0 | 5 | 22 | 5 | 30 | 3533 | 1583 |
+| 17 | KsenijaS | 140 |  8 | 0 | 5 | 23 | 5 | 107 | 3738 | 2050 |
+| 18 | jeremycochoy | 133 |  30 | 0 | 4 | 19 | 3 | 43 | 1177 | 32 |
+| 19 | matteosal | 121 |  21 | 5 | 3 | 19 | 1 | 26 | 452 | 83 |
+| 20 | lgtm-com[bot] | 103 |  103 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+
+- lyft/amundsen
+
+| # | login | activity | issue_comment | open_issue | open_pull | pull_review_comment | merge_pull | pull_commits | pull_additions | pull_deletions |
+|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
+| 1 | feng-tao | 1292 |  353 | 23 | 91 | 55 | 80 | 125 | 977 | 205 |
+| 2 | jornh | 296 |  131 | 7 | 11 | 17 | 10 | 13 | 191 | 110 |
+| 3 | javamonkey79 | 170 |  66 | 5 | 5 | 11 | 7 | 100 | 747 | 434 |
+| 4 | ttannis | 139 |  53 | 9 | 2 | 13 | 2 | 2 | 45 | 53 |
+| 5 | samshuster | 127 |  50 | 13 | 5 | 4 | 4 | 6 | 148 | 7 |
+| 6 | Alagappan | 90 |  6 | 2 | 2 | 16 | 2 | 3 | 3 | 7 |
+| 7 | jinhyukchang | 61 |  15 | 1 | 4 | 3 | 4 | 6 | 128 | 3 |
+| 8 | mgorsk1 | 60 |  13 | 1 | 4 | 2 | 5 | 8 | 62 | 49 |
+| 9 | jonhehir | 48 |  12 | 10 | 2 | 0 | 2 | 2 | 2 | 0 |
+| 10 | stale[bot] | 37 |  37 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 11 | rsyi | 32 |  14 | 5 | 1 | 0 | 1 | 1 | 4 | 0 |
+| 12 | ajbosco | 31 |  1 | 1 | 3 | 1 | 3 | 7 | 645 | 327 |
+| 13 | friendtocephalopods | 31 |  5 | 1 | 3 | 0 | 3 | 6 | 12 | 5 |
+| 14 | Jwan622 | 27 |  7 | 2 | 0 | 4 | 0 | 0 | 0 | 0 |
+| 15 | ibnipun10 | 23 |  8 | 2 | 2 | 0 | 1 | 1 | 1 | 1 |
+| 16 | dmateusp | 21 |  3 | 1 | 2 | 0 | 2 | 6 | 18 | 0 |
+| 17 | pemmasanikrishna | 21 |  1 | 0 | 2 | 1 | 2 | 2 | 12 | 1 |
+| 18 | jdavidheiser | 20 |  6 | 7 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 19 | alran | 20 |  8 | 2 | 1 | 0 | 1 | 1 | 1 | 0 |
+| 20 | jacobhjkim | 19 |  4 | 0 | 2 | 1 | 1 | 2 | 3 | 3 |
+
+- pyro-ppl/pyro
+
+| # | login | activity | issue_comment | open_issue | open_pull | pull_review_comment | merge_pull | pull_commits | pull_additions | pull_deletions |
+|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
+| 1 | fritzo | 3918 |  344 | 33 | 198 | 491 | 190 | 1106 | 28379 | 5234 |
+| 2 | fehiepsi | 1318 |  115 | 5 | 39 | 224 | 36 | 165 | 3017 | 1446 |
+| 3 | martinjankowiak | 1132 |  72 | 1 | 23 | 221 | 21 | 117 | 1580 | 206 |
+| 4 | stefanwebb | 591 |  79 | 2 | 32 | 68 | 28 | 184 | 5365 | 1607 |
+| 5 | eb8680 | 554 |  70 | 3 | 25 | 77 | 19 | 158 | 6187 | 265 |
+| 6 | neerajprad | 445 |  55 | 4 | 14 | 75 | 8 | 27 | 568 | 129 |
+| 7 | ecotner | 149 |  22 | 2 | 4 | 24 | 3 | 35 | 630 | 16 |
+| 8 | ordabayevy | 148 |  25 | 3 | 7 | 19 | 4 | 49 | 689 | 32 |
+| 9 | ucals | 78 |  15 | 0 | 7 | 8 | 2 | 11 | 1007 | 0 |
+| 10 | garrett-bernstein | 41 |  5 | 0 | 2 | 5 | 2 | 8 | 162 | 14 |
+| 11 | xidulu | 35 |  5 | 3 | 3 | 0 | 3 | 5 | 4 | 4 |
+| 12 | patrickeganfoley | 31 |  7 | 0 | 1 | 4 | 1 | 22 | 163 | 4 |
+| 13 | sleepy-owl | 28 |  4 | 0 | 2 | 2 | 2 | 11 | 29 | 27 |
+| 14 | jamestwebber | 23 |  5 | 1 | 2 | 0 | 2 | 3 | 9 | 9 |
+| 15 | randommm | 18 |  2 | 0 | 2 | 0 | 2 | 2 | 6 | 6 |
+| 16 | gchanan | 17 |  1 | 0 | 2 | 0 | 2 | 2 | 5 | 5 |
+| 17 | ludkinm | 17 |  1 | 0 | 2 | 0 | 2 | 5 | 9 | 6 |
+| 18 | mollerhoj | 16 |  1 | 0 | 2 | 1 | 1 | 2 | 4 | 4 |
+| 19 | ciguaran | 16 |  4 | 0 | 1 | 1 | 1 | 4 | 72 | 26 |
+| 20 | akern40 | 15 |  7 | 4 | 0 | 0 | 0 | 0 | 0 | 0 |
+
+- feast-dev/feast
+
+| # | login | activity | issue_comment | open_issue | open_pull | pull_review_comment | merge_pull | pull_commits | pull_additions | pull_deletions |
+|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
+| 1 | woop | 5669 |  1089 | 65 | 68 | 984 | 62 | 261 | 24488 | 74912 |
+| 2 | feast-ci-bot | 4822 |  4822 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 3 | pyalex | 2173 |  394 | 3 | 112 | 233 | 101 | 470 | 24829 | 13557 |
+| 4 | mrzzy | 1613 |  220 | 14 | 51 | 248 | 44 | 449 | 23822 | 7441 |
+| 5 | terryyylim | 1420 |  133 | 1 | 74 | 182 | 67 | 307 | 17781 | 31956 |
+| 6 | oavdeev | 613 |  68 | 0 | 33 | 74 | 30 | 52 | 4800 | 1263 |
+| 7 | jmelinav | 370 |  64 | 1 | 11 | 59 | 7 | 31 | 3119 | 545 |
+| 8 | dr3s | 315 |  70 | 3 | 3 | 55 | 2 | 21 | 1867 | 272 |
+| 9 | tsotnet | 206 |  12 | 2 | 5 | 40 | 3 | 22 | 1126 | 100 |
+| 10 | SwampertX | 129 |  4 | 3 | 5 | 21 | 4 | 35 | 791 | 211 |
+| 11 | stale[bot] | 73 |  73 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 12 | mike0sv | 62 |  20 | 4 | 4 | 3 | 2 | 20 | 91 | 39 |
+| 13 | Wirick | 37 |  10 | 0 | 5 | 3 | 0 | 0 | 0 | 0 |
+| 14 | jklegar | 37 |  2 | 0 | 4 | 2 | 3 | 11 | 377 | 68 |
+| 15 | oavdeev-tt | 34 |  6 | 0 | 2 | 3 | 2 | 2 | 28 | 2 |
+| 16 | dependabot[bot] | 33 |  7 | 0 | 7 | 0 | 1 | 1 | 1 | 1 |
+| 17 | ravdin | 32 |  5 | 0 | 1 | 6 | 0 | 0 | 0 | 0 |
+| 18 | Andrew32bit | 27 |  17 | 5 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 19 | zhangchi1 | 25 |  8 | 1 | 1 | 3 | 0 | 0 | 0 | 0 |
+| 20 | duongnt | 21 |  1 | 2 | 2 | 0 | 2 | 2 | 13 | 13 |
+
+- sparklyr/sparklyr
+
+| # | login | activity | issue_comment | open_issue | open_pull | pull_review_comment | merge_pull | pull_commits | pull_additions | pull_deletions |
+|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
+| 1 | yl790 | 3302 |  415 | 104 | 349 | 23 | 308 | 856 | 195309 | 102817 |
+| 2 | falaki | 829 |  570 | 4 | 21 | 27 | 16 | 65 | 512 | 109 |
+| 3 | javierluraschi | 287 |  49 | 10 | 15 | 22 | 17 | 68 | 4626 | 8454 |
+| 4 | Loquats | 112 |  12 | 0 | 11 | 8 | 7 | 43 | 309 | 49 |
+| 5 | nealrichardson | 60 |  12 | 4 | 4 | 2 | 4 | 17 | 173 | 403 |
+| 6 | samuelmacedo83 | 48 |  10 | 0 | 3 | 1 | 5 | 37 | 675 | 114 |
+| 7 | wkdavis | 40 |  10 | 1 | 2 | 3 | 2 | 7 | 354 | 5 |
+| 8 | yitao-li | 37 |  6 | 0 | 3 | 3 | 2 | 4 | 235 | 2 |
+| 9 | zero323 | 33 |  5 | 0 | 3 | 1 | 3 | 5 | 366 | 0 |
+| 10 | sbottelli | 28 |  14 | 7 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 11 | lu-wang-dl | 24 |  1 | 0 | 3 | 1 | 2 | 9 | 51 | 17 |
+| 12 | SieSiongWong | 20 |  18 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 13 | kevinykuo | 16 |  3 | 0 | 0 | 2 | 1 | 8 | 34 | 9 |
+| 14 | dkincaid | 14 |  10 | 2 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 15 | jozefhajnala | 14 |  1 | 0 | 1 | 0 | 2 | 6 | 96 | 7 |
+| 16 | benmwhite | 14 |  14 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 17 | abdkumar | 14 |  8 | 3 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 18 | ying1 | 12 |  10 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 19 | nathaneastwood | 12 |  2 | 1 | 1 | 0 | 1 | 1 | 5 | 5 |
+| 20 | rychien-official | 12 |  8 | 2 | 0 | 0 | 0 | 0 | 0 | 0 |
+
+- MarquezProject/marquez
+
+| # | login | activity | issue_comment | open_issue | open_pull | pull_review_comment | merge_pull | pull_commits | pull_additions | pull_deletions |
+|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
+| 1 | wslulciuc | 1168 |  62 | 22 | 117 | 39 | 111 | 770 | 23810 | 4842 |
+| 2 | julienledem | 186 |  8 | 5 | 10 | 22 | 10 | 28 | 3975 | 845 |
+| 3 | codecov[bot] | 131 |  131 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 4 | phixMe | 78 |  1 | 1 | 9 | 2 | 8 | 136 | 20670 | 340 |
+| 5 | ravikamaraj | 40 |  4 | 0 | 3 | 3 | 3 | 10 | 368 | 90 |
+| 6 | sreev | 28 |  1 | 4 | 3 | 0 | 2 | 4 | 28 | 1 |
+| 7 | nkijak | 22 |  10 | 2 | 1 | 0 | 1 | 1 | 16 | 3 |
+| 8 | frankcash | 17 |  7 | 1 | 1 | 0 | 1 | 2 | 2 | 2 |
+
+- Trusted-AI/adversarial-robustness-toolbox
+
+| # | login | activity | issue_comment | open_issue | open_pull | pull_review_comment | merge_pull | pull_commits | pull_additions | pull_deletions |
+|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
+| 1 | ebubae | 432 |  14 | 8 | 21 | 61 | 19 | 452 | 8149 | 1210 |
+| 2 | hesseltuinhof | 401 |  15 | 10 | 22 | 50 | 20 | 95 | 6798 | 1067 |
+| 3 | killianlevacher | 389 |  5 | 17 | 15 | 65 | 9 | 1064 | 15095 | 11384 |
+| 4 | dependabot[bot] | 314 |  7 | 0 | 44 | 0 | 35 | 72 | 53 | 53 |
+| 5 | mathsinn | 201 |  24 | 3 | 12 | 20 | 11 | 64 | 1803 | 203 |
+| 6 | abigailgold | 89 |  4 | 0 | 8 | 9 | 5 | 73 | 2713 | 64 |
+| 7 | davidslater | 64 |  25 | 10 | 2 | 2 | 1 | 7 | 67 | 527 |
+| 8 | codecov-io | 36 |  36 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 9 | codecov-commenter | 35 |  35 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 10 | superctj | 25 |  19 | 3 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 11 | Embeddave | 17 |  15 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 12 | joelma1 | 11 |  5 | 3 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 13 | zacps | 11 |  1 | 1 | 1 | 0 | 1 | 4 | 69 | 53 |
+| 14 | hornel | 11 |  1 | 1 | 1 | 0 | 1 | 7 | 16 | 8 |
+
+- IBM/AIF360
+
+| # | login | activity | issue_comment | open_issue | open_pull | pull_review_comment | merge_pull | pull_commits | pull_additions | pull_deletions |
+|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
+| 1 | hoffmansc | 261 |  31 | 4 | 11 | 36 | 9 | 81 | 4391 | 19677 |
+| 2 | SSaishruthi | 104 |  13 | 4 | 4 | 14 | 3 | 65 | 34604 | 32 |
+| 3 | pronics2004 | 69 |  5 | 0 | 1 | 14 | 1 | 9 | 224 | 563 |
+| 4 | sethneel | 68 |  1 | 0 | 3 | 12 | 2 | 162 | 4320 | 8 |
+| 5 | nrkarthikeyan | 62 |  6 | 0 | 0 | 14 | 0 | 0 | 0 | 0 |
+| 6 | jimbudarz | 44 |  12 | 0 | 4 | 0 | 4 | 6 | 20 | 10 |
+| 7 | animeshsingh | 30 |  6 | 0 | 2 | 2 | 2 | 2 | 0 | 2 |
+| 8 | romeokienzler | 23 |  2 | 0 | 2 | 0 | 3 | 8 | 634 | 2 |
+| 9 | bhavyaghai | 21 |  5 | 0 | 1 | 2 | 1 | 4 | 21 | 0 |
+| 10 | motapaolla | 11 |  1 | 1 | 1 | 0 | 1 | 1 | 2 | 2 |
+
+- PaddlePaddle/edl
+
+| # | login | activity | issue_comment | open_issue | open_pull | pull_review_comment | merge_pull | pull_commits | pull_additions | pull_deletions |
+|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
+| 1 | gongweibao | 558 |  4 | 1 | 53 | 42 | 45 | 1049 | 47977 | 18827 |
+| 2 | guru4elephant | 75 |  2 | 0 | 4 | 14 | 1 | 2 | 40 | 0 |
+
+- milvus-io/milvus
+
+| # | login | activity | issue_comment | open_issue | open_pull | pull_review_comment | merge_pull | pull_commits | pull_additions | pull_deletions |
+|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
+| 1 | yhmo | 2888 |  533 | 103 | 281 | 4 | 258 | 1570 | 178659 | 122630 |
+| 2 | del-zhenwu | 2665 |  419 | 418 | 184 | 2 | 170 | 1169 | 36324 | 28820 |
+| 3 | cydrain | 1910 |  100 | 86 | 159 | 114 | 141 | 846 | 43151 | 30780 |
+| 4 | BossZou | 1633 |  330 | 82 | 138 | 35 | 117 | 1061 | 21940 | 12724 |
+| 5 | shengjun1985 | 1556 |  311 | 30 | 143 | 14 | 140 | 515 | 55298 | 61449 |
+| 6 | JinHai-CN | 1224 |  364 | 51 | 79 | 49 | 65 | 1232 | 52868 | 25715 |
+| 7 | fishpenguin | 1025 |  136 | 30 | 105 | 1 | 102 | 1142 | 152075 | 91412 |
+| 8 | scsven | 964 |  109 | 18 | 96 | 19 | 91 | 409 | 58788 | 22601 |
+| 9 | youny626 | 928 |  55 | 16 | 107 | 0 | 104 | 494 | 25630 | 10157 |
+| 10 | codecov[bot] | 852 |  852 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 11 | ZhifengZhang-CN | 769 |  15 | 29 | 87 | 5 | 83 | 708 | 3494 | 2809 |
+| 12 | XuPeng-SH | 592 |  17 | 22 | 68 | 3 | 63 | 858 | 17866 | 4258 |
+| 13 | sahuang | 519 |  122 | 26 | 35 | 20 | 32 | 295 | 22661 | 12751 |
+| 14 | ThreadDao | 508 |  34 | 76 | 49 | 0 | 35 | 147 | 15848 | 7093 |
+| 15 | yamasite | 482 |  47 | 31 | 37 | 28 | 30 | 103 | 3467 | 1287 |
+| 16 | XuanYang-cn | 435 |  13 | 17 | 51 | 0 | 47 | 245 | 2750 | 2601 |
+| 17 | godchen0212 | 431 |  16 | 4 | 54 | 0 | 49 | 171 | 4259 | 2846 |
+| 18 | op-hunter | 421 |  19 | 10 | 49 | 0 | 47 | 321 | 15685 | 3500 |
+| 19 | tinkerlin | 364 |  158 | 4 | 24 | 4 | 22 | 98 | 2791 | 295 |
+| 20 | cqy123456 | 279 |  10 | 2 | 35 | 0 | 32 | 175 | 1919 | 1818 |
+
+- Adlik/Adlik
+
+| # | login | activity | issue_comment | open_issue | open_pull | pull_review_comment | merge_pull | pull_commits | pull_additions | pull_deletions |
+|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
+| 1 | EFanZh | 803 |  219 | 6 | 100 | 68 | 0 | 0 | 0 | 0 |
+| 2 | bors[bot] | 413 |  413 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 3 | amadeus-zte | 277 |  135 | 30 | 14 | 10 | 0 | 0 | 0 | 0 |
+| 4 | shiyingjin | 270 |  27 | 16 | 37 | 25 | 0 | 0 | 0 | 0 |
+| 5 | KellyZhang2020 | 189 |  5 | 26 | 44 | 0 | 0 | 0 | 0 | 0 |
+| 6 | wangzhenyu32 | 68 |  5 | 6 | 17 | 0 | 0 | 0 | 0 | 0 |
+| 7 | NaNAGISaSA | 42 |  6 | 6 | 8 | 0 | 0 | 0 | 0 | 0 |
+| 8 | dependabot[bot] | 25 |  7 | 0 | 6 | 0 | 0 | 0 | 0 | 0 |
+| 9 | priscilla-pan | 11 |  1 | 5 | 0 | 0 | 0 | 0 | 0 | 0 |
+
+- datadotworld/data-practices-site
+
+| # | login | activity | issue_comment | open_issue | open_pull | pull_review_comment | merge_pull | pull_commits | pull_additions | pull_deletions |
+|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
+| 1 | dependabot[bot] | 33 |  3 | 0 | 10 | 0 | 0 | 0 | 0 | 0 |
+
+- didi/delta
+
+| # | login | activity | issue_comment | open_issue | open_pull | pull_review_comment | merge_pull | pull_commits | pull_additions | pull_deletions |
+|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
+| 1 | zh794390558 | 209 |  12 | 4 | 21 | 9 | 18 | 62 | 6417 | 5089 |
+| 2 | xhyandwyy | 52 |  4 | 0 | 6 | 0 | 6 | 20 | 1749 | 752 |
+| 3 | applenob | 24 |  4 | 0 | 0 | 5 | 0 | 0 | 0 | 0 |
+| 4 | stale[bot] | 23 |  23 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+
+- odpi/OpenDS4All
+
+| # | login | activity | issue_comment | open_issue | open_pull | pull_review_comment | merge_pull | pull_commits | pull_additions | pull_deletions |
+|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
+| 1 | Frenchhorn005 | 504 |  9 | 0 | 60 | 0 | 63 | 75 | 1398 | 1943 |
+| 2 | zackives | 98 |  9 | 1 | 14 | 0 | 9 | 221 | 79715 | 9755 |
+| 3 | Lawrence-Krukrubo | 20 |  4 | 1 | 3 | 0 | 1 | 1 | 4 | 4 |
+| 4 | SusanBDavidson | 20 |  9 | 0 | 2 | 0 | 1 | 8 | 14 | 0 |
+| 5 | jmertic | 17 |  6 | 0 | 2 | 0 | 1 | 1 | 0 | 0 |
+| 6 | leestott | 17 |  1 | 0 | 2 | 0 | 2 | 2 | 19 | 4 |
+
+- gojek/feast
+
+| # | login | activity | issue_comment | open_issue | open_pull | pull_review_comment | merge_pull | pull_commits | pull_additions | pull_deletions |
+|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
+| 1 | zhilingc | 1451 |  224 | 12 | 66 | 175 | 61 | 181 | 40904 | 14655 |
+| 2 | khorshuheng | 1125 |  216 | 4 | 82 | 65 | 79 | 151 | 21951 | 15243 |
+| 3 | ches | 820 |  230 | 11 | 28 | 86 | 28 | 51 | 4687 | 2553 |
+| 4 | davidheryanto | 511 |  97 | 2 | 29 | 47 | 27 | 83 | 6826 | 5117 |
+| 5 | imjuanleonard | 221 |  36 | 8 | 6 | 34 | 3 | 28 | 453 | 142 |
+| 6 | Yanson | 126 |  53 | 1 | 8 | 3 | 7 | 11 | 1135 | 368 |
+| 7 | lavkesh | 90 |  6 | 0 | 3 | 15 | 3 | 23 | 2596 | 215 |
+| 8 | Joostrothweiler | 74 |  16 | 0 | 6 | 5 | 4 | 10 | 248 | 28 |
+| 9 | suwik | 46 |  2 | 0 | 1 | 9 | 1 | 1 | 3 | 13 |
+| 10 | Jeffwan | 45 |  13 | 2 | 1 | 5 | 1 | 1 | 66 | 37 |
+| 11 | ashwinath | 43 |  4 | 1 | 3 | 2 | 4 | 11 | 156 | 30 |
+| 12 | lgvital | 40 |  23 | 3 | 2 | 0 | 1 | 1 | 105 | 41 |
+| 13 | gracechristina | 28 |  1 | 0 | 1 | 6 | 0 | 0 | 0 | 0 |
+| 14 | heysachin | 27 |  5 | 0 | 4 | 0 | 2 | 3 | 6 | 5 |
+| 15 | pmjacinto | 20 |  3 | 7 | 1 | 0 | 0 | 0 | 0 | 0 |
+| 16 | junhui096 | 18 |  1 | 0 | 4 | 0 | 1 | 4 | 42 | 24 |
+| 17 | avolution | 16 |  5 | 4 | 1 | 0 | 0 | 0 | 0 | 0 |
+| 18 | idahoakl | 15 |  11 | 2 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 19 | ricgu8086 | 12 |  1 | 0 | 1 | 2 | 0 | 0 | 0 | 0 |
+| 20 | pradithya | 11 |  3 | 0 | 0 | 2 | 0 | 0 | 0 | 0 |
+
+- Trusted-AI/AIX360
+
+| # | login | activity | issue_comment | open_issue | open_pull | pull_review_comment | merge_pull | pull_commits | pull_additions | pull_deletions |
+|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
+| 1 | gaborpelesz | 20 |  6 | 3 | 1 | 0 | 1 | 1 | 1 | 1 |
+
+- IBM/AIX360
+
+| # | login | activity | issue_comment | open_issue | open_pull | pull_review_comment | merge_pull | pull_commits | pull_additions | pull_deletions |
+|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
+| 1 | vijay-arya | 80 |  8 | 0 | 9 | 0 | 9 | 26 | 8765 | 9674 |
+| 2 | floidgilbert | 40 |  9 | 2 | 4 | 0 | 3 | 6 | 2441 | 8 |
+| 3 | dennislwei | 38 |  22 | 0 | 2 | 0 | 2 | 4 | 4 | 10 |
+| 4 | sadhamanus | 29 |  21 | 0 | 1 | 0 | 1 | 5 | 3 | 0 |
+| 5 | dependabot[bot] | 24 |  6 | 0 | 6 | 0 | 0 | 0 | 0 | 0 |
+| 6 | rahulnair23 | 24 |  2 | 3 | 2 | 0 | 2 | 2 | 2 | 2 |
+| 7 | firmai | 21 |  9 | 6 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 8 | monindersingh | 11 |  1 | 1 | 1 | 0 | 1 | 1 | 2 | 2 |
+
+- Trusted-AI/AIF360
+
+| # | login | activity | issue_comment | open_issue | open_pull | pull_review_comment | merge_pull | pull_commits | pull_additions | pull_deletions |
+|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
+| 1 | gdequeiroz | 39 |  3 | 0 | 4 | 1 | 4 | 5 | 163 | 12 |
+| 2 | leenamurgai | 19 |  4 | 0 | 2 | 1 | 1 | 1 | 4 | 4 |
+
+- ForestFlow/ForestFlow
+
+| # | login | activity | issue_comment | open_issue | open_pull | pull_review_comment | merge_pull | pull_commits | pull_additions | pull_deletions |
+|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
+| 1 | aalkilani | 236 |  3 | 3 | 20 | 18 | 19 | 119 | 4366 | 3177 |
+
+- amundsen-io/amundsen
+
+| # | login | activity | issue_comment | open_issue | open_pull | pull_review_comment | merge_pull | pull_commits | pull_additions | pull_deletions |
+|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
+| 1 | dependabot-preview[bot] | 1552 |  3 | 1 | 194 | 0 | 193 | 193 | 193 | 193 |
+| 2 | Golodhros | 335 |  40 | 14 | 14 | 45 | 9 | 15 | 393 | 210 |
+| 3 | markgrover | 137 |  12 | 1 | 10 | 12 | 9 | 9 | 56 | 35 |
+| 4 | dorianj | 78 |  37 | 3 | 3 | 4 | 2 | 4 | 16 | 2 |
+| 5 | pPanda-beta | 48 |  25 | 8 | 1 | 1 | 0 | 0 | 0 | 0 |
+| 6 | verdan | 27 |  21 | 3 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 7 | allcontributors[bot] | 27 |  7 | 0 | 5 | 0 | 1 | 11 | 40 | 1 |
+| 8 | AustinBGibbons | 26 |  12 | 3 | 1 | 0 | 1 | 1 | 1 | 1 |
+| 9 | instazackwu | 25 |  5 | 2 | 2 | 0 | 2 | 4 | 13 | 1 |
+| 10 | higee | 21 |  2 | 0 | 2 | 2 | 1 | 2 | 1 | 0 |
+| 11 | madison-ookla | 20 |  6 | 1 | 1 | 1 | 1 | 1 | 7 | 4 |
+| 12 | lexisantoro | 18 |  1 | 0 | 4 | 0 | 1 | 1 | 1 | 0 |
+| 13 | sterlins | 17 |  3 | 1 | 1 | 1 | 1 | 1 | 2 | 2 |
+| 14 | NiravLangaliya | 16 |  8 | 4 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 15 | Wonong | 15 |  3 | 2 | 1 | 0 | 1 | 1 | 1 | 1 |
+| 16 | allisonsuarez | 15 |  3 | 2 | 1 | 0 | 1 | 1 | 61 | 0 |
+
+- ludwig-ai/ludwig
+
+| # | login | activity | issue_comment | open_issue | open_pull | pull_review_comment | merge_pull | pull_commits | pull_additions | pull_deletions |
+|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
+| 1 | modernlearner | 11 |  1 | 1 | 1 | 0 | 1 | 3 | 11 | 0 |
+
+- elasticdeeplearning/edl
+
+| # | login | activity | issue_comment | open_issue | open_pull | pull_review_comment | merge_pull | pull_commits | pull_additions | pull_deletions |
+|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
+| 1 | wangxicoding | 281 |  1 | 2 | 29 | 16 | 25 | 85 | 6355 | 21905 |
+
+- nnsuite/nnstreamer
+
+| # | login | activity | issue_comment | open_issue | open_pull | pull_review_comment | merge_pull | pull_commits | pull_additions | pull_deletions |
+|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
+| 1 | ajarthurs | 13 |  3 | 1 | 1 | 0 | 1 | 1 | 1 | 0 |
+
+
+### Working Hour Distribution
+
+We analyze the working hour distribution for LF AI & Data during year 2020, and here are the results of our working hour distribution research for every repo.
+
+
+- milvus-io/milvus
+
+<embed src="http://gar2020.opensource-service.cn/svgrenderer/github/X-lab2017/github-analysis-report?path=sqls/working-hour-distribution/image.svg&data=[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,null,0,0,0,0,0,0,0,0,0,0,0]&lang=en" style="width:600" />
+
+- odpi/OpenDS4All
+
+<embed src="http://gar2020.opensource-service.cn/svgrenderer/github/X-lab2017/github-analysis-report?path=sqls/working-hour-distribution/image.svg&data=[1,0,0,1,0,0,0,1,1,1,1,2,1,2,9,1,4,4,4,3,1,1,3,1,0,0,1,0,1,1,0,0,1,2,1,2,3,2,2,4,2,4,2,1,1,1,3,1,1,2,0,1,1,1,1,1,1,1,0,0,1,2,5,5,6,1,2,2,2,1,3,0,1,0,1,1,0,1,1,1,1,1,1,1,2,4,4,3,4,3,5,6,1,1,1,1,0,1,0,1,0,0,0,0,0,0,1,1,0,2,2,2,3,9,6,6,10,6,2,1,1,1,1,1,1,1,0,1,0,1,0,1,1,1,0,1,1,0,1,1,1,1,0,0,1,0,1,0,0,1,1,0,0,0,0,1,0,0,1,0,1,0,1,0,1,0,1,0]&lang=en" style="width:600" />
+
+- Trusted-AI/AIF360
+
+<embed src="http://gar2020.opensource-service.cn/svgrenderer/github/X-lab2017/github-analysis-report?path=sqls/working-hour-distribution/image.svg&data=[2,1,2,1,2,3,1,2,2,4,2,1,3,1,5,4,3,2,2,2,6,4,4,5,3,1,1,2,1,2,2,2,1,2,1,2,4,5,5,2,6,3,4,4,4,4,7,3,2,1,3,2,3,1,1,2,1,2,2,1,2,4,5,4,1,3,7,5,10,4,5,2,3,2,4,1,1,1,1,2,2,1,2,1,3,4,6,6,3,1,4,6,4,5,2,1,0,2,2,2,2,1,1,1,1,3,2,2,1,1,1,4,6,4,7,4,2,2,2,2,1,1,1,1,1,0,1,1,1,1,2,1,1,2,1,1,4,1,1,1,0,2,1,1,1,1,1,2,1,0,1,1,1,1,1,1,1,1,2,1,2,0,2,2,1,1,1,1]&lang=en" style="width:600" />
+
+- sparklyr/sparklyr
+
+<embed src="http://gar2020.opensource-service.cn/svgrenderer/github/X-lab2017/github-analysis-report?path=sqls/working-hour-distribution/image.svg&data=[1,0,1,1,1,1,1,1,1,1,3,4,3,7,5,5,9,6,6,5,5,4,5,2,1,0,1,1,1,1,1,2,2,1,2,5,6,6,9,8,7,10,9,4,4,3,3,3,2,2,1,1,1,2,1,1,1,1,3,3,4,3,5,9,10,7,8,5,3,3,3,3,3,3,2,3,1,1,1,2,2,2,3,4,8,6,5,4,6,8,8,5,4,4,3,3,2,1,3,1,1,1,1,1,1,1,4,4,5,2,4,5,5,3,6,5,4,3,3,3,4,3,1,1,1,1,1,0,1,0,1,0,0,0,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1]&lang=en" style="width:600" />
+
+- IBM/adversarial-robustness-toolbox
+
+<embed src="http://gar2020.opensource-service.cn/svgrenderer/github/X-lab2017/github-analysis-report?path=sqls/working-hour-distribution/image.svg&data=[1,1,1,1,1,1,1,1,1,1,2,4,5,7,3,2,4,4,3,3,10,5,3,7,5,3,1,1,1,1,1,1,1,2,2,6,10,9,8,5,3,3,3,5,4,4,7,5,4,3,1,1,1,1,1,1,1,1,4,4,4,6,6,4,4,4,2,3,5,4,4,3,4,2,2,1,1,2,1,1,1,2,4,4,7,9,5,7,6,3,3,4,5,6,4,5,3,2,1,1,1,2,1,1,2,2,5,3,6,5,5,5,3,3,3,4,5,4,3,2,2,3,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,1,1,2,1,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,1,1,1,1,2,2,2,2]&lang=en" style="width:600" />
+
+- MarquezProject/marquez
+
+<embed src="http://gar2020.opensource-service.cn/svgrenderer/github/X-lab2017/github-analysis-report?path=sqls/working-hour-distribution/image.svg&data=[1,1,0,1,1,2,2,1,1,1,1,0,1,1,2,2,2,2,5,2,2,3,3,10,2,4,2,1,4,1,3,2,2,1,1,1,1,1,2,1,2,1,3,5,2,1,2,3,4,1,2,1,2,1,2,1,1,1,1,1,1,1,1,2,0,1,4,3,4,6,3,3,1,1,1,1,3,2,6,1,1,1,1,1,1,1,1,2,2,2,2,2,4,4,4,2,7,2,1,2,1,2,2,5,2,1,2,0,0,1,1,1,1,3,3,5,2,1,1,2,2,1,1,1,1,2,1,2,1,1,1,0,0,1,1,0,1,2,3,5,6,4,1,1,0,1,5,2,2,2,1,1,1,1,1,1,0,1,1,1,2,3,6,2,1,1,1,1]&lang=en" style="width:600" />
+
+- Angel-ML/angel
+
+<embed src="http://gar2020.opensource-service.cn/svgrenderer/github/X-lab2017/github-analysis-report?path=sqls/working-hour-distribution/image.svg&data=[0,2,5,6,1,4,9,7,7,2,1,10,4,2,2,3,2,1,1,1,1,0,1,1,1,3,6,3,2,3,4,7,2,4,3,2,5,4,5,2,2,1,1,1,1,0,0,0,1,4,5,5,2,1,4,9,4,7,4,5,4,3,5,2,1,2,1,1,0,1,1,0,1,5,5,4,3,2,4,7,5,2,2,1,6,1,1,1,1,1,1,0,0,1,0,1,0,2,4,4,1,2,4,4,4,5,3,3,3,3,1,3,2,0,0,1,1,1,1,0,1,1,3,1,1,1,2,4,2,1,2,1,2,2,1,1,1,1,1,0,1,1,0,0,0,2,2,2,7,2,1,2,6,6,4,2,3,4,2,4,2,0,0,1,0,1,1,1]&lang=en" style="width:600" />
+
+- milvus-io/milvus
+
+<embed src="http://gar2020.opensource-service.cn/svgrenderer/github/X-lab2017/github-analysis-report?path=sqls/working-hour-distribution/image.svg&data=[1,5,9,8,3,2,7,9,8,8,6,4,5,3,3,3,2,1,1,1,1,1,1,1,1,5,10,10,4,3,9,8,8,9,7,7,4,3,3,2,2,1,1,1,1,1,1,1,1,5,9,7,4,3,8,8,9,8,9,5,5,3,2,2,2,1,1,1,1,1,1,1,1,6,9,8,4,4,10,8,8,9,7,6,4,4,3,3,2,1,1,1,1,1,1,1,1,5,9,9,4,3,9,8,9,8,5,6,5,4,3,2,1,1,1,1,1,1,1,1,1,4,9,7,4,4,6,7,6,6,4,5,4,3,3,2,2,1,1,1,1,1,1,1,1,1,2,3,2,2,4,3,2,2,1,2,0,1,2,1,1,1,1,1,1,1,1,1]&lang=en" style="width:600" />
+
+- acumos/documentation
+
+<embed src="http://gar2020.opensource-service.cn/svgrenderer/github/X-lab2017/github-analysis-report?path=sqls/working-hour-distribution/image.svg&data=[0,0,0,0,1,1,2,2,1,2,2,1,4,5,5,4,9,5,2,1,2,1,1,0,0,0,1,0,1,1,1,3,2,1,3,1,6,6,10,4,2,1,2,3,2,2,1,1,0,1,0,0,0,0,1,4,1,1,1,3,2,5,4,5,3,3,2,3,2,1,0,1,1,1,0,0,0,1,2,2,2,5,4,3,5,7,7,7,5,1,2,2,1,2,1,0,0,1,0,1,2,2,3,3,2,4,3,5,8,8,10,7,5,5,2,1,1,2,2,1,1,1,1,0,0,0,0,0,0,0,0,0,0,1,1,1,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,1,0,0,0,0]&lang=en" style="width:600" />
+
+- feast-dev/feast
+
+<embed src="http://gar2020.opensource-service.cn/svgrenderer/github/X-lab2017/github-analysis-report?path=sqls/working-hour-distribution/image.svg&data=[1,6,8,8,8,7,9,9,9,8,8,5,4,6,5,3,3,2,1,2,1,1,1,2,2,5,9,10,8,7,7,10,9,9,7,5,3,4,4,3,3,2,2,1,1,1,1,2,2,4,8,5,8,6,9,9,9,7,7,5,3,6,4,3,2,2,2,2,1,1,1,2,3,5,6,9,7,9,9,8,7,9,6,4,3,4,3,2,3,2,2,2,2,2,2,1,3,7,6,6,5,8,9,10,10,5,4,3,2,2,4,1,2,1,1,1,1,1,1,1,1,2,2,4,3,3,4,4,4,3,3,3,2,1,2,1,2,1,1,1,1,1,1,1,1,2,3,3,4,2,3,4,2,2,3,2,1,2,2,2,3,1,1,1,1,1,1,1]&lang=en" style="width:600" />
+
+- uber/ludwig
+
+<embed src="http://gar2020.opensource-service.cn/svgrenderer/github/X-lab2017/github-analysis-report?path=sqls/working-hour-distribution/image.svg&data=[4,6,4,3,3,3,2,2,2,2,1,2,2,2,2,2,2,2,4,3,4,5,4,6,7,6,4,4,2,1,3,2,2,2,2,2,2,1,2,1,2,2,2,4,3,5,4,5,8,7,5,5,5,1,2,2,2,1,2,2,2,2,2,3,3,3,4,4,6,4,4,4,6,10,6,5,3,1,2,3,1,2,1,1,2,3,2,2,2,3,2,4,4,5,6,5,6,10,7,4,3,2,3,3,2,2,2,1,2,2,1,3,2,1,2,2,5,4,3,6,6,5,4,3,2,3,2,2,2,1,1,1,2,1,2,3,2,2,6,6,5,5,5,6,6,6,5,4,3,3,2,2,2,1,2,1,2,1,1,2,2,2,3,4,4,4,5,4]&lang=en" style="width:600" />
+
+- nnstreamer/nnstreamer
+
+<embed src="http://gar2020.opensource-service.cn/svgrenderer/github/X-lab2017/github-analysis-report?path=sqls/working-hour-distribution/image.svg&data=[1,2,5,4,7,6,6,9,8,6,10,6,2,2,1,1,1,1,1,1,1,1,1,1,3,4,9,6,6,4,5,8,7,6,10,6,3,1,2,1,1,1,1,1,1,1,1,1,2,5,8,5,7,8,8,9,8,5,9,5,3,2,2,1,1,1,1,1,0,0,0,1,2,5,8,7,7,10,9,10,7,5,7,6,3,1,2,1,1,1,1,1,1,1,1,1,2,7,8,4,8,10,10,9,6,4,4,4,3,2,1,1,1,1,0,1,1,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]&lang=en" style="width:600" />
+
+- onnx/onnx
+
+<embed src="http://gar2020.opensource-service.cn/svgrenderer/github/X-lab2017/github-analysis-report?path=sqls/working-hour-distribution/image.svg&data=[2,4,4,3,3,3,3,3,4,3,3,2,2,2,3,3,7,5,5,4,4,7,6,6,6,6,6,4,4,4,4,4,3,4,3,2,3,3,3,5,9,7,8,6,4,8,7,6,10,5,5,4,4,3,5,5,5,5,3,2,4,3,3,4,8,7,9,8,5,6,8,5,4,7,4,6,3,3,6,5,5,7,2,2,2,4,3,4,5,6,8,7,6,5,5,7,6,7,4,4,2,3,3,4,5,4,3,3,3,3,3,3,4,6,6,5,6,5,5,4,5,4,4,3,1,2,2,2,1,1,1,1,2,1,1,1,1,2,2,1,1,1,1,1,2,2,1,1,1,1,1,2,2,1,2,2,2,2,1,2,2,1,1,1,1,2,2,1]&lang=en" style="width:600" />
+
+- elasticdeeplearning/edl
+
+<embed src="http://gar2020.opensource-service.cn/svgrenderer/github/X-lab2017/github-analysis-report?path=sqls/working-hour-distribution/image.svg&data=[1,1,5,4,1,3,2,3,3,2,1,0,1,1,1,0,0,0,0,0,0,0,0,1,1,1,10,3,0,2,4,2,3,3,1,3,2,1,0,1,2,0,0,0,1,0,0,0,1,2,5,3,1,1,3,4,4,2,3,5,2,1,2,1,1,0,0,0,0,1,0,2,0,3,3,6,1,1,5,3,2,1,3,5,2,1,1,1,0,0,0,0,0,1,0,0,1,1,4,2,1,1,2,5,2,1,2,2,1,0,0,1,1,0,0,0,1,0,1,1,0,0,0,0,2,1,1,1,1,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,2,1,1,0,1,1,2,10,1,1,0,1,1,4,0,0,1,0,1,0,0,1]&lang=en" style="width:600" />
+
+- lyft/amundsen
+
+<embed src="http://gar2020.opensource-service.cn/svgrenderer/github/X-lab2017/github-analysis-report?path=sqls/working-hour-distribution/image.svg&data=[1,1,1,1,1,1,1,1,1,1,1,1,1,8,1,1,10,3,2,1,2,2,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,1,1,2,2,2,1,1,1,1,1,2,1,1,1,1,1,1,1,1,1,1,1,1,3,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,1,1,1,2,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,1,1,1,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]&lang=en" style="width:600" />
+
+- odpi/egeria
+
+<embed src="http://gar2020.opensource-service.cn/svgrenderer/github/X-lab2017/github-analysis-report?path=sqls/working-hour-distribution/image.svg&data=[5,1,0,0,1,1,1,5,9,9,10,8,6,6,6,7,5,3,3,1,2,2,2,1,4,1,1,1,1,5,3,4,8,8,6,5,6,5,7,6,6,6,4,3,3,3,2,2,6,1,1,1,1,1,2,5,8,10,7,7,6,4,5,4,4,3,3,2,1,2,1,1,5,1,1,1,1,1,2,5,8,9,9,6,6,6,7,7,4,3,2,2,2,2,1,1,3,1,1,1,1,1,2,3,8,9,7,6,8,7,7,7,5,4,4,2,2,1,1,1,8,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,6,1,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]&lang=en" style="width:600" />
+
+- horovod/horovod
+
+<embed src="http://gar2020.opensource-service.cn/svgrenderer/github/X-lab2017/github-analysis-report?path=sqls/working-hour-distribution/image.svg&data=[2,2,3,3,1,2,2,3,3,3,2,2,3,3,2,5,5,6,6,6,6,5,5,5,4,4,4,4,2,2,3,4,4,4,2,2,3,4,4,4,6,6,4,5,6,4,6,4,4,3,5,4,2,2,4,4,4,3,3,2,3,5,5,6,6,6,8,6,7,8,4,5,4,4,5,4,2,3,4,3,4,5,3,3,3,5,3,5,6,8,8,9,8,6,5,6,5,5,5,4,2,3,6,4,4,4,3,3,3,3,3,5,10,10,8,6,6,7,8,6,3,5,6,5,4,3,3,5,5,3,3,3,1,2,2,2,3,2,1,1,1,1,1,1,1,1,1,2,1,1,1,1,1,2,1,1,1,1,1,1,2,2,2,2,1,1,1,1]&lang=en" style="width:600" />
+
+- Adlik/Adlik
+
+<embed src="http://gar2020.opensource-service.cn/svgrenderer/github/X-lab2017/github-analysis-report?path=sqls/working-hour-distribution/image.svg&data=[2,5,4,2,2,1,6,6,6,5,1,3,3,1,1,1,2,0,0,2,0,0,1,1,2,5,7,4,3,3,6,6,9,6,1,4,4,2,2,3,1,1,1,1,1,0,2,1,3,5,8,3,2,4,7,4,4,5,3,2,2,1,1,0,0,1,0,0,1,0,1,1,3,5,5,10,2,1,10,8,5,8,4,3,3,2,3,2,1,0,1,1,1,0,1,1,3,6,4,3,3,4,5,5,9,6,5,2,1,2,1,1,1,1,1,1,0,1,1,1,1,2,4,2,1,1,2,2,2,1,1,0,2,0,0,1,0,0,0,0,0,0,0,0,1,0,0,1,0,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,1]&lang=en" style="width:600" />
+
+- soajs/soajs
+
+<embed src="http://gar2020.opensource-service.cn/svgrenderer/github/X-lab2017/github-analysis-report?path=sqls/working-hour-distribution/image.svg&data=[3,0,0,0,0,0,0,0,0,0,0,0,0,8,1,4,0,0,0,1,0,1,4,3,2,0,2,0,0,0,0,0,0,1,0,0,0,0,0,3,8,5,0,0,2,6,6,0,1,1,2,2,0,0,0,0,0,0,0,0,4,0,3,3,2,3,4,5,1,5,0,2,2,0,0,0,0,0,0,0,0,3,5,0,3,5,1,1,1,0,5,0,0,0,0,0,0,4,3,0,0,0,0,0,0,0,0,0,1,0,2,2,3,10,2,4,3,5,1,3,1,1,0,0,0,0,0,0,0,0,0,0,0,4,1,3,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,0,1,0,0,3]&lang=en" style="width:600" />
+
+- IBM/AIX360
+
+<embed src="http://gar2020.opensource-service.cn/svgrenderer/github/X-lab2017/github-analysis-report?path=sqls/working-hour-distribution/image.svg&data=[1,1,1,1,1,2,1,2,1,1,1,2,2,3,2,5,4,1,2,4,2,1,2,3,1,2,9,2,2,3,5,2,5,1,1,1,2,1,1,6,10,2,5,4,2,1,6,5,5,1,1,1,1,3,2,2,2,4,0,5,2,3,5,2,7,3,1,2,2,0,2,1,2,4,0,1,1,1,1,2,1,1,2,2,1,4,2,2,2,3,3,4,3,1,1,2,2,1,2,3,1,1,2,2,1,3,1,2,1,1,5,2,7,2,4,4,0,2,1,5,1,1,3,1,0,1,1,1,1,1,1,1,1,1,0,2,1,0,1,2,2,1,0,1,1,0,2,2,1,0,1,1,1,2,2,2,1,0,2,2,1,1,0,1,1,2,1,1]&lang=en" style="width:600" />
+
+- didi/delta
+
+<embed src="http://gar2020.opensource-service.cn/svgrenderer/github/X-lab2017/github-analysis-report?path=sqls/working-hour-distribution/image.svg&data=[0,1,4,3,1,5,9,4,7,5,1,3,4,2,3,3,1,1,1,1,1,1,1,1,1,4,4,3,3,5,4,7,7,5,4,3,2,3,1,1,1,0,0,1,0,0,1,1,1,2,2,1,2,2,5,5,1,2,2,2,2,2,2,1,2,0,1,1,0,1,1,0,1,1,3,5,2,5,7,2,10,9,9,2,6,3,2,1,1,2,1,1,0,1,1,1,2,1,2,7,3,3,2,6,5,5,1,2,2,2,0,2,1,1,0,0,0,0,0,0,0,1,2,3,1,1,2,1,0,1,1,1,0,1,0,0,1,2,1,0,0,1,0,1,1,3,1,0,1,1,2,2,1,1,1,0,2,1,1,2,1,0,0,1,0,1,0,0]&lang=en" style="width:600" />
+
+- pyro-ppl/pyro
+
+<embed src="http://gar2020.opensource-service.cn/svgrenderer/github/X-lab2017/github-analysis-report?path=sqls/working-hour-distribution/image.svg&data=[2,2,3,3,2,2,2,2,1,1,1,1,2,2,3,3,5,5,5,5,4,5,4,5,5,10,3,3,3,2,2,1,1,1,1,1,2,2,2,3,4,6,4,6,5,5,5,5,7,5,3,2,4,2,2,1,1,1,1,1,2,4,3,2,4,5,3,5,6,5,5,5,4,4,3,3,4,4,3,2,1,1,1,1,1,2,3,4,5,5,5,5,5,5,5,6,4,3,2,2,3,2,2,1,1,1,1,1,1,2,2,5,6,7,5,4,6,4,3,2,3,2,3,2,1,2,1,1,1,1,1,1,1,1,2,3,2,2,3,3,2,2,2,4,3,3,2,1,2,1,1,1,1,1,1,1,1,1,1,2,1,5,3,3,2,3,1,3]&lang=en" style="width:600" />
+
+- ForestFlow/ForestFlow
+
+<embed src="http://gar2020.opensource-service.cn/svgrenderer/github/X-lab2017/github-analysis-report?path=sqls/working-hour-distribution/image.svg&data=[0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,2,4,1,10,0,2,0,0,1,1,0,1,0,0,0,0,0,0,1,0,0,1,0,1,1,1,0,0,1,3,4,0,0,0,0,0,1,1,0,0,2,1,1,0,0,0,0,1,3,2,1,2,2,1,6,0,1,6,1,0,1,0,0,0,0,0,1,1,1,1,0,1,4,1,0,0,0,1,2,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,1,0,0,0,1,1,1,1,0,0,1,1,4,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,1,0,0,0,0]&lang=en" style="width:600" />
+
+- JanusGraph/janusgraph
+
+<embed src="http://gar2020.opensource-service.cn/svgrenderer/github/X-lab2017/github-analysis-report?path=sqls/working-hour-distribution/image.svg&data=[1,2,2,2,2,4,6,7,7,7,3,10,8,7,5,6,5,4,3,5,4,5,4,1,4,2,2,2,2,4,9,8,5,4,2,7,4,6,5,5,5,1,4,2,3,6,3,1,3,2,5,4,2,3,5,5,5,6,3,6,4,4,3,5,5,2,2,2,5,5,5,2,3,2,2,3,3,3,7,5,6,3,3,6,4,7,7,5,3,3,4,3,3,5,2,1,7,3,2,1,1,3,3,3,7,4,5,5,5,5,4,3,5,3,3,3,2,3,3,1,2,1,2,2,3,2,2,2,1,3,4,2,2,2,2,2,2,2,1,2,1,2,1,1,1,1,2,2,1,1,3,2,1,2,2,3,2,2,2,1,2,2,3,3,2,1,1,1]&lang=en" style="width:600" />
+
+- datadotworld/data-practices-site
+
+<embed src="http://gar2020.opensource-service.cn/svgrenderer/github/X-lab2017/github-analysis-report?path=sqls/working-hour-distribution/image.svg&data=[0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,3,0,10,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,1,4,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,1,0,0,4,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0]&lang=en" style="width:600" />
+
+
 # 中文
 
 ## 介绍
@@ -293,3 +939,649 @@ TAC 将对所有 LF AI & Data 项目进行年度审查。年度审查包括评�
 
 1. TAC 的⅔肯定票
 2. GB 的⅔肯定票
+
+## 数据分析
+
+### 项目活跃度
+
+我们计算了所有 LF AI & Data 的项目仓库的活动情况，数据如下。
+
+| # | name | language | activity | developer_count | issue_comment | open_issue | open_pull | pull_review_comment | merge_pull | pull_commits | pull_additions | pull_deletions |
+|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
+| 1 | horovod/horovod | Python | 1260.96 | 446 | 3564 | 448 | 412 | 947 | 360 | 1380 | 53193 | 23417 |
+| 2 | milvus-io/milvus | C++ | 1234.92 | 239 | 4683 | 1544 | 1865 | 311 | 1681 | 11775 | 788040 | 454149 |
+| 3 | onnx/onnx | PureBasic | 1135.16 | 382 | 2299 | 216 | 301 | 1565 | 232 | 2431 | 42390 | 14042 |
+| 4 | feast-dev/feast | Java | 750.84 | 94 | 8114 | 187 | 646 | 2374 | 557 | 2255 | 182354 | 168855 |
+| 5 | odpi/egeria | Java | 619.93 | 43 | 4509 | 710 | 1298 | 1071 | 1047 | 7746 | 743183 | 342990 |
+| 6 | nnstreamer/nnstreamer | C | 548.22 | 39 | 3963 | 239 | 759 | 2463 | 733 | 938 | 81995 | 26952 |
+| 7 | lyft/amundsen | Smarty | 502.4 | 141 | 1168 | 212 | 393 | 196 | 359 | 543 | 3799 | 1666 |
+| 8 | JanusGraph/janusgraph | Java | 497.19 | 135 | 1223 | 119 | 241 | 965 | 180 | 184 | 21590 | 24111 |
+| 9 | uber/ludwig | Python | 459.1 | 119 | 1783 | 120 | 303 | 620 | 265 | 2139 | 73411 | 100727 |
+| 10 | IBM/adversarial-robustness-toolbox | Python | 447.54 | 87 | 883 | 204 | 308 | 1619 | 269 | 8585 | 214502 | 86926 |
+| 11 | pyro-ppl/pyro | Python | 413.83 | 87 | 982 | 92 | 378 | 1224 | 336 | 1945 | 49294 | 9084 |
+| 12 | sparklyr/sparklyr | R | 387 | 130 | 1429 | 211 | 417 | 93 | 371 | 1129 | 202788 | 112021 |
+| 13 | IBM/AIF360 | Python | 126.96 | 36 | 132 | 17 | 38 | 97 | 33 | 355 | 44441 | 20355 |
+| 14 | Adlik/Adlik | C++ | 122.53 | 11 | 820 | 95 | 228 | 103 | 0 | 0 | 0 | 0 |
+| 15 | MarquezProject/marquez | Java | 102.48 | 15 | 237 | 40 | 145 | 66 | 137 | 952 | 48870 | 6124 |
+| 16 | Angel-ML/angel | Java | 99.63 | 33 | 114 | 37 | 82 | 0 | 79 | 692 | 77462 | 20972 |
+| 17 | IBM/AIX360 | Python | 74.24 | 24 | 109 | 25 | 26 | 0 | 19 | 45 | 11218 | 9697 |
+| 18 | odpi/OpenDS4All | HTML | 57.43 | 10 | 46 | 3 | 84 | 0 | 78 | 309 | 81151 | 11707 |
+| 19 | elasticdeeplearning/edl | Python | 51.78 | 5 | 11 | 3 | 86 | 72 | 71 | 1136 | 54372 | 40732 |
+| 20 | didi/delta | Python | 38.89 | 8 | 50 | 8 | 27 | 14 | 24 | 82 | 8166 | 5841 |
+| 21 | ForestFlow/ForestFlow | Scala | 18.01 | 2 | 4 | 3 | 22 | 18 | 19 | 119 | 4366 | 3177 |
+| 22 | datadotworld/data-practices-site | CSS | 5.74 | 1 | 3 | 0 | 10 | 0 | 0 | 0 | 0 | 0 |
+| 23 | soajs/soajs | JavaScript | 2 | 1 | 1 | 0 | 1 | 0 | 0 | 0 | 0 | 0 |
+
+
+### 开发者活跃度
+
+我们同时也统计了每个项目活跃度前 20 的开发者数据，数据如下。
+
+
+- nnstreamer/nnstreamer
+
+| # | login | activity | issue_comment | open_issue | open_pull | pull_review_comment | merge_pull | pull_commits | pull_additions | pull_deletions |
+|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
+| 1 | myungjoo | 3795 |  377 | 129 | 103 | 584 | 103 | 136 | 15093 | 8791 |
+| 2 | jaeyun-jung | 3099 |  132 | 3 | 218 | 313 | 211 | 268 | 16616 | 7396 |
+| 3 | taos-ci | 2847 |  2847 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 4 | dongju-chae | 1938 |  70 | 12 | 53 | 360 | 49 | 56 | 8367 | 1822 |
+| 5 | gichan-jang | 1916 |  114 | 7 | 79 | 299 | 71 | 80 | 10781 | 1681 |
+| 6 | kparichay | 1730 |  105 | 16 | 58 | 271 | 67 | 88 | 8903 | 2301 |
+| 7 | wooksong | 1633 |  72 | 17 | 83 | 217 | 82 | 124 | 9129 | 1508 |
+| 8 | anyj0527 | 896 |  56 | 9 | 48 | 112 | 46 | 61 | 3039 | 559 |
+| 9 | again4you | 721 |  45 | 7 | 44 | 80 | 42 | 55 | 4491 | 888 |
+| 10 | helloahn | 609 |  16 | 2 | 28 | 95 | 25 | 28 | 1445 | 264 |
+| 11 | zhoonit | 320 |  15 | 5 | 7 | 61 | 6 | 8 | 413 | 354 |
+| 12 | leemgs | 233 |  20 | 2 | 10 | 36 | 7 | 7 | 1777 | 505 |
+| 13 | kbumsik | 107 |  8 | 0 | 5 | 16 | 4 | 7 | 312 | 161 |
+| 14 | jijoongmoon | 102 |  3 | 0 | 8 | 10 | 7 | 7 | 1545 | 673 |
+| 15 | tony-jinwoo-ahn | 77 |  11 | 3 | 5 | 5 | 5 | 5 | 51 | 29 |
+| 16 | junmin-kim | 42 |  12 | 5 | 2 | 1 | 2 | 2 | 11 | 6 |
+| 17 | lemmaa | 20 |  4 | 0 | 1 | 2 | 1 | 1 | 1 | 1 |
+| 18 | semun-lee | 18 |  2 | 2 | 1 | 1 | 1 | 1 | 6 | 0 |
+| 19 | suehdn | 16 |  8 | 4 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 20 | chunseoklee | 15 |  5 | 1 | 1 | 0 | 1 | 1 | 1 | 1 |
+
+- JanusGraph/janusgraph
+
+| # | login | activity | issue_comment | open_issue | open_pull | pull_review_comment | merge_pull | pull_commits | pull_additions | pull_deletions |
+|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
+| 1 | porunov | 1516 |  246 | 24 | 37 | 234 | 35 | 35 | 3059 | 1659 |
+| 2 | farodin91 | 1063 |  158 | 13 | 47 | 137 | 38 | 39 | 10033 | 20249 |
+| 3 | FlorianHockmann | 1015 |  151 | 4 | 4 | 206 | 4 | 4 | 5 | 8 |
+| 4 | li-boxuan | 852 |  100 | 18 | 28 | 133 | 20 | 20 | 1193 | 312 |
+| 5 | rngcntr | 770 |  60 | 5 | 13 | 149 | 13 | 16 | 3054 | 1183 |
+| 6 | dependabot-preview[bot] | 403 |  31 | 0 | 64 | 0 | 36 | 36 | 36 | 36 |
+| 7 | mad | 146 |  13 | 2 | 9 | 13 | 10 | 10 | 259 | 172 |
+| 8 | mbrukman | 82 |  48 | 1 | 1 | 6 | 1 | 1 | 1 | 0 |
+| 9 | dk-github | 70 |  22 | 0 | 2 | 8 | 2 | 2 | 2858 | 116 |
+| 10 | gguttikonda | 62 |  4 | 1 | 2 | 10 | 2 | 2 | 172 | 21 |
+| 11 | BrunoBerisso | 62 |  3 | 2 | 2 | 11 | 1 | 1 | 46 | 6 |
+| 12 | 9lan9 | 62 |  4 | 0 | 2 | 13 | 0 | 0 | 0 | 0 |
+| 13 | pkendall64 | 44 |  2 | 1 | 1 | 8 | 1 | 1 | 152 | 13 |
+| 14 | VladimirBogomolov | 43 |  9 | 4 | 4 | 1 | 2 | 2 | 151 | 92 |
+| 15 | jiyoungsin | 38 |  11 | 0 | 2 | 4 | 1 | 1 | 3 | 147 |
+| 16 | communitybridge-easycla[bot] | 36 |  36 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 17 | debelyoo | 35 |  1 | 1 | 1 | 6 | 1 | 1 | 48 | 0 |
+| 18 | GeorgeHon | 30 |  1 | 0 | 4 | 3 | 1 | 1 | 6 | 6 |
+| 19 | mmadoo | 29 |  2 | 1 | 1 | 3 | 2 | 2 | 141 | 9 |
+| 20 | mneethiraj | 28 |  3 | 1 | 2 | 3 | 1 | 1 | 100 | 11 |
+
+- IBM/adversarial-robustness-toolbox
+
+| # | login | activity | issue_comment | open_issue | open_pull | pull_review_comment | merge_pull | pull_commits | pull_additions | pull_deletions |
+|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
+| 1 | beat-buesser | 6065 |  362 | 63 | 131 | 1141 | 124 | 5554 | 151573 | 62678 |
+| 2 | minhitbk | 919 |  19 | 5 | 27 | 171 | 25 | 886 | 18547 | 2923 |
+| 3 | shashankkotyan | 358 |  21 | 3 | 2 | 80 | 1 | 16 | 1843 | 1 |
+| 4 | codecov[bot] | 110 |  110 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 5 | keykholt | 51 |  8 | 2 | 4 | 3 | 3 | 15 | 820 | 4 |
+| 6 | kztakemoto | 45 |  9 | 0 | 2 | 5 | 2 | 114 | 919 | 7 |
+| 7 | ririnicolae | 33 |  1 | 0 | 2 | 4 | 2 | 97 | 4840 | 6563 |
+| 8 | tagomaru | 31 |  8 | 2 | 3 | 0 | 2 | 5 | 107 | 121 |
+| 9 | mzweilin | 30 |  2 | 2 | 1 | 4 | 1 | 8 | 694 | 2 |
+| 10 | TreeLLi | 27 |  7 | 2 | 1 | 2 | 1 | 17 | 33 | 21 |
+| 11 | ehsankf | 24 |  10 | 3 | 1 | 0 | 1 | 3 | 24 | 18 |
+| 12 | ng390 | 21 |  1 | 4 | 1 | 1 | 1 | 16 | 291 | 1 |
+| 13 | maliwin | 15 |  9 | 3 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 14 | ahmedomer6 | 14 |  10 | 2 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 15 | akshayag | 14 |  8 | 3 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 16 | henry-eigen | 13 |  2 | 0 | 2 | 0 | 1 | 6 | 19 | 3 |
+| 17 | Tomcli | 12 |  2 | 1 | 1 | 0 | 1 | 1 | 7 | 2 |
+| 18 | Nathalie-B | 11 |  1 | 5 | 0 | 0 | 0 | 0 | 0 | 0 |
+
+- uber/ludwig
+
+| # | login | activity | issue_comment | open_issue | open_pull | pull_review_comment | merge_pull | pull_commits | pull_additions | pull_deletions |
+|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
+| 1 | w4nderlust | 2120 |  784 | 2 | 36 | 271 | 28 | 358 | 14282 | 9028 |
+| 2 | jimthompson5802 | 1570 |  371 | 4 | 78 | 143 | 77 | 971 | 31561 | 19550 |
+| 3 | tgaddair | 1268 |  64 | 1 | 90 | 128 | 84 | 473 | 10455 | 61518 |
+| 4 | carlogrisetti | 302 |  100 | 15 | 15 | 13 | 15 | 59 | 458 | 268 |
+| 5 | kaushikb11 | 180 |  26 | 0 | 10 | 21 | 8 | 52 | 2143 | 219 |
+| 6 | ifokeev | 141 |  37 | 10 | 12 | 2 | 8 | 10 | 24 | 14 |
+| 7 | ydudin3 | 123 |  6 | 0 | 10 | 13 | 7 | 28 | 957 | 506 |
+| 8 | ANarayan | 113 |  1 | 0 | 10 | 8 | 10 | 95 | 1515 | 448 |
+| 9 | flozi00 | 66 |  13 | 3 | 5 | 3 | 4 | 4 | 12 | 7 |
+| 10 | michaelbzhu | 58 |  5 | 3 | 6 | 1 | 5 | 21 | 115 | 15 |
+| 11 | dsblank | 49 |  9 | 0 | 3 | 4 | 3 | 3 | 113 | 0 |
+| 12 | richardliaw | 45 |  1 | 0 | 0 | 11 | 0 | 0 | 0 | 0 |
+| 13 | CLAassistant | 32 |  32 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 14 | mangleddata | 30 |  18 | 6 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 15 | donfour10 | 28 |  16 | 6 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 16 | jenishah | 24 |  11 | 1 | 2 | 0 | 1 | 1 | 1 | 1 |
+| 17 | jmizgajski | 22 |  8 | 3 | 1 | 0 | 1 | 1 | 2 | 0 |
+| 18 | calio | 21 |  3 | 0 | 3 | 1 | 1 | 3 | 129 | 1 |
+| 19 | soovam123 | 20 |  3 | 0 | 4 | 0 | 1 | 9 | 73 | 72 |
+| 20 | msaisumanth | 19 |  16 | 0 | 1 | 0 | 0 | 0 | 0 | 0 |
+
+- Angel-ML/angel
+
+| # | login | activity | issue_comment | open_issue | open_pull | pull_review_comment | merge_pull | pull_commits | pull_additions | pull_deletions |
+|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
+| 1 | xs-li | 580 |  7 | 0 | 71 | 0 | 72 | 88 | 3292 | 5694 |
+| 2 | ouyangwen-it | 54 |  30 | 0 | 3 | 0 | 3 | 595 | 73554 | 15131 |
+| 3 | Gscim | 31 |  1 | 0 | 5 | 0 | 3 | 8 | 612 | 146 |
+| 4 | xiaopqr | 20 |  8 | 2 | 1 | 0 | 1 | 1 | 4 | 1 |
+| 5 | maozida880 | 18 |  10 | 4 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6 | dongxuej | 16 |  6 | 5 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 7 | PayneJoe | 11 |  5 | 3 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 8 | davidxiaozhi | 11 |  3 | 1 | 2 | 0 | 0 | 0 | 0 | 0 |
+
+- odpi/egeria
+
+| # | login | activity | issue_comment | open_issue | open_pull | pull_review_comment | merge_pull | pull_commits | pull_additions | pull_deletions |
+|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
+| 1 | planetf1 | 5106 |  1767 | 253 | 218 | 291 | 203 | 973 | 43128 | 27085 |
+| 2 | davidradl | 2274 |  319 | 122 | 104 | 231 | 95 | 491 | 75171 | 47982 |
+| 3 | dependabot-preview[bot] | 2066 |  69 | 5 | 279 | 0 | 230 | 257 | 508 | 405 |
+| 4 | grahamwallis | 1373 |  298 | 70 | 83 | 69 | 82 | 689 | 80845 | 21195 |
+| 5 | mandy-chessell | 1357 |  318 | 63 | 62 | 108 | 59 | 834 | 271761 | 125014 |
+| 6 | immmus | 905 |  201 | 12 | 31 | 113 | 27 | 283 | 19011 | 38188 |
+| 7 | cmgrote | 896 |  204 | 41 | 57 | 46 | 51 | 516 | 19515 | 9744 |
+| 8 | bogdan-sava | 842 |  116 | 38 | 69 | 27 | 67 | 494 | 4894 | 3714 |
+| 9 | dependabot[bot] | 787 |  129 | 0 | 156 | 0 | 38 | 52 | 628 | 452 |
+| 10 | github-actions[bot] | 771 |  723 | 24 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 11 | lpalashevski | 380 |  38 | 14 | 32 | 17 | 30 | 1961 | 134874 | 29587 |
+| 12 | popa-raluca | 328 |  31 | 8 | 33 | 8 | 30 | 231 | 6353 | 4459 |
+| 13 | marius-patrascu | 303 |  3 | 1 | 40 | 2 | 34 | 152 | 2909 | 1058 |
+| 14 | danielaotelea | 286 |  13 | 11 | 32 | 5 | 27 | 194 | 5969 | 5508 |
+| 15 | lcpopa | 260 |  30 | 3 | 18 | 20 | 18 | 103 | 1932 | 863 |
+| 16 | yevgenmar | 247 |  3 | 2 | 12 | 41 | 8 | 73 | 7952 | 282 |
+| 17 | wbittles | 221 |  52 | 5 | 8 | 25 | 7 | 51 | 4619 | 187 |
+| 18 | jmmadsen | 215 |  33 | 6 | 12 | 26 | 6 | 37 | 49754 | 2993 |
+| 19 | GuyAckermans | 191 |  28 | 3 | 17 | 9 | 14 | 209 | 2245 | 2514 |
+| 20 | DimitriosMaimaris | 132 |  12 | 2 | 14 | 6 | 10 | 89 | 4619 | 5469 |
+
+- horovod/horovod
+
+| # | login | activity | issue_comment | open_issue | open_pull | pull_review_comment | merge_pull | pull_commits | pull_additions | pull_deletions |
+|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
+| 1 | tgaddair | 3302 |  825 | 34 | 147 | 317 | 140 | 562 | 18339 | 13491 |
+| 2 | EnricoMi | 1412 |  154 | 13 | 83 | 157 | 71 | 217 | 13888 | 4157 |
+| 3 | sblotner | 549 |  5 | 0 | 1 | 134 | 1 | 1 | 17 | 17 |
+| 4 | stale[bot] | 542 |  542 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 5 | romerojosh | 541 |  62 | 0 | 29 | 63 | 28 | 75 | 6667 | 766 |
+| 6 | github-actions[bot] | 394 |  394 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 7 | abditag2 | 304 |  21 | 0 | 26 | 25 | 21 | 109 | 898 | 275 |
+| 8 | nvcastet | 300 |  64 | 0 | 14 | 26 | 18 | 51 | 2419 | 2241 |
+| 9 | davidrpugh | 283 |  43 | 2 | 2 | 55 | 2 | 21 | 290 | 1 |
+| 10 | richardliaw | 219 |  11 | 0 | 7 | 38 | 7 | 87 | 2775 | 291 |
+| 11 | aaron276h | 130 |  21 | 3 | 9 | 9 | 8 | 30 | 879 | 78 |
+| 12 | Vikas-kum | 118 |  26 | 1 | 4 | 17 | 2 | 61 | 562 | 140 |
+| 13 | leezu | 105 |  26 | 1 | 9 | 5 | 6 | 12 | 355 | 59 |
+| 14 | jeffdaily | 82 |  22 | 0 | 3 | 9 | 3 | 9 | 853 | 486 |
+| 15 | liangz1 | 80 |  8 | 1 | 6 | 8 | 4 | 31 | 244 | 31 |
+| 16 | apeforest | 78 |  19 | 0 | 4 | 8 | 3 | 24 | 219 | 137 |
+| 17 | alsrgv | 73 |  9 | 0 | 2 | 12 | 2 | 12 | 620 | 281 |
+| 18 | Richie-yan | 73 |  31 | 5 | 4 | 5 | 0 | 0 | 0 | 0 |
+| 19 | shirosankaku | 70 |  16 | 1 | 5 | 3 | 5 | 12 | 2998 | 843 |
+| 20 | eric-haibin-lin | 68 |  9 | 1 | 5 | 8 | 2 | 4 | 9 | 7 |
+
+- onnx/onnx
+
+| # | login | activity | issue_comment | open_issue | open_pull | pull_review_comment | merge_pull | pull_commits | pull_additions | pull_deletions |
+|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
+| 1 | wschin | 1293 |  77 | 1 | 12 | 272 | 18 | 299 | 7517 | 1236 |
+| 2 | gramalingam | 1257 |  89 | 0 | 8 | 276 | 8 | 56 | 447 | 61 |
+| 3 | jcwchen | 1132 |  257 | 2 | 60 | 129 | 35 | 395 | 1351 | 517 |
+| 4 | askhade | 1027 |  211 | 3 | 22 | 171 | 12 | 42 | 594 | 410 |
+| 5 | linkerzhang | 580 |  174 | 4 | 8 | 86 | 6 | 27 | 203 | 80 |
+| 6 | vinitra | 421 |  37 | 1 | 13 | 72 | 11 | 471 | 1258 | 442 |
+| 7 | codemzs | 294 |  44 | 0 | 16 | 33 | 14 | 90 | 3500 | 2910 |
+| 8 | TMVector | 292 |  76 | 4 | 5 | 42 | 5 | 57 | 1054 | 64 |
+| 9 | chinhuang007 | 275 |  56 | 2 | 19 | 22 | 14 | 43 | 4140 | 965 |
+| 10 | snnn | 237 |  58 | 2 | 7 | 31 | 6 | 20 | 318 | 238 |
+| 11 | lara-hdr | 226 |  22 | 0 | 4 | 43 | 4 | 52 | 3126 | 254 |
+| 12 | neginraoof | 222 |  44 | 0 | 12 | 23 | 10 | 178 | 1905 | 59 |
+| 13 | daquexian | 196 |  47 | 2 | 7 | 21 | 8 | 97 | 1271 | 724 |
+| 14 | prasanthpul | 174 |  37 | 3 | 13 | 8 | 12 | 30 | 180 | 15 |
+| 15 | tbennun | 167 |  3 | 0 | 0 | 41 | 0 | 0 | 0 | 0 |
+| 16 | BowenBao | 144 |  16 | 0 | 5 | 22 | 5 | 30 | 3533 | 1583 |
+| 17 | KsenijaS | 140 |  8 | 0 | 5 | 23 | 5 | 107 | 3738 | 2050 |
+| 18 | jeremycochoy | 133 |  30 | 0 | 4 | 19 | 3 | 43 | 1177 | 32 |
+| 19 | matteosal | 121 |  21 | 5 | 3 | 19 | 1 | 26 | 452 | 83 |
+| 20 | lgtm-com[bot] | 103 |  103 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+
+- lyft/amundsen
+
+| # | login | activity | issue_comment | open_issue | open_pull | pull_review_comment | merge_pull | pull_commits | pull_additions | pull_deletions |
+|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
+| 1 | feng-tao | 1292 |  353 | 23 | 91 | 55 | 80 | 125 | 977 | 205 |
+| 2 | jornh | 296 |  131 | 7 | 11 | 17 | 10 | 13 | 191 | 110 |
+| 3 | javamonkey79 | 170 |  66 | 5 | 5 | 11 | 7 | 100 | 747 | 434 |
+| 4 | ttannis | 139 |  53 | 9 | 2 | 13 | 2 | 2 | 45 | 53 |
+| 5 | samshuster | 127 |  50 | 13 | 5 | 4 | 4 | 6 | 148 | 7 |
+| 6 | Alagappan | 90 |  6 | 2 | 2 | 16 | 2 | 3 | 3 | 7 |
+| 7 | jinhyukchang | 61 |  15 | 1 | 4 | 3 | 4 | 6 | 128 | 3 |
+| 8 | mgorsk1 | 60 |  13 | 1 | 4 | 2 | 5 | 8 | 62 | 49 |
+| 9 | jonhehir | 48 |  12 | 10 | 2 | 0 | 2 | 2 | 2 | 0 |
+| 10 | stale[bot] | 37 |  37 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 11 | rsyi | 32 |  14 | 5 | 1 | 0 | 1 | 1 | 4 | 0 |
+| 12 | ajbosco | 31 |  1 | 1 | 3 | 1 | 3 | 7 | 645 | 327 |
+| 13 | friendtocephalopods | 31 |  5 | 1 | 3 | 0 | 3 | 6 | 12 | 5 |
+| 14 | Jwan622 | 27 |  7 | 2 | 0 | 4 | 0 | 0 | 0 | 0 |
+| 15 | ibnipun10 | 23 |  8 | 2 | 2 | 0 | 1 | 1 | 1 | 1 |
+| 16 | dmateusp | 21 |  3 | 1 | 2 | 0 | 2 | 6 | 18 | 0 |
+| 17 | pemmasanikrishna | 21 |  1 | 0 | 2 | 1 | 2 | 2 | 12 | 1 |
+| 18 | jdavidheiser | 20 |  6 | 7 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 19 | alran | 20 |  8 | 2 | 1 | 0 | 1 | 1 | 1 | 0 |
+| 20 | jacobhjkim | 19 |  4 | 0 | 2 | 1 | 1 | 2 | 3 | 3 |
+
+- pyro-ppl/pyro
+
+| # | login | activity | issue_comment | open_issue | open_pull | pull_review_comment | merge_pull | pull_commits | pull_additions | pull_deletions |
+|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
+| 1 | fritzo | 3918 |  344 | 33 | 198 | 491 | 190 | 1106 | 28379 | 5234 |
+| 2 | fehiepsi | 1318 |  115 | 5 | 39 | 224 | 36 | 165 | 3017 | 1446 |
+| 3 | martinjankowiak | 1132 |  72 | 1 | 23 | 221 | 21 | 117 | 1580 | 206 |
+| 4 | stefanwebb | 591 |  79 | 2 | 32 | 68 | 28 | 184 | 5365 | 1607 |
+| 5 | eb8680 | 554 |  70 | 3 | 25 | 77 | 19 | 158 | 6187 | 265 |
+| 6 | neerajprad | 445 |  55 | 4 | 14 | 75 | 8 | 27 | 568 | 129 |
+| 7 | ecotner | 149 |  22 | 2 | 4 | 24 | 3 | 35 | 630 | 16 |
+| 8 | ordabayevy | 148 |  25 | 3 | 7 | 19 | 4 | 49 | 689 | 32 |
+| 9 | ucals | 78 |  15 | 0 | 7 | 8 | 2 | 11 | 1007 | 0 |
+| 10 | garrett-bernstein | 41 |  5 | 0 | 2 | 5 | 2 | 8 | 162 | 14 |
+| 11 | xidulu | 35 |  5 | 3 | 3 | 0 | 3 | 5 | 4 | 4 |
+| 12 | patrickeganfoley | 31 |  7 | 0 | 1 | 4 | 1 | 22 | 163 | 4 |
+| 13 | sleepy-owl | 28 |  4 | 0 | 2 | 2 | 2 | 11 | 29 | 27 |
+| 14 | jamestwebber | 23 |  5 | 1 | 2 | 0 | 2 | 3 | 9 | 9 |
+| 15 | randommm | 18 |  2 | 0 | 2 | 0 | 2 | 2 | 6 | 6 |
+| 16 | gchanan | 17 |  1 | 0 | 2 | 0 | 2 | 2 | 5 | 5 |
+| 17 | ludkinm | 17 |  1 | 0 | 2 | 0 | 2 | 5 | 9 | 6 |
+| 18 | mollerhoj | 16 |  1 | 0 | 2 | 1 | 1 | 2 | 4 | 4 |
+| 19 | ciguaran | 16 |  4 | 0 | 1 | 1 | 1 | 4 | 72 | 26 |
+| 20 | akern40 | 15 |  7 | 4 | 0 | 0 | 0 | 0 | 0 | 0 |
+
+- feast-dev/feast
+
+| # | login | activity | issue_comment | open_issue | open_pull | pull_review_comment | merge_pull | pull_commits | pull_additions | pull_deletions |
+|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
+| 1 | woop | 5669 |  1089 | 65 | 68 | 984 | 62 | 261 | 24488 | 74912 |
+| 2 | feast-ci-bot | 4822 |  4822 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 3 | pyalex | 2173 |  394 | 3 | 112 | 233 | 101 | 470 | 24829 | 13557 |
+| 4 | mrzzy | 1613 |  220 | 14 | 51 | 248 | 44 | 449 | 23822 | 7441 |
+| 5 | terryyylim | 1420 |  133 | 1 | 74 | 182 | 67 | 307 | 17781 | 31956 |
+| 6 | oavdeev | 613 |  68 | 0 | 33 | 74 | 30 | 52 | 4800 | 1263 |
+| 7 | jmelinav | 370 |  64 | 1 | 11 | 59 | 7 | 31 | 3119 | 545 |
+| 8 | dr3s | 315 |  70 | 3 | 3 | 55 | 2 | 21 | 1867 | 272 |
+| 9 | tsotnet | 206 |  12 | 2 | 5 | 40 | 3 | 22 | 1126 | 100 |
+| 10 | SwampertX | 129 |  4 | 3 | 5 | 21 | 4 | 35 | 791 | 211 |
+| 11 | stale[bot] | 73 |  73 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 12 | mike0sv | 62 |  20 | 4 | 4 | 3 | 2 | 20 | 91 | 39 |
+| 13 | Wirick | 37 |  10 | 0 | 5 | 3 | 0 | 0 | 0 | 0 |
+| 14 | jklegar | 37 |  2 | 0 | 4 | 2 | 3 | 11 | 377 | 68 |
+| 15 | oavdeev-tt | 34 |  6 | 0 | 2 | 3 | 2 | 2 | 28 | 2 |
+| 16 | dependabot[bot] | 33 |  7 | 0 | 7 | 0 | 1 | 1 | 1 | 1 |
+| 17 | ravdin | 32 |  5 | 0 | 1 | 6 | 0 | 0 | 0 | 0 |
+| 18 | Andrew32bit | 27 |  17 | 5 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 19 | zhangchi1 | 25 |  8 | 1 | 1 | 3 | 0 | 0 | 0 | 0 |
+| 20 | duongnt | 21 |  1 | 2 | 2 | 0 | 2 | 2 | 13 | 13 |
+
+- sparklyr/sparklyr
+
+| # | login | activity | issue_comment | open_issue | open_pull | pull_review_comment | merge_pull | pull_commits | pull_additions | pull_deletions |
+|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
+| 1 | yl790 | 3302 |  415 | 104 | 349 | 23 | 308 | 856 | 195309 | 102817 |
+| 2 | falaki | 829 |  570 | 4 | 21 | 27 | 16 | 65 | 512 | 109 |
+| 3 | javierluraschi | 287 |  49 | 10 | 15 | 22 | 17 | 68 | 4626 | 8454 |
+| 4 | Loquats | 112 |  12 | 0 | 11 | 8 | 7 | 43 | 309 | 49 |
+| 5 | nealrichardson | 60 |  12 | 4 | 4 | 2 | 4 | 17 | 173 | 403 |
+| 6 | samuelmacedo83 | 48 |  10 | 0 | 3 | 1 | 5 | 37 | 675 | 114 |
+| 7 | wkdavis | 40 |  10 | 1 | 2 | 3 | 2 | 7 | 354 | 5 |
+| 8 | yitao-li | 37 |  6 | 0 | 3 | 3 | 2 | 4 | 235 | 2 |
+| 9 | zero323 | 33 |  5 | 0 | 3 | 1 | 3 | 5 | 366 | 0 |
+| 10 | sbottelli | 28 |  14 | 7 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 11 | lu-wang-dl | 24 |  1 | 0 | 3 | 1 | 2 | 9 | 51 | 17 |
+| 12 | SieSiongWong | 20 |  18 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 13 | kevinykuo | 16 |  3 | 0 | 0 | 2 | 1 | 8 | 34 | 9 |
+| 14 | dkincaid | 14 |  10 | 2 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 15 | jozefhajnala | 14 |  1 | 0 | 1 | 0 | 2 | 6 | 96 | 7 |
+| 16 | benmwhite | 14 |  14 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 17 | abdkumar | 14 |  8 | 3 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 18 | ying1 | 12 |  10 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 19 | nathaneastwood | 12 |  2 | 1 | 1 | 0 | 1 | 1 | 5 | 5 |
+| 20 | rychien-official | 12 |  8 | 2 | 0 | 0 | 0 | 0 | 0 | 0 |
+
+- MarquezProject/marquez
+
+| # | login | activity | issue_comment | open_issue | open_pull | pull_review_comment | merge_pull | pull_commits | pull_additions | pull_deletions |
+|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
+| 1 | wslulciuc | 1168 |  62 | 22 | 117 | 39 | 111 | 770 | 23810 | 4842 |
+| 2 | julienledem | 186 |  8 | 5 | 10 | 22 | 10 | 28 | 3975 | 845 |
+| 3 | codecov[bot] | 131 |  131 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 4 | phixMe | 78 |  1 | 1 | 9 | 2 | 8 | 136 | 20670 | 340 |
+| 5 | ravikamaraj | 40 |  4 | 0 | 3 | 3 | 3 | 10 | 368 | 90 |
+| 6 | sreev | 28 |  1 | 4 | 3 | 0 | 2 | 4 | 28 | 1 |
+| 7 | nkijak | 22 |  10 | 2 | 1 | 0 | 1 | 1 | 16 | 3 |
+| 8 | frankcash | 17 |  7 | 1 | 1 | 0 | 1 | 2 | 2 | 2 |
+
+- Trusted-AI/adversarial-robustness-toolbox
+
+| # | login | activity | issue_comment | open_issue | open_pull | pull_review_comment | merge_pull | pull_commits | pull_additions | pull_deletions |
+|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
+| 1 | ebubae | 432 |  14 | 8 | 21 | 61 | 19 | 452 | 8149 | 1210 |
+| 2 | hesseltuinhof | 401 |  15 | 10 | 22 | 50 | 20 | 95 | 6798 | 1067 |
+| 3 | killianlevacher | 389 |  5 | 17 | 15 | 65 | 9 | 1064 | 15095 | 11384 |
+| 4 | dependabot[bot] | 314 |  7 | 0 | 44 | 0 | 35 | 72 | 53 | 53 |
+| 5 | mathsinn | 201 |  24 | 3 | 12 | 20 | 11 | 64 | 1803 | 203 |
+| 6 | abigailgold | 89 |  4 | 0 | 8 | 9 | 5 | 73 | 2713 | 64 |
+| 7 | davidslater | 64 |  25 | 10 | 2 | 2 | 1 | 7 | 67 | 527 |
+| 8 | codecov-io | 36 |  36 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 9 | codecov-commenter | 35 |  35 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 10 | superctj | 25 |  19 | 3 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 11 | Embeddave | 17 |  15 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 12 | joelma1 | 11 |  5 | 3 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 13 | zacps | 11 |  1 | 1 | 1 | 0 | 1 | 4 | 69 | 53 |
+| 14 | hornel | 11 |  1 | 1 | 1 | 0 | 1 | 7 | 16 | 8 |
+
+- IBM/AIF360
+
+| # | login | activity | issue_comment | open_issue | open_pull | pull_review_comment | merge_pull | pull_commits | pull_additions | pull_deletions |
+|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
+| 1 | hoffmansc | 261 |  31 | 4 | 11 | 36 | 9 | 81 | 4391 | 19677 |
+| 2 | SSaishruthi | 104 |  13 | 4 | 4 | 14 | 3 | 65 | 34604 | 32 |
+| 3 | pronics2004 | 69 |  5 | 0 | 1 | 14 | 1 | 9 | 224 | 563 |
+| 4 | sethneel | 68 |  1 | 0 | 3 | 12 | 2 | 162 | 4320 | 8 |
+| 5 | nrkarthikeyan | 62 |  6 | 0 | 0 | 14 | 0 | 0 | 0 | 0 |
+| 6 | jimbudarz | 44 |  12 | 0 | 4 | 0 | 4 | 6 | 20 | 10 |
+| 7 | animeshsingh | 30 |  6 | 0 | 2 | 2 | 2 | 2 | 0 | 2 |
+| 8 | romeokienzler | 23 |  2 | 0 | 2 | 0 | 3 | 8 | 634 | 2 |
+| 9 | bhavyaghai | 21 |  5 | 0 | 1 | 2 | 1 | 4 | 21 | 0 |
+| 10 | motapaolla | 11 |  1 | 1 | 1 | 0 | 1 | 1 | 2 | 2 |
+
+- PaddlePaddle/edl
+
+| # | login | activity | issue_comment | open_issue | open_pull | pull_review_comment | merge_pull | pull_commits | pull_additions | pull_deletions |
+|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
+| 1 | gongweibao | 558 |  4 | 1 | 53 | 42 | 45 | 1049 | 47977 | 18827 |
+| 2 | guru4elephant | 75 |  2 | 0 | 4 | 14 | 1 | 2 | 40 | 0 |
+
+- milvus-io/milvus
+
+| # | login | activity | issue_comment | open_issue | open_pull | pull_review_comment | merge_pull | pull_commits | pull_additions | pull_deletions |
+|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
+| 1 | yhmo | 2888 |  533 | 103 | 281 | 4 | 258 | 1570 | 178659 | 122630 |
+| 2 | del-zhenwu | 2665 |  419 | 418 | 184 | 2 | 170 | 1169 | 36324 | 28820 |
+| 3 | cydrain | 1910 |  100 | 86 | 159 | 114 | 141 | 846 | 43151 | 30780 |
+| 4 | BossZou | 1633 |  330 | 82 | 138 | 35 | 117 | 1061 | 21940 | 12724 |
+| 5 | shengjun1985 | 1556 |  311 | 30 | 143 | 14 | 140 | 515 | 55298 | 61449 |
+| 6 | JinHai-CN | 1224 |  364 | 51 | 79 | 49 | 65 | 1232 | 52868 | 25715 |
+| 7 | fishpenguin | 1025 |  136 | 30 | 105 | 1 | 102 | 1142 | 152075 | 91412 |
+| 8 | scsven | 964 |  109 | 18 | 96 | 19 | 91 | 409 | 58788 | 22601 |
+| 9 | youny626 | 928 |  55 | 16 | 107 | 0 | 104 | 494 | 25630 | 10157 |
+| 10 | codecov[bot] | 852 |  852 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 11 | ZhifengZhang-CN | 769 |  15 | 29 | 87 | 5 | 83 | 708 | 3494 | 2809 |
+| 12 | XuPeng-SH | 592 |  17 | 22 | 68 | 3 | 63 | 858 | 17866 | 4258 |
+| 13 | sahuang | 519 |  122 | 26 | 35 | 20 | 32 | 295 | 22661 | 12751 |
+| 14 | ThreadDao | 508 |  34 | 76 | 49 | 0 | 35 | 147 | 15848 | 7093 |
+| 15 | yamasite | 482 |  47 | 31 | 37 | 28 | 30 | 103 | 3467 | 1287 |
+| 16 | XuanYang-cn | 435 |  13 | 17 | 51 | 0 | 47 | 245 | 2750 | 2601 |
+| 17 | godchen0212 | 431 |  16 | 4 | 54 | 0 | 49 | 171 | 4259 | 2846 |
+| 18 | op-hunter | 421 |  19 | 10 | 49 | 0 | 47 | 321 | 15685 | 3500 |
+| 19 | tinkerlin | 364 |  158 | 4 | 24 | 4 | 22 | 98 | 2791 | 295 |
+| 20 | cqy123456 | 279 |  10 | 2 | 35 | 0 | 32 | 175 | 1919 | 1818 |
+
+- Adlik/Adlik
+
+| # | login | activity | issue_comment | open_issue | open_pull | pull_review_comment | merge_pull | pull_commits | pull_additions | pull_deletions |
+|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
+| 1 | EFanZh | 803 |  219 | 6 | 100 | 68 | 0 | 0 | 0 | 0 |
+| 2 | bors[bot] | 413 |  413 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 3 | amadeus-zte | 277 |  135 | 30 | 14 | 10 | 0 | 0 | 0 | 0 |
+| 4 | shiyingjin | 270 |  27 | 16 | 37 | 25 | 0 | 0 | 0 | 0 |
+| 5 | KellyZhang2020 | 189 |  5 | 26 | 44 | 0 | 0 | 0 | 0 | 0 |
+| 6 | wangzhenyu32 | 68 |  5 | 6 | 17 | 0 | 0 | 0 | 0 | 0 |
+| 7 | NaNAGISaSA | 42 |  6 | 6 | 8 | 0 | 0 | 0 | 0 | 0 |
+| 8 | dependabot[bot] | 25 |  7 | 0 | 6 | 0 | 0 | 0 | 0 | 0 |
+| 9 | priscilla-pan | 11 |  1 | 5 | 0 | 0 | 0 | 0 | 0 | 0 |
+
+- datadotworld/data-practices-site
+
+| # | login | activity | issue_comment | open_issue | open_pull | pull_review_comment | merge_pull | pull_commits | pull_additions | pull_deletions |
+|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
+| 1 | dependabot[bot] | 33 |  3 | 0 | 10 | 0 | 0 | 0 | 0 | 0 |
+
+- didi/delta
+
+| # | login | activity | issue_comment | open_issue | open_pull | pull_review_comment | merge_pull | pull_commits | pull_additions | pull_deletions |
+|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
+| 1 | zh794390558 | 209 |  12 | 4 | 21 | 9 | 18 | 62 | 6417 | 5089 |
+| 2 | xhyandwyy | 52 |  4 | 0 | 6 | 0 | 6 | 20 | 1749 | 752 |
+| 3 | applenob | 24 |  4 | 0 | 0 | 5 | 0 | 0 | 0 | 0 |
+| 4 | stale[bot] | 23 |  23 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+
+- odpi/OpenDS4All
+
+| # | login | activity | issue_comment | open_issue | open_pull | pull_review_comment | merge_pull | pull_commits | pull_additions | pull_deletions |
+|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
+| 1 | Frenchhorn005 | 504 |  9 | 0 | 60 | 0 | 63 | 75 | 1398 | 1943 |
+| 2 | zackives | 98 |  9 | 1 | 14 | 0 | 9 | 221 | 79715 | 9755 |
+| 3 | Lawrence-Krukrubo | 20 |  4 | 1 | 3 | 0 | 1 | 1 | 4 | 4 |
+| 4 | SusanBDavidson | 20 |  9 | 0 | 2 | 0 | 1 | 8 | 14 | 0 |
+| 5 | jmertic | 17 |  6 | 0 | 2 | 0 | 1 | 1 | 0 | 0 |
+| 6 | leestott | 17 |  1 | 0 | 2 | 0 | 2 | 2 | 19 | 4 |
+
+- gojek/feast
+
+| # | login | activity | issue_comment | open_issue | open_pull | pull_review_comment | merge_pull | pull_commits | pull_additions | pull_deletions |
+|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
+| 1 | zhilingc | 1451 |  224 | 12 | 66 | 175 | 61 | 181 | 40904 | 14655 |
+| 2 | khorshuheng | 1125 |  216 | 4 | 82 | 65 | 79 | 151 | 21951 | 15243 |
+| 3 | ches | 820 |  230 | 11 | 28 | 86 | 28 | 51 | 4687 | 2553 |
+| 4 | davidheryanto | 511 |  97 | 2 | 29 | 47 | 27 | 83 | 6826 | 5117 |
+| 5 | imjuanleonard | 221 |  36 | 8 | 6 | 34 | 3 | 28 | 453 | 142 |
+| 6 | Yanson | 126 |  53 | 1 | 8 | 3 | 7 | 11 | 1135 | 368 |
+| 7 | lavkesh | 90 |  6 | 0 | 3 | 15 | 3 | 23 | 2596 | 215 |
+| 8 | Joostrothweiler | 74 |  16 | 0 | 6 | 5 | 4 | 10 | 248 | 28 |
+| 9 | suwik | 46 |  2 | 0 | 1 | 9 | 1 | 1 | 3 | 13 |
+| 10 | Jeffwan | 45 |  13 | 2 | 1 | 5 | 1 | 1 | 66 | 37 |
+| 11 | ashwinath | 43 |  4 | 1 | 3 | 2 | 4 | 11 | 156 | 30 |
+| 12 | lgvital | 40 |  23 | 3 | 2 | 0 | 1 | 1 | 105 | 41 |
+| 13 | gracechristina | 28 |  1 | 0 | 1 | 6 | 0 | 0 | 0 | 0 |
+| 14 | heysachin | 27 |  5 | 0 | 4 | 0 | 2 | 3 | 6 | 5 |
+| 15 | pmjacinto | 20 |  3 | 7 | 1 | 0 | 0 | 0 | 0 | 0 |
+| 16 | junhui096 | 18 |  1 | 0 | 4 | 0 | 1 | 4 | 42 | 24 |
+| 17 | avolution | 16 |  5 | 4 | 1 | 0 | 0 | 0 | 0 | 0 |
+| 18 | idahoakl | 15 |  11 | 2 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 19 | ricgu8086 | 12 |  1 | 0 | 1 | 2 | 0 | 0 | 0 | 0 |
+| 20 | pradithya | 11 |  3 | 0 | 0 | 2 | 0 | 0 | 0 | 0 |
+
+- Trusted-AI/AIX360
+
+| # | login | activity | issue_comment | open_issue | open_pull | pull_review_comment | merge_pull | pull_commits | pull_additions | pull_deletions |
+|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
+| 1 | gaborpelesz | 20 |  6 | 3 | 1 | 0 | 1 | 1 | 1 | 1 |
+
+- IBM/AIX360
+
+| # | login | activity | issue_comment | open_issue | open_pull | pull_review_comment | merge_pull | pull_commits | pull_additions | pull_deletions |
+|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
+| 1 | vijay-arya | 80 |  8 | 0 | 9 | 0 | 9 | 26 | 8765 | 9674 |
+| 2 | floidgilbert | 40 |  9 | 2 | 4 | 0 | 3 | 6 | 2441 | 8 |
+| 3 | dennislwei | 38 |  22 | 0 | 2 | 0 | 2 | 4 | 4 | 10 |
+| 4 | sadhamanus | 29 |  21 | 0 | 1 | 0 | 1 | 5 | 3 | 0 |
+| 5 | dependabot[bot] | 24 |  6 | 0 | 6 | 0 | 0 | 0 | 0 | 0 |
+| 6 | rahulnair23 | 24 |  2 | 3 | 2 | 0 | 2 | 2 | 2 | 2 |
+| 7 | firmai | 21 |  9 | 6 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 8 | monindersingh | 11 |  1 | 1 | 1 | 0 | 1 | 1 | 2 | 2 |
+
+- Trusted-AI/AIF360
+
+| # | login | activity | issue_comment | open_issue | open_pull | pull_review_comment | merge_pull | pull_commits | pull_additions | pull_deletions |
+|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
+| 1 | gdequeiroz | 39 |  3 | 0 | 4 | 1 | 4 | 5 | 163 | 12 |
+| 2 | leenamurgai | 19 |  4 | 0 | 2 | 1 | 1 | 1 | 4 | 4 |
+
+- ForestFlow/ForestFlow
+
+| # | login | activity | issue_comment | open_issue | open_pull | pull_review_comment | merge_pull | pull_commits | pull_additions | pull_deletions |
+|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
+| 1 | aalkilani | 236 |  3 | 3 | 20 | 18 | 19 | 119 | 4366 | 3177 |
+
+- amundsen-io/amundsen
+
+| # | login | activity | issue_comment | open_issue | open_pull | pull_review_comment | merge_pull | pull_commits | pull_additions | pull_deletions |
+|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
+| 1 | dependabot-preview[bot] | 1552 |  3 | 1 | 194 | 0 | 193 | 193 | 193 | 193 |
+| 2 | Golodhros | 335 |  40 | 14 | 14 | 45 | 9 | 15 | 393 | 210 |
+| 3 | markgrover | 137 |  12 | 1 | 10 | 12 | 9 | 9 | 56 | 35 |
+| 4 | dorianj | 78 |  37 | 3 | 3 | 4 | 2 | 4 | 16 | 2 |
+| 5 | pPanda-beta | 48 |  25 | 8 | 1 | 1 | 0 | 0 | 0 | 0 |
+| 6 | verdan | 27 |  21 | 3 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 7 | allcontributors[bot] | 27 |  7 | 0 | 5 | 0 | 1 | 11 | 40 | 1 |
+| 8 | AustinBGibbons | 26 |  12 | 3 | 1 | 0 | 1 | 1 | 1 | 1 |
+| 9 | instazackwu | 25 |  5 | 2 | 2 | 0 | 2 | 4 | 13 | 1 |
+| 10 | higee | 21 |  2 | 0 | 2 | 2 | 1 | 2 | 1 | 0 |
+| 11 | madison-ookla | 20 |  6 | 1 | 1 | 1 | 1 | 1 | 7 | 4 |
+| 12 | lexisantoro | 18 |  1 | 0 | 4 | 0 | 1 | 1 | 1 | 0 |
+| 13 | sterlins | 17 |  3 | 1 | 1 | 1 | 1 | 1 | 2 | 2 |
+| 14 | NiravLangaliya | 16 |  8 | 4 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 15 | Wonong | 15 |  3 | 2 | 1 | 0 | 1 | 1 | 1 | 1 |
+| 16 | allisonsuarez | 15 |  3 | 2 | 1 | 0 | 1 | 1 | 61 | 0 |
+
+- ludwig-ai/ludwig
+
+| # | login | activity | issue_comment | open_issue | open_pull | pull_review_comment | merge_pull | pull_commits | pull_additions | pull_deletions |
+|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
+| 1 | modernlearner | 11 |  1 | 1 | 1 | 0 | 1 | 3 | 11 | 0 |
+
+- elasticdeeplearning/edl
+
+| # | login | activity | issue_comment | open_issue | open_pull | pull_review_comment | merge_pull | pull_commits | pull_additions | pull_deletions |
+|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
+| 1 | wangxicoding | 281 |  1 | 2 | 29 | 16 | 25 | 85 | 6355 | 21905 |
+
+- nnsuite/nnstreamer
+
+| # | login | activity | issue_comment | open_issue | open_pull | pull_review_comment | merge_pull | pull_commits | pull_additions | pull_deletions |
+|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
+| 1 | ajarthurs | 13 |  3 | 1 | 1 | 0 | 1 | 1 | 1 | 0 |
+
+
+### 工作时间分布
+
+我们统计了 LF AI & Data 项目仓库的工作时间情况，为每个仓库绘制而成的图表如下。
+
+
+- milvus-io/milvus
+
+<embed src="http://gar2020.opensource-service.cn/svgrenderer/github/X-lab2017/github-analysis-report?path=sqls/working-hour-distribution/image.svg&data=[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,null,0,0,0,0,0,0,0,0,0,0,0]&lang=en" style="width:600" />
+
+- odpi/OpenDS4All
+
+<embed src="http://gar2020.opensource-service.cn/svgrenderer/github/X-lab2017/github-analysis-report?path=sqls/working-hour-distribution/image.svg&data=[1,0,0,1,0,0,0,1,1,1,1,2,1,2,9,1,4,4,4,3,1,1,3,1,0,0,1,0,1,1,0,0,1,2,1,2,3,2,2,4,2,4,2,1,1,1,3,1,1,2,0,1,1,1,1,1,1,1,0,0,1,2,5,5,6,1,2,2,2,1,3,0,1,0,1,1,0,1,1,1,1,1,1,1,2,4,4,3,4,3,5,6,1,1,1,1,0,1,0,1,0,0,0,0,0,0,1,1,0,2,2,2,3,9,6,6,10,6,2,1,1,1,1,1,1,1,0,1,0,1,0,1,1,1,0,1,1,0,1,1,1,1,0,0,1,0,1,0,0,1,1,0,0,0,0,1,0,0,1,0,1,0,1,0,1,0,1,0]&lang=en" style="width:600" />
+
+- Trusted-AI/AIF360
+
+<embed src="http://gar2020.opensource-service.cn/svgrenderer/github/X-lab2017/github-analysis-report?path=sqls/working-hour-distribution/image.svg&data=[2,1,2,1,2,3,1,2,2,4,2,1,3,1,5,4,3,2,2,2,6,4,4,5,3,1,1,2,1,2,2,2,1,2,1,2,4,5,5,2,6,3,4,4,4,4,7,3,2,1,3,2,3,1,1,2,1,2,2,1,2,4,5,4,1,3,7,5,10,4,5,2,3,2,4,1,1,1,1,2,2,1,2,1,3,4,6,6,3,1,4,6,4,5,2,1,0,2,2,2,2,1,1,1,1,3,2,2,1,1,1,4,6,4,7,4,2,2,2,2,1,1,1,1,1,0,1,1,1,1,2,1,1,2,1,1,4,1,1,1,0,2,1,1,1,1,1,2,1,0,1,1,1,1,1,1,1,1,2,1,2,0,2,2,1,1,1,1]&lang=en" style="width:600" />
+
+- sparklyr/sparklyr
+
+<embed src="http://gar2020.opensource-service.cn/svgrenderer/github/X-lab2017/github-analysis-report?path=sqls/working-hour-distribution/image.svg&data=[1,0,1,1,1,1,1,1,1,1,3,4,3,7,5,5,9,6,6,5,5,4,5,2,1,0,1,1,1,1,1,2,2,1,2,5,6,6,9,8,7,10,9,4,4,3,3,3,2,2,1,1,1,2,1,1,1,1,3,3,4,3,5,9,10,7,8,5,3,3,3,3,3,3,2,3,1,1,1,2,2,2,3,4,8,6,5,4,6,8,8,5,4,4,3,3,2,1,3,1,1,1,1,1,1,1,4,4,5,2,4,5,5,3,6,5,4,3,3,3,4,3,1,1,1,1,1,0,1,0,1,0,0,0,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1]&lang=en" style="width:600" />
+
+- IBM/adversarial-robustness-toolbox
+
+<embed src="http://gar2020.opensource-service.cn/svgrenderer/github/X-lab2017/github-analysis-report?path=sqls/working-hour-distribution/image.svg&data=[1,1,1,1,1,1,1,1,1,1,2,4,5,7,3,2,4,4,3,3,10,5,3,7,5,3,1,1,1,1,1,1,1,2,2,6,10,9,8,5,3,3,3,5,4,4,7,5,4,3,1,1,1,1,1,1,1,1,4,4,4,6,6,4,4,4,2,3,5,4,4,3,4,2,2,1,1,2,1,1,1,2,4,4,7,9,5,7,6,3,3,4,5,6,4,5,3,2,1,1,1,2,1,1,2,2,5,3,6,5,5,5,3,3,3,4,5,4,3,2,2,3,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,1,1,2,1,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,1,1,1,1,2,2,2,2]&lang=en" style="width:600" />
+
+- MarquezProject/marquez
+
+<embed src="http://gar2020.opensource-service.cn/svgrenderer/github/X-lab2017/github-analysis-report?path=sqls/working-hour-distribution/image.svg&data=[1,1,0,1,1,2,2,1,1,1,1,0,1,1,2,2,2,2,5,2,2,3,3,10,2,4,2,1,4,1,3,2,2,1,1,1,1,1,2,1,2,1,3,5,2,1,2,3,4,1,2,1,2,1,2,1,1,1,1,1,1,1,1,2,0,1,4,3,4,6,3,3,1,1,1,1,3,2,6,1,1,1,1,1,1,1,1,2,2,2,2,2,4,4,4,2,7,2,1,2,1,2,2,5,2,1,2,0,0,1,1,1,1,3,3,5,2,1,1,2,2,1,1,1,1,2,1,2,1,1,1,0,0,1,1,0,1,2,3,5,6,4,1,1,0,1,5,2,2,2,1,1,1,1,1,1,0,1,1,1,2,3,6,2,1,1,1,1]&lang=en" style="width:600" />
+
+- Angel-ML/angel
+
+<embed src="http://gar2020.opensource-service.cn/svgrenderer/github/X-lab2017/github-analysis-report?path=sqls/working-hour-distribution/image.svg&data=[0,2,5,6,1,4,9,7,7,2,1,10,4,2,2,3,2,1,1,1,1,0,1,1,1,3,6,3,2,3,4,7,2,4,3,2,5,4,5,2,2,1,1,1,1,0,0,0,1,4,5,5,2,1,4,9,4,7,4,5,4,3,5,2,1,2,1,1,0,1,1,0,1,5,5,4,3,2,4,7,5,2,2,1,6,1,1,1,1,1,1,0,0,1,0,1,0,2,4,4,1,2,4,4,4,5,3,3,3,3,1,3,2,0,0,1,1,1,1,0,1,1,3,1,1,1,2,4,2,1,2,1,2,2,1,1,1,1,1,0,1,1,0,0,0,2,2,2,7,2,1,2,6,6,4,2,3,4,2,4,2,0,0,1,0,1,1,1]&lang=en" style="width:600" />
+
+- milvus-io/milvus
+
+<embed src="http://gar2020.opensource-service.cn/svgrenderer/github/X-lab2017/github-analysis-report?path=sqls/working-hour-distribution/image.svg&data=[1,5,9,8,3,2,7,9,8,8,6,4,5,3,3,3,2,1,1,1,1,1,1,1,1,5,10,10,4,3,9,8,8,9,7,7,4,3,3,2,2,1,1,1,1,1,1,1,1,5,9,7,4,3,8,8,9,8,9,5,5,3,2,2,2,1,1,1,1,1,1,1,1,6,9,8,4,4,10,8,8,9,7,6,4,4,3,3,2,1,1,1,1,1,1,1,1,5,9,9,4,3,9,8,9,8,5,6,5,4,3,2,1,1,1,1,1,1,1,1,1,4,9,7,4,4,6,7,6,6,4,5,4,3,3,2,2,1,1,1,1,1,1,1,1,1,2,3,2,2,4,3,2,2,1,2,0,1,2,1,1,1,1,1,1,1,1,1]&lang=en" style="width:600" />
+
+- acumos/documentation
+
+<embed src="http://gar2020.opensource-service.cn/svgrenderer/github/X-lab2017/github-analysis-report?path=sqls/working-hour-distribution/image.svg&data=[0,0,0,0,1,1,2,2,1,2,2,1,4,5,5,4,9,5,2,1,2,1,1,0,0,0,1,0,1,1,1,3,2,1,3,1,6,6,10,4,2,1,2,3,2,2,1,1,0,1,0,0,0,0,1,4,1,1,1,3,2,5,4,5,3,3,2,3,2,1,0,1,1,1,0,0,0,1,2,2,2,5,4,3,5,7,7,7,5,1,2,2,1,2,1,0,0,1,0,1,2,2,3,3,2,4,3,5,8,8,10,7,5,5,2,1,1,2,2,1,1,1,1,0,0,0,0,0,0,0,0,0,0,1,1,1,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,1,0,0,0,0]&lang=en" style="width:600" />
+
+- feast-dev/feast
+
+<embed src="http://gar2020.opensource-service.cn/svgrenderer/github/X-lab2017/github-analysis-report?path=sqls/working-hour-distribution/image.svg&data=[1,6,8,8,8,7,9,9,9,8,8,5,4,6,5,3,3,2,1,2,1,1,1,2,2,5,9,10,8,7,7,10,9,9,7,5,3,4,4,3,3,2,2,1,1,1,1,2,2,4,8,5,8,6,9,9,9,7,7,5,3,6,4,3,2,2,2,2,1,1,1,2,3,5,6,9,7,9,9,8,7,9,6,4,3,4,3,2,3,2,2,2,2,2,2,1,3,7,6,6,5,8,9,10,10,5,4,3,2,2,4,1,2,1,1,1,1,1,1,1,1,2,2,4,3,3,4,4,4,3,3,3,2,1,2,1,2,1,1,1,1,1,1,1,1,2,3,3,4,2,3,4,2,2,3,2,1,2,2,2,3,1,1,1,1,1,1,1]&lang=en" style="width:600" />
+
+- uber/ludwig
+
+<embed src="http://gar2020.opensource-service.cn/svgrenderer/github/X-lab2017/github-analysis-report?path=sqls/working-hour-distribution/image.svg&data=[4,6,4,3,3,3,2,2,2,2,1,2,2,2,2,2,2,2,4,3,4,5,4,6,7,6,4,4,2,1,3,2,2,2,2,2,2,1,2,1,2,2,2,4,3,5,4,5,8,7,5,5,5,1,2,2,2,1,2,2,2,2,2,3,3,3,4,4,6,4,4,4,6,10,6,5,3,1,2,3,1,2,1,1,2,3,2,2,2,3,2,4,4,5,6,5,6,10,7,4,3,2,3,3,2,2,2,1,2,2,1,3,2,1,2,2,5,4,3,6,6,5,4,3,2,3,2,2,2,1,1,1,2,1,2,3,2,2,6,6,5,5,5,6,6,6,5,4,3,3,2,2,2,1,2,1,2,1,1,2,2,2,3,4,4,4,5,4]&lang=en" style="width:600" />
+
+- nnstreamer/nnstreamer
+
+<embed src="http://gar2020.opensource-service.cn/svgrenderer/github/X-lab2017/github-analysis-report?path=sqls/working-hour-distribution/image.svg&data=[1,2,5,4,7,6,6,9,8,6,10,6,2,2,1,1,1,1,1,1,1,1,1,1,3,4,9,6,6,4,5,8,7,6,10,6,3,1,2,1,1,1,1,1,1,1,1,1,2,5,8,5,7,8,8,9,8,5,9,5,3,2,2,1,1,1,1,1,0,0,0,1,2,5,8,7,7,10,9,10,7,5,7,6,3,1,2,1,1,1,1,1,1,1,1,1,2,7,8,4,8,10,10,9,6,4,4,4,3,2,1,1,1,1,0,1,1,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]&lang=en" style="width:600" />
+
+- onnx/onnx
+
+<embed src="http://gar2020.opensource-service.cn/svgrenderer/github/X-lab2017/github-analysis-report?path=sqls/working-hour-distribution/image.svg&data=[2,4,4,3,3,3,3,3,4,3,3,2,2,2,3,3,7,5,5,4,4,7,6,6,6,6,6,4,4,4,4,4,3,4,3,2,3,3,3,5,9,7,8,6,4,8,7,6,10,5,5,4,4,3,5,5,5,5,3,2,4,3,3,4,8,7,9,8,5,6,8,5,4,7,4,6,3,3,6,5,5,7,2,2,2,4,3,4,5,6,8,7,6,5,5,7,6,7,4,4,2,3,3,4,5,4,3,3,3,3,3,3,4,6,6,5,6,5,5,4,5,4,4,3,1,2,2,2,1,1,1,1,2,1,1,1,1,2,2,1,1,1,1,1,2,2,1,1,1,1,1,2,2,1,2,2,2,2,1,2,2,1,1,1,1,2,2,1]&lang=en" style="width:600" />
+
+- elasticdeeplearning/edl
+
+<embed src="http://gar2020.opensource-service.cn/svgrenderer/github/X-lab2017/github-analysis-report?path=sqls/working-hour-distribution/image.svg&data=[1,1,5,4,1,3,2,3,3,2,1,0,1,1,1,0,0,0,0,0,0,0,0,1,1,1,10,3,0,2,4,2,3,3,1,3,2,1,0,1,2,0,0,0,1,0,0,0,1,2,5,3,1,1,3,4,4,2,3,5,2,1,2,1,1,0,0,0,0,1,0,2,0,3,3,6,1,1,5,3,2,1,3,5,2,1,1,1,0,0,0,0,0,1,0,0,1,1,4,2,1,1,2,5,2,1,2,2,1,0,0,1,1,0,0,0,1,0,1,1,0,0,0,0,2,1,1,1,1,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,2,1,1,0,1,1,2,10,1,1,0,1,1,4,0,0,1,0,1,0,0,1]&lang=en" style="width:600" />
+
+- lyft/amundsen
+
+<embed src="http://gar2020.opensource-service.cn/svgrenderer/github/X-lab2017/github-analysis-report?path=sqls/working-hour-distribution/image.svg&data=[1,1,1,1,1,1,1,1,1,1,1,1,1,8,1,1,10,3,2,1,2,2,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,1,1,2,2,2,1,1,1,1,1,2,1,1,1,1,1,1,1,1,1,1,1,1,3,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,1,1,1,2,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,1,1,1,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]&lang=en" style="width:600" />
+
+- odpi/egeria
+
+<embed src="http://gar2020.opensource-service.cn/svgrenderer/github/X-lab2017/github-analysis-report?path=sqls/working-hour-distribution/image.svg&data=[5,1,0,0,1,1,1,5,9,9,10,8,6,6,6,7,5,3,3,1,2,2,2,1,4,1,1,1,1,5,3,4,8,8,6,5,6,5,7,6,6,6,4,3,3,3,2,2,6,1,1,1,1,1,2,5,8,10,7,7,6,4,5,4,4,3,3,2,1,2,1,1,5,1,1,1,1,1,2,5,8,9,9,6,6,6,7,7,4,3,2,2,2,2,1,1,3,1,1,1,1,1,2,3,8,9,7,6,8,7,7,7,5,4,4,2,2,1,1,1,8,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,6,1,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]&lang=en" style="width:600" />
+
+- horovod/horovod
+
+<embed src="http://gar2020.opensource-service.cn/svgrenderer/github/X-lab2017/github-analysis-report?path=sqls/working-hour-distribution/image.svg&data=[2,2,3,3,1,2,2,3,3,3,2,2,3,3,2,5,5,6,6,6,6,5,5,5,4,4,4,4,2,2,3,4,4,4,2,2,3,4,4,4,6,6,4,5,6,4,6,4,4,3,5,4,2,2,4,4,4,3,3,2,3,5,5,6,6,6,8,6,7,8,4,5,4,4,5,4,2,3,4,3,4,5,3,3,3,5,3,5,6,8,8,9,8,6,5,6,5,5,5,4,2,3,6,4,4,4,3,3,3,3,3,5,10,10,8,6,6,7,8,6,3,5,6,5,4,3,3,5,5,3,3,3,1,2,2,2,3,2,1,1,1,1,1,1,1,1,1,2,1,1,1,1,1,2,1,1,1,1,1,1,2,2,2,2,1,1,1,1]&lang=en" style="width:600" />
+
+- Adlik/Adlik
+
+<embed src="http://gar2020.opensource-service.cn/svgrenderer/github/X-lab2017/github-analysis-report?path=sqls/working-hour-distribution/image.svg&data=[2,5,4,2,2,1,6,6,6,5,1,3,3,1,1,1,2,0,0,2,0,0,1,1,2,5,7,4,3,3,6,6,9,6,1,4,4,2,2,3,1,1,1,1,1,0,2,1,3,5,8,3,2,4,7,4,4,5,3,2,2,1,1,0,0,1,0,0,1,0,1,1,3,5,5,10,2,1,10,8,5,8,4,3,3,2,3,2,1,0,1,1,1,0,1,1,3,6,4,3,3,4,5,5,9,6,5,2,1,2,1,1,1,1,1,1,0,1,1,1,1,2,4,2,1,1,2,2,2,1,1,0,2,0,0,1,0,0,0,0,0,0,0,0,1,0,0,1,0,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,1]&lang=en" style="width:600" />
+
+- soajs/soajs
+
+<embed src="http://gar2020.opensource-service.cn/svgrenderer/github/X-lab2017/github-analysis-report?path=sqls/working-hour-distribution/image.svg&data=[3,0,0,0,0,0,0,0,0,0,0,0,0,8,1,4,0,0,0,1,0,1,4,3,2,0,2,0,0,0,0,0,0,1,0,0,0,0,0,3,8,5,0,0,2,6,6,0,1,1,2,2,0,0,0,0,0,0,0,0,4,0,3,3,2,3,4,5,1,5,0,2,2,0,0,0,0,0,0,0,0,3,5,0,3,5,1,1,1,0,5,0,0,0,0,0,0,4,3,0,0,0,0,0,0,0,0,0,1,0,2,2,3,10,2,4,3,5,1,3,1,1,0,0,0,0,0,0,0,0,0,0,0,4,1,3,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,0,1,0,0,3]&lang=en" style="width:600" />
+
+- IBM/AIX360
+
+<embed src="http://gar2020.opensource-service.cn/svgrenderer/github/X-lab2017/github-analysis-report?path=sqls/working-hour-distribution/image.svg&data=[1,1,1,1,1,2,1,2,1,1,1,2,2,3,2,5,4,1,2,4,2,1,2,3,1,2,9,2,2,3,5,2,5,1,1,1,2,1,1,6,10,2,5,4,2,1,6,5,5,1,1,1,1,3,2,2,2,4,0,5,2,3,5,2,7,3,1,2,2,0,2,1,2,4,0,1,1,1,1,2,1,1,2,2,1,4,2,2,2,3,3,4,3,1,1,2,2,1,2,3,1,1,2,2,1,3,1,2,1,1,5,2,7,2,4,4,0,2,1,5,1,1,3,1,0,1,1,1,1,1,1,1,1,1,0,2,1,0,1,2,2,1,0,1,1,0,2,2,1,0,1,1,1,2,2,2,1,0,2,2,1,1,0,1,1,2,1,1]&lang=en" style="width:600" />
+
+- didi/delta
+
+<embed src="http://gar2020.opensource-service.cn/svgrenderer/github/X-lab2017/github-analysis-report?path=sqls/working-hour-distribution/image.svg&data=[0,1,4,3,1,5,9,4,7,5,1,3,4,2,3,3,1,1,1,1,1,1,1,1,1,4,4,3,3,5,4,7,7,5,4,3,2,3,1,1,1,0,0,1,0,0,1,1,1,2,2,1,2,2,5,5,1,2,2,2,2,2,2,1,2,0,1,1,0,1,1,0,1,1,3,5,2,5,7,2,10,9,9,2,6,3,2,1,1,2,1,1,0,1,1,1,2,1,2,7,3,3,2,6,5,5,1,2,2,2,0,2,1,1,0,0,0,0,0,0,0,1,2,3,1,1,2,1,0,1,1,1,0,1,0,0,1,2,1,0,0,1,0,1,1,3,1,0,1,1,2,2,1,1,1,0,2,1,1,2,1,0,0,1,0,1,0,0]&lang=en" style="width:600" />
+
+- pyro-ppl/pyro
+
+<embed src="http://gar2020.opensource-service.cn/svgrenderer/github/X-lab2017/github-analysis-report?path=sqls/working-hour-distribution/image.svg&data=[2,2,3,3,2,2,2,2,1,1,1,1,2,2,3,3,5,5,5,5,4,5,4,5,5,10,3,3,3,2,2,1,1,1,1,1,2,2,2,3,4,6,4,6,5,5,5,5,7,5,3,2,4,2,2,1,1,1,1,1,2,4,3,2,4,5,3,5,6,5,5,5,4,4,3,3,4,4,3,2,1,1,1,1,1,2,3,4,5,5,5,5,5,5,5,6,4,3,2,2,3,2,2,1,1,1,1,1,1,2,2,5,6,7,5,4,6,4,3,2,3,2,3,2,1,2,1,1,1,1,1,1,1,1,2,3,2,2,3,3,2,2,2,4,3,3,2,1,2,1,1,1,1,1,1,1,1,1,1,2,1,5,3,3,2,3,1,3]&lang=en" style="width:600" />
+
+- ForestFlow/ForestFlow
+
+<embed src="http://gar2020.opensource-service.cn/svgrenderer/github/X-lab2017/github-analysis-report?path=sqls/working-hour-distribution/image.svg&data=[0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,2,4,1,10,0,2,0,0,1,1,0,1,0,0,0,0,0,0,1,0,0,1,0,1,1,1,0,0,1,3,4,0,0,0,0,0,1,1,0,0,2,1,1,0,0,0,0,1,3,2,1,2,2,1,6,0,1,6,1,0,1,0,0,0,0,0,1,1,1,1,0,1,4,1,0,0,0,1,2,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,1,0,0,0,1,1,1,1,0,0,1,1,4,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,1,0,0,0,0]&lang=en" style="width:600" />
+
+- JanusGraph/janusgraph
+
+<embed src="http://gar2020.opensource-service.cn/svgrenderer/github/X-lab2017/github-analysis-report?path=sqls/working-hour-distribution/image.svg&data=[1,2,2,2,2,4,6,7,7,7,3,10,8,7,5,6,5,4,3,5,4,5,4,1,4,2,2,2,2,4,9,8,5,4,2,7,4,6,5,5,5,1,4,2,3,6,3,1,3,2,5,4,2,3,5,5,5,6,3,6,4,4,3,5,5,2,2,2,5,5,5,2,3,2,2,3,3,3,7,5,6,3,3,6,4,7,7,5,3,3,4,3,3,5,2,1,7,3,2,1,1,3,3,3,7,4,5,5,5,5,4,3,5,3,3,3,2,3,3,1,2,1,2,2,3,2,2,2,1,3,4,2,2,2,2,2,2,2,1,2,1,2,1,1,1,1,2,2,1,1,3,2,1,2,2,3,2,2,2,1,2,2,3,3,2,1,1,1]&lang=en" style="width:600" />
+
+- datadotworld/data-practices-site
+
+<embed src="http://gar2020.opensource-service.cn/svgrenderer/github/X-lab2017/github-analysis-report?path=sqls/working-hour-distribution/image.svg&data=[0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,3,0,10,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,1,4,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,1,0,0,4,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0]&lang=en" style="width:600" />
+

@@ -1,5 +1,6 @@
 - [报告](/report.md)
 - 案例分析
+  - [ASF](/zh-cn/case-study/ASF.md)
   - [CNCF](/zh-cn/case-study/CNCF.md)
   - [LF AI & Data](/zh-cn/case-study/LFAI.md)
   - [Wuhan2020](/zh-cn/case-study/Wuhan2020.md)
