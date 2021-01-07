@@ -45,7 +45,7 @@ We also calculate the top {{sqls.top-developer-by-repo.config.topN}} developers 
 
 ## Working Hour Distribution
 
-We analyze the working hour distribution for GitHub logs all over the world during year {{year}}, and here are the results of our working hour distribution research for every repo.
+We analyze the working hour distribution for ASF during year {{year}}, and here are the results of our working hour distribution research for every repo.
 
 {{sqls.working-hour-distribution.text}}
 
