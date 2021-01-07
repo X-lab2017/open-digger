@@ -2,28 +2,30 @@ module.exports = async function(data, config) {
   if (!Array.isArray(data)) {
     throw new Error('Invalid data');
   }
-  var res = "";
-  var preURL="<embed src=\""+`${config.baseUrl}svgrenderer/github/${config.owner}/${config.repo}?path=sqls/working-hour-distribution/image.svg`;
+  var res = '';
+  var preURL = `<embed src="${config.baseUrl}svgrenderer/github/${config.owner}/${config.repo}?path=sqls/working-hour-distribution/image.svg`;
   var map = {},dest = [];
-  var cnt = 1;
-  for(var i=0;i<data.length;i++){
+  var cnt = 0;
+  for(var i = 0; i < data.length; i++) {
     var a = data[i];
-    if(!map[a.id]){
+    if (!map[a.id]) {
       dest.push({
-        id:a.id,
-        d:[a]
+        id: a.id,
+        name: a.name,
+        d: [a],
       });
-      map[a.id]=cnt;
+      map[a.id] = cnt;
       cnt++;
-    }else{
-      dest[map[a.id]-1].d.push(a);
+    } else {
+      dest[map[a.id]].d.push(a);
     }
   }
-  for(var i=0;i<dest.length;i++){
-    res+=preURL;
+
+  for(var k = 0; k < dest.length; k++){
     var min = Number.MAX_VALUE;
     var max = Number.MIN_VALUE;
-    var data = dest[i].d;
+    var data = dest[k].d;
+    res += `- ${dest[k].name}\n${preURL}`;
     data.forEach(i => {
       i.count = parseInt(i.count);
       if (i.count > max) max = i.count;
@@ -43,7 +45,7 @@ module.exports = async function(data, config) {
         }
       }
     }
-    res+="&data="+`${JSON.stringify(d)}`+"&lang=en\" style=\"width:600\" />\n";
+    res += `&data=${JSON.stringify(d)}&lang=en" style="width:600" />\n`;
   }
 
   return res;
