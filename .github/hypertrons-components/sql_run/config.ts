@@ -38,6 +38,12 @@ export default class Config {
   sqlFileRegex: string;
 
   @configProp({
+    description: 'Regex to find pre processor file',
+    defaultValue: defaultConfig.preProcessFileRegex,
+  })
+  preProcessFileRegex: string;
+
+  @configProp({
     description: 'Regex to find post processor file',
     defaultValue: defaultConfig.postProcessFileRegex,
   })

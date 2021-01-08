@@ -44,6 +44,7 @@ on('CommandEvent', function (e)
         
         setField(compConfig.sqlFileRegex, 'sql')
         setField(compConfig.manifestFileRegex, 'manifest')
+        setField(compConfig.preProcessFileRegex, 'preProcessor')
         setField(compConfig.postProcessFileRegex, 'postProcessor')
       end
       -- if no sqls in PR, just return
@@ -62,12 +63,20 @@ on('CommandEvent', function (e)
         if (v.postProcessor == nil) then
           v.postProcessor = getFileContent('sqls/'..k..'/post-processor.js').content
         end
+        if (v.preProcessor == nil) then
+          v.preProcessor = getFileContent('sqls/'..k..'/pre-processor.js')
+        end
       end
 
       -- Render comment and add comment
       local comment = '';
       for k, v in pairs(sqls) do
-        local sql = rendStr(v.sql, string2table(v.manifest).config, compConfig.defaultRenderParams)
+        local manifestConfig = string2table(v.manifest).config
+        local preProcessorResult = {}
+        if (v.preProcessor ~= nil) then
+          preProcessorResult = runJsCode(v.preProcessor.content, manifestConfig)
+        end
+        local sql = rendStr(v.sql, manifestConfig, compConfig.defaultRenderParams, preProcessorResult)
         local requestRes = requestUrl({
           ['url'] = compConfig.sqlRequestUrl,
           ['method'] = 'POST',
@@ -75,7 +84,7 @@ on('CommandEvent', function (e)
             ['query'] = sql
           }
         })
-        local text = runJsCode(v.postProcessor, string2table(requestRes).data, compConfig.defaultRenderParams)
+        local text = runJsCode(v.postProcessor, string2table(requestRes).data, compConfig.defaultRenderParams, manifestConfig)
         log('Sql run done for '..k)
         comment = comment..rendStr(compConfig.commentItemTemplate, {
           ['text'] = text,

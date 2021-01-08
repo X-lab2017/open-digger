@@ -19,6 +19,7 @@ const defaultConfig: Config = {
   command: '/sql-run',
   sqlFileRegex: 'sqls/([%w|-]+)/sql',
   manifestFileRegex: 'sqls/([%w|-]+)/manifest%.json',
+  preProcessFileRegex: 'sqls/([%w|-]+)/pre%-processor%.js',
   postProcessFileRegex: 'sqls/([%w|-]+)/post%-processor%.js',
   defaultRenderParams: {
     year: 2020,
