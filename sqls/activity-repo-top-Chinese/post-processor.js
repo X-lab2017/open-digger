@@ -1,5 +1,5 @@
 module.exports = async function(data, params, config) {
-  let top_repo = '| # | name | language | activity | developer_count | issue_comment | open_issue | open_pull | pull_review_comment | merge_pull | pull_commits | pull_additions | pull_deletions |\n';
+  let top_repo = '| # | name | language | activeness | developer_count | issue_comment | open_issue | open_pull | pull_review_comment | merge_pull | pull_commits | pull_additions | pull_deletions |\n';
   top_repo += '|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|\n';
   let org_id_company_map = new Map();
   let repo_id_company_map = new Map();
@@ -19,6 +19,8 @@ module.exports = async function(data, params, config) {
     //repo fields
     let info=[
       item.repo_activity,
+      1,
+      parseInt(item.developer_count),
       parseInt(item.issue_comment),
       parseInt(item.open_issue),
       parseInt(item.open_pull),
@@ -55,8 +57,8 @@ module.exports = async function(data, params, config) {
     return b[1] - a[1];
   });
   //top company string
-  let top_company = '| # | name | activity | issue_comment | open_issue | open_pull | pull_review_comment | merge_pull | pull_commits | pull_additions | pull_deletions |\n';
-  top_company += '|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|\n';
+  let top_company = '| # | name | activeness | repo_count | developer_count | issue_comment | open_issue | open_pull | pull_review_comment | merge_pull | pull_commits | pull_additions | pull_deletions |\n';
+  top_company += '|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|\n';
   company_info_list.forEach((info,index)=>{
     top_company+=`| ${index + 1} |`
     info.forEach(item=>{
