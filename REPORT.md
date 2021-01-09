@@ -157,7 +157,7 @@ We calculated the most popular languages in top 100000 repositories, the number 
 | # | repo_language | count | top_repo | activity | actor_count | 
 |:--:|:--:|:--:|:--:|:--:|:--:| 
 | 1 | JavaScript | 15415 | gatsbyjs/gatsby | 11803.74 | 543269 |
-| 2 | Python | 13569 | home-assistant/core | 22609.91 | 488034 |
+| 2 | Python | 13569 | home-assistant/home-assistant | 22609.91 | 488034 |
 | 3 | TypeScript | 10487 | microsoft/vscode | 27336.95 | 381206 |
 | 4 | Java | 6874 | elastic/elasticsearch | 7116.95 | 247752 |
 | 5 | Go | 4668 | kubernetes/kubernetes | 19878.4 | 225838 |
