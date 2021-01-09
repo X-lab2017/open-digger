@@ -163,7 +163,7 @@ We calculated the activity of LF AI & Data project repositories and the data is 
 | 4 | feast-dev/feast | Java | 751.49 | 94 | 8129 | 188 | 646 | 2377 | 558 | 2256 | 182481 | 168958 |
 | 5 | odpi/egeria | Java | 620.32 | 43 | 4528 | 711 | 1298 | 1071 | 1047 | 7746 | 743183 | 342990 |
 | 6 | nnstreamer/nnstreamer | C | 549.02 | 39 | 3984 | 239 | 765 | 2466 | 735 | 940 | 82003 | 26960 |
-| 7 | lyft/amundsen | Smarty | 502.65 | 141 | 1170 | 212 | 393 | 196 | 361 | 545 | 3801 | 1668 |
+| 7 | amundsen-io/amundsen | Smarty | 502.65 | 141 | 1170 | 212 | 393 | 196 | 361 | 545 | 3801 | 1668 |
 | 8 | JanusGraph/janusgraph | Java | 500.04 | 136 | 1231 | 121 | 244 | 970 | 183 | 187 | 22000 | 24511 |
 | 9 | uber/ludwig | Python | 459.77 | 119 | 1786 | 120 | 304 | 620 | 265 | 2139 | 73411 | 100727 |
 | 10 | IBM/adversarial-robustness-toolbox | Python | 448.39 | 87 | 884 | 205 | 309 | 1619 | 269 | 8585 | 214502 | 86926 |
@@ -196,19 +196,21 @@ We also calculate the top 20 developers data and the data is as follows.
 | 3 | taos-ci | 2865 |  2865 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 4 | dongju-chae | 1942 |  70 | 12 | 53 | 361 | 49 | 56 | 8367 | 1822 |
 | 5 | gichan-jang | 1920 |  114 | 7 | 79 | 300 | 71 | 80 | 10781 | 1681 |
-| 6 | anyj0527 | 902 |  56 | 9 | 50 | 112 | 46 | 61 | 3039 | 559 |
-| 7 | again4you | 737 |  45 | 7 | 46 | 80 | 44 | 57 | 4499 | 896 |
-| 8 | zhoonit | 320 |  15 | 5 | 7 | 61 | 6 | 8 | 413 | 354 |
-| 9 | leemgs | 233 |  20 | 2 | 10 | 36 | 7 | 7 | 1777 | 505 |
-| 10 | kbumsik | 107 |  8 | 0 | 5 | 16 | 4 | 7 | 312 | 161 |
-| 11 | jijoongmoon | 102 |  3 | 0 | 8 | 10 | 7 | 7 | 1545 | 673 |
-| 12 | tony-jinwoo-ahn | 77 |  11 | 3 | 5 | 5 | 5 | 5 | 51 | 29 |
-| 13 | junmin-kim | 42 |  12 | 5 | 2 | 1 | 2 | 2 | 11 | 6 |
-| 14 | lemmaa | 20 |  4 | 0 | 1 | 2 | 1 | 1 | 1 | 1 |
-| 15 | semun-lee | 18 |  2 | 2 | 1 | 1 | 1 | 1 | 6 | 0 |
-| 16 | suehdn | 16 |  8 | 4 | 0 | 0 | 0 | 0 | 0 | 0 |
-| 17 | chunseoklee | 15 |  5 | 1 | 1 | 0 | 1 | 1 | 1 | 1 |
-| 18 | phm0127 | 12 |  1 | 0 | 2 | 0 | 1 | 1 | 9 | 9 |
+| 6 | kparichay | 1735 |  106 | 16 | 58 | 272 | 67 | 88 | 8903 | 2301 |
+| 7 | wooksong | 1637 |  73 | 17 | 84 | 217 | 82 | 124 | 9129 | 1508 |
+| 8 | anyj0527 | 902 |  56 | 9 | 50 | 112 | 46 | 61 | 3039 | 559 |
+| 9 | again4you | 737 |  45 | 7 | 46 | 80 | 44 | 57 | 4499 | 896 |
+| 10 | helloahn | 609 |  16 | 2 | 28 | 95 | 25 | 28 | 1445 | 264 |
+| 11 | zhoonit | 320 |  15 | 5 | 7 | 61 | 6 | 8 | 413 | 354 |
+| 12 | leemgs | 233 |  20 | 2 | 10 | 36 | 7 | 7 | 1777 | 505 |
+| 13 | kbumsik | 107 |  8 | 0 | 5 | 16 | 4 | 7 | 312 | 161 |
+| 14 | jijoongmoon | 102 |  3 | 0 | 8 | 10 | 7 | 7 | 1545 | 673 |
+| 15 | tony-jinwoo-ahn | 77 |  11 | 3 | 5 | 5 | 5 | 5 | 51 | 29 |
+| 16 | junmin-kim | 42 |  12 | 5 | 2 | 1 | 2 | 2 | 11 | 6 |
+| 17 | lemmaa | 20 |  4 | 0 | 1 | 2 | 1 | 1 | 1 | 1 |
+| 18 | semun-lee | 18 |  2 | 2 | 1 | 1 | 1 | 1 | 6 | 0 |
+| 19 | suehdn | 16 |  8 | 4 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 20 | chunseoklee | 15 |  5 | 1 | 1 | 0 | 1 | 1 | 1 | 1 |
 
 - JanusGraph/janusgraph
 
@@ -385,15 +387,15 @@ We also calculate the top 20 developers data and the data is as follows.
 | 9 | jonhehir | 48 |  12 | 10 | 2 | 0 | 2 | 2 | 2 | 0 |
 | 10 | stale[bot] | 37 |  37 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 11 | rsyi | 32 |  14 | 5 | 1 | 0 | 1 | 1 | 4 | 0 |
-| 12 | ajbosco | 31 |  1 | 1 | 3 | 1 | 3 | 7 | 645 | 327 |
-| 13 | friendtocephalopods | 31 |  5 | 1 | 3 | 0 | 3 | 6 | 12 | 5 |
-| 14 | Jwan622 | 27 |  7 | 2 | 0 | 4 | 0 | 0 | 0 | 0 |
-| 15 | ibnipun10 | 23 |  8 | 2 | 2 | 0 | 1 | 1 | 1 | 1 |
-| 16 | dmateusp | 21 |  3 | 1 | 2 | 0 | 2 | 6 | 18 | 0 |
+| 12 | friendtocephalopods | 31 |  5 | 1 | 3 | 0 | 3 | 6 | 12 | 5 |
+| 13 | ajbosco | 31 |  1 | 1 | 3 | 1 | 3 | 7 | 645 | 327 |
+| 14 | verdan | 28 |  22 | 3 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 15 | Jwan622 | 27 |  7 | 2 | 0 | 4 | 0 | 0 | 0 | 0 |
+| 16 | ibnipun10 | 23 |  8 | 2 | 2 | 0 | 1 | 1 | 1 | 1 |
 | 17 | pemmasanikrishna | 21 |  1 | 0 | 2 | 1 | 2 | 2 | 12 | 1 |
-| 18 | jdavidheiser | 20 |  6 | 7 | 0 | 0 | 0 | 0 | 0 | 0 |
-| 19 | alran | 20 |  8 | 2 | 1 | 0 | 1 | 1 | 1 | 0 |
-| 20 | jacobhjkim | 19 |  4 | 0 | 2 | 1 | 1 | 2 | 3 | 3 |
+| 18 | dmateusp | 21 |  3 | 1 | 2 | 0 | 2 | 6 | 18 | 0 |
+| 19 | jdavidheiser | 20 |  6 | 7 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 20 | alran | 20 |  8 | 2 | 1 | 0 | 1 | 1 | 1 | 0 |
 
 - pyro-ppl/pyro
 
@@ -626,29 +628,20 @@ We also calculate the top 20 developers data and the data is as follows.
 
 | # | login | activity | issue_comment | open_issue | open_pull | pull_review_comment | merge_pull | pull_commits | pull_additions | pull_deletions |
 |:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
-| 1 | vijay-arya | 80 |  8 | 0 | 9 | 0 | 9 | 26 | 8765 | 9674 |
-| 2 | gaborpelesz | 20 |  6 | 3 | 1 | 0 | 1 | 1 | 1 | 1 |
-
-- nnsuite/nnstreamer
-
-| # | login | activity | issue_comment | open_issue | open_pull | pull_review_comment | merge_pull | pull_commits | pull_additions | pull_deletions |
-|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
-| 1 | kparichay | 1735 |  106 | 16 | 58 | 272 | 67 | 88 | 8903 | 2301 |
-| 2 | wooksong | 1637 |  73 | 17 | 84 | 217 | 82 | 124 | 9129 | 1508 |
-| 3 | helloahn | 609 |  16 | 2 | 28 | 95 | 25 | 28 | 1445 | 264 |
-| 4 | ajarthurs | 13 |  3 | 1 | 1 | 0 | 1 | 1 | 1 | 0 |
+| 1 | gaborpelesz | 20 |  6 | 3 | 1 | 0 | 1 | 1 | 1 | 1 |
 
 - IBM/AIX360
 
 | # | login | activity | issue_comment | open_issue | open_pull | pull_review_comment | merge_pull | pull_commits | pull_additions | pull_deletions |
 |:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
-| 1 | floidgilbert | 40 |  9 | 2 | 4 | 0 | 3 | 6 | 2441 | 8 |
-| 2 | dennislwei | 38 |  22 | 0 | 2 | 0 | 2 | 4 | 4 | 10 |
-| 3 | sadhamanus | 29 |  21 | 0 | 1 | 0 | 1 | 5 | 3 | 0 |
-| 4 | dependabot[bot] | 24 |  6 | 0 | 6 | 0 | 0 | 0 | 0 | 0 |
-| 5 | rahulnair23 | 24 |  2 | 3 | 2 | 0 | 2 | 2 | 2 | 2 |
-| 6 | firmai | 21 |  9 | 6 | 0 | 0 | 0 | 0 | 0 | 0 |
-| 7 | monindersingh | 11 |  1 | 1 | 1 | 0 | 1 | 1 | 2 | 2 |
+| 1 | vijay-arya | 80 |  8 | 0 | 9 | 0 | 9 | 26 | 8765 | 9674 |
+| 2 | floidgilbert | 40 |  9 | 2 | 4 | 0 | 3 | 6 | 2441 | 8 |
+| 3 | dennislwei | 38 |  22 | 0 | 2 | 0 | 2 | 4 | 4 | 10 |
+| 4 | sadhamanus | 29 |  21 | 0 | 1 | 0 | 1 | 5 | 3 | 0 |
+| 5 | dependabot[bot] | 24 |  6 | 0 | 6 | 0 | 0 | 0 | 0 | 0 |
+| 6 | rahulnair23 | 24 |  2 | 3 | 2 | 0 | 2 | 2 | 2 | 2 |
+| 7 | firmai | 21 |  9 | 6 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 8 | monindersingh | 11 |  1 | 1 | 1 | 0 | 1 | 1 | 2 | 2 |
 
 - Trusted-AI/AIF360
 
@@ -672,23 +665,28 @@ We also calculate the top 20 developers data and the data is as follows.
 | 3 | markgrover | 137 |  12 | 1 | 10 | 12 | 9 | 9 | 56 | 35 |
 | 4 | dorianj | 78 |  37 | 3 | 3 | 4 | 2 | 4 | 16 | 2 |
 | 5 | pPanda-beta | 48 |  25 | 8 | 1 | 1 | 0 | 0 | 0 | 0 |
-| 6 | verdan | 28 |  22 | 3 | 0 | 0 | 0 | 0 | 0 | 0 |
-| 7 | allcontributors[bot] | 27 |  7 | 0 | 5 | 0 | 1 | 11 | 40 | 1 |
-| 8 | AustinBGibbons | 26 |  12 | 3 | 1 | 0 | 1 | 1 | 1 | 1 |
-| 9 | instazackwu | 25 |  5 | 2 | 2 | 0 | 2 | 4 | 13 | 1 |
-| 10 | higee | 21 |  2 | 0 | 2 | 2 | 1 | 2 | 1 | 0 |
-| 11 | madison-ookla | 20 |  6 | 1 | 1 | 1 | 1 | 1 | 7 | 4 |
-| 12 | lexisantoro | 18 |  1 | 0 | 4 | 0 | 1 | 1 | 1 | 0 |
-| 13 | sterlins | 17 |  3 | 1 | 1 | 1 | 1 | 1 | 2 | 2 |
-| 14 | NiravLangaliya | 16 |  8 | 4 | 0 | 0 | 0 | 0 | 0 | 0 |
-| 15 | Wonong | 15 |  3 | 2 | 1 | 0 | 1 | 1 | 1 | 1 |
-| 16 | allisonsuarez | 15 |  3 | 2 | 1 | 0 | 1 | 1 | 61 | 0 |
+| 6 | allcontributors[bot] | 27 |  7 | 0 | 5 | 0 | 1 | 11 | 40 | 1 |
+| 7 | AustinBGibbons | 26 |  12 | 3 | 1 | 0 | 1 | 1 | 1 | 1 |
+| 8 | instazackwu | 25 |  5 | 2 | 2 | 0 | 2 | 4 | 13 | 1 |
+| 9 | higee | 21 |  2 | 0 | 2 | 2 | 1 | 2 | 1 | 0 |
+| 10 | madison-ookla | 20 |  6 | 1 | 1 | 1 | 1 | 1 | 7 | 4 |
+| 11 | lexisantoro | 18 |  1 | 0 | 4 | 0 | 1 | 1 | 1 | 0 |
+| 12 | sterlins | 17 |  3 | 1 | 1 | 1 | 1 | 1 | 2 | 2 |
+| 13 | NiravLangaliya | 16 |  8 | 4 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 14 | Wonong | 15 |  3 | 2 | 1 | 0 | 1 | 1 | 1 | 1 |
+| 15 | allisonsuarez | 15 |  3 | 2 | 1 | 0 | 1 | 1 | 61 | 0 |
 
 - elasticdeeplearning/edl
 
 | # | login | activity | issue_comment | open_issue | open_pull | pull_review_comment | merge_pull | pull_commits | pull_additions | pull_deletions |
 |:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
 | 1 | wangxicoding | 281 |  1 | 2 | 29 | 16 | 25 | 85 | 6355 | 21905 |
+
+- nnsuite/nnstreamer
+
+| # | login | activity | issue_comment | open_issue | open_pull | pull_review_comment | merge_pull | pull_commits | pull_additions | pull_deletions |
+|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
+| 1 | ajarthurs | 13 |  3 | 1 | 1 | 0 | 1 | 1 | 1 | 0 |
 
 
 ### Working Hour Distribution
@@ -712,7 +710,7 @@ We analyze the working hour distribution for LF AI & Data during year 2020, and 
 
 <embed src="http://gar2020.opensource-service.cn/svgrenderer/github/X-lab2017/github-analysis-report?path=sqls/working-hour-distribution/image.svg&data=[1,0,1,1,1,1,1,1,1,1,3,4,3,7,5,5,9,6,6,5,5,4,5,2,1,0,1,1,1,1,1,2,2,1,2,5,6,6,9,8,7,10,9,4,4,3,3,3,2,2,1,1,1,2,1,1,1,1,3,3,4,3,5,9,10,7,8,5,3,3,3,3,3,3,2,3,1,1,1,2,2,2,3,4,8,6,5,4,6,8,9,5,4,4,3,3,2,1,3,1,1,1,1,1,1,1,4,4,5,2,4,5,5,3,6,5,4,3,3,3,4,3,1,1,1,1,1,0,1,0,1,0,0,0,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1]&lang=en" style="width:600" />
 
-- IBM/adversarial-robustness-toolbox
+- Trusted-AI/adversarial-robustness-toolbox
 
 <embed src="http://gar2020.opensource-service.cn/svgrenderer/github/X-lab2017/github-analysis-report?path=sqls/working-hour-distribution/image.svg&data=[1,1,1,1,1,1,1,1,1,1,2,4,5,7,3,2,4,4,3,3,10,5,3,7,5,3,1,1,1,1,1,1,1,2,2,6,10,9,8,5,3,3,3,5,4,4,7,5,4,3,1,1,1,2,1,1,1,1,4,4,4,6,6,4,4,4,2,3,5,4,4,3,4,2,2,1,1,2,1,1,1,2,4,4,7,9,5,7,6,3,3,4,5,6,4,5,3,2,1,1,1,2,1,1,2,2,5,3,6,5,5,5,3,3,3,4,5,4,3,2,2,3,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,1,1,2,1,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,1,1,1,1,2,2,2,2]&lang=en" style="width:600" />
 
@@ -732,7 +730,7 @@ We analyze the working hour distribution for LF AI & Data during year 2020, and 
 
 <embed src="http://gar2020.opensource-service.cn/svgrenderer/github/X-lab2017/github-analysis-report?path=sqls/working-hour-distribution/image.svg&data=[0,0,0,0,1,1,2,2,1,2,2,1,4,5,5,4,9,5,2,1,2,1,1,0,0,0,1,0,1,1,1,3,2,1,3,1,6,6,10,4,2,1,2,3,2,2,1,1,0,1,0,0,0,0,1,4,1,1,1,3,2,5,4,5,3,3,2,3,2,1,0,1,1,1,0,0,0,1,2,2,2,5,4,3,5,7,7,7,5,1,2,2,1,2,1,0,0,1,0,1,2,2,3,3,2,4,3,5,8,8,10,7,5,5,2,1,1,2,2,1,1,1,1,0,0,0,0,0,0,0,0,0,0,1,1,1,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,1,0,0,0,0]&lang=en" style="width:600" />
 
-- feast-dev/feast
+- gojek/feast
 
 <embed src="http://gar2020.opensource-service.cn/svgrenderer/github/X-lab2017/github-analysis-report?path=sqls/working-hour-distribution/image.svg&data=[1,6,8,8,8,7,9,9,9,8,8,5,4,6,5,3,3,2,1,2,1,1,1,2,2,5,9,10,8,7,7,10,9,9,7,5,3,4,4,3,3,2,2,1,1,1,1,2,2,4,8,5,8,6,9,9,9,7,7,5,3,6,4,3,2,2,2,2,1,1,1,2,3,5,6,10,7,9,9,8,7,9,6,4,3,4,3,2,3,2,2,2,2,2,2,1,3,7,6,6,5,8,9,10,10,5,4,3,2,2,4,1,2,1,1,1,1,1,1,1,1,2,2,4,3,3,4,4,4,3,3,3,2,1,2,1,2,1,1,1,1,1,1,1,1,2,3,3,4,2,3,4,2,2,3,2,1,2,2,2,3,1,1,1,1,1,1,1]&lang=en" style="width:600" />
 
@@ -748,13 +746,13 @@ We analyze the working hour distribution for LF AI & Data during year 2020, and 
 
 <embed src="http://gar2020.opensource-service.cn/svgrenderer/github/X-lab2017/github-analysis-report?path=sqls/working-hour-distribution/image.svg&data=[2,4,4,3,3,3,3,3,4,3,3,2,2,2,3,3,7,6,5,4,5,7,6,6,6,6,6,4,4,4,4,4,3,4,3,2,3,3,3,5,9,7,8,6,4,8,7,6,10,5,5,4,4,3,5,5,5,5,3,2,4,3,3,4,8,7,9,8,5,6,8,5,4,7,4,6,3,3,6,5,5,7,2,2,2,4,3,4,5,6,8,7,6,5,5,7,6,7,4,4,2,3,3,4,5,4,3,3,3,3,3,3,4,6,6,5,6,5,5,4,5,4,4,3,1,2,2,2,1,1,1,1,2,1,1,1,1,2,2,1,1,1,1,1,2,2,1,1,1,1,1,2,2,1,2,2,2,2,1,2,2,1,1,1,1,2,2,1]&lang=en" style="width:600" />
 
-- elasticdeeplearning/edl
-
-<embed src="http://gar2020.opensource-service.cn/svgrenderer/github/X-lab2017/github-analysis-report?path=sqls/working-hour-distribution/image.svg&data=[1,1,5,4,1,3,2,3,3,2,1,0,1,1,1,0,0,0,0,0,0,0,0,1,1,1,10,3,0,2,4,2,3,3,1,3,2,1,0,1,2,0,0,0,1,0,0,0,1,2,5,3,1,1,3,4,4,2,3,5,2,1,2,1,1,0,0,0,0,1,0,2,0,3,3,6,1,1,5,3,2,1,3,5,2,1,1,1,0,0,0,0,0,1,0,0,1,1,4,2,1,1,2,5,2,1,2,2,1,0,0,1,1,0,0,0,1,0,1,1,0,0,0,0,2,1,1,1,1,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,2,1,1,0,1,1,2,10,1,1,0,1,1,4,0,0,1,0,1,0,0,1]&lang=en" style="width:600" />
-
 - lyft/amundsen
 
 <embed src="http://gar2020.opensource-service.cn/svgrenderer/github/X-lab2017/github-analysis-report?path=sqls/working-hour-distribution/image.svg&data=[1,1,1,1,1,1,1,1,1,1,1,1,1,8,1,1,10,3,2,1,2,2,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,1,1,2,2,2,1,1,1,1,1,2,1,1,1,1,1,1,1,1,1,1,1,1,3,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,1,1,2,2,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,1,1,1,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]&lang=en" style="width:600" />
+
+- elasticdeeplearning/edl
+
+<embed src="http://gar2020.opensource-service.cn/svgrenderer/github/X-lab2017/github-analysis-report?path=sqls/working-hour-distribution/image.svg&data=[1,1,5,4,1,3,2,3,3,2,1,0,1,1,1,0,0,0,0,0,0,0,0,1,1,1,10,3,0,2,4,2,3,3,1,3,2,1,0,1,2,0,0,0,1,0,0,0,1,2,5,3,1,1,3,4,4,2,3,5,2,1,2,1,1,0,0,0,0,1,0,2,0,3,3,6,1,1,5,3,2,1,3,5,2,1,1,1,0,0,0,0,0,1,0,0,1,1,4,2,1,1,2,5,2,1,2,2,1,0,0,1,1,0,0,0,1,0,1,1,0,0,0,0,2,1,1,1,1,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,2,1,1,0,1,1,2,10,1,1,0,1,1,4,0,0,1,0,1,0,0,1]&lang=en" style="width:600" />
 
 - odpi/egeria
 
@@ -956,7 +954,7 @@ TAC 将对所有 LF AI & Data 项目进行年度审查。年度审查包括评�
 | 4 | feast-dev/feast | Java | 751.49 | 94 | 8129 | 188 | 646 | 2377 | 558 | 2256 | 182481 | 168958 |
 | 5 | odpi/egeria | Java | 620.32 | 43 | 4528 | 711 | 1298 | 1071 | 1047 | 7746 | 743183 | 342990 |
 | 6 | nnstreamer/nnstreamer | C | 549.02 | 39 | 3984 | 239 | 765 | 2466 | 735 | 940 | 82003 | 26960 |
-| 7 | lyft/amundsen | Smarty | 502.65 | 141 | 1170 | 212 | 393 | 196 | 361 | 545 | 3801 | 1668 |
+| 7 | amundsen-io/amundsen | Smarty | 502.65 | 141 | 1170 | 212 | 393 | 196 | 361 | 545 | 3801 | 1668 |
 | 8 | JanusGraph/janusgraph | Java | 500.04 | 136 | 1231 | 121 | 244 | 970 | 183 | 187 | 22000 | 24511 |
 | 9 | uber/ludwig | Python | 459.77 | 119 | 1786 | 120 | 304 | 620 | 265 | 2139 | 73411 | 100727 |
 | 10 | IBM/adversarial-robustness-toolbox | Python | 448.39 | 87 | 884 | 205 | 309 | 1619 | 269 | 8585 | 214502 | 86926 |
@@ -989,19 +987,21 @@ TAC 将对所有 LF AI & Data 项目进行年度审查。年度审查包括评�
 | 3 | taos-ci | 2865 |  2865 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 4 | dongju-chae | 1942 |  70 | 12 | 53 | 361 | 49 | 56 | 8367 | 1822 |
 | 5 | gichan-jang | 1920 |  114 | 7 | 79 | 300 | 71 | 80 | 10781 | 1681 |
-| 6 | anyj0527 | 902 |  56 | 9 | 50 | 112 | 46 | 61 | 3039 | 559 |
-| 7 | again4you | 737 |  45 | 7 | 46 | 80 | 44 | 57 | 4499 | 896 |
-| 8 | zhoonit | 320 |  15 | 5 | 7 | 61 | 6 | 8 | 413 | 354 |
-| 9 | leemgs | 233 |  20 | 2 | 10 | 36 | 7 | 7 | 1777 | 505 |
-| 10 | kbumsik | 107 |  8 | 0 | 5 | 16 | 4 | 7 | 312 | 161 |
-| 11 | jijoongmoon | 102 |  3 | 0 | 8 | 10 | 7 | 7 | 1545 | 673 |
-| 12 | tony-jinwoo-ahn | 77 |  11 | 3 | 5 | 5 | 5 | 5 | 51 | 29 |
-| 13 | junmin-kim | 42 |  12 | 5 | 2 | 1 | 2 | 2 | 11 | 6 |
-| 14 | lemmaa | 20 |  4 | 0 | 1 | 2 | 1 | 1 | 1 | 1 |
-| 15 | semun-lee | 18 |  2 | 2 | 1 | 1 | 1 | 1 | 6 | 0 |
-| 16 | suehdn | 16 |  8 | 4 | 0 | 0 | 0 | 0 | 0 | 0 |
-| 17 | chunseoklee | 15 |  5 | 1 | 1 | 0 | 1 | 1 | 1 | 1 |
-| 18 | phm0127 | 12 |  1 | 0 | 2 | 0 | 1 | 1 | 9 | 9 |
+| 6 | kparichay | 1735 |  106 | 16 | 58 | 272 | 67 | 88 | 8903 | 2301 |
+| 7 | wooksong | 1637 |  73 | 17 | 84 | 217 | 82 | 124 | 9129 | 1508 |
+| 8 | anyj0527 | 902 |  56 | 9 | 50 | 112 | 46 | 61 | 3039 | 559 |
+| 9 | again4you | 737 |  45 | 7 | 46 | 80 | 44 | 57 | 4499 | 896 |
+| 10 | helloahn | 609 |  16 | 2 | 28 | 95 | 25 | 28 | 1445 | 264 |
+| 11 | zhoonit | 320 |  15 | 5 | 7 | 61 | 6 | 8 | 413 | 354 |
+| 12 | leemgs | 233 |  20 | 2 | 10 | 36 | 7 | 7 | 1777 | 505 |
+| 13 | kbumsik | 107 |  8 | 0 | 5 | 16 | 4 | 7 | 312 | 161 |
+| 14 | jijoongmoon | 102 |  3 | 0 | 8 | 10 | 7 | 7 | 1545 | 673 |
+| 15 | tony-jinwoo-ahn | 77 |  11 | 3 | 5 | 5 | 5 | 5 | 51 | 29 |
+| 16 | junmin-kim | 42 |  12 | 5 | 2 | 1 | 2 | 2 | 11 | 6 |
+| 17 | lemmaa | 20 |  4 | 0 | 1 | 2 | 1 | 1 | 1 | 1 |
+| 18 | semun-lee | 18 |  2 | 2 | 1 | 1 | 1 | 1 | 6 | 0 |
+| 19 | suehdn | 16 |  8 | 4 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 20 | chunseoklee | 15 |  5 | 1 | 1 | 0 | 1 | 1 | 1 | 1 |
 
 - JanusGraph/janusgraph
 
@@ -1178,15 +1178,15 @@ TAC 将对所有 LF AI & Data 项目进行年度审查。年度审查包括评�
 | 9 | jonhehir | 48 |  12 | 10 | 2 | 0 | 2 | 2 | 2 | 0 |
 | 10 | stale[bot] | 37 |  37 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 11 | rsyi | 32 |  14 | 5 | 1 | 0 | 1 | 1 | 4 | 0 |
-| 12 | ajbosco | 31 |  1 | 1 | 3 | 1 | 3 | 7 | 645 | 327 |
-| 13 | friendtocephalopods | 31 |  5 | 1 | 3 | 0 | 3 | 6 | 12 | 5 |
-| 14 | Jwan622 | 27 |  7 | 2 | 0 | 4 | 0 | 0 | 0 | 0 |
-| 15 | ibnipun10 | 23 |  8 | 2 | 2 | 0 | 1 | 1 | 1 | 1 |
-| 16 | dmateusp | 21 |  3 | 1 | 2 | 0 | 2 | 6 | 18 | 0 |
+| 12 | friendtocephalopods | 31 |  5 | 1 | 3 | 0 | 3 | 6 | 12 | 5 |
+| 13 | ajbosco | 31 |  1 | 1 | 3 | 1 | 3 | 7 | 645 | 327 |
+| 14 | verdan | 28 |  22 | 3 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 15 | Jwan622 | 27 |  7 | 2 | 0 | 4 | 0 | 0 | 0 | 0 |
+| 16 | ibnipun10 | 23 |  8 | 2 | 2 | 0 | 1 | 1 | 1 | 1 |
 | 17 | pemmasanikrishna | 21 |  1 | 0 | 2 | 1 | 2 | 2 | 12 | 1 |
-| 18 | jdavidheiser | 20 |  6 | 7 | 0 | 0 | 0 | 0 | 0 | 0 |
-| 19 | alran | 20 |  8 | 2 | 1 | 0 | 1 | 1 | 1 | 0 |
-| 20 | jacobhjkim | 19 |  4 | 0 | 2 | 1 | 1 | 2 | 3 | 3 |
+| 18 | dmateusp | 21 |  3 | 1 | 2 | 0 | 2 | 6 | 18 | 0 |
+| 19 | jdavidheiser | 20 |  6 | 7 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 20 | alran | 20 |  8 | 2 | 1 | 0 | 1 | 1 | 1 | 0 |
 
 - pyro-ppl/pyro
 
@@ -1419,29 +1419,20 @@ TAC 将对所有 LF AI & Data 项目进行年度审查。年度审查包括评�
 
 | # | login | activity | issue_comment | open_issue | open_pull | pull_review_comment | merge_pull | pull_commits | pull_additions | pull_deletions |
 |:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
-| 1 | vijay-arya | 80 |  8 | 0 | 9 | 0 | 9 | 26 | 8765 | 9674 |
-| 2 | gaborpelesz | 20 |  6 | 3 | 1 | 0 | 1 | 1 | 1 | 1 |
-
-- nnsuite/nnstreamer
-
-| # | login | activity | issue_comment | open_issue | open_pull | pull_review_comment | merge_pull | pull_commits | pull_additions | pull_deletions |
-|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
-| 1 | kparichay | 1735 |  106 | 16 | 58 | 272 | 67 | 88 | 8903 | 2301 |
-| 2 | wooksong | 1637 |  73 | 17 | 84 | 217 | 82 | 124 | 9129 | 1508 |
-| 3 | helloahn | 609 |  16 | 2 | 28 | 95 | 25 | 28 | 1445 | 264 |
-| 4 | ajarthurs | 13 |  3 | 1 | 1 | 0 | 1 | 1 | 1 | 0 |
+| 1 | gaborpelesz | 20 |  6 | 3 | 1 | 0 | 1 | 1 | 1 | 1 |
 
 - IBM/AIX360
 
 | # | login | activity | issue_comment | open_issue | open_pull | pull_review_comment | merge_pull | pull_commits | pull_additions | pull_deletions |
 |:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
-| 1 | floidgilbert | 40 |  9 | 2 | 4 | 0 | 3 | 6 | 2441 | 8 |
-| 2 | dennislwei | 38 |  22 | 0 | 2 | 0 | 2 | 4 | 4 | 10 |
-| 3 | sadhamanus | 29 |  21 | 0 | 1 | 0 | 1 | 5 | 3 | 0 |
-| 4 | dependabot[bot] | 24 |  6 | 0 | 6 | 0 | 0 | 0 | 0 | 0 |
-| 5 | rahulnair23 | 24 |  2 | 3 | 2 | 0 | 2 | 2 | 2 | 2 |
-| 6 | firmai | 21 |  9 | 6 | 0 | 0 | 0 | 0 | 0 | 0 |
-| 7 | monindersingh | 11 |  1 | 1 | 1 | 0 | 1 | 1 | 2 | 2 |
+| 1 | vijay-arya | 80 |  8 | 0 | 9 | 0 | 9 | 26 | 8765 | 9674 |
+| 2 | floidgilbert | 40 |  9 | 2 | 4 | 0 | 3 | 6 | 2441 | 8 |
+| 3 | dennislwei | 38 |  22 | 0 | 2 | 0 | 2 | 4 | 4 | 10 |
+| 4 | sadhamanus | 29 |  21 | 0 | 1 | 0 | 1 | 5 | 3 | 0 |
+| 5 | dependabot[bot] | 24 |  6 | 0 | 6 | 0 | 0 | 0 | 0 | 0 |
+| 6 | rahulnair23 | 24 |  2 | 3 | 2 | 0 | 2 | 2 | 2 | 2 |
+| 7 | firmai | 21 |  9 | 6 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 8 | monindersingh | 11 |  1 | 1 | 1 | 0 | 1 | 1 | 2 | 2 |
 
 - Trusted-AI/AIF360
 
@@ -1465,23 +1456,28 @@ TAC 将对所有 LF AI & Data 项目进行年度审查。年度审查包括评�
 | 3 | markgrover | 137 |  12 | 1 | 10 | 12 | 9 | 9 | 56 | 35 |
 | 4 | dorianj | 78 |  37 | 3 | 3 | 4 | 2 | 4 | 16 | 2 |
 | 5 | pPanda-beta | 48 |  25 | 8 | 1 | 1 | 0 | 0 | 0 | 0 |
-| 6 | verdan | 28 |  22 | 3 | 0 | 0 | 0 | 0 | 0 | 0 |
-| 7 | allcontributors[bot] | 27 |  7 | 0 | 5 | 0 | 1 | 11 | 40 | 1 |
-| 8 | AustinBGibbons | 26 |  12 | 3 | 1 | 0 | 1 | 1 | 1 | 1 |
-| 9 | instazackwu | 25 |  5 | 2 | 2 | 0 | 2 | 4 | 13 | 1 |
-| 10 | higee | 21 |  2 | 0 | 2 | 2 | 1 | 2 | 1 | 0 |
-| 11 | madison-ookla | 20 |  6 | 1 | 1 | 1 | 1 | 1 | 7 | 4 |
-| 12 | lexisantoro | 18 |  1 | 0 | 4 | 0 | 1 | 1 | 1 | 0 |
-| 13 | sterlins | 17 |  3 | 1 | 1 | 1 | 1 | 1 | 2 | 2 |
-| 14 | NiravLangaliya | 16 |  8 | 4 | 0 | 0 | 0 | 0 | 0 | 0 |
-| 15 | Wonong | 15 |  3 | 2 | 1 | 0 | 1 | 1 | 1 | 1 |
-| 16 | allisonsuarez | 15 |  3 | 2 | 1 | 0 | 1 | 1 | 61 | 0 |
+| 6 | allcontributors[bot] | 27 |  7 | 0 | 5 | 0 | 1 | 11 | 40 | 1 |
+| 7 | AustinBGibbons | 26 |  12 | 3 | 1 | 0 | 1 | 1 | 1 | 1 |
+| 8 | instazackwu | 25 |  5 | 2 | 2 | 0 | 2 | 4 | 13 | 1 |
+| 9 | higee | 21 |  2 | 0 | 2 | 2 | 1 | 2 | 1 | 0 |
+| 10 | madison-ookla | 20 |  6 | 1 | 1 | 1 | 1 | 1 | 7 | 4 |
+| 11 | lexisantoro | 18 |  1 | 0 | 4 | 0 | 1 | 1 | 1 | 0 |
+| 12 | sterlins | 17 |  3 | 1 | 1 | 1 | 1 | 1 | 2 | 2 |
+| 13 | NiravLangaliya | 16 |  8 | 4 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 14 | Wonong | 15 |  3 | 2 | 1 | 0 | 1 | 1 | 1 | 1 |
+| 15 | allisonsuarez | 15 |  3 | 2 | 1 | 0 | 1 | 1 | 61 | 0 |
 
 - elasticdeeplearning/edl
 
 | # | login | activity | issue_comment | open_issue | open_pull | pull_review_comment | merge_pull | pull_commits | pull_additions | pull_deletions |
 |:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
 | 1 | wangxicoding | 281 |  1 | 2 | 29 | 16 | 25 | 85 | 6355 | 21905 |
+
+- nnsuite/nnstreamer
+
+| # | login | activity | issue_comment | open_issue | open_pull | pull_review_comment | merge_pull | pull_commits | pull_additions | pull_deletions |
+|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
+| 1 | ajarthurs | 13 |  3 | 1 | 1 | 0 | 1 | 1 | 1 | 0 |
 
 
 ### 工作时间分布
@@ -1505,7 +1501,7 @@ TAC 将对所有 LF AI & Data 项目进行年度审查。年度审查包括评�
 
 <embed src="http://gar2020.opensource-service.cn/svgrenderer/github/X-lab2017/github-analysis-report?path=sqls/working-hour-distribution/image.svg&data=[1,0,1,1,1,1,1,1,1,1,3,4,3,7,5,5,9,6,6,5,5,4,5,2,1,0,1,1,1,1,1,2,2,1,2,5,6,6,9,8,7,10,9,4,4,3,3,3,2,2,1,1,1,2,1,1,1,1,3,3,4,3,5,9,10,7,8,5,3,3,3,3,3,3,2,3,1,1,1,2,2,2,3,4,8,6,5,4,6,8,9,5,4,4,3,3,2,1,3,1,1,1,1,1,1,1,4,4,5,2,4,5,5,3,6,5,4,3,3,3,4,3,1,1,1,1,1,0,1,0,1,0,0,0,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1]&lang=en" style="width:600" />
 
-- IBM/adversarial-robustness-toolbox
+- Trusted-AI/adversarial-robustness-toolbox
 
 <embed src="http://gar2020.opensource-service.cn/svgrenderer/github/X-lab2017/github-analysis-report?path=sqls/working-hour-distribution/image.svg&data=[1,1,1,1,1,1,1,1,1,1,2,4,5,7,3,2,4,4,3,3,10,5,3,7,5,3,1,1,1,1,1,1,1,2,2,6,10,9,8,5,3,3,3,5,4,4,7,5,4,3,1,1,1,2,1,1,1,1,4,4,4,6,6,4,4,4,2,3,5,4,4,3,4,2,2,1,1,2,1,1,1,2,4,4,7,9,5,7,6,3,3,4,5,6,4,5,3,2,1,1,1,2,1,1,2,2,5,3,6,5,5,5,3,3,3,4,5,4,3,2,2,3,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,1,1,2,1,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,1,1,1,1,2,2,2,2]&lang=en" style="width:600" />
 
@@ -1525,7 +1521,7 @@ TAC 将对所有 LF AI & Data 项目进行年度审查。年度审查包括评�
 
 <embed src="http://gar2020.opensource-service.cn/svgrenderer/github/X-lab2017/github-analysis-report?path=sqls/working-hour-distribution/image.svg&data=[0,0,0,0,1,1,2,2,1,2,2,1,4,5,5,4,9,5,2,1,2,1,1,0,0,0,1,0,1,1,1,3,2,1,3,1,6,6,10,4,2,1,2,3,2,2,1,1,0,1,0,0,0,0,1,4,1,1,1,3,2,5,4,5,3,3,2,3,2,1,0,1,1,1,0,0,0,1,2,2,2,5,4,3,5,7,7,7,5,1,2,2,1,2,1,0,0,1,0,1,2,2,3,3,2,4,3,5,8,8,10,7,5,5,2,1,1,2,2,1,1,1,1,0,0,0,0,0,0,0,0,0,0,1,1,1,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,1,0,0,0,0]&lang=en" style="width:600" />
 
-- feast-dev/feast
+- gojek/feast
 
 <embed src="http://gar2020.opensource-service.cn/svgrenderer/github/X-lab2017/github-analysis-report?path=sqls/working-hour-distribution/image.svg&data=[1,6,8,8,8,7,9,9,9,8,8,5,4,6,5,3,3,2,1,2,1,1,1,2,2,5,9,10,8,7,7,10,9,9,7,5,3,4,4,3,3,2,2,1,1,1,1,2,2,4,8,5,8,6,9,9,9,7,7,5,3,6,4,3,2,2,2,2,1,1,1,2,3,5,6,10,7,9,9,8,7,9,6,4,3,4,3,2,3,2,2,2,2,2,2,1,3,7,6,6,5,8,9,10,10,5,4,3,2,2,4,1,2,1,1,1,1,1,1,1,1,2,2,4,3,3,4,4,4,3,3,3,2,1,2,1,2,1,1,1,1,1,1,1,1,2,3,3,4,2,3,4,2,2,3,2,1,2,2,2,3,1,1,1,1,1,1,1]&lang=en" style="width:600" />
 
@@ -1541,13 +1537,13 @@ TAC 将对所有 LF AI & Data 项目进行年度审查。年度审查包括评�
 
 <embed src="http://gar2020.opensource-service.cn/svgrenderer/github/X-lab2017/github-analysis-report?path=sqls/working-hour-distribution/image.svg&data=[2,4,4,3,3,3,3,3,4,3,3,2,2,2,3,3,7,6,5,4,5,7,6,6,6,6,6,4,4,4,4,4,3,4,3,2,3,3,3,5,9,7,8,6,4,8,7,6,10,5,5,4,4,3,5,5,5,5,3,2,4,3,3,4,8,7,9,8,5,6,8,5,4,7,4,6,3,3,6,5,5,7,2,2,2,4,3,4,5,6,8,7,6,5,5,7,6,7,4,4,2,3,3,4,5,4,3,3,3,3,3,3,4,6,6,5,6,5,5,4,5,4,4,3,1,2,2,2,1,1,1,1,2,1,1,1,1,2,2,1,1,1,1,1,2,2,1,1,1,1,1,2,2,1,2,2,2,2,1,2,2,1,1,1,1,2,2,1]&lang=en" style="width:600" />
 
-- elasticdeeplearning/edl
-
-<embed src="http://gar2020.opensource-service.cn/svgrenderer/github/X-lab2017/github-analysis-report?path=sqls/working-hour-distribution/image.svg&data=[1,1,5,4,1,3,2,3,3,2,1,0,1,1,1,0,0,0,0,0,0,0,0,1,1,1,10,3,0,2,4,2,3,3,1,3,2,1,0,1,2,0,0,0,1,0,0,0,1,2,5,3,1,1,3,4,4,2,3,5,2,1,2,1,1,0,0,0,0,1,0,2,0,3,3,6,1,1,5,3,2,1,3,5,2,1,1,1,0,0,0,0,0,1,0,0,1,1,4,2,1,1,2,5,2,1,2,2,1,0,0,1,1,0,0,0,1,0,1,1,0,0,0,0,2,1,1,1,1,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,2,1,1,0,1,1,2,10,1,1,0,1,1,4,0,0,1,0,1,0,0,1]&lang=en" style="width:600" />
-
 - lyft/amundsen
 
 <embed src="http://gar2020.opensource-service.cn/svgrenderer/github/X-lab2017/github-analysis-report?path=sqls/working-hour-distribution/image.svg&data=[1,1,1,1,1,1,1,1,1,1,1,1,1,8,1,1,10,3,2,1,2,2,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,1,1,2,2,2,1,1,1,1,1,2,1,1,1,1,1,1,1,1,1,1,1,1,3,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,1,1,2,2,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,1,1,1,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]&lang=en" style="width:600" />
+
+- elasticdeeplearning/edl
+
+<embed src="http://gar2020.opensource-service.cn/svgrenderer/github/X-lab2017/github-analysis-report?path=sqls/working-hour-distribution/image.svg&data=[1,1,5,4,1,3,2,3,3,2,1,0,1,1,1,0,0,0,0,0,0,0,0,1,1,1,10,3,0,2,4,2,3,3,1,3,2,1,0,1,2,0,0,0,1,0,0,0,1,2,5,3,1,1,3,4,4,2,3,5,2,1,2,1,1,0,0,0,0,1,0,2,0,3,3,6,1,1,5,3,2,1,3,5,2,1,1,1,0,0,0,0,0,1,0,0,1,1,4,2,1,1,2,5,2,1,2,2,1,0,0,1,1,0,0,0,1,0,1,1,0,0,0,0,2,1,1,1,1,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,2,1,1,0,1,1,2,10,1,1,0,1,1,4,0,0,1,0,1,0,0,1]&lang=en" style="width:600" />
 
 - odpi/egeria
 
