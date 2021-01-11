@@ -41,7 +41,7 @@ $ git clone git@github.com:xxx/github-analysis-report.git
 $ cd github-analysis-report
 ```
 
-### 4. Create a new branch
+### 3. Create a new branch
 
 Create a new branch for development.
 
@@ -51,7 +51,7 @@ $ git checkout -b your-branch-name
 
 The name of branch should be semantic, avoiding words like `update` or `tmp`. We suggest to use `feature/xxx` if the modification is about to implement a new feature.
 
-### 5. Commit your changes
+### 4. Commit your changes
 
 Now you can create your patch or add `SQL` statement in the new branch, and commit your changes by:
 
@@ -62,7 +62,7 @@ $ git commit -sm "docs: add workflow doc (#26)"
 
 You are encouraged to use [angular commit-message-format][angular-commit-message-format] to write commit message. In this way, we could have a more trackable history and an automatically generated changelog.
 
-### 6. Sync your local repository with the upstream
+### 5. Sync your local repository with the upstream
 
 Keep your local repository updated with upstream repository by:
 
@@ -79,13 +79,13 @@ $ git add my-fix-file
 $ git rebase --continue
 ```
 
-### 7. Push your branch to GitHub
+### 6. Push your branch to GitHub
 
 ```shell
 $ git push -f origin your-branch-name
 ```
 
-### 8. Create a Pull Request
+### 7. Create a Pull Request
 
 In GitHub, send a pull request to [`X-lab2017/github-analysis-report`][repo].
 
@@ -107,7 +107,7 @@ That's it! Thank you for your contribution!
 
 You can refer to [workflow](https://www.x-lab.info/github-analysis-report/#/workflow?id=appendix) to see more information about the `PR` workflow with `SQL` files invovled.
 
-### 9. After your pull request is merged
+### 8. After your pull request is merged
 
 After your pull request is merged, you can safely delete your branch and pull the changes from the upstream repository:
 

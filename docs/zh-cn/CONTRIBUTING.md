@@ -48,7 +48,7 @@ $ cd github-analysis-report
 $ git checkout -b doc/add-contributing-guide
 ```
 
-### 5. 修改内容，并提交
+### 4. 修改内容，并提交
 
 对相应文件做出修改，修改完成后，提交：
 
@@ -63,7 +63,7 @@ $ git commit -sm "docs: add contributing guide (#26)"
 
 (2) 关联相关 `issue`，如 `fix #1` 、`close #2`、`#3`
 
-### 6. 同步上游仓库变更
+### 5. 同步上游仓库变更
 
 同步上游仓库变更，因为可能有其他人先于你提交到上游仓库，防止冲突：
 
@@ -85,13 +85,13 @@ $ git add my-fix-file
 $ git rebase --continue
 ```
 
-### 7. 推送新分支到自己的远程仓库
+### 6. 推送新分支到自己的远程仓库
 
 ```shell
 $ git push -f origin your-branch-name:your-branch-name
 ```
 
-### 8. 提交 `Pull Request`
+### 7. 提交 `Pull Request`
 
 在自己仓库的页面上提 `Pull Request` 到上游仓库 `X-lab2017/github-analysis-report`。
 
@@ -105,7 +105,7 @@ $ git push -f origin your-branch-name
 
 可以参考 [工作流](https://www.x-lab.info/github-analysis-report/#/zh-cn/workflow?id=%e9%99%84%e5%bd%95) 查看更多与 `SQL` 类 Pull Request 的协作流程。
 
-### 9. 代码合并之后，你可以：
+### 8. 代码合并之后，你可以：
 
 - 删除远程分支:
 
