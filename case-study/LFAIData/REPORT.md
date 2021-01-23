@@ -157,18 +157,18 @@ We calculated the activity of LF AI & Data project repositories and the data is 
 
 | # | name | language | activity | developer_count | issue_comment | open_issue | open_pull | pull_review_comment | merge_pull | pull_commits | pull_additions | pull_deletions |
 |:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
-| 1 | horovod/horovod | Python | 1265.29 | 446 | 3579 | 453 | 414 | 947 | 360 | 1380 | 53193 | 23417 |
-| 2 | milvus-io/milvus | C++ | 1241.24 | 240 | 4718 | 1551 | 1872 | 311 | 1687 | 11792 | 788398 | 454401 |
-| 3 | onnx/onnx | PureBasic | 1139.81 | 386 | 2305 | 217 | 301 | 1567 | 232 | 2431 | 42390 | 14042 |
-| 4 | feast-dev/feast | Java | 751.49 | 94 | 8129 | 188 | 646 | 2377 | 558 | 2256 | 182481 | 168958 |
-| 5 | odpi/egeria | Java | 620.32 | 43 | 4528 | 711 | 1298 | 1071 | 1047 | 7746 | 743183 | 342990 |
-| 6 | nnstreamer/nnstreamer | C | 549.06 | 39 | 3985 | 239 | 766 | 2466 | 735 | 940 | 82003 | 26960 |
-| 7 | lyft/amundsen | Smarty | 502.65 | 141 | 1170 | 212 | 393 | 196 | 361 | 545 | 3801 | 1668 |
-| 8 | JanusGraph/janusgraph | Java | 500.04 | 136 | 1231 | 121 | 244 | 970 | 183 | 187 | 22000 | 24511 |
-| 9 | uber/ludwig | Python | 459.77 | 119 | 1786 | 120 | 304 | 620 | 265 | 2139 | 73411 | 100727 |
-| 10 | IBM/adversarial-robustness-toolbox | Python | 448.39 | 87 | 884 | 205 | 309 | 1619 | 269 | 8585 | 214502 | 86926 |
-| 11 | pyro-ppl/pyro | Python | 415.42 | 88 | 984 | 93 | 380 | 1226 | 336 | 1945 | 49294 | 9084 |
-| 12 | sparklyr/sparklyr | R | 387.19 | 130 | 1431 | 211 | 417 | 93 | 372 | 1130 | 202789 | 112023 |
+| 1 | horovod/horovod | Python | 1269.92 | 446 | 3609 | 455 | 414 | 964 | 365 | 1388 | 53398 | 23474 |
+| 2 | milvus-io/milvus | C++ | 1246.05 | 241 | 4761 | 1556 | 1875 | 314 | 1695 | 11830 | 788765 | 454656 |
+| 3 | onnx/onnx | PureBasic | 1145.16 | 388 | 2318 | 218 | 302 | 1569 | 233 | 2434 | 42390 | 14190 |
+| 4 | feast-dev/feast | Java | 755.62 | 95 | 8161 | 190 | 650 | 2384 | 561 | 2285 | 183545 | 169068 |
+| 5 | odpi/egeria | Java | 620.64 | 43 | 4534 | 714 | 1299 | 1071 | 1048 | 7749 | 743234 | 343011 |
+| 6 | nnstreamer/nnstreamer | C | 549.63 | 39 | 4003 | 241 | 768 | 2471 | 736 | 941 | 82005 | 26962 |
+| 7 | lyft/amundsen | Smarty | 506.18 | 142 | 1174 | 213 | 394 | 196 | 363 | 547 | 3803 | 1669 |
+| 8 | JanusGraph/janusgraph | Java | 503.6 | 137 | 1236 | 121 | 245 | 989 | 185 | 190 | 22593 | 24567 |
+| 9 | uber/ludwig | Python | 460.66 | 119 | 1794 | 121 | 304 | 620 | 267 | 2147 | 73467 | 100819 |
+| 10 | IBM/adversarial-robustness-toolbox | Python | 448.44 | 87 | 884 | 206 | 309 | 1619 | 269 | 8585 | 214502 | 86926 |
+| 11 | pyro-ppl/pyro | Python | 416.4 | 88 | 992 | 93 | 381 | 1228 | 336 | 1945 | 49294 | 9084 |
+| 12 | sparklyr/sparklyr | R | 388.53 | 131 | 1436 | 213 | 420 | 93 | 372 | 1130 | 202789 | 112023 |
 | 13 | IBM/AIF360 | Python | 126.96 | 36 | 132 | 17 | 38 | 97 | 33 | 355 | 44441 | 20355 |
 | 14 | Adlik/Adlik | C++ | 122.53 | 11 | 820 | 95 | 228 | 103 | 0 | 0 | 0 | 0 |
 | 15 | MarquezProject/marquez | Java | 102.82 | 15 | 241 | 40 | 145 | 66 | 138 | 953 | 48929 | 6128 |
@@ -176,7 +176,7 @@ We calculated the activity of LF AI & Data project repositories and the data is 
 | 17 | IBM/AIX360 | Python | 74.24 | 24 | 109 | 25 | 26 | 0 | 19 | 45 | 11218 | 9697 |
 | 18 | odpi/OpenDS4All | HTML | 57.43 | 10 | 46 | 3 | 84 | 0 | 78 | 309 | 81151 | 11707 |
 | 19 | elasticdeeplearning/edl | Python | 51.78 | 5 | 11 | 3 | 86 | 72 | 71 | 1136 | 54372 | 40732 |
-| 20 | didi/delta | Python | 38.89 | 8 | 50 | 8 | 27 | 14 | 24 | 82 | 8166 | 5841 |
+| 20 | didi/delta | Python | 39.09 | 8 | 52 | 8 | 27 | 14 | 24 | 82 | 8166 | 5841 |
 | 21 | ForestFlow/ForestFlow | Scala | 18.01 | 2 | 4 | 3 | 22 | 18 | 19 | 119 | 4366 | 3177 |
 | 22 | datadotworld/data-practices-site | CSS | 5.74 | 1 | 3 | 0 | 10 | 0 | 0 | 0 | 0 | 0 |
 | 23 | soajs/soajs | JavaScript | 2 | 1 | 1 | 0 | 1 | 0 | 0 | 0 | 0 | 0 |
@@ -191,15 +191,15 @@ We also calculate the top 20 developers data and the data is as follows.
 
 | # | login | activity | issue_comment | open_issue | open_pull | pull_review_comment | merge_pull | pull_commits | pull_additions | pull_deletions |
 |:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
-| 1 | myungjoo | 3795 |  377 | 129 | 103 | 584 | 103 | 136 | 15093 | 8791 |
-| 2 | jaeyun-jung | 3103 |  133 | 3 | 219 | 313 | 211 | 268 | 16616 | 7396 |
-| 3 | taos-ci | 2866 |  2866 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| 4 | dongju-chae | 1942 |  70 | 12 | 53 | 361 | 49 | 56 | 8367 | 1822 |
-| 5 | gichan-jang | 1923 |  114 | 7 | 80 | 300 | 71 | 80 | 10781 | 1681 |
+| 1 | myungjoo | 3800 |  380 | 130 | 103 | 584 | 103 | 136 | 15093 | 8791 |
+| 2 | jaeyun-jung | 3114 |  133 | 3 | 220 | 315 | 211 | 268 | 16616 | 7396 |
+| 3 | taos-ci | 2878 |  2878 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 4 | dongju-chae | 1955 |  71 | 12 | 53 | 364 | 49 | 56 | 8367 | 1822 |
+| 5 | gichan-jang | 1929 |  115 | 7 | 80 | 300 | 72 | 81 | 10783 | 1683 |
 | 6 | kparichay | 1735 |  106 | 16 | 58 | 272 | 67 | 88 | 8903 | 2301 |
-| 7 | anyj0527 | 902 |  56 | 9 | 50 | 112 | 46 | 61 | 3039 | 559 |
-| 8 | again4you | 737 |  45 | 7 | 46 | 80 | 44 | 57 | 4499 | 896 |
-| 9 | helloahn | 609 |  16 | 2 | 28 | 95 | 25 | 28 | 1445 | 264 |
+| 7 | wooksong | 1639 |  73 | 18 | 84 | 217 | 82 | 124 | 9129 | 1508 |
+| 8 | anyj0527 | 902 |  56 | 9 | 50 | 112 | 46 | 61 | 3039 | 559 |
+| 9 | again4you | 741 |  46 | 7 | 47 | 80 | 44 | 57 | 4499 | 896 |
 | 10 | zhoonit | 320 |  15 | 5 | 7 | 61 | 6 | 8 | 413 | 354 |
 | 11 | leemgs | 233 |  20 | 2 | 10 | 36 | 7 | 7 | 1777 | 505 |
 | 12 | kbumsik | 107 |  8 | 0 | 5 | 16 | 4 | 7 | 312 | 161 |
@@ -216,12 +216,12 @@ We also calculate the top 20 developers data and the data is as follows.
 
 | # | login | activity | issue_comment | open_issue | open_pull | pull_review_comment | merge_pull | pull_commits | pull_additions | pull_deletions |
 |:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
-| 1 | porunov | 1525 |  246 | 24 | 37 | 235 | 36 | 36 | 3125 | 1693 |
-| 2 | farodin91 | 1078 |  163 | 14 | 48 | 137 | 39 | 40 | 10375 | 20613 |
+| 1 | porunov | 1549 |  247 | 24 | 38 | 240 | 36 | 36 | 3125 | 1693 |
+| 2 | farodin91 | 1099 |  164 | 14 | 48 | 142 | 39 | 40 | 10375 | 20613 |
 | 3 | FlorianHockmann | 1015 |  151 | 4 | 4 | 206 | 4 | 4 | 5 | 8 |
-| 4 | li-boxuan | 867 |  100 | 18 | 29 | 136 | 20 | 20 | 1193 | 312 |
+| 4 | li-boxuan | 905 |  101 | 18 | 29 | 144 | 21 | 22 | 1785 | 367 |
 | 5 | rngcntr | 770 |  60 | 5 | 13 | 149 | 13 | 16 | 3054 | 1183 |
-| 6 | dependabot-preview[bot] | 412 |  32 | 0 | 65 | 0 | 37 | 37 | 38 | 38 |
+| 6 | dependabot-preview[bot] | 417 |  32 | 0 | 65 | 0 | 38 | 38 | 39 | 39 |
 | 7 | mad | 146 |  13 | 2 | 9 | 13 | 10 | 10 | 259 | 172 |
 | 8 | mbrukman | 82 |  48 | 1 | 1 | 6 | 1 | 1 | 1 | 0 |
 | 9 | dk-github | 75 |  23 | 0 | 2 | 9 | 2 | 2 | 2858 | 116 |
@@ -241,32 +241,30 @@ We also calculate the top 20 developers data and the data is as follows.
 
 | # | login | activity | issue_comment | open_issue | open_pull | pull_review_comment | merge_pull | pull_commits | pull_additions | pull_deletions |
 |:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
-| 1 | beat-buesser | 6065 |  362 | 63 | 131 | 1141 | 124 | 5554 | 151573 | 62678 |
-| 2 | shashankkotyan | 358 |  21 | 3 | 2 | 80 | 1 | 16 | 1843 | 1 |
-| 3 | mathsinn | 201 |  24 | 3 | 12 | 20 | 11 | 64 | 1803 | 203 |
-| 4 | codecov[bot] | 110 |  110 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| 5 | keykholt | 51 |  8 | 2 | 4 | 3 | 3 | 15 | 820 | 4 |
-| 6 | kztakemoto | 45 |  9 | 0 | 2 | 5 | 2 | 114 | 919 | 7 |
-| 7 | ririnicolae | 33 |  1 | 0 | 2 | 4 | 2 | 97 | 4840 | 6563 |
-| 8 | tagomaru | 31 |  8 | 2 | 3 | 0 | 2 | 5 | 107 | 121 |
-| 9 | mzweilin | 30 |  2 | 2 | 1 | 4 | 1 | 8 | 694 | 2 |
-| 10 | TreeLLi | 27 |  7 | 2 | 1 | 2 | 1 | 17 | 33 | 21 |
-| 11 | ehsankf | 24 |  10 | 3 | 1 | 0 | 1 | 3 | 24 | 18 |
-| 12 | ng390 | 21 |  1 | 4 | 1 | 1 | 1 | 16 | 291 | 1 |
-| 13 | maliwin | 15 |  9 | 3 | 0 | 0 | 0 | 0 | 0 | 0 |
-| 14 | akshayag | 14 |  8 | 3 | 0 | 0 | 0 | 0 | 0 | 0 |
-| 15 | ahmedomer6 | 14 |  10 | 2 | 0 | 0 | 0 | 0 | 0 | 0 |
-| 16 | henry-eigen | 13 |  2 | 0 | 2 | 0 | 1 | 6 | 19 | 3 |
-| 17 | Tomcli | 12 |  2 | 1 | 1 | 0 | 1 | 1 | 7 | 2 |
-| 18 | Nathalie-B | 11 |  1 | 5 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 1 | shashankkotyan | 358 |  21 | 3 | 2 | 80 | 1 | 16 | 1843 | 1 |
+| 2 | codecov[bot] | 110 |  110 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 3 | keykholt | 51 |  8 | 2 | 4 | 3 | 3 | 15 | 820 | 4 |
+| 4 | kztakemoto | 45 |  9 | 0 | 2 | 5 | 2 | 114 | 919 | 7 |
+| 5 | ririnicolae | 33 |  1 | 0 | 2 | 4 | 2 | 97 | 4840 | 6563 |
+| 6 | tagomaru | 31 |  8 | 2 | 3 | 0 | 2 | 5 | 107 | 121 |
+| 7 | mzweilin | 30 |  2 | 2 | 1 | 4 | 1 | 8 | 694 | 2 |
+| 8 | TreeLLi | 27 |  7 | 2 | 1 | 2 | 1 | 17 | 33 | 21 |
+| 9 | ehsankf | 24 |  10 | 3 | 1 | 0 | 1 | 3 | 24 | 18 |
+| 10 | ng390 | 21 |  1 | 4 | 1 | 1 | 1 | 16 | 291 | 1 |
+| 11 | maliwin | 15 |  9 | 3 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 12 | akshayag | 14 |  8 | 3 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 13 | ahmedomer6 | 14 |  10 | 2 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 14 | henry-eigen | 13 |  2 | 0 | 2 | 0 | 1 | 6 | 19 | 3 |
+| 15 | Tomcli | 12 |  2 | 1 | 1 | 0 | 1 | 1 | 7 | 2 |
+| 16 | Nathalie-B | 11 |  1 | 5 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 - uber/ludwig
 
 | # | login | activity | issue_comment | open_issue | open_pull | pull_review_comment | merge_pull | pull_commits | pull_additions | pull_deletions |
 |:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
-| 1 | w4nderlust | 2120 |  784 | 2 | 36 | 271 | 28 | 358 | 14282 | 9028 |
-| 2 | jimthompson5802 | 1571 |  372 | 4 | 78 | 143 | 77 | 971 | 31561 | 19550 |
-| 3 | tgaddair | 1268 |  64 | 1 | 90 | 128 | 84 | 473 | 10455 | 61518 |
+| 1 | w4nderlust | 2126 |  790 | 2 | 36 | 271 | 28 | 358 | 14282 | 9028 |
+| 2 | jimthompson5802 | 1573 |  374 | 4 | 78 | 143 | 77 | 971 | 31561 | 19550 |
+| 3 | tgaddair | 1273 |  64 | 1 | 90 | 128 | 85 | 477 | 10472 | 61529 |
 | 4 | carlogrisetti | 302 |  100 | 15 | 15 | 13 | 15 | 59 | 458 | 268 |
 | 5 | kaushikb11 | 180 |  26 | 0 | 10 | 21 | 8 | 52 | 2143 | 219 |
 | 6 | ifokeev | 141 |  37 | 10 | 12 | 2 | 8 | 10 | 24 | 14 |
@@ -276,14 +274,14 @@ We also calculate the top 20 developers data and the data is as follows.
 | 10 | michaelbzhu | 58 |  5 | 3 | 6 | 1 | 5 | 21 | 115 | 15 |
 | 11 | dsblank | 49 |  9 | 0 | 3 | 4 | 3 | 3 | 113 | 0 |
 | 12 | richardliaw | 45 |  1 | 0 | 0 | 11 | 0 | 0 | 0 | 0 |
-| 13 | CLAassistant | 32 |  32 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| 14 | mangleddata | 30 |  18 | 6 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 13 | mangleddata | 32 |  18 | 7 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 14 | CLAassistant | 32 |  32 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 15 | donfour10 | 28 |  16 | 6 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 16 | jenishah | 24 |  11 | 1 | 2 | 0 | 1 | 1 | 1 | 1 |
-| 17 | jmizgajski | 22 |  8 | 3 | 1 | 0 | 1 | 1 | 2 | 0 |
-| 18 | calio | 21 |  3 | 0 | 3 | 1 | 1 | 3 | 129 | 1 |
-| 19 | soovam123 | 20 |  3 | 0 | 4 | 0 | 1 | 9 | 73 | 72 |
-| 20 | msaisumanth | 19 |  16 | 0 | 1 | 0 | 0 | 0 | 0 | 0 |
+| 17 | milyiyo | 23 |  2 | 0 | 2 | 0 | 3 | 8 | 50 | 96 |
+| 18 | jmizgajski | 22 |  8 | 3 | 1 | 0 | 1 | 1 | 2 | 0 |
+| 19 | calio | 21 |  3 | 0 | 3 | 1 | 1 | 3 | 129 | 1 |
+| 20 | soovam123 | 20 |  3 | 0 | 4 | 0 | 1 | 9 | 73 | 72 |
 
 - Angel-ML/angel
 
@@ -302,17 +300,17 @@ We also calculate the top 20 developers data and the data is as follows.
 
 | # | login | activity | issue_comment | open_issue | open_pull | pull_review_comment | merge_pull | pull_commits | pull_additions | pull_deletions |
 |:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
-| 1 | planetf1 | 5106 |  1767 | 253 | 218 | 291 | 203 | 973 | 43128 | 27085 |
+| 1 | planetf1 | 5110 |  1771 | 253 | 218 | 291 | 203 | 973 | 43128 | 27085 |
 | 2 | davidradl | 2274 |  319 | 122 | 104 | 231 | 95 | 491 | 75171 | 47982 |
 | 3 | dependabot-preview[bot] | 2066 |  69 | 5 | 279 | 0 | 230 | 257 | 508 | 405 |
-| 4 | grahamwallis | 1373 |  298 | 70 | 83 | 69 | 82 | 689 | 80845 | 21195 |
+| 4 | grahamwallis | 1374 |  299 | 70 | 83 | 69 | 82 | 689 | 80845 | 21195 |
 | 5 | mandy-chessell | 1357 |  318 | 63 | 62 | 108 | 59 | 834 | 271761 | 125014 |
 | 6 | immmus | 905 |  201 | 12 | 31 | 113 | 27 | 283 | 19011 | 38188 |
 | 7 | cmgrote | 896 |  204 | 41 | 57 | 46 | 51 | 516 | 19515 | 9744 |
-| 8 | bogdan-sava | 842 |  116 | 38 | 69 | 27 | 67 | 494 | 4894 | 3714 |
+| 8 | bogdan-sava | 855 |  117 | 40 | 70 | 27 | 68 | 497 | 4945 | 3735 |
 | 9 | github-actions[bot] | 790 |  742 | 24 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 10 | dependabot[bot] | 787 |  129 | 0 | 156 | 0 | 38 | 52 | 628 | 452 |
-| 11 | lpalashevski | 382 |  38 | 15 | 32 | 17 | 30 | 1961 | 134874 | 29587 |
+| 11 | lpalashevski | 384 |  38 | 16 | 32 | 17 | 30 | 1961 | 134874 | 29587 |
 | 12 | popa-raluca | 328 |  31 | 8 | 33 | 8 | 30 | 231 | 6353 | 4459 |
 | 13 | marius-patrascu | 303 |  3 | 1 | 40 | 2 | 34 | 152 | 2909 | 1058 |
 | 14 | danielaotelea | 286 |  13 | 11 | 32 | 5 | 27 | 194 | 5969 | 5508 |
@@ -327,21 +325,21 @@ We also calculate the top 20 developers data and the data is as follows.
 
 | # | login | activity | issue_comment | open_issue | open_pull | pull_review_comment | merge_pull | pull_commits | pull_additions | pull_deletions |
 |:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
-| 1 | tgaddair | 3304 |  827 | 34 | 147 | 317 | 140 | 562 | 18339 | 13491 |
-| 2 | EnricoMi | 1412 |  154 | 13 | 83 | 157 | 71 | 217 | 13888 | 4157 |
+| 1 | tgaddair | 3358 |  828 | 34 | 147 | 329 | 141 | 563 | 18347 | 13500 |
+| 2 | EnricoMi | 1439 |  156 | 13 | 83 | 162 | 72 | 218 | 13889 | 4158 |
 | 3 | sblotner | 549 |  5 | 0 | 1 | 134 | 1 | 1 | 17 | 17 |
-| 4 | stale[bot] | 545 |  545 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 4 | stale[bot] | 547 |  547 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 5 | romerojosh | 541 |  62 | 0 | 29 | 63 | 28 | 75 | 6667 | 766 |
-| 6 | github-actions[bot] | 403 |  403 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6 | github-actions[bot] | 418 |  418 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 7 | abditag2 | 304 |  21 | 0 | 26 | 25 | 21 | 109 | 898 | 275 |
 | 8 | nvcastet | 300 |  64 | 0 | 14 | 26 | 18 | 51 | 2419 | 2241 |
 | 9 | davidrpugh | 283 |  43 | 2 | 2 | 55 | 2 | 21 | 290 | 1 |
 | 10 | richardliaw | 219 |  11 | 0 | 7 | 38 | 7 | 87 | 2775 | 291 |
 | 11 | aaron276h | 130 |  21 | 3 | 9 | 9 | 8 | 30 | 879 | 78 |
 | 12 | Vikas-kum | 118 |  26 | 1 | 4 | 17 | 2 | 61 | 562 | 140 |
-| 13 | leezu | 105 |  26 | 1 | 9 | 5 | 6 | 12 | 355 | 59 |
-| 14 | jeffdaily | 82 |  22 | 0 | 3 | 9 | 3 | 9 | 853 | 486 |
-| 15 | liangz1 | 80 |  8 | 1 | 6 | 8 | 4 | 31 | 244 | 31 |
+| 13 | leezu | 106 |  27 | 1 | 9 | 5 | 6 | 12 | 355 | 59 |
+| 14 | liangz1 | 86 |  9 | 1 | 6 | 8 | 5 | 33 | 251 | 35 |
+| 15 | jeffdaily | 82 |  22 | 0 | 3 | 9 | 3 | 9 | 853 | 486 |
 | 16 | apeforest | 78 |  19 | 0 | 4 | 8 | 3 | 24 | 219 | 137 |
 | 17 | alsrgv | 73 |  9 | 0 | 2 | 12 | 2 | 12 | 620 | 281 |
 | 18 | Richie-yan | 73 |  31 | 5 | 4 | 5 | 0 | 0 | 0 | 0 |
@@ -354,7 +352,7 @@ We also calculate the top 20 developers data and the data is as follows.
 |:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
 | 1 | wschin | 1293 |  77 | 1 | 12 | 272 | 18 | 299 | 7517 | 1236 |
 | 2 | gramalingam | 1257 |  89 | 0 | 8 | 276 | 8 | 56 | 447 | 61 |
-| 3 | jcwchen | 1142 |  259 | 2 | 60 | 131 | 35 | 395 | 1351 | 517 |
+| 3 | jcwchen | 1155 |  267 | 2 | 60 | 131 | 36 | 398 | 1351 | 665 |
 | 4 | askhade | 1027 |  211 | 3 | 22 | 171 | 12 | 42 | 594 | 410 |
 | 5 | linkerzhang | 580 |  174 | 4 | 8 | 86 | 6 | 27 | 203 | 80 |
 | 6 | vinitra | 421 |  37 | 1 | 13 | 72 | 11 | 471 | 1258 | 442 |
@@ -364,7 +362,7 @@ We also calculate the top 20 developers data and the data is as follows.
 | 10 | snnn | 237 |  58 | 2 | 7 | 31 | 6 | 20 | 318 | 238 |
 | 11 | lara-hdr | 226 |  22 | 0 | 4 | 43 | 4 | 52 | 3126 | 254 |
 | 12 | neginraoof | 222 |  44 | 0 | 12 | 23 | 10 | 178 | 1905 | 59 |
-| 13 | daquexian | 196 |  47 | 2 | 7 | 21 | 8 | 97 | 1271 | 724 |
+| 13 | daquexian | 201 |  48 | 2 | 7 | 22 | 8 | 97 | 1271 | 724 |
 | 14 | prasanthpul | 174 |  37 | 3 | 13 | 8 | 12 | 30 | 180 | 15 |
 | 15 | tbennun | 167 |  3 | 0 | 0 | 41 | 0 | 0 | 0 | 0 |
 | 16 | BowenBao | 144 |  16 | 0 | 5 | 22 | 5 | 30 | 3533 | 1583 |
@@ -377,26 +375,26 @@ We also calculate the top 20 developers data and the data is as follows.
 
 | # | login | activity | issue_comment | open_issue | open_pull | pull_review_comment | merge_pull | pull_commits | pull_additions | pull_deletions |
 |:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
-| 1 | feng-tao | 1292 |  353 | 23 | 91 | 55 | 80 | 125 | 977 | 205 |
+| 1 | feng-tao | 1293 |  354 | 23 | 91 | 55 | 80 | 125 | 977 | 205 |
 | 2 | jornh | 297 |  132 | 7 | 11 | 17 | 10 | 13 | 191 | 110 |
 | 3 | javamonkey79 | 170 |  66 | 5 | 5 | 11 | 7 | 100 | 747 | 434 |
 | 4 | ttannis | 139 |  53 | 9 | 2 | 13 | 2 | 2 | 45 | 53 |
 | 5 | samshuster | 127 |  50 | 13 | 5 | 4 | 4 | 6 | 148 | 7 |
 | 6 | Alagappan | 90 |  6 | 2 | 2 | 16 | 2 | 3 | 3 | 7 |
 | 7 | jinhyukchang | 61 |  15 | 1 | 4 | 3 | 4 | 6 | 128 | 3 |
-| 8 | mgorsk1 | 60 |  13 | 1 | 4 | 2 | 5 | 8 | 62 | 49 |
-| 9 | jonhehir | 48 |  12 | 10 | 2 | 0 | 2 | 2 | 2 | 0 |
-| 10 | stale[bot] | 37 |  37 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| 11 | rsyi | 32 |  14 | 5 | 1 | 0 | 1 | 1 | 4 | 0 |
+| 8 | jonhehir | 48 |  12 | 10 | 2 | 0 | 2 | 2 | 2 | 0 |
+| 9 | stale[bot] | 37 |  37 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 10 | rsyi | 32 |  14 | 5 | 1 | 0 | 1 | 1 | 4 | 0 |
+| 11 | friendtocephalopods | 31 |  5 | 1 | 3 | 0 | 3 | 6 | 12 | 5 |
 | 12 | ajbosco | 31 |  1 | 1 | 3 | 1 | 3 | 7 | 645 | 327 |
-| 13 | friendtocephalopods | 31 |  5 | 1 | 3 | 0 | 3 | 6 | 12 | 5 |
-| 14 | Jwan622 | 27 |  7 | 2 | 0 | 4 | 0 | 0 | 0 | 0 |
-| 15 | ibnipun10 | 23 |  8 | 2 | 2 | 0 | 1 | 1 | 1 | 1 |
-| 16 | dmateusp | 21 |  3 | 1 | 2 | 0 | 2 | 6 | 18 | 0 |
-| 17 | pemmasanikrishna | 21 |  1 | 0 | 2 | 1 | 2 | 2 | 12 | 1 |
-| 18 | jdavidheiser | 20 |  6 | 7 | 0 | 0 | 0 | 0 | 0 | 0 |
-| 19 | alran | 20 |  8 | 2 | 1 | 0 | 1 | 1 | 1 | 0 |
-| 20 | jacobhjkim | 19 |  4 | 0 | 2 | 1 | 1 | 2 | 3 | 3 |
+| 13 | Jwan622 | 27 |  7 | 2 | 0 | 4 | 0 | 0 | 0 | 0 |
+| 14 | ibnipun10 | 23 |  8 | 2 | 2 | 0 | 1 | 1 | 1 | 1 |
+| 15 | dmateusp | 21 |  3 | 1 | 2 | 0 | 2 | 6 | 18 | 0 |
+| 16 | pemmasanikrishna | 21 |  1 | 0 | 2 | 1 | 2 | 2 | 12 | 1 |
+| 17 | jdavidheiser | 20 |  6 | 7 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 18 | alran | 20 |  8 | 2 | 1 | 0 | 1 | 1 | 1 | 0 |
+| 19 | jacobhjkim | 19 |  4 | 0 | 2 | 1 | 1 | 2 | 3 | 3 |
+| 20 | danwom | 17 |  3 | 1 | 1 | 1 | 1 | 1 | 2 | 2 |
 
 - pyro-ppl/pyro
 
@@ -406,9 +404,9 @@ We also calculate the top 20 developers data and the data is as follows.
 | 2 | fehiepsi | 1318 |  115 | 5 | 39 | 224 | 36 | 165 | 3017 | 1446 |
 | 3 | martinjankowiak | 1132 |  72 | 1 | 23 | 221 | 21 | 117 | 1580 | 206 |
 | 4 | stefanwebb | 591 |  79 | 2 | 32 | 68 | 28 | 184 | 5365 | 1607 |
-| 5 | eb8680 | 554 |  70 | 3 | 25 | 77 | 19 | 158 | 6187 | 265 |
+| 5 | eb8680 | 561 |  74 | 3 | 26 | 77 | 19 | 158 | 6187 | 265 |
 | 6 | neerajprad | 445 |  55 | 4 | 14 | 75 | 8 | 27 | 568 | 129 |
-| 7 | ordabayevy | 162 |  26 | 4 | 8 | 21 | 4 | 49 | 689 | 32 |
+| 7 | ordabayevy | 172 |  28 | 4 | 8 | 23 | 4 | 49 | 689 | 32 |
 | 8 | ecotner | 149 |  22 | 2 | 4 | 24 | 3 | 35 | 630 | 16 |
 | 9 | ucals | 78 |  15 | 0 | 7 | 8 | 2 | 11 | 1007 | 0 |
 | 10 | garrett-bernstein | 41 |  5 | 0 | 2 | 5 | 2 | 8 | 162 | 14 |
@@ -427,33 +425,33 @@ We also calculate the top 20 developers data and the data is as follows.
 
 | # | login | activity | issue_comment | open_issue | open_pull | pull_review_comment | merge_pull | pull_commits | pull_additions | pull_deletions |
 |:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
-| 1 | feast-ci-bot | 4832 |  4832 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| 2 | pyalex | 2187 |  396 | 3 | 112 | 236 | 101 | 470 | 24829 | 13557 |
-| 3 | mrzzy | 1613 |  220 | 14 | 51 | 248 | 44 | 449 | 23822 | 7441 |
-| 4 | terryyylim | 1420 |  133 | 1 | 74 | 182 | 67 | 307 | 17781 | 31956 |
-| 5 | oavdeev | 613 |  68 | 0 | 33 | 74 | 30 | 52 | 4800 | 1263 |
-| 6 | jmelinav | 370 |  64 | 1 | 11 | 59 | 7 | 31 | 3119 | 545 |
-| 7 | dr3s | 315 |  70 | 3 | 3 | 55 | 2 | 21 | 1867 | 272 |
-| 8 | tsotnet | 206 |  12 | 2 | 5 | 40 | 3 | 22 | 1126 | 100 |
-| 9 | SwampertX | 129 |  4 | 3 | 5 | 21 | 4 | 35 | 791 | 211 |
-| 10 | stale[bot] | 73 |  73 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| 11 | mike0sv | 62 |  20 | 4 | 4 | 3 | 2 | 20 | 91 | 39 |
-| 12 | jklegar | 40 |  5 | 0 | 4 | 2 | 3 | 11 | 377 | 68 |
-| 13 | Wirick | 37 |  10 | 0 | 5 | 3 | 0 | 0 | 0 | 0 |
-| 14 | oavdeev-tt | 34 |  6 | 0 | 2 | 3 | 2 | 2 | 28 | 2 |
-| 15 | dependabot[bot] | 33 |  7 | 0 | 7 | 0 | 1 | 1 | 1 | 1 |
-| 16 | ravdin | 32 |  5 | 0 | 1 | 6 | 0 | 0 | 0 | 0 |
-| 17 | Andrew32bit | 27 |  17 | 5 | 0 | 0 | 0 | 0 | 0 | 0 |
-| 18 | zhangchi1 | 25 |  8 | 1 | 1 | 3 | 0 | 0 | 0 | 0 |
-| 19 | duongnt | 21 |  1 | 2 | 2 | 0 | 2 | 2 | 13 | 13 |
-| 20 | AnujaVane | 19 |  1 | 0 | 3 | 1 | 1 | 8 | 9 | 1 |
+| 1 | woop | 5670 |  1090 | 65 | 68 | 984 | 62 | 261 | 24488 | 74912 |
+| 2 | feast-ci-bot | 4857 |  4857 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 3 | pyalex | 2206 |  398 | 3 | 112 | 239 | 102 | 494 | 25794 | 13663 |
+| 4 | mrzzy | 1613 |  220 | 14 | 51 | 248 | 44 | 449 | 23822 | 7441 |
+| 5 | terryyylim | 1429 |  134 | 1 | 75 | 182 | 68 | 311 | 17831 | 31960 |
+| 6 | oavdeev | 617 |  68 | 0 | 33 | 75 | 30 | 52 | 4800 | 1263 |
+| 7 | jmelinav | 370 |  64 | 1 | 11 | 59 | 7 | 31 | 3119 | 545 |
+| 8 | dr3s | 315 |  70 | 3 | 3 | 55 | 2 | 21 | 1867 | 272 |
+| 9 | tsotnet | 206 |  12 | 2 | 5 | 40 | 3 | 22 | 1126 | 100 |
+| 10 | SwampertX | 129 |  4 | 3 | 5 | 21 | 4 | 35 | 791 | 211 |
+| 11 | stale[bot] | 75 |  75 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 12 | mike0sv | 62 |  20 | 4 | 4 | 3 | 2 | 20 | 91 | 39 |
+| 13 | jklegar | 56 |  5 | 0 | 5 | 4 | 4 | 12 | 426 | 68 |
+| 14 | oavdeev-tt | 38 |  6 | 0 | 2 | 4 | 2 | 2 | 28 | 2 |
+| 15 | Wirick | 37 |  10 | 0 | 5 | 3 | 0 | 0 | 0 | 0 |
+| 16 | dependabot[bot] | 33 |  7 | 0 | 7 | 0 | 1 | 1 | 1 | 1 |
+| 17 | ravdin | 32 |  5 | 0 | 1 | 6 | 0 | 0 | 0 | 0 |
+| 18 | Andrew32bit | 27 |  17 | 5 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 19 | zhangchi1 | 25 |  8 | 1 | 1 | 3 | 0 | 0 | 0 | 0 |
+| 20 | duongnt | 21 |  1 | 2 | 2 | 0 | 2 | 2 | 13 | 13 |
 
 - sparklyr/sparklyr
 
 | # | login | activity | issue_comment | open_issue | open_pull | pull_review_comment | merge_pull | pull_commits | pull_additions | pull_deletions |
 |:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
-| 1 | yl790 | 3307 |  415 | 104 | 349 | 23 | 309 | 857 | 195310 | 102819 |
-| 2 | falaki | 830 |  571 | 4 | 21 | 27 | 16 | 65 | 512 | 109 |
+| 1 | yl790 | 3319 |  416 | 105 | 352 | 23 | 309 | 857 | 195310 | 102819 |
+| 2 | falaki | 833 |  574 | 4 | 21 | 27 | 16 | 65 | 512 | 109 |
 | 3 | javierluraschi | 287 |  49 | 10 | 15 | 22 | 17 | 68 | 4626 | 8454 |
 | 4 | Loquats | 112 |  12 | 0 | 11 | 8 | 7 | 43 | 309 | 49 |
 | 5 | nealrichardson | 60 |  12 | 4 | 4 | 2 | 4 | 17 | 173 | 403 |
@@ -461,7 +459,7 @@ We also calculate the top 20 developers data and the data is as follows.
 | 7 | wkdavis | 40 |  10 | 1 | 2 | 3 | 2 | 7 | 354 | 5 |
 | 8 | yitao-li | 37 |  6 | 0 | 3 | 3 | 2 | 4 | 235 | 2 |
 | 9 | zero323 | 33 |  5 | 0 | 3 | 1 | 3 | 5 | 366 | 0 |
-| 10 | sbottelli | 28 |  14 | 7 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 10 | sbottelli | 30 |  14 | 8 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 11 | lu-wang-dl | 24 |  1 | 0 | 3 | 1 | 2 | 9 | 51 | 17 |
 | 12 | SieSiongWong | 20 |  18 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 13 | kevinykuo | 16 |  3 | 0 | 0 | 2 | 1 | 8 | 34 | 9 |
@@ -490,20 +488,22 @@ We also calculate the top 20 developers data and the data is as follows.
 
 | # | login | activity | issue_comment | open_issue | open_pull | pull_review_comment | merge_pull | pull_commits | pull_additions | pull_deletions |
 |:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
-| 1 | minhitbk | 919 |  19 | 5 | 27 | 171 | 25 | 886 | 18547 | 2923 |
-| 2 | ebubae | 432 |  14 | 8 | 21 | 61 | 19 | 452 | 8149 | 1210 |
-| 3 | hesseltuinhof | 401 |  15 | 10 | 22 | 50 | 20 | 95 | 6798 | 1067 |
-| 4 | killianlevacher | 389 |  5 | 17 | 15 | 65 | 9 | 1064 | 15095 | 11384 |
-| 5 | dependabot[bot] | 318 |  8 | 0 | 45 | 0 | 35 | 72 | 53 | 53 |
-| 6 | abigailgold | 89 |  4 | 0 | 8 | 9 | 5 | 73 | 2713 | 64 |
-| 7 | davidslater | 64 |  25 | 10 | 2 | 2 | 1 | 7 | 67 | 527 |
-| 8 | codecov-io | 36 |  36 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| 9 | codecov-commenter | 35 |  35 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| 10 | superctj | 25 |  19 | 3 | 0 | 0 | 0 | 0 | 0 | 0 |
-| 11 | Embeddave | 17 |  15 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
-| 12 | joelma1 | 11 |  5 | 3 | 0 | 0 | 0 | 0 | 0 | 0 |
-| 13 | hornel | 11 |  1 | 1 | 1 | 0 | 1 | 7 | 16 | 8 |
-| 14 | zacps | 11 |  1 | 1 | 1 | 0 | 1 | 4 | 69 | 53 |
+| 1 | beat-buesser | 6065 |  362 | 63 | 131 | 1141 | 124 | 5554 | 151573 | 62678 |
+| 2 | minhitbk | 919 |  19 | 5 | 27 | 171 | 25 | 886 | 18547 | 2923 |
+| 3 | ebubae | 432 |  14 | 8 | 21 | 61 | 19 | 452 | 8149 | 1210 |
+| 4 | hesseltuinhof | 401 |  15 | 10 | 22 | 50 | 20 | 95 | 6798 | 1067 |
+| 5 | killianlevacher | 391 |  5 | 18 | 15 | 65 | 9 | 1064 | 15095 | 11384 |
+| 6 | dependabot[bot] | 318 |  8 | 0 | 45 | 0 | 35 | 72 | 53 | 53 |
+| 7 | mathsinn | 201 |  24 | 3 | 12 | 20 | 11 | 64 | 1803 | 203 |
+| 8 | abigailgold | 89 |  4 | 0 | 8 | 9 | 5 | 73 | 2713 | 64 |
+| 9 | davidslater | 64 |  25 | 10 | 2 | 2 | 1 | 7 | 67 | 527 |
+| 10 | codecov-io | 36 |  36 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 11 | codecov-commenter | 35 |  35 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 12 | superctj | 25 |  19 | 3 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 13 | Embeddave | 17 |  15 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 14 | joelma1 | 11 |  5 | 3 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 15 | hornel | 11 |  1 | 1 | 1 | 0 | 1 | 7 | 16 | 8 |
+| 16 | zacps | 11 |  1 | 1 | 1 | 0 | 1 | 4 | 69 | 53 |
 
 - IBM/AIF360
 
@@ -513,11 +513,12 @@ We also calculate the top 20 developers data and the data is as follows.
 | 2 | SSaishruthi | 104 |  13 | 4 | 4 | 14 | 3 | 65 | 34604 | 32 |
 | 3 | pronics2004 | 69 |  5 | 0 | 1 | 14 | 1 | 9 | 224 | 563 |
 | 4 | sethneel | 68 |  1 | 0 | 3 | 12 | 2 | 162 | 4320 | 8 |
-| 5 | jimbudarz | 44 |  12 | 0 | 4 | 0 | 4 | 6 | 20 | 10 |
-| 6 | animeshsingh | 30 |  6 | 0 | 2 | 2 | 2 | 2 | 0 | 2 |
-| 7 | romeokienzler | 23 |  2 | 0 | 2 | 0 | 3 | 8 | 634 | 2 |
-| 8 | bhavyaghai | 21 |  5 | 0 | 1 | 2 | 1 | 4 | 21 | 0 |
-| 9 | motapaolla | 11 |  1 | 1 | 1 | 0 | 1 | 1 | 2 | 2 |
+| 5 | nrkarthikeyan | 62 |  6 | 0 | 0 | 14 | 0 | 0 | 0 | 0 |
+| 6 | jimbudarz | 44 |  12 | 0 | 4 | 0 | 4 | 6 | 20 | 10 |
+| 7 | animeshsingh | 30 |  6 | 0 | 2 | 2 | 2 | 2 | 0 | 2 |
+| 8 | romeokienzler | 23 |  2 | 0 | 2 | 0 | 3 | 8 | 634 | 2 |
+| 9 | bhavyaghai | 21 |  5 | 0 | 1 | 2 | 1 | 4 | 21 | 0 |
+| 10 | motapaolla | 11 |  1 | 1 | 1 | 0 | 1 | 1 | 2 | 2 |
 
 - PaddlePaddle/edl
 
@@ -530,24 +531,24 @@ We also calculate the top 20 developers data and the data is as follows.
 
 | # | login | activity | issue_comment | open_issue | open_pull | pull_review_comment | merge_pull | pull_commits | pull_additions | pull_deletions |
 |:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
-| 1 | yhmo | 2904 |  537 | 105 | 282 | 4 | 259 | 1571 | 178708 | 122633 |
-| 2 | del-zhenwu | 2667 |  419 | 419 | 184 | 2 | 170 | 1169 | 36324 | 28820 |
+| 1 | yhmo | 2919 |  544 | 105 | 283 | 4 | 260 | 1573 | 178714 | 122650 |
+| 2 | del-zhenwu | 2679 |  419 | 421 | 185 | 2 | 171 | 1184 | 36405 | 28882 |
 | 3 | cydrain | 1910 |  100 | 86 | 159 | 114 | 141 | 846 | 43151 | 30780 |
-| 4 | BossZou | 1642 |  331 | 82 | 139 | 35 | 118 | 1062 | 21941 | 12725 |
-| 5 | shengjun1985 | 1565 |  314 | 30 | 145 | 14 | 140 | 515 | 55298 | 61449 |
-| 6 | JinHai-CN | 1226 |  366 | 51 | 79 | 49 | 65 | 1232 | 52868 | 25715 |
-| 7 | fishpenguin | 1032 |  140 | 30 | 106 | 1 | 102 | 1142 | 152075 | 91412 |
-| 8 | scsven | 964 |  109 | 18 | 96 | 19 | 91 | 409 | 58788 | 22601 |
+| 4 | BossZou | 1646 |  335 | 82 | 139 | 35 | 118 | 1062 | 21941 | 12725 |
+| 5 | shengjun1985 | 1581 |  317 | 30 | 146 | 14 | 142 | 522 | 55504 | 61514 |
+| 6 | JinHai-CN | 1233 |  369 | 51 | 79 | 50 | 65 | 1232 | 52868 | 25715 |
+| 7 | fishpenguin | 1045 |  148 | 30 | 106 | 1 | 103 | 1143 | 152085 | 91434 |
+| 8 | scsven | 970 |  115 | 18 | 96 | 19 | 91 | 409 | 58788 | 22601 |
 | 9 | youny626 | 928 |  55 | 16 | 107 | 0 | 104 | 494 | 25630 | 10157 |
-| 10 | codecov[bot] | 857 |  857 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 10 | codecov[bot] | 858 |  858 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 11 | ZhifengZhang-CN | 772 |  15 | 29 | 88 | 5 | 83 | 708 | 3494 | 2809 |
-| 12 | XuPeng-SH | 606 |  18 | 22 | 69 | 3 | 65 | 861 | 17927 | 4261 |
-| 13 | sahuang | 523 |  126 | 26 | 35 | 20 | 32 | 295 | 22661 | 12751 |
-| 14 | ThreadDao | 516 |  35 | 77 | 49 | 0 | 36 | 156 | 16079 | 7322 |
+| 12 | XuPeng-SH | 613 |  18 | 23 | 69 | 3 | 66 | 864 | 17943 | 4269 |
+| 13 | sahuang | 524 |  127 | 26 | 35 | 20 | 32 | 295 | 22661 | 12751 |
+| 14 | ThreadDao | 523 |  35 | 78 | 49 | 0 | 37 | 159 | 16096 | 7322 |
 | 15 | yamasite | 482 |  47 | 31 | 37 | 28 | 30 | 103 | 3467 | 1287 |
 | 16 | XuanYang-cn | 435 |  13 | 17 | 51 | 0 | 47 | 245 | 2750 | 2601 |
 | 17 | godchen0212 | 431 |  16 | 4 | 54 | 0 | 49 | 171 | 4259 | 2846 |
-| 18 | op-hunter | 421 |  19 | 10 | 49 | 0 | 47 | 321 | 15685 | 3500 |
+| 18 | op-hunter | 426 |  19 | 10 | 49 | 0 | 48 | 328 | 15716 | 3581 |
 | 19 | tinkerlin | 364 |  158 | 4 | 24 | 4 | 22 | 98 | 2791 | 295 |
 | 20 | cqy123456 | 279 |  10 | 2 | 35 | 0 | 32 | 175 | 1919 | 1818 |
 
@@ -577,8 +578,8 @@ We also calculate the top 20 developers data and the data is as follows.
 |:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
 | 1 | zh794390558 | 209 |  12 | 4 | 21 | 9 | 18 | 62 | 6417 | 5089 |
 | 2 | xhyandwyy | 52 |  4 | 0 | 6 | 0 | 6 | 20 | 1749 | 752 |
-| 3 | applenob | 24 |  4 | 0 | 0 | 5 | 0 | 0 | 0 | 0 |
-| 4 | stale[bot] | 23 |  23 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 3 | stale[bot] | 25 |  25 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 4 | applenob | 24 |  4 | 0 | 0 | 5 | 0 | 0 | 0 | 0 |
 
 - odpi/OpenDS4All
 
@@ -591,50 +592,36 @@ We also calculate the top 20 developers data and the data is as follows.
 | 5 | jmertic | 17 |  6 | 0 | 2 | 0 | 1 | 1 | 0 | 0 |
 | 6 | leestott | 17 |  1 | 0 | 2 | 0 | 2 | 2 | 19 | 4 |
 
-- ludwig-ai/ludwig
-
-| # | login | activity | issue_comment | open_issue | open_pull | pull_review_comment | merge_pull | pull_commits | pull_additions | pull_deletions |
-|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
-| 1 | milyiyo | 18 |  2 | 0 | 2 | 0 | 2 | 4 | 11 | 15 |
-| 2 | modernlearner | 12 |  2 | 1 | 1 | 0 | 1 | 3 | 11 | 0 |
-
 - gojek/feast
 
 | # | login | activity | issue_comment | open_issue | open_pull | pull_review_comment | merge_pull | pull_commits | pull_additions | pull_deletions |
 |:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
-| 1 | woop | 5669 |  1089 | 65 | 68 | 984 | 62 | 261 | 24488 | 74912 |
-| 2 | zhilingc | 1451 |  224 | 12 | 66 | 175 | 61 | 181 | 40904 | 14655 |
-| 3 | khorshuheng | 1130 |  216 | 4 | 82 | 65 | 80 | 152 | 22078 | 15346 |
-| 4 | ches | 820 |  230 | 11 | 28 | 86 | 28 | 51 | 4687 | 2553 |
-| 5 | davidheryanto | 511 |  97 | 2 | 29 | 47 | 27 | 83 | 6826 | 5117 |
-| 6 | imjuanleonard | 221 |  36 | 8 | 6 | 34 | 3 | 28 | 453 | 142 |
-| 7 | Yanson | 126 |  53 | 1 | 8 | 3 | 7 | 11 | 1135 | 368 |
-| 8 | lavkesh | 90 |  6 | 0 | 3 | 15 | 3 | 23 | 2596 | 215 |
-| 9 | Joostrothweiler | 76 |  16 | 1 | 6 | 5 | 4 | 10 | 248 | 28 |
-| 10 | suwik | 46 |  2 | 0 | 1 | 9 | 1 | 1 | 3 | 13 |
-| 11 | Jeffwan | 45 |  13 | 2 | 1 | 5 | 1 | 1 | 66 | 37 |
-| 12 | ashwinath | 43 |  4 | 1 | 3 | 2 | 4 | 11 | 156 | 30 |
-| 13 | lgvital | 40 |  23 | 3 | 2 | 0 | 1 | 1 | 105 | 41 |
-| 14 | gracechristina | 28 |  1 | 0 | 1 | 6 | 0 | 0 | 0 | 0 |
-| 15 | heysachin | 27 |  5 | 0 | 4 | 0 | 2 | 3 | 6 | 5 |
-| 16 | pmjacinto | 20 |  3 | 7 | 1 | 0 | 0 | 0 | 0 | 0 |
-| 17 | junhui096 | 18 |  1 | 0 | 4 | 0 | 1 | 4 | 42 | 24 |
-| 18 | avolution | 16 |  5 | 4 | 1 | 0 | 0 | 0 | 0 | 0 |
-| 19 | idahoakl | 15 |  11 | 2 | 0 | 0 | 0 | 0 | 0 | 0 |
-| 20 | ricgu8086 | 12 |  1 | 0 | 1 | 2 | 0 | 0 | 0 | 0 |
+| 1 | zhilingc | 1451 |  224 | 12 | 66 | 175 | 61 | 181 | 40904 | 14655 |
+| 2 | khorshuheng | 1136 |  216 | 4 | 84 | 65 | 80 | 152 | 22078 | 15346 |
+| 3 | ches | 820 |  230 | 11 | 28 | 86 | 28 | 51 | 4687 | 2553 |
+| 4 | davidheryanto | 511 |  97 | 2 | 29 | 47 | 27 | 83 | 6826 | 5117 |
+| 5 | imjuanleonard | 221 |  36 | 8 | 6 | 34 | 3 | 28 | 453 | 142 |
+| 6 | Yanson | 126 |  53 | 1 | 8 | 3 | 7 | 11 | 1135 | 368 |
+| 7 | lavkesh | 90 |  6 | 0 | 3 | 15 | 3 | 23 | 2596 | 215 |
+| 8 | Joostrothweiler | 78 |  16 | 2 | 6 | 5 | 4 | 10 | 248 | 28 |
+| 9 | suwik | 46 |  2 | 0 | 1 | 9 | 1 | 1 | 3 | 13 |
+| 10 | Jeffwan | 45 |  13 | 2 | 1 | 5 | 1 | 1 | 66 | 37 |
+| 11 | ashwinath | 43 |  4 | 1 | 3 | 2 | 4 | 11 | 156 | 30 |
+| 12 | lgvital | 40 |  23 | 3 | 2 | 0 | 1 | 1 | 105 | 41 |
+| 13 | gracechristina | 28 |  1 | 0 | 1 | 6 | 0 | 0 | 0 | 0 |
+| 14 | heysachin | 27 |  5 | 0 | 4 | 0 | 2 | 3 | 6 | 5 |
+| 15 | pmjacinto | 20 |  3 | 7 | 1 | 0 | 0 | 0 | 0 | 0 |
+| 16 | junhui096 | 18 |  1 | 0 | 4 | 0 | 1 | 4 | 42 | 24 |
+| 17 | avolution | 16 |  5 | 4 | 1 | 0 | 0 | 0 | 0 | 0 |
+| 18 | idahoakl | 15 |  11 | 2 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 19 | ricgu8086 | 12 |  1 | 0 | 1 | 2 | 0 | 0 | 0 | 0 |
+| 20 | pradithya | 11 |  3 | 0 | 0 | 2 | 0 | 0 | 0 | 0 |
 
 - Trusted-AI/AIX360
 
 | # | login | activity | issue_comment | open_issue | open_pull | pull_review_comment | merge_pull | pull_commits | pull_additions | pull_deletions |
 |:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
 | 1 | gaborpelesz | 20 |  6 | 3 | 1 | 0 | 1 | 1 | 1 | 1 |
-
-- nnsuite/nnstreamer
-
-| # | login | activity | issue_comment | open_issue | open_pull | pull_review_comment | merge_pull | pull_commits | pull_additions | pull_deletions |
-|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
-| 1 | wooksong | 1637 |  73 | 17 | 84 | 217 | 82 | 124 | 9129 | 1508 |
-| 2 | ajarthurs | 13 |  3 | 1 | 1 | 0 | 1 | 1 | 1 | 0 |
 
 - IBM/AIX360
 
@@ -653,9 +640,8 @@ We also calculate the top 20 developers data and the data is as follows.
 
 | # | login | activity | issue_comment | open_issue | open_pull | pull_review_comment | merge_pull | pull_commits | pull_additions | pull_deletions |
 |:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
-| 1 | nrkarthikeyan | 62 |  6 | 0 | 0 | 14 | 0 | 0 | 0 | 0 |
-| 2 | gdequeiroz | 39 |  3 | 0 | 4 | 1 | 4 | 5 | 163 | 12 |
-| 3 | leenamurgai | 19 |  4 | 0 | 2 | 1 | 1 | 1 | 4 | 4 |
+| 1 | gdequeiroz | 39 |  3 | 0 | 4 | 1 | 4 | 5 | 163 | 12 |
+| 2 | leenamurgai | 19 |  4 | 0 | 2 | 1 | 1 | 1 | 4 | 4 |
 
 - ForestFlow/ForestFlow
 
@@ -667,22 +653,36 @@ We also calculate the top 20 developers data and the data is as follows.
 
 | # | login | activity | issue_comment | open_issue | open_pull | pull_review_comment | merge_pull | pull_commits | pull_additions | pull_deletions |
 |:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
-| 1 | dependabot-preview[bot] | 1562 |  3 | 1 | 194 | 0 | 195 | 195 | 195 | 195 |
+| 1 | dependabot-preview[bot] | 1567 |  3 | 1 | 194 | 0 | 196 | 196 | 196 | 196 |
 | 2 | Golodhros | 335 |  40 | 14 | 14 | 45 | 9 | 15 | 393 | 210 |
 | 3 | markgrover | 137 |  12 | 1 | 10 | 12 | 9 | 9 | 56 | 35 |
 | 4 | dorianj | 78 |  37 | 3 | 3 | 4 | 2 | 4 | 16 | 2 |
-| 5 | pPanda-beta | 48 |  25 | 8 | 1 | 1 | 0 | 0 | 0 | 0 |
-| 6 | verdan | 28 |  22 | 3 | 0 | 0 | 0 | 0 | 0 | 0 |
-| 7 | allcontributors[bot] | 27 |  7 | 0 | 5 | 0 | 1 | 11 | 40 | 1 |
-| 8 | AustinBGibbons | 26 |  12 | 3 | 1 | 0 | 1 | 1 | 1 | 1 |
-| 9 | instazackwu | 25 |  5 | 2 | 2 | 0 | 2 | 4 | 13 | 1 |
-| 10 | higee | 21 |  2 | 0 | 2 | 2 | 1 | 2 | 1 | 0 |
-| 11 | madison-ookla | 20 |  6 | 1 | 1 | 1 | 1 | 1 | 7 | 4 |
-| 12 | lexisantoro | 18 |  1 | 0 | 4 | 0 | 1 | 1 | 1 | 0 |
-| 13 | sterlins | 17 |  3 | 1 | 1 | 1 | 1 | 1 | 2 | 2 |
-| 14 | NiravLangaliya | 16 |  8 | 4 | 0 | 0 | 0 | 0 | 0 | 0 |
-| 15 | Wonong | 15 |  3 | 2 | 1 | 0 | 1 | 1 | 1 | 1 |
-| 16 | allisonsuarez | 15 |  3 | 2 | 1 | 0 | 1 | 1 | 61 | 0 |
+| 5 | mgorsk1 | 60 |  13 | 1 | 4 | 2 | 5 | 8 | 62 | 49 |
+| 6 | pPanda-beta | 48 |  25 | 8 | 1 | 1 | 0 | 0 | 0 | 0 |
+| 7 | instazackwu | 28 |  6 | 3 | 2 | 0 | 2 | 4 | 13 | 1 |
+| 8 | verdan | 28 |  22 | 3 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 9 | allcontributors[bot] | 27 |  7 | 0 | 5 | 0 | 1 | 11 | 40 | 1 |
+| 10 | AustinBGibbons | 26 |  12 | 3 | 1 | 0 | 1 | 1 | 1 | 1 |
+| 11 | higee | 21 |  2 | 0 | 2 | 2 | 1 | 2 | 1 | 0 |
+| 12 | madison-ookla | 20 |  6 | 1 | 1 | 1 | 1 | 1 | 7 | 4 |
+| 13 | lexisantoro | 18 |  1 | 0 | 4 | 0 | 1 | 1 | 1 | 0 |
+| 14 | sterlins | 17 |  3 | 1 | 1 | 1 | 1 | 1 | 2 | 2 |
+| 15 | NiravLangaliya | 16 |  8 | 4 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 16 | Wonong | 15 |  3 | 2 | 1 | 0 | 1 | 1 | 1 | 1 |
+| 17 | allisonsuarez | 15 |  3 | 2 | 1 | 0 | 1 | 1 | 61 | 0 |
+
+- nnsuite/nnstreamer
+
+| # | login | activity | issue_comment | open_issue | open_pull | pull_review_comment | merge_pull | pull_commits | pull_additions | pull_deletions |
+|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
+| 1 | helloahn | 609 |  16 | 2 | 28 | 95 | 25 | 28 | 1445 | 264 |
+| 2 | ajarthurs | 13 |  3 | 1 | 1 | 0 | 1 | 1 | 1 | 0 |
+
+- ludwig-ai/ludwig
+
+| # | login | activity | issue_comment | open_issue | open_pull | pull_review_comment | merge_pull | pull_commits | pull_additions | pull_deletions |
+|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
+| 1 | modernlearner | 12 |  2 | 1 | 1 | 0 | 1 | 3 | 11 | 0 |
 
 - elasticdeeplearning/edl
 
@@ -706,11 +706,11 @@ We analyze the working hour distribution for LF AI & Data during year 2020, and 
 
 - Trusted-AI/AIF360
 
-<embed src="http://gar2020.opensource-service.cn/svgrenderer/github/X-lab2017/github-analysis-report?path=sqls/working-hour-distribution/image.svg&data=[2,1,2,1,2,3,1,2,2,4,2,1,3,1,5,4,3,2,2,2,7,4,4,5,3,1,1,2,1,2,2,2,1,2,1,2,4,5,5,2,6,3,4,4,4,4,7,3,2,1,3,2,3,1,1,2,1,2,2,1,2,4,5,4,1,3,7,5,10,4,5,2,3,2,4,1,1,1,1,2,2,1,2,1,3,4,6,6,3,1,4,6,4,5,2,1,0,2,2,2,2,1,1,1,1,3,2,2,1,1,1,4,6,4,7,4,2,2,2,2,1,1,1,1,1,0,1,1,1,1,2,1,1,2,1,1,4,1,1,1,0,2,1,1,1,1,1,2,1,0,1,1,1,1,1,1,1,1,2,1,2,0,2,2,1,1,1,1]&lang=en" style="width:600" />
+<embed src="http://gar2020.opensource-service.cn/svgrenderer/github/X-lab2017/github-analysis-report?path=sqls/working-hour-distribution/image.svg&data=[2,1,2,1,2,3,1,2,2,4,2,1,3,1,5,4,3,2,2,2,7,4,4,5,3,1,1,2,1,2,2,2,1,2,1,2,4,5,5,2,6,3,4,4,4,4,7,3,2,1,3,2,3,2,1,2,1,2,2,1,2,4,5,4,1,3,7,5,10,4,5,2,3,2,4,1,1,1,1,2,2,1,3,1,3,4,6,6,3,1,4,6,4,5,2,1,0,2,2,2,2,1,1,1,1,3,2,2,1,1,1,4,6,4,7,4,2,2,2,2,1,1,1,1,1,0,1,1,1,1,2,1,1,2,1,1,4,1,1,1,0,2,1,1,1,1,1,2,1,0,1,1,1,1,1,1,1,1,2,1,2,0,2,2,1,1,1,1]&lang=en" style="width:600" />
 
 - sparklyr/sparklyr
 
-<embed src="http://gar2020.opensource-service.cn/svgrenderer/github/X-lab2017/github-analysis-report?path=sqls/working-hour-distribution/image.svg&data=[1,0,1,1,1,1,1,1,1,1,3,4,3,7,5,5,9,6,6,5,5,4,5,2,1,0,1,1,1,1,1,2,2,1,2,5,6,6,9,8,7,10,9,4,4,3,3,3,2,2,1,1,1,2,1,1,1,1,3,3,4,3,5,9,10,7,8,5,3,3,3,3,3,3,2,3,1,1,1,2,2,2,3,4,8,6,5,4,6,8,9,5,4,4,3,3,2,1,3,1,1,1,1,1,1,1,4,4,5,2,4,5,5,3,6,5,4,3,3,3,4,3,1,1,1,1,1,0,1,0,1,0,0,0,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1]&lang=en" style="width:600" />
+<embed src="http://gar2020.opensource-service.cn/svgrenderer/github/X-lab2017/github-analysis-report?path=sqls/working-hour-distribution/image.svg&data=[1,0,1,1,1,1,1,1,1,1,3,4,3,7,5,5,9,6,6,5,5,4,5,2,1,0,1,1,1,1,1,2,2,1,2,5,6,6,9,8,7,10,9,4,4,3,3,3,2,2,1,1,1,2,1,1,1,1,3,3,4,3,5,9,10,7,8,5,3,3,3,3,3,4,2,3,1,1,1,2,2,2,3,4,8,6,5,4,6,8,9,5,4,4,3,3,2,1,3,1,1,1,1,1,1,1,4,4,5,2,4,5,5,3,6,5,4,3,3,3,4,3,1,1,1,1,1,0,1,0,1,0,0,0,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1]&lang=en" style="width:600" />
 
 - Trusted-AI/adversarial-robustness-toolbox
 
@@ -718,35 +718,35 @@ We analyze the working hour distribution for LF AI & Data during year 2020, and 
 
 - MarquezProject/marquez
 
-<embed src="http://gar2020.opensource-service.cn/svgrenderer/github/X-lab2017/github-analysis-report?path=sqls/working-hour-distribution/image.svg&data=[1,1,0,1,1,2,2,1,1,1,1,0,1,1,2,2,2,2,5,2,2,3,3,10,2,4,2,1,4,1,3,2,2,1,1,1,1,1,2,1,2,1,3,5,2,1,3,3,4,1,2,1,2,1,2,1,1,1,1,1,1,1,1,2,0,1,4,4,4,6,3,3,1,1,1,1,3,2,6,1,1,1,1,1,1,1,1,2,2,2,2,2,4,4,4,2,7,2,1,2,1,2,2,5,2,1,2,0,0,1,1,1,1,3,3,5,2,1,1,2,2,1,1,1,1,2,1,2,1,1,1,0,0,1,1,0,1,2,3,5,6,4,1,1,0,1,5,2,2,2,1,1,1,1,1,1,0,1,1,1,2,3,6,2,1,1,1,1]&lang=en" style="width:600" />
+<embed src="http://gar2020.opensource-service.cn/svgrenderer/github/X-lab2017/github-analysis-report?path=sqls/working-hour-distribution/image.svg&data=[1,1,0,1,1,2,2,1,1,1,1,0,1,1,2,2,2,2,5,2,2,3,3,10,2,4,2,1,4,1,3,2,2,1,1,1,1,1,2,1,2,1,3,5,2,1,3,3,4,1,2,1,2,1,2,1,1,1,1,1,1,1,1,2,0,1,4,4,4,6,3,3,1,1,1,1,3,2,6,1,1,1,1,1,1,1,1,2,2,2,2,2,4,4,4,2,7,2,1,2,1,2,2,5,2,1,2,0,0,1,1,1,1,3,3,5,2,1,2,2,2,1,1,1,1,2,1,2,1,1,1,0,0,1,1,0,1,2,3,5,6,4,1,1,0,1,5,2,2,2,1,1,1,1,1,1,0,1,1,1,2,3,6,2,1,1,1,1]&lang=en" style="width:600" />
 
 - Angel-ML/angel
 
-<embed src="http://gar2020.opensource-service.cn/svgrenderer/github/X-lab2017/github-analysis-report?path=sqls/working-hour-distribution/image.svg&data=[0,2,5,6,1,4,9,7,7,2,1,10,4,2,2,3,2,1,1,1,1,0,1,1,1,3,6,3,2,3,4,7,2,4,3,2,5,4,5,2,2,1,1,1,1,0,0,0,1,4,5,5,2,1,4,9,4,7,4,5,4,3,5,2,1,2,1,1,0,1,1,0,1,5,5,4,3,2,4,7,5,2,2,1,6,1,1,1,1,1,1,0,0,1,0,1,0,2,4,4,1,2,4,4,4,5,3,3,3,3,1,3,2,0,0,1,1,1,1,0,1,1,3,1,1,1,2,4,2,1,2,1,2,2,1,2,1,1,1,0,1,1,0,0,0,2,2,2,7,2,1,2,6,6,4,2,3,4,2,4,2,0,0,1,0,1,1,1]&lang=en" style="width:600" />
+<embed src="http://gar2020.opensource-service.cn/svgrenderer/github/X-lab2017/github-analysis-report?path=sqls/working-hour-distribution/image.svg&data=[0,2,5,6,1,4,9,7,7,2,1,10,4,2,2,3,2,1,1,1,1,0,1,1,1,3,6,3,2,3,4,7,2,4,3,2,5,4,5,2,2,1,1,1,1,0,0,0,1,4,5,5,2,1,4,9,4,7,4,5,4,3,5,2,1,2,1,1,0,1,1,0,1,5,5,4,3,2,4,7,5,2,2,1,6,1,1,1,1,1,1,0,0,1,0,1,0,2,4,4,1,2,4,4,4,6,3,3,3,3,1,3,2,0,0,1,1,1,1,0,1,1,3,1,1,1,2,4,2,1,2,1,2,2,1,2,1,1,1,0,1,1,0,0,0,2,2,2,7,2,1,2,6,6,4,2,3,4,2,4,2,0,0,1,0,1,1,1]&lang=en" style="width:600" />
 
 - milvus-io/milvus
 
-<embed src="http://gar2020.opensource-service.cn/svgrenderer/github/X-lab2017/github-analysis-report?path=sqls/working-hour-distribution/image.svg&data=[1,5,9,8,4,2,7,9,8,8,6,4,4,3,3,3,2,1,1,1,1,1,1,1,1,5,10,10,4,3,9,8,8,9,7,7,4,3,3,2,1,1,1,1,1,1,1,1,1,5,9,7,4,3,9,8,9,9,9,5,5,3,2,2,2,1,1,1,1,1,1,1,1,6,9,8,4,4,10,8,9,9,7,6,4,4,3,3,2,1,1,1,1,1,1,1,1,5,9,9,4,3,9,8,9,8,5,6,5,4,3,2,1,1,1,1,1,1,1,1,1,4,9,7,4,4,6,7,7,6,4,5,4,3,3,2,2,1,1,1,1,1,1,1,1,1,2,3,2,2,4,3,2,2,1,2,0,1,2,1,1,1,1,1,1,1,1,1]&lang=en" style="width:600" />
+<embed src="http://gar2020.opensource-service.cn/svgrenderer/github/X-lab2017/github-analysis-report?path=sqls/working-hour-distribution/image.svg&data=[1,5,9,8,4,2,7,9,8,8,6,4,5,3,3,3,2,1,1,1,1,1,1,1,1,5,10,10,4,3,9,8,8,10,7,7,4,3,3,2,1,1,1,1,1,1,1,1,1,5,10,8,4,3,9,8,9,8,9,5,5,3,2,2,2,1,1,1,1,1,1,1,1,6,9,8,4,4,10,8,8,9,7,6,4,4,3,3,2,1,1,1,1,1,1,1,1,5,9,9,4,3,8,7,9,8,5,6,4,4,3,2,1,1,1,1,1,1,1,1,1,4,9,7,4,4,6,7,6,6,4,5,4,3,3,2,2,1,1,1,1,1,1,1,1,1,2,3,2,2,4,3,2,2,1,2,0,1,2,2,1,1,1,1,1,1,1,1]&lang=en" style="width:600" />
 
 - acumos/documentation
 
 <embed src="http://gar2020.opensource-service.cn/svgrenderer/github/X-lab2017/github-analysis-report?path=sqls/working-hour-distribution/image.svg&data=[0,0,0,0,1,1,2,2,1,2,2,1,4,5,5,4,9,5,2,1,2,1,1,0,0,0,1,0,1,1,1,3,2,1,3,1,6,6,10,4,2,1,2,3,2,2,1,1,0,1,0,0,0,0,1,4,1,1,1,3,2,5,4,5,3,3,2,3,2,1,0,1,1,1,0,0,0,1,2,2,2,5,4,3,5,7,7,7,5,1,2,2,1,2,1,0,0,1,0,1,2,2,3,3,2,4,3,5,8,8,10,7,5,5,2,1,1,2,2,1,1,1,1,0,0,0,0,0,0,0,0,0,0,1,1,1,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,1,0,0,0,0]&lang=en" style="width:600" />
 
-- gojek/feast
+- feast-dev/feast
 
-<embed src="http://gar2020.opensource-service.cn/svgrenderer/github/X-lab2017/github-analysis-report?path=sqls/working-hour-distribution/image.svg&data=[1,6,8,8,8,7,9,9,9,8,8,5,4,6,5,3,3,2,1,2,1,1,1,2,2,5,9,10,8,7,7,10,9,9,7,5,3,4,4,3,3,2,2,1,1,1,1,2,2,4,8,5,8,6,9,9,9,7,7,5,3,6,4,3,2,2,2,2,1,1,1,2,3,5,6,10,7,9,9,8,7,9,6,4,3,4,3,2,3,2,2,2,2,2,2,1,3,7,6,6,5,8,9,10,10,5,4,3,2,2,4,1,2,1,1,1,1,1,1,1,1,2,2,4,3,3,4,4,4,3,3,3,2,1,2,1,2,1,1,1,1,1,1,1,1,2,3,3,4,2,3,4,2,2,3,2,1,2,2,2,3,1,1,1,1,1,1,1]&lang=en" style="width:600" />
+<embed src="http://gar2020.opensource-service.cn/svgrenderer/github/X-lab2017/github-analysis-report?path=sqls/working-hour-distribution/image.svg&data=[1,6,8,8,8,7,9,9,9,8,8,5,4,6,6,3,3,2,2,2,1,1,1,2,2,5,9,10,8,7,7,10,9,9,7,5,3,4,4,3,3,2,2,1,1,1,1,2,2,4,9,6,8,6,9,9,9,7,7,5,3,6,4,3,2,2,2,2,1,1,1,2,3,5,6,10,7,9,9,8,7,9,7,4,3,4,3,2,3,2,2,2,2,2,2,1,3,7,6,6,5,8,9,10,10,5,4,3,2,2,4,1,2,1,1,1,1,1,1,1,1,2,2,4,3,3,4,4,4,3,3,3,2,1,2,1,2,1,1,1,1,1,1,1,1,2,3,3,4,2,3,4,2,2,3,2,1,2,2,2,3,1,1,1,1,1,1,1]&lang=en" style="width:600" />
 
 - uber/ludwig
 
-<embed src="http://gar2020.opensource-service.cn/svgrenderer/github/X-lab2017/github-analysis-report?path=sqls/working-hour-distribution/image.svg&data=[4,6,4,3,3,3,2,2,2,2,1,2,2,2,2,2,2,2,4,3,4,5,4,6,7,6,4,4,2,1,3,2,2,2,2,2,2,1,2,1,2,2,2,4,3,5,4,5,8,7,5,5,5,1,2,2,2,1,2,2,2,2,2,3,3,3,4,4,6,4,4,4,6,10,6,5,3,1,2,3,1,2,1,1,2,3,2,2,2,3,2,4,4,5,6,5,6,10,7,4,3,2,3,3,2,2,2,1,2,2,1,3,2,1,2,2,5,4,3,6,6,5,4,3,2,3,2,2,2,1,1,1,2,1,2,3,2,2,6,6,5,5,5,6,6,6,5,4,3,3,2,2,2,1,2,1,2,1,1,2,2,2,3,4,4,4,5,4]&lang=en" style="width:600" />
+<embed src="http://gar2020.opensource-service.cn/svgrenderer/github/X-lab2017/github-analysis-report?path=sqls/working-hour-distribution/image.svg&data=[4,6,4,3,3,3,2,2,2,2,1,2,2,2,2,2,2,2,4,3,4,5,4,6,7,6,5,4,2,1,3,2,2,2,2,2,2,1,2,1,2,2,2,4,3,5,4,5,8,7,5,5,5,1,2,2,2,1,2,2,2,2,2,3,3,3,4,4,6,4,4,4,6,10,6,5,3,2,2,3,1,2,1,1,2,3,2,2,2,3,2,4,4,5,6,5,6,10,7,4,3,2,3,3,2,2,2,1,2,2,1,3,2,1,2,2,5,4,3,6,6,5,4,3,2,3,2,2,2,1,1,1,2,1,2,3,2,2,6,6,5,5,5,6,6,6,5,4,3,3,2,2,2,1,2,1,2,1,1,2,2,2,3,4,4,4,5,4]&lang=en" style="width:600" />
 
 - nnstreamer/nnstreamer
 
-<embed src="http://gar2020.opensource-service.cn/svgrenderer/github/X-lab2017/github-analysis-report?path=sqls/working-hour-distribution/image.svg&data=[1,2,5,4,7,6,6,9,8,6,10,6,2,2,1,1,1,1,1,1,1,1,1,1,3,4,9,6,6,4,5,8,7,6,10,6,3,1,2,1,1,1,1,1,1,1,1,1,2,5,8,5,7,8,8,9,8,5,9,5,3,2,2,1,1,1,1,1,0,0,1,1,2,5,8,7,7,10,9,10,7,5,7,6,3,1,2,1,1,1,1,1,1,1,1,1,2,7,8,4,8,10,10,9,6,4,4,4,3,2,1,1,1,1,0,1,1,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]&lang=en" style="width:600" />
+<embed src="http://gar2020.opensource-service.cn/svgrenderer/github/X-lab2017/github-analysis-report?path=sqls/working-hour-distribution/image.svg&data=[1,2,5,4,7,6,6,9,8,6,10,6,2,2,1,1,1,1,1,1,1,1,1,1,3,5,9,6,6,4,5,8,7,6,10,6,3,1,2,1,1,1,1,1,1,1,1,1,2,5,8,5,7,8,8,9,8,5,9,5,3,2,2,1,1,1,1,1,0,0,1,1,2,5,8,7,7,10,9,10,7,5,7,6,3,1,2,1,1,1,1,1,1,1,1,1,2,7,8,4,8,10,10,9,6,4,4,4,3,2,1,1,1,1,0,1,1,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]&lang=en" style="width:600" />
 
 - onnx/onnx
 
-<embed src="http://gar2020.opensource-service.cn/svgrenderer/github/X-lab2017/github-analysis-report?path=sqls/working-hour-distribution/image.svg&data=[2,4,4,3,3,3,3,3,4,3,3,2,2,2,3,3,7,6,5,4,5,7,6,6,6,6,6,4,4,4,4,4,3,4,3,2,3,3,3,5,9,7,8,6,4,8,7,6,10,5,5,4,4,3,5,5,5,5,3,2,4,3,3,4,8,7,9,8,5,6,8,5,4,7,4,6,3,3,6,5,5,7,2,2,2,4,3,4,5,6,8,7,6,5,5,7,6,7,4,4,2,3,3,4,5,4,3,3,3,3,3,3,4,6,6,5,6,5,5,4,5,4,4,3,1,2,2,2,1,1,1,1,2,1,1,1,1,2,2,1,1,1,1,1,2,2,1,1,1,1,1,2,2,1,2,2,2,2,1,2,2,1,1,1,1,2,2,1]&lang=en" style="width:600" />
+<embed src="http://gar2020.opensource-service.cn/svgrenderer/github/X-lab2017/github-analysis-report?path=sqls/working-hour-distribution/image.svg&data=[2,4,4,3,3,3,3,3,4,3,3,2,2,2,3,3,7,6,6,4,5,7,6,6,6,6,6,4,4,4,4,4,3,4,3,2,3,3,3,5,9,7,8,6,4,8,7,6,10,5,5,4,4,3,5,5,5,5,3,2,4,3,3,4,8,7,9,8,5,6,8,5,4,7,4,6,3,3,6,5,5,7,2,2,2,4,3,4,5,6,8,7,6,5,5,7,6,7,4,4,2,3,3,4,5,4,3,3,3,3,3,3,4,6,6,5,6,5,5,4,5,4,4,3,2,2,2,2,1,1,1,1,2,1,1,1,1,2,2,1,1,1,1,1,2,2,1,1,2,1,1,2,2,1,2,2,2,2,1,2,2,1,1,1,1,2,2,1]&lang=en" style="width:600" />
 
 - elasticdeeplearning/edl
 
@@ -754,7 +754,7 @@ We analyze the working hour distribution for LF AI & Data during year 2020, and 
 
 - lyft/amundsen
 
-<embed src="http://gar2020.opensource-service.cn/svgrenderer/github/X-lab2017/github-analysis-report?path=sqls/working-hour-distribution/image.svg&data=[1,1,1,1,1,1,1,1,1,1,1,1,1,8,1,1,10,3,2,1,2,2,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,1,1,2,2,2,1,1,1,1,1,2,1,1,1,1,1,1,1,1,1,1,1,1,3,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,1,1,2,2,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,1,1,1,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]&lang=en" style="width:600" />
+<embed src="http://gar2020.opensource-service.cn/svgrenderer/github/X-lab2017/github-analysis-report?path=sqls/working-hour-distribution/image.svg&data=[1,1,1,1,1,1,1,1,1,1,1,1,1,8,1,1,10,3,2,1,2,2,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,1,1,2,2,2,1,1,1,1,1,2,1,1,1,1,1,1,1,1,1,1,1,1,3,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,1,1,2,2,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,1,1,1,2,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]&lang=en" style="width:600" />
 
 - odpi/egeria
 
@@ -762,7 +762,7 @@ We analyze the working hour distribution for LF AI & Data during year 2020, and 
 
 - horovod/horovod
 
-<embed src="http://gar2020.opensource-service.cn/svgrenderer/github/X-lab2017/github-analysis-report?path=sqls/working-hour-distribution/image.svg&data=[2,2,3,3,1,2,2,3,3,3,2,2,3,3,3,5,6,7,6,6,6,5,5,5,4,4,4,4,2,2,3,4,4,4,2,2,3,4,4,4,6,6,4,5,6,4,6,5,4,3,5,4,2,2,4,4,4,4,3,2,3,5,5,6,6,6,8,6,7,8,4,5,4,4,5,4,2,3,4,3,4,5,3,3,3,5,3,5,6,8,8,9,8,6,5,6,5,5,5,4,2,3,6,4,4,4,3,3,3,3,3,5,10,10,8,6,6,7,8,6,3,5,6,5,4,3,3,5,5,3,3,3,1,2,2,2,3,2,1,1,1,1,1,1,1,1,1,2,1,1,1,1,1,2,1,1,1,1,1,1,2,2,2,2,1,1,1,1]&lang=en" style="width:600" />
+<embed src="http://gar2020.opensource-service.cn/svgrenderer/github/X-lab2017/github-analysis-report?path=sqls/working-hour-distribution/image.svg&data=[2,2,3,3,1,2,2,3,3,3,2,2,3,3,3,5,6,7,6,6,6,5,5,5,4,4,4,4,2,2,3,4,4,4,2,2,3,5,4,4,6,6,4,5,6,4,6,5,4,3,5,4,2,2,4,4,4,4,3,2,3,5,5,6,6,6,8,6,7,8,4,5,4,4,5,4,2,3,4,3,4,5,3,3,3,5,4,5,6,8,8,9,8,6,5,6,5,5,5,4,2,3,6,4,4,4,3,3,3,3,3,5,10,10,8,6,6,8,9,6,3,5,6,5,4,3,3,5,5,3,3,3,1,2,2,2,3,3,1,1,2,1,1,1,1,1,1,2,1,1,1,2,1,2,1,1,1,1,1,1,2,2,2,2,2,1,1,1]&lang=en" style="width:600" />
 
 - Adlik/Adlik
 
@@ -774,7 +774,7 @@ We analyze the working hour distribution for LF AI & Data during year 2020, and 
 
 - IBM/AIX360
 
-<embed src="http://gar2020.opensource-service.cn/svgrenderer/github/X-lab2017/github-analysis-report?path=sqls/working-hour-distribution/image.svg&data=[1,1,1,1,1,2,1,2,1,1,1,2,2,3,2,5,4,1,2,4,2,1,2,3,1,2,9,2,2,3,5,2,5,1,1,1,2,1,1,6,10,2,5,4,2,1,6,5,5,1,1,1,1,3,2,2,2,4,0,5,3,3,5,2,7,3,1,2,2,0,2,1,2,4,0,1,1,1,1,2,1,1,2,2,1,4,2,2,2,3,3,4,3,1,1,2,2,1,2,3,1,1,2,2,1,3,1,2,1,1,5,2,7,2,4,4,0,2,1,5,1,1,3,1,0,1,1,1,1,1,1,1,1,1,0,2,1,0,1,2,2,1,0,1,1,0,2,2,1,0,1,1,1,2,2,2,1,0,2,2,1,1,0,1,1,2,1,1]&lang=en" style="width:600" />
+<embed src="http://gar2020.opensource-service.cn/svgrenderer/github/X-lab2017/github-analysis-report?path=sqls/working-hour-distribution/image.svg&data=[1,1,1,1,1,2,1,2,1,1,1,2,2,3,2,5,4,1,2,4,2,1,2,3,1,2,9,2,2,3,5,2,5,1,1,1,2,1,1,6,10,2,5,4,2,1,6,5,5,1,1,1,1,3,2,2,2,4,0,5,3,3,5,2,7,3,1,2,2,0,2,1,2,4,0,2,1,1,1,2,1,1,2,2,1,4,2,2,2,3,3,4,3,1,1,2,2,1,2,3,1,1,2,2,1,3,1,2,1,1,5,2,7,2,4,4,0,2,1,5,1,1,3,1,0,1,1,1,1,1,1,1,1,1,0,2,1,0,1,2,2,1,0,1,1,0,2,2,1,0,1,1,1,2,2,2,1,0,2,2,1,1,0,1,1,2,1,1]&lang=en" style="width:600" />
 
 - didi/delta
 
@@ -782,7 +782,7 @@ We analyze the working hour distribution for LF AI & Data during year 2020, and 
 
 - pyro-ppl/pyro
 
-<embed src="http://gar2020.opensource-service.cn/svgrenderer/github/X-lab2017/github-analysis-report?path=sqls/working-hour-distribution/image.svg&data=[2,2,3,3,2,2,2,2,1,1,1,1,2,2,3,3,5,5,5,5,4,5,4,5,5,10,3,3,3,2,2,1,1,1,1,1,2,2,2,3,4,6,4,6,5,5,5,5,7,5,3,2,4,2,2,1,1,1,1,1,2,4,3,2,4,5,3,5,6,5,5,5,4,4,3,3,4,4,3,2,1,1,1,1,1,2,3,4,6,5,5,5,5,5,5,6,4,3,2,2,3,2,2,1,1,1,1,1,1,2,2,5,6,7,5,4,6,4,3,2,3,2,3,2,1,2,1,1,1,1,1,1,1,1,2,3,2,2,3,3,2,2,2,4,3,3,2,1,2,1,1,1,1,1,1,1,1,1,1,2,1,5,3,3,2,3,1,3]&lang=en" style="width:600" />
+<embed src="http://gar2020.opensource-service.cn/svgrenderer/github/X-lab2017/github-analysis-report?path=sqls/working-hour-distribution/image.svg&data=[2,2,3,3,2,2,2,2,1,1,1,1,2,2,3,3,5,5,5,5,4,5,4,5,5,10,3,3,3,2,2,1,1,1,1,1,2,2,2,3,4,6,4,6,5,5,5,5,7,5,3,2,4,2,2,1,1,1,1,1,2,4,3,2,4,5,3,5,6,5,5,5,4,4,3,3,4,4,3,2,1,1,1,1,2,2,3,4,6,5,5,5,5,5,5,6,4,3,2,2,3,2,2,1,1,1,1,1,1,2,2,5,6,7,5,4,6,4,3,2,3,2,3,2,1,2,1,1,1,1,1,1,1,1,2,3,2,2,3,3,2,2,2,4,3,3,2,1,2,1,1,1,1,1,1,1,1,1,1,2,1,5,3,3,2,3,1,3]&lang=en" style="width:600" />
 
 - ForestFlow/ForestFlow
 
@@ -790,7 +790,7 @@ We analyze the working hour distribution for LF AI & Data during year 2020, and 
 
 - JanusGraph/janusgraph
 
-<embed src="http://gar2020.opensource-service.cn/svgrenderer/github/X-lab2017/github-analysis-report?path=sqls/working-hour-distribution/image.svg&data=[1,2,2,2,2,4,6,7,7,7,3,10,8,7,5,6,5,4,3,5,4,5,4,1,4,2,2,2,2,5,9,8,5,4,2,7,4,6,5,5,5,1,4,2,3,6,4,1,3,2,5,4,2,3,5,5,5,6,3,6,4,4,4,5,5,2,2,2,5,5,5,2,3,2,2,3,3,3,7,5,6,4,3,6,4,7,7,5,3,3,4,3,3,5,2,1,7,3,2,1,1,3,3,3,7,4,5,5,5,5,4,3,5,3,3,3,2,3,3,1,2,1,2,2,3,2,2,2,1,3,4,2,2,2,2,2,2,2,1,2,1,2,1,1,1,1,2,2,1,1,3,2,1,2,2,3,2,2,2,1,2,2,3,3,2,1,1,1]&lang=en" style="width:600" />
+<embed src="http://gar2020.opensource-service.cn/svgrenderer/github/X-lab2017/github-analysis-report?path=sqls/working-hour-distribution/image.svg&data=[1,2,2,2,2,4,6,7,7,7,3,10,8,7,6,6,5,4,3,5,4,5,4,1,4,3,2,2,2,5,9,8,5,4,2,7,4,6,5,5,5,1,4,2,3,6,4,1,3,2,5,4,2,3,5,5,5,6,3,6,4,4,4,5,6,2,3,2,5,5,5,2,3,2,2,3,3,3,7,5,6,4,3,6,4,7,7,5,3,3,4,3,3,5,2,1,7,3,2,1,1,3,3,3,7,5,5,5,5,5,4,3,5,3,3,3,2,3,3,1,2,1,2,2,3,2,2,2,1,3,4,2,2,2,2,2,2,2,1,2,1,2,1,1,1,1,2,2,1,1,3,2,1,2,2,3,2,2,2,1,2,2,3,3,2,1,1,1]&lang=en" style="width:600" />
 
 - datadotworld/data-practices-site
 
@@ -950,18 +950,18 @@ TAC 将对所有 LF AI & Data 项目进行年度审查。年度审查包括评�
 
 | # | name | language | activity | developer_count | issue_comment | open_issue | open_pull | pull_review_comment | merge_pull | pull_commits | pull_additions | pull_deletions |
 |:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
-| 1 | horovod/horovod | Python | 1265.29 | 446 | 3579 | 453 | 414 | 947 | 360 | 1380 | 53193 | 23417 |
-| 2 | milvus-io/milvus | C++ | 1241.24 | 240 | 4718 | 1551 | 1872 | 311 | 1687 | 11792 | 788398 | 454401 |
-| 3 | onnx/onnx | PureBasic | 1139.81 | 386 | 2305 | 217 | 301 | 1567 | 232 | 2431 | 42390 | 14042 |
-| 4 | feast-dev/feast | Java | 751.49 | 94 | 8129 | 188 | 646 | 2377 | 558 | 2256 | 182481 | 168958 |
-| 5 | odpi/egeria | Java | 620.32 | 43 | 4528 | 711 | 1298 | 1071 | 1047 | 7746 | 743183 | 342990 |
-| 6 | nnstreamer/nnstreamer | C | 549.06 | 39 | 3985 | 239 | 766 | 2466 | 735 | 940 | 82003 | 26960 |
-| 7 | lyft/amundsen | Smarty | 502.65 | 141 | 1170 | 212 | 393 | 196 | 361 | 545 | 3801 | 1668 |
-| 8 | JanusGraph/janusgraph | Java | 500.04 | 136 | 1231 | 121 | 244 | 970 | 183 | 187 | 22000 | 24511 |
-| 9 | uber/ludwig | Python | 459.77 | 119 | 1786 | 120 | 304 | 620 | 265 | 2139 | 73411 | 100727 |
-| 10 | IBM/adversarial-robustness-toolbox | Python | 448.39 | 87 | 884 | 205 | 309 | 1619 | 269 | 8585 | 214502 | 86926 |
-| 11 | pyro-ppl/pyro | Python | 415.42 | 88 | 984 | 93 | 380 | 1226 | 336 | 1945 | 49294 | 9084 |
-| 12 | sparklyr/sparklyr | R | 387.19 | 130 | 1431 | 211 | 417 | 93 | 372 | 1130 | 202789 | 112023 |
+| 1 | horovod/horovod | Python | 1269.92 | 446 | 3609 | 455 | 414 | 964 | 365 | 1388 | 53398 | 23474 |
+| 2 | milvus-io/milvus | C++ | 1246.05 | 241 | 4761 | 1556 | 1875 | 314 | 1695 | 11830 | 788765 | 454656 |
+| 3 | onnx/onnx | PureBasic | 1145.16 | 388 | 2318 | 218 | 302 | 1569 | 233 | 2434 | 42390 | 14190 |
+| 4 | feast-dev/feast | Java | 755.62 | 95 | 8161 | 190 | 650 | 2384 | 561 | 2285 | 183545 | 169068 |
+| 5 | odpi/egeria | Java | 620.64 | 43 | 4534 | 714 | 1299 | 1071 | 1048 | 7749 | 743234 | 343011 |
+| 6 | nnstreamer/nnstreamer | C | 549.63 | 39 | 4003 | 241 | 768 | 2471 | 736 | 941 | 82005 | 26962 |
+| 7 | lyft/amundsen | Smarty | 506.18 | 142 | 1174 | 213 | 394 | 196 | 363 | 547 | 3803 | 1669 |
+| 8 | JanusGraph/janusgraph | Java | 503.6 | 137 | 1236 | 121 | 245 | 989 | 185 | 190 | 22593 | 24567 |
+| 9 | uber/ludwig | Python | 460.66 | 119 | 1794 | 121 | 304 | 620 | 267 | 2147 | 73467 | 100819 |
+| 10 | IBM/adversarial-robustness-toolbox | Python | 448.44 | 87 | 884 | 206 | 309 | 1619 | 269 | 8585 | 214502 | 86926 |
+| 11 | pyro-ppl/pyro | Python | 416.4 | 88 | 992 | 93 | 381 | 1228 | 336 | 1945 | 49294 | 9084 |
+| 12 | sparklyr/sparklyr | R | 388.53 | 131 | 1436 | 213 | 420 | 93 | 372 | 1130 | 202789 | 112023 |
 | 13 | IBM/AIF360 | Python | 126.96 | 36 | 132 | 17 | 38 | 97 | 33 | 355 | 44441 | 20355 |
 | 14 | Adlik/Adlik | C++ | 122.53 | 11 | 820 | 95 | 228 | 103 | 0 | 0 | 0 | 0 |
 | 15 | MarquezProject/marquez | Java | 102.82 | 15 | 241 | 40 | 145 | 66 | 138 | 953 | 48929 | 6128 |
@@ -969,7 +969,7 @@ TAC 将对所有 LF AI & Data 项目进行年度审查。年度审查包括评�
 | 17 | IBM/AIX360 | Python | 74.24 | 24 | 109 | 25 | 26 | 0 | 19 | 45 | 11218 | 9697 |
 | 18 | odpi/OpenDS4All | HTML | 57.43 | 10 | 46 | 3 | 84 | 0 | 78 | 309 | 81151 | 11707 |
 | 19 | elasticdeeplearning/edl | Python | 51.78 | 5 | 11 | 3 | 86 | 72 | 71 | 1136 | 54372 | 40732 |
-| 20 | didi/delta | Python | 38.89 | 8 | 50 | 8 | 27 | 14 | 24 | 82 | 8166 | 5841 |
+| 20 | didi/delta | Python | 39.09 | 8 | 52 | 8 | 27 | 14 | 24 | 82 | 8166 | 5841 |
 | 21 | ForestFlow/ForestFlow | Scala | 18.01 | 2 | 4 | 3 | 22 | 18 | 19 | 119 | 4366 | 3177 |
 | 22 | datadotworld/data-practices-site | CSS | 5.74 | 1 | 3 | 0 | 10 | 0 | 0 | 0 | 0 | 0 |
 | 23 | soajs/soajs | JavaScript | 2 | 1 | 1 | 0 | 1 | 0 | 0 | 0 | 0 | 0 |
@@ -984,15 +984,15 @@ TAC 将对所有 LF AI & Data 项目进行年度审查。年度审查包括评�
 
 | # | login | activity | issue_comment | open_issue | open_pull | pull_review_comment | merge_pull | pull_commits | pull_additions | pull_deletions |
 |:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
-| 1 | myungjoo | 3795 |  377 | 129 | 103 | 584 | 103 | 136 | 15093 | 8791 |
-| 2 | jaeyun-jung | 3103 |  133 | 3 | 219 | 313 | 211 | 268 | 16616 | 7396 |
-| 3 | taos-ci | 2866 |  2866 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| 4 | dongju-chae | 1942 |  70 | 12 | 53 | 361 | 49 | 56 | 8367 | 1822 |
-| 5 | gichan-jang | 1923 |  114 | 7 | 80 | 300 | 71 | 80 | 10781 | 1681 |
+| 1 | myungjoo | 3800 |  380 | 130 | 103 | 584 | 103 | 136 | 15093 | 8791 |
+| 2 | jaeyun-jung | 3114 |  133 | 3 | 220 | 315 | 211 | 268 | 16616 | 7396 |
+| 3 | taos-ci | 2878 |  2878 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 4 | dongju-chae | 1955 |  71 | 12 | 53 | 364 | 49 | 56 | 8367 | 1822 |
+| 5 | gichan-jang | 1929 |  115 | 7 | 80 | 300 | 72 | 81 | 10783 | 1683 |
 | 6 | kparichay | 1735 |  106 | 16 | 58 | 272 | 67 | 88 | 8903 | 2301 |
-| 7 | anyj0527 | 902 |  56 | 9 | 50 | 112 | 46 | 61 | 3039 | 559 |
-| 8 | again4you | 737 |  45 | 7 | 46 | 80 | 44 | 57 | 4499 | 896 |
-| 9 | helloahn | 609 |  16 | 2 | 28 | 95 | 25 | 28 | 1445 | 264 |
+| 7 | wooksong | 1639 |  73 | 18 | 84 | 217 | 82 | 124 | 9129 | 1508 |
+| 8 | anyj0527 | 902 |  56 | 9 | 50 | 112 | 46 | 61 | 3039 | 559 |
+| 9 | again4you | 741 |  46 | 7 | 47 | 80 | 44 | 57 | 4499 | 896 |
 | 10 | zhoonit | 320 |  15 | 5 | 7 | 61 | 6 | 8 | 413 | 354 |
 | 11 | leemgs | 233 |  20 | 2 | 10 | 36 | 7 | 7 | 1777 | 505 |
 | 12 | kbumsik | 107 |  8 | 0 | 5 | 16 | 4 | 7 | 312 | 161 |
@@ -1009,12 +1009,12 @@ TAC 将对所有 LF AI & Data 项目进行年度审查。年度审查包括评�
 
 | # | login | activity | issue_comment | open_issue | open_pull | pull_review_comment | merge_pull | pull_commits | pull_additions | pull_deletions |
 |:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
-| 1 | porunov | 1525 |  246 | 24 | 37 | 235 | 36 | 36 | 3125 | 1693 |
-| 2 | farodin91 | 1078 |  163 | 14 | 48 | 137 | 39 | 40 | 10375 | 20613 |
+| 1 | porunov | 1549 |  247 | 24 | 38 | 240 | 36 | 36 | 3125 | 1693 |
+| 2 | farodin91 | 1099 |  164 | 14 | 48 | 142 | 39 | 40 | 10375 | 20613 |
 | 3 | FlorianHockmann | 1015 |  151 | 4 | 4 | 206 | 4 | 4 | 5 | 8 |
-| 4 | li-boxuan | 867 |  100 | 18 | 29 | 136 | 20 | 20 | 1193 | 312 |
+| 4 | li-boxuan | 905 |  101 | 18 | 29 | 144 | 21 | 22 | 1785 | 367 |
 | 5 | rngcntr | 770 |  60 | 5 | 13 | 149 | 13 | 16 | 3054 | 1183 |
-| 6 | dependabot-preview[bot] | 412 |  32 | 0 | 65 | 0 | 37 | 37 | 38 | 38 |
+| 6 | dependabot-preview[bot] | 417 |  32 | 0 | 65 | 0 | 38 | 38 | 39 | 39 |
 | 7 | mad | 146 |  13 | 2 | 9 | 13 | 10 | 10 | 259 | 172 |
 | 8 | mbrukman | 82 |  48 | 1 | 1 | 6 | 1 | 1 | 1 | 0 |
 | 9 | dk-github | 75 |  23 | 0 | 2 | 9 | 2 | 2 | 2858 | 116 |
@@ -1034,32 +1034,30 @@ TAC 将对所有 LF AI & Data 项目进行年度审查。年度审查包括评�
 
 | # | login | activity | issue_comment | open_issue | open_pull | pull_review_comment | merge_pull | pull_commits | pull_additions | pull_deletions |
 |:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
-| 1 | beat-buesser | 6065 |  362 | 63 | 131 | 1141 | 124 | 5554 | 151573 | 62678 |
-| 2 | shashankkotyan | 358 |  21 | 3 | 2 | 80 | 1 | 16 | 1843 | 1 |
-| 3 | mathsinn | 201 |  24 | 3 | 12 | 20 | 11 | 64 | 1803 | 203 |
-| 4 | codecov[bot] | 110 |  110 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| 5 | keykholt | 51 |  8 | 2 | 4 | 3 | 3 | 15 | 820 | 4 |
-| 6 | kztakemoto | 45 |  9 | 0 | 2 | 5 | 2 | 114 | 919 | 7 |
-| 7 | ririnicolae | 33 |  1 | 0 | 2 | 4 | 2 | 97 | 4840 | 6563 |
-| 8 | tagomaru | 31 |  8 | 2 | 3 | 0 | 2 | 5 | 107 | 121 |
-| 9 | mzweilin | 30 |  2 | 2 | 1 | 4 | 1 | 8 | 694 | 2 |
-| 10 | TreeLLi | 27 |  7 | 2 | 1 | 2 | 1 | 17 | 33 | 21 |
-| 11 | ehsankf | 24 |  10 | 3 | 1 | 0 | 1 | 3 | 24 | 18 |
-| 12 | ng390 | 21 |  1 | 4 | 1 | 1 | 1 | 16 | 291 | 1 |
-| 13 | maliwin | 15 |  9 | 3 | 0 | 0 | 0 | 0 | 0 | 0 |
-| 14 | akshayag | 14 |  8 | 3 | 0 | 0 | 0 | 0 | 0 | 0 |
-| 15 | ahmedomer6 | 14 |  10 | 2 | 0 | 0 | 0 | 0 | 0 | 0 |
-| 16 | henry-eigen | 13 |  2 | 0 | 2 | 0 | 1 | 6 | 19 | 3 |
-| 17 | Tomcli | 12 |  2 | 1 | 1 | 0 | 1 | 1 | 7 | 2 |
-| 18 | Nathalie-B | 11 |  1 | 5 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 1 | shashankkotyan | 358 |  21 | 3 | 2 | 80 | 1 | 16 | 1843 | 1 |
+| 2 | codecov[bot] | 110 |  110 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 3 | keykholt | 51 |  8 | 2 | 4 | 3 | 3 | 15 | 820 | 4 |
+| 4 | kztakemoto | 45 |  9 | 0 | 2 | 5 | 2 | 114 | 919 | 7 |
+| 5 | ririnicolae | 33 |  1 | 0 | 2 | 4 | 2 | 97 | 4840 | 6563 |
+| 6 | tagomaru | 31 |  8 | 2 | 3 | 0 | 2 | 5 | 107 | 121 |
+| 7 | mzweilin | 30 |  2 | 2 | 1 | 4 | 1 | 8 | 694 | 2 |
+| 8 | TreeLLi | 27 |  7 | 2 | 1 | 2 | 1 | 17 | 33 | 21 |
+| 9 | ehsankf | 24 |  10 | 3 | 1 | 0 | 1 | 3 | 24 | 18 |
+| 10 | ng390 | 21 |  1 | 4 | 1 | 1 | 1 | 16 | 291 | 1 |
+| 11 | maliwin | 15 |  9 | 3 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 12 | akshayag | 14 |  8 | 3 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 13 | ahmedomer6 | 14 |  10 | 2 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 14 | henry-eigen | 13 |  2 | 0 | 2 | 0 | 1 | 6 | 19 | 3 |
+| 15 | Tomcli | 12 |  2 | 1 | 1 | 0 | 1 | 1 | 7 | 2 |
+| 16 | Nathalie-B | 11 |  1 | 5 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 - uber/ludwig
 
 | # | login | activity | issue_comment | open_issue | open_pull | pull_review_comment | merge_pull | pull_commits | pull_additions | pull_deletions |
 |:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
-| 1 | w4nderlust | 2120 |  784 | 2 | 36 | 271 | 28 | 358 | 14282 | 9028 |
-| 2 | jimthompson5802 | 1571 |  372 | 4 | 78 | 143 | 77 | 971 | 31561 | 19550 |
-| 3 | tgaddair | 1268 |  64 | 1 | 90 | 128 | 84 | 473 | 10455 | 61518 |
+| 1 | w4nderlust | 2126 |  790 | 2 | 36 | 271 | 28 | 358 | 14282 | 9028 |
+| 2 | jimthompson5802 | 1573 |  374 | 4 | 78 | 143 | 77 | 971 | 31561 | 19550 |
+| 3 | tgaddair | 1273 |  64 | 1 | 90 | 128 | 85 | 477 | 10472 | 61529 |
 | 4 | carlogrisetti | 302 |  100 | 15 | 15 | 13 | 15 | 59 | 458 | 268 |
 | 5 | kaushikb11 | 180 |  26 | 0 | 10 | 21 | 8 | 52 | 2143 | 219 |
 | 6 | ifokeev | 141 |  37 | 10 | 12 | 2 | 8 | 10 | 24 | 14 |
@@ -1069,14 +1067,14 @@ TAC 将对所有 LF AI & Data 项目进行年度审查。年度审查包括评�
 | 10 | michaelbzhu | 58 |  5 | 3 | 6 | 1 | 5 | 21 | 115 | 15 |
 | 11 | dsblank | 49 |  9 | 0 | 3 | 4 | 3 | 3 | 113 | 0 |
 | 12 | richardliaw | 45 |  1 | 0 | 0 | 11 | 0 | 0 | 0 | 0 |
-| 13 | CLAassistant | 32 |  32 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| 14 | mangleddata | 30 |  18 | 6 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 13 | mangleddata | 32 |  18 | 7 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 14 | CLAassistant | 32 |  32 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 15 | donfour10 | 28 |  16 | 6 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 16 | jenishah | 24 |  11 | 1 | 2 | 0 | 1 | 1 | 1 | 1 |
-| 17 | jmizgajski | 22 |  8 | 3 | 1 | 0 | 1 | 1 | 2 | 0 |
-| 18 | calio | 21 |  3 | 0 | 3 | 1 | 1 | 3 | 129 | 1 |
-| 19 | soovam123 | 20 |  3 | 0 | 4 | 0 | 1 | 9 | 73 | 72 |
-| 20 | msaisumanth | 19 |  16 | 0 | 1 | 0 | 0 | 0 | 0 | 0 |
+| 17 | milyiyo | 23 |  2 | 0 | 2 | 0 | 3 | 8 | 50 | 96 |
+| 18 | jmizgajski | 22 |  8 | 3 | 1 | 0 | 1 | 1 | 2 | 0 |
+| 19 | calio | 21 |  3 | 0 | 3 | 1 | 1 | 3 | 129 | 1 |
+| 20 | soovam123 | 20 |  3 | 0 | 4 | 0 | 1 | 9 | 73 | 72 |
 
 - Angel-ML/angel
 
@@ -1095,17 +1093,17 @@ TAC 将对所有 LF AI & Data 项目进行年度审查。年度审查包括评�
 
 | # | login | activity | issue_comment | open_issue | open_pull | pull_review_comment | merge_pull | pull_commits | pull_additions | pull_deletions |
 |:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
-| 1 | planetf1 | 5106 |  1767 | 253 | 218 | 291 | 203 | 973 | 43128 | 27085 |
+| 1 | planetf1 | 5110 |  1771 | 253 | 218 | 291 | 203 | 973 | 43128 | 27085 |
 | 2 | davidradl | 2274 |  319 | 122 | 104 | 231 | 95 | 491 | 75171 | 47982 |
 | 3 | dependabot-preview[bot] | 2066 |  69 | 5 | 279 | 0 | 230 | 257 | 508 | 405 |
-| 4 | grahamwallis | 1373 |  298 | 70 | 83 | 69 | 82 | 689 | 80845 | 21195 |
+| 4 | grahamwallis | 1374 |  299 | 70 | 83 | 69 | 82 | 689 | 80845 | 21195 |
 | 5 | mandy-chessell | 1357 |  318 | 63 | 62 | 108 | 59 | 834 | 271761 | 125014 |
 | 6 | immmus | 905 |  201 | 12 | 31 | 113 | 27 | 283 | 19011 | 38188 |
 | 7 | cmgrote | 896 |  204 | 41 | 57 | 46 | 51 | 516 | 19515 | 9744 |
-| 8 | bogdan-sava | 842 |  116 | 38 | 69 | 27 | 67 | 494 | 4894 | 3714 |
+| 8 | bogdan-sava | 855 |  117 | 40 | 70 | 27 | 68 | 497 | 4945 | 3735 |
 | 9 | github-actions[bot] | 790 |  742 | 24 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 10 | dependabot[bot] | 787 |  129 | 0 | 156 | 0 | 38 | 52 | 628 | 452 |
-| 11 | lpalashevski | 382 |  38 | 15 | 32 | 17 | 30 | 1961 | 134874 | 29587 |
+| 11 | lpalashevski | 384 |  38 | 16 | 32 | 17 | 30 | 1961 | 134874 | 29587 |
 | 12 | popa-raluca | 328 |  31 | 8 | 33 | 8 | 30 | 231 | 6353 | 4459 |
 | 13 | marius-patrascu | 303 |  3 | 1 | 40 | 2 | 34 | 152 | 2909 | 1058 |
 | 14 | danielaotelea | 286 |  13 | 11 | 32 | 5 | 27 | 194 | 5969 | 5508 |
@@ -1120,21 +1118,21 @@ TAC 将对所有 LF AI & Data 项目进行年度审查。年度审查包括评�
 
 | # | login | activity | issue_comment | open_issue | open_pull | pull_review_comment | merge_pull | pull_commits | pull_additions | pull_deletions |
 |:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
-| 1 | tgaddair | 3304 |  827 | 34 | 147 | 317 | 140 | 562 | 18339 | 13491 |
-| 2 | EnricoMi | 1412 |  154 | 13 | 83 | 157 | 71 | 217 | 13888 | 4157 |
+| 1 | tgaddair | 3358 |  828 | 34 | 147 | 329 | 141 | 563 | 18347 | 13500 |
+| 2 | EnricoMi | 1439 |  156 | 13 | 83 | 162 | 72 | 218 | 13889 | 4158 |
 | 3 | sblotner | 549 |  5 | 0 | 1 | 134 | 1 | 1 | 17 | 17 |
-| 4 | stale[bot] | 545 |  545 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 4 | stale[bot] | 547 |  547 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 5 | romerojosh | 541 |  62 | 0 | 29 | 63 | 28 | 75 | 6667 | 766 |
-| 6 | github-actions[bot] | 403 |  403 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6 | github-actions[bot] | 418 |  418 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 7 | abditag2 | 304 |  21 | 0 | 26 | 25 | 21 | 109 | 898 | 275 |
 | 8 | nvcastet | 300 |  64 | 0 | 14 | 26 | 18 | 51 | 2419 | 2241 |
 | 9 | davidrpugh | 283 |  43 | 2 | 2 | 55 | 2 | 21 | 290 | 1 |
 | 10 | richardliaw | 219 |  11 | 0 | 7 | 38 | 7 | 87 | 2775 | 291 |
 | 11 | aaron276h | 130 |  21 | 3 | 9 | 9 | 8 | 30 | 879 | 78 |
 | 12 | Vikas-kum | 118 |  26 | 1 | 4 | 17 | 2 | 61 | 562 | 140 |
-| 13 | leezu | 105 |  26 | 1 | 9 | 5 | 6 | 12 | 355 | 59 |
-| 14 | jeffdaily | 82 |  22 | 0 | 3 | 9 | 3 | 9 | 853 | 486 |
-| 15 | liangz1 | 80 |  8 | 1 | 6 | 8 | 4 | 31 | 244 | 31 |
+| 13 | leezu | 106 |  27 | 1 | 9 | 5 | 6 | 12 | 355 | 59 |
+| 14 | liangz1 | 86 |  9 | 1 | 6 | 8 | 5 | 33 | 251 | 35 |
+| 15 | jeffdaily | 82 |  22 | 0 | 3 | 9 | 3 | 9 | 853 | 486 |
 | 16 | apeforest | 78 |  19 | 0 | 4 | 8 | 3 | 24 | 219 | 137 |
 | 17 | alsrgv | 73 |  9 | 0 | 2 | 12 | 2 | 12 | 620 | 281 |
 | 18 | Richie-yan | 73 |  31 | 5 | 4 | 5 | 0 | 0 | 0 | 0 |
@@ -1147,7 +1145,7 @@ TAC 将对所有 LF AI & Data 项目进行年度审查。年度审查包括评�
 |:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
 | 1 | wschin | 1293 |  77 | 1 | 12 | 272 | 18 | 299 | 7517 | 1236 |
 | 2 | gramalingam | 1257 |  89 | 0 | 8 | 276 | 8 | 56 | 447 | 61 |
-| 3 | jcwchen | 1142 |  259 | 2 | 60 | 131 | 35 | 395 | 1351 | 517 |
+| 3 | jcwchen | 1155 |  267 | 2 | 60 | 131 | 36 | 398 | 1351 | 665 |
 | 4 | askhade | 1027 |  211 | 3 | 22 | 171 | 12 | 42 | 594 | 410 |
 | 5 | linkerzhang | 580 |  174 | 4 | 8 | 86 | 6 | 27 | 203 | 80 |
 | 6 | vinitra | 421 |  37 | 1 | 13 | 72 | 11 | 471 | 1258 | 442 |
@@ -1157,7 +1155,7 @@ TAC 将对所有 LF AI & Data 项目进行年度审查。年度审查包括评�
 | 10 | snnn | 237 |  58 | 2 | 7 | 31 | 6 | 20 | 318 | 238 |
 | 11 | lara-hdr | 226 |  22 | 0 | 4 | 43 | 4 | 52 | 3126 | 254 |
 | 12 | neginraoof | 222 |  44 | 0 | 12 | 23 | 10 | 178 | 1905 | 59 |
-| 13 | daquexian | 196 |  47 | 2 | 7 | 21 | 8 | 97 | 1271 | 724 |
+| 13 | daquexian | 201 |  48 | 2 | 7 | 22 | 8 | 97 | 1271 | 724 |
 | 14 | prasanthpul | 174 |  37 | 3 | 13 | 8 | 12 | 30 | 180 | 15 |
 | 15 | tbennun | 167 |  3 | 0 | 0 | 41 | 0 | 0 | 0 | 0 |
 | 16 | BowenBao | 144 |  16 | 0 | 5 | 22 | 5 | 30 | 3533 | 1583 |
@@ -1170,26 +1168,26 @@ TAC 将对所有 LF AI & Data 项目进行年度审查。年度审查包括评�
 
 | # | login | activity | issue_comment | open_issue | open_pull | pull_review_comment | merge_pull | pull_commits | pull_additions | pull_deletions |
 |:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
-| 1 | feng-tao | 1292 |  353 | 23 | 91 | 55 | 80 | 125 | 977 | 205 |
+| 1 | feng-tao | 1293 |  354 | 23 | 91 | 55 | 80 | 125 | 977 | 205 |
 | 2 | jornh | 297 |  132 | 7 | 11 | 17 | 10 | 13 | 191 | 110 |
 | 3 | javamonkey79 | 170 |  66 | 5 | 5 | 11 | 7 | 100 | 747 | 434 |
 | 4 | ttannis | 139 |  53 | 9 | 2 | 13 | 2 | 2 | 45 | 53 |
 | 5 | samshuster | 127 |  50 | 13 | 5 | 4 | 4 | 6 | 148 | 7 |
 | 6 | Alagappan | 90 |  6 | 2 | 2 | 16 | 2 | 3 | 3 | 7 |
 | 7 | jinhyukchang | 61 |  15 | 1 | 4 | 3 | 4 | 6 | 128 | 3 |
-| 8 | mgorsk1 | 60 |  13 | 1 | 4 | 2 | 5 | 8 | 62 | 49 |
-| 9 | jonhehir | 48 |  12 | 10 | 2 | 0 | 2 | 2 | 2 | 0 |
-| 10 | stale[bot] | 37 |  37 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| 11 | rsyi | 32 |  14 | 5 | 1 | 0 | 1 | 1 | 4 | 0 |
+| 8 | jonhehir | 48 |  12 | 10 | 2 | 0 | 2 | 2 | 2 | 0 |
+| 9 | stale[bot] | 37 |  37 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 10 | rsyi | 32 |  14 | 5 | 1 | 0 | 1 | 1 | 4 | 0 |
+| 11 | friendtocephalopods | 31 |  5 | 1 | 3 | 0 | 3 | 6 | 12 | 5 |
 | 12 | ajbosco | 31 |  1 | 1 | 3 | 1 | 3 | 7 | 645 | 327 |
-| 13 | friendtocephalopods | 31 |  5 | 1 | 3 | 0 | 3 | 6 | 12 | 5 |
-| 14 | Jwan622 | 27 |  7 | 2 | 0 | 4 | 0 | 0 | 0 | 0 |
-| 15 | ibnipun10 | 23 |  8 | 2 | 2 | 0 | 1 | 1 | 1 | 1 |
-| 16 | dmateusp | 21 |  3 | 1 | 2 | 0 | 2 | 6 | 18 | 0 |
-| 17 | pemmasanikrishna | 21 |  1 | 0 | 2 | 1 | 2 | 2 | 12 | 1 |
-| 18 | jdavidheiser | 20 |  6 | 7 | 0 | 0 | 0 | 0 | 0 | 0 |
-| 19 | alran | 20 |  8 | 2 | 1 | 0 | 1 | 1 | 1 | 0 |
-| 20 | jacobhjkim | 19 |  4 | 0 | 2 | 1 | 1 | 2 | 3 | 3 |
+| 13 | Jwan622 | 27 |  7 | 2 | 0 | 4 | 0 | 0 | 0 | 0 |
+| 14 | ibnipun10 | 23 |  8 | 2 | 2 | 0 | 1 | 1 | 1 | 1 |
+| 15 | dmateusp | 21 |  3 | 1 | 2 | 0 | 2 | 6 | 18 | 0 |
+| 16 | pemmasanikrishna | 21 |  1 | 0 | 2 | 1 | 2 | 2 | 12 | 1 |
+| 17 | jdavidheiser | 20 |  6 | 7 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 18 | alran | 20 |  8 | 2 | 1 | 0 | 1 | 1 | 1 | 0 |
+| 19 | jacobhjkim | 19 |  4 | 0 | 2 | 1 | 1 | 2 | 3 | 3 |
+| 20 | danwom | 17 |  3 | 1 | 1 | 1 | 1 | 1 | 2 | 2 |
 
 - pyro-ppl/pyro
 
@@ -1199,9 +1197,9 @@ TAC 将对所有 LF AI & Data 项目进行年度审查。年度审查包括评�
 | 2 | fehiepsi | 1318 |  115 | 5 | 39 | 224 | 36 | 165 | 3017 | 1446 |
 | 3 | martinjankowiak | 1132 |  72 | 1 | 23 | 221 | 21 | 117 | 1580 | 206 |
 | 4 | stefanwebb | 591 |  79 | 2 | 32 | 68 | 28 | 184 | 5365 | 1607 |
-| 5 | eb8680 | 554 |  70 | 3 | 25 | 77 | 19 | 158 | 6187 | 265 |
+| 5 | eb8680 | 561 |  74 | 3 | 26 | 77 | 19 | 158 | 6187 | 265 |
 | 6 | neerajprad | 445 |  55 | 4 | 14 | 75 | 8 | 27 | 568 | 129 |
-| 7 | ordabayevy | 162 |  26 | 4 | 8 | 21 | 4 | 49 | 689 | 32 |
+| 7 | ordabayevy | 172 |  28 | 4 | 8 | 23 | 4 | 49 | 689 | 32 |
 | 8 | ecotner | 149 |  22 | 2 | 4 | 24 | 3 | 35 | 630 | 16 |
 | 9 | ucals | 78 |  15 | 0 | 7 | 8 | 2 | 11 | 1007 | 0 |
 | 10 | garrett-bernstein | 41 |  5 | 0 | 2 | 5 | 2 | 8 | 162 | 14 |
@@ -1220,33 +1218,33 @@ TAC 将对所有 LF AI & Data 项目进行年度审查。年度审查包括评�
 
 | # | login | activity | issue_comment | open_issue | open_pull | pull_review_comment | merge_pull | pull_commits | pull_additions | pull_deletions |
 |:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
-| 1 | feast-ci-bot | 4832 |  4832 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| 2 | pyalex | 2187 |  396 | 3 | 112 | 236 | 101 | 470 | 24829 | 13557 |
-| 3 | mrzzy | 1613 |  220 | 14 | 51 | 248 | 44 | 449 | 23822 | 7441 |
-| 4 | terryyylim | 1420 |  133 | 1 | 74 | 182 | 67 | 307 | 17781 | 31956 |
-| 5 | oavdeev | 613 |  68 | 0 | 33 | 74 | 30 | 52 | 4800 | 1263 |
-| 6 | jmelinav | 370 |  64 | 1 | 11 | 59 | 7 | 31 | 3119 | 545 |
-| 7 | dr3s | 315 |  70 | 3 | 3 | 55 | 2 | 21 | 1867 | 272 |
-| 8 | tsotnet | 206 |  12 | 2 | 5 | 40 | 3 | 22 | 1126 | 100 |
-| 9 | SwampertX | 129 |  4 | 3 | 5 | 21 | 4 | 35 | 791 | 211 |
-| 10 | stale[bot] | 73 |  73 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| 11 | mike0sv | 62 |  20 | 4 | 4 | 3 | 2 | 20 | 91 | 39 |
-| 12 | jklegar | 40 |  5 | 0 | 4 | 2 | 3 | 11 | 377 | 68 |
-| 13 | Wirick | 37 |  10 | 0 | 5 | 3 | 0 | 0 | 0 | 0 |
-| 14 | oavdeev-tt | 34 |  6 | 0 | 2 | 3 | 2 | 2 | 28 | 2 |
-| 15 | dependabot[bot] | 33 |  7 | 0 | 7 | 0 | 1 | 1 | 1 | 1 |
-| 16 | ravdin | 32 |  5 | 0 | 1 | 6 | 0 | 0 | 0 | 0 |
-| 17 | Andrew32bit | 27 |  17 | 5 | 0 | 0 | 0 | 0 | 0 | 0 |
-| 18 | zhangchi1 | 25 |  8 | 1 | 1 | 3 | 0 | 0 | 0 | 0 |
-| 19 | duongnt | 21 |  1 | 2 | 2 | 0 | 2 | 2 | 13 | 13 |
-| 20 | AnujaVane | 19 |  1 | 0 | 3 | 1 | 1 | 8 | 9 | 1 |
+| 1 | woop | 5670 |  1090 | 65 | 68 | 984 | 62 | 261 | 24488 | 74912 |
+| 2 | feast-ci-bot | 4857 |  4857 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 3 | pyalex | 2206 |  398 | 3 | 112 | 239 | 102 | 494 | 25794 | 13663 |
+| 4 | mrzzy | 1613 |  220 | 14 | 51 | 248 | 44 | 449 | 23822 | 7441 |
+| 5 | terryyylim | 1429 |  134 | 1 | 75 | 182 | 68 | 311 | 17831 | 31960 |
+| 6 | oavdeev | 617 |  68 | 0 | 33 | 75 | 30 | 52 | 4800 | 1263 |
+| 7 | jmelinav | 370 |  64 | 1 | 11 | 59 | 7 | 31 | 3119 | 545 |
+| 8 | dr3s | 315 |  70 | 3 | 3 | 55 | 2 | 21 | 1867 | 272 |
+| 9 | tsotnet | 206 |  12 | 2 | 5 | 40 | 3 | 22 | 1126 | 100 |
+| 10 | SwampertX | 129 |  4 | 3 | 5 | 21 | 4 | 35 | 791 | 211 |
+| 11 | stale[bot] | 75 |  75 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 12 | mike0sv | 62 |  20 | 4 | 4 | 3 | 2 | 20 | 91 | 39 |
+| 13 | jklegar | 56 |  5 | 0 | 5 | 4 | 4 | 12 | 426 | 68 |
+| 14 | oavdeev-tt | 38 |  6 | 0 | 2 | 4 | 2 | 2 | 28 | 2 |
+| 15 | Wirick | 37 |  10 | 0 | 5 | 3 | 0 | 0 | 0 | 0 |
+| 16 | dependabot[bot] | 33 |  7 | 0 | 7 | 0 | 1 | 1 | 1 | 1 |
+| 17 | ravdin | 32 |  5 | 0 | 1 | 6 | 0 | 0 | 0 | 0 |
+| 18 | Andrew32bit | 27 |  17 | 5 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 19 | zhangchi1 | 25 |  8 | 1 | 1 | 3 | 0 | 0 | 0 | 0 |
+| 20 | duongnt | 21 |  1 | 2 | 2 | 0 | 2 | 2 | 13 | 13 |
 
 - sparklyr/sparklyr
 
 | # | login | activity | issue_comment | open_issue | open_pull | pull_review_comment | merge_pull | pull_commits | pull_additions | pull_deletions |
 |:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
-| 1 | yl790 | 3307 |  415 | 104 | 349 | 23 | 309 | 857 | 195310 | 102819 |
-| 2 | falaki | 830 |  571 | 4 | 21 | 27 | 16 | 65 | 512 | 109 |
+| 1 | yl790 | 3319 |  416 | 105 | 352 | 23 | 309 | 857 | 195310 | 102819 |
+| 2 | falaki | 833 |  574 | 4 | 21 | 27 | 16 | 65 | 512 | 109 |
 | 3 | javierluraschi | 287 |  49 | 10 | 15 | 22 | 17 | 68 | 4626 | 8454 |
 | 4 | Loquats | 112 |  12 | 0 | 11 | 8 | 7 | 43 | 309 | 49 |
 | 5 | nealrichardson | 60 |  12 | 4 | 4 | 2 | 4 | 17 | 173 | 403 |
@@ -1254,7 +1252,7 @@ TAC 将对所有 LF AI & Data 项目进行年度审查。年度审查包括评�
 | 7 | wkdavis | 40 |  10 | 1 | 2 | 3 | 2 | 7 | 354 | 5 |
 | 8 | yitao-li | 37 |  6 | 0 | 3 | 3 | 2 | 4 | 235 | 2 |
 | 9 | zero323 | 33 |  5 | 0 | 3 | 1 | 3 | 5 | 366 | 0 |
-| 10 | sbottelli | 28 |  14 | 7 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 10 | sbottelli | 30 |  14 | 8 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 11 | lu-wang-dl | 24 |  1 | 0 | 3 | 1 | 2 | 9 | 51 | 17 |
 | 12 | SieSiongWong | 20 |  18 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 13 | kevinykuo | 16 |  3 | 0 | 0 | 2 | 1 | 8 | 34 | 9 |
@@ -1283,20 +1281,22 @@ TAC 将对所有 LF AI & Data 项目进行年度审查。年度审查包括评�
 
 | # | login | activity | issue_comment | open_issue | open_pull | pull_review_comment | merge_pull | pull_commits | pull_additions | pull_deletions |
 |:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
-| 1 | minhitbk | 919 |  19 | 5 | 27 | 171 | 25 | 886 | 18547 | 2923 |
-| 2 | ebubae | 432 |  14 | 8 | 21 | 61 | 19 | 452 | 8149 | 1210 |
-| 3 | hesseltuinhof | 401 |  15 | 10 | 22 | 50 | 20 | 95 | 6798 | 1067 |
-| 4 | killianlevacher | 389 |  5 | 17 | 15 | 65 | 9 | 1064 | 15095 | 11384 |
-| 5 | dependabot[bot] | 318 |  8 | 0 | 45 | 0 | 35 | 72 | 53 | 53 |
-| 6 | abigailgold | 89 |  4 | 0 | 8 | 9 | 5 | 73 | 2713 | 64 |
-| 7 | davidslater | 64 |  25 | 10 | 2 | 2 | 1 | 7 | 67 | 527 |
-| 8 | codecov-io | 36 |  36 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| 9 | codecov-commenter | 35 |  35 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| 10 | superctj | 25 |  19 | 3 | 0 | 0 | 0 | 0 | 0 | 0 |
-| 11 | Embeddave | 17 |  15 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
-| 12 | joelma1 | 11 |  5 | 3 | 0 | 0 | 0 | 0 | 0 | 0 |
-| 13 | hornel | 11 |  1 | 1 | 1 | 0 | 1 | 7 | 16 | 8 |
-| 14 | zacps | 11 |  1 | 1 | 1 | 0 | 1 | 4 | 69 | 53 |
+| 1 | beat-buesser | 6065 |  362 | 63 | 131 | 1141 | 124 | 5554 | 151573 | 62678 |
+| 2 | minhitbk | 919 |  19 | 5 | 27 | 171 | 25 | 886 | 18547 | 2923 |
+| 3 | ebubae | 432 |  14 | 8 | 21 | 61 | 19 | 452 | 8149 | 1210 |
+| 4 | hesseltuinhof | 401 |  15 | 10 | 22 | 50 | 20 | 95 | 6798 | 1067 |
+| 5 | killianlevacher | 391 |  5 | 18 | 15 | 65 | 9 | 1064 | 15095 | 11384 |
+| 6 | dependabot[bot] | 318 |  8 | 0 | 45 | 0 | 35 | 72 | 53 | 53 |
+| 7 | mathsinn | 201 |  24 | 3 | 12 | 20 | 11 | 64 | 1803 | 203 |
+| 8 | abigailgold | 89 |  4 | 0 | 8 | 9 | 5 | 73 | 2713 | 64 |
+| 9 | davidslater | 64 |  25 | 10 | 2 | 2 | 1 | 7 | 67 | 527 |
+| 10 | codecov-io | 36 |  36 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 11 | codecov-commenter | 35 |  35 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 12 | superctj | 25 |  19 | 3 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 13 | Embeddave | 17 |  15 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 14 | joelma1 | 11 |  5 | 3 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 15 | hornel | 11 |  1 | 1 | 1 | 0 | 1 | 7 | 16 | 8 |
+| 16 | zacps | 11 |  1 | 1 | 1 | 0 | 1 | 4 | 69 | 53 |
 
 - IBM/AIF360
 
@@ -1306,11 +1306,12 @@ TAC 将对所有 LF AI & Data 项目进行年度审查。年度审查包括评�
 | 2 | SSaishruthi | 104 |  13 | 4 | 4 | 14 | 3 | 65 | 34604 | 32 |
 | 3 | pronics2004 | 69 |  5 | 0 | 1 | 14 | 1 | 9 | 224 | 563 |
 | 4 | sethneel | 68 |  1 | 0 | 3 | 12 | 2 | 162 | 4320 | 8 |
-| 5 | jimbudarz | 44 |  12 | 0 | 4 | 0 | 4 | 6 | 20 | 10 |
-| 6 | animeshsingh | 30 |  6 | 0 | 2 | 2 | 2 | 2 | 0 | 2 |
-| 7 | romeokienzler | 23 |  2 | 0 | 2 | 0 | 3 | 8 | 634 | 2 |
-| 8 | bhavyaghai | 21 |  5 | 0 | 1 | 2 | 1 | 4 | 21 | 0 |
-| 9 | motapaolla | 11 |  1 | 1 | 1 | 0 | 1 | 1 | 2 | 2 |
+| 5 | nrkarthikeyan | 62 |  6 | 0 | 0 | 14 | 0 | 0 | 0 | 0 |
+| 6 | jimbudarz | 44 |  12 | 0 | 4 | 0 | 4 | 6 | 20 | 10 |
+| 7 | animeshsingh | 30 |  6 | 0 | 2 | 2 | 2 | 2 | 0 | 2 |
+| 8 | romeokienzler | 23 |  2 | 0 | 2 | 0 | 3 | 8 | 634 | 2 |
+| 9 | bhavyaghai | 21 |  5 | 0 | 1 | 2 | 1 | 4 | 21 | 0 |
+| 10 | motapaolla | 11 |  1 | 1 | 1 | 0 | 1 | 1 | 2 | 2 |
 
 - PaddlePaddle/edl
 
@@ -1323,24 +1324,24 @@ TAC 将对所有 LF AI & Data 项目进行年度审查。年度审查包括评�
 
 | # | login | activity | issue_comment | open_issue | open_pull | pull_review_comment | merge_pull | pull_commits | pull_additions | pull_deletions |
 |:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
-| 1 | yhmo | 2904 |  537 | 105 | 282 | 4 | 259 | 1571 | 178708 | 122633 |
-| 2 | del-zhenwu | 2667 |  419 | 419 | 184 | 2 | 170 | 1169 | 36324 | 28820 |
+| 1 | yhmo | 2919 |  544 | 105 | 283 | 4 | 260 | 1573 | 178714 | 122650 |
+| 2 | del-zhenwu | 2679 |  419 | 421 | 185 | 2 | 171 | 1184 | 36405 | 28882 |
 | 3 | cydrain | 1910 |  100 | 86 | 159 | 114 | 141 | 846 | 43151 | 30780 |
-| 4 | BossZou | 1642 |  331 | 82 | 139 | 35 | 118 | 1062 | 21941 | 12725 |
-| 5 | shengjun1985 | 1565 |  314 | 30 | 145 | 14 | 140 | 515 | 55298 | 61449 |
-| 6 | JinHai-CN | 1226 |  366 | 51 | 79 | 49 | 65 | 1232 | 52868 | 25715 |
-| 7 | fishpenguin | 1032 |  140 | 30 | 106 | 1 | 102 | 1142 | 152075 | 91412 |
-| 8 | scsven | 964 |  109 | 18 | 96 | 19 | 91 | 409 | 58788 | 22601 |
+| 4 | BossZou | 1646 |  335 | 82 | 139 | 35 | 118 | 1062 | 21941 | 12725 |
+| 5 | shengjun1985 | 1581 |  317 | 30 | 146 | 14 | 142 | 522 | 55504 | 61514 |
+| 6 | JinHai-CN | 1233 |  369 | 51 | 79 | 50 | 65 | 1232 | 52868 | 25715 |
+| 7 | fishpenguin | 1045 |  148 | 30 | 106 | 1 | 103 | 1143 | 152085 | 91434 |
+| 8 | scsven | 970 |  115 | 18 | 96 | 19 | 91 | 409 | 58788 | 22601 |
 | 9 | youny626 | 928 |  55 | 16 | 107 | 0 | 104 | 494 | 25630 | 10157 |
-| 10 | codecov[bot] | 857 |  857 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 10 | codecov[bot] | 858 |  858 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 11 | ZhifengZhang-CN | 772 |  15 | 29 | 88 | 5 | 83 | 708 | 3494 | 2809 |
-| 12 | XuPeng-SH | 606 |  18 | 22 | 69 | 3 | 65 | 861 | 17927 | 4261 |
-| 13 | sahuang | 523 |  126 | 26 | 35 | 20 | 32 | 295 | 22661 | 12751 |
-| 14 | ThreadDao | 516 |  35 | 77 | 49 | 0 | 36 | 156 | 16079 | 7322 |
+| 12 | XuPeng-SH | 613 |  18 | 23 | 69 | 3 | 66 | 864 | 17943 | 4269 |
+| 13 | sahuang | 524 |  127 | 26 | 35 | 20 | 32 | 295 | 22661 | 12751 |
+| 14 | ThreadDao | 523 |  35 | 78 | 49 | 0 | 37 | 159 | 16096 | 7322 |
 | 15 | yamasite | 482 |  47 | 31 | 37 | 28 | 30 | 103 | 3467 | 1287 |
 | 16 | XuanYang-cn | 435 |  13 | 17 | 51 | 0 | 47 | 245 | 2750 | 2601 |
 | 17 | godchen0212 | 431 |  16 | 4 | 54 | 0 | 49 | 171 | 4259 | 2846 |
-| 18 | op-hunter | 421 |  19 | 10 | 49 | 0 | 47 | 321 | 15685 | 3500 |
+| 18 | op-hunter | 426 |  19 | 10 | 49 | 0 | 48 | 328 | 15716 | 3581 |
 | 19 | tinkerlin | 364 |  158 | 4 | 24 | 4 | 22 | 98 | 2791 | 295 |
 | 20 | cqy123456 | 279 |  10 | 2 | 35 | 0 | 32 | 175 | 1919 | 1818 |
 
@@ -1370,8 +1371,8 @@ TAC 将对所有 LF AI & Data 项目进行年度审查。年度审查包括评�
 |:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
 | 1 | zh794390558 | 209 |  12 | 4 | 21 | 9 | 18 | 62 | 6417 | 5089 |
 | 2 | xhyandwyy | 52 |  4 | 0 | 6 | 0 | 6 | 20 | 1749 | 752 |
-| 3 | applenob | 24 |  4 | 0 | 0 | 5 | 0 | 0 | 0 | 0 |
-| 4 | stale[bot] | 23 |  23 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 3 | stale[bot] | 25 |  25 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 4 | applenob | 24 |  4 | 0 | 0 | 5 | 0 | 0 | 0 | 0 |
 
 - odpi/OpenDS4All
 
@@ -1384,50 +1385,36 @@ TAC 将对所有 LF AI & Data 项目进行年度审查。年度审查包括评�
 | 5 | jmertic | 17 |  6 | 0 | 2 | 0 | 1 | 1 | 0 | 0 |
 | 6 | leestott | 17 |  1 | 0 | 2 | 0 | 2 | 2 | 19 | 4 |
 
-- ludwig-ai/ludwig
-
-| # | login | activity | issue_comment | open_issue | open_pull | pull_review_comment | merge_pull | pull_commits | pull_additions | pull_deletions |
-|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
-| 1 | milyiyo | 18 |  2 | 0 | 2 | 0 | 2 | 4 | 11 | 15 |
-| 2 | modernlearner | 12 |  2 | 1 | 1 | 0 | 1 | 3 | 11 | 0 |
-
 - gojek/feast
 
 | # | login | activity | issue_comment | open_issue | open_pull | pull_review_comment | merge_pull | pull_commits | pull_additions | pull_deletions |
 |:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
-| 1 | woop | 5669 |  1089 | 65 | 68 | 984 | 62 | 261 | 24488 | 74912 |
-| 2 | zhilingc | 1451 |  224 | 12 | 66 | 175 | 61 | 181 | 40904 | 14655 |
-| 3 | khorshuheng | 1130 |  216 | 4 | 82 | 65 | 80 | 152 | 22078 | 15346 |
-| 4 | ches | 820 |  230 | 11 | 28 | 86 | 28 | 51 | 4687 | 2553 |
-| 5 | davidheryanto | 511 |  97 | 2 | 29 | 47 | 27 | 83 | 6826 | 5117 |
-| 6 | imjuanleonard | 221 |  36 | 8 | 6 | 34 | 3 | 28 | 453 | 142 |
-| 7 | Yanson | 126 |  53 | 1 | 8 | 3 | 7 | 11 | 1135 | 368 |
-| 8 | lavkesh | 90 |  6 | 0 | 3 | 15 | 3 | 23 | 2596 | 215 |
-| 9 | Joostrothweiler | 76 |  16 | 1 | 6 | 5 | 4 | 10 | 248 | 28 |
-| 10 | suwik | 46 |  2 | 0 | 1 | 9 | 1 | 1 | 3 | 13 |
-| 11 | Jeffwan | 45 |  13 | 2 | 1 | 5 | 1 | 1 | 66 | 37 |
-| 12 | ashwinath | 43 |  4 | 1 | 3 | 2 | 4 | 11 | 156 | 30 |
-| 13 | lgvital | 40 |  23 | 3 | 2 | 0 | 1 | 1 | 105 | 41 |
-| 14 | gracechristina | 28 |  1 | 0 | 1 | 6 | 0 | 0 | 0 | 0 |
-| 15 | heysachin | 27 |  5 | 0 | 4 | 0 | 2 | 3 | 6 | 5 |
-| 16 | pmjacinto | 20 |  3 | 7 | 1 | 0 | 0 | 0 | 0 | 0 |
-| 17 | junhui096 | 18 |  1 | 0 | 4 | 0 | 1 | 4 | 42 | 24 |
-| 18 | avolution | 16 |  5 | 4 | 1 | 0 | 0 | 0 | 0 | 0 |
-| 19 | idahoakl | 15 |  11 | 2 | 0 | 0 | 0 | 0 | 0 | 0 |
-| 20 | ricgu8086 | 12 |  1 | 0 | 1 | 2 | 0 | 0 | 0 | 0 |
+| 1 | zhilingc | 1451 |  224 | 12 | 66 | 175 | 61 | 181 | 40904 | 14655 |
+| 2 | khorshuheng | 1136 |  216 | 4 | 84 | 65 | 80 | 152 | 22078 | 15346 |
+| 3 | ches | 820 |  230 | 11 | 28 | 86 | 28 | 51 | 4687 | 2553 |
+| 4 | davidheryanto | 511 |  97 | 2 | 29 | 47 | 27 | 83 | 6826 | 5117 |
+| 5 | imjuanleonard | 221 |  36 | 8 | 6 | 34 | 3 | 28 | 453 | 142 |
+| 6 | Yanson | 126 |  53 | 1 | 8 | 3 | 7 | 11 | 1135 | 368 |
+| 7 | lavkesh | 90 |  6 | 0 | 3 | 15 | 3 | 23 | 2596 | 215 |
+| 8 | Joostrothweiler | 78 |  16 | 2 | 6 | 5 | 4 | 10 | 248 | 28 |
+| 9 | suwik | 46 |  2 | 0 | 1 | 9 | 1 | 1 | 3 | 13 |
+| 10 | Jeffwan | 45 |  13 | 2 | 1 | 5 | 1 | 1 | 66 | 37 |
+| 11 | ashwinath | 43 |  4 | 1 | 3 | 2 | 4 | 11 | 156 | 30 |
+| 12 | lgvital | 40 |  23 | 3 | 2 | 0 | 1 | 1 | 105 | 41 |
+| 13 | gracechristina | 28 |  1 | 0 | 1 | 6 | 0 | 0 | 0 | 0 |
+| 14 | heysachin | 27 |  5 | 0 | 4 | 0 | 2 | 3 | 6 | 5 |
+| 15 | pmjacinto | 20 |  3 | 7 | 1 | 0 | 0 | 0 | 0 | 0 |
+| 16 | junhui096 | 18 |  1 | 0 | 4 | 0 | 1 | 4 | 42 | 24 |
+| 17 | avolution | 16 |  5 | 4 | 1 | 0 | 0 | 0 | 0 | 0 |
+| 18 | idahoakl | 15 |  11 | 2 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 19 | ricgu8086 | 12 |  1 | 0 | 1 | 2 | 0 | 0 | 0 | 0 |
+| 20 | pradithya | 11 |  3 | 0 | 0 | 2 | 0 | 0 | 0 | 0 |
 
 - Trusted-AI/AIX360
 
 | # | login | activity | issue_comment | open_issue | open_pull | pull_review_comment | merge_pull | pull_commits | pull_additions | pull_deletions |
 |:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
 | 1 | gaborpelesz | 20 |  6 | 3 | 1 | 0 | 1 | 1 | 1 | 1 |
-
-- nnsuite/nnstreamer
-
-| # | login | activity | issue_comment | open_issue | open_pull | pull_review_comment | merge_pull | pull_commits | pull_additions | pull_deletions |
-|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
-| 1 | wooksong | 1637 |  73 | 17 | 84 | 217 | 82 | 124 | 9129 | 1508 |
-| 2 | ajarthurs | 13 |  3 | 1 | 1 | 0 | 1 | 1 | 1 | 0 |
 
 - IBM/AIX360
 
@@ -1446,9 +1433,8 @@ TAC 将对所有 LF AI & Data 项目进行年度审查。年度审查包括评�
 
 | # | login | activity | issue_comment | open_issue | open_pull | pull_review_comment | merge_pull | pull_commits | pull_additions | pull_deletions |
 |:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
-| 1 | nrkarthikeyan | 62 |  6 | 0 | 0 | 14 | 0 | 0 | 0 | 0 |
-| 2 | gdequeiroz | 39 |  3 | 0 | 4 | 1 | 4 | 5 | 163 | 12 |
-| 3 | leenamurgai | 19 |  4 | 0 | 2 | 1 | 1 | 1 | 4 | 4 |
+| 1 | gdequeiroz | 39 |  3 | 0 | 4 | 1 | 4 | 5 | 163 | 12 |
+| 2 | leenamurgai | 19 |  4 | 0 | 2 | 1 | 1 | 1 | 4 | 4 |
 
 - ForestFlow/ForestFlow
 
@@ -1460,22 +1446,36 @@ TAC 将对所有 LF AI & Data 项目进行年度审查。年度审查包括评�
 
 | # | login | activity | issue_comment | open_issue | open_pull | pull_review_comment | merge_pull | pull_commits | pull_additions | pull_deletions |
 |:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
-| 1 | dependabot-preview[bot] | 1562 |  3 | 1 | 194 | 0 | 195 | 195 | 195 | 195 |
+| 1 | dependabot-preview[bot] | 1567 |  3 | 1 | 194 | 0 | 196 | 196 | 196 | 196 |
 | 2 | Golodhros | 335 |  40 | 14 | 14 | 45 | 9 | 15 | 393 | 210 |
 | 3 | markgrover | 137 |  12 | 1 | 10 | 12 | 9 | 9 | 56 | 35 |
 | 4 | dorianj | 78 |  37 | 3 | 3 | 4 | 2 | 4 | 16 | 2 |
-| 5 | pPanda-beta | 48 |  25 | 8 | 1 | 1 | 0 | 0 | 0 | 0 |
-| 6 | verdan | 28 |  22 | 3 | 0 | 0 | 0 | 0 | 0 | 0 |
-| 7 | allcontributors[bot] | 27 |  7 | 0 | 5 | 0 | 1 | 11 | 40 | 1 |
-| 8 | AustinBGibbons | 26 |  12 | 3 | 1 | 0 | 1 | 1 | 1 | 1 |
-| 9 | instazackwu | 25 |  5 | 2 | 2 | 0 | 2 | 4 | 13 | 1 |
-| 10 | higee | 21 |  2 | 0 | 2 | 2 | 1 | 2 | 1 | 0 |
-| 11 | madison-ookla | 20 |  6 | 1 | 1 | 1 | 1 | 1 | 7 | 4 |
-| 12 | lexisantoro | 18 |  1 | 0 | 4 | 0 | 1 | 1 | 1 | 0 |
-| 13 | sterlins | 17 |  3 | 1 | 1 | 1 | 1 | 1 | 2 | 2 |
-| 14 | NiravLangaliya | 16 |  8 | 4 | 0 | 0 | 0 | 0 | 0 | 0 |
-| 15 | Wonong | 15 |  3 | 2 | 1 | 0 | 1 | 1 | 1 | 1 |
-| 16 | allisonsuarez | 15 |  3 | 2 | 1 | 0 | 1 | 1 | 61 | 0 |
+| 5 | mgorsk1 | 60 |  13 | 1 | 4 | 2 | 5 | 8 | 62 | 49 |
+| 6 | pPanda-beta | 48 |  25 | 8 | 1 | 1 | 0 | 0 | 0 | 0 |
+| 7 | instazackwu | 28 |  6 | 3 | 2 | 0 | 2 | 4 | 13 | 1 |
+| 8 | verdan | 28 |  22 | 3 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 9 | allcontributors[bot] | 27 |  7 | 0 | 5 | 0 | 1 | 11 | 40 | 1 |
+| 10 | AustinBGibbons | 26 |  12 | 3 | 1 | 0 | 1 | 1 | 1 | 1 |
+| 11 | higee | 21 |  2 | 0 | 2 | 2 | 1 | 2 | 1 | 0 |
+| 12 | madison-ookla | 20 |  6 | 1 | 1 | 1 | 1 | 1 | 7 | 4 |
+| 13 | lexisantoro | 18 |  1 | 0 | 4 | 0 | 1 | 1 | 1 | 0 |
+| 14 | sterlins | 17 |  3 | 1 | 1 | 1 | 1 | 1 | 2 | 2 |
+| 15 | NiravLangaliya | 16 |  8 | 4 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 16 | Wonong | 15 |  3 | 2 | 1 | 0 | 1 | 1 | 1 | 1 |
+| 17 | allisonsuarez | 15 |  3 | 2 | 1 | 0 | 1 | 1 | 61 | 0 |
+
+- nnsuite/nnstreamer
+
+| # | login | activity | issue_comment | open_issue | open_pull | pull_review_comment | merge_pull | pull_commits | pull_additions | pull_deletions |
+|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
+| 1 | helloahn | 609 |  16 | 2 | 28 | 95 | 25 | 28 | 1445 | 264 |
+| 2 | ajarthurs | 13 |  3 | 1 | 1 | 0 | 1 | 1 | 1 | 0 |
+
+- ludwig-ai/ludwig
+
+| # | login | activity | issue_comment | open_issue | open_pull | pull_review_comment | merge_pull | pull_commits | pull_additions | pull_deletions |
+|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
+| 1 | modernlearner | 12 |  2 | 1 | 1 | 0 | 1 | 3 | 11 | 0 |
 
 - elasticdeeplearning/edl
 
@@ -1499,11 +1499,11 @@ TAC 将对所有 LF AI & Data 项目进行年度审查。年度审查包括评�
 
 - Trusted-AI/AIF360
 
-<embed src="http://gar2020.opensource-service.cn/svgrenderer/github/X-lab2017/github-analysis-report?path=sqls/working-hour-distribution/image.svg&data=[2,1,2,1,2,3,1,2,2,4,2,1,3,1,5,4,3,2,2,2,7,4,4,5,3,1,1,2,1,2,2,2,1,2,1,2,4,5,5,2,6,3,4,4,4,4,7,3,2,1,3,2,3,1,1,2,1,2,2,1,2,4,5,4,1,3,7,5,10,4,5,2,3,2,4,1,1,1,1,2,2,1,2,1,3,4,6,6,3,1,4,6,4,5,2,1,0,2,2,2,2,1,1,1,1,3,2,2,1,1,1,4,6,4,7,4,2,2,2,2,1,1,1,1,1,0,1,1,1,1,2,1,1,2,1,1,4,1,1,1,0,2,1,1,1,1,1,2,1,0,1,1,1,1,1,1,1,1,2,1,2,0,2,2,1,1,1,1]&lang=en" style="width:600" />
+<embed src="http://gar2020.opensource-service.cn/svgrenderer/github/X-lab2017/github-analysis-report?path=sqls/working-hour-distribution/image.svg&data=[2,1,2,1,2,3,1,2,2,4,2,1,3,1,5,4,3,2,2,2,7,4,4,5,3,1,1,2,1,2,2,2,1,2,1,2,4,5,5,2,6,3,4,4,4,4,7,3,2,1,3,2,3,2,1,2,1,2,2,1,2,4,5,4,1,3,7,5,10,4,5,2,3,2,4,1,1,1,1,2,2,1,3,1,3,4,6,6,3,1,4,6,4,5,2,1,0,2,2,2,2,1,1,1,1,3,2,2,1,1,1,4,6,4,7,4,2,2,2,2,1,1,1,1,1,0,1,1,1,1,2,1,1,2,1,1,4,1,1,1,0,2,1,1,1,1,1,2,1,0,1,1,1,1,1,1,1,1,2,1,2,0,2,2,1,1,1,1]&lang=en" style="width:600" />
 
 - sparklyr/sparklyr
 
-<embed src="http://gar2020.opensource-service.cn/svgrenderer/github/X-lab2017/github-analysis-report?path=sqls/working-hour-distribution/image.svg&data=[1,0,1,1,1,1,1,1,1,1,3,4,3,7,5,5,9,6,6,5,5,4,5,2,1,0,1,1,1,1,1,2,2,1,2,5,6,6,9,8,7,10,9,4,4,3,3,3,2,2,1,1,1,2,1,1,1,1,3,3,4,3,5,9,10,7,8,5,3,3,3,3,3,3,2,3,1,1,1,2,2,2,3,4,8,6,5,4,6,8,9,5,4,4,3,3,2,1,3,1,1,1,1,1,1,1,4,4,5,2,4,5,5,3,6,5,4,3,3,3,4,3,1,1,1,1,1,0,1,0,1,0,0,0,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1]&lang=en" style="width:600" />
+<embed src="http://gar2020.opensource-service.cn/svgrenderer/github/X-lab2017/github-analysis-report?path=sqls/working-hour-distribution/image.svg&data=[1,0,1,1,1,1,1,1,1,1,3,4,3,7,5,5,9,6,6,5,5,4,5,2,1,0,1,1,1,1,1,2,2,1,2,5,6,6,9,8,7,10,9,4,4,3,3,3,2,2,1,1,1,2,1,1,1,1,3,3,4,3,5,9,10,7,8,5,3,3,3,3,3,4,2,3,1,1,1,2,2,2,3,4,8,6,5,4,6,8,9,5,4,4,3,3,2,1,3,1,1,1,1,1,1,1,4,4,5,2,4,5,5,3,6,5,4,3,3,3,4,3,1,1,1,1,1,0,1,0,1,0,0,0,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1]&lang=en" style="width:600" />
 
 - Trusted-AI/adversarial-robustness-toolbox
 
@@ -1511,35 +1511,35 @@ TAC 将对所有 LF AI & Data 项目进行年度审查。年度审查包括评�
 
 - MarquezProject/marquez
 
-<embed src="http://gar2020.opensource-service.cn/svgrenderer/github/X-lab2017/github-analysis-report?path=sqls/working-hour-distribution/image.svg&data=[1,1,0,1,1,2,2,1,1,1,1,0,1,1,2,2,2,2,5,2,2,3,3,10,2,4,2,1,4,1,3,2,2,1,1,1,1,1,2,1,2,1,3,5,2,1,3,3,4,1,2,1,2,1,2,1,1,1,1,1,1,1,1,2,0,1,4,4,4,6,3,3,1,1,1,1,3,2,6,1,1,1,1,1,1,1,1,2,2,2,2,2,4,4,4,2,7,2,1,2,1,2,2,5,2,1,2,0,0,1,1,1,1,3,3,5,2,1,1,2,2,1,1,1,1,2,1,2,1,1,1,0,0,1,1,0,1,2,3,5,6,4,1,1,0,1,5,2,2,2,1,1,1,1,1,1,0,1,1,1,2,3,6,2,1,1,1,1]&lang=en" style="width:600" />
+<embed src="http://gar2020.opensource-service.cn/svgrenderer/github/X-lab2017/github-analysis-report?path=sqls/working-hour-distribution/image.svg&data=[1,1,0,1,1,2,2,1,1,1,1,0,1,1,2,2,2,2,5,2,2,3,3,10,2,4,2,1,4,1,3,2,2,1,1,1,1,1,2,1,2,1,3,5,2,1,3,3,4,1,2,1,2,1,2,1,1,1,1,1,1,1,1,2,0,1,4,4,4,6,3,3,1,1,1,1,3,2,6,1,1,1,1,1,1,1,1,2,2,2,2,2,4,4,4,2,7,2,1,2,1,2,2,5,2,1,2,0,0,1,1,1,1,3,3,5,2,1,2,2,2,1,1,1,1,2,1,2,1,1,1,0,0,1,1,0,1,2,3,5,6,4,1,1,0,1,5,2,2,2,1,1,1,1,1,1,0,1,1,1,2,3,6,2,1,1,1,1]&lang=en" style="width:600" />
 
 - Angel-ML/angel
 
-<embed src="http://gar2020.opensource-service.cn/svgrenderer/github/X-lab2017/github-analysis-report?path=sqls/working-hour-distribution/image.svg&data=[0,2,5,6,1,4,9,7,7,2,1,10,4,2,2,3,2,1,1,1,1,0,1,1,1,3,6,3,2,3,4,7,2,4,3,2,5,4,5,2,2,1,1,1,1,0,0,0,1,4,5,5,2,1,4,9,4,7,4,5,4,3,5,2,1,2,1,1,0,1,1,0,1,5,5,4,3,2,4,7,5,2,2,1,6,1,1,1,1,1,1,0,0,1,0,1,0,2,4,4,1,2,4,4,4,5,3,3,3,3,1,3,2,0,0,1,1,1,1,0,1,1,3,1,1,1,2,4,2,1,2,1,2,2,1,2,1,1,1,0,1,1,0,0,0,2,2,2,7,2,1,2,6,6,4,2,3,4,2,4,2,0,0,1,0,1,1,1]&lang=en" style="width:600" />
+<embed src="http://gar2020.opensource-service.cn/svgrenderer/github/X-lab2017/github-analysis-report?path=sqls/working-hour-distribution/image.svg&data=[0,2,5,6,1,4,9,7,7,2,1,10,4,2,2,3,2,1,1,1,1,0,1,1,1,3,6,3,2,3,4,7,2,4,3,2,5,4,5,2,2,1,1,1,1,0,0,0,1,4,5,5,2,1,4,9,4,7,4,5,4,3,5,2,1,2,1,1,0,1,1,0,1,5,5,4,3,2,4,7,5,2,2,1,6,1,1,1,1,1,1,0,0,1,0,1,0,2,4,4,1,2,4,4,4,6,3,3,3,3,1,3,2,0,0,1,1,1,1,0,1,1,3,1,1,1,2,4,2,1,2,1,2,2,1,2,1,1,1,0,1,1,0,0,0,2,2,2,7,2,1,2,6,6,4,2,3,4,2,4,2,0,0,1,0,1,1,1]&lang=en" style="width:600" />
 
 - milvus-io/milvus
 
-<embed src="http://gar2020.opensource-service.cn/svgrenderer/github/X-lab2017/github-analysis-report?path=sqls/working-hour-distribution/image.svg&data=[1,5,9,8,4,2,7,9,8,8,6,4,4,3,3,3,2,1,1,1,1,1,1,1,1,5,10,10,4,3,9,8,8,9,7,7,4,3,3,2,1,1,1,1,1,1,1,1,1,5,9,7,4,3,9,8,9,9,9,5,5,3,2,2,2,1,1,1,1,1,1,1,1,6,9,8,4,4,10,8,9,9,7,6,4,4,3,3,2,1,1,1,1,1,1,1,1,5,9,9,4,3,9,8,9,8,5,6,5,4,3,2,1,1,1,1,1,1,1,1,1,4,9,7,4,4,6,7,7,6,4,5,4,3,3,2,2,1,1,1,1,1,1,1,1,1,2,3,2,2,4,3,2,2,1,2,0,1,2,1,1,1,1,1,1,1,1,1]&lang=en" style="width:600" />
+<embed src="http://gar2020.opensource-service.cn/svgrenderer/github/X-lab2017/github-analysis-report?path=sqls/working-hour-distribution/image.svg&data=[1,5,9,8,4,2,7,9,8,8,6,4,5,3,3,3,2,1,1,1,1,1,1,1,1,5,10,10,4,3,9,8,8,10,7,7,4,3,3,2,1,1,1,1,1,1,1,1,1,5,10,8,4,3,9,8,9,8,9,5,5,3,2,2,2,1,1,1,1,1,1,1,1,6,9,8,4,4,10,8,8,9,7,6,4,4,3,3,2,1,1,1,1,1,1,1,1,5,9,9,4,3,8,7,9,8,5,6,4,4,3,2,1,1,1,1,1,1,1,1,1,4,9,7,4,4,6,7,6,6,4,5,4,3,3,2,2,1,1,1,1,1,1,1,1,1,2,3,2,2,4,3,2,2,1,2,0,1,2,2,1,1,1,1,1,1,1,1]&lang=en" style="width:600" />
 
 - acumos/documentation
 
 <embed src="http://gar2020.opensource-service.cn/svgrenderer/github/X-lab2017/github-analysis-report?path=sqls/working-hour-distribution/image.svg&data=[0,0,0,0,1,1,2,2,1,2,2,1,4,5,5,4,9,5,2,1,2,1,1,0,0,0,1,0,1,1,1,3,2,1,3,1,6,6,10,4,2,1,2,3,2,2,1,1,0,1,0,0,0,0,1,4,1,1,1,3,2,5,4,5,3,3,2,3,2,1,0,1,1,1,0,0,0,1,2,2,2,5,4,3,5,7,7,7,5,1,2,2,1,2,1,0,0,1,0,1,2,2,3,3,2,4,3,5,8,8,10,7,5,5,2,1,1,2,2,1,1,1,1,0,0,0,0,0,0,0,0,0,0,1,1,1,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,1,0,0,0,0]&lang=en" style="width:600" />
 
-- gojek/feast
+- feast-dev/feast
 
-<embed src="http://gar2020.opensource-service.cn/svgrenderer/github/X-lab2017/github-analysis-report?path=sqls/working-hour-distribution/image.svg&data=[1,6,8,8,8,7,9,9,9,8,8,5,4,6,5,3,3,2,1,2,1,1,1,2,2,5,9,10,8,7,7,10,9,9,7,5,3,4,4,3,3,2,2,1,1,1,1,2,2,4,8,5,8,6,9,9,9,7,7,5,3,6,4,3,2,2,2,2,1,1,1,2,3,5,6,10,7,9,9,8,7,9,6,4,3,4,3,2,3,2,2,2,2,2,2,1,3,7,6,6,5,8,9,10,10,5,4,3,2,2,4,1,2,1,1,1,1,1,1,1,1,2,2,4,3,3,4,4,4,3,3,3,2,1,2,1,2,1,1,1,1,1,1,1,1,2,3,3,4,2,3,4,2,2,3,2,1,2,2,2,3,1,1,1,1,1,1,1]&lang=en" style="width:600" />
+<embed src="http://gar2020.opensource-service.cn/svgrenderer/github/X-lab2017/github-analysis-report?path=sqls/working-hour-distribution/image.svg&data=[1,6,8,8,8,7,9,9,9,8,8,5,4,6,6,3,3,2,2,2,1,1,1,2,2,5,9,10,8,7,7,10,9,9,7,5,3,4,4,3,3,2,2,1,1,1,1,2,2,4,9,6,8,6,9,9,9,7,7,5,3,6,4,3,2,2,2,2,1,1,1,2,3,5,6,10,7,9,9,8,7,9,7,4,3,4,3,2,3,2,2,2,2,2,2,1,3,7,6,6,5,8,9,10,10,5,4,3,2,2,4,1,2,1,1,1,1,1,1,1,1,2,2,4,3,3,4,4,4,3,3,3,2,1,2,1,2,1,1,1,1,1,1,1,1,2,3,3,4,2,3,4,2,2,3,2,1,2,2,2,3,1,1,1,1,1,1,1]&lang=en" style="width:600" />
 
 - uber/ludwig
 
-<embed src="http://gar2020.opensource-service.cn/svgrenderer/github/X-lab2017/github-analysis-report?path=sqls/working-hour-distribution/image.svg&data=[4,6,4,3,3,3,2,2,2,2,1,2,2,2,2,2,2,2,4,3,4,5,4,6,7,6,4,4,2,1,3,2,2,2,2,2,2,1,2,1,2,2,2,4,3,5,4,5,8,7,5,5,5,1,2,2,2,1,2,2,2,2,2,3,3,3,4,4,6,4,4,4,6,10,6,5,3,1,2,3,1,2,1,1,2,3,2,2,2,3,2,4,4,5,6,5,6,10,7,4,3,2,3,3,2,2,2,1,2,2,1,3,2,1,2,2,5,4,3,6,6,5,4,3,2,3,2,2,2,1,1,1,2,1,2,3,2,2,6,6,5,5,5,6,6,6,5,4,3,3,2,2,2,1,2,1,2,1,1,2,2,2,3,4,4,4,5,4]&lang=en" style="width:600" />
+<embed src="http://gar2020.opensource-service.cn/svgrenderer/github/X-lab2017/github-analysis-report?path=sqls/working-hour-distribution/image.svg&data=[4,6,4,3,3,3,2,2,2,2,1,2,2,2,2,2,2,2,4,3,4,5,4,6,7,6,5,4,2,1,3,2,2,2,2,2,2,1,2,1,2,2,2,4,3,5,4,5,8,7,5,5,5,1,2,2,2,1,2,2,2,2,2,3,3,3,4,4,6,4,4,4,6,10,6,5,3,2,2,3,1,2,1,1,2,3,2,2,2,3,2,4,4,5,6,5,6,10,7,4,3,2,3,3,2,2,2,1,2,2,1,3,2,1,2,2,5,4,3,6,6,5,4,3,2,3,2,2,2,1,1,1,2,1,2,3,2,2,6,6,5,5,5,6,6,6,5,4,3,3,2,2,2,1,2,1,2,1,1,2,2,2,3,4,4,4,5,4]&lang=en" style="width:600" />
 
 - nnstreamer/nnstreamer
 
-<embed src="http://gar2020.opensource-service.cn/svgrenderer/github/X-lab2017/github-analysis-report?path=sqls/working-hour-distribution/image.svg&data=[1,2,5,4,7,6,6,9,8,6,10,6,2,2,1,1,1,1,1,1,1,1,1,1,3,4,9,6,6,4,5,8,7,6,10,6,3,1,2,1,1,1,1,1,1,1,1,1,2,5,8,5,7,8,8,9,8,5,9,5,3,2,2,1,1,1,1,1,0,0,1,1,2,5,8,7,7,10,9,10,7,5,7,6,3,1,2,1,1,1,1,1,1,1,1,1,2,7,8,4,8,10,10,9,6,4,4,4,3,2,1,1,1,1,0,1,1,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]&lang=en" style="width:600" />
+<embed src="http://gar2020.opensource-service.cn/svgrenderer/github/X-lab2017/github-analysis-report?path=sqls/working-hour-distribution/image.svg&data=[1,2,5,4,7,6,6,9,8,6,10,6,2,2,1,1,1,1,1,1,1,1,1,1,3,5,9,6,6,4,5,8,7,6,10,6,3,1,2,1,1,1,1,1,1,1,1,1,2,5,8,5,7,8,8,9,8,5,9,5,3,2,2,1,1,1,1,1,0,0,1,1,2,5,8,7,7,10,9,10,7,5,7,6,3,1,2,1,1,1,1,1,1,1,1,1,2,7,8,4,8,10,10,9,6,4,4,4,3,2,1,1,1,1,0,1,1,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]&lang=en" style="width:600" />
 
 - onnx/onnx
 
-<embed src="http://gar2020.opensource-service.cn/svgrenderer/github/X-lab2017/github-analysis-report?path=sqls/working-hour-distribution/image.svg&data=[2,4,4,3,3,3,3,3,4,3,3,2,2,2,3,3,7,6,5,4,5,7,6,6,6,6,6,4,4,4,4,4,3,4,3,2,3,3,3,5,9,7,8,6,4,8,7,6,10,5,5,4,4,3,5,5,5,5,3,2,4,3,3,4,8,7,9,8,5,6,8,5,4,7,4,6,3,3,6,5,5,7,2,2,2,4,3,4,5,6,8,7,6,5,5,7,6,7,4,4,2,3,3,4,5,4,3,3,3,3,3,3,4,6,6,5,6,5,5,4,5,4,4,3,1,2,2,2,1,1,1,1,2,1,1,1,1,2,2,1,1,1,1,1,2,2,1,1,1,1,1,2,2,1,2,2,2,2,1,2,2,1,1,1,1,2,2,1]&lang=en" style="width:600" />
+<embed src="http://gar2020.opensource-service.cn/svgrenderer/github/X-lab2017/github-analysis-report?path=sqls/working-hour-distribution/image.svg&data=[2,4,4,3,3,3,3,3,4,3,3,2,2,2,3,3,7,6,6,4,5,7,6,6,6,6,6,4,4,4,4,4,3,4,3,2,3,3,3,5,9,7,8,6,4,8,7,6,10,5,5,4,4,3,5,5,5,5,3,2,4,3,3,4,8,7,9,8,5,6,8,5,4,7,4,6,3,3,6,5,5,7,2,2,2,4,3,4,5,6,8,7,6,5,5,7,6,7,4,4,2,3,3,4,5,4,3,3,3,3,3,3,4,6,6,5,6,5,5,4,5,4,4,3,2,2,2,2,1,1,1,1,2,1,1,1,1,2,2,1,1,1,1,1,2,2,1,1,2,1,1,2,2,1,2,2,2,2,1,2,2,1,1,1,1,2,2,1]&lang=en" style="width:600" />
 
 - elasticdeeplearning/edl
 
@@ -1547,7 +1547,7 @@ TAC 将对所有 LF AI & Data 项目进行年度审查。年度审查包括评�
 
 - lyft/amundsen
 
-<embed src="http://gar2020.opensource-service.cn/svgrenderer/github/X-lab2017/github-analysis-report?path=sqls/working-hour-distribution/image.svg&data=[1,1,1,1,1,1,1,1,1,1,1,1,1,8,1,1,10,3,2,1,2,2,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,1,1,2,2,2,1,1,1,1,1,2,1,1,1,1,1,1,1,1,1,1,1,1,3,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,1,1,2,2,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,1,1,1,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]&lang=en" style="width:600" />
+<embed src="http://gar2020.opensource-service.cn/svgrenderer/github/X-lab2017/github-analysis-report?path=sqls/working-hour-distribution/image.svg&data=[1,1,1,1,1,1,1,1,1,1,1,1,1,8,1,1,10,3,2,1,2,2,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,1,1,2,2,2,1,1,1,1,1,2,1,1,1,1,1,1,1,1,1,1,1,1,3,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,1,1,2,2,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,1,1,1,2,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]&lang=en" style="width:600" />
 
 - odpi/egeria
 
@@ -1555,7 +1555,7 @@ TAC 将对所有 LF AI & Data 项目进行年度审查。年度审查包括评�
 
 - horovod/horovod
 
-<embed src="http://gar2020.opensource-service.cn/svgrenderer/github/X-lab2017/github-analysis-report?path=sqls/working-hour-distribution/image.svg&data=[2,2,3,3,1,2,2,3,3,3,2,2,3,3,3,5,6,7,6,6,6,5,5,5,4,4,4,4,2,2,3,4,4,4,2,2,3,4,4,4,6,6,4,5,6,4,6,5,4,3,5,4,2,2,4,4,4,4,3,2,3,5,5,6,6,6,8,6,7,8,4,5,4,4,5,4,2,3,4,3,4,5,3,3,3,5,3,5,6,8,8,9,8,6,5,6,5,5,5,4,2,3,6,4,4,4,3,3,3,3,3,5,10,10,8,6,6,7,8,6,3,5,6,5,4,3,3,5,5,3,3,3,1,2,2,2,3,2,1,1,1,1,1,1,1,1,1,2,1,1,1,1,1,2,1,1,1,1,1,1,2,2,2,2,1,1,1,1]&lang=en" style="width:600" />
+<embed src="http://gar2020.opensource-service.cn/svgrenderer/github/X-lab2017/github-analysis-report?path=sqls/working-hour-distribution/image.svg&data=[2,2,3,3,1,2,2,3,3,3,2,2,3,3,3,5,6,7,6,6,6,5,5,5,4,4,4,4,2,2,3,4,4,4,2,2,3,5,4,4,6,6,4,5,6,4,6,5,4,3,5,4,2,2,4,4,4,4,3,2,3,5,5,6,6,6,8,6,7,8,4,5,4,4,5,4,2,3,4,3,4,5,3,3,3,5,4,5,6,8,8,9,8,6,5,6,5,5,5,4,2,3,6,4,4,4,3,3,3,3,3,5,10,10,8,6,6,8,9,6,3,5,6,5,4,3,3,5,5,3,3,3,1,2,2,2,3,3,1,1,2,1,1,1,1,1,1,2,1,1,1,2,1,2,1,1,1,1,1,1,2,2,2,2,2,1,1,1]&lang=en" style="width:600" />
 
 - Adlik/Adlik
 
@@ -1567,7 +1567,7 @@ TAC 将对所有 LF AI & Data 项目进行年度审查。年度审查包括评�
 
 - IBM/AIX360
 
-<embed src="http://gar2020.opensource-service.cn/svgrenderer/github/X-lab2017/github-analysis-report?path=sqls/working-hour-distribution/image.svg&data=[1,1,1,1,1,2,1,2,1,1,1,2,2,3,2,5,4,1,2,4,2,1,2,3,1,2,9,2,2,3,5,2,5,1,1,1,2,1,1,6,10,2,5,4,2,1,6,5,5,1,1,1,1,3,2,2,2,4,0,5,3,3,5,2,7,3,1,2,2,0,2,1,2,4,0,1,1,1,1,2,1,1,2,2,1,4,2,2,2,3,3,4,3,1,1,2,2,1,2,3,1,1,2,2,1,3,1,2,1,1,5,2,7,2,4,4,0,2,1,5,1,1,3,1,0,1,1,1,1,1,1,1,1,1,0,2,1,0,1,2,2,1,0,1,1,0,2,2,1,0,1,1,1,2,2,2,1,0,2,2,1,1,0,1,1,2,1,1]&lang=en" style="width:600" />
+<embed src="http://gar2020.opensource-service.cn/svgrenderer/github/X-lab2017/github-analysis-report?path=sqls/working-hour-distribution/image.svg&data=[1,1,1,1,1,2,1,2,1,1,1,2,2,3,2,5,4,1,2,4,2,1,2,3,1,2,9,2,2,3,5,2,5,1,1,1,2,1,1,6,10,2,5,4,2,1,6,5,5,1,1,1,1,3,2,2,2,4,0,5,3,3,5,2,7,3,1,2,2,0,2,1,2,4,0,2,1,1,1,2,1,1,2,2,1,4,2,2,2,3,3,4,3,1,1,2,2,1,2,3,1,1,2,2,1,3,1,2,1,1,5,2,7,2,4,4,0,2,1,5,1,1,3,1,0,1,1,1,1,1,1,1,1,1,0,2,1,0,1,2,2,1,0,1,1,0,2,2,1,0,1,1,1,2,2,2,1,0,2,2,1,1,0,1,1,2,1,1]&lang=en" style="width:600" />
 
 - didi/delta
 
@@ -1575,7 +1575,7 @@ TAC 将对所有 LF AI & Data 项目进行年度审查。年度审查包括评�
 
 - pyro-ppl/pyro
 
-<embed src="http://gar2020.opensource-service.cn/svgrenderer/github/X-lab2017/github-analysis-report?path=sqls/working-hour-distribution/image.svg&data=[2,2,3,3,2,2,2,2,1,1,1,1,2,2,3,3,5,5,5,5,4,5,4,5,5,10,3,3,3,2,2,1,1,1,1,1,2,2,2,3,4,6,4,6,5,5,5,5,7,5,3,2,4,2,2,1,1,1,1,1,2,4,3,2,4,5,3,5,6,5,5,5,4,4,3,3,4,4,3,2,1,1,1,1,1,2,3,4,6,5,5,5,5,5,5,6,4,3,2,2,3,2,2,1,1,1,1,1,1,2,2,5,6,7,5,4,6,4,3,2,3,2,3,2,1,2,1,1,1,1,1,1,1,1,2,3,2,2,3,3,2,2,2,4,3,3,2,1,2,1,1,1,1,1,1,1,1,1,1,2,1,5,3,3,2,3,1,3]&lang=en" style="width:600" />
+<embed src="http://gar2020.opensource-service.cn/svgrenderer/github/X-lab2017/github-analysis-report?path=sqls/working-hour-distribution/image.svg&data=[2,2,3,3,2,2,2,2,1,1,1,1,2,2,3,3,5,5,5,5,4,5,4,5,5,10,3,3,3,2,2,1,1,1,1,1,2,2,2,3,4,6,4,6,5,5,5,5,7,5,3,2,4,2,2,1,1,1,1,1,2,4,3,2,4,5,3,5,6,5,5,5,4,4,3,3,4,4,3,2,1,1,1,1,2,2,3,4,6,5,5,5,5,5,5,6,4,3,2,2,3,2,2,1,1,1,1,1,1,2,2,5,6,7,5,4,6,4,3,2,3,2,3,2,1,2,1,1,1,1,1,1,1,1,2,3,2,2,3,3,2,2,2,4,3,3,2,1,2,1,1,1,1,1,1,1,1,1,1,2,1,5,3,3,2,3,1,3]&lang=en" style="width:600" />
 
 - ForestFlow/ForestFlow
 
@@ -1583,7 +1583,7 @@ TAC 将对所有 LF AI & Data 项目进行年度审查。年度审查包括评�
 
 - JanusGraph/janusgraph
 
-<embed src="http://gar2020.opensource-service.cn/svgrenderer/github/X-lab2017/github-analysis-report?path=sqls/working-hour-distribution/image.svg&data=[1,2,2,2,2,4,6,7,7,7,3,10,8,7,5,6,5,4,3,5,4,5,4,1,4,2,2,2,2,5,9,8,5,4,2,7,4,6,5,5,5,1,4,2,3,6,4,1,3,2,5,4,2,3,5,5,5,6,3,6,4,4,4,5,5,2,2,2,5,5,5,2,3,2,2,3,3,3,7,5,6,4,3,6,4,7,7,5,3,3,4,3,3,5,2,1,7,3,2,1,1,3,3,3,7,4,5,5,5,5,4,3,5,3,3,3,2,3,3,1,2,1,2,2,3,2,2,2,1,3,4,2,2,2,2,2,2,2,1,2,1,2,1,1,1,1,2,2,1,1,3,2,1,2,2,3,2,2,2,1,2,2,3,3,2,1,1,1]&lang=en" style="width:600" />
+<embed src="http://gar2020.opensource-service.cn/svgrenderer/github/X-lab2017/github-analysis-report?path=sqls/working-hour-distribution/image.svg&data=[1,2,2,2,2,4,6,7,7,7,3,10,8,7,6,6,5,4,3,5,4,5,4,1,4,3,2,2,2,5,9,8,5,4,2,7,4,6,5,5,5,1,4,2,3,6,4,1,3,2,5,4,2,3,5,5,5,6,3,6,4,4,4,5,6,2,3,2,5,5,5,2,3,2,2,3,3,3,7,5,6,4,3,6,4,7,7,5,3,3,4,3,3,5,2,1,7,3,2,1,1,3,3,3,7,5,5,5,5,5,4,3,5,3,3,3,2,3,3,1,2,1,2,2,3,2,2,2,1,3,4,2,2,2,2,2,2,2,1,2,1,2,1,1,1,1,2,2,1,1,3,2,1,2,2,3,2,2,2,1,2,2,3,3,2,1,1,1]&lang=en" style="width:600" />
 
 - datadotworld/data-practices-site
 
