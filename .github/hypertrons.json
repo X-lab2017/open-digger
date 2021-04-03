@@ -92,19 +92,19 @@
       {
         "name": "committer",
         "description": "Committer of the project",
-        "users": [ "will-ww", "frank-zsy", "WuShaoling", "heming6666", "sunshinemingo" ],
+        "users": [ "will-ww", "frank-zsy", "sunshinemingo", "wengzhenjie" ],
         "commands": [ "/difficulty", "/approve" ]
       },
       {
         "name": "replier",
         "description": "Replier is responsible for reply issues in time",
-        "users": [ "frank-zsy", "WuShaoling" ],
+        "users": [ "sunshinemingo", "wengzhenjie" ],
         "commands": []
       },
       {
         "name": "sql-reviewer",
         "description": "Review the sql related PR to run SQL by command",
-        "users": [ "tianyichow", "sunshinemingo", "JerryKuan", "frank-zsy" ],
+        "users": [ "sunshinemingo", "frank-zsy", "wengzhenjie" ],
         "commands": [ "/sql-run", "/sql-verified" ]
       },
       {

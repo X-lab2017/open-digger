@@ -1,0 +1,91 @@
+{
+  "repos": [
+    {
+      "name": "apache/kylin",
+      "id": 28738447
+    },
+    {
+      "name": "apache/hawq",
+      "id": 41952293
+    },
+    {
+      "name": "apache/eagle",
+      "id": 46404009
+    },
+    {
+      "name": "apache/carbondata",
+      "id": 62117818
+    },
+    {
+      "name": "apache/rocketmq",
+      "id": 75164823
+    },
+    {
+      "name": "apache/griffin",
+      "id": 82035099
+    },
+    {
+      "name": "apache/servicecomb-java-chassis",
+      "id": 91674936
+    },
+    {
+      "name": "apache/skywalking",
+      "id": 45721011
+    },
+    {
+      "name": "apache/dubbo",
+      "id": 4710920
+    },
+    {
+      "name": "apache/shardingsphere",
+      "id": 49876476
+    },
+    {
+      "name": "apache/iotdb",
+      "id": 158975124
+    },
+    {
+      "name": "apache/apisix",
+      "id": 180481986
+    },
+    {
+      "name": "apache/ozone",
+      "id": 212382406
+    },
+    {
+      "name": "apache/incubator-weex",
+      "id": 78186814
+    },
+    {
+      "name": "apache/incubator-echarts",
+      "id": 9185792
+    },
+    {
+      "name": "apache/incubator-doris",
+      "id": 99919302
+    },
+    {
+      "name": "apache/incubator-brpc",
+      "id": 102343794
+    },
+    {
+      "name": "apache/incubator-teaclave",
+      "id": 195861277
+    },
+    {
+      "name": "apache/incubator-dolphinscheduler",
+      "id": 173335706
+    },
+    {
+      "name": "apache/incubator-tubemq",
+      "id": 231533573
+    },
+    {
+      "name": "apache/incubator-pegasus",
+      "id": 41712332
+    }
+  ],
+  "sqls": [
+    "overview"
+  ]
+}

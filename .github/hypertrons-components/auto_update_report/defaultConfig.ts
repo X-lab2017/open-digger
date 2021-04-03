@@ -15,33 +15,16 @@
 import Config from './config';
 
 const defaultConfig: Config = {
-  // schedule
-  schedName: 'Auto report update',
-  sched: '0 0 23 * * *', // update on 11pm UTC+8 by default
-  // sqls
-  sqlsDir: 'sqls',
-  sqlFile: '/sql',
-  sqlManifestFile: '/manifest.json',
-  sqlPreProcessorFile: '/pre-processor.js',
-  sqlPostProcessorFile: '/post-processor.js',
   defaultRenderParams: {
-    year: 2020,
-    table: 'github_log.year2020',
     owner: 'X-lab2017',
     repo: 'github-analysis-report',
     baseUrl: 'http://gar2020.opensource-service.cn/',
   },
-  sqlRequestUrl: 'http://localhost:7001/query',
-  // report
-  reportTemplateFile: 'REPORT_TEMPLATE.md',
-  reportFile: 'REPORT.md',
-  reportWebFile: 'docs/report.md',
-  // commit and pull
-  defaultBranch: 'master',
-  newBranchName: 'auto-update-report-{{timestamp}}',
-  commitMessage: 'docs: {{branchName}}',
-  pullTitle: '[Docs] Update report {{branchName}}',
-  pullBody: 'Update report automatically by robot from {{branchName}}',
+  db: {
+    githubEventLog: {
+      url: 'http://localhost:7001/query',
+    },
+  },
 };
 
 export default defaultConfig;

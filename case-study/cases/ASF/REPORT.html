@@ -1,0 +1,117 @@
+<html>
+<head>
+  <title>ASF China projects report</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-LCPyFKQyML7mqtS+4XytolfqyqSlcbB3bvDuH9vX2sdQMxRonb/M3b9EmhCNNNrV" crossorigin="anonymous"></script>
+  <script src="https://cdn.bootcdn.net/ajax/libs/echarts/5.0.2/echarts.min.js"></script>
+  <style>
+
+  </style>
+</head>
+
+<body>
+  
+  <h1>ASF China projects report</h1>
+
+  <h3>Log event data overview</h3>
+  <p>We collect GitHub log event from 2015 to 2021 and the overview chart is shown below.</p>
+  <div id="overviewChart" style="width: 600px;height:400px;"></div>
+
+  <script type='text/javascript'>
+  var overViewChart = echarts.init(document.getElementById('overviewChart'));
+  var option = {
+    tooltip: {
+      trigger: 'axis',
+      axisPointer: {
+        type: 'cross'
+      }
+    },
+    grid: {
+      right: '20%'
+    },
+    toolbox: {
+      feature: {
+        dataView: {show: true, readOnly: false},
+        saveAsImage: {show: true}
+      }
+    },
+    legend: {
+      data: ['日志量', '活跃用户', '活跃仓库']
+    },
+    xAxis: [
+      {
+        type: 'category',
+        axisTick: {
+          alignWithLabel: true
+        },
+        data: [2015,2016,2017,2018,2019,2020,2021]
+      }
+    ],
+    yAxis: [
+      {
+        type: 'value',
+        name: '日志量',
+        min: 0,
+        max: 220,
+        position: 'left',
+        axisLine: {
+          show: true,
+        },
+        axisLabel: {
+          formatter: '{value}K'
+        }
+      },
+      {
+        type: 'value',
+        name: '活跃用户',
+        min: 0,
+        max: 55,
+        position: 'right',
+        offset: 50,
+        axisLine: {
+          show: true,
+        },
+        axisLabel: {
+          formatter: '{value}K'
+        }
+      },
+      {
+        type: 'value',
+        name: '活跃仓库',
+        min: 0,
+        max: 25,
+        position: 'right',
+        axisLine: {
+          show: true,
+        },
+        axisLabel: {
+          formatter: '{value}'
+        }
+      }
+    ],
+    series: [
+      {
+        name: '日志量',
+        type: 'line',
+        data: [21.505,52.013,119.52,139.126,191.566,219.075,23.252]
+      },
+      {
+        name: '活跃用户',
+        type: 'bar',
+        yAxisIndex: 1,
+        data: [11.775,19.213,43.265,42.55,50.911,43.336,53.8]
+      },
+      {
+        name: '活跃仓库',
+        type: 'bar',
+        yAxisIndex: 2,
+        data: [6,9,15,16,20,21,21]
+      }
+    ]
+  };
+  overViewChart.setOption(option);
+  </script>
+</body>
+
+</html>

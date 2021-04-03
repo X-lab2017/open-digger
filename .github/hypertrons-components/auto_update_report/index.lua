@@ -12,76 +12,196 @@
 -- See the License for the specific language governing permissions and
 -- limitations under the License.
 
--- Auto update report scheduler
+-- Auto update study report scheduler
 
-sched(compConfig.schedName, compConfig.sched, function ()
+sched('Auto update study report', '0 0 3 * * 4', function ()
   wrap(function ()
-    log('Gonna update report')
-    -- Read all sqls from remote repo
-    local sqlDir = getDirectoryContent(compConfig.sqlsDir)
+    ::startRunPreProcess::
+    -- Run regular task like generating cache tables
+    -- Not implement yet.
+
+    ::startUpdateGlobalStudy::
+    log('Gonna update global study')
+    local sqlDir = getDirectoryContent('global-study')
     if (sqlDir == nil) then
-      log('No sql found under'..compConfig.sqlsDir)
-      return
+      log('No sql found under global-study')
+      goto startUpdateCaseStudy
     end
     log('Find '..#sqlDir..' SQLs dir')
 
-    -- Read sql details and request result
-    local sqlRenderParams = {}
+    local sqlRenderParams = {
+      ['html'] = '',
+      ['css'] = '',
+      ['js'] = ''
+    }
     for i=1, #sqlDir do
       local sqlMeta = sqlDir[i]
       if (sqlMeta.type == 'dir') then
-        local sqlRaw = getFileContent(sqlMeta.path..compConfig.sqlFile).content
-        local manifest = string2table(getFileContent(sqlMeta.path..compConfig.sqlManifestFile).content)
-        local postProcessor = getFileContent(sqlMeta.path..compConfig.sqlPostProcessorFile).content
-        local preProcessorFile = getFileContent(sqlMeta.path..compConfig.sqlPreProcessorFile)
-        local preProcessorResult = {}
-        if (preProcessorFile ~= nil) then
-          preProcessorResult = runJsCode(preProcessorFile.content, manifest.config)
-        end
+        goto globalStudycontinue
+      end
+      local configFile = getFileContent(sqlMeta.path..'/config.json')
+      local preProcessorFile = getFileContent(sqlMeta.path..'/pre-processor.js')
+      local postProcessorFile = getFileContent(sqlMeta.path..'/post-processor.js')
 
-        -- render sql
-        local sql = rendStr(sqlRaw, manifest.config, compConfig.defaultRenderParams, preProcessorResult)
-        -- request run sql
+      if (preProcessorFile == nil or postProcessorFile == nil) then
+        goto globalStudycontinue
+      end
+
+      local config = {}
+      if (configFile ~= nil) then
+        config = string2table(configFile.content)
+      end
+      local preProcessorResult = runJsCode(preProcessorFile.content, config, compConfig.defaultRenderParams)
+
+      local sqls = preProcessorResult.sqls;
+      local requestData = {}
+      for j=1, #sqls do
+        local sql = sqls[j]
+        if (compConfig['db'][sql.type] == nil) then
+          goto globalSqlRequestContinue
+        end
         local requestRes = requestUrl({
-          ['url'] = compConfig.sqlRequestUrl,
+          ['url'] = compConfig['db'][sql.type]['url'],
           ['method'] = 'POST',
           ['form'] = {
-            ['query'] = sql
+            ['query'] = sql.sql
           }
         })
-        local renderText = runJsCode(postProcessor, string2table(requestRes).data, compConfig.defaultRenderParams, manifest.config)
-        log('Sql run result for '..sqlMeta.name..' is '..requestRes)
-        sqlRenderParams[sqlMeta.name] = {
-          ['sql'] = sqlRaw,
-          ['text'] = renderText,
-          ['config'] = manifest.config
-        }
+        requestData[j] = string2table(requestRes).data
+        ::globalSqlRequestContinue::
       end
+      local postProcessResult = runJsCode(postProcessor.content, requestData, config, compConfig.defaultRenderParams)
+      sqlRenderParams['html'] = sqlRenderParams['html']..'\n'..postProcessResult.html
+      sqlRenderParams['js'] = sqlRenderParams['js']..'\n'..postProcessResult.html
+      sqlRenderParams['css'] = sqlRenderParams['css']..'\n'..postProcessResult.html
+      ::globalStudycontinue::
     end
 
-    -- render report
-    local originReport = getFileContent(compConfig.reportFile)
-    local reportTemplate = getFileContent(compConfig.reportTemplateFile)
+    local originStudy = getFileContent('global-study/REPORT.html')
+    local reportTemplate = getFileContent('global-study/REPORT_TEMPLATE.html')
 
-    local newReport = rendStr(reportTemplate.content, compConfig.defaultRenderParams, {
-      ['sqls'] = sqlRenderParams
-    })
-    log('Rendered report is '..newReport)
+    local newStudy = rendStr(reportTemplate.content, sqlRenderParams, config, compConfig.defaultRenderParams)
+    log('Rendered study report is '..newStudy)
 
-    -- update report by pull
-    if (newReport ~= originReport.content) then
-      log('Gonna update report by pull')
-      local branchName = rendStr(compConfig.newBranchName, {
+    if (newStudy ~= originStudy.content) then
+      log('Gonna update global study by pull')
+      local branchName = rendStr('auto-update-global-study-{{timestamp}}', {
         ['timestamp'] = getNowTime()
       })
-      newBranch(branchName, compConfig.defaultBranch)
-      createOrUpdateFile(compConfig.reportFile, newReport, rendStr(compConfig.commitMessage, { ['branchName'] = branchName }), branchName)
-      createOrUpdateFile(compConfig.reportWebFile, newReport, rendStr(compConfig.commitMessage, { ['branchName'] = branchName }), branchName)
+      newBranch(branchName, 'master')
+      createOrUpdateFile('global-study/REPORT.html', newStudy, 'docs: '..branchName, branchName)
       newPullRequest({
-        ['title'] = rendStr(compConfig.pullTitle, { ['branchName'] = branchName }),
-        ['body'] = rendStr(compConfig.pullBody, { ['branchName'] = branchName }),
+        ['title'] = '[Docs] Update global study '..branchName,
+        ['body'] = 'Update global study automatically by robot from '..branchName,
         ['head'] = branchName,
-        ['base'] = compConfig.defaultBranch,
+        ['base'] = 'master',
+        ['allowModify'] = true,
+      })
+    end
+
+    ::startUpdateCaseStudy::
+    log('Gonna update case study')
+    local caseSqlDir = getDirectoryContent('case-study/sqls')
+    if (caseSqlDir == nil) then
+      log('No sql found under case-study/sqls')
+      return
+    end
+    log('Find '..#caseSqlDir..' SQLs in case study dir')
+
+    local caseDir = getDirectoryContent('case-study/cases')
+    log('Find '..#caseDir..' case study dir')
+
+    local reports = {}
+    for r=1, #caseDir do
+      local caseStudyMeta = caseDir[r]
+      if (caseStudyMeta.type ~= 'dir') then
+        goto caseStudyContinue
+      end
+      local caseConfigFile = getFileContent(caseStudyMeta.path..'/config.json')
+      if (selfManifestFile == nil) then
+        goto caseStudyContinue
+      end
+      local caseConfig = string2table(caseConfigFile.content)
+      local sqlRenderParams = {
+        ['html'] = '',
+        ['css'] = '',
+        ['js'] = ''
+      }
+      for i=1, #caseSqlDir do
+        local sqlMeta = caseSqlDir[i]
+        if (sqlMeta.type ~= 'dir') then
+          goto caseStudySqlContinue
+        end
+
+        if (arrayContains(caseConfig.sqls, function (s)
+          return s == sqlMeta.name
+        end)) then
+          goto caseStudySqlContinue
+        end
+
+        local configFile = getFileContent(sqlMeta.path..'/config.json')
+        local preProcessorFile = getFileContent(sqlMeta.path..'/pre-processor.js')
+        local postProcessorFile = getFileContent(sqlMeta.path..'/post-processor.js')
+        if (preProcessorFile == nil or postProcessorFile == nil) then
+          goto caseStudySqlContinue
+        end
+        local config = {}
+        if (configFile ~= nil) then
+          config = string2table(configFile.content)
+        end
+
+        local preProcessorResult = runJsCode(preProcessorFile.content, caseConfig, config, compConfig.defaultRenderParams)
+        
+        local sqls = preProcessorResult.sqls;
+        local requestData = {}
+        for j=1, #sqls do
+          local sql = sqls[j]
+          if (compConfig['db'][sql.type] == nil) then
+            goto globalSqlRequestContinue
+          end
+          local requestRes = requestUrl({
+            ['url'] = compConfig['db'][sql.type]['url'],
+            ['method'] = 'POST',
+            ['form'] = {
+              ['query'] = sql.sql
+            }
+          })
+          requestData[j] = string2table(requestRes).data
+          ::globalSqlRequestContinue::
+        end
+
+        local postProcessResult = runJsCode(postProcessor.content, requestData, caseConfig, config, compConfig.defaultRenderParams)
+        sqlRenderParams['html'] = sqlRenderParams['html']..'\n'..postProcessResult.html
+        sqlRenderParams['js'] = sqlRenderParams['js']..'\n'..postProcessResult.html
+        sqlRenderParams['css'] = sqlRenderParams['css']..'\n'..postProcessResult.html
+        ::caseStudySqlContinue::
+      end
+      local caseStudyOriginReport = getFileContent(caseStudyMeta.path..'/REPORT.html')
+      local caseStudyReportTemplate = getFileContent(caseStudyMeta.path..'/REPORT_TEMPLATE.html')
+
+      local newReport = rendStr(caseStudyReportTemplate.content, compConfig.defaultRenderParams, sqlRenderParams)
+      log('Rendered report is '..newReport)
+
+      if (originReport == nil or newReport ~= originReport.content) then
+        log('Gonna update report for '..caseStudyMeta.name)
+        reports[caseStudyMeta.path..'/REPORT.html'] = newReport
+      end
+      ::caseStudyContinue::
+    end
+
+    if (tablelength(reports) ~= 0) then
+      local branchName = rendStr('auto-update-case-study-{{timestamp}}', {
+        ['timestamp'] = getNowTime()
+      })
+      newBranch(branchName, 'master')
+      for filePath, fileContent in pairs(reports) do
+        createOrUpdateFile(filePath, fileContent, 'docs: '..branchName, branchName)
+      end
+      newPullRequest({
+        ['title'] = '[Docs] Update case study '..branchName,
+        ['body'] = 'Update case study automatically by robot from '..branchName,
+        ['head'] = branchName,
+        ['base'] = 'master',
         ['allowModify'] = true,
       })
     end
