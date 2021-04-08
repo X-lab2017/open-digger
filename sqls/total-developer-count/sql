@@ -1,1 +1,0 @@
-SELECT COUNTDistinct(actor_id) as count FROM {{table}}
