@@ -6,111 +6,18 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-LCPyFKQyML7mqtS+4XytolfqyqSlcbB3bvDuH9vX2sdQMxRonb/M3b9EmhCNNNrV" crossorigin="anonymous"></script>
   <script src="https://cdn.bootcdn.net/ajax/libs/echarts/5.0.2/echarts.min.js"></script>
   <style>
-
+    
   </style>
 </head>
 
 <body>
-
-  <h1>OpenDigger Global Report</h1>
   
-  <h3>GitHub log event data overview</h3>
-  <p>We collect GitHub log event from 2015 to 2021 and the overview chart is shown below.</p>
-  <div id="overviewChart" style="width: 600px;height:400px;"></div>
+  <h1>OpenDigger Global Report</h1>
+
+  
 
   <script type='text/javascript'>
-  var overViewChart = echarts.init(document.getElementById('overviewChart'));
-  var option = {
-    tooltip: {
-      trigger: 'axis',
-      axisPointer: {
-        type: 'cross'
-      }
-    },
-    grid: {
-      right: '20%'
-    },
-    toolbox: {
-      feature: {
-        dataView: {show: true, readOnly: false},
-        saveAsImage: {show: true}
-      }
-    },
-    legend: {
-      data: ['日志量', '活跃用户', '活跃仓库']
-    },
-    xAxis: [
-      {
-        type: 'category',
-        axisTick: {
-          alignWithLabel: true
-        },
-        data: [2015, 2016, 2017, 2018, 2019, 2020, 2021]
-      }
-    ],
-    yAxis: [
-      {
-        type: 'value',
-        name: '日志量',
-        min: 0,
-        max: 900,
-        position: 'left',
-        axisLine: {
-          show: true,
-        },
-        axisLabel: {
-          formatter: '{value}M'
-        }
-      },
-      {
-        type: 'value',
-        name: '活跃用户',
-        min: 0,
-        max: 20,
-        position: 'right',
-        offset: 60,
-        axisLine: {
-          show: true,
-        },
-        axisLabel: {
-          formatter: '{value}M'
-        }
-      },
-      {
-        type: 'value',
-        name: '活跃仓库',
-        min: 0,
-        max: 70,
-        position: 'right',
-        axisLine: {
-          show: true,
-        },
-        axisLabel: {
-          formatter: '{value}M'
-        }
-      }
-    ],
-    series: [
-      {
-        name: '日志量',
-        type: 'line',
-        data: [212.221628, 320.726236, 412.942763, 479.185525, 605.468926, 863.415606, 95.783273],
-      },
-      {
-        name: '活跃用户',
-        type: 'bar',
-        yAxisIndex: 1,
-        data: [4.331563, 6.500999, 8.198981, 9.79031, 11.935354, 14.540459, 4.281729],
-      },
-      {
-        name: '活跃仓库',
-        type: 'bar',
-        yAxisIndex: 2,
-        data: [14.035339, 21.053202, 27.687491, 33.309171, 39.737938, 54.205696, 9.458928],
-      }
-    ]
-  };
-  overViewChart.setOption(option);
+    
   </script>
 </body>
 
