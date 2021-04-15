@@ -1,0 +1,30 @@
+name: publish
+
+on:
+  push:
+    branches: [ master ]
+  # Allows to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  pr-test:
+    runs-on: node14
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v2
+
+      - name: Test
+        run: |
+          npm install
+          npm run publish
+
+      - name: Update to oss
+        uses: tvrcgo/upload-to-oss@master
+        with:
+          key-id: ${{ secrets.accessKeyId }}
+          key-secret: ${{ secrets.accessKeySecret }}
+          region: ${{ secrets.region }}
+          bucket: ${{ secrets.bucket }}
+          asset-path: ./dist
+          target-path: ${{ secrets.deployPath }}

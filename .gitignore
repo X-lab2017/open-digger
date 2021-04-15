@@ -3,3 +3,8 @@
 .DS_Store
 *.swp
 *.lock
+
+*/**/node_modules
+src/**/*.js
+dist
+node_modules
