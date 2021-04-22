@@ -7,14 +7,21 @@ on:
   workflow_dispatch:
 
 jobs:
-  pr-test:
-    runs-on: node14
+  publish:
+    runs-on: ubuntu-latest
 
     steps:
       - name: Check out repository
         uses: actions/checkout@v2
 
+      - name: Setup node 14 env
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+
       - name: Test
+        env:
+          CLIKCKHOUSE_QUERY_URL: ${{ secrets.CLIKCKHOUSE_QUERY_URL }}
         run: |
           npm install
           npm run publish
@@ -22,9 +29,9 @@ jobs:
       - name: Update to oss
         uses: tvrcgo/upload-to-oss@master
         with:
-          key-id: ${{ secrets.accessKeyId }}
-          key-secret: ${{ secrets.accessKeySecret }}
-          region: ${{ secrets.region }}
-          bucket: ${{ secrets.bucket }}
+          key-id: ${{ secrets.OSS_ACCESS_KEY_ID }}
+          key-secret: ${{ secrets.OSS_ACCESS_KEY_SECRET }}
+          region: ${{ secrets.OSS_REGION }}
+          bucket: ${{ secrets.OSS_BUCKET }}
           asset-path: ./dist
-          target-path: ${{ secrets.deployPath }}
+          target-path: ${{ secrets.OSS_TARGET_PATH }}

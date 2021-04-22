@@ -10,8 +10,8 @@
   "scripts": {
     "build": "tsc",
     "test": "npm run clean && npm run build && RUN_TYPE=test node src/index.js",
-    "ci": "npm run clean && npm run build && RUN_TYPE=ci node src/index.js",
-    "publish": "npm run clean && npm run build && RUN_TYPE=publish node src/index.js",
+    "ci": "npm run clean && npm run build && RUN_TYPE=ci GITHUB_LOG_HOST=$CLICKHOUSE_CI_HOST node src/index.js",
+    "publish": "npm run clean && npm run build && RUN_TYPE=publish GITHUB_LOG_URL=$CLIKCKHOUSE_QUERY_URL node src/index.js",
     "data-docker": "docker pull docker-hub.x-lab.info/opendigger/github-sample-log:1.202104 && docker start github-sample-log || docker run -d --name github-sample-log -p 8123:8123 -p 9000:9000 --ulimit nofile=262144:262144 docker-hub.x-lab.info/opendigger/github-sample-log:1.202104",
     "clean": "rm -rf dist"
   },
