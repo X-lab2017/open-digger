@@ -1,0 +1,27 @@
+pageTitle: ASF China Study Report
+contentTitle: ASF China study report
+head: This is an auto generated digital report for ASF projects started from China.
+repos: # the repos in ASF
+  - 28738447 # apache/kylin
+  - 41952293 # apache/hawq
+  - 46404009 # apache/eagle
+  - 62117818 # apache/carbondata
+  - 75164823 # apache/rocketmq
+  - 82035099 # apache/griffin
+  - 91674936 # apache/servicecomb-java-chassis
+  - 45721011 # apache/skywalking
+  - 4710920 # apache/dubbo
+  - 49876476 # apache/shardingsphere
+  - 158975124 # apache/iotdb
+  - 180481986 # apache/apisix
+  - 212382406 # apache/ozone
+  - 78186814 # apache/incubator-weex
+  - 9185792 # apache/incubator-echarts
+  - 99919302 # apache/incubator-doris
+  - 102343794 # apache/incubator-brpc
+  - 195861277 # apache/incubator-teaclave
+  - 173335706 # apache/incubator-dolphinscheduler
+  - 231533573 # apache/incubator-tubemq
+  - 41712332 # apache/incubator-pegasus
+sqls: # the sql components you need
+  - overview

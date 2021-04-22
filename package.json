@@ -1,0 +1,45 @@
+{
+  "name": "open-digger",
+  "version": "1.0.0",
+  "description": "Open digger for open source data mining",
+  "main": "lib/index.js",
+  "directories": {
+    "doc": "docs",
+    "test": "test"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "npm run clean && npm run build && RUN_TYPE=test node src/index.js",
+    "ci": "npm run clean && npm run build && RUN_TYPE=ci node src/index.js",
+    "publish": "npm run clean && npm run build && RUN_TYPE=publish node src/index.js",
+    "data-docker": "docker pull docker-hub.x-lab.info/opendigger/github-sample-log:1.202104 && docker start github-sample-log || docker run -d --name github-sample-log -p 8123:8123 -p 9000:9000 --ulimit nofile=262144:262144 docker-hub.x-lab.info/opendigger/github-sample-log:1.202104",
+    "clean": "rm -rf dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/X-lab2017/open-digger.git"
+  },
+  "keywords": [
+    "opensource"
+  ],
+  "author": "FrankZhao",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/X-lab2017/open-digger/issues"
+  },
+  "homepage": "https://github.com/X-lab2017/open-digger#readme",
+  "dependencies": {
+    "@apla/clickhouse": "^1.6.4",
+    "js-yaml": "^4.1.0",
+    "pope": "^3.0.0",
+    "request": "^2.88.2",
+    "require-from-string": "^2.0.2",
+    "tslib": "^2.2.0",
+    "typescript": "^4.2.4"
+  },
+  "devDependencies": {
+    "@types/js-yaml": "^4.0.0",
+    "@types/node": "^14.14.37",
+    "@types/request": "^2.48.5"
+  }
+}
