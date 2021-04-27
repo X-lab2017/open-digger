@@ -19,14 +19,14 @@ jobs:
         with:
           node-version: '14'
 
-      - name: Test
+      - name: Generate report
         env:
           CLIKCKHOUSE_QUERY_URL: ${{ secrets.CLIKCKHOUSE_QUERY_URL }}
         run: |
           npm install
           npm run publish
 
-      - name: Update to oss
+      - name: Publish to oss
         uses: tvrcgo/upload-to-oss@master
         with:
           key-id: ${{ secrets.OSS_ACCESS_KEY_ID }}

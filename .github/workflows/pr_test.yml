@@ -1,8 +1,8 @@
 name: pr-test
 
 on:
-  pull_request:
-    branches: [ master ]
+  issue_comments:
+    types: [created]
   # Allows to run this workflow manually from the Actions tab
   workflow_dispatch:
 
@@ -11,15 +11,26 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+
+      - name: Check comment command
+        uses: actions-ecosystem/action-regex-match@v2
+        id: regex-match
+        with:
+          text: ${{ github.event.comment.body }}
+          regex: '^/sql-run$'
+
       - name: Check out repository
+        if: ${{ steps.regex-match.outputs.match != '' }}
         uses: actions/checkout@v2
 
       - name: Setup node 14 env
+        if: ${{ steps.regex-match.outputs.match != '' }}
         uses: actions/setup-node@v2
         with:
           node-version: '14'
 
       - name: Test
+        if: ${{ steps.regex-match.outputs.match != '' }}
         env:
           CLICKHOUSE_CI_HOST: ${{ secrets.CLICKHOUSE_CI_HOST }}
         run: |
@@ -27,6 +38,7 @@ jobs:
           npm run ci
 
       - name: Update to oss
+        if: ${{ steps.regex-match.outputs.match != '' }}
         uses: tvrcgo/upload-to-oss@master
         with:
           key-id: ${{ secrets.OSS_ACCESS_KEY_ID }}
@@ -37,11 +49,13 @@ jobs:
           target-path: ${{ secrets.OSS_TARGET_PATH }}
 
       - id: get-comment-body
+        if: ${{ steps.regex-match.outputs.match != '' }}
         run: |
           body=$(cat ./dist/pr-comment.md)
           echo ::set-output name=body::$body
 
       - name: Create comment
+        if: ${{ steps.regex-match.outputs.match != '' }}
         uses: peter-evans/create-or-update-comment@v1
         with:
           issue-number: ${{ github.event.pull_request.number }}
