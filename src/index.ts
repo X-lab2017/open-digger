@@ -25,9 +25,7 @@ import { globalStudy } from './global-study';
     }
     try {
       const ev = JSON.parse(readFileSync(eventPath, 'utf8'));
-      console.log(eventPath);
-      console.log(ev);
-      const prNum = ev.pull_request.number;
+      const prNum = ev.issue.number;
       const distDir = join(__dirname, '../dist');
       const files = readdirSync(distDir);
       let comment = `The CI process generated ${files.length} reports for this PR, please check the links to find out whether the results are as expected or not:\n`;
