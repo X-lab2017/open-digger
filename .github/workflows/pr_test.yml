@@ -1,7 +1,7 @@
 name: pr-test
 
 on:
-  issue_comments:
+  issue_comment:
     types: [created]
   # Allows to run this workflow manually from the Actions tab
   workflow_dispatch:
