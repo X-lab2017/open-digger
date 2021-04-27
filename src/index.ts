@@ -28,7 +28,7 @@ import { globalStudy } from './global-study';
       const prNum = ev.issue.number;
       const distDir = join(__dirname, '../dist');
       const files = readdirSync(distDir);
-      let comment = `The CI process generated ${files.length} reports for this PR, please check the links to find out whether the results are as expected or not:\n`;
+      let comment = `The CI process generated ${files.length} reports for this PR, please check the links to find out whether the results are as expected or not:\n\n`;
       files.forEach(f => {
         if (f.endsWith('.html')) {
           const newFileName = `pull-${prNum}-${f}`;
