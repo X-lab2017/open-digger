@@ -25,6 +25,8 @@ import { globalStudy } from './global-study';
     }
     try {
       const ev = JSON.parse(readFileSync(eventPath, 'utf8'));
+      console.log(eventPath);
+      console.log(ev);
       const prNum = ev.pull_request.number;
       const distDir = join(__dirname, '../dist');
       const files = readdirSync(distDir);
