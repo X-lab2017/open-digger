@@ -39,3 +39,29 @@ export async function queryGitHubEventLog(q: string): Promise<any> {
     return null;
   }
 }
+
+interface genTableConfig {
+  keys: string[];
+  header: any[];
+  data: any[];
+  tableClass: string;
+}
+
+export function genTable(config: genTableConfig): string {
+  const tableRow: string[] = [];
+  let h = '';
+  for (const k of config.keys) {
+    h += `<td>${(config.header && config.header[k]) ? config.header[k] : k}</td>`;
+  }
+  tableRow.push(h);
+  for (const r of config.data) {
+    let s = '';
+    for (const k of config.keys) {
+      s += `<td>${r[k]}</td>`;
+    }
+    tableRow.push(s);
+  }
+  return `<table class="${config.tableClass ?? 'table table-striped'}">
+      ${tableRow.map(r => `<tr>${r}</tr>\n`).join('')}
+    </table>`
+}

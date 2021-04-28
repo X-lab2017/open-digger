@@ -169,14 +169,6 @@
     "rules": [
       {
         "files": [
-          "sqls/.+/sql",
-          "sqls/.+/manifest%.json",
-          "sqls/.+/post%-processor%.js"
-        ],
-        "label": "pull/sql"
-      },
-      {
-        "files": [
           "docs/.+"
         ],
         "label": "pull/website"
