@@ -1,18 +1,56 @@
 module.exports = async function(_config, utils) {
-  const query = `SELECT * FROM
-(SELECT 2021 AS year, COUNT(*) AS log_count, COUNT(Distinct actor_id) as actor_count, COUNT(Distinct repo_id) AS repo_count FROM github_log.year2021
-UNION ALL
-SELECT 2020 AS year, COUNT(*) AS log_count, COUNT(Distinct actor_id) as actor_count, COUNT(Distinct repo_id) AS repo_count FROM github_log.year2020
-UNION ALL
-SELECT 2019 AS year, COUNT(*) AS log_count, COUNT(Distinct actor_id) as actor_count, COUNT(Distinct repo_id) AS repo_count FROM github_log.year2019
-UNION ALL
-SELECT 2018 AS year, COUNT(*) AS log_count, COUNT(Distinct actor_id) as actor_count, COUNT(Distinct repo_id) AS repo_count FROM github_log.year2018
-UNION ALL
-SELECT 2017 AS year, COUNT(*) AS log_count, COUNT(Distinct actor_id) as actor_count, COUNT(Distinct repo_id) AS repo_count FROM github_log.year2017
-UNION ALL
-SELECT 2016 AS year, COUNT(*) AS log_count, COUNT(Distinct actor_id) as actor_count, COUNT(Distinct repo_id) AS repo_count FROM github_log.year2016
-UNION ALL
-SELECT 2015 AS year, COUNT(*) AS log_count, COUNT(Distinct actor_id) as actor_count, COUNT(Distinct repo_id) AS repo_count FROM github_log.year2015)
+  const query = `SELECT *
+FROM 
+(
+    SELECT 
+        2021 AS year, 
+        COUNT(*) AS log_count, 
+        COUNTDistinct(actor_id) AS actor_count, 
+        COUNTDistinct(repo_id) AS repo_count
+    FROM github_log.year2021
+    UNION ALL
+    SELECT 
+        2020 AS year, 
+        COUNT(*) AS log_count, 
+        COUNTDistinct(actor_id) AS actor_count, 
+        COUNTDistinct(repo_id) AS repo_count
+    FROM github_log.year2020
+    UNION ALL
+    SELECT 
+        2019 AS year, 
+        COUNT(*) AS log_count, 
+        COUNTDistinct(actor_id) AS actor_count, 
+        COUNTDistinct(repo_id) AS repo_count
+    FROM github_log.year2019
+    UNION ALL
+    SELECT 
+        2018 AS year, 
+        COUNT(*) AS log_count, 
+        COUNTDistinct(actor_id) AS actor_count, 
+        COUNTDistinct(repo_id) AS repo_count
+    FROM github_log.year2018
+    UNION ALL
+    SELECT 
+        2017 AS year, 
+        COUNT(*) AS log_count, 
+        COUNTDistinct(actor_id) AS actor_count, 
+        COUNTDistinct(repo_id) AS repo_count
+    FROM github_log.year2017
+    UNION ALL
+    SELECT 
+        2016 AS year, 
+        COUNT(*) AS log_count, 
+        COUNTDistinct(actor_id) AS actor_count, 
+        COUNTDistinct(repo_id) AS repo_count
+    FROM github_log.year2016
+    UNION ALL
+    SELECT 
+        2015 AS year, 
+        COUNT(*) AS log_count, 
+        COUNTDistinct(actor_id) AS actor_count, 
+        COUNTDistinct(repo_id) AS repo_count
+    FROM github_log.year2015
+)
 ORDER BY year ASC`;
   
   const data = await utils.queryGitHubEventLog(query);

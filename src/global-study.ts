@@ -9,6 +9,7 @@ export async function globalStudy() {
   const reportContent = await generateReport({
     sqlsDir: join(__dirname, '../global-study/sqls'),
     customConfig: config,
+    sqls: config.sqls,
   });
 
   if (reportContent === null) return;
