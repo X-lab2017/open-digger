@@ -100,7 +100,7 @@ LIMIT ${topN_language}
   
   const data = await utils.queryGitHubEventLog(query);
 
-  const keys = ['repo_language', 'count', 'top_repo', 'activity', 'actor_count'];
+  const keys = ['language', 'count', 'top_repo', 'activity', 'actor_count'];
   
   return {
     html: `
