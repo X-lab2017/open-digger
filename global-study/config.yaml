@@ -15,3 +15,5 @@ weight:
 baseUrl: http://gar2020.opensource-service.cn/
 owner: X-lab2017
 repo: open-digger
+year: 2020
+table: github_log.year2020

@@ -9,6 +9,7 @@
     body {
       width: 80%;
       margin-left: 10%;
+      margin-top: 20px;
       background-color: bisque;
     }
     {{css}}
@@ -17,13 +18,19 @@
 
 <body>
   
-  <h1>{{contentTitle}}</h1>
+  <div class="text-center">
+    <h1>{{contentTitle}}</h1>
+  </div>
 
-  {{head}}
+  <div>
+    {{head}}  
+  </div>
 
-  {{html}}
+  <div>
+    {{html}}
+  </div>
 
-  <script type='text/javascript'>    
+  <script type='text/javascript'>
     {{js}}
   </script>
 </body>
