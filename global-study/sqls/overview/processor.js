@@ -67,10 +67,15 @@ ORDER BY year ASC`;
 
   return {
     html: `
-    <h3>GitHub log event data overview</h3>
-    <p>We collect GitHub log event from ${years[0]} to ${years[years.length - 1]} and the overview chart is shown below.</p>
-    <div id="overviewChart" style="width: 600px;height:400px;"></div>
-    ${dataError ? '<p>This is a sample data example due to render data error!</p>' : ''}`,
+    ${utils.genComponentTitle("GitHub log event data overview")}
+    <div class="row">
+      <div class="col-4">
+        ${utils.genComponentContent(`We collect GitHub log event from ${years[0]} to ${years[years.length - 1]} and the overview chart is shown as right.`)}
+      </div>
+      <div class="col-8">
+        <div id="overviewChart" style="width:100%;height:400px;"></div>
+      </div>
+    </div>`,
     css: '',
     js: `
   var overViewChart = echarts.init(document.getElementById('overviewChart'));
@@ -91,13 +96,22 @@ ORDER BY year ASC`;
       }
     },
     legend: {
-      data: ['日志量', '活跃用户', '活跃仓库']
+      data: ['日志量', '活跃用户', '活跃仓库'],
+      textStyle: {
+        color: textColor
+      }
     },
     xAxis: [
       {
         type: 'category',
         axisTick: {
           alignWithLabel: true
+        },
+        axisLine: {
+          show: true,
+          lineStyle: {
+            color: textColor
+          }
         },
         data: [${years.join(',')}]
       }
@@ -111,6 +125,9 @@ ORDER BY year ASC`;
         position: 'left',
         axisLine: {
           show: true,
+          lineStyle: {
+            color: colors[0]
+          }
         },
         axisLabel: {
           formatter: '{value}${logCount.unit}'
@@ -125,6 +142,9 @@ ORDER BY year ASC`;
         offset: 50,
         axisLine: {
           show: true,
+          lineStyle: {
+            color: colors[1]
+          }
         },
         axisLabel: {
           formatter: '{value}${actorCount.unit}'
@@ -138,6 +158,9 @@ ORDER BY year ASC`;
         position: 'right',
         axisLine: {
           show: true,
+          lineStyle: {
+            color: colors[2]
+          }
         },
         axisLabel: {
           formatter: '{value}${repoCount.unit}'
