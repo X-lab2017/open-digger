@@ -1,6 +1,6 @@
 module.exports = async function(config, utils) {
   const weight = config.weight;
-  const table = 'github_log.year2020';
+  const table = config.table;
   const topN_repo = 100000;
   const topN_language = 20;
   const query = `SELECT 

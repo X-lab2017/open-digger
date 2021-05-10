@@ -1,6 +1,5 @@
 module.exports = async function(config, utils) {
-  const year = '2020';
-  const table = 'github_log.year2020';
+  const { year, table } = config;
   const query = `SELECT COUNT(*) AS count, toDayOfWeek(created_at) AS dayOfWeek, toHour(created_at) AS hour FROM ${table} GROUP BY hour, dayOfWeek`;
   
   const data = await utils.queryGitHubEventLog(query);

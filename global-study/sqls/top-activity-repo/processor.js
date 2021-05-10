@@ -1,7 +1,7 @@
 module.exports = async function(config, utils) {
-  const table = 'github_log.year2020';
-  const topN = 20;
   const weight = config.weight;
+  const table = config.table;
+  const topN = 20;
   const query = `SELECT 
     anyHeavy(contribute_list.repo_name) AS name, 
     MAX(contribute_list.repo_language) AS language, 
