@@ -30,10 +30,15 @@ module.exports = async function(config, utils) {
 
   return {
     html: `
-    <h3>GitHub global working hour distribution</h3>
-    <p>We analyze the working hour distribution for GitHub logs all over the world during year ${year}, we found that open source developers are predominantly European because local working hour period lays in UTC±1 as the image shows.</p>
-
-    <embed src="${config.baseUrl}svgrenderer/github/${config.owner}/${config.repo}?path=assets/working-hour-distribution.svg&data=${JSON.stringify(d)}" />`,
+    ${utils.genComponentTitle(`GitHub global working hour distribution`)}
+    <div class="row">
+      <div class="col-6">
+        <embed src="${config.baseUrl}svgrenderer/github/${config.owner}/${config.repo}?path=assets/working-hour-distribution.svg&data=${JSON.stringify(d)}" />
+      </div>
+      <div class="col-6">
+        ${utils.genComponentContent(`We analyze the working hour distribution for GitHub logs all over the world during year ${year}, we found that open source developers are predominantly European because local working hour period lays in UTC±1 as the image shows.`)}
+      </div>
+    </div>`,
     css: '',
     js: '',
   };

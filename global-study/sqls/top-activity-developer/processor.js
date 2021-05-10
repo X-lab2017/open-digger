@@ -104,8 +104,8 @@ LIMIT ${topN}`;
   
   return {
     html: `
-    <h3>GitHub most active ${topN} developer account</h3>
-    <p>We have collected activity statistics and the ranking of developer accounts.</p>
+    ${utils.genComponentTitle(`GitHub most active ${topN} developer account`)}
+    ${utils.genComponentContent(`We have collected activity statistics and the ranking of developer accounts.`)}
     ${utils.genTable({
       keys,
       data,

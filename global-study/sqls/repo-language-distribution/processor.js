@@ -104,8 +104,8 @@ LIMIT ${topN_language}
   
   return {
     html: `
-    <h3>GitHub most used ${topN_language} languages</h3>
-    <p>We have collected activity statistics and the ranking of active repositories.</p>
+    ${utils.genComponentTitle(`GitHub most used ${topN_language} languages`)}
+    ${utils.genComponentContent(`We have collected activity statistics and the ranking of the most used languages.`)}
     ${utils.genTable({
       keys,
       data,

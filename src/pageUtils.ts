@@ -62,6 +62,24 @@ export function genTable(config: genTableConfig): string {
     tableRow.push(s);
   }
   return `<table class="${config.tableClass ?? 'table table-striped'}">
-      ${tableRow.map(r => `<tr>${r}</tr>\n`).join('')}
+      ${tableRow.map((r, i) => `<tr ${i % 2 === 1 ? 'style="background-color: rgba(30, 161, 255, 0.1)"' : ''}>${r}</tr>\n`).join('')}
     </table>`
+}
+
+export function genComponentTitle(title: string): string {
+  return `<div class="component-title-text">
+  <text>${title}</text>
+  </div>`;
+}
+
+export function genComponentContent(content: string): string {
+  return `<div class="component-content-text">
+  <text>${content}</text>
+  </div>`;
+}
+
+export function genFigure(content: string): string {
+  return `<div class="figure-text">
+  <text>${content}</text>
+  </div>`;
 }

@@ -10,7 +10,26 @@
       width: 80%;
       margin-left: 10%;
       margin-top: 20px;
-      background-color: bisque;
+      background-color: #212332;
+    }
+    * {
+      color: #D1E1F0;
+    }
+    .report-title-text {
+      font-size: 48px;
+      margin-bottom: 24px;
+    }
+    .component-title-text {
+      font-size: 36px;
+      margin-top: 42px;
+      margin-bottom: 42px;
+    }
+    .component-content-text {
+      font-size: 16px;
+      margin-bottom: 42px;
+    }
+    .figure-text {
+      font-size: 14px;
     }
     {{css}}
   </style>
@@ -19,11 +38,11 @@
 <body>
   
   <div class="text-center">
-    <h1>{{contentTitle}}</h1>
+    <text class="report-title-text">{{contentTitle}}</text>
   </div>
 
-  <div>
-    {{head}}  
+  <div class="component-content-text">
+    {{head}}
   </div>
 
   <div>
@@ -31,6 +50,8 @@
   </div>
 
   <script type='text/javascript'>
+    const colors = ['#33B3FF', '#8B73FF', '#21D096', '#E17070', '#03FFFF', 'F4DD67', 'CC529B'];
+    const textColor = '#D1E1F0';
     {{js}}
   </script>
 </body>
