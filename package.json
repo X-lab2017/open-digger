@@ -1,7 +1,7 @@
 {
   "name": "open-digger",
   "version": "1.0.0",
-  "description": "Open digger for open source data mining",
+  "description": "OpenDigger for open source data mining",
   "main": "lib/index.js",
   "directories": {
     "doc": "docs",
