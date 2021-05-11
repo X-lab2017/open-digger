@@ -1,5 +1,5 @@
 # Contributing Guide
-We would love for you to contribute to `github-analysis-report` and help make it even better than it is today! As a contributor, here are the guidelines we would like you to follow:
+We would love for you to contribute to `OpenDigger` and help make it even better than it is today! As a contributor, here are the guidelines we would like you to follow:
 
 - [Submitting an Issue](#issue)
 - [Submitting a Pull Request](#pr)
@@ -11,7 +11,7 @@ If you have any questions or feature requests, please feel free to [submit an is
 Before you submit an issue, consider the following guidelines:
 
 - Please search for related issues. Make sure you are not going to open a duplicate issue.
-- Please specify what kind of issue it is and explain it in the title or content, e.g. `feature`, `bug`, `documentation`, `discussion`, `help wanted`... The issue will be tagged automatically by the robot of the project(`analysis-report-bot`).
+- Please specify what kind of issue it is and explain it in the title or content, e.g. `feature`, `bug`, `documentation`, `discussion`, `help wanted`... The issue will be tagged automatically by the robot of the project(`open-digger-bot`).
 
 ## <a name="pr"></a> Submitting a Pull Request
 
@@ -21,7 +21,7 @@ Before you submit your Pull Request, consider the following guidelines.
 
 Be sure that an issue describes the problem you're fixing, or documents the design for the feature you'd like to add.
 
-If you decide to fix an issue, please be sure to check the comment thread in case somebody is already working on a fix. If nobody is working on it at the moment, please leave a comment with `/self-assign` stating that you intend to work on it so other people don't accidentally duplicate your effort. `Analysis-report-bot` will set assignees of the issue to yourself automatically. Check [self_assign](https://www.x-lab.info/github-analysis-report/#/workflow?id=self_assign) to get more information.
+If you decide to fix an issue, please be sure to check the comment thread in case somebody is already working on a fix. If nobody is working on it at the moment, please leave a comment with `/self-assign` stating that you intend to work on it so other people don't accidentally duplicate your effort. `open-digger-bot` will set assignees of the issue to yourself automatically. Check [self_assign](https://www.x-lab.info/open-digger#/workflow?id=self_assign) to get more information.
 
 ```shell
 /self-assign
@@ -31,14 +31,14 @@ If somebody claims an issue but doesn't follow up for more than two weeks, it's 
 
 ### 2. Fork and clone the repository
 
-Visit [X-lab2017/github-analysis-report][repo] repo and make your own copy of the repository by **forking** it.
+Visit [X-lab2017/open-digger][repo] repo and make your own copy of the repository by **forking** it.
 
 Then **clone** your own copy of the repository to local, like :
 
 ```shell
 # replace the XXX with your own user name
-$ git clone git@github.com:xxx/github-analysis-report.git
-$ cd github-analysis-report
+$ git clone git@github.com:xxx/open-digger.git
+$ cd open-digger
 ```
 
 ### 3. Create a new branch
@@ -67,7 +67,7 @@ You are encouraged to use [angular commit-message-format][angular-commit-message
 Keep your local repository updated with upstream repository by:
 
 ```shell
-$ git remote add upstream git@github.com:X-lab2017/github-analysis-report.git
+$ git remote add upstream git@github.com:X-lab2017/open-digger.git
 $ git fetch upstream master
 $ git rebase upstream/master
 ```
@@ -87,7 +87,7 @@ $ git push -f origin your-branch-name
 
 ### 7. Create a Pull Request
 
-In GitHub, send a pull request to [`X-lab2017/github-analysis-report`][repo].
+In GitHub, send a pull request to [`X-lab2017/open-digger`][repo].
 
 The core team is monitoring for pull requests. We will review your pull request and either merge it, request changes to it, or close it with an explanation.
 
@@ -105,7 +105,7 @@ If we suggest changes then:
 
 That's it! Thank you for your contribution!
 
-You can refer to [workflow](https://www.x-lab.info/github-analysis-report/#/workflow?id=appendix) to see more information about the `PR` workflow with `SQL` files invovled.
+You can refer to [workflow](https://www.x-lab.info/open-digger/#/workflow?id=appendix) to see more information about the `PR` workflow with `SQL` files invovled.
 
 ### 8. After your pull request is merged
 
@@ -135,10 +135,10 @@ After your pull request is merged, you can safely delete your branch and pull th
     $ git pull --ff upstream master
     ```
 
-[new-issue]: https://github.com/X-lab2017/github-analysis-report/issues/new
+[new-issue]: https://github.com/X-lab2017/open-digger/issues/new
 
-[issue-label]: https://github.com/X-lab2017/github-analysis-report/labels
+[issue-label]: https://github.com/X-lab2017/open-digger/labels
 
-[repo]: https://github.com/X-lab2017/github-analysis-report
+[repo]: https://github.com/X-lab2017/open-digger
 
 [angular-commit-message-format]: https://github.com/angular/angular.js/blob/master/DEVELOPERS.md#-git-commit-guidelines

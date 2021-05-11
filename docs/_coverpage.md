@@ -1,6 +1,6 @@
-# GitHub Analysis Report
+# OpenDigger
 
-> An open source collaborate report for GitHub
+> An open source collaborate report for open source
 
 - Full access to all records on GitHub
 - Global collaborate

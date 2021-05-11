@@ -1,42 +1,34 @@
 # Data Description
 
-## Data Source
+## GitHub Event Log
 
-The data source of this project mainly comes from [GH Archive](https://www.gharchive.org/) which is a project to record the public GitHub timeline, archive it and make it easily accessible for further analysis. Each archive contains JSON encoded events as reported by the GitHub API. The raw JSON data is showing below. There are 6 important data features in this data, namely `id`,`type`,`actor`,`repo`,`payload`,`created_at`.
+### Data Source
 
-![](./pic/GHArchive_raw_data.png)
+The data source comes from [GH Archive](https://www.gharchive.org/) which is a project to record the public GitHub timeline, archive it and make it easily accessible for further analysis. Each archive contains JSON encoded events as reported by the GitHub API. The raw JSON data is showing below. There are 6 important data features in this data, namely `id`, `type`, `actor`, `repo`, `payload`, `created_at`.
 
-## Database
+![](./assets/gharchive_raw_data.png)
 
-In order to meet the requirement for high-speed analysis among such big data, we parse the row data into well-defined structure and import it into [ClickHouse](https://clickhouse.tech/) server which is an open source column-oriented database management system capable of real time generation of analytical data reports using SQL queries. The Clickhouse database version is 20.5.2.7 in our server. 
+### Database
 
-## Data Schema in Database
+In order to meet the requirement for high-speed analysis among such big data, we parse the row data into well-defined structure and import it into [ClickHouse](https://clickhouse.tech/) server which is an open source column-oriented database management system capable of real time generation of analytical data reports using SQL queries. The Clickhouse database version is 20.8.7.15 in our server. 
 
-The database table offered by the `Clickhouse` server is showing in [data description](./csv/data_description.csv). You can find a table with 127 rows of features which were parsed from the raw GH Archive datasets.  Check the data descriptions and what features    you want to play with.
+### Data Schema in Database
 
-##  User Guide for Database Service
+The database table offered by the `Clickhouse` server is showing in [data description](./assets/data_description.csv). You can find a table with 120+ rows of features which were parsed from the raw GHArchive datasets. Check the data descriptions and what features you want to play with.
 
-For the detailed documentations for Clickhouse SQL usage, check  out the [SQL reference](https://clickhouse.tech/docs/en/).
+### User Guide for Database Service
 
-## Examples
+For the detailed documentations for Clickhouse SQL usage, check out the [SQL reference](https://clickhouse.tech/docs/en/).
 
-There are some examples for query data from the Click house database table. You can find more real examples from `sqls`.   
+### Examples
 
-*  The number of distinct repositories on GitHub
+There is an example for query data from the Clickhouse database table. You can find more real examples from study SQL components.   
 
-```
-SELECT repo_id, sum(repo_size) AS sum_repo_size, COUNT(*) AS  count 
-FROM {databse}.{table} 
-WHERE type = 'PullRequestEvent' OR type='PullRequestReviewCommentEvent' 
-GROUP BY repo_id
-```
-
-*  Pull Request review comment data from a organization
+* Pull Request review comment data from an organization
 
 ```
-SELECT actor_id,actor_login,repo_id,repo_name,issue_id, action, created_at
+SELECT actor_id, actor_login, repo_id, repo_name, issue_id, action, created_at
 FROM {database}.{table}
 WHERE type='PullRequestReviewCommentEvent' AND repo_name LIKE '{org}/%'
 ORDER BY created_at ASC
 ```
-

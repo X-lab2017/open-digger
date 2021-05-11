@@ -1,22 +1,24 @@
 @startuml
 
-footer Architect of GitHub Analysis Report
+footer Architect of OpenDigger
 
 actor Developer as dev
 
 node GitHub as github {
-  node "github-analysis-report" as repo {
+  node "open-digger" as repo {
     folder ".github/hypertrons-components" as cwf {
       file "Custom workflows"
     }
-    folder "sqls" as sqls {
+    folder "global-study" as sqls {
       file "All SQLs"
     }
-    file "REPORT.md" as report
+    folder "case-study" as sqls {
+      file "All SQLs"
+    }
   }
 }
 
-node "analysis-report-bot" as bot
+node "open-digger-bot" as bot
 note right: A GitHub app powered by Hypertrons
 
 node "data service" as ds

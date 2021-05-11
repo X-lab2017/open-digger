@@ -1,10 +1,10 @@
-# Roadmap of GitHub analysis report
+# Roadmap of OpenDigger
 
 ## Technical
 
-- [WIP] New data structure and docs. Est. 2021.3.25
-- [WIP] New technical architecture of report project. Est. 2021.3.25
-- [WIP] Basic automation workflow. Est. 2021.4.8
+- [Done] New data structure and docs.
+- [Done] New technical architecture of report project. Based on pure HTML and static generation.
+- [Done] Basic automation workflow. Based on GitHub Actions and Hypertrons
 - [Long term] New analysis SQL components.
 - [Long term] Stackoverflow data support.
 - [Long term] NPM data support.
@@ -12,9 +12,9 @@
 
 ## Product
 
-- [WIP] Online report prototype. Est. 2021.4.15
-- [WIP] Online report service with WeChat payment. Est. 2021.4.29
+- [Done] Online report prototype.
+- [WIP] Online report service with WeChat payment. Est. 2021.5.29
 
 ## Community
 
-- [WIP] Community governance handbook. Est. 2021.4.1
+- [Done] Community governance handbook.
