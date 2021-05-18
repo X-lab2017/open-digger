@@ -54,12 +54,14 @@ export function genTable(config: genTableConfig): string {
     h += `<td>${(config.header && config.header[k]) ? config.header[k] : k}</td>`;
   }
   tableRow.push(h);
-  for (const r of config.data) {
-    let s = '';
-    for (const k of config.keys) {
-      s += `<td>${r[k]}</td>`;
+  if (config.data && config.data.length > 0) {
+    for (const r of config.data) {
+      let s = '';
+      for (const k of config.keys) {
+        s += `<td>${r[k]}</td>`;
+      }
+      tableRow.push(s);
     }
-    tableRow.push(s);
   }
   return `<table class="${config.tableClass ?? 'table table-striped'}">
       ${tableRow.map((r, i) => `<tr ${i % 2 === 1 ? 'style="background-color: rgba(30, 161, 255, 0.1)"' : ''}>${r}</tr>\n`).join('')}
