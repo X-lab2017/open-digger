@@ -9,7 +9,9 @@ Open digger is an open source analysis report project for all open source data i
 We will generate reports into static web pages for viewing. Currently, we have following reports,
 
 - [Global Study Report](http://opendigger-oss.x-lab.info/global-study.html)
+- [Chinese Open Source Study Report](http://opendigger-oss.x-lab.info/case-study-Chinese.html)
 - [Apache Software Foundation Study Report](http://opendigger-oss.x-lab.info/case-study-ASF.html)
+- [Visual Studio Code Study Report](http://opendigger-oss.x-lab.info/case-study-vscode.html)
 
 ## Data
 

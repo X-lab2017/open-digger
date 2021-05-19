@@ -1,0 +1,7 @@
+pageTitle: Visual Studio Code Study Report
+contentTitle: Visual Studio Code study report
+head: This is an auto generated digital report for VS Code.
+repos:
+  - 41881900 # microsoft/vscode
+sqls:
+  - issue-response-resolve-period

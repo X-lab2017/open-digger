@@ -50,7 +50,7 @@ export async function generateReport(config: GenerateReportConfig): Promise<stri
     return null;
   }
 
-  const sqls = config.sqls || readdirSync(config.sqlsDir);
+  const sqls = config.sqls || config.customConfig.sqls || readdirSync(config.sqlsDir);
   let html = '', css = '', js = '';
   for (const s of sqls) {
     const dirPath = join(config.sqlsDir, s);
