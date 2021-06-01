@@ -2,7 +2,9 @@ import { existsSync, mkdirSync, writeFileSync } from 'fs';
 import { join } from 'path';
 import { generateReport, readFileAsObj } from './utils';
 
-export async function globalStudy() {
+export async function globalStudy(): Promise<void> {
+  if (process.argv[2] && process.argv[2].toLocaleLowerCase() !== 'global') return;
+
   console.log('Start to generate global study.');
 
   const config = readFileAsObj(join(__dirname, '../global-study/config.yaml')) ?? {};
@@ -22,5 +24,4 @@ export async function globalStudy() {
   writeFileSync(globalStudyFile, reportContent);
 
   console.log(`Generate global study into ${globalStudyFile}`);
-  return globalStudy;
 }
