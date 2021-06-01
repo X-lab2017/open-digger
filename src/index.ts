@@ -11,6 +11,7 @@ import { globalStudy } from './global-study';
   const runType = process.env.RUN_TYPE;
   if (runType === 'test') {
     const distDir = join(__dirname, '../dist');
+    if (!existsSync(distDir)) return;
     const files = readdirSync(distDir);
     files.forEach(f => {
       if (f.endsWith('.html')) {

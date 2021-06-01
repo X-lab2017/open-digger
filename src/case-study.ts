@@ -2,18 +2,27 @@ import { existsSync, mkdirSync, readdirSync, writeFileSync } from 'fs';
 import { join } from 'path';
 import { generateReport, readFileAsObj } from './utils';
 
-export async function caseStudy(): Promise<string[]> {
+export async function caseStudy(): Promise<void> {
+
+  if (process.argv[2] && process.argv[2].toLocaleLowerCase() === 'global') return;
+
   console.log('Start to generate case study.');
 
-  const files: string[] = [];
   
   const casesDir = join(__dirname, '../case-study/cases');
   if (!existsSync(casesDir)) {
-    return files;
+    return;
+  }
+
+  let caseParams: string[] = [];
+  if (process.argv.length > 2) {
+    caseParams = process.argv.slice(2);
+    console.log(caseParams);
   }
 
   const cases = readdirSync(casesDir);
   for (const c of cases) {
+    if (caseParams.length > 0 && !caseParams.some(p => p.toLocaleLowerCase() === c.toLocaleLowerCase().split('.')[0])) continue;
     const config = readFileAsObj(join(casesDir, c));
     if (config === null) continue;
     const reportContent = await generateReport({
@@ -31,7 +40,5 @@ export async function caseStudy(): Promise<string[]> {
     writeFileSync(outputFile, reportContent);
 
     console.log(`Generate case study into ${outputFile}`);
-    files.push(outputFile);
   }
-  return files;
 }
