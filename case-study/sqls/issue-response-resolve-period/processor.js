@@ -1,6 +1,5 @@
 module.exports = async function(config, utils) {
-  const table = 'github_log.year2021';
-  
+  const selectTable = utils.getSelectDataSql(config.repos, config.orgs, 'toYear(created_at) > 2018');
   const query = `SELECT
   repo_id,
   anyHeavy(repo_name) AS repo_name,
@@ -33,8 +32,8 @@ FROM
         anyHeavy(repo_name) AS repo_name,
         issue_number,
         min(created_at) AS time
-      FROM ${table}
-      WHERE (repo_id IN [${config.repos.join(',')}]) AND (type IN ['IssuesEvent']) AND (action IN ['opened'])
+      FROM ${selectTable}
+      WHERE (type IN ['IssuesEvent']) AND (action IN ['opened'])
       GROUP BY repo_id, issue_number
     ) AS oi
     INNER JOIN
@@ -43,8 +42,8 @@ FROM
         repo_id,
         issue_number,
         min(created_at) AS time
-      FROM ${table}
-      WHERE (repo_id IN [${config.repos.join(',')}]) AND (type IN ['IssuesEvent']) AND (action IN ['closed'])
+      FROM ${selectTable}
+      WHERE (type IN ['IssuesEvent']) AND (action IN ['closed'])
       GROUP BY repo_id, issue_number
     ) AS ci ON (oi.repo_id = ci.repo_id) AND (oi.issue_number = ci.issue_number)
     INNER JOIN
@@ -53,8 +52,8 @@ FROM
         repo_id,
         issue_number,
         min(created_at) AS time
-      FROM ${table}
-      WHERE (repo_id IN [${config.repos.join(',')}]) AND (type IN ['IssuesEvent', 'IssueCommentEvent']) AND (action IN ['closed', 'created']) AND (actor_id != issue_author_id)
+      FROM ${selectTable}
+      WHERE (type IN ['IssuesEvent', 'IssueCommentEvent']) AND (action IN ['closed', 'created']) AND (actor_id != issue_author_id)
       GROUP BY repo_id, issue_number
     ) AS ii ON (oi.repo_id = ii.repo_id) AND (oi.issue_number = ii.issue_number)
   )

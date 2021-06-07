@@ -104,3 +104,32 @@ export function convertSecondToReadableDuration(s: number): string {
   }
   return str;
 }
+
+export function getSelectDataSql(repos: string[], orgs: string[], conditions: string = '') {
+  const sqls: string[] = [conditions];
+  if (repos) {
+    sqls.push(`(repo_id IN [${repos.join(',')}])`);
+  }
+  if (orgs) {
+    sqls.push(`(org_id IN [${orgs.join(',')}])`);
+  }
+  let cond = '';
+  if (sqls.length > 0) {
+    cond = `WHERE ${sqls.join(' AND ')}`;
+  }
+  return `
+(SELECT * FROM github_log.year2015 ${cond}
+UNION ALL
+SELECT * FROM github_log.year2016 ${cond}
+UNION ALL
+SELECT * FROM github_log.year2017 ${cond}
+UNION ALL
+SELECT * FROM github_log.year2018 ${cond}
+UNION ALL
+SELECT * FROM github_log.year2019 ${cond}
+UNION ALL
+SELECT * FROM github_log.year2020 ${cond}
+UNION ALL
+SELECT * FROM github_log.year2021 ${cond}
+)`;
+}

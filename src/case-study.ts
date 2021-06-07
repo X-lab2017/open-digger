@@ -7,7 +7,6 @@ export async function caseStudy(): Promise<void> {
   if (process.argv[2] && process.argv[2].toLocaleLowerCase() === 'global') return;
 
   console.log('Start to generate case study.');
-
   
   const casesDir = join(__dirname, '../case-study/cases');
   if (!existsSync(casesDir)) {
@@ -17,7 +16,6 @@ export async function caseStudy(): Promise<void> {
   let caseParams: string[] = [];
   if (process.argv.length > 2) {
     caseParams = process.argv.slice(2);
-    console.log(caseParams);
   }
 
   const cases = readdirSync(casesDir);
