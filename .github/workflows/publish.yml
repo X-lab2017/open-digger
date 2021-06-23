@@ -21,7 +21,7 @@ jobs:
 
       - name: Generate report
         env:
-          CLIKCKHOUSE_QUERY_URL: ${{ secrets.CLIKCKHOUSE_QUERY_URL }}
+          CLICKHOUSE_QUERY_URL: ${{ secrets.CLICKHOUSE_QUERY_URL }}
         run: |
           npm install
           npm run publish

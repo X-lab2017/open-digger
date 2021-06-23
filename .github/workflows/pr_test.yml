@@ -54,7 +54,7 @@ jobs:
       - name: Test
         if: ${{ steps.regex-match.outputs.match != '' }}
         env:
-          CLICKHOUSE_CI_HOST: ${{ secrets.CLICKHOUSE_CI_HOST }}
+          CLICKHOUSE_QUERY_URL: ${{ secrets.CLICKHOUSE_QUERY_URL }}
         run: |
           npm install
           npm run ci
