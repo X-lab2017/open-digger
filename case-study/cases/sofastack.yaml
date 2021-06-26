@@ -28,4 +28,4 @@ repos:
   - 172445125 # sofastack/sofa-acts
   - 180336193 # sofastack/sofa-dashboard
 sqls: # the sql components you need
-  - Org-weekly-report
+  - org-weekly-report

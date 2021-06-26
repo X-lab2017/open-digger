@@ -1,6 +1,6 @@
 import { globalConfig } from "./config";
 import * as Clickhouse from './db/clickhouse';
-
+import dateFormat=require("dateformat");
 export function constrainMetric(num: number) {
   const units = ['', 'K', 'M', 'B'];
   let unitIndex = 0;
@@ -260,21 +260,23 @@ export function periodRepoActorActivity(table:string,weight:Weight){
 export function getPeriodTable(startDate:Date,endDate:Date,conditions:string){
   let startYear=startDate.getFullYear();
   let endYear=endDate.getFullYear();
+  let startDateFormat=dateFormat(startDate,'yyyy-mm-dd');
+  let endDateFormat=dateFormat(endDate,'yyyy-mm-dd');
   if (startYear>endYear)return ``;
   if(startYear===endYear){
     return `
     (SELECT * FROM github_log.year${endYear} 
-    WHERE toDate(created_at)>='${startDate.toLocaleDateString()}' 
-    AND toDate(created_at)<='${endDate.toLocaleDateString()}'
+    WHERE toDate(created_at)>='${startDateFormat}' 
+    AND toDate(created_at)<='${endDateFormat}'
     AND ${conditions}
     )
     `;
   }
   if(startYear+1===endYear){
     return `
-    (SELECT * FROM github_log.year${startYear} WHERE toDate(created_at)>='${startDate.toLocaleDateString()}' AND ${conditions}
+    (SELECT * FROM github_log.year${startYear} WHERE toDate(created_at)>='${startDateFormat}' AND ${conditions}
     UNION ALL
-    SELECT * FROM github_log.year${endYear} WHERE toDate(created_at)<='${endDate.toLocaleDateString()}' AND ${conditions})
+    SELECT * FROM github_log.year${endYear} WHERE toDate(created_at)<='${endDateFormat}' AND ${conditions})
     `;
   }
   let baseTable=``;
@@ -285,10 +287,10 @@ export function getPeriodTable(startDate:Date,endDate:Date,conditions:string){
     `;     
   }
   return `
-  (SELECT * FROM github_log.year${startYear} WHERE toDate(created_at)>='${startDate.toLocaleDateString()}' AND ${conditions}
+  (SELECT * FROM github_log.year${startYear} WHERE toDate(created_at)>='${startDateFormat}' AND ${conditions}
   `+baseTable+`
   UNION ALL
-  SELECT * FROM github_log.year${endYear} WHERE toDate(created_at)<='${endDate.toLocaleDateString()}' AND ${conditions}) 
+  SELECT * FROM github_log.year${endYear} WHERE toDate(created_at)<='${endDateFormat}' AND ${conditions}) 
   `;
 }
 export function periodRepoActivity(periodRepoActorActivity:string){
