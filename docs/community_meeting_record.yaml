@@ -1,3 +1,54 @@
+- time: 2020.6.24
+  host: sunshinemingo
+  attendee: [sunshinemingo, wengzhenjie, frank-zsy, leofang327, kongzhongsanbu, will-ww, xiaoya-Esther, birdflyi, bifenglin,frank-zsy,zhuxiangning]
+  agenda:
+    - content: Feature:add sofastack weekly report
+      proposer: sunshinemingo
+      participants: [wengzhenjie,frank-zsy]
+    - content: Discussion-We need to label issues and prs
+      proposer: sunshinemingo
+      participants: [frank-zsy]
+    - content: Discussion-How to organization our meeting content using GitHub
+      proposer: sunshinemingo
+      participants: []
+    - content: Summer2021
+      proposer: sunshinemingo
+      participants: [leofang327,kongzhongsanbu]
+    - content: New arch with Next.js + React SSG
+      proposer: frank-zsy
+      participants: []
+    - content: Document-Metric documentation on web site
+      proposer: frank-zsy
+      participants: []
+    - content: Dashboard-Visualization dashboard for data service status
+      proposer: frank-zsy
+      participants: [sunshinemingo]
+- time: 2020.6.17
+  host: sunshinemingo
+  attendee: [sunshinemingo, gymgym1212, kongzhongsanbu, will-ww, xiaoya-Esther, birdflyi, tedliu1, bifenglin,zhuxiangning]
+  agenda:
+    - content: Feature Request-add a weekly case study for SOFAStack&MOSN community
+      proposer: sunshinemingo
+      participants: [zhuxiangning]
+    - content: Metrics
+      proposer: sunshinemingo
+      participants: [xiaoya-Esther,will-ww,tedliu1]
+- time: 2020.6.10
+  host: sunshinemingo
+  attendee: [sunshinemingo, wengzhenjie, gymgym1212, will-ww, birdflyi, tedliu1, bifenglin, zhuxiangning,mb0ma]
+  agenda:
+    - content: Add select data sql function
+      proposer: sunshinemingo
+      participants: []
+    - content: OSSChat
+      proposer: sunshinemingo
+      participants: [gymgym1212]
+    - content: Summer2021
+      proposer: sunshinemingo
+      participants: [will-ww]
+    - content: China Community Map
+      proposer: sunshinemingo
+      participants: [tedliu1, will-ww]
 - time: 2020.6.03
   host: sunshinemingo
   attendee: [sunshinemingo, wengzhenjie, frank-zsy, gymgym1212, JingbenShi668, kongzhongsanbu, will-ww, xiaoya-Esther, birdflyi, tedliu1, bifenglin]
