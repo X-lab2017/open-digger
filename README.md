@@ -1,6 +1,6 @@
 # OpenDigger
 
-[![apache2](https://img.shields.io/badge/license-Apache%202-blue)](LICENSE) [![ccby4](https://img.shields.io/badge/license-CC%20BY%204.0-blue)](LICENSE-CC-BY) [![slack](https://img.shields.io/badge/slack-join%20chat-green)](https://join.slack.com/t/x-github-analysis/shared_invite/zt-jate2dty-oCvEheSrI0fI2BckbR1ptQ)
+[![apache2](https://img.shields.io/badge/license-Apache%202-blue)](LICENSE) [![ccby4](https://img.shields.io/badge/license-CC%20BY%204.0-blue)](LICENSE-CC-BY) [![slack](https://img.shields.io/badge/slack-join%20chat-green)](https://join.slack.com/t/x-github-analysis/shared_invite/zt-sf7iypjm-ze6xm0vlLLwq9mwd6BWqzw)
 
 Open digger is an open source analysis report project for all open source data initiated by [X-lab](https://x-lab.info), this project aims to combine the wisdom of global developers to jointly analyze and insight into open source related data to help everyone better understand and participate in open source.
 
@@ -26,6 +26,12 @@ Please check the [contributing guide](http://www.x-lab.info/open-digger/#/CONTRI
 ## Architect & workflow
 
 Please check the [architect](https://www.x-lab.info/open-digger/#/architecture) and [workflow](https://www.x-lab.info/open-digger/#/workflow) if you want to better understand the project.
+
+## Community Meeting
+
+Meeting Room:  ([Tencent Meeting](https://meeting.tencent.com/) Room ID: 627 8609 7587) Every Thursday at 12:00 am GMT+8
+
+Meeting Document: [OpenDigger Open Source Meeting](https://shimo.im/docs/THkd6GQYtTj6PT3t)
 
 ## Communication
 
