@@ -1,0 +1,31 @@
+pageTitle: Sofastack Study Report
+contentTitle: Sofastack study report
+head: This is an auto generated digital report for Sofastack.
+weight:
+  issueCommentWeight: 1
+  openIssueWeight: 2
+  openPullWeight: 3
+  pullReviewWeight: 4
+  mergePullWeight: 2
+repos:
+  - 140654872 # mosn/mosn
+  - 173721564 # sofastack/sofa-jraft
+  - 127727728 # sofastack/sofa-boot
+  - 128709824 # sofastack/sofa-rpc
+  - 134402137 # sofastack/sofa-rpc-node
+  - 124862112 # sofastack/sofa-ark
+  - 177104472 # sofastack/sofa-registry
+  - 138723603 # sofastack/sofa-hessian-node
+  - 128709569 # sofastack/sofa-bolt
+  - 133340671 # sofastack/sofa-tracer
+  - 127725314 # sofastack/sofa-hessian
+  - 134383201 # sofastack/sofa-bolt-node
+  - 147456809 # sofastack/sofa-bolt-cpp
+  - 119939427 # sofastack/sofa-jarslink
+  - 140062435 # sofastack/sofa-node
+  - 146727213 # sofastack/sofa-bolt-python
+  - 133381280 # sofastack/sofa-lookout
+  - 172445125 # sofastack/sofa-acts
+  - 180336193 # sofastack/sofa-dashboard
+sqls: # the sql components you need
+  - org-weekly-report
