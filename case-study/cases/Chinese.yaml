@@ -11,6 +11,8 @@ weight:
   mergePullWeight: 2
 companies:
   None:
+    orgs:
+      - 12165287 # ossrs
     repos:
       - 49876476 # apache/shardingsphere
       - 45721011 # apache/skywalking
