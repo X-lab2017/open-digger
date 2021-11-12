@@ -33,5 +33,5 @@ jobs:
           key-secret: ${{ secrets.OSS_ACCESS_KEY_SECRET }}
           region: ${{ secrets.OSS_REGION }}
           bucket: ${{ secrets.OSS_BUCKET }}
-          asset-path: ./dist
-          target-path: ${{ secrets.OSS_TARGET_PATH }}
+          assets: |
+            ./dist/**:${{ secrets.OSS_TARGET_PATH }}
