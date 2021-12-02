@@ -1,0 +1,76 @@
+name: paser-github-id
+
+on:
+  issue_comment:
+    types: [created]
+  # Allows to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  pr-test:
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: Check comment command
+        uses: actions-ecosystem/action-regex-match@v2
+        id: regex-match
+        with:
+          text: ${{ github.event.comment.body }}
+          regex: '^/parse-github-id$'
+
+      - uses: actions/github-script@v3
+        id: parse-repo-org-id
+        if: ${{ steps.regex-match.outputs.match != '' }}
+        with:
+          script: |
+            const body = context.payload.issue.body;
+            if (!body || body === '') {
+              core.setFailed('Body is empty for this issue.');
+              return;
+            }
+            const lines = body.split('\r\n');
+            const commentBodyArr = [];
+            for (const line of lines) {
+              if (line.trim().startsWith('- ')) {
+                const name = line.trim().substring(2);
+                let result;
+                let type;
+                try {
+                  if (name.includes('/')) {
+                    const [owner, repo] = name.split('/');
+                    result = await github.repos.get({owner, repo});
+                    type = 'repo';
+                  } else {
+                    try {
+                      result = await github.orgs.get({org: name});
+                      type = 'org';
+                    } catch {
+                      result = await github.users.getByUsername({username: name});
+                      type = 'user';
+                    }
+                  }
+                  if (!(result && result.data)) {
+                    commentBodyArr.push(line);
+                  } else {
+                    core.info(`${name}: ${result.data.id}`);
+                    commentBodyArr.push(`- ${result.data.id} # ${type}:${name} `);
+                  }
+                } catch (err) {
+                  commentBodyArr.push(line + ' # not found');
+                }
+              } else {
+                commentBodyArr.push(line);
+              }
+            }
+            return commentBodyArr.join('<br />');
+
+      - name: Create comment
+        if: ${{ steps.regex-match.outputs.match != '' }}
+        uses: peter-evans/create-or-update-comment@v1
+        with:
+          issue-number: ${{ github.event.issue.number }}
+          body: |
+            Get repo and org/user ids done.
+
+            ${{ steps.parse-repo-org-id.outputs.result }}
