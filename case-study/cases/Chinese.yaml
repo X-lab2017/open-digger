@@ -61,6 +61,19 @@ companies:
       - 4710920 # apache/dubbo
       - 78186814 # apache/incubator-weex
       - 75164823 # apache/rocketmq
+      - 20587599 # apache/flink 
+      - 351617021 # apache/flink-ml 
+      - 95084858 # apache/flink-shaded 
+      - 35755560 # apache/flink-web 
+      - 225625782 # apache/flink-statefun 
+      - 257240581 # apache/flink-benchmarks 
+      - 427387265 # apache/flink-connectors 
+      - 257240218 # apache/flink-training 
+      - 237409088 # apache/flink-docker 
+      - 347943373 # apache/flink-statefun-playground 
+      - 251242078 # apache/flink-statefun-docker 
+      - 196555066 # apache/flink-playgrounds 
+      - 355647312 # apache/flink-jira-bot 
   Baidu:
     orgs:
       - 13245940 # baidu
