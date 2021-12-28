@@ -1,0 +1,5 @@
+name: Qunar
+type: Company
+data:
+  github_org:
+    - 43158242 # qunarcorp

@@ -1,0 +1,13 @@
+name: Huawei
+type: Company
+data:
+  label:
+    - service_comb
+  github_org:
+    - 20315766 # Huawei
+    - 6876878 # huawei-cloudnative
+    - 36578213 # huaweicloud
+    - 41812520 # kubeedge
+    - 41812465 # kubegene
+    - 22132015 # LiteOS
+    - 12619994 # huawei-noah

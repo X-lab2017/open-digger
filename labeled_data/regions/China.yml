@@ -1,0 +1,44 @@
+name: China
+type: Region
+data:
+  label:
+    - :companies/alibaba
+    - :companies/baidu
+    - :companies/huawei
+    - :companies/tencent
+    - :companies/jd
+    - :companies/meituan
+    - :companies/360
+    - :companies/xiaomi
+    - :companies/pingcap
+    - :companies/youzan
+    - :companies/bytedance
+    - :companies/netease
+    - :companies/didi
+    - :companies/vipshop
+    - :companies/deepin
+    - :companies/webank
+    - :companies/douban
+    - :companies/linux_china
+    - :companies/ctrip
+    - :companies/qunar
+    - :companies/juejin
+    - :companies/bilibili
+    - :companies/vesoft
+    - :companies/dcloud
+    - :companies/qingcloud
+    - :communities/xlab
+  github_org:
+    - 12165287 # ossrs
+  github_repo:
+    - 49876476 # apache/shardingsphere
+    - 45721011 # apache/skywalking
+    - 180481986 # apache/apisix
+    - 60844036 # shadowsocks/ShadowsocksX-NG
+    - 173335706 # apache/incubator-dolphinscheduler
+    - 40345658 # recharts/recharts
+    - 99919302 # apache/incubator-doris
+    - 129345192 # consenlabs/token-profile
+    - 70746484 # apache/tvm
+    - 131770422 # neoclide/coc.nvim
+    - 7600409 # shadowsocks/shadowsocks-windows

@@ -1,0 +1,17 @@
+name: Apache Flink
+type: Project
+data:
+  github_repo:
+    - 20587599 # repo:apache/flink
+    - 351617021 # repo:apache/flink-ml
+    - 95084858 # repo:apache/flink-shaded
+    - 35755560 # repo:apache/flink-web
+    - 225625782 # repo:apache/flink-statefun
+    - 257240581 # repo:apache/flink-benchmarks
+    - 427387265 # repo:apache/flink-connectors
+    - 257240218 # repo:apache/flink-training
+    - 237409088 # repo:apache/flink-docker
+    - 347943373 # repo:apache/flink-statefun-playground
+    - 251242078 # repo:apache/flink-statefun-docker
+    - 196555066 # repo:apache/flink-playgrounds
+    - 355647312 # repo:apache/flink-jira-bot

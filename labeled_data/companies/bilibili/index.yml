@@ -1,0 +1,5 @@
+name: Bilibili
+type: Company
+data:
+  github_org:
+    - 12002442 # bilibili

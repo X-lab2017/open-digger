@@ -1,0 +1,5 @@
+name: echarts
+type: Project
+data:
+  github_repo:
+    - 9185792 # apache/echarts

@@ -1,0 +1,5 @@
+name: OpenDigger
+type: Project
+data:
+  github_repo:
+    - 288431943 # X-lab2017/open-digger

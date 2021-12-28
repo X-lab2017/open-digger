@@ -1,0 +1,6 @@
+name: PingCAP
+type: Company
+data:
+  github_org:
+    - 11855343 # pingcap
+    - 41004122 # tikv

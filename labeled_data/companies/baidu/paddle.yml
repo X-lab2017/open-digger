@@ -1,0 +1,5 @@
+name: PaddlePaddle
+type: Project
+data:
+  github_org:
+    - 23534030 # PaddlePaddle

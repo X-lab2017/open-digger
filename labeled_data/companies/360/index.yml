@@ -1,0 +1,10 @@
+name: 360
+type: Company
+data:
+  github_org:
+    - 4082929 # Qihoo360
+    - 29911379 # spritejs
+    - 15226349 # thinkjs
+    - 29886630 # Chimeejs
+    - 5575368 # 75team
+    - 54881990 # 0Kee-Team

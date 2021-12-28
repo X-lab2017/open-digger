@@ -1,0 +1,6 @@
+name: Xiaomi
+type: Company
+data:
+  github_org:
+    - 1309360 # XiaoMi
+    - 1274540 # MiCode

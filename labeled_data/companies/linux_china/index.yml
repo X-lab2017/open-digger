@@ -1,0 +1,5 @@
+name: Linux China
+type: Company
+data:
+  github_org:
+    - 5432002 # LCTT

@@ -1,0 +1,5 @@
+name: QingCloud
+type: Company
+data:
+  github_org:
+    - 37326490 # kubesphere
