@@ -1,0 +1,9 @@
+name: X-lab
+type: Community
+data:
+  label:
+    - hypertrons
+    - open_digger
+    - open_galaxy
+  github_org:
+    - 49427213 # X-lab2017

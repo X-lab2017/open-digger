@@ -1,0 +1,7 @@
+name: OpenMessaging
+type: Project
+data:
+  github_repo:
+    - 108890846 # repo:openmessaging/benchmark
+    - 242086572 # repo:openmessaging/openchaos
+    - 158656889 # repo:openmessaging/dledger

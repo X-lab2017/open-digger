@@ -1,0 +1,7 @@
+name: JD
+type: Company
+data:
+  github_org:
+    - 39963175 # areslabs
+    - 30794937 # NervJS
+    - 22739181 # jdf2e

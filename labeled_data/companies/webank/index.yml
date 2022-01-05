@@ -1,0 +1,5 @@
+name: WeBank
+type: Company
+data:
+  github_org:
+    - 44182399 # WeBankFinTech

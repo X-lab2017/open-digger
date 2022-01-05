@@ -1,0 +1,7 @@
+name: Meituan
+type: Company
+data:
+  github_org:
+    - 977371 # meituan
+    - 20238146 # Meituan-Dianping
+    - 1539555 # dianping

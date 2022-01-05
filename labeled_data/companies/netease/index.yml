@@ -1,0 +1,8 @@
+name: Netease
+type: Company
+data:
+  github_org:
+    - 1460597 # NetEase
+    - 14069894 # netease-im
+    - 34292813 # AirtestProject
+    - 21099191 # 163yun

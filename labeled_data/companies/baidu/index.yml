@@ -1,0 +1,21 @@
+name: Baidu
+type: Company
+data:
+  label:
+    - paddle
+    - echarts
+    - brpc
+  github_org:
+    - 13245940 # baidu
+    - 23534030 # PaddlePaddle
+    - 28768304 # ApolloAuto
+    - 7857697 # Clouda-team
+    - 19966931 # mipengine
+    - 34010907 # mesalock-linux
+    - 2268460 # ecomfe
+    - 6668906 # fex-team
+    - 8051311 # baidu-research
+    - 13144859 # huiyan-fe
+    - 8372490 # be-fe
+    - 38243092 # swan-team
+  

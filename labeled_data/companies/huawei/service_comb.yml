@@ -1,0 +1,7 @@
+name: Apache ServiceComb
+type: Project
+data:
+  github_repo:
+    - 97573661 # apache/servicecomb-pack
+    - 91674936 # apache/servicecomb-java-chassis
+    - 91677514 # apache/servicecomb-service-center

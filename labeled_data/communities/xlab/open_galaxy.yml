@@ -1,0 +1,6 @@
+name: OpenGalaxy
+type: Project
+data:
+  github_repo:
+    - 428629051 # X-lab2017/open-galaxy
+    - 439244862 # X-lab2017/open-galaxy-backend

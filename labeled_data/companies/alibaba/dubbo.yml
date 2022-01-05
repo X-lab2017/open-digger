@@ -1,0 +1,32 @@
+name: Apache Dubbo
+type: Project
+data:
+  github_repo:
+    - 4710920 # repo:apache/dubbo
+    - 117978265 # repo:apache/dubbo-spring-boot-project
+    - 143965255 # repo:apache/dubbo-go
+    - 117054584 # repo:apache/dubbo-admin
+    - 131394823 # repo:apache/dubbo-samples
+    - 23922564 # repo:apache/dubbo-js
+    - 37115105 # repo:apache/dubbo-website
+    - 138989039 # repo:apache/dubbo-php-framework
+    - 187781321 # repo:apache/dubbo-proxy
+    - 234250873 # repo:apache/dubbo-go-pixiu
+    - 33671298 # repo:apache/dubbo-python
+    - 33258826 # repo:apache/dubbo-rpc-jsonrpc
+    - 161442380 # repo:apache/dubbo-go-hessian2
+    - 179025742 # repo:apache/dubbo-getty
+    - 303553011 # repo:apache/dubbo-go-samples
+    - 141266584 # repo:apache/dubbo-kubernetes
+    - 98619283 # repo:apache/dubbo-docs
+    - 263958647 # repo:apache/dubbo-spi-extensions
+    - 142535575 # repo:apache/dubbo-sentinel-support
+    - 153445364 # repo:apache/dubbo-erlang
+    - 206284188 # repo:apache/dubbo-awesome
+    - 133792430 # repo:apache/dubbo-benchmark
+    - 136004585 # repo:apache/dubbo-hessian-lite
+    - 133488175 # repo:apache/dubbo-python2
+    - 135442448 # repo:apache/dubbo-async-processor
+    - 108082114 # repo:apache/dubbo-feature-test
+    - 139091095 # repo:apache/dubbo-logo
+    - 155653858 # repo:apache/dubbo-serialization-gson

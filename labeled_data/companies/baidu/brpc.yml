@@ -1,0 +1,5 @@
+name: bRPC
+type: Project
+data:
+  github_repo:
+    - 102343794 # apache/incubator-brpc
