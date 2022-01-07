@@ -31,7 +31,6 @@ data:
     - 50716105 # org:cloudnativeapp
     - 44993420 # org:dragonflyoss
     - 11751992 # org:dubbo
-    - 87363026 # org:flink-extended
     - 13195604 # org:hiloteam
     - 49051229 # org:ice-lab
     - 328318 # org:kissyteam
