@@ -1,0 +1,5 @@
+name: Egg.js
+type: Project
+data:
+  github_org:
+    - 15833670 # org:eggjs

@@ -1,0 +1,5 @@
+name: Kata Containers
+type: Project
+data:
+  github_org:
+    - 33289952 # org:kata-containers

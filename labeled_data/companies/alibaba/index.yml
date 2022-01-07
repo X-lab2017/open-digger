@@ -6,6 +6,7 @@ data:
     - flink
     - rocketmq
     - open_messaging
+    - seata
   github_org:
     - 66622043 # org:Alibaba-Sample
     - 38934544 # org:AlibabaCloudDocs
@@ -30,15 +31,11 @@ data:
     - 50716105 # org:cloudnativeapp
     - 44993420 # org:dragonflyoss
     - 11751992 # org:dubbo
-    - 20552239 # org:dvajs
-    - 15833670 # org:eggjs
     - 87363026 # org:flink-extended
     - 13195604 # org:hiloteam
     - 49051229 # org:ice-lab
     - 328318 # org:kissyteam
     - 87515570 # org:kubedl-io
-    - 24447273 # org:macaca-sample
-    - 12892132 # org:macacajs
     - 43056710 # org:mars-project
     - 32128461 # org:midwayjs
     - 30042306 # org:node-honeycomb
@@ -46,7 +43,6 @@ data:
     - 83446609 # org:oecp
     - 75296004 # org:openkraken
     - 69286650 # org:openyurtio
-    - 48813648 # org:seata
     - 43955412 # org:sentinel-group
     - 1560507 # org:taobao
     - 1983116 # org:teambition
