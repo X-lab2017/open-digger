@@ -1,4 +1,4 @@
-import { existsSync, readdirSync, readFileSync, statSync, writeFileSync } from "fs";
+import { readdirSync, readFileSync, statSync, writeFileSync } from "fs";
 import path from "path";
 import { readFileAsObj } from "./utils";
 
@@ -42,6 +42,7 @@ export function parseLabelData() {
   }
   const labelMap = new Map<string, LabelItem>();
   readPath(labelInputPath, '', f => {
+    if (!f.endsWith('.yml')) return;
     const identifier = `:${(f.endsWith('/index.yml') ? f.slice(0, f.indexOf('/index.yml')) : f.slice(0, f.indexOf('.yml')))}`;
     const content = readFileAsObj(path.join(labelInputPath, f));
     labelMap.set(identifier, {
@@ -55,6 +56,8 @@ export function parseLabelData() {
   const parsedResult = processLabelItems(labelMap);
   writeFileSync(path.join(labelInputPath, labelOutputFile), JSON.stringify(parsedResult));
 }
+
+parseLabelData();
 
 function readPath(p: string, base: string, fileProcessor: (f: string) => void) {
   if (!statSync(p).isDirectory()) {
@@ -75,8 +78,8 @@ function processLabelItems(map: Map<string, LabelItem>): ParsedLabelItem[] {
       identifier: item.identifier,
       type: item.content.type,
       name: item.content.name,
-      githubRepos: item.githubRepos,
-      githubOrgsOrUsers: item.githubOrgsOrUsers,
+      githubRepos: Array.from(new Set(item.githubRepos)),
+      githubOrgsOrUsers: Array.from(new Set(item.githubOrgsOrUsers)),
     };
   });
 }
@@ -142,8 +145,6 @@ export function getLabelUnion(labels: string[]): LabelOperationResult {
 
 function getLabelData(): ParsedLabelItem[] {
   const dataPath = path.join(labelInputPath, labelOutputFile);
-  if (!existsSync(dataPath)) {
-    parseLabelData();
-  }
+  parseLabelData();
   return JSON.parse(readFileSync(dataPath).toString());
 }
