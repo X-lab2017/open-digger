@@ -15,3 +15,5 @@ data:
     - 251242078 # repo:apache/flink-statefun-docker
     - 196555066 # repo:apache/flink-playgrounds
     - 355647312 # repo:apache/flink-jira-bot
+  github_org:
+    - 87363026 # org:flink-extended
