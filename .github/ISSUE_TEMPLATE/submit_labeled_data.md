@@ -8,30 +8,30 @@ about: Help us improve data quality
 I want to add some labeled data into OpenDigger to help us for our community analysis.
 
 <!-- What do you want to label the following data, like 'Apache Software Foundation', 'Linux Foundation', 'Chinese', 'Microsoft'... -->
+Label: 
 
-**Label:** 
+<!-- For example, 'microsoft/vscode'. If you fill them in, it means that you think the data has the label you filled above. 
+Make sure every data line starts with '- ' like:
 
-| Label |
-| :-----|
-|  |
+Repos:
+- microsoft/vscode
+- kubernetes/kubernetes
 
-<!-- For example, the owner of 'microsoft/vscode' is 'microsoft', and the repo name is 'vscode'. If you fill them in, it means that you think the data has the label you filled above. -->
+-->
+Repos:
+-
 
-**Repo data:**
+<!-- You can fill in the name of the organization or individual user. 
 
-| Owner | Repo Name |
-| :-----| :---- |
-|  |  |
+Make sure every data line starts with '- ' like:
 
-<!-- You can fill in the name of the organization or individual user. -->
+Orgs/Users:
+- microsoft
+- google
+- X-lab2017
 
-**Owner data:**
-
-| Owner |
-| :---- |
-|       |
-
-
+-->
+Orgs/Users:
+-
 
 <!-- :) Thank you for reading here! -->
-

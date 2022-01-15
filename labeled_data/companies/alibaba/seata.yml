@@ -1,0 +1,5 @@
+name: Seata
+type: Project
+data:
+  github_org:
+    - 48813648 # org:seata

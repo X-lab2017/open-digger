@@ -1,0 +1,49 @@
+name: Alibaba
+type: Company
+data:
+  label:
+    - dubbo
+    - flink
+    - rocketmq
+    - open_messaging
+    - seata
+  github_org:
+    - 66622043 # org:Alibaba-Sample
+    - 38934544 # org:AlibabaCloudDocs
+    - 35217822 # org:AlibabaPAI
+    - 16377432 # org:AliyunContainerService
+    - 92418439 # org:ApsaraDB
+    - 56642198 # org:GraphScope
+    - 56627637 # org:T-head-Semi
+    - 43160974 # org:XianyuTech
+    - 1961952 # org:alibaba
+    - 55121350 # org:alibaba-edu
+    - 49384998 # org:alibabacloud-go
+    - 44830995 # org:alibabacloud-howto
+    - 70694200 # org:alibabacloud-sdk-cpp
+    - 49896061 # org:alibabacloud-sdk-php
+    - 61405193 # org:alibabacloud-sdk-swift
+    - 1299356 # org:alipay
+    - 7741285 # org:aliqin
+    - 941070 # org:aliyun
+    - 16096311 # org:aliyun-beta
+    - 48477425 # org:chaosblade-io
+    - 50716105 # org:cloudnativeapp
+    - 44993420 # org:dragonflyoss
+    - 11751992 # org:dubbo
+    - 13195604 # org:hiloteam
+    - 49051229 # org:ice-lab
+    - 328318 # org:kissyteam
+    - 87515570 # org:kubedl-io
+    - 43056710 # org:mars-project
+    - 32128461 # org:midwayjs
+    - 30042306 # org:node-honeycomb
+    - 7125868 # org:node-modules
+    - 83446609 # org:oecp
+    - 75296004 # org:openkraken
+    - 69286650 # org:openyurtio
+    - 43955412 # org:sentinel-group
+    - 1560507 # org:taobao
+    - 1983116 # org:teambition
+    - 83062528 # org:v6d-io
+    - 35833849 # org:weex-ui-team

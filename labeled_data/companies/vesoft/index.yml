@@ -1,0 +1,5 @@
+name: Vesoft
+type: Company
+data:
+  github_org:
+    - 42441426 # vesoft-inc

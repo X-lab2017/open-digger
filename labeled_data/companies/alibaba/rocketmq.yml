@@ -1,0 +1,18 @@
+name: Apache RocketMQ
+type: Project
+data:
+  github_repo:
+    - 75164823 # repo:apache/rocketmq
+    - 84916374 # repo:apache/rocketmq-externals
+    - 384930222 # repo:apache/rocketmq-streams
+    - 152519793 # repo:apache/rocketmq-client-cpp
+    - 152519982 # repo:apache/rocketmq-client-go
+    - 399046935 # repo:apache/rocketmq-flink
+    - 394265474 # repo:apache/rocketmq-dashboard
+    - 189944254 # repo:apache/rocketmq-exporter
+    - 153061118 # repo:apache/rocketmq-spring
+    - 189944025 # repo:apache/rocketmq-operator
+    - 77030884 # repo:apache/rocketmq-site
+    - 189943818 # repo:apache/rocketmq-docker
+    - 152519880 # repo:apache/rocketmq-client-python
+    - 152520149 # repo:apache/rocketmq-client-nodejs

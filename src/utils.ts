@@ -19,7 +19,7 @@ export function readFileAsObj(path: string) {
       console.log(`Parse JSON content failed, e=${e}`);
       return null;
     }
-  } else if (path.toLocaleLowerCase().endsWith('.yaml')) {
+  } else if (path.toLocaleLowerCase().endsWith('.yaml') || path.toLocaleLowerCase().endsWith('.yml')) {
     // yaml format
     try {
       return load(content, { json: true });

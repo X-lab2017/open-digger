@@ -1,0 +1,55 @@
+name: Linux Foundation
+type: Foundation
+data:
+  github_repo:
+    - 89322848 # repo:Angel-ML/angel
+    - 214001313 # repo:ForestFlow/ForestFlow
+    - 148223447 # repo:linkedin/TonY
+    - 176202753 # repo:datapractices/data-practices-site
+    - 201327718 # repo:odpi/OpenDS4All
+    - 418444440 # repo:Project-OpenBytes/OpenBytes
+    - 306977038 # repo:OpenLineage/OpenLineage
+    - 77385607 # repo:JanusGraph/janusgraph
+    - 208728772 # repo:milvus-io/milvus
+    - 186647681 # repo:amundsen-io/amundsen
+    - 211152022 # repo:datashim-io/datashim
+    - 139907613 # repo:MarquezProject/marquez
+    - 161133770 # repo:feast-dev/feast
+    - 141988388 # repo:nnstreamer/nnstreamer
+    - 135579677 # repo:odpi/egeria
+    - 189184276 # repo:Delta-ML/delta
+    - 307465447 # repo:RosaeNLG/rosaenlg
+    - 210452618 # repo:Adlik/Adlik
+    - 178075572 # repo:kserve/kserve
+    - 217498546 # repo:Substra/substra
+    - 99846383 # repo:horovod/horovod
+    - 163346054 # repo:ludwig-ai/ludwig
+    - 102692863 # repo:onnx/onnx
+    - 129280238 # repo:acumos/documentation
+    - 356066412 # repo:machine-learning-exchange/mlx
+    - 216628419 # repo:flyteorg/flyte
+    - 182067506 # repo:quantumblacklabs/kedro
+    - 283406173 # repo:KomputeProject/kompute
+    - 94506832 # repo:pyro-ppl/pyro
+    - 123634214 # repo:elasticdeeplearning/edl
+    - 31730643 # repo:soajs/soajs
+    - 59305491 # repo:sparklyr/sparklyr
+    - 196340907 # repo:Trusted-AI/AIX360
+    - 125381318 # repo:Trusted-AI/adversarial-robustness-toolbox
+    - 145761123 # repo:Trusted-AI/AIF360
+    - 125944747 # repo:hyperledger/caliper
+    - 78610786 # repo:hyperledger/cello
+    - 195003588 # repo:lf-edge/ekuiper
+    - 94065005 # repo:journeymidnight/yig
+  github_org:
+    - 36865262 # org:projectacrn
+    - 45012756 # org:occlum
+    - 50487650 # org:cloud-hypervisor
+    - 54415384 # org:baetyl
+    - 25933741 # org:onap
+    - 64113964 # org:XGVela
+    - 64147991 # org:ifeilong
+    - 26734561 # org:openmessaging
+    - 92902569 # org:nextarchfoundation
+    - 56990927 # org:sodafoundation
+    - 42138346 # org:TarsCloud

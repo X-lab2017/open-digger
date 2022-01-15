@@ -1,0 +1,5 @@
+name: CTrip
+type: Company
+data:
+  github_org:
+    - 10720307 # ctripcorp

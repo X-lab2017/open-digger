@@ -1,0 +1,9 @@
+name: Tencent
+type: Company
+data:
+  github_org:
+    - 18461506 # Tencent
+    - 1503033 # AlloyTeam
+    - 42138346 # TarsCloud
+    - 14183739 # weixin
+    - 12334581 # tencentyun

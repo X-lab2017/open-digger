@@ -1,0 +1,29 @@
+name: CNCF
+type: Foundation
+data:
+  github_repo:
+    - 50613991 # repo:goharbor/harbor
+    - 48833910 # repo:tikv/tikv
+    - 309874357 # repo:dragonflyoss/Dragonfly2
+    - 150713223 # repo:kubeedge/kubeedge
+    - 199763479 # repo:bfenetworks/bfe
+    - 206213815 # repo:chaos-mesh/chaos-mesh
+    - 175192867 # repo:chaosblade-io/chaosblade
+    - 171396748 # repo:chubaofs/chubaofs
+    - 86123872 # repo:cni-genie/CNI-Genie
+    - 278954673 # repo:fluid-cloudnative/fluid
+    - 263214582 # repo:alibaba/inclavare-containers
+    - 311639195 # repo:karmada-io/karmada
+    - 177068961 # repo:kubeovn/kube-ovn
+    - 227010082 # repo:kubedl-io/kubedl
+    - 276822250 # repo:oam-dev/kubevela
+    - 135516270 # repo:k3s-io/k3s
+    - 311269921 # repo:nocalhost/nocalhost
+    - 168629414 # repo:kubesphere/openelb
+    - 189490177 # repo:openkruise/kruise
+    - 265800635 # repo:openyurtio/openyurt
+    - 53085971 # org:Piraeus-Datastore
+    - 322759957 # repo:superedge/superedge
+    - 306631211 # repo:v6d-io/v6d
+    - 175592968 # repo:volcano-sh/volcano
+    - 224908244 # repo:WasmEdge/WasmEdge

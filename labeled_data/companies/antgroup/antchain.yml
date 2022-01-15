@@ -1,0 +1,6 @@
+name: Ant Chain
+type: Project
+data:
+  github_org:
+    - 67619037 # org:antchain-openapi-sdk-go
+    - 67618898 # org:antchain-openapi-sdk-php

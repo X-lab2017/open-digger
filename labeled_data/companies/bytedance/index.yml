@@ -1,0 +1,5 @@
+name: ByteDance
+type: Company
+data:
+  github_org:
+    - 4158466 # bytedance

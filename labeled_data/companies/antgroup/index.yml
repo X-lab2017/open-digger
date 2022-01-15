@@ -1,0 +1,22 @@
+name: Ant group
+type: Company
+data:
+  label:
+    - antchain
+    - antd
+    - egg
+    - kata_container
+    - macaca
+    - oceanbase
+    - sofastack
+    - :companies/alibaba/seata
+  github_org:
+    - 58020396 # org:mosn
+    - 45012756 # org:occlum
+    - 19199542 # org:antvis
+    - 48231449 # org:sql-machine-learning
+    - 33895495 # org:umijs
+    - 45850884 # org:karasjs
+    - 72598982 # org:oasis-engine
+    - 20552239 # org:dvajs
+    - 62416602 # org:mpaas-demo

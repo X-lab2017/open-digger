@@ -1,0 +1,5 @@
+name: Didi
+type: Company
+data:
+  github_org:
+    - 27521938 # didi
