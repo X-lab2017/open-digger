@@ -28,6 +28,7 @@ data:
     - :companies/dcloud
     - :companies/qingcloud
     - :communities/xlab
+    - :projects/skywalking
   github_org:
     - 12165287 # org:ossrs
     - 36865262 # org:projectacrn
@@ -43,7 +44,6 @@ data:
     - 42138346 # org:TarsCloud
   github_repo:
     - 49876476 # repo:apache/shardingsphere
-    - 45721011 # repo:apache/skywalking
     - 180481986 # repo:apache/apisix
     - 60844036 # repo:shadowsocks/ShadowsocksX-NG
     - 173335706 # repo:apache/incubator-dolphinscheduler
