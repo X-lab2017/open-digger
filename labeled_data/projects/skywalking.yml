@@ -1,0 +1,34 @@
+name: SkyWalking
+type: Project
+data:
+  github_repo:
+    - 45721011 # repo:apache/skywalking
+    - 274822766 # repo:apache/skywalking-nodejs
+    - 241621679 # repo:apache/skywalking-nginx-lua
+    - 400172901 # repo:apache/skywalking-java
+    - 117302788 # repo:apache/skywalking-website
+    - 153295119 # repo:apache/skywalking-rocketbot-ui
+    - 351637721 # repo:apache/skywalking-banyandb
+    - 154606109 # repo:apache/skywalking-kubernetes
+    - 154605982 # repo:apache/skywalking-docker
+    - 324770878 # repo:apache/skywalking-infra-e2e
+    - 147172434 # repo:apache/skywalking-query-protocol
+    - 261456329 # repo:apache/skywalking-python
+    - 226286903 # repo:apache/skywalking-client-js
+    - 241621162 # repo:apache/skywalking-swck
+    - 243660063 # repo:apache/skywalking-agent-test-tool
+    - 122565314 # repo:apache/skywalking-data-collect-protocol
+    - 323231688 # repo:apache/skywalking-eyes
+    - 308850825 # repo:apache/skywalking-satellite
+    - 218930575 # repo:apache/skywalking-cli
+    - 406666774 # repo:apache/skywalking-showcase
+    - 401558592 # repo:apache/skywalking-banyandb-java-client
+    - 243689974 # repo:apache/skywalking-rust
+    - 351349940 # repo:apache/skywalking-goapi
+    - 358578856 # repo:apache/skywalking-kong
+    - 351967756 # repo:apache/skywalking-kubernetes-event-exporter
+    - 435180749 # repo:apache/skywalking-booster-ui
+    - 83632281 # repo:apache/skywalking-ui
+    - 140874933 # repo:apache/skywalking-oal-tool
+  github_org:
+    - 32165127 # org:SkyAPM
