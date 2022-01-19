@@ -21,7 +21,8 @@
     "skipDefaultLibCheck": true,
     "inlineSourceMap": true,
     "importHelpers": true,
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "outDir": "./lib"
   },
   "includes": [
     "src"
