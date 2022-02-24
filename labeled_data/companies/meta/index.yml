@@ -1,0 +1,11 @@
+name: Meta
+type: Company
+data:
+  github_org:
+    - 69631 # org:facebook
+    - 16943930 # org:facebookresearch
+    - 21003710 # org:pytorch
+    - 12853545 # org:facebookexperimental
+    - 1541324 # org:fbsamples
+    - 549085 # org:Instagram
+    - 19538647 # org:facebookincubator

@@ -1,0 +1,19 @@
+name: Google
+type: Company
+data:
+  github_repo:
+    - 20580498 # repo:kubernetes/kubernetes
+    - 118828329 # repo:knative/serving
+    - 124951822 # repo:knative/eventing
+    - 82210080 # repo:forseti-security/forseti-security
+    - 23096959 # repo:golang/go
+    - 50904245 # repo:apache/beam
+    - 20773773 # repo:bazelbuild/bazel
+  github_org:
+    - 1342004 # org:google
+    - 15658638 # org:tensorflow
+    - 23534644 # org:istio
+    - 14101776 # org:flutter
+    - 1335026 # org:firebase
+    - 139426 # org:angular
+    - 1609975 # org:dart-lang
