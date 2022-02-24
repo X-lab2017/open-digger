@@ -2,10 +2,9 @@ import { readdirSync, readFileSync, statSync, writeFileSync } from "fs";
 import path from "path";
 import { readFileAsObj } from "./utils";
 
-const labelInputFile = 'labeled_data';
+const labelInputDir = '../labeled_data';
 const labelOutputFile = 'auto_generated.json';
-const labelInputPath = path.join(path.resolve(), labelInputFile);
-
+const labelInputPath = path.join(__dirname, labelInputDir);
 
 const supportedTypes = new Set<string>([
   'Region', 'Company', 'Community', 'Project', 'Foundation'

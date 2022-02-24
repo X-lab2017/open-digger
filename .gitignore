@@ -6,5 +6,10 @@
 
 */**/node_modules
 src/**/*.js
+src/local_config.ts
+!src/open_digger.js
+*/**/.ipynb_checkpoints
+notebook/local
+lib
 dist
 node_modules
