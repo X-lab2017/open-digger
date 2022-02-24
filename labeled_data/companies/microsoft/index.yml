@@ -1,0 +1,7 @@
+name: Microsoft
+type: Company
+data:
+  github_org:
+    - 6154722 # org:microsoft
+    - 9141961 # org:dotnet
+    - 27453006 # org:dotnet-architecture
