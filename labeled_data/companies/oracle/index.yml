@@ -1,0 +1,5 @@
+name: Oracle
+type: Company
+data:
+  github_org:
+    - 4430336 # org:oracle

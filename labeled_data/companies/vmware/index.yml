@@ -1,0 +1,5 @@
+name: VMWare
+type: Company
+data:
+  github_org:
+    - 473334 # org:vmware

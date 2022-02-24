@@ -1,0 +1,5 @@
+name: Mozilla
+type: Company
+data:
+  github_org:
+    - 131524 # org:mozilla

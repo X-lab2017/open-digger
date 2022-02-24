@@ -1,0 +1,5 @@
+name: RedHat
+type: Company
+data:
+  github_org:
+    - 33972111 # org:RedHatOfficial
