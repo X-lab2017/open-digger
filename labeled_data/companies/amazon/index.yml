@@ -1,0 +1,5 @@
+name: Amazon
+type: Company
+data:
+  github_org:
+    - 2232217 # org:aws
