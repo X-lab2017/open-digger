@@ -33,6 +33,7 @@
     "dateformat": "^4.5.1",
     "ijavascript-plotly": "0.0.1",
     "js-yaml": "^4.1.0",
+    "lodash": "^4.17.21",
     "neo4j-driver": "^4.4.1",
     "parse-neo4j": "^0.6.11",
     "pope": "^3.0.0",
@@ -44,6 +45,7 @@
   "type": "commonjs",
   "devDependencies": {
     "@types/js-yaml": "^4.0.0",
+    "@types/lodash": "^4.14.178",
     "@types/node": "^14.14.37",
     "@types/request": "^2.48.5"
   }
