@@ -1,8 +1,9 @@
-import { getRepoActivity, getUserActivity } from "./activity";
+import { getRepoActivityOrOpenrank, getUserActivity } from "./activity_openrank";
 import { getRelatedUsers } from "./related_users";
 
 module.exports = {
-  getRepoActivity: getRepoActivity,
+  getRepoActivity: config => getRepoActivityOrOpenrank(config, 'activity'),
+  getRepoOpenrank: config => getRepoActivityOrOpenrank(config, 'open_rank'),
   getRelatedUsers: getRelatedUsers,
   getUserActivity: getUserActivity,
 }

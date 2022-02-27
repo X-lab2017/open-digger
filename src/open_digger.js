@@ -30,6 +30,7 @@ const openDigger = {
       });
     },
     getRepoActivity: func.getRepoActivity,
+    getRepoOpenrank: func.getRepoOpenrank,
     getRelatedUsers: func.getRelatedUsers,
     getUserActivity: func.getUserActivity,
   }

@@ -149,10 +149,10 @@ function labelDataToGitHubData(data: ParsedLabelItem[]): GitHubData {
   };
 }
 
-export function getGitHubData(config: {types?: string[], ids?: string[]}): GitHubData {
-  if (!config || (!config.types && !config.ids)) return emptyData;
+export function getGitHubData(typeOrIds: string[]): GitHubData {
+  if (typeOrIds.length === 0) return emptyData;
   const data = getLabelData();
   if (!data) return emptyData;
-  const arr = data.filter(i => (config.types ?? []).includes(i.type) || (config.ids ?? []).includes(i.identifier));
+  const arr = data.filter(i => typeOrIds.includes(i.type) || typeOrIds.includes(i.identifier));
   return labelDataToGitHubData(arr);
 }

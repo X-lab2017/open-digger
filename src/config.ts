@@ -6,15 +6,15 @@ export default {
   },
   db: {
     clickhouse: {
-      host: process.env.CLICKHOUSE_HOST ?? 'cc-uf6s6ckq946aiv4jyo.ads.rds.aliyuncs.com',
+      host: process.env.CLICKHOUSE_HOST ?? 'localhost',
       port: process.env.CLICKHOUSE_PORT ?? '8123',
-      user: process.env.CLICKHOUSE_USER ?? 'frank',
-      password: process.env.CLICKHOUSE_PASSWORD ?? 'Frank524!',
+      user: process.env.CLICKHOUSE_USER ?? '',
+      password: process.env.CLICKHOUSE_PASSWORD ?? '',
       protocol: process.env.CLICKHOUSE_PROTOCAL ?? 'http:',
       format: process.env.CLICKHOUSE_FORMAT ?? 'JSON',
     },
     neo4j: {
-      host: process.env.NEO4J_HOST ?? 'neo4j://host.docker.internal',
+      host: process.env.NEO4J_HOST ?? 'neo4j://localhost',
     }
   },
 };
