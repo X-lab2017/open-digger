@@ -40,10 +40,10 @@ interface ParsedLabelItem extends GitHubData {
   name: string;
 }
 
-export function getLabelData() {
+export function getLabelData(): ParsedLabelItem[] {
   if (!statSync(labelInputPath).isDirectory()) {
     console.error(`${labelInputPath} input path is not a directory.`);
-    return;
+    return [];
   }
   const labelMap = new Map<string, LabelItem>();
   const indexFileName = '/index.yml';

@@ -5,8 +5,7 @@ export const getRelatedUsers = (config: QueryConfig) => {
   config = getMergedConfig(config);
   const repoWhereClause = getRepoWhereClauseForNeo4j(config);
   const timeWhereClause = getTimeRangeWhereClauseForNeo4j(config, 'a');
-  const timeActivityClause = getTimeRangeSumClauseForNeo4j(config, 'u.activity');
-  const timeOpenrankClause = getTimeRangeSumClauseForNeo4j(config, 'u.open_rank');
-  const query = `MATCH (r:Repo)<-[a:ACTION]-(u:User) WHERE ${repoWhereClause ? repoWhereClause + ' AND ' : ''} ${timeWhereClause} RETURN r.name AS repo_name, u.login AS user_login, ${timeActivityClause} AS activity, ${timeOpenrankClause} AS openrank ORDER BY activity ${config.order} LIMIT ${config?.limit};`;
+  const timeActivityClause = getTimeRangeSumClauseForNeo4j(config, 'a.activity');
+  const query = `MATCH (r:Repo)<-[a:ACTION]-(u:User) WHERE ${repoWhereClause ? repoWhereClause + ' AND ' : ''} ${timeWhereClause} RETURN u.login AS user_login, [${timeActivityClause.map(i => `round(SUM(${i}), ${config.percision})`).join(',')}] AS activity ORDER BY activity[0] ${config.order} LIMIT ${config?.limit};`;
   return neo4j.query(query);
 }
