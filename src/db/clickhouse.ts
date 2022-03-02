@@ -1,11 +1,11 @@
 import ClickHouse = require('@apla/clickhouse');
-import config from '../config';
+import getConfig from '../config';
 
 let client;
 
 function getClient() {
   if (client) return client;
-  client = new ClickHouse(config.db.clickhouse);
+  client = new ClickHouse(getConfig().db.clickhouse);
   return client;
 }
 
