@@ -1,4 +1,6 @@
-export default {
+import { merge } from "lodash";
+
+let config = {
   general: {
     owner: 'X-lab2017',
     repo: 'OpenDigger',
@@ -18,3 +20,9 @@ export default {
     }
   },
 };
+
+import('./local_config').then(localConfig => {
+  config = merge(config, localConfig.default);
+}).catch(() => {});
+
+export default () => config;
