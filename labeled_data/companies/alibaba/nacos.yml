@@ -1,0 +1,7 @@
+name: Nacos
+type: Project
+data:
+  github_org:
+    - 41446552 # org:nacos-group
+  github_repo:
+    - 137451403 # repo:alibaba/nacos
