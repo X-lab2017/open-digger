@@ -12,3 +12,25 @@ data:
     - opensearch
   github_org:
     - 2232217 # org:aws
+    - 8931462 # org:aws-samples
+    - 3299148 # org:awslabs
+    - 8661631 # org:awsdocs
+    - 17076214 # org:aws-quickstart
+    - 84986730 # org:aws-ia
+    - 49037648 # org:aws-solutions
+    - 57468012 # org:aws-actions
+    - 29926826 # org:amazon-archives
+    - 70298811 # org:amazon-research
+    - 73786311 # org:projen
+    - 44104058 # org:corretto
+    - 168515 # org:ajaxorg
+    - 32580227 # org:gluon-api
+    - 327752 # org:boto
+    - 45669720 # org:neo-ai
+    - 45947357 # org:amazonlinux
+    - 54455934 # org:amazon-connect
+    - 19900777 # org:aws-cloudformation
+    - 75227353 # org:cdklabs
+    - 45240205 # org:aws-robotics
+    - 79480778 # org:aws-deepracer
+
