@@ -1,0 +1,5 @@
+name: AWS Amplify
+type: Project
+data:
+  github_org:
+    - 41077760 # org:aws-amplify

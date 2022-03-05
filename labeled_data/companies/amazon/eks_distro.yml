@@ -1,0 +1,5 @@
+name: EKS Distro
+type: Project
+data:
+  github_repo:
+    - 313741735 # repo:aws/eks-distro

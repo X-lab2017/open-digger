@@ -1,0 +1,5 @@
+name: Bottlerocket
+type: Project
+data:
+  github_org:
+    - 61023959 # org:bottlerocket-os
