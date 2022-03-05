@@ -10,7 +10,7 @@ const supportedTypes = new Set<string>([
 ]);
 
 const supportedKey = new Set<string>([
-  'label', 'github_repo', 'github_org',
+  'label', 'github_repo', 'github_org', 'github_user'
 ]);
 interface GitHubData {
   githubRepos: number[],
