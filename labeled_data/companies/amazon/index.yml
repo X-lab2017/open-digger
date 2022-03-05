@@ -1,5 +1,14 @@
 name: Amazon
 type: Company
 data:
+  label:
+    - aws_amplify
+    - aws_cdk
+    - aws_distro_for_opentelemetry
+    - babelfish_for_postgresql
+    - eks_distro
+    - firecracker
+    - freertos
+    - opensearch
   github_org:
     - 2232217 # org:aws

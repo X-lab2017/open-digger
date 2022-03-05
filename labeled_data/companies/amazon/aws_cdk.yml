@@ -1,0 +1,5 @@
+name: AWS CDK
+type: Project
+data:
+  github_repo:
+    - 105808767 # repo:aws/aws-cdk

@@ -1,0 +1,5 @@
+name: AWS Distro for OpenTelemetry
+type: Project
+data:
+  github_org:
+    - 69270564 # org:aws-observability
