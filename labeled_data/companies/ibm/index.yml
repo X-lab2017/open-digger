@@ -1,0 +1,19 @@
+name: IBM
+type: Company
+data:
+  github_repo:
+    - 145761123 # repo:Trusted-AI/AIF360
+    - 101408117 # repo:eclipse-openj9/openj9
+    - 52039373 # repo:apache/openwhisk
+    - 66573241 # repo:hyperledger/fabric
+    
+  github_org:
+    - 1459110 # org:IBM
+    - 19577732 # org:IBMa
+    - 17178768 # org:IBM-Blockchain
+    - 5375661 # org:node-red
+    - 13631156 # org:CODAIT
+    - 25179978 # org:carbon-design-system
+    - 30696987 # org:Qiskit
+    - 22173486 # org:loopbackio 
+  

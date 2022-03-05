@@ -3,3 +3,7 @@ type: Company
 data:
   github_org:
     - 473334 # org:vmware
+    - 54452117 # org:vmware-tanzu
+    - 40275816 # org:goharbor
+    - 62078680 # org:tern-tools
+    - 56945369 # org:antrea-io

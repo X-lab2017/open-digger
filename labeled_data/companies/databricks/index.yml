@@ -1,0 +1,10 @@
+name: Databricks
+type: Company
+data:
+  github_repo:
+    - 17165658 # repo:apache/spark
+    - 13926404 # repo:getredash/redash
+ 
+  github_org:
+    - 4998052 # org:databricks
+    - 49767398 # org:delta-io

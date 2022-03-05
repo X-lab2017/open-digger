@@ -3,3 +3,11 @@ type: Company
 data:
   github_org:
     - 4430336 # org:oracle
+    - 41768318 # org:openjdk
+    - 2452804 # org:mysql
+    - 30273834 # org:fnproject
+    - 765943 # org:apiaryio
+    - 10176827 # org:graalvm
+    - 23086798 # org:javaee
+    - 1084880 # org:dyninc
+    - 44307903 # org:oracle-terraform-modules

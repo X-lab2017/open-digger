@@ -1,0 +1,22 @@
+name: Adobe
+type: Company
+data:
+
+  github_repo:
+    - 6898381 # repo:apache/cordova-android
+    - 6898387 # repo:apache/cordova-ios
+    - 5611582 # repo:apache/flex-sdk
+    
+  github_org:
+    - 476009 # org:adobe
+    - 168457 # org:magento
+    - 2976699 # org:adobe-webplatform
+    - 3536625 # org:adobe-research
+    - 4542585 # org:adobe-photoshop
+    - 4175954 # org:adobe-cloudops
+    - 2718604 # org:topcoat
+    - 4028872 # org:adobe-fonts
+    - 32504 # org:typekit
+    - 4764587 # org:adobe-flash
+    - 5420974 # org:adobe-consulting-services
+    - 1440554 # org:adobe-marketing-cloud
