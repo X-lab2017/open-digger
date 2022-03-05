@@ -1,0 +1,26 @@
+name: America
+type: Region
+data:
+  label:
+    - :companies/adobe
+    - :companies/amazon
+    - :companies/databricks
+    - :companies/google
+    - :companies/ibm
+    - :companies/meta
+    - :companies/microsoft
+    - :companies/mozilla
+    - :companies/oracle
+    - :companies/paypal
+    - :companies/redhat
+    - :companies/salesforce
+    - :companies/vmware
+    - :companies/netflix
+ 
+  github_org:
+
+ 
+  github_repo:
+
+
+  github_user:
