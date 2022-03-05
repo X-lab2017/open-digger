@@ -2,12 +2,11 @@ name: Netflix
 type: Company
 data:
   github_repo:
-    - restify/node-restify
-    - ReactiveX/RxJava
-
+    - 1661758 # repo:restify/node-restify
+    - 7508411 # repo:ReactiveX/RxJava
   github_org:
-    - Netflix
-    - nebula-plugins
-    - Netflix-Skunkworks
-    - spinnaker
+    - 913567 # org:Netflix
+    - 5993162 # org:nebula-plugins
+    - 1728142 # org:Netflix-Skunkworks
+    - 7634182 # org:spinnaker
  
