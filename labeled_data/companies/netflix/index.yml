@@ -1,0 +1,13 @@
+name: Netflix
+type: Company
+data:
+  github_repo:
+    - restify/node-restify
+    - ReactiveX/RxJava
+
+  github_org:
+    - Netflix
+    - nebula-plugins
+    - Netflix-Skunkworks
+    - spinnaker
+ 
