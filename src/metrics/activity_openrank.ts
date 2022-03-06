@@ -49,11 +49,11 @@ export const getRepoActivityOrOpenrank = async (config: QueryConfig, type: 'acti
   }
 }
 
-export const getUserActivity = (config: QueryConfig) => {
+export const getUserActivityOrOpenrank = (config: QueryConfig, type: 'activity' | 'open_rank') => {
   config = getMergedConfig(config);
   const userWhereClause = getUserWhereClauseForNeo4j(config);
   const timeWhereClause = getTimeRangeWhereClauseForNeo4j(config, 'u');
-  const timeActivityClause = getTimeRangeSumClauseForNeo4j(config, 'u.activity');
-  const query = `MATCH (u:User) WHERE ${userWhereClause ? userWhereClause + ' AND ' : ''} ${timeWhereClause} RETURN u.login AS user_login, ${timeActivityClause} AS activity ORDER BY activity ${config.order} LIMIT ${config.limit};`;
+  const timeActivityClause = getTimeRangeSumClauseForNeo4j(config, `u.${type}`);
+  const query = `MATCH (u:User) WHERE ${userWhereClause ? userWhereClause + ' AND ' : ''} ${timeWhereClause} RETURN u.login AS user_login, [${timeActivityClause.join(',')}] AS ${type} ORDER BY ${type} ${config.order} ${config.limit > 0 ? `LIMIT ${config.limit}` : ''};`;
   return neo4j.query(query);
 }
