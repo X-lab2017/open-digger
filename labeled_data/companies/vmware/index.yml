@@ -7,3 +7,7 @@ data:
     - 40275816 # org:goharbor
     - 62078680 # org:tern-tools
     - 56945369 # org:antrea-io
+    - 33104318 # org:pivotal
+    - 96669 # org:rabbitmq
+    - 7815877 # org:spring-cloud
+    - 317776 # org:spring-projects
