@@ -1,8 +1,6 @@
 name: VMWare
 type: Company
-data:
-  github_repo:
-    
+data:  
   github_org:
     - 473334 # org:vmware
     - 54452117 # org:vmware-tanzu
