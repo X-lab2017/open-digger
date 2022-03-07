@@ -21,7 +21,7 @@ export interface QueryConfig {
   groupTimeRange?: 'month' | 'season' | 'year';
 };
 
-export const getMergedConfig = (config: QueryConfig): QueryConfig => {
+export const getMergedConfig = (config: any): QueryConfig => {
   const defaultConfig: QueryConfig = {
       startYear: 2015,
       startMonth: 1,
@@ -34,10 +34,14 @@ export const getMergedConfig = (config: QueryConfig): QueryConfig => {
   return merge(defaultConfig, config);
 }
 
-export const forEveryMonth = (config: QueryConfig, func: (y: number, m: number) => void) => {
-  for (let y = config.startYear; y <= config.endYear; y++) {
-    for (let m = (y === config.startYear ? config.startMonth : 1);
-              m <= (y === config.endYear ? config.endMonth : 12); m++) {
+export const forEveryMonthByConfig = (config: QueryConfig, func: (y: number, m: number) => void) => {
+  forEveryMonth(config.startYear, config.startMonth, config.endYear, config.endMonth, func);
+}
+
+export const forEveryMonth = (startYear: number, startMonth: number, endYear: number, endMonth: number, func: (y: number, m: number) => void) => {
+  for (let y = startYear; y <= endYear; y++) {
+    for (let m = (y === startYear ? startMonth : 1);
+              m <= (y === endYear ? endMonth : 12); m++) {
       func(y, m);
     }
   }
@@ -89,7 +93,7 @@ export const getUserWhereClauseForNeo4j = (config: QueryConfig): string | null =
 
 export const getTimeRangeWhereClauseForNeo4j = (config: QueryConfig, type: string): string => {
   const timeWhereClauseArray: string[] = [];
-  forEveryMonth(config, (y, m) => timeWhereClauseArray.push(`EXISTS(${type}.activity_${y}${m})`));
+  forEveryMonthByConfig(config, (y, m) => timeWhereClauseArray.push(`EXISTS(${type}.activity_${y}${m})`));
   if (timeWhereClauseArray.length === 0) throw new Error('Not valid time range.');
   const timeWhereClause = `(${timeWhereClauseArray.join(' OR ')})`;
   return timeWhereClause;
@@ -99,11 +103,11 @@ export const getTimeRangeSumClauseForNeo4j = (config: QueryConfig, type: string)
   const timeRangeSumClauseArray: string[][] = [];
   if (config.groupTimeRange === 'month') {
     // for every month individual, every element belongs to a individual element
-    forEveryMonth(config, (y, m) => timeRangeSumClauseArray.push([`COALESCE(${type}_${y}${m}, 0.0)`]));
+    forEveryMonthByConfig(config, (y, m) => timeRangeSumClauseArray.push([`COALESCE(${type}_${y}${m}, 0.0)`]));
   } else if (config.groupTimeRange === 'season') {
     // for every season, need to find out when to push a new element by the season
     let lastSeason = 0;
-    forEveryMonth(config, (y, m) => {
+    forEveryMonthByConfig(config, (y, m) => {
       const s = Math.ceil(m / 3);
       if (s !== lastSeason) timeRangeSumClauseArray.push([]);
       timeRangeSumClauseArray[timeRangeSumClauseArray.length - 1].push(`COALESCE(${type}_${y}${m}, 0.0)`);
@@ -112,7 +116,7 @@ export const getTimeRangeSumClauseForNeo4j = (config: QueryConfig, type: string)
   } else if (config.groupTimeRange === 'year') {
     // for every year, need to find out when to push a new element by the year;
     let lastYear = 0;
-    forEveryMonth(config, (y, m) => {
+    forEveryMonthByConfig(config, (y, m) => {
       if (y !== lastYear) timeRangeSumClauseArray.push([]);
       timeRangeSumClauseArray[timeRangeSumClauseArray.length - 1].push(`COALESCE(${type}_${y}${m}, 0.0)`);
       lastYear = y;
@@ -120,7 +124,7 @@ export const getTimeRangeSumClauseForNeo4j = (config: QueryConfig, type: string)
   } else {
     // for all to single one, push to the first element
     timeRangeSumClauseArray.push([]);
-    forEveryMonth(config, (y, m) => timeRangeSumClauseArray[0].push(`COALESCE(${type}_${y}${m}, 0.0)`));
+    forEveryMonthByConfig(config, (y, m) => timeRangeSumClauseArray[0].push(`COALESCE(${type}_${y}${m}, 0.0)`));
   }
   if (timeRangeSumClauseArray.length === 0) throw new Error('Not valid time range.');
   const timeRangeSumClause = timeRangeSumClauseArray.map(i => `round(${i.join(' + ')}, ${config.percision})`);

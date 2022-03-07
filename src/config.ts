@@ -19,6 +19,14 @@ let config = {
       host: process.env.NEO4J_HOST ?? 'neo4j://localhost',
     }
   },
+  oss: {
+    ali: {
+      region: '',
+      accessKeyId: '',
+      accessKeySecret: '',
+      bucket: '',
+    }
+  }
 };
 
 import('./local_config').then(localConfig => {
