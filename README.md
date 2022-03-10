@@ -61,8 +61,7 @@ Meeting Document: [OpenDigger Open Source Meeting](https://shimo.im/docs/THkd6GQ
 
 Welcome to join our Slack workspace by clicking the Slack badge above if you want to communicate with us and learn more about the project. Or join the Wechat Group by scanning following QRCode.
 
-需要更新！
-
+Need update with automation tools support ~
 ## License
 
 We use [Apache-2.0 license](LICENSE) for code part and [CC-BY-4.0 license](LICENSE-CC-BY) for report part, please make sure abide by the licenses when using the project.
