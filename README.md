@@ -61,7 +61,7 @@ Meeting Document: [OpenDigger Open Source Meeting](https://shimo.im/docs/THkd6GQ
 
 Welcome to join our Slack workspace by clicking the Slack badge above if you want to communicate with us and learn more about the project. Or join the Wechat Group by scanning following QRCode.
 
-![](./docs/assets/wechat-qrcode.png)
+需要更新！
 
 ## License
 
