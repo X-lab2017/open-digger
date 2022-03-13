@@ -7,7 +7,7 @@ import { getClient } from '../../oss/ali';
 const task: Task = {
   cron: '0 0 5 * *',    // runs on the 5th day of every month at 00:00
   enable: true,
-  immediate: true,
+  immediate: false,
   callback: async () => {
     const chineseUserIds = getGitHubData([':regions/China']).githubUsers;
     const q = `MATCH (u:User) WHERE u.id IN [${chineseUserIds.join(',')}] RETURN u;`;
@@ -32,7 +32,7 @@ const task: Task = {
         });
       });
     });
-    const client = getClient();
+    const client = await getClient();
     await client.put('/hacking_force/total.json', Buffer.from(JSON.stringify(result)));
     console.log('Run hacking force total task done.');
   }

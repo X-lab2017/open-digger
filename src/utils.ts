@@ -1,5 +1,6 @@
 import { existsSync, readFileSync } from "fs";
 import { load } from 'js-yaml';
+import pWaitFor from 'p-wait-for';
 
 export function readFileAsObj(path: string) {
   if (!existsSync(path)) {
@@ -24,4 +25,17 @@ export function readFileAsObj(path: string) {
     }
   }
   return null;
+}
+
+export async function waitFor(mill: number): Promise<void> {
+  return new Promise(resolve => {
+    setTimeout(() => {
+      resolve();
+    }, mill);
+  });
+}
+
+export async function waitUntil(func: () => boolean, options?: object): Promise<void> {
+  if (func()) return;
+  return pWaitFor(func, Object.assign({ interval: 1000 }, options));
 }

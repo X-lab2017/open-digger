@@ -1,5 +1,7 @@
 import { merge } from "lodash";
 
+let inited = false;
+
 let config = {
   general: {
     owner: 'X-lab2017',
@@ -29,8 +31,13 @@ let config = {
   }
 };
 
-import('./local_config').then(localConfig => {
-  config = merge(config, localConfig.default);
-}).catch(() => {});
-
-export default () => config;
+export default async () => {
+  if (!inited) {
+    try {
+      await import('./local_config').then(localConfig => {
+        config = merge(config, localConfig.default);
+      });
+    } catch {}
+  }
+  return config;
+}
