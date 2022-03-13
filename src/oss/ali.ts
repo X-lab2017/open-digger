@@ -3,9 +3,9 @@ import getConfig from '../config';
 
 let client: OSS;
 
-export function getClient(): OSS {
+export async function getClient(): Promise<OSS> {
   if (client) return client;
-  const config = getConfig();
+  const config = await getConfig();
   client = new OSS(config.oss.ali);
   return client;
 };

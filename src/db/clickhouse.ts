@@ -3,13 +3,13 @@ import getConfig from '../config';
 
 let client;
 
-function getClient() {
+async function getClient() {
   if (client) return client;
-  client = new ClickHouse(getConfig().db.clickhouse);
+  client = new ClickHouse((await getConfig()).db.clickhouse);
   return client;
 }
 
 export async function query<T>(q: string): Promise<T> {
-    const client = getClient();
+    const client = await getClient();
     return (await client.querying(q) as any).data;
 }
