@@ -16,4 +16,5 @@ data:
     - :companies/salesforce
     - :companies/vmware
     - :companies/netflix
+    - :companies/hashicorp
  
