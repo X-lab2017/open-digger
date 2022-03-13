@@ -1,0 +1,5 @@
+name: HarshiCorp
+type: Company
+data:
+  github_org:
+    - 761456 # org:hashicorp
