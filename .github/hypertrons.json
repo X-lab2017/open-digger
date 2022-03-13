@@ -92,20 +92,14 @@
       {
         "name": "committer",
         "description": "Committer of the project",
-        "users": [ "will-ww", "frank-zsy", "sunshinemingo", "wengzhenjie" ],
+        "users": [ "will-ww", "frank-zsy", "gymgym1212", "xiaoya-Esther" ],
         "commands": [ "/difficulty", "/approve" ]
       },
       {
         "name": "replier",
         "description": "Replier is responsible for reply issues in time",
-        "users": [ "sunshinemingo", "wengzhenjie" ],
+        "users": [ "gymgym1212", "xiaoya-Esther" ],
         "commands": []
-      },
-      {
-        "name": "sql-reviewer",
-        "description": "Review the sql related PR to run SQL by command",
-        "users": [ "sunshinemingo", "frank-zsy", "wengzhenjie" ],
-        "commands": [ "/sql-run", "/sql-verified" ]
       },
       {
         "name": "notauthor",
@@ -149,13 +143,7 @@
   "self_assign": {
     "version": 1
   },
-  "sql_verified": {
-    "version": 1
-  },
   "auto_update_report": {
-    "version": 1
-  },
-  "sql_run": {
     "version": 1
   },
   "auto_update_contribution": {
