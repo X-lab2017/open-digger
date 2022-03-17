@@ -27,7 +27,7 @@ const task: Task = {
           activity: {},
           influence: {},
         };
-        forEveryMonth(2015, 1, year, month, (y, m) => {
+        forEveryMonth(2015, 1, year, month, async (y, m) => {
           repoInfo.activity[`${y}-${m}`] = repo[`activity_${y}${m}`] ?? 0;
           repoInfo.influence[`${y}-${m}`] = repo[`open_rank_${y}${m}`] ?? 0;
         });

@@ -19,7 +19,7 @@ const task: Task = {
         ranks: [],
       };
     });
-    forEveryMonth(2015, 1, 2021, 12, (y, m) => {
+    forEveryMonth(2015, 1, 2021, 12, async (y, m) => {
       const rankIndex = `open_rank_${y}${m}`;
       const sortArr = users.sort((a, b) => (b[rankIndex] ?? 0) - (a[rankIndex] ?? 0));
       result.forEach(r => {
