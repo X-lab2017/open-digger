@@ -27,6 +27,8 @@ data:
     - :companies/vesoft
     - :companies/dcloud
     - :companies/qingcloud
+    - :companies/antgroup
+    - :companies/fit2cloud
     - :communities/xlab
     - :projects/skywalking
   github_org:

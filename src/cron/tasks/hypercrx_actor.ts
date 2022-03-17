@@ -25,7 +25,7 @@ const task: Task = {
           activity: {},
           influence: {},
         };
-        forEveryMonth(2015, 1, year, month, (y, m) => {
+        forEveryMonth(2015, 1, year, month, async (y, m) => {
           userInfo.activity[`${y}-${m}`] = user[`activity_${y}${m}`] ?? 0;
           userInfo.influence[`${y}-${m}`] = user[`open_rank_${y}${m}`] ?? 0;
         });
