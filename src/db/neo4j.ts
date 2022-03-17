@@ -2,11 +2,8 @@ import neo4j = require('neo4j-driver');
 import parser = require('parse-neo4j');
 import getConfig from '../config';
 
-let driver: any;
-
 export async function getClient() {
-  if (driver) return driver;
-  driver = neo4j.driver((await getConfig()).db.neo4j.host);
+  const driver = neo4j.driver((await getConfig()).db.neo4j.host);
   return driver;
 }
 

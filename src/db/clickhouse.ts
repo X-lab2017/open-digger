@@ -1,11 +1,8 @@
 import ClickHouse = require('@apla/clickhouse');
 import getConfig from '../config';
 
-let client;
-
 async function getClient() {
-  if (client) return client;
-  client = new ClickHouse((await getConfig()).db.clickhouse);
+  const client = new ClickHouse((await getConfig()).db.clickhouse);
   return client;
 }
 
