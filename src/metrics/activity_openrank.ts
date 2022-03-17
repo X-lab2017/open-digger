@@ -14,16 +14,16 @@ import * as clickhouse from "../db/clickhouse";
 export const getRepoActivityOrOpenrank = async (config: QueryConfig, type: 'activity' | 'open_rank') => {
   config = getMergedConfig(config);
   const repoWhereClause = getRepoWhereClauseForNeo4j(config);
-  const timeWhereClause = getTimeRangeWhereClauseForNeo4j(config, 'r');
+  const timeWhereClause = await getTimeRangeWhereClauseForNeo4j(config, 'r');
   const timeActivityOrOpenrankClause = getTimeRangeSumClauseForNeo4j(config, `r.${type}`);
   if (!config.groupBy) {
-    const query = `MATCH (r:Repo) WHERE ${repoWhereClause ? repoWhereClause + ' AND ' : ''} ${timeWhereClause} RETURN r.name AS repo_name, r.org_login AS org, [${timeActivityOrOpenrankClause.join(',')}] AS ${type} ORDER BY ${type} ${config.order} LIMIT ${config.limit};`;
+    const query = `MATCH (r:Repo) WHERE ${repoWhereClause ? repoWhereClause + ' AND ' : ''} ${timeWhereClause} RETURN r.name AS repo_name, r.org_login AS org, [${(await timeActivityOrOpenrankClause).join(',')}] AS ${type} ORDER BY reverse(${type}) ${config.order} LIMIT ${config.limit};`;
     return neo4j.query(query);
   } else if (config.groupBy === 'org') {
-    const query = `MATCH (r:Repo) WHERE ${repoWhereClause ? repoWhereClause + ' AND ' : ''} ${timeWhereClause} RETURN r.org_login AS org_login, count(r.id) AS repo_count, [${timeActivityOrOpenrankClause.map(i => `round(SUM(${i}), ${config.percision})`)}] AS ${type} ORDER BY ${type} ${config.order} LIMIT ${config.limit};`;
+    const query = `MATCH (r:Repo) WHERE ${repoWhereClause ? repoWhereClause + ' AND ' : ''} ${timeWhereClause} RETURN r.org_login AS org_login, count(r.id) AS repo_count, [${(await timeActivityOrOpenrankClause).map(i => `round(SUM(${i}), ${config.percision})`)}] AS ${type} ORDER BY reverse(${type}) ${config.order} LIMIT ${config.limit};`;
     return neo4j.query(query);
   } else {
-    const query = `MATCH (r:Repo) WHERE ${repoWhereClause ? repoWhereClause + ' AND ' : ''} ${timeWhereClause} RETURN r.id AS repo_id, r.org_id AS org_id, [${timeActivityOrOpenrankClause.join(',')}] AS ${type};`;
+    const query = `MATCH (r:Repo) WHERE ${repoWhereClause ? repoWhereClause + ' AND ' : ''} ${timeWhereClause} RETURN r.id AS repo_id, r.org_id AS org_id, [${(await timeActivityOrOpenrankClause).join(',')}] AS ${type};`;
     const queryResult: any[] = await neo4j.query(query);
     const labelData = getLabelData()?.filter(l => l.type === config.groupBy);
     const result = new Map();
@@ -46,19 +46,19 @@ export const getRepoActivityOrOpenrank = async (config: QueryConfig, type: 'acti
       });
     });
     const resultArr = Array.from(result.values());
-    if (config.order === 'ASC') resultArr.sort((a, b) => a[type][0] - b[type][0]);
-    if (config.order === 'DESC') resultArr.sort((a, b) => b[type][0] - a[type][0]);
+    if (config.order === 'ASC') resultArr.sort((a, b) => a[type][a[type].length - 1] - b[type][b[type].length - 1]);
+    if (config.order === 'DESC') resultArr.sort((a, b) => b[type][b[type].length - 1] - a[type][a[type].length - 1]);
     resultArr.forEach(i => i[type] = i[type].map(v => parseFloat(v.toFixed(config.percision))));
     return resultArr.slice(0, config.limit);
   }
 }
 
-export const getUserActivityOrOpenrank = (config: QueryConfig, type: 'activity' | 'open_rank') => {
+export const getUserActivityOrOpenrank = async (config: QueryConfig, type: 'activity' | 'open_rank') => {
   config = getMergedConfig(config);
   const userWhereClause = getUserWhereClauseForNeo4j(config);
-  const timeWhereClause = getTimeRangeWhereClauseForNeo4j(config, 'u');
+  const timeWhereClause = await getTimeRangeWhereClauseForNeo4j(config, 'u');
   const timeActivityClause = getTimeRangeSumClauseForNeo4j(config, `u.${type}`);
-  const query = `MATCH (u:User) WHERE ${userWhereClause ? userWhereClause + ' AND ' : ''} ${timeWhereClause} RETURN u.login AS user_login, [${timeActivityClause.join(',')}] AS ${type} ORDER BY ${type} ${config.order} ${config.limit > 0 ? `LIMIT ${config.limit}` : ''};`;
+  const query = `MATCH (u:User) WHERE ${userWhereClause ? userWhereClause + ' AND ' : ''} ${timeWhereClause} RETURN u.login AS user_login, [${(await timeActivityClause).join(',')}] AS ${type} ORDER BY ${type} ${config.order} ${config.limit > 0 ? `LIMIT ${config.limit}` : ''};`;
   return neo4j.query(query);
 }
 
@@ -282,6 +282,7 @@ ${limit > 0 ? `LIMIT ${limit}` : ''}`;
         });
       }
     }
+    resultMap.get(row.id)!.login = row.login;
     resultMap.get(row.id)!.activity.push(row.activity);
     resultMap.get(row.id)!.details.push({
       issue_comment: row.issue_comment,

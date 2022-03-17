@@ -17,6 +17,8 @@ const openDigger = {
     activity: {
       getRepoActivity: func.getRepoActivity,
       getUserActivity: func.getUserActivity,
+      getRepoActivityWithDetail: func.getRepoActivityWithDetail,
+      getUserActivityWithDetail: func.getUserActivityWithDetail,
     },
     openrank: {
       getRepoOpenrank: func.getRepoOpenrank,
@@ -28,6 +30,23 @@ const openDigger = {
   },
   relation: {
     getRelatedUsers: func.getRelatedUsers,
+  },
+  getRank: (values, nameGetter, valueGetter) => {
+      let resultMap = new Map();
+      values.forEach(v => resultMap.set(nameGetter(v), []));
+      let valueLength = valueGetter(values[0]).length;
+      for (let i = 0; i < valueLength; i++) {
+        values = values.sort((a, b) => valueGetter(b)[i] - valueGetter(a)[i]);
+        values.forEach((v, index) => {
+          resultMap.get(nameGetter(v)).push((valueGetter(v)[i] == 0) ? undefined : index + 1);
+        });
+      }
+      return Array.from(resultMap.entries()).map(e => {
+        return {
+          name: e[0],
+          values: e[1],
+        };
+      });
   },
   quick: {
     showAll: (repoName, startYear = 2015, endYear = 2021) => {
