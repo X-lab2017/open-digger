@@ -24,7 +24,7 @@ Meeting Room:  ([Tencent Meeting](https://meeting.tencent.com/) Room ID: 537 832
 
 ## Communication
 
-Welcome to join the Wechat Group by scanning following QRCode.
+Welcome to join the WeChat group by scanning the QRCode and I will invite you into our WeChat group.
 
 <img src='./docs/assets/wechat-qrcode.png' width=300 />
 
