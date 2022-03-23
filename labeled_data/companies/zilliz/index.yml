@@ -1,0 +1,5 @@
+name: Zilliz
+type: Company
+data:
+  github_org:
+    - 51735404 # org:milvus-io

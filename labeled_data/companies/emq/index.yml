@@ -1,0 +1,6 @@
+name: EMQ
+type: Company
+data:
+  github_org:
+    - 25221711 # org:emqx
+    - 69663318 # org:hstreamdb
