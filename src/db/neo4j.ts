@@ -2,9 +2,11 @@ import neo4j = require('neo4j-driver');
 import parser = require('parse-neo4j');
 import getConfig from '../config';
 
+let _driver: any;
+
 export async function getClient() {
-  const driver = neo4j.driver((await getConfig()).db.neo4j.host);
-  return driver;
+  if (!_driver) _driver = neo4j.driver((await getConfig()).db.neo4j.host);
+  return _driver;
 }
 
 export async function query<T = any>(query: string, params?: any): Promise<T[]> {

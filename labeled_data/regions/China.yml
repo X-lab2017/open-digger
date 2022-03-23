@@ -29,6 +29,10 @@ data:
     - :companies/qingcloud
     - :companies/antgroup
     - :companies/fit2cloud
+    - :companies/emq
+    - :companies/oneflow
+    - :companies/taos
+    - :companies/zilliz
     - :communities/xlab
     - :projects/skywalking
   github_org:
