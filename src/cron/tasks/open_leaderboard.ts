@@ -9,7 +9,7 @@ import { rankData } from '../../utils';
 const task: Task = {
   cron: '0 0 15 * *',    // runs on the 15th day of every month at 00:00
   enable: true,
-  immediate: true,
+  immediate: false,
   callback: async () => {
 
     console.log(`Start to run open leaderboard task.`);

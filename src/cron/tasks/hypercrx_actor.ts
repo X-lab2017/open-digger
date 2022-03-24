@@ -10,10 +10,17 @@ const task: Task = {
   callback: async () => {
     const neo4jClient = await getNeo4jClient();
     const session = neo4jClient.session();
-    const now = new Date();
-    const lastMonth = new Date(now.getTime() - 30 * 24 * 60 * 60);
+    let t = new Date();
+    const activityQueryArr: string[] = [];
+    const oneMonthByMilliSec = 30 * 24 * 60 * 60 * 1000;
+    const lastMonth = new Date(t.getTime() - oneMonthByMilliSec);
     const year = lastMonth.getFullYear(), month = lastMonth.getMonth() + 1;
-    const q = `MATCH (u:User) WHERE u.activity_${year}${month} IS NOT NULL RETURN u;`;
+    for (let i = 0; i < 6; i++) {
+      t = new Date(t.getTime() - oneMonthByMilliSec);
+      const y = t.getFullYear(), m = t.getMonth() + 1;
+      activityQueryArr.push(`u.activity_${y}${m}`);
+    }
+    const q = `MATCH (u:User) WHERE (${activityQueryArr.map(c => `${c} > 0`).join(' OR ')}) AND (${activityQueryArr.map(c => `COALESCE(${c},0.0)`).join(' + ')} > 10) RETURN u;`;
     const result = session.run(q);
     let count = 0;
     result.subscribe({
@@ -26,10 +33,10 @@ const task: Task = {
           influence: {},
         };
         await forEveryMonth(2015, 1, year, month, async (y, m) => {
-          userInfo.activity[`${y}-${m}`] = user[`activity_${y}${m}`] ?? 0;
-          userInfo.influence[`${y}-${m}`] = user[`open_rank_${y}${m}`] ?? 0;
+          userInfo.activity[`${y}-${m}`] = parseFloat(user[`activity_${y}${m}`]?.toFixed(2) ?? 0);
+          userInfo.influence[`${y}-${m}`] = parseFloat(user[`open_rank_${y}${m}`]?.toFixed(2) ?? 0);
         });
-        const dir = `./local_files/hypercrx_actor/${user.login.charAt(0).toLowerCase()}`;
+        const dir = `./local_files/hypercrx_actor`;
         if (!existsSync(dir)) {
           mkdirSync(dir);
         }
