@@ -16,10 +16,9 @@ import Config from './config';
 
 const defaultConfig: Config = {
   schedName: 'Auto update contribution',
-  sched: '0 0 22 * * *',
+  sched: '0 0 12 * * 1',
   roles: [
     'committer',
-    'sql-reviewer',
     'replier',
     'contributor',
     'participant',
