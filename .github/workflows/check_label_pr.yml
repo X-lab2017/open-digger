@@ -1,4 +1,6 @@
 name: check-label-pr
+permissions:
+  pull_request: write
 
 on:
   pull_request:
