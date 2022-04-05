@@ -1,0 +1,26 @@
+name: check-label-pr
+
+on:
+  pull_request:
+    types: [opened, reopened, synchronize]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    name: Test changed-files
+    steps:
+
+      - name: Check out main repository
+        uses: actions/checkout@v2
+
+      - name: Setup node 14 env
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+
+      - name: Pull label file test
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+        run: |
+          npm install
+          npm run pull-label-file-test

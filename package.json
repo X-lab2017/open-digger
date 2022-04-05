@@ -13,6 +13,7 @@
     "ci": "npm run clean && npm run build && RUN_TYPE=ci GITHUB_LOG_URL=$CLICKHOUSE_QUERY_URL node src/index.js",
     "publish": "npm run clean && npm run build && RUN_TYPE=publish GITHUB_LOG_URL=$CLICKHOUSE_QUERY_URL node src/index.js",
     "data-docker": "docker pull docker-hub.x-lab.info/opendigger/github-sample-log:2.202105 && docker start github-sample-log || docker run -d --name github-sample-log -p 8123:8123 -p 9000:9000 --ulimit nofile=262144:262144 docker-hub.x-lab.info/opendigger/github-sample-log:2.202105",
+    "pull-label-file-test": "tsc && node lib/ci/pull_label_file_test.js",
     "clean": "rm -rf dist"
   },
   "repository": {
@@ -30,6 +31,7 @@
   "homepage": "https://github.com/X-lab2017/open-digger#readme",
   "dependencies": {
     "@apla/clickhouse": "^1.6.4",
+    "@octokit/core": "^3.6.0",
     "ali-oss": "^6.17.1",
     "dateformat": "^4.5.1",
     "ijavascript-plotly": "0.0.1",
