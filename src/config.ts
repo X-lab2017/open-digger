@@ -28,12 +28,17 @@ let config = {
       accessKeySecret: '',
       bucket: '',
     }
+  },
+  ci: {
+    labelDocPath: 'docs/label_data.adoc',
+    token: process.env.GH_TOKEN,
   }
 };
 
 export default async () => {
   if (!inited) {
     try {
+      // @ts-ignore
       await import('./local_config').then(localConfig => {
         config = merge(config, localConfig.default);
       });
