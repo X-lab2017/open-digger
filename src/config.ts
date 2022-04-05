@@ -30,7 +30,7 @@ let config = {
     }
   },
   ci: {
-    token: process.env.GH_TOKEN,
+    token: process.env.GITHUB_TOKEN,
   }
 };
 

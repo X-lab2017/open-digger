@@ -20,7 +20,7 @@ jobs:
 
       - name: Pull label file test
         env:
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           npm install
           npm run pull-label-file-test
