@@ -1,6 +1,6 @@
 name: check-label-pr
 permissions:
-  pull-requests: write
+  pull-requests: read|write
 
 on:
   pull_request:
