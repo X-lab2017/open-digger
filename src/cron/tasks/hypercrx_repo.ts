@@ -34,9 +34,11 @@ const task: Task = {
           activity: {},
           influence: {},
         };
+        var inited = false;
         await forEveryMonth(2015, 1, year, month, async (y, m) => {
-          repoInfo.activity[`${y}-${m}`] = parseFloat(repo[`activity_${y}${m}`]?.toFixed(2) ?? 0);
-          repoInfo.influence[`${y}-${m}`] = parseFloat(repo[`open_rank_${y}${m}`]?.toFixed(2) ?? 0);
+          if (repo[`activity_${y}${m}`]) inited = true;
+          repoInfo.activity[`${y}-${m}`] = inited ? parseFloat(repo[`activity_${y}${m}`]?.toFixed(2) ?? 0) : undefined;
+          repoInfo.influence[`${y}-${m}`] = inited ? parseFloat(repo[`open_rank_${y}${m}`]?.toFixed(2) ?? 0) : undefined;
         });
         const [owner, name] = repoInfo.name.split('/');
         const dir = `./local_files/hypercrx_repo/${owner}`;

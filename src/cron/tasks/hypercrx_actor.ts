@@ -32,9 +32,11 @@ const task: Task = {
           activity: {},
           influence: {},
         };
+        var inited = false;
         await forEveryMonth(2015, 1, year, month, async (y, m) => {
-          userInfo.activity[`${y}-${m}`] = parseFloat(user[`activity_${y}${m}`]?.toFixed(2) ?? 0);
-          userInfo.influence[`${y}-${m}`] = parseFloat(user[`open_rank_${y}${m}`]?.toFixed(2) ?? 0);
+          if (user[`activity_${y}${m}`]) inited = true;
+          userInfo.activity[`${y}-${m}`] = inited ? parseFloat(user[`activity_${y}${m}`]?.toFixed(2) ?? 0) : undefined;
+          userInfo.influence[`${y}-${m}`] = inited ? parseFloat(user[`open_rank_${y}${m}`]?.toFixed(2) ?? 0) : undefined;
         });
         const dir = `./local_files/hypercrx_actor`;
         if (!existsSync(dir)) {
