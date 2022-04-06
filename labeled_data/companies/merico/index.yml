@@ -1,0 +1,6 @@
+name: Merico
+type: Company
+data:
+  github_org:
+    - 48216022 # merico-dev
+    - 94812175 # devstream-io
