@@ -1,1 +1,0 @@
-# Top activity developer component
