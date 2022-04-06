@@ -22,12 +22,12 @@ interface LabelContent {
 
   const event = JSON.parse(readFileSync(eventPath).toString());
 
-  if (!event?.number || !event?.pull_request) {
-    console.log(`Event not currect, need event to be in pull request, event=${event}`);
+  if (!event?.issue?.number || !event?.issue?.pull_request || !event?.repository) {
+    console.log(`Event not currect, need event to be in pull request, event=${JSON.stringify(event)}`);
     return;
   }
 
-  const pullNumber = event.number;
+  const pullNumber = event.issue.number;
   const owner = event.repository.owner.login;
   const repo = event.repository.name;
 
