@@ -1,1 +1,0 @@
-# Repo language distribution component

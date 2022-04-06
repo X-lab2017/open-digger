@@ -1,6 +1,6 @@
 # OpenDigger
 
-[![apache2](https://img.shields.io/badge/license-Apache%202-blue)](LICENSE) [![ccby4](https://img.shields.io/badge/license-CC%20BY%204.0-blue)](LICENSE-CC-BY) 
+[![apache2](https://img.shields.io/badge/license-Apache%202-blue)](LICENSE)
 
 OpenDigger is an open source analysis report project for all open source data initiated by [X-lab](https://x-lab.info), this project aims to combine the wisdom of global developers to jointly analyze and insight into open source related data to help everyone better understand and participate in open source.
 
@@ -29,4 +29,4 @@ Welcome to join the WeChat group by scanning the QRCode and I will invite you in
 
 ## License
 
-We use [Apache-2.0 license](LICENSE) for code part and [CC-BY-4.0 license](LICENSE-CC-BY) for report part, please make sure abide by the licenses when using the project.
+We use [Apache-2.0 license](LICENSE) for code part, please make sure abide by the licenses when using the project.

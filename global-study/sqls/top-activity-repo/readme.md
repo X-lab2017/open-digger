@@ -1,1 +1,0 @@
-# Top activity repo component
