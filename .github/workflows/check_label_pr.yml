@@ -1,26 +1,32 @@
-name: check-label-pr
-permissions:
-  issues: write
+name: label-pr-test
 
 on:
-  pull_request:
-    types: [opened, reopened, synchronize]
+  issue_comment:
+    types: created
 
 jobs:
-  build:
+  label-pr-test:
     runs-on: ubuntu-latest
-    name: Test changed-files
     steps:
+      - name: Check comment command
+        uses: actions-ecosystem/action-regex-match@v2
+        id: regex-match
+        with:
+          text: ${{ github.event.comment.body }}
+          regex: '^/label-data-test$'
 
       - name: Check out main repository
+        if: ${{ steps.regex-match.outputs.match != '' }}
         uses: actions/checkout@v2
 
       - name: Setup node 14 env
+        if: ${{ steps.regex-match.outputs.match != '' }}
         uses: actions/setup-node@v2
         with:
           node-version: '14'
 
       - name: Pull label file test
+        if: ${{ steps.regex-match.outputs.match != '' }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
