@@ -29,8 +29,6 @@ Welcome to join the WeChat group by scanning the QRCode and I will invite you in
 <img src='./docs/assets/wechat-qrcode.png' width="250px">
 </div>
 
-<img src='./docs/assets/wechat-qrcode.png' width=300 />
-
 ## License
 
 We use [Apache-2.0 license](LICENSE) for code part, please make sure abide by the licenses when using the project.
