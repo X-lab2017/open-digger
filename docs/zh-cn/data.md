@@ -14,7 +14,7 @@
 
 ### 数据结构
 
-`Clickhouse` 服务器中数据表的结构如[数据描述表](../assets/data_description.csv)所示。该表中包含了超过 120 行数据列，可以根据该表决定自己想要分析的数据和分析方法。
+`Clickhouse` 服务器中数据表的结构如[数据描述表](https://github.com/X-lab2017/open-digger/blob/master/docs/assets/data_description.csv)所示。该表中包含了超过 120 行数据列，可以根据该表决定自己想要分析的数据和分析方法。
 
 ### 数据库用户指南
 
