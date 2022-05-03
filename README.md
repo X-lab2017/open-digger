@@ -25,7 +25,9 @@ We use [GHArchive](https://www.gharchive.org/) as our data source for GitHub eve
 
 Welcome to join the WeChat group by scanning the QRCode and I will invite you into our WeChat group.
 
-<img src='./docs/assets/wechat-qrcode.png' width=300 />
+<div align=center>
+<img src='./docs/assets/wechat-qrcode.png' width="250px">
+</div>
 
 ## License
 
