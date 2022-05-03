@@ -14,7 +14,7 @@ In order to meet the requirement for high-speed analysis among such big data, we
 
 ### Data Schema in Database
 
-The database table offered by the `Clickhouse` server is showing in [data description](./assets/data_description.csv). You can find a table with 120+ rows of features which were parsed from the raw GHArchive datasets. Check the data descriptions and what features you want to play with.
+The database table offered by the `Clickhouse` server is showing in [data description](https://github.com/X-lab2017/open-digger/blob/master/docs/assets/data_description.csv). You can find a table with 120+ rows of features which were parsed from the raw GHArchive datasets. Check the data descriptions and what features you want to play with.
 
 ### User Guide for Database Service
 
