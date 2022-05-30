@@ -11,6 +11,12 @@ import * as neo4j from '../db/neo4j'
 import { getLabelData } from "../label_data_utils";
 import * as clickhouse from "../db/clickhouse";
 
+const ISSUE_COMMENT_WEIGHT = 1;
+const OPEN_ISSUE_WEIGHT = 2;
+const OPEN_PULL_WEIGHT = 3;
+const REVIEW_COMMENT_WEIGHT = 4;
+const PULL_MERGED_WEIGHT = 5;
+
 export const getRepoActivityOrOpenrank = async (config: QueryConfig, type: 'activity' | 'open_rank') => {
   config = getMergedConfig(config);
   const repoWhereClause = getRepoWhereClauseForNeo4j(config);
@@ -68,7 +74,7 @@ export const getRepoActivityWithDetail = async (config: QueryConfig) => {
   const repoWhereClause = getRepoWhereClauseForClickhouse(config);
   if (repoWhereClause) whereClauses.push(repoWhereClause);
 
-  const clickhouseActivityQuery = (year: number, whereClauses: string[], percision: number, order: string, limit: number) => {
+  const clickhouseActivityQuery = (whereClauses: string[], percision: number, order: string, limit: number) => {
   return `SELECT repo_id AS id, anyHeavy(rname) AS name, anyHeavy(oid) AS org_id, anyHeavy(ologin) AS org_login, ROUND(SUM(activity),${percision}) AS activity, SUM(issue_comment) AS issue_comment, SUM(open_issue) AS open_issue, SUM(open_pull) AS open_pull, SUM(review_comment) AS review_comment, SUM(merged_pull) AS merged_pull FROM
   (SELECT repo_id,
     argMax(repo_name, created_at) AS rname,
@@ -80,8 +86,8 @@ export const getRepoActivityWithDetail = async (config: QueryConfig) => {
     countIf(type='PullRequestEvent' AND action='opened') AS open_pull,
     countIf(type='PullRequestReviewCommentEvent' AND action='created') AS review_comment,
     countIf(type='PullRequestEvent' AND action='closed' AND pull_merged=1) AS merged_pull,
-    sqrt(issue_comment + 2*open_issue + 3*open_pull + 4*review_comment + 2*merged_pull) AS activity
-  FROM github_log.year${year}
+    sqrt(${ISSUE_COMMENT_WEIGHT}*issue_comment + ${OPEN_ISSUE_WEIGHT}*open_issue + ${OPEN_PULL_WEIGHT}*open_pull + ${REVIEW_COMMENT_WEIGHT}*review_comment + ${PULL_MERGED_WEIGHT}*merged_pull) AS activity
+  FROM github_log.events
 ${whereClauses.length > 0 ? 'WHERE ' + whereClauses.join(' AND ') : ''}
 GROUP BY repo_id, actor_id
 HAVING activity > 0)
@@ -134,7 +140,7 @@ ${limit > 0 ? `LIMIT ${limit}` : ''}`;
   // monthly
   if (config.groupTimeRange == 'month') {
     await forEveryMonthByConfig(config, async (y, m) => {
-      const q = clickhouseActivityQuery(y, [...whereClauses, `toMonth(created_at)=${m}`], config.percision, config.order, config.limit);
+      const q = clickhouseActivityQuery([...whereClauses, `toYear(created_at) = ${y}`, `toMonth(created_at) = ${m}`], config.percision, config.order, config.limit);
       const monthResult = await clickhouse.query<any[]>(q);
       monthResult.forEach(processRow);
       processCount++;
@@ -151,7 +157,7 @@ ${limit > 0 ? `LIMIT ${limit}` : ''}`;
       } else if (year === config.endYear) {
         monthWhereClause = `toMonth(created_at) <= ${config.endMonth}`;
       }
-      const q = clickhouseActivityQuery(year, [...whereClauses, monthWhereClause].filter(i => i !== ''), config.percision, config.order, config.limit);
+      const q = clickhouseActivityQuery([...whereClauses, `toYear(created_at) = ${year}`, monthWhereClause].filter(i => i !== ''), config.percision, config.order, config.limit);
       const yearResult = await clickhouse.query<any[]>(q);
       yearResult.forEach(processRow);
       processCount++;
@@ -163,13 +169,13 @@ ${limit > 0 ? `LIMIT ${limit}` : ''}`;
   if (config.groupTimeRange == 'quarter') {
     for (let year = config.startYear; year <= config.endYear; year++) {
       for (let quarter = 1; quarter <= 4; quarter++) {
-        let quarterWhereClause: string = '';
+        let quarterWhereClause: string = `toQuarter(created_at) = ${quarter}`;
         if (year === config.startYear) {
-          quarterWhereClause = `toQuarter(created_at) = ${quarter} AND toMonth(created_at) >= ${config.startMonth}`;
+          quarterWhereClause += ` AND toMonth(created_at) >= ${config.startMonth}`;
         } else if (year === config.endYear) {
-          quarterWhereClause = `toQuarter(created_at) = ${quarter} AND toMonth(created_at) <= ${config.endMonth}`;
+          quarterWhereClause += ` AND toMonth(created_at) <= ${config.endMonth}`;
         }
-        const q = clickhouseActivityQuery(year, [...whereClauses, quarterWhereClause].filter(i => i !== ''), config.percision, config.order, config.limit);
+        const q = clickhouseActivityQuery([...whereClauses, `toYear(created_at) = ${year}`, quarterWhereClause].filter(i => i !== ''), config.percision, config.order, config.limit);
         const quarterResult = await clickhouse.query<any[]>(q);
         quarterResult.forEach(processRow);
         processCount++;
@@ -247,7 +253,7 @@ export const getUserActivityWithDetail = async (config: QueryConfig) => {
   const userWhereClause = getUserWhereClauseForClickhouse(config);
   if (userWhereClause) whereClauses.push(userWhereClause);
 
-  const clickhouseActivityQuery = (year: number, whereClauses: string[], percision: number, order: string, limit: number) => {
+  const clickhouseActivityQuery = (whereClauses: string[], percision: number, order: string, limit: number) => {
   return `SELECT actor_id AS id, anyHeavy(actor_login) AS login, ROUND(SUM(activity),${percision}) AS activity, SUM(issue_comment) AS issue_comment, SUM(open_issue) AS open_issue, SUM(open_pull) AS open_pull, SUM(review_comment) AS review_comment, SUM(merged_pull) AS merged_pull FROM
   (SELECT repo_id,
     if(type='PullRequestEvent' AND action='closed' AND pull_merged=1, issue_author_id, actor_id) AS actor_id,
@@ -257,8 +263,8 @@ export const getUserActivityWithDetail = async (config: QueryConfig) => {
     countIf(type='PullRequestEvent' AND action='opened') AS open_pull,
     countIf(type='PullRequestReviewCommentEvent' AND action='created') AS review_comment,
     countIf(type='PullRequestEvent' AND action='closed' AND pull_merged=1) AS merged_pull,
-    sqrt(issue_comment + 2*open_issue + 3*open_pull + 4*review_comment + 2*merged_pull) AS activity
-  FROM github_log.year${year}
+    sqrt(${ISSUE_COMMENT_WEIGHT}*issue_comment + ${OPEN_ISSUE_WEIGHT}*open_issue + ${OPEN_PULL_WEIGHT}*open_pull + ${REVIEW_COMMENT_WEIGHT}*review_comment + ${PULL_MERGED_WEIGHT}*merged_pull) AS activity
+  FROM github_log.events
 ${whereClauses.length > 0 ? 'WHERE ' + whereClauses.join(' AND ') : ''}
 GROUP BY repo_id, actor_id
 HAVING activity > 0)
@@ -311,7 +317,7 @@ ${limit > 0 ? `LIMIT ${limit}` : ''}`;
   // monthly
   if (config.groupTimeRange == 'month') {
     await forEveryMonthByConfig(config, async (y, m) => {
-      const q = clickhouseActivityQuery(y, [...whereClauses, `toMonth(created_at)=${m}`], config.percision, config.order, config.limit);
+      const q = clickhouseActivityQuery([...whereClauses, `toYear(created_at) = ${y}`, `toMonth(created_at) = ${m}`], config.percision, config.order, config.limit);
       const monthResult = await clickhouse.query<any[]>(q);
       monthResult.forEach(processRow);
       processCount++;
@@ -328,7 +334,7 @@ ${limit > 0 ? `LIMIT ${limit}` : ''}`;
       } else if (year === config.endYear) {
         monthWhereClause = `toMonth(created_at) <= ${config.endMonth}`;
       }
-      const q = clickhouseActivityQuery(year, [...whereClauses, monthWhereClause].filter(i => i !== ''), config.percision, config.order, config.limit);
+      const q = clickhouseActivityQuery([...whereClauses, `toYear(created_at) = ${year}`, monthWhereClause].filter(i => i !== ''), config.percision, config.order, config.limit);
       const yearResult = await clickhouse.query<any[]>(q);
       yearResult.forEach(processRow);
       processCount++;
@@ -340,13 +346,13 @@ ${limit > 0 ? `LIMIT ${limit}` : ''}`;
   if (config.groupTimeRange == 'quarter') {
     for (let year = config.startYear; year <= config.endYear; year++) {
       for (let quarter = 1; quarter <= 4; quarter++) {
-        let quarterWhereClause: string = '';
+        let quarterWhereClause: string = `toQuarter(created_at) = ${quarter}`;
         if (year === config.startYear) {
-          quarterWhereClause = `toQuarter(created_at) = ${quarter} AND toMonth(created_at) >= ${config.startMonth}`;
+          quarterWhereClause += ` AND toMonth(created_at) >= ${config.startMonth}`;
         } else if (year === config.endYear) {
-          quarterWhereClause = `toQuarter(created_at) = ${quarter} AND toMonth(created_at) <= ${config.endMonth}`;
+          quarterWhereClause += ` AND toMonth(created_at) <= ${config.endMonth}`;
         }
-        const q = clickhouseActivityQuery(year, [...whereClauses, quarterWhereClause].filter(i => i !== ''), config.percision, config.order, config.limit);
+        const q = clickhouseActivityQuery([...whereClauses, `toYear(created_at) = ${year}`, quarterWhereClause].filter(i => i !== ''), config.percision, config.order, config.limit);
         const quarterResult = await clickhouse.query<any[]>(q);
         quarterResult.forEach(processRow);
         processCount++;
