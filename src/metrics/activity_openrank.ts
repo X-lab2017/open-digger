@@ -15,7 +15,7 @@ const ISSUE_COMMENT_WEIGHT = 1;
 const OPEN_ISSUE_WEIGHT = 2;
 const OPEN_PULL_WEIGHT = 3;
 const REVIEW_COMMENT_WEIGHT = 4;
-const PULL_MERGED_WEIGHT = 5;
+const PULL_MERGED_WEIGHT = 2;
 
 export const getRepoActivityOrOpenrank = async (config: QueryConfig, type: 'activity' | 'open_rank') => {
   config = getMergedConfig(config);
