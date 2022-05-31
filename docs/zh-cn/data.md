@@ -28,7 +28,7 @@ Clickhouse SQL 的详细用法，请参阅 [Clickhouse SQL 文档](https://click
 
 ```
 SELECT actor_id, actor_login, repo_id, repo_name, issue_id, action, created_at
-FROM {database}.{table}
+FROM github_log.events
 WHERE type='PullRequestReviewCommentEvent' AND repo_name LIKE '{org}/%'
 ORDER BY created_at ASC
 ```
