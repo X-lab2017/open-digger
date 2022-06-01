@@ -19,7 +19,7 @@ OpenDigger can be used as an online analysis tool or cron task scripts, and is u
 
 ### GitHub Event Log
 
-We use [GHArchive](https://www.gharchive.org/) as our data source for GitHub event logs and the data service is provided by [clickhouse](https://clickhouse.tech/) cluster cloud service. For data details, please check the [data](https://github.com/X-lab2017/open-digger/blob/master/docs/DATA.md) docs.
+We use [GHArchive](https://www.gharchive.org/) as our data source for GitHub event logs and the data service is provided by [clickhouse](https://clickhouse.tech/) cluster cloud service. For data details, please check the [data](https://github.com/X-lab2017/open-digger/blob/master/docs/data.md) docs.
 
 ## Communication
 
