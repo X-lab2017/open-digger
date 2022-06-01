@@ -15,6 +15,10 @@ OpenDigger can be used as an online analysis tool or cron task scripts, and is u
 - [China Open Source Blue Paper 2022](http://www.copu.org.cn/new/308)([notebook](/notebook/China_open_source_blue_paper_2022.ipynb)): A blue paper of Chinese open source development by [COPU](http://www.copu.org.cn/).
 - Supply China Report 2021([notebook](/notebook/supply_chain_report_2021.ipynb)): A brief case study of supply chain in Node.js (WIP).
 
+For study purpose, you can checkout the Clickhouse demo notebook
+
+- Clickhouse Demo([notebook](/notebook/clickhouse_demo.ipynb)): A comprehensive demo notebook for Clickhouse driver.
+
 ## Data
 
 ### GitHub Event Log
