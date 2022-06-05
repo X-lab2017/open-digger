@@ -1,5 +1,5 @@
-name: Shanghai AI Lab
-type: Company
+name: OpenMMLab
+type: Community
 data:
   github_org:
     - 10245193 # org:open-mmlab
