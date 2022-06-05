@@ -33,6 +33,7 @@ data:
     - :companies/oneflow
     - :companies/taos
     - :companies/zilliz
+    - :companies/shanghai_ai_lab
     - :communities/xlab
     - :projects/skywalking
   github_org:
