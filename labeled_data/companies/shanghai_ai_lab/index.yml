@@ -1,0 +1,5 @@
+name: Shanghai AI Lab
+type: Company
+data:
+  github_org:
+    - 10245193 # org:open-mmlab
