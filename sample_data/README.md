@@ -23,8 +23,10 @@ To use the sample data, at minimum 3 GB memory should be allocated to the contai
 
 ### ClickHouse server image
 
-x86: `docker pull xlab-registry.cn-shanghai.cr.aliyuncs.com/opendigger/open-digger-clickhouse-base:v1`
-Arm: `docker pull xlab-registry.cn-shanghai.cr.aliyuncs.com/opendigger/open-digger-clickhouse-base-arm:v1`
+- x86: `docker pull docker-hub.x-lab.info/opendigger/open-digger-clickhouse-base:v1`
+- ARM: `docker pull docker-hub.x-lab.info/opendigger/open-digger-clickhouse-base-arm:v1`
+
+### Use Notebook image
 
 ## Create sample data
 

@@ -25,6 +25,10 @@ For study purpose, you can checkout the Clickhouse demo notebook
 
 We use [GHArchive](https://www.gharchive.org/) as our data source for GitHub event logs and the data service is provided by [clickhouse](https://clickhouse.tech/) cluster cloud service. For data details, please check the [data](https://github.com/X-lab2017/open-digger/blob/master/docs/data.md) docs.
 
+### Sample Data Usage
+
+OpenDigger provides ClickHouse sample data and Jupyter notebook image to run OpenDigger in local environment, please refer to [sample data doc](./sample_data/README.md).
+
 ## Communication
 
 Welcome to join the WeChat group by scanning the QRCode and I will invite you into our WeChat group.
