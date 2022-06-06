@@ -1,0 +1,56 @@
+#!/bin/bash
+set -e
+
+sql_file=$1
+tag=$2
+data_path="./data/$tag"
+need_to_export=1
+
+QUERY_REMOTE="clickhouse client -h $CH_SERVER --port $CH_PORT -u $CH_USER --password $CH_PASSWORD"
+
+if [ ! -s $sql_file ]; then
+    echo "$sql_file file not exist or empty"
+    exit -1
+fi
+
+# setup data folder
+if [ -d $data_path ]; then
+    echo "Data folder already exists, do you want to remove and download?(Y)"
+    read input
+    if [ "$input" = "Y" ]; then
+        echo "Gonna remove data folder."
+        rm -rf $data_path
+    else
+        need_to_export=0
+    fi
+fi
+if [ ! -d $data_path ]; then
+    echo "Create data folder."
+    mkdir -p $data_path
+fi
+
+# export data
+if [ "$need_to_export" -eq 1 ]; then
+    # export table schema
+    echo "Start to export table schema"
+    $QUERY_REMOTE -q "SHOW CREATE TABLE github_log.events INTO OUTFILE '$data_path/table' FORMAT TabSeparatedRaw"
+    echo "Table schema exported"
+
+    # export data
+    echo "Start to export data"
+    export_sql="$(cat $sql_file) INTO OUTFILE '$data_path/data' FORMAT Native"
+    $QUERY_REMOTE -q "$export_sql"
+    echo "Export data done."
+
+    # compress data
+    tar zcf $data_path/data.tar.gz $data_path/data $data_path/table
+else
+    echo "Skip data export."
+fi
+
+# upload to oss
+echo "Goona upload to OSS."
+ossutil cp $data_path/data.tar.gz oss://xlab-open-source/sample_data/$tag.tar.gz --config-file=~/.ossutilconfig-xlab -f
+
+echo "Process done."
+
