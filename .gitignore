@@ -14,3 +14,5 @@ notebook/local
 lib
 dist
 node_modules
+
+sample_data/data
