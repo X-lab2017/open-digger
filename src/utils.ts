@@ -1,4 +1,4 @@
-import { existsSync, readFileSync } from "fs";
+import { existsSync, readFileSync } from 'fs';
 import { load } from 'js-yaml';
 import pWaitFor from 'p-wait-for';
 

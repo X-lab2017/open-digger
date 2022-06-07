@@ -5,11 +5,13 @@ import { QueryConfig,
         getTimeRangeSumClauseForNeo4j, 
         getUserWhereClauseForNeo4j, 
         getRepoWhereClauseForClickhouse,
-        forEveryMonthByConfig,
-        getUserWhereClauseForClickhouse} from "./basic";
+        getUserWhereClauseForClickhouse,
+        getTimeRangeWhereClauseForClickhouse,
+        getGroupArrayInsertAtClauseForClickhouse,
+        getGroupTimeAndIdClauseForClickhouse} from './basic';
 import * as neo4j from '../db/neo4j'
-import { getLabelData } from "../label_data_utils";
-import * as clickhouse from "../db/clickhouse";
+import { getLabelData } from '../label_data_utils';
+import * as clickhouse from '../db/clickhouse';
 
 const ISSUE_COMMENT_WEIGHT = 1;
 const OPEN_ISSUE_WEIGHT = 2;
@@ -70,297 +72,136 @@ export const getUserActivityOrOpenrank = async (config: QueryConfig, type: 'acti
 
 export const getRepoActivityWithDetail = async (config: QueryConfig) => {
   config = getMergedConfig(config);
-  const whereClauses: string[] = [];
+  const whereClauses: string[] = ["type IN ('IssuesEvent', 'IssueCommentEvent', 'PullRequestEvent', 'PullRequestReviewCommentEvent')"]; // specify types to reduce memory usage and calculation
   const repoWhereClause = getRepoWhereClauseForClickhouse(config);
   if (repoWhereClause) whereClauses.push(repoWhereClause);
+  whereClauses.push(getTimeRangeWhereClauseForClickhouse(config));
 
-  const clickhouseActivityQuery = (whereClauses: string[], percision: number, order: string, limit: number) => {
-  return `SELECT repo_id AS id, anyHeavy(rname) AS name, anyHeavy(oid) AS org_id, anyHeavy(ologin) AS org_login, ROUND(SUM(activity),${percision}) AS activity, SUM(issue_comment) AS issue_comment, SUM(open_issue) AS open_issue, SUM(open_pull) AS open_pull, SUM(review_comment) AS review_comment, SUM(merged_pull) AS merged_pull FROM
-  (SELECT repo_id,
-    argMax(repo_name, created_at) AS rname,
-    argMax(org_id, created_at) AS oid,
-    argMax(org_login, created_at) AS ologin,
-    if(type='PullRequestEvent' AND action='closed' AND pull_merged=1, issue_author_id, actor_id) AS actor_id,
-    countIf(type='IssueCommentEvent' AND action='created') AS issue_comment,
-    countIf(type='IssuesEvent' AND action='opened')  AS open_issue,
-    countIf(type='PullRequestEvent' AND action='opened') AS open_pull,
-    countIf(type='PullRequestReviewCommentEvent' AND action='created') AS review_comment,
-    countIf(type='PullRequestEvent' AND action='closed' AND pull_merged=1) AS merged_pull,
-    sqrt(${ISSUE_COMMENT_WEIGHT}*issue_comment + ${OPEN_ISSUE_WEIGHT}*open_issue + ${OPEN_PULL_WEIGHT}*open_pull + ${REVIEW_COMMENT_WEIGHT}*review_comment + ${PULL_MERGED_WEIGHT}*merged_pull) AS activity
-  FROM github_log.events
-${whereClauses.length > 0 ? 'WHERE ' + whereClauses.join(' AND ') : ''}
-GROUP BY repo_id, actor_id
-HAVING activity > 0)
-GROUP BY repo_id
-ORDER BY activity ${order}
-${limit > 0 ? `LIMIT ${limit}` : ''}`;
-};
+  const sql = `
+SELECT
+  id,
+  argMax(name, time) AS name,
+  ${getGroupArrayInsertAtClauseForClickhouse(config, 'activity')},
+  ${getGroupArrayInsertAtClauseForClickhouse(config, 'issue_comment')},
+  ${getGroupArrayInsertAtClauseForClickhouse(config, 'open_issue')},
+  ${getGroupArrayInsertAtClauseForClickhouse(config, 'open_pull')},
+  ${getGroupArrayInsertAtClauseForClickhouse(config, 'review_comment')},
+  ${getGroupArrayInsertAtClauseForClickhouse(config, 'merged_pull')}
+FROM
+(
+  SELECT
+    ${getGroupTimeAndIdClauseForClickhouse(config)},
+    ROUND(SUM(activity), 2) AS activity,
+    SUM(issue_comment) AS issue_comment,
+    SUM(open_issue) AS open_issue,
+    SUM(open_pull) AS open_pull,
+    SUM(review_comment) AS review_comment,
+    SUM(merged_pull) AS merged_pull
+  FROM
+  (
+    SELECT
+      toStartOfMonth(created_at) AS month,
+      repo_id, argMax(repo_name, created_at) AS repo_name,
+      org_id, argMax(org_login, created_at) AS org_login,
+      if(type='PullRequestEvent' AND action='closed' AND pull_merged=1, issue_author_id, actor_id) AS actor_id,
+      countIf(type='IssueCommentEvent' AND action='created') AS issue_comment,
+      countIf(type='IssuesEvent' AND action='opened')  AS open_issue,
+      countIf(type='PullRequestEvent' AND action='opened') AS open_pull,
+      countIf(type='PullRequestReviewCommentEvent' AND action='created') AS review_comment,
+      countIf(type='PullRequestEvent' AND action='closed' AND pull_merged=1) AS merged_pull,
+      sqrt(${ISSUE_COMMENT_WEIGHT}*issue_comment + ${OPEN_ISSUE_WEIGHT}*open_issue + ${OPEN_PULL_WEIGHT}*open_pull + ${REVIEW_COMMENT_WEIGHT}*review_comment + ${PULL_MERGED_WEIGHT}*merged_pull) AS activity
+    FROM github_log.events
+    WHERE ${whereClauses.join(' AND ')}
+    GROUP BY repo_id, org_id, actor_id, month
+    HAVING activity > 0
+  )
+  GROUP BY id, time
+  ${config.limit > 0 ? `ORDER BY activity DESC LIMIT ${config.limit} BY time` : ''}
+)
+GROUP BY id
+ORDER BY activity[-1] ${config.order}
+FORMAT JSONCompact`;  // use JSONCompact to reduce network I/O
 
-  let processCount = 0;
-  const resultMap = new Map<string, { id: number; name: string; org_id: number; org_login: string; activity: number[]; details: any[] }>();
-  const processRow = (row: any) => {
-    if (!resultMap.has(row.id)) {
-      resultMap.set(row.id, { id: row.id, name: row.name, org_id: row.org_id, org_login: row.org_login, activity: [], details: [] });
-      for (let i = 0; i < processCount; i++) {
-        resultMap.get(row.id)!.activity.push(0);
-        resultMap.get(row.id)!.details.push({
-          issue_comment: 0,
-          open_issue: 0,
-          open_pull: 0,
-          review_comment: 0,
-          merged_pull: 0,
-        });
-      }
-    }
-    resultMap.get(row.id)!.activity.push(row.activity);
-    resultMap.get(row.id)!.details.push({
-      issue_comment: row.issue_comment,
-      open_issue: row.open_issue,
-      open_pull: row.open_pull,
-      review_comment: row.review_comment,
-      merged_pull: row.merged_pull,
-    });
-  };
-  const fillResultMap = () => {
-    for (const v of resultMap.values()) {
-      while (v.activity.length < processCount) {
-        v.activity.push(0);
-        v.details.push({
-          issue_comment:  0,
-          open_issue: 0,
-          open_pull: 0,
-          review_comment: 0,
-          merged_pull: 0,
-        });
-      }
-    }
-  };
-
-  // handle the groupTimeRange config
-  // monthly
-  if (config.groupTimeRange == 'month') {
-    await forEveryMonthByConfig(config, async (y, m) => {
-      const q = clickhouseActivityQuery([...whereClauses, `toYear(created_at) = ${y}`, `toMonth(created_at) = ${m}`], config.percision, config.order, config.limit);
-      const monthResult = await clickhouse.query<any[]>(q);
-      monthResult.forEach(processRow);
-      processCount++;
-      fillResultMap();
-    });
-  }
-
-  // yearly
-  if (config.groupTimeRange == 'year') {
-    for (let year = config.startYear; year <= config.endYear; year++) {
-      let monthWhereClause: string = '';
-      if (year === config.startYear) {
-        monthWhereClause = `toMonth(created_at) >= ${config.startMonth}`;
-      } else if (year === config.endYear) {
-        monthWhereClause = `toMonth(created_at) <= ${config.endMonth}`;
-      }
-      const q = clickhouseActivityQuery([...whereClauses, `toYear(created_at) = ${year}`, monthWhereClause].filter(i => i !== ''), config.percision, config.order, config.limit);
-      const yearResult = await clickhouse.query<any[]>(q);
-      yearResult.forEach(processRow);
-      processCount++;
-      fillResultMap();
-    }
-  }
-
-  // quarterly
-  if (config.groupTimeRange == 'quarter') {
-    for (let year = config.startYear; year <= config.endYear; year++) {
-      for (let quarter = 1; quarter <= 4; quarter++) {
-        let quarterWhereClause: string = `toQuarter(created_at) = ${quarter}`;
-        if (year === config.startYear) {
-          quarterWhereClause += ` AND toMonth(created_at) >= ${config.startMonth}`;
-        } else if (year === config.endYear) {
-          quarterWhereClause += ` AND toMonth(created_at) <= ${config.endMonth}`;
-        }
-        const q = clickhouseActivityQuery([...whereClauses, `toYear(created_at) = ${year}`, quarterWhereClause].filter(i => i !== ''), config.percision, config.order, config.limit);
-        const quarterResult = await clickhouse.query<any[]>(q);
-        quarterResult.forEach(processRow);
-        processCount++;
-        fillResultMap();
-      }
-    }
-  }
-
-  // handle the groupBy config
-  const addValues = (a, b) => {
+  const result: any = await clickhouse.query(sql);
+  return result.map(row => {
+    const [ id, name, activity, issue_comment, open_issue, open_pull, review_comment, merged_pull ] = row;
     return {
-      activity: a.activity.map((v, i) => parseFloat((v + b.activity[i]).toFixed(config.percision))),
-      details: a.details.map((v, i) => {
-        return {
-          issue_comment: parseInt(v.issue_comment) + parseInt(b.details[i].issue_comment),
-          open_issue: parseInt(v.open_issue) + parseInt(b.details[i].open_issue),
-          open_pull: parseInt(v.open_pull) + parseInt(b.details[i].open_pull),
-          review_comment: parseInt(v.review_comment) + parseInt(b.details[i].review_comment),
-          merged_pull: parseInt(v.merged_pull) + parseInt(b.details[i].merged_pull),
-        };
-      }),
+      id,
+      name,
+      activity,
+      issue_comment,
+      open_issue,
+      open_pull,
+      review_comment,
+      merged_pull,
     }
-  };
-  if (!config.groupBy) {    // group by repo
-    const result = Array.from(resultMap.values()).sort((a, b) => b.activity[b.activity.length - 1] - a.activity[a.activity.length - 1]);
-    return result;
-  } else if (config.groupBy === 'org') {    // group by org
-    const orgMap = new Map<string, { activity: number[]; details: any[] }>();
-    for (const v of resultMap.values()) {
-      if (!orgMap.has(v.org_login)) orgMap.set(v.org_login, { activity: [0], details: [{
-        issue_comment: 0,
-        open_issue: 0,
-        open_pull: 0,
-        review_comment: 0,
-        merged_pull: 0,
-      }]});
-      orgMap.set(v.org_login, addValues(orgMap.get(v.org_login)!, v)!);
-    }
-    const result = Array.from(orgMap.entries()).map(i => {
-      return {
-        name: i[0],
-        ...i[1],
-      }
-    }).sort((a, b) => b.activity[b.activity.length - 1] - a.activity[a.activity.length - 1]);
-    return result;
-  } else {    // group by label
-    const labelData = getLabelData()?.filter(l => l.type === config.groupBy);
-    if (!labelData || labelData.length === 0) return null;
-    const labelMap = new Map<string, { activity: number[]; details: any[] }>();
-    for (const v of resultMap.values()) {
-      const label = labelData.find(l => l.githubRepos.includes(parseInt(v.id.toString())) || l.githubOrgs.includes(parseInt(v.org_id.toString())))?.name;
-      if (!label) {
-        console.log(`Not found label for ${v.id}`);
-        continue;
-      }
-      if (!labelMap.has(label)) labelMap.set(label, {
-        activity: v.activity,
-        details: v.details,
-      });
-      else labelMap.set(label, addValues(labelMap.get(label)!, v)!);
-    }
-    const result = Array.from(labelMap.entries()).map(i => {
-      return {
-        name: i[0],
-        ...i[1],
-      }
-    }).sort((a, b) => b.activity[b.activity.length - 1] - a.activity[a.activity.length - 1]);
-    return result;
-  }
+  });
 }
 
-export const getUserActivityWithDetail = async (config: QueryConfig) => {
-  config = getMergedConfig(config);
-  const whereClauses: string[] = [];
+export const getUserActivityWithDetail = async (config: QueryConfig, withBot: boolean = true) => {
+    config = getMergedConfig(config);
+  const whereClauses: string[] = ["type IN ('IssuesEvent', 'IssueCommentEvent', 'PullRequestEvent', 'PullRequestReviewCommentEvent')"]; // specify types to reduce memory usage and calculation
   const userWhereClause = getUserWhereClauseForClickhouse(config);
   if (userWhereClause) whereClauses.push(userWhereClause);
+  whereClauses.push(getTimeRangeWhereClauseForClickhouse(config));
 
-  const clickhouseActivityQuery = (whereClauses: string[], percision: number, order: string, limit: number) => {
-  return `SELECT actor_id AS id, anyHeavy(actor_login) AS login, ROUND(SUM(activity),${percision}) AS activity, SUM(issue_comment) AS issue_comment, SUM(open_issue) AS open_issue, SUM(open_pull) AS open_pull, SUM(review_comment) AS review_comment, SUM(merged_pull) AS merged_pull FROM
-  (SELECT repo_id,
-    if(type='PullRequestEvent' AND action='closed' AND pull_merged=1, issue_author_id, actor_id) AS actor_id,
-    argMax(if(type= 'PullRequestEvent' AND action= 'closed' AND pull_merged= 1, issue_author_login, actor_login), created_at) AS actor_login,
-    countIf(type='IssueCommentEvent' AND action='created') AS issue_comment,
-    countIf(type='IssuesEvent' AND action='opened')  AS open_issue,
-    countIf(type='PullRequestEvent' AND action='opened') AS open_pull,
-    countIf(type='PullRequestReviewCommentEvent' AND action='created') AS review_comment,
-    countIf(type='PullRequestEvent' AND action='closed' AND pull_merged=1) AS merged_pull,
-    sqrt(${ISSUE_COMMENT_WEIGHT}*issue_comment + ${OPEN_ISSUE_WEIGHT}*open_issue + ${OPEN_PULL_WEIGHT}*open_pull + ${REVIEW_COMMENT_WEIGHT}*review_comment + ${PULL_MERGED_WEIGHT}*merged_pull) AS activity
-  FROM github_log.events
-${whereClauses.length > 0 ? 'WHERE ' + whereClauses.join(' AND ') : ''}
-GROUP BY repo_id, actor_id
-HAVING activity > 0)
-GROUP BY actor_id
-ORDER BY activity ${order}
-${limit > 0 ? `LIMIT ${limit}` : ''}`;
-};
-  let processCount = 0;
-  const resultMap = new Map<string, { id: number; login: string; activity: number[]; details: any[] }>();
-  const processRow = (row: any) => {
-    if (!resultMap.has(row.id)) {
-      resultMap.set(row.id, { id: row.id, login: row.login, activity: [], details: [] });
-      for (let i = 0; i < processCount; i++) {
-        resultMap.get(row.id)!.activity.push(0);
-        resultMap.get(row.id)!.details.push({
-          issue_comment: 0,
-          open_issue: 0,
-          open_pull: 0,
-          review_comment: 0,
-          merged_pull: 0,
-        });
-      }
+  const sql = `
+SELECT
+  id,
+  argMax(name, time) AS name,
+  ${getGroupArrayInsertAtClauseForClickhouse(config, 'activity')},
+  ${getGroupArrayInsertAtClauseForClickhouse(config, 'issue_comment')},
+  ${getGroupArrayInsertAtClauseForClickhouse(config, 'open_issue')},
+  ${getGroupArrayInsertAtClauseForClickhouse(config, 'open_pull')},
+  ${getGroupArrayInsertAtClauseForClickhouse(config, 'review_comment')},
+  ${getGroupArrayInsertAtClauseForClickhouse(config, 'merged_pull')}
+FROM
+(
+  SELECT
+    ${getGroupTimeAndIdClauseForClickhouse(config, 'actor')},
+    ROUND(SUM(activity), 2) AS activity,
+    SUM(issue_comment) AS issue_comment,
+    SUM(open_issue) AS open_issue,
+    SUM(open_pull) AS open_pull,
+    SUM(review_comment) AS review_comment,
+    SUM(merged_pull) AS merged_pull
+  FROM
+  (
+    SELECT 
+      toStartOfMonth(created_at) AS month,
+      repo_id,
+      if(type='PullRequestEvent' AND action='closed' AND pull_merged=1, issue_author_id, actor_id) AS actor_id,
+      argMax(if(type='PullRequestEvent' AND action='closed' AND pull_merged=1, issue_author_login, actor_login), created_at) AS actor_login,
+      countIf(type='IssueCommentEvent' AND action='created') AS issue_comment,
+      countIf(type='IssuesEvent' AND action='opened')  AS open_issue,
+      countIf(type='PullRequestEvent' AND action='opened') AS open_pull,
+      countIf(type='PullRequestReviewCommentEvent' AND action='created') AS review_comment,
+      countIf(type='PullRequestEvent' AND action='closed' AND pull_merged=1) AS merged_pull,
+      sqrt(${ISSUE_COMMENT_WEIGHT}*issue_comment + ${OPEN_ISSUE_WEIGHT}*open_issue + ${OPEN_PULL_WEIGHT}*open_pull + ${REVIEW_COMMENT_WEIGHT}*review_comment + ${PULL_MERGED_WEIGHT}*merged_pull) AS activity
+    FROM github_log.events
+    WHERE ${whereClauses.join(' AND ')}
+    GROUP BY repo_id, actor_id, month
+    HAVING activity > 0 ${ withBot ? '' : `AND actor_login NOT LIKE '%[bot]'` }
+  )
+  GROUP BY id, time
+  ${config.limit > 0 ? `ORDER BY activity DESC LIMIT ${config.limit} BY time` : ''}
+)
+GROUP BY id
+ORDER BY activity[-1] ${config.order}
+FORMAT JSONCompact`;
+
+  const result: any = await clickhouse.query(sql);
+  return result.map(row => {
+    const [ id, name, activity, issue_comment, open_issue, open_pull, review_comment, merged_pull ] = row;
+    return {
+      id,
+      name,
+      activity,
+      issue_comment,
+      open_issue,
+      open_pull,
+      review_comment,
+      merged_pull,
     }
-    resultMap.get(row.id)!.login = row.login;
-    resultMap.get(row.id)!.activity.push(row.activity);
-    resultMap.get(row.id)!.details.push({
-      issue_comment: row.issue_comment,
-      open_issue: row.open_issue,
-      open_pull: row.open_pull,
-      review_comment: row.review_comment,
-      merged_pull: row.merged_pull,
-    });
-  };
-  const fillResultMap = () => {
-    for (const v of resultMap.values()) {
-      while (v.activity.length < processCount) {
-        v.activity.push(0);
-        v.details.push({
-          issue_comment:  0,
-          open_issue: 0,
-          open_pull: 0,
-          review_comment: 0,
-          merged_pull: 0,
-        });
-      }
-    }
-  };
-
-  // handle the groupTimeRange config
-  // monthly
-  if (config.groupTimeRange == 'month') {
-    await forEveryMonthByConfig(config, async (y, m) => {
-      const q = clickhouseActivityQuery([...whereClauses, `toYear(created_at) = ${y}`, `toMonth(created_at) = ${m}`], config.percision, config.order, config.limit);
-      const monthResult = await clickhouse.query<any[]>(q);
-      monthResult.forEach(processRow);
-      processCount++;
-      fillResultMap();
-    });
-  }
-
-  // yearly
-  if (config.groupTimeRange == 'year') {
-    for (let year = config.startYear; year <= config.endYear; year++) {
-      let monthWhereClause: string = '';
-      if (year === config.startYear) {
-        monthWhereClause = `toMonth(created_at) >= ${config.startMonth}`;
-      } else if (year === config.endYear) {
-        monthWhereClause = `toMonth(created_at) <= ${config.endMonth}`;
-      }
-      const q = clickhouseActivityQuery([...whereClauses, `toYear(created_at) = ${year}`, monthWhereClause].filter(i => i !== ''), config.percision, config.order, config.limit);
-      const yearResult = await clickhouse.query<any[]>(q);
-      yearResult.forEach(processRow);
-      processCount++;
-      fillResultMap();
-    }
-  }
-
-  // quarterly
-  if (config.groupTimeRange == 'quarter') {
-    for (let year = config.startYear; year <= config.endYear; year++) {
-      for (let quarter = 1; quarter <= 4; quarter++) {
-        let quarterWhereClause: string = `toQuarter(created_at) = ${quarter}`;
-        if (year === config.startYear) {
-          quarterWhereClause += ` AND toMonth(created_at) >= ${config.startMonth}`;
-        } else if (year === config.endYear) {
-          quarterWhereClause += ` AND toMonth(created_at) <= ${config.endMonth}`;
-        }
-        const q = clickhouseActivityQuery([...whereClauses, `toYear(created_at) = ${year}`, quarterWhereClause].filter(i => i !== ''), config.percision, config.order, config.limit);
-        const quarterResult = await clickhouse.query<any[]>(q);
-        quarterResult.forEach(processRow);
-        processCount++;
-        fillResultMap();
-      }
-    }
-  }
-
-  const result = Array.from(resultMap.values()).sort((a, b) => b.activity[b.activity.length - 1] - a.activity[a.activity.length - 1]);
-  return result;
+  });
 }
