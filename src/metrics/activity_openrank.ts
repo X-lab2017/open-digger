@@ -25,10 +25,10 @@ export const getRepoActivityOrOpenrank = async (config: QueryConfig, type: 'acti
   const timeWhereClause = await getTimeRangeWhereClauseForNeo4j(config, 'r');
   const timeActivityOrOpenrankClause = getTimeRangeSumClauseForNeo4j(config, `r.${type}`);
   if (!config.groupBy) {
-    const query = `MATCH (r:Repo) WHERE ${repoWhereClause ? repoWhereClause + ' AND ' : ''} ${timeWhereClause} RETURN r.name AS repo_name, r.org_login AS org, [${(await timeActivityOrOpenrankClause).join(',')}] AS ${type} ORDER BY reverse(${type}) ${config.order} LIMIT ${config.limit};`;
+    const query = `MATCH (r:Repo) WHERE ${repoWhereClause ? repoWhereClause + ' AND ' : ''} ${timeWhereClause} RETURN r.name AS repo_name, r.org_login AS org, [${(await timeActivityOrOpenrankClause).join(',')}] AS ${type} ORDER BY reverse(${type}) ${config.order} ${config.limit > 0 ? `LIMIT ${config.limit}` : ''};`;
     return neo4j.query(query);
   } else if (config.groupBy === 'org') {
-    const query = `MATCH (r:Repo) WHERE ${repoWhereClause ? repoWhereClause + ' AND ' : ''} ${timeWhereClause} RETURN r.org_login AS org_login, count(r.id) AS repo_count, [${(await timeActivityOrOpenrankClause).map(i => `round(SUM(${i}), ${config.percision})`)}] AS ${type} ORDER BY reverse(${type}) ${config.order} LIMIT ${config.limit};`;
+    const query = `MATCH (r:Repo) WHERE ${repoWhereClause ? repoWhereClause + ' AND ' : ''} ${timeWhereClause} RETURN r.org_login AS org_login, count(r.id) AS repo_count, [${(await timeActivityOrOpenrankClause).map(i => `round(SUM(${i}), ${config.percision})`)}] AS ${type} ORDER BY reverse(${type}) ${config.order} ${config.limit > 0 ? `LIMIT ${config.limit}` : ''};`;
     return neo4j.query(query);
   } else {
     const query = `MATCH (r:Repo) WHERE ${repoWhereClause ? repoWhereClause + ' AND ' : ''} ${timeWhereClause} RETURN r.id AS repo_id, r.org_id AS org_id, [${(await timeActivityOrOpenrankClause).join(',')}] AS ${type};`;
