@@ -225,14 +225,14 @@ export const getLabelGroupConditionClauseForClickhouse = (config: QueryConfig): 
   return `arrayJoin(multiIf(${conditions}, ['Others']))`;
 }
 
-export const getGroupArrayInsertAtClauseForClickhouse = (config: QueryConfig, key: string, defaultValue: string = '0'): string => {
-  return `groupArrayInsertAt(${defaultValue})(${key}, ${(() => {
+export const getGroupArrayInsertAtClauseForClickhouse = (config: QueryConfig, option: { key: string; defaultValue?: string; value?: string; }): string => {
+  return `groupArrayInsertAt(${ option.defaultValue ? option.defaultValue : '0' })(${ option.value ? option.value : option.key }, ${(() => {
     if (!config.groupTimeRange) return '0';
     let startTime = `toDate('${config.startYear}-${config.startMonth}-1')`;
     if (config.groupTimeRange === 'quarter') startTime = `toStartOfQuarter(${startTime})`;
     else if (config.groupTimeRange === 'year') startTime = `toStartOfYear(${startTime})`;
     return `toUInt32(dateDiff('${config.groupTimeRange}', ${startTime}, time))`;
-  })()}) AS ${key}`
+  })()}) AS ${option.key}`
 }
 
 export const getGroupTimeAndIdClauseForClickhouse = (config: QueryConfig, type: string = 'repo'): string => {
