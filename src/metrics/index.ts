@@ -1,12 +1,16 @@
 import { getRepoActivityOrOpenrank, getRepoActivityWithDetail, getUserActivityOrOpenrank, getUserActivityWithDetail } from './activity_openrank';
+import { chaossIssuesNew } from './chaoss';
 import { getRelatedUsers } from './related_users';
 
 module.exports = {
+  // index
   getRepoActivity: config => getRepoActivityOrOpenrank(config, 'activity'),
-  getRepoActivityWithDetail: config => getRepoActivityWithDetail(config),
+  getRepoActivityWithDetail: getRepoActivityWithDetail,
   getRepoOpenrank: config => getRepoActivityOrOpenrank(config, 'open_rank'),
   getRelatedUsers: getRelatedUsers,
   getUserActivity: config => getUserActivityOrOpenrank(config, 'activity'),
-  getUserActivityWithDetail: config => getUserActivityWithDetail(config),
+  getUserActivityWithDetail: getUserActivityWithDetail,
   getUserOpenrank: config => getUserActivityOrOpenrank(config, 'open_rank'),
+  // chaoss metrics
+  chaossIssuesNew: chaossIssuesNew,
 }

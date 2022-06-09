@@ -26,7 +26,9 @@ const openDigger = {
     }
   },
   metric: {
-    
+    chaoss: {
+      issuesNew: func.chaossIssuesNew
+    }
   },
   relation: {
     getRelatedUsers: func.getRelatedUsers,

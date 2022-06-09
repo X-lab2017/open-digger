@@ -81,12 +81,12 @@ export const getRepoActivityWithDetail = async (config: QueryConfig) => {
 SELECT
   id,
   argMax(name, time) AS name,
-  ${getGroupArrayInsertAtClauseForClickhouse(config, 'activity')},
-  ${getGroupArrayInsertAtClauseForClickhouse(config, 'issue_comment')},
-  ${getGroupArrayInsertAtClauseForClickhouse(config, 'open_issue')},
-  ${getGroupArrayInsertAtClauseForClickhouse(config, 'open_pull')},
-  ${getGroupArrayInsertAtClauseForClickhouse(config, 'review_comment')},
-  ${getGroupArrayInsertAtClauseForClickhouse(config, 'merged_pull')}
+  ${getGroupArrayInsertAtClauseForClickhouse(config, { key: 'activity' })},
+  ${getGroupArrayInsertAtClauseForClickhouse(config, { key: 'issue_comment' })},
+  ${getGroupArrayInsertAtClauseForClickhouse(config, { key: 'open_issue' })},
+  ${getGroupArrayInsertAtClauseForClickhouse(config, { key: 'open_pull' })},
+  ${getGroupArrayInsertAtClauseForClickhouse(config, { key: 'review_comment' })},
+  ${getGroupArrayInsertAtClauseForClickhouse(config, { key: 'merged_pull' })}
 FROM
 (
   SELECT
@@ -139,7 +139,7 @@ FORMAT JSONCompact`;  // use JSONCompact to reduce network I/O
 }
 
 export const getUserActivityWithDetail = async (config: QueryConfig, withBot: boolean = true) => {
-    config = getMergedConfig(config);
+  config = getMergedConfig(config);
   const whereClauses: string[] = ["type IN ('IssuesEvent', 'IssueCommentEvent', 'PullRequestEvent', 'PullRequestReviewCommentEvent')"]; // specify types to reduce memory usage and calculation
   const userWhereClause = getUserWhereClauseForClickhouse(config);
   if (userWhereClause) whereClauses.push(userWhereClause);
@@ -149,12 +149,12 @@ export const getUserActivityWithDetail = async (config: QueryConfig, withBot: bo
 SELECT
   id,
   argMax(name, time) AS name,
-  ${getGroupArrayInsertAtClauseForClickhouse(config, 'activity')},
-  ${getGroupArrayInsertAtClauseForClickhouse(config, 'issue_comment')},
-  ${getGroupArrayInsertAtClauseForClickhouse(config, 'open_issue')},
-  ${getGroupArrayInsertAtClauseForClickhouse(config, 'open_pull')},
-  ${getGroupArrayInsertAtClauseForClickhouse(config, 'review_comment')},
-  ${getGroupArrayInsertAtClauseForClickhouse(config, 'merged_pull')}
+  ${getGroupArrayInsertAtClauseForClickhouse(config, { key: 'activity' })},
+  ${getGroupArrayInsertAtClauseForClickhouse(config, { key: 'issue_comment' })},
+  ${getGroupArrayInsertAtClauseForClickhouse(config, { key: 'open_issue' })},
+  ${getGroupArrayInsertAtClauseForClickhouse(config, { key: 'open_pull' })},
+  ${getGroupArrayInsertAtClauseForClickhouse(config, { key: 'review_comment' })},
+  ${getGroupArrayInsertAtClauseForClickhouse(config, { key: 'merged_pull' })}
 FROM
 (
   SELECT
