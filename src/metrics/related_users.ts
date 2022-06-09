@@ -1,4 +1,4 @@
-import { QueryConfig, getMergedConfig, getRepoWhereClauseForNeo4j, getTimeRangeWhereClauseForNeo4j, getTimeRangeSumClauseForNeo4j } from "./basic";
+import { QueryConfig, getMergedConfig, getRepoWhereClauseForNeo4j, getTimeRangeWhereClauseForNeo4j, getTimeRangeSumClauseForNeo4j } from './basic';
 import * as neo4j from '../db/neo4j'
 
 export const getRelatedUsers = async (config: QueryConfig) => {

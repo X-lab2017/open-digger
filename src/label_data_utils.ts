@@ -1,6 +1,6 @@
-import { readdirSync, statSync } from "fs";
-import path from "path";
-import { readFileAsObj } from "./utils";
+import { readdirSync, statSync } from 'fs';
+import path from 'path';
+import { readFileAsObj } from './utils';
 
 const labelInputDir = '../labeled_data';
 const labelInputPath = path.join(__dirname, labelInputDir);

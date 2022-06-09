@@ -9,13 +9,11 @@
   },
   "scripts": {
     "build": "tsc",
-    "test": "npm run clean && npm run build && RUN_TYPE=test node src/index.js",
-    "ci": "npm run clean && npm run build && RUN_TYPE=ci GITHUB_LOG_URL=$CLICKHOUSE_QUERY_URL node src/index.js",
-    "publish": "npm run clean && npm run build && RUN_TYPE=publish GITHUB_LOG_URL=$CLICKHOUSE_QUERY_URL node src/index.js",
     "data-docker": "docker pull docker-hub.x-lab.info/opendigger/github-sample-log:2.202105 && docker start github-sample-log || docker run -d --name github-sample-log -p 8123:8123 -p 9000:9000 --ulimit nofile=262144:262144 docker-hub.x-lab.info/opendigger/github-sample-log:2.202105",
     "notebook": "npm run build && docker pull docker-hub.x-lab.info/opendigger/open-digger-jupyter-nodejs:1.0 && docker run -it --rm -p 8888:8888 -v $(pwd):/home/node/notebook docker-hub.x-lab.info/opendigger/open-digger-jupyter-nodejs:1.0",
     "notebook:win": "npm run build && docker pull docker-hub.x-lab.info/opendigger/open-digger-jupyter-nodejs:1.0 && docker run -it --rm -p 8888:8888 -v %cd%:/home/node/notebook docker-hub.x-lab.info/opendigger/open-digger-jupyter-nodejs:1.0",
     "pull-label-file-test": "tsc && node lib/ci/pull_label_file_test.js",
+    "cron": "npm run build && node lib/cron/index.js",
     "clean": "rm -rf dist"
   },
   "repository": {

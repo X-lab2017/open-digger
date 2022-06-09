@@ -45,9 +45,13 @@ const task: Task = {
     console.log(`Get chinese user month activity data done, count=${chineseUserMonthActivityData.length}`);
     const chineseUserMonthActivityMap = rankData(chineseUserMonthActivityData!, allMonthes, (item, _, index) => item.activity[index], (item, index) => {
       return {
-        name: item.login,
+        name: item.name,
         id: item.id,
-        ...item.details[index],
+        issue_comment: item.issue_comment[index],
+        open_issue: item.open_issue[index],
+        open_pull: item.open_pull[index],
+        review_comment: item.review_comment[index],
+        merged_pull: item.merged_pull[index],
       }
     });
     for (const k of chineseUserMonthActivityMap.keys()) {
@@ -65,9 +69,13 @@ const task: Task = {
     console.log(`Get chinese user year activity data done, count=${chineseUserYearActivityData.length}`);
     const chineseUserYearActivityMap = rankData(chineseUserYearActivityData!, allYears, (item, _, index) => item.activity[index], (item, index) => {
       return {
-        name: item.login,
+        name: item.name,
         id: item.id,
-        ...item.details[index],
+        issue_comment: item.issue_comment[index],
+        open_issue: item.open_issue[index],
+        open_pull: item.open_pull[index],
+        review_comment: item.review_comment[index],
+        merged_pull: item.merged_pull[index],
       }
     });
     for (const k of chineseUserYearActivityMap.keys()) {
@@ -81,13 +89,17 @@ const task: Task = {
       startYear, startMonth, endYear, endMonth,
       order: 'DESC', limit, percision: 2,
       groupTimeRange: 'month',
-    });
+    }, false);
     console.log(`Get global user month activity data done, count=${globalUserMonthActivityData.length}`);
     const globalUserMonthActivityMap = rankData(globalUserMonthActivityData!, allMonthes, (item, _, index) => item.activity[index], (item, index) => {
       return {
-        name: item.login,
+        name: item.name,
         id: item.id,
-        ...item.details[index],
+        issue_comment: item.issue_comment[index],
+        open_issue: item.open_issue[index],
+        open_pull: item.open_pull[index],
+        review_comment: item.review_comment[index],
+        merged_pull: item.merged_pull[index],
       }
     });
     for (const k of globalUserMonthActivityMap.keys()) {
@@ -99,13 +111,17 @@ const task: Task = {
       startYear, startMonth, endYear, endMonth,
       order: 'DESC', limit, percision: 2,
       groupTimeRange: 'year',
-    });
+    }, false);
     console.log(`Get global user year activity data done, count=${globalUserYearActivityData.length}`);
     const globalUserYearActivityMap = rankData(globalUserYearActivityData!, allYears, (item, _, index) => item.activity[index], (item, index) => {
       return {
-        name: item.login,
+        name: item.name,
         id: item.id,
-        ...item.details[index],
+        issue_comment: item.issue_comment[index],
+        open_issue: item.open_issue[index],
+        open_pull: item.open_pull[index],
+        review_comment: item.review_comment[index],
+        merged_pull: item.merged_pull[index],
       }
     });
     for (const k of globalUserYearActivityMap.keys()) {
@@ -127,7 +143,11 @@ const task: Task = {
     const chineseCompanyMonthActivityMap = rankData(chineseCompanyMonthActivityData!, allMonthes, (item, _, index) => item.activity[index], (item, index) => {
       return {
         name: item.name,
-        ...item.details[index],
+        issue_comment: item.issue_comment[index],
+        open_issue: item.open_issue[index],
+        open_pull: item.open_pull[index],
+        review_comment: item.review_comment[index],
+        merged_pull: item.merged_pull[index],
       }
     });
     for (const k of chineseCompanyMonthActivityMap.keys()) {
@@ -147,7 +167,11 @@ const task: Task = {
     const chineseCompanyYearActivityMap = rankData(chineseCompanyYearActivityData!, allYears, (item, _, index) => item.activity[index], (item, index) => {
       return {
         name: item.name,
-        ...item.details[index],
+        issue_comment: item.issue_comment[index],
+        open_issue: item.open_issue[index],
+        open_pull: item.open_pull[index],
+        review_comment: item.review_comment[index],
+        merged_pull: item.merged_pull[index],
       }
     });
     for (const k of chineseCompanyYearActivityMap.keys()) {
@@ -169,7 +193,11 @@ const task: Task = {
     const globalCompanyMonthActivityMap = rankData(globalCompanyMonthActivityData!, allMonthes, (item, _, index) => item.activity[index], (item, index) => {
       return {
         name: item.name,
-        ...item.details[index],
+        issue_comment: item.issue_comment[index],
+        open_issue: item.open_issue[index],
+        open_pull: item.open_pull[index],
+        review_comment: item.review_comment[index],
+        merged_pull: item.merged_pull[index],
       }
     });
     for (const k of globalCompanyMonthActivityMap.keys()) {
@@ -189,7 +217,11 @@ const task: Task = {
     const globalCompanyYearActivityMap = rankData(globalCompanyYearActivityData!, allYears, (item, _, index) => item.activity[index], (item, index) => {
       return {
         name: item.name,
-        ...item.details[index],
+        issue_comment: item.issue_comment[index],
+        open_issue: item.open_issue[index],
+        open_pull: item.open_pull[index],
+        review_comment: item.review_comment[index],
+        merged_pull: item.merged_pull[index],
       }
     });
     for (const k of globalCompanyYearActivityMap.keys()) {
@@ -209,7 +241,11 @@ const task: Task = {
     const globalRepoMonthActivityMap = rankData(globalRepoMonthActivityData!, allMonthes, (item, _, index) => item.activity[index], (item, index) => {
       return {
         name: item.name,
-        ...item.details[index],
+        issue_comment: item.issue_comment[index],
+        open_issue: item.open_issue[index],
+        open_pull: item.open_pull[index],
+        review_comment: item.review_comment[index],
+        merged_pull: item.merged_pull[index],
       }
     });
     for (const k of globalRepoMonthActivityMap.keys()) {
@@ -226,7 +262,11 @@ const task: Task = {
     const globalRepoYearActivityMap = rankData(globalRepoYearActivityData!, allYears, (item, _, index) => item.activity[index], (item, index) => {
       return {
         name: item.name,
-        ...item.details[index],
+        issue_comment: item.issue_comment[index],
+        open_issue: item.open_issue[index],
+        open_pull: item.open_pull[index],
+        review_comment: item.review_comment[index],
+        merged_pull: item.merged_pull[index],
       }
     });
     for (const k of globalRepoYearActivityMap.keys()) {
@@ -247,7 +287,11 @@ const task: Task = {
     const chineseRepoMonthActivityMap = rankData(chineseRepoMonthActivityData!, allMonthes, (item, _, index) => item.activity[index], (item, index) => {
       return {
         name: item.name,
-        ...item.details[index],
+        issue_comment: item.issue_comment[index],
+        open_issue: item.open_issue[index],
+        open_pull: item.open_pull[index],
+        review_comment: item.review_comment[index],
+        merged_pull: item.merged_pull[index],
       }
     });
     for (const k of chineseRepoMonthActivityMap.keys()) {
@@ -265,7 +309,11 @@ const task: Task = {
     const chineseRepoYearActivityMap = rankData(chineseRepoYearActivityData!, allYears, (item, _, index) => item.activity[index], (item, index) => {
       return {
         name: item.name,
-        ...item.details[index],
+        issue_comment: item.issue_comment[index],
+        open_issue: item.open_issue[index],
+        open_pull: item.open_pull[index],
+        review_comment: item.review_comment[index],
+        merged_pull: item.merged_pull[index],
       }
     });
     for (const k of chineseRepoYearActivityMap.keys()) {
