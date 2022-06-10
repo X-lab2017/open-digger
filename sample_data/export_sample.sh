@@ -41,16 +41,21 @@ if [ "$need_to_export" -eq 1 ]; then
     export_sql="$(cat $sql_file) INTO OUTFILE '$data_path/data' FORMAT Native"
     $QUERY_REMOTE -q "$export_sql"
     echo "Export data done."
-
-    # compress data
-    tar zcf $data_path/data.tar.gz $data_path/data $data_path/table
 else
     echo "Skip data export."
 fi
 
+cd $data_path
+
+if [ ! -s 'data.tar.gz' ]; then
+    # compress data
+    echo "Start to compress data"
+    tar zcf data.tar.gz data table
+    echo "Compress data done"
+fi
+
 # upload to oss
 echo "Goona upload to OSS."
-ossutil cp $data_path/data.tar.gz oss://xlab-open-source/sample_data/$tag.tar.gz --config-file=~/.ossutilconfig-xlab -f
+ossutil cp data.tar.gz oss://xlab-open-source/sample_data/$tag.tar.gz --config-file=~/.ossutilconfig-xlab -f
 
 echo "Process done."
-
