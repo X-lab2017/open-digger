@@ -12,14 +12,14 @@ To use sample data from OSS service, you need to follow the steps:
 - Extract data from archive file. `tar -zxvf data.tar.gz`
 - Use ClickHouse base image with extracted data to initialize the database. The extracted `data` and `table` file should be mounted into `/data/` folder into the container. Refer `start_server.sh` to start the container. The data is ready until message `Insert data done.` logged into container console, stop and restart the same container instance will not import data again.
 
-To use the sample data, at minimum 3 GB memory should be allocated to the container instance.
+To use the sample data, at minimum 8 GB memory should be allocated to the container instance.
 
 ### Current sample datasets
 
 | Data | Description | SQL | Record counts | Uncompressed size | Compressed size | Imported size(est.) | Import time(est.) |
 |:---|:---|:---|:---|:---|:---|:---|:---|
 | [2020_full](https://oss.x-lab.info/sample_data/2020_full.tar.gz) | All records from year 2020 | sql_files/2020_full.sql | 855 million | 802 GB | 81 GB | 121 GB | 7 h |
-| [2015_2021_top_50_year](https://oss.x-lab.info/sample_data/2015_2021_top50_year.tar.gz) | Top 50 most active repos from year 2015 to 2021 for every year | sql_files/2015_2021_top50_year.sql | 125 million | 88 GB | 6.6 GB | 10 GB | 40 m |
+| [2015_2021_top_50_year](https://oss.x-lab.info/sample_data/2015_2021_top50_year.tar.gz) | Top 50 most active repos from year 2015 to 2021 for every year | sql_files/2015_2021_top50_year.sql | 168 million | 117 GB | 8.4 GB | 13 GB | 50 m |
 | [second_sample](https://oss.x-lab.info/sample_data/second_sample.tar.gz) | All events log sample by 1 second in a hour | sql_files/second_sample.sql | 62 million | 57 GB | 10 GB | 14 GB | 25 m |
 
 ### ClickHouse server image
