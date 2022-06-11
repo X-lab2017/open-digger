@@ -33,12 +33,12 @@ fi
 if [ "$need_to_export" -eq 1 ]; then
     # export table schema
     echo "Start to export table schema"
-    $QUERY_REMOTE -q "SHOW CREATE TABLE github_log.events INTO OUTFILE '$data_path/table' FORMAT TabSeparatedRaw"
+    $QUERY_REMOTE -q "SHOW CREATE TABLE github_log.events INTO OUTFILE '$data_path/table' FORMAT TabSeparatedRaw;"
     echo "Table schema exported"
 
     # export data
     echo "Start to export data"
-    export_sql="$(cat $sql_file) INTO OUTFILE '$data_path/data' FORMAT Native"
+    export_sql="$(cat $sql_file) INTO OUTFILE '$data_path/data' FORMAT Native;"
     $QUERY_REMOTE -q "$export_sql"
     echo "Export data done."
 else
