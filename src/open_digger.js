@@ -23,6 +23,9 @@ const openDigger = {
     openrank: {
       getRepoOpenrank: func.getRepoOpenrank,
       getUserOpenrank: func.getUserOpenrank,
+    },
+    attention: {
+      getAttention: func.getAttention,
     }
   },
   metric: {
