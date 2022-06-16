@@ -30,6 +30,26 @@ To use the sample data, at minimum 8 GB memory should be allocated to the contai
 
 ### Use Notebook image
 
+1. Start the Clickhouse server container.
+
+2. Go to the src folder in the open-digger root directory, create a file named 'local_config.ts' with the following contents:
+
+   ```typescript
+   export default {
+       db: {
+           clickhouse: {
+                host: '172.17.0.1'
+           }
+       }
+   }
+   ```
+
+3. Use `npm run notebook` to use Notebook image if you use Linux/MacOS system, or to use `npm run notebook:win ` if you use Windows system.
+
+4. Open the link in console log like `http://127.0.0.1:8888/lab?token=xxxxx`.
+
+5. If the source code under `src` folder changed, you need to use `npm run build` and restart the notebook kernel to reload the sorce code.
+
 ## Create sample data
 
 ### Export sample data
