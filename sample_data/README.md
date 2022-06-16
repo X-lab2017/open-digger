@@ -30,11 +30,11 @@ To use the sample data, at minimum 8 GB memory should be allocated to the contai
 
 ### Use Notebook image
 
-1. Use `docker start 2020_full_ch_server` to start the container.
+1. Start the Clickhouse server container.
 
 2. Go to the src folder in the open-digger root directory, create a file named 'local_config.ts' with the following contents:
 
-   ```python
+   ```typescript
    export default {
        db: {
            clickhouse: {
@@ -44,11 +44,11 @@ To use the sample data, at minimum 8 GB memory should be allocated to the contai
    }
    ```
 
-3. Use `npm run build` to build the project.
+3. Use `npm run notebook` to use Notebook image if you use Linux/MacOS system, or to use `npm run notebook:win ` if you use Windows system.
 
-4. Use `npm run notebook` to use Notebook image if you use Linux system, or to use `npm run notebook:win ` if you use Windows system.
+4. Open the link in console log like `http://127.0.0.1:8888/lab?token=xxxxx`.
 
-5. Copy the link like this `http://127.0.0.1:8888/lab?token=b42153dde6646e5c07ac5f4a7d87e9173f22d5cb1d60984f` to the browser.
+5. If the source code under `src` folder changed, you need to use `npm run build` and restart the notebook kernel to reload the sorce code.
 
 ## Create sample data
 
