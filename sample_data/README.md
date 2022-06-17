@@ -8,9 +8,10 @@ We can use ClickHouse online service with full data access to make ClikcHouse sa
 
 To use sample data from OSS service, you need to follow the steps:
 
-- Download data from OSS.
-- Extract data from archive file. `tar -zxvf data.tar.gz`
-- Use ClickHouse base image with extracted data to initialize the database. The extracted `data` and `table` file should be mounted into `/data/` folder into the container. Refer `start_server.sh` to start the container. The data is ready until message `Insert data done.` logged into container console, stop and restart the same container instance will not import data again.
+- Download data from OSS. We provide several sample datasets in the table below. 
+- Extract data from archive file to a folder: `tar -zxvf data.tar.gz -C ./folder_path`. You will get a `table` and a `data` file.
+- Use ClickHouse base image with extracted data to initialize the database. The extracted `data` and `table` file should be mounted into `/data/` folder into the container, here is an example: `docker run -d --name container_name -m 6G -p 8123:8123 -p 9000:9000 --ulimit nofile=262144:262144 --volume=./folder_path/:/data/ open-digger-clickhouse-base:v1`
+- The data is ready until message `Insert data done.` logged into container console. Now the Clickhouse container is running. Stop and restart the same container instance will not import data again.
 
 To use the sample data, at minimum 8 GB memory should be allocated to the container instance.
 
@@ -30,9 +31,15 @@ To use the sample data, at minimum 8 GB memory should be allocated to the contai
 
 ### Use Notebook image
 
-1. Start the Clickhouse server container.
+Start your ClickHouse container, which should be set up in the last step. Now:
 
-2. Go to the src folder in the open-digger root directory, create a file named 'local_config.ts' with the following contents:
+1. Clone OpenDigger `git clone https://github.com/X-lab2017/open-digger.git`
+
+2. Enter the repo path `cd open-digger`
+
+3. Install the necessary packages `npm install`
+
+4. Go to the src folder in the open-digger root directory, create a file named 'local_config.ts' with the following contents:
 
    ```typescript
    export default {
@@ -44,11 +51,13 @@ To use the sample data, at minimum 8 GB memory should be allocated to the contai
    }
    ```
 
-3. Use `npm run notebook` to use Notebook image if you use Linux/MacOS system, or to use `npm run notebook:win ` if you use Windows system.
+5. Use `npm run notebook` to use Notebook image if you use Linux/MacOS system, or to use `npm run notebook:win ` if you use Windows system.
 
-4. Open the link in console log like `http://127.0.0.1:8888/lab?token=xxxxx`.
+6. Open the link in console log like `http://127.0.0.1:8888/lab?token=xxxxx`.
 
-5. If the source code under `src` folder changed, you need to use `npm run build` and restart the notebook kernel to reload the sorce code.
+7. If the source code under `src` folder changed, you need to use `npm run build` and restart the notebook kernel to reload the sorce code.
+
+8. You can find the notebook folder, where we provide demos in the handbook. You can create a new file, and happy data exploring!
 
 ## Create sample data
 
