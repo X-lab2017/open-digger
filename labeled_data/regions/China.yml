@@ -33,6 +33,10 @@ data:
     - :companies/oneflow
     - :companies/taos
     - :companies/zilliz
+    - :companies/bytebase
+    - :companies/guojusoft
+    - :companies/koderover
+    - :companies/starrocks
     - :communities/openmmlab
     - :communities/xlab
     - :projects/skywalking
