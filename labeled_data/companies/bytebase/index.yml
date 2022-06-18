@@ -1,0 +1,5 @@
+name: Bytebase
+type: Company
+data:
+  github_org:
+    - 74386897 # org:bytebase

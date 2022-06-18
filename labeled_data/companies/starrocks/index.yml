@@ -1,0 +1,5 @@
+name: StarRocks
+type: Company
+data:
+  github_org:
+    - 88238841 # org:StarRocks
