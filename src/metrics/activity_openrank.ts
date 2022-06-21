@@ -90,7 +90,7 @@ SELECT
 FROM
 (
   SELECT
-    ${getGroupTimeAndIdClauseForClickhouse(config)},
+    ${getGroupTimeAndIdClauseForClickhouse(config, 'repo', 'month')},
     ROUND(SUM(activity), 2) AS activity,
     SUM(issue_comment) AS issue_comment,
     SUM(open_issue) AS open_issue,
@@ -158,7 +158,7 @@ SELECT
 FROM
 (
   SELECT
-    ${getGroupTimeAndIdClauseForClickhouse(config, 'actor')},
+    ${getGroupTimeAndIdClauseForClickhouse(config, 'actor', 'month')},
     ROUND(SUM(activity), 2) AS activity,
     SUM(issue_comment) AS issue_comment,
     SUM(open_issue) AS open_issue,
@@ -167,7 +167,7 @@ FROM
     SUM(merged_pull) AS merged_pull
   FROM
   (
-    SELECT 
+    SELECT
       toStartOfMonth(created_at) AS month,
       repo_id,
       if(type='PullRequestEvent' AND action='closed' AND pull_merged=1, issue_author_id, actor_id) AS actor_id,

@@ -28,7 +28,8 @@ const openDigger = {
   metric: {
     chaoss: {
       issuesNew: func.chaossIssuesNew,
-      issuesClosed: func.chaossIssuesClosed
+      issuesClosed: func.chaossIssuesClosed,
+      busFactor: func.chaossBusFactor,
     }
   },
   relation: {
