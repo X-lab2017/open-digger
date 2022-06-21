@@ -92,13 +92,13 @@
       {
         "name": "committer",
         "description": "Committer of the project",
-        "users": [ "will-ww", "frank-zsy", "gymgym1212", "xiaoya-Esther" ],
+        "users": [ "will-ww", "frank-zsy", "gymgym1212", "xiaoya-yaya" ],
         "commands": [ "/difficulty", "/approve" ]
       },
       {
         "name": "replier",
         "description": "Replier is responsible for reply issues in time",
-        "users": [ "gymgym1212", "xiaoya-Esther" ],
+        "users": [ "gymgym1212", "xiaoya-yaya" ],
         "commands": []
       },
       {
