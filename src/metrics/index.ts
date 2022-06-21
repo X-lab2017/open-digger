@@ -1,6 +1,5 @@
 import { getRepoActivityOrOpenrank, getRepoActivityWithDetail, getUserActivityOrOpenrank, getUserActivityWithDetail } from './activity_openrank';
-import { chaossIssuesNew } from './chaoss';
-import { chaossIssuesClosed } from './chaoss';
+import { chaossBusFactor, chaossIssuesNew, chaossIssuesClosed } from './chaoss';
 import { getRelatedUsers } from './related_users';
 
 module.exports = {
@@ -15,4 +14,5 @@ module.exports = {
   // chaoss metrics
   chaossIssuesNew: chaossIssuesNew,
   chaossIssuesClosed: chaossIssuesClosed,
+  chaossBusFactor: chaossBusFactor,
 }

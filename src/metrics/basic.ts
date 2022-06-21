@@ -19,6 +19,7 @@ export interface QueryConfig {
   percision: number;
   groupBy?: 'org' | string;
   groupTimeRange?: 'month' | 'quarter' | 'year';
+  options?: any;
 };
 
 export const getMergedConfig = (config: any): QueryConfig => {
@@ -226,7 +227,7 @@ export const getLabelGroupConditionClauseForClickhouse = (config: QueryConfig): 
 }
 
 export const getGroupArrayInsertAtClauseForClickhouse = (config: QueryConfig, option: { key: string; defaultValue?: string; value?: string; }): string => {
-  return `groupArrayInsertAt(${ option.defaultValue ? option.defaultValue : '0' })(${ option.value ? option.value : option.key }, ${(() => {
+  return `groupArrayInsertAt${ option.defaultValue ? `(${option.defaultValue})` : '' }(${ option.value ? option.value : option.key }, ${(() => {
     if (!config.groupTimeRange) return '0';
     let startTime = `toDate('${config.startYear}-${config.startMonth}-1')`;
     if (config.groupTimeRange === 'quarter') startTime = `toStartOfQuarter(${startTime})`;
@@ -235,21 +236,21 @@ export const getGroupArrayInsertAtClauseForClickhouse = (config: QueryConfig, op
   })()}) AS ${option.key}`
 }
 
-export const getGroupTimeAndIdClauseForClickhouse = (config: QueryConfig, type: string = 'repo'): string => {
+export const getGroupTimeAndIdClauseForClickhouse = (config: QueryConfig, type: string = 'repo', timeCol: string = 'created_at'): string => {
   return `${(() => {
     let groupEle = '1'; // no time range, aggregate all data to a single value
-    if (config.groupTimeRange === 'month') groupEle = 'month';
-    else if (config.groupTimeRange === 'quarter') groupEle = `toStartOfQuarter(month)`;
-    else if (config.groupTimeRange === 'year') groupEle = `toStartOfYear(month)`;
+    if (config.groupTimeRange === 'month') groupEle = `toStartOfMonth(${timeCol})`;
+    else if (config.groupTimeRange === 'quarter') groupEle = `toStartOfQuarter(${timeCol})`;
+    else if (config.groupTimeRange === 'year') groupEle = `toStartOfYear(${timeCol})`;
     return groupEle;
   })()} AS time, ${(() => {
     if (!config.groupBy) {  // group by repo'
       if (type === 'repo')
-        return 'repo_id AS id, argMax(repo_name, month) AS name';
+        return 'repo_id AS id, argMax(repo_name, time) AS name';
       else
-        return `actor_id AS id, argMax(actor_login, month) AS name`;
+        return `actor_id AS id, argMax(actor_login, time) AS name`;
     } else if (config.groupBy === 'org') {
-      return `org_id AS id, argMax(org_login, month) AS name`;
+      return `org_id AS id, argMax(org_login, time) AS name`;
     } else {  // group by label
       return `${getLabelGroupConditionClauseForClickhouse(config)} AS id, id AS name`;
     }

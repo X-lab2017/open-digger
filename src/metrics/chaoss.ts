@@ -14,35 +14,24 @@ export const chaossIssuesNew = async (config: QueryConfig) => {
   if (repoWhereClause) whereClauses.push(repoWhereClause);
   whereClauses.push(getTimeRangeWhereClauseForClickhouse(config));
 
-    const sql = `
+  const sql = `
 SELECT
   id,
   argMax(name, time) AS name,
-  SUM(new_issue_count) AS total_count,
-  ${getGroupArrayInsertAtClauseForClickhouse(config, { key: 'count', value: 'new_issue_count' })}
+  SUM(count) AS total_count,
+  ${getGroupArrayInsertAtClauseForClickhouse(config, { key: 'issues_new_count', value: 'count' })}
 FROM
 (
   SELECT
     ${getGroupTimeAndIdClauseForClickhouse(config, 'repo')},
-    SUM(count) AS new_issue_count
-  FROM
-  (
-    SELECT
-      toStartOfMonth(created_at) AS month,
-      repo_id,
-      argMax(repo_name, created_at) AS repo_name,
-      org_id,
-      argMax(org_login, created_at) AS org_login,
-      COUNT() AS count
-    FROM github_log.events
-    WHERE ${whereClauses.join(' AND ')}
-    GROUP BY repo_id, org_id, month
-  )
+    COUNT() AS count
+  FROM github_log.events
+  WHERE ${whereClauses.join(' AND ')}
   GROUP BY id, time
   ${config.limit > 0 ? `ORDER BY count DESC LIMIT ${config.limit} BY time` : ''}
 )
 GROUP BY id
-ORDER BY count[-1] ${config.order}
+ORDER BY issues_new_count[-1] ${config.order}
 FORMAT JSONCompact`;
 
   const result: any = await clickhouse.query(sql);
@@ -65,35 +54,24 @@ export const chaossIssuesClosed = async (config: QueryConfig) => {
   if (repoWhereClause) whereClauses.push(repoWhereClause);
   whereClauses.push(getTimeRangeWhereClauseForClickhouse(config));
 
-    const sql = `
+  const sql = `
 SELECT
   id,
   argMax(name, time) AS name,
-  SUM(closed_issue_count) AS total_count,
-  ${getGroupArrayInsertAtClauseForClickhouse(config, { key: 'count', value: 'closed_issue_count' })}
+  SUM(count) AS total_count,
+  ${getGroupArrayInsertAtClauseForClickhouse(config, { key: 'issues_close_count', value: 'count' })}
 FROM
 (
   SELECT
     ${getGroupTimeAndIdClauseForClickhouse(config, 'repo')},
-    SUM(count) AS closed_issue_count
-  FROM
-  (
-    SELECT
-      toStartOfMonth(created_at) AS month,
-      repo_id,
-      argMax(repo_name, created_at) AS repo_name,
-      org_id,
-      argMax(org_login, created_at) AS org_login,
-      COUNT() AS count
-    FROM github_log.events
-    WHERE ${whereClauses.join(' AND ')}
-    GROUP BY repo_id, org_id, month
-  )
+    COUNT() AS count
+  FROM github_log.events
+  WHERE ${whereClauses.join(' AND ')}
   GROUP BY id, time
   ${config.limit > 0 ? `ORDER BY count DESC LIMIT ${config.limit} BY time` : ''}
 )
 GROUP BY id
-ORDER BY count[-1] ${config.order}
+ORDER BY issues_close_count[-1] ${config.order}
 FORMAT JSONCompact`;
 
   const result: any = await clickhouse.query(sql);
@@ -108,3 +86,74 @@ FORMAT JSONCompact`;
     }
   });
 };
+
+export const chaossBusFactor = async (config: QueryConfig) => {
+  config = getMergedConfig(config);
+  const byCommit = config.options?.byCommit;
+  const whereClauses: string[] = [];
+  if (byCommit) {
+    whereClauses.push("type = 'PushEvent'")
+  } else {
+    whereClauses.push("type = 'PullRequestEvent' AND action = 'closed' AND pull_merged = 1");
+  }
+  const repoWhereClause = getRepoWhereClauseForClickhouse(config);
+  if (repoWhereClause) whereClauses.push(repoWhereClause);
+  whereClauses.push(getTimeRangeWhereClauseForClickhouse(config));
+
+  const sql = `
+SELECT
+  id,
+  argMax(name, time) AS name,
+  ${getGroupArrayInsertAtClauseForClickhouse(config, { key: 'bus_factor', })},
+  ${getGroupArrayInsertAtClauseForClickhouse(config, { key: 'detail' })},
+  ${getGroupArrayInsertAtClauseForClickhouse(config, { key: 'total_contributions' })}
+FROM
+(
+  SELECT
+    time,
+    id,
+    any(name) AS name,
+    SUM(count) AS total_contributions,
+    length(detail) AS bus_factor,
+    arrayFilter(x -> tupleElement(x, 2) >= quantileExactWeighted(${config.options?.percentage ? (1 - config.options.percentage).toString() :  '0.5'})(count, count), arrayMap((x, y) -> (x, y), groupArray(author), groupArray(count))) AS detail
+  FROM
+  (
+    SELECT
+      ${getGroupTimeAndIdClauseForClickhouse(config, 'repo')},
+      ${(() => {
+        if (byCommit) {
+          return `
+          arrayJoin(push_commits.name) AS author,
+          `
+        } else {
+          return `
+          issue_author_id AS actor_id,
+          argMax(issue_author_login, created_at) AS author,`
+        }
+      })()}
+      COUNT() AS count
+    FROM github_log.events
+    WHERE ${whereClauses.join(' AND ')}
+    GROUP BY id, time, ${byCommit ? 'author' : 'actor_id' }
+    ${(config.options?.withBot && !byCommit) ? '' : "HAVING author NOT LIKE '%[bot]'"}
+    ORDER BY count DESC
+  )
+  GROUP BY id, time
+)
+GROUP BY id
+ORDER BY bus_factor[-1] ${config.order}
+${config.limit > 0 ? `LIMIT ${config.limit}` : ''}
+FORMAT JSONCompact`;
+
+  const result: any = await clickhouse.query(sql);
+  return result.map(row => {
+    const [ id, name, bus_factor, detail, total_contributions ] = row;
+    return {
+      id,
+      name,
+      bus_factor,
+      detail,
+      total_contributions,
+    }
+  });
+}
