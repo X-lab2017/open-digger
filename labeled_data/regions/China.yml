@@ -37,6 +37,7 @@ data:
     - :companies/guojusoft
     - :companies/koderover
     - :companies/starrocks
+    - :companies/rtthread
     - :communities/openmmlab
     - :communities/xlab
     - :projects/skywalking
