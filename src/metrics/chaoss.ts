@@ -7,6 +7,43 @@ import {
   QueryConfig } from "./basic";
 import * as clickhouse from '../db/clickhouse';
 
+export const chaossCodeChangeCommits = async (config: QueryConfig) => {
+  config = getMergedConfig(config);
+  const whereClauses: string[] = ["type = 'PushEvent' "];
+  const repoWhereClause = getRepoWhereClauseForClickhouse(config);
+  if (repoWhereClause) whereClauses.push(repoWhereClause);
+  whereClauses.push(getTimeRangeWhereClauseForClickhouse(config));
+
+  const sql = `
+SELECT
+  id,
+  argMax(name, time) AS name,
+  ${getGroupArrayInsertAtClauseForClickhouse(config, { key: 'commits_count', value:'count' })}
+FROM
+(
+  SELECT
+    ${getGroupTimeAndIdClauseForClickhouse(config, 'repo')},
+    COUNT() AS count
+  FROM github_log.events
+  WHERE ${whereClauses.join(' AND ')}
+  GROUP BY id, time
+  ${config.limit > 0 ? `ORDER BY count DESC LIMIT ${config.limit} BY time` : ''}
+)
+GROUP BY id
+ORDER BY commits_count[-1] ${config.order}
+FORMAT JSONCompact`;
+
+  const result: any = await clickhouse.query(sql);
+  return result.map(row => {
+    const [ id, name, count ] = row;
+    return {
+      id,
+      name,
+      count,
+    }
+  });
+};
+
 export const chaossIssuesNew = async (config: QueryConfig) => {
   config = getMergedConfig(config);
   const whereClauses: string[] = ["type = 'IssuesEvent' AND action = 'opened'"];
