@@ -23,7 +23,7 @@ FROM
 (
   SELECT
     ${getGroupTimeAndIdClauseForClickhouse(config, 'repo')},
-    COUNT() AS count
+    COUNT(arrayJoin(push_commits.message)) AS count
   FROM github_log.events
   WHERE ${whereClauses.join(' AND ')}
   GROUP BY id, time
