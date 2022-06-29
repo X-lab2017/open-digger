@@ -27,6 +27,7 @@ const openDigger = {
   },
   metric: {
     chaoss: {
+      codeChangeCommits: func.chaossCodeChangeCommits,
       issuesNew: func.chaossIssuesNew,
       issuesClosed: func.chaossIssuesClosed,
       busFactor: func.chaossBusFactor,
