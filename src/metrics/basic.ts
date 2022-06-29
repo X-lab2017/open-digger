@@ -1,7 +1,7 @@
 import { merge } from 'lodash';
 import { getGitHubData, getLabelData } from '../label_data_utils';
 
-export interface QueryConfig {
+export interface QueryConfig<T = any> {
   labelUnion?: string[];
   labelIntersect?: string[];
   repoIds?: number[];
@@ -19,7 +19,7 @@ export interface QueryConfig {
   percision: number;
   groupBy?: 'org' | string;
   groupTimeRange?: 'month' | 'quarter' | 'year';
-  options?: any;
+  options?: T;
 };
 
 export const getMergedConfig = (config: any): QueryConfig => {

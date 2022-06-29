@@ -7,7 +7,11 @@ import {
   QueryConfig } from "./basic";
 import * as clickhouse from '../db/clickhouse';
 
-export const chaossCodeChangeCommits = async (config: QueryConfig) => {
+interface CodeChangeCommitsOptions {
+  // a filter regular expression for commit message
+  messageFilter: '^(build:|chore:|ci:|docs:|feat:|fix:|perf:|refactor:|revert:|style:|test:).*' | string;
+}
+export const chaossCodeChangeCommits = async (config: QueryConfig<CodeChangeCommitsOptions>) => {
   config = getMergedConfig(config);
   const whereClauses: string[] = ["type = 'PushEvent' "];
   const repoWhereClause = getRepoWhereClauseForClickhouse(config);
@@ -23,7 +27,7 @@ FROM
 (
   SELECT
     ${getGroupTimeAndIdClauseForClickhouse(config, 'repo')},
-    COUNT(arrayJoin(push_commits.message)) AS count
+    COUNT(arrayJoin(${config.options?.messageFilter ? `arrayFilter(x -> match(x, '${config.options.messageFilter}'), push_commits.message)` : 'push_commits.message' })) AS count
   FROM github_log.events
   WHERE ${whereClauses.join(' AND ')}
   GROUP BY id, time
@@ -124,7 +128,15 @@ FORMAT JSONCompact`;
   });
 };
 
-export const chaossBusFactor = async (config: QueryConfig) => {
+interface BusFactorOptions {
+  // calculate bus factor by change request or git commit, default: false
+  byCommit: boolean;
+  // the bus factor percentage thredhold, default: 0.5
+  percentage: number;
+  // include GitHub Apps account, default: false
+  withBot: boolean;
+}
+export const chaossBusFactor = async (config: QueryConfig<BusFactorOptions>) => {
   config = getMergedConfig(config);
   const byCommit = config.options?.byCommit;
   const whereClauses: string[] = [];
