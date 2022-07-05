@@ -1,0 +1,5 @@
+name: Cloudbees
+type: Company
+data:
+  github_org:
+    - 107424  # org:jenkinsci

@@ -1,0 +1,5 @@
+name: DataCanvas
+type: Company
+data:
+  github_org:
+    - 91237812 # org:dingodb

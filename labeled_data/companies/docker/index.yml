@@ -1,0 +1,6 @@
+name: Docker
+type: Company
+data:
+  github_org:
+    - 5429470  # org:docker
+    - 27259197 # org:moby

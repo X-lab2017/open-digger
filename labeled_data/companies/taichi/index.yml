@@ -1,0 +1,5 @@
+name: Taichi
+type: Company
+data:
+  github_org:
+    - 33354891 # org:taichi-dev

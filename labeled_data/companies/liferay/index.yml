@@ -1,0 +1,5 @@
+name: Liferay
+type: Company
+data:
+  github_org:
+    - 131436  # org:liferay

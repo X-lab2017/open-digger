@@ -1,0 +1,5 @@
+name: MongoDB
+type: Company
+data:
+  github_org:
+    - 45120  # org:mongodb

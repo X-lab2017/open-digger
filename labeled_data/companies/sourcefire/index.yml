@@ -1,0 +1,5 @@
+name: Sourcefire
+type: Company
+data:
+  github_org:
+    - 38250620  # org:snort3

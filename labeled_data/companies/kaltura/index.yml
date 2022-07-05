@@ -1,0 +1,5 @@
+name: Kaltura
+type: Company
+data:
+  github_org:
+    - 319096  # org:kaltura

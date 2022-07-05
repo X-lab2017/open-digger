@@ -1,0 +1,5 @@
+name: JetBrains
+type: Company
+data:
+  github_org:
+    - 878437  # org:JetBrains

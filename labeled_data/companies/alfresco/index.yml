@@ -1,0 +1,5 @@
+name: Alfresco
+type: Company
+data:
+  github_org:
+    - 391127  # org:Alfresco

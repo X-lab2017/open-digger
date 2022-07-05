@@ -1,0 +1,5 @@
+name: Nicira
+type: Company
+data:
+  github_org:
+    - 7143863  # org:openvswitch

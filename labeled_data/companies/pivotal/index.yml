@@ -1,0 +1,5 @@
+name: Pivotal
+type: Company
+data:
+  github_org:
+    - 621746  # org:cloudfoundry

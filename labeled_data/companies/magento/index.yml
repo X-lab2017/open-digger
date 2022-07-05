@@ -1,0 +1,5 @@
+name: Magento
+type: Company
+data:
+  github_org:
+    - 168457  # org:magento

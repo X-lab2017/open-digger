@@ -1,0 +1,5 @@
+name: Mapbox
+type: Company
+data:
+  github_org:
+    - 600935  # org:mapbox

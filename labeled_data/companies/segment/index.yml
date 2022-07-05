@@ -1,0 +1,5 @@
+name: Segment
+type: Company
+data:
+  github_org:
+    - 819518  # org:segmentio

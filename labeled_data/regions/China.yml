@@ -38,6 +38,30 @@ data:
     - :companies/koderover
     - :companies/starrocks
     - :companies/rtthread
+    - :companies/sphereex
+    - :companies/jina_ai
+    - :companies/api7
+    - :companies/streamnative
+    - :companies/chatopera
+    - :companies/sequoiadb
+    - :companies/thinkphp
+    - :companies/zstack
+    - :companies/oushu
+    - :companies/goodrain
+    - :companies/gaas
+    - :companies/openresty
+    - :companies/yunion
+    - :companies/juicedata
+    - :companies/kyligence
+    - :companies/timecho
+    - :companies/longboat
+    - :companies/taichi
+    - :companies/galaxy_future
+    - :companies/alluxio
+    - :companies/matrix_origin
+    - :companies/megvii
+    - :companies/datacanvas
+    - :companies/cloudwise
     - :communities/openmmlab
     - :communities/xlab
     - :projects/skywalking
@@ -95,7 +119,6 @@ data:
     - 212382406 # repo:Apache/Ozone
     - 158975124 # repo:Apache/IoTDB
     - 180481986 # repo:Apache/APISIX
-    - 49876476 # repo:Apache/ShardingSphere
     - 4710920 # repo:Apache/Dubbo
     - 45721011 # repo:Apache/Skywalking
     - 82035099 # repo:Apache/Griffin
@@ -112,7 +135,6 @@ data:
     - 231533573 # repo:Apache/incubator-inlong
     - 195861277 # repo:Apache/incubator-teaclave
     - 102343794 # repo:Apache/brpc
-    - 99919302 # repo:Apache/incubator-doris
   github_user:
     - 1740859 # user:zhenglaizhang
     - 3787410 # user:hsluoyz

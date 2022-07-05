@@ -1,0 +1,5 @@
+name: EnterpriseDB
+type: Company
+data:
+  github_org:
+    - 177543  # org:postgres

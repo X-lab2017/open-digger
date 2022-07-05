@@ -1,0 +1,5 @@
+name: Jina AI
+type: Company
+data:
+  github_org:
+    - 60539444  # org:jina-ai

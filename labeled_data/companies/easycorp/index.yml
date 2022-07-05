@@ -1,0 +1,5 @@
+name: EasyCorp
+type: Company
+data:
+  github_org:
+    - 237078 # org:easysoft

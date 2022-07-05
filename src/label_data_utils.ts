@@ -93,7 +93,7 @@ function processLabelItems(map: Map<string, LabelItem>): ParsedLabelItem[] {
 
 function parseItem(item: LabelItem, map: Map<string, LabelItem>) {
   if (item.parsed) return;
-  if (!supportedTypes.has(item.content.type)) {
+  if (item.content.type && !supportedTypes.has(item.content.type)) {
       throw new Error(`Not supported type ${item.content.type}`)
     }
   for (const key in item.content.data) {
