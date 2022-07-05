@@ -23,6 +23,7 @@ To use the sample data, at minimum 8 GB memory should be allocated to the contai
 | [2015_2021_top_50_year](https://oss.x-lab.info/sample_data/2015_2021_top50_year.tar.gz) | Top 50 most active repos from year 2015 to 2021 for every year | sql_files/2015_2021_top50_year.sql | 168 million | 117 GB | 8.4 GB | 13 GB | 50 m |
 | [second_sample](https://oss.x-lab.info/sample_data/second_sample.tar.gz) | All events log sample by 1 second in a hour | sql_files/second_sample.sql | 62 million | 57 GB | 10 GB | 14 GB | 25 m |
 | [label_2015](https://oss.x-lab.info/sample_data/label_2015.tar.gz) | All events log for labeled repo in OpenDigger in 2015 | sql_files/label_2015.sql | 3.5 million | 2.9 GB | 378 MB | 552 MB | 3 m |
+| [paddle_hackathon_3](https://oss.x-lab.info/sample_data/paddle_hackathon_3.tar.gz) | Data under PaddlePaddle org for Hackathon | sql_files/paddle_hackathon_3.sql | 803 thousands | 736 MB | 96 MB | 141 MB | 1 m |
 
 ### ClickHouse server image
 
