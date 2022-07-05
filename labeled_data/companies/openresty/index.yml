@@ -1,0 +1,5 @@
+name: OpenResty
+type: Company
+data:
+  github_org:
+    - 7390180  # org:openresty

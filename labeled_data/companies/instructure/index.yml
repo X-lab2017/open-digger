@@ -1,0 +1,5 @@
+name: Instructure
+type: Company
+data:
+  github_org:
+    - 515326  # org:instructure

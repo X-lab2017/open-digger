@@ -1,0 +1,5 @@
+name: Redis Labs
+type: Company
+data:
+  github_org:
+    - 1529926  # org:redis

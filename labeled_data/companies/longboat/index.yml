@@ -1,0 +1,5 @@
+name: Longboat
+type: Company
+data:
+  github_org:
+    - 7727781 # org:Longboat

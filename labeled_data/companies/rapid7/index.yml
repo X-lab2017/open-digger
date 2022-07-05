@@ -1,0 +1,5 @@
+name: Rapid7
+type: Company
+data:
+  github_org:
+    - 1013671  # org:rapid7

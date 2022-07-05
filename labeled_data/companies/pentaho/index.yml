@@ -1,0 +1,5 @@
+name: Pentaho
+type: Company
+data:
+  github_org:
+    - 1022787  # org:pentaho

@@ -1,0 +1,5 @@
+name: SphereEx
+type: Company
+data:
+  github_repo:
+    - 49876476 # repo:apache/shardingsphere

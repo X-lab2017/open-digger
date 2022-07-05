@@ -1,0 +1,5 @@
+name: JuiceData
+type: Company
+data:
+  github_org:
+    - 27241737  # org:juicedata

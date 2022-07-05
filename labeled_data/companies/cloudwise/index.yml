@@ -1,0 +1,5 @@
+name: Cloud Wise
+type: Company
+data:
+  github_org:
+    - 20625392 # org:CloudWise-OpenSource

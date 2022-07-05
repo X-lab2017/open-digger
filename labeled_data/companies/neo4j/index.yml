@@ -1,0 +1,7 @@
+name: Neo4j
+type: Company
+data:
+  github_org:
+    - 201120  # org:neo4j
+    - 218965  # org:neo4j-examples
+    - 916372  # org:neo4j-contrib

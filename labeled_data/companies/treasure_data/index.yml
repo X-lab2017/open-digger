@@ -1,0 +1,5 @@
+name: Treasure Data
+type: Company
+data:
+  github_org:
+    - 859518  # org:fluent

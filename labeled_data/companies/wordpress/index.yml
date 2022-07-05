@@ -1,0 +1,5 @@
+name: WordPress
+type: Company
+data:
+  github_org:
+    - 276006  # org:WordPress

@@ -1,0 +1,5 @@
+name: Terminus
+type: Company
+data:
+  github_org:
+    - 79822798 # org:erda-project

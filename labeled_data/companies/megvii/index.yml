@@ -1,0 +1,5 @@
+name: Megvii
+type: Company
+data:
+  github_org:
+    - 61609124 # org:MegEngine

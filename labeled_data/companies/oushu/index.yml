@@ -1,0 +1,5 @@
+name: Oushu
+type: Company
+data:
+  github_repo:
+    - 41952293 # repo:apache/hawq

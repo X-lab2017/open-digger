@@ -1,0 +1,5 @@
+name: Kyligence
+type: Company
+data:
+  github_repo:
+    - 28738447 # repo:apache/kylin

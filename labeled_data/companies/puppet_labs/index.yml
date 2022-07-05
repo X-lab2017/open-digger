@@ -1,0 +1,5 @@
+name: Puppet Labs
+type: Company
+data:
+  github_org:
+    - 234268  # org:puppetlabs
