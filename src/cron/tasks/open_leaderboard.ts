@@ -1,4 +1,4 @@
-import { writeFileSync } from 'fs';
+import { existsSync, mkdirSync, writeFileSync } from 'fs';
 import { Task } from '..';
 import { query } from '../../db/neo4j';
 import { getGitHubData, getLabelData } from '../../label_data_utils';
@@ -24,6 +24,8 @@ const task: Task = {
 
     const writeData = (dataMap: Map<any, any>, type: string, path: string) => {
       for (const [ time, data ] of dataMap.entries()) {
+        const dir = `./local_files/open_leaderboard/${path}`;
+        if (!existsSync(dir)) mkdirSync(dir, { recursive: true });
         writeFileSync(`./local_files/open_leaderboard/${path}/${time}.json`, JSON.stringify({
           type, time, data,
         }));
