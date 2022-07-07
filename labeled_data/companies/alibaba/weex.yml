@@ -1,0 +1,11 @@
+name: Weex
+type: Project
+data:
+  github_repo:
+    - 78186814 # repo:apache/incubator-weex 
+    - 80600049 # repo:apache/incubator-weex-site
+    - 105006031 # repo:apache/incubator-weex-ui
+    - 62320907 # repo:apache/incubator-weex-cli 
+    - 195177223 # repo:apache/incubator-weex-playground
+    - 62036161 # repo:apache/incubator-weex-loader
+    - 203795420 # repo:apache/incubator-weex-android-compatible
