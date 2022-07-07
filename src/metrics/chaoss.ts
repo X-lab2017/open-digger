@@ -6,6 +6,7 @@ import {
   getTimeRangeWhereClauseForClickhouse,
   QueryConfig } from "./basic";
 import * as clickhouse from '../db/clickhouse';
+import { basicActivitySqlComponent } from "./activity_openrank";
 
 interface CodeChangeCommitsOptions {
   // a filter regular expression for commit message
@@ -129,8 +130,8 @@ FORMAT JSONCompact`;
 };
 
 interface BusFactorOptions {
-  // calculate bus factor by change request or git commit, default: false
-  byCommit: boolean;
+  // calculate bus factor by change request or git commit, or activity index. default: activity
+  by: 'commit' | 'change request' | 'activity';
   // the bus factor percentage thredhold, default: 0.5
   percentage: number;
   // include GitHub Apps account, default: false
@@ -138,12 +139,15 @@ interface BusFactorOptions {
 }
 export const chaossBusFactor = async (config: QueryConfig<BusFactorOptions>) => {
   config = getMergedConfig(config);
-  const byCommit = config.options?.byCommit;
+  let by = config.options?.by ?? 'activity';
+  if (by !== 'commit' && by !== 'change request' && by !== 'activity') by = 'activity';
   const whereClauses: string[] = [];
-  if (byCommit) {
+  if (by === 'commit') {
     whereClauses.push("type = 'PushEvent'")
-  } else {
+  } else if (by === 'change request' ) {
     whereClauses.push("type = 'PullRequestEvent' AND action = 'closed' AND pull_merged = 1");
+  } else if (by === 'activity') {
+    whereClauses.push("type IN ('IssuesEvent', 'IssueCommentEvent', 'PullRequestEvent', 'PullRequestReviewCommentEvent')");
   }
   const repoWhereClause = getRepoWhereClauseForClickhouse(config);
   if (repoWhereClause) whereClauses.push(repoWhereClause);
@@ -164,27 +168,32 @@ FROM
     any(name) AS name,
     SUM(count) AS total_contributions,
     length(detail) AS bus_factor,
-    arrayFilter(x -> tupleElement(x, 2) >= quantileExactWeighted(${config.options?.percentage ? (1 - config.options.percentage).toString() :  '0.5'})(count, count), arrayMap((x, y) -> (x, y), groupArray(author), groupArray(count))) AS detail
+    arrayFilter(x -> tupleElement(x, 2) >= quantileExactWeighted(${config.options?.percentage ? (1 - config.options.percentage).toString() :  '0.5'})(count, count), arrayMap((x, y) -> (x, y), groupArray(${by === 'activity' ? 'actor_login': 'author' }), groupArray(count))) AS detail
   FROM
   (
     SELECT
       ${getGroupTimeAndIdClauseForClickhouse(config, 'repo')},
       ${(() => {
-        if (byCommit) {
+        if (by === 'commit') {
           return `
           arrayJoin(push_commits.name) AS author,
-          `
-        } else {
+          COUNT() AS count`
+        } else if (by === 'change request') {
           return `
           issue_author_id AS actor_id,
-          argMax(issue_author_login, created_at) AS author,`
+          argMax(issue_author_login, created_at) AS author,
+          COUNT() AS count`
+        } else if (by === 'activity') {
+          return `
+          ${basicActivitySqlComponent},
+          toUInt32(ceil(activity)) AS count
+          `
         }
       })()}
-      COUNT() AS count
     FROM github_log.events
     WHERE ${whereClauses.join(' AND ')}
-    GROUP BY id, time, ${byCommit ? 'author' : 'actor_id' }
-    ${(config.options?.withBot && !byCommit) ? '' : "HAVING author NOT LIKE '%[bot]'"}
+    GROUP BY id, time, ${by === 'commit' ? 'author' : 'actor_id' }
+    ${(config.options?.withBot && by !== 'commit') ? '' : "HAVING author NOT LIKE '%[bot]'"}
     ORDER BY count DESC
   )
   GROUP BY id, time
