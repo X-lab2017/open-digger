@@ -13,11 +13,11 @@ import * as neo4j from '../db/neo4j'
 import { getLabelData } from '../label_data_utils';
 import * as clickhouse from '../db/clickhouse';
 
-const ISSUE_COMMENT_WEIGHT = 1;
-const OPEN_ISSUE_WEIGHT = 2;
-const OPEN_PULL_WEIGHT = 3;
-const REVIEW_COMMENT_WEIGHT = 4;
-const PULL_MERGED_WEIGHT = 2;
+export const ISSUE_COMMENT_WEIGHT = 1;
+export const OPEN_ISSUE_WEIGHT = 2;
+export const OPEN_PULL_WEIGHT = 3;
+export const REVIEW_COMMENT_WEIGHT = 4;
+export const PULL_MERGED_WEIGHT = 2;
 
 export const getRepoActivityOrOpenrank = async (config: QueryConfig, type: 'activity' | 'open_rank') => {
   config = getMergedConfig(config);
@@ -70,6 +70,17 @@ export const getUserActivityOrOpenrank = async (config: QueryConfig, type: 'acti
   return neo4j.query(query);
 }
 
+export const basicActivitySqlComponent = `
+    if(type='PullRequestEvent' AND action='closed' AND pull_merged=1, issue_author_id, actor_id) AS actor_id,
+    argMax(if(type='PullRequestEvent' AND action='closed' AND pull_merged=1, issue_author_login, actor_login), created_at) AS actor_login,
+    countIf(type='IssueCommentEvent' AND action='created') AS issue_comment,
+    countIf(type='IssuesEvent' AND action='opened')  AS open_issue,
+    countIf(type='PullRequestEvent' AND action='opened') AS open_pull,
+    countIf(type='PullRequestReviewCommentEvent' AND action='created') AS review_comment,
+    countIf(type='PullRequestEvent' AND action='closed' AND pull_merged=1) AS merged_pull,
+    sqrt(${ISSUE_COMMENT_WEIGHT}*issue_comment + ${OPEN_ISSUE_WEIGHT}*open_issue + ${OPEN_PULL_WEIGHT}*open_pull + ${REVIEW_COMMENT_WEIGHT}*review_comment + ${PULL_MERGED_WEIGHT}*merged_pull) AS activity
+`;
+
 export const getRepoActivityWithDetail = async (config: QueryConfig) => {
   config = getMergedConfig(config);
   const whereClauses: string[] = ["type IN ('IssuesEvent', 'IssueCommentEvent', 'PullRequestEvent', 'PullRequestReviewCommentEvent')"]; // specify types to reduce memory usage and calculation
@@ -105,13 +116,7 @@ FROM
       toStartOfMonth(created_at) AS month,
       repo_id, argMax(repo_name, created_at) AS repo_name,
       org_id, argMax(org_login, created_at) AS org_login,
-      if(type='PullRequestEvent' AND action='closed' AND pull_merged=1, issue_author_id, actor_id) AS actor_id,
-      countIf(type='IssueCommentEvent' AND action='created') AS issue_comment,
-      countIf(type='IssuesEvent' AND action='opened')  AS open_issue,
-      countIf(type='PullRequestEvent' AND action='opened') AS open_pull,
-      countIf(type='PullRequestReviewCommentEvent' AND action='created') AS review_comment,
-      countIf(type='PullRequestEvent' AND action='closed' AND pull_merged=1) AS merged_pull,
-      sqrt(${ISSUE_COMMENT_WEIGHT}*issue_comment + ${OPEN_ISSUE_WEIGHT}*open_issue + ${OPEN_PULL_WEIGHT}*open_pull + ${REVIEW_COMMENT_WEIGHT}*review_comment + ${PULL_MERGED_WEIGHT}*merged_pull) AS activity
+      ${basicActivitySqlComponent}
     FROM github_log.events
     WHERE ${whereClauses.join(' AND ')}
     GROUP BY repo_id, org_id, actor_id, month
@@ -173,14 +178,7 @@ FROM
     SELECT
       toStartOfMonth(created_at) AS month,
       repo_id,
-      if(type='PullRequestEvent' AND action='closed' AND pull_merged=1, issue_author_id, actor_id) AS actor_id,
-      argMax(if(type='PullRequestEvent' AND action='closed' AND pull_merged=1, issue_author_login, actor_login), created_at) AS actor_login,
-      countIf(type='IssueCommentEvent' AND action='created') AS issue_comment,
-      countIf(type='IssuesEvent' AND action='opened')  AS open_issue,
-      countIf(type='PullRequestEvent' AND action='opened') AS open_pull,
-      countIf(type='PullRequestReviewCommentEvent' AND action='created') AS review_comment,
-      countIf(type='PullRequestEvent' AND action='closed' AND pull_merged=1) AS merged_pull,
-      sqrt(${ISSUE_COMMENT_WEIGHT}*issue_comment + ${OPEN_ISSUE_WEIGHT}*open_issue + ${OPEN_PULL_WEIGHT}*open_pull + ${REVIEW_COMMENT_WEIGHT}*review_comment + ${PULL_MERGED_WEIGHT}*merged_pull) AS activity
+      ${basicActivitySqlComponent}
     FROM github_log.events
     WHERE ${whereClauses.join(' AND ')}
     GROUP BY repo_id, actor_id, month
