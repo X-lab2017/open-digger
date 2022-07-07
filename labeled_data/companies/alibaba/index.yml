@@ -24,7 +24,6 @@ data:
     - 70694200 # org:alibabacloud-sdk-cpp
     - 49896061 # org:alibabacloud-sdk-php
     - 61405193 # org:alibabacloud-sdk-swift
-    - 1299356 # org:alipay
     - 7741285 # org:aliqin
     - 941070 # org:aliyun
     - 16096311 # org:aliyun-beta
