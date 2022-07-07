@@ -82,6 +82,7 @@ SELECT
   id,
   argMax(name, time) AS name,
   ${getGroupArrayInsertAtClauseForClickhouse(config, { key: 'activity' })},
+  ${getGroupArrayInsertAtClauseForClickhouse(config, { key: 'participants' })},
   ${getGroupArrayInsertAtClauseForClickhouse(config, { key: 'issue_comment' })},
   ${getGroupArrayInsertAtClauseForClickhouse(config, { key: 'open_issue' })},
   ${getGroupArrayInsertAtClauseForClickhouse(config, { key: 'open_pull' })},
@@ -92,6 +93,7 @@ FROM
   SELECT
     ${getGroupTimeAndIdClauseForClickhouse(config, 'repo', 'month')},
     ROUND(SUM(activity), 2) AS activity,
+    COUNT(actor_id) AS participants,
     SUM(issue_comment) AS issue_comment,
     SUM(open_issue) AS open_issue,
     SUM(open_pull) AS open_pull,
@@ -124,11 +126,12 @@ FORMAT JSONCompact`;  // use JSONCompact to reduce network I/O
 
   const result: any = await clickhouse.query(sql);
   return result.map(row => {
-    const [ id, name, activity, issue_comment, open_issue, open_pull, review_comment, merged_pull ] = row;
+    const [ id, name, activity, participants, issue_comment, open_issue, open_pull, review_comment, merged_pull ] = row;
     return {
       id,
       name,
       activity,
+      participants,
       issue_comment,
       open_issue,
       open_pull,
