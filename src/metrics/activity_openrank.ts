@@ -25,7 +25,7 @@ export const getRepoActivityOrOpenrank = async (config: QueryConfig, type: 'acti
   const timeWhereClause = await getTimeRangeWhereClauseForNeo4j(config, 'r');
   const timeActivityOrOpenrankClause = getTimeRangeSumClauseForNeo4j(config, `r.${type}`);
   if (!config.groupBy) {
-    const query = `MATCH (r:Repo) WHERE ${repoWhereClause ?? timeWhereClause} RETURN r.name AS repo_name, r.org_login AS org, [${(await timeActivityOrOpenrankClause).join(',')}] AS ${type} ORDER BY reverse(${type}) ${config.order} ${config.limit > 0 ? `LIMIT ${config.limit}` : ''};`;
+    const query = `MATCH (r:Repo) WHERE ${repoWhereClause ?? timeWhereClause} RETURN r.id AS id, r.name AS repo_name, r.org_login AS org, [${(await timeActivityOrOpenrankClause).join(',')}] AS ${type} ORDER BY reverse(${type}) ${config.order} ${config.limit > 0 ? `LIMIT ${config.limit}` : ''};`;
     return neo4j.query(query);
   } else if (config.groupBy === 'org') {
     const query = `MATCH (r:Repo) WHERE ${repoWhereClause ?? timeWhereClause} RETURN r.org_login AS org_login, count(r.id) AS repo_count, [${(await timeActivityOrOpenrankClause).map(i => `round(SUM(${i}), ${config.percision})`)}] AS ${type} ORDER BY reverse(${type}) ${config.order} ${config.limit > 0 ? `LIMIT ${config.limit}` : ''};`;
