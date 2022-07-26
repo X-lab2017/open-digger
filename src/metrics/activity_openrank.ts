@@ -33,7 +33,7 @@ export const getRepoActivityOrOpenrank = async (config: QueryConfig, type: 'acti
   } else {
     const query = `MATCH (r:Repo) WHERE ${repoWhereClause ?? timeWhereClause} RETURN r.id AS repo_id, r.org_id AS org_id, [${(await timeActivityOrOpenrankClause).join(',')}] AS ${type};`;
     const queryResult: any[] = await neo4j.query(query);
-    const labelData = getLabelData()?.filter(l => l.type === config.groupBy);
+    const labelData = getLabelData(config.injectLabelData)?.filter(l => l.type === config.groupBy);
     const result = new Map();
     if (!labelData) return null;
     queryResult.forEach(row => {

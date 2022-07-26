@@ -40,7 +40,7 @@ interface ParsedLabelItem extends GitHubData {
   name: string;
 }
 
-export function getLabelData(): ParsedLabelItem[] {
+export function getLabelData(injectLabelData?: any[]): ParsedLabelItem[] {
   if (!statSync(labelInputPath).isDirectory()) {
     console.error(`${labelInputPath} input path is not a directory.`);
     return [];
@@ -62,6 +62,7 @@ export function getLabelData(): ParsedLabelItem[] {
     });
   });
   const data = processLabelItems(labelMap);
+  if (injectLabelData) injectLabelData.forEach(l => data.push(l));
   return data;
 }
 
@@ -149,9 +150,9 @@ function labelDataToGitHubData(data: ParsedLabelItem[]): GitHubData {
   };
 }
 
-export function getGitHubData(typeOrIds: string[]): GitHubData {
+export function getGitHubData(typeOrIds: string[], injectLabelData?: any[]): GitHubData {
   if (typeOrIds.length === 0) return emptyData;
-  const data = getLabelData();
+  const data = getLabelData(injectLabelData);
   if (!data) return emptyData;
   const arr = data.filter(i => typeOrIds.includes(i.type) || typeOrIds.includes(i.identifier));
   return labelDataToGitHubData(arr);

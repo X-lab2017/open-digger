@@ -19,6 +19,7 @@ export interface QueryConfig<T = any> {
   percision: number;
   groupBy?: 'org' | string;
   groupTimeRange?: 'month' | 'quarter' | 'year';
+  injectLabelData?: any[];
   options?: T;
 };
 
@@ -57,7 +58,7 @@ export const getRepoWhereClauseForNeo4j = (config: QueryConfig): string | null =
   if (config.orgNames) repoWhereClauseArray.push(`r.org_name IN [${config.orgNames.map(o => `'${o}'`)}]`);
   if (config.labelIntersect) {
     return '(' + config.labelIntersect.map(l => {
-      const data = getGitHubData([l]);
+      const data = getGitHubData([l], config.injectLabelData);
       const arr: string[] = [];
       if (data.githubRepos.length > 0) arr.push(`r.id IN [${data.githubRepos.join(',')}]`);
       if (data.githubOrgs.length > 0) arr.push(`r.org_id IN [${data.githubOrgs.join(',')}]`);
@@ -66,7 +67,7 @@ export const getRepoWhereClauseForNeo4j = (config: QueryConfig): string | null =
     }).filter(i => i !== null).join(' AND ') + ')';
   }
   if (config.labelUnion) {
-    const data = getGitHubData(config.labelUnion);
+    const data = getGitHubData(config.labelUnion, config.injectLabelData);
     if (data.githubRepos.length > 0) repoWhereClauseArray.push(`r.id IN [${data.githubRepos.join(',')}]`);
     if (data.githubOrgs.length > 0) repoWhereClauseArray.push(`r.org_id IN [${data.githubOrgs.join(',')}]`);
   }
@@ -82,7 +83,7 @@ export const getRepoWhereClauseForClickhouse = (config: QueryConfig): string | n
   if (config.orgNames) repoWhereClauseArray.push(`org_name IN [${config.orgNames.map(o => `'${o}'`)}]`);
   if (config.labelIntersect) {
     return '(' + config.labelIntersect.map(l => {
-      const data = getGitHubData([l]);
+      const data = getGitHubData([l], config.injectLabelData);
       const arr: string[] = [];
       if (data.githubRepos.length > 0) arr.push(`repo_id IN [${data.githubRepos.join(',')}]`);
       if (data.githubOrgs.length > 0) arr.push(`org_id IN [${data.githubOrgs.join(',')}]`);
@@ -91,7 +92,7 @@ export const getRepoWhereClauseForClickhouse = (config: QueryConfig): string | n
     }).filter(i => i !== null).join(' AND ') + ')';
   }
   if (config.labelUnion) {
-    const data = getGitHubData(config.labelUnion);
+    const data = getGitHubData(config.labelUnion, config.injectLabelData);
     if (data.githubRepos.length > 0) repoWhereClauseArray.push(`repo_id IN [${data.githubRepos.join(',')}]`);
     if (data.githubOrgs.length > 0) repoWhereClauseArray.push(`org_id IN [${data.githubOrgs.join(',')}]`);
   }
@@ -106,13 +107,13 @@ export const getUserWhereClauseForNeo4j = (config: QueryConfig): string | null =
   if (config.userLogins) userWhereClauseArray.push(`u.login IN [${config.userLogins.map(n => `'${n}'`)}]`);
   if (config.labelIntersect) {
     return '(' + config.labelIntersect.map(l => {
-      const data = getGitHubData([l]);
+      const data = getGitHubData([l], config.injectLabelData);
       if (data.githubUsers.length > 0) return `u.id IN [${data.githubRepos.join(',')}]`;
       return null;
     }).filter(i => i !== null).join(' AND ') + ')';
   }
   if (config.labelUnion) {
-    const data = getGitHubData(config.labelUnion);
+    const data = getGitHubData(config.labelUnion, config.injectLabelData);
     if (data.githubUsers.length > 0) userWhereClauseArray.push(`u.id IN [${data.githubUsers.join(',')}]`);
   }
   const userWhereClause = userWhereClauseArray.length > 0 ? `(${userWhereClauseArray.join(' OR ')})` : null;
@@ -125,13 +126,13 @@ export const getUserWhereClauseForClickhouse = (config: QueryConfig): string | n
   if (config.userLogins) userWhereClauseArray.push(`actor_login IN [${config.userLogins.map(n => `'${n}'`)}]`);
   if (config.labelIntersect) {
     return '(' + config.labelIntersect.map(l => {
-      const data = getGitHubData([l]);
+      const data = getGitHubData([l], config.injectLabelData);
       if (data.githubUsers.length > 0) return `actor_id IN [${data.githubUsers.join(',')}]`;
       return null;
     }).filter(i => i !== null).join(' AND ') + ')';
   }
   if (config.labelUnion) {
-    const data = getGitHubData(config.labelUnion);
+    const data = getGitHubData(config.labelUnion, config.injectLabelData);
     if (data.githubUsers.length > 0) userWhereClauseArray.push(`actor_id IN [${data.githubUsers.join(',')}]`);
   }
   const userWhereClause = userWhereClauseArray.length > 0 ? `(${userWhereClauseArray.join(' OR ')})` : null;
@@ -187,7 +188,7 @@ export const getTimeRangeWhereClauseForClickhouse = (config: QueryConfig): strin
 
 // clickhouse label group condition
 export const getLabelGroupConditionClauseForClickhouse = (config: QueryConfig): string => {
-  const labelData = getLabelData()?.filter(l => l.type === config.groupBy);
+  const labelData = getLabelData(config.injectLabelData)?.filter(l => l.type === config.groupBy);
   if (!labelData || labelData.length === 0) throw new Error(`Invalide group by label: ${config.groupBy}`);
   const idLabelRepoMap = new Map<number, string[]>();
   const idLabelOrgMap = new Map<number, string[]>();
