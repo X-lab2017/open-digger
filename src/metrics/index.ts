@@ -18,4 +18,7 @@ module.exports = {
   chaossIssuesNew: chaossIssuesNew,
   chaossIssuesClosed: chaossIssuesClosed,
   chaossBusFactor: chaossBusFactor,
+  chaossChangeRequestsAccepted: chaossChangeRequestsAccepted,
+  chaossChangeRequestsDeclined: chaossChangeRequestsDeclined,
+  chaossChangeRequestsAcceptedRation: chaossChangeRequestsAcceptedRation,
 }
