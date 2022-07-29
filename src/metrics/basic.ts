@@ -108,7 +108,7 @@ export const getUserWhereClauseForNeo4j = (config: QueryConfig): string | null =
   if (config.labelIntersect) {
     return '(' + config.labelIntersect.map(l => {
       const data = getGitHubData([l], config.injectLabelData);
-      if (data.githubUsers.length > 0) return `u.id IN [${data.githubRepos.join(',')}]`;
+      if (data.githubUsers.length > 0) return `u.id IN [${data.githubUsers.join(',')}]`;
       return null;
     }).filter(i => i !== null).join(' AND ') + ')';
   }
