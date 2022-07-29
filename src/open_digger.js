@@ -35,8 +35,6 @@ const openDigger = {
       issuesClosed: func.chaossIssuesClosed,
       busFactor: func.chaossBusFactor,
       changeRequestsAccepted: func.chaossChangeRequestsAccepted,
-      changeRequestsDeclined: func.chaossChangeRequestsDeclined,
-      changeRequestsAcceptedRation: func.chaossChangeRequestsAcceptedRation,
     }
   },
   relation: {
