@@ -255,3 +255,43 @@ FORMAT JSONCompact`;
     }
   });
 };
+
+export const chaossChangeRequestsDeclined = async (config: QueryConfig) => {
+  config = getMergedConfig(config);
+  const whereClauses: string[] = ["type = 'PullRequestEvent' AND action = 'closed' AND pull_merged = 0"];
+  const repoWhereClause = getRepoWhereClauseForClickhouse(config);
+  if (repoWhereClause) whereClauses.push(repoWhereClause);
+  whereClauses.push(getTimeRangeWhereClauseForClickhouse(config));
+
+  const sql = `
+SELECT
+  id,
+  argMax(name, time) AS name,
+  SUM(count) AS total_count,
+  ${getGroupArrayInsertAtClauseForClickhouse(config, { key: 'change_requests_declined', value: 'count' })}
+FROM
+(
+  SELECT
+    ${getGroupTimeAndIdClauseForClickhouse(config, 'repo')},
+    COUNT() AS count
+  FROM github_log.events
+  WHERE ${whereClauses.join(' AND ')}
+  GROUP BY id, time
+  ${config.limit > 0 ? `ORDER BY count DESC LIMIT ${config.limit} BY time` : ''}
+)
+GROUP BY id
+ORDER BY change_requests_declined[-1] ${config.order}
+FORMAT JSONCompact`;
+
+  const result: any = await clickhouse.query(sql);
+  return result.map(row => {
+    const [ id, name, total_count, count ] = row;
+    return {
+      id,
+      name,
+      total_count,
+      count,
+      ratio: count.map(v => `${(v*100/total_count).toPrecision(2)}%`),
+    }
+  });
+};
