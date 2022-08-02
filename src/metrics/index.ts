@@ -1,5 +1,5 @@
 import { getRepoActivityOrOpenrank, getRepoActivityWithDetail, getUserActivityOrOpenrank, getUserActivityWithDetail } from './activity_openrank';
-import { chaossCodeChangeCommits, chaossBusFactor, chaossIssuesNew, chaossIssuesClosed } from './chaoss';
+import { chaossCodeChangeCommits, chaossBusFactor, chaossIssuesNew, chaossIssuesClosed, chaossChangeRequestsAccepted, chaossChangeRequestsDeclined } from './chaoss';
 import { getAttention } from './attention';
 import { getRelatedUsers } from './related_users';
 
