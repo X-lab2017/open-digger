@@ -295,3 +295,44 @@ FORMAT JSONCompact`;
     }
   });
 };
+
+export const chaossChangeRequestsAcceptedRatio = async (config: QueryConfig) => {
+  config = getMergedConfig(config);
+  const whereClauses: string[] = ["type = 'PullRequestEvent' AND action = 'closed'"];
+  const repoWhereClause = getRepoWhereClauseForClickhouse(config);
+  if (repoWhereClause) whereClauses.push(repoWhereClause);
+  whereClauses.push(getTimeRangeWhereClauseForClickhouse(config));
+
+  const sql = `
+SELECT
+  id,
+  argMax(name, time) AS name,
+  ${getGroupArrayInsertAtClauseForClickhouse(config, { key: 'accepted'})}
+  ${getGroupArrayInsertAtClauseForClickhouse(config, { key: 'declined'})}
+FROM
+(
+  SELECT
+    ${getGroupTimeAndIdClauseForClickhouse(config, 'repo')},
+    countIf(pull_merged = 1) AS accepted,
+    countIf(pull_merged = 0) AS declined
+  FROM github_log.events
+  WHERE ${whereClauses.join(' AND ')}
+  GROUP BY id, time
+  ${config.limit > 0 ? `ORDER BY accepted DESC LIMIT ${config.limit} BY time` : ''}
+)
+WHERE ${whereClauses.join(' AND ')}
+GROUP BY id
+ORDER BY accepted[-1] ${config.order}
+FORMAT JSONCompact`;
+
+  const result: any = await clickhouse.query(sql);
+  return result.map(row => {
+    const [ id, name,accepted,declined ] = row;
+    return {
+      id,
+      name,
+      accepted,
+      declined,
+    }
+  });
+};
