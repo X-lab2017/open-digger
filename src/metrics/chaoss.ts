@@ -1,4 +1,5 @@
 import {
+  filterEnumType,
   getGroupArrayInsertAtClauseForClickhouse,
   getGroupTimeAndIdClauseForClickhouse,
   getMergedConfig,
@@ -139,8 +140,7 @@ interface BusFactorOptions {
 }
 export const chaossBusFactor = async (config: QueryConfig<BusFactorOptions>) => {
   config = getMergedConfig(config);
-  let by = config.options?.by ?? 'activity';
-  if (by !== 'commit' && by !== 'change request' && by !== 'activity') by = 'activity';
+  const by = filterEnumType(config.options?.by, ['commit', 'change request', 'activity'], 'activity');
   const whereClauses: string[] = [];
   if (by === 'commit') {
     whereClauses.push("type = 'PushEvent'")
@@ -292,6 +292,69 @@ FORMAT JSONCompact`;
       total_count,
       count,
       ratio: count.map(v => `${(v*100/total_count).toPrecision(2)}%`),
+    }
+  });
+};
+
+interface IssueResolutionDurationOptions {
+  by: 'open' | 'close';
+  type: 'avg' | 'median';
+  unit: 'week' | 'day' | 'hour' | 'minute';
+}
+export const chaossIssueResolutionDuration = async (config: QueryConfig<IssueResolutionDurationOptions>) => {
+  config = getMergedConfig(config);
+  const whereClauses: string[] = ["type = 'IssuesEvent'"];
+  const repoWhereClause = getRepoWhereClauseForClickhouse(config);
+  if (repoWhereClause) whereClauses.push(repoWhereClause);
+  
+  const endDate = new Date(`${config.endYear}-${config.endMonth}-1`);
+  endDate.setMonth(config.endMonth);  // find next month
+  
+  let by = filterEnumType(config.options?.by, ['open', 'close'], 'open');
+  const byCol = by === 'open' ? 'opened_at' : 'closed_at';
+  let type = filterEnumType(config.options?.type, ['avg', 'median'], 'avg');
+  let unit = filterEnumType(config.options?.unit, ['week', 'day', 'hour', 'minute'], 'day');
+  
+  const sql = `
+SELECT
+  id,
+  argMax(name, time) AS name,
+  ${getGroupArrayInsertAtClauseForClickhouse(config, { key: `resolution_duration`, defaultValue: 'NaN' })}
+FROM
+(
+  SELECT
+    ${getGroupTimeAndIdClauseForClickhouse(config, 'repo', byCol)},
+    round(${type}(dateDiff('${unit}', opened_at, closed_at)), ${config.percision}) AS resolution_duration
+  FROM
+  (
+    SELECT
+      repo_id,
+      argMax(repo_name, created_at) AS repo_name,
+      org_id,
+      argMax(org_login, created_at) AS org_login,
+      issue_number,
+      argMaxIf(action, created_at, action IN ('opened', 'closed' , 'reopened')) AS last_action,
+      maxIf(created_at, action = 'opened') AS opened_at,
+      maxIf(created_at, action = 'closed') AS closed_at
+    FROM github_log.events
+    WHERE ${whereClauses.join(' AND ')}
+    GROUP BY repo_id, org_id, issue_number
+    HAVING ${byCol} >= toDate('${config.startYear}-${config.startMonth}-1') AND ${byCol} < toDate('${endDate.getFullYear()}-${endDate.getMonth() + 1}-1') AND last_action='closed'
+  )
+  GROUP BY id, time
+  ${config.limit > 0 ? `ORDER BY resolution_duration ${config.order} LIMIT ${config.limit} BY time` : ''}
+)
+GROUP BY id
+ORDER BY resolution_duration[-1] ${config.order}
+FORMAT JSONCompact`;
+
+  const result: any = await clickhouse.query(sql);
+  return result.map(row => {
+    const [ id, name, resolution_duration ] = row;
+    return {
+      id,
+      name,
+      resolution_duration,
     }
   });
 };
