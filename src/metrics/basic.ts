@@ -257,3 +257,8 @@ export const getGroupTimeAndIdClauseForClickhouse = (config: QueryConfig, type: 
     }
   })()}`;
 }
+
+export const filterEnumType = (value: any, types: string[], defautlValue: string): string => {
+  if (!value || !types.includes(value)) return defautlValue;
+  return value;
+}
