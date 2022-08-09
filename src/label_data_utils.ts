@@ -51,7 +51,7 @@ export function getLabelData(injectLabelData?: any[]): ParsedLabelItem[] {
   readPath(labelInputPath, '', f => {
     if (!f.endsWith('.yml')) return;
     // convert windows favor path to linux favor path
-    const identifier = `:${(f.endsWith(indexFileName) ? f.slice(0, f.indexOf(indexFileName)) : f.slice(0, f.indexOf(labelFileSuffix)))}`.split(path.sep).join(path.posix.sep);
+    const identifier = processLabelIdentifier(`:${(f.endsWith(indexFileName) ? f.slice(0, f.indexOf(indexFileName)) : f.slice(0, f.indexOf(labelFileSuffix)))}`);
     const content = readFileAsObj(path.join(labelInputPath, f));
     labelMap.set(identifier, {
       identifier,
@@ -115,7 +115,7 @@ function parseItem(item: LabelItem, map: Map<string, LabelItem>) {
       case 'label':
         const labels: string[] = item.content.data[key];
         for (const label of labels) {
-          const identifier = label.startsWith(':') ? label : path.join(item.identifier, label);
+          const identifier = label.startsWith(':') ? label : processLabelIdentifier(path.join(item.identifier, label));
           const innerItem = map.get(identifier);
           if (!innerItem) {
             throw new Error(`Can not find nest identifier ${identifier} for ${item.identifier}`);
@@ -133,6 +133,10 @@ function parseItem(item: LabelItem, map: Map<string, LabelItem>) {
     }
   }
   item.parsed = true;
+}
+
+function processLabelIdentifier(identifier: string): string {
+  return identifier.split(path.sep).join(path.posix.sep);
 }
 
 function labelDataToGitHubData(data: ParsedLabelItem[]): GitHubData {
