@@ -46,7 +46,7 @@ export function getLabelData(injectLabelData?: any[]): ParsedLabelItem[] {
     return [];
   }
   const labelMap = new Map<string, LabelItem>();
-  const indexFileName = '/index.yml';
+  const indexFileName = `${path.sep}index.yml`;
   const labelFileSuffix = '.yml';
   readPath(labelInputPath, '', f => {
     if (!f.endsWith('.yml')) return;
