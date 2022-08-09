@@ -50,7 +50,8 @@ export function getLabelData(injectLabelData?: any[]): ParsedLabelItem[] {
   const labelFileSuffix = '.yml';
   readPath(labelInputPath, '', f => {
     if (!f.endsWith('.yml')) return;
-    const identifier = `:${(f.endsWith(indexFileName) ? f.slice(0, f.indexOf(indexFileName)) : f.slice(0, f.indexOf(labelFileSuffix)))}`;
+    // convert windows favor path to linux favor path
+    const identifier = `:${(f.endsWith(indexFileName) ? f.slice(0, f.indexOf(indexFileName)) : f.slice(0, f.indexOf(labelFileSuffix)))}`.split(path.sep).join(path.posix.sep);
     const content = readFileAsObj(path.join(labelInputPath, f));
     labelMap.set(identifier, {
       identifier,
