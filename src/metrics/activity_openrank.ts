@@ -58,7 +58,7 @@ export const getRepoActivityOrOpenrank = async (config: QueryConfig, type: 'acti
     if (config.order === 'ASC') resultArr.sort((a, b) => a[type][a[type].length - 1] - b[type][b[type].length - 1]);
     if (config.order === 'DESC') resultArr.sort((a, b) => b[type][b[type].length - 1] - a[type][a[type].length - 1]);
     resultArr.forEach(i => i[type] = i[type].map(v => parseFloat(v.toFixed(config.percision))));
-    return resultArr.slice(0, config.limit);
+    return resultArr.slice(0, config.limit > 0 ? config.limit : undefined);
   }
 }
 
