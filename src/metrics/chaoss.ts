@@ -358,3 +358,62 @@ FORMAT JSONCompact`;
     }
   });
 };
+
+interface IssueAgeOptions {
+  type: 'avg' | 'median';
+  unit: 'week' | 'day' | 'hour' | 'minute';
+}
+export const chaossIssueAge = async (config: QueryConfig<IssueAgeOptions>) => {
+  config = getMergedConfig(config);
+  const whereClauses: string[] = ["type = 'IssuesEvent'"];
+  const repoWhereClause = getRepoWhereClauseForClickhouse(config);
+  if (repoWhereClause) whereClauses.push(repoWhereClause);
+
+  const endDate = new Date(`${config.endYear}-${config.endMonth}-1`);
+  endDate.setMonth(config.endMonth);
+  
+  let type = filterEnumType(config.options?.type,['avg','median'],'avg');
+  let unit = filterEnumType(config.options?.unit,['week','day','hour','minute'],'day');
+
+  const sql = `
+SELECT 
+  id, 
+  argMax(name, time) AS name,
+  ${getGroupArrayInsertAtClauseForClickhouse(config, {key:`issue_age`, defaultValue: 'NaN'})}
+FROM
+(
+  SELECT
+    ${getGroupTimeAndIdClauseForClickhouse(config, 'repo')},
+    round(${type}(dateDiff('${unit}', opened_at, '${endDate.getFullYear()}-${endDate.getMonth()+1}-1')),${config.percision}) AS issue_age
+  FROM
+  (
+    SELECT
+      repo_id,
+      argMax(repo_name, created_at) AS repo_name,
+      org_id,
+      argMax(org_login, created_at) AS org_login,
+      issue_number,
+      argMaxIf(action, created_at, action IN ('opened', 'reopened', 'closed')) AS last_action,
+      maxIf(created_at, action = 'opened') AS opened_at
+    FROM github_log.events
+    WHERE ${whereClauses.join('AND')}
+    GROUP BY repo_id, org_id, issue_number
+    HAVING opened_at < toDate('${endDate.getFullYear()}-${endDate.getMonth()+1}-1') AND (last_action='opened' OR last_action='reopened')
+  )
+  GROUP BY id,time
+  ${config.limit > 0 ? `ORDER BY issue_age ${config.order} LIMIT ${config.limit} BY time` : ''} 
+)
+GROUP BY id
+ORDER BY issue_age[-1] ${config.order}
+FORMAT JSONCompact`;
+
+  const result: any = await clickhouse.query(sql);
+  return result.map(row => {
+    const [id, name, issue_age] = row;
+    return {
+      id,
+      name,
+      issue_age,
+    }
+  });
+};
