@@ -383,8 +383,8 @@ SELECT
 FROM
 (
   SELECT
-    ${getGroupTimeAndIdClauseForClickhouse(config, 'repo')},
-    round(${type}(dateDiff('${unit}', opened_at, '${endDate.getFullYear()}-${endDate.getMonth()+1}-1')),${config.percision}) AS issue_age
+    ${getGroupTimeAndIdClauseForClickhouse(config, 'repo','opened_at')},
+    round(${type}(dateDiff('${unit}', opened_at, toDate('${endDate.getFullYear()}-${endDate.getMonth()+1}'))),${config.percision}) AS issue_age
   FROM
   (
     SELECT
