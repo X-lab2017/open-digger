@@ -6,7 +6,7 @@ from basic import getGroupArrayInsertAtClauseForClickhouse,\
   QueryConfig 
 import db.clickhouse as clickhouse
 
-def get_Attention(config: QueryConfig):
+def getAttention(config: QueryConfig):
     """_summary_
 
     Args:
@@ -18,35 +18,35 @@ def get_Attention(config: QueryConfig):
     if repoWhereClause != None: whereClauses.append(repoWhereClause)
     whereClauses.append(getTimeRangeWhereClauseForClickhouse(config))
     
-    sql = '\
-    SELECT\
-    id,\
-    argMax(name, time) AS name,\
-    {}\
-    FROM\
+    sql = ' \
+    SELECT \
+    id, \
+    argMax(name, time) AS name, \
+    {} \
+    FROM \
     ('.format(getGroupArrayInsertAtClauseForClickhouse(config, { 'key': 'attention' })) + \
-    'SELECT\
-        {},\
-        countIf(type=\'WatchEvent\') AS stars,\
-        countIf(type=\'ForkEvent\') AS forks,\
-        stars + 2 * forks AS attention\
-    FROM github_log.year2016\
-    WHERE {}\
-    GROUP BY id, time\
-    {}\
-    )\
-    GROUP BY id\
-    ORDER BY attention[-1] {}\
-    FORMAT JSONCompact'.format(getGroupTimeAndIdClauseForClickhouse(config), ' AND '.join(whereClauses), \
-                               'ORDER BY attention DESC LIMIT {} BY time'.format(config.get('limit')) if config.get('limit') > 0 else '',\
+    'SELECT \
+        {}, \
+        countIf(type=\'WatchEvent\') AS stars, \
+        countIf(type=\'ForkEvent\') AS forks, \
+        stars + 2 * forks AS attention \
+    FROM github_log.events \
+    WHERE {} \
+    GROUP BY id, time \
+    {} \
+    ) \
+    GROUP BY id \
+    ORDER BY attention[-1] {} \
+    FORMAT JSONCompact'.format(getGroupTimeAndIdClauseForClickhouse(config), ' AND '.join(whereClauses), 
+                               'ORDER BY attention DESC LIMIT {} BY time'.format(config.get('limit')) if config.get('limit') > 0 else '', 
                                config.get('order'))
 
     result = clickhouse.query(sql)
     def getResult(row):
         id, name, attention = row
-        return [
-        id,
-        name,
-        attention,
-        ]
+        return {
+        'id':id,
+        'name':name,
+        'attention':attention,
+        }
     return list(map(getResult, result))

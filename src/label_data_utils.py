@@ -1,8 +1,6 @@
-# import { readdirSync, statSync } from 'fs'
 import os
 import yaml
 from typing import List
-# import { readFileAsObj } from './utils'
 labelInputDir = '../labeled_data'
 labelInputPath = os.path.join(os.path.dirname(os.path.abspath(__file__)), labelInputDir)
 

@@ -1,4 +1,3 @@
-# import { merge } from 'lodash';
 from itertools import groupby
 from numpy import append
 from label_data_utils import getGitHubData, getLabelData
@@ -41,15 +40,15 @@ def getMergedConfig(config):
     return defaultConfig
 
 
-async def forEveryMonthByConfig(config, func):
+def forEveryMonthByConfig(config, func):
     return forEveryMonth(config.get('startYear'), config.get('startMonth'), config.get('endYear'), config.get('endMonth'), func)
 
-async def forEveryMonth(startYear, startMonth, endYear, endMonth, func):
+def forEveryMonth(startYear, startMonth, endYear, endMonth, func):
     for y in range(startYear, endYear + 1):
         begin_month = startMonth if y == startYear else 1
         end_month = endMonth if y == endYear else 12
         for m in range(begin_month, end_month + 1):
-            await func(y, m)
+            func(y, m)
 
 # Repo
 def getRepoWhereClauseForNeo4j(config):
@@ -57,14 +56,14 @@ def getRepoWhereClauseForNeo4j(config):
         data = getGitHubData([l])
         data = EasyDict(data)
         arr = []
-        if len(data.githubRepos) > 0: arr.append('r.id IN [{}]'.format(','.join(data.githubRepos)))
-        if len(data.githubOrgs) > 0: arr.append('r.org_id IN [{}]'.format(','.join(data.githubOrgs)))
+        if len(data.githubRepos) > 0: arr.append('r.id IN [{}]'.format(','.join(map(str, data.githubRepos))))
+        if len(data.githubOrgs) > 0: arr.append('r.org_id IN [{}]'.format(','.join(map(str, data.githubOrgs))))
         if len(arr) == 0: return None
         return '({})'.format(' OR '.join(arr))
     repoWhereClauseArray = []
-    if config.get('repoIds'): repoWhereClauseArray.append('r.id IN [{}]'.format(','.join(config.get('repoIds'))))
+    if config.get('repoIds'): repoWhereClauseArray.append('r.id IN [{}]'.format(','.join(map(str, config.get('repoIds')))))
     if config.get('repoNames'): repoWhereClauseArray.append('r.name IN [{}]'.format(list(map(lambda n:'\'{}\''.format(n)), config.get('repoNames'))))
-    if config.get('orgIds'): repoWhereClauseArray.append('r.org_id IN [{}]'.format(','.join(config.get('orgIds'))))
+    if config.get('orgIds'): repoWhereClauseArray.append('r.org_id IN [{}]'.format(','.join(map(str, config.get('orgIds')))))
     if config.get('orgNames'): repoWhereClauseArray.append('r.org_name IN [{}]'.format(list(map(lambda o:'\'{}\''.format(o)), config.get('orgNames'))))
     if config.get('labelIntersect'):
         return '(' + ' AND '.join(list(filter(lambda i: i != None, list(map(process, config.get('labelIntersect')))))) + ')'
@@ -108,7 +107,7 @@ def getUserWhereClauseForNeo4j(config):
         return None
     userWhereClauseArray = []
     if config.get('userIds'): userWhereClauseArray.append('u.id IN [{}]'.format(','.join(config.get('userIds'))))
-    if config.get('userLogins'): userWhereClauseArray.append('u.login IN [{}]'.format(list(map(lambda n:'\'{}\''.format(n)), config.get('userLogins'))))
+    if config.get('userLogins'): userWhereClauseArray.append('u.login IN [{}]'.format(list(map(lambda n:'\'{}\''.format(n), config.get('userLogins')))))
     if config.get('labelIntersect'):
         return '(' + ' AND '.join(list(filter(lambda i: i != None, list(map(process, config.get('labelIntersect')))))) + ')'
     if config.get('labelUnion'):
@@ -125,7 +124,7 @@ def getUserWhereClauseForClickhouse(config):
         return None
     userWhereClauseArray = []
     if config.get('userIds'): userWhereClauseArray.append('actor_id IN [{}]'.format(','.join(config.get('userIds'))))
-    if config.get('userLogins'): userWhereClauseArray.append('actor_login IN [{}]'.format(list(map(lambda n:'\'{}\''.format(n)), config.get('userLogins'))))
+    if config.get('userLogins'): userWhereClauseArray.append('actor_login IN [{}]'.format(list(map(lambda n:'\'{}\''.format(n), config.get('userLogins')))))
     if config.get('labelIntersect'):
         return '(' + ' AND '.join(list(filter(lambda i: i != None, list(map(process, config.get('labelIntersect')))))) + ')'
     if config.get('labelUnion'):
@@ -135,41 +134,41 @@ def getUserWhereClauseForClickhouse(config):
     return userWhereClause
 
 # Time
-async def getTimeRangeWhereClauseForNeo4j(config, type):
+def getTimeRangeWhereClauseForNeo4j(config, type):
     timeWhereClauseArray = []
-    await forEveryMonthByConfig(config, lambda y, m: timeWhereClauseArray.append('{}.activity_{}{} > 0'.format(type, y, m)))
+    forEveryMonthByConfig(config, lambda y, m: timeWhereClauseArray.append('{}.activity_{}{} > 0'.format(type, y, m)))
     if len(timeWhereClauseArray) == 0: raise Exception('Not valid time range.')
     timeWhereClause = '({})'.format(' OR '.join(timeWhereClauseArray))
     return timeWhereClause
 
-async def getTimeRangeSumClauseForNeo4j(config, type):
-    async def process_quarter(y, m, lastQuarter = 0):
+def getTimeRangeSumClauseForNeo4j(config, type):
+    def process_quarter(y, m, lastQuarter = 0):
         q = math.ceil(m / 3)
         if q != lastQuarter: timeRangeSumClauseArray.append([])
         timeRangeSumClauseArray[len(timeRangeSumClauseArray) - 1].append('COALESCE({}_{}{}, 0.0)'.format(type, y, m))
         lastQuarter = q
-    async def process_year(y, m, lastYear = 0):
+    def process_year(y, m, lastYear = 0):
         if y != lastYear: timeRangeSumClauseArray.append([])
         timeRangeSumClauseArray[len(timeRangeSumClauseArray) - 1].append('COALESCE({}_{}{}, 0.0)'.format(type, y, m))
         lastYear = y
     timeRangeSumClauseArray = []
     if config.get('groupTimeRange') == 'month':
         # for every month individual, every element belongs to a individual element
-        await forEveryMonthByConfig(config, lambda y, m: timeRangeSumClauseArray.append(['COALESCE({}_{}{}, 0.0)'.format(type, y, m)]))
+        forEveryMonthByConfig(config, lambda y, m: timeRangeSumClauseArray.append(['COALESCE({}_{}{}, 0.0)'.format(type, y, m)]))
     elif config.get('groupTimeRange') == 'quarter':
         # for every quarter, need to find out when to push a new element by quarter
         lastQuarter = 0
-        await forEveryMonthByConfig(config, process_quarter)
+        forEveryMonthByConfig(config, process_quarter)
     elif config.get('groupTimeRange') == 'year':
         # for every year, need to find out when to push a new element by the year;
         lastYear = 0
-        await forEveryMonthByConfig(config, process_year)
+        forEveryMonthByConfig(config, process_year)
     else:
         # for all to single one, push to the first element
         timeRangeSumClauseArray.push([])
-        await forEveryMonthByConfig(config, lambda y, m: timeRangeSumClauseArray[0].append('COALESCE({}_{}{}, 0.0)'.format(type, y, m)))
+        forEveryMonthByConfig(config, lambda y, m: timeRangeSumClauseArray[0].append('COALESCE({}_{}{}, 0.0)'.format(type, y, m)))
     if len(timeRangeSumClauseArray) == 0: raise Exception('Not valid time range.')
-    timeRangeSumClause = list(map(lambda i: 'round({}, {})'.format(' + '.join(i), config.get('percision'))), timeRangeSumClauseArray)
+    timeRangeSumClause = list(map(lambda i: 'round({}, {})'.format(' + '.join(i), config.get('percision')), timeRangeSumClauseArray))
     return timeRangeSumClause
 
 def getTimeRangeWhereClauseForClickhouse(config):

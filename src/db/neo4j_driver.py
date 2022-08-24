@@ -1,10 +1,8 @@
 from py2neo import Node, Relationship, Graph
-# import parser = require('parse-neo4j');
 import sys
 import os
 from easydict import EasyDict
-sys.path.append(os.getcwd())
-from src.config import getConfig
+from config import getConfig
 
 _driver = None
 
@@ -16,12 +14,5 @@ def getClient():
     return _driver
       
 def query(query_sql):
-    print(query_sql)
-    result = getClient().run(query_sql) #返回的结果是一个cursor对象
+    result = getClient().run(query_sql) # return a cursor object
     return result
-
-# export function parseRecord<T = any>(record: any): T {
-#   return parser.parseRecord(record)._fields[0];
-# }
-# resultaa = query("MATCH (r:Repo{name: 'pingcap/tidb'}) RETURN r")
-# print(resultaa)

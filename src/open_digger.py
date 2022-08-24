@@ -4,32 +4,46 @@ from functools import cmp_to_key
 import db.neo4j_driver as neo4j_driver
 import db.clickhouse as clickhouse
 import plotly
+import plotly.graph_objs as go
+import plotly.express as px
 
 class openDigger(object):
     def __init__(self):
         self.label = label
-        self.render = plotly
-
+        self.render = go
     class driver():
         def __init__(self):
           self.clickhouse = clickhouse
           self.neo4j = neo4j_driver
     class quick():
         def showAll(self, repoName, startYear = 2015, endYear = 2021):
-            query_sql = "MATCH (r:Repo{name: '%s"%(repoName)+"'}) RETURN r"
-            # query_sql = "MATCH (r:Repo) RETURN r"
-            data = openDigger.driver().neo4j.query(query_sql)
-            print(data.keys())
-            values = [
-                {'y': [], 'mode': 'scatter', 'name': 'activity'},
-                {'y': [], 'mode': 'scatter', 'name': 'openrank'}]
+            query_sql = "MATCH (r:Repo{name:\'"+str(repoName)+"\'}) RETURN r;"
+            data = openDigger().driver().neo4j.query(query_sql)
+            activityValues = []
+            openrankValues = []
             for year in range(startYear, endYear + 1):
                 for month in range(1, 13):
-                    k = str(year)+str(month)
-                    values[0]['y'].append(data[0]['activity_' + k])
-                    values[1]['y'].append(data[0]['open_rank_' + k])
-            openDigger.render.plotly(values, {'title': "Activity/OpenRank for {} from {} to {}".format(repoName, startYear, endYear)});
-    def getRank(values, nameGetter, valueGetter):
+                    k = '{}{}'.format(year, month)
+                    activityValues.append(data[0].get('activity_{}'.format(k)))
+                    openrankValues.append(data[0].get('open_rank_{}'.format(k)))
+            fig = openDigger().render.Figure()
+            fig.add_trace(
+                openDigger().render.Scatter(
+                    y=activityValues,
+                    mode="markers+lines",
+                    name='activity'  
+            ))
+            fig.add_trace(
+                openDigger().render.Scatter(
+                    y=openrankValues,
+                    mode="markers+lines",
+                    name='openrank'  
+            ))
+            fig.update_layout(
+                title="Activity/OpenRank for {} from {} to {}".format(repoName, startYear, endYear),
+            )
+            fig.show()
+    def getRank(self, values, nameGetter, valueGetter):
         resultMap = {}
         for v in values:
             resultMap[nameGetter(v)] = []
@@ -42,15 +56,15 @@ class openDigger(object):
 
     class index():
         class activity():
-            def getRepoActivity(config): return func.getRepoActivity(config)
-            def getUserActivity(config): return func.getUserActivity(config)
-            def getRepoActivityWithDetail(config): return func.getRepoActivityWithDetail(config)
-            def getUserActivityWithDetail(config): return func.getUserActivityWithDetail(config)
+            def getRepoActivity(self, config): return func.getRepoActivity(config)
+            def getUserActivity(self, config): return func.getUserActivity(config)
+            def getRepoActivityWithDetail(self, config): return func.getRepoActivityWithDetail(config)
+            def getUserActivityWithDetail(self, config): return func.getUserActivityWithDetail(config)
         class openrank():
-            def getRepoOpenrank(config): return func.getRepoOpenrank(config)
-            def getUserOpenrank(config): return func.getUserOpenrank(config)
+            def getRepoOpenrank(self, config): return func.getRepoOpenrank(config)
+            def getUserOpenrank(self, config): return func.getUserOpenrank(config)
         class attention():
-            def getAttention(self,config): return func.getAttention(config)
+            def getAttention(self, config): return func.getAttention(config)
 
     class metric():
         class chaoss():

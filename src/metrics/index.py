@@ -1,26 +1,26 @@
 import sys
 import os
 import chaoss
-from activity_openrank import get_RepoActivityOrOpenrank, get_RepoActivityWithDetail, get_UserActivityOrOpenrank, get_UserActivityWithDetail 
-from attention import get_Attention
-from related_users import get_RelatedUsers 
+import activity_openrank
+import attention
+import related_users 
 
 def getRepoActivity(config):
-    return get_RepoActivityOrOpenrank(config, 'activity')
+    return activity_openrank.getRepoActivityOrOpenrank(config, 'activity')
 def getUserActivity(config):
-    return get_UserActivityOrOpenrank(config, 'activity')
+    return activity_openrank.getUserActivityOrOpenrank(config, 'activity')
 def getRepoActivityWithDetail(config):
-    return get_RepoActivityWithDetail(config)
+    return activity_openrank.getRepoActivityWithDetail(config)
 def getUserActivityWithDetail(config):
-    return get_UserActivityWithDetail(config)
+    return activity_openrank.getUserActivityWithDetail(config)
 def getRepoOpenrank(config):
-    get_RepoActivityOrOpenrank(config, 'open_rank')
+    return activity_openrank.getRepoActivityOrOpenrank(config, 'open_rank')
 def getUserOpenrank(config):
-    return get_UserActivityOrOpenrank(config, 'open_rank')
+    return activity_openrank.getUserActivityOrOpenrank(config, 'open_rank')
 def getRelatedUsers(config):
-    return get_RelatedUsers(config)
+    return related_users.getRelatedUsers(config)
 def getAttention(config):
-    return get_Attention(config)
+    return attention.getAttention(config)
 
 # chaoss metrics
 def chaossCodeChangeCommits(config): 

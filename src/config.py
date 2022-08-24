@@ -1,6 +1,3 @@
-# import { merge } from 'lodash';
-from easydict import EasyDict
-# from local_config import local_config
 inited = False
 config = {
   'general': {
@@ -30,20 +27,23 @@ config = {
     }
   },
   'ci': {
-    'token':'process.env.GITHUB_TOKEN',
+    'token':'',
   }
 };
-# print(config)
+def mergeConfig(base_config, local_config):
+    for key, val in local_config.items():
+            if isinstance(val, dict):
+                mergeConfig(base_config[key], val)
+            else:
+                base_config[key] = val
+    return base_config
 def getConfig():
     global config
     if not inited: 
         try:
             from local_config import local_config
-            config = dict(**config, **local_config)  # merge的方法，值不同怎么办？
-            # config.update(local_config)
+            config = mergeConfig(config, local_config)
             return config
         except:
           return config
     return config
-# print(getConfig())
-# print(dict(config.items(), local_config.items()))
