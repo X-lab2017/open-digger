@@ -1,0 +1,4 @@
+easydict==1.9
+py2neo==2021.2.3
+plotly==5.9.0
+clickhouse-driver==0.2.3
