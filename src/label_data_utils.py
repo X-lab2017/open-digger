@@ -1,5 +1,6 @@
 import os
 import yaml
+import platform
 from typing import List
 labelInputDir = '../labeled_data'
 labelInputPath = os.path.join(os.path.dirname(os.path.abspath(__file__)), labelInputDir)
@@ -132,7 +133,9 @@ def parseItem(item, map_item):
     item['parsed'] = True
 
 def processLabelIdentifier(identifier: str)-> str:
-    return os.path.altsep.join(identifier.split(os.path.sep))
+    if platform.system() == 'Windows':
+        return os.path.altsep.join(identifier.split(os.path.sep))
+    else: return identifier
 
 def labelDataToGitHubData(data)->GitHubData:
     """_summary_
