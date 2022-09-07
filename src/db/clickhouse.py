@@ -9,12 +9,8 @@ _client = None
 def getClient(): 
     global _client
     if _client == None: 
-        clickhouse_config = EasyDict(EasyDict(getConfig()).db.clickhouse)
-        host = clickhouse_config.host
-        port = clickhouse_config.port
-        user = clickhouse_config.user
-        password = clickhouse_config.password
-        _client = Client(host,port)
+        config = EasyDict((getConfig()).get('db').get('clickhouse'))
+        _client = Client(config.host, config.port, config.database, config.user, config.password)
     return _client
 
 def query(q):

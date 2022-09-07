@@ -16,3 +16,7 @@ dist
 node_modules
 
 sample_data/data
+
+*/**/__init__.py
+*/**/__pycache__
+src/local_config.py

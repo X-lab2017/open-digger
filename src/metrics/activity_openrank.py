@@ -21,7 +21,7 @@ OPEN_PULL_WEIGHT = 3
 REVIEW_COMMENT_WEIGHT = 4
 PULL_MERGED_WEIGHT = 2
 
-def getRepoActivityOrOpenrank(config, type='activity'):
+def getRepoActivityOrOpenrank(config, calType='activity'):
     """_summary_
 
     Args:
@@ -33,37 +33,37 @@ def getRepoActivityOrOpenrank(config, type='activity'):
     config = getMergedConfig(config)
     repoWhereClause = getRepoWhereClauseForNeo4j(config)
     timeWhereClause = getTimeRangeWhereClauseForNeo4j(config, 'r')
-    timeActivityOrOpenrankClause = getTimeRangeSumClauseForNeo4j(config, 'r.{}'.format(type))
+    timeActivityOrOpenrankClause = getTimeRangeSumClauseForNeo4j(config, 'r.{}'.format(calType))
     if not config.get('groupBy'):
-        query = 'MATCH (r:Repo) WHERE {} {} RETURN r.name AS repo_name, r.org_login AS org, [{}] AS {} ORDER BY reverse({}) {} {};'.format(repoWhereClause+' AND ' if repoWhereClause else '', timeWhereClause, ','.join(timeActivityOrOpenrankClause), type, type, config.get('order'), 'LIMIT {}'.format(config.get('limit')) if config.get('limit') > 0 else '')
+        query = 'MATCH (r:Repo) WHERE {} {} RETURN r.name AS repo_name, r.org_login AS org, [{}] AS {} ORDER BY reverse({}) {} {};'.format(repoWhereClause+' AND ' if repoWhereClause else '', timeWhereClause, ','.join(timeActivityOrOpenrankClause), calType, calType, config.get('order'), 'LIMIT {}'.format(config.get('limit')) if config.get('limit') > 0 else '')
         return neo4j_driver.query(query)
     elif config.get('groupBy') == 'org':
-        query = 'MATCH (r:Repo) WHERE {} {} RETURN r.org_login AS org_login, count(r.id) AS repo_count, [{}] AS {} ORDER BY reverse({}) {} {};'.format(repoWhereClause+' AND ' if repoWhereClause else '', timeWhereClause, list(map(lambda i:'round(SUM({}), {})'.format(i, config.get('percision')), timeActivityOrOpenrankClause)), type, type, config.get('order'), 'LIMIT {}'.format(config.get('limit')) if config.get('limit') > 0 else '')
+        query = 'MATCH (r:Repo) WHERE {} {} RETURN r.org_login AS org_login, count(r.id) AS repo_count, [{}] AS {} ORDER BY reverse({}) {} {};'.format(repoWhereClause+' AND ' if repoWhereClause else '', timeWhereClause, list(map(lambda i:'round(SUM({}), {})'.format(i, config.get('percision')), timeActivityOrOpenrankClause)), calType, calType, config.get('order'), 'LIMIT {}'.format(config.get('limit')) if config.get('limit') > 0 else '')
         return neo4j_driver.query(query)
     else:
-        query = 'MATCH (r:Repo) WHERE {} {} RETURN r.id AS repo_id, r.org_id AS org_id, [{}] AS {};'.format(repoWhereClause+' AND ' if repoWhereClause else '', timeWhereClause, ','.join(timeActivityOrOpenrankClause), type)
+        query = 'MATCH (r:Repo) WHERE {} {} RETURN r.id AS repo_id, r.org_id AS org_id, [{}] AS {};'.format(repoWhereClause + ' AND ' if repoWhereClause else '', timeWhereClause, ','.join(timeActivityOrOpenrankClause), calType)
         queryResult = neo4j_driver.query(query)
-        labelData = filter(lambda l: l.type == config.get('groupBy'), getLabelData()) if getLabelData() != None else None 
+        labelData = list(filter(lambda l: l.get('type') == config.get('groupBy'), getLabelData())) if getLabelData() != None else None
         result = {}
         if labelData == None: return None
         for row in queryResult:
-            label = [l for l in labelData if l.get('githubRepos').find(row.get('repo_id')) or l.get('githubOrgs').find(row.get('org_id'))][0]
-            if label == None: return None
-            if not label.get('name') in result: values = row[type]
-            else:
-                values = result.get(label.get('name'))[type]
-                for i in range(len(values)):
-                    values[i] += row[type][i]
-            result[label.get('name')] = {
-                'label': label.get('name'),
-                'repo_count': (result.get(label.get('name'))['repo_count'] if label.get('name') in result else 0) + 1,
-                [type]: values,
-            }
+            labels = list(filter(lambda l: int(row.get('repo_id')) in l.get('githubRepos') or int(row.get('org_id')) in l.get('githubOrgs'),labelData))
+            for label in labels:
+                if not label.get('name') in result.keys(): values = row[calType]
+                else:
+                    values = result.get(label.get('name'))[calType]
+                    for i in range(len(values)):
+                        values[i] += row[calType][i]
+                result[label.get('name')] = {
+                    'label': label.get('name'),
+                    'repo_count': (result.get(label.get('name'))['repo_count'] if label.get('name') in result else 0) + 1,
+                }
+                result[label.get('name')][calType] = values
         resultArr = list(result.values())
-        if config.get('order') == 'ASC': resultArr.sort(key = cmp_to_key(lambda a, b: a[type][len(a[type]) - 1] - b[type][len(b[type]) - 1]))
-        if config.get('order') == 'DESC': resultArr.sort(key = cmp_to_key(lambda a, b: b[type][len(b[type]) - 1] - a[type][len(a[type]) - 1]))
+        if config.get('order') == 'ASC': resultArr.sort(key = cmp_to_key(lambda a, b: a[calType][len(a[calType]) - 1] - b[calType][len(b[calType]) - 1]))
+        if config.get('order') == 'DESC': resultArr.sort(key = cmp_to_key(lambda a, b: b[calType][len(b[calType]) - 1] - a[calType][len(a[calType]) - 1]))
         for i in resultArr:
-            i[type] = list(map(lambda v: np.around(np.array(v,dtype=i[type]), config.get('percision')), i[type]))
+            i[calType] = np.around(i[calType])
         return resultArr[0:config.get('limit')]
 
 def getUserActivityOrOpenrank(config, type='activity'):

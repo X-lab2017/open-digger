@@ -15,4 +15,4 @@ def getClient():
       
 def query(query_sql):
     result = getClient().run(query_sql) # return a cursor object
-    return result
+    return result.data()  # transform cursor to list

@@ -6,6 +6,7 @@ import db.clickhouse as clickhouse
 import plotly
 import plotly.graph_objs as go
 import plotly.express as px
+from plotly.subplots import make_subplots
 
 class openDigger(object):
     def __init__(self):
@@ -18,15 +19,15 @@ class openDigger(object):
     class quick():
         def showAll(self, repoName, startYear = 2015, endYear = 2021):
             query_sql = "MATCH (r:Repo{name:\'"+str(repoName)+"\'}) RETURN r;"
-            data = openDigger().driver().neo4j.query(query_sql)
+            data = openDigger().driver().neo4j.query(query_sql)[0]['r']
             activityValues = []
             openrankValues = []
             for year in range(startYear, endYear + 1):
                 for month in range(1, 13):
                     k = '{}{}'.format(year, month)
-                    activityValues.append(data[0].get('activity_{}'.format(k)))
-                    openrankValues.append(data[0].get('open_rank_{}'.format(k)))
-            fig = openDigger().render.Figure()
+                    activityValues.append(data.get('activity_{}'.format(k)))
+                    openrankValues.append(data.get('open_rank_{}'.format(k)))
+            fig = make_subplots(specs=[[{"secondary_y": True}]])
             fig.add_trace(
                 openDigger().render.Scatter(
                     y=activityValues,
@@ -37,8 +38,8 @@ class openDigger(object):
                 openDigger().render.Scatter(
                     y=openrankValues,
                     mode="markers+lines",
-                    name='openrank'  
-            ))
+                    name='openrank'
+            ), secondary_y=True)
             fig.update_layout(
                 title="Activity/OpenRank for {} from {} to {}".format(repoName, startYear, endYear),
             )

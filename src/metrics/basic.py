@@ -56,45 +56,44 @@ def getRepoWhereClauseForNeo4j(config):
         data = getGitHubData([l])
         data = EasyDict(data)
         arr = []
-        if len(data.githubRepos) > 0: arr.append('r.id IN [{}]'.format(','.join(map(str, data.githubRepos))))
-        if len(data.githubOrgs) > 0: arr.append('r.org_id IN [{}]'.format(','.join(map(str, data.githubOrgs))))
+        if len(data.githubRepos) > 0: arr.append('r.id IN {}'.format(data.githubRepos))
+        if len(data.githubOrgs) > 0: arr.append('r.org_id IN {}'.format(data.githubOrgs))
         if len(arr) == 0: return None
         return '({})'.format(' OR '.join(arr))
     repoWhereClauseArray = []
-    if config.get('repoIds'): repoWhereClauseArray.append('r.id IN [{}]'.format(','.join(map(str, config.get('repoIds')))))
-    if config.get('repoNames'): repoWhereClauseArray.append('r.name IN [{}]'.format(list(map(lambda n:'\'{}\''.format(n)), config.get('repoNames'))))
-    if config.get('orgIds'): repoWhereClauseArray.append('r.org_id IN [{}]'.format(','.join(map(str, config.get('orgIds')))))
-    if config.get('orgNames'): repoWhereClauseArray.append('r.org_name IN [{}]'.format(list(map(lambda o:'\'{}\''.format(o)), config.get('orgNames'))))
+    if config.get('repoIds'): repoWhereClauseArray.append('r.id IN {}'.format(config.get('repoIds')))
+    if config.get('repoNames'): repoWhereClauseArray.append('r.name IN {}'.format(config.get('repoNames')))
+    if config.get('orgIds'): repoWhereClauseArray.append('r.org_id IN {}'.format(config.get('orgIds')))
+    if config.get('orgNames'): repoWhereClauseArray.append('r.org_name IN {}'.format(config.get('orgNames')))
     if config.get('labelIntersect'):
         return '(' + ' AND '.join(list(filter(lambda i: i != None, list(map(process, config.get('labelIntersect')))))) + ')'
     if config.get('labelUnion'):
         data = EasyDict(getGitHubData(config.get('labelUnion')))
-        if len(data.githubRepos > 0): repoWhereClauseArray.append('r.id IN [{}]'.format(','.join(data.githubRepos)))
-        if len(data.githubOrgs  > 0): repoWhereClauseArray.append('r.org_id IN [{}]'.format(','.join(data.githubOrgs)))
+        if len(data.githubRepos > 0): repoWhereClauseArray.append('r.id IN {}'.format(data.githubRepos))
+        if len(data.githubOrgs  > 0): repoWhereClauseArray.append('r.org_id IN {}'.format(data.githubOrgs))
     repoWhereClause = '({})'.format(' OR '.join(repoWhereClauseArray)) if len(repoWhereClauseArray) > 0 else None
     return repoWhereClause
-  
 
 def getRepoWhereClauseForClickhouse(config):
     def process(l):
         data = getGitHubData([l])
         data = EasyDict(data)
         arr = []
-        if len(data.githubRepos) > 0: arr.append('repo_id IN [{}]'.format(','.join(map(str,data.githubRepos))))
-        if len(data.githubOrgs) > 0: arr.append('org_id IN [{}]'.format(','.join(map(str,data.githubOrgs))))
+        if len(data.githubRepos) > 0: arr.append('repo_id IN {}'.format(data.githubRepos))
+        if len(data.githubOrgs) > 0: arr.append('org_id IN {}'.format(data.githubOrgs))
         if len(arr) == 0: return None
         return '({})'.format(' OR '.join(arr))
     repoWhereClauseArray = []
-    if config.get('repoIds'): repoWhereClauseArray.append('repo_id IN [{}]'.format(','.join(config.get('repoIds'))))
-    if config.get('repoNames'): repoWhereClauseArray.append('repo_name IN [{}]'.format(list(map(lambda n:'\'{}\''.format(n)), config.get('repoNames'))))
-    if config.get('orgIds'): repoWhereClauseArray.append('org_id IN [{}]'.format(','.join(config.get('orgIds'))))
-    if config.get('orgNames'): repoWhereClauseArray.append('org_name IN [{}]'.format(list(map(lambda o:'\'{}\''.format(o)), config.get('orgNames'))))
+    if config.get('repoIds'): repoWhereClauseArray.append('repo_id IN {}'.format(config.get('repoIds')))
+    if config.get('repoNames'): repoWhereClauseArray.append('repo_name IN {}'.format(config.get('repoNames')))
+    if config.get('orgIds'): repoWhereClauseArray.append('org_id IN {}'.format(config.get('orgIds')))
+    if config.get('orgNames'): repoWhereClauseArray.append('org_name IN {}'.format(config.get('orgNames')))
     if config.get('labelIntersect'):
         return '(' + ' AND '.join(list(filter(lambda i: i != None, list(map(process, config.get('labelIntersect')))))) + ')'
     if config.get('labelUnion'):
         data = EasyDict(getGitHubData(config.get('labelUnion')))
-        if len(data.githubRepos > 0): repoWhereClauseArray.append('repo_idIN [{}]'.format(','.join(data.githubRepos)))
-        if len(data.githubOrgs  > 0): repoWhereClauseArray.append('org_id IN [{}]'.format(','.join(data.githubOrgs)))
+        if len(data.githubRepos > 0): repoWhereClauseArray.append('repo_idIN {}'.format(data.githubRepos))
+        if len(data.githubOrgs  > 0): repoWhereClauseArray.append('org_id IN {}'.format(data.githubOrgs))
     repoWhereClause = '({})'.format(' OR '.join(repoWhereClauseArray)) if len(repoWhereClauseArray) > 0 else None
     return repoWhereClause
   
@@ -103,16 +102,16 @@ def getUserWhereClauseForNeo4j(config):
     def process(l):
         data = getGitHubData([l])
         data = EasyDict(data)
-        if len(data.githubUsers) > 0: return 'u.id IN [{}]'.format(','.join(data.githubUsers))
+        if len(data.githubUsers) > 0: return 'u.id IN {}'.format(data.githubUsers)
         return None
     userWhereClauseArray = []
-    if config.get('userIds'): userWhereClauseArray.append('u.id IN [{}]'.format(','.join(config.get('userIds'))))
-    if config.get('userLogins'): userWhereClauseArray.append('u.login IN [{}]'.format(list(map(lambda n:'\'{}\''.format(n), config.get('userLogins')))))
+    if config.get('userIds'): userWhereClauseArray.append('u.id IN {}'.format(config.get('userIds')))
+    if config.get('userLogins'): userWhereClauseArray.append('u.login IN {}'.format(config.get('userLogins')))
     if config.get('labelIntersect'):
         return '(' + ' AND '.join(list(filter(lambda i: i != None, list(map(process, config.get('labelIntersect')))))) + ')'
     if config.get('labelUnion'):
         data = EasyDict(getGitHubData(config.get('labelUnion')))
-        if len(data.githubUsers > 0): userWhereClauseArray.append('u.id IN [{}]'.format(','.join(data.githubUsers)))
+        if len(data.githubUsers > 0): userWhereClauseArray.append('u.id IN {}'.format(data.githubUsers))
     userWhereClause = '({})'.format(' OR '.join(userWhereClauseArray)) if len(userWhereClauseArray) > 0 else None
     return userWhereClause
 
@@ -120,16 +119,16 @@ def getUserWhereClauseForClickhouse(config):
     def process(l):
         data = getGitHubData([l])
         data = EasyDict(data)
-        if len(data.githubUsers) > 0: return 'actor_id IN [{}]'.format(','.join(data.githubUsers))
+        if len(data.githubUsers) > 0: return 'actor_id IN {}'.format(data.githubUsers)
         return None
     userWhereClauseArray = []
-    if config.get('userIds'): userWhereClauseArray.append('actor_id IN [{}]'.format(','.join(config.get('userIds'))))
-    if config.get('userLogins'): userWhereClauseArray.append('actor_login IN [{}]'.format(list(map(lambda n:'\'{}\''.format(n), config.get('userLogins')))))
+    if config.get('userIds'): userWhereClauseArray.append('actor_id IN {}'.format(config.get('userIds')))
+    if config.get('userLogins'): userWhereClauseArray.append('actor_login IN {}'.format(config.get('userLogins')))
     if config.get('labelIntersect'):
         return '(' + ' AND '.join(list(filter(lambda i: i != None, list(map(process, config.get('labelIntersect')))))) + ')'
     if config.get('labelUnion'):
         data = EasyDict(getGitHubData(config.get('labelUnion')))
-        if len(data.githubRepos > 0): userWhereClauseArray.append('actor_id IN [{}]'.format(','.join(data.githubUsers)))
+        if len(data.githubRepos > 0): userWhereClauseArray.append('actor_id IN {}'.format(data.githubUsers))
     userWhereClause = '({})'.format(' OR '.join(userWhereClauseArray)) if len(userWhereClauseArray) > 0 else None
     return userWhereClause
 

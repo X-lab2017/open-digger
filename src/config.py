@@ -13,6 +13,7 @@ config = {
       'password': '',
       'protocol': 'http:',
       'format': 'JSON',
+      'database': 'github_log',
     },
     'neo4j': {
       'host':'neo4j://localhost:7687',

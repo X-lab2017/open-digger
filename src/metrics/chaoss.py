@@ -44,7 +44,6 @@ def chaossCodeChangeCommits(config):
     GROUP BY id \
     ORDER BY commits_count[-1] {} \
     FORMAT JSONCompact'.format(' AND '.join(whereClauses), 'ORDER BY count DESC LIMIT {} BY time'.format(config.get('limit')) if config.get('limit') > 0 else '', config.get('order'))
-
     result = clickhouse.query(sql)
     def getResult(row):
         id, name, count = row
