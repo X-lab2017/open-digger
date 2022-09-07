@@ -26,7 +26,7 @@ def getRepoActivityOrOpenrank(config, calType='activity'):
 
     Args:
         config (QueryConfig): config of query.
-        type (str, optional): type of metrics, 'activity' or 'open_rank'.
+        calType (str, optional): type of metrics, 'activity' or 'open_rank'.
     Returns:
         neo4j cursor: query results of neo4j
     """
@@ -66,20 +66,20 @@ def getRepoActivityOrOpenrank(config, calType='activity'):
             i[calType] = np.around(i[calType])
         return resultArr[0:config.get('limit')]
 
-def getUserActivityOrOpenrank(config, type='activity'):
+def getUserActivityOrOpenrank(config, calType='activity'):
     """_summary_
 
     Args:
         config (QueryConfig): config of query.
-        type (str, optional): type of metrics, 'activity' or 'open_rank'.
+        calType (str, optional): type of metrics, 'activity' or 'open_rank'.
     Returns:
         neo4j cursor: query results of neo4j
     """
     config = getMergedConfig(config)
     userWhereClause = getUserWhereClauseForNeo4j(config)
     timeWhereClause = getTimeRangeWhereClauseForNeo4j(config, 'u')
-    timeActivityClause = getTimeRangeSumClauseForNeo4j(config, 'u.{}'.format(type))
-    query = 'MATCH (u:User) WHERE {} {} RETURN u.login AS user_login, [{}] AS {} ORDER BY {} {} {};'.format(userWhereClause +' AND ' if userWhereClause else '', timeWhereClause, ','.join(timeActivityClause), type, type, config.get('order'), 'LIMIT {}'.format(config.get('limit')) if config.get('limit') > 0 else '')
+    timeActivityClause = getTimeRangeSumClauseForNeo4j(config, 'u.{}'.format(calType))
+    query = 'MATCH (u:User) WHERE {} {} RETURN u.login AS user_login, [{}] AS {} ORDER BY {} {} {};'.format(userWhereClause +' AND ' if userWhereClause else '', timeWhereClause, ','.join(timeActivityClause), calType, calType, config.get('order'), 'LIMIT {}'.format(config.get('limit')) if config.get('limit') > 0 else '')
     return neo4j_driver.query(query)
 
 basicActivitySqlComponent = ' \
