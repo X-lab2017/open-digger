@@ -142,12 +142,16 @@ def getTimeRangeWhereClauseForNeo4j(config, type):
     return timeWhereClause
 
 def getTimeRangeSumClauseForNeo4j(config, type):
-    def process_quarter(y, m, lastQuarter = 0):
+    lastYear = 0
+    lastQuarter = 0
+    def process_quarter(y, m):
+        nonlocal lastQuarter
         q = math.ceil(m / 3)
         if q != lastQuarter: timeRangeSumClauseArray.append([])
         timeRangeSumClauseArray[len(timeRangeSumClauseArray) - 1].append('COALESCE({}_{}{}, 0.0)'.format(type, y, m))
         lastQuarter = q
-    def process_year(y, m, lastYear = 0):
+    def process_year(y, m):
+        nonlocal lastYear
         if y != lastYear: timeRangeSumClauseArray.append([])
         timeRangeSumClauseArray[len(timeRangeSumClauseArray) - 1].append('COALESCE({}_{}{}, 0.0)'.format(type, y, m))
         lastYear = y
@@ -157,11 +161,9 @@ def getTimeRangeSumClauseForNeo4j(config, type):
         forEveryMonthByConfig(config, lambda y, m: timeRangeSumClauseArray.append(['COALESCE({}_{}{}, 0.0)'.format(type, y, m)]))
     elif config.get('groupTimeRange') == 'quarter':
         # for every quarter, need to find out when to push a new element by quarter
-        lastQuarter = 0
         forEveryMonthByConfig(config, process_quarter)
     elif config.get('groupTimeRange') == 'year':
         # for every year, need to find out when to push a new element by the year;
-        lastYear = 0
         forEveryMonthByConfig(config, process_year)
     else:
         # for all to single one, push to the first element
