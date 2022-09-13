@@ -21,16 +21,16 @@ OPEN_PULL_WEIGHT = 3
 REVIEW_COMMENT_WEIGHT = 4
 PULL_MERGED_WEIGHT = 2
 
-def getRepoActivityOrOpenrank(config, calType='activity'):
+def getRepoOpenrank(config):
     """_summary_
 
     Args:
         config (QueryConfig): config of query.
-        calType (str, optional): type of metrics, 'activity' or 'open_rank'.
     Returns:
         neo4j cursor: query results of neo4j
     """
     config = getMergedConfig(config)
+    calType = 'open_rank'
     repoWhereClause = getRepoWhereClauseForNeo4j(config)
     timeWhereClause = getTimeRangeWhereClauseForNeo4j(config, 'r')
     timeActivityOrOpenrankClause = getTimeRangeSumClauseForNeo4j(config, 'r.{}'.format(calType))
@@ -66,16 +66,16 @@ def getRepoActivityOrOpenrank(config, calType='activity'):
             i[calType] = np.around(i[calType])
         return resultArr[0:config.get('limit')]
 
-def getUserActivityOrOpenrank(config, calType='activity'):
+def getUserOpenrank(config):
     """_summary_
 
     Args:
         config (QueryConfig): config of query.
-        calType (str, optional): type of metrics, 'activity' or 'open_rank'.
     Returns:
         neo4j cursor: query results of neo4j
     """
     config = getMergedConfig(config)
+    calType = 'open_rank'
     userWhereClause = getUserWhereClauseForNeo4j(config)
     timeWhereClause = getTimeRangeWhereClauseForNeo4j(config, 'u')
     timeActivityClause = getTimeRangeSumClauseForNeo4j(config, 'u.{}'.format(calType))
@@ -93,7 +93,7 @@ basicActivitySqlComponent = ' \
     sqrt({}*issue_comment + {}*open_issue + {}*open_pull + {}*review_comment + {}*merged_pull) AS activity \
 '.format(ISSUE_COMMENT_WEIGHT, OPEN_ISSUE_WEIGHT, OPEN_PULL_WEIGHT, REVIEW_COMMENT_WEIGHT, PULL_MERGED_WEIGHT)
 
-def getRepoActivityWithDetail(config):
+def getRepoActivity(config):
     config = getMergedConfig(config)
     whereClauses = ["type IN ('IssuesEvent', 'IssueCommentEvent', 'PullRequestEvent', 'PullRequestReviewCommentEvent')"] # specify types to reduce memory usage and calculation
     repoWhereClause = getRepoWhereClauseForClickhouse(config)
@@ -107,12 +107,12 @@ def getRepoActivityWithDetail(config):
     {}, \
     {} \
   FROM \
-  (".format(getGroupArrayInsertAtClauseForClickhouse(config, { 'key': 'activity' }),
-            getGroupArrayInsertAtClauseForClickhouse(config, { 'key': 'issue_comment' }),
-            getGroupArrayInsertAtClauseForClickhouse(config, { 'key': 'open_issue' }),
-            getGroupArrayInsertAtClauseForClickhouse(config, { 'key': 'open_pull' }),
-            getGroupArrayInsertAtClauseForClickhouse(config, { 'key': 'review_comment' }),
-            getGroupArrayInsertAtClauseForClickhouse(config, { 'key': 'merged_pull' }),
+  (".format(getGroupArrayInsertAtClauseForClickhouse(config, { 'key': 'activity', 'defaultValue': '0' }),
+            getGroupArrayInsertAtClauseForClickhouse(config, { 'key': 'issue_comment', 'defaultValue': '0' }),
+            getGroupArrayInsertAtClauseForClickhouse(config, { 'key': 'open_issue', 'defaultValue': '0' }),
+            getGroupArrayInsertAtClauseForClickhouse(config, { 'key': 'open_pull', 'defaultValue': '0' }),
+            getGroupArrayInsertAtClauseForClickhouse(config, { 'key': 'review_comment', 'defaultValue': '0' }),
+            getGroupArrayInsertAtClauseForClickhouse(config, { 'key': 'merged_pull', 'defaultValue': '0' }),
             ) + \
   "SELECT \
       {}, \
@@ -138,14 +138,15 @@ def getRepoActivityWithDetail(config):
       FROM github_log.events \
       WHERE {} \
       GROUP BY repo_id, org_id, actor_id, month \
-      HAVING activity > 0\
+      HAVING activity > 0 \
     ) \
     GROUP BY id, time\
     {}\
   ) \
   GROUP BY id \
   ORDER BY activity[-1] {} \
-  FORMAT JSONCompact".format(ISSUE_COMMENT_WEIGHT, OPEN_ISSUE_WEIGHT, OPEN_PULL_WEIGHT, REVIEW_COMMENT_WEIGHT,
+  FORMAT JSONCompact".format(ISSUE_COMMENT_WEIGHT, OPEN_ISSUE_WEIGHT, 
+                             OPEN_PULL_WEIGHT, REVIEW_COMMENT_WEIGHT, PULL_MERGED_WEIGHT,
                              ' AND '.join(whereClauses),
                              'ORDER BY activity DESC LIMIT {} BY time'.format(config.get('limit')) if config.get('limit') > 0 else '',
                              config.get('order')
@@ -166,7 +167,7 @@ def getRepoActivityWithDetail(config):
         }
     return list(map(return_row, result))
 
-def getUserActivityWithDetail(config = QueryConfig, withBot = True):
+def getUserActivity(config = QueryConfig, withBot = True):
     config = getMergedConfig(config)
     whereClauses = ["type IN ('IssuesEvent', 'IssueCommentEvent', 'PullRequestEvent', 'PullRequestReviewCommentEvent')"] # specify types to reduce memory usage and calculation
     userWhereClause = getUserWhereClauseForClickhouse(config)
@@ -180,12 +181,12 @@ def getUserActivityWithDetail(config = QueryConfig, withBot = True):
    {}, \
    {} \
 FROM \
-(".format(getGroupArrayInsertAtClauseForClickhouse(config, { 'key': 'activity' }),
-          getGroupArrayInsertAtClauseForClickhouse(config, { 'key': 'issue_comment' }),
-          getGroupArrayInsertAtClauseForClickhouse(config, { 'key': 'open_issue' }),
-          getGroupArrayInsertAtClauseForClickhouse(config, { 'key': 'open_pull' }),
-          getGroupArrayInsertAtClauseForClickhouse(config, { 'key': 'review_comment' }),
-          getGroupArrayInsertAtClauseForClickhouse(config, { 'key': 'merged_pull' })
+(".format(getGroupArrayInsertAtClauseForClickhouse(config, { 'key': 'activity', 'defaultValue': '0' }),
+          getGroupArrayInsertAtClauseForClickhouse(config, { 'key': 'issue_comment', 'defaultValue': '0' }),
+          getGroupArrayInsertAtClauseForClickhouse(config, { 'key': 'open_issue', 'defaultValue': '0' }),
+          getGroupArrayInsertAtClauseForClickhouse(config, { 'key': 'open_pull', 'defaultValue': '0' }),
+          getGroupArrayInsertAtClauseForClickhouse(config, { 'key': 'review_comment', 'defaultValue': '0' }),
+          getGroupArrayInsertAtClauseForClickhouse(config, { 'key': 'merged_pull', 'defaultValue': '0' })
           ) + \
   "SELECT \
     {}, \

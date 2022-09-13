@@ -3,9 +3,7 @@ import label_data_utils as label
 from functools import cmp_to_key
 import db.neo4j_driver as neo4j_driver
 import db.clickhouse as clickhouse
-import plotly
 import plotly.graph_objs as go
-import plotly.express as px
 from plotly.subplots import make_subplots
 
 class openDigger(object):
@@ -18,25 +16,22 @@ class openDigger(object):
           self.neo4j = neo4j_driver
     class quick():
         def showAll(self, repoName, startYear = 2015, endYear = 2021):
-            query_sql = "MATCH (r:Repo{name:\'"+str(repoName)+"\'}) RETURN r;"
-            data = openDigger().driver().neo4j.query(query_sql)[0]['r']
-            activityValues = []
-            openrankValues = []
+            config = { 'repoNames': [repoName], 'startYear': startYear, 'endYear': endYear, 'groupTimeRange': 'month' }
+            activity = func.getRepoActivity(config)
+            openrank = func.getRepoOpenrank(config)
             for year in range(startYear, endYear + 1):
                 for month in range(1, 13):
                     k = '{}{}'.format(year, month)
-                    activityValues.append(data.get('activity_{}'.format(k)))
-                    openrankValues.append(data.get('open_rank_{}'.format(k)))
             fig = make_subplots(specs=[[{"secondary_y": True}]])
             fig.add_trace(
                 openDigger().render.Scatter(
-                    y=activityValues,
+                    y = activity[0].get('activity'),
                     mode="markers+lines",
-                    name='activity'  
+                    name='activity'
             ))
             fig.add_trace(
                 openDigger().render.Scatter(
-                    y=openrankValues,
+                    y = openrank[0].get('open_rank'),
                     mode="markers+lines",
                     name='openrank'
             ), secondary_y=True)
@@ -59,8 +54,6 @@ class openDigger(object):
         class activity():
             def getRepoActivity(self, config): return func.getRepoActivity(config)
             def getUserActivity(self, config): return func.getUserActivity(config)
-            def getRepoActivityWithDetail(self, config): return func.getRepoActivityWithDetail(config)
-            def getUserActivityWithDetail(self, config): return func.getUserActivityWithDetail(config)
         class openrank():
             def getRepoOpenrank(self, config): return func.getRepoOpenrank(config)
             def getUserOpenrank(self, config): return func.getUserOpenrank(config)

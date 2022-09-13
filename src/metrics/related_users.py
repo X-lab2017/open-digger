@@ -1,4 +1,4 @@
-from basic import QueryConfig, getMergedConfig, getRepoWhereClauseForNeo4j, getTimeRangeWhereClauseForNeo4j
+from basic import getMergedConfig, getRepoWhereClauseForNeo4j, getTimeRangeWhereClauseForNeo4j
 import db.neo4j_driver as neo4j_driver
 
 def getRelatedUsers(config):
