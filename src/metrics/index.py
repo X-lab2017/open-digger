@@ -1,22 +1,16 @@
-import sys
-import os
 import chaoss
 import activity_openrank
 import attention
 import related_users 
 
 def getRepoActivity(config):
-    return activity_openrank.getRepoActivityOrOpenrank(config, 'activity')
+    return activity_openrank.getRepoActivity(config)
 def getUserActivity(config):
-    return activity_openrank.getUserActivityOrOpenrank(config, 'activity')
-def getRepoActivityWithDetail(config):
-    return activity_openrank.getRepoActivityWithDetail(config)
-def getUserActivityWithDetail(config):
-    return activity_openrank.getUserActivityWithDetail(config)
+    return activity_openrank.getUserActivity(config)
 def getRepoOpenrank(config):
-    return activity_openrank.getRepoActivityOrOpenrank(config, 'open_rank')
+    return activity_openrank.getRepoOpenrank(config)
 def getUserOpenrank(config):
-    return activity_openrank.getUserActivityOrOpenrank(config, 'open_rank')
+    return activity_openrank.getUserOpenrank(config)
 def getRelatedUsers(config):
     return related_users.getRelatedUsers(config)
 def getAttention(config):
