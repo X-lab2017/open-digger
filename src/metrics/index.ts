@@ -1,5 +1,5 @@
 import { getRepoActivityOrOpenrank, getRepoActivityWithDetail, getUserActivityOrOpenrank, getUserActivityWithDetail } from './activity_openrank';
-import { chaossCodeChangeCommits, chaossBusFactor, chaossIssuesNew, chaossIssuesClosed } from './chaoss';
+import { chaossCodeChangeCommits, chaossBusFactor, chaossIssuesNew, chaossIssuesClosed, chaossChangeRequestsAccepted, chaossChangeRequestsDeclined, chaossIssueResolutionDuration } from './chaoss';
 import { getAttention } from './attention';
 import { getRelatedUsers } from './related_users';
 
@@ -18,4 +18,7 @@ module.exports = {
   chaossIssuesNew: chaossIssuesNew,
   chaossIssuesClosed: chaossIssuesClosed,
   chaossBusFactor: chaossBusFactor,
+  chaossChangeRequestsAccepted: chaossChangeRequestsAccepted,
+  chaossChangeRequestsDeclined: chaossChangeRequestsDeclined,
+  chaossIssueResolutionDuration: chaossIssueResolutionDuration,
 }

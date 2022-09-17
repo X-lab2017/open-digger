@@ -1,5 +1,7 @@
 name: ByteDance
 type: Company
 data:
+  label:
+    - cloudwego
   github_org:
     - 4158466 # bytedance

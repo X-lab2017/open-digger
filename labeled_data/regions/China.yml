@@ -64,6 +64,7 @@ data:
     - :companies/cloudwise
     - :communities/openmmlab
     - :communities/xlab
+    - :communities/mulan
     - :projects/skywalking
   github_org:
     - 12165287 # org:ossrs

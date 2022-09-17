@@ -40,17 +40,18 @@ interface ParsedLabelItem extends GitHubData {
   name: string;
 }
 
-export function getLabelData(): ParsedLabelItem[] {
+export function getLabelData(injectLabelData?: any[]): ParsedLabelItem[] {
   if (!statSync(labelInputPath).isDirectory()) {
     console.error(`${labelInputPath} input path is not a directory.`);
     return [];
   }
   const labelMap = new Map<string, LabelItem>();
-  const indexFileName = '/index.yml';
+  const indexFileName = `${path.sep}index.yml`;
   const labelFileSuffix = '.yml';
   readPath(labelInputPath, '', f => {
     if (!f.endsWith('.yml')) return;
-    const identifier = `:${(f.endsWith(indexFileName) ? f.slice(0, f.indexOf(indexFileName)) : f.slice(0, f.indexOf(labelFileSuffix)))}`;
+    // convert windows favor path to linux favor path
+    const identifier = processLabelIdentifier(`:${(f.endsWith(indexFileName) ? f.slice(0, f.indexOf(indexFileName)) : f.slice(0, f.indexOf(labelFileSuffix)))}`);
     const content = readFileAsObj(path.join(labelInputPath, f));
     labelMap.set(identifier, {
       identifier,
@@ -62,6 +63,7 @@ export function getLabelData(): ParsedLabelItem[] {
     });
   });
   const data = processLabelItems(labelMap);
+  if (injectLabelData) injectLabelData.forEach(l => data.push(l));
   return data;
 }
 
@@ -113,7 +115,7 @@ function parseItem(item: LabelItem, map: Map<string, LabelItem>) {
       case 'label':
         const labels: string[] = item.content.data[key];
         for (const label of labels) {
-          const identifier = label.startsWith(':') ? label : path.join(item.identifier, label);
+          const identifier = label.startsWith(':') ? label : processLabelIdentifier(path.join(item.identifier, label));
           const innerItem = map.get(identifier);
           if (!innerItem) {
             throw new Error(`Can not find nest identifier ${identifier} for ${item.identifier}`);
@@ -133,6 +135,10 @@ function parseItem(item: LabelItem, map: Map<string, LabelItem>) {
   item.parsed = true;
 }
 
+function processLabelIdentifier(identifier: string): string {
+  return identifier.split(path.sep).join(path.posix.sep);
+}
+
 function labelDataToGitHubData(data: ParsedLabelItem[]): GitHubData {
   const repoSet = new Set<number>();
   const orgSet = new Set<number>();
@@ -149,9 +155,9 @@ function labelDataToGitHubData(data: ParsedLabelItem[]): GitHubData {
   };
 }
 
-export function getGitHubData(typeOrIds: string[]): GitHubData {
+export function getGitHubData(typeOrIds: string[], injectLabelData?: any[]): GitHubData {
   if (typeOrIds.length === 0) return emptyData;
-  const data = getLabelData();
+  const data = getLabelData(injectLabelData);
   if (!data) return emptyData;
   const arr = data.filter(i => typeOrIds.includes(i.type) || typeOrIds.includes(i.identifier));
   return labelDataToGitHubData(arr);

@@ -33,31 +33,32 @@ export const getRepoActivityOrOpenrank = async (config: QueryConfig, type: 'acti
   } else {
     const query = `MATCH (r:Repo) WHERE ${repoWhereClause ?? timeWhereClause} RETURN r.id AS repo_id, r.org_id AS org_id, [${(await timeActivityOrOpenrankClause).join(',')}] AS ${type};`;
     const queryResult: any[] = await neo4j.query(query);
-    const labelData = getLabelData()?.filter(l => l.type === config.groupBy);
+    const labelData = getLabelData(config.injectLabelData)?.filter(l => l.type === config.groupBy);
     const result = new Map();
     if (!labelData) return null;
     queryResult.forEach(row => {
-      const label = labelData.find(l => l.githubRepos.includes(row.repo_id) || l.githubOrgs.includes(row.org_id));
-      if (!label) return;
-      let values: any;
-      if (!result.get(label.name)) values = row[type];
-      else {
-        values = result.get(label.name)[type];
-        for (let i = 0; i < values.length; i++) {
-          values[i] += row[type][i];
+      const labels = labelData.filter(l => l.githubRepos.includes(row.repo_id) || l.githubOrgs.includes(row.org_id));
+      for (const label of labels) {
+        let values: any;
+        if (!result.get(label.name)) values = row[type];
+        else {
+          values = result.get(label.name)[type];
+          for (let i = 0; i < values.length; i++) {
+            values[i] += row[type][i];
+          }
         }
+        result.set(label.name, {
+          label: label.name,
+          repo_count: (result.get(label.name)?.repo_count ?? 0) + 1,
+          [type]: values,
+        });
       }
-      result.set(label.name, {
-        label: label.name,
-        repo_count: (result.get(label.name)?.repo_count ?? 0) + 1,
-        [type]: values,
-      });
     });
     const resultArr = Array.from(result.values());
     if (config.order === 'ASC') resultArr.sort((a, b) => a[type][a[type].length - 1] - b[type][b[type].length - 1]);
     if (config.order === 'DESC') resultArr.sort((a, b) => b[type][b[type].length - 1] - a[type][a[type].length - 1]);
     resultArr.forEach(i => i[type] = i[type].map(v => parseFloat(v.toFixed(config.percision))));
-    return resultArr.slice(0, config.limit);
+    return resultArr.slice(0, config.limit > 0 ? config.limit : undefined);
   }
 }
 
