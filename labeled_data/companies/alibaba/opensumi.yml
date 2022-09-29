@@ -1,0 +1,5 @@
+name: OpenSumi
+type: Project
+data:
+  github_org:
+    - 90233428 # org:opensumi
