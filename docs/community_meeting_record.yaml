@@ -164,3 +164,16 @@
     - content: Design of credit system
       proposer: gymgym1212
       participants: [wengzhenjie, sunshinemingo, gymgym1212, xiaoya-Esther, tedliu1]
+- time: 2022.9.28
+  host: xgdyp
+  attendee: []
+  agenda:
+    - content: An introduction to OpenDigger
+      proposer: frank-zsy
+      participants: []
+    - content: Framework and Progress of China Open Source Report 2022
+      proposer: xgdyp
+      participants: [frank-zsy,tedliu1,will-ww]
+    - content: Design of China Open Source Developer Questionnaire
+      proposer: xgdyp
+      participants: []
