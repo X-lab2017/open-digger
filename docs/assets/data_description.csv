@@ -9,12 +9,10 @@ repo_name,LowCardinality(String),repository name,All
 org_id,UInt64,organization unique identity of this repository,All
 org_login,LowCardinality(String),login name of this organization,All
 created_at,DateTime,when this event instance was generated on GitHub,All
-created_date,Date,same as created_at but in Date format,All
+body,String,body of Issues/IssueComment/CommitComment/PullRequestReviewComment event,"Issues, IssueComment, PullRequest, PullRequestReviewComment"
 issue_id,UInt64,unique identity of this issue on GitHub,"Issues, IssueComment, PullRequest, PullRequestReviewComment"
 issue_number,UInt32,the id of this issue in this repository,"Issues, IssueComment, PullRequest, PullRequestReviewComment"
 issue_title,String,titile of this issue,"Issues, IssueComment, PullRequest, PullRequestReviewComment"
-issue_body,String,body of this issue event,"Issues, IssueComment, PullRequest, PullRequestReviewComment"
-issue_labels,Nested,issue labels of the repository,"Issues, IssueComment, PullRequest, PullRequestReviewComment"
 issue_labels.name,String,issue label name,"Issues, IssueComment, PullRequest, PullRequestReviewComment"
 issue_labels.color,String,issue label color,"Issues, IssueComment, PullRequest, PullRequestReviewComment"
 issue_labels.default,UInt8,whether the label is a default label,"Issues, IssueComment, PullRequest, PullRequestReviewComment"
@@ -25,7 +23,6 @@ issue_author_type,Enum,GitHub user type of this issue's author,"Issues, IssueCom
 issue_author_association,Enum,"author association of issue author, like NONE, CONTRIBUTOR, COLLABORATOR, MEMBER, OWNER","Issues, IssueComment, PullRequest, PullRequestReviewComment"
 issue_assignee_id,UInt64,assignee's GitHub user id of this issue,"Issues, IssueComment, PullRequest, PullRequestReviewComment"
 issue_assignee_login,LowCardinality(String),issue assignee's login name,"Issues, IssueComment, PullRequest, PullRequestReviewComment"
-issue_assignees,Nested,all assignees of this issue,"Issues, IssueComment, PullRequest, PullRequestReviewComment"
 issue_assignees.id,UInt64,GitHub user id of the assignee,"Issues, IssueComment, PullRequest, PullRequestReviewComment"
 issue_assignees.login,LowCardinality(String),GitHub user login of the assignee,"Issues, IssueComment, PullRequest, PullRequestReviewComment"
 issue_created_at,DateTime,"when this issue was created,UTC","Issues, IssueComment, PullRequest, PullRequestReviewComment"
@@ -33,7 +30,6 @@ issue_updated_at,DateTime,"when this issue was updated, UTC","Issues, IssueComme
 issue_comments,UInt16,the number of issue comments,"Issues, IssueComment, PullRequest, PullRequestReviewComment"
 issue_closed_at,DateTime,when this issue was closed,"Issues, IssueComment, PullRequest, PullRequestReviewComment"
 issue_comment_id,UInt64,issue comment unique identity,IssueComment
-issue_comment_body,String,comment body in the issue comment event,IssueComment
 issue_comment_created_at,DateTime,"when this issue comment was created,UTC",IssueComment
 issue_comment_updated_at,DateTime,"when this issue comment was updated,UTC",IssueComment
 issue_comment_author_association,Enum,"author association of issue comment author, like NONE, CONTRIBUTOR, COLLABORATOR, MEMBER, OWNER",IssueComment
@@ -45,7 +41,7 @@ pull_additions,UInt16,additions in this pull request,"PullRequest, PullRequestRe
 pull_deletions,UInt16,deletions in this pull request,"PullRequest, PullRequestReviewComment"
 pull_changed_files,UInt32,how many files changed in this pull request,"PullRequest, PullRequestReviewComment"
 pull_merged,UInt8,whether this pull request is merged,"PullRequest, PullRequestReviewComment"
-pull_merged_commit_sha,String,the merged commit SHA of the pull request,"PullRequest, PullRequestReviewComment"
+pull_merge_commit_sha,String,the merged commit SHA of the pull request,"PullRequest, PullRequestReviewComment"
 pull_merged_at,DateTime,when this pull request was merged,"PullRequest, PullRequestReviewComment"
 pull_merged_by_id,UInt64,GitHub user id of someone who merged this pull request,"PullRequest, PullRequestReviewComment"
 pull_merged_by_login,LowCardinality(String),GitHub user login of someone who merged this pull request,"PullRequest, PullRequestReviewComment"
@@ -77,7 +73,6 @@ pull_review_comment_author_id,UInt64,GitHub user id of someone who made this pul
 pull_review_comment_author_login,LowCardinality(String),GitHub user login of someone who made this pull review comment,PullRequestReviewComment
 pull_review_comment_author_type,Enum,GitHub user type of someone who made this pull review comment,PullRequestReviewComment
 pull_review_comment_author_association,Enum,"Review comment author association, like NONE, CONTRIBUTOR, COLLABORATOR, MEMBER, OWNER",PullRequestReviewComment
-pull_review_comment_body,String,pull review comment body,PullRequestReviewComment
 pull_review_comment_created_at,DateTime,when this pull review comment was created,PullRequestReviewComment
 pull_review_comment_updated_at,DateTime,when this pull review comment was updated,PullRequestReviewComment
 push_id,UInt64,unique push id on GitHub,Push
@@ -85,8 +80,6 @@ push_size,UInt32,The number of commits in the push?,Push
 push_distinct_size,UInt32,The number of distinct commits in the push?,Push
 push_ref,String,the ref branch of the push,Push
 push_head,String,the head of the push,Push
-push_before,String,the head before this push,Push
-push_commits,Nested,commits in this push event,Push
 push_commits.name,LowCardinality(String),commit author name,Push
 push_commits.email,String,commit author email,Push
 push_commits.message,String,commit message,Push
@@ -103,7 +96,6 @@ create_ref_type,Enum,the type of Git ref object created in the repository. Can b
 create_master_branch,String,the base branch of current create event,Create
 create_description,String,the repository's current description,Create
 create_pusher_type,Enum,GitHub user type of the user that trager this event,Create
-gollum_pages,Nested,the pages modified in this event,Gollum
 gollum_pages.page_name,String,the page name,Gollum
 gollum_pages.title,String,the page title,Gollum
 gollum_pages.action,String,the action that was performed on the page. Can be created or edited.,Gollum
@@ -122,7 +114,6 @@ release_prerelease,UInt8,whether this is a prerelease,Release
 release_created_at,DateTime,when this release was created,Release
 release_published_at,DateTime,when this release was published,Release
 release_body,String,text content body of this release,Release
-release_assets,Nested,the assets attached to the release,Release
 release_assets.name,String,the name of the asset,Release
 release_assets.uploader_id,UInt64,GitHub user id of the uploader,Release
 release_assets.uploader_login,LowCardinality(String),GitHub user login of the uploader,Release
@@ -135,7 +126,6 @@ commit_comment_author_id,UInt64,GitHub user id of the commit comment author,Comm
 commit_comment_author_login,LowCardinality(String),GitHub user login of the commit comment author,CommitComment
 commit_comment_author_type,Enum,GitHub user type of the commit comment author,CommitComment
 commit_comment_author_association,Enum,"the commit comment author association, like NONE, CONTRIBUTOR, COLLABORATOR, MEMBER, OWNER",CommitComment
-commit_comment_body,String,text content body of this commit comment,CommitComment
 commit_comment_path,String,the commit comment file path,CommitComment
 commit_comment_position,String,"the commit comment position when shows on page, not related important",CommitComment
 commit_comment_line,String,the commit comment file line,CommitComment
