@@ -8,6 +8,7 @@ data:
     - open_messaging
     - seata
     - nacos
+    - opensumi
   github_org:
     - 66622043 # org:Alibaba-Sample
     - 38934544 # org:AlibabaCloudDocs
