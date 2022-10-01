@@ -10,6 +10,7 @@ data:
     - oceanbase
     - sofastack
     - :companies/alibaba/seata
+    - :companies/alibaba/opensumi
   github_org:
     - 58020396 # org:mosn
     - 45012756 # org:occlum
@@ -27,3 +28,4 @@ data:
     - 106951936 # org:traasstack
     - 102720338 # org:Tongsuo-Project
     - 107394922 # org:tugraph-db
+    - 37180217 # org:ant-mini-program
