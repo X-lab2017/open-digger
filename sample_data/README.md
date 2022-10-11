@@ -18,8 +18,8 @@ To use sample data from OSS service, you need to follow the steps:
 2. Extract data from archive file to a folder: `tar -zxvf data.tar.gz -C ./folder_name`. You will get a `table` and a `data` file.
 
 3. Use ClickHouse base image with extracted data to initialize the database. The extracted `data` and `table` file should be mounted into `/data/` folder into the container, here is an example:
-   - Linux/MacOS: `docker run -d --name container_name -m 6G -p 8123:8123 -p 9000:9000 --ulimit nofile=262144:262144 --volume=$(pwd)/folder_name/:/data/ open-digger-clickhouse-base:v1`;
-   - Windows: `docker run -d --name container_name -m 6G -p 8123:8123 -p 9000:9000 --ulimit nofile=262144:262144 --volume=%cd%/folder_name/:/data/ open-digger-clickhouse-base:v1`.
+   - Linux/MacOS: `docker run -d --name container_name -m 6G -p 8123:8123 -p 9000:9000 --ulimit nofile=262144:262144 --volume=$(pwd)/folder_name/:/data/ docker-hub.x-lab.info/opendigger/open-digger-clickhouse-base:v1`;
+   - Windows: `docker run -d --name container_name -m 6G -p 8123:8123 -p 9000:9000 --ulimit nofile=262144:262144 --volume=%cd%/folder_name/:/data/ docker-hub.x-lab.info/opendigger/open-digger-clickhouse-base:v1`.
    
    In the above command lines, `$(pwd)` or `%cd%` makes sure the `host-src` be an absolute path.
    > **Notice**: As referred in [Docker's Doc](https://docs.docker.com/engine/reference/run/#volume-shared-filesystems), the `host-src` in `--volume=[host-src:]container-dest[:<options>]` must be an absolute path or a name value.
