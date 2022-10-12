@@ -92,7 +92,7 @@
       {
         "name": "committer",
         "description": "Committer of the project",
-        "users": [ "will-ww", "frank-zsy", "gymgym1212", "xiaoya-yaya" ],
+        "users": [ "will-ww", "frank-zsy", "gymgym1212", "xiaoya-yaya", "xgdyp" ],
         "commands": [ "/difficulty", "/approve" ]
       },
       {
