@@ -1,1 +1,1 @@
-docker run -d --name 2020_full_ch_server -p 8123:8123 -p 9000:9000 --ulimit nofile=262144:262144 --volume=$(pwd)/data/2020_full/:/data/ open-digger-clickhouse-base:v1
+docker run -d --name 2020_full_ch_server -p 8123:8123 -p 9000:9000 --ulimit nofile=262144:262144 --volume=$(pwd)/data/2020_full/:/data/ docker-hub.x-lab.info/opendigger/open-digger-clickhouse-base:v1
