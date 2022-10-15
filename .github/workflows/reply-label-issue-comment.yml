@@ -1,4 +1,4 @@
-# issue-comment.yml
+# reply-label-issue-comment.yml
 # mark the status of the issue as waiting for repliers (contributor should reply) or waiting for author (issue author should reply)
 name: Add issues workflow labels
 

@@ -1,4 +1,4 @@
-# issue-open.yml
+# reply-label-issue-open.yml
 # mark the initial status of the issue when it's been opened
 name: Issue Open Check
 
