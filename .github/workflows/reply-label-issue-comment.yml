@@ -25,7 +25,7 @@ jobs:
 
   add-label-if-not-author:
     runs-on: ubuntu-latest
-    if: (github.event.issue.user.id != github.event.comment.user.id && user.id != 69946302) && !github.event.issue.pull_request && (github.event.issue.state == 'open')
+    if: (github.event.issue.user.id != github.event.comment.user.id && github.event.comment.user.id != 69946302) && !github.event.issue.pull_request && (github.event.issue.state == 'open')
     steps:
       - name: Add require reply label
         uses: actions-cool/issues-helper@v2
