@@ -2,7 +2,7 @@ import { existsSync, mkdirSync, writeFileSync } from 'fs';
 import { Task } from '..';
 import { query } from '../../db/neo4j';
 import { getGitHubData, getLabelData } from '../../label_data_utils';
-import { getRepoActivityWithDetail, getUserActivityWithDetail } from '../../metrics/activity_openrank';
+import { getRepoActivity, getUserActivity } from '../../metrics/indices';
 import { forEveryMonth } from '../../metrics/basic';
 import { rankData } from '../../utils';
 
@@ -38,7 +38,7 @@ const task: Task = {
     const chineseLabel = getGitHubData([':regions/China']);
 
     // get chinese month actor activity
-    const chineseUserMonthActivityData = await getUserActivityWithDetail({
+    const chineseUserMonthActivityData = await getUserActivity({
       labelUnion: [':regions/China'],
       startYear, startMonth, endYear, endMonth,
       order: 'DESC', limit: -1, percision: 2,
@@ -62,7 +62,7 @@ const task: Task = {
     writeData(chineseUserMonthActivityMap, 'Actor_China_Month', 'activity/actor/chinese');
 
     // get chinese actor year acitivity
-    const chineseUserYearActivityData = await getUserActivityWithDetail({
+    const chineseUserYearActivityData = await getUserActivity({
       labelUnion: [':regions/China'],
       startYear, startMonth, endYear, endMonth,
       order: 'DESC', limit: -1, percision: 2,
@@ -87,7 +87,7 @@ const task: Task = {
     console.log('Chinese actor activity done.');
 
     // get global actor activity
-    const globalUserMonthActivityData = await getUserActivityWithDetail({
+    const globalUserMonthActivityData = await getUserActivity({
       startYear, startMonth, endYear, endMonth,
       order: 'DESC', limit, percision: 2,
       groupTimeRange: 'month',
@@ -109,7 +109,7 @@ const task: Task = {
     }
     writeData(globalUserMonthActivityMap, 'Actor_Global_Month', 'activity/actor/global');
 
-    const globalUserYearActivityData = await getUserActivityWithDetail({
+    const globalUserYearActivityData = await getUserActivity({
       startYear, startMonth, endYear, endMonth,
       order: 'DESC', limit, percision: 2,
       groupTimeRange: 'year',
@@ -134,7 +134,7 @@ const task: Task = {
 
     // get chinese company activity
     // by month
-    const chineseCompanyMonthActivityData = await getRepoActivityWithDetail({
+    const chineseCompanyMonthActivityData = await getRepoActivity({
       labelIntersect: ['Company', ':regions/China'],
       startYear, startMonth, endYear, endMonth,
       order: 'DESC', limit: -1, percision: 2,
@@ -158,7 +158,7 @@ const task: Task = {
     writeData(chineseCompanyMonthActivityMap, 'Company_China_Month', 'activity/company/chinese');
     
     // by year
-    const chineseCompanyYearActivityData = await getRepoActivityWithDetail({
+    const chineseCompanyYearActivityData = await getRepoActivity({
       labelIntersect: ['Company', ':regions/China'],
       startYear, startMonth, endYear, endMonth,
       order: 'DESC', limit: -1, percision: 2,
@@ -184,7 +184,7 @@ const task: Task = {
 
     // get global company activity
     // by month
-    const globalCompanyMonthActivityData = await getRepoActivityWithDetail({
+    const globalCompanyMonthActivityData = await getRepoActivity({
       labelUnion: ['Company'],
       startYear, startMonth, endYear, endMonth,
       order: 'DESC', limit: -1, percision: 2,
@@ -208,7 +208,7 @@ const task: Task = {
     writeData(globalCompanyMonthActivityMap, 'Company_Global_Month', 'activity/company/global');
     
     // by year
-    const globalCompanyYearActivityData = await getRepoActivityWithDetail({
+    const globalCompanyYearActivityData = await getRepoActivity({
       labelUnion: ['Company'],
       startYear, startMonth, endYear, endMonth,
       order: 'DESC', limit: -1, percision: 2,
@@ -234,7 +234,7 @@ const task: Task = {
 
     // get global repo activity
     // by month
-    const globalRepoMonthActivityData = await getRepoActivityWithDetail({
+    const globalRepoMonthActivityData = await getRepoActivity({
       startYear, startMonth, endYear, endMonth,
       order: 'DESC', limit, percision: 2,
       groupTimeRange: 'month',
@@ -255,7 +255,7 @@ const task: Task = {
     }
     writeData(globalRepoMonthActivityMap, 'Repo_Global_Month', 'activity/repo/global');
     // by year
-    const globalRepoYearActivityData = await getRepoActivityWithDetail({
+    const globalRepoYearActivityData = await getRepoActivity({
       startYear, startMonth, endYear, endMonth,
       order: 'DESC', limit, percision: 2,
       groupTimeRange: 'year',
@@ -279,7 +279,7 @@ const task: Task = {
 
     // get Chinese repo activity
     // by month
-    const chineseRepoMonthActivityData = await getRepoActivityWithDetail({
+    const chineseRepoMonthActivityData = await getRepoActivity({
       labelUnion: [':regions/China'],
       startYear, startMonth, endYear, endMonth,
       order: 'DESC', limit: -1, percision: 2,
@@ -301,7 +301,7 @@ const task: Task = {
     }
     writeData(chineseRepoMonthActivityMap, 'Repo_China_Month', 'activity/repo/chinese');
     // by year
-    const chineseRepoYearActivityData = await getRepoActivityWithDetail({
+    const chineseRepoYearActivityData = await getRepoActivity({
       labelUnion: [':regions/China'],
       startYear, startMonth, endYear, endMonth,
       order: 'DESC', limit: -1, percision: 2,

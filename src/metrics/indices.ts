@@ -1,16 +1,10 @@
 import { QueryConfig, 
         getMergedConfig, 
-        getRepoWhereClauseForNeo4j, 
-        getTimeRangeWhereClauseForNeo4j, 
-        getTimeRangeSumClauseForNeo4j, 
-        getUserWhereClauseForNeo4j, 
         getRepoWhereClauseForClickhouse,
         getUserWhereClauseForClickhouse,
         getTimeRangeWhereClauseForClickhouse,
         getGroupArrayInsertAtClauseForClickhouse,
         getGroupTimeAndIdClauseForClickhouse} from './basic';
-import * as neo4j from '../db/neo4j'
-import { getLabelData } from '../label_data_utils';
 import * as clickhouse from '../db/clickhouse';
 
 export const ISSUE_COMMENT_WEIGHT = 1;
@@ -19,56 +13,75 @@ export const OPEN_PULL_WEIGHT = 3;
 export const REVIEW_COMMENT_WEIGHT = 4;
 export const PULL_MERGED_WEIGHT = 2;
 
-export const getRepoActivityOrOpenrank = async (config: QueryConfig, type: 'activity' | 'open_rank') => {
+export const getRepoOpenrank = async (config: QueryConfig) => {
   config = getMergedConfig(config);
-  const repoWhereClause = getRepoWhereClauseForNeo4j(config);
-  const timeWhereClause = await getTimeRangeWhereClauseForNeo4j(config, 'r');
-  const timeActivityOrOpenrankClause = getTimeRangeSumClauseForNeo4j(config, `r.${type}`);
-  if (!config.groupBy) {
-    const query = `MATCH (r:Repo) WHERE ${repoWhereClause ?? timeWhereClause} RETURN r.id AS id, r.name AS repo_name, r.org_login AS org, [${(await timeActivityOrOpenrankClause).join(',')}] AS ${type} ORDER BY reverse(${type}) ${config.order} ${config.limit > 0 ? `LIMIT ${config.limit}` : ''};`;
-    return neo4j.query(query);
-  } else if (config.groupBy === 'org') {
-    const query = `MATCH (r:Repo) WHERE ${repoWhereClause ?? timeWhereClause} RETURN r.org_login AS org_login, count(r.id) AS repo_count, [${(await timeActivityOrOpenrankClause).map(i => `round(SUM(${i}), ${config.percision})`)}] AS ${type} ORDER BY reverse(${type}) ${config.order} ${config.limit > 0 ? `LIMIT ${config.limit}` : ''};`;
-    return neo4j.query(query);
-  } else {
-    const query = `MATCH (r:Repo) WHERE ${repoWhereClause ?? timeWhereClause} RETURN r.id AS repo_id, r.org_id AS org_id, [${(await timeActivityOrOpenrankClause).join(',')}] AS ${type};`;
-    const queryResult: any[] = await neo4j.query(query);
-    const labelData = getLabelData(config.injectLabelData)?.filter(l => l.type === config.groupBy);
-    const result = new Map();
-    if (!labelData) return null;
-    queryResult.forEach(row => {
-      const labels = labelData.filter(l => l.githubRepos.includes(row.repo_id) || l.githubOrgs.includes(row.org_id));
-      for (const label of labels) {
-        let values: any;
-        if (!result.get(label.name)) values = row[type];
-        else {
-          values = result.get(label.name)[type];
-          for (let i = 0; i < values.length; i++) {
-            values[i] += row[type][i];
-          }
-        }
-        result.set(label.name, {
-          label: label.name,
-          repo_count: (result.get(label.name)?.repo_count ?? 0) + 1,
-          [type]: values,
-        });
-      }
-    });
-    const resultArr = Array.from(result.values());
-    if (config.order === 'ASC') resultArr.sort((a, b) => a[type][a[type].length - 1] - b[type][b[type].length - 1]);
-    if (config.order === 'DESC') resultArr.sort((a, b) => b[type][b[type].length - 1] - a[type][a[type].length - 1]);
-    resultArr.forEach(i => i[type] = i[type].map(v => parseFloat(v.toFixed(config.percision))));
-    return resultArr.slice(0, config.limit > 0 ? config.limit : undefined);
-  }
+  const repoWhereClause = getRepoWhereClauseForClickhouse(config);
+
+  const sql = `
+SELECT
+  id,
+  argMax(name, time) AS name,
+  ${getGroupArrayInsertAtClauseForClickhouse(config, { key: 'openrank' })}
+FROM
+(
+  SELECT
+    ${getGroupTimeAndIdClauseForClickhouse(config, 'repo')},
+    SUM(openrank) AS openrank
+  FROM github_log.repo_openrank
+  WHERE ${repoWhereClause}
+  GROUP BY id, time
+  ${config.order ? `ORDER BY openrank ${config.order}` : ''}
+  ${config.limit > 0 ? `LIMIT ${config.limit} BY time` : ''}
+)
+GROUP BY id
+${config.order ? `ORDER BY openrank[-1] ${config.order}` : ''}
+FORMAT JSONCompact`;
+
+  const result: any = await clickhouse.query(sql);
+  return result.map(row => {
+    const [ id, name, openrank ] = row;
+    return {
+      id,
+      name,
+      openrank,
+    }
+  });
 }
 
-export const getUserActivityOrOpenrank = async (config: QueryConfig, type: 'activity' | 'open_rank') => {
+export const getUserOpenrank = async (config: QueryConfig) => {
   config = getMergedConfig(config);
-  const userWhereClause = getUserWhereClauseForNeo4j(config);
-  const timeWhereClause = await getTimeRangeWhereClauseForNeo4j(config, 'u');
-  const timeActivityClause = getTimeRangeSumClauseForNeo4j(config, `u.${type}`);
-  const query = `MATCH (u:User) WHERE ${userWhereClause ? userWhereClause + ' AND ' : ''} ${timeWhereClause} RETURN u.login AS user_login, [${(await timeActivityClause).join(',')}] AS ${type} ORDER BY ${type} ${config.order} ${config.limit > 0 ? `LIMIT ${config.limit}` : ''};`;
-  return neo4j.query(query);
+  const userWhereClause = getUserWhereClauseForClickhouse(config);
+
+  const sql = `
+SELECT
+  id,
+  argMax(name, time) AS name,
+  ${getGroupArrayInsertAtClauseForClickhouse(config, { key: 'openrank' })}
+FROM
+(
+  SELECT
+    ${getGroupTimeAndIdClauseForClickhouse(config, 'user')},
+    SUM(openrank) AS openrank
+  FROM github_log.user_openrank
+  WHERE ${userWhereClause}
+  GROUP BY id, time
+  ${config.order ? `ORDER BY openrank ${config.order}` : ''}
+  ${config.limit > 0 ? `LIMIT ${config.limit} BY time` : ''}
+)
+GROUP BY id
+${config.order ? `ORDER BY openrank[-1] ${config.order}` : ''}
+FORMAT JSONCompact`;
+
+  const result: any = await clickhouse.query(sql);
+  return result.map(row => {
+    const [ id, name, openrank ] = row;
+    return {
+      id,
+      name,
+      openrank,
+    }
+  });
+  
 }
 
 export const basicActivitySqlComponent = `
@@ -82,7 +95,7 @@ export const basicActivitySqlComponent = `
     sqrt(${ISSUE_COMMENT_WEIGHT}*issue_comment + ${OPEN_ISSUE_WEIGHT}*open_issue + ${OPEN_PULL_WEIGHT}*open_pull + ${REVIEW_COMMENT_WEIGHT}*review_comment + ${PULL_MERGED_WEIGHT}*merged_pull) AS activity
 `;
 
-export const getRepoActivityWithDetail = async (config: QueryConfig) => {
+export const getRepoActivity = async (config: QueryConfig) => {
   config = getMergedConfig(config);
   const whereClauses: string[] = ["type IN ('IssuesEvent', 'IssueCommentEvent', 'PullRequestEvent', 'PullRequestReviewCommentEvent')"]; // specify types to reduce memory usage and calculation
   const repoWhereClause = getRepoWhereClauseForClickhouse(config);
@@ -124,10 +137,11 @@ FROM
     HAVING activity > 0
   )
   GROUP BY id, time
-  ${config.limit > 0 ? `ORDER BY activity DESC LIMIT ${config.limit} BY time` : ''}
+  ${config.order ? `ORDER BY activity ${config.order} LIMIT`: ''}
+  ${config.limit > 0 ? `LIMIT ${config.limit} BY time` : ''}
 )
 GROUP BY id
-ORDER BY activity[-1] ${config.order}
+${config.order ? `ORDER BY activity[-1] ${config.order}` : ''}
 FORMAT JSONCompact`;  // use JSONCompact to reduce network I/O
 
   const result: any = await clickhouse.query(sql);
@@ -147,7 +161,7 @@ FORMAT JSONCompact`;  // use JSONCompact to reduce network I/O
   });
 }
 
-export const getUserActivityWithDetail = async (config: QueryConfig, withBot: boolean = true) => {
+export const getUserActivity = async (config: QueryConfig, withBot: boolean = true) => {
   config = getMergedConfig(config);
   const whereClauses: string[] = ["type IN ('IssuesEvent', 'IssueCommentEvent', 'PullRequestEvent', 'PullRequestReviewCommentEvent')"]; // specify types to reduce memory usage and calculation
   const userWhereClause = getUserWhereClauseForClickhouse(config);
@@ -186,10 +200,11 @@ FROM
     HAVING activity > 0 ${ withBot ? '' : `AND actor_login NOT LIKE '%[bot]'` }
   )
   GROUP BY id, time
-  ${config.limit > 0 ? `ORDER BY activity DESC LIMIT ${config.limit} BY time` : ''}
+  ${config.order ? `ORDER BY activity ${config.order} LIMIT`: ''}
+  ${config.limit > 0 ? `LIMIT ${config.limit} BY time` : ''}
 )
 GROUP BY id
-ORDER BY activity[-1] ${config.order}
+${config.order ? `ORDER BY activity[-1] ${config.order}` : ''}
 FORMAT JSONCompact`;
 
   const result: any = await clickhouse.query(sql);
@@ -207,3 +222,43 @@ FORMAT JSONCompact`;
     }
   });
 }
+
+export const getAttention = async (config: QueryConfig) => {
+  config = getMergedConfig(config);
+  const whereClauses: string[] = ["type IN ('WatchEvent', 'ForkEvent')"];
+  const repoWhereClause = getRepoWhereClauseForClickhouse(config);
+  if (repoWhereClause) whereClauses.push(repoWhereClause);
+  whereClauses.push(getTimeRangeWhereClauseForClickhouse(config));
+
+    const sql = `
+SELECT
+  id,
+  argMax(name, time) AS name,
+  ${getGroupArrayInsertAtClauseForClickhouse(config, { key: 'attention' })}
+FROM
+(
+  SELECT
+    ${getGroupTimeAndIdClauseForClickhouse(config)},
+    countIf(type='WatchEvent') AS stars,
+    countIf(type='ForkEvent') AS forks,
+    stars + 2 * forks AS attention
+  FROM github_log.events
+  WHERE ${whereClauses.join(' AND ')}
+  GROUP BY id, time
+  ${config.order ? `ORDER BY attention ${config.order}` : ''}
+  ${config.limit > 0 ? `LIMIT ${config.limit} BY time` : ''}
+)
+GROUP BY id
+${config.order ? `ORDER BY attention[-1] ${config.order}` : ''}
+FORMAT JSONCompact`;
+
+  const result: any = await clickhouse.query(sql);
+  return result.map(row => {
+    const [ id, name, attention ] = row;
+    return {
+      id,
+      name,
+      attention,
+    }
+  });
+};

@@ -1,17 +1,14 @@
-import { getRepoActivityOrOpenrank, getRepoActivityWithDetail, getUserActivityOrOpenrank, getUserActivityWithDetail } from './activity_openrank';
+import { getRepoOpenrank, getRepoActivity, getUserOpenrank, getUserActivity, getAttention } from './indices';
 import { chaossCodeChangeCommits, chaossBusFactor, chaossIssuesNew, chaossIssuesClosed, chaossChangeRequestsAccepted, chaossChangeRequestsDeclined, chaossIssueResolutionDuration, chaossCodeChangeLines } from './chaoss';
-import { getAttention } from './attention';
 import { getRelatedUsers } from './related_users';
 
 module.exports = {
   // index
-  getRepoActivity: config => getRepoActivityOrOpenrank(config, 'activity'),
-  getRepoActivityWithDetail: getRepoActivityWithDetail,
-  getRepoOpenrank: config => getRepoActivityOrOpenrank(config, 'open_rank'),
+  getRepoActivity: getRepoActivity,
+  getRepoOpenrank: getRepoOpenrank,
   getRelatedUsers: getRelatedUsers,
-  getUserActivity: config => getUserActivityOrOpenrank(config, 'activity'),
-  getUserActivityWithDetail: getUserActivityWithDetail,
-  getUserOpenrank: config => getUserActivityOrOpenrank(config, 'open_rank'),
+  getUserActivity: getUserActivity,
+  getUserOpenrank: getUserOpenrank,
   getAttention: getAttention,
   // chaoss metrics
   chaossCodeChangeCommits: chaossCodeChangeCommits,

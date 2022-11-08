@@ -10,11 +10,12 @@ export interface QueryConfig<T = any> {
   orgNames?: string[];
   userIds?: number[];
   userLogins?: string[];
+  whereClause?: string;
   startYear: number;
   startMonth: number;
   endYear: number;
   endMonth: number;
-  order: 'DESC' | 'ASC';
+  order?: 'DESC' | 'ASC';
   limit: number;
   percision: number;
   groupBy?: 'org' | string;
@@ -29,7 +30,6 @@ export const getMergedConfig = (config: any): QueryConfig => {
       startMonth: 1,
       endYear: new Date().getFullYear(),
       endMonth: new Date().getMonth(),
-      order: 'DESC',
       limit: 10,
       percision: 2,
   };
@@ -71,6 +71,9 @@ export const getRepoWhereClauseForNeo4j = (config: QueryConfig): string | null =
     if (data.githubRepos.length > 0) repoWhereClauseArray.push(`r.id IN [${data.githubRepos.join(',')}]`);
     if (data.githubOrgs.length > 0) repoWhereClauseArray.push(`r.org_id IN [${data.githubOrgs.join(',')}]`);
   }
+  if (config.whereClause) {
+    repoWhereClauseArray.push(config.whereClause);
+  }
   const repoWhereClause = repoWhereClauseArray.length > 0 ? `(${repoWhereClauseArray.join(' OR ')})` : null;
   return repoWhereClause;
 }
@@ -96,6 +99,9 @@ export const getRepoWhereClauseForClickhouse = (config: QueryConfig): string | n
     if (data.githubRepos.length > 0) repoWhereClauseArray.push(`repo_id IN [${data.githubRepos.join(',')}]`);
     if (data.githubOrgs.length > 0) repoWhereClauseArray.push(`org_id IN [${data.githubOrgs.join(',')}]`);
   }
+  if (config.whereClause) {
+    repoWhereClauseArray.push(config.whereClause);
+  }
   const repoWhereClause = repoWhereClauseArray.length > 0 ? `(${repoWhereClauseArray.join(' OR ')})` : null;
   return repoWhereClause;
 }
@@ -116,6 +122,9 @@ export const getUserWhereClauseForNeo4j = (config: QueryConfig): string | null =
     const data = getGitHubData(config.labelUnion, config.injectLabelData);
     if (data.githubUsers.length > 0) userWhereClauseArray.push(`u.id IN [${data.githubUsers.join(',')}]`);
   }
+  if (config.whereClause) {
+    userWhereClauseArray.push(config.whereClause);
+  }
   const userWhereClause = userWhereClauseArray.length > 0 ? `(${userWhereClauseArray.join(' OR ')})` : null;
   return userWhereClause;
 }
@@ -134,6 +143,9 @@ export const getUserWhereClauseForClickhouse = (config: QueryConfig): string | n
   if (config.labelUnion) {
     const data = getGitHubData(config.labelUnion, config.injectLabelData);
     if (data.githubUsers.length > 0) userWhereClauseArray.push(`actor_id IN [${data.githubUsers.join(',')}]`);
+  }
+  if (config.whereClause) {
+    userWhereClauseArray.push(config.whereClause);
   }
   const userWhereClause = userWhereClauseArray.length > 0 ? `(${userWhereClauseArray.join(' OR ')})` : null;
   return userWhereClause;
