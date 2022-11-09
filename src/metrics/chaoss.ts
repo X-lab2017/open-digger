@@ -358,3 +358,57 @@ FORMAT JSONCompact`;
     }
   });
 };
+
+interface CodeChangeLinesOptions {
+  by: 'add' | 'remove' | 'sum';
+}
+export const chaossCodeChangeLines = async (config: QueryConfig<CodeChangeLinesOptions>) => {
+  config = getMergedConfig(config);
+  const by = filterEnumType(config.options?.by, ['add', 'remove', 'sum'], 'add');
+  const whereClauses: string[] = ["type = 'PullRequestEvent' "];
+  const repoWhereClause = getRepoWhereClauseForClickhouse(config);
+  if (repoWhereClause) whereClauses.push(repoWhereClause);
+  whereClauses.push(getTimeRangeWhereClauseForClickhouse(config));  
+  
+  const sql = `
+SELECT
+  id,
+  argMax(name, time) AS name,
+  ${getGroupArrayInsertAtClauseForClickhouse(config, { key: 'code_change_lines', value: 'lines' })}
+FROM
+(
+  SELECT
+    ${getGroupTimeAndIdClauseForClickhouse(config, 'repo')},
+    ${(() => {
+        if (by === 'add') {
+          return `
+          SUM(pull_additions) AS lines`
+        } else if (by === 'remove') {
+          return `
+          SUM(pull_deletions) AS lines`
+        } else if (by === 'sum') {
+          return `
+          SUM(pull_additions) AS additions,
+          SUM(pull_deletions) AS deletions,
+          minus(additions,deletions) AS lines
+          ` }
+        })()}
+    FROM github_log.events
+    WHERE ${whereClauses.join(' AND ')}
+    GROUP BY id, time
+    ${config.limit > 0 ? `ORDER BY lines DESC LIMIT ${config.limit} BY time` : ''}
+  )
+  GROUP BY id
+  ORDER BY code_change_lines[-1] ${config.order}
+  FORMAT JSONCompact`;
+  
+  const result: any = await clickhouse.query(sql);
+    return result.map(row => {
+      const [ id, name, lines ] = row;
+      return {
+        id,
+        name,
+        lines,
+      }
+    });
+  };
