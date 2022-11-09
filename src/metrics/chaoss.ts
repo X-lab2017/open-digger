@@ -9,6 +9,45 @@ import {
 import * as clickhouse from '../db/clickhouse';
 import { basicActivitySqlComponent } from "./indices";
 
+// Common - Contributions
+export const chaossTechnicalFork = async (config: QueryConfig) => {
+  config = getMergedConfig(config);
+  const whereClauses: string[] = ["type = 'ForkEvent'"];
+  const repoWhereClause = getRepoWhereClauseForClickhouse(config);
+  if (repoWhereClause) whereClauses.push(repoWhereClause);
+  whereClauses.push(getTimeRangeWhereClauseForClickhouse(config));
+
+  const sql = `
+SELECT
+  id,
+  argMax(name, time) AS name,
+  ${getGroupArrayInsertAtClauseForClickhouse(config, { key: 'count' })}
+FROM
+(
+  SELECT
+    ${getGroupTimeAndIdClauseForClickhouse(config, 'repo')},
+    COUNT() AS count
+  FROM github_log.events
+  WHERE ${whereClauses.join(' AND ')}
+  GROUP BY id, time
+  ${config.order ? `ORDER BY count ${config.order}` : ''}
+  ${config.limit > 0 ? `LIMIT ${config.limit} BY time` : ''}
+)
+GROUP BY id
+${config.order ? `ORDER BY count[-1] ${config.order}` : ''}
+FORMAT JSONCompact`;
+
+  const result: any = await clickhouse.query(sql);
+  return result.map(row => {
+    const [ id, name, count ] = row;
+    return {
+      id,
+      name,
+      count,
+    }
+  });
+};
+
 // Evolution - Code Development Activity
 interface CodeChangeCommitsOptions {
   // a filter regular expression for commit message
@@ -337,6 +376,83 @@ FORMAT JSONCompact`;
   });
 };
 
+// Evolution - Code Development Process Quality
+export const chaossChangeRequests = async (config: QueryConfig) => {
+  config = getMergedConfig(config);
+  const whereClauses: string[] = ["type = 'PullRequestEvent' AND action = 'opened'"];
+  const repoWhereClause = getRepoWhereClauseForClickhouse(config);
+  if (repoWhereClause) whereClauses.push(repoWhereClause);
+  whereClauses.push(getTimeRangeWhereClauseForClickhouse(config));
+
+  const sql = `
+SELECT
+  id,
+  argMax(name, time) AS name,
+  ${getGroupArrayInsertAtClauseForClickhouse(config, { key: 'count' })}
+FROM
+(
+  SELECT
+    ${getGroupTimeAndIdClauseForClickhouse(config, 'repo')},
+    COUNT() AS count
+  FROM github_log.events
+  WHERE ${whereClauses.join(' AND ')}
+  GROUP BY id, time
+  ${config.order ? `ORDER BY count ${config.order}` : ''}
+  ${config.limit > 0 ? `LIMIT ${config.limit} BY time` : ''}
+)
+GROUP BY id
+${config.order ? `ORDER BY count[-1] ${config.order}` : ''}
+FORMAT JSONCompact`;
+
+  const result: any = await clickhouse.query(sql);
+  return result.map(row => {
+    const [ id, name, count ] = row;
+    return {
+      id,
+      name,
+      count,
+    }
+  });
+}
+
+export const chaossChangeRequestReviews = async (config: QueryConfig) => {
+  config = getMergedConfig(config);
+  const whereClauses: string[] = ["type = 'PullRequestReviewCommentEvent'"];
+  const repoWhereClause = getRepoWhereClauseForClickhouse(config);
+  if (repoWhereClause) whereClauses.push(repoWhereClause);
+  whereClauses.push(getTimeRangeWhereClauseForClickhouse(config));
+
+  const sql = `
+SELECT
+  id,
+  argMax(name, time) AS name,
+  ${getGroupArrayInsertAtClauseForClickhouse(config, { key: 'count' })}
+FROM
+(
+  SELECT
+    ${getGroupTimeAndIdClauseForClickhouse(config, 'repo')},
+    COUNT() AS count
+  FROM github_log.events
+  WHERE ${whereClauses.join(' AND ')}
+  GROUP BY id, time
+  ${config.order ? `ORDER BY count ${config.order}` : ''}
+  ${config.limit > 0 ? `LIMIT ${config.limit} BY time` : ''}
+)
+GROUP BY id
+${config.order ? `ORDER BY count[-1] ${config.order}` : ''}
+FORMAT JSONCompact`;
+
+  const result: any = await clickhouse.query(sql);
+  return result.map(row => {
+    const [ id, name, count ] = row;
+    return {
+      id,
+      name,
+      count,
+    }
+  });
+}
+
 // Risk - Business Risk
 interface BusFactorOptions {
   // calculate bus factor by change request or git commit, or activity index. default: activity
@@ -401,7 +517,7 @@ FROM
     FROM github_log.events
     WHERE ${whereClauses.join(' AND ')}
     GROUP BY id, time, ${by === 'commit' ? 'author' : 'actor_id' }
-    ${(config.options?.withBot && by !== 'commit') ? '' : "HAVING author NOT LIKE '%[bot]'"}
+    ${(config.options?.withBot && by !== 'commit') ? '' : "HAVING " + (by === 'activity' ? 'actor_login' : 'author') + " NOT LIKE '%[bot]'"}
     ${config.order ? `ORDER BY count ${config.order}` : ''}
   )
   GROUP BY id, time

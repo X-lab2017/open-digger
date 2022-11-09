@@ -90,7 +90,7 @@ const task: Task = {
     const globalUserMonthActivityData = await getUserActivity({
       startYear, startMonth, endYear, endMonth,
       order: 'DESC', limit, percision: 2,
-      groupTimeRange: 'month',
+      groupTimeRange: 'month', whereClause: 'repo_id IN (SELECT id FROM github_log.export_user)',
     }, false);
     console.log(`Get global user month activity data done, count=${globalUserMonthActivityData.length}`);
     const globalUserMonthActivityMap = rankData(globalUserMonthActivityData!, allMonthes, (item, _, index) => item.activity[index], (item, index) => {
@@ -112,7 +112,7 @@ const task: Task = {
     const globalUserYearActivityData = await getUserActivity({
       startYear, startMonth, endYear, endMonth,
       order: 'DESC', limit, percision: 2,
-      groupTimeRange: 'year',
+      groupTimeRange: 'year', whereClause: 'repo_id IN (SELECT id FROM github_log.export_user)',
     }, false);
     console.log(`Get global user year activity data done, count=${globalUserYearActivityData.length}`);
     const globalUserYearActivityMap = rankData(globalUserYearActivityData!, allYears, (item, _, index) => item.activity[index], (item, index) => {
@@ -237,7 +237,7 @@ const task: Task = {
     const globalRepoMonthActivityData = await getRepoActivity({
       startYear, startMonth, endYear, endMonth,
       order: 'DESC', limit, percision: 2,
-      groupTimeRange: 'month',
+      groupTimeRange: 'month', whereClause: 'repo_id IN (SELECT id FROM github_log.export_repo)',
     });
     console.log(`Get global repo month activity data done, count=${globalRepoMonthActivityData?.length}`);
     const globalRepoMonthActivityMap = rankData(globalRepoMonthActivityData!, allMonthes, (item, _, index) => item.activity[index], (item, index) => {
@@ -258,7 +258,7 @@ const task: Task = {
     const globalRepoYearActivityData = await getRepoActivity({
       startYear, startMonth, endYear, endMonth,
       order: 'DESC', limit, percision: 2,
-      groupTimeRange: 'year',
+      groupTimeRange: 'year', whereClause: 'repo_id IN (SELECT id FROM github_log.export_repo)',
     });
     console.log(`Get global repo year activity data done, count=${globalRepoYearActivityData?.length}`);
     const globalRepoYearActivityMap = rankData(globalRepoYearActivityData!, allYears, (item, _, index) => item.activity[index], (item, index) => {

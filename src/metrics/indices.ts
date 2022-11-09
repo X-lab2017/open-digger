@@ -137,7 +137,7 @@ FROM
     HAVING activity > 0
   )
   GROUP BY id, time
-  ${config.order ? `ORDER BY activity ${config.order} LIMIT`: ''}
+  ${config.order ? `ORDER BY activity ${config.order}`: ''}
   ${config.limit > 0 ? `LIMIT ${config.limit} BY time` : ''}
 )
 GROUP BY id
@@ -200,7 +200,7 @@ FROM
     HAVING activity > 0 ${ withBot ? '' : `AND actor_login NOT LIKE '%[bot]'` }
   )
   GROUP BY id, time
-  ${config.order ? `ORDER BY activity ${config.order} LIMIT`: ''}
+  ${config.order ? `ORDER BY activity ${config.order}`: ''}
   ${config.limit > 0 ? `LIMIT ${config.limit} BY time` : ''}
 )
 GROUP BY id
