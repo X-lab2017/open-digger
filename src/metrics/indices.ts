@@ -15,7 +15,11 @@ export const PULL_MERGED_WEIGHT = 2;
 
 export const getRepoOpenrank = async (config: QueryConfig) => {
   config = getMergedConfig(config);
+  const whereClause: string[] = [];
   const repoWhereClause = getRepoWhereClauseForClickhouse(config);
+  if (repoWhereClause) whereClause.push(repoWhereClause);
+  const timeRangeClause = getTimeRangeWhereClauseForClickhouse(config);
+  if (timeRangeClause) whereClause.push(timeRangeClause);
 
   const sql = `
 SELECT
@@ -28,7 +32,7 @@ FROM
     ${getGroupTimeAndIdClauseForClickhouse(config, 'repo')},
     SUM(openrank) AS openrank
   FROM github_log.repo_openrank
-  WHERE ${repoWhereClause}
+  WHERE ${whereClause.join(' AND ')}
   GROUP BY id, time
   ${config.order ? `ORDER BY openrank ${config.order}` : ''}
   ${config.limit > 0 ? `LIMIT ${config.limit} BY time` : ''}
@@ -50,7 +54,11 @@ FORMAT JSONCompact`;
 
 export const getUserOpenrank = async (config: QueryConfig) => {
   config = getMergedConfig(config);
+  const whereClause: string[] = [];
   const userWhereClause = getUserWhereClauseForClickhouse(config);
+  if (userWhereClause) whereClause.push(userWhereClause);
+  const timeRangeClause = getTimeRangeWhereClauseForClickhouse(config);
+  if (timeRangeClause) whereClause.push(timeRangeClause);
 
   const sql = `
 SELECT
@@ -63,7 +71,7 @@ FROM
     ${getGroupTimeAndIdClauseForClickhouse(config, 'user')},
     SUM(openrank) AS openrank
   FROM github_log.user_openrank
-  WHERE ${userWhereClause}
+  WHERE ${whereClause.join(' AND ')}
   GROUP BY id, time
   ${config.order ? `ORDER BY openrank ${config.order}` : ''}
   ${config.limit > 0 ? `LIMIT ${config.limit} BY time` : ''}

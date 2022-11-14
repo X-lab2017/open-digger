@@ -24,8 +24,7 @@ const task: Task = {
       // handle export table first
       // - create the table if not exist
       // - delete all the content of the table
-      // - insert all repo_id with 4 developers in any month except robots
-      // - insert all actor_id active on above repos except robots which have at least 20 events in all history
+      // - insert repo and user with openrank > e in any month in history
       const exportTableQueries: string[] = [
         `CREATE TABLE IF NOT EXISTS ${exportRepoTableName}
   (\`id\` UInt64)
