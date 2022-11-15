@@ -1,8 +1,6 @@
 import { existsSync, mkdirSync, writeFileSync } from 'fs';
 import { Task } from '..';
-import { query } from '../../db/neo4j';
-import { getGitHubData, getLabelData } from '../../label_data_utils';
-import { getRepoActivityWithDetail, getUserActivityWithDetail } from '../../metrics/activity_openrank';
+import { getRepoActivity, getRepoOpenrank, getUserActivity, getUserOpenrank } from '../../metrics/indices';
 import { forEveryMonth } from '../../metrics/basic';
 import { rankData } from '../../utils';
 
@@ -14,13 +12,11 @@ const task: Task = {
 
     console.log(`Start to run open leaderboard task.`);
 
-    const labelData = getLabelData();
     const startYear = 2015, startMonth = 1, endYear = new Date().getFullYear(), endMonth = new Date().getMonth();
     const limit = 300;
     const allMonthes: string[] = [];
     await forEveryMonth(startYear, startMonth, endYear, endMonth, async (y, m) => allMonthes.push(`${y}${m}`));
     const allYears = Array.from({ length: endYear - startYear + 1 }, (_, i) => i + startYear);
-    const monthInAYear = Array.from({ length: 12 }, (_, i) => i + 1 );
 
     const writeData = (dataMap: Map<any, any>, type: string, path: string) => {
       for (const [ time, data ] of dataMap.entries()) {
@@ -32,13 +28,8 @@ const task: Task = {
       }
     };
 
-    const defaultReducer = (a: number, b: number) => a + b;
-    const openRankProp = (time: any) => `open_rank_${time}`;
-    const getOpenRank = (item: any, time: string) => item[openRankProp(time)] ?? 0;
-    const chineseLabel = getGitHubData([':regions/China']);
-
     // get chinese month actor activity
-    const chineseUserMonthActivityData = await getUserActivityWithDetail({
+    const chineseUserMonthActivityData = await getUserActivity({
       labelUnion: [':regions/China'],
       startYear, startMonth, endYear, endMonth,
       order: 'DESC', limit: -1, percision: 2,
@@ -62,7 +53,7 @@ const task: Task = {
     writeData(chineseUserMonthActivityMap, 'Actor_China_Month', 'activity/actor/chinese');
 
     // get chinese actor year acitivity
-    const chineseUserYearActivityData = await getUserActivityWithDetail({
+    const chineseUserYearActivityData = await getUserActivity({
       labelUnion: [':regions/China'],
       startYear, startMonth, endYear, endMonth,
       order: 'DESC', limit: -1, percision: 2,
@@ -87,10 +78,10 @@ const task: Task = {
     console.log('Chinese actor activity done.');
 
     // get global actor activity
-    const globalUserMonthActivityData = await getUserActivityWithDetail({
+    const globalUserMonthActivityData = await getUserActivity({
       startYear, startMonth, endYear, endMonth,
       order: 'DESC', limit, percision: 2,
-      groupTimeRange: 'month',
+      groupTimeRange: 'month', whereClause: 'actor_id IN (SELECT id FROM github_log.export_user)',
     }, false);
     console.log(`Get global user month activity data done, count=${globalUserMonthActivityData.length}`);
     const globalUserMonthActivityMap = rankData(globalUserMonthActivityData!, allMonthes, (item, _, index) => item.activity[index], (item, index) => {
@@ -109,10 +100,10 @@ const task: Task = {
     }
     writeData(globalUserMonthActivityMap, 'Actor_Global_Month', 'activity/actor/global');
 
-    const globalUserYearActivityData = await getUserActivityWithDetail({
+    const globalUserYearActivityData = await getUserActivity({
       startYear, startMonth, endYear, endMonth,
       order: 'DESC', limit, percision: 2,
-      groupTimeRange: 'year',
+      groupTimeRange: 'year', whereClause: 'actor_id IN (SELECT id FROM github_log.export_user)',
     }, false);
     console.log(`Get global user year activity data done, count=${globalUserYearActivityData.length}`);
     const globalUserYearActivityMap = rankData(globalUserYearActivityData!, allYears, (item, _, index) => item.activity[index], (item, index) => {
@@ -134,7 +125,7 @@ const task: Task = {
 
     // get chinese company activity
     // by month
-    const chineseCompanyMonthActivityData = await getRepoActivityWithDetail({
+    const chineseCompanyMonthActivityData = await getRepoActivity({
       labelIntersect: ['Company', ':regions/China'],
       startYear, startMonth, endYear, endMonth,
       order: 'DESC', limit: -1, percision: 2,
@@ -158,7 +149,7 @@ const task: Task = {
     writeData(chineseCompanyMonthActivityMap, 'Company_China_Month', 'activity/company/chinese');
     
     // by year
-    const chineseCompanyYearActivityData = await getRepoActivityWithDetail({
+    const chineseCompanyYearActivityData = await getRepoActivity({
       labelIntersect: ['Company', ':regions/China'],
       startYear, startMonth, endYear, endMonth,
       order: 'DESC', limit: -1, percision: 2,
@@ -184,7 +175,7 @@ const task: Task = {
 
     // get global company activity
     // by month
-    const globalCompanyMonthActivityData = await getRepoActivityWithDetail({
+    const globalCompanyMonthActivityData = await getRepoActivity({
       labelUnion: ['Company'],
       startYear, startMonth, endYear, endMonth,
       order: 'DESC', limit: -1, percision: 2,
@@ -208,7 +199,7 @@ const task: Task = {
     writeData(globalCompanyMonthActivityMap, 'Company_Global_Month', 'activity/company/global');
     
     // by year
-    const globalCompanyYearActivityData = await getRepoActivityWithDetail({
+    const globalCompanyYearActivityData = await getRepoActivity({
       labelUnion: ['Company'],
       startYear, startMonth, endYear, endMonth,
       order: 'DESC', limit: -1, percision: 2,
@@ -234,10 +225,10 @@ const task: Task = {
 
     // get global repo activity
     // by month
-    const globalRepoMonthActivityData = await getRepoActivityWithDetail({
+    const globalRepoMonthActivityData = await getRepoActivity({
       startYear, startMonth, endYear, endMonth,
       order: 'DESC', limit, percision: 2,
-      groupTimeRange: 'month',
+      groupTimeRange: 'month', whereClause: 'repo_id IN (SELECT id FROM github_log.export_repo)',
     });
     console.log(`Get global repo month activity data done, count=${globalRepoMonthActivityData?.length}`);
     const globalRepoMonthActivityMap = rankData(globalRepoMonthActivityData!, allMonthes, (item, _, index) => item.activity[index], (item, index) => {
@@ -255,10 +246,10 @@ const task: Task = {
     }
     writeData(globalRepoMonthActivityMap, 'Repo_Global_Month', 'activity/repo/global');
     // by year
-    const globalRepoYearActivityData = await getRepoActivityWithDetail({
+    const globalRepoYearActivityData = await getRepoActivity({
       startYear, startMonth, endYear, endMonth,
       order: 'DESC', limit, percision: 2,
-      groupTimeRange: 'year',
+      groupTimeRange: 'year', whereClause: 'repo_id IN (SELECT id FROM github_log.export_repo)',
     });
     console.log(`Get global repo year activity data done, count=${globalRepoYearActivityData?.length}`);
     const globalRepoYearActivityMap = rankData(globalRepoYearActivityData!, allYears, (item, _, index) => item.activity[index], (item, index) => {
@@ -279,7 +270,7 @@ const task: Task = {
 
     // get Chinese repo activity
     // by month
-    const chineseRepoMonthActivityData = await getRepoActivityWithDetail({
+    const chineseRepoMonthActivityData = await getRepoActivity({
       labelUnion: [':regions/China'],
       startYear, startMonth, endYear, endMonth,
       order: 'DESC', limit: -1, percision: 2,
@@ -301,7 +292,7 @@ const task: Task = {
     }
     writeData(chineseRepoMonthActivityMap, 'Repo_China_Month', 'activity/repo/chinese');
     // by year
-    const chineseRepoYearActivityData = await getRepoActivityWithDetail({
+    const chineseRepoYearActivityData = await getRepoActivity({
       labelUnion: [':regions/China'],
       startYear, startMonth, endYear, endMonth,
       order: 'DESC', limit: -1, percision: 2,
@@ -325,124 +316,173 @@ const task: Task = {
     console.log('Chinese repo activity done.');
 
     // get Chinese actor OpenRank
-    const chineseActorData = await query(`MATCH (u:User) WHERE u.id IN [${chineseLabel.githubUsers.join(',')}] RETURN u;`);
     // by month
-    writeData(rankData(chineseActorData, allMonthes, getOpenRank, item => {
-      return {
-        name: item.login,
-        id: item.id,
-      }
-    }), 'Actor_China_Month', 'open_rank/actor/chinese');
+    const chineseUserMonthOpenrankData = await getUserOpenrank({
+      labelUnion: [':regions/China'],
+      startYear, startMonth, endYear, endMonth,
+      order: 'DESC', limit: -1, percision: 2,
+      groupTimeRange: 'month',
+    });
+    console.log(`Get chinese user month openrank data done, count=${chineseUserMonthOpenrankData.length}`);
+    const chineseUserMonthOpenrankMap = rankData(chineseUserMonthOpenrankData!, allMonthes, (item, _, index) => item.activity[index], item => { return { name: item.name, id: item.id }; });
+    for (const k of chineseUserMonthOpenrankMap.keys()) {
+      chineseUserMonthOpenrankMap.set(k, chineseUserMonthOpenrankMap.get(k)!.filter(i => i.value > 0));
+    }
+    writeData(chineseUserMonthOpenrankMap, 'Actor_China_Month', 'open_rank/actor/chinese');
     // by year
-    writeData(rankData(chineseActorData,
-      allYears,
-      (item, year) => monthInAYear.map(m => getOpenRank(item, `${year}${m}`)).reduce(defaultReducer),
-      item => {
-        return {
-          name: item.login,
-          id: item.id,
-        }
-      }), 'Actor_China_Year', 'open_rank/actor/chinese');
+    const chineseUserYearOpenrankData = await getUserOpenrank({
+      labelUnion: [':regions/China'],
+      startYear, startMonth, endYear, endMonth,
+      order: 'DESC', limit: -1, percision: 2,
+      groupTimeRange: 'year',
+    });
+    console.log(`Get chinese user year openrank data done, count=${chineseUserYearOpenrankData.length}`);
+    const chineseUserYearOpenrankMap = rankData(chineseUserYearOpenrankData!, allMonthes, (item, _, index) => item.activity[index], item => { return { name: item.name, id: item.id }; });
+    for (const k of chineseUserYearOpenrankMap.keys()) {
+      chineseUserYearOpenrankMap.set(k, chineseUserYearOpenrankMap.get(k)!.filter(i => i.value > 0));
+    }
+    writeData(chineseUserYearOpenrankMap, 'Actor_China_Year', 'open_rank/actor/chinese');
     console.log('Chinese actor OpenRank done.');
 
     // get global actor OpenRank
-    const globalActorDataMap = new Map<any, any>();
-    await forEveryMonth(startYear, startMonth, endYear, endMonth, async (y, m) => {
-      const globalMonthData = await query(`MATCH (u:User) WHERE u.${openRankProp(`${y}${m}`)} > 0 RETURN u ORDER BY u.${openRankProp(`${y}${m}`)} DESC LIMIT ${limit};`);
-      globalMonthData.forEach(r => globalActorDataMap.set(r.id, r));
-    });
-    const globalActorData = Array.from(globalActorDataMap.values());
     // by month
-    writeData(rankData(globalActorData, allMonthes, getOpenRank, item => {
-      return {
-        name: item.login,
-        id: item.id,
-      }
-    }), 'Actor_Global_Month', 'open_rank/actor/global');
+    const globalUserMonthOpenrankData = await getUserOpenrank({
+      startYear, startMonth, endYear, endMonth,
+      order: 'DESC', limit, percision: 2,
+      groupTimeRange: 'month', whereClause: 'actor_id IN (SELECT id FROM github_log.export_user)',
+    });
+    console.log(`Get global user month openrank data done, count=${globalUserMonthOpenrankData.length}`);
+    const globalUserMonthOpenrankMap = rankData(globalUserMonthOpenrankData!, allMonthes, (item, _, index) => item.activity[index], item => { return { name: item.name, id: item.id }; });
+    for (const k of globalUserMonthOpenrankMap.keys()) {
+      globalUserMonthOpenrankMap.set(k, globalUserMonthOpenrankMap.get(k)!.filter(i => i.value > 0));
+    }
+    writeData(globalUserMonthOpenrankMap, 'Actor_Global_Month', 'open_rank/actor/global');
     // by year
-    writeData(rankData(globalActorData,
-      allYears, 
-      (item, year) => monthInAYear.map(m => getOpenRank(item, `${year}${m}`)).reduce(defaultReducer),
-      item => {
-        return {
-          name: item.login,
-          id: item.id,
-        }
-      }), 'Actor_Global_Year', 'open_rank/actor/global');
+    const globalUserYearOpenrankData = await getUserOpenrank({
+      startYear, startMonth, endYear, endMonth,
+      order: 'DESC', limit, percision: 2,
+      groupTimeRange: 'year', whereClause: 'actor_id IN (SELECT id FROM github_log.export_user)',
+    });
+    console.log(`Get global user year openrank data done, count=${globalUserYearOpenrankData.length}`);
+    const globalUserYearOpenrankMap = rankData(globalUserYearOpenrankData!, allMonthes, (item, _, index) => item.activity[index], item => { return { name: item.name, id: item.id }; });
+    for (const k of globalUserYearOpenrankMap.keys()) {
+      globalUserYearOpenrankMap.set(k, globalUserYearOpenrankMap.get(k)!.filter(i => i.value > 0));
+    }
+    writeData(globalUserYearOpenrankMap, 'Actor_Global_Year', 'open_rank/actor/global');
     console.log('Global actor OpenRank done.');
 
     // get Chinese repo OpenRank
-    const chineseRepoData = await query(`MATCH (r:Repo) WHERE r.id IN [${chineseLabel.githubRepos.join(',')}] OR r.org_id IN [${chineseLabel.githubOrgs.join(',')}] RETURN r;`);
     // by month
-    writeData(rankData(chineseRepoData, allMonthes, getOpenRank, item => { return {name: item.name}}), 'Repo_China_Month', 'open_rank/repo/chinese');
+    const chineseRepoMonthOpenrankData = await getRepoOpenrank({
+      labelUnion: [':regions/China'],
+      startYear, startMonth, endYear, endMonth,
+      order: 'DESC', limit, percision: 2,
+      groupTimeRange: 'month',
+    });
+    console.log(`Get chinese repo month openrank data done, count=${chineseRepoMonthOpenrankData.length}`);
+    const chineseRepoMonthOpenrankMap = rankData(chineseRepoMonthOpenrankData!, allMonthes, (item, _, index) => item.activity[index], item => { return { name: item.name }; });
+    for (const k of chineseRepoMonthOpenrankMap.keys()) {
+      chineseRepoMonthOpenrankMap.set(k, chineseRepoMonthOpenrankMap.get(k)!.filter(i => i.value > 0));
+    }
+    writeData(chineseRepoMonthOpenrankMap, 'Repo_China_Month', 'open_rank/repo/chinese');
     // by year
-    writeData(rankData(chineseRepoData,
-      allYears, 
-      (item, year) => monthInAYear.map(m => getOpenRank(item, `${year}${m}`)).reduce(defaultReducer),
-      item => { return {name: item.name}}), 'Repo_China_Year', 'open_rank/repo/chinese');
+    const chineseRepoYearOpenrankData = await getRepoOpenrank({
+      labelUnion: [':regions/China'],
+      startYear, startMonth, endYear, endMonth,
+      order: 'DESC', limit: -1, percision: 2,
+      groupTimeRange: 'year',
+    });
+    console.log(`Get chinese repo year openrank data done, count=${chineseRepoYearOpenrankData.length}`);
+    const chineseRepoYearOpenrankMap = rankData(chineseRepoYearOpenrankData!, allMonthes, (item, _, index) => item.activity[index], item => { return { name: item.name }; });
+    for (const k of chineseRepoYearOpenrankMap.keys()) {
+      chineseRepoYearOpenrankMap.set(k, chineseRepoYearOpenrankMap.get(k)!.filter(i => i.value > 0));
+    }
+    writeData(chineseRepoYearOpenrankMap, 'Repo_China_Year', 'open_rank/repo/chinese');
     console.log('Chinese repo OpenRank done.');
     
     // get Chinese company
-    const chineseCompanyDataMap = new Map<string, any>();
-    const companyLabelArr = labelData.filter(l => l.type === 'Company');
-    chineseRepoData.forEach(r => {
-      const companyName = companyLabelArr.find(l => l.githubRepos.includes(r.id) || l.githubOrgs.includes(r.org_id))?.name;
-      if (!companyName) return; // not a company repo
-      if (!chineseCompanyDataMap.has(companyName)) chineseCompanyDataMap.set(companyName, {});
-      const companyInfo =chineseCompanyDataMap.get(companyName)!;
-      allMonthes.forEach(time => companyInfo[openRankProp(time)] = getOpenRank(companyInfo, time) + getOpenRank(r, time));
-      allYears.forEach(year => companyInfo[openRankProp(year)] = getOpenRank(companyInfo, year.toString()) + monthInAYear.map(m => getOpenRank(r, `${year}${m}`)).reduce(defaultReducer));
-    });
-    const chineseCompanyData = Array.from(chineseCompanyDataMap.entries()).map(v => {
-      return {
-        name: v[0],
-        ...v[1],
-      }
-    });
     // by month
-    writeData(rankData(chineseCompanyData, allMonthes, getOpenRank, item => { return {name: item.name}}), 'Company_China_Month', 'open_rank/company/chinese');
+    const chineseCompanyRepoMonthOpenrankData = await getRepoOpenrank({
+      labelIntersect: [':regions/China', 'Company'],
+      startYear, startMonth, endYear, endMonth,
+      order: 'DESC', limit, percision: 2,
+      groupTimeRange: 'month', groupBy: 'Company',
+    });
+    console.log(`Get chinese company repo month openrank data done, count=${chineseCompanyRepoMonthOpenrankData.length}`);
+    const chineseCompanyRepoMonthOpenrankMap = rankData(chineseCompanyRepoMonthOpenrankData!, allMonthes, (item, _, index) => item.activity[index], item => { return { name: item.name }; });
+    for (const k of chineseCompanyRepoMonthOpenrankMap.keys()) {
+      chineseCompanyRepoMonthOpenrankMap.set(k, chineseCompanyRepoMonthOpenrankMap.get(k)!.filter(i => i.value > 0));
+    }
+    writeData(chineseCompanyRepoMonthOpenrankMap, 'Company_China_Month', 'open_rank/company/chinese');
     // by year
-    writeData(rankData(chineseCompanyData, allYears, getOpenRank, item => { return {name: item.name}}), 'Company_China_Year', 'open_rank/company/chinese');
+    const chineseCompanyRepoYearOpenrankData = await getRepoOpenrank({
+      labelIntersect: [':regions/China', 'Company'],
+      startYear, startMonth, endYear, endMonth,
+      order: 'DESC', limit: -1, percision: 2,
+      groupTimeRange: 'year', groupBy: 'Company',
+    });
+    console.log(`Get chinese company repo year openrank data done, count=${chineseCompanyRepoYearOpenrankData.length}`);
+    const chineseCompanyRepoYearOpenrankMap = rankData(chineseCompanyRepoYearOpenrankData!, allMonthes, (item, _, index) => item.activity[index], item => { return { name: item.name }; });
+    for (const k of chineseCompanyRepoYearOpenrankMap.keys()) {
+      chineseCompanyRepoYearOpenrankMap.set(k, chineseCompanyRepoYearOpenrankMap.get(k)!.filter(i => i.value > 0));
+    }
+    writeData(chineseCompanyRepoYearOpenrankMap, 'Company_China_Year', 'open_rank/company/chinese');
     console.log('Chinese company OpenRank done.');
 
     // get global repo OpenRank
-    const globalRepoDataMap = new Map<any, any>();
-    await forEveryMonth(startYear, startMonth, endYear, endMonth, async (y, m) => {
-      const globalMonthData = await query(`MATCH (r:Repo) WHERE r.${openRankProp(`${y}${m}`)} > 0 RETURN r ORDER BY r.${openRankProp(`${y}${m}`)} DESC LIMIT ${limit};`);
-      globalMonthData.forEach(r => globalRepoDataMap.set(r.id, r));
-    });
-    const globalRepoData = Array.from(globalRepoDataMap.values());
     // by month
-    writeData(rankData(globalRepoData, allMonthes, getOpenRank, item => { return {name: item.name}}), 'Repo_Global_Month', 'open_rank/repo/global');
+    const globalRepoMonthOpenrankData = await getRepoOpenrank({
+      startYear, startMonth, endYear, endMonth,
+      order: 'DESC', limit, percision: 2,
+      groupTimeRange: 'month', whereClause: 'repo_id IN (SELECT id FROM github_log.export_repo)',
+    });
+    console.log(`Get global repo month openrank data done, count=${globalRepoMonthOpenrankData.length}`);
+    const globalRepoMonthOpenrankMap = rankData(globalRepoMonthOpenrankData!, allMonthes, (item, _, index) => item.activity[index], item => { return { name: item.name }; });
+    for (const k of globalRepoMonthOpenrankMap.keys()) {
+      globalRepoMonthOpenrankMap.set(k, globalRepoMonthOpenrankMap.get(k)!.filter(i => i.value > 0));
+    }
+    writeData(globalRepoMonthOpenrankMap, 'Repo_Global_Month', 'open_rank/repo/global');
     // by year
-    writeData(rankData(globalRepoData,
-      allYears, 
-      (item, year) => monthInAYear.map(m => getOpenRank(item, `${year}${m}`)).reduce(defaultReducer),
-      item => { return {name: item.name}}), 'Repo_Global_Year', 'open_rank/repo/global');
+    const globalRepoYearOpenrankData = await getRepoOpenrank({
+      startYear, startMonth, endYear, endMonth,
+      order: 'DESC', limit: -1, percision: 2,
+      groupTimeRange: 'year', whereClause: 'repo_id IN (SELECT id FROM github_log.export_repo)',
+    });
+    console.log(`Get global repo year openrank data done, count=${globalRepoYearOpenrankData.length}`);
+    const globalRepoYearOpenrankMap = rankData(globalRepoYearOpenrankData!, allMonthes, (item, _, index) => item.activity[index], item => { return { name: item.name }; });
+    for (const k of globalRepoYearOpenrankMap.keys()) {
+      globalRepoYearOpenrankMap.set(k, globalRepoYearOpenrankMap.get(k)!.filter(i => i.value > 0));
+    }
+    writeData(globalRepoYearOpenrankMap, 'Repo_Global_Year', 'open_rank/repo/global');
     console.log('Global repo OpenRank done.');
 
     // get global company
-    const globalCompanyDataMap = new Map<string, any>();
-    const companyLabel = getGitHubData(['Company']);
-    const globalCompanyRepoData = await query(`MATCH (r:Repo) WHERE r.id IN [${companyLabel.githubRepos.join(',')}] OR r.org_id IN [${companyLabel.githubOrgs.join(',')}] RETURN r;`)
-    globalCompanyRepoData.forEach(r => {
-      const companyName = companyLabelArr.find(l => l.githubRepos.includes(r.id) || l.githubOrgs.includes(r.org_id))?.name;
-      if (!companyName) return; // not a company repo
-      if (!globalCompanyDataMap.has(companyName)) globalCompanyDataMap.set(companyName, {});
-      const companyInfo = globalCompanyDataMap.get(companyName)!;
-      allMonthes.forEach(time => companyInfo[openRankProp(time)] = getOpenRank(companyInfo, time) + getOpenRank(r, time));
-      allYears.forEach(year => companyInfo[openRankProp(year)] = getOpenRank(companyInfo, year.toString()) + monthInAYear.map(m => getOpenRank(r, `${year}${m}`)).reduce(defaultReducer));
-    });
-    const globalCompanyData = Array.from(globalCompanyDataMap.entries()).map(v => {
-      return {
-        name: v[0],
-        ...v[1],
-      }
-    });
     // by month
-    writeData(rankData(globalCompanyData, allMonthes, getOpenRank, item => { return {name: item.name}}), 'Company_Global_Month', 'open_rank/company/global');
+    const globalCompanyRepoMonthOpenrankData = await getRepoOpenrank({
+      labelUnion: ['Company'],
+      startYear, startMonth, endYear, endMonth,
+      order: 'DESC', limit, percision: 2,
+      groupTimeRange: 'month', groupBy: 'Company',
+    });
+    console.log(`Get global company repo month openrank data done, count=${globalCompanyRepoMonthOpenrankData.length}`);
+    const globalCompanyRepoMonthOpenrankMap = rankData(globalCompanyRepoMonthOpenrankData!, allMonthes, (item, _, index) => item.activity[index], item => { return { name: item.name }; });
+    for (const k of globalCompanyRepoMonthOpenrankMap.keys()) {
+      globalCompanyRepoMonthOpenrankMap.set(k, globalCompanyRepoMonthOpenrankMap.get(k)!.filter(i => i.value > 0));
+    }
+    writeData(globalCompanyRepoMonthOpenrankMap, 'Company_Global_Month', 'open_rank/company/global');
     // by year
-    writeData(rankData(globalCompanyData, allYears, getOpenRank, item => { return {name: item.name}}), 'Company_Global_Year', 'open_rank/company/global');
+    const globalCompanyRepoYearOpenrankData = await getRepoOpenrank({
+      labelUnion: ['Company'],
+      startYear, startMonth, endYear, endMonth,
+      order: 'DESC', limit: -1, percision: 2,
+      groupTimeRange: 'year', groupBy: 'Company',
+    });
+    console.log(`Get global company repo year openrank data done, count=${globalCompanyRepoYearOpenrankData.length}`);
+    const globalCompanyRepoYearOpenrankMap = rankData(globalCompanyRepoYearOpenrankData!, allMonthes, (item, _, index) => item.activity[index], item => { return { name: item.name }; });
+    for (const k of globalCompanyRepoYearOpenrankMap.keys()) {
+      globalCompanyRepoYearOpenrankMap.set(k, globalCompanyRepoYearOpenrankMap.get(k)!.filter(i => i.value > 0));
+    }
+    writeData(globalCompanyRepoYearOpenrankMap, 'Company_Global_Year', 'open_rank/company/global');
     console.log('Global company OpenRank done.');
 
 

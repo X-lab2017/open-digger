@@ -13,7 +13,7 @@
     "notebook": "npm run build && docker pull docker-hub.x-lab.info/opendigger/open-digger-jupyter-nodejs:1.0 && docker run -it --rm -p 8888:8888 -v $(pwd):/home/node/notebook docker-hub.x-lab.info/opendigger/open-digger-jupyter-nodejs:1.0",
     "notebook:win": "npm run build && docker pull docker-hub.x-lab.info/opendigger/open-digger-jupyter-nodejs:1.0 && docker run -it --rm -p 8888:8888 -v %cd%:/home/node/notebook docker-hub.x-lab.info/opendigger/open-digger-jupyter-nodejs:1.0",
     "pull-label-file-test": "tsc && node lib/ci/pull_label_file_test.js",
-    "cron": "npm run build && node lib/cron/index.js",
+    "cron": "npm run build && node --max-old-space-size=8192 lib/cron/index.js",
     "clean": "rm -rf dist"
   },
   "repository": {

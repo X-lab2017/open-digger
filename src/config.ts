@@ -31,7 +31,11 @@ let config = {
   },
   ci: {
     token: process.env.GITHUB_TOKEN,
-  }
+  },
+  export: {
+    path: '',
+    needInit: true,
+  },
 };
 
 export default async () => {

@@ -6,7 +6,7 @@ export interface Task {
   cron: string;
   enable: boolean;
   immediate: boolean;
-  callback: (date: Date) => void;
+  callback: (date: Date) => Promise<void>;
 }
 
 (async () => {
@@ -21,13 +21,30 @@ export interface Task {
     const p = join(taskDir, taskFile);
     const task: Task = await import(p);
     if (!task.cron || !task.callback) {
-      console.log(`Task in ${p} is not a valid task.`);
+      console.log(`Task in ${taskFile} is not a valid task.`);
       return;
     }
     if (task.enable) {
-      cron.schedule(task.cron, task.callback);
+      cron.schedule(task.cron, t => {
+        return new Promise<void>(async resolve => {
+          try {
+            console.log(`Start to run task for ${taskFile}`);
+            await task.callback(t);
+            console.log(`Task ${taskFile} finished.`);
+          } catch(e) {
+            console.log(e);
+          }
+          resolve();
+        });
+      });
       if (task.immediate) {
-        task.callback(new Date());
+        try {
+          console.log(`Start to run task for ${taskFile}`);
+          await task.callback(new Date());
+          console.log(`Task ${taskFile} finished.`);
+        } catch(e) {
+          console.log(e);
+        }
       }
     }
   });
