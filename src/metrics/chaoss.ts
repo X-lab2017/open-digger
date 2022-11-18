@@ -13,7 +13,7 @@ import { basicActivitySqlComponent } from "./indices";
 export const chaossTechnicalFork = async (config: QueryConfig) => {
   config = getMergedConfig(config);
   const whereClauses: string[] = ["type = 'ForkEvent'"];
-  const repoWhereClause = getRepoWhereClauseForClickhouse(config);
+  const repoWhereClause = await getRepoWhereClauseForClickhouse(config);
   if (repoWhereClause) whereClauses.push(repoWhereClause);
   whereClauses.push(getTimeRangeWhereClauseForClickhouse(config));
 
@@ -56,7 +56,7 @@ interface CodeChangeCommitsOptions {
 export const chaossCodeChangeCommits = async (config: QueryConfig<CodeChangeCommitsOptions>) => {
   config = getMergedConfig(config);
   const whereClauses: string[] = ["type = 'PushEvent' "];
-  const repoWhereClause = getRepoWhereClauseForClickhouse(config);
+  const repoWhereClause = await getRepoWhereClauseForClickhouse(config);
   if (repoWhereClause) whereClauses.push(repoWhereClause);
   whereClauses.push(getTimeRangeWhereClauseForClickhouse(config));
 
@@ -98,7 +98,7 @@ export const chaossCodeChangeLines = async (config: QueryConfig<CodeChangeLinesO
   config = getMergedConfig(config);
   const by = filterEnumType(config.options?.by, ['add', 'remove', 'sum'], 'add');
   const whereClauses: string[] = ["type = 'PullRequestEvent' "];
-  const repoWhereClause = getRepoWhereClauseForClickhouse(config);
+  const repoWhereClause = await getRepoWhereClauseForClickhouse(config);
   if (repoWhereClause) whereClauses.push(repoWhereClause);
   whereClauses.push(getTimeRangeWhereClauseForClickhouse(config));  
   
@@ -150,7 +150,7 @@ FROM
 export const chaossIssuesNew = async (config: QueryConfig) => {
   config = getMergedConfig(config);
   const whereClauses: string[] = ["type = 'IssuesEvent' AND action = 'opened'"];
-  const repoWhereClause = getRepoWhereClauseForClickhouse(config);
+  const repoWhereClause = await getRepoWhereClauseForClickhouse(config);
   if (repoWhereClause) whereClauses.push(repoWhereClause);
   whereClauses.push(getTimeRangeWhereClauseForClickhouse(config));
 
@@ -191,7 +191,7 @@ FORMAT JSONCompact`;
 export const chaossIssuesClosed = async (config: QueryConfig) => {
   config = getMergedConfig(config);
   const whereClauses: string[] = ["type = 'IssuesEvent' AND action = 'closed'"];
-  const repoWhereClause = getRepoWhereClauseForClickhouse(config);
+  const repoWhereClause = await getRepoWhereClauseForClickhouse(config);
   if (repoWhereClause) whereClauses.push(repoWhereClause);
   whereClauses.push(getTimeRangeWhereClauseForClickhouse(config));
 
@@ -237,7 +237,7 @@ interface IssueResolutionDurationOptions {
 export const chaossIssueResolutionDuration = async (config: QueryConfig<IssueResolutionDurationOptions>) => {
   config = getMergedConfig(config);
   const whereClauses: string[] = ["type = 'IssuesEvent'"];
-  const repoWhereClause = getRepoWhereClauseForClickhouse(config);
+  const repoWhereClause = await getRepoWhereClauseForClickhouse(config);
   if (repoWhereClause) whereClauses.push(repoWhereClause);
   
   const endDate = new Date(`${config.endYear}-${config.endMonth}-1`);
@@ -257,7 +257,7 @@ FROM
 (
   SELECT
     ${getGroupTimeAndIdClauseForClickhouse(config, 'repo', byCol)},
-    round(${type}(dateDiff('${unit}', opened_at, closed_at)), ${config.percision}) AS resolution_duration
+    ${type}(dateDiff('${unit}', opened_at, closed_at)) AS resolution_duration
   FROM
   (
     SELECT
@@ -297,7 +297,7 @@ FORMAT JSONCompact`;
 export const chaossChangeRequestsAccepted = async (config: QueryConfig) => {
   config = getMergedConfig(config);
   const whereClauses: string[] = ["type = 'PullRequestEvent' AND action = 'closed' AND pull_merged = 1"];
-  const repoWhereClause = getRepoWhereClauseForClickhouse(config);
+  const repoWhereClause = await getRepoWhereClauseForClickhouse(config);
   if (repoWhereClause) whereClauses.push(repoWhereClause);
   whereClauses.push(getTimeRangeWhereClauseForClickhouse(config));
 
@@ -338,7 +338,7 @@ FORMAT JSONCompact`;
 export const chaossChangeRequestsDeclined = async (config: QueryConfig) => {
   config = getMergedConfig(config);
   const whereClauses: string[] = ["type = 'PullRequestEvent' AND action = 'closed' AND pull_merged = 0"];
-  const repoWhereClause = getRepoWhereClauseForClickhouse(config);
+  const repoWhereClause = await getRepoWhereClauseForClickhouse(config);
   if (repoWhereClause) whereClauses.push(repoWhereClause);
   whereClauses.push(getTimeRangeWhereClauseForClickhouse(config));
 
@@ -380,7 +380,7 @@ FORMAT JSONCompact`;
 export const chaossChangeRequests = async (config: QueryConfig) => {
   config = getMergedConfig(config);
   const whereClauses: string[] = ["type = 'PullRequestEvent' AND action = 'opened'"];
-  const repoWhereClause = getRepoWhereClauseForClickhouse(config);
+  const repoWhereClause = await getRepoWhereClauseForClickhouse(config);
   if (repoWhereClause) whereClauses.push(repoWhereClause);
   whereClauses.push(getTimeRangeWhereClauseForClickhouse(config));
 
@@ -418,7 +418,7 @@ FORMAT JSONCompact`;
 export const chaossChangeRequestReviews = async (config: QueryConfig) => {
   config = getMergedConfig(config);
   const whereClauses: string[] = ["type = 'PullRequestReviewCommentEvent'"];
-  const repoWhereClause = getRepoWhereClauseForClickhouse(config);
+  const repoWhereClause = await getRepoWhereClauseForClickhouse(config);
   if (repoWhereClause) whereClauses.push(repoWhereClause);
   whereClauses.push(getTimeRangeWhereClauseForClickhouse(config));
 
@@ -473,7 +473,7 @@ export const chaossBusFactor = async (config: QueryConfig<BusFactorOptions>) => 
   } else if (by === 'activity') {
     whereClauses.push("type IN ('IssuesEvent', 'IssueCommentEvent', 'PullRequestEvent', 'PullRequestReviewCommentEvent')");
   }
-  const repoWhereClause = getRepoWhereClauseForClickhouse(config);
+  const repoWhereClause = await getRepoWhereClauseForClickhouse(config);
   if (repoWhereClause) whereClauses.push(repoWhereClause);
   whereClauses.push(getTimeRangeWhereClauseForClickhouse(config));
 
@@ -482,7 +482,7 @@ SELECT
   id,
   argMax(name, time) AS name,
   ${getGroupArrayInsertAtClauseForClickhouse(config, { key: 'bus_factor', })},
-  ${getGroupArrayInsertAtClauseForClickhouse(config, { key: 'detail' })},
+  ${getGroupArrayInsertAtClauseForClickhouse(config, { key: 'detail', noPrecision: true })},
   ${getGroupArrayInsertAtClauseForClickhouse(config, { key: 'total_contributions' })}
 FROM
 (

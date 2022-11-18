@@ -16,7 +16,7 @@ export const PULL_MERGED_WEIGHT = 2;
 export const getRepoOpenrank = async (config: QueryConfig) => {
   config = getMergedConfig(config);
   const whereClause: string[] = [];
-  const repoWhereClause = getRepoWhereClauseForClickhouse(config);
+  const repoWhereClause = await getRepoWhereClauseForClickhouse(config);
   if (repoWhereClause) whereClause.push(repoWhereClause);
   const timeRangeClause = getTimeRangeWhereClauseForClickhouse(config);
   if (timeRangeClause) whereClause.push(timeRangeClause);
@@ -55,7 +55,7 @@ FORMAT JSONCompact`;
 export const getUserOpenrank = async (config: QueryConfig) => {
   config = getMergedConfig(config);
   const whereClause: string[] = [];
-  const userWhereClause = getUserWhereClauseForClickhouse(config);
+  const userWhereClause = await getUserWhereClauseForClickhouse(config);
   if (userWhereClause) whereClause.push(userWhereClause);
   const timeRangeClause = getTimeRangeWhereClauseForClickhouse(config);
   if (timeRangeClause) whereClause.push(timeRangeClause);
@@ -106,7 +106,7 @@ export const basicActivitySqlComponent = `
 export const getRepoActivity = async (config: QueryConfig) => {
   config = getMergedConfig(config);
   const whereClauses: string[] = ["type IN ('IssuesEvent', 'IssueCommentEvent', 'PullRequestEvent', 'PullRequestReviewCommentEvent')"]; // specify types to reduce memory usage and calculation
-  const repoWhereClause = getRepoWhereClauseForClickhouse(config);
+  const repoWhereClause = await getRepoWhereClauseForClickhouse(config);
   if (repoWhereClause) whereClauses.push(repoWhereClause);
   whereClauses.push(getTimeRangeWhereClauseForClickhouse(config));
 
@@ -172,7 +172,7 @@ FORMAT JSONCompact`;  // use JSONCompact to reduce network I/O
 export const getUserActivity = async (config: QueryConfig, withBot: boolean = true) => {
   config = getMergedConfig(config);
   const whereClauses: string[] = ["type IN ('IssuesEvent', 'IssueCommentEvent', 'PullRequestEvent', 'PullRequestReviewCommentEvent')"]; // specify types to reduce memory usage and calculation
-  const userWhereClause = getUserWhereClauseForClickhouse(config);
+  const userWhereClause = await getUserWhereClauseForClickhouse(config);
   if (userWhereClause) whereClauses.push(userWhereClause);
   whereClauses.push(getTimeRangeWhereClauseForClickhouse(config));
 
@@ -234,7 +234,7 @@ FORMAT JSONCompact`;
 export const getAttention = async (config: QueryConfig) => {
   config = getMergedConfig(config);
   const whereClauses: string[] = ["type IN ('WatchEvent', 'ForkEvent')"];
-  const repoWhereClause = getRepoWhereClauseForClickhouse(config);
+  const repoWhereClause = await getRepoWhereClauseForClickhouse(config);
   if (repoWhereClause) whereClauses.push(repoWhereClause);
   whereClauses.push(getTimeRangeWhereClauseForClickhouse(config));
 

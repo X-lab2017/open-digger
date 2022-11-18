@@ -10,7 +10,7 @@ import * as clickhouse from '../db/clickhouse';
 export const repoStars = async (config: QueryConfig) => {
   config = getMergedConfig(config);
   const whereClauses: string[] = ["type = 'WatchEvent'"];
-  const repoWhereClause = getRepoWhereClauseForClickhouse(config);
+  const repoWhereClause = await getRepoWhereClauseForClickhouse(config);
   if (repoWhereClause) whereClauses.push(repoWhereClause);
   whereClauses.push(getTimeRangeWhereClauseForClickhouse(config));
 
@@ -48,7 +48,7 @@ FORMAT JSONCompact`;
 export const repoIssueComments = async (config: QueryConfig) => {
   config = getMergedConfig(config);
   const whereClauses: string[] = ["type = 'IssueCommentEvent' AND action = 'created'"];
-  const repoWhereClause = getRepoWhereClauseForClickhouse(config);
+  const repoWhereClause = await getRepoWhereClauseForClickhouse(config);
   if (repoWhereClause) whereClauses.push(repoWhereClause);
   whereClauses.push(getTimeRangeWhereClauseForClickhouse(config));
 
@@ -86,7 +86,7 @@ FORMAT JSONCompact`;
 export const repoParticipants = async (config: QueryConfig) => {
   config = getMergedConfig(config);
   const whereClauses: string[] = ["type IN ('IssuesEvent', 'IssueCommentEvent', 'PullRequestEvent', 'PullRequestReviewCommentEvent')"];
-  const repoWhereClause = getRepoWhereClauseForClickhouse(config);
+  const repoWhereClause = await getRepoWhereClauseForClickhouse(config);
   if (repoWhereClause) whereClauses.push(repoWhereClause);
   whereClauses.push(getTimeRangeWhereClauseForClickhouse(config));
 
