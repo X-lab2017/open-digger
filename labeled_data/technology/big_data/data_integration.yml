@@ -1,0 +1,14 @@
+name: Big Data - Data Integration
+type: Tech-1
+data:
+  github_repo:
+    - 117965972 # repo:alibaba/DataX
+    - 50205233 # repo:debezium/debezium
+    - 283046497 # repo:airbytehq/airbyte
+    - 53548867 # repo:dbt-labs/dbt-core
+    - 206317 # repo:apache/camel
+    - 99412308 # repo:apache/incubator-seatunnel
+    - 282994686 # repo:ververica/flink-cdc-connectors
+    - 2153096 # repo:apache/sqoop
+    - 231533573 # repo:apache/inlong
+    - 2198510 # repo:apache/flume

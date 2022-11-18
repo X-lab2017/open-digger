@@ -1,0 +1,16 @@
+name: Big Data - Scheduler
+type: Tech-1
+data:
+  github_repo:
+    - 33884891 # repo:apache/airflow
+    - 160999 # repo:apache/zookeeper
+    - 51905353 # repo:apache/arrow
+    - 139199684 # repo:PrefectHQ/prefect
+    - 173335706 # repo:apache/dolphinscheduler
+    - 131619646 # repo:dagster-io/dagster
+    - 27911088 # repo:apache/nifi
+    - 204164353 # repo:kestra-io/kestra
+    - 2442457 # repo:apache/ambari
+    - 98013453 # repo:apache/atlas
+    - 2383782 # repo:apache/oozie
+    - 22305416 # repo:apache/ranger

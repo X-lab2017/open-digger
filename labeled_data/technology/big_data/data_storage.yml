@@ -1,0 +1,19 @@
+name: Big Data - Data Storage
+type: Tech-1
+data:
+  github_repo:
+    - 327859577 # repo:juicedata/juicefs
+    - 76474200 # repo:apache/hudi
+    - 158256479 # repo:apache/iceberg
+    - 7276954 # repo:Alluxio/alluxio
+    - 206459 # repo:apache/avro
+    - 182849188 # repo:delta-io/delta
+    - 3786237 # repo:hazelcast/hazelcast
+    - 20675636 # repo:apache/parquet-mr
+    - 1575956 # repo:apache/bookkeeper
+    - 50647838 # repo:apache/kudu
+    - 41712332 # repo:apache/incubator-pegasus
+    - 62117818 # repo:apache/carbondata
+    - 20675635 # repo:apache/parquet-format
+    - 212382406 # repo:apache/ozone
+    - 25507371 # repo:apache/hadoop-hdfs

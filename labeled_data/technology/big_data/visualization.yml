@@ -1,0 +1,28 @@
+name: Big Data - Visualization
+type: Tech-1
+data:
+  github_repo:
+    - 943149 # repo:d3/d3
+    - 9185792 # repo:apache/echarts
+    - 15111821 # repo:grafana/grafana
+    - 39464018 # repo:apache/superset
+    - 30203935 # repo:metabase/metabase
+    - 13926404 # repo:getredash/redash
+    - 1385122 # repo:matplotlib/matplotlib
+    - 85095608 # repo:airbnb/visx
+    - 45646037 # repo:plotly/plotly.js
+    - 59737212 # repo:antvis/G2
+    - 4704710 # repo:mwaskom/seaborn
+    - 11496279 # repo:c3js/c3
+    - 123345344 # repo:keplergl/kepler.gl
+    - 335164964 # repo:dataease/dataease
+    - 110222380 # repo:alibaba/BizCharts
+    - 39979936 # repo:nhn/tui.chart
+    - 156293506 # repo:microsoft/SandDance
+    - 102447494 # repo:edp963/davinci
+    - 96424863 # repo:TalkingData/inmap
+    - 159273440 # repo:shzlw/poli
+    - 8357227 # repo:biolab/orange3
+    - 37276906 # repo:keen/explorer
+    - 54937496 # repo:PatMartin/Dex
+    - 7833168 # repo:elastic/kibana

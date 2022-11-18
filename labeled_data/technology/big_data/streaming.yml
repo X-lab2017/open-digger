@@ -1,0 +1,12 @@
+name: Big Data - Streaming
+type: Tech-1
+data:
+  github_repo:
+    - 2211243 # repo:apache/kafka
+    - 20587599 # repo:apache/flink
+    - 62117812 # repo:apache/pulsar
+    - 50904245 # repo:apache/beam
+    - 14135470 # repo:apache/storm
+    - 43158694 # repo:apache/incubator-heron
+    - 32199982 # repo:apache/samza
+    - 188779637 # repo:apache/incubator-streampark
