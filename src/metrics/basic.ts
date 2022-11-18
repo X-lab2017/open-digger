@@ -1,4 +1,5 @@
 import { merge } from 'lodash';
+import { query } from '../db/clickhouse';
 import { getGitHubData, getLabelData } from '../label_data_utils';
 
 export interface QueryConfig<T = any> {
@@ -17,7 +18,7 @@ export interface QueryConfig<T = any> {
   endMonth: number;
   order?: 'DESC' | 'ASC';
   limit: number;
-  percision: number;
+  precision: number;
   groupBy?: 'org' | string;
   groupTimeRange?: 'month' | 'quarter' | 'year';
   injectLabelData?: any[];
@@ -31,7 +32,7 @@ export const getMergedConfig = (config: any): QueryConfig => {
       endYear: new Date().getFullYear(),
       endMonth: new Date().getMonth(),
       limit: 10,
-      percision: 2,
+      precision: 2,
   };
   return merge(defaultConfig, config);
 }
@@ -78,12 +79,32 @@ export const getRepoWhereClauseForNeo4j = (config: QueryConfig): string | null =
   return repoWhereClause;
 }
 
-export const getRepoWhereClauseForClickhouse = (config: QueryConfig): string | null => {
+export const getRepoWhereClauseForClickhouse = async (config: QueryConfig): Promise<string | null> => {
   const repoWhereClauseArray: string[] = [];
+  if (config.repoNames) {
+    // convert repo name to id
+    const sql = `SELECT any(repo_id) AS id FROM github_log.events WHERE repo_name IN [${config.repoNames.map(n => `'${n}'`)}] GROUP BY repo_name`;
+    const repoIds = (await query<any>(sql)).map(r => r.id);
+    if (config.repoIds) {
+      config.repoIds.push(...repoIds);
+    } else {
+      config.repoIds = repoIds;
+    }
+  }
   if (config.repoIds) repoWhereClauseArray.push(`repo_id IN [${config.repoIds.join(',')}]`);
-  if (config.repoNames) repoWhereClauseArray.push(`repo_name IN [${config.repoNames.map(n => `'${n}'`)}]`);
+
+  if (config.orgNames) {
+    // convert org name to id
+    const sql = `SELECT any(org_id) AS id FROM github_log.events WHERE org_login IN [${config.orgNames.map(n => `'${n}'`)}] GROUP BY org_login`;
+    const orgIds = (await query<any>(sql)).map(r => r.id);
+    if (config.orgIds) {
+      config.orgIds.push(...orgIds);
+    } else {
+      config.orgIds = orgIds;
+    }
+  }
   if (config.orgIds) repoWhereClauseArray.push(`org_id IN [${config.orgIds.join(',')}]`);
-  if (config.orgNames) repoWhereClauseArray.push(`org_name IN [${config.orgNames.map(o => `'${o}'`)}]`);
+
   if (config.labelIntersect) {
     return '(' + config.labelIntersect.map(l => {
       const data = getGitHubData([l], config.injectLabelData);
@@ -129,10 +150,19 @@ export const getUserWhereClauseForNeo4j = (config: QueryConfig): string | null =
   return userWhereClause;
 }
 
-export const getUserWhereClauseForClickhouse = (config: QueryConfig): string | null => {
+export const getUserWhereClauseForClickhouse = async (config: QueryConfig): Promise<string | null> => {
   const userWhereClauseArray: string[] = [];
+  if (config.userLogins) {
+    // convert user login to id
+    const sql = `SELECT any(actor_id) AS id FROM github_log.events WHERE actor_login IN [${config.userLogins.map(n => `'${n}'`)}] GROUP BY actor_login`;
+    const userIds = (await query<any>(sql)).map(r => r.id);
+    if (config.userIds) {
+      config.userIds.push(...userIds);
+    } else {
+      config.userIds = userIds;
+    }
+  }
   if (config.userIds) userWhereClauseArray.push(`actor_id IN [${config.userIds.join(',')}]`);
-  if (config.userLogins) userWhereClauseArray.push(`actor_login IN [${config.userLogins.map(n => `'${n}'`)}]`);
   if (config.labelIntersect) {
     return '(' + config.labelIntersect.map(l => {
       const data = getGitHubData([l], config.injectLabelData);
@@ -188,7 +218,7 @@ export const getTimeRangeSumClauseForNeo4j = async (config: QueryConfig, type: s
     await forEveryMonthByConfig(config, async (y, m) => timeRangeSumClauseArray[0].push(`COALESCE(${type}_${y}${m}, 0.0)`));
   }
   if (timeRangeSumClauseArray.length === 0) throw new Error('Not valid time range.');
-  const timeRangeSumClause = timeRangeSumClauseArray.map(i => `round(${i.join(' + ')}, ${config.percision})`);
+  const timeRangeSumClause = timeRangeSumClauseArray.map(i => `round(${i.join(' + ')}, ${config.precision})`);
   return timeRangeSumClause;
 }
 
@@ -239,8 +269,12 @@ export const getLabelGroupConditionClauseForClickhouse = (config: QueryConfig): 
   return `arrayJoin(multiIf(${conditions}, ['Others']))`;
 }
 
-export const getGroupArrayInsertAtClauseForClickhouse = (config: QueryConfig, option: { key: string; defaultValue?: string; value?: string; }): string => {
-  return `groupArrayInsertAt${ option.defaultValue ? `(${option.defaultValue})` : '' }(${ option.value ? option.value : option.key }, ${(() => {
+export const getGroupArrayInsertAtClauseForClickhouse = (config: QueryConfig, option: { key: string; defaultValue?: string; value?: string; noPrecision?: boolean }): string => {
+  return `groupArrayInsertAt${ option.defaultValue ? `(${option.defaultValue})` : '' }(${ (() => {
+    const name = option.value ? option.value : option.key;
+    if (config.precision > 0 && !option.noPrecision) return `ROUND(${name}, ${config.precision})`;
+    return name;
+  })() }, ${(() => {
     if (!config.groupTimeRange) return '0';
     let startTime = `toDate('${config.startYear}-${config.startMonth}-1')`;
     if (config.groupTimeRange === 'quarter') startTime = `toStartOfQuarter(${startTime})`;

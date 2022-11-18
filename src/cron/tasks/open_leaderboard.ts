@@ -32,7 +32,7 @@ const task: Task = {
     const chineseUserMonthActivityData = await getUserActivity({
       labelUnion: [':regions/China'],
       startYear, startMonth, endYear, endMonth,
-      order: 'DESC', limit: -1, percision: 2,
+      order: 'DESC', limit: -1, precision: 2,
       groupTimeRange: 'month',
     });
     console.log(`Get chinese user month activity data done, count=${chineseUserMonthActivityData.length}`);
@@ -56,7 +56,7 @@ const task: Task = {
     const chineseUserYearActivityData = await getUserActivity({
       labelUnion: [':regions/China'],
       startYear, startMonth, endYear, endMonth,
-      order: 'DESC', limit: -1, percision: 2,
+      order: 'DESC', limit: -1, precision: 2,
       groupTimeRange: 'year',
     });
     console.log(`Get chinese user year activity data done, count=${chineseUserYearActivityData.length}`);
@@ -80,7 +80,7 @@ const task: Task = {
     // get global actor activity
     const globalUserMonthActivityData = await getUserActivity({
       startYear, startMonth, endYear, endMonth,
-      order: 'DESC', limit, percision: 2,
+      order: 'DESC', limit, precision: 2,
       groupTimeRange: 'month', whereClause: 'actor_id IN (SELECT id FROM github_log.export_user)',
     }, false);
     console.log(`Get global user month activity data done, count=${globalUserMonthActivityData.length}`);
@@ -102,7 +102,7 @@ const task: Task = {
 
     const globalUserYearActivityData = await getUserActivity({
       startYear, startMonth, endYear, endMonth,
-      order: 'DESC', limit, percision: 2,
+      order: 'DESC', limit, precision: 2,
       groupTimeRange: 'year', whereClause: 'actor_id IN (SELECT id FROM github_log.export_user)',
     }, false);
     console.log(`Get global user year activity data done, count=${globalUserYearActivityData.length}`);
@@ -128,7 +128,7 @@ const task: Task = {
     const chineseCompanyMonthActivityData = await getRepoActivity({
       labelIntersect: ['Company', ':regions/China'],
       startYear, startMonth, endYear, endMonth,
-      order: 'DESC', limit: -1, percision: 2,
+      order: 'DESC', limit: -1, precision: 2,
       groupBy: 'Company',
       groupTimeRange: 'month',
     });
@@ -152,7 +152,7 @@ const task: Task = {
     const chineseCompanyYearActivityData = await getRepoActivity({
       labelIntersect: ['Company', ':regions/China'],
       startYear, startMonth, endYear, endMonth,
-      order: 'DESC', limit: -1, percision: 2,
+      order: 'DESC', limit: -1, precision: 2,
       groupBy: 'Company',
       groupTimeRange: 'year',
     });
@@ -178,7 +178,7 @@ const task: Task = {
     const globalCompanyMonthActivityData = await getRepoActivity({
       labelUnion: ['Company'],
       startYear, startMonth, endYear, endMonth,
-      order: 'DESC', limit: -1, percision: 2,
+      order: 'DESC', limit: -1, precision: 2,
       groupBy: 'Company',
       groupTimeRange: 'month',
     });
@@ -202,7 +202,7 @@ const task: Task = {
     const globalCompanyYearActivityData = await getRepoActivity({
       labelUnion: ['Company'],
       startYear, startMonth, endYear, endMonth,
-      order: 'DESC', limit: -1, percision: 2,
+      order: 'DESC', limit: -1, precision: 2,
       groupBy: 'Company',
       groupTimeRange: 'year',
     });
@@ -227,7 +227,7 @@ const task: Task = {
     // by month
     const globalRepoMonthActivityData = await getRepoActivity({
       startYear, startMonth, endYear, endMonth,
-      order: 'DESC', limit, percision: 2,
+      order: 'DESC', limit, precision: 2,
       groupTimeRange: 'month', whereClause: 'repo_id IN (SELECT id FROM github_log.export_repo)',
     });
     console.log(`Get global repo month activity data done, count=${globalRepoMonthActivityData?.length}`);
@@ -248,7 +248,7 @@ const task: Task = {
     // by year
     const globalRepoYearActivityData = await getRepoActivity({
       startYear, startMonth, endYear, endMonth,
-      order: 'DESC', limit, percision: 2,
+      order: 'DESC', limit, precision: 2,
       groupTimeRange: 'year', whereClause: 'repo_id IN (SELECT id FROM github_log.export_repo)',
     });
     console.log(`Get global repo year activity data done, count=${globalRepoYearActivityData?.length}`);
@@ -273,7 +273,7 @@ const task: Task = {
     const chineseRepoMonthActivityData = await getRepoActivity({
       labelUnion: [':regions/China'],
       startYear, startMonth, endYear, endMonth,
-      order: 'DESC', limit: -1, percision: 2,
+      order: 'DESC', limit: -1, precision: 2,
       groupTimeRange: 'month',
     });
     console.log(`Get chinese repo month activity data done, count=${chineseRepoMonthActivityData?.length}`);
@@ -295,7 +295,7 @@ const task: Task = {
     const chineseRepoYearActivityData = await getRepoActivity({
       labelUnion: [':regions/China'],
       startYear, startMonth, endYear, endMonth,
-      order: 'DESC', limit: -1, percision: 2,
+      order: 'DESC', limit: -1, precision: 2,
       groupTimeRange: 'year',
     });
     console.log(`Get chinese repo year activity data done, count=${chineseRepoYearActivityData?.length}`);
@@ -320,7 +320,7 @@ const task: Task = {
     const chineseUserMonthOpenrankData = await getUserOpenrank({
       labelUnion: [':regions/China'],
       startYear, startMonth, endYear, endMonth,
-      order: 'DESC', limit: -1, percision: 2,
+      order: 'DESC', limit: -1, precision: 2,
       groupTimeRange: 'month',
     });
     console.log(`Get chinese user month openrank data done, count=${chineseUserMonthOpenrankData.length}`);
@@ -333,7 +333,7 @@ const task: Task = {
     const chineseUserYearOpenrankData = await getUserOpenrank({
       labelUnion: [':regions/China'],
       startYear, startMonth, endYear, endMonth,
-      order: 'DESC', limit: -1, percision: 2,
+      order: 'DESC', limit: -1, precision: 2,
       groupTimeRange: 'year',
     });
     console.log(`Get chinese user year openrank data done, count=${chineseUserYearOpenrankData.length}`);
@@ -348,7 +348,7 @@ const task: Task = {
     // by month
     const globalUserMonthOpenrankData = await getUserOpenrank({
       startYear, startMonth, endYear, endMonth,
-      order: 'DESC', limit, percision: 2,
+      order: 'DESC', limit, precision: 2,
       groupTimeRange: 'month', whereClause: 'actor_id IN (SELECT id FROM github_log.export_user)',
     });
     console.log(`Get global user month openrank data done, count=${globalUserMonthOpenrankData.length}`);
@@ -360,7 +360,7 @@ const task: Task = {
     // by year
     const globalUserYearOpenrankData = await getUserOpenrank({
       startYear, startMonth, endYear, endMonth,
-      order: 'DESC', limit, percision: 2,
+      order: 'DESC', limit, precision: 2,
       groupTimeRange: 'year', whereClause: 'actor_id IN (SELECT id FROM github_log.export_user)',
     });
     console.log(`Get global user year openrank data done, count=${globalUserYearOpenrankData.length}`);
@@ -376,7 +376,7 @@ const task: Task = {
     const chineseRepoMonthOpenrankData = await getRepoOpenrank({
       labelUnion: [':regions/China'],
       startYear, startMonth, endYear, endMonth,
-      order: 'DESC', limit, percision: 2,
+      order: 'DESC', limit, precision: 2,
       groupTimeRange: 'month',
     });
     console.log(`Get chinese repo month openrank data done, count=${chineseRepoMonthOpenrankData.length}`);
@@ -389,7 +389,7 @@ const task: Task = {
     const chineseRepoYearOpenrankData = await getRepoOpenrank({
       labelUnion: [':regions/China'],
       startYear, startMonth, endYear, endMonth,
-      order: 'DESC', limit: -1, percision: 2,
+      order: 'DESC', limit: -1, precision: 2,
       groupTimeRange: 'year',
     });
     console.log(`Get chinese repo year openrank data done, count=${chineseRepoYearOpenrankData.length}`);
@@ -405,7 +405,7 @@ const task: Task = {
     const chineseCompanyRepoMonthOpenrankData = await getRepoOpenrank({
       labelIntersect: [':regions/China', 'Company'],
       startYear, startMonth, endYear, endMonth,
-      order: 'DESC', limit, percision: 2,
+      order: 'DESC', limit, precision: 2,
       groupTimeRange: 'month', groupBy: 'Company',
     });
     console.log(`Get chinese company repo month openrank data done, count=${chineseCompanyRepoMonthOpenrankData.length}`);
@@ -418,7 +418,7 @@ const task: Task = {
     const chineseCompanyRepoYearOpenrankData = await getRepoOpenrank({
       labelIntersect: [':regions/China', 'Company'],
       startYear, startMonth, endYear, endMonth,
-      order: 'DESC', limit: -1, percision: 2,
+      order: 'DESC', limit: -1, precision: 2,
       groupTimeRange: 'year', groupBy: 'Company',
     });
     console.log(`Get chinese company repo year openrank data done, count=${chineseCompanyRepoYearOpenrankData.length}`);
@@ -433,7 +433,7 @@ const task: Task = {
     // by month
     const globalRepoMonthOpenrankData = await getRepoOpenrank({
       startYear, startMonth, endYear, endMonth,
-      order: 'DESC', limit, percision: 2,
+      order: 'DESC', limit, precision: 2,
       groupTimeRange: 'month', whereClause: 'repo_id IN (SELECT id FROM github_log.export_repo)',
     });
     console.log(`Get global repo month openrank data done, count=${globalRepoMonthOpenrankData.length}`);
@@ -445,7 +445,7 @@ const task: Task = {
     // by year
     const globalRepoYearOpenrankData = await getRepoOpenrank({
       startYear, startMonth, endYear, endMonth,
-      order: 'DESC', limit: -1, percision: 2,
+      order: 'DESC', limit: -1, precision: 2,
       groupTimeRange: 'year', whereClause: 'repo_id IN (SELECT id FROM github_log.export_repo)',
     });
     console.log(`Get global repo year openrank data done, count=${globalRepoYearOpenrankData.length}`);
@@ -461,7 +461,7 @@ const task: Task = {
     const globalCompanyRepoMonthOpenrankData = await getRepoOpenrank({
       labelUnion: ['Company'],
       startYear, startMonth, endYear, endMonth,
-      order: 'DESC', limit, percision: 2,
+      order: 'DESC', limit, precision: 2,
       groupTimeRange: 'month', groupBy: 'Company',
     });
     console.log(`Get global company repo month openrank data done, count=${globalCompanyRepoMonthOpenrankData.length}`);
@@ -474,7 +474,7 @@ const task: Task = {
     const globalCompanyRepoYearOpenrankData = await getRepoOpenrank({
       labelUnion: ['Company'],
       startYear, startMonth, endYear, endMonth,
-      order: 'DESC', limit: -1, percision: 2,
+      order: 'DESC', limit: -1, precision: 2,
       groupTimeRange: 'year', groupBy: 'Company',
     });
     console.log(`Get global company repo year openrank data done, count=${globalCompanyRepoYearOpenrankData.length}`);
