@@ -6,7 +6,7 @@ const labelInputDir = '../labeled_data';
 const labelInputPath = path.join(__dirname, labelInputDir);
 
 const supportedTypes = new Set<string>([
-  'Region', 'Company', 'Community', 'Project', 'Foundation'
+  'Region', 'Company', 'Community', 'Project', 'Foundation', 'Tech-0', 'Tech-1',
 ]);
 
 const supportedKey = new Set<string>([
