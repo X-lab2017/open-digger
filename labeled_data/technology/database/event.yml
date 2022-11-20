@@ -1,0 +1,6 @@
+name: Database - Event
+type: Tech-1
+data:
+  github_repo:
+    - 5844474 # repo:EventStore/EventStore
+    - 738338 # repo:NEventStore/NEventStore

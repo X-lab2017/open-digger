@@ -1,0 +1,10 @@
+name: Database - Wide Column
+type: Tech-1
+data:
+  github_repo:
+    - 166515022 # repo:trinodb/trino
+    - 206424 # repo:apache/cassandra
+    - 20089857 # repo:apache/hbase
+    - 2524488 # repo:apache/accumulo
+    - 28449431 # repo:scylladb/scylla
+    - 41209174 # repo:strapdata/elassandra

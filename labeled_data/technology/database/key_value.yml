@@ -1,0 +1,30 @@
+name: Database - Key-value
+type: Tech-1
+data:
+  github_repo:
+    - 192418550 # repo:oracle/nosql-go-sdk
+    - 166515022 # repo:trinodb/trino
+    - 114187903 # repo:apple/foundationdb
+    - 156018 # repo:redis/redis
+    - 184981 # repo:memcached/memcached
+    - 11225014 # repo:etcd-io/etcd
+    - 3786237 # repo:hazelcast/hazelcast
+    - 17224514 # repo:ehcache/ehcache3
+    - 791522 # repo:basho/riak_kv
+    - 124315604 # repo:aerospike/aerospike-server
+    - 31006158 # repo:apache/ignite
+    - 6934395 # repo:facebook/rocksdb
+    - 23405758 # repo:google/leveldb
+    - 1050944 # repo:infinispan/infinispan
+    - 34406933 # repo:LMDB/lmdb
+    - 34839383 # repo:apache/geode
+    - 911980 # repo:tarantool/tarantool
+    - 7357595 # repo:zopefoundation/ZODB
+    - 28956774 # repo:Alachisoft/NCache
+    - 7948548 # repo:couchbase/couchbase-lite-ios
+    - 2649214 # repo:arangodb/arangodb
+    - 52420005 # repo:griddb/griddb
+    - 7083240 # repo:orientechnologies/orientdb
+    - 81411018 # repo:microsoft/GraphEngine
+    - 28449431 # repo:scylladb/scylla
+    - 2380364 # repo:berkeleydb/libdb

@@ -1,0 +1,8 @@
+name: Database - Multivalue
+type: Tech-1
+data:
+  github_repo:
+    - 17699493 # repo:cran/scidb
+    - 5407611 # repo:dioptre/rasdaman
+    - 1984888 # repo:gregjurman/openqm
+    - 208728772 # repo:milvus-io/milvus
