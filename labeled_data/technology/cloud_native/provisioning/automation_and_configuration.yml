@@ -1,0 +1,40 @@
+name: Cloud Native - Provisioning - Automation & Configuration
+type: Tech-2
+data:
+  github_repo:
+    - 144783430 # repo:airshipit/treasuremap
+    - 302703576 # repo:project-akri/akri
+    - 3638964 # repo:ansible/ansible
+    - 53127403 # repo:apolloconfig/apollo
+    - 3910314 # repo:cloudfoundry/bosh
+    - 82700090 # repo:uber/cadence
+    - 105809298 # repo:cdk8s-team/cdk8s
+    - 3543548 # repo:cfengine/core
+    - 108278 # repo:chef/chef
+    - 52837350 # repo:cloud-custodian/cloud-custodian
+    - 18326574 # repo:cloudify-cosmo/cloudify-manager
+    - 288523518 # repo:couler-proj/couler
+    - 415188495 # repo:devstream-io/devstream
+    - 199487892 # repo:digitalrebar/provision
+    - 258750 # repo:theforeman/foreman
+    - 20445947 # repo:juju/juju
+    - 238232099 # repo:loft-sh/kiosk
+    - 227010082 # repo:kubedl-io/kubedl
+    - 150713223 # repo:kubeedge/kubeedge
+    - 332999480 # repo:kubefirst/kubefirst
+    - 516603039 # repo:kubewharf/kubezoo
+    - 488866928 # repo:KusionStack/kusion
+    - 46932243 # repo:linuxkit/linuxkit
+    - 86509608 # repo:maas/maas
+    - 20789757 # repo:ManageIQ/manageiq
+    - 5874515 # repo:mistio/mist-ce
+    - 13839311 # repo:openstack/openstack
+    - 265800635 # repo:openyurtio/openyurt
+    - 72477752 # repo:pulumi/pulumi
+    - 910744 # repo:puppetlabs/puppet
+    - 886774 # repo:rundeck/rundeck
+    - 1390248 # repo:saltstack/salt
+    - 19051806 # repo:stackstorm/st2
+    - 322759957 # repo:superedge/superedge
+    - 17728164 # repo:hashicorp/terraform
+    - 215102779 # repo:tinkerbell/tink

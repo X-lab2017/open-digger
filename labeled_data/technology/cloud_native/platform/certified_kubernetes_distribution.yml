@@ -1,0 +1,34 @@
+name: Cloud Native - Platform - Certified Kubernetes - Distribution
+type: Tech-2
+data:
+  github_repo:
+    - 203163249 # repo:ilkilab/agorakube
+    - 85678822 # repo:alvistack/ansible-collection-kubernetes
+    - 313741735 # repo:aws/eks-distro
+    - 155447233 # repo:Azure/aks-engine
+    - 54725435 # repo:charmed-kubernetes/bundle
+    - 330533312 # repo:aceeric/desktop-kubernetes
+    - 296643893 # repo:elastisys/ck8s-cluster
+    - 215783734 # repo:deckhouse/deckhouse
+    - 220698719 # repo:flexkube/libflexkube
+    - 235835211 # repo:sighupio/fury-distribution
+    - 411029320 # repo:smart-edge-open/open-developer-experience-kits
+    - 271250363 # repo:k0sproject/k0s
+    - 135516270 # repo:k3s-io/k3s
+    - 439021003 # repo:clastix/kamaji
+    - 385158917 # repo:kubecube-io/KubeCube
+    - 50734768 # repo:kubermatic/kubermatic
+    - 130430977 # repo:kubesphere/kubesphere
+    - 120284730 # repo:kubic-project/container-images
+    - 198898598 # repo:replicatedhq/kurl
+    - 124905930 # repo:scality/metalk8s
+    - 132732601 # repo:canonical/microk8s
+    - 295900097 # repo:PaaS-TA/paas-ta-container-platform
+    - 541402612 # repo:alexeadem/qbo-home
+    - 26337322 # repo:rancher/rancher
+    - 49904068 # repo:openshift/kubernetes
+    - 253887459 # repo:rancher/rke2
+    - 99544448 # repo:poseidon/typhoon
+    - 355946670 # repo:loft-sh/vcluster
+    - 303802332 # repo:vmware-tanzu/community-edition
+    - 239576223 # repo:wind-river/starlingx-config

@@ -1,0 +1,19 @@
+name: Cloud Native - Serverless - Installable Platform
+type: Tech-2
+data:
+  github_repo:
+    - 146865191 # repo:apache/camel-k
+    - 52039373 # repo:apache/openwhisk
+    - 3803067 # repo:AppScale/gts
+    - 66050533 # repo:fission/fission
+    - 170411418 # repo:kedacore/keda
+    - 118828329 # repo:knative/serving
+    - 232829717 # repo:knix-microfunctions/knix
+    - 226983227 # repo:krustlet/krustlet
+    - 73902337 # repo:vmware-archive/kubeless
+    - 91797088 # repo:nuclio/nuclio
+    - 77144337 # repo:openfaas/faas
+    - 322168077 # repo:OpenFunction/OpenFunction
+    - 38730494 # repo:pipelineai/pipeline
+    - 98690441 # repo:projectriff/riff
+    - 113086028 # repo:virtual-kubelet/virtual-kubelet

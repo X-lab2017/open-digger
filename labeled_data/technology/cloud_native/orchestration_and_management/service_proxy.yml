@@ -1,0 +1,21 @@
+name: Cloud Native - Orchestration & Management - Service Proxy
+type: Tech-2
+data:
+  github_repo:
+    - 199763479 # repo:bfenetworks/bfe
+    - 29207621 # repo:caddyserver/caddy
+    - 108462822 # repo:projectcontour/contour
+    - 65214191 # repo:envoyproxy/envoy
+    - 126499529 # repo:projectcontour/gimbal
+    - 128791889 # repo:haproxy/haproxy
+    - 214656224 # repo:inlets/inlets-pro
+    - 110027931 # repo:metallb/metallb
+    - 140654872 # repo:mosn/mosn
+    - 8759133 # repo:Netflix/zuul
+    - 37912398 # repo:nginx/nginx
+    - 168629414 # repo:openelb/openelb
+    - 480080 # repo:openresty/openresty
+    - 38812664 # repo:zalando/skipper
+    - 457021614 # repo:l7mp/stunner
+    - 3784017 # repo:alibaba/tengine
+    - 42408804 # repo:traefik/traefik

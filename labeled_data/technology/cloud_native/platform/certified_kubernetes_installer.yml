@@ -1,0 +1,24 @@
+name: Cloud Native - Platform - Certified Kubernetes - Installer
+type: Tech-2
+data:
+  github_repo:
+    - 304223078 # repo:alvistack/vagrant-kubernetes
+    - 388260896 # repo:aws/eks-anywhere
+    - 129878089 # repo:slzcc/crane
+    - 140261100 # repo:cybozu-go/cke
+    - 117377862 # repo:gardener/gardener
+    - 148545807 # repo:kubernetes-sigs/kind
+    - 62091339 # repo:kubernetes/kops
+    - 110401202 # repo:easzlab/kubeasz
+    - 248386471 # repo:kubesphere/kubekey
+    - 158171016 # repo:KubeOperator/KubeOperator
+    - 155974736 # repo:kubermatic/kubeone
+    - 114474246 # repo:darxkies/k8s-tew
+    - 43613404 # repo:kubernetes-sigs/kubespray
+    - 26314357 # repo:openstack/magnum
+    - 56353740 # repo:kubernetes/minikube
+    - 102576190 # repo:puppetlabs/puppetlabs-kubernetes
+    - 108337180 # repo:rancher/rke
+    - 109451092 # repo:siderolabs/talos
+    - 142926510 # repo:particuleio/symplegma
+    - 146337367 # repo:wise2c-devops/breeze

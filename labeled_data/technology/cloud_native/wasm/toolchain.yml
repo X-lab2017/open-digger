@@ -1,0 +1,10 @@
+name: Cloud Native - Wasm - Toolchain
+type: Tech-2
+data:
+  github_repo:
+    - 1357796 # repo:emscripten-core/emscripten
+    - 75821432 # repo:llvm/llvm-project
+    - 163517929 # repo:hyperledger-labs/solang
+    - 304483748 # repo:suborbital/subo
+    - 359427864 # repo:wapc/wapc-js
+    - 121253762 # repo:rustwasm/wasm-pack

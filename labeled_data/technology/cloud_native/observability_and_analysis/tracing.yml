@@ -1,0 +1,16 @@
+name: Cloud Native - Observability and Analysis - Tracing
+type: Tech-2
+data:
+  github_repo:
+    - 76088862 # repo:megaease/easeagent
+    - 99251094 # repo:elastic/apm-server
+    - 236055696 # repo:grafana/tempo
+    - 56342508 # repo:jaegertracing/jaeger
+    - 184620732 # repo:open-telemetry/community
+    - 46904685 # repo:opentracing/opentracing-go
+    - 25459400 # repo:pinpoint-apm/pinpoint
+    - 45721011 # repo:apache/skywalking
+    - 133340671 # repo:sofastack/sofa-tracer
+    - 31788540 # repo:spring-cloud/spring-cloud-sleuth
+    - 454341458 # repo:kubeshop/tracetest
+    - 4576305 # repo:openzipkin/zipkin

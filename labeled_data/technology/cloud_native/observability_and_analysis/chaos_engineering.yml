@@ -1,0 +1,10 @@
+name: Cloud Native - Observability and Analysis - Chaos Engineering
+type: Tech-2
+data:
+  github_repo:
+    - 206213815 # repo:chaos-mesh/chaos-mesh
+    - 104656275 # repo:chaostoolkit/chaostoolkit
+    - 175192867 # repo:chaosblade-io/chaosblade
+    - 72786190 # repo:linki/chaoskube
+    - 85039965 # repo:litmuschaos/litmus
+    - 113219762 # repo:powerfulseal/powerfulseal

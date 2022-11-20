@@ -1,0 +1,7 @@
+name: Cloud Native - Wasm - Installable Platform
+type: Tech-2
+data:
+  github_repo:
+    - 308404813 # repo:suborbital/atmo
+    - 345774446 # repo:deislabs/hippo
+    - 226983227 # repo:krustlet/krustlet

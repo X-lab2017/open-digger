@@ -1,0 +1,43 @@
+name: Cloud Native - Observability and Analysis - Monitoring
+type: Tech-2
+data:
+  github_repo:
+    - 16554739 # repo:elastic/beats
+    - 161628176 # repo:kubeshop/botkube
+    - 496143272 # repo:centreon/centreon
+    - 171669368 # repo:tribe29/checkmk
+    - 67793333 # repo:cortexproject/cortex
+    - 448599559 # repo:deepflowys/deepflow
+    - 55850689 # repo:open-falcon/falcon-plus
+    - 130035428 # repo:foniod/foniod
+    - 15111821 # repo:grafana/grafana
+    - 385634291 # repo:grafana/mimir
+    - 4254338 # repo:graphite-project/graphite-web
+    - 222612062 # repo:cilium/hubble
+    - 12440855 # repo:Icinga/icinga2
+    - 13124802 # repo:influxdata/influxdb
+    - 120181748 # repo:kiali/kiali
+    - 137922416 # repo:kuberhealthy/kuberhealthy
+    - 191676087 # repo:lindb/lindb
+    - 61153677 # repo:m3db/m3
+    - 16119670 # repo:NagiosEnterprises/nagioscore
+    - 10744183 # repo:netdata/netdata
+    - 138287889 # repo:Netis/packet-agent
+    - 139140778 # repo:NexClipper/NexClipper
+    - 244694886 # repo:didi/nightingale
+    - 95098170 # repo:OpenObservability/OpenMetrics
+    - 865412 # repo:OpenTSDB/opentsdb
+    - 316257595 # repo:opstrace/opstrace
+    - 243394576 # repo:pixie-io/pixie
+    - 6838921 # repo:prometheus/prometheus
+    - 252745692 # repo:timescale/promscale
+    - 82981995 # repo:sensu/sensu-go
+    - 527583905 # repo:runsidekick/sidekick
+    - 175833318 # repo:skooner-k8s/skooner
+    - 15926180 # repo:draios/sysdig
+    - 109162639 # repo:thanos-io/thanos
+    - 127344362 # repo:trickstercache/trickster
+    - 146327667 # repo:vectordotdev/vector
+    - 150954997 # repo:VictoriaMetrics/VictoriaMetrics
+    - 34659664 # repo:weaveworks/scope
+    - 17253775 # repo:zabbix/zabbix

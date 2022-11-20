@@ -1,0 +1,24 @@
+name: Cloud Native - Orchestration & Management - Scheduling & Orchestration
+type: Tech-2
+data:
+  github_repo:
+    - 11469439 # repo:apache/mesos
+    - 124312956 # repo:Microsoft/service-fabric
+    - 275918955 # repo:clastix/capsule
+    - 374587785 # repo:clusternet/clusternet
+    - 414827833 # repo:clusterpedia-io/clusterpedia
+    - 147886080 # repo:crossplane/crossplane
+    - 51556828 # repo:moby/swarmkit
+    - 278954673 # repo:fluid-cloudnative/fluid
+    - 311639195 # repo:karmada-io/karmada
+    - 470472185 # repo:koordinator-sh/koordinator
+    - 340965344 # repo:kube-green/kube-green
+    - 157133149 # repo:kube-rs/kube-rs
+    - 20580498 # repo:kubernetes/kubernetes
+    - 88608345 # repo:kubereboot/kured
+    - 36653430 # repo:hashicorp/nomad
+    - 412113556 # repo:open-cluster-management-io/ocm
+    - 1464595 # repo:OpenNebula/one
+    - 139199684 # repo:PrefectHQ/prefect
+    - 175592968 # repo:volcano-sh/volcano
+    - 304403692 # repo:wasmCloud/wasmCloud

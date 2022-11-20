@@ -1,0 +1,5 @@
+name: Cloud Native - Serverless - Hosted Platform
+type: Tech-2
+data:
+  github_repo:
+    - 42548553 # repo:Azure/azure-functions-host

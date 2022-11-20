@@ -1,0 +1,11 @@
+name: Cloud Native - Provisioning - Container Registry
+type: Tech-2
+data:
+  github_repo:
+    - 28366058 # repo:distribution/distribution
+    - 309874357 # repo:dragonflyoss/Dragonfly2
+    - 50613991 # repo:goharbor/harbor
+    - 160626997 # repo:uber/kraken
+    - 33866783 # repo:SUSE/Portus
+    - 411456245 # repo:opcr-io/policy
+    - 220517730 # repo:quay/quay

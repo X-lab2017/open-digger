@@ -1,0 +1,19 @@
+name: Cloud Native - Provisioning - Key Management
+type: Tech-2
+data:
+  github_repo:
+    - 73948366 # repo:AthenZ/athenz
+    - 117408191 # repo:Authing/Authing
+    - 62174977 # repo:cyberark/conjur
+    - 11125589 # repo:keycloak/keycloak
+    - 105262714 # repo:oauth2-proxy/oauth2-proxy
+    - 36071697 # repo:ory/hydra
+    - 276756059 # repo:vmware-tanzu/pinniped
+    - 163722349 # repo:pomerium/pomerium
+    - 99618772 # repo:spiffe/spiffe
+    - 100061496 # repo:spiffe/spire
+    - 32866430 # repo:square/keywhiz
+    - 145011089 # repo:buzzfeed/sso
+    - 31558937 # repo:gravitational/teleport
+    - 351043495 # repo:SpectralOps/Teller
+    - 31288958 # repo:hashicorp/vault
