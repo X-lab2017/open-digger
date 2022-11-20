@@ -1,0 +1,15 @@
+name: Cloud Native - Platform - PaaS/Container Service
+type: Tech-2
+data:
+  github_repo:
+    - 130013 # repo:akka/akka
+    - 12223350 # repo:cloudfoundry/cli
+    - 13753636 # repo:jhipster/generator-jhipster
+    - 139590616 # repo:kyma-project/kyma
+    - 120538304 # repo:kelseyhightower/nocode
+    - 200118806 # repo:redkubes/otomi-core
+    - 44998824 # repo:Yelp/paasta
+    - 59239347 # repo:portainer/portainer
+    - 143456583 # repo:rancher/rio
+    - 283410102 # repo:sogou/workflow
+    - 3631697 # repo:tsuru/tsuru

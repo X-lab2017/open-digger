@@ -1,0 +1,14 @@
+name: Cloud Native - Orchestration & Management - Remote Procedure Call
+type: Tech-2
+data:
+  github_repo:
+    - 310611 # repo:apache/thrift
+    - 206459 # repo:apache/avro
+    - 384451028 # repo:cloudwego/kitex
+    - 4710920 # repo:apache/dubbo
+    - 285864199 # repo:zeromicro/go-zero
+    - 27729880 # repo:grpc/grpc
+    - 165041732 # repo:go-kratos/kratos
+    - 128709824 # repo:sofastack/sofa-rpc
+    - 295369297 # repo:sogou/srpc
+    - 79316451 # repo:tarsCloud/tars

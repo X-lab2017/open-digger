@@ -1,0 +1,28 @@
+name: Cloud Native - App Definition and Development - Streaming & Messaging
+type: Tech-2
+data:
+  github_repo:
+    - 43158694 # repo:apache/incubator-heron
+    - 27911088 # repo:apache/nifi
+    - 75164823 # repo:apache/rocketmq
+    - 17165658 # repo:apache/spark
+    - 14135470 # repo:apache/storm
+    - 50904245 # repo:apache/beam
+    - 419433905 # repo:cdevents/spec
+    - 113701924 # repo:cloudevents/spec
+    - 26390092 # repo:deepstreamIO/deepstream.io
+    - 7202769 # repo:emqx/emqx
+    - 20587599 # repo:apache/flink
+    - 205473061 # repo:infinyon/fluvio
+    - 2211243 # repo:apache/kafka
+    - 163074901 # repo:kubemq-io/kubemq-community
+    - 454372510 # repo:memphisdev/memphis-broker
+    - 6443435 # repo:nats-io/nats-server
+    - 86400116 # repo:openmessaging/openmessaging-java
+    - 63096822 # repo:pravega/pravega
+    - 62117812 # repo:apache/pulsar
+    - 924551 # repo:rabbitmq/rabbitmq-server
+    - 99412308 # repo:apache/incubator-seatunnel
+    - 18988631 # repo:siddhi-io/siddhi
+    - 58194180 # repo:strimzi/strimzi-kafka-operator
+    - 211798430 # repo:tremor-rs/tremor-runtime

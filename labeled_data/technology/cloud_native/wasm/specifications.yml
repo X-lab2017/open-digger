@@ -1,0 +1,8 @@
+name: Cloud Native - Wasm - Specifications
+type: Tech-2
+data:
+  github_repo:
+    - 53178225 # repo:ewasm/design
+    - 179135166 # repo:WebAssembly/WASI
+    - 263765444 # repo:WebAssembly/wasi-nn
+    - 40598815 # repo:WebAssembly/spec

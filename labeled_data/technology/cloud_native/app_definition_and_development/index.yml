@@ -1,0 +1,8 @@
+name: Cloud Native - App Definition and Development
+type: Tech-1
+data:
+  label:
+    - database
+    - streaming_and_messaging
+    - application_definition_and_image_build
+    - continuous_integration_and_delivery

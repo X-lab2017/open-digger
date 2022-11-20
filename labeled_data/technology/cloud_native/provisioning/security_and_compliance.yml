@@ -1,0 +1,50 @@
+name: Cloud Native - Provisioning - Security & Compliance
+type: Tech-2
+data:
+  github_repo:
+    - 102645710 # repo:anchore/anchore-engine
+    - 410078466 # repo:aserto-dev/runtime
+    - 350005438 # repo:cerbos/cerbos
+    - 92313258 # repo:cert-manager/cert-manager
+    - 224386599 # repo:bridgecrewio/checkov
+    - 41571541 # repo:inspec/inspec
+    - 46140633 # repo:quay/clair
+    - 531514152 # repo:cloudmatos/matos
+    - 413484541 # repo:confidential-containers/documentation
+    - 269202949 # repo:containerssh/containerssh
+    - 307768615 # repo:curiefense/curiefense
+    - 357885318 # repo:datreeio/datree
+    - 40916314 # repo:dexidp/dex
+    - 313628863 # repo:external-secrets/external-secrets
+    - 49986046 # repo:falcosecurity/falco
+    - 116995448 # repo:fossas/fossa-cli
+    - 183510345 # repo:FairwindsOps/goldilocks
+    - 99028287 # repo:grafeas/grafeas
+    - 444656703 # repo:hexa-org/policy-orchestrator
+    - 59531400 # repo:in-toto/in-toto
+    - 71359873 # repo:keylime/keylime
+    - 278200746 # repo:Checkmarx/kics
+    - 94779471 # repo:aquasecurity/kube-bench
+    - 141447532 # repo:aquasecurity/kube-hunter
+    - 316098156 # repo:kubearmor/kubearmor
+    - 318490971 # repo:kubewarden/kubewarden-controller
+    - 169108858 # repo:kyverno/kyverno
+    - 37743436 # repo:notaryproject/notary
+    - 48714685 # repo:open-policy-agent/opa
+    - 501372599 # repo:openfga/openfga
+    - 19279199 # repo:OpenSCAP/openscap
+    - 183445613 # repo:parallaxsecond/parsec
+    - 249814436 # repo:FairwindsOps/pluto
+    - 157735858 # repo:FairwindsOps/polaris
+    - 143233750 # repo:FairwindsOps/rbac-lookup
+    - 125060113 # repo:FairwindsOps/rbac-manager
+    - 2528254 # repo:normation/rudder
+    - 338633268 # repo:sigstore/sigstore
+    - 98453563 # repo:vmware-tanzu/sonobuoy
+    - 247991727 # repo:aquasecurity/starboard
+    - 103084166 # repo:tenable/terrascan
+    - 473137633 # repo:cilium/tetragon
+    - 7942805 # repo:theupdateframework/python-tuf
+    - 238662977 # repo:deepfence/ThreatMapper
+    - 556329104 # repo:aserto-dev/topaz
+    - 180687624 # repo:aquasecurity/trivy

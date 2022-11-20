@@ -1,0 +1,8 @@
+name: Cloud Native - Platform
+type: Tech-1
+data:
+  label:
+    - certified_kubernetes_distribution
+    - certified_kubernetes_hosted
+    - certified_kubernetes_installer
+    - paas_and_container_service

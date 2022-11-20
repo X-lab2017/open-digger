@@ -1,0 +1,47 @@
+name: Cloud Native - App Definition and Development - Database
+type: Tech-2
+data:
+  github_repo:
+    - 62117818 # repo:apache/carbondata
+    - 23418517 # repo:apache/hadoop
+    - 31006158 # repo:apache/ignite
+    - 2649214 # repo:arangodb/arangodb
+    - 51290852 # repo:bigchaindb/bigchaindb
+    - 206424 # repo:apache/cassandra
+    - 60246359 # repo:ClickHouse/ClickHouse
+    - 3180703 # repo:couchbase/manifest
+    - 9342529 # repo:crate/crate
+    - 83363132 # repo:CrunchyData/postgres-operator
+    - 125824259 # repo:xtdb/xtdb
+    - 302827809 # repo:datafuselabs/databend
+    - 6358188 # repo:apache/druid
+    - 114187903 # repo:apple/foundationdb
+    - 307894865 # repo:alibaba/graphscope
+    - 1050944 # repo:infinispan/infinispan
+    - 19816070 # repo:MariaDB/server
+    - 24494032 # repo:mysql/mysql-server
+    - 146459443 # repo:vesoft-inc/nebula
+    - 6650539 # repo:neo4j/neo4j
+    - 36778364 # repo:attic-labs/noms
+    - 7083240 # repo:orientechnologies/orientdb
+    - 30753733 # repo:percona/percona-server
+    - 40127179 # repo:pilosa/pilosa
+    - 927442 # repo:postgres/postgres
+    - 166515022 # repo:trinodb/trino
+    - 156018 # repo:redis/redis
+    - 6452529 # repo:rethinkdb/rethinkdb
+    - 151700458 # repo:scalar-labs/scalardb
+    - 183834521 # repo:schemahero/schemahero
+    - 28449431 # repo:scylladb/scylla
+    - 163387337 # repo:seata/seata
+    - 49876476 # repo:apache/shardingsphere
+    - 396856161 # repo:authzed/spicedb
+    - 43884372 # repo:sorintlab/stolon
+    - 911980 # repo:tarantool/tarantool
+    - 196353673 # repo:taosdata/TDengine
+    - 41986369 # repo:pingcap/tidb
+    - 48833910 # repo:tikv/tikv
+    - 11008207 # repo:vitessio/vitess
+    - 2445970 # repo:voltdb/voltdb
+    - 55072677 # repo:semi-technologies/weaviate
+    - 105944401 # repo:YugaByte/yugabyte-db

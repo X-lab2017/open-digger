@@ -1,0 +1,48 @@
+name: Cloud Native - App Definition and Development - Application Definition & Image Build
+type: Tech-2
+data:
+  github_repo:
+    - 233809604 # repo:artifacthub/hub
+    - 236095576 # repo:backstage/backstage
+    - 138544269 # repo:buildpacks/pack
+    - 173207060 # repo:vmware-tanzu/carvel-ytt
+    - 36098429 # repo:habitat-sh/habitat
+    - 126647111 # repo:cloud-ark/kubeplus
+    - 226084465 # repo:devfile/api
+    - 145153231 # repo:loft-sh/devspace
+    - 15045751 # repo:docker/compose
+    - 32935745 # repo:eclipse/che
+    - 429510684 # repo:gefyrahq/gefyra
+    - 302322 # repo:gradle/gradle
+    - 43723161 # repo:helm/helm
+    - 119419195 # repo:GoogleContainerTools/kaniko
+    - 303758423 # repo:konveyor/community
+    - 198856247 # repo:replicatedhq/kots
+    - 368314469 # repo:krator-rs/krator
+    - 218249592 # repo:kubermatic/kubecarrier
+    - 450404132 # repo:teamcode-inc/kubeorbit
+    - 276822250 # repo:kubevela/kubevela
+    - 76686583 # repo:kubevirt/kubevirt
+    - 158545617 # repo:kudobuilder/kudo
+    - 159242360 # repo:kubernetes-sigs/kui
+    - 101875675 # repo:uselagoon/lagoon
+    - 373775141 # repo:kubeshop/monokle
+    - 311269921 # repo:nocalhost/nocalhost
+    - 192779991 # repo:vmware-tanzu/octant
+    - 143846881 # repo:okteto/okteto
+    - 191840044 # repo:oam-dev/spec
+    - 62855546 # repo:openservicebrokerapi/servicebroker
+    - 17372733 # repo:OAI/OpenAPI-Specification
+    - 120650407 # repo:operator-framework/operator-sdk
+    - 8966356 # repo:hashicorp/packer
+    - 109145553 # repo:containers/podman
+    - 155893691 # repo:getporter/porter
+    - 362675427 # repo:alibaba/sealer
+    - 264246502 # repo:serverlessworkflow/specification
+    - 91674936 # repo:apache/servicecomb-java-chassis
+    - 358693091 # repo:shipwright-io/community
+    - 118654121 # repo:GoogleContainerTools/skaffold
+    - 100131598 # repo:solo-io/squash
+    - 197374067 # repo:grafana/tanka
+    - 82933315 # repo:telepresenceio/telepresence
+    - 143896900 # repo:tilt-dev/tilt

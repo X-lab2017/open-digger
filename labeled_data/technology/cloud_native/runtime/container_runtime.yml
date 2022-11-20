@@ -1,0 +1,18 @@
+name: Cloud Native - Runtime - Container Runtime
+type: Tech-2
+data:
+  github_repo:
+    - 46089560 # repo:containerd/containerd
+    - 67828134 # repo:cri-o/cri-o
+    - 107505869 # repo:firecracker-microvm/firecracker
+    - 131212638 # repo:google/gvisor
+    - 263214582 # repo:inclavare-containers/inclavare-containers
+    - 110539997 # repo:kata-containers/runtime
+    - 367284699 # repo:lima-vm/lima
+    - 26192117 # repo:lxc/lxd
+    - 26509369 # repo:rkt/rkt
+    - 36960321 # repo:opencontainers/runc
+    - 43982667 # repo:apptainer/singularity
+    - 2203782 # repo:TritonDataCenter/smartos-live
+    - 284555713 # repo:nestybox/sysbox
+    - 224908244 # repo:WasmEdge/WasmEdge

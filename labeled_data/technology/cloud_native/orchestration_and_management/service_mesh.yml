@@ -1,0 +1,19 @@
+name: Cloud Native - Orchestration & Management - Service Mesh
+type: Tech-2
+data:
+  github_repo:
+    - 310173647 # repo:aeraki-mesh/aeraki
+    - 14125254 # repo:hashicorp/consul
+    - 334851928 # repo:megaease/easemesh
+    - 155558016 # repo:solo-io/gloo-mesh
+    - 74175805 # repo:istio/istio
+    - 175425051 # repo:kumahq/kuma
+    - 113106184 # repo:linkerd/linkerd2
+    - 447051452 # repo:merbridge/merbridge
+    - 157554479 # repo:meshery/meshery
+    - 227895834 # repo:openservicemesh/osm
+    - 177296431 # repo:servicemeshinterface/smi-spec
+    - 168888155 # repo:service-mesh-performance/service-mesh-performance
+    - 331236836 # repo:slime-io/slime
+    - 187875305 # repo:traefik/mesh
+    - 403802153 # repo:huaweicloud/Sermant
