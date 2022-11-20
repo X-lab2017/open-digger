@@ -1,0 +1,35 @@
+name: Database - Document
+type: Tech-1
+data:
+  github_repo:
+    - 24494032 # repo:mysql/mysql-server
+    - 927442 # repo:postgres/postgres
+    - 19816070 # repo:MariaDB/server
+    - 44781140 # repo:greenplum-db/gpdb
+    - 192418550 # repo:oracle/nosql-go-sdk
+    - 5683653 # repo:apache/drill
+    - 41986369 # repo:pingcap/tidb
+    - 316690542 # repo:MonetDB/MonetDB
+    - 166515022 # repo:trinodb/trino
+    - 50874442 # repo:citusdata/citus
+    - 114187903 # repo:apple/foundationdb
+    - 156018 # repo:redis/redis
+    - 3786237 # repo:hazelcast/hazelcast
+    - 124315604 # repo:aerospike/aerospike-server
+    - 911980 # repo:tarantool/tarantool
+    - 28956774 # repo:Alachisoft/NCache
+    - 108110 # repo:mongodb/mongo
+    - 7948548 # repo:couchbase/couchbase-lite-ios
+    - 206417 # repo:apache/couchdb
+    - 49896881 # repo:marklogic/marklogic-data-hub
+    - 4044891 # repo:realm/realm-cocoa
+    - 226992533 # repo:googleapis/python-firestore
+    - 2649214 # repo:arangodb/arangodb
+    - 542714 # repo:ravendb/ravendb
+    - 6452529 # repo:rethinkdb/rethinkdb
+    - 714074 # repo:pouchdb/pouchdb
+    - 141378316 # repo:beardedeagle/mnesiac
+    - 23315232 # repo:mbdavid/LiteDB
+    - 3788366 # repo:openlink/virtuoso-opensource
+    - 7083240 # repo:orientechnologies/orientdb
+    - 507775 # repo:elastic/elasticsearch

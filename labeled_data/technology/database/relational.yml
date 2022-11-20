@@ -1,0 +1,43 @@
+name: Database - Relational
+type: Tech-1
+data:
+  github_repo:
+    - 24494032 # repo:mysql/mysql-server
+    - 927442 # repo:postgres/postgres
+    - 176278485 # repo:sqlite/sqlite
+    - 19816070 # repo:MariaDB/server
+    - 206444 # repo:apache/hive
+    - 54005538 # repo:FirebirdSQL/firebird
+    - 44781140 # repo:greenplum-db/gpdb
+    - 5349565 # repo:prestodb/presto
+    - 60246359 # repo:ClickHouse/ClickHouse
+    - 33745913 # repo:h2database/h2database
+    - 16563587 # repo:cockroachdb/cockroach
+    - 101723057 # repo:ryenus/hsqldb
+    - 1918497 # repo:apache/derby
+    - 192418550 # repo:oracle/nosql-go-sdk
+    - 20473418 # repo:apache/phoenix
+    - 5683653 # repo:apache/drill
+    - 41986369 # repo:pingcap/tidb
+    - 30753733 # repo:percona/percona-server
+    - 316690542 # repo:MonetDB/MonetDB
+    - 166515022 # repo:trinodb/trino
+    - 2445970 # repo:VoltDB/voltdb
+    - 50874442 # repo:citusdata/citus
+    - 90541149 # repo:heavyai/heavydb
+    - 114187903 # repo:apple/foundationdb
+    - 28738447 # repo:apache/kylin
+    - 52080367 # repo:CUBRID/cubrid
+    - 31006158 # repo:apache/ignite
+    - 911980 # repo:tarantool/tarantool
+    - 89848289 # repo:KxSystems/kdb
+    - 84240850 # repo:timescale/timescaledb
+    - 6358188 # repo:apache/druid
+    - 52420005 # repo:griddb/griddb
+    - 19257422 # repo:questdb/questdb
+    - 196353673 # repo:taosdata/TDengine
+    - 3788366 # repo:openlink/virtuoso-opensource
+    - 63110867 # repo:vaticle/typedb
+    - 4407129 # repo:postgis/postgis
+    - 7171304 # repo:illarionov/SpatiaLite
+    - 9074548 # repo:orbisgis/h2gis

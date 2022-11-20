@@ -1,0 +1,18 @@
+name: Database - Graph
+type: Tech-1
+data:
+  github_repo:
+    - 19816070 # repo:MariaDB/server
+    - 156018 # repo:redis/redis
+    - 2649214 # repo:arangodb/arangodb
+    - 542714 # repo:ravendb/ravendb
+    - 6650539 # repo:neo4j/neo4j
+    - 3788366 # repo:openlink/virtuoso-opensource
+    - 7083240 # repo:orientechnologies/orientdb
+    - 77385607 # repo:JanusGraph/janusgraph
+    - 41349039 # repo:dgraph-io/dgraph
+    - 2282376 # repo:apache/giraph
+    - 146459443 # repo:vesoft-inc/nebula
+    - 63110867 # repo:vaticle/typedb
+    - 81411018 # repo:microsoft/GraphEngine
+    - 48451041 # repo:blazegraph/database

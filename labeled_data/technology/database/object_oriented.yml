@@ -1,0 +1,7 @@
+name: Database - Object Oriented
+type: Tech-1
+data:
+  github_repo:
+    - 204261394 # repo:iboxdb/db4o-gpl
+    - 79901405 # repo:objectbox/objectbox-java
+    - 124423054 # repo:The-Alchemist/perst

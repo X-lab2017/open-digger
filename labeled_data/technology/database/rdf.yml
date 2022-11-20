@@ -1,0 +1,10 @@
+name: Database - RDF
+type: Tech-1
+data:
+  github_repo:
+    - 49896881 # repo:marklogic/marklogic-data-hub
+    - 3788366 # repo:openlink/virtuoso-opensource
+    - 7437073 # repo:apache/jena
+    - 48451041 # repo:blazegraph/database
+    - 49670957 # repo:eclipse/rdf4j
+    - 248094 # repo:4store/4store
