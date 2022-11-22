@@ -4,7 +4,39 @@
 
 OpenDigger is an open source analysis report project for all open source data initiated by [X-lab](https://x-lab.info), this project aims to combine the wisdom of global developers to jointly analyze and insight into open source related data to help everyone better understand and participate in open source.
 
-## Usage
+## Metrics or Indices Usage
+
+All implemented metrics are open for anyone to use, you can find the data with following URL, just replace the `org/repo` or user `login` to get your data.
+
+We will implement all the metrics under CHAOSS in the future.
+
+Feel free to use the data to construct your own data application and you can refer OpenDigger as your data source.
+
+### For repos
+
+- [X-lab] activity: https://oss.x-lab.info/open_digger/github/X-lab2017/open-digger/activity.json
+- [X-lab] openrank: https://oss.x-lab.info/open_digger/github/X-lab2017/open-digger/openrank.json
+- [X-lab] attention: https://oss.x-lab.info/open_digger/github/X-lab2017/open-digger/attention.json
+- [[CHAOSS]](https://chaoss.community/metric-technical-fork/) technical_fork: https://oss.x-lab.info/open_digger/github/X-lab2017/open-digger/technical_fork.json
+- [X-lab] stars: https://oss.x-lab.info/open_digger/github/X-lab2017/open-digger/stars.json
+- [[CHAOSS]](https://chaoss.community/metric-issues-new/) issues_new: https://oss.x-lab.info/open_digger/github/X-lab2017/open-digger/issues_new.json
+- [[CHAOSS]](https://chaoss.community/metric-issues-new/) issues_closed: https://oss.x-lab.info/open_digger/github/X-lab2017/open-digger/issues_closed.json
+- [[CHAOSS]](https://chaoss.community/metric-code-changes-lines/) code_change_lines_add: https://oss.x-lab.info/open_digger/github/X-lab2017/open-digger/code_change_lines_add.json
+- [[CHAOSS]](https://chaoss.community/metric-code-changes-lines/) code_change_lines_remove: https://oss.x-lab.info/open_digger/github/X-lab2017/open-digger/code_change_lines_remove.json
+- [[CHAOSS]](https://chaoss.community/metric-code-changes-lines/) code_change_lines_sum: https://oss.x-lab.info/open_digger/github/X-lab2017/open-digger/code_change_lines_sum.json
+- [[CHAOSS]](https://chaoss.community/metric-change-requests/) change_requests(open pr): https://oss.x-lab.info/open_digger/github/X-lab2017/open-digger/change_requests.json
+- [[CHAOSS]](https://chaoss.community/metric-change-requests-accepted/) change_requests_accepted(merged pr): https://oss.x-lab.info/open_digger/github/X-lab2017/open-digger/change_requests_accepted.json
+- [X-lab] issue_comments: https://oss.x-lab.info/open_digger/github/X-lab2017/open-digger/issue_comments.json
+- [[CHAOSS]](https://chaoss.community/metric-change-request-reviews/) change_requests_reviews(review comment): https://oss.x-lab.info/open_digger/github/X-lab2017/open-digger/change_requests_reviews.json
+- [X-lab] participants: https://oss.x-lab.info/open_digger/github/X-lab2017/open-digger/participants.json
+- [[CHAOSS]](https://chaoss.community/metric-bus-factor/) bus_factor: https://oss.x-lab.info/open_digger/github/X-lab2017/open-digger/bus_factor.json
+
+### For users
+
+- [X-lab] activity: https://oss.x-lab.info/open_digger/github/frank-zsy/activity.json
+- [X-lab] openrank: https://oss.x-lab.info/open_digger/github/frank-zsy/openrank.json
+
+## Development
 
 OpenDigger can be used as an online analysis tool or cron task scripts, and is used to generate lots of data for open source reports and tools like:
 
