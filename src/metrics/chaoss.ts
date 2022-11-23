@@ -267,7 +267,7 @@ FROM
       argMax(org_login, created_at) AS org_login,
       issue_number,
       argMaxIf(action, created_at, action IN ('opened', 'closed' , 'reopened')) AS last_action,
-      maxIf(created_at, action = 'opened') AS opened_at,
+      argMax(issue_created_at,created_at) AS opened_at,
       maxIf(created_at, action = 'closed') AS closed_at
     FROM github_log.events
     WHERE ${whereClauses.join(' AND ')}
