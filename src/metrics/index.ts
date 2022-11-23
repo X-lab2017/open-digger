@@ -1,7 +1,7 @@
 import { getRepoOpenrank, getRepoActivity, getUserOpenrank, getUserActivity, getAttention } from './indices';
 import { chaossCodeChangeCommits, chaossBusFactor, chaossIssuesNew, chaossIssuesClosed, chaossChangeRequestsAccepted, 
 chaossChangeRequestsDeclined, chaossIssueResolutionDuration, chaossCodeChangeLines, chaossTechnicalFork, 
-chaossChangeRequests, chaossChangeRequestReviews } from './chaoss';
+chaossChangeRequests, chaossChangeRequestReviews,chaossNewContributors } from './chaoss';
 import { repoStars, repoIssueComments, repoParticipants } from './metrics';
 import { getRelatedUsers } from './related_users';
 
@@ -25,6 +25,7 @@ module.exports = {
   chaossTechnicalFork: chaossTechnicalFork,
   chaossChangeRequests: chaossChangeRequests,
   chaossChangeRequestReviews: chaossChangeRequestReviews,
+  chaossNewContributors: chaossNewContributors,
   // x-lab metrics
   repoStars: repoStars,
   repoIssueComments: repoIssueComments,

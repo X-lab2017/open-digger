@@ -539,3 +539,96 @@ FORMAT JSONCompact`;
     }
   });
 };
+
+interface NewContributorsOptions {
+  // calculate new contributors by change request or git commit index. default: change request
+  by: 'commit' | 'change request';
+  withBot: boolean;
+}
+export const chaossNewContributors = async (config: QueryConfig<NewContributorsOptions>) => {
+  config = getMergedConfig(config);
+  const by = filterEnumType(config.options?.by, ['commit', 'change request'], 'change request');
+  const whereClauses: string[] = [];
+  const endDate = new Date(`${config.endYear}-${config.endMonth}-1`);
+  endDate.setMonth(config.endMonth);  // find next month
+  if (by === 'commit') {
+    whereClauses.push("type = 'PushEvent'")
+  } else if (by === 'change request') {
+    whereClauses.push("type = 'PullRequestEvent' AND action = 'closed' AND pull_merged = 1");
+  }
+  const repoWhereClause = await getRepoWhereClauseForClickhouse(config);
+  if (repoWhereClause) whereClauses.push(repoWhereClause);
+  const sql = `
+  SELECT
+    id,
+    argMax(name, time) AS name,
+    ${getGroupArrayInsertAtClauseForClickhouse(config, { key: 'new_contributors', value: 'new_contributor'})},
+    ${getGroupArrayInsertAtClauseForClickhouse(config, { key: 'detail' })},
+    SUM(new_contributor) AS total_new_contributors
+  FROM
+  (
+    SELECT
+    ${getGroupTimeAndIdClauseForClickhouse(config, 'repo', 'first_time')},
+      length(detail) AS new_contributor,
+      (arrayMap((x) -> (x), groupArray(author))) AS detail
+    FROM
+    (
+      SELECT
+        min(created_at) AS first_time,
+        repo_id,
+        argMax(repo_name,created_at) AS repo_name,
+        ${(() => {
+      if (by === 'commit') {
+        return `
+            author
+            `
+      } else if (by === 'change request') {
+        return `
+            actor_id,
+            argMax(author,created_at) AS author
+            `
+      }
+    })()}
+      FROM
+       (
+          SELECT 
+            repo_id,
+            repo_name,
+            ${(() => {
+      if (by === 'commit') {
+        return `
+              arrayJoin(push_commits.name) AS author
+              `
+      } else if (by === 'change request') {
+        return `
+              issue_author_id AS actor_id,
+              issue_author_login AS author
+              `
+      }
+    })()},
+            created_at
+          FROM github_log.events
+          WHERE ${whereClauses.join(' AND ')}
+          ${(config.options?.withBot && by !== 'commit') ? '' : "HAVING author NOT LIKE '%[bot]'"}
+        )
+      GROUP BY repo_id, ${by === 'commit' ? 'author' : 'actor_id'}
+      HAVING first_time >= toDate('${config.startYear}-${config.startMonth}-1') AND first_time < toDate('${endDate.getFullYear()}-${endDate.getMonth() + 1}-1')
+    )
+    GROUP BY id, time
+  )
+  GROUP BY id
+  ${config.order ? `ORDER BY total_new_contributors ${config.order}` : ''}
+  ${config.limit > 0 ? `LIMIT ${config.limit}` : ''}
+  FORMAT JSONCompact`;
+
+  const result: any = await clickhouse.query(sql);
+  return result.map(row => {
+    const [id, name, new_contributors, detail] = row;
+    return {
+      id,
+      name,
+      new_contributors,
+      detail,
+    }
+  });
+}

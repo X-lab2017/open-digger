@@ -38,6 +38,7 @@ const openDigger = {
       changeRequestsDeclined: func.chaossChangeRequestsDeclined,
       chaossIssueResolutionDuration: func.chaossIssueResolutionDuration,
       chaossCodeChangeLines: func.chaossCodeChangeLines,
+      chaossNewContributors: func.chaossNewContributors,
     }
   },
   relation: {
