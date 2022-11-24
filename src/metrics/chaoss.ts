@@ -376,6 +376,70 @@ FORMAT JSONCompact`;
   });
 };
 
+interface ChangeRequestsDurationOptions {
+  by: 'open' | 'close';
+  type: 'avg' | 'median';
+  unit: 'week' | 'day' | 'hour' | 'minute';
+}
+export const chaossChangeRequestsDuration = async (config: QueryConfig<ChangeRequestsDurationOptions>) => {
+  config = getMergedConfig(config);
+  const whereClauses: string[] = ["type = 'PullRequestEvent' AND pull_merged = 1"];
+  const repoWhereClause = await getRepoWhereClauseForClickhouse(config);
+  if (repoWhereClause) whereClauses.push(repoWhereClause);
+  
+  const endDate = new Date(`${config.endYear}-${config.endMonth}-1`);
+  endDate.setMonth(config.endMonth);  // find next month
+  
+  let by = filterEnumType(config.options?.by, ['open', 'close'], 'open');
+  const byCol = by === 'open' ? 'opened_at' : 'closed_at';
+  let type = filterEnumType(config.options?.type, ['avg', 'median'], 'avg');
+  let unit = filterEnumType(config.options?.unit, ['week', 'day', 'hour', 'minute'], 'day');
+  
+  const sql = `
+SELECT
+  id,
+  argMax(name, time) AS name,
+  ${getGroupArrayInsertAtClauseForClickhouse(config, { key: `resolution_duration`, defaultValue: 'NaN' })}
+FROM
+(
+  SELECT
+    ${getGroupTimeAndIdClauseForClickhouse(config, 'repo', byCol)},
+    ${type}(dateDiff('${unit}', opened_at, closed_at)) AS resolution_duration
+  FROM
+  (
+    SELECT
+      repo_id,
+      argMax(repo_name, created_at) AS repo_name,
+      org_id,
+      argMax(org_login, created_at) AS org_login,
+      issue_number,
+      argMaxIf(action, created_at, action IN ('opened', 'closed' , 'reopened')) AS last_action,
+      argMax(issue_created_at,created_at) AS opened_at,
+      maxIf(created_at, action = 'closed') AS closed_at
+    FROM github_log.events
+    WHERE ${whereClauses.join(' AND ')}
+    GROUP BY repo_id, org_id, issue_number
+    HAVING ${byCol} >= toDate('${config.startYear}-${config.startMonth}-1') AND ${byCol} < toDate('${endDate.getFullYear()}-${endDate.getMonth() + 1}-1') AND last_action='closed'
+  )
+  GROUP BY id, time
+  ${config.order ? `ORDER BY resolution_duration ${config.order}` : ''}
+  ${config.limit > 0 ? `LIMIT ${config.limit} BY time` : ''}
+)
+GROUP BY id
+${config.order ? `ORDER BY resolution_duration[-1] ${config.order}` : ''}
+FORMAT JSONCompact`;
+
+  const result: any = await clickhouse.query(sql);
+  return result.map(row => {
+    const [ id, name, resolution_duration ] = row;
+    return {
+      id,
+      name,
+      resolution_duration,
+    }
+  });
+};
+
 // Evolution - Code Development Process Quality
 export const chaossChangeRequests = async (config: QueryConfig) => {
   config = getMergedConfig(config);
