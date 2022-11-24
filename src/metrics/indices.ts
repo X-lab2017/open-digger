@@ -34,11 +34,13 @@ FROM
   FROM github_log.repo_openrank
   WHERE ${whereClause.join(' AND ')}
   GROUP BY id, time
-  ${config.order ? `ORDER BY openrank ${config.order}` : ''}
-  ${config.limit > 0 ? `LIMIT ${config.limit} BY time` : ''}
+  ${config.limitOption === 'each' && config.limit > 0 ? 
+    `${config.order ? `ORDER BY openrank ${config.order}` : ''} LIMIT ${config.limit} BY time` :
+    ''}
 )
 GROUP BY id
 ${config.order ? `ORDER BY openrank[-1] ${config.order}` : ''}
+${config.limitOption === 'all' && config.limit > 0 ? `LIMIT ${config.limit}` : ''}
 FORMAT JSONCompact`;
 
   const result: any = await clickhouse.query(sql);
@@ -73,11 +75,13 @@ FROM
   FROM github_log.user_openrank
   WHERE ${whereClause.join(' AND ')}
   GROUP BY id, time
-  ${config.order ? `ORDER BY openrank ${config.order}` : ''}
-  ${config.limit > 0 ? `LIMIT ${config.limit} BY time` : ''}
+  ${config.limitOption === 'each' && config.limit > 0 ? 
+    `${config.order ? `ORDER BY openrank ${config.order}` : ''} LIMIT ${config.limit} BY time` :
+    ''}
 )
 GROUP BY id
 ${config.order ? `ORDER BY openrank[-1] ${config.order}` : ''}
+${config.limitOption === 'all' && config.limit > 0 ? `LIMIT ${config.limit}` : ''}
 FORMAT JSONCompact`;
 
   const result: any = await clickhouse.query(sql);
@@ -145,12 +149,14 @@ FROM
     HAVING activity > 0
   )
   GROUP BY id, time
-  ${config.order ? `ORDER BY activity ${config.order}`: ''}
-  ${config.limit > 0 ? `LIMIT ${config.limit} BY time` : ''}
+  ${config.limitOption === 'each' && config.limit > 0 ? 
+    `${config.order ? `ORDER BY activity ${config.order}` : ''} LIMIT ${config.limit} BY time` :
+    ''}
 )
 GROUP BY id
 ${config.order ? `ORDER BY activity[-1] ${config.order}` : ''}
-FORMAT JSONCompact`;  // use JSONCompact to reduce network I/O
+${config.limitOption === 'all' && config.limit > 0 ? `LIMIT ${config.limit}` : ''}
+FORMAT JSONCompact`;
 
   const result: any = await clickhouse.query(sql);
   return result.map(row => {
@@ -208,11 +214,13 @@ FROM
     HAVING activity > 0 ${ withBot ? '' : `AND actor_login NOT LIKE '%[bot]'` }
   )
   GROUP BY id, time
-  ${config.order ? `ORDER BY activity ${config.order}`: ''}
-  ${config.limit > 0 ? `LIMIT ${config.limit} BY time` : ''}
+  ${config.limitOption === 'each' && config.limit > 0 ? 
+    `${config.order ? `ORDER BY activity ${config.order}` : ''} LIMIT ${config.limit} BY time` :
+    ''}
 )
 GROUP BY id
 ${config.order ? `ORDER BY activity[-1] ${config.order}` : ''}
+${config.limitOption === 'all' && config.limit > 0 ? `LIMIT ${config.limit}` : ''}
 FORMAT JSONCompact`;
 
   const result: any = await clickhouse.query(sql);
@@ -253,11 +261,13 @@ FROM
   FROM github_log.events
   WHERE ${whereClauses.join(' AND ')}
   GROUP BY id, time
-  ${config.order ? `ORDER BY attention ${config.order}` : ''}
-  ${config.limit > 0 ? `LIMIT ${config.limit} BY time` : ''}
+  ${config.limitOption === 'each' && config.limit > 0 ? 
+    `${config.order ? `ORDER BY attention ${config.order}` : ''} LIMIT ${config.limit} BY time` :
+    ''}
 )
 GROUP BY id
 ${config.order ? `ORDER BY attention[-1] ${config.order}` : ''}
+${config.limitOption === 'all' && config.limit > 0 ? `LIMIT ${config.limit}` : ''}
 FORMAT JSONCompact`;
 
   const result: any = await clickhouse.query(sql);

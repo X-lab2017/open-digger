@@ -18,6 +18,7 @@ export interface QueryConfig<T = any> {
   endMonth: number;
   order?: 'DESC' | 'ASC';
   limit: number;
+  limitOption: 'each' | 'all';
   precision: number;
   groupBy?: 'org' | string;
   groupTimeRange?: 'month' | 'quarter' | 'year';
@@ -32,6 +33,7 @@ export const getMergedConfig = (config: any): QueryConfig => {
       endYear: new Date().getFullYear(),
       endMonth: new Date().getMonth(),
       limit: 10,
+      limitOption: 'all',
       precision: 2,
   };
   return merge(defaultConfig, config);
