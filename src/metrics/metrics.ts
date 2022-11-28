@@ -27,11 +27,13 @@ FROM
   FROM github_log.events
   WHERE ${whereClauses.join(' AND ')}
   GROUP BY id, time
-  ${config.order ? `ORDER BY count ${config.order}` : ''}
-  ${config.limit > 0 ? `LIMIT ${config.limit} BY time` : ''}
+  ${config.limitOption === 'each' && config.limit > 0 ? 
+    `${config.order ? `ORDER BY count ${config.order}` : ''} LIMIT ${config.limit} BY time` :
+    ''}
 )
 GROUP BY id
 ${config.order ? `ORDER BY count[-1] ${config.order}` : ''}
+${config.limitOption === 'all' && config.limit > 0 ? `LIMIT ${config.limit}` : ''}
 FORMAT JSONCompact`;
 
   const result: any = await clickhouse.query(sql);
@@ -65,11 +67,13 @@ FROM
   FROM github_log.events
   WHERE ${whereClauses.join(' AND ')}
   GROUP BY id, time
-  ${config.order ? `ORDER BY count ${config.order}` : ''}
-  ${config.limit > 0 ? `LIMIT ${config.limit} BY time` : ''}
+  ${config.limitOption === 'each' && config.limit > 0 ? 
+    `${config.order ? `ORDER BY count ${config.order}` : ''} LIMIT ${config.limit} BY time` :
+    ''}
 )
 GROUP BY id
 ${config.order ? `ORDER BY count[-1] ${config.order}` : ''}
+${config.limitOption === 'all' && config.limit > 0 ? `LIMIT ${config.limit}` : ''}
 FORMAT JSONCompact`;
 
   const result: any = await clickhouse.query(sql);
@@ -103,11 +107,13 @@ FROM
   FROM github_log.events
   WHERE ${whereClauses.join(' AND ')}
   GROUP BY id, time
-  ${config.order ? `ORDER BY count ${config.order}` : ''}
-  ${config.limit > 0 ? `LIMIT ${config.limit} BY time` : ''}
+  ${config.limitOption === 'each' && config.limit > 0 ? 
+    `${config.order ? `ORDER BY count ${config.order}` : ''} LIMIT ${config.limit} BY time` :
+    ''}
 )
 GROUP BY id
 ${config.order ? `ORDER BY count[-1] ${config.order}` : ''}
+${config.limitOption === 'all' && config.limit > 0 ? `LIMIT ${config.limit}` : ''}
 FORMAT JSONCompact`;
 
   const result: any = await clickhouse.query(sql);

@@ -30,11 +30,13 @@ FROM
   FROM github_log.events
   WHERE ${whereClauses.join(' AND ')}
   GROUP BY id, time
-  ${config.order ? `ORDER BY count ${config.order}` : ''}
-  ${config.limit > 0 ? `LIMIT ${config.limit} BY time` : ''}
+  ${config.limitOption === 'each' && config.limit > 0 ? 
+    `${config.order ? `ORDER BY count ${config.order}` : ''} LIMIT ${config.limit} BY time` :
+    ''}
 )
 GROUP BY id
 ${config.order ? `ORDER BY count[-1] ${config.order}` : ''}
+${config.limitOption === 'all' && config.limit > 0 ? `LIMIT ${config.limit}` : ''}
 FORMAT JSONCompact`;
 
   const result: any = await clickhouse.query(sql);
@@ -73,11 +75,13 @@ FROM
   FROM github_log.events
   WHERE ${whereClauses.join(' AND ')}
   GROUP BY id, time
-  ${config.order ? `ORDER BY count ${config.order}` : ''}
-  ${config.limit > 0 ? `LIMIT ${config.limit} BY time` : ''}
+  ${config.limitOption === 'each' && config.limit > 0 ? 
+    `${config.order ? `ORDER BY count ${config.order}` : ''} LIMIT ${config.limit} BY time` :
+    ''}
 )
 GROUP BY id
 ${config.order ? `ORDER BY commits_count[-1] ${config.order}` : ''}
+${config.limitOption === 'all' && config.limit > 0 ? `LIMIT ${config.limit}` : ''}
 FORMAT JSONCompact`;
 
   const result: any = await clickhouse.query(sql);
@@ -128,11 +132,13 @@ FROM
     FROM github_log.events
     WHERE ${whereClauses.join(' AND ')}
     GROUP BY id, time
-    ${config.order ? `ORDER BY lines ${config.order}` : ''}
-    ${config.limit > 0 ? `LIMIT ${config.limit} BY time` : ''}
+    ${config.limitOption === 'each' && config.limit > 0 ? 
+    `${config.order ? `ORDER BY lines ${config.order}` : ''} LIMIT ${config.limit} BY time` :
+    ''}
   )
   GROUP BY id
   ${config.order ? `ORDER BY code_change_lines[-1] ${config.order}` : ''}
+  ${config.limitOption === 'all' && config.limit > 0 ? `LIMIT ${config.limit}` : ''}
   FORMAT JSONCompact`;
   
   const result: any = await clickhouse.query(sql);
@@ -168,11 +174,13 @@ FROM
   FROM github_log.events
   WHERE ${whereClauses.join(' AND ')}
   GROUP BY id, time
-  ${config.order ? `ORDER BY count ${config.order}` : ''}
-  ${config.limit > 0 ? `LIMIT ${config.limit} BY time` : ''}
+  ${config.limitOption === 'each' && config.limit > 0 ? 
+    `${config.order ? `ORDER BY count ${config.order}` : ''} LIMIT ${config.limit} BY time` :
+    ''}
 )
 GROUP BY id
 ${config.order ? `ORDER BY issues_new_count[-1] ${config.order}` : ''}
+${config.limitOption === 'all' && config.limit > 0 ? `LIMIT ${config.limit}` : ''}
 FORMAT JSONCompact`;
 
   const result: any = await clickhouse.query(sql);
@@ -209,11 +217,13 @@ FROM
   FROM github_log.events
   WHERE ${whereClauses.join(' AND ')}
   GROUP BY id, time
-  ${config.order ? `ORDER BY count ${config.order}` : ''}
-  ${config.limit > 0 ? `LIMIT ${config.limit} BY time` : ''}
+  ${config.limitOption === 'each' && config.limit > 0 ? 
+    `${config.order ? `ORDER BY count ${config.order}` : ''} LIMIT ${config.limit} BY time` :
+    ''}
 )
 GROUP BY id
 ${config.order ? `ORDER BY issues_close_count[-1] ${config.order}` : ''}
+${config.limitOption === 'all' && config.limit > 0 ? `LIMIT ${config.limit}` : ''}
 FORMAT JSONCompact`;
 
   const result: any = await clickhouse.query(sql);
@@ -275,11 +285,13 @@ FROM
     HAVING ${byCol} >= toDate('${config.startYear}-${config.startMonth}-1') AND ${byCol} < toDate('${endDate.getFullYear()}-${endDate.getMonth() + 1}-1') AND last_action='closed'
   )
   GROUP BY id, time
-  ${config.order ? `ORDER BY resolution_duration ${config.order}` : ''}
-  ${config.limit > 0 ? `LIMIT ${config.limit} BY time` : ''}
+  ${config.limitOption === 'each' && config.limit > 0 ? 
+    `${config.order ? `ORDER BY resolution_duration ${config.order}` : ''} LIMIT ${config.limit} BY time` :
+    ''}
 )
 GROUP BY id
 ${config.order ? `ORDER BY resolution_duration[-1] ${config.order}` : ''}
+${config.limitOption === 'all' && config.limit > 0 ? `LIMIT ${config.limit}` : ''}
 FORMAT JSONCompact`;
 
   const result: any = await clickhouse.query(sql);
@@ -315,11 +327,13 @@ FROM
   FROM github_log.events
   WHERE ${whereClauses.join(' AND ')}
   GROUP BY id, time
-  ${config.order ? `ORDER BY count ${config.order}` : ''}
-  ${config.limit > 0 ? `LIMIT ${config.limit} BY time` : ''}
+  ${config.limitOption === 'each' && config.limit > 0 ? 
+    `${config.order ? `ORDER BY count ${config.order}` : ''} LIMIT ${config.limit} BY time` :
+    ''}
 )
 GROUP BY id
 ${config.order ? `ORDER BY change_requests_accepted[-1] ${config.order}` : ''}
+${config.limitOption === 'all' && config.limit > 0 ? `LIMIT ${config.limit}` : ''}
 FORMAT JSONCompact`;
 
   const result: any = await clickhouse.query(sql);
@@ -356,11 +370,13 @@ FROM
   FROM github_log.events
   WHERE ${whereClauses.join(' AND ')}
   GROUP BY id, time
-  ${config.order ? `ORDER BY count ${config.order}` : ''}
-  ${config.limit > 0 ? `LIMIT ${config.limit} BY time` : ''}
+  ${config.limitOption === 'each' && config.limit > 0 ? 
+    `${config.order ? `ORDER BY count ${config.order}` : ''} LIMIT ${config.limit} BY time` :
+    ''}
 )
 GROUP BY id
 ${config.order ? `ORDER BY change_requests_declined[-1] ${config.order}` : ''}
+${config.limitOption === 'all' && config.limit > 0 ? `LIMIT ${config.limit}` : ''}
 FORMAT JSONCompact`;
 
   const result: any = await clickhouse.query(sql);
@@ -461,11 +477,13 @@ FROM
   FROM github_log.events
   WHERE ${whereClauses.join(' AND ')}
   GROUP BY id, time
-  ${config.order ? `ORDER BY count ${config.order}` : ''}
-  ${config.limit > 0 ? `LIMIT ${config.limit} BY time` : ''}
+  ${config.limitOption === 'each' && config.limit > 0 ? 
+    `${config.order ? `ORDER BY count ${config.order}` : ''} LIMIT ${config.limit} BY time` :
+    ''}
 )
 GROUP BY id
 ${config.order ? `ORDER BY count[-1] ${config.order}` : ''}
+${config.limitOption === 'all' && config.limit > 0 ? `LIMIT ${config.limit}` : ''}
 FORMAT JSONCompact`;
 
   const result: any = await clickhouse.query(sql);
@@ -499,11 +517,13 @@ FROM
   FROM github_log.events
   WHERE ${whereClauses.join(' AND ')}
   GROUP BY id, time
-  ${config.order ? `ORDER BY count ${config.order}` : ''}
-  ${config.limit > 0 ? `LIMIT ${config.limit} BY time` : ''}
+  ${config.limitOption === 'each' && config.limit > 0 ? 
+    `${config.order ? `ORDER BY count ${config.order}` : ''} LIMIT ${config.limit} BY time` :
+    ''}
 )
 GROUP BY id
 ${config.order ? `ORDER BY count[-1] ${config.order}` : ''}
+${config.limitOption === 'all' && config.limit > 0 ? `LIMIT ${config.limit}` : ''}
 FORMAT JSONCompact`;
 
   const result: any = await clickhouse.query(sql);
@@ -582,13 +602,15 @@ FROM
     WHERE ${whereClauses.join(' AND ')}
     GROUP BY id, time, ${by === 'commit' ? 'author' : 'actor_id' }
     ${(config.options?.withBot && by !== 'commit') ? '' : "HAVING " + (by === 'activity' ? 'actor_login' : 'author') + " NOT LIKE '%[bot]'"}
-    ${config.order ? `ORDER BY count ${config.order}` : ''}
   )
   GROUP BY id, time
+  ${config.limitOption === 'each' && config.limit > 0 ? 
+    `${config.order ? `ORDER BY bus_factor ${config.order}` : ''} LIMIT ${config.limit} BY time` :
+    ''}
 )
 GROUP BY id
 ${config.order ? `ORDER BY bus_factor[-1] ${config.order}` : ''}
-${config.limit > 0 ? `LIMIT ${config.limit}` : ''}
+${config.limitOption === 'all' && config.limit > 0 ? `LIMIT ${config.limit}` : ''}
 FORMAT JSONCompact`;
 
   const result: any = await clickhouse.query(sql);
@@ -627,7 +649,7 @@ export const chaossNewContributors = async (config: QueryConfig<NewContributorsO
     id,
     argMax(name, time) AS name,
     ${getGroupArrayInsertAtClauseForClickhouse(config, { key: 'new_contributors', value: 'new_contributor'})},
-    ${getGroupArrayInsertAtClauseForClickhouse(config, { key: 'detail' })},
+    ${getGroupArrayInsertAtClauseForClickhouse(config, { key: 'detail', noPrecision: true })},
     SUM(new_contributor) AS total_new_contributors
   FROM
   (
@@ -679,10 +701,13 @@ export const chaossNewContributors = async (config: QueryConfig<NewContributorsO
       HAVING first_time >= toDate('${config.startYear}-${config.startMonth}-1') AND first_time < toDate('${endDate.getFullYear()}-${endDate.getMonth() + 1}-1')
     )
     GROUP BY id, time
+    ${config.limitOption === 'each' && config.limit > 0 ? 
+    `${config.order ? `ORDER BY new_contributor ${config.order}` : ''} LIMIT ${config.limit} BY time` :
+    ''}
   )
   GROUP BY id
-  ${config.order ? `ORDER BY total_new_contributors ${config.order}` : ''}
-  ${config.limit > 0 ? `LIMIT ${config.limit}` : ''}
+  ${config.order ? `ORDER BY new_contributors[-1] ${config.order}` : ''}
+  ${config.limitOption === 'all' && config.limit > 0 ? `LIMIT ${config.limit}` : ''}
   FORMAT JSONCompact`;
 
   const result: any = await clickhouse.query(sql);
