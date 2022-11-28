@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "If you are using OpenDigger metrics data in your research, please cite it as below."
+authors:
+- family-names: "Zhao"
+  given-names: "Shengyu"
+- family-names: "Zhang"
+  given-names: "Xinran"
+- family-names: "Xia"
+  given-names: "Xiaoya"
+title: "OpenDigger"
+version: 1.0.0
+date-released: 2021-04-28
+url: "https://github.com/X-lab2017/open-digger"
