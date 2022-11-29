@@ -51,7 +51,7 @@ For above data, there are some users of OpenDigger right now.
 
 - [China Open Source Report 2021](https://kaiyuanshe.cn/document/china-os-report-2021/): Most comprehensive open source report in China by [kaiyuanshe](https://kaiyuanshe.cn/).
 - [China Open Source Blue Paper 2022](http://www.copu.org.cn/new/308): A blue paper of Chinese open source development by [COPU](http://www.copu.org.cn/).
-- [Big Data Open Source Heat Report](https://github.com/X-lab2017/open-digger/blob/master/cooperations/%E5%BC%80%E6%BA%90%E5%A4%A7%E6%95%B0%E6%8D%AE%E7%83%AD%E5%8A%9B%E6%8A%A5%E5%91%8A2022.pdf): A heat report of open source projects in big data area.
+- [Big Data Open Source Heat Report](cooperations/big_data_open_source_heat_report/开源大数据热力报告2022.pdf): A heat report of open source projects in big data area.
 
 
 ## Events
