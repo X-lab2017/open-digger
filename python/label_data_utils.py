@@ -5,7 +5,7 @@ from typing import List
 labelInputDir = '../labeled_data'
 labelInputPath = os.path.join(os.path.dirname(os.path.abspath(__file__)), labelInputDir)
 
-supportedTypes = set(['Region', 'Company', 'Community', 'Project', 'Foundation'])
+supportedTypes = set(['Region', 'Company', 'Community', 'Project', 'Foundation','Tech-0', 'Tech-1', 'Tech-2'])
 
 supportedKey = set(['label', 'github_repo', 'github_org', 'github_user'])
 GitHubData = {
@@ -107,7 +107,7 @@ def parseItem(item, map_item):
         map_item (Map<string, LabelItem>): _description_
     """
     if item.get('parsed'): return
-    if item.get('content').get('type') and not item.get('content').get('type') in supportedTypes:
+    if item.get('content').get('type') and item.get('content').get('type') not in supportedTypes:
         raise Exception('Not supported type {}'.format(item.get('content').get('type')))
     for key in item.get('content').get('data'): #data里是什么数据类型？字典还是列表？
         if not key in supportedKey:
