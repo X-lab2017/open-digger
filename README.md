@@ -66,6 +66,10 @@ OpenDigger community also open to inter-community cooperation events, like conte
 
 We use [GHArchive](https://www.gharchive.org/) as our data source for GitHub event logs and the data service is provided by [clickhouse](https://clickhouse.tech/) cluster cloud service. For data details, please check the [data](https://github.com/X-lab2017/open-digger/blob/master/docs/data.md) docs.
 
+### Labeled Data
+
+We are collecting labeled data for more deeper analysis. You can view the corresponding data in the `labeled_data` folder. For more details, please check [labeled_data](labeled_data/README.md) docs.
+
 ### Sample Data Usage
 
 OpenDigger provides ClickHouse sample data and Jupyter notebook image to run OpenDigger in local environment, please refer to [sample data doc](./sample_data/README.md).
