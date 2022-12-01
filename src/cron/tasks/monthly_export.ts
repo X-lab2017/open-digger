@@ -97,7 +97,7 @@ const task: Task = {
           let index = 0;
           await forEveryMonthByConfig(option, async (y, m) => {
             if (dataArr.length <= index) return;
-            const key = `${y}${m}`;
+            const key = `${y}-${m.toString().padStart(2, '0')}`;
             const ele = parseFloat(dataArr[index++]);
             if (ele !== 0) content[key] = ele;
           });
