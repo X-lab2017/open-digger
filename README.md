@@ -51,7 +51,7 @@ For above data, there are some users of OpenDigger right now.
 
 - [China Open Source Report 2021](https://kaiyuanshe.cn/document/china-os-report-2021/): Most comprehensive open source report in China by [kaiyuanshe](https://kaiyuanshe.cn/).
 - [China Open Source Blue Paper 2022](http://www.copu.org.cn/new/308): A blue paper of Chinese open source development by [COPU](http://www.copu.org.cn/).
-- [Big Data Open Source Heat Report](https://github.com/X-lab2017/open-digger/blob/master/cooperations/%E5%BC%80%E6%BA%90%E5%A4%A7%E6%95%B0%E6%8D%AE%E7%83%AD%E5%8A%9B%E6%8A%A5%E5%91%8A2022.pdf): A heat report of open source projects in big data area.
+- [Big Data Open Source Heat Report](cooperations/big_data_open_source_heat_report/开源大数据热力报告2022.pdf): A heat report of open source projects in big data area.
 
 
 ## Events
@@ -65,6 +65,10 @@ OpenDigger community also open to inter-community cooperation events, like conte
 ### GitHub Event Log
 
 We use [GHArchive](https://www.gharchive.org/) as our data source for GitHub event logs and the data service is provided by [clickhouse](https://clickhouse.tech/) cluster cloud service. For data details, please check the [data](https://github.com/X-lab2017/open-digger/blob/master/docs/data.md) docs.
+
+### Labeled Data
+
+We are collecting labeled data for more deeper analysis. You can view the corresponding data in the `labeled_data` folder. For more details, please check [labeled_data](labeled_data/README.md) docs.
 
 ### Sample Data Usage
 
