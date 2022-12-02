@@ -324,7 +324,7 @@ const task: Task = {
       groupTimeRange: 'month', limitOption: 'each',
     });
     console.log(`Get chinese user month openrank data done, count=${chineseUserMonthOpenrankData.length}`);
-    const chineseUserMonthOpenrankMap = rankData(chineseUserMonthOpenrankData!, allMonthes, (item, _, index) => item.activity[index], item => { return { name: item.name, id: item.id }; });
+    const chineseUserMonthOpenrankMap = rankData(chineseUserMonthOpenrankData!, allMonthes, (item, _, index) => item.openrank[index], item => { return { name: item.name, id: item.id }; });
     for (const k of chineseUserMonthOpenrankMap.keys()) {
       chineseUserMonthOpenrankMap.set(k, chineseUserMonthOpenrankMap.get(k)!.filter(i => i.value > 0));
     }
@@ -337,7 +337,7 @@ const task: Task = {
       groupTimeRange: 'year', limitOption: 'each',
     });
     console.log(`Get chinese user year openrank data done, count=${chineseUserYearOpenrankData.length}`);
-    const chineseUserYearOpenrankMap = rankData(chineseUserYearOpenrankData!, allMonthes, (item, _, index) => item.activity[index], item => { return { name: item.name, id: item.id }; });
+    const chineseUserYearOpenrankMap = rankData(chineseUserYearOpenrankData!, allYears, (item, _, index) => item.openrank[index], item => { return { name: item.name, id: item.id }; });
     for (const k of chineseUserYearOpenrankMap.keys()) {
       chineseUserYearOpenrankMap.set(k, chineseUserYearOpenrankMap.get(k)!.filter(i => i.value > 0));
     }
@@ -352,7 +352,7 @@ const task: Task = {
       groupTimeRange: 'month', whereClause: 'actor_id IN (SELECT id FROM github_log.export_user)',
     });
     console.log(`Get global user month openrank data done, count=${globalUserMonthOpenrankData.length}`);
-    const globalUserMonthOpenrankMap = rankData(globalUserMonthOpenrankData!, allMonthes, (item, _, index) => item.activity[index], item => { return { name: item.name, id: item.id }; });
+    const globalUserMonthOpenrankMap = rankData(globalUserMonthOpenrankData!, allMonthes, (item, _, index) => item.openrank[index], item => { return { name: item.name, id: item.id }; });
     for (const k of globalUserMonthOpenrankMap.keys()) {
       globalUserMonthOpenrankMap.set(k, globalUserMonthOpenrankMap.get(k)!.filter(i => i.value > 0));
     }
@@ -364,7 +364,7 @@ const task: Task = {
       groupTimeRange: 'year', whereClause: 'actor_id IN (SELECT id FROM github_log.export_user)',
     });
     console.log(`Get global user year openrank data done, count=${globalUserYearOpenrankData.length}`);
-    const globalUserYearOpenrankMap = rankData(globalUserYearOpenrankData!, allMonthes, (item, _, index) => item.activity[index], item => { return { name: item.name, id: item.id }; });
+    const globalUserYearOpenrankMap = rankData(globalUserYearOpenrankData!, allYears, (item, _, index) => item.openrank[index], item => { return { name: item.name, id: item.id }; });
     for (const k of globalUserYearOpenrankMap.keys()) {
       globalUserYearOpenrankMap.set(k, globalUserYearOpenrankMap.get(k)!.filter(i => i.value > 0));
     }
@@ -380,7 +380,7 @@ const task: Task = {
       groupTimeRange: 'month', limitOption: 'each',
     });
     console.log(`Get chinese repo month openrank data done, count=${chineseRepoMonthOpenrankData.length}`);
-    const chineseRepoMonthOpenrankMap = rankData(chineseRepoMonthOpenrankData!, allMonthes, (item, _, index) => item.activity[index], item => { return { name: item.name }; });
+    const chineseRepoMonthOpenrankMap = rankData(chineseRepoMonthOpenrankData!, allMonthes, (item, _, index) => item.openrank[index], item => { return { name: item.name }; });
     for (const k of chineseRepoMonthOpenrankMap.keys()) {
       chineseRepoMonthOpenrankMap.set(k, chineseRepoMonthOpenrankMap.get(k)!.filter(i => i.value > 0));
     }
@@ -393,7 +393,7 @@ const task: Task = {
       groupTimeRange: 'year', limitOption: 'each',
     });
     console.log(`Get chinese repo year openrank data done, count=${chineseRepoYearOpenrankData.length}`);
-    const chineseRepoYearOpenrankMap = rankData(chineseRepoYearOpenrankData!, allMonthes, (item, _, index) => item.activity[index], item => { return { name: item.name }; });
+    const chineseRepoYearOpenrankMap = rankData(chineseRepoYearOpenrankData!, allYears, (item, _, index) => item.openrank[index], item => { return { name: item.name }; });
     for (const k of chineseRepoYearOpenrankMap.keys()) {
       chineseRepoYearOpenrankMap.set(k, chineseRepoYearOpenrankMap.get(k)!.filter(i => i.value > 0));
     }
@@ -409,7 +409,7 @@ const task: Task = {
       groupTimeRange: 'month', groupBy: 'Company',
     });
     console.log(`Get chinese company repo month openrank data done, count=${chineseCompanyRepoMonthOpenrankData.length}`);
-    const chineseCompanyRepoMonthOpenrankMap = rankData(chineseCompanyRepoMonthOpenrankData!, allMonthes, (item, _, index) => item.activity[index], item => { return { name: item.name }; });
+    const chineseCompanyRepoMonthOpenrankMap = rankData(chineseCompanyRepoMonthOpenrankData!, allMonthes, (item, _, index) => item.openrank[index], item => { return { name: item.name }; });
     for (const k of chineseCompanyRepoMonthOpenrankMap.keys()) {
       chineseCompanyRepoMonthOpenrankMap.set(k, chineseCompanyRepoMonthOpenrankMap.get(k)!.filter(i => i.value > 0));
     }
@@ -422,7 +422,7 @@ const task: Task = {
       groupTimeRange: 'year', groupBy: 'Company',
     });
     console.log(`Get chinese company repo year openrank data done, count=${chineseCompanyRepoYearOpenrankData.length}`);
-    const chineseCompanyRepoYearOpenrankMap = rankData(chineseCompanyRepoYearOpenrankData!, allMonthes, (item, _, index) => item.activity[index], item => { return { name: item.name }; });
+    const chineseCompanyRepoYearOpenrankMap = rankData(chineseCompanyRepoYearOpenrankData!, allYears, (item, _, index) => item.openrank[index], item => { return { name: item.name }; });
     for (const k of chineseCompanyRepoYearOpenrankMap.keys()) {
       chineseCompanyRepoYearOpenrankMap.set(k, chineseCompanyRepoYearOpenrankMap.get(k)!.filter(i => i.value > 0));
     }
@@ -437,7 +437,7 @@ const task: Task = {
       groupTimeRange: 'month', whereClause: 'repo_id IN (SELECT id FROM github_log.export_repo)',
     });
     console.log(`Get global repo month openrank data done, count=${globalRepoMonthOpenrankData.length}`);
-    const globalRepoMonthOpenrankMap = rankData(globalRepoMonthOpenrankData!, allMonthes, (item, _, index) => item.activity[index], item => { return { name: item.name }; });
+    const globalRepoMonthOpenrankMap = rankData(globalRepoMonthOpenrankData!, allMonthes, (item, _, index) => item.openrank[index], item => { return { name: item.name }; });
     for (const k of globalRepoMonthOpenrankMap.keys()) {
       globalRepoMonthOpenrankMap.set(k, globalRepoMonthOpenrankMap.get(k)!.filter(i => i.value > 0));
     }
@@ -445,11 +445,11 @@ const task: Task = {
     // by year
     const globalRepoYearOpenrankData = await getRepoOpenrank({
       startYear, startMonth, endYear, endMonth,
-      order: 'DESC', limit: -1, precision: 2, limitOption: 'each',
+      order: 'DESC', limit, precision: 2, limitOption: 'each',
       groupTimeRange: 'year', whereClause: 'repo_id IN (SELECT id FROM github_log.export_repo)',
     });
     console.log(`Get global repo year openrank data done, count=${globalRepoYearOpenrankData.length}`);
-    const globalRepoYearOpenrankMap = rankData(globalRepoYearOpenrankData!, allMonthes, (item, _, index) => item.activity[index], item => { return { name: item.name }; });
+    const globalRepoYearOpenrankMap = rankData(globalRepoYearOpenrankData!, allYears, (item, _, index) => item.openrank[index], item => { return { name: item.name }; });
     for (const k of globalRepoYearOpenrankMap.keys()) {
       globalRepoYearOpenrankMap.set(k, globalRepoYearOpenrankMap.get(k)!.filter(i => i.value > 0));
     }
@@ -461,11 +461,11 @@ const task: Task = {
     const globalCompanyRepoMonthOpenrankData = await getRepoOpenrank({
       labelUnion: ['Company'],
       startYear, startMonth, endYear, endMonth,
-      order: 'DESC', limit, precision: 2, limitOption: 'each',
+      order: 'DESC', limit: -1, precision: 2, limitOption: 'each',
       groupTimeRange: 'month', groupBy: 'Company',
     });
     console.log(`Get global company repo month openrank data done, count=${globalCompanyRepoMonthOpenrankData.length}`);
-    const globalCompanyRepoMonthOpenrankMap = rankData(globalCompanyRepoMonthOpenrankData!, allMonthes, (item, _, index) => item.activity[index], item => { return { name: item.name }; });
+    const globalCompanyRepoMonthOpenrankMap = rankData(globalCompanyRepoMonthOpenrankData!, allMonthes, (item, _, index) => item.openrank[index], item => { return { name: item.name }; });
     for (const k of globalCompanyRepoMonthOpenrankMap.keys()) {
       globalCompanyRepoMonthOpenrankMap.set(k, globalCompanyRepoMonthOpenrankMap.get(k)!.filter(i => i.value > 0));
     }
@@ -478,7 +478,7 @@ const task: Task = {
       groupTimeRange: 'year', groupBy: 'Company',
     });
     console.log(`Get global company repo year openrank data done, count=${globalCompanyRepoYearOpenrankData.length}`);
-    const globalCompanyRepoYearOpenrankMap = rankData(globalCompanyRepoYearOpenrankData!, allMonthes, (item, _, index) => item.activity[index], item => { return { name: item.name }; });
+    const globalCompanyRepoYearOpenrankMap = rankData(globalCompanyRepoYearOpenrankData!, allYears, (item, _, index) => item.openrank[index], item => { return { name: item.name }; });
     for (const k of globalCompanyRepoYearOpenrankMap.keys()) {
       globalCompanyRepoYearOpenrankMap.set(k, globalCompanyRepoYearOpenrankMap.get(k)!.filter(i => i.value > 0));
     }
