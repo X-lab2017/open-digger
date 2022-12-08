@@ -24,7 +24,7 @@ FROM
   SELECT
     ${getGroupTimeAndIdClauseForClickhouse(config, 'repo')},
     COUNT() AS count
-  FROM github_log.events
+  FROM gh_events
   WHERE ${whereClauses.join(' AND ')}
   GROUP BY id, time
   ${config.limitOption === 'each' && config.limit > 0 ? 
@@ -33,8 +33,7 @@ FROM
 )
 GROUP BY id
 ${config.order ? `ORDER BY count[-1] ${config.order}` : ''}
-${config.limitOption === 'all' && config.limit > 0 ? `LIMIT ${config.limit}` : ''}
-FORMAT JSONCompact`;
+${config.limitOption === 'all' && config.limit > 0 ? `LIMIT ${config.limit}` : ''}`;
 
   const result: any = await clickhouse.query(sql);
   return result.map(row => {
@@ -64,7 +63,7 @@ FROM
   SELECT
     ${getGroupTimeAndIdClauseForClickhouse(config, 'repo')},
     COUNT() AS count
-  FROM github_log.events
+  FROM gh_events
   WHERE ${whereClauses.join(' AND ')}
   GROUP BY id, time
   ${config.limitOption === 'each' && config.limit > 0 ? 
@@ -73,8 +72,7 @@ FROM
 )
 GROUP BY id
 ${config.order ? `ORDER BY count[-1] ${config.order}` : ''}
-${config.limitOption === 'all' && config.limit > 0 ? `LIMIT ${config.limit}` : ''}
-FORMAT JSONCompact`;
+${config.limitOption === 'all' && config.limit > 0 ? `LIMIT ${config.limit}` : ''}`;
 
   const result: any = await clickhouse.query(sql);
   return result.map(row => {
@@ -104,7 +102,7 @@ FROM
   SELECT
     ${getGroupTimeAndIdClauseForClickhouse(config, 'repo')},
     COUNT(DISTINCT actor_id) AS count
-  FROM github_log.events
+  FROM gh_events
   WHERE ${whereClauses.join(' AND ')}
   GROUP BY id, time
   ${config.limitOption === 'each' && config.limit > 0 ? 
@@ -113,8 +111,7 @@ FROM
 )
 GROUP BY id
 ${config.order ? `ORDER BY count[-1] ${config.order}` : ''}
-${config.limitOption === 'all' && config.limit > 0 ? `LIMIT ${config.limit}` : ''}
-FORMAT JSONCompact`;
+${config.limitOption === 'all' && config.limit > 0 ? `LIMIT ${config.limit}` : ''}`;
 
   const result: any = await clickhouse.query(sql);
   return result.map(row => {

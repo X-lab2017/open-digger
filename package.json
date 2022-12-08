@@ -30,9 +30,8 @@
   },
   "homepage": "https://github.com/X-lab2017/open-digger#readme",
   "dependencies": {
-    "@apla/clickhouse": "^1.6.4",
+    "@clickhouse/client": "0.0.10",
     "@octokit/core": "^3.6.0",
-    "ali-oss": "^6.17.1",
     "dateformat": "^4.5.1",
     "ijavascript-plotly": "0.0.1",
     "js-yaml": "^4.1.0",
@@ -44,8 +43,7 @@
     "pope": "^3.0.0",
     "request": "^2.88.2",
     "require-from-string": "^2.0.2",
-    "tslib": "^2.2.0",
-    "typescript": "^4.2.4"
+    "tslib": "^2.4.1"
   },
   "type": "commonjs",
   "devDependencies": {
@@ -54,6 +52,9 @@
     "@types/lodash": "^4.14.178",
     "@types/node": "^14.14.37",
     "@types/node-cron": "^3.0.1",
-    "@types/request": "^2.48.5"
+    "@types/request": "^2.48.5",
+    "typescript": "^4.9.3",
+    "github-data-cat": "^1.1.4",
+    "@octokit/rest": "^19.0.5"
   }
 }

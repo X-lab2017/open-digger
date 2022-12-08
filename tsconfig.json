@@ -24,7 +24,6 @@
     "esModuleInterop": true,
     "outDir": "./lib"
   },
-  "includes": [
-    "src"
-  ]
+  "include": ["src"],
+  "exclude": ["node_modules"]
 }

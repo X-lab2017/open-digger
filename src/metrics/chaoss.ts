@@ -27,7 +27,7 @@ FROM
   SELECT
     ${getGroupTimeAndIdClauseForClickhouse(config, 'repo')},
     COUNT() AS count
-  FROM github_log.events
+  FROM gh_events
   WHERE ${whereClauses.join(' AND ')}
   GROUP BY id, time
   ${config.limitOption === 'each' && config.limit > 0 ? 
@@ -36,8 +36,7 @@ FROM
 )
 GROUP BY id
 ${config.order ? `ORDER BY count[-1] ${config.order}` : ''}
-${config.limitOption === 'all' && config.limit > 0 ? `LIMIT ${config.limit}` : ''}
-FORMAT JSONCompact`;
+${config.limitOption === 'all' && config.limit > 0 ? `LIMIT ${config.limit}` : ''}`;
 
   const result: any = await clickhouse.query(sql);
   return result.map(row => {
@@ -72,7 +71,7 @@ FROM
   SELECT
     ${getGroupTimeAndIdClauseForClickhouse(config, 'repo')},
     COUNT(arrayJoin(${config.options?.messageFilter ? `arrayFilter(x -> match(x, '${config.options.messageFilter}'), push_commits.message)` : 'push_commits.message' })) AS count
-  FROM github_log.events
+  FROM gh_events
   WHERE ${whereClauses.join(' AND ')}
   GROUP BY id, time
   ${config.limitOption === 'each' && config.limit > 0 ? 
@@ -81,8 +80,7 @@ FROM
 )
 GROUP BY id
 ${config.order ? `ORDER BY commits_count[-1] ${config.order}` : ''}
-${config.limitOption === 'all' && config.limit > 0 ? `LIMIT ${config.limit}` : ''}
-FORMAT JSONCompact`;
+${config.limitOption === 'all' && config.limit > 0 ? `LIMIT ${config.limit}` : ''}`;
 
   const result: any = await clickhouse.query(sql);
   return result.map(row => {
@@ -129,7 +127,7 @@ FROM
           minus(additions,deletions) AS lines
           ` }
         })()}
-    FROM github_log.events
+    FROM gh_events
     WHERE ${whereClauses.join(' AND ')}
     GROUP BY id, time
     ${config.limitOption === 'each' && config.limit > 0 ? 
@@ -138,8 +136,7 @@ FROM
   )
   GROUP BY id
   ${config.order ? `ORDER BY code_change_lines[-1] ${config.order}` : ''}
-  ${config.limitOption === 'all' && config.limit > 0 ? `LIMIT ${config.limit}` : ''}
-  FORMAT JSONCompact`;
+  ${config.limitOption === 'all' && config.limit > 0 ? `LIMIT ${config.limit}` : ''}`;
   
   const result: any = await clickhouse.query(sql);
     return result.map(row => {
@@ -171,7 +168,7 @@ FROM
   SELECT
     ${getGroupTimeAndIdClauseForClickhouse(config, 'repo')},
     COUNT() AS count
-  FROM github_log.events
+  FROM gh_events
   WHERE ${whereClauses.join(' AND ')}
   GROUP BY id, time
   ${config.limitOption === 'each' && config.limit > 0 ? 
@@ -180,8 +177,7 @@ FROM
 )
 GROUP BY id
 ${config.order ? `ORDER BY issues_new_count[-1] ${config.order}` : ''}
-${config.limitOption === 'all' && config.limit > 0 ? `LIMIT ${config.limit}` : ''}
-FORMAT JSONCompact`;
+${config.limitOption === 'all' && config.limit > 0 ? `LIMIT ${config.limit}` : ''}`;
 
   const result: any = await clickhouse.query(sql);
   return result.map(row => {
@@ -214,7 +210,7 @@ FROM
   SELECT
     ${getGroupTimeAndIdClauseForClickhouse(config, 'repo')},
     COUNT() AS count
-  FROM github_log.events
+  FROM gh_events
   WHERE ${whereClauses.join(' AND ')}
   GROUP BY id, time
   ${config.limitOption === 'each' && config.limit > 0 ? 
@@ -223,8 +219,7 @@ FROM
 )
 GROUP BY id
 ${config.order ? `ORDER BY issues_close_count[-1] ${config.order}` : ''}
-${config.limitOption === 'all' && config.limit > 0 ? `LIMIT ${config.limit}` : ''}
-FORMAT JSONCompact`;
+${config.limitOption === 'all' && config.limit > 0 ? `LIMIT ${config.limit}` : ''}`;
 
   const result: any = await clickhouse.query(sql);
   return result.map(row => {
@@ -279,7 +274,7 @@ FROM
       argMaxIf(action, created_at, action IN ('opened', 'closed' , 'reopened')) AS last_action,
       argMax(issue_created_at,created_at) AS opened_at,
       maxIf(created_at, action = 'closed') AS closed_at
-    FROM github_log.events
+    FROM gh_events
     WHERE ${whereClauses.join(' AND ')}
     GROUP BY repo_id, org_id, issue_number
     HAVING ${byCol} >= toDate('${config.startYear}-${config.startMonth}-1') AND ${byCol} < toDate('${endDate.getFullYear()}-${endDate.getMonth() + 1}-1') AND last_action='closed'
@@ -291,8 +286,7 @@ FROM
 )
 GROUP BY id
 ${config.order ? `ORDER BY resolution_duration[-1] ${config.order}` : ''}
-${config.limitOption === 'all' && config.limit > 0 ? `LIMIT ${config.limit}` : ''}
-FORMAT JSONCompact`;
+${config.limitOption === 'all' && config.limit > 0 ? `LIMIT ${config.limit}` : ''}`;
 
   const result: any = await clickhouse.query(sql);
   return result.map(row => {
@@ -388,7 +382,7 @@ FROM
   SELECT
     ${getGroupTimeAndIdClauseForClickhouse(config, 'repo')},
     COUNT() AS count
-  FROM github_log.events
+  FROM gh_events
   WHERE ${whereClauses.join(' AND ')}
   GROUP BY id, time
   ${config.limitOption === 'each' && config.limit > 0 ? 
@@ -397,8 +391,7 @@ FROM
 )
 GROUP BY id
 ${config.order ? `ORDER BY change_requests_accepted[-1] ${config.order}` : ''}
-${config.limitOption === 'all' && config.limit > 0 ? `LIMIT ${config.limit}` : ''}
-FORMAT JSONCompact`;
+${config.limitOption === 'all' && config.limit > 0 ? `LIMIT ${config.limit}` : ''}`;
 
   const result: any = await clickhouse.query(sql);
   return result.map(row => {
@@ -431,7 +424,7 @@ FROM
   SELECT
     ${getGroupTimeAndIdClauseForClickhouse(config, 'repo')},
     COUNT() AS count
-  FROM github_log.events
+  FROM gh_events
   WHERE ${whereClauses.join(' AND ')}
   GROUP BY id, time
   ${config.limitOption === 'each' && config.limit > 0 ? 
@@ -440,8 +433,7 @@ FROM
 )
 GROUP BY id
 ${config.order ? `ORDER BY change_requests_declined[-1] ${config.order}` : ''}
-${config.limitOption === 'all' && config.limit > 0 ? `LIMIT ${config.limit}` : ''}
-FORMAT JSONCompact`;
+${config.limitOption === 'all' && config.limit > 0 ? `LIMIT ${config.limit}` : ''}`;
 
   const result: any = await clickhouse.query(sql);
   return result.map(row => {
@@ -496,7 +488,7 @@ FROM
       argMaxIf(action, created_at, action IN ('opened', 'closed' , 'reopened')) AS last_action,
       argMax(issue_created_at,created_at) AS opened_at,
       maxIf(created_at, action = 'closed') AS closed_at
-    FROM github_log.events
+    FROM gh_events
     WHERE ${whereClauses.join(' AND ')}
     GROUP BY repo_id, org_id, issue_number
     HAVING ${byCol} >= toDate('${config.startYear}-${config.startMonth}-1') AND ${byCol} < toDate('${endDate.getFullYear()}-${endDate.getMonth() + 1}-1') AND last_action='closed'
@@ -506,8 +498,7 @@ FROM
   ${config.limit > 0 ? `LIMIT ${config.limit} BY time` : ''}
 )
 GROUP BY id
-${config.order ? `ORDER BY resolution_duration[-1] ${config.order}` : ''}
-FORMAT JSONCompact`;
+${config.order ? `ORDER BY resolution_duration[-1] ${config.order}` : ''}`;
 
   const result: any = await clickhouse.query(sql);
   return result.map(row => {
@@ -538,7 +529,7 @@ FROM
   SELECT
     ${getGroupTimeAndIdClauseForClickhouse(config, 'repo')},
     COUNT() AS count
-  FROM github_log.events
+  FROM gh_events
   WHERE ${whereClauses.join(' AND ')}
   GROUP BY id, time
   ${config.limitOption === 'each' && config.limit > 0 ? 
@@ -547,8 +538,7 @@ FROM
 )
 GROUP BY id
 ${config.order ? `ORDER BY count[-1] ${config.order}` : ''}
-${config.limitOption === 'all' && config.limit > 0 ? `LIMIT ${config.limit}` : ''}
-FORMAT JSONCompact`;
+${config.limitOption === 'all' && config.limit > 0 ? `LIMIT ${config.limit}` : ''}`;
 
   const result: any = await clickhouse.query(sql);
   return result.map(row => {
@@ -578,7 +568,7 @@ FROM
   SELECT
     ${getGroupTimeAndIdClauseForClickhouse(config, 'repo')},
     COUNT() AS count
-  FROM github_log.events
+  FROM gh_events
   WHERE ${whereClauses.join(' AND ')}
   GROUP BY id, time
   ${config.limitOption === 'each' && config.limit > 0 ? 
@@ -587,8 +577,7 @@ FROM
 )
 GROUP BY id
 ${config.order ? `ORDER BY count[-1] ${config.order}` : ''}
-${config.limitOption === 'all' && config.limit > 0 ? `LIMIT ${config.limit}` : ''}
-FORMAT JSONCompact`;
+${config.limitOption === 'all' && config.limit > 0 ? `LIMIT ${config.limit}` : ''}`;
 
   const result: any = await clickhouse.query(sql);
   return result.map(row => {
@@ -662,7 +651,7 @@ FROM
           `
         }
       })()}
-    FROM github_log.events
+    FROM gh_events
     WHERE ${whereClauses.join(' AND ')}
     GROUP BY id, time, ${by === 'commit' ? 'author' : 'actor_id' }
     ${(config.options?.withBot && by !== 'commit') ? '' : "HAVING " + (by === 'activity' ? 'actor_login' : 'author') + " NOT LIKE '%[bot]'"}
@@ -674,8 +663,7 @@ FROM
 )
 GROUP BY id
 ${config.order ? `ORDER BY bus_factor[-1] ${config.order}` : ''}
-${config.limitOption === 'all' && config.limit > 0 ? `LIMIT ${config.limit}` : ''}
-FORMAT JSONCompact`;
+${config.limitOption === 'all' && config.limit > 0 ? `LIMIT ${config.limit}` : ''}`;
 
   const result: any = await clickhouse.query(sql);
   return result.map(row => {
@@ -757,7 +745,7 @@ export const chaossNewContributors = async (config: QueryConfig<NewContributorsO
       }
     })()},
             created_at
-          FROM github_log.events
+          FROM gh_events
           WHERE ${whereClauses.join(' AND ')}
           ${(config.options?.withBot && by !== 'commit') ? '' : "HAVING author NOT LIKE '%[bot]'"}
         )
@@ -771,8 +759,7 @@ export const chaossNewContributors = async (config: QueryConfig<NewContributorsO
   )
   GROUP BY id
   ${config.order ? `ORDER BY new_contributors[-1] ${config.order}` : ''}
-  ${config.limitOption === 'all' && config.limit > 0 ? `LIMIT ${config.limit}` : ''}
-  FORMAT JSONCompact`;
+  ${config.limitOption === 'all' && config.limit > 0 ? `LIMIT ${config.limit}` : ''}`;
 
   const result: any = await clickhouse.query(sql);
   return result.map(row => {

@@ -85,8 +85,8 @@ export const getRepoWhereClauseForClickhouse = async (config: QueryConfig): Prom
   const repoWhereClauseArray: string[] = [];
   if (config.repoNames) {
     // convert repo name to id
-    const sql = `SELECT any(repo_id) AS id FROM github_log.events WHERE repo_name IN [${config.repoNames.map(n => `'${n}'`)}] GROUP BY repo_name`;
-    const repoIds = (await query<any>(sql)).map(r => r.id);
+    const sql = `SELECT any(repo_id) AS id FROM gh_events WHERE repo_name IN [${config.repoNames.map(n => `'${n}'`)}] GROUP BY repo_name`;
+    const repoIds = (await query<any>(sql, { format: 'JSONEachRow' })).map(r => r.id);
     if (config.repoIds) {
       config.repoIds.push(...repoIds);
     } else {
@@ -97,8 +97,8 @@ export const getRepoWhereClauseForClickhouse = async (config: QueryConfig): Prom
 
   if (config.orgNames) {
     // convert org name to id
-    const sql = `SELECT any(org_id) AS id FROM github_log.events WHERE org_login IN [${config.orgNames.map(n => `'${n}'`)}] GROUP BY org_login`;
-    const orgIds = (await query<any>(sql)).map(r => r.id);
+    const sql = `SELECT any(org_id) AS id FROM gh_events WHERE org_login IN [${config.orgNames.map(n => `'${n}'`)}] GROUP BY org_login`;
+    const orgIds = (await query<any>(sql, { format: 'JSONEachRow' })).map(r => r.id);
     if (config.orgIds) {
       config.orgIds.push(...orgIds);
     } else {
@@ -156,8 +156,8 @@ export const getUserWhereClauseForClickhouse = async (config: QueryConfig): Prom
   const userWhereClauseArray: string[] = [];
   if (config.userLogins) {
     // convert user login to id
-    const sql = `SELECT any(actor_id) AS id FROM github_log.events WHERE actor_login IN [${config.userLogins.map(n => `'${n}'`)}] GROUP BY actor_login`;
-    const userIds = (await query<any>(sql)).map(r => r.id);
+    const sql = `SELECT any(actor_id) AS id FROM gh_events WHERE actor_login IN [${config.userLogins.map(n => `'${n}'`)}] GROUP BY actor_login`;
+    const userIds = (await query<any>(sql, { format: 'JSONEachRow' })).map(r => r.id);
     if (config.userIds) {
       config.userIds.push(...userIds);
     } else {
