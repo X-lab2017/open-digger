@@ -306,29 +306,30 @@ FORMAT JSONCompact`;
 };
 
 interface IssueResponseTimeOptions {
-  type: 'avg' | 'median';
-  unit: 'week' | 'day' | 'hour' | 'minute';
+  thresholds: number[];
+  unit: 'month' | 'week' | 'day' | 'hour' | 'minute';
 }
 export const chaossIssueResponseTime = async (config: QueryConfig<IssueResponseTimeOptions>) => {
   config = getMergedConfig(config);
-  const whereClauses: string[] = ["type IN ('IssueCommentEvent','IssuesEvent') AND actor_login NOT LIKE '%[bot]'  "];
+  const whereClauses: string[] = ["type IN ('IssueCommentEvent', 'IssuesEvent') AND actor_login NOT LIKE '%[bot]'  "];
   const repoWhereClause = await getRepoWhereClauseForClickhouse(config);
   if (repoWhereClause) whereClauses.push(repoWhereClause);
   const endDate = new Date(`${config.endYear}-${config.endMonth}-1`);
   endDate.setMonth(config.endMonth);  // find next month  
-  let type = filterEnumType(config.options?.type, ['avg', 'median'], 'avg');
-  let unit = filterEnumType(config.options?.unit, ['week', 'day', 'hour', 'minute'], 'day');
+  let thresholds = config.options?.thresholds ?? [1, 3, 7]; // 3 thredholds will separate the value to 4 ranges
+  let ranges = [...thresholds, -1]; // an array with one more element than threholds
+  let unit = filterEnumType(config.options?.unit, ['month', 'week', 'day', 'hour', 'minute'], 'day');
 
   const sql = `
 SELECT 
  id,
  argMax(name, time) AS name,   
- ${getGroupArrayInsertAtClauseForClickhouse(config, { key: 'issue_response_time', defaultValue: 'NaN' })}
+ ${getGroupArrayInsertAtClauseForClickhouse(config, { key: 'issue_response_time', value: 'response_levels', defaultValue: `[${ranges.map(_ => `0`).join(',')}]`, noPrecision: true })}
 FROM
 (
   SELECT
-   ${getGroupTimeAndIdClauseForClickhouse(config, 'repo', 'issue_created_at')},
-   round(${type}(dateDiff('${unit}',issue_created_at, responsed_at)),${config.precision}) AS issue_response_time
+    ${getGroupTimeAndIdClauseForClickhouse(config, 'repo', 'issue_created_at')},
+    [${ranges.map((_t, i) => `countIf(response_level = ${i})`).join(',')}] AS response_levels
   FROM
   (
     SELECT
@@ -337,21 +338,24 @@ FROM
       org_id,
       argMax(org_login, created_at) AS org_login,
       issue_number,
-      minIf(created_at, action = 'opened' and issue_comments = 0  ) AS issue_created_at,
-      minIf(created_at, action = 'created' and actor_id != issue_author_id ) AS responsed_at
+      minIf(created_at, action = 'opened' AND issue_comments = 0) AS issue_created_at,
+      minIf(created_at, (action = 'created' AND actor_id != issue_author_id) OR (action = 'closed')) AS responded_at,
+      if(responded_at = toDate('1970-01-01'), now(), responded_at) AS first_responded_at,
+      dateDiff('${unit}', issue_created_at, first_responded_at) AS response_time,
+      multiIf(${thresholds.map((t, i) => `response_time <= ${t}, ${i}`)}, ${thresholds.length}) AS response_level
     FROM github_log.events
     WHERE ${whereClauses.join('AND')}
     GROUP BY repo_id, org_id, issue_number
     HAVING issue_created_at >= toDate('${config.startYear}-${config.startMonth}-1') 
-             AND issue_created_at < toDate('${endDate.getFullYear()}-${endDate.getMonth() + 1}-1') 
-              AND responsed_at != toDate('1970-1-1')
+             AND issue_created_at < toDate('${endDate.getFullYear()}-${endDate.getMonth() + 1}-1')
   )
-  GROUP BY id,time
-  ${config.order ? `ORDER BY issue_response_time ${config.order}` : ''}
-  ${config.limit > 0 ? `LIMIT ${config.limit} BY time` : ''}
+  GROUP BY id, time
+  ${config.limitOption === 'each' && config.limit > 0 ? 
+    `${config.order ? `ORDER BY response_levels[1] ${config.order}` : ''} LIMIT ${config.limit} BY time` :
+    ''}
 )
 GROUP BY id
-${config.order ? `ORDER BY issue_response_time[-1] ${config.order}` : ''}
+${config.order ? `ORDER BY issue_response_time[-1][1] ${config.order}` : ''}
 FORMAT JSONCompact`;
 
   const result: any = await clickhouse.query(sql);
