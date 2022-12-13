@@ -2,9 +2,6 @@ name: Database - Native XML
 type: Tech-1
 data:
   github_repo:
-    - 49896881 # repo:marklogic/marklogic-data-hub
-    - 3788366 # repo:openlink/virtuoso-opensource
-    - 2380364 # repo:berkeleydb/libdb
     - 1374129 # repo:BaseXdb/basex
     - 5841618 # repo:sedna/sedna
     - 11695619 # repo:eXist-db/exist

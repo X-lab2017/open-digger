@@ -2,26 +2,25 @@ name: Database - Time Series
 type: Tech-1
 data:
   github_repo:
-    - 60246359 # repo:ClickHouse/ClickHouse
-    - 166515022 # repo:trinodb/trino
-    - 156018 # repo:redis/redis
-    - 108110 # repo:mongodb/mongo
-    - 542714 # repo:ravendb/ravendb
     - 13124802 # repo:influxdata/influxdb
-    - 89848289 # repo:KxSystems/kdb
-    - 6838921 # repo:prometheus/prometheus
     - 4254338 # repo:graphite-project/graphite-web
+    - 6838921 # repo:prometheus/prometheus
     - 84240850 # repo:timescale/timescaledb
-    - 6358188 # repo:apache/druid
     - 5761553 # repo:oetiker/rrdtool-1.x
     - 865412 # repo:OpenTSDB/opentsdb
-    - 52420005 # repo:griddb/griddb
-    - 8039659 # repo:kairosdb/kairosdb
-    - 19257422 # repo:questdb/questdb
-    - 150954997 # repo:VictoriaMetrics/VictoriaMetrics
     - 196353673 # repo:taosdata/TDengine
-    - 59412136 # repo:basho-labs/Riak-TS-JDBC-Driver
+    - 52420005 # repo:griddb/griddb
+    - questdb/questd # not found
+    - 150954997 # repo:VictoriaMetrics/VictoriaMetrics
+    - 8039659 # repo:kairosdb/kairosdb
     - 61153677 # repo:m3db/m3
     - 158975124 # repo:apache/iotdb
+    - 59412136 # repo:basho-labs/Riak-TS-JDBC-Driver
+    - 36483902 # repo:spotify/heroic
+    - 55093657 # repo:SiriDB/siridb-server
+    - 17705626 # repo:hawkular/hawkular-metrics
     - 10081109 # repo:rackerlabs/blueflood
-    - 79901405 # repo:objectbox/objectbox-java
+    - 15682781 # repo:sitewhere/sitewhere
+    - 50594316 # repo:senx/warp10-platform
+    - 16189524 # repo:OpenNMS/newts
+    - 135549948 # repo:radicalbit/NSDb

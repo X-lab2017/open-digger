@@ -8,36 +8,47 @@ data:
     - 19816070 # repo:MariaDB/server
     - 206444 # repo:apache/hive
     - 54005538 # repo:FirebirdSQL/firebird
-    - 44781140 # repo:greenplum-db/gpdb
+    - 17165658 # repo:apache/spark
+    - 56128733 # repo:apache/impala
     - 5349565 # repo:prestodb/presto
     - 60246359 # repo:ClickHouse/ClickHouse
+    - 44781140 # repo:greenplum-db/gpdb
     - 33745913 # repo:h2database/h2database
     - 16563587 # repo:cockroachdb/cockroach
-    - 101723057 # repo:ryenus/hsqldb
     - 1918497 # repo:apache/derby
-    - 192418550 # repo:oracle/nosql-go-sdk
-    - 20473418 # repo:apache/phoenix
-    - 5683653 # repo:apache/drill
+    - 101723057 # repo:ryenus/hsqldb
+    - 105944401 # repo:yugabyte/yugabyte-db
+    - 166515022 # repo:trinodb/trino
     - 41986369 # repo:pingcap/tidb
     - 30753733 # repo:percona/percona-server
-    - 316690542 # repo:MonetDB/MonetDB
-    - 166515022 # repo:trinodb/trino
-    - 2445970 # repo:VoltDB/voltdb
     - 50874442 # repo:citusdata/citus
+    - 20473418 # repo:apache/phoenix
     - 90541149 # repo:heavyai/heavydb
-    - 114187903 # repo:apple/foundationdb
+    - 316690542 # repo:MonetDB/MonetDB
+    - 6358188 # repo:apache/druid
+    - 2445970 # repo:VoltDB/voltdb
+    - 138754790 # repo:duckdb/duckdb
     - 28738447 # repo:apache/kylin
     - 52080367 # repo:CUBRID/cubrid
-    - 31006158 # repo:apache/ignite
-    - 911980 # repo:tarantool/tarantool
-    - 89848289 # repo:KxSystems/kdb
-    - 84240850 # repo:timescale/timescaledb
-    - 6358188 # repo:apache/druid
-    - 52420005 # repo:griddb/griddb
-    - 19257422 # repo:questdb/questdb
-    - 196353673 # repo:taosdata/TDengine
-    - 3788366 # repo:openlink/virtuoso-opensource
-    - 63110867 # repo:vaticle/typedb
-    - 4407129 # repo:postgis/postgis
-    - 7171304 # repo:illarionov/SpatiaLite
-    - 9074548 # repo:orbisgis/h2gis
+    - 41952293 # repo:apache/hawq
+    - 120703602 # repo:ALTIBASE/altibase
+    - 372536760 # repo:oceanbase/oceanbase
+    - 3556910 # repo:sql-js/sql.js
+    - 276117477 # repo:opengauss-mirror/openGauss-server
+    - 339993112 # repo:matrixorigin/matrixone
+    - 9342529 # repo:crate/crate
+    - 8582237 # repo:splicemachine/spliceengine
+    - 198683574 # repo:dolthub/dolt
+    - 41443810 # repo:Postgres-XL/Postgres-XL
+    - 17971138 # repo:apache/tajo
+    - 36349344 # repo:apache/trafodion
+    - 99919302 # repo:apache/doris
+    - 19961085 # repo:apache/pinot
+    - 91593042 # repo:bloomberg/comdb2
+    - 24650236 # repo:google/lovefield
+    - 14702444 # repo:pipelinedb/pipelinedb
+    - 16109206 # repo:biokoda/actordb
+    - 151762200 # repo:CptTZ/SmallSQL
+    - 129072319 # repo:CovenantSQL/CovenantSQL
+    - 341208515 # repo:edgelesssys/edgelessdb
+    

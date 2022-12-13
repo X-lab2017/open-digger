@@ -2,27 +2,8 @@ name: Database - Spatial
 type: Tech-1
 data:
   github_repo:
-    - 24494032 # repo:mysql/mysql-server
-    - 927442 # repo:postgres/postgres
-    - 19816070 # repo:MariaDB/server
-    - 44781140 # repo:greenplum-db/gpdb
-    - 33745913 # repo:h2database/h2database
-    - 316690542 # repo:MonetDB/MonetDB
-    - 166515022 # repo:trinodb/trino
-    - 90541149 # repo:heavyai/heavydb
-    - 156018 # repo:redis/redis
-    - 124315604 # repo:aerospike/aerospike-server
-    - 911980 # repo:tarantool/tarantool
-    - 108110 # repo:mongodb/mongo
-    - 7948548 # repo:couchbase/couchbase-lite-ios
-    - 206417 # repo:apache/couchdb
-    - 542714 # repo:ravendb/ravendb
-    - 6452529 # repo:rethinkdb/rethinkdb
-    - 13124802 # repo:influxdata/influxdb
-    - 3788366 # repo:openlink/virtuoso-opensource
-    - 507775 # repo:elastic/elasticsearch
-    - 341374920 # repo:apache/solr
     - 4407129 # repo:postgis/postgis
     - 7171304 # repo:illarionov/SpatiaLite
     - 93667206 # repo:geomesa/geomesa-geoserver
     - 9074548 # repo:orbisgis/h2gis
+    
