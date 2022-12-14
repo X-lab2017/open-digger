@@ -511,6 +511,51 @@ ${config.order ? `ORDER BY resolution_duration[-1] ${config.order}` : ''}`;
   });
 };
 
+export const chaossChangeRequestsAcceptedRatio = async (config:QueryConfig) => {
+  config = getMergedConfig(config);
+  const whereClauses: string[] = ["type = 'PullRequestEvent' AND action = 'closed' "];
+  const repoWhereClause = await getRepoWhereClauseForClickhouse(config);
+  if (repoWhereClause) whereClauses.push(repoWhereClause);
+  whereClauses.push(getTimeRangeWhereClauseForClickhouse(config));
+  const sql = `
+SELECT
+  id,
+  argMax(name, time) AS name,
+  ${getGroupArrayInsertAtClauseForClickhouse(config, { key: 'change_requests_accepted_ratio', value: 'ratio' })},
+  ${getGroupArrayInsertAtClauseForClickhouse(config, { key: 'change_requests_accepted', value: 'acount' })},
+  ${getGroupArrayInsertAtClauseForClickhouse(config, { key: 'change_requests_declined', value: 'dcount' })}
+
+FROM
+(
+  SELECT
+    ${getGroupTimeAndIdClauseForClickhouse(config, 'repo')},
+    COUNT() AS count,
+    countIf(pull_merged = 1) AS acount,
+    countIf(pull_merged = 0) AS dcount,
+    round(acount/count,2) AS ratio
+  FROM github_log.events
+  WHERE ${whereClauses.join(' AND ')}
+  GROUP BY id, time
+  ${config.order ? `ORDER BY count ${config.order}` : ''}
+  ${config.limit > 0 ? `LIMIT ${config.limit} BY time` : ''}
+)
+GROUP BY id
+${config.order ? `ORDER BY change_requests_accepted_ratio[-1] ${config.order}` : ''}
+FORMAT JSONCompact`;
+
+  const result: any = await clickhouse.query(sql);
+  return result.map(row => {
+    const [id, name, ratio,acount,dcount] = row;
+    return {
+      id,
+      name,
+      ratio,
+      acount,
+      dcount,
+    }
+  });
+};
+
 // Evolution - Code Development Process Quality
 export const chaossChangeRequests = async (config: QueryConfig) => {
   config = getMergedConfig(config);

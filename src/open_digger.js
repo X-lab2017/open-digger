@@ -41,6 +41,7 @@ const openDigger = {
       chaossNewContributors: func.chaossNewContributors,
       chaossChangeRequestsDuration: func.chaossChangeRequestsDuration,
       chaossIssueResponseTime: func.chaossIssueResponseTime,
+      chaossChangeRequestsAcceptedRatio: func.chaossChangeRequestsAcceptedRatio,
     }
   },
   relation: {
