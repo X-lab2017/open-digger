@@ -537,7 +537,7 @@ FROM
   WHERE ${whereClauses.join(' AND ')}
   GROUP BY id, time
   ${config.limitOption === 'each' && config.limit > 0 ? 
-    `${config.order ? `ORDER BY count ${config.order}` : ''} LIMIT ${config.limit} BY time` :
+    `${config.order ? `ORDER BY ratio ${config.order}` : ''} LIMIT ${config.limit} BY time` :
     ''}
 )
 GROUP BY id
