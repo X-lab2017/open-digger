@@ -2,29 +2,56 @@ name: Database - Key-value
 type: Tech-1
 data:
   github_repo:
+    - 156018 # repo:redis/redis
+    - 7948548 # repo:couchbase/couchbase-lite-ios
+    - 184981 # repo:memcached/memcached
+    - 3786237 # repo:hazelcast/hazelcast
+    - 11225014 # repo:etcd-io/etcd
+    - 124315604 # repo:aerospike/aerospike-server
+    - 17224514 # repo:ehcache/ehcache3
+    - 31006158 # repo:apache/ignite
+    - 2649214 # repo:arangodb/arangodb
+    - 28449431 # repo:scylladb/scylla
+    - 791522 # repo:basho/riak_kv
+    - 7083240 # repo:orientechnologies/orientdb
+    - 6934395 # repo:facebook/rocksdb
     - 192418550 # repo:oracle/nosql-go-sdk
     - 166515022 # repo:trinodb/trino
-    - 114187903 # repo:apple/foundationdb
-    - 156018 # repo:redis/redis
-    - 184981 # repo:memcached/memcached
-    - 11225014 # repo:etcd-io/etcd
-    - 3786237 # repo:hazelcast/hazelcast
-    - 17224514 # repo:ehcache/ehcache3
-    - 791522 # repo:basho/riak_kv
-    - 124315604 # repo:aerospike/aerospike-server
-    - 31006158 # repo:apache/ignite
-    - 6934395 # repo:facebook/rocksdb
     - 23405758 # repo:google/leveldb
     - 1050944 # repo:infinispan/infinispan
-    - 34406933 # repo:LMDB/lmdb
-    - 34839383 # repo:apache/geode
-    - 911980 # repo:tarantool/tarantool
-    - 7357595 # repo:zopefoundation/ZODB
-    - 28956774 # repo:Alachisoft/NCache
-    - 7948548 # repo:couchbase/couchbase-lite-ios
-    - 2649214 # repo:arangodb/arangodb
-    - 52420005 # repo:griddb/griddb
-    - 7083240 # repo:orientechnologies/orientdb
-    - 81411018 # repo:microsoft/GraphEngine
-    - 28449431 # repo:scylladb/scylla
     - 2380364 # repo:berkeleydb/libdb
+    - 34406933 # repo:LMDB/lmdb
+    - 242776849 # repo:oracle/coherence
+    - 170496871 # repo:gridgain/gridgain
+    - 34839383 # repo:apache/geode
+    - 114187903 # repo:apple/foundationdb
+    - 52420005 # repo:griddb/griddb
+    - 911980 # repo:tarantool/tarantool
+    - 28956774 # repo:Alachisoft/NCache
+    - 7357595 # repo:zopefoundation/ZODB
+    - 1202421 # repo:hibari/hibari
+    - 81411018 # repo:microsoft/GraphEngine
+    - 94593596 # repo:etcd-io/bbolt
+    - 5453989 # repo:jankotek/mapdb
+    - 33605302 # repo:scalaris-team/scalaris
+    - 168712350 # repo:Snapchat/KeyDB
+    - 3502280 # repo:hthetiot/Tokyo-Tyrant
+    - 214605 # repo:voldemort/voldemort
+    - 396867188 # repo:ArcadeData/arcadedb
+    - 462329984 # repo:speedb-io/speedb
+    - 220186120 # repo:codenotary/immudb
+    - 28457976 # repo:AlticeLabsProjects/kyoto
+    - 3114475 # repo:tomp2p/TomP2P
+    - 19296225 # repo:ledisdb/ledisdb
+    - 4712089 # repo:reverbrain/elliptics
+    - 10529222 # repo:rescrv/HyperLevelDB
+    - 31363586 # repo:STSSoft/STSdb4
+    - 320459354 # repo:bytedance/terarkdb
+    - 811881 # repo:cruppstahl/upscaledb
+    - 80087836 # repo:dgraph-io/badger
+    - 3115025 # repo:dlitz/resin
+    - 121126549 # repo:simerplaha/SwayDB
+    - 88422672 # repo:bergdb/bergdb
+    - 33275300 # repo:cachelot/cachelot
+    - 96580430 # repo:datajaguar/jaguardb
+    - 278320002 # repo:estraier/tkrzw

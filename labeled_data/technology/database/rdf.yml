@@ -8,3 +8,10 @@ data:
     - 48451041 # repo:blazegraph/database
     - 49670957 # repo:eclipse/rdf4j
     - 248094 # repo:4store/4store
+    - 31719727 # repo:esarbanis/strabon
+    - 855939 # repo:dajobe/librdf
+    - 198466472 # repo:terminusdb/terminusdb
+    - 754873 # repo:njh/redstore
+    - 16710751 # repo:quoll/mulgara
+    - 1340162 # repo:dydra/dydra
+    - 8335020 # repo:BrightstarDB/BrightstarDB

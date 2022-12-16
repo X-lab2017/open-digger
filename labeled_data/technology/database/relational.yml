@@ -5,39 +5,74 @@ data:
     - 24494032 # repo:mysql/mysql-server
     - 927442 # repo:postgres/postgres
     - 176278485 # repo:sqlite/sqlite
+    - 697976 # repo:twitter-archive/snowflake
     - 19816070 # repo:MariaDB/server
     - 206444 # repo:apache/hive
+    - 419004753 # repo:databricks/dbt-databricks
+    - 4407129 # repo:postgis/postgis
     - 54005538 # repo:FirebirdSQL/firebird
-    - 44781140 # repo:greenplum-db/gpdb
+    - 17165658 # repo:apache/spark
+    - 56128733 # repo:apache/impala
     - 5349565 # repo:prestodb/presto
     - 60246359 # repo:ClickHouse/ClickHouse
+    - 44781140 # repo:greenplum-db/gpdb
     - 33745913 # repo:h2database/h2database
     - 16563587 # repo:cockroachdb/cockroach
-    - 101723057 # repo:ryenus/hsqldb
+    - 89848289 # repo:KxSystems/kdb
+    - 600860 # repo:fosslc/Ingres
+    - 3788366 # repo:openlink/virtuoso-opensource
+    - 31006158 # repo:apache/ignite
     - 1918497 # repo:apache/derby
+    - 101723057 # repo:ryenus/hsqldb
+    - 84240850 # repo:timescale/timescaledb
+    - 105944401 # repo:yugabyte/yugabyte-db
     - 192418550 # repo:oracle/nosql-go-sdk
-    - 20473418 # repo:apache/phoenix
-    - 5683653 # repo:apache/drill
+    - 166515022 # repo:trinodb/trino
     - 41986369 # repo:pingcap/tidb
     - 30753733 # repo:percona/percona-server
-    - 316690542 # repo:MonetDB/MonetDB
-    - 166515022 # repo:trinodb/trino
-    - 2445970 # repo:VoltDB/voltdb
     - 50874442 # repo:citusdata/citus
+    - 20473418 # repo:apache/phoenix
+    - 5683653 # repo:apache/drill
+    - 170496871 # repo:gridgain/gridgain
     - 90541149 # repo:heavyai/heavydb
+    - 316690542 # repo:MonetDB/MonetDB
+    - 6358188 # repo:apache/druid
+    - 7171304 # repo:illarionov/SpatiaLite
+    - 2445970 # repo:VoltDB/voltdb
+    - 196353673 # repo:taosdata/TDengine
     - 114187903 # repo:apple/foundationdb
+    - 52420005 # repo:griddb/griddb
+    - 911980 # repo:tarantool/tarantool
+    - 19257422 # repo:questdb/questdb
+    - 138754790 # repo:duckdb/duckdb
     - 28738447 # repo:apache/kylin
     - 52080367 # repo:CUBRID/cubrid
-    - 31006158 # repo:apache/ignite
-    - 911980 # repo:tarantool/tarantool
-    - 89848289 # repo:KxSystems/kdb
-    - 84240850 # repo:timescale/timescaledb
-    - 6358188 # repo:apache/druid
-    - 52420005 # repo:griddb/griddb
-    - 19257422 # repo:questdb/questdb
-    - 196353673 # repo:taosdata/TDengine
-    - 3788366 # repo:openlink/virtuoso-opensource
+    - 41952293 # repo:apache/hawq
     - 63110867 # repo:vaticle/typedb
-    - 4407129 # repo:postgis/postgis
-    - 7171304 # repo:illarionov/SpatiaLite
+    - 120703602 # repo:ALTIBASE/altibase
+    - 372536760 # repo:oceanbase/oceanbase
+    - 3556910 # repo:sql-js/sql.js
+    - 276117477 # repo:opengauss-mirror/openGauss-server
+    - 339993112 # repo:matrixorigin/matrixone
+    - 9342529 # repo:crate/crate
+    - 8582237 # repo:splicemachine/spliceengine
+    - 198683574 # repo:dolthub/dolt
+    - 41443810 # repo:Postgres-XL/Postgres-XL
+    - 17971138 # repo:apache/tajo
+    - 36349344 # repo:apache/trafodion
+    - 25780780 # repo:AlaSQL/alasql
+    - 99919302 # repo:apache/doris
+    - 19961085 # repo:apache/pinot
+    - 456549280 # repo:ydb-platform/ydb
+    - 91593042 # repo:bloomberg/comdb2
+    - 188354257 # repo:SequoiaDB/SequoiaDB
+    - 24650236 # repo:google/lovefield
+    - 14702444 # repo:pipelinedb/pipelinedb
+    - 40127179 # repo:featurebasedb/featurebase
+    - 220186120 # repo:codenotary/immudb
+    - 16109206 # repo:biokoda/actordb
     - 9074548 # repo:orbisgis/h2gis
+    - 151762200 # repo:CptTZ/SmallSQL
+    - 57401138 # repo:bitnine-oss/agensgraph
+    - 129072319 # repo:CovenantSQL/CovenantSQL
+    - 341208515 # repo:edgelesssys/edgelessdb
