@@ -6,5 +6,8 @@ data:
     - 20089857 # repo:apache/hbase
     - 2524488 # repo:apache/accumulo
     - 28449431 # repo:scylladb/scylla
+    - 105944401 # repo:yugabyte/yugabyte-db
+    - 166515022 # repo:trinodb/trino
+    - 372536760 # repo:oceanbase/oceanbase
     - 41209174 # repo:strapdata/elassandra
     - 191442206 # repo:kashirin-alex/swc-db

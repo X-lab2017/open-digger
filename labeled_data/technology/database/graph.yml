@@ -2,7 +2,13 @@ name: Database - Graph
 type: Tech-1
 data:
   github_repo:
+    - 156018 # repo:redis/redis
+    - 19816070 # repo:MariaDB/server
     - 6650539 # repo:neo4j/neo4j
+    - 3788366 # repo:openlink/virtuoso-opensource
+    - 2649214 # repo:arangodb/arangodb
+    - 7083240 # repo:orientechnologies/orientdb
+    - 542714 # repo:ravendb/ravendb
     - 77385607 # repo:JanusGraph/janusgraph
     - 41349039 # repo:dgraph-io/dgraph
     - 2282376 # repo:apache/giraph
@@ -16,7 +22,10 @@ data:
     - 605999 # repo:twitter-archive/flockdb
     - 305513242 # repo:fluree/db
     - 198466472 # repo:terminusdb/terminusdb
+    - 436658287 # repo:surrealdb/surrealdb
+    - 396867188 # repo:ArcadeData/arcadedb
     - 38727503 # repo:hypergraphdb/hypergraphdb
+    - 34056205 # repo:sachin-sinha/BangDB
     - 73235061 # repo:rayokota/hgraphdb
     - 57401138 # repo:bitnine-oss/agensgraph
-    
+    - 55578752 # repo:stellardb/StellarDB
