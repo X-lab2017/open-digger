@@ -3,7 +3,7 @@ set -e
 
 cd /docker-entrypoint-initdb.d
 
-DB=github_log
+DB=opensource
 LOCKFILE=inited.lock
 
 # check lock file
@@ -24,7 +24,7 @@ else
     clickhouse client -m < /data/table
     echo "Init database done."
     # insert data
-    clickhouse client -q "INSERT INTO $DB.events FORMAT Native" < /data/data
+    clickhouse client -q "INSERT INTO $DB.gh_events FORMAT Native" < /data/data
     echo "Insert data done."
 
     # create lock file
