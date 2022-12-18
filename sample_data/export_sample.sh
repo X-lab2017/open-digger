@@ -33,7 +33,7 @@ fi
 if [ "$need_to_export" -eq 1 ]; then
     # export table schema
     echo "Start to export table schema"
-    $QUERY_REMOTE -q "SHOW CREATE TABLE github_log.events INTO OUTFILE '$data_path/table' FORMAT TabSeparatedRaw;"
+    $QUERY_REMOTE -q "SHOW CREATE TABLE opensource.gh_events INTO OUTFILE '$data_path/table' FORMAT TabSeparatedRaw;"
     echo "Table schema exported"
 
     # export data
