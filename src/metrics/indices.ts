@@ -31,7 +31,7 @@ FROM
   SELECT
     ${getGroupTimeAndIdClauseForClickhouse(config, 'repo')},
     SUM(openrank) AS openrank
-  FROM github_log.repo_openrank
+  FROM gh_repo_openrank
   WHERE ${whereClause.join(' AND ')}
   GROUP BY id, time
   ${config.limitOption === 'each' && config.limit > 0 ? 
@@ -40,8 +40,7 @@ FROM
 )
 GROUP BY id
 ${config.order ? `ORDER BY openrank[-1] ${config.order}` : ''}
-${config.limitOption === 'all' && config.limit > 0 ? `LIMIT ${config.limit}` : ''}
-FORMAT JSONCompact`;
+${config.limitOption === 'all' && config.limit > 0 ? `LIMIT ${config.limit}` : ''}`;
 
   const result: any = await clickhouse.query(sql);
   return result.map(row => {
@@ -72,7 +71,7 @@ FROM
   SELECT
     ${getGroupTimeAndIdClauseForClickhouse(config, 'user')},
     SUM(openrank) AS openrank
-  FROM github_log.user_openrank
+  FROM gh_user_openrank
   WHERE ${whereClause.join(' AND ')}
   GROUP BY id, time
   ${config.limitOption === 'each' && config.limit > 0 ? 
@@ -81,8 +80,7 @@ FROM
 )
 GROUP BY id
 ${config.order ? `ORDER BY openrank[-1] ${config.order}` : ''}
-${config.limitOption === 'all' && config.limit > 0 ? `LIMIT ${config.limit}` : ''}
-FORMAT JSONCompact`;
+${config.limitOption === 'all' && config.limit > 0 ? `LIMIT ${config.limit}` : ''}`;
 
   const result: any = await clickhouse.query(sql);
   return result.map(row => {
@@ -143,7 +141,7 @@ FROM
       repo_id, argMax(repo_name, created_at) AS repo_name,
       org_id, argMax(org_login, created_at) AS org_login,
       ${basicActivitySqlComponent}
-    FROM github_log.events
+    FROM gh_events
     WHERE ${whereClauses.join(' AND ')}
     GROUP BY repo_id, org_id, actor_id, month
     HAVING activity > 0
@@ -155,8 +153,7 @@ FROM
 )
 GROUP BY id
 ${config.order ? `ORDER BY activity[-1] ${config.order}` : ''}
-${config.limitOption === 'all' && config.limit > 0 ? `LIMIT ${config.limit}` : ''}
-FORMAT JSONCompact`;
+${config.limitOption === 'all' && config.limit > 0 ? `LIMIT ${config.limit}` : ''}`;
 
   const result: any = await clickhouse.query(sql);
   return result.map(row => {
@@ -208,7 +205,7 @@ FROM
       toStartOfMonth(created_at) AS month,
       repo_id,
       ${basicActivitySqlComponent}
-    FROM github_log.events
+    FROM gh_events
     WHERE ${whereClauses.join(' AND ')}
     GROUP BY repo_id, actor_id, month
     HAVING activity > 0 ${ withBot ? '' : `AND actor_login NOT LIKE '%[bot]'` }
@@ -220,8 +217,7 @@ FROM
 )
 GROUP BY id
 ${config.order ? `ORDER BY activity[-1] ${config.order}` : ''}
-${config.limitOption === 'all' && config.limit > 0 ? `LIMIT ${config.limit}` : ''}
-FORMAT JSONCompact`;
+${config.limitOption === 'all' && config.limit > 0 ? `LIMIT ${config.limit}` : ''}`;
 
   const result: any = await clickhouse.query(sql);
   return result.map(row => {
@@ -258,7 +254,7 @@ FROM
     countIf(type='WatchEvent') AS stars,
     countIf(type='ForkEvent') AS forks,
     stars + 2 * forks AS attention
-  FROM github_log.events
+  FROM gh_events
   WHERE ${whereClauses.join(' AND ')}
   GROUP BY id, time
   ${config.limitOption === 'each' && config.limit > 0 ? 
@@ -267,8 +263,7 @@ FROM
 )
 GROUP BY id
 ${config.order ? `ORDER BY attention[-1] ${config.order}` : ''}
-${config.limitOption === 'all' && config.limit > 0 ? `LIMIT ${config.limit}` : ''}
-FORMAT JSONCompact`;
+${config.limitOption === 'all' && config.limit > 0 ? `LIMIT ${config.limit}` : ''}`;
 
   const result: any = await clickhouse.query(sql);
   return result.map(row => {

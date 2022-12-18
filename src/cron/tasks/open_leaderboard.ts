@@ -28,6 +28,8 @@ const task: Task = {
       }
     };
 
+    const exportUserTableName = 'gh_export_user', exportRepoTableName = 'gh_export_repo';
+
     // get chinese month actor activity
     const chineseUserMonthActivityData = await getUserActivity({
       labelUnion: [':regions/China'],
@@ -81,7 +83,7 @@ const task: Task = {
     const globalUserMonthActivityData = await getUserActivity({
       startYear, startMonth, endYear, endMonth,
       order: 'DESC', limit, precision: 2, limitOption: 'each',
-      groupTimeRange: 'month', whereClause: 'actor_id IN (SELECT id FROM github_log.export_user)',
+      groupTimeRange: 'month', whereClause: `actor_id IN (SELECT id FROM ${exportUserTableName})`,
     }, false);
     console.log(`Get global user month activity data done, count=${globalUserMonthActivityData.length}`);
     const globalUserMonthActivityMap = rankData(globalUserMonthActivityData!, allMonthes, (item, _, index) => item.activity[index], (item, index) => {
@@ -103,7 +105,7 @@ const task: Task = {
     const globalUserYearActivityData = await getUserActivity({
       startYear, startMonth, endYear, endMonth,
       order: 'DESC', limit, precision: 2, limitOption: 'each',
-      groupTimeRange: 'year', whereClause: 'actor_id IN (SELECT id FROM github_log.export_user)',
+      groupTimeRange: 'year', whereClause: `actor_id IN (SELECT id FROM ${exportUserTableName})`,
     }, false);
     console.log(`Get global user year activity data done, count=${globalUserYearActivityData.length}`);
     const globalUserYearActivityMap = rankData(globalUserYearActivityData!, allYears, (item, _, index) => item.activity[index], (item, index) => {
@@ -228,7 +230,7 @@ const task: Task = {
     const globalRepoMonthActivityData = await getRepoActivity({
       startYear, startMonth, endYear, endMonth,
       order: 'DESC', limit, precision: 2, limitOption: 'each',
-      groupTimeRange: 'month', whereClause: 'repo_id IN (SELECT id FROM github_log.export_repo)',
+      groupTimeRange: 'month', whereClause: `repo_id IN (SELECT id FROM ${exportRepoTableName})`,
     });
     console.log(`Get global repo month activity data done, count=${globalRepoMonthActivityData?.length}`);
     const globalRepoMonthActivityMap = rankData(globalRepoMonthActivityData!, allMonthes, (item, _, index) => item.activity[index], (item, index) => {
@@ -249,7 +251,7 @@ const task: Task = {
     const globalRepoYearActivityData = await getRepoActivity({
       startYear, startMonth, endYear, endMonth,
       order: 'DESC', limit, precision: 2, limitOption: 'each',
-      groupTimeRange: 'year', whereClause: 'repo_id IN (SELECT id FROM github_log.export_repo)',
+      groupTimeRange: 'year', whereClause: `repo_id IN (SELECT id FROM ${exportRepoTableName})`,
     });
     console.log(`Get global repo year activity data done, count=${globalRepoYearActivityData?.length}`);
     const globalRepoYearActivityMap = rankData(globalRepoYearActivityData!, allYears, (item, _, index) => item.activity[index], (item, index) => {
@@ -349,7 +351,7 @@ const task: Task = {
     const globalUserMonthOpenrankData = await getUserOpenrank({
       startYear, startMonth, endYear, endMonth,
       order: 'DESC', limit, precision: 2, limitOption: 'each',
-      groupTimeRange: 'month', whereClause: 'actor_id IN (SELECT id FROM github_log.export_user)',
+      groupTimeRange: 'month', whereClause: `actor_id IN (SELECT id FROM ${exportUserTableName})`,
     });
     console.log(`Get global user month openrank data done, count=${globalUserMonthOpenrankData.length}`);
     const globalUserMonthOpenrankMap = rankData(globalUserMonthOpenrankData!, allMonthes, (item, _, index) => item.openrank[index], item => { return { name: item.name, id: item.id }; });
@@ -361,7 +363,7 @@ const task: Task = {
     const globalUserYearOpenrankData = await getUserOpenrank({
       startYear, startMonth, endYear, endMonth,
       order: 'DESC', limit, precision: 2, limitOption: 'each',
-      groupTimeRange: 'year', whereClause: 'actor_id IN (SELECT id FROM github_log.export_user)',
+      groupTimeRange: 'year', whereClause: `actor_id IN (SELECT id FROM ${exportUserTableName})`,
     });
     console.log(`Get global user year openrank data done, count=${globalUserYearOpenrankData.length}`);
     const globalUserYearOpenrankMap = rankData(globalUserYearOpenrankData!, allYears, (item, _, index) => item.openrank[index], item => { return { name: item.name, id: item.id }; });
@@ -434,7 +436,7 @@ const task: Task = {
     const globalRepoMonthOpenrankData = await getRepoOpenrank({
       startYear, startMonth, endYear, endMonth,
       order: 'DESC', limit, precision: 2, limitOption: 'each',
-      groupTimeRange: 'month', whereClause: 'repo_id IN (SELECT id FROM github_log.export_repo)',
+      groupTimeRange: 'month', whereClause: `repo_id IN (SELECT id FROM ${exportRepoTableName})`,
     });
     console.log(`Get global repo month openrank data done, count=${globalRepoMonthOpenrankData.length}`);
     const globalRepoMonthOpenrankMap = rankData(globalRepoMonthOpenrankData!, allMonthes, (item, _, index) => item.openrank[index], item => { return { name: item.name }; });
@@ -446,7 +448,7 @@ const task: Task = {
     const globalRepoYearOpenrankData = await getRepoOpenrank({
       startYear, startMonth, endYear, endMonth,
       order: 'DESC', limit, precision: 2, limitOption: 'each',
-      groupTimeRange: 'year', whereClause: 'repo_id IN (SELECT id FROM github_log.export_repo)',
+      groupTimeRange: 'year', whereClause: `repo_id IN (SELECT id FROM ${exportRepoTableName})`,
     });
     console.log(`Get global repo year openrank data done, count=${globalRepoYearOpenrankData.length}`);
     const globalRepoYearOpenrankMap = rankData(globalRepoYearOpenrankData!, allYears, (item, _, index) => item.openrank[index], item => { return { name: item.name }; });

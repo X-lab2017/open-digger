@@ -10,12 +10,10 @@ let config = {
   },
   db: {
     clickhouse: {
-      host: process.env.CLICKHOUSE_HOST ?? 'localhost',
-      port: process.env.CLICKHOUSE_PORT ?? '8123',
-      user: process.env.CLICKHOUSE_USER ?? '',
+      host: process.env.CLICKHOUSE_HOST ?? 'http://localhost:8123',
+      username: process.env.CLICKHOUSE_USERNAME ?? '',
       password: process.env.CLICKHOUSE_PASSWORD ?? '',
-      protocol: process.env.CLICKHOUSE_PROTOCAL ?? 'http:',
-      format: process.env.CLICKHOUSE_FORMAT ?? 'JSON',
+      database: process.env.CLICKHOUSE_DATABASE ?? 'opensource',
     },
     neo4j: {
       host: process.env.NEO4J_HOST ?? 'neo4j://localhost',

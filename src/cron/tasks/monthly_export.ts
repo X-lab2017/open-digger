@@ -16,8 +16,8 @@ const task: Task = {
   callback: async () => {
 
     const config = await getConfig();
-    const exportRepoTableName = 'github_log.export_repo';
-    const exportUserTableName = 'github_log.export_user';
+    const exportRepoTableName = 'gh_export_repo';
+    const exportUserTableName = 'gh_export_user';
 
     const needInitExportTable = config.export.needInit;
     const initExportTable = async () => {
@@ -28,20 +28,18 @@ const task: Task = {
       const exportTableQueries: string[] = [
         `CREATE TABLE IF NOT EXISTS ${exportRepoTableName}
   (\`id\` UInt64)
-  ENGINE = MergeTree()
+  ENGINE = ReplacingMergeTree()
   ORDER BY (id)
   SETTINGS index_granularity = 8192`,
         `CREATE TABLE IF NOT EXISTS ${exportUserTableName}
   (\`id\` UInt64)
-  ENGINE = MergeTree()
+  ENGINE = ReplacingMergeTree()
   ORDER BY (id)
   SETTINGS index_granularity = 8192`,
-        `ALTER TABLE ${exportRepoTableName} DELETE WHERE id > 0`,
-        `ALTER TABLE ${exportUserTableName} DELETE WHERE id > 0`,
         `INSERT INTO ${exportRepoTableName}
-  SELECT DISTINCT(repo_id) AS id FROM github_log.repo_openrank WHERE openrank > ${Math.E}`,
+  SELECT DISTINCT(repo_id) AS id FROM gh_repo_openrank WHERE openrank > ${Math.E}`,
         `INSERT INTO ${exportUserTableName}
-  SELECT DISTINCT(actor_id) AS id FROM github_log.user_openrank WHERE openrank > ${Math.E}`,
+  SELECT DISTINCT(actor_id) AS id FROM gh_user_openrank WHERE openrank > ${Math.E}`,
       ];
       for (const q of exportTableQueries) {
         await query(q);
@@ -67,7 +65,7 @@ const task: Task = {
           partitions.push({min: i === 0 ? 1 : quantiles[i - 1], max: quantiles[i] - 1});
         }
         partitions.push({min: quantiles[quantiles.length - 1], max: Number.MAX_SAFE_INTEGER});
-      });
+      }, { format: 'JSONEachRow' });
       return partitions;
     }
 
