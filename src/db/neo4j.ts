@@ -1,4 +1,4 @@
-import neo4j = require('neo4j-driver');
+import neo4j from 'neo4j-driver';
 import parser = require('parse-neo4j');
 import getConfig from '../config';
 
