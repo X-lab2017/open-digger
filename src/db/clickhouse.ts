@@ -9,9 +9,9 @@ async function getClient() {
 }
 
 export async function query<T>(q: string, options: any = {}): Promise<T[]> {
-    const result: T[] = [];
-    await queryStream(q, row => result.push(row), options);
-    return result;
+  const result: T[] = [];
+  await queryStream(q, row => result.push(row), options);
+  return result;
 }
 
 export async function queryStream<T = any>(q: string, onRow: (row: T) => void, options: any = {}): Promise<void> {

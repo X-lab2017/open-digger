@@ -31,7 +31,7 @@ export interface Task {
             console.log(`Start to run task for ${taskFile}`);
             await task.callback(t);
             console.log(`Task ${taskFile} finished.`);
-          } catch(e) {
+          } catch (e) {
             console.log(e);
           }
           resolve();
@@ -42,7 +42,7 @@ export interface Task {
           console.log(`Start to run task for ${taskFile}`);
           await task.callback(new Date());
           console.log(`Task ${taskFile} finished.`);
-        } catch(e) {
+        } catch (e) {
           console.log(e);
         }
       }

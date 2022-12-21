@@ -4,7 +4,8 @@ import {
   getMergedConfig,
   getRepoWhereClauseForClickhouse,
   getTimeRangeWhereClauseForClickhouse,
-  QueryConfig } from "./basic";
+  QueryConfig
+} from "./basic";
 import * as clickhouse from '../db/clickhouse';
 
 export const repoStars = async (config: QueryConfig) => {
@@ -27,9 +28,9 @@ FROM
   FROM gh_events
   WHERE ${whereClauses.join(' AND ')}
   GROUP BY id, time
-  ${config.limitOption === 'each' && config.limit > 0 ? 
-    `${config.order ? `ORDER BY count ${config.order}` : ''} LIMIT ${config.limit} BY time` :
-    ''}
+  ${config.limitOption === 'each' && config.limit > 0 ?
+      `${config.order ? `ORDER BY count ${config.order}` : ''} LIMIT ${config.limit} BY time` :
+      ''}
 )
 GROUP BY id
 ${config.order ? `ORDER BY count[-1] ${config.order}` : ''}
@@ -37,7 +38,7 @@ ${config.limitOption === 'all' && config.limit > 0 ? `LIMIT ${config.limit}` : '
 
   const result: any = await clickhouse.query(sql);
   return result.map(row => {
-    const [ id, name, count ] = row;
+    const [id, name, count] = row;
     return {
       id,
       name,
@@ -66,9 +67,9 @@ FROM
   FROM gh_events
   WHERE ${whereClauses.join(' AND ')}
   GROUP BY id, time
-  ${config.limitOption === 'each' && config.limit > 0 ? 
-    `${config.order ? `ORDER BY count ${config.order}` : ''} LIMIT ${config.limit} BY time` :
-    ''}
+  ${config.limitOption === 'each' && config.limit > 0 ?
+      `${config.order ? `ORDER BY count ${config.order}` : ''} LIMIT ${config.limit} BY time` :
+      ''}
 )
 GROUP BY id
 ${config.order ? `ORDER BY count[-1] ${config.order}` : ''}
@@ -76,7 +77,7 @@ ${config.limitOption === 'all' && config.limit > 0 ? `LIMIT ${config.limit}` : '
 
   const result: any = await clickhouse.query(sql);
   return result.map(row => {
-    const [ id, name, count ] = row;
+    const [id, name, count] = row;
     return {
       id,
       name,
@@ -105,9 +106,9 @@ FROM
   FROM gh_events
   WHERE ${whereClauses.join(' AND ')}
   GROUP BY id, time
-  ${config.limitOption === 'each' && config.limit > 0 ? 
-    `${config.order ? `ORDER BY count ${config.order}` : ''} LIMIT ${config.limit} BY time` :
-    ''}
+  ${config.limitOption === 'each' && config.limit > 0 ?
+      `${config.order ? `ORDER BY count ${config.order}` : ''} LIMIT ${config.limit} BY time` :
+      ''}
 )
 GROUP BY id
 ${config.order ? `ORDER BY count[-1] ${config.order}` : ''}
@@ -115,7 +116,7 @@ ${config.limitOption === 'all' && config.limit > 0 ? `LIMIT ${config.limit}` : '
 
   const result: any = await clickhouse.query(sql);
   return result.map(row => {
-    const [ id, name, count ] = row;
+    const [id, name, count] = row;
     return {
       id,
       name,

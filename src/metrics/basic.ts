@@ -28,13 +28,13 @@ export interface QueryConfig<T = any> {
 
 export const getMergedConfig = (config: any): QueryConfig => {
   const defaultConfig: QueryConfig = {
-      startYear: 2015,
-      startMonth: 1,
-      endYear: new Date().getFullYear(),
-      endMonth: new Date().getMonth(),
-      limit: 10,
-      limitOption: 'all',
-      precision: 2,
+    startYear: 2015,
+    startMonth: 1,
+    endYear: new Date().getFullYear(),
+    endMonth: new Date().getMonth(),
+    limit: 10,
+    limitOption: 'all',
+    precision: 2,
   };
   return merge(defaultConfig, config);
 }
@@ -46,7 +46,7 @@ export const forEveryMonthByConfig = async (config: QueryConfig, func: (y: numbe
 export const forEveryMonth = async (startYear: number, startMonth: number, endYear: number, endMonth: number, func: (y: number, m: number) => Promise<any>) => {
   for (let y = startYear; y <= endYear; y++) {
     for (let m = (y === startYear ? startMonth : 1);
-              m <= (y === endYear ? endMonth : 12); m++) {
+      m <= (y === endYear ? endMonth : 12); m++) {
       await func(y, m);
     }
   }
@@ -234,23 +234,23 @@ export const getTimeRangeWhereClauseForClickhouse = (config: QueryConfig): strin
 export const getLabelGroupConditionClauseForClickhouse = (config: QueryConfig): string => {
   const labelData = getLabelData(config.injectLabelData)?.filter(l => l.type === config.groupBy);
   if (!labelData || labelData.length === 0) throw new Error(`Invalide group by label: ${config.groupBy}`);
-  const idLabelRepoMap = new Map<number, string[]>();
-  const idLabelOrgMap = new Map<number, string[]>();
-  const idLabelUserMap = new Map<number, string[]>();
-  const addToMap = (map: Map<number, string[]>, id: number, label: string) => {
+  const idLabelRepoMap = new Map<number, string[][]>();
+  const idLabelOrgMap = new Map<number, string[][]>();
+  const idLabelUserMap = new Map<number, string[][]>();
+  const addToMap = (map: Map<number, string[][]>, id: number, label: string[]) => {
     if (!map.has(id)) map.set(id, []);
     map.get(id)!.push(label);
   };
 
   labelData.forEach(l => {
-    l.githubOrgs.forEach(id => addToMap(idLabelOrgMap, id, l.name));
-    l.githubRepos.forEach(id => addToMap(idLabelRepoMap, id, l.name));
-    l.githubUsers.forEach(id => addToMap(idLabelUserMap, id, l.name));
+    l.githubOrgs.forEach(id => addToMap(idLabelOrgMap, id, [l.identifier, l.name]));
+    l.githubRepos.forEach(id => addToMap(idLabelRepoMap, id, [l.identifier, l.name]));
+    l.githubUsers.forEach(id => addToMap(idLabelUserMap, id, [l.identifier, l.name]));
   });
 
-  const resultMap = new Map<string, { labels: string[], repoIds: number[], orgIds: number[], userIds: number[] }>();
-  const addToResultMap = (map: Map<string, { labels: string[], repoIds: number[], orgIds: number[], userIds: number[] }>, id: number, labels: string[], type: 'repo' | 'org' | 'user') => {
-    const key = labels.toString();
+  const resultMap = new Map<string, { labels: string[][], repoIds: number[], orgIds: number[], userIds: number[] }>();
+  const addToResultMap = (map: Map<string, { labels: string[][], repoIds: number[], orgIds: number[], userIds: number[] }>, id: number, labels: string[][], type: 'repo' | 'org' | 'user') => {
+    const key = labels[0].toString();
     if (!map.has(key)) map.set(key, { labels, repoIds: [], orgIds: [], userIds: [] });
     if (type === 'repo') map.get(key)!.repoIds.push(id);
     else if (type === 'org') map.get(key)!.orgIds.push(id);
@@ -260,23 +260,31 @@ export const getLabelGroupConditionClauseForClickhouse = (config: QueryConfig): 
   idLabelOrgMap.forEach((labels, id) => addToResultMap(resultMap, id, labels, 'org'));
   idLabelUserMap.forEach((labels, id) => addToResultMap(resultMap, id, labels, 'user'));
 
-  const conditions = Array.from(resultMap.values()).map(v => {
+  const idConditions = Array.from(resultMap.values()).map(v => {
     const c: string[] = [];
     if (v.orgIds.length > 0) c.push(`org_id IN (${v.orgIds.join(',')})`);
     if (v.repoIds.length > 0) c.push(`repo_id IN (${v.repoIds.join(',')})`);
     if (v.userIds.length > 0) c.push(`actor_id IN (${v.userIds.join(',')})`);
-    return `(${c.join(' OR ')}),[${v.labels.map(l => `'${l}'`).join(',')}]`;
+    return `(${c.join(' OR ')}),[${v.labels.map(l => `'${l[0]}'`).join(',')}]`;
   }).join(',');
 
-  return `arrayJoin(multiIf(${conditions}, ['Others']))`;
+  const nameConditions = Array.from(resultMap.values()).map(v => {
+    const c: string[] = [];
+    if (v.orgIds.length > 0) c.push(`org_id IN (${v.orgIds.join(',')})`);
+    if (v.repoIds.length > 0) c.push(`repo_id IN (${v.repoIds.join(',')})`);
+    if (v.userIds.length > 0) c.push(`actor_id IN (${v.userIds.join(',')})`);
+    return `(${c.join(' OR ')}),[${v.labels.map(l => `'${l[1]}'`).join(',')}]`;
+  }).join(',');
+
+  return `arrayJoin(multiIf(${idConditions}, ['Others'])) AS id, argMax(arrayJoin(multiIf(${nameConditions}, ['Others'])), time) AS name`;
 }
 
 export const getGroupArrayInsertAtClauseForClickhouse = (config: QueryConfig, option: { key: string; defaultValue?: string; value?: string; noPrecision?: boolean }): string => {
-  return `groupArrayInsertAt${ option.defaultValue ? `(${option.defaultValue})` : '' }(${ (() => {
+  return `groupArrayInsertAt${option.defaultValue ? `(${option.defaultValue})` : ''}(${(() => {
     const name = option.value ? option.value : option.key;
     if (config.precision > 0 && !option.noPrecision) return `ROUND(${name}, ${config.precision})`;
     return name;
-  })() }, ${(() => {
+  })()}, ${(() => {
     if (!config.groupTimeRange) return '0';
     let startTime = `toDate('${config.startYear}-${config.startMonth}-1')`;
     if (config.groupTimeRange === 'quarter') startTime = `toStartOfQuarter(${startTime})`;
@@ -301,7 +309,7 @@ export const getGroupTimeAndIdClauseForClickhouse = (config: QueryConfig, type: 
     } else if (config.groupBy === 'org') {
       return `org_id AS id, argMax(org_login, time) AS name`;
     } else {  // group by label
-      return `${getLabelGroupConditionClauseForClickhouse(config)} AS id, id AS name`;
+      return getLabelGroupConditionClauseForClickhouse(config);
     }
   })()}`;
 }

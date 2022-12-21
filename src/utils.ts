@@ -40,7 +40,7 @@ export async function waitUntil(func: () => boolean, options?: object): Promise<
   return pWaitFor(func, Object.assign({ interval: 1000 }, options));
 }
 
-interface rankDataResultItem<T> { 
+interface rankDataResultItem<T> {
   item: T;
   rank: number;
   value: number;

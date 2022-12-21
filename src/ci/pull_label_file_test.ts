@@ -77,7 +77,7 @@ interface LabelContent {
         comment = `Parse YAML file format error, please check the file content. e=${e}${EOL}`;
       }
     }
-    
+
     await octokit.request('POST /repos/{owner}/{repo}/issues/{issue_number}/comments', {
       owner,
       repo,
