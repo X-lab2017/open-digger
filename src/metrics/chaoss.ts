@@ -543,7 +543,6 @@ FROM
 GROUP BY id
 ${config.order ? `ORDER BY change_requests_accepted_ratio[-1] ${config.order}` : ''}
 ${config.limitOption === 'all' && config.limit > 0 ? `LIMIT ${config.limit}` : ''}
-FORMAT JSONCompact`;
 
   const result: any = await clickhouse.query(sql);
   return result.map(row => {
