@@ -8,6 +8,7 @@ import { waitFor } from '../../utils';
 import getConfig from '../../config';
 import { chaossBusFactor, chaossChangeRequestReviews, chaossChangeRequests, chaossChangeRequestsAccepted, chaossCodeChangeLines, chaossIssuesClosed, chaossIssuesNew, chaossTechnicalFork } from '../../metrics/chaoss';
 import { repoIssueComments, repoParticipants, repoStars } from '../../metrics/metrics';
+import { getLabelData } from '../../label_data_utils';
 
 const task: Task = {
   cron: '0 0 5 * *',
@@ -21,25 +22,41 @@ const task: Task = {
 
     const needInitExportTable = config.export.needInit;
     const initExportTable = async () => {
+      // export all labeled repos/orgs/users anyway
+      const repos = new Set<number>();
+      const orgs = new Set<number>();
+      const users = new Set<number>();
+      const labelData = getLabelData();
+      labelData.forEach(l => {
+        l.githubRepos.forEach(id => repos.add(id));
+        l.githubOrgs.forEach(id => orgs.add(id));
+        l.githubUsers.forEach(id => users.add(id));
+      });
       // handle export table first
       // - create the table if not exist
-      // - delete all the content of the table
-      // - insert repo and user with openrank > e in any month in history
+      // - insert repo and user with openrank > e in any month in history or in label data
       const exportTableQueries: string[] = [
         `CREATE TABLE IF NOT EXISTS ${exportRepoTableName}
-  (\`id\` UInt64)
-  ENGINE = ReplacingMergeTree()
+  (\`id\` UInt64,
+  \`repo_name\` LowCardinality(String)
+  )
+  ENGINE = ReplacingMergeTree(id)
   ORDER BY (id)
   SETTINGS index_granularity = 8192`,
         `CREATE TABLE IF NOT EXISTS ${exportUserTableName}
-  (\`id\` UInt64)
-  ENGINE = ReplacingMergeTree()
+  (\`id\` UInt64,
+  \`actor_login\` LowCardinality(String)
+  )
+  ENGINE = ReplacingMergeTree(id)
   ORDER BY (id)
   SETTINGS index_granularity = 8192`,
         `INSERT INTO ${exportRepoTableName}
-  SELECT DISTINCT(repo_id) AS id FROM gh_repo_openrank WHERE openrank > ${Math.E}`,
+  SELECT repo_id, argMax(repo_name, created_at) AS repo_name FROM gh_repo_openrank
+  WHERE openrank > ${Math.E} OR repo_id IN (${Array.from(repos).join(',')})
+  OR org_id IN (${Array.from(orgs).join(',')}) GROUP BY repo_id`,
         `INSERT INTO ${exportUserTableName}
-  SELECT DISTINCT(actor_id) AS id FROM gh_user_openrank WHERE openrank > ${Math.E}`,
+  SELECT actor_id AS id, argMax(actor_login, created_at) AS actor_login FROM gh_user_openrank
+  WHERE openrank > ${Math.E} OR actor_id IN (${Array.from(users).join(',')}) GROUP BY actor_id`,
       ];
       for (const q of exportTableQueries) {
         await query(q);
@@ -48,6 +65,7 @@ const task: Task = {
     };
     if (needInitExportTable) {
       await initExportTable();
+      console.log('Init export table done.');
     }
 
     // start to export data for all repos and actors
