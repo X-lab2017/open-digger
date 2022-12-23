@@ -511,7 +511,7 @@ ${config.order ? `ORDER BY resolution_duration[-1] ${config.order}` : ''}`;
   });
 };
 
-export const chaossChangeRequestsAcceptedRatio = async (config:QueryConfig) => {
+export const chaossChangeRequestsAcceptanceRatio = async (config:QueryConfig) => {
   config = getMergedConfig(config);
   const whereClauses: string[] = ["type = 'PullRequestEvent' AND action = 'closed' "];
   const repoWhereClause = await getRepoWhereClauseForClickhouse(config);
@@ -522,18 +522,18 @@ SELECT
   id,
   argMax(name, time) AS name,
   ${getGroupArrayInsertAtClauseForClickhouse(config, { key: 'change_requests_accepted_ratio', value: 'ratio' })},
-  ${getGroupArrayInsertAtClauseForClickhouse(config, { key: 'change_requests_accepted', value: 'acount' })},
-  ${getGroupArrayInsertAtClauseForClickhouse(config, { key: 'change_requests_declined', value: 'dcount' })}
+  ${getGroupArrayInsertAtClauseForClickhouse(config, { key: 'change_requests_accepted', value: 'accepted_count' })},
+  ${getGroupArrayInsertAtClauseForClickhouse(config, { key: 'change_requests_declined', value: 'declined_count' })}
 
 FROM
 (
   SELECT
     ${getGroupTimeAndIdClauseForClickhouse(config, 'repo')},
     COUNT() AS count,
-    countIf(pull_merged = 1) AS acount,
-    countIf(pull_merged = 0) AS dcount,
-    round(acount/count,2) AS ratio
-  FROM github_log.events
+    countIf(pull_merged = 1) AS accepted_count,
+    countIf(pull_merged = 0) AS declined_count,
+    accepted_count/count AS ratio
+  FROM gh_events
   WHERE ${whereClauses.join(' AND ')}
   GROUP BY id, time
   ${config.limitOption === 'each' && config.limit > 0 ? 
@@ -547,13 +547,13 @@ FORMAT JSONCompact`;
 
   const result: any = await clickhouse.query(sql);
   return result.map(row => {
-    const [id, name, ratio,acount,dcount] = row;
+    const [ id, name, ratio, accepted_count, declined_count ] = row;
     return {
       id,
       name,
       ratio,
-      acount,
-      dcount,
+      accepted_count,
+      declined_count,
     }
   });
 };
