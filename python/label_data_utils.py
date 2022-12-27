@@ -109,7 +109,7 @@ def parseItem(item, map_item):
     if item.get('parsed'): return
     if item.get('content').get('type') and item.get('content').get('type') not in supportedTypes:
         raise Exception('Not supported type {}'.format(item.get('content').get('type')))
-    for key in item.get('content').get('data'): #data里是什么数据类型？字典还是列表？
+    for key in item.get('content').get('data'): 
         if not key in supportedKey:
             raise Exception('Not supported element={}, identifier={}').format(key, item.get('identifier'))
         if key == 'github_repo':

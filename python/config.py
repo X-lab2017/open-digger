@@ -13,7 +13,7 @@ config = {
       'password': '',
       'protocol': 'http:',
       'format': 'JSON',
-      'database': 'github_log',
+      'database': 'opensource',
     },
     'neo4j': {
       'host':'neo4j://localhost:7687',
@@ -30,7 +30,7 @@ config = {
   'ci': {
     'token':'',
   }
-};
+}
 def mergeConfig(base_config, local_config):
     for key, val in local_config.items():
             if isinstance(val, dict):

@@ -135,7 +135,7 @@ def getRepoActivity(config):
         countIf(type='PullRequestReviewCommentEvent' AND action='created') AS review_comment, \
         countIf(type='PullRequestEvent' AND action='closed' AND pull_merged=1) AS merged_pull, \
         sqrt({}*issue_comment + {}*open_issue + {}*open_pull + {}*review_comment + {}*merged_pull) AS activity \
-      FROM github_log.events \
+      FROM opensource.gh_events \
       WHERE {} \
       GROUP BY repo_id, org_id, actor_id, month \
       HAVING activity > 0 \
@@ -209,7 +209,7 @@ FROM \
       countIf(type='PullRequestReviewCommentEvent' AND action='created') AS review_comment, \
       countIf(type='PullRequestEvent' AND action='closed' AND pull_merged=1) AS merged_pull, \
       sqrt({}*issue_comment + {}*open_issue + {}*open_pull + {}*review_comment + {}*merged_pull) AS activity \
-    FROM github_log.events \
+    FROM opensource.gh_events \
     WHERE {} \
     GROUP BY repo_id, actor_id, month \
     HAVING activity > 0 {} \

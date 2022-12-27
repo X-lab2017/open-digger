@@ -88,13 +88,13 @@ def getRepoWhereClauseForClickhouse(config):
     if config.get('repoIds'): repoWhereClauseArray.append('repo_id IN {}'.format(config.get('repoIds')))
     if config.get('repoNames'):
       # find id first
-      sql = 'SELECT DISTINCT(repo_id) FROM github_log.events WHERE repo_name IN {}'.format(config.get('repoNames'))
+      sql = 'SELECT DISTINCT(repo_id) FROM opensource.gh_events WHERE repo_name IN {}'.format(config.get('repoNames'))
       ids = clickhouse.query(sql)
       repoWhereClauseArray.append('repo_id IN {}'.format(list(map(lambda i: i[0], ids))))
     if config.get('orgIds'): repoWhereClauseArray.append('org_id IN {}'.format(config.get('orgIds')))
     if config.get('orgNames'):
       # find id first
-      sql = 'SELECT DISTINCT(org_id) FROM github_log.events WHERE org_login IN {}'.format(config.get('orgNames'))
+      sql = 'SELECT DISTINCT(org_id) FROM opensource.gh_events WHERE org_login IN {}'.format(config.get('orgNames'))
       ids = clickhouse.query(sql)
       repoWhereClauseArray.append('org_id IN {}'.format(list(map(lambda i: i[0], ids))))
     if config.get('labelIntersect'):
@@ -134,7 +134,7 @@ def getUserWhereClauseForClickhouse(config):
     if config.get('userIds'): userWhereClauseArray.append('actor_id IN {}'.format(config.get('userIds')))
     if config.get('userLogins'):
       # get id first
-      sql = 'SELECT DISTINCT(actor_id) FROM github_log.events WHERE actor_login IN {}'.format(config.get('userLogins'))
+      sql = 'SELECT DISTINCT(actor_id) FROM opensource.gh_events WHERE actor_login IN {}'.format(config.get('userLogins'))
       ids = clickhouse.query(sql)
       userWhereClauseArray.append('actor_id IN {}'.format(list(map(lambda i: i[0], ids))))
     if config.get('labelIntersect'):
