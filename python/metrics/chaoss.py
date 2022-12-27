@@ -36,7 +36,7 @@ def chaossCodeChangeCommits(config):
     SELECT \
         {}, \
         COUNT(arrayJoin({})) AS count \
-    FROM github_log.events '.format(getGroupTimeAndIdClauseForClickhouse(config, 'repo'), 'arrayFilter(x -> match(x, \'{}\'), push_commits.message)'.format(config.get('options').get('messageFilter')) if config.get('options') and config.get('options').get('messageFilter') else 'push_commits.message' )+ \
+    FROM opensource.gh_events '.format(getGroupTimeAndIdClauseForClickhouse(config, 'repo'), 'arrayFilter(x -> match(x, \'{}\'), push_commits.message)'.format(config.get('options').get('messageFilter')) if config.get('options') and config.get('options').get('messageFilter') else 'push_commits.message' )+ \
     'WHERE {} \
     GROUP BY id, time \
     {} \
@@ -77,7 +77,7 @@ def chaossIssuesNew(config):
     'SELECT \
         {}, \
         COUNT() AS count \
-    FROM github_log.events '.format(getGroupTimeAndIdClauseForClickhouse(config, 'repo')) + \
+    FROM opensource.gh_events '.format(getGroupTimeAndIdClauseForClickhouse(config, 'repo')) + \
     'WHERE {} \
     GROUP BY id, time \
     {} \
@@ -116,7 +116,7 @@ def chaossIssuesClosed(config):
     'SELECT \
         {}, \
         COUNT() AS count \
-    FROM github_log.events \
+    FROM opensource.gh_events \
     WHERE {} \
     GROUP BY id, time \
     {} \
@@ -205,7 +205,7 @@ def chaossBusFactor(config):
         'SELECT \
         {}, \
         {} \
-        FROM github_log.events \
+        FROM opensource.gh_events \
         WHERE {} \
         GROUP BY id, time, {} \
         {} \
@@ -260,7 +260,7 @@ def chaossChangeRequestsAccepted(config: QueryConfig):
     SELECT \
         {}, \
         COUNT() AS count \
-    FROM github_log.events \
+    FROM opensource.gh_events \
     WHERE {} \
     GROUP BY id, time \
     {} \
@@ -307,7 +307,7 @@ def chaossChangeRequestsDeclined(config: QueryConfig):
     SELECT \
         {}, \
         COUNT() AS count \
-    FROM github_log.events \
+    FROM opensource.gh_events \
     WHERE {} \
     GROUP BY id, time \
     {} \
@@ -377,7 +377,7 @@ def chaossIssueResolutionDuration(config):
         argMaxIf(action, created_at, action IN (\'opened\', \'closed\' , \'reopened\')) AS last_action, \
         maxIf(created_at, action = \'opened\') AS opened_at, \
         maxIf(created_at, action = \'closed\') AS closed_at \
-        FROM github_log.events \
+        FROM opensource.gh_events \
         WHERE {} \
         GROUP BY repo_id, org_id, issue_number \
         HAVING {} >= toDate(\'{}-{}-1\') AND {} < toDate(\'{}-{}-1\') AND last_action=\'closed\' \

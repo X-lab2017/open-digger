@@ -30,7 +30,7 @@ def getAttention(config: QueryConfig):
         countIf(type=\'WatchEvent\') AS stars, \
         countIf(type=\'ForkEvent\') AS forks, \
         stars + 2 * forks AS attention \
-    FROM github_log.events \
+    FROM opensource.gh_events \
     WHERE {} \
     GROUP BY id, time \
     {} \
