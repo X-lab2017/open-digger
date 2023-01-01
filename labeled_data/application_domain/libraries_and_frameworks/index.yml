@@ -1,5 +1,5 @@
 name: Libraries and frameworks 
-type: Tech-0 
+type: Domain-0
 data: 
   github_repo: 
     - 11730342 # repo:vuejs/vue
