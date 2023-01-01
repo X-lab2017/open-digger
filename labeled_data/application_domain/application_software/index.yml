@@ -1,5 +1,5 @@
 name: Application software 
-type: Tech-0 
+type: Domain-0
 data: 
   github_repo: 
     - 28457823 # repo:freeCodeCamp/freeCodeCamp

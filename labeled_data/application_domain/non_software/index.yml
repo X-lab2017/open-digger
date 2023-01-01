@@ -1,5 +1,5 @@
 name: Non software 
-type: Tech-0 
+type: Domain-0
 data: 
   github_repo: 
     - 177736533 # repo:996icu/996.ICU
