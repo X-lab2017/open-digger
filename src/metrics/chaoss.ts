@@ -2,7 +2,9 @@ import {
   filterEnumType,
   getGroupArrayInsertAtClauseForClickhouse,
   getGroupTimeAndIdClauseForClickhouse,
+  getInnerOrderAndLimit,
   getMergedConfig,
+  getOutterOrderAndLimit,
   getRepoWhereClauseForClickhouse,
   getTimeRangeWhereClauseForClickhouse,
   QueryConfig
@@ -31,13 +33,10 @@ FROM
   FROM gh_events
   WHERE ${whereClauses.join(' AND ')}
   GROUP BY id, time
-  ${config.limitOption === 'each' && config.limit > 0 ?
-      `${config.order ? `ORDER BY count ${config.order}` : ''} LIMIT ${config.limit} BY time` :
-      ''}
+  ${getInnerOrderAndLimit(config, 'count')}
 )
 GROUP BY id
-${config.order ? `ORDER BY count[-1] ${config.order}` : ''}
-${config.limitOption === 'all' && config.limit > 0 ? `LIMIT ${config.limit}` : ''}`;
+${getOutterOrderAndLimit(config, 'count')}`;
 
   const result: any = await clickhouse.query(sql);
   return result.map(row => {
@@ -75,13 +74,10 @@ FROM
   FROM gh_events
   WHERE ${whereClauses.join(' AND ')}
   GROUP BY id, time
-  ${config.limitOption === 'each' && config.limit > 0 ?
-      `${config.order ? `ORDER BY count ${config.order}` : ''} LIMIT ${config.limit} BY time` :
-      ''}
+  ${getInnerOrderAndLimit(config, 'count')}
 )
 GROUP BY id
-${config.order ? `ORDER BY commits_count[-1] ${config.order}` : ''}
-${config.limitOption === 'all' && config.limit > 0 ? `LIMIT ${config.limit}` : ''}`;
+${getOutterOrderAndLimit(config, 'commits_count')}`;
 
   const result: any = await clickhouse.query(sql);
   return result.map(row => {
@@ -128,16 +124,13 @@ FROM
           minus(additions,deletions) AS lines
           ` }
     })()}
-    FROM gh_events
-    WHERE ${whereClauses.join(' AND ')}
-    GROUP BY id, time
-    ${config.limitOption === 'each' && config.limit > 0 ?
-      `${config.order ? `ORDER BY lines ${config.order}` : ''} LIMIT ${config.limit} BY time` :
-      ''}
-  )
-  GROUP BY id
-  ${config.order ? `ORDER BY code_change_lines[-1] ${config.order}` : ''}
-  ${config.limitOption === 'all' && config.limit > 0 ? `LIMIT ${config.limit}` : ''}`;
+  FROM gh_events
+  WHERE ${whereClauses.join(' AND ')}
+  GROUP BY id, time
+  ${getInnerOrderAndLimit(config, 'lines')}
+)
+GROUP BY id
+${getOutterOrderAndLimit(config, 'code_change_lines')}`;
 
   const result: any = await clickhouse.query(sql);
   return result.map(row => {
@@ -172,13 +165,10 @@ FROM
   FROM gh_events
   WHERE ${whereClauses.join(' AND ')}
   GROUP BY id, time
-  ${config.limitOption === 'each' && config.limit > 0 ?
-      `${config.order ? `ORDER BY count ${config.order}` : ''} LIMIT ${config.limit} BY time` :
-      ''}
+  ${getInnerOrderAndLimit(config, 'count')}
 )
 GROUP BY id
-${config.order ? `ORDER BY issues_new_count[-1] ${config.order}` : ''}
-${config.limitOption === 'all' && config.limit > 0 ? `LIMIT ${config.limit}` : ''}`;
+${getOutterOrderAndLimit(config, 'issues_new_count')}`;
 
   const result: any = await clickhouse.query(sql);
   return result.map(row => {
@@ -214,13 +204,10 @@ FROM
   FROM gh_events
   WHERE ${whereClauses.join(' AND ')}
   GROUP BY id, time
-  ${config.limitOption === 'each' && config.limit > 0 ?
-      `${config.order ? `ORDER BY count ${config.order}` : ''} LIMIT ${config.limit} BY time` :
-      ''}
+  ${getInnerOrderAndLimit(config, 'count')}
 )
 GROUP BY id
-${config.order ? `ORDER BY issues_close_count[-1] ${config.order}` : ''}
-${config.limitOption === 'all' && config.limit > 0 ? `LIMIT ${config.limit}` : ''}`;
+${getOutterOrderAndLimit(config, 'issues_close_count')}`;
 
   const result: any = await clickhouse.query(sql);
   return result.map(row => {
@@ -281,13 +268,10 @@ FROM
     HAVING ${byCol} >= toDate('${config.startYear}-${config.startMonth}-1') AND ${byCol} < toDate('${endDate.getFullYear()}-${endDate.getMonth() + 1}-1') AND last_action='closed'
   )
   GROUP BY id, time
-  ${config.limitOption === 'each' && config.limit > 0 ?
-      `${config.order ? `ORDER BY resolution_duration ${config.order}` : ''} LIMIT ${config.limit} BY time` :
-      ''}
+  ${getInnerOrderAndLimit(config, 'resolution_duration')}
 )
 GROUP BY id
-${config.order ? `ORDER BY resolution_duration[-1] ${config.order}` : ''}
-${config.limitOption === 'all' && config.limit > 0 ? `LIMIT ${config.limit}` : ''}`;
+${getOutterOrderAndLimit(config, 'resolution_duration')}`;
 
   const result: any = await clickhouse.query(sql);
   return result.map(row => {
@@ -345,13 +329,10 @@ FROM
              AND issue_created_at < toDate('${endDate.getFullYear()}-${endDate.getMonth() + 1}-1')
   )
   GROUP BY id, time
-  ${config.limitOption === 'each' && config.limit > 0 ?
-      `${config.order ? `ORDER BY response_levels[1] ${config.order}` : ''} LIMIT ${config.limit} BY time` :
-      ''}
+  ${getInnerOrderAndLimit(config, 'issue_response_time', 1)}
 )
 GROUP BY id
-${config.order ? `ORDER BY issue_response_time[-1][1] ${config.order}` : ''}
-${config.limitOption === 'all' && config.limit > 0 ? `LIMIT ${config.limit}` : ''}`;
+${getOutterOrderAndLimit(config, 'issue_response_time', 1)}`;
 
   const result: any = await clickhouse.query(sql);
   return result.map(row => {
@@ -386,13 +367,10 @@ FROM
   FROM gh_events
   WHERE ${whereClauses.join(' AND ')}
   GROUP BY id, time
-  ${config.limitOption === 'each' && config.limit > 0 ?
-      `${config.order ? `ORDER BY count ${config.order}` : ''} LIMIT ${config.limit} BY time` :
-      ''}
+  ${getInnerOrderAndLimit(config, 'count')}
 )
 GROUP BY id
-${config.order ? `ORDER BY change_requests_accepted[-1] ${config.order}` : ''}
-${config.limitOption === 'all' && config.limit > 0 ? `LIMIT ${config.limit}` : ''}`;
+${getOutterOrderAndLimit(config, 'change_requests_accepted')}`;
 
   const result: any = await clickhouse.query(sql);
   return result.map(row => {
@@ -428,13 +406,10 @@ FROM
   FROM gh_events
   WHERE ${whereClauses.join(' AND ')}
   GROUP BY id, time
-  ${config.limitOption === 'each' && config.limit > 0 ?
-      `${config.order ? `ORDER BY count ${config.order}` : ''} LIMIT ${config.limit} BY time` :
-      ''}
+  ${getInnerOrderAndLimit(config, 'count')}
 )
 GROUP BY id
-${config.order ? `ORDER BY change_requests_declined[-1] ${config.order}` : ''}
-${config.limitOption === 'all' && config.limit > 0 ? `LIMIT ${config.limit}` : ''}`;
+${getOutterOrderAndLimit(config, 'change_requests_declined')}`;
 
   const result: any = await clickhouse.query(sql);
   return result.map(row => {
@@ -495,12 +470,10 @@ FROM
     HAVING ${byCol} >= toDate('${config.startYear}-${config.startMonth}-1') AND ${byCol} < toDate('${endDate.getFullYear()}-${endDate.getMonth() + 1}-1') AND last_action='closed'
   )
   GROUP BY id, time
-  ${config.order ? `ORDER BY resolution_duration ${config.order}` : ''}
-  ${config.limit > 0 ? `LIMIT ${config.limit} BY time` : ''}
+  ${getInnerOrderAndLimit(config, 'resolution_duration')}
 )
 GROUP BY id
-${config.order ? `ORDER BY resolution_duration[-1] ${config.order}` : ''}
-${config.limitOption === 'all' && config.limit > 0 ? `LIMIT ${config.limit}` : ''}`;
+${getOutterOrderAndLimit(config, 'resolution_duration')}`;
 
   const result: any = await clickhouse.query(sql);
   return result.map(row => {
@@ -538,13 +511,10 @@ FROM
   FROM gh_events
   WHERE ${whereClauses.join(' AND ')}
   GROUP BY id, time
-  ${config.limitOption === 'each' && config.limit > 0 ?
-      `${config.order ? `ORDER BY ratio ${config.order}` : ''} LIMIT ${config.limit} BY time` :
-      ''}
+  ${getInnerOrderAndLimit(config, 'ratio')}
 )
 GROUP BY id
-${config.order ? `ORDER BY change_requests_accepted_ratio[-1] ${config.order}` : ''}
-${config.limitOption === 'all' && config.limit > 0 ? `LIMIT ${config.limit}` : ''}`;
+${getOutterOrderAndLimit(config, 'change_requests_accepted_ratio')}`;
 
   const result: any = await clickhouse.query(sql);
   return result.map(row => {
@@ -580,13 +550,10 @@ FROM
   FROM gh_events
   WHERE ${whereClauses.join(' AND ')}
   GROUP BY id, time
-  ${config.limitOption === 'each' && config.limit > 0 ?
-      `${config.order ? `ORDER BY count ${config.order}` : ''} LIMIT ${config.limit} BY time` :
-      ''}
+  ${getInnerOrderAndLimit(config, 'count')}
 )
 GROUP BY id
-${config.order ? `ORDER BY count[-1] ${config.order}` : ''}
-${config.limitOption === 'all' && config.limit > 0 ? `LIMIT ${config.limit}` : ''}`;
+${getOutterOrderAndLimit(config, 'count')}`;
 
   const result: any = await clickhouse.query(sql);
   return result.map(row => {
@@ -619,13 +586,10 @@ FROM
   FROM gh_events
   WHERE ${whereClauses.join(' AND ')}
   GROUP BY id, time
-  ${config.limitOption === 'each' && config.limit > 0 ?
-      `${config.order ? `ORDER BY count ${config.order}` : ''} LIMIT ${config.limit} BY time` :
-      ''}
+  ${getInnerOrderAndLimit(config, 'count')}
 )
 GROUP BY id
-${config.order ? `ORDER BY count[-1] ${config.order}` : ''}
-${config.limitOption === 'all' && config.limit > 0 ? `LIMIT ${config.limit}` : ''}`;
+${getOutterOrderAndLimit(config, 'count')}`;
 
   const result: any = await clickhouse.query(sql);
   return result.map(row => {
@@ -705,13 +669,10 @@ FROM
     ${(config.options?.withBot && by !== 'commit') ? '' : "HAVING " + (by === 'activity' ? 'actor_login' : 'author') + " NOT LIKE '%[bot]'"}
   )
   GROUP BY id, time
-  ${config.limitOption === 'each' && config.limit > 0 ?
-      `${config.order ? `ORDER BY bus_factor ${config.order}` : ''} LIMIT ${config.limit} BY time` :
-      ''}
+  ${getInnerOrderAndLimit(config, 'bus_factor')}
 )
 GROUP BY id
-${config.order ? `ORDER BY bus_factor[-1] ${config.order}` : ''}
-${config.limitOption === 'all' && config.limit > 0 ? `LIMIT ${config.limit}` : ''}`;
+${getOutterOrderAndLimit(config, 'bus_factor')}`;
 
   const result: any = await clickhouse.query(sql);
   return result.map(row => {
@@ -805,13 +766,10 @@ export const chaossNewContributors = async (config: QueryConfig<NewContributorsO
       HAVING first_time >= toDate('${config.startYear}-${config.startMonth}-1') AND first_time < toDate('${endDate.getFullYear()}-${endDate.getMonth() + 1}-1')
     )
     GROUP BY id, time
-    ${config.limitOption === 'each' && config.limit > 0 ?
-      `${config.order ? `ORDER BY new_contributor ${config.order}` : ''} LIMIT ${config.limit} BY time` :
-      ''}
+    ${getInnerOrderAndLimit(config, 'new_contributor')}
   )
   GROUP BY id
-  ${config.order ? `ORDER BY new_contributors[-1] ${config.order}` : ''}
-  ${config.limitOption === 'all' && config.limit > 0 ? `LIMIT ${config.limit}` : ''}`;
+  ${getOutterOrderAndLimit(config, 'new_contributors')}`;
 
   const result: any = await clickhouse.query(sql);
   return result.map(row => {

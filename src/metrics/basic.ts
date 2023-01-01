@@ -315,14 +315,14 @@ export const getGroupTimeAndIdClauseForClickhouse = (config: QueryConfig, type: 
   })()}`;
 }
 
-export const getInnerOrderAndLimit = (config: QueryConfig, col: string) => {
+export const getInnerOrderAndLimit = (config: QueryConfig, col: string, index?: number) => {
   return `${config.limitOption === 'each' && config.limit > 0 ?
-    `${config.order ? `ORDER BY ${col} ${config.order}` : ''} LIMIT ${config.limit} BY time` :
+    `${config.order ? `ORDER BY ${col}${index !== undefined ? `[${index}]` : ''} ${config.order}` : ''} LIMIT ${config.limit} BY time` :
     ''}`
 }
 
-export const getOutterOrderAndLimit = (config: QueryConfig, col: string) => {
-  return `${config.order ? `ORDER BY ${col}[-1] ${config.order}` : ''}
+export const getOutterOrderAndLimit = (config: QueryConfig, col: string, index?: number) => {
+  return `${config.order ? `ORDER BY ${col}[-1]${index !== undefined ? `[${index}]` : ''} ${config.order}` : ''}
     ${config.limitOption === 'all' && config.limit > 0 ? `LIMIT ${config.limit}` : ''}`;
 }
 

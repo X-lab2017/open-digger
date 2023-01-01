@@ -1,7 +1,9 @@
 import {
   getGroupArrayInsertAtClauseForClickhouse,
   getGroupTimeAndIdClauseForClickhouse,
+  getInnerOrderAndLimit,
   getMergedConfig,
+  getOutterOrderAndLimit,
   getRepoWhereClauseForClickhouse,
   getTimeRangeWhereClauseForClickhouse,
   QueryConfig
@@ -28,13 +30,10 @@ FROM
   FROM gh_events
   WHERE ${whereClauses.join(' AND ')}
   GROUP BY id, time
-  ${config.limitOption === 'each' && config.limit > 0 ?
-      `${config.order ? `ORDER BY count ${config.order}` : ''} LIMIT ${config.limit} BY time` :
-      ''}
+  ${getInnerOrderAndLimit(config, 'count')}
 )
 GROUP BY id
-${config.order ? `ORDER BY count[-1] ${config.order}` : ''}
-${config.limitOption === 'all' && config.limit > 0 ? `LIMIT ${config.limit}` : ''}`;
+${getOutterOrderAndLimit(config, 'count')}`;
 
   const result: any = await clickhouse.query(sql);
   return result.map(row => {
@@ -67,13 +66,10 @@ FROM
   FROM gh_events
   WHERE ${whereClauses.join(' AND ')}
   GROUP BY id, time
-  ${config.limitOption === 'each' && config.limit > 0 ?
-      `${config.order ? `ORDER BY count ${config.order}` : ''} LIMIT ${config.limit} BY time` :
-      ''}
+  ${getInnerOrderAndLimit(config, 'count')}
 )
 GROUP BY id
-${config.order ? `ORDER BY count[-1] ${config.order}` : ''}
-${config.limitOption === 'all' && config.limit > 0 ? `LIMIT ${config.limit}` : ''}`;
+${getOutterOrderAndLimit(config, 'count')}`;
 
   const result: any = await clickhouse.query(sql);
   return result.map(row => {
@@ -106,13 +102,10 @@ FROM
   FROM gh_events
   WHERE ${whereClauses.join(' AND ')}
   GROUP BY id, time
-  ${config.limitOption === 'each' && config.limit > 0 ?
-      `${config.order ? `ORDER BY count ${config.order}` : ''} LIMIT ${config.limit} BY time` :
-      ''}
+  ${getInnerOrderAndLimit(config, 'count')}
 )
 GROUP BY id
-${config.order ? `ORDER BY count[-1] ${config.order}` : ''}
-${config.limitOption === 'all' && config.limit > 0 ? `LIMIT ${config.limit}` : ''}`;
+${getOutterOrderAndLimit(config, 'count')}`;
 
   const result: any = await clickhouse.query(sql);
   return result.map(row => {

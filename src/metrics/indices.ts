@@ -5,7 +5,9 @@ import {
   getUserWhereClauseForClickhouse,
   getTimeRangeWhereClauseForClickhouse,
   getGroupArrayInsertAtClauseForClickhouse,
-  getGroupTimeAndIdClauseForClickhouse
+  getGroupTimeAndIdClauseForClickhouse,
+  getInnerOrderAndLimit,
+  getOutterOrderAndLimit
 } from './basic';
 import * as clickhouse from '../db/clickhouse';
 
@@ -36,13 +38,10 @@ FROM
   FROM gh_repo_openrank
   WHERE ${whereClause.join(' AND ')}
   GROUP BY id, time
-  ${config.limitOption === 'each' && config.limit > 0 ?
-      `${config.order ? `ORDER BY openrank ${config.order}` : ''} LIMIT ${config.limit} BY time` :
-      ''}
+  ${getInnerOrderAndLimit(config, 'openrank')}
 )
 GROUP BY id
-${config.order ? `ORDER BY openrank[-1] ${config.order}` : ''}
-${config.limitOption === 'all' && config.limit > 0 ? `LIMIT ${config.limit}` : ''}`;
+${getOutterOrderAndLimit(config, 'openrank')}`;
 
   const result: any = await clickhouse.query(sql);
   return result.map(row => {
@@ -76,13 +75,10 @@ FROM
   FROM gh_user_openrank
   WHERE ${whereClause.join(' AND ')}
   GROUP BY id, time
-  ${config.limitOption === 'each' && config.limit > 0 ?
-      `${config.order ? `ORDER BY openrank ${config.order}` : ''} LIMIT ${config.limit} BY time` :
-      ''}
+  ${getInnerOrderAndLimit(config, 'openrank')}
 )
 GROUP BY id
-${config.order ? `ORDER BY openrank[-1] ${config.order}` : ''}
-${config.limitOption === 'all' && config.limit > 0 ? `LIMIT ${config.limit}` : ''}`;
+${getOutterOrderAndLimit(config, 'openrank')}`;
 
   const result: any = await clickhouse.query(sql);
   return result.map(row => {
@@ -149,13 +145,10 @@ FROM
     HAVING activity > 0
   )
   GROUP BY id, time
-  ${config.limitOption === 'each' && config.limit > 0 ?
-      `${config.order ? `ORDER BY activity ${config.order}` : ''} LIMIT ${config.limit} BY time` :
-      ''}
+  ${getInnerOrderAndLimit(config, 'activity')}
 )
 GROUP BY id
-${config.order ? `ORDER BY activity[-1] ${config.order}` : ''}
-${config.limitOption === 'all' && config.limit > 0 ? `LIMIT ${config.limit}` : ''}`;
+${getOutterOrderAndLimit(config, 'activity')}`;
 
   const result: any = await clickhouse.query(sql);
   return result.map(row => {
@@ -213,13 +206,10 @@ FROM
     HAVING activity > 0 ${withBot ? '' : `AND actor_login NOT LIKE '%[bot]'`}
   )
   GROUP BY id, time
-  ${config.limitOption === 'each' && config.limit > 0 ?
-      `${config.order ? `ORDER BY activity ${config.order}` : ''} LIMIT ${config.limit} BY time` :
-      ''}
+  ${getInnerOrderAndLimit(config, 'activity')}
 )
 GROUP BY id
-${config.order ? `ORDER BY activity[-1] ${config.order}` : ''}
-${config.limitOption === 'all' && config.limit > 0 ? `LIMIT ${config.limit}` : ''}`;
+${getOutterOrderAndLimit(config, 'activity')}`;
 
   const result: any = await clickhouse.query(sql);
   return result.map(row => {
@@ -259,13 +249,10 @@ FROM
   FROM gh_events
   WHERE ${whereClauses.join(' AND ')}
   GROUP BY id, time
-  ${config.limitOption === 'each' && config.limit > 0 ?
-      `${config.order ? `ORDER BY attention ${config.order}` : ''} LIMIT ${config.limit} BY time` :
-      ''}
+  ${getInnerOrderAndLimit(config, 'attention')}
 )
 GROUP BY id
-${config.order ? `ORDER BY attention[-1] ${config.order}` : ''}
-${config.limitOption === 'all' && config.limit > 0 ? `LIMIT ${config.limit}` : ''}`;
+${getOutterOrderAndLimit(config, 'attention')}`;
 
   const result: any = await clickhouse.query(sql);
   return result.map(row => {
