@@ -1,7 +1,15 @@
 import { getRepoOpenrank, getRepoActivity, getUserOpenrank, getUserActivity, getAttention } from './indices';
+<<<<<<< HEAD
 import { chaossCodeChangeCommits, chaossBusFactor, chaossIssuesNew, chaossIssuesClosed, chaossChangeRequestsAccepted, 
 chaossChangeRequestsDeclined, chaossIssueResolutionDuration, chaossCodeChangeLines, chaossTechnicalFork, 
 chaossChangeRequests, chaossChangeRequestReviews,chaossNewContributors,chaossChangeRequestsDuration, chaossIssueResponseTime, chaossChangeRequestsAcceptanceRatio } from './chaoss';
+=======
+import {
+  chaossCodeChangeCommits, chaossBusFactor, chaossIssuesNew, chaossIssuesClosed, chaossChangeRequestsAccepted,
+  chaossChangeRequestsDeclined, chaossIssueResolutionDuration, chaossCodeChangeLines, chaossTechnicalFork,
+  chaossChangeRequests, chaossChangeRequestReviews, chaossNewContributors, chaossChangeRequestsDuration, chaossIssueResponseTime
+} from './chaoss';
+>>>>>>> notebook: implement open source report 2022
 import { repoStars, repoIssueComments, repoParticipants } from './metrics';
 import { getRelatedUsers } from './related_users';
 

@@ -8,7 +8,7 @@ export async function getGitHubClient(): Promise<Octokit> {
   return octokit;
 }
 
-type IdNameArr = {id: number, name: string}[];
+type IdNameArr = { id: number, name: string }[];
 
 export async function getNames(ids: number[], type: 'user' | 'org' | 'repo', client: Octokit): Promise<IdNameArr> {
   const resultArr: IdNameArr = [];
@@ -21,7 +21,7 @@ export async function getNames(ids: number[], type: 'user' | 'org' | 'repo', cli
   for (const id of ids) {
     let name = '';
     try {
-      const result = await client.request({ url: `${baseUrl}${id}`});
+      const result = await client.request({ url: `${baseUrl}${id}` });
       name = result.data.login;
       if (type === 'repo') name = result.data.full_name;
     } catch {

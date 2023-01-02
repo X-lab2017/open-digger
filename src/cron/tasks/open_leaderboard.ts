@@ -19,7 +19,7 @@ const task: Task = {
     const allYears = Array.from({ length: endYear - startYear + 1 }, (_, i) => i + startYear);
 
     const writeData = (dataMap: Map<any, any>, type: string, path: string) => {
-      for (const [ time, data ] of dataMap.entries()) {
+      for (const [time, data] of dataMap.entries()) {
         const dir = `./local_files/open_leaderboard/${path}`;
         if (!existsSync(dir)) mkdirSync(dir, { recursive: true });
         writeFileSync(`./local_files/open_leaderboard/${path}/${time}.json`, JSON.stringify({
@@ -149,7 +149,7 @@ const task: Task = {
       chineseCompanyMonthActivityMap.set(k, chineseCompanyMonthActivityMap.get(k)!.filter(i => i.value > 0));
     }
     writeData(chineseCompanyMonthActivityMap, 'Company_China_Month', 'activity/company/chinese');
-    
+
     // by year
     const chineseCompanyYearActivityData = await getRepoActivity({
       labelIntersect: ['Company', ':regions/China'],
@@ -199,7 +199,7 @@ const task: Task = {
       globalCompanyMonthActivityMap.set(k, globalCompanyMonthActivityMap.get(k)!.filter(i => i.value > 0));
     }
     writeData(globalCompanyMonthActivityMap, 'Company_Global_Month', 'activity/company/global');
-    
+
     // by year
     const globalCompanyYearActivityData = await getRepoActivity({
       labelUnion: ['Company'],
@@ -401,7 +401,7 @@ const task: Task = {
     }
     writeData(chineseRepoYearOpenrankMap, 'Repo_China_Year', 'open_rank/repo/chinese');
     console.log('Chinese repo OpenRank done.');
-    
+
     // get Chinese company
     // by month
     const chineseCompanyRepoMonthOpenrankData = await getRepoOpenrank({
