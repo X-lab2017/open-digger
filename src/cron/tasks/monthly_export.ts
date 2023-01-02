@@ -50,13 +50,19 @@ const task: Task = {
   ENGINE = ReplacingMergeTree(id)
   ORDER BY (id)
   SETTINGS index_granularity = 8192`,
+        `ALTER TABLE ${exportRepoTableName} DELETE WHERE id > 0`,
+        `ALTER TABLE ${exportUserTableName} DELETE WHERE id > 0`,
         `INSERT INTO ${exportRepoTableName}
-  SELECT repo_id, argMax(repo_name, created_at) AS repo_name FROM gh_repo_openrank
+  SELECT argMax(repo_id, time) AS id, repo_name FROM
+  (SELECT repo_id, argMax(repo_name, created_at) AS repo_name, MAX(created_at) AS time FROM gh_repo_openrank
   WHERE openrank > ${Math.E} OR repo_id IN (${Array.from(repos).join(',')})
-  OR org_id IN (${Array.from(orgs).join(',')}) GROUP BY repo_id`,
+  OR org_id IN (${Array.from(orgs).join(',')}) GROUP BY repo_id)
+  GROUP BY repo_name`,
         `INSERT INTO ${exportUserTableName}
-  SELECT actor_id AS id, argMax(actor_login, created_at) AS actor_login FROM gh_user_openrank
-  WHERE openrank > ${Math.E} OR actor_id IN (${Array.from(users).join(',')}) GROUP BY actor_id`,
+  SELECT argMax(actor_id, time) AS id, actor_login FROM
+  (SELECT actor_id, argMax(actor_login, created_at) AS actor_login, MAX(created_at) AS time FROM gh_user_openrank
+  WHERE openrank > ${Math.E} OR actor_id IN (${Array.from(users).join(',')}) GROUP BY actor_id)
+  GROUP BY actor_login`,
       ];
       for (const q of exportTableQueries) {
         await query(q);
