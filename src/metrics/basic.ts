@@ -280,13 +280,14 @@ export const getLabelGroupConditionClauseForClickhouse = (config: QueryConfig): 
 }
 
 export const getGroupArrayInsertAtClauseForClickhouse = (config: QueryConfig, option: { key: string; defaultValue?: string; value?: string; noPrecision?: boolean }): string => {
-  return `groupArrayInsertAt${option.defaultValue ? `(${option.defaultValue})` : ''}(${(() => {
+  let startTime = `toDate('${config.startYear}-${config.startMonth}-1')`;
+  let endTime = `toDate('${config.endYear}-${config.endMonth}-1')`;
+  return `groupArrayInsertAt(${option.defaultValue ?? 0}, toUInt32(dateDiff('${config.groupTimeRange}', ${startTime}, ${endTime})) + 1)(${(() => {
     const name = option.value ? option.value : option.key;
     if (config.precision > 0 && !option.noPrecision) return `ROUND(${name}, ${config.precision})`;
     return name;
   })()}, ${(() => {
     if (!config.groupTimeRange) return '0';
-    let startTime = `toDate('${config.startYear}-${config.startMonth}-1')`;
     if (config.groupTimeRange === 'quarter') startTime = `toStartOfQuarter(${startTime})`;
     else if (config.groupTimeRange === 'year') startTime = `toStartOfYear(${startTime})`;
     return `toUInt32(dateDiff('${config.groupTimeRange}', ${startTime}, time))`;
