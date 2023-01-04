@@ -12,8 +12,9 @@ describe('Index and metric test', () => {
   const months = 24;
   const commonAssert = async (func: (option: any) => Promise<any[]>, key: string) => {
     const result = await func(option);
-    assert.strictEqual(result.length, limit);
-    assert.strictEqual(result.every(r => r[key].length === months), true);
+    assert.strictEqual(result.length, limit); // the limit works fine
+    assert.strictEqual(result.every(r => r[key].length === months), true);  // the main field has correct length
+    assert.strictEqual(parseFloat(result[0][key][months - 1]) >= parseFloat(result[2][key][months - 1]), true); // order works fine
   };
   describe('Indices tests', () => {
     it('activity', async () => {
