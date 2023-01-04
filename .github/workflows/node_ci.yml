@@ -23,7 +23,3 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - run: npm install
       - run: npm test
-        env:
-          CLICKHOUSE_HOST: ${{ secrets.CLICKHOUSE_HOST }}
-          CLICKHOUSE_USERNAME: ${{ secrets.CLICKHOUSE_USERNAME }}
-          CLICKHOUSE_PASSWORD: ${{ secrets.CLICKHOUSE_PASSWORD }}
