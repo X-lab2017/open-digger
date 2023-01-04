@@ -10,90 +10,72 @@ describe('Index and metric test', () => {
     groupTimeRange: 'month',
   };
   const months = 24;
-  const commonAssert = (result: any[], key: string) => {
+  const commonAssert = async (func: (option: any) => Promise<any[]>, key: string) => {
+    const result = await func(option);
     assert.strictEqual(result.length, limit);
     assert.strictEqual(result.every(r => r[key].length === months), true);
   };
   describe('Indices tests', () => {
     it('activity', async () => {
-      const result = await openDigger.getRepoActivity(option);
-      commonAssert(result, 'activity');
+      await commonAssert(openDigger.getRepoActivity, 'activity');
     });
   });
   describe('Metrics tests', () => {
     it('repo stars', async () => {
-      const result = await openDigger.repoStars(option);
-      commonAssert(result, 'count');
+      await commonAssert(openDigger.repoStars, 'count');
     });
     it('repo issue comment', async () => {
-      const result = await openDigger.repoIssueComments(option);
-      commonAssert(result, 'count');
+      await commonAssert(openDigger.repoIssueComments, 'count');
     });
     it('repo participants', async () => {
-      const result = await openDigger.repoParticipants(option);
-      commonAssert(result, 'count');
+      await commonAssert(openDigger.repoParticipants, 'count');
     });
   });
   describe('CHAOSS metrics tests', () => {
     it('code change commits', async () => {
-      const result = await openDigger.chaossCodeChangeCommits(option);
-      commonAssert(result, 'count');
+      await commonAssert(openDigger.chaossCodeChangeCommits, 'count');
     });
     it('issues new', async () => {
-      const result = await openDigger.chaossIssuesNew(option);
-      commonAssert(result, 'count');
+      await commonAssert(openDigger.chaossIssuesNew, 'count');
     });
     it('issues closed', async () => {
-      const result = await openDigger.chaossIssuesClosed(option);
-      commonAssert(result, 'count');
+      await commonAssert(openDigger.chaossIssuesClosed, 'count');
     });
     it('bus factor', async () => {
-      const result = await openDigger.chaossBusFactor(option);
-      commonAssert(result, 'bus_factor');
+      await commonAssert(openDigger.chaossBusFactor, 'bus_factor');
     });
     it('change request accepted', async () => {
-      const result = await openDigger.chaossChangeRequestsAccepted(option);
-      commonAssert(result, 'count');
+      await commonAssert(openDigger.chaossChangeRequestsAccepted, 'count');
     });
     it('change request declined', async () => {
-      const result = await openDigger.chaossChangeRequestsDeclined(option);
-      commonAssert(result, 'count');
+      await commonAssert(openDigger.chaossChangeRequestsDeclined, 'count');
     });
     it('issue resolution duration', async () => {
-      const result = await openDigger.chaossIssueResolutionDuration(option);
-      commonAssert(result, 'resolution_duration');
+      await commonAssert(openDigger.chaossIssueResolutionDuration, 'resolution_duration');
     });
     it('issue response time', async () => {
-      const result = await openDigger.chaossIssueResponseTime(option);
-      commonAssert(result, 'issue_response_time');
+      await commonAssert(openDigger.chaossIssueResponseTime, 'issue_response_time');
     });
     it('code change lines', async () => {
-      const result = await openDigger.chaossCodeChangeLines(option);
-      commonAssert(result, 'lines');
+      await commonAssert(openDigger.chaossCodeChangeLines, 'lines');
     });
     it('technical fork', async () => {
-      const result = await openDigger.chaossTechnicalFork(option);
-      commonAssert(result, 'count');
+      await commonAssert(openDigger.chaossTechnicalFork, 'count');
     });
     it('change requests', async () => {
-      const result = await openDigger.chaossChangeRequests(option);
-      commonAssert(result, 'count');
+      await commonAssert(openDigger.chaossChangeRequests, 'count');
     });
     it('request reviews', async () => {
-      const result = await openDigger.chaossChangeRequestReviews(option);
-      commonAssert(result, 'count');
+      await commonAssert(openDigger.chaossChangeRequestReviews, 'count');
     });
     it('new contributors', async () => {
-      const result = await openDigger.chaossNewContributors(option);
-      commonAssert(result, 'new_contributors');
+      await commonAssert(openDigger.chaossNewContributors, 'new_contributors');
     });
     it('request requests duration', async () => {
-      const result = await openDigger.chaossChangeRequestsDuration(option);
-      commonAssert(result, 'resolution_duration');
+      await commonAssert(openDigger.chaossChangeRequestsDuration, 'resolution_duration');
     });
     it('request requests acceptance ratio', async () => {
-      const result = await openDigger.chaossChangeRequestsAcceptanceRatio(option);
-      commonAssert(result, 'ratio');
+      await commonAssert(openDigger.chaossChangeRequestsAcceptanceRatio, 'ratio');
     });
   });
 });
