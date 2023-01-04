@@ -10,105 +10,90 @@ describe('Index and metric test', () => {
     groupTimeRange: 'month',
   };
   const months = 24;
+  const commonAssert = (result: any[], key: string) => {
+    assert.strictEqual(result.length, limit);
+    assert.strictEqual(result.every(r => r[key].length === months), true);
+  };
   describe('Indices tests', () => {
     it('activity', async () => {
       const result = await openDigger.getRepoActivity(option);
-      assert.strictEqual(result.length, limit);
-      assert.strictEqual(result.every(r => r.activity.length === months), true);
+      commonAssert(result, 'activity');
     });
   });
   describe('Metrics tests', () => {
     it('repo stars', async () => {
       const result = await openDigger.repoStars(option);
-      assert.strictEqual(result.length, limit);
-      assert.strictEqual(result.every(r => r.count.length === months), true);
+      commonAssert(result, 'count');
     });
     it('repo issue comment', async () => {
       const result = await openDigger.repoIssueComments(option);
-      assert.strictEqual(result.length, limit);
-      assert.strictEqual(result.every(r => r.count.length === months), true);
+      commonAssert(result, 'count');
     });
     it('repo participants', async () => {
       const result = await openDigger.repoParticipants(option);
-      assert.strictEqual(result.length, limit);
-      assert.strictEqual(result.every(r => r.count.length === months), true);
+      commonAssert(result, 'count');
     });
   });
   describe('CHAOSS metrics tests', () => {
     it('code change commits', async () => {
       const result = await openDigger.chaossCodeChangeCommits(option);
-      assert.strictEqual(result.length, limit);
-      assert.strictEqual(result.every(r => r.count.length === months), true);
+      commonAssert(result, 'count');
     });
     it('issues new', async () => {
       const result = await openDigger.chaossIssuesNew(option);
-      assert.strictEqual(result.length, limit);
-      assert.strictEqual(result.every(r => r.count.length === months), true);
+      commonAssert(result, 'count');
     });
     it('issues closed', async () => {
       const result = await openDigger.chaossIssuesClosed(option);
-      assert.strictEqual(result.length, limit);
-      assert.strictEqual(result.every(r => r.count.length === months), true);
+      commonAssert(result, 'count');
     });
     it('bus factor', async () => {
       const result = await openDigger.chaossBusFactor(option);
-      assert.strictEqual(result.length, limit);
-      assert.strictEqual(result.every(r => r.bus_factor.length === months), true);
+      commonAssert(result, 'bus_factor');
     });
     it('change request accepted', async () => {
       const result = await openDigger.chaossChangeRequestsAccepted(option);
-      assert.strictEqual(result.length, limit);
-      assert.strictEqual(result.every(r => r.count.length === months), true);
+      commonAssert(result, 'count');
     });
     it('change request declined', async () => {
       const result = await openDigger.chaossChangeRequestsDeclined(option);
-      assert.strictEqual(result.length, limit);
-      assert.strictEqual(result.every(r => r.count.length === months), true);
+      commonAssert(result, 'count');
     });
     it('issue resolution duration', async () => {
       const result = await openDigger.chaossIssueResolutionDuration(option);
-      assert.strictEqual(result.length, limit);
-      assert.strictEqual(result.every(r => r.resolution_duration.length === months), true);
+      commonAssert(result, 'resolution_duration');
     });
     it('issue response time', async () => {
       const result = await openDigger.chaossIssueResponseTime(option);
-      assert.strictEqual(result.length, limit);
-      assert.strictEqual(result.every(r => r.issue_response_time.length === months), true);
+      commonAssert(result, 'issue_response_time');
     });
     it('code change lines', async () => {
       const result = await openDigger.chaossCodeChangeLines(option);
-      assert.strictEqual(result.length, limit);
-      assert.strictEqual(result.every(r => r.lines.length === months), true);
+      commonAssert(result, 'lines');
     });
     it('technical fork', async () => {
       const result = await openDigger.chaossTechnicalFork(option);
-      assert.strictEqual(result.length, limit);
-      assert.strictEqual(result.every(r => r.count.length === months), true);
+      commonAssert(result, 'count');
     });
     it('change requests', async () => {
       const result = await openDigger.chaossChangeRequests(option);
-      assert.strictEqual(result.length, limit);
-      assert.strictEqual(result.every(r => r.count.length === months), true);
+      commonAssert(result, 'count');
     });
     it('request reviews', async () => {
       const result = await openDigger.chaossChangeRequestReviews(option);
-      assert.strictEqual(result.length, limit);
-      assert.strictEqual(result.every(r => r.count.length === months), true);
+      commonAssert(result, 'count');
     });
     it('new contributors', async () => {
       const result = await openDigger.chaossNewContributors(option);
-      assert.strictEqual(result.length, limit);
-      assert.strictEqual(result.every(r => r.new_contributors.length === months), true);
+      commonAssert(result, 'new_contributors');
     });
     it('request requests duration', async () => {
       const result = await openDigger.chaossChangeRequestsDuration(option);
-      assert.strictEqual(result.length, limit);
-      assert.strictEqual(result.every(r => r.resolution_duration.length === months), true);
+      commonAssert(result, 'resolution_duration');
     });
     it('request requests acceptance ratio', async () => {
       const result = await openDigger.chaossChangeRequestsAcceptanceRatio(option);
-      assert.strictEqual(result.length, limit);
-      assert.strictEqual(result.every(r => r.ratio.length === months), true);
+      commonAssert(result, 'ratio');
     });
   });
 });
