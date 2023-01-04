@@ -62,6 +62,7 @@ data:
     - :companies/megvii
     - :companies/datacanvas
     - :companies/cloudwise
+    - :companies/stoneatom
     - :communities/openmmlab
     - :communities/xlab
     - :communities/mulan

@@ -1,0 +1,5 @@
+name: StoneDB
+type: Project
+data:
+  github_org:
+    - 105431101 # org:stoneatom
