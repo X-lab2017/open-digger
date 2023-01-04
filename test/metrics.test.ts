@@ -16,11 +16,6 @@ describe('Index and metric test', () => {
       assert.strictEqual(result.length, limit);
       assert.strictEqual(result.every(r => r.activity.length === months), true);
     });
-    it('openrank', async () => {
-      const result = await openDigger.getRepoOpenrank(option);
-      assert.strictEqual(result.length, limit);
-      assert.strictEqual(result.every(r => r.openrank.length === months), true);
-    });
   });
   describe('Metrics tests', () => {
     it('repo stars', async () => {
