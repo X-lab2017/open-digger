@@ -350,7 +350,8 @@ FROM
       ''}
 )
 GROUP BY id
-${config.order ? `ORDER BY issue_response_time[-1][1] ${config.order}` : ''}`;
+${config.order ? `ORDER BY issue_response_time[-1][1] ${config.order}` : ''}
+${config.limitOption === 'all' && config.limit > 0 ? `LIMIT ${config.limit}` : ''}`;
 
   const result: any = await clickhouse.query(sql);
   return result.map(row => {
@@ -498,7 +499,8 @@ FROM
   ${config.limit > 0 ? `LIMIT ${config.limit} BY time` : ''}
 )
 GROUP BY id
-${config.order ? `ORDER BY resolution_duration[-1] ${config.order}` : ''}`;
+${config.order ? `ORDER BY resolution_duration[-1] ${config.order}` : ''}
+${config.limitOption === 'all' && config.limit > 0 ? `LIMIT ${config.limit}` : ''}`;
 
   const result: any = await clickhouse.query(sql);
   return result.map(row => {
@@ -511,7 +513,7 @@ ${config.order ? `ORDER BY resolution_duration[-1] ${config.order}` : ''}`;
   });
 };
 
-export const chaossChangeRequestsAcceptanceRatio = async (config:QueryConfig) => {
+export const chaossChangeRequestsAcceptanceRatio = async (config: QueryConfig) => {
   config = getMergedConfig(config);
   const whereClauses: string[] = ["type = 'PullRequestEvent' AND action = 'closed' "];
   const repoWhereClause = await getRepoWhereClauseForClickhouse(config);
@@ -536,9 +538,9 @@ FROM
   FROM gh_events
   WHERE ${whereClauses.join(' AND ')}
   GROUP BY id, time
-  ${config.limitOption === 'each' && config.limit > 0 ? 
-    `${config.order ? `ORDER BY ratio ${config.order}` : ''} LIMIT ${config.limit} BY time` :
-    ''}
+  ${config.limitOption === 'each' && config.limit > 0 ?
+      `${config.order ? `ORDER BY ratio ${config.order}` : ''} LIMIT ${config.limit} BY time` :
+      ''}
 )
 GROUP BY id
 ${config.order ? `ORDER BY change_requests_accepted_ratio[-1] ${config.order}` : ''}
@@ -546,7 +548,7 @@ ${config.limitOption === 'all' && config.limit > 0 ? `LIMIT ${config.limit}` : '
 
   const result: any = await clickhouse.query(sql);
   return result.map(row => {
-    const [ id, name, ratio, accepted_count, declined_count ] = row;
+    const [id, name, ratio, accepted_count, declined_count] = row;
     return {
       id,
       name,
@@ -665,7 +667,7 @@ SELECT
   id,
   argMax(name, time) AS name,
   ${getGroupArrayInsertAtClauseForClickhouse(config, { key: 'bus_factor', })},
-  ${getGroupArrayInsertAtClauseForClickhouse(config, { key: 'detail', noPrecision: true })},
+  ${getGroupArrayInsertAtClauseForClickhouse(config, { key: 'detail', noPrecision: true, defaultValue: '[]' })},
   ${getGroupArrayInsertAtClauseForClickhouse(config, { key: 'total_contributions' })}
 FROM
 (
@@ -747,7 +749,7 @@ export const chaossNewContributors = async (config: QueryConfig<NewContributorsO
     id,
     argMax(name, time) AS name,
     ${getGroupArrayInsertAtClauseForClickhouse(config, { key: 'new_contributors', value: 'new_contributor' })},
-    ${getGroupArrayInsertAtClauseForClickhouse(config, { key: 'detail', noPrecision: true })},
+    ${getGroupArrayInsertAtClauseForClickhouse(config, { key: 'detail', noPrecision: true, defaultValue: '[]' })},
     SUM(new_contributor) AS total_new_contributors
   FROM
   (
