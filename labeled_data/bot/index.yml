@@ -1,0 +1,11 @@
+name: GitHub Bot
+type: Bot
+data:
+  github_user:
+    - 105309205 # user:VSCodeTriageBot
+    - 96656532 # user:SnoozeThis
+    - 8517910 # user:LombiqBot
+    - 25180681 # user:renovate-bot
+    - 53108186 # user:codestar-github-bot-1
+    - 71103415 # user:rjpagano
+    - 74294145 # user:zhangsansana
