@@ -1,0 +1,33 @@
+name: Bug Report
+description: Report a bug to OpenDigger
+title: "[Bug] "
+body:
+- type: markdown
+  attributes: 
+    value: This is an issue to report bug to OpenDigger, please fill the following sections as thoroughly as you can.
+
+- type: textarea
+  attributes:
+    label: Current Behavior
+    description: A concise description of what you're experiencing. Attach screenshots if needed.
+  validations:
+    required: true
+
+- type: textarea
+  attributes:
+    label: Expected Behavior
+    description: A concise description of what you expected to happen.
+  validations:
+    required: false
+
+- type: textarea
+  attributes:
+    label: Any Additional Comments?
+    description: |
+      e.g. some background/context of how you ran into this bug.
+  validations:
+    required: false
+
+- type: markdown
+  attributes:
+    value: Thanks for finish the issue and make OpenDigger better.

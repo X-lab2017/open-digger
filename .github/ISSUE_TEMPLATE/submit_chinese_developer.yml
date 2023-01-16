@@ -1,0 +1,30 @@
+name: Submit Chinese Developer Label Data
+description: Submit Chinese developer label data to OpenDigger
+title: "[Chinese Developer] "
+body:
+- type: markdown
+  attributes:
+    value: |
+      You can submit Chinese developer label data by this issue.
+      Label: China
+      Type: Region
+
+- type: textarea
+  attributes:
+    label: Users
+    description: The users' login to submit, please make sure there is a `-` before each line.
+    placeholder: |
+      - frank-zsy
+  validations:
+    required: true
+
+- type: textarea
+  attributes:
+    label: Other Information
+    placeholder: If you have any other information to submit, you can add it here.
+  validations:
+    required: false
+
+- type: markdown
+  attributes:
+    value: Thanks for finish the issue and the label data to make OpenDigger better.
