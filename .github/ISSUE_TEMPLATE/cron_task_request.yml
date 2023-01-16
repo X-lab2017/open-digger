@@ -1,0 +1,26 @@
+name: Cron Task Request
+description: Request for new cron task
+title: "[Cron] "
+body:
+- type: markdown
+  attributes:
+    value: This is an issue to request new cron tasks for OpenDigger, please fill the following sections as thoroughly as you can.
+
+- type: textarea
+  attributes:
+    label: Description
+    description: Please describe what does this task for.
+  validations:
+    required: true
+
+- type: input
+  attributes:
+    label: Cron Expression
+    description: What is the cron expression to use, or you can use plain text if you are not familiar with cron.
+    placeholder: e.g. 0 0 5 * * / 2:40 pm every monday
+  validations:
+    required: true
+
+- type: markdown
+  attributes:
+    value: Thanks for finish the issue and make OpenDigger better.

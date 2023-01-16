@@ -1,0 +1,18 @@
+name: Feature Request
+description: Request for new features
+title: "[Feature] "
+body:
+- type: markdown
+  attributes:
+    value: This is an issue to request new features for OpenDigger, please fill the following sections as thoroughly as you can.
+
+- type: textarea
+  attributes:
+    label: Description
+    description: Please describe what this feature does.
+  validations:
+    required: true
+
+- type: markdown
+  attributes:
+    value: Thanks for finish the issue and make OpenDigger better.

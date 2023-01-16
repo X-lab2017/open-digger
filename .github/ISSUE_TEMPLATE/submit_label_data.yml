@@ -1,0 +1,47 @@
+name: Submit Label Data
+description: Submit label data to OpenDigger
+title: "[Label Data] "
+body:
+- type: markdown
+  attributes:
+    value: Please help us help you by filling out the following sections as thoroughly as you can.
+
+- type: input
+  attributes:
+    label: Label
+    description: What do you want to label the following data?
+    placeholder: e.g. Chinese / Microsoft / Aapche Foundation
+  validations:
+    required: true
+
+- type: input
+  attributes:
+    label: Type
+    description: What is the type of the label?
+    placeholder: e.g. Region / Company / Community / Project / Foundation / Bot
+  validations:
+    required: true
+
+- type: textarea
+  attributes:
+    label: Repos/Orgs/Users
+    description: The repos/orgs/users you want to label as above, please make sure there is a `-` before each line.
+    placeholder: |
+      - microsoft/vscode
+      - kubernetes/kubernetes
+      - google
+      - X-lab2017
+      - frank-zsy
+  validations:
+    required: true
+
+- type: textarea
+  attributes:
+    label: Other information
+    placeholder: If you have any other information to submit, you can add it here.
+  validations:
+    required: false
+
+- type: markdown
+  attributes:
+    value: Thanks for finish the issue and the label data to make OpenDigger better.
