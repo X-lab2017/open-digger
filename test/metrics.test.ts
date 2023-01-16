@@ -26,15 +26,16 @@ describe('Index and metric test', () => {
     // month group with total order
     option.groupTimeRange = 'month';
     option.orderOption = 'total';
+    option.order = 'ASC';
     result = await func(option);
     assert.strictEqual(result.length, option.limit); // the limit works fine
     assert.strictEqual(result.every(r => r[key].length === months), true);  // the main field has correct length
     // order works fine
     const sumFunc = (res: any, f?: any): number => res[key].map(r => parseFloat(f ? f(r) : r)).reduce((p, c) => p + c);
     if (index !== undefined) {
-      assert.strictEqual(sumFunc(result[0], r => r[index]) >= sumFunc(result[option.limit - 1], r => r[index]), true);
+      assert.strictEqual(sumFunc(result[0], r => r[index]) <= sumFunc(result[option.limit - 1], r => r[index]), true);
     } else {
-      assert.strictEqual(sumFunc(result[0]) >= sumFunc(result[option.limit - 1]), true);
+      assert.strictEqual(sumFunc(result[0]) <= sumFunc(result[option.limit - 1]), true);
     }
   };
   describe('Indices tests', () => {
