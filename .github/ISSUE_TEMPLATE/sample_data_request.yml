@@ -1,0 +1,27 @@
+name: Sample Data Request
+description: Request new sample dataset of event data
+title: "[Sample Data] "
+body:
+- type: input
+  attributes:
+    label: Usage
+    description: Why do you request the sample data and where will it be used?
+    placeholder: e.g. For PaddlePaddle Hackathon / For Peking University open source course / Personal research.
+  validations:
+    required: true
+
+- type: textarea
+  attributes:
+    label: Extract SQL
+    description: |
+      What is the SQL to extract the sample data, if you are not familiar with ClickHouse SQL, you can describe the data you want.
+  validations:
+    required: true
+
+- type: input
+  attributes:
+    label: Does this dataset need to be updated regularly?
+    description: Whether this dataset is static or need to be updated regularly.
+    placeholder: e.g. Need to update the dataset every year.
+  validations:
+    required: false
