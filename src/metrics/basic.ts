@@ -17,6 +17,7 @@ export interface QueryConfig<T = any> {
   endYear: number;
   endMonth: number;
   order?: 'DESC' | 'ASC';
+  orderOption?: 'latest' | 'total',
   limit: number;
   limitOption: 'each' | 'all';
   precision: number;
@@ -32,6 +33,7 @@ export const getMergedConfig = (config: any): QueryConfig => {
     startMonth: 1,
     endYear: new Date().getFullYear(),
     endMonth: new Date().getMonth(),
+    orderOption: 'latest',
     limit: 10,
     limitOption: 'all',
     precision: 2,
@@ -313,6 +315,20 @@ export const getGroupTimeAndIdClauseForClickhouse = (config: QueryConfig, type: 
       return getLabelGroupConditionClauseForClickhouse(config);
     }
   })()}`;
+}
+
+export const getInnerOrderAndLimit = (config: QueryConfig, col: string, index?: number) => {
+  return `${config.limitOption === 'each' && config.limit > 0 ?
+    `${config.order ? `ORDER BY ${col}${index !== undefined ? `[${index}]` : ''} ${config.order}` : ''} LIMIT ${config.limit} BY time` :
+    ''}`
+}
+
+export const getOutterOrderAndLimit = (config: QueryConfig, col: string, index?: number) => {
+  return `${config.order ? `ORDER BY ${config.orderOption === 'latest'
+    ? `${col}[-1]${index !== undefined ? `[${index}]` : ''}`
+    : `arraySum(${index !== undefined ? `x -> x[${index}],` : ''}${col})`
+    } ${config.order}` : ''}
+    ${config.limitOption === 'all' && config.limit > 0 ? `LIMIT ${config.limit}` : ''}`;
 }
 
 export const filterEnumType = (value: any, types: string[], defautlValue: string): string => {
