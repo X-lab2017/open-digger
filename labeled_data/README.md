@@ -3,9 +3,15 @@ In this folder, we collect different categories of labeled data. We can using th
 ``` 
 openDigger.index.activity.getRepoActivity({labelIntersect: ['Company', ':regions/China'], startYear, startMonth, endYear, endMonth, groupBy: 'Company', groupTimeRange: 'year', limit: -1, order: 'DESC' })
 ```
-We have 6 categories of labeled data.
+We have 8 categories of labeled data.
 
 ## Data Description
+- application_domain
+It contains repos in different application domain.
+
+- bot
+It contains bots data.
+
 - communities
 It contains orgs/repos/users data of a community.
 
