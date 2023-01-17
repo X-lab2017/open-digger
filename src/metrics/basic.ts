@@ -41,6 +41,18 @@ export const getMergedConfig = (config: any): QueryConfig => {
   return merge(defaultConfig, config);
 }
 
+export interface TimeDurationOption {
+  unit: 'week' | 'day' | 'hour' | 'minute';
+  thresholds: number[];
+  sortBy: 'avg' | 'levels' | 'quantile_0' | 'quantile_1' | 'quantile_2' | 'quantile_3' | 'quantile_4'
+}
+
+export const timeDurationConstants = {
+  unitArray: ['week', 'day', 'hour', 'minute'],
+  sortByArray: ['avg', 'levels', 'quantile_0', 'quantile_1', 'quantile_2', 'quantile_3', 'quantile_4'],
+  quantileArray: [...Array(5).keys()],
+};
+
 export const forEveryMonthByConfig = async (config: QueryConfig, func: (y: number, m: number) => Promise<any>) => {
   return forEveryMonth(config.startYear, config.startMonth, config.endYear, config.endMonth, func);
 }
