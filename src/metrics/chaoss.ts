@@ -183,6 +183,42 @@ ${getOutterOrderAndLimit(config, 'issues_new_count')}`;
   });
 };
 
+export const chaossIssuesActive = async (config: QueryConfig) => {
+  config = getMergedConfig(config);
+  const whereClauses: string[] = ["type IN ('IssuesEvent', 'IssueCommentEvent')"];
+  const repoWhereClause = await getRepoWhereClauseForClickhouse(config);
+  if (repoWhereClause) whereClauses.push(repoWhereClause);
+  whereClauses.push(getTimeRangeWhereClauseForClickhouse(config));
+
+  const sql = `
+SELECT
+  id,
+  argMax(name, time) AS name,
+  ${getGroupArrayInsertAtClauseForClickhouse(config, { key: 'issues_active_count', value: 'count' })}
+FROM
+(
+  SELECT
+    ${getGroupTimeAndIdClauseForClickhouse(config, 'repo')},
+    COUNT() AS count
+  FROM gh_events
+  WHERE ${whereClauses.join(' AND ')}
+  GROUP BY id, time
+  ${getInnerOrderAndLimit(config, 'count')}
+)
+GROUP BY id
+${getOutterOrderAndLimit(config, 'issues_active_count')}`;
+
+  const result: any = await clickhouse.query(sql);
+  return result.map(row => {
+    const [id, name, count] = row;
+    return {
+      id,
+      name,
+      count,
+    }
+  });
+};
+
 export const chaossIssuesClosed = async (config: QueryConfig) => {
   config = getMergedConfig(config);
   const whereClauses: string[] = ["type = 'IssuesEvent' AND action = 'closed'"];
