@@ -2,7 +2,7 @@ import { getRepoOpenrank, getRepoActivity, getUserOpenrank, getUserActivity, get
 import {
   chaossCodeChangeCommits, chaossBusFactor, chaossIssuesNew, chaossIssuesClosed, chaossChangeRequestsAccepted,
   chaossChangeRequestsDeclined, chaossIssueResolutionDuration, chaossCodeChangeLines, chaossTechnicalFork,
-  chaossChangeRequests, chaossChangeRequestReviews, chaossNewContributors, chaossChangeRequestsDuration, chaossIssueResponseTime, chaossChangeRequestsAcceptanceRatio, chaossIssuesActive,
+  chaossChangeRequests, chaossChangeRequestReviews, chaossNewContributors, chaossChangeRequestsDuration, chaossIssueResponseTime, chaossChangeRequestsAcceptanceRatio, chaossIssuesActive, chaossActiveDatesAndTimes,
 } from './chaoss';
 import { repoStars, repoIssueComments, repoParticipants } from './metrics';
 import { getRelatedUsers } from './related_users';
@@ -32,6 +32,8 @@ module.exports = {
   chaossNewContributors: chaossNewContributors,
   chaossChangeRequestsDuration: chaossChangeRequestsDuration,
   chaossChangeRequestsAcceptanceRatio: chaossChangeRequestsAcceptanceRatio,
+  chaossRepoActiveDatesAndTimes: config => chaossActiveDatesAndTimes(config, 'repo'),
+  chaossUserActiveDatesAndTimes: config => chaossActiveDatesAndTimes(config, 'user'),
   // x-lab metrics
   repoStars: repoStars,
   repoIssueComments: repoIssueComments,
