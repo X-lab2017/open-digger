@@ -7,7 +7,9 @@ import {
   getOutterOrderAndLimit,
   getRepoWhereClauseForClickhouse,
   getTimeRangeWhereClauseForClickhouse,
-  QueryConfig
+  timeDurationConstants,
+  QueryConfig,
+  TimeDurationOption
 } from "./basic";
 import * as clickhouse from '../db/clickhouse';
 import { basicActivitySqlComponent } from "./indices";
@@ -258,10 +260,8 @@ ${getOutterOrderAndLimit(config, 'issues_close_count')}`;
   });
 };
 
-interface IssueResolutionDurationOptions {
+interface IssueResolutionDurationOptions extends TimeDurationOption {
   by: 'open' | 'close';
-  type: 'avg' | 'median';
-  unit: 'week' | 'day' | 'hour' | 'minute';
 }
 export const chaossIssueResolutionDuration = async (config: QueryConfig<IssueResolutionDurationOptions>) => {
   config = getMergedConfig(config);
@@ -272,21 +272,27 @@ export const chaossIssueResolutionDuration = async (config: QueryConfig<IssueRes
   const endDate = new Date(`${config.endYear}-${config.endMonth}-1`);
   endDate.setMonth(config.endMonth);  // find next month
 
-  let by = filterEnumType(config.options?.by, ['open', 'close'], 'open');
+  const by = filterEnumType(config.options?.by, ['open', 'close'], 'open');
   const byCol = by === 'open' ? 'opened_at' : 'closed_at';
-  let type = filterEnumType(config.options?.type, ['avg', 'median'], 'avg');
-  let unit = filterEnumType(config.options?.unit, ['week', 'day', 'hour', 'minute'], 'day');
+  const unit = filterEnumType(config.options?.unit, timeDurationConstants.unitArray, 'day');
+  const thresholds = config.options?.thresholds ?? [3, 7, 15];
+  const ranges = [...thresholds, -1];
+  const sortBy = filterEnumType(config.options?.sortBy, timeDurationConstants.sortByArray, 'avg');
 
   const sql = `
 SELECT
   id,
-  argMax(name, time) AS name,
-  ${getGroupArrayInsertAtClauseForClickhouse(config, { key: `resolution_duration`, defaultValue: 'NaN' })}
+  argMax(name, time),
+  ${getGroupArrayInsertAtClauseForClickhouse(config, { key: `avg`, defaultValue: 'NaN' })},
+  ${getGroupArrayInsertAtClauseForClickhouse(config, { key: 'levels', value: 'resolution_levels', defaultValue: `[${ranges.map(_ => `0`).join(',')}]`, noPrecision: true })},
+  ${timeDurationConstants.quantileArray.map(q => getGroupArrayInsertAtClauseForClickhouse(config, { key: `quantile_${q}`, defaultValue: 'NaN' })).join(',')}
 FROM
 (
   SELECT
     ${getGroupTimeAndIdClauseForClickhouse(config, 'repo', byCol)},
-    ${type}(dateDiff('${unit}', opened_at, closed_at)) AS resolution_duration
+    avg(resolution_duration) AS avg,
+    ${timeDurationConstants.quantileArray.map(q => `quantile(${q / 4})(resolution_duration) AS quantile_${q}`).join(',')},
+    [${ranges.map((_t, i) => `countIf(resolution_level = ${i})`).join(',')}] AS resolution_levels
   FROM
   (
     SELECT
@@ -297,7 +303,9 @@ FROM
       issue_number,
       argMaxIf(action, created_at, action IN ('opened', 'closed' , 'reopened')) AS last_action,
       argMax(issue_created_at,created_at) AS opened_at,
-      maxIf(created_at, action = 'closed') AS closed_at
+      maxIf(created_at, action = 'closed') AS closed_at,
+      dateDiff('${unit}', opened_at, closed_at) AS resolution_duration,
+      multiIf(${thresholds.map((t, i) => `resolution_duration <= ${t}, ${i}`)}, ${thresholds.length}) AS resolution_level
     FROM gh_events
     WHERE ${whereClauses.join(' AND ')}
     GROUP BY repo_id, org_id, issue_number
@@ -307,43 +315,50 @@ FROM
   ${getInnerOrderAndLimit(config, 'resolution_duration')}
 )
 GROUP BY id
-${getOutterOrderAndLimit(config, 'resolution_duration')}`;
+${getOutterOrderAndLimit(config, sortBy, sortBy === 'levels' ? 1 : undefined)}`;
 
   const result: any = await clickhouse.query(sql);
   return result.map(row => {
-    const [id, name, resolution_duration] = row;
+    const [id, name, avg, levels, quantile_0, quantile_1, quantile_2, quantile_3, quantile_4] = row;
     return {
       id,
       name,
-      resolution_duration,
-    }
+      avg,
+      levels,
+      quantile_0,
+      quantile_1,
+      quantile_2,
+      quantile_3,
+      quantile_4,
+    };
   });
 };
 
-interface IssueResponseTimeOptions {
-  thresholds: number[];
-  unit: 'month' | 'week' | 'day' | 'hour' | 'minute';
-}
-export const chaossIssueResponseTime = async (config: QueryConfig<IssueResponseTimeOptions>) => {
+export const chaossIssueResponseTime = async (config: QueryConfig<TimeDurationOption>) => {
   config = getMergedConfig(config);
   const whereClauses: string[] = ["type IN ('IssueCommentEvent', 'IssuesEvent') AND actor_login NOT LIKE '%[bot]'  "];
   const repoWhereClause = await getRepoWhereClauseForClickhouse(config);
   if (repoWhereClause) whereClauses.push(repoWhereClause);
   const endDate = new Date(`${config.endYear}-${config.endMonth}-1`);
   endDate.setMonth(config.endMonth);  // find next month  
-  let thresholds = config.options?.thresholds ?? [1, 3, 7]; // 3 thredholds will separate the value to 4 ranges
-  let ranges = [...thresholds, -1]; // an array with one more element than threholds
-  let unit = filterEnumType(config.options?.unit, ['month', 'week', 'day', 'hour', 'minute'], 'day');
+  const unit = filterEnumType(config.options?.unit, timeDurationConstants.unitArray, 'day');
+  const thresholds = config.options?.thresholds ?? [3, 7, 15];
+  const ranges = [...thresholds, -1];
+  const sortBy = filterEnumType(config.options?.sortBy, timeDurationConstants.sortByArray, 'avg');
 
   const sql = `
 SELECT 
- id,
- argMax(name, time) AS name,   
- ${getGroupArrayInsertAtClauseForClickhouse(config, { key: 'issue_response_time', value: 'response_levels', defaultValue: `[${ranges.map(_ => `0`).join(',')}]`, noPrecision: true })}
+  id,
+  argMax(name, time),
+  ${getGroupArrayInsertAtClauseForClickhouse(config, { key: `avg`, defaultValue: 'NaN' })},
+  ${getGroupArrayInsertAtClauseForClickhouse(config, { key: 'levels', value: 'response_levels', defaultValue: `[${ranges.map(_ => `0`).join(',')}]`, noPrecision: true })},
+  ${timeDurationConstants.quantileArray.map(q => getGroupArrayInsertAtClauseForClickhouse(config, { key: `quantile_${q}`, defaultValue: 'NaN' })).join(',')}
 FROM
 (
   SELECT
     ${getGroupTimeAndIdClauseForClickhouse(config, 'repo', 'issue_created_at')},
+    avg(response_time) AS avg,
+    ${timeDurationConstants.quantileArray.map(q => `quantile(${q / 4})(response_time) AS quantile_${q}`).join(',')},
     [${ranges.map((_t, i) => `countIf(response_level = ${i})`).join(',')}] AS response_levels
   FROM
   (
@@ -365,19 +380,25 @@ FROM
              AND issue_created_at < toDate('${endDate.getFullYear()}-${endDate.getMonth() + 1}-1')
   )
   GROUP BY id, time
-  ${getInnerOrderAndLimit(config, 'issue_response_time', 1)}
+  ${getInnerOrderAndLimit(config, 'response_time')}
 )
 GROUP BY id
-${getOutterOrderAndLimit(config, 'issue_response_time', 1)}`;
+${getOutterOrderAndLimit(config, sortBy, sortBy === 'levels' ? 1 : undefined)}`;
 
   const result: any = await clickhouse.query(sql);
   return result.map(row => {
-    const [id, name, issue_response_time] = row;
+    const [id, name, avg, levels, quantile_0, quantile_1, quantile_2, quantile_3, quantile_4] = row;
     return {
       id,
       name,
-      issue_response_time,
-    }
+      avg,
+      levels,
+      quantile_0,
+      quantile_1,
+      quantile_2,
+      quantile_3,
+      quantile_4,
+    };
   });
 };
 
@@ -460,10 +481,8 @@ ${getOutterOrderAndLimit(config, 'change_requests_declined')}`;
   });
 };
 
-interface ChangeRequestsDurationOptions {
+interface ChangeRequestsDurationOptions extends TimeDurationOption {
   by: 'open' | 'close';
-  type: 'avg' | 'median';
-  unit: 'week' | 'day' | 'hour' | 'minute';
 }
 export const chaossChangeRequestsDuration = async (config: QueryConfig<ChangeRequestsDurationOptions>) => {
   config = getMergedConfig(config);
@@ -474,21 +493,27 @@ export const chaossChangeRequestsDuration = async (config: QueryConfig<ChangeReq
   const endDate = new Date(`${config.endYear}-${config.endMonth}-1`);
   endDate.setMonth(config.endMonth);  // find next month
 
-  let by = filterEnumType(config.options?.by, ['open', 'close'], 'open');
+  const by = filterEnumType(config.options?.by, ['open', 'close'], 'open');
   const byCol = by === 'open' ? 'opened_at' : 'closed_at';
-  let type = filterEnumType(config.options?.type, ['avg', 'median'], 'avg');
-  let unit = filterEnumType(config.options?.unit, ['week', 'day', 'hour', 'minute'], 'day');
+  const unit = filterEnumType(config.options?.unit, timeDurationConstants.unitArray, 'day');
+  const thresholds = config.options?.thresholds ?? [3, 7, 15];
+  const ranges = [...thresholds, -1];
+  const sortBy = filterEnumType(config.options?.sortBy, timeDurationConstants.sortByArray, 'avg');
 
   const sql = `
 SELECT
   id,
-  argMax(name, time) AS name,
-  ${getGroupArrayInsertAtClauseForClickhouse(config, { key: `resolution_duration`, defaultValue: 'NaN' })}
+  argMax(name, time),
+  ${getGroupArrayInsertAtClauseForClickhouse(config, { key: `avg`, defaultValue: 'NaN' })},
+  ${getGroupArrayInsertAtClauseForClickhouse(config, { key: 'levels', value: 'resolution_levels', defaultValue: `[${ranges.map(_ => `0`).join(',')}]`, noPrecision: true })},
+  ${timeDurationConstants.quantileArray.map(q => getGroupArrayInsertAtClauseForClickhouse(config, { key: `quantile_${q}`, defaultValue: 'NaN' })).join(',')}
 FROM
 (
   SELECT
     ${getGroupTimeAndIdClauseForClickhouse(config, 'repo', byCol)},
-    ${type}(dateDiff('${unit}', opened_at, closed_at)) AS resolution_duration
+    avg(resolution_duration) AS avg,
+    ${timeDurationConstants.quantileArray.map(q => `quantile(${q / 4})(resolution_duration) AS quantile_${q}`).join(',')},
+    [${ranges.map((_t, i) => `countIf(resolution_level = ${i})`).join(',')}] AS resolution_levels
   FROM
   (
     SELECT
@@ -499,7 +524,9 @@ FROM
       issue_number,
       argMaxIf(action, created_at, action IN ('opened', 'closed' , 'reopened')) AS last_action,
       argMax(issue_created_at,created_at) AS opened_at,
-      maxIf(created_at, action = 'closed') AS closed_at
+      maxIf(created_at, action = 'closed') AS closed_at,
+      dateDiff('${unit}', opened_at, closed_at) AS resolution_duration,
+      multiIf(${thresholds.map((t, i) => `resolution_duration <= ${t}, ${i}`)}, ${thresholds.length}) AS resolution_level
     FROM gh_events
     WHERE ${whereClauses.join(' AND ')}
     GROUP BY repo_id, org_id, issue_number
@@ -509,16 +536,22 @@ FROM
   ${getInnerOrderAndLimit(config, 'resolution_duration')}
 )
 GROUP BY id
-${getOutterOrderAndLimit(config, 'resolution_duration')}`;
+${getOutterOrderAndLimit(config, sortBy, sortBy === 'levels' ? 1 : undefined)}`;
 
   const result: any = await clickhouse.query(sql);
   return result.map(row => {
-    const [id, name, resolution_duration] = row;
+    const [id, name, avg, levels, quantile_0, quantile_1, quantile_2, quantile_3, quantile_4] = row;
     return {
       id,
       name,
-      resolution_duration,
-    }
+      avg,
+      levels,
+      quantile_0,
+      quantile_1,
+      quantile_2,
+      quantile_3,
+      quantile_4,
+    };
   });
 };
 
