@@ -61,6 +61,9 @@ describe('Index and metric test', () => {
     it('issues new', async () => {
       await commonAssert(openDigger.chaossIssuesNew, 'count');
     });
+    it('issues active', async () => {
+      await commonAssert(openDigger.chaossIssuesActive, 'count');
+    });
     it('issues closed', async () => {
       await commonAssert(openDigger.chaossIssuesClosed, 'count');
     });
