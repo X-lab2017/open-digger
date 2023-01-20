@@ -9,7 +9,8 @@ import {
   getTimeRangeWhereClauseForClickhouse,
   timeDurationConstants,
   QueryConfig,
-  TimeDurationOption
+  TimeDurationOption,
+  getUserWhereClauseForClickhouse
 } from "./basic";
 import * as clickhouse from '../db/clickhouse';
 import { basicActivitySqlComponent } from "./indices";
@@ -848,6 +849,60 @@ export const chaossNewContributors = async (config: QueryConfig<NewContributorsO
       name,
       new_contributors,
       detail,
+    }
+  });
+}
+
+interface ActiveDatesAndTimesOptions {
+  // normalize the results by this option as max value
+  normalize?: number;
+}
+export const chaossActiveDatesAndTimes = async (config: QueryConfig<ActiveDatesAndTimesOptions>, type: 'user' | 'repo') => {
+  config = getMergedConfig(config);
+  const whereClauses: string[] = [getTimeRangeWhereClauseForClickhouse(config)];
+  if (type === 'user') {
+    const userWhereClause = await getUserWhereClauseForClickhouse(config);
+    if (userWhereClause) whereClauses.push(userWhereClause);
+  } else if (type === 'repo') {
+    const repoWhereClause = await getRepoWhereClauseForClickhouse(config);
+    if (repoWhereClause) whereClauses.push(repoWhereClause);
+  } else {
+    throw new Error(`Not supported type: ${type}`);
+  }
+
+  const sql = `
+SELECT
+  id,
+  argMax(name, time) AS name,
+  ${getGroupArrayInsertAtClauseForClickhouse(config, { key: 'count', noPrecision: true, defaultValue: '[]' })}
+FROM
+(
+  SELECT id, argMax(name, time) AS name, time, arrayMap(x -> ${config.options?.normalize ? `round(x*${config.options.normalize}/max(count))` : 'x'}, groupArrayInsertAt(0, 168)(count, toUInt32((day - 1) * 24 + hour))) AS count
+  FROM
+  (
+    SELECT
+      ${getGroupTimeAndIdClauseForClickhouse(config, type)},
+      toHour(created_at) AS hour,
+      toDayOfWeek(created_at) AS day,
+      COUNT() AS count
+    FROM gh_events
+    WHERE ${whereClauses.join(' AND ')}
+    GROUP BY id, time, hour, day
+    ORDER BY day, hour
+  )
+  GROUP BY id, time
+  ${getInnerOrderAndLimit(config, 'count', 1)}
+)
+GROUP BY id
+${getOutterOrderAndLimit(config, 'count', 1)}`;
+
+  const result: any = await clickhouse.query(sql);
+  return result.map(row => {
+    const [id, name, count] = row;
+    return {
+      id,
+      name,
+      count,
     }
   });
 }
