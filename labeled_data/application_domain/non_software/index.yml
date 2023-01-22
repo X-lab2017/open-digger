@@ -22,17 +22,13 @@ data:
     - 112507086 # repo:30-seconds/30-seconds-of-code
     - 14098069 # repo:justjavac/free-programming-books-zh_CN
     - 103633984 # repo:goldbergyoni/nodebestpractices
-    - 90796663 # repo:puppeteer/puppeteer
     - 138393139 # repo:trimstray/the-book-of-secret-knowledge
     - 62607227 # repo:yangshun/tech-interview-handbook
     - 88011908 # repo:practical-tutorials/project-based-learning
-    - 54173593 # repo:storybookjs/storybook
     - 74791366 # repo:ryanmcdermott/clean-code-javascript
     - 160640094 # repo:MisterBooo/LeetCodeAnimation
-    - 155220641 # repo:huggingface/transformers
     - 151834062 # repo:doocs/advanced-java
     - 44571718 # repo:vuejs/awesome-vue
-    - 1181927 # repo:bitcoin/bitcoin
     - 15204860 # repo:papers-we-love/papers-we-love
     - 101296881 # repo:mtdvio/every-programmer-should-know
     - 107111421 # repo:thedaviddias/Front-End-Checklist
@@ -45,11 +41,9 @@ data:
     - 311525798 # repo:microsoft/Web-Dev-For-Beginners
     - 128398636 # repo:xingshaocheng/architect-awesome
     - 55076063 # repo:Hack-with-Github/Awesome-Hacking
-    - 33015583 # repo:keras-team/keras
     - 21872392 # repo:josephmisiti/awesome-machine-learning
     - 157616880 # repo:iptv-org/iptv
     - 3402537 # repo:h5bp/Front-end-Developer-Interview-Questions
-    - 12888993 # repo:home-assistant/core
     - 120538304 # repo:kelseyhightower/nocode
     - 18408635 # repo:chrislgarry/Apollo-11
     - 63539055 # repo:jaywcjlove/awesome-mac
@@ -89,16 +83,13 @@ data:
     - 22119721 # repo:k88hudson/git-flight-rules
     - 68957920 # repo:justjavac/awesome-wechat-weapp
     - 139824423 # repo:Avik-Jain/100-Days-Of-ML-Code
-    - 94911145 # repo:facebook/docusaurus
     - 67186968 # repo:chinese-poetry/chinese-poetry
     - 18708860 # repo:tiimgreen/github-cheat-sheet
     - 135786093 # repo:typescript-cheatsheets/react
-    - 7569578 # repo:discourse/discourse
     - 69629434 # repo:FreeCodeCampChina/freecodecamp.cn
     - 65388917 # repo:jakevdp/PythonDataScienceHandbook
     - 56969116 # repo:ngosang/trackerslist
     - 41058054 # repo:isocpp/CppCoreGuidelines
-    - 29261473 # repo:minio/minio
     - 117372806 # repo:yangshun/front-end-interview-handbook
     - 10865436 # repo:dypsilon/frontend-dev-bookmarks
     - 101138315 # repo:d2l-ai/d2l-zh
@@ -140,7 +131,6 @@ data:
     - 118861276 # repo:gto76/python-cheatsheet
     - 42489829 # repo:rust-lang/rustlings
     - 207645083 # repo:TanStack/query
-    - 52281283 # repo:mastodon/mastodon
     - 13840241 # repo:freeCodeCamp/devdocs
     - 21600440 # repo:bayandin/awesome-awesomeness
     - 56717493 # repo:joshbuchea/HEAD
@@ -186,7 +176,6 @@ data:
     - 23783375 # repo:geekcompany/ResumeSample
     - 148736243 # repo:qiurunze123/miaosha
     - 1481305 # repo:realpython/python-guide
-    - 53370988 # repo:GoogleChrome/lighthouse
     - 151619717 # repo:google-research/google-research
     - 92807616 # repo:byoungd/English-level-up-tips
     - 402046 # repo:parallax/jsPDF
@@ -199,7 +188,6 @@ data:
     - 196813750 # repo:Light-City/CPlusPlusThings
     - 84533158 # repo:yunjey/pytorch-tutorial
     - 35756351 # repo:nagadomi/waifu2x
-    - 164140756 # repo:files-community/Files
     - 328831244 # repo:ibraheemdev/modern-unix
     - 131789494 # repo:wuyouzhuguli/SpringAll
     - 135614069 # repo:sudheerj/reactjs-interview-questions
@@ -213,7 +201,6 @@ data:
     - 29749635 # repo:donnemartin/data-science-ipython-notebooks
     - 103953059 # repo:mbeaudru/modern-js-cheatsheet
     - 79510167 # repo:pypa/pipenv
-    - 102578345 # repo:coolsnowwolf/lede
     - 28699471 # repo:lukasz-madon/awesome-remote-job
     - 41592744 # repo:AllThingsSmitty/css-protips
     - 24297122 # repo:veggiemonk/awesome-docker
@@ -245,19 +232,16 @@ data:
     - 306977633 # repo:AMAI-GmbH/AI-Expert-Roadmap
     - 277168957 # repo:eugeneyan/applied-ml
     - 313330998 # repo:bradtraversy/50projects50days
-    - 275993885 # repo:appsmithorg/appsmith
     - 420459569 # repo:github/copilot-docs
     - 33895378 # repo:bevacqua/dragula
     - 150058902 # repo:wangzheng0822/algo
     - 16722900 # repo:ipfs/ipfs
-    - 74660642 # repo:taichi-dev/taichi
     - 75867720 # repo:wesbos/JavaScript30
     - 23689830 # repo:yeasy/docker_practice
     - 51270739 # repo:viatsko/awesome-vscode
     - 317836248 # repo:GorvGoyl/Clone-Wars
     - 63477612 # repo:TheAlgorithms/C-Plus-Plus
     - 1800198 # repo:rwaldron/idiomatic.js
-    - 186024298 # repo:nushell/nushell
     - 23141830 # repo:paularmstrong/normalizr
     - 4660742 # repo:zhiwehu/Python-programming-exercises
     - 99433554 # repo:googlehosts/hosts
@@ -293,12 +277,10 @@ data:
     - 44150497 # repo:remoteintech/remote-jobs
     - 153500249 # repo:sdras/awesome-actions
     - 23095954 # repo:ReactiveX/RxAndroid
-    - 50565430 # repo:pnpm/pnpm
     - 21515044 # repo:academic/awesome-datascience
     - 41654081 # repo:drduh/macOS-Security-and-Privacy-Guide
     - 13900913 # repo:dracula/dracula-theme
     - 48623558 # repo:chubin/wttr.in
-    - 538746 # repo:ruby/ruby
     - 28723659 # repo:ChristosChristofidis/awesome-deep-learning
     - 482152820 # repo:geekan/HowToLiveLonger
     - 20060596 # repo:ogham/exa
@@ -318,10 +300,8 @@ data:
     - 53133861 # repo:nikitavoloboev/my-mac-os
     - 66424871 # repo:pytorch/examples
     - 15150300 # repo:tobiasahlin/SpinKit
-    - 65711522 # repo:PaddlePaddle/Paddle
     - 93253246 # repo:javascript-tutorial/en.javascript.info
     - 67687706 # repo:kdeldycke/awesome-falsehood
-    - 191820100 # repo:google/mediapipe
     - 66088979 # repo:changkun/modern-cpp-tutorial
     - 206410838 # repo:google/eng-practices
     - 312262 # repo:philc/vimium
@@ -335,10 +315,8 @@ data:
     - 123572362 # repo:quii/learn-go-with-tests
     - 88612945 # repo:junyanz/pytorch-CycleGAN-and-pix2pix
     - 10057936 # repo:square/picasso
-    - 40892817 # repo:ethereum/solidity
     - 29759715 # repo:facebook/zstd
     - 104337773 # repo:1c7/chinese-independent-developer
-    - 125098880 # repo:ValveSoftware/Proton
     - 66483240 # repo:dennybritz/reinforcement-learning
     - 41717707 # repo:jcjohnson/neural-style
     - 25427817 # repo:react-dnd/react-dnd
@@ -394,7 +372,6 @@ data:
     - 26554 # repo:reddit-archive/reddit
     - 344191198 # repo:microsoft/Data-Science-For-Beginners
     - 243838973 # repo:fastai/fastbook
-    - 75821432 # repo:llvm/llvm-project
     - 159194100 # repo:fengdu78/lihang-code
     - 2371106 # repo:rubocop/ruby-style-guide
     - 32726377 # repo:ruanyf/react-demos
@@ -480,7 +457,6 @@ data:
     - 266417772 # repo:pittcsc/Summer2023-Internships
     - 20653934 # repo:google/cadvisor
     - 78186814 # repo:apache/incubator-weex
-    - 302322 # repo:gradle/gradle
     - 93291681 # repo:JaeYeopHan/Interview_Question_for_Beginner
     - 88674404 # repo:GoogleContainerTools/distroless
     - 86733463 # repo:ahmetb/kubectx
@@ -495,7 +471,6 @@ data:
     - 18486300 # repo:lewagon/setup
     - 47184304 # repo:keon/awesome-nlp
     - 45497910 # repo:apple/swift-evolution
-    - 11125589 # repo:keycloak/keycloak
     - 153208883 # repo:stephentian/33-js-concepts
     - 20106153 # repo:CoderMJLee/MJRefresh
     - 189840 # repo:fabric/fabric
@@ -508,7 +483,6 @@ data:
     - 85371262 # repo:williamfiset/Algorithms
     - 1349775 # repo:RaRe-Technologies/gensim
     - 19249835 # repo:google/WebFundamentals
-    - 72891330 # repo:kubernetes/ingress-nginx
     - 175635390 # repo:selfteaching/the-craft-of-selfteaching
     - 136667574 # repo:flutter/samples
     - 3604157 # repo:shelljs/shelljs
@@ -528,7 +502,6 @@ data:
     - 211288349 # repo:android/compose-samples
     - 9795883 # repo:louischatriot/nedb
     - 36071697 # repo:ory/hydra
-    - 48109239 # repo:cilium/cilium
     - 88876034 # repo:TKkk-iOSer/WeChatPlugin-MacOS
     - 103749180 # repo:OpenGenus/cosmos
     - 911765 # repo:diaspora/diaspora
@@ -563,7 +536,6 @@ data:
     - 163721192 # repo:zhisheng17/flink-learning
     - 192155460 # repo:dragen1860/Deep-Learning-with-TensorFlow-book
     - 419347358 # repo:PKUFlyingPig/cs-self-learning
-    - 31558937 # repo:gravitational/teleport
     - 60829840 # repo:aalansehaiyang/technology-talk
     - 271714 # repo:wkhtmltopdf/wkhtmltopdf
     - 145098146 # repo:JessYanCoding/AndroidAutoSize
@@ -578,7 +550,6 @@ data:
     - 76996763 # repo:piotrwitek/react-redux-typescript-guide
     - 71551629 # repo:carloscuesta/gitmoji
     - 106460002 # repo:vitalysim/Awesome-Hacking-Resources
-    - 301793434 # repo:mattermost/focalboard
     - 76931209 # repo:vasanthk/react-bits
     - 30136107 # repo:pandao/editor.md
     - 23652091 # repo:Yixiaohan/show-me-the-code
@@ -602,12 +573,10 @@ data:
     - 14681876 # repo:codelucas/newspaper
     - 428202741 # repo:RunaCapital/awesome-oss-alternatives
     - 29900673 # repo:phanan/htaccess
-    - 46089560 # repo:containerd/containerd
     - 184981 # repo:memcached/memcached
     - 3736407 # repo:rstacruz/cheatsheets
     - 151843254 # repo:rrweb-io/rrweb
     - 108708339 # repo:sudheerj/javascript-interview-questions
-    - 45936895 # repo:Automattic/wp-calypso
     - 76679496 # repo:kuchin/awesome-cto
     - 38588153 # repo:xgrommx/awesome-redux
     - 67778031 # repo:seaswalker/spring-analysis
@@ -615,7 +584,6 @@ data:
     - 89577951 # repo:answershuto/learnVue
     - 34275045 # repo:kaldi-asr/kaldi
     - 227978903 # repo:vueuse/vueuse
-    - 1864233 # repo:frappe/erpnext
     - 202498093 # repo:tgbot-collection/YYeTsBot
     - 140516736 # repo:OI-wiki/OI-wiki
     - 1305114 # repo:roots/sage
@@ -632,7 +600,6 @@ data:
     - 176963109 # repo:peterq/pan-light
     - 28515839 # repo:skywind3000/kcp
     - 106995 # repo:sinatra/sinatra
-    - 52855516 # repo:Homebrew/homebrew-core
     - 40380094 # repo:rasbt/python-machine-learning-book
     - 51981038 # repo:jhuangtw/xg2xg
     - 317029148 # repo:ml-tooling/best-of-ml-python
@@ -669,7 +636,6 @@ data:
     - 51648174 # repo:allenwong/30DaysofSwift
     - 189621607 # repo:github/docs
     - 7832932 # repo:markyun/My-blog
-    - 146327667 # repo:vectordotdev/vector
     - 6893638 # repo:morhetz/gruvbox
     - 302800491 # repo:vxunderground/MalwareSourceCode
     - 51480 # repo:tpope/vim-surround
@@ -682,7 +648,6 @@ data:
     - 71293321 # repo:diegomura/react-pdf
     - 71274659 # repo:firebase/functions-samples
     - 50617428 # repo:squidfunk/mkdocs-material
-    - 52796596 # repo:netbox-community/netbox
     - 368525749 # repo:Tencent/secguide
     - 162608338 # repo:FavioVazquez/ds-cheatsheets
     - 157813180 # repo:microsoft/ai-edu
@@ -719,7 +684,6 @@ data:
     - 125642885 # repo:talkgo/night
     - 52728517 # repo:programthink/zhao
     - 83603533 # repo:felipefialho/frontend-challenges
-    - 22456440 # repo:ppy/osu
     - 112676803 # repo:apple/turicreate
     - 149211688 # repo:hoya012/deep_learning_object_detection
     - 129332826 # repo:frank-lam/fullstack-tutorial
@@ -731,7 +695,6 @@ data:
     - 157198623 # repo:jina-ai/clip-as-service
     - 179152420 # repo:wistbean/learn_python3_spider
     - 30444489 # repo:jbranchaud/til
-    - 139914932 # repo:quarkusio/quarkus
     - 80990040 # repo:ctgk/PRML
     - 42480275 # repo:spatie/laravel-permission
     - 1211978 # repo:metafizzy/isotope
@@ -762,23 +725,19 @@ data:
     - 77073851 # repo:google/grumpy
     - 194262275 # repo:blaCCkHatHacEEkr/PENTESTING-BIBLE
     - 40638363 # repo:git-up/GitUp
-    - 44971752 # repo:ethereum/EIPs
     - 42033086 # repo:styleguidist/react-styleguidist
     - 537603333 # repo:openai/whisper
     - 137389229 # repo:jonasschmedtmann/complete-javascript-course
-    - 4542716 # repo:NixOS/nixpkgs
     - 292293462 # repo:datastacktv/data-engineer-roadmap
     - 6650539 # repo:neo4j/neo4j
     - 75189212 # repo:jivoi/awesome-osint
     - 4059138 # repo:dgrijalva/jwt-go
     - 68380413 # repo:thibmaek/awesome-raspberry-pi
-    - 7202769 # repo:emqx/emqx
     - 73526083 # repo:serverless/examples
     - 16107755 # repo:bpampuch/pdfmake
     - 299584778 # repo:docmirror/dev-sidecar
     - 23095149 # repo:yidao620c/python3-cookbook
     - 15642233 # repo:karpathy/convnetjs
-    - 62921553 # repo:rook/rook
     - 43370610 # repo:tbruyelle/RxPermissions
     - 8855769 # repo:ansible/ansible-examples
     - 32553922 # repo:hehonghui/android-tech-frontier
@@ -797,7 +756,6 @@ data:
     - 79780572 # repo:ElemeFE/node-interview
     - 116797311 # repo:Embedding/Chinese-Word-Vectors
     - 93205465 # repo:apple/darwin-xnu
-    - 2884111 # repo:magento/magento2
     - 12228746 # repo:sovereign/sovereign
     - 38415498 # repo:careercup/CtCI-6th-Edition
     - 59944455 # repo:MorvanZhou/tutorials
@@ -813,7 +771,6 @@ data:
     - 216773481 # repo:timqian/chinese-independent-blogs
     - 10267810 # repo:mmistakes/minimal-mistakes
     - 89846872 # repo:jindongwang/transferlearning
-    - 139199684 # repo:PrefectHQ/prefect
     - 65885 # repo:aosp-mirror/platform_frameworks_base
     - 40936978 # repo:KotlinBy/awesome-kotlin
     - 38832942 # repo:agarrharr/awesome-cli-apps
@@ -894,7 +851,6 @@ data:
     - 63659739 # repo:mzlogin/awesome-adb
     - 4723248 # repo:openlayers/openlayers
     - 243181735 # repo:amusi/CVPR2022-Papers-with-Code
-    - 235901813 # repo:PostHog/posthog
     - 253398088 # repo:veeral-patel/how-to-secure-anything
     - 24732732 # repo:HackerNews/API
     - 16965762 # repo:facebookarchive/Shimmer
@@ -929,14 +885,11 @@ data:
     - 377851948 # repo:deepmind/alphafold
     - 39785222 # repo:Droogans/unmaintainable-code
     - 123631418 # repo:Lissy93/personal-security-checklist
-    - 28407613 # repo:ag-grid/ag-grid
     - 46611889 # repo:ttroy50/cmake-examples
-    - 130879558 # repo:gitpod-io/gitpod
     - 214011414 # repo:kingToolbox/WindTerm
     - 338348248 # repo:benawad/dogehouse
     - 67043714 # repo:heynickc/awesome-ddd
     - 5200099 # repo:thoughtbot/guides
-    - 237523442 # repo:tailscale/tailscale
     - 78240897 # repo:CoreyMSchafer/code_snippets
     - 444886996 # repo:NVlabs/instant-ngp
     - 81640848 # repo:ritchieng/the-incredible-pytorch
@@ -998,7 +951,6 @@ data:
     - 96913967 # repo:eriklindernoren/Keras-GAN
     - 2019626 # repo:seatgeek/fuzzywuzzy
     - 2269353 # repo:desandro/imagesloaded
-    - 42009758 # repo:MetaMask/metamask-extension
     - 104323045 # repo:1c7/Crash-Course-Computer-Science-Chinese
     - 1713774 # repo:TTTAttributedLabel/TTTAttributedLabel
     - 13677187 # repo:torch/torch7
@@ -1042,7 +994,6 @@ data:
     - 24797553 # repo:stephencelis/SQLite.swift
     - 24817507 # repo:moklick/frontend-stuff
     - 251262566 # repo:yemount/pose-animator
-    - 35726310 # repo:dart-lang/sdk
     - 328349603 # repo:forthespada/CS-Books
     - 72878982 # repo:cncf/landscape
     - 106558568 # repo:doitsujin/dxvk
@@ -1108,7 +1059,6 @@ data:
     - 83380995 # repo:dotnet-architecture/eShopOnWeb
     - 54244176 # repo:draveness/analyze
     - 451035 # repo:heartcombo/simple_form
-    - 45195614 # repo:Jackett/Jackett
     - 266613704 # repo:dabeaz-course/practical-python
     - 7985525 # repo:ImageOptim/ImageOptim
     - 274625369 # repo:infracost/infracost
@@ -1200,12 +1150,12 @@ data:
     - 98460473 # repo:open-source-flash/open-source-flash
     - 223824546 # repo:chiphuyen/machine-learning-systems-design
     - 107937815 # repo:aws/amazon-sagemaker-examples
+    - 197275551 # repo:microsoft/winget-pkgs
     - 11997640 # repo:alibaba/otter
     - 86363993 # repo:pastelsky/bundlephobia
     - 49084741 # repo:j-delaney/easy-application
     - 102029150 # repo:cstack/db_tutorial
     - 240507922 # repo:mytechnotalent/Reverse-Engineering
-    - 146641150 # repo:tektoncd/pipeline
     - 31452467 # repo:apsdehal/awesome-ctf
     - 45461509 # repo:jobbole/awesome-javascript-cn
     - 19316619 # repo:monero-project/monero
@@ -1366,7 +1316,6 @@ data:
     - 18607529 # repo:Famous/famous
     - 30025372 # repo:Huxpro/huxpro.github.io
     - 127008307 # repo:daviddao/awful-ai
-    - 76822722 # repo:Kenshin/simpread
     - 129990396 # repo:sunface/rust-by-practice
     - 296142821 # repo:anderspitman/awesome-tunneling
     - 68291988 # repo:miloyip/json-tutorial
@@ -1501,7 +1450,6 @@ data:
     - 49995295 # repo:shellphish/how2heap
     - 114685405 # repo:rustwasm/wasm-bindgen
     - 10750276 # repo:square/maximum-awesome
-    - 167694194 # repo:blakeblackshear/frigate
     - 23653453 # repo:pachyderm/pachyderm
     - 94894966 # repo:src-d/awesome-machine-learning-on-source-code
     - 15921313 # repo:release-it/release-it
@@ -1583,6 +1531,7 @@ data:
     - 3695744 # repo:commonsguy/cw-omnibus
     - 8069107 # repo:christiannaths/redacted-font
     - 62879525 # repo:Louiszhai/tool
+    - 295774370 # repo:mdn/content
     - 279908689 # repo:carlospolop/hacktricks
     - 56788834 # repo:egoist/poi
     - 306187288 # repo:ShameCom/ShameCom
@@ -1946,7 +1895,6 @@ data:
     - 108454049 # repo:tkipf/pygcn
     - 45813807 # repo:dzharii/awesome-elasticsearch
     - 195499749 # repo:Tencent/kbone
-    - 244694174 # repo:project-chip/connectedhomeip
     - 167962362 # repo:hansonwang99/Spring-Boot-In-Action
     - 55123440 # repo:soapyigu/LeetCode-Swift
     - 22484898 # repo:docker-library/docs
@@ -2137,7 +2085,6 @@ data:
     - 33951348 # repo:kolodny/exercises
     - 59573221 # repo:sobolevn/awesome-cryptography
     - 253254795 # repo:olexale/flutter_roadmap
-    - 3618133 # repo:web-platform-tests/wpt
     - 51348290 # repo:brianway/java-learning
     - 145101484 # repo:anjoy8/Blog.Core
     - 412151953 # repo:BoltzmannEntropy/interviews.ai
@@ -2194,7 +2141,6 @@ data:
     - 16099249 # repo:DataScienceSpecialization/courses
     - 1262871 # repo:bebraw/jswiki
     - 149249432 # repo:golang-design/under-the-hood
-    - 63882194 # repo:projectcalico/calico
     - 63936619 # repo:crazycodeboy/RNStudyNotes
     - 209956937 # repo:reed-hong/awesome-libra
     - 103684801 # repo:walidshaari/Kubernetes-Certified-Administrator
@@ -2228,7 +2174,6 @@ data:
     - 196299328 # repo:649453932/Chinese-Text-Classification-Pytorch
     - 83542585 # repo:wisdompeak/LeetCode
     - 79901724 # repo:JohnSundell/SwiftTips
-    - 462597790 # repo:aptos-labs/aptos-core
     - 207623149 # repo:cantaro86/Financial-Models-Numerical-Methods
     - 102755229 # repo:coinpride/CryptoList
     - 187315329 # repo:Bypass007/Emergency-Response-Notes
@@ -2386,7 +2331,6 @@ data:
     - 37750203 # repo:w3c/IntersectionObserver
     - 119754321 # repo:joho/awesome-code-review
     - 29079233 # repo:linyiqun/DataMiningAlgorithm
-    - 7248956 # repo:ValveSoftware/steam-for-linux
     - 49948104 # repo:PaulSec/awesome-sec-talks
     - 1046208 # repo:functional-koans/clojure-koans
     - 77338532 # repo:cross-rs/cross

@@ -11,8 +11,10 @@ data:
     - 48378947 # repo:fatedier/frp
     - 16408992 # repo:neovim/neovim
     - 4311796 # repo:adam-p/markdown-here
-    - 15111821 # repo:grafana/grafana
+    - 12888993 # repo:home-assistant/core
+    - 45936895 # repo:Automattic/wp-calypso
     - 39464018 # repo:apache/superset
+    - 60010673 # repo:elementor/elementor
     - 32689863 # repo:3b1b/manim
     - 14712850 # repo:syncthing/syncthing
     - 114747226 # repo:deepfakes/faceswap
@@ -47,7 +49,6 @@ data:
     - 44662669 # repo:dbeaver/dbeaver
     - 377496562 # repo:AppFlowy-IO/AppFlowy
     - 21125024 # repo:typicode/husky
-    - 33884891 # repo:apache/airflow
     - 13584262 # repo:webtorrent/webtorrent
     - 19745004 # repo:odoo/odoo
     - 180190854 # repo:appwrite/appwrite
@@ -106,7 +107,6 @@ data:
     - 107286889 # repo:schollz/croc
     - 13862381 # repo:DrKLO/Telegram
     - 27388642 # repo:homebridge/homebridge
-    - 65214191 # repo:envoyproxy/envoy
     - 53632140 # repo:zyedidia/micro
     - 162815665 # repo:notable/notable
     - 45721011 # repo:apache/skywalking
@@ -134,15 +134,34 @@ data:
     - 1206546 # repo:winstonjs/winston
     - 20773773 # repo:bazelbuild/bazel
     - 2051226 # repo:eligrey/FileSaver.js
+    - 164140756 # repo:files-community/Files
     - 307489284 # repo:remix-run/remix
+    - 45195614 # repo:Jackett/Jackett
+    - 7569578 # repo:discourse/discourse
+    - 191820100 # repo:google/mediapipe
     - 32665718 # repo:railsware/upterm
+    - 27737393 # repo:qmk/qmk_firmware
+    - 237523442 # repo:tailscale/tailscale
+    - 7248956 # repo:ValveSoftware/steam-for-linux
     - 192632000 # repo:dapr/dapr
     - 302603001 # repo:qier222/YesPlayMusic
     - 101782647 # repo:facebookresearch/fairseq
+    - 22456440 # repo:ppy/osu
+    - 167694194 # repo:blakeblackshear/frigate
+    - 52281283 # repo:mastodon/mastodon
+    - 42009758 # repo:MetaMask/metamask-extension
+    - 76822722 # repo:Kenshin/simpread
+    - 35726310 # repo:dart-lang/sdk
+    - 102578345 # repo:coolsnowwolf/lede
+    - 54173593 # repo:storybookjs/storybook
+    - 1864233 # repo:frappe/erpnext
     - 91629816 # repo:freqtrade/freqtrade
     - 34777562 # repo:ossrs/srs
     - 21484781 # repo:jumpserver/jumpserver
+    - 11125589 # repo:keycloak/keycloak
+    - 275993885 # repo:appsmithorg/appsmith
     - 38307428 # repo:graphql/graphql-js
+    - 244694174 # repo:project-chip/connectedhomeip
     - 43807251 # repo:tachiyomiorg/tachiyomi
     - 234798675 # repo:bevyengine/bevy
     - 90902132 # repo:flameshot-org/flameshot
@@ -168,7 +187,6 @@ data:
     - 7833168 # repo:elastic/kibana
     - 73614722 # repo:CarGuo/GSYVideoPlayer
     - 67836789 # repo:tokio-rs/tokio
-    - 65750241 # repo:expo/expo
     - 14614344 # repo:Swordfish90/cool-retro-term
     - 48769241 # repo:penpot/penpot
     - 49662222 # repo:oracle/graal
@@ -178,7 +196,6 @@ data:
     - 126365965 # repo:linlinjava/litemall
     - 198071756 # repo:huiyadanli/RevokeMsgPatcher
     - 22046023 # repo:facebook/flux
-    - 3351871 # repo:qbittorrent/qBittorrent
     - 37912398 # repo:nginx/nginx
     - 53266139 # repo:BoostIO/BoostNote-Legacy
     - 82238168 # repo:monicahq/monica
@@ -378,7 +395,6 @@ data:
     - 1234783 # repo:mobile-shell/mosh
     - 43134061 # repo:fengyuanchen/cropperjs
     - 130430977 # repo:kubesphere/kubesphere
-    - 2310495 # repo:ceph/ceph
     - 44111975 # repo:luin/medis
     - 26133979 # repo:mozilla-mobile/firefox-ios
     - 19448700 # repo:leanote/leanote
@@ -411,7 +427,6 @@ data:
     - 165548191 # repo:carlospolop/PEASS-ng
     - 54783462 # repo:daniulive/SmarterStreaming
     - 50224698 # repo:vercel/micro
-    - 210716005 # repo:dotnet/runtime
     - 27786663 # repo:exceljs/exceljs
     - 112070198 # repo:KurtBestor/Hitomi-Downloader
     - 44402056 # repo:electron/electron-api-demos
@@ -630,7 +645,6 @@ data:
     - 10652377 # repo:miniMAC/magic
     - 35780977 # repo:ImageMagick/ImageMagick
     - 19696006 # repo:playcanvas/engine
-    - 93444615 # repo:hashicorp/terraform-provider-aws
     - 43175432 # repo:rbgirshick/py-faster-rcnn
     - 2465723 # repo:Sonarr/Sonarr
     - 15652312 # repo:zhukov/webogram
@@ -654,11 +668,11 @@ data:
     - 343078060 # repo:Lissy93/dashy
     - 50255244 # repo:raulmur/ORB_SLAM2
     - 5973855 # repo:CleverRaven/Cataclysm-DDA
+    - 2884111 # repo:magento/magento2
     - 18586705 # repo:nopSolutions/nopCommerce
     - 40089578 # repo:janeczku/calibre-web
     - 30870954 # repo:AlessandroZ/LaZagne
     - 24120252 # repo:vladikoff/chromeos-apk
-    - 156939672 # repo:microsoft/onnxruntime
     - 7560589 # repo:JeffreySu/WeiXinMPSDK
     - 122728925 # repo:terkelg/prompts
     - 51830024 # repo:popcorn-official/popcorn-desktop
@@ -1723,9 +1737,14 @@ data:
     - 162028712 # repo:leerob/leerob.io
     - 422005902 # repo:ThioJoe/YT-Spammer-Purge
     - 222578036 # repo:WeiYe-Jing/datax-web
+    - 307260205 # repo:yt-dlp/yt-dlp
+    - 126314606 # repo:mozilla-mobile/fenix
     - 3769419 # repo:jhollingworth/bootstrap-wysihtml5
     - 145406928 # repo:RikkaApps/Riru
     - 184311 # repo:tomaz/appledoc
+    - 22844864 # repo:matrix-org/synapse
+    - 684382 # repo:bigbluebutton/bigbluebutton
+    - 143324737 # repo:diasurgical/devilutionX
     - 46263109 # repo:nikolaeu/numi
     - 7705639 # repo:merbanan/rtl_433
     - 38385659 # repo:Jacksgong/JKeyboardPanelSwitch
@@ -2038,6 +2057,7 @@ data:
     - 117741 # repo:carltongibson/django-filter
     - 67164440 # repo:freeCodeCamp/mail-for-good
     - 81354891 # repo:qustavo/httplab
+    - 1181927 # repo:bitcoin/bitcoin
     - 22718907 # repo:Triple-T/gradle-play-publisher
     - 9395939 # repo:ZoneMinder/zoneminder
     - 117102183 # repo:ChilliCream/hotchocolate
