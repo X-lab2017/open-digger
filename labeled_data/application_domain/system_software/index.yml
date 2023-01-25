@@ -12,6 +12,7 @@ data:
     - 41986369 # repo:pingcap/tidb
     - 16563587 # repo:cockroachdb/cockroach
     - 6452529 # repo:rethinkdb/rethinkdb
+    - 4542716 # repo:NixOS/nixpkgs
     - 60246359 # repo:ClickHouse/ClickHouse
     - 105919803 # repo:facebookresearch/Detectron
     - 269336148 # repo:sickcodes/Docker-OSX
@@ -75,7 +76,6 @@ data:
     - 101399935 # repo:zalandoresearch/fashion-mnist
     - 179354282 # repo:acidanthera/OpenCorePkg
     - 32873313 # repo:systemd/systemd
-    - 22844864 # repo:matrix-org/synapse
     - 2162719 # repo:xdissent/ievms
     - 250761246 # repo:aristocratos/bashtop
     - 54230994 # repo:coredns/coredns
@@ -88,6 +88,7 @@ data:
     - 174164624 # repo:metafizzy/zdog
     - 70127218 # repo:espressif/arduino-esp32
     - 367284699 # repo:lima-vm/lima
+    - 46089560 # repo:containerd/containerd
     - 4022652 # repo:gomodule/redigo
     - 3447593 # repo:cnodejs/nodeclub
     - 99822164 # repo:aksakalli/gtop
@@ -103,7 +104,6 @@ data:
     - 24494032 # repo:mysql/mysql-server
     - 7229063 # repo:dnschneid/crouton
     - 9060347 # repo:google/traceur-compiler
-    - 80862584 # repo:WordPress/gutenberg
     - 437011 # repo:openzfs/zfs
     - 105702631 # repo:IBM/plex
     - 78983309 # repo:developit/mitt
@@ -129,7 +129,6 @@ data:
     - 1787090 # repo:jigish/slate
     - 47878060 # repo:i18next/react-i18next
     - 98103322 # repo:zhoutaoo/SpringCloud
-    - 684382 # repo:bigbluebutton/bigbluebutton
     - 123625732 # repo:microsoft/fast
     - 24293205 # repo:ashleymills/Reachability.swift
     - 587311 # repo:omniauth/omniauth
@@ -225,7 +224,6 @@ data:
     - 11654790 # repo:techfort/LokiJS
     - 200321698 # repo:rui314/chibicc
     - 49401416 # repo:spacejam/sled
-    - 126314606 # repo:mozilla-mobile/fenix
     - 35968578 # repo:uswds/uswds
     - 410430370 # repo:IceWhaleTech/CasaOS
     - 5741345 # repo:noodlewerk/NWPusher
@@ -236,9 +234,7 @@ data:
     - 273913340 # repo:khuedoan/homelab
     - 337594329 # repo:pppscn/SmsForwarder
     - 67938435 # repo:jpbruinsslot/slack-term
-    - 92205085 # repo:aws/aws-sam-cli
     - 21490963 # repo:pedrovgs/EffectiveAndroidUI
-    - 143324737 # repo:diasurgical/devilutionX
     - 139652405 # repo:wszqkzqk/deepin-wine-ubuntu
     - 187922067 # repo:microsoft/WSL2-Linux-Kernel
     - 268501098 # repo:skydoves/Pokedex
@@ -301,6 +297,7 @@ data:
     - 110027931 # repo:metallb/metallb
     - 1259258 # repo:klange/toaruos
     - 97860533 # repo:glushchenko/fsnotes
+    - 2310495 # repo:ceph/ceph
     - 692798 # repo:b4winckler/macvim
     - 2567806 # repo:KnuffApp/Knuff
     - 537699 # repo:Kitware/CMake
@@ -375,8 +372,9 @@ data:
     - 94530674 # repo:Syllo/nvtop
     - 3119126 # repo:symfony/filesystem
     - 101866073 # repo:alibaba/AliOS-Things
-    - 2464908 # repo:joomla/joomla-cms
+    - 7202769 # repo:emqx/emqx
     - 7370241 # repo:RIOT-OS/RIOT
+    - 186024298 # repo:nushell/nushell
     - 19784232 # repo:mesonbuild/meson
     - 3954884 # repo:webpack-contrib/css-loader
     - 3385297 # repo:riemann/riemann
@@ -419,4 +417,3 @@ data:
     - 115397686 # repo:fo40225/tensorflow-windows-wheel
     - 76990724 # repo:franciscop/server
     - 74174143 # repo:scinfu/SwiftSoup
-    - 57333709 # repo:kubernetes/test-infra

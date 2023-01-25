@@ -13,6 +13,10 @@ data:
     - 24195339 # repo:angular/angular
     - 88464704 # repo:PanJiaChen/vue-element-admin
     - 943149 # repo:d3/d3
+    - 65711522 # repo:PaddlePaddle/Paddle
+    - 155220641 # repo:huggingface/transformers
+    - 139914932 # repo:quarkusio/quarkus
+    - 74660642 # repo:taichi-dev/taichi
     - 23088740 # repo:axios/axios
     - 70107786 # repo:vercel/next.js
     - 21540759 # repo:avelino/awesome-go
@@ -312,7 +316,6 @@ data:
     - 172521926 # repo:pmndrs/react-three-fiber
     - 3122202 # repo:Reactive-Extensions/RxJS
     - 157166750 # repo:lensapp/lens
-    - 3623050 # repo:Homebrew/homebrew-cask
     - 7634677 # repo:openssl/openssl
     - 26102180 # repo:afollestad/material-dialogs
     - 241805592 # repo:rome/tools
@@ -381,7 +384,6 @@ data:
     - 527644 # repo:less/less.js
     - 27729907 # repo:grpc/grpc-go
     - 3422939 # repo:dropzone/dropzone
-    - 68312233 # repo:microsoft/vcpkg
     - 1413492 # repo:defunkt/jquery-pjax
     - 2862290 # repo:nostra13/Android-Universal-Image-Loader
     - 11075527 # repo:vim-airline/vim-airline
@@ -1419,7 +1421,6 @@ data:
     - 14128006 # repo:hashicorp/raft
     - 2337852 # repo:hyperopt/hyperopt
     - 139910229 # repo:npm/cli
-    - 295774370 # repo:mdn/content
     - 6376337 # repo:pocoproject/poco
     - 4242230 # repo:PHPOffice/PHPWord
     - 28008600 # repo:oz123/awesome-c
@@ -1507,7 +1508,6 @@ data:
     - 16621659 # repo:real-logic/aeron
     - 82552157 # repo:jspreadsheet/ce
     - 14303048 # repo:mamedev/mame
-    - 39211337 # repo:flutter/engine
     - 12353678 # repo:ikew0ng/SwipeBackLayout
     - 1834942 # repo:kif-framework/KIF
     - 26884725 # repo:OrchardCMS/OrchardCore
@@ -1540,7 +1540,6 @@ data:
     - 177236664 # repo:goproxy/goproxy.cn
     - 6899875 # repo:opf/openproject
     - 524305 # repo:mattn/emmet-vim
-    - 197275551 # repo:microsoft/winget-pkgs
     - 20702627 # repo:iron/iron
     - 56398352 # repo:telegraf/telegraf
     - 17941520 # repo:neuecc/UniRx
@@ -2190,8 +2189,11 @@ data:
     - 188726142 # repo:sdras/cssgridgenerator
     - 9037631 # repo:theintern/intern
     - 133567063 # repo:berstend/puppeteer-extra
+    - 90796663 # repo:puppeteer/puppeteer
+    - 94911145 # repo:facebook/docusaurus
     - 4600400 # repo:Redth/PushSharp
     - 68553109 # repo:janhuenermann/neurojs
+    - 28407613 # repo:ag-grid/ag-grid
     - 10160141 # repo:doxygen/doxygen
     - 106386177 # repo:Jimmey-Jiang/Common.Utility
     - 22644637 # repo:OptimalBits/redbird
@@ -2224,6 +2226,7 @@ data:
     - 10501638 # repo:AngleSharp/AngleSharp
     - 151528653 # repo:liuhuanyong/QASystemOnMedicalKG
     - 44761786 # repo:ibireme/YYModel
+    - 146641150 # repo:tektoncd/pipeline
     - 79269625 # repo:trufflesuite/ganache-ui
     - 243478241 # repo:adi1090x/rofi
     - 2967938 # repo:blueimp/JavaScript-Load-Image
@@ -2236,6 +2239,7 @@ data:
     - 161045574 # repo:johnthagen/min-sized-rust
     - 97627474 # repo:stalniy/casl
     - 203666 # repo:fog/fog
+    - 33015583 # repo:keras-team/keras
     - 797129 # repo:node-apn/node-apn
     - 36021747 # repo:harc/ohm
     - 78452015 # repo:loopbackio/loopback-next
@@ -2535,7 +2539,6 @@ data:
     - 13677 # repo:weavejester/compojure
     - 6887156 # repo:Yggdroot/indentLine
     - 26176273 # repo:coolbeet/CBStoreHouseRefreshControl
-    - 2928944 # repo:Azure/azure-sdk-for-net
     - 52960120 # repo:lcodecorex/TwinklingRefreshLayout
     - 199730019 # repo:tensortrade-org/tensortrade
     - 440647 # repo:jquery-backstretch/jquery-backstretch

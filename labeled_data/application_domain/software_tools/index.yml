@@ -15,6 +15,7 @@ data:
     - 3470471 # repo:FortAwesome/Font-Awesome
     - 52631841 # repo:gothinkster/realworld
     - 7691631 # repo:moby/moby
+    - 52855516 # repo:Homebrew/homebrew-core
     - 612230 # repo:nvm-sh/nvm
     - 10744183 # repo:netdata/netdata
     - 44838949 # repo:apple/swift
@@ -50,12 +51,16 @@ data:
     - 246335987 # repo:ventoy/Ventoy
     - 42408804 # repo:traefik/traefik
     - 62367558 # repo:vercel/hyper
+    - 44971752 # repo:ethereum/EIPs
+    - 3618133 # repo:web-platform-tests/wpt
+    - 40892817 # repo:ethereum/solidity
     - 214587193 # repo:supabase/supabase
     - 58836534 # repo:algorithm-visualizer/algorithm-visualizer
     - 3100121 # repo:nwjs/nw.js
     - 77189043 # repo:bailicangdu/vue2-elm
     - 33791743 # repo:x64dbg/x64dbg
     - 130464961 # repo:sharkdp/bat
+    - 235901813 # repo:PostHog/posthog
     - 138547797 # repo:FiloSottile/mkcert
     - 8681349 # repo:huginn/huginn
     - 110446844 # repo:marktext/marktext
@@ -72,7 +77,6 @@ data:
     - 61137153 # repo:evanw/esbuild
     - 3774328 # repo:wg/wrk
     - 101394335 # repo:ant-design/ant-design-pro
-    - 307260205 # repo:yt-dlp/yt-dlp
     - 3721224 # repo:nolimits4web/swiper
     - 72495579 # repo:go-gitea/gitea
     - 33263118 # repo:gorhill/uBlock
@@ -249,7 +253,6 @@ data:
     - 32610336 # repo:orhanobut/logger
     - 768345 # repo:eczarny/spectacle
     - 30003816 # repo:Powerlevel9k/powerlevel9k
-    - 27737393 # repo:qmk/qmk_firmware
     - 82588597 # repo:youfou/wxpy
     - 280363952 # repo:umami-software/umami
     - 118654121 # repo:GoogleContainerTools/skaffold
@@ -321,6 +324,7 @@ data:
     - 159981830 # repo:spicetify/spicetify-cli
     - 36653430 # repo:hashicorp/nomad
     - 10064545 # repo:systemjs/systemjs
+    - 29261473 # repo:minio/minio
     - 165536154 # repo:typescript-eslint/typescript-eslint
     - 5569059 # repo:mishoo/UglifyJS
     - 138312 # repo:capistrano/capistrano
@@ -561,10 +565,12 @@ data:
     - 110401202 # repo:easzlab/kubeasz
     - 4165675 # repo:smicallef/spiderfoot
     - 175129788 # repo:microsoft/pyright
+    - 63882194 # repo:projectcalico/calico
     - 17203748 # repo:dexie/Dexie.js
     - 293860197 # repo:lowlighter/metrics
     - 5508585 # repo:YOURLS/YOURLS
     - 118322286 # repo:felixse/FluentTerminal
+    - 72891330 # repo:kubernetes/ingress-nginx
     - 120542434 # repo:iv-org/invidious
     - 53131903 # repo:librespeed/speedtest
     - 14930729 # repo:boot2docker/boot2docker
@@ -591,11 +597,20 @@ data:
     - 21641241 # repo:Masterminds/glide
     - 46769790 # repo:solid/solid
     - 283046497 # repo:airbytehq/airbyte
+    - 3623050 # repo:Homebrew/homebrew-cask
+    - 2928944 # repo:Azure/azure-sdk-for-net
+    - 68312233 # repo:microsoft/vcpkg
     - 112027892 # repo:brianegan/flutter_architecture_samples
     - 44050066 # repo:shwenzhang/AndResGuard
+    - 39211337 # repo:flutter/engine
+    - 3351871 # repo:qbittorrent/qBittorrent
+    - 57333709 # repo:kubernetes/test-infra
     - 21108956 # repo:uBlock-LLC/uBlock
+    - 156939672 # repo:microsoft/onnxruntime
     - 32707901 # repo:electron/electron-packager
     - 50936918 # repo:vishnubob/wait-for-it
+    - 92205085 # repo:aws/aws-sam-cli
+    - 65214191 # repo:envoyproxy/envoy
     - 152058245 # repo:XiaoMi/soar
     - 324473895 # repo:leiurayer/downkyi
     - 2168780 # repo:minetest/minetest
@@ -697,10 +712,12 @@ data:
     - 2851691 # repo:joemccann/dillinger
     - 2476162 # repo:fail2ban/fail2ban
     - 263993730 # repo:mertJF/tailblocks
+    - 52796596 # repo:netbox-community/netbox
     - 301830590 # repo:benbjohnson/litestream
     - 5839692 # repo:webpack/webpack-dev-server
     - 109872620 # repo:paritytech/substrate
     - 20893207 # repo:primer/octicons
+    - 53370988 # repo:GoogleChrome/lighthouse
     - 85012942 # repo:yandex/gixy
     - 94380465 # repo:styled-system/styled-system
     - 12261520 # repo:smartystreets/goconvey
@@ -918,6 +935,12 @@ data:
     - 310456670 # repo:BuilderIO/mitosis
     - 3328572 # repo:getsentry/sentry-javascript
     - 3796591 # repo:ai/easings.net
+    - 462597790 # repo:aptos-labs/aptos-core
+    - 301793434 # repo:mattermost/focalboard
+    - 139199684 # repo:PrefectHQ/prefect
+    - 62921553 # repo:rook/rook
+    - 538746 # repo:ruby/ruby
+    - 50565430 # repo:pnpm/pnpm
     - 14454268 # repo:briangonzalez/jquery.adaptive-backgrounds.js
     - 34854605 # repo:Terry-Mao/goim
     - 17592572 # repo:bpmn-io/bpmn-js
@@ -1247,16 +1270,25 @@ data:
     - 175192867 # repo:chaosblade-io/chaosblade
     - 13863797 # repo:Pixelkit/PixelKit-Bootstrap-UI-Kits
     - 429851205 # repo:ciderapp/Cider
+    - 130879558 # repo:gitpod-io/gitpod
     - 2468290 # repo:phpbrew/phpbrew
+    - 80862584 # repo:WordPress/gutenberg
     - 271553915 # repo:Sequel-Ace/Sequel-Ace
     - 5773100 # repo:greatsuspender/thegreatsuspender
     - 79954708 # repo:dominikh/go-tools
+    - 15111821 # repo:grafana/grafana
+    - 75821432 # repo:llvm/llvm-project
+    - 65750241 # repo:expo/expo
     - 118854343 # repo:Kaggle/kaggle-api
     - 137987910 # repo:GoogleChromeLabs/ProjectVisBug
     - 19051806 # repo:StackStorm/st2
+    - 93444615 # repo:hashicorp/terraform-provider-aws
+    - 33884891 # repo:apache/airflow
     - 52897468 # repo:kazzkiq/balloon.css
+    - 2464908 # repo:joomla/joomla-cms
     - 18320947 # repo:pyston/pyston_v1
     - 2201052 # repo:woocommerce/FlexSlider
+    - 210716005 # repo:dotnet/runtime
     - 67013973 # repo:rubensousa/GravitySnapHelper
     - 17517521 # repo:auth0/java-jwt
     - 261124045 # repo:slint-ui/slint
@@ -1382,7 +1414,6 @@ data:
     - 28566982 # repo:gpbl/react-day-picker
     - 306147 # repo:tstack/lnav
     - 1811965 # repo:cucumber/cucumber-js
-    - 60010673 # repo:elementor/elementor
     - 10855394 # repo:itsgoingd/clockwork
     - 286500101 # repo:danielgatis/rembg
     - 184366 # repo:opal/opal
@@ -1547,6 +1578,11 @@ data:
     - 49515 # repo:troessner/reek
     - 123394155 # repo:boyter/scc
     - 26368422 # repo:imazen/imageflow
+    - 146327667 # repo:vectordotdev/vector
+    - 31558937 # repo:gravitational/teleport
+    - 302322 # repo:gradle/gradle
+    - 48109239 # repo:cilium/cilium
+    - 125098880 # repo:ValveSoftware/Proton
     - 21269387 # repo:fastmonkeys/stellar
     - 16665655 # repo:webpack-contrib/sass-loader
     - 381453955 # repo:hrsh7th/nvim-cmp
