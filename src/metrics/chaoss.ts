@@ -261,12 +261,12 @@ ${getOutterOrderAndLimit(config, 'issues_close_count')}`;
   });
 };
 
-interface IssueResolutionDurationOptions extends TimeDurationOption {
+interface ResolutionDurationOptions extends TimeDurationOption {
   by: 'open' | 'close';
 }
-export const chaossIssueResolutionDuration = async (config: QueryConfig<IssueResolutionDurationOptions>) => {
+const chaossResolutionDuration = async (config: QueryConfig<ResolutionDurationOptions>, type: 'issue' | 'change request') => {
   config = getMergedConfig(config);
-  const whereClauses: string[] = ["type = 'IssuesEvent'"];
+  const whereClauses: string[] = type === 'issue' ? ["type = 'IssuesEvent'"] : ["type = 'PullRequestEvent'"];
   const repoWhereClause = await getRepoWhereClauseForClickhouse(config);
   if (repoWhereClause) whereClauses.push(repoWhereClause);
 
@@ -334,6 +334,12 @@ ${getOutterOrderAndLimit(config, sortBy, sortBy === 'levels' ? 1 : undefined)}`;
     };
   });
 };
+
+export const chaossIssueResolutionDuration = (config: QueryConfig<ResolutionDurationOptions>) =>
+  chaossResolutionDuration(config, 'issue');
+
+export const chaossChangeRequestResolutionDuration = (config: QueryConfig<ResolutionDurationOptions>) =>
+  chaossResolutionDuration(config, 'change request');
 
 export const chaossIssueResponseTime = async (config: QueryConfig<TimeDurationOption>) => {
   config = getMergedConfig(config);
