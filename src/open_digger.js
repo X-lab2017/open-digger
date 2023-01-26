@@ -43,6 +43,7 @@ const openDigger = {
       newContributors: func.chaossNewContributors,
       changeRequestsDuration: func.chaossChangeRequestsDuration,
       issueResponseTime: func.chaossIssueResponseTime,
+      changeRequestResponseTime: func.chaossChangeRequestResponseTime,
       technicalFork: func.chaossTechnicalFork,
       changeRequestsAcceptanceRatio: func.chaossChangeRequestsAcceptanceRatio,
       repoActiveDatesAndTimes: func.chaossRepoActiveDatesAndTimes,

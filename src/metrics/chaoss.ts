@@ -341,9 +341,9 @@ export const chaossIssueResolutionDuration = (config: QueryConfig<ResolutionDura
 export const chaossChangeRequestResolutionDuration = (config: QueryConfig<ResolutionDurationOptions>) =>
   chaossResolutionDuration(config, 'change request');
 
-export const chaossIssueResponseTime = async (config: QueryConfig<TimeDurationOption>) => {
+const chaossResponseTime = async (config: QueryConfig<TimeDurationOption>, type: 'issue' | 'change request') => {
   config = getMergedConfig(config);
-  const whereClauses: string[] = ["type IN ('IssueCommentEvent', 'IssuesEvent') AND actor_login NOT LIKE '%[bot]'  "];
+  const whereClauses: string[] = type === 'issue' ? ["type IN ('IssueCommentEvent', 'IssuesEvent') AND actor_login NOT LIKE '%[bot]'"] : ["type IN ('IssueCommentEvent', 'PullRequestEvent', 'PullRequestReviewCommentEvent', 'PullRequestReviewEvent') AND actor_login NOT LIKE '%[bot]'"];
   const repoWhereClause = await getRepoWhereClauseForClickhouse(config);
   if (repoWhereClause) whereClauses.push(repoWhereClause);
   const endDate = new Date(`${config.endYear}-${config.endMonth}-1`);
@@ -354,7 +354,7 @@ export const chaossIssueResponseTime = async (config: QueryConfig<TimeDurationOp
   const sortBy = filterEnumType(config.options?.sortBy, timeDurationConstants.sortByArray, 'avg');
 
   const sql = `
-SELECT 
+SELECT
   id,
   argMax(name, time),
   ${getGroupArrayInsertAtClauseForClickhouse(config, { key: `avg`, defaultValue: 'NaN' })},
@@ -408,6 +408,11 @@ ${getOutterOrderAndLimit(config, sortBy, sortBy === 'levels' ? 1 : undefined)}`;
     };
   });
 };
+
+export const chaossIssueResponseTime = (config: QueryConfig<TimeDurationOption>) => chaossResponseTime(config, 'issue');
+
+export const chaossChangeRequestResponseTime = (config: QueryConfig<TimeDurationOption>) =>
+  chaossResponseTime(config, 'change request');
 
 // Evolution - Code Development Efficiency
 export const chaossChangeRequestsAccepted = async (config: QueryConfig) => {
