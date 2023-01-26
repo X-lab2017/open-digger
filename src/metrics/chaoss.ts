@@ -381,7 +381,7 @@ FROM
       dateDiff('${unit}', issue_created_at, first_responded_at) AS response_time,
       multiIf(${thresholds.map((t, i) => `response_time <= ${t}, ${i}`)}, ${thresholds.length}) AS response_level
     FROM gh_events
-    WHERE ${whereClauses.join('AND')}
+    WHERE ${whereClauses.join(' AND ')}
     GROUP BY repo_id, org_id, issue_number
     HAVING issue_created_at >= toDate('${config.startYear}-${config.startMonth}-1') 
              AND issue_created_at < toDate('${endDate.getFullYear()}-${endDate.getMonth() + 1}-1')
@@ -413,6 +413,78 @@ export const chaossIssueResponseTime = (config: QueryConfig<TimeDurationOption>)
 
 export const chaossChangeRequestResponseTime = (config: QueryConfig<TimeDurationOption>) =>
   chaossResponseTime(config, 'change request');
+
+export const chaossAge = async (config: QueryConfig<TimeDurationOption>, type: 'issue' | 'change request') => {
+  config = getMergedConfig(config);
+  config.groupTimeRange = undefined;  // remove groupTimeRange option
+  const whereClauses: string[] = type === 'issue' ? ["type='IssuesEvent'"] : ["type='PullRequestEvent'"];
+  const repoWhereClause = await getRepoWhereClauseForClickhouse(config);
+  if (repoWhereClause) whereClauses.push(repoWhereClause);
+  const endDate = new Date(`${config.endYear}-${config.endMonth}-1`);
+  endDate.setMonth(config.endMonth);  // find next month
+  whereClauses.push(`created_at < toDate('${endDate.getFullYear()}-${endDate.getMonth() + 1}-1')`);
+  const unit = filterEnumType(config.options?.unit, timeDurationConstants.unitArray, 'day');
+  const thresholds = config.options?.thresholds ?? [15, 30, 60];
+  const ranges = [...thresholds, -1];
+  const sortBy = filterEnumType(config.options?.sortBy, timeDurationConstants.sortByArray, 'avg');
+
+  const sql = `
+SELECT
+  id,
+  argMax(name, time),
+  ${getGroupArrayInsertAtClauseForClickhouse(config, { key: `avg`, defaultValue: 'NaN' })},
+  ${getGroupArrayInsertAtClauseForClickhouse(config, { key: 'levels', value: 'age_levels', defaultValue: `[${ranges.map(_ => `0`).join(',')}]`, noPrecision: true })},
+  ${timeDurationConstants.quantileArray.map(q => getGroupArrayInsertAtClauseForClickhouse(config, { key: `quantile_${q}`, defaultValue: 'NaN' })).join(',')}
+FROM
+(
+  SELECT
+    ${getGroupTimeAndIdClauseForClickhouse(config, 'repo')},
+    avg(age) AS avg,
+    ${timeDurationConstants.quantileArray.map(q => `quantile(${q / 4})(age) AS quantile_${q}`).join(',')},
+    [${ranges.map((_t, i) => `countIf(age_level = ${i})`).join(',')}] AS age_levels
+  FROM
+  (
+    SELECT
+      repo_id,
+      argMax(repo_name, created_at) AS repo_name,
+      org_id,
+      argMax(org_login, created_at) AS org_login,
+      issue_number,
+      minIf(created_at, action = 'opened') AS opened_at,
+      argMax(action, created_at) AS last_action,
+      dateDiff('${unit}', opened_at, toDate('${endDate.getFullYear()}-${endDate.getMonth() + 1}-1')) AS age,
+      multiIf(${thresholds.map((t, i) => `age <= ${t}, ${i}`)}, ${thresholds.length}) AS age_level
+    FROM gh_events
+    WHERE ${whereClauses.join(' AND ')}
+    GROUP BY repo_id, org_id, issue_number
+    HAVING opened_at > toDate('1970-01-01') AND last_action != 'closed'
+  )
+  GROUP BY id, time
+  ${getInnerOrderAndLimit(config, 'age')}
+)
+GROUP BY id
+${getOutterOrderAndLimit(config, sortBy, sortBy === 'levels' ? 1 : undefined)}`;
+
+  const result: any = await clickhouse.query(sql);
+  return result.map(row => {
+    const [id, name, avg, levels, quantile_0, quantile_1, quantile_2, quantile_3, quantile_4] = row;
+    return {
+      id,
+      name,
+      avg,
+      levels,
+      quantile_0,
+      quantile_1,
+      quantile_2,
+      quantile_3,
+      quantile_4,
+    };
+  });
+};
+
+export const chaossIssueAge = (config: QueryConfig<TimeDurationOption>) => chaossAge(config, 'issue');
+
+export const chassChangeRequestAge = (config: QueryConfig<TimeDurationOption>) => chaossAge(config, 'change request');
 
 // Evolution - Code Development Efficiency
 export const chaossChangeRequestsAccepted = async (config: QueryConfig) => {

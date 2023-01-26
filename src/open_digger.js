@@ -48,6 +48,8 @@ const openDigger = {
       changeRequestsAcceptanceRatio: func.chaossChangeRequestsAcceptanceRatio,
       repoActiveDatesAndTimes: func.chaossRepoActiveDatesAndTimes,
       userActiveDatesAndTimes: func.chaossUserActiveDatesAndTimes,
+      issueAge: func.chaossIssueAge,
+      changeRequestAge: func.chaossChangeRequestAge,
     },
     xlab: {
       repoStars: func.repoStars,
