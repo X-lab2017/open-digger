@@ -50,6 +50,7 @@ const openDigger = {
     xlab: {
       repoStars: func.repoStars,
       repoParticipants: func.repoParticipants,
+      userEquivalentTimeZone: func.userEquivalentTimeZone,
     },
   },
   relation: {
