@@ -2,7 +2,7 @@ import { getRepoOpenrank, getRepoActivity, getUserOpenrank, getUserActivity, get
 import {
   chaossCodeChangeCommits, chaossBusFactor, chaossIssuesNew, chaossIssuesClosed, chaossChangeRequestsAccepted,
   chaossChangeRequestsDeclined, chaossIssueResolutionDuration, chaossCodeChangeLines, chaossTechnicalFork,
-  chaossChangeRequests, chaossChangeRequestReviews, chaossNewContributors, chaossChangeRequestsDuration, chaossIssueResponseTime, chaossChangeRequestsAcceptanceRatio, chaossIssuesActive, chaossActiveDatesAndTimes,
+  chaossChangeRequests, chaossChangeRequestReviews, chaossNewContributors, chaossChangeRequestsDuration, chaossIssueResponseTime, chaossChangeRequestsAcceptanceRatio, chaossIssuesActive, chaossActiveDatesAndTimes, chaossChangeRequestResolutionDuration,
 } from './chaoss';
 import { repoStars, repoIssueComments, repoParticipants, userEquivalentTimeZone } from './metrics';
 import { getRelatedUsers } from './related_users';
@@ -24,6 +24,7 @@ module.exports = {
   chaossChangeRequestsAccepted: chaossChangeRequestsAccepted,
   chaossChangeRequestsDeclined: chaossChangeRequestsDeclined,
   chaossIssueResolutionDuration: chaossIssueResolutionDuration,
+  chaossChangeRequestResolutionDuration: chaossChangeRequestResolutionDuration,
   chaossIssueResponseTime: chaossIssueResponseTime,
   chaossCodeChangeLines: chaossCodeChangeLines,
   chaossTechnicalFork: chaossTechnicalFork,

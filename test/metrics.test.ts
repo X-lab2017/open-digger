@@ -91,6 +91,18 @@ describe('Index and metric test', () => {
       const p = getParams('levels');
       await commonAssert(p[0], p[1], { index: 1, ...p[2] });
     });
+    it('change request resolution duration', async () => {
+      const getParams = (key: string): [() => any, string, any] =>
+        [openDigger.chaossChangeRequestResolutionDuration, key, { noTotal: true, queryOptions: { options: { sortBy: key } } }];
+      await commonAssert(...getParams('avg'));
+      await commonAssert(...getParams('quantile_0'));
+      await commonAssert(...getParams('quantile_1'));
+      await commonAssert(...getParams('quantile_2'));
+      await commonAssert(...getParams('quantile_3'));
+      await commonAssert(...getParams('quantile_4'));
+      const p = getParams('levels');
+      await commonAssert(p[0], p[1], { index: 1, ...p[2] });
+    });
     it('issue response time', async () => {
       const getParams = (key: string): [() => any, string, any] =>
         [openDigger.chaossIssueResponseTime, key, { noTotal: true, queryOptions: { options: { sortBy: key } } }];
