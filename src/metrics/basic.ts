@@ -317,14 +317,18 @@ export const getGroupArrayInsertAtClauseForClickhouse = (config: QueryConfig, op
     })()}) AS ${option.key}`
 }
 
-export const getGroupTimeAndIdClauseForClickhouse = (config: QueryConfig, type: string = 'repo', timeCol: string = 'created_at'): string => {
+export const getGroupTimeClauseForClickhouse = (config: QueryConfig, timeCol: string = 'created_at'): string => {
   return `${(() => {
     let groupEle = '1'; // no time range, aggregate all data to a single value
     if (config.groupTimeRange === 'month') groupEle = `toStartOfMonth(${timeCol})`;
     else if (config.groupTimeRange === 'quarter') groupEle = `toStartOfQuarter(${timeCol})`;
     else if (config.groupTimeRange === 'year') groupEle = `toStartOfYear(${timeCol})`;
     return groupEle;
-  })()} AS time, ${(() => {
+  })()} AS time`;
+}
+
+export const getGroupIdClauseForClickhouse = (config: QueryConfig, type: string = 'repo') => {
+  return `${(() => {
     if (!config.groupBy) {  // group by repo'
       if (type === 'repo')
         return 'repo_id AS id, argMax(repo_name, time) AS name';
