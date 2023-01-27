@@ -1,7 +1,8 @@
 import {
   filterEnumType,
   getGroupArrayInsertAtClauseForClickhouse,
-  getGroupTimeAndIdClauseForClickhouse,
+  getGroupTimeClauseForClickhouse,
+  getGroupIdClauseForClickhouse,
   getInnerOrderAndLimit,
   getMergedConfig,
   getOutterOrderAndLimit,
@@ -31,7 +32,8 @@ SELECT
 FROM
 (
   SELECT
-    ${getGroupTimeAndIdClauseForClickhouse(config, 'repo')},
+    ${getGroupTimeClauseForClickhouse(config)},
+    ${getGroupIdClauseForClickhouse(config)},
     COUNT() AS count
   FROM gh_events
   WHERE ${whereClauses.join(' AND ')}
@@ -72,7 +74,8 @@ SELECT
 FROM
 (
   SELECT
-    ${getGroupTimeAndIdClauseForClickhouse(config, 'repo')},
+    ${getGroupTimeClauseForClickhouse(config)},
+    ${getGroupIdClauseForClickhouse(config)},
     COUNT(arrayJoin(${config.options?.messageFilter ? `arrayFilter(x -> match(x, '${config.options.messageFilter}'), push_commits.message)` : 'push_commits.message'})) AS count
   FROM gh_events
   WHERE ${whereClauses.join(' AND ')}
@@ -112,7 +115,8 @@ SELECT
 FROM
 (
   SELECT
-    ${getGroupTimeAndIdClauseForClickhouse(config, 'repo')},
+    ${getGroupTimeClauseForClickhouse(config)},
+    ${getGroupIdClauseForClickhouse(config)},
     ${(() => {
       if (by === 'add') {
         return `
@@ -163,7 +167,8 @@ SELECT
 FROM
 (
   SELECT
-    ${getGroupTimeAndIdClauseForClickhouse(config, 'repo')},
+    ${getGroupTimeClauseForClickhouse(config)},
+    ${getGroupIdClauseForClickhouse(config)},
     COUNT() AS count
   FROM gh_events
   WHERE ${whereClauses.join(' AND ')}
@@ -201,7 +206,8 @@ SELECT
 FROM
 (
   SELECT
-    ${getGroupTimeAndIdClauseForClickhouse(config, 'repo')},
+    ${getGroupTimeClauseForClickhouse(config)},
+    ${getGroupIdClauseForClickhouse(config)},
     COUNT() AS count
   FROM gh_events
   WHERE ${whereClauses.join(' AND ')}
@@ -238,7 +244,8 @@ SELECT
 FROM
 (
   SELECT
-    ${getGroupTimeAndIdClauseForClickhouse(config, 'repo')},
+    ${getGroupTimeClauseForClickhouse(config)},
+    ${getGroupIdClauseForClickhouse(config)},
     COUNT() AS count
   FROM gh_events
   WHERE ${whereClauses.join(' AND ')}
@@ -290,7 +297,8 @@ SELECT
 FROM
 (
   SELECT
-    ${getGroupTimeAndIdClauseForClickhouse(config, 'repo', byCol)},
+    ${getGroupTimeClauseForClickhouse(config, byCol)},
+    ${getGroupIdClauseForClickhouse(config)},
     avg(resolution_duration) AS avg,
     ${timeDurationConstants.quantileArray.map(q => `quantile(${q / 4})(resolution_duration) AS quantile_${q}`).join(',')},
     [${ranges.map((_t, i) => `countIf(resolution_level = ${i})`).join(',')}] AS resolution_levels
@@ -363,7 +371,8 @@ SELECT
 FROM
 (
   SELECT
-    ${getGroupTimeAndIdClauseForClickhouse(config, 'repo', 'issue_created_at')},
+    ${getGroupTimeClauseForClickhouse(config, 'issue_created_at')},
+    ${getGroupIdClauseForClickhouse(config)},
     avg(response_time) AS avg,
     ${timeDurationConstants.quantileArray.map(q => `quantile(${q / 4})(response_time) AS quantile_${q}`).join(',')},
     [${ranges.map((_t, i) => `countIf(response_level = ${i})`).join(',')}] AS response_levels
@@ -381,7 +390,7 @@ FROM
       dateDiff('${unit}', issue_created_at, first_responded_at) AS response_time,
       multiIf(${thresholds.map((t, i) => `response_time <= ${t}, ${i}`)}, ${thresholds.length}) AS response_level
     FROM gh_events
-    WHERE ${whereClauses.join('AND')}
+    WHERE ${whereClauses.join(' AND ')}
     GROUP BY repo_id, org_id, issue_number
     HAVING issue_created_at >= toDate('${config.startYear}-${config.startMonth}-1') 
              AND issue_created_at < toDate('${endDate.getFullYear()}-${endDate.getMonth() + 1}-1')
@@ -414,6 +423,85 @@ export const chaossIssueResponseTime = (config: QueryConfig<TimeDurationOption>)
 export const chaossChangeRequestResponseTime = (config: QueryConfig<TimeDurationOption>) =>
   chaossResponseTime(config, 'change request');
 
+export const chaossAge = async (config: QueryConfig<TimeDurationOption>, type: 'issue' | 'change request') => {
+  config = getMergedConfig(config);
+  const whereClauses: string[] = type === 'issue' ? ["type='IssuesEvent'"] : ["type='PullRequestEvent'"];
+  const repoWhereClause = await getRepoWhereClauseForClickhouse(config);
+  if (repoWhereClause) whereClauses.push(repoWhereClause);
+  const endDate = new Date(`${config.endYear}-${config.endMonth}-1`);
+  endDate.setMonth(config.endMonth);  // find next month
+  const endTimeClause = `toDate('${endDate.getFullYear()}-${endDate.getMonth() + 1}-1')`;
+  whereClauses.push(`created_at < ${endTimeClause}`);
+  const unit = filterEnumType(config.options?.unit, timeDurationConstants.unitArray, 'day');
+  const thresholds = config.options?.thresholds ?? [15, 30, 60];
+  const ranges = [...thresholds, -1];
+  const sortBy = filterEnumType(config.options?.sortBy, timeDurationConstants.sortByArray, 'avg');
+
+  const sql = `
+SELECT
+  id,
+  argMax(name, time),
+  ${getGroupArrayInsertAtClauseForClickhouse(config, { key: `avg`, defaultValue: 'NaN' })},
+  ${getGroupArrayInsertAtClauseForClickhouse(config, { key: 'levels', value: 'age_levels', defaultValue: `[${ranges.map(_ => `0`).join(',')}]`, noPrecision: true })},
+  ${timeDurationConstants.quantileArray.map(q => getGroupArrayInsertAtClauseForClickhouse(config, { key: `quantile_${q}`, defaultValue: 'NaN' })).join(',')}
+FROM
+(
+  SELECT
+    ${(() => {
+      if (config.groupTimeRange) {
+        return `arrayJoin(arrayMap(x -> dateAdd(${config.groupTimeRange}, x, toDate('${config.startYear}-${config.startMonth}-1')), range(toUInt64(dateDiff('${config.groupTimeRange}', toDate('${config.startYear}-${config.startMonth}-1'), ${endTimeClause}))))) AS time`
+      } else {
+        return `1 AS time`
+      }
+    })()},
+    ${getGroupIdClauseForClickhouse(config)},
+    avgIf(age, closed_at=toDate('1970-1-1') OR closed_at > time) AS avg,
+    ${timeDurationConstants.quantileArray.map(q => `quantileIf(${q / 4})(age, closed_at=toDate('1970-1-1') OR closed_at > time) AS quantile_${q}`).join(',')},
+    [${ranges.map((_t, i) => `countIf(age_level = ${i} AND (closed_at=toDate('1970-1-1') OR closed_at > time))`).join(',')}] AS age_levels
+  FROM
+  (
+    SELECT
+      repo_id,
+      argMax(repo_name, created_at) AS repo_name,
+      org_id,
+      argMax(org_login, created_at) AS org_login,
+      issue_number,
+      minIf(created_at, action = 'opened') AS opened_at,
+      maxIf(created_at, action = 'closed') AS closed_at,
+      dateDiff('${unit}', opened_at, ${endTimeClause}) AS age,
+      multiIf(${thresholds.map((t, i) => `age <= ${t}, ${i}`)}, ${thresholds.length}) AS age_level
+    FROM gh_events
+    WHERE ${whereClauses.join(' AND ')}
+    GROUP BY repo_id, org_id, issue_number
+    HAVING opened_at > toDate('1970-01-01')
+  )
+  GROUP BY id, time
+  ${getInnerOrderAndLimit(config, 'age')}
+)
+GROUP BY id
+${getOutterOrderAndLimit(config, sortBy, sortBy === 'levels' ? 1 : undefined)}`;
+
+  const result: any = await clickhouse.query(sql);
+  return result.map(row => {
+    const [id, name, avg, levels, quantile_0, quantile_1, quantile_2, quantile_3, quantile_4] = row;
+    return {
+      id,
+      name,
+      avg,
+      levels,
+      quantile_0,
+      quantile_1,
+      quantile_2,
+      quantile_3,
+      quantile_4,
+    };
+  });
+};
+
+export const chaossIssueAge = (config: QueryConfig<TimeDurationOption>) => chaossAge(config, 'issue');
+
+export const chassChangeRequestAge = (config: QueryConfig<TimeDurationOption>) => chaossAge(config, 'change request');
+
 // Evolution - Code Development Efficiency
 export const chaossChangeRequestsAccepted = async (config: QueryConfig) => {
   config = getMergedConfig(config);
@@ -431,7 +519,8 @@ SELECT
 FROM
 (
   SELECT
-    ${getGroupTimeAndIdClauseForClickhouse(config, 'repo')},
+    ${getGroupTimeClauseForClickhouse(config)},
+    ${getGroupIdClauseForClickhouse(config)},
     COUNT() AS count
   FROM gh_events
   WHERE ${whereClauses.join(' AND ')}
@@ -470,7 +559,8 @@ SELECT
 FROM
 (
   SELECT
-    ${getGroupTimeAndIdClauseForClickhouse(config, 'repo')},
+    ${getGroupTimeClauseForClickhouse(config)},
+    ${getGroupIdClauseForClickhouse(config)},
     COUNT() AS count
   FROM gh_events
   WHERE ${whereClauses.join(' AND ')}
@@ -522,7 +612,8 @@ SELECT
 FROM
 (
   SELECT
-    ${getGroupTimeAndIdClauseForClickhouse(config, 'repo', byCol)},
+    ${getGroupTimeClauseForClickhouse(config, byCol)},
+    ${getGroupIdClauseForClickhouse(config)},
     avg(resolution_duration) AS avg,
     ${timeDurationConstants.quantileArray.map(q => `quantile(${q / 4})(resolution_duration) AS quantile_${q}`).join(',')},
     [${ranges.map((_t, i) => `countIf(resolution_level = ${i})`).join(',')}] AS resolution_levels
@@ -584,7 +675,8 @@ SELECT
 FROM
 (
   SELECT
-    ${getGroupTimeAndIdClauseForClickhouse(config, 'repo')},
+    ${getGroupTimeClauseForClickhouse(config)},
+    ${getGroupIdClauseForClickhouse(config)},
     COUNT() AS count,
     countIf(pull_merged = 1) AS accepted_count,
     countIf(pull_merged = 0) AS declined_count,
@@ -626,7 +718,8 @@ SELECT
 FROM
 (
   SELECT
-    ${getGroupTimeAndIdClauseForClickhouse(config, 'repo')},
+    ${getGroupTimeClauseForClickhouse(config)},
+    ${getGroupIdClauseForClickhouse(config)},
     COUNT() AS count
   FROM gh_events
   WHERE ${whereClauses.join(' AND ')}
@@ -662,7 +755,8 @@ SELECT
 FROM
 (
   SELECT
-    ${getGroupTimeAndIdClauseForClickhouse(config, 'repo')},
+    ${getGroupTimeClauseForClickhouse(config)},
+    ${getGroupIdClauseForClickhouse(config)},
     COUNT() AS count
   FROM gh_events
   WHERE ${whereClauses.join(' AND ')}
@@ -726,7 +820,8 @@ FROM
   FROM
   (
     SELECT
-      ${getGroupTimeAndIdClauseForClickhouse(config, 'repo')},
+      ${getGroupTimeClauseForClickhouse(config)},
+      ${getGroupIdClauseForClickhouse(config)},
       ${(() => {
       if (by === 'commit') {
         return `
@@ -796,7 +891,8 @@ export const chaossNewContributors = async (config: QueryConfig<NewContributorsO
   FROM
   (
     SELECT
-    ${getGroupTimeAndIdClauseForClickhouse(config, 'repo', 'first_time')},
+      ${getGroupTimeClauseForClickhouse(config, 'first_time')},
+      ${getGroupIdClauseForClickhouse(config)},
       length(detail) AS new_contributor,
       (arrayMap((x) -> (x), groupArray(author))) AS detail
     FROM
@@ -892,7 +988,8 @@ FROM
   FROM
   (
     SELECT
-      ${getGroupTimeAndIdClauseForClickhouse(config, type)},
+      ${getGroupTimeClauseForClickhouse(config)},
+      ${getGroupIdClauseForClickhouse(config, type)},
       toHour(created_at) AS hour,
       toDayOfWeek(created_at) AS day,
       COUNT() AS count

@@ -5,7 +5,8 @@ import {
   getUserWhereClauseForClickhouse,
   getTimeRangeWhereClauseForClickhouse,
   getGroupArrayInsertAtClauseForClickhouse,
-  getGroupTimeAndIdClauseForClickhouse,
+  getGroupTimeClauseForClickhouse,
+  getGroupIdClauseForClickhouse,
   getInnerOrderAndLimit,
   getOutterOrderAndLimit
 } from './basic';
@@ -33,7 +34,8 @@ SELECT
 FROM
 (
   SELECT
-    ${getGroupTimeAndIdClauseForClickhouse(config, 'repo')},
+    ${getGroupTimeClauseForClickhouse(config)},
+    ${getGroupIdClauseForClickhouse(config)},
     SUM(openrank) AS openrank
   FROM gh_repo_openrank
   WHERE ${whereClause.join(' AND ')}
@@ -70,7 +72,8 @@ SELECT
 FROM
 (
   SELECT
-    ${getGroupTimeAndIdClauseForClickhouse(config, 'user')},
+    ${getGroupTimeClauseForClickhouse(config)},
+    ${getGroupIdClauseForClickhouse(config, 'user')},
     SUM(openrank) AS openrank
   FROM gh_user_openrank
   WHERE ${whereClause.join(' AND ')}
@@ -124,7 +127,8 @@ SELECT
 FROM
 (
   SELECT
-    ${getGroupTimeAndIdClauseForClickhouse(config, 'repo', 'month')},
+    ${getGroupTimeClauseForClickhouse(config, 'month')},
+    ${getGroupIdClauseForClickhouse(config)},
     ROUND(SUM(activity), 2) AS activity,
     COUNT(actor_id) AS participants,
     SUM(issue_comment) AS issue_comment,
@@ -187,7 +191,8 @@ SELECT
 FROM
 (
   SELECT
-    ${getGroupTimeAndIdClauseForClickhouse(config, 'actor', 'month')},
+    ${getGroupTimeClauseForClickhouse(config, 'month')},
+    ${getGroupIdClauseForClickhouse(config)},
     ROUND(SUM(activity), 2) AS activity,
     SUM(issue_comment) AS issue_comment,
     SUM(open_issue) AS open_issue,
@@ -242,7 +247,8 @@ SELECT
 FROM
 (
   SELECT
-    ${getGroupTimeAndIdClauseForClickhouse(config)},
+    ${getGroupTimeClauseForClickhouse(config)},
+    ${getGroupIdClauseForClickhouse(config)},
     countIf(type='WatchEvent') AS stars,
     countIf(type='ForkEvent') AS forks,
     stars + 2 * forks AS attention

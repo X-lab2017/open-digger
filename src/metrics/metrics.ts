@@ -1,6 +1,7 @@
 import {
   getGroupArrayInsertAtClauseForClickhouse,
-  getGroupTimeAndIdClauseForClickhouse,
+  getGroupTimeClauseForClickhouse,
+  getGroupIdClauseForClickhouse,
   getInnerOrderAndLimit,
   getMergedConfig,
   getOutterOrderAndLimit,
@@ -26,7 +27,8 @@ SELECT
 FROM
 (
   SELECT
-    ${getGroupTimeAndIdClauseForClickhouse(config, 'repo')},
+    ${getGroupTimeClauseForClickhouse(config)},
+    ${getGroupIdClauseForClickhouse(config)},
     COUNT() AS count
   FROM gh_events
   WHERE ${whereClauses.join(' AND ')}
@@ -62,7 +64,8 @@ SELECT
 FROM
 (
   SELECT
-    ${getGroupTimeAndIdClauseForClickhouse(config, 'repo')},
+    ${getGroupTimeClauseForClickhouse(config)},
+    ${getGroupIdClauseForClickhouse(config)},
     COUNT() AS count
   FROM gh_events
   WHERE ${whereClauses.join(' AND ')}
@@ -98,7 +101,8 @@ SELECT
 FROM
 (
   SELECT
-    ${getGroupTimeAndIdClauseForClickhouse(config, 'repo')},
+    ${getGroupTimeClauseForClickhouse(config)},
+    ${getGroupIdClauseForClickhouse(config)},
     COUNT(DISTINCT actor_id) AS count
   FROM gh_events
   WHERE ${whereClauses.join(' AND ')}
@@ -158,7 +162,8 @@ FROM
   FROM
   (
     SELECT
-      ${getGroupTimeAndIdClauseForClickhouse(config, 'user')},
+      ${getGroupTimeClauseForClickhouse(config)},
+    ${getGroupIdClauseForClickhouse(config, 'user')},
       toHour(created_at) AS hour,
       COUNT() AS count
     FROM gh_events
