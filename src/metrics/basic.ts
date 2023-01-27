@@ -293,27 +293,31 @@ export const getLabelGroupConditionClauseForClickhouse = (config: QueryConfig): 
   return `arrayJoin(multiIf(${idConditions}, ['Others'])) AS id, argMax(arrayJoin(multiIf(${nameConditions}, ['Others'])), time) AS name`;
 }
 
-export const getGroupArrayInsertAtClauseForClickhouse = (config: QueryConfig, option: { key: string; defaultValue?: string; value?: string; noPrecision?: boolean }): string => {
+export const getGroupArrayInsertAtClauseForClickhouse = (config: QueryConfig, option: { key: string; defaultValue?: string; value?: string; noPrecision?: boolean, positionByEndTime?: boolean }): string => {
   let startTime = `toDate('${config.startYear}-${config.startMonth}-1')`;
   let endTime = `toDate('${config.endYear}-${config.endMonth}-1')`;
   return `groupArrayInsertAt(
-    ${option.defaultValue ?? 0},
+    ${option.defaultValue ?? 0  // default value
+    },
     ${(() => {
+      // total length
       if (config.groupTimeRange) {
         return `toUInt32(dateDiff('${config.groupTimeRange}', ${startTime}, ${endTime})) + 1)`;
       } else {
         return '1)';
       }
     })()}(${(() => {
+      // group key
       const name = option.value ? option.value : option.key;
       if (config.precision > 0 && !option.noPrecision) return `ROUND(${name}, ${config.precision})`;
       return name;
     })()},
     ${(() => {
+      // position
       if (!config.groupTimeRange) return '0';
       if (config.groupTimeRange === 'quarter') startTime = `toStartOfQuarter(${startTime})`;
       else if (config.groupTimeRange === 'year') startTime = `toStartOfYear(${startTime})`;
-      return `toUInt32(dateDiff('${config.groupTimeRange}', ${startTime}, time))`;
+      return `toUInt32(dateDiff('${config.groupTimeRange}', ${startTime}, time)${option.positionByEndTime ? '-1' : ''})`;
     })()}) AS ${option.key}`
 }
 

@@ -89,7 +89,7 @@ describe('Index and metric test', () => {
       await commonAssert(...getParams('quantile_3'));
       await commonAssert(...getParams('quantile_4'));
       const p = getParams('levels');
-      await commonAssert(p[0], p[1], { index: 1, ...p[2] });
+      await commonAssert(p[0], p[1], { index: 0, ...p[2] });
     });
     it('change request resolution duration', async () => {
       const getParams = (key: string): [() => any, string, any] =>
@@ -101,7 +101,7 @@ describe('Index and metric test', () => {
       await commonAssert(...getParams('quantile_3'));
       await commonAssert(...getParams('quantile_4'));
       const p = getParams('levels');
-      await commonAssert(p[0], p[1], { index: 1, ...p[2] });
+      await commonAssert(p[0], p[1], { index: 0, ...p[2] });
     });
     it('issue response time', async () => {
       const getParams = (key: string): [() => any, string, any] =>
@@ -113,7 +113,7 @@ describe('Index and metric test', () => {
       await commonAssert(...getParams('quantile_3'));
       await commonAssert(...getParams('quantile_4'));
       const p = getParams('levels');
-      await commonAssert(p[0], p[1], { index: 1, ...p[2] });
+      await commonAssert(p[0], p[1], { index: 0, ...p[2] });
     });
     it('change request response time', async () => {
       const getParams = (key: string): [() => any, string, any] =>
@@ -125,7 +125,7 @@ describe('Index and metric test', () => {
       await commonAssert(...getParams('quantile_3'));
       await commonAssert(...getParams('quantile_4'));
       const p = getParams('levels');
-      await commonAssert(p[0], p[1], { index: 1, ...p[2] });
+      await commonAssert(p[0], p[1], { index: 0, ...p[2] });
     });
     it('issue age', async () => {
       const getParams = (key: string): [() => any, string, any] =>
@@ -137,7 +137,7 @@ describe('Index and metric test', () => {
       await commonAssert(...getParams('quantile_3'));
       await commonAssert(...getParams('quantile_4'));
       const p = getParams('levels');
-      await commonAssert(p[0], p[1], { index: 1, ...p[2] });
+      await commonAssert(p[0], p[1], { index: 0, ...p[2] });
     });
     it('change request age', async () => {
       const getParams = (key: string): [() => any, string, any] =>
@@ -149,7 +149,7 @@ describe('Index and metric test', () => {
       await commonAssert(...getParams('quantile_3'));
       await commonAssert(...getParams('quantile_4'));
       const p = getParams('levels');
-      await commonAssert(p[0], p[1], { index: 1, ...p[2] });
+      await commonAssert(p[0], p[1], { index: 0, ...p[2] });
     });
     it('code change lines', async () => {
       await commonAssert(openDigger.chaossCodeChangeLines, 'lines');
@@ -166,6 +166,9 @@ describe('Index and metric test', () => {
     it('new contributors', async () => {
       await commonAssert(openDigger.chaossNewContributors, 'new_contributors');
     });
+    it('inactive contributors', async () => {
+      await commonAssert(openDigger.chaossInactiveContributors, 'inactive_contributors');
+    });
     it('request requests duration', async () => {
       const getParams = (key: string): [() => any, string, any] =>
         [openDigger.chaossChangeRequestsDuration, key, { noTotal: true, queryOptions: { options: { sortBy: key } } }];
@@ -176,7 +179,7 @@ describe('Index and metric test', () => {
       await commonAssert(...getParams('quantile_3'));
       await commonAssert(...getParams('quantile_4'));
       const p = getParams('levels');
-      await commonAssert(p[0], p[1], { index: 1, ...p[2] });
+      await commonAssert(p[0], p[1], { index: 0, ...p[2] });
     });
     it('request requests acceptance ratio', async () => {
       await commonAssert(openDigger.chaossChangeRequestsAcceptanceRatio, 'ratio');

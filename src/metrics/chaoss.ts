@@ -441,15 +441,15 @@ export const chaossAge = async (config: QueryConfig<TimeDurationOption>, type: '
 SELECT
   id,
   argMax(name, time),
-  ${getGroupArrayInsertAtClauseForClickhouse(config, { key: `avg`, defaultValue: 'NaN' })},
-  ${getGroupArrayInsertAtClauseForClickhouse(config, { key: 'levels', value: 'age_levels', defaultValue: `[${ranges.map(_ => `0`).join(',')}]`, noPrecision: true })},
-  ${timeDurationConstants.quantileArray.map(q => getGroupArrayInsertAtClauseForClickhouse(config, { key: `quantile_${q}`, defaultValue: 'NaN' })).join(',')}
+  ${getGroupArrayInsertAtClauseForClickhouse(config, { key: `avg`, defaultValue: 'NaN', positionByEndTime: true })},
+  ${getGroupArrayInsertAtClauseForClickhouse(config, { key: 'levels', value: 'age_levels', defaultValue: `[${ranges.map(_ => `0`).join(',')}]`, noPrecision: true, positionByEndTime: true })},
+  ${timeDurationConstants.quantileArray.map(q => getGroupArrayInsertAtClauseForClickhouse(config, { key: `quantile_${q}`, defaultValue: 'NaN', positionByEndTime: true })).join(',')}
 FROM
 (
   SELECT
     ${(() => {
       if (config.groupTimeRange) {
-        return `arrayJoin(arrayMap(x -> dateAdd(${config.groupTimeRange}, x, toDate('${config.startYear}-${config.startMonth}-1')), range(toUInt64(dateDiff('${config.groupTimeRange}', toDate('${config.startYear}-${config.startMonth}-1'), ${endTimeClause}))))) AS time`
+        return `arrayJoin(arrayMap(x -> dateAdd(${config.groupTimeRange}, x + 1, toDate('${config.startYear}-${config.startMonth}-1')), range(toUInt64(dateDiff('${config.groupTimeRange}', toDate('${config.startYear}-${config.startMonth}-1'), ${endTimeClause}))))) AS time`
       } else {
         return `1 AS time`
       }
@@ -955,6 +955,98 @@ export const chaossNewContributors = async (config: QueryConfig<NewContributorsO
       id,
       name,
       new_contributors,
+      detail,
+    }
+  });
+}
+
+interface InactiveContributorsOptions {
+  // time interval to determine inactive contributor, default: 6
+  timeInterval: number;
+  // time interval unit, default: month
+  timeIntervalUnit: string;
+  // determine contributor by commit or by change request
+  by: 'commit' | 'change request';
+  // min count of contributions to determine inactive contributor
+  minCount: number;
+  withBot: boolean;
+}
+export const chaossInactiveContributors = async (config: QueryConfig<InactiveContributorsOptions>) => {
+  config = getMergedConfig(config);
+  const by = filterEnumType(config.options?.by, ['commit', 'change request'], 'change request');
+  const timeInterval = config.options?.timeInterval ?? 6;
+  const timeIntervalUnit = filterEnumType(config.options?.timeIntervalUnit, ['month', 'quarter', 'year'], 'month');
+  const minCount = config.options?.minCount ?? 0;
+  const whereClauses: string[] = [];
+  const endDate = new Date(`${config.endYear}-${config.endMonth}-1`);
+  endDate.setMonth(config.endMonth);  // find next month
+  const endTimeClause = `toDate('${endDate.getFullYear()}-${endDate.getMonth() + 1}-1')`;
+  if (by === 'commit') {
+    whereClauses.push("type = 'PushEvent'")
+  } else if (by === 'change request') {
+    whereClauses.push("type = 'PullRequestEvent' AND action = 'closed' AND pull_merged = 1");
+  }
+  const repoWhereClause = await getRepoWhereClauseForClickhouse(config);
+  if (repoWhereClause) whereClauses.push(repoWhereClause);
+  whereClauses.push(`created_at < ${endTimeClause}`);
+
+  const sql = `
+SELECT
+  id,
+  argMax(name, time) AS name,
+  ${getGroupArrayInsertAtClauseForClickhouse(config, { key: 'inactive_contributors', positionByEndTime: true })},
+  ${getGroupArrayInsertAtClauseForClickhouse(config, { key: 'detail', noPrecision: true, defaultValue: '[]', positionByEndTime: true })}
+FROM
+(
+  SELECT
+    id,
+    argMax(name, time) AS name,
+    time,
+    countIf(first_time < time AND contributions <= ${minCount}) AS inactive_contributors,
+    groupArrayIf(author, first_time < time AND contributions <= ${minCount}) AS detail
+  FROM
+  (
+    SELECT
+      ${(() => {
+      if (config.groupTimeRange) {
+        return `arrayJoin(arrayMap(x -> dateAdd(${config.groupTimeRange}, x + 1, toDate('${config.startYear}-${config.startMonth}-1')), range(toUInt64(dateDiff('${config.groupTimeRange}', toDate('${config.startYear}-${config.startMonth}-1'), ${endTimeClause}))))) AS time`
+      } else {
+        return `1 AS time`
+      }
+    })()},
+      ${getGroupIdClauseForClickhouse(config)},
+      ${by === 'commit' ? 'author' : 'actor_id, argMax(author, created_at) AS author'},
+      min(created_at) AS first_time,
+      countIf(created_at >= dateSub(${timeIntervalUnit}, ${timeInterval}, time) AND created_at <= time) AS contributions
+    FROM
+    (
+      SELECT 
+        repo_id,
+        repo_name,
+        org_id,
+        org_login,
+        ${by === 'commit' ? 'arrayJoin(push_commits.name) AS author' :
+      'issue_author_id AS actor_id, issue_author_login AS author'},
+        created_at
+      FROM gh_events
+      WHERE ${whereClauses.join(' AND ')}
+      ${(config.options?.withBot && by !== 'commit') ? '' : "HAVING author NOT LIKE '%[bot]'"}
+    )
+    GROUP BY id, ${by === 'commit' ? 'author' : 'actor_id'}
+  )
+  GROUP BY id, time
+  ${getInnerOrderAndLimit(config, 'inactive_contributors')}
+)
+GROUP BY id
+${getOutterOrderAndLimit(config, 'inactive_contributors')}`;
+
+  const result: any = await clickhouse.query(sql);
+  return result.map(row => {
+    const [id, name, inactive_contributors, detail] = row;
+    return {
+      id,
+      name,
+      inactive_contributors,
       detail,
     }
   });
