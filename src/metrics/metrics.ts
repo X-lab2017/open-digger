@@ -185,3 +185,47 @@ GROUP BY id`;
     }
   });
 };
+
+export const contributorEmailSuffixes = async (config: QueryConfig) => {
+  config = getMergedConfig(config);
+  const whereClauses: string[] = ["type='PushEvent'"];
+  const repoWhereClause = await getRepoWhereClauseForClickhouse(config);
+  if (repoWhereClause) whereClauses.push(repoWhereClause);
+  whereClauses.push(getTimeRangeWhereClauseForClickhouse(config));
+
+  const sql = `
+SELECT
+  id,
+  argMax(name, time) AS name,
+  ${getGroupArrayInsertAtClauseForClickhouse(config, { key: 'suffixes', noPrecision: true, defaultValue: '[]' })}
+FROM
+(
+  SELECT
+    time, id, argMax(name, time) AS name,
+    groupArray(DISTINCT suffix) AS distinct_suffixes,
+    arraySort(x -> -tupleElement(x, 2), arrayZip(distinct_suffixes, arrayMap(s -> length(arrayFilter(x -> x = s, groupArray(suffix))), distinct_suffixes))) AS suffixes
+  FROM
+  (
+    SELECT
+      ${getGroupTimeClauseForClickhouse(config)},
+      ${getGroupIdClauseForClickhouse(config)},
+      anyHeavy(arrayJoin(arrayMap(x -> splitByChar('@', x)[2], push_commits.email))) AS suffix,
+      arrayJoin(push_commits.name) AS author
+    FROM gh_events
+    WHERE ${whereClauses.join(' AND ')}
+    GROUP BY repo_id, org_id, author, time
+  )
+  GROUP BY id, time
+)
+GROUP BY id`;
+
+  const result: any = await clickhouse.query(sql);
+  return result.map(row => {
+    const [id, name, suffixes] = row;
+    return {
+      id,
+      name,
+      suffixes,
+    }
+  });
+}

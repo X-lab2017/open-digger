@@ -56,6 +56,7 @@ const openDigger = {
       repoStars: func.repoStars,
       repoParticipants: func.repoParticipants,
       userEquivalentTimeZone: func.userEquivalentTimeZone,
+      contributorEmailSuffixes: func.contributorEmailSuffixes,
     },
   },
   relation: {

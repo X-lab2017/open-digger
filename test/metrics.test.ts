@@ -184,5 +184,14 @@ describe('Index and metric test', () => {
     it('request requests acceptance ratio', async () => {
       await commonAssert(openDigger.chaossChangeRequestsAcceptanceRatio, 'ratio');
     });
+    it('contributor email suffixes', async () => {
+      const option: any = {
+        startYear: 2015, endYear: 2016, startMonth: 1, endMonth: 12,
+        orgIds: [1342004], order: 'DESC', limit: 3,
+        groupTimeRange: 'quarter', groupBy: 'org',
+      };
+      const result = await openDigger.contributorEmailSuffixes(option);
+      assert.strictEqual(result.length > 0, true);
+    });
   });
 });
