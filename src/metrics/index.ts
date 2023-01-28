@@ -4,7 +4,7 @@ import {
   chaossChangeRequestsDeclined, chaossIssueResolutionDuration, chaossCodeChangeLines, chaossTechnicalFork,
   chaossChangeRequests, chaossChangeRequestReviews, chaossNewContributors, chaossChangeRequestsDuration, chaossIssueResponseTime, chaossChangeRequestsAcceptanceRatio, chaossIssuesActive, chaossActiveDatesAndTimes, chaossChangeRequestResolutionDuration, chaossChangeRequestResponseTime, chaossIssueAge, chassChangeRequestAge, chaossInactiveContributors,
 } from './chaoss';
-import { repoStars, repoIssueComments, repoParticipants, userEquivalentTimeZone } from './metrics';
+import { repoStars, repoIssueComments, repoParticipants, userEquivalentTimeZone, contributorEmailSuffixes } from './metrics';
 import { getRelatedUsers } from './related_users';
 
 module.exports = {
@@ -44,4 +44,5 @@ module.exports = {
   repoIssueComments: repoIssueComments,
   repoParticipants: repoParticipants,
   userEquivalentTimeZone: userEquivalentTimeZone,
+  contributorEmailSuffixes: contributorEmailSuffixes
 };

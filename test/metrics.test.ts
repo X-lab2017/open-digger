@@ -184,5 +184,25 @@ describe('Index and metric test', () => {
     it('request requests acceptance ratio', async () => {
       await commonAssert(openDigger.chaossChangeRequestsAcceptanceRatio, 'ratio');
     });
+    it('contributor email suffixes', async () => {
+      const option: any = {
+        startYear: 2015, endYear: 2016, startMonth: 1, endMonth: 12,
+        orgIds: [1342004], order: 'DESC', limit: 3,
+        groupTimeRange: 'quarter', groupBy: 'org',
+      };
+      const result = await openDigger.contributorEmailSuffixes(option);
+      const checkResult =
+        result.length > 0 &&  // returns result as array
+        result[0].suffixes.every(q => // for every suffixes in every quarter
+          Array.isArray(q) && // returns array for every quarter
+          q.every(i =>
+            Array.isArray(i) && // is an array
+            i.length === 2 && // array length is 2
+            typeof i[0] === 'string' && // first element is string, which is suffix
+            typeof parseInt(i[1]) === 'number'  // second element which is count can be parsed as integer
+          )
+        );
+      assert.strictEqual(checkResult, true);
+    });
   });
 });
