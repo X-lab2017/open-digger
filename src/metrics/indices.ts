@@ -192,7 +192,7 @@ FROM
 (
   SELECT
     ${getGroupTimeClauseForClickhouse(config, 'month')},
-    ${getGroupIdClauseForClickhouse(config)},
+    ${getGroupIdClauseForClickhouse(config, 'user')},
     ROUND(SUM(activity), 2) AS activity,
     SUM(issue_comment) AS issue_comment,
     SUM(open_issue) AS open_issue,

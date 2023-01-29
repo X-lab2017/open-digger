@@ -2,7 +2,7 @@ import { getRepoOpenrank, getRepoActivity, getUserOpenrank, getUserActivity, get
 import {
   chaossCodeChangeCommits, chaossBusFactor, chaossIssuesNew, chaossIssuesClosed, chaossChangeRequestsAccepted,
   chaossChangeRequestsDeclined, chaossIssueResolutionDuration, chaossCodeChangeLines, chaossTechnicalFork,
-  chaossChangeRequests, chaossChangeRequestReviews, chaossNewContributors, chaossChangeRequestsDuration, chaossIssueResponseTime, chaossChangeRequestsAcceptanceRatio, chaossIssuesActive, chaossActiveDatesAndTimes, chaossChangeRequestResolutionDuration, chaossChangeRequestResponseTime, chaossIssueAge, chassChangeRequestAge, chaossInactiveContributors,
+  chaossChangeRequests, chaossChangeRequestReviews, chaossNewContributors, chaossChangeRequestsDuration, chaossIssueResponseTime, chaossChangeRequestsAcceptanceRatio, chaossIssuesAndChangeRequestActive, chaossActiveDatesAndTimes, chaossChangeRequestResolutionDuration, chaossChangeRequestResponseTime, chaossIssueAge, chaossChangeRequestAge, chaossInactiveContributors,
 } from './chaoss';
 import { repoStars, repoIssueComments, repoParticipants, userEquivalentTimeZone, contributorEmailSuffixes } from './metrics';
 import { getRelatedUsers } from './related_users';
@@ -18,7 +18,7 @@ module.exports = {
   // chaoss metrics
   chaossCodeChangeCommits: chaossCodeChangeCommits,
   chaossIssuesNew: chaossIssuesNew,
-  chaossIssuesActive: chaossIssuesActive,
+  chaossIssuesAndChangeRequestActive: chaossIssuesAndChangeRequestActive,
   chaossIssuesClosed: chaossIssuesClosed,
   chaossBusFactor: chaossBusFactor,
   chaossChangeRequestsAccepted: chaossChangeRequestsAccepted,
@@ -28,7 +28,7 @@ module.exports = {
   chaossIssueResponseTime: chaossIssueResponseTime,
   chaossChangeRequestResponseTime: chaossChangeRequestResponseTime,
   chaossIssueAge: chaossIssueAge,
-  chaossChangeRequestAge: chassChangeRequestAge,
+  chaossChangeRequestAge: chaossChangeRequestAge,
   chaossCodeChangeLines: chaossCodeChangeLines,
   chaossTechnicalFork: chaossTechnicalFork,
   chaossChangeRequests: chaossChangeRequests,
