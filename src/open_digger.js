@@ -32,7 +32,7 @@ const openDigger = {
     chaoss: {
       codeChangeCommits: func.chaossCodeChangeCommits,
       issuesNew: func.chaossIssuesNew,
-      issuesActive: func.chaossIssuesActive,
+      issuesAndChangeRequestActive: func.chaossIssuesAndChangeRequestActive,
       issuesClosed: func.chaossIssuesClosed,
       busFactor: func.chaossBusFactor,
       changeRequestsAccepted: func.chaossChangeRequestsAccepted,
