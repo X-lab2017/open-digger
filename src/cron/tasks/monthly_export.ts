@@ -98,7 +98,7 @@ const task: Task = {
     const startYear = 2015, startMonth = 1, endYear = date.getFullYear(), endMonth = date.getMonth() + 1;
     const exportBasePath = join(config.export.path, 'github');
 
-    const processMetric = async (func: (option: any) => Promise<any>, option: any, fields: Field | Field[]) => {
+    const processMetric = async (func: (option: any) => Promise<any>, option: any, fields: Field | Field[], agg: boolean = false) => {
       const result: any[] = await func(option);
       for (const row of result) {
         const name = row.name;
@@ -106,6 +106,7 @@ const task: Task = {
           mkdirSync(join(exportBasePath, name), { recursive: true });
         }
         if (!Array.isArray(fields)) fields = [fields];
+        const aggContent: any = {};
         for (let field of fields) {
           const dataArr = row[field.sourceKey];
           if (!dataArr) {
@@ -135,7 +136,14 @@ const task: Task = {
             // use integer form since many statistical metrics requires integer form.
             content['2021-10'] = Math.round([0.15, 0.35, 0.35, 0.15].map((f, i) => f * arr[i]).reduce((p, c) => p + c));
           }
-          writeFileSync(exportPath, JSON.stringify(content));
+          if (agg) {
+            aggContent[field.sourceKey] = content;
+          } else {
+            writeFileSync(exportPath, JSON.stringify(content));
+          }
+        }
+        if (agg) {
+          writeFileSync(join(exportBasePath, name, fields[0].targetKey + '.json'), JSON.stringify(aggContent));
         }
       }
     };
@@ -162,9 +170,9 @@ const task: Task = {
       disableDataLoss: true,
       parser: i => i,
     };
-    const getDurationFields = (prefix: string): Field[] => timeDurationConstants.sortByArray.map(k => {
+    const getDurationFields = (targetKey: string): Field[] => timeDurationConstants.sortByArray.map(k => {
       return getField(k, {
-        targetKey: `${prefix}_${k}`,
+        targetKey,
         ...(k === 'levels' ? {
           ...arrayFieldOption,
           parser: i => i.map(v => parseFloat(v)),
@@ -227,14 +235,14 @@ const task: Task = {
       await processMetric(contributorEmailSuffixes, option, getField('suffixes', { targetKey: 'contributor_email_suffixes', ...arrayFieldOption }));
       // time duration related
       // [CHAOSS] resolution duration / close time
-      await processMetric(chaossIssueResolutionDuration, option, getDurationFields('issue_resolution_duration'));
-      await processMetric(chaossChangeRequestResolutionDuration, option, getDurationFields('change_request_resolution_duration'));
+      await processMetric(chaossIssueResolutionDuration, option, getDurationFields('issue_resolution_duration'), true);
+      await processMetric(chaossChangeRequestResolutionDuration, option, getDurationFields('change_request_resolution_duration'), true);
       // [CHAOSS] first response time
-      await processMetric(chaossIssueResponseTime, option, getDurationFields('issue_response_time'));
-      await processMetric(chaossChangeRequestResponseTime, option, getDurationFields('change_request_response_time'));
+      await processMetric(chaossIssueResponseTime, option, getDurationFields('issue_response_time'), true);
+      await processMetric(chaossChangeRequestResponseTime, option, getDurationFields('change_request_response_time'), true);
       // [CHAOSS] age
-      await processMetric(chaossIssueAge, option, getDurationFields('issue_age'));
-      await processMetric(chaossChangeRequestAge, option, getDurationFields('change_request_age'));
+      await processMetric(chaossIssueAge, option, getDurationFields('issue_age'), true);
+      await processMetric(chaossChangeRequestAge, option, getDurationFields('change_request_age'), true);
       console.log(`Process repo for round ${i} done.`);
     }
     console.log('Process repo export task done.');
