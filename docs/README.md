@@ -2,13 +2,6 @@
 
 Open digger is an open source analysis report project for all open source data initiated by [X-lab](https://x-lab.info), this project aims to combine the wisdom of global developers to jointly analyze and insight into open source related data to help everyone better understand and participate in open source.
 
-## Report
-
-We will generate reports into static web pages for viewing. Currently, we have following reports,
-
-- [Global Study Report](http://opendigger-oss.x-lab.info/global-study.html)
-- [Apache Software Foundation Study Report](http://opendigger-oss.x-lab.info/case-study-ASF.html)
-
 ## Data
 
 ### GitHub Event Log
