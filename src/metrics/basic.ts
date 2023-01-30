@@ -323,7 +323,7 @@ export const getGroupArrayInsertAtClauseForClickhouse = (config: QueryConfig, op
 
 export const getGroupTimeClauseForClickhouse = (config: QueryConfig, timeCol: string = 'created_at'): string => {
   return `${(() => {
-    let groupEle = '1'; // no time range, aggregate all data to a single value
+    let groupEle = `dateAdd(month, 1, toDate('${config.endYear}-${config.endMonth}-1'))`; // no time range, aggregate all data to a single value, use next month of end time to make sure time compare works.
     if (config.groupTimeRange === 'month') groupEle = `toStartOfMonth(${timeCol})`;
     else if (config.groupTimeRange === 'quarter') groupEle = `toStartOfQuarter(${timeCol})`;
     else if (config.groupTimeRange === 'year') groupEle = `toStartOfYear(${timeCol})`;
@@ -335,11 +335,11 @@ export const getGroupIdClauseForClickhouse = (config: QueryConfig, type: string 
   return `${(() => {
     if (!config.groupBy) {  // group by repo'
       if (type === 'repo')
-        return 'repo_id AS id, argMax(repo_name, time) AS name';
+        return `repo_id AS id, argMax(repo_name, ${config.groupTimeRange ? 'time' : 'created_at'}) AS name`;
       else
-        return `actor_id AS id, argMax(actor_login, time) AS name`;
+        return `actor_id AS id, argMax(actor_login, ${config.groupTimeRange ? 'time' : 'created_at'}) AS name`;
     } else if (config.groupBy === 'org') {
-      return `org_id AS id, argMax(org_login, time) AS name`;
+      return `org_id AS id, argMax(org_login, ${config.groupTimeRange ? 'time' : 'created_at'}) AS name`;
     } else {  // group by label
       return getLabelGroupConditionClauseForClickhouse(config);
     }
