@@ -239,9 +239,7 @@ export const getTimeRangeSumClauseForNeo4j = async (config: QueryConfig, type: s
 }
 
 export const getTimeRangeWhereClauseForClickhouse = (config: QueryConfig): string => {
-  const endDate = new Date(`${config.endYear}-${config.endMonth}-1`);
-  endDate.setMonth(config.endMonth);  // find next month
-  return ` created_at >= toDate('${config.startYear}-${config.startMonth}-1') AND created_at < toDate('${endDate.getFullYear()}-${endDate.getMonth() + 1}-1') `;
+  return ` created_at >= toDate('${config.startYear}-${config.startMonth}-1') AND created_at < dateAdd(month, 1, toDate('${config.endYear}-${config.endMonth}-1'))`;
 }
 
 // clickhouse label group condition
