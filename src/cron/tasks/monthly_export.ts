@@ -104,6 +104,8 @@ const task: Task = {
         const name = row.name;
         if (!existsSync(join(exportBasePath, name))) {
           mkdirSync(join(exportBasePath, name), { recursive: true });
+          // this an empty flag file to indicate if the data is exported for this repo or user
+          writeFileSync(join(exportBasePath, name, '.json'), '');
         }
         if (!Array.isArray(fields)) fields = [fields];
         const aggContent: any = {};
