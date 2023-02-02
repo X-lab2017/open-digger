@@ -78,7 +78,7 @@ const task: Task = {
     // split the sql into 20 pieces to avoid memory issue
     const getPartition = async (type: 'User' | 'Repo'): Promise<Array<{ min: number, max: number }>> => {
       const quantileArr: number[] = [];
-      for (let i = 0.05; i <= 0.95; i += 0.05) {
+      for (let i = 0.025; i <= 0.975; i += 0.025) {
         quantileArr.push(i);
       }
       const partitions: any[] = [];
@@ -105,7 +105,9 @@ const task: Task = {
         if (!existsSync(join(exportBasePath, name))) {
           mkdirSync(join(exportBasePath, name), { recursive: true });
           // this an empty flag file to indicate if the data is exported for this repo or user
-          writeFileSync(join(exportBasePath, name, '.json'), '');
+          try {
+            writeFileSync(join(exportBasePath, name + '.json'), '');
+          } catch { }
         }
         if (!Array.isArray(fields)) fields = [fields];
         const aggContent: any = {};
