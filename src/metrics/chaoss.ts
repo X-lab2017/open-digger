@@ -145,7 +145,7 @@ ${getOutterOrderAndLimit(config, 'code_change_lines')}`;
 // Evolution - Issue Resolution
 export const chaossIssuesNew = async (config: QueryConfig) => {
   config = getMergedConfig(config);
-  const whereClauses: string[] = ["type = 'IssuesEvent' AND action = 'opened'"];
+  const whereClauses: string[] = ["type = 'IssuesEvent' AND action IN ('opened', 'reopened')"];
   const repoWhereClause = await getRepoWhereClauseForClickhouse(config);
   if (repoWhereClause) whereClauses.push(repoWhereClause);
   whereClauses.push(getTimeRangeWhereClauseForClickhouse(config));
