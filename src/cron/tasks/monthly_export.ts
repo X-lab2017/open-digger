@@ -104,11 +104,8 @@ const task: Task = {
         const name = row.name;
         if (!existsSync(join(exportBasePath, name))) {
           mkdirSync(join(exportBasePath, name), { recursive: true });
-          // this an empty flag file to indicate if the data is exported for this repo or user
-          try {
-            writeFileSync(join(exportBasePath, name + '.json'), '');
-          } catch { }
         }
+        writeFileSync(join(exportBasePath, name, 'meta.json'), JSON.stringify({ updatedAt: new Date().getTime() }));
         if (!Array.isArray(fields)) fields = [fields];
         const aggContent: any = {};
         for (let field of fields) {
