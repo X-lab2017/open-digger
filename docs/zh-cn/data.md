@@ -6,8 +6,6 @@
 
 该数据来源于 [GH Archive](https://www.gharchive.org/)，这是一个用于记录和归档 GitHub 事件日志的项目。归档的数据为 GitHub 事件日志的 JSON 格式数据，主要包含 6 个重要的字段： `id`, `type`, `actor`, `repo`, `payload`, `created_at`。
 
-![](../assets/gharchive_raw_data.png)
-
 ### 数据库
 
 为了满足在大规模数据上的高速查询的需求，我们将 GitHub 日志数据解析为结构化数据并导入了开源的列存储高性能实时分析数据库 [ClickHouse](https://clickhouse.tech/) 中，目前该项目使用的 Clickhouse 服务器版本为 20.8.7.15。
