@@ -1,3 +1,5 @@
 - [Contributing Guide](/CONTRIBUTING.md)
 - [Workflow](/workflow.md)
 - [Data Description](/data.md)
+- Metrics
+  - [OpenRank](/metrics/openrank.md)

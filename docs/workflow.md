@@ -8,7 +8,7 @@ The automatic procedure of this project is executed by `open-digger-bot`(bot) an
 
 ### role
 
-Component [role](https://github.com/X-lab2017/open-digger/blob/master/.github/hypertrons.json#L82) is used to define the roles and their authorities in the community. We have `committer`, `replier`, `sql-reviewer` in this project and details about their authorities will be introduced in each component.
+Component [role](https://github.com/X-lab2017/open-digger/blob/master/.github/hypertrons.json#L82) is used to define the roles and their authorities in the community. We have `committer`, `replier` in this project and details about their authorities will be introduced in each component.
 
 ### label_setup
 
@@ -22,13 +22,9 @@ Component [weekly report](https://github.com/X-lab2017/open-digger/blob/master/.
 
 Component [auto update contribution]() will give a statistics of all developers in the project and create a pull request with a new branch to update [CONTRIBUTORS](https://github.com/X-lab2017/open-digger/blob/master/CONTRIBUTORS) file. This file contains all the roles in the community and `contributor`(developers with commit), `participant`(developers participate in discussion) and `follower`(developers who star or fork the project), if an account appears in a prior role then it will not included in other roles.
 
-The sequence of the roles is `committer`, `sql-reviewer`, `replier`, `contributor`, `participant` and `follower`, we use activity score to sort within a role and the score is appended to the account. For activity calculation, please refer to [GitHub Analysis Report 2019](https://github.com/X-lab2017/github-analysis-report-2019).
+The sequence of the roles is `committer`, `replier`, `contributor`, `participant` and `follower`, we use activity score to sort within a role and the score is appended to the account. For activity calculation, please refer to [GitHub Analysis Report 2019](https://github.com/X-lab2017/github-analysis-report-2019).
 
 ## Issues
-
-### difficulty
-
-Component [difficulty](https://github.com/X-lab2017/open-digger/blob/master/.github/hypertrons.json#L133) allows `committer` to use `/difficulty n` comment to add `difficulty/n` label to issue or PR to identify its difficulty, the supported `n` now are 1, 2, 3, 5, 8, which is a Fibonacci sequence.
 
 ### auto_label
 
@@ -51,7 +47,3 @@ Component [approve](https://github.com/X-lab2017/open-digger/blob/master/.github
 ### auto_merge
 
 Component [auto merge](https://github.com/X-lab2017/open-digger/blob/master/.github/hypertrons.json#L129) will check all open PR with `pull/approved` label and merge them automatically, the check interval is 5 minutes for now.
-
-### pr_uml_renderer
-
-Component [PR UML renderer]() is used to render UML files in a PR. This project uses PlantUML to draw the diagrams and use Hypertrons to render the files. But it is really hard for `committer` to review the PR if only text version is provided, so this component will render the UML files in the PR and comment back for check.
