@@ -32,7 +32,7 @@ There are several parameters used in OpenRank algorithm.
 
 ## CodePen demo
 
-<iframe height="600" style="width: 100%;" scrolling="no" title="OpenDigger - [X-lab] OpenRank/Activity/Bus Factor" src="https://codepen.io/frank-zsy/embed/bGjyqQj?default-tab=js%2Cresult&editable=true" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+<iframe height="600" style="width: 100%;" scrolling="no" title="OpenDigger - [X-lab] OpenRank/Activity/Bus Factor" src="https://codepen.io/frank-zsy/embed/bGjyqQj?default-tab=js%2Cresult&editable=true&type=openrank" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href="https://codepen.io/frank-zsy/pen/bGjyqQj">
   OpenDigger - [X-lab] OpenRank/Activity/Bus Factor</a> by Frank Zhao (<a href="https://codepen.io/frank-zsy">@frank-zsy</a>)
   on <a href="https://codepen.io">CodePen</a>.
