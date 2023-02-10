@@ -3,3 +3,4 @@
 - [Data Description](/data.md)
 - Metrics
   - [OpenRank](/metrics/openrank.md)
+  - [Project OpenRank](/metrics/project_openrank.md)

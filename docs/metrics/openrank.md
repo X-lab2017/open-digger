@@ -4,7 +4,7 @@
 
 ## Definition
 
-OpenRank is an index introduced by X-lab, the original idea of OpenRank is from Frank, read the [blog](https://blog.frankzhao.cn/how_to_measure_open_source_2) for the detail of this index.
+OpenRank is an index introduced by X-lab, the original idea of OpenRank is from Frank, read the [blog](https://blog.frankzhao.cn/how_to_measure_open_source_3) for the detail of this index.
 
 OpenRank is a downstream index of `activity`, it partially uses `activity` index to construct a collaborative network for all GitHub repos and developers. The network model is:
 
