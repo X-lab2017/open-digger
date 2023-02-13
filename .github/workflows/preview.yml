@@ -23,6 +23,6 @@ jobs:
       - uses: rossjrw/pr-preview-action@v1
         with:
           preview-branch: master
-          umbrella-dir: pr-preview
+          umbrella-dir: docs/pr-preview/
           action: auto
           source-dir: ./docs/
