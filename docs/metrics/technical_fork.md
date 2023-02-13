@@ -15,7 +15,7 @@ A technical fork is a distributed version control copy of a project. The number 
 
 Link: https://oss.x-lab.info/open_digger/github/{owner}/{repo}/technical_fork.json
 
-To get the data for a certain repository, replace {owner} and {repo} with the actual name.
+To get the data for a certain repository, replace {owner} and {repo} with the actual name. Here is an [example](https://oss.x-lab.info/open_digger/github/X-lab2017/open-digger/technical_fork.json).
 
 ## Code
 
@@ -24,7 +24,7 @@ To get the data for a certain repository, replace {owner} and {repo} with the ac
 
 ## CodePen Demo
 
-<iframe height="600" style="width: 100%;" scrolling="no" title="OpenDigger - [X-lab] Attention/Stars/Technical Fork/Bus Factor" src="https://codepen.io/frank-zsy/embed/abjMXBV?default-tab=js%2Cresult&editable=true" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+<iframe height="600" style="width: 100%;" scrolling="no" title="OpenDigger - [X-lab] Attention/Stars/Technical Fork/Bus Factor" src="https://codepen.io/frank-zsy/pen/MWBdpNg?type=technical_fork&default-tab=js%2Cresult&editable=true" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href="https://codepen.io/frank-zsy/pen/MWBdpNg?type=technical_fork">
   OpenDigger - [X-lab] Attention/Stars/Technical Fork/Bus Factor</a> by Frank Zhao (<a href="https://codepen.io/frank-zsy">@frank-zsy</a>)
   on <a href="https://codepen.io">CodePen</a>.
