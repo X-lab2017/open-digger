@@ -43,7 +43,9 @@ describe('Index and metric test', () => {
   };
   describe('Indices tests', () => {
     it('activity', async () => {
-      await commonAssert(openDigger.getRepoActivity, 'activity');
+      await commonAssert(openDigger.getRepoActivity, 'activity', {
+        queryOptions: { options: { developerDetail: true } }
+      });
     });
   });
   describe('Metrics tests', () => {
