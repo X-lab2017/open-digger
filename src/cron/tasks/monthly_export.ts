@@ -190,7 +190,7 @@ const task: Task = {
       const { min, max } = repoPartitions[i];
       option.whereClause = `repo_id BETWEEN ${min} AND ${max} AND repo_id IN (SELECT id FROM ${exportRepoTableName})`;
       // [X-lab index] repo activity
-      await processMetric(getRepoActivity, option, getField('activity'));
+      await processMetric(getRepoActivity, { ...option, options: { developerDetail: true } }, [getField('activity'), getField('details', { targetKey: 'activity_details', ...arrayFieldOption })]);
       // [X-lab index] repo openrank
       await processMetric(getRepoOpenrank, option, getField('openrank'));
       // [X-lab index] repo attention

@@ -106,36 +106,42 @@ export const basicActivitySqlComponent = `
     sqrt(${ISSUE_COMMENT_WEIGHT}*issue_comment + ${OPEN_ISSUE_WEIGHT}*open_issue + ${OPEN_PULL_WEIGHT}*open_pull + ${REVIEW_COMMENT_WEIGHT}*review_comment + ${PULL_MERGED_WEIGHT}*merged_pull) AS activity
 `;
 
-export const getRepoActivity = async (config: QueryConfig) => {
+interface RepoActivityOption {
+  developerDetail: boolean;
+}
+export const getRepoActivity = async (config: QueryConfig<RepoActivityOption>) => {
   config = getMergedConfig(config);
   const whereClauses: string[] = ["type IN ('IssuesEvent', 'IssueCommentEvent', 'PullRequestEvent', 'PullRequestReviewCommentEvent')"]; // specify types to reduce memory usage and calculation
   const repoWhereClause = await getRepoWhereClauseForClickhouse(config);
   if (repoWhereClause) whereClauses.push(repoWhereClause);
   whereClauses.push(getTimeRangeWhereClauseForClickhouse(config));
+  const developerDetail = config.options?.developerDetail;
 
   const sql = `
 SELECT
   id,
   argMax(name, time) AS name,
-  ${getGroupArrayInsertAtClauseForClickhouse(config, { key: 'activity' })},
+  ${getGroupArrayInsertAtClauseForClickhouse(config, { key: 'activity', value: 'agg_activity' })},
   ${getGroupArrayInsertAtClauseForClickhouse(config, { key: 'participants' })},
   ${getGroupArrayInsertAtClauseForClickhouse(config, { key: 'issue_comment' })},
   ${getGroupArrayInsertAtClauseForClickhouse(config, { key: 'open_issue' })},
   ${getGroupArrayInsertAtClauseForClickhouse(config, { key: 'open_pull' })},
   ${getGroupArrayInsertAtClauseForClickhouse(config, { key: 'review_comment' })},
   ${getGroupArrayInsertAtClauseForClickhouse(config, { key: 'merged_pull' })}
+  ${developerDetail === true ? ',' + getGroupArrayInsertAtClauseForClickhouse(config, { key: 'details', noPrecision: true, defaultValue: '[]' }) : ''}
 FROM
 (
   SELECT
     ${getGroupTimeClauseForClickhouse(config, 'month')},
     ${getGroupIdClauseForClickhouse(config)},
-    ROUND(SUM(activity), 2) AS activity,
+    ROUND(SUM(activity), 2) AS agg_activity,
     COUNT(actor_id) AS participants,
     SUM(issue_comment) AS issue_comment,
     SUM(open_issue) AS open_issue,
     SUM(open_pull) AS open_pull,
     SUM(review_comment) AS review_comment,
     SUM(merged_pull) AS merged_pull
+    ${developerDetail === true ? ',arraySort(x -> -tupleElement(x, 2), groupArray((actor_login, ROUND(activity, 2)))) AS details' : ''}
   FROM
   (
     SELECT
@@ -156,7 +162,7 @@ ${getOutterOrderAndLimit(config, 'activity')}`;
 
   const result: any = await clickhouse.query(sql);
   return result.map(row => {
-    const [id, name, activity, participants, issue_comment, open_issue, open_pull, review_comment, merged_pull] = row;
+    const [id, name, activity, participants, issue_comment, open_issue, open_pull, review_comment, merged_pull, details] = row;
     return {
       id,
       name,
@@ -167,6 +173,7 @@ ${getOutterOrderAndLimit(config, 'activity')}`;
       open_pull,
       review_comment,
       merged_pull,
+      details,
     }
   });
 }
