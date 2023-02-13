@@ -1,26 +1,26 @@
-# OpenRank
+# Global OpenRank
 
 ![Type](https://img.shields.io/badge/Type-Index-blue) ![From](https://img.shields.io/badge/From-X--lab-blue) ![For](https://img.shields.io/badge/For-Repo/Developer-blue)
 
 ## Definition
 
-OpenRank is an index introduced by X-lab, the original idea of OpenRank is from Frank, read the [blog](https://blog.frankzhao.cn/how_to_measure_open_source_3) for the detail of this index.
+Global OpenRank is an index introduced by X-lab, the original idea of global OpenRank is from Frank, read the [blog](https://blog.frankzhao.cn/how_to_measure_open_source_3) for the detail of this index.
 
-OpenRank is a downstream index of `activity`, it partially uses `activity` index to construct a collaborative network for all GitHub repos and developers. The network model is:
+Global OpenRank is a downstream index of `activity`, it partially uses `activity` index to construct a collaborative network for all GitHub repos and developers. The network model is:
 
 ![OpenRankUML](https://www.plantuml.com/plantuml/png/SoWkIImgAStDuUBAJInGI4ajIyt9BqWjKgZcKb0eIymfJLMmjLF8AyrDIYtYgeKeAaejo2_EBCalgiIb2c6CZQwk7R86AuN4v9BCiioIIYukXzIy5A3D0000)
 
-In the implementation of OpenRank, we use `activity` index as relationship weight for developers and repositories, construct the global network for every month and calculate the OpenRank of every node in the network. However, we do not use `square` to calculate the `activity` in OpenRank because `square` is used to bring community size into account, but for a global collaborative network, the community size is already implied in the network structure.
+In the implementation of global OpenRank, we use `activity` index as relationship weight for developers and repositories, construct the global network for every month and calculate the global OpenRank of every node in the network. However, we do not use `square` to calculate the `activity` in global OpenRank because `square` is used to bring community size into account, but for a global collaborative network, the community size is already implied in the network structure.
 
-Different from PageRank, the value of each node does not entirely depend on the network structure, but also partially depends on the value of the node in last month. So for every developer and repository, it will inherit part of its OpenRank value which is also a reflect of long-term value in open source.
+Different from PageRank, the value of each node does not entirely depend on the network structure, but also partially depends on the value of the node in last month. So for every developer and repository, it will inherit part of its global OpenRank value which is also a reflect of long-term value in open source.
 
 ## Code
 
-We do not open source OpenRank calculation code in OpenDigger since this is a network index and depends on Neo4j database. But we do export the result of each month to ClickHouse server, so you can still access OpenRank index by the [code](https://github.com/X-lab2017/open-digger/blob/master/src/metrics/indices.ts#L21).
+We do not open source global OpenRank calculation code in OpenDigger since this is a network index and depends on Neo4j database. But we do export the result of each month to ClickHouse server, so you can still access global OpenRank index by the [code](https://github.com/X-lab2017/open-digger/blob/master/src/metrics/indices.ts#L21).
 
 ## Parameters
 
-There are several parameters used in OpenRank algorithm.
+There are several parameters used in global OpenRank algorithm.
 
 | Parameter Name | Value | Description | Note |
 | :------------- | :---- | :---------- | :--- |

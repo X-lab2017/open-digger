@@ -1,4 +1,7 @@
 - [贡献指南](/zh-cn/CONTRIBUTING.md)
 - [工作流](/zh-cn/workflow.md)
 - [数据描述](/zh-cn/data.md)
+- 指标说明
+  - [全域 OpenRank](/zh-cn/metrics/global_openrank.md)
+  - [项目 OpenRank](/zh-cn/metrics/project_openrank.md)
 - [项目与活动](/zh-cn/events.md)

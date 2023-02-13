@@ -2,6 +2,6 @@
 - [Workflow](/workflow.md)
 - [Data Description](/data.md)
 - Metrics
-  - [OpenRank](/metrics/openrank.md)
+  - [Global OpenRank](/metrics/global_openrank.md)
   - [Project OpenRank](/metrics/project_openrank.md)
   - [Technical Fork](/metrics/technical_fork.md)
