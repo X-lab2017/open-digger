@@ -2,5 +2,6 @@ name: Xiaomi
 type: Company
 data:
   github_org:
-    - 1309360 # XiaoMi
-    - 1274540 # MiCode
+    - 1309360 # org:XiaoMi
+    - 1274540 # org:MiCode
+    - 11650082 # org:kaldi-asr

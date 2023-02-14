@@ -2,8 +2,9 @@ name: Tencent
 type: Company
 data:
   github_org:
-    - 18461506 # Tencent
-    - 1503033 # AlloyTeam
-    - 42138346 # TarsCloud
-    - 14183739 # weixin
-    - 12334581 # tencentyun
+    - 18461506 # org:Tencent
+    - 1503033 # org:AlloyTeam
+    - 42138346 # org:TarsCloud
+    - 14183739 # org:weixin
+    - 12334581 # org:tencentyun
+    - 42727075 # org:Angel-ML

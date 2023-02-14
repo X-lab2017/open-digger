@@ -1,0 +1,5 @@
+name: OpenAI
+type: Company
+data:
+  github_org:
+    - 14957082 # org:openai

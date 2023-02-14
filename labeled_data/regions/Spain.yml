@@ -1,0 +1,5 @@
+name: Spain
+type: Region
+data:
+  label:
+    - :companies/artelnics

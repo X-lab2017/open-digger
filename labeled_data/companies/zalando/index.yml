@@ -1,0 +1,6 @@
+name: Zalando
+type: Company
+data:
+  github_org:
+    - 30869512 # org:zalandoresearch
+    - 59021421 # org:flairNLP

@@ -4,10 +4,11 @@ data:
   label:
     - service_comb
   github_org:
-    - 20315766 # Huawei
-    - 6876878 # huawei-cloudnative
-    - 36578213 # huaweicloud
-    - 41812520 # kubeedge
-    - 41812465 # kubegene
-    - 22132015 # LiteOS
-    - 12619994 # huawei-noah
+    - 20315766 # org:Huawei
+    - 6876878 # org:huawei-cloudnative
+    - 36578213 # org:huaweicloud
+    - 41812520 # org:kubeedge
+    - 41812465 # org:kubegene
+    - 22132015 # org:LiteOS
+    - 12619994 # org:huawei-noah
+    - 54143604 # org:mindspore-ai
