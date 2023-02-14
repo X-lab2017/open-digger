@@ -1,0 +1,7 @@
+name: NVIDIA
+type: Company
+data:
+  github_org:
+    - 1728152 # org:NVIDIA
+    - 7717624 # org:NVIDIAGameWorks
+    - 2695301 # org:NVlabs

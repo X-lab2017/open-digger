@@ -1,0 +1,5 @@
+name: H2O AI
+type: Company
+data:
+  github_org:
+    - 1402695 # org:h2oai
