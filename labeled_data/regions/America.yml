@@ -24,4 +24,8 @@ data:
     - :companies/intel
     - :companies/mycroftai
     - :companies/h2oai
+    - :companies/twitter
+    - :companies/deno
+    - :companies/netlify
+    - :companies/anaconda
  
