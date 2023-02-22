@@ -5,6 +5,7 @@ import getConfig from '../../config';
 import createGraph from 'ngraph.graph';
 import { join } from "path";
 import { existsSync, mkdirSync, readFileSync, rmSync, writeFileSync } from "fs";
+import { getLabelData } from "../../label_data_utils";
 var createLayout = require('ngraph.offline.layout');
 var save = require('ngraph.tobinary');
 
@@ -30,15 +31,20 @@ const task: Task = {
     const lastMonth = new Date();
     lastMonth.setMonth(lastMonth.getMonth() - 1);
 
-    const labelsFileName = 'labels.json', originLabelsFileName = 'labels_origin.json', linksFileName = 'links.bin', positionsFileName = 'positions.bin';
+    const labelsFileName = 'labels.json', originLabelsFileName = 'labels_origin.json', linksFileName = 'links.bin', positionsFileName = 'positions.bin', repoLabelFileName = 'repo_labels.json';
+
+    const labelData = getLabelData();
 
     const lastPositionMap = new Map<string, Number[]>();
+    const labelMap = new Map<string, Set<string>>();
+    let key = '';
 
     await forEveryMonth(2015, 1, lastMonth.getFullYear(), lastMonth.getMonth() + 1, async (y, m) => {
-      console.log(`Gonna export ${y}-${m}`);
+      key = `${y}${m.toString().padStart(2, '0')}`;
+      console.log(`Gonna export ${key}`);
 
       // save the graph
-      const exportPath = join(exportBasePath, `${y}${m.toString().padStart(2, '0')}`);
+      const exportPath = join(exportBasePath, key);
       if (forceClear && existsSync(exportPath)) {
         rmSync(exportPath, { recursive: true });
       }
@@ -47,15 +53,36 @@ const task: Task = {
       }
 
       // generate the graph if files not exists or deleted
-      if (![labelsFileName, linksFileName, positionsFileName].every(f => existsSync(join(exportPath, f)))) {
+      if (![labelsFileName, linksFileName, positionsFileName, repoLabelFileName]
+        .every(f => existsSync(join(exportPath, f)))) {
         const nodeMap = new Map<string, Node>();
         const edgeArr: any[] = [];
 
         // export nodes and edges
-        await runQueryStream(`MATCH (r:Repo)<-[a:ACTION]-(u:User) WHERE r.open_rank_${y}${m} > e() AND u.open_rank_${y}${m} > e() AND a.activity_${y}${m} > 2 RETURN id(r) AS rid, r.name AS repoName, ROUND(r.open_rank_${y}${m}, 2) AS ror, id(u) AS uid, u.login AS userName, ROUND(u.open_rank_${y}${m}, 2) AS uor, a.activity_${y}${m} AS activity`, async r => {
+        await runQueryStream(`MATCH (r:Repo)<-[a:ACTION]-(u:User)
+          WHERE
+            r.open_rank_${y}${m} > e() AND
+            u.open_rank_${y}${m} > e() AND
+            a.activity_${y}${m} > 2 
+          RETURN
+            id(r) AS rid,
+            r.name AS repoName,
+            r.id AS repoId,
+            r.org_id AS orgId,
+            ROUND(r.open_rank_${y}${m}, 2) AS ror,
+            id(u) AS uid,
+            u.login AS userName,
+            ROUND(u.open_rank_${y}${m}, 2) AS uor,
+            a.activity_${y}${m} AS activity
+          `, async r => {
           nodeMap.set(r.rid, { id: r.rid, t: 'r', n: r.repoName, or: r.ror });
           nodeMap.set(r.uid, { id: r.uid, t: 'u', n: r.userName, or: r.uor });
           edgeArr.push({ from: r.uid, to: r.rid, weight: r.activity });
+          labelData.filter(l => l.githubOrgs.includes(parseInt(r.orgId)) || l.githubRepos.includes(parseInt(r.repoId)))
+            .forEach(l => {
+              if (!labelMap.has(l.name)) labelMap.set(l.name, new Set<string>());
+              labelMap.get(l.name)!.add(r.rid);
+            });
         });
         console.log(`Load graph done, node size is ${nodeMap.size}, edge size is ${edgeArr.length}`);
 
@@ -86,21 +113,31 @@ const task: Task = {
         rmSync(join(exportPath, originLabelsFileName));
 
         // create layout
-        const layout = createLayout(g, {
-          iterations: 1000,
-          saveEach: 1000,
-          outDir: exportPath,
-          layoutOptions: {
-            nodeMass: id => g.getNode(id)?.data.or,
-          }
-        });
-        // set node position to last month positions
-        nodeIds.forEach(id => {
-          if (lastPositionMap.has(id)) {
-            layout.getLayout().setNodePosition(id, ...lastPositionMap.get(id)!);
-          }
-        });
-        layout.run(true);
+        if (!existsSync(join(exportPath, positionsFileName))) {
+          const layout = createLayout(g, {
+            iterations: 1000,
+            saveEach: 1000,
+            outDir: exportPath,
+            layoutOptions: {
+              nodeMass: id => g.getNode(id)?.data.or,
+            }
+          });
+          // set node position to last month positions
+          nodeIds.forEach(id => {
+            if (lastPositionMap.has(id)) {
+              layout.getLayout().setNodePosition(id, ...lastPositionMap.get(id)!);
+            }
+          });
+          layout.run(true);
+        }
+
+        // export label data
+        writeFileSync(join(exportPath, repoLabelFileName), JSON.stringify(Array.from(labelMap.entries()).map(i => {
+          return {
+            name: i[0],
+            ids: Array.from(i[1]),
+          };
+        })));
       }
 
       // load the position info for next month
@@ -111,7 +148,7 @@ const task: Task = {
         const coordinates = [0, 4, 8].map(i => buf.readInt32LE(offset + i));
         lastPositionMap.set(node.id, coordinates);
       });
-      console.log(`Find ${lastPositionMap.size} nodes' positions from ${y}-${m}`);
+      console.log(`Find ${lastPositionMap.size} nodes' positions from ${key}`);
     });
   },
 };
