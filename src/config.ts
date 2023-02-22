@@ -32,6 +32,7 @@ let config = {
   },
   export: {
     path: '',
+    galaxyPath: '',
     needInit: true,
   },
 };
@@ -43,7 +44,7 @@ export default async () => {
       await import('./local_config').then(localConfig => {
         config = merge(config, localConfig.default);
       });
-    } catch {}
+    } catch { }
   }
   return config;
 }
