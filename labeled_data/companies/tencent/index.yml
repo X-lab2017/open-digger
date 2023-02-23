@@ -1,6 +1,8 @@
 name: Tencent
 type: Company
 data:
+  github_repo:
+    - 203957456 # repo:OpenAtomFoundation/TencentOS-tiny
   github_org:
     - 18461506 # org:Tencent
     - 1503033 # org:AlloyTeam

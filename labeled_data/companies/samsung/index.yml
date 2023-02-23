@@ -1,0 +1,5 @@
+name: Samsung
+type: Company
+data:
+  github_org:
+    - 6210390 # org:Samsung
