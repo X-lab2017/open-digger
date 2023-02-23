@@ -2,6 +2,7 @@ name: JD
 type: Company
 data:
   github_org:
-    - 39963175 # areslabs
-    - 30794937 # NervJS
-    - 22739181 # jdf2e
+    - 39963175 # org:areslabs
+    - 30794937 # org:NervJS
+    - 22739181 # org:jdf2e
+    - 48896635 # org:blockchain-jd-com
