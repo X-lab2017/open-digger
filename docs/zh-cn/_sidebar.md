@@ -1,3 +1,4 @@
+- [文件结构](/zh-cn/file_structure.md)
 - [贡献指南](/zh-cn/CONTRIBUTING.md)
 - [工作流](/zh-cn/workflow.md)
 - [数据描述](/zh-cn/data.md)

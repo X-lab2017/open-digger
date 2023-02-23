@@ -1,3 +1,4 @@
+- [File Structure](/file_structure.md)
 - [Contributing Guide](/CONTRIBUTING.md)
 - [Workflow](/workflow.md)
 - [Data Description](/data.md)
