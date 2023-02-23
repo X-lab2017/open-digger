@@ -38,9 +38,10 @@ const task: Task = {
     const lastPositionMap = new Map<string, Number[]>();
     const labelMap = new Map<string, Set<string>>();
     let key = '';
+    const keys: string[] = [];
 
     await forEveryMonth(2015, 1, lastMonth.getFullYear(), lastMonth.getMonth() + 1, async (y, m) => {
-      key = `${y}${m.toString().padStart(2, '0')}`;
+      key = `${y}-${m.toString().padStart(2, '0')}`;
       console.log(`Gonna export ${key}`);
 
       // save the graph
@@ -149,7 +150,14 @@ const task: Task = {
         lastPositionMap.set(node.id, coordinates);
       });
       console.log(`Find ${lastPositionMap.size} nodes' positions from ${key}`);
+
+      keys.push(key);
     });
+
+    writeFileSync(join(exportBasePath, 'manifest.json'), JSON.stringify({
+      all: keys,
+      last: keys[keys.length - 1],
+    }));
   },
 };
 
