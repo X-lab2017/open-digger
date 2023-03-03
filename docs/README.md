@@ -312,7 +312,7 @@ OpenDigger provides ClickHouse sample data and Jupyter notebook image to run Ope
 Welcome to join the WeChat group by scanning the QRCode and I will invite you into our WeChat group.
 
 <div align=center>
-<img src='/assets/wechat-qrcode.png' width="250px">
+<img src='assets/wechat-qrcode.png' width="250px">
 </div>
 
 ## License
