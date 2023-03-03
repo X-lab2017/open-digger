@@ -133,7 +133,7 @@ FROM
 (
   SELECT
     ${getGroupTimeClauseForClickhouse(config, 'month')},
-    ${getGroupIdClauseForClickhouse(config)},
+    ${getGroupIdClauseForClickhouse(config, 'repo', 'month')},
     ROUND(SUM(activity), 2) AS agg_activity,
     COUNT(actor_id) AS participants,
     SUM(issue_comment) AS issue_comment,
@@ -155,7 +155,7 @@ FROM
     HAVING activity > 0
   )
   GROUP BY id, time
-  ${getInnerOrderAndLimit(config, 'activity')}
+  ${getInnerOrderAndLimit(config, 'agg_activity')}
 )
 GROUP BY id
 ${getOutterOrderAndLimit(config, 'activity')}`;

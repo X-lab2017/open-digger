@@ -243,7 +243,7 @@ export const getTimeRangeWhereClauseForClickhouse = (config: QueryConfig): strin
 }
 
 // clickhouse label group condition
-export const getLabelGroupConditionClauseForClickhouse = (config: QueryConfig): string => {
+export const getLabelGroupConditionClauseForClickhouse = (config: QueryConfig, timeCol?: string): string => {
   const labelData = getLabelData(config.injectLabelData)?.filter(l => l.type === config.groupBy);
   if (!labelData || labelData.length === 0) throw new Error(`Invalide group by label: ${config.groupBy}`);
   const idLabelRepoMap = new Map<number, string[][]>();
@@ -288,7 +288,7 @@ export const getLabelGroupConditionClauseForClickhouse = (config: QueryConfig): 
     return `(${c.join(' OR ')}),[${v.labels.map(l => `'${l[1]}'`).join(',')}]`;
   }).join(',');
 
-  return `arrayJoin(multiIf(${idConditions}, ['Others'])) AS id, argMax(arrayJoin(multiIf(${nameConditions}, ['Others'])), time) AS name`;
+  return `arrayJoin(multiIf(${idConditions}, ['Others'])) AS id, argMax(arrayJoin(multiIf(${nameConditions}, ['Others'])), ${timeCol ?? 'time'}) AS name`;
 }
 
 export const getGroupArrayInsertAtClauseForClickhouse = (config: QueryConfig, option: { key: string; defaultValue?: string; value?: string; noPrecision?: boolean, positionByEndTime?: boolean }): string => {
@@ -329,17 +329,18 @@ export const getGroupTimeClauseForClickhouse = (config: QueryConfig, timeCol: st
   })()} AS time`;
 }
 
-export const getGroupIdClauseForClickhouse = (config: QueryConfig, type: string = 'repo') => {
+export const getGroupIdClauseForClickhouse = (config: QueryConfig, type: string = 'repo', timeCol?: string) => {
   return `${(() => {
+    const timeColumn = timeCol ?? (config.groupTimeRange ? 'time' : 'created_at');
     if (!config.groupBy) {  // group by repo'
       if (type === 'repo')
-        return `repo_id AS id, argMax(repo_name, ${config.groupTimeRange ? 'time' : 'created_at'}) AS name`;
+        return `repo_id AS id, argMax(repo_name, ${timeColumn}) AS name`;
       else
-        return `actor_id AS id, argMax(actor_login, ${config.groupTimeRange ? 'time' : 'created_at'}) AS name`;
+        return `actor_id AS id, argMax(actor_login, ${timeColumn}) AS name`;
     } else if (config.groupBy === 'org') {
-      return `org_id AS id, argMax(org_login, ${config.groupTimeRange ? 'time' : 'created_at'}) AS name`;
+      return `org_id AS id, argMax(org_login, ${timeColumn}) AS name`;
     } else {  // group by label
-      return getLabelGroupConditionClauseForClickhouse(config);
+      return getLabelGroupConditionClauseForClickhouse(config, timeColumn);
     }
   })()}`;
 }
