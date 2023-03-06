@@ -1,0 +1,6 @@
+name: Anaconda
+type: Company
+data:
+  github_org:
+    - 3571983 # org:Anaconda-Platform
+    - 100553281 # org:pyscript

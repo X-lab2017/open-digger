@@ -63,6 +63,8 @@ data:
     - :companies/datacanvas
     - :companies/cloudwise
     - :companies/stoneatom
+    - :companies/fuzhi
+    - :companies/iqiyi
     - :communities/openmmlab
     - :communities/xlab
     - :communities/mulan

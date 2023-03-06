@@ -1,0 +1,6 @@
+name: Germany
+type: Region
+data:
+  label:
+    - :companies/zalando
+    - :companies/explosionai

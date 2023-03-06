@@ -17,4 +17,15 @@ data:
     - :companies/vmware
     - :companies/netflix
     - :companies/hashicorp
+    - :companies/deepmind
+    - :companies/openai
+    - :companies/nvidia
+    - :companies/uber
+    - :companies/intel
+    - :companies/mycroftai
+    - :companies/h2oai
+    - :companies/twitter
+    - :companies/deno
+    - :companies/netlify
+    - :companies/anaconda
  

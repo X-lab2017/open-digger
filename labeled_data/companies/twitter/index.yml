@@ -1,0 +1,9 @@
+name: Twitter
+type: Company
+data:
+  github_org:
+    - 50278 # org:twitter
+    - 7451118 # org:twitterdev
+    - 5313303 # org:twitter-archive
+    - 64912658 # org:twitter-research
+    - 2918581 # org:twbs

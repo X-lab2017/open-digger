@@ -1,0 +1,45 @@
+name: OpenJS Foundation
+type: Foundation
+data:
+  github_repo:
+    - 7530570 # repo:appium/appium
+    - 167174 # repo:jquery/jquery
+    - 9384267 # repo:electron/electron
+    - 27193779 # repo:nodejs/node
+    - 3678731 # repo:webpack/webpack
+    - 41766002 # repo:ampproject/amphtml
+    - 33339660 # repo:jerryscript-project/jerryscript
+    - 97773427 # repo:architect/architect
+    - 78452015 # repo:loopbackio/loopback-next
+    - 140325971 # repo:dojo/framework
+    - 3955647 # repo:lodash/lodash
+    - 11061773 # repo:eslint/eslint
+    - 15720445 # repo:marko-js/marko
+    - 3264770 # repo:messageformat/messageformat
+    - 2833537 # repo:jquery/esprima
+    - 237159 # repo:expressjs/express
+    - 1451352 # repo:mochajs/mocha
+    - 1424470 # repo:moment/moment/
+    - 69495170 # repo:fastify/fastify
+    - 946945 # repo:globalizejs/globalize
+    - 12618379 # repo:node-red/node-red
+    - 2430537 # repo:gruntjs/grunt
+    - 18224920 # repo:HospitalRun/hospitalrun-frontend
+    - 612230 # repo:nvm-sh/nvm
+    - 259691 # repo:qunitjs/qunit
+    - 212812134 # repo:interledgerjs/interledgerjs
+    - 9037631 # repo:theintern/intern
+    - 2296970 # repo:webdriverio/webdriverio
+    - 82211360 # repo:webhintio/hint
+    - 31492490 # repo:NativeScript/NativeScript
+    - 35914020 # repo:ajv-validator/ajv
+    - 15062869 # repo:facebook/jest
+    - 48030204 # repo:visgl/deck.gl
+    - 37983912 # repo:json-schema-org/json-schema-spec
+    - 123345344 # repo:keplergl/kepler.gl
+    - 26022940 # repo:jquery-archive/css-chassis
+    - 907410 # repo:jquery-archive/jquery-mobile
+    - 5532217 # repo:jquery-archive/PEP
+    - 478996 # repo:jquery/jquery-ui
+    - 501326 # repo:requirejs/requirejs
+    - 45547 # repo:jquery/sizzle

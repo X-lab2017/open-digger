@@ -1,0 +1,45 @@
+name: Block Chain
+type: Tech-0
+data:
+  github_repo:
+    - 45500099 # repo:hyperledger/hyperledger
+    - 66573241 # repo:hyperledger/fabric
+    - 57901437 # repo:hyperledger/sawtooth-core
+    - 1181927 # repo:bitcoin/bitcoin
+    - 14531737 # repo:bitcoin/bips
+    - 15452919 # repo:ethereum/go-ethereum
+    - 40892817 # repo:ethereum/solidity
+    - 44971752 # repo:ethereum/EIPs
+    - 248697283 # repo:ethereum/remix-project
+    - 37350472 # repo:ElementsProject/lightning
+    - 37064937 # repo:ElementsProject/elements
+    - 87335980 # repo:EOSIO/eos
+    - 70137417 # repo:corda/corda
+    - 111455867 # repo:smartcontractkit/chainlink
+    - 2724167 # repo:XRPLF/rippled
+    - 188299874 # repo:input-output-hk/cardano-node
+    - 70913997 # repo:input-output-hk/cardano-sl
+    - 73670742 # repo:ConsenSys/quorum
+    - 44123252 # repo:bitshares/bitshares-core
+    - 41630316 # repo:HydraChain/hydrachain
+    - 77599938 # repo:MultiChain/multichain
+    - 147593889 # repo:thundercore/thundercore-localchain
+    - 83774906 # repo:qtumproject/qtum
+    - 26987049 # repo:zcash/zcash
+    - 56426975 # repo:wavesplatform/Waves
+    - 113932055 # repo:FISCO-BCOS/FISCO-BCOS
+    - 38267641 # repo:trufflesuite/truffle
+    - 128089774 # repo:storj/storj
+    - 97181001 # repo:Bytom/bytom
+    - 36613036 # repo:neo-project/neo
+    - 97869781 # repo:citahub/cita
+    - 24655114 # repo:web3/web3.js
+    - 36172821 # repo:embarklabs/embark
+    - 27085821 # repo:stellar/stellar-core
+    - 188339686 # repo:xuperchain/xuperchain
+    - 177701551 # repo:blockchain-jd-com/jdchain
+    - 133392857 # repo:vitelabs/go-vite
+    - 88845839 # repo:33cn/chain33
+    - 127714540 # repo:dappledger/AnnChain
+    - 162993816 # repo:ntminer/NtMiner
+    - 8508768 # repo:seriesseed/equity

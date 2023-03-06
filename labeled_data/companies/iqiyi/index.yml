@@ -1,0 +1,5 @@
+name: iQiyi
+type: Company
+data:
+  github_org:
+    - 32627384 # org:iqiyi
