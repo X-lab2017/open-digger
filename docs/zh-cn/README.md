@@ -4,9 +4,9 @@
 
 [OpenDigger](https://github.com/X-lab2017/open-digger) 是由 X-lab 发起的一个开源数据分析报告开源项目，这个项目旨在凝聚全球开发者的智慧共同对开源相关数据进行分析统计，以使开发者可以更好的理解和参与开源。
 
-## 指标或索引的使用
+## 度量或指标的使用
 
-实现的所有指标对所有人开放使用, 您可以通过以下链接找到数据, 因为当前我们只有 Github 的数据，所以OpenDigger 的静态数据根链接为 `https://oss.x-lab.info/open-digger/github/`  , 只需要替换 `org/repo` 或 用户 `login` 即可获取数据。
+实现的所有度量对所有人开放使用, 您可以通过以下链接找到数据, 因为当前我们只有 Github 的数据，所以OpenDigger 的静态数据根链接为 `https://oss.x-lab.info/open-digger/github/`  , 只需要替换 `org/repo` 或 用户 `login` 即可获取数据。
 
 您可随意使用这些数据来构建自己的数据应用程序，您可以将OpenDigger作为您的数据源，并且欢迎在您的项目中使用以下徽章来展示数据源。
 
@@ -22,7 +22,7 @@
   </thead>
   <tbody>
     <tr>
-      <td rowspan="3">索引</td>
+      <td rowspan="3">指标</td>
       <td>OpenRank</td>
       <td><a href="https://blog.frankzhao.cn/how_to_measure_open_source_2/">X-lab</a></td>
       <td><a href="https://oss.x-lab.info/open_digger/github/X-lab2017/open-digger/openrank.json">openrank.json</a></td>
@@ -44,7 +44,7 @@
       <td><a href="https://codepen.io/frank-zsy/pen/MWBdpNg?type=attention">Demo</a></td>
     </tr>
     <tr>
-      <td rowspan="24">指标</td>
+      <td rowspan="24">度量</td>
       <td>Active dates and times</td>
       <td><a href="https://chaoss.community/metric-activity-dates-and-times/">CHAOSS</a></td>
       <td><a href="https://oss.x-lab.info/open_digger/github/X-lab2017/open-digger/active_dates_and_times.json">active_dates_and_times.json</a></td>
@@ -237,7 +237,7 @@
   </thead>
   <tbody>
     <tr>
-      <td rowspan="2">索引</td>
+      <td rowspan="2">指标</td>
       <td>OpenRank</td>
       <td><a href="https://blog.frankzhao.cn/how_to_measure_open_source_3">X-lab</a ></td>
       <td><a href="https://oss.x-lab.info/open_digger/github/frank-zsy/openrank.json">openrank.json</a></td>
@@ -269,7 +269,7 @@
   </tbody>
 </table>
 
-## 用户
+## 用户案例
 
 对于以上数据，OpenDigger 目前有一些用户。
 
