@@ -2,12 +2,22 @@ name: Database - Wide Column
 type: Tech-1
 data:
   github_repo:
-    - 206424 # repo:apache/cassandra
-    - 20089857 # repo:apache/hbase
+    - 316690542 # repo:MonetDB/MonetDB
+    - 150954997 # repo:VictoriaMetrics/VictoriaMetrics
     - 2524488 # repo:apache/accumulo
-    - 28449431 # repo:scylladb/scylla
-    - 105944401 # repo:yugabyte/yugabyte-db
-    - 166515022 # repo:trinodb/trino
-    - 372536760 # repo:oceanbase/oceanbase
-    - 41209174 # repo:strapdata/elassandra
+    - 206424 # repo:apache/cassandra
+    - 5683653 # repo:apache/drill
+    - 6358188 # repo:apache/druid
+    - 20089857 # repo:apache/hbase
+    - 36349344 # repo:apache/trafodion
+    - 18129915 # repo:baidu/tera
+    - 182849188 # repo:delta-io/delta
+    - 191676087 # repo:eleme/lindb
+    - 1584552 # repo:hypertable/hypertable
+    - 13124802 # repo:influxdata/influxdb
     - 191442206 # repo:kashirin-alex/swc-db
+    - 473235285 # repo:polarsignals/frostdb
+    - 5349565 # repo:prestodb/presto
+    - 28449431 # repo:scylladb/scylla
+    - 28449431 # repo:scylladb/scylla
+    - 41209174 # repo:strapdata/elassandra

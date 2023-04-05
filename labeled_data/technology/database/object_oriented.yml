@@ -2,10 +2,35 @@ name: Database - Object Oriented
 type: Tech-1
 data:
   github_repo:
-    - 204261394 # repo:iboxdb/db4o-gpl
-    - 79901405 # repo:objectbox/objectbox-java
-    - 124423054 # repo:The-Alchemist/perst
-    - 88111990 # repo:zhihu/Matisse
-    - 246343828 # repo:atoti/atoti
-    - 273564373 # repo:morecraf/Siaqodb
+    - 107504377 # repo:ADBSQL/AntDB
+    - 681142 # repo:Bobris/BTDB
+    - 52080367 # repo:CUBRID/cubrid
+    - 329729926 # repo:CondensationDB/Condensation-java
     - 8799170 # repo:DevrexLabs/OrigoDB
+    - 516821813 # repo:HydrasDB/hydra
+    - 1244027 # repo:ModeShape/modeshape
+    - 150752008 # repo:SapphireDb/SapphireDb
+    - 124423054 # repo:The-Alchemist/perst
+    - 569871553 # repo:VeloxDB/VeloxDB
+    - 206403 # repo:apache/jackrabbit
+    - 246343828 # repo:atoti/atoti
+    - 396856161 # repo:authzed/spicedb
+    - 95070401 # repo:devrexlabs/memstate
+    - 95817032 # repo:edgedb/edgedb
+    - 15001136 # repo:etoile/CoreObject
+    - 42143916 # repo:fern4lvarez/piladb
+    - 240387847 # repo:gaia-platform/GaiaPlatform
+    - 204261394 # repo:iboxdb/db4o-gpl
+    - 5453989 # repo:jankotek/mapdb
+    - 1776883 # repo:kimchy/compass
+    - 25225465 # repo:markmeeus/MarcelloDB
+    - 273564373 # repo:morecraf/Siaqodb
+    - 351806852 # repo:neondatabase/neon
+    - 79901405 # repo:objectbox/objectbox-java
+    - 7083240 # repo:orientechnologies/orientdb
+    - 37285717 # repo:pilgr/Paper
+    - 14702444 # repo:pipelinedb/pipelinedb
+    - 1917262 # repo:realm/realm-core
+    - 3893984 # repo:tzaeschke/zoodb
+    - 88111990 # repo:zhihu/Matisse
+    - 7357595 # repo:zopefoundation/ZODB
