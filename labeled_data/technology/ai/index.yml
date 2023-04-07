@@ -1,6 +1,8 @@
 name: Artificial Intelligence
 type: Tech-0
 data:
+  label: 
+    - generative_ai
   github_repo:
     - 45717250 # tensorflow/tensorflow
     - 164642888 # repo:kimiyoung/transformer-xl
