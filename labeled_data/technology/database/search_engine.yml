@@ -2,23 +2,15 @@ name: Database - Search Engine
 type: Tech-1
 data:
   github_repo:
-    - 108110 # repo:mongodb/mongo
-    - 156018 # repo:redis/redis
-    - 507775 # repo:elastic/elasticsearch
     - 341374920 # repo:apache/solr
-    - 334274271 # repo:opensearch-project/OpenSearch
-    - 49896881 # repo:marklogic/marklogic-data-hub
-    - 36992044 # repo:sphinxsearch/sphinx
-    - 3788366 # repo:openlink/virtuoso-opensource
-    - 2649214 # repo:arangodb/arangodb
-    - 166515022 # repo:trinodb/trino
-    - 28956774 # repo:Alachisoft/NCache
-    - 735981 # repo:xapian/xapian
-    - 9342529 # repo:crate/crate
+    - 507775 # repo:elastic/elasticsearch
+    - 95614931 # repo:manticoresoftware/manticoresearch
+    - 520096046 # repo:marqo-ai/marqo
     - 130688011 # repo:meilisearch/meilisearch
     - 208728772 # repo:milvus-io/milvus
-    - 41209174 # repo:strapdata/elassandra
-    - 55072677 # repo:semi-technologies/weaviate
-    - 79317191 # repo:typesense/typesense
+    - 334274271 # repo:opensearch-project/OpenSearch
     - 268163609 # repo:qdrant/qdrant
-    - 95614931 # repo:manticoresoftware/manticoresearch
+    - 55072677 # repo:semi-technologies/weaviate
+    - 36992044 # repo:sphinxsearch/sphinx
+    - 79317191 # repo:typesense/typesense
+    - 735981 # repo:xapian/xapian

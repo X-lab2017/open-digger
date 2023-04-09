@@ -1,0 +1,14 @@
+name: Database - Array
+type: Tech-1
+data:
+  github_repo:
+    - 86868560 # repo:TileDB-Inc/TileDB
+    - 96580430 # repo:datajaguar/jaguardb
+    - 304530333 # repo:featureform/embeddinghub
+    - 45732002 # repo:jnidzwetzki/bboxdb
+    - 208728772 # repo:milvus-io/milvus
+    - 478288303 # repo:nuclia/nucliadb
+    - 162765004 # repo:peermaps/eyros
+    - 156942199 # repo:perone/euclidesdb
+    - 40127179 # repo:pilosa/pilosa
+    - 55072677 # repo:semi-technologies/weaviate
