@@ -153,3 +153,5 @@ data:
     - 105944401 # repo:yugabyte/yugabyte-db
     - 23452009 # repo:yxymit/DBx1000
     - 334353425 # repo:zettadb/kunlun
+    - 95817032 # repo:edgedb/edgedb
+    - 436658287 # repo:surrealdb/surrealdb

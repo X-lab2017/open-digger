@@ -21,3 +21,4 @@ data:
     - 28449431 # repo:scylladb/scylla
     - 28449431 # repo:scylladb/scylla
     - 41209174 # repo:strapdata/elassandra
+    - 388946490 # repo:facebookincubator/velox
