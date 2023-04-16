@@ -30,7 +30,7 @@
   },
   "homepage": "https://github.com/X-lab2017/open-digger#readme",
   "dependencies": {
-    "@clickhouse/client": "0.0.10",
+    "@clickhouse/client": "0.0.14",
     "@octokit/core": "^3.6.0",
     "ali-oss": "^6.17.1",
     "dateformat": "^4.5.1",
