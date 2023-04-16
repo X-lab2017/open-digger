@@ -33,7 +33,7 @@
     "@clickhouse/client": "0.0.10",
     "@octokit/core": "^3.6.0",
     "ali-oss": "^6.17.1",
-    "dateformat": "^4.5.1",
+    "dateformat": "^4.6.3",
     "ijavascript-plotly": "0.0.1",
     "js-yaml": "^4.1.0",
     "lodash": "^4.17.21",
