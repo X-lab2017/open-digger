@@ -39,7 +39,6 @@ data:
     - :companies/starrocks
     - :companies/rtthread
     - :companies/sphereex
-    - :companies/jina_ai
     - :companies/api7
     - :companies/streamnative
     - :companies/chatopera
@@ -49,7 +48,6 @@ data:
     - :companies/oushu
     - :companies/goodrain
     - :companies/gaas
-    - :companies/openresty
     - :companies/yunion
     - :companies/juicedata
     - :companies/kyligence
@@ -65,6 +63,10 @@ data:
     - :companies/stoneatom
     - :companies/fuzhi
     - :companies/iqiyi
+    - :companies/datafuse
+    - :companies/easycorp
+    - :companies/espressif
+    - :companies/primihub
     - :communities/openmmlab
     - :communities/xlab
     - :communities/mulan

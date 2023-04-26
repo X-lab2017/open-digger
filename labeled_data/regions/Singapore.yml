@@ -1,0 +1,5 @@
+name: Singapore
+type: Region
+data:
+  label:
+    - :companies/cloudwise

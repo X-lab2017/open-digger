@@ -1,0 +1,5 @@
+name: South_Korea
+type: Region
+data:
+  label:
+    - :companies/samsung

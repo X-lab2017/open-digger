@@ -3,3 +3,5 @@ type: Region
 data:
   label:
     - :companies/rare
+    - :companies/deepmind
+    - :companies/gaas

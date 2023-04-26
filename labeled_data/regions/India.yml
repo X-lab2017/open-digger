@@ -1,0 +1,6 @@
+name: India
+type: Region
+data:
+  label:
+    - :companies/blue_spire
+    - :companies/merico
