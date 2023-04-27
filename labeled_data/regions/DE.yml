@@ -4,3 +4,4 @@ data:
   label:
     - :companies/zalando
     - :companies/explosionai
+    - :companies/jina_ai
