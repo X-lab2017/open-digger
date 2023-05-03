@@ -75,7 +75,7 @@ const task: Task = {
     }
 
     // start to export data for all repos and actors
-    // split the sql into 20 pieces to avoid memory issue
+    // split the sql into 40 pieces to avoid memory issue
     const getPartition = async (type: 'User' | 'Repo'): Promise<Array<{ min: number, max: number }>> => {
       const quantileArr: number[] = [];
       for (let i = 0.025; i <= 0.975; i += 0.025) {
