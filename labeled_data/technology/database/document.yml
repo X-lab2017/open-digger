@@ -53,7 +53,6 @@ data:
     - 58524063 # repo:jclo/picodb
     - 4859 # repo:jcrosby/cloudkit
     - 652189 # repo:jedisct1/Pincaster
-    - jsqldb/jsqldb # not found
     - 1776883 # repo:kimchy/compass
     - 376679845 # repo:losfair/RefineDB
     - 9795883 # repo:louischatriot/nedb

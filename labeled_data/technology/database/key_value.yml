@@ -46,7 +46,6 @@ data:
     - 791522 # repo:basho/riak_kv
     - 88422672 # repo:bergdb/bergdb
     - 2380364 # repo:berkeleydb/libdb
-    - beryldb/beryldb # not found
     - 51290852 # repo:bigchaindb/bigchaindb
     - 57401138 # repo:bitnine-oss/agensgraph
     - 320459354 # repo:bytedance/terarkdb
