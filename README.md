@@ -6,7 +6,7 @@ OpenDigger is an open source analysis report project for all open source data in
 
 ## Metrics or Indices Usage
 
-All implemented metrics are open for anyone to use, you can find the data with following URLs, The root URL of OpenDigger static data is `https://oss.x-lab.info/open-digger/github/` right now since we only have GitHub data for now, just replace the `org/repo` or user `login` to get your data.
+All implemented metrics are open for anyone to use, you can find the data with following URLs, The root URL of OpenDigger static data is `https://oss.x-lab.info/open-digger/github/` right now since we only have GitHub data for now, just replace the `org/repo` or `owner` to get your data.
 
 Feel free to use the data to construct your own data application and you can refer OpenDigger as your data source and welcome to use the following badge in your project to show the data source.
 
@@ -285,7 +285,6 @@ For above data, there are some users of OpenDigger right now.
 - [China Open Source Report 2021](https://kaiyuanshe.cn/document/china-os-report-2021/): Most comprehensive open source report in China by [kaiyuanshe](https://kaiyuanshe.cn/).
 - [China Open Source Blue Paper 2022](http://www.copu.org.cn/new/308): A blue paper of Chinese open source development by [COPU](http://www.copu.org.cn/).
 - [Big Data Open Source Heat Report](cooperations/big_data_open_source_heat_report/开源大数据热力报告2022.pdf): A heat report of open source projects in big data area.
-
 
 ## Events
 
