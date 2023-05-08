@@ -5,6 +5,7 @@ data:
     - 215532341 # repo:256dpi/lungo
     - 25780780 # repo:AlaSQL/alasql
     - 61179047 # repo:Alachisoft/NosDB
+    - 522606931 # repo:Anna-Team/AnnaDB
     - 396867188 # repo:ArcadeData/arcadedb
     - 1374129 # repo:BaseXdb/basex
     - 8799170 # repo:DevrexLabs/OrigoDB
@@ -28,6 +29,7 @@ data:
     - 2649214 # repo:arangodb/arangodb
     - 36778364 # repo:attic-labs/noms
     - 141378316 # repo:beardedeagle/mnesiac
+    - 88422672 # repo:bergdb/bergdb
     - 2380364 # repo:berkeleydb/libdb
     - 51290852 # repo:bigchaindb/bigchaindb
     - 57401138 # repo:bitnine-oss/agensgraph
@@ -83,6 +85,7 @@ data:
     - 6452529 # repo:rethinkdb/rethinkdb
     - 336867666 # repo:ribelo/doxa
     - 34056205 # repo:sachin-sinha/BangDB
+    - 5841618 # repo:sedna/sedna
     - 9525219 # repo:sergeyksv/tingodb
     - 4604367 # repo:sirixdb/sirix
     - 295745510 # repo:small-tech/jsdb
@@ -97,7 +100,7 @@ data:
     - 18351848 # repo:typicode/lowdb
     - 25364889 # repo:unnamed38/fueldb
     - 60377070 # repo:vespa-engine/vespa
+    - 735981 # repo:xapian/xapian
     - 125824259 # repo:xtdb/xtdb
     - 456549280 # repo:ydb-platform/ydb
     - 47479424 # repo:zerodb/zerodb
-    - 522606931 # repo:Anna-Team/AnnaDB
