@@ -32,7 +32,7 @@ const task: Task = {
 
     // get chinese month actor activity
     const chineseUserMonthActivityData = await getUserActivity({
-      labelUnion: [':regions/China'],
+      labelUnion: [':regions/CN'],
       startYear, startMonth, endYear, endMonth,
       order: 'DESC', limit: -1, precision: 2,
       groupTimeRange: 'month', limitOption: 'each',
@@ -56,7 +56,7 @@ const task: Task = {
 
     // get chinese actor year acitivity
     const chineseUserYearActivityData = await getUserActivity({
-      labelUnion: [':regions/China'],
+      labelUnion: [':regions/CN'],
       startYear, startMonth, endYear, endMonth,
       order: 'DESC', limit: -1, precision: 2,
       groupTimeRange: 'year', limitOption: 'each',
@@ -128,7 +128,7 @@ const task: Task = {
     // get chinese company activity
     // by month
     const chineseCompanyMonthActivityData = await getRepoActivity({
-      labelIntersect: ['Company', ':regions/China'],
+      labelIntersect: ['Company', ':regions/CN'],
       startYear, startMonth, endYear, endMonth,
       order: 'DESC', limit: -1, precision: 2,
       groupBy: 'Company', limitOption: 'each',
@@ -152,7 +152,7 @@ const task: Task = {
 
     // by year
     const chineseCompanyYearActivityData = await getRepoActivity({
-      labelIntersect: ['Company', ':regions/China'],
+      labelIntersect: ['Company', ':regions/CN'],
       startYear, startMonth, endYear, endMonth,
       order: 'DESC', limit: -1, precision: 2,
       groupBy: 'Company', limitOption: 'each',
@@ -273,7 +273,7 @@ const task: Task = {
     // get Chinese repo activity
     // by month
     const chineseRepoMonthActivityData = await getRepoActivity({
-      labelUnion: [':regions/China'],
+      labelUnion: [':regions/CN'],
       startYear, startMonth, endYear, endMonth,
       order: 'DESC', limit: -1, precision: 2,
       groupTimeRange: 'month', limitOption: 'each',
@@ -295,7 +295,7 @@ const task: Task = {
     writeData(chineseRepoMonthActivityMap, 'Repo_China_Month', 'activity/repo/chinese');
     // by year
     const chineseRepoYearActivityData = await getRepoActivity({
-      labelUnion: [':regions/China'],
+      labelUnion: [':regions/CN'],
       startYear, startMonth, endYear, endMonth,
       order: 'DESC', limit: -1, precision: 2,
       groupTimeRange: 'year', limitOption: 'each',
@@ -320,7 +320,7 @@ const task: Task = {
     // get Chinese actor OpenRank
     // by month
     const chineseUserMonthOpenrankData = await getUserOpenrank({
-      labelUnion: [':regions/China'],
+      labelUnion: [':regions/CN'],
       startYear, startMonth, endYear, endMonth,
       order: 'DESC', limit: -1, precision: 2,
       groupTimeRange: 'month', limitOption: 'each',
@@ -333,7 +333,7 @@ const task: Task = {
     writeData(chineseUserMonthOpenrankMap, 'Actor_China_Month', 'open_rank/actor/chinese');
     // by year
     const chineseUserYearOpenrankData = await getUserOpenrank({
-      labelUnion: [':regions/China'],
+      labelUnion: [':regions/CN'],
       startYear, startMonth, endYear, endMonth,
       order: 'DESC', limit: -1, precision: 2,
       groupTimeRange: 'year', limitOption: 'each',
@@ -376,7 +376,7 @@ const task: Task = {
     // get Chinese repo OpenRank
     // by month
     const chineseRepoMonthOpenrankData = await getRepoOpenrank({
-      labelUnion: [':regions/China'],
+      labelUnion: [':regions/CN'],
       startYear, startMonth, endYear, endMonth,
       order: 'DESC', limit, precision: 2,
       groupTimeRange: 'month', limitOption: 'each',
@@ -389,7 +389,7 @@ const task: Task = {
     writeData(chineseRepoMonthOpenrankMap, 'Repo_China_Month', 'open_rank/repo/chinese');
     // by year
     const chineseRepoYearOpenrankData = await getRepoOpenrank({
-      labelUnion: [':regions/China'],
+      labelUnion: [':regions/CN'],
       startYear, startMonth, endYear, endMonth,
       order: 'DESC', limit: -1, precision: 2,
       groupTimeRange: 'year', limitOption: 'each',
@@ -405,7 +405,7 @@ const task: Task = {
     // get Chinese company
     // by month
     const chineseCompanyRepoMonthOpenrankData = await getRepoOpenrank({
-      labelIntersect: [':regions/China', 'Company'],
+      labelIntersect: [':regions/CN', 'Company'],
       startYear, startMonth, endYear, endMonth,
       order: 'DESC', limit, precision: 2, limitOption: 'each',
       groupTimeRange: 'month', groupBy: 'Company',
@@ -418,7 +418,7 @@ const task: Task = {
     writeData(chineseCompanyRepoMonthOpenrankMap, 'Company_China_Month', 'open_rank/company/chinese');
     // by year
     const chineseCompanyRepoYearOpenrankData = await getRepoOpenrank({
-      labelIntersect: [':regions/China', 'Company'],
+      labelIntersect: [':regions/CN', 'Company'],
       startYear, startMonth, endYear, endMonth,
       order: 'DESC', limit: -1, precision: 2, limitOption: 'each',
       groupTimeRange: 'year', groupBy: 'Company',

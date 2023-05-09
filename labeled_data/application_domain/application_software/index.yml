@@ -4,7 +4,6 @@ data:
   github_repo: 
     - 28457823 # repo:freeCodeCamp/freeCodeCamp
     - 36633370 # repo:awesome-selfhosted/awesome-selfhosted
-    - 9384267 # repo:electron/electron
     - 184456251 # repo:microsoft/PowerToys
     - 33614304 # repo:nvbn/thefuck
     - 74293321 # repo:sveltejs/svelte
@@ -21,7 +20,6 @@ data:
     - 51980455 # repo:alacritty/alacritty
     - 13233158 # repo:obsproject/obs-studio
     - 15428480 # repo:ColorlibHQ/AdminLTE
-    - 1663468 # repo:mozilla/pdf.js
     - 20619036 # repo:pi-hole/pi-hole
     - 54544023 # repo:Alvin9999/new-pac
     - 153697551 # repo:Fndroid/clash_for_windows_pkg
@@ -46,7 +44,6 @@ data:
     - 26516210 # repo:certbot/certbot
     - 67702184 # repo:topjohnwu/Magisk
     - 128565937 # repo:iamadamdev/bypass-paywalls-chrome
-    - 44662669 # repo:dbeaver/dbeaver
     - 377496562 # repo:AppFlowy-IO/AppFlowy
     - 21125024 # repo:typicode/husky
     - 13584262 # repo:webtorrent/webtorrent
@@ -59,11 +56,9 @@ data:
     - 25315643 # repo:nylas/nylas-mail
     - 393571599 # repo:babysor/MockingBird
     - 7587038 # repo:alibaba/canal
-    - 137451403 # repo:alibaba/nacos
     - 22362099 # repo:johnpapa/angular-styleguide
     - 59652928 # repo:akveo/ngx-admin
     - 3544424 # repo:httpie/httpie
-    - 37448451 # repo:mattermost/mattermost-server
     - 45055693 # repo:balena-io/etcher
     - 126178683 # repo:halo-dev/halo
     - 56899284 # repo:Kong/insomnia
@@ -95,7 +90,6 @@ data:
     - 13428264 # repo:ShareX/ShareX
     - 38380854 # repo:dnSpy/dnSpy
     - 74260508 # repo:docsifyjs/docsify
-    - 382496361 # repo:louislam/uptime-kuma
     - 70104825 # repo:dotnet-architecture/eShopOnContainers
     - 18347476 # repo:google/iosched
     - 3390243 # repo:servo/servo
@@ -121,7 +115,6 @@ data:
     - 1376664 # repo:Seldaek/monolog
     - 183345962 # repo:MustangYM/WeChatExtension-ForMac
     - 19374812 # repo:telegramdesktop/tdesktop
-    - 26337322 # repo:rancher/rancher
     - 137154114 # repo:yichengchen/clashX
     - 15823460 # repo:redisson/redisson
     - 20818126 # repo:google/ExoPlayer
@@ -135,25 +128,19 @@ data:
     - 20773773 # repo:bazelbuild/bazel
     - 2051226 # repo:eligrey/FileSaver.js
     - 164140756 # repo:files-community/Files
-    - 307489284 # repo:remix-run/remix
     - 45195614 # repo:Jackett/Jackett
     - 7569578 # repo:discourse/discourse
     - 191820100 # repo:google/mediapipe
     - 32665718 # repo:railsware/upterm
     - 27737393 # repo:qmk/qmk_firmware
-    - 237523442 # repo:tailscale/tailscale
     - 7248956 # repo:ValveSoftware/steam-for-linux
     - 192632000 # repo:dapr/dapr
     - 302603001 # repo:qier222/YesPlayMusic
     - 101782647 # repo:facebookresearch/fairseq
-    - 22456440 # repo:ppy/osu
-    - 167694194 # repo:blakeblackshear/frigate
+    - 22456440 # repo:ppy/os
     - 52281283 # repo:mastodon/mastodon
-    - 42009758 # repo:MetaMask/metamask-extension
     - 76822722 # repo:Kenshin/simpread
-    - 35726310 # repo:dart-lang/sdk
     - 102578345 # repo:coolsnowwolf/lede
-    - 54173593 # repo:storybookjs/storybook
     - 1864233 # repo:frappe/erpnext
     - 91629816 # repo:freqtrade/freqtrade
     - 34777562 # repo:ossrs/srs
@@ -175,7 +162,6 @@ data:
     - 11007313 # repo:BabylonJS/Babylon.js
     - 42625970 # repo:heartexlabs/labelImg
     - 64713769 # repo:NickeManarin/ScreenToGif
-    - 50613991 # repo:goharbor/harbor
     - 5084750 # repo:Baseflow/PhotoView
     - 16089035 # repo:wekan/wekan
     - 75164823 # repo:apache/rocketmq
@@ -201,7 +187,6 @@ data:
     - 82238168 # repo:monicahq/monica
     - 233472199 # repo:massgravel/Microsoft-Activation-Scripts
     - 42332863 # repo:filebrowser/filebrowser
-    - 129717717 # repo:grafana/loki
     - 33014811 # repo:notepad-plus-plus/notepad-plus-plus
     - 19416551 # repo:sqlitebrowser/sqlitebrowser
     - 11829145 # repo:basecamp/trix
@@ -289,7 +274,6 @@ data:
     - 180687624 # repo:aquasecurity/trivy
     - 2281775 # repo:marcuswestin/WebViewJavascriptBridge
     - 124792826 # repo:kamranahmedse/driver.js
-    - 5349565 # repo:prestodb/presto
     - 47495360 # repo:koel/koel
     - 157509583 # repo:mahmoud/awesome-python-applications
     - 8966356 # repo:hashicorp/packer
@@ -335,7 +319,6 @@ data:
     - 50807547 # repo:turbolinks/turbolinks
     - 103126070 # repo:snail007/goproxy
     - 1390248 # repo:saltstack/salt
-    - 136202695 # repo:mlflow/mlflow
     - 51620087 # repo:davidsandberg/facenet
     - 102057483 # repo:deepinsight/insightface
     - 31929346 # repo:android/uamp
@@ -371,7 +354,6 @@ data:
     - 4814354 # repo:LightTable/LightTable
     - 164471183 # repo:pjialin/py12306
     - 85816528 # repo:bailicangdu/node-elm
-    - 62117812 # repo:apache/pulsar
     - 3784017 # repo:alibaba/tengine
     - 198484780 # repo:beekeeper-studio/beekeeper-studio
     - 56271158 # repo:graphile/postgraphile
@@ -416,7 +398,6 @@ data:
     - 991475 # repo:brianc/node-postgres
     - 1388245 # repo:android-async-http/android-async-http
     - 33457642 # repo:dbcli/mycli
-    - 304344049 # repo:sveltejs/kit
     - 78281075 # repo:SpacehuhnTech/esp8266_deauther
     - 136780445 # repo:kitao/pyxel
     - 84232645 # repo:reactide/reactide
@@ -458,7 +439,6 @@ data:
     - 323965659 # repo:alist-org/alist
     - 80204710 # repo:Caldis/Mos
     - 182095352 # repo:nilaoda/N_m3u8DL-CLI
-    - 640534 # repo:sympy/sympy
     - 12052630 # repo:Zulko/moviepy
     - 287463830 # repo:microsoft/qlib
     - 3299208 # repo:videolan/vlc
@@ -931,7 +911,6 @@ data:
     - 4047080 # repo:jmechner/Prince-of-Persia-Apple-II
     - 278641419 # repo:madd86/awesome-system-design
     - 129094260 # repo:wsvincent/awesome-django
-    - 99919302 # repo:apache/doris
     - 116817549 # repo:webiny/webiny-js
     - 193393505 # repo:nodegui/react-nodegui
     - 52300938 # repo:bitnami/charts
@@ -975,7 +954,6 @@ data:
     - 268147152 # repo:bndw/wifi-card
     - 5676886 # repo:angular-app/angular-app
     - 16685462 # repo:humhub/humhub
-    - 50904245 # repo:apache/beam
     - 36485560 # repo:forkingdog/FDFullscreenPopGesture
     - 7517918 # repo:spring-projects/spring-petclinic
     - 110776471 # repo:dragonflyoss/Dragonfly
@@ -1023,7 +1001,6 @@ data:
     - 6732980 # repo:joeyespo/grip
     - 119637215 # repo:p0deje/Maccy
     - 13419223 # repo:lutris/lutris
-    - 3301400 # repo:MinecraftForge/MinecraftForge
     - 125948006 # repo:febsteam/FEBS-Shiro
     - 420161012 # repo:BishopFox/unredacter
     - 108510101 # repo:FaisalUmair/udemy-downloader-gui
@@ -1145,7 +1122,6 @@ data:
     - 46613660 # repo:photopea/photopea
     - 6198699 # repo:angular-ui/ui-grid
     - 904419 # repo:davatron5000/Lettering.js
-    - 44781140 # repo:greenplum-db/gpdb
     - 48368290 # repo:hslatman/awesome-threat-intelligence
     - 82766832 # repo:developit/unfetch
     - 206990697 # repo:nuno-faria/tiler
@@ -1570,7 +1546,6 @@ data:
     - 3932983 # repo:strues/retinajs
     - 60145667 # repo:HotBitmapGG/bilibili-android-client
     - 18272539 # repo:jasperproject/jasper-client
-    - 172104891 # repo:MaterializeInc/materialize
     - 42798033 # repo:mapsme/omim
     - 9056142 # repo:puniverse/quasar
     - 102447494 # repo:edp963/davinci
@@ -1923,7 +1898,6 @@ data:
     - 28836678 # repo:Freeyourgadget/Gadgetbridge
     - 233568787 # repo:markmap/markmap
     - 306701996 # repo:rancher-sandbox/rancher-desktop
-    - 29933948 # repo:fluent/fluent-bit
     - 90411188 # repo:Azure/draft-classic
     - 33155818 # repo:typcn/bilibili-mac-client
     - 19968325 # repo:tmallfe/tmallfe.github.io
@@ -2341,3 +2315,60 @@ data:
     - 53165382 # repo:crazy-max/WindowsSpyBlocker
     - 2995473 # repo:gaubert/gmvault
     - 40277672 # repo:owner888/phpspider
+    - 20884782 # repo:Ultimaker/Cura
+    - 41889031 # repo:TeamNewPipe/NewPipe
+    - 157166750 # repo:lensapp/lens
+    - 18348651 # repo:OpenRCT2/OpenRCT2
+    - 17148588 # repo:signalapp/Signal-Desktop
+    - 959908 # repo:OpenRA/OpenRA
+    - 143455116 # repo:google/filament
+    - 215654064 # repo:temporalio/temporal
+    - 1326671 # repo:thundernest/k-9
+    - 91977145 # repo:Ranchero-Software/NetNewsWire
+    - 245049028 # repo:troyeguo/koodo-reader
+    - 385332374 # repo:blueedgetechno/win11React
+    - 16466496 # repo:froala/wysiwyg-editor
+    - 179164257 # repo:diem/diem
+    - 42574339 # repo:sindresorhus/caprine
+    - 241659610 # repo:OpenIntelWireless/itlwm
+    - 120231691 # repo:Ryujinx/Ryujinx
+    - 1039520 # repo:ytdl-org/youtube-dl
+    - 106558568 # repo:doitsujin/dxvk
+    - 62712899 # repo:AdguardTeam/AdGuardHome
+    - 147979549 # repo:react-native-webview/react-native-webview
+    - 19316619 # repo:monero-project/monero
+    - 26066727 # repo:mermaid-js/mermaid
+    - 444886996 # repo:NVlabs/instant-ngp
+    - 202353432 # repo:lwouis/alt-tab-macos
+    - 251201169 # repo:PaddlePaddle/PaddleClas
+    - 128430621 # repo:OpenTTD/OpenTTD
+    - 14981376 # repo:dogecoin/dogecoin
+    - 103071620 # repo:nhn/tui.calendar
+    - 16577072 # repo:raspberrypi/documentation
+    - 19866730 # repo:citra-emu/citra
+    - 353775942 # repo:streetwriters/notesnook
+    - 199488860 # repo:actions/starter-workflows
+    - 29759715 # repo:facebook/zstd
+    - 19438 # repo:tidyverse/ggplot2
+    - 92443980 # repo:jgraph/drawio-desktop
+    - 242439725 # repo:fonsp/Pluto.jl
+    - 57430416 # repo:listen1/listen1_chrome_extension
+    - 151843254 # repo:rrweb-io/rrweb
+    - 211033256 # repo:alibaba/x-render
+    - 271714 # repo:wkhtmltopdf/wkhtmltopdf
+    - 14259390 # repo:SpartnerNL/Laravel-Excel
+    - 312262 # repo:philc/vimium
+    - 334515155 # repo:coding-horror/basic-computer-games
+    - 146190027 # repo:hq450/fancyss
+    - 5390156 # repo:fontforge/fontforge
+    - 329265231 # repo:kdrag0n/safetynet-fix
+    - 49217007 # repo:hwdsl2/setup-ipsec-vpn
+    - 190209055 # repo:jerryc127/hexo-theme-butterfly
+    - 72878982 # repo:cncf/landscape
+    - 67361765 # repo:jpuri/react-draft-wysiwyg
+    - 152988607 # repo:fluid-dev/hexo-theme-fluid
+    - 68885535 # repo:penrose/penrose
+    - 219897009 # repo:mack-a/v2ray-agent
+    - 10267810 # repo:mmistakes/minimal-mistakes
+    - 25250913 # repo:shadowsocks/shadowsocks-rust
+    - 7921466 # repo:KhronosGroup/glTF

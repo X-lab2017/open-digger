@@ -5,7 +5,6 @@ data:
     - 85077558 # repo:kamranahmedse/developer-roadmap
     - 63476337 # repo:TheAlgorithms/Python
     - 41881900 # repo:microsoft/vscode
-    - 1039520 # repo:ytdl-org/youtube-dl
     - 23096959 # repo:golang/go
     - 63537249 # repo:facebook/create-react-app
     - 27193779 # repo:nodejs/node
@@ -85,7 +84,6 @@ data:
     - 873328 # repo:getsentry/sentry
     - 8859474 # repo:skylot/jadx
     - 38558578 # repo:nativefier/nativefier
-    - 128624453 # repo:NervJS/taro
     - 74175805 # repo:istio/istio
     - 136815833 # repo:Dreamacro/clash
     - 67508428 # repo:jgraph/drawio
@@ -158,7 +156,6 @@ data:
     - 192175095 # repo:conwnet/github1s
     - 15480067 # repo:react-bootstrap/react-bootstrap
     - 204086862 # repo:streamlit/streamlit
-    - 348060227 # repo:withastro/astro
     - 1213225 # repo:highlightjs/highlight.js
     - 14812739 # repo:libuv/libuv
     - 1198539 # repo:lutzroeder/netron
@@ -282,7 +279,6 @@ data:
     - 30384844 # repo:Flipboard/react-canvas
     - 31912224 # repo:apprenticeharper/DeDRM_tools
     - 263556058 # repo:521xueweihan/GitHub520
-    - 120231691 # repo:Ryujinx/Ryujinx
     - 37734226 # repo:Semantic-Org/Semantic-UI-React
     - 7704544 # repo:Intervention/image
     - 8708394 # repo:filp/whoops
@@ -715,7 +711,6 @@ data:
     - 52796596 # repo:netbox-community/netbox
     - 301830590 # repo:benbjohnson/litestream
     - 5839692 # repo:webpack/webpack-dev-server
-    - 109872620 # repo:paritytech/substrate
     - 20893207 # repo:primer/octicons
     - 53370988 # repo:GoogleChrome/lighthouse
     - 85012942 # repo:yandex/gixy
@@ -980,7 +975,6 @@ data:
     - 351669095 # repo:vanilla-extract-css/vanilla-extract
     - 7006572 # repo:magicmonty/bash-git-prompt
     - 9252533 # repo:numenta/nupic
-    - 46374199 # repo:IntelRealSense/librealsense
     - 198484358 # repo:NobyDa/Script
     - 8732561 # repo:oldratlee/useful-scripts
     - 19943999 # repo:romannurik/AndroidAssetStudio
@@ -1776,3 +1770,87 @@ data:
     - 26456792 # repo:slackapi/python-slack-sdk
     - 15956656 # repo:GangZhuo/BaiduPCS
     - 77830426 # repo:wendux/DSBridge-Android
+    - 197153676 # repo:Chia-Network/chia-blockchain
+    - 153097643 # repo:openvinotoolkit/openvino
+    - 31288958 # repo:hashicorp/vault
+    - 76474200 # repo:apache/hudi
+    - 262296122 # repo:PaddlePaddle/PaddleOCR
+    - 40276274 # repo:ziglang/zig
+    - 180481986 # repo:apache/apisix
+    - 123303402 # repo:python-poetry/poetry
+    - 15452919 # repo:ethereum/go-ethereum
+    - 235468657 # repo:PipedreamHQ/pipedream
+    - 19961085 # repo:apache/pinot
+    - 27442967 # repo:fastlane/fastlane
+    - 309512982 # repo:redpanda-data/redpanda
+    - 44662669 # repo:dbeaver/dbeaver
+    - 26337322 # repo:rancher/rancher
+    - 237523442 # repo:tailscale/tailscale
+    - 50904245 # repo:apache/beam
+    - 129717717 # repo:grafana/loki
+    - 99919302 # repo:apache/doris
+    - 137451403 # repo:alibaba/nacos
+    - 136202695 # repo:mlflow/mlflow
+    - 167694194 # repo:blakeblackshear/frigate
+    - 29933948 # repo:fluent/fluent-bit
+    - 37448451 # repo:mattermost/mattermost-server
+    - 382496361 # repo:louislam/uptime-kuma
+    - 50613991 # repo:goharbor/harbor
+    - 111583593 # repo:Genymobile/scrcpy
+    - 7035651 # repo:lampepfl/dotty
+    - 6235174 # repo:conda/conda
+    - 842037 # repo:nim-lang/Nim
+    - 170411418 # repo:kedacore/keda
+    - 1377037 # repo:gluster/glusterfs
+    - 123625732 # repo:microsoft/fast
+    - 189285554 # repo:exelban/stats
+    - 18950460 # repo:concourse/concourse
+    - 17378009 # repo:awesomeWM/awesome
+    - 9524057 # repo:prometheus/node_exporter
+    - 256786531 # repo:nvim-treesitter/nvim-treesitter
+    - 214011414 # repo:kingToolbox/WindTerm
+    - 6887813 # repo:crystal-lang/crystal
+    - 83878269 # repo:iterative/dvc
+    - 69609 # repo:internetarchive/openlibrary
+    - 347404990 # repo:whyour/qinglong
+    - 440079558 # repo:alibaba/lowcode-engine
+    - 113106184 # repo:linkerd/linkerd2
+    - 79510167 # repo:pypa/pipenv
+    - 102692863 # repo:onnx/onnx
+    - 114128199 # repo:canonical/multipass
+    - 1234714 # repo:elixir-lang/elixir
+    - 206424 # repo:apache/cassandra
+    - 274625369 # repo:infracost/infracost
+    - 23653453 # repo:pachyderm/pachyderm
+    - 36817565 # repo:zaproxy/zaproxy
+    - 377851948 # repo:deepmind/alphafold
+    - 148545807 # repo:kubernetes-sigs/kind
+    - 19994257 # repo:go-delve/delve
+    - 36836475 # repo:tmux/tmux
+    - 9647856 # repo:zerotier/ZeroTierOne
+    - 167596393 # repo:derailed/k9s
+    - 30337170 # repo:rmosolgo/graphql-ruby
+    - 31830551 # repo:rust-lang/rustfmt
+    - 32944298 # repo:Z3Prover/z3
+    - 243197559 # repo:iterative/cml
+    - 43098215 # repo:deepchem/deepchem
+    - 45250726 # repo:Redocly/redoc
+    - 33653601 # repo:jupyter/notebook
+    - 2701888 # repo:mawww/kakoune
+    - 59996401 # repo:YMFE/yapi
+    - 77338532 # repo:cross-rs/cross
+    - 77726177 # repo:trufflesecurity/trufflehog
+    - 291485614 # repo:XIU2/CloudflareSpeedTest
+    - 36071697 # repo:ory/hydra
+    - 5780416 # repo:NLog/NLog
+    - 113701924 # repo:cloudevents/spec
+    - 21977691 # repo:seL4/seL4
+    - 114685405 # repo:rustwasm/wasm-bindgen
+    - 364474335 # repo:google/zx
+    - 62341543 # repo:gleam-lang/gleam
+    - 42489829 # repo:rust-lang/rustlings
+    - 216581567 # repo:github/super-linter
+    - 336895436 # repo:wader/fq
+    - 254832799 # repo:Z4nzu/hackingtool
+    - 42480275 # repo:spatie/laravel-permission
+    - 20653934 # repo:google/cadvisor
