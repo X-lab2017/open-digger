@@ -5,14 +5,12 @@ data:
     - 2325298 # repo:torvalds/linux
     - 20580498 # repo:kubernetes/kubernetes
     - 100060912 # repo:microsoft/terminal
-    - 111583593 # repo:Genymobile/scrcpy
     - 156018 # repo:redis/redis
     - 77213120 # repo:Eugeny/tabby
     - 74627617 # repo:commaai/openpilot
     - 41986369 # repo:pingcap/tidb
     - 16563587 # repo:cockroachdb/cockroach
     - 6452529 # repo:rethinkdb/rethinkdb
-    - 4542716 # repo:NixOS/nixpkgs
     - 60246359 # repo:ClickHouse/ClickHouse
     - 105919803 # repo:facebookresearch/Detectron
     - 269336148 # repo:sickcodes/Docker-OSX
@@ -25,7 +23,6 @@ data:
     - 107505869 # repo:firecracker-microvm/firecracker
     - 201454051 # repo:Awesome-HarmonyOS/HarmonyOS
     - 49876476 # repo:apache/shardingsphere
-    - 179164257 # repo:diem/diem
     - 9994688 # repo:ScoopInstaller/Scoop
     - 48795298 # repo:dylanaraps/neofetch
     - 71056775 # repo:kovidgoyal/kitty
@@ -35,7 +32,6 @@ data:
     - 21827146 # repo:seaweedfs/seaweedfs
     - 714074 # repo:pouchdb/pouchdb
     - 11008207 # repo:vitessio/vitess
-    - 143455116 # repo:google/filament
     - 32969220 # repo:esp8266/Arduino
     - 20537104 # repo:cayleygraph/cayley
     - 88760614 # repo:automerge/automerge
@@ -43,13 +39,10 @@ data:
     - 84240850 # repo:timescale/timescaledb
     - 16986405 # repo:liabru/matter-js
     - 760732 # repo:ccgus/fmdb
-    - 842037 # repo:nim-lang/Nim
     - 29857799 # repo:facebook/infer
     - 78664391 # repo:expo/create-react-native-app
     - 52595226 # repo:xtaci/kcptun
     - 184909163 # repo:koekeishiya/yabai
-    - 189285554 # repo:exelban/stats
-    - 17148588 # repo:signalapp/Signal-Desktop
     - 90320494 # repo:ish-app/ish
     - 488002779 # repo:NVIDIA/open-gpu-kernel-modules
     - 23404839 # repo:docker/kitematic
@@ -61,7 +54,6 @@ data:
     - 30245748 # repo:gizak/termui
     - 13595305 # repo:searx/searx
     - 1579809 # repo:nicklockwood/iCarousel
-    - 959908 # repo:OpenRA/OpenRA
     - 100982449 # repo:argoproj/argo-workflows
     - 42237038 # repo:graphql/dataloader
     - 114187903 # repo:apple/foundationdb
@@ -74,7 +66,6 @@ data:
     - 247725846 # repo:extrawurst/gitui
     - 88703315 # repo:gyf-dev/ImmersionBar
     - 101399935 # repo:zalandoresearch/fashion-mnist
-    - 179354282 # repo:acidanthera/OpenCorePkg
     - 32873313 # repo:systemd/systemd
     - 2162719 # repo:xdissent/ievms
     - 250761246 # repo:aristocratos/bashtop
@@ -99,7 +90,6 @@ data:
     - 37216840 # repo:phpDocumentor/TypeResolver
     - 677464 # repo:doctrine/dbal
     - 14224695 # repo:sequelpro/sequelpro
-    - 399495186 # repo:tiangolo/sqlmodel
     - 84631679 # repo:huanghaibin-dev/CalendarView
     - 24494032 # repo:mysql/mysql-server
     - 7229063 # repo:dnschneid/crouton
@@ -113,7 +103,6 @@ data:
     - 75432091 # repo:kickstarter/ios-oss
     - 82766831 # repo:anbox/anbox
     - 72979287 # repo:oguzhaninan/Stacer
-    - 9524057 # repo:prometheus/node_exporter
     - 39316027 # repo:remix-run/history
     - 142916901 # repo:developit/htm
     - 500093 # repo:winsw/winsw
@@ -129,7 +118,6 @@ data:
     - 1787090 # repo:jigish/slate
     - 47878060 # repo:i18next/react-i18next
     - 98103322 # repo:zhoutaoo/SpringCloud
-    - 123625732 # repo:microsoft/fast
     - 24293205 # repo:ashleymills/Reachability.swift
     - 587311 # repo:omniauth/omniauth
     - 16878185 # repo:teddysun/shadowsocks_install
@@ -149,11 +137,8 @@ data:
     - 130068982 # repo:taskflow/taskflow
     - 61099017 # repo:onceupon/Bash-Oneliner
     - 86337343 # repo:skypjack/entt
-    - 245049028 # repo:troyeguo/koodo-reader
     - 192805335 # repo:microsoft/mimalloc
-    - 1326671 # repo:thundernest/k-9
     - 12721303 # repo:CEWendel/SWTableViewCell
-    - 738491 # repo:facebook/facebook-ios-sdk
     - 88327406 # repo:xmrig/xmrig
     - 106087444 # repo:electerm/electerm
     - 43636412 # repo:motioneye-project/motioneyeos
@@ -169,7 +154,6 @@ data:
     - 81583227 # repo:marcan/takeover.sh
     - 3386088 # repo:NixOS/nix
     - 22711503 # repo:gcc-mirror/gcc
-    - 28653585 # repo:MiCode/Xiaomi_Kernel_OpenSource
     - 28266028 # repo:xmartlabs/XLPagerTabStrip
     - 327859577 # repo:juicedata/juicefs
     - 16734696 # repo:meetecho/janus-gateway
@@ -183,7 +167,6 @@ data:
     - 89322848 # repo:Angel-ML/angel
     - 54453471 # repo:appleboy/gorush
     - 2328181 # repo:freebsd/freebsd-src
-    - 18950460 # repo:concourse/concourse
     - 150961965 # repo:Mortennn/Dozer
     - 94897336 # repo:imgproxy/imgproxy
     - 9950667 # repo:go-xorm/xorm
@@ -191,8 +174,6 @@ data:
     - 13163423 # repo:360Controller/360Controller
     - 14627445 # repo:s3fs-fuse/s3fs-fuse
     - 86350964 # repo:the-benchmarker/web-frameworks
-    - 385332374 # repo:blueedgetechno/win11React
-    - 42574339 # repo:sindresorhus/caprine
     - 101540444 # repo:imbushuo/mac-precision-touchpad
     - 69590701 # repo:vmware/clarity
     - 117772329 # repo:MVIG-SJTU/AlphaPose
@@ -224,7 +205,6 @@ data:
     - 11654790 # repo:techfort/LokiJS
     - 200321698 # repo:rui314/chibicc
     - 49401416 # repo:spacejam/sled
-    - 35968578 # repo:uswds/uswds
     - 410430370 # repo:IceWhaleTech/CasaOS
     - 5741345 # repo:noodlewerk/NWPusher
     - 219378850 # repo:poloclub/cnn-explainer
@@ -238,7 +218,6 @@ data:
     - 139652405 # repo:wszqkzqk/deepin-wine-ubuntu
     - 187922067 # repo:microsoft/WSL2-Linux-Kernel
     - 268501098 # repo:skydoves/Pokedex
-    - 91977145 # repo:Ranchero-Software/NetNewsWire
     - 201517171 # repo:hyperium/tonic
     - 18355892 # repo:antoniolg/androidmvp
     - 5057307 # repo:julienXX/terminal-notifier
@@ -254,7 +233,6 @@ data:
     - 13297858 # repo:vysheng/tg
     - 2938132 # repo:clvv/fasd
     - 7331227 # repo:brndnmtthws/conky
-    - 241659610 # repo:OpenIntelWireless/itlwm
     - 15884926 # repo:hishamhm/htop
     - 3106696 # repo:JakeWharton/DiskLruCache
     - 477528511 # repo:ekzhang/bore
@@ -270,7 +248,6 @@ data:
     - 304230333 # repo:BluePointLilac/ContextMenuManager
     - 17486281 # repo:pagekit/pagekit
     - 31791482 # repo:microsoft/Windows-driver-samples
-    - 170411418 # repo:kedacore/keda
     - 10214540 # repo:rlidwka/sinopia
     - 101052455 # repo:likedan/Awesome-CoreML-Models
     - 24478678 # repo:Rich-Harris/ramjet
@@ -280,7 +257,6 @@ data:
     - 130578889 # repo:pymumu/smartdns
     - 210347143 # repo:supabase/realtime
     - 119961591 # repo:linyacool/WebServer
-    - 215654064 # repo:temporalio/temporal
     - 82933315 # repo:telepresenceio/telepresence
     - 15680717 # repo:arachnys/cabot
     - 11888356 # repo:evant/gradle-retrolambda
@@ -307,8 +283,6 @@ data:
     - 173785481 # repo:aquasecurity/tfsec
     - 31566326 # repo:fogleman/nes
     - 49766020 # repo:mvdan/sh
-    - 17378009 # repo:awesomeWM/awesome
-    - 7035651 # repo:lampepfl/dotty
     - 27358084 # repo:sysown/proxysql
     - 115081766 # repo:lukeed/polka
     - 21109776 # repo:spotify/docker-gc
@@ -320,7 +294,6 @@ data:
     - 8121707 # repo:mybatis/generator
     - 137733266 # repo:GetPublii/Publii
     - 15837676 # repo:mozilla/mozjpeg
-    - 16466496 # repo:froala/wysiwyg-editor
     - 40667593 # repo:realm/realm-js
     - 11469439 # repo:apache/mesos
     - 6975711 # repo:sintaxi/harp
@@ -329,7 +302,6 @@ data:
     - 59151203 # repo:winfsp/winfsp
     - 18800032 # repo:tonsky/datascript
     - 116938442 # repo:traefik/yaegi
-    - 6235174 # repo:conda/conda
     - 5625 # repo:phusion/passenger
     - 902930 # repo:fiorix/freegeoip
     - 72640835 # repo:liangliangyy/DjangoBlog
@@ -375,10 +347,8 @@ data:
     - 7202769 # repo:emqx/emqx
     - 7370241 # repo:RIOT-OS/RIOT
     - 186024298 # repo:nushell/nushell
-    - 19784232 # repo:mesonbuild/meson
     - 3954884 # repo:webpack-contrib/css-loader
     - 3385297 # repo:riemann/riemann
-    - 6271421 # repo:azkaban/azkaban
     - 25739424 # repo:bingoogolapple/BGABanner-Android
     - 79901405 # repo:objectbox/objectbox-java
     - 86585573 # repo:alibaba/Tangram-Android
@@ -388,7 +358,6 @@ data:
     - 333303663 # repo:bytebase/bytebase
     - 221831081 # repo:pop-os/shell
     - 63731386 # repo:tidwall/buntdb
-    - 1377037 # repo:gluster/glusterfs
     - 5876519 # repo:matthewhudson/current-device
     - 12901559 # repo:ossec/ossec-hids
     - 61743960 # repo:Orderella/PopupDialog
@@ -413,7 +382,30 @@ data:
     - 5499304 # repo:chyyuu/os_kernel_lab
     - 7452705 # repo:peers/peerjs-server
     - 20571593 # repo:httpswift/swifter
-    - 443343128 # repo:DulLabs/bhai-lang
     - 115397686 # repo:fo40225/tensorflow-windows-wheel
     - 76990724 # repo:franciscop/server
     - 74174143 # repo:scinfu/SwiftSoup
+    - 166515022 # repo:trinodb/trino
+    - 17165658 # repo:apache/spark
+    - 45821540 # repo:openwrt/openwrt
+    - 196353673 # repo:taosdata/TDengine
+    - 49609581 # repo:PowerShell/PowerShell
+    - 105944401 # repo:yugabyte/yugabyte-db
+    - 59239347 # repo:portainer/portainer
+    - 6934395 # repo:facebook/rocksdb
+    - 190416463 # repo:actions/runner-images
+    - 28449431 # repo:scylladb/scylladb
+    - 172104891 # repo:MaterializeInc/materialize
+    - 5349565 # repo:prestodb/presto
+    - 44781140 # repo:greenplum-db/gpdb
+    - 4542716 # repo:NixOS/nixpkgs
+    - 3199002 # repo:raspberrypi/linux
+    - 43613404 # repo:kubernetes-sigs/kubespray
+    - 52308441 # repo:status-im/status-mobile
+    - 198683574 # repo:dolthub/dolt
+    - 201403923 # repo:activeloopai/deeplake
+    - 68082730 # repo:Ralim/IronOS
+    - 22394357 # repo:osquery/osquery
+    - 422821402 # repo:FerretDB/FerretDB
+    - 220186120 # repo:codenotary/immudb
+    - 146468829 # repo:Nozbe/WatermelonDB

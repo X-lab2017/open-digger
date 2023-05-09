@@ -82,7 +82,6 @@ data:
     - 15019962 # repo:tldr-pages/tldr
     - 128907699 # repo:iamkun/dayjs
     - 220809393 # repo:Textualize/rich
-    - 15452919 # repo:ethereum/go-ethereum
     - 23974149 # repo:Dogfalo/materialize
     - 27574418 # repo:ryanoasis/nerd-fonts
     - 22458259 # repo:Alamofire/Alamofire
@@ -93,7 +92,6 @@ data:
     - 140687430 # repo:dcloudio/uni-app
     - 3065454 # repo:impress/impress.js
     - 188660663 # repo:CorentinJ/Real-Time-Voice-Cloning
-    - 27442967 # repo:fastlane/fastlane
     - 27729880 # repo:grpc/grpc
     - 931135 # repo:Leaflet/Leaflet
     - 19148949 # repo:PhilJay/MPAndroidChart
@@ -101,11 +99,9 @@ data:
     - 5923215 # repo:hexojs/hexo
     - 858127 # repo:pandas-dev/pandas
     - 67962648 # repo:vuetifyjs/vuetify
-    - 49609581 # repo:PowerShell/PowerShell
     - 4578002 # repo:faif/python-patterns
     - 173228436 # repo:NationalSecurityAgency/ghidra
     - 12972263 # repo:alvarotrigo/fullPage.js
-    - 17165658 # repo:apache/spark
     - 1828795 # repo:AFNetworking/AFNetworking
     - 70198875 # repo:airbnb/lottie-android
     - 11551538 # repo:koajs/koa
@@ -176,7 +172,6 @@ data:
     - 32578467 # repo:danielgindi/Charts
     - 192925833 # repo:prisma/prisma
     - 481366 # repo:nvie/gitflow
-    - 31288958 # repo:hashicorp/vault
     - 91253698 # repo:ccxt/ccxt
     - 61715431 # repo:Binaryify/NeteaseCloudMusicApi
     - 61412022 # repo:ianstormtaylor/slate
@@ -184,7 +179,6 @@ data:
     - 3620194 # repo:select2/select2
     - 317757 # repo:Modernizr/Modernizr
     - 23338716 # repo:JedWatson/react-select
-    - 262296122 # repo:PaddlePaddle/PaddleOCR
     - 69495170 # repo:fastify/fastify
     - 89247811 # repo:CMU-Perceptual-Computing-Lab/openpose
     - 2700474 # repo:alibaba/fastjson
@@ -206,14 +200,12 @@ data:
     - 112785414 # repo:alibaba/spring-cloud-alibaba
     - 115720575 # repo:immerjs/immer
     - 10567197 # repo:dokku/dokku
-    - 6934395 # repo:facebook/rocksdb
     - 12226786 # repo:lovell/sharp
     - 34453060 # repo:sindresorhus/awesome-electron
     - 18666758 # repo:pjreddie/darknet
     - 16587283 # repo:dmlc/xgboost
     - 3602123 # repo:hammerjs/hammer.js
     - 4524181 # repo:facebook/folly
-    - 59239347 # repo:portainer/portainer
     - 55886798 # repo:CymChad/BaseRecyclerViewAdapterHelper
     - 70198664 # repo:airbnb/lottie-ios
     - 82729529 # repo:google/python-fire
@@ -249,7 +241,6 @@ data:
     - 52113921 # repo:facebook/draft-js
     - 43695474 # repo:quasarframework/quasar
     - 1631024 # repo:harvesthq/chosen
-    - 123303402 # repo:python-poetry/poetry
     - 73681508 # repo:Tencent/wepy
     - 5532320 # repo:Polymer/polymer
     - 25880891 # repo:facebook/flow
@@ -269,7 +260,6 @@ data:
     - 131770422 # repo:neoclide/coc.nvim
     - 37246537 # repo:chenglou/react-motion
     - 168799526 # repo:rwightman/pytorch-image-models
-    - 41889031 # repo:TeamNewPipe/NewPipe
     - 22657662 # repo:wsargent/docker-cheat-sheet
     - 196284711 # repo:microsoft/cascadia-code
     - 135516270 # repo:k3s-io/k3s
@@ -315,11 +305,9 @@ data:
     - 172741073 # repo:FredKSchott/snowpack
     - 172521926 # repo:pmndrs/react-three-fiber
     - 3122202 # repo:Reactive-Extensions/RxJS
-    - 157166750 # repo:lensapp/lens
     - 7634677 # repo:openssl/openssl
     - 26102180 # repo:afollestad/material-dialogs
     - 241805592 # repo:rome/tools
-    - 196353673 # repo:taosdata/TDengine
     - 31522041 # repo:vnpy/vnpy
     - 18477927 # repo:segmentio/nightmare
     - 5830987 # repo:hapijs/joi
@@ -351,7 +339,6 @@ data:
     - 478584 # repo:jsdom/jsdom
     - 144590939 # repo:VSCodium/vscodium
     - 197275130 # repo:microsoft/winget-cli
-    - 40276274 # repo:ziglang/zig
     - 105279544 # repo:gocolly/colly
     - 8205602 # repo:mybatis/mybatis-3
     - 261279710 # repo:facebookexperimental/Recoil
@@ -604,7 +591,6 @@ data:
     - 437245741 # repo:dragonflydb/dragonfly
     - 3880513 # repo:rwaldron/johnny-five
     - 95067884 # repo:pyecharts/pyecharts
-    - 45821540 # repo:openwrt/openwrt
     - 99846383 # repo:horovod/horovod
     - 227272405 # repo:AliaksandrSiarohin/first-order-model
     - 2945088 # repo:revel/revel
@@ -729,8 +715,6 @@ data:
     - 33538019 # repo:cjwirth/awesome-ios-ui
     - 49704723 # repo:okonet/lint-staged
     - 36027077 # repo:karpathy/char-rnn
-    - 18348651 # repo:OpenRCT2/OpenRCT2
-    - 197153676 # repo:Chia-Network/chia-blockchain
     - 136265021 # repo:albumentations-team/albumentations
     - 39111193 # repo:TypeStrong/ts-node
     - 7549096 # repo:doctrine/inflector
@@ -797,7 +781,6 @@ data:
     - 9155431 # repo:spotify/annoy
     - 4925652 # repo:robfig/cron
     - 86891282 # repo:atomiks/tippyjs
-    - 180481986 # repo:apache/apisix
     - 161292091 # repo:Tencent/matrix
     - 1460385 # repo:scipy/scipy
     - 137515 # repo:mockery/mockery
@@ -1027,7 +1010,6 @@ data:
     - 13945143 # repo:agenda/agenda
     - 2584777 # repo:MahApps/MahApps.Metro
     - 9711133 # repo:apiaryio/api-blueprint
-    - 28449431 # repo:scylladb/scylladb
     - 53991171 # repo:roughike/BottomBar
     - 4287921 # repo:reactphp/reactphp
     - 38066334 # repo:facebookarchive/caffe2
@@ -1248,7 +1230,6 @@ data:
     - 97936938 # repo:goldze/MVVMHabit
     - 140609832 # repo:seanmonstar/warp
     - 2965621 # repo:marionettejs/backbone.marionette
-    - 105944401 # repo:yugabyte/yugabyte-db
     - 74669747 # repo:phar-io/manifest
     - 77071207 # repo:laravel/tinker
     - 361639 # repo:sebastianbergmann/php-file-iterator
@@ -1346,7 +1327,6 @@ data:
     - 43388350 # repo:awslabs/aws-shell
     - 21530861 # repo:open-source-parsers/jsoncpp
     - 48068902 # repo:electronicarts/EASTL
-    - 190416463 # repo:actions/runner-images
     - 91712923 # repo:ElemeFE/v-charts
     - 40262072 # repo:EmpireProject/Empire
     - 15115183 # repo:omcljs/om
@@ -1493,7 +1473,6 @@ data:
     - 3591964 # repo:snowplow/snowplow
     - 56919458 # repo:shentao/vue-multiselect
     - 9131292 # repo:jenssegers/laravel-mongodb
-    - 166515022 # repo:trinodb/trino
     - 800294 # repo:johnezang/JSONKit
     - 5683140 # repo:NLPchina/ansj_seg
     - 18993814 # repo:bytedeco/javacv
@@ -1770,7 +1749,6 @@ data:
     - 14268809 # repo:FastLED/FastLED
     - 17150993 # repo:dm77/barcodescanner
     - 40167453 # repo:Swinject/Swinject
-    - 1924147 # repo:postmanlabs/postman-app-support
     - 7812624 # repo:cferdinandi/smooth-scroll
     - 8230809 # repo:este/este
     - 51094210 # repo:google/EarlGrey
@@ -1956,7 +1934,6 @@ data:
     - 760165 # repo:buildbot/buildbot
     - 79083614 # repo:python-trio/trio
     - 22572203 # repo:diogobernardino/williamchart
-    - 309512982 # repo:redpanda-data/redpanda
     - 24953080 # repo:google/google-authenticator
     - 76280357 # repo:ZheC/Realtime_Multi-Person_Pose_Estimation
     - 333421996 # repo:therealsreehari/Learn-Data-Science-For-Free
@@ -2074,7 +2051,6 @@ data:
     - 2942615 # repo:JakeWharton/NineOldAndroids
     - 85258460 # repo:AAChartModel/AAChartKit
     - 12169108 # repo:google/closure-library
-    - 235468657 # repo:PipedreamHQ/pipedream
     - 64699494 # repo:webpack-contrib/awesome-webpack
     - 2242086 # repo:seyhunak/twitter-bootstrap-rails
     - 839336 # repo:simplecov-ruby/simplecov
@@ -2300,7 +2276,6 @@ data:
     - 49927767 # repo:cweill/gotests
     - 22660515 # repo:doctest/doctest
     - 13167864 # repo:oblique/create_ap
-    - 19961085 # repo:apache/pinot
     - 20466037 # repo:ankurp/Dollar
     - 30039066 # repo:DeclarativeHub/Bond
     - 519390 # repo:emmetio/emmet
@@ -2375,7 +2350,6 @@ data:
     - 9769041 # repo:gali8/Tesseract-OCR-iOS
     - 2784293 # repo:php-amqplib/php-amqplib
     - 18102026 # repo:winjs/winjs
-    - 20884782 # repo:Ultimaker/Cura
     - 138644245 # repo:imbrn/v8n
     - 63965783 # repo:swimlane/ngx-charts
     - 20180433 # repo:MechanicalSoup/MechanicalSoup
@@ -2876,7 +2850,6 @@ data:
     - 48049436 # repo:vipulasri/Timeline-View
     - 82820698 # repo:spencermountain/spacetime
     - 2133437 # repo:bbatsov/projectile
-    - 153097643 # repo:openvinotoolkit/openvino
     - 48688603 # repo:mikepenz/FastAdapter
     - 81634683 # repo:Oneflow-Inc/oneflow
     - 5169475 # repo:WickyNilliams/enquire.js
@@ -2964,7 +2937,6 @@ data:
     - 122520149 # repo:Ramotion/swift-ui-animation-components-and-libraries
     - 3133662 # repo:MacGapProject/MacGap1
     - 3333998 # repo:knowm/XChange
-    - 76474200 # repo:apache/hudi
     - 2493754 # repo:amir20/phantomjs-node
     - 114306758 # repo:quantumlib/Cirq
     - 262558542 # repo:umicro/uView
@@ -3030,3 +3002,66 @@ data:
     - 12043484 # repo:nervgh/angular-file-upload
     - 219113096 # repo:k8gege/Ladon
     - 79352 # repo:mikel/mail
+    - 42009758 # repo:MetaMask/metamask-extension
+    - 54173593 # repo:storybookjs/storybook
+    - 9384267 # repo:electron/electron
+    - 304344049 # repo:sveltejs/kit
+    - 62117812 # repo:apache/pulsar
+    - 307489284 # repo:remix-run/remix
+    - 640534 # repo:sympy/sympy
+    - 1663468 # repo:mozilla/pdf.js
+    - 35726310 # repo:dart-lang/sdk
+    - 3301400 # repo:MinecraftForge/MinecraftForge
+    - 19784232 # repo:mesonbuild/meson
+    - 738491 # repo:facebook/facebook-ios-sdk
+    - 399495186 # repo:tiangolo/sqlmodel
+    - 179354282 # repo:acidanthera/OpenCorePkg
+    - 6271421 # repo:azkaban/azkaban
+    - 443343128 # repo:DulLabs/bhai-lang
+    - 35968578 # repo:uswds/uswds
+    - 46374199 # repo:IntelRealSense/librealsense
+    - 128624453 # repo:NervJS/taro
+    - 348060227 # repo:withastro/astro
+    - 109872620 # repo:paritytech/substrate
+    - 105963253 # repo:reactjs/reactjs.org
+    - 41179827 # repo:Rapptz/discord.py
+    - 207645083 # repo:TanStack/query
+    - 9852918 # repo:TryGhost/Ghost
+    - 4723248 # repo:openlayers/openlayers
+    - 61200117 # repo:instaloader/instaloader
+    - 71323749 # repo:callstack/react-native-paper
+    - 74505259 # repo:slundberg/shap
+    - 71293321 # repo:diegomura/react-pdf
+    - 59737212 # repo:antvis/G2
+    - 96246170 # repo:ApolloAuto/apollo
+    - 38581626 # repo:pybind/pybind11
+    - 2014929 # repo:scikit-image/scikit-image
+    - 28061676 # repo:jsx-eslint/eslint-plugin-react
+    - 71487058 # repo:TanStack/table
+    - 2833881 # repo:beefproject/beef
+    - 11110385 # repo:cvxpy/cvxpy
+    - 16446099 # repo:cryptomator/cryptomator
+    - 50617428 # repo:squidfunk/mkdocs-material
+    - 221862 # repo:projectlombok/lombok
+    - 282653872 # repo:AI4Finance-Foundation/FinRL
+    - 53662249 # repo:wix/react-native-navigation
+    - 20787122 # repo:PostgREST/postgrest
+    - 402046 # repo:parallax/jsPDF
+    - 31764022 # repo:adazzle/react-data-grid
+    - 27576132 # repo:aws/aws-sdk-go
+    - 64561753 # repo:dusty-nv/jetson-inference
+    - 25427817 # repo:react-dnd/react-dnd
+    - 16107755 # repo:bpampuch/pdfmake
+    - 33916850 # repo:spatie/laravel-medialibrary
+    - 80233816 # repo:lottie-react-native/lottie-react-native
+    - 495587598 # repo:lucidrains/imagen-pytorch
+    - 49346299 # repo:ydataai/pandas-profiling
+    - 76991633 # repo:laravel-mix/laravel-mix
+    - 175398594 # repo:sindresorhus/type-fest
+    - 33997353 # repo:SecureAuthCorp/impacket
+    - 2003641 # repo:swagger-api/swagger-core
+    - 299862 # repo:nltk/nltk
+    - 45863890 # repo:apple/swift-corelibs-foundation
+    - 1349775 # repo:RaRe-Technologies/gensim
+    - 47997753 # repo:zo0r/react-native-push-notification
+    - 244025 # repo:tweepy/tweepy
