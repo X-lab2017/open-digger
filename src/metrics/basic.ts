@@ -243,7 +243,7 @@ export const getTimeRangeWhereClauseForClickhouse = (config: QueryConfig): strin
 }
 
 // clickhouse label group condition
-export const getLabelGroupConditionClauseForClickhouse = (config: QueryConfig, timeCol?: string): string => {
+export const getLabelGroupConditionClauseForClickhouse = (config: QueryConfig): string => {
   const labelData = getLabelData(config.injectLabelData)?.filter(l => l.type === config.groupBy);
   if (!labelData || labelData.length === 0) throw new Error(`Invalide group by label: ${config.groupBy}`);
   const idLabelRepoMap = new Map<number, string[][]>();
@@ -277,18 +277,10 @@ export const getLabelGroupConditionClauseForClickhouse = (config: QueryConfig, t
     if (v.orgIds.length > 0) c.push(`org_id IN (${v.orgIds.join(',')})`);
     if (v.repoIds.length > 0) c.push(`repo_id IN (${v.repoIds.join(',')})`);
     if (v.userIds.length > 0) c.push(`actor_id IN (${v.userIds.join(',')})`);
-    return `(${c.join(' OR ')}),[${v.labels.map(l => `'${l[0]}'`).join(',')}]`;
+    return `(${c.join(' OR ')}),[${v.labels.map(l => `tuple('${l[0]}','${l[1]}')`).join(',')}]`;
   }).join(',');
 
-  const nameConditions = Array.from(resultMap.values()).map(v => {
-    const c: string[] = [];
-    if (v.orgIds.length > 0) c.push(`org_id IN (${v.orgIds.join(',')})`);
-    if (v.repoIds.length > 0) c.push(`repo_id IN (${v.repoIds.join(',')})`);
-    if (v.userIds.length > 0) c.push(`actor_id IN (${v.userIds.join(',')})`);
-    return `(${c.join(' OR ')}),[${v.labels.map(l => `'${l[1]}'`).join(',')}]`;
-  }).join(',');
-
-  return `arrayJoin(multiIf(${idConditions}, ['Others'])) AS id, argMax(arrayJoin(multiIf(${nameConditions}, ['Others'])), ${timeCol ?? 'time'}) AS name`;
+  return `(arrayJoin(multiIf(${idConditions}, [tuple('Others', 'Others')])) AS items).1 AS id, any(items.2) AS name`;
 }
 
 export const getGroupArrayInsertAtClauseForClickhouse = (config: QueryConfig, option: { key: string; defaultValue?: string; value?: string; noPrecision?: boolean, positionByEndTime?: boolean }): string => {
@@ -340,7 +332,7 @@ export const getGroupIdClauseForClickhouse = (config: QueryConfig, type: string 
     } else if (config.groupBy === 'org') {
       return `org_id AS id, argMax(org_login, ${timeColumn}) AS name`;
     } else {  // group by label
-      return getLabelGroupConditionClauseForClickhouse(config, timeColumn);
+      return getLabelGroupConditionClauseForClickhouse(config);
     }
   })()}`;
 }
