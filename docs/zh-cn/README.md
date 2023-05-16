@@ -44,7 +44,7 @@
       <td><a href="https://codepen.io/frank-zsy/pen/MWBdpNg?type=attention">Demo</a></td>
     </tr>
     <tr>
-      <td rowspan="24">度量</td>
+      <td rowspan="25">度量</td>
       <td>Active dates and times</td>
       <td><a href="https://chaoss.community/metric-activity-dates-and-times/">CHAOSS</a></td>
       <td><a href="https://oss.x-lab.info/open_digger/github/X-lab2017/open-digger/active_dates_and_times.json">active_dates_and_times.json</a></td>
@@ -216,6 +216,13 @@
       <td><a href="https://oss.x-lab.info/open_digger/github/X-lab2017/open-digger/repo_network.json">repo_network.json</a></td>
       <td><a href="https://github.com/X-lab2017/open-digger/blob/master/src/cron/tasks/network_export.ts#L126">Link</a></td>
       <td><a href="https://codepen.io/frank-zsy/pen/NWBVjpV?type=repo_network">Demo</a></td>
+    </tr>
+    <tr>
+      <td>Activity Details</td>
+      <td><a href="https://github.com/X-lab2017/open-digger/issues/1186">X-lab</a></td>
+      <td><a href="https://oss.x-lab.info/open_digger/github/X-lab2017/open-digger/activity_details.json">activity_details.json</a></td>
+      <td><a href="https://github.com/X-lab2017/open-digger/blob/0432ecbd9b9d75d36b249fb5eb2b101d16a414be/src/metrics/indices.ts#L112">Link</a></td>
+      <td><a href="https://codepen.io/tyn1998/pen/KKGxVrm">Demo</a></td>
     </tr>
     <tr>
       <td>Project OpenRank</td>
