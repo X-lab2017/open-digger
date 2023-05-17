@@ -30,6 +30,7 @@ data:
     - 7083240 # repo:orientechnologies/orientdb
     - 37285717 # repo:pilgr/Paper
     - 14702444 # repo:pipelinedb/pipelinedb
+    - 927442 # repo:postgres/postgres
     - 1917262 # repo:realm/realm-core
     - 3893984 # repo:tzaeschke/zoodb
     - 88111990 # repo:zhihu/Matisse
