@@ -16,6 +16,23 @@ export async function query<T = any>(query: string, params?: any): Promise<T[]> 
   return parser.parse(r) as T[];
 }
 
+export async function runQueryStream<T = any>(query: string, onRecord: (r: T) => Promise<void>, params?: any): Promise<void> {
+  return new Promise(async (resolve, reject) => {
+    const session = (await getClient()).session();
+    const result = session.run(query, params);
+    result.subscribe({
+      onNext: (r: any) => onRecord(parseRecord(r)),
+      onCompleted: () => session.close().then(() => resolve()),
+      onError: reject,
+    });
+  });
+}
+
 export function parseRecord<T = any>(record: any): T {
-  return parser.parseRecord(record)._fields[0];
+  const item = parser.parseRecord(record);
+  const ret: any = {};
+  for (const key of item.keys) {
+    ret[key] = item._fields[item._fieldLookup[key]];
+  }
+  return ret;
 }
