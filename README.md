@@ -157,21 +157,19 @@ Feel free to use the data to construct your own data application and you can ref
       <td><a href="https://chaoss.community/metric-change-requests/">CHAOSS</a></td>
       <td><a href="https://oss.x-lab.info/open_digger/github/X-lab2017/open-digger/change_requests.json">change_requests.json</a></td>
       <td><a href="https://github.com/X-lab2017/open-digger/blob/master/src/metrics/chaoss.ts#L697">Link</a></td>
-      <td><a href="https://codepen.io/frank-zsy/pen/bGjPGxw">Demo</a></td>
+      <td rowspan="3"><a href="https://codepen.io/frank-zsy/pen/bGjPGxw">Demo</a></td>
     </tr>
     <tr>
       <td>Change requests accepted<br />(Merged PR)</td>
       <td><a href="https://chaoss.community/metric-change-requests-accepted/">CHAOSS</a></td>
       <td><a href="https://oss.x-lab.info/open_digger/github/X-lab2017/open-digger/change_requests_accepted.json">change_requests_accepted.json</a></td>
       <td><a href="https://github.com/X-lab2017/open-digger/blob/master/src/metrics/chaoss.ts#L497">Link</a></td>
-      <td><a href="https://codepen.io/frank-zsy/pen/bGjPGxw">Demo</a></td>
     </tr>
     <tr>
       <td>Change requests reviews</td>
       <td><a href="https://chaoss.community/metric-change-request-reviews/">CHAOSS</a></td>
       <td><a href="https://oss.x-lab.info/open_digger/github/X-lab2017/open-digger/change_requests_reviews.json">change_requests_reviews.json</a></td>
       <td><a href="https://github.com/X-lab2017/open-digger/blob/master/src/metrics/chaoss.ts#L734">Link</a></td>
-      <td><a href="https://codepen.io/frank-zsy/pen/bGjPGxw">Demo</a></td>
     </tr>
     <tr>
       <td>Change request response time</td>
