@@ -13,12 +13,11 @@ data:
     - 18129915 # repo:baidu/tera
     - 182849188 # repo:delta-io/delta
     - 191676087 # repo:eleme/lindb
+    - 388946490 # repo:facebookincubator/velox
     - 1584552 # repo:hypertable/hypertable
     - 13124802 # repo:influxdata/influxdb
     - 191442206 # repo:kashirin-alex/swc-db
     - 473235285 # repo:polarsignals/frostdb
     - 5349565 # repo:prestodb/presto
     - 28449431 # repo:scylladb/scylla
-    - 28449431 # repo:scylladb/scylla
     - 41209174 # repo:strapdata/elassandra
-    - 388946490 # repo:facebookincubator/velox

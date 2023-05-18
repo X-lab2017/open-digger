@@ -10,6 +10,7 @@ data:
     - 55093657 # repo:SiriDB/siridb-server
     - 150954997 # repo:VictoriaMetrics/VictoriaMetrics
     - 158975124 # repo:apache/iotdb
+    - 420965027 # repo:cnosdb/cnosdb
     - 4254338 # repo:graphite-project/graphite-web
     - 52420005 # repo:griddb/griddb
     - 17705626 # repo:hawkular/hawkular-metrics

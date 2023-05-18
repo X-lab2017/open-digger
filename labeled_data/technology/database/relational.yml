@@ -76,6 +76,7 @@ data:
     - 8544988 # repo:dreamdbvilas/wonderdb
     - 97518356 # repo:dremio/dremio-oss
     - 138754790 # repo:duckdb/duckdb
+    - 95817032 # repo:edgedb/edgedb
     - 341208515 # repo:edgelesssys/edgelessdb
     - 61373806 # repo:elasql/elasql
     - 387622288 # repo:elliotchance/vsql
@@ -85,11 +86,11 @@ data:
     - 392839612 # repo:firebolt-db/firebolt-python-sdk
     - 305513242 # repo:fluree/db
     - 600860 # repo:fosslc/Ingres
+    - 148087762 # repo:georgia-tech-db/eva
     - 3084708 # repo:ggaughan/ThinkSQL
     - 24650236 # repo:google/lovefield
     - 44781140 # repo:greenplum-db/gpdb
     - 33745913 # repo:h2database/h2database
-    - 90541149 # repo:heavyai/heavydb
     - 90541149 # repo:heavyai/heavydb
     - 291675222 # repo:hstreamdb/hstream
     - 87414843 # repo:hyrise/hyrise
@@ -122,7 +123,6 @@ data:
     - 927442 # repo:postgres/postgres
     - 258454329 # repo:ppml38/icecoal
     - 5349565 # repo:prestodb/presto
-    - 5349565 # repo:prestodb/presto
     - 275838748 # repo:qikkDB/qikkdb
     - 19257422 # repo:questdb/questdb
     - 5665061 # repo:radare/sdb
@@ -139,6 +139,7 @@ data:
     - 176278485 # repo:sqlite/sqlite
     - 151367139 # repo:stellarsql/StellarSQL
     - 12067343 # repo:stephentu/silo
+    - 436658287 # repo:surrealdb/surrealdb
     - 196353673 # repo:taosdata/TDengine
     - 285012797 # repo:tensorbase/tensorbase
     - 443220240 # repo:tinyplex/tinybase
@@ -153,5 +154,3 @@ data:
     - 105944401 # repo:yugabyte/yugabyte-db
     - 23452009 # repo:yxymit/DBx1000
     - 334353425 # repo:zettadb/kunlun
-    - 95817032 # repo:edgedb/edgedb
-    - 436658287 # repo:surrealdb/surrealdb
