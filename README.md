@@ -141,19 +141,17 @@ Feel free to use the data to construct your own data application and you can ref
     </tr>
     <tr>
       <td rowspan="3">Code change lines</td>
-      <td><a href="https://chaoss.community/metric-code-changes-lines/">CHAOSS</a></td>
+      <td rowspan="3"><a href="https://chaoss.community/metric-code-changes-lines/">CHAOSS</a></td>
       <td><a href="https://oss.x-lab.info/open_digger/github/X-lab2017/open-digger/code_change_lines_add.json">code_change_lines_add.json</a></td>
       <td><a href="https://github.com/X-lab2017/open-digger/blob/master/src/metrics/chaoss.ts#L94">Link</a></td>
       <td><a href="https://codepen.io/frank-zsy/pen/dyjByKL">Demo</a></td>
     </tr>
     <tr>
-      <td><a href="https://chaoss.community/metric-code-changes-lines/">CHAOSS</a></td>
       <td><a href="https://oss.x-lab.info/open_digger/github/X-lab2017/open-digger/code_change_lines_remove.json">code_change_lines_remove.json</a></td>
       <td><a href="https://github.com/X-lab2017/open-digger/blob/master/src/metrics/chaoss.ts#L94">Link</a></td>
       <td><a href="https://codepen.io/frank-zsy/pen/dyjByKL">Demo</a></td>
     </tr>
     <tr>
-      <td><a href="https://chaoss.community/metric-code-changes-lines/">CHAOSS</a></td>
       <td><a href="https://oss.x-lab.info/open_digger/github/X-lab2017/open-digger/code_change_lines_sum.json">code_change_lines_sum.json</a></td>
       <td><a href="https://github.com/X-lab2017/open-digger/blob/master/src/metrics/chaoss.ts#L94">Link</a></td>
       <td><a href="https://codepen.io/frank-zsy/pen/dyjByKL">Demo</a></td>
