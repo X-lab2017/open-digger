@@ -70,14 +70,13 @@ Feel free to use the data to construct your own data application and you can ref
       <td>X-lab</td>
       <td><a href="https://oss.x-lab.info/open_digger/github/X-lab2017/open-digger/participants.json">participants.json</a></td>
       <td><a href="https://github.com/X-lab2017/open-digger/blob/master/src/metrics/metrics.ts#L89">Link</a></td>
-      <td><a href="https://codepen.io/frank-zsy/pen/RwBmpYZ">Demo</a></td>
+      <td rowspan="3"><a href="https://codepen.io/frank-zsy/pen/RwBmpYZ">Demo</a></td>
     </tr>
     <tr>
       <td rowspan="2">New contributors</td>
       <td rowspan="2"><a href="https://chaoss.community/metric-new-contributors/">CHAOSS</a></td>
       <td><a href="https://oss.x-lab.info/open_digger/github/X-lab2017/open-digger/new_contributors.json">new_contributors.json</a></td>
       <td rowspan="2"><a href="https://github.com/X-lab2017/open-digger/blob/master/src/metrics/chaoss.ts#L862">Link</a></td>
-      <td rowspan="2"><a href="https://codepen.io/frank-zsy/pen/RwBmpYZ">Demo</a></td>
     </tr>
     <tr>
       <td><a href="https://oss.x-lab.info/open_digger/github/X-lab2017/open-digger/new_contributors_detail.json">new_contributors_detail.json</a></td>
@@ -140,46 +139,36 @@ Feel free to use the data to construct your own data application and you can ref
       <td><a href="https://codepen.io/frank-zsy/pen/VwBqwaP?type=issue_age">Demo</a></td>
     </tr>
     <tr>
-      <td>Code change lines</td>
-      <td><a href="https://chaoss.community/metric-code-changes-lines/">CHAOSS</a></td>
+      <td rowspan="3">Code change lines</td>
+      <td rowspan="3"><a href="https://chaoss.community/metric-code-changes-lines/">CHAOSS</a></td>
       <td><a href="https://oss.x-lab.info/open_digger/github/X-lab2017/open-digger/code_change_lines_add.json">code_change_lines_add.json</a></td>
-      <td><a href="https://github.com/X-lab2017/open-digger/blob/master/src/metrics/chaoss.ts#L94">Link</a></td>
-      <td><a href="https://codepen.io/frank-zsy/pen/dyjByKL">Demo</a></td>
+      <td rowspan="3"><a href="https://github.com/X-lab2017/open-digger/blob/master/src/metrics/chaoss.ts#L94">Link</a></td>
+      <td rowspan="3"><a href="https://codepen.io/frank-zsy/pen/dyjByKL">Demo</a></td>
     </tr>
     <tr>
-      <td>Code change lines</td>
-      <td><a href="https://chaoss.community/metric-code-changes-lines/">CHAOSS</a></td>
       <td><a href="https://oss.x-lab.info/open_digger/github/X-lab2017/open-digger/code_change_lines_remove.json">code_change_lines_remove.json</a></td>
-      <td><a href="https://github.com/X-lab2017/open-digger/blob/master/src/metrics/chaoss.ts#L94">Link</a></td>
-      <td><a href="https://codepen.io/frank-zsy/pen/dyjByKL">Demo</a></td>
     </tr>
     <tr>
-      <td>Code change lines</td>
-      <td><a href="https://chaoss.community/metric-code-changes-lines/">CHAOSS</a></td>
       <td><a href="https://oss.x-lab.info/open_digger/github/X-lab2017/open-digger/code_change_lines_sum.json">code_change_lines_sum.json</a></td>
-      <td><a href="https://github.com/X-lab2017/open-digger/blob/master/src/metrics/chaoss.ts#L94">Link</a></td>
-      <td><a href="https://codepen.io/frank-zsy/pen/dyjByKL">Demo</a></td>
     </tr>
     <tr>
       <td>Change requests<br />(Open PR)</td>
       <td><a href="https://chaoss.community/metric-change-requests/">CHAOSS</a></td>
       <td><a href="https://oss.x-lab.info/open_digger/github/X-lab2017/open-digger/change_requests.json">change_requests.json</a></td>
       <td><a href="https://github.com/X-lab2017/open-digger/blob/master/src/metrics/chaoss.ts#L697">Link</a></td>
-      <td><a href="https://codepen.io/frank-zsy/pen/bGjPGxw">Demo</a></td>
+      <td rowspan="3"><a href="https://codepen.io/frank-zsy/pen/bGjPGxw">Demo</a></td>
     </tr>
     <tr>
       <td>Change requests accepted<br />(Merged PR)</td>
       <td><a href="https://chaoss.community/metric-change-requests-accepted/">CHAOSS</a></td>
       <td><a href="https://oss.x-lab.info/open_digger/github/X-lab2017/open-digger/change_requests_accepted.json">change_requests_accepted.json</a></td>
       <td><a href="https://github.com/X-lab2017/open-digger/blob/master/src/metrics/chaoss.ts#L497">Link</a></td>
-      <td><a href="https://codepen.io/frank-zsy/pen/bGjPGxw">Demo</a></td>
     </tr>
     <tr>
       <td>Change requests reviews</td>
       <td><a href="https://chaoss.community/metric-change-request-reviews/">CHAOSS</a></td>
       <td><a href="https://oss.x-lab.info/open_digger/github/X-lab2017/open-digger/change_requests_reviews.json">change_requests_reviews.json</a></td>
       <td><a href="https://github.com/X-lab2017/open-digger/blob/master/src/metrics/chaoss.ts#L734">Link</a></td>
-      <td><a href="https://codepen.io/frank-zsy/pen/bGjPGxw">Demo</a></td>
     </tr>
     <tr>
       <td>Change request response time</td>
