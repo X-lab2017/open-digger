@@ -50,6 +50,10 @@ pull_requested_reviewer_id,UInt64,first requested reviewer id,"PullRequest, Pull
 pull_requested_reviewer_login,LowCardinality(String),first requested reviewer login,"PullRequest, PullRequestReviewComment"
 pull_requested_reviewer_type,Enum,first requested reviewer type,"PullRequest, PullRequestReviewComment"
 pull_review_comments,UInt16,the number of pull review comments when this event log generated on GitHub,"PullRequest, PullRequestReviewComment"
+pull_base_ref,LowCardinality(String),the base branch ref of current pull request,PullRequest
+pull_head_repo_id,UInt64,the ID of the repo where the pull request comes from,PullRequest
+pull_head_repo_name,LowCardinality(String),the name of the repo where the pull request comes from,PullRequest
+pull_head_ref,String,the branch ref of the pull request in the repo where it comes from,PullRequest
 repo_description,String,repository description,"PullRequest, PullRequestReviewComment"
 repo_size,UInt32,reository size when this event log generated from GitHub,"PullRequest, PullRequestReviewComment"
 repo_stargazers_count,UInt32,how many people star this project on GitHub,"PullRequest, PullRequestReviewComment"
@@ -131,5 +135,6 @@ commit_comment_author_association,Enum,"the commit comment author association, l
 commit_comment_path,String,the commit comment file path,CommitComment
 commit_comment_position,String,"the commit comment position when shows on page, not related important",CommitComment
 commit_comment_line,String,the commit comment file line,CommitComment
+commit_comment_sha,String,the SHA of the commit,CommitComment
 commit_comment_created_at,DateTime,when this commit comment was created,CommitComment
 commit_comment_updated_at,DateTime,when this commit comment was updated,CommitComment
