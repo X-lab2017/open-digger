@@ -9,6 +9,7 @@ data:
     - seata
     - nacos
     - opensumi
+    - weex
   github_org:
     - 66622043 # org:Alibaba-Sample
     - 38934544 # org:AlibabaCloudDocs
