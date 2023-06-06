@@ -5,7 +5,7 @@ from typing import List
 labelInputDir = '../labeled_data'
 labelInputPath = os.path.join(os.path.dirname(os.path.abspath(__file__)), labelInputDir)
 
-supportedTypes = set(['Region', 'Company', 'Community', 'Project', 'Foundation','Tech-0', 'Tech-1', 'Tech-2'])
+supportedTypes = set(['Region', 'Company', 'Community', 'Project', 'Foundation','Tech-0', 'Tech-1', 'Tech-2','Domain-0', 'Bot'])
 
 supportedKey = set(['label', 'github_repo', 'github_org', 'github_user'])
 GitHubData = {
