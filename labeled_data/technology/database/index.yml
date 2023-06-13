@@ -2,17 +2,21 @@ name: Database
 type: Tech-0
 data:
   label:
-    - relational
-    - document
-    - spatial
-    - graph
-    - time_series
-    - key_value
-    - search_engine
-    - wide_column
-    - native_xml
-    - rdf
-    - object_oriented
-    - multivalue
-    - event
+    - array
     - content
+    - document
+    - event
+    - graph
+    - hierarchical
+    - key_value
+    - multivalue
+    - native_xml
+    - network
+    - object_oriented
+    - rdf
+    - relational
+    - search_engine
+    - spatial
+    - time_series
+    - vector
+    - wide_column
