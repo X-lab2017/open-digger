@@ -1,0 +1,10 @@
+name: Database - Vector
+type: Tech-1
+data:
+  github_repo:
+    - 201403923 # repo:activeloopai/deeplake
+    - 546206616 # repo:chroma-core/chroma
+    - 208728772 # repo:milvus-io/milvus
+    - 268163609 # repo:qdrant/qdrant
+    - 55072677 # repo:semi-technologies/weaviate
+    - 195619075 # repo:vdaas/vald
