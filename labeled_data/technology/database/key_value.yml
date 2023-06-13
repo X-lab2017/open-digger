@@ -113,6 +113,7 @@ data:
     - 192418550 # repo:oracle/nosql-go-sdk
     - 48617634 # repo:orbitdb/orbit-db
     - 7083240 # repo:orientechnologies/orientdb
+    - 606125384 # repo:paypal/junodb
     - 278684767 # repo:petermattis/pebble
     - 502268740 # repo:photondb/photondb
     - 37285717 # repo:pilgr/Paper

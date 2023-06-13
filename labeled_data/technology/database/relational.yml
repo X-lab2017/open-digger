@@ -18,6 +18,7 @@ data:
     - 8799170 # repo:DevrexLabs/OrigoDB
     - 67904342 # repo:Expensify/Bedrock
     - 54005538 # repo:FirebirdSQL/firebird
+    - 496817075 # repo:GlareDB/glaredb
     - 345982729 # repo:GreatSQL/GreatSQL
     - 516821813 # repo:HydrasDB/hydra
     - 858418 # repo:JakSprats/Alchemy-Database
@@ -38,6 +39,7 @@ data:
     - 1918497 # repo:apache/derby
     - 99919302 # repo:apache/doris
     - 6358188 # repo:apache/druid
+    - 20587599 # repo:apache/flink
     - 41952293 # repo:apache/hawq
     - 206444 # repo:apache/hive
     - 56128733 # repo:apache/impala
@@ -88,6 +90,7 @@ data:
     - 600860 # repo:fosslc/Ingres
     - 148087762 # repo:georgia-tech-db/eva
     - 3084708 # repo:ggaughan/ThinkSQL
+    - 91715647 # repo:gnocchixyz/gnocchi
     - 24650236 # repo:google/lovefield
     - 44781140 # repo:greenplum-db/gpdb
     - 33745913 # repo:h2database/h2database
@@ -112,6 +115,7 @@ data:
     - 351806852 # repo:neondatabase/neon
     - 147880351 # repo:njaard/sonnerie
     - 372536760 # repo:oceanbase/oceanbase
+    - 507829396 # repo:openGemini/openGemini
     - 276117477 # repo:opengauss-mirror/openGauss-server
     - 3766330 # repo:pentaho/mondrian
     - 30753733 # repo:percona/percona-server

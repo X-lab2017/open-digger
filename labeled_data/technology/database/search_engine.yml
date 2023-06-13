@@ -7,10 +7,8 @@ data:
     - 95614931 # repo:manticoresoftware/manticoresearch
     - 520096046 # repo:marqo-ai/marqo
     - 130688011 # repo:meilisearch/meilisearch
-    - 208728772 # repo:milvus-io/milvus
     - 334274271 # repo:opensearch-project/OpenSearch
-    - 268163609 # repo:qdrant/qdrant
-    - 55072677 # repo:semi-technologies/weaviate
     - 36992044 # repo:sphinxsearch/sphinx
     - 79317191 # repo:typesense/typesense
+    - 60377070 # repo:vespa-engine/vespa
     - 735981 # repo:xapian/xapian
