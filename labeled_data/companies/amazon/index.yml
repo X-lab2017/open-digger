@@ -10,6 +10,7 @@ data:
     - firecracker
     - freertos
     - opensearch
+    - bottlerocket
   github_org:
     - 2232217 # org:aws
     - 8931462 # org:aws-samples
