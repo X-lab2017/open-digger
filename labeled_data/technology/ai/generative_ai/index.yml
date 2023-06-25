@@ -17,7 +17,7 @@ data:
     - 523379232 # repo:compvis/stable-diffusion
     - 569927055 # repo:stability-ai/stablediffusion
     - 576380523 # repo:lucidrains/palm-rlhf-pytorch
-    - 602270517 # repo:fminference/flexgen 
+    - 602270517 # repo:fminference/flexgen
     - 541269386 # repo:ggerganov/whisper.cpp
     - 535509546 # repo:brycedrennan/imaginairy
     - 601538369 # repo:facebookresearch/llama
@@ -28,7 +28,7 @@ data:
     - 55072677 # repo:weaviate/weaviate
     - 574428530 # repo:rawandahmad698/pychatgpt
     - 572971616 # repo:vincelwt/chatgpt-mac
-    - 502482803 # repo:bigscience-workshop/petals 
+    - 502482803 # repo:bigscience-workshop/petals
     - 219986676 # repo:ashishpatel26/Tools-to-Design-or-Visualize-Architecture-of-Neural-Network
     - 58414589 # repo:oneapi-src/onednn
     - 224296809 # repo:google-research/albert
@@ -44,3 +44,21 @@ data:
     - 521021013 # repo:THUDM/GLM-130B
     - 244607156 # repo:VinAIResearch/PhoBERT
     - 355059998 # repo:rinnakk/japanese-pretrained-models
+    - 614765452 # repo:significant-gravitas/auto-gpt
+    - 619959033 # repo:nomic-ai/gpt4all
+    - 618058471 # repo:facebookresearch/segment-anything
+    - 168799526 # repo:huggingface/pytorch-image-models
+    - 612354784 # repo:ggerganov/llama.cpp
+    - 612427246 # repo:tatsu-lab/stanford_alpaca
+    - 621118467 # repo:microsoft/jarvis
+    - 624681066 # repo:reworkd/agentgpt
+    - 617798408 # repo:openai/chatgpt-retrieval-plugin
+    - 612781022 # repo:getcursor/cursor
+    - 235860204 # repo:microsoft/deepspeed
+    - 628419800 # repo:vision-cair/minigpt-4
+    - 612640604 # repo:mckaywrigley/chatbot-ui
+    - 622737738 # repo:yoheinakajima/babyagi
+    - 560704231 # repo:jerryjliu/llama_index
+    - 630023030 # repo:stability-ai/stablelm
+    - 613075789 # repo:cocktailpeanut/dalai
+    - 613591358 # repo:tloen/alpaca-lora
