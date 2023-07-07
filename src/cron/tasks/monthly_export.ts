@@ -38,7 +38,8 @@ const task: Task = {
       const exportTableQueries: string[] = [
         `CREATE TABLE IF NOT EXISTS ${exportRepoTableName}
   (\`id\` UInt64,
-  \`repo_name\` LowCardinality(String)
+  \`repo_name\` LowCardinality(String),
+  \`org_id\` UInt64
   )
   ENGINE = ReplacingMergeTree(id)
   ORDER BY (id)
@@ -53,8 +54,8 @@ const task: Task = {
         `ALTER TABLE ${exportRepoTableName} DELETE WHERE id > 0`,
         `ALTER TABLE ${exportUserTableName} DELETE WHERE id > 0`,
         `INSERT INTO ${exportRepoTableName}
-  SELECT argMax(repo_id, time) AS id, repo_name FROM
-  (SELECT repo_id, argMax(repo_name, created_at) AS repo_name, MAX(created_at) AS time FROM gh_repo_openrank
+  SELECT argMax(repo_id, time) AS id, repo_name, any(orgid) AS org_id FROM
+  (SELECT repo_id, argMax(repo_name, created_at) AS repo_name, MAX(created_at) AS time, any(org_id) AS orgid FROM gh_repo_openrank
   WHERE repo_id IN (SELECT repo_id FROM gh_repo_openrank WHERE openrank > e()) OR repo_id IN (${Array.from(repos).join(',')})
   OR org_id IN (${Array.from(orgs).join(',')}) GROUP BY repo_id)
   GROUP BY repo_name`,
@@ -106,7 +107,10 @@ const task: Task = {
           if (!existsSync(join(exportBasePath, name))) {
             mkdirSync(join(exportBasePath, name), { recursive: true });
           }
-          writeFileSync(join(exportBasePath, name, 'meta.json'), JSON.stringify({ updatedAt: new Date().getTime() }));
+          writeFileSync(join(exportBasePath, name, 'meta.json'), JSON.stringify({
+            updatedAt: new Date().getTime(),
+            type: option.type ?? undefined,
+          }));
           if (!Array.isArray(fields)) fields = [fields];
           const aggContent: any = {};
           for (let field of fields) {
@@ -254,6 +258,7 @@ const task: Task = {
       for (let i = 0; i < userPartitions.length; i++) {
         const { min, max } = userPartitions[i];
         option.whereClause = `actor_id BETWEEN ${min} AND ${max} AND actor_id IN (SELECT id FROM ${exportUserTableName})`;
+        option.type = 'user';
         // user activity
         await processMetric(getUserActivity, option, ['activity', 'open_issue', 'issue_comment', 'open_pull', 'merged_pull', 'review_comment'].map(f => getField(f)));
         // user openrank
@@ -282,11 +287,12 @@ const task: Task = {
     };
 
     const exportOwnerMeta = async () => {
-      const sql = `SELECT splitByChar('/', repo_name)[1] AS owner, groupArray(repo_name) AS repos, groupArray(id) AS ids FROM ${exportRepoTableName} GROUP BY owner`;
+      const sql = `SELECT splitByChar('/', repo_name)[1] AS owner, groupArray(repo_name), groupArray(id), any(org_id) FROM ${exportRepoTableName} GROUP BY owner`;
       await queryStream(sql, row => {
-        const [owner, repos, ids] = row;
+        const [owner, repos, ids, orgId] = row;
         updateMetaData(join(exportBasePath, owner, 'meta.json'), {
           updatedAt: date.getTime(),
+          type: orgId === '0' ? 'user' : 'org',
           repos: repos.map((name, index) => {
             return {
               name,
