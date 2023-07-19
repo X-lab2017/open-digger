@@ -44,7 +44,7 @@
     "pope": "^3.0.0",
     "request": "^2.88.2",
     "require-from-string": "^2.0.2",
-    "tslib": "^2.4.1"
+    "tslib": "^2.6.0"
   },
   "type": "commonjs",
   "devDependencies": {
