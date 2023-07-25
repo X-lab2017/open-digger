@@ -82,16 +82,16 @@ def getUserOpenrank(config):
     query = 'MATCH (u:User) WHERE {} {} RETURN u.login AS user_login, [{}] AS {} ORDER BY {} {} {};'.format(userWhereClause +' AND ' if userWhereClause else '', timeWhereClause, ','.join(timeActivityClause), calType, calType, config.get('order'), 'LIMIT {}'.format(config.get('limit')) if config.get('limit') > 0 else '')
     return neo4j_driver.query(query)
 
-basicActivitySqlComponent = ' \
-    if(type=\'PullRequestEvent\' AND action=\'closed\' AND pull_merged=1, issue_author_id, actor_id) AS actor_id, \
-    argMax(if(type=\'PullRequestEvent\' AND action=\'closed\' AND pull_merged=1, issue_author_login, actor_login), created_at) AS actor_login, \
-    countIf(type=\'IssueCommentEvent\' AND action=\'created\') AS issue_comment, \
-    countIf(type=\'IssuesEvent\' AND action=\'opened\')  AS open_issue, \
-    countIf(type=\'PullRequestEvent\' AND action=\'opened\') AS open_pull, \
-    countIf(type=\'PullRequestReviewCommentEvent\' AND action=\'created\') AS review_comment, \
-    countIf(type=\'PullRequestEvent\' AND action=\'closed\' AND pull_merged=1) AS merged_pull, \
-    sqrt({}*issue_comment + {}*open_issue + {}*open_pull + {}*review_comment + {}*merged_pull) AS activity \
-'.format(ISSUE_COMMENT_WEIGHT, OPEN_ISSUE_WEIGHT, OPEN_PULL_WEIGHT, REVIEW_COMMENT_WEIGHT, PULL_MERGED_WEIGHT)
+basicActivitySqlComponent = f''' 
+        if(type=\'PullRequestEvent\' AND action=\'closed\' AND pull_merged=1, issue_author_id, actor_id) AS actor_id, 
+        argMax(if(type=\'PullRequestEvent\' AND action=\'closed\' AND pull_merged=1, issue_author_login, actor_login), created_at) AS actor_login, 
+        countIf(type=\'IssueCommentEvent\' AND action=\'created\') AS issue_comment, 
+        countIf(type=\'IssuesEvent\' AND action=\'opened\')  AS open_issue, 
+        countIf(type=\'PullRequestEvent\' AND action=\'opened\') AS open_pull, 
+        countIf(type=\'PullRequestReviewCommentEvent\' AND action=\'created\') AS review_comment, 
+        countIf(type=\'PullRequestEvent\' AND action=\'closed\' AND pull_merged=1) AS merged_pull, 
+        sqrt({ISSUE_COMMENT_WEIGHT}*issue_comment + {OPEN_ISSUE_WEIGHT}*open_issue + {OPEN_PULL_WEIGHT}*open_pull + {REVIEW_COMMENT_WEIGHT}*review_comment + {PULL_MERGED_WEIGHT}*merged_pull) AS activity 
+'''
 
 def getRepoActivity(config):
     config = getMergedConfig(config)

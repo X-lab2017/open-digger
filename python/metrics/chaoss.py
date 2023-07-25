@@ -5,6 +5,8 @@ from basic import filterEnumType,\
                   getMergedConfig,\
                   getRepoWhereClauseForClickhouse,\
                   getTimeRangeWhereClauseForClickhouse,\
+                  getInnerOrderAndLimit,\
+                  getOutterOrderAndLimit,\
                   QueryConfig
 import db.clickhouse as clickhouse
 from activity_openrank import basicActivitySqlComponent
@@ -12,6 +14,12 @@ from activity_openrank import basicActivitySqlComponent
 CodeChangeCommitsOptions= {
     # a filter regular expression for commit message
     'messageFilter': '^(build:|chore:|ci:|docs:|feat:|fix:|perf:|refactor:|revert:|style:|test:).*'
+}
+
+timeDurationConstants = {
+    "unitArray": ['week', 'day', 'hour', 'minute'],
+    "sortByArray": ['avg', 'levels', 'quantile_0', 'quantile_1', 'quantile_2', 'quantile_3', 'quantile_4'],
+    "quantileArray": list(range(5)),
 }
 
 def chaossCodeChangeCommits(config):
@@ -25,25 +33,30 @@ def chaossCodeChangeCommits(config):
     repoWhereClause = getRepoWhereClauseForClickhouse(config)
     if repoWhereClause != None: whereClauses.append(repoWhereClause)
     whereClauses.append(getTimeRangeWhereClauseForClickhouse(config))
+    if config.get('options') and config.get('options').get('messageFilter'):
+        arrayJoinMessage = 'arrayFilter(x -> match(x, \'{}\'), push_commits.message)'.format(config.get('options').get('messageFilter')) 
+    else:
+        arrayJoinMessage = 'push_commits.message'
 
-    sql = ' \
-    SELECT \
-    id, \
-    argMax(name, time) AS name, \
-    {} \
-    FROM '.format(getGroupArrayInsertAtClauseForClickhouse(config, { 'key': 'commits_count', 'value':'count' })) + \
-    '( \
-    SELECT \
-        {}, \
-        COUNT(arrayJoin({})) AS count \
-    FROM opensource.gh_events '.format(getGroupTimeAndIdClauseForClickhouse(config, 'repo'), 'arrayFilter(x -> match(x, \'{}\'), push_commits.message)'.format(config.get('options').get('messageFilter')) if config.get('options') and config.get('options').get('messageFilter') else 'push_commits.message' )+ \
-    'WHERE {} \
-    GROUP BY id, time \
-    {} \
-    ) \
-    GROUP BY id \
-    ORDER BY commits_count[-1] {} \
-    FORMAT JSONCompact'.format(' AND '.join(whereClauses), 'ORDER BY count DESC LIMIT {} BY time'.format(config.get('limit')) if config.get('limit') > 0 else '', config.get('order'))
+    sql = f'''
+    SELECT 
+    id, 
+    argMax(name, time) AS name, 
+    {getGroupArrayInsertAtClauseForClickhouse(config, { 'key': 'commits_count', 'value':'count' })} 
+    FROM 
+    ( 
+    SELECT 
+        {getGroupTimeAndIdClauseForClickhouse(config, 'repo')}, 
+        COUNT(arrayJoin({arrayJoinMessage})) AS count 
+    FROM opensource.gh_events 
+    WHERE {' AND '.join(whereClauses)} 
+    GROUP BY id, time 
+    {getInnerOrderAndLimit(config, 'commits_count')} 
+    ) 
+    GROUP BY id 
+    {getOutterOrderAndLimit(config, 'commits_count')}
+    '''
+
     result = clickhouse.query(sql)
     def getResult(row):
         id, name, count = row
@@ -61,30 +74,31 @@ def chaossIssuesNew(config):
         config (dict): QueryConfig
     """
     config = getMergedConfig(config)
-    whereClauses = ["type = \'IssuesEvent\' AND action = \'opened\'"]
+    whereClauses = ["type = \'IssuesEvent\' AND action IN (\'opened\', \'reopened\')"]
     repoWhereClause = getRepoWhereClauseForClickhouse(config)
     if repoWhereClause != None: whereClauses.append(repoWhereClause)
     whereClauses.append(getTimeRangeWhereClauseForClickhouse(config))
 
-    sql = '\
-    SELECT \
-    id, \
-    argMax(name, time) AS name, \
-    SUM(count) AS total_count, \
-    {} \
-    FROM \
-    ('.format(getGroupArrayInsertAtClauseForClickhouse(config, { 'key': 'issues_new_count', 'value': 'count' })) + \
-    'SELECT \
-        {}, \
-        COUNT() AS count \
-    FROM opensource.gh_events '.format(getGroupTimeAndIdClauseForClickhouse(config, 'repo')) + \
-    'WHERE {} \
-    GROUP BY id, time \
-    {} \
-    ) \
-    GROUP BY id \
-    ORDER BY issues_new_count[-1] {} \
-    FORMAT JSONCompact'.format(' AND '.join(whereClauses), 'ORDER BY count DESC LIMIT {} BY time'.format(config.get('limit')) if config.get('limit') > 0 else '', config.get('order'))
+    sql = f'''
+    SELECT 
+    id, 
+    argMax(name, time) AS name, 
+    SUM(count) AS total_count, 
+    {getGroupArrayInsertAtClauseForClickhouse(config, { 'key': 'issues_new_count', 'value': 'count' })} 
+    FROM 
+    (
+    SELECT 
+        {getGroupTimeAndIdClauseForClickhouse(config, 'repo')}, 
+        COUNT() AS count 
+    FROM opensource.gh_events           
+    WHERE {' AND '.join(whereClauses)} 
+    GROUP BY id, time 
+    {getInnerOrderAndLimit(config, 'issues_new_count')} 
+    ) 
+    GROUP BY id 
+    {getOutterOrderAndLimit(config, 'issues_new_count')}
+    FORMAT JSONCompact'''
+    
     result = clickhouse.query(sql)
     def process(row):
         id, name, total_count, count = row
@@ -105,25 +119,25 @@ def chaossIssuesClosed(config):
     if repoWhereClause: whereClauses.append(repoWhereClause)
     whereClauses.append(getTimeRangeWhereClauseForClickhouse(config))
 
-    sql = ' \
-    SELECT \
-    id, \
-    argMax(name, time) AS name, \
-    SUM(count) AS total_count, \
-    {} \
-    FROM \
-    ('.format(getGroupArrayInsertAtClauseForClickhouse(config, { 'key': 'issues_close_count', 'value': 'count' })) + \
-    'SELECT \
-        {}, \
-        COUNT() AS count \
-    FROM opensource.gh_events \
-    WHERE {} \
-    GROUP BY id, time \
-    {} \
-    ) \
-    GROUP BY id \
-    ORDER BY issues_close_count[-1] {} \
-    FORMAT JSONCompact'.format(getGroupTimeAndIdClauseForClickhouse(config, 'repo'), ' AND '.join(whereClauses), 'ORDER BY count DESC LIMIT {} BY time'.format(config.get('limit')) if config.get('limit') > 0 else '', config.get('order'))
+    sql = f'''
+    SELECT
+    id,
+    argMax(name, time) AS name,
+    SUM(count) AS total_count,
+    {getGroupArrayInsertAtClauseForClickhouse(config, { 'key': 'issues_close_count', 'value': 'count' })}
+    FROM
+    (
+    SELECT
+        {getGroupTimeAndIdClauseForClickhouse(config, 'repo')},
+        COUNT() AS count
+    FROM opensource.gh_events 
+    WHERE {' AND '.join(whereClauses)}
+    GROUP BY id, time
+    {getInnerOrderAndLimit(config, 'count')}
+    )
+    GROUP BY id
+    {getOutterOrderAndLimit(config, 'issues_close_count')}
+    '''
     result = clickhouse.query(sql)  
     def process(row):
         id, name, total_count, count = row
@@ -157,7 +171,6 @@ def chaossBusFactor(config):
     """
     config = getMergedConfig(config)
     by = filterEnumType(config.get('options').get('by') if config.get('options') != None else None, ['commit', 'change request', 'activity'], 'activity')
-    byCommit = config.get('options').get('byCommit') if config.get('options') != None else None
     whereClauses = []
     if by == 'commit':
         whereClauses.append("type = \'PushEvent\'")
@@ -168,62 +181,51 @@ def chaossBusFactor(config):
     repoWhereClause = getRepoWhereClauseForClickhouse(config)
     if repoWhereClause != None: whereClauses.append(repoWhereClause)
     whereClauses.append(getTimeRangeWhereClauseForClickhouse(config))
-    def process(by = by):
-        if by == 'commit':
-          return '\
-          arrayJoin(push_commits.name) AS author, \
-          COUNT() AS count'
-        elif by == 'change request':
-          return ' \
-          issue_author_id AS actor_id, \
-          argMax(issue_author_login, created_at) AS author, \
-          COUNT() AS count'
-        elif by == 'activity':
-          return '\
-          {}, \
-          toUInt32(ceil(activity)) AS count \
-          '.format(basicActivitySqlComponent)
-    sql = '\
-    SELECT \
-    id, \
-    argMax(name, time) AS name, \
-    {}, \
-    {}, \
-    {} \
-    FROM \
-    ('.format(getGroupArrayInsertAtClauseForClickhouse(config, { 'key': 'bus_factor', }), getGroupArrayInsertAtClauseForClickhouse(config, { 'key': 'detail' }), getGroupArrayInsertAtClauseForClickhouse(config, { 'key': 'total_contributions' })) + \
-    'SELECT \
-        time, \
-        id, \
-        any(name) AS name, \
-        SUM(count) AS total_contributions, \
-        length(detail) AS bus_factor, \
-        arrayFilter(x -> tupleElement(x, 2) >= quantileExactWeighted({})(count, count), arrayMap((x, y) -> (x, y), groupArray({}), groupArray(count))) AS detail \
-    FROM \
-    ('.format(str(1 - config.get('options').get('percentage')) if config.get('options')!=None and config.get('options').get('percentage')!=None else '0.5', 'actor_login' if by == 'activity' else 'author') \
-    +\
-        'SELECT \
-        {}, \
-        {} \
-        FROM opensource.gh_events \
-        WHERE {} \
-        GROUP BY id, time, {} \
-        {} \
-        ORDER BY count DESC \
-    ) \
-    GROUP BY id, time \
-    ) \
-    GROUP BY id \
-    ORDER BY bus_factor[-1] {} \
-    {} \
-    FORMAT JSONCompact'.format(getGroupTimeAndIdClauseForClickhouse(config, 'repo'), 
-                                process(),
-                                ' AND '.join(whereClauses),
-                                'author' if by == 'commit' else 'actor_id',
-                                '' if (config.get('options') != None and config.get('options').get('withBot')!=None and by != 'commit') else "HAVING author NOT LIKE \'%[bot]\'",
-                                config.get('order'),
-                                'LIMIT {}'.format(config.get('limit')) if config.get('limit') > 0 else ''
-                                )
+
+    percentage = str(1 - config.get('options').get('percentage')) if config.get('options') and 'percentage' in config.get('options') else '0.5'
+
+    authorFieldName = 'actor_login' if by == 'activity' else 'author'
+    if config.get('options', {}).get('withBot') and by != 'commit':
+        botFilterHavingClause = ""
+    else:
+        botFilterHavingClause = f"HAVING {authorFieldName} NOT LIKE '%[bot]'" 
+    
+    sql = f'''
+    SELECT
+    id,
+    argMax(name, time) AS name,
+    {getGroupArrayInsertAtClauseForClickhouse(config, {"key": "bus_factor"})},
+    {getGroupArrayInsertAtClauseForClickhouse(config, {"key": "detail", "noPrecision": True, "defaultValue": "[]"})},
+    {getGroupArrayInsertAtClauseForClickhouse(config, {"key": "total_contributions"})}
+    FROM
+    (
+    SELECT
+        time,
+        id,
+        any(name) AS name,
+        SUM(count) AS total_contributions,
+        length(detail) AS bus_factor,
+        arrayFilter(x -> tupleElement(x, 2) >= quantileExactWeighted({percentage}) (count, count), arrayMap((x, y) -> (x, y), groupArray({authorFieldName}), groupArray(count))) AS detail
+    FROM
+    (
+        SELECT
+        {getGroupTimeAndIdClauseForClickhouse(config)},
+        {
+        'arrayJoin(push_commits.name) AS author, COUNT() AS count' if by == 'commit' else
+        'issue_author_id AS actor_id, argMax(issue_author_login, created_at) AS author, COUNT() AS count' if by == 'change request' else
+        f'{basicActivitySqlComponent}, toUInt32(ceil(activity)) AS count'
+        }
+        FROM opensource.gh_events 
+        WHERE {' AND '.join(whereClauses)}
+        GROUP BY id, time, {('author' if by == 'commit' else 'actor_id')}
+        {botFilterHavingClause}
+    )
+    GROUP BY id, time
+    {getInnerOrderAndLimit(config, 'bus_factor')}
+    )
+    GROUP BY id
+    {getOutterOrderAndLimit(config, 'bus_factor')}
+    '''
 
     result = clickhouse.query(sql)
     def getResult(row):
@@ -249,28 +251,25 @@ def chaossChangeRequestsAccepted(config: QueryConfig):
     if repoWhereClause != None: whereClauses.append(repoWhereClause)
     whereClauses.append(getTimeRangeWhereClauseForClickhouse(config))
 
-    sql = ' \
-    SELECT \
-    id, \
-    argMax(name, time) AS name, \
-    SUM(count) AS total_count, \
-    {} \
-    FROM '.format(getGroupArrayInsertAtClauseForClickhouse(config, { 'key': 'change_requests_accepted', 'value': 'count' })) + \
-    '( \
-    SELECT \
-        {}, \
-        COUNT() AS count \
-    FROM opensource.gh_events \
-    WHERE {} \
-    GROUP BY id, time \
-    {} \
-    ) \
-    GROUP BY id \
-    ORDER BY change_requests_accepted[-1] {} \
-    FORMAT JSONCompact'.format(getGroupTimeAndIdClauseForClickhouse(config, 'repo'),
-                               ' AND '.join(whereClauses),
-                               'ORDER BY count DESC LIMIT {} BY time'.format(config.get('limit')) if config.get('limit') > 0 else '',
-                               config.get('order'))
+    sql = f'''
+    SELECT
+    id,
+    argMax(name, time) AS name,
+    SUM(count) AS total_count,
+    {getGroupArrayInsertAtClauseForClickhouse(config, {"key": 'change_requests_accepted', 'value': 'count'})}
+    FROM
+    (
+    SELECT
+        {getGroupTimeAndIdClauseForClickhouse(config)},
+        COUNT() AS count
+    FROM opensource.gh_events 
+    WHERE {' AND '.join(whereClauses)}
+    GROUP BY id, time
+    {getInnerOrderAndLimit(config, 'count')}
+    )
+    GROUP BY id
+    {getOutterOrderAndLimit(config, 'change_requests_accepted')}
+    '''
 
     result = clickhouse.query(sql)
     def getResult(row):
@@ -296,29 +295,25 @@ def chaossChangeRequestsDeclined(config: QueryConfig):
     if repoWhereClause!=None: whereClauses.append(repoWhereClause)
     whereClauses.append(getTimeRangeWhereClauseForClickhouse(config))
     
-    sql = ' \
-    SELECT \
-    id, \
-    argMax(name, time) AS name, \
-    SUM(count) AS total_count, \
-    {} \
-    FROM'.format(getGroupArrayInsertAtClauseForClickhouse(config, { 'key': 'change_requests_declined', 'value': 'count' })) + \
-    '( \
-    SELECT \
-        {}, \
-        COUNT() AS count \
-    FROM opensource.gh_events \
-    WHERE {} \
-    GROUP BY id, time \
-    {} \
-    ) \
-    GROUP BY id \
-    ORDER BY change_requests_declined[-1] {} \
-    FORMAT JSONCompact'.format(getGroupTimeAndIdClauseForClickhouse(config, 'repo'),
-                               ' AND '.join(whereClauses),
-                               'ORDER BY count DESC LIMIT {} BY time'.format(config.get('limit')) if config.get('limit') > 0 else '',
-                               config.get('order')
-                               )
+    sql = f'''
+    SELECT
+    id,
+    argMax(name, time) AS name,
+    SUM(count) AS total_count,
+    {getGroupArrayInsertAtClauseForClickhouse(config, {"key": 'change_requests_declined', 'value': 'count'})}
+    FROM
+    (
+    SELECT
+        {getGroupTimeAndIdClauseForClickhouse(config)},
+        COUNT() AS count
+    FROM gh_events
+    WHERE {' AND '.join(whereClauses)}
+    GROUP BY id, time
+    {getInnerOrderAndLimit(config, 'count')}
+    )
+    GROUP BY id
+    {getOutterOrderAndLimit(config, 'change_requests_declined')}
+    '''
 
     result = clickhouse.query(sql)
     def getResult(row):
@@ -337,7 +332,8 @@ IssueResolutionDurationOptions = {
   'type': 'avg', #'avg' | 'median'
   'unit': 'week' #'week' | 'day' | 'hour' | 'minute'
 }
-def chaossIssueResolutionDuration(config):
+
+def chaossResolutionDuration(config, type):
     """_summary_
 
     Args:
@@ -345,62 +341,76 @@ def chaossIssueResolutionDuration(config):
 
     """
     config = getMergedConfig(config)
-    whereClauses = ["type = \'IssuesEvent\'"]
+    whereClauses = ["type = 'IssuesEvent'"] if type == 'issue' else ["type = 'PullRequestEvent'"]
     repoWhereClause = getRepoWhereClauseForClickhouse(config)
-    if repoWhereClause != None: whereClauses.append(repoWhereClause)
-    
-    endDate = datetime.date(year = config.get('endYear')+1 if config.get('endMonth')+1>12 else config.get('endYear'), month = (config.get('endMonth')+1)%12, day = 1)
-    
-    by = filterEnumType(config.get('options').get('by') if config.get('options') != None else None, ['open', 'close'], 'open')
+    if repoWhereClause: whereClauses.append(repoWhereClause)
+
+    endDate = datetime.date(year = config.get('endYear')+1 if config.get('endMonth')+1>12 else config.get('endYear'), month = (config.get('endMonth')+1)%12, day = 1)  
+
+    by = filterEnumType(config.get("options", {}).get("by"), ['open', 'close'], 'open')
     byCol = 'opened_at' if by == 'open' else 'closed_at'
-    type = filterEnumType(config.get('options').get('type') if config.get('options') != None else None, ['avg', 'median'], 'avg')
-    unit = filterEnumType(config.get('options').get('unit') if config.get('options') != None else None, ['week', 'day', 'hour', 'minute'], 'day')
+    unit = filterEnumType(config.get("options", {}).get("unit"), timeDurationConstants["unitArray"], 'day')
+    thresholds = config.get("options", {}).get("thresholds", [3, 7, 15])
+    ranges = thresholds + [-1]
+    sortBy = filterEnumType(config.get("options", {}).get("sortBy"), timeDurationConstants["sortByArray"], 'avg')
     
-    sql = ' \
-    SELECT \
-    id, \
-    argMax(name, time) AS name, \
-    {} \
-    FROM'.format(getGroupArrayInsertAtClauseForClickhouse(config, { 'key': 'resolution_duration', 'defaultValue': 'NaN' })) + \
-    '( \
-    SELECT \
-        {}, \
-        round({}(dateDiff(\'{}\', opened_at, closed_at)), {}) AS resolution_duration \
-    FROM \
-    ( \
-        SELECT \
-        repo_id, \
-        argMax(repo_name, created_at) AS repo_name, \
-        org_id, \
-        argMax(org_login, created_at) AS org_login, \
-        issue_number, \
-        argMaxIf(action, created_at, action IN (\'opened\', \'closed\' , \'reopened\')) AS last_action, \
-        maxIf(created_at, action = \'opened\') AS opened_at, \
-        maxIf(created_at, action = \'closed\') AS closed_at \
-        FROM opensource.gh_events \
-        WHERE {} \
-        GROUP BY repo_id, org_id, issue_number \
-        HAVING {} >= toDate(\'{}-{}-1\') AND {} < toDate(\'{}-{}-1\') AND last_action=\'closed\' \
-    ) \
-    GROUP BY id, time \
-    {} \
-    ) \
-    GROUP BY id \
-    ORDER BY resolution_duration[-1] {} \
-    FORMAT JSONCompact'.format(getGroupTimeAndIdClauseForClickhouse(config, 'repo', byCol),
-                               type, unit, config.get('percision'),
-                               ' AND '.join(whereClauses),
-                               byCol, config.get('startYear'), config.get('startMonth'), byCol, endDate.year, endDate.month, 
-                               'ORDER BY resolution_duration {} LIMIT {} BY time'.format(config.get('order'), config.get('limit')) if config.get('limit') > 0 else '',
-                               config.get('order')
-                               )
+    sql = f'''
+    SELECT
+    id,
+    argMax(name, time),
+    {getGroupArrayInsertAtClauseForClickhouse(config, { "key": "avg", "defaultValue": 'NaN' })},
+    {getGroupArrayInsertAtClauseForClickhouse(config, { "key": 'levels', "value": 'resolution_levels', "defaultValue": "[]", "noPrecision": True })},
+    {', '.join([getGroupArrayInsertAtClauseForClickhouse(config, { "key": f"quantile_{q}", "defaultValue": 'NaN' }) for q in timeDurationConstants["quantileArray"]])}
+    FROM
+    (
+        SELECT
+            {getGroupTimeAndIdClauseForClickhouse(config, 'repo', byCol)},
+            avg(resolution_duration) AS avg,
+            {', '.join([f'quantile({q / 4})(resolution_duration) AS quantile_{q}' for q in timeDurationConstants["quantileArray"]])},
+            [{', '.join([f'countIf(resolution_level = {i})' for i in range(len(ranges))])}] AS resolution_levels
+        FROM
+        (
+            SELECT
+            repo_id,
+            argMax(repo_name, created_at) AS repo_name,
+            org_id,
+            argMax(org_login, created_at) AS org_login,
+            issue_number,
+            argMaxIf(action, created_at, action IN ('opened', 'closed' , 'reopened')) AS last_action,
+            argMax(issue_created_at, created_at) AS opened_at,
+            maxIf(created_at, action = 'closed') AS closed_at,
+            dateDiff('{unit}', opened_at, closed_at) AS resolution_duration,
+            multiIf({', '.join([f'resolution_duration <= {t}, {i}' for i, t in enumerate(thresholds)])}, {len(thresholds)}) AS resolution_level
+            FROM opensource.gh_events 
+            WHERE {' AND '.join(whereClauses)}
+            GROUP BY repo_id, org_id, issue_number
+            HAVING {byCol} >= toDate('{config['startYear']}-{config['startMonth']}-1') AND {byCol} < toDate('{endDate.year}-{endDate.month}-1') AND last_action='closed'
+        )
+        GROUP BY id, time
+        {getInnerOrderAndLimit(config, 'resolution_duration')}
+    )
+    GROUP BY id
+    {getOutterOrderAndLimit(config, sortBy, 1 if sortBy == 'levels' else None)}
+    '''
 
     result = clickhouse.query(sql)
     def getResult(row):
-        id, name, resolution_duration = row
+        id, name, avg, levels, quantile_0, quantile_1, quantile_2, quantile_3, quantile_4 = row
         return {
         'id':id,
         'name':name,
-        'resolution_duration':resolution_duration,
+        'resolution_duration_avg':avg,
+        'levels':levels,
+        'quantile_0':quantile_0,
+        'quantile_1':quantile_1,
+        'quantile_2':quantile_2,
+        'quantile_3':quantile_3,
+        'quantile_4':quantile_4,
         }
     return list(map(getResult, result))
+
+def chaossIssueResolutionDuration(config):
+    return chaossResolutionDuration(config, 'issue')
+
+def chaossChangeRequestResolutionDuration(config):
+    return chaossResolutionDuration(config, 'change request')

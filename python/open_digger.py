@@ -68,6 +68,6 @@ class openDigger(object):
             def busFactor(self,config): return func.chaossBusFactor(config)
             def changeRequestsAccepted(self,config): return func.chaossChangeRequestsAccepted(config)
             def changeRequestsDeclined(self,config): return func.chaossChangeRequestsDeclined(config)
-            def chaossIssueResolutionDuration(self,config): return func.chaossIssueResolutionDuration(config)
+            def issueResolutionDuration(self,config): return func.chaossIssueResolutionDuration(config)
     class relation():
         def getRelatedUsers(config): return func.getRelatedUsers(config)
