@@ -21,7 +21,7 @@ QueryConfig = {
                 'endMonth': 12,
                 'order': 'DESC',
                 'limit': 10,
-                'percision': 2,
+                'precision': 2,
                 'groupBy': None,
                 'groupTimeRange': None,
                 'options': None
@@ -33,9 +33,11 @@ def getMergedConfig(config):
         'startMonth': 1,
         'endYear': datetime.datetime.today().year,
         'endMonth': datetime.datetime.today().month,
+        'orderOption': 'latest',
         'order': 'DESC',
         'limit': 10,
-        'percision': 2,
+        'limitOption': 'all',
+        'precision': 2,
     } 
     defaultConfig.update(config)
     return defaultConfig
@@ -237,21 +239,43 @@ def getLabelGroupConditionClauseForClickhouse(config):
     conditions = ','.join(list(map(process, resultMap.values())))
 
     return 'arrayJoin(multiIf({}, [\'Others\']))'.format(conditions)
-  
-def getGroupArrayInsertAtClauseForClickhouse(config, option) -> str:
+
+def getGroupArrayInsertAtClauseForClickhouse(config, option):
     """_summary_
     Args:
         config (dict): QueryConfig
         option (_type_): { key: string; defaultValue?: string; value?: string; }
     """
-    def process():
-        if config.get('groupTimeRange') == None: return '0'
-        startTime = 'toDate(\'{}-{}-1\')'.format(config.get('startYear'), config.get('startMonth'))
-        if config.get('groupTimeRange') == 'quarter': startTime = 'toStartOfQuarter({})'.format(startTime)
-        elif config.get('groupTimeRange') == 'year': startTime = 'toStartOfYear({})'.format(startTime)
-        return 'toUInt32(dateDiff(\'{}\', {}, time))'.format(config.get('groupTimeRange'), startTime)
-    return 'groupArrayInsertAt{}({}, {}) AS {}'.format('({})'\
-        .format(option.get('defaultValue')) if option.get('defaultValue') != None else '', option.get('value') if option.get('value')!=None else option.get('key'), process(), option.get('key'))
+    start_time = f"toDate('{config['startYear']}-{config['startMonth']}-1')"
+    end_time = f"toDate('{config['endYear']}-{config['endMonth']}-1')"
+    
+    default_value = option.get('defaultValue', 0)
+    
+    total_length = ""
+    if config.get('groupTimeRange'):
+        total_length = f"toUInt32(dateDiff('{config['groupTimeRange']}', {start_time}, {end_time})) + 1"
+    else:
+        total_length = "1"
+    
+    fieldName = option.get('value', option['key'])
+    if config['precision'] > 0 and not option.get('noPrecision'):
+        group_key = f"ROUND({fieldName}, {config['precision']})"
+    else:
+        group_key = fieldName
+    
+    if not config.get('groupTimeRange'):
+        position = "0"
+    else:
+        if config['groupTimeRange'] == 'quarter':
+            start_time = f"toStartOfQuarter({start_time})"
+        elif config['groupTimeRange'] == 'year':
+            start_time = f"toStartOfYear({start_time})"
+        position = f"toUInt32(dateDiff('{config['groupTimeRange']}', {start_time}, time){'-1' if option.get('positionByEndTime') else ''})"
+    
+    return f'''groupArrayInsertAt(
+        {default_value}, 
+        {total_length})({group_key}, 
+        {position}) AS {option['key']}'''
 
 def getGroupTimeAndIdClauseForClickhouse(config, type = 'repo', timeCol = 'created_at') -> str:
     """_summary_
@@ -280,6 +304,25 @@ def getGroupTimeAndIdClauseForClickhouse(config, type = 'repo', timeCol = 'creat
         else :  # group by label
             return '{} AS id, id AS name'.format(getLabelGroupConditionClauseForClickhouse(config))
     return '{} AS time, {}'.format(get_groupEle(), group_by())
+
+def getInnerOrderAndLimit(config, col, index=None):
+    if config.get('limitOption') == 'each' and config.get('limit', 0) > 0:
+        order_by_clause = f"ORDER BY {col}[{index}] {config.get('order')}" if config.get('order') else ''
+        limit_clause = f"LIMIT {config.get('limit')} BY time"
+        return f"{order_by_clause} {limit_clause}"
+    else:
+        return ''
+
+def getOutterOrderAndLimit(config, col, index=None):
+    order_clause = ""
+    if config.get('order'):
+        if config.get('orderOption') == 'latest':
+            order_clause = f"ORDER BY {col}[-1]{f'[{index}]' if index is not None else ''}"
+        else:
+            index_clause = f"x -> x[{index}], " if index is not None else ''
+            order_clause = f"ORDER BY arraySum({index_clause}{col})"
+    limit_clause = f"LIMIT {config.get('limit')}" if config.get('limitOption') == 'all' and config.get('limit', 0) > 0 else ''
+    return f"{order_clause} {config.get('order', '')} {limit_clause}"
 
 def filterEnumType(value, types, defautlValue: str) -> str:
     """_summary_
