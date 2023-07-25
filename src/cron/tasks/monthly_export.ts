@@ -260,7 +260,7 @@ const task: Task = {
         option.whereClause = `actor_id BETWEEN ${min} AND ${max} AND actor_id IN (SELECT id FROM ${exportUserTableName})`;
         option.type = 'user';
         // user activity
-        await processMetric(getUserActivity, option, ['activity', 'open_issue', 'issue_comment', 'open_pull', 'merged_pull', 'review_comment'].map(f => getField(f)));
+        await processMetric(getUserActivity, { ...option, options: { repoDetail: true } }, [...['activity', 'open_issue', 'issue_comment', 'open_pull', 'merged_pull', 'review_comment'].map(f => getField(f)), getField('details', { targetKey: 'activity_details', ...arrayFieldOption, parser: arr => arr.slice(0, 30) })]);
         // user openrank
         await processMetric(getUserOpenrank, option, getField('openrank'));
         console.log(`Process user for round ${i} done.`);
