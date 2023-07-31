@@ -8,6 +8,7 @@ data:
     - 623337117 # repo:ALTIBASE/altibase
     - 25780780 # repo:AlaSQL/alasql
     - 22427082 # repo:BTrDB/btrdb-server
+    - 581145740 # repo:ByConity/ByConity
     - 52080367 # repo:CUBRID/cubrid
     - 496505424 # repo:CeresDB/ceresdb
     - 60246359 # repo:ClickHouse/ClickHouse
@@ -104,8 +105,10 @@ data:
     - 371172777 # repo:kelindar/column
     - 199466858 # repo:kkuchta/tabdb
     - 7502247 # repo:lealone/Lealone
+    - 509396909 # repo:lingo-db/lingo-db
     - 23013460 # repo:lsst/qserv
     - 61153677 # repo:m3db/m3
+    - 564689243 # repo:man-group/ArcticDB
     - 95614931 # repo:manticoresoftware/manticoresearch
     - 429630067 # repo:marsupialtail/quokka
     - 339993112 # repo:matrixorigin/matrixone
@@ -117,6 +120,7 @@ data:
     - 372536760 # repo:oceanbase/oceanbase
     - 507829396 # repo:openGemini/openGemini
     - 276117477 # repo:opengauss-mirror/openGauss-server
+    - 432844875 # repo:orioledb/orioledb
     - 3766330 # repo:pentaho/mondrian
     - 30753733 # repo:percona/percona-server
     - 9509125 # repo:percona/tokudb-engine
