@@ -35,6 +35,7 @@ data:
     - 57401138 # repo:bitnine-oss/agensgraph
     - 127338417 # repo:bluzi/jsonstore
     - 234091935 # repo:c9fe/sirdb
+    - 546206616 # repo:chroma-core/chroma
     - 13353426 # repo:cinchapi/concourse
     - 66783145 # repo:couchbase/couchbase-lite-core
     - 9342529 # repo:crate/crate
@@ -56,6 +57,7 @@ data:
     - 4859 # repo:jcrosby/cloudkit
     - 652189 # repo:jedisct1/Pincaster
     - 1776883 # repo:kimchy/compass
+    - 607441698 # repo:lancedb/lancedb
     - 376679845 # repo:losfair/RefineDB
     - 9795883 # repo:louischatriot/nedb
     - 23315232 # repo:mbdavid/LiteDB

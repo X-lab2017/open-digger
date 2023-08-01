@@ -72,6 +72,7 @@ data:
     - 11225014 # repo:etcd-io/etcd
     - 6934395 # repo:facebook/rocksdb
     - 70541093 # repo:facebookarchive/beringei
+    - 606800919 # repo:firstbatchxyz/hollowdb
     - 292049131 # repo:genderev/assassin
     - 67936193 # repo:gfredericks/quinedb
     - 23405758 # repo:google/leveldb
