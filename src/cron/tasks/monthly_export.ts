@@ -110,6 +110,7 @@ const task: Task = {
           writeFileSync(join(exportBasePath, name, 'meta.json'), JSON.stringify({
             updatedAt: new Date().getTime(),
             type: option.type ?? undefined,
+            id: parseInt(row.id),
           }));
           if (!Array.isArray(fields)) fields = [fields];
           const aggContent: any = {};
@@ -194,6 +195,7 @@ const task: Task = {
       for (let i = 0; i < repoPartitions.length; i++) {
         const { min, max } = repoPartitions[i];
         option.whereClause = `repo_id BETWEEN ${min} AND ${max} AND repo_id IN (SELECT id FROM ${exportRepoTableName})`;
+        option.type = 'repo';
         // [X-lab index] repo activity
         await processMetric(getRepoActivity, { ...option, options: { developerDetail: true } }, [getField('activity'), getField('details', { targetKey: 'activity_details', ...arrayFieldOption, parser: arr => arr.length <= 100 ? arr : arr.filter(i => i[1] >= 2) })]);
         // [X-lab index] repo openrank
@@ -292,6 +294,7 @@ const task: Task = {
         const [owner, repos, ids, orgId] = row;
         updateMetaData(join(exportBasePath, owner, 'meta.json'), {
           updatedAt: date.getTime(),
+          id: orgId === '0' ? undefined : parseInt(orgId),
           type: orgId === '0' ? 'user' : 'org',
           repos: repos.map((name, index) => {
             return {
@@ -301,9 +304,9 @@ const task: Task = {
           }),
         });
       });
+      console.log('Export owner meta data done.');
     };
     await exportOwnerMeta();
-    console.log('Export owner meta data done.');
 
     // export label data
     const exportLabelData = async () => {
@@ -312,42 +315,61 @@ const task: Task = {
       for (const l of labelData) {
         const update = (name: any) => {
           if (!labelMap.has(name)) labelMap.set(name, []);
-          labelMap.get(name)!.push({
-            id: l.identifier,
-            name: l.name,
-            type: l.type,
-          });
+          // avoid duplicate label
+          if (labelMap.get(name)!.findIndex(i => i.id === l.identifier) < 0) {
+            labelMap.get(name)!.push({
+              id: l.identifier,
+              name: l.name,
+              type: l.type,
+            });
+          }
         };
-        if (l.githubOrgs.length > 0) {
-          const sql = `SELECT argMax(org_login, created_at) FROM gh_events WHERE org_id IN (${l.githubOrgs.join(',')}) GROUP BY org_id`;
-          await queryStream(sql, row => {
-            const [orgLogin] = row;
-            update(orgLogin);
-          });
-        }
-        if (l.githubRepos.length > 0) {
-          const sql = `SELECT argMax(repo_name, created_at) FROM gh_events WHERE repo_id IN (${l.githubRepos.join(',')}) GROUP BY repo_id`;
-          await queryStream(sql, row => {
-            const [repoName] = row;
-            update(repoName);
-          });
-        }
-        if (l.githubUsers.length > 0) {
-          const sql = `SELECT argMax(actor_login, created_at) FROM gh_events WHERE actor_id IN (${l.githubUsers.join(',')}) GROUP BY actor_id`;
-          await queryStream(sql, row => {
-            const [actorLogin] = row;
-            update(actorLogin);
-          });
-        }
+
+        await Promise.all([
+          (async () => {
+            if (l.githubOrgs.length <= 0) return;
+            const sql = `SELECT argMax(org_login, created_at) FROM gh_events WHERE org_id IN (${l.githubOrgs.join(',')}) GROUP BY org_id`;
+            await queryStream(sql, row => {
+              const [orgLogin] = row;
+              update(orgLogin);
+            });
+          })(),
+          (async () => {
+            if (l.githubOrgs.length <= 0) return;
+            // add the label to repos under the org too.
+            const repoInOrgSql = `SELECT repo_name FROM gh_export_repo WHERE org_id IN (${l.githubOrgs.join(',')})`;
+            await queryStream(repoInOrgSql, row => {
+              const [repoName] = row;
+              update(repoName);
+            });
+          })(),
+          (async () => {
+            if (l.githubRepos.length <= 0) return;
+            const sql = `SELECT argMax(repo_name, created_at) FROM gh_events WHERE repo_id IN (${l.githubRepos.join(',')}) GROUP BY repo_id`;
+            await queryStream(sql, row => {
+              const [repoName] = row;
+              update(repoName);
+            });
+          })(),
+          (async () => {
+            if (l.githubUsers.length <= 0) return;
+            const sql = `SELECT argMax(actor_login, created_at) FROM gh_events WHERE actor_id IN (${l.githubUsers.join(',')}) GROUP BY actor_id`;
+            await queryStream(sql, row => {
+              const [actorLogin] = row;
+              update(actorLogin);
+            });
+          })(),
+        ]);
+        console.log(`Process ${l.identifier} done.`);
       }
       for (const [name, labels] of labelMap.entries()) {
         updateMetaData(join(exportBasePath, name, 'meta.json'), {
           labels,
         });
       }
+      console.log('Export label data done.');
     };
     await exportLabelData();
-    console.log('Export label data done.');
   }
 };
 
