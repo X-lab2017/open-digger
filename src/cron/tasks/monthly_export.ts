@@ -312,6 +312,7 @@ const task: Task = {
     const exportLabelData = async () => {
       const labelData = getLabelData();
       const labelMap = new Map<string, any[]>();
+      const labelDetailMap = new Map<string, { label: any; github_orgs: Map<string, number>; github_repos: Map<string, number>; github_users: Map<string, number> }>();
       for (const l of labelData) {
         const update = (name: any) => {
           if (!labelMap.has(name)) labelMap.set(name, []);
@@ -324,38 +325,56 @@ const task: Task = {
             });
           }
         };
-
+        labelDetailMap.set(l.identifier, {
+          label: {
+            id: l.identifier,
+            name: l.name,
+            type: l.type,
+          },
+          github_repos: new Map<string, number>(),
+          github_orgs: new Map<string, number>(),
+          github_users: new Map<string, number>(),
+        });
+        const labelDetail = labelDetailMap.get(l.identifier)!;
         await Promise.all([
           (async () => {
             if (l.githubOrgs.length <= 0) return;
-            const sql = `SELECT argMax(org_login, created_at) FROM gh_events WHERE org_id IN (${l.githubOrgs.join(',')}) GROUP BY org_id`;
+            const sql = `SELECT org_login, ROUND(SUM(repo_openrank), 2) AS openrank FROM
+(SELECT org_id, argMax(org_login, created_at) AS org_login, repo_id, argMax(openrank, created_at) AS repo_openrank FROM gh_repo_openrank
+WHERE org_id IN (${l.githubOrgs.join(',')})
+GROUP BY org_id, repo_id)
+GROUP BY org_login
+ORDER BY openrank DESC`;
             await queryStream(sql, row => {
-              const [orgLogin] = row;
+              const [orgLogin, openrank] = row;
+              labelDetail.github_orgs.set(orgLogin, openrank);
               update(orgLogin);
             });
           })(),
           (async () => {
             if (l.githubOrgs.length <= 0) return;
             // add the label to repos under the org too.
-            const repoInOrgSql = `SELECT repo_name FROM gh_export_repo WHERE org_id IN (${l.githubOrgs.join(',')})`;
-            await queryStream(repoInOrgSql, row => {
+            const sql = `SELECT argMax(repo_name, created_at), ROUND(argMax(openrank, created_at), 2) AS openrank FROM gh_repo_openrank WHERE org_id IN (${l.githubOrgs.join(',')}) GROUP BY repo_id ORDER BY openrank DESC`
+            await queryStream(sql, row => {
               const [repoName] = row;
               update(repoName);
             });
           })(),
           (async () => {
             if (l.githubRepos.length <= 0) return;
-            const sql = `SELECT argMax(repo_name, created_at) FROM gh_events WHERE repo_id IN (${l.githubRepos.join(',')}) GROUP BY repo_id`;
+            const sql = `SELECT argMax(repo_name, created_at), ROUND(argMax(openrank, created_at), 2) AS openrank FROM gh_repo_openrank WHERE repo_id IN (${l.githubRepos.join(',')}) GROUP BY repo_id ORDER BY openrank DESC`;
             await queryStream(sql, row => {
-              const [repoName] = row;
+              const [repoName, openrank] = row;
+              labelDetail.github_repos.set(repoName, openrank);
               update(repoName);
             });
           })(),
           (async () => {
             if (l.githubUsers.length <= 0) return;
-            const sql = `SELECT argMax(actor_login, created_at) FROM gh_events WHERE actor_id IN (${l.githubUsers.join(',')}) GROUP BY actor_id`;
+            const sql = `SELECT argMax(actor_login, created_at), ROUND(argMax(openrank, created_at), 2) AS openrank FROM gh_user_openrank WHERE actor_id IN (${l.githubUsers.join(',')}) GROUP BY actor_id ORDER BY openrank DESC`;
             await queryStream(sql, row => {
-              const [actorLogin] = row;
+              const [actorLogin, openrank] = row;
+              labelDetail.github_users.set(actorLogin, openrank);
               update(actorLogin);
             });
           })(),
@@ -366,6 +385,20 @@ const task: Task = {
         updateMetaData(join(exportBasePath, name, 'meta.json'), {
           labels,
         });
+      }
+      const convertMap = (map: Map<string, number>) => {
+        if (map.size === 0) return undefined;
+        return Array.from(map.entries()).sort((a, b) => b[1] - a[1]).map(i => { return { name: i[0], openrank: i[1] } });
+      };
+      for (const [labelId, detail] of labelDetailMap.entries()) {
+        const labelPath = join(config.export.path, 'label_data', labelId);
+        mkdirSync(labelPath, { recursive: true });
+        writeFileSync(join(labelPath, 'data.json'), JSON.stringify({
+          ...detail.label,
+          github_repos: convertMap(detail.github_repos),
+          github_orgs: convertMap(detail.github_orgs),
+          github_users: convertMap(detail.github_users),
+        }));
       }
       console.log('Export label data done.');
     };
