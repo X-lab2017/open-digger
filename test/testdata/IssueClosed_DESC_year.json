@@ -1,0 +1,27 @@
+{
+    "sql":"SELECT id, argMax(name, time) AS name, SUM(count) AS total_count, groupArrayInsertAt(0, toUInt32(dateDiff('year', toDate('2015-1-1'), toDate('2016-12-1'))) + 1)(ROUND(count, 2), toUInt32(dateDiff('year', toStartOfYear(toDate('2015-1-1')), time))) AS issues_close_count FROM ( SELECT toStartOfYear(created_at) AS time, repo_id AS id, argMax(repo_name, time) AS name, COUNT() AS count FROM gh_events WHERE type = 'IssuesEvent' AND action = 'closed' AND (org_id IN [1342004]) AND created_at >= toDate('2015-1-1') AND created_at < dateAdd(month, 1, toDate('2016-12-1')) GROUP BY id, time ) GROUP BY id ORDER BY issues_close_count[-1] DESC LIMIT 3",
+    "IssueClosed_DESC_year":
+    [
+        {
+          "id": "20818126",
+          "name": "google/ExoPlayer",
+          "total_count": "1631",
+          "count": ["581", "1050"],
+          "ratio": ["36%", "64%"]
+        },
+        {
+          "id": "29268051",
+          "name": "google/material-design-lite",
+          "total_count": "1408",
+          "count": ["680", "728"],
+          "ratio": ["48%", "52%"]
+        },
+        {
+          "id": "19249835",
+          "name": "google/WebFundamentals",
+          "total_count": "1342",
+          "count": ["702", "640"],
+          "ratio": ["52%", "48%"]
+        }
+    ]
+}

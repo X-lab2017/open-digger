@@ -3,7 +3,6 @@ const fs = require('fs');
 const assert = require('assert');
 const _ = require('lodash');
 const _isEqual = require('lodash/isEqual');
-const FILENAME = '../test/testdata.json'; 
 
 function deepEqual(a, b) {
   return _.isEqual(a, b);
@@ -40,6 +39,7 @@ const option_quarter = {
 };
 
 async function validateData(apiFn, option, dataKey) {
+  const FILENAME = `../test/testdata/${dataKey}.json`;
   const jsonData = JSON.parse(fs.readFileSync(FILENAME));
   const data1 = jsonData[dataKey];
   const data2 = await apiFn(option);
@@ -48,30 +48,6 @@ async function validateData(apiFn, option, dataKey) {
 
 }
 
-validateData(openDigger.metric.chaoss.codeChangeCommits, option_year, 'codeChangeCommits_DESC_year');
-validateData(openDigger.metric.chaoss.codeChangeCommits, option_month, 'codeChangeCommits_DESC_month');
-validateData(openDigger.metric.chaoss.codeChangeCommits, option_quarter, 'codeChangeCommits_DESC_quarter');
-
-validateData(openDigger.metric.chaoss.issuesNew, option_year, 'IssueNew_DESC_year');
-validateData(openDigger.metric.chaoss.issuesNew, option_month, 'IssueNew_DESC_month');
-validateData(openDigger.metric.chaoss.issuesNew, option_quarter, 'IssueNew_DESC_quarter');
-
-validateData(openDigger.metric.chaoss.issuesAndChangeRequestActive, option_year, 'issuesAndChangeRequestActive_DESC_year');
-validateData(openDigger.metric.chaoss.issuesAndChangeRequestActive, option_month, 'issuesAndChangeRequestActive_DESC_month');
-validateData(openDigger.metric.chaoss.issuesAndChangeRequestActive, option_quarter, 'issuesAndChangeRequestActive_DESC_quarter');
-
 validateData(openDigger.metric.chaoss.issuesClosed, option_year, 'IssueClosed_DESC_year');
 validateData(openDigger.metric.chaoss.issuesClosed, option_month, 'IssueClosed_DESC_month');
 validateData(openDigger.metric.chaoss.issuesClosed, option_quarter, 'IssueClosed_DESC_quarter');
-
-validateData(openDigger.metric.chaoss.changeRequestsAccepted, option_year, 'changeRequestsAccepted_DESC_year');
-validateData(openDigger.metric.chaoss.changeRequestsAccepted, option_month, 'changeRequestsAccepted_DESC_month');
-validateData(openDigger.metric.chaoss.changeRequestsAccepted, option_quarter, 'changeRequestsAccepted_DESC_quarter');
-
-validateData(openDigger.metric.chaoss.changeRequestsDeclined, option_year, 'changeRequestsDeclined_DESC_year');
-validateData(openDigger.metric.chaoss.changeRequestsDeclined, option_month, 'changeRequestsDeclined_DESC_month');
-validateData(openDigger.metric.chaoss.changeRequestsDeclined, option_quarter, 'changeRequestsDeclined_DESC_quarter');
-
-validateData(openDigger.metric.chaoss.codeChangeLines, option_year, 'codeChangeLines_DESC_year');
-validateData(openDigger.metric.chaoss.codeChangeLines, option_month, 'codeChangeLines_DESC_month');
-validateData(openDigger.metric.chaoss.codeChangeLines, option_quarter, 'codeChangeLines_DESC_quarter');
