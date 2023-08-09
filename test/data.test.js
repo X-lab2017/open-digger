@@ -7,34 +7,40 @@ const _isEqual = require('lodash/isEqual');
 function deep_equal(a, b) {
   return _.isEqual(a, b);
 }
-const option_year = {
+const option_desc_3_all_repo_year = {
   orgIds: [1342004],
   limit: 3,
+  limitoption: 'all',
   startYear: 2015,
   endYear: 2016, 
   startMonth: 1,
   endMonth: 12,
   order: 'DESC',
+  groupby: 'repo',
   groupTimeRange: 'year'  
 };
-const option_month = {
+const option_desc_3_all_repo_month = {
   orgIds: [1342004],
   limit: 3,
+  limitoption: 'all',
   startYear: 2015,
   endYear: 2016, 
   startMonth: 1,
   endMonth: 12,
   order: 'DESC',
+  groupby: 'repo',
   groupTimeRange: 'month'  
 };
-const option_quarter = {
+const option_desc_3_all_repo_quarter = {
   orgIds: [1342004],
   limit: 3,
+  limitoption: 'all',
   startYear: 2015,
   endYear: 2016, 
   startMonth: 1,
   endMonth: 12,
   order: 'DESC',
+  groupby: 'repo',
   groupTimeRange: 'quarter'  
 };
 
@@ -47,6 +53,14 @@ async function validate_data(api_fn, option, data_key) {
   assert(is_equal);
 }
 
-validate_data(openDigger.metric.chaoss.issuesClosed, option_year, 'issue_closed_desc_3_all_repo_year');
-validate_data(openDigger.metric.chaoss.issuesClosed, option_month, 'issue_closed_desc_3_all_repo_month');
-validate_data(openDigger.metric.chaoss.issuesClosed, option_quarter, 'issue_closed_desc_3_all_repo_quarter');
+validate_data(openDigger.metric.chaoss.issuesClosed, option_desc_3_all_repo_year, 'issue_closed_desc_3_all_repo_year');
+validate_data(openDigger.metric.chaoss.issuesClosed, option_desc_3_all_repo_month, 'issue_closed_desc_3_all_repo_month');
+validate_data(openDigger.metric.chaoss.issuesClosed, option_desc_3_all_repo_quarter, 'issue_closed_desc_3_all_repo_quarter');
+
+validate_data(openDigger.metric.chaoss.issuesNew, option_desc_3_all_repo_year, 'issue_new_desc_3_all_repo_year');
+validate_data(openDigger.metric.chaoss.issuesNew, option_desc_3_all_repo_month, 'issue_new_desc_3_all_repo_month');
+validate_data(openDigger.metric.chaoss.issuesNew, option_desc_3_all_repo_quarter, 'issue_new_desc_3_all_repo_quarter');
+
+validate_data(openDigger.metric.chaoss.codeChangeCommits, option_desc_3_all_repo_year, 'code_change_commits_desc_3_all_repo_year');
+validate_data(openDigger.metric.chaoss.codeChangeCommits, option_desc_3_all_repo_month, 'code_change_commits_desc_3_all_repo_month');
+validate_data(openDigger.metric.chaoss.codeChangeCommits, option_desc_3_all_repo_quarter, 'code_change_commits_desc_3_all_repo_quarter');

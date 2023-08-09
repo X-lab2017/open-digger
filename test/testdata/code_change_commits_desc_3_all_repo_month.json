@@ -1,0 +1,40 @@
+{
+    "sql": "SELECT id, argMax(name, time) AS name, groupArrayInsertAt(0, toUInt32(dateDiff('month', toDate('2015-1-1'), toDate('2016-12-1'))) + 1)(ROUND(count, 2), toUInt32(dateDiff('month', toDate('2015-1-1'), time))) AS commits_count FROM (SELECT toStartOfMonth(created_at) AS time, repo_id AS id, argMax(repo_name, time) AS name, COUNT(arrayJoin(push_commits.message)) AS count FROM gh_events WHERE type = 'PushEvent'  AND (org_id IN [1342004]) AND  created_at >= toDate('2015-1-1') AND created_at < dateAdd(month, 1, toDate('2016-12-1')) GROUP BY id, time) GROUP BY id ORDER BY commits_count[-1] DESC LIMIT 3",
+    "code_change_commits_desc_3_all_repo_month":
+    [
+        {
+          "id": "19979068",
+          "name": "google/rekall-profiles",
+          "count": [
+            "6",  "12", "14", "42",  "16",
+            "24", "6",  "30", "18",  "8",
+            "6",  "11", "15", "33",  "18",
+            "5",  "30", "16", "23",  "11",
+            "6",  "7",  "22", "666"
+          ]
+        },
+        {
+          "id": "9304637",
+          "name": "google/ggrc-core",
+          "count": [
+            "0",   "0",   "0",   "885",
+            "588", "230", "489", "502",
+            "423", "227", "503", "489",
+            "361", "401", "433", "426",
+            "403", "653", "423", "350",
+            "674", "499", "731", "571"
+          ]
+        },
+        {
+          "id": "51965089",
+          "name": "google/amphtml",
+          "count": [
+            "0",   "0",   "0",   "0",   "0",
+            "0",   "0",   "0",   "0",   "0",
+            "0",   "0",   "0",   "0",   "141",
+            "240", "136", "419", "453", "568",
+            "429", "583", "819", "526"
+          ]
+        }
+      ]
+}

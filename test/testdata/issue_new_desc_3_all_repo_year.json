@@ -1,0 +1,28 @@
+{
+    "sql":"SELECT id, argMax(name, time) AS name, SUM(count) AS total_count, groupArrayInsertAt(0, toUInt32(dateDiff('year', toDate('2015-1-1'), toDate('2016-12-1'))) + 1)(ROUND(count, 2), toUInt32(dateDiff('year', toStartOfYear(toDate('2015-1-1')), time))) AS issues_close_count FROM ( SELECT toStartOfYear(created_at) AS time, repo_id AS id, argMax(repo_name, time) AS name, COUNT() AS count FROM gh_events WHERE type = 'IssuesEvent' AND (action = 'opened' or action = 'reopened') AND (org_id IN [1342004]) AND created_at >= toDate('2015-1-1') AND created_at < dateAdd(month, 1, toDate('2016-12-1')) GROUP BY id, time ) GROUP BY id ORDER BY issues_close_count[-1] DESC LIMIT 3",
+    
+    "issue_new_desc_3_all_repo_year":
+    [
+        {
+          "id": "29268051",
+          "name": "google/material-design-lite",
+          "total_count": "3376",
+          "count": [ "1382", "1994" ],
+          "ratio": [ "41%", "59%" ]
+        },
+        {
+          "id": "20818126",
+          "name": "google/ExoPlayer",
+          "total_count": "1788",
+          "count": [ "740", "1048" ],
+          "ratio": [ "41%", "59%" ]
+        },
+        {
+          "id": "23357588",
+          "name": "google/protobuf",
+          "total_count": "1193",
+          "count": [ "425", "768" ],
+          "ratio": [ "36%", "64%" ]
+        }
+      ]
+}
