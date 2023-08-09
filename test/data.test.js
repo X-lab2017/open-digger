@@ -4,7 +4,7 @@ const assert = require('assert');
 const _ = require('lodash');
 const _isEqual = require('lodash/isEqual');
 
-function deepEqual(a, b) {
+function deep_equal(a, b) {
   return _.isEqual(a, b);
 }
 const option_year = {
@@ -38,16 +38,15 @@ const option_quarter = {
   groupTimeRange: 'quarter'  
 };
 
-async function validateData(apiFn, option, dataKey) {
-  const FILENAME = `../test/testdata/${dataKey}.json`;
-  const jsonData = JSON.parse(fs.readFileSync(FILENAME));
-  const data1 = jsonData[dataKey];
-  const data2 = await apiFn(option);
-  const equal = deepEqual(data1, data2);
-  assert(equal);
-
+async function validate_data(api_fn, option, data_key) {
+  const file_name = `../test/testdata/${data_key}.json`;
+  const json_data = JSON.parse(fs.readFileSync(file_name));
+  const data_1 = json_data[data_key];
+  const data_2 = await api_fn(option);
+  const is_equal = deep_equal(data_1, data_2);
+  assert(is_equal);
 }
 
-validateData(openDigger.metric.chaoss.issuesClosed, option_year, 'IssueClosed_DESC_year');
-validateData(openDigger.metric.chaoss.issuesClosed, option_month, 'IssueClosed_DESC_month');
-validateData(openDigger.metric.chaoss.issuesClosed, option_quarter, 'IssueClosed_DESC_quarter');
+validate_data(openDigger.metric.chaoss.issuesClosed, option_year, 'issue_closed_desc_3_all_repo_year');
+validate_data(openDigger.metric.chaoss.issuesClosed, option_month, 'issue_closed_desc_3_all_repo_month');
+validate_data(openDigger.metric.chaoss.issuesClosed, option_quarter, 'issue_closed_desc_3_all_repo_quarter');
