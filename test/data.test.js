@@ -10,37 +10,37 @@ function deep_equal(a, b) {
 const option_desc_3_all_repo_year = {
   orgIds: [1342004],
   limit: 3,
-  limitoption: 'all',
+  limitOption: 'all',
   startYear: 2015,
   endYear: 2016, 
   startMonth: 1,
   endMonth: 12,
   order: 'DESC',
-  groupby: 'repo',
+  groupBy: null,
   groupTimeRange: 'year'  
 };
 const option_desc_3_all_repo_month = {
   orgIds: [1342004],
   limit: 3,
-  limitoption: 'all',
+  limitOption: 'all',
   startYear: 2015,
   endYear: 2016, 
   startMonth: 1,
   endMonth: 12,
   order: 'DESC',
-  groupby: 'repo',
+  groupBy: null,
   groupTimeRange: 'month'  
 };
 const option_desc_3_all_repo_quarter = {
   orgIds: [1342004],
   limit: 3,
-  limitoption: 'all',
+  limitOption: 'all',
   startYear: 2015,
   endYear: 2016, 
   startMonth: 1,
   endMonth: 12,
   order: 'DESC',
-  groupby: 'repo',
+  groupBy: null,
   groupTimeRange: 'quarter'  
 };
 
