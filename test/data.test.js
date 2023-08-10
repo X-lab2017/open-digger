@@ -7,60 +7,58 @@ const _isEqual = require('lodash/isEqual');
 function deep_equal(a, b) {
   return _.isEqual(a, b);
 }
-const option_desc_3_all_repo_year = {
-  orgIds: [1342004],
-  limit: 3,
-  limitOption: 'all',
-  startYear: 2015,
-  endYear: 2016, 
-  startMonth: 1,
-  endMonth: 12,
-  order: 'DESC',
-  groupBy: null,
-  groupTimeRange: 'year'  
-};
-const option_desc_3_all_repo_month = {
-  orgIds: [1342004],
-  limit: 3,
-  limitOption: 'all',
-  startYear: 2015,
-  endYear: 2016, 
-  startMonth: 1,
-  endMonth: 12,
-  order: 'DESC',
-  groupBy: null,
-  groupTimeRange: 'month'  
-};
-const option_desc_3_all_repo_quarter = {
-  orgIds: [1342004],
-  limit: 3,
-  limitOption: 'all',
-  startYear: 2015,
-  endYear: 2016, 
-  startMonth: 1,
-  endMonth: 12,
-  order: 'DESC',
-  groupBy: null,
-  groupTimeRange: 'quarter'  
-};
 
-async function validate_data(api_fn, option, data_key) {
-  const file_name = `../test/testdata/${data_key}.json`;
+async function validate_data(api_fn,sub_file_name,data_key) {
+  const file_name = `../test/testdata/${sub_file_name}/${data_key}.json`;
   const json_data = JSON.parse(fs.readFileSync(file_name));
   const data_1 = json_data[data_key];
-  const data_2 = await api_fn(option);
+  const data_2 = await api_fn(json_data['modifiedOption']);
   const is_equal = deep_equal(data_1, data_2);
   assert(is_equal);
 }
 
-validate_data(openDigger.metric.chaoss.issuesClosed, option_desc_3_all_repo_year, 'issue_closed_desc_3_all_repo_year');
-validate_data(openDigger.metric.chaoss.issuesClosed, option_desc_3_all_repo_month, 'issue_closed_desc_3_all_repo_month');
-validate_data(openDigger.metric.chaoss.issuesClosed, option_desc_3_all_repo_quarter, 'issue_closed_desc_3_all_repo_quarter');
+const option = {
+  orgIds: [1342004],
+  startYear: 2015,
+  endYear: 2016,
+  startMonth: 1,
+  endMonth: 12,
+};
 
-validate_data(openDigger.metric.chaoss.issuesNew, option_desc_3_all_repo_year, 'issue_new_desc_3_all_repo_year');
-validate_data(openDigger.metric.chaoss.issuesNew, option_desc_3_all_repo_month, 'issue_new_desc_3_all_repo_month');
-validate_data(openDigger.metric.chaoss.issuesNew, option_desc_3_all_repo_quarter, 'issue_new_desc_3_all_repo_quarter');
+const orderOptions = ['ASC','DESC'];
+const limitOptions = ['each', 'all'];
+const limitOptions1 = [3];
+const groupTimeRangeOptions = ['year', 'quarter', 'month'];
+const groupByOptions = [null, 'org'];
 
-validate_data(openDigger.metric.chaoss.codeChangeCommits, option_desc_3_all_repo_year, 'code_change_commits_desc_3_all_repo_year');
-validate_data(openDigger.metric.chaoss.codeChangeCommits, option_desc_3_all_repo_month, 'code_change_commits_desc_3_all_repo_month');
-validate_data(openDigger.metric.chaoss.codeChangeCommits, option_desc_3_all_repo_quarter, 'code_change_commits_desc_3_all_repo_quarter');
+const resultPromises = [];
+
+const delay = async (ms) => {
+  return new Promise(resolve => setTimeout(resolve, ms));
+};
+
+(async () => {
+  for (const order of orderOptions) {
+    for (const limit of limitOptions1) {
+      for (const limitOption of limitOptions) {
+        for (const groupBy of groupByOptions) {
+          for (const groupTimeRange of groupTimeRangeOptions) {
+            const modifiedOption = {
+              ...option,
+              order,
+              limit,
+              limitOption,
+              groupTimeRange,
+              groupBy,
+            };
+            const issues_closed_file_name = `issues_closed_${order}_${limit}_${limitOption}_${groupBy}_${groupTimeRange}`.toLowerCase();
+            validate_data(openDigger.metric.chaoss.issuesClosed,'issues_closed',issues_closed_file_name);
+            await delay(1000);
+          }
+        }
+      }
+    }
+  }
+
+  console.log('All passed.');
+})();
