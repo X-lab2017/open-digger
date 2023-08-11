@@ -25,8 +25,8 @@ const option = {
   endMonth: 12,
 };
 
-const orderOptions = ['ASC','DESC'];
-const limitOptions = ['each', 'all'];
+const orderOptions = ['DESC'];
+const limitOptions = ['all'];
 const limitOptions1 = [3];
 const groupTimeRangeOptions = ['year', 'quarter', 'month'];
 const groupByOptions = [null, 'org'];
@@ -51,8 +51,18 @@ const delay = async (ms) => {
               groupTimeRange,
               groupBy,
             };
+            //  issues_new
+            const issues_new_file_name = `issues_new_${order}_${limit}_${limitOption}_${groupBy}_${groupTimeRange}`.toLowerCase();
+            validate_data(openDigger.metric.chaoss.issuesNew,'issues_new',issues_new_file_name);
+            // issues_closed
             const issues_closed_file_name = `issues_closed_${order}_${limit}_${limitOption}_${groupBy}_${groupTimeRange}`.toLowerCase();
             validate_data(openDigger.metric.chaoss.issuesClosed,'issues_closed',issues_closed_file_name);
+            // code_change_commits
+            const code_change_commits_file_name = `code_change_commits_${order}_${limit}_${limitOption}_${groupBy}_${groupTimeRange}`.toLowerCase();
+            validate_data(openDigger.metric.chaoss.codeChangeCommits,'code_change_commits',code_change_commits_file_name);
+            // issues_and_change_request_active
+            const issues_and_change_request_active_file_name = `issues_and_change_request_active_${order}_${limit}_${limitOption}_${groupBy}_${groupTimeRange}`.toLowerCase();
+            validate_data(openDigger.metric.chaoss.issuesAndChangeRequestActive,'issues_and_change_request_active',issues_and_change_request_active_file_name);
             await delay(1000);
           }
         }
