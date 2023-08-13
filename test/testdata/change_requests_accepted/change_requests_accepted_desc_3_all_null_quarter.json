@@ -1,0 +1,94 @@
+{
+  "sql":"\nSELECT\n  id,\n  argMax(name, time) AS name,\n  SUM(count) AS total_count,\n  groupArrayInsertAt(\n    0,\n    toUInt32(dateDiff('quarter', toDate('2015-1-1'), toDate('2016-12-1'))) + 1)(ROUND(count, 2),\n    toUInt32(dateDiff('quarter', toStartOfQuarter(toDate('2015-1-1')), time))) AS change_requests_accepted\nFROM\n(\n  SELECT\n    toStartOfQuarter(created_at) AS time,\n    repo_id AS id, argMax(repo_name, time) AS name,\n    COUNT() AS count\n  FROM gh_events\n  WHERE type = 'PullRequestEvent' AND action = 'closed' AND pull_merged = 1 AND (org_id IN [1342004]) AND  created_at >= toDate('2015-1-1') AND created_at < dateAdd(month, 1, toDate('2016-12-1'))\n  GROUP BY id, time\n  \n)\nGROUP BY id\nORDER BY change_requests_accepted[-1] DESC\n    LIMIT 3",
+  "modifiedOption": {
+    "orgIds": [
+      1342004
+    ],
+    "startYear": 2015,
+    "endYear": 2016,
+    "startMonth": 1,
+    "endMonth": 12,
+    "order": "DESC",
+    "limit": 3,
+    "limitOption": "all",
+    "groupTimeRange": "quarter",
+    "groupBy": null
+  },
+  "change_requests_accepted_desc_3_all_null_quarter": [
+    {
+      "id": "9304637",
+      "name": "google/ggrc-core",
+      "total_count": "2084",
+      "count": [
+        "0",
+        "216",
+        "298",
+        "245",
+        "228",
+        "352",
+        "337",
+        "408"
+      ],
+      "ratio": [
+        "0.0%",
+        "10%",
+        "14%",
+        "12%",
+        "11%",
+        "17%",
+        "16%",
+        "20%"
+      ]
+    },
+    {
+      "id": "19249835",
+      "name": "google/WebFundamentals",
+      "total_count": "1494",
+      "count": [
+        "29",
+        "71",
+        "284",
+        "212",
+        "174",
+        "143",
+        "266",
+        "315"
+      ],
+      "ratio": [
+        "1.9%",
+        "4.8%",
+        "19%",
+        "14%",
+        "12%",
+        "9.6%",
+        "18%",
+        "21%"
+      ]
+    },
+    {
+      "id": "63809205",
+      "name": "google/oss-fuzz",
+      "total_count": "125",
+      "count": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "3",
+        "122"
+      ],
+      "ratio": [
+        "0.0%",
+        "0.0%",
+        "0.0%",
+        "0.0%",
+        "0.0%",
+        "0.0%",
+        "2.4%",
+        "98%"
+      ]
+    }
+  ]
+}

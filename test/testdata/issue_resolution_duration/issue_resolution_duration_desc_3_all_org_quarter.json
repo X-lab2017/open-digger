@@ -1,0 +1,133 @@
+{
+  "sql":"\nSELECT\n  id,\n  argMax(name, time),\n  groupArrayInsertAt(\n    NaN,\n    toUInt32(dateDiff('quarter', toDate('2015-1-1'), toDate('2016-12-1'))) + 1)(ROUND(avg, 2),\n    toUInt32(dateDiff('quarter', toStartOfQuarter(toDate('2015-1-1')), time))) AS avg,\n  groupArrayInsertAt(\n    [],\n    toUInt32(dateDiff('quarter', toDate('2015-1-1'), toDate('2016-12-1'))) + 1)(resolution_levels,\n    toUInt32(dateDiff('quarter', toStartOfQuarter(toDate('2015-1-1')), time))) AS levels,\n  groupArrayInsertAt(\n    NaN,\n    toUInt32(dateDiff('quarter', toDate('2015-1-1'), toDate('2016-12-1'))) + 1)(ROUND(quantile_0, 2),\n    toUInt32(dateDiff('quarter', toStartOfQuarter(toDate('2015-1-1')), time))) AS quantile_0,groupArrayInsertAt(\n    NaN,\n    toUInt32(dateDiff('quarter', toDate('2015-1-1'), toDate('2016-12-1'))) + 1)(ROUND(quantile_1, 2),\n    toUInt32(dateDiff('quarter', toStartOfQuarter(toDate('2015-1-1')), time))) AS quantile_1,groupArrayInsertAt(\n    NaN,\n    toUInt32(dateDiff('quarter', toDate('2015-1-1'), toDate('2016-12-1'))) + 1)(ROUND(quantile_2, 2),\n    toUInt32(dateDiff('quarter', toStartOfQuarter(toDate('2015-1-1')), time))) AS quantile_2,groupArrayInsertAt(\n    NaN,\n    toUInt32(dateDiff('quarter', toDate('2015-1-1'), toDate('2016-12-1'))) + 1)(ROUND(quantile_3, 2),\n    toUInt32(dateDiff('quarter', toStartOfQuarter(toDate('2015-1-1')), time))) AS quantile_3,groupArrayInsertAt(\n    NaN,\n    toUInt32(dateDiff('quarter', toDate('2015-1-1'), toDate('2016-12-1'))) + 1)(ROUND(quantile_4, 2),\n    toUInt32(dateDiff('quarter', toStartOfQuarter(toDate('2015-1-1')), time))) AS quantile_4\nFROM\n(\n  SELECT\n    toStartOfQuarter(opened_at) AS time,\n    org_id AS id, argMax(org_login, time) AS name,\n    avg(resolution_duration) AS avg,\n    quantile(0)(resolution_duration) AS quantile_0,quantile(0.25)(resolution_duration) AS quantile_1,quantile(0.5)(resolution_duration) AS quantile_2,quantile(0.75)(resolution_duration) AS quantile_3,quantile(1)(resolution_duration) AS quantile_4,\n    [countIf(resolution_level = 0),countIf(resolution_level = 1),countIf(resolution_level = 2),countIf(resolution_level = 3)] AS resolution_levels\n  FROM\n  (\n    SELECT\n      repo_id,\n      argMax(repo_name, created_at) AS repo_name,\n      org_id,\n      argMax(org_login, created_at) AS org_login,\n      issue_number,\n      argMaxIf(action, created_at, action IN ('opened', 'closed' , 'reopened')) AS last_action,\n      argMax(issue_created_at,created_at) AS opened_at,\n      maxIf(created_at, action = 'closed') AS closed_at,\n      dateDiff('day', opened_at, closed_at) AS resolution_duration,\n      multiIf(resolution_duration <= 3, 0,resolution_duration <= 7, 1,resolution_duration <= 15, 2, 3) AS resolution_level\n    FROM gh_events\n    WHERE type = 'IssuesEvent' AND (org_id IN [1342004])\n    GROUP BY repo_id, org_id, issue_number\n    HAVING opened_at >= toDate('2015-1-1') AND opened_at < toDate('2017-1-1') AND last_action='closed'\n  )\n  GROUP BY id, time\n  \n)\nGROUP BY id\nORDER BY avg[-1] DESC\n    LIMIT 3",
+  "modifiedOption": {
+    "orgIds": [
+      1342004
+    ],
+    "startYear": 2015,
+    "endYear": 2016,
+    "startMonth": 1,
+    "endMonth": 12,
+    "order": "DESC",
+    "limit": 3,
+    "limitOption": "all",
+    "groupTimeRange": "quarter",
+    "groupBy": "org"
+  },
+  "issue_resolution_duration_desc_3_all_org_quarter": [
+    {
+      "id": "1342004",
+      "name": "google",
+      "avg": [
+        381.69,
+        254.57,
+        203.36,
+        150.18,
+        202.23,
+        173.3,
+        169.18,
+        178.59
+      ],
+      "levels": [
+        [
+          "662",
+          "145",
+          "123",
+          "1264"
+        ],
+        [
+          "986",
+          "246",
+          "213",
+          "1492"
+        ],
+        [
+          "1291",
+          "309",
+          "237",
+          "1711"
+        ],
+        [
+          "1608",
+          "188",
+          "151",
+          "1131"
+        ],
+        [
+          "1072",
+          "217",
+          "179",
+          "1253"
+        ],
+        [
+          "1109",
+          "215",
+          "189",
+          "1400"
+        ],
+        [
+          "1126",
+          "245",
+          "248",
+          "1418"
+        ],
+        [
+          "975",
+          "196",
+          "180",
+          "1265"
+        ]
+      ],
+      "quantile_0": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "quantile_1": [
+        2,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "quantile_2": [
+        37.5,
+        18,
+        13,
+        3,
+        10,
+        13,
+        12,
+        13
+      ],
+      "quantile_3": [
+        506.75,
+        233,
+        180,
+        79.75,
+        171,
+        126,
+        162,
+        132
+      ],
+      "quantile_4": [
+        3061,
+        2997,
+        2932,
+        2859,
+        2662,
+        2594,
+        2411,
+        2466
+      ]
+    }
+  ]
+}
