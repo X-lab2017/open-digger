@@ -123,7 +123,20 @@ const delay = async (ms) => {
             validate_data(openDigger.metric.chaoss.inactiveContributors,'inactive_contributors',inactive_contributors_file_name);
             const change_requests_acceptance_ratio_file_name = `change_requests_acceptance_ratio_${order}_${limit}_${limitOption}_${groupBy}_${groupTimeRange}`.toLowerCase();
             validate_data(openDigger.metric.chaoss.changeRequestsAcceptanceRatio,'change_requests_acceptance_ratio',change_requests_acceptance_ratio_file_name);
-            
+            const repo_activity_file_name = `repo_activity_${order}_${limit}_${limitOption}_${groupBy}_${groupTimeRange}`.toLowerCase();
+            validate_data(openDigger.index.activity.getRepoActivity,'repo_activity',repo_activity_file_name);
+            const user_activity_file_name = `user_activity_${order}_${limit}_${limitOption}_${groupBy}_${groupTimeRange}`.toLowerCase();
+            validate_data(openDigger.index.activity.getUserActivity,'user_activity',user_activity_file_name);
+            const repo_openrank_file_name = `repo_openrank_${order}_${limit}_${limitOption}_${groupBy}_${groupTimeRange}`.toLowerCase();
+            validate_data(openDigger.index.openrank.getRepoOpenrank,'repo_openrank',repo_openrank_file_name);
+            const user_openrank_file_name = `user_openrank_${order}_${limit}_${limitOption}_${groupBy}_${groupTimeRange}`.toLowerCase();
+            validate_data(openDigger.index.openrank.getUserOpenrank,'user_openrank',user_openrank_file_name);
+            const repo_participants_file_name = `repo_participants_${order}_${limit}_${limitOption}_${groupBy}_${groupTimeRange}`.toLowerCase();
+            validate_data(openDigger.metric.xlab.repoParticipants,'repo_participants',repo_participants_file_name);
+            const repo_stars_file_name = `repo_stars_${order}_${limit}_${limitOption}_${groupBy}_${groupTimeRange}`.toLowerCase();
+            validate_data(openDigger.metric.xlab.repoStars,'repo_stars',repo_stars_file_name);
+            const attention_file_name = `attention_${order}_${limit}_${limitOption}_${groupBy}_${groupTimeRange}`.toLowerCase();
+            validate_data(openDigger.index.attention.getAttention,'attention',attention_file_name);
           }
         }
       }
