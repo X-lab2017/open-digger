@@ -1,5 +1,5 @@
 from itertools import groupby
-import db.clickhouse as clickhouse
+import db.clickhouse_wrapper as clickhouse_wrapper
 from numpy import append
 from label_data_utils import getGitHubData, getLabelData
 import datetime
@@ -91,13 +91,13 @@ def getRepoWhereClauseForClickhouse(config):
     if config.get('repoNames'):
       # find id first
       sql = 'SELECT DISTINCT(repo_id) FROM opensource.gh_events WHERE repo_name IN {}'.format(config.get('repoNames'))
-      ids = clickhouse.query(sql)
+      ids = clickhouse_wrapper.query(sql)
       repoWhereClauseArray.append('repo_id IN {}'.format(list(map(lambda i: i[0], ids))))
     if config.get('orgIds'): repoWhereClauseArray.append('org_id IN {}'.format(config.get('orgIds')))
     if config.get('orgNames'):
       # find id first
       sql = 'SELECT DISTINCT(org_id) FROM opensource.gh_events WHERE org_login IN {}'.format(config.get('orgNames'))
-      ids = clickhouse.query(sql)
+      ids = clickhouse_wrapper.query(sql)
       repoWhereClauseArray.append('org_id IN {}'.format(list(map(lambda i: i[0], ids))))
     if config.get('labelIntersect'):
         return '(' + ' AND '.join(list(filter(lambda i: i != None, list(map(process, config.get('labelIntersect')))))) + ')'
@@ -137,7 +137,7 @@ def getUserWhereClauseForClickhouse(config):
     if config.get('userLogins'):
       # get id first
       sql = 'SELECT DISTINCT(actor_id) FROM opensource.gh_events WHERE actor_login IN {}'.format(config.get('userLogins'))
-      ids = clickhouse.query(sql)
+      ids = clickhouse_wrapper.query(sql)
       userWhereClauseArray.append('actor_id IN {}'.format(list(map(lambda i: i[0], ids))))
     if config.get('labelIntersect'):
         return '(' + ' AND '.join(list(filter(lambda i: i != None, list(map(process, config.get('labelIntersect')))))) + ')'
@@ -273,9 +273,9 @@ def getGroupArrayInsertAtClauseForClickhouse(config, option):
         position = f"toUInt32(dateDiff('{config['groupTimeRange']}', {start_time}, time){'-1' if option.get('positionByEndTime') else ''})"
     
     return f'''groupArrayInsertAt(
-        {default_value}, 
-        {total_length})({group_key}, 
-        {position}) AS {option['key']}'''
+            {default_value}, 
+            {total_length})({group_key}, 
+            {position}) AS {option['key']}'''
 
 def getGroupTimeAndIdClauseForClickhouse(config, type = 'repo', timeCol = 'created_at') -> str:
     """_summary_
