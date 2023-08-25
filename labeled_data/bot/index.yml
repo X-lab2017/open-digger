@@ -594,3 +594,17 @@ data:
     - 23041403 # user:homeassistant
     - 15013452 # user:hiteamtest-system
     - 16115905 # user:RobertoGarrido
+    - 122034307 # user:stacenko-developer
+    - 123078419 # user:sast-qa
+    - 133765389 # user:sast-old-platform-qa
+    - 81352262 # user:cdk8s-automation
+    - 95175571 # user:NOUIY
+    - 59378654 # user:SkyratBot
+    - 45807407 # user:jellyfin-bot
+    - 121793512 # user:Khepdup
+    - 54916045 # user:ci-tester-lunarg
+    - 104583016 # user:aws-aemilia-cmh
+    - 13233178 # user:alibuild
+    - 10821961 # user:mattermost-build
+    - 133978099 # user:Auto-GPT-Bot
+    - 104586662 # user:aws-aemilia-iad
