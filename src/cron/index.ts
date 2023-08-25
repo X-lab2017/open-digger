@@ -25,6 +25,7 @@ export interface Task {
       return;
     }
     if (task.enable) {
+      console.log(`Enable task: ${taskFile}`);
       cron.schedule(task.cron, t => {
         return new Promise<void>(async resolve => {
           try {

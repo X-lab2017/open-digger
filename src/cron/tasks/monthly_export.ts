@@ -12,7 +12,7 @@ import { getLabelData } from '../../label_data_utils';
 
 const task: Task = {
   cron: '0 0 5 * *',
-  enable: true,
+  enable: false,
   immediate: false,
   callback: async () => {
 
@@ -271,29 +271,28 @@ const task: Task = {
     };
     await exportMetrics();
 
-    // export owner meta data
     const updateMetaData = (path: string, data: any) => {
       try {
         let outputData = data;
-        if (existsSync(path)) {
-          const originalData = JSON.parse(readFileSync(path).toString());
-          outputData = {
-            ...originalData,
-            ...data,
-          };
-        }
+        if (!existsSync(path)) return
+        const originalData = JSON.parse(readFileSync(path).toString());
+        outputData = {
+          ...originalData,
+          ...data,
+        };
         writeFileSync(path, JSON.stringify(outputData));
       } catch (e: any) {
         console.log(`Exception on updating meta data, path=${path}, data=${data}, e=${e.message}`);
       }
     };
 
+    // export owner meta data
     const exportOwnerMeta = async () => {
       const sql = `SELECT splitByChar('/', repo_name)[1] AS owner, groupArray(repo_name), groupArray(id), any(org_id) FROM ${exportRepoTableName} GROUP BY owner`;
       await queryStream(sql, row => {
         const [owner, repos, ids, orgId] = row;
         updateMetaData(join(exportBasePath, owner, 'meta.json'), {
-          updatedAt: date.getTime(),
+          updatedAt: new Date().getTime(),
           id: orgId === '0' ? undefined : parseInt(orgId),
           type: orgId === '0' ? 'user' : 'org',
           repos: repos.map((name, index) => {
@@ -403,6 +402,32 @@ ORDER BY openrank DESC`;
       console.log('Export label data done.');
     };
     await exportLabelData();
+
+    const exportUserInfo = async () => {
+      let processedCount = 0;
+      const userInfoQuery = `SELECT b.actor_login, a.location, a.bio, a.name, a.company FROM
+(SELECT id, location, bio, name, company FROM gh_user_info WHERE status='normal')a
+LEFT JOIN
+(SELECT id, actor_login FROM gh_export_user)b
+ON a.id = b.id`;
+      await queryStream(userInfoQuery, row => {
+        const [login, location, bio, name, company] = row;
+        updateMetaData(join(exportBasePath, login, 'meta.json'), {
+          info: {
+            location: location ?? undefined,
+            bio: bio ?? undefined,
+            name: name ?? undefined,
+            company: company ?? undefined,
+          }
+        });
+        processedCount++;
+        if (processedCount % 10000 === 0) {
+          console.log(`${processedCount} user info has been exported.`);
+        }
+      });
+      console.log('Export user info done');
+    }
+    await exportUserInfo();
   }
 };
 

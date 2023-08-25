@@ -6,7 +6,7 @@ import { rankData } from '../../utils';
 
 const task: Task = {
   cron: '0 0 15 * *',    // runs on the 15th day of every month at 00:00
-  enable: true,
+  enable: false,
   immediate: false,
   callback: async () => {
 
