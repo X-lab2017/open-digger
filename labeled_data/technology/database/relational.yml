@@ -105,6 +105,7 @@ data:
     - 371172777 # repo:kelindar/column
     - 199466858 # repo:kkuchta/tabdb
     - 7502247 # repo:lealone/Lealone
+    - 543276238 # repo:libsql/libsql
     - 509396909 # repo:lingo-db/lingo-db
     - 23013460 # repo:lsst/qserv
     - 61153677 # repo:m3db/m3

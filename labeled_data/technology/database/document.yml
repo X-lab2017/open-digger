@@ -93,6 +93,7 @@ data:
     - 295745510 # repo:small-tech/jsdb
     - 436658287 # repo:surrealdb/surrealdb
     - 22761491 # repo:symisc/unqlite
+    - 911980 # repo:tarantool/tarantool
     - 3920536 # repo:teamdev/densodb
     - 11654790 # repo:techfort/LokiJS
     - 198466472 # repo:terminusdb/terminusdb
