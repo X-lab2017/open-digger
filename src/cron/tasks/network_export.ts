@@ -8,7 +8,7 @@ import { existsSync, mkdirSync, writeFileSync } from 'fs';
 
 const task: Task = {
   cron: '0 0 6 * *',
-  enable: true,
+  enable: false,
   immediate: false,
   callback: async () => {
 

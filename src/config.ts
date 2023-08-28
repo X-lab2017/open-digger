@@ -34,6 +34,14 @@ let config = {
     path: '',
     needInit: true,
   },
+  github: {
+    tokens: [],
+  },
+  google: {
+    map: {
+      key: '',
+    },
+  },
 };
 
 export default async () => {
@@ -43,7 +51,7 @@ export default async () => {
       await import('./local_config').then(localConfig => {
         config = merge(config, localConfig.default);
       });
-    } catch {}
+    } catch { }
   }
   return config;
 }
