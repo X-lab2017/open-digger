@@ -37,7 +37,7 @@
     "ijavascript-plotly": "0.0.1",
     "js-yaml": "^4.1.0",
     "lodash": "^4.17.21",
-    "neo4j-driver": "^4.4.1",
+    "neo4j-driver": "^4.4.11",
     "node-cron": "^3.0.0",
     "p-wait-for": "^3.1.0",
     "parse-neo4j": "^0.6.11",

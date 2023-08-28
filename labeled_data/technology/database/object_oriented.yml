@@ -28,6 +28,7 @@ data:
     - 351806852 # repo:neondatabase/neon
     - 79901405 # repo:objectbox/objectbox-java
     - 7083240 # repo:orientechnologies/orientdb
+    - 432844875 # repo:orioledb/orioledb
     - 37285717 # repo:pilgr/Paper
     - 14702444 # repo:pipelinedb/pipelinedb
     - 927442 # repo:postgres/postgres

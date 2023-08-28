@@ -51,4 +51,3 @@ class openDigger(object):
             for index, v in enumerate(values):
                 resultMap.get(nameGetter(v)).append(None if valueGetter(v)[i] == 0 else index + 1)
         return list(map(lambda e: {'name': e[0], 'values': e[1],}, resultMap.items()))
-    

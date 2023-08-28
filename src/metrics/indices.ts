@@ -141,7 +141,7 @@ FROM
     SUM(open_pull) AS open_pull,
     SUM(review_comment) AS review_comment,
     SUM(merged_pull) AS merged_pull
-    ${developerDetail === true ? ',arraySort(x -> -tupleElement(x, 2), groupArray((actor_login, ROUND(activity, 2)))) AS details' : ''}
+    ${developerDetail === true ? ', arraySlice(arraySort(x -> -tupleElement(x, 2), groupArray((actor_login, ROUND(activity, 2)))), 1, 100) AS details' : ''}
   FROM
   (
     SELECT
@@ -178,39 +178,46 @@ ${getOutterOrderAndLimit(config, 'activity')}`;
   });
 }
 
-export const getUserActivity = async (config: QueryConfig, withBot: boolean = true) => {
+interface UserActivityOption {
+  repoDetail: boolean;
+}
+export const getUserActivity = async (config: QueryConfig<UserActivityOption>, withBot: boolean = true) => {
   config = getMergedConfig(config);
   const whereClauses: string[] = ["type IN ('IssuesEvent', 'IssueCommentEvent', 'PullRequestEvent', 'PullRequestReviewCommentEvent')"]; // specify types to reduce memory usage and calculation
   const userWhereClause = await getUserWhereClauseForClickhouse(config);
   if (userWhereClause) whereClauses.push(userWhereClause);
   whereClauses.push(getTimeRangeWhereClauseForClickhouse(config));
+  const repoDetail = config.options?.repoDetail;
 
   const sql = `
 SELECT
   id,
   argMax(name, time) AS name,
-  ${getGroupArrayInsertAtClauseForClickhouse(config, { key: 'activity' })},
+  ${getGroupArrayInsertAtClauseForClickhouse(config, { key: 'activity', value: 'agg_activity' })},
   ${getGroupArrayInsertAtClauseForClickhouse(config, { key: 'issue_comment' })},
   ${getGroupArrayInsertAtClauseForClickhouse(config, { key: 'open_issue' })},
   ${getGroupArrayInsertAtClauseForClickhouse(config, { key: 'open_pull' })},
   ${getGroupArrayInsertAtClauseForClickhouse(config, { key: 'review_comment' })},
   ${getGroupArrayInsertAtClauseForClickhouse(config, { key: 'merged_pull' })}
+  ${repoDetail === true ? ',' + getGroupArrayInsertAtClauseForClickhouse(config, { key: 'details', noPrecision: true, defaultValue: '[]' }) : ''}
 FROM
 (
   SELECT
     ${getGroupTimeClauseForClickhouse(config, 'month')},
     ${getGroupIdClauseForClickhouse(config, 'user')},
-    ROUND(SUM(activity), 2) AS activity,
+    ROUND(SUM(activity), 2) AS agg_activity,
     SUM(issue_comment) AS issue_comment,
     SUM(open_issue) AS open_issue,
     SUM(open_pull) AS open_pull,
     SUM(review_comment) AS review_comment,
     SUM(merged_pull) AS merged_pull
+    ${repoDetail === true ? ', arraySlice(arraySort(x -> -tupleElement(x, 2), groupArray((repo_name, ROUND(activity, 2)))), 1, 100) AS details' : ''}
   FROM
   (
     SELECT
       toStartOfMonth(created_at) AS month,
       repo_id,
+      argMax(repo_name, created_at) AS repo_name,
       ${basicActivitySqlComponent}
     FROM gh_events
     WHERE ${whereClauses.join(' AND ')}
@@ -218,14 +225,14 @@ FROM
     HAVING activity > 0 ${withBot ? '' : `AND actor_login NOT LIKE '%[bot]'`}
   )
   GROUP BY id, time
-  ${getInnerOrderAndLimit(config, 'activity')}
+  ${getInnerOrderAndLimit(config, 'agg_activity')}
 )
 GROUP BY id
 ${getOutterOrderAndLimit(config, 'activity')}`;
 
   const result: any = await clickhouse.query(sql);
   return result.map(row => {
-    const [id, name, activity, issue_comment, open_issue, open_pull, review_comment, merged_pull] = row;
+    const [id, name, activity, issue_comment, open_issue, open_pull, review_comment, merged_pull, details] = row;
     return {
       id,
       name,
@@ -235,6 +242,7 @@ ${getOutterOrderAndLimit(config, 'activity')}`;
       open_pull,
       review_comment,
       merged_pull,
+      details,
     }
   });
 }

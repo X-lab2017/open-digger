@@ -9,6 +9,7 @@ data:
     - 45098765 # repo:PureSolTechnologies/DuctileDB
     - 84458512 # repo:RedisGraph/RedisGraph
     - 22475123 # repo:amark/gun
+    - 276293034 # repo:apache/age
     - 2282376 # repo:apache/giraph
     - 141376301 # repo:apache/incubator-hugegraph
     - 30449481 # repo:apache/tinkerpop
@@ -20,6 +21,7 @@ data:
     - 41946572 # repo:degdb/degdb
     - 41349039 # repo:dgraph-io/dgraph
     - 402209532 # repo:dyedgreen/cqlite
+    - 668673665 # repo:falkordb/falkordb
     - 305513242 # repo:fluree/db
     - 47973088 # repo:gchq/Gaffer
     - 38727503 # repo:hypergraphdb/hypergraphdb

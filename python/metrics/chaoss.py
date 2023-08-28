@@ -127,7 +127,6 @@ class Chaoss():
         repoWhereClause = getRepoWhereClauseForClickhouse(config)
         if repoWhereClause != None: whereClauses.append(repoWhereClause)
         whereClauses.append(getTimeRangeWhereClauseForClickhouse(config))
-
         rst = []
         inner_sql = Chaoss.__bulidInnnerCountSql(config, whereClauses)
 
@@ -215,7 +214,6 @@ class Chaoss():
         else:
             botFilterHavingClause = f"HAVING {authorFieldName} NOT LIKE '%[bot]'" 
         
-
         rst = []
         inner_sql = f'''
             SELECT
@@ -271,12 +269,12 @@ class Chaoss():
     'unit': 'week' #'week' | 'day' | 'hour' | 'minute'
     }
 
+
     def __chaossResolutionDuration(config, type, mode) -> (List,str):
         """_summary_
 
         Args:
             config (QueryConfig<IssueResolutionDurationOptions>): _description_
-
         """
         config = getMergedConfig(config)
         whereClauses = ["type = 'IssuesEvent'"] if type == 'issue' else ["type = 'PullRequestEvent'"]
