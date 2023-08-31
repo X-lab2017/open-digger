@@ -1,0 +1,9 @@
+name: Artificial Intelligence - video
+type: Tech-1
+data:
+  github_repo:
+    - 342728683 # repo:replicate/cog
+    - 533451541 # repo:nateraw/stable-diffusion-videos
+    - 594096901 # repo:lucidrains/musiclm-pytorch
+    - 6724235 # repo:Cortexelus/dadabots
+    - 251074388 # repo:AbhilashPal/MuseNet

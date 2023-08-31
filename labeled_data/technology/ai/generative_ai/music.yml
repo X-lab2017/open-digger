@@ -1,0 +1,9 @@
+name: Artificial Intelligence - music
+type: Tech-1
+data:
+  github_repo:
+    - 496363093 # repo:Harmonai-org/sample-generator
+    - 553119108 # repo:MubertAI/Mubert-Text-to-Music
+    - 594096901 # repo:lucidrains/musiclm-pytorch
+    - 6724235 # repo:Cortexelus/dadabots
+    - 251074388 # repo:AbhilashPal/MuseNet

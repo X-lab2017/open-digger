@@ -1,0 +1,24 @@
+name: Artificial Intelligence - speech
+type: Tech-1
+data:
+  github_repo:
+    - 619143361 # repo:elevenlabs/elevenlabs-python
+    - 338338954 # repo:resemble-ai/resemble-alexa
+    - 576069143 # repo:ZohaibAhmed/ChatGPT-Voice
+    - 552264768 # repo:babysplly/Wellsaidlabs
+    - 265612440 # repo:coqui-ai/TTS
+    - 584022883 # repo:yacineMTB/scribepod
+    - 672176742 # repo:Plachtaa/VALL-E-X
+    - 452939314 # repo:neonbjb/tortoise-tts
+    - 624994625 # repo:suno-ai/bark
+    - 155220641 # repo:huggingface/transformers
+    - 59299524 # repo:MycroftAI/mycroft-core
+    - 90392762 # repo:common-voice/common-voice
+    - 23708040 # repo:pandorabots/rosie
+    - 155491258 # repo:singnet/dev-portal
+    - 70908208 # repo:RasaHQ/rasa
+    - 404457914 # repo:uberduck-ai/uberduck-ml-dev
+    - 21467110 # repo:explosion/spaCy
+    - 92691776 # repo:jovotech/jovo-framework
+    - 102973646 # repo:fastai/fastai
+    - 843222 # repo:scikit-learn/scikit-learn
