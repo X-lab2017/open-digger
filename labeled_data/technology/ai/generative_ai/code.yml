@@ -1,0 +1,16 @@
+name: Artificial Intelligence - code
+type: Tech-1
+data:
+  github_repo:
+    - 151494178 # repo:replit/polygott
+    - 323439605 # repo:replit/kaboom
+    - 228441470 # repo:replit/clui
+    - 197269443 # repo:GhostManager/Ghostwriter
+    - 156332497 # repo:codota/TabNine
+    - 441005943 # repo:mintlify/writer
+    - 551056581 # repo:Debuild-co/CodeFormer
+    - 549501956 # repo:Debuild-co/Real-ESRGAN
+    - 660551251 # repo:geekan/MetaGPT
+    - 639095114 # repo:ricklamers/gpt-code-ui
+    - 625612711 # repo:ravenscroftj/turbopilot
+    - 662766482 # repo:Codium-ai/pr-agent
