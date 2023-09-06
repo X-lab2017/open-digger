@@ -1,0 +1,6 @@
+name: Artificial Intelligence - video
+type: Tech-1
+data:
+  github_repo:
+    - 342728683 # repo:replicate/cog
+    - 533451541 # repo:nateraw/stable-diffusion-videos
