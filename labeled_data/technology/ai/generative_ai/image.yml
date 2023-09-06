@@ -1,0 +1,11 @@
+name: Artificial Intelligence - image
+type: Tech-1
+data:
+  github_repo:
+    - 547653294 # repo:midjourney/transformers
+    - 569927055 # repo:Stability-AI/stablediffusion
+    - 631081758 # repo:Stability-AI/StableStudio
+    - 656933936 # repo:Stability-AI/generative-models
+    - 625876964 # repo:open-mmlab/playground
+    - 612427246 # repo:tatsu-lab/stanford_alpaca
+    - 642323624 # repo:XingangPan/DragGAN
