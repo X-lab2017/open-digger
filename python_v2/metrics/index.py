@@ -8,7 +8,8 @@ from .basic import QueryConfig, \
                   getUserWhereClauseForClickhouse,\
                   getTimeRangeWhereClauseForClickhouse,\
                   getGroupArrayInsertAtClauseForClickhouse,\
-                  getGroupTimeAndIdClauseForClickhouse
+                  getGroupTimeClauseForClickhouse,\
+                  getGroupIdClauseForClickhouse
 from label_data_utils import getLabelData
 from db.neo4j_wrapper import Neo4jWrapper
 from db.clickhouse_wrapper import ClickhouseWrapper
@@ -102,6 +103,7 @@ class Index():
                 ) + \
     "SELECT \
         {}, \
+        {}, \
         ROUND(SUM(activity), 2) AS activity, \
         SUM(issue_comment) AS issue_comment, \
         SUM(open_issue) AS open_issue, \
@@ -109,7 +111,7 @@ class Index():
         SUM(review_comment) AS review_comment, \
         SUM(merged_pull) AS merged_pull \
         FROM \
-        (".format(getGroupTimeAndIdClauseForClickhouse(config, 'repo', 'month')) + \
+        (".format(getGroupTimeClauseForClickhouse(config, 'month'), getGroupIdClauseForClickhouse(config, 'repo', 'month')) + \
         "SELECT \
             toStartOfMonth(created_at) AS month, \
             repo_id, argMax(repo_name, created_at) AS repo_name, \
@@ -176,6 +178,7 @@ class Index():
             ) + \
     "SELECT \
         {}, \
+        {}, \
         ROUND(SUM(activity), 2) AS activity, \
         SUM(issue_comment) AS issue_comment, \
         SUM(open_issue) AS open_issue, \
@@ -183,7 +186,7 @@ class Index():
         SUM(review_comment) AS review_comment, \
         SUM(merged_pull) AS merged_pull \
     FROM \
-    (".format(getGroupTimeAndIdClauseForClickhouse(config, 'actor', 'month')) + \
+    (".format(getGroupTimeClauseForClickhouse(config, 'month'), getGroupIdClauseForClickhouse(config, 'actor', 'month')) + \
         "SELECT \
         toStartOfMonth(created_at) AS month, \
         repo_id, \
@@ -246,6 +249,7 @@ class Index():
         ('.format(getGroupArrayInsertAtClauseForClickhouse(config, { 'key': 'attention' })) + \
         'SELECT \
             {}, \
+            {}, \
             countIf(type=\'WatchEvent\') AS stars, \
             countIf(type=\'ForkEvent\') AS forks, \
             stars + 2 * forks AS attention \
@@ -256,7 +260,7 @@ class Index():
         ) \
         GROUP BY id \
         ORDER BY attention[-1] {} \
-        FORMAT JSONCompact'.format(getGroupTimeAndIdClauseForClickhouse(config), ' AND '.join(whereClauses), 
+        FORMAT JSONCompact'.format(getGroupTimeClauseForClickhouse(config), getGroupIdClauseForClickhouse(config), ' AND '.join(whereClauses), 
                                 'ORDER BY attention DESC LIMIT {} BY time'.format(config.get('limit')) if config.get('limit') > 0 else '', 
                                 config.get('order'))
 

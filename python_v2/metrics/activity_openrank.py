@@ -9,9 +9,9 @@ from basic import QueryConfig, \
                   getTimeRangeWhereClauseForClickhouse,\
                   getGroupArrayInsertAtClauseForClickhouse,\
                   getGroupTimeAndIdClauseForClickhouse
-import db.neo4j_driver as neo4j_driver
+import db.neo4j_wrapper as neo4j_driver
 from label_data_utils import getLabelData
-import db.clickhouse as clickhouse
+import db.clickhouse_wrapper as clickhouse
 from functools import cmp_to_key
 import numpy as np
 

@@ -277,7 +277,22 @@ def getGroupArrayInsertAtClauseForClickhouse(config, option):
             {total_length})({group_key}, 
             {position}) AS {option['key']}'''
 
-def getGroupTimeAndIdClauseForClickhouse(config, type = 'repo', timeCol = 'created_at') -> str:
+def getGroupTimeClauseForClickhouse(config, timeCol = 'created_at') -> str:
+    """_summary_
+    Args:
+        config (_type_): _description_
+        timeCol (str, optional): _description_. Defaults to 'created_at'.
+
+    Returns:
+        str: _description_
+    """
+    groupEle = '1' # no time range, aggregate all data to a single value
+    if config.get('groupTimeRange') == 'month': groupEle = 'toStartOfMonth({})'.format(timeCol)
+    elif config.get('groupTimeRange') == 'quarter': groupEle = 'toStartOfQuarter({})'.format(timeCol)
+    elif config.get('groupTimeRange') == 'year': groupEle = 'toStartOfYear({})'.format(timeCol)
+    return '{} AS time'.format(groupEle)
+
+def getGroupIdClauseForClickhouse(config, type = 'repo', timeCol = 'created_at') -> str:
     """_summary_
     Args:
         config (_type_): _description_
@@ -287,23 +302,15 @@ def getGroupTimeAndIdClauseForClickhouse(config, type = 'repo', timeCol = 'creat
     Returns:
         str: _description_
     """
-    def get_groupEle():
-        groupEle = '1' # no time range, aggregate all data to a single value
-        if config.get('groupTimeRange') == 'month': groupEle = 'toStartOfMonth({})'.format(timeCol)
-        elif config.get('groupTimeRange') == 'quarter': groupEle = 'toStartOfQuarter({})'.format(timeCol)
-        elif config.get('groupTimeRange') == 'year': groupEle = 'toStartOfYear({})'.format(timeCol)
-        return groupEle
-    def group_by():
-        if config.get('groupBy') == None:  #group by repo'
-            if type == 'repo':
-                return 'repo_id AS id, argMax(repo_name, time) AS name'
-            else:
-                return 'actor_id AS id, argMax(actor_login, time) AS name'
-        elif config.get('groupBy') == 'org':
-            return 'org_id AS id, argMax(org_login, time) AS name'
-        else :  # group by label
-            return '{} AS id, id AS name'.format(getLabelGroupConditionClauseForClickhouse(config))
-    return '{} AS time, {}'.format(get_groupEle(), group_by())
+    if config.get('groupBy') == None:  #group by repo'
+        if type == 'repo':
+            return 'repo_id AS id, argMax(repo_name, time) AS name'
+        else:
+            return 'actor_id AS id, argMax(actor_login, time) AS name'
+    elif config.get('groupBy') == 'org':
+        return 'org_id AS id, argMax(org_login, time) AS name'
+    else :  # group by label
+        return '{} AS id, id AS name'.format(getLabelGroupConditionClauseForClickhouse(config))        
 
 def getInnerOrderAndLimit(config, col, index=None):
     if config.get('limitOption') == 'each' and config.get('limit', 0) > 0:
