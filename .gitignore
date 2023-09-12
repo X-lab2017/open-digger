@@ -18,8 +18,12 @@ node_modules
 sample_data/data
 
 # Ignore python
-*/**/__init__.py
 */**/__pycache__
 python/workspace/*
 python/workspace.py
 python/local_config.py
+
+# Ignore python_v2
+python_v2/workspace/*
+python_v2/workspace.py
+python_v2/local_config.py
