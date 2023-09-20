@@ -1,8 +1,9 @@
 name: Artificial Intelligence
 type: Tech-0
 data:
-  label: 
+  label:
     - generative_ai
+    - large_language_model
   github_repo:
     - 45717250 # tensorflow/tensorflow
     - 164642888 # repo:kimiyoung/transformer-xl

@@ -1,0 +1,16 @@
+name: Application
+type: Tech-1
+data:
+  github_repo:
+    - 575340621 # repo:lencx/chatgpt
+    - 615882673 # repo:lm-sys/fastchat
+    - 612781022 # repo:getcursor/cursor
+    - 537603333 # repo:openai/whisper
+    - 612640604 # repo:mckaywrigley/chatbot-ui
+    - 610260322 # repo:bin-huang/chatbox
+    - 615113749 # repo:mayooear/gpt4-pdf-chatbot-langchain
+    - 621808642 # repo:jushbjj/mr.-ranedeer-ai-tutor
+    - 621799276 # repo:chatchat-space/Langchain-Chatchat
+    - 640079149 # repo:StanGirard/quivr
+    - 624249899 # repo:idea-research/grounded-segment-anything
+    - 614719201 # repo:aigc-audio/audiogpt
