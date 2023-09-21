@@ -1,0 +1,27 @@
+name: Large Language Model
+type: Tech-0
+data:
+  github_repo:
+    - 612427246 # repo:atatsu-lab/stanford_alpaca
+    - 614803132 # repo:antimatter15/alpaca.cpp
+    - 574116196 # repo:tloen/alpaca-lora
+    - 155220641 # repo:huggingface/transformers
+    - 573819845 # repo:acheong08/chatgpt
+    - 154747577 # google-research/bert
+    - 170067246 # repo:openai/gpt-2
+    - 264870386 # repo:openai/gpt-3
+    - 176982014 # NVIDIA/Megatron-LM
+    - 423593369 # google-research/t5x
+    - 158606045 # remoteinterview/zero
+    - 398647982 # google-research/FLAN
+    - 437985376 # bigscience-workshop/t-zero
+    - 630292680 # 0hq/WebGPT
+    - 120541397 # openai/retro
+    - 451691015 # openai/following-instructions-human-feedback
+    - 488004650 # facebookresearch/metaseq
+    - 330044683 # google/BIG-bench
+    - 521021013 # THUDM/GLM-130B
+    - 432968463 # stanford-crfm/helm
+    - 601538369 # facebookresearch/llama
+    - 198350484 # microsoft/unilm
+    - 441778458 # EleutherAI/pythia

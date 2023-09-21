@@ -1,26 +1,19 @@
 name: Artificial Intelligence - Generative Artificial Intelligence
 type: Tech-1
 data:
+  label:
+    - model
+    - tool
+    - application
   github_repo:
-    - 575340621 # repo:lencx/chatgpt
-    - 527591471 # repo:automatic1111/stable-diffusion-webui
     - 573819845 # repo:acheong08/chatgpt
     - 582822129 # repo:karpathy/nanogpt
-    - 574116196 # repo:wong2/chatgpt-google-extension
-    - 422274596 # repo:hpcaitech/colossalai
     - 595893961 # repo:lllyasviel/controlnet
     - 574965758 # repo:fuergaosi233/wechat-chatgpt
     - 573631261 # repo:transitive-bullshit/chatgpt-api
-    - 537603333 # repo:openai/whisper
-    - 552661142 # repo:hwchase17/langchain
-    - 155220641 # repo:huggingface/transformers
-    - 523379232 # repo:compvis/stable-diffusion
-    - 569927055 # repo:stability-ai/stablediffusion
     - 576380523 # repo:lucidrains/palm-rlhf-pytorch
     - 602270517 # repo:fminference/flexgen
-    - 541269386 # repo:ggerganov/whisper.cpp
     - 535509546 # repo:brycedrennan/imaginairy
-    - 601538369 # repo:facebookresearch/llama
     - 288108533 # repo:karpathy/mingpt
     - 560704231 # repo:jerryjliu/gpt_index
     - 575048321 # repo:openai/point-e
@@ -44,21 +37,6 @@ data:
     - 521021013 # repo:THUDM/GLM-130B
     - 244607156 # repo:VinAIResearch/PhoBERT
     - 355059998 # repo:rinnakk/japanese-pretrained-models
-    - 614765452 # repo:significant-gravitas/auto-gpt
-    - 619959033 # repo:nomic-ai/gpt4all
-    - 618058471 # repo:facebookresearch/segment-anything
     - 168799526 # repo:huggingface/pytorch-image-models
-    - 612354784 # repo:ggerganov/llama.cpp
-    - 612427246 # repo:tatsu-lab/stanford_alpaca
-    - 621118467 # repo:microsoft/jarvis
-    - 624681066 # repo:reworkd/agentgpt
-    - 617798408 # repo:openai/chatgpt-retrieval-plugin
-    - 612781022 # repo:getcursor/cursor
-    - 235860204 # repo:microsoft/deepspeed
-    - 628419800 # repo:vision-cair/minigpt-4
-    - 612640604 # repo:mckaywrigley/chatbot-ui
     - 622737738 # repo:yoheinakajima/babyagi
-    - 560704231 # repo:jerryjliu/llama_index
-    - 630023030 # repo:stability-ai/stablelm
-    - 613075789 # repo:cocktailpeanut/dalai
     - 613591358 # repo:tloen/alpaca-lora
