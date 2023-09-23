@@ -1,5 +1,4 @@
-const openDigger = require("../src/open_digger");
-
+const openDigger = require('../src/metrics/index');
 import * as fs from "fs";
 const assert = require("assert");
 import * as _ from "lodash";
@@ -13,7 +12,7 @@ async function validate_data(
   subFileName: string,
   dataKey: string
 ) {
-  const fileName = `../test/testdata/${subFileName}/${dataKey}.json`;
+  const fileName = `../test/testdata1/${subFileName}/${dataKey}.json`;
 
   if (fs.existsSync(fileName)) {
     const jsonData = JSON.parse(fs.readFileSync(fileName).toString());
@@ -87,7 +86,7 @@ describe("Data tests", () => {
                 const issues_new_file_name =
                   `issues_new_${order}_${limit}_${limitOption}_${groupBy}_${groupTimeRange}`.toLowerCase();
                 await validate_data(
-                  openDigger.metric.chaoss.issuesNew,
+                  openDigger.chaossIssuesNew,
                   "issues_new",
                   issues_new_file_name
                 );
@@ -97,7 +96,7 @@ describe("Data tests", () => {
                 const issues_closed_file_name =
                   `issues_closed_${order}_${limit}_${limitOption}_${groupBy}_${groupTimeRange}`.toLowerCase();
                 await validate_data(
-                  openDigger.metric.chaoss.issuesClosed,
+                  openDigger.chaossIssuesClosed,
                   "issues_closed",
                   issues_closed_file_name
                 );
@@ -107,7 +106,7 @@ describe("Data tests", () => {
                 const bus_factor_file_name =
                   `bus_factor_${order}_${limit}_${limitOption}_${groupBy}_${groupTimeRange}`.toLowerCase();
                 await validate_data(
-                  openDigger.metric.chaoss.busFactor,
+                  openDigger.chaossBusFactor,
                   "bus_factor",
                   bus_factor_file_name
                 );
@@ -116,7 +115,7 @@ describe("Data tests", () => {
                 const code_change_commits_file_name =
                   `code_change_commits_${order}_${limit}_${limitOption}_${groupBy}_${groupTimeRange}`.toLowerCase();
                 await validate_data(
-                  openDigger.metric.chaoss.codeChangeCommits,
+                  openDigger.chaossCodeChangeCommits,
                   "code_change_commits",
                   code_change_commits_file_name
                 );
@@ -126,7 +125,7 @@ describe("Data tests", () => {
                 const issues_and_change_request_active_file_name =
                   `issues_and_change_request_active_${order}_${limit}_${limitOption}_${groupBy}_${groupTimeRange}`.toLowerCase();
                 await validate_data(
-                  openDigger.metric.chaoss.issuesAndChangeRequestActive,
+                  openDigger.chaossIssuesAndChangeRequestActive,
                   "issues_and_change_request_active",
                   issues_and_change_request_active_file_name
                 );
@@ -136,7 +135,7 @@ describe("Data tests", () => {
                 const change_requests_accepted_file_name =
                   `change_requests_accepted_${order}_${limit}_${limitOption}_${groupBy}_${groupTimeRange}`.toLowerCase();
                 await validate_data(
-                  openDigger.metric.chaoss.changeRequestsAccepted,
+                  openDigger.chaossChangeRequestsAccepted,
                   "change_requests_accepted",
                   change_requests_accepted_file_name
                 );
@@ -146,7 +145,7 @@ describe("Data tests", () => {
                 const change_requests_declined_file_name =
                   `change_requests_declined_${order}_${limit}_${limitOption}_${groupBy}_${groupTimeRange}`.toLowerCase();
                 await validate_data(
-                  openDigger.metric.chaoss.changeRequestsDeclined,
+                  openDigger.chaossChangeRequestsDeclined,
                   "change_requests_declined",
                   change_requests_declined_file_name
                 );
@@ -155,7 +154,7 @@ describe("Data tests", () => {
                 const code_change_lines_file_name =
                   `code_change_lines_${order}_${limit}_${limitOption}_${groupBy}_${groupTimeRange}`.toLowerCase();
                 await validate_data(
-                  openDigger.metric.chaoss.codeChangeLines,
+                  openDigger.chaossCodeChangeLines,
                   "code_change_lines",
                   code_change_lines_file_name
                 );
@@ -164,7 +163,7 @@ describe("Data tests", () => {
                 const technical_fork_file_name =
                   `technical_fork_${order}_${limit}_${limitOption}_${groupBy}_${groupTimeRange}`.toLowerCase();
                 await validate_data(
-                  openDigger.metric.chaoss.technicalFork,
+                  openDigger.chaossTechnicalFork,
                   "technical_fork",
                   technical_fork_file_name
                 );
@@ -173,7 +172,7 @@ describe("Data tests", () => {
                 const issue_age_file_name =
                   `issue_age_${order}_${limit}_${limitOption}_${groupBy}_${groupTimeRange}`.toLowerCase();
                 await validate_data(
-                  openDigger.metric.chaoss.issueAge,
+                  openDigger.chaossIssueAge,
                   "issue_age",
                   issue_age_file_name
                 );
@@ -182,7 +181,7 @@ describe("Data tests", () => {
                 const change_request_age_file_name =
                   `change_request_age_${order}_${limit}_${limitOption}_${groupBy}_${groupTimeRange}`.toLowerCase();
                 await validate_data(
-                  openDigger.metric.chaoss.changeRequestAge,
+                  openDigger.chaossChangeRequestAge,
                   "change_request_age",
                   change_request_age_file_name
                 );
@@ -191,7 +190,7 @@ describe("Data tests", () => {
                 const repo_active_dates_and_times_file_name =
                   `repo_active_dates_and_times_${order}_${limit}_${limitOption}_${groupBy}_${groupTimeRange}`.toLowerCase();
                 await validate_data(
-                  openDigger.metric.chaoss.repoActiveDatesAndTimes,
+                  openDigger.chaossRepoActiveDatesAndTimes,
                   "repo_active_dates_and_times",
                   repo_active_dates_and_times_file_name
                 );
@@ -200,7 +199,7 @@ describe("Data tests", () => {
                 const user_active_dates_and_times_file_name =
                   `user_active_dates_and_times_${order}_${limit}_${limitOption}_${groupBy}_${groupTimeRange}`.toLowerCase();
                 await validate_data(
-                  openDigger.metric.chaoss.userActiveDatesAndTimes,
+                  openDigger.chaossUserActiveDatesAndTimes,
                   "user_active_dates_and_times",
                   user_active_dates_and_times_file_name
                 );
@@ -209,7 +208,7 @@ describe("Data tests", () => {
                 const issue_resolution_duration_file_name =
                   `issue_resolution_duration_${order}_${limit}_${limitOption}_${groupBy}_${groupTimeRange}`.toLowerCase();
                 await validate_data(
-                  openDigger.metric.chaoss.issueResolutionDuration,
+                  openDigger.chaossIssueResolutionDuration,
                   "issue_resolution_duration",
                   issue_resolution_duration_file_name
                 );
@@ -218,7 +217,7 @@ describe("Data tests", () => {
                 const change_request_resolution_duration_file_name =
                   `change_request_resolution_duration_${order}_${limit}_${limitOption}_${groupBy}_${groupTimeRange}`.toLowerCase();
                 await validate_data(
-                  openDigger.metric.chaoss.changeRequestResolutionDuration,
+                  openDigger.chaossChangeRequestResolutionDuration,
                   "change_request_resolution_duration",
                   change_request_resolution_duration_file_name
                 );
@@ -227,7 +226,7 @@ describe("Data tests", () => {
                 const change_requests_duration_file_name =
                   `change_requests_duration_${order}_${limit}_${limitOption}_${groupBy}_${groupTimeRange}`.toLowerCase();
                 await validate_data(
-                  openDigger.metric.chaoss.changeRequestsDuration,
+                  openDigger.chaossChangeRequestsDuration,
                   "change_requests_duration",
                   change_requests_duration_file_name
                 );
@@ -236,7 +235,7 @@ describe("Data tests", () => {
                 const new_contributors_file_name =
                   `new_contributors_${order}_${limit}_${limitOption}_${groupBy}_${groupTimeRange}`.toLowerCase();
                 await validate_data(
-                  openDigger.metric.chaoss.newContributors,
+                  openDigger.chaossNewContributors,
                   "new_contributors",
                   new_contributors_file_name
                 );
@@ -245,7 +244,7 @@ describe("Data tests", () => {
                 const inactive_contributors_file_name =
                   `inactive_contributors_${order}_${limit}_${limitOption}_${groupBy}_${groupTimeRange}`.toLowerCase();
                 await validate_data(
-                  openDigger.metric.chaoss.inactiveContributors,
+                  openDigger.chaossInactiveContributors,
                   "inactive_contributors",
                   inactive_contributors_file_name
                 );
@@ -254,7 +253,7 @@ describe("Data tests", () => {
                 const change_requests_acceptance_ratio_file_name =
                   `change_requests_acceptance_ratio_${order}_${limit}_${limitOption}_${groupBy}_${groupTimeRange}`.toLowerCase();
                 await validate_data(
-                  openDigger.metric.chaoss.changeRequestsAcceptanceRatio,
+                  openDigger.chaossChangeRequestsAcceptanceRatio,
                   "change_requests_acceptance_ratio",
                   change_requests_acceptance_ratio_file_name
                 );
@@ -263,7 +262,7 @@ describe("Data tests", () => {
                 const repo_activity_file_name =
                   `repo_activity_${order}_${limit}_${limitOption}_${groupBy}_${groupTimeRange}`.toLowerCase();
                 await validate_data(
-                  openDigger.index.activity.getRepoActivity,
+                  openDigger.getRepoActivity,
                   "repo_activity",
                   repo_activity_file_name
                 );
@@ -272,7 +271,7 @@ describe("Data tests", () => {
                 const user_activity_file_name =
                   `user_activity_${order}_${limit}_${limitOption}_${groupBy}_${groupTimeRange}`.toLowerCase();
                 await validate_data(
-                  openDigger.index.activity.getUserActivity,
+                  openDigger.getUserActivity,
                   "user_activity",
                   user_activity_file_name
                 );
@@ -281,7 +280,7 @@ describe("Data tests", () => {
                 const repo_participants_file_name =
                   `repo_participants_${order}_${limit}_${limitOption}_${groupBy}_${groupTimeRange}`.toLowerCase();
                 await validate_data(
-                  openDigger.metric.xlab.repoParticipants,
+                  openDigger.repoParticipants,
                   "repo_participants",
                   repo_participants_file_name
                 );
@@ -290,7 +289,7 @@ describe("Data tests", () => {
                 const repo_stars_file_name =
                   `repo_stars_${order}_${limit}_${limitOption}_${groupBy}_${groupTimeRange}`.toLowerCase();
                 await validate_data(
-                  openDigger.metric.xlab.repoStars,
+                  openDigger.repoStars,
                   "repo_stars",
                   repo_stars_file_name
                 );
@@ -299,7 +298,7 @@ describe("Data tests", () => {
                 const attention_file_name =
                   `attention_${order}_${limit}_${limitOption}_${groupBy}_${groupTimeRange}`.toLowerCase();
                 await validate_data(
-                  openDigger.index.attention.getAttention,
+                  openDigger.getAttention,
                   "attention",
                   attention_file_name
                 );
