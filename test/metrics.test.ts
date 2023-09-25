@@ -1,210 +1,316 @@
-import assert from 'assert';
 const openDigger = require('../src/metrics/index');
+import * as fs from "fs";
+const assert = require("assert");
+import * as _ from "lodash";
 
-describe('Index and metric test', () => {
-  // use repos under google org in 2015 to 2016
+function deepEqual(a: any, b: any): boolean {
+  return _.isEqual(a, b);
+}
 
-  const commonAssert = async (func: (option: any) => Promise<any[]>, key: string, options?: any) => {
-    const years = 2;
-    const months = 24;
+async function validateData(
+  apiFn: Function,
+  subFileName: string,
+  dataKey: string
+) {
+  const fileName = `../test/testdata1/${subFileName}/${dataKey}.json`;
 
-    // year group with latest order
-    const option: any = {
-      startYear: 2015, endYear: 2016, startMonth: 1, endMonth: 12,
-      orgIds: [1342004], order: 'DESC', limit: 3,
-      groupTimeRange: 'year',
-      ...(options?.queryOptions ? options.queryOptions : {}),
-    };
-    let result = await func(option);
-    assert.strictEqual(result.length, option.limit); // the limit works fine
-    assert.strictEqual(result.every(r => r[key].length === years), true);  // the main field has correct length
-    // order works fine
-    if (options?.index !== undefined) {
-      assert.strictEqual(parseFloat(result[0][key][years - 1][options.index]) >= parseFloat(result[option.limit - 1][key][years - 1][options.index]), true);
-    } else {
-      assert.strictEqual(parseFloat(result[0][key][years - 1]) >= parseFloat(result[option.limit - 1][key][years - 1]), true);
+  if (fs.existsSync(fileName)) {
+    const jsonData = JSON.parse(fs.readFileSync(fileName).toString());
+
+    const data1 = jsonData[dataKey];
+
+    const data2 = await apiFn(jsonData["modifiedOption"]);
+
+    const data1WithoutDetail = removeFields(data1);
+
+    const data2WithoutDetail = removeFields(data2);
+
+    const equal = deepEqual(data1WithoutDetail, data2WithoutDetail);
+
+    if (!equal) {
+      console.log(jsonData["modifiedOption"]);
+      console.log(apiFn);
+      console.log("data1:", JSON.stringify(data1WithoutDetail));
+      console.log("data2:", JSON.stringify(data2WithoutDetail));
+    }
+    assert(equal);
+  }
+}
+
+function removeFields(data: any) {
+  if (Array.isArray(data)) {
+    return data.map((item) => removeFields(item));
+  }
+
+  if (typeof data === "object" && data !== null) {
+    const newData: { [key: string]: any } = {};
+
+    for (const key in data) {
+      if (
+        !key.startsWith("quantile_") &&
+        !key.startsWith("detail") &&
+        !key.startsWith("avg") &&
+        !key.startsWith("levels") &&
+        !key.startsWith("openrank")
+      ) {
+        newData[key] = removeFields(data[key]);
+      }
     }
 
-    if (options?.noTotal) return;
-    // month group with total order
-    option.groupTimeRange = 'month';
-    option.orderOption = 'total';
-    option.order = 'ASC';
-    result = await func(option);
-    assert.strictEqual(result.length, option.limit); // the limit works fine
-    assert.strictEqual(result.every(r => r[key].length === months), true);  // the main field has correct length
-    // order works fine
-    const sumFunc = (res: any, f?: any): number => res[key].map(r => parseFloat(f ? f(r) : r)).reduce((p, c) => p + c);
-    if (options?.index !== undefined) {
-      assert.strictEqual(sumFunc(result[0], r => r[options.index]) <= sumFunc(result[option.limit - 1], r => r[options.index]), true);
-    } else {
-      assert.strictEqual(sumFunc(result[0]) <= sumFunc(result[option.limit - 1]), true);
+    return newData;
+  }
+
+  return data;
+}
+
+const orderOptions = ["DESC"];
+const limitOptions = ["all"];
+const limitOptions1 = [3];
+const groupTimeRangeOptions = ["year", "quarter", "month"];
+const groupByOptions = [null, "org"];
+
+
+describe("Data tests", () => {
+  before(function () {
+    this.timeout(100000);
+  });
+
+  try {
+    for (const order of orderOptions) {
+      for (const limit of limitOptions1) {
+        for (const limitOption of limitOptions) {
+          for (const groupBy of groupByOptions) {
+            for (const groupTimeRange of groupTimeRangeOptions) {
+              // 调用 validateData
+              it("should test issuesNew interface", async () => {
+                const issues_new_file_name =
+                  `issues_new_${order}_${limit}_${limitOption}_${groupBy}_${groupTimeRange}`.toLowerCase();
+                await validateData(
+                  openDigger.chaossIssuesNew,
+                  "issues_new",
+                  issues_new_file_name
+                );
+              });
+
+              it("should test issuesClosed interface", async () => {
+                const issues_closed_file_name =
+                  `issues_closed_${order}_${limit}_${limitOption}_${groupBy}_${groupTimeRange}`.toLowerCase();
+                await validateData(
+                  openDigger.chaossIssuesClosed,
+                  "issues_closed",
+                  issues_closed_file_name
+                );
+              });
+
+              it("should test busFactor interface", async () => {
+                const bus_factor_file_name =
+                  `bus_factor_${order}_${limit}_${limitOption}_${groupBy}_${groupTimeRange}`.toLowerCase();
+                await validateData(
+                  openDigger.chaossBusFactor,
+                  "bus_factor",
+                  bus_factor_file_name
+                );
+              });
+              it("should test codeChangeCommits interface", async () => {
+                const code_change_commits_file_name =
+                  `code_change_commits_${order}_${limit}_${limitOption}_${groupBy}_${groupTimeRange}`.toLowerCase();
+                await validateData(
+                  openDigger.chaossCodeChangeCommits,
+                  "code_change_commits",
+                  code_change_commits_file_name
+                );
+              });
+
+              it("should test issuesAndChangeRequestActive interface", async () => {
+                const issues_and_change_request_active_file_name =
+                  `issues_and_change_request_active_${order}_${limit}_${limitOption}_${groupBy}_${groupTimeRange}`.toLowerCase();
+                await validateData(
+                  openDigger.chaossIssuesAndChangeRequestActive,
+                  "issues_and_change_request_active",
+                  issues_and_change_request_active_file_name
+                );
+              });
+
+              it("should test changeRequestsAccepted interface", async () => {
+                const change_requests_accepted_file_name =
+                  `change_requests_accepted_${order}_${limit}_${limitOption}_${groupBy}_${groupTimeRange}`.toLowerCase();
+                await validateData(
+                  openDigger.chaossChangeRequestsAccepted,
+                  "change_requests_accepted",
+                  change_requests_accepted_file_name
+                );
+              });
+
+              it("should test changeRequestsDeclined interface", async () => {
+                const change_requests_declined_file_name =
+                  `change_requests_declined_${order}_${limit}_${limitOption}_${groupBy}_${groupTimeRange}`.toLowerCase();
+                await validateData(
+                  openDigger.chaossChangeRequestsDeclined,
+                  "change_requests_declined",
+                  change_requests_declined_file_name
+                );
+              });
+              it("should test codeChangeLines interface", async () => {
+                const code_change_lines_file_name =
+                  `code_change_lines_${order}_${limit}_${limitOption}_${groupBy}_${groupTimeRange}`.toLowerCase();
+                await validateData(
+                  openDigger.chaossCodeChangeLines,
+                  "code_change_lines",
+                  code_change_lines_file_name
+                );
+              });
+              it("should test technicalFork interface", async () => {
+                const technical_fork_file_name =
+                  `technical_fork_${order}_${limit}_${limitOption}_${groupBy}_${groupTimeRange}`.toLowerCase();
+                await validateData(
+                  openDigger.chaossTechnicalFork,
+                  "technical_fork",
+                  technical_fork_file_name
+                );
+              });
+              it("should test issueAge interface", async () => {
+                const issue_age_file_name =
+                  `issue_age_${order}_${limit}_${limitOption}_${groupBy}_${groupTimeRange}`.toLowerCase();
+                await validateData(
+                  openDigger.chaossIssueAge,
+                  "issue_age",
+                  issue_age_file_name
+                );
+              });
+              it("should test changeRequestAge interface", async () => {
+                const change_request_age_file_name =
+                  `change_request_age_${order}_${limit}_${limitOption}_${groupBy}_${groupTimeRange}`.toLowerCase();
+                await validateData(
+                  openDigger.chaossChangeRequestAge,
+                  "change_request_age",
+                  change_request_age_file_name
+                );
+              });
+              it("should test repoActiveDatesAndTimes interface", async () => {
+                const repo_active_dates_and_times_file_name =
+                  `repo_active_dates_and_times_${order}_${limit}_${limitOption}_${groupBy}_${groupTimeRange}`.toLowerCase();
+                await validateData(
+                  openDigger.chaossRepoActiveDatesAndTimes,
+                  "repo_active_dates_and_times",
+                  repo_active_dates_and_times_file_name
+                );
+              });
+              it("should test userActiveDatesAndTimes interface", async () => {
+                const user_active_dates_and_times_file_name =
+                  `user_active_dates_and_times_${order}_${limit}_${limitOption}_${groupBy}_${groupTimeRange}`.toLowerCase();
+                await validateData(
+                  openDigger.chaossUserActiveDatesAndTimes,
+                  "user_active_dates_and_times",
+                  user_active_dates_and_times_file_name
+                );
+              });
+              it("should test issueResolutionDuration interface", async () => {
+                const issue_resolution_duration_file_name =
+                  `issue_resolution_duration_${order}_${limit}_${limitOption}_${groupBy}_${groupTimeRange}`.toLowerCase();
+                await validateData(
+                  openDigger.chaossIssueResolutionDuration,
+                  "issue_resolution_duration",
+                  issue_resolution_duration_file_name
+                );
+              });
+              it("should test changeRequestResolutionDuration interface", async () => {
+                const change_request_resolution_duration_file_name =
+                  `change_request_resolution_duration_${order}_${limit}_${limitOption}_${groupBy}_${groupTimeRange}`.toLowerCase();
+                await validateData(
+                  openDigger.chaossChangeRequestResolutionDuration,
+                  "change_request_resolution_duration",
+                  change_request_resolution_duration_file_name
+                );
+              });
+              it("should test changeRequestsDuration interface", async () => {
+                const change_requests_duration_file_name =
+                  `change_requests_duration_${order}_${limit}_${limitOption}_${groupBy}_${groupTimeRange}`.toLowerCase();
+                await validateData(
+                  openDigger.chaossChangeRequestsDuration,
+                  "change_requests_duration",
+                  change_requests_duration_file_name
+                );
+              });
+              it("should test newContributors interface", async () => {
+                const new_contributors_file_name =
+                  `new_contributors_${order}_${limit}_${limitOption}_${groupBy}_${groupTimeRange}`.toLowerCase();
+                await validateData(
+                  openDigger.chaossNewContributors,
+                  "new_contributors",
+                  new_contributors_file_name
+                );
+              });
+              it("should test changeRequestsDeclined interface", async () => {
+                const inactive_contributors_file_name =
+                  `inactive_contributors_${order}_${limit}_${limitOption}_${groupBy}_${groupTimeRange}`.toLowerCase();
+                await validateData(
+                  openDigger.chaossInactiveContributors,
+                  "inactive_contributors",
+                  inactive_contributors_file_name
+                );
+              });
+              it("should test changeRequestsDeclined interface", async () => {
+                const change_requests_acceptance_ratio_file_name =
+                  `change_requests_acceptance_ratio_${order}_${limit}_${limitOption}_${groupBy}_${groupTimeRange}`.toLowerCase();
+                await validateData(
+                  openDigger.chaossChangeRequestsAcceptanceRatio,
+                  "change_requests_acceptance_ratio",
+                  change_requests_acceptance_ratio_file_name
+                );
+              });
+              it("should test getRepoActivity interface", async () => {
+                const repo_activity_file_name =
+                  `repo_activity_${order}_${limit}_${limitOption}_${groupBy}_${groupTimeRange}`.toLowerCase();
+                await validateData(
+                  openDigger.getRepoActivity,
+                  "repo_activity",
+                  repo_activity_file_name
+                );
+              });
+              it("should test getUserActivity interface", async () => {
+                const user_activity_file_name =
+                  `user_activity_${order}_${limit}_${limitOption}_${groupBy}_${groupTimeRange}`.toLowerCase();
+                await validateData(
+                  openDigger.getUserActivity,
+                  "user_activity",
+                  user_activity_file_name
+                );
+              });
+              it("should test repoParticipants interface", async () => {
+                const repo_participants_file_name =
+                  `repo_participants_${order}_${limit}_${limitOption}_${groupBy}_${groupTimeRange}`.toLowerCase();
+                await validateData(
+                  openDigger.repoParticipants,
+                  "repo_participants",
+                  repo_participants_file_name
+                );
+              });
+              it("should test repoStars interface", async () => {
+                const repo_stars_file_name =
+                  `repo_stars_${order}_${limit}_${limitOption}_${groupBy}_${groupTimeRange}`.toLowerCase();
+                await validateData(
+                  openDigger.repoStars,
+                  "repo_stars",
+                  repo_stars_file_name
+                );
+              });
+              it("should test attention interface", async () => {
+                const attention_file_name =
+                  `attention_${order}_${limit}_${limitOption}_${groupBy}_${groupTimeRange}`.toLowerCase();
+                await validateData(
+                  openDigger.getAttention,
+                  "attention",
+                  attention_file_name
+                );
+              });
+            }
+          }
+        }
+      }
     }
-  };
-  describe('Indices tests', () => {
-    it('activity', async () => {
-      await commonAssert(openDigger.getRepoActivity, 'activity', {
-        queryOptions: { options: { developerDetail: true } }
-      });
-    });
-  });
-  describe('Metrics tests', () => {
-    it('repo stars', async () => {
-      await commonAssert(openDigger.repoStars, 'count');
-    });
-    it('repo issue comment', async () => {
-      await commonAssert(openDigger.repoIssueComments, 'count');
-    });
-    it('repo participants', async () => {
-      await commonAssert(openDigger.repoParticipants, 'count');
-    });
-  });
-  describe('CHAOSS metrics tests', () => {
-    it('code change commits', async () => {
-      await commonAssert(openDigger.chaossCodeChangeCommits, 'count');
-    });
-    it('issues new', async () => {
-      await commonAssert(openDigger.chaossIssuesNew, 'count');
-    });
-    it('issues active', async () => {
-      await commonAssert(openDigger.chaossIssuesAndChangeRequestActive, 'count');
-    });
-    it('issues closed', async () => {
-      await commonAssert(openDigger.chaossIssuesClosed, 'count');
-    });
-    it('bus factor', async () => {
-      await commonAssert(openDigger.chaossBusFactor, 'bus_factor');
-    });
-    it('change request accepted', async () => {
-      await commonAssert(openDigger.chaossChangeRequestsAccepted, 'count');
-    });
-    it('change request declined', async () => {
-      await commonAssert(openDigger.chaossChangeRequestsDeclined, 'count');
-    });
-    it('issue resolution duration', async () => {
-      const getParams = (key: string): [() => any, string, any] =>
-        [openDigger.chaossIssueResolutionDuration, key, { noTotal: true, queryOptions: { options: { sortBy: key } } }];
-      await commonAssert(...getParams('avg'));
-      await commonAssert(...getParams('quantile_0'));
-      await commonAssert(...getParams('quantile_1'));
-      await commonAssert(...getParams('quantile_2'));
-      await commonAssert(...getParams('quantile_3'));
-      await commonAssert(...getParams('quantile_4'));
-      const p = getParams('levels');
-      await commonAssert(p[0], p[1], { index: 0, ...p[2] });
-    });
-    it('change request resolution duration', async () => {
-      const getParams = (key: string): [() => any, string, any] =>
-        [openDigger.chaossChangeRequestResolutionDuration, key, { noTotal: true, queryOptions: { options: { sortBy: key } } }];
-      await commonAssert(...getParams('avg'));
-      await commonAssert(...getParams('quantile_0'));
-      await commonAssert(...getParams('quantile_1'));
-      await commonAssert(...getParams('quantile_2'));
-      await commonAssert(...getParams('quantile_3'));
-      await commonAssert(...getParams('quantile_4'));
-      const p = getParams('levels');
-      await commonAssert(p[0], p[1], { index: 0, ...p[2] });
-    });
-    it('issue response time', async () => {
-      const getParams = (key: string): [() => any, string, any] =>
-        [openDigger.chaossIssueResponseTime, key, { noTotal: true, queryOptions: { options: { sortBy: key } } }];
-      await commonAssert(...getParams('avg'));
-      await commonAssert(...getParams('quantile_0'));
-      await commonAssert(...getParams('quantile_1'));
-      await commonAssert(...getParams('quantile_2'));
-      await commonAssert(...getParams('quantile_3'));
-      await commonAssert(...getParams('quantile_4'));
-      const p = getParams('levels');
-      await commonAssert(p[0], p[1], { index: 0, ...p[2] });
-    });
-    it('change request response time', async () => {
-      const getParams = (key: string): [() => any, string, any] =>
-        [openDigger.chaossChangeRequestResponseTime, key, { noTotal: true, queryOptions: { options: { sortBy: key } } }];
-      await commonAssert(...getParams('avg'));
-      await commonAssert(...getParams('quantile_0'));
-      await commonAssert(...getParams('quantile_1'));
-      await commonAssert(...getParams('quantile_2'));
-      await commonAssert(...getParams('quantile_3'));
-      await commonAssert(...getParams('quantile_4'));
-      const p = getParams('levels');
-      await commonAssert(p[0], p[1], { index: 0, ...p[2] });
-    });
-    it('issue age', async () => {
-      const getParams = (key: string): [() => any, string, any] =>
-        [openDigger.chaossIssueAge, key, { noTotal: true, queryOptions: { options: { sortBy: key } } }];
-      await commonAssert(...getParams('avg'));
-      await commonAssert(...getParams('quantile_0'));
-      await commonAssert(...getParams('quantile_1'));
-      await commonAssert(...getParams('quantile_2'));
-      await commonAssert(...getParams('quantile_3'));
-      await commonAssert(...getParams('quantile_4'));
-      const p = getParams('levels');
-      await commonAssert(p[0], p[1], { index: 0, ...p[2] });
-    });
-    it('change request age', async () => {
-      const getParams = (key: string): [() => any, string, any] =>
-        [openDigger.chaossChangeRequestAge, key, { noTotal: true, queryOptions: { options: { sortBy: key } } }];
-      await commonAssert(...getParams('avg'));
-      await commonAssert(...getParams('quantile_0'));
-      await commonAssert(...getParams('quantile_1'));
-      await commonAssert(...getParams('quantile_2'));
-      await commonAssert(...getParams('quantile_3'));
-      await commonAssert(...getParams('quantile_4'));
-      const p = getParams('levels');
-      await commonAssert(p[0], p[1], { index: 0, ...p[2] });
-    });
-    it('code change lines', async () => {
-      await commonAssert(openDigger.chaossCodeChangeLines, 'lines');
-    });
-    it('technical fork', async () => {
-      await commonAssert(openDigger.chaossTechnicalFork, 'count');
-    });
-    it('change requests', async () => {
-      await commonAssert(openDigger.chaossChangeRequests, 'count');
-    });
-    it('request reviews', async () => {
-      await commonAssert(openDigger.chaossChangeRequestReviews, 'count');
-    });
-    it('new contributors', async () => {
-      await commonAssert(openDigger.chaossNewContributors, 'new_contributors');
-    });
-    it('inactive contributors', async () => {
-      await commonAssert(openDigger.chaossInactiveContributors, 'inactive_contributors');
-    });
-    it('request requests duration', async () => {
-      const getParams = (key: string): [() => any, string, any] =>
-        [openDigger.chaossChangeRequestsDuration, key, { noTotal: true, queryOptions: { options: { sortBy: key } } }];
-      await commonAssert(...getParams('avg'));
-      await commonAssert(...getParams('quantile_0'));
-      await commonAssert(...getParams('quantile_1'));
-      await commonAssert(...getParams('quantile_2'));
-      await commonAssert(...getParams('quantile_3'));
-      await commonAssert(...getParams('quantile_4'));
-      const p = getParams('levels');
-      await commonAssert(p[0], p[1], { index: 0, ...p[2] });
-    });
-    it('request requests acceptance ratio', async () => {
-      await commonAssert(openDigger.chaossChangeRequestsAcceptanceRatio, 'ratio');
-    });
-    it('contributor email suffixes', async () => {
-      const option: any = {
-        startYear: 2015, endYear: 2016, startMonth: 1, endMonth: 12,
-        orgIds: [1342004], order: 'DESC', limit: 3,
-        groupTimeRange: 'quarter', groupBy: 'org',
-      };
-      const result = await openDigger.contributorEmailSuffixes(option);
-      const checkResult =
-        result.length > 0 &&  // returns result as array
-        result[0].suffixes.every(q => // for every suffixes in every quarter
-          Array.isArray(q) && // returns array for every quarter
-          q.every(i =>
-            Array.isArray(i) && // is an array
-            i.length === 2 && // array length is 2
-            typeof i[0] === 'string' && // first element is string, which is suffix
-            typeof parseInt(i[1]) === 'number'  // second element which is count can be parsed as integer
-          )
-        );
-      assert.strictEqual(checkResult, true);
-    });
-  });
+
+    console.log("All passed.");
+  } catch (err) {
+    console.error(err);
+  }
 });

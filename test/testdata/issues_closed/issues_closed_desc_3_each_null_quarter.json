@@ -1,0 +1,269 @@
+{
+  "sql":"\nSELECT\n  id,\n  argMax(name, time) AS name,\n  SUM(count) AS total_count,\n  groupArrayInsertAt(\n    0,\n    toUInt32(dateDiff('quarter', toDate('2015-1-1'), toDate('2016-12-1'))) + 1)(ROUND(count, 2),\n    toUInt32(dateDiff('quarter', toStartOfQuarter(toDate('2015-1-1')), time))) AS issues_close_count\nFROM\n(\n  SELECT\n    toStartOfQuarter(created_at) AS time,\n    repo_id AS id, argMax(repo_name, time) AS name,\n    COUNT() AS count\n  FROM gh_events\n  WHERE type = 'IssuesEvent' AND action = 'closed' AND (org_id IN [1342004]) AND  created_at >= toDate('2015-1-1') AND created_at < dateAdd(month, 1, toDate('2016-12-1'))\n  GROUP BY id, time\n  ORDER BY count DESC LIMIT 3 BY time\n)\nGROUP BY id\nORDER BY issues_close_count[-1] DESC\n    ",
+  "modifiedOption": {
+    "orgIds": [
+      1342004
+    ],
+    "startYear": 2015,
+    "endYear": 2016,
+    "startMonth": 1,
+    "endMonth": 12,
+    "order": "DESC",
+    "limit": 3,
+    "limitOption": "each",
+    "groupTimeRange": "quarter",
+    "groupBy": null
+  },
+  "issues_closed_desc_3_each_null_quarter": [
+    {
+      "id": "20818126",
+      "name": "google/ExoPlayer",
+      "total_count": "1453",
+      "count": [
+        "78",
+        "164",
+        "0",
+        "161",
+        "274",
+        "239",
+        "234",
+        "303"
+      ],
+      "ratio": [
+        "5.4%",
+        "11%",
+        "0.0%",
+        "11%",
+        "19%",
+        "16%",
+        "16%",
+        "21%"
+      ]
+    },
+    {
+      "id": "29268051",
+      "name": "google/material-design-lite",
+      "total_count": "1153",
+      "count": [
+        "0",
+        "0",
+        "460",
+        "220",
+        "0",
+        "0",
+        "302",
+        "171"
+      ],
+      "ratio": [
+        "0.0%",
+        "0.0%",
+        "40%",
+        "19%",
+        "0.0%",
+        "0.0%",
+        "26%",
+        "15%"
+      ]
+    },
+    {
+      "id": "23357588",
+      "name": "google/protobuf",
+      "total_count": "288",
+      "count": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "184",
+        "0",
+        "0",
+        "104"
+      ],
+      "ratio": [
+        "0.0%",
+        "0.0%",
+        "0.0%",
+        "0.0%",
+        "64%",
+        "0.0%",
+        "0.0%",
+        "36%"
+      ]
+    },
+    {
+      "id": "35298416",
+      "name": "google/google-visualization-api-issues",
+      "total_count": "154",
+      "count": [
+        "0",
+        "154",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "ratio": [
+        "0.0%",
+        "1.0e+2%",
+        "0.0%",
+        "0.0%",
+        "0.0%",
+        "0.0%",
+        "0.0%",
+        "0.0%"
+      ]
+    },
+    {
+      "id": "18845024",
+      "name": "google/closure-compiler",
+      "total_count": "289",
+      "count": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "169",
+        "120",
+        "0",
+        "0"
+      ],
+      "ratio": [
+        "0.0%",
+        "0.0%",
+        "0.0%",
+        "0.0%",
+        "58%",
+        "42%",
+        "0.0%",
+        "0.0%"
+      ]
+    },
+    {
+      "id": "19249835",
+      "name": "google/WebFundamentals",
+      "total_count": "887",
+      "count": [
+        "128",
+        "0",
+        "320",
+        "0",
+        "0",
+        "0",
+        "439",
+        "0"
+      ],
+      "ratio": [
+        "14%",
+        "0.0%",
+        "36%",
+        "0.0%",
+        "0.0%",
+        "0.0%",
+        "49%",
+        "0.0%"
+      ]
+    },
+    {
+      "id": "28246472",
+      "name": "google/shaka-player",
+      "total_count": "90",
+      "count": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "90",
+        "0",
+        "0"
+      ],
+      "ratio": [
+        "0.0%",
+        "0.0%",
+        "0.0%",
+        "0.0%",
+        "0.0%",
+        "1.0e+2%",
+        "0.0%",
+        "0.0%"
+      ]
+    },
+    {
+      "id": "9060347",
+      "name": "google/traceur-compiler",
+      "total_count": "78",
+      "count": [
+        "78",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "ratio": [
+        "1.0e+2%",
+        "0.0%",
+        "0.0%",
+        "0.0%",
+        "0.0%",
+        "0.0%",
+        "0.0%",
+        "0.0%"
+      ]
+    },
+    {
+      "id": "23844174",
+      "name": "google/trace-viewer",
+      "total_count": "332",
+      "count": [
+        "0",
+        "113",
+        "219",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "ratio": [
+        "0.0%",
+        "34%",
+        "66%",
+        "0.0%",
+        "0.0%",
+        "0.0%",
+        "0.0%",
+        "0.0%"
+      ]
+    },
+    {
+      "id": "19953044",
+      "name": "google/flatbuffers",
+      "total_count": "651",
+      "count": [
+        "0",
+        "0",
+        "0",
+        "651",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "ratio": [
+        "0.0%",
+        "0.0%",
+        "0.0%",
+        "1.0e+2%",
+        "0.0%",
+        "0.0%",
+        "0.0%",
+        "0.0%"
+      ]
+    }
+  ]
+}

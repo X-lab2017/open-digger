@@ -1,0 +1,102 @@
+{
+  "modifiedOption": {
+    "orgIds": [
+      1342004
+    ],
+    "startYear": 2015,
+    "endYear": 2016,
+    "startMonth": 1,
+    "endMonth": 12,
+    "order": "DESC",
+    "limit": 3,
+    "limitOption": "all",
+    "groupTimeRange": "year",
+    "groupBy": null
+  },
+  "user_activity_desc_3_all_null_year": [
+    {
+      "id": "14790466",
+      "name": "greenkeeperio-bot",
+      "activity": [
+        18921.29,
+        209814.27
+      ],
+      "issue_comment": [
+        "6",
+        "1"
+      ],
+      "open_issue": [
+        "0",
+        "0"
+      ],
+      "open_pull": [
+        "30682",
+        "331794"
+      ],
+      "review_comment": [
+        "0",
+        "0"
+      ],
+      "merged_pull": [
+        "9746",
+        "97625"
+      ]
+    },
+    {
+      "id": "10810283",
+      "name": "direwolf-github",
+      "activity": [
+        0,
+        124689.29
+      ],
+      "issue_comment": [
+        "0",
+        "0"
+      ],
+      "open_issue": [
+        "0",
+        "0"
+      ],
+      "open_pull": [
+        "0",
+        "89419"
+      ],
+      "review_comment": [
+        "0",
+        "0"
+      ],
+      "merged_pull": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "id": "2354108",
+      "name": "coveralls",
+      "activity": [
+        25299.97,
+        97013.9
+      ],
+      "issue_comment": [
+        "86262",
+        "339152"
+      ],
+      "open_issue": [
+        "0",
+        "0"
+      ],
+      "open_pull": [
+        "0",
+        "0"
+      ],
+      "review_comment": [
+        "0",
+        "0"
+      ],
+      "merged_pull": [
+        "0",
+        "0"
+      ]
+    }
+  ]
+}
