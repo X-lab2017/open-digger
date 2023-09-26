@@ -7,12 +7,7 @@ data:
     - 17699493 # repo:cran/scidb
     - 96580430 # repo:datajaguar/jaguardb
     - 5407611 # repo:dioptre/rasdaman
-    - 304530333 # repo:featureform/embeddinghub
+    - 664133375 # repo:epsilla-cloud/vectordb
     - 45732002 # repo:jnidzwetzki/bboxdb
-    - 520096046 # repo:marqo-ai/marqo
-    - 208728772 # repo:milvus-io/milvus
-    - 478288303 # repo:nuclia/nucliadb
     - 162765004 # repo:peermaps/eyros
     - 156942199 # repo:perone/euclidesdb
-    - 40127179 # repo:pilosa/pilosa
-    - 55072677 # repo:semi-technologies/weaviate

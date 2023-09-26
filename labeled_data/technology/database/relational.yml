@@ -83,6 +83,8 @@ data:
     - 341208515 # repo:edgelesssys/edgelessdb
     - 61373806 # repo:elasql/elasql
     - 387622288 # repo:elliotchance/vsql
+    - 587246478 # repo:endatabas/endb
+    - 183929744 # repo:erikgrinaker/toydb
     - 59475316 # repo:eventql/eventql
     - 388946490 # repo:facebookincubator/velox
     - 40127179 # repo:featurebasedb/featurebase
@@ -132,6 +134,7 @@ data:
     - 927442 # repo:postgres/postgres
     - 258454329 # repo:ppml38/icecoal
     - 5349565 # repo:prestodb/presto
+    - 26774602 # repo:proullon/ramsql
     - 275838748 # repo:qikkDB/qikkdb
     - 19257422 # repo:questdb/questdb
     - 5665061 # repo:radare/sdb
