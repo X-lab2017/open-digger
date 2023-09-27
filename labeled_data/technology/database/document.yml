@@ -28,6 +28,7 @@ data:
     - 137869753 # repo:appy-one/acebase
     - 2649214 # repo:arangodb/arangodb
     - 36778364 # repo:attic-labs/noms
+    - 642912355 # repo:awa-ai/awadb
     - 141378316 # repo:beardedeagle/mnesiac
     - 88422672 # repo:bergdb/bergdb
     - 2380364 # repo:berkeleydb/libdb
@@ -46,6 +47,7 @@ data:
     - 11695619 # repo:eXist-db/exist
     - 266444815 # repo:earthstar-project/earthstar
     - 507775 # repo:elastic/elasticsearch
+    - 587246478 # repo:endatabas/endb
     - 14143348 # repo:fakemongo/fongo
     - 305513242 # repo:fluree/db
     - 138411034 # repo:genjidb/genji
@@ -55,11 +57,15 @@ data:
     - 4984118 # repo:ioquatix/relaxo
     - 58524063 # repo:jclo/picodb
     - 4859 # repo:jcrosby/cloudkit
+    - 628503457 # repo:jdagdelen/hyperDB
     - 652189 # repo:jedisct1/Pincaster
+    - 635374751 # repo:jina-ai/vectordb
+    - 632269609 # repo:kagisearch/vectordb
     - 1776883 # repo:kimchy/compass
     - 607441698 # repo:lancedb/lancedb
     - 376679845 # repo:losfair/RefineDB
     - 9795883 # repo:louischatriot/nedb
+    - 520096046 # repo:marqo-ai/marqo
     - 23315232 # repo:mbdavid/LiteDB
     - 130688011 # repo:meilisearch/meilisearch
     - 26573806 # repo:mgholam/RaptorDB-Document
@@ -84,6 +90,7 @@ data:
     - 129436009 # repo:rakibtg/SleekDB
     - 542714 # repo:ravendb/ravendb
     - 1917262 # repo:realm/realm-core
+    - 223462217 # repo:resilientdb/resilientdb
     - 6452529 # repo:rethinkdb/rethinkdb
     - 336867666 # repo:ribelo/doxa
     - 34056205 # repo:sachin-sinha/BangDB
@@ -102,6 +109,8 @@ data:
     - 184711 # repo:typicaljoe/taffydb
     - 18351848 # repo:typicode/lowdb
     - 25364889 # repo:unnamed38/fueldb
+    - 186332888 # repo:vearch/vearch
+    - 634656527 # repo:vector5ai/vector5db
     - 60377070 # repo:vespa-engine/vespa
     - 735981 # repo:xapian/xapian
     - 125824259 # repo:xtdb/xtdb

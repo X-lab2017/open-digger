@@ -3,8 +3,19 @@ type: Tech-1
 data:
   github_repo:
     - 201403923 # repo:activeloopai/deeplake
+    - 642912355 # repo:awa-ai/awadb
     - 546206616 # repo:chroma-core/chroma
+    - 304530333 # repo:featureform/embeddinghub
+    - 628503457 # repo:jdagdelen/hyperDB
+    - 635374751 # repo:jina-ai/vectordb
+    - 632269609 # repo:kagisearch/vectordb
+    - 242383787 # repo:marekgalovic/anndb
+    - 520096046 # repo:marqo-ai/marqo
     - 208728772 # repo:milvus-io/milvus
+    - 478288303 # repo:nuclia/nucliadb
+    - 40127179 # repo:pilosa/pilosa
     - 268163609 # repo:qdrant/qdrant
     - 55072677 # repo:semi-technologies/weaviate
     - 195619075 # repo:vdaas/vald
+    - 186332888 # repo:vearch/vearch
+    - 634656527 # repo:vector5ai/vector5db
