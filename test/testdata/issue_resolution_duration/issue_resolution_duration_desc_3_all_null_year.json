@@ -14,122 +14,44 @@
     "groupTimeRange": "year",
     "groupBy": null
   },
-  "issue_resolution_duration_desc_3_all_null_year": [
-    {
-      "id": "11850014",
-      "name": "google/gumbo-parser",
-      "avg": [
-        763.76,
-        2562
-      ],
-      "levels": [
-        [
-          "12",
-          "2",
-          "2",
-          "13"
-        ],
-        [
-          "0",
-          "0",
-          "0",
-          "2"
-        ]
-      ],
-      "quantile_0": [
-        0,
-        2532
-      ],
-      "quantile_1": [
-        1,
-        2547
-      ],
-      "quantile_2": [
-        9,
-        2562
-      ],
-      "quantile_3": [
-        2631,
-        2577
-      ],
-      "quantile_4": [
-        2911,
-        2592
-      ]
-    },
-    {
-      "id": "12929998",
-      "name": "google/gfw-deployments",
-      "avg": [
-        null,
-        2431
-      ],
-      "levels": [
-        [],
-        [
-          "0",
-          "0",
-          "0",
-          "1"
-        ]
-      ],
-      "quantile_0": [
-        null,
-        2431
-      ],
-      "quantile_1": [
-        null,
-        2431
-      ],
-      "quantile_2": [
-        null,
-        2431
-      ],
-      "quantile_3": [
-        null,
-        2431
-      ],
-      "quantile_4": [
-        null,
-        2431
-      ]
-    },
-    {
-      "id": "200125643",
-      "name": "google/blockly-samples",
-      "avg": [
-        null,
-        2390.5
-      ],
-      "levels": [
-        [],
-        [
-          "0",
-          "0",
-          "0",
-          "2"
-        ]
-      ],
-      "quantile_0": [
-        null,
-        2315
-      ],
-      "quantile_1": [
-        null,
-        2352.75
-      ],
-      "quantile_2": [
-        null,
-        2390.5
-      ],
-      "quantile_3": [
-        null,
-        2428.25
-      ],
-      "quantile_4": [
-        null,
-        2466
-      ]
-    }
-  ]
+  "issue_resolution_duration_desc_3_all_null_year": [{
+    "id": "40313556",
+    "name": "google/hilbert",
+    "avg": [0, 215],
+    "levels": [
+      ["1", "0", "0", "0"],
+      ["0", "0", "0", "1"]
+    ],
+    "quantile_0": [0, 215],
+    "quantile_1": [0, 215],
+    "quantile_2": [0, 215],
+    "quantile_3": [0, 215],
+    "quantile_4": [0, 215]
+  }, {
+    "id": "46298225",
+    "name": "google/chartjs.dart",
+    "avg": [null, 199.5],
+    "levels": [
+      [],
+      ["0", "0", "0", "2"]
+    ],
+    "quantile_0": [null, 170],
+    "quantile_1": [null, 184.75],
+    "quantile_2": [null, 199.5],
+    "quantile_3": [null, 214.25],
+    "quantile_4": [null, 229]
+  }, {
+    "id": "3248529",
+    "name": "google/signet",
+    "avg": [87.89, 150],
+    "levels": [
+      ["3", "1", "0", "5"],
+      ["0", "0", "0", "1"]
+    ],
+    "quantile_0": [0, 150],
+    "quantile_1": [1, 150],
+    "quantile_2": [20, 150],
+    "quantile_3": [223, 150],
+    "quantile_4": [290, 150]
+  }]
 }
