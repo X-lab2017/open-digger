@@ -1,7 +1,7 @@
 const openDigger = require('../src/metrics/index');
-import * as fs from "fs";
-const assert = require("assert");
-import * as _ from "lodash";
+import { existsSync, readFileSync } from 'fs';
+import assert from "assert";
+import _ from 'lodash';
 
 function deepEqual(a: any, b: any): boolean {
   return _.isEqual(a, b);
@@ -12,28 +12,28 @@ async function validateData(
   subFileName: string,
   dataKey: string
 ) {
-  const fileName = `../test/testdata1/${subFileName}/${dataKey}.json`;
+  const fileName = `test/testdata/${subFileName}/${dataKey}.json`;
 
-  if (fs.existsSync(fileName)) {
-    const jsonData = JSON.parse(fs.readFileSync(fileName).toString());
+  if (existsSync(fileName)) {
+    const jsonData = JSON.parse(readFileSync(fileName).toString());
 
-    const data1 = jsonData[dataKey];
+    const expectedData = jsonData[dataKey];
+    const queryResultData = await apiFn(jsonData["modifiedOption"]);
 
-    const data2 = await apiFn(jsonData["modifiedOption"]);
+    const expectedDataWithoutDetail = removeFields(expectedData);
+    const queryResultDataWithoutDetail = removeFields(queryResultData);
 
-    const data1WithoutDetail = removeFields(data1);
-
-    const data2WithoutDetail = removeFields(data2);
-
-    const equal = deepEqual(data1WithoutDetail, data2WithoutDetail);
+    const equal = deepEqual(expectedDataWithoutDetail, queryResultDataWithoutDetail);
 
     if (!equal) {
       console.log(jsonData["modifiedOption"]);
       console.log(apiFn);
-      console.log("data1:", JSON.stringify(data1WithoutDetail));
-      console.log("data2:", JSON.stringify(data2WithoutDetail));
+      console.log("expected data: ", JSON.stringify(expectedDataWithoutDetail));
+      console.log("query result data: ", JSON.stringify(queryResultDataWithoutDetail));
     }
     assert(equal);
+  } else {
+    throw new Error(`File not found ${fileName}`);
   }
 }
 
