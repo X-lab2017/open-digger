@@ -33,6 +33,9 @@ async function validateData(
     }
     assert(equal);
   } 
+  else {
+    console.log(`File ${fileName} not found, because the option is not supported.`);
+  }
 }
 
 function removeFields(data: any) {
