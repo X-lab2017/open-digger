@@ -14,127 +14,44 @@
     "groupTimeRange": "year",
     "groupBy": null
   },
-  "change_request_resolution_duration_desc_3_all_null_year": [
-    {
-      "id": "35509149",
-      "name": "google/gmail-oauth2-tools",
-      "avg": [
-        2591,
-        2734
-      ],
-      "levels": [
-        [
-          "0",
-          "0",
-          "0",
-          "1"
-        ],
-        [
-          "0",
-          "0",
-          "0",
-          "1"
-        ]
-      ],
-      "quantile_0": [
-        2591,
-        2734
-      ],
-      "quantile_1": [
-        2591,
-        2734
-      ],
-      "quantile_2": [
-        2591,
-        2734
-      ],
-      "quantile_3": [
-        2591,
-        2734
-      ],
-      "quantile_4": [
-        2591,
-        2734
-      ]
-    },
-    {
-      "id": "40736127",
-      "name": "google/cityhash",
-      "avg": [
-        null,
-        2326
-      ],
-      "levels": [
-        [],
-        [
-          "0",
-          "0",
-          "0",
-          "1"
-        ]
-      ],
-      "quantile_0": [
-        null,
-        2326
-      ],
-      "quantile_1": [
-        null,
-        2326
-      ],
-      "quantile_2": [
-        null,
-        2326
-      ],
-      "quantile_3": [
-        null,
-        2326
-      ],
-      "quantile_4": [
-        null,
-        2326
-      ]
-    },
-    {
-      "id": "22765467",
-      "name": "google/CausalImpact",
-      "avg": [
-        922,
-        1807
-      ],
-      "levels": [
-        [
-          "0",
-          "0",
-          "0",
-          "1"
-        ],
-        [
-          "0",
-          "0",
-          "0",
-          "1"
-        ]
-      ],
-      "quantile_0": [
-        922,
-        1807
-      ],
-      "quantile_1": [
-        922,
-        1807
-      ],
-      "quantile_2": [
-        922,
-        1807
-      ],
-      "quantile_3": [
-        922,
-        1807
-      ],
-      "quantile_4": [
-        922,
-        1807
-      ]
-    }
-  ]
+  "change_request_resolution_duration_desc_3_all_null_year": [{
+    "id": "47432128",
+    "name": "google/google-id-token",
+    "avg": [null, 279],
+    "levels": [
+      [],
+      ["0", "0", "0", "1"]
+    ],
+    "quantile_0": [null, 279],
+    "quantile_1": [null, 279],
+    "quantile_2": [null, 279],
+    "quantile_3": [null, 279],
+    "quantile_4": [null, 279]
+  }, {
+    "id": "41330463",
+    "name": "google/googlemock",
+    "avg": [0, 152],
+    "levels": [
+      ["4", "0", "0", "0"],
+      ["0", "0", "0", "1"]
+    ],
+    "quantile_0": [0, 152],
+    "quantile_1": [0, 152],
+    "quantile_2": [0, 152],
+    "quantile_3": [0, 152],
+    "quantile_4": [0, 152]
+  }, {
+    "id": "57337634",
+    "name": "google/martian-java",
+    "avg": [null, 139],
+    "levels": [
+      [],
+      ["0", "0", "0", "1"]
+    ],
+    "quantile_0": [null, 139],
+    "quantile_1": [null, 139],
+    "quantile_2": [null, 139],
+    "quantile_3": [null, 139],
+    "quantile_4": [null, 139]
+  }]
 }

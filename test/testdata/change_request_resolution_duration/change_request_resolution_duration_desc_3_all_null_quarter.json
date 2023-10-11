@@ -14,258 +14,62 @@
     "groupTimeRange": "quarter",
     "groupBy": null
   },
-  "change_request_resolution_duration_desc_3_all_null_quarter": [
-    {
-      "id": "40736127",
-      "name": "google/cityhash",
-      "avg": [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        2326
-      ],
-      "levels": [
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [
-          "0",
-          "0",
-          "0",
-          "1"
-        ]
-      ],
-      "quantile_0": [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        2326
-      ],
-      "quantile_1": [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        2326
-      ],
-      "quantile_2": [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        2326
-      ],
-      "quantile_3": [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        2326
-      ],
-      "quantile_4": [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        2326
-      ]
-    },
-    {
-      "id": "38279227",
-      "name": "google/omaha",
-      "avg": [
-        null,
-        null,
-        null,
-        6,
-        2,
-        null,
-        2.33,
-        2022
-      ],
-      "levels": [
-        [],
-        [],
-        [],
-        [
-          "0",
-          "1",
-          "0",
-          "0"
-        ],
-        [
-          "1",
-          "0",
-          "0",
-          "0"
-        ],
-        [],
-        [
-          "2",
-          "1",
-          "0",
-          "0"
-        ],
-        [
-          "0",
-          "0",
-          "0",
-          "1"
-        ]
-      ],
-      "quantile_0": [
-        null,
-        null,
-        null,
-        6,
-        2,
-        null,
-        0,
-        2022
-      ],
-      "quantile_1": [
-        null,
-        null,
-        null,
-        6,
-        2,
-        null,
-        0.5,
-        2022
-      ],
-      "quantile_2": [
-        null,
-        null,
-        null,
-        6,
-        2,
-        null,
-        1,
-        2022
-      ],
-      "quantile_3": [
-        null,
-        null,
-        null,
-        6,
-        2,
-        null,
-        3.5,
-        2022
-      ],
-      "quantile_4": [
-        null,
-        null,
-        null,
-        6,
-        2,
-        null,
-        6,
-        2022
-      ]
-    },
-    {
-      "id": "42134050",
-      "name": "google/appengine-jenkins",
-      "avg": [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        1596
-      ],
-      "levels": [
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [
-          "0",
-          "0",
-          "0",
-          "1"
-        ]
-      ],
-      "quantile_0": [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        1596
-      ],
-      "quantile_1": [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        1596
-      ],
-      "quantile_2": [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        1596
-      ],
-      "quantile_3": [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        1596
-      ],
-      "quantile_4": [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        1596
-      ]
-    }
-  ]
+  "change_request_resolution_duration_desc_3_all_null_quarter": [{
+    "id": "40198544",
+    "name": "google/capirca",
+    "avg": [null, null, 0, 46, 0.5, 44.08, 12, 35],
+    "levels": [
+      [],
+      [],
+      ["1", "0", "0", "0"],
+      ["2", "2", "0", "2"],
+      ["2", "0", "0", "0"],
+      ["4", "2", "0", "7"],
+      ["2", "1", "0", "1"],
+      ["2", "0", "0", "2"]
+    ],
+    "quantile_0": [null, null, 0, 0, 0, 0, 0, 0],
+    "quantile_1": [null, null, 0, 1, 0.25, 3, 0, 2.25],
+    "quantile_2": [null, null, 0, 4.5, 0.5, 17, 3.5, 33.5],
+    "quantile_3": [null, null, 0, 95.75, 0.75, 45, 15.5, 66.25],
+    "quantile_4": [null, null, 0, 141, 1, 186, 41, 73]
+  }, {
+    "id": "24993103",
+    "name": "google/woff2",
+    "avg": [50.5, 20.9, 32, 8.5, 1.6, null, 0, 35],
+    "levels": [
+      ["2", "0", "0", "4"],
+      ["4", "2", "1", "3"],
+      ["1", "0", "0", "1"],
+      ["0", "1", "1", "0"],
+      ["4", "0", "1", "0"],
+      [],
+      ["1", "0", "0", "0"],
+      ["0", "0", "0", "1"]
+    ],
+    "quantile_0": [0, 0, 2, 4, 0, null, 0, 35],
+    "quantile_1": [9.25, 1.5, 17, 6.25, 0, null, 0, 35],
+    "quantile_2": [41, 5, 32, 8.5, 0, null, 0, 35],
+    "quantile_3": [71.25, 15, 47, 10.75, 0, null, 0, 35],
+    "quantile_4": [141, 90, 62, 13, 8, null, 0, 35]
+  }, {
+    "id": "33881870",
+    "name": "google/protobuf-gradle-plugin",
+    "avg": [null, 3, 3.4, 16, 2.4, 20.5, 0.83, 28],
+    "levels": [
+      [],
+      ["4", "2", "0", "0"],
+      ["2", "3", "0", "0"],
+      ["1", "0", "0", "1"],
+      ["3", "2", "0", "0"],
+      ["3", "2", "0", "1"],
+      ["6", "0", "0", "0"],
+      ["0", "0", "0", "1"]
+    ],
+    "quantile_0": [null, 0, 1, 0, 0, 1, 0, 28],
+    "quantile_1": [null, 0.75, 2, 8, 0, 1, 0, 28],
+    "quantile_2": [null, 3, 4, 16, 1, 2.5, 0.5, 28],
+    "quantile_3": [null, 4.5, 4, 24, 4, 4.75, 1, 28],
+    "quantile_4": [null, 7, 6, 32, 7, 111, 3, 28]
+  }]
 }

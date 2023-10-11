@@ -14,253 +14,62 @@
     "groupTimeRange": "quarter",
     "groupBy": null
   },
-  "issue_resolution_duration_desc_3_all_null_quarter": [
-    {
-      "id": "200125643",
-      "name": "google/blockly-samples",
-      "avg": [
-        null,
-        null,
-        null,
-        null,
-        2315,
-        null,
-        null,
-        2466
-      ],
-      "levels": [
-        [],
-        [],
-        [],
-        [],
-        [
-          "0",
-          "0",
-          "0",
-          "1"
-        ],
-        [],
-        [],
-        [
-          "0",
-          "0",
-          "0",
-          "1"
-        ]
-      ],
-      "quantile_0": [
-        null,
-        null,
-        null,
-        null,
-        2315,
-        null,
-        null,
-        2466
-      ],
-      "quantile_1": [
-        null,
-        null,
-        null,
-        null,
-        2315,
-        null,
-        null,
-        2466
-      ],
-      "quantile_2": [
-        null,
-        null,
-        null,
-        null,
-        2315,
-        null,
-        null,
-        2466
-      ],
-      "quantile_3": [
-        null,
-        null,
-        null,
-        null,
-        2315,
-        null,
-        null,
-        2466
-      ],
-      "quantile_4": [
-        null,
-        null,
-        null,
-        null,
-        2315,
-        null,
-        null,
-        2466
-      ]
-    },
-    {
-      "id": "32954871",
-      "name": "google/osdetector-gradle-plugin",
-      "avg": [
-        null,
-        null,
-        null,
-        null,
-        null,
-        2480,
-        null,
-        2284
-      ],
-      "levels": [
-        [],
-        [],
-        [],
-        [],
-        [],
-        [
-          "0",
-          "0",
-          "0",
-          "1"
-        ],
-        [],
-        [
-          "0",
-          "0",
-          "0",
-          "1"
-        ]
-      ],
-      "quantile_0": [
-        null,
-        null,
-        null,
-        null,
-        null,
-        2480,
-        null,
-        2284
-      ],
-      "quantile_1": [
-        null,
-        null,
-        null,
-        null,
-        null,
-        2480,
-        null,
-        2284
-      ],
-      "quantile_2": [
-        null,
-        null,
-        null,
-        null,
-        null,
-        2480,
-        null,
-        2284
-      ],
-      "quantile_3": [
-        null,
-        null,
-        null,
-        null,
-        null,
-        2480,
-        null,
-        2284
-      ],
-      "quantile_4": [
-        null,
-        null,
-        null,
-        null,
-        null,
-        2480,
-        null,
-        2284
-      ]
-    },
-    {
-      "id": "32044895",
-      "name": "google/python_portpicker",
-      "avg": [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        1627
-      ],
-      "levels": [
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [
-          "0",
-          "0",
-          "0",
-          "1"
-        ]
-      ],
-      "quantile_0": [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        1627
-      ],
-      "quantile_1": [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        1627
-      ],
-      "quantile_2": [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        1627
-      ],
-      "quantile_3": [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        1627
-      ],
-      "quantile_4": [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        1627
-      ]
-    }
-  ]
+  "issue_resolution_duration_desc_3_all_null_quarter": [{
+    "id": "53168835",
+    "name": "google/google-api-php-client-services",
+    "avg": [null, null, null, null, null, 30.25, 1, 53],
+    "levels": [
+      [],
+      [],
+      [],
+      [],
+      [],
+      ["2", "0", "1", "5"],
+      ["3", "0", "0", "0"],
+      ["0", "0", "0", "1"]
+    ],
+    "quantile_0": [null, null, null, null, null, 0, 0, 53],
+    "quantile_1": [null, null, null, null, null, 9.25, 0.5, 53],
+    "quantile_2": [null, null, null, null, null, 18.5, 1, 53],
+    "quantile_3": [null, null, null, null, null, 45, 1.5, 53],
+    "quantile_4": [null, null, null, null, null, 98, 2, 53]
+  }, {
+    "id": "34408310",
+    "name": "google/code-prettify",
+    "avg": [null, 468.18, 47.71, 109.5, 65, 16, 8.33, 38],
+    "levels": [
+      [],
+      ["0", "0", "0", "34"],
+      ["2", "2", "0", "3"],
+      ["1", "0", "0", "1"],
+      ["1", "0", "0", "1"],
+      ["2", "0", "0", "2"],
+      ["2", "0", "0", "1"],
+      ["0", "0", "0", "1"]
+    ],
+    "quantile_0": [null, 117, 0, 0, 0, 0, 0, 38],
+    "quantile_1": [null, 413, 2.5, 54.75, 32.5, 0.75, 0, 38],
+    "quantile_2": [null, 448, 6, 109.5, 65, 11, 0, 38],
+    "quantile_3": [null, 599, 80.5, 164.25, 97.5, 26.25, 12.5, 38],
+    "quantile_4": [null, 600, 162, 219, 130, 42, 25, 38]
+  }, {
+    "id": "17029490",
+    "name": "google/grr-doc",
+    "avg": [null, 303, 134, null, 2.5, 7.5, 27, 37.75],
+    "levels": [
+      [],
+      ["0", "0", "0", "1"],
+      ["1", "0", "0", "2"],
+      [],
+      ["3", "0", "1", "0"],
+      ["1", "0", "1", "0"],
+      ["3", "0", "0", "1"],
+      ["1", "0", "0", "3"]
+    ],
+    "quantile_0": [null, 303, 0, null, 0, 2, 0, 0],
+    "quantile_1": [null, 303, 95, null, 0, 4.75, 0, 24.75],
+    "quantile_2": [null, 303, 190, null, 0, 7.5, 0, 40],
+    "quantile_3": [null, 303, 201, null, 2.5, 10.25, 27, 53],
+    "quantile_4": [null, 303, 212, null, 10, 13, 108, 71]
+  }]
 }
