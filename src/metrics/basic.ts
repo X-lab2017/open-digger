@@ -66,6 +66,35 @@ export const forEveryMonth = async (startYear: number, startMonth: number, endYe
   }
 }
 
+export const forEveryQuarterByConfig = async (config: QueryConfig, func: (y: number, q: number) => Promise<any>) => {
+  const quarters: { y: number, q: number }[] = [];
+  let lastQuarter = -1;
+  await forEveryMonthByConfig(config, async (y, m) => {
+    const q = Math.ceil(m / 3);
+    if (q !== lastQuarter) {
+      quarters.push({ y, q });
+      lastQuarter = q;
+    }
+  });
+  for (const i of quarters) {
+    await func(i.y, i.q);
+  }
+}
+
+export const forEveryYearByConfig = async (config: QueryConfig, func: (y: number) => Promise<any>) => {
+  const years: number[] = [];
+  let lastYear = -1;
+  await forEveryMonthByConfig(config, async y => {
+    if (y !== lastYear) {
+      years.push(y);
+      lastYear = y;
+    }
+  });
+  for (const y of years) {
+    await func(y);
+  }
+}
+
 // Repo
 export const getRepoWhereClauseForNeo4j = (config: QueryConfig): string | null => {
   const repoWhereClauseArray: string[] = [];

@@ -3,7 +3,7 @@ import { join } from 'path';
 import { Task } from '..';
 import { query, queryStream } from '../../db/clickhouse';
 import { getRepoActivity, getRepoOpenrank, getUserActivity, getUserOpenrank, getAttention } from '../../metrics/indices';
-import { forEveryMonthByConfig, timeDurationConstants } from '../../metrics/basic';
+import { forEveryMonthByConfig, forEveryQuarterByConfig, forEveryYearByConfig, timeDurationConstants } from '../../metrics/basic';
 import { waitFor } from '../../utils';
 import getConfig from '../../config';
 import { chaossActiveDatesAndTimes, chaossBusFactor, chaossChangeRequestAge, chaossChangeRequestResolutionDuration, chaossChangeRequestResponseTime, chaossChangeRequestReviews, chaossChangeRequests, chaossChangeRequestsAccepted, chaossCodeChangeLines, chaossInactiveContributors, chaossIssueAge, chaossIssueResolutionDuration, chaossIssueResponseTime, chaossIssuesAndChangeRequestActive, chaossIssuesClosed, chaossIssuesNew, chaossNewContributors, chaossTechnicalFork } from '../../metrics/chaoss';
@@ -101,61 +101,92 @@ const task: Task = {
       }
 
       const processMetric = async (func: (option: any) => Promise<any>, option: any, fields: Field | Field[], agg: boolean = false) => {
-        const result: any[] = await func(option);
-        for (const row of result) {
-          const name = row.name;
-          if (!existsSync(join(exportBasePath, name))) {
-            mkdirSync(join(exportBasePath, name), { recursive: true });
-          }
-          writeFileSync(join(exportBasePath, name, 'meta.json'), JSON.stringify({
-            updatedAt: new Date().getTime(),
-            type: option.type ?? undefined,
-            id: parseInt(row.id),
-          }));
-          if (!Array.isArray(fields)) fields = [fields];
-          const aggContent: any = {};
-          for (let field of fields) {
-            const dataArr = row[field.sourceKey];
-            if (!dataArr) {
-              console.log(`Can not find field ${field}`);
-              continue;
-            }
-            const exportPath = join(exportBasePath, name, field.targetKey + '.json');
-            const content: any = {};
-            let index = 0;
-            await forEveryMonthByConfig(option, async (y, m) => {
-              if (dataArr.length <= index) return;
-              const key = `${y}-${m.toString().padStart(2, '0')}`;
-              const ele = field.parser(dataArr[index++]);
-              if (!field.isDefaultValue(ele)) content[key] = ele;
-            });
-            if (!field.disableDataLoss && option.groupTimeRange === 'month' && content['2021-10']) {
-              // reason: GHArchive had a data service failure about 2 weeks in 2021.10
-              // https://github.com/igrigorik/gharchive.org/issues/261
-              // handle data loss in 2021.10 only when generate data by month
-              content['2021-10-raw'] = content['2021-10'];
-              const arr = ['2021-08', '2021-09', '2021-11', '2021-12'].map(m => content[m]);
-              // use 2021-08 to 2021-12 data to estimate data for 2021-10
-              if (!arr[3]) arr[3] = 0;
-              if (!arr[2]) arr[2] = 0;
-              if (!arr[0]) arr[0] = arr[3];
-              if (!arr[1]) arr[1] = arr[2];
-              // use integer form since many statistical metrics requires integer form.
-              content['2021-10'] = Math.round([0.15, 0.35, 0.35, 0.15].map((f, i) => f * arr[i]).reduce((p, c) => p + c));
+        const exportDir = new Map<string, string>();
+        const exportData = new Map<string, any>();
+        const iterFuncMap = new Map<string, any>([
+          ['month', forEveryMonthByConfig],
+          ['quarter', forEveryQuarterByConfig],
+          ['year', forEveryYearByConfig],
+        ]);
+        for (const type of ['month', 'quarter', 'year']) {
+          option.groupTimeRange = type;
+          const result: any[] = await func(option);
+          for (const row of result) {
+            const name = row.name;
+            exportDir.set(join(exportBasePath, name), row.id);
+            if (!Array.isArray(fields)) fields = [fields];
+            const aggExportPath = join(exportBasePath, name, fields[0].targetKey + '.json');
+            const aggContent: any = exportData.get(aggExportPath) ?? {};
+            for (let field of fields) {
+              const dataArr = row[field.sourceKey];
+              if (!dataArr) {
+                console.log(`Can not find field ${field}`);
+                continue;
+              }
+              const exportPath = join(exportBasePath, name, field.targetKey + '.json');
+              let content: any = exportData.get(exportPath) ?? {};
+              if (agg) {
+                content = aggContent[field.sourceKey] ?? {};
+              }
+              let index = 0;
+              await iterFuncMap.get(type)(option, async (y, m) => {
+                if (dataArr.length <= index) return;
+                let key: string = '';
+                if (type === 'month') {
+                  key = `${y}-${m.toString().padStart(2, '0')}`;
+                } else if (type === 'quarter') {
+                  key = `${y}Q${m}`;
+                } else if (type === 'year') {
+                  key = `${y}`;
+                }
+                const ele = field.parser(dataArr[index++]);
+                if (!field.isDefaultValue(ele)) content[key] = ele;
+              });
+              if (!field.disableDataLoss && option.groupTimeRange === 'month' && content['2021-10']) {
+                // reason: GHArchive had a data service failure about 2 weeks in 2021.10
+                // https://github.com/igrigorik/gharchive.org/issues/261
+                // handle data loss in 2021.10 only when generate data by month
+                content['2021-10-raw'] = content['2021-10'];
+                const arr = ['2021-08', '2021-09', '2021-11', '2021-12'].map(m => content[m]);
+                // use 2021-08 to 2021-12 data to estimate data for 2021-10
+                if (!arr[3]) arr[3] = 0; if (!arr[2]) arr[2] = 0;
+                if (!arr[0]) arr[0] = arr[3]; if (!arr[1]) arr[1] = arr[2];
+                // use integer form since many statistical metrics requires integer form.
+                content['2021-10'] = Math.round([0.15, 0.35, 0.35, 0.15]
+                  .map((f, i) => f * arr[i]).reduce((p, c) => p + c));
+              }
+              if (!agg) {
+                exportData.set(exportPath, content);
+              } else {
+                aggContent[field.sourceKey] = content;
+              }
             }
             if (agg) {
-              aggContent[field.sourceKey] = content;
-            } else {
-              writeFileSync(exportPath, JSON.stringify(content));
+              exportData.set(aggExportPath, aggContent);
             }
           }
-          if (agg) {
-            writeFileSync(join(exportBasePath, name, fields[0].targetKey + '.json'), JSON.stringify(aggContent));
-          }
         }
+
+        // write back to local disk in async way
+        (async () => {
+          for (const [path, id] of exportDir.entries()) {
+            if (!existsSync(path)) {
+              mkdirSync(path, { recursive: true });
+            }
+            writeFileSync(join(path, 'meta.json'), JSON.stringify({
+              updatedAt: new Date().getTime(),
+              type: option.type ?? undefined,
+              id: parseInt(id),
+            }));
+          }
+
+          for (const [path, content] of exportData.entries()) {
+            writeFileSync(path, JSON.stringify(content));
+          }
+        })();
       };
 
-      const option: any = { startYear, startMonth, endYear, endMonth, limit: -1, groupTimeRange: 'month' };
+      const option: any = { startYear, startMonth, endYear, endMonth, limit: -1 };
       interface Field {
         sourceKey: string;
         targetKey: string;
@@ -428,6 +459,8 @@ ON a.id = b.id`;
       console.log('Export user info done');
     }
     await exportUserInfo();
+
+    console.log(`Task monthly export done.`);
   }
 };
 
