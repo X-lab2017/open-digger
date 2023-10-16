@@ -69,6 +69,7 @@ repo_default_branch,String,default branch of this repository,"PullRequest, PullR
 repo_created_at,DateTime,when this repository was created,"PullRequest, PullRequestReviewComment"
 repo_updated_at,DateTime,when this repository was updated,"PullRequest, PullRequestReviewComment"
 repo_pushed_at,DateTime,when this repository was pushed,"PullRequest, PullRequestReviewComment"
+repo_topics.name,LowCardinality(String),topics of a repository,"PullRequest, PullRequestReviewComment"
 pull_review_state,Enum,"pull request review state, like approved, commented, dismissed, changes_requested",PullRequestReview
 pull_review_author_association,Enum,"author association of pull review, like NONE, CONTRIBUTOR, COLLABORATOR, MEMBER, OWNER",PullRequestReview
 pull_review_id,UInt64,unique identity of this review on GitHub,PullRequestReviewComment
