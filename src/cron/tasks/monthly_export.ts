@@ -1,4 +1,4 @@
-import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'fs';
+import { appendFileSync, existsSync, mkdirSync, readFileSync, writeFileSync } from 'fs';
 import { join } from 'path';
 import { Task } from '..';
 import { query, queryStream } from '../../db/clickhouse';
@@ -9,6 +9,7 @@ import getConfig from '../../config';
 import { chaossActiveDatesAndTimes, chaossBusFactor, chaossChangeRequestAge, chaossChangeRequestResolutionDuration, chaossChangeRequestResponseTime, chaossChangeRequestReviews, chaossChangeRequests, chaossChangeRequestsAccepted, chaossCodeChangeLines, chaossInactiveContributors, chaossIssueAge, chaossIssueResolutionDuration, chaossIssueResponseTime, chaossIssuesAndChangeRequestActive, chaossIssuesClosed, chaossIssuesNew, chaossNewContributors, chaossTechnicalFork } from '../../metrics/chaoss';
 import { contributorEmailSuffixes, repoIssueComments, repoParticipants, repoStars } from '../../metrics/metrics';
 import { getLabelData } from '../../label_data_utils';
+import { EOL } from 'os';
 
 const task: Task = {
   cron: '0 0 5 * *',
@@ -300,7 +301,6 @@ const task: Task = {
       }
       console.log('Process user export task done.');
     };
-    await exportMetrics();
 
     const updateMetaData = (path: string, data: any) => {
       try {
@@ -336,7 +336,6 @@ const task: Task = {
       });
       console.log('Export owner meta data done.');
     };
-    await exportOwnerMeta();
 
     // export label data
     const exportLabelData = async () => {
@@ -432,7 +431,6 @@ ORDER BY openrank DESC`;
       }
       console.log('Export label data done.');
     };
-    await exportLabelData();
 
     const exportUserInfo = async () => {
       let processedCount = 0;
@@ -458,7 +456,33 @@ ON a.id = b.id`;
       });
       console.log('Export user info done');
     }
+
+    const exportAllRepoList = async () => {
+      const filePath = join(exportBasePath, 'repo_list.csv');
+      writeFileSync(filePath, `id,repo_name${EOL}`);
+      const query = `SELECT id, repo_name FROM ${exportRepoTableName}`;
+      await queryStream(query, row => {
+        const [id, name] = row;
+        appendFileSync(filePath, `${id},${name}${EOL}`);
+      });
+    };
+
+    const exportAllUserList = async () => {
+      const filePath = join(exportBasePath, 'user_list.csv');
+      writeFileSync(filePath, `id,actor_login${EOL}`);
+      const query = `SELECT id, actor_login FROM ${exportUserTableName}`;
+      await queryStream(query, row => {
+        const [id, login] = row;
+        appendFileSync(filePath, `${id},${login}${EOL}`);
+      });
+    };
+
+    await exportMetrics();
+    await exportOwnerMeta();
+    await exportLabelData();
     await exportUserInfo();
+    await exportAllRepoList();
+    await exportAllUserList();
 
     console.log(`Task monthly export done.`);
   }
