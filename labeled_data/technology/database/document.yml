@@ -15,6 +15,7 @@ data:
     - 19271154 # repo:JetBrains/xodus
     - 31315021 # repo:Kinto/kinto
     - 533032 # repo:LinkedInAttic/sensei
+    - 646427433 # repo:LonaDB/Hadro
     - 188354257 # repo:SequoiaDB/SequoiaDB
     - 474070793 # repo:SnellerInc/sneller
     - 6427744 # repo:Softmotions/ejdb
@@ -36,6 +37,7 @@ data:
     - 57401138 # repo:bitnine-oss/agensgraph
     - 127338417 # repo:bluzi/jsonstore
     - 234091935 # repo:c9fe/sirdb
+    - 639434928 # repo:cfu288/SylvieJS
     - 546206616 # repo:chroma-core/chroma
     - 13353426 # repo:cinchapi/concourse
     - 66783145 # repo:couchbase/couchbase-lite-core
@@ -66,6 +68,7 @@ data:
     - 376679845 # repo:losfair/RefineDB
     - 9795883 # repo:louischatriot/nedb
     - 520096046 # repo:marqo-ai/marqo
+    - 661663226 # repo:maxnowack/signaldb
     - 23315232 # repo:mbdavid/LiteDB
     - 130688011 # repo:meilisearch/meilisearch
     - 26573806 # repo:mgholam/RaptorDB-Document
@@ -104,6 +107,7 @@ data:
     - 3920536 # repo:teamdev/densodb
     - 11654790 # repo:techfort/LokiJS
     - 198466472 # repo:terminusdb/terminusdb
+    - 197858776 # repo:textileio/go-threads
     - 449924556 # repo:tigrisdata/tigris
     - 86339169 # repo:torodb/server
     - 184711 # repo:typicaljoe/taffydb

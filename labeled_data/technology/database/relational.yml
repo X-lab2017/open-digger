@@ -4,7 +4,6 @@ data:
   github_repo:
     - 346976717 # repo:4paradigm/OpenMLDB
     - 107504377 # repo:ADBSQL/AntDB
-    - 33552246 # repo:AILab-FOI/akdb
     - 623337117 # repo:ALTIBASE/altibase
     - 25780780 # repo:AlaSQL/alasql
     - 22427082 # repo:BTrDB/btrdb-server
@@ -52,7 +51,6 @@ data:
     - 49876476 # repo:apache/shardingsphere
     - 17165658 # repo:apache/spark
     - 17971138 # repo:apache/tajo
-    - 36349344 # repo:apache/trafodion
     - 3104540 # repo:apavlo/h-store
     - 134193743 # repo:apavlo/metalbase
     - 143436277 # repo:baidu/BaikalDB
@@ -64,6 +62,7 @@ data:
     - 92329433 # repo:canonical/dqlite
     - 372181547 # repo:cashapp/pranadb
     - 50874442 # repo:citusdata/citus
+    - 644742603 # repo:cloudberrydb/cloudberrydb
     - 207663235 # repo:cmu-db/bustub
     - 140325970 # repo:cmu-db/noisepage
     - 420965027 # repo:cnosdb/cnosdb
@@ -116,6 +115,7 @@ data:
     - 429630067 # repo:marsupialtail/quokka
     - 339993112 # repo:matrixorigin/matrixone
     - 71015036 # repo:mattbostock/timbala
+    - 463071559 # repo:minovakovi/akdb
     - 62660036 # repo:mozilla/mentat
     - 24494032 # repo:mysql/mysql-server
     - 351806852 # repo:neondatabase/neon
@@ -130,6 +130,7 @@ data:
     - 41986369 # repo:pingcap/tidb
     - 205350261 # repo:pinusdb/pinusdb
     - 14702444 # repo:pipelinedb/pipelinedb
+    - 510607652 # repo:pocketbase/pocketbase
     - 166387176 # repo:polypheny/Polypheny-DB
     - 927442 # repo:postgres/postgres
     - 258454329 # repo:ppml38/icecoal
@@ -152,8 +153,10 @@ data:
     - 151367139 # repo:stellarsql/StellarSQL
     - 12067343 # repo:stephentu/silo
     - 436658287 # repo:surrealdb/surrealdb
+    - 591304097 # repo:sutoiku/puffin
     - 196353673 # repo:taosdata/TDengine
     - 285012797 # repo:tensorbase/tensorbase
+    - 678214856 # repo:timeplus-io/proton
     - 443220240 # repo:tinyplex/tinybase
     - 22868877 # repo:traildb/traildb
     - 166515022 # repo:trinodb/trino
