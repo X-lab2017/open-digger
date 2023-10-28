@@ -2,6 +2,7 @@ name: Database - Object Oriented
 type: Tech-1
 data:
   github_repo:
+    - 107504377 # repo:ADBSQL/AntDB
     - 681142 # repo:Bobris/BTDB
     - 52080367 # repo:CUBRID/cubrid
     - 329729926 # repo:CondensationDB/Condensation-java
@@ -14,13 +15,16 @@ data:
     - 206403 # repo:apache/jackrabbit
     - 246343828 # repo:atoti/atoti
     - 396856161 # repo:authzed/spicedb
+    - 644742603 # repo:cloudberrydb/cloudberrydb
     - 95070401 # repo:devrexlabs/memstate
     - 95817032 # repo:edgedb/edgedb
     - 15001136 # repo:etoile/CoreObject
     - 42143916 # repo:fern4lvarez/piladb
     - 240387847 # repo:gaia-platform/GaiaPlatform
+    - 48279725 # repo:goshawkdb/server
     - 204261394 # repo:iboxdb/db4o-gpl
     - 5453989 # repo:jankotek/mapdb
+    - 119234782 # repo:jonahharris/osdb-beaglesql
     - 1776883 # repo:kimchy/compass
     - 25225465 # repo:markmeeus/MarcelloDB
     - 273564373 # repo:morecraf/Siaqodb
@@ -33,5 +37,4 @@ data:
     - 927442 # repo:postgres/postgres
     - 1917262 # repo:realm/realm-core
     - 3893984 # repo:tzaeschke/zoodb
-    - 88111990 # repo:zhihu/Matisse
     - 7357595 # repo:zopefoundation/ZODB
