@@ -1,4 +1,4 @@
-name: Artificial Intelligence - image
+name: Artificial Intelligence - application - image
 type: Tech-1
 data:
   github_repo:
@@ -9,3 +9,6 @@ data:
     - 625876964 # repo:open-mmlab/playground
     - 612427246 # repo:tatsu-lab/stanford_alpaca
     - 642323624 # repo:XingangPan/DragGAN
+    - 628419800 # repo:Vision-CAIR/MiniGPT-4
+    - 595893961 # repo:lllyasviel/ControlNet
+    - 523379232 # repo:CompVis/stable-diffusion

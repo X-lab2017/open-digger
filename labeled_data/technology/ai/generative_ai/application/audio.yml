@@ -1,4 +1,4 @@
-name: Artificial Intelligence - speech
+name: Artificial Intelligence - application - speech
 type: Tech-1
 data:
   github_repo:
@@ -15,3 +15,12 @@ data:
     - 90392762 # repo:common-voice/common-voice
     - 404457914 # repo:uberduck-ai/uberduck-ml-dev
     - 92691776 # repo:jovotech/jovo-framework
+    - 577603990 # repo:LAION-AI/Open-Assistant
+    - 629313011 # repo:pashpashpash/vault-ai
+    - 496363093 # repo:Harmonai-org/sample-generator
+    - 553119108 # repo:MubertAI/Mubert-Text-to-Music
+    - 594096901 # repo:lucidrains/musiclm-pytorch
+    - 6724235 # repo:Cortexelus/dadabots
+    - 251074388 # repo:AbhilashPal/MuseNet
+    - 650945129 # repo:facebookresearch/audiocraft
+    - 614719201 # repo:AIGC-Audio/AudioGPT

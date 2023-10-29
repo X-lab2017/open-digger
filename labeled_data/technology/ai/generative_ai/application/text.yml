@@ -1,4 +1,4 @@
-name: Artificial Intelligence - text
+name: Artificial Intelligence - application - text
 type: Tech-1
 data:
   github_repo:
@@ -21,3 +21,6 @@ data:
     - 607250778 # repo:copy-ai/copy-to-clipboard
     - 382919156 # repo:REGIE-io/react-pro-sidebar
     - 682555083 # repo:REGIE-io/LlamaIndexTS
+    - 617087362 # repo:martiansideofthemoon/ai-detection-paraphrases
+    - 644001706 # repo:aiwaves-cn/RecurrentGPT
+    - 577603990 # repo:LAION-AI/Open-Assistant
