@@ -1,0 +1,7 @@
+name: Artificial Intelligence - application - other
+type: Tech-1
+data:
+  github_repo:
+    - 636172550 # repo:WangRongsheng/MedQA-ChatGLM
+    - 667200726 # repo:DUOMO/TransGPT
+    - 679606269 # repo:zhihaiLLM/wisdomInterrogatory

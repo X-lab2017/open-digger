@@ -1,0 +1,12 @@
+name: Artificial Intelligence - model - fundamental model
+type: Tech-1
+data:
+  github_repo:
+    - 155220641 # huggingface/transformers
+    - 633841936 # dandelionsllm/pandallm
+    - 632503648 # repo:OpenBMB/CPM-Bee
+    - 170067246 # repo:openai/gpt-2
+    - 264870386 # repo:openai/gpt-3
+    - 601538369 # repo:facebookresearch/llama
+    - 552661142 # repo:langchain-ai/langchain
+    - 685444668 # repo:baichuan-inc/Baichuan2

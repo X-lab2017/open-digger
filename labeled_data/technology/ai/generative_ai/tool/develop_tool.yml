@@ -1,0 +1,21 @@
+name: Artificial Intelligence - tool - develop tool
+type: Tech-1
+data:
+   github_repo:
+      - 670778224 # Mintplex-Labs/vector-admin
+      - 626306555 # repo:unit-mesh/devti
+      - 627920448 # repo:unit-mesh/auto-dev
+      - 441778458 # repo:EleutherAI/pythia
+      - 639161229 # repo:poe-platform/server-bot-quick-start
+      - 616372661 # repo:binary-husky/gpt_academic
+      - 621258412 # repo:TencentARC-QQ/TagGPT
+      - 567185522 # repo:microsoft/torchscale
+      - 616992960 # repo:gd3kr/BlenderGPT
+      - 299282745 # repo:AIGMix/AIGCJson
+      - 422274596 # repo:hpcaitech/ColossalAI
+      - 616083282 # repo:OpenGVLab/LLaMA-Adapter
+      - 650549146 # repo:melih-unsal/DemoGPT
+      - 676608269 # repo:mshumer/gpt-llm-trainer
+      - 492713876 # repo:FlagAI-Open/FlagAI
+      - 525592995 # repo:invoke-ai/InvokeAI
+      - 631258918 # repo:gventuri/pandas-ai

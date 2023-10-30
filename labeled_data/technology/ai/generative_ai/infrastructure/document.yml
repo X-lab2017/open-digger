@@ -1,0 +1,26 @@
+name: Artificial Intelligence - infrastructure - document
+type: Tech-1
+data:
+  github_repo:
+    - 12104024 # datasciencemasters/go
+    - 99805855 # Kulbear/deep-learning-coursera
+    - 283004179 # fastai/fastai-docs
+    - 99190133 # susanli2016/NLP-with-Python
+    - 132798273 # GoogleCloudPlatform/tensorflow-without-a-phd
+    - 612015006 # GanymedeNil/document.ai
+    - 657179506 # phodal/aigc
+    - 603593003 # phodal/understand-prompt
+    - 604651852 # phodal/prompt-patterns
+    - 622091971 # unit-mesh/unit-minions
+    - 681516317 # repo:luban-agi/Awesome-AIGC-Tutorials
+    - 550752161 # repo:huggingface/diffusion-models-class
+    - 645830530 # repo:cystanford/aigc_LLM_engineering
+    - 624214839 # repo:liucongg/ChatGLM-Finetuning
+    - 601903423 # repo:wshzd/Awesome-AIGC
+    - 625084397 # repo:agiresearch/OpenAGI
+    - 574835594 # repo:cedrickchee/chatgpt-universe
+    - 621226745 # repo:shm007g/LLaMA-Cult-and-More
+    - 645830530 # repo:cystanford/aigc_LLM_engineering
+    - 634709298 # repo:km1994/LLMsNineStoryDemonTower
+    - 667480296 # repo:DjangoPeng/openai-quickstart
+    - 672337648 # repo:RahulSChand/llama2.c-for-dummies

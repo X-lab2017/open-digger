@@ -1,0 +1,28 @@
+name: Artificial Intelligence - infrastructure - vector database
+type: Tech-1
+data:
+  github_repo:
+    - 208728772 # milvus-io/milvus
+    - 81227005 # facebookresearch/faiss
+    - 11309795 # nmslib/nmslib
+    - 55072677 # weaviate/weaviate
+    - 388946490 # facebookincubator/velox
+    - 11627513 # guokr/simbase
+    - 268163609 # qdrant/qdrant
+    - 670778224 # Mintplex-Labs/vector-admin
+    - 664872761 # lanterndata/lantern
+    - 520096046 # marqo-ai/marqo
+    - 664133375 # epsilla-cloud/vectordb
+    - 551374215 # cozodb/cozo
+    - 478288303 # nuclia/nucliadb
+    - 628230315 # tensorchord/pgvecto.rs
+    - 598328694 # Azure-Samples/qdrant-azure
+    - 628503457 # jdagdelen/hyperDB
+    - 635374751 # jina-ai/vectordb
+    - 201403923 # activeloopai/deeplake
+    - 416959991 # dingodb/dingo
+    - 512438377 # DutytoDevelop/VDBLITE
+    - 9155431 # spotify/annoy
+    - 160775368 # vitrivr/cottontaildb
+    - 667164544 # xyntopia/vexvault
+    

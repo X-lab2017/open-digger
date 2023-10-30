@@ -1,4 +1,4 @@
-name: Artificial Intelligence - code
+name: Artificial Intelligence - application - code
 type: Tech-1
 data:
   github_repo:
@@ -14,3 +14,5 @@ data:
     - 639095114 # repo:ricklamers/gpt-code-ui
     - 625612711 # repo:ravenscroftj/turbopilot
     - 662766482 # repo:Codium-ai/pr-agent
+    - 634224458 # repo:AntonOsika/gpt-engineer
+    - 669882047 # repo:THUDM/CodeGeeX2
