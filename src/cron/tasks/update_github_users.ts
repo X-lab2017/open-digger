@@ -63,6 +63,9 @@ const task: Task = {
       \`bio\` String,
       \`email\` String,
       \`name\` String,
+      \`twitter_username\` String,
+      \`social_accounts.name\` Array(String),
+      \`social_accounts.provider\` Array(LowCardinality(String)),
       \`created_at\` DateTime
     )
     ENGINE = ReplacingMergeTree
