@@ -27,7 +27,9 @@ const task: Task = {
       \`country\` LowCardinality(String),
       \`administrative_area_level_1\` LowCardinality(String),
       \`administrative_area_level_2\` LowCardinality(String),
-      \`locality\` LowCardinality(String)
+      \`locality\` LowCardinality(String),
+      \`longitude\` Float32,
+      \`latitude\` Float32
     )
     ENGINE = ReplacingMergeTree
     ORDER BY (location)
@@ -56,12 +58,17 @@ const task: Task = {
             }
           } else {
             ret.status = 'normal';
+            const data = resp.json.results[0];
             ['country', 'administrative_area_level_1', 'administrative_area_level_2', 'locality'].forEach(k => {
-              const value = resp.json.results[0].address_components.find(i => i.types[0] === k);
+              const value = data.address_components.find(i => i.types[0] === k);
               if (value) {
                 ret[k] = value.long_name;
               }
             });
+            if (data?.geometry?.location) {
+              ret.latitude = data.geometry.location.lat;
+              ret.longitude = data.geometry.location.lng;
+            }
           }
           resolve(ret);
         });
