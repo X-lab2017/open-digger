@@ -16,7 +16,6 @@ const task: Task = {
   immediate: false,
   callback: async () => {
     const config = await getConfig();
-    const clickhouseClient = createClient(config.db.clickhouse);
 
     const githubApp = new App({
       id: config.github.appId,
@@ -61,7 +60,8 @@ const task: Task = {
       const result: any[] = [];
       let oct = await getOctokitClient(r);
       let count = 0;
-      for (const number of issues) {
+      for (let i = 0; i < issues.length;) {
+        const number = issues[i];
         try {
           const reactions: { id: number, created_at: string, content: string, user: { id: number, login: string } | null }[] = await oct.paginate('GET /repos/{owner}/{repo}/issues/{issue_number}/reactions', {
             owner, repo: name, issue_number: number,
@@ -81,11 +81,17 @@ const task: Task = {
             };
             result.push(item);
           }
-        } catch (e) {
+          i++;
+        } catch (e: any) {
           console.log(`Error on fetching reactions for ${r.name}#${number}, e=${e}`);
+          if (e.toString().includes('Bad credentials')) {
+            // rate limit hit, get new client and retry
+            oct = await getOctokitClient(r);
+            continue;
+          }
         }
         if (count++ > 3000) {
-          // re-generate client for every 3000 requests in case rate limit
+          // re-generate client for every 3000 requests in case hit rate limit
           count = 0;
           oct = await getOctokitClient(r);
         }
@@ -93,33 +99,32 @@ const task: Task = {
       return result;
     };
 
-    const stream = new Readable({
-      objectMode: true,
-      read: () => { },
-    });
-
-    (async () => {
-      const repos = await gettInstalledRepos();
-      console.log(`Got ${repos.length} repos to update.`);
-      for (const r of repos) {
-        const issues = await getUpdateIssues(r.id);
-        if (issues.length === 0) continue;
-        const reactions = await getReactions(r, issues);
-        if (reactions.length === 0) continue;
-        console.log(`Goona insert ${reactions.length} reactions for ${r.name}`);
-        for (const r of reactions) {
-          stream.push(r);
-        }
-      }
+    const insertReactions = async (reactions: any[]): Promise<void> => {
+      const clickhouseClient = createClient(config.db.clickhouse);
+      const stream = new Readable({
+        objectMode: true,
+        read: () => { },
+      });
+      for (const r of reactions) stream.push(r);
       stream.push(null);
-    })();
+      await clickhouseClient.insert({
+        table: 'gh_events',
+        values: stream,
+        format: 'JSONEachRow',
+      });
+      await clickhouseClient.close();
+    };
 
-    await clickhouseClient.insert({
-      table: 'gh_events',
-      values: stream,
-      format: 'JSONEachRow',
-    });
-    await clickhouseClient.close();
+    const repos = await gettInstalledRepos();
+    console.log(`Got ${repos.length} repos to update.`);
+    for (const r of repos) {
+      const issues = await getUpdateIssues(r.id);
+      if (issues.length === 0) continue;
+      const reactions = await getReactions(r, issues);
+      if (reactions.length === 0) continue;
+      console.log(`Goona insert ${reactions.length} reactions for ${r.name}`);
+      await insertReactions(reactions);
+    }
   }
 };
 
