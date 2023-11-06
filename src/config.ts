@@ -36,6 +36,8 @@ let config = {
   },
   github: {
     tokens: [],
+    appPrivateKeyPath: '',
+    appId: 0,
   },
   google: {
     map: {
