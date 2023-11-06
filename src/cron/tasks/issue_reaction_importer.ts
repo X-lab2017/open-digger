@@ -81,7 +81,6 @@ const task: Task = {
             };
             result.push(item);
           }
-          i++;
         } catch (e: any) {
           console.log(`Error on fetching reactions for ${r.name}#${number}, e=${e}`);
           if (e.toString().includes('Bad credentials')) {
@@ -90,6 +89,7 @@ const task: Task = {
             continue;
           }
         }
+        i++;
         if (count++ > 3000) {
           // re-generate client for every 3000 requests in case hit rate limit
           count = 0;
