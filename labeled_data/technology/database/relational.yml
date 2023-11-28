@@ -108,6 +108,7 @@ data:
     - 7502247 # repo:lealone/Lealone
     - 543276238 # repo:libsql/libsql
     - 509396909 # repo:lingo-db/lingo-db
+    - 323389945 # repo:logicalclocks/rondb
     - 23013460 # repo:lsst/qserv
     - 61153677 # repo:m3db/m3
     - 564689243 # repo:man-group/ArcticDB
