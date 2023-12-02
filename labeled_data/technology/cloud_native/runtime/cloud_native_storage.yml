@@ -1,29 +1,57 @@
 name: Cloud Native - Runtime - Cloud Native Storage
 type: Tech-2
 data:
-  github_repo:
-    - 7276954 # repo:alluxio/alluxio
-    - 397563881 # repo:carina-io/carina
-    - 2310495 # repo:ceph/ceph
-    - 91765224 # repo:container-storage-interface/spec
-    - 171396748 # repo:cubeFS/cubefs
-    - 276365255 # repo:opencurve/curve
-    - 1377037 # repo:gluster/glusterfs
-    - 466948543 # repo:hwameistor/hwameistor
-    - 327859577 # repo:juicedata/juicefs
-    - 166203864 # repo:k8up-io/k8up
-    - 117251051 # repo:LINBIT/linstor-server
-    - 88298561 # repo:longhorn/longhorn
-    - 29261473 # repo:minio/minio
-    - 50505775 # repo:moosefs/moosefs
-    - 64654523 # repo:openebs/openebs
-    - 32169193 # repo:open-io/oio-sds
-    - 162945532 # repo:oras-project/oras
-    - 226072757 # repo:piraeusdatastore/piraeus
-    - 62921553 # repo:rook/rook
-    - 77096333 # repo:sodafoundation/api
-    - 790019 # repo:openstack/swift
-    - 23597054 # repo:TritonDataCenter/manta
-    - 99143276 # repo:vmware-tanzu/velero
-    - 306631211 # repo:v6d-io/v6d
-    - 93576430 # repo:scality/zenko
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 7276954
+          name: alluxio/alluxio
+        - id: 397563881
+          name: carina-io/carina
+        - id: 2310495
+          name: ceph/ceph
+        - id: 91765224
+          name: container-storage-interface/spec
+        - id: 171396748
+          name: cubeFS/cubefs
+        - id: 276365255
+          name: opencurve/curve
+        - id: 1377037
+          name: gluster/glusterfs
+        - id: 466948543
+          name: hwameistor/hwameistor
+        - id: 327859577
+          name: juicedata/juicefs
+        - id: 166203864
+          name: k8up-io/k8up
+        - id: 117251051
+          name: LINBIT/linstor-server
+        - id: 88298561
+          name: longhorn/longhorn
+        - id: 29261473
+          name: minio/minio
+        - id: 50505775
+          name: moosefs/moosefs
+        - id: 64654523
+          name: openebs/openebs
+        - id: 32169193
+          name: open-io/oio-sds
+        - id: 162945532
+          name: oras-project/oras
+        - id: 226072757
+          name: piraeusdatastore/piraeus
+        - id: 62921553
+          name: rook/rook
+        - id: 77096333
+          name: sodafoundation/api
+        - id: 790019
+          name: openstack/swift
+        - id: 23597054
+          name: TritonDataCenter/manta
+        - id: 99143276
+          name: vmware-tanzu/velero
+        - id: 306631211
+          name: v6d-io/v6d
+        - id: 93576430
+          name: scality/zenko

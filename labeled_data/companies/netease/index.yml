@@ -1,8 +1,15 @@
 name: Netease
 type: Company
 data:
-  github_org:
-    - 1460597 # NetEase
-    - 14069894 # netease-im
-    - 34292813 # AirtestProject
-    - 21099191 # 163yun
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 1460597
+          name: NetEase
+        - id: 14069894
+          name: netease-im
+        - id: 34292813
+          name: AirtestProject
+        - id: 21099191
+          name: 163yun

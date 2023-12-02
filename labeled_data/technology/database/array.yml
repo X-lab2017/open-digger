@@ -1,13 +1,25 @@
 name: Database - Array
 type: Tech-1
 data:
-  github_repo:
-    - 534109388 # repo:EuclidOLAP/EuclidOLAP
-    - 86868560 # repo:TileDB-Inc/TileDB
-    - 17699493 # repo:cran/scidb
-    - 96580430 # repo:datajaguar/jaguardb
-    - 5407611 # repo:dioptre/rasdaman
-    - 664133375 # repo:epsilla-cloud/vectordb
-    - 45732002 # repo:jnidzwetzki/bboxdb
-    - 162765004 # repo:peermaps/eyros
-    - 156942199 # repo:perone/euclidesdb
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 534109388
+          name: EuclidOLAP/EuclidOLAP
+        - id: 86868560
+          name: TileDB-Inc/TileDB
+        - id: 17699493
+          name: cran/scidb
+        - id: 96580430
+          name: datajaguar/jaguardb
+        - id: 5407611
+          name: dioptre/rasdaman
+        - id: 664133375
+          name: epsilla-cloud/vectordb
+        - id: 45732002
+          name: jnidzwetzki/bboxdb
+        - id: 162765004
+          name: peermaps/eyros
+        - id: 156942199
+          name: perone/euclidesdb

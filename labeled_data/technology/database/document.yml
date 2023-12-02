@@ -1,125 +1,249 @@
 name: Database - Document
 type: Tech-1
 data:
-  github_repo:
-    - 215532341 # repo:256dpi/lungo
-    - 25780780 # repo:AlaSQL/alasql
-    - 61179047 # repo:Alachisoft/NosDB
-    - 522606931 # repo:Anna-Team/AnnaDB
-    - 396867188 # repo:ArcadeData/arcadedb
-    - 1374129 # repo:BaseXdb/basex
-    - 8799170 # repo:DevrexLabs/OrigoDB
-    - 422821402 # repo:FerretDB/FerretDB
-    - 605189726 # repo:FgForrest/evitaDB
-    - 8313554 # repo:Greg0/Lazer-Database
-    - 10296238 # repo:HouzuoGuo/tiedot
-    - 19271154 # repo:JetBrains/xodus
-    - 31315021 # repo:Kinto/kinto
-    - 533032 # repo:LinkedInAttic/sensei
-    - 646427433 # repo:LonaDB/Hadro
-    - 188354257 # repo:SequoiaDB/SequoiaDB
-    - 474070793 # repo:SnellerInc/sneller
-    - 6427744 # repo:Softmotions/ejdb
-    - 8428443 # repo:X2rdas/easedb
-    - 31976266 # repo:apache/asterixdb
-    - 206417 # repo:apache/couchdb
-    - 5683653 # repo:apache/drill
-    - 341631350 # repo:apache/lucene
-    - 341374920 # repo:apache/solr
-    - 114187903 # repo:apple/foundationdb
-    - 137869753 # repo:appy-one/acebase
-    - 2649214 # repo:arangodb/arangodb
-    - 36778364 # repo:attic-labs/noms
-    - 642912355 # repo:awa-ai/awadb
-    - 141378316 # repo:beardedeagle/mnesiac
-    - 88422672 # repo:bergdb/bergdb
-    - 2380364 # repo:berkeleydb/libdb
-    - 51290852 # repo:bigchaindb/bigchaindb
-    - 57401138 # repo:bitnine-oss/agensgraph
-    - 127338417 # repo:bluzi/jsonstore
-    - 234091935 # repo:c9fe/sirdb
-    - 639434928 # repo:cfu288/SylvieJS
-    - 546206616 # repo:chroma-core/chroma
-    - 13353426 # repo:cinchapi/concourse
-    - 66783145 # repo:couchbase/couchbase-lite-core
-    - 9342529 # repo:crate/crate
-    - 249981301 # repo:dappkit/aviondb
-    - 4732384 # repo:dcramer/mangodb
-    - 88777477 # repo:dizitart/nitrite-database
-    - 17684716 # repo:dsukhoroslov/bagri
-    - 11695619 # repo:eXist-db/exist
-    - 266444815 # repo:earthstar-project/earthstar
-    - 507775 # repo:elastic/elasticsearch
-    - 587246478 # repo:endatabas/endb
-    - 14143348 # repo:fakemongo/fongo
-    - 305513242 # repo:fluree/db
-    - 138411034 # repo:genjidb/genji
-    - 285669400 # repo:graphikDB/graphik
-    - 12050336 # repo:hhblaze/DBreeze
-    - 50836580 # repo:iboxdb/ftserver
-    - 4984118 # repo:ioquatix/relaxo
-    - 58524063 # repo:jclo/picodb
-    - 4859 # repo:jcrosby/cloudkit
-    - 628503457 # repo:jdagdelen/hyperDB
-    - 652189 # repo:jedisct1/Pincaster
-    - 635374751 # repo:jina-ai/vectordb
-    - 632269609 # repo:kagisearch/vectordb
-    - 1776883 # repo:kimchy/compass
-    - 607441698 # repo:lancedb/lancedb
-    - 376679845 # repo:losfair/RefineDB
-    - 9795883 # repo:louischatriot/nedb
-    - 520096046 # repo:marqo-ai/marqo
-    - 661663226 # repo:maxnowack/signaldb
-    - 23315232 # repo:mbdavid/LiteDB
-    - 130688011 # repo:meilisearch/meilisearch
-    - 26573806 # repo:mgholam/RaptorDB-Document
-    - 9595928 # repo:mirage/irmin
-    - 351190 # repo:mmcgrana/fleetdb
-    - 108110 # repo:mongodb/mongo
-    - 11380094 # repo:msiemens/tinydb
-    - 5912693 # repo:ncannasse/castle
-    - 33053071 # repo:oberasoftware/jasdb
-    - 3788366 # repo:openlink/virtuoso-opensource
-    - 192418550 # repo:oracle/nosql-go-sdk
-    - 48617634 # repo:orbitdb/orbit-db
-    - 7083240 # repo:orientechnologies/orientdb
-    - 453191009 # repo:ostafen/clover
-    - 2662146 # repo:patx/pickledb
-    - 39519916 # repo:percona/percona-server-mongodb
-    - 166387176 # repo:polypheny/Polypheny-DB
-    - 714074 # repo:pouchdb/pouchdb
-    - 5349565 # repo:prestodb/presto
-    - 10153163 # repo:priitj/whitedb
-    - 75425073 # repo:pubkey/rxdb
-    - 5665061 # repo:radare/sdb
-    - 129436009 # repo:rakibtg/SleekDB
-    - 542714 # repo:ravendb/ravendb
-    - 1917262 # repo:realm/realm-core
-    - 223462217 # repo:resilientdb/resilientdb
-    - 6452529 # repo:rethinkdb/rethinkdb
-    - 336867666 # repo:ribelo/doxa
-    - 34056205 # repo:sachin-sinha/BangDB
-    - 664816265 # repo:scratchdata/ScratchDB
-    - 5841618 # repo:sedna/sedna
-    - 9525219 # repo:sergeyksv/tingodb
-    - 4604367 # repo:sirixdb/sirix
-    - 295745510 # repo:small-tech/jsdb
-    - 436658287 # repo:surrealdb/surrealdb
-    - 22761491 # repo:symisc/unqlite
-    - 911980 # repo:tarantool/tarantool
-    - 3920536 # repo:teamdev/densodb
-    - 11654790 # repo:techfort/LokiJS
-    - 198466472 # repo:terminusdb/terminusdb
-    - 197858776 # repo:textileio/go-threads
-    - 449924556 # repo:tigrisdata/tigris
-    - 86339169 # repo:torodb/server
-    - 184711 # repo:typicaljoe/taffydb
-    - 18351848 # repo:typicode/lowdb
-    - 25364889 # repo:unnamed38/fueldb
-    - 186332888 # repo:vearch/vearch
-    - 634656527 # repo:vector5ai/vector5db
-    - 60377070 # repo:vespa-engine/vespa
-    - 735981 # repo:xapian/xapian
-    - 125824259 # repo:xtdb/xtdb
-    - 456549280 # repo:ydb-platform/ydb
-    - 47479424 # repo:zerodb/zerodb
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 215532341
+          name: 256dpi/lungo
+        - id: 25780780
+          name: AlaSQL/alasql
+        - id: 61179047
+          name: Alachisoft/NosDB
+        - id: 522606931
+          name: Anna-Team/AnnaDB
+        - id: 396867188
+          name: ArcadeData/arcadedb
+        - id: 1374129
+          name: BaseXdb/basex
+        - id: 8799170
+          name: DevrexLabs/OrigoDB
+        - id: 422821402
+          name: FerretDB/FerretDB
+        - id: 605189726
+          name: FgForrest/evitaDB
+        - id: 8313554
+          name: Greg0/Lazer-Database
+        - id: 10296238
+          name: HouzuoGuo/tiedot
+        - id: 19271154
+          name: JetBrains/xodus
+        - id: 31315021
+          name: Kinto/kinto
+        - id: 533032
+          name: LinkedInAttic/sensei
+        - id: 646427433
+          name: LonaDB/Hadro
+        - id: 188354257
+          name: SequoiaDB/SequoiaDB
+        - id: 474070793
+          name: SnellerInc/sneller
+        - id: 6427744
+          name: Softmotions/ejdb
+        - id: 8428443
+          name: X2rdas/easedb
+        - id: 31976266
+          name: apache/asterixdb
+        - id: 206417
+          name: apache/couchdb
+        - id: 5683653
+          name: apache/drill
+        - id: 341631350
+          name: apache/lucene
+        - id: 341374920
+          name: apache/solr
+        - id: 114187903
+          name: apple/foundationdb
+        - id: 137869753
+          name: appy-one/acebase
+        - id: 2649214
+          name: arangodb/arangodb
+        - id: 36778364
+          name: attic-labs/noms
+        - id: 642912355
+          name: awa-ai/awadb
+        - id: 141378316
+          name: beardedeagle/mnesiac
+        - id: 88422672
+          name: bergdb/bergdb
+        - id: 2380364
+          name: berkeleydb/libdb
+        - id: 51290852
+          name: bigchaindb/bigchaindb
+        - id: 57401138
+          name: bitnine-oss/agensgraph
+        - id: 127338417
+          name: bluzi/jsonstore
+        - id: 234091935
+          name: c9fe/sirdb
+        - id: 639434928
+          name: cfu288/SylvieJS
+        - id: 546206616
+          name: chroma-core/chroma
+        - id: 13353426
+          name: cinchapi/concourse
+        - id: 66783145
+          name: couchbase/couchbase-lite-core
+        - id: 9342529
+          name: crate/crate
+        - id: 249981301
+          name: dappkit/aviondb
+        - id: 4732384
+          name: dcramer/mangodb
+        - id: 88777477
+          name: dizitart/nitrite-database
+        - id: 17684716
+          name: dsukhoroslov/bagri
+        - id: 11695619
+          name: eXist-db/exist
+        - id: 266444815
+          name: earthstar-project/earthstar
+        - id: 507775
+          name: elastic/elasticsearch
+        - id: 587246478
+          name: endatabas/endb
+        - id: 14143348
+          name: fakemongo/fongo
+        - id: 305513242
+          name: fluree/db
+        - id: 138411034
+          name: genjidb/genji
+        - id: 285669400
+          name: graphikDB/graphik
+        - id: 12050336
+          name: hhblaze/DBreeze
+        - id: 50836580
+          name: iboxdb/ftserver
+        - id: 4984118
+          name: ioquatix/relaxo
+        - id: 58524063
+          name: jclo/picodb
+        - id: 4859
+          name: jcrosby/cloudkit
+        - id: 628503457
+          name: jdagdelen/hyperDB
+        - id: 652189
+          name: jedisct1/Pincaster
+        - id: 635374751
+          name: jina-ai/vectordb
+        - id: 632269609
+          name: kagisearch/vectordb
+        - id: 1776883
+          name: kimchy/compass
+        - id: 607441698
+          name: lancedb/lancedb
+        - id: 376679845
+          name: losfair/RefineDB
+        - id: 9795883
+          name: louischatriot/nedb
+        - id: 520096046
+          name: marqo-ai/marqo
+        - id: 661663226
+          name: maxnowack/signaldb
+        - id: 23315232
+          name: mbdavid/LiteDB
+        - id: 130688011
+          name: meilisearch/meilisearch
+        - id: 26573806
+          name: mgholam/RaptorDB-Document
+        - id: 9595928
+          name: mirage/irmin
+        - id: 351190
+          name: mmcgrana/fleetdb
+        - id: 108110
+          name: mongodb/mongo
+        - id: 11380094
+          name: msiemens/tinydb
+        - id: 5912693
+          name: ncannasse/castle
+        - id: 33053071
+          name: oberasoftware/jasdb
+        - id: 3788366
+          name: openlink/virtuoso-opensource
+        - id: 192418550
+          name: oracle/nosql-go-sdk
+        - id: 48617634
+          name: orbitdb/orbit-db
+        - id: 7083240
+          name: orientechnologies/orientdb
+        - id: 453191009
+          name: ostafen/clover
+        - id: 2662146
+          name: patx/pickledb
+        - id: 39519916
+          name: percona/percona-server-mongodb
+        - id: 166387176
+          name: polypheny/Polypheny-DB
+        - id: 714074
+          name: pouchdb/pouchdb
+        - id: 5349565
+          name: prestodb/presto
+        - id: 10153163
+          name: priitj/whitedb
+        - id: 75425073
+          name: pubkey/rxdb
+        - id: 5665061
+          name: radare/sdb
+        - id: 129436009
+          name: rakibtg/SleekDB
+        - id: 542714
+          name: ravendb/ravendb
+        - id: 1917262
+          name: realm/realm-core
+        - id: 223462217
+          name: resilientdb/resilientdb
+        - id: 6452529
+          name: rethinkdb/rethinkdb
+        - id: 336867666
+          name: ribelo/doxa
+        - id: 34056205
+          name: sachin-sinha/BangDB
+        - id: 664816265
+          name: scratchdata/ScratchDB
+        - id: 5841618
+          name: sedna/sedna
+        - id: 9525219
+          name: sergeyksv/tingodb
+        - id: 4604367
+          name: sirixdb/sirix
+        - id: 295745510
+          name: small-tech/jsdb
+        - id: 436658287
+          name: surrealdb/surrealdb
+        - id: 22761491
+          name: symisc/unqlite
+        - id: 911980
+          name: tarantool/tarantool
+        - id: 3920536
+          name: teamdev/densodb
+        - id: 11654790
+          name: techfort/LokiJS
+        - id: 198466472
+          name: terminusdb/terminusdb
+        - id: 197858776
+          name: textileio/go-threads
+        - id: 449924556
+          name: tigrisdata/tigris
+        - id: 86339169
+          name: torodb/server
+        - id: 184711
+          name: typicaljoe/taffydb
+        - id: 18351848
+          name: typicode/lowdb
+        - id: 25364889
+          name: unnamed38/fueldb
+        - id: 186332888
+          name: vearch/vearch
+        - id: 634656527
+          name: vector5ai/vector5db
+        - id: 60377070
+          name: vespa-engine/vespa
+        - id: 735981
+          name: xapian/xapian
+        - id: 125824259
+          name: xtdb/xtdb
+        - id: 456549280
+          name: ydb-platform/ydb
+        - id: 47479424
+          name: zerodb/zerodb

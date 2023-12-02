@@ -1,8 +1,15 @@
 name: Artificial Intelligence - infrastructure - platform & environment
 type: Tech-1
 data:
-  github_repo:
-    - 617788189 # repo:unit-mesh/unit-mesh
-    - 618345160 # repo:PhoebusSi/Alpaca-CoT
-    - 616997669 # repo:1595901624/gpt-aggregated-edition
-    - 612781022 # repo:getcursor/cursor
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 617788189
+          name: unit-mesh/unit-mesh
+        - id: 618345160
+          name: PhoebusSi/Alpaca-CoT
+        - id: 616997669
+          name: 1595901624/gpt-aggregated-edition
+        - id: 612781022
+          name: getcursor/cursor

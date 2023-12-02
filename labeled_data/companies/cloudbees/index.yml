@@ -1,5 +1,9 @@
 name: Cloudbees
 type: Company
 data:
-  github_org:
-    - 107424  # org:jenkinsci
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 107424
+          name: jenkinsci

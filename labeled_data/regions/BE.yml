@@ -1,5 +1,5 @@
 name: Belgium
 type: Region
 data:
-  label:
+  labels:
     - :companies/odoo

@@ -1,5 +1,9 @@
 name: Magento
 type: Company
 data:
-  github_org:
-    - 168457  # org:magento
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 168457
+          name: magento

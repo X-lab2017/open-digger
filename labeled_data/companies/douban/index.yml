@@ -1,5 +1,9 @@
 name: Douban
 type: Company
 data:
-  github_org:
-    - 1220164 # douban
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 1220164
+          name: douban

@@ -1,171 +1,341 @@
 name: Database - Key-value
 type: Tech-1
 data:
-  github_repo:
-    - 28956774 # repo:Alachisoft/NCache
-    - 28457976 # repo:AlticeLabsProjects/kyoto
-    - 12991321 # repo:Amaury/AngstromDB
-    - 17826843 # repo:AntidoteDB/antidote
-    - 396867188 # repo:ArcadeData/arcadedb
-    - 681142 # repo:Bobris/BTDB
-    - 1922333 # repo:BohuTANG/nessDB
-    - 8799170 # repo:DevrexLabs/OrigoDB
-    - 344711168 # repo:IceFireDB/IceFireDB
-    - 3019304 # repo:Incubaid/arakoon
-    - 202483348 # repo:KvrocksLabs/kvrocks
-    - 34406933 # repo:LMDB/lmdb
-    - 259542436 # repo:LineairDB/LineairDB
-    - 7085128 # repo:Nanolat/nldb
-    - 8103021 # repo:Netflix/EVCache
-    - 21985130 # repo:OpenHFT/Chronicle-Map
-    - 865412 # repo:OpenTSDB/opentsdb
-    - 80648455 # repo:PumpkinDB/PumpkinDB
-    - 26127968 # repo:Qihoo360/pika
-    - 18409684 # repo:RichardHightower/slumberdb
-    - 31363586 # repo:STSSoft/STSdb4
-    - 168712350 # repo:Snapchat/KeyDB
-    - 6427744 # repo:Softmotions/ejdb
-    - 64182745 # repo:SparrowDb/sparrowdb
-    - 321853986 # repo:Tencent/Tendis
-    - 13677899 # repo:Treode/store
-    - 180245584 # repo:YosiSF/EinsteinDB
-    - 96138741 # repo:YottaDB/YDB
-    - 124315604 # repo:aerospike/aerospike-server
-    - 116522453 # repo:akrylysov/pogreb
-    - 161674141 # repo:alash3al/redix
-    - 206424 # repo:apache/cassandra
-    - 34839383 # repo:apache/geode
-    - 31006158 # repo:apache/ignite
-    - 28738447 # repo:apache/kylin
-    - 114187903 # repo:apple/foundationdb
-    - 2649214 # repo:arangodb/arangodb
-    - 266515876 # repo:armink/FlashDB
-    - 457763204 # repo:avinassh/py-caskdb
-    - 6768410 # repo:badgerman/ennodb
-    - 613723 # repo:basho/riak
-    - 791522 # repo:basho/riak_kv
-    - 88422672 # repo:bergdb/bergdb
-    - 2380364 # repo:berkeleydb/libdb
-    - 51290852 # repo:bigchaindb/bigchaindb
-    - 57401138 # repo:bitnine-oss/agensgraph
-    - 15345331 # repo:boltdb/bolt
-    - 320459354 # repo:bytedance/terarkdb
-    - 33275300 # repo:cachelot/cachelot
-    - 1196286 # repo:cbd/edis
-    - 150013328 # repo:cberner/redb
-    - 220186120 # repo:codenotary/immudb
-    - 69400326 # repo:confluentinc/ksql
-    - 66783145 # repo:couchbase/couchbase-lite-core
-    - 12497058 # repo:couchbase/forestdb
-    - 811881 # repo:cruppstahl/upscaledb
-    - 125234630 # repo:danielealbano/cachegrand
-    - 96580430 # repo:datajaguar/jaguardb
-    - 292903178 # repo:deroproject/graviton
-    - 132499340 # repo:developit/histore
-    - 80087836 # repo:dgraph-io/badger
-    - 3115025 # repo:dlitz/resin
-    - 437245741 # repo:dragonflydb/dragonfly
-    - 17224514 # repo:ehcache/ehcache3
-    - 393005910 # repo:engula/engula
-    - 278320002 # repo:estraier/tkrzw
-    - 94593596 # repo:etcd-io/bbolt
-    - 11225014 # repo:etcd-io/etcd
-    - 6934395 # repo:facebook/rocksdb
-    - 70541093 # repo:facebookarchive/beringei
-    - 606800919 # repo:firstbatchxyz/hollowdb
-    - 292049131 # repo:genderev/assassin
-    - 67936193 # repo:gfredericks/quinedb
-    - 23405758 # repo:google/leveldb
-    - 21800722 # repo:goossaert/kingdb
-    - 52420005 # repo:griddb/griddb
-    - 170496871 # repo:gridgain/gridgain
-    - 154541438 # repo:gruns/ImmortalDB
-    - 2272541 # repo:gstrauss/mcdb
-    - 3786237 # repo:hazelcast/hazelcast
-    - 12050336 # repo:hhblaze/DBreeze
-    - 1202421 # repo:hibari/hibari
-    - 195895847 # repo:hivedb/hive
-    - 274184952 # repo:hoytech/quadrable
-    - 3502280 # repo:hthetiot/Tokyo-Tyrant
-    - 7561862 # repo:ideawu/ssdb
-    - 1050944 # repo:infinispan/infinispan
-    - 15625555 # repo:infoforcefeed/OlegDB
-    - 31342455 # repo:iondbproject/iondb
-    - 265390281 # repo:jakekgrog/GhostDB
-    - 5453989 # repo:jankotek/mapdb
-    - 547593 # repo:jingwei/krati
-    - 37932930 # repo:justin-db/JustinDB
-    - 191442206 # repo:kashirin-alex/swc-db
-    - 349627612 # repo:khonsulabs/bonsaidb
-    - 3102187 # repo:krestenkrab/hanoidb
-    - 19296225 # repo:ledisdb/ledisdb
-    - 38254684 # repo:linkedin/PalDB
-    - 323389945 # repo:logicalclocks/rondb
-    - 62980788 # repo:marceloboeira/bojack
-    - 30123805 # repo:mbdavid/FileDB
-    - 5494148 # repo:mchidk/BinaryRage
-    - 184981 # repo:memcached/memcached
-    - 331747853 # repo:microsoft/Extensible-Storage-Engine
-    - 143253020 # repo:microsoft/FASTER
-    - 1372117 # repo:nathanmarz/elephantdb
-    - 4211523 # repo:oleiade/Elevator
-    - 12106192 # repo:oleiade/trousseau
-    - 242776849 # repo:oracle/coherence
-    - 192418550 # repo:oracle/nosql-go-sdk
-    - 48617634 # repo:orbitdb/orbit-db
-    - 7083240 # repo:orientechnologies/orientdb
-    - 606125384 # repo:paypal/junodb
-    - 278684767 # repo:petermattis/pebble
-    - 502268740 # repo:photondb/photondb
-    - 37285717 # repo:pilgr/Paper
-    - 41986369 # repo:pingcap/tidb
-    - 5349565 # repo:prestodb/presto
-    - 385283362 # repo:prologic/bitcask
-    - 6838921 # repo:prometheus/prometheus
-    - 542714 # repo:ravendb/ravendb
-    - 156018 # repo:redis/redis
-    - 441299511 # repo:reductstore/reductstore
-    - 210997817 # repo:redwood/redwood
-    - 494545073 # repo:reesporte/bugfruit
-    - 76373812 # repo:rescrv/Consus
-    - 3493103 # repo:rescrv/HyperDex
-    - 10529222 # repo:rescrv/HyperLevelDB
-    - 4712089 # repo:reverbrain/elliptics
-    - 9847951 # repo:robmerrell/hipsterdb
-    - 345739 # repo:roma/roma
-    - 318972528 # repo:roseduan/rosedb
-    - 34056205 # repo:sachin-sinha/BangDB
-    - 354659748 # repo:saurabh0719/elara
-    - 33605302 # repo:scalaris-team/scalaris
-    - 715589 # repo:scalien/scaliendb
-    - 28449431 # repo:scylladb/scylla
-    - 121126549 # repo:simerplaha/SwayDB
-    - 276042304 # repo:skytable/skytable
-    - 49401416 # repo:spacejam/sled
-    - 462329984 # repo:speedb-io/speedb
-    - 36483902 # repo:spotify/heroic
-    - 34593732 # repo:stephenmcd/curiodb
-    - 454981666 # repo:streamnative/oxia
-    - 26888631 # repo:stripe/sequins
-    - 421444565 # repo:surrealdb/echodb
-    - 22761491 # repo:symisc/unqlite
-    - 911980 # repo:tarantool/tarantool
-    - 63731386 # repo:tidwall/buntdb
-    - 64404140 # repo:tidwall/redcon
-    - 70629059 # repo:tidwall/summitdb
-    - 184227406 # repo:tikv/agatedb
-    - 48833910 # repo:tikv/tikv
-    - 3114475 # repo:tomp2p/TomP2P
-    - 18800032 # repo:tonsky/datascript
-    - 223895357 # repo:tuxmonk/pupdb
-    - 179588377 # repo:vinniefalco/NuDB
-    - 385356389 # repo:vmware/splinterdb
-    - 214605 # repo:voldemort/voldemort
-    - 30828379 # repo:willemt/pearldb
-    - 2944302 # repo:wiredtiger/wiredtiger
-    - 65259211 # repo:xap/xap
-    - 160784930 # repo:xujiajun/nutsdb
-    - 137792810 # repo:yahoo/HaloDB
-    - 9048279 # repo:yinqiwen/ardb
-    - 105944401 # repo:yugabyte/yugabyte-db
-    - 7357595 # repo:zopefoundation/ZODB
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 28956774
+          name: Alachisoft/NCache
+        - id: 28457976
+          name: AlticeLabsProjects/kyoto
+        - id: 12991321
+          name: Amaury/AngstromDB
+        - id: 17826843
+          name: AntidoteDB/antidote
+        - id: 396867188
+          name: ArcadeData/arcadedb
+        - id: 681142
+          name: Bobris/BTDB
+        - id: 1922333
+          name: BohuTANG/nessDB
+        - id: 8799170
+          name: DevrexLabs/OrigoDB
+        - id: 344711168
+          name: IceFireDB/IceFireDB
+        - id: 3019304
+          name: Incubaid/arakoon
+        - id: 202483348
+          name: KvrocksLabs/kvrocks
+        - id: 34406933
+          name: LMDB/lmdb
+        - id: 259542436
+          name: LineairDB/LineairDB
+        - id: 7085128
+          name: Nanolat/nldb
+        - id: 8103021
+          name: Netflix/EVCache
+        - id: 21985130
+          name: OpenHFT/Chronicle-Map
+        - id: 865412
+          name: OpenTSDB/opentsdb
+        - id: 80648455
+          name: PumpkinDB/PumpkinDB
+        - id: 26127968
+          name: Qihoo360/pika
+        - id: 18409684
+          name: RichardHightower/slumberdb
+        - id: 31363586
+          name: STSSoft/STSdb4
+        - id: 168712350
+          name: Snapchat/KeyDB
+        - id: 6427744
+          name: Softmotions/ejdb
+        - id: 64182745
+          name: SparrowDb/sparrowdb
+        - id: 321853986
+          name: Tencent/Tendis
+        - id: 13677899
+          name: Treode/store
+        - id: 180245584
+          name: YosiSF/EinsteinDB
+        - id: 96138741
+          name: YottaDB/YDB
+        - id: 124315604
+          name: aerospike/aerospike-server
+        - id: 116522453
+          name: akrylysov/pogreb
+        - id: 161674141
+          name: alash3al/redix
+        - id: 206424
+          name: apache/cassandra
+        - id: 34839383
+          name: apache/geode
+        - id: 31006158
+          name: apache/ignite
+        - id: 28738447
+          name: apache/kylin
+        - id: 114187903
+          name: apple/foundationdb
+        - id: 2649214
+          name: arangodb/arangodb
+        - id: 266515876
+          name: armink/FlashDB
+        - id: 457763204
+          name: avinassh/py-caskdb
+        - id: 6768410
+          name: badgerman/ennodb
+        - id: 613723
+          name: basho/riak
+        - id: 791522
+          name: basho/riak_kv
+        - id: 88422672
+          name: bergdb/bergdb
+        - id: 2380364
+          name: berkeleydb/libdb
+        - id: 51290852
+          name: bigchaindb/bigchaindb
+        - id: 57401138
+          name: bitnine-oss/agensgraph
+        - id: 15345331
+          name: boltdb/bolt
+        - id: 320459354
+          name: bytedance/terarkdb
+        - id: 33275300
+          name: cachelot/cachelot
+        - id: 1196286
+          name: cbd/edis
+        - id: 150013328
+          name: cberner/redb
+        - id: 220186120
+          name: codenotary/immudb
+        - id: 69400326
+          name: confluentinc/ksql
+        - id: 66783145
+          name: couchbase/couchbase-lite-core
+        - id: 12497058
+          name: couchbase/forestdb
+        - id: 811881
+          name: cruppstahl/upscaledb
+        - id: 125234630
+          name: danielealbano/cachegrand
+        - id: 96580430
+          name: datajaguar/jaguardb
+        - id: 292903178
+          name: deroproject/graviton
+        - id: 132499340
+          name: developit/histore
+        - id: 80087836
+          name: dgraph-io/badger
+        - id: 3115025
+          name: dlitz/resin
+        - id: 437245741
+          name: dragonflydb/dragonfly
+        - id: 17224514
+          name: ehcache/ehcache3
+        - id: 393005910
+          name: engula/engula
+        - id: 278320002
+          name: estraier/tkrzw
+        - id: 94593596
+          name: etcd-io/bbolt
+        - id: 11225014
+          name: etcd-io/etcd
+        - id: 6934395
+          name: facebook/rocksdb
+        - id: 70541093
+          name: facebookarchive/beringei
+        - id: 606800919
+          name: firstbatchxyz/hollowdb
+        - id: 292049131
+          name: genderev/assassin
+        - id: 67936193
+          name: gfredericks/quinedb
+        - id: 23405758
+          name: google/leveldb
+        - id: 21800722
+          name: goossaert/kingdb
+        - id: 52420005
+          name: griddb/griddb
+        - id: 170496871
+          name: gridgain/gridgain
+        - id: 154541438
+          name: gruns/ImmortalDB
+        - id: 2272541
+          name: gstrauss/mcdb
+        - id: 3786237
+          name: hazelcast/hazelcast
+        - id: 12050336
+          name: hhblaze/DBreeze
+        - id: 1202421
+          name: hibari/hibari
+        - id: 195895847
+          name: hivedb/hive
+        - id: 274184952
+          name: hoytech/quadrable
+        - id: 3502280
+          name: hthetiot/Tokyo-Tyrant
+        - id: 7561862
+          name: ideawu/ssdb
+        - id: 1050944
+          name: infinispan/infinispan
+        - id: 15625555
+          name: infoforcefeed/OlegDB
+        - id: 31342455
+          name: iondbproject/iondb
+        - id: 265390281
+          name: jakekgrog/GhostDB
+        - id: 5453989
+          name: jankotek/mapdb
+        - id: 547593
+          name: jingwei/krati
+        - id: 37932930
+          name: justin-db/JustinDB
+        - id: 191442206
+          name: kashirin-alex/swc-db
+        - id: 349627612
+          name: khonsulabs/bonsaidb
+        - id: 3102187
+          name: krestenkrab/hanoidb
+        - id: 19296225
+          name: ledisdb/ledisdb
+        - id: 38254684
+          name: linkedin/PalDB
+        - id: 323389945
+          name: logicalclocks/rondb
+        - id: 62980788
+          name: marceloboeira/bojack
+        - id: 30123805
+          name: mbdavid/FileDB
+        - id: 5494148
+          name: mchidk/BinaryRage
+        - id: 184981
+          name: memcached/memcached
+        - id: 331747853
+          name: microsoft/Extensible-Storage-Engine
+        - id: 143253020
+          name: microsoft/FASTER
+        - id: 1372117
+          name: nathanmarz/elephantdb
+        - id: 4211523
+          name: oleiade/Elevator
+        - id: 12106192
+          name: oleiade/trousseau
+        - id: 242776849
+          name: oracle/coherence
+        - id: 192418550
+          name: oracle/nosql-go-sdk
+        - id: 48617634
+          name: orbitdb/orbit-db
+        - id: 7083240
+          name: orientechnologies/orientdb
+        - id: 606125384
+          name: paypal/junodb
+        - id: 278684767
+          name: petermattis/pebble
+        - id: 502268740
+          name: photondb/photondb
+        - id: 37285717
+          name: pilgr/Paper
+        - id: 41986369
+          name: pingcap/tidb
+        - id: 5349565
+          name: prestodb/presto
+        - id: 385283362
+          name: prologic/bitcask
+        - id: 6838921
+          name: prometheus/prometheus
+        - id: 542714
+          name: ravendb/ravendb
+        - id: 156018
+          name: redis/redis
+        - id: 441299511
+          name: reductstore/reductstore
+        - id: 210997817
+          name: redwood/redwood
+        - id: 494545073
+          name: reesporte/bugfruit
+        - id: 76373812
+          name: rescrv/Consus
+        - id: 3493103
+          name: rescrv/HyperDex
+        - id: 10529222
+          name: rescrv/HyperLevelDB
+        - id: 4712089
+          name: reverbrain/elliptics
+        - id: 9847951
+          name: robmerrell/hipsterdb
+        - id: 345739
+          name: roma/roma
+        - id: 318972528
+          name: roseduan/rosedb
+        - id: 34056205
+          name: sachin-sinha/BangDB
+        - id: 354659748
+          name: saurabh0719/elara
+        - id: 33605302
+          name: scalaris-team/scalaris
+        - id: 715589
+          name: scalien/scaliendb
+        - id: 28449431
+          name: scylladb/scylla
+        - id: 121126549
+          name: simerplaha/SwayDB
+        - id: 276042304
+          name: skytable/skytable
+        - id: 49401416
+          name: spacejam/sled
+        - id: 462329984
+          name: speedb-io/speedb
+        - id: 36483902
+          name: spotify/heroic
+        - id: 34593732
+          name: stephenmcd/curiodb
+        - id: 454981666
+          name: streamnative/oxia
+        - id: 26888631
+          name: stripe/sequins
+        - id: 421444565
+          name: surrealdb/echodb
+        - id: 22761491
+          name: symisc/unqlite
+        - id: 911980
+          name: tarantool/tarantool
+        - id: 63731386
+          name: tidwall/buntdb
+        - id: 64404140
+          name: tidwall/redcon
+        - id: 70629059
+          name: tidwall/summitdb
+        - id: 184227406
+          name: tikv/agatedb
+        - id: 48833910
+          name: tikv/tikv
+        - id: 3114475
+          name: tomp2p/TomP2P
+        - id: 18800032
+          name: tonsky/datascript
+        - id: 223895357
+          name: tuxmonk/pupdb
+        - id: 179588377
+          name: vinniefalco/NuDB
+        - id: 385356389
+          name: vmware/splinterdb
+        - id: 214605
+          name: voldemort/voldemort
+        - id: 30828379
+          name: willemt/pearldb
+        - id: 2944302
+          name: wiredtiger/wiredtiger
+        - id: 65259211
+          name: xap/xap
+        - id: 160784930
+          name: xujiajun/nutsdb
+        - id: 137792810
+          name: yahoo/HaloDB
+        - id: 9048279
+          name: yinqiwen/ardb
+        - id: 105944401
+          name: yugabyte/yugabyte-db
+        - id: 7357595
+          name: zopefoundation/ZODB

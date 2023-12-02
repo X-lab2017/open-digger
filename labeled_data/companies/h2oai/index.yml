@@ -1,5 +1,9 @@
 name: H2O AI
 type: Company
 data:
-  github_org:
-    - 1402695 # org:h2oai
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 1402695
+          name: h2oai

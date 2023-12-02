@@ -1,5 +1,9 @@
 name: Youzan
 type: Company
 data:
-  github_org:
-    - 11404085 # youzan
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 11404085
+          name: youzan

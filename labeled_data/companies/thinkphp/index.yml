@@ -1,5 +1,9 @@
 name: ThinkPHP
 type: Company
 data:
-  github_org:
-    - 16305258  # org:top-think
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 16305258
+          name: top-think

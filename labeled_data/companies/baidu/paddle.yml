@@ -1,5 +1,14 @@
 name: PaddlePaddle
 type: Project
 data:
-  github_org:
-    - 23534030 # PaddlePaddle
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 23534030
+          name: PaddlePaddle
+    - name: Gitee
+      type: Code Hosting
+      orgs:
+        - id: 5746888
+          name: paddlepaddle

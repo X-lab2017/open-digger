@@ -1,5 +1,9 @@
 name: Juejin
 type: Company
 data:
-  github_org:
-    - 10482599 # xitu
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 10482599
+          name: xitu

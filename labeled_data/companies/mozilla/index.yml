@@ -1,6 +1,11 @@
 name: Mozilla
 type: Company
 data:
-  github_org:
-    - 131524 # org:mozilla
-    - 22351667 # org:mozilla-mobile
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 131524
+          name: mozilla
+        - id: 22351667
+          name: mozilla-mobile

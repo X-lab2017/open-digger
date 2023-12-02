@@ -1,7 +1,13 @@
 name: PayPal
 type: Company
 data:
-  github_org:
-    - 476675 # org:paypal
-    - 7001600 # org:krakenjs
-    - 1517544 # org:card-io
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 476675
+          name: paypal
+        - id: 7001600
+          name: krakenjs
+        - id: 1517544
+          name: card-io

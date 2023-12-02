@@ -1,5 +1,9 @@
 name: Cloud Wise
 type: Company
 data:
-  github_org:
-    - 20625392 # org:CloudWise-OpenSource
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 20625392
+          name: CloudWise-OpenSource

@@ -1,5 +1,9 @@
 name: Sourcefire
 type: Company
 data:
-  github_org:
-    - 38250620  # org:snort3
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 38250620
+          name: snort3

@@ -1,26 +1,51 @@
 name: Artificial Intelligence - application - audio
 type: Tech-1
 data:
-  github_repo:
-    - 619143361 # repo:elevenlabs/elevenlabs-python
-    - 338338954 # repo:resemble-ai/resemble-alexa
-    - 576069143 # repo:ZohaibAhmed/ChatGPT-Voice
-    - 552264768 # repo:babysplly/Wellsaidlabs
-    - 265612440 # repo:coqui-ai/TTS
-    - 584022883 # repo:yacineMTB/scribepod
-    - 672176742 # repo:Plachtaa/VALL-E-X
-    - 452939314 # repo:neonbjb/tortoise-tts
-    - 624994625 # repo:suno-ai/bark
-    - 59299524 # repo:MycroftAI/mycroft-core
-    - 90392762 # repo:common-voice/common-voice
-    - 404457914 # repo:uberduck-ai/uberduck-ml-dev
-    - 92691776 # repo:jovotech/jovo-framework
-    - 577603990 # repo:LAION-AI/Open-Assistant
-    - 629313011 # repo:pashpashpash/vault-ai
-    - 496363093 # repo:Harmonai-org/sample-generator
-    - 553119108 # repo:MubertAI/Mubert-Text-to-Music
-    - 594096901 # repo:lucidrains/musiclm-pytorch
-    - 6724235 # repo:Cortexelus/dadabots
-    - 251074388 # repo:AbhilashPal/MuseNet
-    - 650945129 # repo:facebookresearch/audiocraft
-    - 614719201 # repo:AIGC-Audio/AudioGPT
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 619143361
+          name: elevenlabs/elevenlabs-python
+        - id: 338338954
+          name: resemble-ai/resemble-alexa
+        - id: 576069143
+          name: ZohaibAhmed/ChatGPT-Voice
+        - id: 552264768
+          name: babysplly/Wellsaidlabs
+        - id: 265612440
+          name: coqui-ai/TTS
+        - id: 584022883
+          name: yacineMTB/scribepod
+        - id: 672176742
+          name: Plachtaa/VALL-E-X
+        - id: 452939314
+          name: neonbjb/tortoise-tts
+        - id: 624994625
+          name: suno-ai/bark
+        - id: 59299524
+          name: MycroftAI/mycroft-core
+        - id: 90392762
+          name: common-voice/common-voice
+        - id: 404457914
+          name: uberduck-ai/uberduck-ml-dev
+        - id: 92691776
+          name: jovotech/jovo-framework
+        - id: 577603990
+          name: LAION-AI/Open-Assistant
+        - id: 629313011
+          name: pashpashpash/vault-ai
+        - id: 496363093
+          name: Harmonai-org/sample-generator
+        - id: 553119108
+          name: MubertAI/Mubert-Text-to-Music
+        - id: 594096901
+          name: lucidrains/musiclm-pytorch
+        - id: 6724235
+          name: Cortexelus/dadabots
+        - id: 251074388
+          name: AbhilashPal/MuseNet
+        - id: 650945129
+          name: facebookresearch/audiocraft
+        - id: 614719201
+          name: AIGC-Audio/AudioGPT

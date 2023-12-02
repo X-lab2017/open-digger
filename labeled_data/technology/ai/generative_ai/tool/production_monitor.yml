@@ -1,6 +1,11 @@
 name: Artificial Intelligence - production monitor
 type: Tech-1
 data:
-  github_repo:
-    - 639699692 # repo:hkust-nlp/ceval
-    - 642020947 # repo:RUCAIBox/POPE
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 639699692
+          name: hkust-nlp/ceval
+        - id: 642020947
+          name: RUCAIBox/POPE

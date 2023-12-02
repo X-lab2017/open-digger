@@ -1,10 +1,18 @@
 name: Salesforce
 type: Company
 data:
-  github_repo:
-    - 7827081 # repo:apache/predictionio/
-  github_org:
-    - 453694 # org:salesforce
-    - 35349060 # org:oclif
-    - 5579724 # org:raml-org
-    - 6142534 # org:datorama
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 7827081
+          name: apache/predictionio/
+      orgs:
+        - id: 453694
+          name: salesforce
+        - id: 35349060
+          name: oclif
+        - id: 5579724
+          name: raml-org
+        - id: 6142534
+          name: datorama

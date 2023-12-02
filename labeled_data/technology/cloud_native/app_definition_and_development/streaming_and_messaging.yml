@@ -1,28 +1,55 @@
 name: Cloud Native - App Definition and Development - Streaming & Messaging
 type: Tech-2
 data:
-  github_repo:
-    - 43158694 # repo:apache/incubator-heron
-    - 27911088 # repo:apache/nifi
-    - 75164823 # repo:apache/rocketmq
-    - 17165658 # repo:apache/spark
-    - 14135470 # repo:apache/storm
-    - 50904245 # repo:apache/beam
-    - 419433905 # repo:cdevents/spec
-    - 113701924 # repo:cloudevents/spec
-    - 26390092 # repo:deepstreamIO/deepstream.io
-    - 7202769 # repo:emqx/emqx
-    - 20587599 # repo:apache/flink
-    - 205473061 # repo:infinyon/fluvio
-    - 2211243 # repo:apache/kafka
-    - 163074901 # repo:kubemq-io/kubemq-community
-    - 454372510 # repo:memphisdev/memphis-broker
-    - 6443435 # repo:nats-io/nats-server
-    - 86400116 # repo:openmessaging/openmessaging-java
-    - 63096822 # repo:pravega/pravega
-    - 62117812 # repo:apache/pulsar
-    - 924551 # repo:rabbitmq/rabbitmq-server
-    - 99412308 # repo:apache/incubator-seatunnel
-    - 18988631 # repo:siddhi-io/siddhi
-    - 58194180 # repo:strimzi/strimzi-kafka-operator
-    - 211798430 # repo:tremor-rs/tremor-runtime
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 43158694
+          name: apache/incubator-heron
+        - id: 27911088
+          name: apache/nifi
+        - id: 75164823
+          name: apache/rocketmq
+        - id: 17165658
+          name: apache/spark
+        - id: 14135470
+          name: apache/storm
+        - id: 50904245
+          name: apache/beam
+        - id: 419433905
+          name: cdevents/spec
+        - id: 113701924
+          name: cloudevents/spec
+        - id: 26390092
+          name: deepstreamIO/deepstream.io
+        - id: 7202769
+          name: emqx/emqx
+        - id: 20587599
+          name: apache/flink
+        - id: 205473061
+          name: infinyon/fluvio
+        - id: 2211243
+          name: apache/kafka
+        - id: 163074901
+          name: kubemq-io/kubemq-community
+        - id: 454372510
+          name: memphisdev/memphis-broker
+        - id: 6443435
+          name: nats-io/nats-server
+        - id: 86400116
+          name: openmessaging/openmessaging-java
+        - id: 63096822
+          name: pravega/pravega
+        - id: 62117812
+          name: apache/pulsar
+        - id: 924551
+          name: rabbitmq/rabbitmq-server
+        - id: 99412308
+          name: apache/incubator-seatunnel
+        - id: 18988631
+          name: siddhi-io/siddhi
+        - id: 58194180
+          name: strimzi/strimzi-kafka-operator
+        - id: 211798430
+          name: tremor-rs/tremor-runtime

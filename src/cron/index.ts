@@ -1,6 +1,7 @@
 import { existsSync, readdirSync } from 'fs';
 import { join } from 'path';
 import cron from 'node-cron';
+import { getLogger } from '../utils';
 
 export interface Task {
   cron: string;
@@ -10,9 +11,11 @@ export interface Task {
 }
 
 (async () => {
+  const logger = getLogger('TaskRunner');
+
   const taskDir = join(__dirname, './tasks');
   if (!existsSync(taskDir)) {
-    console.log('Task dir not exists.');
+    logger.info('Task dir not exists.');
     return;
   }
 
@@ -21,30 +24,30 @@ export interface Task {
     const p = join(taskDir, taskFile);
     const task: Task = await import(p);
     if (!task.cron || !task.callback) {
-      console.log(`Task in ${taskFile} is not a valid task.`);
+      logger.error(`Task in ${taskFile} is not a valid task.`);
       return;
     }
     if (task.enable) {
-      console.log(`Enable task: ${taskFile}`);
+      logger.info(`Enable task: ${taskFile}`);
       cron.schedule(task.cron, t => {
         return new Promise<void>(async resolve => {
           try {
-            console.log(`Start to run task for ${taskFile}`);
+            logger.info(`Start to run task for ${taskFile}`);
             await task.callback(t);
-            console.log(`Task ${taskFile} finished.`);
+            logger.info(`Task ${taskFile} finished.`);
           } catch (e) {
-            console.log(e);
+            logger.error(e);
           }
           resolve();
         });
       });
       if (task.immediate) {
         try {
-          console.log(`Start to run task for ${taskFile}`);
+          logger.info(`Start to run task for ${taskFile}`);
           await task.callback(new Date());
-          console.log(`Task ${taskFile} finished.`);
+          logger.info(`Task ${taskFile} finished.`);
         } catch (e) {
-          console.log(e);
+          logger.error(e);
         }
       }
     }

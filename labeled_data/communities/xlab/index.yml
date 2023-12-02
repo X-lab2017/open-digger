@@ -1,54 +1,102 @@
 name: X-lab
 type: Community
 data:
-  label:
+  labels:
     - hypertrons
     - open_digger
     - open_galaxy
-  github_org:
-    - 49427213 # X-lab2017
-    - 106748077 # OpenEduTech
-  github_user:
-    - 15010826 # will-ww 王伟
-    - 5781345  # tvbboy 蒲鹏
-    - 31360564 # AliceCodeZhang 张琰彬
-    - 8512426  # frank-zsy 赵生宇
-    - 62591087 # wangleo61 王永雷
-    - 32434520 # tyn1998 唐烨男
-    - 15813364 # bifenglin 毕枫林
-    - 39022409 # zhicheng-ning 宁志成
-    - 37795442 # xgdyp 张翔宇
-    - 37684061 # gymgym1212 顾业鸣
-    - 56542972 # xiaoya-yaya 夏小雅
-    - 44364729 # kongzhongsanbu 杨鸣
-    - 40617667 # birdflyi 娄泽华
-    - 20661689 # soobun 苏斌
-    - 2922845  # chunchill 邱娟
-    - 61407528 # wengzhenjie 翁振杰
-    - 29705275 # yoyo-wu98 吴双
-    - 59213474 # zhuxiangning 朱香宁
-    - 91717658 # longyanz 张欣然
-    - 39040502 # JingbenShi668 史经犇
-    - 39271899 # wxharry 吴晓涵
-    - 29674550 # PureNatural 韩凡宇
-    - 66980876 # Best-Eminem 程一珂
-    - 36123793 # betaberry 王原昭
-    - 90825536 # foursevenlove 司琦
-    - 41559368 # lijinlus 李锦路
-    - 91596325 # blackburnnnn 雷镇豪
-    - 65549549 # Kx-Chen-99 陈可璇
-    - 37958710 # 19883235 俞泽恺
-    - 62098023 # wj23027 王婕
-    - 50283262 # andyhuang18 黄温瑞
-    - 104072573 # lhbvvvvv 李鸿斌
-    - 115639837 # Zzzzzhuzhiwei 朱志炜
-    - 57035291 # lucky-xmyu 卢春雨
-    - 84566503 # Miaheeee 何雨晴
-    - 16789827 # dlimeng 李孟
-    - 90242019 # Bruce-Jay 林以任
-    - 34496563 # Nliver 李小明
-    - 40034603 # TieWay59 伍泰炜
-    - 68376741 # Tenth-crew 游明东
-    - 135088663 # wangyantong2000 王衍童
-    - 79428895 # zhaosj975 赵思嘉
-    - 82229350 # huangfan0 黄帆
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 49427213
+          name: X-lab2017
+        - id: 106748077
+          name: OpenEduTech
+      users:
+        - id: 15010826
+          name: will-ww 王伟
+        - id: 5781345
+          name: tvbboy 蒲鹏
+        - id: 31360564
+          name: AliceCodeZhang 张琰彬
+        - id: 8512426
+          name: frank-zsy 赵生宇
+        - id: 62591087
+          name: wangleo61 王永雷
+        - id: 32434520
+          name: tyn1998 唐烨男
+        - id: 15813364
+          name: bifenglin 毕枫林
+        - id: 39022409
+          name: zhicheng-ning 宁志成
+        - id: 37795442
+          name: xgdyp 张翔宇
+        - id: 37684061
+          name: gymgym1212 顾业鸣
+        - id: 56542972
+          name: xiaoya-yaya 夏小雅
+        - id: 44364729
+          name: kongzhongsanbu 杨鸣
+        - id: 40617667
+          name: birdflyi 娄泽华
+        - id: 20661689
+          name: soobun 苏斌
+        - id: 2922845
+          name: chunchill 邱娟
+        - id: 61407528
+          name: wengzhenjie 翁振杰
+        - id: 29705275
+          name: yoyo-wu98 吴双
+        - id: 59213474
+          name: zhuxiangning 朱香宁
+        - id: 91717658
+          name: longyanz 张欣然
+        - id: 39040502
+          name: JingbenShi668 史经犇
+        - id: 39271899
+          name: wxharry 吴晓涵
+        - id: 29674550
+          name: PureNatural 韩凡宇
+        - id: 66980876
+          name: Best-Eminem 程一珂
+        - id: 36123793
+          name: betaberry 王原昭
+        - id: 90825536
+          name: foursevenlove 司琦
+        - id: 41559368
+          name: lijinlus 李锦路
+        - id: 91596325
+          name: blackburnnnn 雷镇豪
+        - id: 65549549
+          name: Kx-Chen-99 陈可璇
+        - id: 37958710
+          name: 19883235 俞泽恺
+        - id: 62098023
+          name: wj23027 王婕
+        - id: 50283262
+          name: andyhuang18 黄温瑞
+        - id: 104072573
+          name: lhbvvvvv 李鸿斌
+        - id: 115639837
+          name: Zzzzzhuzhiwei 朱志炜
+        - id: 57035291
+          name: lucky-xmyu 卢春雨
+        - id: 84566503
+          name: Miaheeee 何雨晴
+        - id: 16789827
+          name: dlimeng 李孟
+        - id: 90242019
+          name: Bruce-Jay 林以任
+        - id: 34496563
+          name: Nliver 李小明
+        - id: 40034603
+          name: TieWay59 伍泰炜
+        - id: 68376741
+          name: Tenth-crew 游明东
+        - id: 135088663
+          name: wangyantong2000 王衍童
+        - id: 79428895
+          name: zhaosj975 赵思嘉
+        - id: 82229350
+          name: huangfan0 黄帆

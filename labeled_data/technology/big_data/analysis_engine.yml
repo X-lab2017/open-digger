@@ -1,38 +1,75 @@
 name: Big Data - Analysis Engine
 type: Tech-1
 data:
-  github_repo:
-    - 17165658 # repo:apache/spark
-    - 60246359 # repo:ClickHouse/ClickHouse
-    - 5349565 # repo:prestodb/presto
-    - 84240850 # repo:timescale/timescaledb
-    - 6358188 # repo:apache/druid
-    - 206424 # repo:apache/cassandra
-    - 166515022 # repo:trinodb/trino
-    - 334274271 # repo:opensearch-project/OpenSearch
-    - 138754790 # repo:duckdb/duckdb
-    - 99919302 # repo:apache/doris
-    - 20089857 # repo:apache/hbase
-    - 206444 # repo:apache/hive
-    - 50229487 # repo:apache/lucene-solr
-    - 19961085 # repo:apache/pinot
-    - 28738447 # repo:apache/kylin
-    - 206417 # repo:apache/couchdb
-    - 402945349 # repo:StarRocks/starrocks
-    - 149626591 # repo:uber/aresdb
-    - 158975124 # repo:apache/iotdb
-    - 141376301 # repo:apache/incubator-hugegraph
-    - 44781140 # repo:greenplum-db/gpdb
-    - 5683653 # repo:apache/drill
-    - 202483348 # repo:apache/incubator-kvrocks
-    - 358917318 # repo:apache/arrow-datafusion
-    - 9342529 # repo:crate/crate
-    - 341631350 # repo:apache/lucene
-    - 20473418 # repo:apache/phoenix
-    - 56128733 # repo:apache/impala
-    - 59475316 # repo:eventql/eventql
-    - 41952293 # repo:apache/hawq
-    - 206357 # repo:apache/pig
-    - 341374920 # repo:apache/solr
-    - 9290699 # repo:apache/tez
-    - 507775 # repo:elastic/elasticsearch
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 17165658
+          name: apache/spark
+        - id: 60246359
+          name: ClickHouse/ClickHouse
+        - id: 5349565
+          name: prestodb/presto
+        - id: 84240850
+          name: timescale/timescaledb
+        - id: 6358188
+          name: apache/druid
+        - id: 206424
+          name: apache/cassandra
+        - id: 166515022
+          name: trinodb/trino
+        - id: 334274271
+          name: opensearch-project/OpenSearch
+        - id: 138754790
+          name: duckdb/duckdb
+        - id: 99919302
+          name: apache/doris
+        - id: 20089857
+          name: apache/hbase
+        - id: 206444
+          name: apache/hive
+        - id: 50229487
+          name: apache/lucene-solr
+        - id: 19961085
+          name: apache/pinot
+        - id: 28738447
+          name: apache/kylin
+        - id: 206417
+          name: apache/couchdb
+        - id: 402945349
+          name: StarRocks/starrocks
+        - id: 149626591
+          name: uber/aresdb
+        - id: 158975124
+          name: apache/iotdb
+        - id: 141376301
+          name: apache/incubator-hugegraph
+        - id: 44781140
+          name: greenplum-db/gpdb
+        - id: 5683653
+          name: apache/drill
+        - id: 202483348
+          name: apache/incubator-kvrocks
+        - id: 358917318
+          name: apache/arrow-datafusion
+        - id: 9342529
+          name: crate/crate
+        - id: 341631350
+          name: apache/lucene
+        - id: 20473418
+          name: apache/phoenix
+        - id: 56128733
+          name: apache/impala
+        - id: 59475316
+          name: eventql/eventql
+        - id: 41952293
+          name: apache/hawq
+        - id: 206357
+          name: apache/pig
+        - id: 341374920
+          name: apache/solr
+        - id: 9290699
+          name: apache/tez
+        - id: 507775
+          name: elastic/elasticsearch

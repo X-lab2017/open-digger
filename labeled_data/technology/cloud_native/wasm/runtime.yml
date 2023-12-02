@@ -1,13 +1,25 @@
 name: Cloud Native - Wasm - Runtime
 type: Tech-2
 data:
-  github_repo:
-    - 350268741 # repo:second-state/crunw
-    - 24420506 # repo:v8/v8
-    - 184654298 # repo:bytecodealliance/wasm-micro-runtime
-    - 212152900 # repo:wasm3/wasm3
-    - 224908244 # repo:WasmEdge/WasmEdge
-    - 152572186 # repo:wasmerio/wasmer
-    - 118469706 # repo:paritytech/wasmi
-    - 101767772 # repo:bytecodealliance/wasmtime
-    - 41151921 # repo:WAVM/WAVM
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 350268741
+          name: second-state/crunw
+        - id: 24420506
+          name: v8/v8
+        - id: 184654298
+          name: bytecodealliance/wasm-micro-runtime
+        - id: 212152900
+          name: wasm3/wasm3
+        - id: 224908244
+          name: WasmEdge/WasmEdge
+        - id: 152572186
+          name: wasmerio/wasmer
+        - id: 118469706
+          name: paritytech/wasmi
+        - id: 101767772
+          name: bytecodealliance/wasmtime
+        - id: 41151921
+          name: WAVM/WAVM

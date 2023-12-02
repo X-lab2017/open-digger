@@ -1,5 +1,9 @@
 name: Elastic
 type: Company
 data:
-  github_org:
-    - 6764390  # org:elastic
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 6764390
+          name: elastic

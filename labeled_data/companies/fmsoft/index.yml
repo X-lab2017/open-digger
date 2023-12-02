@@ -1,7 +1,12 @@
 name: FM Soft
 type: Company
 data:
-  github_org:
-    - 45352644 # org:FMSoftCN
-  github_repo:
-    - 92706019 # repo:VincentWei/MiniGUI
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 92706019
+          name: VincentWei/MiniGUI
+      orgs:
+        - id: 45352644
+          name: FMSoftCN

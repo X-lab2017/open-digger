@@ -1,5 +1,9 @@
 name: Shendu Fuzhi
 type: Company
 data:
-  github_org:
-    - 57169967 # org:DeepWisdom
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 57169967
+          name: DeepWisdom

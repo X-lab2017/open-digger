@@ -1,5 +1,9 @@
 name: ESPRESSIF
 type: Company
 data:
-  github_org:
-    - 9460735 # org:espressif
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 9460735
+          name: espressif

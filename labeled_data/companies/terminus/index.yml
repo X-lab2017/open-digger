@@ -1,5 +1,9 @@
 name: Terminus
 type: Company
 data:
-  github_org:
-    - 79822798 # org:erda-project
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 79822798
+          name: erda-project

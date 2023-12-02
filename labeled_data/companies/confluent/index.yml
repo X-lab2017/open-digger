@@ -1,5 +1,9 @@
 name: Confluent
 type: Company
 data:
-  github_repo:
-    - 2211243  # repo:apache/kafka
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 2211243
+          name: apache/kafka

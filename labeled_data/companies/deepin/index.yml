@@ -1,5 +1,9 @@
 name: Deepin
 type: Company
 data:
-  github_org:
-    - 1592697 # linuxdeepin
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 1592697
+          name: linuxdeepin

@@ -1,5 +1,9 @@
 name: ZStack
 type: Company
 data:
-  github_org:
-    - 25654806 # org:zstackio
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 25654806
+          name: zstackio

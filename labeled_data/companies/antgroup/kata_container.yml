@@ -1,5 +1,9 @@
 name: Kata Containers
 type: Project
 data:
-  github_org:
-    - 33289952 # org:kata-containers
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 33289952
+          name: kata-containers

@@ -1,12 +1,23 @@
 name: Big Data - Streaming
 type: Tech-1
 data:
-  github_repo:
-    - 2211243 # repo:apache/kafka
-    - 20587599 # repo:apache/flink
-    - 62117812 # repo:apache/pulsar
-    - 50904245 # repo:apache/beam
-    - 14135470 # repo:apache/storm
-    - 43158694 # repo:apache/incubator-heron
-    - 32199982 # repo:apache/samza
-    - 188779637 # repo:apache/incubator-streampark
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 2211243
+          name: apache/kafka
+        - id: 20587599
+          name: apache/flink
+        - id: 62117812
+          name: apache/pulsar
+        - id: 50904245
+          name: apache/beam
+        - id: 14135470
+          name: apache/storm
+        - id: 43158694
+          name: apache/incubator-heron
+        - id: 32199982
+          name: apache/samza
+        - id: 188779637
+          name: apache/incubator-streampark

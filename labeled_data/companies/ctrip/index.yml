@@ -1,5 +1,9 @@
 name: CTrip
 type: Company
 data:
-  github_org:
-    - 10720307 # ctripcorp
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 10720307
+          name: ctripcorp

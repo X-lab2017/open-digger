@@ -1,5 +1,9 @@
 name: EasyCorp
 type: Company
 data:
-  github_org:
-    - 237078 # org:easysoft
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 237078
+          name: easysoft

@@ -1,6 +1,11 @@
 name: Netlify
 type: Company
 data:
-  github_org:
-    - 7892489 # org:netlify
-    - 79226042 # org:solidjs
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 7892489
+          name: netlify
+        - id: 79226042
+          name: solidjs

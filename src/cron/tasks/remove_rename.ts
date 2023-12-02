@@ -40,7 +40,7 @@ const task: Task = {
         await deleteFile(`${ossPrefix}${path}/`);
       };
 
-      const orgQuery = `SELECT org_id, groupArray(DISTINCT org_login) AS names, argMax(org_login, created_at) FROM gh_events WHERE repo_id IN (SELECT id FROM gh_export_repo) GROUP BY org_id HAVING length(names) > 1`;
+      const orgQuery = `SELECT org_id, groupArray(DISTINCT org_login) AS names, argMax(org_login, created_at) FROM events WHERE repo_id IN (SELECT id FROM gh_export_repo) GROUP BY org_id HAVING length(names) > 1`;
       const orgQueryResult = await query<any[]>(orgQuery);
       console.log(`Got ${orgQueryResult.length} rows from org query.`);
       const orgToRemove: string[] = [];
@@ -56,7 +56,7 @@ const task: Task = {
       }
       console.log('Remove all orgs files done.');
 
-      const repoQuery = `SELECT groupArray(DISTINCT repo_name) AS names, argMax(repo_name, created_at) FROM gh_events WHERE repo_id IN (SELECT id FROM gh_export_repo) AND org_id NOT IN (${orgToRemoveIds.join(',')}) GROUP BY repo_id HAVING length(names) > 1`;
+      const repoQuery = `SELECT groupArray(DISTINCT repo_name) AS names, argMax(repo_name, created_at) FROM events WHERE repo_id IN (SELECT id FROM gh_export_repo) AND org_id NOT IN (${orgToRemoveIds.join(',')}) GROUP BY repo_id HAVING length(names) > 1`;
       const repoQueryResult = await query<any[]>(repoQuery);
       const repoToRemove: string[] = [];
       console.log(`Got ${repoQueryResult.length} rows from repo query.`);

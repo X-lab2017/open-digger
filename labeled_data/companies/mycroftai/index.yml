@@ -1,5 +1,9 @@
 name: MycroftAI
 type: Company
 data:
-  github_org:
-    - 14171097 # org:MycroftAI
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 14171097
+          name: MycroftAI

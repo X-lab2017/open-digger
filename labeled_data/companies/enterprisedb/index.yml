@@ -1,5 +1,9 @@
 name: EnterpriseDB
 type: Company
 data:
-  github_org:
-    - 177543  # org:postgres
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 177543
+          name: postgres

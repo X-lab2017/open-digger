@@ -1,5 +1,9 @@
 name: RaRe Technologies
 type: Company
 data:
-  github_org:
-    - 12515886 # org:RaRe-Technologies
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 12515886
+          name: RaRe-Technologies

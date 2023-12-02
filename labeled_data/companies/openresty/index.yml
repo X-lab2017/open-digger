@@ -1,5 +1,9 @@
 name: OpenResty
 type: Company
 data:
-  github_org:
-    - 7390180  # org:openresty
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 7390180
+          name: openresty

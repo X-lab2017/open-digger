@@ -1,5 +1,5 @@
 name: Türkiye
 type: Region
 data:
-  label:
+  labels:
     - :companies/fmsoft

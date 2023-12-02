@@ -1,20 +1,39 @@
 name: Model
 type: Tech-1
 data:
-  github_repo:
-    - 619959033 # repo:nomic-ai/gpt4all
-    - 618058471 # repo:facebookresearch/segment-anything
-    - 155220641 # repo:huggingface/transformers
-    - 523379232 # repo:compvis/stable-diffusion
-    - 541269386 # repo:ggerganov/whisper.cpp
-    - 601538369 # repo:facebookresearch/llama
-    - 612354784 # repo:ggerganov/llama.cpp
-    - 612427246 # repo:tatsu-lab/stanford_alpaca
-    - 624994625 # repo:suno-ai/bark
-    - 628419800 # repo:vision-cair/minigpt-4
-    - 574116196 # repo:tloen/alpaca-lora
-    - 630023030 # repo:stability-ai/stablelm
-    - 620936652 # repo:xtekky/gpt4free
-    - 628296906 # repo:openlmlab/moss
-    - 569927055 # repo:Stability-AI/stablediffusion
-    - 650945129 # repo:facebookresearch/audiocraft
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 619959033
+          name: nomic-ai/gpt4all
+        - id: 618058471
+          name: facebookresearch/segment-anything
+        - id: 155220641
+          name: huggingface/transformers
+        - id: 523379232
+          name: compvis/stable-diffusion
+        - id: 541269386
+          name: ggerganov/whisper.cpp
+        - id: 601538369
+          name: facebookresearch/llama
+        - id: 612354784
+          name: ggerganov/llama.cpp
+        - id: 612427246
+          name: tatsu-lab/stanford_alpaca
+        - id: 624994625
+          name: suno-ai/bark
+        - id: 628419800
+          name: vision-cair/minigpt-4
+        - id: 574116196
+          name: tloen/alpaca-lora
+        - id: 630023030
+          name: stability-ai/stablelm
+        - id: 620936652
+          name: xtekky/gpt4free
+        - id: 628296906
+          name: openlmlab/moss
+        - id: 569927055
+          name: Stability-AI/stablediffusion
+        - id: 650945129
+          name: facebookresearch/audiocraft

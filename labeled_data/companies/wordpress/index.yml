@@ -1,5 +1,9 @@
 name: WordPress
 type: Company
 data:
-  github_org:
-    - 276006  # org:WordPress
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 276006
+          name: WordPress

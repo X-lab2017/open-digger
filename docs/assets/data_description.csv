@@ -1,4 +1,5 @@
 name,type,description,payload_type
+platform,Enum,"platform of this event instance, like GitHub, Gitee, AtomGit and etc.",All
 id,UInt64,uique identity of this event instance,All
 type,Enum,"event instance type,event instances of different event type have different payload from GitHub API",All
 action,Enum,action in the payload of event instance,All

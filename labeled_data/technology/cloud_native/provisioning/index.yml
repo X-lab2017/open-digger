@@ -1,7 +1,7 @@
 name: Cloud Native - Provisioning
 type: Tech-1
 data:
-  label:
+  labels:
     - automation_and_configuration
     - container_registry
     - security_and_compliance

@@ -1,5 +1,9 @@
 name: RT-Thread
 type: Company
 data:
-  github_org:
-    - 1783729 # org:RT-Thread
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 1783729
+          name: RT-Thread

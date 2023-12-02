@@ -1,6 +1,7 @@
 import { existsSync, readFileSync } from 'fs';
 import { load } from 'js-yaml';
 import pWaitFor from 'p-wait-for';
+const dateformat = require('dateformat');
 
 export function readFileAsObj(path: string) {
   if (!existsSync(path)) {
@@ -74,3 +75,14 @@ export function rankData<T = any>(data: T[], iterArr: any[], getter: (item: T, i
   }
   return result;
 }
+
+export const getLogger = (tag: string) => {
+  return {
+    info: (...args: any[]) =>
+      console.log(`${dateformat(new Date(), 'yyyy-mm-dd HH:MM:ss', true)} INFO [${tag}]`, ...args),
+    warn: (...args: any[]) =>
+      console.log(`${dateformat(new Date(), 'yyyy-mm-dd HH:MM:ss', true)} WARN [${tag}]`, ...args),
+    error: (...args: any[]) =>
+      console.log(`${dateformat(new Date(), 'yyyy-mm-dd HH:MM:ss', true)} ERROR [${tag}]`, ...args),
+  };
+};

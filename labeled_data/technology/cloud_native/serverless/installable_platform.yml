@@ -1,19 +1,37 @@
 name: Cloud Native - Serverless - Installable Platform
 type: Tech-2
 data:
-  github_repo:
-    - 146865191 # repo:apache/camel-k
-    - 52039373 # repo:apache/openwhisk
-    - 3803067 # repo:AppScale/gts
-    - 66050533 # repo:fission/fission
-    - 170411418 # repo:kedacore/keda
-    - 118828329 # repo:knative/serving
-    - 232829717 # repo:knix-microfunctions/knix
-    - 226983227 # repo:krustlet/krustlet
-    - 73902337 # repo:vmware-archive/kubeless
-    - 91797088 # repo:nuclio/nuclio
-    - 77144337 # repo:openfaas/faas
-    - 322168077 # repo:OpenFunction/OpenFunction
-    - 38730494 # repo:pipelineai/pipeline
-    - 98690441 # repo:projectriff/riff
-    - 113086028 # repo:virtual-kubelet/virtual-kubelet
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 146865191
+          name: apache/camel-k
+        - id: 52039373
+          name: apache/openwhisk
+        - id: 3803067
+          name: AppScale/gts
+        - id: 66050533
+          name: fission/fission
+        - id: 170411418
+          name: kedacore/keda
+        - id: 118828329
+          name: knative/serving
+        - id: 232829717
+          name: knix-microfunctions/knix
+        - id: 226983227
+          name: krustlet/krustlet
+        - id: 73902337
+          name: vmware-archive/kubeless
+        - id: 91797088
+          name: nuclio/nuclio
+        - id: 77144337
+          name: openfaas/faas
+        - id: 322168077
+          name: OpenFunction/OpenFunction
+        - id: 38730494
+          name: pipelineai/pipeline
+        - id: 98690441
+          name: projectriff/riff
+        - id: 113086028
+          name: virtual-kubelet/virtual-kubelet

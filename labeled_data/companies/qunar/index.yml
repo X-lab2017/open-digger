@@ -1,5 +1,9 @@
 name: Qunar
 type: Company
 data:
-  github_org:
-    - 43158242 # qunarcorp
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 43158242
+          name: qunarcorp

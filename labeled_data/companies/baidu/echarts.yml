@@ -1,5 +1,9 @@
 name: echarts
 type: Project
 data:
-  github_repo:
-    - 9185792 # apache/echarts
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 9185792
+          name: apache/echarts

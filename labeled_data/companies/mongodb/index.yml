@@ -1,5 +1,9 @@
 name: MongoDB
 type: Company
 data:
-  github_org:
-    - 45120  # org:mongodb
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 45120
+          name: mongodb

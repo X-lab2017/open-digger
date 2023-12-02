@@ -1,14 +1,27 @@
 name: Artificial Intelligence - model - framework & architecture
 type: Tech-1
 data:
-  github_repo:
-    - 615708882 # repo:prompt-engineering/chat-flow
-    - 647198683 # repo:archguard/co-mate
-    - 660551251 # repo:geekan/MetaGPT
-    - 642942708 # repo:Forethought-Technologies/AutoChain
-    - 614765452 # repo:Significant-Gravitas/AutoGPT
-    - 657802907 # repo:rogeriochaves/langstream
-    - 618613272 # repo:h2oai/h2ogpt
-    - 653496050 # repo:xorbitsai/inference
-    - 671912468 # repo:epfLLM/Megatron-LLM
-    - 662878020 # repo:InternLM/InternLM
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 615708882
+          name: prompt-engineering/chat-flow
+        - id: 647198683
+          name: archguard/co-mate
+        - id: 660551251
+          name: geekan/MetaGPT
+        - id: 642942708
+          name: Forethought-Technologies/AutoChain
+        - id: 614765452
+          name: Significant-Gravitas/AutoGPT
+        - id: 657802907
+          name: rogeriochaves/langstream
+        - id: 618613272
+          name: h2oai/h2ogpt
+        - id: 653496050
+          name: xorbitsai/inference
+        - id: 671912468
+          name: epfLLM/Megatron-LLM
+        - id: 662878020
+          name: InternLM/InternLM

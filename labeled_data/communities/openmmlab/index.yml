@@ -1,5 +1,9 @@
 name: OpenMMLab
 type: Community
 data:
-  github_org:
-    - 10245193 # org:open-mmlab
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 10245193
+          name: open-mmlab

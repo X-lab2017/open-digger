@@ -1,21 +1,41 @@
 name: Artificial Intelligence - tool - develop tool
 type: Tech-1
 data:
-   github_repo:
-      - 670778224 # Mintplex-Labs/vector-admin
-      - 626306555 # repo:unit-mesh/devti
-      - 627920448 # repo:unit-mesh/auto-dev
-      - 441778458 # repo:EleutherAI/pythia
-      - 639161229 # repo:poe-platform/server-bot-quick-start
-      - 616372661 # repo:binary-husky/gpt_academic
-      - 621258412 # repo:TencentARC-QQ/TagGPT
-      - 567185522 # repo:microsoft/torchscale
-      - 616992960 # repo:gd3kr/BlenderGPT
-      - 299282745 # repo:AIGMix/AIGCJson
-      - 422274596 # repo:hpcaitech/ColossalAI
-      - 616083282 # repo:OpenGVLab/LLaMA-Adapter
-      - 650549146 # repo:melih-unsal/DemoGPT
-      - 676608269 # repo:mshumer/gpt-llm-trainer
-      - 492713876 # repo:FlagAI-Open/FlagAI
-      - 525592995 # repo:invoke-ai/InvokeAI
-      - 631258918 # repo:gventuri/pandas-ai
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 670778224
+          name: Mintplex-Labs/vector-admin
+        - id: 626306555
+          name: unit-mesh/devti
+        - id: 627920448
+          name: unit-mesh/auto-dev
+        - id: 441778458
+          name: EleutherAI/pythia
+        - id: 639161229
+          name: poe-platform/server-bot-quick-start
+        - id: 616372661
+          name: binary-husky/gpt_academic
+        - id: 621258412
+          name: TencentARC-QQ/TagGPT
+        - id: 567185522
+          name: microsoft/torchscale
+        - id: 616992960
+          name: gd3kr/BlenderGPT
+        - id: 299282745
+          name: AIGMix/AIGCJson
+        - id: 422274596
+          name: hpcaitech/ColossalAI
+        - id: 616083282
+          name: OpenGVLab/LLaMA-Adapter
+        - id: 650549146
+          name: melih-unsal/DemoGPT
+        - id: 676608269
+          name: mshumer/gpt-llm-trainer
+        - id: 492713876
+          name: FlagAI-Open/FlagAI
+        - id: 525592995
+          name: invoke-ai/InvokeAI
+        - id: 631258918
+          name: gventuri/pandas-ai

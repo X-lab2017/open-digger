@@ -1,8 +1,15 @@
 name: Cloud Native - Observability and Analysis - Continuous Optimization
 type: Tech-2
 data:
-  github_repo:
-    - 429285098 # repo:gocrane/crane
-    - 274625369 # repo:infracost/infracost
-    - 178079595 # repo:kubecost/cost-model
-    - 178079595 # repo:opencost/opencost
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 429285098
+          name: gocrane/crane
+        - id: 274625369
+          name: infracost/infracost
+        - id: 178079595
+          name: kubecost/cost-model
+        - id: 178079595
+          name: opencost/opencost

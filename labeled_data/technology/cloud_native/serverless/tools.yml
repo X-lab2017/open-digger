@@ -1,9 +1,17 @@
 name: Cloud Native - Serverless - Tools
 type: Tech-2
 data:
-  github_repo:
-    - 160055127 # repo:cncf/landscapeapp
-    - 137724480 # repo:hasura/graphql-engine
-    - 27050722 # repo:motdotla/node-lambda
-    - 91441209 # repo:grycap/scar
-    - 306060886 # repo:serverless-devs/serverless-devs
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 160055127
+          name: cncf/landscapeapp
+        - id: 137724480
+          name: hasura/graphql-engine
+        - id: 27050722
+          name: motdotla/node-lambda
+        - id: 91441209
+          name: grycap/scar
+        - id: 306060886
+          name: serverless-devs/serverless-devs

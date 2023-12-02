@@ -1,6 +1,11 @@
 name: Artificial Intelligence - application - video
 type: Tech-1
 data:
-  github_repo:
-    - 342728683 # repo:replicate/cog
-    - 533451541 # repo:nateraw/stable-diffusion-videos
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 342728683
+          name: replicate/cog
+        - id: 533451541
+          name: nateraw/stable-diffusion-videos

@@ -1,5 +1,9 @@
 name: Longboat
 type: Company
 data:
-  github_org:
-    - 7727781 # org:Longboat
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 7727781
+          name: Longboat

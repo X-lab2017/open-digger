@@ -1,7 +1,7 @@
 name: United Kingdom of Great Britain and Northern Ireland
 type: Region
 data:
-  label:
+  labels:
     - :companies/rare
     - :companies/deepmind
     - :companies/gaas

@@ -1,5 +1,9 @@
 name: Seata
 type: Project
 data:
-  github_org:
-    - 48813648 # org:seata
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 48813648
+          name: seata

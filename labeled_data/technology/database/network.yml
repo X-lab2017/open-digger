@@ -1,5 +1,9 @@
 name: Database - Network
 type: Tech-1
 data:
-  github_repo:
-    - 10153163 # repo:priitj/whitedb
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 10153163
+          name: priitj/whitedb

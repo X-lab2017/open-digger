@@ -1,26 +1,51 @@
 name: Artificial Intelligence - application - text
 type: Tech-1
 data:
-  github_repo:
-    - 324686460 # repo:Copysmithai/serious-websites
-    - 558867457 # repo:Writesonic/react-input-autosize
-    - 620988849 # repp:Contenda-Team/ai-ipsum
-    - 617776676 # repo:Contenda-Team/share-pear
-    - 639230108 # repo:Contenda-Team/contenda-dotnet-sdk
-    - 496776348 # repo:microsoft/LAVENDER
-    - 608073717 # repo:WeismannS/Character.AI-TS
-    - 179196443 # repo:Latitude-Archives/AIDungeon
-    - 364463089 # repo:mem-labs/mem-node
-    - 572271856 # repo:mem-labs/GPT-3-Encoder
-    - 325112670 # repo:OthersideAI/chronology
-    - 606922335 # repo:OthersideAI/WordInContext
-    - 550545345 # repo:compose-ai/languagetool
-    - 436194023 # repo:rytr-me/documentation
-    - 358774920 # repo:copy-ai/kubeflow_github_actions
-    - 540481589 # repo:copy-ai/heroku-buildpack-pnpm
-    - 607250778 # repo:copy-ai/copy-to-clipboard
-    - 382919156 # repo:REGIE-io/react-pro-sidebar
-    - 682555083 # repo:REGIE-io/LlamaIndexTS
-    - 617087362 # repo:martiansideofthemoon/ai-detection-paraphrases
-    - 644001706 # repo:aiwaves-cn/RecurrentGPT
-    - 577603990 # repo:LAION-AI/Open-Assistant
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 324686460
+          name: Copysmithai/serious-websites
+        - id: 558867457
+          name: Writesonic/react-input-autosize
+        - id: 620988849
+          name: Contenda-Team/ai-ipsum
+        - id: 617776676
+          name: Contenda-Team/share-pear
+        - id: 639230108
+          name: Contenda-Team/contenda-dotnet-sdk
+        - id: 496776348
+          name: microsoft/LAVENDER
+        - id: 608073717
+          name: WeismannS/Character.AI-TS
+        - id: 179196443
+          name: Latitude-Archives/AIDungeon
+        - id: 364463089
+          name: mem-labs/mem-node
+        - id: 572271856
+          name: mem-labs/GPT-3-Encoder
+        - id: 325112670
+          name: OthersideAI/chronology
+        - id: 606922335
+          name: OthersideAI/WordInContext
+        - id: 550545345
+          name: compose-ai/languagetool
+        - id: 436194023
+          name: rytr-me/documentation
+        - id: 358774920
+          name: copy-ai/kubeflow_github_actions
+        - id: 540481589
+          name: copy-ai/heroku-buildpack-pnpm
+        - id: 607250778
+          name: copy-ai/copy-to-clipboard
+        - id: 382919156
+          name: REGIE-io/react-pro-sidebar
+        - id: 682555083
+          name: REGIE-io/LlamaIndexTS
+        - id: 617087362
+          name: martiansideofthemoon/ai-detection-paraphrases
+        - id: 644001706
+          name: aiwaves-cn/RecurrentGPT
+        - id: 577603990
+          name: LAION-AI/Open-Assistant

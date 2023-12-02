@@ -1,6 +1,11 @@
 name: Acquia
 type: Company
 data:
-  github_org:
-    - 43922  # org:drupal
-    - 9769826 # org:drupal-composer
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 43922
+          name: drupal
+        - id: 9769826
+          name: drupal-composer

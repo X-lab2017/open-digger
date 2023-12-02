@@ -1,30 +1,59 @@
 name: Database - Time Series
 type: Tech-1
 data:
-  github_repo:
-    - 396867188 # repo:ArcadeData/arcadedb
-    - 480217156 # repo:GreptimeTeam/greptimedb
-    - 89848289 # repo:KxSystems/kdb
-    - 16189524 # repo:OpenNMS/newts
-    - 865412 # repo:OpenTSDB/opentsdb
-    - 55093657 # repo:SiriDB/siridb-server
-    - 150954997 # repo:VictoriaMetrics/VictoriaMetrics
-    - 158975124 # repo:apache/iotdb
-    - 420965027 # repo:cnosdb/cnosdb
-    - 4254338 # repo:graphite-project/graphite-web
-    - 52420005 # repo:griddb/griddb
-    - 17705626 # repo:hawkular/hawkular-metrics
-    - 13124802 # repo:influxdata/influxdb
-    - 8039659 # repo:kairosdb/kairosdb
-    - 61153677 # repo:m3db/m3
-    - 5761553 # repo:oetiker/rrdtool-1.x
-    - 507829396 # repo:openGemini/openGemini
-    - 6838921 # repo:prometheus/prometheus
-    - 19257422 # repo:questdb/questdb
-    - 10081109 # repo:rackerlabs/blueflood
-    - 135549948 # repo:radicalbit/NSDb
-    - 50594316 # repo:senx/warp10-platform
-    - 15682781 # repo:sitewhere/sitewhere
-    - 36483902 # repo:spotify/heroic
-    - 196353673 # repo:taosdata/TDengine
-    - 84240850 # repo:timescale/timescaledb
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 396867188
+          name: ArcadeData/arcadedb
+        - id: 480217156
+          name: GreptimeTeam/greptimedb
+        - id: 89848289
+          name: KxSystems/kdb
+        - id: 16189524
+          name: OpenNMS/newts
+        - id: 865412
+          name: OpenTSDB/opentsdb
+        - id: 55093657
+          name: SiriDB/siridb-server
+        - id: 150954997
+          name: VictoriaMetrics/VictoriaMetrics
+        - id: 158975124
+          name: apache/iotdb
+        - id: 420965027
+          name: cnosdb/cnosdb
+        - id: 4254338
+          name: graphite-project/graphite-web
+        - id: 52420005
+          name: griddb/griddb
+        - id: 17705626
+          name: hawkular/hawkular-metrics
+        - id: 13124802
+          name: influxdata/influxdb
+        - id: 8039659
+          name: kairosdb/kairosdb
+        - id: 61153677
+          name: m3db/m3
+        - id: 5761553
+          name: oetiker/rrdtool-1.x
+        - id: 507829396
+          name: openGemini/openGemini
+        - id: 6838921
+          name: prometheus/prometheus
+        - id: 19257422
+          name: questdb/questdb
+        - id: 10081109
+          name: rackerlabs/blueflood
+        - id: 135549948
+          name: radicalbit/NSDb
+        - id: 50594316
+          name: senx/warp10-platform
+        - id: 15682781
+          name: sitewhere/sitewhere
+        - id: 36483902
+          name: spotify/heroic
+        - id: 196353673
+          name: taosdata/TDengine
+        - id: 84240850
+          name: timescale/timescaledb

@@ -1,5 +1,9 @@
 name: Alluxio
 type: Company
 data:
-  github_org:
-    - 16203694  # org:Alluxio
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 16203694
+          name: Alluxio

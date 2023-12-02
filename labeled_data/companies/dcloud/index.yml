@@ -1,5 +1,9 @@
 name: DCloud
 type: Company
 data:
-  github_org:
-    - 5485517 # dcloudio
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 5485517
+          name: dcloudio

@@ -1,5 +1,9 @@
 name: Liferay
 type: Company
 data:
-  github_org:
-    - 131436  # org:liferay
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 131436
+          name: liferay

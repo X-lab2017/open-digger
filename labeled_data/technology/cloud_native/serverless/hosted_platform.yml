@@ -1,5 +1,9 @@
 name: Cloud Native - Serverless - Hosted Platform
 type: Tech-2
 data:
-  github_repo:
-    - 42548553 # repo:Azure/azure-functions-host
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 42548553
+          name: Azure/azure-functions-host

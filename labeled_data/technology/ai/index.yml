@@ -1,146 +1,288 @@
 name: Artificial Intelligence
 type: Tech-0
 data:
-  label:
+  labels:
     - generative_ai
     - large_language_model
-  github_repo:
-    - 45717250 # tensorflow/tensorflow
-    - 164642888 # repo:kimiyoung/transformer-xl
-    - 192689297 # repo:zihangdai/xlnet
-    - 91379993 # repo:tensorflow/tensorboard
-    - 94218531 # repo:lanpa/tensorboardX
-    - 156293205 # repo:pytorch/xla
-    - 154739597 # repo:google/jax
-    - 38377423 # repo:google/deepdream
-    - 423593369 # repo:google-research/t5x
-    - 139064580 # repo:tensorflow/adanet
-    - 142422739 # repo:google/dopamine
-    - 331071860 # repo:google/model_search
-    - 112647343 # repo:kubeflow/kubeflow
-    - 186457418 # repo:google-research/tensor2robot
-    - 65600975 # repo:pytorch/pytorch
-    - 206660580 # repo:facebookresearch/detectron2
-    - 136069311 # repo:facebookresearch/DensePose
-    - 63484632 # repo:facebookresearch/fastText
-    - 217433767 # repo:facebookresearch/pytorch3d
-    - 81227005 # repo:facebookresearch/faiss
-    - 186526115 # repo:facebookresearch/dlrm
-    - 143080897 # repo:facebookresearch/pytext
-    - 33015583 # repo:keras-team/keras
-    - 102692863 # repo:onnx/onnx
-    - 36914478 # repo:chainer/chainer
-    - 13677187 # repo:torch/torch7
-    - 12791642 # repo:BVLC/caffe
-    - 38066334 # repo:facebookarchive/caffe2
-    - 377851948 # repo:deepmind/alphafold
-    - 75190475 # repo:deepmind/lab
-    - 144027556 # repo:deepmind/trfl
-    - 198232685 # repo:deepmind/open_spiel
-    - 98336690 # repo:deepmind/pysc2
-    - 200259166 # repo:deepmind/bsuite
-    - 299862 # repo:nltk/nltk
-    - 259878805 # repo:microsoft/InnerEye-DeepLearning
-    - 156939672 # repo:microsoft/onnxruntime
-    - 235468657 # repo:PipedreamHQ/pipedream
-    - 181388576 # repo:microsoft/NeuronBlocks
-    - 184704903 # repo:interpretml/interpret
-    - 46918116 # repo:microsoft/CNTK
-    - 135673451 # repo:microsoft/nni
-    - 235860204 # repo:microsoft/DeepSpeed
-    - 59032201 # repo:microsoft/malmo
-    - 362276202 # repo:Azure/counterfit
-    - 34864402 # repo:apache/mxnet
-    - 70746484 # repo:apache/tvm
-    - 20089859 # repo:apache/mahout
-    - 2740148 # repo:apache/opennlp
-    - 45896813 # repo:apache/systemds
-    - 7827081 # repo:apache/predictionio
-    - 2183193 # repo:Theano/Theano
-    - 199509705 # repo:autogluon/autogluon
-    - 161846808 # repo:neo-ai/neo-ai-dlr
-    - 57222302 # repo:openai/gym
-    - 843222 # repo:scikit-learn/scikit-learn
-    - 136914524 # repo:flairNLP/flair
-    - 46130068 # repo:Artelnics/opennn
-    - 144782044 # repo:NVIDIA/vid2vid
-    - 184657328 # repo:NVIDIA/TensorRT
-    - 135768037 # repo:NVIDIA/DALI
-    - 221787282 # repo:NVIDIAGameWorks/kaolin
-    - 175539152 # repo:NVlabs/SPADE
-    - 176982014 # repo:NVIDIA/Megatron-LM
-    - 173961960 # repo:SharpAI/DeepCamera
-    - 216628419 # repo:flyteorg/flyte
-    - 1198539 # repo:lutzroeder/netron
-    - 1349775 # repo:RaRe-Technologies/gensim
-    - 1885237 # repo:statsmodels/statsmodels
-    - 99846383 # repo:horovod/horovod
-    - 169798869 # repo:uber/manifold
-    - 11008076 # repo:stanfordnlp/CoreNLP
-    - 14734876 # repo:deeplearning4j/deeplearning4j
-    - 908607 # repo:numpy/numpy
-    - 209120637 # repo:Netflix/metaflow
-    - 146165888 # repo:ultralytics/yolov3
-    - 134292654 # repo:eriklindernoren/PyTorch-YOLOv3
-    - 153097643 # repo:openvinotoolkit/openvino
-    - 59299524 # repo:MycroftAI/mycroft-core
-    - 5108051 # repo:opencv/opencv
-    - 65711522 # repo:PaddlePaddle/Paddle
-    - 262296122 # repo:PaddlePaddle/PaddleOCR
-    - 217475193 # repo:PaddlePaddle/PaddleDetection
-    - 162672577 # repo:PaddlePaddle/PaddleHub
-    - 336274588 # repo:PaddlePaddle/PaddleNLP
-    - 204380779 # repo:PaddlePaddle/PaddleSeg
-    - 110688239 # repo:PaddlePaddle/PaddleSpeech
-    - 273214029 # repo:PaddlePaddle/PaddleGAN
-    - 251201169 # repo:PaddlePaddle/PaddleClas
-    - 246509073 # repo:PaddlePaddle/PaddleX
-    - 259513732 # repo:PaddlePaddle/PaddleRec
-    - 104208128 # repo:PaddlePaddle/Paddle-Lite
-    - 228290594 # repo:PaddlePaddle/PaddleSlim
-    - 312259012 # repo:PaddlePaddle/PaddleVideo
-    - 173544440 # repo:PaddlePaddle/ERNIE
-    - 17371412 # repo:h2oai/h2o-3
-    - 21467110 # repo:explosion/spaCy
-    - 248248401 # repo:Jittor/jittor
-    - 248175118 # repo:MegEngine/MegEngine
-    - 81634683 # repo:Oneflow-Inc/oneflow
-    - 181436799 # repo:alibaba/MNN
-    - 165004157 # repo:alibaba/euler
-    - 478484453 # repo:alibaba/EasyNLP
-    - 319496271 # repo:alibaba/EasyRec
-    - 476918521 # repo:alibaba/EasyCV
-    - 292165029 # repo:alibaba/EasyTransfer
-    - 154232678 # repo:sql-machine-learning/elasticdl
-    - 151525500 # repo:sql-machine-learning/sqlflow
-    - 239714835 # repo:mindspore-ai/mindspore
-    - 96246170 # repo:ApolloAuto/apollo
-    - 138826968 # repo:XiaoMi/mace
-    - 34275045 # repo:kaldi-asr/kaldi
-    - 193652854 # repo:bytedance/byteps
-    - 235348659 # repo:bytedance/fedlearner
-    - 89322848 # repo:Angel-ML/angel
-    - 95879426 # repo:Tencent/ncnn
-    - 155518202 # repo:Tencent/PocketFlow
-    - 220415098 # repo:Tencent/plato
-    - 112770118 # repo:Qihoo360/XLearning
-    - 208728772 # repo:milvus-io/milvus
-    - 143589809 # repo:lancopku/pkuseg-python
-    - 145670234 # repo:open-mmlab/mmdetection
-    - 145670155 # repo:open-mmlab/mmcv
-    - 272133018 # repo:open-mmlab/mmsegmentation
-    - 278003645 # repo:open-mmlab/mmpose
-    - 355559187 # repo:open-mmlab/mmocr
-    - 278415292 # repo:open-mmlab/mmclassification
-    - 277982133 # repo:open-mmlab/mmdetection3d
-    - 278810244 # repo:open-mmlab/mmaction2
-    - 203999962 # repo:open-mmlab/mmediting
-    - 460236391 # repo:open-mmlab/mmrotate
-    - 68132933 # repo:seetaface/SeetaFaceEngine
-    - 199149606 # repo:didi/AoE
-    - 182849188 # repo:delta-io/delta
-    - 115765590 # repo:OAID/Tengine
-    - 319193033 # repo:WeBankFinTech/Prophecis
-    - 167349656 # repo:FederatedAI/FATE
-    - 252486500 # repo:DeepWisdom/AutoDL
-    - 24976755 # repo:hankcs/HanLP
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 45717250
+          name: tensorflow/tensorflow
+        - id: 164642888
+          name: kimiyoung/transformer-xl
+        - id: 192689297
+          name: zihangdai/xlnet
+        - id: 91379993
+          name: tensorflow/tensorboard
+        - id: 94218531
+          name: lanpa/tensorboardX
+        - id: 156293205
+          name: pytorch/xla
+        - id: 154739597
+          name: google/jax
+        - id: 38377423
+          name: google/deepdream
+        - id: 423593369
+          name: google-research/t5x
+        - id: 139064580
+          name: tensorflow/adanet
+        - id: 142422739
+          name: google/dopamine
+        - id: 331071860
+          name: google/model_search
+        - id: 112647343
+          name: kubeflow/kubeflow
+        - id: 186457418
+          name: google-research/tensor2robot
+        - id: 65600975
+          name: pytorch/pytorch
+        - id: 206660580
+          name: facebookresearch/detectron2
+        - id: 136069311
+          name: facebookresearch/DensePose
+        - id: 63484632
+          name: facebookresearch/fastText
+        - id: 217433767
+          name: facebookresearch/pytorch3d
+        - id: 81227005
+          name: facebookresearch/faiss
+        - id: 186526115
+          name: facebookresearch/dlrm
+        - id: 143080897
+          name: facebookresearch/pytext
+        - id: 33015583
+          name: keras-team/keras
+        - id: 102692863
+          name: onnx/onnx
+        - id: 36914478
+          name: chainer/chainer
+        - id: 13677187
+          name: torch/torch7
+        - id: 12791642
+          name: BVLC/caffe
+        - id: 38066334
+          name: facebookarchive/caffe2
+        - id: 377851948
+          name: deepmind/alphafold
+        - id: 75190475
+          name: deepmind/lab
+        - id: 144027556
+          name: deepmind/trfl
+        - id: 198232685
+          name: deepmind/open_spiel
+        - id: 98336690
+          name: deepmind/pysc2
+        - id: 200259166
+          name: deepmind/bsuite
+        - id: 299862
+          name: nltk/nltk
+        - id: 259878805
+          name: microsoft/InnerEye-DeepLearning
+        - id: 156939672
+          name: microsoft/onnxruntime
+        - id: 235468657
+          name: PipedreamHQ/pipedream
+        - id: 181388576
+          name: microsoft/NeuronBlocks
+        - id: 184704903
+          name: interpretml/interpret
+        - id: 46918116
+          name: microsoft/CNTK
+        - id: 135673451
+          name: microsoft/nni
+        - id: 235860204
+          name: microsoft/DeepSpeed
+        - id: 59032201
+          name: microsoft/malmo
+        - id: 362276202
+          name: Azure/counterfit
+        - id: 34864402
+          name: apache/mxnet
+        - id: 70746484
+          name: apache/tvm
+        - id: 20089859
+          name: apache/mahout
+        - id: 2740148
+          name: apache/opennlp
+        - id: 45896813
+          name: apache/systemds
+        - id: 7827081
+          name: apache/predictionio
+        - id: 2183193
+          name: Theano/Theano
+        - id: 199509705
+          name: autogluon/autogluon
+        - id: 161846808
+          name: neo-ai/neo-ai-dlr
+        - id: 57222302
+          name: openai/gym
+        - id: 843222
+          name: scikit-learn/scikit-learn
+        - id: 136914524
+          name: flairNLP/flair
+        - id: 46130068
+          name: Artelnics/opennn
+        - id: 144782044
+          name: NVIDIA/vid2vid
+        - id: 184657328
+          name: NVIDIA/TensorRT
+        - id: 135768037
+          name: NVIDIA/DALI
+        - id: 221787282
+          name: NVIDIAGameWorks/kaolin
+        - id: 175539152
+          name: NVlabs/SPADE
+        - id: 176982014
+          name: NVIDIA/Megatron-LM
+        - id: 173961960
+          name: SharpAI/DeepCamera
+        - id: 216628419
+          name: flyteorg/flyte
+        - id: 1198539
+          name: lutzroeder/netron
+        - id: 1349775
+          name: RaRe-Technologies/gensim
+        - id: 1885237
+          name: statsmodels/statsmodels
+        - id: 99846383
+          name: horovod/horovod
+        - id: 169798869
+          name: uber/manifold
+        - id: 11008076
+          name: stanfordnlp/CoreNLP
+        - id: 14734876
+          name: deeplearning4j/deeplearning4j
+        - id: 908607
+          name: numpy/numpy
+        - id: 209120637
+          name: Netflix/metaflow
+        - id: 146165888
+          name: ultralytics/yolov3
+        - id: 134292654
+          name: eriklindernoren/PyTorch-YOLOv3
+        - id: 153097643
+          name: openvinotoolkit/openvino
+        - id: 59299524
+          name: MycroftAI/mycroft-core
+        - id: 5108051
+          name: opencv/opencv
+        - id: 65711522
+          name: PaddlePaddle/Paddle
+        - id: 262296122
+          name: PaddlePaddle/PaddleOCR
+        - id: 217475193
+          name: PaddlePaddle/PaddleDetection
+        - id: 162672577
+          name: PaddlePaddle/PaddleHub
+        - id: 336274588
+          name: PaddlePaddle/PaddleNLP
+        - id: 204380779
+          name: PaddlePaddle/PaddleSeg
+        - id: 110688239
+          name: PaddlePaddle/PaddleSpeech
+        - id: 273214029
+          name: PaddlePaddle/PaddleGAN
+        - id: 251201169
+          name: PaddlePaddle/PaddleClas
+        - id: 246509073
+          name: PaddlePaddle/PaddleX
+        - id: 259513732
+          name: PaddlePaddle/PaddleRec
+        - id: 104208128
+          name: PaddlePaddle/Paddle-Lite
+        - id: 228290594
+          name: PaddlePaddle/PaddleSlim
+        - id: 312259012
+          name: PaddlePaddle/PaddleVideo
+        - id: 173544440
+          name: PaddlePaddle/ERNIE
+        - id: 17371412
+          name: h2oai/h2o-3
+        - id: 21467110
+          name: explosion/spaCy
+        - id: 248248401
+          name: Jittor/jittor
+        - id: 248175118
+          name: MegEngine/MegEngine
+        - id: 81634683
+          name: Oneflow-Inc/oneflow
+        - id: 181436799
+          name: alibaba/MNN
+        - id: 165004157
+          name: alibaba/euler
+        - id: 478484453
+          name: alibaba/EasyNLP
+        - id: 319496271
+          name: alibaba/EasyRec
+        - id: 476918521
+          name: alibaba/EasyCV
+        - id: 292165029
+          name: alibaba/EasyTransfer
+        - id: 154232678
+          name: sql-machine-learning/elasticdl
+        - id: 151525500
+          name: sql-machine-learning/sqlflow
+        - id: 239714835
+          name: mindspore-ai/mindspore
+        - id: 96246170
+          name: ApolloAuto/apollo
+        - id: 138826968
+          name: XiaoMi/mace
+        - id: 34275045
+          name: kaldi-asr/kaldi
+        - id: 193652854
+          name: bytedance/byteps
+        - id: 235348659
+          name: bytedance/fedlearner
+        - id: 89322848
+          name: Angel-ML/angel
+        - id: 95879426
+          name: Tencent/ncnn
+        - id: 155518202
+          name: Tencent/PocketFlow
+        - id: 220415098
+          name: Tencent/plato
+        - id: 112770118
+          name: Qihoo360/XLearning
+        - id: 208728772
+          name: milvus-io/milvus
+        - id: 143589809
+          name: lancopku/pkuseg-python
+        - id: 145670234
+          name: open-mmlab/mmdetection
+        - id: 145670155
+          name: open-mmlab/mmcv
+        - id: 272133018
+          name: open-mmlab/mmsegmentation
+        - id: 278003645
+          name: open-mmlab/mmpose
+        - id: 355559187
+          name: open-mmlab/mmocr
+        - id: 278415292
+          name: open-mmlab/mmclassification
+        - id: 277982133
+          name: open-mmlab/mmdetection3d
+        - id: 278810244
+          name: open-mmlab/mmaction2
+        - id: 203999962
+          name: open-mmlab/mmediting
+        - id: 460236391
+          name: open-mmlab/mmrotate
+        - id: 68132933
+          name: seetaface/SeetaFaceEngine
+        - id: 199149606
+          name: didi/AoE
+        - id: 182849188
+          name: delta-io/delta
+        - id: 115765590
+          name: OAID/Tengine
+        - id: 319193033
+          name: WeBankFinTech/Prophecis
+        - id: 167349656
+          name: FederatedAI/FATE
+        - id: 252486500
+          name: DeepWisdom/AutoDL
+        - id: 24976755
+          name: hankcs/HanLP

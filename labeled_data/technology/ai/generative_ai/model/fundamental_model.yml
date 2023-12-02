@@ -1,12 +1,23 @@
 name: Artificial Intelligence - model - fundamental model
 type: Tech-1
 data:
-  github_repo:
-    - 155220641 # huggingface/transformers
-    - 633841936 # dandelionsllm/pandallm
-    - 632503648 # repo:OpenBMB/CPM-Bee
-    - 170067246 # repo:openai/gpt-2
-    - 264870386 # repo:openai/gpt-3
-    - 601538369 # repo:facebookresearch/llama
-    - 552661142 # repo:langchain-ai/langchain
-    - 685444668 # repo:baichuan-inc/Baichuan2
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 155220641
+          name: huggingface/transformers
+        - id: 633841936
+          name: dandelionsllm/pandallm
+        - id: 632503648
+          name: OpenBMB/CPM-Bee
+        - id: 170067246
+          name: openai/gpt-2
+        - id: 264870386
+          name: openai/gpt-3
+        - id: 601538369
+          name: facebookresearch/llama
+        - id: 552661142
+          name: langchain-ai/langchain
+        - id: 685444668
+          name: baichuan-inc/Baichuan2

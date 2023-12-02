@@ -1,6 +1,11 @@
 name: Database - Hierarchical
 type: Tech-1
 data:
-  github_repo:
-    - 158975124 # repo:apache/iotdb
-    - 160999 # repo:apache/zookeeper
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 158975124
+          name: apache/iotdb
+        - id: 160999
+          name: apache/zookeeper

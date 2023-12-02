@@ -1,5 +1,9 @@
 name: Chatopera
 type: Company
 data:
-  github_org:
-    - 34515877  # org:chatopera
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 34515877
+          name: chatopera

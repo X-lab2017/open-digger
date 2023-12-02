@@ -1,5 +1,9 @@
 name: Treasure Data
 type: Company
 data:
-  github_org:
-    - 859518  # org:fluent
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 859518
+          name: fluent

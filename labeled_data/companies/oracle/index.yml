@@ -1,13 +1,25 @@
 name: Oracle
 type: Company
 data:
-  github_org:
-    - 4430336 # org:oracle
-    - 41768318 # org:openjdk
-    - 2452804 # org:mysql
-    - 30273834 # org:fnproject
-    - 765943 # org:apiaryio
-    - 10176827 # org:graalvm
-    - 23086798 # org:javaee
-    - 1084880 # org:dyninc
-    - 44307903 # org:oracle-terraform-modules
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 4430336
+          name: oracle
+        - id: 41768318
+          name: openjdk
+        - id: 2452804
+          name: mysql
+        - id: 30273834
+          name: fnproject
+        - id: 765943
+          name: apiaryio
+        - id: 10176827
+          name: graalvm
+        - id: 23086798
+          name: javaee
+        - id: 1084880
+          name: dyninc
+        - id: 44307903
+          name: oracle-terraform-modules

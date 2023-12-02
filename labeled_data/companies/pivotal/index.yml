@@ -1,5 +1,9 @@
 name: Pivotal
 type: Company
 data:
-  github_org:
-    - 621746  # org:cloudfoundry
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 621746
+          name: cloudfoundry

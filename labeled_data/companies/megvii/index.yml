@@ -1,5 +1,9 @@
 name: Megvii
 type: Company
 data:
-  github_org:
-    - 61609124 # org:MegEngine
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 61609124
+          name: MegEngine

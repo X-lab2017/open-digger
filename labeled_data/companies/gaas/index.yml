@@ -1,5 +1,9 @@
 name: GAAS
 type: Company
 data:
-  github_org:
-    - 47132835  # org:generalized-intelligence
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 47132835
+          name: generalized-intelligence

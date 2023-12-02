@@ -1,13 +1,25 @@
 name: Big Data - Others
 type: Tech-1
 data:
-  github_repo:
-    - 49876476 # repo:apache/shardingsphere
-    - 149026292 # repo:cube-js/cube.js
-    - 23418517 # repo:apache/hadoop
-    - 46398090 # repo:datahub-project/datahub
-    - 21193524 # repo:apache/calcite
-    - 198368711 # repo:apache/incubator-linkis
-    - 114619105 # repo:apache/incubator-kyuubi
-    - 2155500 # repo:apache/bigtop
-    - 17310686 # repo:apache/knox
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 49876476
+          name: apache/shardingsphere
+        - id: 149026292
+          name: cube-js/cube.js
+        - id: 23418517
+          name: apache/hadoop
+        - id: 46398090
+          name: datahub-project/datahub
+        - id: 21193524
+          name: apache/calcite
+        - id: 198368711
+          name: apache/incubator-linkis
+        - id: 114619105
+          name: apache/incubator-kyuubi
+        - id: 2155500
+          name: apache/bigtop
+        - id: 17310686
+          name: apache/knox

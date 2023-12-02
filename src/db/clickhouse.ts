@@ -1,5 +1,6 @@
 import { ClickHouseClient, createClient, Row } from '@clickhouse/client';
 import getConfig from '../config';
+import { Readable } from 'stream';
 
 let _client: ClickHouseClient;
 
@@ -22,4 +23,23 @@ export async function queryStream<T = any>(q: string, onRow: (row: T) => void, o
     stream.on('end', () => resolve());
     stream.on('error', (err: any) => console.error(`Query for ${q} error: ${err}`));
   });
+}
+
+export async function insertRecords(records: any[], table: string) {
+  if (records.length === 0) return;
+  const stream = new Readable({
+    objectMode: true,
+    read: () => {
+      //
+    },
+  });
+  for (const e of records) stream.push(e);
+  stream.push(null);
+  const client = createClient((await getConfig()).db.clickhouse);
+  await client.insert({
+    table,
+    values: stream,
+    format: 'JSONEachRow',
+  });
+  await client.close();
 }

@@ -1,5 +1,9 @@
 name: Redis Labs
 type: Company
 data:
-  github_org:
-    - 1529926  # org:redis
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 1529926
+          name: redis

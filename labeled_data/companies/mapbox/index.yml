@@ -1,5 +1,9 @@
 name: Mapbox
 type: Company
 data:
-  github_org:
-    - 600935  # org:mapbox
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 600935
+          name: mapbox

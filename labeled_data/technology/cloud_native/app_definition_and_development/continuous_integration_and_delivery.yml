@@ -1,37 +1,74 @@
-name: Cloud Native - App Definition and Development - Continuous Integration & Delivery
+name: Cloud Native - App Definition and Development - Continuous Integration &
+  Delivery
 type: Tech-2
 data:
-  github_repo:
-    - 188402099 # repo:agola-io/agola
-    - 120896210 # repo:argoproj/argo-cd
-    - 100982449 # repo:argoproj/argo-workflows
-    - 108049853 # repo:brigadecore/brigade
-    - 333303663 # repo:bytebase/bytebase
-    - 402102657 # repo:vmware-tanzu/cartographer
-    - 18950460 # repo:concourse/concourse
-    - 302922505 # repo:devtron-labs/devtron
-    - 173335706 # repo:apache/dolphinscheduler
-    - 16607898 # repo:harness/drone
-    - 149515625 # repo:fluxcd/flagger
-    - 258469100 # repo:fluxcd/flux2
-    - 2500088 # repo:gitlabhq/gitlabhq
-    - 15155534 # repo:gocd/gocd
-    - 214396571 # repo:hyscale/hyscale
-    - 1103607 # repo:jenkinsci/jenkins
-    - 116400734 # repo:jenkins-x/jx
-    - 54400687 # repo:grafana/k6
-    - 449649393 # repo:keploy/keploy
-    - 166831098 # repo:keptn/keptn
-    - 458214571 # repo:open-feature/community
-    - 384241097 # repo:open-gitops/project
-    - 189490177 # repo:openkruise/kruise
-    - 84104787 # repo:ortelius/ortelius
-    - 271714774 # repo:pipe-cd/pipecd
-    - 187084432 # repo:razee-io/Razee
-    - 59517730 # repo:screwdriver-cd/screwdriver
-    - 21436816 # repo:spinnaker/spinnaker
-    - 146641150 # repo:tektoncd/pipeline
-    - 381952060 # repo:kubeshop/testkube
-    - 4693087 # repo:travis-ci/travis-web
-    - 50365232 # repo:werf/werf
-    - 179344069 # repo:woodpecker-ci/woodpecker
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 188402099
+          name: agola-io/agola
+        - id: 120896210
+          name: argoproj/argo-cd
+        - id: 100982449
+          name: argoproj/argo-workflows
+        - id: 108049853
+          name: brigadecore/brigade
+        - id: 333303663
+          name: bytebase/bytebase
+        - id: 402102657
+          name: vmware-tanzu/cartographer
+        - id: 18950460
+          name: concourse/concourse
+        - id: 302922505
+          name: devtron-labs/devtron
+        - id: 173335706
+          name: apache/dolphinscheduler
+        - id: 16607898
+          name: harness/drone
+        - id: 149515625
+          name: fluxcd/flagger
+        - id: 258469100
+          name: fluxcd/flux2
+        - id: 2500088
+          name: gitlabhq/gitlabhq
+        - id: 15155534
+          name: gocd/gocd
+        - id: 214396571
+          name: hyscale/hyscale
+        - id: 1103607
+          name: jenkinsci/jenkins
+        - id: 116400734
+          name: jenkins-x/jx
+        - id: 54400687
+          name: grafana/k6
+        - id: 449649393
+          name: keploy/keploy
+        - id: 166831098
+          name: keptn/keptn
+        - id: 458214571
+          name: open-feature/community
+        - id: 384241097
+          name: open-gitops/project
+        - id: 189490177
+          name: openkruise/kruise
+        - id: 84104787
+          name: ortelius/ortelius
+        - id: 271714774
+          name: pipe-cd/pipecd
+        - id: 187084432
+          name: razee-io/Razee
+        - id: 59517730
+          name: screwdriver-cd/screwdriver
+        - id: 21436816
+          name: spinnaker/spinnaker
+        - id: 146641150
+          name: tektoncd/pipeline
+        - id: 381952060
+          name: kubeshop/testkube
+        - id: 4693087
+          name: travis-ci/travis-web
+        - id: 50365232
+          name: werf/werf
+        - id: 179344069
+          name: woodpecker-ci/woodpecker

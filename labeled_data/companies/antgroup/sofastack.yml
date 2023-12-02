@@ -1,5 +1,9 @@
 name: Sofastack
 type: Project
 data:
-  github_org:
-    - 36956638 # org:sofastack
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 36956638
+          name: sofastack

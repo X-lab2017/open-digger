@@ -1,8 +1,14 @@
 name: Macaca
 type: Project
 data:
-  github_repo:
-    - 53995946 # repo:alibaba/macaca
-  github_org:
-    - 12892132 # org:macacajs
-    - 24447273 # org:macaca-sample
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 53995946
+          name: alibaba/macaca
+      orgs:
+        - id: 12892132
+          name: macacajs
+        - id: 24447273
+          name: macaca-sample

@@ -1,5 +1,9 @@
 name: Oushu
 type: Company
 data:
-  github_repo:
-    - 41952293 # repo:apache/hawq
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 41952293
+          name: apache/hawq

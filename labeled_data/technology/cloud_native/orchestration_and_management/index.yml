@@ -1,7 +1,7 @@
 name: Cloud Native - Orchestration & Management
 type: Tech-1
 data:
-  label:
+  labels:
     - scheduling_and_orchestration
     - coordination_and_service_discovery
     - remote_procedure_call

@@ -1,5 +1,9 @@
 name: Artelnics
 type: Company
 data:
-  github_org:
-    - 16352922 # org:Artelnics
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 16352922
+          name: Artelnics

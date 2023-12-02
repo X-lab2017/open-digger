@@ -1,13 +1,24 @@
 name: Tencent
 type: Company
 data:
-  github_repo:
-    - 203957456 # repo:OpenAtomFoundation/TencentOS-tiny
-  github_org:
-    - 18461506 # org:Tencent
-    - 1503033 # org:AlloyTeam
-    - 42138346 # org:TarsCloud
-    - 14183739 # org:weixin
-    - 12334581 # org:tencentyun
-    - 42727075 # org:Angel-ML
-    - 30144423 # org:tnfe
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 203957456
+          name: OpenAtomFoundation/TencentOS-tiny
+      orgs:
+        - id: 18461506
+          name: Tencent
+        - id: 1503033
+          name: AlloyTeam
+        - id: 42138346
+          name: TarsCloud
+        - id: 14183739
+          name: weixin
+        - id: 12334581
+          name: tencentyun
+        - id: 42727075
+          name: Angel-ML
+        - id: 30144423
+          name: tnfe

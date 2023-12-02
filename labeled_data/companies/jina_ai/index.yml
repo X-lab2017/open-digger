@@ -1,5 +1,9 @@
 name: Jina AI
 type: Company
 data:
-  github_org:
-    - 60539444  # org:jina-ai
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 60539444
+          name: jina-ai

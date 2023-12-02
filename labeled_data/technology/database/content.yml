@@ -1,6 +1,11 @@
 name: Database - Content
 type: Tech-1
 data:
-  github_repo:
-    - 1244027 # repo:ModeShape/modeshape
-    - 206403 # repo:apache/jackrabbit
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 1244027
+          name: ModeShape/modeshape
+        - id: 206403
+          name: apache/jackrabbit

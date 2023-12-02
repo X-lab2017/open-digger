@@ -1,5 +1,9 @@
 name: Vipshop
 type: Company
 data:
-  github_org:
-    - 7145544 # vipshop
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 7145544
+          name: vipshop

@@ -1,5 +1,9 @@
 name: OpenAI
 type: Company
 data:
-  github_org:
-    - 14957082 # org:openai
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 14957082
+          name: openai

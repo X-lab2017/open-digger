@@ -1,5 +1,5 @@
 name: Czech Republic
 type: Region
 data:
-  label:
+  labels:
     - :companies/jetbrains

@@ -1,45 +1,89 @@
 name: Block Chain
 type: Tech-0
 data:
-  github_repo:
-    - 45500099 # repo:hyperledger/hyperledger
-    - 66573241 # repo:hyperledger/fabric
-    - 57901437 # repo:hyperledger/sawtooth-core
-    - 1181927 # repo:bitcoin/bitcoin
-    - 14531737 # repo:bitcoin/bips
-    - 15452919 # repo:ethereum/go-ethereum
-    - 40892817 # repo:ethereum/solidity
-    - 44971752 # repo:ethereum/EIPs
-    - 248697283 # repo:ethereum/remix-project
-    - 37350472 # repo:ElementsProject/lightning
-    - 37064937 # repo:ElementsProject/elements
-    - 87335980 # repo:EOSIO/eos
-    - 70137417 # repo:corda/corda
-    - 111455867 # repo:smartcontractkit/chainlink
-    - 2724167 # repo:XRPLF/rippled
-    - 188299874 # repo:input-output-hk/cardano-node
-    - 70913997 # repo:input-output-hk/cardano-sl
-    - 73670742 # repo:ConsenSys/quorum
-    - 44123252 # repo:bitshares/bitshares-core
-    - 41630316 # repo:HydraChain/hydrachain
-    - 77599938 # repo:MultiChain/multichain
-    - 147593889 # repo:thundercore/thundercore-localchain
-    - 83774906 # repo:qtumproject/qtum
-    - 26987049 # repo:zcash/zcash
-    - 56426975 # repo:wavesplatform/Waves
-    - 113932055 # repo:FISCO-BCOS/FISCO-BCOS
-    - 38267641 # repo:trufflesuite/truffle
-    - 128089774 # repo:storj/storj
-    - 97181001 # repo:Bytom/bytom
-    - 36613036 # repo:neo-project/neo
-    - 97869781 # repo:citahub/cita
-    - 24655114 # repo:web3/web3.js
-    - 36172821 # repo:embarklabs/embark
-    - 27085821 # repo:stellar/stellar-core
-    - 188339686 # repo:xuperchain/xuperchain
-    - 177701551 # repo:blockchain-jd-com/jdchain
-    - 133392857 # repo:vitelabs/go-vite
-    - 88845839 # repo:33cn/chain33
-    - 127714540 # repo:dappledger/AnnChain
-    - 162993816 # repo:ntminer/NtMiner
-    - 8508768 # repo:seriesseed/equity
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 45500099
+          name: hyperledger/hyperledger
+        - id: 66573241
+          name: hyperledger/fabric
+        - id: 57901437
+          name: hyperledger/sawtooth-core
+        - id: 1181927
+          name: bitcoin/bitcoin
+        - id: 14531737
+          name: bitcoin/bips
+        - id: 15452919
+          name: ethereum/go-ethereum
+        - id: 40892817
+          name: ethereum/solidity
+        - id: 44971752
+          name: ethereum/EIPs
+        - id: 248697283
+          name: ethereum/remix-project
+        - id: 37350472
+          name: ElementsProject/lightning
+        - id: 37064937
+          name: ElementsProject/elements
+        - id: 87335980
+          name: EOSIO/eos
+        - id: 70137417
+          name: corda/corda
+        - id: 111455867
+          name: smartcontractkit/chainlink
+        - id: 2724167
+          name: XRPLF/rippled
+        - id: 188299874
+          name: input-output-hk/cardano-node
+        - id: 70913997
+          name: input-output-hk/cardano-sl
+        - id: 73670742
+          name: ConsenSys/quorum
+        - id: 44123252
+          name: bitshares/bitshares-core
+        - id: 41630316
+          name: HydraChain/hydrachain
+        - id: 77599938
+          name: MultiChain/multichain
+        - id: 147593889
+          name: thundercore/thundercore-localchain
+        - id: 83774906
+          name: qtumproject/qtum
+        - id: 26987049
+          name: zcash/zcash
+        - id: 56426975
+          name: wavesplatform/Waves
+        - id: 113932055
+          name: FISCO-BCOS/FISCO-BCOS
+        - id: 38267641
+          name: trufflesuite/truffle
+        - id: 128089774
+          name: storj/storj
+        - id: 97181001
+          name: Bytom/bytom
+        - id: 36613036
+          name: neo-project/neo
+        - id: 97869781
+          name: citahub/cita
+        - id: 24655114
+          name: web3/web3.js
+        - id: 36172821
+          name: embarklabs/embark
+        - id: 27085821
+          name: stellar/stellar-core
+        - id: 188339686
+          name: xuperchain/xuperchain
+        - id: 177701551
+          name: blockchain-jd-com/jdchain
+        - id: 133392857
+          name: vitelabs/go-vite
+        - id: 88845839
+          name: 33cn/chain33
+        - id: 127714540
+          name: dappledger/AnnChain
+        - id: 162993816
+          name: ntminer/NtMiner
+        - id: 8508768
+          name: seriesseed/equity

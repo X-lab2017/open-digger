@@ -1,5 +1,9 @@
 name: Mulesoft
 type: Company
 data:
-  github_org:
-    - 185740 # org:mulesoft
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 185740
+          name: mulesoft

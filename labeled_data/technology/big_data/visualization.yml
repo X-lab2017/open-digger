@@ -1,28 +1,55 @@
 name: Big Data - Visualization
 type: Tech-1
 data:
-  github_repo:
-    - 943149 # repo:d3/d3
-    - 9185792 # repo:apache/echarts
-    - 15111821 # repo:grafana/grafana
-    - 39464018 # repo:apache/superset
-    - 30203935 # repo:metabase/metabase
-    - 13926404 # repo:getredash/redash
-    - 1385122 # repo:matplotlib/matplotlib
-    - 85095608 # repo:airbnb/visx
-    - 45646037 # repo:plotly/plotly.js
-    - 59737212 # repo:antvis/G2
-    - 4704710 # repo:mwaskom/seaborn
-    - 11496279 # repo:c3js/c3
-    - 123345344 # repo:keplergl/kepler.gl
-    - 335164964 # repo:dataease/dataease
-    - 110222380 # repo:alibaba/BizCharts
-    - 39979936 # repo:nhn/tui.chart
-    - 156293506 # repo:microsoft/SandDance
-    - 102447494 # repo:edp963/davinci
-    - 96424863 # repo:TalkingData/inmap
-    - 159273440 # repo:shzlw/poli
-    - 8357227 # repo:biolab/orange3
-    - 37276906 # repo:keen/explorer
-    - 54937496 # repo:PatMartin/Dex
-    - 7833168 # repo:elastic/kibana
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 943149
+          name: d3/d3
+        - id: 9185792
+          name: apache/echarts
+        - id: 15111821
+          name: grafana/grafana
+        - id: 39464018
+          name: apache/superset
+        - id: 30203935
+          name: metabase/metabase
+        - id: 13926404
+          name: getredash/redash
+        - id: 1385122
+          name: matplotlib/matplotlib
+        - id: 85095608
+          name: airbnb/visx
+        - id: 45646037
+          name: plotly/plotly.js
+        - id: 59737212
+          name: antvis/G2
+        - id: 4704710
+          name: mwaskom/seaborn
+        - id: 11496279
+          name: c3js/c3
+        - id: 123345344
+          name: keplergl/kepler.gl
+        - id: 335164964
+          name: dataease/dataease
+        - id: 110222380
+          name: alibaba/BizCharts
+        - id: 39979936
+          name: nhn/tui.chart
+        - id: 156293506
+          name: microsoft/SandDance
+        - id: 102447494
+          name: edp963/davinci
+        - id: 96424863
+          name: TalkingData/inmap
+        - id: 159273440
+          name: shzlw/poli
+        - id: 8357227
+          name: biolab/orange3
+        - id: 37276906
+          name: keen/explorer
+        - id: 54937496
+          name: PatMartin/Dex
+        - id: 7833168
+          name: elastic/kibana

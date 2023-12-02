@@ -1,7 +1,13 @@
 name: Cloud Native - Platform - Certified Kubernetes - Hosted
 type: Tech-2
 data:
-  github_repo:
-    - 145783478 # repo:catalyst-cloud/magnum
-    - 162939338 # repo:QingCloudAppcenter/QKE
-    - 171472086 # repo:msazurestackworkloads/aks-engine
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 145783478
+          name: catalyst-cloud/magnum
+        - id: 162939338
+          name: QingCloudAppcenter/QKE
+        - id: 171472086
+          name: msazurestackworkloads/aks-engine

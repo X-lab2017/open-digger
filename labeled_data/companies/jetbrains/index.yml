@@ -1,5 +1,9 @@
 name: JetBrains
 type: Company
 data:
-  github_org:
-    - 878437  # org:JetBrains
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 878437
+          name: JetBrains

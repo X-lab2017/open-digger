@@ -1,115 +1,229 @@
 name: Frontend
 type: Tech-0
 data:
-  github_repo:
-    - 11730342 # repo:vuejs/vue
-    - 257485422 # repo:vitejs/vite
-    - 381907715 # repo:vuejs/petite-vue
-    - 24195339 # repo:angular/angular
-    - 21399598 # repo:angular/material
-    - 24953448 # repo:google/material-design-icons
-    - 31792824 # repo:flutter/flutter
-    - 10270250 # repo:facebook/react
-    - 29028775 # repo:facebook/react-native
-    - 154201259 # repo:facebook/hermes
-    - 129283183 # repo:facebook/flipper
-    - 151472642 # repo:facebookincubator/spectrum
-    - 31533997 # repo:facebook/fresco
-    - 80179724 # repo:facebook/litho
-    - 18503721 # repo:facebook/yoga
-    - 29703871 # repo:facebook/stetho
-    - 103603776 # repo:facebookincubator/profilo
-    - 32600951 # repo:facebook/componentkit
-    - 45147841 # repo:facebookarchive/prepack
-    - 22046023 # repo:facebook/flux
-    - 52113921 # repo:facebookarchive/draft-js
-    - 167174 # repo:jquery/jquery
-    - 27193779 # repo:nodejs/node
-    - 9384267 # repo:electron/electron
-    - 7530570 # repo:appium/appium
-    - 10160528 # repo:dojo/dojo
-    - 15720445 # repo:marko-js/marko
-    - 11061773 # repo:eslint/eslint
-    - 3678731 # repo:webpack/webpack
-    - 2126244 # repo:twbs/bootstrap
-    - 17469184 # repo:bootflat/bootflat.github.io
-    - 190211663 # repo:ivanvorobei/SwiftUI
-    - 27835638 # repo:aurelia/framework
-    - 121594173 # repo:aurelia/aurelia
-    - 67274736 # repo:ElemeFE/element
-    - 281319253 # repo:element-plus/element-plus
-    - 3100121 # repo:nwjs/nw.js
-    - 34526884 # repo:ant-design/ant-design
-    - 9603240 # repo:pure-css/pure
-    - 529502 # repo:scrapy/scrapy
-    - 12256376 # repo:ionic-team/ionic-framework
-    - 3214406 # repo:meteor/meteor
-    - 2573058 # repo:foundation/foundation-sites
-    - 191051391 # repo:redwoodjs/redwood
-    - 13142126 # repo:riot/riot
-    - 133442384 # repo:denoland/deno
-    - 952189 # repo:jashkenas/backbone
-    - 596892 # repo:pallets/flask
-    - 74293321 # repo:sveltejs/svelte
-    - 1863329 # repo:laravel/laravel
-    - 9309093 # repo:Semantic-Org/Semantic-UI
-    - 71995937 # repo:nuxt/nuxt
-    - 1685764 # repo:dhg/Skeleton
-    - 36535156 # repo:reduxjs/redux
-    - 17814354 # repo:MithrilJS/mithril.js
-    - 1844251 # repo:tastejs/todomvc
-    - 275993885 # repo:appsmithorg/appsmith
-    - 50264296 # repo:jgthms/bulma
-    - 5532320 # repo:Polymer/polymer
-    - 4164482 # repo:django/django
-    - 576201 # repo:mrdoob/three.js
-    - 20904437 # repo:gin-gonic/gin
-    - 24560307 # repo:babel/babel
-    - 35640229 # repo:rollup/rollup
-    - 13078968 # repo:postcss/postcss
-    - 70107786 # repo:vercel/next.js
-    - 307489284 # repo:remix-run/remix
-    - 130884470 # repo:solidjs/solid
-    - 101767772 # repo:bytecodealliance/wasmtime
-    - 212152900 # repo:wasm3/wasm3
-    - 461710233 # repo:pyscript/pyscript
-    - 255378816 # repo:bigskysoftware/htmx
-    - 224663696 # repo:alpinejs/alpine
-    - 95797174 # repo:lit/lit
-    - 72717562 # repo:alibaba/ice
-    - 172702973 # repo:alibaba/coobjc
-    - 173885446 # repo:alibaba/fish-redux
-    - 174063999 # repo:alibaba/flutter_boost
-    - 138132664 # repo:alibaba-fusion/next
-    - 111667959 # repo:umijs/umi
-    - 99705100 # repo:NG-ZORRO/ng-zorro-antd
-    - 175650201 # repo:alipay/SoloPi
-    - 186744765 # repo:areslabs/alita
-    - 128624453 # repo:NervJS/taro
-    - 118392397 # repo:jdf2e/nutui
-    - 9185792 # repo:apache/echarts
-    - 11893084 # repo:fex-team/webuploader
-    - 13203894 # repo:tangrams/tangram
-    - 28167802 # repo:Tencent/weui
-    - 73681508 # repo:Tencent/wepy
-    - 221822577 # repo:Tencent/Hippy
-    - 191744942 # repo:Tencent/Shadow
-    - 78492853 # repo:wux-weapp/wux-weapp
-    - 166419150 # repo:didi/chameleon
-    - 334586085 # repo:tnfe/transx
-    - 160603028 # repo:didi/mpx
-    - 128586820 # repo:didi/pile.js
-    - 182968735 # repo:didi/booster
-    - 140687430 # repo:dcloudio/uni-app
-    - 88717215 # repo:youzan/vant
-    - 8497273 # repo:58code/Argo
-    - 93732702 # repo:Qihoo360/RePlugin
-    - 96287699 # repo:spritejs/spritejs
-    - 41482296 # repo:DroidPluginTeam/DroidPlugin
-    - 13152531 # repo:thinkjs/thinkjs
-    - 60978609 # repo:ctripcorp/moles-packer
-    - 124171501 # repo:Meituan-Dianping/mpvue
-    - 193444509 # repo:iqiyi/Qigsaw
-    - 131093371 # repo:iqiyi/LiteApp
-    - 149471958 # repo:iqiyi/Neptune
-    - 179411861 # repo:iqiyi/xCrash
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 11730342
+          name: vuejs/vue
+        - id: 257485422
+          name: vitejs/vite
+        - id: 381907715
+          name: vuejs/petite-vue
+        - id: 24195339
+          name: angular/angular
+        - id: 21399598
+          name: angular/material
+        - id: 24953448
+          name: google/material-design-icons
+        - id: 31792824
+          name: flutter/flutter
+        - id: 10270250
+          name: facebook/react
+        - id: 29028775
+          name: facebook/react-native
+        - id: 154201259
+          name: facebook/hermes
+        - id: 129283183
+          name: facebook/flipper
+        - id: 151472642
+          name: facebookincubator/spectrum
+        - id: 31533997
+          name: facebook/fresco
+        - id: 80179724
+          name: facebook/litho
+        - id: 18503721
+          name: facebook/yoga
+        - id: 29703871
+          name: facebook/stetho
+        - id: 103603776
+          name: facebookincubator/profilo
+        - id: 32600951
+          name: facebook/componentkit
+        - id: 45147841
+          name: facebookarchive/prepack
+        - id: 22046023
+          name: facebook/flux
+        - id: 52113921
+          name: facebookarchive/draft-js
+        - id: 167174
+          name: jquery/jquery
+        - id: 27193779
+          name: nodejs/node
+        - id: 9384267
+          name: electron/electron
+        - id: 7530570
+          name: appium/appium
+        - id: 10160528
+          name: dojo/dojo
+        - id: 15720445
+          name: marko-js/marko
+        - id: 11061773
+          name: eslint/eslint
+        - id: 3678731
+          name: webpack/webpack
+        - id: 2126244
+          name: twbs/bootstrap
+        - id: 17469184
+          name: bootflat/bootflat.github.io
+        - id: 190211663
+          name: ivanvorobei/SwiftUI
+        - id: 27835638
+          name: aurelia/framework
+        - id: 121594173
+          name: aurelia/aurelia
+        - id: 67274736
+          name: ElemeFE/element
+        - id: 281319253
+          name: element-plus/element-plus
+        - id: 3100121
+          name: nwjs/nw.js
+        - id: 34526884
+          name: ant-design/ant-design
+        - id: 9603240
+          name: pure-css/pure
+        - id: 529502
+          name: scrapy/scrapy
+        - id: 12256376
+          name: ionic-team/ionic-framework
+        - id: 3214406
+          name: meteor/meteor
+        - id: 2573058
+          name: foundation/foundation-sites
+        - id: 191051391
+          name: redwoodjs/redwood
+        - id: 13142126
+          name: riot/riot
+        - id: 133442384
+          name: denoland/deno
+        - id: 952189
+          name: jashkenas/backbone
+        - id: 596892
+          name: pallets/flask
+        - id: 74293321
+          name: sveltejs/svelte
+        - id: 1863329
+          name: laravel/laravel
+        - id: 9309093
+          name: Semantic-Org/Semantic-UI
+        - id: 71995937
+          name: nuxt/nuxt
+        - id: 1685764
+          name: dhg/Skeleton
+        - id: 36535156
+          name: reduxjs/redux
+        - id: 17814354
+          name: MithrilJS/mithril.js
+        - id: 1844251
+          name: tastejs/todomvc
+        - id: 275993885
+          name: appsmithorg/appsmith
+        - id: 50264296
+          name: jgthms/bulma
+        - id: 5532320
+          name: Polymer/polymer
+        - id: 4164482
+          name: django/django
+        - id: 576201
+          name: mrdoob/three.js
+        - id: 20904437
+          name: gin-gonic/gin
+        - id: 24560307
+          name: babel/babel
+        - id: 35640229
+          name: rollup/rollup
+        - id: 13078968
+          name: postcss/postcss
+        - id: 70107786
+          name: vercel/next.js
+        - id: 307489284
+          name: remix-run/remix
+        - id: 130884470
+          name: solidjs/solid
+        - id: 101767772
+          name: bytecodealliance/wasmtime
+        - id: 212152900
+          name: wasm3/wasm3
+        - id: 461710233
+          name: pyscript/pyscript
+        - id: 255378816
+          name: bigskysoftware/htmx
+        - id: 224663696
+          name: alpinejs/alpine
+        - id: 95797174
+          name: lit/lit
+        - id: 72717562
+          name: alibaba/ice
+        - id: 172702973
+          name: alibaba/coobjc
+        - id: 173885446
+          name: alibaba/fish-redux
+        - id: 174063999
+          name: alibaba/flutter_boost
+        - id: 138132664
+          name: alibaba-fusion/next
+        - id: 111667959
+          name: umijs/umi
+        - id: 99705100
+          name: NG-ZORRO/ng-zorro-antd
+        - id: 175650201
+          name: alipay/SoloPi
+        - id: 186744765
+          name: areslabs/alita
+        - id: 128624453
+          name: NervJS/taro
+        - id: 118392397
+          name: jdf2e/nutui
+        - id: 9185792
+          name: apache/echarts
+        - id: 11893084
+          name: fex-team/webuploader
+        - id: 13203894
+          name: tangrams/tangram
+        - id: 28167802
+          name: Tencent/weui
+        - id: 73681508
+          name: Tencent/wepy
+        - id: 221822577
+          name: Tencent/Hippy
+        - id: 191744942
+          name: Tencent/Shadow
+        - id: 78492853
+          name: wux-weapp/wux-weapp
+        - id: 166419150
+          name: didi/chameleon
+        - id: 334586085
+          name: tnfe/transx
+        - id: 160603028
+          name: didi/mpx
+        - id: 128586820
+          name: didi/pile.js
+        - id: 182968735
+          name: didi/booster
+        - id: 140687430
+          name: dcloudio/uni-app
+        - id: 88717215
+          name: youzan/vant
+        - id: 8497273
+          name: 58code/Argo
+        - id: 93732702
+          name: Qihoo360/RePlugin
+        - id: 96287699
+          name: spritejs/spritejs
+        - id: 41482296
+          name: DroidPluginTeam/DroidPlugin
+        - id: 13152531
+          name: thinkjs/thinkjs
+        - id: 60978609
+          name: ctripcorp/moles-packer
+        - id: 124171501
+          name: Meituan-Dianping/mpvue
+        - id: 193444509
+          name: iqiyi/Qigsaw
+        - id: 131093371
+          name: iqiyi/LiteApp
+        - id: 149471958
+          name: iqiyi/Neptune
+        - id: 179411861
+          name: iqiyi/xCrash

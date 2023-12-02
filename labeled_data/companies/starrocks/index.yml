@@ -1,5 +1,9 @@
 name: StarRocks
 type: Company
 data:
-  github_org:
-    - 88238841 # org:StarRocks
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 88238841
+          name: StarRocks

@@ -1,6 +1,11 @@
 name: PingCAP
 type: Company
 data:
-  github_org:
-    - 11855343 # pingcap
-    - 41004122 # tikv
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 11855343
+          name: pingcap
+        - id: 41004122
+          name: tikv

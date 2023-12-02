@@ -1,5 +1,9 @@
 name: Samsung
 type: Company
 data:
-  github_org:
-    - 6210390 # org:Samsung
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 6210390
+          name: Samsung

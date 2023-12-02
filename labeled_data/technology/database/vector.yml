@@ -1,21 +1,41 @@
 name: Database - Vector
 type: Tech-1
 data:
-  github_repo:
-    - 201403923 # repo:activeloopai/deeplake
-    - 642912355 # repo:awa-ai/awadb
-    - 546206616 # repo:chroma-core/chroma
-    - 304530333 # repo:featureform/embeddinghub
-    - 628503457 # repo:jdagdelen/hyperDB
-    - 635374751 # repo:jina-ai/vectordb
-    - 632269609 # repo:kagisearch/vectordb
-    - 242383787 # repo:marekgalovic/anndb
-    - 520096046 # repo:marqo-ai/marqo
-    - 208728772 # repo:milvus-io/milvus
-    - 478288303 # repo:nuclia/nucliadb
-    - 40127179 # repo:pilosa/pilosa
-    - 268163609 # repo:qdrant/qdrant
-    - 55072677 # repo:semi-technologies/weaviate
-    - 195619075 # repo:vdaas/vald
-    - 186332888 # repo:vearch/vearch
-    - 634656527 # repo:vector5ai/vector5db
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 201403923
+          name: activeloopai/deeplake
+        - id: 642912355
+          name: awa-ai/awadb
+        - id: 546206616
+          name: chroma-core/chroma
+        - id: 304530333
+          name: featureform/embeddinghub
+        - id: 628503457
+          name: jdagdelen/hyperDB
+        - id: 635374751
+          name: jina-ai/vectordb
+        - id: 632269609
+          name: kagisearch/vectordb
+        - id: 242383787
+          name: marekgalovic/anndb
+        - id: 520096046
+          name: marqo-ai/marqo
+        - id: 208728772
+          name: milvus-io/milvus
+        - id: 478288303
+          name: nuclia/nucliadb
+        - id: 40127179
+          name: pilosa/pilosa
+        - id: 268163609
+          name: qdrant/qdrant
+        - id: 55072677
+          name: semi-technologies/weaviate
+        - id: 195619075
+          name: vdaas/vald
+        - id: 186332888
+          name: vearch/vearch
+        - id: 634656527
+          name: vector5ai/vector5db

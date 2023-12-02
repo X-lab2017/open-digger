@@ -1,16 +1,19 @@
 import { merge } from 'lodash';
 import { query } from '../db/clickhouse';
-import { getGitHubData, getLabelData } from '../label_data_utils';
+import { getPlatformData, getLabelData, PlatformNames } from '../label_data_utils';
 
 export interface QueryConfig<T = any> {
   labelUnion?: string[];
   labelIntersect?: string[];
-  repoIds?: number[];
-  orgIds?: number[];
-  repoNames?: string[];
-  orgNames?: string[];
-  userIds?: number[];
-  userLogins?: string[];
+  idOrNames?: {
+    platform: PlatformNames;
+    repoIds?: number[];
+    orgIds?: number[];
+    repoNames?: string[];
+    orgNames?: string[];
+    userIds?: number[];
+    userLogins?: string[];
+  }[];
   whereClause?: string;
   startYear: number;
   startMonth: number;
@@ -39,13 +42,13 @@ export const getMergedConfig = (config: any): QueryConfig => {
     precision: 2,
   };
   return merge(defaultConfig, config);
-}
+};
 
 export interface TimeDurationOption {
   unit: 'week' | 'day' | 'hour' | 'minute';
   thresholds: number[];
   sortBy: 'avg' | 'levels' | 'quantile_0' | 'quantile_1' | 'quantile_2' | 'quantile_3' | 'quantile_4'
-}
+};
 
 export const timeDurationConstants = {
   unitArray: ['week', 'day', 'hour', 'minute'],
@@ -55,7 +58,7 @@ export const timeDurationConstants = {
 
 export const forEveryMonthByConfig = async (config: QueryConfig, func: (y: number, m: number) => Promise<any>) => {
   return forEveryMonth(config.startYear, config.startMonth, config.endYear, config.endMonth, func);
-}
+};
 
 export const forEveryMonth = async (startYear: number, startMonth: number, endYear: number, endMonth: number, func: (y: number, m: number) => Promise<any>) => {
   for (let y = startYear; y <= endYear; y++) {
@@ -64,7 +67,7 @@ export const forEveryMonth = async (startYear: number, startMonth: number, endYe
       await func(y, m);
     }
   }
-}
+};
 
 export const forEveryQuarterByConfig = async (config: QueryConfig, func: (y: number, q: number) => Promise<any>) => {
   const quarters: { y: number, q: number }[] = [];
@@ -79,7 +82,7 @@ export const forEveryQuarterByConfig = async (config: QueryConfig, func: (y: num
   for (const i of quarters) {
     await func(i.y, i.q);
   }
-}
+};
 
 export const forEveryYearByConfig = async (config: QueryConfig, func: (y: number) => Promise<any>) => {
   const years: number[] = [];
@@ -93,209 +96,151 @@ export const forEveryYearByConfig = async (config: QueryConfig, func: (y: number
   for (const y of years) {
     await func(y);
   }
-}
+};
 
 // Repo
-export const getRepoWhereClauseForNeo4j = (config: QueryConfig): string | null => {
+export const getRepoWhereClause = async (config: QueryConfig): Promise<string | null> => {
   const repoWhereClauseArray: string[] = [];
-  if (config.repoIds) repoWhereClauseArray.push(`r.id IN [${config.repoIds.join(',')}]`);
-  if (config.repoNames) repoWhereClauseArray.push(`r.name IN [${config.repoNames.map(n => `'${n}'`)}]`);
-  if (config.orgIds) repoWhereClauseArray.push(`r.org_id IN [${config.orgIds.join(',')}]`);
-  if (config.orgNames) repoWhereClauseArray.push(`r.org_name IN [${config.orgNames.map(o => `'${o}'`)}]`);
+
+  // id or names
+  if (config.idOrNames && Array.isArray(config.idOrNames) && config.idOrNames.length > 0) {
+    for (const p of config.idOrNames) {
+      if (p.repoNames && p.repoNames.length > 0) {
+        // convert repo name to id
+        const sql = `SELECT any(repo_id) AS id FROM events WHERE repo_name IN [${p.repoNames.map(n => `'${n}'`)}] AND platform='${p.platform}' GROUP BY repo_name`;
+        const repoIds = (await query<any>(sql, { format: 'JSONEachRow' })).map(r => r.id);
+        repoWhereClauseArray.push(`(repo_id IN [${repoIds.join(',')}] AND platform='${p.platform}')`);
+      }
+
+      if (p.repoIds && p.repoIds.length > 0) repoWhereClauseArray.push(`(repo_id IN [${p.repoIds.join(',')}] AND platform='${p.platform}')`);
+
+      if (p.orgNames && p.orgNames.length > 0) {
+        // convert org name to id
+        const sql = `SELECT any(org_id) AS id FROM events WHERE org_login IN [${p.orgNames.map(n => `'${n}'`)}] AND platform='${p.platform}' GROUP BY org_login`;
+        const orgIds = (await query<any>(sql, { format: 'JSONEachRow' })).map(r => r.id);
+        repoWhereClauseArray.push(`(org_id IN [${orgIds.join(',')}] AND platform='${p.platform}')`);
+      }
+
+      if (p.orgIds && p.orgIds.length > 0) repoWhereClauseArray.push(`(org_id IN [${p.orgIds.join(',')}] AND platform='${p.platform}')`);
+    }
+  }
+
+  // label intersect
   if (config.labelIntersect) {
-    return '(' + config.labelIntersect.map(l => {
-      const data = getGitHubData([l], config.injectLabelData);
+    const condition = '(' + config.labelIntersect.map(l => {
+      const data = getPlatformData([l], config.injectLabelData);
       const arr: string[] = [];
-      if (data.githubRepos.length > 0) arr.push(`r.id IN [${data.githubRepos.join(',')}]`);
-      if (data.githubOrgs.length > 0) arr.push(`r.org_id IN [${data.githubOrgs.join(',')}]`);
+      for (const p of data) {
+        if (p.repos.length > 0) arr.push(`(repo_id IN [${p.repos.map(r => r.id).join(',')}] AND platform='${p.name}')`);
+        if (p.orgs.length > 0) arr.push(`(org_id IN [${p.orgs.map(o => o.id).join(',')}] AND platform='${p.name}')`);
+      }
       if (arr.length === 0) return null;
       return `(${arr.join(' OR ')})`;
     }).filter(i => i !== null).join(' AND ') + ')';
-  }
+    repoWhereClauseArray.push(condition);
+  };
+
+  // label union
   if (config.labelUnion) {
-    const data = getGitHubData(config.labelUnion, config.injectLabelData);
-    if (data.githubRepos.length > 0) repoWhereClauseArray.push(`r.id IN [${data.githubRepos.join(',')}]`);
-    if (data.githubOrgs.length > 0) repoWhereClauseArray.push(`r.org_id IN [${data.githubOrgs.join(',')}]`);
+    const data = getPlatformData(config.labelUnion, config.injectLabelData);
+    for (const p of data) {
+      if (p.repos.length > 0) repoWhereClauseArray.push(`(repo_id IN [${p.repos.map(r => r.id).join(',')}] AND platform='${p.name}')`);
+      if (p.orgs.length > 0) repoWhereClauseArray.push(`(org_id IN [${p.orgs.map(o => o.id).join(',')}] AND platform='${p.name}')`);
+    }
   }
+
+  // where clause
   if (config.whereClause) {
     repoWhereClauseArray.push(config.whereClause);
   }
+
   const repoWhereClause = repoWhereClauseArray.length > 0 ? `(${repoWhereClauseArray.join(' OR ')})` : null;
   return repoWhereClause;
-}
-
-export const getRepoWhereClauseForClickhouse = async (config: QueryConfig): Promise<string | null> => {
-  const repoWhereClauseArray: string[] = [];
-  if (config.repoNames) {
-    // convert repo name to id
-    const sql = `SELECT any(repo_id) AS id FROM gh_events WHERE repo_name IN [${config.repoNames.map(n => `'${n}'`)}] GROUP BY repo_name`;
-    const repoIds = (await query<any>(sql, { format: 'JSONEachRow' })).map(r => r.id);
-    if (config.repoIds) {
-      config.repoIds.push(...repoIds);
-    } else {
-      config.repoIds = repoIds;
-    }
-  }
-  if (config.repoIds) repoWhereClauseArray.push(`repo_id IN [${config.repoIds.join(',')}]`);
-
-  if (config.orgNames) {
-    // convert org name to id
-    const sql = `SELECT any(org_id) AS id FROM gh_events WHERE org_login IN [${config.orgNames.map(n => `'${n}'`)}] GROUP BY org_login`;
-    const orgIds = (await query<any>(sql, { format: 'JSONEachRow' })).map(r => r.id);
-    if (config.orgIds) {
-      config.orgIds.push(...orgIds);
-    } else {
-      config.orgIds = orgIds;
-    }
-  }
-  if (config.orgIds) repoWhereClauseArray.push(`org_id IN [${config.orgIds.join(',')}]`);
-
-  if (config.labelIntersect) {
-    return '(' + config.labelIntersect.map(l => {
-      const data = getGitHubData([l], config.injectLabelData);
-      const arr: string[] = [];
-      if (data.githubRepos.length > 0) arr.push(`repo_id IN [${data.githubRepos.join(',')}]`);
-      if (data.githubOrgs.length > 0) arr.push(`org_id IN [${data.githubOrgs.join(',')}]`);
-      if (arr.length === 0) return null;
-      return `(${arr.join(' OR ')})`;
-    }).filter(i => i !== null).join(' AND ') + ')';
-  }
-  if (config.labelUnion) {
-    const data = getGitHubData(config.labelUnion, config.injectLabelData);
-    if (data.githubRepos.length > 0) repoWhereClauseArray.push(`repo_id IN [${data.githubRepos.join(',')}]`);
-    if (data.githubOrgs.length > 0) repoWhereClauseArray.push(`org_id IN [${data.githubOrgs.join(',')}]`);
-  }
-  if (config.whereClause) {
-    repoWhereClauseArray.push(config.whereClause);
-  }
-  const repoWhereClause = repoWhereClauseArray.length > 0 ? `(${repoWhereClauseArray.join(' OR ')})` : null;
-  return repoWhereClause;
-}
+};
 
 // User
-export const getUserWhereClauseForNeo4j = (config: QueryConfig): string | null => {
+export const getUserWhereClause = async (config: QueryConfig): Promise<string | null> => {
   const userWhereClauseArray: string[] = [];
-  if (config.userIds) userWhereClauseArray.push(`u.id IN [${config.userIds.join(',')}]`);
-  if (config.userLogins) userWhereClauseArray.push(`u.login IN [${config.userLogins.map(n => `'${n}'`)}]`);
-  if (config.labelIntersect) {
-    return '(' + config.labelIntersect.map(l => {
-      const data = getGitHubData([l], config.injectLabelData);
-      if (data.githubUsers.length > 0) return `u.id IN [${data.githubUsers.join(',')}]`;
-      return null;
-    }).filter(i => i !== null).join(' AND ') + ')';
-  }
-  if (config.labelUnion) {
-    const data = getGitHubData(config.labelUnion, config.injectLabelData);
-    if (data.githubUsers.length > 0) userWhereClauseArray.push(`u.id IN [${data.githubUsers.join(',')}]`);
-  }
-  if (config.whereClause) {
-    userWhereClauseArray.push(config.whereClause);
-  }
-  const userWhereClause = userWhereClauseArray.length > 0 ? `(${userWhereClauseArray.join(' OR ')})` : null;
-  return userWhereClause;
-}
 
-export const getUserWhereClauseForClickhouse = async (config: QueryConfig): Promise<string | null> => {
-  const userWhereClauseArray: string[] = [];
-  if (config.userLogins) {
-    // convert user login to id
-    const sql = `SELECT any(actor_id) AS id FROM gh_events WHERE actor_login IN [${config.userLogins.map(n => `'${n}'`)}] GROUP BY actor_login`;
-    const userIds = (await query<any>(sql, { format: 'JSONEachRow' })).map(r => r.id);
-    if (config.userIds) {
-      config.userIds.push(...userIds);
-    } else {
-      config.userIds = userIds;
+  // id or names
+  if (config.idOrNames && Array.isArray(config.idOrNames) && config.idOrNames.length > 0) {
+    for (const p of config.idOrNames) {
+      if (p.userLogins && p.userLogins.length > 0) {
+        // convert user login to id
+        const sql = `SELECT any(actor_id) AS id FROM events WHERE actor_login IN [${p.userLogins.map(n => `'${n}'`)}] AND platform='${p.platform}' GROUP BY actor_login`;
+        const userIds = (await query<any>(sql, { format: 'JSONEachRow' })).map(r => r.id);
+        userWhereClauseArray.push(`(actor_id IN [${userIds.join(',')}] AND platform='${p.platform}')`);
+      }
+
+      if (p.userIds && p.userIds.length > 0) userWhereClauseArray.push(`(actor_id IN [${p.userIds.join(',')}] AND platform='${p.platform}')`);
     }
   }
-  if (config.userIds) userWhereClauseArray.push(`actor_id IN [${config.userIds.join(',')}]`);
+
+  // label intersect
   if (config.labelIntersect) {
-    return '(' + config.labelIntersect.map(l => {
-      const data = getGitHubData([l], config.injectLabelData);
-      if (data.githubUsers.length > 0) return `actor_id IN [${data.githubUsers.join(',')}]`;
-      return null;
+    const condition = '(' + config.labelIntersect.map(l => {
+      const data = getPlatformData([l], config.injectLabelData);
+      const arr: string[] = [];
+      for (const p of data) {
+        if (p.users.length > 0) arr.push(`(actor_id IN [${p.users.map(u => u.id).join(',')}] AND platform='${p.name}')`);
+      }
+      if (arr.length === 0) return null;
+      return `(${arr.join(' OR ')})`;
     }).filter(i => i !== null).join(' AND ') + ')';
+    userWhereClauseArray.push(condition);
   }
+
+  // label union
   if (config.labelUnion) {
-    const data = getGitHubData(config.labelUnion, config.injectLabelData);
-    if (data.githubUsers.length > 0) userWhereClauseArray.push(`actor_id IN [${data.githubUsers.join(',')}]`);
+    const data = getPlatformData(config.labelUnion, config.injectLabelData);
+    for (const p of data) {
+      if (p.users.length > 0) userWhereClauseArray.push(`(actor_id IN [${p.users.map(u => u.id).join(',')}] AND platform='${p.name}')`);
+    }
   }
+
+  // where clause
   if (config.whereClause) {
     userWhereClauseArray.push(config.whereClause);
   }
+
   const userWhereClause = userWhereClauseArray.length > 0 ? `(${userWhereClauseArray.join(' OR ')})` : null;
   return userWhereClause;
-}
+};
 
-// Time
-export const getTimeRangeWhereClauseForNeo4j = async (config: QueryConfig, type: string): Promise<string> => {
-  const timeWhereClauseArray: string[] = [];
-  await forEveryMonthByConfig(config, async (y, m) => timeWhereClauseArray.push(`${type}.activity_${y}${m} > 0`));
-  if (timeWhereClauseArray.length === 0) throw new Error('Not valid time range.');
-  const timeWhereClause = `(${timeWhereClauseArray.join(' OR ')})`;
-  return timeWhereClause;
-}
-
-export const getTimeRangeSumClauseForNeo4j = async (config: QueryConfig, type: string): Promise<string[]> => {
-  const timeRangeSumClauseArray: string[][] = [];
-  if (config.groupTimeRange === 'month') {
-    // for every month individual, every element belongs to a individual element
-    await forEveryMonthByConfig(config, async (y, m) => timeRangeSumClauseArray.push([`COALESCE(${type}_${y}${m}, 0.0)`]));
-  } else if (config.groupTimeRange === 'quarter') {
-    // for every quarter, need to find out when to push a new element by quarter
-    let lastQuarter = 0;
-    await forEveryMonthByConfig(config, async (y, m) => {
-      const q = Math.ceil(m / 3);
-      if (q !== lastQuarter) timeRangeSumClauseArray.push([]);
-      timeRangeSumClauseArray[timeRangeSumClauseArray.length - 1].push(`COALESCE(${type}_${y}${m}, 0.0)`);
-      lastQuarter = q;
-    });
-  } else if (config.groupTimeRange === 'year') {
-    // for every year, need to find out when to push a new element by the year;
-    let lastYear = 0;
-    await forEveryMonthByConfig(config, async (y, m) => {
-      if (y !== lastYear) timeRangeSumClauseArray.push([]);
-      timeRangeSumClauseArray[timeRangeSumClauseArray.length - 1].push(`COALESCE(${type}_${y}${m}, 0.0)`);
-      lastYear = y;
-    });
-  } else {
-    // for all to single one, push to the first element
-    timeRangeSumClauseArray.push([]);
-    await forEveryMonthByConfig(config, async (y, m) => timeRangeSumClauseArray[0].push(`COALESCE(${type}_${y}${m}, 0.0)`));
-  }
-  if (timeRangeSumClauseArray.length === 0) throw new Error('Not valid time range.');
-  const timeRangeSumClause = timeRangeSumClauseArray.map(i => `round(${i.join(' + ')}, ${config.precision})`);
-  return timeRangeSumClause;
-}
-
-export const getTimeRangeWhereClauseForClickhouse = (config: QueryConfig): string => {
+export const getTimeRangeWhereClause = (config: QueryConfig): string => {
   return ` created_at >= toDate('${config.startYear}-${config.startMonth}-1') AND created_at < dateAdd(month, 1, toDate('${config.endYear}-${config.endMonth}-1'))`;
-}
+};
 
 // clickhouse label group condition
-export const getLabelGroupConditionClauseForClickhouse = (config: QueryConfig): string => {
+export const getLabelGroupConditionClause = (config: QueryConfig): string => {
   const labelData = getLabelData(config.injectLabelData)?.filter(l => l.type === config.groupBy);
   if (!labelData || labelData.length === 0) throw new Error(`Invalide group by label: ${config.groupBy}`);
-  const idLabelRepoMap = new Map<number, string[][]>();
-  const idLabelOrgMap = new Map<number, string[][]>();
-  const idLabelUserMap = new Map<number, string[][]>();
-  const addToMap = (map: Map<number, string[][]>, id: number, label: string[]) => {
+  const idLabelRepoMap = new Map<string, string[][]>();
+  const idLabelOrgMap = new Map<string, string[][]>();
+  const idLabelUserMap = new Map<string, string[][]>();
+  const addToMap = (map: Map<string, string[][]>, id: string, label: string[]) => {
     if (!map.has(id)) map.set(id, []);
     map.get(id)!.push(label);
   };
 
   labelData.forEach(l => {
-    l.githubOrgs.forEach(id => addToMap(idLabelOrgMap, id, [l.identifier, l.name]));
-    l.githubRepos.forEach(id => addToMap(idLabelRepoMap, id, [l.identifier, l.name]));
-    l.githubUsers.forEach(id => addToMap(idLabelUserMap, id, [l.identifier, l.name]));
+    l.platforms.forEach(p => {
+      p.repos.forEach(r => addToMap(idLabelRepoMap, `${p.name}_${r.id}`, [l.identifier, l.name]));
+      p.orgs.forEach(o => addToMap(idLabelOrgMap, `${p.name}_${o.id}`, [l.identifier, l.name]));
+      p.users.forEach(u => addToMap(idLabelUserMap, `${p.name}_${u.id}`, [l.identifier, l.name]));
+    });
   });
 
-  const resultMap = new Map<string, { labels: string[][], repoIds: number[], orgIds: number[], userIds: number[] }>();
-  const addToResultMap = (map: Map<string, { labels: string[][], repoIds: number[], orgIds: number[], userIds: number[] }>, id: number, labels: string[][], type: 'repo' | 'org' | 'user') => {
+  type resultMapType = Map<string, { labels: string[][], platforms: Map<string, { repoIds: number[], orgIds: number[], userIds: number[] }> }>;
+  const resultMap: resultMapType = new Map();
+  const addToResultMap = (map: resultMapType, id: string, labels: string[][], type: 'repo' | 'org' | 'user') => {
     const key = labels[0].toString();
-    if (!map.has(key)) map.set(key, { labels, repoIds: [], orgIds: [], userIds: [] });
-    if (type === 'repo') map.get(key)!.repoIds.push(id);
-    else if (type === 'org') map.get(key)!.orgIds.push(id);
-    else if (type === 'user') map.get(key)!.userIds.push(id);
+    if (!map.has(key)) map.set(key, { labels, platforms: new Map<string, { repoIds: number[], orgIds: number[], userIds: number[] }>() });
+    const [platform, entryId] = id.split('_');
+    if (!map.get(key)!.platforms.has(platform)) map.get(key)!.platforms.set(platform, { repoIds: [], orgIds: [], userIds: [] });
+    if (type === 'repo') map.get(key)!.platforms.get(platform)!.repoIds.push(+entryId);
+    else if (type === 'org') map.get(key)!.platforms.get(platform)!.orgIds.push(+entryId);
+    else if (type === 'user') map.get(key)!.platforms.get(platform)!.userIds.push(+entryId);
   }
   idLabelRepoMap.forEach((labels, id) => addToResultMap(resultMap, id, labels, 'repo'));
   idLabelOrgMap.forEach((labels, id) => addToResultMap(resultMap, id, labels, 'org'));
@@ -303,16 +248,18 @@ export const getLabelGroupConditionClauseForClickhouse = (config: QueryConfig): 
 
   const idConditions = Array.from(resultMap.values()).map(v => {
     const c: string[] = [];
-    if (v.orgIds.length > 0) c.push(`org_id IN (${v.orgIds.join(',')})`);
-    if (v.repoIds.length > 0) c.push(`repo_id IN (${v.repoIds.join(',')})`);
-    if (v.userIds.length > 0) c.push(`actor_id IN (${v.userIds.join(',')})`);
+    for (const [name, p] of v.platforms) {
+      if (p.repoIds.length > 0) c.push(`(repo_id IN (${p.repoIds.join(',')}) AND platform='${name}')`);
+      if (p.orgIds.length > 0) c.push(`(org_id IN (${p.orgIds.join(',')}) AND platform='${name}')`);
+      if (p.userIds.length > 0) c.push(`(actor_id IN (${p.userIds.join(',')}) AND platform='${name}')`);
+    }
     return `(${c.join(' OR ')}),[${v.labels.map(l => `tuple('${l[0]}','${l[1]}')`).join(',')}]`;
   }).join(',');
 
   return `(arrayJoin(multiIf(${idConditions}, [tuple('Others', 'Others')])) AS items).1 AS id, any(items.2) AS name`;
-}
+};
 
-export const getGroupArrayInsertAtClauseForClickhouse = (config: QueryConfig, option: { key: string; defaultValue?: string; value?: string; noPrecision?: boolean, positionByEndTime?: boolean }): string => {
+export const getGroupArrayInsertAtClause = (config: QueryConfig, option: { key: string; defaultValue?: string; value?: string; noPrecision?: boolean, positionByEndTime?: boolean }): string => {
   let startTime = `toDate('${config.startYear}-${config.startMonth}-1')`;
   let endTime = `toDate('${config.endYear}-${config.endMonth}-1')`;
   return `groupArrayInsertAt(
@@ -338,9 +285,9 @@ export const getGroupArrayInsertAtClauseForClickhouse = (config: QueryConfig, op
       else if (config.groupTimeRange === 'year') startTime = `toStartOfYear(${startTime})`;
       return `toUInt32(dateDiff('${config.groupTimeRange}', ${startTime}, time)${option.positionByEndTime ? '-1' : ''})`;
     })()}) AS ${option.key}`
-}
+};
 
-export const getGroupTimeClauseForClickhouse = (config: QueryConfig, timeCol: string = 'created_at'): string => {
+export const getGroupTimeClause = (config: QueryConfig, timeCol: string = 'created_at'): string => {
   return `${(() => {
     let groupEle = `dateAdd(month, 1, toDate('${config.endYear}-${config.endMonth}-1'))`; // no time range, aggregate all data to a single value, use next month of end time to make sure time compare works.
     if (config.groupTimeRange === 'month') groupEle = `toStartOfMonth(${timeCol})`;
@@ -348,29 +295,29 @@ export const getGroupTimeClauseForClickhouse = (config: QueryConfig, timeCol: st
     else if (config.groupTimeRange === 'year') groupEle = `toStartOfYear(${timeCol})`;
     return groupEle;
   })()} AS time`;
-}
+};
 
-export const getGroupIdClauseForClickhouse = (config: QueryConfig, type: string = 'repo', timeCol?: string) => {
+export const getGroupIdClause = (config: QueryConfig, type: string = 'repo', timeCol?: string) => {
   return `${(() => {
     const timeColumn = timeCol ?? (config.groupTimeRange ? 'time' : 'created_at');
     if (!config.groupBy) {  // group by repo'
       if (type === 'repo')
-        return `repo_id AS id, argMax(repo_name, ${timeColumn}) AS name`;
+        return `repo_id AS id, platform, argMax(repo_name, ${timeColumn}) AS name`;
       else
-        return `actor_id AS id, argMax(actor_login, ${timeColumn}) AS name`;
+        return `actor_id AS id, platform, argMax(actor_login, ${timeColumn}) AS name`;
     } else if (config.groupBy === 'org') {
-      return `org_id AS id, argMax(org_login, ${timeColumn}) AS name`;
+      return `org_id AS id, platform, argMax(org_login, ${timeColumn}) AS name`;
     } else {  // group by label
-      return getLabelGroupConditionClauseForClickhouse(config);
+      return getLabelGroupConditionClause(config);
     }
   })()}`;
-}
+};
 
 export const getInnerOrderAndLimit = (config: QueryConfig, col: string, index?: number) => {
   return `${config.limitOption === 'each' && config.limit > 0 ?
     `${config.order ? `ORDER BY ${col}${index !== undefined ? `[${index}]` : ''} ${config.order}` : ''} LIMIT ${config.limit} BY time` :
     ''}`
-}
+};
 
 export const getOutterOrderAndLimit = (config: QueryConfig, col: string, index?: number) => {
   return `${config.order ? `ORDER BY ${config.orderOption === 'latest'
@@ -378,9 +325,37 @@ export const getOutterOrderAndLimit = (config: QueryConfig, col: string, index?:
     : `arraySum(${index !== undefined ? `x -> x[${index}],` : ''}${col})`
     } ${config.order}` : ''}
     ${config.limitOption === 'all' && config.limit > 0 ? `LIMIT ${config.limit}` : ''}`;
-}
+};
+
+export const getTopLevelPlatform = (config: QueryConfig) => {
+  if (config.groupBy && config.groupBy !== 'org' && config.groupBy !== 'repo') {
+    return "'All' AS platform";
+  } else {
+    return 'platform';
+  }
+};
+
+export const getInnerGroupBy = (config: QueryConfig) => {
+  if (config.groupBy && config.groupBy !== 'org' && config.groupBy !== 'repo') {
+    return 'GROUP BY id, time';
+  } else {
+    return 'GROUP BY id, platform, time';
+  }
+};
 
 export const filterEnumType = (value: any, types: string[], defautlValue: string): string => {
   if (!value || !types.includes(value)) return defautlValue;
   return value;
-}
+};
+
+export const processQueryResult = (result: any, customKeys: string[],
+  postProcessor?: { [key: string]: (value: any) => any }): any[] => {
+  const keys = ['id', 'platform', 'name', ...customKeys];
+  return result.map((r: any) => {
+    const obj: any = {};
+    keys.forEach((k, i) => {
+      obj[k] = postProcessor && postProcessor[k] ? postProcessor[k](r[i]) : r[i];
+    });
+    return obj;
+  });
+};

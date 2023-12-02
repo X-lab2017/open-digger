@@ -1,5 +1,9 @@
 name: AWS Distro for OpenTelemetry
 type: Project
 data:
-  github_org:
-    - 69270564 # org:aws-observability
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 69270564
+          name: aws-observability

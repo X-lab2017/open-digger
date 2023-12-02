@@ -1,5 +1,9 @@
 name: Postman
 type: Company
 data:
-  github_org:
-    - 10251060  # org:postmanlabs
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 10251060
+          name: postmanlabs

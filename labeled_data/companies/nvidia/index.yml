@@ -1,7 +1,13 @@
 name: NVIDIA
 type: Company
 data:
-  github_org:
-    - 1728152 # org:NVIDIA
-    - 7717624 # org:NVIDIAGameWorks
-    - 2695301 # org:NVlabs
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 1728152
+          name: NVIDIA
+        - id: 7717624
+          name: NVIDIAGameWorks
+        - id: 2695301
+          name: NVlabs

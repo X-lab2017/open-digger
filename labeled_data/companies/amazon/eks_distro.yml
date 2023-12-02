@@ -1,5 +1,9 @@
 name: EKS Distro
 type: Project
 data:
-  github_repo:
-    - 313741735 # repo:aws/eks-distro
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 313741735
+          name: aws/eks-distro

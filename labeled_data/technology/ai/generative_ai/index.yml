@@ -1,42 +1,79 @@
 name: Artificial Intelligence - Generative Artificial Intelligence
 type: Tech-1
 data:
-  label:
+  labels:
     - model
     - tool
     - application
-  github_repo:
-    - 573819845 # repo:acheong08/chatgpt
-    - 582822129 # repo:karpathy/nanogpt
-    - 595893961 # repo:lllyasviel/controlnet
-    - 574965758 # repo:fuergaosi233/wechat-chatgpt
-    - 573631261 # repo:transitive-bullshit/chatgpt-api
-    - 576380523 # repo:lucidrains/palm-rlhf-pytorch
-    - 602270517 # repo:fminference/flexgen
-    - 535509546 # repo:brycedrennan/imaginairy
-    - 288108533 # repo:karpathy/mingpt
-    - 560704231 # repo:jerryjliu/gpt_index
-    - 575048321 # repo:openai/point-e
-    - 525592995 # repo:invoke-ai/invokeai
-    - 55072677 # repo:weaviate/weaviate
-    - 574428530 # repo:rawandahmad698/pychatgpt
-    - 572971616 # repo:vincelwt/chatgpt-mac
-    - 502482803 # repo:bigscience-workshop/petals
-    - 219986676 # repo:ashishpatel26/Tools-to-Design-or-Visualize-Architecture-of-Neural-Network
-    - 58414589 # repo:oneapi-src/onednn
-    - 224296809 # repo:google-research/albert
-    - 341067188 # repo:alpa-projects/alpa
-    - 545104023 # repo:CarperAI/trlx
-    - 590604203 # repo:TheR1D/shell_gpt
-    - 517552648 # repo:modelscope/modelscope
-    - 588477692 # repo:BlinkDL/ChatRWKV
-    - 268163609 # repo:qdrant/qdrant
-    - 208728772 # repo:milvus-io/milvus
-    - 502482803 # repo:bigscience-workshop/petals
-    - 591782276 # repo:jaymody/picoGPT
-    - 521021013 # repo:THUDM/GLM-130B
-    - 244607156 # repo:VinAIResearch/PhoBERT
-    - 355059998 # repo:rinnakk/japanese-pretrained-models
-    - 168799526 # repo:huggingface/pytorch-image-models
-    - 622737738 # repo:yoheinakajima/babyagi
-    - 613591358 # repo:tloen/alpaca-lora
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 573819845
+          name: acheong08/chatgpt
+        - id: 582822129
+          name: karpathy/nanogpt
+        - id: 595893961
+          name: lllyasviel/controlnet
+        - id: 574965758
+          name: fuergaosi233/wechat-chatgpt
+        - id: 573631261
+          name: transitive-bullshit/chatgpt-api
+        - id: 576380523
+          name: lucidrains/palm-rlhf-pytorch
+        - id: 602270517
+          name: fminference/flexgen
+        - id: 535509546
+          name: brycedrennan/imaginairy
+        - id: 288108533
+          name: karpathy/mingpt
+        - id: 560704231
+          name: jerryjliu/gpt_index
+        - id: 575048321
+          name: openai/point-e
+        - id: 525592995
+          name: invoke-ai/invokeai
+        - id: 55072677
+          name: weaviate/weaviate
+        - id: 574428530
+          name: rawandahmad698/pychatgpt
+        - id: 572971616
+          name: vincelwt/chatgpt-mac
+        - id: 502482803
+          name: bigscience-workshop/petals
+        - id: 219986676
+          name: ashishpatel26/Tools-to-Design-or-Visualize-Architecture-of-Neural-Network
+        - id: 58414589
+          name: oneapi-src/onednn
+        - id: 224296809
+          name: google-research/albert
+        - id: 341067188
+          name: alpa-projects/alpa
+        - id: 545104023
+          name: CarperAI/trlx
+        - id: 590604203
+          name: TheR1D/shell_gpt
+        - id: 517552648
+          name: modelscope/modelscope
+        - id: 588477692
+          name: BlinkDL/ChatRWKV
+        - id: 268163609
+          name: qdrant/qdrant
+        - id: 208728772
+          name: milvus-io/milvus
+        - id: 502482803
+          name: bigscience-workshop/petals
+        - id: 591782276
+          name: jaymody/picoGPT
+        - id: 521021013
+          name: THUDM/GLM-130B
+        - id: 244607156
+          name: VinAIResearch/PhoBERT
+        - id: 355059998
+          name: rinnakk/japanese-pretrained-models
+        - id: 168799526
+          name: huggingface/pytorch-image-models
+        - id: 622737738
+          name: yoheinakajima/babyagi
+        - id: 613591358
+          name: tloen/alpaca-lora

@@ -1,5 +1,9 @@
 name: Deno
 type: Company
 data:
-  github_org:
-    - 42048915 # org:denoland
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 42048915
+          name: denoland

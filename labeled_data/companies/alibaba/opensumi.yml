@@ -1,5 +1,9 @@
 name: OpenSumi
 type: Project
 data:
-  github_org:
-    - 90233428 # org:opensumi
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 90233428
+          name: opensumi

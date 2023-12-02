@@ -1,6 +1,11 @@
 name: Merico
 type: Company
 data:
-  github_org:
-    - 48216022 # merico-dev
-    - 94812175 # devstream-io
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 48216022
+          name: merico-dev
+        - id: 94812175
+          name: devstream-io

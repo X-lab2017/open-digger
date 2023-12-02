@@ -1,7 +1,7 @@
 name: Alibaba
 type: Company
 data:
-  label:
+  labels:
     - dubbo
     - flink
     - rocketmq
@@ -10,61 +10,126 @@ data:
     - nacos
     - opensumi
     - weex
-  github_org:
-    - 66622043 # org:Alibaba-Sample
-    - 38934544 # org:AlibabaCloudDocs
-    - 35217822 # org:AlibabaPAI
-    - 16377432 # org:AliyunContainerService
-    - 92418439 # org:ApsaraDB
-    - 56642198 # org:GraphScope
-    - 56627637 # org:T-head-Semi
-    - 43160974 # org:XianyuTech
-    - 1961952 # org:alibaba
-    - 55121350 # org:alibaba-edu
-    - 49384998 # org:alibabacloud-go
-    - 44830995 # org:alibabacloud-howto
-    - 70694200 # org:alibabacloud-sdk-cpp
-    - 49896061 # org:alibabacloud-sdk-php
-    - 61405193 # org:alibabacloud-sdk-swift
-    - 7741285 # org:aliqin
-    - 941070 # org:aliyun
-    - 16096311 # org:aliyun-beta
-    - 48477425 # org:chaosblade-io
-    - 50716105 # org:cloudnativeapp
-    - 44993420 # org:dragonflyoss
-    - 11751992 # org:dubbo
-    - 13195604 # org:hiloteam
-    - 49051229 # org:ice-lab
-    - 328318 # org:kissyteam
-    - 87515570 # org:kubedl-io
-    - 43056710 # org:mars-project
-    - 32128461 # org:midwayjs
-    - 30042306 # org:node-honeycomb
-    - 7125868 # org:node-modules
-    - 83446609 # org:oecp
-    - 75296004 # org:openkraken
-    - 69286650 # org:openyurtio
-    - 43955412 # org:sentinel-group
-    - 1560507 # org:taobao
-    - 1983116 # org:teambition
-    - 83062528 # org:v6d-io
-    - 35833849 # org:weex-ui-team
-    - 102641885 # org:alibaba-open-source-website
-    - 101698007 # org:koordinator-sh
-    - 100843567 # org:opensergo
-    - 104560867 # org:sealerio
-    - 109945100 # org:modelscope
-    - 49735278 # org:openkruise
-    - 73396749 # org:alibaba-incubator
-    - 113880714 # org:noslate-project
-    - 120164000 # org:polardb
-    - 74584788 # org:kubevela
-    - 40452342 # org:alibaba-fusion
-    - 125999365 # org:damo-vilab
-    - 127807288 # org:dragonwell-project
-    - 1201438 # org:eleme
-    - 4538353 # org:thx
-    - 3535043 # org:fluid
-    - 142002476 # org:alibabacloud-automation
-    - 121285115 # org:alibaba-archive
-    - 141981933 # org:aigc-apps
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 66622043
+          name: Alibaba-Sample
+        - id: 38934544
+          name: AlibabaCloudDocs
+        - id: 35217822
+          name: AlibabaPAI
+        - id: 16377432
+          name: AliyunContainerService
+        - id: 92418439
+          name: ApsaraDB
+        - id: 56642198
+          name: GraphScope
+        - id: 56627637
+          name: T-head-Semi
+        - id: 43160974
+          name: XianyuTech
+        - id: 1961952
+          name: alibaba
+        - id: 55121350
+          name: alibaba-edu
+        - id: 49384998
+          name: alibabacloud-go
+        - id: 44830995
+          name: alibabacloud-howto
+        - id: 70694200
+          name: alibabacloud-sdk-cpp
+        - id: 49896061
+          name: alibabacloud-sdk-php
+        - id: 61405193
+          name: alibabacloud-sdk-swift
+        - id: 7741285
+          name: aliqin
+        - id: 941070
+          name: aliyun
+        - id: 16096311
+          name: aliyun-beta
+        - id: 48477425
+          name: chaosblade-io
+        - id: 50716105
+          name: cloudnativeapp
+        - id: 44993420
+          name: dragonflyoss
+        - id: 11751992
+          name: dubbo
+        - id: 13195604
+          name: hiloteam
+        - id: 49051229
+          name: ice-lab
+        - id: 328318
+          name: kissyteam
+        - id: 87515570
+          name: kubedl-io
+        - id: 43056710
+          name: mars-project
+        - id: 32128461
+          name: midwayjs
+        - id: 30042306
+          name: node-honeycomb
+        - id: 7125868
+          name: node-modules
+        - id: 83446609
+          name: oecp
+        - id: 75296004
+          name: openkraken
+        - id: 69286650
+          name: openyurtio
+        - id: 43955412
+          name: sentinel-group
+        - id: 1560507
+          name: taobao
+        - id: 1983116
+          name: teambition
+        - id: 83062528
+          name: v6d-io
+        - id: 35833849
+          name: weex-ui-team
+        - id: 102641885
+          name: alibaba-open-source-website
+        - id: 101698007
+          name: koordinator-sh
+        - id: 100843567
+          name: opensergo
+        - id: 104560867
+          name: sealerio
+        - id: 109945100
+          name: modelscope
+        - id: 49735278
+          name: openkruise
+        - id: 73396749
+          name: alibaba-incubator
+        - id: 113880714
+          name: noslate-project
+        - id: 120164000
+          name: polardb
+        - id: 74584788
+          name: kubevela
+        - id: 40452342
+          name: alibaba-fusion
+        - id: 125999365
+          name: damo-vilab
+        - id: 127807288
+          name: dragonwell-project
+        - id: 1201438
+          name: eleme
+        - id: 4538353
+          name: thx
+        - id: 3535043
+          name: fluid
+        - id: 142002476
+          name: alibabacloud-automation
+        - id: 121285115
+          name: alibaba-archive
+        - id: 141981933
+          name: aigc-apps
+    - name: Gitee
+      type: Code Hosting
+      orgs:
+        - id: 8571623
+          name: anolis
