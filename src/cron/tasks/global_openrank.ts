@@ -19,7 +19,7 @@ const task: Task = {
     const backgroundRententionFactor = 0.15;
     const openrankAttenuationFactor = 0.85;
     const openrankMinValue = 0.1;
-    const acitivityToOpenrank = activity => Math.min(1, Math.log(activity + 1) / 5);
+    const acitivityToOpenrank = activity => Math.min(1, Math.log(activity + 1) / 3);
 
     const createTable = async () => {
       const sql = `CREATE TABLE IF NOT EXISTS ${globalOpenrankTableName}
