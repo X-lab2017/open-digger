@@ -1,48 +1,95 @@
 name: Database - Graph
 type: Tech-1
 data:
-  github_repo:
-    - 396867188 # repo:ArcadeData/arcadedb
-    - 1832551 # repo:CulturePlex/Sylva
-    - 8799170 # repo:DevrexLabs/OrigoDB
-    - 77385607 # repo:JanusGraph/janusgraph
-    - 45098765 # repo:PureSolTechnologies/DuctileDB
-    - 84458512 # repo:RedisGraph/RedisGraph
-    - 22475123 # repo:amark/gun
-    - 276293034 # repo:apache/age
-    - 2282376 # repo:apache/giraph
-    - 141376301 # repo:apache/incubator-hugegraph
-    - 30449481 # repo:apache/tinkerpop
-    - 2649214 # repo:arangodb/arangodb
-    - 57401138 # repo:bitnine-oss/agensgraph
-    - 48451041 # repo:blazegraph/database
-    - 511030127 # repo:ceramicstudio/js-composedb
-    - 2672286 # repo:cosh/fallen-8
-    - 41946572 # repo:degdb/degdb
-    - 41349039 # repo:dgraph-io/dgraph
-    - 402209532 # repo:dyedgreen/cqlite
-    - 668673665 # repo:falkordb/falkordb
-    - 305513242 # repo:fluree/db
-    - 47973088 # repo:gchq/Gaffer
-    - 38727503 # repo:hypergraphdb/hypergraphdb
-    - 166429903 # repo:jssmith/stigdb
-    - 65619619 # repo:krotik/eliasdb
-    - 298763623 # repo:kuzudb/kuzu
-    - 85236158 # repo:lambdazen/bitsy
-    - 297302063 # repo:memgraph/memgraph
-    - 81411018 # repo:microsoft/GraphEngine
-    - 6650539 # repo:neo4j/neo4j
-    - 7083240 # repo:orientechnologies/orientdb
-    - 166387176 # repo:polypheny/Polypheny-DB
-    - 131763823 # repo:quoll/asami
-    - 383927661 # repo:ragedb/ragedb
-    - 73235061 # repo:rayokota/hgraphdb
-    - 743502 # repo:sones/sones
-    - 55578752 # repo:stellardb/StellarDB
-    - 238509 # repo:stevedekorte/vertexdb
-    - 436658287 # repo:surrealdb/surrealdb
-    - 198466472 # repo:terminusdb/terminusdb
-    - 3548254 # repo:thinkaurelius/titan
-    - 605999 # repo:twitter-archive/flockdb
-    - 63110867 # repo:vaticle/typedb
-    - 146459443 # repo:vesoft-inc/nebula
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 396867188
+          name: ArcadeData/arcadedb
+        - id: 1832551
+          name: CulturePlex/Sylva
+        - id: 8799170
+          name: DevrexLabs/OrigoDB
+        - id: 77385607
+          name: JanusGraph/janusgraph
+        - id: 45098765
+          name: PureSolTechnologies/DuctileDB
+        - id: 84458512
+          name: RedisGraph/RedisGraph
+        - id: 22475123
+          name: amark/gun
+        - id: 276293034
+          name: apache/age
+        - id: 2282376
+          name: apache/giraph
+        - id: 141376301
+          name: apache/incubator-hugegraph
+        - id: 30449481
+          name: apache/tinkerpop
+        - id: 2649214
+          name: arangodb/arangodb
+        - id: 57401138
+          name: bitnine-oss/agensgraph
+        - id: 48451041
+          name: blazegraph/database
+        - id: 511030127
+          name: ceramicstudio/js-composedb
+        - id: 2672286
+          name: cosh/fallen-8
+        - id: 41946572
+          name: degdb/degdb
+        - id: 41349039
+          name: dgraph-io/dgraph
+        - id: 402209532
+          name: dyedgreen/cqlite
+        - id: 668673665
+          name: falkordb/falkordb
+        - id: 305513242
+          name: fluree/db
+        - id: 47973088
+          name: gchq/Gaffer
+        - id: 38727503
+          name: hypergraphdb/hypergraphdb
+        - id: 166429903
+          name: jssmith/stigdb
+        - id: 65619619
+          name: krotik/eliasdb
+        - id: 298763623
+          name: kuzudb/kuzu
+        - id: 85236158
+          name: lambdazen/bitsy
+        - id: 297302063
+          name: memgraph/memgraph
+        - id: 81411018
+          name: microsoft/GraphEngine
+        - id: 6650539
+          name: neo4j/neo4j
+        - id: 7083240
+          name: orientechnologies/orientdb
+        - id: 166387176
+          name: polypheny/Polypheny-DB
+        - id: 131763823
+          name: quoll/asami
+        - id: 383927661
+          name: ragedb/ragedb
+        - id: 73235061
+          name: rayokota/hgraphdb
+        - id: 743502
+          name: sones/sones
+        - id: 55578752
+          name: stellardb/StellarDB
+        - id: 238509
+          name: stevedekorte/vertexdb
+        - id: 436658287
+          name: surrealdb/surrealdb
+        - id: 198466472
+          name: terminusdb/terminusdb
+        - id: 3548254
+          name: thinkaurelius/titan
+        - id: 605999
+          name: twitter-archive/flockdb
+        - id: 63110867
+          name: vaticle/typedb
+        - id: 146459443
+          name: vesoft-inc/nebula

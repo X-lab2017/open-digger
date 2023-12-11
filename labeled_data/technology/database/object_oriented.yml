@@ -1,40 +1,79 @@
 name: Database - Object Oriented
 type: Tech-1
 data:
-  github_repo:
-    - 107504377 # repo:ADBSQL/AntDB
-    - 681142 # repo:Bobris/BTDB
-    - 52080367 # repo:CUBRID/cubrid
-    - 329729926 # repo:CondensationDB/Condensation-java
-    - 8799170 # repo:DevrexLabs/OrigoDB
-    - 516821813 # repo:HydrasDB/hydra
-    - 1244027 # repo:ModeShape/modeshape
-    - 150752008 # repo:SapphireDb/SapphireDb
-    - 124423054 # repo:The-Alchemist/perst
-    - 569871553 # repo:VeloxDB/VeloxDB
-    - 206403 # repo:apache/jackrabbit
-    - 246343828 # repo:atoti/atoti
-    - 396856161 # repo:authzed/spicedb
-    - 644742603 # repo:cloudberrydb/cloudberrydb
-    - 95070401 # repo:devrexlabs/memstate
-    - 95817032 # repo:edgedb/edgedb
-    - 15001136 # repo:etoile/CoreObject
-    - 42143916 # repo:fern4lvarez/piladb
-    - 240387847 # repo:gaia-platform/GaiaPlatform
-    - 48279725 # repo:goshawkdb/server
-    - 204261394 # repo:iboxdb/db4o-gpl
-    - 5453989 # repo:jankotek/mapdb
-    - 119234782 # repo:jonahharris/osdb-beaglesql
-    - 1776883 # repo:kimchy/compass
-    - 25225465 # repo:markmeeus/MarcelloDB
-    - 273564373 # repo:morecraf/Siaqodb
-    - 351806852 # repo:neondatabase/neon
-    - 79901405 # repo:objectbox/objectbox-java
-    - 7083240 # repo:orientechnologies/orientdb
-    - 432844875 # repo:orioledb/orioledb
-    - 37285717 # repo:pilgr/Paper
-    - 14702444 # repo:pipelinedb/pipelinedb
-    - 927442 # repo:postgres/postgres
-    - 1917262 # repo:realm/realm-core
-    - 3893984 # repo:tzaeschke/zoodb
-    - 7357595 # repo:zopefoundation/ZODB
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 107504377
+          name: ADBSQL/AntDB
+        - id: 681142
+          name: Bobris/BTDB
+        - id: 52080367
+          name: CUBRID/cubrid
+        - id: 329729926
+          name: CondensationDB/Condensation-java
+        - id: 8799170
+          name: DevrexLabs/OrigoDB
+        - id: 516821813
+          name: HydrasDB/hydra
+        - id: 1244027
+          name: ModeShape/modeshape
+        - id: 150752008
+          name: SapphireDb/SapphireDb
+        - id: 124423054
+          name: The-Alchemist/perst
+        - id: 569871553
+          name: VeloxDB/VeloxDB
+        - id: 206403
+          name: apache/jackrabbit
+        - id: 246343828
+          name: atoti/atoti
+        - id: 396856161
+          name: authzed/spicedb
+        - id: 644742603
+          name: cloudberrydb/cloudberrydb
+        - id: 95070401
+          name: devrexlabs/memstate
+        - id: 95817032
+          name: edgedb/edgedb
+        - id: 15001136
+          name: etoile/CoreObject
+        - id: 42143916
+          name: fern4lvarez/piladb
+        - id: 240387847
+          name: gaia-platform/GaiaPlatform
+        - id: 48279725
+          name: goshawkdb/server
+        - id: 204261394
+          name: iboxdb/db4o-gpl
+        - id: 5453989
+          name: jankotek/mapdb
+        - id: 119234782
+          name: jonahharris/osdb-beaglesql
+        - id: 1776883
+          name: kimchy/compass
+        - id: 25225465
+          name: markmeeus/MarcelloDB
+        - id: 273564373
+          name: morecraf/Siaqodb
+        - id: 351806852
+          name: neondatabase/neon
+        - id: 79901405
+          name: objectbox/objectbox-java
+        - id: 7083240
+          name: orientechnologies/orientdb
+        - id: 432844875
+          name: orioledb/orioledb
+        - id: 37285717
+          name: pilgr/Paper
+        - id: 14702444
+          name: pipelinedb/pipelinedb
+        - id: 927442
+          name: postgres/postgres
+        - id: 1917262
+          name: realm/realm-core
+        - id: 3893984
+          name: tzaeschke/zoodb
+        - id: 7357595
+          name: zopefoundation/ZODB

@@ -1,43 +1,85 @@
 name: Cloud Native - Observability and Analysis - Monitoring
 type: Tech-2
 data:
-  github_repo:
-    - 16554739 # repo:elastic/beats
-    - 161628176 # repo:kubeshop/botkube
-    - 496143272 # repo:centreon/centreon
-    - 171669368 # repo:tribe29/checkmk
-    - 67793333 # repo:cortexproject/cortex
-    - 448599559 # repo:deepflowys/deepflow
-    - 55850689 # repo:open-falcon/falcon-plus
-    - 130035428 # repo:foniod/foniod
-    - 15111821 # repo:grafana/grafana
-    - 385634291 # repo:grafana/mimir
-    - 4254338 # repo:graphite-project/graphite-web
-    - 222612062 # repo:cilium/hubble
-    - 12440855 # repo:Icinga/icinga2
-    - 13124802 # repo:influxdata/influxdb
-    - 120181748 # repo:kiali/kiali
-    - 137922416 # repo:kuberhealthy/kuberhealthy
-    - 191676087 # repo:lindb/lindb
-    - 61153677 # repo:m3db/m3
-    - 16119670 # repo:NagiosEnterprises/nagioscore
-    - 10744183 # repo:netdata/netdata
-    - 138287889 # repo:Netis/packet-agent
-    - 139140778 # repo:NexClipper/NexClipper
-    - 244694886 # repo:didi/nightingale
-    - 95098170 # repo:OpenObservability/OpenMetrics
-    - 865412 # repo:OpenTSDB/opentsdb
-    - 316257595 # repo:opstrace/opstrace
-    - 243394576 # repo:pixie-io/pixie
-    - 6838921 # repo:prometheus/prometheus
-    - 252745692 # repo:timescale/promscale
-    - 82981995 # repo:sensu/sensu-go
-    - 527583905 # repo:runsidekick/sidekick
-    - 175833318 # repo:skooner-k8s/skooner
-    - 15926180 # repo:draios/sysdig
-    - 109162639 # repo:thanos-io/thanos
-    - 127344362 # repo:trickstercache/trickster
-    - 146327667 # repo:vectordotdev/vector
-    - 150954997 # repo:VictoriaMetrics/VictoriaMetrics
-    - 34659664 # repo:weaveworks/scope
-    - 17253775 # repo:zabbix/zabbix
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 16554739
+          name: elastic/beats
+        - id: 161628176
+          name: kubeshop/botkube
+        - id: 496143272
+          name: centreon/centreon
+        - id: 171669368
+          name: tribe29/checkmk
+        - id: 67793333
+          name: cortexproject/cortex
+        - id: 448599559
+          name: deepflowys/deepflow
+        - id: 55850689
+          name: open-falcon/falcon-plus
+        - id: 130035428
+          name: foniod/foniod
+        - id: 15111821
+          name: grafana/grafana
+        - id: 385634291
+          name: grafana/mimir
+        - id: 4254338
+          name: graphite-project/graphite-web
+        - id: 222612062
+          name: cilium/hubble
+        - id: 12440855
+          name: Icinga/icinga2
+        - id: 13124802
+          name: influxdata/influxdb
+        - id: 120181748
+          name: kiali/kiali
+        - id: 137922416
+          name: kuberhealthy/kuberhealthy
+        - id: 191676087
+          name: lindb/lindb
+        - id: 61153677
+          name: m3db/m3
+        - id: 16119670
+          name: NagiosEnterprises/nagioscore
+        - id: 10744183
+          name: netdata/netdata
+        - id: 138287889
+          name: Netis/packet-agent
+        - id: 139140778
+          name: NexClipper/NexClipper
+        - id: 244694886
+          name: didi/nightingale
+        - id: 95098170
+          name: OpenObservability/OpenMetrics
+        - id: 865412
+          name: OpenTSDB/opentsdb
+        - id: 316257595
+          name: opstrace/opstrace
+        - id: 243394576
+          name: pixie-io/pixie
+        - id: 6838921
+          name: prometheus/prometheus
+        - id: 252745692
+          name: timescale/promscale
+        - id: 82981995
+          name: sensu/sensu-go
+        - id: 527583905
+          name: runsidekick/sidekick
+        - id: 175833318
+          name: skooner-k8s/skooner
+        - id: 15926180
+          name: draios/sysdig
+        - id: 109162639
+          name: thanos-io/thanos
+        - id: 127344362
+          name: trickstercache/trickster
+        - id: 146327667
+          name: vectordotdev/vector
+        - id: 150954997
+          name: VictoriaMetrics/VictoriaMetrics
+        - id: 34659664
+          name: weaveworks/scope
+        - id: 17253775
+          name: zabbix/zabbix

@@ -1,5 +1,9 @@
 name: Pentaho
 type: Company
 data:
-  github_org:
-    - 1022787  # org:pentaho
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 1022787
+          name: pentaho

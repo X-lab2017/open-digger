@@ -1,7 +1,13 @@
 name: Meituan
 type: Company
 data:
-  github_org:
-    - 977371 # meituan
-    - 20238146 # Meituan-Dianping
-    - 1539555 # dianping
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 977371
+          name: meituan
+        - id: 20238146
+          name: Meituan-Dianping
+        - id: 1539555
+          name: dianping

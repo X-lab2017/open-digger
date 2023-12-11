@@ -1,18 +1,35 @@
 name: Apache RocketMQ
 type: Project
 data:
-  github_repo:
-    - 75164823 # repo:apache/rocketmq
-    - 84916374 # repo:apache/rocketmq-externals
-    - 384930222 # repo:apache/rocketmq-streams
-    - 152519793 # repo:apache/rocketmq-client-cpp
-    - 152519982 # repo:apache/rocketmq-client-go
-    - 399046935 # repo:apache/rocketmq-flink
-    - 394265474 # repo:apache/rocketmq-dashboard
-    - 189944254 # repo:apache/rocketmq-exporter
-    - 153061118 # repo:apache/rocketmq-spring
-    - 189944025 # repo:apache/rocketmq-operator
-    - 77030884 # repo:apache/rocketmq-site
-    - 189943818 # repo:apache/rocketmq-docker
-    - 152519880 # repo:apache/rocketmq-client-python
-    - 152520149 # repo:apache/rocketmq-client-nodejs
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 75164823
+          name: apache/rocketmq
+        - id: 84916374
+          name: apache/rocketmq-externals
+        - id: 384930222
+          name: apache/rocketmq-streams
+        - id: 152519793
+          name: apache/rocketmq-client-cpp
+        - id: 152519982
+          name: apache/rocketmq-client-go
+        - id: 399046935
+          name: apache/rocketmq-flink
+        - id: 394265474
+          name: apache/rocketmq-dashboard
+        - id: 189944254
+          name: apache/rocketmq-exporter
+        - id: 153061118
+          name: apache/rocketmq-spring
+        - id: 189944025
+          name: apache/rocketmq-operator
+        - id: 77030884
+          name: apache/rocketmq-site
+        - id: 189943818
+          name: apache/rocketmq-docker
+        - id: 152519880
+          name: apache/rocketmq-client-python
+        - id: 152520149
+          name: apache/rocketmq-client-nodejs

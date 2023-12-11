@@ -1,11 +1,21 @@
 name: Weex
 type: Project
 data:
-  github_repo:
-    - 78186814 # repo:apache/incubator-weex 
-    - 80600049 # repo:apache/incubator-weex-site
-    - 105006031 # repo:apache/incubator-weex-ui
-    - 62320907 # repo:apache/incubator-weex-cli 
-    - 195177223 # repo:apache/incubator-weex-playground
-    - 62036161 # repo:apache/incubator-weex-loader
-    - 203795420 # repo:apache/incubator-weex-android-compatible
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 78186814
+          name: apache/incubator-weex
+        - id: 80600049
+          name: apache/incubator-weex-site
+        - id: 105006031
+          name: apache/incubator-weex-ui
+        - id: 62320907
+          name: apache/incubator-weex-cli
+        - id: 195177223
+          name: apache/incubator-weex-playground
+        - id: 62036161
+          name: apache/incubator-weex-loader
+        - id: 203795420
+          name: apache/incubator-weex-android-compatible

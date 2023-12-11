@@ -1,6 +1,11 @@
 name: OpenGalaxy
 type: Project
 data:
-  github_repo:
-    - 428629051 # X-lab2017/open-galaxy
-    - 439244862 # X-lab2017/open-galaxy-backend
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 428629051
+          name: X-lab2017/open-galaxy
+        - id: 439244862
+          name: X-lab2017/open-galaxy-backend

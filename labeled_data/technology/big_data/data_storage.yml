@@ -1,19 +1,37 @@
 name: Big Data - Data Storage
 type: Tech-1
 data:
-  github_repo:
-    - 327859577 # repo:juicedata/juicefs
-    - 76474200 # repo:apache/hudi
-    - 158256479 # repo:apache/iceberg
-    - 7276954 # repo:Alluxio/alluxio
-    - 206459 # repo:apache/avro
-    - 182849188 # repo:delta-io/delta
-    - 3786237 # repo:hazelcast/hazelcast
-    - 20675636 # repo:apache/parquet-mr
-    - 1575956 # repo:apache/bookkeeper
-    - 50647838 # repo:apache/kudu
-    - 41712332 # repo:apache/incubator-pegasus
-    - 62117818 # repo:apache/carbondata
-    - 20675635 # repo:apache/parquet-format
-    - 212382406 # repo:apache/ozone
-    - 25507371 # repo:apache/hadoop-hdfs
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 327859577
+          name: juicedata/juicefs
+        - id: 76474200
+          name: apache/hudi
+        - id: 158256479
+          name: apache/iceberg
+        - id: 7276954
+          name: Alluxio/alluxio
+        - id: 206459
+          name: apache/avro
+        - id: 182849188
+          name: delta-io/delta
+        - id: 3786237
+          name: hazelcast/hazelcast
+        - id: 20675636
+          name: apache/parquet-mr
+        - id: 1575956
+          name: apache/bookkeeper
+        - id: 50647838
+          name: apache/kudu
+        - id: 41712332
+          name: apache/incubator-pegasus
+        - id: 62117818
+          name: apache/carbondata
+        - id: 20675635
+          name: apache/parquet-format
+        - id: 212382406
+          name: apache/ozone
+        - id: 25507371
+          name: apache/hadoop-hdfs

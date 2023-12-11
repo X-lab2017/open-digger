@@ -1,5 +1,9 @@
 name: Goodrain
 type: Company
 data:
-  github_org:
-    - 10627562 # org:goodrain
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 10627562
+          name: goodrain

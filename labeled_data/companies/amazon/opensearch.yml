@@ -1,5 +1,9 @@
 name: OpenSearch
 type: Project
 data:
-  github_org:
-    - 80134844 # org:opensearch-project
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 80134844
+          name: opensearch-project

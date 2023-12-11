@@ -1,8 +1,15 @@
 name: Intel
 type: Company
 data:
-  github_org:
-    - 17888862 # org:intel
-    - 1492758 # org:IntelLabs
-    - 55443902 # org:openvinotoolkit
-    - 10180421 # org:nwjs
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 17888862
+          name: intel
+        - id: 1492758
+          name: IntelLabs
+        - id: 55443902
+          name: openvinotoolkit
+        - id: 10180421
+          name: nwjs

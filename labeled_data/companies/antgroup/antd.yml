@@ -1,5 +1,9 @@
 name: Ant design
 type: Project
 data:
-  github_org:
-    - 12101536 # org:ant-design
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 12101536
+          name: ant-design

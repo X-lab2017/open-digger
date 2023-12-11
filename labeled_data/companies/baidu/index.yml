@@ -1,21 +1,37 @@
 name: Baidu
 type: Company
 data:
-  label:
+  labels:
     - paddle
     - echarts
     - brpc
-  github_org:
-    - 13245940 # org:baidu
-    - 23534030 # org:PaddlePaddle
-    - 28768304 # org:ApolloAuto
-    - 7857697 # org:Clouda-team
-    - 19966931 # org:mipengine
-    - 34010907 # org:mesalock-linux
-    - 2268460 # org:ecomfe
-    - 6668906 # org:fex-team
-    - 8051311 # org:baidu-research
-    - 13144859 # org:huiyan-fe
-    - 8372490 # org:be-fe
-    - 38243092 # org:swan-team
-    - 43258643 # org:xuperchain
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 13245940
+          name: baidu
+        - id: 23534030
+          name: PaddlePaddle
+        - id: 28768304
+          name: ApolloAuto
+        - id: 7857697
+          name: Clouda-team
+        - id: 19966931
+          name: mipengine
+        - id: 34010907
+          name: mesalock-linux
+        - id: 2268460
+          name: ecomfe
+        - id: 6668906
+          name: fex-team
+        - id: 8051311
+          name: baidu-research
+        - id: 13144859
+          name: huiyan-fe
+        - id: 8372490
+          name: be-fe
+        - id: 38243092
+          name: swan-team
+        - id: 43258643
+          name: xuperchain

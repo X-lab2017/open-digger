@@ -1,19 +1,37 @@
 name: Cloud Native - Orchestration & Management - Service Mesh
 type: Tech-2
 data:
-  github_repo:
-    - 310173647 # repo:aeraki-mesh/aeraki
-    - 14125254 # repo:hashicorp/consul
-    - 334851928 # repo:megaease/easemesh
-    - 155558016 # repo:solo-io/gloo-mesh
-    - 74175805 # repo:istio/istio
-    - 175425051 # repo:kumahq/kuma
-    - 113106184 # repo:linkerd/linkerd2
-    - 447051452 # repo:merbridge/merbridge
-    - 157554479 # repo:meshery/meshery
-    - 227895834 # repo:openservicemesh/osm
-    - 177296431 # repo:servicemeshinterface/smi-spec
-    - 168888155 # repo:service-mesh-performance/service-mesh-performance
-    - 331236836 # repo:slime-io/slime
-    - 187875305 # repo:traefik/mesh
-    - 403802153 # repo:huaweicloud/Sermant
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 310173647
+          name: aeraki-mesh/aeraki
+        - id: 14125254
+          name: hashicorp/consul
+        - id: 334851928
+          name: megaease/easemesh
+        - id: 155558016
+          name: solo-io/gloo-mesh
+        - id: 74175805
+          name: istio/istio
+        - id: 175425051
+          name: kumahq/kuma
+        - id: 113106184
+          name: linkerd/linkerd2
+        - id: 447051452
+          name: merbridge/merbridge
+        - id: 157554479
+          name: meshery/meshery
+        - id: 227895834
+          name: openservicemesh/osm
+        - id: 177296431
+          name: servicemeshinterface/smi-spec
+        - id: 168888155
+          name: service-mesh-performance/service-mesh-performance
+        - id: 331236836
+          name: slime-io/slime
+        - id: 187875305
+          name: traefik/mesh
+        - id: 403802153
+          name: huaweicloud/Sermant

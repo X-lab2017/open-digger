@@ -1,6 +1,11 @@
 name: Ant Chain
 type: Project
 data:
-  github_org:
-    - 67619037 # org:antchain-openapi-sdk-go
-    - 67618898 # org:antchain-openapi-sdk-php
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 67619037
+          name: antchain-openapi-sdk-go
+        - id: 67618898
+          name: antchain-openapi-sdk-php

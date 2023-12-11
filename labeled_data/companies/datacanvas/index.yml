@@ -1,5 +1,9 @@
 name: DataCanvas
 type: Company
 data:
-  github_org:
-    - 91237812 # org:dingodb
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 91237812
+          name: dingodb

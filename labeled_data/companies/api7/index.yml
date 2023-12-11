@@ -1,5 +1,9 @@
 name: API7
 type: Company
 data:
-  github_repo:
-    - 180481986 # repo:apache/apisix
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 180481986
+          name: apache/apisix

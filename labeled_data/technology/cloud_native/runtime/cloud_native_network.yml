@@ -1,23 +1,45 @@
 name: Cloud Native - Runtime - Cloud Native Network
 type: Tech-2
 data:
-  github_repo:
-    - 217420145 # repo:antrea-io/antrea
-    - 48109239 # repo:cilium/cilium
-    - 86123872 # repo:cni-genie/CNI-Genie
-    - 33429211 # repo:containernetworking/cni
-    - 152550404 # repo:nokia/danm
-    - 386570418 # repo:FabEdge/fabedge
-    - 96556718 # repo:FDio/vpp
-    - 21704134 # repo:flannel-io/flannel
-    - 162610275 # repo:squat/kilo
-    - 177068961 # repo:kubeovn/kube-ovn
-    - 88471725 # repo:cloudnativelabs/kube-router
-    - 97228445 # repo:ligato/vpp-agent
-    - 76367175 # repo:k8snetworkplumbingwg/multus-cni
-    - 127937836 # repo:networkservicemesh/networkservicemesh
-    - 18383364 # repo:openvswitch/ovs
-    - 63882194 # repo:projectcalico/calico
-    - 175095528 # repo:submariner-io/submariner
-    - 12347995 # repo:Juniper/contrail-controller
-    - 23059575 # repo:weaveworks/weave
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 217420145
+          name: antrea-io/antrea
+        - id: 48109239
+          name: cilium/cilium
+        - id: 86123872
+          name: cni-genie/CNI-Genie
+        - id: 33429211
+          name: containernetworking/cni
+        - id: 152550404
+          name: nokia/danm
+        - id: 386570418
+          name: FabEdge/fabedge
+        - id: 96556718
+          name: FDio/vpp
+        - id: 21704134
+          name: flannel-io/flannel
+        - id: 162610275
+          name: squat/kilo
+        - id: 177068961
+          name: kubeovn/kube-ovn
+        - id: 88471725
+          name: cloudnativelabs/kube-router
+        - id: 97228445
+          name: ligato/vpp-agent
+        - id: 76367175
+          name: k8snetworkplumbingwg/multus-cni
+        - id: 127937836
+          name: networkservicemesh/networkservicemesh
+        - id: 18383364
+          name: openvswitch/ovs
+        - id: 63882194
+          name: projectcalico/calico
+        - id: 175095528
+          name: submariner-io/submariner
+        - id: 12347995
+          name: Juniper/contrail-controller
+        - id: 23059575
+          name: weaveworks/weave

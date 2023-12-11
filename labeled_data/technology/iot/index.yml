@@ -1,39 +1,77 @@
 name: Internet of Things
 type: Tech-0
 data:
-  github_repo:
-    - 7408108 # repo:RT-Thread/rt-thread
-    - 206121828 # repo:FreeRTOS/FreeRTOS
-    - 207354223 # repo:FreeRTOS/FreeRTOS-Kernel
-    - 82517252 # repo:Samsung/TizenRT
-    - 8270972 # repo:ARMmbed/mbed-os
-    - 7139506 # repo:tinyos/tinyos-main
-    - 95133665 # repo:s-matyukevich/raspberry-pi-os
-    - 3199002 # repo:raspberrypi/linux
-    - 13096677 # repo:beagleboard/linux
-    - 919161 # repo:arduino/Arduino
-    - 10476504 # repo:devicehive/devicehive-java-server
-    - 17839346 # repo:kaaproject/kaa
-    - 18918709 # repo:zettajs/zetta
-    - 75277003 # repo:thingsboard/thingsboard
-    - 7370241 # repo:RIOT-OS/RIOT
-    - 31526467 # repo:Kinoma/kinomajs
-    - 45821540 # repo:openwrt/openwrt
-    - 50994619 # repo:openremote/openremote
-    - 393740911 # repo:ThingsPanel/ThingsPanel-Go
-    - 59771425 # repo:zephyrproject-rtos/zephyr
-    - 6365284 # repo:contiki-os/contiki
-    - 15682781 # repo:sitewhere/sitewhere
-    - 158975124 # repo:apache/iotdb
-    - 203957456 # repo:OpenAtomFoundation/TencentOS-tiny
-    - 174448630 # repo:jetlinks/jetlinks
-    - 67934190 # repo:LiteOS/LiteOS
-    - 7202769 # repo:emqx/emqx
-    - 196353673 # repo:taosdata/TDengine
-    - 230403844 # repo:openLuat/LuatOS
-    - 101866073 # repo:alibaba/AliOS-Things
-    - 156054898 # repo:FMSoftCN/hybridos
-    - 92706019 # repo:VincentWei/MiniGUI
-    - 65899476 # repo:espressif/esp-idf
-    - 70127218 # repo:espressif/arduino-esp32
-    - 157947831 # repo:IoTSharp/IoTSharp
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 7408108
+          name: RT-Thread/rt-thread
+        - id: 206121828
+          name: FreeRTOS/FreeRTOS
+        - id: 207354223
+          name: FreeRTOS/FreeRTOS-Kernel
+        - id: 82517252
+          name: Samsung/TizenRT
+        - id: 8270972
+          name: ARMmbed/mbed-os
+        - id: 7139506
+          name: tinyos/tinyos-main
+        - id: 95133665
+          name: s-matyukevich/raspberry-pi-os
+        - id: 3199002
+          name: raspberrypi/linux
+        - id: 13096677
+          name: beagleboard/linux
+        - id: 919161
+          name: arduino/Arduino
+        - id: 10476504
+          name: devicehive/devicehive-java-server
+        - id: 17839346
+          name: kaaproject/kaa
+        - id: 18918709
+          name: zettajs/zetta
+        - id: 75277003
+          name: thingsboard/thingsboard
+        - id: 7370241
+          name: RIOT-OS/RIOT
+        - id: 31526467
+          name: Kinoma/kinomajs
+        - id: 45821540
+          name: openwrt/openwrt
+        - id: 50994619
+          name: openremote/openremote
+        - id: 393740911
+          name: ThingsPanel/ThingsPanel-Go
+        - id: 59771425
+          name: zephyrproject-rtos/zephyr
+        - id: 6365284
+          name: contiki-os/contiki
+        - id: 15682781
+          name: sitewhere/sitewhere
+        - id: 158975124
+          name: apache/iotdb
+        - id: 203957456
+          name: OpenAtomFoundation/TencentOS-tiny
+        - id: 174448630
+          name: jetlinks/jetlinks
+        - id: 67934190
+          name: LiteOS/LiteOS
+        - id: 7202769
+          name: emqx/emqx
+        - id: 196353673
+          name: taosdata/TDengine
+        - id: 230403844
+          name: openLuat/LuatOS
+        - id: 101866073
+          name: alibaba/AliOS-Things
+        - id: 156054898
+          name: FMSoftCN/hybridos
+        - id: 92706019
+          name: VincentWei/MiniGUI
+        - id: 65899476
+          name: espressif/esp-idf
+        - id: 70127218
+          name: espressif/arduino-esp32
+        - id: 157947831
+          name: IoTSharp/IoTSharp

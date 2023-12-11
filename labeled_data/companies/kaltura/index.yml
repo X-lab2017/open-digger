@@ -1,5 +1,9 @@
 name: Kaltura
 type: Company
 data:
-  github_org:
-    - 319096  # org:kaltura
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 319096
+          name: kaltura

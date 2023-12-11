@@ -1,53 +1,105 @@
 name: Artificial Intelligence - model - variant model
 type: Tech-1
 data:
-  github_repo:
-    - 173626887 # nshepperd/gpt-2
-    - 644071541 # princeton-nlp/MeZO
-    - 596424141 # amazon-science/mm-cot
-    - 647525305 # repo:QingruZhang/AdaLoRA
-    - 602270517 # repo:FMInference/FlexGen
-    - 580089997 # repo:itsnamgyu/reasoning-teacher
-    - 652712035 # repo:lyogavin/Anima
-    - 653595084 # repo:baichuan-inc/baichuan-7B
-    - 643449711 # repo:huchenxucs/ChatDB
-    - 608892940 # repo:togethercomputer/OpenChatKit
-    - 636234426 # repo:thunlp/WebCPM
-    - 601538369 # repo:facebookresearch/llama
-    - 669686044 # repo:karpathy/llama2.c
-    - 612427246 # repo:tatsu-lab/stanford_alpaca
-    - 638949180 # repo:Neutralzz/BiLLa
-    - 621826122 # repo:SCIR-HI/Huatuo-Llama-Med-Chinese
-    - 645685068 # repo:yanqiangmiffy/GoGPT
-    - 537603333 # repo:openai/whisper
-    - 645397533 # repo:imoneoi/openchat
-    - 634224458 # repo:AntonOsika/gpt-engineer
-    - 630023030 # repo:Stability-AI/StableLM
-    - 621118467 # repo:microsoft/JARVIS
-    - 628419800 # repo:Vision-CAIR/MiniGPT-4
-    - 288108533 # repo:karpathy/minGPT
-    - 582822129 # repo:karpathy/nanoGPT
-    - 627744002 # repo:muellerberndt/mini-agi
-    - 618511002 # repo:databrickslabs/dolly
-    - 624236959 # repo:Instruction-Tuning-with-GPT-4/GPT-4-LLM
-    - 612427246 # repo:tatsu-lab/stanford_alpaca
-    - 632244130 # repo:X-PLUG/mPLUG-Owl
-    - 575603626 # repo:microsoft/i-Code
-    - 663101722 # repo:CStanKonrad/long_llama
-    - 667583509 # repo:microsoft/Llama-2-Onnx
-    - 653595084 # repo:baichuan-inc/Baichuan-7B
-    - 664752008 # repo:baichuan-inc/Baichuan-13B
-    - 613349035 # repo:THUDM/ChatGLM-6B
-    - 657895120 # repo:THUDM/ChatGLM2-6B
-    - 628296906 # repo:OpenLMLab/MOSS
-    - 654612931 # repo:ictnlp/BayLing
-    - 649782269 # repo:RUC-GSAI/YuLan-Chat
-    - 674075444 # repo:QwenLM/Qwen
-    - 672449777 # repo:HIT-SCIR/huozi
-    - 673701787 # repo:XiaoMi/MiLM-6B
-    - 614325365 # repo:ymcui/Chinese-LLaMA-Alpaca
-    - 668052031 # repo:ymcui/Chinese-LLaMA-Alpaca-2
-    - 668122773 # repo:FlagAlpha/Llama2-Chinese
-    - 634401249 # repo:WeOpenML/PandaLM
-    - 189511050 # repo:Morizeyao/GPT2-Chinese
-    - 632781258 # repo:mosaicml/diffusion
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 173626887
+          name: nshepperd/gpt-2
+        - id: 644071541
+          name: princeton-nlp/MeZO
+        - id: 596424141
+          name: amazon-science/mm-cot
+        - id: 647525305
+          name: QingruZhang/AdaLoRA
+        - id: 602270517
+          name: FMInference/FlexGen
+        - id: 580089997
+          name: itsnamgyu/reasoning-teacher
+        - id: 652712035
+          name: lyogavin/Anima
+        - id: 653595084
+          name: baichuan-inc/baichuan-7B
+        - id: 643449711
+          name: huchenxucs/ChatDB
+        - id: 608892940
+          name: togethercomputer/OpenChatKit
+        - id: 636234426
+          name: thunlp/WebCPM
+        - id: 601538369
+          name: facebookresearch/llama
+        - id: 669686044
+          name: karpathy/llama2.c
+        - id: 612427246
+          name: tatsu-lab/stanford_alpaca
+        - id: 638949180
+          name: Neutralzz/BiLLa
+        - id: 621826122
+          name: SCIR-HI/Huatuo-Llama-Med-Chinese
+        - id: 645685068
+          name: yanqiangmiffy/GoGPT
+        - id: 537603333
+          name: openai/whisper
+        - id: 645397533
+          name: imoneoi/openchat
+        - id: 634224458
+          name: AntonOsika/gpt-engineer
+        - id: 630023030
+          name: Stability-AI/StableLM
+        - id: 621118467
+          name: microsoft/JARVIS
+        - id: 628419800
+          name: Vision-CAIR/MiniGPT-4
+        - id: 288108533
+          name: karpathy/minGPT
+        - id: 582822129
+          name: karpathy/nanoGPT
+        - id: 627744002
+          name: muellerberndt/mini-agi
+        - id: 618511002
+          name: databrickslabs/dolly
+        - id: 624236959
+          name: Instruction-Tuning-with-GPT-4/GPT-4-LLM
+        - id: 612427246
+          name: tatsu-lab/stanford_alpaca
+        - id: 632244130
+          name: X-PLUG/mPLUG-Owl
+        - id: 575603626
+          name: microsoft/i-Code
+        - id: 663101722
+          name: CStanKonrad/long_llama
+        - id: 667583509
+          name: microsoft/Llama-2-Onnx
+        - id: 653595084
+          name: baichuan-inc/Baichuan-7B
+        - id: 664752008
+          name: baichuan-inc/Baichuan-13B
+        - id: 613349035
+          name: THUDM/ChatGLM-6B
+        - id: 657895120
+          name: THUDM/ChatGLM2-6B
+        - id: 628296906
+          name: OpenLMLab/MOSS
+        - id: 654612931
+          name: ictnlp/BayLing
+        - id: 649782269
+          name: RUC-GSAI/YuLan-Chat
+        - id: 674075444
+          name: QwenLM/Qwen
+        - id: 672449777
+          name: HIT-SCIR/huozi
+        - id: 673701787
+          name: XiaoMi/MiLM-6B
+        - id: 614325365
+          name: ymcui/Chinese-LLaMA-Alpaca
+        - id: 668052031
+          name: ymcui/Chinese-LLaMA-Alpaca-2
+        - id: 668122773
+          name: FlagAlpha/Llama2-Chinese
+        - id: 634401249
+          name: WeOpenML/PandaLM
+        - id: 189511050
+          name: Morizeyao/GPT2-Chinese
+        - id: 632781258
+          name: mosaicml/diffusion

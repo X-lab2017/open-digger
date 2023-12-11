@@ -1,5 +1,9 @@
 name: Varnish
 type: Company
 data:
-  github_org:
-    - 14977495  # org:varnishcache
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 14977495
+          name: varnishcache

@@ -1,5 +1,9 @@
 name: Bilibili
 type: Company
 data:
-  github_org:
-    - 12002442 # bilibili
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 12002442
+          name: bilibili

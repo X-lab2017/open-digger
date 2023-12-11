@@ -1,5 +1,9 @@
 name: Kyligence
 type: Company
 data:
-  github_repo:
-    - 28738447 # repo:apache/kylin
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 28738447
+          name: apache/kylin

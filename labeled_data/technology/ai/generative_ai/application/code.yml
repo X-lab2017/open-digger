@@ -1,18 +1,35 @@
 name: Artificial Intelligence - application - code
 type: Tech-1
 data:
-  github_repo:
-    - 151494178 # repo:replit/polygott
-    - 323439605 # repo:replit/kaboom
-    - 228441470 # repo:replit/clui
-    - 197269443 # repo:GhostManager/Ghostwriter
-    - 156332497 # repo:codota/TabNine
-    - 441005943 # repo:mintlify/writer
-    - 551056581 # repo:Debuild-co/CodeFormer
-    - 549501956 # repo:Debuild-co/Real-ESRGAN
-    - 660551251 # repo:geekan/MetaGPT
-    - 639095114 # repo:ricklamers/gpt-code-ui
-    - 625612711 # repo:ravenscroftj/turbopilot
-    - 662766482 # repo:Codium-ai/pr-agent
-    - 634224458 # repo:AntonOsika/gpt-engineer
-    - 669882047 # repo:THUDM/CodeGeeX2
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 151494178
+          name: replit/polygott
+        - id: 323439605
+          name: replit/kaboom
+        - id: 228441470
+          name: replit/clui
+        - id: 197269443
+          name: GhostManager/Ghostwriter
+        - id: 156332497
+          name: codota/TabNine
+        - id: 441005943
+          name: mintlify/writer
+        - id: 551056581
+          name: Debuild-co/CodeFormer
+        - id: 549501956
+          name: Debuild-co/Real-ESRGAN
+        - id: 660551251
+          name: geekan/MetaGPT
+        - id: 639095114
+          name: ricklamers/gpt-code-ui
+        - id: 625612711
+          name: ravenscroftj/turbopilot
+        - id: 662766482
+          name: Codium-ai/pr-agent
+        - id: 634224458
+          name: AntonOsika/gpt-engineer
+        - id: 669882047
+          name: THUDM/CodeGeeX2

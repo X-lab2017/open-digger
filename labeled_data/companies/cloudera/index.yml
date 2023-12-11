@@ -1,7 +1,12 @@
 name: Cloudera
 type: Company
 data:
-  github_org:
-    - 87383 # org:cloudera
-  github_repo:
-    - 23418517 # repo:apache/hadoop
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 23418517
+          name: apache/hadoop
+      orgs:
+        - id: 87383
+          name: cloudera

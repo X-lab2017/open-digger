@@ -1,5 +1,9 @@
 name: OceanBase
 type: Project
 data:
-  github_org:
-    - 82347605 # org:oceanbase
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 82347605
+          name: oceanbase

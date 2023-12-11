@@ -1,9 +1,9 @@
 import {
   filterEnumType, getMergedConfig,
-  getRepoWhereClauseForClickhouse, getTimeRangeWhereClauseForClickhouse, getUserWhereClauseForClickhouse,
-  getGroupArrayInsertAtClauseForClickhouse, getGroupTimeClauseForClickhouse, getGroupIdClauseForClickhouse,
+  getRepoWhereClause, getTimeRangeWhereClause, getUserWhereClause,
+  getGroupArrayInsertAtClause, getGroupTimeClause, getGroupIdClause,
   getInnerOrderAndLimit, getOutterOrderAndLimit,
-  QueryConfig, TimeDurationOption, timeDurationConstants,
+  QueryConfig, TimeDurationOption, timeDurationConstants, processQueryResult, getTopLevelPlatform, getInnerGroupBy,
 } from "./basic";
 import * as clickhouse from '../db/clickhouse';
 import { basicActivitySqlComponent } from "./indices";
@@ -12,38 +12,32 @@ import { basicActivitySqlComponent } from "./indices";
 export const chaossTechnicalFork = async (config: QueryConfig) => {
   config = getMergedConfig(config);
   const whereClauses: string[] = ["type = 'ForkEvent'"];
-  const repoWhereClause = await getRepoWhereClauseForClickhouse(config);
+  const repoWhereClause = await getRepoWhereClause(config);
   if (repoWhereClause) whereClauses.push(repoWhereClause);
-  whereClauses.push(getTimeRangeWhereClauseForClickhouse(config));
+  whereClauses.push(getTimeRangeWhereClause(config));
 
   const sql = `
 SELECT
   id,
+  ${getTopLevelPlatform(config)},
   argMax(name, time) AS name,
-  ${getGroupArrayInsertAtClauseForClickhouse(config, { key: 'count' })}
+  ${getGroupArrayInsertAtClause(config, { key: 'count' })}
 FROM
 (
   SELECT
-    ${getGroupTimeClauseForClickhouse(config)},
-    ${getGroupIdClauseForClickhouse(config)},
+    ${getGroupTimeClause(config)},
+    ${getGroupIdClause(config)},
     COUNT() AS count
-  FROM gh_events
+  FROM events
   WHERE ${whereClauses.join(' AND ')}
-  GROUP BY id, time
+  ${getInnerGroupBy(config)}
   ${getInnerOrderAndLimit(config, 'count')}
 )
-GROUP BY id
+GROUP BY id, platform
 ${getOutterOrderAndLimit(config, 'count')}`;
 
   const result: any = await clickhouse.query(sql);
-  return result.map(row => {
-    const [id, name, count] = row;
-    return {
-      id,
-      name,
-      count,
-    }
-  });
+  return processQueryResult(result, ['count']);
 };
 
 // Evolution - Code Development Activity
@@ -54,38 +48,32 @@ interface CodeChangeCommitsOptions {
 export const chaossCodeChangeCommits = async (config: QueryConfig<CodeChangeCommitsOptions>) => {
   config = getMergedConfig(config);
   const whereClauses: string[] = ["type = 'PushEvent' "];
-  const repoWhereClause = await getRepoWhereClauseForClickhouse(config);
+  const repoWhereClause = await getRepoWhereClause(config);
   if (repoWhereClause) whereClauses.push(repoWhereClause);
-  whereClauses.push(getTimeRangeWhereClauseForClickhouse(config));
+  whereClauses.push(getTimeRangeWhereClause(config));
 
   const sql = `
 SELECT
   id,
+  ${getTopLevelPlatform(config)},
   argMax(name, time) AS name,
-  ${getGroupArrayInsertAtClauseForClickhouse(config, { key: 'commits_count', value: 'count' })}
+  ${getGroupArrayInsertAtClause(config, { key: 'commits_count', value: 'count' })}
 FROM
 (
   SELECT
-    ${getGroupTimeClauseForClickhouse(config)},
-    ${getGroupIdClauseForClickhouse(config)},
+    ${getGroupTimeClause(config)},
+    ${getGroupIdClause(config)},
     COUNT(arrayJoin(${config.options?.messageFilter ? `arrayFilter(x -> match(x, '${config.options.messageFilter}'), push_commits.message)` : 'push_commits.message'})) AS count
-  FROM gh_events
+  FROM events
   WHERE ${whereClauses.join(' AND ')}
-  GROUP BY id, time
+  ${getInnerGroupBy(config)}
   ${getInnerOrderAndLimit(config, 'count')}
 )
-GROUP BY id
+GROUP BY id, platform
 ${getOutterOrderAndLimit(config, 'commits_count')}`;
 
   const result: any = await clickhouse.query(sql);
-  return result.map(row => {
-    const [id, name, count] = row;
-    return {
-      id,
-      name,
-      count,
-    }
-  });
+  return processQueryResult(result, ['count']);
 };
 
 interface CodeChangeLinesOptions {
@@ -95,20 +83,21 @@ export const chaossCodeChangeLines = async (config: QueryConfig<CodeChangeLinesO
   config = getMergedConfig(config);
   const by = filterEnumType(config.options?.by, ['add', 'remove', 'sum'], 'add');
   const whereClauses: string[] = ["type = 'PullRequestEvent' "];
-  const repoWhereClause = await getRepoWhereClauseForClickhouse(config);
+  const repoWhereClause = await getRepoWhereClause(config);
   if (repoWhereClause) whereClauses.push(repoWhereClause);
-  whereClauses.push(getTimeRangeWhereClauseForClickhouse(config));
+  whereClauses.push(getTimeRangeWhereClause(config));
 
   const sql = `
 SELECT
   id,
+  ${getTopLevelPlatform(config)},
   argMax(name, time) AS name,
-  ${getGroupArrayInsertAtClauseForClickhouse(config, { key: 'code_change_lines', value: 'lines' })}
+  ${getGroupArrayInsertAtClause(config, { key: 'code_change_lines', value: 'lines' })}
 FROM
 (
   SELECT
-    ${getGroupTimeClauseForClickhouse(config)},
-    ${getGroupIdClauseForClickhouse(config)},
+    ${getGroupTimeClause(config)},
+    ${getGroupIdClause(config)},
     ${(() => {
       if (by === 'add') {
         return `
@@ -123,141 +112,116 @@ FROM
           minus(additions,deletions) AS lines
           ` }
     })()}
-  FROM gh_events
+  FROM events
   WHERE ${whereClauses.join(' AND ')}
-  GROUP BY id, time
+  ${getInnerGroupBy(config)}
   ${getInnerOrderAndLimit(config, 'lines')}
 )
-GROUP BY id
+GROUP BY id, platform
 ${getOutterOrderAndLimit(config, 'code_change_lines')}`;
 
   const result: any = await clickhouse.query(sql);
-  return result.map(row => {
-    const [id, name, lines] = row;
-    return {
-      id,
-      name,
-      lines,
-    }
-  });
+  return processQueryResult(result, ['lines']);
 };
 
 // Evolution - Issue Resolution
 export const chaossIssuesNew = async (config: QueryConfig) => {
   config = getMergedConfig(config);
   const whereClauses: string[] = ["type = 'IssuesEvent' AND action IN ('opened', 'reopened')"];
-  const repoWhereClause = await getRepoWhereClauseForClickhouse(config);
+  const repoWhereClause = await getRepoWhereClause(config);
   if (repoWhereClause) whereClauses.push(repoWhereClause);
-  whereClauses.push(getTimeRangeWhereClauseForClickhouse(config));
+  whereClauses.push(getTimeRangeWhereClause(config));
 
   const sql = `
 SELECT
   id,
+  ${getTopLevelPlatform(config)},
   argMax(name, time) AS name,
   SUM(count) AS total_count,
-  ${getGroupArrayInsertAtClauseForClickhouse(config, { key: 'issues_new_count', value: 'count' })}
+  ${getGroupArrayInsertAtClause(config, { key: 'issues_new_count', value: 'count' })}
 FROM
 (
   SELECT
-    ${getGroupTimeClauseForClickhouse(config)},
-    ${getGroupIdClauseForClickhouse(config)},
+    ${getGroupTimeClause(config)},
+    ${getGroupIdClause(config)},
     COUNT() AS count
-  FROM gh_events
+  FROM events
   WHERE ${whereClauses.join(' AND ')}
-  GROUP BY id, time
+  GROUP BY id, platform, time
   ${getInnerOrderAndLimit(config, 'count')}
 )
-GROUP BY id
+GROUP BY id, platform
 ${getOutterOrderAndLimit(config, 'issues_new_count')}`;
 
   const result: any = await clickhouse.query(sql);
-  return result.map(row => {
-    const [id, name, total_count, count] = row;
-    return {
-      id,
-      name,
-      total_count,
-      count,
-      ratio: count.map(v => `${(v * 100 / total_count).toPrecision(2)}%`),
-    }
-  });
+  const ret = processQueryResult(result, ['total_count', 'count']);
+  ret.forEach(i => i.ratio = i.count.map(v => `${(v * 100 / i.total_count).toPrecision(2)}%`));
+  return ret;
 };
 
 export const chaossIssuesAndChangeRequestActive = async (config: QueryConfig) => {
   config = getMergedConfig(config);
   const whereClauses: string[] = ["type IN ('IssuesEvent', 'IssueCommentEvent', 'PullRequestEvent')"];
-  const repoWhereClause = await getRepoWhereClauseForClickhouse(config);
+  const repoWhereClause = await getRepoWhereClause(config);
   if (repoWhereClause) whereClauses.push(repoWhereClause);
-  whereClauses.push(getTimeRangeWhereClauseForClickhouse(config));
+  whereClauses.push(getTimeRangeWhereClause(config));
 
   const sql = `
 SELECT
   id,
+  ${getTopLevelPlatform(config)},
   argMax(name, time) AS name,
-  ${getGroupArrayInsertAtClauseForClickhouse(config, { key: 'active_count', value: 'count' })}
+  ${getGroupArrayInsertAtClause(config, { key: 'active_count', value: 'count' })}
 FROM
 (
   SELECT
-    ${getGroupTimeClauseForClickhouse(config)},
-    ${getGroupIdClauseForClickhouse(config)},
+    ${getGroupTimeClause(config)},
+    ${getGroupIdClause(config)},
     COUNT(DISTINCT issue_number) AS count
-  FROM gh_events
+  FROM events
   WHERE ${whereClauses.join(' AND ')}
-  GROUP BY id, time
+  GROUP BY id, platform, time
   ${getInnerOrderAndLimit(config, 'count')}
 )
-GROUP BY id
+GROUP BY id, platform
 ${getOutterOrderAndLimit(config, 'active_count')}`;
 
   const result: any = await clickhouse.query(sql);
-  return result.map(row => {
-    const [id, name, count] = row;
-    return {
-      id,
-      name,
-      count,
-    }
-  });
+  return processQueryResult(result, ['count']);
 };
 
 export const chaossIssuesClosed = async (config: QueryConfig) => {
   config = getMergedConfig(config);
   const whereClauses: string[] = ["type = 'IssuesEvent' AND action = 'closed'"];
-  const repoWhereClause = await getRepoWhereClauseForClickhouse(config);
+  const repoWhereClause = await getRepoWhereClause(config);
   if (repoWhereClause) whereClauses.push(repoWhereClause);
-  whereClauses.push(getTimeRangeWhereClauseForClickhouse(config));
+  whereClauses.push(getTimeRangeWhereClause(config));
 
   const sql = `
 SELECT
   id,
+  ${getTopLevelPlatform(config)},
   argMax(name, time) AS name,
   SUM(count) AS total_count,
-  ${getGroupArrayInsertAtClauseForClickhouse(config, { key: 'issues_close_count', value: 'count' })}
+  ${getGroupArrayInsertAtClause(config, { key: 'issues_close_count', value: 'count' })}
 FROM
 (
   SELECT
-    ${getGroupTimeClauseForClickhouse(config)},
-    ${getGroupIdClauseForClickhouse(config)},
+    ${getGroupTimeClause(config)},
+    ${getGroupIdClause(config)},
     COUNT() AS count
-  FROM gh_events
+  FROM events
   WHERE ${whereClauses.join(' AND ')}
-  GROUP BY id, time
+  GROUP BY id, platform, time
   ${getInnerOrderAndLimit(config, 'count')}
 )
-GROUP BY id
+GROUP BY id, platform
 ${getOutterOrderAndLimit(config, 'issues_close_count')}`;
 
   const result: any = await clickhouse.query(sql);
-  return result.map(row => {
-    const [id, name, total_count, count] = row;
-    return {
-      id,
-      name,
-      total_count,
-      count,
-      ratio: count.map(v => `${(v * 100 / total_count).toPrecision(2)}%`),
-    }
-  });
+  const ret = processQueryResult(result, ['total_count', 'count']);
+  ret.forEach(i => i.ratio = i.count.map(v => `${(v * 100 / i.total_count).toPrecision(2)}%`));
+  return ret;
 };
 
 interface ResolutionDurationOptions extends TimeDurationOption {
@@ -266,7 +230,7 @@ interface ResolutionDurationOptions extends TimeDurationOption {
 const chaossResolutionDuration = async (config: QueryConfig<ResolutionDurationOptions>, type: 'issue' | 'change request') => {
   config = getMergedConfig(config);
   const whereClauses: string[] = type === 'issue' ? ["type = 'IssuesEvent'"] : ["type = 'PullRequestEvent'"];
-  const repoWhereClause = await getRepoWhereClauseForClickhouse(config);
+  const repoWhereClause = await getRepoWhereClause(config);
   if (repoWhereClause) whereClauses.push(repoWhereClause);
 
   const endDate = new Date(`${config.endYear}-${config.endMonth}-1`);
@@ -282,21 +246,23 @@ const chaossResolutionDuration = async (config: QueryConfig<ResolutionDurationOp
   const sql = `
 SELECT
   id,
+  ${getTopLevelPlatform(config)},
   argMax(name, time),
-  ${getGroupArrayInsertAtClauseForClickhouse(config, { key: `avg`, defaultValue: 'NaN' })},
-  ${getGroupArrayInsertAtClauseForClickhouse(config, { key: 'levels', value: 'resolution_levels', defaultValue: `[]`, noPrecision: true })},
-  ${timeDurationConstants.quantileArray.map(q => getGroupArrayInsertAtClauseForClickhouse(config, { key: `quantile_${q}`, defaultValue: 'NaN' })).join(',')}
+  ${getGroupArrayInsertAtClause(config, { key: `avg`, defaultValue: 'NaN' })},
+  ${getGroupArrayInsertAtClause(config, { key: 'levels', value: 'resolution_levels', defaultValue: `[]`, noPrecision: true })},
+  ${timeDurationConstants.quantileArray.map(q => getGroupArrayInsertAtClause(config, { key: `quantile_${q}`, defaultValue: 'NaN' })).join(',')}
 FROM
 (
   SELECT
-    ${getGroupTimeClauseForClickhouse(config, byCol)},
-    ${getGroupIdClauseForClickhouse(config)},
+    ${getGroupTimeClause(config, byCol)},
+    ${getGroupIdClause(config)},
     avg(resolution_duration) AS avg,
     ${timeDurationConstants.quantileArray.map(q => `quantile(${q / 4})(resolution_duration) AS quantile_${q}`).join(',')},
     [${ranges.map((_t, i) => `countIf(resolution_level = ${i})`).join(',')}] AS resolution_levels
   FROM
   (
     SELECT
+      platform,
       repo_id,
       argMax(repo_name, created_at) AS repo_name,
       org_id,
@@ -307,32 +273,19 @@ FROM
       maxIf(created_at, action = 'closed') AS closed_at,
       dateDiff('${unit}', opened_at, closed_at) AS resolution_duration,
       multiIf(${thresholds.map((t, i) => `resolution_duration <= ${t}, ${i}`)}, ${thresholds.length}) AS resolution_level
-    FROM gh_events
+    FROM events
     WHERE ${whereClauses.join(' AND ')}
-    GROUP BY repo_id, org_id, issue_number
+    GROUP BY repo_id, org_id, issue_number, platform
     HAVING ${byCol} >= toDate('${config.startYear}-${config.startMonth}-1') AND ${byCol} < toDate('${endDate.getFullYear()}-${endDate.getMonth() + 1}-1') AND last_action='closed'
   )
-  GROUP BY id, time
+  ${getInnerGroupBy(config)}
   ${getInnerOrderAndLimit(config, 'resolution_duration')}
 )
-GROUP BY id
+GROUP BY id, platform
 ${getOutterOrderAndLimit(config, sortBy, sortBy === 'levels' ? 1 : undefined)}`;
 
   const result: any = await clickhouse.query(sql);
-  return result.map(row => {
-    const [id, name, avg, levels, quantile_0, quantile_1, quantile_2, quantile_3, quantile_4] = row;
-    return {
-      id,
-      name,
-      avg,
-      levels,
-      quantile_0,
-      quantile_1,
-      quantile_2,
-      quantile_3,
-      quantile_4,
-    };
-  });
+  return processQueryResult(result, ['avg', 'levels', 'quantile_0', 'quantile_1', 'quantile_2', 'quantile_3', 'quantile_4']);
 };
 
 export const chaossIssueResolutionDuration = (config: QueryConfig<ResolutionDurationOptions>) =>
@@ -344,7 +297,7 @@ export const chaossChangeRequestResolutionDuration = (config: QueryConfig<Resolu
 const chaossResponseTime = async (config: QueryConfig<TimeDurationOption>, type: 'issue' | 'change request') => {
   config = getMergedConfig(config);
   const whereClauses: string[] = type === 'issue' ? ["type IN ('IssueCommentEvent', 'IssuesEvent') AND actor_login NOT LIKE '%[bot]'"] : ["type IN ('IssueCommentEvent', 'PullRequestEvent', 'PullRequestReviewCommentEvent', 'PullRequestReviewEvent') AND actor_login NOT LIKE '%[bot]'"];
-  const repoWhereClause = await getRepoWhereClauseForClickhouse(config);
+  const repoWhereClause = await getRepoWhereClause(config);
   if (repoWhereClause) whereClauses.push(repoWhereClause);
   const endDate = new Date(`${config.endYear}-${config.endMonth}-1`);
   endDate.setMonth(config.endMonth);  // find next month  
@@ -356,21 +309,23 @@ const chaossResponseTime = async (config: QueryConfig<TimeDurationOption>, type:
   const sql = `
 SELECT
   id,
+  ${getTopLevelPlatform(config)},
   argMax(name, time),
-  ${getGroupArrayInsertAtClauseForClickhouse(config, { key: `avg`, defaultValue: 'NaN' })},
-  ${getGroupArrayInsertAtClauseForClickhouse(config, { key: 'levels', value: 'response_levels', defaultValue: `[]`, noPrecision: true })},
-  ${timeDurationConstants.quantileArray.map(q => getGroupArrayInsertAtClauseForClickhouse(config, { key: `quantile_${q}`, defaultValue: 'NaN' })).join(',')}
+  ${getGroupArrayInsertAtClause(config, { key: `avg`, defaultValue: 'NaN' })},
+  ${getGroupArrayInsertAtClause(config, { key: 'levels', value: 'response_levels', defaultValue: `[]`, noPrecision: true })},
+  ${timeDurationConstants.quantileArray.map(q => getGroupArrayInsertAtClause(config, { key: `quantile_${q}`, defaultValue: 'NaN' })).join(',')}
 FROM
 (
   SELECT
-    ${getGroupTimeClauseForClickhouse(config, 'issue_created_at')},
-    ${getGroupIdClauseForClickhouse(config)},
+    ${getGroupTimeClause(config, 'issue_created_at')},
+    ${getGroupIdClause(config)},
     avg(response_time) AS avg,
     ${timeDurationConstants.quantileArray.map(q => `quantile(${q / 4})(response_time) AS quantile_${q}`).join(',')},
     [${ranges.map((_t, i) => `countIf(response_level = ${i})`).join(',')}] AS response_levels
   FROM
   (
     SELECT
+      platform,
       repo_id,
       argMax(repo_name, created_at) AS repo_name,
       org_id,
@@ -381,33 +336,20 @@ FROM
       if(responded_at = toDate('1970-01-01'), now(), responded_at) AS first_responded_at,
       dateDiff('${unit}', issue_created_at, first_responded_at) AS response_time,
       multiIf(${thresholds.map((t, i) => `response_time <= ${t}, ${i}`)}, ${thresholds.length}) AS response_level
-    FROM gh_events
+    FROM events
     WHERE ${whereClauses.join(' AND ')}
-    GROUP BY repo_id, org_id, issue_number
+    GROUP BY repo_id, org_id, issue_number, platform
     HAVING issue_created_at >= toDate('${config.startYear}-${config.startMonth}-1') 
              AND issue_created_at < toDate('${endDate.getFullYear()}-${endDate.getMonth() + 1}-1')
   )
-  GROUP BY id, time
+  ${getInnerGroupBy(config)}
   ${getInnerOrderAndLimit(config, 'response_time')}
 )
-GROUP BY id
+GROUP BY id, platform
 ${getOutterOrderAndLimit(config, sortBy, sortBy === 'levels' ? 1 : undefined)}`;
 
   const result: any = await clickhouse.query(sql);
-  return result.map(row => {
-    const [id, name, avg, levels, quantile_0, quantile_1, quantile_2, quantile_3, quantile_4] = row;
-    return {
-      id,
-      name,
-      avg,
-      levels,
-      quantile_0,
-      quantile_1,
-      quantile_2,
-      quantile_3,
-      quantile_4,
-    };
-  });
+  return processQueryResult(result, ['avg', 'levels', 'quantile_0', 'quantile_1', 'quantile_2', 'quantile_3', 'quantile_4']);
 };
 
 export const chaossIssueResponseTime = (config: QueryConfig<TimeDurationOption>) => chaossResponseTime(config, 'issue');
@@ -418,7 +360,7 @@ export const chaossChangeRequestResponseTime = (config: QueryConfig<TimeDuration
 export const chaossAge = async (config: QueryConfig<TimeDurationOption>, type: 'issue' | 'change request') => {
   config = getMergedConfig(config);
   const whereClauses: string[] = type === 'issue' ? ["type='IssuesEvent'"] : ["type='PullRequestEvent'"];
-  const repoWhereClause = await getRepoWhereClauseForClickhouse(config);
+  const repoWhereClause = await getRepoWhereClause(config);
   if (repoWhereClause) whereClauses.push(repoWhereClause);
   const endDate = new Date(`${config.endYear}-${config.endMonth}-1`);
   endDate.setMonth(config.endMonth);  // find next month
@@ -432,10 +374,11 @@ export const chaossAge = async (config: QueryConfig<TimeDurationOption>, type: '
   const sql = `
 SELECT
   id,
+  ${getTopLevelPlatform(config)},
   argMax(name, time),
-  ${getGroupArrayInsertAtClauseForClickhouse(config, { key: `avg`, defaultValue: 'NaN', positionByEndTime: true })},
-  ${getGroupArrayInsertAtClauseForClickhouse(config, { key: 'levels', value: 'if(arrayAll(x -> x = 0, age_levels), [], age_levels)', defaultValue: `[]`, noPrecision: true, positionByEndTime: true })},
-  ${timeDurationConstants.quantileArray.map(q => getGroupArrayInsertAtClauseForClickhouse(config, { key: `quantile_${q}`, defaultValue: 'NaN', positionByEndTime: true })).join(',')}
+  ${getGroupArrayInsertAtClause(config, { key: `avg`, defaultValue: 'NaN', positionByEndTime: true })},
+  ${getGroupArrayInsertAtClause(config, { key: 'levels', value: 'if(arrayAll(x -> x = 0, age_levels), [], age_levels)', defaultValue: `[]`, noPrecision: true, positionByEndTime: true })},
+  ${timeDurationConstants.quantileArray.map(q => getGroupArrayInsertAtClause(config, { key: `quantile_${q}`, defaultValue: 'NaN', positionByEndTime: true })).join(',')}
 FROM
 (
   SELECT
@@ -446,13 +389,14 @@ FROM
         return `${endTimeClause} AS time`;
       }
     })()},
-    ${getGroupIdClauseForClickhouse(config)},
+    ${getGroupIdClause(config)},
     avgIf(dateDiff('${unit}', opened_at, time), opened_at < time AND closed_at >= time) AS avg,
     ${timeDurationConstants.quantileArray.map(q => `quantileIf(${q / 4})(dateDiff('${unit}', opened_at, time), opened_at < time AND closed_at >= time) AS quantile_${q}`).join(',')},
     [${ranges.map((_t, i) => `countIf(multiIf(${thresholds.map((t, i) => `dateDiff('${unit}', opened_at, time) <= ${t}, ${i}`)}, ${thresholds.length}) = ${i} AND opened_at < time AND closed_at >= time)`).join(',')}] AS age_levels
   FROM
   (
     SELECT
+      platform,
       repo_id,
       argMax(repo_name, created_at) AS repo_name,
       org_id,
@@ -461,32 +405,19 @@ FROM
       minIf(created_at, action = 'opened') AS opened_at,
       maxIf(created_at, action = 'closed') AS real_closed_at,
       if(real_closed_at=toDate('1970-1-1'), ${endTimeClause}, real_closed_at) AS closed_at
-    FROM gh_events
+    FROM events
     WHERE ${whereClauses.join(' AND ')}
-    GROUP BY repo_id, org_id, issue_number
+    GROUP BY repo_id, org_id, issue_number, platform
     HAVING opened_at > toDate('1970-01-01')
   )
-  GROUP BY id, time
+  ${getInnerGroupBy(config)}
   ${getInnerOrderAndLimit(config, 'age')}
 )
-GROUP BY id
+GROUP BY id, platform
 ${getOutterOrderAndLimit(config, sortBy, sortBy === 'levels' ? 1 : undefined)}`;
 
   const result: any = await clickhouse.query(sql);
-  return result.map(row => {
-    const [id, name, avg, levels, quantile_0, quantile_1, quantile_2, quantile_3, quantile_4] = row;
-    return {
-      id,
-      name,
-      avg,
-      levels,
-      quantile_0,
-      quantile_1,
-      quantile_2,
-      quantile_3,
-      quantile_4,
-    };
-  });
+  return processQueryResult(result, ['avg', 'levels', 'quantile_0', 'quantile_1', 'quantile_2', 'quantile_3', 'quantile_4']);
 };
 
 export const chaossIssueAge = (config: QueryConfig<TimeDurationOption>) => chaossAge(config, 'issue');
@@ -497,81 +428,69 @@ export const chaossChangeRequestAge = (config: QueryConfig<TimeDurationOption>) 
 export const chaossChangeRequestsAccepted = async (config: QueryConfig) => {
   config = getMergedConfig(config);
   const whereClauses: string[] = ["type = 'PullRequestEvent' AND action = 'closed' AND pull_merged = 1"];
-  const repoWhereClause = await getRepoWhereClauseForClickhouse(config);
+  const repoWhereClause = await getRepoWhereClause(config);
   if (repoWhereClause) whereClauses.push(repoWhereClause);
-  whereClauses.push(getTimeRangeWhereClauseForClickhouse(config));
+  whereClauses.push(getTimeRangeWhereClause(config));
 
   const sql = `
 SELECT
   id,
+  ${getTopLevelPlatform(config)},
   argMax(name, time) AS name,
   SUM(count) AS total_count,
-  ${getGroupArrayInsertAtClauseForClickhouse(config, { key: 'change_requests_accepted', value: 'count' })}
+  ${getGroupArrayInsertAtClause(config, { key: 'change_requests_accepted', value: 'count' })}
 FROM
 (
   SELECT
-    ${getGroupTimeClauseForClickhouse(config)},
-    ${getGroupIdClauseForClickhouse(config)},
+    ${getGroupTimeClause(config)},
+    ${getGroupIdClause(config)},
     COUNT() AS count
-  FROM gh_events
+  FROM events
   WHERE ${whereClauses.join(' AND ')}
-  GROUP BY id, time
+  ${getInnerGroupBy(config)}
   ${getInnerOrderAndLimit(config, 'count')}
 )
-GROUP BY id
+GROUP BY id, platform
 ${getOutterOrderAndLimit(config, 'change_requests_accepted')}`;
 
   const result: any = await clickhouse.query(sql);
-  return result.map(row => {
-    const [id, name, total_count, count] = row;
-    return {
-      id,
-      name,
-      total_count,
-      count,
-      ratio: count.map(v => `${(v * 100 / total_count).toPrecision(2)}%`),
-    }
-  });
+  const ret = processQueryResult(result, ['total_count', 'count']);
+  ret.forEach(i => i.ratio = i.count.map(v => `${(v * 100 / i.total_count).toPrecision(2)}%`));
+  return ret;
 };
 
 export const chaossChangeRequestsDeclined = async (config: QueryConfig) => {
   config = getMergedConfig(config);
   const whereClauses: string[] = ["type = 'PullRequestEvent' AND action = 'closed' AND pull_merged = 0"];
-  const repoWhereClause = await getRepoWhereClauseForClickhouse(config);
+  const repoWhereClause = await getRepoWhereClause(config);
   if (repoWhereClause) whereClauses.push(repoWhereClause);
-  whereClauses.push(getTimeRangeWhereClauseForClickhouse(config));
+  whereClauses.push(getTimeRangeWhereClause(config));
 
   const sql = `
 SELECT
   id,
+  ${getTopLevelPlatform(config)},
   argMax(name, time) AS name,
   SUM(count) AS total_count,
-  ${getGroupArrayInsertAtClauseForClickhouse(config, { key: 'change_requests_declined', value: 'count' })}
+  ${getGroupArrayInsertAtClause(config, { key: 'change_requests_declined', value: 'count' })}
 FROM
 (
   SELECT
-    ${getGroupTimeClauseForClickhouse(config)},
-    ${getGroupIdClauseForClickhouse(config)},
+    ${getGroupTimeClause(config)},
+    ${getGroupIdClause(config)},
     COUNT() AS count
-  FROM gh_events
+  FROM events
   WHERE ${whereClauses.join(' AND ')}
-  GROUP BY id, time
+  ${getInnerGroupBy(config)}
   ${getInnerOrderAndLimit(config, 'count')}
 )
-GROUP BY id
+GROUP BY id, platform
 ${getOutterOrderAndLimit(config, 'change_requests_declined')}`;
 
   const result: any = await clickhouse.query(sql);
-  return result.map(row => {
-    const [id, name, total_count, count] = row;
-    return {
-      id,
-      name,
-      total_count,
-      count,
-      ratio: count.map(v => `${(v * 100 / total_count).toPrecision(2)}%`),
-    }
-  });
+  const ret = processQueryResult(result, ['total_count', 'count']);
+  ret.forEach(i => i.ratio = i.count.map(v => `${(v * 100 / i.total_count).toPrecision(2)}%`));
+  return ret;
 };
 
 interface ChangeRequestsDurationOptions extends TimeDurationOption {
@@ -580,7 +499,7 @@ interface ChangeRequestsDurationOptions extends TimeDurationOption {
 export const chaossChangeRequestsDuration = async (config: QueryConfig<ChangeRequestsDurationOptions>) => {
   config = getMergedConfig(config);
   const whereClauses: string[] = ["type = 'PullRequestEvent' AND pull_merged = 1"];
-  const repoWhereClause = await getRepoWhereClauseForClickhouse(config);
+  const repoWhereClause = await getRepoWhereClause(config);
   if (repoWhereClause) whereClauses.push(repoWhereClause);
 
   const endDate = new Date(`${config.endYear}-${config.endMonth}-1`);
@@ -596,21 +515,23 @@ export const chaossChangeRequestsDuration = async (config: QueryConfig<ChangeReq
   const sql = `
 SELECT
   id,
+  ${getTopLevelPlatform(config)},
   argMax(name, time),
-  ${getGroupArrayInsertAtClauseForClickhouse(config, { key: `avg`, defaultValue: 'NaN' })},
-  ${getGroupArrayInsertAtClauseForClickhouse(config, { key: 'levels', value: 'resolution_levels', defaultValue: `[]`, noPrecision: true })},
-  ${timeDurationConstants.quantileArray.map(q => getGroupArrayInsertAtClauseForClickhouse(config, { key: `quantile_${q}`, defaultValue: 'NaN' })).join(',')}
+  ${getGroupArrayInsertAtClause(config, { key: `avg`, defaultValue: 'NaN' })},
+  ${getGroupArrayInsertAtClause(config, { key: 'levels', value: 'resolution_levels', defaultValue: `[]`, noPrecision: true })},
+  ${timeDurationConstants.quantileArray.map(q => getGroupArrayInsertAtClause(config, { key: `quantile_${q}`, defaultValue: 'NaN' })).join(',')}
 FROM
 (
   SELECT
-    ${getGroupTimeClauseForClickhouse(config, byCol)},
-    ${getGroupIdClauseForClickhouse(config)},
+    ${getGroupTimeClause(config, byCol)},
+    ${getGroupIdClause(config)},
     avg(resolution_duration) AS avg,
     ${timeDurationConstants.quantileArray.map(q => `quantile(${q / 4})(resolution_duration) AS quantile_${q}`).join(',')},
     [${ranges.map((_t, i) => `countIf(resolution_level = ${i})`).join(',')}] AS resolution_levels
   FROM
   (
     SELECT
+      platform,
       repo_id,
       argMax(repo_name, created_at) AS repo_name,
       org_id,
@@ -621,151 +542,118 @@ FROM
       maxIf(created_at, action = 'closed') AS closed_at,
       dateDiff('${unit}', opened_at, closed_at) AS resolution_duration,
       multiIf(${thresholds.map((t, i) => `resolution_duration <= ${t}, ${i}`)}, ${thresholds.length}) AS resolution_level
-    FROM gh_events
+    FROM events
     WHERE ${whereClauses.join(' AND ')}
-    GROUP BY repo_id, org_id, issue_number
+    GROUP BY repo_id, org_id, issue_number, platform
     HAVING ${byCol} >= toDate('${config.startYear}-${config.startMonth}-1') AND ${byCol} < toDate('${endDate.getFullYear()}-${endDate.getMonth() + 1}-1') AND last_action='closed'
   )
-  GROUP BY id, time
+  ${getInnerGroupBy(config)}
   ${getInnerOrderAndLimit(config, 'resolution_duration')}
 )
-GROUP BY id
+GROUP BY id, platform
 ${getOutterOrderAndLimit(config, sortBy, sortBy === 'levels' ? 1 : undefined)}`;
 
   const result: any = await clickhouse.query(sql);
-  return result.map(row => {
-    const [id, name, avg, levels, quantile_0, quantile_1, quantile_2, quantile_3, quantile_4] = row;
-    return {
-      id,
-      name,
-      avg,
-      levels,
-      quantile_0,
-      quantile_1,
-      quantile_2,
-      quantile_3,
-      quantile_4,
-    };
-  });
+  return processQueryResult(result, ['avg', 'levels', 'quantile_0', 'quantile_1', 'quantile_2', 'quantile_3', 'quantile_4']);
 };
 
 export const chaossChangeRequestsAcceptanceRatio = async (config: QueryConfig) => {
   config = getMergedConfig(config);
   const whereClauses: string[] = ["type = 'PullRequestEvent' AND action = 'closed' "];
-  const repoWhereClause = await getRepoWhereClauseForClickhouse(config);
+  const repoWhereClause = await getRepoWhereClause(config);
   if (repoWhereClause) whereClauses.push(repoWhereClause);
-  whereClauses.push(getTimeRangeWhereClauseForClickhouse(config));
+  whereClauses.push(getTimeRangeWhereClause(config));
   const sql = `
 SELECT
   id,
+  ${getTopLevelPlatform(config)},
   argMax(name, time) AS name,
-  ${getGroupArrayInsertAtClauseForClickhouse(config, { key: 'change_requests_accepted_ratio', value: 'ratio' })},
-  ${getGroupArrayInsertAtClauseForClickhouse(config, { key: 'change_requests_accepted', value: 'accepted_count' })},
-  ${getGroupArrayInsertAtClauseForClickhouse(config, { key: 'change_requests_declined', value: 'declined_count' })}
+  ${getGroupArrayInsertAtClause(config, { key: 'change_requests_accepted_ratio', value: 'ratio' })},
+  ${getGroupArrayInsertAtClause(config, { key: 'change_requests_accepted', value: 'accepted_count' })},
+  ${getGroupArrayInsertAtClause(config, { key: 'change_requests_declined', value: 'declined_count' })}
 
 FROM
 (
   SELECT
-    ${getGroupTimeClauseForClickhouse(config)},
-    ${getGroupIdClauseForClickhouse(config)},
+    ${getGroupTimeClause(config)},
+    ${getGroupIdClause(config)},
     COUNT() AS count,
     countIf(pull_merged = 1) AS accepted_count,
     countIf(pull_merged = 0) AS declined_count,
     accepted_count/count AS ratio
-  FROM gh_events
+  FROM events
   WHERE ${whereClauses.join(' AND ')}
-  GROUP BY id, time
+  ${getInnerGroupBy(config)}
   ${getInnerOrderAndLimit(config, 'ratio')}
 )
-GROUP BY id
+GROUP BY id, platform
 ${getOutterOrderAndLimit(config, 'change_requests_accepted_ratio')}`;
 
   const result: any = await clickhouse.query(sql);
-  return result.map(row => {
-    const [id, name, ratio, accepted_count, declined_count] = row;
-    return {
-      id,
-      name,
-      ratio,
-      accepted_count,
-      declined_count,
-    }
-  });
+  return processQueryResult(result, ['ratio', 'accepted_count', 'declined_count']);
 };
 
 // Evolution - Code Development Process Quality
 export const chaossChangeRequests = async (config: QueryConfig) => {
   config = getMergedConfig(config);
   const whereClauses: string[] = ["type = 'PullRequestEvent' AND action = 'opened'"];
-  const repoWhereClause = await getRepoWhereClauseForClickhouse(config);
+  const repoWhereClause = await getRepoWhereClause(config);
   if (repoWhereClause) whereClauses.push(repoWhereClause);
-  whereClauses.push(getTimeRangeWhereClauseForClickhouse(config));
+  whereClauses.push(getTimeRangeWhereClause(config));
 
   const sql = `
 SELECT
   id,
+  ${getTopLevelPlatform(config)},
   argMax(name, time) AS name,
-  ${getGroupArrayInsertAtClauseForClickhouse(config, { key: 'count' })}
+  ${getGroupArrayInsertAtClause(config, { key: 'count' })}
 FROM
 (
   SELECT
-    ${getGroupTimeClauseForClickhouse(config)},
-    ${getGroupIdClauseForClickhouse(config)},
+    ${getGroupTimeClause(config)},
+    ${getGroupIdClause(config)},
     COUNT() AS count
-  FROM gh_events
+  FROM events
   WHERE ${whereClauses.join(' AND ')}
-  GROUP BY id, time
+  ${getInnerGroupBy(config)}
   ${getInnerOrderAndLimit(config, 'count')}
 )
-GROUP BY id
+GROUP BY id, platform
 ${getOutterOrderAndLimit(config, 'count')}`;
 
   const result: any = await clickhouse.query(sql);
-  return result.map(row => {
-    const [id, name, count] = row;
-    return {
-      id,
-      name,
-      count,
-    }
-  });
+  return processQueryResult(result, ['count']);
 }
 
 export const chaossChangeRequestReviews = async (config: QueryConfig) => {
   config = getMergedConfig(config);
   const whereClauses: string[] = ["type = 'PullRequestReviewCommentEvent'"];
-  const repoWhereClause = await getRepoWhereClauseForClickhouse(config);
+  const repoWhereClause = await getRepoWhereClause(config);
   if (repoWhereClause) whereClauses.push(repoWhereClause);
-  whereClauses.push(getTimeRangeWhereClauseForClickhouse(config));
+  whereClauses.push(getTimeRangeWhereClause(config));
 
   const sql = `
 SELECT
   id,
+  ${getTopLevelPlatform(config)},
   argMax(name, time) AS name,
-  ${getGroupArrayInsertAtClauseForClickhouse(config, { key: 'count' })}
+  ${getGroupArrayInsertAtClause(config, { key: 'count' })}
 FROM
 (
   SELECT
-    ${getGroupTimeClauseForClickhouse(config)},
-    ${getGroupIdClauseForClickhouse(config)},
+    ${getGroupTimeClause(config)},
+    ${getGroupIdClause(config)},
     COUNT() AS count
-  FROM gh_events
+  FROM events
   WHERE ${whereClauses.join(' AND ')}
-  GROUP BY id, time
+  ${getInnerGroupBy(config)}
   ${getInnerOrderAndLimit(config, 'count')}
 )
-GROUP BY id
+GROUP BY id, platform
 ${getOutterOrderAndLimit(config, 'count')}`;
 
   const result: any = await clickhouse.query(sql);
-  return result.map(row => {
-    const [id, name, count] = row;
-    return {
-      id,
-      name,
-      count,
-    }
-  });
+  return processQueryResult(result, ['count']);
 }
 
 // Risk - Business Risk
@@ -788,22 +676,24 @@ export const chaossBusFactor = async (config: QueryConfig<BusFactorOptions>) => 
   } else if (by === 'activity') {
     whereClauses.push("type IN ('IssuesEvent', 'IssueCommentEvent', 'PullRequestEvent', 'PullRequestReviewCommentEvent')");
   }
-  const repoWhereClause = await getRepoWhereClauseForClickhouse(config);
+  const repoWhereClause = await getRepoWhereClause(config);
   if (repoWhereClause) whereClauses.push(repoWhereClause);
-  whereClauses.push(getTimeRangeWhereClauseForClickhouse(config));
+  whereClauses.push(getTimeRangeWhereClause(config));
 
   const sql = `
 SELECT
   id,
+  platform,
   argMax(name, time) AS name,
-  ${getGroupArrayInsertAtClauseForClickhouse(config, { key: 'bus_factor', })},
-  ${getGroupArrayInsertAtClauseForClickhouse(config, { key: 'detail', noPrecision: true, defaultValue: '[]' })},
-  ${getGroupArrayInsertAtClauseForClickhouse(config, { key: 'total_contributions' })}
+  ${getGroupArrayInsertAtClause(config, { key: 'bus_factor', })},
+  ${getGroupArrayInsertAtClause(config, { key: 'detail', noPrecision: true, defaultValue: '[]' })},
+  ${getGroupArrayInsertAtClause(config, { key: 'total_contributions' })}
 FROM
 (
   SELECT
     time,
     id,
+    ${getTopLevelPlatform(config)},
     any(name) AS name,
     SUM(count) AS total_contributions,
     length(detail) AS bus_factor,
@@ -811,8 +701,8 @@ FROM
   FROM
   (
     SELECT
-      ${getGroupTimeClauseForClickhouse(config)},
-      ${getGroupIdClauseForClickhouse(config)},
+      ${getGroupTimeClause(config)},
+      ${getGroupIdClause(config)},
       ${(() => {
       if (by === 'commit') {
         return `
@@ -830,28 +720,19 @@ FROM
           `
       }
     })()}
-    FROM gh_events
+    FROM events
     WHERE ${whereClauses.join(' AND ')}
-    GROUP BY id, time, ${by === 'commit' ? 'author' : 'actor_id'}
+    ${getInnerGroupBy(config)}, ${by === 'commit' ? 'author' : 'actor_id'}
     ${(config.options?.withBot && by !== 'commit') ? '' : "HAVING " + (by === 'activity' ? 'actor_login' : 'author') + " NOT LIKE '%[bot]'"}
   )
-  GROUP BY id, time
+  ${getInnerGroupBy(config)}
   ${getInnerOrderAndLimit(config, 'bus_factor')}
 )
-GROUP BY id
+GROUP BY id, platform
 ${getOutterOrderAndLimit(config, 'bus_factor')}`;
 
   const result: any = await clickhouse.query(sql);
-  return result.map(row => {
-    const [id, name, bus_factor, detail, total_contributions] = row;
-    return {
-      id,
-      name,
-      bus_factor,
-      detail,
-      total_contributions,
-    }
-  });
+  return processQueryResult(result, ['bus_factor', 'detail', 'total_contributions']);
 };
 
 interface NewContributorsOptions {
@@ -870,25 +751,27 @@ export const chaossNewContributors = async (config: QueryConfig<NewContributorsO
   } else if (by === 'change request') {
     whereClauses.push("type = 'PullRequestEvent' AND action = 'closed' AND pull_merged = 1");
   }
-  const repoWhereClause = await getRepoWhereClauseForClickhouse(config);
+  const repoWhereClause = await getRepoWhereClause(config);
   if (repoWhereClause) whereClauses.push(repoWhereClause);
   const sql = `
   SELECT
     id,
+    ${getTopLevelPlatform(config)},
     argMax(name, time) AS name,
-    ${getGroupArrayInsertAtClauseForClickhouse(config, { key: 'new_contributors', value: 'new_contributor' })},
-    ${getGroupArrayInsertAtClauseForClickhouse(config, { key: 'detail', noPrecision: true, defaultValue: '[]' })},
+    ${getGroupArrayInsertAtClause(config, { key: 'new_contributors', value: 'new_contributor' })},
+    ${getGroupArrayInsertAtClause(config, { key: 'detail', noPrecision: true, defaultValue: '[]' })},
     SUM(new_contributor) AS total_new_contributors
   FROM
   (
     SELECT
-      ${getGroupTimeClauseForClickhouse(config, 'first_time')},
-      ${getGroupIdClauseForClickhouse(config)},
+      ${getGroupTimeClause(config, 'first_time')},
+      ${getGroupIdClause(config)},
       length(detail) AS new_contributor,
       (arrayMap((x) -> (x), groupArray(author))) AS detail
     FROM
     (
       SELECT
+        platform,
         min(created_at) AS first_time,
         repo_id,
         argMax(repo_name, created_at) AS repo_name,
@@ -908,7 +791,8 @@ export const chaossNewContributors = async (config: QueryConfig<NewContributorsO
     })()}
       FROM
        (
-          SELECT 
+          SELECT
+            platform,
             repo_id,
             repo_name,
             org_id,
@@ -926,29 +810,21 @@ export const chaossNewContributors = async (config: QueryConfig<NewContributorsO
       }
     })()},
             created_at
-          FROM gh_events
+          FROM events
           WHERE ${whereClauses.join(' AND ')}
           ${(config.options?.withBot && by !== 'commit') ? '' : "HAVING author NOT LIKE '%[bot]'"}
         )
-      GROUP BY repo_id, org_id, ${by === 'commit' ? 'author' : 'actor_id'}
+      GROUP BY platform, repo_id, org_id, ${by === 'commit' ? 'author' : 'actor_id'}
       HAVING first_time >= toDate('${config.startYear}-${config.startMonth}-1') AND first_time < toDate('${endDate.getFullYear()}-${endDate.getMonth() + 1}-1')
     )
-    GROUP BY id, time
+    ${getInnerGroupBy(config)}
     ${getInnerOrderAndLimit(config, 'new_contributor')}
   )
-  GROUP BY id
+  GROUP BY id, platform
   ${getOutterOrderAndLimit(config, 'new_contributors')}`;
 
   const result: any = await clickhouse.query(sql);
-  return result.map(row => {
-    const [id, name, new_contributors, detail] = row;
-    return {
-      id,
-      name,
-      new_contributors,
-      detail,
-    }
-  });
+  return processQueryResult(result, ['new_contributors', 'detail']);
 }
 
 interface InactiveContributorsOptions {
@@ -977,20 +853,22 @@ export const chaossInactiveContributors = async (config: QueryConfig<InactiveCon
   } else if (by === 'change request') {
     whereClauses.push("type = 'PullRequestEvent' AND action = 'closed' AND pull_merged = 1");
   }
-  const repoWhereClause = await getRepoWhereClauseForClickhouse(config);
+  const repoWhereClause = await getRepoWhereClause(config);
   if (repoWhereClause) whereClauses.push(repoWhereClause);
   whereClauses.push(`created_at < ${endTimeClause}`);
 
   const sql = `
 SELECT
   id,
+  ${getTopLevelPlatform(config)},
   argMax(name, time) AS name,
-  ${getGroupArrayInsertAtClauseForClickhouse(config, { key: 'inactive_contributors', positionByEndTime: true })},
-  ${getGroupArrayInsertAtClauseForClickhouse(config, { key: 'detail', noPrecision: true, defaultValue: '[]', positionByEndTime: true })}
+  ${getGroupArrayInsertAtClause(config, { key: 'inactive_contributors', positionByEndTime: true })},
+  ${getGroupArrayInsertAtClause(config, { key: 'detail', noPrecision: true, defaultValue: '[]', positionByEndTime: true })}
 FROM
 (
   SELECT
     id,
+    platform,
     argMax(name, time) AS name,
     time,
     countIf(first_time < time AND contributions <= ${minCount}) AS inactive_contributors,
@@ -1005,13 +883,14 @@ FROM
         return `${endTimeClause} AS time`
       }
     })()},
-      ${getGroupIdClauseForClickhouse(config)},
+      ${getGroupIdClause(config)},
       ${by === 'commit' ? 'author' : 'actor_id, argMax(author, created_at) AS author'},
       min(created_at) AS first_time,
       countIf(created_at >= dateSub(${timeIntervalUnit}, ${timeInterval}, time) AND created_at <= time) AS contributions
     FROM
     (
-      SELECT 
+      SELECT
+        platform,
         repo_id,
         repo_name,
         org_id,
@@ -1019,28 +898,20 @@ FROM
         ${by === 'commit' ? 'arrayJoin(push_commits.name) AS author' :
       'issue_author_id AS actor_id, issue_author_login AS author'},
         created_at
-      FROM gh_events
+      FROM events
       WHERE ${whereClauses.join(' AND ')}
       ${(config.options?.withBot && by !== 'commit') ? '' : "HAVING author NOT LIKE '%[bot]'"}
     )
-    GROUP BY id, ${by === 'commit' ? 'author' : 'actor_id'}, time
+    GROUP BY id, platform, ${by === 'commit' ? 'author' : 'actor_id'}, time
   )
-  GROUP BY id, time
+  ${getInnerGroupBy(config)}
   ${getInnerOrderAndLimit(config, 'inactive_contributors')}
 )
-GROUP BY id
+GROUP BY id, platform
 ${getOutterOrderAndLimit(config, 'inactive_contributors')}`;
 
   const result: any = await clickhouse.query(sql);
-  return result.map(row => {
-    const [id, name, inactive_contributors, detail] = row;
-    return {
-      id,
-      name,
-      inactive_contributors,
-      detail,
-    }
-  });
+  return processQueryResult(result, ['inactive_contributors', 'detail']);
 }
 
 interface ActiveDatesAndTimesOptions {
@@ -1049,12 +920,12 @@ interface ActiveDatesAndTimesOptions {
 }
 export const chaossActiveDatesAndTimes = async (config: QueryConfig<ActiveDatesAndTimesOptions>, type: 'user' | 'repo') => {
   config = getMergedConfig(config);
-  const whereClauses: string[] = [getTimeRangeWhereClauseForClickhouse(config)];
+  const whereClauses: string[] = [getTimeRangeWhereClause(config)];
   if (type === 'user') {
-    const userWhereClause = await getUserWhereClauseForClickhouse(config);
+    const userWhereClause = await getUserWhereClause(config);
     if (userWhereClause) whereClauses.push(userWhereClause);
   } else if (type === 'repo') {
-    const repoWhereClause = await getRepoWhereClauseForClickhouse(config);
+    const repoWhereClause = await getRepoWhereClause(config);
     if (repoWhereClause) whereClauses.push(repoWhereClause);
   } else {
     throw new Error(`Not supported type: ${type}`);
@@ -1063,37 +934,31 @@ export const chaossActiveDatesAndTimes = async (config: QueryConfig<ActiveDatesA
   const sql = `
 SELECT
   id,
+  ${getTopLevelPlatform(config)},
   argMax(name, time) AS name,
-  ${getGroupArrayInsertAtClauseForClickhouse(config, { key: 'count', noPrecision: true, defaultValue: '[]' })}
+  ${getGroupArrayInsertAtClause(config, { key: 'count', noPrecision: true, defaultValue: '[]' })}
 FROM
 (
-  SELECT id, argMax(name, time) AS name, time, arrayMap(x -> ${config.options?.normalize ? `round(x*${config.options.normalize}/max(count))` : 'x'}, groupArrayInsertAt(0, 168)(count, toUInt32((day - 1) * 24 + hour))) AS count
+  SELECT platform, id, argMax(name, time) AS name, time, arrayMap(x -> ${config.options?.normalize ? `round(x*${config.options.normalize}/max(count))` : 'x'}, groupArrayInsertAt(0, 168)(count, toUInt32((day - 1) * 24 + hour))) AS count
   FROM
   (
     SELECT
-      ${getGroupTimeClauseForClickhouse(config)},
-      ${getGroupIdClauseForClickhouse(config, type)},
+      ${getGroupTimeClause(config)},
+      ${getGroupIdClause(config, type)},
       toHour(created_at) AS hour,
       toDayOfWeek(created_at) AS day,
       COUNT() AS count
-    FROM gh_events
+    FROM events
     WHERE ${whereClauses.join(' AND ')}
-    GROUP BY id, time, hour, day
+    GROUP BY id, platform, time, hour, day
     ORDER BY day, hour
   )
-  GROUP BY id, time
+  ${getInnerGroupBy(config)}
   ${getInnerOrderAndLimit(config, 'count', 1)}
 )
-GROUP BY id
+GROUP BY id, platform
 ${getOutterOrderAndLimit(config, 'count', 1)}`;
 
   const result: any = await clickhouse.query(sql);
-  return result.map(row => {
-    const [id, name, count] = row;
-    return {
-      id,
-      name,
-      count,
-    }
-  });
+  return processQueryResult(result, ['count']);
 }

@@ -1,11 +1,21 @@
 name: Cloud Native - Orchestration & Management - Coordination & Service Discovery
 type: Tech-2
 data:
-  github_repo:
-    - 160999 # repo:apache/zookeeper
-    - 54230994 # repo:coredns/coredns
-    - 11225014 # repo:etcd-io/etcd
-    - 224421982 # repo:k8gb-io/k8gb
-    - 513743595 # repo:kubewharf/kubebrain
-    - 137451403 # repo:alibaba/nacos
-    - 5198041 # repo:Netflix/eureka
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 160999
+          name: apache/zookeeper
+        - id: 54230994
+          name: coredns/coredns
+        - id: 11225014
+          name: etcd-io/etcd
+        - id: 224421982
+          name: k8gb-io/k8gb
+        - id: 513743595
+          name: kubewharf/kubebrain
+        - id: 137451403
+          name: alibaba/nacos
+        - id: 5198041
+          name: Netflix/eureka

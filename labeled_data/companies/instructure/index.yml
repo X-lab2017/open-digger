@@ -1,5 +1,9 @@
 name: Instructure
 type: Company
 data:
-  github_org:
-    - 515326  # org:instructure
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 515326
+          name: instructure

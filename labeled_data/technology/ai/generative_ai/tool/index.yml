@@ -1,20 +1,39 @@
 name: Tool
 type: Tech-1
 data:
-  github_repo:
-    - 614765452 # repo:significant-gravitas/auto-gpt
-    - 527591471 # repo:automatic1111/stable-diffusion-webui
-    - 552661142 # repo:hwchase17/langchain
-    - 635240594 # repo:imartinez/privategpt
-    - 624681066 # repo:reworkd/agentgpt
-    - 621118467 # repo:microsoft/jarvis
-    - 617798408 # repo:openai/chatgpt-retrieval-plugin
-    - 560704231 # repo:jerryjliu/llama_index
-    - 235860204 # repo:microsoft/DeepSpeed
-    - 580642043 # repo:oobabooga/text-generation-webui
-    - 422274596 # repo:hpcaitech/colossalai
-    - 613075789 # repo:cocktailpeanut/dalai
-    - 564443255 # repo:microsoft/guidance
-    - 621803253 # repo:flowiseai/flowise
-    - 640182997 # repo:transformeroptimus/superagi
-    - 644715009 # repo:promtengineer/localgpt
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 614765452
+          name: significant-gravitas/auto-gpt
+        - id: 527591471
+          name: automatic1111/stable-diffusion-webui
+        - id: 552661142
+          name: hwchase17/langchain
+        - id: 635240594
+          name: imartinez/privategpt
+        - id: 624681066
+          name: reworkd/agentgpt
+        - id: 621118467
+          name: microsoft/jarvis
+        - id: 617798408
+          name: openai/chatgpt-retrieval-plugin
+        - id: 560704231
+          name: jerryjliu/llama_index
+        - id: 235860204
+          name: microsoft/DeepSpeed
+        - id: 580642043
+          name: oobabooga/text-generation-webui
+        - id: 422274596
+          name: hpcaitech/colossalai
+        - id: 613075789
+          name: cocktailpeanut/dalai
+        - id: 564443255
+          name: microsoft/guidance
+        - id: 621803253
+          name: flowiseai/flowise
+        - id: 640182997
+          name: transformeroptimus/superagi
+        - id: 644715009
+          name: promtengineer/localgpt

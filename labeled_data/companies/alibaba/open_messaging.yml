@@ -1,5 +1,9 @@
 name: OpenMessaging
 type: Project
 data:
-  github_org:
-    - 26734561 # org:openmessaging
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 26734561
+          name: openmessaging

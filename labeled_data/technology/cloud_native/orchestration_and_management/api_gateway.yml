@@ -1,23 +1,45 @@
 name: Cloud Native - Orchestration & Management - API Gateway
 type: Tech-2
 data:
-  github_repo:
-    - 53965666 # repo:3scale/apicast
-    - 218068847 # repo:apioak/apioak
-    - 180481986 # repo:apache/apisix
-    - 295485450 # repo:azure/api-management
-    - 371564104 # repo:megaease/easegress
-    - 86740149 # repo:emissary-ingress/emissary
-    - 199619921 # repo:saarasio/enroute
-    - 118510171 # repo:solo-io/gloo
-    - 36487440 # repo:gravitee-io/gravitee-api-management
-    - 344331591 # repo:hango-io/hango-gateway
-    - 558188628 # repo:alibaba/higress
-    - 26783295 # repo:Kong/kong
-    - 72875399 # repo:luraproject/lura
-    - 408727871 # repo:kubeshop/kusk-gateway
-    - 7058562 # repo:mulesoft/mule
-    - 107638632 # repo:accenture/reactive-interaction-gateway
-    - 128018428 # repo:alibaba/Sentinel
-    - 19537979 # repo:TykTechnologies/tyk
-    - 134538006 # repo:wso2/product-microgateway
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 53965666
+          name: 3scale/apicast
+        - id: 218068847
+          name: apioak/apioak
+        - id: 180481986
+          name: apache/apisix
+        - id: 295485450
+          name: azure/api-management
+        - id: 371564104
+          name: megaease/easegress
+        - id: 86740149
+          name: emissary-ingress/emissary
+        - id: 199619921
+          name: saarasio/enroute
+        - id: 118510171
+          name: solo-io/gloo
+        - id: 36487440
+          name: gravitee-io/gravitee-api-management
+        - id: 344331591
+          name: hango-io/hango-gateway
+        - id: 558188628
+          name: alibaba/higress
+        - id: 26783295
+          name: Kong/kong
+        - id: 72875399
+          name: luraproject/lura
+        - id: 408727871
+          name: kubeshop/kusk-gateway
+        - id: 7058562
+          name: mulesoft/mule
+        - id: 107638632
+          name: accenture/reactive-interaction-gateway
+        - id: 128018428
+          name: alibaba/Sentinel
+        - id: 19537979
+          name: TykTechnologies/tyk
+        - id: 134538006
+          name: wso2/product-microgateway

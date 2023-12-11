@@ -1,5 +1,9 @@
 name: Fastly
 type: Company
 data:
-  github_org:
-    - 777070  # org:fastly
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 777070
+          name: fastly

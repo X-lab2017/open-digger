@@ -1,7 +1,7 @@
 name: United States of America
 type: Region
 data:
-  label:
+  labels:
     - :companies/adobe
     - :companies/amazon
     - :companies/databricks

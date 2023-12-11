@@ -32,7 +32,7 @@ async function validateData(
       console.log("query result data: ", JSON.stringify(queryResultDataWithoutDetail));
     }
     assert(equal);
-  } 
+  }
   else {
     console.log(`File ${fileName} not found, because the option is not supported.`);
   }
@@ -52,7 +52,8 @@ function removeFields(data: any) {
         !key.startsWith("detail") &&
         !key.startsWith("avg") &&
         !key.startsWith("levels") &&
-        !key.startsWith("openrank")
+        !key.startsWith("openrank") &&
+        !key.startsWith('platform')
       ) {
         newData[key] = removeFields(data[key]);
       }
@@ -71,7 +72,7 @@ const groupTimeRangeOptions = ["year", "quarter", "month"];
 const groupByOptions = [null, "org"];
 
 
-describe("Data tests", () => {
+describe("Metrics tests", () => {
   before(function () {
     this.timeout(100000);
   });

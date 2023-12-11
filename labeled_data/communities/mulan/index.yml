@@ -1,12 +1,23 @@
 name: Mulan
 type: Community
 data:
-  github_repo:
-    - 177068961 # repo:kubeovn/kube-ovn
-    - 131926778 # repo:cas-bigdatalab/piflow
-    - 372536055 # repo:oceanbase/obclient
-    - 34777562 # repo:ossrs/srs
-    - 222648751 # repo:rcore-os/zCore
-    - 274069307 # repo:MonkSoul/Furion
-    - 288431943 # repo:X-lab2017/open-digger
-    - 419195320 # repo:jianmu-dev/jianmu
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 177068961
+          name: kubeovn/kube-ovn
+        - id: 131926778
+          name: cas-bigdatalab/piflow
+        - id: 372536055
+          name: oceanbase/obclient
+        - id: 34777562
+          name: ossrs/srs
+        - id: 222648751
+          name: rcore-os/zCore
+        - id: 274069307
+          name: MonkSoul/Furion
+        - id: 288431943
+          name: X-lab2017/open-digger
+        - id: 419195320
+          name: jianmu-dev/jianmu

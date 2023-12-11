@@ -1,7 +1,13 @@
 name: Uber
 type: Company
 data:
-  github_org:
-    - 538264 # org:uber
-    - 19262598 # org:uber-go
-    - 46361271 # org:horovod
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 538264
+          name: uber
+        - id: 19262598
+          name: uber-go
+        - id: 46361271
+          name: horovod

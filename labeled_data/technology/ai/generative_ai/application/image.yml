@@ -1,14 +1,27 @@
 name: Artificial Intelligence - application - image
 type: Tech-1
 data:
-  github_repo:
-    - 547653294 # repo:midjourney/transformers
-    - 569927055 # repo:Stability-AI/stablediffusion
-    - 631081758 # repo:Stability-AI/StableStudio
-    - 656933936 # repo:Stability-AI/generative-models
-    - 625876964 # repo:open-mmlab/playground
-    - 612427246 # repo:tatsu-lab/stanford_alpaca
-    - 642323624 # repo:XingangPan/DragGAN
-    - 628419800 # repo:Vision-CAIR/MiniGPT-4
-    - 595893961 # repo:lllyasviel/ControlNet
-    - 523379232 # repo:CompVis/stable-diffusion
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 547653294
+          name: midjourney/transformers
+        - id: 569927055
+          name: Stability-AI/stablediffusion
+        - id: 631081758
+          name: Stability-AI/StableStudio
+        - id: 656933936
+          name: Stability-AI/generative-models
+        - id: 625876964
+          name: open-mmlab/playground
+        - id: 612427246
+          name: tatsu-lab/stanford_alpaca
+        - id: 642323624
+          name: XingangPan/DragGAN
+        - id: 628419800
+          name: Vision-CAIR/MiniGPT-4
+        - id: 595893961
+          name: lllyasviel/ControlNet
+        - id: 523379232
+          name: CompVis/stable-diffusion

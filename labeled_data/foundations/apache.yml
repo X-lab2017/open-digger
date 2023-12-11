@@ -1,5 +1,9 @@
 name: Apache Software Foundation
 type: Foundation
 data:
-  github_org:
-    - 47359 # org:apache
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 47359
+          name: apache

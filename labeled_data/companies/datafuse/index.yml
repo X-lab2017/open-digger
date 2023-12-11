@@ -1,5 +1,9 @@
 name: Datafuse Labs
 type: Company
 data:
-  github_org:
-    - 80994548 # org:datafuselabs
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 80994548
+          name: datafuselabs

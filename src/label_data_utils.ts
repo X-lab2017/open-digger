@@ -2,29 +2,43 @@ import { readdirSync, statSync } from 'fs';
 import path from 'path';
 import { readFileAsObj } from './utils';
 
+export type PlatformNames = 'GitHub' | 'Gitee' | 'AtomGit' | 'GitLab.com' | 'GitLab.cn' | 'Gitea';
+
 const labelInputDir = '../labeled_data';
 const labelInputPath = path.join(__dirname, labelInputDir);
 
-const supportedTypes = new Set<string>([
-  'Region', 'Company', 'Community', 'Project', 'Foundation', 'Tech-0', 'Tech-1', 'Tech-2', 'Domain-0', 'Bot'
-]);
-
-const supportedKey = new Set<string>([
-  'label', 'github_repo', 'github_org', 'github_user'
-]);
-interface GitHubData {
-  githubRepos: number[],
-  githubOrgs: number[],
-  githubUsers: number[],
-}
-
-const emptyData: GitHubData = {
-  githubRepos: [],
-  githubOrgs: [],
-  githubUsers: [],
+const checkKeysAndTypes = {
+  labelTypes: new Set<string>([
+    'Region', 'Company', 'Community', 'Project', 'Foundation', 'Tech-0', 'Tech-1', 'Tech-2', 'Domain-0', 'Bot'
+  ]),
+  labelKeys: new Set<string>([
+    'labels', 'platforms'
+  ]),
+  platformsNames: new Set([
+    'GitHub', 'Gitee', 'AtomGit', 'GitLab.com', 'GitLab.cn', 'Gitea',
+  ]),
+  platformTypes: new Set<string>([
+    'Code Hosting'
+  ]),
+  platformKeys: new Set<string>([
+    'repos', 'orgs', 'users'
+  ]),
 };
 
-interface LabelItem extends GitHubData {
+interface CodeHostingPlatformItem {
+  id: number;
+  name: string;
+}
+
+interface CodeHostingPlatformData {
+  name: string;
+  type: string;
+  orgs: CodeHostingPlatformItem[],
+  repos: CodeHostingPlatformItem[],
+  users: CodeHostingPlatformItem[],
+}
+
+interface LabelItem {
   identifier: string;
   content: {
     name: string;
@@ -32,18 +46,19 @@ interface LabelItem extends GitHubData {
     data: any;
   },
   parsed: boolean;
+  platforms: CodeHostingPlatformData[];
 }
 
-interface ParsedLabelItem extends GitHubData {
+interface ParsedLabelItem {
   identifier: string;
   type: string;
   name: string;
+  platforms: CodeHostingPlatformData[];
 }
 
 export function getLabelData(injectLabelData?: any[]): ParsedLabelItem[] {
   if (!statSync(labelInputPath).isDirectory()) {
-    console.error(`${labelInputPath} input path is not a directory.`);
-    return [];
+    throw new Error(`${labelInputPath} input path is not a directory.`);
   }
   const labelMap = new Map<string, LabelItem>();
   const indexFileName = `${path.sep}index.yml`;
@@ -56,10 +71,8 @@ export function getLabelData(injectLabelData?: any[]): ParsedLabelItem[] {
     labelMap.set(identifier, {
       identifier,
       content,
+      platforms: [],
       parsed: false,
-      githubOrgs: [],
-      githubRepos: [],
-      githubUsers: [],
     });
   });
   const data = processLabelItems(labelMap);
@@ -82,37 +95,54 @@ function processLabelItems(map: Map<string, LabelItem>): ParsedLabelItem[] {
     parseItem(item, map);
   }
   return Array.from(map.values()).map(item => {
-    return {
+    const ret = {
       identifier: item.identifier,
       type: item.content.type,
       name: item.content.name,
-      githubRepos: Array.from(new Set(item.githubRepos)),
-      githubOrgs: Array.from(new Set(item.githubOrgs)),
-      githubUsers: Array.from(new Set(item.githubUsers)),
+      platforms: item.platforms,
     };
+    return ret;
   });
+}
+
+function mergePlatforms(...platformsArray: CodeHostingPlatformData[][]) {
+  const platforms: CodeHostingPlatformData[] = [];
+  platformsArray.forEach(ps => {
+    ps.forEach(p => {
+      const platform = platforms.find(pp => pp.name === p.name && pp.type === p.type);
+      if (!platform) {
+        platforms.push(JSON.parse(JSON.stringify(p)));
+      } else {
+        ['orgs', 'repos', 'users'].forEach(key => {
+          if (p[key]) {
+            p[key].forEach(i => {
+              if (!platform[key].find(ii => ii.id === i.id)) platform[key].push(i);
+            });
+          }
+        });
+      }
+    });
+  });
+  return platforms;
 }
 
 function parseItem(item: LabelItem, map: Map<string, LabelItem>) {
   if (item.parsed) return;
-  if (item.content.type && !supportedTypes.has(item.content.type)) {
+  if (item.content.type && !checkKeysAndTypes.labelTypes.has(item.content.type)) {
     throw new Error(`Not supported type ${item.content.type}`)
   }
   for (const key in item.content.data) {
-    if (!supportedKey.has(key)) {
+    if (!checkKeysAndTypes.labelKeys.has(key)) {
       throw new Error(`Not supported element=${key}, identifier=${item.identifier}`);
     }
     switch (key) {
-      case 'github_repo':
-        item.githubRepos.push(...item.content.data[key]);
+      case 'platforms':
+        // process platforms first
+        const platforms = JSON.parse(JSON.stringify(item.content.data[key]));
+        item.platforms = mergePlatforms(item.platforms, platforms);
+        ['orgs', 'repos', 'users'].forEach(k => item.platforms.forEach(p => p[k] = p[k] ?? []));
         break;
-      case 'github_org':
-        item.githubOrgs.push(...item.content.data[key]);
-        break;
-      case 'github_user':
-        item.githubUsers.push(...item.content.data[key]);
-        break;
-      case 'label':
+      case 'labels':
         const labels: string[] = item.content.data[key];
         for (const label of labels) {
           const identifier = label.startsWith(':') ? label : processLabelIdentifier(path.join(item.identifier, label));
@@ -123,9 +153,9 @@ function parseItem(item: LabelItem, map: Map<string, LabelItem>) {
           if (!innerItem.parsed) {
             parseItem(innerItem, map);
           }
-          item.githubOrgs.push(...innerItem.githubOrgs);
-          item.githubRepos.push(...innerItem.githubRepos);
-          item.githubUsers.push(...innerItem.githubUsers);
+
+          // merge platforms
+          item.platforms = mergePlatforms(item.platforms, innerItem.platforms);
         }
         break;
       default:
@@ -139,26 +169,27 @@ function processLabelIdentifier(identifier: string): string {
   return identifier.split(path.sep).join(path.posix.sep);
 }
 
-function labelDataToGitHubData(data: ParsedLabelItem[]): GitHubData {
-  const repoSet = new Set<number>();
-  const orgSet = new Set<number>();
-  const userSet = new Set<number>();
+function labelDataToPlatformData(data: ParsedLabelItem[]): CodeHostingPlatformData[] {
+  const ret = new Map<string, CodeHostingPlatformData>();
   for (const item of data) {
-    item.githubRepos.forEach(r => repoSet.add(r));
-    item.githubOrgs.forEach(o => orgSet.add(o));
-    item.githubUsers.forEach(u => userSet.add(u));
+    item.platforms.filter(p => p.type === 'Code Hosting').forEach(p => {
+      const platform = ret.get(p.name);
+      if (!platform) {
+        ret.set(p.name, p);
+      } else {
+        platform.orgs = Array.from(new Set(platform.orgs.concat(p.orgs)));
+        platform.repos = Array.from(new Set(platform.repos.concat(p.repos)));
+        platform.users = Array.from(new Set(platform.users.concat(p.users)));
+      }
+    });
   }
-  return {
-    githubRepos: Array.from(repoSet),
-    githubOrgs: Array.from(orgSet),
-    githubUsers: Array.from(userSet),
-  };
+  return Array.from(ret.values());
 }
 
-export function getGitHubData(typeOrIds: string[], injectLabelData?: any[]): GitHubData {
-  if (typeOrIds.length === 0) return emptyData;
+export function getPlatformData(typeOrIds: string[], injectLabelData?: any[]): CodeHostingPlatformData[] {
+  if (typeOrIds.length === 0) return [];
   const data = getLabelData(injectLabelData);
-  if (!data) return emptyData;
+  if (!data) return [];
   const arr = data.filter(i => typeOrIds.includes(i.type) || typeOrIds.includes(i.identifier));
-  return labelDataToGitHubData(arr);
+  return labelDataToPlatformData(arr);
 }

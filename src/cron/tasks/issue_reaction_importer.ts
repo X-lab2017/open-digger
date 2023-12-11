@@ -1,11 +1,10 @@
 import { Task } from '..';
 import getConfig from '../../config';
-import { Readable } from 'stream';
-import { createClient } from '@clickhouse/client';
 import { readFileSync } from 'fs';
 import { Octokit } from '@octokit/rest';
 import { App } from '@octokit/app';
-import { query } from '../../db/clickhouse';
+import { insertRecords, query } from '../../db/clickhouse';
+import { getLogger } from '../../utils';
 
 /**
  * This task is used to update user location to standard address
@@ -15,6 +14,8 @@ const task: Task = {
   enable: false,
   immediate: false,
   callback: async () => {
+    const logger = getLogger('IssueReactionImporterTask');
+
     const config = await getConfig();
 
     const githubApp = new App({
@@ -34,7 +35,7 @@ const task: Task = {
           auth: `Bearer ${await githubApp.getInstallationAccessToken({ installationId: i.id })}`,
         });
         const installationRepos = await oct.paginate('GET /installation/repositories');
-        console.log(`Got ${installationRepos.length} repos for installation ${i?.account?.login}`);
+        logger.info(`Got ${installationRepos.length} repos for installation ${i?.account?.login}`);
         repos.push(...installationRepos.map(r => ({ iid: i.id, id: r.id, name: r.full_name })));
       }
       return repos;
@@ -50,7 +51,7 @@ const task: Task = {
     };
 
     const getUpdateIssues = async (id: number): Promise<number[]> => {
-      const q = `SELECT DISTINCT issue_number FROM gh_events WHERE repo_id=${id} AND issue_number > 0 AND created_at > (SELECT MAX(created_at) FROM gh_events WHERE repo_id=${id} AND type='IssuesReactionEvent')`;
+      const q = `SELECT DISTINCT issue_number FROM events WHERE platform='GitHub' AND repo_id=${id} AND issue_number > 0 AND created_at > (SELECT MAX(created_at) FROM events WHERE platform='GitHub' AND repo_id=${id} AND type='IssuesReactionEvent')`;
       const issues = await query<number[]>(q);
       return issues.map(i => i[0]);
     };
@@ -82,7 +83,7 @@ const task: Task = {
             result.push(item);
           }
         } catch (e: any) {
-          console.log(`Error on fetching reactions for ${r.name}#${number}, e=${e}`);
+          logger.error(`Error on fetching reactions for ${r.name}#${number}, e=${e}`);
           if (e.toString().includes('Bad credentials')) {
             // rate limit hit, get new client and retry
             oct = await getOctokitClient(r);
@@ -99,31 +100,15 @@ const task: Task = {
       return result;
     };
 
-    const insertReactions = async (reactions: any[]): Promise<void> => {
-      const clickhouseClient = createClient(config.db.clickhouse);
-      const stream = new Readable({
-        objectMode: true,
-        read: () => { },
-      });
-      for (const r of reactions) stream.push(r);
-      stream.push(null);
-      await clickhouseClient.insert({
-        table: 'gh_events',
-        values: stream,
-        format: 'JSONEachRow',
-      });
-      await clickhouseClient.close();
-    };
-
     const repos = await gettInstalledRepos();
-    console.log(`Got ${repos.length} repos to update.`);
+    logger.info(`Got ${repos.length} repos to update.`);
     for (const r of repos) {
       const issues = await getUpdateIssues(r.id);
       if (issues.length === 0) continue;
       const reactions = await getReactions(r, issues);
       if (reactions.length === 0) continue;
-      console.log(`Goona insert ${reactions.length} reactions for ${r.name}`);
-      await insertReactions(reactions);
+      logger.info(`Goona insert ${reactions.length} reactions for ${r.name}`);
+      await insertRecords(reactions, 'events');
     }
   }
 };

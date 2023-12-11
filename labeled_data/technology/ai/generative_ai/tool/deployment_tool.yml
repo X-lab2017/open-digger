@@ -1,8 +1,15 @@
 name: Artificial Intelligence - tool - deployment tool
 type: Tech-1
 data:
-  github_repo:
-    - 674187265 # repo:AmineDiro/cria
-    - 599547518 # repo:vllm-project/vllm
-    - 634081686 # repo:mlc-ai/mlc-llm
-    - 630249429 # repo:lamini-ai/lamini
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 674187265
+          name: AmineDiro/cria
+        - id: 599547518
+          name: vllm-project/vllm
+        - id: 634081686
+          name: mlc-ai/mlc-llm
+        - id: 630249429
+          name: lamini-ai/lamini

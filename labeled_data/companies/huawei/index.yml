@@ -1,14 +1,44 @@
 name: Huawei
 type: Company
 data:
-  label:
+  labels:
     - service_comb
-  github_org:
-    - 20315766 # org:Huawei
-    - 6876878 # org:huawei-cloudnative
-    - 36578213 # org:huaweicloud
-    - 41812520 # org:kubeedge
-    - 41812465 # org:kubegene
-    - 22132015 # org:LiteOS
-    - 12619994 # org:huawei-noah
-    - 54143604 # org:mindspore-ai
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 20315766
+          name: Huawei
+        - id: 6876878
+          name: huawei-cloudnative
+        - id: 36578213
+          name: huaweicloud
+        - id: 41812520
+          name: kubeedge
+        - id: 41812465
+          name: kubegene
+        - id: 22132015
+          name: LiteOS
+        - id: 12619994
+          name: huawei-noah
+        - id: 54143604
+          name: mindspore-ai
+    - name: Gitee
+      type: Code Hosting
+      orgs:
+        - id: 6486504
+          name: openharmony
+        - id: 5161228
+          name: openeuler
+        - id: 5460189
+          name: src-openeuler
+        - id: 6854763
+          name: mindspore
+        - id: 5549555
+          name: opengauss
+        - id: 6495130
+          name: openharmony-sig
+        - id: 8739348
+          name: HarmonyOS-tpc
+        - id: 5393926
+          name: LiteOS

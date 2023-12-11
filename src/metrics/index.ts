@@ -5,13 +5,11 @@ import {
   chaossChangeRequests, chaossChangeRequestReviews, chaossNewContributors, chaossChangeRequestsDuration, chaossIssueResponseTime, chaossChangeRequestsAcceptanceRatio, chaossIssuesAndChangeRequestActive, chaossActiveDatesAndTimes, chaossChangeRequestResolutionDuration, chaossChangeRequestResponseTime, chaossIssueAge, chaossChangeRequestAge, chaossInactiveContributors,
 } from './chaoss';
 import { repoStars, repoIssueComments, repoParticipants, userEquivalentTimeZone, contributorEmailSuffixes } from './metrics';
-import { getRelatedUsers } from './related_users';
 
 module.exports = {
   // index
   getRepoActivity: getRepoActivity,
   getRepoOpenrank: getRepoOpenrank,
-  getRelatedUsers: getRelatedUsers,
   getUserActivity: getUserActivity,
   getUserOpenrank: getUserOpenrank,
   getAttention: getAttention,

@@ -1,5 +1,9 @@
 name: Segment
 type: Company
 data:
-  github_org:
-    - 819518  # org:segmentio
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 819518
+          name: segmentio

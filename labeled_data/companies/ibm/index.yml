@@ -1,18 +1,32 @@
 name: IBM
 type: Company
 data:
-  github_repo:
-    - 145761123 # repo:Trusted-AI/AIF360
-    - 101408117 # repo:eclipse-openj9/openj9
-    - 52039373 # repo:apache/openwhisk
-    - 66573241 # repo:hyperledger/fabric
-    
-  github_org:
-    - 1459110 # org:IBM
-    - 19577732 # org:IBMa
-    - 17178768 # org:IBM-Blockchain
-    - 5375661 # org:node-red
-    - 13631156 # org:CODAIT
-    - 25179978 # org:carbon-design-system
-    - 30696987 # org:Qiskit
-    - 22173486 # org:loopbackio 
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 145761123
+          name: Trusted-AI/AIF360
+        - id: 101408117
+          name: eclipse-openj9/openj9
+        - id: 52039373
+          name: apache/openwhisk
+        - id: 66573241
+          name: hyperledger/fabric
+      orgs:
+        - id: 1459110
+          name: IBM
+        - id: 19577732
+          name: IBMa
+        - id: 17178768
+          name: IBM-Blockchain
+        - id: 5375661
+          name: node-red
+        - id: 13631156
+          name: CODAIT
+        - id: 25179978
+          name: carbon-design-system
+        - id: 30696987
+          name: Qiskit
+        - id: 22173486
+          name: loopbackio

@@ -1,5 +1,9 @@
 name: SequoiaDB
 type: Company
 data:
-  github_org:
-    - 6195592  # org:SequoiaDB
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 6195592
+          name: SequoiaDB

@@ -1,34 +1,66 @@
 name: Apache Dubbo
 type: Project
 data:
-  github_repo:
-    - 4710920 # repo:apache/dubbo
-    - 117978265 # repo:apache/dubbo-spring-boot-project
-    - 143965255 # repo:apache/dubbo-go
-    - 117054584 # repo:apache/dubbo-admin
-    - 131394823 # repo:apache/dubbo-samples
-    - 23922564 # repo:apache/dubbo-js
-    - 37115105 # repo:apache/dubbo-website
-    - 138989039 # repo:apache/dubbo-php-framework
-    - 187781321 # repo:apache/dubbo-proxy
-    - 234250873 # repo:apache/dubbo-go-pixiu
-    - 33671298 # repo:apache/dubbo-python
-    - 33258826 # repo:apache/dubbo-rpc-jsonrpc
-    - 161442380 # repo:apache/dubbo-go-hessian2
-    - 179025742 # repo:apache/dubbo-getty
-    - 303553011 # repo:apache/dubbo-go-samples
-    - 141266584 # repo:apache/dubbo-kubernetes
-    - 98619283 # repo:apache/dubbo-docs
-    - 263958647 # repo:apache/dubbo-spi-extensions
-    - 142535575 # repo:apache/dubbo-sentinel-support
-    - 153445364 # repo:apache/dubbo-erlang
-    - 206284188 # repo:apache/dubbo-awesome
-    - 133792430 # repo:apache/dubbo-benchmark
-    - 136004585 # repo:apache/dubbo-hessian-lite
-    - 133488175 # repo:apache/dubbo-python2
-    - 135442448 # repo:apache/dubbo-async-processor
-    - 108082114 # repo:apache/dubbo-feature-test
-    - 139091095 # repo:apache/dubbo-logo
-    - 155653858 # repo:apache/dubbo-serialization-gson
-  github_org:
-    - 40481188 # org:dubbogo
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 4710920
+          name: apache/dubbo
+        - id: 117978265
+          name: apache/dubbo-spring-boot-project
+        - id: 143965255
+          name: apache/dubbo-go
+        - id: 117054584
+          name: apache/dubbo-admin
+        - id: 131394823
+          name: apache/dubbo-samples
+        - id: 23922564
+          name: apache/dubbo-js
+        - id: 37115105
+          name: apache/dubbo-website
+        - id: 138989039
+          name: apache/dubbo-php-framework
+        - id: 187781321
+          name: apache/dubbo-proxy
+        - id: 234250873
+          name: apache/dubbo-go-pixiu
+        - id: 33671298
+          name: apache/dubbo-python
+        - id: 33258826
+          name: apache/dubbo-rpc-jsonrpc
+        - id: 161442380
+          name: apache/dubbo-go-hessian2
+        - id: 179025742
+          name: apache/dubbo-getty
+        - id: 303553011
+          name: apache/dubbo-go-samples
+        - id: 141266584
+          name: apache/dubbo-kubernetes
+        - id: 98619283
+          name: apache/dubbo-docs
+        - id: 263958647
+          name: apache/dubbo-spi-extensions
+        - id: 142535575
+          name: apache/dubbo-sentinel-support
+        - id: 153445364
+          name: apache/dubbo-erlang
+        - id: 206284188
+          name: apache/dubbo-awesome
+        - id: 133792430
+          name: apache/dubbo-benchmark
+        - id: 136004585
+          name: apache/dubbo-hessian-lite
+        - id: 133488175
+          name: apache/dubbo-python2
+        - id: 135442448
+          name: apache/dubbo-async-processor
+        - id: 108082114
+          name: apache/dubbo-feature-test
+        - id: 139091095
+          name: apache/dubbo-logo
+        - id: 155653858
+          name: apache/dubbo-serialization-gson
+      orgs:
+        - id: 40481188
+          name: dubbogo

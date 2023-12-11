@@ -1,5 +1,9 @@
 name: AWS CDK
 type: Project
 data:
-  github_repo:
-    - 105808767 # repo:aws/aws-cdk
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 105808767
+          name: aws/aws-cdk

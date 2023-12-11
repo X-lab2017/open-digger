@@ -1,5 +1,9 @@
 name: Guojusoft
 type: Company
 data:
-  github_org:
-    - 86360035 # org:jeecgboot
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 86360035
+          name: jeecgboot

@@ -1,126 +1,111 @@
 import {
-  getGroupArrayInsertAtClauseForClickhouse,
-  getGroupTimeClauseForClickhouse,
-  getGroupIdClauseForClickhouse,
+  getGroupArrayInsertAtClause,
+  getGroupTimeClause,
+  getGroupIdClause,
   getInnerOrderAndLimit,
   getMergedConfig,
   getOutterOrderAndLimit,
-  getRepoWhereClauseForClickhouse,
-  getTimeRangeWhereClauseForClickhouse,
-  getUserWhereClauseForClickhouse,
-  QueryConfig
+  getRepoWhereClause,
+  getTimeRangeWhereClause,
+  getUserWhereClause,
+  QueryConfig,
+  processQueryResult,
+  getTopLevelPlatform,
+  getInnerGroupBy
 } from "./basic";
 import * as clickhouse from '../db/clickhouse';
 
 export const repoStars = async (config: QueryConfig) => {
   config = getMergedConfig(config);
   const whereClauses: string[] = ["type = 'WatchEvent'"];
-  const repoWhereClause = await getRepoWhereClauseForClickhouse(config);
+  const repoWhereClause = await getRepoWhereClause(config);
   if (repoWhereClause) whereClauses.push(repoWhereClause);
-  whereClauses.push(getTimeRangeWhereClauseForClickhouse(config));
+  whereClauses.push(getTimeRangeWhereClause(config));
 
   const sql = `
 SELECT
   id,
+  ${getTopLevelPlatform(config)},
   argMax(name, time) AS name,
-  ${getGroupArrayInsertAtClauseForClickhouse(config, { key: 'count' })}
+  ${getGroupArrayInsertAtClause(config, { key: 'count' })}
 FROM
 (
   SELECT
-    ${getGroupTimeClauseForClickhouse(config)},
-    ${getGroupIdClauseForClickhouse(config)},
+    ${getGroupTimeClause(config)},
+    ${getGroupIdClause(config)},
     COUNT() AS count
-  FROM gh_events
+  FROM events
   WHERE ${whereClauses.join(' AND ')}
-  GROUP BY id, time
+  ${getInnerGroupBy(config)}
   ${getInnerOrderAndLimit(config, 'count')}
 )
-GROUP BY id
+GROUP BY id, platform
 ${getOutterOrderAndLimit(config, 'count')}`;
 
   const result: any = await clickhouse.query(sql);
-  return result.map(row => {
-    const [id, name, count] = row;
-    return {
-      id,
-      name,
-      count,
-    }
-  });
+  return processQueryResult(result, ['count']);
 };
 
 export const repoIssueComments = async (config: QueryConfig) => {
   config = getMergedConfig(config);
   const whereClauses: string[] = ["type = 'IssueCommentEvent' AND action = 'created'"];
-  const repoWhereClause = await getRepoWhereClauseForClickhouse(config);
+  const repoWhereClause = await getRepoWhereClause(config);
   if (repoWhereClause) whereClauses.push(repoWhereClause);
-  whereClauses.push(getTimeRangeWhereClauseForClickhouse(config));
+  whereClauses.push(getTimeRangeWhereClause(config));
 
   const sql = `
 SELECT
   id,
+  ${getTopLevelPlatform(config)},
   argMax(name, time) AS name,
-  ${getGroupArrayInsertAtClauseForClickhouse(config, { key: 'count' })}
+  ${getGroupArrayInsertAtClause(config, { key: 'count' })}
 FROM
 (
   SELECT
-    ${getGroupTimeClauseForClickhouse(config)},
-    ${getGroupIdClauseForClickhouse(config)},
+    ${getGroupTimeClause(config)},
+    ${getGroupIdClause(config)},
     COUNT() AS count
-  FROM gh_events
+  FROM events
   WHERE ${whereClauses.join(' AND ')}
-  GROUP BY id, time
+  ${getInnerGroupBy(config)}
   ${getInnerOrderAndLimit(config, 'count')}
 )
-GROUP BY id
+GROUP BY id, platform
 ${getOutterOrderAndLimit(config, 'count')}`;
 
   const result: any = await clickhouse.query(sql);
-  return result.map(row => {
-    const [id, name, count] = row;
-    return {
-      id,
-      name,
-      count,
-    }
-  });
+  return processQueryResult(result, ['count']);
 };
 
 export const repoParticipants = async (config: QueryConfig) => {
   config = getMergedConfig(config);
   const whereClauses: string[] = ["type IN ('IssuesEvent', 'IssueCommentEvent', 'PullRequestEvent', 'PullRequestReviewCommentEvent')"];
-  const repoWhereClause = await getRepoWhereClauseForClickhouse(config);
+  const repoWhereClause = await getRepoWhereClause(config);
   if (repoWhereClause) whereClauses.push(repoWhereClause);
-  whereClauses.push(getTimeRangeWhereClauseForClickhouse(config));
+  whereClauses.push(getTimeRangeWhereClause(config));
 
   const sql = `
 SELECT
   id,
+  ${getTopLevelPlatform(config)},
   argMax(name, time) AS name,
-  ${getGroupArrayInsertAtClauseForClickhouse(config, { key: 'count' })}
+  ${getGroupArrayInsertAtClause(config, { key: 'count' })}
 FROM
 (
   SELECT
-    ${getGroupTimeClauseForClickhouse(config)},
-    ${getGroupIdClauseForClickhouse(config)},
+    ${getGroupTimeClause(config)},
+    ${getGroupIdClause(config)},
     COUNT(DISTINCT actor_id) AS count
-  FROM gh_events
+  FROM events
   WHERE ${whereClauses.join(' AND ')}
-  GROUP BY id, time
+  ${getInnerGroupBy(config)}
   ${getInnerOrderAndLimit(config, 'count')}
 )
-GROUP BY id
+GROUP BY id, platform
 ${getOutterOrderAndLimit(config, 'count')}`;
 
   const result: any = await clickhouse.query(sql);
-  return result.map(row => {
-    const [id, name, count] = row;
-    return {
-      id,
-      name,
-      count,
-    }
-  });
+  return processQueryResult(result, ['count']);
 };
 
 interface EquivalentTimeZoneOptions {
@@ -131,8 +116,8 @@ interface EquivalentTimeZoneOptions {
 }
 export const userEquivalentTimeZone = async (config: QueryConfig<EquivalentTimeZoneOptions>) => {
   config = getMergedConfig(config);
-  const whereClauses: string[] = [getTimeRangeWhereClauseForClickhouse(config)];
-  const userWhereClause = await getUserWhereClauseForClickhouse(config);
+  const whereClauses: string[] = [getTimeRangeWhereClause(config)];
+  const userWhereClause = await getUserWhereClause(config);
   if (userWhereClause) whereClauses.push(userWhereClause);
   const continousHours = config.options?.continousHours ?? 12;
   const startHour = config.options?.startHour ?? 9;
@@ -148,12 +133,14 @@ export const userEquivalentTimeZone = async (config: QueryConfig<EquivalentTimeZ
   const sql = `
 SELECT
   id,
+  ${getTopLevelPlatform(config)},
   argMax(name, time) AS name,
-  ${getGroupArrayInsertAtClauseForClickhouse(config, { key: 'time_zone', defaultValue: '13', noPrecision: true })}
+  ${getGroupArrayInsertAtClause(config, { key: 'time_zone', defaultValue: '13', noPrecision: true })}
 FROM
 (
   SELECT
     id,
+    platform,
     anyHeavy(name) AS name,
     time,
     groupArrayInsertAt(0, 24)(count, hour) AS arr,
@@ -162,70 +149,57 @@ FROM
   FROM
   (
     SELECT
-      ${getGroupTimeClauseForClickhouse(config)},
-    ${getGroupIdClauseForClickhouse(config, 'user')},
+      ${getGroupTimeClause(config)},
+      ${getGroupIdClause(config, 'user')},
       toHour(created_at) AS hour,
       COUNT() AS count
-    FROM gh_events
+    FROM events
     WHERE ${whereClauses.join(' AND ')}
-    GROUP BY id, time, hour
+    GROUP BY id, platform, time, hour
     ORDER BY hour
   )
-  GROUP BY id, time
+  ${getInnerGroupBy(config)}
 )
-GROUP BY id`;
+GROUP BY id, platform`;
 
   const result: any = await clickhouse.query(sql);
-  return result.map(row => {
-    const [id, name, time_zone] = row;
-    return {
-      id,
-      name,
-      time_zone,
-    }
-  });
+  return processQueryResult(result, ['time_zone']);
 };
 
 export const contributorEmailSuffixes = async (config: QueryConfig) => {
   config = getMergedConfig(config);
   const whereClauses: string[] = ["type='PushEvent'"];
-  const repoWhereClause = await getRepoWhereClauseForClickhouse(config);
+  const repoWhereClause = await getRepoWhereClause(config);
   if (repoWhereClause) whereClauses.push(repoWhereClause);
-  whereClauses.push(getTimeRangeWhereClauseForClickhouse(config));
+  whereClauses.push(getTimeRangeWhereClause(config));
 
   const sql = `
 SELECT
   id,
+  ${getTopLevelPlatform(config)},
   argMax(name, time) AS name,
-  ${getGroupArrayInsertAtClauseForClickhouse(config, { key: 'suffixes', noPrecision: true, defaultValue: '[]' })}
+  ${getGroupArrayInsertAtClause(config, { key: 'suffixes', noPrecision: true, defaultValue: '[]' })}
 FROM
 (
   SELECT
-    time, id, argMax(name, time) AS name,
+    time, id, platform, argMax(name, time) AS name,
     groupArray(DISTINCT suffix) AS distinct_suffixes,
     arraySort(x -> -tupleElement(x, 2), arrayZip(distinct_suffixes, arrayMap(s -> length(arrayFilter(x -> x = s, groupArray(suffix))), distinct_suffixes))) AS suffixes
   FROM
   (
     SELECT
-      ${getGroupTimeClauseForClickhouse(config)},
-      ${getGroupIdClauseForClickhouse(config)},
+      ${getGroupTimeClause(config)},
+      ${getGroupIdClause(config)},
       anyHeavy(arrayJoin(arrayMap(x -> splitByChar('@', x)[2], push_commits.email))) AS suffix,
       arrayJoin(push_commits.name) AS author
-    FROM gh_events
+    FROM events
     WHERE ${whereClauses.join(' AND ')}
-    GROUP BY repo_id, org_id, author, time
+    GROUP BY platform, repo_id, org_id, author, time
   )
-  GROUP BY id, time
+  ${getInnerGroupBy(config)}
 )
-GROUP BY id`;
+GROUP BY id, platform`;
 
   const result: any = await clickhouse.query(sql);
-  return result.map(row => {
-    const [id, name, suffixes] = row;
-    return {
-      id,
-      name,
-      suffixes,
-    }
-  });
+  return processQueryResult(result, ['suffixes']);
 }

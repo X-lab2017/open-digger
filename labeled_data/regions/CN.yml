@@ -1,7 +1,7 @@
 name: China
 type: Region
 data:
-  label:
+  labels:
     - :companies/alibaba
     - :companies/baidu
     - :companies/huawei
@@ -67,196 +67,386 @@ data:
     - :companies/easycorp
     - :companies/espressif
     - :companies/primihub
+    - :companies/greatdb
     - :communities/openmmlab
     - :communities/xlab
     - :communities/mulan
     - :projects/skywalking
-  github_org:
-    - 12165287 # org:ossrs
-    - 36865262 # org:projectacrn
-    - 45012756 # org:occlum
-    - 50487650 # org:cloud-hypervisor
-    - 54415384 # org:baetyl
-    - 25933741 # org:onap
-    - 64113964 # org:XGVela
-    - 64147991 # org:ifeilong
-    - 26734561 # org:openmessaging
-    - 92902569 # org:nextarchfoundation
-    - 56990927 # org:sodafoundation
-    - 42138346 # org:TarsCloud
-  github_repo:
-    - 49876476 # repo:apache/shardingsphere
-    - 180481986 # repo:apache/apisix
-    - 60844036 # repo:shadowsocks/ShadowsocksX-NG
-    - 173335706 # repo:apache/incubator-dolphinscheduler
-    - 40345658 # repo:recharts/recharts
-    - 99919302 # repo:apache/incubator-doris
-    - 129345192 # repo:consenlabs/token-profile
-    - 70746484 # repo:apache/tvm
-    - 131770422 # repo:neoclide/coc.nvim
-    - 7600409 # repo:shadowsocks/shadowsocks-windows
-    - 50613991 # repo:goharbor/harbor
-    - 48833910 # repo:tikv/tikv
-    - 309874357 # repo:dragonflyoss/Dragonfly2
-    - 150713223 # repo:kubeedge/kubeedge
-    - 199763479 # repo:bfenetworks/bfe
-    - 206213815 # repo:chaos-mesh/chaos-mesh
-    - 175192867 # repo:chaosblade-io/chaosblade
-    - 171396748 # repo:chubaofs/chubaofs
-    - 86123872 # repo:cni-genie/CNI-Genie
-    - 278954673 # repo:fluid-cloudnative/fluid
-    - 263214582 # repo:alibaba/inclavare-containers
-    - 311639195 # repo:karmada-io/karmada
-    - 177068961 # repo:kubeovn/kube-ovn
-    - 227010082 # repo:kubedl-io/kubedl
-    - 276822250 # repo:oam-dev/kubevela
-    - 135516270 # repo:k3s-io/k3s
-    - 311269921 # repo:nocalhost/nocalhost
-    - 168629414 # repo:kubesphere/openelb
-    - 189490177 # repo:openkruise/kruise
-    - 265800635 # repo:openyurtio/openyurt
-    - 53085971 # org:Piraeus-Datastore
-    - 322759957 # repo:superedge/superedge
-    - 306631211 # repo:v6d-io/v6d
-    - 175592968 # repo:volcano-sh/volcano
-    - 224908244 # repo:WasmEdge/WasmEdge
-    - 173335706 # repo:Apache/DolphinScheduler
-    - 9185792 # repo:Apache/ECharts
-    - 212382406 # repo:Apache/Ozone
-    - 158975124 # repo:Apache/IoTDB
-    - 180481986 # repo:Apache/APISIX
-    - 4710920 # repo:Apache/Dubbo
-    - 45721011 # repo:Apache/Skywalking
-    - 82035099 # repo:Apache/Griffin
-    - 91674936 # repo:Apache/servicecomb-java-chassis
-    - 41952293 # repo:Apache/HAWQ
-    - 75164823 # repo:Apache/RocketMQ
-    - 62117818 # repo:Apache/CarbonData
-    - 28738447 # repo:Apache/Kylin
-    - 198368711 # repo:Apache/incubator-linkis
-    - 114619105 # repo:Apache/Kyuubi
-    - 140543886 # repo:Apache/ShenYu
-    - 208698479 # repo:Apache/EventMesh
-    - 41712332 # repo:Apache/Pegasus
-    - 231533573 # repo:Apache/incubator-inlong
-    - 195861277 # repo:Apache/incubator-teaclave
-    - 102343794 # repo:Apache/brpc
-  github_user:
-    - 1740859 # user:zhenglaizhang
-    - 3787410 # user:hsluoyz
-    - 449224 # user:tiye
-    - 1006477 # user:felixonmars
-    - 11247099 # user:antfu
-    - 278432 # user:pahud
-    - 1361891 # user:huan
-    - 9021747 # user:peter279k
-    - 8336744 # user:JounQin
-    - 1450685 # user:LinuxSuRen
-    - 29775873 # user:xrkffgg
-    - 8186664 # user:chenshuai2144
-    - 15884415 # user:AlexV525
-    - 10363352 # user:Goooler
-    - 33931153 # user:sy-records
-    - 5441976 # user:wu-sheng
-    - 2246101 # user:ishine
-    - 605277 # user:uranusjr
-    - 507615 # user:afc163
-    - 34888354 # user:mysterywolf
-    - 4161644 # user:spacewander
-    - 9496702 # user:njzjz
-    - 4198311 # user:skyzh
-    - 8684355 # user:johnnychen94
-    - 7237365 # user:chenjiahan
-    - 3746270 # user:linonetwo
-    - 22235437 # user:1715173329
-    - 1556054 # user:messense
-    - 15965696 # user:kezhenxu94
-    - 4178417 # user:andyzhangx
-    - 7856674 # user:hustcc
-    - 2172570 # user:mostcool
-    - 18818196 # user:tisonkun
-    - 2784308 # user:yisibl
-    - 4003950 # user:jiasli
-    - 151335 # user:waruqi
-    - 3974108 # user:seisman
-    - 38283893 # user:SekiBetu
-    - 172584 # user:fisker
-    - 25154432 # user:YunYouJun
-    - 5070345 # user:haizhilin2013
-    - 16648551 # user:limingxinleo
-    - 29879298 # user:hi-rustin
-    - 15976103 # user:yihong0618
-    - 81074 # user:Kenshin
-    - 2987467 # user:cipchk
-    - 15646325 # user:visiky
-    - 2755720 # user:aszx87410
-    - 25523606 # user:yi-Xu-0100
-    - 25057508 # user:ShixiangWang
-    - 841551 # user:pissang
-    - 983723 # user:xiaocang
-    - 14270174 # user:littletomatodonkey
-    - 2106987 # user:juzhiyuan
-    - 22524871 # user:horizonzy
-    - 43091780 # user:utzcoz
-    - 7604295 # user:vinceliuice
-    - 16865714 # user:JohnNiang
-    - 14012511 # user:iChenLei
-    - 439390 # user:geffzhang
-    - 81901872 # user:tingyanshen
-    - 873584 # user:88250
-    - 28616817 # user:getActivity
-    - 26999792 # user:plainheart
-    - 3468483 # user:Brooooooklyn
-    - 15975785 # user:JeremyWuuuuu
-    - 5516298 # user:terrymanu
-    - 8784712 # user:egoist
-    - 5744708 # user:dadiorchen
-    - 3264292 # user:tao12345666333
-    - 10242208 # user:wj-Mcat
-    - 151157 # user:lotem
-    - 20104656 # user:Yurunsoft
-    - 5547703 # user:gdh1995
-    - 24560368 # user:rxliuli
-    - 663583 # user:ffang
-    - 1972649 # user:cuiliang
-    - 359395 # user:justjavac
-    - 3298747 # user:danpovey
-    - 2777660 # user:winlinvip
-    - 6481596 # user:sxzz
-    - 6257240 # user:GiggleLiu
-    - 21301288 # user:ruibaby
-    - 12539730 # user:xiaoheng1
-    - 1371212 # user:ZeyuChen
-    - 7948140 # user:CMingTseng
-    - 18079988 # user:aviraxp
-    - 4902714 # user:chengshiwen
-    - 32357397 # user:Sciroccogti
-    - 48955965 # user:ClayGao
-    - 5835782 # user:ywk253100
-    - 44047106 # user:luhc228
-    - 42690037 # user:LaoshuBaby
-    - 19339784 # user:jiangjiajun
-    - 7036536 # user:embbnux
-    - 20186737 # user:NewByVector
-    - 9303747 # user:CaptainEven
-    - 33482468 # user:qiujiangkun
-    - 615282 # user:sunnylqm
-    - 10770362 # user:CarGuo
-    - 16078332 # user:XuehaiPan
-    - 13861040 # user:QC-L
-    - 55725251 # user:ShiChangkuo
-    - 1269815 # user:oblitum
-    - 1343140 # user:binarywang
-    - 36689704 # user:buuing
-    - 22415594 # user:ruanwenjun
-    - 15010826 # user:will-ww
-    - 8512426 # user:frank-zsy
-    - 56542972 # user:xiaoya-Esther
-    - 93194 # user:zhuangbiaowei
-    - 219644 # user:WillemJiang
-    - 825729 # user:sangshuduo
-    - 11746742 # user: xiaohuoni
-    - 57479557 # user:attlee-wang
-    - 37795442 # user:xgdyp
-    - 39022409 # user:zhicheng-ning
-    - 1736354 # user:Yikun
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 49876476
+          name: apache/shardingsphere
+        - id: 180481986
+          name: apache/apisix
+        - id: 60844036
+          name: shadowsocks/ShadowsocksX-NG
+        - id: 173335706
+          name: apache/incubator-dolphinscheduler
+        - id: 40345658
+          name: recharts/recharts
+        - id: 99919302
+          name: apache/incubator-doris
+        - id: 129345192
+          name: consenlabs/token-profile
+        - id: 70746484
+          name: apache/tvm
+        - id: 131770422
+          name: neoclide/coc.nvim
+        - id: 7600409
+          name: shadowsocks/shadowsocks-windows
+        - id: 50613991
+          name: goharbor/harbor
+        - id: 48833910
+          name: tikv/tikv
+        - id: 309874357
+          name: dragonflyoss/Dragonfly2
+        - id: 150713223
+          name: kubeedge/kubeedge
+        - id: 199763479
+          name: bfenetworks/bfe
+        - id: 206213815
+          name: chaos-mesh/chaos-mesh
+        - id: 175192867
+          name: chaosblade-io/chaosblade
+        - id: 171396748
+          name: chubaofs/chubaofs
+        - id: 86123872
+          name: cni-genie/CNI-Genie
+        - id: 278954673
+          name: fluid-cloudnative/fluid
+        - id: 263214582
+          name: alibaba/inclavare-containers
+        - id: 311639195
+          name: karmada-io/karmada
+        - id: 177068961
+          name: kubeovn/kube-ovn
+        - id: 227010082
+          name: kubedl-io/kubedl
+        - id: 276822250
+          name: oam-dev/kubevela
+        - id: 135516270
+          name: k3s-io/k3s
+        - id: 311269921
+          name: nocalhost/nocalhost
+        - id: 168629414
+          name: kubesphere/openelb
+        - id: 189490177
+          name: openkruise/kruise
+        - id: 265800635
+          name: openyurtio/openyurt
+        - id: 53085971
+          name: Piraeus-Datastore
+        - id: 322759957
+          name: superedge/superedge
+        - id: 306631211
+          name: v6d-io/v6d
+        - id: 175592968
+          name: volcano-sh/volcano
+        - id: 224908244
+          name: WasmEdge/WasmEdge
+        - id: 173335706
+          name: Apache/DolphinScheduler
+        - id: 9185792
+          name: Apache/ECharts
+        - id: 212382406
+          name: Apache/Ozone
+        - id: 158975124
+          name: Apache/IoTDB
+        - id: 180481986
+          name: Apache/APISIX
+        - id: 4710920
+          name: Apache/Dubbo
+        - id: 45721011
+          name: Apache/Skywalking
+        - id: 82035099
+          name: Apache/Griffin
+        - id: 91674936
+          name: Apache/servicecomb-java-chassis
+        - id: 41952293
+          name: Apache/HAWQ
+        - id: 75164823
+          name: Apache/RocketMQ
+        - id: 62117818
+          name: Apache/CarbonData
+        - id: 28738447
+          name: Apache/Kylin
+        - id: 198368711
+          name: Apache/incubator-linkis
+        - id: 114619105
+          name: Apache/Kyuubi
+        - id: 140543886
+          name: Apache/ShenYu
+        - id: 208698479
+          name: Apache/EventMesh
+        - id: 41712332
+          name: Apache/Pegasus
+        - id: 231533573
+          name: Apache/incubator-inlong
+        - id: 195861277
+          name: Apache/incubator-teaclave
+        - id: 102343794
+          name: Apache/brpc
+      orgs:
+        - id: 12165287
+          name: ossrs
+        - id: 36865262
+          name: projectacrn
+        - id: 45012756
+          name: occlum
+        - id: 50487650
+          name: cloud-hypervisor
+        - id: 54415384
+          name: baetyl
+        - id: 25933741
+          name: onap
+        - id: 64113964
+          name: XGVela
+        - id: 64147991
+          name: ifeilong
+        - id: 26734561
+          name: openmessaging
+        - id: 92902569
+          name: nextarchfoundation
+        - id: 56990927
+          name: sodafoundation
+        - id: 42138346
+          name: TarsCloud
+      users:
+        - id: 1740859
+          name: zhenglaizhang
+        - id: 3787410
+          name: hsluoyz
+        - id: 449224
+          name: tiye
+        - id: 1006477
+          name: felixonmars
+        - id: 11247099
+          name: antfu
+        - id: 278432
+          name: pahud
+        - id: 1361891
+          name: huan
+        - id: 9021747
+          name: peter279k
+        - id: 8336744
+          name: JounQin
+        - id: 1450685
+          name: LinuxSuRen
+        - id: 29775873
+          name: xrkffgg
+        - id: 8186664
+          name: chenshuai2144
+        - id: 15884415
+          name: AlexV525
+        - id: 10363352
+          name: Goooler
+        - id: 33931153
+          name: sy-records
+        - id: 5441976
+          name: wu-sheng
+        - id: 2246101
+          name: ishine
+        - id: 605277
+          name: uranusjr
+        - id: 507615
+          name: afc163
+        - id: 34888354
+          name: mysterywolf
+        - id: 4161644
+          name: spacewander
+        - id: 9496702
+          name: njzjz
+        - id: 4198311
+          name: skyzh
+        - id: 8684355
+          name: johnnychen94
+        - id: 7237365
+          name: chenjiahan
+        - id: 3746270
+          name: linonetwo
+        - id: 22235437
+          name: "1715173329"
+        - id: 1556054
+          name: messense
+        - id: 15965696
+          name: kezhenxu94
+        - id: 4178417
+          name: andyzhangx
+        - id: 7856674
+          name: hustcc
+        - id: 2172570
+          name: mostcool
+        - id: 18818196
+          name: tisonkun
+        - id: 2784308
+          name: yisibl
+        - id: 4003950
+          name: jiasli
+        - id: 151335
+          name: waruqi
+        - id: 3974108
+          name: seisman
+        - id: 38283893
+          name: SekiBetu
+        - id: 172584
+          name: fisker
+        - id: 25154432
+          name: YunYouJun
+        - id: 5070345
+          name: haizhilin2013
+        - id: 16648551
+          name: limingxinleo
+        - id: 29879298
+          name: hi-rustin
+        - id: 15976103
+          name: yihong0618
+        - id: 81074
+          name: Kenshin
+        - id: 2987467
+          name: cipchk
+        - id: 15646325
+          name: visiky
+        - id: 2755720
+          name: aszx87410
+        - id: 25523606
+          name: yi-Xu-0100
+        - id: 25057508
+          name: ShixiangWang
+        - id: 841551
+          name: pissang
+        - id: 983723
+          name: xiaocang
+        - id: 14270174
+          name: littletomatodonkey
+        - id: 2106987
+          name: juzhiyuan
+        - id: 22524871
+          name: horizonzy
+        - id: 43091780
+          name: utzcoz
+        - id: 7604295
+          name: vinceliuice
+        - id: 16865714
+          name: JohnNiang
+        - id: 14012511
+          name: iChenLei
+        - id: 439390
+          name: geffzhang
+        - id: 81901872
+          name: tingyanshen
+        - id: 873584
+          name: "88250"
+        - id: 28616817
+          name: getActivity
+        - id: 26999792
+          name: plainheart
+        - id: 3468483
+          name: Brooooooklyn
+        - id: 15975785
+          name: JeremyWuuuuu
+        - id: 5516298
+          name: terrymanu
+        - id: 8784712
+          name: egoist
+        - id: 5744708
+          name: dadiorchen
+        - id: 3264292
+          name: tao12345666333
+        - id: 10242208
+          name: wj-Mcat
+        - id: 151157
+          name: lotem
+        - id: 20104656
+          name: Yurunsoft
+        - id: 5547703
+          name: gdh1995
+        - id: 24560368
+          name: rxliuli
+        - id: 663583
+          name: ffang
+        - id: 1972649
+          name: cuiliang
+        - id: 359395
+          name: justjavac
+        - id: 3298747
+          name: danpovey
+        - id: 2777660
+          name: winlinvip
+        - id: 6481596
+          name: sxzz
+        - id: 6257240
+          name: GiggleLiu
+        - id: 21301288
+          name: ruibaby
+        - id: 12539730
+          name: xiaoheng1
+        - id: 1371212
+          name: ZeyuChen
+        - id: 7948140
+          name: CMingTseng
+        - id: 18079988
+          name: aviraxp
+        - id: 4902714
+          name: chengshiwen
+        - id: 32357397
+          name: Sciroccogti
+        - id: 48955965
+          name: ClayGao
+        - id: 5835782
+          name: ywk253100
+        - id: 44047106
+          name: luhc228
+        - id: 42690037
+          name: LaoshuBaby
+        - id: 19339784
+          name: jiangjiajun
+        - id: 7036536
+          name: embbnux
+        - id: 20186737
+          name: NewByVector
+        - id: 9303747
+          name: CaptainEven
+        - id: 33482468
+          name: qiujiangkun
+        - id: 615282
+          name: sunnylqm
+        - id: 10770362
+          name: CarGuo
+        - id: 16078332
+          name: XuehaiPan
+        - id: 13861040
+          name: QC-L
+        - id: 55725251
+          name: ShiChangkuo
+        - id: 1269815
+          name: oblitum
+        - id: 1343140
+          name: binarywang
+        - id: 36689704
+          name: buuing
+        - id: 22415594
+          name: ruanwenjun
+        - id: 15010826
+          name: will-ww
+        - id: 8512426
+          name: frank-zsy
+        - id: 56542972
+          name: xiaoya-Esther
+        - id: 93194
+          name: zhuangbiaowei
+        - id: 219644
+          name: WillemJiang
+        - id: 825729
+          name: sangshuduo
+        - id: 11746742
+          name: " xiaohuoni"
+        - id: 57479557
+          name: attlee-wang
+        - id: 37795442
+          name: xgdyp
+        - id: 39022409
+          name: zhicheng-ning
+        - id: 1736354
+          name: Yikun

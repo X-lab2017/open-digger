@@ -1,34 +1,67 @@
 name: Cloud Native - Platform - Certified Kubernetes - Distribution
 type: Tech-2
 data:
-  github_repo:
-    - 203163249 # repo:ilkilab/agorakube
-    - 85678822 # repo:alvistack/ansible-collection-kubernetes
-    - 313741735 # repo:aws/eks-distro
-    - 155447233 # repo:Azure/aks-engine
-    - 54725435 # repo:charmed-kubernetes/bundle
-    - 330533312 # repo:aceeric/desktop-kubernetes
-    - 296643893 # repo:elastisys/ck8s-cluster
-    - 215783734 # repo:deckhouse/deckhouse
-    - 220698719 # repo:flexkube/libflexkube
-    - 235835211 # repo:sighupio/fury-distribution
-    - 411029320 # repo:smart-edge-open/open-developer-experience-kits
-    - 271250363 # repo:k0sproject/k0s
-    - 135516270 # repo:k3s-io/k3s
-    - 439021003 # repo:clastix/kamaji
-    - 385158917 # repo:kubecube-io/KubeCube
-    - 50734768 # repo:kubermatic/kubermatic
-    - 130430977 # repo:kubesphere/kubesphere
-    - 120284730 # repo:kubic-project/container-images
-    - 198898598 # repo:replicatedhq/kurl
-    - 124905930 # repo:scality/metalk8s
-    - 132732601 # repo:canonical/microk8s
-    - 295900097 # repo:PaaS-TA/paas-ta-container-platform
-    - 541402612 # repo:alexeadem/qbo-home
-    - 26337322 # repo:rancher/rancher
-    - 49904068 # repo:openshift/kubernetes
-    - 253887459 # repo:rancher/rke2
-    - 99544448 # repo:poseidon/typhoon
-    - 355946670 # repo:loft-sh/vcluster
-    - 303802332 # repo:vmware-tanzu/community-edition
-    - 239576223 # repo:wind-river/starlingx-config
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 203163249
+          name: ilkilab/agorakube
+        - id: 85678822
+          name: alvistack/ansible-collection-kubernetes
+        - id: 313741735
+          name: aws/eks-distro
+        - id: 155447233
+          name: Azure/aks-engine
+        - id: 54725435
+          name: charmed-kubernetes/bundle
+        - id: 330533312
+          name: aceeric/desktop-kubernetes
+        - id: 296643893
+          name: elastisys/ck8s-cluster
+        - id: 215783734
+          name: deckhouse/deckhouse
+        - id: 220698719
+          name: flexkube/libflexkube
+        - id: 235835211
+          name: sighupio/fury-distribution
+        - id: 411029320
+          name: smart-edge-open/open-developer-experience-kits
+        - id: 271250363
+          name: k0sproject/k0s
+        - id: 135516270
+          name: k3s-io/k3s
+        - id: 439021003
+          name: clastix/kamaji
+        - id: 385158917
+          name: kubecube-io/KubeCube
+        - id: 50734768
+          name: kubermatic/kubermatic
+        - id: 130430977
+          name: kubesphere/kubesphere
+        - id: 120284730
+          name: kubic-project/container-images
+        - id: 198898598
+          name: replicatedhq/kurl
+        - id: 124905930
+          name: scality/metalk8s
+        - id: 132732601
+          name: canonical/microk8s
+        - id: 295900097
+          name: PaaS-TA/paas-ta-container-platform
+        - id: 541402612
+          name: alexeadem/qbo-home
+        - id: 26337322
+          name: rancher/rancher
+        - id: 49904068
+          name: openshift/kubernetes
+        - id: 253887459
+          name: rancher/rke2
+        - id: 99544448
+          name: poseidon/typhoon
+        - id: 355946670
+          name: loft-sh/vcluster
+        - id: 303802332
+          name: vmware-tanzu/community-edition
+        - id: 239576223
+          name: wind-river/starlingx-config

@@ -1,5 +1,9 @@
 name: Odoo
 type: Company
 data:
-  github_org:
-    - 6368483  # org:odoo
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 6368483
+          name: odoo

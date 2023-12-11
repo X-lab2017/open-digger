@@ -1,10 +1,19 @@
 name: 360
 type: Company
 data:
-  github_org:
-    - 4082929 # Qihoo360
-    - 29911379 # spritejs
-    - 15226349 # thinkjs
-    - 29886630 # Chimeejs
-    - 5575368 # 75team
-    - 54881990 # 0Kee-Team
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 4082929
+          name: Qihoo360
+        - id: 29911379
+          name: spritejs
+        - id: 15226349
+          name: thinkjs
+        - id: 29886630
+          name: Chimeejs
+        - id: 5575368
+          name: 75team
+        - id: 54881990
+          name: 0Kee-Team

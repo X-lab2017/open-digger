@@ -1,14 +1,27 @@
 name: Cloud Native - Orchestration & Management - Remote Procedure Call
 type: Tech-2
 data:
-  github_repo:
-    - 310611 # repo:apache/thrift
-    - 206459 # repo:apache/avro
-    - 384451028 # repo:cloudwego/kitex
-    - 4710920 # repo:apache/dubbo
-    - 285864199 # repo:zeromicro/go-zero
-    - 27729880 # repo:grpc/grpc
-    - 165041732 # repo:go-kratos/kratos
-    - 128709824 # repo:sofastack/sofa-rpc
-    - 295369297 # repo:sogou/srpc
-    - 79316451 # repo:tarsCloud/tars
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 310611
+          name: apache/thrift
+        - id: 206459
+          name: apache/avro
+        - id: 384451028
+          name: cloudwego/kitex
+        - id: 4710920
+          name: apache/dubbo
+        - id: 285864199
+          name: zeromicro/go-zero
+        - id: 27729880
+          name: grpc/grpc
+        - id: 165041732
+          name: go-kratos/kratos
+        - id: 128709824
+          name: sofastack/sofa-rpc
+        - id: 295369297
+          name: sogou/srpc
+        - id: 79316451
+          name: tarsCloud/tars

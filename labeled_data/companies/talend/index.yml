@@ -1,5 +1,9 @@
 name: Talend
 type: Company
 data:
-  github_org:
-    - 459687  # org:Talend
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 459687
+          name: Talend

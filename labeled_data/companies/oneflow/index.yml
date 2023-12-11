@@ -1,5 +1,9 @@
 name: Oneflow
 type: Company
 data:
-  github_org:
-    - 24632470 # org:Oneflow-Inc
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 24632470
+          name: Oneflow-Inc

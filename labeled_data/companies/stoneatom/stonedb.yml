@@ -1,5 +1,9 @@
 name: StoneDB
 type: Project
 data:
-  github_org:
-    - 105431101 # org:stoneatom
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 105431101
+          name: stoneatom

@@ -1,5 +1,9 @@
 name: Puppet Labs
 type: Company
 data:
-  github_org:
-    - 234268  # org:puppetlabs
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 234268
+          name: puppetlabs

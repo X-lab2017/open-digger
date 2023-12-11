@@ -1,5 +1,9 @@
 name: CloudWeGo
 type: Project
 data:
-  github_org:
-    - 79236453 # CloudWeGo
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 79236453
+          name: CloudWeGo

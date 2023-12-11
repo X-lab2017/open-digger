@@ -1,47 +1,93 @@
 name: Cloud Native - App Definition and Development - Database
 type: Tech-2
 data:
-  github_repo:
-    - 62117818 # repo:apache/carbondata
-    - 23418517 # repo:apache/hadoop
-    - 31006158 # repo:apache/ignite
-    - 2649214 # repo:arangodb/arangodb
-    - 51290852 # repo:bigchaindb/bigchaindb
-    - 206424 # repo:apache/cassandra
-    - 60246359 # repo:ClickHouse/ClickHouse
-    - 3180703 # repo:couchbase/manifest
-    - 9342529 # repo:crate/crate
-    - 83363132 # repo:CrunchyData/postgres-operator
-    - 125824259 # repo:xtdb/xtdb
-    - 302827809 # repo:datafuselabs/databend
-    - 6358188 # repo:apache/druid
-    - 114187903 # repo:apple/foundationdb
-    - 307894865 # repo:alibaba/graphscope
-    - 1050944 # repo:infinispan/infinispan
-    - 19816070 # repo:MariaDB/server
-    - 24494032 # repo:mysql/mysql-server
-    - 146459443 # repo:vesoft-inc/nebula
-    - 6650539 # repo:neo4j/neo4j
-    - 36778364 # repo:attic-labs/noms
-    - 7083240 # repo:orientechnologies/orientdb
-    - 30753733 # repo:percona/percona-server
-    - 40127179 # repo:pilosa/pilosa
-    - 927442 # repo:postgres/postgres
-    - 166515022 # repo:trinodb/trino
-    - 156018 # repo:redis/redis
-    - 6452529 # repo:rethinkdb/rethinkdb
-    - 151700458 # repo:scalar-labs/scalardb
-    - 183834521 # repo:schemahero/schemahero
-    - 28449431 # repo:scylladb/scylla
-    - 163387337 # repo:seata/seata
-    - 49876476 # repo:apache/shardingsphere
-    - 396856161 # repo:authzed/spicedb
-    - 43884372 # repo:sorintlab/stolon
-    - 911980 # repo:tarantool/tarantool
-    - 196353673 # repo:taosdata/TDengine
-    - 41986369 # repo:pingcap/tidb
-    - 48833910 # repo:tikv/tikv
-    - 11008207 # repo:vitessio/vitess
-    - 2445970 # repo:voltdb/voltdb
-    - 55072677 # repo:semi-technologies/weaviate
-    - 105944401 # repo:YugaByte/yugabyte-db
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 62117818
+          name: apache/carbondata
+        - id: 23418517
+          name: apache/hadoop
+        - id: 31006158
+          name: apache/ignite
+        - id: 2649214
+          name: arangodb/arangodb
+        - id: 51290852
+          name: bigchaindb/bigchaindb
+        - id: 206424
+          name: apache/cassandra
+        - id: 60246359
+          name: ClickHouse/ClickHouse
+        - id: 3180703
+          name: couchbase/manifest
+        - id: 9342529
+          name: crate/crate
+        - id: 83363132
+          name: CrunchyData/postgres-operator
+        - id: 125824259
+          name: xtdb/xtdb
+        - id: 302827809
+          name: datafuselabs/databend
+        - id: 6358188
+          name: apache/druid
+        - id: 114187903
+          name: apple/foundationdb
+        - id: 307894865
+          name: alibaba/graphscope
+        - id: 1050944
+          name: infinispan/infinispan
+        - id: 19816070
+          name: MariaDB/server
+        - id: 24494032
+          name: mysql/mysql-server
+        - id: 146459443
+          name: vesoft-inc/nebula
+        - id: 6650539
+          name: neo4j/neo4j
+        - id: 36778364
+          name: attic-labs/noms
+        - id: 7083240
+          name: orientechnologies/orientdb
+        - id: 30753733
+          name: percona/percona-server
+        - id: 40127179
+          name: pilosa/pilosa
+        - id: 927442
+          name: postgres/postgres
+        - id: 166515022
+          name: trinodb/trino
+        - id: 156018
+          name: redis/redis
+        - id: 6452529
+          name: rethinkdb/rethinkdb
+        - id: 151700458
+          name: scalar-labs/scalardb
+        - id: 183834521
+          name: schemahero/schemahero
+        - id: 28449431
+          name: scylladb/scylla
+        - id: 163387337
+          name: seata/seata
+        - id: 49876476
+          name: apache/shardingsphere
+        - id: 396856161
+          name: authzed/spicedb
+        - id: 43884372
+          name: sorintlab/stolon
+        - id: 911980
+          name: tarantool/tarantool
+        - id: 196353673
+          name: taosdata/TDengine
+        - id: 41986369
+          name: pingcap/tidb
+        - id: 48833910
+          name: tikv/tikv
+        - id: 11008207
+          name: vitessio/vitess
+        - id: 2445970
+          name: voltdb/voltdb
+        - id: 55072677
+          name: semi-technologies/weaviate
+        - id: 105944401
+          name: YugaByte/yugabyte-db

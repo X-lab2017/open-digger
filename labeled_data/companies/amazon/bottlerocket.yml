@@ -1,5 +1,9 @@
 name: Bottlerocket
 type: Project
 data:
-  github_org:
-    - 61023959 # org:bottlerocket-os
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 61023959
+          name: bottlerocket-os

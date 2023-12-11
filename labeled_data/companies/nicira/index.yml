@@ -1,5 +1,9 @@
 name: Nicira
 type: Company
 data:
-  github_org:
-    - 7143863  # org:openvswitch
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 7143863
+          name: openvswitch

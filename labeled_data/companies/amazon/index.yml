@@ -1,7 +1,7 @@
 name: Amazon
 type: Company
 data:
-  label:
+  labels:
     - aws_amplify
     - aws_cdk
     - aws_distro_for_opentelemetry
@@ -11,28 +11,55 @@ data:
     - freertos
     - opensearch
     - bottlerocket
-  github_org:
-    - 2232217 # org:aws
-    - 8931462 # org:aws-samples
-    - 3299148 # org:awslabs
-    - 8661631 # org:awsdocs
-    - 17076214 # org:aws-quickstart
-    - 84986730 # org:aws-ia
-    - 49037648 # org:aws-solutions
-    - 57468012 # org:aws-actions
-    - 29926826 # org:amazon-archives
-    - 70298811 # org:amazon-research
-    - 73786311 # org:projen
-    - 44104058 # org:corretto
-    - 168515 # org:ajaxorg
-    - 32580227 # org:gluon-api
-    - 327752 # org:boto
-    - 45669720 # org:neo-ai
-    - 45947357 # org:amazonlinux
-    - 54455934 # org:amazon-connect
-    - 19900777 # org:aws-cloudformation
-    - 75227353 # org:cdklabs
-    - 45240205 # org:aws-robotics
-    - 79480778 # org:aws-deepracer
-    - 92389699 # org:autogluon
-    - 45669720 # org:neo-ai
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 2232217
+          name: aws
+        - id: 8931462
+          name: aws-samples
+        - id: 3299148
+          name: awslabs
+        - id: 8661631
+          name: awsdocs
+        - id: 17076214
+          name: aws-quickstart
+        - id: 84986730
+          name: aws-ia
+        - id: 49037648
+          name: aws-solutions
+        - id: 57468012
+          name: aws-actions
+        - id: 29926826
+          name: amazon-archives
+        - id: 70298811
+          name: amazon-research
+        - id: 73786311
+          name: projen
+        - id: 44104058
+          name: corretto
+        - id: 168515
+          name: ajaxorg
+        - id: 32580227
+          name: gluon-api
+        - id: 327752
+          name: boto
+        - id: 45669720
+          name: neo-ai
+        - id: 45947357
+          name: amazonlinux
+        - id: 54455934
+          name: amazon-connect
+        - id: 19900777
+          name: aws-cloudformation
+        - id: 75227353
+          name: cdklabs
+        - id: 45240205
+          name: aws-robotics
+        - id: 79480778
+          name: aws-deepracer
+        - id: 92389699
+          name: autogluon
+        - id: 45669720
+          name: neo-ai

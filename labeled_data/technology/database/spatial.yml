@@ -1,8 +1,15 @@
 name: Database - Spatial
 type: Tech-1
 data:
-  github_repo:
-    - 93667206 # repo:geomesa/geomesa-geoserver
-    - 7171304 # repo:illarionov/SpatiaLite
-    - 9074548 # repo:orbisgis/h2gis
-    - 4407129 # repo:postgis/postgis
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 93667206
+          name: geomesa/geomesa-geoserver
+        - id: 7171304
+          name: illarionov/SpatiaLite
+        - id: 9074548
+          name: orbisgis/h2gis
+        - id: 4407129
+          name: postgis/postgis

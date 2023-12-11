@@ -1,5 +1,5 @@
 name: StoneAtom
 type: Company
 data:
-  label:
+  labels:
     - stonedb

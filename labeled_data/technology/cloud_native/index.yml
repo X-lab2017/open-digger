@@ -1,7 +1,7 @@
 name: Cloud Native
 type: Tech-0
 data:
-  label:
+  labels:
     - app_definition_and_development
     - observability_and_analysis
     - orchestration_and_management

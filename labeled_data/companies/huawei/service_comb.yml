@@ -1,7 +1,13 @@
 name: Apache ServiceComb
 type: Project
 data:
-  github_repo:
-    - 97573661 # apache/servicecomb-pack
-    - 91674936 # apache/servicecomb-java-chassis
-    - 91677514 # apache/servicecomb-service-center
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 97573661
+          name: apache/servicecomb-pack
+        - id: 91674936
+          name: apache/servicecomb-java-chassis
+        - id: 91677514
+          name: apache/servicecomb-service-center

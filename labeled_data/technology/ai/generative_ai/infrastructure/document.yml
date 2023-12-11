@@ -1,26 +1,51 @@
 name: Artificial Intelligence - infrastructure - document
 type: Tech-1
 data:
-  github_repo:
-    - 12104024 # datasciencemasters/go
-    - 99805855 # Kulbear/deep-learning-coursera
-    - 283004179 # fastai/fastai-docs
-    - 99190133 # susanli2016/NLP-with-Python
-    - 132798273 # GoogleCloudPlatform/tensorflow-without-a-phd
-    - 612015006 # GanymedeNil/document.ai
-    - 657179506 # phodal/aigc
-    - 603593003 # phodal/understand-prompt
-    - 604651852 # phodal/prompt-patterns
-    - 622091971 # unit-mesh/unit-minions
-    - 681516317 # repo:luban-agi/Awesome-AIGC-Tutorials
-    - 550752161 # repo:huggingface/diffusion-models-class
-    - 645830530 # repo:cystanford/aigc_LLM_engineering
-    - 624214839 # repo:liucongg/ChatGLM-Finetuning
-    - 601903423 # repo:wshzd/Awesome-AIGC
-    - 625084397 # repo:agiresearch/OpenAGI
-    - 574835594 # repo:cedrickchee/chatgpt-universe
-    - 621226745 # repo:shm007g/LLaMA-Cult-and-More
-    - 645830530 # repo:cystanford/aigc_LLM_engineering
-    - 634709298 # repo:km1994/LLMsNineStoryDemonTower
-    - 667480296 # repo:DjangoPeng/openai-quickstart
-    - 672337648 # repo:RahulSChand/llama2.c-for-dummies
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 12104024
+          name: datasciencemasters/go
+        - id: 99805855
+          name: Kulbear/deep-learning-coursera
+        - id: 283004179
+          name: fastai/fastai-docs
+        - id: 99190133
+          name: susanli2016/NLP-with-Python
+        - id: 132798273
+          name: GoogleCloudPlatform/tensorflow-without-a-phd
+        - id: 612015006
+          name: GanymedeNil/document.ai
+        - id: 657179506
+          name: phodal/aigc
+        - id: 603593003
+          name: phodal/understand-prompt
+        - id: 604651852
+          name: phodal/prompt-patterns
+        - id: 622091971
+          name: unit-mesh/unit-minions
+        - id: 681516317
+          name: luban-agi/Awesome-AIGC-Tutorials
+        - id: 550752161
+          name: huggingface/diffusion-models-class
+        - id: 645830530
+          name: cystanford/aigc_LLM_engineering
+        - id: 624214839
+          name: liucongg/ChatGLM-Finetuning
+        - id: 601903423
+          name: wshzd/Awesome-AIGC
+        - id: 625084397
+          name: agiresearch/OpenAGI
+        - id: 574835594
+          name: cedrickchee/chatgpt-universe
+        - id: 621226745
+          name: shm007g/LLaMA-Cult-and-More
+        - id: 645830530
+          name: cystanford/aigc_LLM_engineering
+        - id: 634709298
+          name: km1994/LLMsNineStoryDemonTower
+        - id: 667480296
+          name: DjangoPeng/openai-quickstart
+        - id: 672337648
+          name: RahulSChand/llama2.c-for-dummies

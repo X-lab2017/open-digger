@@ -1,5 +1,9 @@
 name: bRPC
 type: Project
 data:
-  github_repo:
-    - 102343794 # apache/incubator-brpc
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 102343794
+          name: apache/incubator-brpc

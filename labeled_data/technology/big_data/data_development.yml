@@ -1,8 +1,15 @@
 name: Big Data - Data Development
 type: Tech-1
 data:
-  github_repo:
-    - 33653601 # repo:jupyter/notebook
-    - 32848140 # repo:apache/zeppelin
-    - 23653453 # repo:pachyderm/pachyderm
-    - 384111310 # repo:apache/incubator-devlake
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 33653601
+          name: jupyter/notebook
+        - id: 32848140
+          name: apache/zeppelin
+        - id: 23653453
+          name: pachyderm/pachyderm
+        - id: 384111310
+          name: apache/incubator-devlake

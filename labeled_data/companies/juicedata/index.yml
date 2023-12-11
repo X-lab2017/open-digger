@@ -1,5 +1,9 @@
 name: JuiceData
 type: Company
 data:
-  github_org:
-    - 27241737  # org:juicedata
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 27241737
+          name: juicedata

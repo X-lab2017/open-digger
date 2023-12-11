@@ -1,10 +1,19 @@
 name: Microsoft
 type: Company
 data:
-  github_org:
-    - 6154722 # org:microsoft
-    - 9141961 # org:dotnet
-    - 27453006 # org:dotnet-architecture
-    - 11524380 # org:PowerShell
-    - 27173223 # org:interpretml
-    - 6844498 # org:Azure
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 6154722
+          name: microsoft
+        - id: 9141961
+          name: dotnet
+        - id: 27453006
+          name: dotnet-architecture
+        - id: 11524380
+          name: PowerShell
+        - id: 27173223
+          name: interpretml
+        - id: 6844498
+          name: Azure

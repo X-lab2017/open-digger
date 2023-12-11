@@ -1,7 +1,13 @@
 name: Database - Native XML
 type: Tech-1
 data:
-  github_repo:
-    - 1374129 # repo:BaseXdb/basex
-    - 11695619 # repo:eXist-db/exist
-    - 5841618 # repo:sedna/sedna
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 1374129
+          name: BaseXdb/basex
+        - id: 11695619
+          name: eXist-db/exist
+        - id: 5841618
+          name: sedna/sedna

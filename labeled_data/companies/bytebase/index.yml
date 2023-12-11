@@ -1,5 +1,9 @@
 name: Bytebase
 type: Company
 data:
-  github_org:
-    - 74386897 # org:bytebase
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 74386897
+          name: bytebase

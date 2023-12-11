@@ -1,16 +1,31 @@
 name: Big Data - Scheduler
 type: Tech-1
 data:
-  github_repo:
-    - 33884891 # repo:apache/airflow
-    - 160999 # repo:apache/zookeeper
-    - 51905353 # repo:apache/arrow
-    - 139199684 # repo:PrefectHQ/prefect
-    - 173335706 # repo:apache/dolphinscheduler
-    - 131619646 # repo:dagster-io/dagster
-    - 27911088 # repo:apache/nifi
-    - 204164353 # repo:kestra-io/kestra
-    - 2442457 # repo:apache/ambari
-    - 98013453 # repo:apache/atlas
-    - 2383782 # repo:apache/oozie
-    - 22305416 # repo:apache/ranger
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 33884891
+          name: apache/airflow
+        - id: 160999
+          name: apache/zookeeper
+        - id: 51905353
+          name: apache/arrow
+        - id: 139199684
+          name: PrefectHQ/prefect
+        - id: 173335706
+          name: apache/dolphinscheduler
+        - id: 131619646
+          name: dagster-io/dagster
+        - id: 27911088
+          name: apache/nifi
+        - id: 204164353
+          name: kestra-io/kestra
+        - id: 2442457
+          name: apache/ambari
+        - id: 98013453
+          name: apache/atlas
+        - id: 2383782
+          name: apache/oozie
+        - id: 22305416
+          name: apache/ranger

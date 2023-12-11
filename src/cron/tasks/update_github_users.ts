@@ -4,6 +4,7 @@ import { query } from '../../db/clickhouse';
 import { Readable } from 'stream';
 import { createClient } from '@clickhouse/client';
 import { GitHubClient } from 'github-graphql-v4-client';
+import { getLogger } from '../../utils';
 
 /**
  * This task is used to update github users basic info
@@ -13,12 +14,15 @@ const task: Task = {
   enable: false,
   immediate: false,
   callback: async () => {
-    const updateBatchSize = 2000;
+
+    const logger = getLogger('UpdateGitHubUserTask');
+
+    const updateBatchSize = 1500;
     const config = await getConfig();
     const tokens = config.github.tokens;
     const graphqlClient = new GitHubClient({
       tokens,
-      maxConcurrentReqNumber: 30,
+      maxConcurrentReqNumber: 40,
       logger: {
         info: () => { },
         error: () => { },
@@ -78,23 +82,23 @@ const task: Task = {
     const date = `${now.getFullYear()}-${(now.getMonth() + 1).toString().padStart(2, '0')}-01 00:00:00`;
     const getUsersList = async (totalCount: number): Promise<any[]> => {
       // try to get export user first, export users need to be updated every month
-      let q = `SELECT id, actor_login FROM gh_export_user
-    WHERE id NOT IN (
+      let q = `SELECT id, actor_login FROM export_user
+    WHERE type='User' AND platform='GitHub' id NOT IN (
       SELECT id FROM gh_user_info
       WHERE toYYYYMM(updated_at) = ${now.getFullYear()}${(now.getMonth() + 1).toString().padStart(2, '0')})
       LIMIT ${totalCount}`;
       let usersList = await query(q);
       if (usersList.length > 0) return usersList;
       // then try to get users who has events, every user should be updated at least once a year
-      q = `SELECT actor_id, argMax(actor_login, created_at) FROM gh_user_openrank
-      WHERE actor_id NOT IN (SELECT id FROM gh_user_info WHERE toYear(updated_at) = ${now.getFullYear()})
+      q = `SELECT actor_id, argMax(actor_login, created_at) FROM global_openrank
+      WHERE platform='GitHub' actor_id NOT IN (SELECT id FROM gh_user_info WHERE toYear(updated_at) = ${now.getFullYear()})
       GROUP BY actor_id
       LIMIT ${totalCount}`;
       usersList = await query(q);
       if (usersList.length > 0) return usersList;
       // then try to get any user in the log, every user should be updated at least once
-      q = `SELECT actor_id, argMax(actor_login, created_at) FROM gh_events
-      WHERE actor_id NOT IN (SELECT id FROM gh_user_info)
+      q = `SELECT actor_id, argMax(actor_login, created_at) FROM events
+      WHERE platform='GitHub' actor_id NOT IN (SELECT id FROM gh_user_info)
       GROUP BY actor_id
       LIMIT ${totalCount}`;
       usersList = await query(q);
@@ -103,7 +107,7 @@ const task: Task = {
 
     const usersList = await getUsersList(updateBatchSize);
     if (usersList.length === 0) return;
-    console.log(`Get ${usersList.length} users to update`);
+    logger.info(`Get ${usersList.length} users to update`);
 
     let processedCount = 0;
     const stream = new Readable({
@@ -132,7 +136,7 @@ const task: Task = {
       stream.push(item);
       processedCount++;
       if (processedCount % 100 === 0) {
-        console.log(`${processedCount} accounts has been processed.`);
+        logger.info(`${processedCount} accounts has been processed.`);
       }
     }
     stream.push(null);

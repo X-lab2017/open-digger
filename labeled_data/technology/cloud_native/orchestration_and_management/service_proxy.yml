@@ -1,21 +1,41 @@
 name: Cloud Native - Orchestration & Management - Service Proxy
 type: Tech-2
 data:
-  github_repo:
-    - 199763479 # repo:bfenetworks/bfe
-    - 29207621 # repo:caddyserver/caddy
-    - 108462822 # repo:projectcontour/contour
-    - 65214191 # repo:envoyproxy/envoy
-    - 126499529 # repo:projectcontour/gimbal
-    - 128791889 # repo:haproxy/haproxy
-    - 214656224 # repo:inlets/inlets-pro
-    - 110027931 # repo:metallb/metallb
-    - 140654872 # repo:mosn/mosn
-    - 8759133 # repo:Netflix/zuul
-    - 37912398 # repo:nginx/nginx
-    - 168629414 # repo:openelb/openelb
-    - 480080 # repo:openresty/openresty
-    - 38812664 # repo:zalando/skipper
-    - 457021614 # repo:l7mp/stunner
-    - 3784017 # repo:alibaba/tengine
-    - 42408804 # repo:traefik/traefik
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 199763479
+          name: bfenetworks/bfe
+        - id: 29207621
+          name: caddyserver/caddy
+        - id: 108462822
+          name: projectcontour/contour
+        - id: 65214191
+          name: envoyproxy/envoy
+        - id: 126499529
+          name: projectcontour/gimbal
+        - id: 128791889
+          name: haproxy/haproxy
+        - id: 214656224
+          name: inlets/inlets-pro
+        - id: 110027931
+          name: metallb/metallb
+        - id: 140654872
+          name: mosn/mosn
+        - id: 8759133
+          name: Netflix/zuul
+        - id: 37912398
+          name: nginx/nginx
+        - id: 168629414
+          name: openelb/openelb
+        - id: 480080
+          name: openresty/openresty
+        - id: 38812664
+          name: zalando/skipper
+        - id: 457021614
+          name: l7mp/stunner
+        - id: 3784017
+          name: alibaba/tengine
+        - id: 42408804
+          name: traefik/traefik

@@ -1,5 +1,9 @@
 name: JFrog
 type: Company
 data:
-  github_org:
-    - 499942  # org:jfrog
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 499942
+          name: jfrog

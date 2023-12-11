@@ -1,7 +1,7 @@
 name: Big Data
 type: Tech-0
 data:
-  label:
+  labels:
     - visualization
     - analysis_engine
     - scheduler

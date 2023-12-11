@@ -1,22 +1,38 @@
 name: Adobe
 type: Company
 data:
-
-  github_repo:
-    - 6898381 # repo:apache/cordova-android
-    - 6898387 # repo:apache/cordova-ios
-    - 5611582 # repo:apache/flex-sdk
-    
-  github_org:
-    - 476009 # org:adobe
-    - 168457 # org:magento
-    - 2976699 # org:adobe-webplatform
-    - 3536625 # org:adobe-research
-    - 4542585 # org:adobe-photoshop
-    - 4175954 # org:adobe-cloudops
-    - 2718604 # org:topcoat
-    - 4028872 # org:adobe-fonts
-    - 32504 # org:typekit
-    - 4764587 # org:adobe-flash
-    - 5420974 # org:adobe-consulting-services
-    - 1440554 # org:adobe-marketing-cloud
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 6898381
+          name: apache/cordova-android
+        - id: 6898387
+          name: apache/cordova-ios
+        - id: 5611582
+          name: apache/flex-sdk
+      orgs:
+        - id: 476009
+          name: adobe
+        - id: 168457
+          name: magento
+        - id: 2976699
+          name: adobe-webplatform
+        - id: 3536625
+          name: adobe-research
+        - id: 4542585
+          name: adobe-photoshop
+        - id: 4175954
+          name: adobe-cloudops
+        - id: 2718604
+          name: topcoat
+        - id: 4028872
+          name: adobe-fonts
+        - id: 32504
+          name: typekit
+        - id: 4764587
+          name: adobe-flash
+        - id: 5420974
+          name: adobe-consulting-services
+        - id: 1440554
+          name: adobe-marketing-cloud

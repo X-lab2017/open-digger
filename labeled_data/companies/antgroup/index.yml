@@ -1,7 +1,7 @@
 name: Ant group
 type: Company
 data:
-  label:
+  labels:
     - antchain
     - antd
     - egg
@@ -11,22 +11,43 @@ data:
     - sofastack
     - :companies/alibaba/seata
     - :companies/alibaba/opensumi
-  github_org:
-    - 58020396 # org:mosn
-    - 45012756 # org:occlum
-    - 19199542 # org:antvis
-    - 48231449 # org:sql-machine-learning
-    - 33895495 # org:umijs
-    - 45850884 # org:karasjs
-    - 72598982 # org:oasis-engine
-    - 20552239 # org:dvajs
-    - 62416602 # org:mpaas-demo
-    - 1299356  # org:alipay
-    - 103737651 # org:secretflow
-    - 77516929 # org:ceresdb
-    - 104968284 # org:kusionstack
-    - 106951936 # org:traasstack
-    - 102720338 # org:Tongsuo-Project
-    - 107394922 # org:tugraph-db
-    - 37180217 # org:ant-mini-program
-    - 30223759 # org:NG-ZORRO
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 58020396
+          name: mosn
+        - id: 45012756
+          name: occlum
+        - id: 19199542
+          name: antvis
+        - id: 48231449
+          name: sql-machine-learning
+        - id: 33895495
+          name: umijs
+        - id: 45850884
+          name: karasjs
+        - id: 72598982
+          name: oasis-engine
+        - id: 20552239
+          name: dvajs
+        - id: 62416602
+          name: mpaas-demo
+        - id: 1299356
+          name: alipay
+        - id: 103737651
+          name: secretflow
+        - id: 77516929
+          name: ceresdb
+        - id: 104968284
+          name: kusionstack
+        - id: 106951936
+          name: traasstack
+        - id: 102720338
+          name: Tongsuo-Project
+        - id: 107394922
+          name: tugraph-db
+        - id: 37180217
+          name: ant-mini-program
+        - id: 30223759
+          name: NG-ZORRO

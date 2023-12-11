@@ -1,5 +1,9 @@
 name: Rapid7
 type: Company
 data:
-  github_org:
-    - 1013671  # org:rapid7
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 1013671
+          name: rapid7

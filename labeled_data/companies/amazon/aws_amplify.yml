@@ -1,5 +1,9 @@
 name: AWS Amplify
 type: Project
 data:
-  github_org:
-    - 41077760 # org:aws-amplify
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 41077760
+          name: aws-amplify

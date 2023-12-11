@@ -1,6 +1,11 @@
 name: Zalando
 type: Company
 data:
-  github_org:
-    - 30869512 # org:zalandoresearch
-    - 59021421 # org:flairNLP
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 30869512
+          name: zalandoresearch
+        - id: 59021421
+          name: flairNLP

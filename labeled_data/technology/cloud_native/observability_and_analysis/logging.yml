@@ -1,10 +1,19 @@
 name: Cloud Native - Observability and Analysis - Logging
 type: Tech-2
 data:
-  github_repo:
-    - 1918677 # repo:fluent/fluentd
-    - 129717717 # repo:grafana/loki
-    - 430536935 # repo:loggie-io/loggie
-    - 1090311 # repo:elastic/logstash
-    - 334274271 # repo:opensearch-project/opensearch
-    - 520784735 # repo:parseablehq/parseable
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 1918677
+          name: fluent/fluentd
+        - id: 129717717
+          name: grafana/loki
+        - id: 430536935
+          name: loggie-io/loggie
+        - id: 1090311
+          name: elastic/logstash
+        - id: 334274271
+          name: opensearch-project/opensearch
+        - id: 520784735
+          name: parseablehq/parseable

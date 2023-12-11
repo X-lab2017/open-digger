@@ -1,5 +1,9 @@
 name: Alfresco
 type: Company
 data:
-  github_org:
-    - 391127  # org:Alfresco
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 391127
+          name: Alfresco

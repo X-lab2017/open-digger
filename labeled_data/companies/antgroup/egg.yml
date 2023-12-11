@@ -1,5 +1,9 @@
 name: Egg.js
 type: Project
 data:
-  github_org:
-    - 15833670 # org:eggjs
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 15833670
+          name: eggjs

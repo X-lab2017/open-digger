@@ -1,5 +1,9 @@
 name: Couchbase
 type: Company
 data:
-  github_org:
-    - 605755  # org:couchbase
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 605755
+          name: couchbase

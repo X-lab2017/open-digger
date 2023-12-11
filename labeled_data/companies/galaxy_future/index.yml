@@ -1,5 +1,9 @@
 name: Galaxy Future
 type: Company
 data:
-  github_org:
-    - 87167108  # org:galaxy-future
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 87167108
+          name: galaxy-future

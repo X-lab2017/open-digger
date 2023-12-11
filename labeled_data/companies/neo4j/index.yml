@@ -1,7 +1,13 @@
 name: Neo4j
 type: Company
 data:
-  github_org:
-    - 201120  # org:neo4j
-    - 218965  # org:neo4j-examples
-    - 916372  # org:neo4j-contrib
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 201120
+          name: neo4j
+        - id: 218965
+          name: neo4j-examples
+        - id: 916372
+          name: neo4j-contrib

@@ -1,6 +1,11 @@
 name: Database - Event
 type: Tech-1
 data:
-  github_repo:
-    - 5844474 # repo:EventStore/EventStore
-    - 738338 # repo:NEventStore/NEventStore
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 5844474
+          name: EventStore/EventStore
+        - id: 738338
+          name: NEventStore/NEventStore

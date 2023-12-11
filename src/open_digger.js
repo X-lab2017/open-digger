@@ -59,9 +59,6 @@ const openDigger = {
       contributorEmailSuffixes: func.contributorEmailSuffixes,
     },
   },
-  relation: {
-    getRelatedUsers: func.getRelatedUsers,
-  },
   getRank: (values, nameGetter, valueGetter) => {
     let resultMap = new Map();
     values.forEach(v => resultMap.set(nameGetter(v), []));

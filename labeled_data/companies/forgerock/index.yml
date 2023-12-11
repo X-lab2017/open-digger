@@ -1,5 +1,9 @@
 name: ForgeRock
 type: Company
 data:
-  github_org:
-    - 8464100  # org:OpenRock
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 8464100
+          name: OpenRock

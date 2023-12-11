@@ -1,5 +1,9 @@
 name: FreeRTOS
 type: Project
 data:
-  github_org:
-    - 54647343 # org:freertos
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 54647343
+          name: freertos

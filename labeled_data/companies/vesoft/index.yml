@@ -1,5 +1,9 @@
 name: Vesoft
 type: Company
 data:
-  github_org:
-    - 42441426 # vesoft-inc
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 42441426
+          name: vesoft-inc

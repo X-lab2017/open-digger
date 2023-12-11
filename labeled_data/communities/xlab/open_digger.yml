@@ -1,5 +1,9 @@
 name: OpenDigger
 type: Project
 data:
-  github_repo:
-    - 288431943 # X-lab2017/open-digger
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 288431943
+          name: X-lab2017/open-digger

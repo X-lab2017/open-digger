@@ -1,40 +1,79 @@
 name: Cloud Native - Provisioning - Automation & Configuration
 type: Tech-2
 data:
-  github_repo:
-    - 144783430 # repo:airshipit/treasuremap
-    - 302703576 # repo:project-akri/akri
-    - 3638964 # repo:ansible/ansible
-    - 53127403 # repo:apolloconfig/apollo
-    - 3910314 # repo:cloudfoundry/bosh
-    - 82700090 # repo:uber/cadence
-    - 105809298 # repo:cdk8s-team/cdk8s
-    - 3543548 # repo:cfengine/core
-    - 108278 # repo:chef/chef
-    - 52837350 # repo:cloud-custodian/cloud-custodian
-    - 18326574 # repo:cloudify-cosmo/cloudify-manager
-    - 288523518 # repo:couler-proj/couler
-    - 415188495 # repo:devstream-io/devstream
-    - 199487892 # repo:digitalrebar/provision
-    - 258750 # repo:theforeman/foreman
-    - 20445947 # repo:juju/juju
-    - 238232099 # repo:loft-sh/kiosk
-    - 227010082 # repo:kubedl-io/kubedl
-    - 150713223 # repo:kubeedge/kubeedge
-    - 332999480 # repo:kubefirst/kubefirst
-    - 516603039 # repo:kubewharf/kubezoo
-    - 488866928 # repo:KusionStack/kusion
-    - 46932243 # repo:linuxkit/linuxkit
-    - 86509608 # repo:maas/maas
-    - 20789757 # repo:ManageIQ/manageiq
-    - 5874515 # repo:mistio/mist-ce
-    - 13839311 # repo:openstack/openstack
-    - 265800635 # repo:openyurtio/openyurt
-    - 72477752 # repo:pulumi/pulumi
-    - 910744 # repo:puppetlabs/puppet
-    - 886774 # repo:rundeck/rundeck
-    - 1390248 # repo:saltstack/salt
-    - 19051806 # repo:stackstorm/st2
-    - 322759957 # repo:superedge/superedge
-    - 17728164 # repo:hashicorp/terraform
-    - 215102779 # repo:tinkerbell/tink
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 144783430
+          name: airshipit/treasuremap
+        - id: 302703576
+          name: project-akri/akri
+        - id: 3638964
+          name: ansible/ansible
+        - id: 53127403
+          name: apolloconfig/apollo
+        - id: 3910314
+          name: cloudfoundry/bosh
+        - id: 82700090
+          name: uber/cadence
+        - id: 105809298
+          name: cdk8s-team/cdk8s
+        - id: 3543548
+          name: cfengine/core
+        - id: 108278
+          name: chef/chef
+        - id: 52837350
+          name: cloud-custodian/cloud-custodian
+        - id: 18326574
+          name: cloudify-cosmo/cloudify-manager
+        - id: 288523518
+          name: couler-proj/couler
+        - id: 415188495
+          name: devstream-io/devstream
+        - id: 199487892
+          name: digitalrebar/provision
+        - id: 258750
+          name: theforeman/foreman
+        - id: 20445947
+          name: juju/juju
+        - id: 238232099
+          name: loft-sh/kiosk
+        - id: 227010082
+          name: kubedl-io/kubedl
+        - id: 150713223
+          name: kubeedge/kubeedge
+        - id: 332999480
+          name: kubefirst/kubefirst
+        - id: 516603039
+          name: kubewharf/kubezoo
+        - id: 488866928
+          name: KusionStack/kusion
+        - id: 46932243
+          name: linuxkit/linuxkit
+        - id: 86509608
+          name: maas/maas
+        - id: 20789757
+          name: ManageIQ/manageiq
+        - id: 5874515
+          name: mistio/mist-ce
+        - id: 13839311
+          name: openstack/openstack
+        - id: 265800635
+          name: openyurtio/openyurt
+        - id: 72477752
+          name: pulumi/pulumi
+        - id: 910744
+          name: puppetlabs/puppet
+        - id: 886774
+          name: rundeck/rundeck
+        - id: 1390248
+          name: saltstack/salt
+        - id: 19051806
+          name: stackstorm/st2
+        - id: 322759957
+          name: superedge/superedge
+        - id: 17728164
+          name: hashicorp/terraform
+        - id: 215102779
+          name: tinkerbell/tink

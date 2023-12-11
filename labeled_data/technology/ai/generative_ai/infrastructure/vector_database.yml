@@ -1,28 +1,53 @@
 name: Artificial Intelligence - infrastructure - vector database
 type: Tech-1
 data:
-  github_repo:
-    - 208728772 # milvus-io/milvus
-    - 81227005 # facebookresearch/faiss
-    - 11309795 # nmslib/nmslib
-    - 55072677 # weaviate/weaviate
-    - 388946490 # facebookincubator/velox
-    - 11627513 # guokr/simbase
-    - 268163609 # qdrant/qdrant
-    - 670778224 # Mintplex-Labs/vector-admin
-    - 664872761 # lanterndata/lantern
-    - 520096046 # marqo-ai/marqo
-    - 664133375 # epsilla-cloud/vectordb
-    - 551374215 # cozodb/cozo
-    - 478288303 # nuclia/nucliadb
-    - 628230315 # tensorchord/pgvecto.rs
-    - 598328694 # Azure-Samples/qdrant-azure
-    - 628503457 # jdagdelen/hyperDB
-    - 635374751 # jina-ai/vectordb
-    - 201403923 # activeloopai/deeplake
-    - 416959991 # dingodb/dingo
-    - 512438377 # DutytoDevelop/VDBLITE
-    - 9155431 # spotify/annoy
-    - 160775368 # vitrivr/cottontaildb
-    - 667164544 # xyntopia/vexvault
-    
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 208728772
+          name: milvus-io/milvus
+        - id: 81227005
+          name: facebookresearch/faiss
+        - id: 11309795
+          name: nmslib/nmslib
+        - id: 55072677
+          name: weaviate/weaviate
+        - id: 388946490
+          name: facebookincubator/velox
+        - id: 11627513
+          name: guokr/simbase
+        - id: 268163609
+          name: qdrant/qdrant
+        - id: 670778224
+          name: Mintplex-Labs/vector-admin
+        - id: 664872761
+          name: lanterndata/lantern
+        - id: 520096046
+          name: marqo-ai/marqo
+        - id: 664133375
+          name: epsilla-cloud/vectordb
+        - id: 551374215
+          name: cozodb/cozo
+        - id: 478288303
+          name: nuclia/nucliadb
+        - id: 628230315
+          name: tensorchord/pgvecto.rs
+        - id: 598328694
+          name: Azure-Samples/qdrant-azure
+        - id: 628503457
+          name: jdagdelen/hyperDB
+        - id: 635374751
+          name: jina-ai/vectordb
+        - id: 201403923
+          name: activeloopai/deeplake
+        - id: 416959991
+          name: dingodb/dingo
+        - id: 512438377
+          name: DutytoDevelop/VDBLITE
+        - id: 9155431
+          name: spotify/annoy
+        - id: 160775368
+          name: vitrivr/cottontaildb
+        - id: 667164544
+          name: xyntopia/vexvault

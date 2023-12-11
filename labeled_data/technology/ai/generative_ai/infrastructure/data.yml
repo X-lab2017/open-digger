@@ -1,15 +1,29 @@
 name: Artificial Intelligence - infrastructure - data
 type: Tech-1
 data:
-  github_repo:
-    - 250213286 # repo:huggingface/datasets
-    - 290621741 # repo:EleutherAI/The-Pile
-    - 184690694 # repo:openai/gpt-2-output-dataset
-    - 685189532 # repo:openai/compose-richtext
-    - 171325281 # repo:jcpeterson/openwebtext
-    - 264870386 # repo:openai/gpt-3
-    - 627636169 # repo:allenai/mmc4
-    - 622196323 # repo:FreedomIntelligence/LLMZoo
-    - 650086239 # repo:X-PLUG/Youku-mPLUG
-    - 678206546 # repo:opendatalab/WanJuan1.0
-    - 656099147 # repo:embedchain/embedchain
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 250213286
+          name: huggingface/datasets
+        - id: 290621741
+          name: EleutherAI/The-Pile
+        - id: 184690694
+          name: openai/gpt-2-output-dataset
+        - id: 685189532
+          name: openai/compose-richtext
+        - id: 171325281
+          name: jcpeterson/openwebtext
+        - id: 264870386
+          name: openai/gpt-3
+        - id: 627636169
+          name: allenai/mmc4
+        - id: 622196323
+          name: FreedomIntelligence/LLMZoo
+        - id: 650086239
+          name: X-PLUG/Youku-mPLUG
+        - id: 678206546
+          name: opendatalab/WanJuan1.0
+        - id: 656099147
+          name: embedchain/embedchain

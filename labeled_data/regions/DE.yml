@@ -1,7 +1,7 @@
 name: Germany
 type: Region
 data:
-  label:
+  labels:
     - :companies/zalando
     - :companies/explosionai
     - :companies/jina_ai

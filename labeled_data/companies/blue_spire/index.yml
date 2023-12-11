@@ -1,5 +1,9 @@
 name: Blue Spire
 type: Company
 data:
-  github_org:
-    - 9808864 # org:aurelia
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 9808864
+          name: aurelia

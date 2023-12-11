@@ -1,12 +1,23 @@
 name: Artificial Intelligence - tool - prompt engineering
 type: Tech-1
 data:
-  github_repo:
-    - 658453192 # hegelai/prompttools
-    - 608934156 # repo:prompt-engineering/click-prompt
-    - 618903393 # repo:Moonvy/OpenPromptStudio
-    - 579082810 # repo:dair-ai/Prompt-Engineering-Guide
-    - 574523116 # repo:f/awesome-chatgpt-prompts
-    - 631484230 # repo:LearnPrompt/LearnPrompt
-    - 630249429 # repo:lamini-ai/lamini
-    - 586758655 # repo:travistangvh/ChatGPT-Data-Science-Prompts
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 658453192
+          name: hegelai/prompttools
+        - id: 608934156
+          name: prompt-engineering/click-prompt
+        - id: 618903393
+          name: Moonvy/OpenPromptStudio
+        - id: 579082810
+          name: dair-ai/Prompt-Engineering-Guide
+        - id: 574523116
+          name: f/awesome-chatgpt-prompts
+        - id: 631484230
+          name: LearnPrompt/LearnPrompt
+        - id: 630249429
+          name: lamini-ai/lamini
+        - id: 586758655
+          name: travistangvh/ChatGPT-Data-Science-Prompts
