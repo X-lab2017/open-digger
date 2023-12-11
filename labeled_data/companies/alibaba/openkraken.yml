@@ -1,0 +1,9 @@
+name: OpenKraken
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 75296004
+          name: openkraken

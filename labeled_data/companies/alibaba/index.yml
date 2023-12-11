@@ -10,6 +10,25 @@ data:
     - nacos
     - opensumi
     - weex
+    - anolis
+    - openyurt
+    - graphscope
+    - chaosblade
+    - dragonfly
+    - sentinel
+    - dragonwell
+    - sealer
+    - fluid
+    - kubevela
+    - modelscope
+    - ice
+    - openkruise
+    - lowcode_engine
+    - vineyard
+    - serverless_devs
+    - inclavare_containers
+    - ocm
+    - openkraken
   platforms:
     - name: GitHub
       type: Code Hosting
@@ -24,8 +43,6 @@ data:
           name: AliyunContainerService
         - id: 92418439
           name: ApsaraDB
-        - id: 56642198
-          name: GraphScope
         - id: 56627637
           name: T-head-Semi
         - id: 43160974
@@ -50,18 +67,12 @@ data:
           name: aliyun
         - id: 16096311
           name: aliyun-beta
-        - id: 48477425
-          name: chaosblade-io
         - id: 50716105
           name: cloudnativeapp
-        - id: 44993420
-          name: dragonflyoss
         - id: 11751992
           name: dubbo
         - id: 13195604
           name: hiloteam
-        - id: 49051229
-          name: ice-lab
         - id: 328318
           name: kissyteam
         - id: 87515570
@@ -76,18 +87,10 @@ data:
           name: node-modules
         - id: 83446609
           name: oecp
-        - id: 75296004
-          name: openkraken
-        - id: 69286650
-          name: openyurtio
-        - id: 43955412
-          name: sentinel-group
         - id: 1560507
           name: taobao
         - id: 1983116
           name: teambition
-        - id: 83062528
-          name: v6d-io
         - id: 35833849
           name: weex-ui-team
         - id: 102641885
@@ -96,40 +99,23 @@ data:
           name: koordinator-sh
         - id: 100843567
           name: opensergo
-        - id: 104560867
-          name: sealerio
-        - id: 109945100
-          name: modelscope
-        - id: 49735278
-          name: openkruise
         - id: 73396749
           name: alibaba-incubator
         - id: 113880714
           name: noslate-project
         - id: 120164000
           name: polardb
-        - id: 74584788
-          name: kubevela
         - id: 40452342
           name: alibaba-fusion
         - id: 125999365
           name: damo-vilab
-        - id: 127807288
-          name: dragonwell-project
         - id: 1201438
           name: eleme
         - id: 4538353
           name: thx
-        - id: 3535043
-          name: fluid
         - id: 142002476
           name: alibabacloud-automation
         - id: 121285115
           name: alibaba-archive
         - id: 141981933
           name: aigc-apps
-    - name: Gitee
-      type: Code Hosting
-      orgs:
-        - id: 8571623
-          name: anolis

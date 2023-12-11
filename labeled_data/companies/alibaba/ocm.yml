@@ -1,0 +1,9 @@
+name: Open Cluster Management
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 83772337
+          name: open-cluster-management-io

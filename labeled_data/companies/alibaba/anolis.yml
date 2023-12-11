@@ -1,0 +1,27 @@
+name: Anolis
+type: Project
+data:
+  platforms:
+    - name: Gitee
+      type: Code Hosting
+      orgs:
+        - id: 8571623
+          name: anolis
+        - id: 10018659
+          name: src-anolis-ai
+        - id: 8579928
+          name: src-anolis-module
+        - id: 8571630
+          name: src-anolis-os
+        - id: 9946739
+          name: src-anolis-epao
+        - id: 9987697
+          name: anolis-challenge
+        - id: 12358182
+          name: src-anolis-nonfree
+        - id: 12336611
+          name: src-anolis-FoundUI
+        - id: 8571759
+          name: src-anolis-sig
+        - id: 9473085
+          name: anolis-education
