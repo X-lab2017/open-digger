@@ -15,11 +15,11 @@ import {
 } from './basic';
 import * as clickhouse from '../db/clickhouse';
 
-export const ISSUE_COMMENT_WEIGHT = 1;
-export const OPEN_ISSUE_WEIGHT = 2;
-export const OPEN_PULL_WEIGHT = 3;
-export const REVIEW_COMMENT_WEIGHT = 4;
-export const PULL_MERGED_WEIGHT = 2;
+export const ISSUE_COMMENT_WEIGHT = 0.5252;
+export const OPEN_ISSUE_WEIGHT = 2.2235;
+export const OPEN_PULL_WEIGHT = 4.0679;
+export const REVIEW_COMMENT_WEIGHT = 0.7427;
+export const PULL_MERGED_WEIGHT = 2.0339;
 
 export const getRepoOpenrank = async (config: QueryConfig) => {
   config = getMergedConfig(config);
