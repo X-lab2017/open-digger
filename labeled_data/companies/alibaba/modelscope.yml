@@ -1,0 +1,9 @@
+name: ModelScope
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 109945100
+          name: modelscope

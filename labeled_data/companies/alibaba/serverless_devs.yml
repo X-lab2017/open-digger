@@ -1,0 +1,9 @@
+name: Serverless Devs
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 71381599
+          name: Serverless-Devs

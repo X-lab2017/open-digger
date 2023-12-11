@@ -1,0 +1,9 @@
+name: GraphScope
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 56642198
+          name: GraphScope

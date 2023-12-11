@@ -1,0 +1,23 @@
+name: Lowcode Engine
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 440079558
+          name: alibaba/lowcode-engine
+        - id: 443120673
+          name: alibaba/owcode-engine-ext
+        - id: 443120466
+          name: alibaba/lowcode-materials
+        - id: 443120982
+          name: alibaba/lowcode-tools
+        - id: 443120083
+          name: alibaba/lowcode-plugins
+        - id: 443120817
+          name: alibaba/lowcode-demo
+        - id: 443024560
+          name: alibaba/lowcode-datasource
+        - id: 443120269
+          name: lowcode-code-generator-demo

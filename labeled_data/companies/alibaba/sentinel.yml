@@ -1,0 +1,12 @@
+name: Sentinel
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 128018428
+          name: alibaba/Sentinel
+      orgs:
+        - id: 43955412
+          name: sentinel-group
