@@ -13,32 +13,90 @@
     "groupTimeRange": "year",
     "groupBy": null
   },
-  "user_activity_desc_3_all_null_year": [{
-    "id": "5384588",
-    "name": "googlebot",
-    "activity": [745.44, 1872.61],
-    "issue_comment": ["1781", "4259"],
-    "open_issue": ["0", "0"],
-    "open_pull": ["0", "0"],
-    "review_comment": ["0", "0"],
-    "merged_pull": ["0", "0"]
-  }, {
-    "id": "5279928",
-    "name": "thomasvl",
-    "activity": [120.6, 334.65],
-    "issue_comment": ["97", "562"],
-    "open_issue": ["4", "17"],
-    "open_pull": ["81", "192"],
-    "review_comment": ["5", "180"],
-    "merged_pull": ["77", "188"]
-  }, {
-    "id": "250995",
-    "name": "jonparrott",
-    "activity": [85.01, 227.32],
-    "issue_comment": ["168", "850"],
-    "open_issue": ["8", "18"],
-    "open_pull": ["19", "50"],
-    "review_comment": ["194", "497"],
-    "merged_pull": ["16", "49"]
-  }]
+  "user_activity_desc_3_all_null_year": [
+    {
+      "id": "5384588",
+      "name": "googlebot",
+      "activity": [
+        540.23,
+        1357.09
+      ],
+      "issue_comment": [
+        "1781",
+        "4259"
+      ],
+      "open_issue": [
+        "0",
+        "0"
+      ],
+      "open_pull": [
+        "0",
+        "0"
+      ],
+      "review_comment": [
+        "0",
+        "0"
+      ],
+      "merged_pull": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "id": "5279928",
+      "name": "thomasvl",
+      "activity": [
+        124.52,
+        300.88
+      ],
+      "issue_comment": [
+        "97",
+        "562"
+      ],
+      "open_issue": [
+        "4",
+        "17"
+      ],
+      "open_pull": [
+        "81",
+        "192"
+      ],
+      "review_comment": [
+        "5",
+        "180"
+      ],
+      "merged_pull": [
+        "77",
+        "188"
+      ]
+    },
+    {
+      "id": "566311",
+      "name": "zidarsk8",
+      "activity": [
+        94.88,
+        149.87
+      ],
+      "issue_comment": [
+        "167",
+        "424"
+      ],
+      "open_issue": [
+        "0",
+        "0"
+      ],
+      "open_pull": [
+        "124",
+        "224"
+      ],
+      "review_comment": [
+        "193",
+        "562"
+      ],
+      "merged_pull": [
+        "107",
+        "203"
+      ]
+    }
+  ]
 }
