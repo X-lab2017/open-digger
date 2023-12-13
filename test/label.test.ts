@@ -30,9 +30,9 @@ describe('Label data test', () => {
       platforms: [{
         name: 'GitHub',
         type: 'Code Hosting',
-        orgs: [1],
-        repos: [1],
-        users: [1],
+        orgs: [{ id: 1, name: '1' }],
+        repos: [{ id: 1, name: '1' }],
+        users: [{ id: 1, name: '1' }],
       }],
     }, {
       identifier: ':inject2',
@@ -41,9 +41,9 @@ describe('Label data test', () => {
       platforms: [{
         name: 'GitHub',
         type: 'Code Hosting',
-        orgs: [2],
-        repos: [2],
-        users: [2],
+        orgs: [{ id: 2, name: '2' }],
+        repos: [{ id: 2, name: '2' }],
+        users: [{ id: 2, name: '2' }],
       }],
     }]);
     assert.strictEqual(labelData.find(p => p.name === 'GitHub')?.orgs.length, 2);

@@ -7,7 +7,6 @@
     "noImplicitAny": false,
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
-    "charset": "utf8",
     "allowJs": false,
     "pretty": true,
     "noEmitOnError": false,
@@ -25,7 +24,8 @@
     "outDir": "./lib"
   },
   "include": [
-    "src"
+    "src",
+    "test"
   ],
   "exclude": [
     "node_modules"

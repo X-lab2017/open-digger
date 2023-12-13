@@ -169,27 +169,10 @@ function processLabelIdentifier(identifier: string): string {
   return identifier.split(path.sep).join(path.posix.sep);
 }
 
-function labelDataToPlatformData(data: ParsedLabelItem[]): CodeHostingPlatformData[] {
-  const ret = new Map<string, CodeHostingPlatformData>();
-  for (const item of data) {
-    item.platforms.filter(p => p.type === 'Code Hosting').forEach(p => {
-      const platform = ret.get(p.name);
-      if (!platform) {
-        ret.set(p.name, p);
-      } else {
-        platform.orgs = Array.from(new Set(platform.orgs.concat(p.orgs)));
-        platform.repos = Array.from(new Set(platform.repos.concat(p.repos)));
-        platform.users = Array.from(new Set(platform.users.concat(p.users)));
-      }
-    });
-  }
-  return Array.from(ret.values());
-}
-
 export function getPlatformData(typeOrIds: string[], injectLabelData?: any[]): CodeHostingPlatformData[] {
   if (typeOrIds.length === 0) return [];
   const data = getLabelData(injectLabelData);
   if (!data) return [];
   const arr = data.filter(i => typeOrIds.includes(i.type) || typeOrIds.includes(i.identifier));
-  return labelDataToPlatformData(arr);
+  return mergePlatforms(...arr.map(item => item.platforms));
 }
