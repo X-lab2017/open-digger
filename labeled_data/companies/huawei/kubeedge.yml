@@ -1,0 +1,14 @@
+name: KubeEdge
+type: Project
+data:
+  platforms:
+    - name: Gitee
+      type: Code Hosting
+      orgs:
+        - id: 5393926
+          name: LiteOS
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 41812520
+          name: kubeedge

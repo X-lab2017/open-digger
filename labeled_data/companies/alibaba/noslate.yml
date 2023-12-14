@@ -1,9 +1,9 @@
-name: EggJS
+name: Noslate
 type: Project
 data:
   platforms:
     - name: GitHub
       type: Code Hosting
       orgs:
-        - id: 15833670
-          name: eggjs
+        - id: 113880714
+          name: noslate-project

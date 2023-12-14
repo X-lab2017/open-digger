@@ -1,9 +1,9 @@
-name: EggJS
+name: Fury
 type: Project
 data:
   platforms:
     - name: GitHub
       type: Code Hosting
-      orgs:
-        - id: 15833670
-          name: eggjs
+      repos:
+        - id: 633686625
+          name: alipay/fury

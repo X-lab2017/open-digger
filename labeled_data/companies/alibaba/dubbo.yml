@@ -64,3 +64,5 @@ data:
       orgs:
         - id: 40481188
           name: dubbogo
+        - id: 11751992
+          name: dubbo

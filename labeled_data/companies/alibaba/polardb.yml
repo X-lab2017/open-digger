@@ -1,0 +1,11 @@
+name: PolarDB
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 92418439
+          name: ApsaraDB
+        - id: 120164000
+          name: polardb

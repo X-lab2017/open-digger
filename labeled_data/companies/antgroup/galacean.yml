@@ -1,0 +1,11 @@
+name: Galacean
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 72598982
+          name: galacean
+        - id: 72598982
+          name: oasis-engine

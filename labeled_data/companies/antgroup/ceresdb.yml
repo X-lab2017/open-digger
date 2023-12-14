@@ -1,14 +1,14 @@
-name: Ant Design
+name: CeresDB
 type: Project
 data:
   platforms:
     - name: GitHub
       type: Code Hosting
       orgs:
-        - id: 12101536
-          name: ant-design
+        - id: 77516929
+          name: ceresdb
     - name: Gitee
       type: Code Hosting
       orgs:
-        - id: 1640290
-          name: ant-design
+        - id: 9850889
+          name: ceres-db

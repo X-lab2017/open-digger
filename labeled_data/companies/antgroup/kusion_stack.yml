@@ -1,14 +1,14 @@
-name: Ant Design
+name: KusionStack
 type: Project
 data:
   platforms:
     - name: GitHub
       type: Code Hosting
       orgs:
-        - id: 12101536
-          name: ant-design
+        - id: 104968284
+          name: KusionStack
     - name: Gitee
       type: Code Hosting
       orgs:
-        - id: 1640290
-          name: ant-design
+        - id: 8473031
+          name: kusionstack

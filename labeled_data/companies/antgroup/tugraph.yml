@@ -1,0 +1,11 @@
+name: TuGraph
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 125448319
+          name: TuGraph-DB
+        - id: 107394922
+          name: TuGraph-family

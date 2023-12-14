@@ -1,0 +1,9 @@
+name: Intelligent Machine Learning
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 107632618
+          name: intelligent-machine-learning

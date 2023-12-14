@@ -5,6 +5,8 @@ data:
     - name: GitHub
       type: Code Hosting
       orgs:
+        - id: 128777642
+          name: AntChainOpenLabs
         - id: 67619037
           name: antchain-openapi-sdk-go
         - id: 67618898

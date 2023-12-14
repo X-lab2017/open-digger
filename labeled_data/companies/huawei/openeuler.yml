@@ -1,0 +1,11 @@
+name: openEuler
+type: Project
+data:
+  platforms:
+    - name: Gitee
+      type: Code Hosting
+      orgs:
+        - id: 5161228
+          name: openeuler
+        - id: 5460189
+          name: src-openeuler

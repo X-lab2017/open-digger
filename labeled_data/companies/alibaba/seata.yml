@@ -7,3 +7,8 @@ data:
       orgs:
         - id: 48813648
           name: seata
+    - name: Gitee
+      type: Code Hosting
+      orgs:
+        - id: 4961039
+          name: seata-io

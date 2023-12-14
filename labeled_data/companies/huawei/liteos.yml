@@ -1,0 +1,14 @@
+name: LiteOS
+type: Project
+data:
+  platforms:
+    - name: Gitee
+      type: Code Hosting
+      orgs:
+        - id: 5393926
+          name: LiteOS
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 22132015
+          name: LiteOS
