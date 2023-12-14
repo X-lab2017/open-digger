@@ -1,9 +1,9 @@
-name: EggJS
+name: Traas Stack
 type: Project
 data:
   platforms:
     - name: GitHub
       type: Code Hosting
       orgs:
-        - id: 15833670
-          name: eggjs
+        - id: 106951936
+          name: traasstack

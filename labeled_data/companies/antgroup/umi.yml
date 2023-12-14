@@ -1,14 +1,14 @@
-name: Ant Design
+name: UmiJS
 type: Project
 data:
   platforms:
     - name: GitHub
       type: Code Hosting
       orgs:
-        - id: 12101536
-          name: ant-design
+        - id: 33895495
+          name: umijs
     - name: Gitee
       type: Code Hosting
       orgs:
-        - id: 1640290
-          name: ant-design
+        - id: 5199260
+          name: umijs

@@ -1,0 +1,15 @@
+name: MindSpore
+type: Project
+data:
+  platforms:
+    - name: Gitee
+      type: Code Hosting
+      orgs:
+        - id: 6854763
+          name: mindspore
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 54143604
+          name: mindspore-ai
+ 

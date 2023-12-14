@@ -1,9 +1,9 @@
-name: EggJS
+name: KCL Lang
 type: Project
 data:
   platforms:
     - name: GitHub
       type: Code Hosting
       orgs:
-        - id: 15833670
-          name: eggjs
+        - id: 118160501
+          name: kcl-lang

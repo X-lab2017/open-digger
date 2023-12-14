@@ -1,9 +1,9 @@
-name: EggJS
+name: VolcEngine
 type: Project
 data:
   platforms:
     - name: GitHub
       type: Code Hosting
       orgs:
-        - id: 15833670
-          name: eggjs
+        - id: 67365215
+          name: volcengine

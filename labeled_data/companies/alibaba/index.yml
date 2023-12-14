@@ -2,33 +2,41 @@ name: Alibaba
 type: Company
 data:
   labels:
-    - dubbo
-    - flink
-    - rocketmq
-    - open_messaging
-    - seata
-    - nacos
-    - opensumi
-    - weex
     - anolis
-    - openyurt
-    - graphscope
     - chaosblade
     - dragonfly
-    - sentinel
     - dragonwell
-    - sealer
+    - dubbo
+    - flink
     - fluid
-    - kubevela
-    - modelscope
+    - graphscope
     - ice
-    - openkruise
-    - lowcode_engine
-    - vineyard
-    - serverless_devs
     - inclavare_containers
+    - koordinator
+    - kubedl
+    - kubevela
+    - lowcode_engine
+    - mars
+    - midway
+    - modelscope
+    - nacos
+    - noslate
     - ocm
+    - open_messaging
     - openkraken
+    - openkruise
+    - opensergo
+    - opensumi
+    - openyurt
+    - polardb
+    - rocketmq
+    - sealer    
+    - seata
+    - sentinel
+    - serverless_devs
+    - teambition
+    - vineyard
+    - weex
   platforms:
     - name: GitHub
       type: Code Hosting
@@ -41,8 +49,6 @@ data:
           name: AlibabaPAI
         - id: 16377432
           name: AliyunContainerService
-        - id: 92418439
-          name: ApsaraDB
         - id: 56627637
           name: T-head-Semi
         - id: 43160974
@@ -69,18 +75,10 @@ data:
           name: aliyun-beta
         - id: 50716105
           name: cloudnativeapp
-        - id: 11751992
-          name: dubbo
         - id: 13195604
           name: hiloteam
         - id: 328318
           name: kissyteam
-        - id: 87515570
-          name: kubedl-io
-        - id: 43056710
-          name: mars-project
-        - id: 32128461
-          name: midwayjs
         - id: 30042306
           name: node-honeycomb
         - id: 7125868
@@ -89,22 +87,10 @@ data:
           name: oecp
         - id: 1560507
           name: taobao
-        - id: 1983116
-          name: teambition
-        - id: 35833849
-          name: weex-ui-team
         - id: 102641885
           name: alibaba-open-source-website
-        - id: 101698007
-          name: koordinator-sh
-        - id: 100843567
-          name: opensergo
         - id: 73396749
           name: alibaba-incubator
-        - id: 113880714
-          name: noslate-project
-        - id: 120164000
-          name: polardb
         - id: 40452342
           name: alibaba-fusion
         - id: 125999365

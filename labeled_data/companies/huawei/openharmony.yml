@@ -1,0 +1,13 @@
+name: openHarmony
+type: Project
+data:
+  platforms:
+    - name: Gitee
+      type: Code Hosting
+      orgs:
+        - id: 6486504
+          name: openharmony
+        - id: 6495130
+          name: openharmony-sig
+        - id: 8739348
+          name: HarmonyOS-tpc

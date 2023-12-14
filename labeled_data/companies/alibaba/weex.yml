@@ -19,3 +19,6 @@ data:
           name: apache/incubator-weex-loader
         - id: 203795420
           name: apache/incubator-weex-android-compatible
+      orgs:
+        - id: 35833849
+          name: weex-ui-team

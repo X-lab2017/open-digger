@@ -2,36 +2,30 @@ name: Baidu
 type: Company
 data:
   labels:
-    - paddle
-    - echarts
+    - apollo
     - brpc
+    - echarts
+    - huiyan
+    - mesalock
+    - paddle
+    - xuperchain
   platforms:
     - name: GitHub
       type: Code Hosting
       orgs:
         - id: 13245940
           name: baidu
-        - id: 23534030
-          name: PaddlePaddle
-        - id: 28768304
-          name: ApolloAuto
         - id: 7857697
           name: Clouda-team
         - id: 19966931
           name: mipengine
-        - id: 34010907
-          name: mesalock-linux
         - id: 2268460
           name: ecomfe
         - id: 6668906
           name: fex-team
         - id: 8051311
           name: baidu-research
-        - id: 13144859
-          name: huiyan-fe
         - id: 8372490
           name: be-fe
         - id: 38243092
           name: swan-team
-        - id: 43258643
-          name: xuperchain

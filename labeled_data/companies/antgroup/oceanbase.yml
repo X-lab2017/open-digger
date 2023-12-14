@@ -7,3 +7,8 @@ data:
       orgs:
         - id: 82347605
           name: oceanbase
+    - name: Gitee
+      type: Code Hosting
+      orgs:
+        - id: 7618996
+          name: oceanbase

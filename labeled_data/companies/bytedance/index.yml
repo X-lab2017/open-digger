@@ -2,19 +2,18 @@ name: ByteDance
 type: Company
 data:
   labels:
+    - byconity
+    - bytees
     - cloudwego
+    - lark
+    - oceanengine
+    - volcengine
   platforms:
     - name: GitHub
       type: Code Hosting
       orgs:
         - id: 4158466
           name: bytedance
-        - id: 67365215
-          name: volcengine
-        - id: 48308427
-          name: oceanengine
-        - id: 54944174
-          name: larksuite
         - id: 86451563
           name: byteplus-sdk
         - id: 83933364
@@ -37,9 +36,5 @@ data:
           name: arco-design
         - id: 87694465
           name: web-infra-dev
-        - id: 74184117
-          name: bytees
-        - id: 114223545
-          name: ByConity
         - id: 126661221
           name: visactor

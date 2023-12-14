@@ -1,18 +1,16 @@
 name: 360
 type: Company
 data:
+  labels:
+    - chimeejs
+    - spritejs
+    - thinkjs
   platforms:
     - name: GitHub
       type: Code Hosting
       orgs:
         - id: 4082929
           name: Qihoo360
-        - id: 29911379
-          name: spritejs
-        - id: 15226349
-          name: thinkjs
-        - id: 29886630
-          name: Chimeejs
         - id: 5575368
           name: 75team
         - id: 54881990
