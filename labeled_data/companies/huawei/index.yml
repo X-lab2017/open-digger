@@ -2,6 +2,12 @@ name: Huawei
 type: Company
 data:
   labels:
+    - kubeedge
+    - liteos
+    - mindspore
+    - openeuler
+    - opengauss
+    - openharmony
     - service_comb
   platforms:
     - name: GitHub
