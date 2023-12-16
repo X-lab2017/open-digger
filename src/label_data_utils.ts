@@ -4,7 +4,7 @@ import { readFileAsObj } from './utils';
 
 export type PlatformNames = 'GitHub' | 'Gitee' | 'AtomGit' | 'GitLab.com' | 'GitLab.cn' | 'Gitea';
 
-const labelInputDir = '../labeled_data';
+const labelInputDir = '../../labeled_data';
 const labelInputPath = path.join(__dirname, labelInputDir);
 
 const checkKeysAndTypes = {
