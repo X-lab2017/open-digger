@@ -18,7 +18,7 @@ const task: Task = {
     const repoRententionFactor = 0.3;
     const backgroundRententionFactor = 0.15;
     const openrankAttenuationFactor = 0.85;
-    const openrankMinValue = 0.1;
+    const openrankMinValue = 1;
     const acitivityToOpenrank = activity => Math.min(1, Math.log(activity + 1) / 3);
 
     const createTable = async () => {
@@ -156,7 +156,7 @@ const task: Task = {
         const nodeIndexMap = new Map(nodeIds.map((n, index) => [n, index]));
         const nodes = nodeIds.map((n, index) => ({
           id: index,
-          i: (lastMonthOpenrank.get(n)?.openrank ?? 0) +  // openrank from last month
+          i: (lastMonthOpenrank.get(n)?.openrank ?? 0) * openrankAttenuationFactor +  // openrank from last month
             (n.startsWith('User') ? acitivityToOpenrank(activityMap.get(n)!) : 0),  // user activity leads openrank
           r: n === bgId ? backgroundRententionFactor :
             (n.startsWith('Repo') ? repoRententionFactor :
