@@ -62,7 +62,7 @@ const task: Task = {
         const lastMonthOpenrank = new Map<string, { info: any; openrank: number; }>();
         // const date = new Date(year, month - 1, 1);
         const lastMonth = new Date(year, month - 2, 1);
-        const loadLastMonthSql = `SELECT actor_id, actor_login, repo_id, repo_name, org_id, org_login, platform, type, openrank FROM global_openrank WHERE toYYYYMM(created_at) = ${lastMonth.getFullYear()}${(lastMonth.getMonth() + 1).toString().padStart(2, '0')}`;
+        const loadLastMonthSql = `SELECT actor_id, actor_login, repo_id, repo_name, org_id, org_login, platform, type, openrank FROM ${globalOpenrankTableName} WHERE toYYYYMM(created_at) = ${lastMonth.getFullYear()}${(lastMonth.getMonth() + 1).toString().padStart(2, '0')}`;
         const loadLastMonthResult = await clickhouse.query<string[]>(loadLastMonthSql);
         if (!Array.isArray(loadLastMonthResult)) {
           throw new Error(`Load last month openrank failed for ${yyyymm}, result=${loadLastMonthResult}`);
