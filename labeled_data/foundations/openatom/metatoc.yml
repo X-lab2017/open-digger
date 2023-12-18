@@ -1,0 +1,9 @@
+name: MetaToC
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 474817064
+          name: vmeta42/metatoc

@@ -1,0 +1,9 @@
+name: TBase
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 220177733
+          name: Tencent/TBase

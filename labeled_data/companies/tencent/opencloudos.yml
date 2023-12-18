@@ -1,0 +1,9 @@
+name: OpenCloudOS
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 92847807
+          name: OpenCloudOS

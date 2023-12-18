@@ -1,0 +1,9 @@
+name: OpenDACS
+type: Project
+data:
+  platforms:
+    - name: Gitee
+      type: Code Hosting
+      orgs:
+        - id: 8498154
+          name: opendacs

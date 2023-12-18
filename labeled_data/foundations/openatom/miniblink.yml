@@ -1,0 +1,9 @@
+name: MiniBlink
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 69316510
+          name: weolar/miniblink49

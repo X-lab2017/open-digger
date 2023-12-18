@@ -2,6 +2,7 @@ name: Alibaba
 type: Company
 data:
   labels:
+    - alios_things
     - anolis
     - chaosblade
     - dragonfly

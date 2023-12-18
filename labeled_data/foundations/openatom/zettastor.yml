@@ -1,0 +1,9 @@
+name: ZettaStor
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 518297127
+          name: zettastor/dbs

@@ -1,0 +1,9 @@
+name: GreatSQL
+type: Project
+data:
+  platforms:
+    - name: Gitee
+      type: Code Hosting
+      orgs:
+        - id: 7415847
+          name: GreatSQL
