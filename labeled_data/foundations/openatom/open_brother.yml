@@ -1,0 +1,9 @@
+name: Open Brother
+type: Project
+data:
+  platforms:
+    - name: Gitee
+      type: Code Hosting
+      repos:
+        - id: 20528839
+          name: openbrother/openbrother

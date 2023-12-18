@@ -1,0 +1,9 @@
+name: OpenNJet
+type: Project
+data:
+  platforms:
+    - name: Gitee
+      type: Code Hosting
+      orgs:
+        - id: 11760695
+          name: njet-rd

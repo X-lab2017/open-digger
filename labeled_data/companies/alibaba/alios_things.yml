@@ -1,0 +1,9 @@
+name: AliOS Things
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 101866073
+          name: alibaba/AliOS-Things

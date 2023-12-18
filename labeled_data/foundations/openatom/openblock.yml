@@ -1,0 +1,9 @@
+name: Open Block
+type: Project
+data:
+  platforms:
+    - name: Gitee
+      type: Code Hosting
+      orgs:
+        - id: 8466758
+          name: openblock

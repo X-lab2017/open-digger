@@ -1,0 +1,9 @@
+name: OpenV2X
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 105474798
+          name: open-v2x

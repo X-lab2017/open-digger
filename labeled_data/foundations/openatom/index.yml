@@ -1,0 +1,42 @@
+name: OpenAtom Foundation
+type: Foundation
+data:
+  labels:
+    - :companies/baidu/xuperchain
+    - :companies/huawei/openharmony
+    - :companies/huawei/openeuler
+    - :companies/antgroup/tongsuo
+    - :companies/360/pika
+    - :companies/tencent/opencloudos
+    - :companies/tencent/tbase
+    - :companies/alibaba/alios_things
+    - :companies/alibaba/anolis
+    - :companies/deepin/linglong
+    - :companies/greatdb/greatsql
+    - carsmos
+    - cloud_hpc
+    - easybaas
+    - hapjs
+    - hyperbench
+    - metatoc
+    - miniblink
+    - nervjs
+    - open_brother
+    - openblock
+    - opendacs
+    - openkona
+    - opennjet
+    - openv2x
+    - rtthread_nano
+    - tkestack
+    - ubml
+    - ubsi
+    - vearch
+    - zettastor
+    - ztdbp
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 59038917
+          name: OpenAtomFoundation

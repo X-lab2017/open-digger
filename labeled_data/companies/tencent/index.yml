@@ -1,12 +1,13 @@
 name: Tencent
 type: Company
 data:
+  labels:
+    - opencloudos
+    - tbase
+    - tobudos
   platforms:
     - name: GitHub
       type: Code Hosting
-      repos:
-        - id: 203957456
-          name: OpenAtomFoundation/TencentOS-tiny
       orgs:
         - id: 18461506
           name: Tencent

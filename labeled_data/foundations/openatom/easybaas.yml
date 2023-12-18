@@ -1,0 +1,9 @@
+name: EasyBaaS
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 631965495
+          name: china-merchants-bank/EasyBaaS
