@@ -8,8 +8,6 @@ import { existsSync, mkdirSync, writeFileSync } from 'fs';
 
 const task: Task = {
   cron: '0 0 6 * *',
-  enable: false,
-  immediate: false,
   callback: async () => {
 
     const limit = 30, developerNetworkFile = 'developer_network.json', repoNetworkFile = 'repo_network.json';

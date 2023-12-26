@@ -44,6 +44,10 @@ let config = {
       key: '',
     },
   },
+  task: {
+    enable: [],
+    immediate: [],
+  },
 };
 
 export default async () => {
