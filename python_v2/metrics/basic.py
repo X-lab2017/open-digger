@@ -343,3 +343,31 @@ def filterEnumType(value, types, defautlValue: str) -> str:
     """
     if not value or not value in types: return defautlValue
     return value
+
+def getTopLevelPlatform(config):
+    if config.get("groupBy") and config.get("groupBy") != 'org' and config.get("groupBy") != 'repo':
+        return "'All' AS platform"
+    else:
+        return 'platform'
+
+
+def getInnerGroupBy(config):
+    if config.get("groupBy") and config.get("groupBy") != 'org' and config.get("groupBy") != 'repo':
+        return 'GROUP BY id, time'
+    else:
+        return 'GROUP BY id, platform, time'
+
+
+def processQueryResult(result, customKeys: str, postProcessor=None):
+    keys = ['id', 'platform', 'name'] + list(customKeys)
+    def post_process_record(r, keys=keys, func_dict=postProcessor):
+        obj = {}
+        for i, k in enumerate(keys):
+            if not func_dict or not isinstance(func_dict, dict):
+                obj[k] = r[i]
+            elif func_dict.get(k, None):
+                obj[k] = func_dict[k](r[i]) 
+            else:
+                obj[k] = r[i]
+        return obj
+    return list(map(post_process_record, result))

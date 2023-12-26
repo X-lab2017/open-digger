@@ -1,4 +1,4 @@
-from .basic import getMergedConfig, getRepoWhereClauseForNeo4j, getTimeRangeWhereClauseForNeo4j
+from metrics.basic import getMergedConfig, getRepoWhereClauseForNeo4j, getTimeRangeWhereClauseForNeo4j
 from db.neo4j_wrapper import Neo4jWrapper 
 neo4j = Neo4jWrapper()
 
