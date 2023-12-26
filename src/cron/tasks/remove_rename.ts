@@ -9,8 +9,6 @@ import getConfig from '../../config';
  */
 const task: Task = {
   cron: '0 0 4 * *',
-  enable: false,
-  immediate: false,
   callback: async () => {
     try {
       const config = await getConfig();

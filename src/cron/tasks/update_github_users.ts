@@ -11,8 +11,6 @@ import { getLogger } from '../../utils';
  */
 const task: Task = {
   cron: '*/10 * * * *',
-  enable: false,
-  immediate: false,
   callback: async () => {
 
     const logger = getLogger('UpdateGitHubUserTask');

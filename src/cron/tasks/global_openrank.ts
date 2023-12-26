@@ -8,8 +8,6 @@ import { getLogger } from '../../utils';
 
 const task: Task = {
   cron: '0 0 12 1 * *',
-  enable: false,
-  immediate: false,
   callback: async () => {
     const logger = getLogger('GlobalOpenRankTask');
 
