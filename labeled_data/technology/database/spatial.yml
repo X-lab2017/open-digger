@@ -5,6 +5,8 @@ data:
     - name: GitHub
       type: Code Hosting
       repos:
+        - id: 34533675
+          name: apache/sedona
         - id: 93667206
           name: geomesa/geomesa-geoserver
         - id: 7171304

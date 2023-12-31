@@ -7,6 +7,8 @@ data:
       repos:
         - id: 107504377
           name: ADBSQL/AntDB
+        - id: 37905036
+          name: Alachisoft/TayzGrid
         - id: 681142
           name: Bobris/BTDB
         - id: 52080367
@@ -21,6 +23,8 @@ data:
           name: ModeShape/modeshape
         - id: 150752008
           name: SapphireDb/SapphireDb
+        - id: 43494700
+          name: SparsityTechnologies/sparksee-server
         - id: 124423054
           name: The-Alchemist/perst
         - id: 569871553
@@ -29,6 +33,8 @@ data:
           name: apache/jackrabbit
         - id: 246343828
           name: atoti/atoti
+        - id: 40787594
+          name: aur-archive/gigabase
         - id: 396856161
           name: authzed/spicedb
         - id: 644742603
@@ -39,20 +45,28 @@ data:
           name: edgedb/edgedb
         - id: 15001136
           name: etoile/CoreObject
+        - id: 145843258
+          name: eyedb/eyedb
         - id: 42143916
           name: fern4lvarez/piladb
         - id: 240387847
           name: gaia-platform/GaiaPlatform
+        - id: 32137101
+          name: google-code-export/twig-persist
         - id: 48279725
           name: goshawkdb/server
         - id: 204261394
           name: iboxdb/db4o-gpl
         - id: 5453989
           name: jankotek/mapdb
+        - id: 37340459
+          name: jayhopeter/NDatabase
         - id: 119234782
           name: jonahharris/osdb-beaglesql
         - id: 1776883
           name: kimchy/compass
+        - id: 89699591
+          name: magma-database/magma
         - id: 25225465
           name: markmeeus/MarcelloDB
         - id: 273564373
@@ -71,9 +85,15 @@ data:
           name: pipelinedb/pipelinedb
         - id: 927442
           name: postgres/postgres
+        - id: 90349373
+          name: profanedb/ProfaneDB
         - id: 1917262
           name: realm/realm-core
+        - id: 16457385
+          name: sirlordt/NeoDatis
         - id: 3893984
           name: tzaeschke/zoodb
+        - id: 107304517
+          name: wware/FramerD
         - id: 7357595
           name: zopefoundation/ZODB

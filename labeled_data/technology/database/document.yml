@@ -11,6 +11,8 @@ data:
           name: AlaSQL/alasql
         - id: 61179047
           name: Alachisoft/NosDB
+        - id: 32611526
+          name: AnantLabs/terrastore
         - id: 522606931
           name: Anna-Team/AnnaDB
         - id: 396867188
@@ -23,6 +25,8 @@ data:
           name: FerretDB/FerretDB
         - id: 605189726
           name: FgForrest/evitaDB
+        - id: 404610048
+          name: Fl1yd/LightDB
         - id: 8313554
           name: Greg0/Lazer-Database
         - id: 10296238
@@ -35,6 +39,8 @@ data:
           name: LinkedInAttic/sensei
         - id: 646427433
           name: LonaDB/Hadro
+        - id: 50098469
+          name: Nexedi/neoppod
         - id: 188354257
           name: SequoiaDB/SequoiaDB
         - id: 474070793
@@ -87,6 +93,8 @@ data:
           name: couchbase/couchbase-lite-core
         - id: 9342529
           name: crate/crate
+        - id: 722117815
+          name: cursusdb/cursusdb
         - id: 249981301
           name: dappkit/aviondb
         - id: 4732384
@@ -161,8 +169,8 @@ data:
           name: oberasoftware/jasdb
         - id: 3788366
           name: openlink/virtuoso-opensource
-        - id: 192418550
-          name: oracle/nosql-go-sdk
+        - id: 298920362
+          name: oracle/nosql-java-sdk
         - id: 48617634
           name: orbitdb/orbit-db
         - id: 7083240
@@ -225,6 +233,8 @@ data:
           name: textileio/go-threads
         - id: 449924556
           name: tigrisdata/tigris
+        - id: 597066476
+          name: tontinton/dbeel
         - id: 86339169
           name: torodb/server
         - id: 184711
@@ -245,5 +255,7 @@ data:
           name: xtdb/xtdb
         - id: 456549280
           name: ydb-platform/ydb
+        - id: 574588439
+          name: ytsaurus/ytsaurus
         - id: 47479424
           name: zerodb/zerodb

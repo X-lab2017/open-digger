@@ -41,6 +41,8 @@ data:
           name: GlareDB/glaredb
         - id: 345982729
           name: GreatSQL/GreatSQL
+        - id: 274000765
+          name: GunterMueller/LEAP_RDBMS
         - id: 516821813
           name: HydrasDB/hydra
         - id: 858418
@@ -107,6 +109,8 @@ data:
           name: apavlo/h-store
         - id: 134193743
           name: apavlo/metalbase
+        - id: 40787594
+          name: aur-archive/gigabase
         - id: 143436277
           name: baidu/BaikalDB
         - id: 141378316
@@ -145,6 +149,8 @@ data:
           name: cozodb/cozo
         - id: 132361668
           name: cswinter/LocustDB
+        - id: 14090388
+          name: cznic/ql
         - id: 302827809
           name: datafuselabs/databend
         - id: 52507351
@@ -171,6 +177,8 @@ data:
           name: erikgrinaker/toydb
         - id: 59475316
           name: eventql/eventql
+        - id: 196702393
+          name: eyalroz/c-store
         - id: 388946490
           name: facebookincubator/velox
         - id: 40127179
@@ -181,6 +189,8 @@ data:
           name: fluree/db
         - id: 600860
           name: fosslc/Ingres
+        - id: 29210020
+          name: gavioto/fastdb
         - id: 148087762
           name: georgia-tech-db/eva
         - id: 3084708
@@ -307,6 +317,8 @@ data:
           name: stellarsql/StellarSQL
         - id: 12067343
           name: stephentu/silo
+        - id: 11734713
+          name: stewartsmith/drizzle
         - id: 436658287
           name: surrealdb/surrealdb
         - id: 591304097
@@ -331,6 +343,8 @@ data:
           name: vectorengine/vectorsql
         - id: 11008207
           name: vitessio/vitess
+        - id: 3900741
+          name: wundrian/csql
         - id: 19503320
           name: yaledb/calvin
         - id: 456549280

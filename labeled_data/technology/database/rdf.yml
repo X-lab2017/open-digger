@@ -9,6 +9,8 @@ data:
           name: 4store/4store
         - id: 8335020
           name: BrightstarDB/BrightstarDB
+        - id: 6235870
+          name: ansell/openrdf-sesame
         - id: 7437073
           name: apache/jena
         - id: 111333972
@@ -29,6 +31,8 @@ data:
           name: esarbanis/strabon
         - id: 305513242
           name: fluree/db
+        - id: 207484782
+          name: gurneyalex/cubicweb
         - id: 754873
           name: njh/redstore
         - id: 16710751

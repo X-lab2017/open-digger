@@ -9,16 +9,16 @@ data:
           name: EuclidOLAP/EuclidOLAP
         - id: 86868560
           name: TileDB-Inc/TileDB
-        - id: 17699493
-          name: cran/scidb
+        - id: 31373521
+          name: autermann/scidb
         - id: 96580430
           name: datajaguar/jaguardb
-        - id: 5407611
-          name: dioptre/rasdaman
         - id: 664133375
           name: epsilla-cloud/vectordb
         - id: 45732002
           name: jnidzwetzki/bboxdb
+        - id: 489656726
+          name: onefanwu/RasDaMan-v10.0
         - id: 162765004
           name: peermaps/eyros
         - id: 156942199
