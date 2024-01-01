@@ -5,13 +5,13 @@ data:
     - name: GitHub
       type: Code Hosting
       repos:
-        - id: 17699493
-          name: cran/scidb
-        - id: 5407611
-          name: dioptre/rasdaman
+        - id: 31373521
+          name: autermann/scidb
         - id: 1984888
           name: gregjurman/openqm
         - id: 34215181
           name: jrmarino/AdaBase
+        - id: 489656726
+          name: onefanwu/RasDaMan-v10.0
         - id: 61269853
           name: vanilladb/vanillacore

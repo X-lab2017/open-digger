@@ -17,6 +17,8 @@ data:
           name: PureSolTechnologies/DuctileDB
         - id: 84458512
           name: RedisGraph/RedisGraph
+        - id: 43494700
+          name: SparsityTechnologies/sparksee-server
         - id: 22475123
           name: amark/gun
         - id: 276293034
@@ -45,10 +47,14 @@ data:
           name: dyedgreen/cqlite
         - id: 668673665
           name: falkordb/falkordb
+        - id: 74678263
+          name: fanjinfei/grapheekdb
         - id: 305513242
           name: fluree/db
         - id: 47973088
           name: gchq/Gaffer
+        - id: 207484782
+          name: gurneyalex/cubicweb
         - id: 38727503
           name: hypergraphdb/hypergraphdb
         - id: 166429903
@@ -67,6 +73,8 @@ data:
           name: neo4j/neo4j
         - id: 7083240
           name: orientechnologies/orientdb
+        - id: 26917250
+          name: pkumod/gStore
         - id: 166387176
           name: polypheny/Polypheny-DB
         - id: 131763823
