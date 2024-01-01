@@ -480,7 +480,7 @@ const task: Task = {
     const exportUserInfo = async () => {
       let processedCount = 0;
       const userInfoQuery = `SELECT platform, b.actor_login, a.location, a.bio, a.name, a.company FROM
-    (SELECT 'GitHub' AS platform, id, location, bio, name, company FROM gh_user_info WHERE status='normal')a
+    (SELECT CAST('GitHub','Enum8(\\\'GitHub\\\'=1)') AS platform, id, location, bio, name, company FROM gh_user_info WHERE status='normal')a
     LEFT JOIN
     (SELECT id, platform, actor_login FROM ${exportUserTableName})b
     ON a.id = b.id AND a.platform = b.platform`;

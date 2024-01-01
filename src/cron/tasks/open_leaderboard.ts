@@ -12,7 +12,9 @@ const task: Task = {
 
     logger.info(`Start to run open leaderboard task.`);
 
-    const startYear = 2015, startMonth = 1, endYear = new Date().getFullYear(), endMonth = new Date().getMonth();
+    const startYear = 2015, startMonth = 1, now = new Date();
+    now.setMonth(now.getMonth() - 1);
+    const endYear = now.getFullYear(), endMonth = now.getMonth() + 1;
     const limit = 300;
     const allMonthes: string[] = [];
     await forEveryMonth(startYear, startMonth, endYear, endMonth, async (y, m) => allMonthes.push(`${y}${m}`));
