@@ -827,6 +827,38 @@ export const chaossNewContributors = async (config: QueryConfig<NewContributorsO
   return processQueryResult(result, ['new_contributors', 'detail']);
 }
 
+export const chaossContributors = async (config: QueryConfig) => {
+  config = getMergedConfig(config);
+  const whereClauses: string[] = ["type = 'PullRequestEvent' AND action = 'closed' AND pull_merged = 1"];
+  const repoWhereClause = await getRepoWhereClause(config);
+  if (repoWhereClause) whereClauses.push(repoWhereClause);
+  whereClauses.push(getTimeRangeWhereClause(config));
+
+  const sql = `
+SELECT
+  id,
+  ${getTopLevelPlatform(config)},
+  argMax(name, time) AS name,
+  ${getGroupArrayInsertAtClause(config, { key: 'contributors_count', value: 'count' })}
+FROM
+(
+  SELECT
+    ${getGroupTimeClause(config)},
+    ${getGroupIdClause(config)},
+    COUNT(DISTINCT issue_author_id) AS count
+  FROM events
+  WHERE ${whereClauses.join(' AND ')}
+  GROUP BY id, platform, time
+  ${getInnerOrderAndLimit(config, 'count')}
+)
+GROUP BY id, platform
+${getOutterOrderAndLimit(config, 'contributors_count')}`;
+
+  const result: any = await clickhouse.query(sql);
+  const ret = processQueryResult(result, ['count']);
+  return ret;
+}
+
 interface InactiveContributorsOptions {
   // time interval to determine inactive contributor, default: 6
   timeInterval: number;

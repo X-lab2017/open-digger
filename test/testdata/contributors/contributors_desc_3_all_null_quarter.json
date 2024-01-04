@@ -1,0 +1,61 @@
+{
+  "sql": "\nSELECT\n  id,\n  argMax(name, time) AS name,\n  groupArrayInsertAt(\n    0,\n    toUInt32(dateDiff('quarter', toDate('2015-1-1'), toDate('2016-12-1'))) + 1)(ROUND(inactive_contributors, 2),\n    toUInt32(dateDiff('quarter', toStartOfQuarter(toDate('2015-1-1')), time)-1)) AS inactive_contributors,\n  groupArrayInsertAt(\n    [],\n    toUInt32(dateDiff('quarter', toDate('2015-1-1'), toDate('2016-12-1'))) + 1)(detail,\n    toUInt32(dateDiff('quarter', toStartOfQuarter(toDate('2015-1-1')), time)-1)) AS detail\nFROM\n(\n  SELECT\n    id,\n    argMax(name, time) AS name,\n    time,\n    countIf(first_time < time AND contributions <= 0) AS inactive_contributors,\n    groupArrayIf(author, first_time < time AND contributions <= 0) AS detail\n  FROM\n  (\n    SELECT\n      arrayJoin(arrayMap(x -> dateAdd(quarter, x + 1, toDate('2015-1-1')), range(toUInt64(dateDiff('quarter', toDate('2015-1-1'), toDate('2017-1-1')))))) AS time,\n      repo_id AS id, argMax(repo_name, time) AS name,\n      actor_id, argMax(author, created_at) AS author,\n      min(created_at) AS first_time,\n      countIf(created_at >= dateSub(month, 6, time) AND created_at <= time) AS contributions\n    FROM\n    (\n      SELECT \n        repo_id,\n        repo_name,\n        org_id,\n        org_login,\n        issue_author_id AS actor_id, issue_author_login AS author,\n        created_at\n      FROM gh_events\n      WHERE type = 'PullRequestEvent' AND action = 'closed' AND pull_merged = 1 AND (org_id IN [1342004]) AND created_at < toDate('2017-1-1')\n      HAVING author NOT LIKE '%[bot]'\n    )\n    GROUP BY id, actor_id, time\n  )\n  GROUP BY id, time\n  \n)\nGROUP BY id\nORDER BY inactive_contributors[-1] DESC\n    LIMIT 3",
+  "modifiedOption": {
+    "orgIds": [
+      1342004
+    ],
+    "startYear": 2015,
+    "endYear": 2016,
+    "startMonth": 1,
+    "endMonth": 12,
+    "order": "DESC",
+    "limit": 3,
+    "limitOption": "all",
+    "groupTimeRange": "quarter",
+    "groupBy": null
+  },
+  "contributors_desc_3_all_null_quarter": [
+    {
+      "id": "19249835",
+      "name": "google/WebFundamentals",
+      "count": [
+        "15",
+        "24",
+        "27",
+        "37",
+        "50",
+        "41",
+        "53",
+        "51"
+      ]
+    },
+    {
+      "id": "23357588",
+      "name": "google/protobuf",
+      "count": [
+        "20",
+        "25",
+        "29",
+        "34",
+        "41",
+        "40",
+        "51",
+        "45"
+      ]
+    },
+    {
+      "id": "63809205",
+      "name": "google/oss-fuzz",
+      "count": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "3",
+        "40"
+      ]
+    }
+  ]
+}
