@@ -251,6 +251,15 @@ describe("Metrics tests", () => {
                   inactive_contributors_file_name
                 );
               });
+              it("should test contributors interface", async () => {
+                const contributors_file_name =
+                  `contributors_${order}_${limit}_${limitOption}_${groupBy}_${groupTimeRange}`.toLowerCase();
+                await validateData(
+                  openDigger.chaossContributors,
+                  "contributors",
+                  contributors_file_name
+                );
+              });
               it("should test changeRequestsAcceptanceRatio interface", async () => {
                 const change_requests_acceptance_ratio_file_name =
                   `change_requests_acceptance_ratio_${order}_${limit}_${limitOption}_${groupBy}_${groupTimeRange}`.toLowerCase();
