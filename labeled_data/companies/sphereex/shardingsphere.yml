@@ -1,0 +1,35 @@
+name: Apache ShardingSphere
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 49876476
+          name: apache/shardingsphere
+        - id: 469617187
+          name: apache/shardingsphere-on-cloud
+        - id: 290750940
+          name: apache/shardingsphere-externals
+        - id: 108520836
+          name: apache/shardingsphere-elasticjob-example
+        - id: 205305416
+          name: apache/shardingsphere-benchmark
+        - id: 42304749
+          name: apache/shardingsphere-elasticjob
+        - id: 273413138
+          name: apache/shardingsphere-ui
+        - id: 114619810
+          name: apache/shardingsphere-elasticjob-cloud
+        - id: 104061241
+          name: apache/shardingsphere-example
+        - id: 688760465
+          name: apache/shardingsphere-plugin
+        - id: 104064722
+          name: apache/shardingsphere-doc
+        - id: 226069556
+          name: apache/shardingsphere-acceptance-test
+        - id: 108524094
+          name: apache/shardingsphere-elasticjob-doc
+        - id: 279800971
+          name: apache/shardingsphere-elasticjob-ui

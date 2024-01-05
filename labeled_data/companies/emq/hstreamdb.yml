@@ -1,0 +1,9 @@
+name: HStreamDB
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 69663318
+          name: hstreamdb

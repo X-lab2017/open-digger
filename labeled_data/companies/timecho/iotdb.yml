@@ -1,0 +1,25 @@
+name: Apache IoTDB
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 158975124
+          name: apache/iotdb
+        - id: 663487567
+          name: apache/iotdb-docs
+        - id: 159762560
+          name: apache/iotdb-website
+        - id: 318786861
+          name: apache/iotdb-client-go
+        - id: 342796467
+          name: apache/iotdb-bin-resources
+        - id: 565313329
+          name: apache/iotdb-tsfile-viewer
+        - id: 644878540
+          name: apache/iotdb-client-csharp
+        - id: 393402473
+          name: apache/iotdb-web-workbench
+        - id: 598585820
+          name: apache/iotdb-backup-tool

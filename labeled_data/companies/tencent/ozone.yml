@@ -1,0 +1,21 @@
+name: Apache Ozone
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 313377132
+          name: apache/ozone-docker-runner
+        - id: 167555469
+          name: apache/ozone-site
+        - id: 212382406
+          name: apache/ozone
+        - id: 313377243
+          name: apache/ozone-docker-testkrb5
+        - id: 354122574
+          name: apache/ozone-go
+        - id: 168247399
+          name: apache/ozone-docker
+        - id: 313376570
+          name: apache/ozone-docker-builder

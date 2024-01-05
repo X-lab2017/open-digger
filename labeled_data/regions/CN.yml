@@ -68,54 +68,38 @@ data:
     - :companies/espressif
     - :companies/primihub
     - :companies/greatdb
+    - :companies/segmentfault
     - :communities/openmmlab
     - :communities/xlab
     - :communities/mulan
+    - :foundations/openatom
     - :projects/skywalking
   platforms:
     - name: GitHub
       type: Code Hosting
       repos:
-        - id: 49876476
-          name: apache/shardingsphere
-        - id: 180481986
-          name: apache/apisix
         - id: 60844036
           name: shadowsocks/ShadowsocksX-NG
         - id: 173335706
           name: apache/incubator-dolphinscheduler
         - id: 40345658
           name: recharts/recharts
-        - id: 99919302
-          name: apache/incubator-doris
         - id: 129345192
           name: consenlabs/token-profile
-        - id: 70746484
-          name: apache/tvm
         - id: 131770422
           name: neoclide/coc.nvim
         - id: 7600409
           name: shadowsocks/shadowsocks-windows
         - id: 50613991
           name: goharbor/harbor
-        - id: 48833910
-          name: tikv/tikv
-        - id: 309874357
-          name: dragonflyoss/Dragonfly2
         - id: 150713223
           name: kubeedge/kubeedge
         - id: 199763479
           name: bfenetworks/bfe
-        - id: 206213815
-          name: chaos-mesh/chaos-mesh
-        - id: 175192867
-          name: chaosblade-io/chaosblade
         - id: 171396748
           name: chubaofs/chubaofs
         - id: 86123872
           name: cni-genie/CNI-Genie
-        - id: 278954673
-          name: fluid-cloudnative/fluid
         - id: 263214582
           name: alibaba/inclavare-containers
         - id: 311639195
@@ -146,28 +130,10 @@ data:
           name: volcano-sh/volcano
         - id: 224908244
           name: WasmEdge/WasmEdge
-        - id: 173335706
-          name: Apache/DolphinScheduler
-        - id: 9185792
-          name: Apache/ECharts
-        - id: 212382406
-          name: Apache/Ozone
-        - id: 158975124
-          name: Apache/IoTDB
-        - id: 180481986
-          name: Apache/APISIX
-        - id: 4710920
-          name: Apache/Dubbo
-        - id: 45721011
-          name: Apache/Skywalking
         - id: 82035099
           name: Apache/Griffin
         - id: 91674936
           name: Apache/servicecomb-java-chassis
-        - id: 41952293
-          name: Apache/HAWQ
-        - id: 75164823
-          name: Apache/RocketMQ
         - id: 62117818
           name: Apache/CarbonData
         - id: 28738447
@@ -186,15 +152,11 @@ data:
           name: Apache/incubator-inlong
         - id: 195861277
           name: Apache/incubator-teaclave
-        - id: 102343794
-          name: Apache/brpc
       orgs:
         - id: 12165287
           name: ossrs
         - id: 36865262
           name: projectacrn
-        - id: 45012756
-          name: occlum
         - id: 50487650
           name: cloud-hypervisor
         - id: 54415384
@@ -205,14 +167,10 @@ data:
           name: XGVela
         - id: 64147991
           name: ifeilong
-        - id: 26734561
-          name: openmessaging
         - id: 92902569
           name: nextarchfoundation
         - id: 56990927
           name: sodafoundation
-        - id: 42138346
-          name: TarsCloud
       users:
         - id: 1740859
           name: zhenglaizhang

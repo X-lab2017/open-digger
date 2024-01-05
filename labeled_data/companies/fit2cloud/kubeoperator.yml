@@ -1,0 +1,9 @@
+name: KubeOperator
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 52770786
+          name: KubeOperator

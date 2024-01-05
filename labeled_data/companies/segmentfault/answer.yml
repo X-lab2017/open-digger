@@ -1,0 +1,13 @@
+name: Apache Answer
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 542931741
+          name: apache/incubator-answer
+        - id: 550599803
+          name: apache/incubator-answer-website
+        - id: 595981898
+          name: apache/incubator-answer-plugins

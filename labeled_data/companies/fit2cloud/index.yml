@@ -1,19 +1,10 @@
 name: Fit2Cloud
 type: Company
 data:
-  platforms:
-    - name: GitHub
-      type: Code Hosting
-      orgs:
-        - id: 6006570
-          name: jumpserver
-        - id: 56869043
-          name: metersphere
-        - id: 75054108
-          name: dataease
-        - id: 48195280
-          name: halo-dev
-        - id: 52770786
-          name: KubeOperator
-        - id: 109613420
-          name: 1Panel-dev
+  labels:
+    - 1panel
+    - dataease
+    - halo
+    - jumpserver
+    - kubeoperator
+    - metersphere

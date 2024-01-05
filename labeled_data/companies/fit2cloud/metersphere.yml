@@ -1,0 +1,9 @@
+name: MeterSphere
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 56869043
+          name: metersphere

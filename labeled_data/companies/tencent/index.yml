@@ -5,6 +5,7 @@ data:
     - opencloudos
     - tbase
     - tobudos
+    - ozone
   platforms:
     - name: GitHub
       type: Code Hosting

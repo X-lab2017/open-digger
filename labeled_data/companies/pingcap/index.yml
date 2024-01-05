@@ -1,11 +1,13 @@
 name: PingCAP
 type: Company
 data:
+  labels:
+    - tidb
+    - tikv
+    - chaos_mesh
   platforms:
     - name: GitHub
       type: Code Hosting
       orgs:
         - id: 11855343
           name: pingcap
-        - id: 41004122
-          name: tikv

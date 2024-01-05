@@ -1,9 +1,5 @@
 name: Timecho
 type: Company
 data:
-  platforms:
-    - name: GitHub
-      type: Code Hosting
-      repos:
-        - id: 158975124
-          name: apache/iotdb
+  labels:
+    - iotdb

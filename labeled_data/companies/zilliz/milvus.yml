@@ -1,0 +1,9 @@
+name: Milvus
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 51735404
+          name: milvus-io

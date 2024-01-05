@@ -1,9 +1,5 @@
 name: TAOS Data
 type: Company
 data:
-  platforms:
-    - name: GitHub
-      type: Code Hosting
-      orgs:
-        - id: 48876650
-          name: taosdata
+  labels:
+    - tdengine
