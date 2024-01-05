@@ -7,7 +7,7 @@ data:
       orgs:
         - id: 36956638
           name: sofastack
-    - name: GitHub
+    - name: Gitee
       type: Code Hosting
       orgs:
         - id: 1861256
