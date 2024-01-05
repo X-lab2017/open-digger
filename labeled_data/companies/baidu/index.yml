@@ -9,6 +9,7 @@ data:
     - mesalock
     - paddle
     - xuperchain
+    - doris
   platforms:
     - name: GitHub
       type: Code Hosting

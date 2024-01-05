@@ -1,0 +1,23 @@
+name: Apache Doris
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 99919302
+          name: apache/doris
+        - id: 149782046
+          name: apache/doris-website
+        - id: 457619173
+          name: apache/doris-spark-connector
+        - id: 458226256
+          name: apache/doris-flink-connector
+        - id: 616774259
+          name: apache/doris-shade
+        - id: 520709428
+          name: apache/doris-thirdparty
+        - id: 636304767
+          name: apache/doris-sdk
+        - id: 457619500
+          name: apache/doris-manager
