@@ -1,0 +1,11 @@
+name: Segment Fault
+type: Company
+data:
+  labels:
+    - answer
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 6038130
+          name: segmentfault

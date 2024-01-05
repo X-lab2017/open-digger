@@ -1,0 +1,9 @@
+name: 1Panel
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 109613420
+          name: 1Panel-dev

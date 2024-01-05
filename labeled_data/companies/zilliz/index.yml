@@ -1,9 +1,5 @@
 name: Zilliz
 type: Company
 data:
-  platforms:
-    - name: GitHub
-      type: Code Hosting
-      orgs:
-        - id: 51735404
-          name: milvus-io
+  labels:
+    - milvus

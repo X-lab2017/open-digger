@@ -1,0 +1,71 @@
+name: TiDB
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 41986369
+          name: pingcap/tidb
+        - id: 167499157
+          name: pingcap/tiflash
+        - id: 201455508
+          name: pingcap/tiflow
+        - id: 53292445
+          name: pingcap/tipb
+        - id: 588100173
+          name: pingcap/TiDB-Lambda-integration
+        - id: 632854984
+          name: pingcap/Auto-GPT-TiDB-Serverless-Plugin
+        - id: 523164389
+          name: pingcap/tidb-loadbalance
+        - id: 647137292
+          name: pingcap/wordpress-tidb-docker
+        - id: 230847070
+          name: pingcap/tidb-dashboard
+        - id: 143867478
+          name: pingcap/tidb-operator
+        - id: 531759822
+          name: pingcap/tidb-prisma-vercel-demo
+        - id: 605427908
+          name: pingcap/realtime-hackernewsdb-on-serverless
+        - id: 363920445
+          name: pingcap/tidb-dev-guide
+        - id: 152034043
+          name: pingcap/tidb-engine-ext
+        - id: 245380091
+          name: pingcap/docs-tidb-operator
+        - id: 392572648
+          name: pingcap/activerecord-tidb-adapter
+        - id: 113398104
+          name: pingcap/tidb-vision
+        - id: 204888772
+          name: pingcap/br
+        - id: 241903378
+          name: pingcap/tiup
+        - id: 64188788
+          name: pingcap/docs-cn
+        - id: 387654465
+          name: pingcap/tiunimanager-ui
+        - id: 715672819
+          name: pingcap/wordpress-tidb-plugin
+        - id: 93518223
+          name: pingcap/tidb-tools
+        - id: 224096540
+          name: pingcap/sysutil
+        - id: 462980491
+          name: pingcap/tidb-course-201-lab
+        - id: 90061538
+          name: pingcap/tispark
+        - id: 226638340
+          name: pingcap/tipocket
+        - id: 476565626
+          name: pingcap/dbt-tidb
+        - id: 194829679
+          name: pingcap/diag
+        - id: 67385952
+          name: pingcap/tidb-binlog
+        - id: 395190459
+          name: pingcap/sqlalchemy-tidb
+        - id: 63995402
+          name: pingcap/docs

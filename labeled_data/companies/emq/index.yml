@@ -1,11 +1,6 @@
 name: EMQ
 type: Company
 data:
-  platforms:
-    - name: GitHub
-      type: Code Hosting
-      orgs:
-        - id: 25221711
-          name: emqx
-        - id: 69663318
-          name: hstreamdb
+  labels:
+    - emqx
+    - hstreamdb

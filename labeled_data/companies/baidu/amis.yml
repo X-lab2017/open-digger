@@ -1,0 +1,9 @@
+name: amis
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 183874244
+          name: baidu/amis

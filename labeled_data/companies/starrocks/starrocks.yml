@@ -1,0 +1,9 @@
+name: StarRocks
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 88238841
+          name: StarRocks

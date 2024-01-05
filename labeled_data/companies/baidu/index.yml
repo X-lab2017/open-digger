@@ -2,6 +2,7 @@ name: Baidu
 type: Company
 data:
   labels:
+    - amis
     - apollo
     - brpc
     - echarts

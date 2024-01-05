@@ -1,0 +1,9 @@
+name: DataEase
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 75054108
+          name: dataease
