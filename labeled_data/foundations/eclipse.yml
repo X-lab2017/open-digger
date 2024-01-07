@@ -1,0 +1,11 @@
+name: Eclipse Foundation
+type: Foundation
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 56974
+          name: eclipse
+        - id: 46826618
+          name: eclipse-archived
