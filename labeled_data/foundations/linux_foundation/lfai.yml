@@ -1,0 +1,9 @@
+name: LF AI & Data Foundation
+type: Foundation
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 45347303
+          name: lfai

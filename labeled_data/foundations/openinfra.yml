@@ -1,0 +1,16 @@
+name: OpenInfra Foundation
+type: Foundation
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 7193327
+          name: openstack-infra/zuul
+      orgs:
+        - id: 324574 
+          name: openstack
+        - id: 60524195 
+          name: starlingx
+        - id: 33289952
+          name: kata-containers
