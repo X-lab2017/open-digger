@@ -45,6 +45,8 @@ interface LabelItem {
     type: string;
     data: any;
   },
+  parents: string[];
+  children: string[];
   parsed: boolean;
   platforms: CodeHostingPlatformData[];
 }
@@ -53,6 +55,8 @@ interface ParsedLabelItem {
   identifier: string;
   type: string;
   name: string;
+  parents: string[];
+  children: string[];
   platforms: CodeHostingPlatformData[];
 }
 
@@ -72,6 +76,8 @@ export function getLabelData(injectLabelData?: any[]): ParsedLabelItem[] {
       identifier,
       content,
       platforms: [],
+      parents: [],
+      children: [],
       parsed: false,
     });
   });
@@ -100,6 +106,8 @@ function processLabelItems(map: Map<string, LabelItem>): ParsedLabelItem[] {
       type: item.content.type,
       name: item.content.name,
       platforms: item.platforms,
+      parents: item.parents,
+      children: item.children,
     };
     return ret;
   });
@@ -154,6 +162,9 @@ function parseItem(item: LabelItem, map: Map<string, LabelItem>) {
             parseItem(innerItem, map);
           }
 
+          // set parents and children relationships
+          innerItem.parents.push(item.identifier);
+          item.children.push(innerItem.identifier);
           // merge platforms
           item.platforms = mergePlatforms(item.platforms, innerItem.platforms);
         }
