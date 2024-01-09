@@ -1,10 +1,12 @@
-name: CNCF
+name: Cloud Native Computing Foundation
 type: Foundation
 data:
   platforms:
     - name: GitHub
       type: Code Hosting
       repos:
+        - id: 20580498
+          name: kubernetes/kubernetes
         - id: 50613991
           name: goharbor/harbor
         - id: 48833910
