@@ -1,0 +1,8 @@
+name: Infrastructure
+type: Tech-2
+data:
+  labels:
+    - data
+    - document
+    - platform_and_environment
+    - vector_database
