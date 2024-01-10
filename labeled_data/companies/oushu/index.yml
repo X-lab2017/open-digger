@@ -7,3 +7,6 @@ data:
       repos:
         - id: 41952293
           name: apache/hawq
+      orgs:
+        - id: 20734418
+          name: oushu-io

@@ -9,3 +9,6 @@ data:
           name: merico-dev
         - id: 94812175
           name: devstream-io
+      repos:
+        - id: 384111310
+          name: apache/incubator-devlake
