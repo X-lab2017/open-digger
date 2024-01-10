@@ -1,0 +1,27 @@
+name: LF Networking Foundation
+type: Foundation
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 116847664
+          name: anuket-project
+        - id: 29782595
+          name: FDio
+        - id: 81707206
+          name: l3af-project
+        - id: 67476210
+          name: ODIM-Project
+        - id: 25933741
+          name: onap
+        - id: 4093028
+          name: opendaylight
+        - id: 36871657
+          name: tungstenfabric
+        - id: 64113964
+          name: XGVela
+
+
+
+
