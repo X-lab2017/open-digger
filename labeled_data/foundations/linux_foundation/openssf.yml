@@ -1,0 +1,22 @@
+name: OpenSSF Foundation
+type: Foundation
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 67707773
+          name: ossf
+        - id: 111393891
+          name: guacsec
+        - id: 127987161
+          name: gittuf
+        - id: 130160957
+          name: repository-service-tuf
+        - id: 123025998
+          name: sbomit
+        - id: 71096353
+          name: sigstore
+      repos:
+        - id: 39528049
+          name: coreinfrastructure/best-practices-badge
