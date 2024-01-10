@@ -1,0 +1,21 @@
+name: RICSV Foundation
+type: Foundation
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 10872782
+          name: riscv
+        - id: 89536104
+          name: riscv-collab
+        - id: 89279762
+          name: riscv-non-isa
+        - id: 83098176
+          name: riscv-admin
+        - id: 89536631
+          name: riscv-software-src
+        - id: 89434967
+          name: riscv-android-src
+        - id: 81319613
+          name: riscvarchive

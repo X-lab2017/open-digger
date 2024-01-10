@@ -1,0 +1,9 @@
+name: FinOps Foundation
+type: Foundation
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 64022381
+          name: finopsfoundation
