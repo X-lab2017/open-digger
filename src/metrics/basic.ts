@@ -233,18 +233,18 @@ export const getLabelGroupConditionClause = (config: QueryConfig): string => {
 
   type resultMapType = Map<string, { labels: string[][], platforms: Map<string, { repoIds: number[], orgIds: number[], userIds: number[] }> }>;
   const resultMap: resultMapType = new Map();
-  const addToResultMap = (map: resultMapType, id: string, labels: string[][], type: 'repo' | 'org' | 'user') => {
-    const key = labels[0].toString();
-    if (!map.has(key)) map.set(key, { labels, platforms: new Map<string, { repoIds: number[], orgIds: number[], userIds: number[] }>() });
+  const addToResultMap = (id: string, labels: string[][], type: 'repo' | 'org' | 'user') => {
+    const key = labels.map(l => l.join(':')).sort().join(',');
+    if (!resultMap.has(key)) resultMap.set(key, { labels, platforms: new Map<string, { repoIds: number[], orgIds: number[], userIds: number[] }>() });
     const [platform, entryId] = id.split('_');
-    if (!map.get(key)!.platforms.has(platform)) map.get(key)!.platforms.set(platform, { repoIds: [], orgIds: [], userIds: [] });
-    if (type === 'repo') map.get(key)!.platforms.get(platform)!.repoIds.push(+entryId);
-    else if (type === 'org') map.get(key)!.platforms.get(platform)!.orgIds.push(+entryId);
-    else if (type === 'user') map.get(key)!.platforms.get(platform)!.userIds.push(+entryId);
+    if (!resultMap.get(key)!.platforms.has(platform)) resultMap.get(key)!.platforms.set(platform, { repoIds: [], orgIds: [], userIds: [] });
+    if (type === 'repo') resultMap.get(key)!.platforms.get(platform)!.repoIds.push(+entryId);
+    else if (type === 'org') resultMap.get(key)!.platforms.get(platform)!.orgIds.push(+entryId);
+    else if (type === 'user') resultMap.get(key)!.platforms.get(platform)!.userIds.push(+entryId);
   }
-  idLabelRepoMap.forEach((labels, id) => addToResultMap(resultMap, id, labels, 'repo'));
-  idLabelOrgMap.forEach((labels, id) => addToResultMap(resultMap, id, labels, 'org'));
-  idLabelUserMap.forEach((labels, id) => addToResultMap(resultMap, id, labels, 'user'));
+  idLabelRepoMap.forEach((labels, id) => addToResultMap(id, labels, 'repo'));
+  idLabelOrgMap.forEach((labels, id) => addToResultMap(id, labels, 'org'));
+  idLabelUserMap.forEach((labels, id) => addToResultMap(id, labels, 'user'));
 
   const idConditions = Array.from(resultMap.values()).map(v => {
     const c: string[] = [];
