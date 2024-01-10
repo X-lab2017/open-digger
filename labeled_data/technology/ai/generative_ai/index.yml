@@ -5,6 +5,7 @@ data:
     - model
     - tool
     - application
+    - infrastructure
   platforms:
     - name: GitHub
       type: Code Hosting

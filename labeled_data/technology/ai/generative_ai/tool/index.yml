@@ -1,6 +1,11 @@
 name: Tool
-type: Tech-1
+type: Tech-2
 data:
+  labels:
+    - deployment_tool
+    - develop_tool
+    - production_monitor
+    - prompt_engineering
   platforms:
     - name: GitHub
       type: Code Hosting
