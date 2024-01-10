@@ -3,3 +3,9 @@ type: Company
 data:
   labels:
     - shardingsphere
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 83386009
+          name: SphereEx

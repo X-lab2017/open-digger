@@ -7,3 +7,6 @@ data:
       repos:
         - id: 28738447
           name: apache/kylin
+      orgs:
+        - id: 17005771
+          name: Kyligence
