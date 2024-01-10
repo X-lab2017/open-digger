@@ -1,0 +1,42 @@
+name: LF Edge Foundation
+type: Foundation
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 52763088
+          name: akraino-edge-stack
+        - id: 64284500
+          name: project-alvarium
+        - id: 54415384
+          name: baetyl
+        - id: 27781926
+          name: edgexfoundry
+        - id: 47366123
+          name: lf-edge
+        - id: 58569308
+          name: fido-device-onboard
+        - id: 55115158
+          name: fledge-iot
+        - id: 23428971
+          name: nanomq
+        - id: 142855102
+          name: nexoedge
+        - id: 22371287
+          name: open-horizon
+        - id: 39313637
+          name: State-of-the-Edge
+
+
+akraino-edge-stack
+project-alvarium
+baetyl
+edgexfoundry
+lf-edge
+fido-device-onboard
+fledge-iot
+nanomq
+nexoedge
+open-horizon
+State-of-the-Edge
