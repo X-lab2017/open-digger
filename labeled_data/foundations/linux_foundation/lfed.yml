@@ -27,16 +27,3 @@ data:
           name: open-horizon
         - id: 39313637
           name: State-of-the-Edge
-
-
-akraino-edge-stack
-project-alvarium
-baetyl
-edgexfoundry
-lf-edge
-fido-device-onboard
-fledge-iot
-nanomq
-nexoedge
-open-horizon
-State-of-the-Edge
