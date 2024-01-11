@@ -1,6 +1,10 @@
-name: Model
-type: Tech-1
+name: Artificial Intelligence - Generative Artificial Intelligence - Model
+type: Tech-2
 data:
+  labels:
+    - framework_and_architecture
+    - fundamental_model
+    - variant_model
   platforms:
     - name: GitHub
       type: Code Hosting

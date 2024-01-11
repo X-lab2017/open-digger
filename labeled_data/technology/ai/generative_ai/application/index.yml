@@ -1,6 +1,13 @@
-name: Application
-type: Tech-1
+name: Artificial Intelligence - Generative Artificial Intelligence - Application
+type: Tech-2
 data:
+  labels:
+    - audio
+    - code
+    - image
+    - text
+    - other
+    - video
   platforms:
     - name: GitHub
       type: Code Hosting
