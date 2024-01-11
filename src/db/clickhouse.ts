@@ -9,6 +9,10 @@ async function getClient() {
   return _client;
 }
 
+export async function getNewClient() {
+  return createClient((await getConfig()).db.clickhouse);
+}
+
 export async function query<T>(q: string, options: any = {}): Promise<T[]> {
   const result: T[] = [];
   await queryStream(q, row => result.push(row), options);
