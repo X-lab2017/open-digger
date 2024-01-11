@@ -6,7 +6,7 @@ import { getRepoActivity, getRepoOpenrank, getUserActivity, getUserOpenrank, get
 import { forEveryMonthByConfig, forEveryQuarterByConfig, forEveryYearByConfig, timeDurationConstants } from '../../metrics/basic';
 import { getLogger, waitFor } from '../../utils';
 import getConfig from '../../config';
-import { chaossActiveDatesAndTimes, chaossBusFactor, chaossChangeRequestAge, chaossChangeRequestResolutionDuration, chaossChangeRequestResponseTime, chaossChangeRequestReviews, chaossChangeRequests, chaossChangeRequestsAccepted, chaossCodeChangeLines, chaossInactiveContributors, chaossIssueAge, chaossIssueResolutionDuration, chaossIssueResponseTime, chaossIssuesAndChangeRequestActive, chaossIssuesClosed, chaossIssuesNew, chaossNewContributors, chaossTechnicalFork } from '../../metrics/chaoss';
+import { chaossActiveDatesAndTimes, chaossBusFactor, chaossChangeRequestAge, chaossChangeRequestResolutionDuration, chaossChangeRequestResponseTime, chaossChangeRequestReviews, chaossChangeRequests, chaossChangeRequestsAccepted, chaossCodeChangeLines, chaossContributors, chaossInactiveContributors, chaossIssueAge, chaossIssueResolutionDuration, chaossIssueResponseTime, chaossIssuesAndChangeRequestActive, chaossIssuesClosed, chaossIssuesNew, chaossNewContributors, chaossTechnicalFork } from '../../metrics/chaoss';
 import { contributorEmailSuffixes, repoIssueComments, repoParticipants, repoStars } from '../../metrics/metrics';
 import { getLabelData } from '../../label_data_utils';
 import { EOL } from 'os';
@@ -295,6 +295,8 @@ const task: Task = {
           { targetKey: 'bus_factor_detail', ...arrayFieldOption })]);
         // [CHAOSS] issues active
         await processMetric(chaossIssuesAndChangeRequestActive, option, getField('count', { targetKey: 'issues_and_change_request_active' }));
+        // [CHAOSS] contributors
+        await processMetric(chaossContributors, option, [getField('count', { targetKey: 'contributors' }), getField('detail', { targetKey: 'contributors_detail', ...arrayFieldOption })]);
         // [CHAOSS] new contributors
         await processMetric(chaossNewContributors, option, [getField('new_contributors'), getField('detail', { targetKey: 'new_contributors_detail', ...arrayFieldOption })]);
         // [CHAOSS] inactive contributors
