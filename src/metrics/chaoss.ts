@@ -839,12 +839,14 @@ SELECT
   id,
   ${getTopLevelPlatform(config)},
   argMax(name, time) AS name,
-  ${getGroupArrayInsertAtClause(config, { key: 'contributors_count', value: 'count' })}
+  ${getGroupArrayInsertAtClause(config, { key: 'contributors_count', value: 'count' })},
+  ${getGroupArrayInsertAtClause(config, { key: 'detail', noPrecision: true, defaultValue: '[]' })}
 FROM
 (
   SELECT
     ${getGroupTimeClause(config)},
     ${getGroupIdClause(config)},
+    groupArray(DISTINCT(issue_author_login)) AS detail,
     COUNT(DISTINCT issue_author_id) AS count
   FROM events
   WHERE ${whereClauses.join(' AND ')}
@@ -855,7 +857,7 @@ GROUP BY id, platform
 ${getOutterOrderAndLimit(config, 'contributors_count')}`;
 
   const result: any = await clickhouse.query(sql);
-  const ret = processQueryResult(result, ['count']);
+  const ret = processQueryResult(result, ['count', 'detail']);
   return ret;
 }
 
