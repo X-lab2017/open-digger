@@ -1,73 +1,143 @@
-import js2py
-import os
-import re
+import copy
+import pandas as pd
+
+from node_vm2 import NodeVM
 
 
-# def path_format(matched):
-#     return ''.join(list(map(lambda s: str(s).replace('\\', '/'), str(matched.group()))))
-#
-# cur_dir = os.path.abspath('.').replace('\\', '/')
-# local_lib = cur_dir
-# a = js2py.require('./node_modules/add_numbers1', update=True)
-# a = js2py.require('./node_modules/add_numbers1', update=True, local_lib=local_lib)
-# a = js2py.require(os.path.join(local_lib, 'node_modules/add_numbers1').replace('\\', '/'), update=True)
-# print(a(2, 3))
-#
-# # js2py.require('./node_modules/index')
-# js_path = './node_modules/index.js'
-# js_abs_path = os.path.join(cur_dir, js_path).replace('\\', '/')
-# local_lib = os.path.dirname(js_abs_path)
-# with open(js_path, 'r', encoding='utf-8') as f:
-#    js_index = f.read()
-# js_index = re.sub("require\(.+\)", path_format, js_index)
-# js_index = js_index.replace('../', os.path.dirname(local_lib) + '/').replace('./', local_lib + '/')
-# context = js2py.EvalJs(enable_require=True)
-# context.execute(js_index)
-# f_add_index = context.eval("addNumbers")
-# print('addNumber: %s, var s: %s' % (f_add_index(2, 3), context.s))
+class Obj(object):
+    def __init__(self, d):
+        for k, v in d.items():
+            if isinstance(v, (list, tuple)):
+                setattr(self, k, [Obj(x) if isinstance(x, dict) else x for x in v])
+            else:
+                setattr(self, k, Obj(v) if isinstance(v, dict) else v)
+
+            getattr(self, k)
+
+    def __getattr__(self, name):
+        try:
+            return self.__getattribute__(name)
+        except AttributeError as e:
+            msg = str(e) + f" for {self}!"
+            raise AttributeError(msg)
 
 
-def path_format(matched):
-    return ''.join(list(map(lambda s: str(s).replace('\\', '/'), str(matched.group()))))
+class NodeVMFuncGen(object):
+    def __init__(self, func_name='_', vm_rt=None, *args, **kwargs):
+        self.func_name = func_name
+        self.vm_rt = vm_rt
+        self.args = args
+        self.kwargs = kwargs
+        self.func = self.func_impl
+        return
+
+    def func_impl(self, *args, **kwargs):
+        kwargs = kwargs or self.kwargs
+        vm_rt = kwargs.pop("vm_rt", None) or self.vm_rt
+        res = vm_rt.call_member(self.func_name, *args, **kwargs)
+        return res
 
 
-cur_dir = os.path.abspath('.').replace('\\', '/')
-js_path = '../src/open_digger.js'
-js_abs_path = os.path.abspath(js_path).replace('\\', '/')
-local_lib = os.path.dirname(js_abs_path)
-with open(js_abs_path, 'r', encoding='utf-8') as f:
-   js_open_digger = f.read()
-js_open_digger = re.sub("require\(.+\)", path_format, js_open_digger)
-js_open_digger = js_open_digger.replace('../', os.path.dirname(local_lib) + '/').replace('./', local_lib + '/')
-context = js2py.EvalJs(enable_require=True)
-context.execute(js_open_digger)
-openDigger = context.openDigger
+vm_option = {
+    # 'console': 'inherit',
+    # "wrapper": 'commonjs',
+    # 'sandbox': {},
+    'require': {
+        'external': '../lib',
+        # 'builtin': ['os'],
+        # 'import': ["ijavascript-plotly"],
+        'root': '../',
+        # 'mock': { }
+    }
+}
+
+
+def apply_export_template(var_str, module_index_str):
+    return f"exports.{var_str} = {module_index_str};"
+
+
+def formTree(path_nodes_list, leaf_node_list):
+    tree_root = {}
+    for path_nodes, leaf_node in zip(path_nodes_list, leaf_node_list):
+        curr_tree = tree_root
+        for i, key_node in enumerate(path_nodes):
+            if i >= len(path_nodes) - 1:
+                curr_tree[key_node] = leaf_node
+                break
+            if key_node not in curr_tree:
+                curr_tree[key_node] = {}
+            curr_tree = curr_tree[key_node]
+    return tree_root
+
+
+def get_export_module(vm, js_code, **kwargs):
+    js_export_indexes = """
+    function getObjElemIndex(obj, parent_path, res) {
+        for (let key in obj) {
+            child_path = parent_path + `.${key}`;
+            if (typeof obj[key] === 'object') {
+                getObjElemIndex(obj[key], child_path, res); // 递归调用自身处理子对象
+            } else {
+                res.push(child_path);
+            }
+        }
+    }
+    var exportIndexes = [];
+    getObjElemIndex(openDigger, 'openDigger', exportIndexes);
+    exports.exportIndexes = exportIndexes;
+    """
+    js_code += js_export_indexes
+    vm_rt = vm.run(js_code)
+    export_indexes = vm_rt.get_member("exportIndexes")
+    export_vars = [s.replace('.', '_') for s in export_indexes]
+
+    if kwargs.get("show_indexes", False):
+        df_export_module = pd.DataFrame({"export_vars": export_vars, "export_indexes": export_indexes})
+        pd.set_option('display.max_colwidth', kwargs.get("max_colwidth", 60))
+        print(df_export_module)
+
+    # js export template: "exports.openDigger_label_getLabelData = openDigger.label.getLabelData;"
+    exports_statements = list(map(apply_export_template, export_vars, export_indexes))
+    exports_extend_str = '\n'.join(exports_statements)
+    js_open_digger_exports_extended = js_code + exports_extend_str
+    vm_rt = vm.run(js_open_digger_exports_extended)
+
+    export_indexes_split = [str(s).split('.') for s in export_indexes]
+    # Initialize vm_rt in the constructor
+    func_leaf_list = [NodeVMFuncGen(var_str, vm_rt=vm_rt).func for var_str in export_vars]
+    export_dict = formTree(export_indexes_split, func_leaf_list)
+    export_module = Obj(export_dict)
+    return export_module
 
 
 if __name__ == '__main__':
-   # https://github.com/PiotrDabkowski/Js2Py/issues/125#issuecomment-1880148120
-   print(openDigger.index)
-   print(openDigger.metric.chaoss)
-   print(openDigger.index.activity.getRepoActivity)
-
-   year = 2022
-   startMonth = 1
-   endMonth = 12
-   baseOptions = {
+    year = 2023
+    startMonth = 1
+    endMonth = 12
+    baseOptions = {
        "startYear": year,
        "endYear": year,
        "startMonth": startMonth,
        "endMonth": endMonth,
        "groupTimeRange": 'year',
        "order": 'DESC'
-   }
-   options_temp = {}
-   options = {}
-   options_temp.update(options)
-   options_temp.update(baseOptions)
-   options = options_temp
-   openrank = openDigger.index.openrank.getRepoOpenrank(options)
+    }
 
-   import pandas as pd
-   print(pd.DataFrame(list(openrank)))
-   print(openDigger.index.activity.getRepoActivity(options))
+    localOptions = {
+       "labelUnion": [':technology/database'],
+       "limit": 10
+    }
+
+    options = copy.deepcopy(baseOptions)
+    options.update(localOptions)
+
+    js_import_open_digger = """
+    var openDigger = require('../src/open_digger.js');
+    """
+
+    with NodeVM(**vm_option) as vm:
+        # set show_indexes=True to display functions in the export module.
+        export_module = get_export_module(vm, js_import_open_digger, show_indexes=True, max_colwidth=60)
+        openDigger = export_module.openDigger
+        data_repo_openrank = openDigger.index.openrank.getRepoOpenrank(options)
+        print(pd.DataFrame(list(data_repo_openrank)))
