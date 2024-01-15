@@ -46,9 +46,13 @@ const task: Task = {
     const createTable = async () => {
       const q = `CREATE TABLE IF NOT EXISTS ${openrankTable}
   (
-    \`repo_id\` UInt64,
     \`platform\` Enum8('GitHub' = 1, 'Gitee' = 2, 'AtomGit' = 3, 'GitLab.com' = 4, 'Gitea' = 5, 'GitLab.cn' = 6),
+    \`repo_id\` UInt64,
+    \`repo_name\` LowCardinality(String),
+    \`org_id\` UInt64,
+    \`org_login\` LowCardinality(String),
     \`actor_id\` UInt64,
+    \`actor_login\` LowCardinality(String),
     \`issue_number\` UInt32,
     \`created_at\` DateTime,
     \`openrank\` Float
@@ -139,13 +143,13 @@ const task: Task = {
       repoOrgMap.clear();
       actorNameMap.clear();
       const yyyymm = `${y}${m.toString().padStart(2, '0')}`;
-      const repoResult = await queryClickhouse<string[]>(`SELECT DISTINCT platform, repo_id, argMax(repo_name, created_at) FROM events WHERE toYYYYMM(created_at) = ${yyyymm} AND repo_id IN (SELECT id FROM export_repo) GROUP BY repo_id, platform`, { format: 'JSONCompactEachRow' });
+      const repoResult = await queryClickhouse<string[]>(`SELECT platform, repo_id, argMax(repo_name, created_at), argMax(org_id, created_at), argMax(org_login, created_at) FROM events WHERE toYYYYMM(created_at) = ${yyyymm} AND repo_id IN (SELECT id FROM export_repo) GROUP BY repo_id, platform`, { format: 'JSONCompactEachRow' });
       repoResult.forEach(row => {
         const [platform, repoId, repoName, orgId, orgLogin] = row;
         repoNameMap.set(`${platform}_${repoId}`, repoName);
         repoOrgMap.set(`${platform}_${repoId}`, { id: orgId, login: orgLogin });
       });
-      const actorResult = await queryClickhouse<string[]>(`SELECT DISTINCT platform, actor_id, argMax(actor_login, created_at) FROM events WHERE toYYYYMM(created_at) = ${yyyymm} AND repo_id IN (SELECT id FROM export_repo) GROUP BY actor_id, platform`, { format: 'JSONCompactEachRow' });
+      const actorResult = await queryClickhouse<string[]>(`SELECT platform, actor_id, argMax(actor_login, created_at) FROM events WHERE toYYYYMM(created_at) = ${yyyymm} AND repo_id IN (SELECT id FROM export_repo) GROUP BY actor_id, platform`, { format: 'JSONCompactEachRow' });
       actorResult.forEach(row => {
         const [platform, actorId, actorLogin] = row;
         actorNameMap.set(`${platform}_${actorId}`, actorLogin);
