@@ -23,6 +23,7 @@ const openDigger = {
     openrank: {
       getRepoOpenrank: func.getRepoOpenrank,
       getUserOpenrank: func.getUserOpenrank,
+      getRepoCommunityOpenrank: func.getRepoCommunityOpenrank,
     },
     attention: {
       getAttention: func.getAttention,
