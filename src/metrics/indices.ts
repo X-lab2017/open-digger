@@ -86,6 +86,69 @@ ${getOutterOrderAndLimit(config, 'openrank')}`;
   return processQueryResult(result, ['openrank']);
 }
 
+interface RepoCommunityOpenRankConfig {
+  limit: number;
+};
+export const getRepoCommunityOpenrank = async (config: QueryConfig<RepoCommunityOpenRankConfig>) => {
+  config = getMergedConfig(config);
+  const whereClause: string[] = [];
+  const repoWhereClause = await getRepoWhereClause(config);
+  if (repoWhereClause) whereClause.push(repoWhereClause);
+  const timeRangeClause = getTimeRangeWhereClause(config);
+  if (timeRangeClause) whereClause.push(timeRangeClause);
+  const limit = config.options?.limit ?? 30;
+
+  const sql = `
+SELECT
+  id,
+  ${getTopLevelPlatform(config)},
+  argMax(name, time) AS name,
+  ${getGroupArrayInsertAtClause(config, { key: 'openrank', noPrecision: true, defaultValue: '[]' })}
+FROM
+(
+  SELECT
+    ${getGroupIdClause(config)},
+    time,
+    ${limit > 0 ?
+      `arraySlice(groupArray((actor_login, openrank)), 1, ${limit}) AS openrank` :
+      `groupArray((actor_login, openrank)) AS openrank`}
+  FROM
+    (
+      SELECT
+        ${getGroupTimeClause(config, 'g.created_at')},
+        g.platform AS platform,
+        g.repo_id AS repo_id,
+        argMax(g.repo_name, time) AS repo_name,
+        argMax(g.org_id, time) AS org_id,
+        argMax(g.org_login, time) AS org_login,
+        c.actor_id AS actor_id,
+        argMax(c.actor_login, time) AS actor_login,
+        SUM(c.openrank * g.openrank / r.openrank) AS openrank
+      FROM
+        (SELECT * FROM community_openrank WHERE ${whereClause.join(' AND ')}) c,
+        (SELECT * FROM global_openrank WHERE ${whereClause.join(' AND ')}) g,
+        (SELECT repo_id, platform, created_at, SUM(openrank) AS openrank FROM community_openrank WHERE actor_id > 0 AND ${whereClause.join(' AND ')} GROUP BY repo_id, platform, created_at) r
+      WHERE
+        c.actor_id > 0
+        AND c.repo_id = g.repo_id
+        AND c.platform = g.platform
+        AND c.created_at = g.created_at
+        AND g.repo_id = r.repo_id
+        AND g.platform = r.platform
+        AND g.created_at = r.created_at
+      GROUP BY
+        platform, repo_id, actor_id, time
+      ORDER BY openrank DESC
+    )
+  GROUP BY id, platform, time
+)
+GROUP BY id, platform
+${getOutterOrderAndLimit({ ...config, order: undefined }, 'openrank')}
+`;
+  const result = await clickhouse.query(sql);
+  return processQueryResult(result, ['openrank']);
+};
+
 export const basicActivitySqlComponent = `
     if(type='PullRequestEvent' AND action='closed' AND pull_merged=1, issue_author_id, actor_id) AS actor_id,
     argMax(if(type='PullRequestEvent' AND action='closed' AND pull_merged=1, issue_author_login, actor_login), created_at) AS actor_login,
