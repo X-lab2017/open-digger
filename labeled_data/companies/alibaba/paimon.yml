@@ -1,0 +1,19 @@
+name: Apache Paimon
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 447060287
+          name: apache/incubator-paimon
+        - id: 662901192
+          name: apache/incubator-paimon-webui
+        - id: 614190527
+          name: apache/incubator-paimon-website
+        - id: 621641138
+          name: apache/incubator-paimon-presto
+        - id: 616498071
+          name: apache/incubator-paimon-shade
+        - id: 621641242
+          name: apache/incubator-paimon-trino

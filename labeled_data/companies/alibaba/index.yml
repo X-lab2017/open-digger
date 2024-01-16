@@ -29,6 +29,7 @@ data:
     - opensergo
     - opensumi
     - openyurt
+    - paimon
     - polardb
     - rocketmq
     - sealer    
