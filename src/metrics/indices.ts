@@ -107,40 +107,50 @@ SELECT
 FROM
 (
   SELECT
-    ${getGroupIdClause(config)},
-    time,
+    id, argMax(name, time) AS name, platform, time,
     ${limit > 0 ?
       `arraySlice(groupArray((platform, actor_id, actor_login, openrank)), 1, ${limit}) AS openrank` :
       `groupArray((platform, actor_id, actor_login, openrank)) AS openrank`}
   FROM
     (
       SELECT
-        ${getGroupTimeClause(config, 'g.created_at')},
-        g.platform AS platform,
-        g.repo_id AS repo_id,
-        argMax(g.repo_name, time) AS repo_name,
-        argMax(g.org_id, time) AS org_id,
-        argMax(g.org_login, time) AS org_login,
-        c.actor_id AS actor_id,
-        argMax(c.actor_login, time) AS actor_login,
-        SUM(c.openrank * g.openrank / r.openrank) AS openrank
+        ${getGroupIdClause(config, 'repo', 'time')},
+        time,
+        platform,
+        actor_id,
+        argMax(actor_login, time) AS actor_login,
+        SUM(openrank) AS openrank
       FROM
-        (SELECT * FROM community_openrank WHERE ${whereClause.join(' AND ')}) c,
-        (SELECT * FROM global_openrank WHERE ${whereClause.join(' AND ')}) g,
-        (SELECT repo_id, platform, created_at, SUM(openrank) AS openrank FROM community_openrank WHERE actor_id > 0 AND ${whereClause.join(' AND ')} GROUP BY repo_id, platform, created_at) r
-      WHERE
-        c.actor_id > 0
-        AND c.repo_id = g.repo_id
-        AND c.platform = g.platform
-        AND c.created_at = g.created_at
-        AND g.repo_id = r.repo_id
-        AND g.platform = r.platform
-        AND g.created_at = r.created_at
-      GROUP BY
-        platform, repo_id, actor_id, time
+        (
+          SELECT
+            ${getGroupTimeClause(config, 'g.created_at')},
+            g.platform AS platform,
+            g.repo_id AS repo_id,
+            argMax(g.repo_name, time) AS repo_name,
+            argMax(g.org_id, time) AS org_id,
+            argMax(g.org_login, time) AS org_login,
+            c.actor_id AS actor_id,
+            argMax(c.actor_login, time) AS actor_login,
+            SUM(c.openrank * g.openrank / r.openrank) AS openrank
+          FROM
+            (SELECT * FROM community_openrank WHERE ${whereClause.join(' AND ')}) c,
+            (SELECT * FROM global_openrank WHERE ${whereClause.join(' AND ')}) g,
+            (SELECT repo_id, platform, created_at, SUM(openrank) AS openrank FROM community_openrank WHERE actor_id > 0 AND ${whereClause.join(' AND ')} GROUP BY repo_id, platform, created_at) r
+          WHERE
+            c.actor_id > 0
+            AND c.repo_id = g.repo_id
+            AND c.platform = g.platform
+            AND c.created_at = g.created_at
+            AND g.repo_id = r.repo_id
+            AND g.platform = r.platform
+            AND g.created_at = r.created_at
+          GROUP BY
+            platform, repo_id, actor_id, time
+        ) data
+      GROUP BY id, actor_id, platform, time
       ORDER BY openrank DESC
     )
-  GROUP BY id, platform, time
+    GROUP BY id, platform, time
 )
 GROUP BY id, platform
 ${getOutterOrderAndLimit({ ...config, order: undefined }, 'openrank')}
