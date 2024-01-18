@@ -31,11 +31,13 @@ export interface QueryConfig<T = any> {
 };
 
 export const getMergedConfig = (config: any): QueryConfig => {
+  const now = new Date();
+  now.setMonth(now.getMonth() - 1);
   const defaultConfig: QueryConfig = {
     startYear: 2015,
     startMonth: 1,
-    endYear: new Date().getFullYear(),
-    endMonth: new Date().getMonth(),
+    endYear: now.getFullYear(),
+    endMonth: now.getMonth() + 1,
     orderOption: 'latest',
     limit: 10,
     limitOption: 'all',

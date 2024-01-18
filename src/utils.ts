@@ -77,12 +77,11 @@ export function rankData<T = any>(data: T[], iterArr: any[], getter: (item: T, i
 }
 
 export const getLogger = (tag: string) => {
+  const log = (level: string, ...args: any[]) =>
+    console.log(`${dateformat(new Date(), 'yyyy-mm-dd HH:MM:ss')} ${level} [${tag}]`, ...args);
   return {
-    info: (...args: any[]) =>
-      console.log(`${dateformat(new Date(), 'yyyy-mm-dd HH:MM:ss', true)} INFO [${tag}]`, ...args),
-    warn: (...args: any[]) =>
-      console.log(`${dateformat(new Date(), 'yyyy-mm-dd HH:MM:ss', true)} WARN [${tag}]`, ...args),
-    error: (...args: any[]) =>
-      console.log(`${dateformat(new Date(), 'yyyy-mm-dd HH:MM:ss', true)} ERROR [${tag}]`, ...args),
+    info: (...args: any[]) => log('INFO', ...args),
+    warn: (...args: any[]) => log('WARN', ...args),
+    error: (...args: any[]) => log('ERROR', ...args),
   };
 };
