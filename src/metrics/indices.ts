@@ -110,8 +110,8 @@ FROM
     ${getGroupIdClause(config)},
     time,
     ${limit > 0 ?
-      `arraySlice(groupArray((actor_login, openrank)), 1, ${limit}) AS openrank` :
-      `groupArray((actor_login, openrank)) AS openrank`}
+      `arraySlice(groupArray((platform, actor_id, actor_login, openrank)), 1, ${limit}) AS openrank` :
+      `groupArray((platform, actor_id, actor_login, openrank)) AS openrank`}
   FROM
     (
       SELECT
