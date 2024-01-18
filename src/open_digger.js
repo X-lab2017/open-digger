@@ -78,23 +78,6 @@ const openDigger = {
       };
     });
   },
-  quick: {
-    showAll: (repoName, startYear = 2015, endYear = 2021) => {
-      openDigger.driver.neo4j.query(`MATCH (r:Repo{name:'${repoName}'}) RETURN r;`).then(data => {
-        const values = [
-          { y: [], mode: 'scatter', name: 'activity' },
-          { y: [], mode: 'scatter', name: 'openrank' }];
-        for (let year = startYear; year <= endYear; year++) {
-          for (let month = 1; month <= 12; month++) {
-            const k = `${year}${month}`;
-            values[0].y.push(data[0][`activity_${k}`]);
-            values[1].y.push(data[0][`open_rank_${k}`]);
-          }
-        }
-        openDigger.render.plotly(values, { title: `Activity/OpenRank for ${repoName} from ${startYear} to ${endYear}` });
-      });
-    }
-  }
 }
 
 module.exports = openDigger;
