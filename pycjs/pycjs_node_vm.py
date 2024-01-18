@@ -4,7 +4,7 @@
 
 # @Time   : 2024/1/14 10:26
 # @Author : 'Lou Zehua'
-# @File   : pycjs_node_vm.py 
+# @File   : pycjs_node_vm.py
 
 import re
 
@@ -80,7 +80,10 @@ def formTree(path_nodes_list, leaf_node_list):
     return tree_root
 
 
-def get_export_module(vm, js_code, module_name="", **kwargs):
+def get_export_module(vm, js_code, module_name="", repl_var_func_dict=None, var_dot2underscore=True, show_indexes=False,
+                      df_options=None):
+    repl_var_func_dict = repl_var_func_dict or {}
+    df_options = df_options or {}
     if not module_name:
         require_module_vars = re.findall(r"([_a-zA-Z][_0-9a-zA-Z]*)\s*=\s*require\(.+\);", js_code)
         if len(require_module_vars):
@@ -112,12 +115,12 @@ def get_export_module(vm, js_code, module_name="", **kwargs):
     export_indexes = vm_rt.get_member("exportIndexes")
     export_vars = [s.replace('.', '_') for s in export_indexes]
 
-    if kwargs.get("show_indexes", False):
+    if show_indexes:
         df_export_module = pd.DataFrame({"export_vars": export_vars, "export_indexes": export_indexes})
-        pd.set_option('display.max_colwidth', kwargs.get("max_colwidth", 60))
-        columns = kwargs.get("columns", df_export_module.columns)
-        rows = kwargs.get("rows", [True]*df_export_module.shape[0])
-        apply_op = kwargs.get("apply_func", {"func": lambda x: x})
+        pd.set_option('display.max_colwidth', df_options.get("max_colwidth", 60))
+        columns = df_options.get("columns", df_export_module.columns)
+        rows = df_options.get("rows", [True]*df_export_module.shape[0])
+        apply_op = df_options.get("apply_func", {"func": lambda x: x})
         print(df_export_module[columns].loc[rows].apply(**apply_op))
 
     # js export template: "exports.openDigger_label_getLabelData = openDigger.label.getLabelData;"
@@ -129,6 +132,21 @@ def get_export_module(vm, js_code, module_name="", **kwargs):
     export_indexes_split = [str(s).split('.') for s in export_indexes]
     # Initialize vm_rt in the constructor
     func_leaf_list = [NodeVMFuncGen(var_str, vm_rt=vm_rt).func for var_str in export_vars]
+
+    # replace functions related to Plotly in the ijavascript-plotly module \
+    #   and other functions using global elements like '$$' or using functions as formal parameters,
+    #   which are not JSON serializable types or cannot be executed by vm sandbox.
+    raw_var_func_bound = dict(zip(export_vars, func_leaf_list))
+    repl_var_func_bound = dict(repl_var_func_dict)
+    final_var_func_bound = raw_var_func_bound.copy()
+    if len(repl_var_func_bound):
+        if var_dot2underscore:
+            repl_var_func_bound = {k.replace('.', '_'): v for k, v in repl_var_func_bound.items()}
+        final_var_func_bound.update(repl_var_func_bound)
+    export_indexes = list(final_var_func_bound.keys())
+    assert(len(export_indexes) == len(export_indexes_split))
+    func_leaf_list = list(final_var_func_bound.values())
+
     export_dict = formTree(export_indexes_split, func_leaf_list)
     export_module = Obj(export_dict)
     return export_module
@@ -166,12 +184,13 @@ if __name__ == '__main__':
         try:
             # set show_indexes=True to display functions in the export module.
             pd.set_option('display.max_rows', None)
-            df_filter_op = {
+            df_options = {
+                "max_colwidth": 60,
                 "rows": range(40),
                 "columns": ["export_vars", "export_indexes"],
                 # "apply_func": {"func": lambda x: sum([len(x_elem) for x_elem in x]) < 25, "axis": 1}
             }
-            export_module = get_export_module(vm, js, show_indexes=True, max_colwidth=60, **df_filter_op)
+            export_module = get_export_module(vm, js, show_indexes=True, df_options=df_options)
             print(export_module)
             os = export_module.os
             print(os.hostname())
