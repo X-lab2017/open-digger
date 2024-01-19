@@ -1,0 +1,9 @@
+name: Spring Cloud Alibaba
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 112785414
+          name: alibaba/spring-cloud-alibaba

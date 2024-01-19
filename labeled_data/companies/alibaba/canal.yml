@@ -1,0 +1,9 @@
+name: Canal
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 7587038
+          name: alibaba/canal

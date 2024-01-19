@@ -1,0 +1,12 @@
+name: Higress
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 558188628
+          name: alibaba/higress
+      orgs:
+        - id: 116630909
+          name: higress-group
