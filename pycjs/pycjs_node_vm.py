@@ -80,8 +80,7 @@ def formTree(path_nodes_list, leaf_node_list):
     return tree_root
 
 
-def get_export_module(vm, js_code, module_name="", repl_var_func_dict=None, var_dot2underscore=True, show_indexes=False,
-                      df_options=None):
+def get_export_module(vm, js_code, module_name="", repl_var_func_dict=None, show_indexes=False, df_options=None):
     repl_var_func_dict = repl_var_func_dict or {}
     df_options = df_options or {}
     if not module_name:
@@ -104,16 +103,18 @@ def get_export_module(vm, js_code, module_name="", repl_var_func_dict=None, var_
         }
     }
     """
-    js_export_indexes += """
+    js_export_indexes += f"""
     var exportIndexes = [];
     getObjElemIndex({module_name}, '{module_name}', exportIndexes);
     exports.exportIndexes = exportIndexes;
-    """.format(module_name=module_name)
+    """
 
     js_code += js_export_indexes
     vm_rt = vm.run(js_code)
     export_indexes = vm_rt.get_member("exportIndexes")
-    export_vars = [s.replace('.', '_') for s in export_indexes]
+    js_index_delimeter = '.'
+    js_var_delimeter = '_'
+    export_vars = [s.replace(js_index_delimeter, js_var_delimeter) for s in export_indexes]
 
     if show_indexes:
         df_export_module = pd.DataFrame({"export_vars": export_vars, "export_indexes": export_indexes})
@@ -129,25 +130,45 @@ def get_export_module(vm, js_code, module_name="", repl_var_func_dict=None, var_
     js_open_digger_exports_extended = js_code + exports_extend_str
     vm_rt = vm.run(js_open_digger_exports_extended)
 
-    export_indexes_split = [str(s).split('.') for s in export_indexes]
+    # use path split from export_indexes by js_index_delimeter to prevent the inconsistent_search_tree exceptions
+    #   between the recovered module path of function and the raw module path of function
+    #   when there is any js_var_delimeter within the raw module path names or within th raw function names
+    export_indexes_split = [str(s).split(js_index_delimeter) for s in export_indexes]
+    repl_indexes_split = [str(s).split(js_index_delimeter) for s in repl_var_func_dict.keys()]
+    final_export_indexes_split = export_indexes_split.copy()
     # Initialize vm_rt in the constructor
     func_leaf_list = [NodeVMFuncGen(var_str, vm_rt=vm_rt).func for var_str in export_vars]
 
     # replace functions related to Plotly in the ijavascript-plotly module \
     #   and other functions using global elements like '$$' or using functions as formal parameters,
     #   which are not JSON serializable types or cannot be executed by vm sandbox.
-    raw_var_func_bound = dict(zip(export_vars, func_leaf_list))
-    repl_var_func_bound = dict(repl_var_func_dict)
-    final_var_func_bound = raw_var_func_bound.copy()
-    if len(repl_var_func_bound):
-        if var_dot2underscore:
-            repl_var_func_bound = {k.replace('.', '_'): v for k, v in repl_var_func_bound.items()}
-        final_var_func_bound.update(repl_var_func_bound)
-    export_indexes = list(final_var_func_bound.keys())
-    assert(len(export_indexes) == len(export_indexes_split))
-    func_leaf_list = list(final_var_func_bound.values())
+    export_var_func_bound = dict(zip(export_vars, func_leaf_list))
+    if len(repl_var_func_dict):
+        repl_var_func_bound = {k.replace(js_index_delimeter, js_var_delimeter): v for k, v in repl_var_func_dict.items()}
+    else:
+        repl_var_func_bound = repl_var_func_dict
+    final_var_func_bound = export_var_func_bound.copy()
+    assert(len(export_var_func_bound) == len(export_indexes_split))
+    assert(len(repl_var_func_bound) == len(repl_indexes_split))
 
-    export_dict = formTree(export_indexes_split, func_leaf_list)
+    # merge the variable function bound dict
+    func_impl_only_py = []
+    for i in range(len(repl_var_func_bound)):
+        k_repl_var = list(repl_var_func_bound.keys())[i]
+        v_repl_func = list(repl_var_func_bound.values())[i]
+        i_repl_indexes_split = repl_indexes_split[i]
+        if k_repl_var not in final_var_func_bound.keys():  # update final_export_indexes_split for new python functions
+            final_export_indexes_split.append(i_repl_indexes_split)
+            final_var_func_bound[k_repl_var] = v_repl_func
+            func_impl_only_py.append(js_index_delimeter.join(i_repl_indexes_split))
+        else:  # use the replacement implemented in python of js functions
+            final_var_func_bound[k_repl_var] = v_repl_func
+    assert(list(final_var_func_bound.keys()) == [js_var_delimeter.join(s) for s in final_export_indexes_split])
+    if len(func_impl_only_py):
+        print(f"Warning: Use function only implemented in python: {func_impl_only_py}!")
+
+    final_func_leaf_list = list(final_var_func_bound.values())
+    export_dict = formTree(final_export_indexes_split, final_func_leaf_list)
     export_module = Obj(export_dict)
     return export_module
 
