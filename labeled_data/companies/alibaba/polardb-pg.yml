@@ -1,4 +1,4 @@
-name: PolarDB
+name: PolarDB-for-PostgreSQL
 type: Project
 data:
   platforms:
@@ -7,5 +7,3 @@ data:
       orgs:
         - id: 92418439
           name: ApsaraDB
-        - id: 120164000
-          name: polardb

@@ -1,0 +1,9 @@
+name: DataX
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 117965972
+          name: alibaba/DataX

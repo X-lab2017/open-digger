@@ -4,13 +4,19 @@ data:
   labels:
     - alios_things
     - anolis
+    - arthas
+    - canal
     - chaosblade
+    - datax
     - dragonfly
     - dragonwell
     - dubbo
+    - easyexcel
     - flink
     - fluid
     - graphscope
+    - havenask
+    - higress
     - ice
     - inclavare_containers
     - koordinator
@@ -30,9 +36,11 @@ data:
     - opensumi
     - openyurt
     - paimon
-    - polardb
+    - polardb-pg
+    - polardb-x
     - rocketmq
-    - sealer    
+    - sca
+    - sealer
     - seata
     - sentinel
     - serverless_devs

@@ -1,0 +1,9 @@
+name: EasyExcel
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 120395176
+          name: alibaba/easyexcel

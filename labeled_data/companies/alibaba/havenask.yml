@@ -1,0 +1,9 @@
+name: HavenAsk
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 552676144
+          name: alibaba/havenask

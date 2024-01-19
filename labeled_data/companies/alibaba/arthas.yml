@@ -1,0 +1,9 @@
+name: Arthas
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 146633589
+          name: alibaba/arthas
