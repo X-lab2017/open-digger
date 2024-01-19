@@ -14,6 +14,7 @@ data:
     - easyexcel
     - flink
     - fluid
+    - fusion
     - graphscope
     - havenask
     - higress
@@ -101,8 +102,6 @@ data:
           name: alibaba-open-source-website
         - id: 73396749
           name: alibaba-incubator
-        - id: 40452342
-          name: alibaba-fusion
         - id: 125999365
           name: damo-vilab
         - id: 1201438
