@@ -6,6 +6,7 @@ data:
     - anolis
     - arthas
     - canal
+    - celeborn
     - chaosblade
     - datax
     - dragonfly

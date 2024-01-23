@@ -1,0 +1,11 @@
+name: Apache Celeborn
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 436912897
+          name: apache/incubator-celeborn
+        - id: 565918748
+          name: apache/incubator-celeborn-website
