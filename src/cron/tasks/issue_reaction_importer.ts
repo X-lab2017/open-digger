@@ -27,7 +27,7 @@ const task: Task = {
         auth: `Bearer ${githubApp.getSignedJsonWebToken()}`,
       });
       const repos: { iid: number, id: number, name: string }[] = [];
-      const installations = await octokit.paginate('GET /app/installations');
+      const installations: any[] = await octokit.paginate('GET /app/installations');
       for (const i of installations) {
         const oct = new Octokit({
           auth: `Bearer ${await githubApp.getInstallationAccessToken({ installationId: i.id })}`,
