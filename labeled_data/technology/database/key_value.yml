@@ -233,6 +233,8 @@ data:
           name: nathanmarz/elephantdb
         - id: 149145424
           name: nextgres/oss-haildb
+        - id: 722854801
+          name: oasysai/oasysdb
         - id: 4211523
           name: oleiade/Elevator
         - id: 12106192
