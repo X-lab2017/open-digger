@@ -27,6 +27,8 @@ data:
           name: milvus-io/milvus
         - id: 478288303
           name: nuclia/nucliadb
+        - id: 722854801
+          name: oasysai/oasysdb
         - id: 40127179
           name: pilosa/pilosa
         - id: 268163609
