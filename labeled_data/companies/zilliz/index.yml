@@ -3,3 +3,9 @@ type: Company
 data:
   labels:
     - milvus
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 18416694
+          name: zilliztech
