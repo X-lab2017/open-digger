@@ -19,8 +19,6 @@ data:
           name: ByConity/ByConity
         - id: 52080367
           name: CUBRID/cubrid
-        - id: 496505424
-          name: CeresDB/ceresdb
         - id: 60246359
           name: ClickHouse/ClickHouse
         - id: 129072319
@@ -89,6 +87,8 @@ data:
           name: apache/hive
         - id: 56128733
           name: apache/impala
+        - id: 496505424
+          name: apache/incubator-horaedb
         - id: 56214719
           name: apache/incubator-retired-quickstep
         - id: 50647838

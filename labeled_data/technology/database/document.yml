@@ -135,6 +135,8 @@ data:
           name: jedisct1/Pincaster
         - id: 635374751
           name: jina-ai/vectordb
+        - id: 270858421
+          name: juji-io/datalevin
         - id: 632269609
           name: kagisearch/vectordb
         - id: 1776883
@@ -217,6 +219,8 @@ data:
           name: sirixdb/sirix
         - id: 295745510
           name: small-tech/jsdb
+        - id: 192631273
+          name: sourcenetwork/defradb
         - id: 436658287
           name: surrealdb/surrealdb
         - id: 22761491
