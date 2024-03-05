@@ -1,0 +1,9 @@
+name: Greptime
+type: Company
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 103400677
+          name: GreptimeTeam
