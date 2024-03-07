@@ -1,0 +1,9 @@
+name: SiliconFlow
+type: Company
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 143005960
+          name: siliconflow

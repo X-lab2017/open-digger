@@ -39,3 +39,5 @@ data:
           name: invoke-ai/InvokeAI
         - id: 631258918
           name: gventuri/pandas-ai
+        - id: 539362736
+          name: siliconflow/onediff
