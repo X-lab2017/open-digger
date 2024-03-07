@@ -51,3 +51,5 @@ data:
           name: microsoft/unilm
         - id: 441778458
           name: EleutherAI/pythia
+        - id: 539362736
+          name: siliconflow/onediff

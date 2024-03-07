@@ -69,6 +69,7 @@ data:
     - :companies/primihub
     - :companies/greatdb
     - :companies/segmentfault
+    - :companies/siliconflow
     - :communities/openmmlab
     - :communities/xlab
     - :communities/mulan
