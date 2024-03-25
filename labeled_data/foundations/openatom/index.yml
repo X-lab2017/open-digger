@@ -4,36 +4,39 @@ data:
   labels:
     - :companies/baidu/xuperchain
     - :companies/huawei/openharmony
-    - :companies/huawei/openeuler
-    - :companies/antgroup/tongsuo
-    - :companies/360/pika
-    - :companies/tencent/opencloudos
-    - :companies/tencent/tbase
+    - :companies/360/pikiwidb
     - :companies/alibaba/alios_things
-    - :companies/alibaba/anolis
-    - :companies/deepin/linglong
-    - :companies/greatdb/greatsql
-    - carsmos
-    - cloud_hpc
-    - easybaas
     - hapjs
-    - hyperbench
-    - metatoc
-    - miniblink
-    - nervjs
-    - open_brother
+    - :companies/tencent/tobudos
+    - :companies/huawei/openeuler
     - openblock
-    - opendacs
-    - openkona
-    - opennjet
-    - openv2x
-    - rtthread_nano
-    - tkestack
-    - ubml
-    - ubsi
+    - :companies/antgroup/tongsuo
+    - open_brother
     - vearch
-    - zettastor
+    - ubsice
+    - hyperbench
+    - rtthread_nano
+    - ubml
     - ztdbp
+    - openkona
+    - carsmos
+    - miniblink
+    - :companies/tencent/tkestack
+    - :companies/alibaba/anolis
+    - :companies/tencent/opencloudos
+    - opendacs
+    - smartide
+    - taro
+    - :companies/deepin/linglong
+    - opennjet
+    - :companies/greatdb/greatsql
+    - easybaas
+    - openv2x
+    - :companies/tencent/opentenbase
+    - cloud_hpc
+    - zettastor
+    - metatoc
+    - dora-ssr
   platforms:
     - name: GitHub
       type: Code Hosting

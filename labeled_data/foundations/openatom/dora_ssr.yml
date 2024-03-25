@@ -1,9 +1,9 @@
-name: TBase
+name: Dora SSR
 type: Project
 data:
   platforms:
     - name: GitHub
       type: Code Hosting
       repos:
-        - id: 220177733
-          name: Tencent/TBase
+        - id: 75905215
+          name: IppClub/Dora-SSR
