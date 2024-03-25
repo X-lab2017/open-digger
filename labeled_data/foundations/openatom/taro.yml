@@ -1,9 +1,9 @@
-name: NervJS
+name: Taro
 type: Project
 data:
   platforms:
     - name: GitHub
       type: Code Hosting
-      orgs:
-        - id: 30794937
-          name: NervJS
+      repos:
+        - id: 128624453
+          name: NervJS/taro
