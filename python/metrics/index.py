@@ -2,6 +2,7 @@ import chaoss
 import activity_openrank
 import attention
 import related_users 
+import issue_comment_similartiy
 
 def getRepoActivity(config):
     return activity_openrank.getRepoActivity(config)
@@ -15,6 +16,10 @@ def getRelatedUsers(config):
     return related_users.getRelatedUsers(config)
 def getAttention(config):
     return attention.getAttention(config)
+def getIssueCommentTFIDFSimilarity(config):
+    return issue_comment_similartiy.getIssueCommentTFIDFSimilarity(config)
+def getIssueCommentJaccardSimilarity(config):
+    return issue_comment_similartiy.getIssueCommentJaccardSimilarity(config)
 
 # chaoss metrics
 def chaossCodeChangeCommits(config): 
@@ -31,3 +36,4 @@ def chaossChangeRequestsDeclined(config):
     return chaoss.chaossChangeRequestsDeclined(config)
 def chaossIssueResolutionDuration(config):
     return chaoss.chaossIssueResolutionDuration(config)
+
