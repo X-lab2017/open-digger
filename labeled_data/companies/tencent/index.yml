@@ -3,9 +3,10 @@ type: Company
 data:
   labels:
     - opencloudos
-    - tbase
+    - opentenbase
     - tobudos
     - ozone
+    - tkestack
   platforms:
     - name: GitHub
       type: Code Hosting

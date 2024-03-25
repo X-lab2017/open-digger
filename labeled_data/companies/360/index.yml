@@ -3,7 +3,7 @@ type: Company
 data:
   labels:
     - chimeejs
-    - pika
+    - pikiwidb
     - spritejs
     - thinkjs
   platforms:

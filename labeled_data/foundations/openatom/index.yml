@@ -36,7 +36,7 @@ data:
     - cloud_hpc
     - zettastor
     - metatoc
-    - dora-ssr
+    - dora_ssr
   platforms:
     - name: GitHub
       type: Code Hosting
