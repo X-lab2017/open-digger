@@ -255,7 +255,7 @@ FROM
 (
   SELECT
     ${getGroupTimeClause(config, byCol)},
-    ${getGroupIdClause(config)},
+    ${getGroupIdClause(config, 'repo', 'last_active')},
     avg(resolution_duration) AS avg,
     ${timeDurationConstants.quantileArray.map(q => `quantile(${q / 4})(resolution_duration) AS quantile_${q}`).join(',')},
     [${ranges.map((_t, i) => `countIf(resolution_level = ${i})`).join(',')}] AS resolution_levels
@@ -268,6 +268,7 @@ FROM
       org_id,
       argMax(org_login, created_at) AS org_login,
       issue_number,
+      max(created_at) AS last_active,
       argMaxIf(action, created_at, action IN ('opened', 'closed' , 'reopened')) AS last_action,
       argMax(issue_created_at,created_at) AS opened_at,
       maxIf(created_at, action = 'closed') AS closed_at,
@@ -318,7 +319,7 @@ FROM
 (
   SELECT
     ${getGroupTimeClause(config, 'issue_created_at')},
-    ${getGroupIdClause(config)},
+    ${getGroupIdClause(config, 'repo', 'last_active')},
     avg(response_time) AS avg,
     ${timeDurationConstants.quantileArray.map(q => `quantile(${q / 4})(response_time) AS quantile_${q}`).join(',')},
     [${ranges.map((_t, i) => `countIf(response_level = ${i})`).join(',')}] AS response_levels
@@ -331,6 +332,7 @@ FROM
       org_id,
       argMax(org_login, created_at) AS org_login,
       issue_number,
+      max(created_at) AS last_active,
       minIf(created_at, action = 'opened' AND issue_comments = 0) AS issue_created_at,
       minIf(created_at, (action = 'created' AND actor_id != issue_author_id) OR (action = 'closed')) AS responded_at,
       if(responded_at = toDate('1970-01-01'), now(), responded_at) AS first_responded_at,
@@ -389,7 +391,7 @@ FROM
         return `${endTimeClause} AS time`;
       }
     })()},
-    ${getGroupIdClause(config)},
+    ${getGroupIdClause(config, 'repo', 'last_active')},
     avgIf(dateDiff('${unit}', opened_at, time), opened_at < time AND closed_at >= time) AS avg,
     ${timeDurationConstants.quantileArray.map(q => `quantileIf(${q / 4})(dateDiff('${unit}', opened_at, time), opened_at < time AND closed_at >= time) AS quantile_${q}`).join(',')},
     [${ranges.map((_t, i) => `countIf(multiIf(${thresholds.map((t, i) => `dateDiff('${unit}', opened_at, time) <= ${t}, ${i}`)}, ${thresholds.length}) = ${i} AND opened_at < time AND closed_at >= time)`).join(',')}] AS age_levels
@@ -402,6 +404,7 @@ FROM
       org_id,
       argMax(org_login, created_at) AS org_login,
       issue_number,
+      max(created_at) AS last_active,
       minIf(created_at, action = 'opened') AS opened_at,
       maxIf(created_at, action = 'closed') AS real_closed_at,
       if(real_closed_at=toDate('1970-1-1'), ${endTimeClause}, real_closed_at) AS closed_at
@@ -524,7 +527,7 @@ FROM
 (
   SELECT
     ${getGroupTimeClause(config, byCol)},
-    ${getGroupIdClause(config)},
+    ${getGroupIdClause(config, 'repo', 'last_active')},
     avg(resolution_duration) AS avg,
     ${timeDurationConstants.quantileArray.map(q => `quantile(${q / 4})(resolution_duration) AS quantile_${q}`).join(',')},
     [${ranges.map((_t, i) => `countIf(resolution_level = ${i})`).join(',')}] AS resolution_levels
@@ -537,6 +540,7 @@ FROM
       org_id,
       argMax(org_login, created_at) AS org_login,
       issue_number,
+      max(created_at) AS last_active,
       argMaxIf(action, created_at, action IN ('opened', 'closed' , 'reopened')) AS last_action,
       argMax(issue_created_at,created_at) AS opened_at,
       maxIf(created_at, action = 'closed') AS closed_at,
@@ -765,7 +769,7 @@ export const chaossNewContributors = async (config: QueryConfig<NewContributorsO
   (
     SELECT
       ${getGroupTimeClause(config, 'first_time')},
-      ${getGroupIdClause(config)},
+      ${getGroupIdClause(config, 'repo', 'last_active')},
       length(detail) AS new_contributor,
       (arrayMap((x) -> (x), groupArray(author))) AS detail
     FROM
@@ -777,6 +781,7 @@ export const chaossNewContributors = async (config: QueryConfig<NewContributorsO
         argMax(repo_name, created_at) AS repo_name,
         org_id,
         argMax(org_login, created_at) AS org_login,
+        max(created_at) AS last_active,
         ${(() => {
       if (by === 'commit') {
         return `

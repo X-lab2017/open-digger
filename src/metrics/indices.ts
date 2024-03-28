@@ -198,7 +198,7 @@ FROM
 (
   SELECT
     ${getGroupTimeClause(config, 'month')},
-    ${getGroupIdClause(config, 'repo', 'month')},
+    ${getGroupIdClause(config, 'repo', 'last_active')},
     ROUND(SUM(activity), 2) AS agg_activity,
     COUNT(actor_id) AS participants,
     SUM(issue_comment) AS issue_comment,
@@ -211,6 +211,7 @@ FROM
   (
     SELECT
       toStartOfMonth(created_at) AS month,
+      max(created_at) AS last_active,
       platform,
       repo_id, argMax(repo_name, created_at) AS repo_name,
       org_id, argMax(org_login, created_at) AS org_login,
@@ -257,7 +258,7 @@ FROM
 (
   SELECT
     ${getGroupTimeClause(config, 'month')},
-    ${getGroupIdClause(config, 'user')},
+    ${getGroupIdClause(config, 'user', 'last_active')},
     ROUND(SUM(activity), 2) AS agg_activity,
     SUM(issue_comment) AS issue_comment,
     SUM(open_issue) AS open_issue,
@@ -269,6 +270,7 @@ FROM
   (
     SELECT
       toStartOfMonth(created_at) AS month,
+      max(created_at) AS last_active,
       platform,
       repo_id,
       argMax(repo_name, created_at) AS repo_name,
