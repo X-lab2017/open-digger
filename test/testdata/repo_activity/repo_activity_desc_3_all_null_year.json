@@ -19,16 +19,16 @@
       "id": "23357588",
       "name": "google/protobuf",
       "activity": [
-        1675.39,
-        2883.39
+        1676.76,
+        2892.44
       ],
       "participants": [
         "805",
         "1514"
       ],
       "issue_comment": [
-        "2679",
-        "4990"
+        "2684",
+        "5111"
       ],
       "open_issue": [
         "421",
@@ -40,11 +40,11 @@
       ],
       "review_comment": [
         "990",
-        "923"
+        "945"
       ],
       "merged_pull": [
-        "389",
-        "508"
+        "391",
+        "509"
       ]
     },
     {
@@ -52,7 +52,7 @@
       "name": "google/ExoPlayer",
       "activity": [
         1696.9,
-        2439.46
+        2440.35
       ],
       "participants": [
         "972",
@@ -60,11 +60,11 @@
       ],
       "issue_comment": [
         "3656",
-        "4767"
+        "4769"
       ],
       "open_issue": [
         "713",
-        "1006"
+        "1007"
       ],
       "open_pull": [
         "159",
@@ -72,7 +72,7 @@
       ],
       "review_comment": [
         "219",
-        "143"
+        "144"
       ],
       "merged_pull": [
         "87",
@@ -83,16 +83,16 @@
       "id": "29268051",
       "name": "google/material-design-lite",
       "activity": [
-        2125.39,
-        2092.95
+        2125.74,
+        2093.14
       ],
       "participants": [
         "1076",
         "1136"
       ],
       "issue_comment": [
-        "5400",
-        "3629"
+        "5406",
+        "3632"
       ],
       "open_issue": [
         "1354",

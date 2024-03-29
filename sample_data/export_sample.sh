@@ -33,7 +33,7 @@ fi
 if [ "$need_to_export" -eq 1 ]; then
     # export table schema
     echo "Start to export table schema"
-    $QUERY_REMOTE -q "SHOW CREATE TABLE opensource.gh_events INTO OUTFILE '$data_path/table' FORMAT TabSeparatedRaw;"
+    $QUERY_REMOTE -q "SHOW CREATE TABLE opensource.events INTO OUTFILE '$data_path/table' FORMAT TabSeparatedRaw;"
     echo "Table schema exported"
 
     # export data
@@ -56,6 +56,6 @@ fi
 
 # upload to oss
 echo "Goona upload to OSS."
-ossutil cp data.tar.gz oss://xlab-open-source/sample_data/$tag.tar.gz --config-file=~/.ossutilconfig-xlab -f
+ossutil cp data.tar.gz oss://open-digger-oss/sample_data/$tag.tar.gz --config-file=~/.ossutilconfig-open-digger -f
 
 echo "Process done."

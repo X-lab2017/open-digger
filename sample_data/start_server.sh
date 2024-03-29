@@ -1,1 +1,1 @@
-docker run -d --name paddle_hackathon_3 -p 8123:8123 -p 9000:9000 --ulimit nofile=262144:262144 --volume=$(pwd)/data/paddle_hackathon_3/:/data/ --platform $1 docker-hub.x-lab.info/opendigger/open-digger-clickhouse-base:v2
+docker run -d --name $2 -p 8123:8123 -p 9000:9000 --ulimit nofile=262144:262144 --volume=$(pwd)/data/$2/:/data/ --platform $1 open-digger-docker-registry.cn-beijing.cr.aliyuncs.com/open-digger/open-digger-clickhouse-base:v2
