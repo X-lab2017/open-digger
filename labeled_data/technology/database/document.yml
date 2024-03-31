@@ -37,8 +37,8 @@ data:
           name: Kinto/kinto
         - id: 533032
           name: LinkedInAttic/sensei
-        - id: 646427433
-          name: LonaDB/Hadro
+        - id: 750864017
+          name: LonaDB/Server
         - id: 50098469
           name: Nexedi/neoppod
         - id: 188354257
