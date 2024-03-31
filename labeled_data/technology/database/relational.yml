@@ -55,6 +55,8 @@ data:
           name: Mckoi/origsqldb
         - id: 316690542
           name: MonetDB/MonetDB
+        - id: 684046299
+          name: OpenTenBase/OpenTenBase
         - id: 41443810
           name: Postgres-XL/Postgres-XL
         - id: 74375185
@@ -127,6 +129,8 @@ data:
           name: canonical/dqlite
         - id: 372181547
           name: cashapp/pranadb
+        - id: 606433492
+          name: chdb-io/chdb
         - id: 50874442
           name: citusdata/citus
         - id: 644742603
