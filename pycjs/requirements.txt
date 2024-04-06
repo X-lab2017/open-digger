@@ -1,3 +1,4 @@
+clickhouse-driver>=0.2.3
 ipynbname==2023.2.0.0
 ipython==8.0.1
 ipython-genutils==0.2.0
@@ -6,3 +7,4 @@ matplotlib>=3.5.3
 node-vm2==0.4.7
 numpy>=1.21.5
 pandas>=1.4.4
+tabulate==0.9.0

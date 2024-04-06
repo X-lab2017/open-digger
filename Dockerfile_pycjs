@@ -1,0 +1,21 @@
+FROM docker-hub.x-lab.info/opendigger/open-digger-jupyter-nodejs:1.0
+
+COPY . .
+
+RUN pip install -i https://pypi.tuna.tsinghua.edu.cn/simple/ -r ./pycjs/requirements.txt
+
+EXPOSE 8888
+
+CMD jupyter lab --notebook-dir=. --ip='*' --port=8888 --allow-root --no-browser
+
+# README: 
+# 1. Enter root workdir
+# cd open-digger
+# 
+# 2. Build js environment(execute only on the first run)
+# npm install
+# npm run build
+# 
+# 3. Build docker image and run a container
+# docker build . -f ./Dockerfile_pycjs -t opendigger-jupyter-python:1.0
+# docker run -it --name python_notebook_name --rm -p 8888:8888 -v .:/home/node/notebook opendigger-jupyter-python:1.0
