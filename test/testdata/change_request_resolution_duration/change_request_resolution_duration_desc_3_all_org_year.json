@@ -1,5 +1,5 @@
 {
-  "sql":"\nSELECT\n  id,\n  argMax(name, time),\n  groupArrayInsertAt(\n    NaN,\n    toUInt32(dateDiff('year', toDate('2015-1-1'), toDate('2016-12-1'))) + 1)(ROUND(avg, 2),\n    toUInt32(dateDiff('year', toStartOfYear(toDate('2015-1-1')), time))) AS avg,\n  groupArrayInsertAt(\n    [],\n    toUInt32(dateDiff('year', toDate('2015-1-1'), toDate('2016-12-1'))) + 1)(resolution_levels,\n    toUInt32(dateDiff('year', toStartOfYear(toDate('2015-1-1')), time))) AS levels,\n  groupArrayInsertAt(\n    NaN,\n    toUInt32(dateDiff('year', toDate('2015-1-1'), toDate('2016-12-1'))) + 1)(ROUND(quantile_0, 2),\n    toUInt32(dateDiff('year', toStartOfYear(toDate('2015-1-1')), time))) AS quantile_0,groupArrayInsertAt(\n    NaN,\n    toUInt32(dateDiff('year', toDate('2015-1-1'), toDate('2016-12-1'))) + 1)(ROUND(quantile_1, 2),\n    toUInt32(dateDiff('year', toStartOfYear(toDate('2015-1-1')), time))) AS quantile_1,groupArrayInsertAt(\n    NaN,\n    toUInt32(dateDiff('year', toDate('2015-1-1'), toDate('2016-12-1'))) + 1)(ROUND(quantile_2, 2),\n    toUInt32(dateDiff('year', toStartOfYear(toDate('2015-1-1')), time))) AS quantile_2,groupArrayInsertAt(\n    NaN,\n    toUInt32(dateDiff('year', toDate('2015-1-1'), toDate('2016-12-1'))) + 1)(ROUND(quantile_3, 2),\n    toUInt32(dateDiff('year', toStartOfYear(toDate('2015-1-1')), time))) AS quantile_3,groupArrayInsertAt(\n    NaN,\n    toUInt32(dateDiff('year', toDate('2015-1-1'), toDate('2016-12-1'))) + 1)(ROUND(quantile_4, 2),\n    toUInt32(dateDiff('year', toStartOfYear(toDate('2015-1-1')), time))) AS quantile_4\nFROM\n(\n  SELECT\n    toStartOfYear(opened_at) AS time,\n    org_id AS id, argMax(org_login, time) AS name,\n    avg(resolution_duration) AS avg,\n    quantile(0)(resolution_duration) AS quantile_0,quantile(0.25)(resolution_duration) AS quantile_1,quantile(0.5)(resolution_duration) AS quantile_2,quantile(0.75)(resolution_duration) AS quantile_3,quantile(1)(resolution_duration) AS quantile_4,\n    [countIf(resolution_level = 0),countIf(resolution_level = 1),countIf(resolution_level = 2),countIf(resolution_level = 3)] AS resolution_levels\n  FROM\n  (\n    SELECT\n      repo_id,\n      argMax(repo_name, created_at) AS repo_name,\n      org_id,\n      argMax(org_login, created_at) AS org_login,\n      issue_number,\n      argMaxIf(action, created_at, action IN ('opened', 'closed' , 'reopened')) AS last_action,\n      argMax(issue_created_at,created_at) AS opened_at,\n      maxIf(created_at, action = 'closed') AS closed_at,\n      dateDiff('day', opened_at, closed_at) AS resolution_duration,\n      multiIf(resolution_duration <= 3, 0,resolution_duration <= 7, 1,resolution_duration <= 15, 2, 3) AS resolution_level\n    FROM gh_events\n    WHERE type = 'PullRequestEvent' AND (org_id IN [1342004])\n    GROUP BY repo_id, org_id, issue_number\n    HAVING opened_at >= toDate('2015-1-1') AND opened_at < toDate('2017-1-1') AND last_action='closed'\n  )\n  GROUP BY id, time\n  \n)\nGROUP BY id\nORDER BY avg[-1] DESC\n    LIMIT 3",
+  "sql": "\nSELECT\n  id,\n  argMax(name, time),\n  groupArrayInsertAt(\n    NaN,\n    toUInt32(dateDiff('year', toDate('2015-1-1'), toDate('2016-12-1'))) + 1)(ROUND(avg, 2),\n    toUInt32(dateDiff('year', toStartOfYear(toDate('2015-1-1')), time))) AS avg,\n  groupArrayInsertAt(\n    [],\n    toUInt32(dateDiff('year', toDate('2015-1-1'), toDate('2016-12-1'))) + 1)(resolution_levels,\n    toUInt32(dateDiff('year', toStartOfYear(toDate('2015-1-1')), time))) AS levels,\n  groupArrayInsertAt(\n    NaN,\n    toUInt32(dateDiff('year', toDate('2015-1-1'), toDate('2016-12-1'))) + 1)(ROUND(quantile_0, 2),\n    toUInt32(dateDiff('year', toStartOfYear(toDate('2015-1-1')), time))) AS quantile_0,groupArrayInsertAt(\n    NaN,\n    toUInt32(dateDiff('year', toDate('2015-1-1'), toDate('2016-12-1'))) + 1)(ROUND(quantile_1, 2),\n    toUInt32(dateDiff('year', toStartOfYear(toDate('2015-1-1')), time))) AS quantile_1,groupArrayInsertAt(\n    NaN,\n    toUInt32(dateDiff('year', toDate('2015-1-1'), toDate('2016-12-1'))) + 1)(ROUND(quantile_2, 2),\n    toUInt32(dateDiff('year', toStartOfYear(toDate('2015-1-1')), time))) AS quantile_2,groupArrayInsertAt(\n    NaN,\n    toUInt32(dateDiff('year', toDate('2015-1-1'), toDate('2016-12-1'))) + 1)(ROUND(quantile_3, 2),\n    toUInt32(dateDiff('year', toStartOfYear(toDate('2015-1-1')), time))) AS quantile_3,groupArrayInsertAt(\n    NaN,\n    toUInt32(dateDiff('year', toDate('2015-1-1'), toDate('2016-12-1'))) + 1)(ROUND(quantile_4, 2),\n    toUInt32(dateDiff('year', toStartOfYear(toDate('2015-1-1')), time))) AS quantile_4\nFROM\n(\n  SELECT\n    toStartOfYear(opened_at) AS time,\n    org_id AS id, argMax(org_login, time) AS name,\n    avg(resolution_duration) AS avg,\n    quantile(0)(resolution_duration) AS quantile_0,quantile(0.25)(resolution_duration) AS quantile_1,quantile(0.5)(resolution_duration) AS quantile_2,quantile(0.75)(resolution_duration) AS quantile_3,quantile(1)(resolution_duration) AS quantile_4,\n    [countIf(resolution_level = 0),countIf(resolution_level = 1),countIf(resolution_level = 2),countIf(resolution_level = 3)] AS resolution_levels\n  FROM\n  (\n    SELECT\n      repo_id,\n      argMax(repo_name, created_at) AS repo_name,\n      org_id,\n      argMax(org_login, created_at) AS org_login,\n      issue_number,\n      argMaxIf(action, created_at, action IN ('opened', 'closed' , 'reopened')) AS last_action,\n      argMax(issue_created_at,created_at) AS opened_at,\n      maxIf(created_at, action = 'closed') AS closed_at,\n      dateDiff('day', opened_at, closed_at) AS resolution_duration,\n      multiIf(resolution_duration <= 3, 0,resolution_duration <= 7, 1,resolution_duration <= 15, 2, 3) AS resolution_level\n    FROM gh_events\n    WHERE type = 'PullRequestEvent' AND (org_id IN [1342004])\n    GROUP BY repo_id, org_id, issue_number\n    HAVING opened_at >= toDate('2015-1-1') AND opened_at < toDate('2017-1-1') AND last_action='closed'\n  )\n  GROUP BY id, time\n  \n)\nGROUP BY id\nORDER BY avg[-1] DESC\n    LIMIT 3",
   "modifiedOption": {
     "orgIds": [
       1342004
@@ -17,45 +17,7 @@
   "change_request_resolution_duration_desc_3_all_org_year": [
     {
       "id": "1342004",
-      "name": "google",
-      "avg": [
-        43.77,
-        41.55
-      ],
-      "levels": [
-        [
-          "7865",
-          "927",
-          "540",
-          "1443"
-        ],
-        [
-          "9625",
-          "1123",
-          "739",
-          "1794"
-        ]
-      ],
-      "quantile_0": [
-        0,
-        0
-      ],
-      "quantile_1": [
-        0,
-        0
-      ],
-      "quantile_2": [
-        1,
-        1
-      ],
-      "quantile_3": [
-        4,
-        4
-      ],
-      "quantile_4": [
-        2903,
-        2734
-      ]
+      "name": "google"
     }
   ]
 }

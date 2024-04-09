@@ -6,29 +6,30 @@ We can use ClickHouse online service with full data access to make ClikcHouse sa
 
 ### ClickHouse server image
 
-- x86-64/amd64: `docker pull --platform linux/amd64 docker-hub.x-lab.info/opendigger/open-digger-clickhouse-base:v2`
-- ARM64: `docker pull --platform linux/arm64 docker-hub.x-lab.info/opendigger/open-digger-clickhouse-base:v2`
+- x86-64/amd64: `docker pull --platform linux/amd64 docker-hub.open-digger.cn/open-digger/open-digger-clickhouse-base:v2`
+- ARM64: `docker pull --platform linux/arm64 docker-hub.open-digger.cn/open-digger/open-digger-clickhouse-base:v2`
 
 ### Use sample data
 
 To use sample data from OSS service, you need to follow the steps:
 
-1. Download data from OSS. We provide several sample datasets in the table below. 
+1. Download data from OSS. We provide several sample datasets in the table below.
 
 2. Extract data from archive file to a folder: `tar -zxvf data.tar.gz -C ./folder_name`. You will get a `table` and a `data` file.
 
 3. Use ClickHouse base image with extracted data to initialize the database. The extracted `data` and `table` file should be mounted into `/data/` folder into the container, here is an example:
-   - Linux/MacOS: `docker run -d --name container_name -m 8G -p 8123:8123 -p 9000:9000 --ulimit nofile=262144:262144 --volume=$(pwd)/folder_name/:/data/ docker-hub.x-lab.info/opendigger/open-digger-clickhouse-base:v2`;
-   - Windows: `docker run -d --name container_name -m 8G -p 8123:8123 -p 9000:9000 --ulimit nofile=262144:262144 --volume=%cd%/folder_name/:/data/ docker-hub.x-lab.info/opendigger/open-digger-clickhouse-base:v2`.
+
+- Linux/MacOS: `docker run -d --name container_name -m 8G -p 8123:8123 -p 9000:9000 --ulimit nofile=262144:262144 --volume=$(pwd)/folder_name/:/data/ docker-hub.open-digger.cn/open-digger/open-digger-clickhouse-base:v2`;
+- Windows: `docker run -d --name container_name -m 8G -p 8123:8123 -p 9000:9000 --ulimit nofile=262144:262144 --volume=%cd%/folder_name/:/data/ docker-hub.open-digger.cn/open-digger/open-digger-clickhouse-base:v2`.
    
-   In the above command lines, `$(pwd)` or `%cd%` makes sure the `host-src` be an absolute path.
-   > **Notice**: As referred in [Docker's Doc](https://docs.docker.com/engine/reference/run/#volume-shared-filesystems), the `host-src` in `--volume=[host-src:]container-dest[:<options>]` must be an absolute path or a name value.
-   >
-   > - If you supply an absolute path for the `host-src`, Docker bind-mounts to the path you specify. 
-   >
-   > - If you supply a name, Docker creates a named volume by that name.
-   >
-   > **A name value must start with an alphanumeric character, followed by `a-z0-9`, `_` (underscore), `.` (period) or `-` (hyphen). An absolute path starts with a `/` (forward slash).**
+In the above command lines, `$(pwd)` or `%cd%` makes sure the `host-src` be an absolute path.
+> **Notice**: As referred in [Docker's Doc](https://docs.docker.com/engine/reference/run/#volume-shared-filesystems), the `host-src` in `--volume=[host-src:]container-dest[:<options>]` must be an absolute path or a name value.
+>
+> - If you supply an absolute path for the `host-src`, Docker bind-mounts to the path you specify. 
+>
+> - If you supply a name, Docker creates a named volume by that name.
+>
+> **A name value must start with an alphanumeric character, followed by `a-z0-9`, `_` (underscore), `.` (period) or `-` (hyphen). An absolute path starts with a `/` (forward slash).**
 
 4. The data is ready until message `Insert data done.` logged into container console. Now the Clickhouse container is running. Stop and restart the same container instance will not import data again.
 
@@ -38,11 +39,11 @@ To use the sample data, at minimum 8 GB memory should be allocated to the contai
 
 | Data | Description | SQL | Record counts | Uncompressed size | Compressed size | Imported size(est.) | Import time(est.) |
 |:---|:---|:---|:---|:---|:---|:---|:---|
-| [2020_full](https://oss.x-lab.info/sample_data/2020_full.tar.gz) | All records from year 2020 | sql_files/2020_full.sql | 855 million | 802 GB | 81 GB | 121 GB | 7 h |
-| [2015_2021_top_50_year](https://oss.x-lab.info/sample_data/2015_2021_top50_year.tar.gz) | Top 50 most active repos from year 2015 to 2021 for every year | sql_files/2015_2021_top50_year.sql | 168 million | 117 GB | 8.4 GB | 13 GB | 50 m |
-| [second_sample](https://oss.x-lab.info/sample_data/second_sample.tar.gz) | All events log sample by 1 second in a hour | sql_files/second_sample.sql | 62 million | 57 GB | 10 GB | 14 GB | 25 m |
-| [label_2015](https://oss.x-lab.info/sample_data/label_2015.tar.gz) | All events log for labeled repo in OpenDigger in 2015 | sql_files/label_2015.sql | 3.5 million | 2.9 GB | 378 MB | 552 MB | 3 m |
-| [paddle_hackathon_3](https://oss.x-lab.info/sample_data/paddle_hackathon_3.tar.gz) | Data under PaddlePaddle org for Hackathon | sql_files/paddle_hackathon_3.sql | 803 thousands | 736 MB | 96 MB | 141 MB | 1 m |
+| [2020_full](https://oss.open-digger.cn/sample_data/2020_full.tar.gz) | All records from year 2020 | sql_files/2020_full.sql | 855 million | 802 GB | 81 GB | 121 GB | 7 h |
+| [2015_2021_top_50_year](https://oss.open-digger.cn/sample_data/2015_2021_top50_year.tar.gz) | Top 50 most active repos from year 2015 to 2021 for every year | sql_files/2015_2021_top50_year.sql | 168 million | 117 GB | 8.4 GB | 13 GB | 50 m |
+| [second_sample](https://oss.open-digger.cn/sample_data/second_sample.tar.gz) | All events log sample by 1 second in a hour | sql_files/second_sample.sql | 62 million | 57 GB | 10 GB | 14 GB | 25 m |
+| [label_2015](https://oss.open-digger.cn/sample_data/label_2015.tar.gz) | All events log for labeled repo in OpenDigger in 2015 | sql_files/label_2015.sql | 3.5 million | 2.9 GB | 378 MB | 552 MB | 3 m |
+| [paddle_hackathon_3](https://oss.open-digger.cn/sample_data/paddle_hackathon_3.tar.gz) | Data under PaddlePaddle org for Hackathon | sql_files/paddle_hackathon_3.sql | 1.38 million | 1.4 GB | 184 MB | 222 MB | 1 m |
 
 ### Use Notebook image
 
@@ -103,10 +104,10 @@ Start your ClickHouse container, which should be set up in the last step. Now:
 
    ```shell
    $ docker inspect container_name | grep Gateway
-               "Gateway": "172.17.0.1",
-               "IPv6Gateway": "",
-                       "Gateway": "172.17.0.1",
-                       "IPv6Gateway": "",
+              "Gateway": "172.17.0.1",
+              "IPv6Gateway": "",
+              "Gateway": "172.17.0.1",
+              "IPv6Gateway": "",
    ```
 
 4. Use `docker build -t opendigger-jupyter-python:1.0 $(pwd)` to make a docker image, this image is based on `miniconda`. You can check the `Dockerfile` in root directory.
@@ -141,6 +142,6 @@ System prerequisite: `clickhouse` CLI tool and `ossutil` CLI tool.
 
 The files under `build` is used to make base images to load the data made by `export_sample.sh`.
 
-`Dockerfile` is used to build the images from ClickHouse official base image for `amd64` and `arm64` platform.
+`Dockerfile` is used to build the images from ClickHouse official base image for `amd64` and `arm64` platform. Please make sure that `buildx` and `buildkit` is properly setup in your environment.
 
 `initdb.sh` script is used to initialize database from static dataset.

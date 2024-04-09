@@ -1,5 +1,5 @@
 {
-  "sql":"\nSELECT\n  id,\n  argMax(name, time) AS name,\n  groupArrayInsertAt(\n    0,\n    toUInt32(dateDiff('month', toDate('2015-1-1'), toDate('2016-12-1'))) + 1)(ROUND(attention, 2),\n    toUInt32(dateDiff('month', toDate('2015-1-1'), time))) AS attention\nFROM\n(\n  SELECT\n    toStartOfMonth(created_at) AS time,\n    repo_id AS id, argMax(repo_name, time) AS name,\n    countIf(type='WatchEvent') AS stars,\n    countIf(type='ForkEvent') AS forks,\n    stars + 2 * forks AS attention\n  FROM gh_events\n  WHERE type IN ('WatchEvent', 'ForkEvent') AND (org_id IN [1342004]) AND  created_at >= toDate('2015-1-1') AND created_at < dateAdd(month, 1, toDate('2016-12-1'))\n  GROUP BY id, time\n  \n)\nGROUP BY id\nORDER BY attention[-1] DESC\n    LIMIT 3",
+  "sql": "\nSELECT\n  id,\n  argMax(name, time) AS name,\n  groupArrayInsertAt(\n    0,\n    toUInt32(dateDiff('month', toDate('2015-1-1'), toDate('2016-12-1'))) + 1)(ROUND(attention, 2),\n    toUInt32(dateDiff('month', toDate('2015-1-1'), time))) AS attention\nFROM\n(\n  SELECT\n    toStartOfMonth(created_at) AS time,\n    repo_id AS id, argMax(repo_name, time) AS name,\n    countIf(type='WatchEvent') AS stars,\n    countIf(type='ForkEvent') AS forks,\n    stars + 2 * forks AS attention\n  FROM gh_events\n  WHERE type IN ('WatchEvent', 'ForkEvent') AND (org_id IN [1342004]) AND  created_at >= toDate('2015-1-1') AND created_at < dateAdd(month, 1, toDate('2016-12-1'))\n  GROUP BY id, time\n  \n)\nGROUP BY id\nORDER BY attention[-1] DESC\n    LIMIT 3",
   "modifiedOption": {
     "orgIds": [
       1342004
@@ -42,24 +42,24 @@
         "0",
         "0",
         "0",
-        "1762"
+        "1765"
       ]
     },
     {
       "id": "23357588",
       "name": "google/protobuf",
       "attention": [
-        "579",
-        "527",
+        "581",
+        "528",
         "886",
         "765",
-        "763",
+        "764",
         "733",
         "990",
-        "753",
+        "755",
         "787",
         "794",
-        "1017",
+        "1018",
         "878",
         "916",
         "768",
@@ -67,12 +67,12 @@
         "880",
         "1078",
         "996",
-        "1621",
+        "1622",
         "1384",
         "1188",
-        "1095",
-        "1226",
-        "1207"
+        "1096",
+        "1227",
+        "1208"
       ]
     },
     {
@@ -102,7 +102,7 @@
         "10",
         "75",
         "107",
-        "1107"
+        "1108"
       ]
     }
   ]

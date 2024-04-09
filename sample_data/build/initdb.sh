@@ -24,7 +24,7 @@ else
     clickhouse client -m < /data/table
     echo "Init database done."
     # insert data
-    clickhouse client -q "INSERT INTO $DB.gh_events FORMAT Native" < /data/data
+    clickhouse client -q "INSERT INTO $DB.events FORMAT Native" < /data/data
     echo "Insert data done."
 
     # create lock file

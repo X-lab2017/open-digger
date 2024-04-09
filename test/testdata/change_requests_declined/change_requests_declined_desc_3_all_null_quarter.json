@@ -1,5 +1,5 @@
 {
-  "sql":"\nSELECT\n  id,\n  argMax(name, time) AS name,\n  SUM(count) AS total_count,\n  groupArrayInsertAt(\n    0,\n    toUInt32(dateDiff('quarter', toDate('2015-1-1'), toDate('2016-12-1'))) + 1)(ROUND(count, 2),\n    toUInt32(dateDiff('quarter', toStartOfQuarter(toDate('2015-1-1')), time))) AS change_requests_declined\nFROM\n(\n  SELECT\n    toStartOfQuarter(created_at) AS time,\n    repo_id AS id, argMax(repo_name, time) AS name,\n    COUNT() AS count\n  FROM gh_events\n  WHERE type = 'PullRequestEvent' AND action = 'closed' AND pull_merged = 0 AND (org_id IN [1342004]) AND  created_at >= toDate('2015-1-1') AND created_at < dateAdd(month, 1, toDate('2016-12-1'))\n  GROUP BY id, time\n  \n)\nGROUP BY id\nORDER BY change_requests_declined[-1] DESC\n    LIMIT 3",
+  "sql": "\nSELECT\n  id,\n  argMax(name, time) AS name,\n  SUM(count) AS total_count,\n  groupArrayInsertAt(\n    0,\n    toUInt32(dateDiff('quarter', toDate('2015-1-1'), toDate('2016-12-1'))) + 1)(ROUND(count, 2),\n    toUInt32(dateDiff('quarter', toStartOfQuarter(toDate('2015-1-1')), time))) AS change_requests_declined\nFROM\n(\n  SELECT\n    toStartOfQuarter(created_at) AS time,\n    repo_id AS id, argMax(repo_name, time) AS name,\n    COUNT() AS count\n  FROM gh_events\n  WHERE type = 'PullRequestEvent' AND action = 'closed' AND pull_merged = 0 AND (org_id IN [1342004]) AND  created_at >= toDate('2015-1-1') AND created_at < dateAdd(month, 1, toDate('2016-12-1'))\n  GROUP BY id, time\n  \n)\nGROUP BY id\nORDER BY change_requests_declined[-1] DESC\n    LIMIT 3",
   "modifiedOption": {
     "orgIds": [
       1342004
@@ -18,76 +18,76 @@
     {
       "id": "18845024",
       "name": "google/closure-compiler",
-      "total_count": "269",
+      "total_count": "292",
       "count": [
         "7",
         "10",
         "19",
         "25",
-        "79",
-        "40",
-        "45",
-        "44"
+        "88",
+        "42",
+        "53",
+        "48"
       ],
       "ratio": [
-        "2.6%",
-        "3.7%",
-        "7.1%",
-        "9.3%",
-        "29%",
-        "15%",
-        "17%",
+        "2.4%",
+        "3.4%",
+        "6.5%",
+        "8.6%",
+        "30%",
+        "14%",
+        "18%",
         "16%"
       ]
     },
     {
       "id": "9304637",
       "name": "google/ggrc-core",
-      "total_count": "236",
+      "total_count": "243",
       "count": [
         "0",
         "39",
         "20",
         "34",
         "26",
-        "53",
+        "60",
         "30",
         "34"
       ],
       "ratio": [
         "0.0%",
-        "17%",
-        "8.5%",
+        "16%",
+        "8.2%",
         "14%",
         "11%",
-        "22%",
-        "13%",
+        "25%",
+        "12%",
         "14%"
       ]
     },
     {
-      "id": "10270722",
-      "name": "google/go-github",
-      "total_count": "144",
+      "id": "19249835",
+      "name": "google/WebFundamentals",
+      "total_count": "151",
       "count": [
-        "10",
-        "16",
-        "11",
-        "8",
-        "29",
-        "23",
+        "7",
         "15",
+        "12",
+        "25",
+        "12",
+        "9",
+        "39",
         "32"
       ],
       "ratio": [
-        "6.9%",
-        "11%",
-        "7.6%",
-        "5.6%",
-        "20%",
-        "16%",
-        "10%",
-        "22%"
+        "4.6%",
+        "9.9%",
+        "7.9%",
+        "17%",
+        "7.9%",
+        "6.0%",
+        "26%",
+        "21%"
       ]
     }
   ]
