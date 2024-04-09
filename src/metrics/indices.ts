@@ -14,6 +14,7 @@ import {
   getInnerGroupBy
 } from './basic';
 import * as clickhouse from '../db/clickhouse';
+import { getPlatformData } from '../label_data_utils';
 
 export const ISSUE_COMMENT_WEIGHT = 0.5252;
 export const OPEN_ISSUE_WEIGHT = 2.2235;
@@ -88,6 +89,7 @@ ${getOutterOrderAndLimit(config, 'openrank')}`;
 
 interface RepoCommunityOpenRankConfig {
   limit: number;
+  withBot: boolean;
 };
 export const getRepoCommunityOpenrank = async (config: QueryConfig<RepoCommunityOpenRankConfig>) => {
   config = getMergedConfig(config);
@@ -96,7 +98,14 @@ export const getRepoCommunityOpenrank = async (config: QueryConfig<RepoCommunity
   if (repoWhereClause) whereClause.push(repoWhereClause);
   const timeRangeClause = getTimeRangeWhereClause(config);
   if (timeRangeClause) whereClause.push(timeRangeClause);
-  const limit = config.options?.limit ?? 30;
+  const limit = (config.options?.limit == undefined) ? 30 : config.options.limit;
+  if (config.options?.withBot === false) {
+    const botLabelData = getPlatformData([':bot']);
+    for (const b of botLabelData) {
+      whereClause.push(`(NOT (platform='${b.name}' AND actor_id IN [${b.users.map(u => u.id).join(',')}]))`);
+    }
+    whereClause.push(`(actor_login NOT LIKE '%[bot]')`);
+  }
 
   const sql = `
 SELECT
