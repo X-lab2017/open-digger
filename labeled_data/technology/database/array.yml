@@ -23,3 +23,5 @@ data:
           name: peermaps/eyros
         - id: 156942199
           name: perone/euclidesdb
+        - id: 90768966
+          name: uwdb/lightdb

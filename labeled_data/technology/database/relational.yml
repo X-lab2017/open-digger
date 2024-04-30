@@ -61,6 +61,8 @@ data:
           name: Postgres-XL/Postgres-XL
         - id: 74375185
           name: RedBeardLab/rediSQL
+        - id: 574694308
+          name: RhizomeDB/rs-rhizome
         - id: 42580991
           name: SnappyDataInc/snappydata
         - id: 402945349
@@ -183,6 +185,8 @@ data:
           name: eventql/eventql
         - id: 196702393
           name: eyalroz/c-store
+        - id: 172208960
+          name: eztools-software/FileDb
         - id: 388946490
           name: facebookincubator/velox
         - id: 40127179
@@ -237,6 +241,8 @@ data:
           name: lsst/qserv
         - id: 61153677
           name: m3db/m3
+        - id: 442441933
+          name: mabel-dev/opteryx
         - id: 564689243
           name: man-group/ArcticDB
         - id: 95614931
@@ -277,6 +283,8 @@ data:
           name: pinusdb/pinusdb
         - id: 14702444
           name: pipelinedb/pipelinedb
+        - id: 618452402
+          name: plabayo/venndb
         - id: 510607652
           name: pocketbase/pocketbase
         - id: 166387176

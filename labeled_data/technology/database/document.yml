@@ -113,6 +113,8 @@ data:
           name: endatabas/endb
         - id: 14143348
           name: fakemongo/fongo
+        - id: 679889516
+          name: fireproof-storage/fireproof
         - id: 305513242
           name: fluree/db
         - id: 138411034

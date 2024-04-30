@@ -19,6 +19,8 @@ data:
           name: RedisGraph/RedisGraph
         - id: 43494700
           name: SparsityTechnologies/sparksee-server
+        - id: 528766495
+          name: TuGraph-family/tugraph-db
         - id: 22475123
           name: amark/gun
         - id: 276293034
