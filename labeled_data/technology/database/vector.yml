@@ -5,6 +5,8 @@ data:
     - name: GitHub
       type: Code Hosting
       repos:
+        - id: 753244287
+          name: DeployQL/LintDB
         - id: 201403923
           name: activeloopai/deeplake
         - id: 642912355
@@ -29,6 +31,8 @@ data:
           name: nuclia/nucliadb
         - id: 722854801
           name: oasysai/oasysdb
+        - id: 735283134
+          name: philippgille/chromem-go
         - id: 40127179
           name: pilosa/pilosa
         - id: 268163609

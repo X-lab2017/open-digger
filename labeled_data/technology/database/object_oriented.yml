@@ -65,6 +65,8 @@ data:
           name: jonahharris/osdb-beaglesql
         - id: 1776883
           name: kimchy/compass
+        - id: 442441933
+          name: mabel-dev/opteryx
         - id: 89699591
           name: magma-database/magma
         - id: 25225465

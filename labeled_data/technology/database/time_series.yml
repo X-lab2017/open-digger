@@ -5,6 +5,8 @@ data:
     - name: GitHub
       type: Code Hosting
       repos:
+        - id: 346976717
+          name: 4paradigm/OpenMLDB
         - id: 396867188
           name: ArcadeData/arcadedb
         - id: 480217156
