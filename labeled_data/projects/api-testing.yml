@@ -1,0 +1,11 @@
+name: API Testing
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 501122714
+          name: linuxsuren/api-testing
+        - id: 736195825
+          name: linuxsuren/atest-ext-store-orm
