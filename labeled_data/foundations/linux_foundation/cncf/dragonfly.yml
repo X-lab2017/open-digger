@@ -1,0 +1,9 @@
+name: Dragonfly
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 44993420
+          name: dragonflyoss

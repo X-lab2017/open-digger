@@ -1,0 +1,33 @@
+name: Hyperledger Indy
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 77021566
+          name: hyperledger/indy-node
+        - id: 292955182
+          name: hyperledger/indy-did-method
+        - id: 163895292
+          name: hyperledger/indy-docs
+        - id: 121789977
+          name: hyperledger/indy-hipe
+        - id: 348284839
+          name: hyperledger/indy-node-container
+        - id: 277000349
+          name: hyperledger/indy-node-monitor
+        - id: 51585028
+          name: hyperledger/indy-plenum
+        - id: 85677006
+          name: hyperledger/indy-sdk
+        - id: 381399164
+          name: hyperledger/indy-sdk-react-native
+        - id: 473670809
+          name: hyperledger/indy-shared-gha
+        - id: 253682241
+          name: hyperledger/indy-shared-rs
+        - id: 151187708
+          name: hyperledger/indy-test-automation
+        - id: 228662896
+          name: hyperledger/indy-vdr

@@ -1,0 +1,11 @@
+name: Hyperledger Caliper
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 125944747
+          name: hyperledger/caliper
+        - id: 201289357
+          name: hyperledger/caliper-benchmarks

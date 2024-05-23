@@ -1,0 +1,9 @@
+name: Hyperledger Bevel
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 215624636
+          name: hyperledger/bevel

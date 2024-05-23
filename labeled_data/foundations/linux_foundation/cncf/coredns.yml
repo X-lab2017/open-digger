@@ -1,0 +1,9 @@
+name: CoreDNS
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 21110084
+          name: coredns

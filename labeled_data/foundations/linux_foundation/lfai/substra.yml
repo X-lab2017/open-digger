@@ -1,0 +1,9 @@
+name: Substra
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 84009910
+          name: Substra

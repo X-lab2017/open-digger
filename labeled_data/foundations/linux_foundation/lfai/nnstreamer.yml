@@ -1,0 +1,9 @@
+name: NNStreamer
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 60992508
+          name: nnstreamer

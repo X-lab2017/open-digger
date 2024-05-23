@@ -1,0 +1,9 @@
+name: Project EVE
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 182198941
+          name: lf-edge/eve

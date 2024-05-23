@@ -1,0 +1,9 @@
+name: OpenFeature
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 99483952
+          name: open-feature

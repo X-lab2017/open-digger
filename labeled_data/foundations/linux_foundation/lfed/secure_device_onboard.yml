@@ -1,0 +1,9 @@
+name: Secure Device Onboard
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 133191014
+          name: secure-device-onboard

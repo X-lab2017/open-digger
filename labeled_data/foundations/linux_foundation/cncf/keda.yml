@@ -1,0 +1,9 @@
+name: KEDA
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 49917779
+          name: kedacore

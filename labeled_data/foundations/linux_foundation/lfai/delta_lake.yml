@@ -1,0 +1,9 @@
+name: Delta Lake
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 49767398
+          name: delta-io

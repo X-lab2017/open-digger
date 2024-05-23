@@ -1,0 +1,9 @@
+name: KubeEdge
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 41812520
+          name: kubeedge

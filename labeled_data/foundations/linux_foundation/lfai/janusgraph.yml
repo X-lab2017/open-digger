@@ -1,0 +1,9 @@
+name: JanusGraph
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 23411090
+          name: JanusGraph

@@ -1,0 +1,9 @@
+name: eKuiper
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 195003588
+          name: lf-edge/ekuiper

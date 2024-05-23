@@ -1,0 +1,9 @@
+name: nvm
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 49963700
+          name: nvm-sh

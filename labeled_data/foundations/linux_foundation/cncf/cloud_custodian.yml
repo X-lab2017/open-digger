@@ -1,0 +1,9 @@
+name: Cloud Custodian
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 38811484
+          name: cloud-custodian

@@ -1,0 +1,9 @@
+name: cert-manager
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 39950598
+          name: cert-manager

@@ -1,0 +1,49 @@
+name: Hyperledger Aries
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 185645741
+          name: hyperledger/aries
+        - id: 235401444
+          name: hyperledger/aries-acapy-controllers
+        - id: 220554092
+          name: hyperledger/aries-acapy-plugin-toolbox
+        - id: 224270807
+          name: hyperledger/aries-agent-test-harness
+        - id: 262412770
+          name: hyperledger/aries-askar
+        - id: 193556007
+          name: hyperledger/aries-cloudagent-python
+        - id: 475045853
+          name: hyperledger/aries-fabric-wrapper
+        - id: 203230577
+          name: hyperledger/aries-framework-dotnet
+        - id: 196081240
+          name: hyperledger/aries-framework-go
+        - id: 302078882
+          name: hyperledger/aries-framework-go-ext
+        - id: 222990667
+          name: hyperledger/aries-framework-javascript
+        - id: 400559794
+          name: hyperledger/aries-framework-javascript-ext
+        - id: 303468259
+          name: hyperledger/aries-mediator-service
+        - id: 310693687
+          name: hyperledger/aries-mobile-agent-react-native
+        - id: 251715607
+          name: hyperledger/aries-mobile-agent-xamarin
+        - id: 425088163
+          name: hyperledger/aries-mobile-test-harness
+        - id: 193161321
+          name: hyperledger/aries-protocol-test-suite
+        - id: 185645683
+          name: hyperledger/aries-rfcs
+        - id: 192852366
+          name: hyperledger/aries-staticagent-python
+        - id: 206838342
+          name: hyperledger/aries-toolbox
+        - id: 281326566
+          name: hyperledger/aries-vcx

@@ -1,0 +1,9 @@
+name: Egeria
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 14320221
+          name: odpi

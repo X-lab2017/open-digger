@@ -1,0 +1,9 @@
+name: AI Fairness 360 Toolkit
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 145761123
+          name: Trusted-AI/AIF360

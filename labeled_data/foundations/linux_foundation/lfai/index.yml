@@ -1,0 +1,47 @@
+name: LF AI & Data Foundation
+type: Foundation
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 45347303
+          name: lfai
+  labels:
+    - angel_ml
+    - forestflow
+    - tony
+    - datapractices
+    - opends4all
+    - openlineage
+    - delta_lake
+    - docarrary
+    - janusgraph
+    - milvus
+    - amundsen
+    - datashim
+    - marquez
+    - feast
+    - nnstreamer
+    - egeria
+    - delta
+    - adlik
+    - kserve
+    - fate
+    - substra
+    - horovod
+    - ludwig
+    - onnx
+    - flyte
+    - kedro
+    - rwkv
+    - kompute
+    - pyro
+    - elastic_deep_learning
+    - soajs
+    - open_voice_interoperability
+    - sparklyr
+    - ai_explainability_360_toolkit
+    - adversarial_robustness_toolkit
+    - ai_fairness_360_toolkit
+    - open_voice_trustmark

@@ -1,0 +1,9 @@
+name: Kompute
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 87715720
+          name: KomputeProject

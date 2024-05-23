@@ -1,0 +1,9 @@
+name: Fluentd
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 859518
+          name: fluent

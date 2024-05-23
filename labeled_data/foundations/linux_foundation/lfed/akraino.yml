@@ -1,0 +1,9 @@
+name: Akraino
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 52763088
+          name: akraino-edge-stack

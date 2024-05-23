@@ -1,0 +1,9 @@
+name: Jaeger
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 28545596
+          name: jaegertracing

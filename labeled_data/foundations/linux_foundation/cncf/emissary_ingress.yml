@@ -1,0 +1,9 @@
+name: Emissary-Ingress
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 79531940
+          name: emissary-ingress

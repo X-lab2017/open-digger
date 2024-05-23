@@ -1,0 +1,9 @@
+name: etcd
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 41972792
+          name: etcd-io

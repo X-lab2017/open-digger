@@ -1,0 +1,39 @@
+name: Hyperledger Firefly
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 362231541
+          name: hyperledger/firefly
+        - id: 366835646
+          name: hyperledger/firefly-cli
+        - id: 367469041
+          name: hyperledger/firefly-cordaconnect
+        - id: 370389868
+          name: hyperledger/firefly-dataexchange-https
+        - id: 137403357
+          name: hyperledger/firefly-ethconnect
+        - id: 378972019
+          name: hyperledger/firefly-fabconnect
+        - id: 426340200
+          name: hyperledger/firefly-fir
+        - id: 447379529
+          name: hyperledger/firefly-helm-charts
+        - id: 435599421
+          name: hyperledger/firefly-perf-cli
+        - id: 371713749
+          name: hyperledger/firefly-samples
+        - id: 476407433
+          name: hyperledger/firefly-sandbox
+        - id: 475601493
+          name: hyperledger/firefly-sdk-nodejs
+        - id: 392375903
+          name: hyperledger/firefly-tokens-erc1155
+        - id: 445294863
+          name: hyperledger/firefly-tokens-erc20-erc721
+        - id: 479382296
+          name: hyperledger/firefly-transaction-manager
+        - id: 364045059
+          name: hyperledger/firefly-ui

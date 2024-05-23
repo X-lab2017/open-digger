@@ -1,0 +1,9 @@
+name: gRPC
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 7802525
+          name: grpc
