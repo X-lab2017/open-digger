@@ -1,0 +1,9 @@
+name: libuv
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 4030929
+          name: libuv

@@ -1,0 +1,9 @@
+name: Jerryscript
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 51901932
+          name: jerryscript-project

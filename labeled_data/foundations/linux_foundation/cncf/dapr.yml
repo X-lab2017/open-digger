@@ -1,0 +1,9 @@
+name: Dapr
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 51932459
+          name: dapr

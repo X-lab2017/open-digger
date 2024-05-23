@@ -1,0 +1,45 @@
+name: OpenJS Foundation
+type: Foundation
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 48335322
+          name: openjs-foundation
+  labels:
+    - appium
+    - dojo
+    - electron
+    - jquery
+    - node.js
+    - webpack
+    - amp
+    - architect
+    - intern
+    - mocha
+    - node_red
+    - webdriverio
+    - webhint.io
+    - eslint
+    - esprima
+    - express
+    - globalize
+    - grunt
+    - hospitalrun
+    - interledger
+    - jerryscript
+    - libuv
+    - lodash
+    - marko
+    - messageformat
+    - moment.js
+    - pep
+    - qunit
+    - fastify
+    - nvm
+    - chassis
+    - jquery_mobile
+    - jquery_user_interface
+    - requirejs
+    - sizzle

@@ -1,0 +1,9 @@
+name: Node-RED
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 5375661
+          name: node-red

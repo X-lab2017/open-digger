@@ -1,0 +1,22 @@
+name: LF Edge Foundation
+type: Foundation
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 47366123
+          name: lf-edge
+        - id: 39313637
+          name: State-of-the-Edge
+  labels:
+    - open_glossary_of_edge_computing
+    - akraino
+    - baetyl
+    - edgex_foundry
+    - ekuiper
+    - fledge
+    - project_eve
+    - secure_device_onboard
+    - home_edge
+    - open_horizon

@@ -1,0 +1,27 @@
+name: Hyperledger Iroha
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 181739240
+          name: hyperledger/iroha
+        - id: 457094918
+          name: hyperledger/iroha-2-docs
+        - id: 183459423
+          name: hyperledger/iroha-deploy
+        - id: 111099996
+          name: hyperledger/iroha-ed25519
+        - id: 68459569
+          name: hyperledger/iroha-ios
+        - id: 166456657
+          name: hyperledger/iroha-java
+        - id: 68600924
+          name: hyperledger/iroha-javascript
+        - id: 83542442
+          name: hyperledger/iroha-python
+        - id: 240087808
+          name: hyperledger/iroha-state-migration-tool
+        - id: 217092085
+          name: hyperledger/iroha-tui-client

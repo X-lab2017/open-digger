@@ -1,0 +1,9 @@
+name: Chaos Mesh
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 59082378
+          name: chaos-mesh

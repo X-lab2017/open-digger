@@ -1,0 +1,9 @@
+name: Notary
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 32203186
+          name: notaryproject

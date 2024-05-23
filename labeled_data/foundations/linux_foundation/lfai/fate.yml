@@ -1,0 +1,9 @@
+name: FATE
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 54675540
+          name: FederatedAI

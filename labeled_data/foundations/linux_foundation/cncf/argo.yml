@@ -1,0 +1,9 @@
+name: Argo
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 30269780
+          name: argoproj

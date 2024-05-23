@@ -1,0 +1,9 @@
+name: Open Glossary of Edge Computing
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 136637324
+          name: State-of-the-Edge/glossary

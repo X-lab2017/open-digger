@@ -1,0 +1,9 @@
+name: EdgeX Foundry
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 27781926
+          name: edgexfoundry

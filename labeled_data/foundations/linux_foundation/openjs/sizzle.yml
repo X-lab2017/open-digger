@@ -1,0 +1,9 @@
+name: Sizzle
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 70142
+          name: jquery

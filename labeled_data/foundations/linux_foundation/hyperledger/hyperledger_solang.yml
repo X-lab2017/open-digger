@@ -1,0 +1,9 @@
+name: Hyperledger Solang
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 163517929
+          name: hyperledger/solang

@@ -1,0 +1,9 @@
+name: Strimzi
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 34767428
+          name: strimzi

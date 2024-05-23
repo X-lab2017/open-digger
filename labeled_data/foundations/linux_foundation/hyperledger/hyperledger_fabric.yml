@@ -1,0 +1,53 @@
+name: Hyperledger Fabric
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 66573241
+          name: hyperledger/fabric
+        - id: 123010478
+          name: hyperledger/fabric-amcl
+        - id: 79410323
+          name: hyperledger/fabric-ca
+        - id: 203616754
+          name: hyperledger/fabric-chaincode-go
+        - id: 99034741
+          name: hyperledger/fabric-chaincode-java
+        - id: 99034751
+          name: hyperledger/fabric-chaincode-node
+        - id: 143250004
+          name: hyperledger/fabric-cli
+        - id: 259407371
+          name: hyperledger/fabric-config
+        - id: 221976392
+          name: hyperledger/fabric-contract-api-go
+        - id: 272516820
+          name: hyperledger/fabric-docs-i18n
+        - id: 295683736
+          name: hyperledger/fabric-gateway
+        - id: 174452370
+          name: hyperledger/fabric-gateway-java
+        - id: 157443884
+          name: hyperledger/fabric-lib-go
+        - id: 146336278
+          name: hyperledger/fabric-private-chaincode
+        - id: 203616691
+          name: hyperledger/fabric-protos
+        - id: 203616724
+          name: hyperledger/fabric-protos-go
+        - id: 214236899
+          name: hyperledger/fabric-rfcs
+        - id: 94831761
+          name: hyperledger/fabric-samples
+        - id: 85982226
+          name: hyperledger/fabric-sdk-go
+        - id: 70510458
+          name: hyperledger/fabric-sdk-java
+        - id: 68028428
+          name: hyperledger/fabric-sdk-node
+        - id: 67946893
+          name: hyperledger/fabric-sdk-py
+        - id: 98448766
+          name: hyperledger/fabric-test

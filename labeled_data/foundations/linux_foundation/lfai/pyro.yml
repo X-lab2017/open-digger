@@ -1,0 +1,9 @@
+name: Pyro
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 46794900
+          name: pyro-ppl

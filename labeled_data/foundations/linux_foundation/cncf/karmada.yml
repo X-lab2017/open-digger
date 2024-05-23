@@ -1,0 +1,9 @@
+name: Karmada
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 74165798
+          name: karmada-io

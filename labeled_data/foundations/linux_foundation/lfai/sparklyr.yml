@@ -1,0 +1,9 @@
+name: sparklyr
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 58250306
+          name: sparklyr

@@ -1,0 +1,9 @@
+name: Cortex
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 43045022
+          name: cortexproject

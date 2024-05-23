@@ -1,0 +1,9 @@
+name: Home Edge
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 194150352
+          name: lf-edge/edge-home-orchestration-go

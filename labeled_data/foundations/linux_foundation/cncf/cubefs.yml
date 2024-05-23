@@ -1,0 +1,9 @@
+name: CubeFS
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 33819338
+          name: cubeFS

@@ -1,0 +1,13 @@
+name: Hyperledger AnonCreds
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 554915512
+          name: hyperledger/anoncreds-rs
+        - id: 461257552
+          name: hyperledger/anoncreds-spec
+        - id: 523525926
+          name: hyperledger/anoncreds-methods-registry

@@ -1,0 +1,9 @@
+name: Prometheus
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 3380462
+          name: prometheus

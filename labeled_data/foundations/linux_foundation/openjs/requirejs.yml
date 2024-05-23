@@ -1,0 +1,9 @@
+name: RequireJS
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 1781835
+          name: requirejs

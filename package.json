@@ -35,6 +35,7 @@
     "@octokit/auth-app": "^4.0.9",
     "@octokit/core": "^3.6.0",
     "ali-oss": "^6.17.1",
+    "csv-reader": "^1.0.12",
     "dateformat": "^4.5.1",
     "github-graphql-v4-client": "0.1.4",
     "ijavascript-plotly": "0.0.1",

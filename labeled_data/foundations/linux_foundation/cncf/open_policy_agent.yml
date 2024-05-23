@@ -1,0 +1,9 @@
+name: Open Policy Agent (OPA)
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 16468693
+          name: open-policy-agent

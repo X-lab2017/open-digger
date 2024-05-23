@@ -1,0 +1,9 @@
+name: Open Horizon
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 22371287
+          name: open-horizon

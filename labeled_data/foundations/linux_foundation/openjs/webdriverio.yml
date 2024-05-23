@@ -1,0 +1,9 @@
+name: WebdriverIO
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 6512473
+          name: webdriverio

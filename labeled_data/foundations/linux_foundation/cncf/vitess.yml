@@ -1,0 +1,9 @@
+name: Vitess
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 33043890
+          name: vitessio

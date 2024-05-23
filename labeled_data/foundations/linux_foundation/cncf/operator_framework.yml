@@ -1,0 +1,9 @@
+name: Operator Framework
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 38202270
+          name: operator-framework
