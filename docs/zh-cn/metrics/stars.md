@@ -8,11 +8,11 @@
 
 Star可以理解为其他应用上的收藏操作。我们认为Star这个代码仓库的用户通常会对这个仓库提供的功能或源码感兴趣。但是我们不能排除有一些用户，对其Star的代码仓库的兴趣不大。
 
-Stars为在 **一定时间范围** 里对一个代码仓库进行Star操作的次数，通常需要用Stars结合其他指标来衡量一个代码仓库的热度。
+Stars为在 **一定时间范围** 里对一个或多个代码仓库进行Star操作的次数，通常需要用Stars结合其他指标来衡量一个代码仓库受关注的程度。
 
 ## 使用
 
-在SQL里，Stars指标为`type = 'WatchEvent'`的event的数量，event数据的schema见[data description](https://github.com/X-lab2017/open-digger/blob/master/docs/assets/data_description.csv)。一般来讲，我们可以限制`time1 <= created_at <= time2`来找到在time1到time2的时间段里的Stars指标。
+在SQL里，Stars指`type = 'WatchEvent'`的event的数量，event数据的schema见[data description](https://github.com/X-lab2017/open-digger/blob/master/docs/assets/data_description.csv)。我们可以限制`time1 <= created_at <= time2`来找到在time1到time2的时间段里的Stars指标。
 
 在SQL里通常会结合Filter操作来缩小查询得到的数据范围，常见的Filter属性如下。
 
@@ -31,3 +31,11 @@ Stars为在 **一定时间范围** 里对一个代码仓库进行Star操作的�
 其他操作（如GroupBy、OrderBy）使用的属性需要根据需求来改变。
 
 SQL查询的案例可以参考[js example](https://github.com/X-lab2017/open-digger/blob/master/src/metrics/metrics.ts#L15)
+
+### 数据示例
+
+可以参考[json example](https://oss.x-lab.info/open_digger/github/X-lab2017/open-digger/stars.json)
+
+### 应用demo
+
+可以参考[app example](https://codepen.io/frank-zsy/pen/MWBdpNg?type=stars)
