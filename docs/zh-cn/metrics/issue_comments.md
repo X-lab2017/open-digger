@@ -32,12 +32,12 @@ IssueComments为在 **一定时间范围** 里所有用户（包括开发者）�
 
 其他操作（如GroupBy、OrderBy）使用的属性需要根据需求来改变。
 
-SQL查询的案例可以参考[js example](https://github.com/X-lab2017/open-digger/blob/master/src/metrics/metrics.ts#L15)
+SQL查询的案例可以参考[js example](https://github.com/X-lab2017/open-digger/blob/master/src/metrics/metrics.ts)的`repoIssueComments`函数。
 
 ### 数据示例
 
 可以参考[json example](https://oss.x-lab.info/open_digger/github/X-lab2017/open-digger/issue_comments.json)
 
-### 应用demo
+### Demo
 
-可以参考[app example](https://codepen.io/frank-zsy/pen/mdjaZMw)
+可以参考[demo](https://codepen.io/frank-zsy/pen/mdjaZMw)
