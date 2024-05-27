@@ -30,7 +30,7 @@ IssueComments为在 **一定时间范围** 里所有用户（包括开发者）�
 
  - platform
 
-其他操作（如GroupBy、OrderBy）使用的属性需要根据需求来改变。
+其他操作（如GroupBy、OrderBy、Limit）使用的属性需要根据需求来改变。
 
 SQL查询的案例可以参考[js example](https://github.com/X-lab2017/open-digger/blob/master/src/metrics/metrics.ts)的`repoIssueComments`函数。
 
