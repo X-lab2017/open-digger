@@ -28,7 +28,7 @@ event数据的schema见[data description](https://github.com/X-lab2017/open-digg
 
  - platform
 
-其他操作（如GroupBy、OrderBy、Limit）使用的属性需要根据需求来改变。
+其他操作（如GroupBy、OrderBy、Limit）使用的属性需要根据需求来改变。参考[js example](https://github.com/X-lab2017/open-digger/blob/master/src/metrics/indices.ts)的`getAttention`函数。
 
 ### 数据示例
 
