@@ -34,6 +34,19 @@ event数据的schema见[data description](https://github.com/X-lab2017/open-digg
 
 可以参考[json example](https://oss.x-lab.info/open_digger/github/X-lab2017/open-digger/attention.json)
 
+这里，我们可以简单地访问记录一个代码仓库attention指标变化的Json文件，其url格式：
+
+```
+https://oss.x-lab.info/open_digger/{platform}/{user name or organization name}/{repository name}/{metric name}.json
+```
+
+例如：
+
+```
+https://oss.x-lab.info/open_digger/github/X-lab2017/open-digger/attention.json
+https://oss.x-lab.info/open_digger/github/facebook/rocksdb/attention.json
+```
+
 ### Demo
 
-可以参考[demo](https://codepen.io/frank-zsy/pen/MWBdpNg?type=attention)
+可以参考[Codepen demo](https://codepen.io/frank-zsy/pen/MWBdpNg?type=attention)，使用的数据为上述的[json example](https://oss.x-lab.info/open_digger/github/X-lab2017/open-digger/attention.json)

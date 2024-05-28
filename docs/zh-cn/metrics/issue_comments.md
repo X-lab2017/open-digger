@@ -38,6 +38,19 @@ SQL查询的案例可以参考[js example](https://github.com/X-lab2017/open-dig
 
 可以参考[json example](https://oss.x-lab.info/open_digger/github/X-lab2017/open-digger/issue_comments.json)
 
+这里，我们可以简单地访问记录一个代码仓库issue_comments指标变化的Json文件，其url格式：
+
+```
+https://oss.x-lab.info/open_digger/{platform}/{user name or organization name}/{repository name}/{metric name}.json
+```
+
+例如：
+
+```
+https://oss.x-lab.info/open_digger/github/X-lab2017/open-digger/issue_comments.json
+https://oss.x-lab.info/open_digger/github/facebook/rocksdb/issue_comments.json
+```
+
 ### Demo
 
-可以参考[demo](https://codepen.io/frank-zsy/pen/mdjaZMw)
+可以参考[Codepen demo](https://codepen.io/frank-zsy/pen/mdjaZMw)，数据来源为上述的Json文件[json example](https://oss.x-lab.info/open_digger/github/X-lab2017/open-digger/issue_comments.json)

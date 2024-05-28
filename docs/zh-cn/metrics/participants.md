@@ -28,26 +28,25 @@ event数据的schema见[data description](https://github.com/X-lab2017/open-digg
 
  - platform
 
-其他操作（如GroupBy、OrderBy）使用的属性需要根据需求来改变。
-
-### 常见Filter属性
-
- - **created_at**
-
- - repo_id
-
- - repo_name
-
- - org_id
-
- - platform
-
 其他操作（如GroupBy、OrderBy、Limit）使用的属性需要根据需求来改变。参考[js example](https://github.com/X-lab2017/open-digger/blob/master/src/metrics/metrics.ts)的`repoParticipants`函数。
 
 ### 数据示例
 
 可以参考[json example](https://oss.x-lab.info/open_digger/github/X-lab2017/open-digger/participants.json)
 
+这里，我们可以简单地访问记录一个代码仓库participants指标变化的Json文件，其url格式：
+
+```
+https://oss.x-lab.info/open_digger/{platform}/{user name or organization name}/{repository name}/{metric name}.json
+```
+
+例如：
+
+```
+https://oss.x-lab.info/open_digger/github/X-lab2017/open-digger/participants.json
+https://oss.x-lab.info/open_digger/github/facebook/rocksdb/participants.json
+```
+
 ### Demo
 
-可以参考[demo](https://codepen.io/frank-zsy/pen/RwBmpYZ)
+可以参考[Codepen demo](https://codepen.io/frank-zsy/pen/RwBmpYZ)，数据来源为上述的Json文件[json example](https://oss.x-lab.info/open_digger/github/X-lab2017/open-digger/participants.json)
