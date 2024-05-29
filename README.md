@@ -17,7 +17,7 @@ Feel free to use the data to construct your own data application and you can ref
 <table>
   <thead>
     <tr>
-      <th>Type</th><th>Name</th><th>From</th><th>Example</th><th>Code</th><th>CodePen</th>
+      <th>Type</th><th>Name</th><th>From</th><th>Example</th><th>Code</th><th>CodePen</th><th>Notebook</th>
     </tr>
   </thead>
   <tbody>
@@ -28,6 +28,7 @@ Feel free to use the data to construct your own data application and you can ref
       <td><a href="https://oss.x-lab.info/open_digger/github/X-lab2017/open-digger/openrank.json">openrank.json</a></td>
       <td><a href="https://github.com/X-lab2017/open-digger/blob/master/src/metrics/indices.ts#L21">Link</a></td>
       <td><a href="https://codepen.io/frank-zsy/pen/bGjyqQj?type=openrank">Demo</a></td>
+      <td><a href=https://cocalc.com/share/public_paths/fd3fd8956e5135d0591c46b4dba3901b1b41f75a>Demo</a></td>
     </tr>
     <tr>
       <td>Activity</td>
