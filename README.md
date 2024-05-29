@@ -38,7 +38,7 @@ Feel free to use the data to construct your own data application and you can ref
     </tr>
     <tr>
       <td>Attention</td>
-      <td>X-lab</td>
+      <td><a href=https://cocalc.com/share/public_paths/27cf7ab61ff44e8770b85859104d1b3faa387d3a>X-lab</a></td>
       <td><a href="https://oss.x-lab.info/open_digger/github/X-lab2017/open-digger/attention.json">attention.json</a></td>
       <td><a href="https://github.com/X-lab2017/open-digger/blob/master/src/metrics/indices.ts#L235">Link</a></td>
       <td><a href="https://codepen.io/frank-zsy/pen/MWBdpNg?type=attention">Demo</a></td>
@@ -53,7 +53,7 @@ Feel free to use the data to construct your own data application and you can ref
     </tr>
     <tr>
       <td>Stars</td>
-      <td>X-lab</td>
+      <td><a href=https://cocalc.com/share/public_paths/e87d04aae2b8f71cddd10b17d6d86f15c0088f23>X-lab</a></td>
       <td><a href="https://oss.x-lab.info/open_digger/github/X-lab2017/open-digger/stars.json">stars.json</a></td>
       <td><a href="https://github.com/X-lab2017/open-digger/blob/master/src/metrics/metrics.ts#L15">Link</a></td>
       <td><a href="https://codepen.io/frank-zsy/pen/MWBdpNg?type=stars">Demo</a></td>
@@ -67,7 +67,7 @@ Feel free to use the data to construct your own data application and you can ref
     </tr>
     <tr>
       <td>Participants</td>
-      <td>X-lab</td>
+      <td><a href=https://cocalc.com/share/public_paths/f9f0abf6fab71259b06158009bd7fd7b017011a3>X-lab</a></td>
       <td><a href="https://oss.x-lab.info/open_digger/github/X-lab2017/open-digger/participants.json">participants.json</a></td>
       <td><a href="https://github.com/X-lab2017/open-digger/blob/master/src/metrics/metrics.ts#L89">Link</a></td>
       <td rowspan="3"><a href="https://codepen.io/frank-zsy/pen/RwBmpYZ">Demo</a></td>
@@ -113,7 +113,7 @@ Feel free to use the data to construct your own data application and you can ref
     </tr>
     <tr>
       <td>Issue comments</td>
-      <td>X-lab</td>
+      <td><a href=https://cocalc.com/share/public_paths/22e0616f6e0d3be5f6f112d0d755c0f92e6ca94f>X-lab</a></td>
       <td><a href="https://oss.x-lab.info/open_digger/github/X-lab2017/open-digger/issue_comments.json">issue_comments.json</a></td>
       <td><a href="https://github.com/X-lab2017/open-digger/blob/master/src/metrics/metrics.ts#L52">Link</a></td>
     </tr>
