@@ -36,6 +36,7 @@ Feel free to use the data to construct your own data application and you can ref
       <td><a href="https://oss.x-lab.info/open_digger/github/X-lab2017/open-digger/activity.json">activity.json</a></td>
       <td><a href="https://github.com/X-lab2017/open-digger/blob/master/src/metrics/indices.ts#L109">Link</a></td>
       <td><a href="https://codepen.io/frank-zsy/pen/bGjyqQj?type=activity">Demo</a></td>
+      <td><a href="https://cocalc.com/share/public_paths/198bb5e0f2f2b62d0534b047e0b5012b8bfc8019">Demo</a></td>
     </tr>
     <tr>
       <td>Attention</td>
@@ -43,6 +44,7 @@ Feel free to use the data to construct your own data application and you can ref
       <td><a href="https://oss.x-lab.info/open_digger/github/X-lab2017/open-digger/attention.json">attention.json</a></td>
       <td><a href="https://github.com/X-lab2017/open-digger/blob/master/src/metrics/indices.ts#L235">Link</a></td>
       <td><a href="https://codepen.io/frank-zsy/pen/MWBdpNg?type=attention">Demo</a></td>
+      <td><a href="https://cocalc.com/share/public_paths/548083147655b0795d456b5013d896b91dbaba26">Demo</a></td>
     </tr>
     <tr>
       <td rowspan="25">Metric</td>
