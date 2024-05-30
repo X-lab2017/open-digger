@@ -11,6 +11,8 @@ data:
           name: activeloopai/deeplake
         - id: 642912355
           name: awa-ai/awadb
+        - id: 793209340
+          name: carsonpo/haystackdb
         - id: 546206616
           name: chroma-core/chroma
         - id: 304530333

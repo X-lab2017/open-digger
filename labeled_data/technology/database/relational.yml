@@ -67,6 +67,8 @@ data:
           name: SnappyDataInc/snappydata
         - id: 402945349
           name: StarRocks/StarRocks
+        - id: 590507334
+          name: StereoDB/StereoDB
         - id: 501460708
           name: StoneAtom/stonedb
         - id: 2445970
@@ -99,6 +101,8 @@ data:
           name: apache/kudu
         - id: 28738447
           name: apache/kylin
+        - id: 114619105
+          name: apache/kyuubi
         - id: 20473418
           name: apache/phoenix
         - id: 19961085
