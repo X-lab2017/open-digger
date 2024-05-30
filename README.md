@@ -28,7 +28,7 @@ Feel free to use the data to construct your own data application and you can ref
       <td><a href="https://oss.x-lab.info/open_digger/github/X-lab2017/open-digger/openrank.json">openrank.json</a></td>
       <td><a href="https://github.com/X-lab2017/open-digger/blob/master/src/metrics/indices.ts#L21">Link</a></td>
       <td><a href="https://codepen.io/frank-zsy/pen/bGjyqQj?type=openrank">Demo</a></td>
-      <td><a href=https://cocalc.com/share/public_paths/fd3fd8956e5135d0591c46b4dba3901b1b41f75a>Demo</a></td>
+      <td><a href="https://cocalc.com/share/public_paths/123f89e46ce77e62183ce01bf81e0cc1590e7a0f">Demo</a></td>
     </tr>
     <tr>
       <td>Activity</td>
@@ -36,11 +36,11 @@ Feel free to use the data to construct your own data application and you can ref
       <td><a href="https://oss.x-lab.info/open_digger/github/X-lab2017/open-digger/activity.json">activity.json</a></td>
       <td><a href="https://github.com/X-lab2017/open-digger/blob/master/src/metrics/indices.ts#L109">Link</a></td>
       <td><a href="https://codepen.io/frank-zsy/pen/bGjyqQj?type=activity">Demo</a></td>
-      <td><a href="https://cocalc.com/share/public_paths/198bb5e0f2f2b62d0534b047e0b5012b8bfc8019">Demo</a></td>
+      <td><a href="https://cocalc.com/share/public_paths/faf82100d1cf7f0294d424e9107d912d4ffe02d0">Demo</a></td>
     </tr>
     <tr>
       <td>Attention</td>
-      <td><a href=https://cocalc.com/share/public_paths/27cf7ab61ff44e8770b85859104d1b3faa387d3a>X-lab</a></td>
+      <td><a href="https://cocalc.com/share/public_paths/27cf7ab61ff44e8770b85859104d1b3faa387d3a">X-lab</a></td>
       <td><a href="https://oss.x-lab.info/open_digger/github/X-lab2017/open-digger/attention.json">attention.json</a></td>
       <td><a href="https://github.com/X-lab2017/open-digger/blob/master/src/metrics/indices.ts#L235">Link</a></td>
       <td><a href="https://codepen.io/frank-zsy/pen/MWBdpNg?type=attention">Demo</a></td>
@@ -56,7 +56,7 @@ Feel free to use the data to construct your own data application and you can ref
     </tr>
     <tr>
       <td>Stars</td>
-      <td><a href=https://cocalc.com/share/public_paths/e87d04aae2b8f71cddd10b17d6d86f15c0088f23>X-lab</a></td>
+      <td><a href="https://cocalc.com/share/public_paths/e87d04aae2b8f71cddd10b17d6d86f15c0088f23">X-lab</a></td>
       <td><a href="https://oss.x-lab.info/open_digger/github/X-lab2017/open-digger/stars.json">stars.json</a></td>
       <td><a href="https://github.com/X-lab2017/open-digger/blob/master/src/metrics/metrics.ts#L15">Link</a></td>
       <td><a href="https://codepen.io/frank-zsy/pen/MWBdpNg?type=stars">Demo</a></td>
@@ -70,7 +70,7 @@ Feel free to use the data to construct your own data application and you can ref
     </tr>
     <tr>
       <td>Participants</td>
-      <td><a href=https://cocalc.com/share/public_paths/f9f0abf6fab71259b06158009bd7fd7b017011a3>X-lab</a></td>
+      <td><a href="https://cocalc.com/share/public_paths/f9f0abf6fab71259b06158009bd7fd7b017011a3">X-lab</a></td>
       <td><a href="https://oss.x-lab.info/open_digger/github/X-lab2017/open-digger/participants.json">participants.json</a></td>
       <td><a href="https://github.com/X-lab2017/open-digger/blob/master/src/metrics/metrics.ts#L89">Link</a></td>
       <td rowspan="3"><a href="https://codepen.io/frank-zsy/pen/RwBmpYZ">Demo</a></td>
@@ -116,7 +116,7 @@ Feel free to use the data to construct your own data application and you can ref
     </tr>
     <tr>
       <td>Issue comments</td>
-      <td><a href=https://cocalc.com/share/public_paths/22e0616f6e0d3be5f6f112d0d755c0f92e6ca94f>X-lab</a></td>
+      <td><a href="https://cocalc.com/share/public_paths/22e0616f6e0d3be5f6f112d0d755c0f92e6ca94f">X-lab</a></td>
       <td><a href="https://oss.x-lab.info/open_digger/github/X-lab2017/open-digger/issue_comments.json">issue_comments.json</a></td>
       <td><a href="https://github.com/X-lab2017/open-digger/blob/master/src/metrics/metrics.ts#L52">Link</a></td>
     </tr>
@@ -231,7 +231,7 @@ Feel free to use the data to construct your own data application and you can ref
 <table>
   <thead>
     <tr>
-      <th>Type</th><th>Name</th><th>From</th><th>Example</th><th>Code</th><th>CodePen</th>
+      <th>Type</th><th>Name</th><th>From</th><th>Example</th><th>Code</th><th>CodePen</th><th>Notebook</th>
     </tr>
   </thead>
   <tbody>
@@ -242,6 +242,7 @@ Feel free to use the data to construct your own data application and you can ref
       <td><a href="https://oss.x-lab.info/open_digger/github/frank-zsy/openrank.json">openrank.json</a></td>
       <td><a href="https://github.com/X-lab2017/open-digger/blob/master/src/metrics/indices.ts#L59">Link</a></td>
       <td><a href="https://codepen.io/frank-zsy/pen/bGjyqQj?type=openrank&name=frank-zsy">Demo</a></td>
+      <td><a href="https://cocalc.com/share/public_paths/099b0c2d55a3d56a362225b303332e8ebae4ebd8">Demo</a></td>
     </tr>
     <tr>
       <td>Activity</td>
@@ -249,6 +250,7 @@ Feel free to use the data to construct your own data application and you can ref
       <td><a href="https://oss.x-lab.info/open_digger/github/frank-zsy/activity.json">activity.json</a></td>
       <td><a href="https://github.com/X-lab2017/open-digger/blob/master/src/metrics/indices.ts#L174">Link</a ></td>
       <td><a href="https://codepen.io/frank-zsy/pen/bGjyqQj?type=activity&name=frank-zsy">Demo</a></td>
+      <td><a href="https://cocalc.com/share/public_paths/38aa0f7c5877a5b63c0624cc9c582bff7d5f4395">Demo</a></td>
     </tr>
     <tr>
       <td rowspan="2">Network</td>
