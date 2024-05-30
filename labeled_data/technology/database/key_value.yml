@@ -351,12 +351,16 @@ data:
           name: vmware/splinterdb
         - id: 214605
           name: voldemort/voldemort
+        - id: 580788054
+          name: web3-storage/pail
         - id: 30828379
           name: willemt/pearldb
         - id: 2944302
           name: wiredtiger/wiredtiger
         - id: 65259211
           name: xap/xap
+        - id: 20433978
+          name: xtreemfs/babudb
         - id: 160784930
           name: xujiajun/nutsdb
         - id: 137792810
