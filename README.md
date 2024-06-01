@@ -60,6 +60,7 @@ Feel free to use the data to construct your own data application and you can ref
       <td><a href="https://oss.x-lab.info/open_digger/github/X-lab2017/open-digger/stars.json">stars.json</a></td>
       <td><a href="https://github.com/X-lab2017/open-digger/blob/master/src/metrics/metrics.ts#L15">Link</a></td>
       <td><a href="https://codepen.io/frank-zsy/pen/MWBdpNg?type=stars">Demo</a></td>
+      <td><a href="https://cocalc.com/share/public_paths/dbfc7d704bcbba998c4860c56bec6d823e20af39">Demo</a></td>
     </tr>
     <tr>
       <td>Technical fork</td>
@@ -67,6 +68,7 @@ Feel free to use the data to construct your own data application and you can ref
       <td><a href="https://oss.x-lab.info/open_digger/github/X-lab2017/open-digger/technical_fork.json">technical_fork.json</a></td>
       <td><a href="https://github.com/X-lab2017/open-digger/blob/master/src/metrics/chaoss.ts#L12">Link</a></td>
       <td><a href="https://codepen.io/frank-zsy/pen/MWBdpNg?type=technical_fork">Demo</a></td>
+      <td><a href="https://cocalc.com/share/public_paths/a5487c04a61b4aea3f38afcf575b65226ab53ad6">Demo</a></td>
     </tr>
     <tr>
       <td>Participants</td>
