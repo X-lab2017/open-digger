@@ -6,8 +6,8 @@ We can use ClickHouse online service with full data access to make ClikcHouse sa
 
 ### ClickHouse server image
 
-- x86-64/amd64: `docker pull --platform linux/amd64 docker-hub.open-digger.cn/open-digger/open-digger-clickhouse-base:v2`
-- ARM64: `docker pull --platform linux/arm64 docker-hub.open-digger.cn/open-digger/open-digger-clickhouse-base:v2`
+- x86-64/amd64: `docker pull --platform linux/amd64 registry.cn-beijing.aliyuncs.com/open-digger/open-digger-clickhouse-base:v2`
+- ARM64: `docker pull --platform linux/arm64 registry.cn-beijing.aliyuncs.com/open-digger/open-digger-clickhouse-base:v2`
 
 ### Use sample data
 
@@ -19,8 +19,8 @@ To use sample data from OSS service, you need to follow the steps:
 
 3. Use ClickHouse base image with extracted data to initialize the database. The extracted `data` and `table` file should be mounted into `/data/` folder into the container, here is an example:
 
-- Linux/MacOS: `docker run -d --name container_name -m 8G -p 8123:8123 -p 9000:9000 --ulimit nofile=262144:262144 --volume=$(pwd)/folder_name/:/data/ docker-hub.open-digger.cn/open-digger/open-digger-clickhouse-base:v2`;
-- Windows: `docker run -d --name container_name -m 8G -p 8123:8123 -p 9000:9000 --ulimit nofile=262144:262144 --volume=%cd%/folder_name/:/data/ docker-hub.open-digger.cn/open-digger/open-digger-clickhouse-base:v2`.
+- Linux/MacOS: `docker run -d --name container_name -m 8G -p 8123:8123 -p 9000:9000 --ulimit nofile=262144:262144 --volume=$(pwd)/folder_name/:/data/ registry.cn-beijing.aliyuncs.com/open-digger/open-digger-clickhouse-base:v2`;
+- Windows: `docker run -d --name container_name -m 8G -p 8123:8123 -p 9000:9000 --ulimit nofile=262144:262144 --volume=%cd%/folder_name/:/data/ registry.cn-beijing.aliyuncs.com/open-digger/open-digger-clickhouse-base:v2`.
    
 In the above command lines, `$(pwd)` or `%cd%` makes sure the `host-src` be an absolute path.
 > **Notice**: As referred in [Docker's Doc](https://docs.docker.com/engine/reference/run/#volume-shared-filesystems), the `host-src` in `--volume=[host-src:]container-dest[:<options>]` must be an absolute path or a name value.
