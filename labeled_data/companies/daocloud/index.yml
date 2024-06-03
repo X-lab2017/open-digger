@@ -1,0 +1,35 @@
+name: DaoCloud
+type: Company
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 9465053
+          name: DaoCloud
+        - id: 92134592
+          name: clusterpedia-io
+        - id: 98022243
+          name: hwameistor
+        - id: 108458246
+          name: kubean-io
+        - id: 97713038
+          name: merbridge
+        - id: 101079846
+          name: spidernet-io
+        - id: 52698954
+          name: piraeusdatastore
+        - id: 104559826
+          name: cloudtty
+        - id: 157583413
+          name: Project-HAMi
+        - id: 88527068
+          name: klts-io
+        - id: 135573325
+          name: kdoctor-io
+        - id: 135572748
+          name: miragedebug
+        - id: 134360476
+          name: fedstate
+        - id: 144770310
+          name: DataTunerX

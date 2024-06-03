@@ -1251,6 +1251,50 @@ data:
           name: k8s-infra-cherrypick-robot
         - id: 9638672
           name: loic-bot
+        - id: 155511566
+          name: security-alliance-bot
+        - id: 136437109
+          name: isomergithub70
+        - id: 55035720
+          name: content-bot
+        - id: 73667546
+          name: doris-bot
+        - id: 72034354
+          name: secretariat-bot
+        - id: 82990506
+          name: hc-github-team-secure-vault-core
+        - id: 134299653
+          name: lobehubbot
+        - id: 154629622
+          name: NovaBot13
+        - id: 95282030
+          name: gardener-ci-robot
+        - id: 68011578
+          name: raycastbot
+        - id: 17270325
+          name: graalvmbot
+        - id: 25752892
+          name: chromium-wpt-export-bot
+        - id: 88447997
+          name: rh-operator-bundle-bot
+        - id: 108495483
+          name: OhMyGuus-Bot
+        - id: 102256036
+          name: cq-bot
+        - id: 54726158
+          name: data-sync-user
+        - id: 28699486
+          name: frappe-pr-bot
+        - id: 82989933
+          name: hc-github-team-consul-core
+        - id: 58983587
+          name: qgis-bot
+        - id: 119904223
+          name: PckgrBot
+        - id: 118761991
+          name: robot-clickhouse-ci-1
+        - id: 24582011
+          name: GiteaBot
     - name: Gitee
       type: Code Hosting
       users:
@@ -1288,3 +1332,7 @@ data:
           name: openeuler-survey-bot
         - id: 8041105
           name: ci-robot
+        - id: 13545596
+          name: pta-robot
+        - id: 7864319
+          name: atlasaccount
