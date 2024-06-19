@@ -125,7 +125,7 @@ Feel free to use the data to construct your own data application and you can ref
       <td><a href="https://cocalc.com/share/public_paths/22e0616f6e0d3be5f6f112d0d755c0f92e6ca94f">X-lab</a></td>
       <td><a href="https://oss.x-lab.info/open_digger/github/X-lab2017/open-digger/issue_comments.json">issue_comments.json</a></td>
       <td><a href="https://github.com/X-lab2017/open-digger/blob/master/src/metrics/metrics.ts#L52">Link</a></td>
-      <td><a href="https://cocalc.com/share/public_paths/22e0616f6e0d3be5f6f112d0d755c0f92e6ca94f">Demo</a></td>
+      <td><a href="https://cocalc.com/share/public_paths/39c69fccf75d8b0e7b3fde6cb9b9c662f6af2325">Demo</a></td>
     </tr>
     <tr>
       <td>Issue response time</td>
