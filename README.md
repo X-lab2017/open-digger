@@ -76,6 +76,7 @@ Feel free to use the data to construct your own data application and you can ref
       <td><a href="https://oss.x-lab.info/open_digger/github/X-lab2017/open-digger/participants.json">participants.json</a></td>
       <td><a href="https://github.com/X-lab2017/open-digger/blob/master/src/metrics/metrics.ts#L89">Link</a></td>
       <td rowspan="3"><a href="https://codepen.io/frank-zsy/pen/RwBmpYZ">Demo</a></td>
+      <td><a href="https://cocalc.com/share/public_paths/5fec1dfc224c29314fce666738f79840a0f962b6">Demo</a></td>
     </tr>
     <tr>
       <td rowspan="2">New contributors</td>
@@ -110,18 +111,21 @@ Feel free to use the data to construct your own data application and you can ref
       <td><a href="https://oss.x-lab.info/open_digger/github/X-lab2017/open-digger/issues_new.json">issues_new.json</a></td>
       <td><a href="https://github.com/X-lab2017/open-digger/blob/master/src/metrics/chaoss.ts#L146">Link</a></td>
       <td rowspan="3"><a href="https://codepen.io/frank-zsy/pen/mdjaZMw">Demo</a></td>
+      <td><a href="https://cocalc.com/share/public_paths/b8caf1261246c925ac34cecb8effe9320e64d295">Demo</a></td>
     </tr>
     <tr>
       <td>Issues closed</td>
       <td><a href="https://chaoss.community/metric-issues-closed/">CHAOSS</a></td>
       <td><a href="https://oss.x-lab.info/open_digger/github/X-lab2017/open-digger/issues_closed.json">issues_closed.json</a></td>
       <td><a href="https://github.com/X-lab2017/open-digger/blob/master/src/metrics/chaoss.ts#L223">Link</a></td>
+      <td><a href="https://cocalc.com/share/public_paths/880e322e1e05c101fbba374b453017a2f11b8391">Demo</a></td>
     </tr>
     <tr>
       <td>Issue comments</td>
       <td><a href="https://cocalc.com/share/public_paths/22e0616f6e0d3be5f6f112d0d755c0f92e6ca94f">X-lab</a></td>
       <td><a href="https://oss.x-lab.info/open_digger/github/X-lab2017/open-digger/issue_comments.json">issue_comments.json</a></td>
       <td><a href="https://github.com/X-lab2017/open-digger/blob/master/src/metrics/metrics.ts#L52">Link</a></td>
+      <td><a href="https://cocalc.com/share/public_paths/39c69fccf75d8b0e7b3fde6cb9b9c662f6af2325">Demo</a></td>
     </tr>
     <tr>
       <td>Issue response time</td>
