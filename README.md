@@ -83,6 +83,7 @@ Feel free to use the data to construct your own data application and you can ref
       <td rowspan="2"><a href="https://chaoss.community/metric-new-contributors/">CHAOSS</a></td>
       <td><a href="https://oss.x-lab.info/open_digger/github/X-lab2017/open-digger/new_contributors.json">new_contributors.json</a></td>
       <td rowspan="2"><a href="https://github.com/X-lab2017/open-digger/blob/master/src/metrics/chaoss.ts#L862">Link</a></td>
+      <td><a href="https://cocalc.com/share/public_paths/74345bad3e499fa280aa636f05de4aacea2c3f7e">Demo</a></td>
     </tr>
     <tr>
       <td><a href="https://oss.x-lab.info/open_digger/github/X-lab2017/open-digger/new_contributors_detail.json">new_contributors_detail.json</a></td>
