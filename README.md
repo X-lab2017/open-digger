@@ -94,6 +94,7 @@ Feel free to use the data to construct your own data application and you can ref
       <td><a href="https://oss.x-lab.info/open_digger/github/X-lab2017/open-digger/inactive_contributors.json">inactive_contributors.json</a></td>
       <td><a href="https://github.com/X-lab2017/open-digger/blob/master/src/metrics/chaoss.ts#L965">Link</a></td>
       <td><a href="https://codepen.io/frank-zsy/pen/RwBmpYZ">Demo</a></td>
+      <td><a href="https://cocalc.com/share/public_paths/b8efe7172ccfb473fb38f58bfef8ccd0a7a03490">Demo</a></td>
     </tr>
     <tr>
       <td rowspan="2">Bus factor</td>
