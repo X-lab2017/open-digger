@@ -197,6 +197,12 @@ data:
           name: priitj/whitedb
         - id: 75425073
           name: pubkey/rxdb
+        - id: 416174776
+          name: pysonDB/pysonDB-v2
+        - id: 357707809
+          name: quickwit-oss/quickwit
+        - id: 49412556
+          name: quickwit-oss/tantivy
         - id: 5665061
           name: radare/sdb
         - id: 129436009

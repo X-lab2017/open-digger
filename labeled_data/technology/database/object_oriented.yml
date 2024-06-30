@@ -83,6 +83,8 @@ data:
           name: orientechnologies/orientdb
         - id: 432844875
           name: orioledb/orioledb
+        - id: 660776503
+          name: paradedb/paradedb
         - id: 37285717
           name: pilgr/Paper
         - id: 14702444

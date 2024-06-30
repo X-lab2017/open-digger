@@ -261,6 +261,8 @@ data:
           name: minovakovi/akdb
         - id: 62660036
           name: mozilla/mentat
+        - id: 771847852
+          name: myscale/MyScaleDB
         - id: 24494032
           name: mysql/mysql-server
         - id: 351806852
@@ -275,6 +277,8 @@ data:
           name: opengauss-mirror/openGauss-server
         - id: 432844875
           name: orioledb/orioledb
+        - id: 660776503
+          name: paradedb/paradedb
         - id: 3766330
           name: pentaho/mondrian
         - id: 30753733
