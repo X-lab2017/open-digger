@@ -1,4 +1,4 @@
-name: Seata
+name: Apache Seata
 type: Project
 data:
   platforms:
@@ -7,6 +7,21 @@ data:
       orgs:
         - id: 48813648
           name: seata
+      repos:
+        - id: 163387337
+          name: apache/incubator-seata
+        - id: 168183392
+          name: apache/incubator-seata-samples
+        - id: 254594123
+          name: apache/incubator-seata-go
+        - id: 166406141
+          name: apache/incubator-seata-website
+        - id: 180135206
+          name: apache/incubator-seata-k8s
+        - id: 709687448
+          name: apache/incubator-seata-ctl
+        - id: 579356059
+          name: apache/incubator-seata-go-samples
     - name: Gitee
       type: Code Hosting
       orgs:
