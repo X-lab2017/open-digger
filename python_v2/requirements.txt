@@ -1,11 +1,11 @@
 DateTime==5.4
-clickhouse-driver==0.2.6
+clickhouse-driver>=0.2.8
 easydict==1.11
 ipynbname==2023.2.0.0
-jupyterlab
+jupyterlab>=3.2.8
 matplotlib>=3.5.3
-numpy>=1.21.5
-pandas==1.4.4
+numpy>=1.23.2
+pandas>=1.4.3
 plotly==5.9.0
 py2neo==2021.2.4
 typing==3.7.4.3

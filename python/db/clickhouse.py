@@ -15,4 +15,4 @@ def query(q):
     return client.execute(q)
 def queryDataframe(q):
     client = getClient()
-    return client.query_dataframe(q)
+    return client.query_dataframe(q, replace_nonwords=False)

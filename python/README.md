@@ -22,7 +22,7 @@ Start your ClickHouse container, which should be set up in [Clickhouse-sample-da
      }
    }
    ```
-   the `host` above is the host of the ClickHouse server. We can find it using `docker inspect containert_name`, and copy the `Gateway` like this:
+   the `host` above is the host of the ClickHouse server. We can find it using `docker inspect container_name`(the container_name is set by command docker run --name xxx), and copy the `Gateway` like this:
 
    ```shell
    $ docker inspect container_name | grep Gateway
@@ -32,17 +32,17 @@ Start your ClickHouse container, which should be set up in [Clickhouse-sample-da
                        "IPv6Gateway": "",
    ```
     If you use your own data, you can also change `host` field to your own host IP
-4. Use `docker build -t opendigger-jupyter-python:1.0 $(pwd)` to make a docker image, this image is based on `miniconda`. You can check the `Dockerfile` in root directory.
+4. Use `docker build --build-arg KER_REL_PATH='./python' --build-arg BASE_IMAGE='continuumio/miniconda3' -t opendigger-jupyter-python:1.0 $(pwd)` to make a docker image, this image is based on `miniconda`. You can check the `Dockerfile` in root directory.
 
    > If you are using **Windows CMD**, all the `$(pwd)` here should be replaced by `%cd%`. And if you are using **Windows Powershell**,  all the `$(pwd)` here should be replaced by `${pwd}`.
    >
    > **Notice:** Pathnames of directories like "pwd" may use `\` to join the directory in some versions of Windows. We recommend using absolute paths.
 
-5. Then we can use `docker run -it --name python_notebook_name --rm -p 8888:8888 -v $(pwd):/python_kernel/notebook opendigger-jupyter-python:1.0` to create and run the container.
+5. Then we can use `docker run -i -t --name python_notebook_name --rm -p 8888:8888 -v "$(pwd):/python_kernel/notebook" opendigger-jupyter-python:1.0` to create and run the container.
 
 6. Open the link in console log like `http://127.0.0.1:8888/lab?token=xxxxx`.
 
-7. If the source code under `python` folder changed, you need to stop the notebook docker using `docker stop python_notebook_name` and restart the notebook kernel using `docker run -it --name python_notebook_name --rm -p 8888:8888 -v $(pwd):/python_kernel/notebook opendigger-jupyter-python:1.0` to reload the sorce code.
+7. If the source code under `python` folder changed, you need to stop the notebook docker using `docker stop python_notebook_name` and restart the notebook kernel using `docker run -i -t --name python_notebook_name --rm -p 8888:8888 -v "$(pwd):/python_kernel/notebook" opendigger-jupyter-python:1.0` to reload the sorce code.
 
 8. You can find the notebook folder, where we provide demos in the handbook. You can create a new file, and happy data exploring!
     Attention: you need to do this work in `notebook` or other parallel folder. If you run in root directory, it can't work because of python import rules.

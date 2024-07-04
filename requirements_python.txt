@@ -1,9 +1,0 @@
-easydict==1.9
-py2neo==2021.2.3
-plotly==5.9.0
-clickhouse-driver==0.2.3
-numpy==1.23.2
-jupyterlab==3.4.5
-matplotlib==3.5.3
-pandas==1.4.3
-pyyaml==6.0

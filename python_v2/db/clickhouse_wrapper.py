@@ -21,4 +21,4 @@ class ClickhouseWrapper(object):
         return self.client.execute(q)
     
     def queryDataframe(self,q):
-        return self.client.query_dataframe(q)
+        return self.client.query_dataframe(q, replace_nonwords=False)

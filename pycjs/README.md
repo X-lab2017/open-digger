@@ -7,7 +7,9 @@ Start your ClickHouse container, which should be set up in [Clickhouse-sample-da
 
 2. Enter the repo path `cd open-digger`
 
-3. Go to the `python_v2` folder in the open-digger root directory, create a file named 'local_config.py'(this file has already added into `.gitignore` file.) for Python Kernel with the following contents:
+    Install the necessary packages `npm install`.
+
+3. Go to the `src` folder(pycjs does not implement any bottom layer details) in the open-digger root directory, create a file named 'local_config.py'(this file has already added into `.gitignore` file.) for Python Kernel with the following contents:
 
    ```python
    local_config = {
@@ -32,7 +34,12 @@ Start your ClickHouse container, which should be set up in [Clickhouse-sample-da
                        "IPv6Gateway": "",
    ```
     If you use your own data, you can also change `host` field to your own host IP
-4. Use `docker build --build-arg KER_REL_PATH='./python_v2' --build-arg BASE_IMAGE='continuumio/miniconda3' -t opendigger-jupyter-python:1.0 $(pwd)` to make a docker image, this image is based on `miniconda`. You can check the `Dockerfile` in root directory.
+
+   Return the repo path `cd open-digger`. 
+
+   Build ts `npm run build`. Since the npm run build command is important to active every settings change, the kernel pycjs supports `npm run notebook-pycjs`  to execute the *npm run build, docker build and docker run* command automatically, instead of manually executing them step by step as below.
+
+4. Use `docker build --build-arg KER_REL_PATH='./pycjs' --build-arg BASE_IMAGE='registry.cn-beijing.aliyuncs.com/open-digger/open-digger-js-notebook:1.0' -t opendigger-jupyter-python:1.0 $(pwd)` to make a docker image, this image is based on `miniconda`. You can check the `Dockerfile` in root directory.
 
    > If you are using **Windows CMD**, all the `$(pwd)` here should be replaced by `%cd%`. And if you are using **Windows Powershell**,  all the `$(pwd)` here should be replaced by `${pwd}`.
    >
