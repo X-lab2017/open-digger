@@ -34,17 +34,17 @@ config = {
   }
 }
 def mergeConfig(base_config, local_config):
-    for key in base_config.keys():
-      if isinstance(base_config[key], dict) and isinstance(local_config[key], dict):
-          mergeConfig(base_config[key], local_config[key])
-      else:
-          base_config[key] = local_config[key]
+    for key, val in local_config.items():
+        if isinstance(val, dict):
+            mergeConfig(base_config[key], val)
+        else:
+            base_config[key] = val
     return base_config
-def getConfig(local_config=None):
-    local_config = local_config or {}
+def getConfig():
     global config
     if not inited: 
         try:
+            from local_config import local_config
             config = mergeConfig(config, local_config)
             return config
         except:

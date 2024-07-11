@@ -11,6 +11,7 @@
     "build": "tsc",
     "notebook": "npm run build && docker pull registry.cn-beijing.aliyuncs.com/open-digger/open-digger-js-notebook:1.0 && docker run -it --rm -p 8888:8888 -v $(pwd):/home/node/notebook registry.cn-beijing.aliyuncs.com/open-digger/open-digger-js-notebook:1.0",
     "notebook:win": "npm run build && docker pull registry.cn-beijing.aliyuncs.com/open-digger/open-digger-js-notebook:1.0 && docker run -it --rm -p 8888:8888 -v %cd%:/home/node/notebook registry.cn-beijing.aliyuncs.com/open-digger/open-digger-js-notebook:1.0",
+	"notebook-pycjs": "npm run build && docker build --build-arg KER_REL_PATH=./pycjs --build-arg BASE_IMAGE=registry.cn-beijing.aliyuncs.com/open-digger/open-digger-js-notebook:1.0 -t opendigger-jupyter-python:1.0 . && docker run -i -t --name python_notebook_name --rm -p 8888:8888 -v .:/python_kernel/notebook opendigger-jupyter-python:1.0",
     "pull-label-file-test": "tsc && node lib/ci/pull_label_file_test.js",
     "cron": "npm run build && node --max-old-space-size=25600 lib/cron/index.js",
     "test": "CLICKHOUSE_HOST=http://ci.open-digger.cn:8123 CLICKHOUSE_USERNAME=default CLICKHOUSE_PASSWORD= mocha"
