@@ -1,0 +1,1968 @@
+[
+  {
+    "name": "freeCodeCamp",
+    "owner": {
+      "login": "freeCodeCamp"
+    },
+    "stargazerCount": 393295,
+    "forkCount": 36163,
+    "watchers": {
+      "totalCount": 8512
+    },
+    "issues": {
+      "totalCount": 18063
+    },
+    "primaryLanguage": {
+      "name": "TypeScript"
+    },
+    "pullRequests": {
+      "totalCount": 36676
+    }
+  },
+  {
+    "name": "free-programming-books",
+    "owner": {
+      "login": "EbookFoundation"
+    },
+    "stargazerCount": 327677,
+    "forkCount": 60649,
+    "watchers": {
+      "totalCount": 9751
+    },
+    "issues": {
+      "totalCount": 1087
+    },
+    "primaryLanguage": null,
+    "pullRequests": {
+      "totalCount": 9909
+    }
+  },
+  {
+    "name": "awesome",
+    "owner": {
+      "login": "sindresorhus"
+    },
+    "stargazerCount": 310350,
+    "forkCount": 27028,
+    "watchers": {
+      "totalCount": 7696
+    },
+    "issues": {
+      "totalCount": 336
+    },
+    "primaryLanguage": null,
+    "pullRequests": {
+      "totalCount": 2035
+    }
+  },
+  {
+    "name": "public-apis",
+    "owner": {
+      "login": "public-apis"
+    },
+    "stargazerCount": 300808,
+    "forkCount": 32488,
+    "watchers": {
+      "totalCount": 4128
+    },
+    "issues": {
+      "totalCount": 606
+    },
+    "primaryLanguage": {
+      "name": "Python"
+    },
+    "pullRequests": {
+      "totalCount": 3184
+    }
+  },
+  {
+    "name": "coding-interview-university",
+    "owner": {
+      "login": "jwasham"
+    },
+    "stargazerCount": 298384,
+    "forkCount": 75069,
+    "watchers": {
+      "totalCount": 8750
+    },
+    "issues": {
+      "totalCount": 440
+    },
+    "primaryLanguage": null,
+    "pullRequests": {
+      "totalCount": 981
+    }
+  },
+  {
+    "name": "build-your-own-x",
+    "owner": {
+      "login": "codecrafters-io"
+    },
+    "stargazerCount": 283818,
+    "forkCount": 26634,
+    "watchers": {
+      "totalCount": 5255
+    },
+    "issues": {
+      "totalCount": 644
+    },
+    "primaryLanguage": null,
+    "pullRequests": {
+      "totalCount": 403
+    }
+  },
+  {
+    "name": "developer-roadmap",
+    "owner": {
+      "login": "kamranahmedse"
+    },
+    "stargazerCount": 282194,
+    "forkCount": 37596,
+    "watchers": {
+      "totalCount": 6811
+    },
+    "issues": {
+      "totalCount": 2040
+    },
+    "primaryLanguage": {
+      "name": "TypeScript"
+    },
+    "pullRequests": {
+      "totalCount": 3423
+    }
+  },
+  {
+    "name": "996.ICU",
+    "owner": {
+      "login": "996icu"
+    },
+    "stargazerCount": 269447,
+    "forkCount": 21230,
+    "watchers": {
+      "totalCount": 4221
+    },
+    "issues": {
+      "totalCount": 0
+    },
+    "primaryLanguage": null,
+    "pullRequests": {
+      "totalCount": 1977
+    }
+  },
+  {
+    "name": "system-design-primer",
+    "owner": {
+      "login": "donnemartin"
+    },
+    "stargazerCount": 263690,
+    "forkCount": 44713,
+    "watchers": {
+      "totalCount": 6618
+    },
+    "issues": {
+      "totalCount": 290
+    },
+    "primaryLanguage": {
+      "name": "Python"
+    },
+    "pullRequests": {
+      "totalCount": 539
+    }
+  },
+  {
+    "name": "react",
+    "owner": {
+      "login": "facebook"
+    },
+    "stargazerCount": 225126,
+    "forkCount": 45905,
+    "watchers": {
+      "totalCount": 6630
+    },
+    "issues": {
+      "totalCount": 13031
+    },
+    "primaryLanguage": {
+      "name": "JavaScript"
+    },
+    "pullRequests": {
+      "totalCount": 15488
+    }
+  },
+  {
+    "name": "awesome-python",
+    "owner": {
+      "login": "vinta"
+    },
+    "stargazerCount": 212082,
+    "forkCount": 24634,
+    "watchers": {
+      "totalCount": 6012
+    },
+    "issues": {
+      "totalCount": 0
+    },
+    "primaryLanguage": {
+      "name": "Python"
+    },
+    "pullRequests": {
+      "totalCount": 1914
+    }
+  },
+  {
+    "name": "vue",
+    "owner": {
+      "login": "vuejs"
+    },
+    "stargazerCount": 207396,
+    "forkCount": 33639,
+    "watchers": {
+      "totalCount": 5893
+    },
+    "issues": {
+      "totalCount": 10014
+    },
+    "primaryLanguage": {
+      "name": "TypeScript"
+    },
+    "pullRequests": {
+      "totalCount": 2533
+    }
+  },
+  {
+    "name": "awesome-selfhosted",
+    "owner": {
+      "login": "awesome-selfhosted"
+    },
+    "stargazerCount": 186690,
+    "forkCount": 9214,
+    "watchers": {
+      "totalCount": 2435
+    },
+    "issues": {
+      "totalCount": 804
+    },
+    "primaryLanguage": null,
+    "pullRequests": {
+      "totalCount": 3034
+    }
+  },
+  {
+    "name": "javascript-algorithms",
+    "owner": {
+      "login": "trekhleb"
+    },
+    "stargazerCount": 185197,
+    "forkCount": 29881,
+    "watchers": {
+      "totalCount": 4354
+    },
+    "issues": {
+      "totalCount": 348
+    },
+    "primaryLanguage": {
+      "name": "JavaScript"
+    },
+    "pullRequests": {
+      "totalCount": 744
+    }
+  },
+  {
+    "name": "tensorflow",
+    "owner": {
+      "login": "tensorflow"
+    },
+    "stargazerCount": 183993,
+    "forkCount": 74053,
+    "watchers": {
+      "totalCount": 7619
+    },
+    "issues": {
+      "totalCount": 39462
+    },
+    "primaryLanguage": {
+      "name": "C++"
+    },
+    "pullRequests": {
+      "totalCount": 31386
+    }
+  },
+  {
+    "name": "Python",
+    "owner": {
+      "login": "TheAlgorithms"
+    },
+    "stargazerCount": 182071,
+    "forkCount": 44001,
+    "watchers": {
+      "totalCount": 5936
+    },
+    "issues": {
+      "totalCount": 1450
+    },
+    "primaryLanguage": {
+      "name": "Python"
+    },
+    "pullRequests": {
+      "totalCount": 9479
+    }
+  },
+  {
+    "name": "project-based-learning",
+    "owner": {
+      "login": "practical-tutorials"
+    },
+    "stargazerCount": 181510,
+    "forkCount": 23842,
+    "watchers": {
+      "totalCount": 2885
+    },
+    "issues": {
+      "totalCount": 150
+    },
+    "primaryLanguage": null,
+    "pullRequests": {
+      "totalCount": 398
+    }
+  },
+  {
+    "name": "You-Dont-Know-JS",
+    "owner": {
+      "login": "getify"
+    },
+    "stargazerCount": 177947,
+    "forkCount": 33411,
+    "watchers": {
+      "totalCount": 5911
+    },
+    "issues": {
+      "totalCount": 924
+    },
+    "primaryLanguage": null,
+    "pullRequests": {
+      "totalCount": 890
+    }
+  },
+  {
+    "name": "linux",
+    "owner": {
+      "login": "torvalds"
+    },
+    "stargazerCount": 174469,
+    "forkCount": 52523,
+    "watchers": {
+      "totalCount": 7954
+    },
+    "issues": {
+      "totalCount": 0
+    },
+    "primaryLanguage": {
+      "name": "C"
+    },
+    "pullRequests": {
+      "totalCount": 857
+    }
+  },
+  {
+    "name": "CS-Notes",
+    "owner": {
+      "login": "CyC2018"
+    },
+    "stargazerCount": 173609,
+    "forkCount": 50770,
+    "watchers": {
+      "totalCount": 5319
+    },
+    "issues": {
+      "totalCount": 577
+    },
+    "primaryLanguage": null,
+    "pullRequests": {
+      "totalCount": 611
+    }
+  },
+  {
+    "name": "ohmyzsh",
+    "owner": {
+      "login": "ohmyzsh"
+    },
+    "stargazerCount": 170770,
+    "forkCount": 25724,
+    "watchers": {
+      "totalCount": 2648
+    },
+    "issues": {
+      "totalCount": 4760
+    },
+    "primaryLanguage": {
+      "name": "Shell"
+    },
+    "pullRequests": {
+      "totalCount": 7275
+    }
+  },
+  {
+    "name": "bootstrap",
+    "owner": {
+      "login": "twbs"
+    },
+    "stargazerCount": 168065,
+    "forkCount": 78549,
+    "watchers": {
+      "totalCount": 6747
+    },
+    "issues": {
+      "totalCount": 22414
+    },
+    "primaryLanguage": {
+      "name": "JavaScript"
+    },
+    "pullRequests": {
+      "totalCount": 15227
+    }
+  },
+  {
+    "name": "computer-science",
+    "owner": {
+      "login": "ossu"
+    },
+    "stargazerCount": 165732,
+    "forkCount": 20953,
+    "watchers": {
+      "totalCount": 5752
+    },
+    "issues": {
+      "totalCount": 633
+    },
+    "primaryLanguage": null,
+    "pullRequests": {
+      "totalCount": 433
+    }
+  },
+  {
+    "name": "AutoGPT",
+    "owner": {
+      "login": "Significant-Gravitas"
+    },
+    "stargazerCount": 163771,
+    "forkCount": 43513,
+    "watchers": {
+      "totalCount": 1555
+    },
+    "issues": {
+      "totalCount": 2291
+    },
+    "primaryLanguage": {
+      "name": "Python"
+    },
+    "pullRequests": {
+      "totalCount": 3893
+    }
+  },
+  {
+    "name": "flutter",
+    "owner": {
+      "login": "flutter"
+    },
+    "stargazerCount": 163191,
+    "forkCount": 26854,
+    "watchers": {
+      "totalCount": 3519
+    },
+    "issues": {
+      "totalCount": 96311
+    },
+    "primaryLanguage": {
+      "name": "Dart"
+    },
+    "pullRequests": {
+      "totalCount": 54211
+    }
+  },
+  {
+    "name": "vscode",
+    "owner": {
+      "login": "microsoft"
+    },
+    "stargazerCount": 160567,
+    "forkCount": 28127,
+    "watchers": {
+      "totalCount": 3285
+    },
+    "issues": {
+      "totalCount": 179219
+    },
+    "primaryLanguage": {
+      "name": "TypeScript"
+    },
+    "pullRequests": {
+      "totalCount": 30862
+    }
+  },
+  {
+    "name": "gitignore",
+    "owner": {
+      "login": "github"
+    },
+    "stargazerCount": 159578,
+    "forkCount": 83220,
+    "watchers": {
+      "totalCount": 3367
+    },
+    "issues": {
+      "totalCount": 0
+    },
+    "primaryLanguage": null,
+    "pullRequests": {
+      "totalCount": 4391
+    }
+  },
+  {
+    "name": "Python-100-Days",
+    "owner": {
+      "login": "jackfrued"
+    },
+    "stargazerCount": 152761,
+    "forkCount": 51697,
+    "watchers": {
+      "totalCount": 6140
+    },
+    "issues": {
+      "totalCount": 637
+    },
+    "primaryLanguage": {
+      "name": "Python"
+    },
+    "pullRequests": {
+      "totalCount": 340
+    }
+  },
+  {
+    "name": "the-art-of-command-line",
+    "owner": {
+      "login": "jlevy"
+    },
+    "stargazerCount": 150854,
+    "forkCount": 14409,
+    "watchers": {
+      "totalCount": 2844
+    },
+    "issues": {
+      "totalCount": 249
+    },
+    "primaryLanguage": null,
+    "pullRequests": {
+      "totalCount": 588
+    }
+  },
+  {
+    "name": "JavaGuide",
+    "owner": {
+      "login": "Snailclimb"
+    },
+    "stargazerCount": 144760,
+    "forkCount": 45411,
+    "watchers": {
+      "totalCount": 4522
+    },
+    "issues": {
+      "totalCount": 1015
+    },
+    "primaryLanguage": {
+      "name": "Java"
+    },
+    "pullRequests": {
+      "totalCount": 1323
+    }
+  },
+  {
+    "name": "javascript",
+    "owner": {
+      "login": "airbnb"
+    },
+    "stargazerCount": 143126,
+    "forkCount": 26312,
+    "watchers": {
+      "totalCount": 3783
+    },
+    "issues": {
+      "totalCount": 1319
+    },
+    "primaryLanguage": {
+      "name": "JavaScript"
+    },
+    "pullRequests": {
+      "totalCount": 1583
+    }
+  },
+  {
+    "name": "the-book-of-secret-knowledge",
+    "owner": {
+      "login": "trimstray"
+    },
+    "stargazerCount": 136992,
+    "forkCount": 9186,
+    "watchers": {
+      "totalCount": 2416
+    },
+    "issues": {
+      "totalCount": 0
+    },
+    "primaryLanguage": null,
+    "pullRequests": {
+      "totalCount": 275
+    }
+  },
+  {
+    "name": "stable-diffusion-webui",
+    "owner": {
+      "login": "AUTOMATIC1111"
+    },
+    "stargazerCount": 135709,
+    "forkCount": 25903,
+    "watchers": {
+      "totalCount": 1050
+    },
+    "issues": {
+      "totalCount": 7517
+    },
+    "primaryLanguage": {
+      "name": "Python"
+    },
+    "pullRequests": {
+      "totalCount": 3031
+    }
+  },
+  {
+    "name": "youtube-dl",
+    "owner": {
+      "login": "ytdl-org"
+    },
+    "stargazerCount": 129888,
+    "forkCount": 9800,
+    "watchers": {
+      "totalCount": 2200
+    },
+    "issues": {
+      "totalCount": 26536
+    },
+    "primaryLanguage": {
+      "name": "Python"
+    },
+    "pullRequests": {
+      "totalCount": 4926
+    }
+  },
+  {
+    "name": "transformers",
+    "owner": {
+      "login": "huggingface"
+    },
+    "stargazerCount": 128844,
+    "forkCount": 25560,
+    "watchers": {
+      "totalCount": 1120
+    },
+    "issues": {
+      "totalCount": 15168
+    },
+    "primaryLanguage": {
+      "name": "Python"
+    },
+    "pullRequests": {
+      "totalCount": 16296
+    }
+  },
+  {
+    "name": "awesome-go",
+    "owner": {
+      "login": "avelino"
+    },
+    "stargazerCount": 124941,
+    "forkCount": 11709,
+    "watchers": {
+      "totalCount": 2794
+    },
+    "issues": {
+      "totalCount": 639
+    },
+    "primaryLanguage": {
+      "name": "Go"
+    },
+    "pullRequests": {
+      "totalCount": 4590
+    }
+  },
+  {
+    "name": "fucking-algorithm",
+    "owner": {
+      "login": "labuladong"
+    },
+    "stargazerCount": 124263,
+    "forkCount": 23129,
+    "watchers": {
+      "totalCount": 2312
+    },
+    "issues": {
+      "totalCount": 827
+    },
+    "primaryLanguage": {
+      "name": "Markdown"
+    },
+    "pullRequests": {
+      "totalCount": 501
+    }
+  },
+  {
+    "name": "next.js",
+    "owner": {
+      "login": "vercel"
+    },
+    "stargazerCount": 123034,
+    "forkCount": 26282,
+    "watchers": {
+      "totalCount": 1457
+    },
+    "issues": {
+      "totalCount": 20705
+    },
+    "primaryLanguage": {
+      "name": "JavaScript"
+    },
+    "pullRequests": {
+      "totalCount": 22478
+    }
+  },
+  {
+    "name": "go",
+    "owner": {
+      "login": "golang"
+    },
+    "stargazerCount": 121221,
+    "forkCount": 17368,
+    "watchers": {
+      "totalCount": 3425
+    },
+    "issues": {
+      "totalCount": 62443
+    },
+    "primaryLanguage": {
+      "name": "Go"
+    },
+    "pullRequests": {
+      "totalCount": 4020
+    }
+  },
+  {
+    "name": "30-seconds-of-code",
+    "owner": {
+      "login": "Chalarangelo"
+    },
+    "stargazerCount": 120336,
+    "forkCount": 11931,
+    "watchers": {
+      "totalCount": 2588
+    },
+    "issues": {
+      "totalCount": 294
+    },
+    "primaryLanguage": {
+      "name": "JavaScript"
+    },
+    "pullRequests": {
+      "totalCount": 1606
+    }
+  },
+  {
+    "name": "react-native",
+    "owner": {
+      "login": "facebook"
+    },
+    "stargazerCount": 117135,
+    "forkCount": 24081,
+    "watchers": {
+      "totalCount": 3607
+    },
+    "issues": {
+      "totalCount": 25827
+    },
+    "primaryLanguage": {
+      "name": "C++"
+    },
+    "pullRequests": {
+      "totalCount": 17702
+    }
+  },
+  {
+    "name": "tech-interview-handbook",
+    "owner": {
+      "login": "yangshun"
+    },
+    "stargazerCount": 114003,
+    "forkCount": 14320,
+    "watchers": {
+      "totalCount": 2093
+    },
+    "issues": {
+      "totalCount": 93
+    },
+    "primaryLanguage": {
+      "name": "TypeScript"
+    },
+    "pullRequests": {
+      "totalCount": 539
+    }
+  },
+  {
+    "name": "electron",
+    "owner": {
+      "login": "electron"
+    },
+    "stargazerCount": 112857,
+    "forkCount": 15131,
+    "watchers": {
+      "totalCount": 2848
+    },
+    "issues": {
+      "totalCount": 19815
+    },
+    "primaryLanguage": {
+      "name": "C++"
+    },
+    "pullRequests": {
+      "totalCount": 22222
+    }
+  },
+  {
+    "name": "free-programming-books-zh_CN",
+    "owner": {
+      "login": "justjavac"
+    },
+    "stargazerCount": 110234,
+    "forkCount": 28128,
+    "watchers": {
+      "totalCount": 5894
+    },
+    "issues": {
+      "totalCount": 0
+    },
+    "primaryLanguage": null,
+    "pullRequests": {
+      "totalCount": 465
+    }
+  },
+  {
+    "name": "kubernetes",
+    "owner": {
+      "login": "kubernetes"
+    },
+    "stargazerCount": 108410,
+    "forkCount": 38891,
+    "watchers": {
+      "totalCount": 3229
+    },
+    "issues": {
+      "totalCount": 45378
+    },
+    "primaryLanguage": {
+      "name": "Go"
+    },
+    "pullRequests": {
+      "totalCount": 80177
+    }
+  },
+  {
+    "name": "d3",
+    "owner": {
+      "login": "d3"
+    },
+    "stargazerCount": 108109,
+    "forkCount": 22889,
+    "watchers": {
+      "totalCount": 3633
+    },
+    "issues": {
+      "totalCount": 2195
+    },
+    "primaryLanguage": {
+      "name": "Shell"
+    },
+    "pullRequests": {
+      "totalCount": 1177
+    }
+  },
+  {
+    "name": "PowerToys",
+    "owner": {
+      "login": "microsoft"
+    },
+    "stargazerCount": 107091,
+    "forkCount": 6318,
+    "watchers": {
+      "totalCount": 1140
+    },
+    "issues": {
+      "totalCount": 28270
+    },
+    "primaryLanguage": {
+      "name": "C#"
+    },
+    "pullRequests": {
+      "totalCount": 5316
+    }
+  },
+  {
+    "name": "awesome-chatgpt-prompts",
+    "owner": {
+      "login": "f"
+    },
+    "stargazerCount": 107014,
+    "forkCount": 14632,
+    "watchers": {
+      "totalCount": 1388
+    },
+    "issues": {
+      "totalCount": 0
+    },
+    "primaryLanguage": {
+      "name": "HTML"
+    },
+    "pullRequests": {
+      "totalCount": 580
+    }
+  },
+  {
+    "name": "scrcpy",
+    "owner": {
+      "login": "Genymobile"
+    },
+    "stargazerCount": 105568,
+    "forkCount": 10243,
+    "watchers": {
+      "totalCount": 1229
+    },
+    "issues": {
+      "totalCount": 4545
+    },
+    "primaryLanguage": {
+      "name": "C"
+    },
+    "pullRequests": {
+      "totalCount": 448
+    }
+  },
+  {
+    "name": "node",
+    "owner": {
+      "login": "nodejs"
+    },
+    "stargazerCount": 105268,
+    "forkCount": 28515,
+    "watchers": {
+      "totalCount": 2930
+    },
+    "issues": {
+      "totalCount": 17844
+    },
+    "primaryLanguage": {
+      "name": "JavaScript"
+    },
+    "pullRequests": {
+      "totalCount": 33856
+    }
+  },
+  {
+    "name": "axios",
+    "owner": {
+      "login": "axios"
+    },
+    "stargazerCount": 104619,
+    "forkCount": 10768,
+    "watchers": {
+      "totalCount": 1199
+    },
+    "issues": {
+      "totalCount": 4608
+    },
+    "primaryLanguage": {
+      "name": "JavaScript"
+    },
+    "pullRequests": {
+      "totalCount": 1637
+    }
+  },
+  {
+    "name": "create-react-app",
+    "owner": {
+      "login": "facebook"
+    },
+    "stargazerCount": 102228,
+    "forkCount": 26688,
+    "watchers": {
+      "totalCount": 1930
+    },
+    "issues": {
+      "totalCount": 8284
+    },
+    "primaryLanguage": {
+      "name": "JavaScript"
+    },
+    "pullRequests": {
+      "totalCount": 4274
+    }
+  },
+  {
+    "name": "three.js",
+    "owner": {
+      "login": "mrdoob"
+    },
+    "stargazerCount": 100482,
+    "forkCount": 35209,
+    "watchers": {
+      "totalCount": 2547
+    },
+    "issues": {
+      "totalCount": 12387
+    },
+    "primaryLanguage": {
+      "name": "JavaScript"
+    },
+    "pullRequests": {
+      "totalCount": 16251
+    }
+  },
+  {
+    "name": "TypeScript",
+    "owner": {
+      "login": "microsoft"
+    },
+    "stargazerCount": 99145,
+    "forkCount": 12298,
+    "watchers": {
+      "totalCount": 2137
+    },
+    "issues": {
+      "totalCount": 40382
+    },
+    "primaryLanguage": {
+      "name": "TypeScript"
+    },
+    "pullRequests": {
+      "totalCount": 17785
+    }
+  },
+  {
+    "name": "nodebestpractices",
+    "owner": {
+      "login": "goldbergyoni"
+    },
+    "stargazerCount": 97259,
+    "forkCount": 9884,
+    "watchers": {
+      "totalCount": 1912
+    },
+    "issues": {
+      "totalCount": 320
+    },
+    "primaryLanguage": {
+      "name": "Dockerfile"
+    },
+    "pullRequests": {
+      "totalCount": 956
+    }
+  },
+  {
+    "name": "angular",
+    "owner": {
+      "login": "angular"
+    },
+    "stargazerCount": 95212,
+    "forkCount": 24982,
+    "watchers": {
+      "totalCount": 3013
+    },
+    "issues": {
+      "totalCount": 27672
+    },
+    "primaryLanguage": {
+      "name": "TypeScript"
+    },
+    "pullRequests": {
+      "totalCount": 27674
+    }
+  },
+  {
+    "name": "rust",
+    "owner": {
+      "login": "rust-lang"
+    },
+    "stargazerCount": 94930,
+    "forkCount": 12237,
+    "watchers": {
+      "totalCount": 1484
+    },
+    "issues": {
+      "totalCount": 53418
+    },
+    "primaryLanguage": {
+      "name": "Rust"
+    },
+    "pullRequests": {
+      "totalCount": 73771
+    }
+  },
+  {
+    "name": "GitHub-Chinese-Top-Charts",
+    "owner": {
+      "login": "GrowingGit"
+    },
+    "stargazerCount": 94596,
+    "forkCount": 12605,
+    "watchers": {
+      "totalCount": 2577
+    },
+    "issues": {
+      "totalCount": 330
+    },
+    "primaryLanguage": {
+      "name": "Java"
+    },
+    "pullRequests": {
+      "totalCount": 25
+    }
+  },
+  {
+    "name": "terminal",
+    "owner": {
+      "login": "microsoft"
+    },
+    "stargazerCount": 94252,
+    "forkCount": 8158,
+    "watchers": {
+      "totalCount": 1316
+    },
+    "issues": {
+      "totalCount": 12489
+    },
+    "primaryLanguage": {
+      "name": "C++"
+    },
+    "pullRequests": {
+      "totalCount": 4286
+    }
+  },
+  {
+    "name": "deno",
+    "owner": {
+      "login": "denoland"
+    },
+    "stargazerCount": 93412,
+    "forkCount": 5180,
+    "watchers": {
+      "totalCount": 1412
+    },
+    "issues": {
+      "totalCount": 10247
+    },
+    "primaryLanguage": {
+      "name": "Rust"
+    },
+    "pullRequests": {
+      "totalCount": 13139
+    }
+  },
+  {
+    "name": "material-ui",
+    "owner": {
+      "login": "mui"
+    },
+    "stargazerCount": 92467,
+    "forkCount": 31855,
+    "watchers": {
+      "totalCount": 1344
+    },
+    "issues": {
+      "totalCount": 19073
+    },
+    "primaryLanguage": {
+      "name": "TypeScript"
+    },
+    "pullRequests": {
+      "totalCount": 22614
+    }
+  },
+  {
+    "name": "ant-design",
+    "owner": {
+      "login": "ant-design"
+    },
+    "stargazerCount": 91109,
+    "forkCount": 47590,
+    "watchers": {
+      "totalCount": 237
+    },
+    "issues": {
+      "totalCount": 29629
+    },
+    "primaryLanguage": {
+      "name": "TypeScript"
+    },
+    "pullRequests": {
+      "totalCount": 17577
+    }
+  },
+  {
+    "name": "clean-code-javascript",
+    "owner": {
+      "login": "ryanmcdermott"
+    },
+    "stargazerCount": 90668,
+    "forkCount": 12163,
+    "watchers": {
+      "totalCount": 1872
+    },
+    "issues": {
+      "totalCount": 153
+    },
+    "primaryLanguage": {
+      "name": "JavaScript"
+    },
+    "pullRequests": {
+      "totalCount": 284
+    }
+  },
+  {
+    "name": "langchain",
+    "owner": {
+      "login": "langchain-ai"
+    },
+    "stargazerCount": 88847,
+    "forkCount": 13978,
+    "watchers": {
+      "totalCount": 675
+    },
+    "issues": {
+      "totalCount": 7126
+    },
+    "primaryLanguage": {
+      "name": "Python"
+    },
+    "pullRequests": {
+      "totalCount": 13506
+    }
+  },
+  {
+    "name": "java-design-patterns",
+    "owner": {
+      "login": "iluwatar"
+    },
+    "stargazerCount": 88353,
+    "forkCount": 26212,
+    "watchers": {
+      "totalCount": 3782
+    },
+    "issues": {
+      "totalCount": 937
+    },
+    "primaryLanguage": {
+      "name": "Java"
+    },
+    "pullRequests": {
+      "totalCount": 2042
+    }
+  },
+  {
+    "name": "HelloGitHub",
+    "owner": {
+      "login": "521xueweihan"
+    },
+    "stargazerCount": 87729,
+    "forkCount": 9479,
+    "watchers": {
+      "totalCount": 2972
+    },
+    "issues": {
+      "totalCount": 2657
+    },
+    "primaryLanguage": {
+      "name": "Python"
+    },
+    "pullRequests": {
+      "totalCount": 43
+    }
+  },
+  {
+    "name": "puppeteer",
+    "owner": {
+      "login": "puppeteer"
+    },
+    "stargazerCount": 87638,
+    "forkCount": 9030,
+    "watchers": {
+      "totalCount": 1192
+    },
+    "issues": {
+      "totalCount": 6779
+    },
+    "primaryLanguage": {
+      "name": "TypeScript"
+    },
+    "pullRequests": {
+      "totalCount": 5792
+    }
+  },
+  {
+    "name": "vue-element-admin",
+    "owner": {
+      "login": "PanJiaChen"
+    },
+    "stargazerCount": 87080,
+    "forkCount": 30390,
+    "watchers": {
+      "totalCount": 2204
+    },
+    "issues": {
+      "totalCount": 3582
+    },
+    "primaryLanguage": {
+      "name": "Vue"
+    },
+    "pullRequests": {
+      "totalCount": 585
+    }
+  },
+  {
+    "name": "godot",
+    "owner": {
+      "login": "godotengine"
+    },
+    "stargazerCount": 86622,
+    "forkCount": 19314,
+    "watchers": {
+      "totalCount": 1518
+    },
+    "issues": {
+      "totalCount": 50833
+    },
+    "primaryLanguage": {
+      "name": "C++"
+    },
+    "pullRequests": {
+      "totalCount": 42243
+    }
+  },
+  {
+    "name": "Microsoft-Activation-Scripts",
+    "owner": {
+      "login": "massgravel"
+    },
+    "stargazerCount": 86198,
+    "forkCount": 8402,
+    "watchers": {
+      "totalCount": 895
+    },
+    "issues": {
+      "totalCount": 350
+    },
+    "primaryLanguage": {
+      "name": "Batchfile"
+    },
+    "pullRequests": {
+      "totalCount": 28
+    }
+  },
+  {
+    "name": "free-for-dev",
+    "owner": {
+      "login": "ripienaar"
+    },
+    "stargazerCount": 85648,
+    "forkCount": 9308,
+    "watchers": {
+      "totalCount": 1622
+    },
+    "issues": {
+      "totalCount": 0
+    },
+    "primaryLanguage": {
+      "name": "HTML"
+    },
+    "pullRequests": {
+      "totalCount": 3263
+    }
+  },
+  {
+    "name": "papers-we-love",
+    "owner": {
+      "login": "papers-we-love"
+    },
+    "stargazerCount": 85237,
+    "forkCount": 5672,
+    "watchers": {
+      "totalCount": 3102
+    },
+    "issues": {
+      "totalCount": 236
+    },
+    "primaryLanguage": {
+      "name": "Shell"
+    },
+    "pullRequests": {
+      "totalCount": 515
+    }
+  },
+  {
+    "name": "thefuck",
+    "owner": {
+      "login": "nvbn"
+    },
+    "stargazerCount": 83642,
+    "forkCount": 3409,
+    "watchers": {
+      "totalCount": 835
+    },
+    "issues": {
+      "totalCount": 721
+    },
+    "primaryLanguage": {
+      "name": "Python"
+    },
+    "pullRequests": {
+      "totalCount": 692
+    }
+  },
+  {
+    "name": "storybook",
+    "owner": {
+      "login": "storybookjs"
+    },
+    "stargazerCount": 83431,
+    "forkCount": 9124,
+    "watchers": {
+      "totalCount": 942
+    },
+    "issues": {
+      "totalCount": 12541
+    },
+    "primaryLanguage": {
+      "name": "TypeScript"
+    },
+    "pullRequests": {
+      "totalCount": 12492
+    }
+  },
+  {
+    "name": "Web-Dev-For-Beginners",
+    "owner": {
+      "login": "microsoft"
+    },
+    "stargazerCount": 82222,
+    "forkCount": 12252,
+    "watchers": {
+      "totalCount": 2699
+    },
+    "issues": {
+      "totalCount": 287
+    },
+    "primaryLanguage": {
+      "name": "JavaScript"
+    },
+    "pullRequests": {
+      "totalCount": 844
+    }
+  },
+  {
+    "name": "frp",
+    "owner": {
+      "login": "fatedier"
+    },
+    "stargazerCount": 82190,
+    "forkCount": 12908,
+    "watchers": {
+      "totalCount": 1568
+    },
+    "issues": {
+      "totalCount": 3419
+    },
+    "primaryLanguage": {
+      "name": "Go"
+    },
+    "pullRequests": {
+      "totalCount": 875
+    }
+  },
+  {
+    "name": "iptv",
+    "owner": {
+      "login": "iptv-org"
+    },
+    "stargazerCount": 81199,
+    "forkCount": 2074,
+    "watchers": {
+      "totalCount": 1873
+    },
+    "issues": {
+      "totalCount": 8004
+    },
+    "primaryLanguage": {
+      "name": "JavaScript"
+    },
+    "pullRequests": {
+      "totalCount": 6955
+    }
+  },
+  {
+    "name": "tailwindcss",
+    "owner": {
+      "login": "tailwindlabs"
+    },
+    "stargazerCount": 80437,
+    "forkCount": 4045,
+    "watchers": {
+      "totalCount": 614
+    },
+    "issues": {
+      "totalCount": 3299
+    },
+    "primaryLanguage": {
+      "name": "TypeScript"
+    },
+    "pullRequests": {
+      "totalCount": 2659
+    }
+  },
+  {
+    "name": "pytorch",
+    "owner": {
+      "login": "pytorch"
+    },
+    "stargazerCount": 80257,
+    "forkCount": 21556,
+    "watchers": {
+      "totalCount": 1731
+    },
+    "issues": {
+      "totalCount": 43080
+    },
+    "primaryLanguage": {
+      "name": "Python"
+    },
+    "pullRequests": {
+      "totalCount": 86991
+    }
+  },
+  {
+    "name": "animate.css",
+    "owner": {
+      "login": "animate-css"
+    },
+    "stargazerCount": 80133,
+    "forkCount": 16241,
+    "watchers": {
+      "totalCount": 2248
+    },
+    "issues": {
+      "totalCount": 864
+    },
+    "primaryLanguage": {
+      "name": "CSS"
+    },
+    "pullRequests": {
+      "totalCount": 893
+    }
+  },
+  {
+    "name": "Awesome-Hacking",
+    "owner": {
+      "login": "Hack-with-Github"
+    },
+    "stargazerCount": 80084,
+    "forkCount": 8782,
+    "watchers": {
+      "totalCount": 3801
+    },
+    "issues": {
+      "totalCount": 0
+    },
+    "primaryLanguage": null,
+    "pullRequests": {
+      "totalCount": 106
+    }
+  },
+  {
+    "name": "hello-algo",
+    "owner": {
+      "login": "krahets"
+    },
+    "stargazerCount": 79998,
+    "forkCount": 10186,
+    "watchers": {
+      "totalCount": 461
+    },
+    "issues": {
+      "totalCount": 187
+    },
+    "primaryLanguage": {
+      "name": "Java"
+    },
+    "pullRequests": {
+      "totalCount": 1015
+    }
+  },
+  {
+    "name": "neovim",
+    "owner": {
+      "login": "neovim"
+    },
+    "stargazerCount": 79972,
+    "forkCount": 5497,
+    "watchers": {
+      "totalCount": 984
+    },
+    "issues": {
+      "totalCount": 11452
+    },
+    "primaryLanguage": {
+      "name": "Vim Script"
+    },
+    "pullRequests": {
+      "totalCount": 17762
+    }
+  },
+  {
+    "name": "realworld",
+    "owner": {
+      "login": "gothinkster"
+    },
+    "stargazerCount": 79795,
+    "forkCount": 7267,
+    "watchers": {
+      "totalCount": 1537
+    },
+    "issues": {
+      "totalCount": 528
+    },
+    "primaryLanguage": {
+      "name": "TypeScript"
+    },
+    "pullRequests": {
+      "totalCount": 818
+    }
+  },
+  {
+    "name": "tauri",
+    "owner": {
+      "login": "tauri-apps"
+    },
+    "stargazerCount": 79702,
+    "forkCount": 2367,
+    "watchers": {
+      "totalCount": 499
+    },
+    "issues": {
+      "totalCount": 4126
+    },
+    "primaryLanguage": {
+      "name": "Rust"
+    },
+    "pullRequests": {
+      "totalCount": 4565
+    }
+  },
+  {
+    "name": "django",
+    "owner": {
+      "login": "django"
+    },
+    "stargazerCount": 77931,
+    "forkCount": 31224,
+    "watchers": {
+      "totalCount": 2299
+    },
+    "issues": {
+      "totalCount": 0
+    },
+    "primaryLanguage": {
+      "name": "Python"
+    },
+    "pullRequests": {
+      "totalCount": 18300
+    }
+  },
+  {
+    "name": "every-programmer-should-know",
+    "owner": {
+      "login": "mtdvio"
+    },
+    "stargazerCount": 77778,
+    "forkCount": 7408,
+    "watchers": {
+      "totalCount": 2020
+    },
+    "issues": {
+      "totalCount": 45
+    },
+    "primaryLanguage": null,
+    "pullRequests": {
+      "totalCount": 167
+    }
+  },
+  {
+    "name": "ollama",
+    "owner": {
+      "login": "ollama"
+    },
+    "stargazerCount": 77685,
+    "forkCount": 5870,
+    "watchers": {
+      "totalCount": 465
+    },
+    "issues": {
+      "totalCount": 3499
+    },
+    "primaryLanguage": {
+      "name": "Go"
+    },
+    "pullRequests": {
+      "totalCount": 1921
+    }
+  },
+  {
+    "name": "svelte",
+    "owner": {
+      "login": "sveltejs"
+    },
+    "stargazerCount": 77514,
+    "forkCount": 4044,
+    "watchers": {
+      "totalCount": 865
+    },
+    "issues": {
+      "totalCount": 6677
+    },
+    "primaryLanguage": {
+      "name": "JavaScript"
+    },
+    "pullRequests": {
+      "totalCount": 5330
+    }
+  },
+  {
+    "name": "laravel",
+    "owner": {
+      "login": "laravel"
+    },
+    "stargazerCount": 77513,
+    "forkCount": 23928,
+    "watchers": {
+      "totalCount": 4429
+    },
+    "issues": {
+      "totalCount": 0
+    },
+    "primaryLanguage": {
+      "name": "PHP"
+    },
+    "pullRequests": {
+      "totalCount": 4767
+    }
+  },
+  {
+    "name": "nvm",
+    "owner": {
+      "login": "nvm-sh"
+    },
+    "stargazerCount": 77270,
+    "forkCount": 7760,
+    "watchers": {
+      "totalCount": 995
+    },
+    "issues": {
+      "totalCount": 2160
+    },
+    "primaryLanguage": {
+      "name": "Shell"
+    },
+    "pullRequests": {
+      "totalCount": 1070
+    }
+  },
+  {
+    "name": "bitcoin",
+    "owner": {
+      "login": "bitcoin"
+    },
+    "stargazerCount": 77144,
+    "forkCount": 35619,
+    "watchers": {
+      "totalCount": 3989
+    },
+    "issues": {
+      "totalCount": 8033
+    },
+    "primaryLanguage": {
+      "name": "C++"
+    },
+    "pullRequests": {
+      "totalCount": 20949
+    }
+  },
+  {
+    "name": "excalidraw",
+    "owner": {
+      "login": "excalidraw"
+    },
+    "stargazerCount": 77065,
+    "forkCount": 7038,
+    "watchers": {
+      "totalCount": 392
+    },
+    "issues": {
+      "totalCount": 3359
+    },
+    "primaryLanguage": {
+      "name": "TypeScript"
+    },
+    "pullRequests": {
+      "totalCount": 4530
+    }
+  },
+  {
+    "name": "opencv",
+    "owner": {
+      "login": "opencv"
+    },
+    "stargazerCount": 76886,
+    "forkCount": 55662,
+    "watchers": {
+      "totalCount": 2659
+    },
+    "issues": {
+      "totalCount": 10623
+    },
+    "primaryLanguage": {
+      "name": "C++"
+    },
+    "pullRequests": {
+      "totalCount": 15099
+    }
+  },
+  {
+    "name": "gin",
+    "owner": {
+      "login": "gin-gonic"
+    },
+    "stargazerCount": 76806,
+    "forkCount": 7917,
+    "watchers": {
+      "totalCount": 1358
+    },
+    "issues": {
+      "totalCount": 2210
+    },
+    "primaryLanguage": {
+      "name": "Go"
+    },
+    "pullRequests": {
+      "totalCount": 1773
+    }
+  },
+  {
+    "name": "models",
+    "owner": {
+      "login": "tensorflow"
+    },
+    "stargazerCount": 76795,
+    "forkCount": 45837,
+    "watchers": {
+      "totalCount": 2737
+    },
+    "issues": {
+      "totalCount": 7266
+    },
+    "primaryLanguage": {
+      "name": "Python"
+    },
+    "pullRequests": {
+      "totalCount": 3802
+    }
+  },
+  {
+    "name": "mall",
+    "owner": {
+      "login": "macrozheng"
+    },
+    "stargazerCount": 76502,
+    "forkCount": 28530,
+    "watchers": {
+      "totalCount": 2232
+    },
+    "issues": {
+      "totalCount": 489
+    },
+    "primaryLanguage": {
+      "name": "Java"
+    },
+    "pullRequests": {
+      "totalCount": 121
+    }
+  },
+  {
+    "name": "yt-dlp",
+    "owner": {
+      "login": "yt-dlp"
+    },
+    "stargazerCount": 76493,
+    "forkCount": 6018,
+    "watchers": {
+      "totalCount": 472
+    },
+    "issues": {
+      "totalCount": 7289
+    },
+    "primaryLanguage": {
+      "name": "Python"
+    },
+    "pullRequests": {
+      "totalCount": 2891
+    }
+  },
+  {
+    "name": "app-ideas",
+    "owner": {
+      "login": "florinpop17"
+    },
+    "stargazerCount": 76303,
+    "forkCount": 9237,
+    "watchers": {
+      "totalCount": 1841
+    },
+    "issues": {
+      "totalCount": 145
+    },
+    "primaryLanguage": null,
+    "pullRequests": {
+      "totalCount": 665
+    }
+  },
+  {
+    "name": "FiraCode",
+    "owner": {
+      "login": "tonsky"
+    },
+    "stargazerCount": 76097,
+    "forkCount": 3074,
+    "watchers": {
+      "totalCount": 716
+    },
+    "issues": {
+      "totalCount": 1322
+    },
+    "primaryLanguage": {
+      "name": "Clojure"
+    },
+    "pullRequests": {
+      "totalCount": 187
+    }
+  }
+]
