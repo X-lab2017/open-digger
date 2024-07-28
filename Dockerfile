@@ -13,8 +13,11 @@ WORKDIR /python_kernel/notebook
 ARG KER_REL_PATH  # Kernel Relative Path e.g. './pycjs'
 
 COPY ${KER_REL_PATH}/requirements.txt ${KER_REL_PATH}/requirements.txt
+COPY ${KER_REL_PATH}/mirrors_manager.py ${KER_REL_PATH}/mirrors_manager.py
 
-RUN pip install -r ${KER_REL_PATH}/requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple/ 
+# RUN pip install -r ${KER_REL_PATH}/requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple/ 
+ARG MIRROE_URL_LIST=''
+RUN python3 ${KER_REL_PATH}/mirrors_manager.py -r ${KER_REL_PATH}/requirements.txt
 
 EXPOSE 8888
 
