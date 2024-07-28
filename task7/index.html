@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Dashboard for Paddle Community</title>
+
+    <link rel="icon" href="dashboard.png">
+    <!-- 引入 CSS 文件 -->
+    <link rel="stylesheet" id="stylesheet" href="style.css">
+    <script>
+        document.getElementById('stylesheet').href = 'style.css?v=' + new Date().getTime();
+    </script>
+    <!-- 引入 ECharts -->
+    <script src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
+    <!-- 引入 PapaParse (用于解析 CSV) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+</head>
+<body>
+    <div class="header">
+        <h1>Dashboard for Paddle Community</h1>
+    </div>
+    <div class="container">
+        <div class="left-column">
+            <div id="chart2" class="small-chart"></div>
+            <div id="chart3" class="small-chart"></div>
+            <div id="chart4" class="small-chart"></div>
+        </div>
+        <div class="center-column">
+            <div id="chart1" class="large-chart"></div>
+        </div>
+        <div class="right-column">
+            <div id="chart5" class="small-chart"></div>
+            <div id="chart6" class="small-chart"></div>
+            <div id="chart7" class="small-chart"></div>
+        </div>
+    </div>
+
+    <!-- 引入 JS 文件 -->
+    <script>
+        // 动态添加时间戳到 scripts.js 文件
+        var script = document.createElement('script');
+        script.src = 'scripts.js?v=' + new Date().getTime();
+        document.head.appendChild(script);
+    </script>
+</body>
+</html>
