@@ -1,0 +1,9 @@
+name: Kaiyuanshe
+type: Community
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 11659327
+          name: kaiyuanshe

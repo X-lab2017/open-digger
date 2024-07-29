@@ -74,6 +74,8 @@ data:
     - :communities/openmmlab
     - :communities/xlab
     - :communities/mulan
+    - :communities/kaiyuanshe
+    - :communities/openbuild
     - :foundations/openatom
     - :projects/skywalking
   platforms:

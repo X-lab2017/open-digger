@@ -1,0 +1,9 @@
+name: OpenBuild
+type: Community
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 127214197
+          name: openbuildxyz
