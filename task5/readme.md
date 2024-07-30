@@ -5,39 +5,40 @@ This project implements an automatic label classification task using machine lea
 ## Description
 
 Existing repository label data relies heavily on manual labeling. This project utilizes machine learning methods to automatically identify and annotate data for any subclass of label data.
+
 * data.csv is a category data extracted from Open-Digger/Labeled_data for model training and testing.
-* label_classification.ipynb for model training and testing
-## Prerequisites
 
-- Python 3.8+
-- Pandas
-- scikit-learn
-- joblib
+* label_classification.ipynb for model training and testing.
 
-## Installation
+* label_classification.py establishes a neural network model for classification tasks.
 
-1. Clone the repository:
-    ```bash
-    git clone <repository-url>
-    cd <repository-name>
-    ```
+* label_classification_1.ipynb  implements label classification.
 
-2. Install the required packages:
-    ```bash
-    pip install -r requirements.txt
-    ```
+    1. Data preprocessing: Read data and split it into training and testing sets.
 
-## Usage
+    2. Feature extraction: Use TfidfVectorizer to extract features.
 
-1. Prepare your labeled data in a CSV file with columns `text` and `label`.
+    3. Define neural network model: Use Keras to define a neural network model and wrap it with scikit-learn.
 
-2. Run the training script:
-    ```bash
-    python train.py --data labeled_data.csv
-    ```
+    4. Train models: Define and train multiple models (Logistic Regression, SVM, Random Forest, Neural Network).
 
-3. The trained model and vectorizer will be saved as `label_classifier_model.pkl` and `vectorizer.pkl`.
+    5. Evaluate models: Use classification_report to generate classification reports.
 
-## License
+* label_classification_2.ipynb
 
-This project is licensed under the MIT License.
+    1. Train and save models:
+
+        + Use joblib to save Logistic Regression, SVM, and Random Forest models.
+
+        + Use Keras's save method to save neural network models.
+
+        + Save TfidfVectorizer to perform the same feature extraction on new data.
+    
+    2. Load the saved model and perform classification:
+
+        + Read the saved TfidfVectorizer to perform feature extraction on new data.
+
+        + Load the saved model and make predictions.
+
+        + Display the classification results of the new data.
+
