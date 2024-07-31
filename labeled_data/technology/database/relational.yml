@@ -211,6 +211,8 @@ data:
           name: gnocchixyz/gnocchi
         - id: 24650236
           name: google/lovefield
+        - id: 385634291
+          name: grafana/mimir
         - id: 44781140
           name: greenplum-db/gpdb
         - id: 33745913
