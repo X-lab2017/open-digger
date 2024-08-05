@@ -1,26 +1,48 @@
 import { Task } from '..';
 import { forEveryMonth } from '../../metrics/basic';
-import { getLogger, waitUntil } from '../../utils';
+import { ArrayMap, getLogger, waitUntil } from '../../utils';
 import { StaticPool } from 'node-worker-threads-pool';
 import { query as queryClickhouse, queryStream as queryStreamClickhouse, getNewClient } from '../../db/clickhouse';
 import { query as queryNeo4j, queryStream as queryStreamNeo4j } from '../../db/neo4j';
 import { Readable } from 'stream';
+import { join } from 'path';
+import getConfig from '../../config';
+import { readFileSync, writeFileSync } from 'fs';
 
 enum CalcStatus {
   Normal = 1,
   TooLarge = 2,
 }
 
+interface ExportDataType {
+  meta: {
+    repoId: number;
+    platform: string;
+    repoName: string;
+    retentionFactor: number;
+    backgroundRatio: number;
+    nodes: string[][];  // [id,name], for id: repo starts with r, user starts with u, issue starts with i, pr starts with p
+  },
+  data: {
+    [key: string]: {
+      openrank: number;
+      nodes: any[][];   // [index, initial value, openrank]
+      links: any[][];   // [source index, target index, weight]
+    };
+  },
+};
+
 const task: Task = {
   cron: '0 0 15 1 * *',
   callback: async () => {
     const logger = getLogger('CommunityOpenRankTask');
+    const config = await getConfig();
 
     const openrankTable = 'community_openrank';
     const localWorkerNumber = 12;
     const neo4jWorkerNumber = 4;
     const lagecyOpenrankMonthCount = 3;
-    const localCalcBatch = 2000;
+    const localCalcBatch = 30000;
 
     // counters
     let localWorkerProcessing = 0;
@@ -34,6 +56,7 @@ const task: Task = {
     const actorNameMap = new Map<string, string>();
     const repoNameMap = new Map<string, string>();
     const repoOrgMap = new Map<string, { id: string, login: string }>();
+    const issueTitleMap = new Map<string, string>();
     const workerPool: StaticPool<any, any> = new StaticPool({
       size: localWorkerNumber,
       task: localCalcTask,
@@ -142,6 +165,7 @@ const task: Task = {
       repoNameMap.clear();
       repoOrgMap.clear();
       actorNameMap.clear();
+      issueTitleMap.clear();
       const yyyymm = `${y}${m.toString().padStart(2, '0')}`;
       const repoResult = await queryClickhouse<string[]>(`SELECT platform, repo_id, argMax(repo_name, created_at), argMax(org_id, created_at), argMax(org_login, created_at) FROM events WHERE toYYYYMM(created_at) = ${yyyymm} AND repo_id IN (SELECT id FROM export_repo) GROUP BY repo_id, platform`, { format: 'JSONCompactEachRow' });
       repoResult.forEach(row => {
@@ -154,55 +178,79 @@ const task: Task = {
         const [platform, actorId, actorLogin] = row;
         actorNameMap.set(`${platform}_${actorId}`, actorLogin);
       });
+      const issueResult = await queryClickhouse<string[]>(`SELECT platform, repo_id, issue_number, substring(any(issue_title), 1, 256) FROM events WHERE toYYYYMM(created_at) = ${yyyymm} AND repo_id IN (SELECT id FROM export_repo) AND issue_number > 0 GROUP BY platform, repo_id, issue_number`, { format: 'JSONCompactEachRow' });
+      issueResult.forEach(row => {
+        const [platform, repoId, issueNumber, title] = row;
+        issueTitleMap.set(`${platform}_${repoId}_${issueNumber}`, title);
+      });
     };
 
     const loadCalculateRepos = async (y: number, m: number) => {
       const yyyymm = `${y}${m.toString().padStart(2, '0')}`;
-      const q = `SELECT platform, repo_id, groupArray((actor_id, issue_number, activity, merged)) AS rels FROM
-(SELECT
-  repo_id,
-  platform,
-  issue_number,
-  actor_id,
-  ROUND(countIf(type='IssuesEvent' AND action='opened') * 22.235 +
-  countIf(type='IssueCommentEvent') * 5.252 +
-  countIf(type='IssuesEvent' AND action='closed') * 9.712 + 
-  countIf(type='PullRequestReviewCommentEvent') * 7.427 + 
-  countIf(type='PullRequestEvent' AND action='opened') * 40.679 + 
-  countIf(type='PullRequestEvent' AND action='closed') * 14.695, 3) AS activity,
-  MAX(pull_merged) AS merged
+      const q = `
+SELECT
+  a.platform AS platform,
+  a.repo_id AS repo_id,
+  argMax(go.repo_name, go.created_at) AS repo_name,
+  sumIf(go.openrank, toYYYYMM(go.created_at) = ${yyyymm}) AS openrank,
+  any(a.rels) AS rels
 FROM
-  events
+  (SELECT platform, repo_id, groupArray((actor_id, issue_number, activity, merged, is_pull)) AS rels FROM
+    (SELECT
+      repo_id,
+      platform,
+      issue_number,
+      actor_id,
+      ROUND(countIf(type='IssuesEvent' AND action='opened') * 22.235 +
+      countIf(type='IssueCommentEvent') * 5.252 +
+      countIf(type='IssuesEvent' AND action='closed') * 9.712 + 
+      countIf(type='PullRequestReviewCommentEvent') * 7.427 + 
+      countIf(type='PullRequestEvent' AND action='opened') * 40.679 + 
+      countIf(type='PullRequestEvent' AND action='closed') * 14.695, 3) AS activity,
+      MAX(pull_merged) AS merged,
+      countIf(type IN ('PullRequestEvent', 'PullRequestReviewCommentEvent')) AS is_pull
+    FROM
+      events
+    WHERE
+      toYYYYMM (created_at) = ${yyyymm}
+      AND repo_id IN (SELECT id FROM export_repo)
+      AND repo_id NOT IN (SELECT repo_id FROM ${openrankTable} WHERE toYYYYMM(created_at) = ${yyyymm})
+      AND type IN (
+        'IssuesEvent',
+        'IssueCommentEvent',
+        'PullRequestEvent',
+        'PullRequestReviewCommentEvent'
+      )
+    GROUP BY
+      repo_id,
+      issue_number,
+      actor_id,
+      platform
+    HAVING activity > 0)
+  GROUP BY repo_id, platform) a,
+  global_openrank go
 WHERE
-  toYYYYMM (created_at) = ${yyyymm}
-  AND repo_id IN (SELECT id FROM export_repo)
-  AND repo_id NOT IN (SELECT repo_id FROM ${openrankTable} WHERE toYYYYMM(created_at) = ${yyyymm})
-  AND type IN (
-    'IssuesEvent',
-    'IssueCommentEvent',
-    'PullRequestEvent',
-    'PullRequestReviewCommentEvent'
-  )
+  a.platform = go.platform
+  AND a.repo_id = go.repo_id
 GROUP BY
-  repo_id,
-  issue_number,
-  actor_id,
-  platform
-HAVING activity > 0)
-GROUP BY repo_id, platform`;
+  platform, repo_id
+`;
       const list: any[] = await queryClickhouse(q, { format: 'JSONCompactEachRow' });
       return list;
     }
 
-    const splitArrayIntoChunks = <T = any>(array: T[], chunkSize: number): T[][] => {
-      const chunks: T[][] = [];
-      const length = array.length;
-      let index = 0;
-
-      while (index < length) {
-        const chunk = array.slice(index, index + chunkSize);
+    const splitArrayIntoChunks = (array: any[], chunkSize: number): any[][] => {
+      const chunks: any[][] = [];
+      let chunk: any[] = [];
+      for (const item of array) {
+        chunk.push(item);
+        if (chunk.map(i => i[4].length).reduce((p, c) => p + c) >= chunkSize) {
+          chunks.push(chunk);
+          chunk = [];
+        }
+      }
+      if (chunk.length > 0) {
         chunks.push(chunk);
-        index += chunkSize;
       }
 
       return chunks;
@@ -219,7 +267,7 @@ GROUP BY repo_id, platform`;
       if (lists.length === 0) return;
 
       await loadNames(y, m);
-      logger.info(`Loaded ${actorNameMap.size} actors, ${repoNameMap.size} repos.`);
+      logger.info(`Loaded ${actorNameMap.size} actors, ${repoNameMap.size} repos, ${issueTitleMap.size} issues.`);
 
       await loadOpenrankHistory(ctx);
       const elpsMap = new Map<number, { count: number; elps: number; }>();
@@ -264,10 +312,56 @@ GROUP BY repo_id, platform`;
         stream.push(record);
         updateCor(platform, repoId, `${y}${m.toString().padStart(2, '0')}`, idStr === 'bg' ? repoId : idStr, openrank);
       };
+      const yyyymm = `${y}${m.toString().padStart(2, '0')}`;
 
+      const saveExportData = async (param: { platform: string, exportData: any }) => {
+        const { platform, exportData } = param;
+        const repoName = exportData.meta.repoName;
+        const exportFilePath = join(config.export.path, platform.toLowerCase(), repoName, 'community_openrank.json');
+        let data: ExportDataType = {
+          meta: {
+            repoId: +exportData.meta.repoId,
+            platform,
+            repoName,
+            retentionFactor: 0.15,
+            backgroundRatio: 0.05,
+            nodes: [],
+          },
+          data: {},
+        };
+        try {
+          data = JSON.parse(readFileSync(exportFilePath).toString());
+        } catch { }
+        try {
+          const nodeArrayMap = new ArrayMap<string[]>(data.meta.nodes, n => n[0]);
+          nodeArrayMap.add(['r' + exportData.meta.repoId, repoName]);
+          for (let i = 0; i < exportData.nodes.length; i++) {
+            const node = exportData.nodes[i];
+            if (node.id[0] === 'u') {
+              // set user login
+              nodeArrayMap.add([node.id, actorNameMap.get(`${platform}_${node.id.slice(1)}`)!]);
+            } else if (node.id[0] === 'i' || node.id[0] === 'p') {
+              // set issue title
+              nodeArrayMap.add([exportData.nodes[i].id, issueTitleMap.get(`${platform}_${exportData.meta.repoId}_${node.id.slice(1)}`)!]);
+            }
+          }
+          data.meta.nodes = nodeArrayMap.getArray();
+          data.data[yyyymm] = {
+            openrank: exportData.meta.openrank,
+            nodes: exportData.nodes.map(n => [nodeArrayMap.getIndex(n.id)!, n.i, n.v]),
+            links: exportData.links.map(l => [nodeArrayMap.getIndex(l.s)!, nodeArrayMap.getIndex(l.t)!, l.w]),
+          };
+        } catch (e) {
+          console.log(e, exportFilePath);
+        }
+        try {
+          writeFileSync(exportFilePath, JSON.stringify(data));
+        } catch (e) {
+          logger.error(`Error on save export data, repoName=${repoName}, ${e}`);
+        }
+      };
       for (const list of processLists) {
         localWorkerProcessing++;
-        list.sort((a, b) => b[1].length - a[1].length);
         workerPool.exec({
           data: list,
           cor: prepareCor(list, ctx),
@@ -275,23 +369,37 @@ GROUP BY repo_id, platform`;
         }, -1).then(async res => {
           const results = res.results;
           for (const result of results) {
-            const { status, values, repoId, platform } = result;
+            const { status, values, repoId, platform, exportData } = result;
             if (status === CalcStatus.Normal) {
               for (const [idStr, openrank] of values) {
                 saveRecord(platform, repoId, idStr, openrank);
               }
+              saveExportData({ platform, exportData });
             } else {
               neo4jWaitingNumber++;
-              calcByNeo4j({ details: result.details, repoId, y, m }).then(res => {
-                const { size, stat, list } = res;
-                for (const item of list) {
-                  saveRecord(platform, repoId, item.id, item.openrank);
+              let calcFinished = false;
+              while (!calcFinished) {
+                // neo4j call may fail, retry until success
+                try {
+                  const res = await calcByNeo4j({ details: result.details, repoId, y, m });
+                  const { size, stat, list } = res;
+                  const nodeOpenrankMap = new Map<string, number>();
+                  for (const item of list) {
+                    saveRecord(platform, repoId, item.id, item.openrank);
+                    nodeOpenrankMap.set(item.id, item.openrank);
+                  }
+                  exportData.nodes.forEach(n => n.v = +nodeOpenrankMap.get(n.id)!.toFixed(3));
+                  if (!elpsMap.has(size)) elpsMap.set(size, { count: 0, elps: 0 });
+                  Object.keys(stat).forEach(k => { elpsMap.get(size)![k] += stat[k]; });
+                  saveExportData({ platform, exportData });
+                  calcFinished = true;
+                } catch (e) {
+                  logger.error(`Error on calc by neo4j, ${repoId}, ${e}`);
+                } finally {
+                  neo4jWorkerProcessing--;
                 }
-                if (!elpsMap.has(size)) elpsMap.set(size, { count: 0, elps: 0 });
-                Object.keys(stat).forEach(k => { elpsMap.get(size)![k] += stat[k]; });
-                neo4jWorkerProcessing--;
-                neo4jWaitingNumber--;
-              });
+              }
+              neo4jWaitingNumber--;
             }
           }
           const elps = res.elps;
@@ -302,7 +410,10 @@ GROUP BY repo_id, platform`;
           localWorkerProcessing--;
         }).catch(e => logger.error(e));
       }
-      waitUntil(() => localWorkerProcessing === 0 && neo4jWaitingNumber === 0).then(() => stream.push(null));
+      waitUntil(() => localWorkerProcessing === 0 && neo4jWaitingNumber === 0).then(() => {
+        logger.info('All insert finished, push the null to stop.');
+        stream.push(null);
+      });
       await client.insert({
         table: openrankTable,
         values: stream,
@@ -321,19 +432,26 @@ GROUP BY repo_id, platform`;
   },
 };
 
-const localCalcTask = (param: { data: any[], cor: any, ctx: any[] }) => {
+const localCalcTask = (param: { data: any[], cor: any, ctx: any[], exportPath: string }) => {
   const { multiply, inv, subtract, add, identity, zeros } = require('mathjs');
   const elpsMap = new Map();
   const { data, cor, ctx } = param;
+  const retentionFactor = 0.15;
+  const backgroundRatio = 0.05;
+  const prMergeRatio = 1.5;
+  const attenuationFactor = 0.85;
+  const nodeSizeThreshold = 200;
 
-  const calculateForRepo = (repoId: string, rels: any[]) => {
+  const calculateForRepo = (row: any[]) => {
     const start = new Date().getTime();
-    const nodes = new Set();
+    const [_platform, repoId, repoName, openrank, rels] = row;
+    const nodes = new Set<any>();
     const activityMap = new Map();
     const mergeSet = new Set();
     rels.forEach(r => {
+      const isPull = +r[4] > 0;
       const uId = 'u' + r[0];
-      const iId = 'i' + r[1];
+      const iId = (isPull ? 'p' : 'i') + r[1];
       nodes.add(uId);
       nodes.add(iId);
       r[0] = uId;
@@ -346,32 +464,39 @@ const localCalcTask = (param: { data: any[], cor: any, ctx: any[] }) => {
     });
     const size = Math.ceil(Math.log(nodes.size));
     const nodesArr = Array.from(nodes);
-    nodesArr.push('bg');
+    nodesArr.push(`r${repoId}`);
     const c0: any = add(zeros(nodesArr.length), nodesArr.map(id => {
       const lagecyIndex = ctx.findIndex(c => cor[`${repoId}_${id}_${c}`] > 0);
-      let openrank = lagecyIndex >= 0 ? cor[`${repoId}_${id}_${ctx[lagecyIndex]}`] * Math.pow(0.85, lagecyIndex) : 1;
-      if (mergeSet.has(id)) openrank *= 1.5;
+      let openrank = lagecyIndex >= 0 ? cor[`${repoId}_${id}_${ctx[lagecyIndex]}`] * Math.pow(attenuationFactor, lagecyIndex) : 1;
+      if (mergeSet.has(id)) openrank *= prMergeRatio;
       return openrank;
-    }));
+    }));  // initial value
     const nodeIndexMap = new Map(nodesArr.map((k, i) => [k, i]));
+    const exportLinks: { s: any; t: any; w: number }[] = [];
+    rels.forEach(r => {
+      const [uId, iId, activity] = r;
+      exportLinks.push({ s: iId, t: uId, w: +((1 - backgroundRatio) * activity / activityMap.get(iId)).toFixed(3) });
+      exportLinks.push({ s: uId, t: iId, w: +((1 - backgroundRatio) * activity / activityMap.get(uId)).toFixed(3) });
+    });
+    const averagePartial = 1 / nodes.size;
+    const exportNodes: any[] = nodesArr.map((n) => ({ id: n, i: +c0.get([nodeIndexMap.get(n)!]).toFixed(3) }));
 
-    if (nodesArr.length < 200) {
+    if (nodesArr.length < nodeSizeThreshold) {
       const e: any = identity(nodesArr.length);
-      const am: any = zeros(nodesArr.length, nodesArr.length);
-      const s: any = zeros(nodesArr.length, nodesArr.length);
+      const am: any = zeros(nodesArr.length, nodesArr.length);  // damping factor
+      const s: any = zeros(nodesArr.length, nodesArr.length);   // adjacency matrix
 
       rels.forEach(r => {
         const [uId, iId, activity] = r;
-        s.set([nodeIndexMap.get(uId), nodeIndexMap.get(iId)], 0.95 * activity / activityMap.get(iId));
-        s.set([nodeIndexMap.get(iId), nodeIndexMap.get(uId)], 0.95 * activity / activityMap.get(uId));
+        s.set([nodeIndexMap.get(uId), nodeIndexMap.get(iId)], (1 - backgroundRatio) * activity / activityMap.get(iId));
+        s.set([nodeIndexMap.get(iId), nodeIndexMap.get(uId)], (1 - backgroundRatio) * activity / activityMap.get(uId));
       });
-      const averagePartial = 1 / nodes.size;
       for (let i = 0; i < nodes.size; i++) {
         s.set([i, nodes.size], averagePartial);
-        s.set([nodes.size, i], 0.05);
-        am.set([i, i], 0.85);
+        s.set([nodes.size, i], backgroundRatio);
+        am.set([i, i], 1 - retentionFactor);
       }
-      am.set([nodes.size, nodes.size], 0.85);
+      am.set([nodes.size, nodes.size], 1 - retentionFactor);
 
       const res = multiply(multiply(inv(subtract(e, multiply(am, s))), subtract(e, am)), c0);
       const end = new Date().getTime();
@@ -382,9 +507,21 @@ const localCalcTask = (param: { data: any[], cor: any, ctx: any[] }) => {
         count: origin.count + 1,
         elps: origin.elps + elps,
       });
+      res._data.forEach((v, i) => exportNodes[i].v = +v.toFixed(3));
       return {
         status: 1,
         values: nodesArr.map((v, i) => [v, res._data[i]]),
+        exportData: {
+          meta: {
+            repoId,
+            repoName,
+            openrank,
+            retentionFactor,
+            backgroundRatio,
+          },
+          nodes: exportNodes,
+          links: exportLinks,
+        },
       };
     }
     const relationships: any[] = [];
@@ -393,23 +530,46 @@ const localCalcTask = (param: { data: any[], cor: any, ctx: any[] }) => {
       relationships.push({
         s: nodeIndexMap.get(iId),
         t: nodeIndexMap.get(uId),
-        w: 0.95 * activity / activityMap.get(iId),
+        w: (1 - backgroundRatio) * activity / activityMap.get(iId),
       });
       relationships.push({
         s: nodeIndexMap.get(uId),
         t: nodeIndexMap.get(iId),
-        w: 0.95 * activity / activityMap.get(uId),
+        w: (1 - backgroundRatio) * activity / activityMap.get(uId),
       });
     });
+    for (let i = 0; i < nodesArr.length - 1; i++) {
+      relationships.push({
+        s: nodeIndexMap.get(nodesArr[i]),
+        t: nodesArr.length - 1,
+        w: backgroundRatio,
+      });
+      relationships.push({
+        s: nodesArr.length - 1,
+        t: nodeIndexMap.get(nodesArr[i]),
+        w: averagePartial,
+      });
+    }
     return {
       status: 2,
+      exportData: {
+        meta: {
+          repoId,
+          repoName,
+          openrank,
+          retentionFactor,
+          backgroundRatio,
+        },
+        nodes: exportNodes,
+        links: exportLinks,
+      },
       details: {
         ids: nodesArr,
         nodes: nodesArr.map((_, index) => {
           return {
             id: index,
             i: c0.get([index]),
-            r: 0.15,
+            r: retentionFactor,
           };
         }),
         rels: relationships,
@@ -419,8 +579,8 @@ const localCalcTask = (param: { data: any[], cor: any, ctx: any[] }) => {
   };
   const results: any[] = [];
   for (const row of data) {
-    const [platform, repoId, rels] = row;
-    const res = calculateForRepo(repoId, rels);
+    const [platform, repoId] = row;
+    const res = calculateForRepo(row);
     results.push({ platform, repoId, ...res });
   }
   return {
@@ -428,6 +588,5 @@ const localCalcTask = (param: { data: any[], cor: any, ctx: any[] }) => {
     elps: Array.from(elpsMap.entries()),
   };
 };
-
 
 module.exports = task;
