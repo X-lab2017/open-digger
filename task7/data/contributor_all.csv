@@ -1,0 +1,11 @@
+,repo_id,contributor_count,community
+0,65711522,1157,Paddle
+2,88868842,381,models
+3,262296122,285,PaddleOCR
+4,336274588,280,PaddleNLP
+6,217475193,196,PaddleDetection
+8,204380779,164,PaddleSeg
+15,507861208,86,FastDeploy
+17,162672577,78,PaddleHub
+28,228290594,58,PaddleSlim
+31,273214029,56,PaddleGAN
