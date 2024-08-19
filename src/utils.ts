@@ -101,3 +101,43 @@ export const getLogger = (tag: string) => {
     error: (...args: any[]) => log('ERROR', ...args),
   };
 };
+
+export class ArrayMap<T> {
+  private array: T[];
+  private map: Map<any, number>;
+  private keyGetter: (item: T) => any;
+
+  constructor(arr: T[], keyGetter?: (item: T) => any) {
+    this.array = [];
+    this.map = new Map();
+    this.keyGetter = keyGetter ?? (i => i);
+    arr.forEach(i => this.add(i));
+  }
+
+  public get length() {
+    return this.array.length;
+  }
+
+  public get(key: any): T | undefined {
+    const index = this.map.get(key);
+    return index === undefined ? undefined : this.array[index];
+  }
+
+  public getIndex(key: any): number {
+    return this.map.get(key) ?? -1;
+  }
+
+  public add(item: T) {
+    const key = this.keyGetter(item);
+    if (this.map.has(key)) {
+      this.array[this.map.get(key)!] = item;
+    } else {
+      this.map.set(key, this.array.length);
+      this.array.push(item);
+    }
+  }
+
+  public getArray(): T[] {
+    return [...this.array];
+  }
+}
