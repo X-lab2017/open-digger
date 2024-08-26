@@ -1295,6 +1295,68 @@ data:
           name: robot-clickhouse-ci-1
         - id: 24582011
           name: GiteaBot
+        - id: 33470835
+          name: docschina-bot
+        - id: 104646451
+          name: aws-aemilia-mxp
+        - id: 104544900
+          name: aws-aemilia-bah
+        - id: 104661415
+          name: aws-aemilia-yul
+        - id: 136437109
+          name: isomergithub70
+        - id: 104583231
+          name: aws-aemilia-dub
+        - id: 104520202
+          name: aws-aemilia-arn
+        - id: 104582264
+          name: aws-aemilia-bom
+        - id: 164520693
+          name: mateacademy-ai-mentor
+        - id: 60611498
+          name: sourcery-ai-bot
+        - id: 38661258
+          name: folio-translations
+        - id: 7901977
+          name: ivy-team
+        - id: 113140650
+          name: svc-cli-bot
+        - id: 124084908
+          name: gh-actions-test-bot
+        - id: 137281646
+          name: CodiumAI-Agent
+        - id: 102256036
+          name: cq-bot
+        - id: 72787771
+          name: xdev-renovate
+        - id: 70776706
+          name: openstack-k8s-ci-robot
+        - id: 145445537
+          name: rhtap-qe-bots-2
+        - id: 95282030
+          name: gardener-ci-robot
+        - id: 71030998
+          name: initializ-bot
+        - id: 51342364
+          name: platformsh-devrel
+        - id: 82905295
+          name: ack-bot
+        - id: 111048771
+          name: xdev-gh-bot
+        - id: 61247838
+          name: eclipse-zenoh-bot
+        - id: 155511566
+          name: security-alliance-bot
+        - id: 108553330
+          name: LizardByte-bot
+        - id: 164522902
+          name: ChainPatrol-bot
+        - id: 143721230
+          name: doris-robot
+        - id: 166700802
+          name: github-automation-metabase
+        - id: 45370463
+          name: brave-builds
     - name: Gitee
       type: Code Hosting
       users:
