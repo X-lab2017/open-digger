@@ -1,9 +1,9 @@
+import { appendFileSync } from 'fs';
 import { Task } from '..';
 import * as clickhouse from '../../db/clickhouse';
 import * as neo4j from '../../db/neo4j';
 import { getPlatformData } from '../../label_data_utils';
 import { forEveryMonth } from '../../metrics/basic';
-import { basicActivitySqlComponent } from '../../metrics/indices';
 import { getLogger } from '../../utils';
 
 const task: Task = {
@@ -17,7 +17,7 @@ const task: Task = {
     const backgroundRententionFactor = 0.15;
     const openrankAttenuationFactor = 0.85;
     const openrankMinValue = 1;
-    const acitivityToOpenrank = activity => Math.min(1, Math.log(activity + 1) / 3);
+    const acitivityToOpenrank = activity => Math.min(1, activity / 88.17);  // 75% quantile of monthly activity
 
     const createTable = async () => {
       const sql = `CREATE TABLE IF NOT EXISTS ${globalOpenrankTableName}
@@ -97,8 +97,16 @@ const task: Task = {
             argMax(repo_name, created_at) AS repo_name,
             argMax(org_id, created_at) AS org_id,
             argMax(org_login, created_at) AS org_login,
-            ${basicActivitySqlComponent},
-            MAX(created_at) AS max_created_at
+            actor_id,
+            argMax(actor_login, created_at) AS actor_login,
+            ROUND(countIf(type='IssuesEvent' AND action='opened') * 22.235 +
+              countIf(type='IssueCommentEvent') * 5.252 +
+              countIf(type='IssuesEvent' AND action='closed') * 9.712 + 
+              countIf(type='PullRequestReviewCommentEvent') * 7.427 + 
+              countIf(type='PullRequestEvent' AND action='opened') * 40.679 + 
+              countIf(type='PushEvent') * 14.695, 3) AS activity,
+            MAX(created_at) AS max_created_at,
+            (countIf(type='IssuesEvent' AND action='opened') + countIf(type='IssueCommentEvent') + countIf(type='PullRequestEvent' AND action='opened') + countIf(type='IssuesEvent' AND action='closed') + countIf(type='PullRequestReviewCommentEvent')) AS valid_count
           FROM events
           WHERE
             toYYYYMM(created_at)=${yyyymm}
@@ -106,19 +114,22 @@ const task: Task = {
               'IssuesEvent',
               'IssueCommentEvent',
               'PullRequestEvent',
-              'PullRequestReviewCommentEvent'
+              'PullRequestReviewCommentEvent',
+              'PushEvent'
             )
+            AND issue_title NOT ILIKE '[snyk]%'
             AND ${botLabelData.map(p => {
           if (!p.users || p.users.length === 0) return null;
           return `(NOT (platform='${p.name}' AND actor_id IN (${p.users.map(u => u.id).join(',')})))`;
         }).filter(p => p).join(' AND ')}
           GROUP BY repo_id, actor_id, platform
-          HAVING activity > 0 AND actor_login NOT LIKE '%[bot]'`;
+          HAVING activity > 0 AND valid_count > 0 AND actor_login NOT LIKE '%[bot]'`;
         const nodeMap = new Map<string, { info: any, createdAt: Date }>();
+        const userRelationshipCountMap = new Map<string, number>();
         const activityMap = new Map<string, number>();
         const rows: { rId: string; uId: string; activity: number }[] = [];
         await clickhouse.queryStream(loadActivitySql, async row => {
-          if (!Array.isArray(row) || row.length !== 14) {
+          if (!Array.isArray(row) || row.length !== 10) {
             throw new Error(`Load activity data failed for ${yyyymm}, row=${row}`);
           }
           const platform = row[0];
@@ -128,8 +139,8 @@ const task: Task = {
           const orgLogin = row[4];
           const userId = row[5];
           const userLogin = row[6];
-          const activity = row[12] * row[12];
-          const createdAt = new Date(row[13]);
+          const activity = row[7];
+          const createdAt = new Date(row[8]);
           const rId = `Repo_${platform}_${repoId}`;
           const uId = `User_${platform}_${userId}`;
           if (!nodeMap.has(rId) || nodeMap.get(rId)!.createdAt < createdAt) {
@@ -144,10 +155,26 @@ const task: Task = {
           if (!nodeMap.has(uId) || nodeMap.get(uId)!.createdAt < createdAt) {
             nodeMap.set(uId, { info: { actor_login: userLogin }, createdAt });
           }
+          userRelationshipCountMap.set(uId, (userRelationshipCountMap.get(uId) ?? 0) + 1);
           activityMap.set(rId, (activityMap.get(rId) ?? 0) + activity);
           activityMap.set(uId, (activityMap.get(uId) ?? 0) + activity);
           rows.push({ rId, uId, activity });
         });
+        const maxUserRelationshipNodes = Array.from(userRelationshipCountMap.entries()).sort((a, b) => b[1] - a[1]).filter(i => i[1] > 300);
+        if (maxUserRelationshipNodes.length > 0) {
+          logger.info('Most relationship users with more than 300 repos:');
+          const items = maxUserRelationshipNodes.map(u => {
+            const id = u[0];
+            const [_type, platform, _id] = id.split('_');
+            const login = nodeMap.get(u[0])?.info.actor_login;
+            const url = `https://${platform.toLowerCase()}.com/${login}`;
+            return { url, login, id: _id, count: u[1] };
+          })
+          console.table(items);
+          for (const item of items) {
+            appendFileSync('./local_files/maybe_bot_users.txt', `${yyyymm}\t${item.url}\t${item.login}\t${item.id}\t${item.count}\n`);
+          }
+        }
         const bgId = 'Background_GitHub_0';
         nodeMap.set(bgId, { info: {}, createdAt: new Date() });
         const nodeIds = Array.from(nodeMap.keys());
@@ -264,9 +291,10 @@ const task: Task = {
           logger.info(`Gonna insert ${insertLegacyNodes.length} legacy nodes for ${yyyymm}.`);
           await clickhouse.insertRecords(insertLegacyNodes, globalOpenrankTableName);
         }
+        return true;
       } catch (e: any) {
         logger.error(`Error on calculating global openrank for ${yyyymm}, err=${e.message}`);
-        process.exit(-1);
+        return false;
       }
     };
 
@@ -274,7 +302,13 @@ const task: Task = {
     await createTable();
     const now = new Date();
     now.setMonth(now.getMonth() - 1);
-    await forEveryMonth(2015, 1, now.getFullYear(), now.getMonth() + 1, calcualteForMonth);
+    await forEveryMonth(2015, 1, now.getFullYear(), now.getMonth() + 1, async (y, m) => {
+      while (true) {
+        if (await calcualteForMonth(y, m)) {
+          break;
+        }
+      }
+    });
 
   },
 };
