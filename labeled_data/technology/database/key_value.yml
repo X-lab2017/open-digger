@@ -23,6 +23,8 @@ data:
           name: BohuTANG/nessDB
         - id: 8799170
           name: DevrexLabs/OrigoDB
+        - id: 840308148
+          name: Gifted-s/velarixdb
         - id: 344711168
           name: IceFireDB/IceFireDB
         - id: 3019304
@@ -111,6 +113,8 @@ data:
           name: cbd/edis
         - id: 150013328
           name: cberner/redb
+        - id: 747399975
+          name: chromodb/chromodb
         - id: 26826806
           name: cloudflarearchive/kyotocabinet
         - id: 220186120
@@ -165,8 +169,6 @@ data:
           name: goossaert/kingdb
         - id: 52420005
           name: griddb/griddb
-        - id: 170496871
-          name: gridgain/gridgain
         - id: 154541438
           name: gruns/ImmortalDB
         - id: 2272541

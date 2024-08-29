@@ -57,8 +57,8 @@ data:
           name: apache/drill
         - id: 341631350
           name: apache/lucene
-        - id: 341374920
-          name: apache/solr
+        - id: 50229487
+          name: apache/lucene-solr
         - id: 114187903
           name: apple/foundationdb
         - id: 137869753
@@ -139,6 +139,8 @@ data:
           name: jedisct1/Pincaster
         - id: 635374751
           name: jina-ai/vectordb
+        - id: 811062736
+          name: joswayski/averagedatabase
         - id: 270858421
           name: juji-io/datalevin
         - id: 632269609

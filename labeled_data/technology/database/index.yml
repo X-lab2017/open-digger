@@ -3,6 +3,7 @@ type: Tech-0
 data:
   labels:
     - array
+    - columnar
     - content
     - document
     - event
