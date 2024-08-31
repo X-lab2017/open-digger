@@ -7,6 +7,8 @@ data:
       repos:
         - id: 316690542
           name: MonetDB/MonetDB
+        - id: 402945349
+          name: StarRocks/StarRocks
         - id: 150954997
           name: VictoriaMetrics/VictoriaMetrics
         - id: 2524488

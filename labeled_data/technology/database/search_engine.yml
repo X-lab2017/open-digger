@@ -5,8 +5,8 @@ data:
     - name: GitHub
       type: Code Hosting
       repos:
-        - id: 341374920
-          name: apache/solr
+        - id: 50229487
+          name: apache/lucene-solr
         - id: 507775
           name: elastic/elasticsearch
         - id: 95614931
