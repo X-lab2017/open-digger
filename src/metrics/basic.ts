@@ -161,7 +161,7 @@ export const getRepoWhereClause = async (config: QueryConfig): Promise<string | 
 };
 
 // User
-export const getUserWhereClause = async (config: QueryConfig): Promise<string | null> => {
+export const getUserWhereClause = async (config: QueryConfig, idCol: string = 'actor_id'): Promise<string | null> => {
   const userWhereClauseArray: string[] = [];
 
   // id or names
@@ -171,10 +171,10 @@ export const getUserWhereClause = async (config: QueryConfig): Promise<string | 
         // convert user login to id
         const sql = `SELECT any(actor_id) AS id FROM events WHERE actor_login IN [${p.userLogins.map(n => `'${n}'`)}] AND platform='${p.platform}' GROUP BY actor_login`;
         const userIds = (await query<any>(sql, { format: 'JSONEachRow' })).map(r => r.id);
-        userWhereClauseArray.push(`(actor_id IN [${userIds.join(',')}] AND platform='${p.platform}')`);
+        userWhereClauseArray.push(`(${idCol} IN [${userIds.join(',')}] AND platform='${p.platform}')`);
       }
 
-      if (p.userIds && p.userIds.length > 0) userWhereClauseArray.push(`(actor_id IN [${p.userIds.join(',')}] AND platform='${p.platform}')`);
+      if (p.userIds && p.userIds.length > 0) userWhereClauseArray.push(`(${idCol} IN [${p.userIds.join(',')}] AND platform='${p.platform}')`);
     }
   }
 
@@ -184,7 +184,7 @@ export const getUserWhereClause = async (config: QueryConfig): Promise<string | 
       const data = getPlatformData([l], config.injectLabelData);
       const arr: string[] = [];
       for (const p of data) {
-        if (p.users.length > 0) arr.push(`(actor_id IN [${p.users.map(u => u.id).join(',')}] AND platform='${p.name}')`);
+        if (p.users.length > 0) arr.push(`(${idCol} IN [${p.users.map(u => u.id).join(',')}] AND platform='${p.name}')`);
       }
       if (arr.length === 0) return null;
       return `(${arr.join(' OR ')})`;
@@ -196,7 +196,7 @@ export const getUserWhereClause = async (config: QueryConfig): Promise<string | 
   if (config.labelUnion) {
     const data = getPlatformData(config.labelUnion, config.injectLabelData);
     for (const p of data) {
-      if (p.users.length > 0) userWhereClauseArray.push(`(actor_id IN [${p.users.map(u => u.id).join(',')}] AND platform='${p.name}')`);
+      if (p.users.length > 0) userWhereClauseArray.push(`(${idCol} IN [${p.users.map(u => u.id).join(',')}] AND platform='${p.name}')`);
     }
   }
 
