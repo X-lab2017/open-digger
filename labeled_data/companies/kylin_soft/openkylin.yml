@@ -1,0 +1,9 @@
+name: openKylin
+type: Project
+data:
+  platforms:
+    - name: Giee
+      type: Code Hosting
+      orgs:
+        - id: 8380244
+          name: openkylin

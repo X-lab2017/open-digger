@@ -71,6 +71,7 @@ data:
     - :companies/segmentfault
     - :companies/siliconflow
     - :companies/daocloud
+    - :companies/kylin_soft
     - :communities/openmmlab
     - :communities/xlab
     - :communities/mulan
