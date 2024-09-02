@@ -169,8 +169,9 @@ ${getOutterOrderAndLimit({ ...config, order: undefined }, 'openrank')}
 };
 
 interface UserCommunityOpenRankConfig {
-  limit: number;
-  withBot: boolean;
+  withoutDetail?: boolean;
+  limit?: number;
+  withBot?: boolean;
 };
 export const getUserCommunityOpenrank = async (config: QueryConfig<UserCommunityOpenRankConfig>) => {
   config = getMergedConfig(config);
@@ -181,6 +182,7 @@ export const getUserCommunityOpenrank = async (config: QueryConfig<UserCommunity
   const timeRangeClause = getTimeRangeWhereClause(config);
   if (timeRangeClause) whereClause.push(timeRangeClause);
   const limit = (config.options?.limit == undefined) ? 30 : config.options.limit;
+  const withoutDetail = config.options?.withoutDetail;
   if (config.options?.withBot === false) {
     const botLabelData = getPlatformData([':bot']);
     for (const b of botLabelData) {
@@ -195,14 +197,14 @@ SELECT
   ${getTopLevelPlatform(config)},
   argMax(name, time) AS name,
   ${getGroupArrayInsertAtClause(config, { value: 'openrankValue', key: 'openrank' })},
-  ${getGroupArrayInsertAtClause(config, { key: 'openrankDetails', noPrecision: true, defaultValue: '[]' })}
+  ${withoutDetail ? '[] as openrankDetails' : getGroupArrayInsertAtClause(config, { key: 'openrankDetails', noPrecision: true, defaultValue: '[]' })}
 FROM
 (
   SELECT
     id, argMax(name, time) AS name, platform, time,
-    ${limit > 0 ?
+    ${withoutDetail ? '' : (limit > 0 ?
       `arraySlice(groupArray((platform, repo_id, repo_name, openrank)), 1, ${limit}) AS openrankDetails` :
-      `groupArray((platform, repo_id, repo_name, openrank)) AS openrankDetails`},
+      `groupArray((platform, repo_id, repo_name, openrank)) AS openrankDetails`) + ','}
     SUM(openrank) AS openrankValue
   FROM
     (
@@ -241,10 +243,11 @@ FROM
             platform, repo_id, actor_id, time
         ) data
       GROUP BY id, repo_id, platform, time
-      ORDER BY openrank DESC
+      ${withoutDetail ? '' : 'ORDER BY openrank DESC'}
     )
     GROUP BY id, platform, time
     ${userWhereClause ? `HAVING ${userWhereClause}` : ''}
+    ${getInnerOrderAndLimit(config, 'openrankValue')}
 )
 GROUP BY id, platform
 ${getOutterOrderAndLimit(config, 'openrank')}
