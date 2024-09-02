@@ -1,0 +1,9 @@
+name: KWDB
+type: Project
+data:
+  platforms:
+    - name: Giee
+      type: Code Hosting
+      orgs:
+        - id: 13578710
+          name: kwdb
