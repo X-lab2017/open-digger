@@ -1,8 +1,9 @@
 import { existsSync, mkdirSync, writeFileSync } from 'fs';
 import { Task } from '..';
-import { getRepoActivity, getRepoOpenrank, getUserActivity, getUserOpenrank } from '../../metrics/indices';
+import { getRepoActivity, getRepoOpenrank, getUserActivity, getUserCommunityOpenrank } from '../../metrics/indices';
 import { forEveryMonth } from '../../metrics/basic';
 import { getLogger, rankData } from '../../utils';
+import { getPlatformData } from '../../label_data_utils';
 
 const task: Task = {
   cron: '0 0 15 * *',    // runs on the 15th day of every month at 00:00
@@ -321,8 +322,13 @@ const task: Task = {
 
     // get Chinese actor OpenRank
     // by month
-    const chineseUserMonthOpenrankData = await getUserOpenrank({
-      labelUnion: [':regions/CN'],
+    const chineseUserLabelData = getPlatformData([':regions/CN']);
+    const platformData: any = chineseUserLabelData.map(i => ({
+      platform: i.name,
+      userIds: i.users.map(u => u.id),
+    }));
+    const chineseUserMonthOpenrankData = await getUserCommunityOpenrank({
+      idOrNames: platformData,
       startYear, startMonth, endYear, endMonth,
       order: 'DESC', limit: -1, precision: 2,
       groupTimeRange: 'month', limitOption: 'each',
@@ -334,8 +340,8 @@ const task: Task = {
     }
     writeData(chineseUserMonthOpenrankMap, 'Actor_China_Month', 'open_rank/actor/chinese');
     // by year
-    const chineseUserYearOpenrankData = await getUserOpenrank({
-      labelUnion: [':regions/CN'],
+    const chineseUserYearOpenrankData = await getUserCommunityOpenrank({
+      idOrNames: platformData,
       startYear, startMonth, endYear, endMonth,
       order: 'DESC', limit: -1, precision: 2,
       groupTimeRange: 'year', limitOption: 'each',
@@ -350,22 +356,54 @@ const task: Task = {
 
     // get global actor OpenRank
     // by month
-    const globalUserMonthOpenrankData = await getUserOpenrank({
-      startYear, startMonth, endYear, endMonth,
-      order: 'DESC', limit, precision: 2, limitOption: 'each',
-      groupTimeRange: 'month', whereClause: `actor_id IN (SELECT id FROM ${exportUserTableName})`,
-    });
+    // too memory consuming, split to batches and merge in memory
+    const globalUserMonthOpenrankDataArray = [
+      await getUserCommunityOpenrank({
+        startYear, startMonth, endYear: 2019, endMonth: 12,
+        order: 'DESC', limit, precision: 2, limitOption: 'each',
+        groupTimeRange: 'month', options: { withoutDetail: true, withBot: false }
+      }), await getUserCommunityOpenrank({
+        startYear: 2020, startMonth: 1, endYear, endMonth,
+        order: 'DESC', limit, precision: 2, limitOption: 'each',
+        groupTimeRange: 'month', options: { withoutDetail: true, withBot: false }
+      })
+    ];
+    const globalUserMonthOpenrankData = globalUserMonthOpenrankDataArray[0];
+    const firstBatchMonthes = globalUserMonthOpenrankDataArray[0][0].openrank.length;
+    const secondBatchMonthes = globalUserMonthOpenrankDataArray[1][0].openrank.length;
+    for (const row of globalUserMonthOpenrankData) {
+      const { platform, name } = row;
+      const secondRow = globalUserMonthOpenrankDataArray[1].find(i => i.name === name && i.platform === platform);
+      if (secondRow) {
+        // second batch has the user
+        row.openrank = row.openrank.concat(secondRow.openrank);
+      } else {
+        // the user not found in the second batch
+        row.openrank = row.openrank.concat(Array.from({ length: secondBatchMonthes }, () => 0));
+      }
+    }
+    for (const row of globalUserMonthOpenrankDataArray[1]) {
+      const { platform, name, openrank } = row;
+      const firstRow = globalUserMonthOpenrankDataArray[0].find(i => i.name === name && i.platform === platform);
+      if (!firstRow) {
+        // the user not found in the first batch
+        globalUserMonthOpenrankData.push({
+          platform, name, openrank: Array.from({ length: firstBatchMonthes }, () => 0).concat(openrank)
+        });
+      }
+    }
     logger.info(`Get global user month openrank data done, count=${globalUserMonthOpenrankData.length}`);
-    const globalUserMonthOpenrankMap = rankData(globalUserMonthOpenrankData!, allMonthes, (item, _, index) => item.openrank[index], item => { return { name: item.name, id: item.id }; });
+    let globalUserMonthOpenrankMap = rankData(globalUserMonthOpenrankData!, allMonthes, (item, _, index) => item.openrank[index], item => { return { name: item.name, id: item.id }; });
     for (const k of globalUserMonthOpenrankMap.keys()) {
       globalUserMonthOpenrankMap.set(k, globalUserMonthOpenrankMap.get(k)!.filter(i => i.value > 0));
     }
     writeData(globalUserMonthOpenrankMap, 'Actor_Global_Month', 'open_rank/actor/global');
+
     // by year
-    const globalUserYearOpenrankData = await getUserOpenrank({
+    const globalUserYearOpenrankData = await getUserCommunityOpenrank({
       startYear, startMonth, endYear, endMonth,
       order: 'DESC', limit, precision: 2, limitOption: 'each',
-      groupTimeRange: 'year', whereClause: `actor_id IN (SELECT id FROM ${exportUserTableName})`,
+      groupTimeRange: 'year', options: { withoutDetail: true, withBot: false }
     });
     logger.info(`Get global user year openrank data done, count=${globalUserYearOpenrankData.length}`);
     const globalUserYearOpenrankMap = rankData(globalUserYearOpenrankData!, allYears, (item, _, index) => item.openrank[index], item => { return { name: item.name, id: item.id }; });
