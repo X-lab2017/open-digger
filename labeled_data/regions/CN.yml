@@ -72,6 +72,7 @@ data:
     - :companies/siliconflow
     - :companies/daocloud
     - :companies/kylin_soft
+    - :companies/inspur
     - :communities/openmmlab
     - :communities/xlab
     - :communities/mulan
