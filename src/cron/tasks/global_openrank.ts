@@ -52,7 +52,7 @@ const task: Task = {
         }
         if (parseInt(checkResult[0][0]) > 0) {
           logger.info(`Results of global openrank for ${yyyymm} already exists, skip.`);
-          return;
+          return true;
         }
         logger.info(`Start to calculate the global_openrank table for ${yyyymm}.`);
 

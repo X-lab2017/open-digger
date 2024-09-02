@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { appendFileSync, existsSync, mkdirSync, readFileSync, writeFileSync } from 'fs';
 import { join } from 'path';
 import { Task } from '..';
@@ -482,11 +483,11 @@ const task: Task = {
     const exportUserInfo = async () => {
       let processedCount = 0;
       const userInfoQuery = `SELECT platform, b.actor_login, a.location, a.bio, a.name, a.company FROM
-    (SELECT CAST('GitHub','Enum8(\\\'GitHub\\\'=1)') AS platform, id, location, bio, name, company FROM gh_user_info WHERE status='normal' AND id IN (SELECT id IN ${exportUserTableName} WHERE platform='GitHub'))a
+    (SELECT CAST('GitHub','Enum8(\\\'GitHub\\\'=1)') AS platform, id, location, bio, name, company FROM gh_user_info WHERE status='normal' AND id IN (SELECT id FROM ${exportUserTableName} WHERE platform='GitHub'))a
     LEFT JOIN
     (SELECT id, platform, actor_login FROM ${exportUserTableName})b
     ON a.id = b.id AND a.platform = b.platform
-    LIMIT 1 BY b.actor_id`;
+    LIMIT 1 BY b.id`;
       await queryStream(userInfoQuery, row => {
         const [platform, login, location, bio, name, company] = row;
         updateMetaData(join(exportBasePath, platform.toLowerCase(), login, 'meta.json'), {
