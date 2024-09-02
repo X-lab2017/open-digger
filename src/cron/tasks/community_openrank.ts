@@ -7,7 +7,7 @@ import { query as queryNeo4j, queryStream as queryStreamNeo4j } from '../../db/n
 import { Readable } from 'stream';
 import { join } from 'path';
 import getConfig from '../../config';
-import { readFileSync, writeFileSync } from 'fs';
+import { mkdirSync, readFileSync, writeFileSync } from 'fs';
 
 enum CalcStatus {
   Normal = 1,
@@ -317,7 +317,9 @@ GROUP BY
       const saveExportData = async (param: { platform: string, exportData: any }) => {
         const { platform, exportData } = param;
         const repoName = exportData.meta.repoName;
-        const exportFilePath = join(config.export.path, platform.toLowerCase(), repoName, 'community_openrank.json');
+        const exportFileDir = join(config.export.path, platform.toLowerCase(), repoName);
+        const exportFilePath = join(exportFileDir, 'community_openrank.json');
+        mkdirSync(exportFileDir, { recursive: true });
         let data: ExportDataType = {
           meta: {
             repoId: +exportData.meta.repoId,
