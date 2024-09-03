@@ -17,7 +17,6 @@ data:
     - delta_lake
     - docarrary
     - janusgraph
-    - milvus
     - amundsen
     - datashim
     - marquez
@@ -45,3 +44,4 @@ data:
     - adversarial_robustness_toolkit
     - ai_fairness_360_toolkit
     - open_voice_trustmark
+    - :companies/zilliz/milvus
