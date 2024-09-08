@@ -2,7 +2,7 @@ name: openKylin
 type: Project
 data:
   platforms:
-    - name: Giee
+    - name: Gitee
       type: Code Hosting
       orgs:
         - id: 8380244
