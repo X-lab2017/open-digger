@@ -179,6 +179,10 @@ export const getUserCommunityOpenrank = async (config: QueryConfig<UserCommunity
   const repoWhereClause = await getRepoWhereClause(config);
   if (repoWhereClause) whereClause.push(repoWhereClause);
   const userWhereClause = await getUserWhereClause(config, 'id');
+  const innerUserWhereClause = await getUserWhereClause(config);
+  if (innerUserWhereClause) {
+    whereClause.push(`repo_id IN (SELECT repo_id FROM community_openrank WHERE ${innerUserWhereClause})`);
+  }
   const timeRangeClause = getTimeRangeWhereClause(config);
   if (timeRangeClause) whereClause.push(timeRangeClause);
   const limit = (config.options?.limit == undefined) ? 30 : config.options.limit;

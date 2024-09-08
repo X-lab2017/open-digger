@@ -109,7 +109,7 @@ export const getRepoWhereClause = async (config: QueryConfig): Promise<string | 
     for (const p of config.idOrNames) {
       if (p.repoNames && p.repoNames.length > 0) {
         // convert repo name to id
-        const sql = `SELECT any(repo_id) AS id FROM events WHERE repo_name IN [${p.repoNames.map(n => `'${n}'`)}] AND platform='${p.platform}' GROUP BY repo_name`;
+        const sql = `SELECT any(repo_id) AS id FROM global_openrank WHERE repo_name IN [${p.repoNames.map(n => `'${n}'`)}] AND platform='${p.platform}' GROUP BY repo_name`;
         const repoIds = (await query<any>(sql, { format: 'JSONEachRow' })).map(r => r.id);
         repoWhereClauseArray.push(`(repo_id IN [${repoIds.join(',')}] AND platform='${p.platform}')`);
       }
@@ -118,7 +118,7 @@ export const getRepoWhereClause = async (config: QueryConfig): Promise<string | 
 
       if (p.orgNames && p.orgNames.length > 0) {
         // convert org name to id
-        const sql = `SELECT any(org_id) AS id FROM events WHERE org_login IN [${p.orgNames.map(n => `'${n}'`)}] AND platform='${p.platform}' GROUP BY org_login`;
+        const sql = `SELECT any(org_id) AS id FROM global_openrank WHERE org_login IN [${p.orgNames.map(n => `'${n}'`)}] AND platform='${p.platform}' GROUP BY org_login`;
         const orgIds = (await query<any>(sql, { format: 'JSONEachRow' })).map(r => r.id);
         repoWhereClauseArray.push(`(org_id IN [${orgIds.join(',')}] AND platform='${p.platform}')`);
       }
@@ -169,7 +169,7 @@ export const getUserWhereClause = async (config: QueryConfig, idCol: string = 'a
     for (const p of config.idOrNames) {
       if (p.userLogins && p.userLogins.length > 0) {
         // convert user login to id
-        const sql = `SELECT any(actor_id) AS id FROM events WHERE actor_login IN [${p.userLogins.map(n => `'${n}'`)}] AND platform='${p.platform}' GROUP BY actor_login`;
+        const sql = `SELECT any(actor_id) AS id FROM global_openrank WHERE actor_login IN [${p.userLogins.map(n => `'${n}'`)}] AND platform='${p.platform}' GROUP BY actor_login`;
         const userIds = (await query<any>(sql, { format: 'JSONEachRow' })).map(r => r.id);
         userWhereClauseArray.push(`(${idCol} IN [${userIds.join(',')}] AND platform='${p.platform}')`);
       }
