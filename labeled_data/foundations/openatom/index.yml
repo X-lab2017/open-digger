@@ -21,22 +21,28 @@ data:
     - openkona
     - carsmos
     - miniblink
+    - :companies/greatdb/greatsql
+    - :companies/tencent/opentenbase
+    - :companies/kylin_soft/openkylin
+    - :companies/deepin/linglong
+    - smartide
+    - opennjet
     - :companies/tencent/tkestack
+    - :companies/inspur/kwdb
     - :companies/alibaba/anolis
     - :companies/tencent/opencloudos
     - opendacs
-    - smartide
     - taro
-    - :companies/deepin/linglong
-    - opennjet
-    - :companies/greatdb/greatsql
     - easybaas
     - openv2x
-    - :companies/tencent/opentenbase
     - cloud_hpc
-    - zettastor
     - metatoc
+    - crowdos
     - dora_ssr
+    - :companies/huawei/kurator
+    - :companies/huawei/open_inula
+    - open_solon
+    - :companies/deepin/codeya_ide
   platforms:
     - name: GitHub
       type: Code Hosting

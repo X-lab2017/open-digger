@@ -9,6 +9,8 @@ data:
     - opengauss
     - openharmony
     - service_comb
+    - kurator
+    - open_inula
   platforms:
     - name: GitHub
       type: Code Hosting

@@ -1,0 +1,9 @@
+name: CrowdOS
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 735565548
+          name: crowdosNWPU/CrowdOS

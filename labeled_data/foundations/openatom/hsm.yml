@@ -1,9 +1,9 @@
-name: ZettaStor
+name: HSMConn
 type: Project
 data:
   platforms:
     - name: GitHub
       type: Code Hosting
       repos:
-        - id: 518297127
-          name: zettastor/dbs
+        - id: 678294986
+          name: hitsz-ids/hsmconn

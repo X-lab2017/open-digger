@@ -1,0 +1,9 @@
+name: Codeya IDE
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 660074778
+          name: linuxdeepin/deepin-unioncode
