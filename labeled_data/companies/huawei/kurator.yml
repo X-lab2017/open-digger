@@ -1,0 +1,9 @@
+name: Kurator
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 106531824
+          name: kurator-dev

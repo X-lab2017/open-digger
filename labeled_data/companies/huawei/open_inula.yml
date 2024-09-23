@@ -1,0 +1,9 @@
+name: OpenInula
+type: Project
+data:
+  platforms:
+    - name: Gitee
+      type: Code Hosting
+      orgs:
+        - id: 12142544
+          name: openInula

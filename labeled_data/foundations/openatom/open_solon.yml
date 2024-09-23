@@ -1,0 +1,9 @@
+name: OpenSolon
+type: Project
+data:
+  platforms:
+    - name: Gitee
+      type: Code Hosting
+      orgs:
+        - id: 13439344
+          name: opensolon
