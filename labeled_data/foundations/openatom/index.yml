@@ -23,7 +23,7 @@ data:
     - miniblink
     - :companies/greatdb/greatsql
     - :companies/tencent/opentenbase
-    - :companies/kylin_soft/openkylin
+    - :companies/openkylin/openkylin
     - :companies/deepin/linglong
     - smartide
     - opennjet
