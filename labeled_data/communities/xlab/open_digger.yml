@@ -7,3 +7,5 @@ data:
       repos:
         - id: 288431943
           name: X-lab2017/open-digger
+        - id: 395283937
+          name: X-lab2017/open-digger-website
