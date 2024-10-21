@@ -29,7 +29,7 @@ export const getRepoOpenrank = async (config: QueryConfig) => {
   if (repoWhereClause) whereClause.push(repoWhereClause);
   const timeRangeClause = getTimeRangeWhereClause(config);
   if (timeRangeClause) whereClause.push(timeRangeClause);
-  whereClause.push("type='Repo'");
+  whereClause.push("type='Repo' AND legacy=0");
 
   const sql = `
 SELECT
@@ -61,7 +61,7 @@ export const getUserOpenrank = async (config: QueryConfig) => {
   if (userWhereClause) whereClause.push(userWhereClause);
   const timeRangeClause = getTimeRangeWhereClause(config);
   if (timeRangeClause) whereClause.push(timeRangeClause);
-  whereClause.push("type='User'");
+  whereClause.push("type='User' AND legacy=0");
 
   const sql = `
 SELECT
