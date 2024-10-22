@@ -17,7 +17,7 @@ const task: Task = {
     const backgroundRententionFactor = 0.15;
     const openrankAttenuationFactor = 0.85;
     const openrankMinValue = 1;
-    const acitivityToOpenrank = activity => Math.min(1, activity / 88.17);  // 75% quantile of monthly activity
+    const acitivityToOpenrank = activity => 1 / (1 + Math.exp(0.10425 * (-activity + 44.08)));
 
     const createTable = async () => {
       const sql = `CREATE TABLE IF NOT EXISTS ${globalOpenrankTableName}
