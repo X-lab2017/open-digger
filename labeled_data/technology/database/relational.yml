@@ -21,6 +21,8 @@ data:
           name: CUBRID/cubrid
         - id: 60246359
           name: ClickHouse/ClickHouse
+        - id: 654870350
+          name: ClockworkLabs/SpacetimeDB
         - id: 129072319
           name: CovenantSQL/CovenantSQL
         - id: 151762200

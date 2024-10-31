@@ -121,6 +121,8 @@ data:
           name: fluree/db
         - id: 138411034
           name: genjidb/genji
+        - id: 852516379
+          name: goshops-com/StormiDB
         - id: 285669400
           name: graphikDB/graphik
         - id: 12050336

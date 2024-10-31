@@ -137,6 +137,8 @@ data:
           name: developit/histore
         - id: 80087836
           name: dgraph-io/badger
+        - id: 531220682
+          name: dicedb/dice
         - id: 437245741
           name: dragonflydb/dragonfly
         - id: 17224514
@@ -311,6 +313,8 @@ data:
           name: simerplaha/SwayDB
         - id: 276042304
           name: skytable/skytable
+        - id: 777912773
+          name: slatedb/slatedb
         - id: 49401416
           name: spacejam/sled
         - id: 462329984
@@ -341,6 +345,8 @@ data:
           name: tikv/tikv
         - id: 3114475
           name: tomp2p/TomP2P
+        - id: 828742634
+          name: tonbo-io/tonbo
         - id: 18800032
           name: tonsky/datascript
         - id: 223895357
