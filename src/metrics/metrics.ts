@@ -182,7 +182,7 @@ SELECT
 FROM
 (
   SELECT
-    time, id, platform, argMax(name, time) AS name,
+    time, id, argMax(name, time) AS name, ${(config.groupBy && config.groupBy !== 'org' && config.groupBy !== 'repo') ? '' : 'platform, '}
     groupArray(DISTINCT suffix) AS distinct_suffixes,
     arraySort(x -> -tupleElement(x, 2), arrayZip(distinct_suffixes, arrayMap(s -> length(arrayFilter(x -> x = s, groupArray(suffix))), distinct_suffixes))) AS suffixes
   FROM
