@@ -1,0 +1,9 @@
+name: Peter Cat
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 169796403
+          name: petercat-ai
