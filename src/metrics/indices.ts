@@ -225,11 +225,11 @@ FROM
             ${getGroupTimeClause(config, 'g.created_at')},
             g.platform AS platform,
             g.repo_id AS repo_id,
-            argMax(g.repo_name, time) AS repo_name,
-            argMax(g.org_id, time) AS org_id,
-            argMax(g.org_login, time) AS org_login,
+            argMax(g.repo_name, g.created_at) AS repo_name,
+            argMax(g.org_id, g.created_at) AS org_id,
+            argMax(g.org_login, g.created_at) AS org_login,
             c.actor_id AS actor_id,
-            argMax(c.actor_login, time) AS actor_login,
+            argMax(c.actor_login, c.created_at) AS actor_login,
             SUM(c.openrank * g.openrank / r.openrank) AS openrank
           FROM
             (SELECT * FROM community_openrank WHERE ${whereClause.join(' AND ')}) c,
