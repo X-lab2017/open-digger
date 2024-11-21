@@ -1,0 +1,63 @@
+name: kibana
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 7833168
+          name: elastic/kibana
+        - id: 44336783
+          name: elastic/kibana-phoenix-plugin
+        - id: 45282678
+          name: elastic/generator-kibana-plugin
+        - id: 51172531
+          name: elastic/kibana-executor-service
+        - id: 51407725
+          name: elastic/eslint-config-kibana
+        - id: 51687953
+          name: elastic/kibana-plugin-helpers
+        - id: 56797168
+          name: elastic/babel-preset-kibana
+        - id: 62349994
+          name: elastic/kibana-ui-framework
+        - id: 67556175
+          name: elastic/kibana-ubuntu-base
+        - id: 67572781
+          name: elastic/kibana-docker
+        - id: 90098222
+          name: elastic/eslint-import-resolver-kibana
+        - id: 91535668
+          name: elastic/template-kibana-plugin
+        - id: 113149974
+          name: elastic/kibana_sample_visualization
+        - id: 113150016
+          name: elastic/kibana_sample_plugin
+        - id: 188307548
+          name: elastic/kibana-visual-tests
+        - id: 189136947
+          name: elastic/kibana-code-analysis
+        - id: 304041695
+          name: elastic/kibana-load-testing
+        - id: 338163612
+          name: elastic/kibana-github-actions
+        - id: 348073649
+          name: elastic/kibana-release-notes
+        - id: 375817804
+          name: elastic/kibana-buildkite-library
+        - id: 476275019
+          name: elastic/kibana-capacity-test
+        - id: 485772241
+          name: elastic/kibana-k6-benchmarking
+        - id: 533679760
+          name: elastic/kibana_repo
+        - id: 539683108
+          name: elastic/kibana-yiyang
+        - id: 544974976
+          name: elastic/kibana-v1
+        - id: 560450577
+          name: elastic/saarika-kibana
+        - id: 650201599
+          name: elastic/kibana-custom-nodejs-builds
+        - id: 819938561
+          name: elastic/kibana-demo-data

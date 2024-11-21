@@ -1,0 +1,9 @@
+name: Paladium-Issue
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 413544564
+          name: Paladium-Developpement/Paladium-Issue

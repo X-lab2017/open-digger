@@ -1,0 +1,11 @@
+name: arkui_ace_engine
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 880134769
+          name: openharmony/arkui_ace_engine
+        - id: 880311506
+          name: openharmony/arkui_ace_engine_lite

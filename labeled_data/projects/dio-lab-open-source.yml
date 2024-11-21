@@ -1,0 +1,9 @@
+name: dio-lab-open-source
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 632909818
+          name: digitalinnovationone/dio-lab-open-source

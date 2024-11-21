@@ -1,0 +1,93 @@
+name: godot
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 15634981
+          name: godotengine/godot
+        - id: 33825948
+          name: godotengine/awesome-godot
+        - id: 47882383
+          name: godotengine/godot-docs
+        - id: 56387574
+          name: godotengine/godot-asset-library
+        - id: 58868713
+          name: godotengine/godot-tests
+        - id: 59507735
+          name: godotengine/godot-syntax-themes
+        - id: 60109865
+          name: godotengine/godot-design
+        - id: 60349380
+          name: godotengine/godot-demo-projects
+        - id: 76180369
+          name: godotengine/godot-vscode-plugin
+        - id: 83732863
+          name: godotengine/godot-cpp
+        - id: 83910633
+          name: godotengine/godot-headers
+        - id: 101092257
+          name: godotengine/godot-old-gsoc-ideas
+        - id: 102503979
+          name: godotengine/godot-website
+        - id: 119277877
+          name: godotengine/godot-blender-exporter
+        - id: 127148266
+          name: godotengine/godot-docs-l10n
+        - id: 180609575
+          name: godotengine/godot-proposals
+        - id: 181365437
+          name: godotengine/godot-3d-platformer-demo
+        - id: 186986904
+          name: godotengine/godot-git-plugin
+        - id: 195269962
+          name: godotengine/godot-mono-builds
+        - id: 218747350
+          name: godotengine/godot-monodevelop-addin
+        - id: 221241489
+          name: godotengine/godot-build-scripts
+        - id: 262587761
+          name: godotengine/godot-csharp-vscode
+        - id: 271998976
+          name: godotengine/godot-csharp-visualstudio
+        - id: 273735326
+          name: godotengine/godot-platform-haiku
+        - id: 314121133
+          name: godotengine/godot-3d-dodge-the-creeps
+        - id: 324001373
+          name: godotengine/godot-benchmarks
+        - id: 355938167
+          name: godotengine/godot-showreel-voting
+        - id: 398662294
+          name: godotengine/godot-team-reports
+        - id: 528128269
+          name: godotengine/godot-visual-script
+        - id: 553099575
+          name: godotengine/godot-benchmarks-results
+        - id: 592712009
+          name: godotengine/godot-editor-l10n
+        - id: 609630290
+          name: godotengine/godot-prs-by-file
+        - id: 620435505
+          name: godotengine/godot-commit-artifacts
+        - id: 620453293
+          name: godotengine/godot-interactive-changelog
+        - id: 632401216
+          name: godotengine/godot-docs-project-starters
+        - id: 644525008
+          name: godotengine/godot-question2answer
+        - id: 660724339
+          name: godotengine/godot-website-cover-generator
+        - id: 670974673
+          name: godotengine/godot-angle-static
+        - id: 675135246
+          name: godotengine/godot-cpp-template
+        - id: 688986521
+          name: godotengine/godot-builds
+        - id: 698169871
+          name: godotengine/godot-nir-static
+        - id: 719548883
+          name: godotengine/godot-docs-user-notes
+        - id: 764038483
+          name: godotengine/godot-social-links

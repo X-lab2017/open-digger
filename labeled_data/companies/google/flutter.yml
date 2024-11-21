@@ -1,0 +1,19 @@
+name: flutter
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 31792824
+          name: flutter/flutter
+        - id: 64172164
+          name: flutter/flutter-intellij
+        - id: 184624367
+          name: flutter/flutter.github.io
+        - id: 221809009
+          name: flutter/flutter_clock
+        - id: 254465398
+          name: flutter/flutter-github-scripts.dart
+        - id: 456970215
+          name: flutter/put-flutter-to-work

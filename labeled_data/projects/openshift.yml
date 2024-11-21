@@ -1,0 +1,31 @@
+name: openshift
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 21740844
+          name: openshift/openshift-docs
+        - id: 317570381
+          name: openshift/managed-openshift-docs
+        - id: 75224144
+          name: openshift/release
+        - id: 101090376
+          name: openshift/release-library
+        - id: 133557580
+          name: openshift/redhat-release-coreos
+        - id: 148814891
+          name: openshift/release-controller
+        - id: 165747371
+          name: openshift/ocp-release-operator-sdk
+        - id: 278195732
+          name: openshift/release-controller-config
+        - id: 626490330
+          name: openshift/release-tests
+        - id: 745384417
+          name: openshift/managed-release-bundle-osd
+        - id: 790889745
+          name: openshift/managed-release-bundle
+        - id: 873637989
+          name: openshift/cert-manager-operator-release

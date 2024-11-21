@@ -1,0 +1,651 @@
+name: vscode
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 41443539
+          name: microsoft/vscode-docs
+        - id: 41861768
+          name: microsoft/vscode-languageserver-node
+        - id: 41881900
+          name: microsoft/vscode
+        - id: 42534055
+          name: microsoft/vscode-textmate
+        - id: 42577966
+          name: microsoft/vscode-editorconfig
+        - id: 42926209
+          name: microsoft/vscode-vsce
+        - id: 43098622
+          name: microsoft/vscode-samples
+        - id: 43156818
+          name: microsoft/vscode-generator-code
+        - id: 43547253
+          name: microsoft/vscode-backspace
+        - id: 43582653
+          name: microsoft/vscode-MDTools
+        - id: 43805883
+          name: microsoft/vscode-mock-debug
+        - id: 43916263
+          name: microsoft/vscode-tslint
+        - id: 43924169
+          name: microsoft/vscode-extension-vscode
+        - id: 43982320
+          name: microsoft/vscode-wordcount
+        - id: 44242389
+          name: microsoft/vscode-comment
+        - id: 44264925
+          name: microsoft/vscode-go
+        - id: 44415469
+          name: microsoft/vscode-docker
+        - id: 44761301
+          name: microsoft/vscode-htmltagwrap
+        - id: 45036984
+          name: microsoft/vscode-eslint
+        - id: 45051496
+          name: microsoft/vscode-jshint
+        - id: 45086542
+          name: microsoft/vscode-jscs
+        - id: 45267221
+          name: microsoft/vscode-spell-check
+        - id: 45425758
+          name: microsoft/vscode-chrome-debug
+        - id: 45603512
+          name: microsoft/vscode-extension-samples
+        - id: 45709785
+          name: microsoft/vscode-LaTeX
+        - id: 45872307
+          name: microsoft/vscode-mono-debug
+        - id: 45975112
+          name: microsoft/vscode-node-debug
+        - id: 46009841
+          name: microsoft/vscode-loader
+        - id: 46010143
+          name: microsoft/vscode-themes
+        - id: 46047297
+          name: microsoft/vscode-filewatcher-windows
+        - id: 46352728
+          name: microsoft/vscode-npm-scripts
+        - id: 46578607
+          name: microsoft/vscode-htmlhint
+        - id: 47515815
+          name: microsoft/vscode-debugadapter-node
+        - id: 49288313
+          name: microsoft/vscode-cordova
+        - id: 50060429
+          name: microsoft/vscode-react-native
+        - id: 50916852
+          name: microsoft/vscode-nls
+        - id: 51181395
+          name: microsoft/vscode-extension-telemetry
+        - id: 51359984
+          name: microsoft/vscode-nls-dev
+        - id: 52871281
+          name: microsoft/vscode-resharper-keybindings
+        - id: 53333287
+          name: microsoft/azure-repos-vscode
+        - id: 53458126
+          name: microsoft/vscode-sublime-keybindings
+        - id: 53537573
+          name: microsoft/vscode-atom-keybindings
+        - id: 53992646
+          name: microsoft/vscode-tips-and-tricks
+        - id: 54073010
+          name: microsoft/vscode-ios-web-debug
+        - id: 54349228
+          name: microsoft/vscode-edge-debug
+        - id: 54602587
+          name: microsoft/vscode-react-sample
+        - id: 54800346
+          name: microsoft/vscode-cpptools
+        - id: 56088006
+          name: microsoft/vscode-chrome-debug-core
+        - id: 56405375
+          name: microsoft/vscode-cmake-tools
+        - id: 57129759
+          name: microsoft/vscode-smoketest-express
+        - id: 59167041
+          name: microsoft/vscode-wiki
+        - id: 60618850
+          name: microsoft/vscode-uri
+        - id: 61140006
+          name: microsoft/vscode-node-debug2
+        - id: 61788006
+          name: microsoft/vscode-css-languageservice
+        - id: 61871004
+          name: microsoft/vscode-json-languageservice
+        - id: 61973853
+          name: microsoft/vscode-mssql
+        - id: 63717575
+          name: microsoft/vscode-js-atom-grammar
+        - id: 68108024
+          name: microsoft/vscode-generator-code-javascript
+        - id: 68237072
+          name: microsoft/vscode-html-languageservice
+        - id: 71173513
+          name: microsoft/DevSkim-VSCode-Plugin
+        - id: 75643886
+          name: microsoft/vscode-azure-pack
+        - id: 75977142
+          name: microsoft/applicationinsights-vscode
+        - id: 77013141
+          name: microsoft/vscode-arduino
+        - id: 84497474
+          name: microsoft/vscode-azurecli
+        - id: 84582170
+          name: microsoft/vscode-mongodb
+        - id: 85122141
+          name: microsoft/vscode-SCMBuilders
+        - id: 87365657
+          name: microsoft/vscode-emmet-legacy
+        - id: 88973601
+          name: microsoft/AzureDatalakeToolsForVSCode
+        - id: 90312643
+          name: microsoft/vscode-recipes
+        - id: 91097281
+          name: microsoft/vscode-ts-tslint
+        - id: 94467999
+          name: microsoft/vscode-github-issues-prs
+        - id: 95047140
+          name: microsoft/vscode-emmet-helper
+        - id: 97177330
+          name: microsoft/vscode-azure-account
+        - id: 98935458
+          name: microsoft/vscode-azureappservice
+        - id: 99033869
+          name: microsoft/vscode-windows-process-tree
+        - id: 99273402
+          name: microsoft/vscode-JSON.tmLanguage
+        - id: 99665151
+          name: microsoft/vscode-azure-iot-toolkit
+        - id: 100298835
+          name: microsoft/vscode-cosmosdb
+        - id: 101380999
+          name: microsoft/vscode-azure-iot-edge
+        - id: 102584737
+          name: microsoft/vscode-java-debug
+        - id: 104114161
+          name: microsoft/vscode-tools-for-ai
+        - id: 104400765
+          name: microsoft/vscode-azurefunctions
+        - id: 104967329
+          name: microsoft/vscode-java-pack
+        - id: 106345172
+          name: microsoft/vscode-azurearmtools
+        - id: 106462765
+          name: microsoft/vscode-python
+        - id: 106758861
+          name: microsoft/vscode-azuretools
+        - id: 107585437
+          name: microsoft/vscode-azurestorage
+        - id: 109328484
+          name: microsoft/vscode-node-azure-pack
+        - id: 110522074
+          name: microsoft/vscode-java-test
+        - id: 112048738
+          name: microsoft/vscode-notepadplusplus-keybindings
+        - id: 113935422
+          name: microsoft/vscode-iot-workbench
+        - id: 114729832
+          name: microsoft/vscode-spring-initializr
+        - id: 116921700
+          name: microsoft/vscode-maven
+        - id: 117901685
+          name: microsoft/vscode-edge-debug2
+        - id: 118039402
+          name: microsoft/vscode-anaconda-extension-pack
+        - id: 120688323
+          name: microsoft/vscode-markdown-tm-grammar
+        - id: 121563083
+          name: microsoft/vscode-loc
+        - id: 122259773
+          name: microsoft/sarif-vscode-extension
+        - id: 123037936
+          name: microsoft/vscode-docs-authoring
+        - id: 123197985
+          name: microsoft/vscode-vs-keybindings
+        - id: 124776322
+          name: microsoft/vscode-lombok
+        - id: 125451865
+          name: microsoft/vscode-appcenter
+        - id: 125879086
+          name: microsoft/vscode-languageserver-protocol-foldingprovider
+        - id: 125922408
+          name: microsoft/vscode-azureeventgrid
+        - id: 127062907
+          name: microsoft/vscode-postgresql
+        - id: 129053101
+          name: microsoft/vscode-java-dependency
+        - id: 130179172
+          name: microsoft/vscode-spring-boot-dashboard
+        - id: 133398807
+          name: microsoft/python-sample-vscode-flask-tutorial
+        - id: 133980178
+          name: microsoft/vscode-cpptools-api
+        - id: 134777298
+          name: microsoft/vscode-pull-request-github
+        - id: 137111474
+          name: microsoft/vscode-service-fabric-reliable-services
+        - id: 138358306
+          name: microsoft/vscode-azurelogicapps
+        - id: 138770090
+          name: microsoft/vscode-tas-express
+        - id: 138770244
+          name: microsoft/vscode-tas-angular
+        - id: 138770319
+          name: microsoft/vscode-tas-vue
+        - id: 143053413
+          name: microsoft/azure-pipelines-vscode
+        - id: 148390706
+          name: microsoft/python-sample-vscode-django-tutorial
+        - id: 148793249
+          name: microsoft/vscode-lsif-extension
+        - id: 149722805
+          name: microsoft/vscode-linux-build-agent
+        - id: 153170084
+          name: microsoft/vscode-node-sqlite3
+        - id: 153794222
+          name: microsoft/vscode-references-view
+        - id: 153842737
+          name: microsoft/vscode-typescript-tslint-plugin
+        - id: 154366301
+          name: microsoft/vscode-proxy-agent
+        - id: 156217558
+          name: microsoft/vscode-dev-containers
+        - id: 156658475
+          name: microsoft/AzureStreamAnalyticsInVSCode
+        - id: 156812482
+          name: microsoft/vscode-asa
+        - id: 157266636
+          name: microsoft/vscode-mezzurite
+        - id: 160312908
+          name: microsoft/vscode-azure-iot-tools
+        - id: 163997855
+          name: microsoft/vscode-octicons-font
+        - id: 171708897
+          name: microsoft/vscode-windows-registry
+        - id: 173281561
+          name: microsoft/PSRule-vscode
+        - id: 173839081
+          name: microsoft/vscode-docs-archive
+        - id: 175666043
+          name: microsoft/vscode-edge-devtools
+        - id: 175678244
+          name: microsoft/vscode-test
+        - id: 176174334
+          name: microsoft/azure-boards-vscode
+        - id: 176839491
+          name: microsoft/vscode-windows-ca-certs
+        - id: 177839194
+          name: microsoft/vscode-remote-release
+        - id: 181531364
+          name: microsoft/vscode-powerquery
+        - id: 181778131
+          name: microsoft/vscode-remote-try-python
+        - id: 181801999
+          name: microsoft/vscode-remote-try-node
+        - id: 181804518
+          name: microsoft/vscode-remote-try-go
+        - id: 181806100
+          name: microsoft/vscode-remote-try-java
+        - id: 182343060
+          name: microsoft/vscode-remote-try-dotnet
+        - id: 182420419
+          name: microsoft/vscode-remote-try-php
+        - id: 182420579
+          name: microsoft/vscode-remote-try-cpp
+        - id: 182420765
+          name: microsoft/vscode-remote-try-rust
+        - id: 186917799
+          name: microsoft/vscode-python-devicesimulator
+        - id: 188089633
+          name: microsoft/vscode-dts
+        - id: 189296901
+          name: microsoft/vscode-apimanagement
+        - id: 189644853
+          name: microsoft/vscode-telemetry-extractor
+        - id: 190058692
+          name: microsoft/vscode-textbuffer
+        - id: 191244199
+          name: microsoft/vscode-typescript-next
+        - id: 191458602
+          name: microsoft/vscode-makefile-tools
+        - id: 194725380
+          name: microsoft/vscode-hydrate
+        - id: 197294368
+          name: microsoft/vscode-ripgrep
+        - id: 198896556
+          name: microsoft/vscode-js-debug
+        - id: 200272683
+          name: microsoft/vscode-icons
+        - id: 200445500
+          name: microsoft/vscode-dtdl
+        - id: 201959896
+          name: microsoft/vscode-azurevirtualmachines
+        - id: 206362392
+          name: microsoft/vscode-custom-data
+        - id: 215193343
+          name: microsoft/vscode-codicons
+        - id: 216314492
+          name: microsoft/vscode-gradle
+        - id: 216991775
+          name: microsoft/vscode-deploy-azure
+        - id: 217421010
+          name: microsoft/vscodespaces-quickstart
+        - id: 219606734
+          name: microsoft/vscode-pwa-analyzer
+        - id: 220942316
+          name: microsoft/vscode-minimist
+        - id: 223273331
+          name: microsoft/vscode-figma-toolkit
+        - id: 231047472
+          name: microsoft/openpaivscode
+        - id: 234143247
+          name: microsoft/vscode-dapr
+        - id: 238360694
+          name: microsoft/vscode-azureresourcegroups
+        - id: 239620717
+          name: microsoft/vscode-azureserverlesspack
+        - id: 239656207
+          name: microsoft/vscode-cdp-proxy
+        - id: 241436517
+          name: microsoft/vscode-js-debug-browsers
+        - id: 241962004
+          name: microsoft/vscode-js-debug-companion
+        - id: 243123393
+          name: microsoft/vscode-edge-devtools-network
+        - id: 246882057
+          name: microsoft/vscode-github-issue-notebooks
+        - id: 246952393
+          name: microsoft/vscode-notebook-testdata
+        - id: 247789094
+          name: microsoft/vscode-cosmosdbgraph
+        - id: 247824415
+          name: microsoft/vscode-js-profile-visualizer
+        - id: 251419358
+          name: microsoft/vscode-azurestaticwebapps
+        - id: 253650807
+          name: microsoft/vscode-github-triage-actions
+        - id: 257544810
+          name: microsoft/vscode-oniguruma
+        - id: 258348158
+          name: microsoft/vscode-notebook-renderer-starter
+        - id: 262853067
+          name: microsoft/vscode-notebook-error-overlay
+        - id: 263175378
+          name: microsoft/vscode-hexeditor
+        - id: 263776015
+          name: microsoft/vscode-simple-jupyter-notebook
+        - id: 264025789
+          name: microsoft/vscode-nodebook
+        - id: 264146603
+          name: microsoft/vscode-jvm-tools
+        - id: 267540481
+          name: microsoft/vscode-iconv-lite-umd
+        - id: 268548623
+          name: microsoft/vscode-docker-extensibility
+        - id: 269428982
+          name: microsoft/vscode-notebook-renderers
+        - id: 270945657
+          name: microsoft/vscode-github-triage-extension
+        - id: 272469683
+          name: microsoft/vscode-webview-ui-toolkit
+        - id: 272787015
+          name: microsoft/vscode-markdown-notebook
+        - id: 275263246
+          name: microsoft/vscode-gather
+        - id: 275649733
+          name: microsoft/vscode-file-downloader
+        - id: 275650914
+          name: microsoft/vscode-file-downloader-api
+        - id: 276205204
+          name: microsoft/vscode-azurecache
+        - id: 276269455
+          name: microsoft/vscode-java-installer
+        - id: 278698896
+          name: microsoft/vscode-course-sample
+        - id: 281496269
+          name: microsoft/vscode-azurehealthcareapis-tools
+        - id: 288117551
+          name: microsoft/vscode-web-playground
+        - id: 290624053
+          name: microsoft/vscode-azurecognitivesearch
+        - id: 291778008
+          name: microsoft/vscode-tye
+        - id: 294546561
+          name: microsoft/vscode-jupyter
+        - id: 309836236
+          name: microsoft/powerplatform-vscode
+        - id: 315471622
+          name: microsoft/vscode-brackets-keybindings
+        - id: 315484179
+          name: microsoft/vscode-brackets-pack
+        - id: 321231021
+          name: microsoft/vscode-azurespringcloud
+        - id: 322441589
+          name: microsoft/vscode-selfhost-test-provider
+        - id: 328732161
+          name: microsoft/vscode-remote-wsl-recommender
+        - id: 329940788
+          name: microsoft/vscode-grammar-updater
+        - id: 348992873
+          name: microsoft/vscode-team
+        - id: 353149152
+          name: microsoft/vscode-markdown-it-katex
+        - id: 359912393
+          name: microsoft/vscode-webview-ui-toolkit-samples
+        - id: 359980491
+          name: microsoft/vscode-test-adapter-converter
+        - id: 369659483
+          name: microsoft/vscode-livepreview
+        - id: 371521679
+          name: microsoft/vscode-theme-color-consumer
+        - id: 374785152
+          name: microsoft/vscode-loc-deprecated
+        - id: 375148364
+          name: microsoft/vscode-remote-repositories-github
+        - id: 375170812
+          name: microsoft/vscode-cdp
+        - id: 380021016
+          name: microsoft/playwright-vscode
+        - id: 382268183
+          name: microsoft/vscode-smoketest-check
+        - id: 384208762
+          name: microsoft/vscode-jupyter-lsp-middleware
+        - id: 384406546
+          name: microsoft/vscode-anycode
+        - id: 385679463
+          name: microsoft/vscode-languagedetection
+        - id: 387833582
+          name: microsoft/vscode-test-web
+        - id: 388745837
+          name: microsoft/vscode-platform-specific-sample
+        - id: 390611966
+          name: microsoft/vscode-service-status
+        - id: 395793711
+          name: microsoft/vscode-winsta11er
+        - id: 397361546
+          name: microsoft/vscode-jupyter-keymap
+        - id: 402531405
+          name: microsoft/vscode-azurecontainerapps
+        - id: 412414842
+          name: microsoft/PSDocs-vscode
+        - id: 433579175
+          name: microsoft/vscode-powerquery-sdk
+        - id: 438208251
+          name: microsoft/TypeScript-VSCode-Extensions
+        - id: 449852629
+          name: microsoft/vscode-onedrive-browser
+        - id: 454211139
+          name: microsoft/vscodetestcover
+        - id: 458344437
+          name: microsoft/vscode-python-installer
+        - id: 461398664
+          name: microsoft/vscode-win32-app-container-tokens
+        - id: 462427795
+          name: microsoft/deoptexplorer-vscode
+        - id: 462852718
+          name: microsoft/vscode-embedded-tools
+        - id: 465800148
+          name: microsoft/powerplatform-vscode-lab
+        - id: 467646821
+          name: microsoft/vscode-jupyter-powertoys
+        - id: 468071877
+          name: microsoft/vscode-pylint
+        - id: 469925077
+          name: microsoft/vscode-jupyter-ipywidgets
+        - id: 478441683
+          name: microsoft/vscode-black-formatter
+        - id: 479474102
+          name: microsoft/vscode-isort
+        - id: 490146429
+          name: microsoft/vscode-policy-watcher
+        - id: 491944396
+          name: microsoft/vscode-serial-monitor
+        - id: 492266547
+          name: microsoft/vscode-wasm
+        - id: 492787896
+          name: microsoft/vscode-azureAutomation
+        - id: 494099569
+          name: microsoft/vscode-discussions
+        - id: 496257908
+          name: microsoft/vscode-explorer-command
+        - id: 496413082
+          name: microsoft/vscode-python-tools-extension-template
+        - id: 506582844
+          name: microsoft/vscode-theme-tester
+        - id: 512944461
+          name: microsoft/vscode-markdown-languageservice
+        - id: 523449793
+          name: microsoft/vscode-russh
+        - id: 523540030
+          name: microsoft/vscode-flake8
+        - id: 526276034
+          name: microsoft/vscode-l10n
+        - id: 527363013
+          name: microsoft/vscode-azure-functions-remote-web-extension
+        - id: 533434769
+          name: microsoft/vscode-autopep8
+        - id: 533506696
+          name: microsoft/vscode-figma-icons
+        - id: 535842511
+          name: microsoft/vscode-extension-recommender
+        - id: 537081491
+          name: microsoft/vscode-python-web-wasm
+        - id: 539168746
+          name: microsoft/vscode-jupyter-cell-tags
+        - id: 539179357
+          name: microsoft/vscode-jupyter-slideshow
+        - id: 539888650
+          name: microsoft/vscode-remote-try-sqlserver
+        - id: 543338343
+          name: microsoft/vscode-dev-chrome-launcher
+        - id: 551136810
+          name: microsoft/vscode-secret-service-rs
+        - id: 553843496
+          name: microsoft/vscode-makecode
+        - id: 554981532
+          name: microsoft/vscode-openssl-prebuilt
+        - id: 556991756
+          name: microsoft/vscode-cmake-tools-api
+        - id: 586920416
+          name: microsoft/vscode-perf
+        - id: 587512129
+          name: microsoft/vscode-data-wrangler
+        - id: 587869182
+          name: microsoft/vscode-dotnettools
+        - id: 588558936
+          name: microsoft/vscode-css
+        - id: 595771698
+          name: microsoft/vscode-perf-bot
+        - id: 599787065
+          name: microsoft/vscode-tmdl
+        - id: 611938862
+          name: microsoft/vscode-zeromq
+        - id: 615045081
+          name: microsoft/vscode-python-debugger
+        - id: 615062592
+          name: microsoft/vscode-mypy
+        - id: 629635341
+          name: microsoft/vscode-copilot-release
+        - id: 630311688
+          name: microsoft/vscode-gulp-electron
+        - id: 632345474
+          name: microsoft/scopestudio-vscode
+        - id: 635747963
+          name: microsoft/vscode-stac
+        - id: 638737778
+          name: microsoft/SynapseVSCode
+        - id: 656569329
+          name: microsoft/vscode-bisect
+        - id: 659256426
+          name: microsoft/vscode-essentials
+        - id: 681305853
+          name: microsoft/vscode-python-ds-extension-pack
+        - id: 683124637
+          name: microsoft/vscode-ts-package-manager
+        - id: 684821592
+          name: microsoft/vscode-azurearcenabledmachines
+        - id: 685104997
+          name: microsoft/vscode-diagnostic-tools
+        - id: 689879722
+          name: microsoft/vscode-jupyter-hub
+        - id: 691316895
+          name: microsoft/vscode-dwarf-debugging
+        - id: 692860044
+          name: microsoft/python-sample-vscode-fastapi-tutorial
+        - id: 693785330
+          name: microsoft/vscode-dwarf-debugging-ext
+        - id: 702634769
+          name: microsoft/vscode-test-cli
+        - id: 702784936
+          name: microsoft/vscode-tensorboard
+        - id: 703212666
+          name: microsoft/vscode-extension-test-runner
+        - id: 709053917
+          name: microsoft/vscode-v8-heap-tools
+        - id: 718245704
+          name: microsoft/vscode-azureapicenter
+        - id: 729043504
+          name: microsoft/vscode-ms-entra
+        - id: 729302588
+          name: microsoft/vscode-ai-toolkit
+        - id: 761434943
+          name: microsoft/mccf-vscode-extension
+        - id: 767326310
+          name: microsoft/vscode-remote-try-dab
+        - id: 770752521
+          name: microsoft/vscode-remote-file-sync
+        - id: 775710959
+          name: microsoft/vscode-prompt-tsx
+        - id: 789007136
+          name: microsoft/vscode-debug-value-editor
+        - id: 790429430
+          name: microsoft/vscode-deviceid
+        - id: 794747267
+          name: microsoft/vscode-markdown-languageserver
+        - id: 797415897
+          name: microsoft/vscode-learncloud
+        - id: 798867319
+          name: microsoft/vscode-python-templates
+        - id: 817681623
+          name: microsoft/vscode-tree-sitter-wasm
+        - id: 821451329
+          name: microsoft/vscode-ts-file-path-support
+        - id: 830390919
+          name: microsoft/verus-copilot-vscode
+        - id: 858866012
+          name: microsoft/microsoft-fabric-vscode-extension
+        - id: 868820754
+          name: microsoft/vscode-commander
+        - id: 869081269
+          name: microsoft/vscode-copilot-vision
+        - id: 869123104
+          name: microsoft/vscode-websearchforcopilot
+        - id: 869170223
+          name: microsoft/vscode-data-analysis-for-copilot
+        - id: 869228888
+          name: microsoft/vscode-mermAId
+        - id: 874772031
+          name: microsoft/learn-declarative-agent-vscode

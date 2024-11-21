@@ -1,0 +1,19 @@
+name: odoo
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 19745004
+          name: odoo/odoo
+        - id: 20027630
+          name: odoo/odoodays-2014
+        - id: 20168931
+          name: odoo/odoo-extra
+        - id: 114105191
+          name: odoo/OdooLocust
+        - id: 122975814
+          name: odoo/odoo-client-lib
+        - id: 605624319
+          name: odoo/odoo-ls

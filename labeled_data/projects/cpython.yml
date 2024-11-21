@@ -1,0 +1,15 @@
+name: cpython
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 81598961
+          name: python/cpython
+        - id: 92079817
+          name: python/cpython-source-deps
+        - id: 92080048
+          name: python/cpython-bin-deps
+        - id: 861901369
+          name: python/cpython-devcontainers

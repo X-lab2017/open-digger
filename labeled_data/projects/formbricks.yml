@@ -1,0 +1,9 @@
+name: formbricks
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 500289888
+          name: formbricks/formbricks

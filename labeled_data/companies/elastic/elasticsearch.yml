@@ -1,0 +1,169 @@
+name: elasticsearch
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 507775
+          name: elastic/elasticsearch
+        - id: 749657
+          name: elastic/elasticsearch-servicewrapper
+        - id: 942613
+          name: elastic/elasticsearch-net
+        - id: 2915539
+          name: elastic/elasticsearch-transport-thrift
+        - id: 2915699
+          name: elastic/elasticsearch-transport-memcached
+        - id: 2915840
+          name: elastic/elasticsearch-transport-wares
+        - id: 2916041
+          name: elastic/elasticsearch-analysis-icu
+        - id: 2916197
+          name: elastic/elasticsearch-mapper-attachments
+        - id: 2916530
+          name: elastic/elasticsearch-hdfs
+        - id: 2916712
+          name: elastic/elasticsearch-cloud-aws
+        - id: 2916813
+          name: elastic/elasticsearch-river-couchdb
+        - id: 2916880
+          name: elastic/elasticsearch-river-rabbitmq
+        - id: 2917150
+          name: elastic/elasticsearch-river-twitter
+        - id: 2917268
+          name: elastic/elasticsearch-river-wikipedia
+        - id: 2917433
+          name: elastic/elasticsearch-lang-javascript
+        - id: 2917657
+          name: elastic/elasticsearch-lang-python
+        - id: 2918821
+          name: elastic/elasticsearch-lang-groovy
+        - id: 3068010
+          name: elastic/elasticsearch-analysis-smartcn
+        - id: 3126640
+          name: elastic/elasticsearch-analysis-phonetic
+        - id: 3217823
+          name: elastic/elasticsearch-analysis-stempel
+        - id: 4181853
+          name: elastic/elasticsearch-analysis-kuromoji
+        - id: 7086355
+          name: elastic/elasticsearch-lang-mvel
+        - id: 8710734
+          name: elastic/elasticsearch-hadoop
+        - id: 9174191
+          name: elastic/elasticsearch-cloud-azure
+        - id: 9801644
+          name: elastic/elasticsearch-py
+        - id: 9826184
+          name: elastic/elasticsearch-php
+        - id: 9831101
+          name: elastic/elasticsearch-ruby
+        - id: 10854028
+          name: elastic/elasticsearch-js
+        - id: 10866197
+          name: elastic/elasticsearch-perl
+        - id: 11019020
+          name: elastic/elasticsearch-cloud-gce
+        - id: 11826393
+          name: elastic/elasticsearch-metrics-reporter-java
+        - id: 13275181
+          name: elastic/elasticsearch-perl-compat
+        - id: 14238949
+          name: elastic/elasticsearch-rails
+        - id: 14845405
+          name: elastic/elasticsearch-definitive-guide
+        - id: 14881797
+          name: elastic/bower-elasticsearch-js
+        - id: 15974918
+          name: elastic/elasticsearch-groovy
+        - id: 17446726
+          name: elastic/elasticsearch-dsl-py
+        - id: 22640732
+          name: elastic/elasticsearch-plugins-script
+        - id: 27923028
+          name: elastic/elasticsearch-parent
+        - id: 33750426
+          name: elastic/elasticsearch-net-example
+        - id: 34840276
+          name: elastic/ansible-elasticsearch
+        - id: 34950203
+          name: elastic/elasticsearch-watcher-py
+        - id: 35443148
+          name: elastic/elasticsearch-migration
+        - id: 35526737
+          name: elastic/elasticsearch-watcher-js
+        - id: 35626932
+          name: elastic/elasticsearch-watcher-php
+        - id: 36472387
+          name: elastic/elasticsearch-watcher-net
+        - id: 49782386
+          name: elastic/ansible-elasticsearch-example
+        - id: 52318322
+          name: elastic/elasticsearch-specification
+        - id: 52756099
+          name: elastic/chocolatey-elasticsearch
+        - id: 53985669
+          name: elastic/elasticsearch-py-async
+        - id: 62838449
+          name: elastic/elasticsearch-x-pack-php
+        - id: 63099988
+          name: elastic/elasticsearch-x-pack-ruby
+        - id: 63261415
+          name: elastic/elasticsearch-x-pack-py
+        - id: 65972975
+          name: elastic/elasticsearch-docker
+        - id: 66554335
+          name: elastic/elasticsearch-alpine-base
+        - id: 68731208
+          name: elastic/elasticsearch-formal-models
+        - id: 86367047
+          name: elastic/go-elasticsearch
+        - id: 99665435
+          name: elastic/elasticsearch-net-abstractions
+        - id: 115740402
+          name: elastic/elasticsearch-sql-odbc
+        - id: 175390871
+          name: elastic/elasticsearch-js-legacy
+        - id: 192310039
+          name: elastic/elasticsearch-rs
+        - id: 246779906
+          name: elastic/elasticsearch-eland-docs
+        - id: 254338010
+          name: elastic/elasticsearch-js-mock
+        - id: 352531597
+          name: elastic/elasticsearch-k8s-metrics-adapter
+        - id: 365244061
+          name: elastic/elasticsearch-java
+        - id: 404654514
+          name: elastic/elasticsearch-php-examples
+        - id: 446442724
+          name: elastic/elasticsearch-dsl-ruby
+        - id: 485689598
+          name: elastic/xk6-output-elasticsearch
+        - id: 627023065
+          name: elastic/elasticsearch-serverless-ruby
+        - id: 638968833
+          name: elastic/elasticsearch-serverless-php
+        - id: 639574539
+          name: elastic/elasticsearch-serverless-js
+        - id: 641257513
+          name: elastic/elasticsearch-chatgpt-php
+        - id: 642095954
+          name: elastic/blog-langchain-elasticsearch
+        - id: 648288401
+          name: elastic/elasticsearch-serverless-python
+        - id: 653773074
+          name: elastic/elasticsearch-labs
+        - id: 660214416
+          name: elastic/elasticsearch-serverless-go
+        - id: 669926526
+          name: elastic/elasticsearch-opensearch-benchmark
+        - id: 674199822
+          name: elastic/elasticsearch-clients-tests
+        - id: 694599777
+          name: elastic/elasticsearch-arduino
+        - id: 749900430
+          name: elastic/elasticsearch-cr
+        - id: 797781207
+          name: elastic/elasticsearch-opensearch-vector-performance

@@ -1,0 +1,11 @@
+name: winget-pkgs
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 197275551
+          name: microsoft/winget-pkgs
+        - id: 322430757
+          name: microsoft/winget-pkgs-submission-test

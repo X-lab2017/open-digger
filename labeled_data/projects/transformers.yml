@@ -1,0 +1,29 @@
+name: transformers
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 155220641
+          name: huggingface/transformers
+        - id: 194104216
+          name: huggingface/swift-coreml-transformers
+        - id: 221548664
+          name: huggingface/tflite-android-transformers
+        - id: 530638348
+          name: huggingface/transformers_bloom_parallel
+        - id: 536266762
+          name: huggingface/transformers-bloom-inference
+        - id: 601161044
+          name: huggingface/transformers.js
+        - id: 607667587
+          name: huggingface/audio-transformers-course
+        - id: 639378200
+          name: huggingface/swift-transformers
+        - id: 693550756
+          name: huggingface/sharp-transformers
+        - id: 841397199
+          name: huggingface/transformers.js-examples
+        - id: 866028077
+          name: huggingface/transformers_debug

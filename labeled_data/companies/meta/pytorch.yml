@@ -1,0 +1,17 @@
+name: pytorch
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 65600975
+          name: pytorch/pytorch
+        - id: 85707614
+          name: pytorch/pytorch.github.io
+        - id: 149312823
+          name: pytorch/pytorch_sphinx_theme
+        - id: 221006123
+          name: pytorch/pytorch-ci-dockerfiles
+        - id: 275254872
+          name: pytorch/pytorch-integration-testing

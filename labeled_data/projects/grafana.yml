@@ -1,0 +1,191 @@
+name: grafana
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 15111821
+          name: grafana/grafana
+        - id: 17805843
+          name: grafana/grafana-docker-dev-env
+        - id: 19338739
+          name: grafana/ansible-grafana
+        - id: 19341190
+          name: grafana/puppet-grafana
+        - id: 27180382
+          name: grafana/grafana-docker
+        - id: 35092819
+          name: grafana/grafana-zabbix
+        - id: 42099787
+          name: grafana/grafana-api-golang-client
+        - id: 51432865
+          name: grafana/grafana-plugin-repository
+        - id: 56870981
+          name: grafana/homebrew-grafana
+        - id: 93446086
+          name: grafana/terraform-provider-grafana
+        - id: 101968856
+          name: grafana/grafana-sdk-mocks
+        - id: 117738491
+          name: grafana/grafana-plugin-model
+        - id: 122311157
+          name: grafana/grafana-build-container
+        - id: 133923497
+          name: grafana/grafana-image-renderer
+        - id: 137762435
+          name: grafana/grafana-polystat-panel
+        - id: 145740541
+          name: grafana/grafana-sensu-app
+        - id: 167388333
+          name: grafana/grafana-operator
+        - id: 171189294
+          name: grafana/grafana-oss-msi-generator
+        - id: 184430982
+          name: grafana/grafana-kiosk
+        - id: 196278114
+          name: grafana/grafana-starter-panel
+        - id: 208231618
+          name: grafana/grafana-starter-datasource
+        - id: 210384452
+          name: grafana/grafana-plugin-sdk-go
+        - id: 232415715
+          name: grafana/grafana-starter-app
+        - id: 232745286
+          name: grafana/eslint-config-grafana
+        - id: 232746046
+          name: grafana/tsconfig-grafana
+        - id: 258497285
+          name: grafana/grafana-starter-datasource-backend
+        - id: 264022274
+          name: grafana/grafana-plugin-sdk-python
+        - id: 264939182
+          name: grafana/grafana-plugin-examples
+        - id: 272698801
+          name: grafana/grafana-treemap-panel
+        - id: 273295751
+          name: grafana/drone-grafana-docker
+        - id: 292757956
+          name: grafana/grafana-infinity-datasource
+        - id: 297466190
+          name: grafana/grafana-json-datasource
+        - id: 298650712
+          name: grafana/k6-cloud-grafana-datasource
+        - id: 301934163
+          name: grafana/grafana-github-actions
+        - id: 306092482
+          name: grafana/grafana-aws-sdk
+        - id: 315962827
+          name: grafana/grafana-csv-datasource
+        - id: 319278700
+          name: grafana/open-distro-for-elasticsearch-grafana-datasource
+        - id: 344561018
+          name: grafana/grafana-plugin-sdk-typescript
+        - id: 350623206
+          name: grafana/grafana-live-sdk
+        - id: 352200578
+          name: grafana/grafana-plugin-sdk-rust
+        - id: 371632452
+          name: grafana/grafana-azure-sdk-go
+        - id: 381699642
+          name: grafana/grafana-guidedtour-panel
+        - id: 383840106
+          name: grafana/grafana-azure-sdk-react
+        - id: 385271819
+          name: grafana/example-k6-to-grafana-cloud
+        - id: 413407007
+          name: grafana/grafana-google-sdk-go
+        - id: 424576259
+          name: grafana/grafana-aws-sdk-react
+        - id: 431081610
+          name: grafana/grafana-experimental
+        - id: 433201820
+          name: grafana/grafana-iot-twinmaker-app
+        - id: 437159373
+          name: grafana/grafana-kafka-example
+        - id: 438366638
+          name: grafana/grafana-cloud-log-forwarder-operator
+        - id: 438739232
+          name: grafana/grafana-google-sdk-react
+        - id: 439042882
+          name: grafana/grafana-k6-app-plugin-feedback
+        - id: 488311721
+          name: grafana/grafana-community-support-squad
+        - id: 514698116
+          name: grafana/grafana-by-example-clickhouse
+        - id: 517739660
+          name: grafana/grafana-iframe-oauth-sample
+        - id: 519979115
+          name: grafana/grafana-ansible-collection
+        - id: 520682586
+          name: grafana/grafana-by-example-remote-write
+        - id: 528109519
+          name: grafana/grafana-by-example
+        - id: 539122478
+          name: grafana/grafana-github-actions-go
+        - id: 563105268
+          name: grafana/grafana-async-query-data-js
+        - id: 569074244
+          name: grafana/crossplane-provider-grafana
+        - id: 607259324
+          name: grafana/grafana-build
+        - id: 612266006
+          name: grafana/grafana-vs-code-extension
+        - id: 616956045
+          name: grafana/grafana-opentelemetry-starter
+        - id: 639603769
+          name: grafana/grafana-opentelemetry-java
+        - id: 646799539
+          name: grafana/grafana-ci-otel-collector
+        - id: 647330999
+          name: grafana/grafana-app-sdk
+        - id: 649978765
+          name: grafana/grafana-llm-app
+        - id: 650260810
+          name: grafana/grafana-llmexamples-app
+        - id: 665757753
+          name: grafana/grafana-apiserver
+        - id: 678410701
+          name: grafana/grafana-openapi-client-go
+        - id: 682239291
+          name: grafana/grafana-openai-monitoring
+        - id: 682508918
+          name: grafana/grafana-opentelemetry-dotnet
+        - id: 685071504
+          name: grafana/grafana-amazonprometheus-datasource
+        - id: 724663859
+          name: grafana/grafana-foundation-sdk
+        - id: 724682685
+          name: grafana/opentofu-grafana-example
+        - id: 727433289
+          name: grafana/grafana-build-tools
+        - id: 727465949
+          name: grafana/jeffs-grafana-app
+        - id: 727938501
+          name: grafana/grafana-known-issues
+        - id: 738234273
+          name: grafana/backstage-plugin-grafana-catalog
+        - id: 742089212
+          name: grafana/terraform-provider-grafana-adaptive-metrics
+        - id: 745156436
+          name: grafana/grafana-com-public-clients
+        - id: 762386925
+          name: grafana/grafana-russtestplugin-app
+        - id: 765207079
+          name: grafana/grafana-docbooks-app
+        - id: 768731953
+          name: grafana/grafana-scenessubtabs-scenesapp
+        - id: 781516160
+          name: grafana/Grafana_Status_panel
+        - id: 784675236
+          name: grafana/grafana-aio11y-app
+        - id: 799970800
+          name: grafana/grafana-zabbix-libsonnet
+        - id: 806272553
+          name: grafana/grafana-resources-exporter-plugin
+        - id: 814181189
+          name: grafana/grafana-cloud-migration-snapshot
+        - id: 826879527
+          name: grafana/grafana-team-terraform-generator
+        - id: 855734458
+          name: grafana/grafana-crossplane-libsonnet

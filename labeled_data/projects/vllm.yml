@@ -1,0 +1,15 @@
+name: vllm
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 599547518
+          name: vllm-project/vllm
+        - id: 655986185
+          name: vllm-project/vllm-project.github.io
+        - id: 656765454
+          name: vllm-project/vllm-blog-source
+        - id: 781038958
+          name: vllm-project/vllm-nccl

@@ -1,0 +1,27 @@
+name: zephyr
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 59771425
+          name: zephyrproject-rtos/zephyr
+        - id: 61154171
+          name: zephyrproject-rtos/meta-zephyr-sdk
+        - id: 89432056
+          name: zephyrproject-rtos/zephyr-testing
+        - id: 269692032
+          name: zephyrproject-rtos/ci-zephyr-buildkite
+        - id: 534584782
+          name: zephyrproject-rtos/oss-eu-2022-zephyr-app
+        - id: 742012509
+          name: zephyrproject-rtos/action-zephyr-setup
+        - id: 746822245
+          name: zephyrproject-rtos/jlink-zephyr
+        - id: 777194288
+          name: zephyrproject-rtos/zephyr-merge-list
+        - id: 801549305
+          name: zephyrproject-rtos/awesome-zephyr-rtos
+        - id: 855957168
+          name: zephyrproject-rtos/zephyr-lang-rust

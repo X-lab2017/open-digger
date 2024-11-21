@@ -1,0 +1,9 @@
+name: jbbmo-Introduction-to-Git-and-GitHub
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 447379217
+          name: ibm-developer-skills-network/jbbmo-Introduction-to-Git-and-GitHub

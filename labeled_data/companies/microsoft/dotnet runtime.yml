@@ -1,0 +1,15 @@
+name: dotnet runtime
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 33149243
+          name: dotnet/runtime-assets
+        - id: 176015789
+          name: dotnet/vscode-dotnet-runtime
+        - id: 210716005
+          name: dotnet/runtime
+        - id: 260496705
+          name: dotnet/runtimelab
