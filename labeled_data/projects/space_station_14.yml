@@ -1,0 +1,9 @@
+name: space-station-14
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 92001425
+          name: space-wizards/space-station-14

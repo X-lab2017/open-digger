@@ -11,3 +11,14 @@ data:
           name: openharmony-sig
         - id: 8739348
           name: HarmonyOS-tpc
+      repos:
+        - id: 17812931
+          name: openharmony/arkcompiler_ets_runtime
+        - id: 11218621
+          name: openharmony/xts_acts
+        - id: 16184960
+          name: openharmony/communication_dsoftbus
+        - id: 19831219
+          name: openharmony/window_window_manager
+        - id: 14557106
+          name: openharmony/window_window_manager_lite

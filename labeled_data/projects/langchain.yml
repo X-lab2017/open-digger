@@ -1,0 +1,31 @@
+name: LangChain
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 552661142
+          name: langchain-ai/langchain
+        - id: 598342280
+          name: langchain-ai/langchainjs
+        - id: 677148333
+          name: langchain-ai/langchain-benchmarks
+        - id: 753757613
+          name: langchain-ai/langchain-google
+        - id: 761474810
+          name: langchain-ai/langchain-nvidia
+        - id: 764941200
+          name: langchain-ai/langchain-datastax
+        - id: 765364980
+          name: langchain-ai/langchain-extract
+        - id: 768315119
+          name: langchain-ai/langchain-aws
+        - id: 782236358
+          name: langchain-ai/langchain-cohere
+        - id: 783743154
+          name: langchain-ai/langchain-postgres
+        - id: 825864026
+          name: langchain-ai/langchain-ibm
+        - id: 832889750
+          name: langchain-ai/langchain-academy

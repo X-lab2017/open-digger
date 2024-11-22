@@ -1,0 +1,9 @@
+name: Metabase
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 30203935
+          name: metabase/metabase
