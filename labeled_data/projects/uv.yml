@@ -1,0 +1,9 @@
+name: uv
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 699532645
+          name: astral-sh/uv

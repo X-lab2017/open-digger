@@ -1,0 +1,51 @@
+name: Ceph
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 2310495
+          name: ceph/ceph
+        - id: 226896648
+          name: ceph/ceph-salt
+        - id: 2381732
+          name: ceph/ceph-qa-suite
+        - id: 2382336
+          name: ceph/ceph-build
+        - id: 5786856
+          name: ceph/ceph-deploy
+        - id: 259987004
+          name: ceph/ceph.io
+        - id: 17373313
+          name: ceph/ceph-ansible
+        - id: 338088981
+          name: ceph/ceph-nvmeof
+        - id: 29601598
+          name: ceph/ceph-container
+        - id: 34542634
+          name: ceph/ceph-cm-ansible
+        - id: 35046025
+          name: ceph/ceph-installer
+        - id: 364964444
+          name: ceph/cephadm-ansible
+        - id: 36099760
+          name: ceph/ceph-ci
+        - id: 46122627
+          name: ceph/ceph-chef
+        - id: 73869146
+          name: ceph/ceph-iscsi-cli
+        - id: 74997166
+          name: ceph/ceph-medic
+        - id: 91771242
+          name: ceph/cephmetrics
+        - id: 101767086
+          name: ceph/ceph-helm
+        - id: 116693072
+          name: ceph/ceph-csi
+        - id: 155882428
+          name: ceph/ceph-iscsi
+        - id: 175224151
+          name: ceph/ceph-mixins
+        - id: 801183222
+          name: ceph/ceph-csi-operator

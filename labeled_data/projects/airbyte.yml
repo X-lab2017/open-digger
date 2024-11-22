@@ -1,0 +1,17 @@
+name: Airbyte
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 283046497
+          name: airbytehq/airbyte
+        - id: 523319394
+          name: airbytehq/airbyte-e2e-testing-tool
+        - id: 592970656
+          name: airbytehq/airbyte-platform
+        - id: 596157854
+          name: airbytehq/airbyte-protocol
+        - id: 804380220
+          name: airbytehq/airbyte-dbt-models

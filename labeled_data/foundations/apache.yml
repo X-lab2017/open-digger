@@ -7,3 +7,58 @@ data:
       orgs:
         - id: 47359
           name: apache
+      repos:
+        - id: 33884891
+          name: apache/airflow
+        - id: 145325821
+          name: apache/airflow-ci
+        - id: 164198539
+          name: apache/airflow-site
+        - id: 234144956
+          name: apache/airflow-on-k8s-operator
+        - id: 275569071
+          name: apache/airflow-client-go
+        - id: 275569146
+          name: apache/airflow-client-java
+        - id: 275569232
+          name: apache/airflow-client-python
+        - id: 276681643
+          name: apache/airflow-pgbouncer-exporter
+        - id: 277102849
+          name: apache/airflow-helm-unittest
+        - id: 277115802
+          name: apache/airflow-openldap
+        - id: 321691041
+          name: apache/airflow-ci-infra
+        - id: 99919302
+          name: apache/doris
+        - id: 457619173
+          name: apache/doris-spark-connector
+        - id: 457619500
+          name: apache/doris-manager
+        - id: 458226256
+          name: apache/doris-flink-connector
+        - id: 520709428
+          name: apache/doris-thirdparty
+        - id: 616774259
+          name: apache/doris-shade
+        - id: 636304767
+          name: apache/doris-sdk
+        - id: 662391505
+          name: apache/doris-operator
+        - id: 744436069
+          name: apache/doris-streamloader
+        - id: 766424540
+          name: apache/doris-kafka-connector
+        - id: 149782046
+          name: apache/doris-website
+        - id: 17165658
+          name: apache/spark
+        - id: 647220570
+          name: apache/spark-connect-go
+        - id: 548730031
+          name: apache/spark-docker
+        - id: 779091052
+          name: apache/spark-kubernetes-operator
+        - id: 63044524
+          name: apache/spark-website

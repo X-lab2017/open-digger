@@ -1,0 +1,15 @@
+name: Homebrew Cask
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 3623050
+          name: Homebrew/homebrew-cask
+        - id: 14159669
+          name: Homebrew/homebrew-cask-versions
+        - id: 15171934b
+          name: Homebrew/homebrew-cask-fonts
+        - id: 79951574
+          name: Homebrew/homebrew-cask-drivers
