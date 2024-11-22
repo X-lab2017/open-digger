@@ -1,0 +1,25 @@
+name: OpenVINO
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 153097643
+          name: openvinotoolkit/openvino
+        - id: 309381188
+          name: openvinotoolkit/openvino_contrib
+        - id: 331735599
+          name: openvinotoolkit/openvino_tensorflow
+        - id: 346639494
+          name: openvinotoolkit/openvino_notebooks
+        - id: 494029798
+          name: openvinotoolkit/openvino_docs
+        - id: 705678696
+          name: openvinotoolkit/openvino.genai
+        - id: 751427608
+          name: openvinotoolkit/openvino_tokenizers
+        - id: 803840981
+          name: openvinotoolkit/openvino_build_deploy
+        - id: 806947463
+          name: openvinotoolkit/openvino_xai

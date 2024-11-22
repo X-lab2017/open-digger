@@ -1,0 +1,13 @@
+name: Ollama
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 658928958
+          name: ollama/ollama
+        - id: 691303110
+          name: ollama/ollama-js
+        - id: 729453988
+          name: ollama/ollama-python

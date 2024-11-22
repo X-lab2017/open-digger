@@ -1,0 +1,9 @@
+name: Connectedhomeip
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 244694174
+          name: project-chip/connectedhomeip

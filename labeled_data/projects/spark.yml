@@ -1,0 +1,17 @@
+name: Apache Spark
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 17165658
+          name: apache/spark
+        - id: 647220570
+          name: apache/spark-connect-go
+        - id: 548730031
+          name: apache/spark-docker
+        - id: 779091052
+          name: apache/spark-kubernetes-operator
+        - id: 63044524
+          name: apache/spark-website

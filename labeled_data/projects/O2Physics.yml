@@ -1,0 +1,9 @@
+name: O2Physics
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 385958416
+          name: AliceO2Group/O2Physics

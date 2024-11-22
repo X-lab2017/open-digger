@@ -1,0 +1,13 @@
+name: Hyprland
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 470730648
+          name: hyprwm/Hyprland
+        - id: 524190442
+          name: hyprwm/hyprland-wiki
+        - id: 607191802
+          name: hyprwm/hyprland-plugins

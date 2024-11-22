@@ -1,0 +1,11 @@
+name: sdk-nrf
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 121516035
+          name: nrfconnect/sdk-nrf
+        - id: 307661773
+          name: nrfconnect/sdk-nrf-testing
