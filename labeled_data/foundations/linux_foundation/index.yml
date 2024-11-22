@@ -1,6 +1,8 @@
 name: Linux Foundation
 type: Foundation
 data:
+  labels:
+    - zephyr
   platforms:
     - name: GitHub
       type: Code Hosting

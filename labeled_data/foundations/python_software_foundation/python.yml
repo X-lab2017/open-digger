@@ -1,9 +1,9 @@
-name: vLLM
+name: Python
 type: Project
 data:
   platforms:
     - name: GitHub
       type: Code Hosting
       orgs:
-        - id: 136984999
-          name: vllm-project
+        - id: 1525981
+          name: python

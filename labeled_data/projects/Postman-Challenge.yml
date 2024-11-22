@@ -1,9 +1,0 @@
-name: Postman-Challenge
-type: Project
-data:
-  platforms:
-    - name: GitHub
-      type: Code Hosting
-      repos:
-        - id: 829386281
-          name: GSSoC24/Postman-Challenge

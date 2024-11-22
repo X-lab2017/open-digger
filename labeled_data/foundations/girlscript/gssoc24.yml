@@ -1,9 +1,9 @@
-name: vLLM
+name: GirlScript Summer of Code 24
 type: Project
 data:
   platforms:
     - name: GitHub
       type: Code Hosting
       orgs:
-        - id: 136984999
-          name: vllm-project
+        - id: 166525102
+          name: GSSoC24

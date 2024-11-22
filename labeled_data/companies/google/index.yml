@@ -1,6 +1,15 @@
 name: Google
 type: Company
 data:
+  labels:
+    - angular
+    - bazel
+    - dart
+    - firebase
+    - flutter
+    - forseti_security
+    - go
+    - tensorflow
   platforms:
     - name: GitHub
       type: Code Hosting
@@ -11,30 +20,15 @@ data:
           name: knative/serving
         - id: 124951822
           name: knative/eventing
-        - id: 82210080
-          name: forseti-security/forseti-security
-        - id: 23096959
-          name: golang/go
         - id: 50904245
           name: apache/beam
-        - id: 20773773
-          name: bazelbuild/bazel
       orgs:
         - id: 1342004
           name: google
-        - id: 15658638
-          name: tensorflow
-        - id: 23534644
-          name: istio
-        - id: 14101776
-          name: flutter
-        - id: 1335026
-          name: firebase
-        - id: 139426
-          name: angular
-        - id: 1609975
-          name: dart-lang
-        - id: 33164907
-          name: kubeflow
         - id: 43830688
           name: google-research
+        - id: 23534644
+          name: istio
+        - id: 33164907
+          name: kubeflow
+        

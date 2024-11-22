@@ -1,9 +1,0 @@
-name: god_bless
-type: Project
-data:
-  platforms:
-    - name: GitHub
-      type: Code Hosting
-      repos:
-        - id: 648218724
-          name: CorporationX/god_bless

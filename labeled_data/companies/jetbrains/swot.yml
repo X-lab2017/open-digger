@@ -1,9 +1,0 @@
-name: swot
-type: Project
-data:
-  platforms:
-    - name: GitHub
-      type: Code Hosting
-      repos:
-        - id: 24410210
-          name: JetBrains/swot

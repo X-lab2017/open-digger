@@ -1,9 +1,9 @@
-name: vLLM
+name: LLVM
 type: Project
 data:
   platforms:
     - name: GitHub
       type: Code Hosting
       orgs:
-        - id: 136984999
-          name: vllm-project
+        - id: 17149993
+          name: llvm

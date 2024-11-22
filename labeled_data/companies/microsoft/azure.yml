@@ -1,9 +1,9 @@
-name: vLLM
+name: Azure
 type: Project
 data:
   platforms:
     - name: GitHub
       type: Code Hosting
       orgs:
-        - id: 136984999
-          name: vllm-project
+        - id: 6844498
+          name: Azure

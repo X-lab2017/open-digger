@@ -1,9 +1,0 @@
-name: bolt.new
-type: Project
-data:
-  platforms:
-    - name: GitHub
-      type: Code Hosting
-      repos:
-        - id: 862449441
-          name: stackblitz/bolt.new

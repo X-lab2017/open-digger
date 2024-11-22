@@ -1,9 +1,0 @@
-name: first-contributions
-type: Project
-data:
-  platforms:
-    - name: GitHub
-      type: Code Hosting
-      repos:
-        - id: 68720867
-          name: firstcontributions/first-contributions

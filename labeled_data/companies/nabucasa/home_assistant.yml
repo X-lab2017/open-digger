@@ -1,9 +1,9 @@
-name: vLLM
+name: Home Assistant
 type: Project
 data:
   platforms:
     - name: GitHub
       type: Code Hosting
       orgs:
-        - id: 136984999
-          name: vllm-project
+        - id: 13844975
+          name: home-assistant

@@ -1,0 +1,9 @@
+name: Hugging Face
+type: Company
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 25720743
+          name: huggingface

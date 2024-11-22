@@ -1,0 +1,14 @@
+name: WebContainers
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 366844495
+          name: stackblitz/webcontainer-core
+        - id: 601719077
+          name: stackblitz/webcontainer-docs
+        - id: 601722111
+          name: stackblitz/webcontainer-api-starter
+

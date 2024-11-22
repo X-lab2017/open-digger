@@ -1,9 +1,0 @@
-name: home-assistant
-type: Project
-data:
-  platforms:
-    - name: GitHub
-      type: Code Hosting
-      repos:
-        - id: 12888993
-          name: home-assistant/core

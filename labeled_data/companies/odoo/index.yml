@@ -1,9 +1,5 @@
 name: Odoo
 type: Company
 data:
-  platforms:
-    - name: GitHub
-      type: Code Hosting
-      orgs:
-        - id: 6368483
-          name: odoo
+  labels:
+    - odoo

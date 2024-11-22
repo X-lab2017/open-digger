@@ -1,9 +1,9 @@
-name: vLLM
+name: PowerShell
 type: Project
 data:
   platforms:
     - name: GitHub
       type: Code Hosting
       orgs:
-        - id: 136984999
-          name: vllm-project
+        - id: 11524380
+          name: PowerShell

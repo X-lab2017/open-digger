@@ -1,9 +1,0 @@
-name: ExpensifyApp
-type: Project
-data:
-  platforms:
-    - name: GitHub
-      type: Code Hosting
-      repos:
-        - id: 285902689
-          name: Expensify/App

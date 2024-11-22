@@ -11,10 +11,3 @@ data:
           name: openharmony-sig
         - id: 8739348
           name: HarmonyOS-tpc
-      repos:
-        - id: 400075551
-          name: openharmony/docs
-        - id: 880134769
-          name: openharmony/arkui_ace_engine
-        - id: 880311506
-          name: openharmony/arkui_ace_engine_lite

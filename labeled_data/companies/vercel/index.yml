@@ -1,11 +1,11 @@
-name: RedHat
+name: Vercel
 type: Company
 data:
   labels:
-    - openshift
+    - next
   platforms:
     - name: GitHub
       type: Code Hosting
       orgs:
-        - id: 33972111
-          name: RedHatOfficial
+        - id: 14985020
+          name: vercel
