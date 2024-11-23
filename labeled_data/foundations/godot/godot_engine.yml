@@ -1,0 +1,9 @@
+name: Godot Engine
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 6318500
+          name: godotengine

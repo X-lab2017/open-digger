@@ -1,0 +1,9 @@
+name: Angular
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 139426
+          name: angular

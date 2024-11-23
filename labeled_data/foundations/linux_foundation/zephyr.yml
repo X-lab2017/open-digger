@@ -1,0 +1,9 @@
+name: zephyr
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 19595895
+          name: zephyrproject-rtos

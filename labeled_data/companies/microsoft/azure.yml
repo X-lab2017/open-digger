@@ -1,0 +1,9 @@
+name: Azure
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 6844498
+          name: Azure

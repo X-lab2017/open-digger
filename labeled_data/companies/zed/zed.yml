@@ -1,0 +1,19 @@
+name: zed
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 340547520
+          name: zed-industries/zed
+        - id: 455321305
+          name: zed-industries/zed-fonts
+        - id: 501009956
+          name: zed-industries/community
+        - id: 578920524
+          name: zed-industries/keymaps
+        - id: 754252062
+          name: zed-industries/extensions
+        - id: 816316769
+          name: zed-industries/simple-completion-language-server

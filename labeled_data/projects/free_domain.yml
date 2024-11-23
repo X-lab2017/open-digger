@@ -1,0 +1,9 @@
+name: FreeDomain
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 808144141
+          name: DigitalPlatDev/FreeDomain

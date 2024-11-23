@@ -1,11 +1,11 @@
-name: RedHat
+name: Zed Industry
 type: Company
 data:
   labels:
-    - openshift
+    - zed
   platforms:
     - name: GitHub
       type: Code Hosting
       orgs:
-        - id: 33972111
-          name: RedHatOfficial
+        - id: 79345384
+          name: zed-industries

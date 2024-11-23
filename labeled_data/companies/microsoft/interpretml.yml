@@ -1,0 +1,9 @@
+name: InterpretML
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 27173223
+          name: interpretml

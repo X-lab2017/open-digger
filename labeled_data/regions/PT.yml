@@ -1,0 +1,5 @@
+name: Portugal
+type: Region
+data:
+  labels:
+    - :companies/dio

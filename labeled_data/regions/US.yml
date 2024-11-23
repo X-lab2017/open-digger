@@ -64,3 +64,11 @@ data:
     - :companies/treasure_data
     - :companies/varnish
     - :companies/wordpress
+    - :companies/expensify
+    - :companies/grafana
+    - :companies/greptime
+    - :companies/huggingface
+    - :companies/nabucasa
+    - :companies/stackblitz
+    - :companies/vercel
+    - :companies/zed

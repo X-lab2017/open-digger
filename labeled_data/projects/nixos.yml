@@ -1,0 +1,9 @@
+name: NixOS
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 487568
+          name: NixOS

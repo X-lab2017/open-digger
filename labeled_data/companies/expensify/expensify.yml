@@ -1,0 +1,15 @@
+name: Expensify
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 285902689
+          name: Expensify/App
+        - id: 9901262
+          name: Expensify/Integrations
+        - id: 56797629
+          name: Expensify/expensify-common
+        - id: 75239166
+          name: Expensify/eslint-config-expensify

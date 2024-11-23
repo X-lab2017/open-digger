@@ -1,0 +1,51 @@
+name: Transformers
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 155220641
+          name: huggingface/transformers
+        - id: 194104216
+          name: huggingface/swift-coreml-transformers
+        - id: 221548664
+          name: huggingface/tflite-android-transformers
+        - id: 387786881
+          name: huggingface/optimum
+        - id: 395688425
+          name: huggingface/course
+        - id: 415957187
+          name: huggingface/optimum-graphcore
+        - id: 464909502
+          name: huggingface/optimum-habana
+        - id: 480387253
+          name: huggingface/model-evaluator
+        - id: 508972059
+          name: huggingface/setfit
+        - id: 519982095
+          name: huggingface/huggingface-inference-toolkit
+        - id: 530638348
+          name: huggingface/transformers_bloom_parallel
+        - id: 536266762
+          name: huggingface/transformers-bloom-inference
+        - id: 601161044
+          name: huggingface/transformers.js
+        - id: 607667587
+          name: huggingface/audio-transformers-course
+        - id: 633052722
+          name: huggingface/optimum-benchmark
+        - id: 639378200
+          name: huggingface/swift-transformers
+        - id: 639379343
+          name: huggingface/swift-chat
+        - id: 693550756
+          name: huggingface/sharp-transformers
+        - id: 756234502
+          name: huggingface/optimum-tpu
+        - id: 794010753
+          name: huggingface/hf-rocm-benchmark
+        - id: 841397199
+          name: huggingface/transformers.js-examples
+        - id: 866028077
+          name: huggingface/transformers_debug

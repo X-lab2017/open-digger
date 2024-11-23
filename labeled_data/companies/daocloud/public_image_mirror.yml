@@ -1,0 +1,9 @@
+name: DaoCloud Public Image Mirror
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 404565294
+          name: DaoCloud/public-image-mirror

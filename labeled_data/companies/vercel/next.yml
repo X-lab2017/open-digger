@@ -1,0 +1,65 @@
+name: Next.js
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 70107786
+          name: vercel/next.js
+        - id: 117970160
+          name: vercel/next-plugins
+        - id: 136976604
+          name: vercel/next-codemod
+        - id: 243083479
+          name: vercel/preview-mode-demo
+        - id: 250884502
+          name: vercel/next-learn
+        - id: 252585367
+          name: vercel/nextgram
+        - id: 265297207
+          name: vercel/reactions
+        - id: 307520777
+          name: vercel/commerce
+        - id: 311865672
+          name: vercel/nextjs-subscription-payments
+        - id: 321873230
+          name: vercel/virtual-event-starter-kit
+        - id: 324401048
+          name: vercel/server-components-notes-demo
+        - id: 349288944
+          name: vercel/nextjs-portfolio-starter
+        - id: 414497091
+          name: vercel/next-react-server-components
+        - id: 420852974
+          name: vercel/nextjs-discord-bot
+        - id: 449942590
+          name: vercel/platforms
+        - id: 450828905
+          name: vercel/nextjs-issue-tracker
+        - id: 471590862
+          name: vercel/nextjs-postgres-auth-starter
+        - id: 498533616
+          name: vercel/mongodb-starter
+        - id: 511970027
+          name: vercel/next-app-router-playground
+        - id: 565280125
+          name: vercel/nextjs-postgres-nextauth-tailwindcss-template
+        - id: 642917329
+          name: vercel/ai-chatbot
+        - id: 738710493
+          name: vercel/example-figma-og-image
+        - id: 755587872
+          name: vercel/cra-to-next
+        - id: 801047756
+          name: vercel/shirt-shop
+        - id: 801125287
+          name: vercel/ship-content-driven-websites
+        - id: 801809398
+          name: vercel/nextjs-optimizely-experimentation
+        - id: 811936046
+          name: vercel/hono-nextjs
+        - id: 811937191
+          name: vercel/nextjs-hono
+        - id: 811938413
+          name: vercel/hono-next

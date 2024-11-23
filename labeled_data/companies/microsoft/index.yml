@@ -1,19 +1,15 @@
 name: Microsoft
 type: Company
 data:
+  labels:
+    - azure
+    - dotnet
+    - interpretml
+    - powershell
+    - vscode
   platforms:
     - name: GitHub
       type: Code Hosting
       orgs:
         - id: 6154722
           name: microsoft
-        - id: 9141961
-          name: dotnet
-        - id: 27453006
-          name: dotnet-architecture
-        - id: 11524380
-          name: PowerShell
-        - id: 27173223
-          name: interpretml
-        - id: 6844498
-          name: Azure

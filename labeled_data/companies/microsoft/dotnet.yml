@@ -1,0 +1,11 @@
+name: .Net
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 9141961
+          name: dotnet
+        - id: 27453006
+          name: dotnet-architecture

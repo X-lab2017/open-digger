@@ -1,11 +1,11 @@
-name: RedHat
+name: Expensify
 type: Company
 data:
   labels:
-    - openshift
+    - expensify
   platforms:
     - name: GitHub
       type: Code Hosting
       orgs:
-        - id: 33972111
-          name: RedHatOfficial
+        - id: 476779
+          name: Expensify

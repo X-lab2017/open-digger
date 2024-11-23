@@ -1,6 +1,8 @@
 name: Mozilla
 type: Company
 data:
+  labels:
+    - rust
   platforms:
     - name: GitHub
       type: Code Hosting

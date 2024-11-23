@@ -1,0 +1,9 @@
+name: GirlScript Summer of Code 24
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 166525102
+          name: GSSoC24
