@@ -1,0 +1,9 @@
+name: multimedia_audio_framework
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 880114390
+          name: openharmony/multimedia_audio_framework

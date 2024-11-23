@@ -1,0 +1,11 @@
+name: GameMaker-Bugs
+type: Project
+data:
+  platforms:
+  - name: GitHub
+    type: Code Hosting
+    repos:
+    - id: 633022779
+      name: YoYoGames/GameMaker-Bugs
+    - id: 671888402
+      name: YoYoGames/Test-GameMaker-Bugs

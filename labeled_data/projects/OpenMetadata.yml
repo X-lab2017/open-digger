@@ -1,0 +1,29 @@
+name: OpenMetadata
+type: Project
+data:
+  platforms:
+  - name: GitHub
+    type: Code Hosting
+    repos:
+    - id: 391740664
+      name: open-metadata/OpenMetadata
+    - id: 425719281
+      name: open-metadata/openmetadata-helm-charts
+    - id: 536702696
+      name: open-metadata/openmetadata-demo
+    - id: 396583746
+      name: open-metadata/openmetadata-site
+    - id: 721035151
+      name: open-metadata/openmetadata-deployment
+    - id: 738400994
+      name: open-metadata/openmetadata-spark-agent
+    - id: 422963352
+      name: open-metadata/openmetadata-airflow-apis
+    - id: 413696616
+      name: open-metadata/openmetadata-selenium
+    - id: 740843710
+      name: open-metadata/openmetadata-sdk
+    - id: 832626307
+      name: open-metadata/openmetadata-retention
+    - id: 644094829
+      name: open-metadata/openmetadata-java-client-demo

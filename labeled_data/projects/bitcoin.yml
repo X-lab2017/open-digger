@@ -1,0 +1,10 @@
+name: bitcoin
+type: Project
+data:
+  platforms:
+  - name: GitHub
+    type: Code Hosting
+    repos:
+    - id: 1181927
+      name: bitcoin/bitcoin
+

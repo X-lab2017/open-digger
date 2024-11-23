@@ -1,0 +1,19 @@
+name: azure-sdk-for-java
+type: Project
+data:
+  platforms:
+  - name: GitHub
+    type: Code Hosting
+    repos:
+    - id: 2928948
+      name: Azure/azure-sdk-for-java
+    - id: 70935438
+      name: Azure/azure-iot-sdk-java
+    - id: 63614079
+      name: Azure/azure-docs-sdk-java
+    - id: 73987807
+      name: Azure/azure-batch-sdk-for-java
+    - id: 364669752
+      name: Azure/azure-sdk-for-java-assets
+    - id: 827014866
+      name: Azure/azsdk-java-rewrite-recipes

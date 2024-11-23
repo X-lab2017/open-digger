@@ -1,0 +1,19 @@
+name: sdk
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 63984307
+          name: dotnet/sdk
+        - id: 20532052
+          name: dotnet/Open-XML-SDK
+        - id: 83729993
+          name: dotnet/roslyn-sdk
+        - id: 523474317
+          name: dotnet/dotnet-wasi-sdk
+        - id: 492869611
+          name: dotnet/sdk-container-builds
+        - id: 80538766
+          name: dotnet/windows-sdk-for-google-analytics

@@ -1,0 +1,19 @@
+name: roslyn
+type: Project
+data:
+  platforms:
+  - name: GitHub
+    type: Code Hosting
+    repos:
+    - id: 29078997
+      name: dotnet/roslyn
+    - id: 36946704
+      name: dotnet/roslyn-analyzers
+    - id: 83729993
+      name: dotnet/roslyn-sdk
+    - id: 65219019
+      name: dotnet/roslyn-tools
+    - id: 92228284
+      name: dotnet/roslyn-api-docs
+    - id: 45699276
+      name: dotnet/roslyn-analyzers-contrib

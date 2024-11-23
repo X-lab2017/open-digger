@@ -1,0 +1,16 @@
+name: openssl
+type: Project
+data:
+  platforms:
+  - name: GitHub
+    type: Code Hosting
+    repos:
+    - id: 7634677
+      name: openssl/openssl
+    - id: 108537428
+      name: openssl/openssl-book
+    - id: 826756545
+      name: openssl/openssl-docs
+    - id: 832635761
+      name: openssl/mta-openssl-org
+

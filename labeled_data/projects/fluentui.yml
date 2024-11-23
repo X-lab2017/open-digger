@@ -1,0 +1,33 @@
+name: fluentui
+type: Project
+data:
+  platforms:
+  - name: GitHub
+    type: Code Hosting
+    repos:
+    - id: 60537144
+      name: microsoft/fluentui
+    - id: 390896426
+      name: microsoft/fluentui-emoji
+    - id: 348132133
+      name: microsoft/fluentui-blazor
+    - id: 263452252
+      name: microsoft/fluentui-system-icons
+    - id: 249825341
+      name: microsoft/fluentui-apple
+    - id: 257221908
+      name: microsoft/fluentui-android
+    - id: 196270726
+      name: microsoft/fluentui-react-native
+    - id: 641848669
+      name: microsoft/fluentui-contrib
+    - id: 257401318
+      name: microsoft/fluentui-token-pipeline
+    - id: 716536324
+      name: microsoft/fluentui-charting-contrib
+    - id: 597002971
+      name: microsoft/eslint-plugin-fluentui-jsx-a11y
+    - id: 409517836
+      name: microsoft/fluentui-storybook-addons
+    - id: 869217270
+      name: microsoft/fluentui-emoji-animated

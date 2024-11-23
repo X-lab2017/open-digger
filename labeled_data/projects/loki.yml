@@ -1,0 +1,33 @@
+name: loki
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 129717717
+          name: grafana/loki
+        - id: 278932724
+          name: grafana/loki-workshop
+        - id: 428559978
+          name: grafana/xk6-loki
+        - id: 316015671
+          name: grafana/loki-client-go
+        - id: 551338163
+          name: grafana/pySigma-backend-loki
+        - id: 365554703
+          name: grafana/loki-arduino
+        - id: 671814586
+          name: grafana/loki-k6-handson
+        - id: 720154610
+          name: grafana/loki-release
+        - id: 675576973
+          name: grafana/xk6-loki-write
+        - id: 186032071
+          name: grafana/loki-canary
+        - id: 475002368
+          name: grafana/loki-query-tee
+        - id: 810690187
+          name: grafana/azure_eventhub_to_loki
+        - id: 371374396
+          name: grafana/arduino-prom-loki-transport

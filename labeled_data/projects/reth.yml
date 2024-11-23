@@ -1,0 +1,13 @@
+name: reth
+type: Project
+data:
+  platforms:
+  - name: GitHub
+    type: Code Hosting
+    repos:
+    - id: 537233603
+      name: paradigmxyz/reth
+    - id: 819878351
+      name: paradigmxyz/reth-exex-examples
+    - id: 587932849
+      name: paradigmxyz/local_reth

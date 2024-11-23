@@ -1,0 +1,12 @@
+name: organicmaps
+type: Project
+data:
+  platforms:
+  - name: GitHub
+    type: Code Hosting
+    repos:
+    - id: 324829379
+      name: organicmaps/organicmaps
+    - id: 375275700
+      name: organicmaps/organicmaps.github.io
+

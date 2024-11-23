@@ -1,0 +1,17 @@
+name: Follow
+type: Project
+data:
+  platforms:
+  - name: GitHub
+    type: Code Hosting
+    repos:
+    - id: 783512367
+      name: RSSNext/Follow
+    - id: 854565391
+      name: RSSNext/follow.is
+    - id: 867540146
+      name: RSSNext/follow-email-worker
+    - id: 807000317
+      name: RSSNext/follow-contracts
+    - id: 861526401
+      name: RSSNext/follow-image-proxy

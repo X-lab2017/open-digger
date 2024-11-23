@@ -1,0 +1,20 @@
+name: ardupilot
+type: Project
+data:
+  platforms:
+  - name: GitHub
+    type: Code Hosting
+    repos:
+    - id: 7512484
+      name: ArduPilot/ardupilot
+    - id: 28945232
+      name: ArduPilot/ardupilot_wiki
+    - id: 413090827
+      name: ArduPilot/ardupilot_gazebo
+    - id: 613660701
+      name: ArduPilot/ardupilot_gz
+    - id: 292306643
+      name: ArduPilot/ardupilot_dev_docker
+    - id: 54506355
+      name: ArduPilot/ardupilot_wiki_copy
+

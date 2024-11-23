@@ -1,0 +1,9 @@
+name: badouai-ai-special-2024
+type: Project
+data:
+  platforms:
+  - name: GitHub
+    type: Code Hosting
+    repos:
+    - id: 845310018
+      name: badou-Michael/badouai-ai-special-2024

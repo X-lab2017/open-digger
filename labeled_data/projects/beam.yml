@@ -1,0 +1,29 @@
+name: beam
+type: Project
+data:
+  platforms:
+  - name: GitHub
+    type: Code Hosting
+    repos:
+    - id: 50904245
+      name: apache/beam
+    - id: 52588453
+      name: apache/beam-site
+    - id: 144622232
+      name: apache/beam-wheels
+    - id: 456633195
+      name: apache/beam-starter-python
+    - id: 164036674
+      name: apache/samza-beam-examples
+    - id: 590685973
+      name: apache/beam-starter-typescript
+    - id: 456633089
+      name: apache/beam-starter-java
+    - id: 456633310
+      name: apache/beam-starter-go
+    - id: 698377699
+      name: apache/beam-swift
+    - id: 456633384
+      name: apache/beam-starter-kotlin
+    - id: 456633515
+      name: apache/beam-starter-scala

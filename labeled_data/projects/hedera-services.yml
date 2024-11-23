@@ -1,0 +1,11 @@
+name: hedera-services
+type: Project
+data:
+  platforms:
+  - name: GitHub
+    type: Code Hosting
+    repos:
+    - id: 261828887
+      name: hashgraph/hedera-services
+    - id: 250596139
+      name: hashgraph/winston-transport-hedera

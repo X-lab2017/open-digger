@@ -1,0 +1,30 @@
+name: mastodon
+type: Project
+data:
+  platforms:
+  - name: GitHub
+    type: Code Hosting
+    repos:
+    - id: 52281283
+      name: mastodon/mastodon
+    - id: 332718082
+      name: mastodon/mastodon-ios
+    - id: 447932278
+      name: mastodon/mastodon-android
+    - id: 71482664
+      name: mastodon/mastodon-api
+    - id: 88439461
+      name: mastodon/mastodon-ansible
+    - id: 87553938
+      name: mastodon/joinmastodon
+    - id: 80136204
+      name: mastodon/mastodon-native
+    - id: 71639013
+      name: mastodon/omniauth-mastodon
+    - id: 71807808
+      name: mastodon/mastodon-bridge
+    - id: 88359034
+      name: mastodon/mastodon-vagrant-box
+    - id: 635921471
+      name: mastodon/terraform-fastly-joinmastodon
+

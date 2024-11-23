@@ -1,0 +1,20 @@
+name: open-liberty
+type: Project
+data:
+  platforms:
+  - name: GitHub
+    type: Code Hosting
+    repos:
+    - id: 103694377
+      name: OpenLiberty/open-liberty
+    - id: 103704438
+      name: OpenLiberty/open-liberty-tools
+    - id: 180668010
+      name: OpenLiberty/open-liberty-operator
+    - id: 207346956
+      name: OpenLiberty/open-liberty-s2i
+    - id: 253517114
+      name: OpenLiberty/open-liberty-deep-dive
+    - id: 406063457
+      name: OpenLiberty/open-liberty-misc
+

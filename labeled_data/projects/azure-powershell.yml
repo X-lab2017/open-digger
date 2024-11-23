@@ -1,0 +1,33 @@
+name: azure-powershell
+type: Project
+data:
+  platforms:
+  - name: GitHub
+    type: Code Hosting
+    repos:
+    - id: 23891194
+      name: Azure/azure-powershell
+    - id: 69396401
+      name: Azure/azure-docs-powershell-azuread
+    - id: 82127729
+      name: Azure/azure-docs-powershell-samples
+    - id: 142599157
+      name: Azure/azure-functions-powershell-worker
+    - id: 140023592
+      name: Azure/azure-powershell-common
+    - id: 235481449
+      name: Azure/azurestack-powershell
+    - id: 281860442
+      name: Azure/azure-powershell-migration
+    - id: 400941194
+      name: Azure/Azure-Purview-API-PowerShell
+    - id: 488725449
+      name: Azure/azure-docs-powershell-aip
+    - id: 444207300
+      name: Azure/azure-functions-durable-powershell
+    - id: 516830532
+      name: Azure/azure-functions-powershell-library
+    - id: 239002362
+      name: Azure/azure-stack-hub-powershell
+    - id: 768315678
+      name: Azure/azure-functions-powershell-opentelemetry

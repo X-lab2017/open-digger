@@ -1,0 +1,20 @@
+name: langflow
+type: Project
+data:
+  platforms:
+  - name: GitHub
+    type: Code Hosting
+    repos:
+    - id: 599320067
+      name: langflow-ai/langflow
+    - id: 624222311
+      name: langflow-ai/langflow_examples
+    - id: 658520065
+      name: langflow-ai/langflow-embedded-chat
+    - id: 813336543
+      name: langflow-ai/langflow-helm-charts
+    - id: 655961114
+      name: langflow-ai/langflow-docs2
+    - id: 670769354
+      name: langflow-ai/langflow-extras
+

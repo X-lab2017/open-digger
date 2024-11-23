@@ -1,0 +1,9 @@
+name: Daily_CF_Problems
+type: Project
+data:
+  platforms:
+  - name: GitHub
+    type: Code Hosting
+    repos:
+    - id: 763272326
+      name: Yawn-Sean/Daily_CF_Problems

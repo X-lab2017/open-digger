@@ -1,0 +1,21 @@
+name: electron
+type: Project
+data:
+  platforms:
+  - name: GitHub
+    type: Code Hosting
+    repos:
+    - id: 9384267
+      name: electron/electron
+    - id: 44416666
+      name: electron/electron-quick-start
+    - id: 44402056
+      name: electron/electron-api-demos
+    - id: 32611793
+      name: electron/electronjs.org-old
+    - id: 104968909
+      name: electron/electron-quick-start-typescript
+    - id: 129999554
+      name: electron/update-electron-app
+    - id: 124446433
+      name: electron/update.electronjs.org

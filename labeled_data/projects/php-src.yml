@@ -1,0 +1,12 @@
+name: php-src
+type: Project
+data:
+  platforms:
+  - name: GitHub
+    type: Code Hosting
+    repos:
+    - id: 1903522
+      name: php/php-src
+    - id: 3778962
+      name: php/php-gtk-src
+
