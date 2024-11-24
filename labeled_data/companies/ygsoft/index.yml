@@ -1,0 +1,12 @@
+name: Nasinet
+type: Company
+meta:
+  name_zh: 远光
+  name_zh_full: 远光软件（武汉）有限公司
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 6449063
+          name: ygsoft

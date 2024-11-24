@@ -1,0 +1,24 @@
+name: Hubei
+type: Region-1
+data:
+  labels:
+    - :companies/2mui
+    - :companies/bitland
+    - :companies/carbit
+    - :companies/cenboomh
+    - :companies/cqzww
+    - :companies/dodoedu
+    - :companies/douyu
+    - :companies/e_ray
+    - :companies/gitlab_cn
+    - :companies/huindata
+    - :companies/kongyun
+    - :companies/morequick
+    - :companies/naddod
+    - :companies/nasinet
+    - :companies/sxxfuture
+    - :companies/tw_iot
+    - :companies/weisolution
+    - :companies/wutos
+    - :companies/ygsoft
+    - :companies/zte

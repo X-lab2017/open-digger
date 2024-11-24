@@ -1,0 +1,14 @@
+name: Naddod
+type: Company
+meta:
+  name_zh: 纳多德
+  name_zh_full: 武汉纳多德网络技术有限公司
+data:
+  labels:
+    - nextchat
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 128140744
+          name: naddod

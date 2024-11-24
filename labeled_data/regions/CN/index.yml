@@ -1,7 +1,8 @@
 name: China
-type: Region
+type: Region-0
 data:
   labels:
+    - hubei
     - :companies/alibaba
     - :companies/baidu
     - :companies/huawei

@@ -1,0 +1,12 @@
+name: Carbit
+type: Company
+meta:
+  name_zh: 卡比特
+  name_zh_full: 武汉卡比特信息有限公司
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 16751578
+          name: carbit

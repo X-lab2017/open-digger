@@ -1,0 +1,9 @@
+name: Video Chat
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 96660911
+          name: dodoedu/video-chat

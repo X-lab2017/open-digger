@@ -1,0 +1,12 @@
+name: Douyu
+type: Company
+meta:
+  name_zh: 斗鱼
+  name_zh_full: 武汉斗鱼鱼乐网络科技有限公司
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 61232347
+          name: douyu

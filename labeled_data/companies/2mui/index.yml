@@ -1,0 +1,12 @@
+name: 2mui
+type: Company
+meta:
+  name_zh: 二木
+  name_zh_full: 武汉市二木软件技术有限公司
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 74758003
+          name: 2mui

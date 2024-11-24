@@ -1,5 +1,5 @@
 name: United States of America
-type: Region
+type: Region-0
 data:
   labels:
     - :companies/adobe

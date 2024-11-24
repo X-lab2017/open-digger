@@ -1,0 +1,12 @@
+name: Huindata
+type: Company
+meta:
+  name_zh: 慧因数据
+  name_zh_full: 武汉慧因数据科技有限公司
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 336147671
+          name: huindata/huindata-opensdk-whhealth-covid19

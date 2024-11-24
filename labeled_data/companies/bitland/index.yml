@@ -1,0 +1,12 @@
+name: Bitland
+type: Company
+meta:
+  name_zh: 宝龙达
+  name_zh_full: 武汉宝龙达信息技术有限公司
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 4453328
+          name: bitland

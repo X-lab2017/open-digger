@@ -1,0 +1,12 @@
+name: Kongyun
+type: Company
+meta:
+  name_zh: 宽云
+  name_zh_full: 湖北宽云网络科技有限公司
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 145816524
+          name: Kongyun/hosts

@@ -1,0 +1,12 @@
+name: ZTE
+type: Company
+meta:
+  name_zh: 中兴
+  name_zh_full: 武汉中兴软件有限责任公司
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 25337368
+          name: ZTE

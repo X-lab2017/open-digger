@@ -1,0 +1,26 @@
+name: Cqzww
+type: Company
+meta:
+  name_zh: 今古传奇
+  name_zh_full: 湖北今古传奇数字新媒体有限公司
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 707955601
+          name: cqzww/CMSIS_5
+        - id: 706798541
+          name: cqzww/chubby75
+        - id: 615391842
+          name: cqzww/awesome-go
+        - id: 615634273
+          name: cqzww/cobra
+        - id: 612831870
+          name: cqzww/rttys
+        - id: 612831690
+          name: cqzww/rtty
+        - id: 289808159
+          name: cqzww/HIVIEW
+        - id: 285771652
+          name: cqzww/sitewhere

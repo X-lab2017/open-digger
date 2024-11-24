@@ -1,0 +1,12 @@
+name: Weisolution
+type: Company
+meta:
+  name_zh: 唯案
+  name_zh_full: 武汉唯案软件有限公司
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 8066568
+          name: Weisolution

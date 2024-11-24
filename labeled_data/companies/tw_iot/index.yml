@@ -1,0 +1,12 @@
+name: Tw-iot
+type: Company
+meta:
+  name_zh: 时波
+  name_zh_full: 武汉时波网络技术有限公司
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 78575640
+          name: tw-iot
