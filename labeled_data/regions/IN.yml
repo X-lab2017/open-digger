@@ -1,5 +1,5 @@
 name: India
-type: Region
+type: Region-0
 data:
   labels:
     - :companies/blue_spire

@@ -1,0 +1,12 @@
+name: Cenboomh
+type: Company
+meta:
+  name_zh: 盛博汇
+  name_zh_full: 武汉盛博汇信息技术有限公司
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 37610847
+          name: Cenboomh

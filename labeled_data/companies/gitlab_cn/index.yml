@@ -1,0 +1,12 @@
+name: GitLab.cn
+type: Company
+meta:
+  name_zh: 极狐
+  name_zh_full: 极狐信息技术（湖北）有限公司
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 22105643
+          name: GitLab

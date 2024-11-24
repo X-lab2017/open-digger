@@ -1,5 +1,5 @@
 name: Korea, Republic of
-type: Region
+type: Region-0
 data:
   labels:
     - :companies/samsung

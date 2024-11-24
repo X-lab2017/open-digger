@@ -1,0 +1,14 @@
+name: Nasinet
+type: Company
+meta:
+  name_zh: 钠斯
+  name_zh_full: 湖北钠斯网络科技有限公司
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 458059843
+          name: Nasinet/live-web
+        - id: 458059960
+          name: Nasinet/live-h5

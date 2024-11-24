@@ -1,0 +1,12 @@
+name: Morequick
+type: Company
+meta:
+  name_zh: 秒开
+  name_zh_full: 武汉秒开网络科技有限公司
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 39321508
+          name: morequick

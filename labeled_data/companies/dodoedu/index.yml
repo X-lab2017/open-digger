@@ -1,0 +1,14 @@
+name: DodoEdu
+type: Company
+meta:
+  name_zh: 博盛
+  name_zh_full: 湖北博盛数字教育服务有限公司
+data:
+  labels:
+    - video_chat
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 26582809
+          name: dodoedu

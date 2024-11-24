@@ -1,0 +1,12 @@
+name: Sxxfuture
+type: Company
+meta:
+  name_zh: 三峡星未来
+  name_zh_full: 三峡星未来数据科技（宜昌）有限公司
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 90902772
+          name: sxxfuture

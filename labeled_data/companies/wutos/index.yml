@@ -1,0 +1,12 @@
+name: Wutos
+type: Company
+meta:
+  name_zh: 烽火平安
+  name_zh_full: 湖北烽火平安智能消防科技有限公司
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 157311607
+          name: wutos/fir
