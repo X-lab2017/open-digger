@@ -6,4 +6,4 @@ data:
       type: Code Hosting
       repos:
         - id: 33202667
-          name:department-of-veterans-affairs/vets-website
+          name: department-of-veterans-affairs/vets-website
