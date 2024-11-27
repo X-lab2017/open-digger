@@ -1,0 +1,11 @@
+name: GitHub
+type: Company
+data:
+  labels:
+    - electron
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 93784371
+          name: community

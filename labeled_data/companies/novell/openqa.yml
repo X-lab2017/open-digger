@@ -1,0 +1,9 @@
+name: openQA for SUSE
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 6918706
+          name: os-autoinst

@@ -1,0 +1,9 @@
+name: Reth
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 537233603
+          name: paradigmxyz/reth

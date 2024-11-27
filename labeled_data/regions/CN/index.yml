@@ -79,6 +79,7 @@ data:
     - :communities/mulan
     - :communities/kaiyuanshe
     - :communities/openbuild
+    - :companies/lobehub
     - :foundations/openatom
     - :projects/skywalking
   platforms:

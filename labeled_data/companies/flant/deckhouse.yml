@@ -1,0 +1,9 @@
+name: Deckhouse
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 55947180
+          name: deckhouse

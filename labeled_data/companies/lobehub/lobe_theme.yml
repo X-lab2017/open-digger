@@ -1,0 +1,13 @@
+name: Lobe Theme
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 643435168
+          name: lobehub/lobe-ui
+        - id: 606329910
+          name: lobehub/sd-webui-lobe-theme
+        - id: 743166750
+          name: lobehub/lobe-midjourney-webui

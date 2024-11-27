@@ -1,0 +1,5 @@
+name: Norway
+type: Region-0
+data:
+  labels:
+    - :companies/opera

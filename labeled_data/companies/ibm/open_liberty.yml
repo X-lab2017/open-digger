@@ -1,0 +1,9 @@
+name: Open Liberty
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 28316667
+          name: OpenLiberty

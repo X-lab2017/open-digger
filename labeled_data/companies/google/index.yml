@@ -4,6 +4,7 @@ data:
   labels:
     - angular
     - bazel
+    - beam
     - dart
     - firebase
     - flutter
@@ -20,8 +21,6 @@ data:
           name: knative/serving
         - id: 124951822
           name: knative/eventing
-        - id: 50904245
-          name: apache/beam
       orgs:
         - id: 1342004
           name: google
@@ -31,4 +30,3 @@ data:
           name: istio
         - id: 33164907
           name: kubeflow
-        

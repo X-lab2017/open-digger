@@ -1,0 +1,11 @@
+name: ConsenSys
+type: Company
+data:
+  labels:
+    - metamask
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 10818037
+          name: consensys

@@ -1,0 +1,9 @@
+name: Hedera Hashgraph
+type: Company
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 31002956
+          name: hashgraph

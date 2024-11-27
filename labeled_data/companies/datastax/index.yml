@@ -1,0 +1,11 @@
+name: DataStax
+type: Company
+data:
+  labels:
+    - langflow
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 573369
+          name: datastax

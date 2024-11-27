@@ -1,0 +1,9 @@
+name: Spring Boot 3 Tutorials
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 9754983
+          name: eugenp/tutorials

@@ -1,6 +1,8 @@
 name: HashiCorp
 type: Company
 data:
+  labels:
+    - vault
   platforms:
     - name: GitHub
       type: Code Hosting
