@@ -1,11 +1,9 @@
-name: ladybird
+name: Ladybird
 type: Project
 data:
   platforms:
     - name: GitHub
       type: Code Hosting
-      repos:
-        - id: 808045485
-          name: LadybirdBrowser/ladybird
-        - id: 789133981
-          name: LadybirdBrowser/ladybird.org
+      orgs:
+        - id: 134672918
+          name: LadybirdBrowser

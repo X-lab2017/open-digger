@@ -1,0 +1,11 @@
+name: Stable Diffusion WebUI Forge
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 743116659
+          name: lllyasviel/stable-diffusion-webui-forge
+        - id: 765556303
+          name: lllyasviel/sd-forge-layerdiffuse

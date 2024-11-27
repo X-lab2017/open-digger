@@ -1,0 +1,12 @@
+name: LobeHub
+type: Company
+data:
+  labels:
+    - lobe_chat
+    - lobe_theme
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 131470832
+          name: lobehub

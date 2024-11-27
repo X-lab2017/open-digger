@@ -1,0 +1,11 @@
+name: Leetcode
+type: Company
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 37351657
+          name: leetcode
+        - id: 61685775
+          name: LeetCode-Feedback

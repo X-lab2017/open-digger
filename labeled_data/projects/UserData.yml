@@ -1,9 +1,0 @@
-name: UserData
-type: Project
-data:
-  platforms:
-    - name: GitHub
-      type: Code Hosting
-      repos:
-        - id: 37890266
-          name: TravelMapping/UserData

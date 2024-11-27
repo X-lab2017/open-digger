@@ -1,9 +1,0 @@
-name: os-autoinst-distri-opensuse
-type: Project
-data:
-  platforms:
-    - name: GitHub
-      type: Code Hosting
-      repos:
-        - id: 17630288
-          name: os-autoinst/os-autoinst-distri-opensuse

@@ -2,19 +2,8 @@ name: shadPS4
 type: Project
 data:
   platforms:
-  - name: GitHub
-    type: Code Hosting
-    repos:
-    - id: 556675672
-      name: shadps4-emu/shadPS4
-    - id: 822798130
-      name: shadps4-emu/shadps4-game-compatibility
-    - id: 884276144
-      name: shadps4-emu/shadPS4-flatpak
-    - id: 879403433
-      name: shadps4-emu/shadps4-binaries-Linux
-    - id: 879403109
-      name: shadps4-emu/shadps4-binaries-Windows
-    - id: 879403609
-      name: shadps4-emu/shadps4-binaries-Mac
-
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 152868421
+          name: shadps4-emu

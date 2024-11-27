@@ -1,9 +1,0 @@
-name: frontend
-type: Project
-data:
-  platforms:
-  - name: GitHub
-    type: Code Hosting
-    repos:
-    - id: 38982731
-      name: home-assistant/frontend

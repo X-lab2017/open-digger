@@ -1,0 +1,14 @@
+name: Paradigm
+type: Company
+data:
+  labels:
+    - alloy
+    - foundry
+    - reth
+    - wevm
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 97369466
+          name: paradigmxyz

@@ -1,9 +1,0 @@
-name: LeetCode-Feedback
-type: Project
-data:
-  platforms:
-  - name: GitHub
-    type: Code Hosting
-    repos:
-    - id: 243435179
-      name: LeetCode-Feedback/LeetCode-Feedback

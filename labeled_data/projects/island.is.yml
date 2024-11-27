@@ -2,8 +2,8 @@ name: island.is
 type: Project
 data:
   platforms:
-  - name: GitHub
-    type: Code Hosting
-    repos:
-    - id: 261114179
-      name: island-is/island.is
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 63754601
+          name: island-is

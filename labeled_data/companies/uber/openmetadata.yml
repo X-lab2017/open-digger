@@ -1,0 +1,9 @@
+name: OpenMetadata
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 86132257
+          name: open-metadata

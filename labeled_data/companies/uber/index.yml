@@ -1,6 +1,8 @@
 name: Uber
 type: Company
 data:
+  labels:
+    - openmetadata
   platforms:
     - name: GitHub
       type: Code Hosting

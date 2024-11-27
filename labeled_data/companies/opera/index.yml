@@ -1,0 +1,12 @@
+name: Opera
+type: Company
+data:
+  labels:
+    - gamemaker
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 191904
+          name: operasoftware
+

@@ -1,6 +1,8 @@
 name: IBM
 type: Company
 data:
+  labels:
+    - open_liberty
   platforms:
     - name: GitHub
       type: Code Hosting

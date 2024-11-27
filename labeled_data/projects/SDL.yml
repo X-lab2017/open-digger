@@ -2,34 +2,8 @@ name: SDL
 type: Project
 data:
   platforms:
-  - name: GitHub
-    type: Code Hosting
-    repos:
-    - id: 330008801
-      name: libsdl-org/SDL
-    - id: 331517360
-      name: libsdl-org/SDL_image
-    - id: 337915185
-      name: libsdl-org/SDL_mixer
-    - id: 337745832
-      name: libsdl-org/SDL_ttf
-    - id: 331515461
-      name: libsdl-org/SDL_net
-    - id: 330016327
-      name: libsdl-org/SDL-1.2
-    - id: 831035479
-      name: libsdl-org/SDL_shadercross
-    - id: 331514706
-      name: libsdl-org/SDL_rtf
-    - id: 342467844
-      name: libsdl-org/sdlwiki
-    - id: 497679342
-      name: libsdl-org/SDL_shader_tools
-    - id: 692619407
-      name: libsdl-org/SDL_helloworld
-    - id: 654774154
-      name: libsdl-org/setup-sdl
-    - id: 578766118
-      name: libsdl-org/SDL_gesture
-    - id: 337752652
-      name: libsdl-org/SDL-historical-archive
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 77683370
+          name: libsdl-org

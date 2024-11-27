@@ -1,0 +1,5 @@
+name: New Relic
+type: Company
+data:
+  labels:
+    - newrelic

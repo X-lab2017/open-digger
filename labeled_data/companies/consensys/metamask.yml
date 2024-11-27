@@ -1,0 +1,9 @@
+name: MetaMask
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 11744586
+          name: metamask

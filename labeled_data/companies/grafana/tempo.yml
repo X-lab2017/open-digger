@@ -1,0 +1,17 @@
+name: Grafana Tempo
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 236055696
+          name: grafana/tempo
+        - id: 464665584
+          name: grafana/otel-profiling-go
+        - id: 533389348
+          name: grafana/tempo-operator
+        - id: 610801144
+          name: grafana/tempo-doc-work
+        - id: 663526610
+          name: grafana/lezer-traceql

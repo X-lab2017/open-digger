@@ -4,6 +4,8 @@ data:
   labels:
     - azure
     - dotnet
+    - fluentui
+    - fluid_framework
     - interpretml
     - powershell
     - vscode

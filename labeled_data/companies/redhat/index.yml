@@ -3,6 +3,7 @@ type: Company
 data:
   labels:
     - openshift
+    - stackrox
   platforms:
     - name: GitHub
       type: Code Hosting
