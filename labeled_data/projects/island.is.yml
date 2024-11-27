@@ -4,6 +4,6 @@ data:
   platforms:
     - name: GitHub
       type: Code Hosting
-      repos:
+      orgs:
         - id: 63754601
           name: island-is
