@@ -1,0 +1,9 @@
+name: Cataclysm-DDA
+type: Project
+data:
+  platforms:
+  - name: GitHub
+    type: Code Hosting
+    repos:
+    - id: 5973855
+      name: CleverRaven/Cataclysm-DDA

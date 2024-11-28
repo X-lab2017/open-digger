@@ -1,0 +1,33 @@
+name: playwright
+type: Project
+data:
+  platforms:
+  - name: GitHub
+    type: Code Hosting
+    repos:
+    - id: 221981891
+      name: microsoft/playwright
+    - id: 235572844
+      name: microsoft/playwright-dotnet
+    - id: 244998990
+      name: microsoft/playwright-github-action
+    - id: 252586220
+      name: microsoft/playwright-test
+    - id: 253651389
+      name: microsoft/playwright.dev
+    - id: 273562379
+      name: microsoft/playwright-cli
+    - id: 276414382
+      name: microsoft/playwright-python
+    - id: 284747964
+      name: microsoft/playwright-pytest
+    - id: 298640027
+      name: microsoft/playwright-java
+    - id: 380021016
+      name: microsoft/playwright-vscode
+    - id: 433978280
+      name: microsoft/create-playwright
+    - id: 660158294
+      name: microsoft/playwright-examples
+    - id: 675005146
+      name: microsoft/playwright-testing-service

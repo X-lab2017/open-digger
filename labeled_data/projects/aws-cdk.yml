@@ -1,0 +1,13 @@
+name: aws-cdk
+type: Project
+data:
+  platforms:
+  - name: GitHub
+    type: Code Hosting
+    repos:
+    - id: 105808767
+      name: aws/aws-cdk
+    - id: 105809752
+      name: aws/aws-cdk-rfcs
+    - id: 332034665
+      name: aws/aws-cdk-go

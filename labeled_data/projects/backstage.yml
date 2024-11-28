@@ -1,0 +1,11 @@
+name: backstage
+type: Project
+data:
+  platforms:
+  - name: GitHub
+    type: Code Hosting
+    repos:
+    - id: 236095576
+      name: backstage/backstage
+    - id: 639807859
+      name: backstage/backstage-deploy

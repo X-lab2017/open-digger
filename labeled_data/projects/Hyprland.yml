@@ -1,0 +1,27 @@
+name: Hyprland
+type: Project
+data:
+  platforms:
+  - name: GitHub
+    type: Code Hosting
+    repos:
+    - id: 470730648
+      name: hyprwm/Hyprland
+    - id: 524190442
+      name: hyprwm/hyprland-wiki
+    - id: 524417928
+      name: hyprwm/hyprland-website
+    - id: 570678871
+      name: hyprwm/hyprland-protocols
+    - id: 573914869
+      name: hyprwm/xdg-desktop-portal-hyprland
+    - id: 607191802
+      name: hyprwm/hyprland-plugins
+    - id: 678090454
+      name: hyprwm/hyprland-welcome
+    - id: 752458972
+      name: hyprwm/hyprland-infra
+    - id: 785754584
+      name: hyprwm/wlroots-hyprland
+    - id: 879283412
+      name: hyprwm/hyprland-qtutils

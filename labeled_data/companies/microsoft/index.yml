@@ -9,6 +9,8 @@ data:
     - interpretml
     - powershell
     - vscode
+    - onnxruntime
+    - playwright
   platforms:
     - name: GitHub
       type: Code Hosting

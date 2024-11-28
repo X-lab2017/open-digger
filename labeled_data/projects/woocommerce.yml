@@ -1,0 +1,211 @@
+name: woocommerce
+type: Project
+data:
+  platforms:
+  - name: GitHub
+    type: Code Hosting
+    repos:
+    - id: 2179920
+      name: woocommerce/woocommerce
+    - id: 10124307
+      name: woocommerce/woocommerce-google-analytics-integration
+    - id: 10124444
+      name: woocommerce/woocommerce-sharethis-integration
+    - id: 10124555
+      name: woocommerce/woocommerce-sharedaddy-integration
+    - id: 11509755
+      name: woocommerce/standard-woocommerce
+    - id: 12953906
+      name: woocommerce/woocommerce-icons
+    - id: 15096408
+      name: woocommerce/woocommerce-subscriptions-importer-exporter
+    - id: 15878220
+      name: woocommerce/woocommerce-product-dependencies
+    - id: 19817137
+      name: woocommerce/woocommerce-language-packs
+    - id: 21516574
+      name: woocommerce/woocommerce-shortcodes
+    - id: 22097882
+      name: woocommerce/woocommerce-wpec-converter
+    - id: 22137447
+      name: woocommerce/woocommerce-jigoshop-converter
+    - id: 22957901
+      name: woocommerce/woocommerce-gateway-mijireh-checkout
+    - id: 23914744
+      name: woocommerce/woocommerce-stellar
+    - id: 25977360
+      name: woocommerce/woocommerce-core-to-wordpress-org
+    - id: 26853028
+      name: woocommerce/WooCommerce-Quantity-Increment
+    - id: 26859688
+      name: woocommerce/woocommerce-colors
+    - id: 29531148
+      name: woocommerce/woocommerce-rest-api-docs
+    - id: 39086696
+      name: woocommerce/woocommerce-beta-tester
+    - id: 45114935
+      name: woocommerce/woocommerce-accommodation-bookings
+    - id: 51159002
+      name: woocommerce/woocommerce-gateway-paypal-express-checkout
+    - id: 58202827
+      name: woocommerce/woocommerce-gateway-stripe
+    - id: 58411144
+      name: woocommerce/woocommerce-subscriptions-renewal-timer
+    - id: 71167966
+      name: woocommerce/woocommerce-subscriptions-disable-paypal
+    - id: 72463163
+      name: woocommerce/woocommerce-subscriptions-load-deprecation-handlers
+    - id: 73415983
+      name: woocommerce/woocommerce-subscriptions-do-not-reduce-stock-on-renewal
+    - id: 73866168
+      name: woocommerce/woocommerce-subscriptions-preserve-billing-schedule
+    - id: 75488179
+      name: woocommerce/woocommerce-subscriptions-disable-report-cache-updates
+    - id: 75545248
+      name: woocommerce/woocommerce-subscriptions-upstage
+    - id: 80559584
+      name: woocommerce/woocommerce-subscriptions-delete-payment-method-confirmation
+    - id: 88153020
+      name: woocommerce/grant-download-permissions-for-past-woocommerce-orders
+    - id: 90173209
+      name: woocommerce/woocommerce-subscriptions-renewal-logger
+    - id: 90672154
+      name: woocommerce/facebook-for-woocommerce
+    - id: 93191698
+      name: woocommerce/woocommerce-subscriptions-backstage
+    - id: 95489548
+      name: woocommerce/woocommerce-git-hooks
+    - id: 95912671
+      name: woocommerce/woocommerce-one-page-checkout-do-not-empty-cart
+    - id: 97930473
+      name: woocommerce/woocommerce-gateway-dummy
+    - id: 98972569
+      name: woocommerce/mc-woocommerce
+    - id: 99809993
+      name: woocommerce/woocommerce-subscriptions-disable-reports-tab
+    - id: 100454462
+      name: woocommerce/woocommerce-subscriptions-resource
+    - id: 101390735
+      name: woocommerce/woocommerce-bookings-generator
+    - id: 105816947
+      name: woocommerce/woocommerce-subscriptions-cancel-on-refund
+    - id: 105889163
+      name: woocommerce/woocommerce-android
+    - id: 107167502
+      name: woocommerce/woocommerce-product-tables-feature-plugin
+    - id: 109973936
+      name: woocommerce/woocommerce-product-bundles-bulk-discounts
+    - id: 113908764
+      name: woocommerce/woocommerce-one-page-checkout-radio-autoselect
+    - id: 114407758
+      name: woocommerce/woocommerce-subscriptions-cancel-subscription-confirmation
+    - id: 115052383
+      name: woocommerce/woocommerce-sniffs
+    - id: 115554618
+      name: woocommerce/woocommerce-subscriptions-restrict-product
+    - id: 117718329
+      name: woocommerce/woocommerce-order-tables-feature-plugin
+    - id: 118771568
+      name: woocommerce/woocommerce-ios
+    - id: 121405465
+      name: woocommerce/woocommerce-blocks
+    - id: 127201334
+      name: woocommerce/woocommerce-subscriptions-custom-price-string
+    - id: 127201863
+      name: woocommerce/woocommerce-subscriptions-recalculate-totals
+    - id: 127202448
+      name: woocommerce/woocommerce-subscriptions-fix-downloadable-permissions
+    - id: 128732084
+      name: woocommerce/woocommerce-admin
+    - id: 130230764
+      name: woocommerce/woocommerce-product-type-column
+    - id: 136213841
+      name: woocommerce/woocommerce-custom-indexes
+    - id: 139209555
+      name: woocommerce/woocommerce-subscriptions-schedule-cache-generation
+    - id: 139640753
+      name: woocommerce/woocommerce-subscriptions-skip-pending-cancel
+    - id: 144171612
+      name: woocommerce/woocommerce-subscriptions-disable-paypal-background-updates
+    - id: 144864153
+      name: woocommerce/woocommerce-subscriptions-allow-synced-products-early-renewal
+    - id: 153187721
+      name: woocommerce/woocommerce-subscriptions-gifting-product-restrictions
+    - id: 155165010
+      name: woocommerce/woocommerce-subscriptions-renewal-only-coupon
+    - id: 156662184
+      name: woocommerce/woocommerce-subscriptions-auto-add-resubscribe-coupon
+    - id: 159429485
+      name: woocommerce/woocommerce-subscriptions-cancel-after-retry
+    - id: 181586602
+      name: woocommerce/woocommerce-recreate-orders-indexes
+    - id: 184420713
+      name: woocommerce/woocommerce-gateway-payfast
+    - id: 185968604
+      name: woocommerce/woocommerce-rest-api
+    - id: 190725313
+      name: woocommerce/woocommerce-composite-products-conditional-images
+    - id: 193033939
+      name: woocommerce/woocommerce-subscriptions-add-pay-action
+    - id: 193699166
+      name: woocommerce/woocommerce-example-package
+    - id: 198685925
+      name: woocommerce/woocommerce-rest-api-js-lib
+    - id: 229157557
+      name: woocommerce/woocommerce-github-sync-labels
+    - id: 257937328
+      name: woocommerce/woocommerce-product-bundles-variation-bundles
+    - id: 259637634
+      name: woocommerce/woocommerce-bookings-api-docs
+    - id: 267073862
+      name: woocommerce/woocommerce-gift-cards-coupon-input
+    - id: 271027799
+      name: woocommerce/woocommerce-gateway-amazon-pay
+    - id: 292290303
+      name: woocommerce/woocommerce-paypal-payments
+    - id: 315877326
+      name: woocommerce/woocommerce-product-recommendations-custom-locations
+    - id: 317620196
+      name: woocommerce/woocommerce-e2e-boilerplate
+    - id: 341057587
+      name: woocommerce/woocommerce-admin-test-helper
+    - id: 350096630
+      name: woocommerce/pinterest-for-woocommerce
+    - id: 360821943
+      name: woocommerce/woocommerce-reset
+    - id: 383925382
+      name: woocommerce/woocommerce-snap
+    - id: 408785550
+      name: woocommerce/woocommerce-free-shipping-progress-bar-block
+    - id: 478657077
+      name: woocommerce/woocommerce-test-reports
+    - id: 484828975
+      name: woocommerce/woocommerce-checkout-integration-example
+    - id: 489601910
+      name: woocommerce/woocommerce-hybrid-build-example
+    - id: 506584906
+      name: woocommerce/woocommerce-blocks-hydration-experiments
+    - id: 575089868
+      name: woocommerce/woocommerce-order-source-attribution
+    - id: 612635540
+      name: woocommerce/woocommerce-experimental-enable-new-product-editor
+    - id: 622847504
+      name: woocommerce/wp-graphql-woocommerce
+    - id: 639027612
+      name: woocommerce/WooCommerce-Shared
+    - id: 694904253
+      name: woocommerce/woocommerce-block-template-inspector
+    - id: 700316406
+      name: woocommerce/woocommerce-legacy-rest-api
+    - id: 731158154
+      name: woocommerce/woocommerce-sample-product-editor-extension
+    - id: 740501396
+      name: woocommerce/woocommerce-square
+    - id: 842996803
+      name: woocommerce/woocommerce-highspeed
+    - id: 854475754
+      name: woocommerce/woocommerce-legacy-reports
+    - id: 864393957
+      name: woocommerce/woocommerce-settings-migration-tester
+    - id: 884742520
+      name: woocommerce/sift-for-woocommerce

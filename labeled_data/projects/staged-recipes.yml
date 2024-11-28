@@ -1,0 +1,9 @@
+name: staged-recipes
+type: Project
+data:
+  platforms:
+  - name: GitHub
+    type: Code Hosting
+    repos:
+    - id: 41829476
+      name: conda-forge/staged-recipes

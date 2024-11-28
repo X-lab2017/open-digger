@@ -1,0 +1,11 @@
+name: metamask-extension
+type: Project
+data:
+  platforms:
+  - name: GitHub
+    type: Code Hosting
+    repos:
+    - id: 42009758
+      name: MetaMask/metamask-extension
+    - id: 465058619
+      name: MetaMask/metamask-extension-ts-migration-dashboard

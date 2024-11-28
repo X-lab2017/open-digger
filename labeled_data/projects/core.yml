@@ -1,0 +1,9 @@
+name: core
+type: Project
+data:
+  platforms:
+  - name: GitHub
+    type: Code Hosting
+    repos:
+    - id: 813178365
+      name: dart-lang/core

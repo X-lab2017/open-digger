@@ -1,0 +1,27 @@
+name: teleport
+type: Project
+data:
+  platforms:
+  - name: GitHub
+    type: Code Hosting
+    repos:
+    - id: 31558937
+      name: gravitational/teleport
+    - id: 224305727
+      name: gravitational/teleport-plugins
+    - id: 383172229
+      name: gravitational/teleport-cluster-terraform
+    - id: 410999312
+      name: gravitational/teleport-agent-terraform
+    - id: 475195109
+      name: gravitational/teleport-plugin-framework
+    - id: 517010521
+      name: gravitational/developers.goteleport.com
+    - id: 545597185
+      name: gravitational/teleport-actions
+    - id: 636430181
+      name: gravitational/aws-teleport-workshop
+    - id: 670758878
+      name: gravitational/teleport-cop.github.io
+    - id: 670758898
+      name: gravitational/teleport-github-actions-provisioning

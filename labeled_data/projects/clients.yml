@@ -1,0 +1,9 @@
+name: clients
+type: Project
+data:
+  platforms:
+  - name: GitHub
+    type: Code Hosting
+    repos:
+    - id: 53538899
+      name: bitwarden/clients

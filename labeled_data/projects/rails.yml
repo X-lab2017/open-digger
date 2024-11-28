@@ -1,0 +1,75 @@
+name: rails
+type: Project
+data:
+  platforms:
+  - name: GitHub
+    type: Code Hosting
+    repos:
+    - id: 8514
+      name: rails/rails
+    - id: 144864
+      name: rails/rails-contributors
+    - id: 496987
+      name: rails/rails_upgrade
+    - id: 499581
+      name: rails/rails_xss
+    - id: 845070
+      name: rails/rails-master-hook
+    - id: 1609021
+      name: rails/prototype-rails
+    - id: 1762831
+      name: rails/pjax_rails
+    - id: 1784628
+      name: rails/sprockets-rails
+    - id: 1795273
+      name: rails/sass-rails
+    - id: 1795951
+      name: rails/jquery-rails
+    - id: 1974699
+      name: rails/coffee-rails
+    - id: 5418182
+      name: rails/rails-dev-box
+    - id: 6911642
+      name: rails/rails-observers
+    - id: 7490388
+      name: rails/rails-perftest
+    - id: 13080550
+      name: rails/rails-html-sanitizer
+    - id: 13159863
+      name: rails/rails-dom-testing
+    - id: 14506899
+      name: rails/rails-docs-server
+    - id: 23053428
+      name: rails/rails-deprecated_sanitizer
+    - id: 36109966
+      name: rails/rails-controller-testing
+    - id: 41387914
+      name: rails/rails-bot
+    - id: 74058184
+      name: rails/rails-ujs
+    - id: 110040148
+      name: rails/rails_fast_attributes
+    - id: 150656108
+      name: rails/rails-probot
+    - id: 248958190
+      name: rails/discourse-rubyonrails-theme
+    - id: 328128780
+      name: rails/tailwindcss-rails
+    - id: 390548093
+      name: rails/importmap-rails
+    - id: 394816272
+      name: rails/requestjs-rails
+    - id: 402422776
+      name: rails/esbuild-rails
+    - id: 403116117
+      name: rails/rollupjs-rails
+    - id: 403641521
+      name: rails/jsbundling-rails
+    - id: 404019967
+      name: rails/cssbundling-rails
+    - id: 450580080
+      name: rails/dartsass-rails
+    - id: 737018224
+      name: rails/rubocop-rails-omakase
+    - id: 758614244
+      name: rails/rails-new

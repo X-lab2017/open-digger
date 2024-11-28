@@ -7,3 +7,30 @@ data:
       orgs:
         - id: 6844498
           name: Azure
+      repos:
+        - id: 65390815
+          name: MicrosoftDocs/azure-docs-cli
+        - id: 65505914
+          name: MicrosoftDocs/azure-docs-powershell
+        - id: 72685026
+          name: MicrosoftDocs/azure-docs
+        - id: 78446840
+          name: MicrosoftDocs/azure-docs-sdk-node
+        - id: 92255956
+          name: MicrosoftDocs/azure-docs-sdk-python
+        - id: 116188777
+          name: MicrosoftDocs/azure-docs-sdk-go
+        - id: 727874435
+          name: MicrosoftDocs/azure-docs-pr-template
+        - id: 2928944
+          name: Azure/azure-sdk-for-net
+        - id: 209416147
+          name: Azure/azure-sdk-for-net-samples
+        - id: 364669233
+          name: Azure/azure-sdk-for-net-assets
+        - id: 864808802
+          name: Azure/dapeng0929-azure-sdk-for-net
+        - id: 4127088
+          name: Azure/azure-sdk-for-python
+        - id: 364667435
+          name: Azure/azure-sdk-for-python-assets

@@ -1,0 +1,9 @@
+name: redot-engine
+type: Project
+data:
+  platforms:
+  - name: GitHub
+    type: Code Hosting
+    repos:
+    - id: 106836261
+      name: Redot-Engine/redot-engine

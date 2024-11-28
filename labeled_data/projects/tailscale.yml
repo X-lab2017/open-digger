@@ -1,0 +1,29 @@
+name: tailscale
+type: Project
+data:
+  platforms:
+  - name: GitHub
+    type: Code Hosting
+    repos:
+    - id: 237523442
+      name: tailscale/tailscale
+    - id: 248327797
+      name: tailscale/tailscale-qpkg
+    - id: 254769328
+      name: tailscale/tailscale-synology
+    - id: 255942775
+      name: tailscale/tailscale-android
+    - id: 268364090
+      name: tailscale/tailscale-chocolatey
+    - id: 327685695
+      name: tailscale/terraform-provider-tailscale
+    - id: 453523480
+      name: tailscale/tailscale-client-go
+    - id: 524317145
+      name: tailscale/caddy-tailscale
+    - id: 524862735
+      name: tailscale/tailscale-aws-host-acl-updater
+    - id: 604394538
+      name: tailscale/libtailscale
+    - id: 816907305
+      name: tailscale/terraform-aws-tailscale-site2sitevpn

@@ -1,0 +1,13 @@
+name: free-programming-books
+type: Project
+data:
+  platforms:
+  - name: GitHub
+    type: Code Hosting
+    repos:
+    - id: 13491895
+      name: EbookFoundation/free-programming-books
+    - id: 452789356
+      name: EbookFoundation/free-programming-books-search
+    - id: 485501489
+      name: EbookFoundation/free-programming-books-parser

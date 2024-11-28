@@ -1,0 +1,11 @@
+name: brave-browser
+type: Project
+data:
+  platforms:
+  - name: GitHub
+    type: Code Hosting
+    repos:
+    - id: 110178895
+      name: brave/brave-browser
+    - id: 166142337
+      name: brave/brave-browser-snap

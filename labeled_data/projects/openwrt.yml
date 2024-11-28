@@ -1,0 +1,11 @@
+name: openwrt
+type: Project
+data:
+  platforms:
+  - name: GitHub
+    type: Code Hosting
+    repos:
+    - id: 45821540
+      name: openwrt/openwrt
+    - id: 303310479
+      name: openwrt/firmware-selector-openwrt-org

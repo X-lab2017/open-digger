@@ -1,0 +1,9 @@
+name: hackpad
+type: Project
+data:
+  platforms:
+  - name: GitHub
+    type: Code Hosting
+    repos:
+    - id: 854802649
+      name: hackclub/hackpad

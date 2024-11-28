@@ -1,0 +1,25 @@
+name: server
+type: Project
+data:
+  platforms:
+  - name: GitHub
+    type: Code Hosting
+    repos:
+    - id: 60243197
+      name: nextcloud/server
+    - id: 62319989
+      name: nextcloud/lookup-server
+    - id: 62881517
+      name: nextcloud/survey_server
+    - id: 63251354
+      name: nextcloud/client_updater_server
+    - id: 63685607
+      name: nextcloud/serverinfo
+    - id: 63944810
+      name: nextcloud/server-packages
+    - id: 136926166
+      name: nextcloud/changelog_server
+    - id: 205429728
+      name: nextcloud/documentserver_community
+    - id: 672008429
+      name: nextcloud/server-side-encryption-testdata

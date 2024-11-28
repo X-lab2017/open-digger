@@ -15,6 +15,11 @@ data:
           name: apache/openwhisk
         - id: 66573241
           name: hyperledger/fabric
+        - id: 714953011
+          name: ibm-developer-skills-network/Centralized-repository-shipping_calculations
+        - id: 448124380
+          name: ibm-developer-skills-network/gkpbt-css-circle
+        
       orgs:
         - id: 1459110
           name: IBM

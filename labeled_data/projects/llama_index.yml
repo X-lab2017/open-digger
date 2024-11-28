@@ -1,0 +1,9 @@
+name: llama_index
+type: Project
+data:
+  platforms:
+  - name: GitHub
+    type: Code Hosting
+    repos:
+    - id: 560704231
+      name: run-llama/llama_index

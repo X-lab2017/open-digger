@@ -1,0 +1,9 @@
+name: story-validators-race
+type: Project
+data:
+  platforms:
+  - name: GitHub
+    type: Code Hosting
+    repos:
+    - id: 852613412
+      name: stakeme-team/story-validators-race

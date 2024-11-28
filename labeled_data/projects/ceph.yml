@@ -1,0 +1,131 @@
+name: ceph
+type: Project
+data:
+  platforms:
+  - name: GitHub
+    type: Code Hosting
+    repos:
+    - id: 2310495
+      name: ceph/ceph
+    - id: 2343066
+      name: ceph/ceph-qa-chef
+    - id: 2343211
+      name: ceph/ceph-client
+    - id: 2381732
+      name: ceph/ceph-qa-suite
+    - id: 2381767
+      name: ceph/autobuild-ceph
+    - id: 2382208
+      name: ceph/ceph-cookbook
+    - id: 2382227
+      name: ceph/ceph-client-standalone
+    - id: 2382336
+      name: ceph/ceph-build
+    - id: 2387020
+      name: ceph/ceph-openstack-tools
+    - id: 2396782
+      name: ceph/ceph-autotests
+    - id: 2751743
+      name: ceph/barclamp-ceph
+    - id: 3064276
+      name: ceph/ceph-tools
+    - id: 4631245
+      name: ceph/ceph-kdump-copy
+    - id: 5275043
+      name: ceph/package-ceph-barclamp
+    - id: 5786856
+      name: ceph/ceph-deploy
+    - id: 6678636
+      name: ceph/ceph-nagios-plugin
+    - id: 12157501
+      name: ceph/ceph-nagios-plugins
+    - id: 15239495
+      name: ceph/puppet-ceph
+    - id: 17373313
+      name: ceph/ceph-ansible
+    - id: 17424681
+      name: ceph/ceph-kmod-rpm
+    - id: 18561321
+      name: ceph/cephfs-hadoop
+    - id: 24345925
+      name: ceph/ceph-erasure-code-corpus
+    - id: 28012285
+      name: ceph/ceph-object-corpus
+    - id: 28826556
+      name: ceph/ceph-dokan
+    - id: 29601598
+      name: ceph/ceph-container
+    - id: 31261140
+      name: ceph/ceph-devstack
+    - id: 34016025
+      name: ceph/git.ceph.com
+    - id: 34542634
+      name: ceph/ceph-cm-ansible
+    - id: 35046025
+      name: ceph/ceph-installer
+    - id: 36099760
+      name: ceph/ceph-ci
+    - id: 39569215
+      name: ceph/ceph-ruby
+    - id: 41673361
+      name: ceph/go-ceph
+    - id: 46122627
+      name: ceph/ceph-chef
+    - id: 48188366
+      name: ceph/ceph-brag
+    - id: 68758051
+      name: ceph/ceph-rust
+    - id: 69524576
+      name: ceph/ceph-iscsi-tools
+    - id: 69600903
+      name: ceph/ceph-iscsi-config
+    - id: 73869146
+      name: ceph/ceph-iscsi-cli
+    - id: 74997166
+      name: ceph/ceph-medic
+    - id: 91771242
+      name: ceph/cephmetrics
+    - id: 101767086
+      name: ceph/ceph-helm
+    - id: 116693072
+      name: ceph/ceph-csi
+    - id: 140762768
+      name: ceph/cephmetrics-osp
+    - id: 155882428
+      name: ceph/ceph-iscsi
+    - id: 170199139
+      name: ceph/ceph-upgrade
+    - id: 175224151
+      name: ceph/ceph-mixins
+    - id: 210629563
+      name: ceph/ceph-notes
+    - id: 216706163
+      name: ceph/ceph-telemetry
+    - id: 225655354
+      name: ceph/ceph-daemon-adoption-corpus
+    - id: 226896648
+      name: ceph/ceph-salt
+    - id: 227449290
+      name: ceph/cephadm-adoption-corpus
+    - id: 229093806
+      name: ceph/ceph-win32-tests
+    - id: 259987004
+      name: ceph/ceph.io
+    - id: 338088981
+      name: ceph/ceph-nvmeof
+    - id: 364600558
+      name: ceph/ceph-cosi
+    - id: 364964444
+      name: ceph/cephadm-ansible
+    - id: 381977453
+      name: ceph/ceph-boost
+    - id: 381977806
+      name: ceph/ceph-ndctl
+    - id: 419771073
+      name: ceph/ceph-pr-checklist-action
+    - id: 668836366
+      name: ceph/cephbot-slack
+    - id: 801183222
+      name: ceph/ceph-csi-operator
+    - id: 832360838
+      name: ceph/ceph.automation

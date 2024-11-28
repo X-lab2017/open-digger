@@ -1,0 +1,35 @@
+name: metabase
+type: Project
+data:
+  platforms:
+  - name: GitHub
+    type: Code Hosting
+    repos:
+    - id: 30203935
+      name: metabase/metabase
+    - id: 85358422
+      name: metabase/metabase-buildpack
+    - id: 93572174
+      name: metabase/metabase-clojure-mode
+    - id: 147160175
+      name: metabase/metabase-docker-ci
+    - id: 279315388
+      name: metabase/metabase-qa
+    - id: 699919573
+      name: metabase/metabase-nodejs-express-interactive-embedding-sample
+    - id: 736364246
+      name: metabase/metabase-ruby-static-embedding-sample
+    - id: 736656590
+      name: metabase/metabase-nodejs-static-embedding-sample
+    - id: 737074446
+      name: metabase/metabase-static-embedding-samples
+    - id: 760633401
+      name: metabase/clojars-metabase
+    - id: 824142246
+      name: metabase/metabase-registry
+    - id: 829036901
+      name: metabase/metabase-services-tools
+    - id: 833597602
+      name: metabase/metabase-nodejs-react-sdk-embedding-sample
+    - id: 854674966
+      name: metabase/metabase-debugger

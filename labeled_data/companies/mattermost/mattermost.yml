@@ -1,0 +1,223 @@
+name: mattermost
+type: Project
+data:
+  platforms:
+  - name: GitHub
+    type: Code Hosting
+    repos:
+    - id: 37448451
+      name: mattermost/mattermost
+    - id: 44194288
+      name: mattermost/mattermost-integration-gitlab
+    - id: 44757161
+      name: mattermost/mattermost-integration-giphy
+    - id: 47103470
+      name: mattermost/mattermost-docker
+    - id: 47141001
+      name: mattermost/mattermost-push-proxy
+    - id: 47291349
+      name: mattermost/mattermost-ios-classic
+    - id: 52457754
+      name: mattermost/mattermost-android-classic
+    - id: 58744418
+      name: mattermost/mattermost-driver-javascript
+    - id: 60027678
+      name: mattermost/mattermost-docker-preview
+    - id: 61257848
+      name: mattermost/mattermost-oauth2-client-sample
+    - id: 66390801
+      name: mattermost/mattermost-heroku
+    - id: 67718239
+      name: mattermost/mattermost-api-reference
+    - id: 69501671
+      name: mattermost/mattermost-load-test
+    - id: 70265724
+      name: mattermost/mattermost-mobile
+    - id: 74384912
+      name: mattermost/mattermost-webrtc
+    - id: 84744614
+      name: mattermost/mattermost-redux
+    - id: 85891746
+      name: mattermost/mattermost-helm
+    - id: 88663981
+      name: mattermost/mattermost-mattermod
+    - id: 91580645
+      name: mattermost/mattermost-elasticsearch-docker
+    - id: 98680191
+      name: mattermost/mattermost-developer-documentation
+    - id: 100731936
+      name: mattermost/mattermost-developer-kit
+    - id: 101226632
+      name: mattermost/mattermost-interactive-post-demo
+    - id: 102689445
+      name: mattermost/mattermost-webapp
+    - id: 104108008
+      name: mattermost/mattermost-build
+    - id: 112386598
+      name: mattermost/mattermost-plugin-jira
+    - id: 112765756
+      name: mattermost/mattermost-plugin-zoom
+    - id: 114046594
+      name: mattermost/mattermost-webapp-profiling
+    - id: 122987053
+      name: mattermost/mattermost-plugin-github
+    - id: 130732659
+      name: mattermost/mattermost-handbook-1
+    - id: 134631093
+      name: mattermost/mattermost-plugins
+    - id: 136530886
+      name: mattermost/mattermost-utilities
+    - id: 141299506
+      name: mattermost/mattermost-plugin-starter-template
+    - id: 142199546
+      name: mattermost/mattermost-plugin-demo
+    - id: 142596810
+      name: mattermost/mattermost-browser-extension
+    - id: 144231977
+      name: mattermost/mattermost-vagrant-galera-sample
+    - id: 144693887
+      name: mattermost/mattermost-redhat-docker
+    - id: 152437229
+      name: mattermost/eslint-plugin-mattermost
+    - id: 158473929
+      name: mattermost/mattermost-plugin-giphy
+    - id: 164509768
+      name: mattermost/mattermost-plugin-demo-creator
+    - id: 168573928
+      name: mattermost/mattermost-plugin-community
+    - id: 174368288
+      name: mattermost/mattermost-operator
+    - id: 174605891
+      name: mattermost/mattermost-plugin-nps
+    - id: 176593630
+      name: mattermost/mattermost-plugin-gitlab
+    - id: 179745989
+      name: mattermost/mattermost-cloud
+    - id: 180856508
+      name: mattermost/mattermost-metrics-server
+    - id: 186012495
+      name: mattermost/mattermost-cloud-monitoring
+    - id: 196266169
+      name: mattermost/mattermost-plugin-cloud
+    - id: 200297608
+      name: mattermost/mattermost-marketplace
+    - id: 203577095
+      name: mattermost/action-mattermost-notify
+    - id: 216656966
+      name: mattermost/mattermost-plugin-mscalendar
+    - id: 218957923
+      name: mattermost/mattermost-sa-code
+    - id: 220013641
+      name: mattermost/mattermost-handbook
+    - id: 221505734
+      name: mattermost/mattermost-hackathon-nov2019
+    - id: 222034361
+      name: mattermost/mattermost-plugin-google-calendar
+    - id: 222960770
+      name: mattermost/mattermost-load-test-ng
+    - id: 223439084
+      name: mattermost/mattermost-plugin-api
+    - id: 223811525
+      name: mattermost/mattermost-govet
+    - id: 225907426
+      name: mattermost/mattermost-hackathon-hackerearth-jan2020
+    - id: 232152813
+      name: mattermost/mattermost-plugin-nop
+    - id: 232155917
+      name: mattermost/mattermost-looker
+    - id: 232156183
+      name: mattermost/mattermost-data-warehouse
+    - id: 234944075
+      name: mattermost/mattermost-plugin-workflow-client
+    - id: 242203119
+      name: mattermost/mattermost-documentation
+    - id: 243358763
+      name: mattermost/mattermost-plugin-playbooks
+    - id: 245476261
+      name: mattermost/mattermost-plugin-channel-export
+    - id: 254072434
+      name: mattermost/mattermost-qa-automation
+    - id: 262324191
+      name: mattermost/mattermost-cloud-database-factory
+    - id: 278407192
+      name: mattermost/mattermost-plugin-msteams-meetings
+    - id: 292418613
+      name: mattermost/mattermost-plugin-apps
+    - id: 292574796
+      name: mattermost/mattermost-plugin-test
+    - id: 312300343
+      name: mattermost/mattermost-hackathon-dec2020
+    - id: 328790627
+      name: mattermost/mattermost-performance-assets
+    - id: 338314106
+      name: mattermost/mattermost-omnibus
+    - id: 344471379
+      name: mattermost/mattermost-app-test
+    - id: 349104072
+      name: mattermost/mattermost-apps-cloud-deployer
+    - id: 365035466
+      name: mattermost/mattermost-plugin-debug-webapp
+    - id: 392014929
+      name: mattermost/mattermost-plugin-build-deprecated
+    - id: 409191050
+      name: mattermost/mattermost-plugin-calls
+    - id: 457788633
+      name: mattermost/mattermost-cloud-lambdas
+    - id: 481114264
+      name: mattermost/mattermost-gitpod-config
+    - id: 499086910
+      name: mattermost/mattermost-plugin-servicenow
+    - id: 505825493
+      name: mattermost/mattermost-security
+    - id: 521632843
+      name: mattermost/mattermost-product-templates
+    - id: 525675809
+      name: mattermost/mattermost-test-management
+    - id: 526260046
+      name: mattermost/mattermost-app-examples
+    - id: 572597269
+      name: mattermost/mattermost-oncall-handler
+    - id: 614508992
+      name: mattermost/mattermost-plugin-msteams
+    - id: 635850823
+      name: mattermost/mattermost-plugin-ai
+    - id: 640692278
+      name: mattermost/mattermost-ai-framework
+    - id: 644518268
+      name: mattermost/mattermost-ai-site
+    - id: 690582275
+      name: mattermost/mattermost-pgbouncer-config-reload
+    - id: 700803127
+      name: mattermost/mattermost-plugin-legal-hold
+    - id: 706018742
+      name: mattermost/mattermost-plugin-bulk-invite
+    - id: 717036056
+      name: mattermost/mattermost-plugin-metrics
+    - id: 770273531
+      name: mattermost/mattermost-plugin-user-survey
+    - id: 771662306
+      name: mattermost/testcontainers-mattermost-go
+    - id: 771662351
+      name: mattermost/testcontainers-mattermost-nodejs
+    - id: 772234053
+      name: mattermost/mattermost-cloudnative-bootstrapper
+    - id: 804765521
+      name: mattermost/mattermost-pgloader-docker
+    - id: 817406167
+      name: mattermost/mattermost-plugin-boards
+    - id: 841318398
+      name: mattermost/mattermost-plugin-attachments-remover
+    - id: 843462901
+      name: mattermost/mattermost-release-cataloger
+    - id: 844566150
+      name: mattermost/mattermost-teams-tab
+    - id: 844680235
+      name: mattermost/mattermost-plugin-ms-teams-playbooks-watcher
+    - id: 854867172
+      name: mattermost/mattermost-plugin-post-delete-helper
+    - id: 856334306
+      name: mattermost/mattermost-atlantis-docker
+    - id: 858864228
+      name: mattermost/mattermost-plugin-google-drive
+    - id: 868972553
+      name: mattermost/mattermost-dbt

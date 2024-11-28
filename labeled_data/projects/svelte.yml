@@ -1,0 +1,85 @@
+name: svelte
+type: Project
+data:
+  platforms:
+  - name: GitHub
+    type: Code Hosting
+    repos:
+    - id: 74292838
+      name: sveltejs/svelte-todomvc
+    - id: 74293321
+      name: sveltejs/svelte
+    - id: 74293482
+      name: sveltejs/rollup-plugin-svelte
+    - id: 74298359
+      name: sveltejs/svelte-dbmonster
+    - id: 74524145
+      name: sveltejs/v2.svelte.dev
+    - id: 74859888
+      name: sveltejs/svelte-cli
+    - id: 75853393
+      name: sveltejs/svelte-loader
+    - id: 83698482
+      name: sveltejs/svelte-custom-elements
+    - id: 83804376
+      name: sveltejs/svelte-hackernews
+    - id: 84816344
+      name: sveltejs/svelte-bench
+    - id: 90505847
+      name: sveltejs/svelte-transitions-fade
+    - id: 90506809
+      name: sveltejs/svelte-transitions
+    - id: 90538126
+      name: sveltejs/svelte-transitions-fly
+    - id: 90544034
+      name: sveltejs/svelte-transitions-slide
+    - id: 90555351
+      name: sveltejs/svelte-extras
+    - id: 114012009
+      name: sveltejs/hn.svelte.technology
+    - id: 115166680
+      name: sveltejs/sapper-legacy.svelte.dev
+    - id: 115295685
+      name: sveltejs/sveltegram
+    - id: 127942650
+      name: sveltejs/svelte-virtual-list
+    - id: 129190141
+      name: sveltejs/svelte-upgrade
+    - id: 131910983
+      name: sveltejs/svelte-scroller
+    - id: 132792753
+      name: sveltejs/svelte-preprocess
+    - id: 133737478
+      name: sveltejs/svelte-transitions-draw
+    - id: 134120111
+      name: sveltejs/svelte-subdivide
+    - id: 145431888
+      name: sveltejs/svelte-atom
+    - id: 145774206
+      name: sveltejs/prettier-plugin-svelte
+    - id: 159911896
+      name: sveltejs/eslint-plugin-svelte3
+    - id: 178000502
+      name: sveltejs/svelte-repl
+    - id: 185185804
+      name: sveltejs/hn.svelte.dev
+    - id: 188643934
+      name: sveltejs/svelte-devtools
+    - id: 211738922
+      name: sveltejs/svelte-hmr
+    - id: 335057821
+      name: sveltejs/api.svelte.dev
+    - id: 348488920
+      name: sveltejs/vite-plugin-svelte
+    - id: 360739293
+      name: sveltejs/svelte-eslint-parser
+    - id: 362455201
+      name: sveltejs/eslint-plugin-svelte
+    - id: 490429165
+      name: sveltejs/learn.svelte.dev
+    - id: 637203542
+      name: sveltejs/svelte-ecosystem-ci
+    - id: 813142019
+      name: sveltejs/svelte.dev
+    - id: 863001745
+      name: sveltejs/svelte-json-tree

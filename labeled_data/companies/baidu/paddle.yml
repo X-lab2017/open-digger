@@ -7,6 +7,99 @@ data:
       orgs:
         - id: 23534030
           name: PaddlePaddle
+      repos:
+        - id: 65711522
+          name: PaddlePaddle/Paddle
+        - id: 89484677
+          name: PaddlePaddle/PaddleCloud
+        - id: 104208128
+          name: PaddlePaddle/Paddle-Lite
+        - id: 110688239
+          name: PaddlePaddle/PaddleSpeech
+        - id: 127058653
+          name: PaddlePaddle/Paddle2ONNX
+        - id: 127693333
+          name: PaddlePaddle/paddle-ce-latest-kpis
+        - id: 161509700
+          name: PaddlePaddle/PaddleFleetX
+        - id: 162672577
+          name: PaddlePaddle/PaddleHub
+        - id: 164796418
+          name: PaddlePaddle/X2Paddle
+        - id: 203514079
+          name: PaddlePaddle/Paddle-Lite-Demo
+        - id: 204380779
+          name: PaddlePaddle/PaddleSeg
+        - id: 210873203
+          name: PaddlePaddle/PaddleFL
+        - id: 217475193
+          name: PaddlePaddle/PaddleDetection
+        - id: 224622052
+          name: PaddlePaddle/PaddleCraft
+        - id: 228290594
+          name: PaddlePaddle/PaddleSlim
+        - id: 246509073
+          name: PaddlePaddle/PaddleX
+        - id: 250154445
+          name: PaddlePaddle/Paddle.js
+        - id: 251201169
+          name: PaddlePaddle/PaddleClas
+        - id: 259220361
+          name: PaddlePaddle/Paddle-bot
+        - id: 259513732
+          name: PaddlePaddle/PaddleRec
+        - id: 261698998
+          name: PaddlePaddle/Paddle-Inference-Demo
+        - id: 262296122
+          name: PaddlePaddle/PaddleOCR
+        - id: 273214029
+          name: PaddlePaddle/PaddleGAN
+        - id: 289874518
+          name: PaddlePaddle/paddle_upgrade_tool
+        - id: 312259012
+          name: PaddlePaddle/PaddleVideo
+        - id: 314704349
+          name: PaddlePaddle/PaddleHelix
+        - id: 319575342
+          name: PaddlePaddle/PaddleRobotics
+        - id: 336274588
+          name: PaddlePaddle/PaddleNLP
+        - id: 365999954
+          name: PaddlePaddle/PaddleSleeve
+        - id: 383138186
+          name: PaddlePaddle/PaddleTest
+        - id: 385199026
+          name: PaddlePaddle/PaddleSpatial
+        - id: 426046572
+          name: PaddlePaddle/PaddleScience
+        - id: 427252454
+          name: PaddlePaddle/PaddleDTX
+        - id: 436903861
+          name: PaddlePaddle/PaddleFlow
+        - id: 475341715
+          name: PaddlePaddle/PaddleCustomDevice
+        - id: 490292598
+          name: PaddlePaddle/PaddleTransfer
+        - id: 493152580
+          name: PaddlePaddle/PaddleTS
+        - id: 513505410
+          name: PaddlePaddle/PaddleYOLO
+        - id: 513813137
+          name: PaddlePaddle/Paddle3D
+        - id: 515526146
+          name: PaddlePaddle/PaddleRS
+        - id: 520095016
+          name: PaddlePaddle/PaddleSports
+        - id: 566237024
+          name: PaddlePaddle/PaddleDepth
+        - id: 622926337
+          name: PaddlePaddle/PaddleSOT
+        - id: 662392605
+          name: PaddlePaddle/PaddleMIX
+        - id: 803635138
+          name: PaddlePaddle/PaddleAPEX
+        - id: 854648081
+          name: PaddlePaddle/PaddleSecurityTest
     - name: Gitee
       type: Code Hosting
       orgs:

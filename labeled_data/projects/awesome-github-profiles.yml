@@ -1,0 +1,9 @@
+name: awesome-github-profiles
+type: Project
+data:
+  platforms:
+  - name: GitHub
+    type: Code Hosting
+    repos:
+    - id: 832435213
+      name: recodehive/awesome-github-profiles

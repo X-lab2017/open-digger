@@ -1,0 +1,9 @@
+name: bioconda-recipes
+type: Project
+data:
+  platforms:
+  - name: GitHub
+    type: Code Hosting
+    repos:
+    - id: 42372094
+      name: bioconda/bioconda-recipes

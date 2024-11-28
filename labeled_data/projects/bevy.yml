@@ -1,0 +1,23 @@
+name: bevy
+type: Project
+data:
+  platforms:
+  - name: GitHub
+    type: Code Hosting
+    repos:
+    - id: 234798675
+      name: bevyengine/bevy
+    - id: 248689491
+      name: bevyengine/bevy-website
+    - id: 287400131
+      name: bevyengine/bevy-crate-reservations
+    - id: 288261222
+      name: bevyengine/bevy-assets
+    - id: 454603369
+      name: bevyengine/bevy_github_ci_template
+    - id: 579880126
+      name: bevyengine/bevy-community
+    - id: 741686921
+      name: bevyengine/bevy_editor_prototypes
+    - id: 771917331
+      name: bevyengine/bevy-donors
