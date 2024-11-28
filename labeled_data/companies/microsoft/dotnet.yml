@@ -9,3 +9,10 @@ data:
           name: dotnet
         - id: 27453006
           name: dotnet-architecture
+      repos:
+        - id: 17620347
+          name: dotnet/aspnetcore
+        - id: 28239455
+          name: dotnet/AspNetCore.Docs
+        - id: 455380389
+          name: dotnet/AspNetCore.Docs.Samples
