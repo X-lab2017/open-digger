@@ -1,5 +1,5 @@
 name: nRF Connect
-type: Company
+type: Project
 data:
   platforms:
     - name: GitHub
