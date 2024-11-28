@@ -1,0 +1,8 @@
+name: Dota2-Gameplay
+type: Project
+data:
+  platforms:
+  - name: GitHub
+    repos:
+    - id: 499184667
+      name: ValveSoftware/Dota2-Gameplay

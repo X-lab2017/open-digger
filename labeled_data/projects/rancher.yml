@@ -1,0 +1,106 @@
+name: rancher
+type: Project
+data:
+  platforms:
+  - name: GitHub
+    repos:
+    - id: 26337322
+      name: rancher/rancher
+    - id: 26902629
+      name: rancher/go-rancher
+    - id: 28289050
+      name: rancher/rancher-node-simulator
+    - id: 30954262
+      name: rancher/rancher-compose
+    - id: 31576767
+      name: rancher/rancher-dns
+    - id: 39178161
+      name: rancher/rancher.github.io
+    - id: 39291004
+      name: rancher/rancher-metadata
+    - id: 40200219
+      name: rancher/rancher-mesos-executor
+    - id: 40200241
+      name: rancher/rancher-mesos-scheduler
+    - id: 40566276
+      name: rancher/jenkins-rancher
+    - id: 41051890
+      name: rancher/rancher-compose-executor
+    - id: 43917365
+      name: rancher/rancher-catalog-service
+    - id: 44330638
+      name: rancher/rancher-catalog
+    - id: 44336310
+      name: rancher/go-rancher-metadata
+    - id: 45090683
+      name: rancher/rancher-docker-api-proxy
+    - id: 45167398
+      name: rancher/rancher-swarm
+    - id: 48781924
+      name: rancher/rancher-net
+    - id: 63091766
+      name: rancher/rancher-cni-ipam
+    - id: 64791304
+      name: rancher/rancher-auth-service
+    - id: 68226280
+      name: rancher/rancher-flexvol
+    - id: 73349674
+      name: rancher/rancher-cni-bridge
+    - id: 75003018
+      name: rancher/rancher-catalog-v1.1
+    - id: 76827239
+      name: rancher/rancher-tools-catalog
+    - id: 77901579
+      name: rancher/rancher-auth-filter-service
+    - id: 78794718
+      name: rancher/rancher-domain-validation-service
+    - id: 79068771
+      name: rancher/jenkins-rancher-validations
+    - id: 84994781
+      name: rancher/rancher-ecr-credentials
+    - id: 85359682
+      name: rancher/rancher-cloud-controller-manager
+    - id: 103325291
+      name: rancher/rancher-etcd
+    - id: 103626758
+      name: rancher/rancher-host-local-ipam
+    - id: 107615484
+      name: rancher/rancher-flat-ipam
+    - id: 144171352
+      name: rancher/terraform-provider-rancher2-archive
+    - id: 186468979
+      name: rancher/terraform-provider-rancher2
+    - id: 215854218
+      name: rancher/terraform-rancher-server
+    - id: 227417616
+      name: rancher/rancher2-scaling
+    - id: 271083167
+      name: rancher/rancher-tv
+    - id: 290124724
+      name: rancher/rancher-operator
+    - id: 305813046
+      name: rancher/rancherd-upgrade
+    - id: 345814867
+      name: rancher/rancher-jobs
+    - id: 353805261
+      name: rancher/rancher-selinux
+    - id: 377421948
+      name: rancher/rancherd
+    - id: 414327889
+      name: rancher/terraform-rancher-project-collection
+    - id: 491172082
+      name: rancher/rancher-cleanup
+    - id: 531176488
+      name: rancher/rancher-docs
+    - id: 638931133
+      name: rancher/tf-rancher-up
+    - id: 660768676
+      name: rancher/terraform-rancher2-aws
+    - id: 661561295
+      name: rancher/cluster-api-provider-rancher
+    - id: 707097069
+      name: rancher/Rancher-Plugin-gMSA
+    - id: 728139765
+      name: rancher/rancher-turtles-e2e
+    - id: 839840287
+      name: rancher/rancher-product-docs

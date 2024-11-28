@@ -1,0 +1,10 @@
+name: uAssets
+type: Project
+data:
+  platforms:
+  - name: GitHub
+    repos:
+    - id: 55228249
+      name: uBlockOrigin/uAssets
+    - id: 472052829
+      name: uBlockOrigin/uAssetsCDN

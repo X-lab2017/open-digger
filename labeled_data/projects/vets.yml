@@ -1,0 +1,37 @@
+name: vets-api
+type: Project
+data:
+  platforms:
+  - name: GitHub
+    repos:
+    - id: 62409417
+      name: department-of-veterans-affairs/vets-api
+    - id: 129449226
+      name: department-of-veterans-affairs/vets-api-clients
+    - id: 430864384
+      name: department-of-veterans-affairs/vets-api-pghero
+    - id: 33202667
+      name: department-of-veterans-affairs/vets-website
+    - id: 127458458
+      name: department-of-veterans-affairs/generator-vets-website
+    - id: 66304117
+      name: department-of-veterans-affairs/vets-json-schema
+    - id: 152664242
+      name: department-of-veterans-affairs/vets-design-system-documentation
+    - id: 116394989
+      name: department-of-veterans-affairs/vetservices-partner-shareddata
+    - id: 127958850
+      name: department-of-veterans-affairs/vetservices-lib-filemanager
+    - id: 116395077
+      name: department-of-veterans-affairs/vetservices-partner-treatmentfacility
+    - id: 116395045
+      name: department-of-veterans-affairs/vetservices-partner-standarddata
+    - id: 51614914
+      name: department-of-veterans-affairs/vets.gov
+    - id: 70812477
+      name: department-of-veterans-affairs/vets.gov-content-style-guide
+    - id: 107593469
+      name: department-of-veterans-affairs/vets.gov-utility
+    - id: 69491914
+      name: department-of-veterans-affairs/vets.gov-designpattrns
+

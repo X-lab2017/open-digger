@@ -1,0 +1,8 @@
+name: cursor
+type: Project
+data:
+  platforms:
+  - name: GitHub
+    repos:
+    - id: 612781022
+      name: getcursor/cursor

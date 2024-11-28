@@ -1,0 +1,10 @@
+name: cal.com
+type: Project
+data:
+  platforms:
+  - name: GitHub
+    repos:
+    - id: 350360184
+      name: calcom/cal.com
+    - id: 752225987
+      name: calcom/polls.cal.com

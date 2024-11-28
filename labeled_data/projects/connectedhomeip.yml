@@ -1,0 +1,10 @@
+name: connectedhomeip
+type: Project
+data:
+  platforms:
+  - name: GitHub
+    repos:
+    - id: 244694174
+      name: project-chip/connectedhomeip
+    - id: 369554677
+      name: project-chip/connectedhomeip-doc

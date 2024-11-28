@@ -1,0 +1,8 @@
+name: os
+type: wolfi
+data:
+  platforms:
+  - name: GitHub
+    orgs:
+    - id: 112963370
+      name: wolfi-dev

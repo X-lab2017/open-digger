@@ -1,0 +1,28 @@
+name: supabase
+type: Project
+data:
+  platforms:
+  - name: GitHub
+    repos:
+    - id: 214587193
+      name: supabase/supabase
+    - id: 264192686
+      name: supabase/supabase-js
+    - id: 290969078
+      name: supabase/supabase-py
+    - id: 334550286
+      name: supabase/supabase-dart
+    - id: 353203860
+      name: supabase/supabase-ui-web
+    - id: 369991603
+      name: supabase/supabase-swift
+    - id: 383093248
+      name: supabase/supabase-flutter
+    - id: 520756838
+      name: supabase/supabase-action-example
+    - id: 668036735
+      name: supabase/supabase-grafana
+    - id: 746555567
+      name: supabase/terraform-provider-supabase
+    - id: 787278582
+      name: supabase/supabase.ai

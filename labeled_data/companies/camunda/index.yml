@@ -1,0 +1,8 @@
+name: Camunda
+type: Company
+data:
+  platforms:
+    - name: GitHub
+      orgs:
+        - id: 2443838
+          name: camunda

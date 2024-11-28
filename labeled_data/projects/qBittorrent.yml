@@ -1,0 +1,12 @@
+name: qBittorrent
+type: Project
+data:
+  platforms:
+  - name: GitHub
+    repos:
+    - id: 3351871
+      name: qbittorrent/qBittorrent
+    - id: 77461951
+      name: qbittorrent/qBittorrent-website
+    - id: 575188236
+      name: qbittorrent/docker-qbittorrent-nox

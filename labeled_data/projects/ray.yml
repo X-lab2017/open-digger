@@ -1,0 +1,78 @@
+name: ray
+type: Project
+data:
+  platforms:
+  - name: GitHub
+    repos:
+    - id: 51269228
+      name: ray-project/ray-legacy
+    - id: 71932349
+      name: ray-project/ray
+    - id: 75673874
+      name: ray-project/raylibs
+    - id: 77124020
+      name: ray-project/raynomics
+    - id: 77189727
+      name: ray-project/raytracer
+    - id: 89810157
+      name: ray-project/ray-scripts
+    - id: 103190109
+      name: ray-project/ray-project.github.io
+    - id: 206633720
+      name: ray-project/ray-docs-zh
+    - id: 264968941
+      name: ray-project/spark-ray-example
+    - id: 303662480
+      name: ray-project/xgboost_ray
+    - id: 308444913
+      name: ray-project/kuberay
+    - id: 318274659
+      name: ray-project/maze-raylit
+    - id: 322413985
+      name: ray-project/mlflow-ray-serve
+    - id: 334212069
+      name: ray-project/ray_lightning
+    - id: 364083576
+      name: ray-project/ray_shuffling_data_loader
+    - id: 376087328
+      name: ray-project/lightgbm_ray
+    - id: 407218810
+      name: ray-project/ray_beam_runner
+    - id: 478263295
+      name: ray-project/2022_04_13_ray_serve_meetup_demo
+    - id: 522339023
+      name: ray-project/ray-summit-2022
+    - id: 536562529
+      name: ray-project/rayci
+    - id: 537317100
+      name: ray-project/ray-educational-materials
+    - id: 547846939
+      name: ray-project/ray-runtime-env-plugins
+    - id: 565999280
+      name: ray-project/kuberay-helm
+    - id: 567190910
+      name: ray-project/rayfed
+    - id: 574677785
+      name: ray-project/ray-saturday-dec-2022
+    - id: 610101758
+      name: ray-project/ray-acm-workshop-2023
+    - id: 630722232
+      name: ray-project/ray-serve-arize-observe
+    - id: 632188563
+      name: ray-project/langchain-ray
+    - id: 632594567
+      name: ray-project/ray-demos
+    - id: 647848107
+      name: ray-project/ray-llm
+    - id: 657810010
+      name: ray-project/scipy-ray-scalable-ml-tutorial-2023
+    - id: 665069356
+      name: ray-project/Ray-Forward
+    - id: 671707681
+      name: ray-project/ray-train-user-testing
+    - id: 714086843
+      name: ray-project/ray-data-user-testing
+    - id: 778547578
+      name: ray-project/ray-open-ports-checker
+    - id: 877054157
+      name: ray-project/Ray-Connect

@@ -1,0 +1,34 @@
+name: polars
+type: Project
+data:
+  platforms:
+  - name: GitHub
+    repos:
+    - id: 263727855
+      name: pola-rs/polars
+    - id: 320770502
+      name: pola-rs/polars-book
+    - id: 369508995
+      name: pola-rs/polars-static
+    - id: 408220164
+      name: pola-rs/polars-web
+    - id: 458463826
+      name: pola-rs/dask-polars
+    - id: 484670441
+      name: pola-rs/polars-book-cn
+    - id: 491797414
+      name: pola-rs/polars-benchmark
+    - id: 519710571
+      name: pola-rs/nodejs-polars
+    - id: 582387164
+      name: pola-rs/r-polars
+    - id: 584345173
+      name: pola-rs/js-polars
+    - id: 584800315
+      name: pola-rs/pyo3-polars
+    - id: 591989371
+      name: pola-rs/polars-parquet
+    - id: 676901781
+      name: pola-rs/polars-cli
+    - id: 703486176
+      name: pola-rs/polars-xdt

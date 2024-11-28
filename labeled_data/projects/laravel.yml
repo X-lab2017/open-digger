@@ -1,0 +1,9 @@
+name: Laravel
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 528860
+          name: laravel

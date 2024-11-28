@@ -1,0 +1,8 @@
+name: TheAlgorithms
+type: Project
+data:
+  platforms:
+  - name: GitHub
+    orgs:
+    - id: 20487725
+      name: TheAlgorithms
