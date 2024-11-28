@@ -1,0 +1,17 @@
+data:
+  platforms:
+  - name: GitHub
+    repos:
+    - id: 68312233
+      name: microsoft/vcpkg
+    - id: 319781556
+      name: microsoft/vcpkg-tool
+    - id: 563472204
+      name: microsoft/vcpkg-docs
+    - id: 356000259
+      name: microsoft/vcpkg-ce-catalog
+    - id: 383914584
+      name: microsoft/vcpkg-ce
+    type: Code Hosting
+name: vcpkg
+type: Project

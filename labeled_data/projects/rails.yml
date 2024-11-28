@@ -1,0 +1,9 @@
+data:
+  platforms:
+  - name: GitHub
+    orgs:
+    - id: 4223
+      name: rails
+    type: Code Hosting
+name: rails
+type: Project

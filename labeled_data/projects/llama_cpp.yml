@@ -1,0 +1,9 @@
+data:
+  platforms:
+  - name: GitHub
+    repos:
+    - id: 612354784
+      name: ggerganov/llama.cpp
+    type: Code Hosting
+name: llama.cpp
+type: Project

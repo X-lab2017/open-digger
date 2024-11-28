@@ -1,0 +1,9 @@
+data:
+  platforms:
+  - name: GitHub
+    repos:
+    - id: 408858330
+      name: raycast/extensions
+    type: Code Hosting
+name: extensions
+type: Project

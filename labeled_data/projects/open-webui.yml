@@ -1,0 +1,9 @@
+data:
+  platforms:
+  - name: GitHub
+    repos:
+    - id: 701547123
+      name: open-webui/open-webui
+    type: Code Hosting
+name: open-webui
+type: Project

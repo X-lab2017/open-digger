@@ -1,0 +1,53 @@
+data:
+  platforms:
+  - name: GitHub
+    repos:
+    - id: 426075845
+      name: MystenLabs/sui
+    - id: 498899333
+      name: MystenLabs/sui-genesis
+    - id: 674991247
+      name: MystenLabs/blackjack-sui
+    - id: 423635889
+      name: MystenLabs/narwhal
+    - id: 714043074
+      name: MystenLabs/walrus-sites
+    - id: 641134164
+      name: MystenLabs/suins-contracts
+    - id: 617588703
+      name: MystenLabs/sui-doctor
+    - id: 537208054
+      name: MystenLabs/Sui-Unity
+    - id: 505886613
+      name: MystenLabs/sui-axelar
+    - id: 761831668
+      name: MystenLabs/sui-rust-sdk
+    - id: 707343354
+      name: MystenLabs/sui-dev-newsletter
+    - id: 725834582
+      name: MystenLabs/sui-gas-pool
+    - id: 706032507
+      name: MystenLabs/sui-colors
+    - id: 660025067
+      name: MystenLabs/sui-circulation-api
+    - id: 733142353
+      name: MystenLabs/evm-sui-bridge
+    - id: 670531989
+      name: MystenLabs/sui-fantasy
+    - id: 787844564
+      name: MystenLabs/minting-server
+    - id: 781631404
+      name: MystenLabs/sui-explorer
+    - id: 649820312
+      name: MystenLabs/suins-docs
+    - id: 769986145
+      name: MystenLabs/scion-sui-deploy
+    - id: 780650920
+      name: MystenLabs/sui-native-randomness
+    - id: 810455912
+      name: MystenLabs/sui-ts-benchmark
+    - id: 775491930
+      name: MystenLabs/suifrens-display-system
+    type: Code Hosting
+name: sui
+type: Project

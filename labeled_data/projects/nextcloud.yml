@@ -1,0 +1,9 @@
+data:
+  platforms:
+  - name: GitHub
+    orgs:
+    - id: 19211038
+      name: nextcloud
+    type: Code Hosting
+name: server
+type: Project

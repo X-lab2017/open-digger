@@ -1,0 +1,9 @@
+data:
+  platforms:
+  - name: GitHub
+    orgs:
+    - id: 52242
+      name: gentoo
+    type: Code Hosting
+name: gentoo
+type: Project

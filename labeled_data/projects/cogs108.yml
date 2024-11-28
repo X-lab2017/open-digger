@@ -1,0 +1,9 @@
+data:
+  platforms:
+  - name: GitHub
+    orgs:
+    - id: 26914064
+      name: COGS108
+    type: Code Hosting
+name: COGS108
+type: Project
