@@ -1,4 +1,5 @@
-import { getLabelData } from "../label_data_utils";
+import { query } from "../db/clickhouse";
+import { getLabelData, getPlatformData } from "../label_data_utils";
 
 (async () => {
   const labels = getLabelData();
@@ -15,5 +16,11 @@ import { getLabelData } from "../label_data_utils";
       }
     }
   }
+
+  const labelPlatform = getPlatformData(['Region-0', 'Company', 'Community', 'Project', 'Foundation', 'Tech-0', 'Domain-0', 'Bot']);
+  const repoCount = await query<number[]>(`SELECT COUNT(DISTINCT repo_id) FROM events WHERE ${labelPlatform.map(p =>
+    `(((repo_id IN (${p.repos.map(r => r.id).join(',')})) OR (org_id IN (${p.orgs.map(r => r.id).join(',')}))) AND platform='${p.name}')`
+  ).join(' OR ')}`);
+  console.table(`Repos covered by labels: ${repoCount[0][0]}`);
 
 })();
