@@ -1,9 +1,9 @@
-name: US VA.gov
+name: Immich
 type: Project
 data:
   platforms:
     - name: GitHub
       type: Code Hosting
       orgs:
-        - id: 5421563
-          name: department-of-veterans-affairs
+        - id: 109746326
+          name: immich-app

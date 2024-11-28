@@ -1,0 +1,9 @@
+name: Rye
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 631396418
+          name: astral-sh/rye

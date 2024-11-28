@@ -1,0 +1,35 @@
+name: ONNX Runtime
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 156939672
+          name: microsoft/onnxruntime
+        - id: 263186318
+          name: microsoft/onnxruntime-training-examples
+        - id: 290272833
+          name: microsoft/onnxruntime-openenclave
+        - id: 301518781
+          name: microsoft/onnxruntime-extensions
+        - id: 303421055
+          name: microsoft/onnxruntime-pytorch
+        - id: 356404407
+          name: microsoft/onnxruntime-inference-examples
+        - id: 388956278
+          name: microsoft/onnxruntime-web-benchmark
+        - id: 393534395
+          name: microsoft/onnxruntime-web-demo
+        - id: 423958755
+          name: microsoft/onnxruntime-nextjs-template
+        - id: 431260464
+          name: microsoft/onnxruntime-csharp-cv-template
+        - id: 476020559
+          name: microsoft/OnnxRuntime-UnrealEngine
+        - id: 662798654
+          name: microsoft/onnxruntime-swift-package-manager
+        - id: 191660018
+          name: microsoft/onnxruntime-tvm
+        - id: 718314761
+          name: microsoft/onnxruntime-genai

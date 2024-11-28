@@ -1,0 +1,13 @@
+name: Astral
+type: Company
+data:
+  labels:
+    - ruff
+    - rye
+    - uv
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 115962839
+          name: astral-sh

@@ -2,6 +2,7 @@ name: Linux Foundation
 type: Foundation
 data:
   labels:
+    - sonic
     - zephyr
   platforms:
     - name: GitHub

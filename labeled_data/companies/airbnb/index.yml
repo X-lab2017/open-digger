@@ -1,0 +1,14 @@
+name: Airbnb
+type: Company
+data:
+  labels:
+    - airflow
+    - enzyme
+    - react_dates
+    - superset
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 698437
+          name: airbnb

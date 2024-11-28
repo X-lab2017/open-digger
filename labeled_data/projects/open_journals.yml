@@ -1,9 +1,9 @@
-name: US VA.gov
+name: Open Journals
 type: Project
 data:
   platforms:
     - name: GitHub
       type: Code Hosting
       orgs:
-        - id: 5421563
-          name: department-of-veterans-affairs
+        - id: 9032431
+          name: openjournals

@@ -1,9 +1,9 @@
-name: US VA.gov
+name: Ollama
 type: Project
 data:
   platforms:
     - name: GitHub
       type: Code Hosting
       orgs:
-        - id: 5421563
-          name: department-of-veterans-affairs
+        - id: 151674099
+          name: ollama

@@ -32,3 +32,5 @@ data:
           name: Qiskit
         - id: 22173486
           name: loopbackio
+        - id: 70551872
+          name: ibm-developer-skills-network

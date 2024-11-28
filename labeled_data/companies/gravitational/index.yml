@@ -1,0 +1,11 @@
+name: Gravitational
+type: Company
+data:
+  labels:
+    - teleport
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 10781132
+          name: gravitational

@@ -1,0 +1,18 @@
+name: CERN
+type: Institution
+meta:
+  full_name: European Organization for Nuclear Research
+  name_zh_full: 欧洲核子研究中心
+data:
+  labels:
+    - alice_o2
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 81367506
+          name: CERN
+        - id: 77605371
+          name: CUG-hydro
+        - id: 66998566
+          name: CUG-EMI

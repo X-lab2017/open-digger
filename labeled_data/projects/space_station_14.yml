@@ -1,9 +1,9 @@
-name: US VA.gov
+name: Space Station 14
 type: Project
 data:
   platforms:
     - name: GitHub
       type: Code Hosting
       orgs:
-        - id: 5421563
-          name: department-of-veterans-affairs
+        - id: 10567778
+          name: space-wizards

@@ -82,3 +82,15 @@ data:
     - :companies/newrelic
     - :companies/novell
     - :companies/paradigm
+    - :companies/650_industries
+    - :companies/airbnb
+    - :companies/airbyte
+    - :companies/astral
+    - :companies/bitwarden
+    - :companies/cloudflare
+    - :companies/cockroachlabs
+    - :companies/datadog
+    - :companies/gravitational
+    - :companies/langchain
+    - :companies/metabase
+    - :companies/paloaltonetworks

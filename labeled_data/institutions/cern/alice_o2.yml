@@ -1,9 +1,9 @@
-name: US VA.gov
+name: AliceO2
 type: Project
 data:
   platforms:
     - name: GitHub
       type: Code Hosting
       orgs:
-        - id: 5421563
-          name: department-of-veterans-affairs
+        - id: 9053140
+          name: AliceO2Group
