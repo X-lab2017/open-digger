@@ -7,17 +7,23 @@ data:
       repos:
         - id: 99919302
           name: apache/doris
-        - id: 149782046
-          name: apache/doris-website
         - id: 457619173
           name: apache/doris-spark-connector
-        - id: 458226256
-          name: apache/doris-flink-connector
-        - id: 616774259
-          name: apache/doris-shade
-        - id: 520709428
-          name: apache/doris-thirdparty
-        - id: 636304767
-          name: apache/doris-sdk
         - id: 457619500
           name: apache/doris-manager
+        - id: 458226256
+          name: apache/doris-flink-connector
+        - id: 520709428
+          name: apache/doris-thirdparty
+        - id: 616774259
+          name: apache/doris-shade
+        - id: 636304767
+          name: apache/doris-sdk
+        - id: 662391505
+          name: apache/doris-operator
+        - id: 744436069
+          name: apache/doris-streamloader
+        - id: 766424540
+          name: apache/doris-kafka-connector
+        - id: 149782046
+          name: apache/doris-website

@@ -1,0 +1,9 @@
+name: AliceO2
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 9053140
+          name: AliceO2Group

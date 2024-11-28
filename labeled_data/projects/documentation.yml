@@ -1,9 +1,0 @@
-name: Documentation
-type: Project
-data:
-  platforms:
-    - name: GitHub
-      type: Code Hosting
-      repos:
-        - id: 2967233
-          name: DataDog/documentation

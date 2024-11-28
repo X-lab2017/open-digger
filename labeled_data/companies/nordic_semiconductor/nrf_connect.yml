@@ -1,0 +1,9 @@
+name: nRF Connect
+type: Company
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 40860733
+          name: nrfconnect

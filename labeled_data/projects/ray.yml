@@ -1,15 +1,9 @@
-name: ray
+name: Ray
 type: Project
 data:
   platforms:
     - name: GitHub
       type: Code Hosting
-      repos:
-        - id: 71932349
-          name: ray-project/ray
-        - id: 537317100
-          name: ray-project/ray-educational-materials
-        - id: 51269228
-          name: ray-project/ray-legacy
-        - id: 647848107
-          name: ray-project/ray-llm
+      orgs:
+        - id: 22125274
+          name: ray-project

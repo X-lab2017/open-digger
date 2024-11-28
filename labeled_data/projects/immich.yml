@@ -1,11 +1,9 @@
-name: immich
+name: Immich
 type: Project
 data:
   platforms:
     - name: GitHub
       type: Code Hosting
-      repos:
-        - id: 455229168
-          name: immich-app/immich
-        - id: 533500452
-          name: immich-app/immich-charts
+      orgs:
+        - id: 109746326
+          name: immich-app

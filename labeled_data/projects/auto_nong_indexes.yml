@@ -1,9 +1,0 @@
-name: Auto Nong Indexes
-type: Project
-data:
-  platforms:
-    - name: GitHub
-      type: Code Hosting
-      repos:
-        - id: 779049624
-          name: FlafyDev/auto-nong-indexes

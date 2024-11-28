@@ -1,0 +1,9 @@
+name: FreeCAD
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 2306237
+          name: FreeCAD

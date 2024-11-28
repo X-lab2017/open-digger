@@ -1,9 +1,0 @@
-name: tt-metal
-type: Project
-data:
-  platforms:
-    - name: GitHub
-      type: Code Hosting
-      repos:
-        - id: 601205363
-          name: tenstorrent/tt-metal

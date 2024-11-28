@@ -1,0 +1,9 @@
+name: Airbyte
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 59758427
+          name: airbytehq

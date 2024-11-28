@@ -1,0 +1,11 @@
+name: Apache Superset
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 39464018
+          name: apache/superset
+        - id: 95527699
+          name: apache/superset-site

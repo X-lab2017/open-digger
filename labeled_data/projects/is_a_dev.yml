@@ -1,0 +1,9 @@
+name: Is-a.dev
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 72358814
+          name: is-a-dev

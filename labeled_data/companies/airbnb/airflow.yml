@@ -1,0 +1,29 @@
+name: Apache Airflow
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 33884891
+          name: apache/airflow
+        - id: 145325821
+          name: apache/airflow-ci
+        - id: 164198539
+          name: apache/airflow-site
+        - id: 234144956
+          name: apache/airflow-on-k8s-operator
+        - id: 275569071
+          name: apache/airflow-client-go
+        - id: 275569146
+          name: apache/airflow-client-java
+        - id: 275569232
+          name: apache/airflow-client-python
+        - id: 276681643
+          name: apache/airflow-pgbouncer-exporter
+        - id: 277102849
+          name: apache/airflow-helm-unittest
+        - id: 277115802
+          name: apache/airflow-openldap
+        - id: 321691041
+          name: apache/airflow-ci-infra

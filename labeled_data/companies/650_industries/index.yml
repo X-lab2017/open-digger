@@ -1,0 +1,11 @@
+name: 650 Industries
+type: Company
+data:
+  labels:
+    - expo
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 6126711
+          name: 650Industries

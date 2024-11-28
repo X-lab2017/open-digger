@@ -1,9 +1,0 @@
-name: JOSS reviews
-type: Project
-data:
-  platforms:
-    - name: GitHub
-      type: Code Hosting
-      repos:
-        - id: 52331602
-          name: openjournals/joss-reviews

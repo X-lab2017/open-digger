@@ -4,10 +4,6 @@ data:
   platforms:
     - name: GitHub
       type: Code Hosting
-      repos:
-        - id: 15730865
-          name: spack/spack
-        - id: 136228185
-          name: spack/spack-infrastructure
-        - id: 209178242
-          name: spack/spack-tutorial
+      orgs:
+        - id: 25539161
+          name: spack

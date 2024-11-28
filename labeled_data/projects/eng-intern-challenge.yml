@@ -1,9 +1,0 @@
-name: Eng Intern Challenge
-type: Project
-data:
-  platforms:
-    - name: GitHub
-      type: Code Hosting
-      repos:
-        - id: 825752060
-          name: DevDegree/eng-intern-challenge

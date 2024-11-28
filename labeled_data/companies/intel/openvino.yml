@@ -1,0 +1,9 @@
+name: OpenVINO
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 55443902
+          name: openvinotoolkit

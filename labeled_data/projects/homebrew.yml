@@ -1,0 +1,9 @@
+name: Homebrew
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 1503512
+          name: Homebrew

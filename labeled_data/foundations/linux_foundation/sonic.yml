@@ -1,0 +1,9 @@
+name: SONiC
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 102750714
+          name: sonic-net
