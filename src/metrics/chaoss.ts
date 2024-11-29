@@ -687,7 +687,7 @@ export const chaossBusFactor = async (config: QueryConfig<BusFactorOptions>) => 
   const sql = `
 SELECT
   id,
-  platform,
+  ${getTopLevelPlatform(config)},
   argMax(name, time) AS name,
   ${getGroupArrayInsertAtClause(config, { key: 'bus_factor', })},
   ${getGroupArrayInsertAtClause(config, { key: 'detail', noPrecision: true, defaultValue: '[]' })},

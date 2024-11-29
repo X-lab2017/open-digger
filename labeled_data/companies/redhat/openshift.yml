@@ -1,4 +1,4 @@
-name: Odoo
+name: OpenShift
 type: Project
 data:
   platforms:

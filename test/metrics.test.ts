@@ -48,13 +48,7 @@ function removeFields(data: any) {
 
     for (const key in data) {
       if (
-        !key.startsWith("quantile_") &&
-        !key.startsWith("detail") &&
-        !key.startsWith("avg") &&
-        !key.startsWith("levels") &&
-        !key.startsWith("openrank") &&
-        !key.startsWith('platform')
-      ) {
+        !['quantile_', 'detail', 'repos', 'orgs', 'developers', 'avg', 'levels', 'openrank', 'platform'].some(k => key.startsWith(k))) {
         newData[key] = removeFields(data[key]);
       }
     }

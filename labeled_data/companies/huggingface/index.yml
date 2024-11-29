@@ -1,6 +1,8 @@
 name: Hugging Face
 type: Company
 data:
+  labels:
+    - transformers
   platforms:
     - name: GitHub
       type: Code Hosting
