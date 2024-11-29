@@ -6,11 +6,11 @@ data:
     - aws_cdk
     - aws_distro_for_opentelemetry
     - babelfish_for_postgresql
+    - bottlerocket
     - eks_distro
     - firecracker
     - freertos
     - opensearch
-    - bottlerocket
   platforms:
     - name: GitHub
       type: Code Hosting

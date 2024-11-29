@@ -1,0 +1,9 @@
+name: systemd
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 1918868
+          name: systemd

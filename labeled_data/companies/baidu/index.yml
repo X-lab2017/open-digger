@@ -5,12 +5,12 @@ data:
     - amis
     - apollo
     - brpc
+    - doris
     - echarts
     - huiyan
     - mesalock
     - paddle
     - xuperchain
-    - doris
   platforms:
     - name: GitHub
       type: Code Hosting

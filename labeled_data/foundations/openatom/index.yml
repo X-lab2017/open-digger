@@ -2,47 +2,47 @@ name: OpenAtom Foundation
 type: Foundation
 data:
   labels:
-    - :companies/baidu/xuperchain
-    - :companies/huawei/openharmony
-    - :companies/360/pikiwidb
-    - :companies/alibaba/alios_things
-    - hapjs
-    - :companies/tencent/tobudos
-    - :companies/huawei/openeuler
-    - openblock
-    - :companies/antgroup/tongsuo
-    - open_brother
-    - vearch
-    - ubsice
-    - hyperbench
-    - rtthread_nano
-    - ubml
-    - ztdbp
-    - openkona
+    - ':companies/360/pikiwidb'
+    - ':companies/alibaba/alios_things'
+    - ':companies/alibaba/anolis'
+    - ':companies/antgroup/tongsuo'
+    - ':companies/baidu/xuperchain'
+    - ':companies/deepin/codeya_ide'
+    - ':companies/deepin/linglong'
+    - ':companies/greatdb/greatsql'
+    - ':companies/huawei/kurator'
+    - ':companies/huawei/open_inula'
+    - ':companies/huawei/openeuler'
+    - ':companies/huawei/openharmony'
+    - ':companies/inspur/kwdb'
+    - ':companies/openkylin/openkylin'
+    - ':companies/tencent/opencloudos'
+    - ':companies/tencent/opentenbase'
+    - ':companies/tencent/tkestack'
+    - ':companies/tencent/tobudos'
     - carsmos
-    - miniblink
-    - :companies/greatdb/greatsql
-    - :companies/tencent/opentenbase
-    - :companies/openkylin/openkylin
-    - :companies/deepin/linglong
-    - smartide
-    - opennjet
-    - :companies/tencent/tkestack
-    - :companies/inspur/kwdb
-    - :companies/alibaba/anolis
-    - :companies/tencent/opencloudos
-    - opendacs
-    - taro
-    - easybaas
-    - openv2x
     - cloud_hpc
-    - metatoc
     - crowdos
     - dora_ssr
-    - :companies/huawei/kurator
-    - :companies/huawei/open_inula
+    - easybaas
+    - hapjs
+    - hyperbench
+    - metatoc
+    - miniblink
+    - open_brother
     - open_solon
-    - :companies/deepin/codeya_ide
+    - openblock
+    - opendacs
+    - openkona
+    - opennjet
+    - openv2x
+    - rtthread_nano
+    - smartide
+    - taro
+    - ubml
+    - ubsice
+    - vearch
+    - ztdbp
   platforms:
     - name: GitHub
       type: Code Hosting

@@ -1,0 +1,15 @@
+name: React Native
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 29028775
+          name: facebook/react-native
+        - id: 109059304
+          name: facebook/react-native-website
+        - id: 72218996
+          name: facebook/react-native-deprecated-modules
+        - id: 706767463
+          name: facebook/react-native-cdp-status

@@ -1,0 +1,9 @@
+name: Cal.com
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 350360184
+          name: calcom

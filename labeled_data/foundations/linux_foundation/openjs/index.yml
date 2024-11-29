@@ -8,38 +8,38 @@ data:
         - id: 48335322
           name: openjs-foundation
   labels:
+    - amp
     - appium
+    - architect
+    - chassis
     - dojo
     - electron
-    - jquery
-    - node.js
-    - webpack
-    - amp
-    - architect
-    - intern
-    - mocha
-    - node_red
-    - webdriverio
-    - webhint.io
     - eslint
     - esprima
     - express
+    - fastify
     - globalize
     - grunt
     - hospitalrun
     - interledger
+    - intern
     - jerryscript
+    - jquery
+    - jquery_mobile
+    - jquery_user_interface
     - libuv
     - lodash
     - marko
     - messageformat
+    - mocha
     - moment.js
+    - node.js
+    - node_red
+    - nvm
     - pep
     - qunit
-    - fastify
-    - nvm
-    - chassis
-    - jquery_mobile
-    - jquery_user_interface
     - requirejs
     - sizzle
+    - webdriverio
+    - webhint.io
+    - webpack

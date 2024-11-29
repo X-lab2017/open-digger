@@ -1,0 +1,9 @@
+name: Polars
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 83768144
+          name: pola-rs

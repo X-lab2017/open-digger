@@ -1,0 +1,11 @@
+name: LinkedIn
+type: Company
+data:
+  labels:
+    - kafka
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 357098
+          name: linkedin

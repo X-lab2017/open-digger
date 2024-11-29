@@ -1,0 +1,9 @@
+name: Brave
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 12301619
+          name: brave

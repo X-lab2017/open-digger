@@ -2,9 +2,9 @@ name: PingCAP
 type: Company
 data:
   labels:
+    - chaos_mesh
     - tidb
     - tikv
-    - chaos_mesh
   platforms:
     - name: GitHub
       type: Code Hosting

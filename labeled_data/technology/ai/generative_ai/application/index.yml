@@ -5,8 +5,8 @@ data:
     - audio
     - code
     - image
-    - text
     - other
+    - text
     - video
   platforms:
     - name: GitHub

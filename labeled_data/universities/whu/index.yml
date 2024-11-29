@@ -1,0 +1,20 @@
+name: Wuhan University
+type: University-0
+meta:
+  name_zh: 武大
+  name_zh_full: 武汉大学
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 78056486
+          name: whutug
+        - id: 49439568
+          name: openwhu
+        - id: 16358514
+          name: WHUFT
+        - id: 112596701
+          name: WHU-MSC
+        - id: 131381256
+          name: WHUCodingAndOpen

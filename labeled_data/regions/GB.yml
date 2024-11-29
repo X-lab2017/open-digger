@@ -5,3 +5,4 @@ data:
     - :companies/rare
     - :companies/deepmind
     - :companies/gaas
+    - :companies/raycast

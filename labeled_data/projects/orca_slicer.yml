@@ -1,0 +1,13 @@
+name: OrcaSlicer
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 514553345
+          name: SoftFever/OrcaSlicer
+        - id: 576323677
+          name: SoftFever/OrcaSlicer_deps
+        - id: 764622040
+          name: SoftFever/Orca_tools
