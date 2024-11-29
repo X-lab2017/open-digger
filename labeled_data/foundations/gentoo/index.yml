@@ -1,0 +1,5 @@
+name: Gentoo Foundation
+type: Foundation
+data:
+  labels:
+    - gentoo

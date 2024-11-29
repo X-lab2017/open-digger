@@ -1,0 +1,9 @@
+name: Dagster
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 40032576
+          name: dagster-io

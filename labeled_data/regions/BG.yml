@@ -1,0 +1,5 @@
+name: Bulgaria
+type: Region-0
+data:
+  labels:
+    - :companies/ggml.ai

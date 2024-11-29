@@ -1,9 +1,0 @@
-data:
-  platforms:
-  - name: GitHub
-    orgs:
-    - id: 22479449
-      name: MicrosoftDocs
-    type: Code Hosting
-name: MicrosoftDocs
-type: Project

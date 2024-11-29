@@ -1,9 +1,0 @@
-data:
-  platforms:
-  - name: GitHub
-    orgs:
-    - id: 60047606
-      name: bevyengine
-    type: Code Hosting
-name: Bevy
-type: Project

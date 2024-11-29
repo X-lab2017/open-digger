@@ -2,10 +2,10 @@ name: Grafana Labs
 type: Company
 data:
   labels:
-    - loki
     - grafana
-    - tempo
+    - loki
     - mimir
+    - tempo
   platforms:
     - name: GitHub
       type: Code Hosting

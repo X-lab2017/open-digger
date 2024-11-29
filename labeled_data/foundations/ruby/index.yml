@@ -1,0 +1,6 @@
+name: Ruby Foundation
+type: Foundation
+data:
+  labels:
+    - rails
+    - ruby

@@ -1,9 +1,9 @@
+name: OpenWrt
+type: Project
 data:
   platforms:
-  - name: GitHub
-    orgs:
-    - id: 2528830
-      name: openwrt
-    type: Code Hosting
-name: openwrt
-type: Project
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 2528830
+          name: openwrt

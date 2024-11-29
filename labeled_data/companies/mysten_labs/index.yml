@@ -1,0 +1,11 @@
+name: Mysten Labs
+type: Company
+data:
+  labels:
+    - sui
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 88845815
+          name: MystenLabs

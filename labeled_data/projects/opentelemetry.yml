@@ -1,9 +1,0 @@
-data:
-  platforms:
-  - name: GitHub
-    orgs:
-    - id: 49998002
-      name: open-telemetry
-    type: Code Hosting
-name: opentelemetry
-type: Project

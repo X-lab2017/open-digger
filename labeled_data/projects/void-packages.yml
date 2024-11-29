@@ -1,9 +1,0 @@
-data:
-  platforms:
-  - name: GitHub
-    orgs:
-    - id: 37247796
-      name: void-linux
-    type: Code Hosting
-name: void-linux
-type: Project

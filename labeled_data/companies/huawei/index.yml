@@ -3,14 +3,14 @@ type: Company
 data:
   labels:
     - kubeedge
+    - kurator
     - liteos
     - mindspore
+    - open_inula
     - openeuler
     - opengauss
     - openharmony
     - service_comb
-    - kurator
-    - open_inula
   platforms:
     - name: GitHub
       type: Code Hosting

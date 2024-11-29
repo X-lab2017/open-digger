@@ -1,9 +1,0 @@
-name: US VA.gov
-type: Project
-data:
-  platforms:
-    - name: GitHub
-      type: Code Hosting
-      orgs:
-        - id: 5421563
-          name: department-of-veterans-affairs

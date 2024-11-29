@@ -1,0 +1,9 @@
+name: Void Linux
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 37247796
+          name: void-linux

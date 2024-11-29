@@ -1,9 +1,0 @@
-data:
-  platforms:
-  - name: GitHub
-    repos:
-    - id: 166515022
-      name: trinodb/trino
-    type: Code Hosting
-name: trino
-type: Project

@@ -1,0 +1,9 @@
+name: Ruby
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 210414
+          name: ruby

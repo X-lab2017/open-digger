@@ -8,7 +8,9 @@ data:
     - fluid_framework
     - interpretml
     - onnxruntime
+    - power_toys
     - powershell
+    - vcpkg
     - vscode
   platforms:
     - name: GitHub

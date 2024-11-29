@@ -1,6 +1,8 @@
 name: NVIDIA
 type: Company
 data:
+  labels:
+    - nemo
   platforms:
     - name: GitHub
       type: Code Hosting

@@ -1,9 +1,0 @@
-data:
-  platforms:
-  - name: GitHub
-    orgs:
-    - id: 54469796
-      name: supabase
-    type: Code Hosting
-name: supabase
-type: Project

@@ -1,0 +1,11 @@
+name: PowerToys
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 184456251
+          name: microsoft/PowerToys
+        - id: 467646821
+          name: microsoft/vscode-jupyter-powertoys
