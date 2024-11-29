@@ -139,6 +139,8 @@ data:
           name: dgraph-io/badger
         - id: 531220682
           name: dicedb/dice
+        - id: 789424265
+          name: dmarro89/dare-db
         - id: 437245741
           name: dragonflydb/dragonfly
         - id: 17224514
