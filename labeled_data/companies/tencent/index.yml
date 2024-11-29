@@ -4,9 +4,9 @@ data:
   labels:
     - opencloudos
     - opentenbase
-    - tobudos
     - ozone
     - tkestack
+    - tobudos
   platforms:
     - name: GitHub
       type: Code Hosting

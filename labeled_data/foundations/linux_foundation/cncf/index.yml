@@ -8,66 +8,66 @@ data:
         - id: 13455738
           name: cncf
   labels:
-    - cloud_custodian
-    - kubeedge
-    - dragonfly
-    - harbor
-    - cert_manager
-    - falco
-    - in_toto
-    - keycloak
-    - kyverno
-    - notary
-    - open_policy_agent
-    - the_update_framework
-    - spiffe
-    - spire
-    - cubefs
-    - longhorn
-    - rook
-    - containerd
-    - cri_o
-    - cilium
-    - container_network_interface
-    - crossplane
-    - karmada
-    - keda
-    - knative
-    - kubeflow
-    - kubernetes
-    - volcano
-    - coredns
-    - etcd
-    - grpc
-    - contour
-    - envoy
-    - emissary_ingress
-    - istio
-    - linkerd
-    - tikv
-    - vitess
-    - cloudevents
-    - nats
-    - strimzi
+    - argo
     - backstage
     - buildpacks
+    - cert_manager
+    - chaos_mesh
+    - cilium
+    - cloud_custodian
+    - cloudevents
+    - container_network_interface
+    - containerd
+    - contour
+    - coredns
+    - cortex
+    - cri_o
+    - crossplane
+    - cubefs
     - dapr
+    - dragonfly
+    - emissary_ingress
+    - envoy
+    - etcd
+    - falco
+    - fluentd
+    - flux
+    - grpc
+    - harbor
     - helm
+    - in_toto
+    - istio
+    - jaeger
+    - karmada
+    - keda
+    - keptn
+    - keycloak
+    - knative
+    - kubeedge
+    - kubeflow
+    - kubernetes
+    - kubernetes
     - kubevela
     - kubevirt
-    - operator_framework
-    - argo
-    - flux
-    - keptn
-    - openkruise
-    - openfeature
-    - chaos_mesh
+    - kyverno
+    - linkerd
     - litmus
-    - cortex
-    - fluentd
-    - jaeger
+    - longhorn
+    - nats
+    - notary
+    - open_policy_agent
+    - openfeature
+    - openkruise
     - openmetrics
     - opentelemetry
+    - operator_framework
     - prometheus
+    - rook
+    - spiffe
+    - spire
+    - strimzi
     - thanos
-    - kubernetes
+    - the_update_framework
+    - tikv
+    - vitess
+    - volcano

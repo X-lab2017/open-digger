@@ -1,0 +1,5 @@
+name: Trino Foundation
+type: Foundation
+data:
+  labels:
+    - trino

@@ -1,0 +1,9 @@
+name: Ollama
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 151674099
+          name: ollama

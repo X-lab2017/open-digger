@@ -22,3 +22,7 @@ data:
     - :companies/wutos
     - :companies/ygsoft
     - :companies/zte
+    - :universities/cug
+    - :universities/hubu
+    - :universities/hust
+    - :universities/whu

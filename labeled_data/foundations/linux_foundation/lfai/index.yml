@@ -8,40 +8,40 @@ data:
         - id: 45347303
           name: lfai
   labels:
+    - ':companies/zilliz/milvus'
+    - adlik
+    - adversarial_robustness_toolkit
+    - ai_explainability_360_toolkit
+    - ai_fairness_360_toolkit
+    - amundsen
     - angel_ml
-    - forestflow
-    - tony
     - datapractices
-    - opends4all
-    - openlineage
+    - datashim
+    - delta
     - delta_lake
     - docarrary
-    - janusgraph
-    - amundsen
-    - datashim
-    - marquez
-    - feast
-    - nnstreamer
     - egeria
-    - delta
-    - adlik
-    - kserve
-    - fate
-    - substra
-    - horovod
-    - ludwig
-    - onnx
-    - flyte
-    - kedro
-    - rwkv
-    - kompute
-    - pyro
     - elastic_deep_learning
-    - soajs
+    - fate
+    - feast
+    - flyte
+    - forestflow
+    - horovod
+    - janusgraph
+    - kedro
+    - kompute
+    - kserve
+    - ludwig
+    - marquez
+    - nnstreamer
+    - onnx
     - open_voice_interoperability
-    - sparklyr
-    - ai_explainability_360_toolkit
-    - adversarial_robustness_toolkit
-    - ai_fairness_360_toolkit
     - open_voice_trustmark
-    - :companies/zilliz/milvus
+    - opends4all
+    - openlineage
+    - pyro
+    - rwkv
+    - soajs
+    - sparklyr
+    - substra
+    - tony

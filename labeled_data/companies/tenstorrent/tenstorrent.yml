@@ -1,0 +1,9 @@
+name: Tenstorrent
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 64161552
+          name: tenstorrent

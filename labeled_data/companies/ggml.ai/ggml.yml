@@ -1,0 +1,9 @@
+name: GGML
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 538180525
+          name: ggerganov/ggml

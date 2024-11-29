@@ -3,3 +3,4 @@ type: Region-0
 data:
   labels:
     - :companies/opera
+    - :companies/nordic_semiconductor

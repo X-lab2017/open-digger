@@ -1,0 +1,9 @@
+name: Bitwarden
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 15990069
+          name: bitwarden

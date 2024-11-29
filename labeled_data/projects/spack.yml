@@ -1,0 +1,9 @@
+name: Spack
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 25539161
+          name: spack

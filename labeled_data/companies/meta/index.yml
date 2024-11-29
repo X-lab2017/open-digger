@@ -1,6 +1,9 @@
 name: Meta
 type: Company
 data:
+  labels:
+    - pytorch
+    - react_native
   platforms:
     - name: GitHub
       type: Code Hosting

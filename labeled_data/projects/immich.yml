@@ -1,0 +1,9 @@
+name: Immich
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 109746326
+          name: immich-app

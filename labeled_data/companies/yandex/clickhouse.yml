@@ -1,0 +1,9 @@
+name: ClickHouse
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 54801242
+          name: clickhouse

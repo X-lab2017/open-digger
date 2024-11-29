@@ -1,0 +1,6 @@
+name: Yandex
+type: Company
+data:
+  labels:
+    - clickhouse
+    - ydb

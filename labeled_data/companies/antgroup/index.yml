@@ -2,6 +2,9 @@ name: Ant group
 type: Company
 data:
   labels:
+    - ':companies/alibaba/dragonfly'
+    - ':companies/alibaba/opensumi'
+    - ':companies/alibaba/seata'
     - ant_mini_program
     - antchain
     - antd
@@ -38,9 +41,6 @@ data:
     - trass_stack
     - tugraph
     - umi
-    - :companies/alibaba/seata
-    - :companies/alibaba/opensumi
-    - :companies/alibaba/dragonfly
   platforms:
     - name: GitHub
       type: Code Hosting
@@ -48,6 +48,6 @@ data:
         - id: 1299356
           name: alipay
         - id: 37703784
-          name: antgroup 
+          name: antgroup
         - id: 120770412
           name: ant-research

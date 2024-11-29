@@ -8,16 +8,16 @@ data:
         - id: 7657900
           name: hyperledger
   labels:
-    - hyperledger_besu
-    - hyperledger_fabric
-    - hyperledger_indy
-    - hyperledger_iroha
     - hyperledger_anoncreds
     - hyperledger_aries
-    - hyperledger_web3j
+    - hyperledger_besu
     - hyperledger_bevel
     - hyperledger_cacti
     - hyperledger_caliper
     - hyperledger_cello
+    - hyperledger_fabric
     - hyperledger_firefly
+    - hyperledger_indy
+    - hyperledger_iroha
     - hyperledger_solang
+    - hyperledger_web3j

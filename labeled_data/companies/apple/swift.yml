@@ -1,0 +1,9 @@
+name: Swift
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 42816656
+          name: swiftlang

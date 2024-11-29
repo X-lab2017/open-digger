@@ -1,0 +1,16 @@
+name: China University of Geosciences
+type: University-0
+meta:
+  name_zh: 地大
+  name_zh_full: 中国地质大学（武汉）
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 81367506
+          name: cuglife
+        - id: 77605371
+          name: CUG-hydro
+        - id: 66998566
+          name: CUG-EMI

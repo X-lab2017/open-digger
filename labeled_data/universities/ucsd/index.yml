@@ -1,0 +1,9 @@
+name: University of California San Diego
+type: University-0
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 26914064
+          name: COGS108

@@ -1,0 +1,9 @@
+name: LlamaIndex
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 130722866
+          name: run-llama

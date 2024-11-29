@@ -1,0 +1,5 @@
+name: Tailscale
+type: Company
+data:
+  labels:
+    - tailscale

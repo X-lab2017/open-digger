@@ -1,0 +1,9 @@
+name: Ruff
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 523043277
+          name: astral-sh/ruff

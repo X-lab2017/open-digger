@@ -1,0 +1,9 @@
+name: Space Station 14
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 10567778
+          name: space-wizards

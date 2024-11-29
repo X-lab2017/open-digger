@@ -1,0 +1,9 @@
+name: whisper.cpp
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 541269386
+          name: ggerganov/whisper.cpp

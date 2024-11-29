@@ -1,0 +1,27 @@
+name: NeMo
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 200722670
+          name: NVIDIA/NeMo
+        - id: 629494390
+          name: NVIDIA/NeMo-Guardrails
+        - id: 585626839
+          name: NVIDIA/NeMo-Framework-Launcher
+        - id: 772255271
+          name: NVIDIA/NeMo-Curator
+        - id: 686160414
+          name: NVIDIA/NeMo-Aligner
+        - id: 561932404
+          name: NVIDIA/NeMo-text-processing
+        - id: 756096262
+          name: NVIDIA/NeMo-Skills
+        - id: 561873538
+          name: NVIDIA/NeMo-speech-data-processor
+        - id: 842601100
+          name: NVIDIA/NeMo-Run
+        - id: 863762834
+          name: NVIDIA/NeMo-FW-CI-templates

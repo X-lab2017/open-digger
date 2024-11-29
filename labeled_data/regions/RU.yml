@@ -1,0 +1,5 @@
+name: Russia
+type: Region-0
+data:
+  labels:
+    - :companies/yandex

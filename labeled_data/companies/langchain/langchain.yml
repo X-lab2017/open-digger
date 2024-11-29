@@ -1,0 +1,9 @@
+name: LangChain
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 126733545
+          name: langchain-ai

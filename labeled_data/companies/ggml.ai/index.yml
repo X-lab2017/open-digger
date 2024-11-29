@@ -1,0 +1,7 @@
+name: GGML.ai
+type: Company
+data:
+  labels:
+    - ggml
+    - llama.cpp
+    - whisper.cpp

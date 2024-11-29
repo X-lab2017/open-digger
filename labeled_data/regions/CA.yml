@@ -1,0 +1,7 @@
+name: Canada
+type: Region-0
+data:
+  labels:
+    - :companies/tenstorrent
+    - :companies/tailscale
+    - :foundations/eclipse

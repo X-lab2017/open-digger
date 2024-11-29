@@ -1,0 +1,9 @@
+name: Cortex XSOAR
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 11011767
+          name: demisto

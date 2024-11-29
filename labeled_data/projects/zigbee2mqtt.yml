@@ -1,0 +1,17 @@
+name: Zigbee2MQTT
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 128636610
+          name: Koenkk/zigbee2mqtt
+        - id: 170371837
+          name: Koenkk/zigbee2mqtt.io
+        - id: 800158818
+          name: Koenkk/zigbee2mqtt-chart
+        - id: 643544572
+          name: Koenkk/zigbee2mqtt-user-extensions
+        - id: 132810556
+          name: Koenkk/zigbee2mqtt-hassio-addon
