@@ -10,7 +10,7 @@ import { getLabelData, getPlatformData } from "../label_data_utils";
   console.log(`OpenDigger has ${labels.filter(l => l.type === 'Project').length} Project labels.`);
 
   for (const l of labels) {
-    if (['Company', 'University-0', 'Agency-0', 'Foundation'].some(t => l.type === t)) {
+    if (['Company', 'University-0', 'Agency-0', 'Foundation'].includes(l.type)) {
       if (!l.parents.some(p => p.startsWith(':regions'))) {
         console.log(l.name, l.identifier);
       }

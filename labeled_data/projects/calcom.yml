@@ -1,9 +1,0 @@
-data:
-  platforms:
-  - name: GitHub
-    repos:
-    - id: 350360184
-      name: calcom/cal.com
-    type: Code Hosting
-name: cal.com
-type: Project
