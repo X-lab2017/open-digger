@@ -258,7 +258,7 @@ export const getLabelGroupConditionClause = (config: QueryConfig): string => {
     return `(${c.join(' OR ')}),[${v.labels.map(l => `tuple('${l[0]}','${l[1]}')`).join(',')}]`;
   }).join(',');
 
-  return `(arrayJoin(multiIf(${idConditions}, [tuple('Others', 'Others')])) AS items).1 AS id, any(items.2) AS name`;
+  return `(arrayJoin(multiIf(${idConditions}, [tuple('Others', 'Others')])) AS items).1 AS id, any(items.2) AS name, COUNT(DISTINCT repo_id) AS repos, COUNT(DISTINCT org_id) AS orgs, COUNT(DISTINCT actor_id) AS developers`;
 };
 
 export const getGroupArrayInsertAtClause = (config: QueryConfig, option: { key: string; defaultValue?: string; value?: string; noPrecision?: boolean, positionByEndTime?: boolean }): string => {
@@ -331,9 +331,9 @@ export const getOutterOrderAndLimit = (config: QueryConfig, col: string, index?:
 
 export const getTopLevelPlatform = (config: QueryConfig) => {
   if (config.groupBy && config.groupBy !== 'org' && config.groupBy !== 'repo') {
-    return "'All' AS platform";
+    return `'All' AS platform, ${getGroupArrayInsertAtClause(config, { key: 'repos' })}, ${getGroupArrayInsertAtClause(config, { key: 'orgs' })}, ${getGroupArrayInsertAtClause(config, { key: 'developers' })}`;
   } else {
-    return 'platform';
+    return 'platform, 1 AS repos, 1 AS orgs, 1 AS developers';
   }
 };
 
@@ -352,7 +352,7 @@ export const filterEnumType = (value: any, types: string[], defautlValue: string
 
 export const processQueryResult = (result: any, customKeys: string[],
   postProcessor?: { [key: string]: (value: any) => any }): any[] => {
-  const keys = ['id', 'platform', 'name', ...customKeys];
+  const keys = ['id', 'platform', 'repos', 'orgs', 'developers', 'name', ...customKeys];
   return result.map((r: any) => {
     const obj: any = {};
     keys.forEach((k, i) => {

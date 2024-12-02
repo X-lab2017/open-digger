@@ -1,6 +1,9 @@
 name: Elastic
 type: Company
 data:
+  labels:
+    - elasticsearch
+    - kibana
   platforms:
     - name: GitHub
       type: Code Hosting

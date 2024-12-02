@@ -46,6 +46,7 @@
     "neo4j-driver": "^4.4.11",
     "node-cron": "^3.0.0",
     "node-worker-threads-pool": "^1.5.1",
+    "openai": "^4.73.1",
     "p-wait-for": "^3.1.0",
     "parse-neo4j": "^0.6.11",
     "pope": "^3.0.0",
