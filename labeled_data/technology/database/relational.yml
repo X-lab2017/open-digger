@@ -165,6 +165,8 @@ data:
           name: cznic/ql
         - id: 302827809
           name: datafuselabs/databend
+        - id: 2894420
+          name: deveel/deveeldb
         - id: 52507351
           name: diennea/herddb
         - id: 198683574
