@@ -1,0 +1,11 @@
+name: HUST OS Team
+type: Community
+meta:
+  name_zh: 华中科技大学操作系统团队
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 79889806
+          name: HUST-OS

@@ -1,0 +1,11 @@
+name: WHU LuojiaNet
+type: Community
+meta:
+  name_zh: 武汉大学 LuojiaNet 社区
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 106079293
+          name: WHULuoJiaTeam

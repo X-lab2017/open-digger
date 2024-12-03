@@ -1,0 +1,11 @@
+name: WHU Coding And Open
+type: Community
+meta:
+  name_zh: 武汉大学开源兴趣小组
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 131381256
+          name: WHUCodingAndOpen

@@ -1,0 +1,11 @@
+name: WHU Tex User Group
+type: Community
+meta:
+  name_zh: 武汉大学 Tex 用户组
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 78056486
+          name: whutug

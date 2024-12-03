@@ -1,0 +1,11 @@
+name: HUST Security Lab
+type: Community
+meta:
+  name_zh: 华中科技大学安全实验室
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 94045632
+          name: HUSTSeclab

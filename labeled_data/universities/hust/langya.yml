@@ -1,0 +1,11 @@
+name: LANGYA HUST
+type: Community
+meta:
+  name_zh: 华中科技大学狼牙战队
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 112808337
+          name: LANGYA-HUST

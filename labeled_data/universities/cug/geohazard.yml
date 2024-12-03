@@ -1,0 +1,11 @@
+name: Geohazard CUG
+type: Community
+meta:
+  name_zh: 中国地质大学（武汉）灾害信息地理研究团队
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 758456190
+          name: Geohazard-CUG/Geohazard-CUG

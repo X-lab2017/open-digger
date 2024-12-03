@@ -1,0 +1,11 @@
+name: HUST NingLab
+type: Community
+meta:
+  name_zh: 华中科技大学 NingLab
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 24222262
+          name: HUST-NingKang-Lab

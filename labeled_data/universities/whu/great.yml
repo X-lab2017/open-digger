@@ -1,0 +1,11 @@
+name: WHU GREAT TEAM
+type: Community
+meta:
+  name_zh: 武汉大学 GREAT 研究小组
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 130725899
+          name: GREAT-WHU

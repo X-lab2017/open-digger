@@ -1,0 +1,11 @@
+name: WHU i2Nav
+type: Community
+meta:
+  name_zh: 武汉大学多源智能导航实验室
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 68686825
+          name: i2Nav-WHU

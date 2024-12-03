@@ -1,0 +1,11 @@
+name: HUST Vison Lab
+type: Community
+meta:
+  name_zh: 华中科技大学视觉实验室
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 45582505
+          name: hustvl

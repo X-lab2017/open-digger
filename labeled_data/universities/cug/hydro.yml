@@ -1,0 +1,11 @@
+name: CUG Hydro
+type: Community
+meta:
+  name_zh: 中国地质大学（武汉）水文气象学课程
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 77605371
+          name: CUG-hydro

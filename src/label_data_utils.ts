@@ -43,6 +43,7 @@ interface LabelItem {
   content: {
     name: string;
     type: string;
+    meta?: any;
     data: any;
   },
   parents: string[];
@@ -53,6 +54,7 @@ interface LabelItem {
 
 interface ParsedLabelItem {
   identifier: string;
+  meta?: any;
   type: string;
   name: string;
   parents: string[];
@@ -103,6 +105,7 @@ function processLabelItems(map: Map<string, LabelItem>): ParsedLabelItem[] {
   return Array.from(map.values()).map(item => {
     const ret = {
       identifier: item.identifier,
+      meta: item.content.meta,
       type: item.content.type,
       name: item.content.name,
       platforms: item.platforms,

@@ -1,0 +1,11 @@
+name: WHU MSC
+type: Community
+meta:
+  name_zh: 武汉大学微软学生俱乐部
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 112596701
+          name: WHU-MSC

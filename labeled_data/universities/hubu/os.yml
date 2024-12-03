@@ -1,0 +1,11 @@
+name: Wuhei University Open Source
+type: Community
+meta:
+  name_zh: 湖北大学开源兴趣小组
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 113109543
+          name: OS-HUBU

@@ -1,0 +1,11 @@
+name: HUST AI Lab
+type: Community
+meta:
+  name_zh: 华中科技大学人工智能与嵌入式实验室
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 136291504
+          name: HUSTAI

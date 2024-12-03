@@ -1,0 +1,21 @@
+name: John Hopcroft Lab at HUST
+type: Community
+meta:
+  name_zh: 华中科技大学霍普克罗夫特计算科学研究中心
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 247654438
+          name: JHL-HUST/IBCLN
+        - id: 592212712
+          name: JHL-HUST/NAGphormer
+        - id: 350374197
+          name: JHL-HUST/VT
+        - id: 234683928
+          name: JHL-HUST/SI-NI-FGSM
+        - id: 194094252
+          name: JHL-HUST/PWWS
+        - id: 400741622
+          name: JHL-HUST/TITer

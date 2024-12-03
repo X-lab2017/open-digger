@@ -1,0 +1,11 @@
+name: WHU USI3DV
+type: Community
+meta:
+  name_zh: 武汉大学城市空间智能研究组
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 126131362
+          name: WHU-USI3DV

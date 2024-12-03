@@ -1,0 +1,11 @@
+name: HUST Open Atom Club
+type: Community
+meta:
+  name_zh: 华中科技大学开源俱乐部
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 164288024
+          name: hust-open-atom-club

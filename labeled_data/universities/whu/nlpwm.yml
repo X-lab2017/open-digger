@@ -1,0 +1,17 @@
+name: WHU NLP WM Lab
+type: Community
+meta:
+  name_zh: 武汉大学自然语言处理和网络数据挖掘实验室
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 227958621
+          name: NLPWM-WHU/LSTPM
+        - id: 257324272
+          name: NLPWM-WHU/RACL
+        - id: 297234366
+          name: NLPWM-WHU/BiGCN
+        - id: 187443170
+          name: NLPWM-WHU/TransCap

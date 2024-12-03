@@ -1,0 +1,11 @@
+name: HUST Smart Lab
+type: Community
+meta:
+  name_zh: 华中科技大学智能决策与系统优化实验室
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 7336466
+          name: HUST-Smart

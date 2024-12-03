@@ -4,13 +4,15 @@ meta:
   name_zh: 华科大
   name_zh_full: 华中科技大学
 data:
-  platforms:
-    - name: GitHub
-      type: Code Hosting
-      orgs:
-        - id: 164288024
-          name: hust-open-atom-club
-        - id: 112808337
-          name: LANGYA-HUST
-        - id: 7669373
-          name: hust-latex
+  labels:
+    - ai
+    - jhl
+    - langya
+    - latex
+    - monkey
+    - ninglab
+    - oac
+    - os
+    - seclab
+    - smart
+    - vl

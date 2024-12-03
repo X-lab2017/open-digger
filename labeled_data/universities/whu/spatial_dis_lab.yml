@@ -1,0 +1,11 @@
+name: WHU Spatial DI&S Lab
+type: Community
+meta:
+  name_zh: 武汉大学空间数据智能与服务实验室
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 45173858
+          name: ZPGuiGroupWhu

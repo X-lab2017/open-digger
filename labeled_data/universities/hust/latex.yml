@@ -1,0 +1,11 @@
+name: HUST LaTex User Group
+type: Community
+meta:
+  name_zh: 华中科技大学 LaTex 模板用户组
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 7669373
+          name: hust-latex

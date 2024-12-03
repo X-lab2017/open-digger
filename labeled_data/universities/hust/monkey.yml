@@ -1,0 +1,11 @@
+name: HUST Monkey Model
+type: Community
+meta:
+  name_zh: 华中科技大学 Monkey 多模态大模型
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 716626889
+          name: Yuliang-Liu/Monkey
