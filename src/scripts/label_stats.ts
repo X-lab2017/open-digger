@@ -17,10 +17,11 @@ import { getLabelData, getPlatformData } from "../label_data_utils";
     }
   }
 
-  const labelPlatform = getPlatformData(['Region-0', 'Company', 'Community', 'Project', 'Foundation', 'Tech-0', 'Domain-0', 'Bot']);
-  const repoCount = await query<number[]>(`SELECT COUNT(DISTINCT repo_id) FROM events WHERE ${labelPlatform.map(p =>
+  const labelPlatform = getPlatformData(labels.map(l => l.identifier));
+  const count = await query<number[]>(`SELECT COUNT(DISTINCT org_id), COUNT(DISTINCT repo_id) FROM events WHERE ${labelPlatform.map(p =>
     `(((repo_id IN (${p.repos.map(r => r.id).join(',')})) OR (org_id IN (${p.orgs.map(r => r.id).join(',')}))) AND platform='${p.name}')`
   ).join(' OR ')}`);
-  console.table(`Repos covered by labels: ${repoCount[0][0]}`);
+  console.table(`Orgs covered by labels: ${count[0][0]}`);
+  console.table(`Repos covered by labels: ${count[0][1]}`);
 
 })();
