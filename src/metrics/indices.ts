@@ -110,7 +110,7 @@ export const getRepoCommunityOpenrank = async (config: QueryConfig<RepoCommunity
   const sql = `
 SELECT
   id,
-  ${getTopLevelPlatform(config)},
+  ${getTopLevelPlatform(config, true)},
   argMax(name, time) AS name,
   ${getGroupArrayInsertAtClause(config, { key: 'openrank', noPrecision: true, defaultValue: '[]' })}
 FROM

@@ -329,8 +329,8 @@ export const getOutterOrderAndLimit = (config: QueryConfig, col: string, index?:
     ${config.limitOption === 'all' && config.limit > 0 ? `LIMIT ${config.limit}` : ''}`;
 };
 
-export const getTopLevelPlatform = (config: QueryConfig) => {
-  if (config.groupBy && config.groupBy !== 'org' && config.groupBy !== 'repo') {
+export const getTopLevelPlatform = (config: QueryConfig, noCount = false) => {
+  if (!noCount && (config.groupBy && config.groupBy !== 'org' && config.groupBy !== 'repo')) {
     return `'All' AS platform, ${getGroupArrayInsertAtClause(config, { key: 'repos' })}, ${getGroupArrayInsertAtClause(config, { key: 'orgs' })}, ${getGroupArrayInsertAtClause(config, { key: 'developers' })}`;
   } else {
     return 'platform, 1 AS repos, 1 AS orgs, 1 AS developers';
