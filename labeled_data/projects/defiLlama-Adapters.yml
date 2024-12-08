@@ -1,0 +1,8 @@
+name: DefiLlama-Adapters
+type: Project
+data:
+  platforms:
+  - name: GitHub
+    repos:
+    - id: 312716297
+      name: DefiLlama/DefiLlama-Adapters

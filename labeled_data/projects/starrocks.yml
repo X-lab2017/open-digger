@@ -1,0 +1,28 @@
+name: starrocks
+type: Project
+data:
+  platforms:
+  - name: GitHub
+    repos:
+    - id: 336521419
+      name: StarRocks/starrocks-connector-for-apache-flink
+    - id: 402945349
+      name: StarRocks/starrocks
+    - id: 405859250
+      name: StarRocks/starrocks-connector-for-apache-spark
+    - id: 485725371
+      name: StarRocks/dbt-starrocks
+    - id: 499045218
+      name: StarRocks/starrocks-kubernetes-operator
+    - id: 598581491
+      name: StarRocks/starrocks-bdb-je
+    - id: 647131805
+      name: StarRocks/starrocks-connector-for-kafka
+    - id: 696064084
+      name: StarRocks/starrocks-connector-for-kettle
+    - id: 703087757
+      name: StarRocks/killercoda-starrocks
+    - id: 740746599
+      name: StarRocks/starrocks-reference-architecture
+    - id: 769402795
+      name: StarRocks/airbyte-starrocks

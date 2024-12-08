@@ -1,0 +1,34 @@
+name: content
+type: Project
+data:
+  platforms:
+  - name: GitHub
+    repos:
+    - id: 20533343
+      name: mdn/addon-sdk-content-scripts
+    - id: 29369280
+      name: mdn/beginning-programming-content-kit
+    - id: 33036748
+      name: mdn/content-kit-template
+    - id: 157610072
+      name: mdn/stumptown-content
+    - id: 285548278
+      name: mdn/_test_content_dont_use
+    - id: 295774370
+      name: mdn/content
+    - id: 299428955
+      name: mdn/archived-content
+    - id: 312416884
+      name: mdn/machine-translation-testing-content
+    - id: 319738781
+      name: mdn/translated-content-rendered
+    - id: 319742187
+      name: mdn/translated-content
+    - id: 361904293
+      name: mdn/retired-content
+    - id: 376032866
+      name: mdn/retired-archived-content
+    - id: 475902186
+      name: mdn/content-team-projects
+    - id: 862292339
+      name: mdn/translated-content-de

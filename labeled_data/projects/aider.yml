@@ -1,0 +1,10 @@
+name: aider
+type: Project
+data:
+  platforms:
+  - name: GitHub
+    repos:
+    - id: 638629097
+      name: Aider-AI/aider
+    - id: 807716966
+      name: Aider-AI/aider-swe-bench

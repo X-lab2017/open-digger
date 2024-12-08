@@ -1,0 +1,10 @@
+name: DefinitelyTyped
+type: Project
+data:
+  platforms:
+  - name: GitHub
+    repos:
+    - id: 6093316
+      name: DefinitelyTyped/DefinitelyTyped
+    - id: 18560921
+      name: DefinitelyTyped/definitelytyped.github.io

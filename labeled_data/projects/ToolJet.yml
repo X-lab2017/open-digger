@@ -1,0 +1,10 @@
+name: ToolJet
+type: Project
+data:
+  platforms:
+  - name: GitHub
+    repos:
+    - id: 352933140
+      name: ToolJet/ToolJet
+    - id: 401697636
+      name: ToolJet/ToolJet-k6-tests
