@@ -2,4 +2,4 @@ name: Spain
 type: Region-0
 data:
   labels:
-    - :companies/artelnics
+    - ':companies/artelnics'

@@ -2,9 +2,9 @@ name: Germany
 type: Region-0
 data:
   labels:
-    - :companies/zalando
-    - :companies/explosionai
-    - :companies/jina_ai
-    - :companies/formbricks
-    - :companies/n8n
-    - :companies/nextcloud
+    - ':companies/explosionai'
+    - ':companies/formbricks'
+    - ':companies/jina_ai'
+    - ':companies/n8n'
+    - ':companies/nextcloud'
+    - ':companies/zalando'

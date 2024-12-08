@@ -43,8 +43,7 @@ data:
         - id: 502482803
           name: bigscience-workshop/petals
         - id: 219986676
-          name: >-
-            ashishpatel26/Tools-to-Design-or-Visualize-Architecture-of-Neural-Network
+          name: ashishpatel26/Tools-to-Design-or-Visualize-Architecture-of-Neural-Network
         - id: 58414589
           name: oneapi-src/onednn
         - id: 224296809

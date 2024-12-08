@@ -1,0 +1,9 @@
+name: Svelte
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 23617963
+          name: sveltejs

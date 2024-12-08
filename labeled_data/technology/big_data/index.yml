@@ -2,11 +2,11 @@ name: Big Data
 type: Tech-0
 data:
   labels:
-    - visualization
     - analysis_engine
-    - scheduler
-    - streaming
-    - data_integration
     - data_development
+    - data_integration
     - data_storage
     - others
+    - scheduler
+    - streaming
+    - visualization

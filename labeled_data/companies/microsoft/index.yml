@@ -8,6 +8,7 @@ data:
     - fluid_framework
     - interpretml
     - onnxruntime
+    - playwright
     - power_toys
     - powershell
     - vcpkg

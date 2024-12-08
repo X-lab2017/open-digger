@@ -2,8 +2,8 @@ name: Cloud Native - Observability and Analysis
 type: Tech-1
 data:
   labels:
-    - monitoring
-    - logging
-    - tracing
     - chaos_engineering
     - continuous_optimization
+    - logging
+    - monitoring
+    - tracing

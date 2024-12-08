@@ -1,0 +1,9 @@
+name: Bioconda
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 14253259
+          name: bioconda

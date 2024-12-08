@@ -1,0 +1,5 @@
+name: Sweden
+type: Region-0
+data:
+  labels:
+    - ':companies/spotify'

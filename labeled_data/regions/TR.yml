@@ -2,4 +2,4 @@ name: Türkiye
 type: Region-0
 data:
   labels:
-    - :companies/fmsoft
+    - ':companies/fmsoft'

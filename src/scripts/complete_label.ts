@@ -27,10 +27,8 @@ async function readPath(p: string, base: string, fileProcessor: (f: string) => P
     if (!f.endsWith(labelFileSuffix)) return;
     const filePath = path.join(labelInputPath, f);
     const label = readFileAsObj(filePath);
-    if (!label.data.platforms) return;
-    let changed = false;
     try {
-      for (const p of label.data.platforms) {
+      for (const p of label.data?.platforms ?? []) {
         if (p.repos) {
           for (const r of p.repos) {
             if (!r.id) {
@@ -40,7 +38,6 @@ async function readPath(p: string, base: string, fileProcessor: (f: string) => P
               const data = await oct.repos.get({ owner: r.name.split('/')[0], repo: r.name.split('/')[1] });
               r.id = data.data.id;
               console.log(`Get repo id of ${r.name} for ${p.name}: ${r.id}`);
-              changed = true;
             }
           }
         }
@@ -53,7 +50,6 @@ async function readPath(p: string, base: string, fileProcessor: (f: string) => P
               const data = await oct.orgs.get({ org: o.name });
               o.id = data.data.id;
               console.log(`Get org id of ${o.name} for ${p.name}: ${o.id}`);
-              changed = true;
             }
           }
         }
@@ -66,23 +62,16 @@ async function readPath(p: string, base: string, fileProcessor: (f: string) => P
               const data = await oct.users.getByUsername({ username: u.name });
               u.id = data.data.id;
               console.log(`Get repo id of ${u.name} for ${p.name}: ${u.id}`);
-              changed = true;
             }
           }
         }
       }
-      if (changed) {
-        writeFileSync(filePath, dump(label, { noRefs: true }));
-      } else {
-        if (label.data.labels) {
-          label.data.labels = label.data.labels.sort();
-          writeFileSync(filePath, dump(label, { noRefs: true }));
-        }
+      if (label.data.labels) {
+        label.data.labels = label.data.labels.sort();
       }
+      writeFileSync(filePath, dump(label, { noRefs: true, lineWidth: -1 }));
     } catch (e: any) {
       console.log(`Error processing ${f}, e=${e.message}, label=${JSON.stringify(label)}`);
     }
   });
 })();
-
-

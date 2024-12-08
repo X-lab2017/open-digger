@@ -2,6 +2,6 @@ name: Netherlands, Kingdom of the
 type: Region-0
 data:
   labels:
-    - :companies/polars
-    - :foundations/godot
-    - :foundations/nixos
+    - ':companies/polars'
+    - ':foundations/godot'
+    - ':foundations/nixos'

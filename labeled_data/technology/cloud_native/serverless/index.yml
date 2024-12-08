@@ -2,7 +2,7 @@ name: Cloud Native - Serverless
 type: Tech-1
 data:
   labels:
-    - tools
     - framework
     - hosted_platform
     - installable_platform
+    - tools

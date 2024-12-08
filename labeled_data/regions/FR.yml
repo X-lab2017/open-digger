@@ -2,6 +2,6 @@ name: France
 type: Region-0
 data:
   labels:
-    - :companies/material_ui_sas
-    - :companies/sensiolabs
-    - :companies/matra_datavision
+    - ':companies/material_ui_sas'
+    - ':companies/matra_datavision'
+    - ':companies/sensiolabs'

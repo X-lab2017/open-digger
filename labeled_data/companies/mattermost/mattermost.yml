@@ -1,0 +1,9 @@
+name: Mattermost
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 9828093
+          name: mattermost

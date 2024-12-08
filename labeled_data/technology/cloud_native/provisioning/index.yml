@@ -4,5 +4,5 @@ data:
   labels:
     - automation_and_configuration
     - container_registry
-    - security_and_compliance
     - key_management
+    - security_and_compliance

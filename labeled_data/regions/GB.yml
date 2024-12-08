@@ -2,7 +2,8 @@ name: United Kingdom of Great Britain and Northern Ireland
 type: Region-0
 data:
   labels:
-    - :companies/rare
-    - :companies/deepmind
-    - :companies/gaas
-    - :companies/raycast
+    - ':agencies/moj_uk'
+    - ':companies/deepmind'
+    - ':companies/gaas'
+    - ':companies/rare'
+    - ':companies/raycast'

@@ -1,0 +1,5 @@
+name: Unkeyed
+type: Company
+data:
+  labels:
+    - unkey

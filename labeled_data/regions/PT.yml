@@ -2,4 +2,4 @@ name: Portugal
 type: Region-0
 data:
   labels:
-    - :companies/dio
+    - ':companies/dio'

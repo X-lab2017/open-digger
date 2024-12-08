@@ -1,0 +1,9 @@
+name: Ministry of Justice, UK
+type: Agency-0
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 2203574
+          name: ministryofjustice

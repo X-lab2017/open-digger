@@ -1,0 +1,11 @@
+name: Free EBook Foundation
+type: Foundation
+data:
+  labels:
+    - free_programming_books
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 14127308
+          name: EbookFoundation

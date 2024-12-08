@@ -2,4 +2,4 @@ name: Japan
 type: Region-0
 data:
   labels:
-    - :foundations/ruby
+    - ':foundations/ruby'

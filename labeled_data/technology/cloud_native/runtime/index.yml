@@ -2,6 +2,6 @@ name: Cloud Native - Runtime
 type: Tech-1
 data:
   labels:
+    - cloud_native_network
     - cloud_native_storage
     - container_runtime
-    - cloud_native_network

@@ -2,9 +2,9 @@ name: Cloud Native - Orchestration & Management
 type: Tech-1
 data:
   labels:
-    - scheduling_and_orchestration
+    - api_gateway
     - coordination_and_service_discovery
     - remote_procedure_call
-    - service_proxy
-    - api_gateway
+    - scheduling_and_orchestration
     - service_mesh
+    - service_proxy
