@@ -6,7 +6,7 @@ OpenDigger is an open source analysis report project for all open source data in
 
 ## Metrics or Indices Usage
 
-All implemented metrics are open for anyone to use, you can find the data with following URLs, The root URL of OpenDigger static data is `https://oss.x-lab.info/open-digger/github/` right now since we only have GitHub data for now, just replace the `org/repo` or `owner` to get your data.
+All implemented metrics are open for anyone to use, you can find the data with following URLs, The root URL of OpenDigger static data is `https://oss.x-lab.info/open_digger/github/` right now since we only have GitHub data for now, just replace the `org/repo` or `owner` to get your data.
 
 Feel free to use the data to construct your own data application and you can refer OpenDigger as your data source and welcome to use the following badge in your project to show the data source.
 
