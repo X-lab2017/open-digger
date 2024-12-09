@@ -1,0 +1,7 @@
+name: Llama Corp
+type: Company
+data:
+  labels:
+    - defillama
+    - llamanodes
+    - llamapay

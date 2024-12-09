@@ -1,0 +1,12 @@
+name: uBlock Origin
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 33263118
+          name: gorhill/uBlock
+      orgs:
+        - id: 18120975
+          name: uBlockOrigin

@@ -1,0 +1,17 @@
+name: Coolify
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 332880689
+          name: coollabsio/coolify
+        - id: 603035348
+          name: coollabsio/coolify-examples
+        - id: 683168791
+          name: coollabsio/coolify-cli
+        - id: 740369921
+          name: coollabsio/coolify.io
+        - id: 852099335
+          name: coollabsio/documentation-coolify

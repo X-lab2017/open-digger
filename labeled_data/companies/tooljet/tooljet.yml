@@ -1,0 +1,9 @@
+name: ToolJet
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 82193554
+          name: ToolJet

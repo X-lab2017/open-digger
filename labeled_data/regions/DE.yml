@@ -2,6 +2,7 @@ name: Germany
 type: Region-0
 data:
   labels:
+    - ':companies/camunda'
     - ':companies/explosionai'
     - ':companies/formbricks'
     - ':companies/jina_ai'

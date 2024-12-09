@@ -1,0 +1,9 @@
+name: LlamaPay
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 101993402
+          name: LlamaPay

@@ -1,0 +1,65 @@
+name: Namada
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 510708090
+          name: anoma/namada-interface
+        - id: 793445666
+          name: anoma/namada-indexer
+        - id: 510559980
+          name: anoma/namada
+        - id: 878794533
+          name: anoma/namada-chain-registry
+        - id: 786759202
+          name: anoma/namada-masp-indexer
+        - id: 610738372
+          name: anoma/namada-docs
+        - id: 778308185
+          name: anoma/namada-sdkjs-examples
+        - id: 805329444
+          name: anoma/namada-governance-upgrades
+        - id: 845067479
+          name: anoma/namada-mainnet-genesis
+        - id: 842894299
+          name: anoma/namada-genesis
+        - id: 870063870
+          name: anoma/namada-archive
+        - id: 741246785
+          name: anoma/namada-shielded-airdrop
+        - id: 311750322
+          name: anoma/masp
+        - id: 742533181
+          name: anoma/namada-shielded-expedition
+        - id: 768063276
+          name: anoma/namada-light-sdk-starter
+        - id: 643779730
+          name: anoma/namada-sdk-starter
+        - id: 487785213
+          name: anoma/namada-testnets
+        - id: 715107722
+          name: anoma/namada-trusted-setup-claimer
+        - id: 668815956
+          name: anoma/namada-masp-verification
+        - id: 658577146
+          name: anoma/namada-masp-params
+        - id: 542630050
+          name: anoma/ethereum-bridge-e2e-tests
+        - id: 585229008
+          name: anoma/using-namada-sdk-poc
+        - id: 585857728
+          name: anoma/building-namada-sdk-to-wasm
+        - id: 589489842
+          name: anoma/using-namada-sdk-poc-2
+        - id: 580072488
+          name: anoma/namada-testnets-1
+        - id: 458232156
+          name: anoma/namada-trusted-setup
+        - id: 542563381
+          name: anoma/e2e-test-helpers
+        - id: 539409504
+          name: anoma/namada-whitepaper
+        - id: 562981418
+          name: anoma/namada-testnets-2

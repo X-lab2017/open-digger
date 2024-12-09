@@ -1,0 +1,9 @@
+name: DefiLlama
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 82048198
+          name: DefiLlama

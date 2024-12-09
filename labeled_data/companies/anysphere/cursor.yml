@@ -1,0 +1,9 @@
+name: Cursor
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 126759922
+          name: getcursor

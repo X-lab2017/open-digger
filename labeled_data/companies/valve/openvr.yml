@@ -1,0 +1,9 @@
+name: OpenVR SDK
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 34289265
+          name: ValveSoftware/openvr

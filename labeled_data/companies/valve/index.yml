@@ -1,0 +1,9 @@
+name: Valve
+type: Company
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 3082775
+          name: ValveSoftware

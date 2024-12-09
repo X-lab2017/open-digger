@@ -1,0 +1,9 @@
+name: MDN Web Docs
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 7565578
+          name: mdn

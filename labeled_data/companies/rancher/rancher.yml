@@ -1,0 +1,9 @@
+name: Rancher
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 9343010
+          name: rancher

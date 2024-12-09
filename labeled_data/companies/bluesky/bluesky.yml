@@ -1,0 +1,9 @@
+name: Bluesky
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 94650532
+          name: bluesky-social

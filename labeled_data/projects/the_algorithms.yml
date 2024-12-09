@@ -1,0 +1,9 @@
+name: The Algorithms
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 20487725
+          name: TheAlgorithms

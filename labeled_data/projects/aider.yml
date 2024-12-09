@@ -1,0 +1,9 @@
+name: Aider
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 172139148
+          name: Aider-AI

@@ -1,0 +1,9 @@
+name: Camunda
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 2443838
+          name: camunda
