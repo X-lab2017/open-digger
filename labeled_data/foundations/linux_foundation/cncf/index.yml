@@ -8,6 +8,7 @@ data:
         - id: 13455738
           name: cncf
   labels:
+    - ':companies/alibaba/dragonfly'
     - argo
     - backstage
     - buildpacks
@@ -25,7 +26,6 @@ data:
     - crossplane
     - cubefs
     - dapr
-    - dragonfly
     - emissary_ingress
     - envoy
     - etcd
