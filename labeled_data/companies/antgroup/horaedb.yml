@@ -1,0 +1,21 @@
+name: Apache HoraeDB
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 496505424
+          name: apache/horaedb
+        - id: 589510868
+          name: apache/horaedb-docs
+        - id: 496119704
+          name: apache/incubator-horaedb-proto
+        - id: 501159254
+          name: apache/horaedb-client-java
+        - id: 510653879
+          name: apache/horaedb-client-rs
+        - id: 531019817
+          name: apache/horaedb-client-go
+        - id: 510654075
+          name: apache/horaedb-client-py

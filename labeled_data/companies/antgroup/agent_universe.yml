@@ -1,0 +1,9 @@
+name: agentUniverse
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 790704526
+          name: antgroup/agentUniverse

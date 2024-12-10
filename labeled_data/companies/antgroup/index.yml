@@ -5,6 +5,7 @@ data:
     - ':companies/alibaba/dragonfly'
     - ':companies/alibaba/opensumi'
     - ':companies/alibaba/seata'
+    - agent_universe
     - ant_mini_program
     - antchain
     - antd
@@ -19,6 +20,7 @@ data:
     - eosphoros
     - fury
     - galacean
+    - horaedb
     - hyper_enclave
     - intelligent_machine_learning
     - karas
@@ -41,6 +43,7 @@ data:
     - trass_stack
     - tugraph
     - umi
+    - vsag
   platforms:
     - name: GitHub
       type: Code Hosting

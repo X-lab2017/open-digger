@@ -1,0 +1,9 @@
+name: VSAG
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 833504767
+          name: antgroup/vsag
