@@ -116,16 +116,18 @@ SELECT
 FROM
 (
   SELECT
-    id, argMax(name, time) AS name, platform, time,
+    id, argMax(name, time) AS name,
+    ${(config.groupBy && config.groupBy !== 'org' && config.groupBy !== 'repo') ? "'All'" : 'p'} AS platform,
+    time,
     ${limit > 0 ?
-      `arraySlice(groupArray((platform, actor_id, actor_login, openrank)), 1, ${limit}) AS openrank` :
-      `groupArray((platform, actor_id, actor_login, openrank)) AS openrank`}
+      `arraySlice(groupArray((p, actor_id, actor_login, openrank)), 1, ${limit}) AS openrank` :
+      `groupArray((p, actor_id, actor_login, openrank)) AS openrank`}
   FROM
     (
       SELECT
         ${getGroupIdClause(config, 'repo', 'time')},
         time,
-        platform,
+        platform AS p,
         actor_id,
         argMax(actor_login, time) AS actor_login,
         SUM(openrank) AS openrank
@@ -159,7 +161,7 @@ FROM
       GROUP BY id, actor_id, platform, time
       ORDER BY openrank DESC
     )
-    GROUP BY id, platform, time
+    GROUP BY id, time
 )
 GROUP BY id, platform
 ${getOutterOrderAndLimit({ ...config, order: undefined }, 'openrank')}
