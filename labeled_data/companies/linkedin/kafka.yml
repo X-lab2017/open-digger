@@ -9,25 +9,5 @@ data:
           name: apache/kafka
         - id: 41348335
           name: apache/kafka-site
-        - id: 569293325
-          name: apache/flink-connector-kafka
-        - id: 225818900
-          name: apache/camel-kafka-connector
-        - id: 259671148
-          name: apache/camel-kafka-connector-examples
-        - id: 70498479
-          name: apache/openwhisk-package-kafka
-        - id: 87900864
-          name: apache/metron-bro-plugin-kafka
-        - id: 559861544
-          name: apache/pekko-connectors-kafka
-        - id: 766424540
-          name: apache/doris-kafka-connector
-        - id: 238287706
-          name: apache/geode-kafka-connector
-        - id: 615489438
-          name: apache/logging-flume-kafka
-        - id: 181680494
-          name: apache/sling-org-apache-sling-distribution-journal-kafka
         - id: 823240044
           name: apache/kafka-merge-queue-sandbox

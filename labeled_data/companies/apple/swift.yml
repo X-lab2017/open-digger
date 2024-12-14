@@ -7,3 +7,104 @@ data:
       orgs:
         - id: 42816656
           name: swiftlang
+      # all the swift repos transfered from apple to swiftlang in 2024.6
+      # so need to label all the repos too
+      repos:
+        - id: 44838949
+          name: swiftlang/swift
+        - id: 44838988
+          name: swiftlang/swift-llbuild
+        - id: 44840041
+          name: swiftlang/swift-package-manager
+        - id: 45497910
+          name: swiftlang/swift-evolution
+        - id: 45863890
+          name: swiftlang/swift-corelibs-foundation
+        - id: 45863965
+          name: swiftlang/swift-corelibs-libdispatch
+        - id: 45864027
+          name: swiftlang/swift-corelibs-xctest
+        - id: 47356910
+          name: swiftlang/swift-docker
+        - id: 47450638
+          name: swiftlang/swift-integration-tests
+        - id: 47902653
+          name: swiftlang/swift-cmark
+        - id: 78574614
+          name: swiftlang/swift-source-compat-suite
+        - id: 111026478
+          name: swiftlang/swift-community-hosted-continuous-integration
+        - id: 124606805
+          name: swiftlang/swift-stress-tester
+        - id: 127018945
+          name: swiftlang/swift-tools-support-core
+        - id: 143079594
+          name: swiftlang/swift-syntax
+        - id: 154773196
+          name: swiftlang/sourcekit-lsp
+        - id: 154773489
+          name: swiftlang/indexstore-db
+        - id: 196084046
+          name: swiftlang/swift-format
+        - id: 214091865
+          name: swiftlang/swift-driver
+        - id: 215875945
+          name: swiftlang/llvm-project
+        - id: 238744366
+          name: swiftlang/swift-se0270-range-set
+        - id: 306742487
+          name: swiftlang/swift-package-collection-generator
+        - id: 387531333
+          name: swiftlang/swift-docc
+        - id: 387532152
+          name: swiftlang/swift-markdown
+        - id: 387532899
+          name: swiftlang/swift-docc-render
+        - id: 387533186
+          name: swiftlang/swift-docc-symbolkit
+        - id: 387851231
+          name: swiftlang/swift-installer-scripts
+        - id: 388544049
+          name: swiftlang/swift-package-registry-compatibility-test-suite
+        - id: 404417247
+          name: swiftlang/swift-se0288-is-power
+        - id: 410140421
+          name: swiftlang/swift-experimental-string-processing
+        - id: 416819312
+          name: swiftlang/swift-lmdb
+        - id: 417578854
+          name: swiftlang/swift-docc-render-artifact
+        - id: 428449354
+          name: swiftlang/swift-docc-plugin
+        - id: 431062272
+          name: swiftlang/vscode-swift
+        - id: 458322818
+          name: swiftlang/swift-org-website
+        - id: 505560555
+          name: swiftlang/swiftly
+        - id: 512922295
+          name: swiftlang/swift-llvm-bindings
+        - id: 520680969
+          name: swiftlang/swift-book
+        - id: 580189446
+          name: swiftlang/swift-testing
+        - id: 591033035
+          name: swiftlang/swift-foundation
+        - id: 591033271
+          name: swiftlang/swift-foundation-icu
+        - id: 596282217
+          name: swiftlang/swift-sdk-generator
+        - id: 725830812
+          name: swiftlang/swift-aoc-starter-example
+        - id: 750141860
+          name: swiftlang/swift-evolution-metadata-extractor
+        - id: 813284799
+          name: swiftlang/.github
+        - id: 828025099
+          name: swiftlang/github-workflows
+        - id: 838552712
+          name: swiftlang/swift-toolchain-sqlite
+        - id: 862476999
+          name: swiftlang/swift-java
+        - id: 881004841
+          name: swiftlang/event-fosdem

@@ -4,6 +4,7 @@ import { QueryConfig } from '../metrics/basic';
 import { getRepoActivity, getRepoOpenrank } from '../metrics/indices';
 import { countryInfo, countryFlagMap } from '../static/countries';
 import { query } from '../db/clickhouse';
+import { repoParticipants } from '../metrics/metrics';
 
 (async () => {
   const openDiggerOssUrl = 'https://oss.open-digger.cn/';
@@ -132,7 +133,7 @@ GROUP BY c`);
       ...defaultOption,
       groupBy: 'Project',
     })).filter(i => i.id !== 'Others');
-    const activityData = (await getRepoActivity({
+    const participantsData = (await repoParticipants({
       ...defaultOption,
       limit: -1, groupBy: 'Project',
     })).filter(i => i.id !== 'Others');
@@ -179,7 +180,7 @@ GROUP BY c`);
         name: label.name,
         logo: getLogoUrl(id),
         openrank,
-        developerCount: +activityData.find(row => row.id === id).participants[0],
+        developerCount: +participantsData.find(row => row.id === id).count[0],
         platforms: label.platforms.map(p => p.name),
         initiator,
         initiatorId,

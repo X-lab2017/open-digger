@@ -1,0 +1,9 @@
+name: Valkey
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 164458127
+          name: valkey-io
