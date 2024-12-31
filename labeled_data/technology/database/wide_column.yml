@@ -43,3 +43,5 @@ data:
           name: scylladb/scylla
         - id: 41209174
           name: strapdata/elassandra
+        - id: 872645739
+          name: tidesdb/tidesdb

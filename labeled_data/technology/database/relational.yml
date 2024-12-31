@@ -163,6 +163,8 @@ data:
           name: cswinter/LocustDB
         - id: 14090388
           name: cznic/ql
+        - id: 824462634
+          name: darshan117/BroDB
         - id: 302827809
           name: datafuselabs/databend
         - id: 2894420
@@ -217,8 +219,8 @@ data:
           name: google/lovefield
         - id: 385634291
           name: grafana/mimir
-        - id: 44781140
-          name: greenplum-db/gpdb
+        - id: 805041952
+          name: greenplum-db/gpdb-archive
         - id: 33745913
           name: h2database/h2database
         - id: 90541149

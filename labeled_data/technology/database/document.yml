@@ -38,9 +38,11 @@ data:
         - id: 533032
           name: LinkedInAttic/sensei
         - id: 750864017
-          name: LonaDB/Server
+          name: Lona-Development/Server
         - id: 50098469
           name: Nexedi/neoppod
+        - id: 284225188
+          name: PoloDB/PoloDB
         - id: 188354257
           name: SequoiaDB/SequoiaDB
         - id: 474070793
@@ -83,6 +85,8 @@ data:
           name: bluzi/jsonstore
         - id: 234091935
           name: c9fe/sirdb
+        - id: 844591313
+          name: capjamesg/jamesql
         - id: 639434928
           name: cfu288/SylvieJS
         - id: 546206616
