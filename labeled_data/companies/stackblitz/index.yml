@@ -1,6 +1,9 @@
 name: StackBlitz
 type: Company
 data:
+  labels:
+    - bolt.new
+    - webcontainer
   platforms:
     - name: GitHub
       type: Code Hosting

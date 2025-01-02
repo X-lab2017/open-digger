@@ -9,6 +9,7 @@ data:
           name: cncf
   labels:
     - ':companies/alibaba/dragonfly'
+    - ':companies/pingcap/tikv'
     - argo
     - backstage
     - buildpacks
@@ -68,6 +69,5 @@ data:
     - strimzi
     - thanos
     - the_update_framework
-    - tikv
     - vitess
     - volcano

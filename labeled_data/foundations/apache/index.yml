@@ -1,6 +1,27 @@
 name: Apache Software Foundation
 type: Foundation
 data:
+  labels:
+    - ':companies/airbnb/airflow'
+    - ':companies/airbnb/superset'
+    - ':companies/alibaba/celeborn'
+    - ':companies/alibaba/dubbo'
+    - ':companies/alibaba/flink'
+    - ':companies/alibaba/paimon'
+    - ':companies/alibaba/rocketmq'
+    - ':companies/alibaba/seata'
+    - ':companies/antgroup/horaedb'
+    - ':companies/baidu/doris'
+    - ':companies/baidu/echarts'
+    - ':companies/google/beam'
+    - ':companies/huawei/service_comb'
+    - ':companies/linkedin/kafka'
+    - ':companies/segmentfault/answer'
+    - ':companies/sphereex/shardingsphere'
+    - ':companies/tencent/ozone'
+    - ':companies/timecho/iotdb'
+    - ':projects/spark'
+    - ':projects/skywalking'
   platforms:
     - name: GitHub
       type: Code Hosting
