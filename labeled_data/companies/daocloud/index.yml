@@ -1,6 +1,8 @@
 name: DaoCloud
 type: Company
 data:
+  labels:
+    - public_image_mirror
   platforms:
     - name: GitHub
       type: Code Hosting

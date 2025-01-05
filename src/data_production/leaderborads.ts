@@ -38,6 +38,10 @@ GROUP BY c`);
       if (!country) {
         throw new Error(`Country not found, ${name}`);
       }
+      if (!country.provinces) {
+        console.log(`No provinces found for ${country.name}`);
+        country.provinces = [] as any;
+      }
       let countryName = country.name;
       if (['香港', '澳门', '台湾'].includes(country.name_zh)) {
         const totalOpenRank = provinces.map(i => +i[2]).reduce((a, c) => a + c, 0);
@@ -68,14 +72,15 @@ GROUP BY c`);
         countryTotalMap.set(countryName, (countryTotalMap.get(countryName) ?? 0) + (+p[1]));
       }
     }
-    const finalArr: any = [{
+    let finalArr: any = [{
       country: '🇨🇳China',
       country_zh: '🇨🇳中国',
       province: 'Taiwan',
       province_zh: '台湾省',
       flag: '🇨🇳',
       developerCount: Math.round(1178832 / 100) / 100,
-      openrank: 130743,
+      openrank: 166978.24,
+      avgOpenrank: (166978.24 / (1178832 / 10000)).toFixed(2)
     },
     {
       country: '🇨🇳China',
@@ -84,7 +89,8 @@ GROUP BY c`);
       province_zh: '香港特别行政区',
       flag: '🇨🇳',
       developerCount: Math.round(1977504 / 100) / 100,
-      openrank: 2717,
+      openrank: 3392.56,
+      avgOpenrank: (3392.56 / (1977504 / 10000)).toFixed(2)
     },
     {
       country: '🇨🇳China',
@@ -93,7 +99,8 @@ GROUP BY c`);
       province_zh: '澳门特别行政区',
       flag: '🇨🇳',
       developerCount: Math.round(23633 / 100) / 100,
-      openrank: 0,
+      openrank: 4351.21,
+      avgOpenrank: (4351.21 / (23633 / 10000)).toFixed(2)
     }];
 
     for (const [countryName, data] of countryDataMap.entries()) {
@@ -111,14 +118,46 @@ GROUP BY c`);
           province_zh: p.split('___')[1],
           flag: country.flag,
           developerCount: Math.round(c[0] * mutiple / 100) / 100,
-          openrank: Math.round(c[1]),
+          openrank: +(c[1].toFixed(2)),
+          avgOpenrank: +(c[1] / (c[0] * mutiple / 10000)).toFixed(2),
         });
       }
     }
 
-    writeFileSync('temp', JSON.stringify(countryInfo, null, 2));
+    finalArr = finalArr.sort((a, b) => b.openrank - a.openrank);
 
-    const ret = finalArr.sort((a, b) => b.openrank - a.openrank).slice(0, 100).map((v, i) => ({
+    console.log(JSON.stringify({
+      title: '2024 全球行政区划开发者 OpenRank 排行榜 Top 30',
+      data: finalArr.slice(0, 30).map((v, i) => ({
+        rank: i + 1,
+        ...v
+      })),
+      options: [
+        { name: '#', type: 'String', fields: ['rank'], width: 40 },
+        { name: '行政区划', type: 'String', fields: ['province_zh'], width: 250 },
+        { name: '所属国家', type: 'String', fields: ['country_zh'], width: 200 },
+        { name: 'OpenRank', type: 'String', fields: ['openrank'], width: 200 },
+        { name: '开发者数量(万)', type: 'String', fields: ['developerCount'], width: 200 },
+        { name: '平均 OpenRank(/万人)', type: 'String', fields: ['avgOpenrank'], width: 200 },
+      ]
+    }));
+
+    console.log(JSON.stringify({
+      title: '2024 中国行政区划开发者 OpenRank 排行榜 Top 30',
+      data: finalArr.filter(i => i.country.includes('China')).map((v, i) => ({
+        rank: i + 1,
+        ...v
+      })),
+      options: [
+        { name: '#', type: 'String', fields: ['rank'], width: 40 },
+        { name: '行政区划', type: 'String', fields: ['province_zh'], width: 300 },
+        { name: 'OpenRank', type: 'String', fields: ['openrank'], width: 200 },
+        { name: '开发者数量(万)', type: 'String', fields: ['developerCount'], width: 200 },
+        { name: '平均 OpenRank(/万人)', type: 'String', fields: ['avgOpenrank'], width: 200 },
+      ]
+    }));
+
+    const ret = finalArr.slice(0, 100).map((v, i) => ({
       rank: i + 1,
       ...v
     }));

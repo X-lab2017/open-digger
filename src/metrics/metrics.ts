@@ -77,6 +77,37 @@ ${getOutterOrderAndLimit(config, 'count')}`;
   return processQueryResult(result, ['count']);
 };
 
+export const repoCount = async (config: QueryConfig) => {
+  config = getMergedConfig(config);
+  const whereClauses: string[] = [];
+  const repoWhereClause = await getRepoWhereClause(config);
+  if (repoWhereClause) whereClauses.push(repoWhereClause);
+  whereClauses.push(getTimeRangeWhereClause(config));
+
+  const sql = `
+SELECT
+  id,
+  ${getTopLevelPlatform(config)},
+  argMax(name, time) AS name,
+  ${getGroupArrayInsertAtClause(config, { key: 'count' })}
+FROM
+(
+  SELECT
+    ${getGroupTimeClause(config)},
+    ${getGroupIdClause(config)},
+    COUNT(DISTINCT repo_id) AS count
+  FROM events
+  WHERE ${whereClauses.join(' AND ')}
+  ${getInnerGroupBy(config)}
+  ${getInnerOrderAndLimit(config, 'count')}
+)
+GROUP BY id, platform
+${getOutterOrderAndLimit(config, 'count')}`;
+
+  const result: any = await clickhouse.query(sql);
+  return processQueryResult(result, ['count']);
+};
+
 export const repoParticipants = async (config: QueryConfig) => {
   config = getMergedConfig(config);
   const whereClauses: string[] = ["type IN ('IssuesEvent', 'IssueCommentEvent', 'PullRequestEvent', 'PullRequestReviewCommentEvent')"];
