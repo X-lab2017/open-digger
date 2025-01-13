@@ -1,0 +1,9 @@
+name: MagicQuill
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 887261860
+          name: ant-research/MagicQuill

@@ -20,8 +20,8 @@ data:
     - ':companies/sphereex/shardingsphere'
     - ':companies/tencent/ozone'
     - ':companies/timecho/iotdb'
-    - ':projects/spark'
     - ':projects/skywalking'
+    - ':projects/spark'
   platforms:
     - name: GitHub
       type: Code Hosting

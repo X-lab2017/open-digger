@@ -28,6 +28,7 @@ data:
     - kcl_lang
     - kusion_stack
     - macaca
+    - magic_quill
     - mosn
     - mpaas
     - ng_zorro

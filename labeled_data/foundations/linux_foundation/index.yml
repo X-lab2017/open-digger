@@ -3,8 +3,8 @@ type: Foundation
 data:
   labels:
     - sonic
-    - zephyr
     - valkey
+    - zephyr
   platforms:
     - name: GitHub
       type: Code Hosting
