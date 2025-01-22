@@ -1,0 +1,43 @@
+name: Parseable
+type: Company
+data:
+  platforms:
+  - name: GitHub
+    type: Code Hosting
+    repos:
+    - id: 476586562
+      name: parseablehq/collector
+    - id: 520784735
+      name: parseablehq/parseable
+    - id: 523035254
+      name: parseablehq/console
+    - id: 524846850
+      name: parseablehq/.github
+    - id: 538457769
+      name: parseablehq/parseable-docker-extension
+    - id: 581402680
+      name: parseablehq/parseable-datasource
+    - id: 592155370
+      name: parseablehq/aws-lambda-extension
+    - id: 598884727
+      name: parseablehq/quest
+    - id: 610090651
+      name: parseablehq/operator
+    - id: 662690087
+      name: parseablehq/opentelemetry-rust-parseable
+    - id: 668539146
+      name: parseablehq/pb
+    - id: 704110308
+      name: parseablehq/mock-modules
+    - id: 768929760
+      name: parseablehq/parseable-sdk-go
+    - id: 790602041
+      name: parseablehq/penguin
+    - id: 813582853
+      name: parseablehq/blog-samples
+    - id: 869873381
+      name: parseablehq/arrow-rs
+    - id: 911057550
+      name: parseablehq/opentelemetry-rust
+    - id: 916805900
+      name: parseablehq/sqlalchemy-parseable

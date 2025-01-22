@@ -1,0 +1,67 @@
+name: IOTEX
+type: Company
+data:
+  platforms:
+  - name: GitHub
+    type: Code Hosting
+    repos:
+    - id: 114708872
+      name: iotexproject/IOTX-token-contracts
+    - id: 125123735
+      name: iotexproject/IOTX-charity-contracts
+    - id: 130281002
+      name: iotexproject/iotex-core
+    - id: 142910184
+      name: iotexproject/evm
+    - id: 153857785
+      name: iotexproject/iotex-desktop-wallet
+    - id: 165718326
+      name: iotexproject/go-fsm
+    - id: 165718381
+      name: iotexproject/go-p2p
+    - id: 167590077
+      name: iotexproject/go-ethereum
+    - id: 167877620
+      name: iotexproject/iotex-election
+    - id: 170791382
+      name: iotexproject/iotex-antenna
+    - id: 172628317
+      name: iotexproject/iotex-bootstrap
+    - id: 173205119
+      name: iotexproject/go2xunit
+    - id: 173380571
+      name: iotexproject/iotex-antenna-go
+    - id: 173993265
+      name: iotexproject/iotex-antenna-java-deprecated
+    - id: 175289398
+      name: iotexproject/IOTX-voting-contracts-ABI
+    - id: 176428023
+      name: iotexproject/iotex-address
+    - id: 179386467
+      name: iotexproject/iotex-react-components
+    - id: 180934856
+      name: iotexproject/go-pkgs
+    - id: 183272407
+      name: iotexproject/iotex-tools
+    - id: 183526875
+      name: iotexproject/iotex-analytics
+    - id: 183577193
+      name: iotexproject/iotex-antenna-java
+    - id: 184659108
+      name: iotexproject/iotex-governance
+    - id: 184818205
+      name: iotexproject/iotex-proto
+    - id: 185454151
+      name: iotexproject/pharos
+    - id: 186366531
+      name: iotexproject/ledger-app-iotex
+    - id: 187737141
+      name: iotexproject/iips
+    - id: 191321922
+      name: iotexproject/iotex-host-wallet
+    - id: 193736077
+      name: iotexproject/ledger-wallet-demo
+    - id: 199540416
+      name: iotexproject/iotex-did
+    - id: 199763977
+      name: iotexproject/iotex-antenna-swift

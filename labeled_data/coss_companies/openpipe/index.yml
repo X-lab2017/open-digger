@@ -1,0 +1,35 @@
+name: OpenPipe
+type: Company
+data:
+  platforms:
+  - name: GitHub
+    type: Code Hosting
+    repos:
+    - id: 606909309
+      name: OpenPipe/step-one
+    - id: 655949187
+      name: OpenPipe/OpenPipe
+    - id: 697867807
+      name: OpenPipe/axolotl
+    - id: 715444043
+      name: OpenPipe/openapi-typescript-codegen
+    - id: 732973555
+      name: OpenPipe/tsoa
+    - id: 733779274
+      name: OpenPipe/trpc-openapi
+    - id: 788688750
+      name: OpenPipe/vllm
+    - id: 811535094
+      name: OpenPipe/mistral-client-js
+    - id: 816577768
+      name: OpenPipe/alpaca_eval
+    - id: 817528226
+      name: OpenPipe/vllm-completions
+    - id: 870914487
+      name: OpenPipe/best-hn
+    - id: 872729655
+      name: OpenPipe/trl
+    - id: 873258719
+      name: OpenPipe/sglang
+    - id: 891703230
+      name: OpenPipe/vllm-lora

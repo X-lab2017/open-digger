@@ -1,0 +1,67 @@
+name: Namma Yatri
+type: Company
+data:
+  platforms:
+  - name: GitHub
+    type: Code Hosting
+    repos:
+    - id: 601147930
+      name: nammayatri/shared-kernel
+    - id: 601162998
+      name: nammayatri/beckn-gateway
+    - id: 601548787
+      name: nammayatri/nammayatri
+    - id: 602076364
+      name: nammayatri/notification-service
+    - id: 608685701
+      name: nammayatri/common
+    - id: 631639112
+      name: nammayatri/clickhouse-haskell
+    - id: 644932085
+      name: nammayatri/jenkins-config
+    - id: 645045337
+      name: nammayatri/euler-hs
+    - id: 649904912
+      name: nammayatri/passetto
+    - id: 654631231
+      name: nammayatri/location-tracking-service
+    - id: 666383009
+      name: nammayatri/osrm-builder
+    - id: 672593067
+      name: nammayatri/nammayatri.github.io
+    - id: 679244975
+      name: nammayatri/nammayatri-ash
+    - id: 716607795
+      name: nammayatri/sdk-integration-docs
+    - id: 735850167
+      name: nammayatri/shared-kernel-rs
+    - id: 738051320
+      name: nammayatri/namma-dsl
+    - id: 742350737
+      name: nammayatri/process-compose
+    - id: 748127013
+      name: nammayatri/haskell-sequelize
+    - id: 761384501
+      name: nammayatri/nammayatri-data-lab
+    - id: 768719530
+      name: nammayatri/asset-store
+    - id: 784591631
+      name: nammayatri/nammayatri-react-native
+    - id: 815136099
+      name: nammayatri/byte
+    - id: 829974464
+      name: nammayatri/superposition
+    - id: 835208651
+      name: nammayatri/json-logic-hs
+    - id: 852094005
+      name: nammayatri/react-native-code-push
+    - id: 852856625
+      name: nammayatri/ci
+    - id: 861628097
+      name: nammayatri/AgniPariksha
+    - id: 862804589
+      name: nammayatri/metro
+    - id: 864445717
+      name: nammayatri/rewatch
+    - id: 865983465
+      name: nammayatri/code-push-server

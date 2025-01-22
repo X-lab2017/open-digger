@@ -1,0 +1,67 @@
+name: Odoo
+type: Company
+data:
+  platforms:
+  - name: GitHub
+    type: Code Hosting
+    repos:
+    - id: 19745004
+      name: odoo/odoo
+    - id: 20027630
+      name: odoo/odoodays-2014
+    - id: 20168931
+      name: odoo/odoo-extra
+    - id: 24884386
+      name: odoo/petstore
+    - id: 25257141
+      name: odoo/ngx_postgres
+    - id: 27810472
+      name: odoo/docker-official-images
+    - id: 27810630
+      name: odoo/docker-docs
+    - id: 27810657
+      name: odoo/docker
+    - id: 31259962
+      name: odoo/functional-mementoes
+    - id: 38825372
+      name: odoo/documentation
+    - id: 62393953
+      name: odoo/technical-training
+    - id: 114105191
+      name: odoo/OdooLocust
+    - id: 122975814
+      name: odoo/odoo-client-lib
+    - id: 124407257
+      name: odoo/runbot
+    - id: 124551505
+      name: odoo/ps-runbot-testing
+    - id: 148126071
+      name: odoo/technical-training-solutions
+    - id: 178364606
+      name: odoo/owl
+    - id: 228355690
+      name: odoo/x-spreadsheet
+    - id: 232060976
+      name: odoo/o-spreadsheet
+    - id: 244371456
+      name: odoo/iotbox
+    - id: 289212352
+      name: odoo/mail-client-extensions
+    - id: 362812569
+      name: odoo/design-themes
+    - id: 454825909
+      name: odoo/postfix_exporter
+    - id: 560821018
+      name: odoo/upgrade-util
+    - id: 560959899
+      name: odoo/tutorials
+    - id: 605624319
+      name: odoo/odoo-ls
+    - id: 677342336
+      name: odoo/industry
+    - id: 687889080
+      name: odoo/wkhtmltopdf
+    - id: 727265561
+      name: odoo/sfu
+    - id: 849307016
+      name: odoo/paper-muncher

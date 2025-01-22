@@ -1,0 +1,209 @@
+name: Socket
+type: Company
+data:
+  platforms:
+  - name: GitHub
+    type: Code Hosting
+    repos:
+    - id: 118121604
+      name: socketsupply/unionstudio.app
+    - id: 127144283
+      name: socketsupply/dynavolt
+    - id: 141166490
+      name: socketsupply/tonic
+    - id: 143901399
+      name: socketsupply/components
+    - id: 176991629
+      name: socketsupply/secret-local-storage
+    - id: 215687790
+      name: socketsupply/fake-api-gateway-lambda
+    - id: 233146840
+      name: socketsupply/async-level
+    - id: 241965376
+      name: socketsupply/tapzero
+    - id: 302322717
+      name: socketsupply/fake-aws
+    - id: 313254918
+      name: socketsupply/beta
+    - id: 314163349
+      name: socketsupply/docs
+    - id: 321142196
+      name: socketsupply/functions-nodejs-hello-world
+    - id: 333079932
+      name: socketsupply/tonic-ssr
+    - id: 333576406
+      name: socketsupply/tonic-docs
+    - id: 404032549
+      name: socketsupply/functions-python-hello-world
+    - id: 404270311
+      name: socketsupply/functions-go-hello-world
+    - id: 441100144
+      name: socketsupply/libutp
+    - id: 459211308
+      name: socketsupply/website-hello-world
+    - id: 463104955
+      name: socketsupply/sockets.sh
+    - id: 470977611
+      name: socketsupply/op-node
+    - id: 471455747
+      name: socketsupply/msvc-bash-env
+    - id: 474162575
+      name: socketsupply/ltp
+    - id: 480910327
+      name: socketsupply/aws-s3-object-multipart-copy
+    - id: 481324691
+      name: socketsupply/libssc
+    - id: 481650522
+      name: socketsupply/socket-examples
+    - id: 484102590
+      name: socketsupply/website-create-react-app
+    - id: 485281530
+      name: socketsupply/.github
+    - id: 486780250
+      name: socketsupply/op-bash-example
+    - id: 490740572
+      name: socketsupply/libudx
+    - id: 491092354
+      name: socketsupply/socket-api
+    - id: 494050887
+      name: socketsupply/ssc-node
+    - id: 494129207
+      name: socketsupply/bash-pipes-and-socket-sdk
+    - id: 495771972
+      name: socketsupply/hyperswarm
+    - id: 495772803
+      name: socketsupply/dht
+    - id: 495773205
+      name: socketsupply/dht-rpc
+    - id: 507290706
+      name: socketsupply/netsim
+    - id: 508370506
+      name: socketsupply/socket-sdk-kotlin-native-example
+    - id: 511307307
+      name: socketsupply/swarm
+    - id: 520423213
+      name: socketsupply/lightning
+    - id: 533537260
+      name: socketsupply/adb-logcat-app
+    - id: 542323745
+      name: socketsupply/nat-traversal-spec
+    - id: 544596167
+      name: socketsupply/socket
+    - id: 556309534
+      name: socketsupply/cxx-modules-examples
+    - id: 556487770
+      name: socketsupply/treehash
+    - id: 572195671
+      name: socketsupply/libuv
+    - id: 583046369
+      name: socketsupply/socket-api-tests-workflow
+    - id: 586200830
+      name: socketsupply/socket-pipe
+    - id: 587363318
+      name: socketsupply/socket-repl
+    - id: 587883583
+      name: socketsupply/create-socket-app
+    - id: 663001313
+      name: socketsupply/socket-extension-ruby
+    - id: 682255141
+      name: socketsupply/module-json-store
+    - id: 697460914
+      name: socketsupply/sfspeechrecognizer-example
+    - id: 741595550
+      name: socketsupply/indexed
+    - id: 749200667
+      name: socketsupply/p2p3js
+    - id: 751215601
+      name: socketsupply/llama.cpp
+    - id: 751607608
+      name: socketsupply/socket-macos-hotkey-extension-example
+    - id: 775474558
+      name: socketsupply/socket-service-worker-examples
+    - id: 777244168
+      name: socketsupply/socket-simple-emit-extension-example
+    - id: 782483987
+      name: socketsupply/next-native
+    - id: 888200868
+      name: socketsupply/socket-service-worker-weather-example
+    - id: 892930176
+      name: socketsupply/socket-conduit-rpc-example
+    - id: 893720553
+      name: socketsupply/socket-conduit-rpc
+    - id: 913907878
+      name: socketsupply/node-rdpjs
+    - id: 339521888
+      name: SocketDev/node-process
+    - id: 339878508
+      name: SocketDev/readable-stream-node-to-web
+    - id: 346201860
+      name: SocketDev/idb-kv-store
+    - id: 346202260
+      name: SocketDev/indexeddb-chunk-store
+    - id: 346466840
+      name: SocketDev/node-zip-stream
+    - id: 346494066
+      name: SocketDev/cache-storage-chunk-store
+    - id: 348862420
+      name: SocketDev/idb-chunk-store-old
+    - id: 358381069
+      name: SocketDev/wormhole-crypto
+    - id: 373237703
+      name: SocketDev/fs-access-chunk-store
+    - id: 373328492
+      name: SocketDev/idb-chunk-store
+    - id: 387658036
+      name: SocketDev/module-details-from-path
+    - id: 387658742
+      name: SocketDev/require-in-the-middle
+    - id: 409070970
+      name: SocketDev/sql-ts
+    - id: 431180734
+      name: SocketDev/license-list-data
+    - id: 440156455
+      name: SocketDev/changelog-parser
+    - id: 456693410
+      name: SocketDev/knex
+    - id: 464790517
+      name: SocketDev/node-redis
+    - id: 529344986
+      name: SocketDev/socket-sdk-js
+    - id: 548964513
+      name: SocketDev/eslint-config
+    - id: 554536410
+      name: SocketDev/.github
+    - id: 554765897
+      name: SocketDev/socket-cli
+    - id: 556691729
+      name: SocketDev/workflows
+    - id: 560955794
+      name: SocketDev/souffle
+    - id: 577853739
+      name: SocketDev/socket-config-js
+    - id: 578050969
+      name: SocketDev/vscode-socket-security
+    - id: 580551241
+      name: SocketDev/gh-app-installer
+    - id: 593378920
+      name: SocketDev/next-auth
+    - id: 602835684
+      name: SocketDev/tc39-propoal-progress-allowing-regexp
+    - id: 670270058
+      name: SocketDev/socket-utils-js
+    - id: 674795631
+      name: SocketDev/wandb
+    - id: 699031719
+      name: SocketDev/dependency-divergence
+    - id: 712658109
+      name: SocketDev/socket-dependency-licenses
+    - id: 715809144
+      name: SocketDev/socket-sdk-python
+    - id: 729364931
+      name: SocketDev/socket-siem-connector
+    - id: 791640543
+      name: SocketDev/packageurl-js
+    - id: 802230750
+      name: SocketDev/socket-python-cli
+    - id: 852855802
+      name: SocketDev/socket-registry
+    - id: 860537970
+      name: SocketDev/typosquat-lfs

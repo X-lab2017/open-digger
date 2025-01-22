@@ -1,0 +1,67 @@
+name: LiveKit
+type: Company
+data:
+  platforms:
+  - name: GitHub
+    type: Code Hosting
+    repos:
+    - id: 299832860
+      name: livekit/livekit
+    - id: 309592063
+      name: livekit/client-sdk-js
+    - id: 311453102
+      name: livekit/client-sdk-swift
+    - id: 330538455
+      name: livekit/ios-test-apps
+    - id: 331216373
+      name: livekit/livekit-video-app-react
+    - id: 331868206
+      name: livekit/node-sdks
+    - id: 339892560
+      name: livekit/client-sdk-android
+    - id: 339931518
+      name: livekit/livekit-docs
+    - id: 347283805
+      name: livekit/server-sdk-go
+    - id: 347304471
+      name: livekit/protocol
+    - id: 363346557
+      name: livekit/livekit-helm
+    - id: 366175117
+      name: livekit/livekit-cli
+    - id: 373972078
+      name: livekit/react-native-webrtc
+    - id: 373993571
+      name: livekit/livekit-react
+    - id: 378042423
+      name: livekit/chrometester
+    - id: 380046827
+      name: livekit/prism-react-renderer
+    - id: 383160617
+      name: livekit/twirp-client-unity
+    - id: 387632279
+      name: livekit/livekit-recorder
+    - id: 388948667
+      name: livekit/client-sdk-flutter
+    - id: 397411027
+      name: livekit/server-sdk-ruby
+    - id: 400648415
+      name: livekit/flutter-webrtc
+    - id: 418795195
+      name: livekit/turn
+    - id: 429314112
+      name: livekit/react-github-login
+    - id: 436784142
+      name: livekit/livekit-server-sdk-python
+    - id: 447830843
+      name: livekit/hq
+    - id: 448825021
+      name: livekit/deploy
+    - id: 458046043
+      name: livekit/ingress
+    - id: 458046250
+      name: livekit/egress
+    - id: 458292107
+      name: livekit/client-sdk-unity-web
+    - id: 466724366
+      name: livekit/client-sdk-react-native

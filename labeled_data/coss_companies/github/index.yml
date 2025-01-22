@@ -1,0 +1,1023 @@
+name: GitHub
+type: Company
+data:
+  platforms:
+  - name: GitHub
+    type: Code Hosting
+    repos:
+    - id: 3222
+      name: github/media
+    - id: 15929
+      name: github/albino
+    - id: 15930
+      name: github/hubahuba
+    - id: 15931
+      name: github/jquery-hotkeys
+    - id: 15932
+      name: github/jquery-relatize_date
+    - id: 15933
+      name: github/request_timer
+    - id: 15934
+      name: github/will_paginate_with_hotkeys
+    - id: 67489
+      name: github/gem-builder
+    - id: 124393
+      name: github/learn.github.com
+    - id: 126353
+      name: github/safegem
+    - id: 131237
+      name: github/develop.github.com
+    - id: 184996
+      name: github/version_sorter
+    - id: 355893
+      name: github/markup
+    - id: 592747
+      name: github/upload
+    - id: 667163
+      name: github/github-services
+    - id: 896145
+      name: github/gitcasts
+    - id: 991567
+      name: github/rails
+    - id: 1062897
+      name: github/gitignore
+    - id: 1304738
+      name: github/dmca
+    - id: 1388062
+      name: github/pong
+    - id: 1394384
+      name: github/pycon2011
+    - id: 1400605
+      name: github/email_reply_parser
+    - id: 1666784
+      name: github/developer.github.com
+    - id: 1799756
+      name: github/ghterm
+    - id: 1944053
+      name: github/testrepo
+    - id: 2139604
+      name: github/node-statsd
+    - id: 2144321
+      name: github/maven-plugins
+    - id: 2185924
+      name: github/statsd-ruby
+    - id: 2228986
+      name: github/grit
+    - id: 2346623
+      name: github/hubot-scripts
+    - id: 2660109
+      name: github/GitPad
+    - id: 2745150
+      name: github/enterprise-ohai
+    - id: 2902320
+      name: github/rack-statsd
+    - id: 2981455
+      name: github/gemoji
+    - id: 3012430
+      name: github/janky
+    - id: 3433405
+      name: github/expecta
+    - id: 3464171
+      name: github/gitscm-old
+    - id: 3518148
+      name: github/twui
+    - id: 3634153
+      name: github/tainted_hash
+    - id: 3655172
+      name: github/GHKeyBrowser
+    - id: 3717908
+      name: github/pagerduty-incident-webhooks
+    - id: 4205118
+      name: github/msysgit
+    - id: 4217617
+      name: github/rbenv-autohash
+    - id: 4332468
+      name: github/RepoRepairTool
+    - id: 4738574
+      name: github/ernicorn
+    - id: 5086569
+      name: github/yard-sinatra
+    - id: 5129343
+      name: github/game-off-2012
+    - id: 5185922
+      name: github/swordfish
+    - id: 5226339
+      name: github/Rebel
+    - id: 5227250
+      name: github/training.github.com
+    - id: 5345838
+      name: github/specta
+    - id: 5502329
+      name: github/taps
+    - id: 5619324
+      name: github/teach.github.com
+    - id: 5968664
+      name: github/objective-c-style-guide
+    - id: 6132642
+      name: github/resque
+    - id: 6180360
+      name: github/elastomer-client
+    - id: 6341383
+      name: github/Archimedes
+    - id: 6621339
+      name: github/OHHTTPStubs
+    - id: 7122663
+      name: github/secure_headers
+    - id: 7314748
+      name: github/MASPreferences
+    - id: 7444548
+      name: github/aws-s3
+    - id: 8016619
+      name: github/brakeman
+    - id: 8024404
+      name: github/ruby-thecodeshop
+    - id: 8287205
+      name: github/banana_phone
+    - id: 8364973
+      name: github/dat-science
+    - id: 8445877
+      name: github/platform-samples
+    - id: 8643463
+      name: github/faceup
+    - id: 8869566
+      name: github/task_list
+    - id: 9037427
+      name: github/puppet-aptmirror
+    - id: 9551327
+      name: github/omniauth
+    - id: 9612362
+      name: github/dat-analysis
+    - id: 9724258
+      name: github/puppetlabs-puppet
+    - id: 9724576
+      name: github/puppetlabs-puppetdb
+    - id: 10447608
+      name: github/mime-types
+    - id: 11240782
+      name: github/github-ldap
+    - id: 11426474
+      name: github/choosealicense.com
+    - id: 11486527
+      name: github/django-floppyforms
+    - id: 11801296
+      name: github/ssziparchive
+    - id: 11913490
+      name: github/ruby
+    - id: 11980558
+      name: github/pages-gem
+    - id: 12007828
+      name: github/puppet-sysfs
+    - id: 12155794
+      name: github/rack-ssl-enforcer
+    - id: 12205090
+      name: github/buildstep
+    - id: 12540003
+      name: github/fog
+    - id: 12656877
+      name: github/octokit.py
+    - id: 13162990
+      name: github/htttee
+    - id: 13176855
+      name: github/evenflow
+    - id: 13176859
+      name: github/ledbetter
+    - id: 13272464
+      name: github/go-opstocat
+    - id: 13387595
+      name: github/marginalia
+    - id: 13568290
+      name: github/game-off-2013
+    - id: 13597853
+      name: github/government.github.com
+    - id: 13934299
+      name: github/uiimage-from-animated-gif
+    - id: 14906200
+      name: github/serialized_attributes
+    - id: 14910657
+      name: github/gollum
+    - id: 15342073
+      name: github/training-kit
+    - id: 16483096
+      name: github/game-o
+    - id: 16549503
+      name: github/scientist
+    - id: 17933039
+      name: github/git-msysgit
+    - id: 17966190
+      name: github/foreman
+    - id: 18131746
+      name: github/nagios-plugins-github
+    - id: 18305689
+      name: github/SharpDevelop
+    - id: 18499964
+      name: github/aroma
+    - id: 18766203
+      name: github/garethr-docker
+    - id: 19039693
+      name: github/relative-time-element
+    - id: 19462601
+      name: github/backstop
+    - id: 19581847
+      name: github/nugget
+    - id: 20529805
+      name: github/veewee
+    - id: 20785678
+      name: github/hr-opensource
+    - id: 20896218
+      name: github/STUtils
+    - id: 21622084
+      name: github/backup-utils
+    - id: 21782593
+      name: github/swift-style-guide
+    - id: 22079954
+      name: github/puppet-module-group
+    - id: 22222472
+      name: github/pages-health-check
+    - id: 22369878
+      name: github/nagioseasier-module
+    - id: 22385433
+      name: github/cas-overlay
+    - id: 22428149
+      name: github/pages-cucumber-fixture
+    - id: 22474154
+      name: github/circuitbreaker
+    - id: 23623640
+      name: github/railsless-deploy
+    - id: 23872149
+      name: github/AFNetworking
+    - id: 24237267
+      name: github/aptly
+    - id: 24341833
+      name: github/grocer
+    - id: 24663344
+      name: github/include-fragment-element
+    - id: 24730862
+      name: github/Quick
+    - id: 24731392
+      name: github/Nimble
+    - id: 25573868
+      name: github/hoosegow
+    - id: 27102147
+      name: github/facter
+    - id: 27491081
+      name: github/roskomnadzor
+    - id: 29318955
+      name: github/training-utils
+    - id: 29572408
+      name: github/libgit2sharp
+    - id: 29638616
+      name: github/fake_braintree
+    - id: 29654750
+      name: github/mentorships
+    - id: 33492165
+      name: github/posix-spawn
+    - id: 34767010
+      name: github/azure-quickstart-templates
+    - id: 34834076
+      name: github/elasticsearch-srv-discovery
+    - id: 35187214
+      name: github/winbootstrap
+    - id: 36055297
+      name: github/rubycas-server
+    - id: 36262070
+      name: github/ghfw-build-extra
+    - id: 36672511
+      name: github/u2f-api
+    - id: 37189021
+      name: github/brubeck
+    - id: 37864995
+      name: github/scripts-to-rule-them-all
+    - id: 38012155
+      name: github/puppetlabs-apt
+    - id: 38325182
+      name: github/VisualStudio
+    - id: 41794944
+      name: github/octo-recipes
+    - id: 41928558
+      name: github/kano-desktop
+    - id: 42262179
+      name: github/hubot-slack
+    - id: 44947240
+      name: github/hubot-pager-me
+    - id: 46129520
+      name: github/homebrew-bootstrap
+    - id: 47089276
+      name: github/lua-nginx-module
+    - id: 47153434
+      name: github/guard
+    - id: 47560383
+      name: github/zero_push
+    - id: 47583415
+      name: github/multibinder
+    - id: 47654784
+      name: github/html-pipeline
+    - id: 49411102
+      name: github/ccql
+    - id: 49589537
+      name: github/maturity-model
+    - id: 51152310
+      name: github/Spoon-Knife
+    - id: 54378638
+      name: github/gh-ost
+    - id: 54927600
+      name: github/eslint-plugin-github
+    - id: 56352205
+      name: github/bert
+    - id: 56649232
+      name: github/braintree-encryption
+    - id: 56712021
+      name: github/ohnogit
+    - id: 59038600
+      name: github/chatops-controller
+    - id: 60656641
+      name: github/gov-takedowns
+    - id: 61204818
+      name: github/opensource.guide
+    - id: 61508149
+      name: github/synsanity
+    - id: 61589034
+      name: github/puppet-vault
+    - id: 61753178
+      name: github/puppet-consul_template
+    - id: 62299366
+      name: github/mysql-haproxy-xinetd
+    - id: 62674936
+      name: github/balanced-employee-ip-agreement
+    - id: 63967308
+      name: github/puppet-orchestrator-for-mysql
+    - id: 64329252
+      name: github/github-graphql-rails-example
+    - id: 65502236
+      name: github/force-pr
+    - id: 67646563
+      name: github/open-source-survey
+    - id: 69475018
+      name: github/codemirror-contrib
+    - id: 69606306
+      name: github/graphql-relay-walker
+    - id: 70278869
+      name: github/darrrr
+    - id: 70903180
+      name: github/orchestrator-agent
+    - id: 70923679
+      name: github/octocatalog-diff
+    - id: 71760309
+      name: github/go-mysql
+    - id: 72156873
+      name: github/game-off-2016
+    - id: 74533571
+      name: github/babel-plugin-transform-custom-element-classes
+    - id: 75178884
+      name: github/github-1
+    - id: 75244322
+      name: github/cmark-gfm
+    - id: 75887039
+      name: github/github-ds
+    - id: 76094257
+      name: github/rubocop-github
+    - id: 76280174
+      name: github/looker-slackbot
+    - id: 77702046
+      name: github/opensourcefriday
+    - id: 79115616
+      name: github/puppet-aptly
+    - id: 80035281
+      name: github/SoftU2F
+    - id: 80634006
+      name: github/incubator-airflow
+    - id: 81712364
+      name: github/freno
+    - id: 82305229
+      name: github/sparkles-legacy
+    - id: 82854234
+      name: github/puppet-ca_cert
+    - id: 84405685
+      name: github/node-slack-sdk
+    - id: 85009095
+      name: github/sqoop
+    - id: 86614144
+      name: github/replicate
+    - id: 87838138
+      name: github/GITHUB-ENTERPRISE-LICENSE-AGREEMENT
+    - id: 88286916
+      name: github/putty
+    - id: 89509123
+      name: github/fog-aws
+    - id: 91056936
+      name: github/github-graphql-relay-example
+    - id: 91715783
+      name: github/etcd-operator
+    - id: 93081684
+      name: github/freno-client
+    - id: 93684113
+      name: github/site-policy
+    - id: 94920453
+      name: github/lightcrawler
+    - id: 95114338
+      name: github/accessibilityjs
+    - id: 95416446
+      name: github/s3gof3r
+    - id: 95631788
+      name: github/jekyll-commonmark-ghpages
+    - id: 97981969
+      name: github/babel-plugin-transform-invariant-location
+    - id: 98582045
+      name: github/debug-repo
+    - id: 98634211
+      name: github/eventlistener-polyfill
+    - id: 101898496
+      name: github/restricted-input
+    - id: 101988779
+      name: github/browser-detection
+    - id: 103766152
+      name: github/explore
+    - id: 105823831
+      name: github/snakebite
+    - id: 106006325
+      name: github/octofacts
+    - id: 106740471
+      name: github/deli
+    - id: 107738299
+      name: github/kestrel
+    - id: 109199745
+      name: github/certstore
+    - id: 109926111
+      name: github/image-crop-element
+    - id: 110544064
+      name: github/refined-github
+    - id: 110676145
+      name: github/plax
+    - id: 110906175
+      name: github/webpack-config-github
+    - id: 111144322
+      name: github/ietf-cms
+    - id: 111720282
+      name: github/smimesign
+    - id: 111746161
+      name: github/template
+    - id: 111887061
+      name: github/details-dialog-element
+    - id: 112358967
+      name: github/fakeca
+    - id: 113299504
+      name: github/webcomponentsjs
+    - id: 113347711
+      name: github/practice
+    - id: 114139096
+      name: github/graphql-batch
+    - id: 114309521
+      name: github/docker-awscli
+    - id: 117624308
+      name: github/jenkins_api_client
+    - id: 118840043
+      name: github/lit-html
+    - id: 119228008
+      name: github/git-sizer
+    - id: 120039636
+      name: github/licensed
+    - id: 121109429
+      name: github/gh-ost-ci-env
+    - id: 121818352
+      name: github/wmail-user-scripts
+    - id: 122249905
+      name: github/collectd-elasticsearch
+    - id: 122656025
+      name: github/invisible-recaptcha-validator
+    - id: 123195915
+      name: github/clipboard-copy-element
+    - id: 123220612
+      name: github/form-data-entries
+    - id: 123273570
+      name: github/url-search-params
+    - id: 123458893
+      name: github/d3
+    - id: 123739101
+      name: github/rundeck-chatops-plugin
+    - id: 124596026
+      name: github/linux
+    - id: 126048136
+      name: github/lightstep-tracer-ruby
+    - id: 127322532
+      name: github/oauth2_proxy
+    - id: 128214981
+      name: github/auto-check-element
+    - id: 129146927
+      name: github/auto-complete-element
+    - id: 131072895
+      name: github/task-lists-element
+    - id: 133463076
+      name: github/reactnd-project-readable-starter
+    - id: 133760300
+      name: github/glb-director
+    - id: 134874510
+      name: github/OAuth-Ruby-Quickstart
+    - id: 136965915
+      name: github/markdown-toolbar-element
+    - id: 138219940
+      name: github/presto
+    - id: 138636936
+      name: github/custom-element-boilerplate
+    - id: 138764380
+      name: github/github-elements
+    - id: 138936382
+      name: github/details-menu-element
+    - id: 139906078
+      name: github/quote-selection
+    - id: 140465971
+      name: github/captain-hook
+    - id: 140734490
+      name: github/sdr-code-camp
+    - id: 141574159
+      name: github/vitess-gh
+    - id: 142336689
+      name: github/g-emoji-element
+    - id: 143040428
+      name: github/codeql
+    - id: 144072340
+      name: github/textarea-autosize
+    - id: 144169928
+      name: github/babel-preset-github
+    - id: 144591780
+      name: github/vulcanizer
+    - id: 146782428
+      name: github/check-all
+    - id: 148833346
+      name: github/query-selector
+    - id: 149156462
+      name: github/tweetsodium
+    - id: 149196439
+      name: github/paste-markdown
+    - id: 149268980
+      name: github/review-pull-requests-at-github-template
+    - id: 149323581
+      name: github/blakejs
+    - id: 150173224
+      name: github/user-select-contain-polyfill
+    - id: 152236126
+      name: github/babel-plugin-ensure-name-for-custom-elements
+    - id: 152649727
+      name: github/combobox-nav
+    - id: 157592706
+      name: github/gpgme
+    - id: 157627822
+      name: github/ruby-gpgme
+    - id: 159341229
+      name: github/rollup.js
+    - id: 161472941
+      name: github/tab-container-element
+    - id: 162643615
+      name: github/VFSForGit
+    - id: 164907985
+      name: github/flit
+    - id: 165182885
+      name: github/hubot-mysql-datastore
+    - id: 165317757
+      name: github/libprojfs
+    - id: 166252898
+      name: github/hotkey
+    - id: 167048165
+      name: github/ssh_data
+    - id: 167459852
+      name: github/personal-website
+    - id: 169452728
+      name: github/session-resume
+    - id: 170876990
+      name: github/.github
+    - id: 171510747
+      name: github/octobox
+    - id: 171850311
+      name: github/gh-mysql-tools
+    - id: 173155670
+      name: github/CodeSearchNet
+    - id: 175839913
+      name: github/semantic
+    - id: 181677179
+      name: github/remote-form
+    - id: 183282596
+      name: github/enable-security-alerts-sample
+    - id: 183654341
+      name: github/argo-ml
+    - id: 184330306
+      name: github/remote-input-element
+    - id: 187205323
+      name: github/mini-throttle
+    - id: 189621607
+      name: github/docs
+    - id: 190556958
+      name: github/proxysql
+    - id: 191648604
+      name: github/text-expander-element
+    - id: 194727402
+      name: github/webauthn-json
+    - id: 202520146
+      name: github/promise.rb
+    - id: 203885126
+      name: github/welcome-to-github
+    - id: 203885181
+      name: github/welcome-to-github-and-pages
+    - id: 203885234
+      name: github/welcome-to-github-and-desktop
+    - id: 206270194
+      name: github/skeema
+    - id: 207840450
+      name: github/setup-licensed
+    - id: 208498644
+      name: github/licensed-ci
+    - id: 211169016
+      name: github/vscode-codeql
+    - id: 212587282
+      name: github/homebrew-gh
+    - id: 213947113
+      name: github/deploy-nodejs
+    - id: 215263010
+      name: github/codeql-cli-binaries
+    - id: 216963994
+      name: github/vscode-codeql-starter
+    - id: 218150891
+      name: github/codeql-go
+    - id: 221101274
+      name: github/securitylab
+    - id: 221181294
+      name: github/actions-cheat-sheet
+    - id: 224030701
+      name: github/filter-input-element
+    - id: 226404439
+      name: github/services-implementation-challenge
+    - id: 229434737
+      name: github/codeql-learninglab-actions
+    - id: 232426962
+      name: github/file-attachment-element
+    - id: 233953071
+      name: github/issue-labeler
+    - id: 235645931
+      name: github/archive-program
+    - id: 240087376
+      name: github/catalyst
+    - id: 242789038
+      name: github/omnisharp-vscode
+    - id: 242789155
+      name: github/omnisharp-roslyn
+    - id: 242791995
+      name: github/vscode-kubernetes-tools
+    - id: 242848911
+      name: github/csharp-test-adapter
+    - id: 245447791
+      name: github/rally
+    - id: 246850093
+      name: github/prettier-config
+    - id: 246929362
+      name: github/covid19-dashboard
+    - id: 250599258
+      name: github/covid-19-repo-data
+    - id: 251747948
+      name: github/roadmap
+    - id: 253703318
+      name: github/Dynamic-Template-Engine
+    - id: 254137565
+      name: github/optimizely-javascript-sdk
+    - id: 254141159
+      name: github/depstubber
+    - id: 259445878
+      name: github/codeql-action
+    - id: 262014300
+      name: github/ghec-audit-log-cli
+    - id: 265969140
+      name: github/multimap
+    - id: 267897824
+      name: github/mlops
+    - id: 271896287
+      name: github/renaming
+    - id: 274190073
+      name: github/rest-api-description
+    - id: 274723380
+      name: github/ossar-action
+    - id: 275876253
+      name: github/memoize
+    - id: 278751958
+      name: github/stable-socket
+    - id: 281818347
+      name: github/emissary
+    - id: 283752196
+      name: github/template-parts
+    - id: 285347310
+      name: github/githubOCTO
+    - id: 286113322
+      name: github/codeql-action-sync-tool
+    - id: 287260955
+      name: github/chatops-templates
+    - id: 292561501
+      name: github/safe-settings
+    - id: 292700337
+      name: github/github-artifact-exporter
+    - id: 297419763
+      name: github/india
+    - id: 297722383
+      name: github/stale
+    - id: 307417139
+      name: github/jtml
+    - id: 309796403
+      name: github/cvelist
+    - id: 310698846
+      name: github/code-scanning-javascript-demo
+    - id: 318327460
+      name: github/ruby-test-tracer
+    - id: 319406946
+      name: github/sonic-pi-challenge
+    - id: 327343783
+      name: github/libbuffer
+    - id: 333182230
+      name: github/heroku-buildpack-lightstep-satellite
+    - id: 339990114
+      name: github/codeql-ctf-go-return
+    - id: 346331073
+      name: github/eslint-plugin-custom-elements
+    - id: 347156800
+      name: github/globalmaintainersummit.github.com
+    - id: 348300013
+      name: github/ghas-jira-integration
+    - id: 353082105
+      name: github/maintainermonth
+    - id: 353493721
+      name: github/stack-graphs
+    - id: 356090906
+      name: github/typing-effect-element
+    - id: 358620560
+      name: github/packwerk
+    - id: 365026320
+      name: github/bellevue-murals
+    - id: 365036443
+      name: github/hyderabad-murals
+    - id: 365069809
+      name: github/haikus-for-codespaces
+    - id: 368081936
+      name: github/hackathons
+    - id: 375012542
+      name: github/strap
+    - id: 375495471
+      name: github/developer-policy
+    - id: 380953509
+      name: github/fiber-fragments
+    - id: 387894165
+      name: github/MVG
+    - id: 392390549
+      name: github/codeql-variant-analysis-action
+    - id: 398028230
+      name: github/dev
+    - id: 398289933
+      name: github/ssh-key-algo
+    - id: 404041205
+      name: github/proto-gen-go
+    - id: 406835330
+      name: github/codeql-dubbo-workshop
+    - id: 407100753
+      name: github/gh-codeql
+    - id: 413862514
+      name: github/dependabot-action
+    - id: 415010084
+      name: github/Skills-Based-Volunteering-Public
+    - id: 416855086
+      name: github/gh-gei
+    - id: 417656389
+      name: github/automatic-contrib-prs
+    - id: 419022203
+      name: github/erblint-github
+    - id: 419446329
+      name: github/copilot.vim
+    - id: 419515068
+      name: github/update-project-action
+    - id: 420459569
+      name: github/copilot-docs
+    - id: 427204601
+      name: github/release-radar
+    - id: 431024807
+      name: github/kafka-sink-azure-kusto
+    - id: 437060208
+      name: github/gh-migration-analyzer
+    - id: 438346779
+      name: github/osv-schema
+    - id: 444856506
+      name: github/actions-oidc-gateway-example
+    - id: 445939646
+      name: github/webpack-bundlesize-compare-action
+    - id: 452759701
+      name: github/memcached
+    - id: 456430454
+      name: github/browser-support
+    - id: 458364565
+      name: github/advisory-database
+    - id: 469970302
+      name: github/gh-valet
+    - id: 470373738
+      name: github/gh-net
+    - id: 477765179
+      name: github/emergency-pull-request-probot-app
+    - id: 481689251
+      name: github/octoforce-actions
+    - id: 481733431
+      name: github/metrics-exporter-statsd
+    - id: 486614111
+      name: github/branch-deploy
+    - id: 487920697
+      name: github/actions-oidc-debugger
+    - id: 488244216
+      name: github/entitlements-config
+    - id: 491162902
+      name: github/dependency-submission-toolkit
+    - id: 495595499
+      name: github/request-marketplace-action
+    - id: 496328849
+      name: github/hackerone-client
+    - id: 500912674
+      name: github/entitlements-gitrepo-auditor-plugin
+    - id: 500915777
+      name: github/entitlements-github-plugin
+    - id: 500916676
+      name: github/entitlements-app
+    - id: 501263799
+      name: github/codespaces-rails
+    - id: 501264105
+      name: github/codespaces-react
+    - id: 501264265
+      name: github/codespaces-jupyter
+    - id: 507958918
+      name: github/DPG-guidance
+    - id: 513154248
+      name: github/codeql-coding-standards
+    - id: 514067070
+      name: github/gh-ado2gh
+    - id: 514067138
+      name: github/gh-bbs2gh
+    - id: 518744654
+      name: github/markdownlint-github
+    - id: 522730428
+      name: github/codespaces-getting-started-ml
+    - id: 525108068
+      name: github/mona-sans
+    - id: 525372038
+      name: github/rubocop-rails-accessibility
+    - id: 525552024
+      name: github/codespaces-blank
+    - id: 527616556
+      name: github/hubot-sans
+    - id: 528388612
+      name: github/go-spdx
+    - id: 533482936
+      name: github/codespaces-django
+    - id: 533485914
+      name: github/codespaces-nextjs
+    - id: 533494706
+      name: github/codespaces-express
+    - id: 533578412
+      name: github/codespaces-flask
+    - id: 539176727
+      name: github/codespaces-codeql
+    - id: 539662769
+      name: github/spokes-receive-pack
+    - id: 545542169
+      name: github/privileged-requester
+    - id: 549201247
+      name: github/Research-Panel-Sweepstakes
+    - id: 549517145
+      name: github/browserslist-config
+    - id: 550398189
+      name: github/Pac-tocat
+    - id: 553127892
+      name: github/codespaces-jetbrains-feedback
+    - id: 556883665
+      name: github/codespaces-preact
+    - id: 560174038
+      name: github/lock
+    - id: 560182652
+      name: github/gh-actions-importer
+    - id: 561742981
+      name: github/go-pipe
+    - id: 579161946
+      name: github/government-open-source-policies
+    - id: 579185740
+      name: github/curated-data
+    - id: 583452121
+      name: github/gh-projects
+    - id: 593706555
+      name: github/combine-prs
+    - id: 596703153
+      name: github/pets-workshop
+    - id: 598668928
+      name: github/codespaces-learn-with-me
+    - id: 599795433
+      name: github/codespaces-actions-playground
+    - id: 601341360
+      name: github/transparency
+    - id: 602264401
+      name: github/GitHub-for-Startups-HQ
+    - id: 607924273
+      name: github/github-ospo
+    - id: 611927574
+      name: github/turbo
+    - id: 613619550
+      name: github/copilot-survey-engine
+    - id: 614360627
+      name: github/copilot-codespaces-demo
+    - id: 614523021
+      name: github/gh-classroom
+    - id: 616663763
+      name: github/vscode-github-actions
+    - id: 620398419
+      name: github/github-app-js-sample
+    - id: 632088451
+      name: github/accessibility-alt-text-bot
+    - id: 633129333
+      name: github/super-linter
+    - id: 634017085
+      name: github/brasil
+    - id: 642585551
+      name: github/stale-repos
+    - id: 647780698
+      name: github/release-assets
+    - id: 648340231
+      name: github/issue-metrics
+    - id: 651667700
+      name: github/open-data-on-github
+    - id: 656613811
+      name: github/canvas-lms
+    - id: 657815721
+      name: github/twirp-rs
+    - id: 663291669
+      name: github/command
+    - id: 673275529
+      name: github/KustoSchemaTools
+    - id: 673335609
+      name: github/KustoSchemaToolsAction
+    - id: 680303902
+      name: github/ruleset-recipes
+    - id: 690352125
+      name: github/forgoodfirstissue
+    - id: 690973222
+      name: github/gh-es
+    - id: 691787649
+      name: github/innovationgraph
+    - id: 693301507
+      name: github/how-engineering-communicates
+    - id: 694366857
+      name: github/actions-learning-pathway
+    - id: 696879832
+      name: github/dotnet-codespaces
+    - id: 698204403
+      name: github/gh-autofix
+    - id: 698430903
+      name: github/copilot-hack
+    - id: 699541203
+      name: github/contributors
+    - id: 703464303
+      name: github/rust-gems
+    - id: 704226524
+      name: github/form-templates
+    - id: 710311348
+      name: github/gh-copilot
+    - id: 710362500
+      name: github/local-action
+    - id: 712650286
+      name: github/codespaces-host-images
+    - id: 718291223
+      name: github/redacting-logger
+    - id: 724784261
+      name: github/gh-mysql-conf-diff
+    - id: 730916007
+      name: github/evergreen
+    - id: 733425158
+      name: github/github-event-mirror-azure-function
+    - id: 750479518
+      name: github/cleanowners
+    - id: 764152272
+      name: github/policy-controller
+    - id: 794715664
+      name: github/generate-dependabot-glob-action
+    - id: 801788004
+      name: github/code-navigation
+    - id: 802178528
+      name: github/simplebox
+    - id: 804468129
+      name: github/artifact-attestations-workflows
+    - id: 807808439
+      name: github/artifact-attestations-helm-charts
+    - id: 825818564
+      name: github/ariaNotify-polyfill
+    - id: 827899876
+      name: github/rest-api-docs-md
+    - id: 827939314
+      name: github/codespaces-models
+    - id: 842626907
+      name: github/terraform-github-runner-vnet
+    - id: 849051482
+      name: github/gh-models
+    - id: 853494005
+      name: github/annotated-logger
+    - id: 857124827
+      name: github/GreenSoftwareDirectory
+    - id: 860035177
+      name: github/CopilotForXcode
+    - id: 882001152
+      name: github/issue-parser
+    - id: 888540574
+      name: github/gh-skyline
+    - id: 906800995
+      name: github/ospo-reusable-workflows

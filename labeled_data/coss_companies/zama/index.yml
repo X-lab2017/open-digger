@@ -1,0 +1,67 @@
+name: Zama
+type: Company
+data:
+  platforms:
+  - name: GitHub
+    type: Code Hosting
+    repos:
+    - id: 300205799
+      name: zama-ai/concrete
+    - id: 429365958
+      name: zama-ai/lattice-estimator
+    - id: 441117015
+      name: zama-ai/progress-tracker-python
+    - id: 457444170
+      name: zama-ai/hummingbird
+    - id: 473188634
+      name: zama-ai/concrete-ml
+    - id: 493689645
+      name: zama-ai/concrete-compiler-internal-llvm-project
+    - id: 507981930
+      name: zama-ai/.github
+    - id: 511923617
+      name: zama-ai/concrete-fft
+    - id: 547165167
+      name: zama-ai/fhevm-decryptions-db
+    - id: 550755640
+      name: zama-ai/tfhe-rs
+    - id: 569350552
+      name: zama-ai/bounty-program
+    - id: 573357897
+      name: zama-ai/brevitas
+    - id: 574980130
+      name: zama-ai/fhevm
+    - id: 589636779
+      name: zama-ai/metamask-extension
+    - id: 597095488
+      name: zama-ai/edalize
+    - id: 598816458
+      name: zama-ai/concrete-ntt
+    - id: 612317570
+      name: zama-ai/fhe-biometrics
+    - id: 613953794
+      name: zama-ai/fhevm-tfhe-cli
+    - id: 638519926
+      name: zama-ai/fhevmjs
+    - id: 644450891
+      name: zama-ai/dapps
+    - id: 665019899
+      name: zama-ai/hf-blog
+    - id: 665572560
+      name: zama-ai/fhevm-workshop
+    - id: 667040038
+      name: zama-ai/fhevm-react-template
+    - id: 668754749
+      name: zama-ai/fhevm-evmos
+    - id: 669191379
+      name: zama-ai/fhevmpy
+    - id: 670636752
+      name: zama-ai/fhevm-hardhat-template
+    - id: 672965043
+      name: zama-ai/awesome-zama
+    - id: 683834665
+      name: zama-ai/bounty-matrix-inversion
+    - id: 684015956
+      name: zama-ai/bounty-ecdsa-signature
+    - id: 691147988
+      name: zama-ai/remix-project

@@ -1,0 +1,67 @@
+name: Tembo
+type: Company
+data:
+  platforms:
+  - name: GitHub
+    type: Code Hosting
+    repos:
+    - id: 569860278
+      name: tembo-io/tembo
+    - id: 583011491
+      name: tembo-io/tembo-stacks
+    - id: 584917811
+      name: tembo-io/nile-client-rs
+    - id: 607844736
+      name: tembo-io/trunk
+    - id: 641608777
+      name: tembo-io/tembo-images
+    - id: 645818193
+      name: tembo-io/cloudnative-pg
+    - id: 648671032
+      name: tembo-io/pgfs
+    - id: 670192969
+      name: tembo-io/pgmq
+    - id: 670229593
+      name: tembo-io/pg_later
+    - id: 670256513
+      name: tembo-io/tembo-cli
+    - id: 670285296
+      name: tembo-io/pgUI
+    - id: 670317879
+      name: tembo-io/pg_vectorize
+    - id: 671748042
+      name: tembo-io/greco
+    - id: 673494754
+      name: tembo-io/terraform-provider-tembo
+    - id: 675857366
+      name: tembo-io/tembo-telemetry
+    - id: 676758418
+      name: tembo-io/trunk-packager
+    - id: 677120758
+      name: tembo-io/dyson
+    - id: 679804649
+      name: tembo-io/clerk_fdw
+    - id: 700035922
+      name: tembo-io/prometheus_fdw
+    - id: 739014681
+      name: tembo-io/homebrew-tembo
+    - id: 747380657
+      name: tembo-io/orb_fdw
+    - id: 756489650
+      name: tembo-io/ClickBench
+    - id: 757513003
+      name: tembo-io/pgxn-bridge
+    - id: 763696585
+      name: tembo-io/database-branching-action
+    - id: 768784983
+      name: tembo-io/pg_tier
+    - id: 768898099
+      name: tembo-io/pg_timeseries
+    - id: 770624569
+      name: tembo-io/database-branching-demo
+    - id: 779031417
+      name: tembo-io/pg-jsonschema-boon
+    - id: 784816694
+      name: tembo-io/tembo-self-hosted
+    - id: 787093865
+      name: tembo-io/clap-markdown

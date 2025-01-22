@@ -1,0 +1,55 @@
+name: Ubicloud
+type: Company
+data:
+  platforms:
+  - name: GitHub
+    type: Code Hosting
+    repos:
+    - id: 590158156
+      name: ubicloud/ubicloud
+    - id: 674667178
+      name: ubicloud/erb-formatter
+    - id: 685414902
+      name: ubicloud/radvd
+    - id: 685415133
+      name: ubicloud/dnsmasq
+    - id: 718842103
+      name: ubicloud/bdev_ubi
+    - id: 749716552
+      name: ubicloud/runner-images
+    - id: 760925320
+      name: ubicloud/build-edk2-firmware
+    - id: 804747637
+      name: ubicloud/github-e2e-test-workflows
+    - id: 808600599
+      name: ubicloud/toolkit
+    - id: 819870424
+      name: ubicloud/cache
+    - id: 820470888
+      name: ubicloud/setup-ruby
+    - id: 821785136
+      name: ubicloud/setup-python
+    - id: 821786956
+      name: ubicloud/setup-go
+    - id: 821787020
+      name: ubicloud/setup-node
+    - id: 821787101
+      name: ubicloud/setup-java
+    - id: 821787493
+      name: ubicloud/setup-dotnet
+    - id: 821787942
+      name: ubicloud/gradle-actions
+    - id: 821788211
+      name: ubicloud/rust-cache
+    - id: 824033801
+      name: ubicloud/terraform-provider-ubicloud
+    - id: 842443549
+      name: ubicloud/runner
+    - id: 851524115
+      name: ubicloud/metadata-endpoint
+    - id: 867487824
+      name: ubicloud/hostedgpt
+    - id: 875132534
+      name: ubicloud/documentation
+    - id: 905664624
+      name: ubicloud/windmill

@@ -1,0 +1,11 @@
+name: Black Forest Labs
+type: Company
+data:
+  platforms:
+  - name: GitHub
+    type: Code Hosting
+    repos:
+    - id: 836642963
+      name: black-forest-labs/flux
+    - id: 853108593
+      name: black-forest-labs/bfl-comfy-nodes

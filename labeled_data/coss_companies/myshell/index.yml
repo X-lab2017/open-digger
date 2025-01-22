@@ -1,0 +1,19 @@
+name: MyShell
+type: Company
+data:
+  platforms:
+  - name: GitHub
+    type: Code Hosting
+    repos:
+    - id: 705433491
+      name: myshell-ai/AIlice
+    - id: 725089041
+      name: myshell-ai/OpenVoice
+    - id: 760022246
+      name: myshell-ai/MeloTTS
+    - id: 780713459
+      name: myshell-ai/JetMoE
+    - id: 857254790
+      name: myshell-ai/ShellAgent
+    - id: 862181564
+      name: myshell-ai/ComfyUI-ShellAgent-Plugin

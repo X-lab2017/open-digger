@@ -1,0 +1,29 @@
+name: Toddle
+type: Company
+data:
+  platforms:
+  - name: GitHub
+    type: Code Hosting
+    repos:
+    - id: 645265025
+      name: toddledev/rive-animation
+    - id: 716014930
+      name: toddledev/editor-extensions
+    - id: 790121263
+      name: toddledev/files
+    - id: 797193440
+      name: toddledev/resources
+    - id: 824207638
+      name: toddledev/tailwind-parser
+    - id: 833530407
+      name: toddledev/documentation
+    - id: 870501633
+      name: toddledev/lighthouse-proxy
+    - id: 874652890
+      name: toddledev/discord-api
+    - id: 880161532
+      name: toddledev/docs-proxy
+    - id: 880797897
+      name: toddledev/toddle
+    - id: 905681371
+      name: toddledev/figma-plugin
