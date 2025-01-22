@@ -1,0 +1,10 @@
+name: Lebap
+type: Division-1
+meta:
+  alpha2: TM-L
+  includes:
+    - lebap
+    - tm-l
+    - l
+    - lebap region
+  category: REGION

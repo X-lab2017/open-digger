@@ -1,0 +1,10 @@
+name: Sabah
+type: Division-1
+meta:
+  alpha2: MY-12
+  includes:
+    - sabah
+    - my-12
+    - '12'
+    - sabah state
+  category: STATE

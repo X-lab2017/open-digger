@@ -1,0 +1,12 @@
+name: Ādažu novads
+type: Division-1
+meta:
+  alpha2: LV-011
+  includes:
+    - ādažu novads
+    - lv-011
+    - '011'
+    - ādažu novads municipality
+    - ādaži
+    - ādaži municipality
+  category: MUNICIPALITY

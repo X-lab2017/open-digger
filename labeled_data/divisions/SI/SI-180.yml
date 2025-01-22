@@ -1,0 +1,10 @@
+name: Solčava
+type: Division-1
+meta:
+  alpha2: SI-180
+  includes:
+    - solčava
+    - si-180
+    - '180'
+    - solčava municipality
+  category: MUNICIPALITY

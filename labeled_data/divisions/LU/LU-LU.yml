@@ -1,0 +1,14 @@
+name: Luxemburg
+type: Division-1
+meta:
+  alpha2: LU-LU
+  includes:
+    - luxembourg
+    - lu-lu
+    - lu
+    - luxembourg canton
+    - luxemburg
+    - luxemburg canton
+    - lëtzebuerg
+    - lëtzebuerg canton
+  category: CANTON

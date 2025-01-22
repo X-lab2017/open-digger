@@ -1,0 +1,88 @@
+name: Saudi Arabia
+type: Division-0
+meta:
+  alpha2: SA
+  includes:
+    - Saudi Arabia
+    - SA
+    - '682'
+    - the Kingdom of Saudi Arabia
+    - 沙特阿拉伯
+  name_full: the Kingdom of Saudi Arabia
+  name_zh: 沙特阿拉伯
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 166866
+    - year: 2020
+      quarter: 2
+      count: 191828
+    - year: 2020
+      quarter: 3
+      count: 213878
+    - year: 2020
+      quarter: 4
+      count: 234329
+    - year: 2021
+      quarter: 1
+      count: 255614
+    - year: 2021
+      quarter: 2
+      count: 273934
+    - year: 2021
+      quarter: 3
+      count: 294430
+    - year: 2021
+      quarter: 4
+      count: 314763
+    - year: 2022
+      quarter: 1
+      count: 336367
+    - year: 2022
+      quarter: 2
+      count: 356148
+    - year: 2022
+      quarter: 3
+      count: 378763
+    - year: 2022
+      quarter: 4
+      count: 400801
+    - year: 2023
+      quarter: 1
+      count: 426067
+    - year: 2023
+      quarter: 2
+      count: 452266
+    - year: 2023
+      quarter: 3
+      count: 481930
+    - year: 2023
+      quarter: 4
+      count: 510284
+    - year: 2024
+      quarter: 1
+      count: 546224
+    - year: 2024
+      quarter: 2
+      count: 569919
+    - year: 2024
+      quarter: 3
+      count: 596230
+    - year: 2024
+      quarter: 4
+      count: 630310
+data:
+  labels:
+    - SA-14
+    - SA-11
+    - SA-12
+    - SA-03
+    - SA-05
+    - SA-08
+    - SA-01
+    - SA-04
+    - SA-09
+    - SA-02
+    - SA-10
+    - SA-07
+    - SA-06

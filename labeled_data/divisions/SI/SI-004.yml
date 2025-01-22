@@ -1,0 +1,10 @@
+name: Bohinj
+type: Division-1
+meta:
+  alpha2: SI-004
+  includes:
+    - bohinj
+    - si-004
+    - '004'
+    - bohinj municipality
+  category: MUNICIPALITY

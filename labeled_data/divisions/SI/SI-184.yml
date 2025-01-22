@@ -1,0 +1,10 @@
+name: Tabor
+type: Division-1
+meta:
+  alpha2: SI-184
+  includes:
+    - tabor
+    - si-184
+    - '184'
+    - tabor municipality
+  category: MUNICIPALITY

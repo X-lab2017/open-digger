@@ -1,0 +1,10 @@
+name: Eastern
+type: Division-1
+meta:
+  alpha2: GH-EP
+  includes:
+    - eastern
+    - gh-ep
+    - ep
+    - eastern region
+  category: REGION

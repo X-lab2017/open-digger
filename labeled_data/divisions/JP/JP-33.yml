@@ -1,0 +1,10 @@
+name: Okayama
+type: Division-1
+meta:
+  alpha2: JP-33
+  includes:
+    - okayama
+    - jp-33
+    - '33'
+    - okayama prefecture
+  category: PREFECTURE

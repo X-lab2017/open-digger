@@ -1,0 +1,10 @@
+name: Mashonaland Central
+type: Division-1
+meta:
+  alpha2: ZW-MC
+  includes:
+    - mashonaland central
+    - zw-mc
+    - mc
+    - mashonaland central province
+  category: PROVINCE

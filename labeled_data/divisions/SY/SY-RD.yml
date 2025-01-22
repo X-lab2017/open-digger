@@ -1,0 +1,11 @@
+name: Rīf Dimashq
+type: Division-1
+meta:
+  alpha2: SY-RD
+  includes:
+    - rīf dimashq
+    - sy-rd
+    - rd
+    - rīf dimashq province
+    - rif dimashq governorate
+  category: PROVINCE

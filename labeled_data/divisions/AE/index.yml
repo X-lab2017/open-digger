@@ -1,0 +1,82 @@
+name: United Arab Emirates
+type: Division-0
+meta:
+  alpha2: AE
+  includes:
+    - United Arab Emirates
+    - AE
+    - '784'
+    - the United Arab Emirates
+    - 阿联酋
+  name_full: the United Arab Emirates
+  name_zh: 阿联酋
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 95190
+    - year: 2020
+      quarter: 2
+      count: 110078
+    - year: 2020
+      quarter: 3
+      count: 122101
+    - year: 2020
+      quarter: 4
+      count: 133327
+    - year: 2021
+      quarter: 1
+      count: 145143
+    - year: 2021
+      quarter: 2
+      count: 156951
+    - year: 2021
+      quarter: 3
+      count: 167202
+    - year: 2021
+      quarter: 4
+      count: 179501
+    - year: 2022
+      quarter: 1
+      count: 196134
+    - year: 2022
+      quarter: 2
+      count: 211046
+    - year: 2022
+      quarter: 3
+      count: 224821
+    - year: 2022
+      quarter: 4
+      count: 242446
+    - year: 2023
+      quarter: 1
+      count: 264766
+    - year: 2023
+      quarter: 2
+      count: 287270
+    - year: 2023
+      quarter: 3
+      count: 308913
+    - year: 2023
+      quarter: 4
+      count: 331735
+    - year: 2024
+      quarter: 1
+      count: 358187
+    - year: 2024
+      quarter: 2
+      count: 377607
+    - year: 2024
+      quarter: 3
+      count: 397298
+    - year: 2024
+      quarter: 4
+      count: 422730
+data:
+  labels:
+    - AE-AZ
+    - AE-FU
+    - AE-SH
+    - AE-DU
+    - AE-RK
+    - AE-UQ
+    - AE-AJ

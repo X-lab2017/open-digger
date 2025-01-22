@@ -1,0 +1,12 @@
+name: Prešovský kraj
+type: Division-1
+meta:
+  alpha2: SK-PV
+  includes:
+    - prešovský kraj
+    - sk-pv
+    - pv
+    - prešovský kraj region
+    - prešov region
+    - presov
+  category: REGION

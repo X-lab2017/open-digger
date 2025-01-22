@@ -1,0 +1,15 @@
+name: Gorod Oš
+type: Division-1
+meta:
+  alpha2: KG-GO
+  includes:
+    - gorod osh
+    - kg-go
+    - go
+    - gorod osh city
+    - gorod oš
+    - gorod oš city
+    - osh shaary
+    - osh shaary city
+    - osh city
+  category: CITY

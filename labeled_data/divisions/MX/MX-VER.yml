@@ -1,0 +1,12 @@
+name: Veracruz de Ignacio de la Llave
+type: Division-1
+meta:
+  alpha2: MX-VER
+  includes:
+    - veracruz de ignacio de la llave
+    - mx-ver
+    - ver
+    - veracruz de ignacio de la llave state
+    - veracruz
+    - veracruz state
+  category: STATE

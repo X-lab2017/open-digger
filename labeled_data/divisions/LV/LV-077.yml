@@ -1,0 +1,12 @@
+name: Rēzeknes novads
+type: Division-1
+meta:
+  alpha2: LV-077
+  includes:
+    - rēzeknes novads
+    - lv-077
+    - '077'
+    - rēzeknes novads municipality
+    - rēzekne
+    - rēzekne municipality
+  category: MUNICIPALITY

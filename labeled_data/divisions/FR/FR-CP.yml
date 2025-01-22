@@ -1,0 +1,10 @@
+name: Clipperton
+type: Division-1
+meta:
+  alpha2: FR-CP
+  includes:
+    - clipperton
+    - fr-cp
+    - cp
+    - clipperton dependency
+  category: DEPENDENCY

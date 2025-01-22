@@ -1,0 +1,11 @@
+name: Táchira
+type: Division-1
+meta:
+  alpha2: VE-S
+  includes:
+    - táchira
+    - ve-s
+    - s
+    - táchira state
+    - tachira state
+  category: STATE

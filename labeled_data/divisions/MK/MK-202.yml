@@ -1,0 +1,11 @@
+name: Vinica
+type: Division-1
+meta:
+  alpha2: MK-202
+  includes:
+    - vinica
+    - mk-202
+    - '202'
+    - vinica municipality
+    - municipality of vinica
+  category: MUNICIPALITY

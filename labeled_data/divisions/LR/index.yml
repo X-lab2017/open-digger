@@ -1,0 +1,90 @@
+name: Liberia
+type: Division-0
+meta:
+  alpha2: LR
+  includes:
+    - Liberia
+    - LR
+    - '430'
+    - the Republic of Liberia
+    - 利比里亚
+  name_full: the Republic of Liberia
+  name_zh: 利比里亚
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 1328
+    - year: 2020
+      quarter: 2
+      count: 1496
+    - year: 2020
+      quarter: 3
+      count: 1719
+    - year: 2020
+      quarter: 4
+      count: 1966
+    - year: 2021
+      quarter: 1
+      count: 2122
+    - year: 2021
+      quarter: 2
+      count: 2476
+    - year: 2021
+      quarter: 3
+      count: 2674
+    - year: 2021
+      quarter: 4
+      count: 3019
+    - year: 2022
+      quarter: 1
+      count: 3274
+    - year: 2022
+      quarter: 2
+      count: 3600
+    - year: 2022
+      quarter: 3
+      count: 3917
+    - year: 2022
+      quarter: 4
+      count: 4489
+    - year: 2023
+      quarter: 1
+      count: 4797
+    - year: 2023
+      quarter: 2
+      count: 5165
+    - year: 2023
+      quarter: 3
+      count: 5471
+    - year: 2023
+      quarter: 4
+      count: 5663
+    - year: 2024
+      quarter: 1
+      count: 5945
+    - year: 2024
+      quarter: 2
+      count: 6257
+    - year: 2024
+      quarter: 3
+      count: 6534
+    - year: 2024
+      quarter: 4
+      count: 6963
+data:
+  labels:
+    - LR-BM
+    - LR-BG
+    - LR-GP
+    - LR-GB
+    - LR-CM
+    - LR-GG
+    - LR-GK
+    - LR-LO
+    - LR-MG
+    - LR-MY
+    - LR-MO
+    - LR-NI
+    - LR-RI
+    - LR-RG
+    - LR-SI

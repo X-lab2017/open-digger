@@ -1,0 +1,12 @@
+name: Alba
+type: Division-1
+meta:
+  alpha2: RO-AB
+  includes:
+    - alba
+    - ro-ab
+    - ab
+    - alba department
+    - alba county
+    - județul alba
+  category: DEPARTMENT

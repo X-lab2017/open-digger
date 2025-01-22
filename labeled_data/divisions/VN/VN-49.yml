@@ -1,0 +1,11 @@
+name: Vĩnh Long
+type: Division-1
+meta:
+  alpha2: VN-49
+  includes:
+    - vĩnh long
+    - vn-49
+    - '49'
+    - vĩnh long province
+    - vinh long
+  category: PROVINCE

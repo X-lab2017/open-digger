@@ -1,0 +1,10 @@
+name: Ehime
+type: Division-1
+meta:
+  alpha2: JP-38
+  includes:
+    - ehime
+    - jp-38
+    - '38'
+    - ehime prefecture
+  category: PREFECTURE

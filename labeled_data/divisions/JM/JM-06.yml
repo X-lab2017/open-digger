@@ -1,0 +1,11 @@
+name: Saint Ann
+type: Division-1
+meta:
+  alpha2: JM-06
+  includes:
+    - saint ann
+    - jm-06
+    - '06'
+    - saint ann parish
+    - st. ann parish
+  category: PARISH

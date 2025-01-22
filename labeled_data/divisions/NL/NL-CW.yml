@@ -1,0 +1,10 @@
+name: Curaçao
+type: Division-1
+meta:
+  alpha2: NL-CW
+  includes:
+    - curaçao
+    - nl-cw
+    - cw
+    - curaçao country
+  category: COUNTRY

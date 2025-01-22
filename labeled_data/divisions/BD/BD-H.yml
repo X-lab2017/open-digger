@@ -1,0 +1,26 @@
+name: Mymensingh
+type: Division-1
+meta:
+  alpha2: BD-H
+  includes:
+    - jamalpur
+    - bd-21
+    - '21'
+    - jamalpur district
+    - mymensingh
+    - bd-h
+    - h
+    - mymensingh division
+    - bd-34
+    - '34'
+    - mymensingh district
+    - netrakona
+    - bd-41
+    - '41'
+    - netrakona district
+    - sherpur
+    - bd-57
+    - '57'
+    - sherpur district
+    - ময়মনসিংহ বিভাগ
+  category: DIVISION

@@ -1,0 +1,11 @@
+name: Tarapacá
+type: Division-1
+meta:
+  alpha2: CL-TA
+  includes:
+    - tarapacá
+    - cl-ta
+    - ta
+    - tarapacá region
+    - i
+  category: REGION

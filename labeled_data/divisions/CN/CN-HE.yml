@@ -1,0 +1,13 @@
+name: Hebei Sheng
+type: Division-1
+meta:
+  alpha2: CN-HE
+  includes:
+    - hebei sheng
+    - cn-he
+    - he
+    - hebei sheng province
+    - he bei sheng
+    - hebei
+    - 河北省
+  category: PROVINCE

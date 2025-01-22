@@ -1,0 +1,89 @@
+name: El Salvador
+type: Division-0
+meta:
+  alpha2: SV
+  includes:
+    - El Salvador
+    - SV
+    - '222'
+    - the Republic of El Salvador
+    - 萨尔瓦多
+  name_full: the Republic of El Salvador
+  name_zh: 萨尔瓦多
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 25900
+    - year: 2020
+      quarter: 2
+      count: 28753
+    - year: 2020
+      quarter: 3
+      count: 31981
+    - year: 2020
+      quarter: 4
+      count: 34310
+    - year: 2021
+      quarter: 1
+      count: 36341
+    - year: 2021
+      quarter: 2
+      count: 38979
+    - year: 2021
+      quarter: 3
+      count: 41978
+    - year: 2021
+      quarter: 4
+      count: 44261
+    - year: 2022
+      quarter: 1
+      count: 47224
+    - year: 2022
+      quarter: 2
+      count: 50377
+    - year: 2022
+      quarter: 3
+      count: 54039
+    - year: 2022
+      quarter: 4
+      count: 57232
+    - year: 2023
+      quarter: 1
+      count: 60894
+    - year: 2023
+      quarter: 2
+      count: 65445
+    - year: 2023
+      quarter: 3
+      count: 70577
+    - year: 2023
+      quarter: 4
+      count: 74405
+    - year: 2024
+      quarter: 1
+      count: 79095
+    - year: 2024
+      quarter: 2
+      count: 83407
+    - year: 2024
+      quarter: 3
+      count: 88333
+    - year: 2024
+      quarter: 4
+      count: 92368
+data:
+  labels:
+    - SV-AH
+    - SV-CA
+    - SV-CH
+    - SV-CU
+    - SV-LI
+    - SV-PA
+    - SV-UN
+    - SV-MO
+    - SV-SM
+    - SV-SS
+    - SV-SV
+    - SV-SA
+    - SV-SO
+    - SV-US

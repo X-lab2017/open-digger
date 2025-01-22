@@ -1,0 +1,10 @@
+name: Železniki
+type: Division-1
+meta:
+  alpha2: SI-146
+  includes:
+    - železniki
+    - si-146
+    - '146'
+    - železniki municipality
+  category: MUNICIPALITY

@@ -1,0 +1,10 @@
+name: South Dakota
+type: Division-1
+meta:
+  alpha2: US-SD
+  includes:
+    - south dakota
+    - us-sd
+    - sd
+    - south dakota state
+  category: STATE

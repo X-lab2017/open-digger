@@ -1,0 +1,10 @@
+name: Dolneni
+type: Division-1
+meta:
+  alpha2: MK-503
+  includes:
+    - dolneni
+    - mk-503
+    - '503'
+    - dolneni municipality
+  category: MUNICIPALITY

@@ -1,0 +1,10 @@
+name: Novaci
+type: Division-1
+meta:
+  alpha2: MK-507
+  includes:
+    - novaci
+    - mk-507
+    - '507'
+    - novaci municipality
+  category: MUNICIPALITY

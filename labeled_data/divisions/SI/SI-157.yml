@@ -1,0 +1,10 @@
+name: Dolenjske Toplice
+type: Division-1
+meta:
+  alpha2: SI-157
+  includes:
+    - dolenjske toplice
+    - si-157
+    - '157'
+    - dolenjske toplice municipality
+  category: MUNICIPALITY

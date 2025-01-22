@@ -1,0 +1,13 @@
+name: Nippes
+type: Division-1
+meta:
+  alpha2: HT-NI
+  includes:
+    - nip
+    - ht-ni
+    - ni
+    - nip department
+    - nippes
+    - nippes department
+    - département des nippes
+  category: DEPARTMENT

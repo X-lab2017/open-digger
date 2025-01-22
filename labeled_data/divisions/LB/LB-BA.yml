@@ -1,0 +1,14 @@
+name: Beyrouth
+type: Division-1
+meta:
+  alpha2: LB-BA
+  includes:
+    - bayrūt
+    - lb-ba
+    - ba
+    - bayrūt governorate
+    - beyrouth
+    - beyrouth governorate
+    - beirut
+    - beirut governorate
+  category: GOVERNORATE

@@ -1,0 +1,10 @@
+name: Sankuru
+type: Division-1
+meta:
+  alpha2: CD-SA
+  includes:
+    - sankuru
+    - cd-sa
+    - sa
+    - sankuru province
+  category: PROVINCE

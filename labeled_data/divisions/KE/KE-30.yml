@@ -1,0 +1,12 @@
+name: Nairobi City
+type: Division-1
+meta:
+  alpha2: KE-30
+  includes:
+    - nairobi city
+    - ke-30
+    - '30'
+    - nairobi city county
+    - nairobi county
+    - nairobi
+  category: COUNTY

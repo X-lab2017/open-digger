@@ -1,0 +1,11 @@
+name: Stockholms län
+type: Division-1
+meta:
+  alpha2: SE-AB
+  includes:
+    - stockholms län
+    - se-ab
+    - ab
+    - stockholms län county
+    - stockholm county
+  category: COUNTY

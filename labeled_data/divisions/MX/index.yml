@@ -1,0 +1,107 @@
+name: Mexico
+type: Division-0
+meta:
+  alpha2: MX
+  includes:
+    - Mexico
+    - MX
+    - '484'
+    - the United Mexican States
+    - 墨西哥
+  name_full: the United Mexican States
+  name_zh: 墨西哥
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 537945
+    - year: 2020
+      quarter: 2
+      count: 595987
+    - year: 2020
+      quarter: 3
+      count: 666919
+    - year: 2020
+      quarter: 4
+      count: 735164
+    - year: 2021
+      quarter: 1
+      count: 827563
+    - year: 2021
+      quarter: 2
+      count: 896220
+    - year: 2021
+      quarter: 3
+      count: 980147
+    - year: 2021
+      quarter: 4
+      count: 1047463
+    - year: 2022
+      quarter: 1
+      count: 1129550
+    - year: 2022
+      quarter: 2
+      count: 1200917
+    - year: 2022
+      quarter: 3
+      count: 1274130
+    - year: 2022
+      quarter: 4
+      count: 1339349
+    - year: 2023
+      quarter: 1
+      count: 1418639
+    - year: 2023
+      quarter: 2
+      count: 1504115
+    - year: 2023
+      quarter: 3
+      count: 1588610
+    - year: 2023
+      quarter: 4
+      count: 1672397
+    - year: 2024
+      quarter: 1
+      count: 1785060
+    - year: 2024
+      quarter: 2
+      count: 1852119
+    - year: 2024
+      quarter: 3
+      count: 1931434
+    - year: 2024
+      quarter: 4
+      count: 2009830
+data:
+  labels:
+    - MX-AGU
+    - MX-BCN
+    - MX-BCS
+    - MX-CAM
+    - MX-CHP
+    - MX-CHH
+    - MX-CMX
+    - MX-COA
+    - MX-COL
+    - MX-DUR
+    - MX-GUA
+    - MX-GRO
+    - MX-HID
+    - MX-JAL
+    - MX-MIC
+    - MX-MOR
+    - MX-MEX
+    - MX-NAY
+    - MX-NLE
+    - MX-OAX
+    - MX-PUE
+    - MX-QUE
+    - MX-ROO
+    - MX-SLP
+    - MX-SIN
+    - MX-SON
+    - MX-TAB
+    - MX-TAM
+    - MX-TLA
+    - MX-VER
+    - MX-YUC
+    - MX-ZAC

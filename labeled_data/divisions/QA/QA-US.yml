@@ -1,0 +1,10 @@
+name: Umm Şalāl
+type: Division-1
+meta:
+  alpha2: QA-US
+  includes:
+    - umm şalāl
+    - qa-us
+    - us
+    - umm şalāl municipality
+  category: MUNICIPALITY

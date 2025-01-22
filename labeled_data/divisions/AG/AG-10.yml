@@ -1,0 +1,10 @@
+name: Barbuda
+type: Division-1
+meta:
+  alpha2: AG-10
+  includes:
+    - barbuda
+    - ag-10
+    - '10'
+    - barbuda dependency
+  category: DEPENDENCY

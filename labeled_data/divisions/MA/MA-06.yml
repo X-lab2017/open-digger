@@ -1,0 +1,49 @@
+name: Casablanca-Settat
+type: Division-1
+meta:
+  alpha2: MA-06
+  includes:
+    - benslimane
+    - ma-bes
+    - bes
+    - benslimane province
+    - berrechid
+    - ma-brr
+    - brr
+    - berrechid province
+    - casablanca
+    - ma-cas
+    - cas
+    - casablanca prefecture
+    - dar el beïda
+    - dar el beïda prefecture
+    - casablanca-settat
+    - ma-06
+    - '06'
+    - casablanca-settat region
+    - chtouka-ait baha
+    - ma-cht
+    - cht
+    - chtouka-ait baha province
+    - el jadida
+    - ma-jdi
+    - jdi
+    - el jadida province
+    - mohammadia
+    - ma-moh
+    - moh
+    - mohammadia prefecture
+    - médiouna
+    - ma-med
+    - med
+    - médiouna province
+    - settat
+    - ma-set
+    - set
+    - settat province
+    - sidi bennour
+    - ma-sib
+    - sib
+    - sidi bennour province
+    - grand casablanca
+  category: REGION

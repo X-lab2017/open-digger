@@ -1,0 +1,10 @@
+name: Hiiraan
+type: Division-1
+meta:
+  alpha2: SO-HI
+  includes:
+    - hiiraan
+    - so-hi
+    - hi
+    - hiiraan region
+  category: REGION

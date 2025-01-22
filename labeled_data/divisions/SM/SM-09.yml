@@ -1,0 +1,10 @@
+name: Serravalle
+type: Division-1
+meta:
+  alpha2: SM-09
+  includes:
+    - serravalle
+    - sm-09
+    - '09'
+    - serravalle municipality
+  category: MUNICIPALITY

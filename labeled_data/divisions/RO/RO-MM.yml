@@ -1,0 +1,11 @@
+name: Maramureș
+type: Division-1
+meta:
+  alpha2: RO-MM
+  includes:
+    - maramureș
+    - ro-mm
+    - mm
+    - maramureș department
+    - maramureş
+  category: DEPARTMENT

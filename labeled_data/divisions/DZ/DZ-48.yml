@@ -1,0 +1,10 @@
+name: Relizane
+type: Division-1
+meta:
+  alpha2: DZ-48
+  includes:
+    - relizane
+    - dz-48
+    - '48'
+    - relizane province
+  category: PROVINCE

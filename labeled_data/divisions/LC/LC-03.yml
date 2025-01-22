@@ -1,0 +1,10 @@
+name: Choiseul
+type: Division-1
+meta:
+  alpha2: LC-03
+  includes:
+    - choiseul
+    - lc-03
+    - '03'
+    - choiseul district
+  category: DISTRICT

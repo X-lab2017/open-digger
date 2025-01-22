@@ -1,0 +1,10 @@
+name: Ljubno
+type: Division-1
+meta:
+  alpha2: SI-062
+  includes:
+    - ljubno
+    - si-062
+    - '062'
+    - ljubno municipality
+  category: MUNICIPALITY

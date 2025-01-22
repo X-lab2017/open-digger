@@ -1,0 +1,13 @@
+name: Chernivetska oblast
+type: Division-1
+meta:
+  alpha2: UA-77
+  includes:
+    - chernivetska oblast
+    - ua-77
+    - '77'
+    - chernivetska oblast region
+    - chernivets'ka oblast
+    - chernivtsi oblast
+    - chernivtsi
+  category: REGION

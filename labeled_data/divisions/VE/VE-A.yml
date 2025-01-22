@@ -1,0 +1,12 @@
+name: Distrito Capital
+type: Division-1
+meta:
+  alpha2: VE-A
+  includes:
+    - distrito capital
+    - ve-a
+    - a
+    - distrito capital capital district
+    - capital district
+    - va
+  category: CAPITAL DISTRICT

@@ -1,0 +1,11 @@
+name: Thái Nguyên
+type: Division-1
+meta:
+  alpha2: VN-69
+  includes:
+    - thái nguyên
+    - vn-69
+    - '69'
+    - thái nguyên province
+    - thai nguyen
+  category: PROVINCE

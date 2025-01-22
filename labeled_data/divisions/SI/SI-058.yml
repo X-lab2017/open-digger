@@ -1,0 +1,10 @@
+name: Lenart
+type: Division-1
+meta:
+  alpha2: SI-058
+  includes:
+    - lenart
+    - si-058
+    - '058'
+    - lenart municipality
+  category: MUNICIPALITY

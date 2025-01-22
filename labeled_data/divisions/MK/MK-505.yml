@@ -1,0 +1,11 @@
+name: Kruševo
+type: Division-1
+meta:
+  alpha2: MK-505
+  includes:
+    - kruševo
+    - mk-505
+    - '505'
+    - kruševo municipality
+    - municipality of kruševo
+  category: MUNICIPALITY

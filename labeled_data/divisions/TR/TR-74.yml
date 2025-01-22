@@ -1,0 +1,10 @@
+name: Bartın
+type: Division-1
+meta:
+  alpha2: TR-74
+  includes:
+    - bartın
+    - tr-74
+    - '74'
+    - bartın province
+  category: PROVINCE

@@ -1,0 +1,10 @@
+name: Denigomodu
+type: Division-1
+meta:
+  alpha2: NR-08
+  includes:
+    - denigomodu
+    - nr-08
+    - '08'
+    - denigomodu district
+  category: DISTRICT

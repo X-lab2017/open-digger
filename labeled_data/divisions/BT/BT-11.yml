@@ -1,0 +1,10 @@
+name: Paro
+type: Division-1
+meta:
+  alpha2: BT-11
+  includes:
+    - paro
+    - bt-11
+    - '11'
+    - paro district
+  category: DISTRICT

@@ -1,0 +1,10 @@
+name: Saint Patrick
+type: Division-1
+meta:
+  alpha2: VC-05
+  includes:
+    - saint patrick
+    - vc-05
+    - '05'
+    - saint patrick parish
+  category: PARISH

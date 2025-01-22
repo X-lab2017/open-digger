@@ -1,0 +1,10 @@
+name: Gelderland
+type: Division-1
+meta:
+  alpha2: NL-GE
+  includes:
+    - gelderland
+    - nl-ge
+    - ge
+    - gelderland province
+  category: PROVINCE

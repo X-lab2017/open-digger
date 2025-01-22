@@ -1,0 +1,10 @@
+name: Sangre Grande
+type: Division-1
+meta:
+  alpha2: TT-SGE
+  includes:
+    - sangre grande
+    - tt-sge
+    - sge
+    - sangre grande region
+  category: REGION

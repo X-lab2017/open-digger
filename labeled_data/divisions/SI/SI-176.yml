@@ -1,0 +1,10 @@
+name: Razkrižje
+type: Division-1
+meta:
+  alpha2: SI-176
+  includes:
+    - razkrižje
+    - si-176
+    - '176'
+    - razkrižje municipality
+  category: MUNICIPALITY

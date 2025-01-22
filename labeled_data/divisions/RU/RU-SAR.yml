@@ -1,0 +1,14 @@
+name: Saratovskaya oblast'
+type: Division-1
+meta:
+  alpha2: RU-SAR
+  includes:
+    - saratovskaja oblast'
+    - ru-sar
+    - sar
+    - saratovskaja oblast' administrative region
+    - saratovskaya oblast'
+    - saratovskaya oblast' administrative region
+    - saratov oblast
+    - saratov
+  category: ADMINISTRATIVE REGION

@@ -1,0 +1,10 @@
+name: Florești
+type: Division-1
+meta:
+  alpha2: MD-FL
+  includes:
+    - florești
+    - md-fl
+    - fl
+    - florești district
+  category: DISTRICT

@@ -1,0 +1,10 @@
+name: East Grand Bahama
+type: Division-1
+meta:
+  alpha2: BS-EG
+  includes:
+    - east grand bahama
+    - bs-eg
+    - eg
+    - east grand bahama district
+  category: DISTRICT

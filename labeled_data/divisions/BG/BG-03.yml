@@ -1,0 +1,11 @@
+name: Varna
+type: Division-1
+meta:
+  alpha2: BG-03
+  includes:
+    - varna
+    - bg-03
+    - '03'
+    - varna district
+    - varna province
+  category: DISTRICT

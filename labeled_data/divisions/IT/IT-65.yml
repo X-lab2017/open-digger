@@ -1,0 +1,27 @@
+name: Abruzzo
+type: Division-1
+meta:
+  alpha2: IT-65
+  includes:
+    - abruzzo
+    - it-65
+    - '65'
+    - abruzzo region
+    - chieti
+    - it-ch
+    - ch
+    - chieti province
+    - l'aquila
+    - it-aq
+    - aq
+    - l'aquila province
+    - pescara
+    - it-pe
+    - pe
+    - pescara province
+    - teramo
+    - it-te
+    - te
+    - teramo province
+    - abr.
+  category: REGION

@@ -1,0 +1,10 @@
+name: Amnat Charoen
+type: Division-1
+meta:
+  alpha2: TH-37
+  includes:
+    - amnat charoen
+    - th-37
+    - '37'
+    - amnat charoen province
+  category: PROVINCE

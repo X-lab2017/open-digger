@@ -1,0 +1,12 @@
+name: Quảng Bình
+type: Division-1
+meta:
+  alpha2: VN-24
+  includes:
+    - quảng bình
+    - vn-24
+    - '24'
+    - quảng bình province
+    - quang binh
+    - quang binh province
+  category: PROVINCE

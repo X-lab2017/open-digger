@@ -1,0 +1,10 @@
+name: Artigas
+type: Division-1
+meta:
+  alpha2: UY-AR
+  includes:
+    - artigas
+    - uy-ar
+    - ar
+    - artigas department
+  category: DEPARTMENT

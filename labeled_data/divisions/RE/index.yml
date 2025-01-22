@@ -1,0 +1,72 @@
+name: Réunion
+type: Division-0
+meta:
+  alpha2: RE
+  includes:
+    - Réunion
+    - RE
+    - '638'
+    - 留尼汪
+  name_full: Réunion
+  name_zh: 留尼汪
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 5871
+    - year: 2020
+      quarter: 2
+      count: 6499
+    - year: 2020
+      quarter: 3
+      count: 7139
+    - year: 2020
+      quarter: 4
+      count: 7596
+    - year: 2021
+      quarter: 1
+      count: 8239
+    - year: 2021
+      quarter: 2
+      count: 8772
+    - year: 2021
+      quarter: 3
+      count: 9345
+    - year: 2021
+      quarter: 4
+      count: 9640
+    - year: 2022
+      quarter: 1
+      count: 10267
+    - year: 2022
+      quarter: 2
+      count: 10757
+    - year: 2022
+      quarter: 3
+      count: 11194
+    - year: 2022
+      quarter: 4
+      count: 11670
+    - year: 2023
+      quarter: 1
+      count: 12283
+    - year: 2023
+      quarter: 2
+      count: 12977
+    - year: 2023
+      quarter: 3
+      count: 13570
+    - year: 2023
+      quarter: 4
+      count: 14214
+    - year: 2024
+      quarter: 1
+      count: 15190
+    - year: 2024
+      quarter: 2
+      count: 15796
+    - year: 2024
+      quarter: 3
+      count: 16506
+    - year: 2024
+      quarter: 4
+      count: 17117

@@ -1,0 +1,12 @@
+name: Krapinsko-zagorska županija
+type: Division-1
+meta:
+  alpha2: HR-02
+  includes:
+    - krapinsko-zagorska županija
+    - hr-02
+    - '02'
+    - krapinsko-zagorska županija county
+    - krapina-zagorje
+    - krapina-zagorje county
+  category: COUNTY

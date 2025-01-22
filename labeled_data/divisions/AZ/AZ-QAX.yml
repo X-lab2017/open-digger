@@ -1,0 +1,10 @@
+name: Qax
+type: Division-1
+meta:
+  alpha2: AZ-QAX
+  includes:
+    - qax
+    - az-qax
+    - qax rayon
+    - qakh
+  category: RAYON

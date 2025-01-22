@@ -1,0 +1,10 @@
+name: Médenine
+type: Division-1
+meta:
+  alpha2: TN-82
+  includes:
+    - médenine
+    - tn-82
+    - '82'
+    - médenine governorate
+  category: GOVERNORATE

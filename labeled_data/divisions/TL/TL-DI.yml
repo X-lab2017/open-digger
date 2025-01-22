@@ -1,0 +1,11 @@
+name: Díli
+type: Division-1
+meta:
+  alpha2: TL-DI
+  includes:
+    - díli
+    - tl-di
+    - di
+    - díli municipality
+    - dili
+  category: MUNICIPALITY

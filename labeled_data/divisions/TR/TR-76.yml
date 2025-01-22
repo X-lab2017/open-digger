@@ -1,0 +1,11 @@
+name: Iğdır
+type: Division-1
+meta:
+  alpha2: TR-76
+  includes:
+    - iğdır
+    - tr-76
+    - '76'
+    - iğdır province
+    - igdir
+  category: PROVINCE

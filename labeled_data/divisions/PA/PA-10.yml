@@ -1,0 +1,10 @@
+name: Panamá Oeste
+type: Division-1
+meta:
+  alpha2: PA-10
+  includes:
+    - panamá oeste
+    - pa-10
+    - '10'
+    - panamá oeste province
+  category: PROVINCE

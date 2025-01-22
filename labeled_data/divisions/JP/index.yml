@@ -1,0 +1,122 @@
+name: Japan
+type: Division-0
+meta:
+  alpha2: JP
+  includes:
+    - Japan
+    - JP
+    - '392'
+    - 日本
+  name_full: Japan
+  name_zh: 日本
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 1128302
+    - year: 2020
+      quarter: 2
+      count: 1241923
+    - year: 2020
+      quarter: 3
+      count: 1338905
+    - year: 2020
+      quarter: 4
+      count: 1429144
+    - year: 2021
+      quarter: 1
+      count: 1520892
+    - year: 2021
+      quarter: 2
+      count: 1640191
+    - year: 2021
+      quarter: 3
+      count: 1738658
+    - year: 2021
+      quarter: 4
+      count: 1841051
+    - year: 2022
+      quarter: 1
+      count: 1954146
+    - year: 2022
+      quarter: 2
+      count: 2098356
+    - year: 2022
+      quarter: 3
+      count: 2211070
+    - year: 2022
+      quarter: 4
+      count: 2324953
+    - year: 2023
+      quarter: 1
+      count: 2471377
+    - year: 2023
+      quarter: 2
+      count: 2697353
+    - year: 2023
+      quarter: 3
+      count: 2886350
+    - year: 2023
+      quarter: 4
+      count: 3053019
+    - year: 2024
+      quarter: 1
+      count: 3221378
+    - year: 2024
+      quarter: 2
+      count: 3381033
+    - year: 2024
+      quarter: 3
+      count: 3547125
+    - year: 2024
+      quarter: 4
+      count: 3759833
+data:
+  labels:
+    - JP-23
+    - JP-05
+    - JP-02
+    - JP-12
+    - JP-38
+    - JP-18
+    - JP-40
+    - JP-07
+    - JP-21
+    - JP-10
+    - JP-34
+    - JP-01
+    - JP-28
+    - JP-08
+    - JP-17
+    - JP-03
+    - JP-37
+    - JP-46
+    - JP-14
+    - JP-39
+    - JP-43
+    - JP-26
+    - JP-24
+    - JP-04
+    - JP-45
+    - JP-20
+    - JP-42
+    - JP-29
+    - JP-15
+    - JP-44
+    - JP-33
+    - JP-47
+    - JP-27
+    - JP-41
+    - JP-11
+    - JP-25
+    - JP-32
+    - JP-22
+    - JP-09
+    - JP-36
+    - JP-13
+    - JP-31
+    - JP-16
+    - JP-30
+    - JP-06
+    - JP-35
+    - JP-19
+    - ':foundations/ruby'

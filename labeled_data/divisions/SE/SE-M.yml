@@ -1,0 +1,11 @@
+name: Skåne län
+type: Division-1
+meta:
+  alpha2: SE-M
+  includes:
+    - skåne län
+    - se-m
+    - m
+    - skåne län county
+    - skåne county
+  category: COUNTY

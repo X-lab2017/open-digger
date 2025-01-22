@@ -1,0 +1,10 @@
+name: Salyan
+type: Division-1
+meta:
+  alpha2: AZ-SAL
+  includes:
+    - salyan
+    - az-sal
+    - sal
+    - salyan rayon
+  category: RAYON

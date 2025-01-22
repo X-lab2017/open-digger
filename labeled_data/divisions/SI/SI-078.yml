@@ -1,0 +1,10 @@
+name: Moravske Toplice
+type: Division-1
+meta:
+  alpha2: SI-078
+  includes:
+    - moravske toplice
+    - si-078
+    - '078'
+    - moravske toplice municipality
+  category: MUNICIPALITY

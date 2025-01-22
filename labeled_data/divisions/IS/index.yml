@@ -1,0 +1,84 @@
+name: Iceland
+type: Division-0
+meta:
+  alpha2: IS
+  includes:
+    - Iceland
+    - IS
+    - '352'
+    - the Republic of Iceland
+    - 冰岛
+  name_full: the Republic of Iceland
+  name_zh: 冰岛
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 15189
+    - year: 2020
+      quarter: 2
+      count: 15950
+    - year: 2020
+      quarter: 3
+      count: 17138
+    - year: 2020
+      quarter: 4
+      count: 17910
+    - year: 2021
+      quarter: 1
+      count: 18849
+    - year: 2021
+      quarter: 2
+      count: 19480
+    - year: 2021
+      quarter: 3
+      count: 20448
+    - year: 2021
+      quarter: 4
+      count: 21139
+    - year: 2022
+      quarter: 1
+      count: 22258
+    - year: 2022
+      quarter: 2
+      count: 22908
+    - year: 2022
+      quarter: 3
+      count: 24065
+    - year: 2022
+      quarter: 4
+      count: 24793
+    - year: 2023
+      quarter: 1
+      count: 25991
+    - year: 2023
+      quarter: 2
+      count: 27107
+    - year: 2023
+      quarter: 3
+      count: 28383
+    - year: 2023
+      quarter: 4
+      count: 29326
+    - year: 2024
+      quarter: 1
+      count: 30894
+    - year: 2024
+      quarter: 2
+      count: 31929
+    - year: 2024
+      quarter: 3
+      count: 32737
+    - year: 2024
+      quarter: 4
+      count: 33924
+data:
+  labels:
+    - IS-3
+    - IS-6
+    - IS-7
+    - IS-8
+    - IS-4
+    - IS-1
+    - IS-2
+    - IS-5
+    - ':companies/llama_corp'

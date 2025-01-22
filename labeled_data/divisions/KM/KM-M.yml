@@ -1,0 +1,16 @@
+name: Mūhīlī
+type: Division-1
+meta:
+  alpha2: KM-M
+  includes:
+    - mohéli
+    - km-m
+    - m
+    - mohéli island
+    - moûhîlî
+    - moûhîlî island
+    - mwali
+    - mwali island
+    - mūhīlī
+    - mūhīlī island
+  category: ISLAND

@@ -1,0 +1,13 @@
+name: Dienvidkurzemes Novads
+type: Division-1
+meta:
+  alpha2: LV-112
+  includes:
+    - dienvidkurzemes novads
+    - lv-112
+    - '112'
+    - dienvidkurzemes novads municipality
+    - dienvidkurzeme
+    - dienvidkurzeme municipality
+    - south kurzeme municipality
+  category: MUNICIPALITY

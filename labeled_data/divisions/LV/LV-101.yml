@@ -1,0 +1,12 @@
+name: Valkas novads
+type: Division-1
+meta:
+  alpha2: LV-101
+  includes:
+    - valkas novads
+    - lv-101
+    - '101'
+    - valkas novads municipality
+    - valka
+    - valka municipality
+  category: MUNICIPALITY

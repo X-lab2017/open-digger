@@ -1,0 +1,10 @@
+name: Rače-Fram
+type: Division-1
+meta:
+  alpha2: SI-098
+  includes:
+    - rače-fram
+    - si-098
+    - '098'
+    - rače-fram municipality
+  category: MUNICIPALITY

@@ -1,0 +1,12 @@
+name: Bamingui-Bangoran
+type: Division-1
+meta:
+  alpha2: CF-BB
+  includes:
+    - bamingui-bangoran
+    - cf-bb
+    - bb
+    - bamingui-bangoran prefecture
+    - bamïngï-bangoran
+    - bamïngï-bangoran prefecture
+  category: PREFECTURE

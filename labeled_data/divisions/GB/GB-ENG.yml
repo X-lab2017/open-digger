@@ -1,0 +1,618 @@
+name: England
+type: Division-1
+meta:
+  alpha2: GB-ENG
+  includes:
+    - barking and dagenham
+    - gb-bdg
+    - bdg
+    - barking and dagenham london borough
+    - barnet
+    - gb-bne
+    - bne
+    - barnet london borough
+    - barnsley
+    - gb-bns
+    - bns
+    - barnsley metropolitan district
+    - bath and north east somerset
+    - gb-bas
+    - bas
+    - bath and north east somerset unitary authority
+    - bedford
+    - gb-bdf
+    - bdf
+    - bedford unitary authority
+    - bexley
+    - gb-bex
+    - bex
+    - bexley london borough
+    - birmingham
+    - gb-bir
+    - bir
+    - birmingham metropolitan district
+    - blackburn with darwen
+    - gb-bbd
+    - bbd
+    - blackburn with darwen unitary authority
+    - blackpool
+    - gb-bpl
+    - bpl
+    - blackpool unitary authority
+    - bolton
+    - gb-bol
+    - bol
+    - bolton metropolitan district
+    - bournemouth
+    - gb-bcp
+    - bcp
+    - bournemouth unitary authority
+    - bracknell forest
+    - gb-brc
+    - brc
+    - bracknell forest unitary authority
+    - bradford
+    - gb-brd
+    - brd
+    - bradford metropolitan district
+    - brent
+    - gb-ben
+    - ben
+    - brent london borough
+    - brighton and hove
+    - gb-bnh
+    - bnh
+    - brighton and hove unitary authority
+    - bristol
+    - gb-bst
+    - bst
+    - bristol unitary authority
+    - bromley
+    - gb-bry
+    - bry
+    - bromley london borough
+    - buckinghamshire
+    - gb-bkm
+    - bkm
+    - buckinghamshire unitary authority
+    - bury
+    - gb-bur
+    - bur
+    - bury metropolitan district
+    - calderdale
+    - gb-cld
+    - cld
+    - calderdale metropolitan district
+    - cambridgeshire
+    - gb-cam
+    - cam
+    - cambridgeshire two-tier county
+    - camden
+    - gb-cmd
+    - cmd
+    - camden london borough
+    - central bedfordshire
+    - gb-cbf
+    - cbf
+    - central bedfordshire unitary authority
+    - cheshire east
+    - gb-che
+    - che
+    - cheshire east unitary authority
+    - cheshire west and chester
+    - gb-chw
+    - chw
+    - cheshire west and chester unitary authority
+    - cornwall
+    - gb-con
+    - con
+    - cornwall unitary authority
+    - coventry
+    - gb-cov
+    - cov
+    - coventry metropolitan district
+    - croydon
+    - gb-cry
+    - cry
+    - croydon london borough
+    - cumbria
+    - gb-cma
+    - cma
+    - cumbria two-tier county
+    - darlington
+    - gb-dal
+    - dal
+    - darlington unitary authority
+    - derby
+    - gb-der
+    - der
+    - derby unitary authority
+    - derbyshire
+    - gb-dby
+    - dby
+    - derbyshire two-tier county
+    - devon
+    - gb-dev
+    - dev
+    - devon two-tier county
+    - doncaster
+    - gb-dnc
+    - dnc
+    - doncaster metropolitan district
+    - dorset
+    - gb-dor
+    - dor
+    - dorset two-tier county
+    - dudley
+    - gb-dud
+    - dud
+    - dudley metropolitan district
+    - durham
+    - gb-dur
+    - dur
+    - durham unitary authority
+    - ealing
+    - gb-eal
+    - eal
+    - ealing london borough
+    - east riding of yorkshire
+    - gb-ery
+    - ery
+    - east riding of yorkshire unitary authority
+    - east sussex
+    - gb-esx
+    - esx
+    - east sussex two-tier county
+    - enfield
+    - gb-enf
+    - enf
+    - enfield london borough
+    - england
+    - gb-eng
+    - eng
+    - england country
+    - essex
+    - gb-ess
+    - ess
+    - essex two-tier county
+    - gateshead
+    - gb-gat
+    - gat
+    - gateshead metropolitan district
+    - gloucestershire
+    - gb-gls
+    - gls
+    - gloucestershire two-tier county
+    - greenwich
+    - gb-gre
+    - gre
+    - greenwich london borough
+    - hackney
+    - gb-hck
+    - hck
+    - hackney london borough
+    - halton
+    - gb-hal
+    - hal
+    - halton unitary authority
+    - hammersmith and fulham
+    - gb-hmf
+    - hmf
+    - hammersmith and fulham london borough
+    - hampshire
+    - gb-ham
+    - ham
+    - hampshire two-tier county
+    - haringey
+    - gb-hry
+    - hry
+    - haringey london borough
+    - harrow
+    - gb-hrw
+    - hrw
+    - harrow london borough
+    - hartlepool
+    - gb-hpl
+    - hpl
+    - hartlepool unitary authority
+    - havering
+    - gb-hav
+    - hav
+    - havering london borough
+    - herefordshire
+    - gb-hef
+    - hef
+    - herefordshire unitary authority
+    - hertfordshire
+    - gb-hrt
+    - hrt
+    - hertfordshire two-tier county
+    - hillingdon
+    - gb-hil
+    - hil
+    - hillingdon london borough
+    - hounslow
+    - gb-hns
+    - hns
+    - hounslow london borough
+    - isle of wight
+    - gb-iow
+    - iow
+    - isle of wight unitary authority
+    - isles of scilly
+    - gb-ios
+    - ios
+    - isles of scilly unitary authority
+    - islington
+    - gb-isl
+    - isl
+    - islington london borough
+    - kensington and chelsea
+    - gb-kec
+    - kec
+    - kensington and chelsea london borough
+    - kent
+    - gb-ken
+    - ken
+    - kent two-tier county
+    - kingston upon hull
+    - gb-khl
+    - khl
+    - kingston upon hull unitary authority
+    - kingston upon thames
+    - gb-ktt
+    - ktt
+    - kingston upon thames london borough
+    - kirklees
+    - gb-kir
+    - kir
+    - kirklees metropolitan district
+    - knowsley
+    - gb-kwl
+    - kwl
+    - knowsley metropolitan district
+    - lambeth
+    - gb-lbh
+    - lbh
+    - lambeth london borough
+    - lancashire
+    - gb-lan
+    - lan
+    - lancashire two-tier county
+    - leeds
+    - gb-lds
+    - lds
+    - leeds metropolitan district
+    - leicester
+    - gb-lce
+    - lce
+    - leicester unitary authority
+    - leicestershire
+    - gb-lec
+    - lec
+    - leicestershire two-tier county
+    - lewisham
+    - gb-lew
+    - lew
+    - lewisham london borough
+    - lincolnshire
+    - gb-lin
+    - lin
+    - lincolnshire two-tier county
+    - liverpool
+    - gb-liv
+    - liv
+    - liverpool metropolitan district
+    - london
+    - gb-lnd
+    - lnd
+    - london city corporation
+    - luton
+    - gb-lut
+    - lut
+    - luton unitary authority
+    - manchester
+    - gb-man
+    - man
+    - manchester metropolitan district
+    - medway
+    - gb-mdw
+    - mdw
+    - medway unitary authority
+    - merton
+    - gb-mrt
+    - mrt
+    - merton london borough
+    - middlesbrough
+    - gb-mdb
+    - mdb
+    - middlesbrough unitary authority
+    - milton keynes
+    - gb-mik
+    - mik
+    - milton keynes unitary authority
+    - newcastle upon tyne
+    - gb-net
+    - net
+    - newcastle upon tyne metropolitan district
+    - newham
+    - gb-nwm
+    - nwm
+    - newham london borough
+    - norfolk
+    - gb-nfk
+    - nfk
+    - norfolk two-tier county
+    - north east lincolnshire
+    - gb-nel
+    - nel
+    - north east lincolnshire unitary authority
+    - north lincolnshire
+    - gb-nln
+    - nln
+    - north lincolnshire unitary authority
+    - north northamptonshire
+    - gb-nnh
+    - nnh
+    - north northamptonshire unitary authority
+    - north somerset
+    - gb-nsm
+    - nsm
+    - north somerset unitary authority
+    - north tyneside
+    - gb-nty
+    - nty
+    - north tyneside metropolitan district
+    - north yorkshire
+    - gb-nyk
+    - nyk
+    - north yorkshire two-tier county
+    - northumberland
+    - gb-nbl
+    - nbl
+    - northumberland unitary authority
+    - nottingham
+    - gb-ngm
+    - ngm
+    - nottingham unitary authority
+    - nottinghamshire
+    - gb-ntt
+    - ntt
+    - nottinghamshire two-tier county
+    - oldham
+    - gb-old
+    - old
+    - oldham metropolitan district
+    - oxfordshire
+    - gb-oxf
+    - oxf
+    - oxfordshire two-tier county
+    - peterborough
+    - gb-pte
+    - pte
+    - peterborough unitary authority
+    - plymouth
+    - gb-ply
+    - ply
+    - plymouth unitary authority
+    - portsmouth
+    - gb-por
+    - por
+    - portsmouth unitary authority
+    - reading
+    - gb-rdg
+    - rdg
+    - reading unitary authority
+    - redbridge
+    - gb-rdb
+    - rdb
+    - redbridge london borough
+    - redcar and cleveland
+    - gb-rcc
+    - rcc
+    - redcar and cleveland unitary authority
+    - richmond upon thames
+    - gb-ric
+    - ric
+    - richmond upon thames london borough
+    - rochdale
+    - gb-rch
+    - rch
+    - rochdale metropolitan district
+    - rotherham
+    - gb-rot
+    - rot
+    - rotherham metropolitan district
+    - rutland
+    - gb-rut
+    - rut
+    - rutland unitary authority
+    - salford
+    - gb-slf
+    - slf
+    - salford metropolitan district
+    - sandwell
+    - gb-saw
+    - saw
+    - sandwell metropolitan district
+    - sefton
+    - gb-sft
+    - sft
+    - sefton metropolitan district
+    - sheffield
+    - gb-shf
+    - shf
+    - sheffield metropolitan district
+    - shropshire
+    - gb-shr
+    - shr
+    - shropshire unitary authority
+    - slough
+    - gb-slg
+    - slg
+    - slough unitary authority
+    - solihull
+    - gb-sol
+    - sol
+    - solihull metropolitan district
+    - somerset
+    - gb-som
+    - som
+    - somerset two-tier county
+    - south gloucestershire
+    - gb-sgc
+    - sgc
+    - south gloucestershire unitary authority
+    - south tyneside
+    - gb-sty
+    - sty
+    - south tyneside metropolitan district
+    - southampton
+    - gb-sth
+    - sth
+    - southampton unitary authority
+    - southend-on-sea
+    - gb-sos
+    - sos
+    - southend-on-sea unitary authority
+    - southwark
+    - gb-swk
+    - swk
+    - southwark london borough
+    - st. helens
+    - gb-shn
+    - shn
+    - st. helens metropolitan district
+    - staffordshire
+    - gb-sts
+    - sts
+    - staffordshire two-tier county
+    - stockport
+    - gb-skp
+    - skp
+    - stockport metropolitan district
+    - stockton-on-tees
+    - gb-stt
+    - stt
+    - stockton-on-tees unitary authority
+    - stoke-on-trent
+    - gb-ste
+    - ste
+    - stoke-on-trent unitary authority
+    - suffolk
+    - gb-sfk
+    - sfk
+    - suffolk two-tier county
+    - sunderland
+    - gb-snd
+    - snd
+    - sunderland metropolitan district
+    - surrey
+    - gb-sry
+    - sry
+    - surrey two-tier county
+    - sutton
+    - gb-stn
+    - stn
+    - sutton london borough
+    - swindon
+    - gb-swd
+    - swd
+    - swindon unitary authority
+    - tameside
+    - gb-tam
+    - tam
+    - tameside metropolitan district
+    - telford and wrekin
+    - gb-tfw
+    - tfw
+    - telford and wrekin unitary authority
+    - thurrock
+    - gb-thr
+    - thr
+    - thurrock unitary authority
+    - torbay
+    - gb-tob
+    - tob
+    - torbay unitary authority
+    - tower hamlets
+    - gb-twh
+    - twh
+    - tower hamlets london borough
+    - trafford
+    - gb-trf
+    - trf
+    - trafford metropolitan district
+    - wakefield
+    - gb-wkf
+    - wkf
+    - wakefield metropolitan district
+    - walsall
+    - gb-wll
+    - wll
+    - walsall metropolitan district
+    - waltham forest
+    - gb-wft
+    - wft
+    - waltham forest london borough
+    - wandsworth
+    - gb-wnd
+    - wnd
+    - wandsworth london borough
+    - warrington
+    - gb-wrt
+    - wrt
+    - warrington unitary authority
+    - warwickshire
+    - gb-war
+    - war
+    - warwickshire two-tier county
+    - west berkshire
+    - gb-wbk
+    - wbk
+    - west berkshire unitary authority
+    - west northamptonshire
+    - gb-wnh
+    - wnh
+    - west northamptonshire unitary authority
+    - west sussex
+    - gb-wsx
+    - wsx
+    - west sussex two-tier county
+    - westminster
+    - gb-wsm
+    - wsm
+    - westminster london borough
+    - wigan
+    - gb-wgn
+    - wgn
+    - wigan metropolitan district
+    - wiltshire
+    - gb-wil
+    - wil
+    - wiltshire unitary authority
+    - windsor and maidenhead
+    - gb-wnm
+    - wnm
+    - windsor and maidenhead unitary authority
+    - wirral
+    - gb-wrl
+    - wrl
+    - wirral metropolitan district
+    - wokingham
+    - gb-wok
+    - wok
+    - wokingham unitary authority
+    - wolverhampton
+    - gb-wlv
+    - wlv
+    - wolverhampton metropolitan district
+    - worcestershire
+    - gb-wor
+    - wor
+    - worcestershire two-tier county
+    - york
+    - gb-yor
+    - yor
+    - york unitary authority
+  category: COUNTRY

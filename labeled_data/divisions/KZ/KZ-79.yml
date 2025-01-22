@@ -1,0 +1,13 @@
+name: Šimkent
+type: Division-1
+meta:
+  alpha2: KZ-79
+  includes:
+    - shymkent
+    - kz-79
+    - '79'
+    - shymkent city
+    - šimkent
+    - šimkent city
+    - шimkent
+  category: CITY

@@ -1,0 +1,12 @@
+name: Baghdād
+type: Division-1
+meta:
+  alpha2: IQ-BG
+  includes:
+    - baghdād
+    - iq-bg
+    - bg
+    - baghdād governorate
+    - baghdad governorate
+    - بغداد محافظة
+  category: GOVERNORATE

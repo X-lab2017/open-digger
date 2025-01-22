@@ -1,0 +1,11 @@
+name: Al Wusţá
+type: Division-1
+meta:
+  alpha2: OM-WU
+  includes:
+    - al wusţá
+    - om-wu
+    - wu
+    - al wusţá governorate
+    - al wusta governorate
+  category: GOVERNORATE

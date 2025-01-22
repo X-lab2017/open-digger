@@ -1,0 +1,10 @@
+name: Rotuma
+type: Division-1
+meta:
+  alpha2: FJ-R
+  includes:
+    - rotuma
+    - fj-r
+    - r
+    - rotuma dependency
+  category: DEPENDENCY

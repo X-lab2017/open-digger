@@ -1,0 +1,11 @@
+name: Saint John
+type: Division-1
+meta:
+  alpha2: AG-04
+  includes:
+    - saint john
+    - ag-04
+    - '04'
+    - saint john parish
+    - antigua
+  category: PARISH

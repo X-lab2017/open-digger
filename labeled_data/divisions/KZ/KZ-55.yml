@@ -1,0 +1,16 @@
+name: Pavlodarskaya oblast'
+type: Division-1
+meta:
+  alpha2: KZ-55
+  includes:
+    - pavlodar oblysy
+    - kz-55
+    - '55'
+    - pavlodar oblysy region
+    - pavlodarskaja oblast'
+    - pavlodarskaja oblast' region
+    - pavlodarskaya oblast'
+    - pavlodarskaya oblast' region
+    - pavlodar region
+    - pavlodar oblısı
+  category: REGION

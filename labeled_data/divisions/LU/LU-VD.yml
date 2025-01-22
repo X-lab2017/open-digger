@@ -1,0 +1,12 @@
+name: Vianden
+type: Division-1
+meta:
+  alpha2: LU-VD
+  includes:
+    - veianen
+    - lu-vd
+    - vd
+    - veianen canton
+    - vianden
+    - vianden canton
+  category: CANTON

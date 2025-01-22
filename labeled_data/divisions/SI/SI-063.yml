@@ -1,0 +1,10 @@
+name: Ljutomer
+type: Division-1
+meta:
+  alpha2: SI-063
+  includes:
+    - ljutomer
+    - si-063
+    - '063'
+    - ljutomer municipality
+  category: MUNICIPALITY

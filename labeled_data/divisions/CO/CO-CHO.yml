@@ -1,0 +1,11 @@
+name: Chocó
+type: Division-1
+meta:
+  alpha2: CO-CHO
+  includes:
+    - chocó
+    - co-cho
+    - cho
+    - chocó department
+    - choco
+  category: DEPARTMENT

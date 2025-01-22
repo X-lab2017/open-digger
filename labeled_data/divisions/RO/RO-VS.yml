@@ -1,0 +1,11 @@
+name: Vaslui
+type: Division-1
+meta:
+  alpha2: RO-VS
+  includes:
+    - vaslui
+    - ro-vs
+    - vs
+    - vaslui department
+    - vaslui county
+  category: DEPARTMENT

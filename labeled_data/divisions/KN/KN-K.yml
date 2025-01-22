@@ -1,0 +1,46 @@
+name: Saint Kitts
+type: Division-1
+meta:
+  alpha2: KN-K
+  includes:
+    - christ church nichola town
+    - kn-01
+    - '01'
+    - christ church nichola town parish
+    - saint anne sandy point
+    - kn-02
+    - '02'
+    - saint anne sandy point parish
+    - saint george basseterre
+    - kn-03
+    - '03'
+    - saint george basseterre parish
+    - saint john capisterre
+    - kn-06
+    - '06'
+    - saint john capisterre parish
+    - saint kitts
+    - kn-k
+    - k
+    - saint kitts state
+    - saint mary cayon
+    - kn-08
+    - '08'
+    - saint mary cayon parish
+    - saint paul capisterre
+    - kn-09
+    - '09'
+    - saint paul capisterre parish
+    - saint peter basseterre
+    - kn-11
+    - '11'
+    - saint peter basseterre parish
+    - saint thomas middle island
+    - kn-13
+    - '13'
+    - saint thomas middle island parish
+    - trinity palmetto point
+    - kn-15
+    - '15'
+    - trinity palmetto point parish
+  category: STATE

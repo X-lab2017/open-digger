@@ -1,0 +1,10 @@
+name: Loški Potok
+type: Division-1
+meta:
+  alpha2: SI-066
+  includes:
+    - loški potok
+    - si-066
+    - '066'
+    - loški potok municipality
+  category: MUNICIPALITY

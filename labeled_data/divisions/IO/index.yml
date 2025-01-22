@@ -1,0 +1,12 @@
+name: British Indian Ocean Territory
+type: Division-0
+meta:
+  alpha2: IO
+  includes:
+    - British Indian Ocean Territory
+    - IO
+    - '086'
+    - 英属印度洋领地
+  name_full: British Indian Ocean Territory
+  name_zh: 英属印度洋领地
+  developers: []

@@ -1,0 +1,10 @@
+name: Manicaland
+type: Division-1
+meta:
+  alpha2: ZW-MA
+  includes:
+    - manicaland
+    - zw-ma
+    - ma
+    - manicaland province
+  category: PROVINCE

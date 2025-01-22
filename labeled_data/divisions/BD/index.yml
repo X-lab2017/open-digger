@@ -1,0 +1,83 @@
+name: Bangladesh
+type: Division-0
+meta:
+  alpha2: BD
+  includes:
+    - Bangladesh
+    - BD
+    - '050'
+    - the People's Republic of Bangladesh
+    - 孟加拉国
+  name_full: the People's Republic of Bangladesh
+  name_zh: 孟加拉国
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 215789
+    - year: 2020
+      quarter: 2
+      count: 246934
+    - year: 2020
+      quarter: 3
+      count: 279159
+    - year: 2020
+      quarter: 4
+      count: 312435
+    - year: 2021
+      quarter: 1
+      count: 342028
+    - year: 2021
+      quarter: 2
+      count: 376506
+    - year: 2021
+      quarter: 3
+      count: 413698
+    - year: 2021
+      quarter: 4
+      count: 458953
+    - year: 2022
+      quarter: 1
+      count: 498464
+    - year: 2022
+      quarter: 2
+      count: 529276
+    - year: 2022
+      quarter: 3
+      count: 568145
+    - year: 2022
+      quarter: 4
+      count: 615925
+    - year: 2023
+      quarter: 1
+      count: 711521
+    - year: 2023
+      quarter: 2
+      count: 805826
+    - year: 2023
+      quarter: 3
+      count: 945696
+    - year: 2023
+      quarter: 4
+      count: 1073374
+    - year: 2024
+      quarter: 1
+      count: 1156619
+    - year: 2024
+      quarter: 2
+      count: 1200916
+    - year: 2024
+      quarter: 3
+      count: 1247382
+    - year: 2024
+      quarter: 4
+      count: 1321053
+data:
+  labels:
+    - BD-D
+    - BD-B
+    - BD-A
+    - BD-E
+    - BD-C
+    - BD-F
+    - BD-G
+    - BD-H

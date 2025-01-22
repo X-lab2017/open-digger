@@ -1,0 +1,12 @@
+name: Ad Dākhilīyah
+type: Division-1
+meta:
+  alpha2: OM-DA
+  includes:
+    - ad dākhilīyah
+    - om-da
+    - da
+    - ad dākhilīyah governorate
+    - ad dakhiliyah governorate
+    - ad dakhiliyah ‍governorate
+  category: GOVERNORATE

@@ -1,0 +1,10 @@
+name: Wallis-et-Futuna
+type: Division-1
+meta:
+  alpha2: FR-WF
+  includes:
+    - wallis-et-futuna
+    - fr-wf
+    - wf
+    - wallis-et-futuna overseas collectivity
+  category: OVERSEAS COLLECTIVITY

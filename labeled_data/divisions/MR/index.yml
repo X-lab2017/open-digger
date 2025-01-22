@@ -1,0 +1,90 @@
+name: Mauritania
+type: Division-0
+meta:
+  alpha2: MR
+  includes:
+    - Mauritania
+    - MR
+    - '478'
+    - the Islamic Republic of Mauritania
+    - 毛利塔尼亚
+  name_full: the Islamic Republic of Mauritania
+  name_zh: 毛利塔尼亚
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 1519
+    - year: 2020
+      quarter: 2
+      count: 1808
+    - year: 2020
+      quarter: 3
+      count: 2004
+    - year: 2020
+      quarter: 4
+      count: 2166
+    - year: 2021
+      quarter: 1
+      count: 2407
+    - year: 2021
+      quarter: 2
+      count: 2661
+    - year: 2021
+      quarter: 3
+      count: 2910
+    - year: 2021
+      quarter: 4
+      count: 3116
+    - year: 2022
+      quarter: 1
+      count: 3515
+    - year: 2022
+      quarter: 2
+      count: 3826
+    - year: 2022
+      quarter: 3
+      count: 4158
+    - year: 2022
+      quarter: 4
+      count: 4452
+    - year: 2023
+      quarter: 1
+      count: 4880
+    - year: 2023
+      quarter: 2
+      count: 5399
+    - year: 2023
+      quarter: 3
+      count: 5907
+    - year: 2023
+      quarter: 4
+      count: 6348
+    - year: 2024
+      quarter: 1
+      count: 6994
+    - year: 2024
+      quarter: 2
+      count: 7560
+    - year: 2024
+      quarter: 3
+      count: 8013
+    - year: 2024
+      quarter: 4
+      count: 8694
+data:
+  labels:
+    - MR-07
+    - MR-03
+    - MR-05
+    - MR-08
+    - MR-04
+    - MR-10
+    - MR-01
+    - MR-02
+    - MR-12
+    - MR-14
+    - MR-13
+    - MR-15
+    - MR-09
+    - MR-11
+    - MR-06

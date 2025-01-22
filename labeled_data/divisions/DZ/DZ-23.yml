@@ -1,0 +1,10 @@
+name: Annaba
+type: Division-1
+meta:
+  alpha2: DZ-23
+  includes:
+    - annaba
+    - dz-23
+    - '23'
+    - annaba province
+  category: PROVINCE

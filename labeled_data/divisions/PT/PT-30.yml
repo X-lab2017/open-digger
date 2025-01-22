@@ -1,0 +1,12 @@
+name: Região Autónoma da Madeira
+type: Division-1
+meta:
+  alpha2: PT-30
+  includes:
+    - região autónoma da madeira
+    - pt-30
+    - '30'
+    - região autónoma da madeira autonomous region
+    - madeira
+    - madeira island
+  category: AUTONOMOUS REGION

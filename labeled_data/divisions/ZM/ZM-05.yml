@@ -1,0 +1,10 @@
+name: Northern
+type: Division-1
+meta:
+  alpha2: ZM-05
+  includes:
+    - northern
+    - zm-05
+    - '05'
+    - northern province
+  category: PROVINCE

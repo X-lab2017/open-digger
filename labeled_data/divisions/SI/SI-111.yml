@@ -1,0 +1,10 @@
+name: Sežana
+type: Division-1
+meta:
+  alpha2: SI-111
+  includes:
+    - sežana
+    - si-111
+    - '111'
+    - sežana municipality
+  category: MUNICIPALITY

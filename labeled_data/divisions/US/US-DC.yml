@@ -1,0 +1,10 @@
+name: District of Columbia
+type: Division-1
+meta:
+  alpha2: US-DC
+  includes:
+    - district of columbia
+    - us-dc
+    - dc
+    - district of columbia district
+  category: DISTRICT

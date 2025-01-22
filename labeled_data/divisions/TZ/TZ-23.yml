@@ -1,0 +1,10 @@
+name: Singida
+type: Division-1
+meta:
+  alpha2: TZ-23
+  includes:
+    - singida
+    - tz-23
+    - '23'
+    - singida region
+  category: REGION

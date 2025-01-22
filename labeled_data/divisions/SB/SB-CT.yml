@@ -1,0 +1,10 @@
+name: Capital Territory
+type: Division-1
+meta:
+  alpha2: SB-CT
+  includes:
+    - capital territory
+    - sb-ct
+    - ct
+    - capital territory capital territory
+  category: CAPITAL TERRITORY

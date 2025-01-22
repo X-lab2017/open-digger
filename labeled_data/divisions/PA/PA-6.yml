@@ -1,0 +1,11 @@
+name: Herrera
+type: Division-1
+meta:
+  alpha2: PA-6
+  includes:
+    - herrera
+    - pa-6
+    - '6'
+    - herrera province
+    - he
+  category: PROVINCE

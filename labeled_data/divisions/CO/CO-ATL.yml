@@ -1,0 +1,11 @@
+name: Atlántico
+type: Division-1
+meta:
+  alpha2: CO-ATL
+  includes:
+    - atlántico
+    - co-atl
+    - atl
+    - atlántico department
+    - atlantico
+  category: DEPARTMENT

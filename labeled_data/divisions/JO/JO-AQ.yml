@@ -1,0 +1,12 @@
+name: Al ‘Aqabah
+type: Division-1
+meta:
+  alpha2: JO-AQ
+  includes:
+    - al ‘aqabah
+    - jo-aq
+    - aq
+    - al ‘aqabah governorate
+    - aqaba
+    - aqaba governorate
+  category: GOVERNORATE

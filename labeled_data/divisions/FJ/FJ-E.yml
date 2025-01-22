@@ -1,0 +1,22 @@
+name: Eastern
+type: Division-1
+meta:
+  alpha2: FJ-E
+  includes:
+    - eastern
+    - fj-e
+    - e
+    - eastern division
+    - kadavu
+    - fj-04
+    - '04'
+    - kadavu province
+    - lau
+    - fj-05
+    - '05'
+    - lau province
+    - lomaiviti
+    - fj-06
+    - '06'
+    - lomaiviti province
+  category: DIVISION

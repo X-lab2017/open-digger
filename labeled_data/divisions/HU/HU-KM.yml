@@ -1,0 +1,10 @@
+name: Kecskemét
+type: Division-1
+meta:
+  alpha2: HU-KM
+  includes:
+    - kecskemét
+    - hu-km
+    - km
+    - kecskemét city with county rights
+  category: CITY WITH COUNTY RIGHTS

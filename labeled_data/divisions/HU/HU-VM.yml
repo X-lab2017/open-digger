@@ -1,0 +1,10 @@
+name: Veszprém
+type: Division-1
+meta:
+  alpha2: HU-VM
+  includes:
+    - veszprém
+    - hu-vm
+    - vm
+    - veszprém city with county rights
+  category: CITY WITH COUNTY RIGHTS

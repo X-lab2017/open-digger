@@ -1,0 +1,10 @@
+name: Mary
+type: Division-1
+meta:
+  alpha2: TM-M
+  includes:
+    - mary
+    - tm-m
+    - m
+    - mary region
+  category: REGION

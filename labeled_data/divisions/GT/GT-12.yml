@@ -1,0 +1,10 @@
+name: San Marcos
+type: Division-1
+meta:
+  alpha2: GT-12
+  includes:
+    - san marcos
+    - gt-12
+    - '12'
+    - san marcos department
+  category: DEPARTMENT

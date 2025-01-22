@@ -1,0 +1,11 @@
+name: Tavuš
+type: Division-1
+meta:
+  alpha2: AM-TV
+  includes:
+    - tavuš
+    - am-tv
+    - tv
+    - tavuš region
+    - tavush province
+  category: REGION

@@ -1,0 +1,30 @@
+name: Kapa Bohlabela
+type: Division-1
+meta:
+  alpha2: ZA-EC
+  includes:
+    - eastern cape
+    - za-ec
+    - ec
+    - eastern cape province
+    - kapa bohlabela
+    - kapa bohlabela province
+    - kapa botjhabela
+    - kapa botjhabela province
+    - kapa botlhaba
+    - kapa botlhaba province
+    - kapa vhubvaḓuvha
+    - kapa vhubvaḓuvha province
+    - kapa-vuxa
+    - kapa-vuxa province
+    - mpuma-koloni
+    - mpuma-koloni province
+    - mpumalanga-kapa
+    - mpumalanga-kapa province
+    - mpumalanga-koloni
+    - mpumalanga-koloni province
+    - oos-kaap
+    - oos-kaap province
+    - ipumalanga-kapa
+    - ipumalanga-kapa province
+  category: PROVINCE

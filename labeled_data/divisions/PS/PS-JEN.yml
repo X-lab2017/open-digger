@@ -1,0 +1,12 @@
+name: Jenin
+type: Division-1
+meta:
+  alpha2: PS-JEN
+  includes:
+    - janīn
+    - ps-jen
+    - jen
+    - janīn governorate
+    - jenin
+    - jenin governorate
+  category: GOVERNORATE

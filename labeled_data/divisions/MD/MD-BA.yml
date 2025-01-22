@@ -1,0 +1,11 @@
+name: Bălți
+type: Division-1
+meta:
+  alpha2: MD-BA
+  includes:
+    - bălți
+    - md-ba
+    - ba
+    - bălți city
+    - balti
+  category: CITY

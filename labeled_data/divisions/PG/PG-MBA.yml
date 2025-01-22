@@ -1,0 +1,10 @@
+name: Milne Bay
+type: Division-1
+meta:
+  alpha2: PG-MBA
+  includes:
+    - milne bay
+    - pg-mba
+    - mba
+    - milne bay province
+  category: PROVINCE

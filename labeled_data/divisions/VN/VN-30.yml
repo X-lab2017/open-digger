@@ -1,0 +1,10 @@
+name: Gia Lai
+type: Division-1
+meta:
+  alpha2: VN-30
+  includes:
+    - gia lai
+    - vn-30
+    - '30'
+    - gia lai province
+  category: PROVINCE

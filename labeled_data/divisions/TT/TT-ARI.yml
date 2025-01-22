@@ -1,0 +1,10 @@
+name: Arima
+type: Division-1
+meta:
+  alpha2: TT-ARI
+  includes:
+    - arima
+    - tt-ari
+    - ari
+    - arima borough
+  category: BOROUGH

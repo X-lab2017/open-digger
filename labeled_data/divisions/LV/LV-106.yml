@@ -1,0 +1,12 @@
+name: Ventspils novads
+type: Division-1
+meta:
+  alpha2: LV-106
+  includes:
+    - ventspils novads
+    - lv-106
+    - '106'
+    - ventspils novads municipality
+    - ventspils
+    - ventspils municipality
+  category: MUNICIPALITY

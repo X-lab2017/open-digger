@@ -1,0 +1,12 @@
+name: Plezans
+type: Division-1
+meta:
+  alpha2: SC-19
+  includes:
+    - plaisance
+    - sc-19
+    - '19'
+    - plaisance district
+    - plezans
+    - plezans district
+  category: DISTRICT

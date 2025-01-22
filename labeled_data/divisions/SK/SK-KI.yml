@@ -1,0 +1,12 @@
+name: Košický kraj
+type: Division-1
+meta:
+  alpha2: SK-KI
+  includes:
+    - košický kraj
+    - sk-ki
+    - ki
+    - košický kraj region
+    - košice region
+    - kosice
+  category: REGION

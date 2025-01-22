@@ -1,0 +1,10 @@
+name: Muramvya
+type: Division-1
+meta:
+  alpha2: BI-MU
+  includes:
+    - muramvya
+    - bi-mu
+    - mu
+    - muramvya province
+  category: PROVINCE

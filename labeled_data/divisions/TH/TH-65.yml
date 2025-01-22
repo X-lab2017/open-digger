@@ -1,0 +1,10 @@
+name: Phitsanulok
+type: Division-1
+meta:
+  alpha2: TH-65
+  includes:
+    - phitsanulok
+    - th-65
+    - '65'
+    - phitsanulok province
+  category: PROVINCE

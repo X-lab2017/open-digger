@@ -1,0 +1,10 @@
+name: Burdur
+type: Division-1
+meta:
+  alpha2: TR-15
+  includes:
+    - burdur
+    - tr-15
+    - '15'
+    - burdur province
+  category: PROVINCE

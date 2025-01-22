@@ -1,0 +1,14 @@
+name: Al Awsaţ
+type: Division-1
+meta:
+  alpha2: ER-MA
+  includes:
+    - al awsaţ
+    - er-ma
+    - ma
+    - al awsaţ region
+    - ma’ĭkel
+    - ma’ĭkel region
+    - maekel region
+    - maekel
+  category: REGION

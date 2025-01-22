@@ -1,0 +1,11 @@
+name: Sidi Bouzid
+type: Division-1
+meta:
+  alpha2: TN-43
+  includes:
+    - sidi bouzid
+    - tn-43
+    - '43'
+    - sidi bouzid governorate
+    - sidi bou zid governorate
+  category: GOVERNORATE

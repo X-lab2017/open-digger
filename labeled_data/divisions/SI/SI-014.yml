@@ -1,0 +1,10 @@
+name: Cerkno
+type: Division-1
+meta:
+  alpha2: SI-014
+  includes:
+    - cerkno
+    - si-014
+    - '014'
+    - cerkno municipality
+  category: MUNICIPALITY

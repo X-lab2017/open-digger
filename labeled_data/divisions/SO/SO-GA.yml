@@ -1,0 +1,10 @@
+name: Galguduud
+type: Division-1
+meta:
+  alpha2: SO-GA
+  includes:
+    - galguduud
+    - so-ga
+    - ga
+    - galguduud region
+  category: REGION

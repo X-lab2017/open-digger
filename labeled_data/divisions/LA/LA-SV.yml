@@ -1,0 +1,13 @@
+name: Savannakhét
+type: Division-1
+meta:
+  alpha2: LA-SV
+  includes:
+    - savannakhét
+    - la-sv
+    - sv
+    - savannakhét province
+    - savannakhet
+    - savannakhet province
+    - vc
+  category: PROVINCE

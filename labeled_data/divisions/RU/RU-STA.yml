@@ -1,0 +1,15 @@
+name: Stavropol'skiy kray
+type: Division-1
+meta:
+  alpha2: RU-STA
+  includes:
+    - stavropol'skij kraj
+    - ru-sta
+    - sta
+    - stavropol'skij kraj administrative territory
+    - stavropol'skiy kray
+    - stavropol'skiy kray administrative territory
+    - stavropol krai
+    - stavropol
+    - stavropolskiy kray
+  category: ADMINISTRATIVE TERRITORY

@@ -1,0 +1,145 @@
+name: Azerbaijan
+type: Division-0
+meta:
+  alpha2: AZ
+  includes:
+    - Azerbaijan
+    - AZ
+    - '031'
+    - the Republic of Azerbaijan
+    - 阿塞拜疆
+  name_full: the Republic of Azerbaijan
+  name_zh: 阿塞拜疆
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 25130
+    - year: 2020
+      quarter: 2
+      count: 30536
+    - year: 2020
+      quarter: 3
+      count: 35233
+    - year: 2020
+      quarter: 4
+      count: 37908
+    - year: 2021
+      quarter: 1
+      count: 42581
+    - year: 2021
+      quarter: 2
+      count: 46598
+    - year: 2021
+      quarter: 3
+      count: 50341
+    - year: 2021
+      quarter: 4
+      count: 54354
+    - year: 2022
+      quarter: 1
+      count: 60005
+    - year: 2022
+      quarter: 2
+      count: 65003
+    - year: 2022
+      quarter: 3
+      count: 70881
+    - year: 2022
+      quarter: 4
+      count: 77114
+    - year: 2023
+      quarter: 1
+      count: 83478
+    - year: 2023
+      quarter: 2
+      count: 89643
+    - year: 2023
+      quarter: 3
+      count: 97249
+    - year: 2023
+      quarter: 4
+      count: 103201
+    - year: 2024
+      quarter: 1
+      count: 110204
+    - year: 2024
+      quarter: 2
+      count: 115054
+    - year: 2024
+      quarter: 3
+      count: 120797
+    - year: 2024
+      quarter: 4
+      count: 126911
+data:
+  labels:
+    - AZ-ABS
+    - AZ-AST
+    - AZ-AGC
+    - AZ-AGM
+    - AZ-AGS
+    - AZ-AGA
+    - AZ-AGU
+    - AZ-NX
+    - AZ-BA
+    - AZ-BAL
+    - AZ-BEY
+    - AZ-BIL
+    - AZ-BAR
+    - AZ-CAB
+    - AZ-CAL
+    - AZ-DAS
+    - AZ-FUZ
+    - AZ-GOR
+    - AZ-GYG
+    - AZ-GOY
+    - AZ-GAD
+    - AZ-GA
+    - AZ-HAC
+    - AZ-KUR
+    - AZ-KAL
+    - AZ-LAC
+    - AZ-LER
+    - AZ-LA
+    - AZ-LAN
+    - AZ-MAS
+    - AZ-MI
+    - AZ-NA
+    - AZ-NEF
+    - AZ-OGU
+    - AZ-QAX
+    - AZ-QAZ
+    - AZ-QOB
+    - AZ-QBA
+    - AZ-QBI
+    - AZ-QUS
+    - AZ-QAB
+    - AZ-SAT
+    - AZ-SAB
+    - AZ-SAL
+    - AZ-SMX
+    - AZ-SIY
+    - AZ-SM
+    - AZ-TOV
+    - AZ-TAR
+    - AZ-UCA
+    - AZ-XA
+    - AZ-XAC
+    - AZ-XCI
+    - AZ-XVD
+    - AZ-XIZ
+    - AZ-YAR
+    - AZ-YE
+    - AZ-YEV
+    - AZ-ZAQ
+    - AZ-ZAN
+    - AZ-ZAR
+    - AZ-IMI
+    - AZ-ISM
+    - AZ-SBN
+    - AZ-SMI
+    - AZ-SR
+    - AZ-SUS
+    - AZ-SA
+    - AZ-SAK
+    - AZ-SKR

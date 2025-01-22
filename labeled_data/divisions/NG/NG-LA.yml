@@ -1,0 +1,10 @@
+name: Lagos
+type: Division-1
+meta:
+  alpha2: NG-LA
+  includes:
+    - lagos
+    - ng-la
+    - la
+    - lagos state
+  category: STATE

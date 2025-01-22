@@ -1,0 +1,10 @@
+name: Flevoland
+type: Division-1
+meta:
+  alpha2: NL-FL
+  includes:
+    - flevoland
+    - nl-fl
+    - fl
+    - flevoland province
+  category: PROVINCE

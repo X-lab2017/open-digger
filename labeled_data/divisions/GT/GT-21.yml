@@ -1,0 +1,10 @@
+name: Jalapa
+type: Division-1
+meta:
+  alpha2: GT-21
+  includes:
+    - jalapa
+    - gt-21
+    - '21'
+    - jalapa department
+  category: DEPARTMENT

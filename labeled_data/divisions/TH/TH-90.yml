@@ -1,0 +1,11 @@
+name: Songkhla
+type: Division-1
+meta:
+  alpha2: TH-90
+  includes:
+    - songkhla
+    - th-90
+    - '90'
+    - songkhla province
+    - chang wat songkhla
+  category: PROVINCE

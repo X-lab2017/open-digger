@@ -1,0 +1,10 @@
+name: Żejtun
+type: Division-1
+meta:
+  alpha2: MT-67
+  includes:
+    - żejtun
+    - mt-67
+    - '67'
+    - żejtun local council
+  category: LOCAL COUNCIL

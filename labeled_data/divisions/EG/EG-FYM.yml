@@ -1,0 +1,12 @@
+name: Al Fayyūm
+type: Division-1
+meta:
+  alpha2: EG-FYM
+  includes:
+    - al fayyūm
+    - eg-fym
+    - fym
+    - al fayyūm governorate
+    - faiyum governorate
+    - al fayyum
+  category: GOVERNORATE

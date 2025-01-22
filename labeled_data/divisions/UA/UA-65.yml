@@ -1,0 +1,13 @@
+name: Khersonska oblast
+type: Division-1
+meta:
+  alpha2: UA-65
+  includes:
+    - khersonska oblast
+    - ua-65
+    - '65'
+    - khersonska oblast region
+    - khersons'ka oblast
+    - kherson oblast
+    - kherson
+  category: REGION

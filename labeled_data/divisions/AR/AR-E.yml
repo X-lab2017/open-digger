@@ -1,0 +1,11 @@
+name: Entre Ríos
+type: Division-1
+meta:
+  alpha2: AR-E
+  includes:
+    - entre ríos
+    - ar-e
+    - e
+    - entre ríos province
+    - er
+  category: PROVINCE

@@ -1,0 +1,10 @@
+name: Morelos
+type: Division-1
+meta:
+  alpha2: MX-MOR
+  includes:
+    - morelos
+    - mx-mor
+    - mor
+    - morelos state
+  category: STATE

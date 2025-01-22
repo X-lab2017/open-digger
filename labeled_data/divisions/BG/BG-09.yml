@@ -1,0 +1,11 @@
+name: Kardzhali
+type: Division-1
+meta:
+  alpha2: BG-09
+  includes:
+    - kardzhali
+    - bg-09
+    - '09'
+    - kardzhali district
+    - kardzhali province
+  category: DISTRICT

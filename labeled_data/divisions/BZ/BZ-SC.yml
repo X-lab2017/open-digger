@@ -1,0 +1,10 @@
+name: Stann Creek
+type: Division-1
+meta:
+  alpha2: BZ-SC
+  includes:
+    - stann creek
+    - bz-sc
+    - sc
+    - stann creek district
+  category: DISTRICT

@@ -1,0 +1,11 @@
+name: Apure
+type: Division-1
+meta:
+  alpha2: VE-C
+  includes:
+    - apure
+    - ve-c
+    - c
+    - apure state
+    - ap
+  category: STATE

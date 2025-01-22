@@ -1,0 +1,10 @@
+name: Midway Islands
+type: Division-1
+meta:
+  alpha2: UM-71
+  includes:
+    - midway islands
+    - um-71
+    - '71'
+    - midway islands islands, groups of islands
+  category: ISLANDS, GROUPS OF ISLANDS

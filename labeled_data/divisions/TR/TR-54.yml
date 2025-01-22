@@ -1,0 +1,10 @@
+name: Sakarya
+type: Division-1
+meta:
+  alpha2: TR-54
+  includes:
+    - sakarya
+    - tr-54
+    - '54'
+    - sakarya province
+  category: PROVINCE

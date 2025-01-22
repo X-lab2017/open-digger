@@ -1,0 +1,91 @@
+name: New Zealand
+type: Division-0
+meta:
+  alpha2: NZ
+  includes:
+    - New Zealand
+    - NZ
+    - '554'
+    - 新西兰
+  name_full: New Zealand
+  name_zh: 新西兰
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 139125
+    - year: 2020
+      quarter: 2
+      count: 150778
+    - year: 2020
+      quarter: 3
+      count: 160545
+    - year: 2020
+      quarter: 4
+      count: 167579
+    - year: 2021
+      quarter: 1
+      count: 176605
+    - year: 2021
+      quarter: 2
+      count: 185402
+    - year: 2021
+      quarter: 3
+      count: 195666
+    - year: 2021
+      quarter: 4
+      count: 203717
+    - year: 2022
+      quarter: 1
+      count: 215504
+    - year: 2022
+      quarter: 2
+      count: 225527
+    - year: 2022
+      quarter: 3
+      count: 235232
+    - year: 2022
+      quarter: 4
+      count: 243497
+    - year: 2023
+      quarter: 1
+      count: 255673
+    - year: 2023
+      quarter: 2
+      count: 269741
+    - year: 2023
+      quarter: 3
+      count: 281586
+    - year: 2023
+      quarter: 4
+      count: 291133
+    - year: 2024
+      quarter: 1
+      count: 306155
+    - year: 2024
+      quarter: 2
+      count: 318804
+    - year: 2024
+      quarter: 3
+      count: 331038
+    - year: 2024
+      quarter: 4
+      count: 341002
+data:
+  labels:
+    - NZ-AUK
+    - NZ-BOP
+    - NZ-CAN
+    - NZ-CIT
+    - NZ-GIS
+    - NZ-WGN
+    - NZ-HKB
+    - NZ-MWT
+    - NZ-MBH
+    - NZ-NSN
+    - NZ-NTL
+    - NZ-OTA
+    - NZ-STL
+    - NZ-TKI
+    - NZ-TAS
+    - NZ-WTC
+    - NZ-WKO

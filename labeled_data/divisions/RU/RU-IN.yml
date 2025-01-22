@@ -1,0 +1,13 @@
+name: Ingušetija
+type: Division-1
+meta:
+  alpha2: RU-IN
+  includes:
+    - ingushetiya
+    - ru-in
+    - in
+    - ingushetiya republic
+    - ingušetija
+    - ingušetija republic
+    - ingushetia
+  category: REPUBLIC

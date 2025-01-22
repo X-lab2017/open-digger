@@ -1,0 +1,11 @@
+name: Shamāl ash Sharqīyah
+type: Division-1
+meta:
+  alpha2: OM-SS
+  includes:
+    - shamāl ash sharqīyah
+    - om-ss
+    - ss
+    - shamāl ash sharqīyah governorate
+    - ash sharqiyah north governorate
+  category: GOVERNORATE

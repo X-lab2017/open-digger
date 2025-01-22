@@ -1,0 +1,12 @@
+name: '''Asīr'
+type: Division-1
+meta:
+  alpha2: SA-14
+  includes:
+    - '''asīr'
+    - sa-14
+    - '14'
+    - '''asīr region'
+    - asr
+    - aseer province
+  category: REGION

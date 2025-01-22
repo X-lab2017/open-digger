@@ -1,0 +1,10 @@
+name: Trabzon
+type: Division-1
+meta:
+  alpha2: TR-61
+  includes:
+    - trabzon
+    - tr-61
+    - '61'
+    - trabzon province
+  category: PROVINCE

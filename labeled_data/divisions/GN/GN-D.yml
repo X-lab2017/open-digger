@@ -1,0 +1,29 @@
+name: Kindia
+type: Division-1
+meta:
+  alpha2: GN-D
+  includes:
+    - coyah
+    - gn-co
+    - co
+    - coyah prefecture
+    - dubréka
+    - gn-du
+    - du
+    - dubréka prefecture
+    - forécariah
+    - gn-fo
+    - fo
+    - forécariah prefecture
+    - kindia
+    - gn-d
+    - d
+    - kindia administrative region
+    - gn-kd
+    - kd
+    - kindia prefecture
+    - télimélé
+    - gn-te
+    - te
+    - télimélé prefecture
+  category: ADMINISTRATIVE REGION

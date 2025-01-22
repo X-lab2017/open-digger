@@ -1,0 +1,10 @@
+name: Jesenice
+type: Division-1
+meta:
+  alpha2: SI-041
+  includes:
+    - jesenice
+    - si-041
+    - '041'
+    - jesenice municipality
+  category: MUNICIPALITY

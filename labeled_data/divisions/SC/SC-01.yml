@@ -1,0 +1,12 @@
+name: Anse aux Pins
+type: Division-1
+meta:
+  alpha2: SC-01
+  includes:
+    - ans o pen
+    - sc-01
+    - '01'
+    - ans o pen district
+    - anse aux pins
+    - anse aux pins district
+  category: DISTRICT

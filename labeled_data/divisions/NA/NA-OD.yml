@@ -1,0 +1,10 @@
+name: Otjozondjupa
+type: Division-1
+meta:
+  alpha2: NA-OD
+  includes:
+    - otjozondjupa
+    - na-od
+    - od
+    - otjozondjupa region
+  category: REGION

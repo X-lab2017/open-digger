@@ -1,0 +1,10 @@
+name: Farāh
+type: Division-1
+meta:
+  alpha2: AF-FRA
+  includes:
+    - farāh
+    - af-fra
+    - fra
+    - farāh province
+  category: PROVINCE

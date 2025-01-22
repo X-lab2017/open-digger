@@ -1,0 +1,12 @@
+name: Les Mamelles
+type: Division-1
+meta:
+  alpha2: SC-24
+  includes:
+    - lemamel
+    - sc-24
+    - '24'
+    - lemamel district
+    - les mamelles
+    - les mamelles district
+  category: DISTRICT

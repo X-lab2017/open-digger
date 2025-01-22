@@ -1,0 +1,10 @@
+name: Pesnica
+type: Division-1
+meta:
+  alpha2: SI-089
+  includes:
+    - pesnica
+    - si-089
+    - '089'
+    - pesnica municipality
+  category: MUNICIPALITY

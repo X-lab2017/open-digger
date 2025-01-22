@@ -1,0 +1,10 @@
+name: Šentrupert
+type: Division-1
+meta:
+  alpha2: SI-211
+  includes:
+    - šentrupert
+    - si-211
+    - '211'
+    - šentrupert municipality
+  category: MUNICIPALITY

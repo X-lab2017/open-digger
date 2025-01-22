@@ -1,0 +1,10 @@
+name: Ajdovščina
+type: Division-1
+meta:
+  alpha2: SI-001
+  includes:
+    - ajdovščina
+    - si-001
+    - '001'
+    - ajdovščina municipality
+  category: MUNICIPALITY

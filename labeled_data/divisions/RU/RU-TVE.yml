@@ -1,0 +1,15 @@
+name: Tverskaya oblast'
+type: Division-1
+meta:
+  alpha2: RU-TVE
+  includes:
+    - tverskaja oblast'
+    - ru-tve
+    - tve
+    - tverskaja oblast' administrative region
+    - tverskaya oblast'
+    - tverskaya oblast' administrative region
+    - tver oblast
+    - tver
+    - tver’
+  category: ADMINISTRATIVE REGION

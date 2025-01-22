@@ -1,0 +1,10 @@
+name: Ağcabədi
+type: Division-1
+meta:
+  alpha2: AZ-AGC
+  includes:
+    - ağcabədi
+    - az-agc
+    - agc
+    - ağcabədi rayon
+  category: RAYON

@@ -1,0 +1,11 @@
+name: Örebro län
+type: Division-1
+meta:
+  alpha2: SE-T
+  includes:
+    - örebro län
+    - se-t
+    - t
+    - örebro län county
+    - örebro county
+  category: COUNTY

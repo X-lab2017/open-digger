@@ -1,0 +1,10 @@
+name: Brakna
+type: Division-1
+meta:
+  alpha2: MR-05
+  includes:
+    - brakna
+    - mr-05
+    - '05'
+    - brakna region
+  category: REGION

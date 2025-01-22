@@ -1,0 +1,11 @@
+name: Sơn La
+type: Division-1
+meta:
+  alpha2: VN-05
+  includes:
+    - sơn la
+    - vn-05
+    - '05'
+    - sơn la province
+    - son la
+  category: PROVINCE

@@ -1,0 +1,12 @@
+name: Blue Nile
+type: Division-1
+meta:
+  alpha2: SD-NB
+  includes:
+    - an nīl al azraq
+    - sd-nb
+    - nb
+    - an nīl al azraq state
+    - blue nile
+    - blue nile state
+  category: STATE

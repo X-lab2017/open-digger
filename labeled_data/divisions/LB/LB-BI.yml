@@ -1,0 +1,13 @@
+name: Béqaa
+type: Division-1
+meta:
+  alpha2: LB-BI
+  includes:
+    - al biqā‘
+    - lb-bi
+    - bi
+    - al biqā‘ governorate
+    - béqaa
+    - béqaa governorate
+    - beqaa governorate
+  category: GOVERNORATE

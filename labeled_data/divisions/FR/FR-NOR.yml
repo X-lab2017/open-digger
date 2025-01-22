@@ -1,0 +1,32 @@
+name: Normandie
+type: Division-1
+meta:
+  alpha2: FR-NOR
+  includes:
+    - calvados
+    - fr-14
+    - '14'
+    - calvados metropolitan department
+    - eure
+    - fr-27
+    - '27'
+    - eure metropolitan department
+    - manche
+    - fr-50
+    - '50'
+    - manche metropolitan department
+    - normandie
+    - fr-nor
+    - nor
+    - normandie metropolitan region
+    - orne
+    - fr-61
+    - '61'
+    - orne metropolitan department
+    - seine-maritime
+    - fr-76
+    - '76'
+    - seine-maritime metropolitan department
+    - normandy
+    - upper normandy
+  category: METROPOLITAN REGION

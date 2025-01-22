@@ -1,0 +1,11 @@
+name: Hallands län
+type: Division-1
+meta:
+  alpha2: SE-N
+  includes:
+    - hallands län
+    - se-n
+    - 'n'
+    - hallands län county
+    - halland county
+  category: COUNTY

@@ -1,0 +1,19 @@
+name: Navarra
+type: Division-1
+meta:
+  alpha2: ES-NC
+  includes:
+    - nafarroa
+    - es-na
+    - na
+    - nafarroa province
+    - nafarroako foru komunitatea
+    - es-nc
+    - nc
+    - nafarroako foru komunitatea autonomous community
+    - navarra
+    - navarra province
+    - navarra autonomous community
+    - chartered community of navarre
+    - navarre
+  category: AUTONOMOUS COMMUNITY

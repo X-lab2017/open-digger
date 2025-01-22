@@ -1,0 +1,10 @@
+name: Cetinje
+type: Division-1
+meta:
+  alpha2: ME-06
+  includes:
+    - cetinje
+    - me-06
+    - '06'
+    - cetinje municipality
+  category: MUNICIPALITY

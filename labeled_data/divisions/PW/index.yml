@@ -1,0 +1,88 @@
+name: Palau
+type: Division-0
+meta:
+  alpha2: PW
+  includes:
+    - Palau
+    - PW
+    - '585'
+    - the Republic of Palau
+    - 帕劳
+  name_full: the Republic of Palau
+  name_zh: 帕劳
+  developers:
+    - year: 2020
+      quarter: 2
+      count: 106
+    - year: 2020
+      quarter: 3
+      count: 109
+    - year: 2020
+      quarter: 4
+      count: 120
+    - year: 2021
+      quarter: 1
+      count: 127
+    - year: 2021
+      quarter: 2
+      count: 134
+    - year: 2021
+      quarter: 3
+      count: 141
+    - year: 2021
+      quarter: 4
+      count: 145
+    - year: 2022
+      quarter: 1
+      count: 153
+    - year: 2022
+      quarter: 2
+      count: 161
+    - year: 2022
+      quarter: 3
+      count: 179
+    - year: 2022
+      quarter: 4
+      count: 184
+    - year: 2023
+      quarter: 1
+      count: 188
+    - year: 2023
+      quarter: 2
+      count: 203
+    - year: 2023
+      quarter: 3
+      count: 222
+    - year: 2023
+      quarter: 4
+      count: 238
+    - year: 2024
+      quarter: 1
+      count: 257
+    - year: 2024
+      quarter: 2
+      count: 266
+    - year: 2024
+      quarter: 3
+      count: 291
+    - year: 2024
+      quarter: 4
+      count: 286
+data:
+  labels:
+    - PW-002
+    - PW-004
+    - PW-010
+    - PW-050
+    - PW-100
+    - PW-150
+    - PW-212
+    - PW-214
+    - PW-218
+    - PW-222
+    - PW-224
+    - PW-226
+    - PW-227
+    - PW-228
+    - PW-350
+    - PW-370

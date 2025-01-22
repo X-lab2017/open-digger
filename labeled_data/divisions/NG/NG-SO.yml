@@ -1,0 +1,10 @@
+name: Sokoto
+type: Division-1
+meta:
+  alpha2: NG-SO
+  includes:
+    - sokoto
+    - ng-so
+    - so
+    - sokoto state
+  category: STATE

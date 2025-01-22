@@ -1,0 +1,10 @@
+name: Luče
+type: Division-1
+meta:
+  alpha2: SI-067
+  includes:
+    - luče
+    - si-067
+    - '067'
+    - luče municipality
+  category: MUNICIPALITY

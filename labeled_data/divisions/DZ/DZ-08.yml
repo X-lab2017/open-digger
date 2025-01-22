@@ -1,0 +1,11 @@
+name: Béchar
+type: Division-1
+meta:
+  alpha2: DZ-08
+  includes:
+    - béchar
+    - dz-08
+    - '08'
+    - béchar province
+    - bashar
+  category: PROVINCE

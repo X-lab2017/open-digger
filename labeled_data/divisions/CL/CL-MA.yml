@@ -1,0 +1,13 @@
+name: Magallanes
+type: Division-1
+meta:
+  alpha2: CL-MA
+  includes:
+    - magallanes
+    - cl-ma
+    - ma
+    - magallanes region
+    - magallanes y la antártica chilena
+    - magallanes and chilean antarctica
+    - i
+  category: REGION

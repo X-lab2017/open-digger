@@ -1,0 +1,10 @@
+name: Surt
+type: Division-1
+meta:
+  alpha2: LY-SR
+  includes:
+    - surt
+    - ly-sr
+    - sr
+    - surt popularate
+  category: POPULARATE

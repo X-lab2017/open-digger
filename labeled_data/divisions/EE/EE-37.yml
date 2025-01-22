@@ -1,0 +1,77 @@
+name: Harjumaa
+type: Division-1
+meta:
+  alpha2: EE-37
+  includes:
+    - anija
+    - ee-141
+    - '141'
+    - anija rural municipality
+    - harjumaa
+    - ee-37
+    - '37'
+    - harjumaa county
+    - harku
+    - ee-198
+    - '198'
+    - harku rural municipality
+    - jõelähtme
+    - ee-245
+    - '245'
+    - jõelähtme rural municipality
+    - keila
+    - ee-296
+    - '296'
+    - keila urban municipality
+    - kiili
+    - ee-305
+    - '305'
+    - kiili rural municipality
+    - kose
+    - ee-338
+    - '338'
+    - kose rural municipality
+    - kuusalu
+    - ee-353
+    - '353'
+    - kuusalu rural municipality
+    - loksa
+    - ee-424
+    - '424'
+    - loksa urban municipality
+    - lääne-harju
+    - ee-431
+    - '431'
+    - lääne-harju rural municipality
+    - maardu
+    - ee-446
+    - '446'
+    - maardu urban municipality
+    - raasiku
+    - ee-651
+    - '651'
+    - raasiku rural municipality
+    - rae
+    - ee-653
+    - '653'
+    - rae rural municipality
+    - saku
+    - ee-719
+    - '719'
+    - saku rural municipality
+    - saue
+    - ee-726
+    - '726'
+    - saue rural municipality
+    - tallinn
+    - ee-784
+    - '784'
+    - tallinn urban municipality
+    - viimsi
+    - ee-890
+    - '890'
+    - viimsi rural municipality
+    - harju
+    - harju county
+    - harju maakond
+  category: COUNTY

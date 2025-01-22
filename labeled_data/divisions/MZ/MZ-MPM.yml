@@ -1,0 +1,11 @@
+name: Maputo
+type: Division-1
+meta:
+  alpha2: MZ-MPM
+  includes:
+    - maputo
+    - mz-mpm
+    - mpm
+    - maputo city
+    - cidade de maputo
+  category: CITY

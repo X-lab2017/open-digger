@@ -1,0 +1,94 @@
+name: Leinster
+type: Division-1
+meta:
+  alpha2: IE-L
+  includes:
+    - an iarmhí
+    - ie-wh
+    - wh
+    - an iarmhí county
+    - an longfort
+    - ie-ld
+    - ld
+    - an longfort county
+    - an mhí
+    - ie-mh
+    - mh
+    - an mhí county
+    - baile átha cliath
+    - ie-d
+    - d
+    - baile átha cliath county
+    - carlow
+    - ie-cw
+    - cw
+    - carlow county
+    - ceatharlach
+    - ceatharlach county
+    - cill chainnigh
+    - ie-kk
+    - kk
+    - cill chainnigh county
+    - cill dara
+    - ie-ke
+    - ke
+    - cill dara county
+    - cill mhantáin
+    - ie-ww
+    - ww
+    - cill mhantáin county
+    - dublin
+    - dublin county
+    - kildare
+    - kildare county
+    - kilkenny
+    - kilkenny county
+    - laighin
+    - ie-l
+    - l
+    - laighin province
+    - laois
+    - ie-ls
+    - ls
+    - laois county
+    - leinster
+    - leinster province
+    - loch garman
+    - ie-wx
+    - wx
+    - loch garman county
+    - longford
+    - longford county
+    - louth
+    - ie-lh
+    - lh
+    - louth county
+    - lú
+    - lú county
+    - meath
+    - meath county
+    - offaly
+    - ie-oy
+    - oy
+    - offaly county
+    - uíbh fhailí
+    - uíbh fhailí county
+    - westmeath
+    - westmeath county
+    - wexford
+    - wexford county
+    - wicklow
+    - wicklow county
+    - county meath
+    - county dublin
+    - county laois
+    - county kildare
+    - county wicklow
+    - county westmeath
+    - county longford
+    - county offaly
+    - county louth
+    - county carlow
+    - county wexford
+    - county kilkenny
+  category: PROVINCE

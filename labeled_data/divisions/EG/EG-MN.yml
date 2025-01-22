@@ -1,0 +1,12 @@
+name: Al Minyā
+type: Division-1
+meta:
+  alpha2: EG-MN
+  includes:
+    - al minyā
+    - eg-mn
+    - mn
+    - al minyā governorate
+    - minya governorate
+    - al minya
+  category: GOVERNORATE

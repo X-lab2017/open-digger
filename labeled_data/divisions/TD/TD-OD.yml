@@ -1,0 +1,12 @@
+name: Waddāy
+type: Division-1
+meta:
+  alpha2: TD-OD
+  includes:
+    - ouaddaï
+    - td-od
+    - od
+    - ouaddaï province
+    - waddāy
+    - waddāy province
+  category: PROVINCE

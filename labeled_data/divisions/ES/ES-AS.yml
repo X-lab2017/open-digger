@@ -1,0 +1,15 @@
+name: Asturias
+type: Division-1
+meta:
+  alpha2: ES-AS
+  includes:
+    - asturias
+    - es-o
+    - o
+    - asturias province
+    - es-as
+    - as
+    - asturias autonomous community
+    - principality of asturias
+    - principado de asturias
+  category: AUTONOMOUS COMMUNITY

@@ -1,0 +1,10 @@
+name: Črenšovci
+type: Division-1
+meta:
+  alpha2: SI-015
+  includes:
+    - črenšovci
+    - si-015
+    - '015'
+    - črenšovci municipality
+  category: MUNICIPALITY

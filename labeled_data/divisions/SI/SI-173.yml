@@ -1,0 +1,10 @@
+name: Polzela
+type: Division-1
+meta:
+  alpha2: SI-173
+  includes:
+    - polzela
+    - si-173
+    - '173'
+    - polzela municipality
+  category: MUNICIPALITY

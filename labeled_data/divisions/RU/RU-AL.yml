@@ -1,0 +1,13 @@
+name: Altay
+type: Division-1
+meta:
+  alpha2: RU-AL
+  includes:
+    - altaj
+    - ru-al
+    - al
+    - altaj republic
+    - altay
+    - altay republic
+    - altai republic
+  category: REPUBLIC

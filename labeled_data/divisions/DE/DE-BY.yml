@@ -1,0 +1,11 @@
+name: Bayern
+type: Division-1
+meta:
+  alpha2: DE-BY
+  includes:
+    - bayern
+    - de-by
+    - by
+    - bayern land
+    - bavaria
+  category: LAND

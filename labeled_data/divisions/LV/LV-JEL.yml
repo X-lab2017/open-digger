@@ -1,0 +1,10 @@
+name: Jelgava
+type: Division-1
+meta:
+  alpha2: LV-JEL
+  includes:
+    - jelgava
+    - lv-jel
+    - jel
+    - jelgava state city
+  category: STATE CITY

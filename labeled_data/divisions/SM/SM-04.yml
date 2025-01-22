@@ -1,0 +1,10 @@
+name: Faetano
+type: Division-1
+meta:
+  alpha2: SM-04
+  includes:
+    - faetano
+    - sm-04
+    - '04'
+    - faetano municipality
+  category: MUNICIPALITY

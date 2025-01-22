@@ -1,0 +1,11 @@
+name: Mérida
+type: Division-1
+meta:
+  alpha2: VE-L
+  includes:
+    - mérida
+    - ve-l
+    - l
+    - mérida state
+    - me
+  category: STATE

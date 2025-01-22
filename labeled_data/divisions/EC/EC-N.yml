@@ -1,0 +1,10 @@
+name: Napo
+type: Division-1
+meta:
+  alpha2: EC-N
+  includes:
+    - napo
+    - ec-n
+    - 'n'
+    - napo province
+  category: PROVINCE

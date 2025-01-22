@@ -1,0 +1,11 @@
+name: Sliven
+type: Division-1
+meta:
+  alpha2: BG-20
+  includes:
+    - sliven
+    - bg-20
+    - '20'
+    - sliven district
+    - sliven province
+  category: DISTRICT

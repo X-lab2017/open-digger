@@ -1,0 +1,10 @@
+name: Mengeš
+type: Division-1
+meta:
+  alpha2: SI-072
+  includes:
+    - mengeš
+    - si-072
+    - '072'
+    - mengeš municipality
+  category: MUNICIPALITY

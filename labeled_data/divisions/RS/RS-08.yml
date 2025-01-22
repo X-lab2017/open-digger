@@ -1,0 +1,10 @@
+name: Mačvanski okrug
+type: Division-1
+meta:
+  alpha2: RS-08
+  includes:
+    - mačvanski okrug
+    - rs-08
+    - '08'
+    - mačvanski okrug district
+  category: DISTRICT

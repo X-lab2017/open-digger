@@ -1,0 +1,10 @@
+name: Gudja
+type: Division-1
+meta:
+  alpha2: MT-11
+  includes:
+    - gudja
+    - mt-11
+    - '11'
+    - gudja local council
+  category: LOCAL COUNCIL

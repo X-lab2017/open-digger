@@ -1,0 +1,10 @@
+name: Biləsuvar
+type: Division-1
+meta:
+  alpha2: AZ-BIL
+  includes:
+    - biləsuvar
+    - az-bil
+    - bil
+    - biləsuvar rayon
+  category: RAYON

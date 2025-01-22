@@ -1,0 +1,10 @@
+name: Vieux Fort
+type: Division-1
+meta:
+  alpha2: LC-11
+  includes:
+    - vieux fort
+    - lc-11
+    - '11'
+    - vieux fort district
+  category: DISTRICT

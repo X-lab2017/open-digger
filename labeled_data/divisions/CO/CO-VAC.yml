@@ -1,0 +1,12 @@
+name: Valle del Cauca
+type: Division-1
+meta:
+  alpha2: CO-VAC
+  includes:
+    - valle del cauca
+    - co-vac
+    - vac
+    - valle del cauca department
+    - valle
+    - valle department
+  category: DEPARTMENT

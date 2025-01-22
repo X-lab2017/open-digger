@@ -1,0 +1,10 @@
+name: Moyen-Ogooué
+type: Division-1
+meta:
+  alpha2: GA-3
+  includes:
+    - moyen-ogooué
+    - ga-3
+    - '3'
+    - moyen-ogooué province
+  category: PROVINCE

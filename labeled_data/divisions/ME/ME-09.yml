@@ -1,0 +1,10 @@
+name: Kolašin
+type: Division-1
+meta:
+  alpha2: ME-09
+  includes:
+    - kolašin
+    - me-09
+    - '09'
+    - kolašin municipality
+  category: MUNICIPALITY

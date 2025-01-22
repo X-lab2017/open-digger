@@ -1,0 +1,12 @@
+name: Kajanaland
+type: Division-1
+meta:
+  alpha2: FI-05
+  includes:
+    - kainuu
+    - fi-05
+    - '05'
+    - kainuu region
+    - kajanaland
+    - kajanaland region
+  category: REGION

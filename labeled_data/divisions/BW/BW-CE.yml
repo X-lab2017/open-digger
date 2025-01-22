@@ -1,0 +1,10 @@
+name: Central
+type: Division-1
+meta:
+  alpha2: BW-CE
+  includes:
+    - central
+    - bw-ce
+    - ce
+    - central district
+  category: DISTRICT

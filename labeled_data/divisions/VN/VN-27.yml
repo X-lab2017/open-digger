@@ -1,0 +1,11 @@
+name: Quảng Nam
+type: Division-1
+meta:
+  alpha2: VN-27
+  includes:
+    - quảng nam
+    - vn-27
+    - '27'
+    - quảng nam province
+    - quang nam
+  category: PROVINCE

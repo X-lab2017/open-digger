@@ -1,0 +1,11 @@
+name: Ubon Ratchathani
+type: Division-1
+meta:
+  alpha2: TH-34
+  includes:
+    - ubon ratchathani
+    - th-34
+    - '34'
+    - ubon ratchathani province
+    - chang wat ubon ratchathani
+  category: PROVINCE

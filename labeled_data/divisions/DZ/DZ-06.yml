@@ -1,0 +1,12 @@
+name: Béjaïa
+type: Division-1
+meta:
+  alpha2: DZ-06
+  includes:
+    - béjaïa
+    - dz-06
+    - '06'
+    - béjaïa province
+    - bejaia
+    - wilaya de béjaïa
+  category: PROVINCE

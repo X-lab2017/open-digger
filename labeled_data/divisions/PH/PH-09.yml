@@ -1,0 +1,34 @@
+name: Zamboanga Peninsula
+type: Division-1
+meta:
+  alpha2: PH-09
+  includes:
+    - basilan
+    - ph-bas
+    - bas
+    - basilan province
+    - hilagang sambuwangga
+    - ph-zan
+    - zan
+    - hilagang sambuwangga province
+    - rehiyon ng tangway ng sambuwangga
+    - ph-09
+    - '09'
+    - rehiyon ng tangway ng sambuwangga region
+    - sambuwangga sibugay
+    - ph-zsi
+    - zsi
+    - sambuwangga sibugay province
+    - timog sambuwangga
+    - ph-zas
+    - zas
+    - timog sambuwangga province
+    - zamboanga peninsula
+    - zamboanga peninsula region
+    - zamboanga sibugay
+    - zamboanga sibugay province
+    - zamboanga del norte
+    - zamboanga del norte province
+    - zamboanga del sur
+    - zamboanga del sur province
+  category: REGION

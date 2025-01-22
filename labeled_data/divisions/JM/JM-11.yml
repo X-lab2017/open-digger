@@ -1,0 +1,10 @@
+name: Saint Elizabeth
+type: Division-1
+meta:
+  alpha2: JM-11
+  includes:
+    - saint elizabeth
+    - jm-11
+    - '11'
+    - saint elizabeth parish
+  category: PARISH

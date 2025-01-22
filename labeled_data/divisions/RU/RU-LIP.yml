@@ -1,0 +1,14 @@
+name: Lipetskaya oblast'
+type: Division-1
+meta:
+  alpha2: RU-LIP
+  includes:
+    - lipeckaja oblast'
+    - ru-lip
+    - lip
+    - lipeckaja oblast' administrative region
+    - lipetskaya oblast'
+    - lipetskaya oblast' administrative region
+    - lipetsk oblast
+    - lipetsk
+  category: ADMINISTRATIVE REGION

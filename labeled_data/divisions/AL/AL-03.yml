@@ -1,0 +1,10 @@
+name: Elbasan
+type: Division-1
+meta:
+  alpha2: AL-03
+  includes:
+    - elbasan
+    - al-03
+    - '03'
+    - elbasan county
+  category: COUNTY

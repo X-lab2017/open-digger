@@ -1,0 +1,11 @@
+name: Dakar
+type: Division-1
+meta:
+  alpha2: SN-DK
+  includes:
+    - dakar
+    - sn-dk
+    - dk
+    - dakar region
+    - région de dakar
+  category: REGION

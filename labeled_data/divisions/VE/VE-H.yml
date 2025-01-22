@@ -1,0 +1,11 @@
+name: Cojedes
+type: Division-1
+meta:
+  alpha2: VE-H
+  includes:
+    - cojedes
+    - ve-h
+    - h
+    - cojedes state
+    - co
+  category: STATE

@@ -1,0 +1,10 @@
+name: Muğla
+type: Division-1
+meta:
+  alpha2: TR-48
+  includes:
+    - muğla
+    - tr-48
+    - '48'
+    - muğla province
+  category: PROVINCE

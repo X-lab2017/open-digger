@@ -1,0 +1,11 @@
+name: Kärnten
+type: Division-1
+meta:
+  alpha2: AT-2
+  includes:
+    - kärnten
+    - at-2
+    - '2'
+    - kärnten state
+    - carinthia
+  category: STATE

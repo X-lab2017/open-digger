@@ -1,0 +1,10 @@
+name: Ruše
+type: Division-1
+meta:
+  alpha2: SI-108
+  includes:
+    - ruše
+    - si-108
+    - '108'
+    - ruše municipality
+  category: MUNICIPALITY

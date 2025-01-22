@@ -1,0 +1,11 @@
+name: Pazardzhik
+type: Division-1
+meta:
+  alpha2: BG-13
+  includes:
+    - pazardzhik
+    - bg-13
+    - '13'
+    - pazardzhik district
+    - pazardzhik province
+  category: DISTRICT

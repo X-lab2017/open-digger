@@ -1,0 +1,11 @@
+name: Shamāl al Bāţinah
+type: Division-1
+meta:
+  alpha2: OM-BS
+  includes:
+    - shamāl al bāţinah
+    - om-bs
+    - bs
+    - shamāl al bāţinah governorate
+    - al batinah north governorate
+  category: GOVERNORATE

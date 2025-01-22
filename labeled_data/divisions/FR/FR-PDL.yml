@@ -1,0 +1,31 @@
+name: Pays-de-la-Loire
+type: Division-1
+meta:
+  alpha2: FR-PDL
+  includes:
+    - loire-atlantique
+    - fr-44
+    - '44'
+    - loire-atlantique metropolitan department
+    - maine-et-loire
+    - fr-49
+    - '49'
+    - maine-et-loire metropolitan department
+    - mayenne
+    - fr-53
+    - '53'
+    - mayenne metropolitan department
+    - pays-de-la-loire
+    - fr-pdl
+    - pdl
+    - pays-de-la-loire metropolitan region
+    - sarthe
+    - fr-72
+    - '72'
+    - sarthe metropolitan department
+    - vendée
+    - fr-85
+    - '85'
+    - vendée metropolitan department
+    - pays de la loire
+  category: METROPOLITAN REGION

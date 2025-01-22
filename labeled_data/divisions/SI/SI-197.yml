@@ -1,0 +1,10 @@
+name: Kostanjevica na Krki
+type: Division-1
+meta:
+  alpha2: SI-197
+  includes:
+    - kostanjevica na krki
+    - si-197
+    - '197'
+    - kostanjevica na krki municipality
+  category: MUNICIPALITY

@@ -1,0 +1,10 @@
+name: Slovenj Gradec
+type: Division-1
+meta:
+  alpha2: SI-112
+  includes:
+    - slovenj gradec
+    - si-112
+    - '112'
+    - slovenj gradec urban municipality
+  category: URBAN MUNICIPALITY

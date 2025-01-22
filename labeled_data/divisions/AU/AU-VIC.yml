@@ -1,0 +1,10 @@
+name: Victoria
+type: Division-1
+meta:
+  alpha2: AU-VIC
+  includes:
+    - victoria
+    - au-vic
+    - vic
+    - victoria state
+  category: STATE

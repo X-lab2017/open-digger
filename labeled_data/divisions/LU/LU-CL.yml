@@ -1,0 +1,14 @@
+name: Clervaux
+type: Division-1
+meta:
+  alpha2: LU-CL
+  includes:
+    - clerf
+    - lu-cl
+    - cl
+    - clerf canton
+    - clervaux
+    - clervaux canton
+    - klierf
+    - klierf canton
+  category: CANTON

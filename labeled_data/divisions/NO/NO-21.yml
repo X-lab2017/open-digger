@@ -1,0 +1,10 @@
+name: Svalbard
+type: Division-1
+meta:
+  alpha2: NO-21
+  includes:
+    - svalbard
+    - no-21
+    - '21'
+    - svalbard arctic region
+  category: ARCTIC REGION

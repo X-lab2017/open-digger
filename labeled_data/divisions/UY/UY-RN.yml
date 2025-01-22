@@ -1,0 +1,10 @@
+name: Río Negro
+type: Division-1
+meta:
+  alpha2: UY-RN
+  includes:
+    - río negro
+    - uy-rn
+    - rn
+    - río negro department
+  category: DEPARTMENT

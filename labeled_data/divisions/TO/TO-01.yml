@@ -1,0 +1,10 @@
+name: '''Eua'
+type: Division-1
+meta:
+  alpha2: TO-01
+  includes:
+    - '''eua'
+    - to-01
+    - '01'
+    - '''eua division'
+  category: DIVISION

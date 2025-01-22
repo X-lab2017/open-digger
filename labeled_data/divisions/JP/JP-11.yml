@@ -1,0 +1,10 @@
+name: Saitama
+type: Division-1
+meta:
+  alpha2: JP-11
+  includes:
+    - saitama
+    - jp-11
+    - '11'
+    - saitama prefecture
+  category: PREFECTURE

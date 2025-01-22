@@ -1,0 +1,10 @@
+name: Plužine
+type: Division-1
+meta:
+  alpha2: ME-15
+  includes:
+    - plužine
+    - me-15
+    - '15'
+    - plužine municipality
+  category: MUNICIPALITY

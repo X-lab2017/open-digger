@@ -1,0 +1,88 @@
+name: Ethiopia
+type: Division-0
+meta:
+  alpha2: ET
+  includes:
+    - Ethiopia
+    - ET
+    - '231'
+    - the Federal Democratic Republic of Ethiopia
+    - 埃塞俄比亚
+  name_full: the Federal Democratic Republic of Ethiopia
+  name_zh: 埃塞俄比亚
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 23109
+    - year: 2020
+      quarter: 2
+      count: 26677
+    - year: 2020
+      quarter: 3
+      count: 29308
+    - year: 2020
+      quarter: 4
+      count: 32068
+    - year: 2021
+      quarter: 1
+      count: 35422
+    - year: 2021
+      quarter: 2
+      count: 39133
+    - year: 2021
+      quarter: 3
+      count: 43175
+    - year: 2021
+      quarter: 4
+      count: 46902
+    - year: 2022
+      quarter: 1
+      count: 55274
+    - year: 2022
+      quarter: 2
+      count: 63891
+    - year: 2022
+      quarter: 3
+      count: 73199
+    - year: 2022
+      quarter: 4
+      count: 79983
+    - year: 2023
+      quarter: 1
+      count: 85868
+    - year: 2023
+      quarter: 2
+      count: 83920
+    - year: 2023
+      quarter: 3
+      count: 93735
+    - year: 2023
+      quarter: 4
+      count: 104714
+    - year: 2024
+      quarter: 1
+      count: 115757
+    - year: 2024
+      quarter: 2
+      count: 126466
+    - year: 2024
+      quarter: 3
+      count: 137035
+    - year: 2024
+      quarter: 4
+      count: 150898
+data:
+  labels:
+    - ET-AA
+    - ET-AF
+    - ET-AM
+    - ET-BE
+    - ET-DD
+    - ET-GA
+    - ET-HA
+    - ET-OR
+    - ET-SI
+    - ET-SO
+    - ET-SN
+    - ET-SW
+    - ET-TI

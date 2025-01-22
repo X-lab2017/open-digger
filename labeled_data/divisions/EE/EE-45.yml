@@ -1,0 +1,43 @@
+name: Ida-Virumaa
+type: Division-1
+meta:
+  alpha2: EE-45
+  includes:
+    - alutaguse
+    - ee-130
+    - '130'
+    - alutaguse rural municipality
+    - ida-virumaa
+    - ee-45
+    - '45'
+    - ida-virumaa county
+    - jõhvi
+    - ee-251
+    - '251'
+    - jõhvi rural municipality
+    - kohtla-järve
+    - ee-321
+    - '321'
+    - kohtla-järve urban municipality
+    - lüganuse
+    - ee-442
+    - '442'
+    - lüganuse rural municipality
+    - narva
+    - ee-511
+    - '511'
+    - narva urban municipality
+    - narva-jõesuu
+    - ee-514
+    - '514'
+    - narva-jõesuu urban municipality
+    - sillamäe
+    - ee-735
+    - '735'
+    - sillamäe urban municipality
+    - toila
+    - ee-803
+    - '803'
+    - toila rural municipality
+    - ida-viru county
+  category: COUNTY

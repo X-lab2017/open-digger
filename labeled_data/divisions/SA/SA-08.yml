@@ -1,0 +1,12 @@
+name: Al Ḩudūd ash Shamālīyah
+type: Division-1
+meta:
+  alpha2: SA-08
+  includes:
+    - al ḩudūd ash shamālīyah
+    - sa-08
+    - '08'
+    - al ḩudūd ash shamālīyah region
+    - nar
+    - northern borders province
+  category: REGION

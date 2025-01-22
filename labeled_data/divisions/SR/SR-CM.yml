@@ -1,0 +1,10 @@
+name: Commewijne
+type: Division-1
+meta:
+  alpha2: SR-CM
+  includes:
+    - commewijne
+    - sr-cm
+    - cm
+    - commewijne district
+  category: DISTRICT

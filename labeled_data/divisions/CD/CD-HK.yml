@@ -1,0 +1,10 @@
+name: Haut-Katanga
+type: Division-1
+meta:
+  alpha2: CD-HK
+  includes:
+    - haut-katanga
+    - cd-hk
+    - hk
+    - haut-katanga province
+  category: PROVINCE

@@ -1,0 +1,101 @@
+name: Peru
+type: Division-0
+meta:
+  alpha2: PE
+  includes:
+    - Peru
+    - PE
+    - '604'
+    - the Republic of Peru
+    - 秘鲁
+  name_full: the Republic of Peru
+  name_zh: 秘鲁
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 150672
+    - year: 2020
+      quarter: 2
+      count: 171657
+    - year: 2020
+      quarter: 3
+      count: 192328
+    - year: 2020
+      quarter: 4
+      count: 209451
+    - year: 2021
+      quarter: 1
+      count: 224138
+    - year: 2021
+      quarter: 2
+      count: 245458
+    - year: 2021
+      quarter: 3
+      count: 265611
+    - year: 2021
+      quarter: 4
+      count: 282780
+    - year: 2022
+      quarter: 1
+      count: 300996
+    - year: 2022
+      quarter: 2
+      count: 324822
+    - year: 2022
+      quarter: 3
+      count: 347955
+    - year: 2022
+      quarter: 4
+      count: 370239
+    - year: 2023
+      quarter: 1
+      count: 392486
+    - year: 2023
+      quarter: 2
+      count: 425595
+    - year: 2023
+      quarter: 3
+      count: 458398
+    - year: 2023
+      quarter: 4
+      count: 487039
+    - year: 2024
+      quarter: 1
+      count: 516812
+    - year: 2024
+      quarter: 2
+      count: 551801
+    - year: 2024
+      quarter: 3
+      count: 584288
+    - year: 2024
+      quarter: 4
+      count: 616208
+data:
+  labels:
+    - PE-AMA
+    - PE-ANC
+    - PE-APU
+    - PE-ARE
+    - PE-AYA
+    - PE-CAJ
+    - PE-CUS
+    - PE-CAL
+    - PE-HUV
+    - PE-JUN
+    - PE-HUC
+    - PE-ICA
+    - PE-LAL
+    - PE-LAM
+    - PE-LIM
+    - PE-LMA
+    - PE-LOR
+    - PE-MDD
+    - PE-MOQ
+    - PE-PAS
+    - PE-PIU
+    - PE-PUN
+    - PE-SAM
+    - PE-TAC
+    - PE-TUM
+    - PE-UCA

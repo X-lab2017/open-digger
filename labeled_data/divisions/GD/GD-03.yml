@@ -1,0 +1,10 @@
+name: Saint George
+type: Division-1
+meta:
+  alpha2: GD-03
+  includes:
+    - saint george
+    - gd-03
+    - '03'
+    - saint george parish
+  category: PARISH

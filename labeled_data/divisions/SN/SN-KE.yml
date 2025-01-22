@@ -1,0 +1,10 @@
+name: Kédougou
+type: Division-1
+meta:
+  alpha2: SN-KE
+  includes:
+    - kédougou
+    - sn-ke
+    - ke
+    - kédougou region
+  category: REGION

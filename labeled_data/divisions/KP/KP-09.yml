@@ -1,0 +1,13 @@
+name: Hamkyeongpukto
+type: Division-1
+meta:
+  alpha2: KP-09
+  includes:
+    - hamgyǒng-bukto
+    - kp-09
+    - '09'
+    - hamgyǒng-bukto province
+    - hamkyeongpukto
+    - hamkyeongpukto province
+    - north hamgyong
+  category: PROVINCE

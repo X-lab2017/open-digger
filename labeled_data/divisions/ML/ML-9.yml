@@ -1,0 +1,10 @@
+name: Ménaka
+type: Division-1
+meta:
+  alpha2: ML-9
+  includes:
+    - ménaka
+    - ml-9
+    - '9'
+    - ménaka region
+  category: REGION

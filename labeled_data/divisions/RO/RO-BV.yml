@@ -1,0 +1,12 @@
+name: Brașov
+type: Division-1
+meta:
+  alpha2: RO-BV
+  includes:
+    - brașov
+    - ro-bv
+    - bv
+    - brașov department
+    - braşov
+    - județul brașov
+  category: DEPARTMENT

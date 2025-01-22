@@ -1,0 +1,10 @@
+name: Schaffhausen
+type: Division-1
+meta:
+  alpha2: CH-SH
+  includes:
+    - schaffhausen
+    - ch-sh
+    - sh
+    - schaffhausen canton
+  category: CANTON

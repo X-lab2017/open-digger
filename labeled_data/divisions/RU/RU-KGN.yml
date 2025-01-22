@@ -1,0 +1,14 @@
+name: Kurganskaya oblast'
+type: Division-1
+meta:
+  alpha2: RU-KGN
+  includes:
+    - kurganskaja oblast'
+    - ru-kgn
+    - kgn
+    - kurganskaja oblast' administrative region
+    - kurganskaya oblast'
+    - kurganskaya oblast' administrative region
+    - kurgan oblast
+    - kurgan
+  category: ADMINISTRATIVE REGION

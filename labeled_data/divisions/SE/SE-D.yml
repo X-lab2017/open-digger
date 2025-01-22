@@ -1,0 +1,11 @@
+name: Södermanlands län
+type: Division-1
+meta:
+  alpha2: SE-D
+  includes:
+    - södermanlands län
+    - se-d
+    - d
+    - södermanlands län county
+    - södermanland county
+  category: COUNTY

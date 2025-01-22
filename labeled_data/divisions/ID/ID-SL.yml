@@ -1,0 +1,40 @@
+name: Sulawesi
+type: Division-1
+meta:
+  alpha2: ID-SL
+  includes:
+    - gorontalo
+    - id-go
+    - go
+    - gorontalo province
+    - sulawesi
+    - id-sl
+    - sl
+    - sulawesi geographical unit
+    - sulawesi barat
+    - id-sr
+    - sr
+    - sulawesi barat province
+    - sulawesi selatan
+    - id-sn
+    - sn
+    - sulawesi selatan province
+    - sulawesi tengah
+    - id-st
+    - st
+    - sulawesi tengah province
+    - sulawesi tenggara
+    - id-sg
+    - sg
+    - sulawesi tenggara province
+    - sulawesi utara
+    - id-sa
+    - sa
+    - sulawesi utara province
+    - central sulawesi
+    - west sulawesi
+    - south east sulawesi
+    - north sulawesi
+    - south sulawesi
+    - southeast sulawesi
+  category: GEOGRAPHICAL UNIT

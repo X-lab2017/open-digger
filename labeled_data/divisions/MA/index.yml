@@ -1,0 +1,87 @@
+name: Morocco
+type: Division-0
+meta:
+  alpha2: MA
+  includes:
+    - Morocco
+    - MA
+    - '504'
+    - the Kingdom of Morocco
+    - 摩洛哥
+  name_full: the Kingdom of Morocco
+  name_zh: 摩洛哥
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 142405
+    - year: 2020
+      quarter: 2
+      count: 161134
+    - year: 2020
+      quarter: 3
+      count: 174167
+    - year: 2020
+      quarter: 4
+      count: 192213
+    - year: 2021
+      quarter: 1
+      count: 211693
+    - year: 2021
+      quarter: 2
+      count: 230292
+    - year: 2021
+      quarter: 3
+      count: 247624
+    - year: 2021
+      quarter: 4
+      count: 266861
+    - year: 2022
+      quarter: 1
+      count: 289130
+    - year: 2022
+      quarter: 2
+      count: 309248
+    - year: 2022
+      quarter: 3
+      count: 329732
+    - year: 2022
+      quarter: 4
+      count: 352152
+    - year: 2023
+      quarter: 1
+      count: 387675
+    - year: 2023
+      quarter: 2
+      count: 421084
+    - year: 2023
+      quarter: 3
+      count: 448194
+    - year: 2023
+      quarter: 4
+      count: 478096
+    - year: 2024
+      quarter: 1
+      count: 514125
+    - year: 2024
+      quarter: 2
+      count: 539045
+    - year: 2024
+      quarter: 3
+      count: 560210
+    - year: 2024
+      quarter: 4
+      count: 593273
+data:
+  labels:
+    - MA-09
+    - MA-07
+    - MA-01
+    - MA-12
+    - MA-10
+    - MA-05
+    - MA-06
+    - MA-02
+    - MA-11
+    - MA-03
+    - MA-08
+    - MA-04

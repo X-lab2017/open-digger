@@ -1,0 +1,13 @@
+name: Viangchan
+type: Division-1
+meta:
+  alpha2: LA-VT
+  includes:
+    - viangchan
+    - la-vt
+    - vt
+    - viangchan prefecture
+    - vientiane
+    - vientiane prefecture
+    - vb
+  category: PREFECTURE

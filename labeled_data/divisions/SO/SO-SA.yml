@@ -1,0 +1,10 @@
+name: Sanaag
+type: Division-1
+meta:
+  alpha2: SO-SA
+  includes:
+    - sanaag
+    - so-sa
+    - sa
+    - sanaag region
+  category: REGION

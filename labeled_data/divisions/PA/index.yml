@@ -1,0 +1,89 @@
+name: Panama
+type: Division-0
+meta:
+  alpha2: PA
+  includes:
+    - Panama
+    - PA
+    - '591'
+    - the Republic of Panama
+    - 巴拿马
+  name_full: the Republic of Panama
+  name_zh: 巴拿马
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 16613
+    - year: 2020
+      quarter: 2
+      count: 19281
+    - year: 2020
+      quarter: 3
+      count: 21989
+    - year: 2020
+      quarter: 4
+      count: 23850
+    - year: 2021
+      quarter: 1
+      count: 25660
+    - year: 2021
+      quarter: 2
+      count: 27748
+    - year: 2021
+      quarter: 3
+      count: 30008
+    - year: 2021
+      quarter: 4
+      count: 31984
+    - year: 2022
+      quarter: 1
+      count: 33874
+    - year: 2022
+      quarter: 2
+      count: 36336
+    - year: 2022
+      quarter: 3
+      count: 38726
+    - year: 2022
+      quarter: 4
+      count: 40732
+    - year: 2023
+      quarter: 1
+      count: 42862
+    - year: 2023
+      quarter: 2
+      count: 46390
+    - year: 2023
+      quarter: 3
+      count: 49409
+    - year: 2023
+      quarter: 4
+      count: 52219
+    - year: 2024
+      quarter: 1
+      count: 55324
+    - year: 2024
+      quarter: 2
+      count: 58267
+    - year: 2024
+      quarter: 3
+      count: 61514
+    - year: 2024
+      quarter: 4
+      count: 64561
+data:
+  labels:
+    - PA-1
+    - PA-4
+    - PA-2
+    - PA-3
+    - PA-5
+    - PA-EM
+    - PA-KY
+    - PA-6
+    - PA-7
+    - PA-NT
+    - PA-NB
+    - PA-8
+    - PA-10
+    - PA-9

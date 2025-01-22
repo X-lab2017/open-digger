@@ -1,0 +1,12 @@
+name: Lobaye
+type: Division-1
+meta:
+  alpha2: CF-LB
+  includes:
+    - lobaye
+    - cf-lb
+    - lb
+    - lobaye prefecture
+    - lobâye
+    - lobâye prefecture
+  category: PREFECTURE

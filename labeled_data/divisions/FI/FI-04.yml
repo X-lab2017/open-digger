@@ -1,0 +1,13 @@
+name: Södra Savolax
+type: Division-1
+meta:
+  alpha2: FI-04
+  includes:
+    - etelä-savo
+    - fi-04
+    - '04'
+    - etelä-savo region
+    - södra savolax
+    - södra savolax region
+    - south savo
+  category: REGION

@@ -1,0 +1,39 @@
+name: Eastern Province
+type: Division-1
+meta:
+  alpha2: LK-5
+  includes:
+    - ampara
+    - lk-52
+    - '52'
+    - ampara district
+    - ampāra
+    - ampāra district
+    - ampāṟai
+    - ampāṟai district
+    - batticaloa
+    - lk-51
+    - '51'
+    - batticaloa district
+    - eastern province
+    - lk-5
+    - '5'
+    - eastern province province
+    - kil̮akku mākāṇam
+    - kil̮akku mākāṇam province
+    - maḍakalapuva
+    - maḍakalapuva district
+    - maṭṭakkaḷappu
+    - maṭṭakkaḷappu district
+    - næ̆gĕnahira paḷāta
+    - næ̆gĕnahira paḷāta province
+    - tirukŏṇamalai
+    - lk-53
+    - '53'
+    - tirukŏṇamalai district
+    - trikuṇāmalaya
+    - trikuṇāmalaya district
+    - trincomalee
+    - trincomalee district
+    - eastern
+  category: PROVINCE

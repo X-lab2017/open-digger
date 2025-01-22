@@ -1,0 +1,11 @@
+name: Sergipe
+type: Division-1
+meta:
+  alpha2: BR-SE
+  includes:
+    - sergipe
+    - br-se
+    - se
+    - sergipe state
+    - state of sergipe
+  category: STATE

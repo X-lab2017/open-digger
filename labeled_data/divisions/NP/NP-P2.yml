@@ -1,0 +1,15 @@
+name: Madhesh
+type: Division-1
+meta:
+  alpha2: NP-P2
+  includes:
+    - madhesh
+    - np-p2
+    - p2
+    - madhesh province
+    - province 2
+    - province 2 province
+    - pradesh 2
+    - pradesh 2 province
+    - janakpur
+  category: PROVINCE

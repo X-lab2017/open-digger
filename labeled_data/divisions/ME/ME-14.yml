@@ -1,0 +1,10 @@
+name: Pljevlja
+type: Division-1
+meta:
+  alpha2: ME-14
+  includes:
+    - pljevlja
+    - me-14
+    - '14'
+    - pljevlja municipality
+  category: MUNICIPALITY

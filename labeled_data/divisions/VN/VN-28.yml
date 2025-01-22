@@ -1,0 +1,10 @@
+name: Kon Tum
+type: Division-1
+meta:
+  alpha2: VN-28
+  includes:
+    - kon tum
+    - vn-28
+    - '28'
+    - kon tum province
+  category: PROVINCE

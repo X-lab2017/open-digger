@@ -1,0 +1,12 @@
+name: Nord-Kivu
+type: Division-1
+meta:
+  alpha2: CD-NK
+  includes:
+    - nord-kivu
+    - cd-nk
+    - nk
+    - nord-kivu province
+    - north-kivu
+    - north kivu
+  category: PROVINCE

@@ -1,0 +1,12 @@
+name: Ķekavas novads
+type: Division-1
+meta:
+  alpha2: LV-052
+  includes:
+    - ķekavas novads
+    - lv-052
+    - '052'
+    - ķekavas novads municipality
+    - ķekava
+    - ķekava municipality
+  category: MUNICIPALITY

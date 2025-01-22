@@ -1,0 +1,10 @@
+name: Nālūt
+type: Division-1
+meta:
+  alpha2: LY-NL
+  includes:
+    - nālūt
+    - ly-nl
+    - nl
+    - nālūt popularate
+  category: POPULARATE

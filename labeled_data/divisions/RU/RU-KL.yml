@@ -1,0 +1,14 @@
+name: Kalmykiya
+type: Division-1
+meta:
+  alpha2: RU-KL
+  includes:
+    - kalmykija
+    - ru-kl
+    - kl
+    - kalmykija republic
+    - kalmykiya
+    - kalmykiya republic
+    - republic of kalmykia
+    - kalmykia
+  category: REPUBLIC

@@ -1,0 +1,10 @@
+name: Kilimanjaro
+type: Division-1
+meta:
+  alpha2: TZ-09
+  includes:
+    - kilimanjaro
+    - tz-09
+    - '09'
+    - kilimanjaro region
+  category: REGION

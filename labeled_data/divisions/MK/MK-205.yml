@@ -1,0 +1,10 @@
+name: Karbinci
+type: Division-1
+meta:
+  alpha2: MK-205
+  includes:
+    - karbinci
+    - mk-205
+    - '205'
+    - karbinci municipality
+  category: MUNICIPALITY

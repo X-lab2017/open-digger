@@ -1,0 +1,27 @@
+name: Liberecký kraj
+type: Division-1
+meta:
+  alpha2: CZ-51
+  includes:
+    - jablonec nad nisou
+    - cz-512
+    - '512'
+    - jablonec nad nisou district
+    - liberec
+    - cz-513
+    - '513'
+    - liberec district
+    - liberecký kraj
+    - cz-51
+    - '51'
+    - liberecký kraj region
+    - semily
+    - cz-514
+    - '514'
+    - semily district
+    - česká lípa
+    - cz-511
+    - '511'
+    - česká lípa district
+    - liberec region
+  category: REGION

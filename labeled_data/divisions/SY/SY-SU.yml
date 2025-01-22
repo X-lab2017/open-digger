@@ -1,0 +1,11 @@
+name: As Suwaydā'
+type: Division-1
+meta:
+  alpha2: SY-SU
+  includes:
+    - as suwaydā'
+    - sy-su
+    - su
+    - as suwaydā' province
+    - as-suwayda governorate
+  category: PROVINCE

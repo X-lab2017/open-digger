@@ -1,0 +1,26 @@
+name: Cibao Nordeste
+type: Division-1
+meta:
+  alpha2: DO-33
+  includes:
+    - cibao nordeste
+    - do-33
+    - '33'
+    - cibao nordeste region
+    - duarte
+    - do-06
+    - '06'
+    - duarte province
+    - hermanas mirabal
+    - do-19
+    - '19'
+    - hermanas mirabal province
+    - maría trinidad sánchez
+    - do-14
+    - '14'
+    - maría trinidad sánchez province
+    - samaná
+    - do-20
+    - '20'
+    - samaná province
+  category: REGION

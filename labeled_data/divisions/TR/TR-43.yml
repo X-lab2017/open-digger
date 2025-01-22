@@ -1,0 +1,10 @@
+name: Kütahya
+type: Division-1
+meta:
+  alpha2: TR-43
+  includes:
+    - kütahya
+    - tr-43
+    - '43'
+    - kütahya province
+  category: PROVINCE

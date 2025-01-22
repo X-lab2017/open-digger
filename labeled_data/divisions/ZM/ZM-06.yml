@@ -1,0 +1,11 @@
+name: North-Western
+type: Division-1
+meta:
+  alpha2: ZM-06
+  includes:
+    - north-western
+    - zm-06
+    - '06'
+    - north-western province
+    - northwestern province
+  category: PROVINCE

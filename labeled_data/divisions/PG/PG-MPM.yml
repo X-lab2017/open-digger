@@ -1,0 +1,10 @@
+name: Madang
+type: Division-1
+meta:
+  alpha2: PG-MPM
+  includes:
+    - madang
+    - pg-mpm
+    - mpm
+    - madang province
+  category: PROVINCE

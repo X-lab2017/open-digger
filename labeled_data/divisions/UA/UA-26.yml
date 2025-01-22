@@ -1,0 +1,13 @@
+name: Ivano-Frankivska oblast
+type: Division-1
+meta:
+  alpha2: UA-26
+  includes:
+    - ivano-frankivska oblast
+    - ua-26
+    - '26'
+    - ivano-frankivska oblast region
+    - ivano-frankivs'ka oblast
+    - ivano-frankivsk oblast
+    - ivano-frankivsk
+  category: REGION

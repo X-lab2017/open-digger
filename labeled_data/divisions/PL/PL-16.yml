@@ -1,0 +1,13 @@
+name: Opolskie
+type: Division-1
+meta:
+  alpha2: PL-16
+  includes:
+    - opolskie
+    - pl-16
+    - '16'
+    - opolskie voivodship
+    - opole voivodeship
+    - województwo opolskie
+    - op
+  category: VOIVODSHIP

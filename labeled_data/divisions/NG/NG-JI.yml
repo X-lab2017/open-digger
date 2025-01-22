@@ -1,0 +1,10 @@
+name: Jigawa
+type: Division-1
+meta:
+  alpha2: NG-JI
+  includes:
+    - jigawa
+    - ng-ji
+    - ji
+    - jigawa state
+  category: STATE

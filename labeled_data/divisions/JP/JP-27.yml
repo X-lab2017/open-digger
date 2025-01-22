@@ -1,0 +1,12 @@
+name: Ôsaka
+type: Division-1
+meta:
+  alpha2: JP-27
+  includes:
+    - osaka
+    - jp-27
+    - '27'
+    - osaka prefecture
+    - ôsaka
+    - ôsaka prefecture
+  category: PREFECTURE

@@ -1,0 +1,15 @@
+name: Distrito Capital de Bogotá
+type: Division-1
+meta:
+  alpha2: CO-DC
+  includes:
+    - distrito capital de bogotá
+    - co-dc
+    - dc
+    - distrito capital de bogotá capital district
+    - distrito capital
+    - distrito capital capital district
+    - bogotá
+    - capital district
+    - bogota
+  category: CAPITAL DISTRICT

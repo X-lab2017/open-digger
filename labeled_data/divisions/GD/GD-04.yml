@@ -1,0 +1,10 @@
+name: Saint John
+type: Division-1
+meta:
+  alpha2: GD-04
+  includes:
+    - saint john
+    - gd-04
+    - '04'
+    - saint john parish
+  category: PARISH

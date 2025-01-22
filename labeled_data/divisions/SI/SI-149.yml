@@ -1,0 +1,10 @@
+name: Bistrica ob Sotli
+type: Division-1
+meta:
+  alpha2: SI-149
+  includes:
+    - bistrica ob sotli
+    - si-149
+    - '149'
+    - bistrica ob sotli municipality
+  category: MUNICIPALITY

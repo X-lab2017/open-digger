@@ -1,0 +1,72 @@
+name: New Caledonia
+type: Division-0
+meta:
+  alpha2: NC
+  includes:
+    - New Caledonia
+    - NC
+    - '540'
+    - 新喀里多尼亚
+  name_full: New Caledonia
+  name_zh: 新喀里多尼亚
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 1477
+    - year: 2020
+      quarter: 2
+      count: 1602
+    - year: 2020
+      quarter: 3
+      count: 1767
+    - year: 2020
+      quarter: 4
+      count: 1822
+    - year: 2021
+      quarter: 1
+      count: 1952
+    - year: 2021
+      quarter: 2
+      count: 2062
+    - year: 2021
+      quarter: 3
+      count: 2178
+    - year: 2021
+      quarter: 4
+      count: 2291
+    - year: 2022
+      quarter: 1
+      count: 2398
+    - year: 2022
+      quarter: 2
+      count: 2531
+    - year: 2022
+      quarter: 3
+      count: 2637
+    - year: 2022
+      quarter: 4
+      count: 2747
+    - year: 2023
+      quarter: 1
+      count: 2913
+    - year: 2023
+      quarter: 2
+      count: 3064
+    - year: 2023
+      quarter: 3
+      count: 3231
+    - year: 2023
+      quarter: 4
+      count: 3343
+    - year: 2024
+      quarter: 1
+      count: 3567
+    - year: 2024
+      quarter: 2
+      count: 3709
+    - year: 2024
+      quarter: 3
+      count: 3889
+    - year: 2024
+      quarter: 4
+      count: 4026

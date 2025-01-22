@@ -1,0 +1,10 @@
+name: Upper West
+type: Division-1
+meta:
+  alpha2: GH-UW
+  includes:
+    - upper west
+    - gh-uw
+    - uw
+    - upper west region
+  category: REGION

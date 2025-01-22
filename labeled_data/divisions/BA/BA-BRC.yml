@@ -1,0 +1,11 @@
+name: Brčko distrikt
+type: Division-1
+meta:
+  alpha2: BA-BRC
+  includes:
+    - brčko distrikt
+    - ba-brc
+    - brc
+    - brčko distrikt district with special status
+    - brčko district
+  category: DISTRICT WITH SPECIAL STATUS

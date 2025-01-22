@@ -1,0 +1,10 @@
+name: Anibare
+type: Division-1
+meta:
+  alpha2: NR-04
+  includes:
+    - anibare
+    - nr-04
+    - '04'
+    - anibare district
+  category: DISTRICT

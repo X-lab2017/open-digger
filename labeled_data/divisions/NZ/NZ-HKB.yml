@@ -1,0 +1,12 @@
+name: Hawke's Bay
+type: Division-1
+meta:
+  alpha2: NZ-HKB
+  includes:
+    - hawke's bay
+    - nz-hkb
+    - hkb
+    - hawke's bay region
+    - te matau-a-māui
+    - te matau-a-māui region
+  category: REGION

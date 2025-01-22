@@ -1,0 +1,10 @@
+name: Pool
+type: Division-1
+meta:
+  alpha2: CG-12
+  includes:
+    - pool
+    - cg-12
+    - '12'
+    - pool department
+  category: DEPARTMENT

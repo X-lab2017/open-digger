@@ -1,0 +1,12 @@
+name: Vukovarsko-srijemska županija
+type: Division-1
+meta:
+  alpha2: HR-16
+  includes:
+    - vukovarsko-srijemska županija
+    - hr-16
+    - '16'
+    - vukovarsko-srijemska županija county
+    - vukovar-srijem
+    - vukovar-srijem county
+  category: COUNTY

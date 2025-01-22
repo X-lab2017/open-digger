@@ -1,0 +1,10 @@
+name: Saint-Barthélemy
+type: Division-1
+meta:
+  alpha2: FR-BL
+  includes:
+    - saint-barthélemy
+    - fr-bl
+    - bl
+    - saint-barthélemy overseas collectivity
+  category: OVERSEAS COLLECTIVITY

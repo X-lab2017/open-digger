@@ -1,0 +1,10 @@
+name: Oyo
+type: Division-1
+meta:
+  alpha2: NG-OY
+  includes:
+    - oyo
+    - ng-oy
+    - oy
+    - oyo state
+  category: STATE

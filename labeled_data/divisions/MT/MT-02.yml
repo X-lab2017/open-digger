@@ -1,0 +1,10 @@
+name: Balzan
+type: Division-1
+meta:
+  alpha2: MT-02
+  includes:
+    - balzan
+    - mt-02
+    - '02'
+    - balzan local council
+  category: LOCAL COUNCIL

@@ -1,0 +1,12 @@
+name: Sharq Dārfūr
+type: Division-1
+meta:
+  alpha2: SD-DE
+  includes:
+    - east darfur
+    - sd-de
+    - de
+    - east darfur state
+    - sharq dārfūr
+    - sharq dārfūr state
+  category: STATE

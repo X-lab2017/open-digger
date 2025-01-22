@@ -1,0 +1,13 @@
+name: Ar Riyāḑ
+type: Division-1
+meta:
+  alpha2: SA-01
+  includes:
+    - ar riyāḑ
+    - sa-01
+    - '01'
+    - ar riyāḑ region
+    - riy
+    - riyadh
+    - riyadh province
+  category: REGION

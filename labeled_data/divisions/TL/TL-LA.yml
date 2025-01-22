@@ -1,0 +1,12 @@
+name: Lautém
+type: Division-1
+meta:
+  alpha2: TL-LA
+  includes:
+    - lautein
+    - tl-la
+    - la
+    - lautein municipality
+    - lautém
+    - lautém municipality
+  category: MUNICIPALITY

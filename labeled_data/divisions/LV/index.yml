@@ -1,0 +1,118 @@
+name: Latvia
+type: Division-0
+meta:
+  alpha2: LV
+  includes:
+    - Latvia
+    - LV
+    - '428'
+    - the Republic of Latvia
+    - 拉脱维亚
+  name_full: the Republic of Latvia
+  name_zh: 拉脱维亚
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 36586
+    - year: 2020
+      quarter: 2
+      count: 39704
+    - year: 2020
+      quarter: 3
+      count: 43039
+    - year: 2020
+      quarter: 4
+      count: 46479
+    - year: 2021
+      quarter: 1
+      count: 50471
+    - year: 2021
+      quarter: 2
+      count: 53481
+    - year: 2021
+      quarter: 3
+      count: 56675
+    - year: 2021
+      quarter: 4
+      count: 60085
+    - year: 2022
+      quarter: 1
+      count: 65977
+    - year: 2022
+      quarter: 2
+      count: 70579
+    - year: 2022
+      quarter: 3
+      count: 74992
+    - year: 2022
+      quarter: 4
+      count: 79775
+    - year: 2023
+      quarter: 1
+      count: 85233
+    - year: 2023
+      quarter: 2
+      count: 90206
+    - year: 2023
+      quarter: 3
+      count: 95951
+    - year: 2023
+      quarter: 4
+      count: 101035
+    - year: 2024
+      quarter: 1
+      count: 108873
+    - year: 2024
+      quarter: 2
+      count: 113073
+    - year: 2024
+      quarter: 3
+      count: 115893
+    - year: 2024
+      quarter: 4
+      count: 122208
+data:
+  labels:
+    - LV-002
+    - LV-007
+    - LV-111
+    - LV-015
+    - LV-016
+    - LV-022
+    - LV-DGV
+    - LV-112
+    - LV-026
+    - LV-033
+    - LV-JEL
+    - LV-041
+    - LV-042
+    - LV-JUR
+    - LV-047
+    - LV-050
+    - LV-LPX
+    - LV-054
+    - LV-058
+    - LV-056
+    - LV-059
+    - LV-062
+    - LV-067
+    - LV-068
+    - LV-073
+    - LV-080
+    - LV-REZ
+    - LV-077
+    - LV-RIX
+    - LV-087
+    - LV-088
+    - LV-089
+    - LV-091
+    - LV-094
+    - LV-097
+    - LV-099
+    - LV-101
+    - LV-113
+    - LV-102
+    - LV-VEN
+    - LV-106
+    - LV-011
+    - LV-052

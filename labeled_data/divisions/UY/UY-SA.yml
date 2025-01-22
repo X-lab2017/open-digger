@@ -1,0 +1,10 @@
+name: Salto
+type: Division-1
+meta:
+  alpha2: UY-SA
+  includes:
+    - salto
+    - uy-sa
+    - sa
+    - salto department
+  category: DEPARTMENT

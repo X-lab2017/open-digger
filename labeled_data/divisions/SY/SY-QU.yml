@@ -1,0 +1,10 @@
+name: Al Qunayţirah
+type: Division-1
+meta:
+  alpha2: SY-QU
+  includes:
+    - al qunayţirah
+    - sy-qu
+    - qu
+    - al qunayţirah province
+  category: PROVINCE

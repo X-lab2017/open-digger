@@ -1,0 +1,10 @@
+name: Ebonyi
+type: Division-1
+meta:
+  alpha2: NG-EB
+  includes:
+    - ebonyi
+    - ng-eb
+    - eb
+    - ebonyi state
+  category: STATE

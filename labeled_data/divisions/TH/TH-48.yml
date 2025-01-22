@@ -1,0 +1,11 @@
+name: Nakhon Phanom
+type: Division-1
+meta:
+  alpha2: TH-48
+  includes:
+    - nakhon phanom
+    - th-48
+    - '48'
+    - nakhon phanom province
+    - chang wat nakhon phanom
+  category: PROVINCE

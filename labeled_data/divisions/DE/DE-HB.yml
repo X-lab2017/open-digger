@@ -1,0 +1,10 @@
+name: Bremen
+type: Division-1
+meta:
+  alpha2: DE-HB
+  includes:
+    - bremen
+    - de-hb
+    - hb
+    - bremen land
+  category: LAND

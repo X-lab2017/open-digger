@@ -1,0 +1,10 @@
+name: Garissa
+type: Division-1
+meta:
+  alpha2: KE-07
+  includes:
+    - garissa
+    - ke-07
+    - '07'
+    - garissa county
+  category: COUNTY

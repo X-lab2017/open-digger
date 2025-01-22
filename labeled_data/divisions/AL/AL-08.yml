@@ -1,0 +1,10 @@
+name: Lezhë
+type: Division-1
+meta:
+  alpha2: AL-08
+  includes:
+    - lezhë
+    - al-08
+    - '08'
+    - lezhë county
+  category: COUNTY

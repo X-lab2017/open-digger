@@ -1,0 +1,13 @@
+name: Addu City
+type: Division-1
+meta:
+  alpha2: MV-01
+  includes:
+    - addu
+    - mv-01
+    - '01'
+    - addu city
+    - seenu
+    - seenu city
+    - addu city city
+  category: CITY

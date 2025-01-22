@@ -1,0 +1,96 @@
+name: Korea, Republic of
+type: Division-0
+meta:
+  alpha2: KR
+  includes:
+    - Korea, Republic of
+    - KR
+    - '410'
+    - the Republic of Korea
+    - 韩国
+    - South Korea
+    - Dokdo / Takeshima
+    - Republic of Korea
+  name_full: the Republic of Korea
+  name_zh: 韩国
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 761690
+    - year: 2020
+      quarter: 2
+      count: 833824
+    - year: 2020
+      quarter: 3
+      count: 910910
+    - year: 2020
+      quarter: 4
+      count: 985950
+    - year: 2021
+      quarter: 1
+      count: 1075499
+    - year: 2021
+      quarter: 2
+      count: 1158902
+    - year: 2021
+      quarter: 3
+      count: 1240831
+    - year: 2021
+      quarter: 4
+      count: 1310102
+    - year: 2022
+      quarter: 1
+      count: 1394160
+    - year: 2022
+      quarter: 2
+      count: 1475424
+    - year: 2022
+      quarter: 3
+      count: 1555925
+    - year: 2022
+      quarter: 4
+      count: 1629354
+    - year: 2023
+      quarter: 1
+      count: 1725705
+    - year: 2023
+      quarter: 2
+      count: 1824580
+    - year: 2023
+      quarter: 3
+      count: 1907931
+    - year: 2023
+      quarter: 4
+      count: 1983247
+    - year: 2024
+      quarter: 1
+      count: 2088024
+    - year: 2024
+      quarter: 2
+      count: 2172022
+    - year: 2024
+      quarter: 3
+      count: 2253387
+    - year: 2024
+      quarter: 4
+      count: 2330502
+data:
+  labels:
+    - KR-26
+    - KR-43
+    - KR-44
+    - KR-27
+    - KR-30
+    - KR-42
+    - KR-29
+    - KR-41
+    - KR-47
+    - KR-48
+    - KR-28
+    - KR-49
+    - KR-45
+    - KR-46
+    - KR-50
+    - KR-11
+    - KR-31
+    - ':companies/samsung'

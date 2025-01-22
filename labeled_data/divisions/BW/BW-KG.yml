@@ -1,0 +1,10 @@
+name: Kgalagadi
+type: Division-1
+meta:
+  alpha2: BW-KG
+  includes:
+    - kgalagadi
+    - bw-kg
+    - kg
+    - kgalagadi district
+  category: DISTRICT

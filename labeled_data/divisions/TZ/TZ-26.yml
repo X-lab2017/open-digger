@@ -1,0 +1,11 @@
+name: Manyara
+type: Division-1
+meta:
+  alpha2: TZ-26
+  includes:
+    - manyara
+    - tz-26
+    - '26'
+    - manyara region
+    - mkoa wa simiyu
+  category: REGION

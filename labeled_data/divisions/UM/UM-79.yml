@@ -1,0 +1,10 @@
+name: Wake Island
+type: Division-1
+meta:
+  alpha2: UM-79
+  includes:
+    - wake island
+    - um-79
+    - '79'
+    - wake island islands, groups of islands
+  category: ISLANDS, GROUPS OF ISLANDS

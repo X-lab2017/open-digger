@@ -1,0 +1,15 @@
+name: Ryazanskaya oblast'
+type: Division-1
+meta:
+  alpha2: RU-RYA
+  includes:
+    - rjazanskaja oblast'
+    - ru-rya
+    - rya
+    - rjazanskaja oblast' administrative region
+    - ryazanskaya oblast'
+    - ryazanskaya oblast' administrative region
+    - ryazan oblast
+    - ryazan'
+    - ryazan’
+  category: ADMINISTRATIVE REGION

@@ -1,0 +1,12 @@
+name: Lovech
+type: Division-1
+meta:
+  alpha2: BG-11
+  includes:
+    - lovech
+    - bg-11
+    - '11'
+    - lovech district
+    - lovech province
+    - lovec
+  category: DISTRICT

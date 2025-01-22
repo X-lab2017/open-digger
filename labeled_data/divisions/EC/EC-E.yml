@@ -1,0 +1,10 @@
+name: Esmeraldas
+type: Division-1
+meta:
+  alpha2: EC-E
+  includes:
+    - esmeraldas
+    - ec-e
+    - e
+    - esmeraldas province
+  category: PROVINCE

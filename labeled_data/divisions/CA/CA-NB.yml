@@ -1,0 +1,12 @@
+name: Nouveau-Brunswick
+type: Division-1
+meta:
+  alpha2: CA-NB
+  includes:
+    - new brunswick
+    - ca-nb
+    - nb
+    - new brunswick province
+    - nouveau-brunswick
+    - nouveau-brunswick province
+  category: PROVINCE

@@ -1,0 +1,11 @@
+name: Midtjylland
+type: Division-1
+meta:
+  alpha2: DK-82
+  includes:
+    - midtjylland
+    - dk-82
+    - '82'
+    - midtjylland region
+    - central denmark region
+  category: REGION

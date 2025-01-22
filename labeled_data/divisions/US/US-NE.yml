@@ -1,0 +1,10 @@
+name: Nebraska
+type: Division-1
+meta:
+  alpha2: US-NE
+  includes:
+    - nebraska
+    - us-ne
+    - ne
+    - nebraska state
+  category: STATE

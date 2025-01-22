@@ -1,0 +1,10 @@
+name: Tatabánya
+type: Division-1
+meta:
+  alpha2: HU-TB
+  includes:
+    - tatabánya
+    - hu-tb
+    - tb
+    - tatabánya city with county rights
+  category: CITY WITH COUNTY RIGHTS

@@ -1,0 +1,12 @@
+name: Nana-Mambéré
+type: Division-1
+meta:
+  alpha2: CF-NM
+  includes:
+    - nana-mambéré
+    - cf-nm
+    - nm
+    - nana-mambéré prefecture
+    - nanä-mbaere
+    - nanä-mbaere prefecture
+  category: PREFECTURE

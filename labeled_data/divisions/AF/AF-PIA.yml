@@ -1,0 +1,10 @@
+name: Paktiyā
+type: Division-1
+meta:
+  alpha2: AF-PIA
+  includes:
+    - paktiyā
+    - af-pia
+    - pia
+    - paktiyā province
+  category: PROVINCE

@@ -1,0 +1,41 @@
+name: Rangpur
+type: Division-1
+meta:
+  alpha2: BD-F
+  includes:
+    - dinajpur
+    - bd-14
+    - '14'
+    - dinajpur district
+    - gaibandha
+    - bd-19
+    - '19'
+    - gaibandha district
+    - kurigram
+    - bd-28
+    - '28'
+    - kurigram district
+    - lalmonirhat
+    - bd-32
+    - '32'
+    - lalmonirhat district
+    - nilphamari
+    - bd-46
+    - '46'
+    - nilphamari district
+    - panchagarh
+    - bd-52
+    - '52'
+    - panchagarh district
+    - rangpur
+    - bd-f
+    - f
+    - rangpur division
+    - bd-55
+    - '55'
+    - rangpur district
+    - thakurgaon
+    - bd-64
+    - '64'
+    - thakurgaon district
+  category: DIVISION

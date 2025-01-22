@@ -1,0 +1,12 @@
+name: Jelgavas novads
+type: Division-1
+meta:
+  alpha2: LV-041
+  includes:
+    - jelgavas novads
+    - lv-041
+    - '041'
+    - jelgavas novads municipality
+    - jelgava
+    - jelgava municipality
+  category: MUNICIPALITY

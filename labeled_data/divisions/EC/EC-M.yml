@@ -1,0 +1,10 @@
+name: Manabí
+type: Division-1
+meta:
+  alpha2: EC-M
+  includes:
+    - manabí
+    - ec-m
+    - m
+    - manabí province
+  category: PROVINCE

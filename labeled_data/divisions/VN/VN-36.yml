@@ -1,0 +1,11 @@
+name: Ninh Thuận
+type: Division-1
+meta:
+  alpha2: VN-36
+  includes:
+    - ninh thuận
+    - vn-36
+    - '36'
+    - ninh thuận province
+    - ninh thuan
+  category: PROVINCE

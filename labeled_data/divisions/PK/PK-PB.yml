@@ -1,0 +1,13 @@
+name: Punjab
+type: Division-1
+meta:
+  alpha2: PK-PB
+  includes:
+    - panjāb
+    - pk-pb
+    - pb
+    - panjāb province
+    - punjab
+    - punjab province
+    - پنجاب
+  category: PROVINCE

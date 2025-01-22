@@ -1,0 +1,10 @@
+name: Mila
+type: Division-1
+meta:
+  alpha2: DZ-43
+  includes:
+    - mila
+    - dz-43
+    - '43'
+    - mila province
+  category: PROVINCE

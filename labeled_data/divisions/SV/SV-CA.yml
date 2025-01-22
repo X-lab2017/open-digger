@@ -1,0 +1,10 @@
+name: Cabañas
+type: Division-1
+meta:
+  alpha2: SV-CA
+  includes:
+    - cabañas
+    - sv-ca
+    - ca
+    - cabañas department
+  category: DEPARTMENT

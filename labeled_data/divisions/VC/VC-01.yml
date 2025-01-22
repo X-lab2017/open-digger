@@ -1,0 +1,10 @@
+name: Charlotte
+type: Division-1
+meta:
+  alpha2: VC-01
+  includes:
+    - charlotte
+    - vc-01
+    - '01'
+    - charlotte parish
+  category: PARISH

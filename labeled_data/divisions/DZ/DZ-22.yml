@@ -1,0 +1,10 @@
+name: Sidi Bel Abbès
+type: Division-1
+meta:
+  alpha2: DZ-22
+  includes:
+    - sidi bel abbès
+    - dz-22
+    - '22'
+    - sidi bel abbès province
+  category: PROVINCE

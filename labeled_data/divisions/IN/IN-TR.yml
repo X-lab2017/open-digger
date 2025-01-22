@@ -1,0 +1,10 @@
+name: Tripura
+type: Division-1
+meta:
+  alpha2: IN-TR
+  includes:
+    - tripura
+    - in-tr
+    - tr
+    - tripura state
+  category: STATE

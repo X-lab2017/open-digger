@@ -1,0 +1,92 @@
+name: Monaco
+type: Division-0
+meta:
+  alpha2: MC
+  includes:
+    - Monaco
+    - MC
+    - '492'
+    - the Principality of Monaco
+    - 摩纳哥
+  name_full: the Principality of Monaco
+  name_zh: 摩纳哥
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 767
+    - year: 2020
+      quarter: 2
+      count: 757
+    - year: 2020
+      quarter: 3
+      count: 820
+    - year: 2020
+      quarter: 4
+      count: 884
+    - year: 2021
+      quarter: 1
+      count: 934
+    - year: 2021
+      quarter: 2
+      count: 958
+    - year: 2021
+      quarter: 3
+      count: 1020
+    - year: 2021
+      quarter: 4
+      count: 1065
+    - year: 2022
+      quarter: 1
+      count: 1111
+    - year: 2022
+      quarter: 2
+      count: 1222
+    - year: 2022
+      quarter: 3
+      count: 1275
+    - year: 2022
+      quarter: 4
+      count: 1363
+    - year: 2023
+      quarter: 1
+      count: 1497
+    - year: 2023
+      quarter: 2
+      count: 1661
+    - year: 2023
+      quarter: 3
+      count: 1697
+    - year: 2023
+      quarter: 4
+      count: 1803
+    - year: 2024
+      quarter: 1
+      count: 2006
+    - year: 2024
+      quarter: 2
+      count: 2041
+    - year: 2024
+      quarter: 3
+      count: 2069
+    - year: 2024
+      quarter: 4
+      count: 2350
+data:
+  labels:
+    - MC-FO
+    - MC-JE
+    - MC-CL
+    - MC-CO
+    - MC-GA
+    - MC-SO
+    - MC-LA
+    - MC-MA
+    - MC-MO
+    - MC-MG
+    - MC-MC
+    - MC-MU
+    - MC-PH
+    - MC-SR
+    - MC-SD
+    - MC-SP
+    - MC-VR

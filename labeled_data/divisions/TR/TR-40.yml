@@ -1,0 +1,10 @@
+name: Kırşehir
+type: Division-1
+meta:
+  alpha2: TR-40
+  includes:
+    - kırşehir
+    - tr-40
+    - '40'
+    - kırşehir province
+  category: PROVINCE

@@ -1,0 +1,10 @@
+name: Manitoba
+type: Division-1
+meta:
+  alpha2: CA-MB
+  includes:
+    - manitoba
+    - ca-mb
+    - mb
+    - manitoba province
+  category: PROVINCE

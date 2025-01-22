@@ -1,0 +1,12 @@
+name: Nakhon Ratchasima
+type: Division-1
+meta:
+  alpha2: TH-30
+  includes:
+    - nakhon ratchasima
+    - th-30
+    - '30'
+    - nakhon ratchasima province
+    - chang wat nakhon ratchasima
+    - นครราชสีมา
+  category: PROVINCE

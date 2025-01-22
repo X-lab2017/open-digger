@@ -1,0 +1,10 @@
+name: Veržej
+type: Division-1
+meta:
+  alpha2: SI-188
+  includes:
+    - veržej
+    - si-188
+    - '188'
+    - veržej municipality
+  category: MUNICIPALITY

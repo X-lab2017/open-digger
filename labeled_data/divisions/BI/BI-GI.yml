@@ -1,0 +1,10 @@
+name: Gitega
+type: Division-1
+meta:
+  alpha2: BI-GI
+  includes:
+    - gitega
+    - bi-gi
+    - gi
+    - gitega province
+  category: PROVINCE

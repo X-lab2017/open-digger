@@ -1,0 +1,16 @@
+name: Takêv
+type: Division-1
+meta:
+  alpha2: KH-21
+  includes:
+    - taakaev
+    - kh-21
+    - '21'
+    - taakaev province
+    - takeo
+    - takeo province
+    - takêv
+    - takêv province
+    - takéo province
+    - takev
+  category: PROVINCE

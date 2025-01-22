@@ -1,0 +1,16 @@
+name: Žambylskaja oblast'
+type: Division-1
+meta:
+  alpha2: KZ-31
+  includes:
+    - zhambyl oblysy
+    - kz-31
+    - '31'
+    - zhambyl oblysy region
+    - zhambylskaya oblast'
+    - zhambylskaya oblast' region
+    - žambylskaja oblast'
+    - žambylskaja oblast' region
+    - жамбыл облысы
+    - jambyl region
+  category: REGION

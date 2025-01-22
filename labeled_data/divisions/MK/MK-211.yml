@@ -1,0 +1,11 @@
+name: Štip
+type: Division-1
+meta:
+  alpha2: MK-211
+  includes:
+    - štip
+    - mk-211
+    - '211'
+    - štip municipality
+    - municipality of štip
+  category: MUNICIPALITY

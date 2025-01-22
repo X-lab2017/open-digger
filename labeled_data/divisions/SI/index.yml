@@ -1,0 +1,287 @@
+name: Slovenia
+type: Division-0
+meta:
+  alpha2: SI
+  includes:
+    - Slovenia
+    - SI
+    - '705'
+    - the Republic of Slovenia
+    - 斯洛文尼亚
+  name_full: the Republic of Slovenia
+  name_zh: 斯洛文尼亚
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 38214
+    - year: 2020
+      quarter: 2
+      count: 40710
+    - year: 2020
+      quarter: 3
+      count: 42549
+    - year: 2020
+      quarter: 4
+      count: 45506
+    - year: 2021
+      quarter: 1
+      count: 47992
+    - year: 2021
+      quarter: 2
+      count: 50093
+    - year: 2021
+      quarter: 3
+      count: 51881
+    - year: 2021
+      quarter: 4
+      count: 54561
+    - year: 2022
+      quarter: 1
+      count: 58230
+    - year: 2022
+      quarter: 2
+      count: 60983
+    - year: 2022
+      quarter: 3
+      count: 62948
+    - year: 2022
+      quarter: 4
+      count: 65814
+    - year: 2023
+      quarter: 1
+      count: 68774
+    - year: 2023
+      quarter: 2
+      count: 72020
+    - year: 2023
+      quarter: 3
+      count: 74300
+    - year: 2023
+      quarter: 4
+      count: 77396
+    - year: 2024
+      quarter: 1
+      count: 80949
+    - year: 2024
+      quarter: 2
+      count: 83423
+    - year: 2024
+      quarter: 3
+      count: 85725
+    - year: 2024
+      quarter: 4
+      count: 89466
+data:
+  labels:
+    - SI-001
+    - SI-213
+    - SI-195
+    - SI-002
+    - SI-148
+    - SI-149
+    - SI-003
+    - SI-150
+    - SI-004
+    - SI-005
+    - SI-006
+    - SI-151
+    - SI-007
+    - SI-008
+    - SI-009
+    - SI-152
+    - SI-011
+    - SI-012
+    - SI-013
+    - SI-014
+    - SI-153
+    - SI-196
+    - SI-018
+    - SI-019
+    - SI-154
+    - SI-020
+    - SI-155
+    - SI-021
+    - SI-156
+    - SI-022
+    - SI-157
+    - SI-023
+    - SI-024
+    - SI-025
+    - SI-026
+    - SI-027
+    - SI-028
+    - SI-207
+    - SI-029
+    - SI-030
+    - SI-031
+    - SI-158
+    - SI-032
+    - SI-159
+    - SI-161
+    - SI-162
+    - SI-160
+    - SI-034
+    - SI-035
+    - SI-036
+    - SI-037
+    - SI-038
+    - SI-039
+    - SI-040
+    - SI-041
+    - SI-163
+    - SI-042
+    - SI-043
+    - SI-044
+    - SI-045
+    - SI-046
+    - SI-047
+    - SI-049
+    - SI-164
+    - SI-050
+    - SI-197
+    - SI-165
+    - SI-051
+    - SI-048
+    - SI-052
+    - SI-053
+    - SI-166
+    - SI-054
+    - SI-055
+    - SI-056
+    - SI-057
+    - SI-058
+    - SI-059
+    - SI-060
+    - SI-061
+    - SI-062
+    - SI-063
+    - SI-208
+    - SI-064
+    - SI-167
+    - SI-065
+    - SI-066
+    - SI-068
+    - SI-067
+    - SI-069
+    - SI-198
+    - SI-070
+    - SI-168
+    - SI-071
+    - SI-072
+    - SI-073
+    - SI-074
+    - SI-169
+    - SI-075
+    - SI-212
+    - SI-170
+    - SI-076
+    - SI-199
+    - SI-078
+    - SI-077
+    - SI-079
+    - SI-080
+    - SI-081
+    - SI-082
+    - SI-083
+    - SI-084
+    - SI-085
+    - SI-086
+    - SI-171
+    - SI-087
+    - SI-088
+    - SI-089
+    - SI-090
+    - SI-091
+    - SI-172
+    - SI-093
+    - SI-092
+    - SI-200
+    - SI-173
+    - SI-094
+    - SI-174
+    - SI-095
+    - SI-175
+    - SI-096
+    - SI-097
+    - SI-100
+    - SI-099
+    - SI-101
+    - SI-102
+    - SI-103
+    - SI-176
+    - SI-098
+    - SI-201
+    - SI-209
+    - SI-104
+    - SI-177
+    - SI-107
+    - SI-106
+    - SI-105
+    - SI-108
+    - SI-178
+    - SI-109
+    - SI-110
+    - SI-111
+    - SI-112
+    - SI-113
+    - SI-114
+    - SI-179
+    - SI-180
+    - SI-202
+    - SI-115
+    - SI-203
+    - SI-181
+    - SI-204
+    - SI-182
+    - SI-116
+    - SI-210
+    - SI-205
+    - SI-184
+    - SI-010
+    - SI-128
+    - SI-129
+    - SI-130
+    - SI-185
+    - SI-186
+    - SI-131
+    - SI-132
+    - SI-133
+    - SI-187
+    - SI-134
+    - SI-188
+    - SI-135
+    - SI-136
+    - SI-137
+    - SI-138
+    - SI-139
+    - SI-189
+    - SI-140
+    - SI-141
+    - SI-142
+    - SI-143
+    - SI-144
+    - SI-015
+    - SI-016
+    - SI-017
+    - SI-033
+    - SI-183
+    - SI-118
+    - SI-119
+    - SI-120
+    - SI-211
+    - SI-117
+    - SI-121
+    - SI-122
+    - SI-123
+    - SI-124
+    - SI-206
+    - SI-125
+    - SI-194
+    - SI-126
+    - SI-127
+    - SI-190
+    - SI-146
+    - SI-191
+    - SI-147
+    - SI-192
+    - SI-193

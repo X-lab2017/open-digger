@@ -1,0 +1,11 @@
+name: Govĭ-Altay
+type: Division-1
+meta:
+  alpha2: MN-065
+  includes:
+    - govĭ-altay
+    - mn-065
+    - '065'
+    - govĭ-altay province
+    - govi-altai
+  category: PROVINCE

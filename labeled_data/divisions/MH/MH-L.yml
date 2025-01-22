@@ -1,0 +1,89 @@
+name: Ralik chain
+type: Division-1
+meta:
+  alpha2: MH-L
+  includes:
+    - aelōn̄ḷapḷap
+    - mh-all
+    - all
+    - aelōn̄ḷapḷap municipality
+    - ailinglaplap
+    - ailinglaplap municipality
+    - bikini & kili
+    - mh-kil
+    - kil
+    - bikini & kili municipality
+    - ebon
+    - mh-ebo
+    - ebo
+    - ebon municipality
+    - ellep
+    - mh-lib
+    - lib
+    - ellep municipality
+    - enewetak & ujelang
+    - mh-eni
+    - eni
+    - enewetak & ujelang municipality
+    - epoon
+    - epoon municipality
+    - jabat
+    - mh-jab
+    - jab
+    - jabat municipality
+    - jaluit
+    - mh-jal
+    - jal
+    - jaluit municipality
+    - jebat
+    - jebat municipality
+    - jālwōj
+    - jālwōj municipality
+    - kuwajleen
+    - mh-kwa
+    - kwa
+    - kuwajleen municipality
+    - kwajalein
+    - kwajalein municipality
+    - lae
+    - mh-lae
+    - lae municipality
+    - lib municipality
+    - namdrik
+    - mh-nmk
+    - nmk
+    - namdrik municipality
+    - namu
+    - mh-nmu
+    - nmu
+    - namu municipality
+    - naṃdik
+    - naṃdik municipality
+    - naṃo
+    - naṃo municipality
+    - pikinni & kōle
+    - pikinni & kōle municipality
+    - ralik chain
+    - mh-l
+    - l
+    - ralik chain chain (of islands)
+    - rongelap
+    - mh-ron
+    - ron
+    - rongelap municipality
+    - ron̄ḷap
+    - ron̄ḷap municipality
+    - ujae
+    - mh-uja
+    - uja
+    - ujae municipality
+    - wotho
+    - mh-wth
+    - wth
+    - wotho municipality
+    - wōtto
+    - wōtto municipality
+    - ānewetak & wūjlan̄
+    - ānewetak & wūjlan̄ municipality
+    - kili
+  category: CHAIN (OF ISLANDS)

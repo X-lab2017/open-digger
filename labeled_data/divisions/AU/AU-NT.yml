@@ -1,0 +1,10 @@
+name: Northern Territory
+type: Division-1
+meta:
+  alpha2: AU-NT
+  includes:
+    - northern territory
+    - au-nt
+    - nt
+    - northern territory territory
+  category: TERRITORY

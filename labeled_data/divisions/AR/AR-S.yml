@@ -1,0 +1,11 @@
+name: Santa Fe
+type: Division-1
+meta:
+  alpha2: AR-S
+  includes:
+    - santa fe
+    - ar-s
+    - s
+    - santa fe province
+    - sf
+  category: PROVINCE

@@ -1,0 +1,11 @@
+name: Dzavhan
+type: Division-1
+meta:
+  alpha2: MN-057
+  includes:
+    - dzavhan
+    - mn-057
+    - '057'
+    - dzavhan province
+    - zavkhan province
+  category: PROVINCE

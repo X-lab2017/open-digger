@@ -1,0 +1,11 @@
+name: Surin
+type: Division-1
+meta:
+  alpha2: TH-32
+  includes:
+    - surin
+    - th-32
+    - '32'
+    - surin province
+    - chang wat surin
+  category: PROVINCE

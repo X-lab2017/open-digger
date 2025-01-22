@@ -1,0 +1,73 @@
+name: Virgin Islands (British)
+type: Division-0
+meta:
+  alpha2: VG
+  includes:
+    - Virgin Islands (British)
+    - VG
+    - '092'
+    - British Virgin Islands
+    - 英属维尔京群岛
+  name_full: British Virgin Islands
+  name_zh: 英属维尔京群岛
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 189
+    - year: 2020
+      quarter: 2
+      count: 270
+    - year: 2020
+      quarter: 3
+      count: 273
+    - year: 2020
+      quarter: 4
+      count: 283
+    - year: 2021
+      quarter: 1
+      count: 305
+    - year: 2021
+      quarter: 2
+      count: 337
+    - year: 2021
+      quarter: 3
+      count: 355
+    - year: 2021
+      quarter: 4
+      count: 382
+    - year: 2022
+      quarter: 1
+      count: 406
+    - year: 2022
+      quarter: 2
+      count: 412
+    - year: 2022
+      quarter: 3
+      count: 413
+    - year: 2022
+      quarter: 4
+      count: 450
+    - year: 2023
+      quarter: 1
+      count: 547
+    - year: 2023
+      quarter: 2
+      count: 570
+    - year: 2023
+      quarter: 3
+      count: 584
+    - year: 2023
+      quarter: 4
+      count: 629
+    - year: 2024
+      quarter: 1
+      count: 663
+    - year: 2024
+      quarter: 2
+      count: 661
+    - year: 2024
+      quarter: 3
+      count: 683
+    - year: 2024
+      quarter: 4
+      count: 787

@@ -1,0 +1,11 @@
+name: Kommuneqarfik Sermersooq
+type: Division-1
+meta:
+  alpha2: GL-SM
+  includes:
+    - kommuneqarfik sermersooq
+    - gl-sm
+    - sm
+    - kommuneqarfik sermersooq municipality
+    - sermersooq municipality
+  category: MUNICIPALITY

@@ -1,0 +1,12 @@
+name: Wiltz
+type: Division-1
+meta:
+  alpha2: LU-WI
+  includes:
+    - wiltz
+    - lu-wi
+    - wi
+    - wiltz canton
+    - wolz
+    - wolz canton
+  category: CANTON

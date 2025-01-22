@@ -1,0 +1,11 @@
+name: Demir Hisar
+type: Division-1
+meta:
+  alpha2: MK-502
+  includes:
+    - demir hisar
+    - mk-502
+    - '502'
+    - demir hisar municipality
+    - municipality of demir hisar
+  category: MUNICIPALITY

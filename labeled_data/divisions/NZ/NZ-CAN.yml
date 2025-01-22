@@ -1,0 +1,12 @@
+name: Canterbury
+type: Division-1
+meta:
+  alpha2: NZ-CAN
+  includes:
+    - canterbury
+    - nz-can
+    - can
+    - canterbury region
+    - waitaha
+    - waitaha region
+  category: REGION

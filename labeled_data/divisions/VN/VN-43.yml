@@ -1,0 +1,12 @@
+name: Bà Rịa - Vũng Tàu
+type: Division-1
+meta:
+  alpha2: VN-43
+  includes:
+    - bà rịa - vũng tàu
+    - vn-43
+    - '43'
+    - bà rịa - vũng tàu province
+    - ba ria - vung tau
+    - ba ria-vung tau
+  category: PROVINCE

@@ -1,0 +1,10 @@
+name: Amambay
+type: Division-1
+meta:
+  alpha2: PY-13
+  includes:
+    - amambay
+    - py-13
+    - '13'
+    - amambay department
+  category: DEPARTMENT

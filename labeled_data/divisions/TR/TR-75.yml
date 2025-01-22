@@ -1,0 +1,10 @@
+name: Ardahan
+type: Division-1
+meta:
+  alpha2: TR-75
+  includes:
+    - ardahan
+    - tr-75
+    - '75'
+    - ardahan province
+  category: PROVINCE

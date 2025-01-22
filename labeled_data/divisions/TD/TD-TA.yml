@@ -1,0 +1,12 @@
+name: Tānjīlī
+type: Division-1
+meta:
+  alpha2: TD-TA
+  includes:
+    - tandjilé
+    - td-ta
+    - ta
+    - tandjilé province
+    - tānjīlī
+    - tānjīlī province
+  category: PROVINCE

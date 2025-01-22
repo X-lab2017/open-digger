@@ -1,0 +1,10 @@
+name: Western
+type: Division-1
+meta:
+  alpha2: GM-W
+  includes:
+    - western
+    - gm-w
+    - w
+    - western division
+  category: DIVISION

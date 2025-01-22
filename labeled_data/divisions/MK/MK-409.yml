@@ -1,0 +1,11 @@
+name: Radoviš
+type: Division-1
+meta:
+  alpha2: MK-409
+  includes:
+    - radoviš
+    - mk-409
+    - '409'
+    - radoviš municipality
+    - municipality of radoviš
+  category: MUNICIPALITY

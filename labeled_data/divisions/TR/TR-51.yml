@@ -1,0 +1,10 @@
+name: Niğde
+type: Division-1
+meta:
+  alpha2: TR-51
+  includes:
+    - niğde
+    - tr-51
+    - '51'
+    - niğde province
+  category: PROVINCE

@@ -1,0 +1,12 @@
+name: Sizuoka
+type: Division-1
+meta:
+  alpha2: JP-22
+  includes:
+    - shizuoka
+    - jp-22
+    - '22'
+    - shizuoka prefecture
+    - sizuoka
+    - sizuoka prefecture
+  category: PREFECTURE

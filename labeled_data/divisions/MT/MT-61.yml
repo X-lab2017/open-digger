@@ -1,0 +1,10 @@
+name: Xagħra
+type: Division-1
+meta:
+  alpha2: MT-61
+  includes:
+    - xagħra
+    - mt-61
+    - '61'
+    - xagħra local council
+  category: LOCAL COUNCIL

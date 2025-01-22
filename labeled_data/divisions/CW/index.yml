@@ -1,0 +1,71 @@
+name: Curaçao
+type: Division-0
+meta:
+  alpha2: CW
+  includes:
+    - Curaçao
+    - CW
+    - '531'
+    - Curacao
+    - 库拉索
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 1406
+    - year: 2020
+      quarter: 2
+      count: 1563
+    - year: 2020
+      quarter: 3
+      count: 1652
+    - year: 2020
+      quarter: 4
+      count: 1778
+    - year: 2021
+      quarter: 1
+      count: 1912
+    - year: 2021
+      quarter: 2
+      count: 2020
+    - year: 2021
+      quarter: 3
+      count: 2107
+    - year: 2021
+      quarter: 4
+      count: 2202
+    - year: 2022
+      quarter: 1
+      count: 2337
+    - year: 2022
+      quarter: 2
+      count: 2464
+    - year: 2022
+      quarter: 3
+      count: 2555
+    - year: 2022
+      quarter: 4
+      count: 2668
+    - year: 2023
+      quarter: 1
+      count: 2801
+    - year: 2023
+      quarter: 2
+      count: 2951
+    - year: 2023
+      quarter: 3
+      count: 3048
+    - year: 2023
+      quarter: 4
+      count: 3108
+    - year: 2024
+      quarter: 1
+      count: 3243
+    - year: 2024
+      quarter: 2
+      count: 3358
+    - year: 2024
+      quarter: 3
+      count: 3438
+    - year: 2024
+      quarter: 4
+      count: 3576

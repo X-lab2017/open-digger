@@ -1,0 +1,12 @@
+name: La Libertad
+type: Division-1
+meta:
+  alpha2: PE-LAL
+  includes:
+    - la libertad
+    - pe-lal
+    - lal
+    - la libertad region
+    - qispi kay
+    - qispi kay region
+  category: REGION

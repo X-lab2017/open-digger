@@ -1,0 +1,10 @@
+name: Tərtər
+type: Division-1
+meta:
+  alpha2: AZ-TAR
+  includes:
+    - tərtər
+    - az-tar
+    - tar
+    - tərtər rayon
+  category: RAYON

@@ -1,0 +1,10 @@
+name: Adrar
+type: Division-1
+meta:
+  alpha2: MR-07
+  includes:
+    - adrar
+    - mr-07
+    - '07'
+    - adrar region
+  category: REGION

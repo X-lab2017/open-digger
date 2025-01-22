@@ -1,0 +1,10 @@
+name: Dagana
+type: Division-1
+meta:
+  alpha2: BT-22
+  includes:
+    - dagana
+    - bt-22
+    - '22'
+    - dagana district
+  category: DISTRICT

@@ -1,0 +1,12 @@
+name: Al Madīnah al Munawwarah
+type: Division-1
+meta:
+  alpha2: SA-03
+  includes:
+    - al madīnah al munawwarah
+    - sa-03
+    - '03'
+    - al madīnah al munawwarah region
+    - mam
+    - al madinah province
+  category: REGION

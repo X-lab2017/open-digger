@@ -1,0 +1,10 @@
+name: Cerkvenjak
+type: Division-1
+meta:
+  alpha2: SI-153
+  includes:
+    - cerkvenjak
+    - si-153
+    - '153'
+    - cerkvenjak municipality
+  category: MUNICIPALITY

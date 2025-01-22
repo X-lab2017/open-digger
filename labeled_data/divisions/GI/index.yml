@@ -1,0 +1,72 @@
+name: Gibraltar
+type: Division-0
+meta:
+  alpha2: GI
+  includes:
+    - Gibraltar
+    - GI
+    - '292'
+    - 直布罗陀
+  name_full: Gibraltar
+  name_zh: 直布罗陀
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 813
+    - year: 2020
+      quarter: 2
+      count: 855
+    - year: 2020
+      quarter: 3
+      count: 871
+    - year: 2020
+      quarter: 4
+      count: 903
+    - year: 2021
+      quarter: 1
+      count: 934
+    - year: 2021
+      quarter: 2
+      count: 997
+    - year: 2021
+      quarter: 3
+      count: 1042
+    - year: 2021
+      quarter: 4
+      count: 1099
+    - year: 2022
+      quarter: 1
+      count: 1160
+    - year: 2022
+      quarter: 2
+      count: 1218
+    - year: 2022
+      quarter: 3
+      count: 1277
+    - year: 2022
+      quarter: 4
+      count: 1337
+    - year: 2023
+      quarter: 1
+      count: 1365
+    - year: 2023
+      quarter: 2
+      count: 1430
+    - year: 2023
+      quarter: 3
+      count: 1493
+    - year: 2023
+      quarter: 4
+      count: 1600
+    - year: 2024
+      quarter: 1
+      count: 1655
+    - year: 2024
+      quarter: 2
+      count: 1754
+    - year: 2024
+      quarter: 3
+      count: 1906
+    - year: 2024
+      quarter: 4
+      count: 2097

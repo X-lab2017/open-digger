@@ -1,0 +1,13 @@
+name: Zachodniopomorskie
+type: Division-1
+meta:
+  alpha2: PL-32
+  includes:
+    - zachodniopomorskie
+    - pl-32
+    - '32'
+    - zachodniopomorskie voivodship
+    - west pomeranian voivodeship
+    - województwo zachodniopomorskie
+    - zp
+  category: VOIVODSHIP

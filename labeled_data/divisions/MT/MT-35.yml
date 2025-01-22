@@ -1,0 +1,10 @@
+name: Mtarfa
+type: Division-1
+meta:
+  alpha2: MT-35
+  includes:
+    - mtarfa
+    - mt-35
+    - '35'
+    - mtarfa local council
+  category: LOCAL COUNCIL

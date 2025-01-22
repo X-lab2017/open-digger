@@ -1,0 +1,10 @@
+name: Rutana
+type: Division-1
+meta:
+  alpha2: BI-RT
+  includes:
+    - rutana
+    - bi-rt
+    - rt
+    - rutana province
+  category: PROVINCE

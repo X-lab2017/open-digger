@@ -1,0 +1,10 @@
+name: Ankara
+type: Division-1
+meta:
+  alpha2: TR-06
+  includes:
+    - ankara
+    - tr-06
+    - '06'
+    - ankara province
+  category: PROVINCE

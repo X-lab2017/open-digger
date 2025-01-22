@@ -1,0 +1,10 @@
+name: Preddvor
+type: Division-1
+meta:
+  alpha2: SI-095
+  includes:
+    - preddvor
+    - si-095
+    - '095'
+    - preddvor municipality
+  category: MUNICIPALITY

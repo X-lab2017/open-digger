@@ -1,0 +1,10 @@
+name: Bulgan
+type: Division-1
+meta:
+  alpha2: MN-067
+  includes:
+    - bulgan
+    - mn-067
+    - '067'
+    - bulgan province
+  category: PROVINCE

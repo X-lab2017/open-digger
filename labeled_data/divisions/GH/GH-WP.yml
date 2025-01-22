@@ -1,0 +1,10 @@
+name: Western
+type: Division-1
+meta:
+  alpha2: GH-WP
+  includes:
+    - western
+    - gh-wp
+    - wp
+    - western region
+  category: REGION

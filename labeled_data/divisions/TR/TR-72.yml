@@ -1,0 +1,10 @@
+name: Batman
+type: Division-1
+meta:
+  alpha2: TR-72
+  includes:
+    - batman
+    - tr-72
+    - '72'
+    - batman province
+  category: PROVINCE

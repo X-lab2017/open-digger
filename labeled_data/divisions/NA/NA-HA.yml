@@ -1,0 +1,10 @@
+name: Hardap
+type: Division-1
+meta:
+  alpha2: NA-HA
+  includes:
+    - hardap
+    - na-ha
+    - ha
+    - hardap region
+  category: REGION

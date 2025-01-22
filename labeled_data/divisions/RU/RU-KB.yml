@@ -1,0 +1,14 @@
+name: Kabardino-Balkarskaya Respublika
+type: Division-1
+meta:
+  alpha2: RU-KB
+  includes:
+    - kabardino-balkarskaja respublika
+    - ru-kb
+    - kb
+    - kabardino-balkarskaja respublika republic
+    - kabardino-balkarskaya respublika
+    - kabardino-balkarskaya respublika republic
+    - kabardino-balkaria
+    - kabardino-balkarian republic
+  category: REPUBLIC

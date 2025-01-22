@@ -1,0 +1,10 @@
+name: Aimeliik
+type: Division-1
+meta:
+  alpha2: PW-002
+  includes:
+    - aimeliik
+    - pw-002
+    - '002'
+    - aimeliik state
+  category: STATE

@@ -1,0 +1,10 @@
+name: Isiolo
+type: Division-1
+meta:
+  alpha2: KE-09
+  includes:
+    - isiolo
+    - ke-09
+    - '09'
+    - isiolo county
+  category: COUNTY

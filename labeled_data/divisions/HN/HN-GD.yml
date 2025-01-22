@@ -1,0 +1,10 @@
+name: Gracias a Dios
+type: Division-1
+meta:
+  alpha2: HN-GD
+  includes:
+    - gracias a dios
+    - hn-gd
+    - gd
+    - gracias a dios department
+  category: DEPARTMENT

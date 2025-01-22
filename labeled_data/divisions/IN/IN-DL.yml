@@ -1,0 +1,10 @@
+name: Delhi
+type: Division-1
+meta:
+  alpha2: IN-DL
+  includes:
+    - delhi
+    - in-dl
+    - dl
+    - delhi union territory
+  category: UNION TERRITORY

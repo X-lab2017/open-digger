@@ -1,0 +1,11 @@
+name: Chiapas
+type: Division-1
+meta:
+  alpha2: MX-CHP
+  includes:
+    - chiapas
+    - mx-chp
+    - chp
+    - chiapas state
+    - chis
+  category: STATE

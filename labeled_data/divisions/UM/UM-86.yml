@@ -1,0 +1,10 @@
+name: Jarvis Island
+type: Division-1
+meta:
+  alpha2: UM-86
+  includes:
+    - jarvis island
+    - um-86
+    - '86'
+    - jarvis island islands, groups of islands
+  category: ISLANDS, GROUPS OF ISLANDS

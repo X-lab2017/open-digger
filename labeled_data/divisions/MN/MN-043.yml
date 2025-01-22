@@ -1,0 +1,10 @@
+name: Hovd
+type: Division-1
+meta:
+  alpha2: MN-043
+  includes:
+    - hovd
+    - mn-043
+    - '043'
+    - hovd province
+  category: PROVINCE

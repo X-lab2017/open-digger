@@ -1,0 +1,10 @@
+name: Nan
+type: Division-1
+meta:
+  alpha2: TH-55
+  includes:
+    - nan
+    - th-55
+    - '55'
+    - nan province
+  category: PROVINCE

@@ -1,0 +1,13 @@
+name: Apurímac
+type: Division-1
+meta:
+  alpha2: PE-APU
+  includes:
+    - apurimaq
+    - pe-apu
+    - apu
+    - apurimaq region
+    - apurímac
+    - apurímac region
+    - apurimac
+  category: REGION

@@ -1,0 +1,10 @@
+name: Bled
+type: Division-1
+meta:
+  alpha2: SI-003
+  includes:
+    - bled
+    - si-003
+    - '003'
+    - bled municipality
+  category: MUNICIPALITY

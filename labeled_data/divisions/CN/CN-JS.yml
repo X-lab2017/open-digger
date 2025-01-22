@@ -1,0 +1,13 @@
+name: Jiangsu Sheng
+type: Division-1
+meta:
+  alpha2: CN-JS
+  includes:
+    - jiangsu sheng
+    - cn-js
+    - js
+    - jiangsu sheng province
+    - jiang su sheng
+    - jiangsu
+    - 江苏省
+  category: PROVINCE

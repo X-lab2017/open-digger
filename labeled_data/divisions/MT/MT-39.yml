@@ -1,0 +1,10 @@
+name: Paola
+type: Division-1
+meta:
+  alpha2: MT-39
+  includes:
+    - paola
+    - mt-39
+    - '39'
+    - paola local council
+  category: LOCAL COUNCIL

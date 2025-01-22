@@ -1,0 +1,10 @@
+name: Asunción
+type: Division-1
+meta:
+  alpha2: PY-ASU
+  includes:
+    - asunción
+    - py-asu
+    - asu
+    - asunción capital
+  category: CAPITAL

@@ -1,0 +1,11 @@
+name: Durango
+type: Division-1
+meta:
+  alpha2: MX-DUR
+  includes:
+    - durango
+    - mx-dur
+    - dur
+    - durango state
+    - dgo
+  category: STATE

@@ -1,0 +1,10 @@
+name: Zaghouan
+type: Division-1
+meta:
+  alpha2: TN-22
+  includes:
+    - zaghouan
+    - tn-22
+    - '22'
+    - zaghouan governorate
+  category: GOVERNORATE

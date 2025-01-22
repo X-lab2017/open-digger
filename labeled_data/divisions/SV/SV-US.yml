@@ -1,0 +1,11 @@
+name: Usulután
+type: Division-1
+meta:
+  alpha2: SV-US
+  includes:
+    - usulután
+    - sv-us
+    - us
+    - usulután department
+    - svus
+  category: DEPARTMENT

@@ -1,0 +1,11 @@
+name: Al Buraymī
+type: Division-1
+meta:
+  alpha2: OM-BU
+  includes:
+    - al buraymī
+    - om-bu
+    - bu
+    - al buraymī governorate
+    - al buraymi governorate
+  category: GOVERNORATE

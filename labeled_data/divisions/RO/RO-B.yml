@@ -1,0 +1,11 @@
+name: București
+type: Division-1
+meta:
+  alpha2: RO-B
+  includes:
+    - bucurești
+    - ro-b
+    - b
+    - bucurești municipality
+    - bucharest
+  category: MUNICIPALITY

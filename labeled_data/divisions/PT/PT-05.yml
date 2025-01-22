@@ -1,0 +1,10 @@
+name: Castelo Branco
+type: Division-1
+meta:
+  alpha2: PT-05
+  includes:
+    - castelo branco
+    - pt-05
+    - '05'
+    - castelo branco district
+  category: DISTRICT

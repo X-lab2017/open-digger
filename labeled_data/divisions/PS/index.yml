@@ -1,0 +1,94 @@
+name: Palestine, State of
+type: Division-0
+meta:
+  alpha2: PS
+  includes:
+    - Palestine, State of
+    - PS
+    - '275'
+    - the Occupied Palestinian Territory
+    - 巴勒斯坦
+    - West Bank
+    - Palestine
+    - Gaza Strip
+  name_full: the Occupied Palestinian Territory
+  name_zh: 巴勒斯坦
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 26794
+    - year: 2020
+      quarter: 2
+      count: 28952
+    - year: 2020
+      quarter: 3
+      count: 31018
+    - year: 2020
+      quarter: 4
+      count: 33695
+    - year: 2021
+      quarter: 1
+      count: 36469
+    - year: 2021
+      quarter: 2
+      count: 38870
+    - year: 2021
+      quarter: 3
+      count: 41627
+    - year: 2021
+      quarter: 4
+      count: 45008
+    - year: 2022
+      quarter: 1
+      count: 47974
+    - year: 2022
+      quarter: 2
+      count: 51154
+    - year: 2022
+      quarter: 3
+      count: 54233
+    - year: 2022
+      quarter: 4
+      count: 57692
+    - year: 2023
+      quarter: 1
+      count: 61158
+    - year: 2023
+      quarter: 2
+      count: 65493
+    - year: 2023
+      quarter: 3
+      count: 70097
+    - year: 2023
+      quarter: 4
+      count: 72323
+    - year: 2024
+      quarter: 1
+      count: 74416
+    - year: 2024
+      quarter: 2
+      count: 75862
+    - year: 2024
+      quarter: 3
+      count: 77821
+    - year: 2024
+      quarter: 4
+      count: 81151
+data:
+  labels:
+    - PS-HBN
+    - PS-JEM
+    - PS-JRH
+    - PS-BTH
+    - PS-DEB
+    - PS-GZA
+    - PS-JEN
+    - PS-KYS
+    - PS-NBS
+    - PS-NGZ
+    - PS-QQA
+    - PS-RFH
+    - PS-RBH
+    - PS-SLT
+    - PS-TBS
+    - PS-TKM

@@ -1,0 +1,10 @@
+name: Mingəçevir
+type: Division-1
+meta:
+  alpha2: AZ-MI
+  includes:
+    - mingəçevir
+    - az-mi
+    - mi
+    - mingəçevir municipality
+  category: MUNICIPALITY

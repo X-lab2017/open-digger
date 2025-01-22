@@ -1,0 +1,10 @@
+name: Hatay
+type: Division-1
+meta:
+  alpha2: TR-31
+  includes:
+    - hatay
+    - tr-31
+    - '31'
+    - hatay province
+  category: PROVINCE

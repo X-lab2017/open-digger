@@ -1,0 +1,10 @@
+name: Satun
+type: Division-1
+meta:
+  alpha2: TH-91
+  includes:
+    - satun
+    - th-91
+    - '91'
+    - satun province
+  category: PROVINCE

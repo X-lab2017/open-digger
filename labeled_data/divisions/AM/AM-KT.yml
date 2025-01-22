@@ -1,0 +1,11 @@
+name: Kotayk'
+type: Division-1
+meta:
+  alpha2: AM-KT
+  includes:
+    - kotayk'
+    - am-kt
+    - kt
+    - kotayk' region
+    - kotayk province
+  category: REGION

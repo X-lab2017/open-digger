@@ -1,0 +1,10 @@
+name: Taranaki
+type: Division-1
+meta:
+  alpha2: NZ-TKI
+  includes:
+    - taranaki
+    - nz-tki
+    - tki
+    - taranaki region
+  category: REGION

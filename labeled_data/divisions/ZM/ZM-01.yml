@@ -1,0 +1,10 @@
+name: Western
+type: Division-1
+meta:
+  alpha2: ZM-01
+  includes:
+    - western
+    - zm-01
+    - '01'
+    - western province
+  category: PROVINCE

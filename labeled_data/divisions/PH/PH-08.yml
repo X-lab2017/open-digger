@@ -1,0 +1,44 @@
+name: Eastern Visayas
+type: Division-1
+meta:
+  alpha2: PH-08
+  includes:
+    - biliran
+    - ph-bil
+    - bil
+    - biliran province
+    - eastern samar
+    - ph-eas
+    - eas
+    - eastern samar province
+    - eastern visayas
+    - ph-08
+    - '08'
+    - eastern visayas region
+    - hilagang samar
+    - ph-nsa
+    - nsa
+    - hilagang samar province
+    - katimogang leyte
+    - ph-sle
+    - sle
+    - katimogang leyte province
+    - leyte
+    - ph-ley
+    - ley
+    - leyte province
+    - northern samar
+    - northern samar province
+    - rehiyon ng silangang bisaya
+    - rehiyon ng silangang bisaya region
+    - samar
+    - ph-wsa
+    - wsa
+    - samar province
+    - western samar
+    - western samar province
+    - silangang samar
+    - silangang samar province
+    - southern leyte
+    - southern leyte province
+  category: REGION

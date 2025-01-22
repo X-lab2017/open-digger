@@ -1,0 +1,11 @@
+name: Zanjān
+type: Division-1
+meta:
+  alpha2: IR-19
+  includes:
+    - zanjān
+    - ir-19
+    - '19'
+    - zanjān province
+    - zanjan province
+  category: PROVINCE

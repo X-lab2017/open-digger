@@ -1,0 +1,11 @@
+name: Northern
+type: Division-1
+meta:
+  alpha2: SL-N
+  includes:
+    - northern
+    - sl-n
+    - 'n'
+    - northern province
+    - northern province, sierra leone
+  category: PROVINCE

@@ -1,0 +1,10 @@
+name: Phetchaburi
+type: Division-1
+meta:
+  alpha2: TH-76
+  includes:
+    - phetchaburi
+    - th-76
+    - '76'
+    - phetchaburi province
+  category: PROVINCE

@@ -1,0 +1,14 @@
+name: Northern
+type: Division-1
+meta:
+  alpha2: RW-03
+  includes:
+    - amajyaruguru
+    - rw-03
+    - '03'
+    - amajyaruguru province
+    - nord
+    - nord province
+    - northern
+    - northern province
+  category: PROVINCE

@@ -1,0 +1,40 @@
+name: Klaipėdos apskritis
+type: Division-1
+meta:
+  alpha2: LT-KL
+  includes:
+    - klaipėda
+    - lt-21
+    - '21'
+    - klaipėda district municipality
+    - klaipėdos apskritis
+    - lt-kl
+    - kl
+    - klaipėdos apskritis county
+    - klaipėdos miestas
+    - lt-20
+    - '20'
+    - klaipėdos miestas city municipality
+    - kretinga
+    - lt-22
+    - '22'
+    - kretinga district municipality
+    - neringa
+    - lt-28
+    - '28'
+    - neringa municipality
+    - palangos miestas
+    - lt-31
+    - '31'
+    - palangos miestas city municipality
+    - skuodas
+    - lt-48
+    - '48'
+    - skuodas district municipality
+    - šilutė
+    - lt-46
+    - '46'
+    - šilutė district municipality
+    - klaipėdos
+    - klaipėda county
+  category: COUNTY

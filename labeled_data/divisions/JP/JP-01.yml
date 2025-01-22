@@ -1,0 +1,12 @@
+name: Hokkaidô
+type: Division-1
+meta:
+  alpha2: JP-01
+  includes:
+    - hokkaido
+    - jp-01
+    - '01'
+    - hokkaido prefecture
+    - hokkaidô
+    - hokkaidô prefecture
+  category: PREFECTURE

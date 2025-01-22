@@ -1,0 +1,14 @@
+name: Wielkopolskie
+type: Division-1
+meta:
+  alpha2: PL-30
+  includes:
+    - wielkopolskie
+    - pl-30
+    - '30'
+    - wielkopolskie voivodship
+    - greater poland voivodeship
+    - województwo wielkopolskie
+    - wp
+    - mp
+  category: VOIVODSHIP

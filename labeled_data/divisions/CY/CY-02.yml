@@ -1,0 +1,14 @@
+name: Leymasun
+type: Division-1
+meta:
+  alpha2: CY-02
+  includes:
+    - lemesos
+    - cy-02
+    - '02'
+    - lemesos district
+    - leymasun
+    - leymasun district
+    - limasol
+    - limassol
+  category: DISTRICT

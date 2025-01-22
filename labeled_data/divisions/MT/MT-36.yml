@@ -1,0 +1,10 @@
+name: Munxar
+type: Division-1
+meta:
+  alpha2: MT-36
+  includes:
+    - munxar
+    - mt-36
+    - '36'
+    - munxar local council
+  category: LOCAL COUNCIL

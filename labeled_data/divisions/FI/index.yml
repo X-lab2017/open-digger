@@ -1,0 +1,94 @@
+name: Finland
+type: Division-0
+meta:
+  alpha2: FI
+  includes:
+    - Finland
+    - FI
+    - '246'
+    - the Republic of Finland
+    - 芬兰
+  name_full: the Republic of Finland
+  name_zh: 芬兰
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 145464
+    - year: 2020
+      quarter: 2
+      count: 154161
+    - year: 2020
+      quarter: 3
+      count: 162910
+    - year: 2020
+      quarter: 4
+      count: 172901
+    - year: 2021
+      quarter: 1
+      count: 183288
+    - year: 2021
+      quarter: 2
+      count: 191775
+    - year: 2021
+      quarter: 3
+      count: 200264
+    - year: 2021
+      quarter: 4
+      count: 210319
+    - year: 2022
+      quarter: 1
+      count: 225454
+    - year: 2022
+      quarter: 2
+      count: 237619
+    - year: 2022
+      quarter: 3
+      count: 247938
+    - year: 2022
+      quarter: 4
+      count: 261156
+    - year: 2023
+      quarter: 1
+      count: 276673
+    - year: 2023
+      quarter: 2
+      count: 291618
+    - year: 2023
+      quarter: 3
+      count: 304883
+    - year: 2023
+      quarter: 4
+      count: 319853
+    - year: 2024
+      quarter: 1
+      count: 338521
+    - year: 2024
+      quarter: 2
+      count: 351130
+    - year: 2024
+      quarter: 3
+      count: 364222
+    - year: 2024
+      quarter: 4
+      count: 383819
+data:
+  labels:
+    - FI-01
+    - FI-11
+    - FI-19
+    - FI-06
+    - FI-02
+    - FI-03
+    - FI-04
+    - FI-05
+    - FI-07
+    - FI-08
+    - FI-09
+    - FI-10
+    - FI-13
+    - FI-15
+    - FI-14
+    - FI-18
+    - FI-12
+    - FI-16
+    - FI-17

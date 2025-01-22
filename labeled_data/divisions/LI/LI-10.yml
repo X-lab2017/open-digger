@@ -1,0 +1,10 @@
+name: Triesenberg
+type: Division-1
+meta:
+  alpha2: LI-10
+  includes:
+    - triesenberg
+    - li-10
+    - '10'
+    - triesenberg commune
+  category: COMMUNE

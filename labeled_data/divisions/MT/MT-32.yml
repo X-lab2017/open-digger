@@ -1,0 +1,10 @@
+name: Mosta
+type: Division-1
+meta:
+  alpha2: MT-32
+  includes:
+    - mosta
+    - mt-32
+    - '32'
+    - mosta local council
+  category: LOCAL COUNCIL

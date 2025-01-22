@@ -1,0 +1,79 @@
+name: Eswatini
+type: Division-0
+meta:
+  alpha2: SZ
+  includes:
+    - Eswatini
+    - SZ
+    - '748'
+    - the Kingdom of Swaziland
+    - 斯威士兰
+  name_full: the Kingdom of Swaziland
+  name_zh: 斯威士兰
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 998
+    - year: 2020
+      quarter: 2
+      count: 1137
+    - year: 2020
+      quarter: 3
+      count: 1279
+    - year: 2020
+      quarter: 4
+      count: 1412
+    - year: 2021
+      quarter: 1
+      count: 1527
+    - year: 2021
+      quarter: 2
+      count: 1660
+    - year: 2021
+      quarter: 3
+      count: 1787
+    - year: 2021
+      quarter: 4
+      count: 1951
+    - year: 2022
+      quarter: 1
+      count: 2175
+    - year: 2022
+      quarter: 2
+      count: 2319
+    - year: 2022
+      quarter: 3
+      count: 2463
+    - year: 2022
+      quarter: 4
+      count: 2576
+    - year: 2023
+      quarter: 1
+      count: 2728
+    - year: 2023
+      quarter: 2
+      count: 2920
+    - year: 2023
+      quarter: 3
+      count: 3132
+    - year: 2023
+      quarter: 4
+      count: 3269
+    - year: 2024
+      quarter: 1
+      count: 3730
+    - year: 2024
+      quarter: 2
+      count: 4011
+    - year: 2024
+      quarter: 3
+      count: 4334
+    - year: 2024
+      quarter: 4
+      count: 4652
+data:
+  labels:
+    - SZ-HH
+    - SZ-LU
+    - SZ-MA
+    - SZ-SH

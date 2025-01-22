@@ -1,0 +1,12 @@
+name: ‘Akkār
+type: Division-1
+meta:
+  alpha2: LB-AK
+  includes:
+    - aakkâr
+    - lb-ak
+    - ak
+    - aakkâr governorate
+    - ‘akkār
+    - ‘akkār governorate
+  category: GOVERNORATE

@@ -1,0 +1,10 @@
+name: Jwaneng
+type: Division-1
+meta:
+  alpha2: BW-JW
+  includes:
+    - jwaneng
+    - bw-jw
+    - jw
+    - jwaneng town
+  category: TOWN

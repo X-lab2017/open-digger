@@ -1,0 +1,11 @@
+name: Comayagua
+type: Division-1
+meta:
+  alpha2: HN-CM
+  includes:
+    - comayagua
+    - hn-cm
+    - cm
+    - comayagua department
+    - hncm
+  category: DEPARTMENT

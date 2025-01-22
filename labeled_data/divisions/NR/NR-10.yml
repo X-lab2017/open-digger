@@ -1,0 +1,10 @@
+name: Ijuw
+type: Division-1
+meta:
+  alpha2: NR-10
+  includes:
+    - ijuw
+    - nr-10
+    - '10'
+    - ijuw district
+  category: DISTRICT

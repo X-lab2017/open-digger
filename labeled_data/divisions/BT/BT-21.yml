@@ -1,0 +1,10 @@
+name: Tsirang
+type: Division-1
+meta:
+  alpha2: BT-21
+  includes:
+    - tsirang
+    - bt-21
+    - '21'
+    - tsirang district
+  category: DISTRICT

@@ -1,0 +1,10 @@
+name: Nimba
+type: Division-1
+meta:
+  alpha2: LR-NI
+  includes:
+    - nimba
+    - lr-ni
+    - ni
+    - nimba county
+  category: COUNTY

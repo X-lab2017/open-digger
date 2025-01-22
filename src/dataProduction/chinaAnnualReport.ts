@@ -13,7 +13,7 @@ import { countryInfo } from '../static/countries';
 
   const findCountry = (labelId: string): {} => {
     const label = labels.find(l => l.identifier === labelId)!;
-    const countryLabelId = label.parents.find(p => p.startsWith(':regions'));
+    const countryLabelId = label.parents.find(p => p.startsWith(':divisions'));
     if (countryLabelId) {
       const countryLabel = labels.find(l => l.identifier === countryLabelId)!;
       const countryItem = countryInfo.find(c => c.name === countryLabel.name);
@@ -171,7 +171,7 @@ import { countryInfo } from '../static/countries';
   const getChineseProjectsRanking = async () => {
     const option: any = {
       ...defaultOption,
-      labelIntersect: ['Project', ':regions/CN'],
+      labelIntersect: ['Project', ':divisions/CN'],
       groupBy: 'Project',
     };
     let res = await getRepoOpenrank(option);
@@ -243,7 +243,7 @@ import { countryInfo } from '../static/countries';
   const getChineseCompaniesRanking = async () => {
     const option: any = {
       ...defaultOption,
-      labelIntersect: ['Company', ':regions/CN'],
+      labelIntersect: ['Company', ':divisions/CN'],
       groupBy: 'Company',
     };
     let res = await getRepoOpenrank(option);
@@ -347,6 +347,7 @@ import { countryInfo } from '../static/countries';
     }));
   };
 
+  console.log('Start to run China annual report.');
   await getGlobalProjectsRanking();
   await getChineseProjectsRanking();
   await getGlobalCompaniesRanking();

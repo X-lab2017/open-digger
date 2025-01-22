@@ -1,0 +1,13 @@
+name: Addis Ababa
+type: Division-1
+meta:
+  alpha2: ET-AA
+  includes:
+    - addis ababa
+    - et-aa
+    - aa
+    - addis ababa administration
+    - ādīs ābeba
+    - ādīs ābeba administration
+    - አዲስ አበባ
+  category: ADMINISTRATION

@@ -1,0 +1,10 @@
+name: Line Islands
+type: Division-1
+meta:
+  alpha2: KI-L
+  includes:
+    - line islands
+    - ki-l
+    - l
+    - line islands group of islands (20 inhabited islands)
+  category: GROUP OF ISLANDS (20 INHABITED ISLANDS)

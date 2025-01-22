@@ -1,0 +1,12 @@
+name: Ţarābulus
+type: Division-1
+meta:
+  alpha2: LY-TB
+  includes:
+    - ţarābulus
+    - ly-tb
+    - tb
+    - ţarābulus popularate
+    - tripoli
+    - tripoli district
+  category: POPULARATE

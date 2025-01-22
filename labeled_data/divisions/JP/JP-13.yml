@@ -1,0 +1,14 @@
+name: Tôkyô
+type: Division-1
+meta:
+  alpha2: JP-13
+  includes:
+    - tokyo
+    - jp-13
+    - '13'
+    - tokyo prefecture
+    - tôkyô
+    - tôkyô prefecture
+    - 東京都
+    - toukyou
+  category: PREFECTURE

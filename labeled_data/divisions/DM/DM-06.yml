@@ -1,0 +1,10 @@
+name: Saint Joseph
+type: Division-1
+meta:
+  alpha2: DM-06
+  includes:
+    - saint joseph
+    - dm-06
+    - '06'
+    - saint joseph parish
+  category: PARISH

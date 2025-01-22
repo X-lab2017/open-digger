@@ -1,0 +1,10 @@
+name: Caldas
+type: Division-1
+meta:
+  alpha2: CO-CAL
+  includes:
+    - caldas
+    - co-cal
+    - cal
+    - caldas department
+  category: DEPARTMENT

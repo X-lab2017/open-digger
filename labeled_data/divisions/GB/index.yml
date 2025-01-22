@@ -1,0 +1,85 @@
+name: United Kingdom of Great Britain and Northern Ireland
+type: Division-0
+meta:
+  alpha2: GB
+  includes:
+    - United Kingdom of Great Britain and Northern Ireland
+    - GB
+    - '826'
+    - the United Kingdom of Great Britain and Northern Ireland
+    - 英国
+    - United Kingdom
+  name_full: the United Kingdom of Great Britain and Northern Ireland
+  name_zh: 英国
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 1635516
+    - year: 2020
+      quarter: 2
+      count: 1749625
+    - year: 2020
+      quarter: 3
+      count: 1843208
+    - year: 2020
+      quarter: 4
+      count: 1956184
+    - year: 2021
+      quarter: 1
+      count: 2075096
+    - year: 2021
+      quarter: 2
+      count: 2175726
+    - year: 2021
+      quarter: 3
+      count: 2272740
+    - year: 2021
+      quarter: 4
+      count: 2398439
+    - year: 2022
+      quarter: 1
+      count: 2555010
+    - year: 2022
+      quarter: 2
+      count: 2686737
+    - year: 2022
+      quarter: 3
+      count: 2805910
+    - year: 2022
+      quarter: 4
+      count: 2946458
+    - year: 2023
+      quarter: 1
+      count: 3110915
+    - year: 2023
+      quarter: 2
+      count: 3278228
+    - year: 2023
+      quarter: 3
+      count: 3422806
+    - year: 2023
+      quarter: 4
+      count: 3595978
+    - year: 2024
+      quarter: 1
+      count: 3796457
+    - year: 2024
+      quarter: 2
+      count: 3935798
+    - year: 2024
+      quarter: 3
+      count: 4080458
+    - year: 2024
+      quarter: 4
+      count: 4258046
+data:
+  labels:
+    - GB-SCT
+    - GB-NIR
+    - GB-ENG
+    - GB-WLS
+    - ':agencies/moj_uk'
+    - ':companies/deepmind'
+    - ':companies/gaas'
+    - ':companies/rare'
+    - ':companies/raycast'

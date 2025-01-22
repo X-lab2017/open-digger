@@ -1,0 +1,11 @@
+name: Dâmbovița
+type: Division-1
+meta:
+  alpha2: RO-DB
+  includes:
+    - dâmbovița
+    - ro-db
+    - db
+    - dâmbovița department
+    - dîmboviţa
+  category: DEPARTMENT

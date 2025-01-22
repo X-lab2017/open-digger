@@ -1,0 +1,12 @@
+name: Hamkyeongnamto
+type: Division-1
+meta:
+  alpha2: KP-08
+  includes:
+    - hamgyǒng-namdo
+    - kp-08
+    - '08'
+    - hamgyǒng-namdo province
+    - hamkyeongnamto
+    - hamkyeongnamto province
+  category: PROVINCE

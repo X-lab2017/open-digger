@@ -1,0 +1,10 @@
+name: Guidimaka
+type: Division-1
+meta:
+  alpha2: MR-10
+  includes:
+    - guidimaka
+    - mr-10
+    - '10'
+    - guidimaka region
+  category: REGION

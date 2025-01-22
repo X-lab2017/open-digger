@@ -1,0 +1,72 @@
+name: Aruba
+type: Division-0
+meta:
+  alpha2: AW
+  includes:
+    - Aruba
+    - AW
+    - '533'
+    - 阿鲁巴
+  name_full: Aruba
+  name_zh: 阿鲁巴
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 1006
+    - year: 2020
+      quarter: 2
+      count: 1139
+    - year: 2020
+      quarter: 3
+      count: 1230
+    - year: 2020
+      quarter: 4
+      count: 1304
+    - year: 2021
+      quarter: 1
+      count: 1411
+    - year: 2021
+      quarter: 2
+      count: 1497
+    - year: 2021
+      quarter: 3
+      count: 1589
+    - year: 2021
+      quarter: 4
+      count: 1653
+    - year: 2022
+      quarter: 1
+      count: 1741
+    - year: 2022
+      quarter: 2
+      count: 1808
+    - year: 2022
+      quarter: 3
+      count: 1924
+    - year: 2022
+      quarter: 4
+      count: 1958
+    - year: 2023
+      quarter: 1
+      count: 2070
+    - year: 2023
+      quarter: 2
+      count: 2173
+    - year: 2023
+      quarter: 3
+      count: 2263
+    - year: 2023
+      quarter: 4
+      count: 2352
+    - year: 2024
+      quarter: 1
+      count: 2477
+    - year: 2024
+      quarter: 2
+      count: 2554
+    - year: 2024
+      quarter: 3
+      count: 2652
+    - year: 2024
+      quarter: 4
+      count: 2828

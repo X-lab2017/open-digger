@@ -1,0 +1,11 @@
+name: Durrës
+type: Division-1
+meta:
+  alpha2: AL-02
+  includes:
+    - durrës
+    - al-02
+    - '02'
+    - durrës county
+    - durres
+  category: COUNTY

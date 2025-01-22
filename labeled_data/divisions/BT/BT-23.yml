@@ -1,0 +1,10 @@
+name: Punakha
+type: Division-1
+meta:
+  alpha2: BT-23
+  includes:
+    - punakha
+    - bt-23
+    - '23'
+    - punakha district
+  category: DISTRICT

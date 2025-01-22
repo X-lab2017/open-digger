@@ -1,0 +1,11 @@
+name: Şırnak
+type: Division-1
+meta:
+  alpha2: TR-73
+  includes:
+    - şırnak
+    - tr-73
+    - '73'
+    - şırnak province
+    - sirnak
+  category: PROVINCE

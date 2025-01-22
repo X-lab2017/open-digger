@@ -1,0 +1,10 @@
+name: Danilovgrad
+type: Division-1
+meta:
+  alpha2: ME-07
+  includes:
+    - danilovgrad
+    - me-07
+    - '07'
+    - danilovgrad municipality
+  category: MUNICIPALITY

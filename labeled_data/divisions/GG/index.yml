@@ -1,0 +1,72 @@
+name: Guernsey
+type: Division-0
+meta:
+  alpha2: GG
+  includes:
+    - Guernsey
+    - GG
+    - '831'
+    - 格恩西岛
+  name_full: Guernsey
+  name_zh: 格恩西岛
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 813
+    - year: 2020
+      quarter: 2
+      count: 853
+    - year: 2020
+      quarter: 3
+      count: 883
+    - year: 2020
+      quarter: 4
+      count: 909
+    - year: 2021
+      quarter: 1
+      count: 1052
+    - year: 2021
+      quarter: 2
+      count: 1099
+    - year: 2021
+      quarter: 3
+      count: 1163
+    - year: 2021
+      quarter: 4
+      count: 1180
+    - year: 2022
+      quarter: 1
+      count: 1252
+    - year: 2022
+      quarter: 2
+      count: 1298
+    - year: 2022
+      quarter: 3
+      count: 1369
+    - year: 2022
+      quarter: 4
+      count: 1430
+    - year: 2023
+      quarter: 1
+      count: 1469
+    - year: 2023
+      quarter: 2
+      count: 1549
+    - year: 2023
+      quarter: 3
+      count: 1633
+    - year: 2023
+      quarter: 4
+      count: 1675
+    - year: 2024
+      quarter: 1
+      count: 1752
+    - year: 2024
+      quarter: 2
+      count: 1794
+    - year: 2024
+      quarter: 3
+      count: 1873
+    - year: 2024
+      quarter: 4
+      count: 1939

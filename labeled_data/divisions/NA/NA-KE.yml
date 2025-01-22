@@ -1,0 +1,10 @@
+name: Kavango East
+type: Division-1
+meta:
+  alpha2: NA-KE
+  includes:
+    - kavango east
+    - na-ke
+    - ke
+    - kavango east region
+  category: REGION

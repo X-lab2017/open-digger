@@ -1,0 +1,10 @@
+name: Vorarlberg
+type: Division-1
+meta:
+  alpha2: AT-8
+  includes:
+    - vorarlberg
+    - at-8
+    - '8'
+    - vorarlberg state
+  category: STATE

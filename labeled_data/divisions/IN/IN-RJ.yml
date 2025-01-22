@@ -1,0 +1,10 @@
+name: Rājasthān
+type: Division-1
+meta:
+  alpha2: IN-RJ
+  includes:
+    - rājasthān
+    - in-rj
+    - rj
+    - rājasthān state
+  category: STATE

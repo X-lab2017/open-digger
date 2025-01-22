@@ -1,0 +1,12 @@
+name: River Nile
+type: Division-1
+meta:
+  alpha2: SD-NR
+  includes:
+    - nahr an nīl
+    - sd-nr
+    - nr
+    - nahr an nīl state
+    - river nile
+    - river nile state
+  category: STATE

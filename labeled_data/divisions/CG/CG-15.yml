@@ -1,0 +1,10 @@
+name: Cuvette-Ouest
+type: Division-1
+meta:
+  alpha2: CG-15
+  includes:
+    - cuvette-ouest
+    - cg-15
+    - '15'
+    - cuvette-ouest department
+  category: DEPARTMENT

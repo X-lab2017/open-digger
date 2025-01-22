@@ -1,0 +1,54 @@
+name: Northern Province
+type: Division-1
+meta:
+  alpha2: LK-4
+  includes:
+    - jaffna
+    - lk-41
+    - '41'
+    - jaffna district
+    - kilinochchi
+    - lk-42
+    - '42'
+    - kilinochchi district
+    - kilinŏchchi
+    - kilinŏchchi district
+    - kiḷinochchi
+    - kiḷinochchi district
+    - mannar
+    - lk-43
+    - '43'
+    - mannar district
+    - mannārama
+    - mannārama district
+    - maṉṉār
+    - maṉṉār district
+    - mulativ
+    - lk-45
+    - '45'
+    - mulativ district
+    - mullaittivu
+    - mullaittivu district
+    - mullaittīvu
+    - mullaittīvu district
+    - northern province
+    - lk-4
+    - '4'
+    - northern province province
+    - uturu paḷāta
+    - uturu paḷāta province
+    - vavuniya
+    - lk-44
+    - '44'
+    - vavuniya district
+    - vavuniyāva
+    - vavuniyāva district
+    - vavuṉiyā
+    - vavuṉiyā district
+    - vaṭakku mākāṇam
+    - vaṭakku mākāṇam province
+    - yāl̮ppāṇam
+    - yāl̮ppāṇam district
+    - yāpanaya
+    - yāpanaya district
+  category: PROVINCE

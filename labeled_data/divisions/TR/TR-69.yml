@@ -1,0 +1,10 @@
+name: Bayburt
+type: Division-1
+meta:
+  alpha2: TR-69
+  includes:
+    - bayburt
+    - tr-69
+    - '69'
+    - bayburt province
+  category: PROVINCE

@@ -1,0 +1,10 @@
+name: Samegrelo-Zemo Svaneti
+type: Division-1
+meta:
+  alpha2: GE-SZ
+  includes:
+    - samegrelo-zemo svaneti
+    - ge-sz
+    - sz
+    - samegrelo-zemo svaneti region
+  category: REGION

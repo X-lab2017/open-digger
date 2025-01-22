@@ -1,0 +1,12 @@
+name: Qinā
+type: Division-1
+meta:
+  alpha2: EG-KN
+  includes:
+    - qinā
+    - eg-kn
+    - kn
+    - qinā governorate
+    - qena governorate
+    - qina
+  category: GOVERNORATE

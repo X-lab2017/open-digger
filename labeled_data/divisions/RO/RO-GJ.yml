@@ -1,0 +1,11 @@
+name: Gorj
+type: Division-1
+meta:
+  alpha2: RO-GJ
+  includes:
+    - gorj
+    - ro-gj
+    - gj
+    - gorj department
+    - gorj county
+  category: DEPARTMENT

@@ -1,0 +1,10 @@
+name: United States Minor Outlying Islands
+type: Division-1
+meta:
+  alpha2: US-UM
+  includes:
+    - united states minor outlying islands
+    - us-um
+    - um
+    - united states minor outlying islands outlying area
+  category: OUTLYING AREA

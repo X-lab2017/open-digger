@@ -1,0 +1,10 @@
+name: Gros Islet
+type: Division-1
+meta:
+  alpha2: LC-06
+  includes:
+    - gros islet
+    - lc-06
+    - '06'
+    - gros islet district
+  category: DISTRICT

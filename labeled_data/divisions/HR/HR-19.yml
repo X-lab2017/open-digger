@@ -1,0 +1,12 @@
+name: Dubrovačko-neretvanska županija
+type: Division-1
+meta:
+  alpha2: HR-19
+  includes:
+    - dubrovačko-neretvanska županija
+    - hr-19
+    - '19'
+    - dubrovačko-neretvanska županija county
+    - dubrovnik-neretva county
+    - dubrovnik-neretva
+  category: COUNTY

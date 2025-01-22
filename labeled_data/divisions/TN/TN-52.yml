@@ -1,0 +1,10 @@
+name: Monastir
+type: Division-1
+meta:
+  alpha2: TN-52
+  includes:
+    - monastir
+    - tn-52
+    - '52'
+    - monastir governorate
+  category: GOVERNORATE

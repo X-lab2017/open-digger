@@ -1,0 +1,10 @@
+name: Mardin
+type: Division-1
+meta:
+  alpha2: TR-47
+  includes:
+    - mardin
+    - tr-47
+    - '47'
+    - mardin province
+  category: PROVINCE

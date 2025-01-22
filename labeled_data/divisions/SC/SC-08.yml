@@ -1,0 +1,12 @@
+name: Bovalon
+type: Division-1
+meta:
+  alpha2: SC-08
+  includes:
+    - beau vallon
+    - sc-08
+    - '08'
+    - beau vallon district
+    - bovalon
+    - bovalon district
+  category: DISTRICT

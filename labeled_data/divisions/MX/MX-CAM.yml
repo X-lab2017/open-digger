@@ -1,0 +1,10 @@
+name: Campeche
+type: Division-1
+meta:
+  alpha2: MX-CAM
+  includes:
+    - campeche
+    - mx-cam
+    - cam
+    - campeche state
+  category: STATE

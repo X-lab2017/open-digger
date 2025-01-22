@@ -1,0 +1,13 @@
+name: Republika Srpska
+type: Division-1
+meta:
+  alpha2: BA-SRP
+  includes:
+    - republika srpska
+    - ba-srp
+    - srp
+    - republika srpska entity
+    - serb republic
+    - sr
+    - republica srpska
+  category: ENTITY

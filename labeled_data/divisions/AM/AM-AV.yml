@@ -1,0 +1,11 @@
+name: Armavir
+type: Division-1
+meta:
+  alpha2: AM-AV
+  includes:
+    - armavir
+    - am-av
+    - av
+    - armavir region
+    - armavir province
+  category: REGION

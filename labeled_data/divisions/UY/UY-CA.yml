@@ -1,0 +1,10 @@
+name: Canelones
+type: Division-1
+meta:
+  alpha2: UY-CA
+  includes:
+    - canelones
+    - uy-ca
+    - ca
+    - canelones department
+  category: DEPARTMENT

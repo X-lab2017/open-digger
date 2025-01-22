@@ -1,0 +1,10 @@
+name: Møre og Romsdal
+type: Division-1
+meta:
+  alpha2: NO-15
+  includes:
+    - møre og romsdal
+    - no-15
+    - '15'
+    - møre og romsdal county
+  category: COUNTY

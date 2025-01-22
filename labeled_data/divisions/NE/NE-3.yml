@@ -1,0 +1,10 @@
+name: Dosso
+type: Division-1
+meta:
+  alpha2: NE-3
+  includes:
+    - dosso
+    - ne-3
+    - '3'
+    - dosso region
+  category: REGION

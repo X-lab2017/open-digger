@@ -1,0 +1,11 @@
+name: Stereá Elláda
+type: Division-1
+meta:
+  alpha2: GR-H
+  includes:
+    - stereá elláda
+    - gr-h
+    - h
+    - stereá elláda administrative region
+    - central greece
+  category: ADMINISTRATIVE REGION

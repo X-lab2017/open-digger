@@ -1,0 +1,13 @@
+name: Cherkaska oblast
+type: Division-1
+meta:
+  alpha2: UA-71
+  includes:
+    - cherkaska oblast
+    - ua-71
+    - '71'
+    - cherkaska oblast region
+    - cherkasy oblast
+    - cherkas'ka oblast
+    - cherkasy
+  category: REGION

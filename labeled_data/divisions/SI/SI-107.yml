@@ -1,0 +1,10 @@
+name: Rogatec
+type: Division-1
+meta:
+  alpha2: SI-107
+  includes:
+    - rogatec
+    - si-107
+    - '107'
+    - rogatec municipality
+  category: MUNICIPALITY

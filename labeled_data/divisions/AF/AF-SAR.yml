@@ -1,0 +1,10 @@
+name: Sar-e Pul
+type: Division-1
+meta:
+  alpha2: AF-SAR
+  includes:
+    - sar-e pul
+    - af-sar
+    - sar
+    - sar-e pul province
+  category: PROVINCE

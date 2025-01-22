@@ -1,0 +1,11 @@
+name: Dimashq
+type: Division-1
+meta:
+  alpha2: SY-DI
+  includes:
+    - dimashq
+    - sy-di
+    - di
+    - dimashq province
+    - damascus governorate
+  category: PROVINCE

@@ -1,0 +1,13 @@
+name: Dnipropetrovska oblast
+type: Division-1
+meta:
+  alpha2: UA-12
+  includes:
+    - dnipropetrovska oblast
+    - ua-12
+    - '12'
+    - dnipropetrovska oblast region
+    - dnipropetrovs'ka oblast
+    - dnipropetrovsk oblast
+    - dnipropetrovsk
+  category: REGION

@@ -1,0 +1,11 @@
+name: Basel-Stadt
+type: Division-1
+meta:
+  alpha2: CH-BS
+  includes:
+    - basel-stadt
+    - ch-bs
+    - bs
+    - basel-stadt canton
+    - basel city
+  category: CANTON

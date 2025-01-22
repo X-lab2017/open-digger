@@ -1,0 +1,10 @@
+name: Paraguarí
+type: Division-1
+meta:
+  alpha2: PY-9
+  includes:
+    - paraguarí
+    - py-9
+    - '9'
+    - paraguarí department
+  category: DEPARTMENT

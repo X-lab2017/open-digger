@@ -1,0 +1,10 @@
+name: Équateur
+type: Division-1
+meta:
+  alpha2: CD-EQ
+  includes:
+    - équateur
+    - cd-eq
+    - eq
+    - équateur province
+  category: PROVINCE

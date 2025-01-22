@@ -1,0 +1,10 @@
+name: Western Bahr el Ghazal
+type: Division-1
+meta:
+  alpha2: SS-BW
+  includes:
+    - western bahr el ghazal
+    - ss-bw
+    - bw
+    - western bahr el ghazal state
+  category: STATE

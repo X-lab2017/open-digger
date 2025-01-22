@@ -1,0 +1,11 @@
+name: Hưng Yên
+type: Division-1
+meta:
+  alpha2: VN-66
+  includes:
+    - hưng yên
+    - vn-66
+    - '66'
+    - hưng yên province
+    - hung yen
+  category: PROVINCE

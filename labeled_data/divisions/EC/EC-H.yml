@@ -1,0 +1,10 @@
+name: Chimborazo
+type: Division-1
+meta:
+  alpha2: EC-H
+  includes:
+    - chimborazo
+    - ec-h
+    - h
+    - chimborazo province
+  category: PROVINCE

@@ -1,0 +1,12 @@
+name: Wilayah Persekutuan Kuala Lumpur
+type: Division-1
+meta:
+  alpha2: MY-14
+  includes:
+    - wilayah persekutuan kuala lumpur
+    - my-14
+    - '14'
+    - wilayah persekutuan kuala lumpur federal territory
+    - federal territory of kuala lumpur
+    - wilayah persekutuan
+  category: FEDERAL TERRITORY

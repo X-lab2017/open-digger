@@ -1,0 +1,12 @@
+name: Obock
+type: Division-1
+meta:
+  alpha2: DJ-OB
+  includes:
+    - awbūk
+    - dj-ob
+    - ob
+    - awbūk region
+    - obock
+    - obock region
+  category: REGION

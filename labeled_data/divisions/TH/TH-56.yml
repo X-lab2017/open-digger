@@ -1,0 +1,11 @@
+name: Phayao
+type: Division-1
+meta:
+  alpha2: TH-56
+  includes:
+    - phayao
+    - th-56
+    - '56'
+    - phayao province
+    - chang wat phayao
+  category: PROVINCE

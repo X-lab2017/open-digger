@@ -1,0 +1,13 @@
+name: Oromia
+type: Division-1
+meta:
+  alpha2: ET-OR
+  includes:
+    - oromia
+    - et-or
+    - or
+    - oromia regional state
+    - oromīya
+    - oromīya regional state
+    - oromia region
+  category: REGIONAL STATE

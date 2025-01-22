@@ -1,0 +1,11 @@
+name: Santa Ana
+type: Division-1
+meta:
+  alpha2: SV-SA
+  includes:
+    - santa ana
+    - sv-sa
+    - sa
+    - santa ana department
+    - svsa
+  category: DEPARTMENT

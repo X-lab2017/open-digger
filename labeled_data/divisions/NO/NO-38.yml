@@ -1,0 +1,12 @@
+name: Vestfold og Telemark
+type: Division-1
+meta:
+  alpha2: NO-38
+  includes:
+    - vestfold og telemark
+    - no-38
+    - '38'
+    - vestfold og telemark county
+    - vestfold
+    - telemark
+  category: COUNTY

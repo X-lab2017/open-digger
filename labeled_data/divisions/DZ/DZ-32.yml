@@ -1,0 +1,10 @@
+name: El Bayadh
+type: Division-1
+meta:
+  alpha2: DZ-32
+  includes:
+    - el bayadh
+    - dz-32
+    - '32'
+    - el bayadh province
+  category: PROVINCE

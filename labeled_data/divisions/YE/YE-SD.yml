@@ -1,0 +1,10 @@
+name: Şāʻdah
+type: Division-1
+meta:
+  alpha2: YE-SD
+  includes:
+    - şāʻdah
+    - ye-sd
+    - sd
+    - şāʻdah governorate
+  category: GOVERNORATE

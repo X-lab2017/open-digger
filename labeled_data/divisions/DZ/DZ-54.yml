@@ -1,0 +1,10 @@
+name: In Guezzam
+type: Division-1
+meta:
+  alpha2: DZ-54
+  includes:
+    - in guezzam
+    - dz-54
+    - '54'
+    - in guezzam province
+  category: PROVINCE

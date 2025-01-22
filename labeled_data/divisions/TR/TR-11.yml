@@ -1,0 +1,10 @@
+name: Bilecik
+type: Division-1
+meta:
+  alpha2: TR-11
+  includes:
+    - bilecik
+    - tr-11
+    - '11'
+    - bilecik province
+  category: PROVINCE

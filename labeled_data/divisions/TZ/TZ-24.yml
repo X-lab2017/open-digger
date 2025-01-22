@@ -1,0 +1,10 @@
+name: Tabora
+type: Division-1
+meta:
+  alpha2: TZ-24
+  includes:
+    - tabora
+    - tz-24
+    - '24'
+    - tabora region
+  category: REGION

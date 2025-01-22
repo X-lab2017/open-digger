@@ -1,0 +1,11 @@
+name: Thái Bình
+type: Division-1
+meta:
+  alpha2: VN-20
+  includes:
+    - thái bình
+    - vn-20
+    - '20'
+    - thái bình province
+    - thai binh
+  category: PROVINCE

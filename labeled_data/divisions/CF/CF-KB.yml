@@ -1,0 +1,12 @@
+name: Gribingui
+type: Division-1
+meta:
+  alpha2: CF-KB
+  includes:
+    - gribingui
+    - cf-kb
+    - kb
+    - gribingui economic prefecture
+    - gïrïbïngï
+    - gïrïbïngï economic prefecture
+  category: ECONOMIC PREFECTURE

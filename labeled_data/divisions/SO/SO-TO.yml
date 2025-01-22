@@ -1,0 +1,10 @@
+name: Togdheer
+type: Division-1
+meta:
+  alpha2: SO-TO
+  includes:
+    - togdheer
+    - so-to
+    - to
+    - togdheer region
+  category: REGION

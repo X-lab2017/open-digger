@@ -1,0 +1,49 @@
+name: Central Region
+type: Division-1
+meta:
+  alpha2: MW-C
+  includes:
+    - central region
+    - mw-c
+    - c
+    - central region region
+    - chapakati
+    - chapakati region
+    - dedza
+    - mw-de
+    - de
+    - dedza district
+    - dowa
+    - mw-do
+    - do
+    - dowa district
+    - kasungu
+    - mw-ks
+    - ks
+    - kasungu district
+    - lilongwe
+    - mw-li
+    - li
+    - lilongwe district
+    - mchinji
+    - mw-mc
+    - mc
+    - mchinji district
+    - nkhotakota
+    - mw-nk
+    - nk
+    - nkhotakota district
+    - ntcheu
+    - mw-nu
+    - nu
+    - ntcheu district
+    - ntchisi
+    - mw-ni
+    - ni
+    - ntchisi district
+    - salima
+    - mw-sa
+    - sa
+    - salima district
+    - central region, malawi
+  category: REGION

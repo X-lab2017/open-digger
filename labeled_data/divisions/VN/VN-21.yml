@@ -1,0 +1,12 @@
+name: Thanh Hóa
+type: Division-1
+meta:
+  alpha2: VN-21
+  includes:
+    - thanh hóa
+    - vn-21
+    - '21'
+    - thanh hóa province
+    - thanh hoá
+    - thanh hoa
+  category: PROVINCE

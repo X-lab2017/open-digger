@@ -1,0 +1,12 @@
+name: Gulbenes novads
+type: Division-1
+meta:
+  alpha2: LV-033
+  includes:
+    - gulbenes novads
+    - lv-033
+    - '033'
+    - gulbenes novads municipality
+    - gulbene
+    - gulbene municipality
+  category: MUNICIPALITY

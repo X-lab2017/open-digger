@@ -1,0 +1,11 @@
+name: Chiang Mai
+type: Division-1
+meta:
+  alpha2: TH-50
+  includes:
+    - chiang mai
+    - th-50
+    - '50'
+    - chiang mai province
+    - chang wat chiang mai
+  category: PROVINCE

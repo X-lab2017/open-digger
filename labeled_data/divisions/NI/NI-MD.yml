@@ -1,0 +1,11 @@
+name: Madriz
+type: Division-1
+meta:
+  alpha2: NI-MD
+  includes:
+    - madriz
+    - ni-md
+    - md
+    - madriz department
+    - mg
+  category: DEPARTMENT

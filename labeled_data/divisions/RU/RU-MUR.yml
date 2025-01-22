@@ -1,0 +1,14 @@
+name: Murmanskaya oblast'
+type: Division-1
+meta:
+  alpha2: RU-MUR
+  includes:
+    - murmanskaja oblast'
+    - ru-mur
+    - mur
+    - murmanskaja oblast' administrative region
+    - murmanskaya oblast'
+    - murmanskaya oblast' administrative region
+    - murmansk oblast
+    - murmansk
+  category: ADMINISTRATIVE REGION

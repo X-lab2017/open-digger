@@ -1,0 +1,15 @@
+name: Svalbard and Jan Mayen
+type: Division-0
+meta:
+  alpha2: SJ
+  includes:
+    - Svalbard and Jan Mayen
+    - SJ
+    - '744'
+    - 斯瓦尔巴岛和扬马延岛
+    - Svalbard
+    - Jan Mayen
+    - 斯瓦尔巴和扬马延
+  name_full: Svalbard and Jan Mayen
+  name_zh: 斯瓦尔巴岛和扬马延岛
+  developers: []

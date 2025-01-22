@@ -1,0 +1,72 @@
+name: Isle of Man
+type: Division-0
+meta:
+  alpha2: IM
+  includes:
+    - Isle of Man
+    - IM
+    - '833'
+    - 英国属地曼岛
+  name_full: Isle of Man
+  name_zh: 英国属地曼岛
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 1702
+    - year: 2020
+      quarter: 2
+      count: 1923
+    - year: 2020
+      quarter: 3
+      count: 2055
+    - year: 2020
+      quarter: 4
+      count: 2169
+    - year: 2021
+      quarter: 1
+      count: 2382
+    - year: 2021
+      quarter: 2
+      count: 2495
+    - year: 2021
+      quarter: 3
+      count: 2640
+    - year: 2021
+      quarter: 4
+      count: 2750
+    - year: 2022
+      quarter: 1
+      count: 2922
+    - year: 2022
+      quarter: 2
+      count: 2984
+    - year: 2022
+      quarter: 3
+      count: 3080
+    - year: 2022
+      quarter: 4
+      count: 3195
+    - year: 2023
+      quarter: 1
+      count: 3361
+    - year: 2023
+      quarter: 2
+      count: 3568
+    - year: 2023
+      quarter: 3
+      count: 3746
+    - year: 2023
+      quarter: 4
+      count: 3943
+    - year: 2024
+      quarter: 1
+      count: 4161
+    - year: 2024
+      quarter: 2
+      count: 4026
+    - year: 2024
+      quarter: 3
+      count: 4138
+    - year: 2024
+      quarter: 4
+      count: 4397

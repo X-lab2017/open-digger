@@ -1,0 +1,66 @@
+name: Suðurland
+type: Division-1
+meta:
+  alpha2: IS-8
+  includes:
+    - bláskógabyggð
+    - is-bla
+    - bla
+    - bláskógabyggð municipality
+    - flóahreppur
+    - is-fla
+    - fla
+    - flóahreppur municipality
+    - grímsnes- og grafningshreppur
+    - is-gog
+    - gog
+    - grímsnes- og grafningshreppur municipality
+    - hrunamannahreppur
+    - is-hru
+    - hru
+    - hrunamannahreppur municipality
+    - hveragerðisbær
+    - is-hve
+    - hve
+    - hveragerðisbær municipality
+    - mýrdalshreppur
+    - is-myr
+    - myr
+    - mýrdalshreppur municipality
+    - rangárþing eystra
+    - is-rge
+    - rge
+    - rangárþing eystra municipality
+    - rangárþing ytra
+    - is-rgy
+    - rgy
+    - rangárþing ytra municipality
+    - skaftárhreppur
+    - is-skf
+    - skf
+    - skaftárhreppur municipality
+    - skeiða- og gnúpverjahreppur
+    - is-sog
+    - sog
+    - skeiða- og gnúpverjahreppur municipality
+    - suðurland
+    - is-8
+    - '8'
+    - suðurland region
+    - sveitarfélagið árborg
+    - is-sfa
+    - sfa
+    - sveitarfélagið árborg municipality
+    - sveitarfélagið ölfus
+    - is-sol
+    - sol
+    - sveitarfélagið ölfus municipality
+    - vestmannaeyjabær
+    - is-vem
+    - vem
+    - vestmannaeyjabær municipality
+    - ásahreppur
+    - is-asa
+    - asa
+    - ásahreppur municipality
+  category: REGION

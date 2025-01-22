@@ -1,0 +1,10 @@
+name: Kayseri
+type: Division-1
+meta:
+  alpha2: TR-38
+  includes:
+    - kayseri
+    - tr-38
+    - '38'
+    - kayseri province
+  category: PROVINCE

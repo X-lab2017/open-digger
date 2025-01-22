@@ -1,0 +1,12 @@
+name: Sīlā
+type: Division-1
+meta:
+  alpha2: TD-SI
+  includes:
+    - sila
+    - td-si
+    - si
+    - sila province
+    - sīlā
+    - sīlā province
+  category: PROVINCE

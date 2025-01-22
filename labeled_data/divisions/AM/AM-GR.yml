@@ -1,0 +1,11 @@
+name: Geġark'unik'
+type: Division-1
+meta:
+  alpha2: AM-GR
+  includes:
+    - geġark'unik'
+    - am-gr
+    - gr
+    - geġark'unik' region
+    - gegharkunik province
+  category: REGION

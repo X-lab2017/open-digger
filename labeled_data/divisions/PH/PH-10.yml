@@ -1,0 +1,35 @@
+name: Northern Mindanao
+type: Division-1
+meta:
+  alpha2: PH-10
+  includes:
+    - bukidnon
+    - ph-buk
+    - buk
+    - bukidnon province
+    - camiguin
+    - ph-cam
+    - cam
+    - camiguin province
+    - kamigin
+    - kamigin province
+    - kanlurang misamis
+    - ph-msc
+    - msc
+    - kanlurang misamis province
+    - misamis occidental
+    - misamis occidental province
+    - misamis oriental
+    - ph-msr
+    - msr
+    - misamis oriental province
+    - northern mindanao
+    - ph-10
+    - '10'
+    - northern mindanao region
+    - rehiyon ng hilagang mindanaw
+    - rehiyon ng hilagang mindanaw region
+    - silangang misamis
+    - silangang misamis province
+    - north mindanao
+  category: REGION

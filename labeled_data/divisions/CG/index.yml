@@ -1,0 +1,88 @@
+name: Congo
+type: Division-0
+meta:
+  alpha2: CG
+  includes:
+    - Congo
+    - CG
+    - '178'
+    - the Republic of the Congo
+    - 刚果（布）
+    - Republic of the Congo
+  name_full: the Republic of the Congo
+  name_zh: 刚果（布）
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 983
+    - year: 2020
+      quarter: 2
+      count: 1095
+    - year: 2020
+      quarter: 3
+      count: 1214
+    - year: 2020
+      quarter: 4
+      count: 1331
+    - year: 2021
+      quarter: 1
+      count: 1461
+    - year: 2021
+      quarter: 2
+      count: 1651
+    - year: 2021
+      quarter: 3
+      count: 1874
+    - year: 2021
+      quarter: 4
+      count: 2069
+    - year: 2022
+      quarter: 1
+      count: 2302
+    - year: 2022
+      quarter: 2
+      count: 2507
+    - year: 2022
+      quarter: 3
+      count: 2817
+    - year: 2022
+      quarter: 4
+      count: 3098
+    - year: 2023
+      quarter: 1
+      count: 3475
+    - year: 2023
+      quarter: 2
+      count: 3910
+    - year: 2023
+      quarter: 3
+      count: 4410
+    - year: 2023
+      quarter: 4
+      count: 4959
+    - year: 2024
+      quarter: 1
+      count: 5508
+    - year: 2024
+      quarter: 2
+      count: 6094
+    - year: 2024
+      quarter: 3
+      count: 6913
+    - year: 2024
+      quarter: 4
+      count: 7819
+data:
+  labels:
+    - CG-11
+    - CG-BZV
+    - CG-8
+    - CG-15
+    - CG-5
+    - CG-7
+    - CG-2
+    - CG-9
+    - CG-14
+    - CG-16
+    - CG-12
+    - CG-13

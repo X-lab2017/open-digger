@@ -1,0 +1,10 @@
+name: Raymah
+type: Division-1
+meta:
+  alpha2: YE-RA
+  includes:
+    - raymah
+    - ye-ra
+    - ra
+    - raymah governorate
+  category: GOVERNORATE

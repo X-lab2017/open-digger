@@ -1,0 +1,83 @@
+name: Slovakia
+type: Division-0
+meta:
+  alpha2: SK
+  includes:
+    - Slovakia
+    - SK
+    - '703'
+    - the Slovak Republic
+    - 斯洛伐克
+  name_full: the Slovak Republic
+  name_zh: 斯洛伐克
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 55554
+    - year: 2020
+      quarter: 2
+      count: 60596
+    - year: 2020
+      quarter: 3
+      count: 64339
+    - year: 2020
+      quarter: 4
+      count: 69384
+    - year: 2021
+      quarter: 1
+      count: 74875
+    - year: 2021
+      quarter: 2
+      count: 78489
+    - year: 2021
+      quarter: 3
+      count: 82378
+    - year: 2021
+      quarter: 4
+      count: 86324
+    - year: 2022
+      quarter: 1
+      count: 92645
+    - year: 2022
+      quarter: 2
+      count: 97625
+    - year: 2022
+      quarter: 3
+      count: 102527
+    - year: 2022
+      quarter: 4
+      count: 107129
+    - year: 2023
+      quarter: 1
+      count: 113578
+    - year: 2023
+      quarter: 2
+      count: 119251
+    - year: 2023
+      quarter: 3
+      count: 124732
+    - year: 2023
+      quarter: 4
+      count: 130512
+    - year: 2024
+      quarter: 1
+      count: 137731
+    - year: 2024
+      quarter: 2
+      count: 142443
+    - year: 2024
+      quarter: 3
+      count: 147801
+    - year: 2024
+      quarter: 4
+      count: 154214
+data:
+  labels:
+    - SK-BC
+    - SK-BL
+    - SK-KI
+    - SK-NI
+    - SK-PV
+    - SK-TC
+    - SK-TA
+    - SK-ZI

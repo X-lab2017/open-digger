@@ -1,0 +1,10 @@
+name: Bas-Sassandra
+type: Division-1
+meta:
+  alpha2: CI-BS
+  includes:
+    - bas-sassandra
+    - ci-bs
+    - bs
+    - bas-sassandra district
+  category: DISTRICT

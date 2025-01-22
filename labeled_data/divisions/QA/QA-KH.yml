@@ -1,0 +1,12 @@
+name: Al Khawr wa adh Dhakhīrah
+type: Division-1
+meta:
+  alpha2: QA-KH
+  includes:
+    - al khawr wa adh dhakhīrah
+    - qa-kh
+    - kh
+    - al khawr wa adh dhakhīrah municipality
+    - al khor and al thakhira municipality
+    - al khor and al thakhira
+  category: MUNICIPALITY

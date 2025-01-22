@@ -1,0 +1,15 @@
+name: Krâchéh
+type: Division-1
+meta:
+  alpha2: KH-10
+  includes:
+    - kracheh
+    - kh-10
+    - '10'
+    - kracheh province
+    - kratie
+    - kratie province
+    - krâchéh
+    - krâchéh province
+    - kratié province
+  category: PROVINCE

@@ -1,0 +1,11 @@
+name: Blekinge län
+type: Division-1
+meta:
+  alpha2: SE-K
+  includes:
+    - blekinge län
+    - se-k
+    - k
+    - blekinge län county
+    - blekinge county
+  category: COUNTY

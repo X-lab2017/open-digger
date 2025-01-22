@@ -1,0 +1,10 @@
+name: Zəngilan
+type: Division-1
+meta:
+  alpha2: AZ-ZAN
+  includes:
+    - zəngilan
+    - az-zan
+    - zan
+    - zəngilan rayon
+  category: RAYON

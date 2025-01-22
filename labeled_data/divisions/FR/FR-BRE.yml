@@ -1,0 +1,27 @@
+name: Bretagne
+type: Division-1
+meta:
+  alpha2: FR-BRE
+  includes:
+    - bretagne
+    - fr-bre
+    - bre
+    - bretagne metropolitan region
+    - côtes-d'armor
+    - fr-22
+    - '22'
+    - côtes-d'armor metropolitan department
+    - finistère
+    - fr-29
+    - '29'
+    - finistère metropolitan department
+    - ille-et-vilaine
+    - fr-35
+    - '35'
+    - ille-et-vilaine metropolitan department
+    - morbihan
+    - fr-56
+    - '56'
+    - morbihan metropolitan department
+    - brittany
+  category: METROPOLITAN REGION

@@ -1,0 +1,96 @@
+name: Serbia
+type: Division-0
+meta:
+  alpha2: RS
+  includes:
+    - Serbia
+    - RS
+    - '688'
+    - the Republic of Serbia
+    - 塞尔维亚
+    - Kosovo
+  name_full: the Republic of Serbia
+  name_zh: 塞尔维亚
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 96769
+    - year: 2020
+      quarter: 2
+      count: 103646
+    - year: 2020
+      quarter: 3
+      count: 109737
+    - year: 2020
+      quarter: 4
+      count: 117828
+    - year: 2021
+      quarter: 1
+      count: 125527
+    - year: 2021
+      quarter: 2
+      count: 132378
+    - year: 2021
+      quarter: 3
+      count: 139109
+    - year: 2021
+      quarter: 4
+      count: 148494
+    - year: 2022
+      quarter: 1
+      count: 156374
+    - year: 2022
+      quarter: 2
+      count: 164898
+    - year: 2022
+      quarter: 3
+      count: 173622
+    - year: 2022
+      quarter: 4
+      count: 185608
+    - year: 2023
+      quarter: 1
+      count: 194954
+    - year: 2023
+      quarter: 2
+      count: 205208
+    - year: 2023
+      quarter: 3
+      count: 215144
+    - year: 2023
+      quarter: 4
+      count: 224194
+    - year: 2024
+      quarter: 1
+      count: 233915
+    - year: 2024
+      quarter: 2
+      count: 242554
+    - year: 2024
+      quarter: 3
+      count: 248951
+    - year: 2024
+      quarter: 4
+      count: 256977
+data:
+  labels:
+    - RS-00
+    - RS-14
+    - RS-11
+    - RS-23
+    - RS-VO
+    - RS-09
+    - RS-KM
+    - RS-08
+    - RS-17
+    - RS-20
+    - RS-22
+    - RS-10
+    - RS-13
+    - RS-24
+    - RS-19
+    - RS-18
+    - RS-21
+    - RS-15
+    - RS-16
+    - RS-12

@@ -1,0 +1,10 @@
+name: Sevnica
+type: Division-1
+meta:
+  alpha2: SI-110
+  includes:
+    - sevnica
+    - si-110
+    - '110'
+    - sevnica municipality
+  category: MUNICIPALITY

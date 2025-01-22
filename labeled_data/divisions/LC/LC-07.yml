@@ -1,0 +1,10 @@
+name: Laborie
+type: Division-1
+meta:
+  alpha2: LC-07
+  includes:
+    - laborie
+    - lc-07
+    - '07'
+    - laborie district
+  category: DISTRICT

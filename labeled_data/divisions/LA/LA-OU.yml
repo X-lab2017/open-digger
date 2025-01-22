@@ -1,0 +1,13 @@
+name: Oudômxai
+type: Division-1
+meta:
+  alpha2: LA-OU
+  includes:
+    - oudômxai
+    - la-ou
+    - ou
+    - oudômxai province
+    - oudomxay
+    - oudomxay province
+    - od
+  category: PROVINCE

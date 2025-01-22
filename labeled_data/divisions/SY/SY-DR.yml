@@ -1,0 +1,10 @@
+name: Dar'ā
+type: Division-1
+meta:
+  alpha2: SY-DR
+  includes:
+    - dar'ā
+    - sy-dr
+    - dr
+    - dar'ā province
+  category: PROVINCE

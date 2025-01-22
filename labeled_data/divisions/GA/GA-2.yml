@@ -1,0 +1,11 @@
+name: Haut-Ogooué
+type: Division-1
+meta:
+  alpha2: GA-2
+  includes:
+    - haut-ogooué
+    - ga-2
+    - '2'
+    - haut-ogooué province
+    - haut-ogooue
+  category: PROVINCE

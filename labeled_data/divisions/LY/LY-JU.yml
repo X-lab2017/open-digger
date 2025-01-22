@@ -1,0 +1,10 @@
+name: Al Jufrah
+type: Division-1
+meta:
+  alpha2: LY-JU
+  includes:
+    - al jufrah
+    - ly-ju
+    - ju
+    - al jufrah popularate
+  category: POPULARATE

@@ -1,0 +1,10 @@
+name: Moore's Island
+type: Division-1
+meta:
+  alpha2: BS-MI
+  includes:
+    - moore's island
+    - bs-mi
+    - mi
+    - moore's island district
+  category: DISTRICT

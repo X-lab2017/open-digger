@@ -1,0 +1,101 @@
+name: Ukraine
+type: Division-0
+meta:
+  alpha2: UA
+  includes:
+    - Ukraine
+    - UA
+    - '804'
+    - 乌克兰
+  name_full: Ukraine
+  name_zh: 乌克兰
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 568562
+    - year: 2020
+      quarter: 2
+      count: 611294
+    - year: 2020
+      quarter: 3
+      count: 650147
+    - year: 2020
+      quarter: 4
+      count: 693442
+    - year: 2021
+      quarter: 1
+      count: 737846
+    - year: 2021
+      quarter: 2
+      count: 776084
+    - year: 2021
+      quarter: 3
+      count: 818046
+    - year: 2021
+      quarter: 4
+      count: 870261
+    - year: 2022
+      quarter: 1
+      count: 931796
+    - year: 2022
+      quarter: 2
+      count: 954612
+    - year: 2022
+      quarter: 3
+      count: 992765
+    - year: 2022
+      quarter: 4
+      count: 1029538
+    - year: 2023
+      quarter: 1
+      count: 1071147
+    - year: 2023
+      quarter: 2
+      count: 1122708
+    - year: 2023
+      quarter: 3
+      count: 1176158
+    - year: 2023
+      quarter: 4
+      count: 1244062
+    - year: 2024
+      quarter: 1
+      count: 1274317
+    - year: 2024
+      quarter: 2
+      count: 1311480
+    - year: 2024
+      quarter: 3
+      count: 1349094
+    - year: 2024
+      quarter: 4
+      count: 1378125
+data:
+  labels:
+    - UA-43
+    - UA-71
+    - UA-74
+    - UA-77
+    - UA-12
+    - UA-14
+    - UA-26
+    - UA-63
+    - UA-65
+    - UA-68
+    - UA-35
+    - UA-30
+    - UA-32
+    - UA-09
+    - UA-46
+    - UA-48
+    - UA-51
+    - UA-53
+    - UA-56
+    - UA-40
+    - UA-59
+    - UA-61
+    - UA-05
+    - UA-07
+    - UA-21
+    - UA-23
+    - UA-18

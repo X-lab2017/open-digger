@@ -1,0 +1,10 @@
+name: Salzburg
+type: Division-1
+meta:
+  alpha2: AT-5
+  includes:
+    - salzburg
+    - at-5
+    - '5'
+    - salzburg state
+  category: STATE

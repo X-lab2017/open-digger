@@ -1,0 +1,10 @@
+name: Hamburg
+type: Division-1
+meta:
+  alpha2: DE-HH
+  includes:
+    - hamburg
+    - de-hh
+    - hh
+    - hamburg land
+  category: LAND

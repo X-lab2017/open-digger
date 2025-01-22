@@ -1,0 +1,11 @@
+name: Sóc Trăng
+type: Division-1
+meta:
+  alpha2: VN-52
+  includes:
+    - sóc trăng
+    - vn-52
+    - '52'
+    - sóc trăng province
+    - soc trang
+  category: PROVINCE

@@ -1,0 +1,10 @@
+name: Gornja Radgona
+type: Division-1
+meta:
+  alpha2: SI-029
+  includes:
+    - gornja radgona
+    - si-029
+    - '029'
+    - gornja radgona municipality
+  category: MUNICIPALITY

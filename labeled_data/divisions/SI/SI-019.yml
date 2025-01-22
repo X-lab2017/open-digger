@@ -1,0 +1,10 @@
+name: Divača
+type: Division-1
+meta:
+  alpha2: SI-019
+  includes:
+    - divača
+    - si-019
+    - '019'
+    - divača municipality
+  category: MUNICIPALITY

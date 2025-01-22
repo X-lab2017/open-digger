@@ -1,0 +1,12 @@
+name: Territoires du Nord-Ouest
+type: Division-1
+meta:
+  alpha2: CA-NT
+  includes:
+    - northwest territories
+    - ca-nt
+    - nt
+    - northwest territories territory
+    - territoires du nord-ouest
+    - territoires du nord-ouest territory
+  category: TERRITORY

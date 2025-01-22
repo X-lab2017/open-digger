@@ -1,0 +1,10 @@
+name: Gornji Petrovci
+type: Division-1
+meta:
+  alpha2: SI-031
+  includes:
+    - gornji petrovci
+    - si-031
+    - '031'
+    - gornji petrovci municipality
+  category: MUNICIPALITY

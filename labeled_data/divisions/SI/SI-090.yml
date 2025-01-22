@@ -1,0 +1,12 @@
+name: Piran
+type: Division-1
+meta:
+  alpha2: SI-090
+  includes:
+    - piran
+    - si-090
+    - '090'
+    - piran municipality
+    - pirano
+    - pirano municipality
+  category: MUNICIPALITY

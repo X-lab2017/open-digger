@@ -1,0 +1,10 @@
+name: Sonsonate
+type: Division-1
+meta:
+  alpha2: SV-SO
+  includes:
+    - sonsonate
+    - sv-so
+    - so
+    - sonsonate department
+  category: DEPARTMENT

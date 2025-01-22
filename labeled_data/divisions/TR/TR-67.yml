@@ -1,0 +1,10 @@
+name: Zonguldak
+type: Division-1
+meta:
+  alpha2: TR-67
+  includes:
+    - zonguldak
+    - tr-67
+    - '67'
+    - zonguldak province
+  category: PROVINCE

@@ -1,0 +1,10 @@
+name: Banaadir
+type: Division-1
+meta:
+  alpha2: SO-BN
+  includes:
+    - banaadir
+    - so-bn
+    - bn
+    - banaadir region
+  category: REGION

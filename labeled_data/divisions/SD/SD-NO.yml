@@ -1,0 +1,12 @@
+name: Northern
+type: Division-1
+meta:
+  alpha2: SD-NO
+  includes:
+    - ash shamālīyah
+    - sd-no
+    - 'no'
+    - ash shamālīyah state
+    - northern
+    - northern state
+  category: STATE

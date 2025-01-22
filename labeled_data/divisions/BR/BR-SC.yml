@@ -1,0 +1,11 @@
+name: Santa Catarina
+type: Division-1
+meta:
+  alpha2: BR-SC
+  includes:
+    - santa catarina
+    - br-sc
+    - sc
+    - santa catarina state
+    - state of santa catarina
+  category: STATE

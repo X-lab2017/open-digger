@@ -1,0 +1,10 @@
+name: Xgħajra
+type: Division-1
+meta:
+  alpha2: MT-63
+  includes:
+    - xgħajra
+    - mt-63
+    - '63'
+    - xgħajra local council
+  category: LOCAL COUNCIL

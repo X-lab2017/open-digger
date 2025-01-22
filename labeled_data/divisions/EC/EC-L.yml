@@ -1,0 +1,10 @@
+name: Loja
+type: Division-1
+meta:
+  alpha2: EC-L
+  includes:
+    - loja
+    - ec-l
+    - l
+    - loja province
+  category: PROVINCE

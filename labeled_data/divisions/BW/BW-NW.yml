@@ -1,0 +1,11 @@
+name: North West
+type: Division-1
+meta:
+  alpha2: BW-NW
+  includes:
+    - north west
+    - bw-nw
+    - nw
+    - north west district
+    - north-west district
+  category: DISTRICT

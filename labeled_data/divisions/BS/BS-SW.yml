@@ -1,0 +1,10 @@
+name: Spanish Wells
+type: Division-1
+meta:
+  alpha2: BS-SW
+  includes:
+    - spanish wells
+    - bs-sw
+    - sw
+    - spanish wells district
+  category: DISTRICT

@@ -1,0 +1,10 @@
+name: Kebbi
+type: Division-1
+meta:
+  alpha2: NG-KE
+  includes:
+    - kebbi
+    - ng-ke
+    - ke
+    - kebbi state
+  category: STATE

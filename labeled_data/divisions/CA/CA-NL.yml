@@ -1,0 +1,12 @@
+name: Terre-Neuve-et-Labrador
+type: Division-1
+meta:
+  alpha2: CA-NL
+  includes:
+    - newfoundland and labrador
+    - ca-nl
+    - nl
+    - newfoundland and labrador province
+    - terre-neuve-et-labrador
+    - terre-neuve-et-labrador province
+  category: PROVINCE

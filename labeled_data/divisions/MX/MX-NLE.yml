@@ -1,0 +1,12 @@
+name: Nuevo León
+type: Division-1
+meta:
+  alpha2: MX-NLE
+  includes:
+    - nuevo león
+    - mx-nle
+    - nle
+    - nuevo león state
+    - nuevo leon
+    - nl
+  category: STATE

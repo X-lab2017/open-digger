@@ -1,0 +1,10 @@
+name: Uttar Pradesh
+type: Division-1
+meta:
+  alpha2: IN-UP
+  includes:
+    - uttar pradesh
+    - in-up
+    - up
+    - uttar pradesh state
+  category: STATE

@@ -1,0 +1,10 @@
+name: Van
+type: Division-1
+meta:
+  alpha2: TR-65
+  includes:
+    - van
+    - tr-65
+    - '65'
+    - van province
+  category: PROVINCE

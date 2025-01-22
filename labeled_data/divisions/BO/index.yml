@@ -1,0 +1,85 @@
+name: Bolivia, Plurinational State of
+type: Division-0
+meta:
+  alpha2: BO
+  includes:
+    - Bolivia, Plurinational State of
+    - BO
+    - '068'
+    - the Republic of Bolivia
+    - 玻利维亚
+    - Bolivia
+  name_full: the Republic of Bolivia
+  name_zh: 玻利维亚
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 37160
+    - year: 2020
+      quarter: 2
+      count: 41552
+    - year: 2020
+      quarter: 3
+      count: 45980
+    - year: 2020
+      quarter: 4
+      count: 49502
+    - year: 2021
+      quarter: 1
+      count: 52758
+    - year: 2021
+      quarter: 2
+      count: 56922
+    - year: 2021
+      quarter: 3
+      count: 61087
+    - year: 2021
+      quarter: 4
+      count: 64703
+    - year: 2022
+      quarter: 1
+      count: 69079
+    - year: 2022
+      quarter: 2
+      count: 74140
+    - year: 2022
+      quarter: 3
+      count: 79145
+    - year: 2022
+      quarter: 4
+      count: 84311
+    - year: 2023
+      quarter: 1
+      count: 89616
+    - year: 2023
+      quarter: 2
+      count: 98155
+    - year: 2023
+      quarter: 3
+      count: 105628
+    - year: 2023
+      quarter: 4
+      count: 113392
+    - year: 2024
+      quarter: 1
+      count: 121083
+    - year: 2024
+      quarter: 2
+      count: 128989
+    - year: 2024
+      quarter: 3
+      count: 137013
+    - year: 2024
+      quarter: 4
+      count: 145136
+data:
+  labels:
+    - BO-H
+    - BO-C
+    - BO-B
+    - BO-L
+    - BO-O
+    - BO-N
+    - BO-P
+    - BO-S
+    - BO-T

@@ -1,0 +1,12 @@
+name: Ucayali
+type: Division-1
+meta:
+  alpha2: PE-UCA
+  includes:
+    - ucayali
+    - pe-uca
+    - uca
+    - ucayali region
+    - ukayali
+    - ukayali region
+  category: REGION

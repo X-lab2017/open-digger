@@ -1,0 +1,10 @@
+name: Glarus
+type: Division-1
+meta:
+  alpha2: CH-GL
+  includes:
+    - glarus
+    - ch-gl
+    - gl
+    - glarus canton
+  category: CANTON

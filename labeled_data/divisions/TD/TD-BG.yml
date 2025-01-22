@@ -1,0 +1,14 @@
+name: Baḩr al Ghazāl
+type: Division-1
+meta:
+  alpha2: TD-BG
+  includes:
+    - bahr el ghazal
+    - td-bg
+    - bg
+    - bahr el ghazal province
+    - barh-el-ghazal
+    - barh-el-ghazal province
+    - baḩr al ghazāl
+    - baḩr al ghazāl province
+  category: PROVINCE

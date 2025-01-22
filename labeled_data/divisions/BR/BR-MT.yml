@@ -1,0 +1,11 @@
+name: Mato Grosso
+type: Division-1
+meta:
+  alpha2: BR-MT
+  includes:
+    - mato grosso
+    - br-mt
+    - mt
+    - mato grosso state
+    - state of mato grosso
+  category: STATE

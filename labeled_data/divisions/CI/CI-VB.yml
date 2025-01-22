@@ -1,0 +1,10 @@
+name: Vallée du Bandama
+type: Division-1
+meta:
+  alpha2: CI-VB
+  includes:
+    - vallée du bandama
+    - ci-vb
+    - vb
+    - vallée du bandama district
+  category: DISTRICT

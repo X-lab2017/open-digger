@@ -1,0 +1,36 @@
+name: Provence-Alpes-Côte-d’Azur
+type: Division-1
+meta:
+  alpha2: FR-PAC
+  includes:
+    - alpes-maritimes
+    - fr-06
+    - '06'
+    - alpes-maritimes metropolitan department
+    - alpes-de-haute-provence
+    - fr-04
+    - '04'
+    - alpes-de-haute-provence metropolitan department
+    - bouches-du-rhône
+    - fr-13
+    - '13'
+    - bouches-du-rhône metropolitan department
+    - hautes-alpes
+    - fr-05
+    - '05'
+    - hautes-alpes metropolitan department
+    - provence-alpes-côte-d’azur
+    - fr-pac
+    - pac
+    - provence-alpes-côte-d’azur metropolitan region
+    - var
+    - fr-83
+    - '83'
+    - var metropolitan department
+    - vaucluse
+    - fr-84
+    - '84'
+    - vaucluse metropolitan department
+    - provence-alpes-côte d'azur
+    - paca
+  category: METROPOLITAN REGION

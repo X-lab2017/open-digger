@@ -1,0 +1,19 @@
+name: Dakhla-Oued Ed-Dahab
+type: Division-1
+meta:
+  alpha2: MA-12
+  includes:
+    - aousserd
+    - ma-aou
+    - aou
+    - aousserd province
+    - dakhla-oued ed-dahab
+    - ma-12
+    - '12'
+    - dakhla-oued ed-dahab region
+    - oued ed-dahab
+    - ma-oud
+    - oud
+    - oued ed-dahab province
+    - western sahara
+  category: REGION

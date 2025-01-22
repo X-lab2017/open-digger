@@ -1,0 +1,10 @@
+name: Lamu
+type: Division-1
+meta:
+  alpha2: KE-21
+  includes:
+    - lamu
+    - ke-21
+    - '21'
+    - lamu county
+  category: COUNTY

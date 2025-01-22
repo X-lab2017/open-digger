@@ -1,0 +1,12 @@
+name: Tabūk
+type: Division-1
+meta:
+  alpha2: SA-07
+  includes:
+    - tabūk
+    - sa-07
+    - '07'
+    - tabūk region
+    - tab
+    - tabuk province
+  category: REGION

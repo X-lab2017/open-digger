@@ -1,0 +1,11 @@
+name: Genève
+type: Division-1
+meta:
+  alpha2: CH-GE
+  includes:
+    - genève
+    - ch-ge
+    - ge
+    - genève canton
+    - geneva
+  category: CANTON

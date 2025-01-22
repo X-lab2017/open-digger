@@ -1,0 +1,11 @@
+name: Saint James
+type: Division-1
+meta:
+  alpha2: JM-08
+  includes:
+    - saint james
+    - jm-08
+    - '08'
+    - saint james parish
+    - st. james parish
+  category: PARISH

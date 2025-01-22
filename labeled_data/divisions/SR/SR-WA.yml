@@ -1,0 +1,10 @@
+name: Wanica
+type: Division-1
+meta:
+  alpha2: SR-WA
+  includes:
+    - wanica
+    - sr-wa
+    - wa
+    - wanica district
+  category: DISTRICT

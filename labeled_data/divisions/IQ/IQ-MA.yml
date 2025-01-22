@@ -1,0 +1,11 @@
+name: Maysān
+type: Division-1
+meta:
+  alpha2: IQ-MA
+  includes:
+    - maysān
+    - iq-ma
+    - ma
+    - maysān governorate
+    - maysan governorate
+  category: GOVERNORATE

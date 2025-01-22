@@ -1,0 +1,11 @@
+name: Yoro
+type: Division-1
+meta:
+  alpha2: HN-YO
+  includes:
+    - yoro
+    - hn-yo
+    - yo
+    - yoro department
+    - hnyr
+  category: DEPARTMENT

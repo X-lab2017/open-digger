@@ -1,0 +1,10 @@
+name: Jhārkhand
+type: Division-1
+meta:
+  alpha2: IN-JH
+  includes:
+    - jhārkhand
+    - in-jh
+    - jh
+    - jhārkhand state
+  category: STATE

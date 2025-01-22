@@ -1,0 +1,10 @@
+name: Anambra
+type: Division-1
+meta:
+  alpha2: NG-AN
+  includes:
+    - anambra
+    - ng-an
+    - an
+    - anambra state
+  category: STATE

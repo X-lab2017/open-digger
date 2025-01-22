@@ -1,0 +1,10 @@
+name: Mavrovo i Rostuše
+type: Division-1
+meta:
+  alpha2: MK-607
+  includes:
+    - mavrovo i rostuše
+    - mk-607
+    - '607'
+    - mavrovo i rostuše municipality
+  category: MUNICIPALITY

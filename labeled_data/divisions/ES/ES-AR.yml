@@ -1,0 +1,23 @@
+name: Aragón
+type: Division-1
+meta:
+  alpha2: ES-AR
+  includes:
+    - aragón
+    - es-ar
+    - ar
+    - aragón autonomous community
+    - huesca
+    - es-hu
+    - hu
+    - huesca province
+    - teruel
+    - es-te
+    - te
+    - teruel province
+    - zaragoza
+    - es-z
+    - z
+    - zaragoza province
+    - aragon
+  category: AUTONOMOUS COMMUNITY

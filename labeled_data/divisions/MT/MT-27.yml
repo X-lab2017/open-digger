@@ -1,0 +1,11 @@
+name: Marsaskala
+type: Division-1
+meta:
+  alpha2: MT-27
+  includes:
+    - marsaskala
+    - mt-27
+    - '27'
+    - marsaskala local council
+    - marsascala
+  category: LOCAL COUNCIL

@@ -1,0 +1,13 @@
+name: Xaignabouli
+type: Division-1
+meta:
+  alpha2: LA-XA
+  includes:
+    - xaignabouli
+    - la-xa
+    - xa
+    - xaignabouli province
+    - xayabury
+    - xayabury province
+    - sainyabuli province
+  category: PROVINCE

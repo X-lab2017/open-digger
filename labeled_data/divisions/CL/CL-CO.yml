@@ -1,0 +1,11 @@
+name: Coquimbo
+type: Division-1
+meta:
+  alpha2: CL-CO
+  includes:
+    - coquimbo
+    - cl-co
+    - co
+    - coquimbo region
+    - iv
+  category: REGION

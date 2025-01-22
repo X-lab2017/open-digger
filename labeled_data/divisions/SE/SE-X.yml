@@ -1,0 +1,12 @@
+name: Gävleborgs län
+type: Division-1
+meta:
+  alpha2: SE-X
+  includes:
+    - gävleborgs län
+    - se-x
+    - x
+    - gävleborgs län county
+    - gävleborg county
+    - gavleborg county
+  category: COUNTY

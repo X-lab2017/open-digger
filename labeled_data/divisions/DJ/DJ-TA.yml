@@ -1,0 +1,12 @@
+name: Tājūrah
+type: Division-1
+meta:
+  alpha2: DJ-TA
+  includes:
+    - tadjourah
+    - dj-ta
+    - ta
+    - tadjourah region
+    - tājūrah
+    - tājūrah region
+  category: REGION

@@ -1,0 +1,10 @@
+name: Kobarid
+type: Division-1
+meta:
+  alpha2: SI-046
+  includes:
+    - kobarid
+    - si-046
+    - '046'
+    - kobarid municipality
+  category: MUNICIPALITY

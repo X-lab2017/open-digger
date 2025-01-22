@@ -1,0 +1,10 @@
+name: Luqa
+type: Division-1
+meta:
+  alpha2: MT-25
+  includes:
+    - luqa
+    - mt-25
+    - '25'
+    - luqa local council
+  category: LOCAL COUNCIL

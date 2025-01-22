@@ -1,0 +1,10 @@
+name: Al Janūbīyah
+type: Division-1
+meta:
+  alpha2: BH-14
+  includes:
+    - al janūbīyah
+    - bh-14
+    - '14'
+    - al janūbīyah governorate
+  category: GOVERNORATE

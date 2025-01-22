@@ -1,0 +1,13 @@
+name: Lima
+type: Division-1
+meta:
+  alpha2: PE-LIM
+  includes:
+    - lima
+    - pe-lim
+    - lim
+    - lima region
+    - gobierno regional de lima
+    - lima province
+    - provincia de lima
+  category: REGION

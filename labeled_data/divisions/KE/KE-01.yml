@@ -1,0 +1,10 @@
+name: Baringo
+type: Division-1
+meta:
+  alpha2: KE-01
+  includes:
+    - baringo
+    - ke-01
+    - '01'
+    - baringo county
+  category: COUNTY

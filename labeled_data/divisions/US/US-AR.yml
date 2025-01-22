@@ -1,0 +1,10 @@
+name: Arkansas
+type: Division-1
+meta:
+  alpha2: US-AR
+  includes:
+    - arkansas
+    - us-ar
+    - ar
+    - arkansas state
+  category: STATE

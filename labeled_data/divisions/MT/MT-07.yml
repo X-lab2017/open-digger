@@ -1,0 +1,10 @@
+name: Dingli
+type: Division-1
+meta:
+  alpha2: MT-07
+  includes:
+    - dingli
+    - mt-07
+    - '07'
+    - dingli local council
+  category: LOCAL COUNCIL

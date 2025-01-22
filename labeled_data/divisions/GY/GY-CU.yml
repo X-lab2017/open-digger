@@ -1,0 +1,10 @@
+name: Cuyuni-Mazaruni
+type: Division-1
+meta:
+  alpha2: GY-CU
+  includes:
+    - cuyuni-mazaruni
+    - gy-cu
+    - cu
+    - cuyuni-mazaruni region
+  category: REGION

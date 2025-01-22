@@ -1,0 +1,10 @@
+name: Aargau
+type: Division-1
+meta:
+  alpha2: CH-AG
+  includes:
+    - aargau
+    - ch-ag
+    - ag
+    - aargau canton
+  category: CANTON

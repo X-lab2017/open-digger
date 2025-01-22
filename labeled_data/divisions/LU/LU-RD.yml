@@ -1,0 +1,14 @@
+name: Redingen
+type: Division-1
+meta:
+  alpha2: LU-RD
+  includes:
+    - redange
+    - lu-rd
+    - rd
+    - redange canton
+    - redingen
+    - redingen canton
+    - réiden-atert
+    - réiden-atert canton
+  category: CANTON

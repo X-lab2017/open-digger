@@ -1,0 +1,10 @@
+name: Long An
+type: Division-1
+meta:
+  alpha2: VN-41
+  includes:
+    - long an
+    - vn-41
+    - '41'
+    - long an province
+  category: PROVINCE

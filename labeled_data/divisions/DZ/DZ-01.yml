@@ -1,0 +1,10 @@
+name: Adrar
+type: Division-1
+meta:
+  alpha2: DZ-01
+  includes:
+    - adrar
+    - dz-01
+    - '01'
+    - adrar province
+  category: PROVINCE

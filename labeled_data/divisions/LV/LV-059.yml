@@ -1,0 +1,12 @@
+name: Madonas novads
+type: Division-1
+meta:
+  alpha2: LV-059
+  includes:
+    - madonas novads
+    - lv-059
+    - '059'
+    - madonas novads municipality
+    - madona
+    - madona municipality
+  category: MUNICIPALITY

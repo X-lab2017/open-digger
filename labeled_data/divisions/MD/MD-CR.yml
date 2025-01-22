@@ -1,0 +1,10 @@
+name: Criuleni
+type: Division-1
+meta:
+  alpha2: MD-CR
+  includes:
+    - criuleni
+    - md-cr
+    - cr
+    - criuleni district
+  category: DISTRICT

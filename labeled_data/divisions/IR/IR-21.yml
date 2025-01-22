@@ -1,0 +1,11 @@
+name: Yazd
+type: Division-1
+meta:
+  alpha2: IR-21
+  includes:
+    - yazd
+    - ir-21
+    - '21'
+    - yazd province
+    - استان یزد
+  category: PROVINCE

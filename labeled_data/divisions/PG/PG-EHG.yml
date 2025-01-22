@@ -1,0 +1,10 @@
+name: Eastern Highlands
+type: Division-1
+meta:
+  alpha2: PG-EHG
+  includes:
+    - eastern highlands
+    - pg-ehg
+    - ehg
+    - eastern highlands province
+  category: PROVINCE

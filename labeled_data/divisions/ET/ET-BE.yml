@@ -1,0 +1,13 @@
+name: Benshangul-Gumaz
+type: Division-1
+meta:
+  alpha2: ET-BE
+  includes:
+    - benshangul-gumaz
+    - et-be
+    - be
+    - benshangul-gumaz regional state
+    - bīnshangul gumuz
+    - bīnshangul gumuz regional state
+    - benishangul-gumuz
+  category: REGIONAL STATE

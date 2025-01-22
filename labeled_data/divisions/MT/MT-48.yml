@@ -1,0 +1,12 @@
+name: Saint Julian's
+type: Division-1
+meta:
+  alpha2: MT-48
+  includes:
+    - saint julian's
+    - mt-48
+    - '48'
+    - saint julian's local council
+    - san ġiljan
+    - san ġiljan local council
+  category: LOCAL COUNCIL

@@ -1,0 +1,10 @@
+name: Polynésie française
+type: Division-1
+meta:
+  alpha2: FR-PF
+  includes:
+    - polynésie française
+    - fr-pf
+    - pf
+    - polynésie française overseas collectivity
+  category: OVERSEAS COLLECTIVITY

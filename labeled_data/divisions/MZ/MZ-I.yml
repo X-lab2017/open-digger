@@ -1,0 +1,10 @@
+name: Inhambane
+type: Division-1
+meta:
+  alpha2: MZ-I
+  includes:
+    - inhambane
+    - mz-i
+    - i
+    - inhambane province
+  category: PROVINCE

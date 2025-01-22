@@ -1,0 +1,14 @@
+name: Moquegua
+type: Division-1
+meta:
+  alpha2: PE-MOQ
+  includes:
+    - moquegua
+    - pe-moq
+    - moq
+    - moquegua region
+    - moqwegwa
+    - moqwegwa region
+    - muqiwa
+    - muqiwa region
+  category: REGION

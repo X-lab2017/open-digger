@@ -1,0 +1,10 @@
+name: Kaffrine
+type: Division-1
+meta:
+  alpha2: SN-KA
+  includes:
+    - kaffrine
+    - sn-ka
+    - ka
+    - kaffrine region
+  category: REGION

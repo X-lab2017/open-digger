@@ -1,0 +1,10 @@
+name: Raški okrug
+type: Division-1
+meta:
+  alpha2: RS-18
+  includes:
+    - raški okrug
+    - rs-18
+    - '18'
+    - raški okrug district
+  category: DISTRICT

@@ -1,0 +1,15 @@
+name: Ul'yanovskaya oblast'
+type: Division-1
+meta:
+  alpha2: RU-ULY
+  includes:
+    - ul'janovskaja oblast'
+    - ru-uly
+    - uly
+    - ul'janovskaja oblast' administrative region
+    - ul'yanovskaya oblast'
+    - ul'yanovskaya oblast' administrative region
+    - ulyanovsk oblast
+    - ul'yanovsk
+    - ul’yanovsk
+  category: ADMINISTRATIVE REGION

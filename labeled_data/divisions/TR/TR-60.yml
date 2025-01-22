@@ -1,0 +1,10 @@
+name: Tokat
+type: Division-1
+meta:
+  alpha2: TR-60
+  includes:
+    - tokat
+    - tr-60
+    - '60'
+    - tokat province
+  category: PROVINCE

@@ -1,0 +1,10 @@
+name: Nordland
+type: Division-1
+meta:
+  alpha2: NO-18
+  includes:
+    - nordland
+    - no-18
+    - '18'
+    - nordland county
+  category: COUNTY

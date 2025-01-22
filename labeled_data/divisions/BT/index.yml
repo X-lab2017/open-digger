@@ -1,0 +1,95 @@
+name: Bhutan
+type: Division-0
+meta:
+  alpha2: BT
+  includes:
+    - Bhutan
+    - BT
+    - '064'
+    - the Kingdom of Bhutan
+    - 不丹
+  name_full: the Kingdom of Bhutan
+  name_zh: 不丹
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 1730
+    - year: 2020
+      quarter: 2
+      count: 2007
+    - year: 2020
+      quarter: 3
+      count: 2384
+    - year: 2020
+      quarter: 4
+      count: 2654
+    - year: 2021
+      quarter: 1
+      count: 2895
+    - year: 2021
+      quarter: 2
+      count: 3155
+    - year: 2021
+      quarter: 3
+      count: 3634
+    - year: 2021
+      quarter: 4
+      count: 3965
+    - year: 2022
+      quarter: 1
+      count: 4315
+    - year: 2022
+      quarter: 2
+      count: 4588
+    - year: 2022
+      quarter: 3
+      count: 4914
+    - year: 2022
+      quarter: 4
+      count: 5279
+    - year: 2023
+      quarter: 1
+      count: 5648
+    - year: 2023
+      quarter: 2
+      count: 6143
+    - year: 2023
+      quarter: 3
+      count: 6701
+    - year: 2023
+      quarter: 4
+      count: 7190
+    - year: 2024
+      quarter: 1
+      count: 7997
+    - year: 2024
+      quarter: 2
+      count: 8430
+    - year: 2024
+      quarter: 3
+      count: 9024
+    - year: 2024
+      quarter: 4
+      count: 9635
+data:
+  labels:
+    - BT-33
+    - BT-12
+    - BT-22
+    - BT-GA
+    - BT-13
+    - BT-44
+    - BT-42
+    - BT-11
+    - BT-43
+    - BT-23
+    - BT-45
+    - BT-14
+    - BT-31
+    - BT-15
+    - BT-TY
+    - BT-41
+    - BT-32
+    - BT-21
+    - BT-24
+    - BT-34

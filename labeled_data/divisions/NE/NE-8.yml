@@ -1,0 +1,10 @@
+name: Niamey
+type: Division-1
+meta:
+  alpha2: NE-8
+  includes:
+    - niamey
+    - ne-8
+    - '8'
+    - niamey urban community
+  category: URBAN COMMUNITY

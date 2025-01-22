@@ -1,0 +1,11 @@
+name: Prilep
+type: Division-1
+meta:
+  alpha2: MK-508
+  includes:
+    - prilep
+    - mk-508
+    - '508'
+    - prilep municipality
+    - municipality of prilep
+  category: MUNICIPALITY

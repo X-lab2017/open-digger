@@ -1,0 +1,13 @@
+name: Champasak
+type: Division-1
+meta:
+  alpha2: LA-CH
+  includes:
+    - champasak
+    - la-ch
+    - ch
+    - champasak province
+    - champasack
+    - champasack province
+    - cs
+  category: PROVINCE

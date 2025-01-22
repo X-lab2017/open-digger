@@ -1,0 +1,10 @@
+name: Kommune Qeqertalik
+type: Division-1
+meta:
+  alpha2: GL-QT
+  includes:
+    - kommune qeqertalik
+    - gl-qt
+    - qt
+    - kommune qeqertalik municipality
+  category: MUNICIPALITY

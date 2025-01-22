@@ -198,7 +198,7 @@ GROUP BY c`);
       }
       const findCountry = (labelId: string) => {
         const label = labels.find(l => l.identifier === labelId)!;
-        const countryLabelId = label.parents.find(p => p.startsWith(':regions'));
+        const countryLabelId = label.parents.find(p => p.startsWith(':divisions'));
         if (countryLabelId) {
           const countryLabel = labels.find(l => l.identifier === countryLabelId)!;
           if (!countryFlagMap.has(countryLabel.name)) {
@@ -249,7 +249,7 @@ GROUP BY c`);
       const label = labels.find(l => l.identifier === id)!;
       const findCountry = (labelId: string) => {
         const label = labels.find(l => l.identifier === labelId)!;
-        const countryLabelId = label.parents.find(p => p.startsWith(':regions'));
+        const countryLabelId = label.parents.find(p => p.startsWith(':divisions'));
         if (countryLabelId) {
           const countryLabel = labels.find(l => l.identifier === countryLabelId)!;
           const countryItem = countryInfo.find(c => c.name === countryLabel.name);

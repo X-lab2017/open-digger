@@ -1,0 +1,10 @@
+name: Horjul
+type: Division-1
+meta:
+  alpha2: SI-162
+  includes:
+    - horjul
+    - si-162
+    - '162'
+    - horjul municipality
+  category: MUNICIPALITY

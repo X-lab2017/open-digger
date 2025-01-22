@@ -1,0 +1,10 @@
+name: Zrnovci
+type: Division-1
+meta:
+  alpha2: MK-204
+  includes:
+    - zrnovci
+    - mk-204
+    - '204'
+    - zrnovci municipality
+  category: MUNICIPALITY

@@ -1,0 +1,10 @@
+name: Oğuz
+type: Division-1
+meta:
+  alpha2: AZ-OGU
+  includes:
+    - oğuz
+    - az-ogu
+    - ogu
+    - oğuz rayon
+  category: RAYON

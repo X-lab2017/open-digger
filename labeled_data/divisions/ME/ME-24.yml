@@ -1,0 +1,10 @@
+name: Tuzi
+type: Division-1
+meta:
+  alpha2: ME-24
+  includes:
+    - tuzi
+    - me-24
+    - '24'
+    - tuzi municipality
+  category: MUNICIPALITY

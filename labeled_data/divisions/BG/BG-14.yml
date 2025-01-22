@@ -1,0 +1,11 @@
+name: Pernik
+type: Division-1
+meta:
+  alpha2: BG-14
+  includes:
+    - pernik
+    - bg-14
+    - '14'
+    - pernik district
+    - pernik province
+  category: DISTRICT

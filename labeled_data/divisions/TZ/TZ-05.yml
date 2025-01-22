@@ -1,0 +1,10 @@
+name: Kagera
+type: Division-1
+meta:
+  alpha2: TZ-05
+  includes:
+    - kagera
+    - tz-05
+    - '05'
+    - kagera region
+  category: REGION

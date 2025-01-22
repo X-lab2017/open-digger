@@ -1,0 +1,14 @@
+name: Lappland
+type: Division-1
+meta:
+  alpha2: FI-10
+  includes:
+    - lappi
+    - fi-10
+    - '10'
+    - lappi region
+    - lappland
+    - lappland region
+    - lapland
+    - fi1a3
+  category: REGION

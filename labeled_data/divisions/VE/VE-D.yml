@@ -1,0 +1,11 @@
+name: Aragua
+type: Division-1
+meta:
+  alpha2: VE-D
+  includes:
+    - aragua
+    - ve-d
+    - d
+    - aragua state
+    - ar
+  category: STATE

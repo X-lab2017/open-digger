@@ -1,0 +1,10 @@
+name: Somogy
+type: Division-1
+meta:
+  alpha2: HU-SO
+  includes:
+    - somogy
+    - hu-so
+    - so
+    - somogy county
+  category: COUNTY

@@ -1,0 +1,80 @@
+name: Eritrea
+type: Division-0
+meta:
+  alpha2: ER
+  includes:
+    - Eritrea
+    - ER
+    - '232'
+    - 厄立特里亚
+  name_full: Eritrea
+  name_zh: 厄立特里亚
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 129
+    - year: 2020
+      quarter: 2
+      count: 132
+    - year: 2020
+      quarter: 3
+      count: 139
+    - year: 2020
+      quarter: 4
+      count: 549
+    - year: 2021
+      quarter: 1
+      count: 1015
+    - year: 2021
+      quarter: 2
+      count: 1329
+    - year: 2021
+      quarter: 3
+      count: 1382
+    - year: 2021
+      quarter: 4
+      count: 1454
+    - year: 2022
+      quarter: 1
+      count: 1581
+    - year: 2022
+      quarter: 2
+      count: 1738
+    - year: 2022
+      quarter: 3
+      count: 1663
+    - year: 2022
+      quarter: 4
+      count: 1639
+    - year: 2023
+      quarter: 1
+      count: 1601
+    - year: 2023
+      quarter: 2
+      count: 1577
+    - year: 2023
+      quarter: 3
+      count: 1590
+    - year: 2023
+      quarter: 4
+      count: 1637
+    - year: 2024
+      quarter: 1
+      count: 1688
+    - year: 2024
+      quarter: 2
+      count: 1767
+    - year: 2024
+      quarter: 3
+      count: 1754
+    - year: 2024
+      quarter: 4
+      count: 1708
+data:
+  labels:
+    - ER-MA
+    - ER-DU
+    - ER-AN
+    - ER-DK
+    - ER-GB
+    - ER-SK

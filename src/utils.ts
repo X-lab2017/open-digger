@@ -43,6 +43,27 @@ export async function readCsvLine(path: string, online: (row: string[]) => any):
   });
 }
 
+export async function readCsvArray(path: string, keys: Array<{ name: string, type: 'string' | 'number' }>): Promise<any[]> {
+  const res: any[] = [];
+  await new Promise<void>(resolve => {
+    const inputStream = createReadStream(path, 'utf-8');
+    inputStream
+      .pipe(new CsvReadableStream({ trim: true, skipHeader: true }))
+      .on('data', (row: string[]) => {
+        const item: any = {};
+        keys.forEach((key, index) => {
+          let value: any = row[index];
+          if (key.type === 'number') value = +value;
+          item[key.name] = value;
+        });
+        res.push(item);
+      })
+      .on('end', () => {
+        resolve();
+      });
+  });
+  return res;
+}
 
 export async function waitFor(mill: number): Promise<void> {
   return new Promise(resolve => {

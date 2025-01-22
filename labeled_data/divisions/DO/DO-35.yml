@@ -1,0 +1,22 @@
+name: Cibao Norte
+type: Division-1
+meta:
+  alpha2: DO-35
+  includes:
+    - cibao norte
+    - do-35
+    - '35'
+    - cibao norte region
+    - espaillat
+    - do-09
+    - '09'
+    - espaillat province
+    - puerto plata
+    - do-18
+    - '18'
+    - puerto plata province
+    - santiago
+    - do-25
+    - '25'
+    - santiago province
+  category: REGION

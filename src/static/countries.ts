@@ -20501,8 +20501,7 @@ export const countryInfo = [
     "code": "826",
     "a2": "GB",
     "includes": [
-      "United Kingdom",
-      "British Virgin Islands"
+      "United Kingdom"
     ],
     "developerCount": {
       "2020Q1": 1635516,
@@ -20557,9 +20556,7 @@ export const countryInfo = [
     "code": "840",
     "a2": "US",
     "includes": [
-      "United States",
-      "U.S. Virgin Islands",
-      "US Virgin Islands"
+      "United States"
     ],
     "developerCount": {
       "2020Q1": 9763122,

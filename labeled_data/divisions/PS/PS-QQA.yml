@@ -1,0 +1,12 @@
+name: Qalqīlyah
+type: Division-1
+meta:
+  alpha2: PS-QQA
+  includes:
+    - qalqilya
+    - ps-qqa
+    - qqa
+    - qalqilya governorate
+    - qalqīlyah
+    - qalqīlyah governorate
+  category: GOVERNORATE

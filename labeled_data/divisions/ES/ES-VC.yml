@@ -1,0 +1,31 @@
+name: Valenciana
+type: Division-1
+meta:
+  alpha2: ES-VC
+  includes:
+    - alacant
+    - es-a
+    - a
+    - alacant province
+    - alicante
+    - alicante province
+    - castelló
+    - es-cs
+    - cs
+    - castelló province
+    - castellón
+    - castellón province
+    - valencia
+    - es-v
+    - v
+    - valencia province
+    - valenciana
+    - es-vc
+    - vc
+    - valenciana autonomous community
+    - valència
+    - valència province
+    - comunitat valenciana
+    - valencian community
+    - comunidad valenciana
+  category: AUTONOMOUS COMMUNITY

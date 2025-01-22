@@ -1,0 +1,12 @@
+name: Kymmenedalen
+type: Division-1
+meta:
+  alpha2: FI-09
+  includes:
+    - kymenlaakso
+    - fi-09
+    - '09'
+    - kymenlaakso region
+    - kymmenedalen
+    - kymmenedalen region
+  category: REGION

@@ -1,0 +1,12 @@
+name: Al Anbār
+type: Division-1
+meta:
+  alpha2: IQ-AN
+  includes:
+    - al anbār
+    - iq-an
+    - an
+    - al anbār governorate
+    - al anbar governorate
+    - al-anbar governorate
+  category: GOVERNORATE

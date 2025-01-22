@@ -1,0 +1,10 @@
+name: Jan Mayen
+type: Division-1
+meta:
+  alpha2: NO-22
+  includes:
+    - jan mayen
+    - no-22
+    - '22'
+    - jan mayen arctic region
+  category: ARCTIC REGION

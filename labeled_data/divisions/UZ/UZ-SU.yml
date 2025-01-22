@@ -1,0 +1,11 @@
+name: Surxondaryo
+type: Division-1
+meta:
+  alpha2: UZ-SU
+  includes:
+    - surxondaryo
+    - uz-su
+    - su
+    - surxondaryo region
+    - surxondaryo viloyati
+  category: REGION

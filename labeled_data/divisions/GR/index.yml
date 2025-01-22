@@ -1,0 +1,89 @@
+name: Greece
+type: Division-0
+meta:
+  alpha2: GR
+  includes:
+    - Greece
+    - GR
+    - '300'
+    - the Hellenic Republic
+    - 希腊
+  name_full: the Hellenic Republic
+  name_zh: 希腊
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 114553
+    - year: 2020
+      quarter: 2
+      count: 124884
+    - year: 2020
+      quarter: 3
+      count: 132636
+    - year: 2020
+      quarter: 4
+      count: 144381
+    - year: 2021
+      quarter: 1
+      count: 154874
+    - year: 2021
+      quarter: 2
+      count: 162866
+    - year: 2021
+      quarter: 3
+      count: 170670
+    - year: 2021
+      quarter: 4
+      count: 178668
+    - year: 2022
+      quarter: 1
+      count: 189845
+    - year: 2022
+      quarter: 2
+      count: 198779
+    - year: 2022
+      quarter: 3
+      count: 207257
+    - year: 2022
+      quarter: 4
+      count: 216055
+    - year: 2023
+      quarter: 1
+      count: 225160
+    - year: 2023
+      quarter: 2
+      count: 235213
+    - year: 2023
+      quarter: 3
+      count: 244973
+    - year: 2023
+      quarter: 4
+      count: 255187
+    - year: 2024
+      quarter: 1
+      count: 267659
+    - year: 2024
+      quarter: 2
+      count: 277889
+    - year: 2024
+      quarter: 3
+      count: 288763
+    - year: 2024
+      quarter: 4
+      count: 299578
+data:
+  labels:
+    - GR-A
+    - GR-I
+    - GR-G
+    - GR-C
+    - GR-F
+    - GR-B
+    - GR-M
+    - GR-L
+    - GR-J
+    - GR-H
+    - GR-E
+    - GR-K
+    - GR-69
+    - GR-D

@@ -1,0 +1,11 @@
+name: Minas Gerais
+type: Division-1
+meta:
+  alpha2: BR-MG
+  includes:
+    - minas gerais
+    - br-mg
+    - mg
+    - minas gerais state
+    - state of minas gerais
+  category: STATE

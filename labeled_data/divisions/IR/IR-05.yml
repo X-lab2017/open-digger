@@ -1,0 +1,11 @@
+name: Kermānshāh
+type: Division-1
+meta:
+  alpha2: IR-05
+  includes:
+    - kermānshāh
+    - ir-05
+    - '05'
+    - kermānshāh province
+    - kermanshah province
+  category: PROVINCE

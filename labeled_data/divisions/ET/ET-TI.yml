@@ -1,0 +1,12 @@
+name: Tigrai
+type: Division-1
+meta:
+  alpha2: ET-TI
+  includes:
+    - tigrai
+    - et-ti
+    - ti
+    - tigrai regional state
+    - tigray
+    - tigray regional state
+  category: REGIONAL STATE

@@ -1,0 +1,10 @@
+name: Koror
+type: Division-1
+meta:
+  alpha2: PW-150
+  includes:
+    - koror
+    - pw-150
+    - '150'
+    - koror state
+  category: STATE

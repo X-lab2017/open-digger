@@ -1,0 +1,10 @@
+name: Nagano
+type: Division-1
+meta:
+  alpha2: JP-20
+  includes:
+    - nagano
+    - jp-20
+    - '20'
+    - nagano prefecture
+  category: PREFECTURE

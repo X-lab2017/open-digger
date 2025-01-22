@@ -1,0 +1,10 @@
+name: Bururi
+type: Division-1
+meta:
+  alpha2: BI-BR
+  includes:
+    - bururi
+    - bi-br
+    - br
+    - bururi province
+  category: PROVINCE

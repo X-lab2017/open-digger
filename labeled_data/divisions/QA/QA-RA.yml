@@ -1,0 +1,11 @@
+name: Ar Rayyān
+type: Division-1
+meta:
+  alpha2: QA-RA
+  includes:
+    - ar rayyān
+    - qa-ra
+    - ra
+    - ar rayyān municipality
+    - al rayyan municipality
+  category: MUNICIPALITY

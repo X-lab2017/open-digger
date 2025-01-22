@@ -1,0 +1,10 @@
+name: Zalaegerszeg
+type: Division-1
+meta:
+  alpha2: HU-ZE
+  includes:
+    - zalaegerszeg
+    - hu-ze
+    - ze
+    - zalaegerszeg city with county rights
+  category: CITY WITH COUNTY RIGHTS

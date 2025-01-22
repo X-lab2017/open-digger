@@ -1,0 +1,11 @@
+name: Västra Götalands län
+type: Division-1
+meta:
+  alpha2: SE-O
+  includes:
+    - västra götalands län
+    - se-o
+    - o
+    - västra götalands län county
+    - västra götaland county
+  category: COUNTY

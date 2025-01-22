@@ -1,0 +1,10 @@
+name: Ribnica na Pohorju
+type: Division-1
+meta:
+  alpha2: SI-177
+  includes:
+    - ribnica na pohorju
+    - si-177
+    - '177'
+    - ribnica na pohorju municipality
+  category: MUNICIPALITY

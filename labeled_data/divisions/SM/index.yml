@@ -1,0 +1,84 @@
+name: San Marino
+type: Division-0
+meta:
+  alpha2: SM
+  includes:
+    - San Marino
+    - SM
+    - '674'
+    - the Republic of San Marino
+    - 圣马力诺
+  name_full: the Republic of San Marino
+  name_zh: 圣马力诺
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 349
+    - year: 2020
+      quarter: 2
+      count: 393
+    - year: 2020
+      quarter: 3
+      count: 439
+    - year: 2020
+      quarter: 4
+      count: 466
+    - year: 2021
+      quarter: 1
+      count: 495
+    - year: 2021
+      quarter: 2
+      count: 538
+    - year: 2021
+      quarter: 3
+      count: 555
+    - year: 2021
+      quarter: 4
+      count: 578
+    - year: 2022
+      quarter: 1
+      count: 612
+    - year: 2022
+      quarter: 2
+      count: 621
+    - year: 2022
+      quarter: 3
+      count: 641
+    - year: 2022
+      quarter: 4
+      count: 665
+    - year: 2023
+      quarter: 1
+      count: 693
+    - year: 2023
+      quarter: 2
+      count: 744
+    - year: 2023
+      quarter: 3
+      count: 776
+    - year: 2023
+      quarter: 4
+      count: 793
+    - year: 2024
+      quarter: 1
+      count: 837
+    - year: 2024
+      quarter: 2
+      count: 879
+    - year: 2024
+      quarter: 3
+      count: 917
+    - year: 2024
+      quarter: 4
+      count: 962
+data:
+  labels:
+    - SM-01
+    - SM-06
+    - SM-02
+    - SM-07
+    - SM-03
+    - SM-04
+    - SM-05
+    - SM-08
+    - SM-09

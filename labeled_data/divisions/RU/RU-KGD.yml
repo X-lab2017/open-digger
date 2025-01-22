@@ -1,0 +1,14 @@
+name: Kaliningradskaya oblast'
+type: Division-1
+meta:
+  alpha2: RU-KGD
+  includes:
+    - kaliningradskaja oblast'
+    - ru-kgd
+    - kgd
+    - kaliningradskaja oblast' administrative region
+    - kaliningradskaya oblast'
+    - kaliningradskaya oblast' administrative region
+    - kaliningrad oblast
+    - kaliningrad
+  category: ADMINISTRATIVE REGION

@@ -1,0 +1,10 @@
+name: Niger
+type: Division-1
+meta:
+  alpha2: NG-NI
+  includes:
+    - niger
+    - ng-ni
+    - ni
+    - niger state
+  category: STATE

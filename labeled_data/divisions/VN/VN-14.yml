@@ -1,0 +1,11 @@
+name: Hòa Bình
+type: Division-1
+meta:
+  alpha2: VN-14
+  includes:
+    - hòa bình
+    - vn-14
+    - '14'
+    - hòa bình province
+    - hoa binh
+  category: PROVINCE

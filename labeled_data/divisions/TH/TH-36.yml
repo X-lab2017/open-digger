@@ -1,0 +1,11 @@
+name: Chaiyaphum
+type: Division-1
+meta:
+  alpha2: TH-36
+  includes:
+    - chaiyaphum
+    - th-36
+    - '36'
+    - chaiyaphum province
+    - chang wat chaiyaphum
+  category: PROVINCE

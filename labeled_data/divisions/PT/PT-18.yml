@@ -1,0 +1,10 @@
+name: Viseu
+type: Division-1
+meta:
+  alpha2: PT-18
+  includes:
+    - viseu
+    - pt-18
+    - '18'
+    - viseu district
+  category: DISTRICT

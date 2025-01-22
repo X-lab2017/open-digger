@@ -1,0 +1,86 @@
+name: Oman
+type: Division-0
+meta:
+  alpha2: OM
+  includes:
+    - Oman
+    - OM
+    - '512'
+    - the Sultanate of Oman
+    - 阿曼
+  name_full: the Sultanate of Oman
+  name_zh: 阿曼
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 13043
+    - year: 2020
+      quarter: 2
+      count: 15458
+    - year: 2020
+      quarter: 3
+      count: 17532
+    - year: 2020
+      quarter: 4
+      count: 19465
+    - year: 2021
+      quarter: 1
+      count: 21397
+    - year: 2021
+      quarter: 2
+      count: 23511
+    - year: 2021
+      quarter: 3
+      count: 25082
+    - year: 2021
+      quarter: 4
+      count: 26662
+    - year: 2022
+      quarter: 1
+      count: 28667
+    - year: 2022
+      quarter: 2
+      count: 30292
+    - year: 2022
+      quarter: 3
+      count: 31897
+    - year: 2022
+      quarter: 4
+      count: 33934
+    - year: 2023
+      quarter: 1
+      count: 36836
+    - year: 2023
+      quarter: 2
+      count: 40126
+    - year: 2023
+      quarter: 3
+      count: 43371
+    - year: 2023
+      quarter: 4
+      count: 46735
+    - year: 2024
+      quarter: 1
+      count: 49545
+    - year: 2024
+      quarter: 2
+      count: 52137
+    - year: 2024
+      quarter: 3
+      count: 54569
+    - year: 2024
+      quarter: 4
+      count: 57824
+data:
+  labels:
+    - OM-DA
+    - OM-BU
+    - OM-WU
+    - OM-ZA
+    - OM-BJ
+    - OM-SJ
+    - OM-MA
+    - OM-MU
+    - OM-BS
+    - OM-SS
+    - OM-ZU

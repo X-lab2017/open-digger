@@ -1,0 +1,48 @@
+name: Grand-Est
+type: Division-1
+meta:
+  alpha2: FR-GES
+  includes:
+    - alsace
+    - fr-6ae
+    - 6ae
+    - alsace european collectivity
+    - ardennes
+    - fr-08
+    - '08'
+    - ardennes metropolitan department
+    - aube
+    - fr-10
+    - '10'
+    - aube metropolitan department
+    - grand-est
+    - fr-ges
+    - ges
+    - grand-est metropolitan region
+    - haute-marne
+    - fr-52
+    - '52'
+    - haute-marne metropolitan department
+    - marne
+    - fr-51
+    - '51'
+    - marne metropolitan department
+    - meurthe-et-moselle
+    - fr-54
+    - '54'
+    - meurthe-et-moselle metropolitan department
+    - meuse
+    - fr-55
+    - '55'
+    - meuse metropolitan department
+    - moselle
+    - fr-57
+    - '57'
+    - moselle metropolitan department
+    - vosges
+    - fr-88
+    - '88'
+    - vosges metropolitan department
+    - grand est
+    - lorraine
+  category: METROPOLITAN REGION

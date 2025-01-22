@@ -1,0 +1,10 @@
+name: Grand Gedeh
+type: Division-1
+meta:
+  alpha2: LR-GG
+  includes:
+    - grand gedeh
+    - lr-gg
+    - gg
+    - grand gedeh county
+  category: COUNTY

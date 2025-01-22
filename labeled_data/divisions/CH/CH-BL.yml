@@ -1,0 +1,10 @@
+name: Basel-Landschaft
+type: Division-1
+meta:
+  alpha2: CH-BL
+  includes:
+    - basel-landschaft
+    - ch-bl
+    - bl
+    - basel-landschaft canton
+  category: CANTON

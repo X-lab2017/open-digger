@@ -1,0 +1,10 @@
+name: Gunma
+type: Division-1
+meta:
+  alpha2: JP-10
+  includes:
+    - gunma
+    - jp-10
+    - '10'
+    - gunma prefecture
+  category: PREFECTURE

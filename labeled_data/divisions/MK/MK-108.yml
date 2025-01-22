@@ -1,0 +1,11 @@
+name: Sveti Nikole
+type: Division-1
+meta:
+  alpha2: MK-108
+  includes:
+    - sveti nikole
+    - mk-108
+    - '108'
+    - sveti nikole municipality
+    - municipality of sveti nikole
+  category: MUNICIPALITY

@@ -1,0 +1,72 @@
+name: French Polynesia
+type: Division-0
+meta:
+  alpha2: PF
+  includes:
+    - French Polynesia
+    - PF
+    - '258'
+    - 法属波利尼西亚
+  name_full: French Polynesia
+  name_zh: 法属波利尼西亚
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 1407
+    - year: 2020
+      quarter: 2
+      count: 1529
+    - year: 2020
+      quarter: 3
+      count: 1632
+    - year: 2020
+      quarter: 4
+      count: 1818
+    - year: 2021
+      quarter: 1
+      count: 1931
+    - year: 2021
+      quarter: 2
+      count: 2085
+    - year: 2021
+      quarter: 3
+      count: 2207
+    - year: 2021
+      quarter: 4
+      count: 2317
+    - year: 2022
+      quarter: 1
+      count: 2468
+    - year: 2022
+      quarter: 2
+      count: 2591
+    - year: 2022
+      quarter: 3
+      count: 2730
+    - year: 2022
+      quarter: 4
+      count: 2840
+    - year: 2023
+      quarter: 1
+      count: 3009
+    - year: 2023
+      quarter: 2
+      count: 3183
+    - year: 2023
+      quarter: 3
+      count: 3344
+    - year: 2023
+      quarter: 4
+      count: 3456
+    - year: 2024
+      quarter: 1
+      count: 3652
+    - year: 2024
+      quarter: 2
+      count: 3817
+    - year: 2024
+      quarter: 3
+      count: 4020
+    - year: 2024
+      quarter: 4
+      count: 4233

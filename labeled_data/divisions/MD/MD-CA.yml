@@ -1,0 +1,10 @@
+name: Cahul
+type: Division-1
+meta:
+  alpha2: MD-CA
+  includes:
+    - cahul
+    - md-ca
+    - ca
+    - cahul district
+  category: DISTRICT

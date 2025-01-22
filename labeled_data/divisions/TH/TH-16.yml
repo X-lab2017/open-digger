@@ -1,0 +1,12 @@
+name: Lop Buri
+type: Division-1
+meta:
+  alpha2: TH-16
+  includes:
+    - lop buri
+    - th-16
+    - '16'
+    - lop buri province
+    - lopburi
+    - chang wat lopburi
+  category: PROVINCE

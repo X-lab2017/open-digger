@@ -1,0 +1,13 @@
+name: Zhejiang Sheng
+type: Division-1
+meta:
+  alpha2: CN-ZJ
+  includes:
+    - zhejiang sheng
+    - cn-zj
+    - zj
+    - zhejiang sheng province
+    - zhe jiang sheng
+    - zhejiang
+    - 浙江省
+  category: PROVINCE

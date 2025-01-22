@@ -1,0 +1,19 @@
+name: Molise
+type: Division-1
+meta:
+  alpha2: IT-67
+  includes:
+    - campobasso
+    - it-cb
+    - cb
+    - campobasso province
+    - isernia
+    - it-is
+    - is
+    - isernia province
+    - molise
+    - it-67
+    - '67'
+    - molise region
+    - mol.
+  category: REGION

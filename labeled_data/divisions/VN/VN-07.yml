@@ -1,0 +1,10 @@
+name: Tuyên Quang
+type: Division-1
+meta:
+  alpha2: VN-07
+  includes:
+    - tuyên quang
+    - vn-07
+    - '07'
+    - tuyên quang province
+  category: PROVINCE

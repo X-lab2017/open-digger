@@ -1,0 +1,10 @@
+name: Sagaing
+type: Division-1
+meta:
+  alpha2: MM-01
+  includes:
+    - sagaing
+    - mm-01
+    - '01'
+    - sagaing region
+  category: REGION

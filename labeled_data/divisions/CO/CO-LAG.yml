@@ -1,0 +1,11 @@
+name: La Guajira
+type: Division-1
+meta:
+  alpha2: CO-LAG
+  includes:
+    - la guajira
+    - co-lag
+    - lag
+    - la guajira department
+    - louisiana
+  category: DEPARTMENT

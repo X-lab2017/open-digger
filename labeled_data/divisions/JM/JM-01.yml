@@ -1,0 +1,10 @@
+name: Kingston
+type: Division-1
+meta:
+  alpha2: JM-01
+  includes:
+    - kingston
+    - jm-01
+    - '01'
+    - kingston parish
+  category: PARISH

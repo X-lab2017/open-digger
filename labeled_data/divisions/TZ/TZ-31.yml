@@ -1,0 +1,10 @@
+name: Songwe
+type: Division-1
+meta:
+  alpha2: TZ-31
+  includes:
+    - songwe
+    - tz-31
+    - '31'
+    - songwe region
+  category: REGION

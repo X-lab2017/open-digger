@@ -1,0 +1,10 @@
+name: Ewa
+type: Division-1
+meta:
+  alpha2: NR-09
+  includes:
+    - ewa
+    - nr-09
+    - '09'
+    - ewa district
+  category: DISTRICT

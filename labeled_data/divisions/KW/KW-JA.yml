@@ -1,0 +1,11 @@
+name: Al Jahrā’
+type: Division-1
+meta:
+  alpha2: KW-JA
+  includes:
+    - al jahrā’
+    - kw-ja
+    - ja
+    - al jahrā’ governorate
+    - al jahra governorate
+  category: GOVERNORATE

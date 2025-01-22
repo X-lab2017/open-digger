@@ -1,0 +1,12 @@
+name: Madre de Dios
+type: Division-1
+meta:
+  alpha2: PE-MDD
+  includes:
+    - madre de dios
+    - pe-mdd
+    - mdd
+    - madre de dios region
+    - mayutata
+    - mayutata region
+  category: REGION

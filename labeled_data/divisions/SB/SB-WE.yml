@@ -1,0 +1,10 @@
+name: Western
+type: Division-1
+meta:
+  alpha2: SB-WE
+  includes:
+    - western
+    - sb-we
+    - we
+    - western province
+  category: PROVINCE

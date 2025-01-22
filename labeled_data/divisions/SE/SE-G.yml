@@ -1,0 +1,11 @@
+name: Kronobergs län
+type: Division-1
+meta:
+  alpha2: SE-G
+  includes:
+    - kronobergs län
+    - se-g
+    - g
+    - kronobergs län county
+    - kronoberg county
+  category: COUNTY

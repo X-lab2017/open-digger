@@ -1,0 +1,10 @@
+name: Jijel
+type: Division-1
+meta:
+  alpha2: DZ-18
+  includes:
+    - jijel
+    - dz-18
+    - '18'
+    - jijel province
+  category: PROVINCE

@@ -1,0 +1,54 @@
+name: Munster
+type: Division-1
+meta:
+  alpha2: IE-M
+  includes:
+    - an clár
+    - ie-ce
+    - ce
+    - an clár county
+    - an mhumhain
+    - ie-m
+    - m
+    - an mhumhain province
+    - ciarraí
+    - ie-ky
+    - ky
+    - ciarraí county
+    - clare
+    - clare county
+    - corcaigh
+    - ie-co
+    - co
+    - corcaigh county
+    - cork
+    - cork county
+    - kerry
+    - kerry county
+    - limerick
+    - ie-lk
+    - lk
+    - limerick county
+    - luimneach
+    - luimneach county
+    - munster
+    - munster province
+    - port láirge
+    - ie-wd
+    - wd
+    - port láirge county
+    - tiobraid árann
+    - ie-ta
+    - ta
+    - tiobraid árann county
+    - tipperary
+    - tipperary county
+    - waterford
+    - waterford county
+    - county kerry
+    - county cork
+    - county limerick
+    - county tipperary
+    - county waterford
+    - county clare
+  category: PROVINCE

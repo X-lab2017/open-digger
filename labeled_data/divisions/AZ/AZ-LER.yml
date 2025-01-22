@@ -1,0 +1,10 @@
+name: Lerik
+type: Division-1
+meta:
+  alpha2: AZ-LER
+  includes:
+    - lerik
+    - az-ler
+    - ler
+    - lerik rayon
+  category: RAYON

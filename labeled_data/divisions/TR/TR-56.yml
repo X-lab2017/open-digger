@@ -1,0 +1,10 @@
+name: Siirt
+type: Division-1
+meta:
+  alpha2: TR-56
+  includes:
+    - siirt
+    - tr-56
+    - '56'
+    - siirt province
+  category: PROVINCE

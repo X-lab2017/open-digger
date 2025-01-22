@@ -1,0 +1,10 @@
+name: Kigoma
+type: Division-1
+meta:
+  alpha2: TZ-08
+  includes:
+    - kigoma
+    - tz-08
+    - '08'
+    - kigoma region
+  category: REGION

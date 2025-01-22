@@ -1,0 +1,14 @@
+name: Aerodrom †
+type: Division-1
+meta:
+  alpha2: MK-801
+  includes:
+    - aerodrom †
+    - mk-801
+    - '801'
+    - aerodrom † municipality
+    - aerodrom
+    - vardar
+    - greater skopje
+    - skopje statistical region
+  category: MUNICIPALITY

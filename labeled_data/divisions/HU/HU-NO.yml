@@ -1,0 +1,10 @@
+name: Nógrád
+type: Division-1
+meta:
+  alpha2: HU-NO
+  includes:
+    - nógrád
+    - hu-no
+    - 'no'
+    - nógrád county
+  category: COUNTY

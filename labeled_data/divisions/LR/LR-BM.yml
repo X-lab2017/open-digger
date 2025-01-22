@@ -1,0 +1,10 @@
+name: Bomi
+type: Division-1
+meta:
+  alpha2: LR-BM
+  includes:
+    - bomi
+    - lr-bm
+    - bm
+    - bomi county
+  category: COUNTY

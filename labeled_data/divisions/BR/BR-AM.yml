@@ -1,0 +1,11 @@
+name: Amazonas
+type: Division-1
+meta:
+  alpha2: BR-AM
+  includes:
+    - amazonas
+    - br-am
+    - am
+    - amazonas state
+    - state of amazonas
+  category: STATE

@@ -1,0 +1,12 @@
+name: Shārī Bāqirmī
+type: Division-1
+meta:
+  alpha2: TD-CB
+  includes:
+    - chari-baguirmi
+    - td-cb
+    - cb
+    - chari-baguirmi province
+    - shārī bāqirmī
+    - shārī bāqirmī province
+  category: PROVINCE

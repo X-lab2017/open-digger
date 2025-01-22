@@ -1,0 +1,10 @@
+name: Tasmania
+type: Division-1
+meta:
+  alpha2: AU-TAS
+  includes:
+    - tasmania
+    - au-tas
+    - tas
+    - tasmania state
+  category: STATE

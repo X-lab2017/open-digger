@@ -1,0 +1,12 @@
+name: Western Sahara
+type: Division-0
+meta:
+  alpha2: EH
+  includes:
+    - Western Sahara
+    - EH
+    - '732'
+    - 西撒哈拉
+  name_full: Western Sahara
+  name_zh: 西撒哈拉
+  developers: []

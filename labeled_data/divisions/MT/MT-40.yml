@@ -1,0 +1,10 @@
+name: Pembroke
+type: Division-1
+meta:
+  alpha2: MT-40
+  includes:
+    - pembroke
+    - mt-40
+    - '40'
+    - pembroke local council
+  category: LOCAL COUNCIL

@@ -1,0 +1,10 @@
+name: Tabasco
+type: Division-1
+meta:
+  alpha2: MX-TAB
+  includes:
+    - tabasco
+    - mx-tab
+    - tab
+    - tabasco state
+  category: STATE

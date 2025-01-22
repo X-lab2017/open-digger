@@ -1,0 +1,11 @@
+name: Mayaro-Rio Claro
+type: Division-1
+meta:
+  alpha2: TT-MRC
+  includes:
+    - mayaro-rio claro
+    - tt-mrc
+    - mrc
+    - mayaro-rio claro region
+    - mayaro rio claro regional corporation
+  category: REGION

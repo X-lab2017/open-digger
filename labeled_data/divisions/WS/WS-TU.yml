@@ -1,0 +1,11 @@
+name: Tuamasaga
+type: Division-1
+meta:
+  alpha2: WS-TU
+  includes:
+    - tuamasaga
+    - ws-tu
+    - tu
+    - tuamasaga district
+    - upolu
+  category: DISTRICT

@@ -1,0 +1,81 @@
+name: Nepal
+type: Division-0
+meta:
+  alpha2: NP
+  includes:
+    - Nepal
+    - NP
+    - '524'
+    - 尼泊尔
+  name_full: Nepal
+  name_zh: 尼泊尔
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 69284
+    - year: 2020
+      quarter: 2
+      count: 78400
+    - year: 2020
+      quarter: 3
+      count: 88216
+    - year: 2020
+      quarter: 4
+      count: 95260
+    - year: 2021
+      quarter: 1
+      count: 102252
+    - year: 2021
+      quarter: 2
+      count: 114335
+    - year: 2021
+      quarter: 3
+      count: 124669
+    - year: 2021
+      quarter: 4
+      count: 132549
+    - year: 2022
+      quarter: 1
+      count: 145742
+    - year: 2022
+      quarter: 2
+      count: 158461
+    - year: 2022
+      quarter: 3
+      count: 170909
+    - year: 2022
+      quarter: 4
+      count: 185998
+    - year: 2023
+      quarter: 1
+      count: 201873
+    - year: 2023
+      quarter: 2
+      count: 218220
+    - year: 2023
+      quarter: 3
+      count: 236298
+    - year: 2023
+      quarter: 4
+      count: 251049
+    - year: 2024
+      quarter: 1
+      count: 270316
+    - year: 2024
+      quarter: 2
+      count: 287484
+    - year: 2024
+      quarter: 3
+      count: 304290
+    - year: 2024
+      quarter: 4
+      count: 321316
+data:
+  labels:
+    - NP-P3
+    - NP-P4
+    - NP-P6
+    - NP-P1
+    - NP-P5
+    - NP-P2
+    - NP-P7

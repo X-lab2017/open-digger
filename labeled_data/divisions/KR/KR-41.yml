@@ -1,0 +1,13 @@
+name: Gyeonggi-do
+type: Division-1
+meta:
+  alpha2: KR-41
+  includes:
+    - gyeonggi-do
+    - kr-41
+    - '41'
+    - gyeonggi-do province
+    - gyeonggi
+    - gyeonggi province
+    - 경기도
+  category: PROVINCE

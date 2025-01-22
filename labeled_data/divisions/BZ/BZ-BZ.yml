@@ -1,0 +1,10 @@
+name: Belize
+type: Division-1
+meta:
+  alpha2: BZ-BZ
+  includes:
+    - belize
+    - bz-bz
+    - bz
+    - belize district
+  category: DISTRICT

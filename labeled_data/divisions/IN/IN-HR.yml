@@ -1,0 +1,10 @@
+name: Haryāna
+type: Division-1
+meta:
+  alpha2: IN-HR
+  includes:
+    - haryāna
+    - in-hr
+    - hr
+    - haryāna state
+  category: STATE

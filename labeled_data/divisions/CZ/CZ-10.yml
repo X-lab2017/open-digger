@@ -1,0 +1,12 @@
+name: Praha
+type: Division-1
+meta:
+  alpha2: CZ-10
+  includes:
+    - praha
+    - cz-10
+    - '10'
+    - praha capital city
+    - prague
+    - hlavní město praha
+  category: CAPITAL CITY

@@ -1,0 +1,10 @@
+name: Xızı
+type: Division-1
+meta:
+  alpha2: AZ-XIZ
+  includes:
+    - xızı
+    - az-xiz
+    - xiz
+    - xızı rayon
+  category: RAYON

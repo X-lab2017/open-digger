@@ -1,0 +1,10 @@
+name: Temburong
+type: Division-1
+meta:
+  alpha2: BN-TE
+  includes:
+    - temburong
+    - bn-te
+    - te
+    - temburong district
+  category: DISTRICT

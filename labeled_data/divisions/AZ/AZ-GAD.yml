@@ -1,0 +1,10 @@
+name: Gədəbəy
+type: Division-1
+meta:
+  alpha2: AZ-GAD
+  includes:
+    - gədəbəy
+    - az-gad
+    - gad
+    - gədəbəy rayon
+  category: RAYON

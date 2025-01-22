@@ -1,0 +1,35 @@
+name: Kosovo-Metohija
+type: Division-1
+meta:
+  alpha2: RS-KM
+  includes:
+    - kosovo-metohija
+    - rs-km
+    - km
+    - kosovo-metohija autonomous province
+    - kosovski okrug
+    - rs-25
+    - '25'
+    - kosovski okrug district
+    - kosovsko-mitrovački okrug
+    - rs-28
+    - '28'
+    - kosovsko-mitrovački okrug district
+    - kosovsko-pomoravski okrug
+    - rs-29
+    - '29'
+    - kosovsko-pomoravski okrug district
+    - pećki okrug
+    - rs-26
+    - '26'
+    - pećki okrug district
+    - prizrenski okrug
+    - rs-27
+    - '27'
+    - prizrenski okrug district
+    - prizren district
+    - district of mitrovica
+    - district of pristina
+    - district of gjilan
+    - district of peja
+  category: AUTONOMOUS PROVINCE

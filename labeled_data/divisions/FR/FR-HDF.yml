@@ -1,0 +1,32 @@
+name: Hauts-de-France
+type: Division-1
+meta:
+  alpha2: FR-HDF
+  includes:
+    - aisne
+    - fr-02
+    - '02'
+    - aisne metropolitan department
+    - hauts-de-france
+    - fr-hdf
+    - hdf
+    - hauts-de-france metropolitan region
+    - nord
+    - fr-59
+    - '59'
+    - nord metropolitan department
+    - oise
+    - fr-60
+    - '60'
+    - oise metropolitan department
+    - pas-de-calais
+    - fr-62
+    - '62'
+    - pas-de-calais metropolitan department
+    - somme
+    - fr-80
+    - '80'
+    - somme metropolitan department
+    - nord-pas-de-calais
+    - picardy
+  category: METROPOLITAN REGION

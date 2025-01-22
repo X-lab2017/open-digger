@@ -1,0 +1,10 @@
+name: Perlis
+type: Division-1
+meta:
+  alpha2: MY-09
+  includes:
+    - perlis
+    - my-09
+    - '09'
+    - perlis state
+  category: STATE

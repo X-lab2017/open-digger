@@ -1,0 +1,15 @@
+name: Tall Abīb
+type: Division-1
+meta:
+  alpha2: IL-TA
+  includes:
+    - tall abīb
+    - il-ta
+    - ta
+    - tall abīb district
+    - tell abīb
+    - tell abīb district
+    - tel aviv
+    - tel aviv district
+    - מחוז תל אביב
+  category: DISTRICT

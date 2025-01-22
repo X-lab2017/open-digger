@@ -1,0 +1,10 @@
+name: Naftalan
+type: Division-1
+meta:
+  alpha2: AZ-NA
+  includes:
+    - naftalan
+    - az-na
+    - na
+    - naftalan municipality
+  category: MUNICIPALITY

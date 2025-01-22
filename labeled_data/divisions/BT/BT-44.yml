@@ -1,0 +1,10 @@
+name: Lhuentse
+type: Division-1
+meta:
+  alpha2: BT-44
+  includes:
+    - lhuentse
+    - bt-44
+    - '44'
+    - lhuentse district
+  category: DISTRICT

@@ -1,0 +1,11 @@
+name: Port of Spain
+type: Division-1
+meta:
+  alpha2: TT-POS
+  includes:
+    - port of spain
+    - tt-pos
+    - pos
+    - port of spain city
+    - port of spain corporation
+  category: CITY

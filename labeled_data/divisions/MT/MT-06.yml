@@ -1,0 +1,10 @@
+name: Bormla
+type: Division-1
+meta:
+  alpha2: MT-06
+  includes:
+    - bormla
+    - mt-06
+    - '06'
+    - bormla local council
+  category: LOCAL COUNCIL

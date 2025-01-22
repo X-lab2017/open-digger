@@ -1,0 +1,11 @@
+name: Béni Abbès
+type: Division-1
+meta:
+  alpha2: DZ-52
+  includes:
+    - béni abbès
+    - dz-52
+    - '52'
+    - béni abbès province
+    - beni abbes
+  category: PROVINCE

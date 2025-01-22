@@ -1,0 +1,11 @@
+name: Nay Pyi Taw
+type: Division-1
+meta:
+  alpha2: MM-18
+  includes:
+    - nay pyi taw
+    - mm-18
+    - '18'
+    - nay pyi taw union territory
+    - naypyidaw union territory
+  category: UNION TERRITORY

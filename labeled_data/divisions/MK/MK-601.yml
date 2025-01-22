@@ -1,0 +1,11 @@
+name: Bogovinje
+type: Division-1
+meta:
+  alpha2: MK-601
+  includes:
+    - bogovinje
+    - mk-601
+    - '601'
+    - bogovinje municipality
+    - municipality of bogovinje
+  category: MUNICIPALITY

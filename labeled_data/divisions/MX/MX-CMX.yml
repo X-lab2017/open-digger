@@ -1,0 +1,12 @@
+name: Ciudad de México
+type: Division-1
+meta:
+  alpha2: MX-CMX
+  includes:
+    - ciudad de méxico
+    - mx-cmx
+    - cmx
+    - ciudad de méxico federal entity
+    - cdmx
+    - mexico city
+  category: FEDERAL ENTITY

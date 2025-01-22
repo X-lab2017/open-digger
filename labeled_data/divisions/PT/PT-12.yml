@@ -1,0 +1,10 @@
+name: Portalegre
+type: Division-1
+meta:
+  alpha2: PT-12
+  includes:
+    - portalegre
+    - pt-12
+    - '12'
+    - portalegre district
+  category: DISTRICT

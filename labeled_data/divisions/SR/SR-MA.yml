@@ -1,0 +1,10 @@
+name: Marowijne
+type: Division-1
+meta:
+  alpha2: SR-MA
+  includes:
+    - marowijne
+    - sr-ma
+    - ma
+    - marowijne district
+  category: DISTRICT

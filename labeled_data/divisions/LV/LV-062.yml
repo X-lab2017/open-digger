@@ -1,0 +1,12 @@
+name: Mārupes novads
+type: Division-1
+meta:
+  alpha2: LV-062
+  includes:
+    - mārupes novads
+    - lv-062
+    - '062'
+    - mārupes novads municipality
+    - mārupe
+    - mārupe municipality
+  category: MUNICIPALITY

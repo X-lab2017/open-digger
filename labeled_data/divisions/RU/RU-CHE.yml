@@ -1,0 +1,14 @@
+name: Čeljabinskaja oblast'
+type: Division-1
+meta:
+  alpha2: RU-CHE
+  includes:
+    - chelyabinskaya oblast'
+    - ru-che
+    - che
+    - chelyabinskaya oblast' administrative region
+    - čeljabinskaja oblast'
+    - čeljabinskaja oblast' administrative region
+    - chelyabinsk oblast
+    - chelyabinsk
+  category: ADMINISTRATIVE REGION

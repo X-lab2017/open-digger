@@ -1,0 +1,11 @@
+name: Sachsen
+type: Division-1
+meta:
+  alpha2: DE-SN
+  includes:
+    - sachsen
+    - de-sn
+    - sn
+    - sachsen land
+    - saxony
+  category: LAND

@@ -1,0 +1,13 @@
+name: Ouest
+type: Division-1
+meta:
+  alpha2: HT-OU
+  includes:
+    - lwès
+    - ht-ou
+    - ou
+    - lwès department
+    - ouest
+    - ouest department
+    - département de l'ouest
+  category: DEPARTMENT

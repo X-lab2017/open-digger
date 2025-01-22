@@ -1,0 +1,12 @@
+name: Herāt
+type: Division-1
+meta:
+  alpha2: AF-HER
+  includes:
+    - herāt
+    - af-her
+    - her
+    - herāt province
+    - herat
+    - herat province
+  category: PROVINCE

@@ -1,0 +1,10 @@
+name: Príncipe
+type: Division-1
+meta:
+  alpha2: ST-P
+  includes:
+    - príncipe
+    - st-p
+    - p
+    - príncipe autonomous region
+  category: AUTONOMOUS REGION

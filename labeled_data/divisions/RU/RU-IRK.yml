@@ -1,0 +1,14 @@
+name: Irkutskaya oblast'
+type: Division-1
+meta:
+  alpha2: RU-IRK
+  includes:
+    - irkutskaja oblast'
+    - ru-irk
+    - irk
+    - irkutskaja oblast' administrative region
+    - irkutskaya oblast'
+    - irkutskaya oblast' administrative region
+    - irkutsk oblast
+    - irkutsk
+  category: ADMINISTRATIVE REGION

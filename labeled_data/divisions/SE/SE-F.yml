@@ -1,0 +1,11 @@
+name: Jönköpings län
+type: Division-1
+meta:
+  alpha2: SE-F
+  includes:
+    - jönköpings län
+    - se-f
+    - f
+    - jönköpings län county
+    - jonkoping county
+  category: COUNTY

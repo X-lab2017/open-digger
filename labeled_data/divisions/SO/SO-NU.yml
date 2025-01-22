@@ -1,0 +1,11 @@
+name: Nugaal
+type: Division-1
+meta:
+  alpha2: SO-NU
+  includes:
+    - nugaal
+    - so-nu
+    - nu
+    - nugaal region
+    - nugal
+  category: REGION

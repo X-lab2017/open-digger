@@ -1,0 +1,13 @@
+name: Karačaevo-Čerkesskaja Respublika
+type: Division-1
+meta:
+  alpha2: RU-KC
+  includes:
+    - karachayevo-cherkesskaya respublika
+    - ru-kc
+    - kc
+    - karachayevo-cherkesskaya respublika republic
+    - karačaevo-čerkesskaja respublika
+    - karačaevo-čerkesskaja respublika republic
+    - karachay-cherkessia
+  category: REPUBLIC

@@ -1,0 +1,11 @@
+name: Plaines Wilhems
+type: Division-1
+meta:
+  alpha2: MU-PW
+  includes:
+    - plaines wilhems
+    - mu-pw
+    - pw
+    - plaines wilhems district
+    - quatre bornes
+  category: DISTRICT

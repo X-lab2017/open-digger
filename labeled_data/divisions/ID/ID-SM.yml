@@ -1,0 +1,56 @@
+name: Sumatera
+type: Division-1
+meta:
+  alpha2: ID-SM
+  includes:
+    - aceh
+    - id-ac
+    - ac
+    - aceh province
+    - bengkulu
+    - id-be
+    - be
+    - bengkulu province
+    - jambi
+    - id-ja
+    - ja
+    - jambi province
+    - kepulauan bangka belitung
+    - id-bb
+    - bb
+    - kepulauan bangka belitung province
+    - kepulauan riau
+    - id-kr
+    - kr
+    - kepulauan riau province
+    - lampung
+    - id-la
+    - la
+    - lampung province
+    - riau
+    - id-ri
+    - ri
+    - riau province
+    - sumatera
+    - id-sm
+    - sm
+    - sumatera geographical unit
+    - sumatera barat
+    - id-sb
+    - sb
+    - sumatera barat province
+    - sumatera selatan
+    - id-ss
+    - ss
+    - sumatera selatan province
+    - sumatera utara
+    - id-su
+    - su
+    - sumatera utara province
+    - south sumatra
+    - west sumatra
+    - north sumatra
+    - bangka-belitung
+    - bangka belitung islands
+    - riau islands
+  category: GEOGRAPHICAL UNIT

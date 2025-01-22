@@ -1,0 +1,27 @@
+name: Raplamaa
+type: Division-1
+meta:
+  alpha2: EE-71
+  includes:
+    - kehtna
+    - ee-293
+    - '293'
+    - kehtna rural municipality
+    - kohila
+    - ee-317
+    - '317'
+    - kohila rural municipality
+    - märjamaa
+    - ee-503
+    - '503'
+    - märjamaa rural municipality
+    - rapla
+    - ee-668
+    - '668'
+    - rapla rural municipality
+    - raplamaa
+    - ee-71
+    - '71'
+    - raplamaa county
+    - rapla county
+  category: COUNTY

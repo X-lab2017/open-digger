@@ -1,0 +1,10 @@
+name: Bolu
+type: Division-1
+meta:
+  alpha2: TR-14
+  includes:
+    - bolu
+    - tr-14
+    - '14'
+    - bolu province
+  category: PROVINCE

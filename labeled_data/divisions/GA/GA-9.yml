@@ -1,0 +1,10 @@
+name: Woleu-Ntem
+type: Division-1
+meta:
+  alpha2: GA-9
+  includes:
+    - woleu-ntem
+    - ga-9
+    - '9'
+    - woleu-ntem province
+  category: PROVINCE

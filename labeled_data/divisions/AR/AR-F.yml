@@ -1,0 +1,11 @@
+name: La Rioja
+type: Division-1
+meta:
+  alpha2: AR-F
+  includes:
+    - la rioja
+    - ar-f
+    - f
+    - la rioja province
+    - lr
+  category: PROVINCE

@@ -1,0 +1,13 @@
+name: Kolhumadulu
+type: Division-1
+meta:
+  alpha2: MV-08
+  includes:
+    - kolhumadulu
+    - mv-08
+    - '08'
+    - kolhumadulu administrative atoll
+    - thaa
+    - thaa administrative atoll
+    - thaa atoll
+  category: ADMINISTRATIVE ATOLL

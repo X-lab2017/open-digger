@@ -1,0 +1,10 @@
+name: Vodice
+type: Division-1
+meta:
+  alpha2: SI-138
+  includes:
+    - vodice
+    - si-138
+    - '138'
+    - vodice municipality
+  category: MUNICIPALITY

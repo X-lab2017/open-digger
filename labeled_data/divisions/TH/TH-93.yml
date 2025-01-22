@@ -1,0 +1,10 @@
+name: Phatthalung
+type: Division-1
+meta:
+  alpha2: TH-93
+  includes:
+    - phatthalung
+    - th-93
+    - '93'
+    - phatthalung province
+  category: PROVINCE

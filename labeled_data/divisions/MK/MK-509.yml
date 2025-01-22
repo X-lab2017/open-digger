@@ -1,0 +1,11 @@
+name: Resen
+type: Division-1
+meta:
+  alpha2: MK-509
+  includes:
+    - resen
+    - mk-509
+    - '509'
+    - resen municipality
+    - municipality of resen
+  category: MUNICIPALITY

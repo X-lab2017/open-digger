@@ -1,0 +1,10 @@
+name: Szolnok
+type: Division-1
+meta:
+  alpha2: HU-SK
+  includes:
+    - szolnok
+    - hu-sk
+    - sk
+    - szolnok city with county rights
+  category: CITY WITH COUNTY RIGHTS

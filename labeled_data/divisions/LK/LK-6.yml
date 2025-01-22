@@ -1,0 +1,31 @@
+name: North Western Province
+type: Division-1
+meta:
+  alpha2: LK-6
+  includes:
+    - kurunegala
+    - lk-61
+    - '61'
+    - kurunegala district
+    - kurunākal
+    - kurunākal district
+    - kuruṇægala
+    - kuruṇægala district
+    - north western province
+    - lk-6
+    - '6'
+    - north western province province
+    - puttalam
+    - lk-62
+    - '62'
+    - puttalam district
+    - puttalama
+    - puttalama district
+    - puttaḷam
+    - puttaḷam district
+    - vayamba paḷāta
+    - vayamba paḷāta province
+    - vaṭamel mākāṇam
+    - vaṭamel mākāṇam province
+    - බස්නාහිර පළාත, ශ් රී ලංකාව
+  category: PROVINCE

@@ -1,0 +1,11 @@
+name: Caquetá
+type: Division-1
+meta:
+  alpha2: CO-CAQ
+  includes:
+    - caquetá
+    - co-caq
+    - caq
+    - caquetá department
+    - caqueta
+  category: DEPARTMENT

@@ -1,0 +1,10 @@
+name: Sipaliwini
+type: Division-1
+meta:
+  alpha2: SR-SI
+  includes:
+    - sipaliwini
+    - sr-si
+    - si
+    - sipaliwini district
+  category: DISTRICT

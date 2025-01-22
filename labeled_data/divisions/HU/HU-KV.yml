@@ -1,0 +1,10 @@
+name: Kaposvár
+type: Division-1
+meta:
+  alpha2: HU-KV
+  includes:
+    - kaposvár
+    - hu-kv
+    - kv
+    - kaposvár city with county rights
+  category: CITY WITH COUNTY RIGHTS

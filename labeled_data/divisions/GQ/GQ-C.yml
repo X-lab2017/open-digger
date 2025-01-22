@@ -1,0 +1,40 @@
+name: Région Continentale
+type: Division-1
+meta:
+  alpha2: GQ-C
+  includes:
+    - centro sud
+    - gq-cs
+    - cs
+    - centro sud province
+    - centro sul
+    - centro sul province
+    - centro sur
+    - centro sur province
+    - djibloho
+    - gq-dj
+    - dj
+    - djibloho province
+    - kié-ntem
+    - gq-kn
+    - kn
+    - kié-ntem province
+    - litoral
+    - gq-li
+    - li
+    - litoral province
+    - littoral
+    - littoral province
+    - região continental
+    - gq-c
+    - c
+    - região continental region
+    - región continental
+    - región continental region
+    - région continentale
+    - région continentale region
+    - wele-nzas
+    - gq-wn
+    - wn
+    - wele-nzas province
+  category: REGION

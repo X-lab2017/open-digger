@@ -1,0 +1,42 @@
+name: Île-de-France
+type: Division-1
+meta:
+  alpha2: FR-IDF
+  includes:
+    - essonne
+    - fr-91
+    - '91'
+    - essonne metropolitan department
+    - hauts-de-seine
+    - fr-92
+    - '92'
+    - hauts-de-seine metropolitan department
+    - paris
+    - fr-75c
+    - 75c
+    - paris metropolitan collectivity with special status
+    - seine-saint-denis
+    - fr-93
+    - '93'
+    - seine-saint-denis metropolitan department
+    - seine-et-marne
+    - fr-77
+    - '77'
+    - seine-et-marne metropolitan department
+    - val-d'oise
+    - fr-95
+    - '95'
+    - val-d'oise metropolitan department
+    - val-de-marne
+    - fr-94
+    - '94'
+    - val-de-marne metropolitan department
+    - yvelines
+    - fr-78
+    - '78'
+    - yvelines metropolitan department
+    - île-de-france
+    - fr-idf
+    - idf
+    - île-de-france metropolitan region
+  category: METROPOLITAN REGION

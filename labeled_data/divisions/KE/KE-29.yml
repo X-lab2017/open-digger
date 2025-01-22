@@ -1,0 +1,11 @@
+name: Murang'a
+type: Division-1
+meta:
+  alpha2: KE-29
+  includes:
+    - murang'a
+    - ke-29
+    - '29'
+    - murang'a county
+    - muranga county
+  category: COUNTY

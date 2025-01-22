@@ -1,0 +1,10 @@
+name: Western Area
+type: Division-1
+meta:
+  alpha2: SL-W
+  includes:
+    - western area
+    - sl-w
+    - w
+    - western area area
+  category: AREA

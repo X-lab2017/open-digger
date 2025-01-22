@@ -1,0 +1,59 @@
+name: Nouvelle-Aquitaine
+type: Division-1
+meta:
+  alpha2: FR-NAQ
+  includes:
+    - charente
+    - fr-16
+    - '16'
+    - charente metropolitan department
+    - charente-maritime
+    - fr-17
+    - '17'
+    - charente-maritime metropolitan department
+    - corrèze
+    - fr-19
+    - '19'
+    - corrèze metropolitan department
+    - creuse
+    - fr-23
+    - '23'
+    - creuse metropolitan department
+    - deux-sèvres
+    - fr-79
+    - '79'
+    - deux-sèvres metropolitan department
+    - dordogne
+    - fr-24
+    - '24'
+    - dordogne metropolitan department
+    - gironde
+    - fr-33
+    - '33'
+    - gironde metropolitan department
+    - haute-vienne
+    - fr-87
+    - '87'
+    - haute-vienne metropolitan department
+    - landes
+    - fr-40
+    - '40'
+    - landes metropolitan department
+    - lot-et-garonne
+    - fr-47
+    - '47'
+    - lot-et-garonne metropolitan department
+    - nouvelle-aquitaine
+    - fr-naq
+    - naq
+    - nouvelle-aquitaine metropolitan region
+    - pyrénées-atlantiques
+    - fr-64
+    - '64'
+    - pyrénées-atlantiques metropolitan department
+    - vienne
+    - fr-86
+    - '86'
+    - vienne metropolitan department
+    - aquitaine
+  category: METROPOLITAN REGION

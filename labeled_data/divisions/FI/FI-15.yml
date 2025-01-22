@@ -1,0 +1,13 @@
+name: Norra Savolax
+type: Division-1
+meta:
+  alpha2: FI-15
+  includes:
+    - norra savolax
+    - fi-15
+    - '15'
+    - norra savolax region
+    - pohjois-savo
+    - pohjois-savo region
+    - north savo
+  category: REGION

@@ -1,0 +1,10 @@
+name: Guam
+type: Division-1
+meta:
+  alpha2: US-GU
+  includes:
+    - guam
+    - us-gu
+    - gu
+    - guam outlying area
+  category: OUTLYING AREA

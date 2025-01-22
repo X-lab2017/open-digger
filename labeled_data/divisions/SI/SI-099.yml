@@ -1,0 +1,10 @@
+name: Radeče
+type: Division-1
+meta:
+  alpha2: SI-099
+  includes:
+    - radeče
+    - si-099
+    - '099'
+    - radeče municipality
+  category: MUNICIPALITY

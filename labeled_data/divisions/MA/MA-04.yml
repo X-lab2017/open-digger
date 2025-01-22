@@ -1,0 +1,44 @@
+name: Rabat-Salé-Kénitra
+type: Division-1
+meta:
+  alpha2: MA-04
+  includes:
+    - khémisset
+    - ma-khe
+    - khe
+    - khémisset province
+    - kénitra
+    - ma-ken
+    - ken
+    - kénitra province
+    - nouaceur
+    - ma-nou
+    - nou
+    - nouaceur province
+    - rabat
+    - ma-rab
+    - rab
+    - rabat prefecture
+    - rabat-salé-kénitra
+    - ma-04
+    - '04'
+    - rabat-salé-kénitra region
+    - salé
+    - ma-sal
+    - sal
+    - salé prefecture
+    - sidi kacem
+    - ma-sik
+    - sik
+    - sidi kacem province
+    - sidi slimane
+    - ma-sil
+    - sil
+    - sidi slimane province
+    - skhirate-témara
+    - ma-skh
+    - skh
+    - skhirate-témara prefecture
+    - rabat-salé-kenitra
+    - جهة بني ملال خنيفرة
+  category: REGION

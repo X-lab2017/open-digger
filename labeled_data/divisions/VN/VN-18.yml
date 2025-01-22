@@ -1,0 +1,11 @@
+name: Ninh Bình
+type: Division-1
+meta:
+  alpha2: VN-18
+  includes:
+    - ninh bình
+    - vn-18
+    - '18'
+    - ninh bình province
+    - ninh binh
+  category: PROVINCE

@@ -1,0 +1,13 @@
+name: Tianjin Shi
+type: Division-1
+meta:
+  alpha2: CN-TJ
+  includes:
+    - tianjin shi
+    - cn-tj
+    - tj
+    - tianjin shi municipality
+    - tian jin shi
+    - tianjin
+    - 天津市
+  category: MUNICIPALITY

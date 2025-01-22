@@ -1,0 +1,10 @@
+name: Tshopo
+type: Division-1
+meta:
+  alpha2: CD-TO
+  includes:
+    - tshopo
+    - cd-to
+    - to
+    - tshopo province
+  category: PROVINCE

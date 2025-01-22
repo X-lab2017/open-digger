@@ -1,0 +1,10 @@
+name: San José
+type: Division-1
+meta:
+  alpha2: CR-SJ
+  includes:
+    - san josé
+    - cr-sj
+    - sj
+    - san josé province
+  category: PROVINCE

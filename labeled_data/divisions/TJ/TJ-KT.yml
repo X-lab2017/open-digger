@@ -1,0 +1,11 @@
+name: Khatlon
+type: Division-1
+meta:
+  alpha2: TJ-KT
+  includes:
+    - khatlon
+    - tj-kt
+    - kt
+    - khatlon region
+    - khatlon province
+  category: REGION

@@ -1,0 +1,10 @@
+name: Zeeland
+type: Division-1
+meta:
+  alpha2: NL-ZE
+  includes:
+    - zeeland
+    - nl-ze
+    - ze
+    - zeeland province
+  category: PROVINCE

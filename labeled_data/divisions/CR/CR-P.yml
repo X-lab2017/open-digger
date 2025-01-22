@@ -1,0 +1,12 @@
+name: Puntarenas
+type: Division-1
+meta:
+  alpha2: CR-P
+  includes:
+    - puntarenas
+    - cr-p
+    - p
+    - puntarenas province
+    - provincia de puntarenas
+    - pu
+  category: PROVINCE

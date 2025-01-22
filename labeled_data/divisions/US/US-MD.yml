@@ -1,0 +1,10 @@
+name: Maryland
+type: Division-1
+meta:
+  alpha2: US-MD
+  includes:
+    - maryland
+    - us-md
+    - md
+    - maryland state
+  category: STATE

@@ -1,0 +1,10 @@
+name: Aiga-i-le-Tai
+type: Division-1
+meta:
+  alpha2: WS-AL
+  includes:
+    - aiga-i-le-tai
+    - ws-al
+    - al
+    - aiga-i-le-tai district
+  category: DISTRICT

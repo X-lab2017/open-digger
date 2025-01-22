@@ -1,0 +1,12 @@
+name: Chiriquí
+type: Division-1
+meta:
+  alpha2: PA-4
+  includes:
+    - chiriquí
+    - pa-4
+    - '4'
+    - chiriquí province
+    - provincia de chiriquí
+    - ch
+  category: PROVINCE

@@ -1,0 +1,10 @@
+name: New York
+type: Division-1
+meta:
+  alpha2: US-NY
+  includes:
+    - new york
+    - us-ny
+    - ny
+    - new york state
+  category: STATE

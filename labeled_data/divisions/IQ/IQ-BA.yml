@@ -1,0 +1,12 @@
+name: Al Başrah
+type: Division-1
+meta:
+  alpha2: IQ-BA
+  includes:
+    - al başrah
+    - iq-ba
+    - ba
+    - al başrah governorate
+    - basra governorate
+    - al-basra governorate
+  category: GOVERNORATE

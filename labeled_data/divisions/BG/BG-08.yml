@@ -1,0 +1,11 @@
+name: Dobrich
+type: Division-1
+meta:
+  alpha2: BG-08
+  includes:
+    - dobrich
+    - bg-08
+    - '08'
+    - dobrich district
+    - dobrich province
+  category: DISTRICT

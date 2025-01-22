@@ -1,0 +1,14 @@
+name: Kaôh Kŏng
+type: Division-1
+meta:
+  alpha2: KH-9
+  includes:
+    - kaoh kong
+    - kh-9
+    - '9'
+    - kaoh kong province
+    - koh kong
+    - koh kong province
+    - kaôh kŏng
+    - kaôh kŏng province
+  category: PROVINCE

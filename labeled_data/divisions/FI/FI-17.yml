@@ -1,0 +1,10 @@
+name: Satakunta
+type: Division-1
+meta:
+  alpha2: FI-17
+  includes:
+    - satakunta
+    - fi-17
+    - '17'
+    - satakunta region
+  category: REGION

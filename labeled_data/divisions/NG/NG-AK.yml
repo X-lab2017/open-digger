@@ -1,0 +1,10 @@
+name: Akwa Ibom
+type: Division-1
+meta:
+  alpha2: NG-AK
+  includes:
+    - akwa ibom
+    - ng-ak
+    - ak
+    - akwa ibom state
+  category: STATE

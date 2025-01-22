@@ -1,0 +1,14 @@
+name: Jeju-teukbyeoljachido
+type: Division-1
+meta:
+  alpha2: KR-49
+  includes:
+    - jeju-teukbyeoljachido
+    - kr-49
+    - '49'
+    - jeju-teukbyeoljachido special self-governing province
+    - jeju
+    - jeju special self-governing province
+    - 제주특별자치도
+    - jeju-do
+  category: SPECIAL SELF-GOVERNING PROVINCE

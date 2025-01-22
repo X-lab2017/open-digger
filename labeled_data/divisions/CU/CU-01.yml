@@ -1,0 +1,11 @@
+name: Pinar del Río
+type: Division-1
+meta:
+  alpha2: CU-01
+  includes:
+    - pinar del río
+    - cu-01
+    - '01'
+    - pinar del río province
+    - pinar del rio
+  category: PROVINCE

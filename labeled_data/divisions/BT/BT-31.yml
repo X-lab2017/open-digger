@@ -1,0 +1,10 @@
+name: Sarpang
+type: Division-1
+meta:
+  alpha2: BT-31
+  includes:
+    - sarpang
+    - bt-31
+    - '31'
+    - sarpang district
+  category: DISTRICT

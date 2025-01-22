@@ -1,0 +1,12 @@
+name: Ropažu novads
+type: Division-1
+meta:
+  alpha2: LV-080
+  includes:
+    - ropažu novads
+    - lv-080
+    - '080'
+    - ropažu novads municipality
+    - ropaži
+    - ropaži municipality
+  category: MUNICIPALITY

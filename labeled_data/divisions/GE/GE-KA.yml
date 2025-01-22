@@ -1,0 +1,11 @@
+name: K'akheti
+type: Division-1
+meta:
+  alpha2: GE-KA
+  includes:
+    - k'akheti
+    - ge-ka
+    - ka
+    - k'akheti region
+    - kakheti
+  category: REGION

@@ -1,0 +1,10 @@
+name: Šmarje pri Jelšah
+type: Division-1
+meta:
+  alpha2: SI-124
+  includes:
+    - šmarje pri jelšah
+    - si-124
+    - '124'
+    - šmarje pri jelšah municipality
+  category: MUNICIPALITY

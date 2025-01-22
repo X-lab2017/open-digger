@@ -1,0 +1,34 @@
+name: Boucle du Mouhoun
+type: Division-1
+meta:
+  alpha2: BF-01
+  includes:
+    - balé
+    - bf-bal
+    - bal
+    - balé province
+    - banwa
+    - bf-ban
+    - ban
+    - banwa province
+    - boucle du mouhoun
+    - bf-01
+    - '01'
+    - boucle du mouhoun region
+    - kossi
+    - bf-kos
+    - kos
+    - kossi province
+    - mouhoun
+    - bf-mou
+    - mou
+    - mouhoun province
+    - nayala
+    - bf-nay
+    - nay
+    - nayala province
+    - sourou
+    - bf-sor
+    - sor
+    - sourou province
+  category: REGION

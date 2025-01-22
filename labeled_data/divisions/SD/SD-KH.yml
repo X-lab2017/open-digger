@@ -1,0 +1,12 @@
+name: Khartoum
+type: Division-1
+meta:
+  alpha2: SD-KH
+  includes:
+    - al kharţūm
+    - sd-kh
+    - kh
+    - al kharţūm state
+    - khartoum
+    - khartoum state
+  category: STATE

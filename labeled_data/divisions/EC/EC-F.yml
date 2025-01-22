@@ -1,0 +1,10 @@
+name: Cañar
+type: Division-1
+meta:
+  alpha2: EC-F
+  includes:
+    - cañar
+    - ec-f
+    - f
+    - cañar province
+  category: PROVINCE

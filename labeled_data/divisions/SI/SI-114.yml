@@ -1,0 +1,10 @@
+name: Slovenske Konjice
+type: Division-1
+meta:
+  alpha2: SI-114
+  includes:
+    - slovenske konjice
+    - si-114
+    - '114'
+    - slovenske konjice municipality
+  category: MUNICIPALITY

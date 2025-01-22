@@ -1,0 +1,97 @@
+name: Guatemala
+type: Division-0
+meta:
+  alpha2: GT
+  includes:
+    - Guatemala
+    - GT
+    - '320'
+    - the Republic of Guatemala
+    - 危地马拉
+  name_full: the Republic of Guatemala
+  name_zh: 危地马拉
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 34807
+    - year: 2020
+      quarter: 2
+      count: 38947
+    - year: 2020
+      quarter: 3
+      count: 44331
+    - year: 2020
+      quarter: 4
+      count: 47283
+    - year: 2021
+      quarter: 1
+      count: 51587
+    - year: 2021
+      quarter: 2
+      count: 55889
+    - year: 2021
+      quarter: 3
+      count: 60656
+    - year: 2021
+      quarter: 4
+      count: 63803
+    - year: 2022
+      quarter: 1
+      count: 69353
+    - year: 2022
+      quarter: 2
+      count: 74106
+    - year: 2022
+      quarter: 3
+      count: 79653
+    - year: 2022
+      quarter: 4
+      count: 83574
+    - year: 2023
+      quarter: 1
+      count: 89310
+    - year: 2023
+      quarter: 2
+      count: 95788
+    - year: 2023
+      quarter: 3
+      count: 102359
+    - year: 2023
+      quarter: 4
+      count: 107349
+    - year: 2024
+      quarter: 1
+      count: 114891
+    - year: 2024
+      quarter: 2
+      count: 121096
+    - year: 2024
+      quarter: 3
+      count: 127520
+    - year: 2024
+      quarter: 4
+      count: 132681
+data:
+  labels:
+    - GT-16
+    - GT-15
+    - GT-04
+    - GT-20
+    - GT-02
+    - GT-05
+    - GT-01
+    - GT-13
+    - GT-18
+    - GT-21
+    - GT-22
+    - GT-17
+    - GT-09
+    - GT-14
+    - GT-11
+    - GT-03
+    - GT-12
+    - GT-06
+    - GT-07
+    - GT-10
+    - GT-08
+    - GT-19

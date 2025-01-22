@@ -1,0 +1,11 @@
+name: Ceará
+type: Division-1
+meta:
+  alpha2: BR-CE
+  includes:
+    - ceará
+    - br-ce
+    - ce
+    - ceará state
+    - state of ceará
+  category: STATE

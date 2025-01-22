@@ -1,0 +1,11 @@
+name: Dalarnas län
+type: Division-1
+meta:
+  alpha2: SE-W
+  includes:
+    - dalarnas län
+    - se-w
+    - w
+    - dalarnas län county
+    - dalarna county
+  category: COUNTY

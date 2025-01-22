@@ -1,0 +1,11 @@
+name: Samut Prakan
+type: Division-1
+meta:
+  alpha2: TH-11
+  includes:
+    - samut prakan
+    - th-11
+    - '11'
+    - samut prakan province
+    - chang wat samut prakan
+  category: PROVINCE

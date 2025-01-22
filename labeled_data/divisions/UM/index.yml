@@ -1,0 +1,23 @@
+name: United States Minor Outlying Islands
+type: Division-0
+meta:
+  alpha2: UM
+  includes:
+    - United States Minor Outlying Islands
+    - UM
+    - '581'
+    - 美国本土外小岛屿
+  name_full: United States Minor Outlying Islands
+  name_zh: 美国本土外小岛屿
+  developers: []
+data:
+  labels:
+    - UM-81
+    - UM-84
+    - UM-86
+    - UM-67
+    - UM-89
+    - UM-71
+    - UM-76
+    - UM-95
+    - UM-79

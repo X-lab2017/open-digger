@@ -1,0 +1,30 @@
+name: Central
+type: Division-1
+meta:
+  alpha2: FJ-C
+  includes:
+    - central
+    - fj-c
+    - c
+    - central division
+    - naitasiri
+    - fj-09
+    - '09'
+    - naitasiri province
+    - namosi
+    - fj-10
+    - '10'
+    - namosi province
+    - rewa
+    - fj-12
+    - '12'
+    - rewa province
+    - serua
+    - fj-13
+    - '13'
+    - serua province
+    - tailevu
+    - fj-14
+    - '14'
+    - tailevu province
+  category: DIVISION

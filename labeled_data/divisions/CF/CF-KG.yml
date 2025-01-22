@@ -1,0 +1,12 @@
+name: Kémo-Gribingui
+type: Division-1
+meta:
+  alpha2: CF-KG
+  includes:
+    - kemö-gïrïbïngï
+    - cf-kg
+    - kg
+    - kemö-gïrïbïngï prefecture
+    - kémo-gribingui
+    - kémo-gribingui prefecture
+  category: PREFECTURE

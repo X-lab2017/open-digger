@@ -1,0 +1,13 @@
+name: Biobío
+type: Division-1
+meta:
+  alpha2: CL-BI
+  includes:
+    - biobío
+    - cl-bi
+    - bi
+    - biobío region
+    - bío bío
+    - viii
+    - bio bio
+  category: REGION

@@ -1,0 +1,10 @@
+name: Connecticut
+type: Division-1
+meta:
+  alpha2: US-CT
+  includes:
+    - connecticut
+    - us-ct
+    - ct
+    - connecticut state
+  category: STATE

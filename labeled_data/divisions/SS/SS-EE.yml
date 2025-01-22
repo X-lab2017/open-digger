@@ -1,0 +1,10 @@
+name: Eastern Equatoria
+type: Division-1
+meta:
+  alpha2: SS-EE
+  includes:
+    - eastern equatoria
+    - ss-ee
+    - ee
+    - eastern equatoria state
+  category: STATE

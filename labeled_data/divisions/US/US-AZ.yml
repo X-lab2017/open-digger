@@ -1,0 +1,10 @@
+name: Arizona
+type: Division-1
+meta:
+  alpha2: US-AZ
+  includes:
+    - arizona
+    - us-az
+    - az
+    - arizona state
+  category: STATE

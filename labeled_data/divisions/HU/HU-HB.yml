@@ -1,0 +1,10 @@
+name: Hajdú-Bihar
+type: Division-1
+meta:
+  alpha2: HU-HB
+  includes:
+    - hajdú-bihar
+    - hu-hb
+    - hb
+    - hajdú-bihar county
+  category: COUNTY

@@ -1,0 +1,91 @@
+name: Cuba
+type: Division-0
+meta:
+  alpha2: CU
+  includes:
+    - Cuba
+    - CU
+    - '192'
+    - the Republic of Cuba
+    - 古巴
+  name_full: the Republic of Cuba
+  name_zh: 古巴
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 12998
+    - year: 2020
+      quarter: 2
+      count: 14407
+    - year: 2020
+      quarter: 3
+      count: 16049
+    - year: 2020
+      quarter: 4
+      count: 17693
+    - year: 2021
+      quarter: 1
+      count: 19221
+    - year: 2021
+      quarter: 2
+      count: 20918
+    - year: 2021
+      quarter: 3
+      count: 22554
+    - year: 2021
+      quarter: 4
+      count: 23831
+    - year: 2022
+      quarter: 1
+      count: 25653
+    - year: 2022
+      quarter: 2
+      count: 27362
+    - year: 2022
+      quarter: 3
+      count: 28672
+    - year: 2022
+      quarter: 4
+      count: 30356
+    - year: 2023
+      quarter: 1
+      count: 31757
+    - year: 2023
+      quarter: 2
+      count: 33538
+    - year: 2023
+      quarter: 3
+      count: 35000
+    - year: 2023
+      quarter: 4
+      count: 36630
+    - year: 2024
+      quarter: 1
+      count: 38519
+    - year: 2024
+      quarter: 2
+      count: 39952
+    - year: 2024
+      quarter: 3
+      count: 41129
+    - year: 2024
+      quarter: 4
+      count: 42773
+data:
+  labels:
+    - CU-15
+    - CU-09
+    - CU-08
+    - CU-06
+    - CU-12
+    - CU-14
+    - CU-11
+    - CU-99
+    - CU-03
+    - CU-10
+    - CU-04
+    - CU-16
+    - CU-01
+    - CU-07
+    - CU-13
+    - CU-05

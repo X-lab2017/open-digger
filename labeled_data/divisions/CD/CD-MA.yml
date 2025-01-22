@@ -1,0 +1,10 @@
+name: Maniema
+type: Division-1
+meta:
+  alpha2: CD-MA
+  includes:
+    - maniema
+    - cd-ma
+    - ma
+    - maniema province
+  category: PROVINCE

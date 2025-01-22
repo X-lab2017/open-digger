@@ -1,0 +1,11 @@
+name: Maranhão
+type: Division-1
+meta:
+  alpha2: BR-MA
+  includes:
+    - maranhão
+    - br-ma
+    - ma
+    - maranhão state
+    - state of maranhão
+  category: STATE

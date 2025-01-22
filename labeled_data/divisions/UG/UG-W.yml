@@ -1,0 +1,152 @@
+name: Western
+type: Division-1
+meta:
+  alpha2: UG-W
+  includes:
+    - buhweju
+    - ug-420
+    - '420'
+    - buhweju district
+    - buliisa
+    - ug-416
+    - '416'
+    - buliisa district
+    - bundibugyo
+    - ug-401
+    - '401'
+    - bundibugyo district
+    - bunyangabu
+    - ug-430
+    - '430'
+    - bunyangabu district
+    - bushenyi
+    - ug-402
+    - '402'
+    - bushenyi district
+    - hoima
+    - ug-403
+    - '403'
+    - hoima district
+    - ibanda
+    - ug-417
+    - '417'
+    - ibanda district
+    - isingiro
+    - ug-418
+    - '418'
+    - isingiro district
+    - kabale
+    - ug-404
+    - '404'
+    - kabale district
+    - kabarole
+    - ug-405
+    - '405'
+    - kabarole district
+    - kagadi
+    - ug-427
+    - '427'
+    - kagadi district
+    - kakumiro
+    - ug-428
+    - '428'
+    - kakumiro district
+    - kamwenge
+    - ug-413
+    - '413'
+    - kamwenge district
+    - kanungu
+    - ug-414
+    - '414'
+    - kanungu district
+    - kasese
+    - ug-406
+    - '406'
+    - kasese district
+    - kazo
+    - ug-433
+    - '433'
+    - kazo district
+    - kibaale
+    - ug-407
+    - '407'
+    - kibaale district
+    - kikuube
+    - ug-432
+    - '432'
+    - kikuube district
+    - kiruhura
+    - ug-419
+    - '419'
+    - kiruhura district
+    - kiryandongo
+    - ug-421
+    - '421'
+    - kiryandongo district
+    - kisoro
+    - ug-408
+    - '408'
+    - kisoro district
+    - kitagwenda
+    - ug-434
+    - '434'
+    - kitagwenda district
+    - kyegegwa
+    - ug-422
+    - '422'
+    - kyegegwa district
+    - kyenjojo
+    - ug-415
+    - '415'
+    - kyenjojo district
+    - masindi
+    - ug-409
+    - '409'
+    - masindi district
+    - mbarara
+    - ug-410
+    - '410'
+    - mbarara district
+    - mitooma
+    - ug-423
+    - '423'
+    - mitooma district
+    - ntoroko
+    - ug-424
+    - '424'
+    - ntoroko district
+    - ntungamo
+    - ug-411
+    - '411'
+    - ntungamo district
+    - rubanda
+    - ug-429
+    - '429'
+    - rubanda district
+    - rubirizi
+    - ug-425
+    - '425'
+    - rubirizi district
+    - rukiga
+    - ug-431
+    - '431'
+    - rukiga district
+    - rukungiri
+    - ug-412
+    - '412'
+    - rukungiri district
+    - rwampara
+    - ug-435
+    - '435'
+    - rwampara district
+    - sheema
+    - ug-426
+    - '426'
+    - sheema district
+    - western
+    - ug-w
+    - w
+    - western geographical region
+    - western region
+    - mkoa wa magharibi
+  category: GEOGRAPHICAL REGION

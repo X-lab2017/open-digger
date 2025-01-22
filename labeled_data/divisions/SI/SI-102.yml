@@ -1,0 +1,10 @@
+name: Radovljica
+type: Division-1
+meta:
+  alpha2: SI-102
+  includes:
+    - radovljica
+    - si-102
+    - '102'
+    - radovljica municipality
+  category: MUNICIPALITY

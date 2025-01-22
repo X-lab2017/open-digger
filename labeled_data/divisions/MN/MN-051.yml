@@ -1,0 +1,10 @@
+name: Sühbaatar
+type: Division-1
+meta:
+  alpha2: MN-051
+  includes:
+    - sühbaatar
+    - mn-051
+    - '051'
+    - sühbaatar province
+  category: PROVINCE

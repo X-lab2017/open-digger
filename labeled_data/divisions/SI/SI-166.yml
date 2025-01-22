@@ -1,0 +1,10 @@
+name: Križevci
+type: Division-1
+meta:
+  alpha2: SI-166
+  includes:
+    - križevci
+    - si-166
+    - '166'
+    - križevci municipality
+  category: MUNICIPALITY

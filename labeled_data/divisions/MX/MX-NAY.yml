@@ -1,0 +1,10 @@
+name: Nayarit
+type: Division-1
+meta:
+  alpha2: MX-NAY
+  includes:
+    - nayarit
+    - mx-nay
+    - nay
+    - nayarit state
+  category: STATE

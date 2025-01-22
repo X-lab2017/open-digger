@@ -1,0 +1,10 @@
+name: Orange Walk
+type: Division-1
+meta:
+  alpha2: BZ-OW
+  includes:
+    - orange walk
+    - bz-ow
+    - ow
+    - orange walk district
+  category: DISTRICT

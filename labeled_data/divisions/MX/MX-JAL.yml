@@ -1,0 +1,10 @@
+name: Jalisco
+type: Division-1
+meta:
+  alpha2: MX-JAL
+  includes:
+    - jalisco
+    - mx-jal
+    - jal
+    - jalisco state
+  category: STATE

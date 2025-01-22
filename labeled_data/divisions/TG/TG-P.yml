@@ -1,0 +1,10 @@
+name: Plateaux
+type: Division-1
+meta:
+  alpha2: TG-P
+  includes:
+    - plateaux
+    - tg-p
+    - p
+    - plateaux region
+  category: REGION

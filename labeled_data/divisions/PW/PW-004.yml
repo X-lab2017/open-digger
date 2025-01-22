@@ -1,0 +1,10 @@
+name: Airai
+type: Division-1
+meta:
+  alpha2: PW-004
+  includes:
+    - airai
+    - pw-004
+    - '004'
+    - airai state
+  category: STATE

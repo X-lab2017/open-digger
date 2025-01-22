@@ -1,0 +1,11 @@
+name: Pleven
+type: Division-1
+meta:
+  alpha2: BG-15
+  includes:
+    - pleven
+    - bg-15
+    - '15'
+    - pleven district
+    - pleven province
+  category: DISTRICT

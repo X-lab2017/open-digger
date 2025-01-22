@@ -1,0 +1,10 @@
+name: Sikasso
+type: Division-1
+meta:
+  alpha2: ML-3
+  includes:
+    - sikasso
+    - ml-3
+    - '3'
+    - sikasso region
+  category: REGION

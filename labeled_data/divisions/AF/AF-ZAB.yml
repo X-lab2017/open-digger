@@ -1,0 +1,11 @@
+name: Zābul
+type: Division-1
+meta:
+  alpha2: AF-ZAB
+  includes:
+    - zābul
+    - af-zab
+    - zab
+    - zābul province
+    - zabul
+  category: PROVINCE

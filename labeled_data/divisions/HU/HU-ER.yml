@@ -1,0 +1,10 @@
+name: Érd
+type: Division-1
+meta:
+  alpha2: HU-ER
+  includes:
+    - érd
+    - hu-er
+    - er
+    - érd city with county rights
+  category: CITY WITH COUNTY RIGHTS

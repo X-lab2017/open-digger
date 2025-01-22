@@ -1,0 +1,11 @@
+name: Đồng Tháp
+type: Division-1
+meta:
+  alpha2: VN-45
+  includes:
+    - đồng tháp
+    - vn-45
+    - '45'
+    - đồng tháp province
+    - dong thap
+  category: PROVINCE

@@ -1,0 +1,10 @@
+name: Saint Luke
+type: Division-1
+meta:
+  alpha2: DM-07
+  includes:
+    - saint luke
+    - dm-07
+    - '07'
+    - saint luke parish
+  category: PARISH

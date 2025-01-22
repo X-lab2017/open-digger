@@ -1,0 +1,10 @@
+name: South Carolina
+type: Division-1
+meta:
+  alpha2: US-SC
+  includes:
+    - south carolina
+    - us-sc
+    - sc
+    - south carolina state
+  category: STATE

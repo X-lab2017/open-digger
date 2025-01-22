@@ -1,0 +1,10 @@
+name: Toyama
+type: Division-1
+meta:
+  alpha2: JP-16
+  includes:
+    - toyama
+    - jp-16
+    - '16'
+    - toyama prefecture
+  category: PREFECTURE

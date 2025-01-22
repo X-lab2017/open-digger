@@ -1,0 +1,10 @@
+name: Andrijevica
+type: Division-1
+meta:
+  alpha2: ME-01
+  includes:
+    - andrijevica
+    - me-01
+    - '01'
+    - andrijevica municipality
+  category: MUNICIPALITY

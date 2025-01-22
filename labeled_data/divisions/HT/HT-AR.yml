@@ -1,0 +1,12 @@
+name: Artibonite
+type: Division-1
+meta:
+  alpha2: HT-AR
+  includes:
+    - artibonite
+    - ht-ar
+    - ar
+    - artibonite department
+    - latibonit
+    - latibonit department
+  category: DEPARTMENT

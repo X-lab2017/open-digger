@@ -1,0 +1,11 @@
+name: San Vicente
+type: Division-1
+meta:
+  alpha2: SV-SV
+  includes:
+    - san vicente
+    - sv-sv
+    - sv
+    - san vicente department
+    - svsi
+  category: DEPARTMENT

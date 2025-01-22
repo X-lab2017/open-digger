@@ -1,0 +1,14 @@
+name: Sud
+type: Division-1
+meta:
+  alpha2: RW-05
+  includes:
+    - amajyepfo
+    - rw-05
+    - '05'
+    - amajyepfo province
+    - southern
+    - southern province
+    - sud
+    - sud province
+  category: PROVINCE

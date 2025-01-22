@@ -1,0 +1,35 @@
+name: Utenos apskritis
+type: Division-1
+meta:
+  alpha2: LT-UT
+  includes:
+    - anykščiai
+    - lt-04
+    - '04'
+    - anykščiai district municipality
+    - ignalina
+    - lt-09
+    - '09'
+    - ignalina district municipality
+    - molėtai
+    - lt-27
+    - '27'
+    - molėtai district municipality
+    - utena
+    - lt-54
+    - '54'
+    - utena district municipality
+    - utenos apskritis
+    - lt-ut
+    - ut
+    - utenos apskritis county
+    - visaginas
+    - lt-59
+    - '59'
+    - visaginas municipality
+    - zarasai
+    - lt-60
+    - '60'
+    - zarasai district municipality
+    - utena county
+  category: COUNTY

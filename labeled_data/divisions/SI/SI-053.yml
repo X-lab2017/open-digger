@@ -1,0 +1,10 @@
+name: Kranjska Gora
+type: Division-1
+meta:
+  alpha2: SI-053
+  includes:
+    - kranjska gora
+    - si-053
+    - '053'
+    - kranjska gora municipality
+  category: MUNICIPALITY

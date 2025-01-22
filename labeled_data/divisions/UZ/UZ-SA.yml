@@ -1,0 +1,10 @@
+name: Samarqand
+type: Division-1
+meta:
+  alpha2: UZ-SA
+  includes:
+    - samarqand
+    - uz-sa
+    - sa
+    - samarqand region
+  category: REGION

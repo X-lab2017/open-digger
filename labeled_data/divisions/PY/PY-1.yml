@@ -1,0 +1,10 @@
+name: Concepción
+type: Division-1
+meta:
+  alpha2: PY-1
+  includes:
+    - concepción
+    - py-1
+    - '1'
+    - concepción department
+  category: DEPARTMENT

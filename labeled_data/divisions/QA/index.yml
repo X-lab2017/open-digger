@@ -1,0 +1,83 @@
+name: Qatar
+type: Division-0
+meta:
+  alpha2: QA
+  includes:
+    - Qatar
+    - QA
+    - '634'
+    - the State of Qatar
+    - 卡塔尔
+  name_full: the State of Qatar
+  name_zh: 卡塔尔
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 18205
+    - year: 2020
+      quarter: 2
+      count: 20945
+    - year: 2020
+      quarter: 3
+      count: 23459
+    - year: 2020
+      quarter: 4
+      count: 25563
+    - year: 2021
+      quarter: 1
+      count: 27575
+    - year: 2021
+      quarter: 2
+      count: 29582
+    - year: 2021
+      quarter: 3
+      count: 31276
+    - year: 2021
+      quarter: 4
+      count: 33126
+    - year: 2022
+      quarter: 1
+      count: 35774
+    - year: 2022
+      quarter: 2
+      count: 37690
+    - year: 2022
+      quarter: 3
+      count: 39829
+    - year: 2022
+      quarter: 4
+      count: 42448
+    - year: 2023
+      quarter: 1
+      count: 45922
+    - year: 2023
+      quarter: 2
+      count: 49462
+    - year: 2023
+      quarter: 3
+      count: 52895
+    - year: 2023
+      quarter: 4
+      count: 56207
+    - year: 2024
+      quarter: 1
+      count: 60116
+    - year: 2024
+      quarter: 2
+      count: 63027
+    - year: 2024
+      quarter: 3
+      count: 66102
+    - year: 2024
+      quarter: 4
+      count: 69705
+data:
+  labels:
+    - QA-DA
+    - QA-KH
+    - QA-WA
+    - QA-RA
+    - QA-MS
+    - QA-SH
+    - QA-ZA
+    - QA-US

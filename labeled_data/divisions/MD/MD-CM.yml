@@ -1,0 +1,10 @@
+name: Cimișlia
+type: Division-1
+meta:
+  alpha2: MD-CM
+  includes:
+    - cimișlia
+    - md-cm
+    - cm
+    - cimișlia district
+  category: DISTRICT

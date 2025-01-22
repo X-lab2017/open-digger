@@ -1,0 +1,12 @@
+name: Sankt Gallen
+type: Division-1
+meta:
+  alpha2: CH-SG
+  includes:
+    - sankt gallen
+    - ch-sg
+    - sg
+    - sankt gallen canton
+    - st gallen
+    - st. gallen
+  category: CANTON

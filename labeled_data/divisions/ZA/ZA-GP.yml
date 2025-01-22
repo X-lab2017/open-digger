@@ -1,0 +1,17 @@
+name: Gauteng
+type: Division-1
+meta:
+  alpha2: ZA-GP
+  includes:
+    - gauteng
+    - za-gp
+    - gp
+    - gauteng province
+    - kgauteng
+    - kgauteng province
+    - rhawuti
+    - rhawuti province
+    - igauteng
+    - igauteng province
+    - gt
+  category: PROVINCE

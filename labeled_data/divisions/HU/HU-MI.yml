@@ -1,0 +1,10 @@
+name: Miskolc
+type: Division-1
+meta:
+  alpha2: HU-MI
+  includes:
+    - miskolc
+    - hu-mi
+    - mi
+    - miskolc city with county rights
+  category: CITY WITH COUNTY RIGHTS

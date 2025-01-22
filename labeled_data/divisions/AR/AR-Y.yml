@@ -1,0 +1,11 @@
+name: Jujuy
+type: Division-1
+meta:
+  alpha2: AR-Y
+  includes:
+    - jujuy
+    - ar-y
+    - 'y'
+    - jujuy province
+    - jjy
+  category: PROVINCE

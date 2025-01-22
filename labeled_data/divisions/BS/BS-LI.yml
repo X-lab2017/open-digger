@@ -1,0 +1,10 @@
+name: Long Island
+type: Division-1
+meta:
+  alpha2: BS-LI
+  includes:
+    - long island
+    - bs-li
+    - li
+    - long island district
+  category: DISTRICT

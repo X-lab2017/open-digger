@@ -1,0 +1,10 @@
+name: Kweneng
+type: Division-1
+meta:
+  alpha2: BW-KW
+  includes:
+    - kweneng
+    - bw-kw
+    - kw
+    - kweneng district
+  category: DISTRICT

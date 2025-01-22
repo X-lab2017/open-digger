@@ -1,0 +1,10 @@
+name: Gaga'emauga
+type: Division-1
+meta:
+  alpha2: WS-GE
+  includes:
+    - gaga'emauga
+    - ws-ge
+    - ge
+    - gaga'emauga district
+  category: DISTRICT

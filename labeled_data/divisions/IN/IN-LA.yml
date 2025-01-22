@@ -1,0 +1,10 @@
+name: Ladākh
+type: Division-1
+meta:
+  alpha2: IN-LA
+  includes:
+    - ladākh
+    - in-la
+    - la
+    - ladākh union territory
+  category: UNION TERRITORY

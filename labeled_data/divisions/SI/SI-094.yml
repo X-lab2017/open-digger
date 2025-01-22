@@ -1,0 +1,10 @@
+name: Postojna
+type: Division-1
+meta:
+  alpha2: SI-094
+  includes:
+    - postojna
+    - si-094
+    - '094'
+    - postojna municipality
+  category: MUNICIPALITY

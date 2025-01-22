@@ -1,0 +1,10 @@
+name: Montagnes
+type: Division-1
+meta:
+  alpha2: CI-MG
+  includes:
+    - montagnes
+    - ci-mg
+    - mg
+    - montagnes district
+  category: DISTRICT

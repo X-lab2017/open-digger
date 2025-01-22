@@ -1,0 +1,10 @@
+name: Isparta
+type: Division-1
+meta:
+  alpha2: TR-32
+  includes:
+    - isparta
+    - tr-32
+    - '32'
+    - isparta province
+  category: PROVINCE

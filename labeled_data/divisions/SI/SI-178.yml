@@ -1,0 +1,10 @@
+name: Selnica ob Dravi
+type: Division-1
+meta:
+  alpha2: SI-178
+  includes:
+    - selnica ob dravi
+    - si-178
+    - '178'
+    - selnica ob dravi municipality
+  category: MUNICIPALITY

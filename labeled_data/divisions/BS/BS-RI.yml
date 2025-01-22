@@ -1,0 +1,10 @@
+name: Ragged Island
+type: Division-1
+meta:
+  alpha2: BS-RI
+  includes:
+    - ragged island
+    - bs-ri
+    - ri
+    - ragged island district
+  category: DISTRICT

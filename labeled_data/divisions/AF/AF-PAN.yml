@@ -1,0 +1,10 @@
+name: Panjshayr
+type: Division-1
+meta:
+  alpha2: AF-PAN
+  includes:
+    - panjshayr
+    - af-pan
+    - pan
+    - panjshayr province
+  category: PROVINCE

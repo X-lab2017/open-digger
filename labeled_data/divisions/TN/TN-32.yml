@@ -1,0 +1,10 @@
+name: Jendouba
+type: Division-1
+meta:
+  alpha2: TN-32
+  includes:
+    - jendouba
+    - tn-32
+    - '32'
+    - jendouba governorate
+  category: GOVERNORATE

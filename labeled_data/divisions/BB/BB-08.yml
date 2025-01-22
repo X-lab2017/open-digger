@@ -1,0 +1,10 @@
+name: Saint Michael
+type: Division-1
+meta:
+  alpha2: BB-08
+  includes:
+    - saint michael
+    - bb-08
+    - '08'
+    - saint michael parish
+  category: PARISH

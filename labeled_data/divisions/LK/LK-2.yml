@@ -1,0 +1,39 @@
+name: Central Province
+type: Division-1
+meta:
+  alpha2: LK-2
+  includes:
+    - central province
+    - lk-2
+    - '2'
+    - central province province
+    - kandy
+    - lk-21
+    - '21'
+    - kandy district
+    - kaṇṭi
+    - kaṇṭi district
+    - madhyama paḷāta
+    - madhyama paḷāta province
+    - mahanuvara
+    - mahanuvara district
+    - matale
+    - lk-22
+    - '22'
+    - matale district
+    - mattiya mākāṇam
+    - mattiya mākāṇam province
+    - mātale
+    - mātale district
+    - māttaḷai
+    - māttaḷai district
+    - nuvara ĕliya
+    - lk-23
+    - '23'
+    - nuvara ĕliya district
+    - nuvarĕliyā
+    - nuvarĕliyā district
+    - nuwara eliya
+    - nuwara eliya district
+    - වයඹ පළාත, ශ්‍රී ලංකාව
+  category: PROVINCE

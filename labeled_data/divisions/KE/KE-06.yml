@@ -1,0 +1,10 @@
+name: Embu
+type: Division-1
+meta:
+  alpha2: KE-06
+  includes:
+    - embu
+    - ke-06
+    - '06'
+    - embu county
+  category: COUNTY

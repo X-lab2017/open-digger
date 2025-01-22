@@ -1,0 +1,10 @@
+name: Şamaxı
+type: Division-1
+meta:
+  alpha2: AZ-SMI
+  includes:
+    - şamaxı
+    - az-smi
+    - smi
+    - şamaxı rayon
+  category: RAYON

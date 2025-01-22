@@ -1,0 +1,10 @@
+name: Bar
+type: Division-1
+meta:
+  alpha2: ME-02
+  includes:
+    - bar
+    - me-02
+    - '02'
+    - bar municipality
+  category: MUNICIPALITY

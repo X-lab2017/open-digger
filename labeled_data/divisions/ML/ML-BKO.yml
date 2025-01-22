@@ -1,0 +1,11 @@
+name: Bamako
+type: Division-1
+meta:
+  alpha2: ML-BKO
+  includes:
+    - bamako
+    - ml-bko
+    - bko
+    - bamako district
+    - bamako capital district
+  category: DISTRICT

@@ -1,0 +1,12 @@
+name: Noord-Brabant
+type: Division-1
+meta:
+  alpha2: NL-NB
+  includes:
+    - noord-brabant
+    - nl-nb
+    - nb
+    - noord-brabant province
+    - north brabant
+    - sprang-capelle
+  category: PROVINCE

@@ -1,0 +1,10 @@
+name: Samburu
+type: Division-1
+meta:
+  alpha2: KE-37
+  includes:
+    - samburu
+    - ke-37
+    - '37'
+    - samburu county
+  category: COUNTY

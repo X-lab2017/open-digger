@@ -1,0 +1,10 @@
+name: Tiris Zemmour
+type: Division-1
+meta:
+  alpha2: MR-11
+  includes:
+    - tiris zemmour
+    - mr-11
+    - '11'
+    - tiris zemmour region
+  category: REGION

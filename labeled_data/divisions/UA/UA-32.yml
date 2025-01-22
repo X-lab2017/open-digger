@@ -1,0 +1,12 @@
+name: Kyivska oblast
+type: Division-1
+meta:
+  alpha2: UA-32
+  includes:
+    - kyivska oblast
+    - ua-32
+    - '32'
+    - kyivska oblast region
+    - kyivs'ka oblast
+    - kyiv oblast
+  category: REGION

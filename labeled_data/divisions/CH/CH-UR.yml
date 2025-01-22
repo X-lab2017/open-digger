@@ -1,0 +1,10 @@
+name: Uri
+type: Division-1
+meta:
+  alpha2: CH-UR
+  includes:
+    - uri
+    - ch-ur
+    - ur
+    - uri canton
+  category: CANTON

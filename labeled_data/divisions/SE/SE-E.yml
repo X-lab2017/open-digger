@@ -1,0 +1,11 @@
+name: Östergötlands län
+type: Division-1
+meta:
+  alpha2: SE-E
+  includes:
+    - östergötlands län
+    - se-e
+    - e
+    - östergötlands län county
+    - östergötland county
+  category: COUNTY

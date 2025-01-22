@@ -1,0 +1,12 @@
+name: Qāsh-Barkah
+type: Division-1
+meta:
+  alpha2: ER-GB
+  includes:
+    - gash-barka
+    - er-gb
+    - gb
+    - gash-barka region
+    - qāsh-barkah
+    - qāsh-barkah region
+  category: REGION

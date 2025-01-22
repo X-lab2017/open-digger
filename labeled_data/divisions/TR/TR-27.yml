@@ -1,0 +1,10 @@
+name: Gaziantep
+type: Division-1
+meta:
+  alpha2: TR-27
+  includes:
+    - gaziantep
+    - tr-27
+    - '27'
+    - gaziantep province
+  category: PROVINCE

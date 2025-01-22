@@ -1,0 +1,10 @@
+name: Črnomelj
+type: Division-1
+meta:
+  alpha2: SI-017
+  includes:
+    - črnomelj
+    - si-017
+    - '017'
+    - črnomelj municipality
+  category: MUNICIPALITY

@@ -1,0 +1,10 @@
+name: Šmartno pri Litiji
+type: Division-1
+meta:
+  alpha2: SI-194
+  includes:
+    - šmartno pri litiji
+    - si-194
+    - '194'
+    - šmartno pri litiji municipality
+  category: MUNICIPALITY

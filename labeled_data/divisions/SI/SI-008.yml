@@ -1,0 +1,10 @@
+name: Brezovica
+type: Division-1
+meta:
+  alpha2: SI-008
+  includes:
+    - brezovica
+    - si-008
+    - '008'
+    - brezovica municipality
+  category: MUNICIPALITY

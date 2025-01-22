@@ -1,0 +1,10 @@
+name: La Réunion
+type: Division-1
+meta:
+  alpha2: FR-974
+  includes:
+    - la réunion
+    - fr-974
+    - '974'
+    - la réunion overseas departmental collectivity
+  category: OVERSEAS DEPARTMENTAL COLLECTIVITY

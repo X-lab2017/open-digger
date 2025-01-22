@@ -1,0 +1,10 @@
+name: Maputo
+type: Division-1
+meta:
+  alpha2: MZ-L
+  includes:
+    - maputo
+    - mz-l
+    - l
+    - maputo province
+  category: PROVINCE

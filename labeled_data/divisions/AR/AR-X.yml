@@ -1,0 +1,11 @@
+name: Córdoba
+type: Division-1
+meta:
+  alpha2: AR-X
+  includes:
+    - córdoba
+    - ar-x
+    - x
+    - córdoba province
+    - cco
+  category: PROVINCE

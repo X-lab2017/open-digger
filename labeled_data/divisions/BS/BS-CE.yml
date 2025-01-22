@@ -1,0 +1,10 @@
+name: Central Eleuthera
+type: Division-1
+meta:
+  alpha2: BS-CE
+  includes:
+    - central eleuthera
+    - bs-ce
+    - ce
+    - central eleuthera district
+  category: DISTRICT

@@ -1,0 +1,10 @@
+name: Al Jafārah
+type: Division-1
+meta:
+  alpha2: LY-JI
+  includes:
+    - al jafārah
+    - ly-ji
+    - ji
+    - al jafārah popularate
+  category: POPULARATE

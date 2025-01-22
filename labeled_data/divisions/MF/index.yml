@@ -1,0 +1,45 @@
+name: Saint Martin (French part)
+type: Division-0
+meta:
+  alpha2: MF
+  includes:
+    - Saint Martin (French part)
+    - MF
+    - '663'
+  developers:
+    - year: 2022
+      quarter: 1
+      count: 125
+    - year: 2022
+      quarter: 2
+      count: 147
+    - year: 2022
+      quarter: 3
+      count: 156
+    - year: 2022
+      quarter: 4
+      count: 174
+    - year: 2023
+      quarter: 1
+      count: 204
+    - year: 2023
+      quarter: 2
+      count: 216
+    - year: 2023
+      quarter: 3
+      count: 219
+    - year: 2023
+      quarter: 4
+      count: 226
+    - year: 2024
+      quarter: 1
+      count: 244
+    - year: 2024
+      quarter: 2
+      count: 257
+    - year: 2024
+      quarter: 3
+      count: 279
+    - year: 2024
+      quarter: 4
+      count: 301

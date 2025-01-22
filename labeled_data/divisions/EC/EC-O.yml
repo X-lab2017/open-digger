@@ -1,0 +1,10 @@
+name: El Oro
+type: Division-1
+meta:
+  alpha2: EC-O
+  includes:
+    - el oro
+    - ec-o
+    - o
+    - el oro province
+  category: PROVINCE

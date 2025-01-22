@@ -1,0 +1,80 @@
+name: Micronesia, Federated States of
+type: Division-0
+meta:
+  alpha2: FM
+  includes:
+    - Micronesia, Federated States of
+    - FM
+    - '583'
+    - the Federated States of Micronesia
+    - 密克罗尼西亚联邦
+    - Micronesia
+  name_full: the Federated States of Micronesia
+  name_zh: 密克罗尼西亚联邦
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 121
+    - year: 2020
+      quarter: 2
+      count: 129
+    - year: 2020
+      quarter: 3
+      count: 135
+    - year: 2020
+      quarter: 4
+      count: 138
+    - year: 2021
+      quarter: 1
+      count: 154
+    - year: 2021
+      quarter: 2
+      count: 159
+    - year: 2021
+      quarter: 3
+      count: 170
+    - year: 2021
+      quarter: 4
+      count: 177
+    - year: 2022
+      quarter: 1
+      count: 181
+    - year: 2022
+      quarter: 2
+      count: 182
+    - year: 2022
+      quarter: 3
+      count: 191
+    - year: 2022
+      quarter: 4
+      count: 203
+    - year: 2023
+      quarter: 1
+      count: 215
+    - year: 2023
+      quarter: 2
+      count: 231
+    - year: 2023
+      quarter: 3
+      count: 238
+    - year: 2023
+      quarter: 4
+      count: 248
+    - year: 2024
+      quarter: 1
+      count: 282
+    - year: 2024
+      quarter: 2
+      count: 297
+    - year: 2024
+      quarter: 3
+      count: 335
+    - year: 2024
+      quarter: 4
+      count: 348
+data:
+  labels:
+    - FM-TRK
+    - FM-KSA
+    - FM-PNI
+    - FM-YAP

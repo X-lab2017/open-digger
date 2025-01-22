@@ -1,0 +1,11 @@
+name: Quảng Ninh
+type: Division-1
+meta:
+  alpha2: VN-13
+  includes:
+    - quảng ninh
+    - vn-13
+    - '13'
+    - quảng ninh province
+    - quang ninh
+  category: PROVINCE

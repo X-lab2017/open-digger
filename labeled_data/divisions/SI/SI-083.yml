@@ -1,0 +1,10 @@
+name: Nazarje
+type: Division-1
+meta:
+  alpha2: SI-083
+  includes:
+    - nazarje
+    - si-083
+    - '083'
+    - nazarje municipality
+  category: MUNICIPALITY

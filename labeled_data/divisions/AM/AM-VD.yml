@@ -1,0 +1,11 @@
+name: Vayoć Jor
+type: Division-1
+meta:
+  alpha2: AM-VD
+  includes:
+    - vayoć jor
+    - am-vd
+    - vd
+    - vayoć jor region
+    - vayots dzor province
+  category: REGION

@@ -1,0 +1,11 @@
+name: Santa Cruz
+type: Division-1
+meta:
+  alpha2: AR-Z
+  includes:
+    - santa cruz
+    - ar-z
+    - z
+    - santa cruz province
+    - sc
+  category: PROVINCE

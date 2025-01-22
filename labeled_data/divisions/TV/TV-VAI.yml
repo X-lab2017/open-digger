@@ -1,0 +1,10 @@
+name: Vaitupu
+type: Division-1
+meta:
+  alpha2: TV-VAI
+  includes:
+    - vaitupu
+    - tv-vai
+    - vai
+    - vaitupu island council
+  category: ISLAND COUNCIL

@@ -1,0 +1,10 @@
+name: Vas
+type: Division-1
+meta:
+  alpha2: HU-VA
+  includes:
+    - vas
+    - hu-va
+    - va
+    - vas county
+  category: COUNTY

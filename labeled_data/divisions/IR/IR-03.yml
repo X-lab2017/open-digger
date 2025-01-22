@@ -1,0 +1,11 @@
+name: Āz̄ārbāyjān-e Shārqī
+type: Division-1
+meta:
+  alpha2: IR-03
+  includes:
+    - āz̄ārbāyjān-e shārqī
+    - ir-03
+    - '03'
+    - āz̄ārbāyjān-e shārqī province
+    - east azerbaijan province
+  category: PROVINCE

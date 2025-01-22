@@ -1,0 +1,11 @@
+name: Avtonomna Respublika Krym
+type: Division-1
+meta:
+  alpha2: UA-43
+  includes:
+    - avtonomna respublika krym
+    - ua-43
+    - '43'
+    - avtonomna respublika krym republic
+    - crimea
+  category: REPUBLIC

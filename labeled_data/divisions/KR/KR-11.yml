@@ -1,0 +1,13 @@
+name: Seoul-teukbyeolsi
+type: Division-1
+meta:
+  alpha2: KR-11
+  includes:
+    - seoul-teukbyeolsi
+    - kr-11
+    - '11'
+    - seoul-teukbyeolsi special city
+    - seoul
+    - seoul special city
+    - 서울특별시
+  category: SPECIAL CITY

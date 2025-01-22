@@ -1,0 +1,12 @@
+name: Žilinský kraj
+type: Division-1
+meta:
+  alpha2: SK-ZI
+  includes:
+    - žilinský kraj
+    - sk-zi
+    - zi
+    - žilinský kraj region
+    - žilina region
+    - zilina
+  category: REGION

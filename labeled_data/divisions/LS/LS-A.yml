@@ -1,0 +1,10 @@
+name: Maseru
+type: Division-1
+meta:
+  alpha2: LS-A
+  includes:
+    - maseru
+    - ls-a
+    - a
+    - maseru district
+  category: DISTRICT

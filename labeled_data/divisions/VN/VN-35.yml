@@ -1,0 +1,11 @@
+name: Lâm Đồng
+type: Division-1
+meta:
+  alpha2: VN-35
+  includes:
+    - lâm đồng
+    - vn-35
+    - '35'
+    - lâm đồng province
+    - lam dong
+  category: PROVINCE

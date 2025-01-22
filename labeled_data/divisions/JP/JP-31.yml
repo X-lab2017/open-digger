@@ -1,0 +1,10 @@
+name: Tottori
+type: Division-1
+meta:
+  alpha2: JP-31
+  includes:
+    - tottori
+    - jp-31
+    - '31'
+    - tottori prefecture
+  category: PREFECTURE

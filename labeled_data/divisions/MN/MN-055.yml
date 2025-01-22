@@ -1,0 +1,10 @@
+name: Övörhangay
+type: Division-1
+meta:
+  alpha2: MN-055
+  includes:
+    - övörhangay
+    - mn-055
+    - '055'
+    - övörhangay province
+  category: PROVINCE

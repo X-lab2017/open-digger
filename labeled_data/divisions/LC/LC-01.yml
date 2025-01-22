@@ -1,0 +1,10 @@
+name: Anse la Raye
+type: Division-1
+meta:
+  alpha2: LC-01
+  includes:
+    - anse la raye
+    - lc-01
+    - '01'
+    - anse la raye district
+  category: DISTRICT

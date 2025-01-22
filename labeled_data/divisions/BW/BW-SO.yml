@@ -1,0 +1,10 @@
+name: Southern
+type: Division-1
+meta:
+  alpha2: BW-SO
+  includes:
+    - southern
+    - bw-so
+    - so
+    - southern district
+  category: DISTRICT

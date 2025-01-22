@@ -1,0 +1,10 @@
+name: Xewkija
+type: Division-1
+meta:
+  alpha2: MT-62
+  includes:
+    - xewkija
+    - mt-62
+    - '62'
+    - xewkija local council
+  category: LOCAL COUNCIL

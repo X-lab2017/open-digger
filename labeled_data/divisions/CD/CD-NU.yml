@@ -1,0 +1,10 @@
+name: Nord-Ubangi
+type: Division-1
+meta:
+  alpha2: CD-NU
+  includes:
+    - nord-ubangi
+    - cd-nu
+    - nu
+    - nord-ubangi province
+  category: PROVINCE

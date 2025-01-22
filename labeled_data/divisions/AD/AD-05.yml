@@ -1,0 +1,10 @@
+name: Ordino
+type: Division-1
+meta:
+  alpha2: AD-05
+  includes:
+    - ordino
+    - ad-05
+    - '05'
+    - ordino parish
+  category: PARISH

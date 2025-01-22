@@ -1,0 +1,10 @@
+name: Miren-Kostanjevica
+type: Division-1
+meta:
+  alpha2: SI-075
+  includes:
+    - miren-kostanjevica
+    - si-075
+    - '075'
+    - miren-kostanjevica municipality
+  category: MUNICIPALITY

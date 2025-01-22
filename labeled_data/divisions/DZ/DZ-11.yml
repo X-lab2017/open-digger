@@ -1,0 +1,10 @@
+name: Tamanrasset
+type: Division-1
+meta:
+  alpha2: DZ-11
+  includes:
+    - tamanrasset
+    - dz-11
+    - '11'
+    - tamanrasset province
+  category: PROVINCE

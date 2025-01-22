@@ -1,0 +1,10 @@
+name: Rogaška Slatina
+type: Division-1
+meta:
+  alpha2: SI-106
+  includes:
+    - rogaška slatina
+    - si-106
+    - '106'
+    - rogaška slatina municipality
+  category: MUNICIPALITY

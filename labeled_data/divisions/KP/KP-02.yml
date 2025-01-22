@@ -1,0 +1,14 @@
+name: Phyeongannamto
+type: Division-1
+meta:
+  alpha2: KP-02
+  includes:
+    - p'yǒngan-namdo
+    - kp-02
+    - '02'
+    - p'yǒngan-namdo province
+    - phyeongannamto
+    - phyeongannamto province
+    - south p'yŏngan
+    - south pyongan
+  category: PROVINCE

@@ -1,0 +1,10 @@
+name: Gorgol
+type: Division-1
+meta:
+  alpha2: MR-04
+  includes:
+    - gorgol
+    - mr-04
+    - '04'
+    - gorgol region
+  category: REGION

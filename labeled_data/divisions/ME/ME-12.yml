@@ -1,0 +1,10 @@
+name: Nikšić
+type: Division-1
+meta:
+  alpha2: ME-12
+  includes:
+    - nikšić
+    - me-12
+    - '12'
+    - nikšić municipality
+  category: MUNICIPALITY

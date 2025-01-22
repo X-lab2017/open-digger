@@ -1,0 +1,10 @@
+name: Samtse
+type: Division-1
+meta:
+  alpha2: BT-14
+  includes:
+    - samtse
+    - bt-14
+    - '14'
+    - samtse district
+  category: DISTRICT

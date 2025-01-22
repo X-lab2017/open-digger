@@ -1,0 +1,11 @@
+name: Los Ríos
+type: Division-1
+meta:
+  alpha2: CL-LR
+  includes:
+    - los ríos
+    - cl-lr
+    - lr
+    - los ríos region
+    - xiv
+  category: REGION

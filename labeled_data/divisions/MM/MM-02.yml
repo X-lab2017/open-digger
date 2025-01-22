@@ -1,0 +1,10 @@
+name: Bago
+type: Division-1
+meta:
+  alpha2: MM-02
+  includes:
+    - bago
+    - mm-02
+    - '02'
+    - bago region
+  category: REGION

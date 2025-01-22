@@ -1,0 +1,13 @@
+name: Az Zāwiyah
+type: Division-1
+meta:
+  alpha2: LY-ZA
+  includes:
+    - az zāwiyah
+    - ly-za
+    - za
+    - az zāwiyah popularate
+    - az zawiya district
+    - zawiya district
+    - sabratha wa surman
+  category: POPULARATE

@@ -1,0 +1,10 @@
+name: Diffa
+type: Division-1
+meta:
+  alpha2: NE-2
+  includes:
+    - diffa
+    - ne-2
+    - '2'
+    - diffa region
+  category: REGION

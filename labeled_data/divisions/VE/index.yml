@@ -1,0 +1,101 @@
+name: Venezuela, Bolivarian Republic of
+type: Division-0
+meta:
+  alpha2: VE
+  includes:
+    - Venezuela, Bolivarian Republic of
+    - VE
+    - '862'
+    - the Bolivarian Republic of Venezuela
+    - 委内瑞拉
+    - Venezuela
+  name_full: the Bolivarian Republic of Venezuela
+  name_zh: 委内瑞拉
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 83817
+    - year: 2020
+      quarter: 2
+      count: 89282
+    - year: 2020
+      quarter: 3
+      count: 95465
+    - year: 2020
+      quarter: 4
+      count: 100228
+    - year: 2021
+      quarter: 1
+      count: 105798
+    - year: 2021
+      quarter: 2
+      count: 111074
+    - year: 2021
+      quarter: 3
+      count: 116360
+    - year: 2021
+      quarter: 4
+      count: 120903
+    - year: 2022
+      quarter: 1
+      count: 127527
+    - year: 2022
+      quarter: 2
+      count: 133810
+    - year: 2022
+      quarter: 3
+      count: 141050
+    - year: 2022
+      quarter: 4
+      count: 147568
+    - year: 2023
+      quarter: 1
+      count: 156172
+    - year: 2023
+      quarter: 2
+      count: 167204
+    - year: 2023
+      quarter: 3
+      count: 177624
+    - year: 2023
+      quarter: 4
+      count: 187079
+    - year: 2024
+      quarter: 1
+      count: 203090
+    - year: 2024
+      quarter: 2
+      count: 216340
+    - year: 2024
+      quarter: 3
+      count: 224877
+    - year: 2024
+      quarter: 4
+      count: 231096
+data:
+  labels:
+    - VE-Z
+    - VE-B
+    - VE-C
+    - VE-D
+    - VE-E
+    - VE-F
+    - VE-G
+    - VE-H
+    - VE-Y
+    - VE-W
+    - VE-A
+    - VE-I
+    - VE-J
+    - VE-X
+    - VE-K
+    - VE-M
+    - VE-N
+    - VE-L
+    - VE-O
+    - VE-P
+    - VE-R
+    - VE-T
+    - VE-S
+    - VE-U
+    - VE-V

@@ -1,0 +1,11 @@
+name: Tunis
+type: Division-1
+meta:
+  alpha2: TN-11
+  includes:
+    - tunis
+    - tn-11
+    - '11'
+    - tunis governorate
+    - تونس
+  category: GOVERNORATE

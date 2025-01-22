@@ -1,0 +1,12 @@
+name: Pitcairn
+type: Division-0
+meta:
+  alpha2: PN
+  includes:
+    - Pitcairn
+    - PN
+    - '612'
+    - 皮特凯恩
+  name_full: Pitcairn
+  name_zh: 皮特凯恩
+  developers: []

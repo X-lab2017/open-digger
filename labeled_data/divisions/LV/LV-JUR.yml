@@ -1,0 +1,11 @@
+name: Jūrmala
+type: Division-1
+meta:
+  alpha2: LV-JUR
+  includes:
+    - jūrmala
+    - lv-jur
+    - jur
+    - jūrmala state city
+    - jurmala
+  category: STATE CITY

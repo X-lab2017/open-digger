@@ -1,0 +1,14 @@
+name: Municipalidad Metropolitana de Lima
+type: Division-1
+meta:
+  alpha2: PE-LMA
+  includes:
+    - lima hatun llaqta
+    - pe-lma
+    - lma
+    - lima hatun llaqta municipality
+    - lima llaqta suyu
+    - lima llaqta suyu municipality
+    - municipalidad metropolitana de lima
+    - municipalidad metropolitana de lima municipality
+  category: MUNICIPALITY

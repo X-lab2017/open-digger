@@ -1,0 +1,10 @@
+name: Nakuru
+type: Division-1
+meta:
+  alpha2: KE-31
+  includes:
+    - nakuru
+    - ke-31
+    - '31'
+    - nakuru county
+  category: COUNTY

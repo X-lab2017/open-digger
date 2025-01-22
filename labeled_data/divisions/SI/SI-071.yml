@@ -1,0 +1,10 @@
+name: Medvode
+type: Division-1
+meta:
+  alpha2: SI-071
+  includes:
+    - medvode
+    - si-071
+    - '071'
+    - medvode municipality
+  category: MUNICIPALITY

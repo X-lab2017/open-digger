@@ -1,0 +1,11 @@
+name: Gostivar
+type: Division-1
+meta:
+  alpha2: MK-604
+  includes:
+    - gostivar
+    - mk-604
+    - '604'
+    - gostivar municipality
+    - municipality of gostivar
+  category: MUNICIPALITY

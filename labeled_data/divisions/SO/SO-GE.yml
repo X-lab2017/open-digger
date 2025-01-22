@@ -1,0 +1,10 @@
+name: Gedo
+type: Division-1
+meta:
+  alpha2: SO-GE
+  includes:
+    - gedo
+    - so-ge
+    - ge
+    - gedo region
+  category: REGION

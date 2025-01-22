@@ -1,0 +1,30 @@
+name: Northern Cape
+type: Division-1
+meta:
+  alpha2: ZA-NC
+  includes:
+    - kapa bokone
+    - za-nc
+    - nc
+    - kapa bokone province
+    - kapa leboa
+    - kapa leboa province
+    - kapa devhula
+    - kapa devhula province
+    - kapa leboya
+    - kapa leboya province
+    - kapa-n'walungu
+    - kapa-n'walungu province
+    - mntla-koloni
+    - mntla-koloni province
+    - noord-kaap
+    - noord-kaap province
+    - northern cape
+    - northern cape province
+    - nyakatho-kapa
+    - nyakatho-kapa province
+    - nyakatho-koloni
+    - nyakatho-koloni province
+    - itlhagwini-kapa
+    - itlhagwini-kapa province
+  category: PROVINCE

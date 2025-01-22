@@ -1,0 +1,10 @@
+name: Dubăsari
+type: Division-1
+meta:
+  alpha2: MD-DU
+  includes:
+    - dubăsari
+    - md-du
+    - du
+    - dubăsari district
+  category: DISTRICT

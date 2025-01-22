@@ -1,0 +1,10 @@
+name: Mae Hong Son
+type: Division-1
+meta:
+  alpha2: TH-58
+  includes:
+    - mae hong son
+    - th-58
+    - '58'
+    - mae hong son province
+  category: PROVINCE

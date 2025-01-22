@@ -1,0 +1,10 @@
+name: Žalec
+type: Division-1
+meta:
+  alpha2: SI-190
+  includes:
+    - žalec
+    - si-190
+    - '190'
+    - žalec municipality
+  category: MUNICIPALITY

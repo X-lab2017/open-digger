@@ -1,0 +1,10 @@
+name: Yên Bái
+type: Division-1
+meta:
+  alpha2: VN-06
+  includes:
+    - yên bái
+    - vn-06
+    - '06'
+    - yên bái province
+  category: PROVINCE

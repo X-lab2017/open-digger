@@ -1,0 +1,12 @@
+name: Al Aḩmadī
+type: Division-1
+meta:
+  alpha2: KW-AH
+  includes:
+    - al aḩmadī
+    - kw-ah
+    - ah
+    - al aḩmadī governorate
+    - al ahmadi governorate
+    - sharq
+  category: GOVERNORATE

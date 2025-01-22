@@ -1,0 +1,10 @@
+name: Għasri
+type: Division-1
+meta:
+  alpha2: MT-16
+  includes:
+    - għasri
+    - mt-16
+    - '16'
+    - għasri local council
+  category: LOCAL COUNCIL

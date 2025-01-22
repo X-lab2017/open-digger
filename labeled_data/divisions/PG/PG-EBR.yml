@@ -1,0 +1,10 @@
+name: East New Britain
+type: Division-1
+meta:
+  alpha2: PG-EBR
+  includes:
+    - east new britain
+    - pg-ebr
+    - ebr
+    - east new britain province
+  category: PROVINCE

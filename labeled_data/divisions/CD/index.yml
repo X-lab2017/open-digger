@@ -1,0 +1,103 @@
+name: Congo, Democratic Republic of the
+type: Division-0
+meta:
+  alpha2: CD
+  includes:
+    - Congo, Democratic Republic of the
+    - CD
+    - '180'
+    - the Democratic Republic of the Congo
+    - 刚果（金）
+    - Democratic Republic of the Congo
+    - Congo (DRC)
+  name_full: the Democratic Republic of the Congo
+  name_zh: 刚果（金）
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 5406
+    - year: 2020
+      quarter: 2
+      count: 6208
+    - year: 2020
+      quarter: 3
+      count: 7028
+    - year: 2020
+      quarter: 4
+      count: 7840
+    - year: 2021
+      quarter: 1
+      count: 8689
+    - year: 2021
+      quarter: 2
+      count: 9674
+    - year: 2021
+      quarter: 3
+      count: 10520
+    - year: 2021
+      quarter: 4
+      count: 11266
+    - year: 2022
+      quarter: 1
+      count: 12368
+    - year: 2022
+      quarter: 2
+      count: 13632
+    - year: 2022
+      quarter: 3
+      count: 15072
+    - year: 2022
+      quarter: 4
+      count: 16228
+    - year: 2023
+      quarter: 1
+      count: 17766
+    - year: 2023
+      quarter: 2
+      count: 19364
+    - year: 2023
+      quarter: 3
+      count: 21023
+    - year: 2023
+      quarter: 4
+      count: 22552
+    - year: 2024
+      quarter: 1
+      count: 24594
+    - year: 2024
+      quarter: 2
+      count: 26951
+    - year: 2024
+      quarter: 3
+      count: 29397
+    - year: 2024
+      quarter: 4
+      count: 31782
+data:
+  labels:
+    - CD-BU
+    - CD-HK
+    - CD-HL
+    - CD-HU
+    - CD-IT
+    - CD-KS
+    - CD-KC
+    - CD-KE
+    - CD-KN
+    - CD-BC
+    - CD-KG
+    - CD-KL
+    - CD-LO
+    - CD-LU
+    - CD-MN
+    - CD-MA
+    - CD-MO
+    - CD-NK
+    - CD-NU
+    - CD-SA
+    - CD-SK
+    - CD-SU
+    - CD-TA
+    - CD-TO
+    - CD-TU
+    - CD-EQ

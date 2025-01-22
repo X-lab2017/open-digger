@@ -1,0 +1,12 @@
+name: Żebbuġ Gozo
+type: Division-1
+meta:
+  alpha2: MT-65
+  includes:
+    - żebbuġ gozo
+    - mt-65
+    - '65'
+    - żebbuġ gozo local council
+    - żebbuġ għawdex
+    - żebbuġ għawdex local council
+  category: LOCAL COUNCIL

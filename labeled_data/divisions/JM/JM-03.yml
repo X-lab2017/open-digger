@@ -1,0 +1,11 @@
+name: Saint Thomas
+type: Division-1
+meta:
+  alpha2: JM-03
+  includes:
+    - saint thomas
+    - jm-03
+    - '03'
+    - saint thomas parish
+    - st. thomas parish
+  category: PARISH

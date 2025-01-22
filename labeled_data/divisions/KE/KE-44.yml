@@ -1,0 +1,10 @@
+name: Uasin Gishu
+type: Division-1
+meta:
+  alpha2: KE-44
+  includes:
+    - uasin gishu
+    - ke-44
+    - '44'
+    - uasin gishu county
+  category: COUNTY

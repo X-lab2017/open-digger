@@ -1,0 +1,11 @@
+name: Valandovo
+type: Division-1
+meta:
+  alpha2: MK-403
+  includes:
+    - valandovo
+    - mk-403
+    - '403'
+    - valandovo municipality
+    - municipality of valandovo
+  category: MUNICIPALITY

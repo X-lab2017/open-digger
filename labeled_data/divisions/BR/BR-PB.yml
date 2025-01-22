@@ -1,0 +1,11 @@
+name: Paraíba
+type: Division-1
+meta:
+  alpha2: BR-PB
+  includes:
+    - paraíba
+    - br-pb
+    - pb
+    - paraíba state
+    - state of paraíba
+  category: STATE

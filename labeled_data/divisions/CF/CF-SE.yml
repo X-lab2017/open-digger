@@ -1,0 +1,12 @@
+name: Sangha
+type: Division-1
+meta:
+  alpha2: CF-SE
+  includes:
+    - sangha
+    - cf-se
+    - se
+    - sangha economic prefecture
+    - sangä
+    - sangä economic prefecture
+  category: ECONOMIC PREFECTURE

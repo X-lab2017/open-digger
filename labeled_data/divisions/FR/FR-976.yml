@@ -1,0 +1,10 @@
+name: Mayotte
+type: Division-1
+meta:
+  alpha2: FR-976
+  includes:
+    - mayotte
+    - fr-976
+    - '976'
+    - mayotte overseas departmental collectivity
+  category: OVERSEAS DEPARTMENTAL COLLECTIVITY

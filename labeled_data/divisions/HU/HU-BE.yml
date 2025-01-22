@@ -1,0 +1,10 @@
+name: Békés
+type: Division-1
+meta:
+  alpha2: HU-BE
+  includes:
+    - békés
+    - hu-be
+    - be
+    - békés county
+  category: COUNTY

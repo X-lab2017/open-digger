@@ -1,0 +1,43 @@
+name: Bicol
+type: Division-1
+meta:
+  alpha2: PH-05
+  includes:
+    - albay
+    - ph-alb
+    - alb
+    - albay province
+    - bicol
+    - ph-05
+    - '05'
+    - bicol region
+    - camarines norte
+    - ph-can
+    - can
+    - camarines norte province
+    - camarines sur
+    - ph-cas
+    - cas
+    - camarines sur province
+    - catanduanes
+    - ph-cat
+    - cat
+    - catanduanes province
+    - hilagang kamarines
+    - hilagang kamarines province
+    - katanduwanes
+    - katanduwanes province
+    - masbate
+    - ph-mas
+    - mas
+    - masbate province
+    - rehiyon ng bikol
+    - rehiyon ng bikol region
+    - sorsogon
+    - ph-sor
+    - sor
+    - sorsogon province
+    - timog kamarines
+    - timog kamarines province
+    - kabikulan
+  category: REGION

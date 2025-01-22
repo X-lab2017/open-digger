@@ -1,0 +1,30 @@
+name: North Central Province
+type: Division-1
+meta:
+  alpha2: LK-7
+  includes:
+    - anuradhapura
+    - lk-71
+    - '71'
+    - anuradhapura district
+    - anurādhapura
+    - anurādhapura district
+    - anurātapuram
+    - anurātapuram district
+    - north central province
+    - lk-7
+    - '7'
+    - north central province province
+    - polonnaruwa
+    - lk-72
+    - '72'
+    - polonnaruwa district
+    - pŏlaṉṉaṛuvai
+    - pŏlaṉṉaṛuvai district
+    - pŏḷŏnnaruva
+    - pŏḷŏnnaruva district
+    - uturumæ̆da paḷāta
+    - uturumæ̆da paḷāta province
+    - vaṭamattiya mākāṇam
+    - vaṭamattiya mākāṇam province
+  category: PROVINCE

@@ -1,0 +1,12 @@
+name: Constanța
+type: Division-1
+meta:
+  alpha2: RO-CT
+  includes:
+    - constanța
+    - ro-ct
+    - ct
+    - constanța department
+    - constanţa
+    - județul constanța
+  category: DEPARTMENT

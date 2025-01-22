@@ -1,0 +1,10 @@
+name: Zanzan
+type: Division-1
+meta:
+  alpha2: CI-ZZ
+  includes:
+    - zanzan
+    - ci-zz
+    - zz
+    - zanzan district
+  category: DISTRICT

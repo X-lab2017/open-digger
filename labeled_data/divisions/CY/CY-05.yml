@@ -1,0 +1,13 @@
+name: Pafos
+type: Division-1
+meta:
+  alpha2: CY-05
+  includes:
+    - baf
+    - cy-05
+    - '05'
+    - baf district
+    - pafos
+    - pafos district
+    - paphos
+  category: DISTRICT

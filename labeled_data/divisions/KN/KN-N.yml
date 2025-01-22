@@ -1,0 +1,30 @@
+name: Nevis
+type: Division-1
+meta:
+  alpha2: KN-N
+  includes:
+    - nevis
+    - kn-n
+    - 'n'
+    - nevis state
+    - saint george gingerland
+    - kn-04
+    - '04'
+    - saint george gingerland parish
+    - saint james windward
+    - kn-05
+    - '05'
+    - saint james windward parish
+    - saint john figtree
+    - kn-07
+    - '07'
+    - saint john figtree parish
+    - saint paul charlestown
+    - kn-10
+    - '10'
+    - saint paul charlestown parish
+    - saint thomas lowland
+    - kn-12
+    - '12'
+    - saint thomas lowland parish
+  category: STATE

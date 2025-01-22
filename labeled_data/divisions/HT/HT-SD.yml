@@ -1,0 +1,12 @@
+name: Sud
+type: Division-1
+meta:
+  alpha2: HT-SD
+  includes:
+    - sid
+    - ht-sd
+    - sd
+    - sid department
+    - sud
+    - sud department
+  category: DEPARTMENT

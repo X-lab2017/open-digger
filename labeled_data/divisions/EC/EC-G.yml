@@ -1,0 +1,10 @@
+name: Guayas
+type: Division-1
+meta:
+  alpha2: EC-G
+  includes:
+    - guayas
+    - ec-g
+    - g
+    - guayas province
+  category: PROVINCE

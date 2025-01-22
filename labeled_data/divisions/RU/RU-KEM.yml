@@ -1,0 +1,14 @@
+name: Kemerovskaya oblast'
+type: Division-1
+meta:
+  alpha2: RU-KEM
+  includes:
+    - kemerovskaja oblast'
+    - ru-kem
+    - kem
+    - kemerovskaja oblast' administrative region
+    - kemerovskaya oblast'
+    - kemerovskaya oblast' administrative region
+    - kemerovo oblast
+    - kemerovo
+  category: ADMINISTRATIVE REGION

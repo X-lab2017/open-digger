@@ -1,0 +1,11 @@
+name: Caraș-Severin
+type: Division-1
+meta:
+  alpha2: RO-CS
+  includes:
+    - caraș-severin
+    - ro-cs
+    - cs
+    - caraș-severin department
+    - caraș-severin county
+  category: DEPARTMENT

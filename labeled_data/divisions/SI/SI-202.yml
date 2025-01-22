@@ -1,0 +1,10 @@
+name: Središče ob Dravi
+type: Division-1
+meta:
+  alpha2: SI-202
+  includes:
+    - središče ob dravi
+    - si-202
+    - '202'
+    - središče ob dravi municipality
+  category: MUNICIPALITY

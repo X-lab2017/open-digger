@@ -1,0 +1,12 @@
+name: Saint John
+type: Division-1
+meta:
+  alpha2: MT-49
+  includes:
+    - saint john
+    - mt-49
+    - '49'
+    - saint john local council
+    - san ġwann
+    - san ġwann local council
+  category: LOCAL COUNCIL

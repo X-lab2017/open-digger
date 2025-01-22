@@ -1,0 +1,12 @@
+name: Kiến Giang
+type: Division-1
+meta:
+  alpha2: VN-47
+  includes:
+    - kiến giang
+    - vn-47
+    - '47'
+    - kiến giang province
+    - kiên giang
+    - kien giang
+  category: PROVINCE

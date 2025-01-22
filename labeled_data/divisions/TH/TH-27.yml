@@ -1,0 +1,10 @@
+name: Sa Kaeo
+type: Division-1
+meta:
+  alpha2: TH-27
+  includes:
+    - sa kaeo
+    - th-27
+    - '27'
+    - sa kaeo province
+  category: PROVINCE

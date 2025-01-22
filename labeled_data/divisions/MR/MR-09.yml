@@ -1,0 +1,10 @@
+name: Tagant
+type: Division-1
+meta:
+  alpha2: MR-09
+  includes:
+    - tagant
+    - mr-09
+    - '09'
+    - tagant region
+  category: REGION

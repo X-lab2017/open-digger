@@ -1,0 +1,14 @@
+name: Junín
+type: Division-1
+meta:
+  alpha2: PE-JUN
+  includes:
+    - hunin
+    - pe-jun
+    - jun
+    - hunin region
+    - junin
+    - junin region
+    - junín
+    - junín region
+  category: REGION

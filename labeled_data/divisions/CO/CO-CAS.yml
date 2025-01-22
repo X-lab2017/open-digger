@@ -1,0 +1,10 @@
+name: Casanare
+type: Division-1
+meta:
+  alpha2: CO-CAS
+  includes:
+    - casanare
+    - co-cas
+    - cas
+    - casanare department
+  category: DEPARTMENT

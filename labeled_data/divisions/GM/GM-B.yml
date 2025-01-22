@@ -1,0 +1,14 @@
+name: Banjul
+type: Division-1
+meta:
+  alpha2: GM-B
+  includes:
+    - banjul
+    - gm-b
+    - b
+    - banjul city
+    - banjul city council
+    - kanifing
+    - kanifing municipal council
+    - brikama
+  category: CITY

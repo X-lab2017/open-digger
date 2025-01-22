@@ -1,0 +1,10 @@
+name: Šoštanj
+type: Division-1
+meta:
+  alpha2: SI-126
+  includes:
+    - šoštanj
+    - si-126
+    - '126'
+    - šoštanj municipality
+  category: MUNICIPALITY

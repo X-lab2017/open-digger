@@ -1,0 +1,31 @@
+name: Souss-Massa
+type: Division-1
+meta:
+  alpha2: MA-09
+  includes:
+    - agadir-ida-ou-tanane
+    - ma-agd
+    - agd
+    - agadir-ida-ou-tanane prefecture
+    - inezgane-ait melloul
+    - ma-ine
+    - ine
+    - inezgane-ait melloul prefecture
+    - souss-massa
+    - ma-09
+    - '09'
+    - souss-massa region
+    - taroudannt
+    - ma-tar
+    - tar
+    - taroudannt province
+    - tata
+    - ma-tat
+    - tat
+    - tata province
+    - tiznit
+    - ma-tiz
+    - tiz
+    - tiznit province
+    - souss massa
+  category: REGION

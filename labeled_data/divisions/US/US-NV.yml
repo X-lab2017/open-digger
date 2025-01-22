@@ -1,0 +1,10 @@
+name: Nevada
+type: Division-1
+meta:
+  alpha2: US-NV
+  includes:
+    - nevada
+    - us-nv
+    - nv
+    - nevada state
+  category: STATE

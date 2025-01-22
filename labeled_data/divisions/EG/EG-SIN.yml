@@ -1,0 +1,12 @@
+name: Shamāl Sīnā'
+type: Division-1
+meta:
+  alpha2: EG-SIN
+  includes:
+    - shamāl sīnā'
+    - eg-sin
+    - sin
+    - shamāl sīnā' governorate
+    - north sinai
+    - north sinai governorate
+  category: GOVERNORATE

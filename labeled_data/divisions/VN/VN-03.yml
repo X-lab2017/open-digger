@@ -1,0 +1,11 @@
+name: Hà Giang
+type: Division-1
+meta:
+  alpha2: VN-03
+  includes:
+    - hà giang
+    - vn-03
+    - '03'
+    - hà giang province
+    - ha giang
+  category: PROVINCE

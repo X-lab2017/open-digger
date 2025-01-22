@@ -1,0 +1,12 @@
+name: Haut-Uélé
+type: Division-1
+meta:
+  alpha2: CD-HU
+  includes:
+    - haut-uélé
+    - cd-hu
+    - hu
+    - haut-uélé province
+    - upper uele
+    - lower uele
+  category: PROVINCE

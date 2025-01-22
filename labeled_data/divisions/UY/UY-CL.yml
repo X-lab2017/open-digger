@@ -1,0 +1,11 @@
+name: Cerro Largo
+type: Division-1
+meta:
+  alpha2: UY-CL
+  includes:
+    - cerro largo
+    - uy-cl
+    - cl
+    - cerro largo department
+    - departamento de cerro largo
+  category: DEPARTMENT

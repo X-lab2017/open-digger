@@ -1,0 +1,10 @@
+name: New South Wales
+type: Division-1
+meta:
+  alpha2: AU-NSW
+  includes:
+    - new south wales
+    - au-nsw
+    - nsw
+    - new south wales state
+  category: STATE

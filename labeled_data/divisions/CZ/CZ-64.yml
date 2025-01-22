@@ -1,0 +1,40 @@
+name: Jihomoravský kraj
+type: Division-1
+meta:
+  alpha2: CZ-64
+  includes:
+    - blansko
+    - cz-641
+    - '641'
+    - blansko district
+    - brno-město
+    - cz-642
+    - '642'
+    - brno-město district
+    - brno-venkov
+    - cz-643
+    - '643'
+    - brno-venkov district
+    - břeclav
+    - cz-644
+    - '644'
+    - břeclav district
+    - hodonín
+    - cz-645
+    - '645'
+    - hodonín district
+    - jihomoravský kraj
+    - cz-64
+    - '64'
+    - jihomoravský kraj region
+    - vyškov
+    - cz-646
+    - '646'
+    - vyškov district
+    - znojmo
+    - cz-647
+    - '647'
+    - znojmo district
+    - south moravian region
+    - south moravia
+  category: REGION

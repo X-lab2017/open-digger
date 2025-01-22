@@ -1,0 +1,10 @@
+name: Konya
+type: Division-1
+meta:
+  alpha2: TR-42
+  includes:
+    - konya
+    - tr-42
+    - '42'
+    - konya province
+  category: PROVINCE

@@ -1,0 +1,10 @@
+name: Hodh el Gharbi
+type: Division-1
+meta:
+  alpha2: MR-02
+  includes:
+    - hodh el gharbi
+    - mr-02
+    - '02'
+    - hodh el gharbi region
+  category: REGION

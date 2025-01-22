@@ -1,0 +1,115 @@
+name: India
+type: Division-0
+meta:
+  alpha2: IN
+  includes:
+    - India
+    - IN
+    - '356'
+    - the Republic of India
+    - 印度
+  name_full: the Republic of India
+  name_zh: 印度
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 4194257
+    - year: 2020
+      quarter: 2
+      count: 4684375
+    - year: 2020
+      quarter: 3
+      count: 5206926
+    - year: 2020
+      quarter: 4
+      count: 5653924
+    - year: 2021
+      quarter: 1
+      count: 6083067
+    - year: 2021
+      quarter: 2
+      count: 6652622
+    - year: 2021
+      quarter: 3
+      count: 7243683
+    - year: 2021
+      quarter: 4
+      count: 7790683
+    - year: 2022
+      quarter: 1
+      count: 8463763
+    - year: 2022
+      quarter: 2
+      count: 9071304
+    - year: 2022
+      quarter: 3
+      count: 9796437
+    - year: 2022
+      quarter: 4
+      count: 10567593
+    - year: 2023
+      quarter: 1
+      count: 11443487
+    - year: 2023
+      quarter: 2
+      count: 12258702
+    - year: 2023
+      quarter: 3
+      count: 13326416
+    - year: 2023
+      quarter: 4
+      count: 14211676
+    - year: 2024
+      quarter: 1
+      count: 15209709
+    - year: 2024
+      quarter: 2
+      count: 16049909
+    - year: 2024
+      quarter: 3
+      count: 17114921
+    - year: 2024
+      quarter: 4
+      count: 18062761
+data:
+  labels:
+    - IN-AN
+    - IN-AP
+    - IN-AR
+    - IN-AS
+    - IN-BR
+    - IN-CH
+    - IN-CG
+    - IN-DL
+    - IN-DH
+    - IN-GA
+    - IN-GJ
+    - IN-HR
+    - IN-HP
+    - IN-JK
+    - IN-JH
+    - IN-KA
+    - IN-KL
+    - IN-LA
+    - IN-LD
+    - IN-MP
+    - IN-MH
+    - IN-MN
+    - IN-ML
+    - IN-MZ
+    - IN-NL
+    - IN-OD
+    - IN-PY
+    - IN-PB
+    - IN-RJ
+    - IN-SK
+    - IN-TN
+    - IN-TS
+    - IN-TR
+    - IN-UP
+    - IN-UK
+    - IN-WB
+    - ':companies/blue_spire'
+    - ':companies/merico'
+    - ':companies/moving_tech_innovations'
+    - ':foundations/girlscript'

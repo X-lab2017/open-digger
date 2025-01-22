@@ -1,0 +1,10 @@
+name: Arusha
+type: Division-1
+meta:
+  alpha2: TZ-01
+  includes:
+    - arusha
+    - tz-01
+    - '01'
+    - arusha region
+  category: REGION

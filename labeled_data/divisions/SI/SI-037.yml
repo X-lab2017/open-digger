@@ -1,0 +1,10 @@
+name: Ig
+type: Division-1
+meta:
+  alpha2: SI-037
+  includes:
+    - ig
+    - si-037
+    - '037'
+    - ig municipality
+  category: MUNICIPALITY

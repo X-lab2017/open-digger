@@ -1,0 +1,10 @@
+name: Zamfara
+type: Division-1
+meta:
+  alpha2: NG-ZA
+  includes:
+    - zamfara
+    - ng-za
+    - za
+    - zamfara state
+  category: STATE

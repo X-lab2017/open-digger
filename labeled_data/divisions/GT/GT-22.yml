@@ -1,0 +1,10 @@
+name: Jutiapa
+type: Division-1
+meta:
+  alpha2: GT-22
+  includes:
+    - jutiapa
+    - gt-22
+    - '22'
+    - jutiapa department
+  category: DEPARTMENT

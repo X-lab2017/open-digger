@@ -1,0 +1,15 @@
+name: Kândal
+type: Division-1
+meta:
+  alpha2: KH-8
+  includes:
+    - kandaal
+    - kh-8
+    - '8'
+    - kandaal province
+    - kandal
+    - kandal province
+    - kândal
+    - kândal province
+    - kd
+  category: PROVINCE

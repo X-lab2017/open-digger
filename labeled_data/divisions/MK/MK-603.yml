@@ -1,0 +1,10 @@
+name: Vrapčište
+type: Division-1
+meta:
+  alpha2: MK-603
+  includes:
+    - vrapčište
+    - mk-603
+    - '603'
+    - vrapčište municipality
+  category: MUNICIPALITY

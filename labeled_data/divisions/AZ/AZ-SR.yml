@@ -1,0 +1,11 @@
+name: Şirvan
+type: Division-1
+meta:
+  alpha2: AZ-SR
+  includes:
+    - şirvan
+    - az-sr
+    - sr
+    - şirvan municipality
+    - shirvan-salyan
+  category: MUNICIPALITY

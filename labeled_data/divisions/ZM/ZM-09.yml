@@ -1,0 +1,10 @@
+name: Lusaka
+type: Division-1
+meta:
+  alpha2: ZM-09
+  includes:
+    - lusaka
+    - zm-09
+    - '09'
+    - lusaka province
+  category: PROVINCE

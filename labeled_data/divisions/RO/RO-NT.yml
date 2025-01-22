@@ -1,0 +1,12 @@
+name: Neamț
+type: Division-1
+meta:
+  alpha2: RO-NT
+  includes:
+    - neamț
+    - ro-nt
+    - nt
+    - neamț department
+    - neamţ
+    - neamț county
+  category: DEPARTMENT

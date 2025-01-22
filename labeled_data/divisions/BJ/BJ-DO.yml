@@ -1,0 +1,10 @@
+name: Donga
+type: Division-1
+meta:
+  alpha2: BJ-DO
+  includes:
+    - donga
+    - bj-do
+    - do
+    - donga department
+  category: DEPARTMENT

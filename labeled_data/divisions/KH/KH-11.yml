@@ -1,0 +1,14 @@
+name: Môndól Kiri
+type: Division-1
+meta:
+  alpha2: KH-11
+  includes:
+    - mondol kiri
+    - kh-11
+    - '11'
+    - mondol kiri province
+    - mondolkiri
+    - mondolkiri province
+    - môndól kiri
+    - môndól kiri province
+  category: PROVINCE

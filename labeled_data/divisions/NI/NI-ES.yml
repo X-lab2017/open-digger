@@ -1,0 +1,11 @@
+name: Estelí
+type: Division-1
+meta:
+  alpha2: NI-ES
+  includes:
+    - estelí
+    - ni-es
+    - es
+    - estelí department
+    - esteli
+  category: DEPARTMENT

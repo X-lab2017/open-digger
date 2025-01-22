@@ -1,0 +1,11 @@
+name: Chinandega
+type: Division-1
+meta:
+  alpha2: NI-CI
+  includes:
+    - chinandega
+    - ni-ci
+    - ci
+    - chinandega department
+    - cn
+  category: DEPARTMENT

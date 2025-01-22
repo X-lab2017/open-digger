@@ -1,0 +1,14 @@
+name: Kirovskaya oblast'
+type: Division-1
+meta:
+  alpha2: RU-KIR
+  includes:
+    - kirovskaja oblast'
+    - ru-kir
+    - kir
+    - kirovskaja oblast' administrative region
+    - kirovskaya oblast'
+    - kirovskaya oblast' administrative region
+    - kirov oblast
+    - kirov
+  category: ADMINISTRATIVE REGION

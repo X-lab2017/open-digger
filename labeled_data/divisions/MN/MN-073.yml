@@ -1,0 +1,10 @@
+name: Arhangay
+type: Division-1
+meta:
+  alpha2: MN-073
+  includes:
+    - arhangay
+    - mn-073
+    - '073'
+    - arhangay province
+  category: PROVINCE

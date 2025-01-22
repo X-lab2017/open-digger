@@ -1,0 +1,10 @@
+name: Manisa
+type: Division-1
+meta:
+  alpha2: TR-45
+  includes:
+    - manisa
+    - tr-45
+    - '45'
+    - manisa province
+  category: PROVINCE

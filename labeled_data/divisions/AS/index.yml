@@ -1,0 +1,72 @@
+name: American Samoa
+type: Division-0
+meta:
+  alpha2: AS
+  includes:
+    - American Samoa
+    - AS
+    - '016'
+    - 美属萨摩亚
+  name_full: American Samoa
+  name_zh: 美属萨摩亚
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 133
+    - year: 2020
+      quarter: 2
+      count: 160
+    - year: 2020
+      quarter: 3
+      count: 172
+    - year: 2020
+      quarter: 4
+      count: 188
+    - year: 2021
+      quarter: 1
+      count: 199
+    - year: 2021
+      quarter: 2
+      count: 216
+    - year: 2021
+      quarter: 3
+      count: 232
+    - year: 2021
+      quarter: 4
+      count: 250
+    - year: 2022
+      quarter: 1
+      count: 286
+    - year: 2022
+      quarter: 2
+      count: 324
+    - year: 2022
+      quarter: 3
+      count: 350
+    - year: 2022
+      quarter: 4
+      count: 371
+    - year: 2023
+      quarter: 1
+      count: 401
+    - year: 2023
+      quarter: 2
+      count: 435
+    - year: 2023
+      quarter: 3
+      count: 462
+    - year: 2023
+      quarter: 4
+      count: 489
+    - year: 2024
+      quarter: 1
+      count: 518
+    - year: 2024
+      quarter: 2
+      count: 544
+    - year: 2024
+      quarter: 3
+      count: 564
+    - year: 2024
+      quarter: 4
+      count: 593

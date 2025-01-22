@@ -1,0 +1,10 @@
+name: Qazax
+type: Division-1
+meta:
+  alpha2: AZ-QAZ
+  includes:
+    - qazax
+    - az-qaz
+    - qaz
+    - qazax rayon
+  category: RAYON

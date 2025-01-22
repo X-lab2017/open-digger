@@ -1,0 +1,11 @@
+name: Trujillo
+type: Division-1
+meta:
+  alpha2: VE-T
+  includes:
+    - trujillo
+    - ve-t
+    - t
+    - trujillo state
+    - tr
+  category: STATE

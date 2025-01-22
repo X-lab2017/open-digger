@@ -1,0 +1,14 @@
+name: Orlovskaya oblast'
+type: Division-1
+meta:
+  alpha2: RU-ORL
+  includes:
+    - orlovskaja oblast'
+    - ru-orl
+    - orl
+    - orlovskaja oblast' administrative region
+    - orlovskaya oblast'
+    - orlovskaya oblast' administrative region
+    - oryol oblast
+    - orel
+  category: ADMINISTRATIVE REGION

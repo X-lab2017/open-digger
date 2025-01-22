@@ -1,0 +1,13 @@
+name: Al Baḩr al Aḩmar
+type: Division-1
+meta:
+  alpha2: EG-BA
+  includes:
+    - al baḩr al aḩmar
+    - eg-ba
+    - ba
+    - al baḩr al aḩmar governorate
+    - red sea
+    - red sea governorate
+    - al bahr al ahmar
+  category: GOVERNORATE

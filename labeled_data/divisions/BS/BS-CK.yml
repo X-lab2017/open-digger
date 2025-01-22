@@ -1,0 +1,10 @@
+name: Crooked Island and Long Cay
+type: Division-1
+meta:
+  alpha2: BS-CK
+  includes:
+    - crooked island and long cay
+    - bs-ck
+    - ck
+    - crooked island and long cay district
+  category: DISTRICT

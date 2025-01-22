@@ -1,0 +1,10 @@
+name: Djelfa
+type: Division-1
+meta:
+  alpha2: DZ-17
+  includes:
+    - djelfa
+    - dz-17
+    - '17'
+    - djelfa province
+  category: PROVINCE

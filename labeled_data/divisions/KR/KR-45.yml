@@ -1,0 +1,14 @@
+name: Jeollabuk-do
+type: Division-1
+meta:
+  alpha2: KR-45
+  includes:
+    - jeollabuk-do
+    - kr-45
+    - '45'
+    - jeollabuk-do province
+    - jeonbuk
+    - jeonbuk province
+    - north jeolla
+    - jeonbuk state
+  category: PROVINCE

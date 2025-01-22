@@ -1,0 +1,11 @@
+name: Yucatán
+type: Division-1
+meta:
+  alpha2: MX-YUC
+  includes:
+    - yucatán
+    - mx-yuc
+    - yuc
+    - yucatán state
+    - yucatan
+  category: STATE

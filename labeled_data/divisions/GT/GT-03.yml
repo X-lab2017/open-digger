@@ -1,0 +1,10 @@
+name: Sacatepéquez
+type: Division-1
+meta:
+  alpha2: GT-03
+  includes:
+    - sacatepéquez
+    - gt-03
+    - '03'
+    - sacatepéquez department
+  category: DEPARTMENT

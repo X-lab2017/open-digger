@@ -1,0 +1,13 @@
+name: Buryatiya
+type: Division-1
+meta:
+  alpha2: RU-BU
+  includes:
+    - burjatija
+    - ru-bu
+    - bu
+    - burjatija republic
+    - buryatiya
+    - buryatiya republic
+    - buryatia
+  category: REPUBLIC

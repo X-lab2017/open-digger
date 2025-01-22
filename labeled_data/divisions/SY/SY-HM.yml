@@ -1,0 +1,11 @@
+name: Ḩamāh
+type: Division-1
+meta:
+  alpha2: SY-HM
+  includes:
+    - ḩamāh
+    - sy-hm
+    - hm
+    - ḩamāh province
+    - hama governorate
+  category: PROVINCE

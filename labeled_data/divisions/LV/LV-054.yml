@@ -1,0 +1,12 @@
+name: Limbažu novads
+type: Division-1
+meta:
+  alpha2: LV-054
+  includes:
+    - limbažu novads
+    - lv-054
+    - '054'
+    - limbažu novads municipality
+    - limbaži
+    - limbaži municipality
+  category: MUNICIPALITY

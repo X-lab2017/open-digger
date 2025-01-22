@@ -1,0 +1,13 @@
+name: Liban-Sud
+type: Division-1
+meta:
+  alpha2: LB-JA
+  includes:
+    - al janūb
+    - lb-ja
+    - ja
+    - al janūb governorate
+    - liban-sud
+    - liban-sud governorate
+    - south governorate
+  category: GOVERNORATE

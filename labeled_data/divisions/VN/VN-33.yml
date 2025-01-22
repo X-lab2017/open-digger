@@ -1,0 +1,11 @@
+name: Đắk Lắk
+type: Division-1
+meta:
+  alpha2: VN-33
+  includes:
+    - đắk lắk
+    - vn-33
+    - '33'
+    - đắk lắk province
+    - dak lak
+  category: PROVINCE

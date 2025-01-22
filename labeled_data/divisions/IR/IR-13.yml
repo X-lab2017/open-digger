@@ -1,0 +1,11 @@
+name: Hamadān
+type: Division-1
+meta:
+  alpha2: IR-13
+  includes:
+    - hamadān
+    - ir-13
+    - '13'
+    - hamadān province
+    - hamadan province
+  category: PROVINCE

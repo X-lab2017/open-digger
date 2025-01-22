@@ -1,0 +1,10 @@
+name: Jász-Nagykun-Szolnok
+type: Division-1
+meta:
+  alpha2: HU-JN
+  includes:
+    - jász-nagykun-szolnok
+    - hu-jn
+    - jn
+    - jász-nagykun-szolnok county
+  category: COUNTY

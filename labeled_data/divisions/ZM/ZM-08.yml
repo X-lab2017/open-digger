@@ -1,0 +1,10 @@
+name: Copperbelt
+type: Division-1
+meta:
+  alpha2: ZM-08
+  includes:
+    - copperbelt
+    - zm-08
+    - '08'
+    - copperbelt province
+  category: PROVINCE

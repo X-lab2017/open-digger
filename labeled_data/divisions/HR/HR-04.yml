@@ -1,0 +1,13 @@
+name: Karlovačka županija
+type: Division-1
+meta:
+  alpha2: HR-04
+  includes:
+    - karlovačka županija
+    - hr-04
+    - '04'
+    - karlovačka županija county
+    - county of karlovac
+    - karlovac county
+    - karlovac
+  category: COUNTY

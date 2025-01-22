@@ -1,0 +1,26 @@
+name: Valdesia
+type: Division-1
+meta:
+  alpha2: DO-41
+  includes:
+    - azua
+    - do-02
+    - '02'
+    - azua province
+    - peravia
+    - do-17
+    - '17'
+    - peravia province
+    - san cristóbal
+    - do-21
+    - '21'
+    - san cristóbal province
+    - san josé de ocoa
+    - do-31
+    - '31'
+    - san josé de ocoa province
+    - valdesia
+    - do-41
+    - '41'
+    - valdesia region
+  category: REGION

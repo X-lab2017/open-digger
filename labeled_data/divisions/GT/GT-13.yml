@@ -1,0 +1,10 @@
+name: Huehuetenango
+type: Division-1
+meta:
+  alpha2: GT-13
+  includes:
+    - huehuetenango
+    - gt-13
+    - '13'
+    - huehuetenango department
+  category: DEPARTMENT

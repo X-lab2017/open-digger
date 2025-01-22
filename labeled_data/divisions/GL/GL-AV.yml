@@ -1,0 +1,10 @@
+name: Avannaata Kommunia
+type: Division-1
+meta:
+  alpha2: GL-AV
+  includes:
+    - avannaata kommunia
+    - gl-av
+    - av
+    - avannaata kommunia municipality
+  category: MUNICIPALITY

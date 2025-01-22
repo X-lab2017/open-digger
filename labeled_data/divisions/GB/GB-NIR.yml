@@ -1,0 +1,54 @@
+name: Northern Ireland
+type: Division-1
+meta:
+  alpha2: GB-NIR
+  includes:
+    - antrim and newtownabbey
+    - gb-ann
+    - ann
+    - antrim and newtownabbey district
+    - ards and north down
+    - gb-and
+    - and
+    - ards and north down district
+    - armagh city
+    - gb-abc
+    - abc
+    - armagh city district
+    - belfast city
+    - gb-bfs
+    - bfs
+    - belfast city district
+    - causeway coast and glens
+    - gb-ccg
+    - ccg
+    - causeway coast and glens district
+    - derry and strabane
+    - gb-drs
+    - drs
+    - derry and strabane district
+    - fermanagh and omagh
+    - gb-fmo
+    - fmo
+    - fermanagh and omagh district
+    - lisburn and castlereagh
+    - gb-lbc
+    - lbc
+    - lisburn and castlereagh district
+    - mid and east antrim
+    - gb-mea
+    - mea
+    - mid and east antrim district
+    - mid-ulster
+    - gb-mul
+    - mul
+    - mid-ulster district
+    - newry
+    - gb-nmd
+    - nmd
+    - newry district
+    - northern ireland
+    - gb-nir
+    - nir
+    - northern ireland province
+  category: PROVINCE

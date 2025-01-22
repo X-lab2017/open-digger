@@ -1,0 +1,18 @@
+name: Maluku
+type: Division-1
+meta:
+  alpha2: ID-ML
+  includes:
+    - maluku
+    - id-ml
+    - ml
+    - maluku geographical unit
+    - id-ma
+    - ma
+    - maluku province
+    - maluku utara
+    - id-mu
+    - mu
+    - maluku utara province
+    - north maluku
+  category: GEOGRAPHICAL UNIT

@@ -1,0 +1,10 @@
+name: Tak
+type: Division-1
+meta:
+  alpha2: TH-63
+  includes:
+    - tak
+    - th-63
+    - '63'
+    - tak province
+  category: PROVINCE

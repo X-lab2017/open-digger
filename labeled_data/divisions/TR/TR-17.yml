@@ -1,0 +1,10 @@
+name: Çanakkale
+type: Division-1
+meta:
+  alpha2: TR-17
+  includes:
+    - çanakkale
+    - tr-17
+    - '17'
+    - çanakkale province
+  category: PROVINCE

@@ -1,0 +1,11 @@
+name: Bacău
+type: Division-1
+meta:
+  alpha2: RO-BC
+  includes:
+    - bacău
+    - ro-bc
+    - bc
+    - bacău department
+    - bacău county
+  category: DEPARTMENT

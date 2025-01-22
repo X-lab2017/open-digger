@@ -1,0 +1,13 @@
+name: Coahuila de Zaragoza
+type: Division-1
+meta:
+  alpha2: MX-COA
+  includes:
+    - coahuila de zaragoza
+    - mx-coa
+    - coa
+    - coahuila de zaragoza state
+    - coahuila
+    - coahuila state
+    - coah
+  category: STATE

@@ -1,0 +1,10 @@
+name: Matabeleland North
+type: Division-1
+meta:
+  alpha2: ZW-MN
+  includes:
+    - matabeleland north
+    - zw-mn
+    - mn
+    - matabeleland north province
+  category: PROVINCE

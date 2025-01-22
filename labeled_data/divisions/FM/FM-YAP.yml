@@ -1,0 +1,9 @@
+name: Yap
+type: Division-1
+meta:
+  alpha2: FM-YAP
+  includes:
+    - yap
+    - fm-yap
+    - yap state
+  category: STATE

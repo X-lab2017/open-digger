@@ -1,0 +1,10 @@
+name: Mashonaland West
+type: Division-1
+meta:
+  alpha2: ZW-MW
+  includes:
+    - mashonaland west
+    - zw-mw
+    - mw
+    - mashonaland west province
+  category: PROVINCE

@@ -1,0 +1,11 @@
+name: Centre
+type: Division-1
+meta:
+  alpha2: CM-CE
+  includes:
+    - centre
+    - cm-ce
+    - ce
+    - centre region
+    - région du centre
+  category: REGION

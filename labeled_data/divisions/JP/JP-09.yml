@@ -1,0 +1,12 @@
+name: Totigi
+type: Division-1
+meta:
+  alpha2: JP-09
+  includes:
+    - tochigi
+    - jp-09
+    - '09'
+    - tochigi prefecture
+    - totigi
+    - totigi prefecture
+  category: PREFECTURE

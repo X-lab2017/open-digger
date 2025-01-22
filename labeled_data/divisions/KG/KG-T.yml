@@ -1,0 +1,14 @@
+name: Talasskaya oblast'
+type: Division-1
+meta:
+  alpha2: KG-T
+  includes:
+    - talas
+    - kg-t
+    - t
+    - talas region
+    - talasskaja oblast'
+    - talasskaja oblast' region
+    - talasskaya oblast'
+    - talasskaya oblast' region
+  category: REGION

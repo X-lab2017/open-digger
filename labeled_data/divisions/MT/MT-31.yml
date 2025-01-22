@@ -1,0 +1,10 @@
+name: Mġarr
+type: Division-1
+meta:
+  alpha2: MT-31
+  includes:
+    - mġarr
+    - mt-31
+    - '31'
+    - mġarr local council
+  category: LOCAL COUNCIL

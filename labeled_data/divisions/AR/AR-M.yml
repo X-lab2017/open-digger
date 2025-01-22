@@ -1,0 +1,11 @@
+name: Mendoza
+type: Division-1
+meta:
+  alpha2: AR-M
+  includes:
+    - mendoza
+    - ar-m
+    - m
+    - mendoza province
+    - mza
+  category: PROVINCE

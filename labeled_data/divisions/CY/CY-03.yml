@@ -1,0 +1,11 @@
+name: Larnaka
+type: Division-1
+meta:
+  alpha2: CY-03
+  includes:
+    - larnaka
+    - cy-03
+    - '03'
+    - larnaka district
+    - larnaca
+  category: DISTRICT

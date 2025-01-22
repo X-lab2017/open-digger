@@ -1,0 +1,10 @@
+name: Hentiy
+type: Division-1
+meta:
+  alpha2: MN-039
+  includes:
+    - hentiy
+    - mn-039
+    - '039'
+    - hentiy province
+  category: PROVINCE

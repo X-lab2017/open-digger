@@ -1,0 +1,13 @@
+name: Karbalā’
+type: Division-1
+meta:
+  alpha2: IQ-KA
+  includes:
+    - karbalā’
+    - iq-ka
+    - ka
+    - karbalā’ governorate
+    - karbala
+    - karbala governorate
+    - كربلاء محافظة
+  category: GOVERNORATE

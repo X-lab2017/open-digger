@@ -1,0 +1,10 @@
+name: Littoral
+type: Division-1
+meta:
+  alpha2: BJ-LI
+  includes:
+    - littoral
+    - bj-li
+    - li
+    - littoral department
+  category: DEPARTMENT

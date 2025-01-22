@@ -1,0 +1,10 @@
+name: Irbid
+type: Division-1
+meta:
+  alpha2: JO-IR
+  includes:
+    - irbid
+    - jo-ir
+    - ir
+    - irbid governorate
+  category: GOVERNORATE

@@ -1,0 +1,10 @@
+name: Pomoravski okrug
+type: Division-1
+meta:
+  alpha2: RS-13
+  includes:
+    - pomoravski okrug
+    - rs-13
+    - '13'
+    - pomoravski okrug district
+  category: DISTRICT

@@ -1,0 +1,11 @@
+name: Darién
+type: Division-1
+meta:
+  alpha2: PA-5
+  includes:
+    - darién
+    - pa-5
+    - '5'
+    - darién province
+    - da
+  category: PROVINCE

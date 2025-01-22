@@ -1,0 +1,14 @@
+name: Felidhu Atoll
+type: Division-1
+meta:
+  alpha2: MV-04
+  includes:
+    - felidheatholhu
+    - mv-04
+    - '04'
+    - felidheatholhu administrative atoll
+    - vaavu
+    - vaavu administrative atoll
+    - felidhu atoll
+    - felidhu atoll administrative atoll
+  category: ADMINISTRATIVE ATOLL

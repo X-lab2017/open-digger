@@ -1,0 +1,13 @@
+name: As Suways
+type: Division-1
+meta:
+  alpha2: EG-SUZ
+  includes:
+    - as suways
+    - eg-suz
+    - suz
+    - as suways governorate
+    - suez
+    - suez governorate
+    - محافظة السويس
+  category: GOVERNORATE

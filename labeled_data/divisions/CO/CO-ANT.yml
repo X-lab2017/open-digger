@@ -1,0 +1,10 @@
+name: Antioquia
+type: Division-1
+meta:
+  alpha2: CO-ANT
+  includes:
+    - antioquia
+    - co-ant
+    - ant
+    - antioquia department
+  category: DEPARTMENT

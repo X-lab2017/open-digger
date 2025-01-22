@@ -1,0 +1,14 @@
+name: Arequipa
+type: Division-1
+meta:
+  alpha2: PE-ARE
+  includes:
+    - arequipa
+    - pe-are
+    - are
+    - arequipa region
+    - arikipa
+    - arikipa region
+    - ariqipa
+    - ariqipa region
+  category: REGION

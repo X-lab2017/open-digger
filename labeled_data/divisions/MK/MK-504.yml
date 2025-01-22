@@ -1,0 +1,10 @@
+name: Krivogaštani
+type: Division-1
+meta:
+  alpha2: MK-504
+  includes:
+    - krivogaštani
+    - mk-504
+    - '504'
+    - krivogaštani municipality
+  category: MUNICIPALITY

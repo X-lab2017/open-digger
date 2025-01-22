@@ -1,0 +1,13 @@
+name: Daegu-gwangyeoksi
+type: Division-1
+meta:
+  alpha2: KR-27
+  includes:
+    - daegu-gwangyeoksi
+    - kr-27
+    - '27'
+    - daegu-gwangyeoksi metropolitan city
+    - daegu
+    - daegu metropolitan city
+    - 대구광역시
+  category: METROPOLITAN CITY

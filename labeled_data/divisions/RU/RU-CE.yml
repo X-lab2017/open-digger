@@ -1,0 +1,13 @@
+name: Čečenskaja Respublika
+type: Division-1
+meta:
+  alpha2: RU-CE
+  includes:
+    - chechenskaya respublika
+    - ru-ce
+    - ce
+    - chechenskaya respublika republic
+    - čečenskaja respublika
+    - čečenskaja respublika republic
+    - chechnya
+  category: REPUBLIC

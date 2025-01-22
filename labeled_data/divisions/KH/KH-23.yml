@@ -1,0 +1,15 @@
+name: Kêb
+type: Division-1
+meta:
+  alpha2: KH-23
+  includes:
+    - kaeb
+    - kh-23
+    - '23'
+    - kaeb province
+    - kep
+    - kep province
+    - kêb
+    - kêb province
+    - kb
+  category: PROVINCE

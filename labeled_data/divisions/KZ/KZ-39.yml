@@ -1,0 +1,15 @@
+name: Kostanayskaya oblast'
+type: Division-1
+meta:
+  alpha2: KZ-39
+  includes:
+    - kostanajskaja oblast'
+    - kz-39
+    - '39'
+    - kostanajskaja oblast' region
+    - kostanayskaya oblast'
+    - kostanayskaya oblast' region
+    - qostanay oblysy
+    - qostanay oblysy region
+    - kostanay region
+  category: REGION

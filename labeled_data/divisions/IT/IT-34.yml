@@ -1,0 +1,39 @@
+name: Veneto
+type: Division-1
+meta:
+  alpha2: IT-34
+  includes:
+    - belluno
+    - it-bl
+    - bl
+    - belluno province
+    - padova
+    - it-pd
+    - pd
+    - padova province
+    - rovigo
+    - it-ro
+    - ro
+    - rovigo province
+    - treviso
+    - it-tv
+    - tv
+    - treviso province
+    - veneto
+    - it-34
+    - '34'
+    - veneto region
+    - venezia
+    - it-ve
+    - ve
+    - venezia metropolitan city
+    - verona
+    - it-vr
+    - vr
+    - verona province
+    - vicenza
+    - it-vi
+    - vi
+    - vicenza province
+    - ven.
+  category: REGION

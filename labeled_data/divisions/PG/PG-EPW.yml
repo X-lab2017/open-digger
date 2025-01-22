@@ -1,0 +1,10 @@
+name: Enga
+type: Division-1
+meta:
+  alpha2: PG-EPW
+  includes:
+    - enga
+    - pg-epw
+    - epw
+    - enga province
+  category: PROVINCE

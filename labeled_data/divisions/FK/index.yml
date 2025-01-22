@@ -1,0 +1,16 @@
+name: Falkland Islands (Malvinas)
+type: Division-0
+meta:
+  alpha2: FK
+  includes:
+    - Falkland Islands (Malvinas)
+    - FK
+    - '238'
+    - Falkland Islands [Malvinas]
+    - 福克兰群岛（马尔维纳斯）
+    - Falkland Islands (Islas Malvinas)
+    - Falkland Islands
+    - 福克兰群岛
+  name_full: Falkland Islands [Malvinas]
+  name_zh: 福克兰群岛（马尔维纳斯）
+  developers: []

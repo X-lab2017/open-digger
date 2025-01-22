@@ -1,0 +1,10 @@
+name: Cotopaxi
+type: Division-1
+meta:
+  alpha2: EC-X
+  includes:
+    - cotopaxi
+    - ec-x
+    - x
+    - cotopaxi province
+  category: PROVINCE

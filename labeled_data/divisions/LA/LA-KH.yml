@@ -1,0 +1,13 @@
+name: Khammouan
+type: Division-1
+meta:
+  alpha2: LA-KH
+  includes:
+    - khammouan
+    - la-kh
+    - kh
+    - khammouan province
+    - khammuane
+    - khammuane province
+    - km
+  category: PROVINCE

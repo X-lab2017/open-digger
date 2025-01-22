@@ -1,0 +1,10 @@
+name: Ravne na Koroškem
+type: Division-1
+meta:
+  alpha2: SI-103
+  includes:
+    - ravne na koroškem
+    - si-103
+    - '103'
+    - ravne na koroškem municipality
+  category: MUNICIPALITY

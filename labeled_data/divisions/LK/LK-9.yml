@@ -1,0 +1,28 @@
+name: Sabaragamuwa Province
+type: Division-1
+meta:
+  alpha2: LK-9
+  includes:
+    - chappirakamuva mākāṇam
+    - lk-9
+    - '9'
+    - chappirakamuva mākāṇam province
+    - irattiṉapuri
+    - lk-91
+    - '91'
+    - irattiṉapuri district
+    - kegalla
+    - lk-92
+    - '92'
+    - kegalla district
+    - kekālai
+    - kekālai district
+    - kægalla
+    - kægalla district
+    - ratnapura
+    - ratnapura district
+    - sabaragamuva paḷāta
+    - sabaragamuva paḷāta province
+    - sabaragamuwa province
+    - sabaragamuwa province province
+  category: PROVINCE

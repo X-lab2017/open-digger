@@ -1,0 +1,10 @@
+name: Gbarpolu
+type: Division-1
+meta:
+  alpha2: LR-GP
+  includes:
+    - gbarpolu
+    - lr-gp
+    - gp
+    - gbarpolu county
+  category: COUNTY

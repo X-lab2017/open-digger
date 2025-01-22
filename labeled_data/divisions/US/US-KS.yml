@@ -1,0 +1,10 @@
+name: Kansas
+type: Division-1
+meta:
+  alpha2: US-KS
+  includes:
+    - kansas
+    - us-ks
+    - ks
+    - kansas state
+  category: STATE

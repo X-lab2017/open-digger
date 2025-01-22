@@ -1,0 +1,10 @@
+name: Sant Julià de Lòria
+type: Division-1
+meta:
+  alpha2: AD-06
+  includes:
+    - sant julià de lòria
+    - ad-06
+    - '06'
+    - sant julià de lòria parish
+  category: PARISH

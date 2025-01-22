@@ -1,0 +1,10 @@
+name: Ohangwena
+type: Division-1
+meta:
+  alpha2: NA-OW
+  includes:
+    - ohangwena
+    - na-ow
+    - ow
+    - ohangwena region
+  category: REGION

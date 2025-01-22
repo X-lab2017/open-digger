@@ -1,0 +1,12 @@
+name: Tukuma novads
+type: Division-1
+meta:
+  alpha2: LV-099
+  includes:
+    - tukuma novads
+    - lv-099
+    - '099'
+    - tukuma novads municipality
+    - tukums
+    - tukums municipality
+  category: MUNICIPALITY

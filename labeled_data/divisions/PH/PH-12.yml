@@ -1,0 +1,28 @@
+name: Soccsksargen
+type: Division-1
+meta:
+  alpha2: PH-12
+  includes:
+    - cotabato
+    - ph-nco
+    - nco
+    - cotabato province
+    - hilagang lanaw
+    - ph-lan
+    - lan
+    - hilagang lanaw province
+    - kotabato
+    - kotabato province
+    - lanao del norte
+    - lanao del norte province
+    - rehiyon ng soccsksargen
+    - ph-12
+    - '12'
+    - rehiyon ng soccsksargen region
+    - soccsksargen
+    - soccsksargen region
+    - sultan kudarat
+    - ph-suk
+    - suk
+    - sultan kudarat province
+  category: REGION

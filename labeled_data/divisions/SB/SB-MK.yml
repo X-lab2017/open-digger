@@ -1,0 +1,10 @@
+name: Makira-Ulawa
+type: Division-1
+meta:
+  alpha2: SB-MK
+  includes:
+    - makira-ulawa
+    - sb-mk
+    - mk
+    - makira-ulawa province
+  category: PROVINCE

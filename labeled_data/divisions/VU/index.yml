@@ -1,0 +1,81 @@
+name: Vanuatu
+type: Division-0
+meta:
+  alpha2: VU
+  includes:
+    - Vanuatu
+    - VU
+    - '548'
+    - the Republic of Vanuatu
+    - 瓦努阿图
+  name_full: the Republic of Vanuatu
+  name_zh: 瓦努阿图
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 247
+    - year: 2020
+      quarter: 2
+      count: 276
+    - year: 2020
+      quarter: 3
+      count: 296
+    - year: 2020
+      quarter: 4
+      count: 312
+    - year: 2021
+      quarter: 1
+      count: 328
+    - year: 2021
+      quarter: 2
+      count: 348
+    - year: 2021
+      quarter: 3
+      count: 368
+    - year: 2021
+      quarter: 4
+      count: 392
+    - year: 2022
+      quarter: 1
+      count: 425
+    - year: 2022
+      quarter: 2
+      count: 451
+    - year: 2022
+      quarter: 3
+      count: 493
+    - year: 2022
+      quarter: 4
+      count: 521
+    - year: 2023
+      quarter: 1
+      count: 554
+    - year: 2023
+      quarter: 2
+      count: 600
+    - year: 2023
+      quarter: 3
+      count: 628
+    - year: 2023
+      quarter: 4
+      count: 654
+    - year: 2024
+      quarter: 1
+      count: 691
+    - year: 2024
+      quarter: 2
+      count: 710
+    - year: 2024
+      quarter: 3
+      count: 765
+    - year: 2024
+      quarter: 4
+      count: 903
+data:
+  labels:
+    - VU-MAP
+    - VU-PAM
+    - VU-SAM
+    - VU-SEE
+    - VU-TAE
+    - VU-TOB

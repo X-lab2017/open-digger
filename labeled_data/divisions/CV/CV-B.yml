@@ -1,0 +1,42 @@
+name: Ilhas de Barlavento
+type: Division-1
+meta:
+  alpha2: CV-B
+  includes:
+    - boa vista
+    - cv-bv
+    - bv
+    - boa vista municipality
+    - ilhas de barlavento
+    - cv-b
+    - b
+    - ilhas de barlavento geographical region
+    - paul
+    - cv-pa
+    - pa
+    - paul municipality
+    - porto novo
+    - cv-pn
+    - pn
+    - porto novo municipality
+    - ribeira brava
+    - cv-rb
+    - rb
+    - ribeira brava municipality
+    - ribeira grande
+    - cv-rg
+    - rg
+    - ribeira grande municipality
+    - sal
+    - cv-sl
+    - sl
+    - sal municipality
+    - são vicente
+    - cv-sv
+    - sv
+    - são vicente municipality
+    - tarrafal de são nicolau
+    - cv-ts
+    - ts
+    - tarrafal de são nicolau municipality
+  category: GEOGRAPHICAL REGION

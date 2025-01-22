@@ -1,0 +1,11 @@
+name: Ohrid
+type: Division-1
+meta:
+  alpha2: MK-310
+  includes:
+    - ohrid
+    - mk-310
+    - '310'
+    - ohrid municipality
+    - municipality of ohrid
+  category: MUNICIPALITY

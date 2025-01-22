@@ -1,0 +1,10 @@
+name: Huila
+type: Division-1
+meta:
+  alpha2: CO-HUI
+  includes:
+    - huila
+    - co-hui
+    - hui
+    - huila department
+  category: DEPARTMENT

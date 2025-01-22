@@ -1,0 +1,99 @@
+name: Tunisia
+type: Division-0
+meta:
+  alpha2: TN
+  includes:
+    - Tunisia
+    - TN
+    - '788'
+    - the Republic of Tunisia
+    - 突尼斯
+  name_full: the Republic of Tunisia
+  name_zh: 突尼斯
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 88631
+    - year: 2020
+      quarter: 2
+      count: 96518
+    - year: 2020
+      quarter: 3
+      count: 102800
+    - year: 2020
+      quarter: 4
+      count: 113249
+    - year: 2021
+      quarter: 1
+      count: 123955
+    - year: 2021
+      quarter: 2
+      count: 133148
+    - year: 2021
+      quarter: 3
+      count: 141516
+    - year: 2021
+      quarter: 4
+      count: 152080
+    - year: 2022
+      quarter: 1
+      count: 165393
+    - year: 2022
+      quarter: 2
+      count: 174269
+    - year: 2022
+      quarter: 3
+      count: 182535
+    - year: 2022
+      quarter: 4
+      count: 193939
+    - year: 2023
+      quarter: 1
+      count: 208372
+    - year: 2023
+      quarter: 2
+      count: 220399
+    - year: 2023
+      quarter: 3
+      count: 231523
+    - year: 2023
+      quarter: 4
+      count: 245586
+    - year: 2024
+      quarter: 1
+      count: 260464
+    - year: 2024
+      quarter: 2
+      count: 272555
+    - year: 2024
+      quarter: 3
+      count: 283326
+    - year: 2024
+      quarter: 4
+      count: 298164
+data:
+  labels:
+    - TN-13
+    - TN-23
+    - TN-31
+    - TN-81
+    - TN-71
+    - TN-32
+    - TN-41
+    - TN-42
+    - TN-73
+    - TN-12
+    - TN-14
+    - TN-33
+    - TN-53
+    - TN-52
+    - TN-82
+    - TN-21
+    - TN-61
+    - TN-43
+    - TN-34
+    - TN-51
+    - TN-83
+    - TN-72
+    - TN-11
+    - TN-22

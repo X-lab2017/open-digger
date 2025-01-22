@@ -1,0 +1,10 @@
+name: Denguélé
+type: Division-1
+meta:
+  alpha2: CI-DN
+  includes:
+    - denguélé
+    - ci-dn
+    - dn
+    - denguélé district
+  category: DISTRICT

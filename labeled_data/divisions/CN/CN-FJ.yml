@@ -1,0 +1,13 @@
+name: Fujian Sheng
+type: Division-1
+meta:
+  alpha2: CN-FJ
+  includes:
+    - fujian sheng
+    - cn-fj
+    - fj
+    - fujian sheng province
+    - fu jian sheng
+    - fujian
+    - 福建省
+  category: PROVINCE

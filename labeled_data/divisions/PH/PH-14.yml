@@ -1,0 +1,41 @@
+name: Autonomous Region in Muslim Mindanao
+type: Division-1
+meta:
+  alpha2: PH-14
+  includes:
+    - autonomous region in muslim mindanao
+    - ph-14
+    - '14'
+    - autonomous region in muslim mindanao region
+    - hilagang magindanaw
+    - ph-mgn
+    - mgn
+    - hilagang magindanaw province
+    - lanao del sur
+    - ph-las
+    - las
+    - lanao del sur province
+    - maguindanao del norte
+    - maguindanao del norte province
+    - maguindanao del sur
+    - ph-mgs
+    - mgs
+    - maguindanao del sur province
+    - nagsasariling rehiyon ng muslim sa mindanaw
+    - nagsasariling rehiyon ng muslim sa mindanaw region
+    - sulu
+    - ph-slu
+    - slu
+    - sulu province
+    - tawi-tawi
+    - ph-taw
+    - taw
+    - tawi-tawi province
+    - timog lanaw
+    - timog lanaw province
+    - timog magindanaw
+    - timog magindanaw province
+    - rehiyong awtonomo sa muslim na mindanao
+    - autonomous region of muslim mindanao
+    - bangsamoro autonomous region in muslim mindanao
+  category: REGION

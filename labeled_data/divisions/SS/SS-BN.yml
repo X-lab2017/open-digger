@@ -1,0 +1,10 @@
+name: Northern Bahr el Ghazal
+type: Division-1
+meta:
+  alpha2: SS-BN
+  includes:
+    - northern bahr el ghazal
+    - ss-bn
+    - bn
+    - northern bahr el ghazal state
+  category: STATE

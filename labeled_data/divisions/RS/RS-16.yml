@@ -1,0 +1,10 @@
+name: Zlatiborski okrug
+type: Division-1
+meta:
+  alpha2: RS-16
+  includes:
+    - zlatiborski okrug
+    - rs-16
+    - '16'
+    - zlatiborski okrug district
+  category: DISTRICT

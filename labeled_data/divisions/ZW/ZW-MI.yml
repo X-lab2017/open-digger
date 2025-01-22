@@ -1,0 +1,10 @@
+name: Midlands
+type: Division-1
+meta:
+  alpha2: ZW-MI
+  includes:
+    - midlands
+    - zw-mi
+    - mi
+    - midlands province
+  category: PROVINCE

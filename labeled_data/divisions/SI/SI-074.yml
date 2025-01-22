@@ -1,0 +1,10 @@
+name: Mežica
+type: Division-1
+meta:
+  alpha2: SI-074
+  includes:
+    - mežica
+    - si-074
+    - '074'
+    - mežica municipality
+  category: MUNICIPALITY

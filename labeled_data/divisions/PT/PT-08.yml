@@ -1,0 +1,10 @@
+name: Faro
+type: Division-1
+meta:
+  alpha2: PT-08
+  includes:
+    - faro
+    - pt-08
+    - '08'
+    - faro district
+  category: DISTRICT

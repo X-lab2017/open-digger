@@ -1,0 +1,10 @@
+name: Kozje
+type: Division-1
+meta:
+  alpha2: SI-051
+  includes:
+    - kozje
+    - si-051
+    - '051'
+    - kozje municipality
+  category: MUNICIPALITY

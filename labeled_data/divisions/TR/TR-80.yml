@@ -1,0 +1,10 @@
+name: Osmaniye
+type: Division-1
+meta:
+  alpha2: TR-80
+  includes:
+    - osmaniye
+    - tr-80
+    - '80'
+    - osmaniye province
+  category: PROVINCE

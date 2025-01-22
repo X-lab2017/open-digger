@@ -1,0 +1,12 @@
+name: Maribor
+type: Division-1
+meta:
+  alpha2: SI-070
+  includes:
+    - maribor
+    - si-070
+    - '070'
+    - maribor urban municipality
+    - upravna enota maribor
+    - administrative unit maribor
+  category: URBAN MUNICIPALITY

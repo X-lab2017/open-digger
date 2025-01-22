@@ -1,0 +1,10 @@
+name: Budapest
+type: Division-1
+meta:
+  alpha2: HU-BU
+  includes:
+    - budapest
+    - hu-bu
+    - bu
+    - budapest capital city
+  category: CAPITAL CITY

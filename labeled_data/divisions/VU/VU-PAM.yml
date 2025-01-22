@@ -1,0 +1,12 @@
+name: Pénama
+type: Division-1
+meta:
+  alpha2: VU-PAM
+  includes:
+    - pénama
+    - vu-pam
+    - pam
+    - pénama province
+    - penama province
+    - penama
+  category: PROVINCE

@@ -1,0 +1,10 @@
+name: Sarawak
+type: Division-1
+meta:
+  alpha2: MY-13
+  includes:
+    - sarawak
+    - my-13
+    - '13'
+    - sarawak state
+  category: STATE

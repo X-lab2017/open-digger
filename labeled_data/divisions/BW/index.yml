@@ -1,0 +1,91 @@
+name: Botswana
+type: Division-0
+meta:
+  alpha2: BW
+  includes:
+    - Botswana
+    - BW
+    - '072'
+    - the Republic of Botswana
+    - 博茨瓦纳
+  name_full: the Republic of Botswana
+  name_zh: 博茨瓦纳
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 4327
+    - year: 2020
+      quarter: 2
+      count: 4942
+    - year: 2020
+      quarter: 3
+      count: 5416
+    - year: 2020
+      quarter: 4
+      count: 5829
+    - year: 2021
+      quarter: 1
+      count: 6422
+    - year: 2021
+      quarter: 2
+      count: 6966
+    - year: 2021
+      quarter: 3
+      count: 7403
+    - year: 2021
+      quarter: 4
+      count: 7821
+    - year: 2022
+      quarter: 1
+      count: 8501
+    - year: 2022
+      quarter: 2
+      count: 9157
+    - year: 2022
+      quarter: 3
+      count: 9680
+    - year: 2022
+      quarter: 4
+      count: 10237
+    - year: 2023
+      quarter: 1
+      count: 11108
+    - year: 2023
+      quarter: 2
+      count: 11988
+    - year: 2023
+      quarter: 3
+      count: 12780
+    - year: 2023
+      quarter: 4
+      count: 13457
+    - year: 2024
+      quarter: 1
+      count: 14501
+    - year: 2024
+      quarter: 2
+      count: 15508
+    - year: 2024
+      quarter: 3
+      count: 16207
+    - year: 2024
+      quarter: 4
+      count: 17114
+data:
+  labels:
+    - BW-CE
+    - BW-CH
+    - BW-FR
+    - BW-GA
+    - BW-GH
+    - BW-JW
+    - BW-KG
+    - BW-KL
+    - BW-KW
+    - BW-LO
+    - BW-NE
+    - BW-NW
+    - BW-SP
+    - BW-SE
+    - BW-SO
+    - BW-ST

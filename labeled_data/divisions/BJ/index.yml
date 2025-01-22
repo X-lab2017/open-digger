@@ -1,0 +1,88 @@
+name: Benin
+type: Division-0
+meta:
+  alpha2: BJ
+  includes:
+    - Benin
+    - BJ
+    - '204'
+    - the Republic of Benin
+    - 贝宁
+    - Bénin
+  name_full: the Republic of Benin
+  name_zh: 贝宁
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 6329
+    - year: 2020
+      quarter: 2
+      count: 7239
+    - year: 2020
+      quarter: 3
+      count: 8303
+    - year: 2020
+      quarter: 4
+      count: 9483
+    - year: 2021
+      quarter: 1
+      count: 11223
+    - year: 2021
+      quarter: 2
+      count: 13229
+    - year: 2021
+      quarter: 3
+      count: 14569
+    - year: 2021
+      quarter: 4
+      count: 16107
+    - year: 2022
+      quarter: 1
+      count: 17593
+    - year: 2022
+      quarter: 2
+      count: 19009
+    - year: 2022
+      quarter: 3
+      count: 20636
+    - year: 2022
+      quarter: 4
+      count: 21971
+    - year: 2023
+      quarter: 1
+      count: 23839
+    - year: 2023
+      quarter: 2
+      count: 25934
+    - year: 2023
+      quarter: 3
+      count: 27719
+    - year: 2023
+      quarter: 4
+      count: 29437
+    - year: 2024
+      quarter: 1
+      count: 31293
+    - year: 2024
+      quarter: 2
+      count: 33682
+    - year: 2024
+      quarter: 3
+      count: 35779
+    - year: 2024
+      quarter: 4
+      count: 38346
+data:
+  labels:
+    - BJ-AL
+    - BJ-AK
+    - BJ-AQ
+    - BJ-BO
+    - BJ-CO
+    - BJ-KO
+    - BJ-DO
+    - BJ-LI
+    - BJ-MO
+    - BJ-OU
+    - BJ-PL
+    - BJ-ZO

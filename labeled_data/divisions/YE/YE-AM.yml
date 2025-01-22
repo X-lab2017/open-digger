@@ -1,0 +1,11 @@
+name: ‘Amrān
+type: Division-1
+meta:
+  alpha2: YE-AM
+  includes:
+    - ‘amrān
+    - ye-am
+    - am
+    - ‘amrān governorate
+    - '''amran governorate'
+  category: GOVERNORATE

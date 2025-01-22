@@ -1,0 +1,10 @@
+name: American Samoa
+type: Division-1
+meta:
+  alpha2: US-AS
+  includes:
+    - american samoa
+    - us-as
+    - as
+    - american samoa outlying area
+  category: OUTLYING AREA

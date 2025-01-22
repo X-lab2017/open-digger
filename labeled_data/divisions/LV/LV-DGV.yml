@@ -1,0 +1,10 @@
+name: Daugavpils
+type: Division-1
+meta:
+  alpha2: LV-DGV
+  includes:
+    - daugavpils
+    - lv-dgv
+    - dgv
+    - daugavpils state city
+  category: STATE CITY

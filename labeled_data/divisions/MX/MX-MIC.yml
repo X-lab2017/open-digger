@@ -1,0 +1,13 @@
+name: Michoacán de Ocampo
+type: Division-1
+meta:
+  alpha2: MX-MIC
+  includes:
+    - michoacán de ocampo
+    - mx-mic
+    - mic
+    - michoacán de ocampo state
+    - michoacán
+    - michoacán state
+    - mich
+  category: STATE

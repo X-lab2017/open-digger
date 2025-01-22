@@ -1,0 +1,13 @@
+name: West
+type: Division-1
+meta:
+  alpha2: CM-OU
+  includes:
+    - ouest
+    - cm-ou
+    - ou
+    - ouest region
+    - west
+    - west region
+    - région de l'ouest
+  category: REGION

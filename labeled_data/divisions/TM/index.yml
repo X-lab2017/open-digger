@@ -1,0 +1,80 @@
+name: Turkmenistan
+type: Division-0
+meta:
+  alpha2: TM
+  includes:
+    - Turkmenistan
+    - TM
+    - '795'
+    - 土库曼斯坦
+  name_full: Turkmenistan
+  name_zh: 土库曼斯坦
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 865
+    - year: 2020
+      quarter: 2
+      count: 1045
+    - year: 2020
+      quarter: 3
+      count: 2241
+    - year: 2020
+      quarter: 4
+      count: 3425
+    - year: 2021
+      quarter: 1
+      count: 3526
+    - year: 2021
+      quarter: 2
+      count: 3754
+    - year: 2021
+      quarter: 3
+      count: 4004
+    - year: 2021
+      quarter: 4
+      count: 4364
+    - year: 2022
+      quarter: 1
+      count: 4794
+    - year: 2022
+      quarter: 2
+      count: 5355
+    - year: 2022
+      quarter: 3
+      count: 5781
+    - year: 2022
+      quarter: 4
+      count: 5994
+    - year: 2023
+      quarter: 1
+      count: 6316
+    - year: 2023
+      quarter: 2
+      count: 6655
+    - year: 2023
+      quarter: 3
+      count: 6772
+    - year: 2023
+      quarter: 4
+      count: 7152
+    - year: 2024
+      quarter: 1
+      count: 7163
+    - year: 2024
+      quarter: 2
+      count: 7390
+    - year: 2024
+      quarter: 3
+      count: 7807
+    - year: 2024
+      quarter: 4
+      count: 8336
+data:
+  labels:
+    - TM-A
+    - TM-S
+    - TM-B
+    - TM-D
+    - TM-L
+    - TM-M

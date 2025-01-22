@@ -1,0 +1,11 @@
+name: Bordj Bou Arréridj
+type: Division-1
+meta:
+  alpha2: DZ-34
+  includes:
+    - bordj bou arréridj
+    - dz-34
+    - '34'
+    - bordj bou arréridj province
+    - bordj bou arreridj
+  category: PROVINCE

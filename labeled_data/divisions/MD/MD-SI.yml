@@ -1,0 +1,10 @@
+name: Sîngerei
+type: Division-1
+meta:
+  alpha2: MD-SI
+  includes:
+    - sîngerei
+    - md-si
+    - si
+    - sîngerei district
+  category: DISTRICT

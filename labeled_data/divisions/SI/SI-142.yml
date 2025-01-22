@@ -1,0 +1,10 @@
+name: Zagorje ob Savi
+type: Division-1
+meta:
+  alpha2: SI-142
+  includes:
+    - zagorje ob savi
+    - si-142
+    - '142'
+    - zagorje ob savi municipality
+  category: MUNICIPALITY

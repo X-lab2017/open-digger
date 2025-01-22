@@ -1,0 +1,10 @@
+name: Savanes
+type: Division-1
+meta:
+  alpha2: CI-SV
+  includes:
+    - savanes
+    - ci-sv
+    - sv
+    - savanes district
+  category: DISTRICT

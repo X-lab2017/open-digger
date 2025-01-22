@@ -1,0 +1,13 @@
+name: Zakarpatska oblast
+type: Division-1
+meta:
+  alpha2: UA-21
+  includes:
+    - zakarpatska oblast
+    - ua-21
+    - '21'
+    - zakarpatska oblast region
+    - zakarpattia oblast
+    - zakarpats'ka oblast
+    - zakarpattya
+  category: REGION

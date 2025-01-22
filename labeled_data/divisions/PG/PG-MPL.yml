@@ -1,0 +1,10 @@
+name: Morobe
+type: Division-1
+meta:
+  alpha2: PG-MPL
+  includes:
+    - morobe
+    - pg-mpl
+    - mpl
+    - morobe province
+  category: PROVINCE

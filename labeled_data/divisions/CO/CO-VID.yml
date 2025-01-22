@@ -1,0 +1,10 @@
+name: Vichada
+type: Division-1
+meta:
+  alpha2: CO-VID
+  includes:
+    - vichada
+    - co-vid
+    - vid
+    - vichada department
+  category: DEPARTMENT

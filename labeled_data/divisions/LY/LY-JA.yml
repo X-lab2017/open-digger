@@ -1,0 +1,11 @@
+name: Al Jabal al Akhḑar
+type: Division-1
+meta:
+  alpha2: LY-JA
+  includes:
+    - al jabal al akhḑar
+    - ly-ja
+    - ja
+    - al jabal al akhḑar popularate
+    - jabal al akhdar district
+  category: POPULARATE

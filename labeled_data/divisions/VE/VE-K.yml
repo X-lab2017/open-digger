@@ -1,0 +1,11 @@
+name: Lara
+type: Division-1
+meta:
+  alpha2: VE-K
+  includes:
+    - lara
+    - ve-k
+    - k
+    - lara state
+    - ta
+  category: STATE

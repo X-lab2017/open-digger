@@ -1,0 +1,14 @@
+name: Mellersta Österbotten
+type: Division-1
+meta:
+  alpha2: FI-07
+  includes:
+    - keski-pohjanmaa
+    - fi-07
+    - '07'
+    - keski-pohjanmaa region
+    - mellersta österbotten
+    - mellersta österbotten region
+    - central ostrobothnia
+    - fi1a1
+  category: REGION

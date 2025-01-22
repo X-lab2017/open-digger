@@ -1,0 +1,13 @@
+name: Phyeonganpukto
+type: Division-1
+meta:
+  alpha2: KP-03
+  includes:
+    - p'yǒngan-bukto
+    - kp-03
+    - '03'
+    - p'yǒngan-bukto province
+    - phyeonganpukto
+    - phyeonganpukto province
+    - north pyongan
+  category: PROVINCE

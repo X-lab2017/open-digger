@@ -1,0 +1,14 @@
+name: Baškortostan
+type: Division-1
+meta:
+  alpha2: RU-BA
+  includes:
+    - bashkortostan
+    - ru-ba
+    - ba
+    - bashkortostan republic
+    - baškortostan
+    - baškortostan republic
+    - respublika bashkortostan
+    - republic of bashkortostan
+  category: REPUBLIC

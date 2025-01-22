@@ -1,0 +1,11 @@
+name: Herceg-Novi
+type: Division-1
+meta:
+  alpha2: ME-08
+  includes:
+    - herceg-novi
+    - me-08
+    - '08'
+    - herceg-novi municipality
+    - herceg novi municipality
+  category: MUNICIPALITY

@@ -1,0 +1,11 @@
+name: Stara Zagora
+type: Division-1
+meta:
+  alpha2: BG-24
+  includes:
+    - stara zagora
+    - bg-24
+    - '24'
+    - stara zagora district
+    - stara zagora province
+  category: DISTRICT

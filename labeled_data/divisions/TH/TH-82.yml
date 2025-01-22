@@ -1,0 +1,10 @@
+name: Phangnga
+type: Division-1
+meta:
+  alpha2: TH-82
+  includes:
+    - phangnga
+    - th-82
+    - '82'
+    - phangnga province
+  category: PROVINCE

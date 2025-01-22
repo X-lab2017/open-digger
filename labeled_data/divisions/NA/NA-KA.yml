@@ -1,0 +1,14 @@
+name: //Karas
+type: Division-1
+meta:
+  alpha2: NA-KA
+  includes:
+    - //karas
+    - na-ka
+    - ka
+    - //karas region
+    - karas
+    - karas region
+    - '!karas'
+    - '!karas region'
+  category: REGION

@@ -1,0 +1,10 @@
+name: Saga
+type: Division-1
+meta:
+  alpha2: JP-41
+  includes:
+    - saga
+    - jp-41
+    - '41'
+    - saga prefecture
+  category: PREFECTURE

@@ -1,0 +1,12 @@
+name: Southern Grenadine Islands
+type: Division-1
+meta:
+  alpha2: GD-10
+  includes:
+    - southern grenadine islands
+    - gd-10
+    - '10'
+    - southern grenadine islands dependency
+    - carriacou
+    - carriacou dependency
+  category: DEPENDENCY

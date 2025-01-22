@@ -1,0 +1,10 @@
+name: Szekszárd
+type: Division-1
+meta:
+  alpha2: HU-SS
+  includes:
+    - szekszárd
+    - hu-ss
+    - ss
+    - szekszárd city with county rights
+  category: CITY WITH COUNTY RIGHTS

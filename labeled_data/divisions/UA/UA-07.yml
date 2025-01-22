@@ -1,0 +1,13 @@
+name: Volynska oblast
+type: Division-1
+meta:
+  alpha2: UA-07
+  includes:
+    - volynska oblast
+    - ua-07
+    - '07'
+    - volynska oblast region
+    - volyn oblast
+    - volyns'ka oblast
+    - volyn
+  category: REGION

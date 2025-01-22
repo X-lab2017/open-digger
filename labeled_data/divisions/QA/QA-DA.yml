@@ -1,0 +1,12 @@
+name: Ad Dawḩah
+type: Division-1
+meta:
+  alpha2: QA-DA
+  includes:
+    - ad dawḩah
+    - qa-da
+    - da
+    - ad dawḩah municipality
+    - doha municipality
+    - doha
+  category: MUNICIPALITY

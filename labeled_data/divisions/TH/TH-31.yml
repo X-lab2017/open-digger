@@ -1,0 +1,11 @@
+name: Buri Ram
+type: Division-1
+meta:
+  alpha2: TH-31
+  includes:
+    - buri ram
+    - th-31
+    - '31'
+    - buri ram province
+    - chang wat buri ram
+  category: PROVINCE

@@ -1,0 +1,10 @@
+name: California
+type: Division-1
+meta:
+  alpha2: US-CA
+  includes:
+    - california
+    - us-ca
+    - ca
+    - california state
+  category: STATE

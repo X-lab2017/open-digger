@@ -1,0 +1,11 @@
+name: Suceava
+type: Division-1
+meta:
+  alpha2: RO-SV
+  includes:
+    - suceava
+    - ro-sv
+    - sv
+    - suceava department
+    - suceava county
+  category: DEPARTMENT

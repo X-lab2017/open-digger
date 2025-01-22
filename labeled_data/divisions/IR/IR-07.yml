@@ -1,0 +1,11 @@
+name: Fārs
+type: Division-1
+meta:
+  alpha2: IR-07
+  includes:
+    - fārs
+    - ir-07
+    - '07'
+    - fārs province
+    - fars province
+  category: PROVINCE

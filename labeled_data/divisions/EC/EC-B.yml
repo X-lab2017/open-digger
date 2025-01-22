@@ -1,0 +1,11 @@
+name: Bolívar
+type: Division-1
+meta:
+  alpha2: EC-B
+  includes:
+    - bolívar
+    - ec-b
+    - b
+    - bolívar province
+    - bolivar
+  category: PROVINCE

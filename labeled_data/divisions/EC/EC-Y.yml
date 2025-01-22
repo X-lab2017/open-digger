@@ -1,0 +1,10 @@
+name: Pastaza
+type: Division-1
+meta:
+  alpha2: EC-Y
+  includes:
+    - pastaza
+    - ec-y
+    - 'y'
+    - pastaza province
+  category: PROVINCE

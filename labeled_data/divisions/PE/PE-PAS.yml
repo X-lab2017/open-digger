@@ -1,0 +1,12 @@
+name: Pasco
+type: Division-1
+meta:
+  alpha2: PE-PAS
+  includes:
+    - pasco
+    - pe-pas
+    - pas
+    - pasco region
+    - pasqu
+    - pasqu region
+  category: REGION

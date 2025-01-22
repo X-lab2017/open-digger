@@ -1,0 +1,88 @@
+name: Timor-Leste
+type: Division-0
+meta:
+  alpha2: TL
+  includes:
+    - Timor-Leste
+    - TL
+    - '626'
+    - the Democratic Republic of Timor-Leste
+    - 东帝汶
+  name_full: the Democratic Republic of Timor-Leste
+  name_zh: 东帝汶
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 433
+    - year: 2020
+      quarter: 2
+      count: 463
+    - year: 2020
+      quarter: 3
+      count: 487
+    - year: 2020
+      quarter: 4
+      count: 519
+    - year: 2021
+      quarter: 1
+      count: 560
+    - year: 2021
+      quarter: 2
+      count: 594
+    - year: 2021
+      quarter: 3
+      count: 614
+    - year: 2021
+      quarter: 4
+      count: 685
+    - year: 2022
+      quarter: 1
+      count: 751
+    - year: 2022
+      quarter: 2
+      count: 867
+    - year: 2022
+      quarter: 3
+      count: 970
+    - year: 2022
+      quarter: 4
+      count: 1017
+    - year: 2023
+      quarter: 1
+      count: 1118
+    - year: 2023
+      quarter: 2
+      count: 1213
+    - year: 2023
+      quarter: 3
+      count: 1325
+    - year: 2023
+      quarter: 4
+      count: 1433
+    - year: 2024
+      quarter: 1
+      count: 1579
+    - year: 2024
+      quarter: 2
+      count: 1718
+    - year: 2024
+      quarter: 3
+      count: 1848
+    - year: 2024
+      quarter: 4
+      count: 1946
+data:
+  labels:
+    - TL-AL
+    - TL-AN
+    - TL-BA
+    - TL-BO
+    - TL-CO
+    - TL-DI
+    - TL-ER
+    - TL-LA
+    - TL-LI
+    - TL-MT
+    - TL-MF
+    - TL-OE
+    - TL-VI

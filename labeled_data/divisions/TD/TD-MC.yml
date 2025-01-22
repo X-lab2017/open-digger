@@ -1,0 +1,12 @@
+name: Shārī al Awsaţ
+type: Division-1
+meta:
+  alpha2: TD-MC
+  includes:
+    - moyen-chari
+    - td-mc
+    - mc
+    - moyen-chari province
+    - shārī al awsaţ
+    - shārī al awsaţ province
+  category: PROVINCE

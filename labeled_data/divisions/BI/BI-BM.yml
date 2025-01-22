@@ -1,0 +1,10 @@
+name: Bujumbura Mairie
+type: Division-1
+meta:
+  alpha2: BI-BM
+  includes:
+    - bujumbura mairie
+    - bi-bm
+    - bm
+    - bujumbura mairie province
+  category: PROVINCE

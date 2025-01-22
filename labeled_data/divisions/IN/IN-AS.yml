@@ -1,0 +1,10 @@
+name: Assam
+type: Division-1
+meta:
+  alpha2: IN-AS
+  includes:
+    - assam
+    - in-as
+    - as
+    - assam state
+  category: STATE

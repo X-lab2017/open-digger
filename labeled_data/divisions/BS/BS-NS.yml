@@ -1,0 +1,10 @@
+name: North Andros
+type: Division-1
+meta:
+  alpha2: BS-NS
+  includes:
+    - north andros
+    - bs-ns
+    - ns
+    - north andros district
+  category: DISTRICT

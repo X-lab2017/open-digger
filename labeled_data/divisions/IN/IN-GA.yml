@@ -1,0 +1,10 @@
+name: Goa
+type: Division-1
+meta:
+  alpha2: IN-GA
+  includes:
+    - goa
+    - in-ga
+    - ga
+    - goa state
+  category: STATE

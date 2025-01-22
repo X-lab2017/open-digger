@@ -1,0 +1,11 @@
+name: Bogdanci
+type: Division-1
+meta:
+  alpha2: MK-401
+  includes:
+    - bogdanci
+    - mk-401
+    - '401'
+    - bogdanci municipality
+    - municipality of bogdanci
+  category: MUNICIPALITY

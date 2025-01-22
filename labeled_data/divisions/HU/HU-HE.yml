@@ -1,0 +1,10 @@
+name: Heves
+type: Division-1
+meta:
+  alpha2: HU-HE
+  includes:
+    - heves
+    - hu-he
+    - he
+    - heves county
+  category: COUNTY

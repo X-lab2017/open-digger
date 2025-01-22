@@ -1,0 +1,15 @@
+name: Ulytauskaya oblast’
+type: Division-1
+meta:
+  alpha2: KZ-62
+  includes:
+    - ulytauskaja oblast’
+    - kz-62
+    - '62'
+    - ulytauskaja oblast’ region
+    - ulytauskaya oblast’
+    - ulytauskaya oblast’ region
+    - ulytaū oblysy
+    - ulytaū oblysy region
+    - ulytau region
+  category: REGION

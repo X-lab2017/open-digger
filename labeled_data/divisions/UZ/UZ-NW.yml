@@ -1,0 +1,10 @@
+name: Navoiy
+type: Division-1
+meta:
+  alpha2: UZ-NW
+  includes:
+    - navoiy
+    - uz-nw
+    - nw
+    - navoiy region
+  category: REGION

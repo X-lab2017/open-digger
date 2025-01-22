@@ -1,0 +1,11 @@
+name: Anatolikí Makedonía kai Thráki
+type: Division-1
+meta:
+  alpha2: GR-A
+  includes:
+    - anatolikí makedonía kai thráki
+    - gr-a
+    - a
+    - anatolikí makedonía kai thráki administrative region
+    - eastern macedonia and thrace
+  category: ADMINISTRATIVE REGION

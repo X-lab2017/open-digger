@@ -1,0 +1,10 @@
+name: Bərdə
+type: Division-1
+meta:
+  alpha2: AZ-BAR
+  includes:
+    - bərdə
+    - az-bar
+    - bar
+    - bərdə rayon
+  category: RAYON

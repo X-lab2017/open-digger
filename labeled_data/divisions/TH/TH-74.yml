@@ -1,0 +1,10 @@
+name: Samut Sakhon
+type: Division-1
+meta:
+  alpha2: TH-74
+  includes:
+    - samut sakhon
+    - th-74
+    - '74'
+    - samut sakhon province
+  category: PROVINCE

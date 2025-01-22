@@ -1,0 +1,11 @@
+name: Querétaro
+type: Division-1
+meta:
+  alpha2: MX-QUE
+  includes:
+    - querétaro
+    - mx-que
+    - que
+    - querétaro state
+    - qro
+  category: STATE

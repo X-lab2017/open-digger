@@ -1,0 +1,10 @@
+name: Flacq
+type: Division-1
+meta:
+  alpha2: MU-FL
+  includes:
+    - flacq
+    - mu-fl
+    - fl
+    - flacq district
+  category: DISTRICT

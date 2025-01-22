@@ -1,0 +1,10 @@
+name: Cankova
+type: Division-1
+meta:
+  alpha2: SI-152
+  includes:
+    - cankova
+    - si-152
+    - '152'
+    - cankova municipality
+  category: MUNICIPALITY

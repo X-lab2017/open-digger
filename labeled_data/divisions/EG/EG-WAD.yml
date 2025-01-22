@@ -1,0 +1,13 @@
+name: Al Wādī al Jadīd
+type: Division-1
+meta:
+  alpha2: EG-WAD
+  includes:
+    - al wādī al jadīd
+    - eg-wad
+    - wad
+    - al wādī al jadīd governorate
+    - new valley
+    - new valley governorate
+    - the new valley governorate
+  category: GOVERNORATE

@@ -1,0 +1,10 @@
+name: Northern Mariana Islands
+type: Division-1
+meta:
+  alpha2: US-MP
+  includes:
+    - northern mariana islands
+    - us-mp
+    - mp
+    - northern mariana islands outlying area
+  category: OUTLYING AREA

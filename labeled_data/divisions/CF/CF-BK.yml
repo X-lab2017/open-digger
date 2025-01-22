@@ -1,0 +1,12 @@
+name: Basse-Kotto
+type: Division-1
+meta:
+  alpha2: CF-BK
+  includes:
+    - basse-kotto
+    - cf-bk
+    - bk
+    - basse-kotto prefecture
+    - do-kötö
+    - do-kötö prefecture
+  category: PREFECTURE

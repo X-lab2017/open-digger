@@ -1,0 +1,51 @@
+name: Davao
+type: Division-1
+meta:
+  alpha2: PH-11
+  includes:
+    - davao
+    - ph-11
+    - '11'
+    - davao region
+    - davao occidental
+    - ph-dvo
+    - dvo
+    - davao occidental province
+    - davao oriental
+    - ph-dao
+    - dao
+    - davao oriental province
+    - davao de oro
+    - ph-com
+    - com
+    - davao de oro province
+    - davao del norte
+    - ph-dav
+    - dav
+    - davao del norte province
+    - davao del sur
+    - ph-das
+    - das
+    - davao del sur province
+    - hilagang dabaw
+    - hilagang dabaw province
+    - kanlurang dabaw
+    - kanlurang dabaw province
+    - rehiyon ng dabaw
+    - rehiyon ng dabaw region
+    - sarangani
+    - ph-sar
+    - sar
+    - sarangani province
+    - silangang dabaw
+    - silangang dabaw province
+    - south cotabato
+    - ph-sco
+    - sco
+    - south cotabato province
+    - timog dabaw
+    - timog dabaw province
+    - timog kotabato
+    - timog kotabato province
+    - rehiyon ng davao
+  category: REGION

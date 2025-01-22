@@ -1,0 +1,10 @@
+name: Yevlax
+type: Division-1
+meta:
+  alpha2: AZ-YE
+  includes:
+    - yevlax
+    - az-ye
+    - ye
+    - yevlax municipality
+  category: MUNICIPALITY

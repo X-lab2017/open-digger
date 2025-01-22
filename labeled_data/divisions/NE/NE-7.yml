@@ -1,0 +1,10 @@
+name: Zinder
+type: Division-1
+meta:
+  alpha2: NE-7
+  includes:
+    - zinder
+    - ne-7
+    - '7'
+    - zinder region
+  category: REGION

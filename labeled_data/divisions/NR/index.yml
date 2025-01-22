@@ -1,0 +1,29 @@
+name: Nauru
+type: Division-0
+meta:
+  alpha2: NR
+  includes:
+    - Nauru
+    - NR
+    - '520'
+    - the Republic of Nauru
+    - 瑙鲁
+  name_full: the Republic of Nauru
+  name_zh: 瑙鲁
+  developers: []
+data:
+  labels:
+    - NR-01
+    - NR-02
+    - NR-03
+    - NR-04
+    - NR-05
+    - NR-06
+    - NR-07
+    - NR-08
+    - NR-09
+    - NR-10
+    - NR-11
+    - NR-12
+    - NR-13
+    - NR-14

@@ -1,0 +1,11 @@
+name: Bolívar
+type: Division-1
+meta:
+  alpha2: CO-BOL
+  includes:
+    - bolívar
+    - co-bol
+    - bol
+    - bolívar department
+    - bolivar
+  category: DEPARTMENT

@@ -1,0 +1,11 @@
+name: Nariño
+type: Division-1
+meta:
+  alpha2: CO-NAR
+  includes:
+    - nariño
+    - co-nar
+    - nar
+    - nariño department
+    - narino
+  category: DEPARTMENT

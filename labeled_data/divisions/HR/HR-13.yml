@@ -1,0 +1,12 @@
+name: Zadarska županija
+type: Division-1
+meta:
+  alpha2: HR-13
+  includes:
+    - zadarska županija
+    - hr-13
+    - '13'
+    - zadarska županija county
+    - zadar
+    - zadar county
+  category: COUNTY

@@ -1,0 +1,10 @@
+name: Njombe
+type: Division-1
+meta:
+  alpha2: TZ-29
+  includes:
+    - njombe
+    - tz-29
+    - '29'
+    - njombe region
+  category: REGION

@@ -1,0 +1,10 @@
+name: Huambo
+type: Division-1
+meta:
+  alpha2: AO-HUA
+  includes:
+    - huambo
+    - ao-hua
+    - hua
+    - huambo province
+  category: PROVINCE

@@ -1,0 +1,10 @@
+name: Győr-Moson-Sopron
+type: Division-1
+meta:
+  alpha2: HU-GS
+  includes:
+    - győr-moson-sopron
+    - hu-gs
+    - gs
+    - győr-moson-sopron county
+  category: COUNTY

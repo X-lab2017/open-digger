@@ -1,0 +1,10 @@
+name: Msida
+type: Division-1
+meta:
+  alpha2: MT-34
+  includes:
+    - msida
+    - mt-34
+    - '34'
+    - msida local council
+  category: LOCAL COUNCIL

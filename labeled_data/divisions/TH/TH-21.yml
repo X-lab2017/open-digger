@@ -1,0 +1,11 @@
+name: Rayong
+type: Division-1
+meta:
+  alpha2: TH-21
+  includes:
+    - rayong
+    - th-21
+    - '21'
+    - rayong province
+    - chang wat rayong
+  category: PROVINCE

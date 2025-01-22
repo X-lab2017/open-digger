@@ -1,0 +1,11 @@
+name: Kommune Kujalleq
+type: Division-1
+meta:
+  alpha2: GL-KU
+  includes:
+    - kommune kujalleq
+    - gl-ku
+    - ku
+    - kommune kujalleq municipality
+    - kujalleq municipality
+  category: MUNICIPALITY

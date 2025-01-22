@@ -1,0 +1,10 @@
+name: Cerklje na Gorenjskem
+type: Division-1
+meta:
+  alpha2: SI-012
+  includes:
+    - cerklje na gorenjskem
+    - si-012
+    - '012'
+    - cerklje na gorenjskem municipality
+  category: MUNICIPALITY

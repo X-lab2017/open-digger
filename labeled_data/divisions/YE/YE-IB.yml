@@ -1,0 +1,10 @@
+name: Ibb
+type: Division-1
+meta:
+  alpha2: YE-IB
+  includes:
+    - ibb
+    - ye-ib
+    - ib
+    - ibb governorate
+  category: GOVERNORATE

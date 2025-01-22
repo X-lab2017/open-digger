@@ -1,0 +1,10 @@
+name: Kranj
+type: Division-1
+meta:
+  alpha2: SI-052
+  includes:
+    - kranj
+    - si-052
+    - '052'
+    - kranj urban municipality
+  category: URBAN MUNICIPALITY

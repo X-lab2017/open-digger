@@ -1,0 +1,12 @@
+name: Harghita
+type: Division-1
+meta:
+  alpha2: RO-HR
+  includes:
+    - harghita
+    - ro-hr
+    - hr
+    - harghita department
+    - harghita county
+    - județul harghita
+  category: DEPARTMENT

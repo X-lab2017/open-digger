@@ -1,0 +1,10 @@
+name: Aydın
+type: Division-1
+meta:
+  alpha2: TR-09
+  includes:
+    - aydın
+    - tr-09
+    - '09'
+    - aydın province
+  category: PROVINCE

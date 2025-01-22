@@ -1,0 +1,10 @@
+name: Astara
+type: Division-1
+meta:
+  alpha2: AZ-AST
+  includes:
+    - astara
+    - az-ast
+    - ast
+    - astara rayon
+  category: RAYON

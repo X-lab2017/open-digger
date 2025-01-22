@@ -1,0 +1,11 @@
+name: Kyustendil
+type: Division-1
+meta:
+  alpha2: BG-10
+  includes:
+    - kyustendil
+    - bg-10
+    - '10'
+    - kyustendil district
+    - kyustendil province
+  category: DISTRICT

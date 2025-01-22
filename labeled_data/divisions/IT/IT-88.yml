@@ -1,0 +1,32 @@
+name: Sardegna
+type: Division-1
+meta:
+  alpha2: IT-88
+  includes:
+    - cagliari
+    - it-ca
+    - ca
+    - cagliari metropolitan city
+    - nuoro
+    - it-nu
+    - nu
+    - nuoro province
+    - oristano
+    - it-or
+    - or
+    - oristano province
+    - sardegna
+    - it-88
+    - '88'
+    - sardegna autonomous region
+    - sassari
+    - it-ss
+    - ss
+    - sassari province
+    - sud sardegna
+    - it-su
+    - su
+    - sud sardegna province
+    - sardinia
+    - sard.
+  category: AUTONOMOUS REGION

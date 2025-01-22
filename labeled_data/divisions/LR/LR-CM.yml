@@ -1,0 +1,10 @@
+name: Grand Cape Mount
+type: Division-1
+meta:
+  alpha2: LR-CM
+  includes:
+    - grand cape mount
+    - lr-cm
+    - cm
+    - grand cape mount county
+  category: COUNTY

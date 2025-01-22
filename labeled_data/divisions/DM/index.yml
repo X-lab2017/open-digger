@@ -1,0 +1,85 @@
+name: Dominica
+type: Division-0
+meta:
+  alpha2: DM
+  includes:
+    - Dominica
+    - DM
+    - '212'
+    - the Commonwealth of Dominica
+    - 多米尼克
+  name_full: the Commonwealth of Dominica
+  name_zh: 多米尼克
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 296
+    - year: 2020
+      quarter: 2
+      count: 345
+    - year: 2020
+      quarter: 3
+      count: 381
+    - year: 2020
+      quarter: 4
+      count: 420
+    - year: 2021
+      quarter: 1
+      count: 471
+    - year: 2021
+      quarter: 2
+      count: 516
+    - year: 2021
+      quarter: 3
+      count: 559
+    - year: 2021
+      quarter: 4
+      count: 683
+    - year: 2022
+      quarter: 1
+      count: 733
+    - year: 2022
+      quarter: 2
+      count: 781
+    - year: 2022
+      quarter: 3
+      count: 839
+    - year: 2022
+      quarter: 4
+      count: 894
+    - year: 2023
+      quarter: 1
+      count: 958
+    - year: 2023
+      quarter: 2
+      count: 1010
+    - year: 2023
+      quarter: 3
+      count: 1043
+    - year: 2023
+      quarter: 4
+      count: 1083
+    - year: 2024
+      quarter: 1
+      count: 1131
+    - year: 2024
+      quarter: 2
+      count: 1191
+    - year: 2024
+      quarter: 3
+      count: 1222
+    - year: 2024
+      quarter: 4
+      count: 1277
+data:
+  labels:
+    - DM-02
+    - DM-03
+    - DM-04
+    - DM-05
+    - DM-06
+    - DM-07
+    - DM-08
+    - DM-09
+    - DM-10
+    - DM-11

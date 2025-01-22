@@ -1,0 +1,11 @@
+name: Sachsen-Anhalt
+type: Division-1
+meta:
+  alpha2: DE-ST
+  includes:
+    - sachsen-anhalt
+    - de-st
+    - st
+    - sachsen-anhalt land
+    - saxony-anhalt
+  category: LAND

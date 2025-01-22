@@ -1,0 +1,10 @@
+name: Malampa
+type: Division-1
+meta:
+  alpha2: VU-MAP
+  includes:
+    - malampa
+    - vu-map
+    - map
+    - malampa province
+  category: PROVINCE

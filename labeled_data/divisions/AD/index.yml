@@ -1,0 +1,82 @@
+name: Andorra
+type: Division-0
+meta:
+  alpha2: AD
+  includes:
+    - Andorra
+    - AD
+    - '020'
+    - the Principality of Andorra
+    - 安道尔
+  name_full: the Principality of Andorra
+  name_zh: 安道尔
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 1026
+    - year: 2020
+      quarter: 2
+      count: 1188
+    - year: 2020
+      quarter: 3
+      count: 1281
+    - year: 2020
+      quarter: 4
+      count: 1389
+    - year: 2021
+      quarter: 1
+      count: 1543
+    - year: 2021
+      quarter: 2
+      count: 1686
+    - year: 2021
+      quarter: 3
+      count: 1790
+    - year: 2021
+      quarter: 4
+      count: 1898
+    - year: 2022
+      quarter: 1
+      count: 2113
+    - year: 2022
+      quarter: 2
+      count: 2305
+    - year: 2022
+      quarter: 3
+      count: 2418
+    - year: 2022
+      quarter: 4
+      count: 2629
+    - year: 2023
+      quarter: 1
+      count: 2906
+    - year: 2023
+      quarter: 2
+      count: 3181
+    - year: 2023
+      quarter: 3
+      count: 3392
+    - year: 2023
+      quarter: 4
+      count: 3643
+    - year: 2024
+      quarter: 1
+      count: 3975
+    - year: 2024
+      quarter: 2
+      count: 4092
+    - year: 2024
+      quarter: 3
+      count: 4291
+    - year: 2024
+      quarter: 4
+      count: 4723
+data:
+  labels:
+    - AD-07
+    - AD-02
+    - AD-03
+    - AD-08
+    - AD-04
+    - AD-05
+    - AD-06

@@ -1,0 +1,10 @@
+name: Kwilu
+type: Division-1
+meta:
+  alpha2: CD-KL
+  includes:
+    - kwilu
+    - cd-kl
+    - kl
+    - kwilu province
+  category: PROVINCE

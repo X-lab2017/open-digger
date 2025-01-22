@@ -1,0 +1,12 @@
+name: Afar
+type: Division-1
+meta:
+  alpha2: ET-AF
+  includes:
+    - afar
+    - et-af
+    - af
+    - afar regional state
+    - āfar
+    - āfar regional state
+  category: REGIONAL STATE

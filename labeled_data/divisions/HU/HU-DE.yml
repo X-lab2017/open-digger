@@ -1,0 +1,10 @@
+name: Debrecen
+type: Division-1
+meta:
+  alpha2: HU-DE
+  includes:
+    - debrecen
+    - hu-de
+    - de
+    - debrecen city with county rights
+  category: CITY WITH COUNTY RIGHTS

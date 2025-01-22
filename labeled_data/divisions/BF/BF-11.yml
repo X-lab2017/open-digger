@@ -1,0 +1,22 @@
+name: Plateau-Central
+type: Division-1
+meta:
+  alpha2: BF-11
+  includes:
+    - ganzourgou
+    - bf-gan
+    - gan
+    - ganzourgou province
+    - kourwéogo
+    - bf-kow
+    - kow
+    - kourwéogo province
+    - oubritenga
+    - bf-oub
+    - oub
+    - oubritenga province
+    - plateau-central
+    - bf-11
+    - '11'
+    - plateau-central region
+  category: REGION

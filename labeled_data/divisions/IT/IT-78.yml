@@ -1,0 +1,31 @@
+name: Calabria
+type: Division-1
+meta:
+  alpha2: IT-78
+  includes:
+    - calabria
+    - it-78
+    - '78'
+    - calabria region
+    - catanzaro
+    - it-cz
+    - cz
+    - catanzaro province
+    - cosenza
+    - it-cs
+    - cs
+    - cosenza province
+    - crotone
+    - it-kr
+    - kr
+    - crotone province
+    - reggio calabria
+    - it-rc
+    - rc
+    - reggio calabria metropolitan city
+    - vibo valentia
+    - it-vv
+    - vv
+    - vibo valentia province
+    - cal.
+  category: REGION

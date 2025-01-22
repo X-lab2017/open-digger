@@ -1,0 +1,10 @@
+name: Paysandú
+type: Division-1
+meta:
+  alpha2: UY-PA
+  includes:
+    - paysandú
+    - uy-pa
+    - pa
+    - paysandú department
+  category: DEPARTMENT

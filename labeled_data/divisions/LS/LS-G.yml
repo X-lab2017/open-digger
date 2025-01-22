@@ -1,0 +1,10 @@
+name: Quthing
+type: Division-1
+meta:
+  alpha2: LS-G
+  includes:
+    - quthing
+    - ls-g
+    - g
+    - quthing district
+  category: DISTRICT

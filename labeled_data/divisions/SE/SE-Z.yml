@@ -1,0 +1,11 @@
+name: Jämtlands län
+type: Division-1
+meta:
+  alpha2: SE-Z
+  includes:
+    - jämtlands län
+    - se-z
+    - z
+    - jämtlands län county
+    - jamtland county
+  category: COUNTY

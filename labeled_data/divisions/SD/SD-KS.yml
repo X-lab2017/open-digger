@@ -1,0 +1,12 @@
+name: South Kordofan
+type: Division-1
+meta:
+  alpha2: SD-KS
+  includes:
+    - janūb kurdufān
+    - sd-ks
+    - ks
+    - janūb kurdufān state
+    - south kordofan
+    - south kordofan state
+  category: STATE

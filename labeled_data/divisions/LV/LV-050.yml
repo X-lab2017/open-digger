@@ -1,0 +1,13 @@
+name: Kuldīgas novads
+type: Division-1
+meta:
+  alpha2: LV-050
+  includes:
+    - kuldīgas novads
+    - lv-050
+    - '050'
+    - kuldīgas novads municipality
+    - kuldīga
+    - kuldīga municipality
+    - kuldiga
+  category: MUNICIPALITY

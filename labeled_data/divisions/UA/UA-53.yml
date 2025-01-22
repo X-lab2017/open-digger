@@ -1,0 +1,13 @@
+name: Poltavska oblast
+type: Division-1
+meta:
+  alpha2: UA-53
+  includes:
+    - poltavska oblast
+    - ua-53
+    - '53'
+    - poltavska oblast region
+    - poltavs'ka oblast
+    - poltava oblast
+    - poltava
+  category: REGION

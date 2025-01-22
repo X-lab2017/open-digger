@@ -1,0 +1,10 @@
+name: Yamagata
+type: Division-1
+meta:
+  alpha2: JP-06
+  includes:
+    - yamagata
+    - jp-06
+    - '06'
+    - yamagata prefecture
+  category: PREFECTURE

@@ -1,0 +1,10 @@
+name: Shiselweni
+type: Division-1
+meta:
+  alpha2: SZ-SH
+  includes:
+    - shiselweni
+    - sz-sh
+    - sh
+    - shiselweni region
+  category: REGION

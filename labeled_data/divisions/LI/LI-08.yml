@@ -1,0 +1,10 @@
+name: Schellenberg
+type: Division-1
+meta:
+  alpha2: LI-08
+  includes:
+    - schellenberg
+    - li-08
+    - '08'
+    - schellenberg commune
+  category: COMMUNE

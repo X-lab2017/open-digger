@@ -1,0 +1,12 @@
+name: Costa Caribe Norte
+type: Division-1
+meta:
+  alpha2: NI-AN
+  includes:
+    - costa caribe norte
+    - ni-an
+    - an
+    - costa caribe norte autonomous region
+    - north caribbean coast autonomous region
+    - ra
+  category: AUTONOMOUS REGION

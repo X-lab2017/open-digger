@@ -1,0 +1,10 @@
+name: East Sepik
+type: Division-1
+meta:
+  alpha2: PG-ESW
+  includes:
+    - east sepik
+    - pg-esw
+    - esw
+    - east sepik province
+  category: PROVINCE

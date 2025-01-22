@@ -1,0 +1,13 @@
+name: Būr Sa‘īd
+type: Division-1
+meta:
+  alpha2: EG-PTS
+  includes:
+    - būr sa‘īd
+    - eg-pts
+    - pts
+    - būr sa‘īd governorate
+    - port said
+    - port said governorate
+    - bur sa'id
+  category: GOVERNORATE

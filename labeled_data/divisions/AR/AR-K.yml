@@ -1,0 +1,11 @@
+name: Catamarca
+type: Division-1
+meta:
+  alpha2: AR-K
+  includes:
+    - catamarca
+    - ar-k
+    - k
+    - catamarca province
+    - ctm
+  category: PROVINCE

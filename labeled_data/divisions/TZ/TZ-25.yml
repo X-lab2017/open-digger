@@ -1,0 +1,10 @@
+name: Tanga
+type: Division-1
+meta:
+  alpha2: TZ-25
+  includes:
+    - tanga
+    - tz-25
+    - '25'
+    - tanga region
+  category: REGION

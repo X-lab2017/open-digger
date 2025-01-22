@@ -1,0 +1,11 @@
+name: Lisboa
+type: Division-1
+meta:
+  alpha2: PT-11
+  includes:
+    - lisboa
+    - pt-11
+    - '11'
+    - lisboa district
+    - lisbon
+  category: DISTRICT

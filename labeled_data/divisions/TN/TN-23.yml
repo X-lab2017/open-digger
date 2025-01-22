@@ -1,0 +1,11 @@
+name: Bizerte
+type: Division-1
+meta:
+  alpha2: TN-23
+  includes:
+    - bizerte
+    - tn-23
+    - '23'
+    - bizerte governorate
+    - gouvernorat de bizerte
+  category: GOVERNORATE

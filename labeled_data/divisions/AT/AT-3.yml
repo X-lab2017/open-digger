@@ -1,0 +1,11 @@
+name: Niederösterreich
+type: Division-1
+meta:
+  alpha2: AT-3
+  includes:
+    - niederösterreich
+    - at-3
+    - '3'
+    - niederösterreich state
+    - lower austria
+  category: STATE

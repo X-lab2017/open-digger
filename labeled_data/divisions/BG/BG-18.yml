@@ -1,0 +1,11 @@
+name: Ruse
+type: Division-1
+meta:
+  alpha2: BG-18
+  includes:
+    - ruse
+    - bg-18
+    - '18'
+    - ruse district
+    - ruse province
+  category: DISTRICT

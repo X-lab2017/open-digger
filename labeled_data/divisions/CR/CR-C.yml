@@ -1,0 +1,12 @@
+name: Cartago
+type: Division-1
+meta:
+  alpha2: CR-C
+  includes:
+    - cartago
+    - cr-c
+    - c
+    - cartago province
+    - provincia de cartago
+    - ca
+  category: PROVINCE

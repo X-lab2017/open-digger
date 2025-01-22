@@ -1,0 +1,10 @@
+name: Musandam
+type: Division-1
+meta:
+  alpha2: OM-MU
+  includes:
+    - musandam
+    - om-mu
+    - mu
+    - musandam governorate
+  category: GOVERNORATE

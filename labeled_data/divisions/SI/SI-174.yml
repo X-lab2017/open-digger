@@ -1,0 +1,10 @@
+name: Prebold
+type: Division-1
+meta:
+  alpha2: SI-174
+  includes:
+    - prebold
+    - si-174
+    - '174'
+    - prebold municipality
+  category: MUNICIPALITY

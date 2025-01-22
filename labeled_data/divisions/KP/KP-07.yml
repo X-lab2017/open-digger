@@ -1,0 +1,14 @@
+name: Kangwǒn-do
+type: Division-1
+meta:
+  alpha2: KP-07
+  includes:
+    - kangweonto
+    - kp-07
+    - '07'
+    - kangweonto province
+    - kangwǒn-do
+    - kangwǒn-do province
+    - kangwŏn
+    - kangwon
+  category: PROVINCE

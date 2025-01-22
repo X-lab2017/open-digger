@@ -1,0 +1,13 @@
+name: Guizhou Sheng
+type: Division-1
+meta:
+  alpha2: CN-GZ
+  includes:
+    - guizhou sheng
+    - cn-gz
+    - gz
+    - guizhou sheng province
+    - gui zhou sheng
+    - guizhou
+    - 贵州省
+  category: PROVINCE

@@ -1,0 +1,10 @@
+name: Bayelsa
+type: Division-1
+meta:
+  alpha2: NG-BY
+  includes:
+    - bayelsa
+    - ng-by
+    - by
+    - bayelsa state
+  category: STATE

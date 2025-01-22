@@ -1,0 +1,11 @@
+name: Ghāt
+type: Division-1
+meta:
+  alpha2: LY-GT
+  includes:
+    - ghāt
+    - ly-gt
+    - gt
+    - ghāt popularate
+    - gharyan
+  category: POPULARATE

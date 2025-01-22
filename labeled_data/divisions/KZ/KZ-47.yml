@@ -1,0 +1,15 @@
+name: Mangystauskaja oblast'
+type: Division-1
+meta:
+  alpha2: KZ-47
+  includes:
+    - mangghystaū oblysy
+    - kz-47
+    - '47'
+    - mangghystaū oblysy region
+    - mangistauskaya oblast'
+    - mangistauskaya oblast' region
+    - mangystauskaja oblast'
+    - mangystauskaja oblast' region
+    - mangystau region
+  category: REGION

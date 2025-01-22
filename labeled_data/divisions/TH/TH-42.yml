@@ -1,0 +1,10 @@
+name: Loei
+type: Division-1
+meta:
+  alpha2: TH-42
+  includes:
+    - loei
+    - th-42
+    - '42'
+    - loei province
+  category: PROVINCE

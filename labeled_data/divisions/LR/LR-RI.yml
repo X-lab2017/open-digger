@@ -1,0 +1,12 @@
+name: River Cess
+type: Division-1
+meta:
+  alpha2: LR-RI
+  includes:
+    - river cess
+    - lr-ri
+    - ri
+    - river cess county
+    - rivercess
+    - rivercess county
+  category: COUNTY

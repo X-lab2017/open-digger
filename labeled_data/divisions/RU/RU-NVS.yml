@@ -1,0 +1,14 @@
+name: Novosibirskaya oblast'
+type: Division-1
+meta:
+  alpha2: RU-NVS
+  includes:
+    - novosibirskaja oblast'
+    - ru-nvs
+    - nvs
+    - novosibirskaja oblast' administrative region
+    - novosibirskaya oblast'
+    - novosibirskaya oblast' administrative region
+    - novosibirsk oblast
+    - novosibirsk
+  category: ADMINISTRATIVE REGION

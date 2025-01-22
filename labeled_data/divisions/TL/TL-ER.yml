@@ -1,0 +1,10 @@
+name: Ermera
+type: Division-1
+meta:
+  alpha2: TL-ER
+  includes:
+    - ermera
+    - tl-er
+    - er
+    - ermera municipality
+  category: MUNICIPALITY

@@ -1,0 +1,10 @@
+name: Makole
+type: Division-1
+meta:
+  alpha2: SI-198
+  includes:
+    - makole
+    - si-198
+    - '198'
+    - makole municipality
+  category: MUNICIPALITY

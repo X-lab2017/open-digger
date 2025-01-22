@@ -14,7 +14,7 @@ import { getLabelData } from "../labelDataUtils";
   const getUniversityCommunityData = async () => {
     const univData = await getRepoOpenrank({
       ...defaultQueryConfig,
-      labelUnion: [':regions/CN/hubei'],
+      labelUnion: [':divisions/CN/CN-HB'],
       groupBy: 'Community',
     });
     const result = univData.filter(row => row.name !== 'Others').map(row => {
@@ -50,7 +50,7 @@ platform='GitHub' AND actor_id IN (SELECT DISTINCT(u.id) FROM
   const getCompanyData = async () => {
     const companyData = await getRepoOpenrank({
       ...defaultQueryConfig,
-      labelUnion: [':regions/CN/hubei'],
+      labelUnion: [':divisions/CN/CN-HB'],
       groupBy: 'Company',
     });
     const result = companyData.filter(row => row.name !== 'Others').map(row => {

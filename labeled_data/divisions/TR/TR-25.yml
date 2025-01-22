@@ -1,0 +1,10 @@
+name: Erzurum
+type: Division-1
+meta:
+  alpha2: TR-25
+  includes:
+    - erzurum
+    - tr-25
+    - '25'
+    - erzurum province
+  category: PROVINCE

@@ -1,0 +1,14 @@
+name: Zanzibar South
+type: Division-1
+meta:
+  alpha2: TZ-11
+  includes:
+    - kusini unguja
+    - tz-11
+    - '11'
+    - kusini unguja region
+    - zanzibar south
+    - zanzibar south region
+    - unguja south region
+    - zanzibar south & central
+  category: REGION

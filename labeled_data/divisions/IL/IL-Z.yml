@@ -1,0 +1,17 @@
+name: Ash Shamālī
+type: Division-1
+meta:
+  alpha2: IL-Z
+  includes:
+    - ash shamālī
+    - il-z
+    - z
+    - ash shamālī district
+    - esh shamālī
+    - esh shamālī district
+    - hatsafon
+    - hatsafon district
+    - northern
+    - northern district
+    - north district
+  category: DISTRICT

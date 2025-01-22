@@ -1,0 +1,14 @@
+name: North Ari Atoll
+type: Division-1
+meta:
+  alpha2: MV-02
+  includes:
+    - ariatholhu uthuruburi
+    - mv-02
+    - '02'
+    - ariatholhu uthuruburi administrative atoll
+    - alifu alifu
+    - alifu alifu administrative atoll
+    - north ari atoll
+    - north ari atoll administrative atoll
+  category: ADMINISTRATIVE ATOLL

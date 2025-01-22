@@ -1,0 +1,11 @@
+name: Wāsiţ
+type: Division-1
+meta:
+  alpha2: IQ-WA
+  includes:
+    - wāsiţ
+    - iq-wa
+    - wa
+    - wāsiţ governorate
+    - wasit governorate
+  category: GOVERNORATE

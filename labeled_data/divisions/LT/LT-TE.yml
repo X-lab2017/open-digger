@@ -1,0 +1,27 @@
+name: Telšių apskritis
+type: Division-1
+meta:
+  alpha2: LT-TE
+  includes:
+    - mažeikiai
+    - lt-26
+    - '26'
+    - mažeikiai district municipality
+    - plungė
+    - lt-35
+    - '35'
+    - plungė district municipality
+    - rietavas
+    - lt-39
+    - '39'
+    - rietavas municipality
+    - telšiai
+    - lt-51
+    - '51'
+    - telšiai district municipality
+    - telšių apskritis
+    - lt-te
+    - te
+    - telšių apskritis county
+    - telšiai county
+  category: COUNTY

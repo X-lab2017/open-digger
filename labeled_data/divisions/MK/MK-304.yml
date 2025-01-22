@@ -1,0 +1,10 @@
+name: Debrca
+type: Division-1
+meta:
+  alpha2: MK-304
+  includes:
+    - debrca
+    - mk-304
+    - '304'
+    - debrca municipality
+  category: MUNICIPALITY

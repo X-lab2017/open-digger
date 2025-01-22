@@ -1,0 +1,38 @@
+name: Mimaropa
+type: Division-1
+meta:
+  alpha2: PH-41
+  includes:
+    - kanlurang mindoro
+    - ph-mdc
+    - mdc
+    - kanlurang mindoro province
+    - marinduke
+    - ph-mad
+    - mad
+    - marinduke province
+    - marinduque
+    - marinduque province
+    - mimaropa
+    - ph-41
+    - '41'
+    - mimaropa region
+    - mindoro occidental
+    - mindoro occidental province
+    - mindoro oriental
+    - ph-mdr
+    - mdr
+    - mindoro oriental province
+    - palawan
+    - ph-plw
+    - plw
+    - palawan province
+    - rehiyon ng mimaropa
+    - rehiyon ng mimaropa region
+    - romblon
+    - ph-rom
+    - rom
+    - romblon province
+    - silangang mindoro
+    - silangang mindoro province
+  category: REGION

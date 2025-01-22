@@ -1,0 +1,10 @@
+name: Shinyanga
+type: Division-1
+meta:
+  alpha2: TZ-22
+  includes:
+    - shinyanga
+    - tz-22
+    - '22'
+    - shinyanga region
+  category: REGION

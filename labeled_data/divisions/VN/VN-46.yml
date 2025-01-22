@@ -1,0 +1,11 @@
+name: Tiền Giang
+type: Division-1
+meta:
+  alpha2: VN-46
+  includes:
+    - tiền giang
+    - vn-46
+    - '46'
+    - tiền giang province
+    - tien giang
+  category: PROVINCE

@@ -1,0 +1,10 @@
+name: Çorum
+type: Division-1
+meta:
+  alpha2: TR-19
+  includes:
+    - çorum
+    - tr-19
+    - '19'
+    - çorum province
+  category: PROVINCE

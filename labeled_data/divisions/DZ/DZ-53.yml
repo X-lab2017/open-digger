@@ -1,0 +1,10 @@
+name: In Salah
+type: Division-1
+meta:
+  alpha2: DZ-53
+  includes:
+    - in salah
+    - dz-53
+    - '53'
+    - in salah province
+  category: PROVINCE

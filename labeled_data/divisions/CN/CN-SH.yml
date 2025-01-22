@@ -1,0 +1,13 @@
+name: Shanghai Shi
+type: Division-1
+meta:
+  alpha2: CN-SH
+  includes:
+    - shanghai shi
+    - cn-sh
+    - sh
+    - shanghai shi municipality
+    - shang hai shi
+    - shanghai
+    - 上海市
+  category: MUNICIPALITY

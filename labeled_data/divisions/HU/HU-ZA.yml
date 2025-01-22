@@ -1,0 +1,10 @@
+name: Zala
+type: Division-1
+meta:
+  alpha2: HU-ZA
+  includes:
+    - zala
+    - hu-za
+    - za
+    - zala county
+  category: COUNTY

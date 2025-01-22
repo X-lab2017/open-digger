@@ -1,0 +1,11 @@
+name: Colón
+type: Division-1
+meta:
+  alpha2: PA-3
+  includes:
+    - colón
+    - pa-3
+    - '3'
+    - colón province
+    - cl
+  category: PROVINCE

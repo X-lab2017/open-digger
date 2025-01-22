@@ -1,0 +1,10 @@
+name: Mie
+type: Division-1
+meta:
+  alpha2: JP-24
+  includes:
+    - mie
+    - jp-24
+    - '24'
+    - mie prefecture
+  category: PREFECTURE

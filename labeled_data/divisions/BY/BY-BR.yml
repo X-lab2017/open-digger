@@ -1,0 +1,19 @@
+name: Brestskaya oblast'
+type: Division-1
+meta:
+  alpha2: BY-BR
+  includes:
+    - bresckaja voblasć
+    - by-br
+    - br
+    - bresckaja voblasć oblast
+    - brestskaja oblast'
+    - brestskaja oblast' oblast
+    - brestskaya oblast'
+    - brestskaya oblast' oblast
+    - brestskaya voblasts'
+    - brestskaya voblasts' oblast
+    - brest region
+    - brest
+    - brest province
+  category: OBLAST

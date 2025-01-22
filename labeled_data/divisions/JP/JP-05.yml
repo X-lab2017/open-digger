@@ -1,0 +1,10 @@
+name: Akita
+type: Division-1
+meta:
+  alpha2: JP-05
+  includes:
+    - akita
+    - jp-05
+    - '05'
+    - akita prefecture
+  category: PREFECTURE

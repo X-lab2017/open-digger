@@ -1,0 +1,12 @@
+name: Mbomou
+type: Division-1
+meta:
+  alpha2: CF-MB
+  includes:
+    - mbomou
+    - cf-mb
+    - mb
+    - mbomou prefecture
+    - mbömü
+    - mbömü prefecture
+  category: PREFECTURE

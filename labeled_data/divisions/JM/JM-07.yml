@@ -1,0 +1,10 @@
+name: Trelawny
+type: Division-1
+meta:
+  alpha2: JM-07
+  includes:
+    - trelawny
+    - jm-07
+    - '07'
+    - trelawny parish
+  category: PARISH

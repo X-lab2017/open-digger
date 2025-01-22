@@ -1,0 +1,10 @@
+name: Zaječarski okrug
+type: Division-1
+meta:
+  alpha2: RS-15
+  includes:
+    - zaječarski okrug
+    - rs-15
+    - '15'
+    - zaječarski okrug district
+  category: DISTRICT

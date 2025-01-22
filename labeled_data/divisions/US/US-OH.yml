@@ -1,0 +1,10 @@
+name: Ohio
+type: Division-1
+meta:
+  alpha2: US-OH
+  includes:
+    - ohio
+    - us-oh
+    - oh
+    - ohio state
+  category: STATE

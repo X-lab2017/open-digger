@@ -1,0 +1,89 @@
+name: Senegal
+type: Division-0
+meta:
+  alpha2: SN
+  includes:
+    - Senegal
+    - SN
+    - '686'
+    - the Republic of Senegal
+    - 塞内加尔
+  name_full: the Republic of Senegal
+  name_zh: 塞内加尔
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 13736
+    - year: 2020
+      quarter: 2
+      count: 15320
+    - year: 2020
+      quarter: 3
+      count: 16619
+    - year: 2020
+      quarter: 4
+      count: 17895
+    - year: 2021
+      quarter: 1
+      count: 20184
+    - year: 2021
+      quarter: 2
+      count: 22120
+    - year: 2021
+      quarter: 3
+      count: 23610
+    - year: 2021
+      quarter: 4
+      count: 25249
+    - year: 2022
+      quarter: 1
+      count: 27345
+    - year: 2022
+      quarter: 2
+      count: 29338
+    - year: 2022
+      quarter: 3
+      count: 31016
+    - year: 2022
+      quarter: 4
+      count: 33067
+    - year: 2023
+      quarter: 1
+      count: 35984
+    - year: 2023
+      quarter: 2
+      count: 38223
+    - year: 2023
+      quarter: 3
+      count: 40195
+    - year: 2023
+      quarter: 4
+      count: 42700
+    - year: 2024
+      quarter: 1
+      count: 45896
+    - year: 2024
+      quarter: 2
+      count: 48703
+    - year: 2024
+      quarter: 3
+      count: 51413
+    - year: 2024
+      quarter: 4
+      count: 54914
+data:
+  labels:
+    - SN-DK
+    - SN-DB
+    - SN-FK
+    - SN-KA
+    - SN-KL
+    - SN-KD
+    - SN-KE
+    - SN-LG
+    - SN-MT
+    - SN-SL
+    - SN-SE
+    - SN-TC
+    - SN-TH
+    - SN-ZG

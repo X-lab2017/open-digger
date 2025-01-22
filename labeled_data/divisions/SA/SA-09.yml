@@ -1,0 +1,12 @@
+name: Jāzān
+type: Division-1
+meta:
+  alpha2: SA-09
+  includes:
+    - jāzān
+    - sa-09
+    - '09'
+    - jāzān region
+    - jaz
+    - jazan province
+  category: REGION

@@ -1,0 +1,11 @@
+name: Copán
+type: Division-1
+meta:
+  alpha2: HN-CP
+  includes:
+    - copán
+    - hn-cp
+    - cp
+    - copán department
+    - departamento de copán
+  category: DEPARTMENT

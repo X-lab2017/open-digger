@@ -1,0 +1,13 @@
+name: Ajaria
+type: Division-1
+meta:
+  alpha2: GE-AJ
+  includes:
+    - ajaria
+    - ge-aj
+    - aj
+    - ajaria autonomous republic
+    - ach'ara
+    - ach'ara autonomous republic
+    - adjara
+  category: AUTONOMOUS REPUBLIC

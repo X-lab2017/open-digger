@@ -1,0 +1,12 @@
+name: Ombella-Mpoko
+type: Division-1
+meta:
+  alpha2: CF-MP
+  includes:
+    - ombella-mpoko
+    - cf-mp
+    - mp
+    - ombella-mpoko prefecture
+    - ömbëlä-pökö
+    - ömbëlä-pökö prefecture
+  category: PREFECTURE

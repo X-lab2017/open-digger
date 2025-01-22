@@ -1,0 +1,10 @@
+name: Rivers
+type: Division-1
+meta:
+  alpha2: NG-RI
+  includes:
+    - rivers
+    - ng-ri
+    - ri
+    - rivers state
+  category: STATE

@@ -1,0 +1,10 @@
+name: Muta
+type: Division-1
+meta:
+  alpha2: SI-081
+  includes:
+    - muta
+    - si-081
+    - '081'
+    - muta municipality
+  category: MUNICIPALITY

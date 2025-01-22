@@ -1,0 +1,26 @@
+name: Cibao Noroeste
+type: Division-1
+meta:
+  alpha2: DO-34
+  includes:
+    - cibao noroeste
+    - do-34
+    - '34'
+    - cibao noroeste region
+    - dajabón
+    - do-05
+    - '05'
+    - dajabón province
+    - monte cristi
+    - do-15
+    - '15'
+    - monte cristi province
+    - santiago rodríguez
+    - do-26
+    - '26'
+    - santiago rodríguez province
+    - valverde
+    - do-27
+    - '27'
+    - valverde province
+  category: REGION

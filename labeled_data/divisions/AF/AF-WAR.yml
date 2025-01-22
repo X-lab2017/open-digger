@@ -1,0 +1,10 @@
+name: Wardak
+type: Division-1
+meta:
+  alpha2: AF-WAR
+  includes:
+    - wardak
+    - af-war
+    - war
+    - wardak province
+  category: PROVINCE

@@ -1,0 +1,11 @@
+name: San Fernando
+type: Division-1
+meta:
+  alpha2: TT-SFO
+  includes:
+    - san fernando
+    - tt-sfo
+    - sfo
+    - san fernando city
+    - san fernando city corporation
+  category: CITY

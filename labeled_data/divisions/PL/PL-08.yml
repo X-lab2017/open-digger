@@ -1,0 +1,13 @@
+name: Lubuskie
+type: Division-1
+meta:
+  alpha2: PL-08
+  includes:
+    - lubuskie
+    - pl-08
+    - '08'
+    - lubuskie voivodship
+    - lubusz voivodeship
+    - województwo lubuskie
+    - lb
+  category: VOIVODSHIP

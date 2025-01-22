@@ -1,0 +1,11 @@
+name: Aguascalientes
+type: Division-1
+meta:
+  alpha2: MX-AGU
+  includes:
+    - aguascalientes
+    - mx-agu
+    - agu
+    - aguascalientes state
+    - ags
+  category: STATE

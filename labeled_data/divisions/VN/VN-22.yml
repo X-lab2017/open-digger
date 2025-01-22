@@ -1,0 +1,11 @@
+name: Nghệ An
+type: Division-1
+meta:
+  alpha2: VN-22
+  includes:
+    - nghệ an
+    - vn-22
+    - '22'
+    - nghệ an province
+    - nghe an
+  category: PROVINCE

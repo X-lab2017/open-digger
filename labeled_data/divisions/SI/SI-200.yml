@@ -1,0 +1,10 @@
+name: Poljčane
+type: Division-1
+meta:
+  alpha2: SI-200
+  includes:
+    - poljčane
+    - si-200
+    - '200'
+    - poljčane municipality
+  category: MUNICIPALITY

@@ -1,0 +1,12 @@
+name: Mont Fleuri
+type: Division-1
+meta:
+  alpha2: SC-18
+  includes:
+    - mon fleri
+    - sc-18
+    - '18'
+    - mon fleri district
+    - mont fleuri
+    - mont fleuri district
+  category: DISTRICT

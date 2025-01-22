@@ -1,0 +1,10 @@
+name: Hanover
+type: Division-1
+meta:
+  alpha2: JM-09
+  includes:
+    - hanover
+    - jm-09
+    - '09'
+    - hanover parish
+  category: PARISH

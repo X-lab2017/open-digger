@@ -1,0 +1,10 @@
+name: İmişli
+type: Division-1
+meta:
+  alpha2: AZ-IMI
+  includes:
+    - i̇mişli
+    - az-imi
+    - imi
+    - i̇mişli rayon
+  category: RAYON

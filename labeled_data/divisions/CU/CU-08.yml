@@ -1,0 +1,11 @@
+name: Ciego de Ávila
+type: Division-1
+meta:
+  alpha2: CU-08
+  includes:
+    - ciego de ávila
+    - cu-08
+    - '08'
+    - ciego de ávila province
+    - ciego de avila
+  category: PROVINCE

@@ -1,0 +1,79 @@
+name: Brunei Darussalam
+type: Division-0
+meta:
+  alpha2: BN
+  includes:
+    - Brunei Darussalam
+    - BN
+    - '096'
+    - 文莱
+    - Brunei
+  name_full: Brunei Darussalam
+  name_zh: 文莱
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 3960
+    - year: 2020
+      quarter: 2
+      count: 4387
+    - year: 2020
+      quarter: 3
+      count: 4740
+    - year: 2020
+      quarter: 4
+      count: 5075
+    - year: 2021
+      quarter: 1
+      count: 5468
+    - year: 2021
+      quarter: 2
+      count: 5931
+    - year: 2021
+      quarter: 3
+      count: 6362
+    - year: 2021
+      quarter: 4
+      count: 6853
+    - year: 2022
+      quarter: 1
+      count: 7549
+    - year: 2022
+      quarter: 2
+      count: 7887
+    - year: 2022
+      quarter: 3
+      count: 8241
+    - year: 2022
+      quarter: 4
+      count: 8564
+    - year: 2023
+      quarter: 1
+      count: 9012
+    - year: 2023
+      quarter: 2
+      count: 9548
+    - year: 2023
+      quarter: 3
+      count: 10115
+    - year: 2023
+      quarter: 4
+      count: 10536
+    - year: 2024
+      quarter: 1
+      count: 11280
+    - year: 2024
+      quarter: 2
+      count: 11596
+    - year: 2024
+      quarter: 3
+      count: 12070
+    - year: 2024
+      quarter: 4
+      count: 12749
+data:
+  labels:
+    - BN-BE
+    - BN-BM
+    - BN-TE
+    - BN-TU

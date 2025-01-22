@@ -1,0 +1,12 @@
+name: Saint Paul's Bay
+type: Division-1
+meta:
+  alpha2: MT-51
+  includes:
+    - saint paul's bay
+    - mt-51
+    - '51'
+    - saint paul's bay local council
+    - san pawl il-baħar
+    - san pawl il-baħar local council
+  category: LOCAL COUNCIL

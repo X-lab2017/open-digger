@@ -1,0 +1,10 @@
+name: Upper Nile
+type: Division-1
+meta:
+  alpha2: SS-NU
+  includes:
+    - upper nile
+    - ss-nu
+    - nu
+    - upper nile state
+  category: STATE

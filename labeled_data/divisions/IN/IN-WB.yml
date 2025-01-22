@@ -1,0 +1,10 @@
+name: West Bengal
+type: Division-1
+meta:
+  alpha2: IN-WB
+  includes:
+    - west bengal
+    - in-wb
+    - wb
+    - west bengal state
+  category: STATE

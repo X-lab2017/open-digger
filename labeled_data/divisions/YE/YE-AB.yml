@@ -1,0 +1,10 @@
+name: Abyan
+type: Division-1
+meta:
+  alpha2: YE-AB
+  includes:
+    - abyan
+    - ye-ab
+    - ab
+    - abyan governorate
+  category: GOVERNORATE

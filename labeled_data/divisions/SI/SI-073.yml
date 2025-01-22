@@ -1,0 +1,10 @@
+name: Metlika
+type: Division-1
+meta:
+  alpha2: SI-073
+  includes:
+    - metlika
+    - si-073
+    - '073'
+    - metlika municipality
+  category: MUNICIPALITY

@@ -1,0 +1,11 @@
+name: Zuid-Holland
+type: Division-1
+meta:
+  alpha2: NL-ZH
+  includes:
+    - zuid-holland
+    - nl-zh
+    - zh
+    - zuid-holland province
+    - south holland
+  category: PROVINCE

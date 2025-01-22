@@ -1,0 +1,91 @@
+name: Chile
+type: Division-0
+meta:
+  alpha2: CL
+  includes:
+    - Chile
+    - CL
+    - '152'
+    - the Republic of Chile
+    - 智利
+  name_full: the Republic of Chile
+  name_zh: 智利
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 161209
+    - year: 2020
+      quarter: 2
+      count: 180792
+    - year: 2020
+      quarter: 3
+      count: 201200
+    - year: 2020
+      quarter: 4
+      count: 219082
+    - year: 2021
+      quarter: 1
+      count: 233905
+    - year: 2021
+      quarter: 2
+      count: 254518
+    - year: 2021
+      quarter: 3
+      count: 273042
+    - year: 2021
+      quarter: 4
+      count: 287761
+    - year: 2022
+      quarter: 1
+      count: 306133
+    - year: 2022
+      quarter: 2
+      count: 328161
+    - year: 2022
+      quarter: 3
+      count: 347823
+    - year: 2022
+      quarter: 4
+      count: 364660
+    - year: 2023
+      quarter: 1
+      count: 383817
+    - year: 2023
+      quarter: 2
+      count: 413753
+    - year: 2023
+      quarter: 3
+      count: 438505
+    - year: 2023
+      quarter: 4
+      count: 459555
+    - year: 2024
+      quarter: 1
+      count: 490377
+    - year: 2024
+      quarter: 2
+      count: 520198
+    - year: 2024
+      quarter: 3
+      count: 545560
+    - year: 2024
+      quarter: 4
+      count: 569867
+data:
+  labels:
+    - CL-AI
+    - CL-AN
+    - CL-AP
+    - CL-AT
+    - CL-BI
+    - CL-CO
+    - CL-AR
+    - CL-LI
+    - CL-LL
+    - CL-LR
+    - CL-MA
+    - CL-ML
+    - CL-RM
+    - CL-TA
+    - CL-VS
+    - CL-NB

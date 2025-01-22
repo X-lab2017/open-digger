@@ -1,0 +1,10 @@
+name: Għarb
+type: Division-1
+meta:
+  alpha2: MT-14
+  includes:
+    - għarb
+    - mt-14
+    - '14'
+    - għarb local council
+  category: LOCAL COUNCIL

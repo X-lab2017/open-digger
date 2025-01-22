@@ -1,0 +1,10 @@
+name: Ibaraki
+type: Division-1
+meta:
+  alpha2: JP-08
+  includes:
+    - ibaraki
+    - jp-08
+    - '08'
+    - ibaraki prefecture
+  category: PREFECTURE

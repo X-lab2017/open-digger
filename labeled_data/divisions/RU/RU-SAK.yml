@@ -1,0 +1,14 @@
+name: Sakhalinskaya oblast'
+type: Division-1
+meta:
+  alpha2: RU-SAK
+  includes:
+    - sahalinskaja oblast'
+    - ru-sak
+    - sak
+    - sahalinskaja oblast' administrative region
+    - sakhalinskaya oblast'
+    - sakhalinskaya oblast' administrative region
+    - sakhalin oblast
+    - sakhalin
+  category: ADMINISTRATIVE REGION

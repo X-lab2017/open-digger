@@ -1,0 +1,10 @@
+name: Saint Mary
+type: Division-1
+meta:
+  alpha2: JM-05
+  includes:
+    - saint mary
+    - jm-05
+    - '05'
+    - saint mary parish
+  category: PARISH

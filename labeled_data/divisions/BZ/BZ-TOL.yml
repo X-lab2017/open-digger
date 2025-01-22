@@ -1,0 +1,10 @@
+name: Toledo
+type: Division-1
+meta:
+  alpha2: BZ-TOL
+  includes:
+    - toledo
+    - bz-tol
+    - tol
+    - toledo district
+  category: DISTRICT

@@ -1,0 +1,10 @@
+name: North Eleuthera
+type: Division-1
+meta:
+  alpha2: BS-NE
+  includes:
+    - north eleuthera
+    - bs-ne
+    - ne
+    - north eleuthera district
+  category: DISTRICT

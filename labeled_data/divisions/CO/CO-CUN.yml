@@ -1,0 +1,10 @@
+name: Cundinamarca
+type: Division-1
+meta:
+  alpha2: CO-CUN
+  includes:
+    - cundinamarca
+    - co-cun
+    - cun
+    - cundinamarca department
+  category: DEPARTMENT

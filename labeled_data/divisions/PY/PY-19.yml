@@ -1,0 +1,10 @@
+name: Boquerón
+type: Division-1
+meta:
+  alpha2: PY-19
+  includes:
+    - boquerón
+    - py-19
+    - '19'
+    - boquerón department
+  category: DEPARTMENT

@@ -1,0 +1,12 @@
+name: Kirovohradska oblast
+type: Division-1
+meta:
+  alpha2: UA-35
+  includes:
+    - kirovohradska oblast
+    - ua-35
+    - '35'
+    - kirovohradska oblast region
+    - kirovohrad oblast
+    - kirovohrad
+  category: REGION

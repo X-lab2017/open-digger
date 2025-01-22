@@ -1,0 +1,14 @@
+name: Vladimirskaya oblast'
+type: Division-1
+meta:
+  alpha2: RU-VLA
+  includes:
+    - vladimirskaja oblast'
+    - ru-vla
+    - vla
+    - vladimirskaja oblast' administrative region
+    - vladimirskaya oblast'
+    - vladimirskaya oblast' administrative region
+    - vladimir oblast
+    - vladimir
+  category: ADMINISTRATIVE REGION

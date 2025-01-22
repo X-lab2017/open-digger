@@ -1,0 +1,14 @@
+name: Khakasiya
+type: Division-1
+meta:
+  alpha2: RU-KK
+  includes:
+    - hakasija
+    - ru-kk
+    - kk
+    - hakasija republic
+    - khakasiya
+    - khakasiya republic
+    - republic of khakassia
+    - khakassia
+  category: REPUBLIC

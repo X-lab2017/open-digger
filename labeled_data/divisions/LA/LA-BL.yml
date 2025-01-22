@@ -1,0 +1,13 @@
+name: Bolikhamxai
+type: Division-1
+meta:
+  alpha2: LA-BL
+  includes:
+    - bolikhamxai
+    - la-bl
+    - bl
+    - bolikhamxai province
+    - borikhamxay
+    - borikhamxay province
+    - bolikhamsai province
+  category: PROVINCE

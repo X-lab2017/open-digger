@@ -1,0 +1,72 @@
+name: Anguilla
+type: Division-0
+meta:
+  alpha2: AI
+  includes:
+    - Anguilla
+    - AI
+    - '660'
+    - 安圭拉
+  name_full: Anguilla
+  name_zh: 安圭拉
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 102
+    - year: 2020
+      quarter: 2
+      count: 161
+    - year: 2020
+      quarter: 3
+      count: 185
+    - year: 2020
+      quarter: 4
+      count: 219
+    - year: 2021
+      quarter: 1
+      count: 248
+    - year: 2021
+      quarter: 2
+      count: 297
+    - year: 2021
+      quarter: 3
+      count: 298
+    - year: 2021
+      quarter: 4
+      count: 324
+    - year: 2022
+      quarter: 1
+      count: 333
+    - year: 2022
+      quarter: 2
+      count: 326
+    - year: 2022
+      quarter: 3
+      count: 345
+    - year: 2022
+      quarter: 4
+      count: 349
+    - year: 2023
+      quarter: 1
+      count: 365
+    - year: 2023
+      quarter: 2
+      count: 382
+    - year: 2023
+      quarter: 3
+      count: 387
+    - year: 2023
+      quarter: 4
+      count: 401
+    - year: 2024
+      quarter: 1
+      count: 419
+    - year: 2024
+      quarter: 2
+      count: 440
+    - year: 2024
+      quarter: 3
+      count: 487
+    - year: 2024
+      quarter: 4
+      count: 572

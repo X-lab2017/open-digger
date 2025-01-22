@@ -1,0 +1,12 @@
+name: Khmelnytska oblast
+type: Division-1
+meta:
+  alpha2: UA-68
+  includes:
+    - khmelnytska oblast
+    - ua-68
+    - '68'
+    - khmelnytska oblast region
+    - khmelnytskyi oblast
+    - khmelnytsky
+  category: REGION

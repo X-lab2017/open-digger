@@ -1,0 +1,10 @@
+name: Saint David
+type: Division-1
+meta:
+  alpha2: GD-02
+  includes:
+    - saint david
+    - gd-02
+    - '02'
+    - saint david parish
+  category: PARISH

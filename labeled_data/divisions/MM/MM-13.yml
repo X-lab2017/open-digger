@@ -1,0 +1,10 @@
+name: Kayin
+type: Division-1
+meta:
+  alpha2: MM-13
+  includes:
+    - kayin
+    - mm-13
+    - '13'
+    - kayin state
+  category: STATE

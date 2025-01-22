@@ -1,0 +1,10 @@
+name: Isla
+type: Division-1
+meta:
+  alpha2: MT-20
+  includes:
+    - isla
+    - mt-20
+    - '20'
+    - isla local council
+  category: LOCAL COUNCIL

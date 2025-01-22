@@ -1,0 +1,11 @@
+name: Gotlands län
+type: Division-1
+meta:
+  alpha2: SE-I
+  includes:
+    - gotlands län
+    - se-i
+    - i
+    - gotlands län county
+    - gotland county
+  category: COUNTY

@@ -1,0 +1,13 @@
+name: Ash Sharqīyah
+type: Division-1
+meta:
+  alpha2: SA-04
+  includes:
+    - ash sharqīyah
+    - sa-04
+    - '04'
+    - ash sharqīyah region
+    - eas
+    - eastern
+    - eastern province
+  category: REGION

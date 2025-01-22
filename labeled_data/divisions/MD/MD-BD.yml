@@ -1,0 +1,10 @@
+name: Bender
+type: Division-1
+meta:
+  alpha2: MD-BD
+  includes:
+    - bender
+    - md-bd
+    - bd
+    - bender city
+  category: CITY

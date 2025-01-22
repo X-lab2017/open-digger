@@ -1,0 +1,12 @@
+name: Siguldas novads
+type: Division-1
+meta:
+  alpha2: LV-091
+  includes:
+    - siguldas novads
+    - lv-091
+    - '091'
+    - siguldas novads municipality
+    - sigulda
+    - sigulda municipality
+  category: MUNICIPALITY

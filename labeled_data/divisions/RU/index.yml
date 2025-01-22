@@ -1,0 +1,161 @@
+name: Russian Federation
+type: Division-0
+meta:
+  alpha2: RU
+  includes:
+    - Russian Federation
+    - RU
+    - '643'
+    - the Russian Federation
+    - 俄罗斯联邦
+    - Russia
+    - 俄罗斯
+  name_full: the Russian Federation
+  name_zh: 俄罗斯联邦
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 1283298
+    - year: 2020
+      quarter: 2
+      count: 1402697
+    - year: 2020
+      quarter: 3
+      count: 1518924
+    - year: 2020
+      quarter: 4
+      count: 1647055
+    - year: 2021
+      quarter: 1
+      count: 1762587
+    - year: 2021
+      quarter: 2
+      count: 1867985
+    - year: 2021
+      quarter: 3
+      count: 1986086
+    - year: 2021
+      quarter: 4
+      count: 2130228
+    - year: 2022
+      quarter: 1
+      count: 2312304
+    - year: 2022
+      quarter: 2
+      count: 2427801
+    - year: 2022
+      quarter: 3
+      count: 2542465
+    - year: 2022
+      quarter: 4
+      count: 2653716
+    - year: 2023
+      quarter: 1
+      count: 2790032
+    - year: 2023
+      quarter: 2
+      count: 2926677
+    - year: 2023
+      quarter: 3
+      count: 3060711
+    - year: 2023
+      quarter: 4
+      count: 3209599
+    - year: 2024
+      quarter: 1
+      count: 3404378
+    - year: 2024
+      quarter: 2
+      count: 3546635
+    - year: 2024
+      quarter: 3
+      count: 3664948
+    - year: 2024
+      quarter: 4
+      count: 3819579
+data:
+  labels:
+    - RU-AD
+    - RU-AL
+    - RU-ALT
+    - RU-AMU
+    - RU-ARK
+    - RU-AST
+    - RU-BA
+    - RU-BEL
+    - RU-BRY
+    - RU-BU
+    - RU-CE
+    - RU-CHE
+    - RU-CHU
+    - RU-CU
+    - RU-DA
+    - RU-YEV
+    - RU-KHA
+    - RU-KK
+    - RU-KHM
+    - RU-IN
+    - RU-IRK
+    - RU-IVA
+    - RU-YAN
+    - RU-YAR
+    - RU-KB
+    - RU-KGD
+    - RU-KL
+    - RU-KLU
+    - RU-KAM
+    - RU-KC
+    - RU-KR
+    - RU-KEM
+    - RU-KIR
+    - RU-KO
+    - RU-KOS
+    - RU-KDA
+    - RU-KYA
+    - RU-KGN
+    - RU-KRS
+    - RU-LEN
+    - RU-LIP
+    - RU-MAG
+    - RU-ME
+    - RU-MO
+    - RU-MOS
+    - RU-MOW
+    - RU-MUR
+    - RU-NEN
+    - RU-NIZ
+    - RU-NGR
+    - RU-NVS
+    - RU-OMS
+    - RU-ORE
+    - RU-ORL
+    - RU-PNZ
+    - RU-PER
+    - RU-PRI
+    - RU-PSK
+    - RU-RYA
+    - RU-ROS
+    - RU-SA
+    - RU-SAK
+    - RU-SAM
+    - RU-SPE
+    - RU-SAR
+    - RU-SE
+    - RU-SMO
+    - RU-STA
+    - RU-SVE
+    - RU-TAM
+    - RU-TA
+    - RU-TYU
+    - RU-TOM
+    - RU-TUL
+    - RU-TVE
+    - RU-TY
+    - RU-UD
+    - RU-ULY
+    - RU-VLA
+    - RU-VGG
+    - RU-VLG
+    - RU-VOR
+    - RU-ZAB
+    - ':companies/yandex'

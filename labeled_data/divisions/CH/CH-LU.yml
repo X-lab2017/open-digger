@@ -1,0 +1,13 @@
+name: Luzern
+type: Division-1
+meta:
+  alpha2: CH-LU
+  includes:
+    - luzern
+    - ch-lu
+    - lu
+    - luzern canton
+    - canton of lucerne
+    - lucerne
+    - kanton luzern
+  category: CANTON

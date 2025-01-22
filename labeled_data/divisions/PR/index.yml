@@ -1,0 +1,72 @@
+name: Puerto Rico
+type: Division-0
+meta:
+  alpha2: PR
+  includes:
+    - Puerto Rico
+    - PR
+    - '630'
+    - 波多黎各
+  name_full: Puerto Rico
+  name_zh: 波多黎各
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 18720
+    - year: 2020
+      quarter: 2
+      count: 20855
+    - year: 2020
+      quarter: 3
+      count: 23145
+    - year: 2020
+      quarter: 4
+      count: 24702
+    - year: 2021
+      quarter: 1
+      count: 26420
+    - year: 2021
+      quarter: 2
+      count: 27729
+    - year: 2021
+      quarter: 3
+      count: 29095
+    - year: 2021
+      quarter: 4
+      count: 30381
+    - year: 2022
+      quarter: 1
+      count: 32410
+    - year: 2022
+      quarter: 2
+      count: 33975
+    - year: 2022
+      quarter: 3
+      count: 35288
+    - year: 2022
+      quarter: 4
+      count: 36573
+    - year: 2023
+      quarter: 1
+      count: 38743
+    - year: 2023
+      quarter: 2
+      count: 40949
+    - year: 2023
+      quarter: 3
+      count: 43090
+    - year: 2023
+      quarter: 4
+      count: 44967
+    - year: 2024
+      quarter: 1
+      count: 48028
+    - year: 2024
+      quarter: 2
+      count: 50147
+    - year: 2024
+      quarter: 3
+      count: 52208
+    - year: 2024
+      quarter: 4
+      count: 54818

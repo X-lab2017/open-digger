@@ -1,0 +1,52 @@
+name: Toscana
+type: Division-1
+meta:
+  alpha2: IT-52
+  includes:
+    - arezzo
+    - it-ar
+    - ar
+    - arezzo province
+    - firenze
+    - it-fi
+    - fi
+    - firenze metropolitan city
+    - grosseto
+    - it-gr
+    - gr
+    - grosseto province
+    - livorno
+    - it-li
+    - li
+    - livorno province
+    - lucca
+    - it-lu
+    - lu
+    - lucca province
+    - massa-carrara
+    - it-ms
+    - ms
+    - massa-carrara province
+    - pisa
+    - it-pi
+    - pi
+    - pisa province
+    - pistoia
+    - it-pt
+    - pt
+    - pistoia province
+    - prato
+    - it-po
+    - po
+    - prato province
+    - siena
+    - it-si
+    - si
+    - siena province
+    - toscana
+    - it-52
+    - '52'
+    - toscana region
+    - tuscany
+    - tosc.
+  category: REGION

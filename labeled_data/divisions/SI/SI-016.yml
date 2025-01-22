@@ -1,0 +1,10 @@
+name: Črna na Koroškem
+type: Division-1
+meta:
+  alpha2: SI-016
+  includes:
+    - črna na koroškem
+    - si-016
+    - '016'
+    - črna na koroškem municipality
+  category: MUNICIPALITY

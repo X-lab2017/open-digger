@@ -1,0 +1,13 @@
+name: Yunnan Sheng
+type: Division-1
+meta:
+  alpha2: CN-YN
+  includes:
+    - yunnan sheng
+    - cn-yn
+    - yn
+    - yunnan sheng province
+    - yun nan sheng
+    - yunnan
+    - 云南省
+  category: PROVINCE

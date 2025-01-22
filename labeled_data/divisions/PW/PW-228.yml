@@ -1,0 +1,10 @@
+name: Ngiwal
+type: Division-1
+meta:
+  alpha2: PW-228
+  includes:
+    - ngiwal
+    - pw-228
+    - '228'
+    - ngiwal state
+  category: STATE

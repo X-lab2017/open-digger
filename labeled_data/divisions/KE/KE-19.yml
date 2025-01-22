@@ -1,0 +1,10 @@
+name: Kwale
+type: Division-1
+meta:
+  alpha2: KE-19
+  includes:
+    - kwale
+    - ke-19
+    - '19'
+    - kwale county
+  category: COUNTY

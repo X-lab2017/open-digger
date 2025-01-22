@@ -1,0 +1,10 @@
+name: Moxico
+type: Division-1
+meta:
+  alpha2: AO-MOX
+  includes:
+    - moxico
+    - ao-mox
+    - mox
+    - moxico province
+  category: PROVINCE

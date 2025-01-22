@@ -1,0 +1,11 @@
+name: Rēzekne
+type: Division-1
+meta:
+  alpha2: LV-REZ
+  includes:
+    - rēzekne
+    - lv-rez
+    - rez
+    - rēzekne state city
+    - rezekne
+  category: STATE CITY

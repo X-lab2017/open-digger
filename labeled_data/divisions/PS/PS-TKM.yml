@@ -1,0 +1,12 @@
+name: Ţūlkarm
+type: Division-1
+meta:
+  alpha2: PS-TKM
+  includes:
+    - tulkarm
+    - ps-tkm
+    - tkm
+    - tulkarm governorate
+    - ţūlkarm
+    - ţūlkarm governorate
+  category: GOVERNORATE

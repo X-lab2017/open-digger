@@ -1,0 +1,11 @@
+name: Ḩimş
+type: Division-1
+meta:
+  alpha2: SY-HI
+  includes:
+    - ḩimş
+    - sy-hi
+    - hi
+    - ḩimş province
+    - homs governorate
+  category: PROVINCE

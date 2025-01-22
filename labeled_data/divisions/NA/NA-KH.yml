@@ -1,0 +1,10 @@
+name: Khomas
+type: Division-1
+meta:
+  alpha2: NA-KH
+  includes:
+    - khomas
+    - na-kh
+    - kh
+    - khomas region
+  category: REGION

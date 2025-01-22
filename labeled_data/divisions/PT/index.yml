@@ -1,0 +1,96 @@
+name: Portugal
+type: Division-0
+meta:
+  alpha2: PT
+  includes:
+    - Portugal
+    - PT
+    - '620'
+    - the Portuguese Republic
+    - 葡萄牙
+  name_full: the Portuguese Republic
+  name_zh: 葡萄牙
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 170627
+    - year: 2020
+      quarter: 2
+      count: 186497
+    - year: 2020
+      quarter: 3
+      count: 196981
+    - year: 2020
+      quarter: 4
+      count: 212849
+    - year: 2021
+      quarter: 1
+      count: 230441
+    - year: 2021
+      quarter: 2
+      count: 244058
+    - year: 2021
+      quarter: 3
+      count: 255721
+    - year: 2021
+      quarter: 4
+      count: 272555
+    - year: 2022
+      quarter: 1
+      count: 294153
+    - year: 2022
+      quarter: 2
+      count: 313220
+    - year: 2022
+      quarter: 3
+      count: 328969
+    - year: 2022
+      quarter: 4
+      count: 349169
+    - year: 2023
+      quarter: 1
+      count: 369878
+    - year: 2023
+      quarter: 2
+      count: 391499
+    - year: 2023
+      quarter: 3
+      count: 410464
+    - year: 2023
+      quarter: 4
+      count: 432749
+    - year: 2024
+      quarter: 1
+      count: 459891
+    - year: 2024
+      quarter: 2
+      count: 481092
+    - year: 2024
+      quarter: 3
+      count: 500309
+    - year: 2024
+      quarter: 4
+      count: 525350
+data:
+  labels:
+    - PT-01
+    - PT-02
+    - PT-03
+    - PT-04
+    - PT-05
+    - PT-06
+    - PT-08
+    - PT-09
+    - PT-10
+    - PT-11
+    - PT-12
+    - PT-13
+    - PT-30
+    - PT-20
+    - PT-14
+    - PT-15
+    - PT-16
+    - PT-17
+    - PT-18
+    - PT-07
+    - ':companies/dio'

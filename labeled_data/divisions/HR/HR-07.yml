@@ -1,0 +1,12 @@
+name: Bjelovarsko-bilogorska županija
+type: Division-1
+meta:
+  alpha2: HR-07
+  includes:
+    - bjelovarsko-bilogorska županija
+    - hr-07
+    - '07'
+    - bjelovarsko-bilogorska županija county
+    - bjelovar-bilogora county
+    - bjelovar-bilogora
+  category: COUNTY

@@ -1,0 +1,11 @@
+name: Dhamār
+type: Division-1
+meta:
+  alpha2: YE-DH
+  includes:
+    - dhamār
+    - ye-dh
+    - dh
+    - dhamār governorate
+    - dhamar governorate
+  category: GOVERNORATE

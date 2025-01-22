@@ -1,0 +1,11 @@
+name: Kunaṟ
+type: Division-1
+meta:
+  alpha2: AF-KNR
+  includes:
+    - kunaṟ
+    - af-knr
+    - knr
+    - kunaṟ province
+    - kunar
+  category: PROVINCE

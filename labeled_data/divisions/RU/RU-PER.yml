@@ -1,0 +1,14 @@
+name: Permskiy kray
+type: Division-1
+meta:
+  alpha2: RU-PER
+  includes:
+    - permskij kraj
+    - ru-per
+    - per
+    - permskij kraj administrative territory
+    - permskiy kray
+    - permskiy kray administrative territory
+    - perm krai
+    - perm
+  category: ADMINISTRATIVE TERRITORY

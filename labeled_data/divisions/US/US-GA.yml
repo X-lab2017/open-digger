@@ -1,0 +1,10 @@
+name: Georgia
+type: Division-1
+meta:
+  alpha2: US-GA
+  includes:
+    - georgia
+    - us-ga
+    - ga
+    - georgia state
+  category: STATE

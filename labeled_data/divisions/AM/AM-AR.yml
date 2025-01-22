@@ -1,0 +1,11 @@
+name: Ararat
+type: Division-1
+meta:
+  alpha2: AM-AR
+  includes:
+    - ararat
+    - am-ar
+    - ar
+    - ararat region
+    - ararat province
+  category: REGION

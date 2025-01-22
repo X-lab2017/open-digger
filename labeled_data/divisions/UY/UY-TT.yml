@@ -1,0 +1,10 @@
+name: Treinta y Tres
+type: Division-1
+meta:
+  alpha2: UY-TT
+  includes:
+    - treinta y tres
+    - uy-tt
+    - tt
+    - treinta y tres department
+  category: DEPARTMENT

@@ -1,0 +1,10 @@
+name: Manipur
+type: Division-1
+meta:
+  alpha2: IN-MN
+  includes:
+    - manipur
+    - in-mn
+    - mn
+    - manipur state
+  category: STATE

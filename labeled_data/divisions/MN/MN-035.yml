@@ -1,0 +1,12 @@
+name: Orhon
+type: Division-1
+meta:
+  alpha2: MN-035
+  includes:
+    - orhon
+    - mn-035
+    - '035'
+    - orhon province
+    - orkhon
+    - orkhon province
+  category: PROVINCE

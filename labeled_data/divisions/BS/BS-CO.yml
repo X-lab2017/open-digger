@@ -1,0 +1,10 @@
+name: Central Abaco
+type: Division-1
+meta:
+  alpha2: BS-CO
+  includes:
+    - central abaco
+    - bs-co
+    - co
+    - central abaco district
+  category: DISTRICT

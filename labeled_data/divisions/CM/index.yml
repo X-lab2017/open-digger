@@ -1,0 +1,85 @@
+name: Cameroon
+type: Division-0
+meta:
+  alpha2: CM
+  includes:
+    - Cameroon
+    - CM
+    - '120'
+    - the Republic of Cameroon
+    - 喀麦隆
+  name_full: the Republic of Cameroon
+  name_zh: 喀麦隆
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 17469
+    - year: 2020
+      quarter: 2
+      count: 19394
+    - year: 2020
+      quarter: 3
+      count: 21662
+    - year: 2020
+      quarter: 4
+      count: 23662
+    - year: 2021
+      quarter: 1
+      count: 25862
+    - year: 2021
+      quarter: 2
+      count: 28682
+    - year: 2021
+      quarter: 3
+      count: 31193
+    - year: 2021
+      quarter: 4
+      count: 33992
+    - year: 2022
+      quarter: 1
+      count: 37128
+    - year: 2022
+      quarter: 2
+      count: 40226
+    - year: 2022
+      quarter: 3
+      count: 43476
+    - year: 2022
+      quarter: 4
+      count: 47151
+    - year: 2023
+      quarter: 1
+      count: 50882
+    - year: 2023
+      quarter: 2
+      count: 54817
+    - year: 2023
+      quarter: 3
+      count: 58914
+    - year: 2023
+      quarter: 4
+      count: 62879
+    - year: 2024
+      quarter: 1
+      count: 66747
+    - year: 2024
+      quarter: 2
+      count: 71175
+    - year: 2024
+      quarter: 3
+      count: 75936
+    - year: 2024
+      quarter: 4
+      count: 80806
+data:
+  labels:
+    - CM-AD
+    - CM-CE
+    - CM-ES
+    - CM-EN
+    - CM-LT
+    - CM-NO
+    - CM-NW
+    - CM-OU
+    - CM-SU
+    - CM-SW

@@ -1,0 +1,99 @@
+name: Argentina
+type: Division-0
+meta:
+  alpha2: AR
+  includes:
+    - Argentina
+    - AR
+    - '032'
+    - the Argentine Republic
+    - 阿根廷
+  name_full: the Argentine Republic
+  name_zh: 阿根廷
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 280922
+    - year: 2020
+      quarter: 2
+      count: 318451
+    - year: 2020
+      quarter: 3
+      count: 355388
+    - year: 2020
+      quarter: 4
+      count: 384559
+    - year: 2021
+      quarter: 1
+      count: 411159
+    - year: 2021
+      quarter: 2
+      count: 451295
+    - year: 2021
+      quarter: 3
+      count: 492810
+    - year: 2021
+      quarter: 4
+      count: 527540
+    - year: 2022
+      quarter: 1
+      count: 578400
+    - year: 2022
+      quarter: 2
+      count: 637275
+    - year: 2022
+      quarter: 3
+      count: 696258
+    - year: 2022
+      quarter: 4
+      count: 741211
+    - year: 2023
+      quarter: 1
+      count: 801254
+    - year: 2023
+      quarter: 2
+      count: 870966
+    - year: 2023
+      quarter: 3
+      count: 927049
+    - year: 2023
+      quarter: 4
+      count: 969604
+    - year: 2024
+      quarter: 1
+      count: 1026667
+    - year: 2024
+      quarter: 2
+      count: 1082163
+    - year: 2024
+      quarter: 3
+      count: 1130022
+    - year: 2024
+      quarter: 4
+      count: 1173944
+data:
+  labels:
+    - AR-B
+    - AR-K
+    - AR-H
+    - AR-U
+    - AR-C
+    - AR-W
+    - AR-X
+    - AR-E
+    - AR-P
+    - AR-Y
+    - AR-L
+    - AR-F
+    - AR-M
+    - AR-N
+    - AR-Q
+    - AR-R
+    - AR-A
+    - AR-J
+    - AR-D
+    - AR-Z
+    - AR-S
+    - AR-G
+    - AR-V
+    - AR-T

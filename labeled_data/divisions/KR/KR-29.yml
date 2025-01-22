@@ -1,0 +1,13 @@
+name: Gwangju-gwangyeoksi
+type: Division-1
+meta:
+  alpha2: KR-29
+  includes:
+    - gwangju-gwangyeoksi
+    - kr-29
+    - '29'
+    - gwangju-gwangyeoksi metropolitan city
+    - gwangju
+    - gwangju metropolitan city
+    - 광주광역시
+  category: METROPOLITAN CITY

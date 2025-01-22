@@ -1,0 +1,11 @@
+name: Quảng Trị
+type: Division-1
+meta:
+  alpha2: VN-25
+  includes:
+    - quảng trị
+    - vn-25
+    - '25'
+    - quảng trị province
+    - quang tri
+  category: PROVINCE

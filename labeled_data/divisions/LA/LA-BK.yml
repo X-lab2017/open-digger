@@ -1,0 +1,10 @@
+name: Bokèo
+type: Division-1
+meta:
+  alpha2: LA-BK
+  includes:
+    - bokèo
+    - la-bk
+    - bk
+    - bokèo province
+  category: PROVINCE

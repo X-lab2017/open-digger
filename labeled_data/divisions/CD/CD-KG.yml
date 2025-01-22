@@ -1,0 +1,10 @@
+name: Kwango
+type: Division-1
+meta:
+  alpha2: CD-KG
+  includes:
+    - kwango
+    - cd-kg
+    - kg
+    - kwango province
+  category: PROVINCE

@@ -1,0 +1,10 @@
+name: Ahafo
+type: Division-1
+meta:
+  alpha2: GH-AF
+  includes:
+    - ahafo
+    - gh-af
+    - af
+    - ahafo region
+  category: REGION

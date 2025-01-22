@@ -1,0 +1,96 @@
+name: Papua New Guinea
+type: Division-0
+meta:
+  alpha2: PG
+  includes:
+    - Papua New Guinea
+    - PG
+    - '598'
+    - 巴布亚新几内亚
+  name_full: Papua New Guinea
+  name_zh: 巴布亚新几内亚
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 1576
+    - year: 2020
+      quarter: 2
+      count: 1809
+    - year: 2020
+      quarter: 3
+      count: 2095
+    - year: 2020
+      quarter: 4
+      count: 2320
+    - year: 2021
+      quarter: 1
+      count: 2539
+    - year: 2021
+      quarter: 2
+      count: 2789
+    - year: 2021
+      quarter: 3
+      count: 3141
+    - year: 2021
+      quarter: 4
+      count: 3325
+    - year: 2022
+      quarter: 1
+      count: 3599
+    - year: 2022
+      quarter: 2
+      count: 3880
+    - year: 2022
+      quarter: 3
+      count: 4240
+    - year: 2022
+      quarter: 4
+      count: 4521
+    - year: 2023
+      quarter: 1
+      count: 5020
+    - year: 2023
+      quarter: 2
+      count: 5667
+    - year: 2023
+      quarter: 3
+      count: 6276
+    - year: 2023
+      quarter: 4
+      count: 6785
+    - year: 2024
+      quarter: 1
+      count: 7547
+    - year: 2024
+      quarter: 2
+      count: 8108
+    - year: 2024
+      quarter: 3
+      count: 8694
+    - year: 2024
+      quarter: 4
+      count: 9451
+data:
+  labels:
+    - PG-NSB
+    - PG-CPM
+    - PG-CPK
+    - PG-EBR
+    - PG-ESW
+    - PG-EHG
+    - PG-EPW
+    - PG-GPK
+    - PG-HLA
+    - PG-JWK
+    - PG-MPM
+    - PG-MRL
+    - PG-MBA
+    - PG-MPL
+    - PG-NCD
+    - PG-NIK
+    - PG-NPP
+    - PG-SHM
+    - PG-WBK
+    - PG-SAN
+    - PG-WPD
+    - PG-WHM

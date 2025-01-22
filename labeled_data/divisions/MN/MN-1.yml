@@ -1,0 +1,12 @@
+name: Ulaanbaatar
+type: Division-1
+meta:
+  alpha2: MN-1
+  includes:
+    - ulaanbaatar
+    - mn-1
+    - '1'
+    - ulaanbaatar capital city
+    - улаанбаатар
+    - ulaanbaatar hot
+  category: CAPITAL CITY

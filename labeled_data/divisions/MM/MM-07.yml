@@ -1,0 +1,10 @@
+name: Ayeyarwady
+type: Division-1
+meta:
+  alpha2: MM-07
+  includes:
+    - ayeyarwady
+    - mm-07
+    - '07'
+    - ayeyarwady region
+  category: REGION

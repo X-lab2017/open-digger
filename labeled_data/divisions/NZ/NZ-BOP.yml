@@ -1,0 +1,12 @@
+name: Bay of Plenty
+type: Division-1
+meta:
+  alpha2: NZ-BOP
+  includes:
+    - bay of plenty
+    - nz-bop
+    - bop
+    - bay of plenty region
+    - toi moana
+    - toi moana region
+  category: REGION

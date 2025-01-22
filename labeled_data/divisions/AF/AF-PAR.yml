@@ -1,0 +1,11 @@
+name: Parwān
+type: Division-1
+meta:
+  alpha2: AF-PAR
+  includes:
+    - parwān
+    - af-par
+    - par
+    - parwān province
+    - parwan
+  category: PROVINCE

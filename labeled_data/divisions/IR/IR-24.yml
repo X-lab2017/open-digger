@@ -1,0 +1,12 @@
+name: Ardabīl
+type: Division-1
+meta:
+  alpha2: IR-24
+  includes:
+    - ardabīl
+    - ir-24
+    - '24'
+    - ardabīl province
+    - ardabil province
+    - استان اردبیل
+  category: PROVINCE

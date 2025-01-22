@@ -1,0 +1,10 @@
+name: Lozovo
+type: Division-1
+meta:
+  alpha2: MK-105
+  includes:
+    - lozovo
+    - mk-105
+    - '105'
+    - lozovo municipality
+  category: MUNICIPALITY

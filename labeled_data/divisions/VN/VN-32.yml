@@ -1,0 +1,11 @@
+name: Phú Yên
+type: Division-1
+meta:
+  alpha2: VN-32
+  includes:
+    - phú yên
+    - vn-32
+    - '32'
+    - phú yên province
+    - phu yen
+  category: PROVINCE

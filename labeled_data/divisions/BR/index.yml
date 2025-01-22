@@ -1,0 +1,102 @@
+name: Brazil
+type: Division-0
+meta:
+  alpha2: BR
+  includes:
+    - Brazil
+    - BR
+    - '076'
+    - the Federative Republic of Brazil
+    - 巴西
+  name_full: the Federative Republic of Brazil
+  name_zh: 巴西
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 1400662
+    - year: 2020
+      quarter: 2
+      count: 1544319
+    - year: 2020
+      quarter: 3
+      count: 1693935
+    - year: 2020
+      quarter: 4
+      count: 1820522
+    - year: 2021
+      quarter: 1
+      count: 1970500
+    - year: 2021
+      quarter: 2
+      count: 2164091
+    - year: 2021
+      quarter: 3
+      count: 2373783
+    - year: 2021
+      quarter: 4
+      count: 2547533
+    - year: 2022
+      quarter: 1
+      count: 2779079
+    - year: 2022
+      quarter: 2
+      count: 3048283
+    - year: 2022
+      quarter: 3
+      count: 3301942
+    - year: 2022
+      quarter: 4
+      count: 3501226
+    - year: 2023
+      quarter: 1
+      count: 3736602
+    - year: 2023
+      quarter: 2
+      count: 4024727
+    - year: 2023
+      quarter: 3
+      count: 4315369
+    - year: 2023
+      quarter: 4
+      count: 4532935
+    - year: 2024
+      quarter: 1
+      count: 4812874
+    - year: 2024
+      quarter: 2
+      count: 5139186
+    - year: 2024
+      quarter: 3
+      count: 5483694
+    - year: 2024
+      quarter: 4
+      count: 5770595
+data:
+  labels:
+    - BR-AC
+    - BR-AL
+    - BR-AP
+    - BR-AM
+    - BR-BA
+    - BR-CE
+    - BR-DF
+    - BR-ES
+    - BR-GO
+    - BR-MA
+    - BR-MT
+    - BR-MS
+    - BR-MG
+    - BR-PR
+    - BR-PB
+    - BR-PA
+    - BR-PE
+    - BR-PI
+    - BR-RN
+    - BR-RS
+    - BR-RJ
+    - BR-RO
+    - BR-RR
+    - BR-SC
+    - BR-SE
+    - BR-SP
+    - BR-TO

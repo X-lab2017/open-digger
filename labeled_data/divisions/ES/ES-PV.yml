@@ -1,0 +1,28 @@
+name: País Vasco
+type: Division-1
+meta:
+  alpha2: ES-PV
+  includes:
+    - araba
+    - es-vi
+    - vi
+    - araba province
+    - bizkaia
+    - es-bi
+    - bi
+    - bizkaia province
+    - euskal herria
+    - es-pv
+    - pv
+    - euskal herria autonomous community
+    - gipuzkoa
+    - es-ss
+    - ss
+    - gipuzkoa province
+    - país vasco
+    - país vasco autonomous community
+    - álava
+    - álava province
+    - euskadi
+    - basque country
+  category: AUTONOMOUS COMMUNITY

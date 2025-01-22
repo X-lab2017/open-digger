@@ -1,0 +1,11 @@
+name: Fryslân
+type: Division-1
+meta:
+  alpha2: NL-FR
+  includes:
+    - fryslân
+    - nl-fr
+    - fr
+    - fryslân province
+    - friesland
+  category: PROVINCE

@@ -1,0 +1,11 @@
+name: Olt
+type: Division-1
+meta:
+  alpha2: RO-OT
+  includes:
+    - olt
+    - ro-ot
+    - ot
+    - olt department
+    - olt county
+  category: DEPARTMENT

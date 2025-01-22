@@ -1,0 +1,10 @@
+name: Vava'u
+type: Division-1
+meta:
+  alpha2: TO-05
+  includes:
+    - vava'u
+    - to-05
+    - '05'
+    - vava'u division
+  category: DIVISION

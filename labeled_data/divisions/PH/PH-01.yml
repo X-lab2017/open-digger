@@ -1,0 +1,34 @@
+name: Ilocos
+type: Division-1
+meta:
+  alpha2: PH-01
+  includes:
+    - hilagang iloko
+    - ph-iln
+    - iln
+    - hilagang iloko province
+    - ilocos
+    - ph-01
+    - '01'
+    - ilocos region
+    - ilocos norte
+    - ilocos norte province
+    - ilocos sur
+    - ph-ils
+    - ils
+    - ilocos sur province
+    - la union
+    - ph-lun
+    - lun
+    - la union province
+    - la unyon
+    - la unyon province
+    - pangasinan
+    - ph-pan
+    - pan
+    - pangasinan province
+    - rehiyon ng iloko
+    - rehiyon ng iloko region
+    - timog iloko
+    - timog iloko province
+  category: REGION

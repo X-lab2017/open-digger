@@ -1,0 +1,12 @@
+name: Glasi
+type: Division-1
+meta:
+  alpha2: SC-12
+  includes:
+    - glacis
+    - sc-12
+    - '12'
+    - glacis district
+    - glasi
+    - glasi district
+  category: DISTRICT

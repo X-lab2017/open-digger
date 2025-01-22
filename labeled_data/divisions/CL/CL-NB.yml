@@ -1,0 +1,11 @@
+name: Ñuble
+type: Division-1
+meta:
+  alpha2: CL-NB
+  includes:
+    - ñuble
+    - cl-nb
+    - nb
+    - ñuble region
+    - xvi
+  category: REGION

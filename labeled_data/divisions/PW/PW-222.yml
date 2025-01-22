@@ -1,0 +1,10 @@
+name: Ngardmau
+type: Division-1
+meta:
+  alpha2: PW-222
+  includes:
+    - ngardmau
+    - pw-222
+    - '222'
+    - ngardmau state
+  category: STATE

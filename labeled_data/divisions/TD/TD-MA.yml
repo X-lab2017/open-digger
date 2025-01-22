@@ -1,0 +1,12 @@
+name: Māndūl
+type: Division-1
+meta:
+  alpha2: TD-MA
+  includes:
+    - mandoul
+    - td-ma
+    - ma
+    - mandoul province
+    - māndūl
+    - māndūl province
+  category: PROVINCE

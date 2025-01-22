@@ -1,0 +1,17 @@
+name: Tyumenskaya oblast'
+type: Division-1
+meta:
+  alpha2: RU-TYU
+  includes:
+    - tjumenskaja oblast'
+    - ru-tyu
+    - tyu
+    - tjumenskaja oblast' administrative region
+    - tyumenskaya oblast'
+    - tyumenskaya oblast' administrative region
+    - tyumen oblast
+    - tyumen'
+    - evenki
+    - tyumen
+    - tyumen’
+  category: ADMINISTRATIVE REGION

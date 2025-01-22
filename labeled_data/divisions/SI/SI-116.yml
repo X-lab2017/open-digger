@@ -1,0 +1,10 @@
+name: Sveti Jurij ob Ščavnici
+type: Division-1
+meta:
+  alpha2: SI-116
+  includes:
+    - sveti jurij ob ščavnici
+    - si-116
+    - '116'
+    - sveti jurij ob ščavnici municipality
+  category: MUNICIPALITY

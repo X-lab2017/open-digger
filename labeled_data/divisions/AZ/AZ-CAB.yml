@@ -1,0 +1,10 @@
+name: Cəbrayıl
+type: Division-1
+meta:
+  alpha2: AZ-CAB
+  includes:
+    - cəbrayıl
+    - az-cab
+    - cab
+    - cəbrayıl rayon
+  category: RAYON

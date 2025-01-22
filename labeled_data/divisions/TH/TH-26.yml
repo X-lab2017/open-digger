@@ -1,0 +1,10 @@
+name: Nakhon Nayok
+type: Division-1
+meta:
+  alpha2: TH-26
+  includes:
+    - nakhon nayok
+    - th-26
+    - '26'
+    - nakhon nayok province
+  category: PROVINCE

@@ -1,0 +1,10 @@
+name: Bujumbura Rural
+type: Division-1
+meta:
+  alpha2: BI-BL
+  includes:
+    - bujumbura rural
+    - bi-bl
+    - bl
+    - bujumbura rural province
+  category: PROVINCE

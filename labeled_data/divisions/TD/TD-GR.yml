@@ -1,0 +1,12 @@
+name: Qīrā
+type: Division-1
+meta:
+  alpha2: TD-GR
+  includes:
+    - guéra
+    - td-gr
+    - gr
+    - guéra province
+    - qīrā
+    - qīrā province
+  category: PROVINCE

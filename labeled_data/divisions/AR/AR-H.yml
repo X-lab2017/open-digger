@@ -1,0 +1,11 @@
+name: Chaco
+type: Division-1
+meta:
+  alpha2: AR-H
+  includes:
+    - chaco
+    - ar-h
+    - h
+    - chaco province
+    - chb
+  category: PROVINCE

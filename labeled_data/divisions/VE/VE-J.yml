@@ -1,0 +1,11 @@
+name: Guárico
+type: Division-1
+meta:
+  alpha2: VE-J
+  includes:
+    - guárico
+    - ve-j
+    - j
+    - guárico state
+    - gu
+  category: STATE

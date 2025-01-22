@@ -1,0 +1,10 @@
+name: Dondușeni
+type: Division-1
+meta:
+  alpha2: MD-DO
+  includes:
+    - dondușeni
+    - md-do
+    - do
+    - dondușeni district
+  category: DISTRICT

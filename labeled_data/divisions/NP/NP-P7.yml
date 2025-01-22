@@ -1,0 +1,19 @@
+name: Sudurpashchim
+type: Division-1
+meta:
+  alpha2: NP-P7
+  includes:
+    - sudurpashchim
+    - np-p7
+    - p7
+    - sudurpashchim province
+    - sudūr pashchim
+    - sudūr pashchim province
+    - province 7
+    - province 7 province
+    - sudūrpashchim
+    - sudūrpashchim province
+    - pradesh 7
+    - pradesh 7 province
+    - nārāyanī
+  category: PROVINCE

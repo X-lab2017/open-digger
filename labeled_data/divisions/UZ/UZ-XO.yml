@@ -1,0 +1,11 @@
+name: Xorazm
+type: Division-1
+meta:
+  alpha2: UZ-XO
+  includes:
+    - xorazm
+    - uz-xo
+    - xo
+    - xorazm region
+    - xorazm viloyati
+  category: REGION

@@ -1,0 +1,46 @@
+name: Tanger-Tétouan-Al Hoceïma
+type: Division-1
+meta:
+  alpha2: MA-01
+  includes:
+    - al hoceïma
+    - ma-hoc
+    - hoc
+    - al hoceïma province
+    - chefchaouen
+    - ma-che
+    - che
+    - chefchaouen province
+    - fahs-anjra
+    - ma-fah
+    - fah
+    - fahs-anjra province
+    - larache
+    - ma-lar
+    - lar
+    - larache province
+    - m’diq-fnideq
+    - ma-mdf
+    - mdf
+    - m’diq-fnideq prefecture
+    - ouezzane
+    - ma-ouz
+    - ouz
+    - ouezzane province
+    - tanger-assilah
+    - ma-tng
+    - tng
+    - tanger-assilah prefecture
+    - tanger-tétouan-al hoceïma
+    - ma-01
+    - '01'
+    - tanger-tétouan-al hoceïma region
+    - tétouan
+    - ma-tet
+    - tet
+    - tétouan province
+    - tangier-tétouan-al hoceima
+    - tanger-tetouan-al hoceima
+    - tanger-tétouan-al hoceima
+    - فاس ـ بولمان
+  category: REGION

@@ -1,0 +1,11 @@
+name: Selangor
+type: Division-1
+meta:
+  alpha2: MY-10
+  includes:
+    - selangor
+    - my-10
+    - '10'
+    - selangor state
+    - sepang
+  category: STATE

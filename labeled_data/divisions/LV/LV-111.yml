@@ -1,0 +1,12 @@
+name: Augšdaugavas novads
+type: Division-1
+meta:
+  alpha2: LV-111
+  includes:
+    - augšdaugavas novads
+    - lv-111
+    - '111'
+    - augšdaugavas novads municipality
+    - augšdaugava
+    - augšdaugava municipality
+  category: MUNICIPALITY

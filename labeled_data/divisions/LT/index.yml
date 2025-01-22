@@ -1,0 +1,85 @@
+name: Lithuania
+type: Division-0
+meta:
+  alpha2: LT
+  includes:
+    - Lithuania
+    - LT
+    - '440'
+    - the Republic of Lithuania
+    - 立陶宛
+  name_full: the Republic of Lithuania
+  name_zh: 立陶宛
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 56617
+    - year: 2020
+      quarter: 2
+      count: 60955
+    - year: 2020
+      quarter: 3
+      count: 65189
+    - year: 2020
+      quarter: 4
+      count: 69846
+    - year: 2021
+      quarter: 1
+      count: 74882
+    - year: 2021
+      quarter: 2
+      count: 78982
+    - year: 2021
+      quarter: 3
+      count: 83147
+    - year: 2021
+      quarter: 4
+      count: 87536
+    - year: 2022
+      quarter: 1
+      count: 94663
+    - year: 2022
+      quarter: 2
+      count: 100893
+    - year: 2022
+      quarter: 3
+      count: 106594
+    - year: 2022
+      quarter: 4
+      count: 112323
+    - year: 2023
+      quarter: 1
+      count: 118765
+    - year: 2023
+      quarter: 2
+      count: 125343
+    - year: 2023
+      quarter: 3
+      count: 131440
+    - year: 2023
+      quarter: 4
+      count: 137505
+    - year: 2024
+      quarter: 1
+      count: 150464
+    - year: 2024
+      quarter: 2
+      count: 155264
+    - year: 2024
+      quarter: 3
+      count: 158130
+    - year: 2024
+      quarter: 4
+      count: 166184
+data:
+  labels:
+    - LT-SA
+    - LT-AL
+    - LT-UT
+    - LT-KU
+    - LT-PN
+    - LT-VL
+    - LT-TA
+    - LT-MR
+    - LT-KL
+    - LT-TE

@@ -1,0 +1,10 @@
+name: Kamnik
+type: Division-1
+meta:
+  alpha2: SI-043
+  includes:
+    - kamnik
+    - si-043
+    - '043'
+    - kamnik municipality
+  category: MUNICIPALITY

@@ -1,0 +1,10 @@
+name: Mojkovac
+type: Division-1
+meta:
+  alpha2: ME-11
+  includes:
+    - mojkovac
+    - me-11
+    - '11'
+    - mojkovac municipality
+  category: MUNICIPALITY

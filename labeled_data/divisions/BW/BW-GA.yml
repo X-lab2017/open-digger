@@ -1,0 +1,10 @@
+name: Gaborone
+type: Division-1
+meta:
+  alpha2: BW-GA
+  includes:
+    - gaborone
+    - bw-ga
+    - ga
+    - gaborone city
+  category: CITY

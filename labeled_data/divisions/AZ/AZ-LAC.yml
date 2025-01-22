@@ -1,0 +1,10 @@
+name: Laçın
+type: Division-1
+meta:
+  alpha2: AZ-LAC
+  includes:
+    - laçın
+    - az-lac
+    - lac
+    - laçın rayon
+  category: RAYON

@@ -1,0 +1,22 @@
+name: Higuamo
+type: Division-1
+meta:
+  alpha2: DO-39
+  includes:
+    - hato mayor
+    - do-30
+    - '30'
+    - hato mayor province
+    - higuamo
+    - do-39
+    - '39'
+    - higuamo region
+    - monte plata
+    - do-29
+    - '29'
+    - monte plata province
+    - san pedro de macorís
+    - do-23
+    - '23'
+    - san pedro de macorís province
+  category: REGION

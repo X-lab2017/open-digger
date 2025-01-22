@@ -1,0 +1,10 @@
+name: Töv
+type: Division-1
+meta:
+  alpha2: MN-047
+  includes:
+    - töv
+    - mn-047
+    - '047'
+    - töv province
+  category: PROVINCE

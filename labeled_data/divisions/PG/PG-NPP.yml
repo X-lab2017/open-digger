@@ -1,0 +1,10 @@
+name: Northern
+type: Division-1
+meta:
+  alpha2: PG-NPP
+  includes:
+    - northern
+    - pg-npp
+    - npp
+    - northern province
+  category: PROVINCE

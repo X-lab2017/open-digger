@@ -1,0 +1,10 @@
+name: Ratchaburi
+type: Division-1
+meta:
+  alpha2: TH-70
+  includes:
+    - ratchaburi
+    - th-70
+    - '70'
+    - ratchaburi province
+  category: PROVINCE

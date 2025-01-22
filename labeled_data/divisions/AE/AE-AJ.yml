@@ -1,0 +1,12 @@
+name: ‘Ajmān
+type: Division-1
+meta:
+  alpha2: AE-AJ
+  includes:
+    - ‘ajmān
+    - ae-aj
+    - aj
+    - ‘ajmān emirate
+    - ajman
+    - ajman emirate
+  category: EMIRATE

@@ -1,0 +1,11 @@
+name: Afyonkarahisar
+type: Division-1
+meta:
+  alpha2: TR-03
+  includes:
+    - afyonkarahisar
+    - tr-03
+    - '03'
+    - afyonkarahisar province
+    - afyon
+  category: PROVINCE

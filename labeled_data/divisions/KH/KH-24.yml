@@ -1,0 +1,12 @@
+name: Pailĭn
+type: Division-1
+meta:
+  alpha2: KH-24
+  includes:
+    - pailin
+    - kh-24
+    - '24'
+    - pailin province
+    - pailĭn
+    - pailĭn province
+  category: PROVINCE

@@ -1,0 +1,10 @@
+name: Tizi Ouzou
+type: Division-1
+meta:
+  alpha2: DZ-15
+  includes:
+    - tizi ouzou
+    - dz-15
+    - '15'
+    - tizi ouzou province
+  category: PROVINCE

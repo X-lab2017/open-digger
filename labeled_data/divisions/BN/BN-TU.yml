@@ -1,0 +1,10 @@
+name: Tutong
+type: Division-1
+meta:
+  alpha2: BN-TU
+  includes:
+    - tutong
+    - bn-tu
+    - tu
+    - tutong district
+  category: DISTRICT

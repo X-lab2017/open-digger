@@ -1,0 +1,14 @@
+name: Sverdlovskaya oblast'
+type: Division-1
+meta:
+  alpha2: RU-SVE
+  includes:
+    - sverdlovskaja oblast'
+    - ru-sve
+    - sve
+    - sverdlovskaja oblast' administrative region
+    - sverdlovskaya oblast'
+    - sverdlovskaya oblast' administrative region
+    - sverdlovsk oblast
+    - sverdlovsk
+  category: ADMINISTRATIVE REGION

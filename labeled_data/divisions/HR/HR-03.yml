@@ -1,0 +1,12 @@
+name: Sisačko-moslavačka županija
+type: Division-1
+meta:
+  alpha2: HR-03
+  includes:
+    - sisačko-moslavačka županija
+    - hr-03
+    - '03'
+    - sisačko-moslavačka županija county
+    - sisak-moslavina
+    - sisak-moslavina county
+  category: COUNTY

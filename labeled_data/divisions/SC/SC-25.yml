@@ -1,0 +1,14 @@
+name: Ros Kaiman
+type: Division-1
+meta:
+  alpha2: SC-25
+  includes:
+    - roche caiman
+    - sc-25
+    - '25'
+    - roche caiman district
+    - roche caïman
+    - roche caïman district
+    - ros kaiman
+    - ros kaiman district
+  category: DISTRICT

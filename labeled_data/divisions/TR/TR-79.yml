@@ -1,0 +1,10 @@
+name: Kilis
+type: Division-1
+meta:
+  alpha2: TR-79
+  includes:
+    - kilis
+    - tr-79
+    - '79'
+    - kilis province
+  category: PROVINCE

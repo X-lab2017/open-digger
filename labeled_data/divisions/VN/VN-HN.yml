@@ -1,0 +1,11 @@
+name: Hà Nội
+type: Division-1
+meta:
+  alpha2: VN-HN
+  includes:
+    - hà nội
+    - vn-hn
+    - hn
+    - hà nội municipality
+    - hanoi
+  category: MUNICIPALITY

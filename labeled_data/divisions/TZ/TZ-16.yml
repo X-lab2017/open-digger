@@ -1,0 +1,10 @@
+name: Morogoro
+type: Division-1
+meta:
+  alpha2: TZ-16
+  includes:
+    - morogoro
+    - tz-16
+    - '16'
+    - morogoro region
+  category: REGION

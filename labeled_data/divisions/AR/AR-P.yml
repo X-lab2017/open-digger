@@ -1,0 +1,11 @@
+name: Formosa
+type: Division-1
+meta:
+  alpha2: AR-P
+  includes:
+    - formosa
+    - ar-p
+    - p
+    - formosa province
+    - fsa
+  category: PROVINCE

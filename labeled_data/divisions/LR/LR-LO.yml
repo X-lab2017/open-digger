@@ -1,0 +1,10 @@
+name: Lofa
+type: Division-1
+meta:
+  alpha2: LR-LO
+  includes:
+    - lofa
+    - lr-lo
+    - lo
+    - lofa county
+  category: COUNTY

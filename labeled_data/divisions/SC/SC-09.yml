@@ -1,0 +1,12 @@
+name: Beler
+type: Division-1
+meta:
+  alpha2: SC-09
+  includes:
+    - bel air
+    - sc-09
+    - '09'
+    - bel air district
+    - beler
+    - beler district
+  category: DISTRICT

@@ -1,0 +1,10 @@
+name: Drochia
+type: Division-1
+meta:
+  alpha2: MD-DR
+  includes:
+    - drochia
+    - md-dr
+    - dr
+    - drochia district
+  category: DISTRICT

@@ -1,0 +1,10 @@
+name: Perak
+type: Division-1
+meta:
+  alpha2: MY-08
+  includes:
+    - perak
+    - my-08
+    - '08'
+    - perak state
+  category: STATE

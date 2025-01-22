@@ -1,0 +1,10 @@
+name: Michigan
+type: Division-1
+meta:
+  alpha2: US-MI
+  includes:
+    - michigan
+    - us-mi
+    - mi
+    - michigan state
+  category: STATE

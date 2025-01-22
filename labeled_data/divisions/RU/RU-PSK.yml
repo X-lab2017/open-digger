@@ -1,0 +1,14 @@
+name: Pskovskaya oblast'
+type: Division-1
+meta:
+  alpha2: RU-PSK
+  includes:
+    - pskovskaja oblast'
+    - ru-psk
+    - psk
+    - pskovskaja oblast' administrative region
+    - pskovskaya oblast'
+    - pskovskaya oblast' administrative region
+    - pskov oblast
+    - pskov
+  category: ADMINISTRATIVE REGION

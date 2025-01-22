@@ -1,0 +1,84 @@
+name: Kyrgyzstan
+type: Division-0
+meta:
+  alpha2: KG
+  includes:
+    - Kyrgyzstan
+    - KG
+    - '417'
+    - the Kyrgyz Republic
+    - 吉尔吉斯斯坦
+  name_full: the Kyrgyz Republic
+  name_zh: 吉尔吉斯斯坦
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 14440
+    - year: 2020
+      quarter: 2
+      count: 16352
+    - year: 2020
+      quarter: 3
+      count: 18460
+    - year: 2020
+      quarter: 4
+      count: 21070
+    - year: 2021
+      quarter: 1
+      count: 23528
+    - year: 2021
+      quarter: 2
+      count: 25943
+    - year: 2021
+      quarter: 3
+      count: 28386
+    - year: 2021
+      quarter: 4
+      count: 31582
+    - year: 2022
+      quarter: 1
+      count: 35320
+    - year: 2022
+      quarter: 2
+      count: 39263
+    - year: 2022
+      quarter: 3
+      count: 42634
+    - year: 2022
+      quarter: 4
+      count: 49379
+    - year: 2023
+      quarter: 1
+      count: 53864
+    - year: 2023
+      quarter: 2
+      count: 58073
+    - year: 2023
+      quarter: 3
+      count: 61929
+    - year: 2023
+      quarter: 4
+      count: 66306
+    - year: 2024
+      quarter: 1
+      count: 70967
+    - year: 2024
+      quarter: 2
+      count: 74123
+    - year: 2024
+      quarter: 3
+      count: 77040
+    - year: 2024
+      quarter: 4
+      count: 81227
+data:
+  labels:
+    - KG-B
+    - KG-GB
+    - KG-C
+    - KG-J
+    - KG-GO
+    - KG-Y
+    - KG-N
+    - KG-O
+    - KG-T

@@ -1,0 +1,11 @@
+name: Santa Cruz
+type: Division-1
+meta:
+  alpha2: BO-S
+  includes:
+    - santa cruz
+    - bo-s
+    - s
+    - santa cruz department
+    - departamento de santa cruz
+  category: DEPARTMENT

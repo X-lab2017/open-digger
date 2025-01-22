@@ -1,0 +1,13 @@
+name: Krasnoyarskiy kray
+type: Division-1
+meta:
+  alpha2: RU-KYA
+  includes:
+    - krasnojarskij kraj
+    - ru-kya
+    - kya
+    - krasnojarskij kraj administrative territory
+    - krasnoyarskiy kray
+    - krasnoyarskiy kray administrative territory
+    - krasnoyarsk krai
+  category: ADMINISTRATIVE TERRITORY

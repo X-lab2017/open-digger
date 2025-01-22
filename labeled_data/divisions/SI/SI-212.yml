@@ -1,0 +1,10 @@
+name: Mirna
+type: Division-1
+meta:
+  alpha2: SI-212
+  includes:
+    - mirna
+    - si-212
+    - '212'
+    - mirna municipality
+  category: MUNICIPALITY

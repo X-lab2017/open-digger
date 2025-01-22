@@ -1,0 +1,10 @@
+name: Khenchela
+type: Division-1
+meta:
+  alpha2: DZ-40
+  includes:
+    - khenchela
+    - dz-40
+    - '40'
+    - khenchela province
+  category: PROVINCE

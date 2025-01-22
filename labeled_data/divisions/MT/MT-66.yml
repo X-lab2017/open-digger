@@ -1,0 +1,10 @@
+name: Żebbuġ Malta
+type: Division-1
+meta:
+  alpha2: MT-66
+  includes:
+    - żebbuġ malta
+    - mt-66
+    - '66'
+    - żebbuġ malta local council
+  category: LOCAL COUNCIL

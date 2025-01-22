@@ -1,0 +1,10 @@
+name: Valle
+type: Division-1
+meta:
+  alpha2: HN-VA
+  includes:
+    - valle
+    - hn-va
+    - va
+    - valle department
+  category: DEPARTMENT

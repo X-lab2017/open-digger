@@ -1,0 +1,10 @@
+name: Appenzell Ausserrhoden
+type: Division-1
+meta:
+  alpha2: CH-AR
+  includes:
+    - appenzell ausserrhoden
+    - ch-ar
+    - ar
+    - appenzell ausserrhoden canton
+  category: CANTON

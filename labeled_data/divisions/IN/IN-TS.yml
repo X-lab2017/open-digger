@@ -1,0 +1,10 @@
+name: Telangāna
+type: Division-1
+meta:
+  alpha2: IN-TS
+  includes:
+    - telangāna
+    - in-ts
+    - ts
+    - telangāna state
+  category: STATE

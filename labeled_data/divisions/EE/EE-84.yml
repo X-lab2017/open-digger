@@ -1,0 +1,27 @@
+name: Viljandimaa
+type: Division-1
+meta:
+  alpha2: EE-84
+  includes:
+    - mulgi
+    - ee-480
+    - '480'
+    - mulgi rural municipality
+    - põhja-sakala
+    - ee-615
+    - '615'
+    - põhja-sakala rural municipality
+    - viljandi
+    - ee-897
+    - '897'
+    - viljandi urban municipality
+    - ee-899
+    - '899'
+    - viljandi rural municipality
+    - viljandimaa
+    - ee-84
+    - '84'
+    - viljandimaa county
+    - viljandi maakond
+    - viljandi county
+  category: COUNTY

@@ -1,0 +1,13 @@
+name: Pomorskie
+type: Division-1
+meta:
+  alpha2: PL-22
+  includes:
+    - pomorskie
+    - pl-22
+    - '22'
+    - pomorskie voivodship
+    - pomeranian voivodeship
+    - województwo pomorskie
+    - pm
+  category: VOIVODSHIP

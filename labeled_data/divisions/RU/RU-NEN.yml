@@ -1,0 +1,13 @@
+name: Nenetskiy avtonomnyy okrug
+type: Division-1
+meta:
+  alpha2: RU-NEN
+  includes:
+    - neneckij avtonomnyj okrug
+    - ru-nen
+    - nen
+    - neneckij avtonomnyj okrug autonomous district
+    - nenetskiy avtonomnyy okrug
+    - nenetskiy avtonomnyy okrug autonomous district
+    - nenets autonomous okrug
+  category: AUTONOMOUS DISTRICT

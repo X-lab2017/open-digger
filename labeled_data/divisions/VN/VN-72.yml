@@ -1,0 +1,11 @@
+name: Đắk Nông
+type: Division-1
+meta:
+  alpha2: VN-72
+  includes:
+    - đắk nông
+    - vn-72
+    - '72'
+    - đắk nông province
+    - dak nong
+  category: PROVINCE

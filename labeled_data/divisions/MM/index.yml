@@ -1,0 +1,91 @@
+name: Myanmar
+type: Division-0
+meta:
+  alpha2: MM
+  includes:
+    - Myanmar
+    - MM
+    - '104'
+    - the Union of Myanmar
+    - 缅甸
+    - Myanmar (Burma)
+  name_full: the Union of Myanmar
+  name_zh: 缅甸
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 46306
+    - year: 2020
+      quarter: 2
+      count: 53678
+    - year: 2020
+      quarter: 3
+      count: 62501
+    - year: 2020
+      quarter: 4
+      count: 70722
+    - year: 2021
+      quarter: 1
+      count: 74063
+    - year: 2021
+      quarter: 2
+      count: 75240
+    - year: 2021
+      quarter: 3
+      count: 78678
+    - year: 2021
+      quarter: 4
+      count: 82771
+    - year: 2022
+      quarter: 1
+      count: 87675
+    - year: 2022
+      quarter: 2
+      count: 92419
+    - year: 2022
+      quarter: 3
+      count: 97806
+    - year: 2022
+      quarter: 4
+      count: 103504
+    - year: 2023
+      quarter: 1
+      count: 110984
+    - year: 2023
+      quarter: 2
+      count: 117984
+    - year: 2023
+      quarter: 3
+      count: 126024
+    - year: 2023
+      quarter: 4
+      count: 132700
+    - year: 2024
+      quarter: 1
+      count: 141212
+    - year: 2024
+      quarter: 2
+      count: 144771
+    - year: 2024
+      quarter: 3
+      count: 146205
+    - year: 2024
+      quarter: 4
+      count: 147800
+data:
+  labels:
+    - MM-07
+    - MM-02
+    - MM-14
+    - MM-11
+    - MM-12
+    - MM-13
+    - MM-03
+    - MM-04
+    - MM-15
+    - MM-18
+    - MM-16
+    - MM-01
+    - MM-17
+    - MM-05
+    - MM-06

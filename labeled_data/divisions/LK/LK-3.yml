@@ -1,0 +1,39 @@
+name: Southern Province
+type: Division-1
+meta:
+  alpha2: LK-3
+  includes:
+    - ampāntōṭṭai
+    - lk-33
+    - '33'
+    - ampāntōṭṭai district
+    - dakuṇu paḷāta
+    - lk-3
+    - '3'
+    - dakuṇu paḷāta province
+    - galle
+    - lk-31
+    - '31'
+    - galle district
+    - gālla
+    - gālla district
+    - hambantota
+    - hambantota district
+    - hambantŏṭa
+    - hambantŏṭa district
+    - kāli
+    - kāli district
+    - matara
+    - lk-32
+    - '32'
+    - matara district
+    - mātara
+    - mātara district
+    - māttaṛai
+    - māttaṛai district
+    - southern province
+    - southern province province
+    - tĕṉ mākāṇam
+    - tĕṉ mākāṇam province
+    - southern
+  category: PROVINCE

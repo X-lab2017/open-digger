@@ -1,0 +1,13 @@
+name: Sud-Est
+type: Division-1
+meta:
+  alpha2: HT-SE
+  includes:
+    - sidès
+    - ht-se
+    - se
+    - sidès department
+    - sud-est
+    - sud-est department
+    - département du sud-est
+  category: DEPARTMENT

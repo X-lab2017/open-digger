@@ -1,0 +1,11 @@
+name: Kiambu
+type: Division-1
+meta:
+  alpha2: KE-13
+  includes:
+    - kiambu
+    - ke-13
+    - '13'
+    - kiambu county
+    - eastern
+  category: COUNTY

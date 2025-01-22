@@ -1,0 +1,10 @@
+name: Gafsa
+type: Division-1
+meta:
+  alpha2: TN-71
+  includes:
+    - gafsa
+    - tn-71
+    - '71'
+    - gafsa governorate
+  category: GOVERNORATE

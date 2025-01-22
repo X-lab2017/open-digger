@@ -1,0 +1,10 @@
+name: Grenadines
+type: Division-1
+meta:
+  alpha2: VC-06
+  includes:
+    - grenadines
+    - vc-06
+    - '06'
+    - grenadines parish
+  category: PARISH

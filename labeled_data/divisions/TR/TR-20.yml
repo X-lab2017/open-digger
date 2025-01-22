@@ -1,0 +1,10 @@
+name: Denizli
+type: Division-1
+meta:
+  alpha2: TR-20
+  includes:
+    - denizli
+    - tr-20
+    - '20'
+    - denizli province
+  category: PROVINCE

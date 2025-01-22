@@ -1,0 +1,10 @@
+name: Savanes
+type: Division-1
+meta:
+  alpha2: TG-S
+  includes:
+    - savanes
+    - tg-s
+    - s
+    - savanes region
+  category: REGION

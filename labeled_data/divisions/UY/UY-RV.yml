@@ -1,0 +1,11 @@
+name: Rivera
+type: Division-1
+meta:
+  alpha2: UY-RV
+  includes:
+    - rivera
+    - uy-rv
+    - rv
+    - rivera department
+    - departamento de rivera
+  category: DEPARTMENT

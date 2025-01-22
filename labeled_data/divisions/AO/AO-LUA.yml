@@ -1,0 +1,10 @@
+name: Luanda
+type: Division-1
+meta:
+  alpha2: AO-LUA
+  includes:
+    - luanda
+    - ao-lua
+    - lua
+    - luanda province
+  category: PROVINCE

@@ -1,0 +1,12 @@
+name: O Kap
+type: Division-1
+meta:
+  alpha2: SC-04
+  includes:
+    - au cap
+    - sc-04
+    - '04'
+    - au cap district
+    - o kap
+    - o kap district
+  category: DISTRICT

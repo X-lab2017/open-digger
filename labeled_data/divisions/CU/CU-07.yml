@@ -1,0 +1,11 @@
+name: Sancti Spíritus
+type: Division-1
+meta:
+  alpha2: CU-07
+  includes:
+    - sancti spíritus
+    - cu-07
+    - '07'
+    - sancti spíritus province
+    - sancti spiritus
+  category: PROVINCE

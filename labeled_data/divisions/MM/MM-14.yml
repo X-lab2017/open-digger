@@ -1,0 +1,10 @@
+name: Chin
+type: Division-1
+meta:
+  alpha2: MM-14
+  includes:
+    - chin
+    - mm-14
+    - '14'
+    - chin state
+  category: STATE

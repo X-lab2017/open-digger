@@ -1,0 +1,12 @@
+name: Smiltenes novads
+type: Division-1
+meta:
+  alpha2: LV-094
+  includes:
+    - smiltenes novads
+    - lv-094
+    - '094'
+    - smiltenes novads municipality
+    - smiltene
+    - smiltene municipality
+  category: MUNICIPALITY

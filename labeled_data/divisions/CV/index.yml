@@ -1,0 +1,78 @@
+name: Cabo Verde
+type: Division-0
+meta:
+  alpha2: CV
+  includes:
+    - Cabo Verde
+    - CV
+    - '132'
+    - the Republic of Cape Verde
+    - 佛得角
+    - Cape Verde
+  name_full: the Republic of Cape Verde
+  name_zh: 佛得角
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 1511
+    - year: 2020
+      quarter: 2
+      count: 1670
+    - year: 2020
+      quarter: 3
+      count: 1821
+    - year: 2020
+      quarter: 4
+      count: 1932
+    - year: 2021
+      quarter: 1
+      count: 2108
+    - year: 2021
+      quarter: 2
+      count: 2256
+    - year: 2021
+      quarter: 3
+      count: 2354
+    - year: 2021
+      quarter: 4
+      count: 2513
+    - year: 2022
+      quarter: 1
+      count: 2665
+    - year: 2022
+      quarter: 2
+      count: 2844
+    - year: 2022
+      quarter: 3
+      count: 2989
+    - year: 2022
+      quarter: 4
+      count: 3199
+    - year: 2023
+      quarter: 1
+      count: 3393
+    - year: 2023
+      quarter: 2
+      count: 3580
+    - year: 2023
+      quarter: 3
+      count: 3751
+    - year: 2023
+      quarter: 4
+      count: 3956
+    - year: 2024
+      quarter: 1
+      count: 5548
+    - year: 2024
+      quarter: 2
+      count: 6058
+    - year: 2024
+      quarter: 3
+      count: 5837
+    - year: 2024
+      quarter: 4
+      count: 5358
+data:
+  labels:
+    - CV-B
+    - CV-S

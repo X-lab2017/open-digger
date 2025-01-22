@@ -1,0 +1,10 @@
+name: Murska Sobota
+type: Division-1
+meta:
+  alpha2: SI-080
+  includes:
+    - murska sobota
+    - si-080
+    - '080'
+    - murska sobota urban municipality
+  category: URBAN MUNICIPALITY

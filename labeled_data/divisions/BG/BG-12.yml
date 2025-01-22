@@ -1,0 +1,11 @@
+name: Montana
+type: Division-1
+meta:
+  alpha2: BG-12
+  includes:
+    - montana
+    - bg-12
+    - '12'
+    - montana district
+    - montana province
+  category: DISTRICT

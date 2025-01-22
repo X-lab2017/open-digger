@@ -1,0 +1,10 @@
+name: Schaan
+type: Division-1
+meta:
+  alpha2: LI-07
+  includes:
+    - schaan
+    - li-07
+    - '07'
+    - schaan commune
+  category: COMMUNE

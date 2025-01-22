@@ -1,0 +1,39 @@
+name: Höfuðborgarsvæði
+type: Division-1
+meta:
+  alpha2: IS-1
+  includes:
+    - garðabær
+    - is-gar
+    - gar
+    - garðabær municipality
+    - hafnarfjarðarkaupstaður
+    - is-haf
+    - haf
+    - hafnarfjarðarkaupstaður municipality
+    - höfuðborgarsvæði
+    - is-1
+    - '1'
+    - höfuðborgarsvæði region
+    - kjósarhreppur
+    - is-kjo
+    - kjo
+    - kjósarhreppur municipality
+    - kópavogsbær
+    - is-kop
+    - kop
+    - kópavogsbær municipality
+    - mosfellsbær
+    - is-mos
+    - mos
+    - mosfellsbær municipality
+    - reykjavíkurborg
+    - is-rkv
+    - rkv
+    - reykjavíkurborg municipality
+    - seltjarnarnesbær
+    - is-sel
+    - sel
+    - seltjarnarnesbær municipality
+    - capital region
+  category: REGION

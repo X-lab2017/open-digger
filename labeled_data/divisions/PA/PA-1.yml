@@ -1,0 +1,10 @@
+name: Bocas del Toro
+type: Division-1
+meta:
+  alpha2: PA-1
+  includes:
+    - bocas del toro
+    - pa-1
+    - '1'
+    - bocas del toro province
+  category: PROVINCE

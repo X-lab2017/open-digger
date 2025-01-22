@@ -1,0 +1,10 @@
+name: Vuzenica
+type: Division-1
+meta:
+  alpha2: SI-141
+  includes:
+    - vuzenica
+    - si-141
+    - '141'
+    - vuzenica municipality
+  category: MUNICIPALITY

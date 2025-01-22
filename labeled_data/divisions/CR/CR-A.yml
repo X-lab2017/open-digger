@@ -1,0 +1,12 @@
+name: Alajuela
+type: Division-1
+meta:
+  alpha2: CR-A
+  includes:
+    - alajuela
+    - cr-a
+    - a
+    - alajuela province
+    - provincia de alajuela
+    - al
+  category: PROVINCE

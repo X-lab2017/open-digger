@@ -1,0 +1,82 @@
+name: Pakistan
+type: Division-0
+meta:
+  alpha2: PK
+  includes:
+    - Pakistan
+    - PK
+    - '586'
+    - the Islamic Republic of Pakistan
+    - 巴基斯坦
+  name_full: the Islamic Republic of Pakistan
+  name_zh: 巴基斯坦
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 317224
+    - year: 2020
+      quarter: 2
+      count: 354073
+    - year: 2020
+      quarter: 3
+      count: 388897
+    - year: 2020
+      quarter: 4
+      count: 428915
+    - year: 2021
+      quarter: 1
+      count: 470394
+    - year: 2021
+      quarter: 2
+      count: 510612
+    - year: 2021
+      quarter: 3
+      count: 553975
+    - year: 2021
+      quarter: 4
+      count: 600696
+    - year: 2022
+      quarter: 1
+      count: 656514
+    - year: 2022
+      quarter: 2
+      count: 708296
+    - year: 2022
+      quarter: 3
+      count: 775221
+    - year: 2022
+      quarter: 4
+      count: 844030
+    - year: 2023
+      quarter: 1
+      count: 924871
+    - year: 2023
+      quarter: 2
+      count: 1004140
+    - year: 2023
+      quarter: 3
+      count: 1105725
+    - year: 2023
+      quarter: 4
+      count: 1192511
+    - year: 2024
+      quarter: 1
+      count: 1303816
+    - year: 2024
+      quarter: 2
+      count: 1382291
+    - year: 2024
+      quarter: 3
+      count: 1476999
+    - year: 2024
+      quarter: 4
+      count: 1586524
+data:
+  labels:
+    - PK-JK
+    - PK-BA
+    - PK-GB
+    - PK-IS
+    - PK-KP
+    - PK-PB
+    - PK-SD

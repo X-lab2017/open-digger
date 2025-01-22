@@ -1,0 +1,10 @@
+name: Magway
+type: Division-1
+meta:
+  alpha2: MM-03
+  includes:
+    - magway
+    - mm-03
+    - '03'
+    - magway region
+  category: REGION

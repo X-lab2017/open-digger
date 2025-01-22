@@ -1,0 +1,80 @@
+name: Saint Vincent and the Grenadines
+type: Division-0
+meta:
+  alpha2: VC
+  includes:
+    - Saint Vincent and the Grenadines
+    - VC
+    - '670'
+    - 圣文森特和格林纳丁斯
+  name_full: Saint Vincent and the Grenadines
+  name_zh: 圣文森特和格林纳丁斯
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 431
+    - year: 2020
+      quarter: 2
+      count: 518
+    - year: 2020
+      quarter: 3
+      count: 569
+    - year: 2020
+      quarter: 4
+      count: 613
+    - year: 2021
+      quarter: 1
+      count: 665
+    - year: 2021
+      quarter: 2
+      count: 715
+    - year: 2021
+      quarter: 3
+      count: 745
+    - year: 2021
+      quarter: 4
+      count: 781
+    - year: 2022
+      quarter: 1
+      count: 833
+    - year: 2022
+      quarter: 2
+      count: 877
+    - year: 2022
+      quarter: 3
+      count: 950
+    - year: 2022
+      quarter: 4
+      count: 1006
+    - year: 2023
+      quarter: 1
+      count: 1075
+    - year: 2023
+      quarter: 2
+      count: 1133
+    - year: 2023
+      quarter: 3
+      count: 1218
+    - year: 2023
+      quarter: 4
+      count: 1260
+    - year: 2024
+      quarter: 1
+      count: 1298
+    - year: 2024
+      quarter: 2
+      count: 1358
+    - year: 2024
+      quarter: 3
+      count: 1402
+    - year: 2024
+      quarter: 4
+      count: 1453
+data:
+  labels:
+    - VC-01
+    - VC-06
+    - VC-02
+    - VC-03
+    - VC-04
+    - VC-05

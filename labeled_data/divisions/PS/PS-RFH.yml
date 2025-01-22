@@ -1,0 +1,12 @@
+name: Rafaḩ
+type: Division-1
+meta:
+  alpha2: PS-RFH
+  includes:
+    - rafah
+    - ps-rfh
+    - rfh
+    - rafah governorate
+    - rafaḩ
+    - rafaḩ governorate
+  category: GOVERNORATE

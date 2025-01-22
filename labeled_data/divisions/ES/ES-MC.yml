@@ -1,0 +1,15 @@
+name: Murcia
+type: Division-1
+meta:
+  alpha2: ES-MC
+  includes:
+    - murcia
+    - es-mu
+    - mu
+    - murcia province
+    - es-mc
+    - mc
+    - murcia autonomous community
+    - región de murcia
+    - region of murcia
+  category: AUTONOMOUS COMMUNITY

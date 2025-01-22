@@ -1,0 +1,10 @@
+name: Uthai Thani
+type: Division-1
+meta:
+  alpha2: TH-61
+  includes:
+    - uthai thani
+    - th-61
+    - '61'
+    - uthai thani province
+  category: PROVINCE

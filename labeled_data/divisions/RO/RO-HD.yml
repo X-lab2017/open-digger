@@ -1,0 +1,11 @@
+name: Hunedoara
+type: Division-1
+meta:
+  alpha2: RO-HD
+  includes:
+    - hunedoara
+    - ro-hd
+    - hd
+    - hunedoara department
+    - județul hunedoara
+  category: DEPARTMENT

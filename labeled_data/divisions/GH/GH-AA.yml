@@ -1,0 +1,10 @@
+name: Greater Accra
+type: Division-1
+meta:
+  alpha2: GH-AA
+  includes:
+    - greater accra
+    - gh-aa
+    - aa
+    - greater accra region
+  category: REGION

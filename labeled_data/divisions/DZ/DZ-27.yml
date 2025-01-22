@@ -1,0 +1,10 @@
+name: Mostaganem
+type: Division-1
+meta:
+  alpha2: DZ-27
+  includes:
+    - mostaganem
+    - dz-27
+    - '27'
+    - mostaganem province
+  category: PROVINCE

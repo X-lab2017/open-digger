@@ -1,0 +1,10 @@
+name: Găgăuzia
+type: Division-1
+meta:
+  alpha2: MD-GA
+  includes:
+    - găgăuzia
+    - md-ga
+    - ga
+    - găgăuzia autonomous territorial unit
+  category: AUTONOMOUS TERRITORIAL UNIT

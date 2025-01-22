@@ -1,0 +1,10 @@
+name: Makamba
+type: Division-1
+meta:
+  alpha2: BI-MA
+  includes:
+    - makamba
+    - bi-ma
+    - ma
+    - makamba province
+  category: PROVINCE

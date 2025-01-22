@@ -1,0 +1,10 @@
+name: Siyəzən
+type: Division-1
+meta:
+  alpha2: AZ-SIY
+  includes:
+    - siyəzən
+    - az-siy
+    - siy
+    - siyəzən rayon
+  category: RAYON

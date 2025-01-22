@@ -1,0 +1,10 @@
+name: El Oued
+type: Division-1
+meta:
+  alpha2: DZ-39
+  includes:
+    - el oued
+    - dz-39
+    - '39'
+    - el oued province
+  category: PROVINCE

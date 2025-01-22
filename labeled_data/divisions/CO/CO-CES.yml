@@ -1,0 +1,10 @@
+name: Cesar
+type: Division-1
+meta:
+  alpha2: CO-CES
+  includes:
+    - cesar
+    - co-ces
+    - ces
+    - cesar department
+  category: DEPARTMENT

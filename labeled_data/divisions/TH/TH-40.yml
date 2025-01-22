@@ -1,0 +1,11 @@
+name: Khon Kaen
+type: Division-1
+meta:
+  alpha2: TH-40
+  includes:
+    - khon kaen
+    - th-40
+    - '40'
+    - khon kaen province
+    - chang wat khon kaen
+  category: PROVINCE

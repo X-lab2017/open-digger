@@ -1,0 +1,10 @@
+name: Yozgat
+type: Division-1
+meta:
+  alpha2: TR-66
+  includes:
+    - yozgat
+    - tr-66
+    - '66'
+    - yozgat province
+  category: PROVINCE

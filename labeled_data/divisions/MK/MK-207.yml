@@ -1,0 +1,10 @@
+name: Makedonska Kamenica
+type: Division-1
+meta:
+  alpha2: MK-207
+  includes:
+    - makedonska kamenica
+    - mk-207
+    - '207'
+    - makedonska kamenica municipality
+  category: MUNICIPALITY

@@ -1,0 +1,10 @@
+name: Jiwaka
+type: Division-1
+meta:
+  alpha2: PG-JWK
+  includes:
+    - jiwaka
+    - pg-jwk
+    - jwk
+    - jiwaka province
+  category: PROVINCE

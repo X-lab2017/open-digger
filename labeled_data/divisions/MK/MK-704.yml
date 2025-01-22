@@ -1,0 +1,10 @@
+name: Lipkovo
+type: Division-1
+meta:
+  alpha2: MK-704
+  includes:
+    - lipkovo
+    - mk-704
+    - '704'
+    - lipkovo municipality
+  category: MUNICIPALITY

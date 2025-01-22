@@ -1,0 +1,10 @@
+name: Uvs
+type: Division-1
+meta:
+  alpha2: MN-046
+  includes:
+    - uvs
+    - mn-046
+    - '046'
+    - uvs province
+  category: PROVINCE

@@ -1,0 +1,13 @@
+name: Sumska oblast
+type: Division-1
+meta:
+  alpha2: UA-59
+  includes:
+    - sumska oblast
+    - ua-59
+    - '59'
+    - sumska oblast region
+    - sumy oblast
+    - sums'ka oblast
+    - sumy
+  category: REGION

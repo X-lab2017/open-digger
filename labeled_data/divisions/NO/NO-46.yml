@@ -1,0 +1,11 @@
+name: Vestland
+type: Division-1
+meta:
+  alpha2: NO-46
+  includes:
+    - vestland
+    - no-46
+    - '46'
+    - vestland county
+    - hordaland
+  category: COUNTY

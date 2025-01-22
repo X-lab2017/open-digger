@@ -1,0 +1,10 @@
+name: Ptuj
+type: Division-1
+meta:
+  alpha2: SI-096
+  includes:
+    - ptuj
+    - si-096
+    - '096'
+    - ptuj urban municipality
+  category: URBAN MUNICIPALITY

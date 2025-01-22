@@ -1,0 +1,10 @@
+name: Nanumaga
+type: Division-1
+meta:
+  alpha2: TV-NMG
+  includes:
+    - nanumaga
+    - tv-nmg
+    - nmg
+    - nanumaga island council
+  category: ISLAND COUNCIL

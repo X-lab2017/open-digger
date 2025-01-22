@@ -1,0 +1,14 @@
+name: Kurskaya oblast'
+type: Division-1
+meta:
+  alpha2: RU-KRS
+  includes:
+    - kurskaja oblast'
+    - ru-krs
+    - krs
+    - kurskaja oblast' administrative region
+    - kurskaya oblast'
+    - kurskaya oblast' administrative region
+    - kursk oblast
+    - kursk
+  category: ADMINISTRATIVE REGION

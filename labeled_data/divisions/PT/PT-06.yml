@@ -1,0 +1,10 @@
+name: Coimbra
+type: Division-1
+meta:
+  alpha2: PT-06
+  includes:
+    - coimbra
+    - pt-06
+    - '06'
+    - coimbra district
+  category: DISTRICT

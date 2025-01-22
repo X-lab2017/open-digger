@@ -1,0 +1,10 @@
+name: Kidričevo
+type: Division-1
+meta:
+  alpha2: SI-045
+  includes:
+    - kidričevo
+    - si-045
+    - '045'
+    - kidričevo municipality
+  category: MUNICIPALITY

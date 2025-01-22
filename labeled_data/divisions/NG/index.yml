@@ -1,0 +1,112 @@
+name: Nigeria
+type: Division-0
+meta:
+  alpha2: NG
+  includes:
+    - Nigeria
+    - NG
+    - '566'
+    - the Federal Republic of Nigeria
+    - 尼日利亚
+  name_full: the Federal Republic of Nigeria
+  name_zh: 尼日利亚
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 173641
+    - year: 2020
+      quarter: 2
+      count: 203064
+    - year: 2020
+      quarter: 3
+      count: 232444
+    - year: 2020
+      quarter: 4
+      count: 255132
+    - year: 2021
+      quarter: 1
+      count: 287828
+    - year: 2021
+      quarter: 2
+      count: 322655
+    - year: 2021
+      quarter: 3
+      count: 354801
+    - year: 2021
+      quarter: 4
+      count: 395367
+    - year: 2022
+      quarter: 1
+      count: 453264
+    - year: 2022
+      quarter: 2
+      count: 520136
+    - year: 2022
+      quarter: 3
+      count: 598921
+    - year: 2022
+      quarter: 4
+      count: 663996
+    - year: 2023
+      quarter: 1
+      count: 730873
+    - year: 2023
+      quarter: 2
+      count: 796375
+    - year: 2023
+      quarter: 3
+      count: 872162
+    - year: 2023
+      quarter: 4
+      count: 924403
+    - year: 2024
+      quarter: 1
+      count: 995455
+    - year: 2024
+      quarter: 2
+      count: 1053896
+    - year: 2024
+      quarter: 3
+      count: 1120266
+    - year: 2024
+      quarter: 4
+      count: 1199622
+data:
+  labels:
+    - NG-AB
+    - NG-FC
+    - NG-AD
+    - NG-AK
+    - NG-AN
+    - NG-BA
+    - NG-BY
+    - NG-BE
+    - NG-BO
+    - NG-CR
+    - NG-DE
+    - NG-EB
+    - NG-ED
+    - NG-EK
+    - NG-EN
+    - NG-GO
+    - NG-IM
+    - NG-JI
+    - NG-KD
+    - NG-KN
+    - NG-KT
+    - NG-KE
+    - NG-KO
+    - NG-KW
+    - NG-LA
+    - NG-NA
+    - NG-NI
+    - NG-OG
+    - NG-ON
+    - NG-OS
+    - NG-OY
+    - NG-PL
+    - NG-RI
+    - NG-SO
+    - NG-TA
+    - NG-YO
+    - NG-ZA

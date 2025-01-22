@@ -1,0 +1,10 @@
+name: Abia
+type: Division-1
+meta:
+  alpha2: NG-AB
+  includes:
+    - abia
+    - ng-ab
+    - ab
+    - abia state
+  category: STATE

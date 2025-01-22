@@ -1,0 +1,10 @@
+name: Şəmkir
+type: Division-1
+meta:
+  alpha2: AZ-SKR
+  includes:
+    - şəmkir
+    - az-skr
+    - skr
+    - şəmkir rayon
+  category: RAYON

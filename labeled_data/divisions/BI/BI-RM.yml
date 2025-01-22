@@ -1,0 +1,10 @@
+name: Rumonge
+type: Division-1
+meta:
+  alpha2: BI-RM
+  includes:
+    - rumonge
+    - bi-rm
+    - rm
+    - rumonge province
+  category: PROVINCE

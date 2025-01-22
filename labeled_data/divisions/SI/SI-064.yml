@@ -1,0 +1,10 @@
+name: Logatec
+type: Division-1
+meta:
+  alpha2: SI-064
+  includes:
+    - logatec
+    - si-064
+    - '064'
+    - logatec municipality
+  category: MUNICIPALITY

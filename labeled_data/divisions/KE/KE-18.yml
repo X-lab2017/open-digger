@@ -1,0 +1,10 @@
+name: Kitui
+type: Division-1
+meta:
+  alpha2: KE-18
+  includes:
+    - kitui
+    - ke-18
+    - '18'
+    - kitui county
+  category: COUNTY

@@ -1,0 +1,11 @@
+name: Düzce
+type: Division-1
+meta:
+  alpha2: TR-81
+  includes:
+    - düzce
+    - tr-81
+    - '81'
+    - düzce province
+    - duzce
+  category: PROVINCE

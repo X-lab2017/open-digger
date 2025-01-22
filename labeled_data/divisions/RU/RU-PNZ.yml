@@ -1,0 +1,14 @@
+name: Penzenskaya oblast'
+type: Division-1
+meta:
+  alpha2: RU-PNZ
+  includes:
+    - penzenskaja oblast'
+    - ru-pnz
+    - pnz
+    - penzenskaja oblast' administrative region
+    - penzenskaya oblast'
+    - penzenskaya oblast' administrative region
+    - penza oblast
+    - penza
+  category: ADMINISTRATIVE REGION

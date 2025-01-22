@@ -1,0 +1,10 @@
+name: Antalya
+type: Division-1
+meta:
+  alpha2: TR-07
+  includes:
+    - antalya
+    - tr-07
+    - '07'
+    - antalya province
+  category: PROVINCE

@@ -1,0 +1,10 @@
+name: Kostel
+type: Division-1
+meta:
+  alpha2: SI-165
+  includes:
+    - kostel
+    - si-165
+    - '165'
+    - kostel municipality
+  category: MUNICIPALITY

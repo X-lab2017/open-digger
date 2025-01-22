@@ -1,0 +1,10 @@
+name: Osun
+type: Division-1
+meta:
+  alpha2: NG-OS
+  includes:
+    - osun
+    - ng-os
+    - os
+    - osun state
+  category: STATE

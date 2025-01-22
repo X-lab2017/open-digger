@@ -1,0 +1,10 @@
+name: Tovuz
+type: Division-1
+meta:
+  alpha2: AZ-TOV
+  includes:
+    - tovuz
+    - az-tov
+    - tov
+    - tovuz rayon
+  category: RAYON

@@ -1,0 +1,11 @@
+name: El Beni
+type: Division-1
+meta:
+  alpha2: BO-B
+  includes:
+    - el beni
+    - bo-b
+    - b
+    - el beni department
+    - beni department
+  category: DEPARTMENT

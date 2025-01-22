@@ -1,0 +1,10 @@
+name: Jonglei
+type: Division-1
+meta:
+  alpha2: SS-JG
+  includes:
+    - jonglei
+    - ss-jg
+    - jg
+    - jonglei state
+  category: STATE

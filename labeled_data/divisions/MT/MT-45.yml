@@ -1,0 +1,12 @@
+name: Rabat Gozo
+type: Division-1
+meta:
+  alpha2: MT-45
+  includes:
+    - rabat gozo
+    - mt-45
+    - '45'
+    - rabat gozo local council
+    - rabat għawdex
+    - rabat għawdex local council
+  category: LOCAL COUNCIL

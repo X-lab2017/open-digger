@@ -1,0 +1,13 @@
+name: Cantabria
+type: Division-1
+meta:
+  alpha2: ES-CB
+  includes:
+    - cantabria
+    - es-cb
+    - cb
+    - cantabria autonomous community
+    - es-s
+    - s
+    - cantabria province
+  category: AUTONOMOUS COMMUNITY

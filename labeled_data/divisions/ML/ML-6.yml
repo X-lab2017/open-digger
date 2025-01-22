@@ -1,0 +1,10 @@
+name: Tombouctou
+type: Division-1
+meta:
+  alpha2: ML-6
+  includes:
+    - tombouctou
+    - ml-6
+    - '6'
+    - tombouctou region
+  category: REGION

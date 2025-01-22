@@ -1,0 +1,10 @@
+name: Tennessee
+type: Division-1
+meta:
+  alpha2: US-TN
+  includes:
+    - tennessee
+    - us-tn
+    - tn
+    - tennessee state
+  category: STATE

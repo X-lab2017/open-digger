@@ -1,0 +1,12 @@
+name: Hukuoka
+type: Division-1
+meta:
+  alpha2: JP-40
+  includes:
+    - fukuoka
+    - jp-40
+    - '40'
+    - fukuoka prefecture
+    - hukuoka
+    - hukuoka prefecture
+  category: PREFECTURE

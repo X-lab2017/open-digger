@@ -1,0 +1,86 @@
+name: Georgia
+type: Division-0
+meta:
+  alpha2: GE
+  includes:
+    - Georgia
+    - GE
+    - '268'
+    - 格鲁吉亚
+  name_full: Georgia
+  name_zh: 格鲁吉亚
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 29777
+    - year: 2020
+      quarter: 2
+      count: 33381
+    - year: 2020
+      quarter: 3
+      count: 36217
+    - year: 2020
+      quarter: 4
+      count: 39813
+    - year: 2021
+      quarter: 1
+      count: 43214
+    - year: 2021
+      quarter: 2
+      count: 46342
+    - year: 2021
+      quarter: 3
+      count: 49759
+    - year: 2021
+      quarter: 4
+      count: 53984
+    - year: 2022
+      quarter: 1
+      count: 59732
+    - year: 2022
+      quarter: 2
+      count: 73610
+    - year: 2022
+      quarter: 3
+      count: 79896
+    - year: 2022
+      quarter: 4
+      count: 92758
+    - year: 2023
+      quarter: 1
+      count: 103337
+    - year: 2023
+      quarter: 2
+      count: 110827
+    - year: 2023
+      quarter: 3
+      count: 116440
+    - year: 2023
+      quarter: 4
+      count: 122527
+    - year: 2024
+      quarter: 1
+      count: 129930
+    - year: 2024
+      quarter: 2
+      count: 135694
+    - year: 2024
+      quarter: 3
+      count: 140644
+    - year: 2024
+      quarter: 4
+      count: 147127
+data:
+  labels:
+    - GE-AB
+    - GE-AJ
+    - GE-GU
+    - GE-IM
+    - GE-KA
+    - GE-KK
+    - GE-MM
+    - GE-RL
+    - GE-SZ
+    - GE-SJ
+    - GE-SK
+    - GE-TB

@@ -1,0 +1,10 @@
+name: Choluteca
+type: Division-1
+meta:
+  alpha2: HN-CH
+  includes:
+    - choluteca
+    - hn-ch
+    - ch
+    - choluteca department
+  category: DEPARTMENT

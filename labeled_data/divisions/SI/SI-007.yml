@@ -1,0 +1,10 @@
+name: Brda
+type: Division-1
+meta:
+  alpha2: SI-007
+  includes:
+    - brda
+    - si-007
+    - '007'
+    - brda municipality
+  category: MUNICIPALITY

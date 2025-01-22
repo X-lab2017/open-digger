@@ -1,0 +1,10 @@
+name: La Condamine
+type: Division-1
+meta:
+  alpha2: MC-CO
+  includes:
+    - la condamine
+    - mc-co
+    - co
+    - la condamine quarter
+  category: QUARTER

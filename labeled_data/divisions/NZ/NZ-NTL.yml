@@ -1,0 +1,13 @@
+name: Northland
+type: Division-1
+meta:
+  alpha2: NZ-NTL
+  includes:
+    - northland
+    - nz-ntl
+    - ntl
+    - northland region
+    - te taitokerau
+    - te taitokerau region
+    - north island
+  category: REGION

@@ -1,0 +1,13 @@
+name: Far North
+type: Division-1
+meta:
+  alpha2: CM-EN
+  includes:
+    - extrême-nord
+    - cm-en
+    - en
+    - extrême-nord region
+    - far north
+    - far north region
+    - far-north
+  category: REGION

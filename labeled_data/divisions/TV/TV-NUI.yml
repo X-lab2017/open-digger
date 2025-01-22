@@ -1,0 +1,9 @@
+name: Nui
+type: Division-1
+meta:
+  alpha2: TV-NUI
+  includes:
+    - nui
+    - tv-nui
+    - nui island council
+  category: ISLAND COUNCIL

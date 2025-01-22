@@ -1,0 +1,10 @@
+name: Kalkara
+type: Division-1
+meta:
+  alpha2: MT-21
+  includes:
+    - kalkara
+    - mt-21
+    - '21'
+    - kalkara local council
+  category: LOCAL COUNCIL

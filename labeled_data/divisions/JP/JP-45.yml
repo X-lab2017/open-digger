@@ -1,0 +1,11 @@
+name: Miyazaki
+type: Division-1
+meta:
+  alpha2: JP-45
+  includes:
+    - miyazaki
+    - jp-45
+    - '45'
+    - miyazaki prefecture
+    - 宮崎県
+  category: PREFECTURE

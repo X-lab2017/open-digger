@@ -1,0 +1,10 @@
+name: Sint Eustatius
+type: Division-1
+meta:
+  alpha2: BQ-SE
+  includes:
+    - sint eustatius
+    - bq-se
+    - se
+    - sint eustatius special municipality
+  category: SPECIAL MUNICIPALITY

@@ -1,0 +1,11 @@
+name: Bình Định
+type: Division-1
+meta:
+  alpha2: VN-31
+  includes:
+    - bình định
+    - vn-31
+    - '31'
+    - bình định province
+    - binh dinh
+  category: PROVINCE

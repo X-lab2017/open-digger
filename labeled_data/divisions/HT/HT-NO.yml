@@ -1,0 +1,12 @@
+name: Nord-Ouest
+type: Division-1
+meta:
+  alpha2: HT-NO
+  includes:
+    - nord-ouest
+    - ht-no
+    - 'no'
+    - nord-ouest department
+    - nòdwès
+    - nòdwès department
+  category: DEPARTMENT

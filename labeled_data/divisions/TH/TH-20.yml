@@ -1,0 +1,12 @@
+name: Chon Buri
+type: Division-1
+meta:
+  alpha2: TH-20
+  includes:
+    - chon buri
+    - th-20
+    - '20'
+    - chon buri province
+    - ชลบุรี
+    - chang wat chon buri
+  category: PROVINCE

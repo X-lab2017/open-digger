@@ -1,0 +1,11 @@
+name: Cà Mau
+type: Division-1
+meta:
+  alpha2: VN-59
+  includes:
+    - cà mau
+    - vn-59
+    - '59'
+    - cà mau province
+    - ca mau
+  category: PROVINCE

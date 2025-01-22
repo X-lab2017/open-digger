@@ -1,0 +1,12 @@
+name: Botha-Bothe
+type: Division-1
+meta:
+  alpha2: LS-B
+  includes:
+    - botha-bothe
+    - ls-b
+    - b
+    - botha-bothe district
+    - butha-buthe
+    - butha-buthe district
+  category: DISTRICT

@@ -1,0 +1,10 @@
+name: Loška dolina
+type: Division-1
+meta:
+  alpha2: SI-065
+  includes:
+    - loška dolina
+    - si-065
+    - '065'
+    - loška dolina municipality
+  category: MUNICIPALITY

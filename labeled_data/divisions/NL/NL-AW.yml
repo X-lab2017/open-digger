@@ -1,0 +1,10 @@
+name: Aruba
+type: Division-1
+meta:
+  alpha2: NL-AW
+  includes:
+    - aruba
+    - nl-aw
+    - aw
+    - aruba country
+  category: COUNTRY

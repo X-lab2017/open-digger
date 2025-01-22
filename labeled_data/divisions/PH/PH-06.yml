@@ -1,0 +1,44 @@
+name: Western Visayas
+type: Division-1
+meta:
+  alpha2: PH-06
+  includes:
+    - aklan
+    - ph-akl
+    - akl
+    - aklan province
+    - antike
+    - ph-ant
+    - ant
+    - antike province
+    - antique
+    - antique province
+    - capiz
+    - ph-cap
+    - cap
+    - capiz province
+    - gimaras
+    - ph-gui
+    - gui
+    - gimaras province
+    - guimaras
+    - guimaras province
+    - iloilo
+    - ph-ili
+    - ili
+    - iloilo province
+    - kanlurang negros
+    - ph-nec
+    - nec
+    - kanlurang negros province
+    - kapis
+    - kapis province
+    - negros occidental
+    - negros occidental province
+    - rehiyon ng kanlurang bisaya
+    - ph-06
+    - '06'
+    - rehiyon ng kanlurang bisaya region
+    - western visayas
+    - western visayas region
+  category: REGION

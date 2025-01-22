@@ -1,0 +1,11 @@
+name: Cần Thơ
+type: Division-1
+meta:
+  alpha2: VN-CT
+  includes:
+    - cần thơ
+    - vn-ct
+    - ct
+    - cần thơ municipality
+    - can tho
+  category: MUNICIPALITY

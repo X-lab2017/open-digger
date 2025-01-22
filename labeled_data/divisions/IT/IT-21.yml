@@ -1,0 +1,44 @@
+name: Piemonte
+type: Division-1
+meta:
+  alpha2: IT-21
+  includes:
+    - alessandria
+    - it-al
+    - al
+    - alessandria province
+    - asti
+    - it-at
+    - at
+    - asti province
+    - biella
+    - it-bi
+    - bi
+    - biella province
+    - cuneo
+    - it-cn
+    - cn
+    - cuneo province
+    - novara
+    - it-no
+    - 'no'
+    - novara province
+    - piemonte
+    - it-21
+    - '21'
+    - piemonte region
+    - torino
+    - it-to
+    - to
+    - torino metropolitan city
+    - verbano-cusio-ossola
+    - it-vb
+    - vb
+    - verbano-cusio-ossola province
+    - vercelli
+    - it-vc
+    - vc
+    - vercelli province
+    - piem.
+    - piedmont
+  category: REGION

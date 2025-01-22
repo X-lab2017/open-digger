@@ -1,0 +1,11 @@
+name: North East
+type: Division-1
+meta:
+  alpha2: BW-NE
+  includes:
+    - north east
+    - bw-ne
+    - ne
+    - north east district
+    - north-east district
+  category: DISTRICT

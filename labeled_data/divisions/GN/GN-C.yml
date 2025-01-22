@@ -1,0 +1,11 @@
+name: Conakry
+type: Division-1
+meta:
+  alpha2: GN-C
+  includes:
+    - conakry
+    - gn-c
+    - c
+    - conakry governorate
+    - conakry region
+  category: GOVERNORATE

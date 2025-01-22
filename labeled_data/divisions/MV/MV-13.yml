@@ -1,0 +1,14 @@
+name: North Maalhosmadulu
+type: Division-1
+meta:
+  alpha2: MV-13
+  includes:
+    - maalhosmadulu uthuruburi
+    - mv-13
+    - '13'
+    - maalhosmadulu uthuruburi administrative atoll
+    - raa
+    - raa administrative atoll
+    - north maalhosmadulu
+    - north maalhosmadulu administrative atoll
+  category: ADMINISTRATIVE ATOLL

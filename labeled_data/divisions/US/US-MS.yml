@@ -1,0 +1,10 @@
+name: Mississippi
+type: Division-1
+meta:
+  alpha2: US-MS
+  includes:
+    - mississippi
+    - us-ms
+    - ms
+    - mississippi state
+  category: STATE

@@ -1,0 +1,84 @@
+name: Sri Lanka
+type: Division-0
+meta:
+  alpha2: LK
+  includes:
+    - Sri Lanka
+    - LK
+    - '144'
+    - the Democratic Socialist Republic of Sri Lanka
+    - 斯里兰卡
+  name_full: the Democratic Socialist Republic of Sri Lanka
+  name_zh: 斯里兰卡
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 84292
+    - year: 2020
+      quarter: 2
+      count: 95516
+    - year: 2020
+      quarter: 3
+      count: 104093
+    - year: 2020
+      quarter: 4
+      count: 115313
+    - year: 2021
+      quarter: 1
+      count: 124223
+    - year: 2021
+      quarter: 2
+      count: 135679
+    - year: 2021
+      quarter: 3
+      count: 154117
+    - year: 2021
+      quarter: 4
+      count: 166992
+    - year: 2022
+      quarter: 1
+      count: 181002
+    - year: 2022
+      quarter: 2
+      count: 192232
+    - year: 2022
+      quarter: 3
+      count: 206980
+    - year: 2022
+      quarter: 4
+      count: 223564
+    - year: 2023
+      quarter: 1
+      count: 243299
+    - year: 2023
+      quarter: 2
+      count: 262954
+    - year: 2023
+      quarter: 3
+      count: 282588
+    - year: 2023
+      quarter: 4
+      count: 301030
+    - year: 2024
+      quarter: 1
+      count: 323028
+    - year: 2024
+      quarter: 2
+      count: 340783
+    - year: 2024
+      quarter: 3
+      count: 362247
+    - year: 2024
+      quarter: 4
+      count: 384783
+data:
+  labels:
+    - LK-5
+    - LK-3
+    - LK-7
+    - LK-8
+    - LK-1
+    - LK-2
+    - LK-9
+    - LK-4
+    - LK-6

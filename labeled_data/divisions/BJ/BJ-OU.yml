@@ -1,0 +1,10 @@
+name: Ouémé
+type: Division-1
+meta:
+  alpha2: BJ-OU
+  includes:
+    - ouémé
+    - bj-ou
+    - ou
+    - ouémé department
+  category: DEPARTMENT

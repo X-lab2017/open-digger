@@ -1,0 +1,10 @@
+name: Haut-Lomami
+type: Division-1
+meta:
+  alpha2: CD-HL
+  includes:
+    - haut-lomami
+    - cd-hl
+    - hl
+    - haut-lomami province
+  category: PROVINCE

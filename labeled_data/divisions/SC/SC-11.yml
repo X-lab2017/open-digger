@@ -1,0 +1,12 @@
+name: Kaskad
+type: Division-1
+meta:
+  alpha2: SC-11
+  includes:
+    - cascade
+    - sc-11
+    - '11'
+    - cascade district
+    - kaskad
+    - kaskad district
+  category: DISTRICT

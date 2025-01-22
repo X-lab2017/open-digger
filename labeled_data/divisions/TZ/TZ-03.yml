@@ -1,0 +1,11 @@
+name: Dodoma
+type: Division-1
+meta:
+  alpha2: TZ-03
+  includes:
+    - dodoma
+    - tz-03
+    - '03'
+    - dodoma region
+    - mkoa wa dodoma
+  category: REGION

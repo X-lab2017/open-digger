@@ -1,0 +1,12 @@
+name: Fuvammulah
+type: Division-1
+meta:
+  alpha2: MV-29
+  includes:
+    - fuvammulah
+    - mv-29
+    - '29'
+    - fuvammulah administrative atoll
+    - gnaviyani
+    - gnaviyani administrative atoll
+  category: ADMINISTRATIVE ATOLL

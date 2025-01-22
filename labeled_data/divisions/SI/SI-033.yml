@@ -1,0 +1,10 @@
+name: Šalovci
+type: Division-1
+meta:
+  alpha2: SI-033
+  includes:
+    - šalovci
+    - si-033
+    - '033'
+    - šalovci municipality
+  category: MUNICIPALITY

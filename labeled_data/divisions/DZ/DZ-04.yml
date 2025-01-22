@@ -1,0 +1,10 @@
+name: Oum el Bouaghi
+type: Division-1
+meta:
+  alpha2: DZ-04
+  includes:
+    - oum el bouaghi
+    - dz-04
+    - '04'
+    - oum el bouaghi province
+  category: PROVINCE

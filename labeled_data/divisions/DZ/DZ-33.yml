@@ -1,0 +1,10 @@
+name: Illizi
+type: Division-1
+meta:
+  alpha2: DZ-33
+  includes:
+    - illizi
+    - dz-33
+    - '33'
+    - illizi province
+  category: PROVINCE

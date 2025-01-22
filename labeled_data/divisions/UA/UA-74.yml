@@ -1,0 +1,12 @@
+name: Chernihivska oblast
+type: Division-1
+meta:
+  alpha2: UA-74
+  includes:
+    - chernihivska oblast
+    - ua-74
+    - '74'
+    - chernihivska oblast region
+    - chernihiv oblast
+    - chernihiv
+  category: REGION

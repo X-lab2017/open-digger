@@ -1,0 +1,13 @@
+name: ‘Adan
+type: Division-1
+meta:
+  alpha2: YE-AD
+  includes:
+    - ‘adan
+    - ye-ad
+    - ad
+    - ‘adan governorate
+    - aden governorate
+    - adan governorate
+    - '''adan governorate'
+  category: GOVERNORATE

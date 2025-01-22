@@ -1,0 +1,12 @@
+name: Río San Juan
+type: Division-1
+meta:
+  alpha2: NI-SJ
+  includes:
+    - río san juan
+    - ni-sj
+    - sj
+    - río san juan department
+    - rio san juan
+    - rs
+  category: DEPARTMENT

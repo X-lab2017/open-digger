@@ -1,0 +1,10 @@
+name: Palauli
+type: Division-1
+meta:
+  alpha2: WS-PA
+  includes:
+    - palauli
+    - ws-pa
+    - pa
+    - palauli district
+  category: DISTRICT

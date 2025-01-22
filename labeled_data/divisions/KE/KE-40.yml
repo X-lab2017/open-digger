@@ -1,0 +1,10 @@
+name: Tana River
+type: Division-1
+meta:
+  alpha2: KE-40
+  includes:
+    - tana river
+    - ke-40
+    - '40'
+    - tana river county
+  category: COUNTY

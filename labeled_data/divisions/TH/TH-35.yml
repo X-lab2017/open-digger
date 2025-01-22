@@ -1,0 +1,10 @@
+name: Yasothon
+type: Division-1
+meta:
+  alpha2: TH-35
+  includes:
+    - yasothon
+    - th-35
+    - '35'
+    - yasothon province
+  category: PROVINCE

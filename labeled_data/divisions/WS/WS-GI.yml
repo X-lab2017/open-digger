@@ -1,0 +1,10 @@
+name: Gagaifomauga
+type: Division-1
+meta:
+  alpha2: WS-GI
+  includes:
+    - gagaifomauga
+    - ws-gi
+    - gi
+    - gagaifomauga district
+  category: DISTRICT

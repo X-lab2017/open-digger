@@ -1,0 +1,13 @@
+name: Heilongjiang Sheng
+type: Division-1
+meta:
+  alpha2: CN-HL
+  includes:
+    - heilongjiang sheng
+    - cn-hl
+    - hl
+    - heilongjiang sheng province
+    - hei long jiang sheng
+    - heilongjiang
+    - 黑龙江省
+  category: PROVINCE

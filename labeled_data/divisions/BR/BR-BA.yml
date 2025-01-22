@@ -1,0 +1,11 @@
+name: Bahia
+type: Division-1
+meta:
+  alpha2: BR-BA
+  includes:
+    - bahia
+    - br-ba
+    - ba
+    - bahia state
+    - state of bahia
+  category: STATE

@@ -1,0 +1,15 @@
+name: Arkhangel'skaya oblast'
+type: Division-1
+meta:
+  alpha2: RU-ARK
+  includes:
+    - arhangel'skaja oblast'
+    - ru-ark
+    - ark
+    - arhangel'skaja oblast' administrative region
+    - arkhangel'skaya oblast'
+    - arkhangel'skaya oblast' administrative region
+    - arkhangelsk oblast
+    - arkhangel'sk
+    - arkhangel’sk
+  category: ADMINISTRATIVE REGION

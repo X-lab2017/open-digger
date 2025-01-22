@@ -1,0 +1,24 @@
+name: Trentino-Südtirol
+type: Division-1
+meta:
+  alpha2: IT-32
+  includes:
+    - bolzano
+    - it-bz
+    - bz
+    - bolzano autonomous province
+    - bozen
+    - bozen autonomous province
+    - trentino-alto adige
+    - it-32
+    - '32'
+    - trentino-alto adige autonomous region
+    - trentino-südtirol
+    - trentino-südtirol autonomous region
+    - trento
+    - it-tn
+    - tn
+    - trento autonomous province
+    - trentino-south tyrol
+    - tr.a.a.
+  category: AUTONOMOUS REGION

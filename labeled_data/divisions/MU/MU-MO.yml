@@ -1,0 +1,10 @@
+name: Moka
+type: Division-1
+meta:
+  alpha2: MU-MO
+  includes:
+    - moka
+    - mu-mo
+    - mo
+    - moka district
+  category: DISTRICT

@@ -1,0 +1,12 @@
+name: Požeško-slavonska županija
+type: Division-1
+meta:
+  alpha2: HR-11
+  includes:
+    - požeško-slavonska županija
+    - hr-11
+    - '11'
+    - požeško-slavonska županija county
+    - požega-slavonia
+    - požega-slavonia county
+  category: COUNTY

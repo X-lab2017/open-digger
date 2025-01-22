@@ -1,0 +1,13 @@
+name: Magadanskaya oblast'
+type: Division-1
+meta:
+  alpha2: RU-MAG
+  includes:
+    - magadanskaja oblast'
+    - ru-mag
+    - mag
+    - magadanskaja oblast' administrative region
+    - magadanskaya oblast'
+    - magadanskaya oblast' administrative region
+    - magadan oblast
+  category: ADMINISTRATIVE REGION

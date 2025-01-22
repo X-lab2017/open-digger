@@ -1,0 +1,10 @@
+name: Zhemgang
+type: Division-1
+meta:
+  alpha2: BT-34
+  includes:
+    - zhemgang
+    - bt-34
+    - '34'
+    - zhemgang district
+  category: DISTRICT

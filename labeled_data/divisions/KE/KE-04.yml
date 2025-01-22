@@ -1,0 +1,10 @@
+name: Busia
+type: Division-1
+meta:
+  alpha2: KE-04
+  includes:
+    - busia
+    - ke-04
+    - '04'
+    - busia county
+  category: COUNTY

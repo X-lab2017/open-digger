@@ -1,0 +1,10 @@
+name: Renče-Vogrsko
+type: Division-1
+meta:
+  alpha2: SI-201
+  includes:
+    - renče-vogrsko
+    - si-201
+    - '201'
+    - renče-vogrsko municipality
+  category: MUNICIPALITY

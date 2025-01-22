@@ -1,0 +1,10 @@
+name: Ialoveni
+type: Division-1
+meta:
+  alpha2: MD-IA
+  includes:
+    - ialoveni
+    - md-ia
+    - ia
+    - ialoveni district
+  category: DISTRICT

@@ -1,0 +1,10 @@
+name: Phetchabun
+type: Division-1
+meta:
+  alpha2: TH-67
+  includes:
+    - phetchabun
+    - th-67
+    - '67'
+    - phetchabun province
+  category: PROVINCE

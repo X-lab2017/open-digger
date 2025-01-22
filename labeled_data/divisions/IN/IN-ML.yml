@@ -1,0 +1,10 @@
+name: Meghālaya
+type: Division-1
+meta:
+  alpha2: IN-ML
+  includes:
+    - meghālaya
+    - in-ml
+    - ml
+    - meghālaya state
+  category: STATE

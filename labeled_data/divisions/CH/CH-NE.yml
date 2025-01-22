@@ -1,0 +1,10 @@
+name: Neuchâtel
+type: Division-1
+meta:
+  alpha2: CH-NE
+  includes:
+    - neuchâtel
+    - ch-ne
+    - ne
+    - neuchâtel canton
+  category: CANTON

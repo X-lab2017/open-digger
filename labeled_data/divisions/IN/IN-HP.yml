@@ -1,0 +1,10 @@
+name: Himāchal Pradesh
+type: Division-1
+meta:
+  alpha2: IN-HP
+  includes:
+    - himāchal pradesh
+    - in-hp
+    - hp
+    - himāchal pradesh state
+  category: STATE

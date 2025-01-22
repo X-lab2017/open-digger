@@ -1,0 +1,13 @@
+name: Liquiça
+type: Division-1
+meta:
+  alpha2: TL-LI
+  includes:
+    - likisá
+    - tl-li
+    - li
+    - likisá municipality
+    - liquiça
+    - liquiça municipality
+    - liquica
+  category: MUNICIPALITY

@@ -1,0 +1,13 @@
+name: Pemba North
+type: Division-1
+meta:
+  alpha2: TZ-06
+  includes:
+    - kaskazini pemba
+    - tz-06
+    - '06'
+    - kaskazini pemba region
+    - pemba north
+    - pemba north region
+    - unguja south region
+  category: REGION

@@ -1,0 +1,11 @@
+name: Żabbar
+type: Division-1
+meta:
+  alpha2: MT-64
+  includes:
+    - żabbar
+    - mt-64
+    - '64'
+    - żabbar local council
+    - zabbar
+  category: LOCAL COUNCIL

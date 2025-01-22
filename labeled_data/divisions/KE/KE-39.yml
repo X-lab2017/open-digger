@@ -1,0 +1,11 @@
+name: Taita/Taveta
+type: Division-1
+meta:
+  alpha2: KE-39
+  includes:
+    - taita/taveta
+    - ke-39
+    - '39'
+    - taita/taveta county
+    - taita-taveta county
+  category: COUNTY

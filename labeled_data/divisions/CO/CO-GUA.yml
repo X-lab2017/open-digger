@@ -1,0 +1,11 @@
+name: Guainía
+type: Division-1
+meta:
+  alpha2: CO-GUA
+  includes:
+    - guainía
+    - co-gua
+    - gua
+    - guainía department
+    - guainia
+  category: DEPARTMENT

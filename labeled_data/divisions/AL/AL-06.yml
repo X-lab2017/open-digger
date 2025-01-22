@@ -1,0 +1,10 @@
+name: Korçë
+type: Division-1
+meta:
+  alpha2: AL-06
+  includes:
+    - korçë
+    - al-06
+    - '06'
+    - korçë county
+  category: COUNTY

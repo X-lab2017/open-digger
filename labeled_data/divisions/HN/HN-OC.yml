@@ -1,0 +1,10 @@
+name: Ocotepeque
+type: Division-1
+meta:
+  alpha2: HN-OC
+  includes:
+    - ocotepeque
+    - hn-oc
+    - oc
+    - ocotepeque department
+  category: DEPARTMENT

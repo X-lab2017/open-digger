@@ -1,0 +1,10 @@
+name: Nīmrōz
+type: Division-1
+meta:
+  alpha2: AF-NIM
+  includes:
+    - nīmrōz
+    - af-nim
+    - nim
+    - nīmrōz province
+  category: PROVINCE

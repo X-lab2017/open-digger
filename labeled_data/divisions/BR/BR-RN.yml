@@ -1,0 +1,11 @@
+name: Rio Grande do Norte
+type: Division-1
+meta:
+  alpha2: BR-RN
+  includes:
+    - rio grande do norte
+    - br-rn
+    - rn
+    - rio grande do norte state
+    - state of rio grande do norte
+  category: STATE

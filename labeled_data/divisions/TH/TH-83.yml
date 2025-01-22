@@ -1,0 +1,11 @@
+name: Phuket
+type: Division-1
+meta:
+  alpha2: TH-83
+  includes:
+    - phuket
+    - th-83
+    - '83'
+    - phuket province
+    - chang wat phuket
+  category: PROVINCE

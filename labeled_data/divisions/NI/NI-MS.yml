@@ -1,0 +1,10 @@
+name: Masaya
+type: Division-1
+meta:
+  alpha2: NI-MS
+  includes:
+    - masaya
+    - ni-ms
+    - ms
+    - masaya department
+  category: DEPARTMENT

@@ -1,0 +1,11 @@
+name: Sédhiou
+type: Division-1
+meta:
+  alpha2: SN-SE
+  includes:
+    - sédhiou
+    - sn-se
+    - se
+    - sédhiou region
+    - région de sédhiou
+  category: REGION

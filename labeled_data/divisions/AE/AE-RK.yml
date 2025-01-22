@@ -1,0 +1,13 @@
+name: Ra’s al Khaymah
+type: Division-1
+meta:
+  alpha2: AE-RK
+  includes:
+    - ra’s al khaymah
+    - ae-rk
+    - rk
+    - ra’s al khaymah emirate
+    - ras al khaimah
+    - ras al khaimah emirate
+    - ras al-khaimah
+  category: EMIRATE

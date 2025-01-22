@@ -1,0 +1,10 @@
+name: Rankovce
+type: Division-1
+meta:
+  alpha2: MK-705
+  includes:
+    - rankovce
+    - mk-705
+    - '705'
+    - rankovce municipality
+  category: MUNICIPALITY

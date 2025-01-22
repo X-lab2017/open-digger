@@ -1,0 +1,12 @@
+name: Varaždinska županija
+type: Division-1
+meta:
+  alpha2: HR-05
+  includes:
+    - varaždinska županija
+    - hr-05
+    - '05'
+    - varaždinska županija county
+    - varaždin
+    - varaždin county
+  category: COUNTY

@@ -1,0 +1,11 @@
+name: Hormozgān
+type: Division-1
+meta:
+  alpha2: IR-22
+  includes:
+    - hormozgān
+    - ir-22
+    - '22'
+    - hormozgān province
+    - hormozgan province
+  category: PROVINCE

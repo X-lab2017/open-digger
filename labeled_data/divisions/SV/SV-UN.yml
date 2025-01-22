@@ -1,0 +1,10 @@
+name: La Unión
+type: Division-1
+meta:
+  alpha2: SV-UN
+  includes:
+    - la unión
+    - sv-un
+    - un
+    - la unión department
+  category: DEPARTMENT

@@ -1,0 +1,10 @@
+name: Woqooyi Galbeed
+type: Division-1
+meta:
+  alpha2: SO-WO
+  includes:
+    - woqooyi galbeed
+    - so-wo
+    - wo
+    - woqooyi galbeed region
+  category: REGION

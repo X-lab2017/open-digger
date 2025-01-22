@@ -1,0 +1,10 @@
+name: Ventspils
+type: Division-1
+meta:
+  alpha2: LV-VEN
+  includes:
+    - ventspils
+    - lv-ven
+    - ven
+    - ventspils state city
+  category: STATE CITY

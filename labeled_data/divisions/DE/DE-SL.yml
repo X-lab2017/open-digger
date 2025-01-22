@@ -1,0 +1,10 @@
+name: Saarland
+type: Division-1
+meta:
+  alpha2: DE-SL
+  includes:
+    - saarland
+    - de-sl
+    - sl
+    - saarland land
+  category: LAND

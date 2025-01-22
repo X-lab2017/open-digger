@@ -1,0 +1,10 @@
+name: Tambacounda
+type: Division-1
+meta:
+  alpha2: SN-TC
+  includes:
+    - tambacounda
+    - sn-tc
+    - tc
+    - tambacounda region
+  category: REGION

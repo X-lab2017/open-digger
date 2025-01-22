@@ -1,0 +1,10 @@
+name: Rennell and Bellona
+type: Division-1
+meta:
+  alpha2: SB-RB
+  includes:
+    - rennell and bellona
+    - sb-rb
+    - rb
+    - rennell and bellona province
+  category: PROVINCE

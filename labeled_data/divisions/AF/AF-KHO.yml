@@ -1,0 +1,11 @@
+name: Khōst
+type: Division-1
+meta:
+  alpha2: AF-KHO
+  includes:
+    - khōst
+    - af-kho
+    - kho
+    - khōst province
+    - khost
+  category: PROVINCE

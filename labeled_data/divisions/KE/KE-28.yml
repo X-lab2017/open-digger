@@ -1,0 +1,11 @@
+name: Mombasa
+type: Division-1
+meta:
+  alpha2: KE-28
+  includes:
+    - mombasa
+    - ke-28
+    - '28'
+    - mombasa county
+    - coast
+  category: COUNTY

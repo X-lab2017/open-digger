@@ -1,0 +1,10 @@
+name: Surat Thani
+type: Division-1
+meta:
+  alpha2: TH-84
+  includes:
+    - surat thani
+    - th-84
+    - '84'
+    - surat thani province
+  category: PROVINCE

@@ -1,0 +1,10 @@
+name: Ilinden
+type: Division-1
+meta:
+  alpha2: MK-807
+  includes:
+    - ilinden
+    - mk-807
+    - '807'
+    - ilinden municipality
+  category: MUNICIPALITY

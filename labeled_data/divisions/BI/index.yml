@@ -1,0 +1,93 @@
+name: Burundi
+type: Division-0
+meta:
+  alpha2: BI
+  includes:
+    - Burundi
+    - BI
+    - '108'
+    - the Republic of Burundi
+    - 布隆迪
+  name_full: the Republic of Burundi
+  name_zh: 布隆迪
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 1009
+    - year: 2020
+      quarter: 2
+      count: 1136
+    - year: 2020
+      quarter: 3
+      count: 1324
+    - year: 2020
+      quarter: 4
+      count: 1481
+    - year: 2021
+      quarter: 1
+      count: 1615
+    - year: 2021
+      quarter: 2
+      count: 1804
+    - year: 2021
+      quarter: 3
+      count: 1965
+    - year: 2021
+      quarter: 4
+      count: 2151
+    - year: 2022
+      quarter: 1
+      count: 2363
+    - year: 2022
+      quarter: 2
+      count: 2614
+    - year: 2022
+      quarter: 3
+      count: 2845
+    - year: 2022
+      quarter: 4
+      count: 3066
+    - year: 2023
+      quarter: 1
+      count: 3326
+    - year: 2023
+      quarter: 2
+      count: 3572
+    - year: 2023
+      quarter: 3
+      count: 3858
+    - year: 2023
+      quarter: 4
+      count: 4119
+    - year: 2024
+      quarter: 1
+      count: 4465
+    - year: 2024
+      quarter: 2
+      count: 4823
+    - year: 2024
+      quarter: 3
+      count: 5273
+    - year: 2024
+      quarter: 4
+      count: 5680
+data:
+  labels:
+    - BI-BB
+    - BI-BM
+    - BI-BL
+    - BI-BR
+    - BI-CA
+    - BI-CI
+    - BI-GI
+    - BI-KR
+    - BI-KY
+    - BI-KI
+    - BI-MA
+    - BI-MU
+    - BI-MY
+    - BI-MW
+    - BI-NG
+    - BI-RM
+    - BI-RT
+    - BI-RY

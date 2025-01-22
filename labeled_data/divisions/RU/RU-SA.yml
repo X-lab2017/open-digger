@@ -1,0 +1,17 @@
+name: Sakha
+type: Division-1
+meta:
+  alpha2: RU-SA
+  includes:
+    - saha
+    - ru-sa
+    - sa
+    - saha republic
+    - jakutija
+    - jakutija republic
+    - sakha
+    - sakha republic
+    - yakutiya
+    - yakutiya republic
+    - respublika sakha (yakutiya)
+  category: REPUBLIC

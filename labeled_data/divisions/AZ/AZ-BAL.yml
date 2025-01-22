@@ -1,0 +1,10 @@
+name: Balakən
+type: Division-1
+meta:
+  alpha2: AZ-BAL
+  includes:
+    - balakən
+    - az-bal
+    - bal
+    - balakən rayon
+  category: RAYON

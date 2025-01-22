@@ -1,0 +1,10 @@
+name: Ağdaş
+type: Division-1
+meta:
+  alpha2: AZ-AGS
+  includes:
+    - ağdaş
+    - az-ags
+    - ags
+    - ağdaş rayon
+  category: RAYON

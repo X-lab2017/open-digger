@@ -6,12 +6,12 @@ import { getLabelData, getPlatformData } from "../labelDataUtils";
   console.log(`OpenDigger has ${labels.length} labels in total.`);
   console.log(`OpenDigger has ${labels.filter(l => l.type === 'Company').length} Company labels.`);
   console.log(`OpenDigger has ${labels.filter(l => l.type?.startsWith('Tech')).length} Tech labels.`);
-  console.log(`OpenDigger has ${labels.filter(l => l.type?.startsWith('Region')).length} Region labels.`);
+  console.log(`OpenDigger has ${labels.filter(l => l.type?.startsWith('Division')).length} Division labels.`);
   console.log(`OpenDigger has ${labels.filter(l => l.type === 'Project').length} Project labels.`);
 
   for (const l of labels) {
     if (['Company', 'University-0', 'Agency-0', 'Foundation'].includes(l.type)) {
-      if (!l.parents.some(p => p.startsWith(':regions'))) {
+      if (!l.parents.some(p => p.startsWith(':divisions'))) {
         console.log(l.name, l.identifier);
       }
     }

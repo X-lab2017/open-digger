@@ -1,0 +1,10 @@
+name: Rhode Island
+type: Division-1
+meta:
+  alpha2: US-RI
+  includes:
+    - rhode island
+    - us-ri
+    - ri
+    - rhode island state
+  category: STATE

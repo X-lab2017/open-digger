@@ -1,0 +1,13 @@
+name: Gansu Sheng
+type: Division-1
+meta:
+  alpha2: CN-GS
+  includes:
+    - gansu sheng
+    - cn-gs
+    - gs
+    - gansu sheng province
+    - gan su sheng
+    - gansu
+    - 甘肃省
+  category: PROVINCE

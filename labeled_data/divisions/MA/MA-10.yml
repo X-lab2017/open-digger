@@ -1,0 +1,26 @@
+name: Guelmim-Oued Noun
+type: Division-1
+meta:
+  alpha2: MA-10
+  includes:
+    - assa-zag
+    - ma-asz
+    - asz
+    - assa-zag province
+    - guelmim
+    - ma-gue
+    - gue
+    - guelmim province
+    - guelmim-oued noun
+    - ma-10
+    - '10'
+    - guelmim-oued noun region
+    - sidi ifni
+    - ma-sif
+    - sif
+    - sidi ifni province
+    - tan-tan
+    - ma-tnt
+    - tnt
+    - tan-tan province
+  category: REGION

@@ -1,0 +1,36 @@
+name: Moravskoslezský kraj
+type: Division-1
+meta:
+  alpha2: CZ-80
+  includes:
+    - bruntál
+    - cz-801
+    - '801'
+    - bruntál district
+    - frýdek-místek
+    - cz-802
+    - '802'
+    - frýdek-místek district
+    - karviná
+    - cz-803
+    - '803'
+    - karviná district
+    - moravskoslezský kraj
+    - cz-80
+    - '80'
+    - moravskoslezský kraj region
+    - nový jičín
+    - cz-804
+    - '804'
+    - nový jičín district
+    - opava
+    - cz-805
+    - '805'
+    - opava district
+    - ostrava-město
+    - cz-806
+    - '806'
+    - ostrava-město district
+    - moravian-silesian region
+    - moravia-silesia
+  category: REGION

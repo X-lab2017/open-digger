@@ -1,0 +1,12 @@
+name: Gedaref
+type: Division-1
+meta:
+  alpha2: SD-GD
+  includes:
+    - al qaḑārif
+    - sd-gd
+    - gd
+    - al qaḑārif state
+    - gedaref
+    - gedaref state
+  category: STATE

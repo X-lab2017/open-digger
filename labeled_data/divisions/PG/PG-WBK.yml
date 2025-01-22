@@ -1,0 +1,10 @@
+name: West New Britain
+type: Division-1
+meta:
+  alpha2: PG-WBK
+  includes:
+    - west new britain
+    - pg-wbk
+    - wbk
+    - west new britain province
+  category: PROVINCE

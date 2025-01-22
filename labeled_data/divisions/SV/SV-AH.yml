@@ -1,0 +1,10 @@
+name: Ahuachapán
+type: Division-1
+meta:
+  alpha2: SV-AH
+  includes:
+    - ahuachapán
+    - sv-ah
+    - ah
+    - ahuachapán department
+  category: DEPARTMENT

@@ -1,0 +1,13 @@
+name: Manawatū-Whanganui
+type: Division-1
+meta:
+  alpha2: NZ-MWT
+  includes:
+    - manawatū whanganui
+    - nz-mwt
+    - mwt
+    - manawatū whanganui region
+    - manawatū-whanganui
+    - manawatū-whanganui region
+    - manawatu-wanganui
+  category: REGION

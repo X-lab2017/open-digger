@@ -1,0 +1,11 @@
+name: Lampang
+type: Division-1
+meta:
+  alpha2: TH-52
+  includes:
+    - lampang
+    - th-52
+    - '52'
+    - lampang province
+    - ลำปาง
+  category: PROVINCE

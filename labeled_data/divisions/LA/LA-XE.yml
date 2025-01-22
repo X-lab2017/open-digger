@@ -1,0 +1,13 @@
+name: Xékong
+type: Division-1
+meta:
+  alpha2: LA-XE
+  includes:
+    - xékong
+    - la-xe
+    - xe
+    - xékong province
+    - sekong
+    - sekong province
+    - xk
+  category: PROVINCE

@@ -1,0 +1,10 @@
+name: Samdrup Jongkhar
+type: Division-1
+meta:
+  alpha2: BT-45
+  includes:
+    - samdrup jongkhar
+    - bt-45
+    - '45'
+    - samdrup jongkhar district
+  category: DISTRICT

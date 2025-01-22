@@ -1,0 +1,10 @@
+name: Szombathely
+type: Division-1
+meta:
+  alpha2: HU-SH
+  includes:
+    - szombathely
+    - hu-sh
+    - sh
+    - szombathely city with county rights
+  category: CITY WITH COUNTY RIGHTS

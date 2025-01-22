@@ -1,0 +1,12 @@
+name: Thừa Thiên-Huế
+type: Division-1
+meta:
+  alpha2: VN-26
+  includes:
+    - thừa thiên-huế
+    - vn-26
+    - '26'
+    - thừa thiên-huế province
+    - thừa thiên huế
+    - thua thien hue
+  category: PROVINCE

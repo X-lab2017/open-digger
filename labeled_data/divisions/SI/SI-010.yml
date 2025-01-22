@@ -1,0 +1,10 @@
+name: Tišina
+type: Division-1
+meta:
+  alpha2: SI-010
+  includes:
+    - tišina
+    - si-010
+    - '010'
+    - tišina municipality
+  category: MUNICIPALITY

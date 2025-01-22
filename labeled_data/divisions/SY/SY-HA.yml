@@ -1,0 +1,12 @@
+name: Al Ḩasakah
+type: Division-1
+meta:
+  alpha2: SY-HA
+  includes:
+    - al ḩasakah
+    - sy-ha
+    - ha
+    - al ḩasakah province
+    - al-hasaka governorate
+    - al-hasakah governorate
+  category: PROVINCE

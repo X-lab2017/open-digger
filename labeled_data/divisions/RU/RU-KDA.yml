@@ -1,0 +1,14 @@
+name: Krasnodarskiy kray
+type: Division-1
+meta:
+  alpha2: RU-KDA
+  includes:
+    - krasnodarskij kraj
+    - ru-kda
+    - kda
+    - krasnodarskij kraj administrative territory
+    - krasnodarskiy kray
+    - krasnodarskiy kray administrative territory
+    - krasnodar krai
+    - krasnodar
+  category: ADMINISTRATIVE TERRITORY

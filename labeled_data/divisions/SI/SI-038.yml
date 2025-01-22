@@ -1,0 +1,10 @@
+name: Ilirska Bistrica
+type: Division-1
+meta:
+  alpha2: SI-038
+  includes:
+    - ilirska bistrica
+    - si-038
+    - '038'
+    - ilirska bistrica municipality
+  category: MUNICIPALITY

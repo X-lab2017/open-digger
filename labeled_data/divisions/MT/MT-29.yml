@@ -1,0 +1,10 @@
+name: Mdina
+type: Division-1
+meta:
+  alpha2: MT-29
+  includes:
+    - mdina
+    - mt-29
+    - '29'
+    - mdina local council
+  category: LOCAL COUNCIL

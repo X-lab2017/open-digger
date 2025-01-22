@@ -1,0 +1,10 @@
+name: Oplotnica
+type: Division-1
+meta:
+  alpha2: SI-171
+  includes:
+    - oplotnica
+    - si-171
+    - '171'
+    - oplotnica municipality
+  category: MUNICIPALITY

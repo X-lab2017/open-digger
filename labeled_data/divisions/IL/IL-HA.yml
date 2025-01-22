@@ -1,0 +1,16 @@
+name: Ḩayfā
+type: Division-1
+meta:
+  alpha2: IL-HA
+  includes:
+    - ẖefa
+    - il-ha
+    - ha
+    - ẖefa district
+    - haifa
+    - haifa district
+    - ḩayfā
+    - ḩayfā district
+    - ḥeifa
+    - ḥeifa district
+  category: DISTRICT

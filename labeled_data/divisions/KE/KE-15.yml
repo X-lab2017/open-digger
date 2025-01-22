@@ -1,0 +1,10 @@
+name: Kirinyaga
+type: Division-1
+meta:
+  alpha2: KE-15
+  includes:
+    - kirinyaga
+    - ke-15
+    - '15'
+    - kirinyaga county
+  category: COUNTY

@@ -1,0 +1,12 @@
+name: Yambol
+type: Division-1
+meta:
+  alpha2: BG-28
+  includes:
+    - yambol
+    - bg-28
+    - '28'
+    - yambol district
+    - yambol province
+    - jambol
+  category: DISTRICT

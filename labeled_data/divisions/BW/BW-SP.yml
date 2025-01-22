@@ -1,0 +1,10 @@
+name: Selibe Phikwe
+type: Division-1
+meta:
+  alpha2: BW-SP
+  includes:
+    - selibe phikwe
+    - bw-sp
+    - sp
+    - selibe phikwe town
+  category: TOWN

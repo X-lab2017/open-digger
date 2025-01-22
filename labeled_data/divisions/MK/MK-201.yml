@@ -1,0 +1,11 @@
+name: Berovo
+type: Division-1
+meta:
+  alpha2: MK-201
+  includes:
+    - berovo
+    - mk-201
+    - '201'
+    - berovo municipality
+    - municipality of berovo
+  category: MUNICIPALITY

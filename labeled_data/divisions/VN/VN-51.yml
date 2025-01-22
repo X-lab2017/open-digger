@@ -1,0 +1,11 @@
+name: Trà Vinh
+type: Division-1
+meta:
+  alpha2: VN-51
+  includes:
+    - trà vinh
+    - vn-51
+    - '51'
+    - trà vinh province
+    - tra vinh
+  category: PROVINCE

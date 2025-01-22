@@ -1,0 +1,11 @@
+name: Oran
+type: Division-1
+meta:
+  alpha2: DZ-31
+  includes:
+    - oran
+    - dz-31
+    - '31'
+    - oran province
+    - ولاية وهران
+  category: PROVINCE

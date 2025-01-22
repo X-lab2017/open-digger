@@ -1,0 +1,12 @@
+name: Batha
+type: Division-1
+meta:
+  alpha2: TD-BA
+  includes:
+    - al baţḩā’
+    - td-ba
+    - ba
+    - al baţḩā’ province
+    - batha
+    - batha province
+  category: PROVINCE

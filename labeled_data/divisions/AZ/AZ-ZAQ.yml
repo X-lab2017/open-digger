@@ -1,0 +1,10 @@
+name: Zaqatala
+type: Division-1
+meta:
+  alpha2: AZ-ZAQ
+  includes:
+    - zaqatala
+    - az-zaq
+    - zaq
+    - zaqatala rayon
+  category: RAYON

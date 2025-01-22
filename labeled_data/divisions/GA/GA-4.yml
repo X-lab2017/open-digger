@@ -1,0 +1,10 @@
+name: Ngounié
+type: Division-1
+meta:
+  alpha2: GA-4
+  includes:
+    - ngounié
+    - ga-4
+    - '4'
+    - ngounié province
+  category: PROVINCE

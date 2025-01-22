@@ -1,0 +1,11 @@
+name: Mellieħa
+type: Division-1
+meta:
+  alpha2: MT-30
+  includes:
+    - mellieħa
+    - mt-30
+    - '30'
+    - mellieħa local council
+    - mellieha
+  category: LOCAL COUNCIL

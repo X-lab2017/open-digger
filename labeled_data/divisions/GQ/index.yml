@@ -1,0 +1,77 @@
+name: Equatorial Guinea
+type: Division-0
+meta:
+  alpha2: GQ
+  includes:
+    - Equatorial Guinea
+    - GQ
+    - '226'
+    - the Republic of Equatorial Guinea
+    - 赤道几内亚
+  name_full: the Republic of Equatorial Guinea
+  name_zh: 赤道几内亚
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 231
+    - year: 2020
+      quarter: 2
+      count: 257
+    - year: 2020
+      quarter: 3
+      count: 293
+    - year: 2020
+      quarter: 4
+      count: 327
+    - year: 2021
+      quarter: 1
+      count: 364
+    - year: 2021
+      quarter: 2
+      count: 407
+    - year: 2021
+      quarter: 3
+      count: 445
+    - year: 2021
+      quarter: 4
+      count: 477
+    - year: 2022
+      quarter: 1
+      count: 498
+    - year: 2022
+      quarter: 2
+      count: 554
+    - year: 2022
+      quarter: 3
+      count: 589
+    - year: 2022
+      quarter: 4
+      count: 637
+    - year: 2023
+      quarter: 1
+      count: 693
+    - year: 2023
+      quarter: 2
+      count: 775
+    - year: 2023
+      quarter: 3
+      count: 841
+    - year: 2023
+      quarter: 4
+      count: 968
+    - year: 2024
+      quarter: 1
+      count: 1045
+    - year: 2024
+      quarter: 2
+      count: 1114
+    - year: 2024
+      quarter: 3
+      count: 1170
+    - year: 2024
+      quarter: 4
+      count: 1255
+data:
+  labels:
+    - GQ-I
+    - GQ-C

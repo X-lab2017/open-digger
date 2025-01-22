@@ -1,0 +1,11 @@
+name: Hà Nam
+type: Division-1
+meta:
+  alpha2: VN-63
+  includes:
+    - hà nam
+    - vn-63
+    - '63'
+    - hà nam province
+    - ha nam
+  category: PROVINCE

@@ -1,0 +1,10 @@
+name: Presidente Hayes
+type: Division-1
+meta:
+  alpha2: PY-15
+  includes:
+    - presidente hayes
+    - py-15
+    - '15'
+    - presidente hayes department
+  category: DEPARTMENT

@@ -1,0 +1,10 @@
+name: Tbilisi
+type: Division-1
+meta:
+  alpha2: GE-TB
+  includes:
+    - tbilisi
+    - ge-tb
+    - tb
+    - tbilisi city
+  category: CITY

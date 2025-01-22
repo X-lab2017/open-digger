@@ -1,0 +1,10 @@
+name: Log-Dragomer
+type: Division-1
+meta:
+  alpha2: SI-208
+  includes:
+    - log-dragomer
+    - si-208
+    - '208'
+    - log-dragomer municipality
+  category: MUNICIPALITY

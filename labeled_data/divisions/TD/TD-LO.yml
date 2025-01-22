@@ -1,0 +1,12 @@
+name: Lūghūn al Gharbī
+type: Division-1
+meta:
+  alpha2: TD-LO
+  includes:
+    - logone-occidental
+    - td-lo
+    - lo
+    - logone-occidental province
+    - lūghūn al gharbī
+    - lūghūn al gharbī province
+  category: PROVINCE

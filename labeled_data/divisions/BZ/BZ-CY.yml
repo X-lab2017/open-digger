@@ -1,0 +1,10 @@
+name: Cayo
+type: Division-1
+meta:
+  alpha2: BZ-CY
+  includes:
+    - cayo
+    - bz-cy
+    - cy
+    - cayo district
+  category: DISTRICT

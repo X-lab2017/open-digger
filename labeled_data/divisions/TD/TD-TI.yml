@@ -1,0 +1,12 @@
+name: Tibesti
+type: Division-1
+meta:
+  alpha2: TD-TI
+  includes:
+    - tibastī
+    - td-ti
+    - ti
+    - tibastī province
+    - tibesti
+    - tibesti province
+  category: PROVINCE

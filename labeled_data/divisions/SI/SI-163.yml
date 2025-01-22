@@ -1,0 +1,10 @@
+name: Jezersko
+type: Division-1
+meta:
+  alpha2: SI-163
+  includes:
+    - jezersko
+    - si-163
+    - '163'
+    - jezersko municipality
+  category: MUNICIPALITY

@@ -1,0 +1,10 @@
+name: Guelma
+type: Division-1
+meta:
+  alpha2: DZ-24
+  includes:
+    - guelma
+    - dz-24
+    - '24'
+    - guelma province
+  category: PROVINCE

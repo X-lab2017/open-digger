@@ -1,0 +1,12 @@
+name: Ma‘ān
+type: Division-1
+meta:
+  alpha2: JO-MN
+  includes:
+    - ma‘ān
+    - jo-mn
+    - mn
+    - ma‘ān governorate
+    - maan
+    - ma'an governorate
+  category: GOVERNORATE

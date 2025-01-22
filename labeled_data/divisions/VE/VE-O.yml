@@ -1,0 +1,11 @@
+name: Nueva Esparta
+type: Division-1
+meta:
+  alpha2: VE-O
+  includes:
+    - nueva esparta
+    - ve-o
+    - o
+    - nueva esparta state
+    - ne
+  category: STATE

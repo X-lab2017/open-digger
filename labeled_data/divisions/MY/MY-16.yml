@@ -1,0 +1,12 @@
+name: Wilayah Persekutuan Putrajaya
+type: Division-1
+meta:
+  alpha2: MY-16
+  includes:
+    - wilayah persekutuan putrajaya
+    - my-16
+    - '16'
+    - wilayah persekutuan putrajaya federal territory
+    - putrajaya
+    - putrajaya federal territory
+  category: FEDERAL TERRITORY

@@ -1,0 +1,10 @@
+name: Mé-Zóchi
+type: Division-1
+meta:
+  alpha2: ST-06
+  includes:
+    - mé-zóchi
+    - st-06
+    - '06'
+    - mé-zóchi district
+  category: DISTRICT

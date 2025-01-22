@@ -1,0 +1,10 @@
+name: Boaco
+type: Division-1
+meta:
+  alpha2: NI-BO
+  includes:
+    - boaco
+    - ni-bo
+    - bo
+    - boaco department
+  category: DEPARTMENT

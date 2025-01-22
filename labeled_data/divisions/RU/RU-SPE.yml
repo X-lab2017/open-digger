@@ -1,0 +1,14 @@
+name: Sankt-Peterburg
+type: Division-1
+meta:
+  alpha2: RU-SPE
+  includes:
+    - sankt-peterburg
+    - ru-spe
+    - spe
+    - sankt-peterburg autonomous city
+    - st petersburg city
+    - saint petersburg
+    - санкт-петербург
+    - st. petersburg city
+  category: AUTONOMOUS CITY

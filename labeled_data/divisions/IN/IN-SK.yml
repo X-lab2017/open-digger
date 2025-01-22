@@ -1,0 +1,10 @@
+name: Sikkim
+type: Division-1
+meta:
+  alpha2: IN-SK
+  includes:
+    - sikkim
+    - in-sk
+    - sk
+    - sikkim state
+  category: STATE

@@ -1,0 +1,94 @@
+name: Uruguay
+type: Division-0
+meta:
+  alpha2: UY
+  includes:
+    - Uruguay
+    - UY
+    - '858'
+    - the Eastern Republic of Uruguay
+    - 乌拉圭
+  name_full: the Eastern Republic of Uruguay
+  name_zh: 乌拉圭
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 35715
+    - year: 2020
+      quarter: 2
+      count: 39419
+    - year: 2020
+      quarter: 3
+      count: 43159
+    - year: 2020
+      quarter: 4
+      count: 45990
+    - year: 2021
+      quarter: 1
+      count: 49018
+    - year: 2021
+      quarter: 2
+      count: 52690
+    - year: 2021
+      quarter: 3
+      count: 56909
+    - year: 2021
+      quarter: 4
+      count: 59696
+    - year: 2022
+      quarter: 1
+      count: 63840
+    - year: 2022
+      quarter: 2
+      count: 68753
+    - year: 2022
+      quarter: 3
+      count: 73881
+    - year: 2022
+      quarter: 4
+      count: 77628
+    - year: 2023
+      quarter: 1
+      count: 81919
+    - year: 2023
+      quarter: 2
+      count: 87926
+    - year: 2023
+      quarter: 3
+      count: 93387
+    - year: 2023
+      quarter: 4
+      count: 97024
+    - year: 2024
+      quarter: 1
+      count: 101830
+    - year: 2024
+      quarter: 2
+      count: 107319
+    - year: 2024
+      quarter: 3
+      count: 112462
+    - year: 2024
+      quarter: 4
+      count: 117234
+data:
+  labels:
+    - UY-AR
+    - UY-CA
+    - UY-CL
+    - UY-CO
+    - UY-DU
+    - UY-FS
+    - UY-FD
+    - UY-LA
+    - UY-MA
+    - UY-MO
+    - UY-PA
+    - UY-RV
+    - UY-RO
+    - UY-RN
+    - UY-SA
+    - UY-SJ
+    - UY-SO
+    - UY-TA
+    - UY-TT

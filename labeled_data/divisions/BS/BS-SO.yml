@@ -1,0 +1,10 @@
+name: South Abaco
+type: Division-1
+meta:
+  alpha2: BS-SO
+  includes:
+    - south abaco
+    - bs-so
+    - so
+    - south abaco district
+  category: DISTRICT

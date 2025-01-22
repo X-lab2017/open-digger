@@ -1,0 +1,10 @@
+name: Guerrero
+type: Division-1
+meta:
+  alpha2: MX-GRO
+  includes:
+    - guerrero
+    - mx-gro
+    - gro
+    - guerrero state
+  category: STATE

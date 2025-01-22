@@ -1,0 +1,13 @@
+name: Cēsu novads
+type: Division-1
+meta:
+  alpha2: LV-022
+  includes:
+    - cēsu novads
+    - lv-022
+    - '022'
+    - cēsu novads municipality
+    - cēsis
+    - cēsis municipality
+    - cesis
+  category: MUNICIPALITY

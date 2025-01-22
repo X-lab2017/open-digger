@@ -1,0 +1,10 @@
+name: Bulawayo
+type: Division-1
+meta:
+  alpha2: ZW-BU
+  includes:
+    - bulawayo
+    - zw-bu
+    - bu
+    - bulawayo province
+  category: PROVINCE

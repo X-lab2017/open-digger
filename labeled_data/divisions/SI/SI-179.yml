@@ -1,0 +1,10 @@
+name: Sodražica
+type: Division-1
+meta:
+  alpha2: SI-179
+  includes:
+    - sodražica
+    - si-179
+    - '179'
+    - sodražica municipality
+  category: MUNICIPALITY

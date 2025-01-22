@@ -1,0 +1,10 @@
+name: Cross River
+type: Division-1
+meta:
+  alpha2: NG-CR
+  includes:
+    - cross river
+    - ng-cr
+    - cr
+    - cross river state
+  category: STATE

@@ -1,0 +1,10 @@
+name: Central
+type: Division-1
+meta:
+  alpha2: PG-CPM
+  includes:
+    - central
+    - pg-cpm
+    - cpm
+    - central province
+  category: PROVINCE

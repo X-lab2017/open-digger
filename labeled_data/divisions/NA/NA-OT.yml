@@ -1,0 +1,10 @@
+name: Oshikoto
+type: Division-1
+meta:
+  alpha2: NA-OT
+  includes:
+    - oshikoto
+    - na-ot
+    - ot
+    - oshikoto region
+  category: REGION

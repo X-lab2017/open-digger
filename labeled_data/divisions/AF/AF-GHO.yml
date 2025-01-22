@@ -1,0 +1,12 @@
+name: Ghōr
+type: Division-1
+meta:
+  alpha2: AF-GHO
+  includes:
+    - ghōr
+    - af-gho
+    - gho
+    - ghōr province
+    - ghor
+    - ghor province
+  category: PROVINCE

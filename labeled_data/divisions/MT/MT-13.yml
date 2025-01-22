@@ -1,0 +1,10 @@
+name: Għajnsielem
+type: Division-1
+meta:
+  alpha2: MT-13
+  includes:
+    - għajnsielem
+    - mt-13
+    - '13'
+    - għajnsielem local council
+  category: LOCAL COUNCIL

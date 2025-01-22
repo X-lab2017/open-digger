@@ -1,0 +1,10 @@
+name: Lənkəran
+type: Division-1
+meta:
+  alpha2: AZ-LAN
+  includes:
+    - lənkəran
+    - az-lan
+    - lan
+    - lənkəran rayon
+  category: RAYON

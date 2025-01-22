@@ -1,0 +1,10 @@
+name: Uttaradit
+type: Division-1
+meta:
+  alpha2: TH-53
+  includes:
+    - uttaradit
+    - th-53
+    - '53'
+    - uttaradit province
+  category: PROVINCE

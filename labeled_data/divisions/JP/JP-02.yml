@@ -1,0 +1,10 @@
+name: Aomori
+type: Division-1
+meta:
+  alpha2: JP-02
+  includes:
+    - aomori
+    - jp-02
+    - '02'
+    - aomori prefecture
+  category: PREFECTURE

@@ -1,0 +1,10 @@
+name: Cunene
+type: Division-1
+meta:
+  alpha2: AO-CNN
+  includes:
+    - cunene
+    - ao-cnn
+    - cnn
+    - cunene province
+  category: PROVINCE

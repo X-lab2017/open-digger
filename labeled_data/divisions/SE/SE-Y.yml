@@ -1,0 +1,11 @@
+name: Västernorrlands län
+type: Division-1
+meta:
+  alpha2: SE-Y
+  includes:
+    - västernorrlands län
+    - se-y
+    - 'y'
+    - västernorrlands län county
+    - västernorrland county
+  category: COUNTY

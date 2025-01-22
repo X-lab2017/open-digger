@@ -1,0 +1,10 @@
+name: Nyamira
+type: Division-1
+meta:
+  alpha2: KE-34
+  includes:
+    - nyamira
+    - ke-34
+    - '34'
+    - nyamira county
+  category: COUNTY

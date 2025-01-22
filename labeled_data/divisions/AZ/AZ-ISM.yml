@@ -1,0 +1,10 @@
+name: İsmayıllı
+type: Division-1
+meta:
+  alpha2: AZ-ISM
+  includes:
+    - i̇smayıllı
+    - az-ism
+    - ism
+    - i̇smayıllı rayon
+  category: RAYON

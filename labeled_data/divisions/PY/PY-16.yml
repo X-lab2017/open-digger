@@ -1,0 +1,10 @@
+name: Alto Paraguay
+type: Division-1
+meta:
+  alpha2: PY-16
+  includes:
+    - alto paraguay
+    - py-16
+    - '16'
+    - alto paraguay department
+  category: DEPARTMENT

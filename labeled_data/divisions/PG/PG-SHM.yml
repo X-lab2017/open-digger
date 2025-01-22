@@ -1,0 +1,10 @@
+name: Southern Highlands
+type: Division-1
+meta:
+  alpha2: PG-SHM
+  includes:
+    - southern highlands
+    - pg-shm
+    - shm
+    - southern highlands province
+  category: PROVINCE

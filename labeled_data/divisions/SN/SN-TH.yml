@@ -1,0 +1,11 @@
+name: Thiès
+type: Division-1
+meta:
+  alpha2: SN-TH
+  includes:
+    - thiès
+    - sn-th
+    - th
+    - thiès region
+    - région de thiès
+  category: REGION

@@ -1,0 +1,10 @@
+name: Soroca
+type: Division-1
+meta:
+  alpha2: MD-SO
+  includes:
+    - soroca
+    - md-so
+    - so
+    - soroca district
+  category: DISTRICT

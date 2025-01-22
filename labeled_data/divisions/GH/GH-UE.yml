@@ -1,0 +1,10 @@
+name: Upper East
+type: Division-1
+meta:
+  alpha2: GH-UE
+  includes:
+    - upper east
+    - gh-ue
+    - ue
+    - upper east region
+  category: REGION

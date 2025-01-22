@@ -1,0 +1,10 @@
+name: Ségou
+type: Division-1
+meta:
+  alpha2: ML-4
+  includes:
+    - ségou
+    - ml-4
+    - '4'
+    - ségou region
+  category: REGION

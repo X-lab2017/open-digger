@@ -1,0 +1,10 @@
+name: Queensland
+type: Division-1
+meta:
+  alpha2: AU-QLD
+  includes:
+    - queensland
+    - au-qld
+    - qld
+    - queensland state
+  category: STATE

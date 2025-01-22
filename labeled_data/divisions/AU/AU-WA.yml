@@ -1,0 +1,10 @@
+name: Western Australia
+type: Division-1
+meta:
+  alpha2: AU-WA
+  includes:
+    - western australia
+    - au-wa
+    - wa
+    - western australia state
+  category: STATE

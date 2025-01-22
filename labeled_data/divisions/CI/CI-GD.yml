@@ -1,0 +1,10 @@
+name: Gôh-Djiboua
+type: Division-1
+meta:
+  alpha2: CI-GD
+  includes:
+    - gôh-djiboua
+    - ci-gd
+    - gd
+    - gôh-djiboua district
+  category: DISTRICT

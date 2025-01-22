@@ -1,0 +1,10 @@
+name: İzmir
+type: Division-1
+meta:
+  alpha2: TR-35
+  includes:
+    - i̇zmir
+    - tr-35
+    - '35'
+    - i̇zmir province
+  category: PROVINCE

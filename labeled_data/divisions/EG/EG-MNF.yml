@@ -1,0 +1,12 @@
+name: Al Minūfīyah
+type: Division-1
+meta:
+  alpha2: EG-MNF
+  includes:
+    - al minūfīyah
+    - eg-mnf
+    - mnf
+    - al minūfīyah governorate
+    - menofia governorate
+    - al minufiyah
+  category: GOVERNORATE

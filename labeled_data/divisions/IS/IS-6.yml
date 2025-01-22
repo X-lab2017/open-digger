@@ -1,0 +1,55 @@
+name: Norðurland eystra
+type: Division-1
+meta:
+  alpha2: IS-6
+  includes:
+    - akureyrarbær
+    - is-aku
+    - aku
+    - akureyrarbær municipality
+    - dalvíkurbyggð
+    - is-dav
+    - dav
+    - dalvíkurbyggð municipality
+    - eyjafjarðarsveit
+    - is-eyf
+    - eyf
+    - eyjafjarðarsveit municipality
+    - fjallabyggð
+    - is-fjl
+    - fjl
+    - fjallabyggð municipality
+    - grýtubakkahreppur
+    - is-gry
+    - gry
+    - grýtubakkahreppur municipality
+    - hörgársveit
+    - is-hrg
+    - hrg
+    - hörgársveit municipality
+    - langanesbyggð
+    - is-lan
+    - lan
+    - langanesbyggð municipality
+    - norðurland eystra
+    - is-6
+    - '6'
+    - norðurland eystra region
+    - norðurþing
+    - is-nor
+    - nor
+    - norðurþing municipality
+    - svalbarðsstrandarhreppur
+    - is-sbt
+    - sbt
+    - svalbarðsstrandarhreppur municipality
+    - tjörneshreppur
+    - is-tjo
+    - tjo
+    - tjörneshreppur municipality
+    - þingeyjarsveit
+    - is-thg
+    - thg
+    - þingeyjarsveit municipality
+    - northeastern region
+  category: REGION

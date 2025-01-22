@@ -1,0 +1,10 @@
+name: Uíge
+type: Division-1
+meta:
+  alpha2: AO-UIG
+  includes:
+    - uíge
+    - ao-uig
+    - uig
+    - uíge province
+  category: PROVINCE

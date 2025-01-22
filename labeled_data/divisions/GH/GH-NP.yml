@@ -1,0 +1,10 @@
+name: Northern
+type: Division-1
+meta:
+  alpha2: GH-NP
+  includes:
+    - northern
+    - gh-np
+    - np
+    - northern region
+  category: REGION

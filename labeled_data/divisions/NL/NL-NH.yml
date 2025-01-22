@@ -1,0 +1,11 @@
+name: Noord-Holland
+type: Division-1
+meta:
+  alpha2: NL-NH
+  includes:
+    - noord-holland
+    - nl-nh
+    - nh
+    - noord-holland province
+    - north holland
+  category: PROVINCE

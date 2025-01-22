@@ -1,0 +1,107 @@
+name: Iran, Islamic Republic of
+type: Division-0
+meta:
+  alpha2: IR
+  includes:
+    - Iran, Islamic Republic of
+    - IR
+    - '364'
+    - the Islamic Republic of Iran
+    - 伊朗
+    - Iran
+  name_full: the Islamic Republic of Iran
+  name_zh: 伊朗
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 210145
+    - year: 2020
+      quarter: 2
+      count: 230216
+    - year: 2020
+      quarter: 3
+      count: 249142
+    - year: 2020
+      quarter: 4
+      count: 271203
+    - year: 2021
+      quarter: 1
+      count: 291772
+    - year: 2021
+      quarter: 2
+      count: 311413
+    - year: 2021
+      quarter: 3
+      count: 332689
+    - year: 2021
+      quarter: 4
+      count: 358613
+    - year: 2022
+      quarter: 1
+      count: 380170
+    - year: 2022
+      quarter: 2
+      count: 402480
+    - year: 2022
+      quarter: 3
+      count: 430640
+    - year: 2022
+      quarter: 4
+      count: 452334
+    - year: 2023
+      quarter: 1
+      count: 488928
+    - year: 2023
+      quarter: 2
+      count: 524447
+    - year: 2023
+      quarter: 3
+      count: 565825
+    - year: 2023
+      quarter: 4
+      count: 598531
+    - year: 2024
+      quarter: 1
+      count: 636347
+    - year: 2024
+      quarter: 2
+      count: 663945
+    - year: 2024
+      quarter: 3
+      count: 686606
+    - year: 2024
+      quarter: 4
+      count: 715452
+data:
+  labels:
+    - IR-30
+    - IR-24
+    - IR-18
+    - IR-14
+    - IR-10
+    - IR-07
+    - IR-27
+    - IR-01
+    - IR-13
+    - IR-22
+    - IR-08
+    - IR-05
+    - IR-29
+    - IR-09
+    - IR-28
+    - IR-06
+    - IR-17
+    - IR-12
+    - IR-15
+    - IR-00
+    - IR-02
+    - IR-26
+    - IR-25
+    - IR-20
+    - IR-11
+    - IR-23
+    - IR-21
+    - IR-19
+    - IR-04
+    - IR-03
+    - IR-16

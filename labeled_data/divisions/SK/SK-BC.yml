@@ -1,0 +1,12 @@
+name: Banskobystrický kraj
+type: Division-1
+meta:
+  alpha2: SK-BC
+  includes:
+    - banskobystrický kraj
+    - sk-bc
+    - bc
+    - banskobystrický kraj region
+    - banská bystrica region
+    - banska bystrica
+  category: REGION

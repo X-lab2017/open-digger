@@ -1,0 +1,18 @@
+name: Lumbini
+type: Division-1
+meta:
+  alpha2: NP-P5
+  includes:
+    - lumbini
+    - np-p5
+    - p5
+    - lumbini province
+    - province 5
+    - province 5 province
+    - lumbinī
+    - lumbinī province
+    - pradesh 5
+    - pradesh 5 province
+    - लुम्बिनी प्रदेश
+    - lumbiniī
+  category: PROVINCE

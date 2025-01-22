@@ -1,0 +1,12 @@
+name: Centre
+type: Division-1
+meta:
+  alpha2: HT-CE
+  includes:
+    - centre
+    - ht-ce
+    - ce
+    - centre department
+    - sant
+    - sant department
+  category: DEPARTMENT

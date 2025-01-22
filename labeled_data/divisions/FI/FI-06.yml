@@ -1,0 +1,12 @@
+name: Egentliga Tavastland
+type: Division-1
+meta:
+  alpha2: FI-06
+  includes:
+    - egentliga tavastland
+    - fi-06
+    - '06'
+    - egentliga tavastland region
+    - kanta-häme
+    - kanta-häme region
+  category: REGION

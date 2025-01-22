@@ -1,0 +1,10 @@
+name: Chiquimula
+type: Division-1
+meta:
+  alpha2: GT-20
+  includes:
+    - chiquimula
+    - gt-20
+    - '20'
+    - chiquimula department
+  category: DEPARTMENT

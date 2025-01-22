@@ -1,0 +1,10 @@
+name: Utrecht
+type: Division-1
+meta:
+  alpha2: NL-UT
+  includes:
+    - utrecht
+    - nl-ut
+    - ut
+    - utrecht province
+  category: PROVINCE

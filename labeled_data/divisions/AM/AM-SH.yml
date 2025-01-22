@@ -1,0 +1,11 @@
+name: Širak
+type: Division-1
+meta:
+  alpha2: AM-SH
+  includes:
+    - širak
+    - am-sh
+    - sh
+    - širak region
+    - shirak province
+  category: REGION

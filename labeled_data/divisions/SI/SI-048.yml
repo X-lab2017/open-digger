@@ -1,0 +1,10 @@
+name: Kočevje
+type: Division-1
+meta:
+  alpha2: SI-048
+  includes:
+    - kočevje
+    - si-048
+    - '048'
+    - kočevje municipality
+  category: MUNICIPALITY

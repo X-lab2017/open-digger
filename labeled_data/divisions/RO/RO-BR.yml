@@ -1,0 +1,10 @@
+name: Brăila
+type: Division-1
+meta:
+  alpha2: RO-BR
+  includes:
+    - brăila
+    - ro-br
+    - br
+    - brăila department
+  category: DEPARTMENT

@@ -1,0 +1,10 @@
+name: Canaries
+type: Division-1
+meta:
+  alpha2: LC-12
+  includes:
+    - canaries
+    - lc-12
+    - '12'
+    - canaries district
+  category: DISTRICT

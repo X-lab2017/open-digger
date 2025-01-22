@@ -1,0 +1,10 @@
+name: Balkan
+type: Division-1
+meta:
+  alpha2: TM-B
+  includes:
+    - balkan
+    - tm-b
+    - b
+    - balkan region
+  category: REGION

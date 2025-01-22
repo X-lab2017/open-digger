@@ -1,0 +1,10 @@
+name: Yardımlı
+type: Division-1
+meta:
+  alpha2: AZ-YAR
+  includes:
+    - yardımlı
+    - az-yar
+    - yar
+    - yardımlı rayon
+  category: RAYON

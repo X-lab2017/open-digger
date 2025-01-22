@@ -1,0 +1,10 @@
+name: Lavalleja
+type: Division-1
+meta:
+  alpha2: UY-LA
+  includes:
+    - lavalleja
+    - uy-la
+    - la
+    - lavalleja department
+  category: DEPARTMENT

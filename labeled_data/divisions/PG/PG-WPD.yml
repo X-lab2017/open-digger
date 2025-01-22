@@ -1,0 +1,10 @@
+name: Western
+type: Division-1
+meta:
+  alpha2: PG-WPD
+  includes:
+    - western
+    - pg-wpd
+    - wpd
+    - western province
+  category: PROVINCE

@@ -1,0 +1,11 @@
+name: Los Santos
+type: Division-1
+meta:
+  alpha2: PA-7
+  includes:
+    - los santos
+    - pa-7
+    - '7'
+    - los santos province
+    - ls
+  category: PROVINCE

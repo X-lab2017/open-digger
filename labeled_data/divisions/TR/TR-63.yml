@@ -1,0 +1,11 @@
+name: Şanlıurfa
+type: Division-1
+meta:
+  alpha2: TR-63
+  includes:
+    - şanlıurfa
+    - tr-63
+    - '63'
+    - şanlıurfa province
+    - şanliurfa
+  category: PROVINCE

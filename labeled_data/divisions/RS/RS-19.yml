@@ -1,0 +1,10 @@
+name: Rasinski okrug
+type: Division-1
+meta:
+  alpha2: RS-19
+  includes:
+    - rasinski okrug
+    - rs-19
+    - '19'
+    - rasinski okrug district
+  category: DISTRICT

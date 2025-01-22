@@ -1,0 +1,13 @@
+name: Sofia
+type: Division-1
+meta:
+  alpha2: BG-22
+  includes:
+    - sofia
+    - bg-22
+    - '22'
+    - sofia district
+    - sofia city
+    - sofia city province
+    - sofia-grad
+  category: DISTRICT

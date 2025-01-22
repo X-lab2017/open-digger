@@ -1,0 +1,12 @@
+name: Mādabā
+type: Division-1
+meta:
+  alpha2: JO-MD
+  includes:
+    - mādabā
+    - jo-md
+    - md
+    - mādabā governorate
+    - madaba
+    - madaba governorate
+  category: GOVERNORATE

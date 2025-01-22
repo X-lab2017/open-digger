@@ -1,0 +1,10 @@
+name: Kumamoto
+type: Division-1
+meta:
+  alpha2: JP-43
+  includes:
+    - kumamoto
+    - jp-43
+    - '43'
+    - kumamoto prefecture
+  category: PREFECTURE

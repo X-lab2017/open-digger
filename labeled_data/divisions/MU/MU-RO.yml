@@ -1,0 +1,11 @@
+name: Rodrigues Island
+type: Division-1
+meta:
+  alpha2: MU-RO
+  includes:
+    - rodrigues island
+    - mu-ro
+    - ro
+    - rodrigues island dependency
+    - rodrigues
+  category: DEPENDENCY

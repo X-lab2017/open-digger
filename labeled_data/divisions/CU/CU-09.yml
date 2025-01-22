@@ -1,0 +1,11 @@
+name: Camagüey
+type: Division-1
+meta:
+  alpha2: CU-09
+  includes:
+    - camagüey
+    - cu-09
+    - '09'
+    - camagüey province
+    - camaguey
+  category: PROVINCE

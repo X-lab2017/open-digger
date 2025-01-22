@@ -1,0 +1,60 @@
+name: Lombardia
+type: Division-1
+meta:
+  alpha2: IT-25
+  includes:
+    - bergamo
+    - it-bg
+    - bg
+    - bergamo province
+    - brescia
+    - it-bs
+    - bs
+    - brescia province
+    - como
+    - it-co
+    - co
+    - como province
+    - cremona
+    - it-cr
+    - cr
+    - cremona province
+    - lecco
+    - it-lc
+    - lc
+    - lecco province
+    - lodi
+    - it-lo
+    - lo
+    - lodi province
+    - lombardia
+    - it-25
+    - '25'
+    - lombardia region
+    - mantova
+    - it-mn
+    - mn
+    - mantova province
+    - milano
+    - it-mi
+    - mi
+    - milano metropolitan city
+    - monza e brianza
+    - it-mb
+    - mb
+    - monza e brianza province
+    - pavia
+    - it-pv
+    - pv
+    - pavia province
+    - sondrio
+    - it-so
+    - so
+    - sondrio province
+    - varese
+    - it-va
+    - va
+    - varese province
+    - lombardy
+    - lomb.
+  category: REGION

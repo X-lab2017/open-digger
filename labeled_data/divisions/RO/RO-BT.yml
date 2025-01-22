@@ -1,0 +1,12 @@
+name: Botoșani
+type: Division-1
+meta:
+  alpha2: RO-BT
+  includes:
+    - botoșani
+    - ro-bt
+    - bt
+    - botoșani department
+    - botoşani
+    - botoșani county
+  category: DEPARTMENT

@@ -1,0 +1,10 @@
+name: Naklo
+type: Division-1
+meta:
+  alpha2: SI-082
+  includes:
+    - naklo
+    - si-082
+    - '082'
+    - naklo municipality
+  category: MUNICIPALITY

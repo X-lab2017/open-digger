@@ -1,0 +1,155 @@
+name: North Macedonia
+type: Division-0
+meta:
+  alpha2: MK
+  includes:
+    - North Macedonia
+    - MK
+    - '807'
+    - the former Yugoslav Republic of Macedonia
+    - 前南马其顿
+  name_full: the former Yugoslav Republic of Macedonia
+  name_zh: 前南马其顿
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 22923
+    - year: 2020
+      quarter: 2
+      count: 25191
+    - year: 2020
+      quarter: 3
+      count: 27034
+    - year: 2020
+      quarter: 4
+      count: 29392
+    - year: 2021
+      quarter: 1
+      count: 31511
+    - year: 2021
+      quarter: 2
+      count: 33379
+    - year: 2021
+      quarter: 3
+      count: 35044
+    - year: 2021
+      quarter: 4
+      count: 37158
+    - year: 2022
+      quarter: 1
+      count: 39859
+    - year: 2022
+      quarter: 2
+      count: 41972
+    - year: 2022
+      quarter: 3
+      count: 43757
+    - year: 2022
+      quarter: 4
+      count: 46137
+    - year: 2023
+      quarter: 1
+      count: 48678
+    - year: 2023
+      quarter: 2
+      count: 51170
+    - year: 2023
+      quarter: 3
+      count: 52990
+    - year: 2023
+      quarter: 4
+      count: 55647
+    - year: 2024
+      quarter: 1
+      count: 58511
+    - year: 2024
+      quarter: 2
+      count: 60396
+    - year: 2024
+      quarter: 3
+      count: 61937
+    - year: 2024
+      quarter: 4
+      count: 64206
+data:
+  labels:
+    - MK-801
+    - MK-802
+    - MK-201
+    - MK-501
+    - MK-401
+    - MK-601
+    - MK-402
+    - MK-602
+    - MK-803
+    - MK-313
+    - MK-814
+    - MK-303
+    - MK-304
+    - MK-203
+    - MK-502
+    - MK-103
+    - MK-406
+    - MK-503
+    - MK-804
+    - MK-405
+    - MK-805
+    - MK-604
+    - MK-102
+    - MK-807
+    - MK-606
+    - MK-205
+    - MK-808
+    - MK-104
+    - MK-809
+    - MK-307
+    - MK-407
+    - MK-206
+    - MK-701
+    - MK-702
+    - MK-504
+    - MK-505
+    - MK-703
+    - MK-704
+    - MK-105
+    - MK-207
+    - MK-308
+    - MK-607
+    - MK-506
+    - MK-106
+    - MK-507
+    - MK-408
+    - MK-310
+    - MK-208
+    - MK-810
+    - MK-311
+    - MK-508
+    - MK-209
+    - MK-409
+    - MK-705
+    - MK-509
+    - MK-107
+    - MK-811
+    - MK-812
+    - MK-706
+    - MK-312
+    - MK-410
+    - MK-813
+    - MK-108
+    - MK-608
+    - MK-609
+    - MK-403
+    - MK-404
+    - MK-101
+    - MK-301
+    - MK-202
+    - MK-603
+    - MK-806
+    - MK-204
+    - MK-815
+    - MK-109
+    - MK-210
+    - MK-816
+    - MK-211
+    - MK-817
+    - MK-605

@@ -1,0 +1,10 @@
+name: Escaldes-Engordany
+type: Division-1
+meta:
+  alpha2: AD-08
+  includes:
+    - escaldes-engordany
+    - ad-08
+    - '08'
+    - escaldes-engordany parish
+  category: PARISH

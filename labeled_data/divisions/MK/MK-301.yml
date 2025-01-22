@@ -1,0 +1,10 @@
+name: Vevčani
+type: Division-1
+meta:
+  alpha2: MK-301
+  includes:
+    - vevčani
+    - mk-301
+    - '301'
+    - vevčani municipality
+  category: MUNICIPALITY

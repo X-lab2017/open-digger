@@ -1,0 +1,11 @@
+name: Syddanmark
+type: Division-1
+meta:
+  alpha2: DK-83
+  includes:
+    - syddanmark
+    - dk-83
+    - '83'
+    - syddanmark region
+    - region of southern denmark
+  category: REGION

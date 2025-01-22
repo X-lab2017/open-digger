@@ -1,0 +1,10 @@
+name: Estuaire
+type: Division-1
+meta:
+  alpha2: GA-1
+  includes:
+    - estuaire
+    - ga-1
+    - '1'
+    - estuaire province
+  category: PROVINCE

@@ -1,0 +1,10 @@
+name: Santander
+type: Division-1
+meta:
+  alpha2: CO-SAN
+  includes:
+    - santander
+    - co-san
+    - san
+    - santander department
+  category: DEPARTMENT

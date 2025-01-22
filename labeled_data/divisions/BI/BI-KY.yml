@@ -1,0 +1,10 @@
+name: Kayanza
+type: Division-1
+meta:
+  alpha2: BI-KY
+  includes:
+    - kayanza
+    - bi-ky
+    - ky
+    - kayanza province
+  category: PROVINCE

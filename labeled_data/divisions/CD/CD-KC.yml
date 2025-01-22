@@ -1,0 +1,12 @@
+name: Kasaï Central
+type: Division-1
+meta:
+  alpha2: CD-KC
+  includes:
+    - kasaï central
+    - cd-kc
+    - kc
+    - kasaï central province
+    - kasai-central
+    - kasaï-central
+  category: PROVINCE

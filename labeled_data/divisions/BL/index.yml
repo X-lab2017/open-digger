@@ -1,0 +1,9 @@
+name: Saint Barthélemy
+type: Division-0
+meta:
+  alpha2: BL
+  includes:
+    - Saint Barthélemy
+    - BL
+    - '652'
+  developers: []

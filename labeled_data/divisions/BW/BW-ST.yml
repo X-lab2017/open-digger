@@ -1,0 +1,10 @@
+name: Sowa Town
+type: Division-1
+meta:
+  alpha2: BW-ST
+  includes:
+    - sowa town
+    - bw-st
+    - st
+    - sowa town town
+  category: TOWN

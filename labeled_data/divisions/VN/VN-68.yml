@@ -1,0 +1,12 @@
+name: Phú Thọ
+type: Division-1
+meta:
+  alpha2: VN-68
+  includes:
+    - phú thọ
+    - vn-68
+    - '68'
+    - phú thọ province
+    - phu tho
+    - phu tho province
+  category: PROVINCE

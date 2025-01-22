@@ -1,0 +1,78 @@
+name: Malawi
+type: Division-0
+meta:
+  alpha2: MW
+  includes:
+    - Malawi
+    - MW
+    - '454'
+    - the Republic of Malawi
+    - 马拉维
+  name_full: the Republic of Malawi
+  name_zh: 马拉维
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 3510
+    - year: 2020
+      quarter: 2
+      count: 3902
+    - year: 2020
+      quarter: 3
+      count: 4281
+    - year: 2020
+      quarter: 4
+      count: 4660
+    - year: 2021
+      quarter: 1
+      count: 4976
+    - year: 2021
+      quarter: 2
+      count: 5428
+    - year: 2021
+      quarter: 3
+      count: 5972
+    - year: 2021
+      quarter: 4
+      count: 6658
+    - year: 2022
+      quarter: 1
+      count: 7286
+    - year: 2022
+      quarter: 2
+      count: 8083
+    - year: 2022
+      quarter: 3
+      count: 9038
+    - year: 2022
+      quarter: 4
+      count: 9754
+    - year: 2023
+      quarter: 1
+      count: 10958
+    - year: 2023
+      quarter: 2
+      count: 12064
+    - year: 2023
+      quarter: 3
+      count: 13058
+    - year: 2023
+      quarter: 4
+      count: 13922
+    - year: 2024
+      quarter: 1
+      count: 15698
+    - year: 2024
+      quarter: 2
+      count: 17100
+    - year: 2024
+      quarter: 3
+      count: 18621
+    - year: 2024
+      quarter: 4
+      count: 19954
+data:
+  labels:
+    - MW-S
+    - MW-C
+    - MW-N

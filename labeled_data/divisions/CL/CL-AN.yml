@@ -1,0 +1,11 @@
+name: Antofagasta
+type: Division-1
+meta:
+  alpha2: CL-AN
+  includes:
+    - antofagasta
+    - cl-an
+    - an
+    - antofagasta region
+    - ii
+  category: REGION

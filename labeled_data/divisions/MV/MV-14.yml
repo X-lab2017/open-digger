@@ -1,0 +1,14 @@
+name: North Nilandhe Atoll
+type: Division-1
+meta:
+  alpha2: MV-14
+  includes:
+    - nilandheatholhu uthuruburi
+    - mv-14
+    - '14'
+    - nilandheatholhu uthuruburi administrative atoll
+    - faafu
+    - faafu administrative atoll
+    - north nilandhe atoll
+    - north nilandhe atoll administrative atoll
+  category: ADMINISTRATIVE ATOLL

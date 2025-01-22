@@ -1,0 +1,72 @@
+name: Mayotte
+type: Division-0
+meta:
+  alpha2: YT
+  includes:
+    - Mayotte
+    - YT
+    - '175'
+    - 马约特
+  name_full: Mayotte
+  name_zh: 马约特
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 347
+    - year: 2020
+      quarter: 2
+      count: 382
+    - year: 2020
+      quarter: 3
+      count: 410
+    - year: 2020
+      quarter: 4
+      count: 432
+    - year: 2021
+      quarter: 1
+      count: 449
+    - year: 2021
+      quarter: 2
+      count: 470
+    - year: 2021
+      quarter: 3
+      count: 494
+    - year: 2021
+      quarter: 4
+      count: 525
+    - year: 2022
+      quarter: 1
+      count: 575
+    - year: 2022
+      quarter: 2
+      count: 625
+    - year: 2022
+      quarter: 3
+      count: 667
+    - year: 2022
+      quarter: 4
+      count: 704
+    - year: 2023
+      quarter: 1
+      count: 742
+    - year: 2023
+      quarter: 2
+      count: 803
+    - year: 2023
+      quarter: 3
+      count: 874
+    - year: 2023
+      quarter: 4
+      count: 914
+    - year: 2024
+      quarter: 1
+      count: 984
+    - year: 2024
+      quarter: 2
+      count: 1019
+    - year: 2024
+      quarter: 3
+      count: 1086
+    - year: 2024
+      quarter: 4
+      count: 1114

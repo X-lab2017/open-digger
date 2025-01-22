@@ -1,0 +1,10 @@
+name: Balıkesir
+type: Division-1
+meta:
+  alpha2: TR-10
+  includes:
+    - balıkesir
+    - tr-10
+    - '10'
+    - balıkesir province
+  category: PROVINCE

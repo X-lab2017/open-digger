@@ -1,0 +1,12 @@
+name: Kentrikí Makedonía
+type: Division-1
+meta:
+  alpha2: GR-B
+  includes:
+    - kentrikí makedonía
+    - gr-b
+    - b
+    - kentrikí makedonía administrative region
+    - central macedonia
+    - thessaloniki
+  category: ADMINISTRATIVE REGION

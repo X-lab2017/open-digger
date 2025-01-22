@@ -1,0 +1,11 @@
+name: Liepāja
+type: Division-1
+meta:
+  alpha2: LV-LPX
+  includes:
+    - liepāja
+    - lv-lpx
+    - lpx
+    - liepāja state city
+    - liepaja
+  category: STATE CITY

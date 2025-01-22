@@ -1,0 +1,12 @@
+name: Belonm
+type: Division-1
+meta:
+  alpha2: SC-10
+  includes:
+    - bel ombre
+    - sc-10
+    - '10'
+    - bel ombre district
+    - belonm
+    - belonm district
+  category: DISTRICT

@@ -1,0 +1,10 @@
+name: Kocaeli
+type: Division-1
+meta:
+  alpha2: TR-41
+  includes:
+    - kocaeli
+    - tr-41
+    - '41'
+    - kocaeli province
+  category: PROVINCE

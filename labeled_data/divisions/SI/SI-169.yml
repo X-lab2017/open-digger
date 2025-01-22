@@ -1,0 +1,10 @@
+name: Miklavž na Dravskem polju
+type: Division-1
+meta:
+  alpha2: SI-169
+  includes:
+    - miklavž na dravskem polju
+    - si-169
+    - '169'
+    - miklavž na dravskem polju municipality
+  category: MUNICIPALITY

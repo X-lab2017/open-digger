@@ -1,0 +1,72 @@
+name: Martinique
+type: Division-0
+meta:
+  alpha2: MQ
+  includes:
+    - Martinique
+    - MQ
+    - '474'
+    - 马提尼克
+  name_full: Martinique
+  name_zh: 马提尼克
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 1546
+    - year: 2020
+      quarter: 2
+      count: 1742
+    - year: 2020
+      quarter: 3
+      count: 1884
+    - year: 2020
+      quarter: 4
+      count: 2025
+    - year: 2021
+      quarter: 1
+      count: 2215
+    - year: 2021
+      quarter: 2
+      count: 2352
+    - year: 2021
+      quarter: 3
+      count: 2498
+    - year: 2021
+      quarter: 4
+      count: 2621
+    - year: 2022
+      quarter: 1
+      count: 2841
+    - year: 2022
+      quarter: 2
+      count: 2993
+    - year: 2022
+      quarter: 3
+      count: 3167
+    - year: 2022
+      quarter: 4
+      count: 3286
+    - year: 2023
+      quarter: 1
+      count: 3498
+    - year: 2023
+      quarter: 2
+      count: 3720
+    - year: 2023
+      quarter: 3
+      count: 3906
+    - year: 2023
+      quarter: 4
+      count: 4086
+    - year: 2024
+      quarter: 1
+      count: 4360
+    - year: 2024
+      quarter: 2
+      count: 4618
+    - year: 2024
+      quarter: 3
+      count: 4807
+    - year: 2024
+      quarter: 4
+      count: 5021

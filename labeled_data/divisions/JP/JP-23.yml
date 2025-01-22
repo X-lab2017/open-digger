@@ -1,0 +1,12 @@
+name: Aiti
+type: Division-1
+meta:
+  alpha2: JP-23
+  includes:
+    - aichi
+    - jp-23
+    - '23'
+    - aichi prefecture
+    - aiti
+    - aiti prefecture
+  category: PREFECTURE

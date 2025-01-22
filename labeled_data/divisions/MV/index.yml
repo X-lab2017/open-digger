@@ -1,0 +1,96 @@
+name: Maldives
+type: Division-0
+meta:
+  alpha2: MV
+  includes:
+    - Maldives
+    - MV
+    - '462'
+    - the Republic of Maldives
+    - 马尔代夫
+  name_full: the Republic of Maldives
+  name_zh: 马尔代夫
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 3770
+    - year: 2020
+      quarter: 2
+      count: 4333
+    - year: 2020
+      quarter: 3
+      count: 4861
+    - year: 2020
+      quarter: 4
+      count: 5406
+    - year: 2021
+      quarter: 1
+      count: 5950
+    - year: 2021
+      quarter: 2
+      count: 6548
+    - year: 2021
+      quarter: 3
+      count: 7110
+    - year: 2021
+      quarter: 4
+      count: 7701
+    - year: 2022
+      quarter: 1
+      count: 8324
+    - year: 2022
+      quarter: 2
+      count: 8798
+    - year: 2022
+      quarter: 3
+      count: 9363
+    - year: 2022
+      quarter: 4
+      count: 9933
+    - year: 2023
+      quarter: 1
+      count: 10664
+    - year: 2023
+      quarter: 2
+      count: 11501
+    - year: 2023
+      quarter: 3
+      count: 12131
+    - year: 2023
+      quarter: 4
+      count: 12777
+    - year: 2024
+      quarter: 1
+      count: 13461
+    - year: 2024
+      quarter: 2
+      count: 14062
+    - year: 2024
+      quarter: 3
+      count: 14763
+    - year: 2024
+      quarter: 4
+      count: 15540
+data:
+  labels:
+    - MV-01
+    - MV-00
+    - MV-02
+    - MV-03
+    - MV-04
+    - MV-29
+    - MV-05
+    - MV-28
+    - MV-27
+    - MV-08
+    - MV-MLE
+    - MV-26
+    - MV-20
+    - MV-13
+    - MV-25
+    - MV-24
+    - MV-12
+    - MV-17
+    - MV-14
+    - MV-07
+    - MV-23

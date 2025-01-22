@@ -1,0 +1,10 @@
+name: South Eleuthera
+type: Division-1
+meta:
+  alpha2: BS-SE
+  includes:
+    - south eleuthera
+    - bs-se
+    - se
+    - south eleuthera district
+  category: DISTRICT

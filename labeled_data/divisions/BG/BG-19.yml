@@ -1,0 +1,11 @@
+name: Silistra
+type: Division-1
+meta:
+  alpha2: BG-19
+  includes:
+    - silistra
+    - bg-19
+    - '19'
+    - silistra district
+    - silistra province
+  category: DISTRICT

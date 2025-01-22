@@ -1,0 +1,15 @@
+name: Valle d'Aosta
+type: Division-1
+meta:
+  alpha2: IT-23
+  includes:
+    - val d'aoste
+    - it-23
+    - '23'
+    - val d'aoste autonomous region
+    - valle d'aosta
+    - valle d'aosta autonomous region
+    - aosta
+    - v.d.a.
+    - aosta valley
+  category: AUTONOMOUS REGION

@@ -1,0 +1,10 @@
+name: Mopti
+type: Division-1
+meta:
+  alpha2: ML-5
+  includes:
+    - mopti
+    - ml-5
+    - '5'
+    - mopti region
+  category: REGION

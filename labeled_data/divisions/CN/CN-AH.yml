@@ -1,0 +1,13 @@
+name: Anhui Sheng
+type: Division-1
+meta:
+  alpha2: CN-AH
+  includes:
+    - anhui sheng
+    - cn-ah
+    - ah
+    - anhui sheng province
+    - an hui sheng
+    - anhui
+    - 安徽省
+  category: PROVINCE

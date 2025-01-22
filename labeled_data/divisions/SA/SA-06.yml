@@ -1,0 +1,13 @@
+name: Ḩā'il
+type: Division-1
+meta:
+  alpha2: SA-06
+  includes:
+    - ḩā'il
+    - sa-06
+    - '06'
+    - ḩā'il region
+    - hai
+    - hail province
+    - ⚗ā'il
+  category: REGION

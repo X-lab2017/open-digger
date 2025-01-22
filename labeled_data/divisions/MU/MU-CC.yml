@@ -1,0 +1,12 @@
+name: Cargados Carajos Shoals
+type: Division-1
+meta:
+  alpha2: MU-CC
+  includes:
+    - cargados carajos shoals
+    - mu-cc
+    - cc
+    - cargados carajos shoals dependency
+    - saint brandon islands
+    - saint brandon islands dependency
+  category: DEPENDENCY

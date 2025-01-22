@@ -1,0 +1,14 @@
+name: Adygeya
+type: Division-1
+meta:
+  alpha2: RU-AD
+  includes:
+    - adygeja
+    - ru-ad
+    - ad
+    - adygeja republic
+    - adygeya
+    - adygeya republic
+    - adygea
+    - adygea republic
+  category: REPUBLIC

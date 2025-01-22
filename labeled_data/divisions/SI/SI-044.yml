@@ -1,0 +1,10 @@
+name: Kanal ob Soči
+type: Division-1
+meta:
+  alpha2: SI-044
+  includes:
+    - kanal ob soči
+    - si-044
+    - '044'
+    - kanal ob soči municipality
+  category: MUNICIPALITY

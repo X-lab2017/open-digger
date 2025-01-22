@@ -1,0 +1,11 @@
+name: Toshkent
+type: Division-1
+meta:
+  alpha2: UZ-TK
+  includes:
+    - toshkent
+    - uz-tk
+    - tk
+    - toshkent city
+    - toshkent shahri
+  category: CITY

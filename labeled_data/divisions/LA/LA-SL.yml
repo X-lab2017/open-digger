@@ -1,0 +1,13 @@
+name: Salavan
+type: Division-1
+meta:
+  alpha2: LA-SL
+  includes:
+    - salavan
+    - la-sl
+    - sl
+    - salavan province
+    - saravane
+    - saravane province
+    - xh
+  category: PROVINCE

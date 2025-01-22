@@ -1,0 +1,10 @@
+name: Cabinda
+type: Division-1
+meta:
+  alpha2: AO-CAB
+  includes:
+    - cabinda
+    - ao-cab
+    - cab
+    - cabinda province
+  category: PROVINCE

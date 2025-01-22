@@ -1,0 +1,10 @@
+name: Salgótarján
+type: Division-1
+meta:
+  alpha2: HU-ST
+  includes:
+    - salgótarján
+    - hu-st
+    - st
+    - salgótarján city with county rights
+  category: CITY WITH COUNTY RIGHTS

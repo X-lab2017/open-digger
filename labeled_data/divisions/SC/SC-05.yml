@@ -1,0 +1,12 @@
+name: Anse Royale
+type: Division-1
+meta:
+  alpha2: SC-05
+  includes:
+    - ans royal
+    - sc-05
+    - '05'
+    - ans royal district
+    - anse royale
+    - anse royale district
+  category: DISTRICT

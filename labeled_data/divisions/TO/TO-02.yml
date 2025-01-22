@@ -1,0 +1,10 @@
+name: Ha'apai
+type: Division-1
+meta:
+  alpha2: TO-02
+  includes:
+    - ha'apai
+    - to-02
+    - '02'
+    - ha'apai division
+  category: DIVISION

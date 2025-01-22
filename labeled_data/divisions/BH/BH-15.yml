@@ -1,0 +1,12 @@
+name: Al Muḩarraq
+type: Division-1
+meta:
+  alpha2: BH-15
+  includes:
+    - al muḩarraq
+    - bh-15
+    - '15'
+    - al muḩarraq governorate
+    - muharraq governorate
+    - muḥāfaẓat al-muḥarraq
+  category: GOVERNORATE

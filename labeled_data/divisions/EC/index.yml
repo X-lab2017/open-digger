@@ -1,0 +1,99 @@
+name: Ecuador
+type: Division-0
+meta:
+  alpha2: EC
+  includes:
+    - Ecuador
+    - EC
+    - '218'
+    - the Republic of Ecuador
+    - 厄瓜多尔
+  name_full: the Republic of Ecuador
+  name_zh: 厄瓜多尔
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 70527
+    - year: 2020
+      quarter: 2
+      count: 80365
+    - year: 2020
+      quarter: 3
+      count: 90657
+    - year: 2020
+      quarter: 4
+      count: 99378
+    - year: 2021
+      quarter: 1
+      count: 107074
+    - year: 2021
+      quarter: 2
+      count: 116303
+    - year: 2021
+      quarter: 3
+      count: 125033
+    - year: 2021
+      quarter: 4
+      count: 132928
+    - year: 2022
+      quarter: 1
+      count: 142291
+    - year: 2022
+      quarter: 2
+      count: 152157
+    - year: 2022
+      quarter: 3
+      count: 161205
+    - year: 2022
+      quarter: 4
+      count: 170122
+    - year: 2023
+      quarter: 1
+      count: 180536
+    - year: 2023
+      quarter: 2
+      count: 195414
+    - year: 2023
+      quarter: 3
+      count: 208560
+    - year: 2023
+      quarter: 4
+      count: 221762
+    - year: 2024
+      quarter: 1
+      count: 236684
+    - year: 2024
+      quarter: 2
+      count: 250587
+    - year: 2024
+      quarter: 3
+      count: 263112
+    - year: 2024
+      quarter: 4
+      count: 276454
+data:
+  labels:
+    - EC-A
+    - EC-B
+    - EC-C
+    - EC-F
+    - EC-H
+    - EC-X
+    - EC-O
+    - EC-E
+    - EC-W
+    - EC-G
+    - EC-I
+    - EC-L
+    - EC-R
+    - EC-M
+    - EC-S
+    - EC-N
+    - EC-D
+    - EC-Y
+    - EC-P
+    - EC-SE
+    - EC-SD
+    - EC-U
+    - EC-T
+    - EC-Z

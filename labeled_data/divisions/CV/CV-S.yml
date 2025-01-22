@@ -1,0 +1,66 @@
+name: Ilhas de Sotavento
+type: Division-1
+meta:
+  alpha2: CV-S
+  includes:
+    - brava
+    - cv-br
+    - br
+    - brava municipality
+    - ilhas de sotavento
+    - cv-s
+    - s
+    - ilhas de sotavento geographical region
+    - maio
+    - cv-ma
+    - ma
+    - maio municipality
+    - mosteiros
+    - cv-mo
+    - mo
+    - mosteiros municipality
+    - praia
+    - cv-pr
+    - pr
+    - praia municipality
+    - ribeira grande de santiago
+    - cv-rs
+    - rs
+    - ribeira grande de santiago municipality
+    - santa catarina
+    - cv-ca
+    - ca
+    - santa catarina municipality
+    - santa catarina do fogo
+    - cv-cf
+    - cf
+    - santa catarina do fogo municipality
+    - santa cruz
+    - cv-cr
+    - cr
+    - santa cruz municipality
+    - são domingos
+    - cv-sd
+    - sd
+    - são domingos municipality
+    - são filipe
+    - cv-sf
+    - sf
+    - são filipe municipality
+    - são lourenço dos órgãos
+    - cv-so
+    - so
+    - são lourenço dos órgãos municipality
+    - são miguel
+    - cv-sm
+    - sm
+    - são miguel municipality
+    - são salvador do mundo
+    - cv-ss
+    - ss
+    - são salvador do mundo municipality
+    - tarrafal
+    - cv-ta
+    - ta
+    - tarrafal municipality
+  category: GEOGRAPHICAL REGION

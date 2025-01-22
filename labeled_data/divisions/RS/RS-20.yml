@@ -1,0 +1,10 @@
+name: Nišavski okrug
+type: Division-1
+meta:
+  alpha2: RS-20
+  includes:
+    - nišavski okrug
+    - rs-20
+    - '20'
+    - nišavski okrug district
+  category: DISTRICT

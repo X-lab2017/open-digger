@@ -1,0 +1,11 @@
+name: Zürich
+type: Division-1
+meta:
+  alpha2: CH-ZH
+  includes:
+    - zürich
+    - ch-zh
+    - zh
+    - zürich canton
+    - zurich
+  category: CANTON

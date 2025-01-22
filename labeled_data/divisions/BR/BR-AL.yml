@@ -1,0 +1,11 @@
+name: Alagoas
+type: Division-1
+meta:
+  alpha2: BR-AL
+  includes:
+    - alagoas
+    - br-al
+    - al
+    - alagoas state
+    - state of alagoas
+  category: STATE

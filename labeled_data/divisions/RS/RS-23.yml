@@ -1,0 +1,10 @@
+name: Jablanički okrug
+type: Division-1
+meta:
+  alpha2: RS-23
+  includes:
+    - jablanički okrug
+    - rs-23
+    - '23'
+    - jablanički okrug district
+  category: DISTRICT

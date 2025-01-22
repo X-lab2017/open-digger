@@ -1,0 +1,11 @@
+name: Vratsa
+type: Division-1
+meta:
+  alpha2: BG-06
+  includes:
+    - vratsa
+    - bg-06
+    - '06'
+    - vratsa district
+    - vratsa province
+  category: DISTRICT

@@ -1,0 +1,10 @@
+name: Taraclia
+type: Division-1
+meta:
+  alpha2: MD-TA
+  includes:
+    - taraclia
+    - md-ta
+    - ta
+    - taraclia district
+  category: DISTRICT

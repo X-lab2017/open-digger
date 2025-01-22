@@ -1,0 +1,11 @@
+name: Espírito Santo
+type: Division-1
+meta:
+  alpha2: BR-ES
+  includes:
+    - espírito santo
+    - br-es
+    - es
+    - espírito santo state
+    - state of espírito santo
+  category: STATE

@@ -1,0 +1,57 @@
+name: Chattogram
+type: Division-1
+meta:
+  alpha2: BD-B
+  includes:
+    - bandarban
+    - bd-01
+    - '01'
+    - bandarban district
+    - brahmanbaria
+    - bd-04
+    - '04'
+    - brahmanbaria district
+    - chandpur
+    - bd-09
+    - '09'
+    - chandpur district
+    - chattogram
+    - bd-b
+    - b
+    - chattogram division
+    - chittagong
+    - chittagong division
+    - bd-10
+    - '10'
+    - chattogram district
+    - chittagong district
+    - cox's bazar
+    - bd-11
+    - '11'
+    - cox's bazar district
+    - cumilla
+    - bd-08
+    - '08'
+    - cumilla district
+    - feni
+    - bd-16
+    - '16'
+    - feni district
+    - khagrachhari
+    - bd-29
+    - '29'
+    - khagrachhari district
+    - lakshmipur
+    - bd-31
+    - '31'
+    - lakshmipur district
+    - noakhali
+    - bd-47
+    - '47'
+    - noakhali district
+    - rangamati
+    - bd-56
+    - '56'
+    - rangamati district
+    - চট্টগ্রাম বিভাগ
+  category: DIVISION

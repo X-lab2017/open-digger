@@ -1,0 +1,12 @@
+name: Strumica
+type: Division-1
+meta:
+  alpha2: MK-410
+  includes:
+    - strumica
+    - mk-410
+    - '410'
+    - strumica municipality
+    - municipality of strumitsa
+    - southeastern
+  category: MUNICIPALITY

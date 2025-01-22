@@ -1,0 +1,10 @@
+name: Kasaï
+type: Division-1
+meta:
+  alpha2: CD-KS
+  includes:
+    - kasaï
+    - cd-ks
+    - ks
+    - kasaï province
+  category: PROVINCE

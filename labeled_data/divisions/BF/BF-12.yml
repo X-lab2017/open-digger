@@ -1,0 +1,26 @@
+name: Sahel
+type: Division-1
+meta:
+  alpha2: BF-12
+  includes:
+    - oudalan
+    - bf-oud
+    - oud
+    - oudalan province
+    - sahel
+    - bf-12
+    - '12'
+    - sahel region
+    - soum
+    - bf-som
+    - som
+    - soum province
+    - séno
+    - bf-sen
+    - sen
+    - séno province
+    - yagha
+    - bf-yag
+    - yag
+    - yagha province
+  category: REGION

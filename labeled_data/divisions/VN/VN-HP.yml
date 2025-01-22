@@ -1,0 +1,13 @@
+name: Hải Phòng
+type: Division-1
+meta:
+  alpha2: VN-HP
+  includes:
+    - hải phòng
+    - vn-hp
+    - hp
+    - hải phòng municipality
+    - haiphong
+    - hai phong
+    - hai phong city
+  category: MUNICIPALITY

@@ -1,0 +1,10 @@
+name: Anenii Noi
+type: Division-1
+meta:
+  alpha2: MD-AN
+  includes:
+    - anenii noi
+    - md-an
+    - an
+    - anenii noi district
+  category: DISTRICT

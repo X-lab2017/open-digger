@@ -1,0 +1,30 @@
+name: Drâa-Tafilalet
+type: Division-1
+meta:
+  alpha2: MA-08
+  includes:
+    - drâa-tafilalet
+    - ma-08
+    - '08'
+    - drâa-tafilalet region
+    - errachidia
+    - ma-err
+    - err
+    - errachidia province
+    - midelt
+    - ma-mid
+    - mid
+    - midelt province
+    - ouarzazate
+    - ma-oua
+    - oua
+    - ouarzazate province
+    - tinghir
+    - ma-tin
+    - tin
+    - tinghir province
+    - zagora
+    - ma-zag
+    - zag
+    - zagora province
+  category: REGION

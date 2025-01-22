@@ -1,0 +1,10 @@
+name: Redonda
+type: Division-1
+meta:
+  alpha2: AG-11
+  includes:
+    - redonda
+    - ag-11
+    - '11'
+    - redonda dependency
+  category: DEPENDENCY

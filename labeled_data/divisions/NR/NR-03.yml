@@ -1,0 +1,10 @@
+name: Anetan
+type: Division-1
+meta:
+  alpha2: NR-03
+  includes:
+    - anetan
+    - nr-03
+    - '03'
+    - anetan district
+  category: DISTRICT

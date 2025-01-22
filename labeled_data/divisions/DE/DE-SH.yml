@@ -1,0 +1,10 @@
+name: Schleswig-Holstein
+type: Division-1
+meta:
+  alpha2: DE-SH
+  includes:
+    - schleswig-holstein
+    - de-sh
+    - sh
+    - schleswig-holstein land
+  category: LAND

@@ -1,0 +1,10 @@
+name: Laghouat
+type: Division-1
+meta:
+  alpha2: DZ-03
+  includes:
+    - laghouat
+    - dz-03
+    - '03'
+    - laghouat province
+  category: PROVINCE

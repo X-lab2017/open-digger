@@ -1,0 +1,10 @@
+name: Mauren
+type: Division-1
+meta:
+  alpha2: LI-04
+  includes:
+    - mauren
+    - li-04
+    - '04'
+    - mauren commune
+  category: COMMUNE

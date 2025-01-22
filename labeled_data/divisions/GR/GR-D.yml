@@ -1,0 +1,11 @@
+name: Ípeiros
+type: Division-1
+meta:
+  alpha2: GR-D
+  includes:
+    - ípeiros
+    - gr-d
+    - d
+    - ípeiros administrative region
+    - epirus
+  category: ADMINISTRATIVE REGION

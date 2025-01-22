@@ -1,0 +1,14 @@
+name: Omskaya oblast'
+type: Division-1
+meta:
+  alpha2: RU-OMS
+  includes:
+    - omskaja oblast'
+    - ru-oms
+    - oms
+    - omskaja oblast' administrative region
+    - omskaya oblast'
+    - omskaya oblast' administrative region
+    - omsk oblast
+    - omsk
+  category: ADMINISTRATIVE REGION

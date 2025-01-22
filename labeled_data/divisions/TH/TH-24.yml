@@ -1,0 +1,10 @@
+name: Chachoengsao
+type: Division-1
+meta:
+  alpha2: TH-24
+  includes:
+    - chachoengsao
+    - th-24
+    - '24'
+    - chachoengsao province
+  category: PROVINCE

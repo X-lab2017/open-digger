@@ -1,0 +1,13 @@
+name: Louang Namtha
+type: Division-1
+meta:
+  alpha2: LA-LM
+  includes:
+    - louang namtha
+    - la-lm
+    - lm
+    - louang namtha province
+    - luangnamtha
+    - luangnamtha province
+    - pl
+  category: PROVINCE

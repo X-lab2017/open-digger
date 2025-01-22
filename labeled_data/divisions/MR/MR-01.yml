@@ -1,0 +1,10 @@
+name: Hodh ech Chargui
+type: Division-1
+meta:
+  alpha2: MR-01
+  includes:
+    - hodh ech chargui
+    - mr-01
+    - '01'
+    - hodh ech chargui region
+  category: REGION

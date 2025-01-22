@@ -1,0 +1,12 @@
+name: Līvānu novads
+type: Division-1
+meta:
+  alpha2: LV-056
+  includes:
+    - līvānu novads
+    - lv-056
+    - '056'
+    - līvānu novads municipality
+    - līvāni
+    - līvāni municipality
+  category: MUNICIPALITY

@@ -1,0 +1,10 @@
+name: Illinois
+type: Division-1
+meta:
+  alpha2: US-IL
+  includes:
+    - illinois
+    - us-il
+    - il
+    - illinois state
+  category: STATE

@@ -1,0 +1,113 @@
+name: Moldova, Republic of
+type: Division-0
+meta:
+  alpha2: MD
+  includes:
+    - Moldova, Republic of
+    - MD
+    - '498'
+    - the Republic of Moldova
+    - 摩尔多瓦
+    - Moldova
+  name_full: the Republic of Moldova
+  name_zh: 摩尔多瓦
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 27810
+    - year: 2020
+      quarter: 2
+      count: 30541
+    - year: 2020
+      quarter: 3
+      count: 33494
+    - year: 2020
+      quarter: 4
+      count: 36114
+    - year: 2021
+      quarter: 1
+      count: 38908
+    - year: 2021
+      quarter: 2
+      count: 41360
+    - year: 2021
+      quarter: 3
+      count: 44012
+    - year: 2021
+      quarter: 4
+      count: 46410
+    - year: 2022
+      quarter: 1
+      count: 50309
+    - year: 2022
+      quarter: 2
+      count: 53706
+    - year: 2022
+      quarter: 3
+      count: 57060
+    - year: 2022
+      quarter: 4
+      count: 59824
+    - year: 2023
+      quarter: 1
+      count: 63551
+    - year: 2023
+      quarter: 2
+      count: 68424
+    - year: 2023
+      quarter: 3
+      count: 72401
+    - year: 2023
+      quarter: 4
+      count: 76570
+    - year: 2024
+      quarter: 1
+      count: 81565
+    - year: 2024
+      quarter: 2
+      count: 86583
+    - year: 2024
+      quarter: 3
+      count: 90299
+    - year: 2024
+      quarter: 4
+      count: 92841
+data:
+  labels:
+    - MD-AN
+    - MD-BS
+    - MD-BD
+    - MD-BR
+    - MD-BA
+    - MD-CA
+    - MD-CT
+    - MD-CU
+    - MD-CM
+    - MD-CR
+    - MD-CL
+    - MD-CS
+    - MD-DO
+    - MD-DR
+    - MD-DU
+    - MD-ED
+    - MD-FL
+    - MD-FA
+    - MD-GL
+    - MD-GA
+    - MD-HI
+    - MD-IA
+    - MD-LE
+    - MD-NI
+    - MD-OC
+    - MD-OR
+    - MD-RE
+    - MD-RI
+    - MD-SO
+    - MD-ST
+    - MD-SN
+    - MD-SI
+    - MD-TA
+    - MD-TE
+    - MD-UN
+    - MD-SD
+    - MD-SV

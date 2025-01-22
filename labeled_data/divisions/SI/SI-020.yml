@@ -1,0 +1,10 @@
+name: Dobrepolje
+type: Division-1
+meta:
+  alpha2: SI-020
+  includes:
+    - dobrepolje
+    - si-020
+    - '020'
+    - dobrepolje municipality
+  category: MUNICIPALITY

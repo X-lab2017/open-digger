@@ -1,0 +1,96 @@
+name: Mongolia
+type: Division-0
+meta:
+  alpha2: MN
+  includes:
+    - Mongolia
+    - MN
+    - '496'
+    - 蒙古
+  name_full: Mongolia
+  name_zh: 蒙古
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 14085
+    - year: 2020
+      quarter: 2
+      count: 15661
+    - year: 2020
+      quarter: 3
+      count: 16783
+    - year: 2020
+      quarter: 4
+      count: 18774
+    - year: 2021
+      quarter: 1
+      count: 20975
+    - year: 2021
+      quarter: 2
+      count: 22932
+    - year: 2021
+      quarter: 3
+      count: 24417
+    - year: 2021
+      quarter: 4
+      count: 26261
+    - year: 2022
+      quarter: 1
+      count: 28674
+    - year: 2022
+      quarter: 2
+      count: 30465
+    - year: 2022
+      quarter: 3
+      count: 32416
+    - year: 2022
+      quarter: 4
+      count: 34816
+    - year: 2023
+      quarter: 1
+      count: 37356
+    - year: 2023
+      quarter: 2
+      count: 39974
+    - year: 2023
+      quarter: 3
+      count: 44701
+    - year: 2023
+      quarter: 4
+      count: 47717
+    - year: 2024
+      quarter: 1
+      count: 51603
+    - year: 2024
+      quarter: 2
+      count: 54134
+    - year: 2024
+      quarter: 3
+      count: 55960
+    - year: 2024
+      quarter: 4
+      count: 58876
+data:
+  labels:
+    - MN-073
+    - MN-071
+    - MN-069
+    - MN-067
+    - MN-037
+    - MN-061
+    - MN-063
+    - MN-059
+    - MN-057
+    - MN-065
+    - MN-064
+    - MN-039
+    - MN-043
+    - MN-041
+    - MN-035
+    - MN-049
+    - MN-051
+    - MN-047
+    - MN-1
+    - MN-046
+    - MN-053
+    - MN-055

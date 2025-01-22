@@ -1,0 +1,12 @@
+name: Janūbī al Baḩrī al Aḩmar
+type: Division-1
+meta:
+  alpha2: ER-DK
+  includes:
+    - debubawi k’eyyĭḥ baḥri
+    - er-dk
+    - dk
+    - debubawi k’eyyĭḥ baḥri region
+    - janūbī al baḩrī al aḩmar
+    - janūbī al baḩrī al aḩmar region
+  category: REGION

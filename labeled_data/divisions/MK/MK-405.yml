@@ -1,0 +1,11 @@
+name: Gevgelija
+type: Division-1
+meta:
+  alpha2: MK-405
+  includes:
+    - gevgelija
+    - mk-405
+    - '405'
+    - gevgelija municipality
+    - municipality of gevgelija
+  category: MUNICIPALITY

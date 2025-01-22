@@ -1,0 +1,10 @@
+name: Fontvieille
+type: Division-1
+meta:
+  alpha2: MC-FO
+  includes:
+    - fontvieille
+    - mc-fo
+    - fo
+    - fontvieille quarter
+  category: QUARTER

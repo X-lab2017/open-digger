@@ -1,0 +1,14 @@
+name: Smolenskaya oblast'
+type: Division-1
+meta:
+  alpha2: RU-SMO
+  includes:
+    - smolenskaja oblast'
+    - ru-smo
+    - smo
+    - smolenskaja oblast' administrative region
+    - smolenskaya oblast'
+    - smolenskaya oblast' administrative region
+    - smolensk oblast
+    - smolensk
+  category: ADMINISTRATIVE REGION

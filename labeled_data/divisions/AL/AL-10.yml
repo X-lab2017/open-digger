@@ -1,0 +1,10 @@
+name: Shkodër
+type: Division-1
+meta:
+  alpha2: AL-10
+  includes:
+    - shkodër
+    - al-10
+    - '10'
+    - shkodër county
+  category: COUNTY

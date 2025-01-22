@@ -1,0 +1,35 @@
+name: Kalimantan
+type: Division-1
+meta:
+  alpha2: ID-KA
+  includes:
+    - kalimantan
+    - id-ka
+    - ka
+    - kalimantan geographical unit
+    - kalimantan barat
+    - id-kb
+    - kb
+    - kalimantan barat province
+    - kalimantan selatan
+    - id-ks
+    - ks
+    - kalimantan selatan province
+    - kalimantan tengah
+    - id-kt
+    - kt
+    - kalimantan tengah province
+    - kalimantan timur
+    - id-ki
+    - ki
+    - kalimantan timur province
+    - kalimantan utara
+    - id-ku
+    - ku
+    - kalimantan utara province
+    - central kalimantan
+    - west kalimantan
+    - south kalimantan
+    - east kalimantan
+    - north kalimantan
+  category: GEOGRAPHICAL UNIT

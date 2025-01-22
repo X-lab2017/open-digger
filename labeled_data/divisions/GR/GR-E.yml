@@ -1,0 +1,11 @@
+name: Thessalía
+type: Division-1
+meta:
+  alpha2: GR-E
+  includes:
+    - thessalía
+    - gr-e
+    - e
+    - thessalía administrative region
+    - thessaly
+  category: ADMINISTRATIVE REGION

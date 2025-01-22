@@ -1,0 +1,11 @@
+name: Santiago del Estero
+type: Division-1
+meta:
+  alpha2: AR-G
+  includes:
+    - santiago del estero
+    - ar-g
+    - g
+    - santiago del estero province
+    - sde
+  category: PROVINCE

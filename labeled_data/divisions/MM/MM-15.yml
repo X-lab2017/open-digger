@@ -1,0 +1,10 @@
+name: Mon
+type: Division-1
+meta:
+  alpha2: MM-15
+  includes:
+    - mon
+    - mm-15
+    - '15'
+    - mon state
+  category: STATE

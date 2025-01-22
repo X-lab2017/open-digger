@@ -1,0 +1,11 @@
+name: Ağdam
+type: Division-1
+meta:
+  alpha2: AZ-AGM
+  includes:
+    - ağdam
+    - az-agm
+    - agm
+    - ağdam rayon
+    - askeran province
+  category: RAYON

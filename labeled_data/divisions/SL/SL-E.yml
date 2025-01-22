@@ -1,0 +1,10 @@
+name: Eastern
+type: Division-1
+meta:
+  alpha2: SL-E
+  includes:
+    - eastern
+    - sl-e
+    - e
+    - eastern province
+  category: PROVINCE

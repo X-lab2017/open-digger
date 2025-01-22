@@ -1,0 +1,10 @@
+name: Ash Shamāl
+type: Division-1
+meta:
+  alpha2: QA-MS
+  includes:
+    - ash shamāl
+    - qa-ms
+    - ms
+    - ash shamāl municipality
+  category: MUNICIPALITY

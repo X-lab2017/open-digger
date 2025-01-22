@@ -1,0 +1,10 @@
+name: Ben Arous
+type: Division-1
+meta:
+  alpha2: TN-13
+  includes:
+    - ben arous
+    - tn-13
+    - '13'
+    - ben arous governorate
+  category: GOVERNORATE

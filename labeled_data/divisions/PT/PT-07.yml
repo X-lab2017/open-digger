@@ -1,0 +1,11 @@
+name: Évora
+type: Division-1
+meta:
+  alpha2: PT-07
+  includes:
+    - évora
+    - pt-07
+    - '07'
+    - évora district
+    - distrito de évora
+  category: DISTRICT

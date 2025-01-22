@@ -1,0 +1,12 @@
+name: Ḩawallī
+type: Division-1
+meta:
+  alpha2: KW-HA
+  includes:
+    - ḩawallī
+    - kw-ha
+    - ha
+    - ḩawallī governorate
+    - hawalli
+    - hawalli governorate
+  category: GOVERNORATE

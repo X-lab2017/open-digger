@@ -1,0 +1,10 @@
+name: Baranya
+type: Division-1
+meta:
+  alpha2: HU-BA
+  includes:
+    - baranya
+    - hu-ba
+    - ba
+    - baranya county
+  category: COUNTY

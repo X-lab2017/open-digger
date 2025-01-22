@@ -1,0 +1,11 @@
+name: Guarda
+type: Division-1
+meta:
+  alpha2: PT-09
+  includes:
+    - guarda
+    - pt-09
+    - '09'
+    - guarda district
+    - distrito da guarda
+  category: DISTRICT

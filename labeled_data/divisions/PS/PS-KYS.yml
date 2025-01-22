@@ -1,0 +1,12 @@
+name: Khān Yūnis
+type: Division-1
+meta:
+  alpha2: PS-KYS
+  includes:
+    - khan yunis
+    - ps-kys
+    - kys
+    - khan yunis governorate
+    - khān yūnis
+    - khān yūnis governorate
+  category: GOVERNORATE

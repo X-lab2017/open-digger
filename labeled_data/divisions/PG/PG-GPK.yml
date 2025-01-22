@@ -1,0 +1,10 @@
+name: Gulf
+type: Division-1
+meta:
+  alpha2: PG-GPK
+  includes:
+    - gulf
+    - pg-gpk
+    - gpk
+    - gulf province
+  category: PROVINCE

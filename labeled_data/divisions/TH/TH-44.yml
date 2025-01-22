@@ -1,0 +1,11 @@
+name: Maha Sarakham
+type: Division-1
+meta:
+  alpha2: TH-44
+  includes:
+    - maha sarakham
+    - th-44
+    - '44'
+    - maha sarakham province
+    - chang wat maha sarakham
+  category: PROVINCE

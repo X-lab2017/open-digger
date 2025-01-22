@@ -1,0 +1,10 @@
+name: Kolda
+type: Division-1
+meta:
+  alpha2: SN-KD
+  includes:
+    - kolda
+    - sn-kd
+    - kd
+    - kolda region
+  category: REGION

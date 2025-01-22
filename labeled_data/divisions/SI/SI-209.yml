@@ -1,0 +1,10 @@
+name: Rečica ob Savinji
+type: Division-1
+meta:
+  alpha2: SI-209
+  includes:
+    - rečica ob savinji
+    - si-209
+    - '209'
+    - rečica ob savinji municipality
+  category: MUNICIPALITY

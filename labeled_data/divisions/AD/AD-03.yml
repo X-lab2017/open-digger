@@ -1,0 +1,10 @@
+name: Encamp
+type: Division-1
+meta:
+  alpha2: AD-03
+  includes:
+    - encamp
+    - ad-03
+    - '03'
+    - encamp parish
+  category: PARISH

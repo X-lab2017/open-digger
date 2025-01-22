@@ -1,0 +1,14 @@
+name: Udmurtskaya Respublika
+type: Division-1
+meta:
+  alpha2: RU-UD
+  includes:
+    - udmurtskaja respublika
+    - ru-ud
+    - ud
+    - udmurtskaja respublika republic
+    - udmurtskaya respublika
+    - udmurtskaya respublika republic
+    - udmurt republic
+    - udmurtia
+  category: REPUBLIC

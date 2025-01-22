@@ -1,0 +1,10 @@
+name: Nampula
+type: Division-1
+meta:
+  alpha2: MZ-N
+  includes:
+    - nampula
+    - mz-n
+    - 'n'
+    - nampula province
+  category: PROVINCE

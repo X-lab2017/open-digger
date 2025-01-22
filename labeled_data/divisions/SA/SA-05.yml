@@ -1,0 +1,13 @@
+name: Al Qaşīm
+type: Division-1
+meta:
+  alpha2: SA-05
+  includes:
+    - al qaşīm
+    - sa-05
+    - '05'
+    - al qaşīm region
+    - alt
+    - al qassim province
+    - qas
+  category: REGION

@@ -1,0 +1,10 @@
+name: Glodeni
+type: Division-1
+meta:
+  alpha2: MD-GL
+  includes:
+    - glodeni
+    - md-gl
+    - gl
+    - glodeni district
+  category: DISTRICT

@@ -1,0 +1,10 @@
+name: Lakes
+type: Division-1
+meta:
+  alpha2: SS-LK
+  includes:
+    - lakes
+    - ss-lk
+    - lk
+    - lakes state
+  category: STATE

@@ -1,0 +1,97 @@
+name: Yemen
+type: Division-0
+meta:
+  alpha2: YE
+  includes:
+    - Yemen
+    - YE
+    - '887'
+    - the Republic of Yemen
+    - 也门
+  name_full: the Republic of Yemen
+  name_zh: 也门
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 12584
+    - year: 2020
+      quarter: 2
+      count: 14080
+    - year: 2020
+      quarter: 3
+      count: 15710
+    - year: 2020
+      quarter: 4
+      count: 17516
+    - year: 2021
+      quarter: 1
+      count: 19751
+    - year: 2021
+      quarter: 2
+      count: 21926
+    - year: 2021
+      quarter: 3
+      count: 24490
+    - year: 2021
+      quarter: 4
+      count: 27142
+    - year: 2022
+      quarter: 1
+      count: 29840
+    - year: 2022
+      quarter: 2
+      count: 32576
+    - year: 2022
+      quarter: 3
+      count: 36082
+    - year: 2022
+      quarter: 4
+      count: 40086
+    - year: 2023
+      quarter: 1
+      count: 44363
+    - year: 2023
+      quarter: 2
+      count: 48468
+    - year: 2023
+      quarter: 3
+      count: 54063
+    - year: 2023
+      quarter: 4
+      count: 59222
+    - year: 2024
+      quarter: 1
+      count: 64246
+    - year: 2024
+      quarter: 2
+      count: 67646
+    - year: 2024
+      quarter: 3
+      count: 72767
+    - year: 2024
+      quarter: 4
+      count: 79137
+data:
+  labels:
+    - YE-AB
+    - YE-BA
+    - YE-JA
+    - YE-MR
+    - YE-MW
+    - YE-HU
+    - YE-SA
+    - YE-SU
+    - YE-DA
+    - YE-DH
+    - YE-IB
+    - YE-LA
+    - YE-MA
+    - YE-RA
+    - YE-SH
+    - YE-TA
+    - YE-SN
+    - YE-SD
+    - YE-HJ
+    - YE-HD
+    - YE-AD
+    - YE-AM

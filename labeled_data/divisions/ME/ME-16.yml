@@ -1,0 +1,10 @@
+name: Podgorica
+type: Division-1
+meta:
+  alpha2: ME-16
+  includes:
+    - podgorica
+    - me-16
+    - '16'
+    - podgorica municipality
+  category: MUNICIPALITY

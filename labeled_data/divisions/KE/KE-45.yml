@@ -1,0 +1,10 @@
+name: Vihiga
+type: Division-1
+meta:
+  alpha2: KE-45
+  includes:
+    - vihiga
+    - ke-45
+    - '45'
+    - vihiga county
+  category: COUNTY

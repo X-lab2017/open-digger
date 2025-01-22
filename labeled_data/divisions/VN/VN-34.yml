@@ -1,0 +1,11 @@
+name: Khánh Hòa
+type: Division-1
+meta:
+  alpha2: VN-34
+  includes:
+    - khánh hòa
+    - vn-34
+    - '34'
+    - khánh hòa province
+    - khanh hoa
+  category: PROVINCE

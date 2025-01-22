@@ -1,0 +1,10 @@
+name: Chlef
+type: Division-1
+meta:
+  alpha2: DZ-02
+  includes:
+    - chlef
+    - dz-02
+    - '02'
+    - chlef province
+  category: PROVINCE

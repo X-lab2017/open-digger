@@ -1,0 +1,10 @@
+name: Mokronog-Trebelno
+type: Division-1
+meta:
+  alpha2: SI-199
+  includes:
+    - mokronog-trebelno
+    - si-199
+    - '199'
+    - mokronog-trebelno municipality
+  category: MUNICIPALITY

@@ -1,0 +1,10 @@
+name: Toplički okrug
+type: Division-1
+meta:
+  alpha2: RS-21
+  includes:
+    - toplički okrug
+    - rs-21
+    - '21'
+    - toplički okrug district
+  category: DISTRICT

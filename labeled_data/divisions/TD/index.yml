@@ -1,0 +1,98 @@
+name: Chad
+type: Division-0
+meta:
+  alpha2: TD
+  includes:
+    - Chad
+    - TD
+    - '148'
+    - the Republic of Chad
+    - 乍得
+  name_full: the Republic of Chad
+  name_zh: 乍得
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 263
+    - year: 2020
+      quarter: 2
+      count: 325
+    - year: 2020
+      quarter: 3
+      count: 379
+    - year: 2020
+      quarter: 4
+      count: 431
+    - year: 2021
+      quarter: 1
+      count: 476
+    - year: 2021
+      quarter: 2
+      count: 535
+    - year: 2021
+      quarter: 3
+      count: 636
+    - year: 2021
+      quarter: 4
+      count: 709
+    - year: 2022
+      quarter: 1
+      count: 850
+    - year: 2022
+      quarter: 2
+      count: 1015
+    - year: 2022
+      quarter: 3
+      count: 1147
+    - year: 2022
+      quarter: 4
+      count: 1288
+    - year: 2023
+      quarter: 1
+      count: 1477
+    - year: 2023
+      quarter: 2
+      count: 1616
+    - year: 2023
+      quarter: 3
+      count: 1819
+    - year: 2023
+      quarter: 4
+      count: 1988
+    - year: 2024
+      quarter: 1
+      count: 2191
+    - year: 2024
+      quarter: 2
+      count: 2365
+    - year: 2024
+      quarter: 3
+      count: 2558
+    - year: 2024
+      quarter: 4
+      count: 2855
+data:
+  labels:
+    - TD-BA
+    - TD-LC
+    - TD-BG
+    - TD-BO
+    - TD-CB
+    - TD-EE
+    - TD-EO
+    - TD-GR
+    - TD-HL
+    - TD-KA
+    - TD-LO
+    - TD-LR
+    - TD-ND
+    - TD-MA
+    - TD-ME
+    - TD-MO
+    - TD-MC
+    - TD-OD
+    - TD-SA
+    - TD-SI
+    - TD-TA
+    - TD-TI
+    - TD-WF

@@ -1,0 +1,10 @@
+name: Kayangel
+type: Division-1
+meta:
+  alpha2: PW-100
+  includes:
+    - kayangel
+    - pw-100
+    - '100'
+    - kayangel state
+  category: STATE

@@ -1,0 +1,10 @@
+name: Grand Bassa
+type: Division-1
+meta:
+  alpha2: LR-GB
+  includes:
+    - grand bassa
+    - lr-gb
+    - gb
+    - grand bassa county
+  category: COUNTY

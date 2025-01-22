@@ -1,0 +1,42 @@
+name: Rajshahi
+type: Division-1
+meta:
+  alpha2: BD-E
+  includes:
+    - bogura
+    - bd-03
+    - '03'
+    - bogura district
+    - chapai nawabganj
+    - bd-45
+    - '45'
+    - chapai nawabganj district
+    - joypurhat
+    - bd-24
+    - '24'
+    - joypurhat district
+    - naogaon
+    - bd-48
+    - '48'
+    - naogaon district
+    - natore
+    - bd-44
+    - '44'
+    - natore district
+    - pabna
+    - bd-49
+    - '49'
+    - pabna district
+    - rajshahi
+    - bd-e
+    - e
+    - rajshahi division
+    - bd-54
+    - '54'
+    - rajshahi district
+    - sirajganj
+    - bd-59
+    - '59'
+    - sirajganj district
+    - রাজশাহী বিভাগ
+  category: DIVISION

@@ -1,0 +1,11 @@
+name: Ličko-senjska županija
+type: Division-1
+meta:
+  alpha2: HR-09
+  includes:
+    - ličko-senjska županija
+    - hr-09
+    - '09'
+    - ličko-senjska županija county
+    - lika-senj county
+  category: COUNTY

@@ -1,0 +1,10 @@
+name: Johnston Atoll
+type: Division-1
+meta:
+  alpha2: UM-67
+  includes:
+    - johnston atoll
+    - um-67
+    - '67'
+    - johnston atoll islands, groups of islands
+  category: ISLANDS, GROUPS OF ISLANDS

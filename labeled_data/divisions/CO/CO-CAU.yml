@@ -1,0 +1,10 @@
+name: Cauca
+type: Division-1
+meta:
+  alpha2: CO-CAU
+  includes:
+    - cauca
+    - co-cau
+    - cau
+    - cauca department
+  category: DEPARTMENT

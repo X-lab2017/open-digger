@@ -1,0 +1,11 @@
+name: Olancho
+type: Division-1
+meta:
+  alpha2: HN-OL
+  includes:
+    - olancho
+    - hn-ol
+    - ol
+    - olancho department
+    - hnol
+  category: DEPARTMENT

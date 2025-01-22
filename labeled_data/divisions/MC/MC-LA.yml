@@ -1,0 +1,10 @@
+name: Larvotto
+type: Division-1
+meta:
+  alpha2: MC-LA
+  includes:
+    - larvotto
+    - mc-la
+    - la
+    - larvotto quarter
+  category: QUARTER

@@ -1,0 +1,10 @@
+name: Francistown
+type: Division-1
+meta:
+  alpha2: BW-FR
+  includes:
+    - francistown
+    - bw-fr
+    - fr
+    - francistown city
+  category: CITY

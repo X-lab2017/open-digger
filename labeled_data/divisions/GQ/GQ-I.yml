@@ -1,0 +1,36 @@
+name: Région Insulaire
+type: Division-1
+meta:
+  alpha2: GQ-I
+  includes:
+    - annobon
+    - gq-an
+    - an
+    - annobon province
+    - annobón
+    - annobón province
+    - ano bom
+    - ano bom province
+    - bioko nord
+    - gq-bn
+    - bn
+    - bioko nord province
+    - bioko norte
+    - bioko norte province
+    - bioko sud
+    - gq-bs
+    - bs
+    - bioko sud province
+    - bioko sul
+    - bioko sul province
+    - bioko sur
+    - bioko sur province
+    - região insular
+    - gq-i
+    - i
+    - região insular region
+    - región insular
+    - región insular region
+    - région insulaire
+    - région insulaire region
+  category: REGION

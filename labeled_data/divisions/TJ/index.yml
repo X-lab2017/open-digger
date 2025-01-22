@@ -1,0 +1,80 @@
+name: Tajikistan
+type: Division-0
+meta:
+  alpha2: TJ
+  includes:
+    - Tajikistan
+    - TJ
+    - '762'
+    - the Republic of Tajikistan
+    - 塔吉克斯坦
+  name_full: the Republic of Tajikistan
+  name_zh: 塔吉克斯坦
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 2599
+    - year: 2020
+      quarter: 2
+      count: 2811
+    - year: 2020
+      quarter: 3
+      count: 3194
+    - year: 2020
+      quarter: 4
+      count: 3756
+    - year: 2021
+      quarter: 1
+      count: 4327
+    - year: 2021
+      quarter: 2
+      count: 4808
+    - year: 2021
+      quarter: 3
+      count: 5274
+    - year: 2021
+      quarter: 4
+      count: 5597
+    - year: 2022
+      quarter: 1
+      count: 6140
+    - year: 2022
+      quarter: 2
+      count: 6721
+    - year: 2022
+      quarter: 3
+      count: 7424
+    - year: 2022
+      quarter: 4
+      count: 8244
+    - year: 2023
+      quarter: 1
+      count: 8937
+    - year: 2023
+      quarter: 2
+      count: 9613
+    - year: 2023
+      quarter: 3
+      count: 10610
+    - year: 2023
+      quarter: 4
+      count: 11355
+    - year: 2024
+      quarter: 1
+      count: 12351
+    - year: 2024
+      quarter: 2
+      count: 13040
+    - year: 2024
+      quarter: 3
+      count: 13891
+    - year: 2024
+      quarter: 4
+      count: 14692
+data:
+  labels:
+    - TJ-DU
+    - TJ-KT
+    - TJ-GB
+    - TJ-SU
+    - TJ-RA

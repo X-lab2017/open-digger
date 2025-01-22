@@ -1,0 +1,10 @@
+name: Gornji Grad
+type: Division-1
+meta:
+  alpha2: SI-030
+  includes:
+    - gornji grad
+    - si-030
+    - '030'
+    - gornji grad municipality
+  category: MUNICIPALITY

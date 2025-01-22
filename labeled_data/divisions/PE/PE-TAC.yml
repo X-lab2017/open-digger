@@ -1,0 +1,14 @@
+name: Tacna
+type: Division-1
+meta:
+  alpha2: PE-TAC
+  includes:
+    - tacna
+    - pe-tac
+    - tac
+    - tacna region
+    - takna
+    - takna region
+    - taqna
+    - taqna region
+  category: REGION

@@ -1,0 +1,10 @@
+name: Blida
+type: Division-1
+meta:
+  alpha2: DZ-09
+  includes:
+    - blida
+    - dz-09
+    - '09'
+    - blida province
+  category: PROVINCE

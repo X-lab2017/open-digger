@@ -1,0 +1,10 @@
+name: Sevastopol
+type: Division-1
+meta:
+  alpha2: UA-40
+  includes:
+    - sevastopol
+    - ua-40
+    - '40'
+    - sevastopol city
+  category: CITY

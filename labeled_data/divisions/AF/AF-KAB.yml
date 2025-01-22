@@ -1,0 +1,12 @@
+name: Kābul
+type: Division-1
+meta:
+  alpha2: AF-KAB
+  includes:
+    - kābul
+    - af-kab
+    - kab
+    - kābul province
+    - kabul
+    - kabul province
+  category: PROVINCE

@@ -1,0 +1,15 @@
+name: Guangdong Sheng
+type: Division-1
+meta:
+  alpha2: CN-GD
+  includes:
+    - guangdong sheng
+    - cn-gd
+    - gd
+    - guangdong sheng province
+    - guang dong sheng
+    - guangdong
+    - guangxi zhuang
+    - guangdong province
+    - 广东省
+  category: PROVINCE

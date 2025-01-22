@@ -1,0 +1,11 @@
+name: Gəncə
+type: Division-1
+meta:
+  alpha2: AZ-GA
+  includes:
+    - gəncə
+    - az-ga
+    - ga
+    - gəncə municipality
+    - ganja-dashkasan
+  category: MUNICIPALITY

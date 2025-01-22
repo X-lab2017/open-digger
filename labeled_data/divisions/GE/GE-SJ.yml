@@ -1,0 +1,10 @@
+name: Samtskhe-Javakheti
+type: Division-1
+meta:
+  alpha2: GE-SJ
+  includes:
+    - samtskhe-javakheti
+    - ge-sj
+    - sj
+    - samtskhe-javakheti region
+  category: REGION

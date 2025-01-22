@@ -1,0 +1,13 @@
+name: Toshkent
+type: Division-1
+meta:
+  alpha2: UZ-TO
+  includes:
+    - toshkent
+    - uz-to
+    - to
+    - toshkent region
+    - tashkent
+    - toshkent viloyati
+    - tashkent region
+  category: REGION

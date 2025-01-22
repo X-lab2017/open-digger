@@ -1,0 +1,10 @@
+name: Fiorentino
+type: Division-1
+meta:
+  alpha2: SM-05
+  includes:
+    - fiorentino
+    - sm-05
+    - '05'
+    - fiorentino municipality
+  category: MUNICIPALITY

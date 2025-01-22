@@ -1,0 +1,11 @@
+name: Ogun
+type: Division-1
+meta:
+  alpha2: NG-OG
+  includes:
+    - ogun
+    - ng-og
+    - og
+    - ogun state
+    - ìpínlẹ̀ ògùn
+  category: STATE

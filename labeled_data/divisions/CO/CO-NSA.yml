@@ -1,0 +1,11 @@
+name: Norte de Santander
+type: Division-1
+meta:
+  alpha2: CO-NSA
+  includes:
+    - norte de santander
+    - co-nsa
+    - nsa
+    - norte de santander department
+    - north santander
+  category: DEPARTMENT

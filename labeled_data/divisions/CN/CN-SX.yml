@@ -1,0 +1,13 @@
+name: Shanxi Sheng
+type: Division-1
+meta:
+  alpha2: CN-SX
+  includes:
+    - shanxi sheng
+    - cn-sx
+    - sx
+    - shanxi sheng province
+    - shan xi sheng
+    - shanxi
+    - 山西省
+  category: PROVINCE

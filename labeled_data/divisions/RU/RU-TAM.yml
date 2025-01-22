@@ -1,0 +1,14 @@
+name: Tambovskaya oblast'
+type: Division-1
+meta:
+  alpha2: RU-TAM
+  includes:
+    - tambovskaja oblast'
+    - ru-tam
+    - tam
+    - tambovskaja oblast' administrative region
+    - tambovskaya oblast'
+    - tambovskaya oblast' administrative region
+    - tambov oblast
+    - tambov
+  category: ADMINISTRATIVE REGION

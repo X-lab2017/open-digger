@@ -1,0 +1,13 @@
+name: Luhanska oblast
+type: Division-1
+meta:
+  alpha2: UA-09
+  includes:
+    - luhanska oblast
+    - ua-09
+    - '09'
+    - luhanska oblast region
+    - luhans'ka oblast
+    - luhansk oblast
+    - luhansk
+  category: REGION

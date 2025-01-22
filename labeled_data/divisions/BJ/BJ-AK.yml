@@ -1,0 +1,10 @@
+name: Atacora
+type: Division-1
+meta:
+  alpha2: BJ-AK
+  includes:
+    - atacora
+    - bj-ak
+    - ak
+    - atacora department
+  category: DEPARTMENT

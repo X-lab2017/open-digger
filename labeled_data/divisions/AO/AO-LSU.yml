@@ -1,0 +1,11 @@
+name: Lunda-Sul
+type: Division-1
+meta:
+  alpha2: AO-LSU
+  includes:
+    - lunda-sul
+    - ao-lsu
+    - lsu
+    - lunda-sul province
+    - lunda sul province
+  category: PROVINCE

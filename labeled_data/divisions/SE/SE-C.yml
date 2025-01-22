@@ -1,0 +1,11 @@
+name: Uppsala län
+type: Division-1
+meta:
+  alpha2: SE-C
+  includes:
+    - uppsala län
+    - se-c
+    - c
+    - uppsala län county
+    - uppsala county
+  category: COUNTY

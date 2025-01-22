@@ -1,0 +1,10 @@
+name: Dāykundī
+type: Division-1
+meta:
+  alpha2: AF-DAY
+  includes:
+    - dāykundī
+    - af-day
+    - day
+    - dāykundī province
+  category: PROVINCE

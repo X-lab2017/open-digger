@@ -1,0 +1,13 @@
+name: Dolnośląskie
+type: Division-1
+meta:
+  alpha2: PL-02
+  includes:
+    - dolnośląskie
+    - pl-02
+    - '02'
+    - dolnośląskie voivodship
+    - lower silesian voivodeship
+    - województwo dolnośląskie
+    - ds
+  category: VOIVODSHIP

@@ -1,0 +1,10 @@
+name: Ranong
+type: Division-1
+meta:
+  alpha2: TH-85
+  includes:
+    - ranong
+    - th-85
+    - '85'
+    - ranong province
+  category: PROVINCE

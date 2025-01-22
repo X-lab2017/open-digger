@@ -1,0 +1,72 @@
+name: Bermuda
+type: Division-0
+meta:
+  alpha2: BM
+  includes:
+    - Bermuda
+    - BM
+    - '060'
+    - 百慕大
+  name_full: Bermuda
+  name_zh: 百慕大
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 1061
+    - year: 2020
+      quarter: 2
+      count: 1163
+    - year: 2020
+      quarter: 3
+      count: 1240
+    - year: 2020
+      quarter: 4
+      count: 1329
+    - year: 2021
+      quarter: 1
+      count: 1421
+    - year: 2021
+      quarter: 2
+      count: 1482
+    - year: 2021
+      quarter: 3
+      count: 1560
+    - year: 2021
+      quarter: 4
+      count: 1631
+    - year: 2022
+      quarter: 1
+      count: 1710
+    - year: 2022
+      quarter: 2
+      count: 1756
+    - year: 2022
+      quarter: 3
+      count: 1826
+    - year: 2022
+      quarter: 4
+      count: 1883
+    - year: 2023
+      quarter: 1
+      count: 1927
+    - year: 2023
+      quarter: 2
+      count: 1993
+    - year: 2023
+      quarter: 3
+      count: 2061
+    - year: 2023
+      quarter: 4
+      count: 2161
+    - year: 2024
+      quarter: 1
+      count: 2215
+    - year: 2024
+      quarter: 2
+      count: 2281
+    - year: 2024
+      quarter: 3
+      count: 2382
+    - year: 2024
+      quarter: 4
+      count: 2662

@@ -1,0 +1,10 @@
+name: Chandīgarh
+type: Division-1
+meta:
+  alpha2: IN-CH
+  includes:
+    - chandīgarh
+    - in-ch
+    - ch
+    - chandīgarh union territory
+  category: UNION TERRITORY

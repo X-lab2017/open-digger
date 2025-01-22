@@ -1,0 +1,10 @@
+name: Kunene
+type: Division-1
+meta:
+  alpha2: NA-KU
+  includes:
+    - kunene
+    - na-ku
+    - ku
+    - kunene region
+  category: REGION

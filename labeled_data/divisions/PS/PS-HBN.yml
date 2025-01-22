@@ -1,0 +1,12 @@
+name: Hebron
+type: Division-1
+meta:
+  alpha2: PS-HBN
+  includes:
+    - al khalīl
+    - ps-hbn
+    - hbn
+    - al khalīl governorate
+    - hebron
+    - hebron governorate
+  category: GOVERNORATE

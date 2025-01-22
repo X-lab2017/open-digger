@@ -1,0 +1,12 @@
+name: Echternach
+type: Division-1
+meta:
+  alpha2: LU-EC
+  includes:
+    - echternach
+    - lu-ec
+    - ec
+    - echternach canton
+    - iechternach
+    - iechternach canton
+  category: CANTON

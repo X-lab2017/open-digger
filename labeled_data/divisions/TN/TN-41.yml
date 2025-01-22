@@ -1,0 +1,11 @@
+name: Kairouan
+type: Division-1
+meta:
+  alpha2: TN-41
+  includes:
+    - kairouan
+    - tn-41
+    - '41'
+    - kairouan governorate
+    - gouvernorat de kairouan
+  category: GOVERNORATE

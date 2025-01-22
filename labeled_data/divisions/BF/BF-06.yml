@@ -1,0 +1,27 @@
+name: Centre-Ouest
+type: Division-1
+meta:
+  alpha2: BF-06
+  includes:
+    - boulkiemdé
+    - bf-blk
+    - blk
+    - boulkiemdé province
+    - centre-ouest
+    - bf-06
+    - '06'
+    - centre-ouest region
+    - sanguié
+    - bf-sng
+    - sng
+    - sanguié province
+    - sissili
+    - bf-sis
+    - sis
+    - sissili province
+    - ziro
+    - bf-zir
+    - zir
+    - ziro province
+    - central-west
+  category: REGION

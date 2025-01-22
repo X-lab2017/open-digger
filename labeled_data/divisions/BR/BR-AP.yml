@@ -1,0 +1,11 @@
+name: Amapá
+type: Division-1
+meta:
+  alpha2: BR-AP
+  includes:
+    - amapá
+    - br-ap
+    - ap
+    - amapá state
+    - state of amapá
+  category: STATE

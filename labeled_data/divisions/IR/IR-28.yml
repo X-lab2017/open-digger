@@ -1,0 +1,11 @@
+name: Khorāsān-e Shomālī
+type: Division-1
+meta:
+  alpha2: IR-28
+  includes:
+    - khorāsān-e shomālī
+    - ir-28
+    - '28'
+    - khorāsān-e shomālī province
+    - north khorasan province
+  category: PROVINCE

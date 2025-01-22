@@ -1,0 +1,13 @@
+name: Hiiumaa
+type: Division-1
+meta:
+  alpha2: EE-39
+  includes:
+    - hiiumaa
+    - ee-39
+    - '39'
+    - hiiumaa county
+    - ee-205
+    - '205'
+    - hiiumaa rural municipality
+  category: COUNTY

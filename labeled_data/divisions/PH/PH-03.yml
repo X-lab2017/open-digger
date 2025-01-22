@@ -1,0 +1,48 @@
+name: Central Luzon
+type: Division-1
+meta:
+  alpha2: PH-03
+  includes:
+    - aurora
+    - ph-aur
+    - aur
+    - aurora province
+    - bataan
+    - ph-ban
+    - ban
+    - bataan province
+    - bulacan
+    - ph-bul
+    - bul
+    - bulacan province
+    - bulakan
+    - bulakan province
+    - central luzon
+    - ph-03
+    - '03'
+    - central luzon region
+    - nueva ecija
+    - ph-nue
+    - nue
+    - nueva ecija province
+    - nuweva esiha
+    - nuweva esiha province
+    - pampanga
+    - ph-pam
+    - pam
+    - pampanga province
+    - rehiyon ng gitnang luson
+    - rehiyon ng gitnang luson region
+    - sambales
+    - ph-zmb
+    - zmb
+    - sambales province
+    - tarlac
+    - ph-tar
+    - tar
+    - tarlac province
+    - tarlak
+    - tarlak province
+    - zambales
+    - zambales province
+  category: REGION

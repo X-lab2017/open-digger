@@ -1,0 +1,24 @@
+name: Valgamaa
+type: Division-1
+meta:
+  alpha2: EE-81
+  includes:
+    - otepää
+    - ee-557
+    - '557'
+    - otepää rural municipality
+    - tõrva
+    - ee-824
+    - '824'
+    - tõrva rural municipality
+    - valga
+    - ee-855
+    - '855'
+    - valga rural municipality
+    - valgamaa
+    - ee-81
+    - '81'
+    - valgamaa county
+    - valga county
+    - valga maakond
+  category: COUNTY

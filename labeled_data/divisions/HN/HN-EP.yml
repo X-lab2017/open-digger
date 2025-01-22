@@ -1,0 +1,11 @@
+name: El Paraíso
+type: Division-1
+meta:
+  alpha2: HN-EP
+  includes:
+    - el paraíso
+    - hn-ep
+    - ep
+    - el paraíso department
+    - hnep
+  category: DEPARTMENT

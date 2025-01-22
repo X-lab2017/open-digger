@@ -1,0 +1,10 @@
+name: An Giang
+type: Division-1
+meta:
+  alpha2: VN-44
+  includes:
+    - an giang
+    - vn-44
+    - '44'
+    - an giang province
+  category: PROVINCE

@@ -1,0 +1,10 @@
+name: Bitlis
+type: Division-1
+meta:
+  alpha2: TR-13
+  includes:
+    - bitlis
+    - tr-13
+    - '13'
+    - bitlis province
+  category: PROVINCE

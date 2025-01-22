@@ -1,0 +1,10 @@
+name: Sonsorol
+type: Division-1
+meta:
+  alpha2: PW-370
+  includes:
+    - sonsorol
+    - pw-370
+    - '370'
+    - sonsorol state
+  category: STATE

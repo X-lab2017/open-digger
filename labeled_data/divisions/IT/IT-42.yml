@@ -1,0 +1,27 @@
+name: Liguria
+type: Division-1
+meta:
+  alpha2: IT-42
+  includes:
+    - genova
+    - it-ge
+    - ge
+    - genova metropolitan city
+    - imperia
+    - it-im
+    - im
+    - imperia province
+    - la spezia
+    - it-sp
+    - sp
+    - la spezia province
+    - liguria
+    - it-42
+    - '42'
+    - liguria region
+    - savona
+    - it-sv
+    - sv
+    - savona province
+    - lig.
+  category: REGION

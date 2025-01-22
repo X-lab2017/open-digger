@@ -1,0 +1,10 @@
+name: Pčinjski okrug
+type: Division-1
+meta:
+  alpha2: RS-24
+  includes:
+    - pčinjski okrug
+    - rs-24
+    - '24'
+    - pčinjski okrug district
+  category: DISTRICT

@@ -1,0 +1,10 @@
+name: Centar Župa
+type: Division-1
+meta:
+  alpha2: MK-313
+  includes:
+    - centar župa
+    - mk-313
+    - '313'
+    - centar župa municipality
+  category: MUNICIPALITY

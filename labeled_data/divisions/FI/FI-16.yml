@@ -1,0 +1,13 @@
+name: Päijänne-Tavastland
+type: Division-1
+meta:
+  alpha2: FI-16
+  includes:
+    - päijänne-tavastland
+    - fi-16
+    - '16'
+    - päijänne-tavastland region
+    - päijät-häme
+    - päijät-häme region
+    - päijänne tavastia
+  category: REGION

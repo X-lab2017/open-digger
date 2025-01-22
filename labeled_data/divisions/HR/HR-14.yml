@@ -1,0 +1,12 @@
+name: Osječko-baranjska županija
+type: Division-1
+meta:
+  alpha2: HR-14
+  includes:
+    - osječko-baranjska županija
+    - hr-14
+    - '14'
+    - osječko-baranjska županija county
+    - osijek-baranja
+    - osijek-baranja county
+  category: COUNTY

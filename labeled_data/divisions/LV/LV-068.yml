@@ -1,0 +1,12 @@
+name: Olaines novads
+type: Division-1
+meta:
+  alpha2: LV-068
+  includes:
+    - olaines novads
+    - lv-068
+    - '068'
+    - olaines novads municipality
+    - olaine
+    - olaine municipality
+  category: MUNICIPALITY

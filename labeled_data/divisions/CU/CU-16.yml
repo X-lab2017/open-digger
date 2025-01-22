@@ -1,0 +1,10 @@
+name: Mayabeque
+type: Division-1
+meta:
+  alpha2: CU-16
+  includes:
+    - mayabeque
+    - cu-16
+    - '16'
+    - mayabeque province
+  category: PROVINCE

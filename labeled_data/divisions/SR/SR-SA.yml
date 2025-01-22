@@ -1,0 +1,10 @@
+name: Saramacca
+type: Division-1
+meta:
+  alpha2: SR-SA
+  includes:
+    - saramacca
+    - sr-sa
+    - sa
+    - saramacca district
+  category: DISTRICT

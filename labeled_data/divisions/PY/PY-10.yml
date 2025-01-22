@@ -1,0 +1,10 @@
+name: Alto Paraná
+type: Division-1
+meta:
+  alpha2: PY-10
+  includes:
+    - alto paraná
+    - py-10
+    - '10'
+    - alto paraná department
+  category: DEPARTMENT

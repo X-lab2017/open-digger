@@ -1,0 +1,10 @@
+name: Kingman Reef
+type: Division-1
+meta:
+  alpha2: UM-89
+  includes:
+    - kingman reef
+    - um-89
+    - '89'
+    - kingman reef islands, groups of islands
+  category: ISLANDS, GROUPS OF ISLANDS

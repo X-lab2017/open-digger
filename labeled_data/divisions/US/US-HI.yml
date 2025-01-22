@@ -1,0 +1,10 @@
+name: Hawaii
+type: Division-1
+meta:
+  alpha2: US-HI
+  includes:
+    - hawaii
+    - us-hi
+    - hi
+    - hawaii state
+  category: STATE

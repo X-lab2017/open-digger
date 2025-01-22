@@ -1,0 +1,11 @@
+name: Hessen
+type: Division-1
+meta:
+  alpha2: DE-HE
+  includes:
+    - hessen
+    - de-he
+    - he
+    - hessen land
+    - hesse
+  category: LAND

@@ -1,0 +1,10 @@
+name: Oregon
+type: Division-1
+meta:
+  alpha2: US-OR
+  includes:
+    - oregon
+    - us-or
+    - or
+    - oregon state
+  category: STATE
