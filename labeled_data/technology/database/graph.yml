@@ -13,6 +13,8 @@ data:
           name: DevrexLabs/OrigoDB
         - id: 77385607
           name: JanusGraph/janusgraph
+        - id: 92834468
+          name: Pometry/Raphtory
         - id: 45098765
           name: PureSolTechnologies/DuctileDB
         - id: 84458512
