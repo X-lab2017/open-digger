@@ -1,0 +1,9 @@
+name: DeepSeek-V3
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 908531752
+          name: deepseek-ai/DeepSeek-V3

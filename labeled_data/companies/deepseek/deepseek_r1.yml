@@ -1,0 +1,9 @@
+name: DeepSeek-R1
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 919443098
+          name: deepseek-ai/DeepSeek-R1

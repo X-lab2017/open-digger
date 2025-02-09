@@ -1,0 +1,9 @@
+name: DeepSeek
+type: Company
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 148330874
+          name: deepseek-ai

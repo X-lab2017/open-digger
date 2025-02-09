@@ -1,0 +1,9 @@
+name: DeepSeek-VL2
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 902697574
+          name: deepseek-ai/DeepSeek-VL2
