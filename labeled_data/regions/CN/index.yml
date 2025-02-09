@@ -24,6 +24,7 @@ data:
     - ':companies/datafuse'
     - ':companies/dcloud'
     - ':companies/deepin'
+    - ':companies/deepseek'
     - ':companies/didi'
     - ':companies/douban'
     - ':companies/easycorp'
