@@ -1,0 +1,67 @@
+name: TIER IV
+type: Company
+data:
+  platforms:
+  - name: GitHub
+    type: Code Hosting
+    repos:
+    - id: 112568248
+      name: tier4/autoware_web_runtime_manager
+    - id: 144928800
+      name: tier4/car_demo
+    - id: 154299261
+      name: tier4/momo
+    - id: 160408552
+      name: tier4/ds4
+    - id: 161295670
+      name: tier4/pcd2kml
+    - id: 165159379
+      name: tier4/lgsvl_simulator_launcher
+    - id: 166027868
+      name: tier4/bag2csv
+    - id: 166358893
+      name: tier4/vehicle_sim
+    - id: 167298169
+      name: tier4/RoadArchitect
+    - id: 176035521
+      name: tier4/tlr_mxnet
+    - id: 180076929
+      name: tier4/carla
+    - id: 188987396
+      name: tier4/MapToolbox
+    - id: 192694079
+      name: tier4/AutomanTools
+    - id: 192698150
+      name: tier4/automan-rosbag-extractor
+    - id: 192698225
+      name: tier4/automan-rosbag-analyzer
+    - id: 192698718
+      name: tier4/automan-annotation-archiver
+    - id: 196561970
+      name: tier4/state_viewer
+    - id: 196562173
+      name: tier4/velodyne_monitor
+    - id: 196582782
+      name: tier4/system_monitor
+    - id: 197164650
+      name: tier4/audio_common
+    - id: 197165450
+      name: tier4/ros_comm
+    - id: 197371971
+      name: tier4/state_interpreter
+    - id: 203823105
+      name: tier4/deadreckoner
+    - id: 204377466
+      name: tier4/webviz
+    - id: 205123254
+      name: tier4/simulator
+    - id: 205798272
+      name: tier4/ad-rss-lib
+    - id: 207248577
+      name: tier4/event_capture
+    - id: 207291236
+      name: tier4/fake_obstacle_perception
+    - id: 215826561
+      name: tier4/motion_creator
+    - id: 215944516
+      name: tier4/tunable_static_tf_broadcaster

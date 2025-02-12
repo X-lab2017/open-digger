@@ -1,0 +1,43 @@
+name: Tenstorrent
+type: Company
+data:
+  platforms:
+  - name: GitHub
+    type: Code Hosting
+    repos:
+    - id: 514042312
+      name: tenstorrent/riscv-ocelot
+    - id: 531505212
+      name: tenstorrent/cosim-arch-checker
+    - id: 419446846
+      name: tenstorrent/whisper
+    - id: 721386105
+      name: tenstorrent/tt-buda
+    - id: 722313558
+      name: tenstorrent/luwen
+    - id: 722317998
+      name: tenstorrent/tt-smi
+    - id: 514045213
+      name: tenstorrent/chipyard
+    - id: 629113928
+      name: tenstorrent/edenai-apis
+    - id: 477127697
+      name: tenstorrent/dotfiles
+    - id: 291140906
+      name: tenstorrent/DeepLearningExamples
+    - id: 722347901
+      name: tenstorrent/tt-flash
+    - id: 514404192
+      name: tenstorrent/rocket-chip
+    - id: 531510707
+      name: tenstorrent/rv-core-dv-kit
+    - id: 419446846
+      name: tenstorrent/SweRV-ISS
+    - id: 535783971
+      name: tenstorrent/riscv_arch_tests
+    - id: 721810718
+      name: tenstorrent/tt-kmd
+    - id: 721813809
+      name: tenstorrent/tt-firmware-gs
+    - id: 645438062
+      name: tenstorrent/spike

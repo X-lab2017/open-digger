@@ -1,0 +1,67 @@
+name: Rivos
+type: Company
+data:
+  platforms:
+  - name: GitHub
+    type: Code Hosting
+    repos:
+    - id: 457890639
+      name: rivosinc/gem5
+    - id: 491631912
+      name: rivosinc/pcie-power-logger
+    - id: 508201322
+      name: rivosinc/salus
+    - id: 516462102
+      name: rivosinc/hubris
+    - id: 516462251
+      name: rivosinc/humility
+    - id: 516465790
+      name: rivosinc/riscv-semihosting
+    - id: 516529497
+      name: rivosinc/riscv
+    - id: 521037759
+      name: rivosinc/fdt-rs
+    - id: 523888396
+      name: rivosinc/rusb
+    - id: 525505087
+      name: rivosinc/linux
+    - id: 525512804
+      name: rivosinc/qemu
+    - id: 527733270
+      name: rivosinc/riscv-psuedo-atomics
+    - id: 531286651
+      name: rivosinc/plct-gem5
+    - id: 531440666
+      name: rivosinc/jdk
+    - id: 535195304
+      name: rivosinc/riscv-rt
+    - id: 539348454
+      name: rivosinc/hammer
+    - id: 542310252
+      name: rivosinc/binutils-gdb
+    - id: 542311431
+      name: rivosinc/riscv-isa-sim
+    - id: 542312600
+      name: rivosinc/sail-riscv
+    - id: 542313012
+      name: rivosinc/riscv-opcodes
+    - id: 542313190
+      name: rivosinc/riscof
+    - id: 542314063
+      name: rivosinc/riscv-config
+    - id: 542314209
+      name: rivosinc/riscv-arch-test
+    - id: 542314424
+      name: rivosinc/riscv-isac
+    - id: 546176865
+      name: rivosinc/rice
+    - id: 546196557
+      name: rivosinc/llvm-project
+    - id: 550515864
+      name: rivosinc/lpc55_support
+    - id: 560600951
+      name: rivosinc/rivosinc.github.io
+    - id: 561105566
+      name: rivosinc/crosvm
+    - id: 565785751
+      name: rivosinc/rules_rust
