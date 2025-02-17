@@ -158,10 +158,10 @@ FROM
           GROUP BY
             platform, repo_id, actor_id, time
         ) data
-      GROUP BY id, actor_id, platform, time
+      GROUP BY id, actor_id, p, time
       ORDER BY openrank DESC
     )
-    GROUP BY id, time
+    GROUP BY id, time, platform
 )
 GROUP BY id, platform
 ${getOutterOrderAndLimit({ ...config, order: undefined }, 'openrank')}
