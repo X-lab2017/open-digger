@@ -1,0 +1,67 @@
+name: Pythagora
+type: Company
+data:
+  platforms:
+  - name: GitHub
+    type: Code Hosting
+    repos:
+    - id: 591742672
+      name: Pythagora-io/pythagora
+    - id: 624010999
+      name: Pythagora-io/redis_interceptor
+    - id: 631044256
+      name: Pythagora-io/pythagora-demo-mern-ecommerce
+    - id: 632991955
+      name: Pythagora-io/pythagora-demo-reddish
+    - id: 632992324
+      name: Pythagora-io/pythagora-demo-trellis
+    - id: 650039864
+      name: Pythagora-io/pythagora-demo-node-fs-extra
+    - id: 650172199
+      name: Pythagora-io/pythagora-demo-lodash
+    - id: 666377435
+      name: Pythagora-io/js-code-processing
+    - id: 668198120
+      name: Pythagora-io/pythagora-demo-node-express-boilerplate
+    - id: 679237742
+      name: Pythagora-io/gpt-pilot
+    - id: 679595283
+      name: Pythagora-io/gpt-pilot-demo-markdown-editor
+    - id: 679688176
+      name: Pythagora-io/gpt-pilot-chat-app-demo
+    - id: 679692314
+      name: Pythagora-io/gpt-pilot-timer-app-demo
+    - id: 730342507
+      name: Pythagora-io/example-stars
+    - id: 748324701
+      name: Pythagora-io/credit-based-backend-gpt-pilot-example
+    - id: 749161596
+      name: Pythagora-io/gpt-pilot-sqlite-analysis-tool
+    - id: 749594736
+      name: Pythagora-io/useful
+    - id: 750023066
+      name: Pythagora-io/gpt-pilot-db-analysis-tool
+    - id: 750702184
+      name: Pythagora-io/pythagora-prompt-lab
+    - id: 754486771
+      name: Pythagora-io/star-history
+    - id: 754868834
+      name: Pythagora-io/codebase-chat
+    - id: 755272354
+      name: Pythagora-io/vanish-talk
+    - id: 764515662
+      name: Pythagora-io/gpt-optimizely
+    - id: 783793380
+      name: Pythagora-io/echo-sphere
+    - id: 814023241
+      name: Pythagora-io/eval-tool
+    - id: 814126318
+      name: Pythagora-io/pythagora-lab
+    - id: 865065840
+      name: Pythagora-io/deep-thoughts
+    - id: 866552301
+      name: Pythagora-io/custom-chat-bot
+    - id: 876152174
+      name: Pythagora-io/ai-visual-website-builder
+    - id: 880938273
+      name: Pythagora-io/CodeMorph
