@@ -1,0 +1,11 @@
+name: SelectDB
+type: Company
+data:
+  labels:
+    - doris
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 102591873
+          name: SelectDB
