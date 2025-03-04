@@ -335,7 +335,7 @@ FROM
       max(created_at) AS last_active,
       minIf(created_at, action = 'opened' AND issue_comments = 0) AS issue_created_at,
       minIf(created_at, (action = 'created' AND actor_id != issue_author_id) OR (action = 'closed')) AS responded_at,
-      if(responded_at = toDate('1970-01-01'), now(), responded_at) AS first_responded_at,
+      if(toYYYYMMDD(responded_at) = 19700101, addDays(issue_created_at, 15), responded_at) AS first_responded_at,
       dateDiff('${unit}', issue_created_at, first_responded_at) AS response_time,
       multiIf(${thresholds.map((t, i) => `response_time <= ${t}, ${i}`)}, ${thresholds.length}) AS response_level
     FROM events
@@ -407,7 +407,7 @@ FROM
       max(created_at) AS last_active,
       minIf(created_at, action = 'opened') AS opened_at,
       maxIf(created_at, action = 'closed') AS real_closed_at,
-      if(real_closed_at=toDate('1970-1-1'), ${endTimeClause}, real_closed_at) AS closed_at
+      if(toYYYYMMDD(real_closed_at)=19700101, ${endTimeClause}, real_closed_at) AS closed_at
     FROM events
     WHERE ${whereClauses.join(' AND ')}
     GROUP BY repo_id, org_id, issue_number, platform
