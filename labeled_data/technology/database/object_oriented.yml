@@ -41,8 +41,6 @@ data:
           name: cloudberrydb/cloudberrydb
         - id: 95070401
           name: devrexlabs/memstate
-        - id: 95817032
-          name: edgedb/edgedb
         - id: 15001136
           name: etoile/CoreObject
         - id: 145843258
@@ -51,6 +49,8 @@ data:
           name: fern4lvarez/piladb
         - id: 240387847
           name: gaia-platform/GaiaPlatform
+        - id: 95817032
+          name: geldata/gel
         - id: 32137101
           name: google-code-export/twig-persist
         - id: 48279725

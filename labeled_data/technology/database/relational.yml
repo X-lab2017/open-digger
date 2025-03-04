@@ -77,6 +77,8 @@ data:
           name: VoltDB/voltdb
         - id: 416777125
           name: alexraffy/sksql
+        - id: 692348247
+          name: amelielabs/amelie
         - id: 3927863
           name: antonmks/Alenka
         - id: 358917318
@@ -179,8 +181,6 @@ data:
           name: dremio/dremio-oss
         - id: 138754790
           name: duckdb/duckdb
-        - id: 95817032
-          name: edgedb/edgedb
         - id: 341208515
           name: edgelesssys/edgelessdb
         - id: 61373806
@@ -209,6 +209,8 @@ data:
           name: fosslc/Ingres
         - id: 29210020
           name: gavioto/fastdb
+        - id: 95817032
+          name: geldata/gel
         - id: 148087762
           name: georgia-tech-db/eva
         - id: 3084708
