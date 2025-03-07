@@ -105,3 +105,5 @@ data:
           name: typedb/typedb
         - id: 146459443
           name: vesoft-inc/nebula
+        - id: 759929648
+          name: youtrackdb/youtrackdb

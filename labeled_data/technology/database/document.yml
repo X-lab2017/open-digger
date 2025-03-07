@@ -191,6 +191,8 @@ data:
           name: orientechnologies/orientdb
         - id: 453191009
           name: ostafen/clover
+        - id: 207457900
+          name: patx/kenobi
         - id: 2662146
           name: patx/pickledb
         - id: 39519916
