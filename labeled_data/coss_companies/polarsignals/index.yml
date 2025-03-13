@@ -1,0 +1,67 @@
+name: Polarsignals
+type: Company
+data:
+  platforms:
+  - name: GitHub
+    type: Code Hosting
+    repos:
+    - id: 332722122
+      name: polarsignals/issues
+    - id: 335661888
+      name: polarsignals/pprof-example-app-go
+    - id: 355630847
+      name: polarsignals/pprof-example-app-node
+    - id: 357287491
+      name: polarsignals/pprof-labels-example
+    - id: 386640265
+      name: polarsignals/pprofme
+    - id: 460623595
+      name: polarsignals/buf_tour
+    - id: 473235285
+      name: polarsignals/frostdb
+    - id: 495807529
+      name: polarsignals/docs
+    - id: 498651327
+      name: polarsignals/split-debug
+    - id: 509588327
+      name: polarsignals/epimetheus
+    - id: 511414190
+      name: polarsignals/apis
+    - id: 524119109
+      name: polarsignals/kubectl-container
+    - id: 573524744
+      name: polarsignals/connect-go-prometheus
+    - id: 597069900
+      name: polarsignals/go
+    - id: 632506242
+      name: polarsignals/demangle
+    - id: 632917179
+      name: polarsignals/wal
+    - id: 641485698
+      name: polarsignals/gh-actions-ps-profiling
+    - id: 662481201
+      name: polarsignals/bpftool-container
+    - id: 680038366
+      name: polarsignals/sources-demo
+    - id: 681630763
+      name: polarsignals/arrow
+    - id: 697321243
+      name: polarsignals/profile-exporter
+    - id: 720124906
+      name: polarsignals/otelfuncmeta
+    - id: 730675153
+      name: polarsignals/rust-jemalloc-pprof
+    - id: 767058687
+      name: polarsignals/otel-profiling-go
+    - id: 768153090
+      name: polarsignals/vault
+    - id: 771078620
+      name: polarsignals/iceberg-go
+    - id: 795242681
+      name: polarsignals/custom-labels
+    - id: 797749110
+      name: polarsignals/workshops
+    - id: 822490212
+      name: polarsignals/rprof
+    - id: 858706516
+      name: polarsignals/arrow-rs
