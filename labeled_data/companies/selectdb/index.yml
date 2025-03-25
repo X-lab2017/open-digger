@@ -2,7 +2,7 @@ name: SelectDB
 type: Company
 data:
   labels:
-    - doris
+    - ':companies/baidu/doris'
   platforms:
     - name: GitHub
       type: Code Hosting
