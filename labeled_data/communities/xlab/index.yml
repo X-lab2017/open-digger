@@ -5,6 +5,7 @@ data:
     - hypertrons
     - open_digger
     - open_galaxy
+    - hypercrx
   platforms:
     - name: GitHub
       type: Code Hosting

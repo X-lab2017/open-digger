@@ -1,0 +1,9 @@
+name: HyperCRX
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 259035151
+          name: hypertrons/hypertrons-crx
