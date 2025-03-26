@@ -1,5 +1,5 @@
 import assert from 'assert';
-import { getPlatformData, getLabelData } from '../src/label_data_utils';
+import { getPlatformData, getLabelData } from '../src/labelDataUtils';
 
 describe('Label data test', () => {
   it('Should return correct label data', () => {

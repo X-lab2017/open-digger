@@ -1,5 +1,5 @@
 const func = require('../lib/metrics/index');
-const label = require('../lib/label_data_utils');
+const label = require('../lib/labelDataUtils');
 const neo4j = require('../lib/db/neo4j');
 const clickhouse = require('../lib/db/clickhouse');
 const plotly = require('ijavascript-plotly');

@@ -1,6 +1,6 @@
 import { merge } from 'lodash';
 import { query } from '../db/clickhouse';
-import { getPlatformData, getLabelData, PlatformNames } from '../label_data_utils';
+import { getPlatformData, getLabelData, PlatformNames } from '../labelDataUtils';
 
 export interface QueryConfig<T = any> {
   labelUnion?: string[];
