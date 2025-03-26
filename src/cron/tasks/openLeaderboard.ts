@@ -3,7 +3,7 @@ import { Task } from '..';
 import { getRepoActivity, getRepoOpenrank, getUserActivity, getUserCommunityOpenrank } from '../../metrics/indices';
 import { forEveryMonth } from '../../metrics/basic';
 import { getLogger, rankData } from '../../utils';
-import { getPlatformData } from '../../label_data_utils';
+import { getPlatformData } from '../../labelDataUtils';
 
 const task: Task = {
   cron: '0 0 15 * *',    // runs on the 15th day of every month at 00:00

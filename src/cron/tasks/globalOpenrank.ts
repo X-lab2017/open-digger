@@ -2,7 +2,7 @@ import { appendFileSync } from 'fs';
 import { Task } from '..';
 import * as clickhouse from '../../db/clickhouse';
 import * as neo4j from '../../db/neo4j';
-import { getPlatformData } from '../../label_data_utils';
+import { getPlatformData } from '../../labelDataUtils';
 import { forEveryMonth } from '../../metrics/basic';
 import { getLogger } from '../../utils';
 

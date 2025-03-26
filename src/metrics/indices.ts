@@ -14,7 +14,7 @@ import {
   getInnerGroupBy
 } from './basic';
 import * as clickhouse from '../db/clickhouse';
-import { getPlatformData } from '../label_data_utils';
+import { getPlatformData } from '../labelDataUtils';
 
 export const ISSUE_COMMENT_WEIGHT = 0.5252;
 export const OPEN_ISSUE_WEIGHT = 2.2235;

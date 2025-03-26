@@ -1,5 +1,5 @@
 import { query } from "../db/clickhouse";
-import { getLabelData, getPlatformData } from "../label_data_utils";
+import { getLabelData, getPlatformData } from "../labelDataUtils";
 
 (async () => {
   const labels = getLabelData();

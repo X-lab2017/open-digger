@@ -1,6 +1,6 @@
 import { getRepoOpenrank, getUserOpenrank } from "../metrics/indices";
 import { countryInfo } from "../static/countries";
-import { getLabelData } from "../label_data_utils";
+import { getLabelData } from "../labelDataUtils";
 
 (async () => {
   const labels = getLabelData();

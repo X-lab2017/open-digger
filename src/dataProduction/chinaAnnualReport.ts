@@ -1,4 +1,4 @@
-import { getLabelData } from "../label_data_utils";
+import { getLabelData } from "../labelDataUtils";
 import { QueryConfig } from "../metrics/basic";
 import { getRepoOpenrank } from "../metrics/indices";
 import { repoCount, repoParticipants } from "../metrics/metrics";

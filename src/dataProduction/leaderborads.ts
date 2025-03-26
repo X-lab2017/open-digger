@@ -1,5 +1,5 @@
 import { writeFileSync } from 'fs';
-import { getLabelData } from '../label_data_utils';
+import { getLabelData } from '../labelDataUtils';
 import { QueryConfig } from '../metrics/basic';
 import { getRepoActivity, getRepoOpenrank } from '../metrics/indices';
 import { countryInfo, countryFlagMap } from '../static/countries';
