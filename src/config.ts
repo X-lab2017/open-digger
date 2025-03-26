@@ -54,7 +54,7 @@ export default async () => {
   if (!inited) {
     try {
       // @ts-ignore
-      await import('./local_config').then(localConfig => {
+      await import('./localConfig').then(localConfig => {
         config = merge(config, localConfig.default);
       });
     } catch { }
