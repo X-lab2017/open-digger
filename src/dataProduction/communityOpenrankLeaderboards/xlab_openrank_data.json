@@ -1,0 +1,38 @@
+[
+  {
+    "name": "open_digger",
+    "text": "OpenDigger",
+    "description": "OpenDigger 是针对开源生态数据的开源分析平台",
+    "descriptionEn": "OpenDigger is an open source analysis platform for all open source data.",
+    "urls": [
+      {
+        "type": "githubUrl",
+        "url": "https://github.com/X-lab2017/open-digger"
+      },
+      {
+        "type": "documentUrl",
+        "url": "https://open-digger.cn/docs/user-docs/intro"
+      },
+      {
+        "type": "officialUrl",
+        "url": "https://open-digger.cn/"
+      }
+    ]
+  },
+  {
+    "name": "hypercrx",
+    "text": "HyperCRX",
+    "description": "可以为 GitHub、Gitee 等平台的仓库、开发者提供数据洞察的浏览器插件",
+    "descriptionEn": "A browser extension for insights into GitHub, Gitee projects and developers.",
+    "urls": [
+      {
+        "type": "githubUrl",
+        "url": "https://github.com/hypertrons/hypertrons-crx"
+      },
+      {
+        "type": "officialUrl",
+        "url": "https://hypercrx.cn/"
+      }
+    ]
+  }
+]
