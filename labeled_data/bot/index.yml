@@ -1657,6 +1657,10 @@ data:
           name: JasonnnW3000
         - id: 52411473
           name: kibe-star
+        - id: 82449132
+          name: kubevela-bot
+        - id: 84452982
+          name: openyurt-bot
     - name: Gitee
       type: Code Hosting
       users:

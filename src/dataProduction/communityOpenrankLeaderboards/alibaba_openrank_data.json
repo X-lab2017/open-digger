@@ -1,0 +1,408 @@
+[
+  {
+    "name": "nacos",
+    "text": "Nacos",
+    "description": "一个更易于构建云原生应用的动态服务发现、配置管理和服务管理平台",
+    "urls": [
+      {
+        "type": "githubUrl",
+        "url": "https://github.com/alibaba/nacos"
+      },
+      {
+        "type": "giteeUrl",
+        "url": "https://gitee.com/mirrors/Nacos"
+      },
+      {
+        "type": "documentUrl",
+        "url": "https://nacos.io/zh-cn/docs/what-is-nacos.html"
+      },
+      {
+        "type": "officialUrl",
+        "url": "https://nacos.io/zh-cn/"
+      }
+    ]
+  },
+  {
+    "name": "canal",
+    "text": "Canal",
+    "description": "阿里巴巴 MySQL binlog 增量订阅&消费组件",
+    "urls": [
+      {
+        "type": "githubUrl",
+        "url": "https://github.com/alibaba/canal"
+      },
+      {
+        "type": "giteeUrl",
+        "url": "https://gitee.com/mirrors/canal"
+      },
+      {
+        "type": "documentUrl",
+        "url": "https://github.com/alibaba/canal/wiki"
+      }
+    ]
+  },
+  {
+    "name": "sca",
+    "text": "Spring Cloud Alibaba",
+    "description": "Spring Cloud Alibaba provides a one-stop solution for application development for the distributed solutions of Alibaba middleware.",
+    "urls": [
+      {
+        "type": "githubUrl",
+        "url": "https://github.com/alibaba/spring-cloud-alibaba"
+      },
+      {
+        "type": "giteeUrl",
+        "url": "https://gitee.com/mirrors/Spring-Cloud-Alibaba"
+      },
+      {
+        "type": "documentUrl",
+        "url": "https://spring.io/projects/spring-cloud-alibaba"
+      }
+    ]
+  },
+  {
+    "name": "seata",
+    "text": "Apache Seata",
+    "description": "Seata is an easy-to-use, high-performance, open source distributed transaction solution.",
+    "urls": [
+      {
+        "type": "githubUrl",
+        "url": "https://github.com/apache/incubator-seata"
+      },
+      {
+        "type": "giteeUrl",
+        "url": "https://gitee.com/seata-io/seata"
+      },
+      {
+        "type": "documentUrl",
+        "url": "https://seata.apache.org/zh-cn/docs/overview/what-is-seata/"
+      },
+      {
+        "type": "officialUrl",
+        "url": "https://seata.apache.org/zh-cn/index.html"
+      }
+    ]
+  },
+  {
+    "name": "sentinel",
+    "text": "Sentinel",
+    "description": "A powerful flow control component enabling reliability, resilience and monitoring for microservices. (面向云原生微服务的高可用流控防护组件)",
+    "urls": [
+      {
+        "type": "githubUrl",
+        "url": "https://github.com/alibaba/Sentinel"
+      },
+      {
+        "type": "giteeUrl",
+        "url": "https://gitee.com/mirrors/Sentinel"
+      },
+      {
+        "type": "documentUrl",
+        "url": "https://sentinelguard.io/zh-cn/docs/introduction.html"
+      },
+      {
+        "type": "officialUrl",
+        "url": "https://sentinelguard.io/zh-cn/"
+      }
+    ]
+  },
+  {
+    "name": "opensergo",
+    "text": "OpenSergo",
+    "description": "Universal cloud-native microservice governance specification (微服务治理标准)",
+    "urls": [
+      {
+        "type": "githubUrl",
+        "url": "https://github.com/opensergo/"
+      },
+      {
+        "type": "documentUrl",
+        "url": "https://opensergo.io/docs/what-is-opensergo/intro/"
+      },
+      {
+        "type": "officialUrl",
+        "url": "https://opensergo.io/"
+      }
+    ]
+  },
+  {
+    "name": "datax",
+    "text": "DataX",
+    "description": "DataX是阿里云DataWorks数据集成的开源版本",
+    "urls": [
+      {
+        "type": "githubUrl",
+        "url": "https://github.com/alibaba/DataX"
+      },
+      {
+        "type": "giteeUrl",
+        "url": "https://gitee.com/mirrors/DataX"
+      },
+      {
+        "type": "documentUrl",
+        "url": "https://github.com/alibaba/DataX/blob/master/userGuid.md"
+      }
+    ]
+  },
+  {
+    "name": "lowcode_engine",
+    "text": "Lowcode Engine",
+    "description": "An enterprise-class low-code technology stack with scale-out design / 一套面向扩展设计的企业级低代码技术体系",
+    "urls": [
+      {
+        "type": "githubUrl",
+        "url": "https://github.com/alibaba/lowcode-engine"
+      },
+      {
+        "type": "giteeUrl",
+        "url": "https://gitee.com/mirrors_alibaba/lowcode-engine"
+      },
+      {
+        "type": "documentUrl",
+        "url": "https://lowcode-engine.cn/site/docs/guide/quickStart/intro"
+      },
+      {
+        "type": "officialUrl",
+        "url": "https://lowcode-engine.cn"
+      }
+    ]
+  },
+  {
+    "name": "easyexcel",
+    "text": "EasyExcel",
+    "description": "快速、简洁、解决大文件内存溢出的java处理Excel工具",
+    "urls": [
+      {
+        "type": "githubUrl",
+        "url": "https://github.com/alibaba/easyexcel"
+      },
+      {
+        "type": "giteeUrl",
+        "url": "https://gitee.com/mirrors/easyexcel"
+      },
+      {
+        "type": "documentUrl",
+        "url": "https://easyexcel.opensource.alibaba.com/docs/current/"
+      },
+      {
+        "type": "officialUrl",
+        "url": "https://easyexcel.opensource.alibaba.com/"
+      }
+    ]
+  },
+  {
+    "name": "arthas",
+    "text": "Arthas",
+    "description": "Alibaba Java Diagnostic Tool Arthas/Alibaba Java 诊断利器 Arthas",
+    "urls": [
+      {
+        "type": "githubUrl",
+        "url": "https://github.com/alibaba/arthas"
+      },
+      {
+        "type": "giteeUrl",
+        "url": "https://gitee.com/arthas/arthas"
+      },
+      {
+        "type": "documentUrl",
+        "url": "https://arthas.aliyun.com/doc/"
+      },
+      {
+        "type": "officialUrl",
+        "url": "https://arthas.aliyun.com/"
+      }
+    ]
+  },
+  {
+    "name": "sealer",
+    "text": "Sealer",
+    "description": "Define and deliver your kube-cluster in a standard and easy way (Project under CNCF)",
+    "urls": [
+      {
+        "type": "githubUrl",
+        "url": "https://github.com/sealerio/sealer"
+      },
+      {
+        "type": "documentUrl",
+        "url": "http://sealer.cool/docs/introduction/introduction.html#introduction"
+      },
+      {
+        "type": "officialUrl",
+        "url": "http://sealer.cool/"
+      }
+    ]
+  },
+  {
+    "name": "openyurt",
+    "text": "OpenYurt",
+    "description": "OpenYurt - Extending your native Kubernetes to edge(project under CNCF)",
+    "urls": [
+      {
+        "type": "githubUrl",
+        "url": "https://github.com/openyurtio/openyurt"
+      },
+      {
+        "type": "documentUrl",
+        "url": "https://openyurt.io/docs/"
+      },
+      {
+        "type": "officialUrl",
+        "url": "https://openyurt.io/"
+      }
+    ]
+  },
+  {
+    "name": "ice",
+    "text": "Ice",
+    "description": "ice.js: The Progressive App Framework Based On React（基于 React 的渐进式应用框架）",
+    "urls": [
+      {
+        "type": "githubUrl",
+        "url": "https://github.com/alibaba/ice"
+      },
+      {
+        "type": "documentUrl",
+        "url": "https://ice.work/docs/guide/about/"
+      },
+      {
+        "type": "officialUrl",
+        "url": "https://ice.work/"
+      }
+    ]
+  },
+  {
+    "name": "midway",
+    "text": "MidwayJS",
+    "description": "A Node.js Serverless Framework for front-end/full-stack developers. Build the application for next decade. Works on AWS, Alibaba Cloud, Tencent Cloud and traditional VM/Container. Super easy integrate with React and Vue.",
+    "urls": [
+      {
+        "type": "githubUrl",
+        "url": "https://github.com/midwayjs/midway"
+      },
+      {
+        "type": "giteeUrl",
+        "url": "https://gitee.com/mirrors/Midway"
+      },
+      {
+        "type": "documentUrl",
+        "url": "https://midwayjs.org/docs/intro"
+      },
+      {
+        "type": "officialUrl",
+        "url": "https://midwayjs.org/"
+      }
+    ]
+  },
+  {
+    "name": "havenask",
+    "text": "Havenask",
+    "description": "Havenask 是阿里巴巴集团自研的搜索引擎，也是阿里巴巴内部广泛使用的大规模分布式检索系统，支持了包括淘宝、天猫、菜鸟、高德、饿了么、全球化在内整个阿里巴巴集团的搜索业务，为用户提供高性能、低成本、易用的搜索服务，同时具有灵活的定制和开发能力，支持算法快速迭代，帮助客户和开发者量身定做适合自身业务的智能搜索服务，助力业务增长。",
+    "urls": [
+      {
+        "type": "githubUrl",
+        "url": "https://github.com/alibaba/havenask"
+      }
+    ]
+  },
+  {
+    "name": "modelscope",
+    "text": "ModelScope",
+    "description": "ModelScope is committed to empowering a wide-spectrum of developers to leverage AI models from various domains. (致力于通过开放的社区合作，开源AI模型以及相关创新技术，推动基于模型即服务的生态繁荣发展。)",
+    "urls": [
+      {
+        "type": "githubUrl",
+        "url": "https://github.com/modelscope/modelscope"
+      }
+    ]
+  },
+  {
+    "name": "polardb-pg",
+    "text": "PolarDB-for-PostgreSQL",
+    "description": "A cloud-native database based on PostgreSQL developed by Alibaba Cloud.",
+    "urls": [
+      {
+        "type": "githubUrl",
+        "url": "https://github.com/ApsaraDB/PolarDB-for-PostgreSQL"
+      },
+      {
+        "type": "documentUrl",
+        "url": "https://apsaradb.github.io/PolarDB-for-PostgreSQL/zh/guide/#%E5%BF%AB%E9%80%9F%E9%83%A8%E7%BD%B2"
+      },
+      {
+        "type": "officialUrl",
+        "url": "https://apsaradb.github.io/PolarDB-for-PostgreSQL/zh/"
+      }
+    ]
+  },
+  {
+    "name": "polardb-x",
+    "text": "PolarDB-X",
+    "description": "PolarDB-X is a cloud native distributed SQL Database designed for high concurrency, massive storage, complex querying scenarios.",
+    "urls": [
+      {
+        "type": "githubUrl",
+        "url": "https://github.com/polardb/polardbx-sql"
+      },
+      {
+        "type": "giteeUrl",
+        "url": "https://gitee.com/apsaradb/galaxysql"
+      },
+      {
+        "type": "documentUrl",
+        "url": "https://doc.polardbx.com/"
+      },
+      {
+        "type": "officialUrl",
+        "url": "https://www.polardbx.com/"
+      }
+    ]
+  },
+  {
+    "name": "fluid",
+    "text": "Fluid",
+    "description": "Fluid, elastic data abstraction and acceleration for BigData/AI applications in cloud. (Project under CNCF)",
+    "urls": [
+      {
+        "type": "githubUrl",
+        "url": "https://github.com/fluid-cloudnative/fluid"
+      }
+    ]
+  },
+  {
+    "name": "kubevela",
+    "text": "KubeVela",
+    "description": "KubeVela is a modern application delivery platform that makes deploying and operating applications across today's hybrid, multi-cloud environments easier, faster and more reliable.",
+    "urls": [
+      {
+        "type": "githubUrl",
+        "url": "https://github.com/kubevela/kubevela"
+      }
+    ]
+  },
+  {
+    "name": "higress",
+    "text": "Higress",
+    "description": "Next-generation Cloud Native Gateway | 下一代云原生网关",
+    "urls": [
+      {
+        "type": "githubUrl",
+        "url": "https://github.com/alibaba/higress"
+      }
+    ]
+  },
+  {
+    "name": "fusion",
+    "text": "Fusion Design",
+    "description": "An enterprise-level solution for building web products by improving designer-developer collaboration, product experience consistency, and development efficiency",
+    "urls": [
+      {
+        "type": "githubUrl",
+        "url": "https://github.com/alibaba-fusion/next"
+      },
+      {
+        "type": "officialUrl",
+        "url": "https://fusion.design/"
+      }
+    ]
+  }
+]

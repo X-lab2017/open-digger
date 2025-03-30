@@ -1,0 +1,250 @@
+[
+  {
+    "name": "antd",
+    "text": "Ant Design",
+    "description": "An enterprise-class UI design language and React UI library",
+    "urls": [
+      {
+        "type": "githubUrl",
+        "url": "https://github.com/ant-design"
+      },
+      {
+        "type": "documentUrl",
+        "url": "https://ant.design/docs/react/introduce"
+      },
+      {
+        "type": "officialUrl",
+        "url": "https://ant.design/"
+      }
+    ]
+  },
+  {
+    "name": "antv",
+    "text": "AntV",
+    "description": "蚂蚁企业级数据可视化解决方案，让人们在数据世界里获得视觉化思考能力",
+    "urls": [
+      {
+        "type": "githubUrl",
+        "url": "https://github.com/antvis"
+      },
+      {
+        "type": "officialUrl",
+        "url": "https://antv.antgroup.com/"
+      }
+    ]
+  },
+  {
+    "name": "umi",
+    "text": "UmiJS",
+    "description": "A framework in react community",
+    "urls": [
+      {
+        "type": "githubUrl",
+        "url": "https://github.com/umijs"
+      },
+      {
+        "type": "documentUrl",
+        "url": "https://umijs.org/docs/guides/getting-started"
+      },
+      {
+        "type": "officialUrl",
+        "url": "https://umijs.org/"
+      }
+    ]
+  },
+  {
+    "name": "agent_universe",
+    "text": "agentUniverse",
+    "description": "a LLM multi-agent framework that allows developers to easily build multi-agent applications",
+    "urls": [
+      {
+        "type": "githubUrl",
+        "url": "https://github.com/antgroup/agentUniverse"
+      },
+      {
+        "type": "documentUrl",
+        "url": "https://github.com/antgroup/agentUniverse/blob/master/docs/guidebook/en/Contents.md"
+      }
+    ]
+  },
+  {
+    "name": "codefuse",
+    "text": "CodeFuse",
+    "description": "CodeFuse aims to develop Code Large Language Models (Code LLMs) to support and enhance full-lifecycle AI native software development, covering crucial stages such as design requirements, coding, testing, building, deployment, operations, and insight analysis.",
+    "urls": [
+      {
+        "type": "githubUrl",
+        "url": "https://github.com/codefuse-ai"
+      },
+      {
+        "type": "documentUrl",
+        "url": "https://github.com/codefuse-ai/codefuse-chatbot/blob/main/README.md"
+      }
+    ]
+  },
+  {
+    "name": "eosphoros",
+    "key": "EosphorosAI",
+    "text": "DB-GPT",
+    "description": "AI Native Data App Development framework with AWEL(Agentic Workflow Expression Language) and Agents",
+    "urls": [
+      {
+        "type": "githubUrl",
+        "url": "https://github.com/eosphoros-ai/DB-GPT"
+      },
+      {
+        "type": "documentUrl",
+        "url": "http://docs.dbgpt.cn/"
+      }
+    ]
+  },
+  {
+    "name": "secretflow",
+    "text": "SecretFlow",
+    "description": "A unified framework for privacy-preserving data analysis and machine learning",
+    "urls": [
+      {
+        "type": "githubUrl",
+        "url": "https://github.com/secretflow"
+      },
+      {
+        "type": "documentUrl",
+        "url": "https://www.secretflow.org.cn/en/docs/"
+      },
+      {
+        "type": "officialUrl",
+        "url": "https://www.secretflow.org.cn/"
+      }
+    ]
+  },
+  {
+    "name": "oceanbase",
+    "text": "OceanBase",
+    "description": "The Multi-cloud Distributed Database for Mission-critical Workloads at Any Scale",
+    "urls": [
+      {
+        "type": "githubUrl",
+        "url": "https://github.com/oceanbase/"
+      },
+      {
+        "type": "giteeUrl",
+        "url": "https://gitee.com/oceanbase/"
+      },
+      {
+        "type": "documentUrl",
+        "url": "https://www.oceanbase.com/docs/"
+      },
+      {
+        "type": "officialUrl",
+        "url": "https://open.oceanbase.com/"
+      }
+    ]
+  },
+  {
+    "name": "tugraph",
+    "text": "TuGraph",
+    "description": "A High Performance Graph Database",
+    "urls": [
+      {
+        "type": "githubUrl",
+        "url": "https://github.com/TuGraph-family"
+      },
+      {
+        "type": "documentUrl",
+        "url": "https://tugraph.tech/docs/tugraph-db/zh/4.5.1/guide"
+      },
+      {
+        "type": "officialUrl",
+        "url": "https://tugraph.tech/"
+      }
+    ]
+  },
+  {
+    "name": "kusion_stack",
+    "text": "KusionStack",
+    "description": "Open Tech Stack to build self-service, collaborative, reliable and sustainable Internal Developer Platform",
+    "urls": [
+      {
+        "type": "githubUrl",
+        "url": "https://github.com/KusionStack"
+      },
+      {
+        "type": "officialUrl",
+        "url": "https://www.kusionstack.io/"
+      }
+    ]
+  },
+  {
+    "name": "sofastack",
+    "key": "Sofastack",
+    "text": "SOFAStack",
+    "description": "Scalable Open Financial Architecture Stack",
+    "urls": [
+      {
+        "type": "githubUrl",
+        "url": "https://github.com/sofastack/"
+      },
+      {
+        "type": "giteeUrl",
+        "url": "https://gitee.com/sofastack/"
+      },
+      {
+        "type": "officialUrl",
+        "url": "https://www.sofastack.tech/"
+      }
+    ]
+  },
+  {
+    "name": "asterinas",
+    "text": "Asterinas",
+    "description": "Asterinas is a secure, fast, and general-purpose OS kernel, written in Rust and providing Linux-compatible ABI",
+    "urls": [
+      {
+        "type": "githubUrl",
+        "url": "https://github.com/asterinas"
+      },
+      {
+        "type": "documentUrl",
+        "url": "https://asterinas.github.io/book/"
+      },
+      {
+        "type": "officialUrl",
+        "url": "https://asterinas.github.io/"
+      }
+    ]
+  },
+  {
+    "name": "occlum",
+    "text": "Occlum",
+    "description": "Occlum is a memory-safe, multi-process library OS for Intel SGX",
+    "urls": [
+      {
+        "type": "githubUrl",
+        "url": "https://github.com/occlum"
+      },
+      {
+        "type": "officialUrl",
+        "url": "https://occlum.io/"
+      }
+    ]
+  },
+  {
+    "name": "kata_container",
+    "text": "Kata Containers",
+    "description": "Kata Containers is an open source project and community working to build a standard implementation of lightweight Virtual Machines (VMs) that feel and perform like containers, but provide the workload isolation and security advantages of VMs",
+    "urls": [
+      {
+        "type": "githubUrl",
+        "url": "https://github.com/kata-containers"
+      },
+      {
+        "type": "documentUrl",
+        "url": "https://katacontainers.io/docs/"
+      },
+      {
+        "type": "officialUrl",
+        "url": "https://katacontainers.io/"
+      }
+    ]
+  }
+]
