@@ -30,7 +30,7 @@ export interface DataItem {
 };
 
 const d = new Date();
-d.setMonth(d.getMonth() - 1);
+d.setMonth(d.getMonth() - 1, 1);
 export const timeOption = {
   startYear: 2015,
   startMonth: 1,

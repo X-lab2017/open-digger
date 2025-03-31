@@ -301,7 +301,7 @@ const task: Task = {
     // start process
     await createTable();
     const now = new Date();
-    now.setMonth(now.getMonth() - 1);
+    now.setMonth(now.getMonth() - 1, 1);
     await forEveryMonth(2015, 1, now.getFullYear(), now.getMonth() + 1, async (y, m) => {
       while (true) {
         if (await calcualteForMonth(y, m)) {
@@ -309,7 +309,6 @@ const task: Task = {
         }
       }
     });
-
   },
 };
 
