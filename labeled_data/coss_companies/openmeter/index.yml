@@ -1,0 +1,23 @@
+name: OpenMeter
+type: Company
+data:
+  platforms:
+  - name: GitHub
+    type: Code Hosting
+    repos:
+    - id: 650344440
+      name: openmeterio/openmeter
+    - id: 685126976
+      name: openmeterio/clickhouse-kafka-connect
+    - id: 698696542
+      name: openmeterio/openmeter-pod-runtime-watcher
+    - id: 704119450
+      name: openmeterio/docker-kafka-connect-dev
+    - id: 704890109
+      name: openmeterio/aws-bedrock-chat
+    - id: 722186195
+      name: openmeterio/finops-focus-schema
+    - id: 738112187
+      name: openmeterio/benthos-openmeter
+    - id: 816894639
+      name: openmeterio/examples
