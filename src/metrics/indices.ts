@@ -41,7 +41,7 @@ FROM
 (
   SELECT
     ${getGroupTimeClause(config)},
-    ${getGroupIdClause(config)},
+    ${getGroupIdClause(config, 'repo', 'created_at')},
     SUM(openrank) AS openrank
   FROM global_openrank
   WHERE ${whereClause.join(' AND ')}
