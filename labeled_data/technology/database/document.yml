@@ -51,6 +51,8 @@ data:
           name: Softmotions/ejdb
         - id: 8428443
           name: X2rdas/easedb
+        - id: 124315604
+          name: aerospike/aerospike-server
         - id: 31976266
           name: apache/asterixdb
         - id: 206417
@@ -125,6 +127,8 @@ data:
           name: fluree/db
         - id: 138411034
           name: genjidb/genji
+        - id: 897888926
+          name: goatplatform/goatdb
         - id: 852516379
           name: goshops-com/StormiDB
         - id: 285669400
