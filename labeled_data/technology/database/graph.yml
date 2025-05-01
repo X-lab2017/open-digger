@@ -11,6 +11,8 @@ data:
           name: CulturePlex/Sylva
         - id: 8799170
           name: DevrexLabs/OrigoDB
+        - id: 893031915
+          name: HelixDB/helix-db
         - id: 77385607
           name: JanusGraph/janusgraph
         - id: 92834468

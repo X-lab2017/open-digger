@@ -7,8 +7,12 @@ data:
       repos:
         - id: 753244287
           name: DeployQL/LintDB
+        - id: 893031915
+          name: HelixDB/helix-db
         - id: 201403923
           name: activeloopai/deeplake
+        - id: 124315604
+          name: aerospike/aerospike-server
         - id: 642912355
           name: awa-ai/awadb
         - id: 793209340
