@@ -1661,6 +1661,8 @@ data:
           name: kubevela-bot
         - id: 84452982
           name: openyurt-bot
+        - id: 175728472
+          name: Copilot
     - name: Gitee
       type: Code Hosting
       users:

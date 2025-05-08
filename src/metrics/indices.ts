@@ -268,7 +268,7 @@ export const basicActivitySqlComponent = `
     countIf(type='IssueCommentEvent' AND action='created') AS issue_comment,
     countIf(type='IssuesEvent' AND action='opened')  AS open_issue,
     countIf(type='PullRequestEvent' AND action='opened') AS open_pull,
-    countIf(type='PullRequestReviewCommentEvent' AND action='created') AS review_comment,
+    countIf(type='PullRequestReviewCommentEvent' AND action IN ('created', 'added')) AS review_comment,
     countIf(type='PullRequestEvent' AND action='closed' AND pull_merged=1) AS merged_pull,
     sqrt(${ISSUE_COMMENT_WEIGHT}*issue_comment + ${OPEN_ISSUE_WEIGHT}*open_issue + ${OPEN_PULL_WEIGHT}*open_pull + ${REVIEW_COMMENT_WEIGHT}*review_comment + ${PULL_MERGED_WEIGHT}*merged_pull) AS activity
 `;
