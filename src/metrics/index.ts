@@ -5,6 +5,7 @@ import {
   chaossChangeRequests, chaossChangeRequestReviews, chaossNewContributors, chaossChangeRequestsDuration, chaossIssueResponseTime, chaossChangeRequestsAcceptanceRatio, chaossIssuesAndChangeRequestActive, chaossActiveDatesAndTimes, chaossChangeRequestResolutionDuration, chaossChangeRequestResponseTime, chaossIssueAge, chaossChangeRequestAge, chaossInactiveContributors, chaossContributors,
 } from './chaoss';
 import { repoStars, repoIssueComments, repoParticipants, userEquivalentTimeZone, contributorEmailSuffixes } from './metrics';
+import sbom from './sbom';
 
 module.exports = {
   // index
@@ -44,5 +45,11 @@ module.exports = {
   repoIssueComments: repoIssueComments,
   repoParticipants: repoParticipants,
   userEquivalentTimeZone: userEquivalentTimeZone,
-  contributorEmailSuffixes: contributorEmailSuffixes
+  contributorEmailSuffixes: contributorEmailSuffixes,
+  // SBOM metrics
+  repoDependencies: sbom.repoDependencies.bind(sbom),
+  repoDependenciesByPackageManager: sbom.repoDependenciesByPackageManager.bind(sbom),
+  commonDependencies: sbom.commonDependencies.bind(sbom),
+  packageDependents: sbom.packageDependents.bind(sbom),
+  dependencyGraph: sbom.dependencyGraph.bind(sbom)
 };

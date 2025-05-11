@@ -8,6 +8,16 @@ OpenDigger is an open source analysis platform for all open source data initiate
 
 Please visit the [official website](https://open-digger.cn/) to find more documentation about OpenDigger.
 
+### Features
+
+- **OpenRank**: Our unique algorithm to evaluate the influence of developers and repositories in the open source ecosystem
+- **CHAOSS Metrics**: Implementation of the standard metrics defined by the CHAOSS community
+- **Activity Analysis**: Comprehensive activity metrics for developers and repositories
+- **SBOM Analysis**: Collection and analysis of Software Bill of Materials (SBOM) data from top open source projects
+  - Dependency tracking across the open source ecosystem
+  - Identification of common dependencies and their usage patterns
+  - Dependency relationship visualization and analysis
+
 ## Communication
 
 Welcome to join the WeChat group by scanning the QRCode and I will invite you into our WeChat group.
