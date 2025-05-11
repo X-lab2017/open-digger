@@ -1,7 +1,33 @@
-import { MetricManager, MetricQuery } from './metrics';
 import { getLogger } from '../utils';
+import * as clickhouse from '../db/clickhouse';
 
+// Using logger for error logging in methods that need it
 const logger = getLogger('SBOMMetrics');
+
+// Define the interface for metric queries
+export interface MetricQuery {
+  metric: string;
+  params: {
+    [key: string]: any;
+  };
+}
+
+// Define the base class for metric management
+export class MetricManager {
+  protected async execQuery(query: MetricQuery): Promise<any> {
+    try {
+      const sql = await this.resolveQuery(query);
+      return await clickhouse.query(sql);
+    } catch (error) {
+      logger.error(`Error executing query: ${error}`);
+      throw error;
+    }
+  }
+
+  protected async resolveQuery(_query: MetricQuery): Promise<string> {
+    throw new Error('Method not implemented');
+  }
+}
 
 /**
  * Metrics for analyzing Software Bill of Materials (SBOM) data
@@ -79,9 +105,10 @@ export class SBOMMetrics extends MetricManager {
     return await this.execQuery(query);
   }
 
-  protected override async resolveQuery(query: MetricQuery): Promise<string> {
+  protected async resolveQuery(query: MetricQuery): Promise<string> {
     const { metric, params } = query;
-    const { repo, packageName, limit, month, depth } = params;
+    const { repo, packageName, limit, month } = params;
+    // depth is available in params but not used in the current implementation
     
     const monthCondition = month 
       ? `AND updated_at >= toDate('${month}-01') AND updated_at < addMonths(toDate('${month}-01'), 1)`
@@ -170,7 +197,7 @@ export class SBOMMetrics extends MetricManager {
 
       case 'dependency_graph': {
         if (!repo) throw new Error('repo parameter is required');
-        const depthNum = depth || 1;
+        // depth parameter exists in the parameters but is not used in current implementation
         
         // This is a simplified version for direct dependencies only
         // A more complex implementation would recursively build the graph to the specified depth

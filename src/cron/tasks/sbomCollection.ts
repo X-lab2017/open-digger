@@ -87,8 +87,8 @@ const task: Task = {
           const parsedSbom = typeof sbomData === 'string' ? JSON.parse(sbomData) : sbomData;
           
           // Extract useful information from SBOM
-          const packageManagers = new Set();
-          const directDependencies = [];
+          const packageManagers = new Set<string>();
+          const directDependencies: string[] = [];
           let dependenciesCount = 0;
           
           if (parsedSbom.packages) {
@@ -123,7 +123,9 @@ const task: Task = {
           logger.warn(`Failed to get SBOM data for ${repoName}: ${response.status}`);
         }
       } catch (error) {
-        logger.error(`Error processing ${repoName}: ${error.message}`);
+        // Properly handle error of unknown type
+        const errorMessage = error instanceof Error ? error.message : String(error);
+        logger.error(`Error processing ${repoName}: ${errorMessage}`);
       }
       
       processedCount++;
