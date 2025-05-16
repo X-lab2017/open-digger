@@ -1,0 +1,12 @@
+name: Busan-gwangyeoksi
+type: Division-1
+meta:
+  alpha2: KR-26
+  includes:
+    - busan-gwangyeoksi
+    - kr-26
+    - '26'
+    - busan-gwangyeoksi metropolitan city
+    - busan
+    - busan metropolitan city
+  category: METROPOLITAN CITY

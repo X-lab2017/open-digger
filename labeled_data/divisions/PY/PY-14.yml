@@ -1,0 +1,10 @@
+name: Canindeyú
+type: Division-1
+meta:
+  alpha2: PY-14
+  includes:
+    - canindeyú
+    - py-14
+    - '14'
+    - canindeyú department
+  category: DEPARTMENT

@@ -1,0 +1,10 @@
+name: Cantemir
+type: Division-1
+meta:
+  alpha2: MD-CT
+  includes:
+    - cantemir
+    - md-ct
+    - ct
+    - cantemir district
+  category: DISTRICT

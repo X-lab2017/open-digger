@@ -1,0 +1,10 @@
+name: Lomami
+type: Division-1
+meta:
+  alpha2: CD-LO
+  includes:
+    - lomami
+    - cd-lo
+    - lo
+    - lomami province
+  category: PROVINCE

@@ -1,0 +1,72 @@
+name: Cayman Islands
+type: Division-0
+meta:
+  alpha2: KY
+  includes:
+    - Cayman Islands
+    - KY
+    - '136'
+    - 开曼群岛
+  name_full: Cayman Islands
+  name_zh: 开曼群岛
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 1113
+    - year: 2020
+      quarter: 2
+      count: 1246
+    - year: 2020
+      quarter: 3
+      count: 1313
+    - year: 2020
+      quarter: 4
+      count: 1384
+    - year: 2021
+      quarter: 1
+      count: 1489
+    - year: 2021
+      quarter: 2
+      count: 1584
+    - year: 2021
+      quarter: 3
+      count: 1626
+    - year: 2021
+      quarter: 4
+      count: 1740
+    - year: 2022
+      quarter: 1
+      count: 1870
+    - year: 2022
+      quarter: 2
+      count: 1970
+    - year: 2022
+      quarter: 3
+      count: 2067
+    - year: 2022
+      quarter: 4
+      count: 2177
+    - year: 2023
+      quarter: 1
+      count: 2279
+    - year: 2023
+      quarter: 2
+      count: 2442
+    - year: 2023
+      quarter: 3
+      count: 2543
+    - year: 2023
+      quarter: 4
+      count: 2649
+    - year: 2024
+      quarter: 1
+      count: 2824
+    - year: 2024
+      quarter: 2
+      count: 2913
+    - year: 2024
+      quarter: 3
+      count: 2999
+    - year: 2024
+      quarter: 4
+      count: 3173

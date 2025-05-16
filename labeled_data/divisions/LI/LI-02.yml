@@ -1,0 +1,10 @@
+name: Eschen
+type: Division-1
+meta:
+  alpha2: LI-02
+  includes:
+    - eschen
+    - li-02
+    - '02'
+    - eschen commune
+  category: COMMUNE

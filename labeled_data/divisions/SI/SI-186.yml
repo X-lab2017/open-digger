@@ -1,0 +1,10 @@
+name: Trzin
+type: Division-1
+meta:
+  alpha2: SI-186
+  includes:
+    - trzin
+    - si-186
+    - '186'
+    - trzin municipality
+  category: MUNICIPALITY

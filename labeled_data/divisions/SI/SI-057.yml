@@ -1,0 +1,10 @@
+name: Laško
+type: Division-1
+meta:
+  alpha2: SI-057
+  includes:
+    - laško
+    - si-057
+    - '057'
+    - laško municipality
+  category: MUNICIPALITY

@@ -1,0 +1,14 @@
+name: Narynskaya oblast'
+type: Division-1
+meta:
+  alpha2: KG-N
+  includes:
+    - naryn
+    - kg-n
+    - 'n'
+    - naryn region
+    - narynskaja oblast'
+    - narynskaja oblast' region
+    - narynskaya oblast'
+    - narynskaya oblast' region
+  category: REGION

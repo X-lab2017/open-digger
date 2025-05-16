@@ -1,0 +1,10 @@
+name: Darnah
+type: Division-1
+meta:
+  alpha2: LY-DR
+  includes:
+    - darnah
+    - ly-dr
+    - dr
+    - darnah popularate
+  category: POPULARATE

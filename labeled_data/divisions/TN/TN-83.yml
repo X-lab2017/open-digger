@@ -1,0 +1,10 @@
+name: Tataouine
+type: Division-1
+meta:
+  alpha2: TN-83
+  includes:
+    - tataouine
+    - tn-83
+    - '83'
+    - tataouine governorate
+  category: GOVERNORATE

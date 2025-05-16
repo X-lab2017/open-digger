@@ -1,0 +1,10 @@
+name: Bayanhongor
+type: Division-1
+meta:
+  alpha2: MN-069
+  includes:
+    - bayanhongor
+    - mn-069
+    - '069'
+    - bayanhongor province
+  category: PROVINCE

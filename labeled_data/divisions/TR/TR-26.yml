@@ -1,0 +1,10 @@
+name: Eskişehir
+type: Division-1
+meta:
+  alpha2: TR-26
+  includes:
+    - eskişehir
+    - tr-26
+    - '26'
+    - eskişehir province
+  category: PROVINCE

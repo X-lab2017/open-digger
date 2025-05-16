@@ -1,0 +1,10 @@
+name: Saïda
+type: Division-1
+meta:
+  alpha2: DZ-20
+  includes:
+    - saïda
+    - dz-20
+    - '20'
+    - saïda province
+  category: PROVINCE

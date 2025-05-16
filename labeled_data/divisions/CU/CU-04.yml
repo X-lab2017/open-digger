@@ -1,0 +1,10 @@
+name: Matanzas
+type: Division-1
+meta:
+  alpha2: CU-04
+  includes:
+    - matanzas
+    - cu-04
+    - '04'
+    - matanzas province
+  category: PROVINCE

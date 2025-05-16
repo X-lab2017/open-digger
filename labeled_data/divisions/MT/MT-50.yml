@@ -1,0 +1,12 @@
+name: Saint Lawrence
+type: Division-1
+meta:
+  alpha2: MT-50
+  includes:
+    - saint lawrence
+    - mt-50
+    - '50'
+    - saint lawrence local council
+    - san lawrenz
+    - san lawrenz local council
+  category: LOCAL COUNCIL

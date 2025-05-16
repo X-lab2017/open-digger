@@ -1,0 +1,10 @@
+name: Aïn Defla
+type: Division-1
+meta:
+  alpha2: DZ-44
+  includes:
+    - aïn defla
+    - dz-44
+    - '44'
+    - aïn defla province
+  category: PROVINCE

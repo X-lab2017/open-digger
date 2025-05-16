@@ -1,0 +1,10 @@
+name: Isabel
+type: Division-1
+meta:
+  alpha2: SB-IS
+  includes:
+    - isabel
+    - sb-is
+    - is
+    - isabel province
+  category: PROVINCE

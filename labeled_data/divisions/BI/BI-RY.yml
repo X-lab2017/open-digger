@@ -1,0 +1,10 @@
+name: Ruyigi
+type: Division-1
+meta:
+  alpha2: BI-RY
+  includes:
+    - ruyigi
+    - bi-ry
+    - ry
+    - ruyigi province
+  category: PROVINCE

@@ -1,0 +1,10 @@
+name: Point Fortin
+type: Division-1
+meta:
+  alpha2: TT-PTF
+  includes:
+    - point fortin
+    - tt-ptf
+    - ptf
+    - point fortin borough
+  category: BOROUGH

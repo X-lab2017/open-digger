@@ -1,0 +1,39 @@
+name: Šiaulių apskritis
+type: Division-1
+meta:
+  alpha2: LT-SA
+  includes:
+    - akmenė
+    - lt-01
+    - '01'
+    - akmenė district municipality
+    - joniškis
+    - lt-11
+    - '11'
+    - joniškis district municipality
+    - kelmė
+    - lt-19
+    - '19'
+    - kelmė district municipality
+    - pakruojis
+    - lt-30
+    - '30'
+    - pakruojis district municipality
+    - radviliškis
+    - lt-37
+    - '37'
+    - radviliškis district municipality
+    - šiauliai
+    - lt-44
+    - '44'
+    - šiauliai district municipality
+    - šiaulių apskritis
+    - lt-sa
+    - sa
+    - šiaulių apskritis county
+    - šiaulių miestas
+    - lt-43
+    - '43'
+    - šiaulių miestas city municipality
+    - šiauliai county
+  category: COUNTY

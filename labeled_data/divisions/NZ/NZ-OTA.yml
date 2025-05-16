@@ -1,0 +1,12 @@
+name: Otago
+type: Division-1
+meta:
+  alpha2: NZ-OTA
+  includes:
+    - otago
+    - nz-ota
+    - ota
+    - otago region
+    - ō tākou
+    - ō tākou region
+  category: REGION

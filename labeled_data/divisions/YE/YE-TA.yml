@@ -1,0 +1,11 @@
+name: Tāʻizz
+type: Division-1
+meta:
+  alpha2: YE-TA
+  includes:
+    - tāʻizz
+    - ye-ta
+    - ta
+    - tāʻizz governorate
+    - ta'izz governorate
+  category: GOVERNORATE

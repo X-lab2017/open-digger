@@ -1,0 +1,10 @@
+name: Sangha
+type: Division-1
+meta:
+  alpha2: CG-13
+  includes:
+    - sangha
+    - cg-13
+    - '13'
+    - sangha department
+  category: DEPARTMENT

@@ -1,0 +1,12 @@
+name: Komi
+type: Division-1
+meta:
+  alpha2: RU-KO
+  includes:
+    - komi
+    - ru-ko
+    - ko
+    - komi republic
+    - respúblika kómi
+    - komi-permyak
+  category: REPUBLIC

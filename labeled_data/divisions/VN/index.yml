@@ -1,0 +1,139 @@
+name: Viet Nam
+type: Division-0
+meta:
+  alpha2: VN
+  includes:
+    - Viet Nam
+    - VN
+    - '704'
+    - the Socialist Republic of Viet Nam
+    - 越南
+    - Vietnam
+  name_full: the Socialist Republic of Viet Nam
+  name_zh: 越南
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 505532
+    - year: 2020
+      quarter: 2
+      count: 559974
+    - year: 2020
+      quarter: 3
+      count: 601156
+    - year: 2020
+      quarter: 4
+      count: 648835
+    - year: 2021
+      quarter: 1
+      count: 691796
+    - year: 2021
+      quarter: 2
+      count: 751010
+    - year: 2021
+      quarter: 3
+      count: 843598
+    - year: 2021
+      quarter: 4
+      count: 936490
+    - year: 2022
+      quarter: 1
+      count: 1002684
+    - year: 2022
+      quarter: 2
+      count: 1070392
+    - year: 2022
+      quarter: 3
+      count: 1144766
+    - year: 2022
+      quarter: 4
+      count: 1237554
+    - year: 2023
+      quarter: 1
+      count: 1313681
+    - year: 2023
+      quarter: 2
+      count: 1430601
+    - year: 2023
+      quarter: 3
+      count: 1537574
+    - year: 2023
+      quarter: 4
+      count: 1617140
+    - year: 2024
+      quarter: 1
+      count: 1739877
+    - year: 2024
+      quarter: 2
+      count: 1832224
+    - year: 2024
+      quarter: 3
+      count: 1931120
+    - year: 2024
+      quarter: 4
+      count: 2068806
+data:
+  labels:
+    - VN-44
+    - VN-43
+    - VN-57
+    - VN-58
+    - VN-40
+    - VN-31
+    - VN-55
+    - VN-54
+    - VN-53
+    - VN-56
+    - VN-50
+    - VN-04
+    - VN-59
+    - VN-CT
+    - VN-30
+    - VN-03
+    - VN-63
+    - VN-HN
+    - VN-23
+    - VN-14
+    - VN-66
+    - VN-61
+    - VN-HP
+    - VN-73
+    - VN-SG
+    - VN-34
+    - VN-47
+    - VN-28
+    - VN-01
+    - VN-41
+    - VN-02
+    - VN-35
+    - VN-09
+    - VN-67
+    - VN-22
+    - VN-18
+    - VN-36
+    - VN-68
+    - VN-32
+    - VN-24
+    - VN-27
+    - VN-29
+    - VN-13
+    - VN-25
+    - VN-52
+    - VN-05
+    - VN-21
+    - VN-20
+    - VN-69
+    - VN-26
+    - VN-46
+    - VN-51
+    - VN-07
+    - VN-37
+    - VN-49
+    - VN-70
+    - VN-06
+    - VN-71
+    - VN-DN
+    - VN-33
+    - VN-72
+    - VN-39
+    - VN-45

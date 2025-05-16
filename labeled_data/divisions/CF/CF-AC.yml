@@ -1,0 +1,12 @@
+name: Ouham
+type: Division-1
+meta:
+  alpha2: CF-AC
+  includes:
+    - ouham
+    - cf-ac
+    - ac
+    - ouham prefecture
+    - wâmo
+    - wâmo prefecture
+  category: PREFECTURE

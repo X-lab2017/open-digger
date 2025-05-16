@@ -1,0 +1,10 @@
+name: Fa'asaleleaga
+type: Division-1
+meta:
+  alpha2: WS-FA
+  includes:
+    - fa'asaleleaga
+    - ws-fa
+    - fa
+    - fa'asaleleaga district
+  category: DISTRICT

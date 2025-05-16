@@ -1,0 +1,11 @@
+name: Brvenica
+type: Division-1
+meta:
+  alpha2: MK-602
+  includes:
+    - brvenica
+    - mk-602
+    - '602'
+    - brvenica municipality
+    - municipality of brvenica
+  category: MUNICIPALITY

@@ -1,0 +1,10 @@
+name: Lovrenc na Pohorju
+type: Division-1
+meta:
+  alpha2: SI-167
+  includes:
+    - lovrenc na pohorju
+    - si-167
+    - '167'
+    - lovrenc na pohorju municipality
+  category: MUNICIPALITY

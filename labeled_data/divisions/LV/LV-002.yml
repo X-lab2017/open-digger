@@ -1,0 +1,12 @@
+name: Aizkraukles novads
+type: Division-1
+meta:
+  alpha2: LV-002
+  includes:
+    - aizkraukles novads
+    - lv-002
+    - '002'
+    - aizkraukles novads municipality
+    - aizkraukle
+    - aizkraukle municipality
+  category: MUNICIPALITY

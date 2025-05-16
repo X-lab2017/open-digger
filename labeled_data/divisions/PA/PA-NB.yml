@@ -1,0 +1,10 @@
+name: Ngäbe-Buglé
+type: Division-1
+meta:
+  alpha2: PA-NB
+  includes:
+    - ngäbe-buglé
+    - pa-nb
+    - nb
+    - ngäbe-buglé indigenous region
+  category: INDIGENOUS REGION

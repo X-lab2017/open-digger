@@ -1,0 +1,14 @@
+name: Novgorodskaya oblast'
+type: Division-1
+meta:
+  alpha2: RU-NGR
+  includes:
+    - novgorodskaja oblast'
+    - ru-ngr
+    - ngr
+    - novgorodskaja oblast' administrative region
+    - novgorodskaya oblast'
+    - novgorodskaya oblast' administrative region
+    - novgorod oblast
+    - novgorod
+  category: ADMINISTRATIVE REGION

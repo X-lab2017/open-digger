@@ -1,0 +1,60 @@
+name: Středočeský kraj
+type: Division-1
+meta:
+  alpha2: CZ-20
+  includes:
+    - benešov
+    - cz-201
+    - '201'
+    - benešov district
+    - beroun
+    - cz-202
+    - '202'
+    - beroun district
+    - kladno
+    - cz-203
+    - '203'
+    - kladno district
+    - kolín
+    - cz-204
+    - '204'
+    - kolín district
+    - kutná hora
+    - cz-205
+    - '205'
+    - kutná hora district
+    - mladá boleslav
+    - cz-207
+    - '207'
+    - mladá boleslav district
+    - mělník
+    - cz-206
+    - '206'
+    - mělník district
+    - nymburk
+    - cz-208
+    - '208'
+    - nymburk district
+    - praha-východ
+    - cz-209
+    - '209'
+    - praha-východ district
+    - praha-západ
+    - cz-20a
+    - 20a
+    - praha-západ district
+    - příbram
+    - cz-20b
+    - 20b
+    - příbram district
+    - rakovník
+    - cz-20c
+    - 20c
+    - rakovník district
+    - středočeský kraj
+    - cz-20
+    - '20'
+    - středočeský kraj region
+    - central bohemian region
+    - central bohemia
+  category: REGION

@@ -1,0 +1,10 @@
+name: Izabal
+type: Division-1
+meta:
+  alpha2: GT-18
+  includes:
+    - izabal
+    - gt-18
+    - '18'
+    - izabal department
+  category: DEPARTMENT

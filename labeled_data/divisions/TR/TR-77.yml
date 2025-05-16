@@ -1,0 +1,10 @@
+name: Yalova
+type: Division-1
+meta:
+  alpha2: TR-77
+  includes:
+    - yalova
+    - tr-77
+    - '77'
+    - yalova province
+  category: PROVINCE

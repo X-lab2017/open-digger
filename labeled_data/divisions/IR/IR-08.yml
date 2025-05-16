@@ -1,0 +1,11 @@
+name: Kermān
+type: Division-1
+meta:
+  alpha2: IR-08
+  includes:
+    - kermān
+    - ir-08
+    - '08'
+    - kermān province
+    - kerman province
+  category: PROVINCE

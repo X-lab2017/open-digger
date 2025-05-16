@@ -1,0 +1,10 @@
+name: Al Ḩudaydah
+type: Division-1
+meta:
+  alpha2: YE-HU
+  includes:
+    - al ḩudaydah
+    - ye-hu
+    - hu
+    - al ḩudaydah governorate
+  category: GOVERNORATE

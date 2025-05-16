@@ -1,0 +1,11 @@
+name: Mahdia
+type: Division-1
+meta:
+  alpha2: TN-53
+  includes:
+    - mahdia
+    - tn-53
+    - '53'
+    - mahdia governorate
+    - gouvernorat de mahdia
+  category: GOVERNORATE

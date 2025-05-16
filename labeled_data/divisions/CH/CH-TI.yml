@@ -1,0 +1,10 @@
+name: Ticino
+type: Division-1
+meta:
+  alpha2: CH-TI
+  includes:
+    - ticino
+    - ch-ti
+    - ti
+    - ticino canton
+  category: CANTON

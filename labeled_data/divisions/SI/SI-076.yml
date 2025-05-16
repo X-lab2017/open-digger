@@ -1,0 +1,10 @@
+name: Mislinja
+type: Division-1
+meta:
+  alpha2: SI-076
+  includes:
+    - mislinja
+    - si-076
+    - '076'
+    - mislinja municipality
+  category: MUNICIPALITY

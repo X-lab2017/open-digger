@@ -1,0 +1,15 @@
+name: Ville de Kigali
+type: Division-1
+meta:
+  alpha2: RW-01
+  includes:
+    - city of kigali
+    - rw-01
+    - '01'
+    - city of kigali city
+    - umujyi wa kigali
+    - umujyi wa kigali city
+    - ville de kigali
+    - ville de kigali city
+    - kigali city
+  category: CITY

@@ -1,0 +1,11 @@
+name: Quindío
+type: Division-1
+meta:
+  alpha2: CO-QUI
+  includes:
+    - quindío
+    - co-qui
+    - qui
+    - quindío department
+    - quindio
+  category: DEPARTMENT

@@ -1,0 +1,10 @@
+name: Ogooué-Ivindo
+type: Division-1
+meta:
+  alpha2: GA-6
+  includes:
+    - ogooué-ivindo
+    - ga-6
+    - '6'
+    - ogooué-ivindo province
+  category: PROVINCE

@@ -1,0 +1,11 @@
+name: Costa Caribe Sur
+type: Division-1
+meta:
+  alpha2: NI-AS
+  includes:
+    - costa caribe sur
+    - ni-as
+    - as
+    - costa caribe sur autonomous region
+    - south caribbean coast autonomous region
+  category: AUTONOMOUS REGION

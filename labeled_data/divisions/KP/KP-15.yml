@@ -1,0 +1,12 @@
+name: Kaesŏng
+type: Division-1
+meta:
+  alpha2: KP-15
+  includes:
+    - kaeseong
+    - kp-15
+    - '15'
+    - kaeseong metropolitan city
+    - kaesŏng
+    - kaesŏng metropolitan city
+  category: METROPOLITAN CITY

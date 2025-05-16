@@ -1,0 +1,11 @@
+name: Narathiwat
+type: Division-1
+meta:
+  alpha2: TH-96
+  includes:
+    - narathiwat
+    - th-96
+    - '96'
+    - narathiwat province
+    - chang wat narathiwat
+  category: PROVINCE

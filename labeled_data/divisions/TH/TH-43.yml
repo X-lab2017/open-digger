@@ -1,0 +1,10 @@
+name: Nong Khai
+type: Division-1
+meta:
+  alpha2: TH-43
+  includes:
+    - nong khai
+    - th-43
+    - '43'
+    - nong khai province
+  category: PROVINCE

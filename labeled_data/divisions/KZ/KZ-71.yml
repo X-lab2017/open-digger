@@ -1,0 +1,10 @@
+name: Astana
+type: Division-1
+meta:
+  alpha2: KZ-71
+  includes:
+    - astana
+    - kz-71
+    - '71'
+    - astana city
+  category: CITY

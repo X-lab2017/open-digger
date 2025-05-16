@@ -1,0 +1,10 @@
+name: Litija
+type: Division-1
+meta:
+  alpha2: SI-060
+  includes:
+    - litija
+    - si-060
+    - '060'
+    - litija municipality
+  category: MUNICIPALITY

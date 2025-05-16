@@ -1,0 +1,10 @@
+name: Orellana
+type: Division-1
+meta:
+  alpha2: EC-D
+  includes:
+    - orellana
+    - ec-d
+    - d
+    - orellana province
+  category: PROVINCE

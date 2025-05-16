@@ -1,0 +1,16 @@
+name: Akmolinskaya oblast'
+type: Division-1
+meta:
+  alpha2: KZ-11
+  includes:
+    - akmolinskaja oblast'
+    - kz-11
+    - '11'
+    - akmolinskaja oblast' region
+    - akmolinskaya oblast'
+    - akmolinskaya oblast' region
+    - aqmola oblysy
+    - aqmola oblysy region
+    - akmola region
+    - aqmola oblısı
+  category: REGION

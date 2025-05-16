@@ -1,0 +1,30 @@
+name: Western Cape
+type: Division-1
+meta:
+  alpha2: ZA-WC
+  includes:
+    - kapa bodikela
+    - za-wc
+    - wc
+    - kapa bodikela province
+    - kapa bophirima
+    - kapa bophirima province
+    - kapa bophirimela
+    - kapa bophirimela province
+    - kapa vhukovhela
+    - kapa vhukovhela province
+    - kapa-vupeladyambu
+    - kapa-vupeladyambu province
+    - ntshona-koloni
+    - ntshona-koloni province
+    - ntshonalanga-kapa
+    - ntshonalanga-kapa province
+    - ntshonalanga-koloni
+    - ntshonalanga-koloni province
+    - wes-kaap
+    - wes-kaap province
+    - western cape
+    - western cape province
+    - itjhingalanga-kapa
+    - itjhingalanga-kapa province
+  category: PROVINCE

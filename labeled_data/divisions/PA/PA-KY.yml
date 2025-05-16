@@ -1,0 +1,12 @@
+name: Guna Yala
+type: Division-1
+meta:
+  alpha2: PA-KY
+  includes:
+    - guna yala
+    - pa-ky
+    - ky
+    - guna yala indigenous region
+    - kuna yala
+    - kuna yala indigenous region
+  category: INDIGENOUS REGION

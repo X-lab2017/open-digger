@@ -1,0 +1,11 @@
+name: Ḩalab
+type: Division-1
+meta:
+  alpha2: SY-HL
+  includes:
+    - ḩalab
+    - sy-hl
+    - hl
+    - ḩalab province
+    - aleppo governorate
+  category: PROVINCE

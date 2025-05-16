@@ -1,0 +1,86 @@
+name: Mozambique
+type: Division-0
+meta:
+  alpha2: MZ
+  includes:
+    - Mozambique
+    - MZ
+    - '508'
+    - the Republic of Mozambique
+    - 莫桑比克
+  name_full: the Republic of Mozambique
+  name_zh: 莫桑比克
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 5748
+    - year: 2020
+      quarter: 2
+      count: 6616
+    - year: 2020
+      quarter: 3
+      count: 7439
+    - year: 2020
+      quarter: 4
+      count: 8057
+    - year: 2021
+      quarter: 1
+      count: 8672
+    - year: 2021
+      quarter: 2
+      count: 9439
+    - year: 2021
+      quarter: 3
+      count: 10248
+    - year: 2021
+      quarter: 4
+      count: 10886
+    - year: 2022
+      quarter: 1
+      count: 11594
+    - year: 2022
+      quarter: 2
+      count: 12397
+    - year: 2022
+      quarter: 3
+      count: 13304
+    - year: 2022
+      quarter: 4
+      count: 14099
+    - year: 2023
+      quarter: 1
+      count: 15224
+    - year: 2023
+      quarter: 2
+      count: 16488
+    - year: 2023
+      quarter: 3
+      count: 18020
+    - year: 2023
+      quarter: 4
+      count: 19302
+    - year: 2024
+      quarter: 1
+      count: 20691
+    - year: 2024
+      quarter: 2
+      count: 22126
+    - year: 2024
+      quarter: 3
+      count: 23664
+    - year: 2024
+      quarter: 4
+      count: 25173
+data:
+  labels:
+    - MZ-P
+    - MZ-G
+    - MZ-I
+    - MZ-B
+    - MZ-MPM
+    - MZ-L
+    - MZ-N
+    - MZ-A
+    - MZ-S
+    - MZ-T
+    - MZ-Q

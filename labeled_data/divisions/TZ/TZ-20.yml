@@ -1,0 +1,10 @@
+name: Rukwa
+type: Division-1
+meta:
+  alpha2: TZ-20
+  includes:
+    - rukwa
+    - tz-20
+    - '20'
+    - rukwa region
+  category: REGION

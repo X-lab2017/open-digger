@@ -1,0 +1,10 @@
+name: Puebla
+type: Division-1
+meta:
+  alpha2: MX-PUE
+  includes:
+    - puebla
+    - mx-pue
+    - pue
+    - puebla state
+  category: STATE

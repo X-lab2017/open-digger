@@ -1,0 +1,10 @@
+name: South West
+type: Division-1
+meta:
+  alpha2: SG-05
+  includes:
+    - south west
+    - sg-05
+    - '05'
+    - south west district
+  category: DISTRICT

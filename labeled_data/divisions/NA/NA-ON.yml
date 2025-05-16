@@ -1,0 +1,10 @@
+name: Oshana
+type: Division-1
+meta:
+  alpha2: NA-ON
+  includes:
+    - oshana
+    - na-on
+    - 'on'
+    - oshana region
+  category: REGION

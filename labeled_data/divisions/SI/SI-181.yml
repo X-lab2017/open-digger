@@ -1,0 +1,10 @@
+name: Sveta Ana
+type: Division-1
+meta:
+  alpha2: SI-181
+  includes:
+    - sveta ana
+    - si-181
+    - '181'
+    - sveta ana municipality
+  category: MUNICIPALITY

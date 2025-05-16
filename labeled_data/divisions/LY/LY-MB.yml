@@ -1,0 +1,10 @@
+name: Al Marqab
+type: Division-1
+meta:
+  alpha2: LY-MB
+  includes:
+    - al marqab
+    - ly-mb
+    - mb
+    - al marqab popularate
+  category: POPULARATE

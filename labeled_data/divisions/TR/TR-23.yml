@@ -1,0 +1,10 @@
+name: Elazığ
+type: Division-1
+meta:
+  alpha2: TR-23
+  includes:
+    - elazığ
+    - tr-23
+    - '23'
+    - elazığ province
+  category: PROVINCE

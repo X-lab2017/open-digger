@@ -1,0 +1,10 @@
+name: Andaman and Nicobar Islands
+type: Division-1
+meta:
+  alpha2: IN-AN
+  includes:
+    - andaman and nicobar islands
+    - in-an
+    - an
+    - andaman and nicobar islands union territory
+  category: UNION TERRITORY

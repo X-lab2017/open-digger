@@ -1,0 +1,10 @@
+name: Gorišnica
+type: Division-1
+meta:
+  alpha2: SI-028
+  includes:
+    - gorišnica
+    - si-028
+    - '028'
+    - gorišnica municipality
+  category: MUNICIPALITY

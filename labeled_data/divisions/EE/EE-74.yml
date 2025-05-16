@@ -1,0 +1,22 @@
+name: Saaremaa
+type: Division-1
+meta:
+  alpha2: EE-74
+  includes:
+    - muhu
+    - ee-478
+    - '478'
+    - muhu rural municipality
+    - ruhnu
+    - ee-689
+    - '689'
+    - ruhnu rural municipality
+    - saaremaa
+    - ee-74
+    - '74'
+    - saaremaa county
+    - ee-714
+    - '714'
+    - saaremaa rural municipality
+    - saare county
+  category: COUNTY

@@ -1,0 +1,11 @@
+name: Piauí
+type: Division-1
+meta:
+  alpha2: BR-PI
+  includes:
+    - piauí
+    - br-pi
+    - pi
+    - piauí state
+    - state of piauí
+  category: STATE

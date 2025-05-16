@@ -1,0 +1,10 @@
+name: Luapula
+type: Division-1
+meta:
+  alpha2: ZM-04
+  includes:
+    - luapula
+    - zm-04
+    - '04'
+    - luapula province
+  category: PROVINCE

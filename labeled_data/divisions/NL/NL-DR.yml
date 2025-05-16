@@ -1,0 +1,10 @@
+name: Drenthe
+type: Division-1
+meta:
+  alpha2: NL-DR
+  includes:
+    - drenthe
+    - nl-dr
+    - dr
+    - drenthe province
+  category: PROVINCE

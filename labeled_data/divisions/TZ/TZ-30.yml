@@ -1,0 +1,10 @@
+name: Simiyu
+type: Division-1
+meta:
+  alpha2: TZ-30
+  includes:
+    - simiyu
+    - tz-30
+    - '30'
+    - simiyu region
+  category: REGION

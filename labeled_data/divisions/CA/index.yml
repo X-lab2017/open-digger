@@ -1,0 +1,90 @@
+name: Canada
+type: Division-0
+meta:
+  alpha2: CA
+  includes:
+    - Canada
+    - CA
+    - '124'
+    - 加拿大
+  name_full: Canada
+  name_zh: 加拿大
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 1134715
+    - year: 2020
+      quarter: 2
+      count: 1228068
+    - year: 2020
+      quarter: 3
+      count: 1305510
+    - year: 2020
+      quarter: 4
+      count: 1384211
+    - year: 2021
+      quarter: 1
+      count: 1475923
+    - year: 2021
+      quarter: 2
+      count: 1554341
+    - year: 2021
+      quarter: 3
+      count: 1630783
+    - year: 2021
+      quarter: 4
+      count: 1721887
+    - year: 2022
+      quarter: 1
+      count: 1852152
+    - year: 2022
+      quarter: 2
+      count: 1949763
+    - year: 2022
+      quarter: 3
+      count: 2041836
+    - year: 2022
+      quarter: 4
+      count: 2137478
+    - year: 2023
+      quarter: 1
+      count: 2256444
+    - year: 2023
+      quarter: 2
+      count: 2370776
+    - year: 2023
+      quarter: 3
+      count: 2479673
+    - year: 2023
+      quarter: 4
+      count: 2597209
+    - year: 2024
+      quarter: 1
+      count: 2752533
+    - year: 2024
+      quarter: 2
+      count: 2840624
+    - year: 2024
+      quarter: 3
+      count: 2946022
+    - year: 2024
+      quarter: 4
+      count: 3064962
+data:
+  labels:
+    - CA-AB
+    - CA-BC
+    - CA-MB
+    - CA-NB
+    - CA-NL
+    - CA-NT
+    - CA-NS
+    - CA-NU
+    - CA-ON
+    - CA-PE
+    - CA-QC
+    - CA-SK
+    - CA-YT
+    - ':companies/tailscale'
+    - ':companies/tenstorrent'
+    - ':foundations/eclipse'

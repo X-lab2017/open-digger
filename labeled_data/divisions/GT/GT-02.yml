@@ -1,0 +1,10 @@
+name: El Progreso
+type: Division-1
+meta:
+  alpha2: GT-02
+  includes:
+    - el progreso
+    - gt-02
+    - '02'
+    - el progreso department
+  category: DEPARTMENT

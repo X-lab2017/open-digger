@@ -1,0 +1,23 @@
+name: Centre-Sud
+type: Division-1
+meta:
+  alpha2: BF-07
+  includes:
+    - bazèga
+    - bf-baz
+    - baz
+    - bazèga province
+    - centre-sud
+    - bf-07
+    - '07'
+    - centre-sud region
+    - nahouri
+    - bf-nao
+    - nao
+    - nahouri province
+    - zoundwéogo
+    - bf-zou
+    - zou
+    - zoundwéogo province
+    - central-south
+  category: REGION

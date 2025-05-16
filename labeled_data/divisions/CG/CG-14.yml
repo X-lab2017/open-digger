@@ -1,0 +1,10 @@
+name: Plateaux
+type: Division-1
+meta:
+  alpha2: CG-14
+  includes:
+    - plateaux
+    - cg-14
+    - '14'
+    - plateaux department
+  category: DEPARTMENT

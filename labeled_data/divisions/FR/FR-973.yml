@@ -1,0 +1,10 @@
+name: Guyane
+type: Division-1
+meta:
+  alpha2: FR-973
+  includes:
+    - guyane
+    - fr-973
+    - '973'
+    - guyane overseas unique territorial collectivity
+  category: OVERSEAS UNIQUE TERRITORIAL COLLECTIVITY

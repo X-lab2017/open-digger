@@ -1,0 +1,10 @@
+name: Kaolack
+type: Division-1
+meta:
+  alpha2: SN-KL
+  includes:
+    - kaolack
+    - sn-kl
+    - kl
+    - kaolack region
+  category: REGION

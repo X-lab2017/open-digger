@@ -1,0 +1,10 @@
+name: Yobe
+type: Division-1
+meta:
+  alpha2: NG-YO
+  includes:
+    - yobe
+    - ng-yo
+    - yo
+    - yobe state
+  category: STATE

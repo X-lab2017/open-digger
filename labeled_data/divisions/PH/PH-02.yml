@@ -1,0 +1,38 @@
+name: Cagayan Valley
+type: Division-1
+meta:
+  alpha2: PH-02
+  includes:
+    - batanes
+    - ph-btn
+    - btn
+    - batanes province
+    - cagayan
+    - ph-cag
+    - cag
+    - cagayan province
+    - cagayan valley
+    - ph-02
+    - '02'
+    - cagayan valley region
+    - isabela
+    - ph-isa
+    - isa
+    - isabela province
+    - kagayan
+    - kagayan province
+    - kirino
+    - ph-qui
+    - qui
+    - kirino province
+    - nueva vizcaya
+    - ph-nuv
+    - nuv
+    - nueva vizcaya province
+    - nuweva biskaya
+    - nuweva biskaya province
+    - quirino
+    - quirino province
+    - rehiyon ng lambak ng kagayan
+    - rehiyon ng lambak ng kagayan region
+  category: REGION

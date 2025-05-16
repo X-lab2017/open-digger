@@ -1,0 +1,10 @@
+name: Kayes
+type: Division-1
+meta:
+  alpha2: ML-1
+  includes:
+    - kayes
+    - ml-1
+    - '1'
+    - kayes region
+  category: REGION

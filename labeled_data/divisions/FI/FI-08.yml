@@ -1,0 +1,13 @@
+name: Mellersta Finland
+type: Division-1
+meta:
+  alpha2: FI-08
+  includes:
+    - keski-suomi
+    - fi-08
+    - '08'
+    - keski-suomi region
+    - mellersta finland
+    - mellersta finland region
+    - central finland
+  category: REGION

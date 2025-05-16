@@ -1,0 +1,10 @@
+name: Štore
+type: Division-1
+meta:
+  alpha2: SI-127
+  includes:
+    - štore
+    - si-127
+    - '127'
+    - štore municipality
+  category: MUNICIPALITY

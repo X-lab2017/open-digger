@@ -1,0 +1,86 @@
+name: Central African Republic
+type: Division-0
+meta:
+  alpha2: CF
+  includes:
+    - Central African Republic
+    - CF
+    - '140'
+    - the Central African Republic
+    - 中非
+  name_full: the Central African Republic
+  name_zh: 中非
+  developers:
+    - year: 2020
+      quarter: 3
+      count: 113
+    - year: 2020
+      quarter: 4
+      count: 126
+    - year: 2021
+      quarter: 1
+      count: 136
+    - year: 2021
+      quarter: 2
+      count: 151
+    - year: 2021
+      quarter: 3
+      count: 164
+    - year: 2021
+      quarter: 4
+      count: 185
+    - year: 2022
+      quarter: 1
+      count: 197
+    - year: 2022
+      quarter: 2
+      count: 215
+    - year: 2022
+      quarter: 3
+      count: 243
+    - year: 2022
+      quarter: 4
+      count: 258
+    - year: 2023
+      quarter: 1
+      count: 286
+    - year: 2023
+      quarter: 2
+      count: 317
+    - year: 2023
+      quarter: 3
+      count: 329
+    - year: 2023
+      quarter: 4
+      count: 361
+    - year: 2024
+      quarter: 1
+      count: 374
+    - year: 2024
+      quarter: 2
+      count: 415
+    - year: 2024
+      quarter: 3
+      count: 443
+    - year: 2024
+      quarter: 4
+      count: 471
+data:
+  labels:
+    - CF-BB
+    - CF-BGF
+    - CF-BK
+    - CF-KB
+    - CF-HM
+    - CF-HK
+    - CF-HS
+    - CF-KG
+    - CF-LB
+    - CF-MB
+    - CF-NM
+    - CF-MP
+    - CF-UK
+    - CF-AC
+    - CF-OP
+    - CF-SE
+    - CF-VK

@@ -1,0 +1,12 @@
+name: Ludzas novads
+type: Division-1
+meta:
+  alpha2: LV-058
+  includes:
+    - ludzas novads
+    - lv-058
+    - '058'
+    - ludzas novads municipality
+    - ludza
+    - ludza municipality
+  category: MUNICIPALITY

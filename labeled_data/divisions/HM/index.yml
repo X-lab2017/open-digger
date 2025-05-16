@@ -1,0 +1,12 @@
+name: Heard Island and McDonald Islands
+type: Division-0
+meta:
+  alpha2: HM
+  includes:
+    - Heard Island and McDonald Islands
+    - HM
+    - '334'
+    - 赫德岛和麦克唐纳岛
+  name_full: Heard Island and McDonald Islands
+  name_zh: 赫德岛和麦克唐纳岛
+  developers: []

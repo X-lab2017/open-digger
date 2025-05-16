@@ -1,0 +1,11 @@
+name: Ţarţūs
+type: Division-1
+meta:
+  alpha2: SY-TA
+  includes:
+    - ţarţūs
+    - sy-ta
+    - ta
+    - ţarţūs province
+    - tartus governorate
+  category: PROVINCE

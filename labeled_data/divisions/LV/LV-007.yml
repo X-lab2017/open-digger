@@ -1,0 +1,12 @@
+name: Alūksnes novads
+type: Division-1
+meta:
+  alpha2: LV-007
+  includes:
+    - alūksnes novads
+    - lv-007
+    - '007'
+    - alūksnes novads municipality
+    - alūksne
+    - alūksne municipality
+  category: MUNICIPALITY

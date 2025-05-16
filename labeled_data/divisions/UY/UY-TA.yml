@@ -1,0 +1,10 @@
+name: Tacuarembó
+type: Division-1
+meta:
+  alpha2: UY-TA
+  includes:
+    - tacuarembó
+    - uy-ta
+    - ta
+    - tacuarembó department
+  category: DEPARTMENT

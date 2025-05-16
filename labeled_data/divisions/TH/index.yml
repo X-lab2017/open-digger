@@ -1,0 +1,153 @@
+name: Thailand
+type: Division-0
+meta:
+  alpha2: TH
+  includes:
+    - Thailand
+    - TH
+    - '764'
+    - the Kingdom of Thailand
+    - 泰国
+  name_full: the Kingdom of Thailand
+  name_zh: 泰国
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 304181
+    - year: 2020
+      quarter: 2
+      count: 331449
+    - year: 2020
+      quarter: 3
+      count: 358303
+    - year: 2020
+      quarter: 4
+      count: 383466
+    - year: 2021
+      quarter: 1
+      count: 412666
+    - year: 2021
+      quarter: 2
+      count: 441763
+    - year: 2021
+      quarter: 3
+      count: 476990
+    - year: 2021
+      quarter: 4
+      count: 510059
+    - year: 2022
+      quarter: 1
+      count: 589373
+    - year: 2022
+      quarter: 2
+      count: 627698
+    - year: 2022
+      quarter: 3
+      count: 683099
+    - year: 2022
+      quarter: 4
+      count: 724189
+    - year: 2023
+      quarter: 1
+      count: 764382
+    - year: 2023
+      quarter: 2
+      count: 803463
+    - year: 2023
+      quarter: 3
+      count: 858245
+    - year: 2023
+      quarter: 4
+      count: 900719
+    - year: 2024
+      quarter: 1
+      count: 978756
+    - year: 2024
+      quarter: 2
+      count: 1009178
+    - year: 2024
+      quarter: 3
+      count: 1048091
+    - year: 2024
+      quarter: 4
+      count: 1090563
+data:
+  labels:
+    - TH-37
+    - TH-15
+    - TH-38
+    - TH-31
+    - TH-24
+    - TH-18
+    - TH-36
+    - TH-22
+    - TH-50
+    - TH-57
+    - TH-20
+    - TH-86
+    - TH-46
+    - TH-62
+    - TH-71
+    - TH-40
+    - TH-81
+    - TH-10
+    - TH-52
+    - TH-51
+    - TH-42
+    - TH-16
+    - TH-58
+    - TH-44
+    - TH-49
+    - TH-26
+    - TH-73
+    - TH-48
+    - TH-30
+    - TH-60
+    - TH-80
+    - TH-55
+    - TH-96
+    - TH-39
+    - TH-43
+    - TH-12
+    - TH-13
+    - TH-94
+    - TH-82
+    - TH-93
+    - TH-S
+    - TH-56
+    - TH-67
+    - TH-76
+    - TH-66
+    - TH-65
+    - TH-14
+    - TH-54
+    - TH-83
+    - TH-25
+    - TH-77
+    - TH-85
+    - TH-70
+    - TH-21
+    - TH-45
+    - TH-27
+    - TH-47
+    - TH-11
+    - TH-74
+    - TH-75
+    - TH-19
+    - TH-91
+    - TH-33
+    - TH-17
+    - TH-90
+    - TH-64
+    - TH-72
+    - TH-84
+    - TH-32
+    - TH-63
+    - TH-92
+    - TH-23
+    - TH-34
+    - TH-41
+    - TH-61
+    - TH-53
+    - TH-95
+    - TH-35

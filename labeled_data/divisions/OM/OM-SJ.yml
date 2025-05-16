@@ -1,0 +1,11 @@
+name: Janūb ash Sharqīyah
+type: Division-1
+meta:
+  alpha2: OM-SJ
+  includes:
+    - janūb ash sharqīyah
+    - om-sj
+    - sj
+    - janūb ash sharqīyah governorate
+    - ash sharqiyah south governorate
+  category: GOVERNORATE

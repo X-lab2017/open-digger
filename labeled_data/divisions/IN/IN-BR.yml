@@ -1,0 +1,10 @@
+name: Bihār
+type: Division-1
+meta:
+  alpha2: IN-BR
+  includes:
+    - bihār
+    - in-br
+    - br
+    - bihār state
+  category: STATE

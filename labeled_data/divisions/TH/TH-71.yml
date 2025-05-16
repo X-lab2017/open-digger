@@ -1,0 +1,10 @@
+name: Kanchanaburi
+type: Division-1
+meta:
+  alpha2: TH-71
+  includes:
+    - kanchanaburi
+    - th-71
+    - '71'
+    - kanchanaburi province
+  category: PROVINCE

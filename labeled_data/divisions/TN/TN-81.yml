@@ -1,0 +1,10 @@
+name: Gabès
+type: Division-1
+meta:
+  alpha2: TN-81
+  includes:
+    - gabès
+    - tn-81
+    - '81'
+    - gabès governorate
+  category: GOVERNORATE

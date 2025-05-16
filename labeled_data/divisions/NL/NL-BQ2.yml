@@ -1,0 +1,10 @@
+name: Saba
+type: Division-1
+meta:
+  alpha2: NL-BQ2
+  includes:
+    - saba
+    - nl-bq2
+    - bq2
+    - saba special municipality
+  category: SPECIAL MUNICIPALITY

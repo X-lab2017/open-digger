@@ -1,0 +1,10 @@
+name: Maine
+type: Division-1
+meta:
+  alpha2: US-ME
+  includes:
+    - maine
+    - us-me
+    - me
+    - maine state
+  category: STATE

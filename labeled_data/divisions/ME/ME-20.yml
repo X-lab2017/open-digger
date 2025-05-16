@@ -1,0 +1,11 @@
+name: Ulcinj
+type: Division-1
+meta:
+  alpha2: ME-20
+  includes:
+    - ulcinj
+    - me-20
+    - '20'
+    - ulcinj municipality
+    - opština ulcinj
+  category: MUNICIPALITY

@@ -1,0 +1,11 @@
+name: Thüringen
+type: Division-1
+meta:
+  alpha2: DE-TH
+  includes:
+    - thüringen
+    - de-th
+    - th
+    - thüringen land
+    - thuringia
+  category: LAND

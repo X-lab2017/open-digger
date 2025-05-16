@@ -1,0 +1,12 @@
+name: ‘Artā
+type: Division-1
+meta:
+  alpha2: DJ-AR
+  includes:
+    - arta
+    - dj-ar
+    - ar
+    - arta region
+    - ‘artā
+    - ‘artā region
+  category: REGION

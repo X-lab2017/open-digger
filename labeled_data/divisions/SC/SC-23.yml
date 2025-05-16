@@ -1,0 +1,10 @@
+name: Takamaka
+type: Division-1
+meta:
+  alpha2: SC-23
+  includes:
+    - takamaka
+    - sc-23
+    - '23'
+    - takamaka district
+  category: DISTRICT

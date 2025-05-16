@@ -1,0 +1,11 @@
+name: Rach'a-Lechkhumi-Kvemo Svaneti
+type: Division-1
+meta:
+  alpha2: GE-RL
+  includes:
+    - rach'a-lechkhumi-kvemo svaneti
+    - ge-rl
+    - rl
+    - rach'a-lechkhumi-kvemo svaneti region
+    - racha-lechkhumi and lower svaneti
+  category: REGION

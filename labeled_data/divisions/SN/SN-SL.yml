@@ -1,0 +1,11 @@
+name: Saint-Louis
+type: Division-1
+meta:
+  alpha2: SN-SL
+  includes:
+    - saint-louis
+    - sn-sl
+    - sl
+    - saint-louis region
+    - région de saint louis
+  category: REGION

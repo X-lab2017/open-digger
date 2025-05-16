@@ -1,0 +1,11 @@
+name: Rocha
+type: Division-1
+meta:
+  alpha2: UY-RO
+  includes:
+    - rocha
+    - uy-ro
+    - ro
+    - rocha department
+    - departamento de rocha
+  category: DEPARTMENT

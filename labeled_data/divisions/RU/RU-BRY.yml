@@ -1,0 +1,14 @@
+name: Bryanskaya oblast'
+type: Division-1
+meta:
+  alpha2: RU-BRY
+  includes:
+    - brjanskaja oblast'
+    - ru-bry
+    - bry
+    - brjanskaja oblast' administrative region
+    - bryanskaya oblast'
+    - bryanskaya oblast' administrative region
+    - bryansk oblast
+    - bryansk
+  category: ADMINISTRATIVE REGION

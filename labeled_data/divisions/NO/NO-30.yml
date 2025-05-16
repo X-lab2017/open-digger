@@ -1,0 +1,13 @@
+name: Viken
+type: Division-1
+meta:
+  alpha2: NO-30
+  includes:
+    - viken
+    - no-30
+    - '30'
+    - viken county
+    - akershus
+    - østfold
+    - buskerud
+  category: COUNTY

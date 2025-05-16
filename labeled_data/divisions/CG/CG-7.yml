@@ -1,0 +1,10 @@
+name: Likouala
+type: Division-1
+meta:
+  alpha2: CG-7
+  includes:
+    - likouala
+    - cg-7
+    - '7'
+    - likouala department
+  category: DEPARTMENT

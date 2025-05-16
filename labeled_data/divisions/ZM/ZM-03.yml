@@ -1,0 +1,10 @@
+name: Eastern
+type: Division-1
+meta:
+  alpha2: ZM-03
+  includes:
+    - eastern
+    - zm-03
+    - '03'
+    - eastern province
+  category: PROVINCE

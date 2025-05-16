@@ -1,0 +1,10 @@
+name: Taraba
+type: Division-1
+meta:
+  alpha2: NG-TA
+  includes:
+    - taraba
+    - ng-ta
+    - ta
+    - taraba state
+  category: STATE

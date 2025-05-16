@@ -1,0 +1,22 @@
+name: Järvamaa
+type: Division-1
+meta:
+  alpha2: EE-52
+  includes:
+    - järva
+    - ee-255
+    - '255'
+    - järva rural municipality
+    - järvamaa
+    - ee-52
+    - '52'
+    - järvamaa county
+    - paide
+    - ee-567
+    - '567'
+    - paide urban municipality
+    - türi
+    - ee-834
+    - '834'
+    - türi rural municipality
+  category: COUNTY

@@ -1,0 +1,35 @@
+name: Centre-Val de Loire
+type: Division-1
+meta:
+  alpha2: FR-CVL
+  includes:
+    - centre-val de loire
+    - fr-cvl
+    - cvl
+    - centre-val de loire metropolitan region
+    - cher
+    - fr-18
+    - '18'
+    - cher metropolitan department
+    - eure-et-loir
+    - fr-28
+    - '28'
+    - eure-et-loir metropolitan department
+    - indre
+    - fr-36
+    - '36'
+    - indre metropolitan department
+    - indre-et-loire
+    - fr-37
+    - '37'
+    - indre-et-loire metropolitan department
+    - loir-et-cher
+    - fr-41
+    - '41'
+    - loir-et-cher metropolitan department
+    - loiret
+    - fr-45
+    - '45'
+    - loiret metropolitan department
+    - limousin
+  category: METROPOLITAN REGION

@@ -1,0 +1,12 @@
+name: Est
+type: Division-1
+meta:
+  alpha2: CM-ES
+  includes:
+    - east
+    - cm-es
+    - es
+    - east region
+    - est
+    - est region
+  category: REGION

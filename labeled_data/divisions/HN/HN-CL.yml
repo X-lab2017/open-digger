@@ -1,0 +1,11 @@
+name: Colón
+type: Division-1
+meta:
+  alpha2: HN-CL
+  includes:
+    - colón
+    - hn-cl
+    - cl
+    - colón department
+    - hnct
+  category: DEPARTMENT

@@ -1,0 +1,50 @@
+name: Khulna
+type: Division-1
+meta:
+  alpha2: BD-D
+  includes:
+    - bagerhat
+    - bd-05
+    - '05'
+    - bagerhat district
+    - chuadanga
+    - bd-12
+    - '12'
+    - chuadanga district
+    - jashore
+    - bd-22
+    - '22'
+    - jashore district
+    - jhenaidah
+    - bd-23
+    - '23'
+    - jhenaidah district
+    - khulna
+    - bd-d
+    - d
+    - khulna division
+    - bd-27
+    - '27'
+    - khulna district
+    - kushtia
+    - bd-30
+    - '30'
+    - kushtia district
+    - magura
+    - bd-37
+    - '37'
+    - magura district
+    - meherpur
+    - bd-39
+    - '39'
+    - meherpur district
+    - narail
+    - bd-43
+    - '43'
+    - narail district
+    - satkhira
+    - bd-58
+    - '58'
+    - satkhira district
+    - খুলনা বিভাগ
+  category: DIVISION

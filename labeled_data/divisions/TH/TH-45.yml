@@ -1,0 +1,10 @@
+name: Roi Et
+type: Division-1
+meta:
+  alpha2: TH-45
+  includes:
+    - roi et
+    - th-45
+    - '45'
+    - roi et province
+  category: PROVINCE

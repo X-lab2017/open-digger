@@ -1,0 +1,10 @@
+name: Bari
+type: Division-1
+meta:
+  alpha2: SO-BR
+  includes:
+    - bari
+    - so-br
+    - br
+    - bari region
+  category: REGION

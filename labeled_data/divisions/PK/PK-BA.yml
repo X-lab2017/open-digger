@@ -1,0 +1,13 @@
+name: Balochistan
+type: Division-1
+meta:
+  alpha2: PK-BA
+  includes:
+    - balochistan
+    - pk-ba
+    - ba
+    - balochistan province
+    - balōchistān
+    - balōchistān province
+    - baluchistan
+  category: PROVINCE

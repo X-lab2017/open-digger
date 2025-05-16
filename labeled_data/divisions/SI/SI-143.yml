@@ -1,0 +1,10 @@
+name: Zavrč
+type: Division-1
+meta:
+  alpha2: SI-143
+  includes:
+    - zavrč
+    - si-143
+    - '143'
+    - zavrč municipality
+  category: MUNICIPALITY

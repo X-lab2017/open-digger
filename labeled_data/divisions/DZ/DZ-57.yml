@@ -1,0 +1,11 @@
+name: El Meghaier
+type: Division-1
+meta:
+  alpha2: DZ-57
+  includes:
+    - el meghaier
+    - dz-57
+    - '57'
+    - el meghaier province
+    - el m'ghair
+  category: PROVINCE

@@ -1,0 +1,10 @@
+name: Saint-Martin
+type: Division-1
+meta:
+  alpha2: FR-MF
+  includes:
+    - saint-martin
+    - fr-mf
+    - mf
+    - saint-martin overseas collectivity
+  category: OVERSEAS COLLECTIVITY

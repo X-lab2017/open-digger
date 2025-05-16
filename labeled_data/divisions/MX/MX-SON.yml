@@ -1,0 +1,10 @@
+name: Sonora
+type: Division-1
+meta:
+  alpha2: MX-SON
+  includes:
+    - sonora
+    - mx-son
+    - son
+    - sonora state
+  category: STATE

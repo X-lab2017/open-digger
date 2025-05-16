@@ -1,0 +1,10 @@
+name: Ruggell
+type: Division-1
+meta:
+  alpha2: LI-06
+  includes:
+    - ruggell
+    - li-06
+    - '06'
+    - ruggell commune
+  category: COMMUNE

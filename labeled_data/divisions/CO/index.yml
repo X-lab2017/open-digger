@@ -1,0 +1,108 @@
+name: Colombia
+type: Division-0
+meta:
+  alpha2: CO
+  includes:
+    - Colombia
+    - CO
+    - '170'
+    - the Republic of Colombia
+    - 哥伦比亚
+  name_full: the Republic of Colombia
+  name_zh: 哥伦比亚
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 281269
+    - year: 2020
+      quarter: 2
+      count: 318051
+    - year: 2020
+      quarter: 3
+      count: 356007
+    - year: 2020
+      quarter: 4
+      count: 385848
+    - year: 2021
+      quarter: 1
+      count: 419083
+    - year: 2021
+      quarter: 2
+      count: 454262
+    - year: 2021
+      quarter: 3
+      count: 498795
+    - year: 2021
+      quarter: 4
+      count: 532514
+    - year: 2022
+      quarter: 1
+      count: 572678
+    - year: 2022
+      quarter: 2
+      count: 613348
+    - year: 2022
+      quarter: 3
+      count: 664639
+    - year: 2022
+      quarter: 4
+      count: 706112
+    - year: 2023
+      quarter: 1
+      count: 760170
+    - year: 2023
+      quarter: 2
+      count: 817838
+    - year: 2023
+      quarter: 3
+      count: 874571
+    - year: 2023
+      quarter: 4
+      count: 920019
+    - year: 2024
+      quarter: 1
+      count: 981221
+    - year: 2024
+      quarter: 2
+      count: 1036936
+    - year: 2024
+      quarter: 3
+      count: 1095581
+    - year: 2024
+      quarter: 4
+      count: 1150014
+data:
+  labels:
+    - CO-AMA
+    - CO-ANT
+    - CO-ARA
+    - CO-ATL
+    - CO-BOL
+    - CO-BOY
+    - CO-CAL
+    - CO-CAQ
+    - CO-CAS
+    - CO-CAU
+    - CO-CES
+    - CO-CHO
+    - CO-CUN
+    - CO-COR
+    - CO-DC
+    - CO-GUA
+    - CO-GUV
+    - CO-HUI
+    - CO-LAG
+    - CO-MAG
+    - CO-MET
+    - CO-NAR
+    - CO-NSA
+    - CO-PUT
+    - CO-QUI
+    - CO-RIS
+    - CO-SAP
+    - CO-SAN
+    - CO-SUC
+    - CO-TOL
+    - CO-VAC
+    - CO-VAU
+    - CO-VID

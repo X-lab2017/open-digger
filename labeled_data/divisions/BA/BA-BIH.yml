@@ -1,0 +1,14 @@
+name: Federacija Bosne i Hercegovine
+type: Division-1
+meta:
+  alpha2: BA-BIH
+  includes:
+    - federacija bosne i hercegovine
+    - ba-bih
+    - bih
+    - federacija bosne i hercegovine entity
+    - federation of bosnia and herzegovina
+    - bh
+    - br
+    - federation of bosnia & herzegovina
+  category: ENTITY

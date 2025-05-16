@@ -1,0 +1,11 @@
+name: Dagestan
+type: Division-1
+meta:
+  alpha2: RU-DA
+  includes:
+    - dagestan
+    - ru-da
+    - da
+    - dagestan republic
+    - republic of dagestan
+  category: REPUBLIC

@@ -1,0 +1,10 @@
+name: Quiché
+type: Division-1
+meta:
+  alpha2: GT-14
+  includes:
+    - quiché
+    - gt-14
+    - '14'
+    - quiché department
+  category: DEPARTMENT

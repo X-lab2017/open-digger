@@ -1,0 +1,10 @@
+name: Médéa
+type: Division-1
+meta:
+  alpha2: DZ-26
+  includes:
+    - médéa
+    - dz-26
+    - '26'
+    - médéa province
+  category: PROVINCE

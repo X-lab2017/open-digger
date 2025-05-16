@@ -1,0 +1,13 @@
+name: Gyeongsangbuk-do
+type: Division-1
+meta:
+  alpha2: KR-47
+  includes:
+    - gyeongsangbuk-do
+    - kr-47
+    - '47'
+    - gyeongsangbuk-do province
+    - gyeongbuk
+    - gyeongbuk province
+    - north gyeongsang
+  category: PROVINCE

@@ -1,0 +1,10 @@
+name: Zambezi
+type: Division-1
+meta:
+  alpha2: NA-CA
+  includes:
+    - zambezi
+    - na-ca
+    - ca
+    - zambezi region
+  category: REGION

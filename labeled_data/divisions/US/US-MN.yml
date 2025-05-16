@@ -1,0 +1,10 @@
+name: Minnesota
+type: Division-1
+meta:
+  alpha2: US-MN
+  includes:
+    - minnesota
+    - us-mn
+    - mn
+    - minnesota state
+  category: STATE

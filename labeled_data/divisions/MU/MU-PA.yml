@@ -1,0 +1,10 @@
+name: Pamplemousses
+type: Division-1
+meta:
+  alpha2: MU-PA
+  includes:
+    - pamplemousses
+    - mu-pa
+    - pa
+    - pamplemousses district
+  category: DISTRICT

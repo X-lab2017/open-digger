@@ -1,0 +1,10 @@
+name: Goranboy
+type: Division-1
+meta:
+  alpha2: AZ-GOR
+  includes:
+    - goranboy
+    - az-gor
+    - gor
+    - goranboy rayon
+  category: RAYON

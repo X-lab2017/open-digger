@@ -1,0 +1,84 @@
+name: Saint Lucia
+type: Division-0
+meta:
+  alpha2: LC
+  includes:
+    - Saint Lucia
+    - LC
+    - '662'
+    - 圣卢西亚
+  name_full: Saint Lucia
+  name_zh: 圣卢西亚
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 920
+    - year: 2020
+      quarter: 2
+      count: 1068
+    - year: 2020
+      quarter: 3
+      count: 1180
+    - year: 2020
+      quarter: 4
+      count: 1296
+    - year: 2021
+      quarter: 1
+      count: 1405
+    - year: 2021
+      quarter: 2
+      count: 1481
+    - year: 2021
+      quarter: 3
+      count: 1580
+    - year: 2021
+      quarter: 4
+      count: 1723
+    - year: 2022
+      quarter: 1
+      count: 1831
+    - year: 2022
+      quarter: 2
+      count: 1958
+    - year: 2022
+      quarter: 3
+      count: 2063
+    - year: 2022
+      quarter: 4
+      count: 2158
+    - year: 2023
+      quarter: 1
+      count: 2261
+    - year: 2023
+      quarter: 2
+      count: 2406
+    - year: 2023
+      quarter: 3
+      count: 2527
+    - year: 2023
+      quarter: 4
+      count: 2627
+    - year: 2024
+      quarter: 1
+      count: 2770
+    - year: 2024
+      quarter: 2
+      count: 2870
+    - year: 2024
+      quarter: 3
+      count: 2960
+    - year: 2024
+      quarter: 4
+      count: 3070
+data:
+  labels:
+    - LC-01
+    - LC-12
+    - LC-02
+    - LC-03
+    - LC-05
+    - LC-06
+    - LC-07
+    - LC-08
+    - LC-10
+    - LC-11

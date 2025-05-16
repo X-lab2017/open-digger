@@ -1,0 +1,13 @@
+name: Chongqing Shi
+type: Division-1
+meta:
+  alpha2: CN-CQ
+  includes:
+    - chongqing shi
+    - cn-cq
+    - cq
+    - chongqing shi municipality
+    - chongqing
+    - chong qing shi
+    - 重庆市
+  category: MUNICIPALITY

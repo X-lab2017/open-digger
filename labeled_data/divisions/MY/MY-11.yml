@@ -1,0 +1,10 @@
+name: Terengganu
+type: Division-1
+meta:
+  alpha2: MY-11
+  includes:
+    - terengganu
+    - my-11
+    - '11'
+    - terengganu state
+  category: STATE

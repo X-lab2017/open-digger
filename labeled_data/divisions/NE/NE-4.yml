@@ -1,0 +1,10 @@
+name: Maradi
+type: Division-1
+meta:
+  alpha2: NE-4
+  includes:
+    - maradi
+    - ne-4
+    - '4'
+    - maradi region
+  category: REGION

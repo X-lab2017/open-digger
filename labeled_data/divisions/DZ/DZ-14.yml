@@ -1,0 +1,10 @@
+name: Tiaret
+type: Division-1
+meta:
+  alpha2: DZ-14
+  includes:
+    - tiaret
+    - dz-14
+    - '14'
+    - tiaret province
+  category: PROVINCE

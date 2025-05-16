@@ -1,0 +1,10 @@
+name: Lékoumou
+type: Division-1
+meta:
+  alpha2: CG-2
+  includes:
+    - lékoumou
+    - cg-2
+    - '2'
+    - lékoumou department
+  category: DEPARTMENT

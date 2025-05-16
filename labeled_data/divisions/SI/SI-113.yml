@@ -1,0 +1,10 @@
+name: Slovenska Bistrica
+type: Division-1
+meta:
+  alpha2: SI-113
+  includes:
+    - slovenska bistrica
+    - si-113
+    - '113'
+    - slovenska bistrica municipality
+  category: MUNICIPALITY

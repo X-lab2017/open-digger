@@ -1,0 +1,10 @@
+name: Dundgovĭ
+type: Division-1
+meta:
+  alpha2: MN-059
+  includes:
+    - dundgovĭ
+    - mn-059
+    - '059'
+    - dundgovĭ province
+  category: PROVINCE

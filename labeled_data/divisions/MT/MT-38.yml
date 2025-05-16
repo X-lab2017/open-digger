@@ -1,0 +1,10 @@
+name: Naxxar
+type: Division-1
+meta:
+  alpha2: MT-38
+  includes:
+    - naxxar
+    - mt-38
+    - '38'
+    - naxxar local council
+  category: LOCAL COUNCIL

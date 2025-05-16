@@ -1,0 +1,12 @@
+name: Ankaran
+type: Division-1
+meta:
+  alpha2: SI-213
+  includes:
+    - ankaran
+    - si-213
+    - '213'
+    - ankaran municipality
+    - ancarano
+    - ancarano municipality
+  category: MUNICIPALITY

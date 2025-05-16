@@ -1,0 +1,80 @@
+name: Sierra Leone
+type: Division-0
+meta:
+  alpha2: SL
+  includes:
+    - Sierra Leone
+    - SL
+    - '694'
+    - the Republic of Sierra Leone
+    - 塞拉利昂
+  name_full: the Republic of Sierra Leone
+  name_zh: 塞拉利昂
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 1800
+    - year: 2020
+      quarter: 2
+      count: 2060
+    - year: 2020
+      quarter: 3
+      count: 2427
+    - year: 2020
+      quarter: 4
+      count: 2682
+    - year: 2021
+      quarter: 1
+      count: 2964
+    - year: 2021
+      quarter: 2
+      count: 3195
+    - year: 2021
+      quarter: 3
+      count: 3413
+    - year: 2021
+      quarter: 4
+      count: 3674
+    - year: 2022
+      quarter: 1
+      count: 4123
+    - year: 2022
+      quarter: 2
+      count: 4536
+    - year: 2022
+      quarter: 3
+      count: 4972
+    - year: 2022
+      quarter: 4
+      count: 5419
+    - year: 2023
+      quarter: 1
+      count: 5887
+    - year: 2023
+      quarter: 2
+      count: 6232
+    - year: 2023
+      quarter: 3
+      count: 6726
+    - year: 2023
+      quarter: 4
+      count: 7162
+    - year: 2024
+      quarter: 1
+      count: 7573
+    - year: 2024
+      quarter: 2
+      count: 8009
+    - year: 2024
+      quarter: 3
+      count: 8526
+    - year: 2024
+      quarter: 4
+      count: 9138
+data:
+  labels:
+    - SL-E
+    - SL-NW
+    - SL-N
+    - SL-S
+    - SL-W

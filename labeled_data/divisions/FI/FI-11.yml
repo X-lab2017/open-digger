@@ -1,0 +1,12 @@
+name: Birkaland
+type: Division-1
+meta:
+  alpha2: FI-11
+  includes:
+    - birkaland
+    - fi-11
+    - '11'
+    - birkaland region
+    - pirkanmaa
+    - pirkanmaa region
+  category: REGION

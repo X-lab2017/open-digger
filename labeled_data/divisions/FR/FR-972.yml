@@ -1,0 +1,10 @@
+name: Martinique
+type: Division-1
+meta:
+  alpha2: FR-972
+  includes:
+    - martinique
+    - fr-972
+    - '972'
+    - martinique overseas unique territorial collectivity
+  category: OVERSEAS UNIQUE TERRITORIAL COLLECTIVITY

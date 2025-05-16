@@ -1,0 +1,10 @@
+name: Kalasin
+type: Division-1
+meta:
+  alpha2: TH-46
+  includes:
+    - kalasin
+    - th-46
+    - '46'
+    - kalasin province
+  category: PROVINCE

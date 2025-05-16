@@ -1,0 +1,13 @@
+name: Henan Sheng
+type: Division-1
+meta:
+  alpha2: CN-HA
+  includes:
+    - henan sheng
+    - cn-ha
+    - ha
+    - henan sheng province
+    - he nan sheng
+    - henan
+    - 河南省
+  category: PROVINCE

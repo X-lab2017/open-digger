@@ -1,0 +1,12 @@
+name: Hahdhunmathi
+type: Division-1
+meta:
+  alpha2: MV-05
+  includes:
+    - hahdhunmathi
+    - mv-05
+    - '05'
+    - hahdhunmathi administrative atoll
+    - laamu
+    - laamu administrative atoll
+  category: ADMINISTRATIVE ATOLL

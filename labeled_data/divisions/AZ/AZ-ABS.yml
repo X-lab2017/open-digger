@@ -1,0 +1,11 @@
+name: Abşeron
+type: Division-1
+meta:
+  alpha2: AZ-ABS
+  includes:
+    - abşeron
+    - az-abs
+    - abs
+    - abşeron rayon
+    - absheron-khizi
+  category: RAYON

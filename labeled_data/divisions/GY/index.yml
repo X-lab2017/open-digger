@@ -1,0 +1,85 @@
+name: Guyana
+type: Division-0
+meta:
+  alpha2: GY
+  includes:
+    - Guyana
+    - GY
+    - '328'
+    - the Republic of Guyana
+    - 圭亚那
+  name_full: the Republic of Guyana
+  name_zh: 圭亚那
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 1746
+    - year: 2020
+      quarter: 2
+      count: 2020
+    - year: 2020
+      quarter: 3
+      count: 2269
+    - year: 2020
+      quarter: 4
+      count: 2491
+    - year: 2021
+      quarter: 1
+      count: 2714
+    - year: 2021
+      quarter: 2
+      count: 2975
+    - year: 2021
+      quarter: 3
+      count: 3195
+    - year: 2021
+      quarter: 4
+      count: 3422
+    - year: 2022
+      quarter: 1
+      count: 3735
+    - year: 2022
+      quarter: 2
+      count: 4019
+    - year: 2022
+      quarter: 3
+      count: 4276
+    - year: 2022
+      quarter: 4
+      count: 4526
+    - year: 2023
+      quarter: 1
+      count: 4793
+    - year: 2023
+      quarter: 2
+      count: 5117
+    - year: 2023
+      quarter: 3
+      count: 5423
+    - year: 2023
+      quarter: 4
+      count: 5682
+    - year: 2024
+      quarter: 1
+      count: 6027
+    - year: 2024
+      quarter: 2
+      count: 6295
+    - year: 2024
+      quarter: 3
+      count: 6564
+    - year: 2024
+      quarter: 4
+      count: 6865
+data:
+  labels:
+    - GY-BA
+    - GY-CU
+    - GY-DE
+    - GY-EB
+    - GY-ES
+    - GY-MA
+    - GY-PM
+    - GY-PT
+    - GY-UD
+    - GY-UT

@@ -1,0 +1,10 @@
+name: Malaita
+type: Division-1
+meta:
+  alpha2: SB-ML
+  includes:
+    - malaita
+    - sb-ml
+    - ml
+    - malaita province
+  category: PROVINCE

@@ -1,0 +1,11 @@
+name: Homa Bay
+type: Division-1
+meta:
+  alpha2: KE-08
+  includes:
+    - homa bay
+    - ke-08
+    - '08'
+    - homa bay county
+    - rift valley
+  category: COUNTY

@@ -1,0 +1,12 @@
+name: Fribourg
+type: Division-1
+meta:
+  alpha2: CH-FR
+  includes:
+    - freiburg
+    - ch-fr
+    - fr
+    - freiburg canton
+    - fribourg
+    - fribourg canton
+  category: CANTON

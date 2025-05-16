@@ -1,0 +1,12 @@
+name: Bābil
+type: Division-1
+meta:
+  alpha2: IQ-BB
+  includes:
+    - bābil
+    - iq-bb
+    - bb
+    - bābil governorate
+    - babylon governorate
+    - babil governorate
+  category: GOVERNORATE

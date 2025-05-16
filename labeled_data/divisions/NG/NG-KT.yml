@@ -1,0 +1,10 @@
+name: Katsina
+type: Division-1
+meta:
+  alpha2: NG-KT
+  includes:
+    - katsina
+    - ng-kt
+    - kt
+    - katsina state
+  category: STATE

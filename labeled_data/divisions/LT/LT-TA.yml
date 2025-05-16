@@ -1,0 +1,27 @@
+name: Tauragės apskritis
+type: Division-1
+meta:
+  alpha2: LT-TA
+  includes:
+    - jurbarkas
+    - lt-12
+    - '12'
+    - jurbarkas district municipality
+    - pagėgiai
+    - lt-29
+    - '29'
+    - pagėgiai municipality
+    - tauragė
+    - lt-50
+    - '50'
+    - tauragė district municipality
+    - tauragės apskritis
+    - lt-ta
+    - ta
+    - tauragės apskritis county
+    - šilalė
+    - lt-45
+    - '45'
+    - šilalė district municipality
+    - tauragė county
+  category: COUNTY

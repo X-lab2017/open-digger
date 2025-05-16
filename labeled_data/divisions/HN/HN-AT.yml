@@ -1,0 +1,12 @@
+name: Atlántida
+type: Division-1
+meta:
+  alpha2: HN-AT
+  includes:
+    - atlántida
+    - hn-at
+    - at
+    - atlántida department
+    - departamento de atlántida
+    - hnat
+  category: DEPARTMENT

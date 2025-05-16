@@ -1,0 +1,13 @@
+name: Beijing Shi
+type: Division-1
+meta:
+  alpha2: CN-BJ
+  includes:
+    - beijing shi
+    - cn-bj
+    - bj
+    - beijing shi municipality
+    - bei jing shi
+    - 北京市
+    - beijing
+  category: MUNICIPALITY

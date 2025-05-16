@@ -1,0 +1,10 @@
+name: Niuas
+type: Division-1
+meta:
+  alpha2: TO-03
+  includes:
+    - niuas
+    - to-03
+    - '03'
+    - niuas division
+  category: DIVISION

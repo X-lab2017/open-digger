@@ -1,0 +1,10 @@
+name: Woroba
+type: Division-1
+meta:
+  alpha2: CI-WR
+  includes:
+    - woroba
+    - ci-wr
+    - wr
+    - woroba district
+  category: DISTRICT

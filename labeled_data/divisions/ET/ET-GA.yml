@@ -1,0 +1,13 @@
+name: Gambela Peoples
+type: Division-1
+meta:
+  alpha2: ET-GA
+  includes:
+    - gambela peoples
+    - et-ga
+    - ga
+    - gambela peoples regional state
+    - gambēla hizboch
+    - gambēla hizboch regional state
+    - gambella
+  category: REGIONAL STATE

@@ -1,0 +1,85 @@
+name: Zimbabwe
+type: Division-0
+meta:
+  alpha2: ZW
+  includes:
+    - Zimbabwe
+    - ZW
+    - '716'
+    - the Republic of Zimbabwe
+    - 津巴布韦
+  name_full: the Republic of Zimbabwe
+  name_zh: 津巴布韦
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 13270
+    - year: 2020
+      quarter: 2
+      count: 14787
+    - year: 2020
+      quarter: 3
+      count: 16351
+    - year: 2020
+      quarter: 4
+      count: 17355
+    - year: 2021
+      quarter: 1
+      count: 18740
+    - year: 2021
+      quarter: 2
+      count: 20321
+    - year: 2021
+      quarter: 3
+      count: 21794
+    - year: 2021
+      quarter: 4
+      count: 23154
+    - year: 2022
+      quarter: 1
+      count: 24924
+    - year: 2022
+      quarter: 2
+      count: 26742
+    - year: 2022
+      quarter: 3
+      count: 28680
+    - year: 2022
+      quarter: 4
+      count: 30390
+    - year: 2023
+      quarter: 1
+      count: 32544
+    - year: 2023
+      quarter: 2
+      count: 34626
+    - year: 2023
+      quarter: 3
+      count: 36333
+    - year: 2023
+      quarter: 4
+      count: 38118
+    - year: 2024
+      quarter: 1
+      count: 40726
+    - year: 2024
+      quarter: 2
+      count: 43628
+    - year: 2024
+      quarter: 3
+      count: 46049
+    - year: 2024
+      quarter: 4
+      count: 49319
+data:
+  labels:
+    - ZW-BU
+    - ZW-HA
+    - ZW-MA
+    - ZW-MC
+    - ZW-ME
+    - ZW-MW
+    - ZW-MV
+    - ZW-MN
+    - ZW-MS
+    - ZW-MI

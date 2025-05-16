@@ -1,0 +1,11 @@
+name: Šibensko-kninska županija
+type: Division-1
+meta:
+  alpha2: HR-15
+  includes:
+    - šibensko-kninska županija
+    - hr-15
+    - '15'
+    - šibensko-kninska županija county
+    - šibenik-knin county
+  category: COUNTY

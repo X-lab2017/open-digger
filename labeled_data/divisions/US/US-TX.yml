@@ -1,0 +1,10 @@
+name: Texas
+type: Division-1
+meta:
+  alpha2: US-TX
+  includes:
+    - texas
+    - us-tx
+    - tx
+    - texas state
+  category: STATE

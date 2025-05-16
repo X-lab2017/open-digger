@@ -1,0 +1,32 @@
+name: Alytaus apskritis
+type: Division-1
+meta:
+  alpha2: LT-AL
+  includes:
+    - alytaus apskritis
+    - lt-al
+    - al
+    - alytaus apskritis county
+    - alytaus miestas
+    - lt-02
+    - '02'
+    - alytaus miestas city municipality
+    - alytus
+    - lt-03
+    - '03'
+    - alytus district municipality
+    - druskininkai
+    - lt-07
+    - '07'
+    - druskininkai municipality
+    - lazdijai
+    - lt-24
+    - '24'
+    - lazdijai district municipality
+    - varėna
+    - lt-55
+    - '55'
+    - varėna district municipality
+    - alytus county
+    - alytaus
+  category: COUNTY

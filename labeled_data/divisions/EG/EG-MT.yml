@@ -1,0 +1,11 @@
+name: Maţrūḩ
+type: Division-1
+meta:
+  alpha2: EG-MT
+  includes:
+    - maţrūḩ
+    - eg-mt
+    - mt
+    - maţrūḩ governorate
+    - marsa matrouh governorate
+  category: GOVERNORATE

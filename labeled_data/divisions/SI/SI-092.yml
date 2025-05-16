@@ -1,0 +1,10 @@
+name: Podčetrtek
+type: Division-1
+meta:
+  alpha2: SI-092
+  includes:
+    - podčetrtek
+    - si-092
+    - '092'
+    - podčetrtek municipality
+  category: MUNICIPALITY

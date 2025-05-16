@@ -1,0 +1,10 @@
+name: Ashanti
+type: Division-1
+meta:
+  alpha2: GH-AH
+  includes:
+    - ashanti
+    - gh-ah
+    - ah
+    - ashanti region
+  category: REGION

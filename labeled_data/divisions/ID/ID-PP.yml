@@ -1,0 +1,34 @@
+name: Papua
+type: Division-1
+meta:
+  alpha2: ID-PP
+  includes:
+    - papua
+    - id-pp
+    - pp
+    - papua geographical unit
+    - id-pa
+    - pa
+    - papua province
+    - papua barat
+    - id-pb
+    - pb
+    - papua barat province
+    - papua barat daya
+    - id-pd
+    - pd
+    - papua barat daya province
+    - papua pengunungan
+    - id-pe
+    - pe
+    - papua pengunungan province
+    - papua selatan
+    - id-ps
+    - ps
+    - papua selatan province
+    - papua tengah
+    - id-pt
+    - pt
+    - papua tengah province
+    - west papua
+  category: GEOGRAPHICAL UNIT

@@ -1,0 +1,10 @@
+name: Vipava
+type: Division-1
+meta:
+  alpha2: SI-136
+  includes:
+    - vipava
+    - si-136
+    - '136'
+    - vipava municipality
+  category: MUNICIPALITY

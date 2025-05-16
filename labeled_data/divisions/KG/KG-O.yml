@@ -1,0 +1,14 @@
+name: Ošskaja oblast'
+type: Division-1
+meta:
+  alpha2: KG-O
+  includes:
+    - osh
+    - kg-o
+    - o
+    - osh region
+    - oshskaya oblast'
+    - oshskaya oblast' region
+    - ošskaja oblast'
+    - ošskaja oblast' region
+  category: REGION

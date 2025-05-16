@@ -1,0 +1,14 @@
+name: Ivanovskaya oblast'
+type: Division-1
+meta:
+  alpha2: RU-IVA
+  includes:
+    - ivanovskaja oblast'
+    - ru-iva
+    - iva
+    - ivanovskaja oblast' administrative region
+    - ivanovskaya oblast'
+    - ivanovskaya oblast' administrative region
+    - ivanovo oblast
+    - ivanovo
+  category: ADMINISTRATIVE REGION

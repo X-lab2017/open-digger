@@ -1,0 +1,14 @@
+name: Harari People
+type: Division-1
+meta:
+  alpha2: ET-HA
+  includes:
+    - harari people
+    - et-ha
+    - ha
+    - harari people regional state
+    - hārerī hizb
+    - hārerī hizb regional state
+    - harar
+    - harari
+  category: REGIONAL STATE

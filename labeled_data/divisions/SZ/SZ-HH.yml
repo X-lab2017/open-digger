@@ -1,0 +1,10 @@
+name: Hhohho
+type: Division-1
+meta:
+  alpha2: SZ-HH
+  includes:
+    - hhohho
+    - sz-hh
+    - hh
+    - hhohho region
+  category: REGION

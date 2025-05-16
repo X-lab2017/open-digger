@@ -1,0 +1,13 @@
+name: Ash Sharqīyah
+type: Division-1
+meta:
+  alpha2: EG-SHR
+  includes:
+    - ash sharqīyah
+    - eg-shr
+    - shr
+    - ash sharqīyah governorate
+    - ash sharqia governorate
+    - al-sharqia governorate
+    - sharkia
+  category: GOVERNORATE

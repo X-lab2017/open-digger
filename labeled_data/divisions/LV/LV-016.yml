@@ -1,0 +1,12 @@
+name: Bauskas novads
+type: Division-1
+meta:
+  alpha2: LV-016
+  includes:
+    - bauskas novads
+    - lv-016
+    - '016'
+    - bauskas novads municipality
+    - bauska
+    - bauska municipality
+  category: MUNICIPALITY

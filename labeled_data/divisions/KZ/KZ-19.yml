@@ -1,0 +1,17 @@
+name: Almatinskaya oblast'
+type: Division-1
+meta:
+  alpha2: KZ-19
+  includes:
+    - almatinskaja oblast'
+    - kz-19
+    - '19'
+    - almatinskaja oblast' region
+    - almatinskaya oblast'
+    - almatinskaya oblast' region
+    - almaty oblysy
+    - almaty oblysy region
+    - almaty region
+    - алматы облысы
+    - almatı oblısı
+  category: REGION

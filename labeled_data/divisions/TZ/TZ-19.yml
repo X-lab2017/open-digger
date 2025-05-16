@@ -1,0 +1,12 @@
+name: Pwani
+type: Division-1
+meta:
+  alpha2: TZ-19
+  includes:
+    - coast
+    - tz-19
+    - '19'
+    - coast region
+    - pwani
+    - pwani region
+  category: REGION

@@ -1,0 +1,30 @@
+name: Kankan
+type: Division-1
+meta:
+  alpha2: GN-K
+  includes:
+    - kankan
+    - gn-k
+    - k
+    - kankan administrative region
+    - gn-ka
+    - ka
+    - kankan prefecture
+    - kouroussa
+    - gn-ko
+    - ko
+    - kouroussa prefecture
+    - kérouané
+    - gn-ke
+    - ke
+    - kérouané prefecture
+    - mandiana
+    - gn-md
+    - md
+    - mandiana prefecture
+    - siguiri
+    - gn-si
+    - si
+    - siguiri prefecture
+    - kindia region
+  category: ADMINISTRATIVE REGION

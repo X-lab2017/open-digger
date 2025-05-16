@@ -1,0 +1,11 @@
+name: Kríti
+type: Division-1
+meta:
+  alpha2: GR-M
+  includes:
+    - kríti
+    - gr-m
+    - m
+    - kríti administrative region
+    - crete
+  category: ADMINISTRATIVE REGION

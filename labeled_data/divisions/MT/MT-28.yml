@@ -1,0 +1,10 @@
+name: Marsaxlokk
+type: Division-1
+meta:
+  alpha2: MT-28
+  includes:
+    - marsaxlokk
+    - mt-28
+    - '28'
+    - marsaxlokk local council
+  category: LOCAL COUNCIL

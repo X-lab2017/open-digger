@@ -1,0 +1,10 @@
+name: Santiago de Cuba
+type: Division-1
+meta:
+  alpha2: CU-13
+  includes:
+    - santiago de cuba
+    - cu-13
+    - '13'
+    - santiago de cuba province
+  category: PROVINCE

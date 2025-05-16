@@ -1,0 +1,11 @@
+name: Tierra del Fuego
+type: Division-1
+meta:
+  alpha2: AR-V
+  includes:
+    - tierra del fuego
+    - ar-v
+    - v
+    - tierra del fuego province
+    - tdf
+  category: PROVINCE

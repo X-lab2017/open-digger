@@ -1,0 +1,10 @@
+name: Constantine
+type: Division-1
+meta:
+  alpha2: DZ-25
+  includes:
+    - constantine
+    - dz-25
+    - '25'
+    - constantine province
+  category: PROVINCE

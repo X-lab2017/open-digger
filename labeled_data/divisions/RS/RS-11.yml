@@ -1,0 +1,10 @@
+name: Braničevski okrug
+type: Division-1
+meta:
+  alpha2: RS-11
+  includes:
+    - braničevski okrug
+    - rs-11
+    - '11'
+    - braničevski okrug district
+  category: DISTRICT

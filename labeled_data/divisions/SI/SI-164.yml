@@ -1,0 +1,10 @@
+name: Komenda
+type: Division-1
+meta:
+  alpha2: SI-164
+  includes:
+    - komenda
+    - si-164
+    - '164'
+    - komenda municipality
+  category: MUNICIPALITY

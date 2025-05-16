@@ -1,0 +1,66 @@
+name: Ratak chain
+type: Division-1
+meta:
+  alpha2: MH-T
+  includes:
+    - aelok
+    - mh-alk
+    - alk
+    - aelok municipality
+    - ailuk
+    - ailuk municipality
+    - arno
+    - mh-arn
+    - arn
+    - arno municipality
+    - arṇo
+    - arṇo municipality
+    - aur
+    - mh-aur
+    - aur municipality
+    - likiep
+    - mh-lik
+    - lik
+    - likiep municipality
+    - majuro
+    - mh-maj
+    - maj
+    - majuro municipality
+    - maloelap
+    - mh-mal
+    - mal
+    - maloelap municipality
+    - mejit
+    - mh-mej
+    - mej
+    - mejit municipality
+    - mile
+    - mh-mil
+    - mil
+    - mile municipality
+    - mili
+    - mili municipality
+    - mājej
+    - mājej municipality
+    - mājro
+    - mājro municipality
+    - ratak chain
+    - mh-t
+    - t
+    - ratak chain chain (of islands)
+    - utrik
+    - mh-uti
+    - uti
+    - utrik municipality
+    - utrōk
+    - utrōk municipality
+    - wotje
+    - mh-wtj
+    - wtj
+    - wotje municipality
+    - wōjjā
+    - wōjjā municipality
+    - ṃaḷoeḷap
+    - ṃaḷoeḷap municipality
+    - majuro atoll
+  category: CHAIN (OF ISLANDS)

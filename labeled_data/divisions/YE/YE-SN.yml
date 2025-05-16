@@ -1,0 +1,13 @@
+name: Şanʻā’
+type: Division-1
+meta:
+  alpha2: YE-SN
+  includes:
+    - şanʻā’
+    - ye-sn
+    - sn
+    - şanʻā’ governorate
+    - sana'a city
+    - sana'a governorate
+    - sana'a
+  category: GOVERNORATE

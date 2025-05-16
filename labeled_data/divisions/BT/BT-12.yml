@@ -1,0 +1,11 @@
+name: Chhukha
+type: Division-1
+meta:
+  alpha2: BT-12
+  includes:
+    - chhukha
+    - bt-12
+    - '12'
+    - chhukha district
+    - chukha
+  category: DISTRICT

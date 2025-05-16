@@ -1,0 +1,10 @@
+name: Căușeni
+type: Division-1
+meta:
+  alpha2: MD-CS
+  includes:
+    - căușeni
+    - md-cs
+    - cs
+    - căușeni district
+  category: DISTRICT

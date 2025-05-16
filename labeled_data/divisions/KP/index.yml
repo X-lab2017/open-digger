@@ -1,0 +1,29 @@
+name: Korea, Democratic People's Republic of
+type: Division-0
+meta:
+  alpha2: KP
+  includes:
+    - Korea, Democratic People's Republic of
+    - KP
+    - '408'
+    - the Democratic People's Republic of Korea
+    - 朝鲜
+    - North Korea
+  name_full: the Democratic People's Republic of Korea
+  name_zh: 朝鲜
+  developers: []
+data:
+  labels:
+    - KP-04
+    - KP-09
+    - KP-08
+    - KP-06
+    - KP-05
+    - KP-15
+    - KP-07
+    - KP-14
+    - KP-03
+    - KP-02
+    - KP-01
+    - KP-13
+    - KP-10

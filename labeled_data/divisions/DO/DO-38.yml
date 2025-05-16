@@ -1,0 +1,26 @@
+name: Enriquillo
+type: Division-1
+meta:
+  alpha2: DO-38
+  includes:
+    - baoruco
+    - do-03
+    - '03'
+    - baoruco province
+    - barahona
+    - do-04
+    - '04'
+    - barahona province
+    - enriquillo
+    - do-38
+    - '38'
+    - enriquillo region
+    - independencia
+    - do-10
+    - '10'
+    - independencia province
+    - pedernales
+    - do-16
+    - '16'
+    - pedernales province
+  category: REGION

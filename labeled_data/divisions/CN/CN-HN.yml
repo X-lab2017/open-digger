@@ -1,0 +1,13 @@
+name: Hunan Sheng
+type: Division-1
+meta:
+  alpha2: CN-HN
+  includes:
+    - hunan sheng
+    - cn-hn
+    - hn
+    - hunan sheng province
+    - hu nan sheng
+    - hunan
+    - 湖南省
+  category: PROVINCE

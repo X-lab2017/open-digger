@@ -1,0 +1,10 @@
+name: Jammu and Kashmīr
+type: Division-1
+meta:
+  alpha2: IN-JK
+  includes:
+    - jammu and kashmīr
+    - in-jk
+    - jk
+    - jammu and kashmīr union territory
+  category: UNION TERRITORY

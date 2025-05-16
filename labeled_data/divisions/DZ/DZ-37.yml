@@ -1,0 +1,10 @@
+name: Tindouf
+type: Division-1
+meta:
+  alpha2: DZ-37
+  includes:
+    - tindouf
+    - dz-37
+    - '37'
+    - tindouf province
+  category: PROVINCE

@@ -1,0 +1,18 @@
+name: Karnali
+type: Division-1
+meta:
+  alpha2: NP-P6
+  includes:
+    - karnali
+    - np-p6
+    - p6
+    - karnali province
+    - province 6
+    - province 6 province
+    - karṇālī
+    - karṇālī province
+    - pradesh 6
+    - pradesh 6 province
+    - karnālī
+    - setī
+  category: PROVINCE

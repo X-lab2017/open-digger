@@ -1,0 +1,14 @@
+name: Batkenskaya oblast'
+type: Division-1
+meta:
+  alpha2: KG-B
+  includes:
+    - batken
+    - kg-b
+    - b
+    - batken region
+    - batkenskaja oblast'
+    - batkenskaja oblast' region
+    - batkenskaya oblast'
+    - batkenskaya oblast' region
+  category: REGION

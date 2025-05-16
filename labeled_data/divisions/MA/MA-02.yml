@@ -1,0 +1,43 @@
+name: L'Oriental
+type: Division-1
+meta:
+  alpha2: MA-02
+  includes:
+    - berkane
+    - ma-ber
+    - ber
+    - berkane province
+    - driouch
+    - ma-dri
+    - dri
+    - driouch province
+    - figuig
+    - ma-fig
+    - fig
+    - figuig province
+    - guercif
+    - ma-guf
+    - guf
+    - guercif province
+    - jerada
+    - ma-jra
+    - jra
+    - jerada province
+    - l'oriental
+    - ma-02
+    - '02'
+    - l'oriental region
+    - nador
+    - ma-nad
+    - nad
+    - nador province
+    - oujda-angad
+    - ma-ouj
+    - ouj
+    - oujda-angad prefecture
+    - taourirt
+    - ma-tai
+    - tai
+    - taourirt province
+    - oriental
+  category: REGION

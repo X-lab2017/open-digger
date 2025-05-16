@@ -1,0 +1,10 @@
+name: Füzuli
+type: Division-1
+meta:
+  alpha2: AZ-FUZ
+  includes:
+    - füzuli
+    - az-fuz
+    - fuz
+    - füzuli rayon
+  category: RAYON

@@ -1,0 +1,10 @@
+name: Brežice
+type: Division-1
+meta:
+  alpha2: SI-009
+  includes:
+    - brežice
+    - si-009
+    - '009'
+    - brežice municipality
+  category: MUNICIPALITY

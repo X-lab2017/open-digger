@@ -1,0 +1,10 @@
+name: West Pokot
+type: Division-1
+meta:
+  alpha2: KE-47
+  includes:
+    - west pokot
+    - ke-47
+    - '47'
+    - west pokot county
+  category: COUNTY

@@ -1,0 +1,10 @@
+name: Szabolcs-Szatmár-Bereg
+type: Division-1
+meta:
+  alpha2: HU-SZ
+  includes:
+    - szabolcs-szatmár-bereg
+    - hu-sz
+    - sz
+    - szabolcs-szatmár-bereg county
+  category: COUNTY

@@ -1,0 +1,12 @@
+name: Île-du-Prince-Édouard
+type: Division-1
+meta:
+  alpha2: CA-PE
+  includes:
+    - prince edward island
+    - ca-pe
+    - pe
+    - prince edward island province
+    - île-du-prince-édouard
+    - île-du-prince-édouard province
+  category: PROVINCE

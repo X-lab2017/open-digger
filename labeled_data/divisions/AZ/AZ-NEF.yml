@@ -1,0 +1,10 @@
+name: Neftçala
+type: Division-1
+meta:
+  alpha2: AZ-NEF
+  includes:
+    - neftçala
+    - az-nef
+    - nef
+    - neftçala rayon
+  category: RAYON

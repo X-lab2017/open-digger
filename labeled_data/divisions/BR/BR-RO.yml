@@ -1,0 +1,11 @@
+name: Rondônia
+type: Division-1
+meta:
+  alpha2: BR-RO
+  includes:
+    - rondônia
+    - br-ro
+    - ro
+    - rondônia state
+    - state of rondônia
+  category: STATE

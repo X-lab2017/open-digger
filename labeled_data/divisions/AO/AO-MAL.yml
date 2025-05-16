@@ -1,0 +1,11 @@
+name: Malange
+type: Division-1
+meta:
+  alpha2: AO-MAL
+  includes:
+    - malange
+    - ao-mal
+    - mal
+    - malange province
+    - malanje province
+  category: PROVINCE

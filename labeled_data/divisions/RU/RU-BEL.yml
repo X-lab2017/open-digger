@@ -1,0 +1,14 @@
+name: Belgorodskaya oblast'
+type: Division-1
+meta:
+  alpha2: RU-BEL
+  includes:
+    - belgorodskaja oblast'
+    - ru-bel
+    - bel
+    - belgorodskaja oblast' administrative region
+    - belgorodskaya oblast'
+    - belgorodskaya oblast' administrative region
+    - belgorod oblast
+    - belgorod
+  category: ADMINISTRATIVE REGION

@@ -1,0 +1,10 @@
+name: Innlandet
+type: Division-1
+meta:
+  alpha2: NO-34
+  includes:
+    - innlandet
+    - no-34
+    - '34'
+    - innlandet county
+  category: COUNTY

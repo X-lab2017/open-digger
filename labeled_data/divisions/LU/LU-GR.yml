@@ -1,0 +1,12 @@
+name: Grevenmacher
+type: Division-1
+meta:
+  alpha2: LU-GR
+  includes:
+    - grevenmacher
+    - lu-gr
+    - gr
+    - grevenmacher canton
+    - gréivemaacher
+    - gréivemaacher canton
+  category: CANTON

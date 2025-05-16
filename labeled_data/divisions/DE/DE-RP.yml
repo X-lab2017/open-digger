@@ -1,0 +1,11 @@
+name: Rheinland-Pfalz
+type: Division-1
+meta:
+  alpha2: DE-RP
+  includes:
+    - rheinland-pfalz
+    - de-rp
+    - rp
+    - rheinland-pfalz land
+    - rhineland-palatinate
+  category: LAND

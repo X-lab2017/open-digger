@@ -1,0 +1,10 @@
+name: Yukon
+type: Division-1
+meta:
+  alpha2: CA-YT
+  includes:
+    - yukon
+    - ca-yt
+    - yt
+    - yukon territory
+  category: TERRITORY

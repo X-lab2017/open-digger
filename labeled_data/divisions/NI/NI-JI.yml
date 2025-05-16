@@ -1,0 +1,10 @@
+name: Jinotega
+type: Division-1
+meta:
+  alpha2: NI-JI
+  includes:
+    - jinotega
+    - ni-ji
+    - ji
+    - jinotega department
+  category: DEPARTMENT

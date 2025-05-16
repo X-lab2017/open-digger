@@ -1,0 +1,13 @@
+name: Donetska oblast
+type: Division-1
+meta:
+  alpha2: UA-14
+  includes:
+    - donetska oblast
+    - ua-14
+    - '14'
+    - donetska oblast region
+    - donets'ka oblast
+    - donetsk oblast
+    - donetsk
+  category: REGION

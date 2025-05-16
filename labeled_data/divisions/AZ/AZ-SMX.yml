@@ -1,0 +1,10 @@
+name: Samux
+type: Division-1
+meta:
+  alpha2: AZ-SMX
+  includes:
+    - samux
+    - az-smx
+    - smx
+    - samux rayon
+  category: RAYON

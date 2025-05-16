@@ -1,0 +1,10 @@
+name: Šumadijski okrug
+type: Division-1
+meta:
+  alpha2: RS-12
+  includes:
+    - šumadijski okrug
+    - rs-12
+    - '12'
+    - šumadijski okrug district
+  category: DISTRICT

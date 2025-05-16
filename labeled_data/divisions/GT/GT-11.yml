@@ -1,0 +1,10 @@
+name: Retalhuleu
+type: Division-1
+meta:
+  alpha2: GT-11
+  includes:
+    - retalhuleu
+    - gt-11
+    - '11'
+    - retalhuleu department
+  category: DEPARTMENT

@@ -1,0 +1,11 @@
+name: Āz̄ārbāyjān-e Ghārbī
+type: Division-1
+meta:
+  alpha2: IR-04
+  includes:
+    - āz̄ārbāyjān-e ghārbī
+    - ir-04
+    - '04'
+    - āz̄ārbāyjān-e ghārbī province
+    - west azerbaijan province
+  category: PROVINCE

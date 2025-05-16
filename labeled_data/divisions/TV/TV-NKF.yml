@@ -1,0 +1,10 @@
+name: Nukufetau
+type: Division-1
+meta:
+  alpha2: TV-NKF
+  includes:
+    - nukufetau
+    - tv-nkf
+    - nkf
+    - nukufetau island council
+  category: ISLAND COUNCIL

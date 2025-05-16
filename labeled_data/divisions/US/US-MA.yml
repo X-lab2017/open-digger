@@ -1,0 +1,10 @@
+name: Massachusetts
+type: Division-1
+meta:
+  alpha2: US-MA
+  includes:
+    - massachusetts
+    - us-ma
+    - ma
+    - massachusetts state
+  category: STATE

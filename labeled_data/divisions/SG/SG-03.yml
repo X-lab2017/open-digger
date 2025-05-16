@@ -1,0 +1,11 @@
+name: North West
+type: Division-1
+meta:
+  alpha2: SG-03
+  includes:
+    - north west
+    - sg-03
+    - '03'
+    - north west district
+    - north west community development council
+  category: DISTRICT

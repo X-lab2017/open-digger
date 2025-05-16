@@ -1,0 +1,11 @@
+name: Kafr ash Shaykh
+type: Division-1
+meta:
+  alpha2: EG-KFS
+  includes:
+    - kafr ash shaykh
+    - eg-kfs
+    - kfs
+    - kafr ash shaykh governorate
+    - kafr el-sheikh governorate
+  category: GOVERNORATE

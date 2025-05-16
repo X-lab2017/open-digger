@@ -1,0 +1,14 @@
+name: Huancavelica
+type: Division-1
+meta:
+  alpha2: PE-HUV
+  includes:
+    - huancavelica
+    - pe-huv
+    - huv
+    - huancavelica region
+    - wankawelika
+    - wankawelika region
+    - wankawillka
+    - wankawillka region
+  category: REGION

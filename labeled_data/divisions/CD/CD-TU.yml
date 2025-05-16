@@ -1,0 +1,10 @@
+name: Tshuapa
+type: Division-1
+meta:
+  alpha2: CD-TU
+  includes:
+    - tshuapa
+    - cd-tu
+    - tu
+    - tshuapa province
+  category: PROVINCE

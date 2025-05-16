@@ -1,0 +1,10 @@
+name: Kars
+type: Division-1
+meta:
+  alpha2: TR-36
+  includes:
+    - kars
+    - tr-36
+    - '36'
+    - kars province
+  category: PROVINCE

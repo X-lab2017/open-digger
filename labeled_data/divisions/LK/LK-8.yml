@@ -1,0 +1,28 @@
+name: Uva Province
+type: Division-1
+meta:
+  alpha2: LK-8
+  includes:
+    - badulla
+    - lk-81
+    - '81'
+    - badulla district
+    - monaragala
+    - lk-82
+    - '82'
+    - monaragala district
+    - mŏṇarāgala
+    - mŏṇarāgala district
+    - mŏṉarākalai
+    - mŏṉarākalai district
+    - patuḷai
+    - patuḷai district
+    - uva province
+    - lk-8
+    - '8'
+    - uva province province
+    - ūva paḷāta
+    - ūva paḷāta province
+    - ūvā mākāṇam
+    - ūvā mākāṇam province
+  category: PROVINCE

@@ -1,0 +1,10 @@
+name: Delta Amacuro
+type: Division-1
+meta:
+  alpha2: VE-Y
+  includes:
+    - delta amacuro
+    - ve-y
+    - 'y'
+    - delta amacuro state
+  category: STATE

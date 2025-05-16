@@ -1,0 +1,12 @@
+name: Baitsi
+type: Division-1
+meta:
+  alpha2: NR-05
+  includes:
+    - baitsi
+    - nr-05
+    - '05'
+    - baitsi district
+    - baiti
+    - baiti district
+  category: DISTRICT

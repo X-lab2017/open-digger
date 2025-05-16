@@ -1,0 +1,10 @@
+name: Makueni
+type: Division-1
+meta:
+  alpha2: KE-23
+  includes:
+    - makueni
+    - ke-23
+    - '23'
+    - makueni county
+  category: COUNTY

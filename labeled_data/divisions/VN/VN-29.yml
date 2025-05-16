@@ -1,0 +1,11 @@
+name: Quảng Ngãi
+type: Division-1
+meta:
+  alpha2: VN-29
+  includes:
+    - quảng ngãi
+    - vn-29
+    - '29'
+    - quảng ngãi province
+    - quang ngai
+  category: PROVINCE

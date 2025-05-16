@@ -1,0 +1,10 @@
+name: Pema Gatshel
+type: Division-1
+meta:
+  alpha2: BT-43
+  includes:
+    - pema gatshel
+    - bt-43
+    - '43'
+    - pema gatshel district
+  category: DISTRICT

@@ -1,0 +1,10 @@
+name: Cuscatlán
+type: Division-1
+meta:
+  alpha2: SV-CU
+  includes:
+    - cuscatlán
+    - sv-cu
+    - cu
+    - cuscatlán department
+  category: DEPARTMENT

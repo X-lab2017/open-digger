@@ -1,0 +1,10 @@
+name: Mukdahan
+type: Division-1
+meta:
+  alpha2: TH-49
+  includes:
+    - mukdahan
+    - th-49
+    - '49'
+    - mukdahan province
+  category: PROVINCE

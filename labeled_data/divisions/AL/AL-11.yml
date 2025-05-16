@@ -1,0 +1,13 @@
+name: Tiranë
+type: Division-1
+meta:
+  alpha2: AL-11
+  includes:
+    - tiranë
+    - al-11
+    - '11'
+    - tiranë county
+    - tirana county
+    - tirana
+    - qarku i tiranës
+  category: COUNTY

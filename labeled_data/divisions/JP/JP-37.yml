@@ -1,0 +1,10 @@
+name: Kagawa
+type: Division-1
+meta:
+  alpha2: JP-37
+  includes:
+    - kagawa
+    - jp-37
+    - '37'
+    - kagawa prefecture
+  category: PREFECTURE

@@ -1,0 +1,14 @@
+name: Świętokrzyskie
+type: Division-1
+meta:
+  alpha2: PL-26
+  includes:
+    - świętokrzyskie
+    - pl-26
+    - '26'
+    - świętokrzyskie voivodship
+    - świętokrzyskie voivodeship
+    - województwo świętokrzyskie
+    - sk
+    - sw
+  category: VOIVODSHIP

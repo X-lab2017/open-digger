@@ -1,0 +1,11 @@
+name: Rio de Janeiro
+type: Division-1
+meta:
+  alpha2: BR-RJ
+  includes:
+    - rio de janeiro
+    - br-rj
+    - rj
+    - rio de janeiro state
+    - state of rio de janeiro
+  category: STATE

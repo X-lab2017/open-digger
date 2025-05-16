@@ -1,0 +1,10 @@
+name: Gaza
+type: Division-1
+meta:
+  alpha2: MZ-G
+  includes:
+    - gaza
+    - mz-g
+    - g
+    - gaza province
+  category: PROVINCE

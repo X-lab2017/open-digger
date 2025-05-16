@@ -1,0 +1,12 @@
+name: B‘alabak-Al Hirmil
+type: Division-1
+meta:
+  alpha2: LB-BH
+  includes:
+    - baalbek-hermel
+    - lb-bh
+    - bh
+    - baalbek-hermel governorate
+    - b‘alabak-al hirmil
+    - b‘alabak-al hirmil governorate
+  category: GOVERNORATE

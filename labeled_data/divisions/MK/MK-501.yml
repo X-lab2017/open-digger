@@ -1,0 +1,12 @@
+name: Bitola
+type: Division-1
+meta:
+  alpha2: MK-501
+  includes:
+    - bitola
+    - mk-501
+    - '501'
+    - bitola municipality
+    - municipality of bitola
+    - pelagonia
+  category: MUNICIPALITY

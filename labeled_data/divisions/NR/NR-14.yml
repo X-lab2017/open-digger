@@ -1,0 +1,10 @@
+name: Yaren
+type: Division-1
+meta:
+  alpha2: NR-14
+  includes:
+    - yaren
+    - nr-14
+    - '14'
+    - yaren district
+  category: DISTRICT

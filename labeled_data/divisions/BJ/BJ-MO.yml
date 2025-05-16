@@ -1,0 +1,10 @@
+name: Mono
+type: Division-1
+meta:
+  alpha2: BJ-MO
+  includes:
+    - mono
+    - bj-mo
+    - mo
+    - mono department
+  category: DEPARTMENT

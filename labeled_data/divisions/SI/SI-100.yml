@@ -1,0 +1,10 @@
+name: Radenci
+type: Division-1
+meta:
+  alpha2: SI-100
+  includes:
+    - radenci
+    - si-100
+    - '100'
+    - radenci municipality
+  category: MUNICIPALITY

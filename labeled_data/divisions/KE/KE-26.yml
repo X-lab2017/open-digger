@@ -1,0 +1,10 @@
+name: Meru
+type: Division-1
+meta:
+  alpha2: KE-26
+  includes:
+    - meru
+    - ke-26
+    - '26'
+    - meru county
+  category: COUNTY

@@ -1,0 +1,13 @@
+name: Mykolaivska oblast
+type: Division-1
+meta:
+  alpha2: UA-48
+  includes:
+    - mykolaivska oblast
+    - ua-48
+    - '48'
+    - mykolaivska oblast region
+    - mykolaivs'ka oblast
+    - mykolayiv
+    - mykolaiv oblast
+  category: REGION

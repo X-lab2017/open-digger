@@ -1,0 +1,12 @@
+name: Banghāzī
+type: Division-1
+meta:
+  alpha2: LY-BA
+  includes:
+    - banghāzī
+    - ly-ba
+    - ba
+    - banghāzī popularate
+    - benghazi
+    - benghazi district
+  category: POPULARATE

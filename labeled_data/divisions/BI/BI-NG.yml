@@ -1,0 +1,10 @@
+name: Ngozi
+type: Division-1
+meta:
+  alpha2: BI-NG
+  includes:
+    - ngozi
+    - bi-ng
+    - ng
+    - ngozi province
+  category: PROVINCE

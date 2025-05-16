@@ -1,0 +1,10 @@
+name: Malatya
+type: Division-1
+meta:
+  alpha2: TR-44
+  includes:
+    - malatya
+    - tr-44
+    - '44'
+    - malatya province
+  category: PROVINCE

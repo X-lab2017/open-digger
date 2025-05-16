@@ -1,0 +1,10 @@
+name: Dushanbe
+type: Division-1
+meta:
+  alpha2: TJ-DU
+  includes:
+    - dushanbe
+    - tj-du
+    - du
+    - dushanbe capital territory
+  category: CAPITAL TERRITORY

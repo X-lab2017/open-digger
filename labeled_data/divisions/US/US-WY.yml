@@ -1,0 +1,10 @@
+name: Wyoming
+type: Division-1
+meta:
+  alpha2: US-WY
+  includes:
+    - wyoming
+    - us-wy
+    - wy
+    - wyoming state
+  category: STATE

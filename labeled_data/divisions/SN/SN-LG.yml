@@ -1,0 +1,10 @@
+name: Louga
+type: Division-1
+meta:
+  alpha2: SN-LG
+  includes:
+    - louga
+    - sn-lg
+    - lg
+    - louga region
+  category: REGION

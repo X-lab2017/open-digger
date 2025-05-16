@@ -1,0 +1,87 @@
+name: Burkina Faso
+type: Division-0
+meta:
+  alpha2: BF
+  includes:
+    - Burkina Faso
+    - BF
+    - '854'
+    - 布基纳法索
+  name_full: Burkina Faso
+  name_zh: 布基纳法索
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 2530
+    - year: 2020
+      quarter: 2
+      count: 2888
+    - year: 2020
+      quarter: 3
+      count: 3346
+    - year: 2020
+      quarter: 4
+      count: 3820
+    - year: 2021
+      quarter: 1
+      count: 4382
+    - year: 2021
+      quarter: 2
+      count: 5162
+    - year: 2021
+      quarter: 3
+      count: 5786
+    - year: 2021
+      quarter: 4
+      count: 6433
+    - year: 2022
+      quarter: 1
+      count: 7180
+    - year: 2022
+      quarter: 2
+      count: 7772
+    - year: 2022
+      quarter: 3
+      count: 8465
+    - year: 2022
+      quarter: 4
+      count: 9154
+    - year: 2023
+      quarter: 1
+      count: 9991
+    - year: 2023
+      quarter: 2
+      count: 10891
+    - year: 2023
+      quarter: 3
+      count: 11888
+    - year: 2023
+      quarter: 4
+      count: 12709
+    - year: 2024
+      quarter: 1
+      count: 13706
+    - year: 2024
+      quarter: 2
+      count: 14728
+    - year: 2024
+      quarter: 3
+      count: 16009
+    - year: 2024
+      quarter: 4
+      count: 17340
+data:
+  labels:
+    - BF-01
+    - BF-05
+    - BF-07
+    - BF-13
+    - BF-04
+    - BF-06
+    - BF-02
+    - BF-03
+    - BF-08
+    - BF-11
+    - BF-09
+    - BF-10
+    - BF-12

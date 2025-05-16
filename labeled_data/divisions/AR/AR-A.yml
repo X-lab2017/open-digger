@@ -1,0 +1,11 @@
+name: Salta
+type: Division-1
+meta:
+  alpha2: AR-A
+  includes:
+    - salta
+    - ar-a
+    - a
+    - salta province
+    - sa
+  category: PROVINCE

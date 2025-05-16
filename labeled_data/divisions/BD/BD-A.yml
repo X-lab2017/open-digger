@@ -1,0 +1,36 @@
+name: Barishal
+type: Division-1
+meta:
+  alpha2: BD-A
+  includes:
+    - barguna
+    - bd-02
+    - '02'
+    - barguna district
+    - barishal
+    - bd-a
+    - a
+    - barishal division
+    - bd-06
+    - '06'
+    - barishal district
+    - bhola
+    - bd-07
+    - '07'
+    - bhola district
+    - jhalakathi
+    - bd-25
+    - '25'
+    - jhalakathi district
+    - patuakhali
+    - bd-51
+    - '51'
+    - patuakhali district
+    - pirojpur
+    - bd-50
+    - '50'
+    - pirojpur district
+    - barisal division
+    - বরিশাল বিভাগ
+    - barisāl
+  category: DIVISION

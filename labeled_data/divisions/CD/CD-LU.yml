@@ -1,0 +1,10 @@
+name: Lualaba
+type: Division-1
+meta:
+  alpha2: CD-LU
+  includes:
+    - lualaba
+    - cd-lu
+    - lu
+    - lualaba province
+  category: PROVINCE

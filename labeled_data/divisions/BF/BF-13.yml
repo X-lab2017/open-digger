@@ -1,0 +1,27 @@
+name: Sud-Ouest
+type: Division-1
+meta:
+  alpha2: BF-13
+  includes:
+    - bougouriba
+    - bf-bgr
+    - bgr
+    - bougouriba province
+    - ioba
+    - bf-iob
+    - iob
+    - ioba province
+    - noumbiel
+    - bf-nou
+    - nou
+    - noumbiel province
+    - poni
+    - bf-pon
+    - pon
+    - poni province
+    - sud-ouest
+    - bf-13
+    - '13'
+    - sud-ouest region
+    - southwest
+  category: REGION

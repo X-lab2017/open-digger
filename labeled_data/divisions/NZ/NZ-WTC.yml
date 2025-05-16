@@ -1,0 +1,12 @@
+name: West Coast
+type: Division-1
+meta:
+  alpha2: NZ-WTC
+  includes:
+    - te tai o poutini
+    - nz-wtc
+    - wtc
+    - te tai o poutini region
+    - west coast
+    - west coast region
+  category: REGION

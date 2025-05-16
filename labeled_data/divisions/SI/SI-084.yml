@@ -1,0 +1,10 @@
+name: Nova Gorica
+type: Division-1
+meta:
+  alpha2: SI-084
+  includes:
+    - nova gorica
+    - si-084
+    - '084'
+    - nova gorica urban municipality
+  category: URBAN MUNICIPALITY

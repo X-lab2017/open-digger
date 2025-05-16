@@ -1,0 +1,13 @@
+name: Bistrița-Năsăud
+type: Division-1
+meta:
+  alpha2: RO-BN
+  includes:
+    - bistrița-năsăud
+    - ro-bn
+    - bn
+    - bistrița-năsăud department
+    - bistriţa-năsăud
+    - bistrița-năsăud county
+    - județul bistrița-năsăud
+  category: DEPARTMENT

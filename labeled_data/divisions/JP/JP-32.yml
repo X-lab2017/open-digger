@@ -1,0 +1,12 @@
+name: Simane
+type: Division-1
+meta:
+  alpha2: JP-32
+  includes:
+    - shimane
+    - jp-32
+    - '32'
+    - shimane prefecture
+    - simane
+    - simane prefecture
+  category: PREFECTURE

@@ -1,0 +1,96 @@
+name: Croatia
+type: Division-0
+meta:
+  alpha2: HR
+  includes:
+    - Croatia
+    - HR
+    - '191'
+    - the Republic of Croatia
+    - 克罗地亚
+  name_full: the Republic of Croatia
+  name_zh: 克罗地亚
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 58042
+    - year: 2020
+      quarter: 2
+      count: 62191
+    - year: 2020
+      quarter: 3
+      count: 66018
+    - year: 2020
+      quarter: 4
+      count: 70856
+    - year: 2021
+      quarter: 1
+      count: 75376
+    - year: 2021
+      quarter: 2
+      count: 79280
+    - year: 2021
+      quarter: 3
+      count: 83036
+    - year: 2021
+      quarter: 4
+      count: 87610
+    - year: 2022
+      quarter: 1
+      count: 93633
+    - year: 2022
+      quarter: 2
+      count: 99040
+    - year: 2022
+      quarter: 3
+      count: 103503
+    - year: 2022
+      quarter: 4
+      count: 108379
+    - year: 2023
+      quarter: 1
+      count: 113587
+    - year: 2023
+      quarter: 2
+      count: 119237
+    - year: 2023
+      quarter: 3
+      count: 124212
+    - year: 2023
+      quarter: 4
+      count: 129473
+    - year: 2024
+      quarter: 1
+      count: 134842
+    - year: 2024
+      quarter: 2
+      count: 139411
+    - year: 2024
+      quarter: 3
+      count: 144157
+    - year: 2024
+      quarter: 4
+      count: 148878
+data:
+  labels:
+    - HR-07
+    - HR-12
+    - HR-19
+    - HR-21
+    - HR-18
+    - HR-04
+    - HR-06
+    - HR-02
+    - HR-09
+    - HR-20
+    - HR-14
+    - HR-11
+    - HR-08
+    - HR-03
+    - HR-17
+    - HR-05
+    - HR-10
+    - HR-16
+    - HR-13
+    - HR-01
+    - HR-15

@@ -1,0 +1,10 @@
+name: Central Equatoria
+type: Division-1
+meta:
+  alpha2: SS-EC
+  includes:
+    - central equatoria
+    - ss-ec
+    - ec
+    - central equatoria state
+  category: STATE

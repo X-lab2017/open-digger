@@ -1,0 +1,10 @@
+name: Gorje
+type: Division-1
+meta:
+  alpha2: SI-207
+  includes:
+    - gorje
+    - si-207
+    - '207'
+    - gorje municipality
+  category: MUNICIPALITY

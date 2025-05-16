@@ -1,0 +1,14 @@
+name: Ancash
+type: Division-1
+meta:
+  alpha2: PE-ANC
+  includes:
+    - ancash
+    - pe-anc
+    - anc
+    - ancash region
+    - ankashu
+    - ankashu region
+    - anqash
+    - anqash region
+  category: REGION

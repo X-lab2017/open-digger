@@ -1,0 +1,10 @@
+name: Čučer-Sandevo
+type: Division-1
+meta:
+  alpha2: MK-816
+  includes:
+    - čučer-sandevo
+    - mk-816
+    - '816'
+    - čučer-sandevo municipality
+  category: MUNICIPALITY

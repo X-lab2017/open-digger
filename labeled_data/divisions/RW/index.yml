@@ -1,0 +1,80 @@
+name: Rwanda
+type: Division-0
+meta:
+  alpha2: RW
+  includes:
+    - Rwanda
+    - RW
+    - '646'
+    - the Republic of Rwanda
+    - 卢旺达
+  name_full: the Republic of Rwanda
+  name_zh: 卢旺达
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 9848
+    - year: 2020
+      quarter: 2
+      count: 10680
+    - year: 2020
+      quarter: 3
+      count: 11636
+    - year: 2020
+      quarter: 4
+      count: 12597
+    - year: 2021
+      quarter: 1
+      count: 13414
+    - year: 2021
+      quarter: 2
+      count: 14468
+    - year: 2021
+      quarter: 3
+      count: 15679
+    - year: 2021
+      quarter: 4
+      count: 16831
+    - year: 2022
+      quarter: 1
+      count: 18261
+    - year: 2022
+      quarter: 2
+      count: 20011
+    - year: 2022
+      quarter: 3
+      count: 21625
+    - year: 2022
+      quarter: 4
+      count: 23360
+    - year: 2023
+      quarter: 1
+      count: 26313
+    - year: 2023
+      quarter: 2
+      count: 29619
+    - year: 2023
+      quarter: 3
+      count: 31819
+    - year: 2023
+      quarter: 4
+      count: 34422
+    - year: 2024
+      quarter: 1
+      count: 39128
+    - year: 2024
+      quarter: 2
+      count: 42631
+    - year: 2024
+      quarter: 3
+      count: 45978
+    - year: 2024
+      quarter: 4
+      count: 50032
+data:
+  labels:
+    - RW-03
+    - RW-05
+    - RW-01
+    - RW-02
+    - RW-04

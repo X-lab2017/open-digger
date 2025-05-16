@@ -1,0 +1,22 @@
+name: Cibao Sur
+type: Division-1
+meta:
+  alpha2: DO-36
+  includes:
+    - cibao sur
+    - do-36
+    - '36'
+    - cibao sur region
+    - la vega
+    - do-13
+    - '13'
+    - la vega province
+    - monseñor nouel
+    - do-28
+    - '28'
+    - monseñor nouel province
+    - sánchez ramírez
+    - do-24
+    - '24'
+    - sánchez ramírez province
+  category: REGION

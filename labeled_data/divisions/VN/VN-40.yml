@@ -1,0 +1,11 @@
+name: Bình Thuận
+type: Division-1
+meta:
+  alpha2: VN-40
+  includes:
+    - bình thuận
+    - vn-40
+    - '40'
+    - bình thuận province
+    - binh thuan
+  category: PROVINCE

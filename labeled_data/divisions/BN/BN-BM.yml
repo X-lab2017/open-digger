@@ -1,0 +1,13 @@
+name: Brunei-Muara
+type: Division-1
+meta:
+  alpha2: BN-BM
+  includes:
+    - brunei dan muara
+    - bn-bm
+    - bm
+    - brunei dan muara district
+    - brunei-muara
+    - brunei-muara district
+    - daerah brunei-muara
+  category: DISTRICT

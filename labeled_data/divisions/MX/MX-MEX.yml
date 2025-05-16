@@ -1,0 +1,12 @@
+name: México
+type: Division-1
+meta:
+  alpha2: MX-MEX
+  includes:
+    - méxico
+    - mx-mex
+    - mex
+    - méxico state
+    - estado de méxico
+    - state of mexico
+  category: STATE

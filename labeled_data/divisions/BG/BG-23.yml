@@ -1,0 +1,12 @@
+name: Sofia
+type: Division-1
+meta:
+  alpha2: BG-23
+  includes:
+    - sofia
+    - bg-23
+    - '23'
+    - sofia district
+    - sofia province
+    - sofiyska oblast
+  category: DISTRICT

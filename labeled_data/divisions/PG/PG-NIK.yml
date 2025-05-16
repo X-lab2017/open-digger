@@ -1,0 +1,10 @@
+name: New Ireland
+type: Division-1
+meta:
+  alpha2: PG-NIK
+  includes:
+    - new ireland
+    - pg-nik
+    - nik
+    - new ireland province
+  category: PROVINCE

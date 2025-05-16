@@ -1,0 +1,12 @@
+name: Ḩaḑramawt
+type: Division-1
+meta:
+  alpha2: YE-HD
+  includes:
+    - ḩaḑramawt
+    - ye-hd
+    - hd
+    - ḩaḑramawt governorate
+    - hadhramaut governorate
+    - hadramaut governorate
+  category: GOVERNORATE

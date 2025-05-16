@@ -1,0 +1,10 @@
+name: El Meniaa
+type: Division-1
+meta:
+  alpha2: DZ-58
+  includes:
+    - el meniaa
+    - dz-58
+    - '58'
+    - el meniaa province
+  category: PROVINCE

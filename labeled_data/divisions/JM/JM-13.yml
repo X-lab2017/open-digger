@@ -1,0 +1,10 @@
+name: Clarendon
+type: Division-1
+meta:
+  alpha2: JM-13
+  includes:
+    - clarendon
+    - jm-13
+    - '13'
+    - clarendon parish
+  category: PARISH

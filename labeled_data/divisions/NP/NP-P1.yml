@@ -1,0 +1,21 @@
+name: Koshi
+type: Division-1
+meta:
+  alpha2: NP-P1
+  includes:
+    - koshi
+    - np-p1
+    - p1
+    - koshi province
+    - province 1
+    - province 1 province
+    - koshī
+    - koshī province
+    - pradesh 1
+    - pradesh 1 province
+    - province no. 1
+    - sagamāthā
+    - mechī
+    - kosi zone
+    - कोशी प्रदेश
+  category: PROVINCE

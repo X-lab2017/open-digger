@@ -1,0 +1,10 @@
+name: Central Andros
+type: Division-1
+meta:
+  alpha2: BS-CS
+  includes:
+    - central andros
+    - bs-cs
+    - cs
+    - central andros district
+  category: DISTRICT

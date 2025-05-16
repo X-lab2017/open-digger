@@ -1,0 +1,16 @@
+name: Aktyubinskaya oblast'
+type: Division-1
+meta:
+  alpha2: KZ-15
+  includes:
+    - aktjubinskaja oblast'
+    - kz-15
+    - '15'
+    - aktjubinskaja oblast' region
+    - aktyubinskaya oblast'
+    - aktyubinskaya oblast' region
+    - aqtöbe oblysy
+    - aqtöbe oblysy region
+    - aktobe region
+    - aqtöbe region
+  category: REGION

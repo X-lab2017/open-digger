@@ -1,0 +1,11 @@
+name: Idlib
+type: Division-1
+meta:
+  alpha2: SY-ID
+  includes:
+    - idlib
+    - sy-id
+    - id
+    - idlib province
+    - idlib governorate
+  category: PROVINCE

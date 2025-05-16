@@ -1,0 +1,10 @@
+name: Puerto Rico
+type: Division-1
+meta:
+  alpha2: US-PR
+  includes:
+    - puerto rico
+    - us-pr
+    - pr
+    - puerto rico outlying area
+  category: OUTLYING AREA

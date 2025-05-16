@@ -1,0 +1,10 @@
+name: Karaman
+type: Division-1
+meta:
+  alpha2: TR-70
+  includes:
+    - karaman
+    - tr-70
+    - '70'
+    - karaman province
+  category: PROVINCE

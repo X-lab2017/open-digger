@@ -1,0 +1,12 @@
+name: Dire Dawa
+type: Division-1
+meta:
+  alpha2: ET-DD
+  includes:
+    - dire dawa
+    - et-dd
+    - dd
+    - dire dawa administration
+    - dirē dawa
+    - dirē dawa administration
+  category: ADMINISTRATION

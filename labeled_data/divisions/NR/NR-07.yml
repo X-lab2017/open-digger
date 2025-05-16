@@ -1,0 +1,10 @@
+name: Buada
+type: Division-1
+meta:
+  alpha2: NR-07
+  includes:
+    - buada
+    - nr-07
+    - '07'
+    - buada district
+  category: DISTRICT

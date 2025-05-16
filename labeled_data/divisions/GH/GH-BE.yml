@@ -1,0 +1,10 @@
+name: Bono East
+type: Division-1
+meta:
+  alpha2: GH-BE
+  includes:
+    - bono east
+    - gh-be
+    - be
+    - bono east region
+  category: REGION

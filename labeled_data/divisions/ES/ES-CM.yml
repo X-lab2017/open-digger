@@ -1,0 +1,31 @@
+name: Castilla-La Mancha
+type: Division-1
+meta:
+  alpha2: ES-CM
+  includes:
+    - albacete
+    - es-ab
+    - ab
+    - albacete province
+    - castilla-la mancha
+    - es-cm
+    - cm
+    - castilla-la mancha autonomous community
+    - ciudad real
+    - es-cr
+    - cr
+    - ciudad real province
+    - cuenca
+    - es-cu
+    - cu
+    - cuenca province
+    - guadalajara
+    - es-gu
+    - gu
+    - guadalajara province
+    - toledo
+    - es-to
+    - to
+    - toledo province
+    - castile-la mancha
+  category: AUTONOMOUS COMMUNITY

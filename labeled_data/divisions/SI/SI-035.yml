@@ -1,0 +1,10 @@
+name: Hrpelje-Kozina
+type: Division-1
+meta:
+  alpha2: SI-035
+  includes:
+    - hrpelje-kozina
+    - si-035
+    - '035'
+    - hrpelje-kozina municipality
+  category: MUNICIPALITY

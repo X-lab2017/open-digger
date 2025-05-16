@@ -1,0 +1,10 @@
+name: Port Louis
+type: Division-1
+meta:
+  alpha2: MU-PL
+  includes:
+    - port louis
+    - mu-pl
+    - pl
+    - port louis district
+  category: DISTRICT

@@ -1,0 +1,12 @@
+name: Inīdī ash Sharqī
+type: Division-1
+meta:
+  alpha2: TD-EE
+  includes:
+    - ennedi-est
+    - td-ee
+    - ee
+    - ennedi-est province
+    - inīdī ash sharqī
+    - inīdī ash sharqī province
+  category: PROVINCE

@@ -1,0 +1,24 @@
+name: Läänemaa
+type: Division-1
+meta:
+  alpha2: EE-56
+  includes:
+    - haapsalu
+    - ee-184
+    - '184'
+    - haapsalu urban municipality
+    - lääne-nigula
+    - ee-441
+    - '441'
+    - lääne-nigula rural municipality
+    - läänemaa
+    - ee-56
+    - '56'
+    - läänemaa county
+    - vormsi
+    - ee-907
+    - '907'
+    - vormsi rural municipality
+    - lääne county
+    - laane
+  category: COUNTY

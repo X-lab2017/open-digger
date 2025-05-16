@@ -1,0 +1,10 @@
+name: Safi
+type: Division-1
+meta:
+  alpha2: MT-47
+  includes:
+    - safi
+    - mt-47
+    - '47'
+    - safi local council
+  category: LOCAL COUNCIL

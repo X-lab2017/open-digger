@@ -1,0 +1,10 @@
+name: Vallon de la Rousse
+type: Division-1
+meta:
+  alpha2: MC-VR
+  includes:
+    - vallon de la rousse
+    - mc-vr
+    - vr
+    - vallon de la rousse quarter
+  category: QUARTER

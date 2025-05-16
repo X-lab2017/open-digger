@@ -1,0 +1,10 @@
+name: Sveti Jurij v Slovenskih goricah
+type: Division-1
+meta:
+  alpha2: SI-210
+  includes:
+    - sveti jurij v slovenskih goricah
+    - si-210
+    - '210'
+    - sveti jurij v slovenskih goricah municipality
+  category: MUNICIPALITY

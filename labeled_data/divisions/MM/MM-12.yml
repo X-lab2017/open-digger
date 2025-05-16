@@ -1,0 +1,10 @@
+name: Kayah
+type: Division-1
+meta:
+  alpha2: MM-12
+  includes:
+    - kayah
+    - mm-12
+    - '12'
+    - kayah state
+  category: STATE

@@ -1,0 +1,10 @@
+name: Inagua
+type: Division-1
+meta:
+  alpha2: BS-IN
+  includes:
+    - inagua
+    - bs-in
+    - in
+    - inagua district
+  category: DISTRICT

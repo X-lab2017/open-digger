@@ -1,0 +1,10 @@
+name: Couffo
+type: Division-1
+meta:
+  alpha2: BJ-KO
+  includes:
+    - couffo
+    - bj-ko
+    - ko
+    - couffo department
+  category: DEPARTMENT

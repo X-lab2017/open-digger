@@ -1,0 +1,10 @@
+name: Jardin Exotique
+type: Division-1
+meta:
+  alpha2: MC-JE
+  includes:
+    - jardin exotique
+    - mc-je
+    - je
+    - jardin exotique quarter
+  category: QUARTER

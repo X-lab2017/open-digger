@@ -1,0 +1,10 @@
+name: Fāryāb
+type: Division-1
+meta:
+  alpha2: AF-FYB
+  includes:
+    - fāryāb
+    - af-fyb
+    - fyb
+    - fāryāb province
+  category: PROVINCE

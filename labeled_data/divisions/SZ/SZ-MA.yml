@@ -1,0 +1,10 @@
+name: Manzini
+type: Division-1
+meta:
+  alpha2: SZ-MA
+  includes:
+    - manzini
+    - sz-ma
+    - ma
+    - manzini region
+  category: REGION

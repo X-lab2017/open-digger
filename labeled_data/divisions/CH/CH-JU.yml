@@ -1,0 +1,10 @@
+name: Jura
+type: Division-1
+meta:
+  alpha2: CH-JU
+  includes:
+    - jura
+    - ch-ju
+    - ju
+    - jura canton
+  category: CANTON

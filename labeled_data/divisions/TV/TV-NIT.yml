@@ -1,0 +1,10 @@
+name: Niutao
+type: Division-1
+meta:
+  alpha2: TV-NIT
+  includes:
+    - niutao
+    - tv-nit
+    - nit
+    - niutao island council
+  category: ISLAND COUNCIL

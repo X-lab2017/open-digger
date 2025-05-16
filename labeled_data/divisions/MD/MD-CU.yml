@@ -1,0 +1,11 @@
+name: Chișinău
+type: Division-1
+meta:
+  alpha2: MD-CU
+  includes:
+    - chișinău
+    - md-cu
+    - cu
+    - chișinău city
+    - chisinau
+  category: CITY

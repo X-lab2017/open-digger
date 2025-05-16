@@ -1,0 +1,11 @@
+name: Rivière du Rempart
+type: Division-1
+meta:
+  alpha2: MU-RR
+  includes:
+    - rivière du rempart
+    - mu-rr
+    - rr
+    - rivière du rempart district
+    - rivière noire district
+  category: DISTRICT

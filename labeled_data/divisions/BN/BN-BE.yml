@@ -1,0 +1,10 @@
+name: Belait
+type: Division-1
+meta:
+  alpha2: BN-BE
+  includes:
+    - belait
+    - bn-be
+    - be
+    - belait district
+  category: DISTRICT

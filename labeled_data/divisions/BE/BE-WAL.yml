@@ -1,0 +1,33 @@
+name: wallonne
+type: Division-1
+meta:
+  alpha2: BE-WAL
+  includes:
+    - brabant wallon
+    - be-wbr
+    - wbr
+    - brabant wallon province
+    - hainaut
+    - be-wht
+    - wht
+    - hainaut province
+    - liège
+    - be-wlg
+    - wlg
+    - liège province
+    - luxembourg
+    - be-wlx
+    - wlx
+    - luxembourg province
+    - namur
+    - be-wna
+    - wna
+    - namur province
+    - wallonne
+    - be-wal
+    - wal
+    - wallonne region
+    - walloon region
+    - wallonia
+    - région wallonne
+  category: REGION

@@ -1,0 +1,10 @@
+name: Mohale's Hoek
+type: Division-1
+meta:
+  alpha2: LS-F
+  includes:
+    - mohale's hoek
+    - ls-f
+    - f
+    - mohale's hoek district
+  category: DISTRICT

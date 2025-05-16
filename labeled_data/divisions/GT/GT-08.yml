@@ -1,0 +1,10 @@
+name: Totonicapán
+type: Division-1
+meta:
+  alpha2: GT-08
+  includes:
+    - totonicapán
+    - gt-08
+    - '08'
+    - totonicapán department
+  category: DEPARTMENT

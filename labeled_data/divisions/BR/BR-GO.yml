@@ -1,0 +1,11 @@
+name: Goiás
+type: Division-1
+meta:
+  alpha2: BR-GO
+  includes:
+    - goiás
+    - br-go
+    - go
+    - goiás state
+    - state of goiás
+  category: STATE

@@ -1,0 +1,10 @@
+name: Lagunes
+type: Division-1
+meta:
+  alpha2: CI-LG
+  includes:
+    - lagunes
+    - ci-lg
+    - lg
+    - lagunes district
+  category: DISTRICT

@@ -1,0 +1,14 @@
+name: Džalal-Abadskaja oblast'
+type: Division-1
+meta:
+  alpha2: KG-J
+  includes:
+    - dzhalal-abadskaya oblast'
+    - kg-j
+    - j
+    - dzhalal-abadskaya oblast' region
+    - džalal-abadskaja oblast'
+    - džalal-abadskaja oblast' region
+    - jalal-abad
+    - jalal-abad region
+  category: REGION

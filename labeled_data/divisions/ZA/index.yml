@@ -1,0 +1,85 @@
+name: South Africa
+type: Division-0
+meta:
+  alpha2: ZA
+  includes:
+    - South Africa
+    - ZA
+    - '710'
+    - the Republic of South Africa
+    - 南非
+  name_full: the Republic of South Africa
+  name_zh: 南非
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 202767
+    - year: 2020
+      quarter: 2
+      count: 225046
+    - year: 2020
+      quarter: 3
+      count: 246671
+    - year: 2020
+      quarter: 4
+      count: 261947
+    - year: 2021
+      quarter: 1
+      count: 280384
+    - year: 2021
+      quarter: 2
+      count: 299470
+    - year: 2021
+      quarter: 3
+      count: 319311
+    - year: 2021
+      quarter: 4
+      count: 337012
+    - year: 2022
+      quarter: 1
+      count: 362162
+    - year: 2022
+      quarter: 2
+      count: 387732
+    - year: 2022
+      quarter: 3
+      count: 412731
+    - year: 2022
+      quarter: 4
+      count: 432286
+    - year: 2023
+      quarter: 1
+      count: 469504
+    - year: 2023
+      quarter: 2
+      count: 509385
+    - year: 2023
+      quarter: 3
+      count: 540586
+    - year: 2023
+      quarter: 4
+      count: 564536
+    - year: 2024
+      quarter: 1
+      count: 602571
+    - year: 2024
+      quarter: 2
+      count: 634709
+    - year: 2024
+      quarter: 3
+      count: 665394
+    - year: 2024
+      quarter: 4
+      count: 694983
+data:
+  labels:
+    - ZA-NW
+    - ZA-EC
+    - ZA-FS
+    - ZA-KZN
+    - ZA-GP
+    - ZA-WC
+    - ZA-NC
+    - ZA-LP
+    - ZA-MP
+    - ':companies/woo'

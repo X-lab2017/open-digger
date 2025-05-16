@@ -1,0 +1,13 @@
+name: Niue
+type: Division-0
+meta:
+  alpha2: NU
+  includes:
+    - Niue
+    - NU
+    - '570'
+    - the Republic of Niue
+    - 纽埃
+  name_full: the Republic of Niue
+  name_zh: 纽埃
+  developers: []

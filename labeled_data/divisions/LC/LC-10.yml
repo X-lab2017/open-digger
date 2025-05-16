@@ -1,0 +1,10 @@
+name: Soufrière
+type: Division-1
+meta:
+  alpha2: LC-10
+  includes:
+    - soufrière
+    - lc-10
+    - '10'
+    - soufrière district
+  category: DISTRICT

@@ -1,0 +1,10 @@
+name: Marlborough
+type: Division-1
+meta:
+  alpha2: NZ-MBH
+  includes:
+    - marlborough
+    - nz-mbh
+    - mbh
+    - marlborough region
+  category: REGION

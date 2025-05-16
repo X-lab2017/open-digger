@@ -1,0 +1,13 @@
+name: Mersch
+type: Division-1
+meta:
+  alpha2: LU-ME
+  includes:
+    - mersch
+    - lu-me
+    - me
+    - mersch canton
+    - miersch
+    - miersch canton
+    - canton of mersch
+  category: CANTON

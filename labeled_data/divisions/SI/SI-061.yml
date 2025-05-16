@@ -1,0 +1,10 @@
+name: Ljubljana
+type: Division-1
+meta:
+  alpha2: SI-061
+  includes:
+    - ljubljana
+    - si-061
+    - '061'
+    - ljubljana urban municipality
+  category: URBAN MUNICIPALITY

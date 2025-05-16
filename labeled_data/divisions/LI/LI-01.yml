@@ -1,0 +1,10 @@
+name: Balzers
+type: Division-1
+meta:
+  alpha2: LI-01
+  includes:
+    - balzers
+    - li-01
+    - '01'
+    - balzers commune
+  category: COMMUNE

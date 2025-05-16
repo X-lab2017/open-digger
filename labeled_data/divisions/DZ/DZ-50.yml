@@ -1,0 +1,10 @@
+name: Bordj Badji Mokhtar
+type: Division-1
+meta:
+  alpha2: DZ-50
+  includes:
+    - bordj badji mokhtar
+    - dz-50
+    - '50'
+    - bordj badji mokhtar province
+  category: PROVINCE

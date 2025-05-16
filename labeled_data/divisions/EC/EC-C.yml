@@ -1,0 +1,10 @@
+name: Carchi
+type: Division-1
+meta:
+  alpha2: EC-C
+  includes:
+    - carchi
+    - ec-c
+    - c
+    - carchi province
+  category: PROVINCE

@@ -1,0 +1,10 @@
+name: Grand Kru
+type: Division-1
+meta:
+  alpha2: LR-GK
+  includes:
+    - grand kru
+    - lr-gk
+    - gk
+    - grand kru county
+  category: COUNTY

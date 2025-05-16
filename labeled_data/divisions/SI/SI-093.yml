@@ -1,0 +1,10 @@
+name: Podvelka
+type: Division-1
+meta:
+  alpha2: SI-093
+  includes:
+    - podvelka
+    - si-093
+    - '093'
+    - podvelka municipality
+  category: MUNICIPALITY

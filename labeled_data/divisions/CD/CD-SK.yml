@@ -1,0 +1,12 @@
+name: Sud-Kivu
+type: Division-1
+meta:
+  alpha2: CD-SK
+  includes:
+    - sud-kivu
+    - cd-sk
+    - sk
+    - sud-kivu province
+    - south-kivu
+    - south kivu
+  category: PROVINCE

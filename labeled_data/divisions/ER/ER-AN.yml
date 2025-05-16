@@ -1,0 +1,14 @@
+name: Ansabā
+type: Division-1
+meta:
+  alpha2: ER-AN
+  includes:
+    - ansabā
+    - er-an
+    - an
+    - ansabā region
+    - ‘anseba
+    - ‘anseba region
+    - northern red sea
+    - northen red sea region
+  category: REGION

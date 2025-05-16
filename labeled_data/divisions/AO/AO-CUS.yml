@@ -1,0 +1,12 @@
+name: Cuanza-Sul
+type: Division-1
+meta:
+  alpha2: AO-CUS
+  includes:
+    - cuanza-sul
+    - ao-cus
+    - cus
+    - cuanza-sul province
+    - kwanza sul
+    - kwanza sul province
+  category: PROVINCE

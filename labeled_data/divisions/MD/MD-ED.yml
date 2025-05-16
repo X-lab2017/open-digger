@@ -1,0 +1,11 @@
+name: Edineț
+type: Division-1
+meta:
+  alpha2: MD-ED
+  includes:
+    - edineț
+    - md-ed
+    - ed
+    - edineț district
+    - edineţ district
+  category: DISTRICT

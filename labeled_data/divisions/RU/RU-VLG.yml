@@ -1,0 +1,14 @@
+name: Vologodskaya oblast'
+type: Division-1
+meta:
+  alpha2: RU-VLG
+  includes:
+    - vologodskaja oblast'
+    - ru-vlg
+    - vlg
+    - vologodskaja oblast' administrative region
+    - vologodskaya oblast'
+    - vologodskaya oblast' administrative region
+    - vologda oblast
+    - vologda
+  category: ADMINISTRATIVE REGION

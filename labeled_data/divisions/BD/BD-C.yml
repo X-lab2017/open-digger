@@ -1,0 +1,62 @@
+name: Dhaka
+type: Division-1
+meta:
+  alpha2: BD-C
+  includes:
+    - dhaka
+    - bd-c
+    - c
+    - dhaka division
+    - bd-13
+    - '13'
+    - dhaka district
+    - faridpur
+    - bd-15
+    - '15'
+    - faridpur district
+    - gazipur
+    - bd-18
+    - '18'
+    - gazipur district
+    - gopalganj
+    - bd-17
+    - '17'
+    - gopalganj district
+    - kishoreganj
+    - bd-26
+    - '26'
+    - kishoreganj district
+    - madaripur
+    - bd-36
+    - '36'
+    - madaripur district
+    - manikganj
+    - bd-33
+    - '33'
+    - manikganj district
+    - munshiganj
+    - bd-35
+    - '35'
+    - munshiganj district
+    - narayanganj
+    - bd-40
+    - '40'
+    - narayanganj district
+    - narsingdi
+    - bd-42
+    - '42'
+    - narsingdi district
+    - rajbari
+    - bd-53
+    - '53'
+    - rajbari district
+    - shariatpur
+    - bd-62
+    - '62'
+    - shariatpur district
+    - tangail
+    - bd-63
+    - '63'
+    - tangail district
+    - ঢাকা বিভাগ
+  category: DIVISION

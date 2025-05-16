@@ -1,0 +1,12 @@
+name: Lamphun
+type: Division-1
+meta:
+  alpha2: TH-51
+  includes:
+    - lamphun
+    - th-51
+    - '51'
+    - lamphun province
+    - chang wat lamphun
+    - ลำพูน
+  category: PROVINCE

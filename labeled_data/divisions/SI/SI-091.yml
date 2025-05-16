@@ -1,0 +1,10 @@
+name: Pivka
+type: Division-1
+meta:
+  alpha2: SI-091
+  includes:
+    - pivka
+    - si-091
+    - '091'
+    - pivka municipality
+  category: MUNICIPALITY

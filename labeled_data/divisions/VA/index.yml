@@ -1,0 +1,35 @@
+name: Holy See
+type: Division-0
+meta:
+  alpha2: VA
+  includes:
+    - Holy See
+    - VA
+    - '336'
+    - Holy See [Vatican City State]
+    - 梵蒂冈
+    - Vatican City
+  name_full: Holy See [Vatican City State]
+  name_zh: 梵蒂冈
+  developers:
+    - year: 2023
+      quarter: 2
+      count: 123
+    - year: 2023
+      quarter: 3
+      count: 157
+    - year: 2023
+      quarter: 4
+      count: 146
+    - year: 2024
+      quarter: 1
+      count: 152
+    - year: 2024
+      quarter: 2
+      count: 165
+    - year: 2024
+      quarter: 3
+      count: 195
+    - year: 2024
+      quarter: 4
+      count: 166

@@ -1,0 +1,11 @@
+name: Arica y Parinacota
+type: Division-1
+meta:
+  alpha2: CL-AP
+  includes:
+    - arica y parinacota
+    - cl-ap
+    - ap
+    - arica y parinacota region
+    - xv
+  category: REGION

@@ -1,0 +1,10 @@
+name: Kachin
+type: Division-1
+meta:
+  alpha2: MM-11
+  includes:
+    - kachin
+    - mm-11
+    - '11'
+    - kachin state
+  category: STATE

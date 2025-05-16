@@ -1,0 +1,12 @@
+name: Ouham-Pendé
+type: Division-1
+meta:
+  alpha2: CF-OP
+  includes:
+    - ouham-pendé
+    - cf-op
+    - op
+    - ouham-pendé prefecture
+    - wâmo-pendë
+    - wâmo-pendë prefecture
+  category: PREFECTURE

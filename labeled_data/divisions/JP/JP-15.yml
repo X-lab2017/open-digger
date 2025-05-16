@@ -1,0 +1,10 @@
+name: Niigata
+type: Division-1
+meta:
+  alpha2: JP-15
+  includes:
+    - niigata
+    - jp-15
+    - '15'
+    - niigata prefecture
+  category: PREFECTURE

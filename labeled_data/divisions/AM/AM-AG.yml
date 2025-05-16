@@ -1,0 +1,11 @@
+name: Aragac̣otn
+type: Division-1
+meta:
+  alpha2: AM-AG
+  includes:
+    - aragac̣otn
+    - am-ag
+    - ag
+    - aragac̣otn region
+    - aragatsotn province
+  category: REGION

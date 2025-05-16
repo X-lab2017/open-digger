@@ -1,0 +1,11 @@
+name: Vĩnh Phúc
+type: Division-1
+meta:
+  alpha2: VN-70
+  includes:
+    - vĩnh phúc
+    - vn-70
+    - '70'
+    - vĩnh phúc province
+    - vinh phuc
+  category: PROVINCE

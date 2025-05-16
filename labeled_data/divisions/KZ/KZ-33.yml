@@ -1,0 +1,16 @@
+name: Žetysuskaja oblast’
+type: Division-1
+meta:
+  alpha2: KZ-33
+  includes:
+    - zhetisū oblysy
+    - kz-33
+    - '33'
+    - zhetisū oblysy region
+    - zhetysuskaya oblast’
+    - zhetysuskaya oblast’ region
+    - žetysuskaja oblast’
+    - žetysuskaja oblast’ region
+    - jetisu region
+    - жetysuskaja oblast’
+  category: REGION

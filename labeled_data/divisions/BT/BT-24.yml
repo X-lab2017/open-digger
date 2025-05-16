@@ -1,0 +1,10 @@
+name: Wangdue Phodrang
+type: Division-1
+meta:
+  alpha2: BT-24
+  includes:
+    - wangdue phodrang
+    - bt-24
+    - '24'
+    - wangdue phodrang district
+  category: DISTRICT

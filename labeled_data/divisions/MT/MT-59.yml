@@ -1,0 +1,10 @@
+name: Tarxien
+type: Division-1
+meta:
+  alpha2: MT-59
+  includes:
+    - tarxien
+    - mt-59
+    - '59'
+    - tarxien local council
+  category: LOCAL COUNCIL

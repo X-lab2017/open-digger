@@ -1,0 +1,12 @@
+name: Yamoussoukro
+type: Division-1
+meta:
+  alpha2: CI-YM
+  includes:
+    - yamoussoukro
+    - ci-ym
+    - ym
+    - yamoussoukro autonomous district
+    - district autonome du yamoussoukro
+    - yamoussoukro district
+  category: AUTONOMOUS DISTRICT

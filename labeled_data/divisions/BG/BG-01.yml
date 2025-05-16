@@ -1,0 +1,11 @@
+name: Blagoevgrad
+type: Division-1
+meta:
+  alpha2: BG-01
+  includes:
+    - blagoevgrad
+    - bg-01
+    - '01'
+    - blagoevgrad district
+    - blagoevgrad province
+  category: DISTRICT

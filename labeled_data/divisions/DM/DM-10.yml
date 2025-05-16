@@ -1,0 +1,10 @@
+name: Saint Paul
+type: Division-1
+meta:
+  alpha2: DM-10
+  includes:
+    - saint paul
+    - dm-10
+    - '10'
+    - saint paul parish
+  category: PARISH

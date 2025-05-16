@@ -1,0 +1,11 @@
+name: Atacama
+type: Division-1
+meta:
+  alpha2: CL-AT
+  includes:
+    - atacama
+    - cl-at
+    - at
+    - atacama region
+    - iii
+  category: REGION

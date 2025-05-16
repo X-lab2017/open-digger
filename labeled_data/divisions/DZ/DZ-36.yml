@@ -1,0 +1,11 @@
+name: El Tarf
+type: Division-1
+meta:
+  alpha2: DZ-36
+  includes:
+    - el tarf
+    - dz-36
+    - '36'
+    - el tarf province
+    - el taref province
+  category: PROVINCE

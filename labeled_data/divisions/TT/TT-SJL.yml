@@ -1,0 +1,11 @@
+name: San Juan-Laventille
+type: Division-1
+meta:
+  alpha2: TT-SJL
+  includes:
+    - san juan-laventille
+    - tt-sjl
+    - sjl
+    - san juan-laventille region
+    - san juan-laventille regional corporation
+  category: REGION

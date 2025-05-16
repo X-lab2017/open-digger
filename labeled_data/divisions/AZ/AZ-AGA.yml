@@ -1,0 +1,10 @@
+name: Ağstafa
+type: Division-1
+meta:
+  alpha2: AZ-AGA
+  includes:
+    - ağstafa
+    - az-aga
+    - aga
+    - ağstafa rayon
+  category: RAYON

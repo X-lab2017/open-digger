@@ -1,0 +1,11 @@
+name: Kébili
+type: Division-1
+meta:
+  alpha2: TN-73
+  includes:
+    - kébili
+    - tn-73
+    - '73'
+    - kébili governorate
+    - kebili governorate
+  category: GOVERNORATE

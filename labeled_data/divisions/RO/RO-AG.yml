@@ -1,0 +1,12 @@
+name: Argeș
+type: Division-1
+meta:
+  alpha2: RO-AG
+  includes:
+    - argeș
+    - ro-ag
+    - ag
+    - argeș department
+    - argeş
+    - județul argeș
+  category: DEPARTMENT

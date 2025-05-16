@@ -1,0 +1,11 @@
+name: Steiermark
+type: Division-1
+meta:
+  alpha2: AT-6
+  includes:
+    - steiermark
+    - at-6
+    - '6'
+    - steiermark state
+    - styria
+  category: STATE

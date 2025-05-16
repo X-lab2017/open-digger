@@ -1,0 +1,10 @@
+name: Tissemsilt
+type: Division-1
+meta:
+  alpha2: DZ-38
+  includes:
+    - tissemsilt
+    - dz-38
+    - '38'
+    - tissemsilt province
+  category: PROVINCE

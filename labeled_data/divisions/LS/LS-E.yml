@@ -1,0 +1,10 @@
+name: Mafeteng
+type: Division-1
+meta:
+  alpha2: LS-E
+  includes:
+    - mafeteng
+    - ls-e
+    - e
+    - mafeteng district
+  category: DISTRICT

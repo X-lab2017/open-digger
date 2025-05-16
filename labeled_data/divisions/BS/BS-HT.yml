@@ -1,0 +1,10 @@
+name: Hope Town
+type: Division-1
+meta:
+  alpha2: BS-HT
+  includes:
+    - hope town
+    - bs-ht
+    - ht
+    - hope town district
+  category: DISTRICT

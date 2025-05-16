@@ -1,0 +1,73 @@
+name: Northern Mariana Islands
+type: Division-0
+meta:
+  alpha2: MP
+  includes:
+    - Northern Mariana Islands
+    - MP
+    - '580'
+    - the Commonwealth of the Northern Mariana Islands
+    - 北马里亚纳
+  name_full: the Commonwealth of the Northern Mariana Islands
+  name_zh: 北马里亚纳
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 280
+    - year: 2020
+      quarter: 2
+      count: 311
+    - year: 2020
+      quarter: 3
+      count: 350
+    - year: 2020
+      quarter: 4
+      count: 387
+    - year: 2021
+      quarter: 1
+      count: 422
+    - year: 2021
+      quarter: 2
+      count: 457
+    - year: 2021
+      quarter: 3
+      count: 486
+    - year: 2021
+      quarter: 4
+      count: 512
+    - year: 2022
+      quarter: 1
+      count: 554
+    - year: 2022
+      quarter: 2
+      count: 581
+    - year: 2022
+      quarter: 3
+      count: 635
+    - year: 2022
+      quarter: 4
+      count: 653
+    - year: 2023
+      quarter: 1
+      count: 693
+    - year: 2023
+      quarter: 2
+      count: 742
+    - year: 2023
+      quarter: 3
+      count: 820
+    - year: 2023
+      quarter: 4
+      count: 844
+    - year: 2024
+      quarter: 1
+      count: 887
+    - year: 2024
+      quarter: 2
+      count: 931
+    - year: 2024
+      quarter: 3
+      count: 978
+    - year: 2024
+      quarter: 4
+      count: 1066

@@ -1,0 +1,10 @@
+name: Šentilj
+type: Division-1
+meta:
+  alpha2: SI-118
+  includes:
+    - šentilj
+    - si-118
+    - '118'
+    - šentilj municipality
+  category: MUNICIPALITY

@@ -1,0 +1,10 @@
+name: Western Highlands
+type: Division-1
+meta:
+  alpha2: PG-WHM
+  includes:
+    - western highlands
+    - pg-whm
+    - whm
+    - western highlands province
+  category: PROVINCE

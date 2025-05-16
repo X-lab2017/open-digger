@@ -1,0 +1,12 @@
+name: Ghaznī
+type: Division-1
+meta:
+  alpha2: AF-GHA
+  includes:
+    - ghaznī
+    - af-gha
+    - gha
+    - ghaznī province
+    - ghazni province
+    - ghazni
+  category: PROVINCE

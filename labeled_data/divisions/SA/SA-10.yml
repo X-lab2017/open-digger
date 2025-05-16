@@ -1,0 +1,12 @@
+name: Najrān
+type: Division-1
+meta:
+  alpha2: SA-10
+  includes:
+    - najrān
+    - sa-10
+    - '10'
+    - najrān region
+    - nar
+    - najran province
+  category: REGION

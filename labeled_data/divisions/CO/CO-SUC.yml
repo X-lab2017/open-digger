@@ -1,0 +1,10 @@
+name: Sucre
+type: Division-1
+meta:
+  alpha2: CO-SUC
+  includes:
+    - sucre
+    - co-suc
+    - suc
+    - sucre department
+  category: DEPARTMENT

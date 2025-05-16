@@ -1,0 +1,10 @@
+name: Malbousquet
+type: Division-1
+meta:
+  alpha2: MC-MA
+  includes:
+    - malbousquet
+    - mc-ma
+    - ma
+    - malbousquet quarter
+  category: QUARTER

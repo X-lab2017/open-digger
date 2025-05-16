@@ -1,0 +1,11 @@
+name: Budva
+type: Division-1
+meta:
+  alpha2: ME-05
+  includes:
+    - budva
+    - me-05
+    - '05'
+    - budva municipality
+    - opština budva
+  category: MUNICIPALITY

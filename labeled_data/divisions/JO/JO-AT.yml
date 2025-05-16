@@ -1,0 +1,11 @@
+name: Aţ Ţafīlah
+type: Division-1
+meta:
+  alpha2: JO-AT
+  includes:
+    - aţ ţafīlah
+    - jo-at
+    - at
+    - aţ ţafīlah governorate
+    - tafilah governorate
+  category: GOVERNORATE

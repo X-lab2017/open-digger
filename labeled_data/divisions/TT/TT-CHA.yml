@@ -1,0 +1,11 @@
+name: Chaguanas
+type: Division-1
+meta:
+  alpha2: TT-CHA
+  includes:
+    - chaguanas
+    - tt-cha
+    - cha
+    - chaguanas borough
+    - chaguanas borough corporation
+  category: BOROUGH

@@ -1,0 +1,10 @@
+name: Harbour Island
+type: Division-1
+meta:
+  alpha2: BS-HI
+  includes:
+    - harbour island
+    - bs-hi
+    - hi
+    - harbour island district
+  category: DISTRICT

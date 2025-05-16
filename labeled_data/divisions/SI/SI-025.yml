@@ -1,0 +1,10 @@
+name: Dravograd
+type: Division-1
+meta:
+  alpha2: SI-025
+  includes:
+    - dravograd
+    - si-025
+    - '025'
+    - dravograd municipality
+  category: MUNICIPALITY

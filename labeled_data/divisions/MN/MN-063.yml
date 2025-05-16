@@ -1,0 +1,10 @@
+name: Dornogovĭ
+type: Division-1
+meta:
+  alpha2: MN-063
+  includes:
+    - dornogovĭ
+    - mn-063
+    - '063'
+    - dornogovĭ province
+  category: PROVINCE

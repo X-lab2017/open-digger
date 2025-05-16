@@ -1,0 +1,11 @@
+name: La Pampa
+type: Division-1
+meta:
+  alpha2: AR-L
+  includes:
+    - la pampa
+    - ar-l
+    - l
+    - la pampa province
+    - lp
+  category: PROVINCE

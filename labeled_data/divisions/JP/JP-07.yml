@@ -1,0 +1,13 @@
+name: Hukusima
+type: Division-1
+meta:
+  alpha2: JP-07
+  includes:
+    - fukushima
+    - jp-07
+    - '07'
+    - fukushima prefecture
+    - hukusima
+    - hukusima prefecture
+    - 福島県
+  category: PREFECTURE

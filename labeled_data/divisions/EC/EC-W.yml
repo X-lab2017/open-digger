@@ -1,0 +1,12 @@
+name: Galápagos
+type: Division-1
+meta:
+  alpha2: EC-W
+  includes:
+    - galápagos
+    - ec-w
+    - w
+    - galápagos province
+    - islas galápagos
+    - galápagos islands
+  category: PROVINCE

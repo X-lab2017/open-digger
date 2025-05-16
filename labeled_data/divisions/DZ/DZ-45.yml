@@ -1,0 +1,11 @@
+name: Naama
+type: Division-1
+meta:
+  alpha2: DZ-45
+  includes:
+    - naama
+    - dz-45
+    - '45'
+    - naama province
+    - naâma province
+  category: PROVINCE

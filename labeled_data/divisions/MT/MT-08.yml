@@ -1,0 +1,10 @@
+name: Fgura
+type: Division-1
+meta:
+  alpha2: MT-08
+  includes:
+    - fgura
+    - mt-08
+    - '08'
+    - fgura local council
+  category: LOCAL COUNCIL

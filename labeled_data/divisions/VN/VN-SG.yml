@@ -1,0 +1,15 @@
+name: Hồ Chí Minh
+type: Division-1
+meta:
+  alpha2: VN-SG
+  includes:
+    - hồ chí minh
+    - vn-sg
+    - sg
+    - hồ chí minh municipality
+    - sai gon
+    - sai gon municipality
+    - ho chi minh city
+    - thành phố hồ chí minh
+    - tp. hồ chí minh
+  category: MUNICIPALITY

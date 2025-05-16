@@ -1,0 +1,10 @@
+name: Coclé
+type: Division-1
+meta:
+  alpha2: PA-2
+  includes:
+    - coclé
+    - pa-2
+    - '2'
+    - coclé province
+  category: PROVINCE

@@ -1,0 +1,11 @@
+name: Kalmar län
+type: Division-1
+meta:
+  alpha2: SE-H
+  includes:
+    - kalmar län
+    - se-h
+    - h
+    - kalmar län county
+    - kalmar county
+  category: COUNTY

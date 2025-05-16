@@ -1,0 +1,82 @@
+name: Indonesia
+type: Division-0
+meta:
+  alpha2: ID
+  includes:
+    - Indonesia
+    - ID
+    - '360'
+    - the Republic of Indonesia
+    - 印度尼西亚
+  name_full: the Republic of Indonesia
+  name_zh: 印度尼西亚
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 880038
+    - year: 2020
+      quarter: 2
+      count: 978184
+    - year: 2020
+      quarter: 3
+      count: 1091831
+    - year: 2020
+      quarter: 4
+      count: 1234657
+    - year: 2021
+      quarter: 1
+      count: 1365576
+    - year: 2021
+      quarter: 2
+      count: 1483474
+    - year: 2021
+      quarter: 3
+      count: 1641667
+    - year: 2021
+      quarter: 4
+      count: 1795600
+    - year: 2022
+      quarter: 1
+      count: 1943182
+    - year: 2022
+      quarter: 2
+      count: 2071045
+    - year: 2022
+      quarter: 3
+      count: 2224991
+    - year: 2022
+      quarter: 4
+      count: 2379999
+    - year: 2023
+      quarter: 1
+      count: 2518881
+    - year: 2023
+      quarter: 2
+      count: 2712048
+    - year: 2023
+      quarter: 3
+      count: 2938205
+    - year: 2023
+      quarter: 4
+      count: 3119277
+    - year: 2024
+      quarter: 1
+      count: 3321239
+    - year: 2024
+      quarter: 2
+      count: 3448732
+    - year: 2024
+      quarter: 3
+      count: 3602191
+    - year: 2024
+      quarter: 4
+      count: 3791126
+data:
+  labels:
+    - ID-SM
+    - ID-NU
+    - ID-JW
+    - ID-SL
+    - ID-KA
+    - ID-ML
+    - ID-PP

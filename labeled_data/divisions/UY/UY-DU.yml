@@ -1,0 +1,10 @@
+name: Durazno
+type: Division-1
+meta:
+  alpha2: UY-DU
+  includes:
+    - durazno
+    - uy-du
+    - du
+    - durazno department
+  category: DEPARTMENT

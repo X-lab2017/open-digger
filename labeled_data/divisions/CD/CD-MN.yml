@@ -1,0 +1,10 @@
+name: Mai-Ndombe
+type: Division-1
+meta:
+  alpha2: CD-MN
+  includes:
+    - mai-ndombe
+    - cd-mn
+    - mn
+    - mai-ndombe province
+  category: PROVINCE

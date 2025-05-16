@@ -1,0 +1,12 @@
+name: Đà Nẵng
+type: Division-1
+meta:
+  alpha2: VN-DN
+  includes:
+    - đà nẵng
+    - vn-dn
+    - dn
+    - đà nẵng municipality
+    - da nang
+    - da nang city
+  category: MUNICIPALITY

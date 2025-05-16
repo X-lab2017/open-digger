@@ -1,0 +1,10 @@
+name: Las Tunas
+type: Division-1
+meta:
+  alpha2: CU-10
+  includes:
+    - las tunas
+    - cu-10
+    - '10'
+    - las tunas province
+  category: PROVINCE

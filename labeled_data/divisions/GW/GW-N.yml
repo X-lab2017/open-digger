@@ -1,0 +1,22 @@
+name: Norte
+type: Division-1
+meta:
+  alpha2: GW-N
+  includes:
+    - biombo
+    - gw-bm
+    - bm
+    - biombo region
+    - cacheu
+    - gw-ca
+    - ca
+    - cacheu region
+    - norte
+    - gw-n
+    - 'n'
+    - norte province
+    - oio
+    - gw-oi
+    - oi
+    - oio region
+  category: PROVINCE

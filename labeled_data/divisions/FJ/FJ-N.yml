@@ -1,0 +1,22 @@
+name: Northern
+type: Division-1
+meta:
+  alpha2: FJ-N
+  includes:
+    - bua
+    - fj-02
+    - '02'
+    - bua province
+    - cakaudrove
+    - fj-03
+    - '03'
+    - cakaudrove province
+    - macuata
+    - fj-07
+    - '07'
+    - macuata province
+    - northern
+    - fj-n
+    - 'n'
+    - northern division
+  category: DIVISION

@@ -1,0 +1,10 @@
+name: Cabo Delgado
+type: Division-1
+meta:
+  alpha2: MZ-P
+  includes:
+    - cabo delgado
+    - mz-p
+    - p
+    - cabo delgado province
+  category: PROVINCE

@@ -1,0 +1,10 @@
+name: Vransko
+type: Division-1
+meta:
+  alpha2: SI-189
+  includes:
+    - vransko
+    - si-189
+    - '189'
+    - vransko municipality
+  category: MUNICIPALITY

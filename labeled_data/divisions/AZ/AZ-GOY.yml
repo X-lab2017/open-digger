@@ -1,0 +1,10 @@
+name: Göyçay
+type: Division-1
+meta:
+  alpha2: AZ-GOY
+  includes:
+    - göyçay
+    - az-goy
+    - goy
+    - göyçay rayon
+  category: RAYON

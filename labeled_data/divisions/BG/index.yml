@@ -1,0 +1,104 @@
+name: Bulgaria
+type: Division-0
+meta:
+  alpha2: BG
+  includes:
+    - Bulgaria
+    - BG
+    - '100'
+    - the Republic of Bulgaria
+    - 保加利亚
+  name_full: the Republic of Bulgaria
+  name_zh: 保加利亚
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 105264
+    - year: 2020
+      quarter: 2
+      count: 112717
+    - year: 2020
+      quarter: 3
+      count: 118753
+    - year: 2020
+      quarter: 4
+      count: 126053
+    - year: 2021
+      quarter: 1
+      count: 134389
+    - year: 2021
+      quarter: 2
+      count: 140723
+    - year: 2021
+      quarter: 3
+      count: 147125
+    - year: 2021
+      quarter: 4
+      count: 154311
+    - year: 2022
+      quarter: 1
+      count: 164895
+    - year: 2022
+      quarter: 2
+      count: 174422
+    - year: 2022
+      quarter: 3
+      count: 182284
+    - year: 2022
+      quarter: 4
+      count: 190603
+    - year: 2023
+      quarter: 1
+      count: 201316
+    - year: 2023
+      quarter: 2
+      count: 211762
+    - year: 2023
+      quarter: 3
+      count: 221792
+    - year: 2023
+      quarter: 4
+      count: 231344
+    - year: 2024
+      quarter: 1
+      count: 242757
+    - year: 2024
+      quarter: 2
+      count: 258010
+    - year: 2024
+      quarter: 3
+      count: 259725
+    - year: 2024
+      quarter: 4
+      count: 267729
+data:
+  labels:
+    - BG-01
+    - BG-02
+    - BG-08
+    - BG-07
+    - BG-26
+    - BG-09
+    - BG-10
+    - BG-11
+    - BG-12
+    - BG-13
+    - BG-14
+    - BG-15
+    - BG-16
+    - BG-17
+    - BG-18
+    - BG-27
+    - BG-19
+    - BG-20
+    - BG-21
+    - BG-23
+    - BG-22
+    - BG-24
+    - BG-25
+    - BG-03
+    - BG-04
+    - BG-05
+    - BG-06
+    - BG-28
+    - ':companies/ggml.ai'

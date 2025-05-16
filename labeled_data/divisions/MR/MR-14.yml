@@ -1,0 +1,13 @@
+name: Nuwākshūţ ash Shamālīyah
+type: Division-1
+meta:
+  alpha2: MR-14
+  includes:
+    - nouakchott nord
+    - mr-14
+    - '14'
+    - nouakchott nord region
+    - nuwākshūţ ash shamālīyah
+    - nuwākshūţ ash shamālīyah region
+    - nouakchott
+  category: REGION

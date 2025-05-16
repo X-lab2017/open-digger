@@ -1,0 +1,10 @@
+name: Duplek
+type: Division-1
+meta:
+  alpha2: SI-026
+  includes:
+    - duplek
+    - si-026
+    - '026'
+    - duplek municipality
+  category: MUNICIPALITY

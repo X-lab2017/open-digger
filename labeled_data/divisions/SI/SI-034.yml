@@ -1,0 +1,10 @@
+name: Hrastnik
+type: Division-1
+meta:
+  alpha2: SI-034
+  includes:
+    - hrastnik
+    - si-034
+    - '034'
+    - hrastnik municipality
+  category: MUNICIPALITY

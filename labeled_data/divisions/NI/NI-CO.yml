@@ -1,0 +1,10 @@
+name: Chontales
+type: Division-1
+meta:
+  alpha2: NI-CO
+  includes:
+    - chontales
+    - ni-co
+    - co
+    - chontales department
+  category: DEPARTMENT

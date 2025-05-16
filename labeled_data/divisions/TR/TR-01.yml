@@ -1,0 +1,10 @@
+name: Adana
+type: Division-1
+meta:
+  alpha2: TR-01
+  includes:
+    - adana
+    - tr-01
+    - '01'
+    - adana province
+  category: PROVINCE

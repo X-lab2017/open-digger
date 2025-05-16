@@ -1,0 +1,13 @@
+name: Trøndelag
+type: Division-1
+meta:
+  alpha2: NO-50
+  includes:
+    - trööndelage
+    - no-50
+    - '50'
+    - trööndelage county
+    - trøndelag
+    - trøndelag county
+    - sogn og fjordane
+  category: COUNTY

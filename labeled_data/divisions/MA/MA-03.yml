@@ -1,0 +1,47 @@
+name: Fès-Meknès
+type: Division-1
+meta:
+  alpha2: MA-03
+  includes:
+    - boulemane
+    - ma-bom
+    - bom
+    - boulemane province
+    - el hajeb
+    - ma-haj
+    - haj
+    - el hajeb province
+    - fès
+    - ma-fes
+    - fes
+    - fès prefecture
+    - fès-meknès
+    - ma-03
+    - '03'
+    - fès-meknès region
+    - ifrane
+    - ma-ifr
+    - ifr
+    - ifrane province
+    - meknès
+    - ma-mek
+    - mek
+    - meknès prefecture
+    - moulay yacoub
+    - ma-mou
+    - mou
+    - moulay yacoub province
+    - sefrou
+    - ma-sef
+    - sef
+    - sefrou province
+    - taounate
+    - ma-tao
+    - tao
+    - taounate province
+    - taza
+    - ma-taz
+    - taz
+    - taza province
+    - fez-meknès
+  category: REGION

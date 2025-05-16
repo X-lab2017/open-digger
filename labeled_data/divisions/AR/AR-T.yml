@@ -1,0 +1,12 @@
+name: Tucumán
+type: Division-1
+meta:
+  alpha2: AR-T
+  includes:
+    - tucumán
+    - ar-t
+    - t
+    - tucumán province
+    - tu
+    - ca
+  category: PROVINCE

@@ -1,0 +1,10 @@
+name: Erongo
+type: Division-1
+meta:
+  alpha2: NA-ER
+  includes:
+    - erongo
+    - na-er
+    - er
+    - erongo region
+  category: REGION

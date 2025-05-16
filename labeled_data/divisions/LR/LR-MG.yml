@@ -1,0 +1,10 @@
+name: Margibi
+type: Division-1
+meta:
+  alpha2: LR-MG
+  includes:
+    - margibi
+    - lr-mg
+    - mg
+    - margibi county
+  category: COUNTY

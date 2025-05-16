@@ -1,0 +1,10 @@
+name: Colonia
+type: Division-1
+meta:
+  alpha2: UY-CO
+  includes:
+    - colonia
+    - uy-co
+    - co
+    - colonia department
+  category: DEPARTMENT

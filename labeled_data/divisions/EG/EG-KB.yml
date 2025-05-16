@@ -1,0 +1,13 @@
+name: Al Qalyūbīyah
+type: Division-1
+meta:
+  alpha2: EG-KB
+  includes:
+    - al qalyūbīyah
+    - eg-kb
+    - kb
+    - al qalyūbīyah governorate
+    - al qalyubia governorate
+    - al qalyubiyah
+    - al-qalyubia governorate
+  category: GOVERNORATE

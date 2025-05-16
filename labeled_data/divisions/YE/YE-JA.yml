@@ -1,0 +1,10 @@
+name: Al Jawf
+type: Division-1
+meta:
+  alpha2: YE-JA
+  includes:
+    - al jawf
+    - ye-ja
+    - ja
+    - al jawf governorate
+  category: GOVERNORATE

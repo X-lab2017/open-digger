@@ -1,0 +1,10 @@
+name: Maldonado
+type: Division-1
+meta:
+  alpha2: UY-MA
+  includes:
+    - maldonado
+    - uy-ma
+    - ma
+    - maldonado department
+  category: DEPARTMENT

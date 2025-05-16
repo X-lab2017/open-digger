@@ -1,0 +1,11 @@
+name: San Luis Potosí
+type: Division-1
+meta:
+  alpha2: MX-SLP
+  includes:
+    - san luis potosí
+    - mx-slp
+    - slp
+    - san luis potosí state
+    - san luis potosi
+  category: STATE

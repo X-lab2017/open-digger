@@ -1,0 +1,10 @@
+name: Saint Thomas
+type: Division-1
+meta:
+  alpha2: BB-11
+  includes:
+    - saint thomas
+    - bb-11
+    - '11'
+    - saint thomas parish
+  category: PARISH

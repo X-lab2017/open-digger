@@ -1,0 +1,10 @@
+name: Kirkop
+type: Division-1
+meta:
+  alpha2: MT-23
+  includes:
+    - kirkop
+    - mt-23
+    - '23'
+    - kirkop local council
+  category: LOCAL COUNCIL

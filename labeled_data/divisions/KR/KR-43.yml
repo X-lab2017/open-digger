@@ -1,0 +1,13 @@
+name: Chungcheongbuk-do
+type: Division-1
+meta:
+  alpha2: KR-43
+  includes:
+    - chungcheongbuk-do
+    - kr-43
+    - '43'
+    - chungcheongbuk-do province
+    - chungbuk
+    - chungbuk province
+    - north chungcheong
+  category: PROVINCE

@@ -1,0 +1,12 @@
+name: Mahajanga
+type: Division-1
+meta:
+  alpha2: MG-M
+  includes:
+    - mahajanga
+    - mg-m
+    - m
+    - mahajanga province
+    - boeny
+    - menabe
+  category: PROVINCE

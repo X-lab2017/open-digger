@@ -1,0 +1,10 @@
+name: Trat
+type: Division-1
+meta:
+  alpha2: TH-23
+  includes:
+    - trat
+    - th-23
+    - '23'
+    - trat province
+  category: PROVINCE

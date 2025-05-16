@@ -1,0 +1,10 @@
+name: Kunduz
+type: Division-1
+meta:
+  alpha2: AF-KDZ
+  includes:
+    - kunduz
+    - af-kdz
+    - kdz
+    - kunduz province
+  category: PROVINCE

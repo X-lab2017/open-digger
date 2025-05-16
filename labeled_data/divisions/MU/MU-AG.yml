@@ -1,0 +1,10 @@
+name: Agalega Islands
+type: Division-1
+meta:
+  alpha2: MU-AG
+  includes:
+    - agalega islands
+    - mu-ag
+    - ag
+    - agalega islands dependency
+  category: DEPENDENCY

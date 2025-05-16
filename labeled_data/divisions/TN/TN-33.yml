@@ -1,0 +1,10 @@
+name: Le Kef
+type: Division-1
+meta:
+  alpha2: TN-33
+  includes:
+    - le kef
+    - tn-33
+    - '33'
+    - le kef governorate
+  category: GOVERNORATE

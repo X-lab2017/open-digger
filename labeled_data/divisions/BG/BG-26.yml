@@ -1,0 +1,13 @@
+name: Haskovo
+type: Division-1
+meta:
+  alpha2: BG-26
+  includes:
+    - haskovo
+    - bg-26
+    - '26'
+    - haskovo district
+    - haskovo province
+    - khaskovo
+    - хасково
+  category: DISTRICT

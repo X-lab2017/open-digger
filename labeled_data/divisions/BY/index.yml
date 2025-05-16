@@ -1,0 +1,83 @@
+name: Belarus
+type: Division-0
+meta:
+  alpha2: BY
+  includes:
+    - Belarus
+    - BY
+    - '112'
+    - the Republic of Belarus
+    - 白俄罗斯
+    - Republic of Belarus
+  name_full: the Republic of Belarus
+  name_zh: 白俄罗斯
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 148529
+    - year: 2020
+      quarter: 2
+      count: 158595
+    - year: 2020
+      quarter: 3
+      count: 170054
+    - year: 2020
+      quarter: 4
+      count: 181242
+    - year: 2021
+      quarter: 1
+      count: 194051
+    - year: 2021
+      quarter: 2
+      count: 204731
+    - year: 2021
+      quarter: 3
+      count: 216789
+    - year: 2021
+      quarter: 4
+      count: 231051
+    - year: 2022
+      quarter: 1
+      count: 246969
+    - year: 2022
+      quarter: 2
+      count: 253594
+    - year: 2022
+      quarter: 3
+      count: 263163
+    - year: 2022
+      quarter: 4
+      count: 273207
+    - year: 2023
+      quarter: 1
+      count: 281666
+    - year: 2023
+      quarter: 2
+      count: 290484
+    - year: 2023
+      quarter: 3
+      count: 297656
+    - year: 2023
+      quarter: 4
+      count: 306332
+    - year: 2024
+      quarter: 1
+      count: 317967
+    - year: 2024
+      quarter: 2
+      count: 326258
+    - year: 2024
+      quarter: 3
+      count: 333334
+    - year: 2024
+      quarter: 4
+      count: 341334
+data:
+  labels:
+    - BY-BR
+    - BY-HO
+    - BY-HM
+    - BY-HR
+    - BY-MA
+    - BY-MI
+    - BY-VI

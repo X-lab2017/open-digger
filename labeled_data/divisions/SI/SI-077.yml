@@ -1,0 +1,10 @@
+name: Moravče
+type: Division-1
+meta:
+  alpha2: SI-077
+  includes:
+    - moravče
+    - si-077
+    - '077'
+    - moravče municipality
+  category: MUNICIPALITY

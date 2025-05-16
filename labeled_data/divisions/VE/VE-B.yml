@@ -1,0 +1,12 @@
+name: Anzoátegui
+type: Division-1
+meta:
+  alpha2: VE-B
+  includes:
+    - anzoátegui
+    - ve-b
+    - b
+    - anzoátegui state
+    - anzoategui
+    - an
+  category: STATE

@@ -1,0 +1,12 @@
+name: South Darfur
+type: Division-1
+meta:
+  alpha2: SD-DS
+  includes:
+    - janūb dārfūr
+    - sd-ds
+    - ds
+    - janūb dārfūr state
+    - south darfur
+    - south darfur state
+  category: STATE

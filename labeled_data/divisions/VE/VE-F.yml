@@ -1,0 +1,11 @@
+name: Bolívar
+type: Division-1
+meta:
+  alpha2: VE-F
+  includes:
+    - bolívar
+    - ve-f
+    - f
+    - bolívar state
+    - bo
+  category: STATE

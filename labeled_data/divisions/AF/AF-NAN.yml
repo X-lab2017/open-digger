@@ -1,0 +1,12 @@
+name: Nangarhār
+type: Division-1
+meta:
+  alpha2: AF-NAN
+  includes:
+    - nangarhār
+    - af-nan
+    - nan
+    - nangarhār province
+    - nangarhar province
+    - nangarhar
+  category: PROVINCE

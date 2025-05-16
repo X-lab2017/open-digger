@@ -1,0 +1,10 @@
+name: Dibër
+type: Division-1
+meta:
+  alpha2: AL-09
+  includes:
+    - dibër
+    - al-09
+    - '09'
+    - dibër county
+  category: COUNTY

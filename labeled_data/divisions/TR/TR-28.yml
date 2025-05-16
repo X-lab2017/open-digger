@@ -1,0 +1,10 @@
+name: Giresun
+type: Division-1
+meta:
+  alpha2: TR-28
+  includes:
+    - giresun
+    - tr-28
+    - '28'
+    - giresun province
+  category: PROVINCE

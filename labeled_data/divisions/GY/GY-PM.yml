@@ -1,0 +1,10 @@
+name: Pomeroon-Supenaam
+type: Division-1
+meta:
+  alpha2: GY-PM
+  includes:
+    - pomeroon-supenaam
+    - gy-pm
+    - pm
+    - pomeroon-supenaam region
+  category: REGION

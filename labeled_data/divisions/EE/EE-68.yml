@@ -1,0 +1,41 @@
+name: Pärnumaa
+type: Division-1
+meta:
+  alpha2: EE-68
+  includes:
+    - häädemeeste
+    - ee-214
+    - '214'
+    - häädemeeste rural municipality
+    - kihnu
+    - ee-303
+    - '303'
+    - kihnu rural municipality
+    - lääneranna
+    - ee-430
+    - '430'
+    - lääneranna rural municipality
+    - pärnu
+    - ee-624
+    - '624'
+    - pärnu urban municipality
+    - pärnumaa
+    - ee-68
+    - '68'
+    - pärnumaa county
+    - põhja-pärnumaa
+    - ee-638
+    - '638'
+    - põhja-pärnumaa rural municipality
+    - saarde
+    - ee-712
+    - '712'
+    - saarde rural municipality
+    - tori
+    - ee-809
+    - '809'
+    - tori rural municipality
+    - pärnu maakond
+    - pärnu county
+    - parnu
+  category: COUNTY

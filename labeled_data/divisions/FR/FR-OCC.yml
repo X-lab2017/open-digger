@@ -1,0 +1,62 @@
+name: Occitanie
+type: Division-1
+meta:
+  alpha2: FR-OCC
+  includes:
+    - ariège
+    - fr-09
+    - '09'
+    - ariège metropolitan department
+    - aude
+    - fr-11
+    - '11'
+    - aude metropolitan department
+    - aveyron
+    - fr-12
+    - '12'
+    - aveyron metropolitan department
+    - gard
+    - fr-30
+    - '30'
+    - gard metropolitan department
+    - gers
+    - fr-32
+    - '32'
+    - gers metropolitan department
+    - haute-garonne
+    - fr-31
+    - '31'
+    - haute-garonne metropolitan department
+    - hautes-pyrénées
+    - fr-65
+    - '65'
+    - hautes-pyrénées metropolitan department
+    - hérault
+    - fr-34
+    - '34'
+    - hérault metropolitan department
+    - lot
+    - fr-46
+    - '46'
+    - lot metropolitan department
+    - lozère
+    - fr-48
+    - '48'
+    - lozère metropolitan department
+    - occitanie
+    - fr-occ
+    - occ
+    - occitanie metropolitan region
+    - pyrénées-orientales
+    - fr-66
+    - '66'
+    - pyrénées-orientales metropolitan department
+    - tarn
+    - fr-81
+    - '81'
+    - tarn metropolitan department
+    - tarn-et-garonne
+    - fr-82
+    - '82'
+    - tarn-et-garonne metropolitan department
+  category: METROPOLITAN REGION

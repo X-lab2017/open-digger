@@ -1,0 +1,10 @@
+name: Lukovica
+type: Division-1
+meta:
+  alpha2: SI-068
+  includes:
+    - lukovica
+    - si-068
+    - '068'
+    - lukovica municipality
+  category: MUNICIPALITY

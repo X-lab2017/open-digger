@@ -1,0 +1,10 @@
+name: Bueng Kan
+type: Division-1
+meta:
+  alpha2: TH-38
+  includes:
+    - bueng kan
+    - th-38
+    - '38'
+    - bueng kan province
+  category: PROVINCE

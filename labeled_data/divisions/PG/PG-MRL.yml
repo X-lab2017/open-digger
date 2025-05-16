@@ -1,0 +1,10 @@
+name: Manus
+type: Division-1
+meta:
+  alpha2: PG-MRL
+  includes:
+    - manus
+    - pg-mrl
+    - mrl
+    - manus province
+  category: PROVINCE

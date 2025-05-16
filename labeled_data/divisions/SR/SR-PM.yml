@@ -1,0 +1,10 @@
+name: Paramaribo
+type: Division-1
+meta:
+  alpha2: SR-PM
+  includes:
+    - paramaribo
+    - sr-pm
+    - pm
+    - paramaribo district
+  category: DISTRICT

@@ -1,0 +1,13 @@
+name: Berne
+type: Division-1
+meta:
+  alpha2: CH-BE
+  includes:
+    - bern
+    - ch-be
+    - be
+    - bern canton
+    - berne
+    - berne canton
+    - canton of bern
+  category: CANTON

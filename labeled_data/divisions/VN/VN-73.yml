@@ -1,0 +1,11 @@
+name: Hậu Giang
+type: Division-1
+meta:
+  alpha2: VN-73
+  includes:
+    - hậu giang
+    - vn-73
+    - '73'
+    - hậu giang province
+    - hau giang
+  category: PROVINCE

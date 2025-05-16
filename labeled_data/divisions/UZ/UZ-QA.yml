@@ -1,0 +1,11 @@
+name: Qashqadaryo
+type: Division-1
+meta:
+  alpha2: UZ-QA
+  includes:
+    - qashqadaryo
+    - uz-qa
+    - qa
+    - qashqadaryo region
+    - qashqadaryo viloyati
+  category: REGION

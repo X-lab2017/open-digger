@@ -1,0 +1,10 @@
+name: San Salvador
+type: Division-1
+meta:
+  alpha2: BS-SS
+  includes:
+    - san salvador
+    - bs-ss
+    - ss
+    - san salvador district
+  category: DISTRICT

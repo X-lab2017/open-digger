@@ -1,0 +1,10 @@
+name: Nasarawa
+type: Division-1
+meta:
+  alpha2: NG-NA
+  includes:
+    - nasarawa
+    - ng-na
+    - na
+    - nasarawa state
+  category: STATE

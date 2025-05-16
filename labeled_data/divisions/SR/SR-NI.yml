@@ -1,0 +1,10 @@
+name: Nickerie
+type: Division-1
+meta:
+  alpha2: SR-NI
+  includes:
+    - nickerie
+    - sr-ni
+    - ni
+    - nickerie district
+  category: DISTRICT

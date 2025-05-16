@@ -1,0 +1,10 @@
+name: Dakhlet Nouâdhibou
+type: Division-1
+meta:
+  alpha2: MR-08
+  includes:
+    - dakhlet nouâdhibou
+    - mr-08
+    - '08'
+    - dakhlet nouâdhibou region
+  category: REGION

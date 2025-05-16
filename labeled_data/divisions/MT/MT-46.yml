@@ -1,0 +1,10 @@
+name: Rabat Malta
+type: Division-1
+meta:
+  alpha2: MT-46
+  includes:
+    - rabat malta
+    - mt-46
+    - '46'
+    - rabat malta local council
+  category: LOCAL COUNCIL

@@ -1,0 +1,11 @@
+name: São Paulo
+type: Division-1
+meta:
+  alpha2: BR-SP
+  includes:
+    - são paulo
+    - br-sp
+    - sp
+    - são paulo state
+    - state of são paulo
+  category: STATE

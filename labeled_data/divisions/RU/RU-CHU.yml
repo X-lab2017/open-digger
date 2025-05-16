@@ -1,0 +1,13 @@
+name: Čukotskij avtonomnyj okrug
+type: Division-1
+meta:
+  alpha2: RU-CHU
+  includes:
+    - chukotskiy avtonomnyy okrug
+    - ru-chu
+    - chu
+    - chukotskiy avtonomnyy okrug autonomous district
+    - čukotskij avtonomnyj okrug
+    - čukotskij avtonomnyj okrug autonomous district
+    - chukot
+  category: AUTONOMOUS DISTRICT

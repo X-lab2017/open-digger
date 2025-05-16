@@ -1,0 +1,10 @@
+name: Iwate
+type: Division-1
+meta:
+  alpha2: JP-03
+  includes:
+    - iwate
+    - jp-03
+    - '03'
+    - iwate prefecture
+  category: PREFECTURE

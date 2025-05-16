@@ -1,0 +1,10 @@
+name: Niassa
+type: Division-1
+meta:
+  alpha2: MZ-A
+  includes:
+    - niassa
+    - mz-a
+    - a
+    - niassa province
+  category: PROVINCE

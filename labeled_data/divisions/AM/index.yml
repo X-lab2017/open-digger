@@ -1,0 +1,86 @@
+name: Armenia
+type: Division-0
+meta:
+  alpha2: AM
+  includes:
+    - Armenia
+    - AM
+    - '051'
+    - the Republic of Armenia
+    - 亚美尼亚
+  name_full: the Republic of Armenia
+  name_zh: 亚美尼亚
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 31298
+    - year: 2020
+      quarter: 2
+      count: 34296
+    - year: 2020
+      quarter: 3
+      count: 36975
+    - year: 2020
+      quarter: 4
+      count: 39501
+    - year: 2021
+      quarter: 1
+      count: 42696
+    - year: 2021
+      quarter: 2
+      count: 45631
+    - year: 2021
+      quarter: 3
+      count: 48884
+    - year: 2021
+      quarter: 4
+      count: 52206
+    - year: 2022
+      quarter: 1
+      count: 56410
+    - year: 2022
+      quarter: 2
+      count: 64712
+    - year: 2022
+      quarter: 3
+      count: 67845
+    - year: 2022
+      quarter: 4
+      count: 75703
+    - year: 2023
+      quarter: 1
+      count: 81482
+    - year: 2023
+      quarter: 2
+      count: 86107
+    - year: 2023
+      quarter: 3
+      count: 90234
+    - year: 2023
+      quarter: 4
+      count: 93483
+    - year: 2024
+      quarter: 1
+      count: 97456
+    - year: 2024
+      quarter: 2
+      count: 101120
+    - year: 2024
+      quarter: 3
+      count: 104855
+    - year: 2024
+      quarter: 4
+      count: 108552
+data:
+  labels:
+    - AM-AG
+    - AM-AR
+    - AM-AV
+    - AM-ER
+    - AM-GR
+    - AM-KT
+    - AM-LO
+    - AM-SU
+    - AM-TV
+    - AM-VD
+    - AM-SH

@@ -1,0 +1,54 @@
+name: Cook Islands
+type: Division-0
+meta:
+  alpha2: CK
+  includes:
+    - Cook Islands
+    - CK
+    - '184'
+    - 库克群岛
+  name_full: Cook Islands
+  name_zh: 库克群岛
+  developers:
+    - year: 2021
+      quarter: 2
+      count: 102
+    - year: 2021
+      quarter: 4
+      count: 108
+    - year: 2022
+      quarter: 1
+      count: 114
+    - year: 2022
+      quarter: 2
+      count: 119
+    - year: 2022
+      quarter: 3
+      count: 129
+    - year: 2022
+      quarter: 4
+      count: 128
+    - year: 2023
+      quarter: 1
+      count: 135
+    - year: 2023
+      quarter: 2
+      count: 138
+    - year: 2023
+      quarter: 3
+      count: 142
+    - year: 2023
+      quarter: 4
+      count: 141
+    - year: 2024
+      quarter: 1
+      count: 147
+    - year: 2024
+      quarter: 2
+      count: 148
+    - year: 2024
+      quarter: 3
+      count: 157
+    - year: 2024
+      quarter: 4
+      count: 159

@@ -1,0 +1,10 @@
+name: Narok
+type: Division-1
+meta:
+  alpha2: KE-33
+  includes:
+    - narok
+    - ke-33
+    - '33'
+    - narok county
+  category: COUNTY

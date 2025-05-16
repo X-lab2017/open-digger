@@ -1,0 +1,10 @@
+name: Osilnica
+type: Division-1
+meta:
+  alpha2: SI-088
+  includes:
+    - osilnica
+    - si-088
+    - '088'
+    - osilnica municipality
+  category: MUNICIPALITY

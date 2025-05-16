@@ -1,0 +1,10 @@
+name: Central
+type: Division-1
+meta:
+  alpha2: SB-CE
+  includes:
+    - central
+    - sb-ce
+    - ce
+    - central province
+  category: PROVINCE

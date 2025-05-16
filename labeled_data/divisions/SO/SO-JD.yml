@@ -1,0 +1,10 @@
+name: Jubbada Dhexe
+type: Division-1
+meta:
+  alpha2: SO-JD
+  includes:
+    - jubbada dhexe
+    - so-jd
+    - jd
+    - jubbada dhexe region
+  category: REGION

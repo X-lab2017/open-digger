@@ -1,0 +1,10 @@
+name: Aïn Témouchent
+type: Division-1
+meta:
+  alpha2: DZ-46
+  includes:
+    - aïn témouchent
+    - dz-46
+    - '46'
+    - aïn témouchent province
+  category: PROVINCE

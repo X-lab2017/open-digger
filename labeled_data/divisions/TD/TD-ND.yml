@@ -1,0 +1,13 @@
+name: Ville de Ndjamena
+type: Division-1
+meta:
+  alpha2: TD-ND
+  includes:
+    - madīnat injamīnā
+    - td-nd
+    - nd
+    - madīnat injamīnā province
+    - ville de ndjamena
+    - ville de ndjamena province
+    - n'djamena
+  category: PROVINCE

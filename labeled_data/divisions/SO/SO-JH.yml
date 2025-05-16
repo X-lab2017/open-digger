@@ -1,0 +1,11 @@
+name: Jubbada Hoose
+type: Division-1
+meta:
+  alpha2: SO-JH
+  includes:
+    - jubbada hoose
+    - so-jh
+    - jh
+    - jubbada hoose region
+    - lower juba
+  category: REGION

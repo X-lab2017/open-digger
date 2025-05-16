@@ -1,0 +1,10 @@
+name: Rogašovci
+type: Division-1
+meta:
+  alpha2: SI-105
+  includes:
+    - rogašovci
+    - si-105
+    - '105'
+    - rogašovci municipality
+  category: MUNICIPALITY

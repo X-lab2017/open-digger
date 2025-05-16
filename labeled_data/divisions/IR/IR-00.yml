@@ -1,0 +1,11 @@
+name: Markazī
+type: Division-1
+meta:
+  alpha2: IR-00
+  includes:
+    - markazī
+    - ir-00
+    - '00'
+    - markazī province
+    - markazi province
+  category: PROVINCE

@@ -1,0 +1,16 @@
+name: Al Quds
+type: Division-1
+meta:
+  alpha2: IL-JM
+  includes:
+    - al quds
+    - il-jm
+    - jm
+    - al quds district
+    - el quds
+    - el quds district
+    - yerushalayim
+    - yerushalayim district
+    - jerusalem
+    - jerusalem district
+  category: DISTRICT

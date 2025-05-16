@@ -1,0 +1,10 @@
+name: Kəlbəcər
+type: Division-1
+meta:
+  alpha2: AZ-KAL
+  includes:
+    - kəlbəcər
+    - az-kal
+    - kal
+    - kəlbəcər rayon
+  category: RAYON

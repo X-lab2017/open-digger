@@ -1,0 +1,10 @@
+name: Sool
+type: Division-1
+meta:
+  alpha2: SO-SO
+  includes:
+    - sool
+    - so-so
+    - so
+    - sool region
+  category: REGION

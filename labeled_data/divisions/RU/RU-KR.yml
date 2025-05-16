@@ -1,0 +1,14 @@
+name: Kareliya
+type: Division-1
+meta:
+  alpha2: RU-KR
+  includes:
+    - karelija
+    - ru-kr
+    - kr
+    - karelija republic
+    - kareliya
+    - kareliya republic
+    - republic of karelia
+    - karelia
+  category: REPUBLIC

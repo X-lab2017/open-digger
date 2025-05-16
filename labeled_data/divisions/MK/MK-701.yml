@@ -1,0 +1,11 @@
+name: Kratovo
+type: Division-1
+meta:
+  alpha2: MK-701
+  includes:
+    - kratovo
+    - mk-701
+    - '701'
+    - kratovo municipality
+    - municipality of kratovo
+  category: MUNICIPALITY

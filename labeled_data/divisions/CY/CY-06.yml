@@ -1,0 +1,13 @@
+name: Keryneia
+type: Division-1
+meta:
+  alpha2: CY-06
+  includes:
+    - girne
+    - cy-06
+    - '06'
+    - girne district
+    - keryneia
+    - keryneia district
+    - kyrenia
+  category: DISTRICT

@@ -1,0 +1,10 @@
+name: Veraguas
+type: Division-1
+meta:
+  alpha2: PA-9
+  includes:
+    - veraguas
+    - pa-9
+    - '9'
+    - veraguas province
+  category: PROVINCE

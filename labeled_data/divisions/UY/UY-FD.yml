@@ -1,0 +1,10 @@
+name: Florida
+type: Division-1
+meta:
+  alpha2: UY-FD
+  includes:
+    - florida
+    - uy-fd
+    - fd
+    - florida department
+  category: DEPARTMENT

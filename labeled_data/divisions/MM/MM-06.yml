@@ -1,0 +1,11 @@
+name: Yangon
+type: Division-1
+meta:
+  alpha2: MM-06
+  includes:
+    - yangon
+    - mm-06
+    - '06'
+    - yangon region
+    - ရန်ကုန်တိုင်းဒေသကြီး
+  category: REGION

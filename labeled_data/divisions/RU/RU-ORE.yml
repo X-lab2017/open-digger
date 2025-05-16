@@ -1,0 +1,14 @@
+name: Orenburgskaya oblast'
+type: Division-1
+meta:
+  alpha2: RU-ORE
+  includes:
+    - orenburgskaja oblast'
+    - ru-ore
+    - ore
+    - orenburgskaja oblast' administrative region
+    - orenburgskaya oblast'
+    - orenburgskaya oblast' administrative region
+    - orenburg oblast
+    - orenburg
+  category: ADMINISTRATIVE REGION

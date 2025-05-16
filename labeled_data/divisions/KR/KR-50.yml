@@ -1,0 +1,12 @@
+name: Sejong
+type: Division-1
+meta:
+  alpha2: KR-50
+  includes:
+    - sejong
+    - kr-50
+    - '50'
+    - sejong special self-governing city
+    - sejong city
+    - sejong-si
+  category: SPECIAL SELF-GOVERNING CITY

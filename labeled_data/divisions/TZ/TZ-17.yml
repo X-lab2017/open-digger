@@ -1,0 +1,10 @@
+name: Mtwara
+type: Division-1
+meta:
+  alpha2: TZ-17
+  includes:
+    - mtwara
+    - tz-17
+    - '17'
+    - mtwara region
+  category: REGION

@@ -1,0 +1,10 @@
+name: Gilbert Islands
+type: Division-1
+meta:
+  alpha2: KI-G
+  includes:
+    - gilbert islands
+    - ki-g
+    - g
+    - gilbert islands group of islands (20 inhabited islands)
+  category: GROUP OF ISLANDS (20 INHABITED ISLANDS)

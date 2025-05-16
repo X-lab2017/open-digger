@@ -1,0 +1,10 @@
+name: Xaçmaz
+type: Division-1
+meta:
+  alpha2: AZ-XAC
+  includes:
+    - xaçmaz
+    - az-xac
+    - xac
+    - xaçmaz rayon
+  category: RAYON

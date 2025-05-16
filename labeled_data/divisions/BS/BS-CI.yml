@@ -1,0 +1,10 @@
+name: Cat Island
+type: Division-1
+meta:
+  alpha2: BS-CI
+  includes:
+    - cat island
+    - bs-ci
+    - ci
+    - cat island district
+  category: DISTRICT

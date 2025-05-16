@@ -1,0 +1,10 @@
+name: Comoé
+type: Division-1
+meta:
+  alpha2: CI-CM
+  includes:
+    - comoé
+    - ci-cm
+    - cm
+    - comoé district
+  category: DISTRICT

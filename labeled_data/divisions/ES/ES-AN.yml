@@ -1,0 +1,43 @@
+name: Andalucía
+type: Division-1
+meta:
+  alpha2: ES-AN
+  includes:
+    - almería
+    - es-al
+    - al
+    - almería province
+    - andalucía
+    - es-an
+    - an
+    - andalucía autonomous community
+    - cádiz
+    - es-ca
+    - ca
+    - cádiz province
+    - córdoba
+    - es-co
+    - co
+    - córdoba province
+    - granada
+    - es-gr
+    - gr
+    - granada province
+    - huelva
+    - es-h
+    - h
+    - huelva province
+    - jaén
+    - es-j
+    - j
+    - jaén province
+    - málaga
+    - es-ma
+    - ma
+    - málaga province
+    - sevilla
+    - es-se
+    - se
+    - sevilla province
+    - andalusia
+  category: AUTONOMOUS COMMUNITY

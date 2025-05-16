@@ -1,0 +1,10 @@
+name: Oaxaca
+type: Division-1
+meta:
+  alpha2: MX-OAX
+  includes:
+    - oaxaca
+    - mx-oax
+    - oax
+    - oaxaca state
+  category: STATE

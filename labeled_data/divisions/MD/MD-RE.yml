@@ -1,0 +1,10 @@
+name: Rezina
+type: Division-1
+meta:
+  alpha2: MD-RE
+  includes:
+    - rezina
+    - md-re
+    - re
+    - rezina district
+  category: DISTRICT

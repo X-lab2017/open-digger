@@ -1,0 +1,24 @@
+name: Nusa Tenggara
+type: Division-1
+meta:
+  alpha2: ID-NU
+  includes:
+    - bali
+    - id-ba
+    - ba
+    - bali province
+    - nusa tenggara
+    - id-nu
+    - nu
+    - nusa tenggara geographical unit
+    - nusa tenggara barat
+    - id-nb
+    - nb
+    - nusa tenggara barat province
+    - nusa tenggara timur
+    - id-nt
+    - nt
+    - nusa tenggara timur province
+    - west nusa tenggara
+    - east nusa tenggara
+  category: GEOGRAPHICAL UNIT

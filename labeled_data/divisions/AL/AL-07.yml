@@ -1,0 +1,10 @@
+name: Kukës
+type: Division-1
+meta:
+  alpha2: AL-07
+  includes:
+    - kukës
+    - al-07
+    - '07'
+    - kukës county
+  category: COUNTY

@@ -1,0 +1,12 @@
+name: Hwanghainamto
+type: Division-1
+meta:
+  alpha2: KP-05
+  includes:
+    - hwanghae-namdo
+    - kp-05
+    - '05'
+    - hwanghae-namdo province
+    - hwanghainamto
+    - hwanghainamto province
+  category: PROVINCE

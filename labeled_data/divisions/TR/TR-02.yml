@@ -1,0 +1,10 @@
+name: Adıyaman
+type: Division-1
+meta:
+  alpha2: TR-02
+  includes:
+    - adıyaman
+    - tr-02
+    - '02'
+    - adıyaman province
+  category: PROVINCE

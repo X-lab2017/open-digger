@@ -1,0 +1,10 @@
+name: Phrae
+type: Division-1
+meta:
+  alpha2: TH-54
+  includes:
+    - phrae
+    - th-54
+    - '54'
+    - phrae province
+  category: PROVINCE

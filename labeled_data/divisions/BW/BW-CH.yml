@@ -1,0 +1,10 @@
+name: Chobe
+type: Division-1
+meta:
+  alpha2: BW-CH
+  includes:
+    - chobe
+    - bw-ch
+    - ch
+    - chobe district
+  category: DISTRICT

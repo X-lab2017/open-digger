@@ -1,0 +1,10 @@
+name: Sanma
+type: Division-1
+meta:
+  alpha2: VU-SAM
+  includes:
+    - sanma
+    - vu-sam
+    - sam
+    - sanma province
+  category: PROVINCE

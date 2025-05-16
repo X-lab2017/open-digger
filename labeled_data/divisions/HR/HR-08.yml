@@ -1,0 +1,12 @@
+name: Primorsko-goranska županija
+type: Division-1
+meta:
+  alpha2: HR-08
+  includes:
+    - primorsko-goranska županija
+    - hr-08
+    - '08'
+    - primorsko-goranska županija county
+    - primorje-gorski
+    - primorje-gorski kotar county
+  category: COUNTY

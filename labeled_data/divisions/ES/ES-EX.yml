@@ -1,0 +1,18 @@
+name: Extremadura
+type: Division-1
+meta:
+  alpha2: ES-EX
+  includes:
+    - badajoz
+    - es-ba
+    - ba
+    - badajoz province
+    - cáceres
+    - es-cc
+    - cc
+    - cáceres province
+    - extremadura
+    - es-ex
+    - ex
+    - extremadura autonomous community
+  category: AUTONOMOUS COMMUNITY

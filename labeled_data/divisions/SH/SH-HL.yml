@@ -1,0 +1,10 @@
+name: Saint Helena
+type: Division-1
+meta:
+  alpha2: SH-HL
+  includes:
+    - saint helena
+    - sh-hl
+    - hl
+    - saint helena geographical entity
+  category: GEOGRAPHICAL ENTITY

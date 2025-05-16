@@ -1,0 +1,10 @@
+name: Rosoman
+type: Division-1
+meta:
+  alpha2: MK-107
+  includes:
+    - rosoman
+    - mk-107
+    - '107'
+    - rosoman municipality
+  category: MUNICIPALITY

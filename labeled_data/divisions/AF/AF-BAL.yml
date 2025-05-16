@@ -1,0 +1,10 @@
+name: Balkh
+type: Division-1
+meta:
+  alpha2: AF-BAL
+  includes:
+    - balkh
+    - af-bal
+    - bal
+    - balkh province
+  category: PROVINCE

@@ -1,0 +1,11 @@
+name: Khorāsān-e Jonūbī
+type: Division-1
+meta:
+  alpha2: IR-29
+  includes:
+    - khorāsān-e jonūbī
+    - ir-29
+    - '29'
+    - khorāsān-e jonūbī province
+    - south khorasan province
+  category: PROVINCE

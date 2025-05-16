@@ -1,0 +1,12 @@
+name: Pemba South
+type: Division-1
+meta:
+  alpha2: TZ-10
+  includes:
+    - kusini pemba
+    - tz-10
+    - '10'
+    - kusini pemba region
+    - pemba south
+    - pemba south region
+  category: REGION

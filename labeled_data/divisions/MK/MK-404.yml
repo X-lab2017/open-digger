@@ -1,0 +1,10 @@
+name: Vasilevo
+type: Division-1
+meta:
+  alpha2: MK-404
+  includes:
+    - vasilevo
+    - mk-404
+    - '404'
+    - vasilevo municipality
+  category: MUNICIPALITY

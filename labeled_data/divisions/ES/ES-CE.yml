@@ -1,0 +1,10 @@
+name: Ceuta
+type: Division-1
+meta:
+  alpha2: ES-CE
+  includes:
+    - ceuta
+    - es-ce
+    - ce
+    - ceuta autonomous city in north africa
+  category: AUTONOMOUS CITY IN NORTH AFRICA

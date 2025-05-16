@@ -1,0 +1,12 @@
+name: Bắc Ninh
+type: Division-1
+meta:
+  alpha2: VN-56
+  includes:
+    - bắc ninh
+    - vn-56
+    - '56'
+    - bắc ninh province
+    - bac ninh
+    - bac ninh province
+  category: PROVINCE

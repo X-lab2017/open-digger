@@ -1,0 +1,28 @@
+name: Catalunya
+type: Division-1
+meta:
+  alpha2: ES-CT
+  includes:
+    - barcelona
+    - es-b
+    - b
+    - barcelona province
+    - catalunya
+    - es-ct
+    - ct
+    - catalunya autonomous community
+    - girona
+    - es-gi
+    - gi
+    - girona province
+    - lleida
+    - es-l
+    - l
+    - lleida province
+    - tarragona
+    - es-t
+    - t
+    - tarragona province
+    - catalonia
+    - cataluña
+  category: AUTONOMOUS COMMUNITY

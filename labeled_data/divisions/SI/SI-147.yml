@@ -1,0 +1,10 @@
+name: Žiri
+type: Division-1
+meta:
+  alpha2: SI-147
+  includes:
+    - žiri
+    - si-147
+    - '147'
+    - žiri municipality
+  category: MUNICIPALITY

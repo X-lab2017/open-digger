@@ -1,0 +1,16 @@
+name: Macau SAR
+type: Division-1
+meta:
+  alpha2: CN-MO
+  includes:
+    - aomen tebiexingzhengqu
+    - cn-mo
+    - mo
+    - aomen tebiexingzhengqu special administrative region
+    - macao sar
+    - macao sar special administrative region
+    - macau sar
+    - macau sar special administrative region
+    - 澳门
+    - 澳门特别行政区
+  category: SPECIAL ADMINISTRATIVE REGION

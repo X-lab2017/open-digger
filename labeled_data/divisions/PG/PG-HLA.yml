@@ -1,0 +1,10 @@
+name: Hela
+type: Division-1
+meta:
+  alpha2: PG-HLA
+  includes:
+    - hela
+    - pg-hla
+    - hla
+    - hela province
+  category: PROVINCE

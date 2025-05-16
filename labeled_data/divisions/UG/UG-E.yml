@@ -1,0 +1,159 @@
+name: Eastern
+type: Division-1
+meta:
+  alpha2: UG-E
+  includes:
+    - amuria
+    - ug-216
+    - '216'
+    - amuria district
+    - budaka
+    - ug-217
+    - '217'
+    - budaka district
+    - bududa
+    - ug-218
+    - '218'
+    - bududa district
+    - bugiri
+    - ug-201
+    - '201'
+    - bugiri district
+    - bugweri
+    - ug-235
+    - '235'
+    - bugweri district
+    - bukedea
+    - ug-219
+    - '219'
+    - bukedea district
+    - bukwo
+    - ug-220
+    - '220'
+    - bukwo district
+    - bulambuli
+    - ug-225
+    - '225'
+    - bulambuli district
+    - busia
+    - ug-202
+    - '202'
+    - busia district
+    - butaleja
+    - ug-221
+    - '221'
+    - butaleja district
+    - butebo
+    - ug-233
+    - '233'
+    - butebo district
+    - buyende
+    - ug-226
+    - '226'
+    - buyende district
+    - eastern
+    - ug-e
+    - e
+    - eastern geographical region
+    - iganga
+    - ug-203
+    - '203'
+    - iganga district
+    - jinja
+    - ug-204
+    - '204'
+    - jinja district
+    - kaberamaido
+    - ug-213
+    - '213'
+    - kaberamaido district
+    - kalaki
+    - ug-237
+    - '237'
+    - kalaki district
+    - kaliro
+    - ug-222
+    - '222'
+    - kaliro district
+    - kamuli
+    - ug-205
+    - '205'
+    - kamuli district
+    - kapchorwa
+    - ug-206
+    - '206'
+    - kapchorwa district
+    - kapelebyong
+    - ug-236
+    - '236'
+    - kapelebyong district
+    - katakwi
+    - ug-207
+    - '207'
+    - katakwi district
+    - kibuku
+    - ug-227
+    - '227'
+    - kibuku district
+    - kumi
+    - ug-208
+    - '208'
+    - kumi district
+    - kween
+    - ug-228
+    - '228'
+    - kween district
+    - luuka
+    - ug-229
+    - '229'
+    - luuka district
+    - manafwa
+    - ug-223
+    - '223'
+    - manafwa district
+    - mayuge
+    - ug-214
+    - '214'
+    - mayuge district
+    - mbale
+    - ug-209
+    - '209'
+    - mbale district
+    - namayingo
+    - ug-230
+    - '230'
+    - namayingo district
+    - namisindwa
+    - ug-234
+    - '234'
+    - namisindwa district
+    - namutumba
+    - ug-224
+    - '224'
+    - namutumba district
+    - ngora
+    - ug-231
+    - '231'
+    - ngora district
+    - pallisa
+    - ug-210
+    - '210'
+    - pallisa district
+    - serere
+    - ug-232
+    - '232'
+    - serere district
+    - sironko
+    - ug-215
+    - '215'
+    - sironko district
+    - soroti
+    - ug-211
+    - '211'
+    - soroti district
+    - tororo
+    - ug-212
+    - '212'
+    - tororo district
+    - eastern region
+  category: GEOGRAPHICAL REGION

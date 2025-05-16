@@ -1,0 +1,12 @@
+name: Asyūţ
+type: Division-1
+meta:
+  alpha2: EG-AST
+  includes:
+    - asyūţ
+    - eg-ast
+    - ast
+    - asyūţ governorate
+    - assiut governorate
+    - asyut
+  category: GOVERNORATE

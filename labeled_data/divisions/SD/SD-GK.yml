@@ -1,0 +1,12 @@
+name: West Kordofan
+type: Division-1
+meta:
+  alpha2: SD-GK
+  includes:
+    - gharb kurdufān
+    - sd-gk
+    - gk
+    - gharb kurdufān state
+    - west kordofan
+    - west kordofan state
+  category: STATE

@@ -1,0 +1,10 @@
+name: North Western
+type: Division-1
+meta:
+  alpha2: SL-NW
+  includes:
+    - north western
+    - sl-nw
+    - nw
+    - north western province
+  category: PROVINCE

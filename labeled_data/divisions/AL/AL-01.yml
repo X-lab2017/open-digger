@@ -1,0 +1,10 @@
+name: Berat
+type: Division-1
+meta:
+  alpha2: AL-01
+  includes:
+    - berat
+    - al-01
+    - '01'
+    - berat county
+  category: COUNTY

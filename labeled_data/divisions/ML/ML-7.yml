@@ -1,0 +1,10 @@
+name: Gao
+type: Division-1
+meta:
+  alpha2: ML-7
+  includes:
+    - gao
+    - ml-7
+    - '7'
+    - gao region
+  category: REGION

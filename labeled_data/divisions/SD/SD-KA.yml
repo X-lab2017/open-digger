@@ -1,0 +1,12 @@
+name: Kassalā
+type: Division-1
+meta:
+  alpha2: SD-KA
+  includes:
+    - kassala
+    - sd-ka
+    - ka
+    - kassala state
+    - kassalā
+    - kassalā state
+  category: STATE

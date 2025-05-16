@@ -1,0 +1,12 @@
+name: Río Negro
+type: Division-1
+meta:
+  alpha2: AR-R
+  includes:
+    - río negro
+    - ar-r
+    - r
+    - río negro province
+    - rio negro
+    - rn
+  category: PROVINCE

@@ -1,0 +1,11 @@
+name: Lunda-Norte
+type: Division-1
+meta:
+  alpha2: AO-LNO
+  includes:
+    - lunda-norte
+    - ao-lno
+    - lno
+    - lunda-norte province
+    - lunda norte province
+  category: PROVINCE

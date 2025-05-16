@@ -1,0 +1,13 @@
+name: Antsiranana
+type: Division-1
+meta:
+  alpha2: MG-D
+  includes:
+    - antsiranana
+    - mg-d
+    - d
+    - antsiranana province
+    - diana
+    - sava
+    - sofia
+  category: PROVINCE

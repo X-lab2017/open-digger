@@ -1,0 +1,14 @@
+name: Islamabad
+type: Division-1
+meta:
+  alpha2: PK-IS
+  includes:
+    - islamabad
+    - pk-is
+    - is
+    - islamabad federal capital territory
+    - islāmābād
+    - islāmābād federal capital territory
+    - islamabad capital territory
+    - federally administered tribal areas
+  category: FEDERAL CAPITAL TERRITORY

@@ -1,0 +1,10 @@
+name: Sinoe
+type: Division-1
+meta:
+  alpha2: LR-SI
+  includes:
+    - sinoe
+    - lr-si
+    - si
+    - sinoe county
+  category: COUNTY

@@ -1,0 +1,12 @@
+name: Bihor
+type: Division-1
+meta:
+  alpha2: RO-BH
+  includes:
+    - bihor
+    - ro-bh
+    - bh
+    - bihor department
+    - județul bihor
+    - bihor county
+  category: DEPARTMENT

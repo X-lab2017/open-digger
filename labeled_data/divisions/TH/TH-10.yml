@@ -1,0 +1,14 @@
+name: Krung Thep Maha Nakhon
+type: Division-1
+meta:
+  alpha2: TH-10
+  includes:
+    - krung thep maha nakhon
+    - th-10
+    - '10'
+    - krung thep maha nakhon metropolitan administration
+    - bangkok
+    - bangkok metropolitan administration
+    - กรุงเทพมหานคร
+    - bangkok city
+  category: METROPOLITAN ADMINISTRATION

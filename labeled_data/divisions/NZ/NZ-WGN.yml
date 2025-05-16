@@ -1,0 +1,13 @@
+name: Greater Wellington
+type: Division-1
+meta:
+  alpha2: NZ-WGN
+  includes:
+    - greater wellington
+    - nz-wgn
+    - wgn
+    - greater wellington region
+    - te pane matua taiao
+    - te pane matua taiao region
+    - wellington
+  category: REGION

@@ -1,0 +1,12 @@
+name: Cortés
+type: Division-1
+meta:
+  alpha2: HN-CR
+  includes:
+    - cortés
+    - hn-cr
+    - cr
+    - cortés department
+    - hncr
+    - departamento de cortés
+  category: DEPARTMENT

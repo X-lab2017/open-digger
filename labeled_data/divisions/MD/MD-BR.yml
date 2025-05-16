@@ -1,0 +1,10 @@
+name: Briceni
+type: Division-1
+meta:
+  alpha2: MD-BR
+  includes:
+    - briceni
+    - md-br
+    - br
+    - briceni district
+  category: DISTRICT

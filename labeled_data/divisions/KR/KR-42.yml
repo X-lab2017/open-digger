@@ -1,0 +1,13 @@
+name: Gangwon-teukbyeoljachido
+type: Division-1
+meta:
+  alpha2: KR-42
+  includes:
+    - gangwon-teukbyeoljachido
+    - kr-42
+    - '42'
+    - gangwon-teukbyeoljachido special self-governing province
+    - gangwon
+    - gangwon special self-governing province
+    - gangwon-do
+  category: SPECIAL SELF-GOVERNING PROVINCE

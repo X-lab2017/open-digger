@@ -1,0 +1,10 @@
+name: Kericho
+type: Division-1
+meta:
+  alpha2: KE-12
+  includes:
+    - kericho
+    - ke-12
+    - '12'
+    - kericho county
+  category: COUNTY

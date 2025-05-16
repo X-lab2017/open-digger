@@ -1,0 +1,10 @@
+name: Pando
+type: Division-1
+meta:
+  alpha2: BO-N
+  includes:
+    - pando
+    - bo-n
+    - 'n'
+    - pando department
+  category: DEPARTMENT

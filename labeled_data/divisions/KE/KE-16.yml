@@ -1,0 +1,10 @@
+name: Kisii
+type: Division-1
+meta:
+  alpha2: KE-16
+  includes:
+    - kisii
+    - ke-16
+    - '16'
+    - kisii county
+  category: COUNTY

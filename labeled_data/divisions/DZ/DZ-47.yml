@@ -1,0 +1,12 @@
+name: Ghardaïa
+type: Division-1
+meta:
+  alpha2: DZ-47
+  includes:
+    - ghardaïa
+    - dz-47
+    - '47'
+    - ghardaïa province
+    - ghardaia
+    - ghardaia province
+  category: PROVINCE

@@ -1,0 +1,11 @@
+name: Bình Phước
+type: Division-1
+meta:
+  alpha2: VN-58
+  includes:
+    - bình phước
+    - vn-58
+    - '58'
+    - bình phước province
+    - binh phuoc
+  category: PROVINCE

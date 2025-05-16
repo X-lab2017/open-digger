@@ -1,0 +1,10 @@
+name: La Gare
+type: Division-1
+meta:
+  alpha2: MC-GA
+  includes:
+    - la gare
+    - mc-ga
+    - ga
+    - la gare quarter
+  category: QUARTER

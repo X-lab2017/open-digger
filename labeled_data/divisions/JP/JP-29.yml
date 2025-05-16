@@ -1,0 +1,10 @@
+name: Nara
+type: Division-1
+meta:
+  alpha2: JP-29
+  includes:
+    - nara
+    - jp-29
+    - '29'
+    - nara prefecture
+  category: PREFECTURE

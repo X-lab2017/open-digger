@@ -1,0 +1,11 @@
+name: Rio Grande do Sul
+type: Division-1
+meta:
+  alpha2: BR-RS
+  includes:
+    - rio grande do sul
+    - br-rs
+    - rs
+    - rio grande do sul state
+    - state of rio grande do sul
+  category: STATE

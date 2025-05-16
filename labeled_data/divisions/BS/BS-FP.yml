@@ -1,0 +1,11 @@
+name: City of Freeport
+type: Division-1
+meta:
+  alpha2: BS-FP
+  includes:
+    - city of freeport
+    - bs-fp
+    - fp
+    - city of freeport district
+    - freeport
+  category: DISTRICT

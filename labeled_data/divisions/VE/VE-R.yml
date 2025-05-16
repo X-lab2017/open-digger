@@ -1,0 +1,11 @@
+name: Sucre
+type: Division-1
+meta:
+  alpha2: VE-R
+  includes:
+    - sucre
+    - ve-r
+    - r
+    - sucre state
+    - su
+  category: STATE

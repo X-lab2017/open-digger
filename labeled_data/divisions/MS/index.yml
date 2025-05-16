@@ -1,0 +1,12 @@
+name: Montserrat
+type: Division-0
+meta:
+  alpha2: MS
+  includes:
+    - Montserrat
+    - MS
+    - '500'
+    - 蒙特塞拉特
+  name_full: Montserrat
+  name_zh: 蒙特塞拉特
+  developers: []

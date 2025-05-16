@@ -1,0 +1,11 @@
+name: Ar Raqqah
+type: Division-1
+meta:
+  alpha2: SY-RA
+  includes:
+    - ar raqqah
+    - sy-ra
+    - ra
+    - ar raqqah province
+    - raqqa governorate
+  category: PROVINCE

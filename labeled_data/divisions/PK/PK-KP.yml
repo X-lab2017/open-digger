@@ -1,0 +1,12 @@
+name: Khyber Pakhtunkhwa
+type: Division-1
+meta:
+  alpha2: PK-KP
+  includes:
+    - khaībar pakhtūnkhwā
+    - pk-kp
+    - kp
+    - khaībar pakhtūnkhwā province
+    - khyber pakhtunkhwa
+    - khyber pakhtunkhwa province
+  category: PROVINCE

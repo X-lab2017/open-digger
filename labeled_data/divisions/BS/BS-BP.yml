@@ -1,0 +1,10 @@
+name: Black Point
+type: Division-1
+meta:
+  alpha2: BS-BP
+  includes:
+    - black point
+    - bs-bp
+    - bp
+    - black point district
+  category: DISTRICT

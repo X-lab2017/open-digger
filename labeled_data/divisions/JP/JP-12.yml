@@ -1,0 +1,12 @@
+name: Tiba
+type: Division-1
+meta:
+  alpha2: JP-12
+  includes:
+    - chiba
+    - jp-12
+    - '12'
+    - chiba prefecture
+    - tiba
+    - tiba prefecture
+  category: PREFECTURE

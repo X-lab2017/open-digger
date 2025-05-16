@@ -1,0 +1,10 @@
+name: Nanumea
+type: Division-1
+meta:
+  alpha2: TV-NMA
+  includes:
+    - nanumea
+    - tv-nma
+    - nma
+    - nanumea island council
+  category: ISLAND COUNCIL

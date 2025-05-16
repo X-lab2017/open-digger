@@ -1,0 +1,10 @@
+name: Xankəndi
+type: Division-1
+meta:
+  alpha2: AZ-XA
+  includes:
+    - xankəndi
+    - az-xa
+    - xa
+    - xankəndi municipality
+  category: MUNICIPALITY

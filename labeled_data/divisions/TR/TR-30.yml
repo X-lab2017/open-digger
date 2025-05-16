@@ -1,0 +1,11 @@
+name: Hakkâri
+type: Division-1
+meta:
+  alpha2: TR-30
+  includes:
+    - hakkâri
+    - tr-30
+    - '30'
+    - hakkâri province
+    - hakkari
+  category: PROVINCE

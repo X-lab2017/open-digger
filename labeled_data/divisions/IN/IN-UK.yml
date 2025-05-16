@@ -1,0 +1,10 @@
+name: Uttarākhand
+type: Division-1
+meta:
+  alpha2: IN-UK
+  includes:
+    - uttarākhand
+    - in-uk
+    - uk
+    - uttarākhand state
+  category: STATE

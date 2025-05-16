@@ -1,0 +1,94 @@
+name: Lao People's Democratic Republic
+type: Division-0
+meta:
+  alpha2: LA
+  includes:
+    - Lao People's Democratic Republic
+    - LA
+    - '418'
+    - the Lao People's Democratic Republic
+    - 老挝
+    - Laos
+  name_full: the Lao People's Democratic Republic
+  name_zh: 老挝
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 5787
+    - year: 2020
+      quarter: 2
+      count: 6432
+    - year: 2020
+      quarter: 3
+      count: 7180
+    - year: 2020
+      quarter: 4
+      count: 7909
+    - year: 2021
+      quarter: 1
+      count: 8529
+    - year: 2021
+      quarter: 2
+      count: 9289
+    - year: 2021
+      quarter: 3
+      count: 10108
+    - year: 2021
+      quarter: 4
+      count: 11085
+    - year: 2022
+      quarter: 1
+      count: 12090
+    - year: 2022
+      quarter: 2
+      count: 12968
+    - year: 2022
+      quarter: 3
+      count: 13830
+    - year: 2022
+      quarter: 4
+      count: 14671
+    - year: 2023
+      quarter: 1
+      count: 15529
+    - year: 2023
+      quarter: 2
+      count: 16739
+    - year: 2023
+      quarter: 3
+      count: 18248
+    - year: 2023
+      quarter: 4
+      count: 19945
+    - year: 2024
+      quarter: 1
+      count: 23509
+    - year: 2024
+      quarter: 2
+      count: 22041
+    - year: 2024
+      quarter: 3
+      count: 23246
+    - year: 2024
+      quarter: 4
+      count: 24628
+data:
+  labels:
+    - LA-AT
+    - LA-BK
+    - LA-BL
+    - LA-CH
+    - LA-HO
+    - LA-KH
+    - LA-LM
+    - LA-LP
+    - LA-OU
+    - LA-PH
+    - LA-SL
+    - LA-SV
+    - LA-VT
+    - LA-VI
+    - LA-XA
+    - LA-XS
+    - LA-XI
+    - LA-XE

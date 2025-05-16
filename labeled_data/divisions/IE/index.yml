@@ -1,0 +1,78 @@
+name: Ireland
+type: Division-0
+meta:
+  alpha2: IE
+  includes:
+    - Ireland
+    - IE
+    - '372'
+    - 爱尔兰
+  name_full: Ireland
+  name_zh: 爱尔兰
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 145859
+    - year: 2020
+      quarter: 2
+      count: 156763
+    - year: 2020
+      quarter: 3
+      count: 165544
+    - year: 2020
+      quarter: 4
+      count: 175999
+    - year: 2021
+      quarter: 1
+      count: 187690
+    - year: 2021
+      quarter: 2
+      count: 196617
+    - year: 2021
+      quarter: 3
+      count: 204898
+    - year: 2021
+      quarter: 4
+      count: 215097
+    - year: 2022
+      quarter: 1
+      count: 228094
+    - year: 2022
+      quarter: 2
+      count: 239057
+    - year: 2022
+      quarter: 3
+      count: 249892
+    - year: 2022
+      quarter: 4
+      count: 261778
+    - year: 2023
+      quarter: 1
+      count: 275288
+    - year: 2023
+      quarter: 2
+      count: 288412
+    - year: 2023
+      quarter: 3
+      count: 299801
+    - year: 2023
+      quarter: 4
+      count: 314276
+    - year: 2024
+      quarter: 1
+      count: 330765
+    - year: 2024
+      quarter: 2
+      count: 343418
+    - year: 2024
+      quarter: 3
+      count: 356095
+    - year: 2024
+      quarter: 4
+      count: 371670
+data:
+  labels:
+    - IE-U
+    - IE-M
+    - IE-L
+    - IE-C

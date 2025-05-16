@@ -1,0 +1,14 @@
+name: South Ari Atoll
+type: Division-1
+meta:
+  alpha2: MV-00
+  includes:
+    - ariatholhu dhekunuburi
+    - mv-00
+    - '00'
+    - ariatholhu dhekunuburi administrative atoll
+    - alifu dhaalu
+    - alifu dhaalu administrative atoll
+    - south ari atoll
+    - south ari atoll administrative atoll
+  category: ADMINISTRATIVE ATOLL

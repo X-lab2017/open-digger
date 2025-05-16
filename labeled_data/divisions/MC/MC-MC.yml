@@ -1,0 +1,10 @@
+name: Monte-Carlo
+type: Division-1
+meta:
+  alpha2: MC-MC
+  includes:
+    - monte-carlo
+    - mc-mc
+    - mc
+    - monte-carlo quarter
+  category: QUARTER

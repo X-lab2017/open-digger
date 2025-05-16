@@ -1,0 +1,10 @@
+name: Brazzaville
+type: Division-1
+meta:
+  alpha2: CG-BZV
+  includes:
+    - brazzaville
+    - cg-bzv
+    - bzv
+    - brazzaville department
+  category: DEPARTMENT

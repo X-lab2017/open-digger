@@ -1,0 +1,10 @@
+name: Odranci
+type: Division-1
+meta:
+  alpha2: SI-086
+  includes:
+    - odranci
+    - si-086
+    - '086'
+    - odranci municipality
+  category: MUNICIPALITY

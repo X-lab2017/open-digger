@@ -1,0 +1,10 @@
+name: Essequibo Islands-West Demerara
+type: Division-1
+meta:
+  alpha2: GY-ES
+  includes:
+    - essequibo islands-west demerara
+    - gy-es
+    - es
+    - essequibo islands-west demerara region
+  category: REGION

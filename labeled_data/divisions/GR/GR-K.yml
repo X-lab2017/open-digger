@@ -1,0 +1,11 @@
+name: Vóreio Aigaío
+type: Division-1
+meta:
+  alpha2: GR-K
+  includes:
+    - vóreio aigaío
+    - gr-k
+    - k
+    - vóreio aigaío administrative region
+    - northern aegean
+  category: ADMINISTRATIVE REGION

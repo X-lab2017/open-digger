@@ -1,0 +1,10 @@
+name: Škocjan
+type: Division-1
+meta:
+  alpha2: SI-121
+  includes:
+    - škocjan
+    - si-121
+    - '121'
+    - škocjan municipality
+  category: MUNICIPALITY

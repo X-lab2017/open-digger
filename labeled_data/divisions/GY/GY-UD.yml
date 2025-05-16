@@ -1,0 +1,10 @@
+name: Upper Demerara-Berbice
+type: Division-1
+meta:
+  alpha2: GY-UD
+  includes:
+    - upper demerara-berbice
+    - gy-ud
+    - ud
+    - upper demerara-berbice region
+  category: REGION

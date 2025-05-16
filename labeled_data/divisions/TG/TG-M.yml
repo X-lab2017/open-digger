@@ -1,0 +1,11 @@
+name: Maritime
+type: Division-1
+meta:
+  alpha2: TG-M
+  includes:
+    - maritime
+    - tg-m
+    - m
+    - maritime region
+    - région maritime
+  category: REGION

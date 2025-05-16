@@ -1,0 +1,10 @@
+name: Ngeremlengui
+type: Division-1
+meta:
+  alpha2: PW-227
+  includes:
+    - ngeremlengui
+    - pw-227
+    - '227'
+    - ngeremlengui state
+  category: STATE

@@ -1,0 +1,10 @@
+name: Yala
+type: Division-1
+meta:
+  alpha2: TH-95
+  includes:
+    - yala
+    - th-95
+    - '95'
+    - yala province
+  category: PROVINCE

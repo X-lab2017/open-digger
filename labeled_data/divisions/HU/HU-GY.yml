@@ -1,0 +1,10 @@
+name: Győr
+type: Division-1
+meta:
+  alpha2: HU-GY
+  includes:
+    - győr
+    - hu-gy
+    - gy
+    - győr city with county rights
+  category: CITY WITH COUNTY RIGHTS

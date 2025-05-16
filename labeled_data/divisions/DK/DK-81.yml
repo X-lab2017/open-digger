@@ -1,0 +1,11 @@
+name: Nordjylland
+type: Division-1
+meta:
+  alpha2: DK-81
+  includes:
+    - nordjylland
+    - dk-81
+    - '81'
+    - nordjylland region
+    - north denmark region
+  category: REGION

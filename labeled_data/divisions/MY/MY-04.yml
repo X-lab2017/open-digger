@@ -1,0 +1,11 @@
+name: Melaka
+type: Division-1
+meta:
+  alpha2: MY-04
+  includes:
+    - melaka
+    - my-04
+    - '04'
+    - melaka state
+    - malacca
+  category: STATE

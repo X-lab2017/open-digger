@@ -1,0 +1,13 @@
+name: Mazowieckie
+type: Division-1
+meta:
+  alpha2: PL-14
+  includes:
+    - mazowieckie
+    - pl-14
+    - '14'
+    - mazowieckie voivodship
+    - masovian voivodeship
+    - województwo mazowieckie
+    - mz
+  category: VOIVODSHIP

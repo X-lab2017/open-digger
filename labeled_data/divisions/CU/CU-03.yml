@@ -1,0 +1,11 @@
+name: La Habana
+type: Division-1
+meta:
+  alpha2: CU-03
+  includes:
+    - la habana
+    - cu-03
+    - '03'
+    - la habana province
+    - havana
+  category: PROVINCE

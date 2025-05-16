@@ -1,0 +1,26 @@
+name: Sylhet
+type: Division-1
+meta:
+  alpha2: BD-G
+  includes:
+    - habiganj
+    - bd-20
+    - '20'
+    - habiganj district
+    - moulvibazar
+    - bd-38
+    - '38'
+    - moulvibazar district
+    - sunamganj
+    - bd-61
+    - '61'
+    - sunamganj district
+    - sylhet
+    - bd-g
+    - g
+    - sylhet division
+    - bd-60
+    - '60'
+    - sylhet district
+    - সিলেট বিভাগ
+  category: DIVISION

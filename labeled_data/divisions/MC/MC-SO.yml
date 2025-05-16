@@ -1,0 +1,10 @@
+name: La Source
+type: Division-1
+meta:
+  alpha2: MC-SO
+  includes:
+    - la source
+    - mc-so
+    - so
+    - la source quarter
+  category: QUARTER

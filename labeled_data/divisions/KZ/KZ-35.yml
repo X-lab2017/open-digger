@@ -1,0 +1,16 @@
+name: Karagandinskaya oblast'
+type: Division-1
+meta:
+  alpha2: KZ-35
+  includes:
+    - karagandinskaja oblast'
+    - kz-35
+    - '35'
+    - karagandinskaja oblast' region
+    - karagandinskaya oblast'
+    - karagandinskaya oblast' region
+    - qaraghandy oblysy
+    - qaraghandy oblysy region
+    - karaganda region
+    - qarağandı oblısı
+  category: REGION

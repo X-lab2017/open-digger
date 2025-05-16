@@ -1,0 +1,12 @@
+name: Wilayah Persekutuan Labuan
+type: Division-1
+meta:
+  alpha2: MY-15
+  includes:
+    - wilayah persekutuan labuan
+    - my-15
+    - '15'
+    - wilayah persekutuan labuan federal territory
+    - labuan
+    - labuan federal territory
+  category: FEDERAL TERRITORY

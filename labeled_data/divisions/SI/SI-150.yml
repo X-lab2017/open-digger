@@ -1,0 +1,10 @@
+name: Bloke
+type: Division-1
+meta:
+  alpha2: SI-150
+  includes:
+    - bloke
+    - si-150
+    - '150'
+    - bloke municipality
+  category: MUNICIPALITY

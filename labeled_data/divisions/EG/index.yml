@@ -1,0 +1,102 @@
+name: Egypt
+type: Division-0
+meta:
+  alpha2: EG
+  includes:
+    - Egypt
+    - EG
+    - '818'
+    - the Arab Republic of Egypt
+    - 埃及
+  name_full: the Arab Republic of Egypt
+  name_zh: 埃及
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 236751
+    - year: 2020
+      quarter: 2
+      count: 269768
+    - year: 2020
+      quarter: 3
+      count: 297793
+    - year: 2020
+      quarter: 4
+      count: 329651
+    - year: 2021
+      quarter: 1
+      count: 360922
+    - year: 2021
+      quarter: 2
+      count: 393395
+    - year: 2021
+      quarter: 3
+      count: 427799
+    - year: 2021
+      quarter: 4
+      count: 464402
+    - year: 2022
+      quarter: 1
+      count: 503619
+    - year: 2022
+      quarter: 2
+      count: 542611
+    - year: 2022
+      quarter: 3
+      count: 591402
+    - year: 2022
+      quarter: 4
+      count: 640531
+    - year: 2023
+      quarter: 1
+      count: 687838
+    - year: 2023
+      quarter: 2
+      count: 737955
+    - year: 2023
+      quarter: 3
+      count: 792790
+    - year: 2023
+      quarter: 4
+      count: 841653
+    - year: 2024
+      quarter: 1
+      count: 892496
+    - year: 2024
+      quarter: 2
+      count: 941000
+    - year: 2024
+      quarter: 3
+      count: 994433
+    - year: 2024
+      quarter: 4
+      count: 1061997
+data:
+  labels:
+    - EG-DK
+    - EG-BA
+    - EG-BH
+    - EG-FYM
+    - EG-GH
+    - EG-ALX
+    - EG-IS
+    - EG-GZ
+    - EG-MN
+    - EG-MNF
+    - EG-KB
+    - EG-C
+    - EG-LX
+    - EG-WAD
+    - EG-SUZ
+    - EG-SHR
+    - EG-ASN
+    - EG-AST
+    - EG-BNS
+    - EG-PTS
+    - EG-DT
+    - EG-JS
+    - EG-KFS
+    - EG-MT
+    - EG-KN
+    - EG-SIN
+    - EG-SHG

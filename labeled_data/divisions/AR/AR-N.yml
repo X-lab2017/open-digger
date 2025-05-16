@@ -1,0 +1,11 @@
+name: Misiones
+type: Division-1
+meta:
+  alpha2: AR-N
+  includes:
+    - misiones
+    - ar-n
+    - 'n'
+    - misiones province
+    - mis
+  category: PROVINCE

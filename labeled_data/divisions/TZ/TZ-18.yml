@@ -1,0 +1,10 @@
+name: Mwanza
+type: Division-1
+meta:
+  alpha2: TZ-18
+  includes:
+    - mwanza
+    - tz-18
+    - '18'
+    - mwanza region
+  category: REGION

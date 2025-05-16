@@ -1,0 +1,10 @@
+name: Hajdina
+type: Division-1
+meta:
+  alpha2: SI-159
+  includes:
+    - hajdina
+    - si-159
+    - '159'
+    - hajdina municipality
+  category: MUNICIPALITY

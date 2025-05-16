@@ -1,0 +1,10 @@
+name: Grosuplje
+type: Division-1
+meta:
+  alpha2: SI-032
+  includes:
+    - grosuplje
+    - si-032
+    - '032'
+    - grosuplje municipality
+  category: MUNICIPALITY

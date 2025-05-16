@@ -1,0 +1,10 @@
+name: Mayaguana
+type: Division-1
+meta:
+  alpha2: BS-MG
+  includes:
+    - mayaguana
+    - bs-mg
+    - mg
+    - mayaguana district
+  category: DISTRICT

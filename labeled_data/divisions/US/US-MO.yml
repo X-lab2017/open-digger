@@ -1,0 +1,10 @@
+name: Missouri
+type: Division-1
+meta:
+  alpha2: US-MO
+  includes:
+    - missouri
+    - us-mo
+    - mo
+    - missouri state
+  category: STATE

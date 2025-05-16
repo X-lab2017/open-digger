@@ -1,0 +1,12 @@
+name: Inīdī al Gharbī
+type: Division-1
+meta:
+  alpha2: TD-EO
+  includes:
+    - ennedi-ouest
+    - td-eo
+    - eo
+    - ennedi-ouest province
+    - inīdī al gharbī
+    - inīdī al gharbī province
+  category: PROVINCE

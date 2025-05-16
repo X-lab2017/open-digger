@@ -1,0 +1,12 @@
+name: Bethlehem
+type: Division-1
+meta:
+  alpha2: PS-BTH
+  includes:
+    - bayt laḩm
+    - ps-bth
+    - bth
+    - bayt laḩm governorate
+    - bethlehem
+    - bethlehem governorate
+  category: GOVERNORATE

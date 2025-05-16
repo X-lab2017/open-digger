@@ -1,0 +1,10 @@
+name: Bragança
+type: Division-1
+meta:
+  alpha2: PT-04
+  includes:
+    - bragança
+    - pt-04
+    - '04'
+    - bragança district
+  category: DISTRICT

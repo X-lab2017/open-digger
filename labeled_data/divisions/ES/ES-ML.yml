@@ -1,0 +1,10 @@
+name: Melilla
+type: Division-1
+meta:
+  alpha2: ES-ML
+  includes:
+    - melilla
+    - es-ml
+    - ml
+    - melilla autonomous city in north africa
+  category: AUTONOMOUS CITY IN NORTH AFRICA

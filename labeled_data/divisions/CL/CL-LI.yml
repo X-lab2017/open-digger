@@ -1,0 +1,13 @@
+name: Libertador General Bernardo O'Higgins
+type: Division-1
+meta:
+  alpha2: CL-LI
+  includes:
+    - libertador general bernardo o'higgins
+    - cl-li
+    - li
+    - libertador general bernardo o'higgins region
+    - o'higgins
+    - o'higgins region
+    - vi
+  category: REGION

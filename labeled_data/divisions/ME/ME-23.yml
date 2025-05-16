@@ -1,0 +1,10 @@
+name: Petnjica
+type: Division-1
+meta:
+  alpha2: ME-23
+  includes:
+    - petnjica
+    - me-23
+    - '23'
+    - petnjica municipality
+  category: MUNICIPALITY

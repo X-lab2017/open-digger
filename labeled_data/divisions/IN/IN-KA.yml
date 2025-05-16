@@ -1,0 +1,10 @@
+name: Karnātaka
+type: Division-1
+meta:
+  alpha2: IN-KA
+  includes:
+    - karnātaka
+    - in-ka
+    - ka
+    - karnātaka state
+  category: STATE

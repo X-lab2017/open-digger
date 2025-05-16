@@ -1,0 +1,10 @@
+name: Alo
+type: Division-1
+meta:
+  alpha2: WF-AL
+  includes:
+    - alo
+    - wf-al
+    - al
+    - alo administrative precinct
+  category: ADMINISTRATIVE PRECINCT

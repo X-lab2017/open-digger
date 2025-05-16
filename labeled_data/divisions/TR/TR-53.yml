@@ -1,0 +1,10 @@
+name: Rize
+type: Division-1
+meta:
+  alpha2: TR-53
+  includes:
+    - rize
+    - tr-53
+    - '53'
+    - rize province
+  category: PROVINCE

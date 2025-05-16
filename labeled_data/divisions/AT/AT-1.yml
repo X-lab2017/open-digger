@@ -1,0 +1,10 @@
+name: Burgenland
+type: Division-1
+meta:
+  alpha2: AT-1
+  includes:
+    - burgenland
+    - at-1
+    - '1'
+    - burgenland state
+  category: STATE

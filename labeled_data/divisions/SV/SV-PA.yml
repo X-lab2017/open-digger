@@ -1,0 +1,10 @@
+name: La Paz
+type: Division-1
+meta:
+  alpha2: SV-PA
+  includes:
+    - la paz
+    - sv-pa
+    - pa
+    - la paz department
+  category: DEPARTMENT

@@ -1,0 +1,12 @@
+name: Ouaka
+type: Division-1
+meta:
+  alpha2: CF-UK
+  includes:
+    - ouaka
+    - cf-uk
+    - uk
+    - ouaka prefecture
+    - wäkä
+    - wäkä prefecture
+  category: PREFECTURE

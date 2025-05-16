@@ -1,0 +1,11 @@
+name: Gīlān
+type: Division-1
+meta:
+  alpha2: IR-01
+  includes:
+    - gīlān
+    - ir-01
+    - '01'
+    - gīlān province
+    - gilan province
+  category: PROVINCE

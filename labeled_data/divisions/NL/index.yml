@@ -1,0 +1,99 @@
+name: Netherlands, Kingdom of the
+type: Division-0
+meta:
+  alpha2: NL
+  includes:
+    - Netherlands, Kingdom of the
+    - NL
+    - '528'
+    - the Kingdom of the Netherlands
+    - 荷兰
+    - Netherlands
+    - Caribbean Netherlands
+    - Bonaire
+  name_full: the Kingdom of the Netherlands
+  name_zh: 荷兰
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 565841
+    - year: 2020
+      quarter: 2
+      count: 601586
+    - year: 2020
+      quarter: 3
+      count: 635475
+    - year: 2020
+      quarter: 4
+      count: 674883
+    - year: 2021
+      quarter: 1
+      count: 713316
+    - year: 2021
+      quarter: 2
+      count: 749861
+    - year: 2021
+      quarter: 3
+      count: 784623
+    - year: 2021
+      quarter: 4
+      count: 829753
+    - year: 2022
+      quarter: 1
+      count: 882733
+    - year: 2022
+      quarter: 2
+      count: 935479
+    - year: 2022
+      quarter: 3
+      count: 980925
+    - year: 2022
+      quarter: 4
+      count: 1030070
+    - year: 2023
+      quarter: 1
+      count: 1084341
+    - year: 2023
+      quarter: 2
+      count: 1152279
+    - year: 2023
+      quarter: 3
+      count: 1207142
+    - year: 2023
+      quarter: 4
+      count: 1260576
+    - year: 2024
+      quarter: 1
+      count: 1323066
+    - year: 2024
+      quarter: 2
+      count: 1379494
+    - year: 2024
+      quarter: 3
+      count: 1433577
+    - year: 2024
+      quarter: 4
+      count: 1507247
+data:
+  labels:
+    - NL-AW
+    - NL-BQ1
+    - NL-CW
+    - NL-DR
+    - NL-FL
+    - NL-FR
+    - NL-GE
+    - NL-GR
+    - NL-LI
+    - NL-NB
+    - NL-NH
+    - NL-OV
+    - NL-BQ2
+    - NL-BQ3
+    - NL-SX
+    - NL-UT
+    - NL-ZE
+    - NL-ZH
+    - ':companies/polars'
+    - ':foundations/godot'
+    - ':foundations/nixos'

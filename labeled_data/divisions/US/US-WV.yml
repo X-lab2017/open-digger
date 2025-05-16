@@ -1,0 +1,10 @@
+name: West Virginia
+type: Division-1
+meta:
+  alpha2: US-WV
+  includes:
+    - west virginia
+    - us-wv
+    - wv
+    - west virginia state
+  category: STATE

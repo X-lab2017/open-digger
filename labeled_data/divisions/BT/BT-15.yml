@@ -1,0 +1,11 @@
+name: Thimphu
+type: Division-1
+meta:
+  alpha2: BT-15
+  includes:
+    - thimphu
+    - bt-15
+    - '15'
+    - thimphu district
+    - ཐིམ་ཕུ་རྫོང་ཁག
+  category: DISTRICT

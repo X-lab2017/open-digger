@@ -1,0 +1,10 @@
+name: Vakaga
+type: Division-1
+meta:
+  alpha2: CF-VK
+  includes:
+    - vakaga
+    - cf-vk
+    - vk
+    - vakaga prefecture
+  category: PREFECTURE

@@ -1,0 +1,12 @@
+name: Stînga Nistrului
+type: Division-1
+meta:
+  alpha2: MD-SN
+  includes:
+    - stînga nistrului
+    - md-sn
+    - sn
+    - stînga nistrului territorial unit
+    - administrative-territorial units of the left bank of the dniester
+    - transnistria autonomous territorial unit
+  category: TERRITORIAL UNIT

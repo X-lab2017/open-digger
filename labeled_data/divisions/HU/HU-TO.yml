@@ -1,0 +1,10 @@
+name: Tolna
+type: Division-1
+meta:
+  alpha2: HU-TO
+  includes:
+    - tolna
+    - hu-to
+    - to
+    - tolna county
+  category: COUNTY

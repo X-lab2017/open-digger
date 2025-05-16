@@ -1,0 +1,10 @@
+name: Tozeur
+type: Division-1
+meta:
+  alpha2: TN-72
+  includes:
+    - tozeur
+    - tn-72
+    - '72'
+    - tozeur governorate
+  category: GOVERNORATE

@@ -1,0 +1,11 @@
+name: Trans Nzoia
+type: Division-1
+meta:
+  alpha2: KE-42
+  includes:
+    - trans nzoia
+    - ke-42
+    - '42'
+    - trans nzoia county
+    - trans-nzoia county
+  category: COUNTY

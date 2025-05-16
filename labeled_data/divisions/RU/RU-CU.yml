@@ -1,0 +1,14 @@
+name: Čuvašskaja Respublika
+type: Division-1
+meta:
+  alpha2: RU-CU
+  includes:
+    - chuvashskaya respublika
+    - ru-cu
+    - cu
+    - chuvashskaya respublika republic
+    - čuvašskaja respublika
+    - čuvašskaja respublika republic
+    - chuvashia republic
+    - chuvashia
+  category: REPUBLIC

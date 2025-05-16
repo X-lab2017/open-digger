@@ -1,0 +1,11 @@
+name: Västmanlands län
+type: Division-1
+meta:
+  alpha2: SE-U
+  includes:
+    - västmanlands län
+    - se-u
+    - u
+    - västmanlands län county
+    - västmanland county
+  category: COUNTY

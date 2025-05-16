@@ -1,0 +1,10 @@
+name: Kyiv
+type: Division-1
+meta:
+  alpha2: UA-30
+  includes:
+    - kyiv
+    - ua-30
+    - '30'
+    - kyiv city
+  category: CITY

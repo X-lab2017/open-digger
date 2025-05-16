@@ -1,0 +1,10 @@
+name: Muş
+type: Division-1
+meta:
+  alpha2: TR-49
+  includes:
+    - muş
+    - tr-49
+    - '49'
+    - muş province
+  category: PROVINCE

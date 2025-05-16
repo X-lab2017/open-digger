@@ -1,0 +1,10 @@
+name: Baker Island
+type: Division-1
+meta:
+  alpha2: UM-81
+  includes:
+    - baker island
+    - um-81
+    - '81'
+    - baker island islands, groups of islands
+  category: ISLANDS, GROUPS OF ISLANDS

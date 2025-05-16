@@ -1,0 +1,12 @@
+name: Haute-Kotto
+type: Division-1
+meta:
+  alpha2: CF-HK
+  includes:
+    - haute-kotto
+    - cf-hk
+    - hk
+    - haute-kotto prefecture
+    - tö-kötö
+    - tö-kötö prefecture
+  category: PREFECTURE

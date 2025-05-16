@@ -1,0 +1,41 @@
+name: Vojvodina
+type: Division-1
+meta:
+  alpha2: RS-VO
+  includes:
+    - južnobanatski okrug
+    - rs-04
+    - '04'
+    - južnobanatski okrug district
+    - južnobački okrug
+    - rs-06
+    - '06'
+    - južnobački okrug district
+    - severnobanatski okrug
+    - rs-03
+    - '03'
+    - severnobanatski okrug district
+    - severnobački okrug
+    - rs-01
+    - '01'
+    - severnobački okrug district
+    - srednjebanatski okrug
+    - rs-02
+    - '02'
+    - srednjebanatski okrug district
+    - sremski okrug
+    - rs-07
+    - '07'
+    - sremski okrug district
+    - vojvodina
+    - rs-vo
+    - vo
+    - vojvodina autonomous province
+    - zapadnobački okrug
+    - rs-05
+    - '05'
+    - zapadnobački okrug district
+    - voj
+    - војводина
+    - ser
+  category: AUTONOMOUS PROVINCE

@@ -1,0 +1,10 @@
+name: Kürdəmir
+type: Division-1
+meta:
+  alpha2: AZ-KUR
+  includes:
+    - kürdəmir
+    - az-kur
+    - kur
+    - kürdəmir rayon
+  category: RAYON

@@ -1,0 +1,13 @@
+name: Hainan Sheng
+type: Division-1
+meta:
+  alpha2: CN-HI
+  includes:
+    - hainan sheng
+    - cn-hi
+    - hi
+    - hainan sheng province
+    - hai nan sheng
+    - hainan
+    - 海南省
+  category: PROVINCE

@@ -1,0 +1,10 @@
+name: Nueva Segovia
+type: Division-1
+meta:
+  alpha2: NI-NS
+  includes:
+    - nueva segovia
+    - ni-ns
+    - ns
+    - nueva segovia department
+  category: DEPARTMENT

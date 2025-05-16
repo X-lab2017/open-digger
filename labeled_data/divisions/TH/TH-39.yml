@@ -1,0 +1,10 @@
+name: Nong Bua Lam Phu
+type: Division-1
+meta:
+  alpha2: TH-39
+  includes:
+    - nong bua lam phu
+    - th-39
+    - '39'
+    - nong bua lam phu province
+  category: PROVINCE

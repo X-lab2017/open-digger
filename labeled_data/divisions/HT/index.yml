@@ -1,0 +1,86 @@
+name: Haiti
+type: Division-0
+meta:
+  alpha2: HT
+  includes:
+    - Haiti
+    - HT
+    - '332'
+    - the Republic of Haiti
+    - 海地
+    - Haïti
+  name_full: the Republic of Haiti
+  name_zh: 海地
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 4347
+    - year: 2020
+      quarter: 2
+      count: 4767
+    - year: 2020
+      quarter: 3
+      count: 5160
+    - year: 2020
+      quarter: 4
+      count: 5609
+    - year: 2021
+      quarter: 1
+      count: 6056
+    - year: 2021
+      quarter: 2
+      count: 6621
+    - year: 2021
+      quarter: 3
+      count: 7087
+    - year: 2021
+      quarter: 4
+      count: 7813
+    - year: 2022
+      quarter: 1
+      count: 8322
+    - year: 2022
+      quarter: 2
+      count: 8861
+    - year: 2022
+      quarter: 3
+      count: 9374
+    - year: 2022
+      quarter: 4
+      count: 9903
+    - year: 2023
+      quarter: 1
+      count: 10464
+    - year: 2023
+      quarter: 2
+      count: 11070
+    - year: 2023
+      quarter: 3
+      count: 11666
+    - year: 2023
+      quarter: 4
+      count: 12350
+    - year: 2024
+      quarter: 1
+      count: 13034
+    - year: 2024
+      quarter: 2
+      count: 13750
+    - year: 2024
+      quarter: 3
+      count: 14803
+    - year: 2024
+      quarter: 4
+      count: 16949
+data:
+  labels:
+    - HT-AR
+    - HT-CE
+    - HT-GA
+    - HT-OU
+    - HT-NI
+    - HT-ND
+    - HT-NE
+    - HT-NO
+    - HT-SD
+    - HT-SE

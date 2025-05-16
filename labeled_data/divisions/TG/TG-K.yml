@@ -1,0 +1,10 @@
+name: Kara
+type: Division-1
+meta:
+  alpha2: TG-K
+  includes:
+    - kara
+    - tg-k
+    - k
+    - kara region
+  category: REGION

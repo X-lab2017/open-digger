@@ -1,0 +1,22 @@
+name: Sul
+type: Division-1
+meta:
+  alpha2: GW-S
+  includes:
+    - bolama / bijagós
+    - gw-bl
+    - bl
+    - bolama / bijagós region
+    - quinara
+    - gw-qu
+    - qu
+    - quinara region
+    - sul
+    - gw-s
+    - s
+    - sul province
+    - tombali
+    - gw-to
+    - to
+    - tombali region
+  category: PROVINCE

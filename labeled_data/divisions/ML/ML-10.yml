@@ -1,0 +1,14 @@
+name: Taoudénit
+type: Division-1
+meta:
+  alpha2: ML-10
+  includes:
+    - taoudénit
+    - ml-10
+    - '10'
+    - taoudénit region
+    - taoudenni
+    - taoudenni region
+    - taoudéni
+    - taoudéni region
+  category: REGION

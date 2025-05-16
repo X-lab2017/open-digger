@@ -1,0 +1,14 @@
+name: Leningradskaya oblast'
+type: Division-1
+meta:
+  alpha2: RU-LEN
+  includes:
+    - leningradskaja oblast'
+    - ru-len
+    - len
+    - leningradskaja oblast' administrative region
+    - leningradskaya oblast'
+    - leningradskaya oblast' administrative region
+    - leningrad oblast
+    - leningrad
+  category: ADMINISTRATIVE REGION

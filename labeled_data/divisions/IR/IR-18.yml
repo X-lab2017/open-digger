@@ -1,0 +1,11 @@
+name: Būshehr
+type: Division-1
+meta:
+  alpha2: IR-18
+  includes:
+    - būshehr
+    - ir-18
+    - '18'
+    - būshehr province
+    - bushehr province
+  category: PROVINCE

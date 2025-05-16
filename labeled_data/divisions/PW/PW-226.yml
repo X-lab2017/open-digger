@@ -1,0 +1,10 @@
+name: Ngchesar
+type: Division-1
+meta:
+  alpha2: PW-226
+  includes:
+    - ngchesar
+    - pw-226
+    - '226'
+    - ngchesar state
+  category: STATE

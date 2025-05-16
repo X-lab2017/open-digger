@@ -1,0 +1,45 @@
+name: Bourgogne-Franche-Comté
+type: Division-1
+meta:
+  alpha2: FR-BFC
+  includes:
+    - bourgogne-franche-comté
+    - fr-bfc
+    - bfc
+    - bourgogne-franche-comté metropolitan region
+    - côte-d'or
+    - fr-21
+    - '21'
+    - côte-d'or metropolitan department
+    - doubs
+    - fr-25
+    - '25'
+    - doubs metropolitan department
+    - haute-saône
+    - fr-70
+    - '70'
+    - haute-saône metropolitan department
+    - jura
+    - fr-39
+    - '39'
+    - jura metropolitan department
+    - nièvre
+    - fr-58
+    - '58'
+    - nièvre metropolitan department
+    - saône-et-loire
+    - fr-71
+    - '71'
+    - saône-et-loire metropolitan department
+    - territoire de belfort
+    - fr-90
+    - '90'
+    - territoire de belfort metropolitan department
+    - yonne
+    - fr-89
+    - '89'
+    - yonne metropolitan department
+    - burgundy
+    - franche-comté
+    - fr-b9
+  category: METROPOLITAN REGION

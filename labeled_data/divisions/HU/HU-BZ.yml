@@ -1,0 +1,10 @@
+name: Borsod-Abaúj-Zemplén
+type: Division-1
+meta:
+  alpha2: HU-BZ
+  includes:
+    - borsod-abaúj-zemplén
+    - hu-bz
+    - bz
+    - borsod-abaúj-zemplén county
+  category: COUNTY

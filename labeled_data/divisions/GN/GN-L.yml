@@ -1,0 +1,29 @@
+name: Labé
+type: Division-1
+meta:
+  alpha2: GN-L
+  includes:
+    - koubia
+    - gn-kb
+    - kb
+    - koubia prefecture
+    - labé
+    - gn-l
+    - l
+    - labé administrative region
+    - gn-la
+    - la
+    - labé prefecture
+    - lélouma
+    - gn-le
+    - le
+    - lélouma prefecture
+    - mali
+    - gn-ml
+    - ml
+    - mali prefecture
+    - tougué
+    - gn-to
+    - to
+    - tougué prefecture
+  category: ADMINISTRATIVE REGION

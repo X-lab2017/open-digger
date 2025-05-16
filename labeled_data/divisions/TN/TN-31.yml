@@ -1,0 +1,10 @@
+name: Béja
+type: Division-1
+meta:
+  alpha2: TN-31
+  includes:
+    - béja
+    - tn-31
+    - '31'
+    - béja governorate
+  category: GOVERNORATE

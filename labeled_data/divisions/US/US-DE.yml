@@ -1,0 +1,10 @@
+name: Delaware
+type: Division-1
+meta:
+  alpha2: US-DE
+  includes:
+    - delaware
+    - us-de
+    - de
+    - delaware state
+  category: STATE

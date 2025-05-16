@@ -1,0 +1,16 @@
+name: Abayskaya oblast’
+type: Division-1
+meta:
+  alpha2: KZ-10
+  includes:
+    - abajskaja oblast’
+    - kz-10
+    - '10'
+    - abajskaja oblast’ region
+    - abay oblysy
+    - abay oblysy region
+    - abayskaya oblast’
+    - abayskaya oblast’ region
+    - abay region
+    - abai region
+  category: REGION

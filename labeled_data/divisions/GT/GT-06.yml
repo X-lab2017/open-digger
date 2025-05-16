@@ -1,0 +1,10 @@
+name: Santa Rosa
+type: Division-1
+meta:
+  alpha2: GT-06
+  includes:
+    - santa rosa
+    - gt-06
+    - '06'
+    - santa rosa department
+  category: DEPARTMENT

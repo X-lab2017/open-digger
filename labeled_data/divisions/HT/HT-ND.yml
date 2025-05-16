@@ -1,0 +1,13 @@
+name: Nord
+type: Division-1
+meta:
+  alpha2: HT-ND
+  includes:
+    - nord
+    - ht-nd
+    - nd
+    - nord department
+    - nò
+    - nò department
+    - département du nord
+  category: DEPARTMENT

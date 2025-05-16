@@ -1,0 +1,10 @@
+name: Bono
+type: Division-1
+meta:
+  alpha2: GH-BO
+  includes:
+    - bono
+    - gh-bo
+    - bo
+    - bono region
+  category: REGION

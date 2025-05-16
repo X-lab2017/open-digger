@@ -1,0 +1,13 @@
+name: L'Ariana
+type: Division-1
+meta:
+  alpha2: TN-12
+  includes:
+    - l'ariana
+    - tn-12
+    - '12'
+    - l'ariana governorate
+    - ariana governorate
+    - gouvernorat de l'ariana
+    - ariana
+  category: GOVERNORATE

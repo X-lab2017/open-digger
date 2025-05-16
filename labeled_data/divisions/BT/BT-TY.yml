@@ -1,0 +1,10 @@
+name: Trashi Yangtse
+type: Division-1
+meta:
+  alpha2: BT-TY
+  includes:
+    - trashi yangtse
+    - bt-ty
+    - ty
+    - trashi yangtse district
+  category: DISTRICT

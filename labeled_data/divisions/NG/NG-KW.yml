@@ -1,0 +1,10 @@
+name: Kwara
+type: Division-1
+meta:
+  alpha2: NG-KW
+  includes:
+    - kwara
+    - ng-kw
+    - kw
+    - kwara state
+  category: STATE

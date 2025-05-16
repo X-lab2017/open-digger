@@ -1,0 +1,10 @@
+name: Zərdab
+type: Division-1
+meta:
+  alpha2: AZ-ZAR
+  includes:
+    - zərdab
+    - az-zar
+    - zar
+    - zərdab rayon
+  category: RAYON

@@ -1,0 +1,11 @@
+name: Yaracuy
+type: Division-1
+meta:
+  alpha2: VE-U
+  includes:
+    - yaracuy
+    - ve-u
+    - u
+    - yaracuy state
+    - ya
+  category: STATE

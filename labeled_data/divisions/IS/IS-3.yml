@@ -1,0 +1,46 @@
+name: Vesturland
+type: Division-1
+meta:
+  alpha2: IS-3
+  includes:
+    - akraneskaupstaður
+    - is-akn
+    - akn
+    - akraneskaupstaður municipality
+    - borgarbyggð
+    - is-bog
+    - bog
+    - borgarbyggð municipality
+    - dalabyggð
+    - is-dab
+    - dab
+    - dalabyggð municipality
+    - eyja- og miklaholtshreppur
+    - is-eom
+    - eom
+    - eyja- og miklaholtshreppur municipality
+    - grundarfjarðarbær
+    - is-gru
+    - gru
+    - grundarfjarðarbær municipality
+    - hvalfjarðarsveit
+    - is-hva
+    - hva
+    - hvalfjarðarsveit municipality
+    - skorradalshreppur
+    - is-sko
+    - sko
+    - skorradalshreppur municipality
+    - snæfellsbær
+    - is-snf
+    - snf
+    - snæfellsbær municipality
+    - stykkishólmsbær
+    - is-sty
+    - sty
+    - stykkishólmsbær municipality
+    - vesturland
+    - is-3
+    - '3'
+    - vesturland region
+  category: REGION

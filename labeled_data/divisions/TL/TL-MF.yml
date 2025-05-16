@@ -1,0 +1,10 @@
+name: Manufahi
+type: Division-1
+meta:
+  alpha2: TL-MF
+  includes:
+    - manufahi
+    - tl-mf
+    - mf
+    - manufahi municipality
+  category: MUNICIPALITY

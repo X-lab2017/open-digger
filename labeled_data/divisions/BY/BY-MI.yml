@@ -1,0 +1,17 @@
+name: Minskaya oblast'
+type: Division-1
+meta:
+  alpha2: BY-MI
+  includes:
+    - minskaja oblast'
+    - by-mi
+    - mi
+    - minskaja oblast' oblast
+    - minskaja voblasć
+    - minskaja voblasć oblast
+    - minskaya oblast'
+    - minskaya oblast' oblast
+    - minskaya voblasts'
+    - minskaya voblasts' oblast
+    - minsk region
+  category: OBLAST

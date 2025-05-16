@@ -1,0 +1,11 @@
+name: Pelopónnisos
+type: Division-1
+meta:
+  alpha2: GR-J
+  includes:
+    - pelopónnisos
+    - gr-j
+    - j
+    - pelopónnisos administrative region
+    - peloponnese
+  category: ADMINISTRATIVE REGION

@@ -1,0 +1,12 @@
+name: Gilgit-Baltistan
+type: Division-1
+meta:
+  alpha2: PK-GB
+  includes:
+    - gilgit-baltistan
+    - pk-gb
+    - gb
+    - gilgit-baltistan pakistan administered area
+    - gilgit-baltistān
+    - gilgit-baltistān pakistan administered area
+  category: PAKISTAN ADMINISTERED AREA

@@ -1,0 +1,12 @@
+name: Viqueque
+type: Division-1
+meta:
+  alpha2: TL-VI
+  includes:
+    - vikeke
+    - tl-vi
+    - vi
+    - vikeke municipality
+    - viqueque
+    - viqueque municipality
+  category: MUNICIPALITY

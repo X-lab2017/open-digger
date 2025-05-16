@@ -1,0 +1,10 @@
+name: Bāmyān
+type: Division-1
+meta:
+  alpha2: AF-BAM
+  includes:
+    - bāmyān
+    - af-bam
+    - bam
+    - bāmyān province
+  category: PROVINCE

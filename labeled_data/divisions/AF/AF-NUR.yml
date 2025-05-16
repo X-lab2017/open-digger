@@ -1,0 +1,10 @@
+name: Nūristān
+type: Division-1
+meta:
+  alpha2: AF-NUR
+  includes:
+    - nūristān
+    - af-nur
+    - nur
+    - nūristān province
+  category: PROVINCE

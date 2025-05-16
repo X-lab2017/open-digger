@@ -1,0 +1,31 @@
+name: Béni Mellal-Khénifra
+type: Division-1
+meta:
+  alpha2: MA-05
+  includes:
+    - azilal
+    - ma-azi
+    - azi
+    - azilal province
+    - béni mellal
+    - ma-bem
+    - bem
+    - béni mellal province
+    - béni mellal-khénifra
+    - ma-05
+    - '05'
+    - béni mellal-khénifra region
+    - fquih ben salah
+    - ma-fqh
+    - fqh
+    - fquih ben salah province
+    - khouribga
+    - ma-kho
+    - kho
+    - khouribga province
+    - khénifra
+    - ma-khn
+    - khn
+    - khénifra province
+    - béni mellal-khenifra
+  category: REGION

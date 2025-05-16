@@ -1,0 +1,11 @@
+name: Kandahār
+type: Division-1
+meta:
+  alpha2: AF-KAN
+  includes:
+    - kandahār
+    - af-kan
+    - kan
+    - kandahār province
+    - kandahar
+  category: PROVINCE

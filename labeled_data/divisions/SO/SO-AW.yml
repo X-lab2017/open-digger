@@ -1,0 +1,10 @@
+name: Awdal
+type: Division-1
+meta:
+  alpha2: SO-AW
+  includes:
+    - awdal
+    - so-aw
+    - aw
+    - awdal region
+  category: REGION

@@ -1,0 +1,42 @@
+name: Caraga
+type: Division-1
+meta:
+  alpha2: PH-13
+  includes:
+    - agusan del norte
+    - ph-agn
+    - agn
+    - agusan del norte province
+    - agusan del sur
+    - ph-ags
+    - ags
+    - agusan del sur province
+    - caraga
+    - ph-13
+    - '13'
+    - caraga region
+    - dinagat islands
+    - ph-din
+    - din
+    - dinagat islands province
+    - hilagang agusan
+    - hilagang agusan province
+    - hilagang surigaw
+    - ph-sun
+    - sun
+    - hilagang surigaw province
+    - pulo ng dinagat
+    - pulo ng dinagat province
+    - rehiyon ng karaga
+    - rehiyon ng karaga region
+    - surigao del norte
+    - surigao del norte province
+    - surigao del sur
+    - ph-sur
+    - sur
+    - surigao del sur province
+    - timog agusan
+    - timog agusan province
+    - timog surigaw
+    - timog surigaw province
+  category: REGION

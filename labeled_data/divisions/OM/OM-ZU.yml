@@ -1,0 +1,12 @@
+name: Z̧ufār
+type: Division-1
+meta:
+  alpha2: OM-ZU
+  includes:
+    - z̧ufār
+    - om-zu
+    - zu
+    - z̧ufār governorate
+    - dhofar
+    - dhofar governorate
+  category: GOVERNORATE

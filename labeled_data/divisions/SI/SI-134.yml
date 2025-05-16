@@ -1,0 +1,10 @@
+name: Velike Lašče
+type: Division-1
+meta:
+  alpha2: SI-134
+  includes:
+    - velike lašče
+    - si-134
+    - '134'
+    - velike lašče municipality
+  category: MUNICIPALITY

@@ -1,0 +1,40 @@
+name: Plzeňský kraj
+type: Division-1
+meta:
+  alpha2: CZ-32
+  includes:
+    - domažlice
+    - cz-321
+    - '321'
+    - domažlice district
+    - klatovy
+    - cz-322
+    - '322'
+    - klatovy district
+    - plzeň-jih
+    - cz-324
+    - '324'
+    - plzeň-jih district
+    - plzeň-město
+    - cz-323
+    - '323'
+    - plzeň-město district
+    - plzeň-sever
+    - cz-325
+    - '325'
+    - plzeň-sever district
+    - plzeňský kraj
+    - cz-32
+    - '32'
+    - plzeňský kraj region
+    - rokycany
+    - cz-326
+    - '326'
+    - rokycany district
+    - tachov
+    - cz-327
+    - '327'
+    - tachov district
+    - plzeň region
+    - plzeň
+  category: REGION

@@ -1,0 +1,10 @@
+name: Rum Cay
+type: Division-1
+meta:
+  alpha2: BS-RC
+  includes:
+    - rum cay
+    - bs-rc
+    - rc
+    - rum cay district
+  category: DISTRICT

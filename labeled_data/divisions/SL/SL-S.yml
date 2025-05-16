@@ -1,0 +1,11 @@
+name: Southern
+type: Division-1
+meta:
+  alpha2: SL-S
+  includes:
+    - southern
+    - sl-s
+    - s
+    - southern province
+    - southern province, sierra leone
+  category: PROVINCE

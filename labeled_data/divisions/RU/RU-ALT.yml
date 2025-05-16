@@ -1,0 +1,13 @@
+name: Altayskiy kray
+type: Division-1
+meta:
+  alpha2: RU-ALT
+  includes:
+    - altajskij kraj
+    - ru-alt
+    - alt
+    - altajskij kraj administrative territory
+    - altayskiy kray
+    - altayskiy kray administrative territory
+    - altai krai
+  category: ADMINISTRATIVE TERRITORY

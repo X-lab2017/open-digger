@@ -1,0 +1,11 @@
+name: Maule
+type: Division-1
+meta:
+  alpha2: CL-ML
+  includes:
+    - maule
+    - cl-ml
+    - ml
+    - maule region
+    - vii
+  category: REGION

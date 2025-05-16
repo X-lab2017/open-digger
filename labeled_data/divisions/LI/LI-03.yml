@@ -1,0 +1,10 @@
+name: Gamprin
+type: Division-1
+meta:
+  alpha2: LI-03
+  includes:
+    - gamprin
+    - li-03
+    - '03'
+    - gamprin commune
+  category: COMMUNE

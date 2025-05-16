@@ -1,0 +1,12 @@
+name: Trenčiansky kraj
+type: Division-1
+meta:
+  alpha2: SK-TC
+  includes:
+    - trenčiansky kraj
+    - sk-tc
+    - tc
+    - trenčiansky kraj region
+    - trenciansky
+    - trenčín region
+  category: REGION

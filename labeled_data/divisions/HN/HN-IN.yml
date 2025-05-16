@@ -1,0 +1,10 @@
+name: Intibucá
+type: Division-1
+meta:
+  alpha2: HN-IN
+  includes:
+    - intibucá
+    - hn-in
+    - in
+    - intibucá department
+  category: DEPARTMENT

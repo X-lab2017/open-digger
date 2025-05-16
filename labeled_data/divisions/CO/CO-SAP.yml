@@ -1,0 +1,12 @@
+name: San Andrés
+type: Division-1
+meta:
+  alpha2: CO-SAP
+  includes:
+    - san andrés
+    - co-sap
+    - sap
+    - san andrés department
+    - san andrés and providencia
+    - san andres and providencia
+  category: DEPARTMENT

@@ -1,0 +1,10 @@
+name: Kriva Palanka
+type: Division-1
+meta:
+  alpha2: MK-702
+  includes:
+    - kriva palanka
+    - mk-702
+    - '702'
+    - kriva palanka municipality
+  category: MUNICIPALITY

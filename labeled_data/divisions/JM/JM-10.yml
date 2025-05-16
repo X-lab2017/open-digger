@@ -1,0 +1,10 @@
+name: Westmoreland
+type: Division-1
+meta:
+  alpha2: JM-10
+  includes:
+    - westmoreland
+    - jm-10
+    - '10'
+    - westmoreland parish
+  category: PARISH

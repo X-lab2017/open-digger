@@ -1,0 +1,10 @@
+name: National Capital District
+type: Division-1
+meta:
+  alpha2: PG-NCD
+  includes:
+    - national capital district
+    - pg-ncd
+    - ncd
+    - national capital district district
+  category: DISTRICT

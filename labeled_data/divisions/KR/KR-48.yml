@@ -1,0 +1,13 @@
+name: Gyeongsangnam-do
+type: Division-1
+meta:
+  alpha2: KR-48
+  includes:
+    - gyeongsangnam-do
+    - kr-48
+    - '48'
+    - gyeongsangnam-do province
+    - gyeongnam
+    - gyeongnam province
+    - south gyeongsang
+  category: PROVINCE

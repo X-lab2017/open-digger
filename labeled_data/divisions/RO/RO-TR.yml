@@ -1,0 +1,10 @@
+name: Teleorman
+type: Division-1
+meta:
+  alpha2: RO-TR
+  includes:
+    - teleorman
+    - ro-tr
+    - tr
+    - teleorman department
+  category: DEPARTMENT

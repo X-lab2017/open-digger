@@ -1,0 +1,10 @@
+name: La Colle
+type: Division-1
+meta:
+  alpha2: MC-CL
+  includes:
+    - la colle
+    - mc-cl
+    - cl
+    - la colle quarter
+  category: QUARTER

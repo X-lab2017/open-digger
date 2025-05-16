@@ -1,0 +1,63 @@
+name: Kiribati
+type: Division-0
+meta:
+  alpha2: KI
+  includes:
+    - Kiribati
+    - KI
+    - '296'
+    - the Republic of Kiribati
+    - 基里巴斯
+  name_full: the Republic of Kiribati
+  name_zh: 基里巴斯
+  developers:
+    - year: 2021
+      quarter: 2
+      count: 134
+    - year: 2021
+      quarter: 3
+      count: 108
+    - year: 2021
+      quarter: 4
+      count: 110
+    - year: 2022
+      quarter: 1
+      count: 126
+    - year: 2022
+      quarter: 2
+      count: 132
+    - year: 2022
+      quarter: 3
+      count: 144
+    - year: 2022
+      quarter: 4
+      count: 148
+    - year: 2023
+      quarter: 1
+      count: 160
+    - year: 2023
+      quarter: 2
+      count: 179
+    - year: 2023
+      quarter: 3
+      count: 190
+    - year: 2023
+      quarter: 4
+      count: 194
+    - year: 2024
+      quarter: 1
+      count: 197
+    - year: 2024
+      quarter: 2
+      count: 195
+    - year: 2024
+      quarter: 3
+      count: 190
+    - year: 2024
+      quarter: 4
+      count: 186
+data:
+  labels:
+    - KI-G
+    - KI-L
+    - KI-P

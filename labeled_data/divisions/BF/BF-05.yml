@@ -1,0 +1,21 @@
+name: Centre-Nord
+type: Division-1
+meta:
+  alpha2: BF-05
+  includes:
+    - bam
+    - bf-bam
+    - bam province
+    - centre-nord
+    - bf-05
+    - '05'
+    - centre-nord region
+    - namentenga
+    - bf-nam
+    - nam
+    - namentenga province
+    - sanmatenga
+    - bf-smt
+    - smt
+    - sanmatenga province
+  category: REGION

@@ -1,0 +1,10 @@
+name: Šavnik
+type: Division-1
+meta:
+  alpha2: ME-18
+  includes:
+    - šavnik
+    - me-18
+    - '18'
+    - šavnik municipality
+  category: MUNICIPALITY

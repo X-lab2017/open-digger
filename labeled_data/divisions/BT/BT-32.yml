@@ -1,0 +1,10 @@
+name: Trongsa
+type: Division-1
+meta:
+  alpha2: BT-32
+  includes:
+    - trongsa
+    - bt-32
+    - '32'
+    - trongsa district
+  category: DISTRICT

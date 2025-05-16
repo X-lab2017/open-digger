@@ -1,0 +1,10 @@
+name: Mahaica-Berbice
+type: Division-1
+meta:
+  alpha2: GY-MA
+  includes:
+    - mahaica-berbice
+    - gy-ma
+    - ma
+    - mahaica-berbice region
+  category: REGION

@@ -1,0 +1,13 @@
+name: Ad Daqahlīyah
+type: Division-1
+meta:
+  alpha2: EG-DK
+  includes:
+    - ad daqahlīyah
+    - eg-dk
+    - dk
+    - ad daqahlīyah governorate
+    - dakahlia governorate
+    - el daqahlia
+    - ad daqahliyah
+  category: GOVERNORATE

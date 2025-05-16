@@ -1,0 +1,10 @@
+name: Meta
+type: Division-1
+meta:
+  alpha2: CO-MET
+  includes:
+    - meta
+    - co-met
+    - met
+    - meta department
+  category: DEPARTMENT

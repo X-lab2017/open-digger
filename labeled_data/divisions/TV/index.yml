@@ -1,0 +1,22 @@
+name: Tuvalu
+type: Division-0
+meta:
+  alpha2: TV
+  includes:
+    - Tuvalu
+    - TV
+    - '798'
+    - 图瓦卢
+  name_full: Tuvalu
+  name_zh: 图瓦卢
+  developers: []
+data:
+  labels:
+    - TV-FUN
+    - TV-NMG
+    - TV-NMA
+    - TV-NIT
+    - TV-NUI
+    - TV-NKF
+    - TV-NKL
+    - TV-VAI

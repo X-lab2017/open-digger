@@ -1,0 +1,10 @@
+name: Gżira
+type: Division-1
+meta:
+  alpha2: MT-12
+  includes:
+    - gżira
+    - mt-12
+    - '12'
+    - gżira local council
+  category: LOCAL COUNCIL

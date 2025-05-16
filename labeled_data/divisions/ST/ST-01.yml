@@ -1,0 +1,10 @@
+name: Água Grande
+type: Division-1
+meta:
+  alpha2: ST-01
+  includes:
+    - água grande
+    - st-01
+    - '01'
+    - água grande district
+  category: DISTRICT

@@ -1,0 +1,10 @@
+name: Nyíregyháza
+type: Division-1
+meta:
+  alpha2: HU-NY
+  includes:
+    - nyíregyháza
+    - hu-ny
+    - ny
+    - nyíregyháza city with county rights
+  category: CITY WITH COUNTY RIGHTS

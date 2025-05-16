@@ -1,0 +1,13 @@
+name: Sichuan Sheng
+type: Division-1
+meta:
+  alpha2: CN-SC
+  includes:
+    - sichuan sheng
+    - cn-sc
+    - sc
+    - sichuan sheng province
+    - si chuan sheng
+    - sichuan
+    - 四川省
+  category: PROVINCE

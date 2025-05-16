@@ -1,0 +1,10 @@
+name: Floriana
+type: Division-1
+meta:
+  alpha2: MT-09
+  includes:
+    - floriana
+    - mt-09
+    - '09'
+    - floriana local council
+  category: LOCAL COUNCIL

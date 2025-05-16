@@ -1,0 +1,37 @@
+name: Western Province
+type: Division-1
+meta:
+  alpha2: LK-1
+  includes:
+    - basnāhira paḷāta
+    - lk-1
+    - '1'
+    - basnāhira paḷāta province
+    - colombo
+    - lk-11
+    - '11'
+    - colombo district
+    - gampaha
+    - lk-12
+    - '12'
+    - gampaha district
+    - kalutara
+    - lk-13
+    - '13'
+    - kalutara district
+    - kampahā
+    - kampahā district
+    - kaḷutara
+    - kaḷutara district
+    - kaḷuttuṟai
+    - kaḷuttuṟai district
+    - kŏl̮umpu
+    - kŏl̮umpu district
+    - kŏḷamba
+    - kŏḷamba district
+    - mel mākāṇam
+    - mel mākāṇam province
+    - western province
+    - western province province
+    - western
+  category: PROVINCE

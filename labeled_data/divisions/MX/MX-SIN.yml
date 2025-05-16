@@ -1,0 +1,10 @@
+name: Sinaloa
+type: Division-1
+meta:
+  alpha2: MX-SIN
+  includes:
+    - sinaloa
+    - mx-sin
+    - sin
+    - sinaloa state
+  category: STATE

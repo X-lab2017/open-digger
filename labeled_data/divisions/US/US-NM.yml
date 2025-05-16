@@ -1,0 +1,10 @@
+name: New Mexico
+type: Division-1
+meta:
+  alpha2: US-NM
+  includes:
+    - new mexico
+    - us-nm
+    - nm
+    - new mexico state
+  category: STATE

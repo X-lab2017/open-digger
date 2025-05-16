@@ -1,0 +1,10 @@
+name: Ungheni
+type: Division-1
+meta:
+  alpha2: MD-UN
+  includes:
+    - ungheni
+    - md-un
+    - un
+    - ungheni district
+  category: DISTRICT

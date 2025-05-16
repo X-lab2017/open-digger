@@ -1,0 +1,10 @@
+name: Brandenburg
+type: Division-1
+meta:
+  alpha2: DE-BB
+  includes:
+    - brandenburg
+    - de-bb
+    - bb
+    - brandenburg land
+  category: LAND

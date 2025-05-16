@@ -1,0 +1,10 @@
+name: South Australia
+type: Division-1
+meta:
+  alpha2: AU-SA
+  includes:
+    - south australia
+    - au-sa
+    - sa
+    - south australia state
+  category: STATE

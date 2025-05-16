@@ -1,0 +1,12 @@
+name: Bakı
+type: Division-1
+meta:
+  alpha2: AZ-BA
+  includes:
+    - bakı
+    - az-ba
+    - ba
+    - bakı municipality
+    - baku
+    - baku ekonomic zone
+  category: MUNICIPALITY

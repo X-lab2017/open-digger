@@ -1,0 +1,11 @@
+name: Guadalcanal
+type: Division-1
+meta:
+  alpha2: SB-GU
+  includes:
+    - guadalcanal
+    - sb-gu
+    - gu
+    - guadalcanal province
+    - honiara
+  category: PROVINCE

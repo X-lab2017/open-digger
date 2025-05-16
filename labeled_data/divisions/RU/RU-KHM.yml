@@ -1,0 +1,18 @@
+name: Khanty-Mansiyskiy avtonomnyy okrug
+type: Division-1
+meta:
+  alpha2: RU-KHM
+  includes:
+    - hanty-mansijskij avtonomnyj okrug
+    - ru-khm
+    - khm
+    - hanty-mansijskij avtonomnyj okrug autonomous district
+    - jugra
+    - jugra autonomous district
+    - khanty-mansiyskiy avtonomnyy okrug
+    - khanty-mansiyskiy avtonomnyy okrug autonomous district
+    - yugra
+    - yugra autonomous district
+    - khanty-mansi autonomous okrug
+    - khanty-mansi
+  category: AUTONOMOUS DISTRICT

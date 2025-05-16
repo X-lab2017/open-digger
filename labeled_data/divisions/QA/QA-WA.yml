@@ -1,0 +1,10 @@
+name: Al Wakrah
+type: Division-1
+meta:
+  alpha2: QA-WA
+  includes:
+    - al wakrah
+    - qa-wa
+    - wa
+    - al wakrah municipality
+  category: MUNICIPALITY

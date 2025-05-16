@@ -1,0 +1,10 @@
+name: Tekirdağ
+type: Division-1
+meta:
+  alpha2: TR-59
+  includes:
+    - tekirdağ
+    - tr-59
+    - '59'
+    - tekirdağ province
+  category: PROVINCE

@@ -1,0 +1,10 @@
+name: Matagalpa
+type: Division-1
+meta:
+  alpha2: NI-MT
+  includes:
+    - matagalpa
+    - ni-mt
+    - mt
+    - matagalpa department
+  category: DEPARTMENT

@@ -1,0 +1,10 @@
+name: Edirne
+type: Division-1
+meta:
+  alpha2: TR-22
+  includes:
+    - edirne
+    - tr-22
+    - '22'
+    - edirne province
+  category: PROVINCE

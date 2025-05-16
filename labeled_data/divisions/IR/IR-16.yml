@@ -1,0 +1,11 @@
+name: Īlām
+type: Division-1
+meta:
+  alpha2: IR-16
+  includes:
+    - īlām
+    - ir-16
+    - '16'
+    - īlām province
+    - ilam province
+  category: PROVINCE

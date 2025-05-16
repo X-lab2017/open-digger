@@ -1,0 +1,31 @@
+name: Olomoucký kraj
+type: Division-1
+meta:
+  alpha2: CZ-71
+  includes:
+    - jeseník
+    - cz-711
+    - '711'
+    - jeseník district
+    - olomouc
+    - cz-712
+    - '712'
+    - olomouc district
+    - olomoucký kraj
+    - cz-71
+    - '71'
+    - olomoucký kraj region
+    - prostějov
+    - cz-713
+    - '713'
+    - prostějov district
+    - přerov
+    - cz-714
+    - '714'
+    - přerov district
+    - šumperk
+    - cz-715
+    - '715'
+    - šumperk district
+    - olomouc region
+  category: REGION

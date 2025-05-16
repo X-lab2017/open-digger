@@ -1,0 +1,74 @@
+name: Bonaire, Sint Eustatius and Saba
+type: Division-0
+meta:
+  alpha2: BQ
+  includes:
+    - Bonaire, Sint Eustatius and Saba
+    - BQ
+    - '535'
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 180
+    - year: 2020
+      quarter: 2
+      count: 194
+    - year: 2020
+      quarter: 3
+      count: 206
+    - year: 2020
+      quarter: 4
+      count: 232
+    - year: 2021
+      quarter: 1
+      count: 249
+    - year: 2021
+      quarter: 2
+      count: 266
+    - year: 2021
+      quarter: 3
+      count: 268
+    - year: 2021
+      quarter: 4
+      count: 280
+    - year: 2022
+      quarter: 1
+      count: 302
+    - year: 2022
+      quarter: 2
+      count: 320
+    - year: 2022
+      quarter: 3
+      count: 332
+    - year: 2022
+      quarter: 4
+      count: 340
+    - year: 2023
+      quarter: 1
+      count: 370
+    - year: 2023
+      quarter: 2
+      count: 395
+    - year: 2023
+      quarter: 3
+      count: 423
+    - year: 2023
+      quarter: 4
+      count: 433
+    - year: 2024
+      quarter: 1
+      count: 447
+    - year: 2024
+      quarter: 2
+      count: 475
+    - year: 2024
+      quarter: 3
+      count: 493
+    - year: 2024
+      quarter: 4
+      count: 519
+data:
+  labels:
+    - BQ-BO
+    - BQ-SA
+    - BQ-SE

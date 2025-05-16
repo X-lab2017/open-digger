@@ -1,0 +1,10 @@
+name: Shida Kartli
+type: Division-1
+meta:
+  alpha2: GE-SK
+  includes:
+    - shida kartli
+    - ge-sk
+    - sk
+    - shida kartli region
+  category: REGION

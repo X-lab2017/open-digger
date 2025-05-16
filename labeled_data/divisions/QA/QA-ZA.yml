@@ -1,0 +1,10 @@
+name: Az̧ Z̧a‘āyin
+type: Division-1
+meta:
+  alpha2: QA-ZA
+  includes:
+    - az̧ z̧a‘āyin
+    - qa-za
+    - za
+    - az̧ z̧a‘āyin municipality
+  category: MUNICIPALITY

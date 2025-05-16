@@ -1,0 +1,10 @@
+name: Kouilou
+type: Division-1
+meta:
+  alpha2: CG-5
+  includes:
+    - kouilou
+    - cg-5
+    - '5'
+    - kouilou department
+  category: DEPARTMENT

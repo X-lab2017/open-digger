@@ -1,0 +1,10 @@
+name: Eger
+type: Division-1
+meta:
+  alpha2: HU-EG
+  includes:
+    - eger
+    - hu-eg
+    - eg
+    - eger city with county rights
+  category: CITY WITH COUNTY RIGHTS

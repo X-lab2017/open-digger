@@ -1,0 +1,10 @@
+name: Mirna Peč
+type: Division-1
+meta:
+  alpha2: SI-170
+  includes:
+    - mirna peč
+    - si-170
+    - '170'
+    - mirna peč municipality
+  category: MUNICIPALITY

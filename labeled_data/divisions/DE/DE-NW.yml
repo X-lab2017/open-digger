@@ -1,0 +1,11 @@
+name: Nordrhein-Westfalen
+type: Division-1
+meta:
+  alpha2: DE-NW
+  includes:
+    - nordrhein-westfalen
+    - de-nw
+    - nw
+    - nordrhein-westfalen land
+    - north rhine-westphalia
+  category: LAND

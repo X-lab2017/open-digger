@@ -1,0 +1,10 @@
+name: Lower River
+type: Division-1
+meta:
+  alpha2: GM-L
+  includes:
+    - lower river
+    - gm-l
+    - l
+    - lower river division
+  category: DIVISION

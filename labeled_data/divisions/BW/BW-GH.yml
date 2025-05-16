@@ -1,0 +1,10 @@
+name: Ghanzi
+type: Division-1
+meta:
+  alpha2: BW-GH
+  includes:
+    - ghanzi
+    - bw-gh
+    - gh
+    - ghanzi district
+  category: DISTRICT

@@ -1,0 +1,10 @@
+name: Erzincan
+type: Division-1
+meta:
+  alpha2: TR-24
+  includes:
+    - erzincan
+    - tr-24
+    - '24'
+    - erzincan province
+  category: PROVINCE

@@ -1,0 +1,11 @@
+name: San Salvador
+type: Division-1
+meta:
+  alpha2: SV-SS
+  includes:
+    - san salvador
+    - sv-ss
+    - ss
+    - san salvador department
+    - svss
+  category: DEPARTMENT

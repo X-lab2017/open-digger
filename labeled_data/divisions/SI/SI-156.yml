@@ -1,0 +1,12 @@
+name: Dobrovnik
+type: Division-1
+meta:
+  alpha2: SI-156
+  includes:
+    - dobrovnik
+    - si-156
+    - '156'
+    - dobrovnik municipality
+    - dobronak
+    - dobronak municipality
+  category: MUNICIPALITY

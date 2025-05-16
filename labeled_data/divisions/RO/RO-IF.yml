@@ -1,0 +1,12 @@
+name: Ilfov
+type: Division-1
+meta:
+  alpha2: RO-IF
+  includes:
+    - ilfov
+    - ro-if
+    - if
+    - ilfov department
+    - județul ilfov
+    - ilfov county
+  category: DEPARTMENT

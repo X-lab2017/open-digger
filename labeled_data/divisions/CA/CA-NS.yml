@@ -1,0 +1,12 @@
+name: Nova Scotia
+type: Division-1
+meta:
+  alpha2: CA-NS
+  includes:
+    - nouvelle-écosse
+    - ca-ns
+    - ns
+    - nouvelle-écosse province
+    - nova scotia
+    - nova scotia province
+  category: PROVINCE

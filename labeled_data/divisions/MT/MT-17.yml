@@ -1,0 +1,10 @@
+name: Għaxaq
+type: Division-1
+meta:
+  alpha2: MT-17
+  includes:
+    - għaxaq
+    - mt-17
+    - '17'
+    - għaxaq local council
+  category: LOCAL COUNCIL

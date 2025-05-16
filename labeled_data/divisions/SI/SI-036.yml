@@ -1,0 +1,10 @@
+name: Idrija
+type: Division-1
+meta:
+  alpha2: SI-036
+  includes:
+    - idrija
+    - si-036
+    - '036'
+    - idrija municipality
+  category: MUNICIPALITY

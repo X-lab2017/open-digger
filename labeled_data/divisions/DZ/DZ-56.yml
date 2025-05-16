@@ -1,0 +1,10 @@
+name: Djanet
+type: Division-1
+meta:
+  alpha2: DZ-56
+  includes:
+    - djanet
+    - dz-56
+    - '56'
+    - djanet province
+  category: PROVINCE

@@ -1,0 +1,10 @@
+name: Birżebbuġa
+type: Division-1
+meta:
+  alpha2: MT-05
+  includes:
+    - birżebbuġa
+    - mt-05
+    - '05'
+    - birżebbuġa local council
+  category: LOCAL COUNCIL

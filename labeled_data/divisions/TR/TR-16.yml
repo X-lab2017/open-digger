@@ -1,0 +1,10 @@
+name: Bursa
+type: Division-1
+meta:
+  alpha2: TR-16
+  includes:
+    - bursa
+    - tr-16
+    - '16'
+    - bursa province
+  category: PROVINCE

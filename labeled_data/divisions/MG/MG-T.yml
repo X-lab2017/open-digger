@@ -1,0 +1,13 @@
+name: Antananarivo
+type: Division-1
+meta:
+  alpha2: MG-T
+  includes:
+    - antananarivo
+    - mg-t
+    - t
+    - antananarivo province
+    - analamanga
+    - itasy region
+    - vakinankaratra
+  category: PROVINCE

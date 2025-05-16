@@ -1,0 +1,10 @@
+name: Para
+type: Division-1
+meta:
+  alpha2: SR-PR
+  includes:
+    - para
+    - sr-pr
+    - pr
+    - para district
+  category: DISTRICT

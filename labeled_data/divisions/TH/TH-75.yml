@@ -1,0 +1,10 @@
+name: Samut Songkhram
+type: Division-1
+meta:
+  alpha2: TH-75
+  includes:
+    - samut songkhram
+    - th-75
+    - '75'
+    - samut songkhram province
+  category: PROVINCE

@@ -1,0 +1,82 @@
+name: Costa Rica
+type: Division-0
+meta:
+  alpha2: CR
+  includes:
+    - Costa Rica
+    - CR
+    - '188'
+    - the Republic of Costa Rica
+    - 哥斯达黎加
+  name_full: the Republic of Costa Rica
+  name_zh: 哥斯达黎加
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 52221
+    - year: 2020
+      quarter: 2
+      count: 57535
+    - year: 2020
+      quarter: 3
+      count: 63050
+    - year: 2020
+      quarter: 4
+      count: 67249
+    - year: 2021
+      quarter: 1
+      count: 71898
+    - year: 2021
+      quarter: 2
+      count: 78768
+    - year: 2021
+      quarter: 3
+      count: 84300
+    - year: 2021
+      quarter: 4
+      count: 88759
+    - year: 2022
+      quarter: 1
+      count: 94631
+    - year: 2022
+      quarter: 2
+      count: 100950
+    - year: 2022
+      quarter: 3
+      count: 106837
+    - year: 2022
+      quarter: 4
+      count: 111767
+    - year: 2023
+      quarter: 1
+      count: 118795
+    - year: 2023
+      quarter: 2
+      count: 127197
+    - year: 2023
+      quarter: 3
+      count: 133858
+    - year: 2023
+      quarter: 4
+      count: 139512
+    - year: 2024
+      quarter: 1
+      count: 147767
+    - year: 2024
+      quarter: 2
+      count: 154689
+    - year: 2024
+      quarter: 3
+      count: 161699
+    - year: 2024
+      quarter: 4
+      count: 167869
+data:
+  labels:
+    - CR-A
+    - CR-C
+    - CR-G
+    - CR-H
+    - CR-L
+    - CR-P
+    - CR-SJ

@@ -1,0 +1,10 @@
+name: Zou
+type: Division-1
+meta:
+  alpha2: BJ-ZO
+  includes:
+    - zou
+    - bj-zo
+    - zo
+    - zou department
+  category: DEPARTMENT

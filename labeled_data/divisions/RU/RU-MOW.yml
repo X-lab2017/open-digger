@@ -1,0 +1,12 @@
+name: Moskva
+type: Division-1
+meta:
+  alpha2: RU-MOW
+  includes:
+    - moskva
+    - ru-mow
+    - mow
+    - moskva autonomous city
+    - moscow city
+    - москва
+  category: AUTONOMOUS CITY

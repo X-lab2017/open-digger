@@ -1,0 +1,30 @@
+name: Est
+type: Division-1
+meta:
+  alpha2: BF-08
+  includes:
+    - est
+    - bf-08
+    - '08'
+    - est region
+    - gnagna
+    - bf-gna
+    - gna
+    - gnagna province
+    - gourma
+    - bf-gou
+    - gou
+    - gourma province
+    - komondjari
+    - bf-kmd
+    - kmd
+    - komondjari province
+    - kompienga
+    - bf-kmp
+    - kmp
+    - kompienga province
+    - tapoa
+    - bf-tap
+    - tap
+    - tapoa province
+  category: REGION

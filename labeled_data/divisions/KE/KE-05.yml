@@ -1,0 +1,11 @@
+name: Elgeyo/Marakwet
+type: Division-1
+meta:
+  alpha2: KE-05
+  includes:
+    - elgeyo/marakwet
+    - ke-05
+    - '05'
+    - elgeyo/marakwet county
+    - elgeyo-marakwet county
+  category: COUNTY

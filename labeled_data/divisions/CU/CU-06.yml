@@ -1,0 +1,10 @@
+name: Cienfuegos
+type: Division-1
+meta:
+  alpha2: CU-06
+  includes:
+    - cienfuegos
+    - cu-06
+    - '06'
+    - cienfuegos province
+  category: PROVINCE

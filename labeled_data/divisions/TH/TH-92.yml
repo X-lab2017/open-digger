@@ -1,0 +1,10 @@
+name: Trang
+type: Division-1
+meta:
+  alpha2: TH-92
+  includes:
+    - trang
+    - th-92
+    - '92'
+    - trang province
+  category: PROVINCE

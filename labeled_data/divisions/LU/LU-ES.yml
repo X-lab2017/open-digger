@@ -1,0 +1,14 @@
+name: Esch-sur-Alzette
+type: Division-1
+meta:
+  alpha2: LU-ES
+  includes:
+    - esch an der alzette
+    - lu-es
+    - es
+    - esch an der alzette canton
+    - esch-uelzecht
+    - esch-uelzecht canton
+    - esch-sur-alzette
+    - esch-sur-alzette canton
+  category: CANTON

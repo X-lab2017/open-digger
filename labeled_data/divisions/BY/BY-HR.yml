@@ -1,0 +1,19 @@
+name: Grodnenskaya oblast'
+type: Division-1
+meta:
+  alpha2: BY-HR
+  includes:
+    - grodnenskaja oblast'
+    - by-hr
+    - hr
+    - grodnenskaja oblast' oblast
+    - grodnenskaya oblast'
+    - grodnenskaya oblast' oblast
+    - hrodzienskaja voblasć
+    - hrodzienskaja voblasć oblast
+    - hrodzyenskaya voblasts'
+    - hrodzyenskaya voblasts' oblast
+    - hrodna region
+    - hrodna
+    - grodno province
+  category: OBLAST

@@ -1,0 +1,10 @@
+name: Kisumu
+type: Division-1
+meta:
+  alpha2: KE-17
+  includes:
+    - kisumu
+    - ke-17
+    - '17'
+    - kisumu county
+  category: COUNTY

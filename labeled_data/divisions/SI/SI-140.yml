@@ -1,0 +1,10 @@
+name: Vrhnika
+type: Division-1
+meta:
+  alpha2: SI-140
+  includes:
+    - vrhnika
+    - si-140
+    - '140'
+    - vrhnika municipality
+  category: MUNICIPALITY

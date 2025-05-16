@@ -1,0 +1,12 @@
+name: Qoraqalpog‘iston Respublikasi
+type: Division-1
+meta:
+  alpha2: UZ-QR
+  includes:
+    - qoraqalpog‘iston respublikasi
+    - uz-qr
+    - qr
+    - qoraqalpog‘iston respublikasi republic
+    - republic of karakalpakstan
+    - qoraqalpoghiston
+  category: REPUBLIC

@@ -1,0 +1,10 @@
+name: Braslovče
+type: Division-1
+meta:
+  alpha2: SI-151
+  includes:
+    - braslovče
+    - si-151
+    - '151'
+    - braslovče municipality
+  category: MUNICIPALITY

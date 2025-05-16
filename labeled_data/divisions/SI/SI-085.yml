@@ -1,0 +1,10 @@
+name: Novo Mesto
+type: Division-1
+meta:
+  alpha2: SI-085
+  includes:
+    - novo mesto
+    - si-085
+    - '085'
+    - novo mesto urban municipality
+  category: URBAN MUNICIPALITY

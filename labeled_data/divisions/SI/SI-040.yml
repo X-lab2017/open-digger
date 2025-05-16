@@ -1,0 +1,12 @@
+name: Izola
+type: Division-1
+meta:
+  alpha2: SI-040
+  includes:
+    - izola
+    - si-040
+    - '040'
+    - izola municipality
+    - isola
+    - isola municipality
+  category: MUNICIPALITY

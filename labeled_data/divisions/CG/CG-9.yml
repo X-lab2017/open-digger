@@ -1,0 +1,10 @@
+name: Niari
+type: Division-1
+meta:
+  alpha2: CG-9
+  includes:
+    - niari
+    - cg-9
+    - '9'
+    - niari department
+  category: DEPARTMENT

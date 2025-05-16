@@ -1,0 +1,13 @@
+name: Podlaskie
+type: Division-1
+meta:
+  alpha2: PL-20
+  includes:
+    - podlaskie
+    - pl-20
+    - '20'
+    - podlaskie voivodship
+    - podlaskie voivodeship
+    - województwo podlaskie
+    - pd
+  category: VOIVODSHIP

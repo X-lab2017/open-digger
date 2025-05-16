@@ -1,0 +1,10 @@
+name: Komárom-Esztergom
+type: Division-1
+meta:
+  alpha2: HU-KE
+  includes:
+    - komárom-esztergom
+    - hu-ke
+    - ke
+    - komárom-esztergom county
+  category: COUNTY

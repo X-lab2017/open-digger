@@ -1,0 +1,90 @@
+name: Malaysia
+type: Division-0
+meta:
+  alpha2: MY
+  includes:
+    - Malaysia
+    - MY
+    - '458'
+    - 马来西亚
+  name_full: Malaysia
+  name_zh: 马来西亚
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 230371
+    - year: 2020
+      quarter: 2
+      count: 257191
+    - year: 2020
+      quarter: 3
+      count: 280133
+    - year: 2020
+      quarter: 4
+      count: 306282
+    - year: 2021
+      quarter: 1
+      count: 330302
+    - year: 2021
+      quarter: 2
+      count: 358033
+    - year: 2021
+      quarter: 3
+      count: 389910
+    - year: 2021
+      quarter: 4
+      count: 421744
+    - year: 2022
+      quarter: 1
+      count: 452665
+    - year: 2022
+      quarter: 2
+      count: 481625
+    - year: 2022
+      quarter: 3
+      count: 505696
+    - year: 2022
+      quarter: 4
+      count: 531869
+    - year: 2023
+      quarter: 1
+      count: 562878
+    - year: 2023
+      quarter: 2
+      count: 603511
+    - year: 2023
+      quarter: 3
+      count: 636916
+    - year: 2023
+      quarter: 4
+      count: 679803
+    - year: 2024
+      quarter: 1
+      count: 727457
+    - year: 2024
+      quarter: 2
+      count: 746628
+    - year: 2024
+      quarter: 3
+      count: 775713
+    - year: 2024
+      quarter: 4
+      count: 815620
+data:
+  labels:
+    - MY-01
+    - MY-02
+    - MY-03
+    - MY-04
+    - MY-05
+    - MY-06
+    - MY-08
+    - MY-09
+    - MY-07
+    - MY-12
+    - MY-13
+    - MY-10
+    - MY-11
+    - MY-14
+    - MY-15
+    - MY-16

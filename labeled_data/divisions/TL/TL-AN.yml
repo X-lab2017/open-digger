@@ -1,0 +1,12 @@
+name: Ainaru
+type: Division-1
+meta:
+  alpha2: TL-AN
+  includes:
+    - ainaro
+    - tl-an
+    - an
+    - ainaro municipality
+    - ainaru
+    - ainaru municipality
+  category: MUNICIPALITY

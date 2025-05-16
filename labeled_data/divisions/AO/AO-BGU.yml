@@ -1,0 +1,10 @@
+name: Benguela
+type: Division-1
+meta:
+  alpha2: AO-BGU
+  includes:
+    - benguela
+    - ao-bgu
+    - bgu
+    - benguela province
+  category: PROVINCE

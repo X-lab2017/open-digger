@@ -1,0 +1,16 @@
+name: Cusco
+type: Division-1
+meta:
+  alpha2: PE-CUS
+  includes:
+    - cusco
+    - pe-cus
+    - cus
+    - cusco region
+    - cuzco
+    - cuzco region
+    - kusku
+    - kusku region
+    - qusqu
+    - qusqu region
+  category: REGION

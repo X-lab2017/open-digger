@@ -1,0 +1,11 @@
+name: Kordestān
+type: Division-1
+meta:
+  alpha2: IR-12
+  includes:
+    - kordestān
+    - ir-12
+    - '12'
+    - kordestān province
+    - kurdistan province
+  category: PROVINCE

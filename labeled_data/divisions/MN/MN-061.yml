@@ -1,0 +1,10 @@
+name: Dornod
+type: Division-1
+meta:
+  alpha2: MN-061
+  includes:
+    - dornod
+    - mn-061
+    - '061'
+    - dornod province
+  category: PROVINCE

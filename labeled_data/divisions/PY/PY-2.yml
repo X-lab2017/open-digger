@@ -1,0 +1,10 @@
+name: San Pedro
+type: Division-1
+meta:
+  alpha2: PY-2
+  includes:
+    - san pedro
+    - py-2
+    - '2'
+    - san pedro department
+  category: DEPARTMENT

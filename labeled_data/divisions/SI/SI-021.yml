@@ -1,0 +1,10 @@
+name: Dobrova-Polhov Gradec
+type: Division-1
+meta:
+  alpha2: SI-021
+  includes:
+    - dobrova-polhov gradec
+    - si-021
+    - '021'
+    - dobrova-polhov gradec municipality
+  category: MUNICIPALITY

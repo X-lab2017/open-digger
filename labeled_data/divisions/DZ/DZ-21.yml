@@ -1,0 +1,10 @@
+name: Skikda
+type: Division-1
+meta:
+  alpha2: DZ-21
+  includes:
+    - skikda
+    - dz-21
+    - '21'
+    - skikda province
+  category: PROVINCE

@@ -1,0 +1,10 @@
+name: Kavango West
+type: Division-1
+meta:
+  alpha2: NA-KW
+  includes:
+    - kavango west
+    - na-kw
+    - kw
+    - kavango west region
+  category: REGION

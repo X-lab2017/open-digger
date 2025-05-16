@@ -1,0 +1,12 @@
+name: Limpopo
+type: Division-1
+meta:
+  alpha2: ZA-LP
+  includes:
+    - limpopo
+    - za-lp
+    - lp
+    - limpopo province
+    - vhembe
+    - vhembe province
+  category: PROVINCE

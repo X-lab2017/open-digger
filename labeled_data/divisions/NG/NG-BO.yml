@@ -1,0 +1,10 @@
+name: Borno
+type: Division-1
+meta:
+  alpha2: NG-BO
+  includes:
+    - borno
+    - ng-bo
+    - bo
+    - borno state
+  category: STATE

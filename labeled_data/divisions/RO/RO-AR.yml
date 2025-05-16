@@ -1,0 +1,10 @@
+name: Arad
+type: Division-1
+meta:
+  alpha2: RO-AR
+  includes:
+    - arad
+    - ro-ar
+    - ar
+    - arad department
+  category: DEPARTMENT

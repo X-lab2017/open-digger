@@ -1,0 +1,36 @@
+name: Iqlīm Kūrdistān
+type: Division-1
+meta:
+  alpha2: IQ-KR
+  includes:
+    - arbīl
+    - iq-ar
+    - ar
+    - arbīl governorate
+    - as sulaymānīyah
+    - iq-su
+    - su
+    - as sulaymānīyah governorate
+    - dahūk
+    - iq-da
+    - da
+    - dahūk governorate
+    - dihok
+    - dihok governorate
+    - herêm-î kurdistan
+    - iq-kr
+    - kr
+    - herêm-î kurdistan region
+    - hewlêr
+    - hewlêr governorate
+    - iqlīm kūrdistān
+    - iqlīm kūrdistān region
+    - slêmanî
+    - slêmanî governorate
+    - kurdistan region
+    - kurdistan
+    - erbil governorate
+    - أربيل محافظة
+    - duhok governorate
+    - sulaymaniyah governorate
+  category: REGION

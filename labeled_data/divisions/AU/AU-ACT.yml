@@ -1,0 +1,10 @@
+name: Australian Capital Territory
+type: Division-1
+meta:
+  alpha2: AU-ACT
+  includes:
+    - australian capital territory
+    - au-act
+    - act
+    - australian capital territory territory
+  category: TERRITORY

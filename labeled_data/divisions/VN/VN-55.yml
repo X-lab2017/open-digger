@@ -1,0 +1,11 @@
+name: Bạc Liêu
+type: Division-1
+meta:
+  alpha2: VN-55
+  includes:
+    - bạc liêu
+    - vn-55
+    - '55'
+    - bạc liêu province
+    - bac lieu
+  category: PROVINCE

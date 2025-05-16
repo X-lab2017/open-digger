@@ -1,0 +1,10 @@
+name: Ormož
+type: Division-1
+meta:
+  alpha2: SI-087
+  includes:
+    - ormož
+    - si-087
+    - '087'
+    - ormož municipality
+  category: MUNICIPALITY

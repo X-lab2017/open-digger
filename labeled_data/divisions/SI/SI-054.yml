@@ -1,0 +1,10 @@
+name: Krško
+type: Division-1
+meta:
+  alpha2: SI-054
+  includes:
+    - krško
+    - si-054
+    - '054'
+    - krško urban municipality
+  category: URBAN MUNICIPALITY

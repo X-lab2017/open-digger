@@ -1,0 +1,14 @@
+name: Western
+type: Division-1
+meta:
+  alpha2: RW-04
+  includes:
+    - iburengerazuba
+    - rw-04
+    - '04'
+    - iburengerazuba province
+    - ouest
+    - ouest province
+    - western
+    - western province
+  category: PROVINCE

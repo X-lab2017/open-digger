@@ -1,0 +1,12 @@
+name: Ciudad Autónoma de Buenos Aires
+type: Division-1
+meta:
+  alpha2: AR-C
+  includes:
+    - ciudad autónoma de buenos aires
+    - ar-c
+    - c
+    - ciudad autónoma de buenos aires city
+    - cba
+    - buenos aires autonomous city
+  category: CITY

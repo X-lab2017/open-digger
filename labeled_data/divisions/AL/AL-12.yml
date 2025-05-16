@@ -1,0 +1,10 @@
+name: Vlorë
+type: Division-1
+meta:
+  alpha2: AL-12
+  includes:
+    - vlorë
+    - al-12
+    - '12'
+    - vlorë county
+  category: COUNTY

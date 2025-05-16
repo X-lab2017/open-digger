@@ -1,0 +1,12 @@
+name: Nuwākshūţ al Gharbīyah
+type: Division-1
+meta:
+  alpha2: MR-13
+  includes:
+    - nouakchott ouest
+    - mr-13
+    - '13'
+    - nouakchott ouest region
+    - nuwākshūţ al gharbīyah
+    - nuwākshūţ al gharbīyah region
+  category: REGION

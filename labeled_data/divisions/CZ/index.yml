@@ -1,0 +1,90 @@
+name: Czechia
+type: Division-0
+meta:
+  alpha2: CZ
+  includes:
+    - Czechia
+    - CZ
+    - '203'
+    - the Czech Republic
+    - 捷克
+  name_full: the Czech Republic
+  name_zh: 捷克
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 155721
+    - year: 2020
+      quarter: 2
+      count: 166849
+    - year: 2020
+      quarter: 3
+      count: 176051
+    - year: 2020
+      quarter: 4
+      count: 189136
+    - year: 2021
+      quarter: 1
+      count: 202890
+    - year: 2021
+      quarter: 2
+      count: 213752
+    - year: 2021
+      quarter: 3
+      count: 223549
+    - year: 2021
+      quarter: 4
+      count: 237034
+    - year: 2022
+      quarter: 1
+      count: 253414
+    - year: 2022
+      quarter: 2
+      count: 268517
+    - year: 2022
+      quarter: 3
+      count: 279861
+    - year: 2022
+      quarter: 4
+      count: 295589
+    - year: 2023
+      quarter: 1
+      count: 311778
+    - year: 2023
+      quarter: 2
+      count: 328542
+    - year: 2023
+      quarter: 3
+      count: 343417
+    - year: 2023
+      quarter: 4
+      count: 363958
+    - year: 2024
+      quarter: 1
+      count: 381771
+    - year: 2024
+      quarter: 2
+      count: 396884
+    - year: 2024
+      quarter: 3
+      count: 411778
+    - year: 2024
+      quarter: 4
+      count: 431559
+data:
+  labels:
+    - CZ-20
+    - CZ-64
+    - CZ-80
+    - CZ-41
+    - CZ-42
+    - CZ-53
+    - CZ-32
+    - CZ-63
+    - CZ-52
+    - CZ-51
+    - CZ-71
+    - CZ-31
+    - CZ-72
+    - CZ-10
+    - ':companies/jetbrains'

@@ -1,0 +1,10 @@
+name: Mascara
+type: Division-1
+meta:
+  alpha2: DZ-29
+  includes:
+    - mascara
+    - dz-29
+    - '29'
+    - mascara province
+  category: PROVINCE

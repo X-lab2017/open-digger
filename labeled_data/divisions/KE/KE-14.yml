@@ -1,0 +1,10 @@
+name: Kilifi
+type: Division-1
+meta:
+  alpha2: KE-14
+  includes:
+    - kilifi
+    - ke-14
+    - '14'
+    - kilifi county
+  category: COUNTY

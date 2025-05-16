@@ -1,0 +1,79 @@
+name: Bahrain
+type: Division-0
+meta:
+  alpha2: BH
+  includes:
+    - Bahrain
+    - BH
+    - '048'
+    - the Kingdom of Bahrain
+    - 巴林
+  name_full: the Kingdom of Bahrain
+  name_zh: 巴林
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 9381
+    - year: 2020
+      quarter: 2
+      count: 10836
+    - year: 2020
+      quarter: 3
+      count: 12182
+    - year: 2020
+      quarter: 4
+      count: 13588
+    - year: 2021
+      quarter: 1
+      count: 14877
+    - year: 2021
+      quarter: 2
+      count: 16170
+    - year: 2021
+      quarter: 3
+      count: 17405
+    - year: 2021
+      quarter: 4
+      count: 19084
+    - year: 2022
+      quarter: 1
+      count: 20701
+    - year: 2022
+      quarter: 2
+      count: 22089
+    - year: 2022
+      quarter: 3
+      count: 23345
+    - year: 2022
+      quarter: 4
+      count: 24950
+    - year: 2023
+      quarter: 1
+      count: 26988
+    - year: 2023
+      quarter: 2
+      count: 29282
+    - year: 2023
+      quarter: 3
+      count: 31017
+    - year: 2023
+      quarter: 4
+      count: 33198
+    - year: 2024
+      quarter: 1
+      count: 35254
+    - year: 2024
+      quarter: 2
+      count: 36939
+    - year: 2024
+      quarter: 3
+      count: 38462
+    - year: 2024
+      quarter: 4
+      count: 40923
+data:
+  labels:
+    - BH-14
+    - BH-15
+    - BH-13
+    - BH-17

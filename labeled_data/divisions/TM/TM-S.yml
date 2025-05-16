@@ -1,0 +1,12 @@
+name: Aşgabat
+type: Division-1
+meta:
+  alpha2: TM-S
+  includes:
+    - aşgabat
+    - tm-s
+    - s
+    - aşgabat city
+    - ashgabat
+    - ashgabat city
+  category: CITY

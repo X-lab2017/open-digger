@@ -1,0 +1,48 @@
+name: Castilla y León
+type: Division-1
+meta:
+  alpha2: ES-CL
+  includes:
+    - burgos
+    - es-bu
+    - bu
+    - burgos province
+    - castilla y león
+    - es-cl
+    - cl
+    - castilla y león autonomous community
+    - león
+    - es-le
+    - le
+    - león province
+    - palencia
+    - es-p
+    - p
+    - palencia province
+    - salamanca
+    - es-sa
+    - sa
+    - salamanca province
+    - segovia
+    - es-sg
+    - sg
+    - segovia province
+    - soria
+    - es-so
+    - so
+    - soria province
+    - valladolid
+    - es-va
+    - va
+    - valladolid province
+    - zamora
+    - es-za
+    - za
+    - zamora province
+    - ávila
+    - es-av
+    - av
+    - ávila province
+    - castile and león
+    - castilla and leon
+  category: AUTONOMOUS COMMUNITY

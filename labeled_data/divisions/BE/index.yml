@@ -1,0 +1,79 @@
+name: Belgium
+type: Division-0
+meta:
+  alpha2: BE
+  includes:
+    - Belgium
+    - BE
+    - '056'
+    - the Kingdom of Belgium
+    - 比利时
+  name_full: the Kingdom of Belgium
+  name_zh: 比利时
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 215927
+    - year: 2020
+      quarter: 2
+      count: 232366
+    - year: 2020
+      quarter: 3
+      count: 246364
+    - year: 2020
+      quarter: 4
+      count: 265029
+    - year: 2021
+      quarter: 1
+      count: 282771
+    - year: 2021
+      quarter: 2
+      count: 296092
+    - year: 2021
+      quarter: 3
+      count: 308251
+    - year: 2021
+      quarter: 4
+      count: 325754
+    - year: 2022
+      quarter: 1
+      count: 347648
+    - year: 2022
+      quarter: 2
+      count: 364198
+    - year: 2022
+      quarter: 3
+      count: 378625
+    - year: 2022
+      quarter: 4
+      count: 397241
+    - year: 2023
+      quarter: 1
+      count: 418586
+    - year: 2023
+      quarter: 2
+      count: 437457
+    - year: 2023
+      quarter: 3
+      count: 454427
+    - year: 2023
+      quarter: 4
+      count: 476604
+    - year: 2024
+      quarter: 1
+      count: 501472
+    - year: 2024
+      quarter: 2
+      count: 518561
+    - year: 2024
+      quarter: 3
+      count: 536055
+    - year: 2024
+      quarter: 4
+      count: 560768
+data:
+  labels:
+    - BE-VLG
+    - BE-WAL
+    - BE-BRU
+    - ':companies/odoo'

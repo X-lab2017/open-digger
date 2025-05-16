@@ -1,0 +1,11 @@
+name: Lənkəran
+type: Division-1
+meta:
+  alpha2: AZ-LA
+  includes:
+    - lənkəran
+    - az-la
+    - la
+    - lənkəran municipality
+    - lankaran-astara
+  category: MUNICIPALITY

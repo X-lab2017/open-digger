@@ -1,0 +1,10 @@
+name: Cankuzo
+type: Division-1
+meta:
+  alpha2: BI-CA
+  includes:
+    - cankuzo
+    - bi-ca
+    - ca
+    - cankuzo province
+  category: PROVINCE

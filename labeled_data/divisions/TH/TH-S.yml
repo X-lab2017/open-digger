@@ -1,0 +1,10 @@
+name: Phatthaya
+type: Division-1
+meta:
+  alpha2: TH-S
+  includes:
+    - phatthaya
+    - th-s
+    - s
+    - phatthaya special administrative city
+  category: SPECIAL ADMINISTRATIVE CITY

@@ -1,0 +1,10 @@
+name: Zreče
+type: Division-1
+meta:
+  alpha2: SI-144
+  includes:
+    - zreče
+    - si-144
+    - '144'
+    - zreče municipality
+  category: MUNICIPALITY

@@ -1,0 +1,11 @@
+name: Phichit
+type: Division-1
+meta:
+  alpha2: TH-66
+  includes:
+    - phichit
+    - th-66
+    - '66'
+    - phichit province
+    - chang wat phichit
+  category: PROVINCE

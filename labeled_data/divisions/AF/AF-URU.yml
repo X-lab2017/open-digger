@@ -1,0 +1,10 @@
+name: Uruzgān
+type: Division-1
+meta:
+  alpha2: AF-URU
+  includes:
+    - uruzgān
+    - af-uru
+    - uru
+    - uruzgān province
+  category: PROVINCE

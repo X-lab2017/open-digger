@@ -1,0 +1,10 @@
+name: Aksaray
+type: Division-1
+meta:
+  alpha2: TR-68
+  includes:
+    - aksaray
+    - tr-68
+    - '68'
+    - aksaray province
+  category: PROVINCE

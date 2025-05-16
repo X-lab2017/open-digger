@@ -1,0 +1,10 @@
+name: Paktīkā
+type: Division-1
+meta:
+  alpha2: AF-PKA
+  includes:
+    - paktīkā
+    - af-pka
+    - pka
+    - paktīkā province
+  category: PROVINCE

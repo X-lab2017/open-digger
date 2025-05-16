@@ -1,0 +1,15 @@
+name: Norra Österbotten
+type: Division-1
+meta:
+  alpha2: FI-14
+  includes:
+    - norra österbotten
+    - fi-14
+    - '14'
+    - norra österbotten region
+    - pohjois-pohjanmaa
+    - pohjois-pohjanmaa region
+    - north ostrobothnia
+    - northern ostrobothnia
+    - fi1a2
+  category: REGION

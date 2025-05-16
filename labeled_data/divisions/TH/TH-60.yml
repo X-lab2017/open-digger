@@ -1,0 +1,10 @@
+name: Nakhon Sawan
+type: Division-1
+meta:
+  alpha2: TH-60
+  includes:
+    - nakhon sawan
+    - th-60
+    - '60'
+    - nakhon sawan province
+  category: PROVINCE

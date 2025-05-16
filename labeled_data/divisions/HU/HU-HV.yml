@@ -1,0 +1,10 @@
+name: Hódmezővásárhely
+type: Division-1
+meta:
+  alpha2: HU-HV
+  includes:
+    - hódmezővásárhely
+    - hu-hv
+    - hv
+    - hódmezővásárhely city with county rights
+  category: CITY WITH COUNTY RIGHTS

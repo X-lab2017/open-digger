@@ -1,0 +1,11 @@
+name: Al Qādisīyah
+type: Division-1
+meta:
+  alpha2: IQ-QA
+  includes:
+    - al qādisīyah
+    - iq-qa
+    - qa
+    - al qādisīyah governorate
+    - al-qādisiyyah governorate
+  category: GOVERNORATE

@@ -1,0 +1,10 @@
+name: Tržič
+type: Division-1
+meta:
+  alpha2: SI-131
+  includes:
+    - tržič
+    - si-131
+    - '131'
+    - tržič municipality
+  category: MUNICIPALITY

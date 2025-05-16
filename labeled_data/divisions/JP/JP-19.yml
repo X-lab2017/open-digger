@@ -1,0 +1,12 @@
+name: Yamanasi
+type: Division-1
+meta:
+  alpha2: JP-19
+  includes:
+    - yamanashi
+    - jp-19
+    - '19'
+    - yamanashi prefecture
+    - yamanasi
+    - yamanasi prefecture
+  category: PREFECTURE

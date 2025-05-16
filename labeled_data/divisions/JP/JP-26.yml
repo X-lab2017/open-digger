@@ -1,0 +1,13 @@
+name: Kyôto
+type: Division-1
+meta:
+  alpha2: JP-26
+  includes:
+    - kyoto
+    - jp-26
+    - '26'
+    - kyoto prefecture
+    - kyôto
+    - kyôto prefecture
+    - 京都府
+  category: PREFECTURE

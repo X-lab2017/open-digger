@@ -1,0 +1,10 @@
+name: Chimbu
+type: Division-1
+meta:
+  alpha2: PG-CPK
+  includes:
+    - chimbu
+    - pg-cpk
+    - cpk
+    - chimbu province
+  category: PROVINCE

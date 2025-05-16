@@ -1,0 +1,11 @@
+name: Darhan uul
+type: Division-1
+meta:
+  alpha2: MN-037
+  includes:
+    - darhan uul
+    - mn-037
+    - '037'
+    - darhan uul province
+    - darkhan-uul
+  category: PROVINCE

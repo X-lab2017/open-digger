@@ -1,0 +1,85 @@
+name: Zambia
+type: Division-0
+meta:
+  alpha2: ZM
+  includes:
+    - Zambia
+    - ZM
+    - '894'
+    - the Republic of Zambia
+    - 赞比亚
+  name_full: the Republic of Zambia
+  name_zh: 赞比亚
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 6964
+    - year: 2020
+      quarter: 2
+      count: 8048
+    - year: 2020
+      quarter: 3
+      count: 9033
+    - year: 2020
+      quarter: 4
+      count: 9847
+    - year: 2021
+      quarter: 1
+      count: 10877
+    - year: 2021
+      quarter: 2
+      count: 11869
+    - year: 2021
+      quarter: 3
+      count: 12944
+    - year: 2021
+      quarter: 4
+      count: 14008
+    - year: 2022
+      quarter: 1
+      count: 15367
+    - year: 2022
+      quarter: 2
+      count: 16662
+    - year: 2022
+      quarter: 3
+      count: 18096
+    - year: 2022
+      quarter: 4
+      count: 19443
+    - year: 2023
+      quarter: 1
+      count: 20975
+    - year: 2023
+      quarter: 2
+      count: 22853
+    - year: 2023
+      quarter: 3
+      count: 24503
+    - year: 2023
+      quarter: 4
+      count: 25983
+    - year: 2024
+      quarter: 1
+      count: 28399
+    - year: 2024
+      quarter: 2
+      count: 30499
+    - year: 2024
+      quarter: 3
+      count: 32704
+    - year: 2024
+      quarter: 4
+      count: 35507
+data:
+  labels:
+    - ZM-02
+    - ZM-08
+    - ZM-03
+    - ZM-04
+    - ZM-09
+    - ZM-10
+    - ZM-06
+    - ZM-05
+    - ZM-07
+    - ZM-01

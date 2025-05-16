@@ -1,0 +1,10 @@
+name: Amānat al ‘Āşimah
+type: Division-1
+meta:
+  alpha2: YE-SA
+  includes:
+    - amānat al ‘āşimah
+    - ye-sa
+    - sa
+    - amānat al ‘āşimah municipality
+  category: MUNICIPALITY

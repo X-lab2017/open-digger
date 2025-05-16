@@ -1,0 +1,10 @@
+name: Borski okrug
+type: Division-1
+meta:
+  alpha2: RS-14
+  includes:
+    - borski okrug
+    - rs-14
+    - '14'
+    - borski okrug district
+  category: DISTRICT

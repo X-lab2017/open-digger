@@ -1,0 +1,11 @@
+name: San Luis
+type: Division-1
+meta:
+  alpha2: AR-D
+  includes:
+    - san luis
+    - ar-d
+    - d
+    - san luis province
+    - sl
+  category: PROVINCE

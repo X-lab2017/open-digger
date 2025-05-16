@@ -1,0 +1,13 @@
+name: Al Jawf
+type: Division-1
+meta:
+  alpha2: SA-12
+  includes:
+    - al jawf
+    - sa-12
+    - '12'
+    - al jawf region
+    - jof
+    - al jowf province
+    - al jawf province
+  category: REGION

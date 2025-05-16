@@ -1,0 +1,12 @@
+name: Shimālī al Baḩrī al Aḩmar
+type: Division-1
+meta:
+  alpha2: ER-SK
+  includes:
+    - semienawi k’eyyĭḥ baḥri
+    - er-sk
+    - sk
+    - semienawi k’eyyĭḥ baḥri region
+    - shimālī al baḩrī al aḩmar
+    - shimālī al baḩrī al aḩmar region
+  category: REGION

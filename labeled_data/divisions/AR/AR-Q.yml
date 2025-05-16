@@ -1,0 +1,11 @@
+name: Neuquén
+type: Division-1
+meta:
+  alpha2: AR-Q
+  includes:
+    - neuquén
+    - ar-q
+    - q
+    - neuquén province
+    - nqn
+  category: PROVINCE

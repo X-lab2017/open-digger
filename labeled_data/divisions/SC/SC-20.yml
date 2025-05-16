@@ -1,0 +1,14 @@
+name: Pwent Lari
+type: Division-1
+meta:
+  alpha2: SC-20
+  includes:
+    - pointe la rue
+    - sc-20
+    - '20'
+    - pointe la rue district
+    - pointe larue
+    - pointe larue district
+    - pwent lari
+    - pwent lari district
+  category: DISTRICT

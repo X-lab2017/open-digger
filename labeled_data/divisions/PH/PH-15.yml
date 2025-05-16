@@ -1,0 +1,45 @@
+name: Cordillera Administrative Region
+type: Division-1
+meta:
+  alpha2: PH-15
+  includes:
+    - abra
+    - ph-abr
+    - abr
+    - abra province
+    - apayao
+    - ph-apa
+    - apa
+    - apayao province
+    - apayaw
+    - apayaw province
+    - benget
+    - ph-ben
+    - ben
+    - benget province
+    - benguet
+    - benguet province
+    - cordillera administrative region
+    - ph-15
+    - '15'
+    - cordillera administrative region region
+    - ifugao
+    - ph-ifu
+    - ifu
+    - ifugao province
+    - ipugaw
+    - ipugaw province
+    - kalinga
+    - ph-kal
+    - kal
+    - kalinga province
+    - lalawigang bulubundukin
+    - ph-mou
+    - mou
+    - lalawigang bulubundukin province
+    - mountain province
+    - mountain province province
+    - rehiyon ng administratibo ng kordilyera
+    - rehiyon ng administratibo ng kordilyera region
+    - cordillera admin region
+  category: REGION

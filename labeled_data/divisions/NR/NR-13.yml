@@ -1,0 +1,10 @@
+name: Uaboe
+type: Division-1
+meta:
+  alpha2: NR-13
+  includes:
+    - uaboe
+    - nr-13
+    - '13'
+    - uaboe district
+  category: DISTRICT

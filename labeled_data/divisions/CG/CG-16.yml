@@ -1,0 +1,10 @@
+name: Pointe-Noire
+type: Division-1
+meta:
+  alpha2: CG-16
+  includes:
+    - pointe-noire
+    - cg-16
+    - '16'
+    - pointe-noire department
+  category: DEPARTMENT

@@ -1,0 +1,11 @@
+name: Tamaulipas
+type: Division-1
+meta:
+  alpha2: MX-TAM
+  includes:
+    - tamaulipas
+    - mx-tam
+    - tam
+    - tamaulipas state
+    - tamps
+  category: STATE

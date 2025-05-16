@@ -1,0 +1,15 @@
+name: Louangphabang
+type: Division-1
+meta:
+  alpha2: LA-LP
+  includes:
+    - louangphabang
+    - la-lp
+    - lp
+    - louangphabang province
+    - luangprabang
+    - luangprabang province
+    - ຫຼວງພະບາງ
+    - ແຂວງຫຼວງພະບາງ
+    - luang prabang province
+  category: PROVINCE

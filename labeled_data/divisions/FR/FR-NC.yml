@@ -1,0 +1,10 @@
+name: Nouvelle-Calédonie
+type: Division-1
+meta:
+  alpha2: FR-NC
+  includes:
+    - nouvelle-calédonie
+    - fr-nc
+    - nc
+    - nouvelle-calédonie overseas collectivity with special status
+  category: OVERSEAS COLLECTIVITY WITH SPECIAL STATUS

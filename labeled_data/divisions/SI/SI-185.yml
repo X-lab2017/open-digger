@@ -1,0 +1,10 @@
+name: Trnovska Vas
+type: Division-1
+meta:
+  alpha2: SI-185
+  includes:
+    - trnovska vas
+    - si-185
+    - '185'
+    - trnovska vas municipality
+  category: MUNICIPALITY

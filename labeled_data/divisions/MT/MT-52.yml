@@ -1,0 +1,10 @@
+name: Sannat
+type: Division-1
+meta:
+  alpha2: MT-52
+  includes:
+    - sannat
+    - mt-52
+    - '52'
+    - sannat local council
+  category: LOCAL COUNCIL

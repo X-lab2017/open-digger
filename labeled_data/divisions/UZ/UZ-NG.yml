@@ -1,0 +1,10 @@
+name: Namangan
+type: Division-1
+meta:
+  alpha2: UZ-NG
+  includes:
+    - namangan
+    - uz-ng
+    - ng
+    - namangan region
+  category: REGION

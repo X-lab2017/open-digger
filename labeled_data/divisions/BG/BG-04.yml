@@ -1,0 +1,12 @@
+name: Veliko Tarnovo
+type: Division-1
+meta:
+  alpha2: BG-04
+  includes:
+    - veliko tarnovo
+    - bg-04
+    - '04'
+    - veliko tarnovo district
+    - veliko tarnovo province
+    - veliko turnovo
+  category: DISTRICT

@@ -1,0 +1,14 @@
+name: Primorskiy kray
+type: Division-1
+meta:
+  alpha2: RU-PRI
+  includes:
+    - primorskij kraj
+    - ru-pri
+    - pri
+    - primorskij kraj administrative territory
+    - primorskiy kray
+    - primorskiy kray administrative territory
+    - primorsky krai
+    - primorye
+  category: ADMINISTRATIVE TERRITORY

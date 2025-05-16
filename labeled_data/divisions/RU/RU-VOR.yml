@@ -1,0 +1,14 @@
+name: Voronežskaja oblast'
+type: Division-1
+meta:
+  alpha2: RU-VOR
+  includes:
+    - voronezhskaya oblast'
+    - ru-vor
+    - vor
+    - voronezhskaya oblast' administrative region
+    - voronežskaja oblast'
+    - voronežskaja oblast' administrative region
+    - voronezh oblast
+    - voronezh
+  category: ADMINISTRATIVE REGION

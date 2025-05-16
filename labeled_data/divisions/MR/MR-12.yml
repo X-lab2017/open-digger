@@ -1,0 +1,10 @@
+name: Inchiri
+type: Division-1
+meta:
+  alpha2: MR-12
+  includes:
+    - inchiri
+    - mr-12
+    - '12'
+    - inchiri region
+  category: REGION

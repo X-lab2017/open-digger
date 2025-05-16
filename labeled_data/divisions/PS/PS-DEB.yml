@@ -1,0 +1,12 @@
+name: Deir El Balah
+type: Division-1
+meta:
+  alpha2: PS-DEB
+  includes:
+    - dayr al balaḩ
+    - ps-deb
+    - deb
+    - dayr al balaḩ governorate
+    - deir el balah
+    - deir el balah governorate
+  category: GOVERNORATE

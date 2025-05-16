@@ -1,0 +1,13 @@
+name: Hwanghaipukto
+type: Division-1
+meta:
+  alpha2: KP-06
+  includes:
+    - hwanghae-bukto
+    - kp-06
+    - '06'
+    - hwanghae-bukto province
+    - hwanghaipukto
+    - hwanghaipukto province
+    - north hwanghae
+  category: PROVINCE

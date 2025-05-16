@@ -1,0 +1,10 @@
+name: Rogaland
+type: Division-1
+meta:
+  alpha2: NO-11
+  includes:
+    - rogaland
+    - no-11
+    - '11'
+    - rogaland county
+  category: COUNTY

@@ -1,0 +1,15 @@
+name: North-West
+type: Division-1
+meta:
+  alpha2: CM-NW
+  includes:
+    - nord-ouest
+    - cm-nw
+    - nw
+    - nord-ouest region
+    - north-west
+    - north-west region
+    - région du nord-ouest
+    - northwest
+    - northwest region
+  category: REGION

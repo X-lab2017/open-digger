@@ -1,0 +1,12 @@
+name: Salaspils novads
+type: Division-1
+meta:
+  alpha2: LV-087
+  includes:
+    - salaspils novads
+    - lv-087
+    - '087'
+    - salaspils novads municipality
+    - salaspils
+    - salaspils municipality
+  category: MUNICIPALITY

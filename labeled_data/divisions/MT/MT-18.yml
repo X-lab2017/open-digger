@@ -1,0 +1,10 @@
+name: Ħamrun
+type: Division-1
+meta:
+  alpha2: MT-18
+  includes:
+    - ħamrun
+    - mt-18
+    - '18'
+    - ħamrun local council
+  category: LOCAL COUNCIL

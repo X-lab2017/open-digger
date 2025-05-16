@@ -1,0 +1,44 @@
+name: Lääne-Virumaa
+type: Division-1
+meta:
+  alpha2: EE-60
+  includes:
+    - haljala
+    - ee-191
+    - '191'
+    - haljala rural municipality
+    - kadrina
+    - ee-272
+    - '272'
+    - kadrina rural municipality
+    - lääne-virumaa
+    - ee-60
+    - '60'
+    - lääne-virumaa county
+    - rakvere
+    - ee-663
+    - '663'
+    - rakvere urban municipality
+    - ee-661
+    - '661'
+    - rakvere rural municipality
+    - tapa
+    - ee-792
+    - '792'
+    - tapa rural municipality
+    - vinni
+    - ee-901
+    - '901'
+    - vinni rural municipality
+    - viru-nigula
+    - ee-903
+    - '903'
+    - viru-nigula rural municipality
+    - väike-maarja
+    - ee-928
+    - '928'
+    - väike-maarja rural municipality
+    - lääne-viru county
+    - lääne-viru maakond
+    - laane-viru
+  category: COUNTY

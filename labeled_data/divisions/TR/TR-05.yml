@@ -1,0 +1,10 @@
+name: Amasya
+type: Division-1
+meta:
+  alpha2: TR-05
+  includes:
+    - amasya
+    - tr-05
+    - '05'
+    - amasya province
+  category: PROVINCE

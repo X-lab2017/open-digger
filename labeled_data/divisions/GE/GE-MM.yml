@@ -1,0 +1,10 @@
+name: Mtskheta-Mtianeti
+type: Division-1
+meta:
+  alpha2: GE-MM
+  includes:
+    - mtskheta-mtianeti
+    - ge-mm
+    - mm
+    - mtskheta-mtianeti region
+  category: REGION

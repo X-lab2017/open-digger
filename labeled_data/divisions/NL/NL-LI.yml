@@ -1,0 +1,10 @@
+name: Limburg
+type: Division-1
+meta:
+  alpha2: NL-LI
+  includes:
+    - limburg
+    - nl-li
+    - li
+    - limburg province
+  category: PROVINCE

@@ -1,0 +1,10 @@
+name: Kırıkkale
+type: Division-1
+meta:
+  alpha2: TR-71
+  includes:
+    - kırıkkale
+    - tr-71
+    - '71'
+    - kırıkkale province
+  category: PROVINCE

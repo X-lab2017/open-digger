@@ -1,0 +1,10 @@
+name: Trbovlje
+type: Division-1
+meta:
+  alpha2: SI-129
+  includes:
+    - trbovlje
+    - si-129
+    - '129'
+    - trbovlje municipality
+  category: MUNICIPALITY

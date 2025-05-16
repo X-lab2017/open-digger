@@ -1,0 +1,10 @@
+name: Badakhshān
+type: Division-1
+meta:
+  alpha2: AF-BDS
+  includes:
+    - badakhshān
+    - af-bds
+    - bds
+    - badakhshān province
+  category: PROVINCE

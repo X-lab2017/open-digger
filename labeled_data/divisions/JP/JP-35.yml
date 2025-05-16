@@ -1,0 +1,12 @@
+name: Yamaguti
+type: Division-1
+meta:
+  alpha2: JP-35
+  includes:
+    - yamaguchi
+    - jp-35
+    - '35'
+    - yamaguchi prefecture
+    - yamaguti
+    - yamaguti prefecture
+  category: PREFECTURE

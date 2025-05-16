@@ -1,0 +1,10 @@
+name: Terres australes françaises
+type: Division-1
+meta:
+  alpha2: FR-TF
+  includes:
+    - terres australes françaises
+    - fr-tf
+    - tf
+    - terres australes françaises overseas territory
+  category: OVERSEAS TERRITORY

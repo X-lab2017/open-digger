@@ -1,0 +1,11 @@
+name: Tirol
+type: Division-1
+meta:
+  alpha2: AT-7
+  includes:
+    - tirol
+    - at-7
+    - '7'
+    - tirol state
+    - tyrol
+  category: STATE

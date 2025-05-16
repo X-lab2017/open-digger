@@ -1,0 +1,12 @@
+name: Shaanxi Sheng
+type: Division-1
+meta:
+  alpha2: CN-SN
+  includes:
+    - shaanxi sheng
+    - cn-sn
+    - sn
+    - shaanxi sheng province
+    - shaanxi
+    - 陕西省
+  category: PROVINCE

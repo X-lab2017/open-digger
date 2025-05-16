@@ -1,0 +1,10 @@
+name: Fier
+type: Division-1
+meta:
+  alpha2: AL-04
+  includes:
+    - fier
+    - al-04
+    - '04'
+    - fier county
+  category: COUNTY

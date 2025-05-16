@@ -1,0 +1,10 @@
+name: Tongatapu
+type: Division-1
+meta:
+  alpha2: TO-04
+  includes:
+    - tongatapu
+    - to-04
+    - '04'
+    - tongatapu division
+  category: DIVISION

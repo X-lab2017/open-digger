@@ -1,0 +1,47 @@
+name: Connaught
+type: Division-1
+meta:
+  alpha2: IE-C
+  includes:
+    - connacht
+    - ie-c
+    - c
+    - connacht province
+    - connaught
+    - connaught province
+    - gaillimh
+    - ie-g
+    - g
+    - gaillimh county
+    - galway
+    - galway county
+    - leitrim
+    - ie-lm
+    - lm
+    - leitrim county
+    - liatroim
+    - liatroim county
+    - maigh eo
+    - ie-mo
+    - mo
+    - maigh eo county
+    - mayo
+    - mayo county
+    - ros comáin
+    - ie-rn
+    - rn
+    - ros comáin county
+    - roscommon
+    - roscommon county
+    - sligeach
+    - ie-so
+    - so
+    - sligeach county
+    - sligo
+    - sligo county
+    - county galway
+    - county mayo
+    - county roscommon
+    - county leitrim
+    - county sligo
+  category: PROVINCE

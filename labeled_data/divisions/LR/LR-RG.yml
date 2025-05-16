@@ -1,0 +1,10 @@
+name: River Gee
+type: Division-1
+meta:
+  alpha2: LR-RG
+  includes:
+    - river gee
+    - lr-rg
+    - rg
+    - river gee county
+  category: COUNTY

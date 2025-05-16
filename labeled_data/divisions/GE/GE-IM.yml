@@ -1,0 +1,10 @@
+name: Imereti
+type: Division-1
+meta:
+  alpha2: GE-IM
+  includes:
+    - imereti
+    - ge-im
+    - im
+    - imereti region
+  category: REGION

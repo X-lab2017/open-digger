@@ -1,0 +1,10 @@
+name: Virginia
+type: Division-1
+meta:
+  alpha2: US-VA
+  includes:
+    - virginia
+    - us-va
+    - va
+    - virginia state
+  category: STATE

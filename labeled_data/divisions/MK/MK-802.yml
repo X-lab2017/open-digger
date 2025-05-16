@@ -1,0 +1,10 @@
+name: Aračinovo
+type: Division-1
+meta:
+  alpha2: MK-802
+  includes:
+    - aračinovo
+    - mk-802
+    - '802'
+    - aračinovo municipality
+  category: MUNICIPALITY

@@ -1,0 +1,34 @@
+name: Nzérékoré
+type: Division-1
+meta:
+  alpha2: GN-N
+  includes:
+    - beyla
+    - gn-be
+    - be
+    - beyla prefecture
+    - guékédou
+    - gn-gu
+    - gu
+    - guékédou prefecture
+    - lola
+    - gn-lo
+    - lo
+    - lola prefecture
+    - macenta
+    - gn-mc
+    - mc
+    - macenta prefecture
+    - nzérékoré
+    - gn-n
+    - 'n'
+    - nzérékoré administrative region
+    - gn-nz
+    - nz
+    - nzérékoré prefecture
+    - yomou
+    - gn-yo
+    - yo
+    - yomou prefecture
+    - nzérékoré region
+  category: ADMINISTRATIVE REGION

@@ -1,0 +1,13 @@
+name: Kharkivska oblast
+type: Division-1
+meta:
+  alpha2: UA-63
+  includes:
+    - kharkivska oblast
+    - ua-63
+    - '63'
+    - kharkivska oblast region
+    - kharkiv oblast
+    - kharkivs'ka oblast
+    - kharkiv
+  category: REGION

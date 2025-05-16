@@ -1,0 +1,11 @@
+name: Dayr az Zawr
+type: Division-1
+meta:
+  alpha2: SY-DY
+  includes:
+    - dayr az zawr
+    - sy-dy
+    - dy
+    - dayr az zawr province
+    - deir ez-zor governorate
+  category: PROVINCE

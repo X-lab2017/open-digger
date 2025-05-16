@@ -1,0 +1,12 @@
+name: Chatham Islands Territory
+type: Division-1
+meta:
+  alpha2: NZ-CIT
+  includes:
+    - chatham islands territory
+    - nz-cit
+    - cit
+    - chatham islands territory special island authority
+    - wharekauri
+    - wharekauri special island authority
+  category: SPECIAL ISLAND AUTHORITY

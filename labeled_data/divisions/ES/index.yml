@@ -1,0 +1,95 @@
+name: Spain
+type: Division-0
+meta:
+  alpha2: ES
+  includes:
+    - Spain
+    - ES
+    - '724'
+    - the Kingdom of Spain
+    - 西班牙
+  name_full: the Kingdom of Spain
+  name_zh: 西班牙
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 650592
+    - year: 2020
+      quarter: 2
+      count: 711308
+    - year: 2020
+      quarter: 3
+      count: 753123
+    - year: 2020
+      quarter: 4
+      count: 812307
+    - year: 2021
+      quarter: 1
+      count: 869221
+    - year: 2021
+      quarter: 2
+      count: 917477
+    - year: 2021
+      quarter: 3
+      count: 960915
+    - year: 2021
+      quarter: 4
+      count: 1019602
+    - year: 2022
+      quarter: 1
+      count: 1094467
+    - year: 2022
+      quarter: 2
+      count: 1155246
+    - year: 2022
+      quarter: 3
+      count: 1210960
+    - year: 2022
+      quarter: 4
+      count: 1285942
+    - year: 2023
+      quarter: 1
+      count: 1370198
+    - year: 2023
+      quarter: 2
+      count: 1453100
+    - year: 2023
+      quarter: 3
+      count: 1521688
+    - year: 2023
+      quarter: 4
+      count: 1612713
+    - year: 2024
+      quarter: 1
+      count: 1720498
+    - year: 2024
+      quarter: 2
+      count: 1807052
+    - year: 2024
+      quarter: 3
+      count: 1882940
+    - year: 2024
+      quarter: 4
+      count: 1989867
+data:
+  labels:
+    - ES-GA
+    - ES-VC
+    - ES-CM
+    - ES-AN
+    - ES-PV
+    - ES-AR
+    - ES-AS
+    - ES-EX
+    - ES-CT
+    - ES-CL
+    - ES-CN
+    - ES-CB
+    - ES-CE
+    - ES-IB
+    - ES-RI
+    - ES-MD
+    - ES-ML
+    - ES-MC
+    - ES-NC
+    - ':companies/artelnics'

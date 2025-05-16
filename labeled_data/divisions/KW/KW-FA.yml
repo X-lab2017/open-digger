@@ -1,0 +1,11 @@
+name: Al Farwānīyah
+type: Division-1
+meta:
+  alpha2: KW-FA
+  includes:
+    - al farwānīyah
+    - kw-fa
+    - fa
+    - al farwānīyah governorate
+    - al farwaniyah governorate
+  category: GOVERNORATE

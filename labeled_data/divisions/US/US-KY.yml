@@ -1,0 +1,10 @@
+name: Kentucky
+type: Division-1
+meta:
+  alpha2: US-KY
+  includes:
+    - kentucky
+    - us-ky
+    - ky
+    - kentucky state
+  category: STATE

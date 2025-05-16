@@ -1,0 +1,10 @@
+name: Benedikt
+type: Division-1
+meta:
+  alpha2: SI-148
+  includes:
+    - benedikt
+    - si-148
+    - '148'
+    - benedikt municipality
+  category: MUNICIPALITY

@@ -1,0 +1,11 @@
+name: Zulia
+type: Division-1
+meta:
+  alpha2: VE-V
+  includes:
+    - zulia
+    - ve-v
+    - v
+    - zulia state
+    - zu
+  category: STATE

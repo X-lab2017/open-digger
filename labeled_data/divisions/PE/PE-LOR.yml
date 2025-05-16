@@ -1,0 +1,12 @@
+name: Loreto
+type: Division-1
+meta:
+  alpha2: PE-LOR
+  includes:
+    - loreto
+    - pe-lor
+    - lor
+    - loreto region
+    - luritu
+    - luritu region
+  category: REGION

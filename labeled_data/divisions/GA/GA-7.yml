@@ -1,0 +1,10 @@
+name: Ogooué-Lolo
+type: Division-1
+meta:
+  alpha2: GA-7
+  includes:
+    - ogooué-lolo
+    - ga-7
+    - '7'
+    - ogooué-lolo province
+  category: PROVINCE

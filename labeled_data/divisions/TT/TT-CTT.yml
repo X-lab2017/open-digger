@@ -1,0 +1,11 @@
+name: Couva-Tabaquite-Talparo
+type: Division-1
+meta:
+  alpha2: TT-CTT
+  includes:
+    - couva-tabaquite-talparo
+    - tt-ctt
+    - ctt
+    - couva-tabaquite-talparo region
+    - couva-tabaquite-talparo regional corporation
+  category: REGION

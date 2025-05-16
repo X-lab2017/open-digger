@@ -1,0 +1,11 @@
+name: Galați
+type: Division-1
+meta:
+  alpha2: RO-GL
+  includes:
+    - galați
+    - ro-gl
+    - gl
+    - galați department
+    - galaţi
+  category: DEPARTMENT

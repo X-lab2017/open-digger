@@ -1,0 +1,10 @@
+name: Vaupés
+type: Division-1
+meta:
+  alpha2: CO-VAU
+  includes:
+    - vaupés
+    - co-vau
+    - vau
+    - vaupés department
+  category: DEPARTMENT

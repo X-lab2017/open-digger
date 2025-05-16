@@ -1,0 +1,12 @@
+name: Hirosima
+type: Division-1
+meta:
+  alpha2: JP-34
+  includes:
+    - hiroshima
+    - jp-34
+    - '34'
+    - hiroshima prefecture
+    - hirosima
+    - hirosima prefecture
+  category: PREFECTURE

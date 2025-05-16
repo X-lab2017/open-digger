@@ -1,0 +1,26 @@
+name: Galicia
+type: Division-1
+meta:
+  alpha2: ES-GA
+  includes:
+    - a coruña
+    - es-c
+    - c
+    - a coruña province
+    - galicia
+    - es-ga
+    - ga
+    - galicia autonomous community
+    - lugo
+    - es-lu
+    - lu
+    - lugo province
+    - ourense
+    - es-or
+    - or
+    - ourense province
+    - pontevedra
+    - es-po
+    - po
+    - pontevedra province
+  category: AUTONOMOUS COMMUNITY

@@ -1,0 +1,76 @@
+name: Saint Kitts and Nevis
+type: Division-0
+meta:
+  alpha2: KN
+  includes:
+    - Saint Kitts and Nevis
+    - KN
+    - '659'
+    - 圣基茨和尼维斯
+  name_full: Saint Kitts and Nevis
+  name_zh: 圣基茨和尼维斯
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 293
+    - year: 2020
+      quarter: 2
+      count: 345
+    - year: 2020
+      quarter: 3
+      count: 383
+    - year: 2020
+      quarter: 4
+      count: 420
+    - year: 2021
+      quarter: 1
+      count: 461
+    - year: 2021
+      quarter: 2
+      count: 495
+    - year: 2021
+      quarter: 3
+      count: 541
+    - year: 2021
+      quarter: 4
+      count: 565
+    - year: 2022
+      quarter: 1
+      count: 598
+    - year: 2022
+      quarter: 2
+      count: 635
+    - year: 2022
+      quarter: 3
+      count: 664
+    - year: 2022
+      quarter: 4
+      count: 677
+    - year: 2023
+      quarter: 1
+      count: 741
+    - year: 2023
+      quarter: 2
+      count: 781
+    - year: 2023
+      quarter: 3
+      count: 831
+    - year: 2023
+      quarter: 4
+      count: 866
+    - year: 2024
+      quarter: 1
+      count: 913
+    - year: 2024
+      quarter: 2
+      count: 984
+    - year: 2024
+      quarter: 3
+      count: 1110
+    - year: 2024
+      quarter: 4
+      count: 1135
+data:
+  labels:
+    - KN-K
+    - KN-N

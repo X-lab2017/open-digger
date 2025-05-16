@@ -1,0 +1,10 @@
+name: Sabirabad
+type: Division-1
+meta:
+  alpha2: AZ-SAB
+  includes:
+    - sabirabad
+    - az-sab
+    - sab
+    - sabirabad rayon
+  category: RAYON

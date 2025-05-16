@@ -1,0 +1,12 @@
+name: Kŭhistoni Badakhshon
+type: Division-1
+meta:
+  alpha2: TJ-GB
+  includes:
+    - kŭhistoni badakhshon
+    - tj-gb
+    - gb
+    - kŭhistoni badakhshon autonomous region
+    - gorno-badakhshan autonomous province
+    - gorno-badakhshan autonomous region
+  category: AUTONOMOUS REGION

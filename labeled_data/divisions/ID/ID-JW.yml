@@ -1,0 +1,49 @@
+name: Jawa
+type: Division-1
+meta:
+  alpha2: ID-JW
+  includes:
+    - banten
+    - id-bt
+    - bt
+    - banten province
+    - jakarta raya
+    - id-jk
+    - jk
+    - jakarta raya capital district
+    - dki jakarta
+    - dki jakarta capital district
+    - dki
+    - dki capital district
+    - jawa
+    - id-jw
+    - jw
+    - jawa geographical unit
+    - jawa barat
+    - id-jb
+    - jb
+    - jawa barat province
+    - jawa tengah
+    - id-jt
+    - jt
+    - jawa tengah province
+    - jawa timur
+    - id-ji
+    - ji
+    - jawa timur province
+    - yogyakarta
+    - id-yo
+    - yo
+    - yogyakarta special region
+    - di yogya
+    - di yogya special region
+    - diy
+    - diy special region
+    - central java
+    - east java
+    - west java
+    - special region of yogyakarta
+    - daerah istimewa yogyakarta
+    - daerah khusus ibukota jakarta
+    - jakarta
+  category: GEOGRAPHICAL UNIT

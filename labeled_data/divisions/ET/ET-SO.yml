@@ -1,0 +1,13 @@
+name: Somali
+type: Division-1
+meta:
+  alpha2: ET-SO
+  includes:
+    - somali
+    - et-so
+    - so
+    - somali regional state
+    - sumalē
+    - sumalē regional state
+    - somali region
+  category: REGIONAL STATE

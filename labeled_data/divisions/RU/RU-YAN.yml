@@ -1,0 +1,14 @@
+name: Yamalo-Nenetskiy avtonomnyy okrug
+type: Division-1
+meta:
+  alpha2: RU-YAN
+  includes:
+    - jamalo-neneckij avtonomnyj okrug
+    - ru-yan
+    - yan
+    - jamalo-neneckij avtonomnyj okrug autonomous district
+    - yamalo-nenetskiy avtonomnyy okrug
+    - yamalo-nenetskiy avtonomnyy okrug autonomous district
+    - yamalo-nenets
+    - yamalo-nenets autonomous okrug
+  category: AUTONOMOUS DISTRICT

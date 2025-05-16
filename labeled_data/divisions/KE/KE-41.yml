@@ -1,0 +1,10 @@
+name: Tharaka-Nithi
+type: Division-1
+meta:
+  alpha2: KE-41
+  includes:
+    - tharaka-nithi
+    - ke-41
+    - '41'
+    - tharaka-nithi county
+  category: COUNTY

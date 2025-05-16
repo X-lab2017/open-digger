@@ -1,0 +1,22 @@
+name: Põlvamaa
+type: Division-1
+meta:
+  alpha2: EE-64
+  includes:
+    - kanepi
+    - ee-284
+    - '284'
+    - kanepi rural municipality
+    - põlva
+    - ee-622
+    - '622'
+    - põlva rural municipality
+    - põlvamaa
+    - ee-64
+    - '64'
+    - põlvamaa county
+    - räpina
+    - ee-708
+    - '708'
+    - räpina rural municipality
+  category: COUNTY

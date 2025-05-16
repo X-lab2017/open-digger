@@ -1,0 +1,10 @@
+name: Saatlı
+type: Division-1
+meta:
+  alpha2: AZ-SAT
+  includes:
+    - saatlı
+    - az-sat
+    - sat
+    - saatlı rayon
+  category: RAYON

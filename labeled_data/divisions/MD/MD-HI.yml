@@ -1,0 +1,10 @@
+name: Hîncești
+type: Division-1
+meta:
+  alpha2: MD-HI
+  includes:
+    - hîncești
+    - md-hi
+    - hi
+    - hîncești district
+  category: DISTRICT

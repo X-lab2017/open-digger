@@ -1,0 +1,11 @@
+name: Abidjan
+type: Division-1
+meta:
+  alpha2: CI-AB
+  includes:
+    - abidjan
+    - ci-ab
+    - ab
+    - abidjan autonomous district
+    - district autonome d'abidjan
+  category: AUTONOMOUS DISTRICT

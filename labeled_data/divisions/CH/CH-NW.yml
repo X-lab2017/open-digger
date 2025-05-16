@@ -1,0 +1,10 @@
+name: Nidwalden
+type: Division-1
+meta:
+  alpha2: CH-NW
+  includes:
+    - nidwalden
+    - ch-nw
+    - nw
+    - nidwalden canton
+  category: CANTON

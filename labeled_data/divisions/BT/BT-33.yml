@@ -1,0 +1,10 @@
+name: Bumthang
+type: Division-1
+meta:
+  alpha2: BT-33
+  includes:
+    - bumthang
+    - bt-33
+    - '33'
+    - bumthang district
+  category: DISTRICT

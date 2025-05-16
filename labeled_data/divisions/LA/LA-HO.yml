@@ -1,0 +1,13 @@
+name: Houaphan
+type: Division-1
+meta:
+  alpha2: LA-HO
+  includes:
+    - houaphan
+    - la-ho
+    - ho
+    - houaphan province
+    - huaphanh
+    - huaphanh province
+    - hp
+  category: PROVINCE

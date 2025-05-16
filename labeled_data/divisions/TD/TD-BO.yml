@@ -1,0 +1,12 @@
+name: Būrkū
+type: Division-1
+meta:
+  alpha2: TD-BO
+  includes:
+    - borkou
+    - td-bo
+    - bo
+    - borkou province
+    - būrkū
+    - būrkū province
+  category: PROVINCE

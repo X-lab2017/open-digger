@@ -1,0 +1,10 @@
+name: Beja
+type: Division-1
+meta:
+  alpha2: PT-02
+  includes:
+    - beja
+    - pt-02
+    - '02'
+    - beja district
+  category: DISTRICT

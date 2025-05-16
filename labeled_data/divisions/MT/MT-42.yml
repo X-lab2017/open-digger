@@ -1,0 +1,10 @@
+name: Qala
+type: Division-1
+meta:
+  alpha2: MT-42
+  includes:
+    - qala
+    - mt-42
+    - '42'
+    - qala local council
+  category: LOCAL COUNCIL

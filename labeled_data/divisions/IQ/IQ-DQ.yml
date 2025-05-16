@@ -1,0 +1,11 @@
+name: Dhī Qār
+type: Division-1
+meta:
+  alpha2: IQ-DQ
+  includes:
+    - dhī qār
+    - iq-dq
+    - dq
+    - dhī qār governorate
+    - dhi qar governorate
+  category: GOVERNORATE

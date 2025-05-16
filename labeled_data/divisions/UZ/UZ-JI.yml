@@ -1,0 +1,11 @@
+name: Jizzax
+type: Division-1
+meta:
+  alpha2: UZ-JI
+  includes:
+    - jizzax
+    - uz-ji
+    - ji
+    - jizzax region
+    - jizzakh region
+  category: REGION

@@ -1,0 +1,10 @@
+name: Prevalje
+type: Division-1
+meta:
+  alpha2: SI-175
+  includes:
+    - prevalje
+    - si-175
+    - '175'
+    - prevalje municipality
+  category: MUNICIPALITY

@@ -1,0 +1,10 @@
+name: Caazapá
+type: Division-1
+meta:
+  alpha2: PY-6
+  includes:
+    - caazapá
+    - py-6
+    - '6'
+    - caazapá department
+  category: DEPARTMENT

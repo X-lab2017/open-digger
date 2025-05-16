@@ -1,0 +1,12 @@
+name: Landskapet Åland
+type: Division-1
+meta:
+  alpha2: FI-01
+  includes:
+    - ahvenanmaan maakunta
+    - fi-01
+    - '01'
+    - ahvenanmaan maakunta region
+    - landskapet åland
+    - landskapet åland region
+  category: REGION

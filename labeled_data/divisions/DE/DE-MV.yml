@@ -1,0 +1,11 @@
+name: Mecklenburg-Vorpommern
+type: Division-1
+meta:
+  alpha2: DE-MV
+  includes:
+    - mecklenburg-vorpommern
+    - de-mv
+    - mv
+    - mecklenburg-vorpommern land
+    - mecklenburg-west pomerania
+  category: LAND

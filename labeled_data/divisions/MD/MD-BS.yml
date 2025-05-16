@@ -1,0 +1,10 @@
+name: Basarabeasca
+type: Division-1
+meta:
+  alpha2: MD-BS
+  includes:
+    - basarabeasca
+    - md-bs
+    - bs
+    - basarabeasca district
+  category: DISTRICT

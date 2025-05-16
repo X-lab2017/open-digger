@@ -1,0 +1,10 @@
+name: Sivas
+type: Division-1
+meta:
+  alpha2: TR-58
+  includes:
+    - sivas
+    - tr-58
+    - '58'
+    - sivas province
+  category: PROVINCE

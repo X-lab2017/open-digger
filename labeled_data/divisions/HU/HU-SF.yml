@@ -1,0 +1,10 @@
+name: Székesfehérvár
+type: Division-1
+meta:
+  alpha2: HU-SF
+  includes:
+    - székesfehérvár
+    - hu-sf
+    - sf
+    - székesfehérvár city with county rights
+  category: CITY WITH COUNTY RIGHTS

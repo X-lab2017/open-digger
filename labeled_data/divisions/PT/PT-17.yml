@@ -1,0 +1,10 @@
+name: Vila Real
+type: Division-1
+meta:
+  alpha2: PT-17
+  includes:
+    - vila real
+    - pt-17
+    - '17'
+    - vila real district
+  category: DISTRICT

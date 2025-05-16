@@ -1,0 +1,10 @@
+name: North East
+type: Division-1
+meta:
+  alpha2: SG-02
+  includes:
+    - north east
+    - sg-02
+    - '02'
+    - north east district
+  category: DISTRICT

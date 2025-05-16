@@ -1,0 +1,12 @@
+name: West Darfur
+type: Division-1
+meta:
+  alpha2: SD-DW
+  includes:
+    - gharb dārfūr
+    - sd-dw
+    - dw
+    - gharb dārfūr state
+    - west darfur
+    - west darfur state
+  category: STATE

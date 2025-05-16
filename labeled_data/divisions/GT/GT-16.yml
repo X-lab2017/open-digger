@@ -1,0 +1,10 @@
+name: Alta Verapaz
+type: Division-1
+meta:
+  alpha2: GT-16
+  includes:
+    - alta verapaz
+    - gt-16
+    - '16'
+    - alta verapaz department
+  category: DEPARTMENT

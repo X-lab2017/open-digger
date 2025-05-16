@@ -1,0 +1,14 @@
+name: Nižegorodskaja oblast'
+type: Division-1
+meta:
+  alpha2: RU-NIZ
+  includes:
+    - nizhegorodskaya oblast'
+    - ru-niz
+    - niz
+    - nizhegorodskaya oblast' administrative region
+    - nižegorodskaja oblast'
+    - nižegorodskaja oblast' administrative region
+    - nizhny novgorod oblast
+    - nizhniy novgorod
+  category: ADMINISTRATIVE REGION

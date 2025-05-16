@@ -1,0 +1,10 @@
+name: Ağrı
+type: Division-1
+meta:
+  alpha2: TR-04
+  includes:
+    - ağrı
+    - tr-04
+    - '04'
+    - ağrı province
+  category: PROVINCE

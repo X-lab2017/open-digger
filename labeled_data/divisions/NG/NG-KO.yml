@@ -1,0 +1,10 @@
+name: Kogi
+type: Division-1
+meta:
+  alpha2: NG-KO
+  includes:
+    - kogi
+    - ng-ko
+    - ko
+    - kogi state
+  category: STATE

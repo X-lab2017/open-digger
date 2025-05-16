@@ -1,0 +1,87 @@
+name: Luxembourg
+type: Division-0
+meta:
+  alpha2: LU
+  includes:
+    - Luxembourg
+    - LU
+    - '442'
+    - the Grand Duchy of Luxembourg
+    - 卢森堡
+  name_full: the Grand Duchy of Luxembourg
+  name_zh: 卢森堡
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 15981
+    - year: 2020
+      quarter: 2
+      count: 16530
+    - year: 2020
+      quarter: 3
+      count: 17500
+    - year: 2020
+      quarter: 4
+      count: 18497
+    - year: 2021
+      quarter: 1
+      count: 19677
+    - year: 2021
+      quarter: 2
+      count: 20775
+    - year: 2021
+      quarter: 3
+      count: 22195
+    - year: 2021
+      quarter: 4
+      count: 23649
+    - year: 2022
+      quarter: 1
+      count: 25107
+    - year: 2022
+      quarter: 2
+      count: 26972
+    - year: 2022
+      quarter: 3
+      count: 28675
+    - year: 2022
+      quarter: 4
+      count: 30071
+    - year: 2023
+      quarter: 1
+      count: 32377
+    - year: 2023
+      quarter: 2
+      count: 35012
+    - year: 2023
+      quarter: 3
+      count: 37132
+    - year: 2023
+      quarter: 4
+      count: 39150
+    - year: 2024
+      quarter: 1
+      count: 41482
+    - year: 2024
+      quarter: 2
+      count: 42621
+    - year: 2024
+      quarter: 3
+      count: 44152
+    - year: 2024
+      quarter: 4
+      count: 46797
+data:
+  labels:
+    - LU-CA
+    - LU-CL
+    - LU-DI
+    - LU-EC
+    - LU-ES
+    - LU-GR
+    - LU-LU
+    - LU-ME
+    - LU-RD
+    - LU-RM
+    - LU-VD
+    - LU-WI

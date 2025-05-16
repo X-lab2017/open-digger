@@ -1,0 +1,10 @@
+name: Bakool
+type: Division-1
+meta:
+  alpha2: SO-BK
+  includes:
+    - bakool
+    - so-bk
+    - bk
+    - bakool region
+  category: REGION

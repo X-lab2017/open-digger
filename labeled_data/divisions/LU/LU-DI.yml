@@ -1,0 +1,12 @@
+name: Diekirch
+type: Division-1
+meta:
+  alpha2: LU-DI
+  includes:
+    - diekirch
+    - lu-di
+    - di
+    - diekirch canton
+    - diekrech
+    - diekrech canton
+  category: CANTON

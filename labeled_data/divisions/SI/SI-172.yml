@@ -1,0 +1,10 @@
+name: Podlehnik
+type: Division-1
+meta:
+  alpha2: SI-172
+  includes:
+    - podlehnik
+    - si-172
+    - '172'
+    - podlehnik municipality
+  category: MUNICIPALITY

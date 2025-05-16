@@ -1,0 +1,84 @@
+name: Austria
+type: Division-0
+meta:
+  alpha2: AT
+  includes:
+    - Austria
+    - AT
+    - '040'
+    - the Republic of Austria
+    - 奥地利
+  name_full: the Republic of Austria
+  name_zh: 奥地利
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 148081
+    - year: 2020
+      quarter: 2
+      count: 158917
+    - year: 2020
+      quarter: 3
+      count: 167753
+    - year: 2020
+      quarter: 4
+      count: 181245
+    - year: 2021
+      quarter: 1
+      count: 194191
+    - year: 2021
+      quarter: 2
+      count: 204619
+    - year: 2021
+      quarter: 3
+      count: 213986
+    - year: 2021
+      quarter: 4
+      count: 226778
+    - year: 2022
+      quarter: 1
+      count: 242864
+    - year: 2022
+      quarter: 2
+      count: 256698
+    - year: 2022
+      quarter: 3
+      count: 268691
+    - year: 2022
+      quarter: 4
+      count: 283530
+    - year: 2023
+      quarter: 1
+      count: 299861
+    - year: 2023
+      quarter: 2
+      count: 316584
+    - year: 2023
+      quarter: 3
+      count: 331849
+    - year: 2023
+      quarter: 4
+      count: 350282
+    - year: 2024
+      quarter: 1
+      count: 372722
+    - year: 2024
+      quarter: 2
+      count: 390566
+    - year: 2024
+      quarter: 3
+      count: 406297
+    - year: 2024
+      quarter: 4
+      count: 428437
+data:
+  labels:
+    - AT-1
+    - AT-2
+    - AT-3
+    - AT-4
+    - AT-5
+    - AT-6
+    - AT-7
+    - AT-8
+    - AT-9

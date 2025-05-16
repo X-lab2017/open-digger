@@ -1,0 +1,10 @@
+name: Beograd
+type: Division-1
+meta:
+  alpha2: RS-00
+  includes:
+    - beograd
+    - rs-00
+    - '00'
+    - beograd city
+  category: CITY

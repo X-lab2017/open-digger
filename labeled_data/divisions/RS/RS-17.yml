@@ -1,0 +1,10 @@
+name: Moravički okrug
+type: Division-1
+meta:
+  alpha2: RS-17
+  includes:
+    - moravički okrug
+    - rs-17
+    - '17'
+    - moravički okrug district
+  category: DISTRICT

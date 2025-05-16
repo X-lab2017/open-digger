@@ -1,0 +1,10 @@
+name: Timimoun
+type: Division-1
+meta:
+  alpha2: DZ-49
+  includes:
+    - timimoun
+    - dz-49
+    - '49'
+    - timimoun province
+  category: PROVINCE

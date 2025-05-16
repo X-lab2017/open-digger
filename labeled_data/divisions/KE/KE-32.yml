@@ -1,0 +1,10 @@
+name: Nandi
+type: Division-1
+meta:
+  alpha2: KE-32
+  includes:
+    - nandi
+    - ke-32
+    - '32'
+    - nandi county
+  category: COUNTY

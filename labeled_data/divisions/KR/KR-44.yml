@@ -1,0 +1,13 @@
+name: Chungcheongnam-do
+type: Division-1
+meta:
+  alpha2: KR-44
+  includes:
+    - chungcheongnam-do
+    - kr-44
+    - '44'
+    - chungcheongnam-do province
+    - chungnam
+    - chungnam province
+    - south chungcheong
+  category: PROVINCE

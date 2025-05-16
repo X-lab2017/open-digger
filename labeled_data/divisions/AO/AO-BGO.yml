@@ -1,0 +1,10 @@
+name: Bengo
+type: Division-1
+meta:
+  alpha2: AO-BGO
+  includes:
+    - bengo
+    - ao-bgo
+    - bgo
+    - bengo province
+  category: PROVINCE

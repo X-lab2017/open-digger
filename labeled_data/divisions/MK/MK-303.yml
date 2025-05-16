@@ -1,0 +1,11 @@
+name: Debar
+type: Division-1
+meta:
+  alpha2: MK-303
+  includes:
+    - debar
+    - mk-303
+    - '303'
+    - debar municipality
+    - municipality of debar
+  category: MUNICIPALITY

@@ -1,0 +1,10 @@
+name: Wakayama
+type: Division-1
+meta:
+  alpha2: JP-30
+  includes:
+    - wakayama
+    - jp-30
+    - '30'
+    - wakayama prefecture
+  category: PREFECTURE

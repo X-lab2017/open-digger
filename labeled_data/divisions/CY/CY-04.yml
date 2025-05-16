@@ -1,0 +1,13 @@
+name: Mağusa
+type: Division-1
+meta:
+  alpha2: CY-04
+  includes:
+    - ammochostos
+    - cy-04
+    - '04'
+    - ammochostos district
+    - mağusa
+    - mağusa district
+    - famagusta
+  category: DISTRICT

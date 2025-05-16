@@ -1,0 +1,10 @@
+name: Mozirje
+type: Division-1
+meta:
+  alpha2: SI-079
+  includes:
+    - mozirje
+    - si-079
+    - '079'
+    - mozirje municipality
+  category: MUNICIPALITY

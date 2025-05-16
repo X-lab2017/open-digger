@@ -1,0 +1,12 @@
+name: Ulsan-gwangyeoksi
+type: Division-1
+meta:
+  alpha2: KR-31
+  includes:
+    - ulsan-gwangyeoksi
+    - kr-31
+    - '31'
+    - ulsan-gwangyeoksi metropolitan city
+    - ulsan
+    - ulsan metropolitan city
+  category: METROPOLITAN CITY

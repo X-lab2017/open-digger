@@ -1,0 +1,10 @@
+name: Mwaro
+type: Division-1
+meta:
+  alpha2: BI-MW
+  includes:
+    - mwaro
+    - bi-mw
+    - mw
+    - mwaro province
+  category: PROVINCE

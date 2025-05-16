@@ -1,0 +1,12 @@
+name: Shéfa
+type: Division-1
+meta:
+  alpha2: VU-SEE
+  includes:
+    - shéfa
+    - vu-see
+    - see
+    - shéfa province
+    - shefa province
+    - shefa
+  category: PROVINCE

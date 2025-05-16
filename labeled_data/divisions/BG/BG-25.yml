@@ -1,0 +1,12 @@
+name: Targovishte
+type: Division-1
+meta:
+  alpha2: BG-25
+  includes:
+    - targovishte
+    - bg-25
+    - '25'
+    - targovishte district
+    - targovishte province
+    - turgovishte
+  category: DISTRICT

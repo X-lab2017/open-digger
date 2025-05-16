@@ -1,0 +1,11 @@
+name: Rīga
+type: Division-1
+meta:
+  alpha2: LV-RIX
+  includes:
+    - rīga
+    - lv-rix
+    - rix
+    - rīga state city
+    - riga
+  category: STATE CITY

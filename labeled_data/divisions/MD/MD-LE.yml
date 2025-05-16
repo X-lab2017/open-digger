@@ -1,0 +1,10 @@
+name: Leova
+type: Division-1
+meta:
+  alpha2: MD-LE
+  includes:
+    - leova
+    - md-le
+    - le
+    - leova district
+  category: DISTRICT

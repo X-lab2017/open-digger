@@ -1,0 +1,10 @@
+name: Laghmān
+type: Division-1
+meta:
+  alpha2: AF-LAG
+  includes:
+    - laghmān
+    - af-lag
+    - lag
+    - laghmān province
+  category: PROVINCE

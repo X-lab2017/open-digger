@@ -1,0 +1,12 @@
+name: Banī Suwayf
+type: Division-1
+meta:
+  alpha2: EG-BNS
+  includes:
+    - banī suwayf
+    - eg-bns
+    - bns
+    - banī suwayf governorate
+    - bani suwayf
+    - beni suef governorate
+  category: GOVERNORATE

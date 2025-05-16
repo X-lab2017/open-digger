@@ -1,0 +1,10 @@
+name: Porto
+type: Division-1
+meta:
+  alpha2: PT-13
+  includes:
+    - porto
+    - pt-13
+    - '13'
+    - porto district
+  category: DISTRICT

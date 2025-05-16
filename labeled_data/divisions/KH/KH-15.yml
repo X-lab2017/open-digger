@@ -1,0 +1,15 @@
+name: Poŭthĭsăt
+type: Division-1
+meta:
+  alpha2: KH-15
+  includes:
+    - pousaat
+    - kh-15
+    - '15'
+    - pousaat province
+    - pursat
+    - pursat province
+    - poŭthĭsăt
+    - poŭthĭsăt province
+    - ps
+  category: PROVINCE

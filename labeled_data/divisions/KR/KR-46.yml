@@ -1,0 +1,13 @@
+name: Jeollanam-do
+type: Division-1
+meta:
+  alpha2: KR-46
+  includes:
+    - jeollanam-do
+    - kr-46
+    - '46'
+    - jeollanam-do province
+    - jeonnam
+    - jeonnam province
+    - south jeolla
+  category: PROVINCE

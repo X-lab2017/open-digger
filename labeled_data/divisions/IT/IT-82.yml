@@ -1,0 +1,48 @@
+name: Sicilia
+type: Division-1
+meta:
+  alpha2: IT-82
+  includes:
+    - agrigento
+    - it-ag
+    - ag
+    - agrigento free municipal consortium
+    - caltanissetta
+    - it-cl
+    - cl
+    - caltanissetta free municipal consortium
+    - catania
+    - it-ct
+    - ct
+    - catania metropolitan city
+    - enna
+    - it-en
+    - en
+    - enna free municipal consortium
+    - messina
+    - it-me
+    - me
+    - messina metropolitan city
+    - palermo
+    - it-pa
+    - pa
+    - palermo metropolitan city
+    - ragusa
+    - it-rg
+    - rg
+    - ragusa free municipal consortium
+    - sicilia
+    - it-82
+    - '82'
+    - sicilia autonomous region
+    - siracusa
+    - it-sr
+    - sr
+    - siracusa free municipal consortium
+    - trapani
+    - it-tp
+    - tp
+    - trapani free municipal consortium
+    - sic.
+    - sicily
+  category: AUTONOMOUS REGION

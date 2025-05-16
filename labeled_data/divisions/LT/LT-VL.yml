@@ -1,0 +1,45 @@
+name: Vilniaus apskritis
+type: Division-1
+meta:
+  alpha2: LT-VL
+  includes:
+    - elektrėnai
+    - lt-08
+    - '08'
+    - elektrėnai municipality
+    - trakai
+    - lt-52
+    - '52'
+    - trakai district municipality
+    - ukmergė
+    - lt-53
+    - '53'
+    - ukmergė district municipality
+    - vilniaus apskritis
+    - lt-vl
+    - vl
+    - vilniaus apskritis county
+    - vilniaus miestas
+    - lt-57
+    - '57'
+    - vilniaus miestas city municipality
+    - vilnius
+    - lt-58
+    - '58'
+    - vilnius district municipality
+    - šalčininkai
+    - lt-42
+    - '42'
+    - šalčininkai district municipality
+    - širvintos
+    - lt-47
+    - '47'
+    - širvintos district municipality
+    - švenčionys
+    - lt-49
+    - '49'
+    - švenčionys district municipality
+    - vilnius region
+    - vilnius county
+    - vilniaus
+  category: COUNTY

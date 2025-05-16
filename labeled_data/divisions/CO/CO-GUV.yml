@@ -1,0 +1,10 @@
+name: Guaviare
+type: Division-1
+meta:
+  alpha2: CO-GUV
+  includes:
+    - guaviare
+    - co-guv
+    - guv
+    - guaviare department
+  category: DEPARTMENT

@@ -1,0 +1,11 @@
+name: Murzuq
+type: Division-1
+meta:
+  alpha2: LY-MQ
+  includes:
+    - murzuq
+    - ly-mq
+    - mq
+    - murzuq popularate
+    - murzuq district
+  category: POPULARATE

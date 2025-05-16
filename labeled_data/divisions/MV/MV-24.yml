@@ -1,0 +1,15 @@
+name: North Miladhunmadulu
+type: Division-1
+meta:
+  alpha2: MV-24
+  includes:
+    - miladhunmadulu uthuruburi
+    - mv-24
+    - '24'
+    - miladhunmadulu uthuruburi administrative atoll
+    - shaviyani
+    - shaviyani administrative atoll
+    - north miladhunmadulu
+    - north miladhunmadulu administrative atoll
+    - shaviyani atoll
+  category: ADMINISTRATIVE ATOLL

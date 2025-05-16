@@ -1,0 +1,10 @@
+name: Daşoguz
+type: Division-1
+meta:
+  alpha2: TM-D
+  includes:
+    - daşoguz
+    - tm-d
+    - d
+    - daşoguz region
+  category: REGION

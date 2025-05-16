@@ -1,0 +1,15 @@
+name: Southern Nations
+type: Division-1
+meta:
+  alpha2: ET-SN
+  includes:
+    - southern nations
+    - et-sn
+    - sn
+    - southern nations regional state
+    - yedebub bihēroch bihēreseboch na hizboch
+    - yedebub bihēroch bihēreseboch na hizboch regional state
+    - southern nations, nationalities, and peoples
+    - ደቡብ ብሔሮች ብሔረሰቦችና ሕዝቦች ክልል
+    - southern nations, nationalities and peoples
+  category: REGIONAL STATE

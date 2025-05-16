@@ -1,0 +1,10 @@
+name: Borgo Maggiore
+type: Division-1
+meta:
+  alpha2: SM-06
+  includes:
+    - borgo maggiore
+    - sm-06
+    - '06'
+    - borgo maggiore municipality
+  category: MUNICIPALITY

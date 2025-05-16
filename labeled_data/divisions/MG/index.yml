@@ -1,0 +1,81 @@
+name: Madagascar
+type: Division-0
+meta:
+  alpha2: MG
+  includes:
+    - Madagascar
+    - MG
+    - '450'
+    - the Republic of Madagascar
+    - 马达加斯加
+  name_full: the Republic of Madagascar
+  name_zh: 马达加斯加
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 10105
+    - year: 2020
+      quarter: 2
+      count: 10980
+    - year: 2020
+      quarter: 3
+      count: 12067
+    - year: 2020
+      quarter: 4
+      count: 13197
+    - year: 2021
+      quarter: 1
+      count: 14426
+    - year: 2021
+      quarter: 2
+      count: 15713
+    - year: 2021
+      quarter: 3
+      count: 17147
+    - year: 2021
+      quarter: 4
+      count: 18346
+    - year: 2022
+      quarter: 1
+      count: 20292
+    - year: 2022
+      quarter: 2
+      count: 22037
+    - year: 2022
+      quarter: 3
+      count: 23776
+    - year: 2022
+      quarter: 4
+      count: 25500
+    - year: 2023
+      quarter: 1
+      count: 27740
+    - year: 2023
+      quarter: 2
+      count: 30105
+    - year: 2023
+      quarter: 3
+      count: 32474
+    - year: 2023
+      quarter: 4
+      count: 34796
+    - year: 2024
+      quarter: 1
+      count: 37915
+    - year: 2024
+      quarter: 2
+      count: 40871
+    - year: 2024
+      quarter: 3
+      count: 43703
+    - year: 2024
+      quarter: 4
+      count: 47114
+data:
+  labels:
+    - MG-T
+    - MG-D
+    - MG-F
+    - MG-M
+    - MG-A
+    - MG-U

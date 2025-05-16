@@ -1,0 +1,10 @@
+name: Western Equatoria
+type: Division-1
+meta:
+  alpha2: SS-EW
+  includes:
+    - western equatoria
+    - ss-ew
+    - ew
+    - western equatoria state
+  category: STATE

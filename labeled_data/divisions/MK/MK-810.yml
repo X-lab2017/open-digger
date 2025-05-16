@@ -1,0 +1,10 @@
+name: Petrovec
+type: Division-1
+meta:
+  alpha2: MK-810
+  includes:
+    - petrovec
+    - mk-810
+    - '810'
+    - petrovec municipality
+  category: MUNICIPALITY

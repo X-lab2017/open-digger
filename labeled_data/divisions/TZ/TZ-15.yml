@@ -1,0 +1,13 @@
+name: Zanzibar West
+type: Division-1
+meta:
+  alpha2: TZ-15
+  includes:
+    - mjini magharibi
+    - tz-15
+    - '15'
+    - mjini magharibi region
+    - zanzibar west
+    - zanzibar west region
+    - zanzibar urban/west
+  category: REGION

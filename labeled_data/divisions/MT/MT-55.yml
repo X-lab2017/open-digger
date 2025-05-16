@@ -1,0 +1,10 @@
+name: Siġġiewi
+type: Division-1
+meta:
+  alpha2: MT-55
+  includes:
+    - siġġiewi
+    - mt-55
+    - '55'
+    - siġġiewi local council
+  category: LOCAL COUNCIL

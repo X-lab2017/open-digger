@@ -1,0 +1,10 @@
+name: Kajiado
+type: Division-1
+meta:
+  alpha2: KE-10
+  includes:
+    - kajiado
+    - ke-10
+    - '10'
+    - kajiado county
+  category: COUNTY

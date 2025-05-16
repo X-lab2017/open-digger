@@ -1,0 +1,10 @@
+name: Dol pri Ljubljani
+type: Division-1
+meta:
+  alpha2: SI-022
+  includes:
+    - dol pri ljubljani
+    - si-022
+    - '022'
+    - dol pri ljubljani municipality
+  category: MUNICIPALITY

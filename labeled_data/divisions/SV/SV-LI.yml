@@ -1,0 +1,13 @@
+name: La Libertad
+type: Division-1
+meta:
+  alpha2: SV-LI
+  includes:
+    - la libertad
+    - sv-li
+    - li
+    - la libertad department
+    - svli
+    - svlp
+    - svll
+  category: DEPARTMENT

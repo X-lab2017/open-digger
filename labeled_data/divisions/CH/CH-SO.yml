@@ -1,0 +1,10 @@
+name: Solothurn
+type: Division-1
+meta:
+  alpha2: CH-SO
+  includes:
+    - solothurn
+    - ch-so
+    - so
+    - solothurn canton
+  category: CANTON

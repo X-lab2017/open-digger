@@ -1,0 +1,15 @@
+name: Yaroslavskaya oblast'
+type: Division-1
+meta:
+  alpha2: RU-YAR
+  includes:
+    - jaroslavskaja oblast'
+    - ru-yar
+    - yar
+    - jaroslavskaja oblast' administrative region
+    - yaroslavskaya oblast'
+    - yaroslavskaya oblast' administrative region
+    - yaroslavl oblast
+    - yaroslavl
+    - yaroslavl’
+  category: ADMINISTRATIVE REGION

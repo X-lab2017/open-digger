@@ -1,0 +1,13 @@
+name: Zaporizka oblast
+type: Division-1
+meta:
+  alpha2: UA-23
+  includes:
+    - zaporizka oblast
+    - ua-23
+    - '23'
+    - zaporizka oblast region
+    - zaporizhia oblast
+    - zaporiz'ka oblast
+    - zaporizhzhya
+  category: REGION

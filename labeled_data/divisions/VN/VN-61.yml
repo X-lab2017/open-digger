@@ -1,0 +1,11 @@
+name: Hải Dương
+type: Division-1
+meta:
+  alpha2: VN-61
+  includes:
+    - hải dương
+    - vn-61
+    - '61'
+    - hải dương province
+    - hai duong
+  category: PROVINCE

@@ -1,0 +1,10 @@
+name: Ribnica
+type: Division-1
+meta:
+  alpha2: SI-104
+  includes:
+    - ribnica
+    - si-104
+    - '104'
+    - ribnica municipality
+  category: MUNICIPALITY

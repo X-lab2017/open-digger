@@ -1,0 +1,10 @@
+name: Pennsylvania
+type: Division-1
+meta:
+  alpha2: US-PA
+  includes:
+    - pennsylvania
+    - us-pa
+    - pa
+    - pennsylvania state
+  category: STATE

@@ -1,0 +1,11 @@
+name: Razgrad
+type: Division-1
+meta:
+  alpha2: BG-17
+  includes:
+    - razgrad
+    - bg-17
+    - '17'
+    - razgrad district
+    - razgrad province
+  category: DISTRICT

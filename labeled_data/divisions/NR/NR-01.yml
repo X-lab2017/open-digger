@@ -1,0 +1,10 @@
+name: Aiwo
+type: Division-1
+meta:
+  alpha2: NR-01
+  includes:
+    - aiwo
+    - nr-01
+    - '01'
+    - aiwo district
+  category: DISTRICT

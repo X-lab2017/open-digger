@@ -1,0 +1,31 @@
+name: Královéhradecký kraj
+type: Division-1
+meta:
+  alpha2: CZ-52
+  includes:
+    - hradec králové
+    - cz-521
+    - '521'
+    - hradec králové district
+    - jičín
+    - cz-522
+    - '522'
+    - jičín district
+    - královéhradecký kraj
+    - cz-52
+    - '52'
+    - královéhradecký kraj region
+    - náchod
+    - cz-523
+    - '523'
+    - náchod district
+    - rychnov nad kněžnou
+    - cz-524
+    - '524'
+    - rychnov nad kněžnou district
+    - trutnov
+    - cz-525
+    - '525'
+    - trutnov district
+    - hradec králové region
+  category: REGION

@@ -1,0 +1,10 @@
+name: Rivas
+type: Division-1
+meta:
+  alpha2: NI-RI
+  includes:
+    - rivas
+    - ni-ri
+    - ri
+    - rivas department
+  category: DEPARTMENT

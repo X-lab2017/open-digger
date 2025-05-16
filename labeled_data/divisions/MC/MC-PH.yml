@@ -1,0 +1,10 @@
+name: Port-Hercule
+type: Division-1
+meta:
+  alpha2: MC-PH
+  includes:
+    - port-hercule
+    - mc-ph
+    - ph
+    - port-hercule quarter
+  category: QUARTER

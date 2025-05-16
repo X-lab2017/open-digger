@@ -1,0 +1,10 @@
+name: Ivančna Gorica
+type: Division-1
+meta:
+  alpha2: SI-039
+  includes:
+    - ivančna gorica
+    - si-039
+    - '039'
+    - ivančna gorica municipality
+  category: MUNICIPALITY

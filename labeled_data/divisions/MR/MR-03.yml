@@ -1,0 +1,10 @@
+name: Assaba
+type: Division-1
+meta:
+  alpha2: MR-03
+  includes:
+    - assaba
+    - mr-03
+    - '03'
+    - assaba region
+  category: REGION

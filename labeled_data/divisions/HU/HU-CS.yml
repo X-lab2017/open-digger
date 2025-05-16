@@ -1,0 +1,11 @@
+name: Csongrád-Csanád
+type: Division-1
+meta:
+  alpha2: HU-CS
+  includes:
+    - csongrád-csanád
+    - hu-cs
+    - cs
+    - csongrád-csanád county
+    - csongrád
+  category: COUNTY

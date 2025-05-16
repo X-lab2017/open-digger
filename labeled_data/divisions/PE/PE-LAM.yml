@@ -1,0 +1,12 @@
+name: Lambayeque
+type: Division-1
+meta:
+  alpha2: PE-LAM
+  includes:
+    - lambayeque
+    - pe-lam
+    - lam
+    - lambayeque region
+    - lampalliqi
+    - lampalliqi region
+  category: REGION

@@ -1,0 +1,92 @@
+name: Nicaragua
+type: Division-0
+meta:
+  alpha2: NI
+  includes:
+    - Nicaragua
+    - NI
+    - '558'
+    - the Republic of Nicaragua
+    - 尼加拉瓜
+  name_full: the Republic of Nicaragua
+  name_zh: 尼加拉瓜
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 11994
+    - year: 2020
+      quarter: 2
+      count: 13027
+    - year: 2020
+      quarter: 3
+      count: 14199
+    - year: 2020
+      quarter: 4
+      count: 15418
+    - year: 2021
+      quarter: 1
+      count: 16599
+    - year: 2021
+      quarter: 2
+      count: 17777
+    - year: 2021
+      quarter: 3
+      count: 19173
+    - year: 2021
+      quarter: 4
+      count: 20521
+    - year: 2022
+      quarter: 1
+      count: 22070
+    - year: 2022
+      quarter: 2
+      count: 23648
+    - year: 2022
+      quarter: 3
+      count: 25623
+    - year: 2022
+      quarter: 4
+      count: 27257
+    - year: 2023
+      quarter: 1
+      count: 29185
+    - year: 2023
+      quarter: 2
+      count: 31654
+    - year: 2023
+      quarter: 3
+      count: 34532
+    - year: 2023
+      quarter: 4
+      count: 36414
+    - year: 2024
+      quarter: 1
+      count: 38687
+    - year: 2024
+      quarter: 2
+      count: 40757
+    - year: 2024
+      quarter: 3
+      count: 42781
+    - year: 2024
+      quarter: 4
+      count: 45088
+data:
+  labels:
+    - NI-BO
+    - NI-CA
+    - NI-CI
+    - NI-CO
+    - NI-AN
+    - NI-AS
+    - NI-ES
+    - NI-GR
+    - NI-JI
+    - NI-LE
+    - NI-MD
+    - NI-MN
+    - NI-MS
+    - NI-MT
+    - NI-NS
+    - NI-RI
+    - NI-SJ

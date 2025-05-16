@@ -1,0 +1,12 @@
+name: Tasman
+type: Division-1
+meta:
+  alpha2: NZ-TAS
+  includes:
+    - tasman
+    - nz-tas
+    - tas
+    - tasman region
+    - te tai o aorere
+    - te tai o aorere region
+  category: REGION

@@ -1,0 +1,11 @@
+name: Bắc Giang
+type: Division-1
+meta:
+  alpha2: VN-54
+  includes:
+    - bắc giang
+    - vn-54
+    - '54'
+    - bắc giang province
+    - bac giang
+  category: PROVINCE

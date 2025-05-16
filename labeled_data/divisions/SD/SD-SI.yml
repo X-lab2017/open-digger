@@ -1,0 +1,12 @@
+name: Sinnār
+type: Division-1
+meta:
+  alpha2: SD-SI
+  includes:
+    - sennar
+    - sd-si
+    - si
+    - sennar state
+    - sinnār
+    - sinnār state
+  category: STATE

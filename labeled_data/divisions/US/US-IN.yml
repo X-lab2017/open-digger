@@ -1,0 +1,10 @@
+name: Indiana
+type: Division-1
+meta:
+  alpha2: US-IN
+  includes:
+    - indiana
+    - us-in
+    - in
+    - indiana state
+  category: STATE

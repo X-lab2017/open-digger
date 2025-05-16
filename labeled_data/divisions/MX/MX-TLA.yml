@@ -1,0 +1,11 @@
+name: Tlaxcala
+type: Division-1
+meta:
+  alpha2: MX-TLA
+  includes:
+    - tlaxcala
+    - mx-tla
+    - tla
+    - tlaxcala state
+    - tlax
+  category: STATE

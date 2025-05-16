@@ -1,0 +1,10 @@
+name: Marsabit
+type: Division-1
+meta:
+  alpha2: KE-25
+  includes:
+    - marsabit
+    - ke-25
+    - '25'
+    - marsabit county
+  category: COUNTY

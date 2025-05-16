@@ -1,0 +1,11 @@
+name: Nam Định
+type: Division-1
+meta:
+  alpha2: VN-67
+  includes:
+    - nam định
+    - vn-67
+    - '67'
+    - nam định province
+    - nam dinh
+  category: PROVINCE

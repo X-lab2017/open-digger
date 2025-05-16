@@ -1,0 +1,12 @@
+name: Tumbes
+type: Division-1
+meta:
+  alpha2: PE-TUM
+  includes:
+    - tumbes
+    - pe-tum
+    - tum
+    - tumbes region
+    - tumpis
+    - tumpis region
+  category: REGION

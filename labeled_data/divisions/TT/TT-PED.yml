@@ -1,0 +1,10 @@
+name: Penal-Debe
+type: Division-1
+meta:
+  alpha2: TT-PED
+  includes:
+    - penal-debe
+    - tt-ped
+    - ped
+    - penal-debe region
+  category: REGION

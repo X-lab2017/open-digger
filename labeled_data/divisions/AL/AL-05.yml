@@ -1,0 +1,10 @@
+name: Gjirokastër
+type: Division-1
+meta:
+  alpha2: AL-05
+  includes:
+    - gjirokastër
+    - al-05
+    - '05'
+    - gjirokastër county
+  category: COUNTY

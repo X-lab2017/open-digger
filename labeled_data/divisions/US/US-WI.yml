@@ -1,0 +1,10 @@
+name: Wisconsin
+type: Division-1
+meta:
+  alpha2: US-WI
+  includes:
+    - wisconsin
+    - us-wi
+    - wi
+    - wisconsin state
+  category: STATE

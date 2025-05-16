@@ -1,0 +1,10 @@
+name: Vitanje
+type: Division-1
+meta:
+  alpha2: SI-137
+  includes:
+    - vitanje
+    - si-137
+    - '137'
+    - vitanje municipality
+  category: MUNICIPALITY

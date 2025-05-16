@@ -1,0 +1,10 @@
+name: Fontana
+type: Division-1
+meta:
+  alpha2: MT-10
+  includes:
+    - fontana
+    - mt-10
+    - '10'
+    - fontana local council
+  category: LOCAL COUNCIL

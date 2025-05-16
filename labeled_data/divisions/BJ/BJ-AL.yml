@@ -1,0 +1,10 @@
+name: Alibori
+type: Division-1
+meta:
+  alpha2: BJ-AL
+  includes:
+    - alibori
+    - bj-al
+    - al
+    - alibori department
+  category: DEPARTMENT

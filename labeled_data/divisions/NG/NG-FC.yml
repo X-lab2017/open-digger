@@ -1,0 +1,11 @@
+name: Abuja Federal Capital Territory
+type: Division-1
+meta:
+  alpha2: NG-FC
+  includes:
+    - abuja federal capital territory
+    - ng-fc
+    - fc
+    - abuja federal capital territory capital territory
+    - federal capital territory
+  category: CAPITAL TERRITORY

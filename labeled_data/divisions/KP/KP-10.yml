@@ -1,0 +1,12 @@
+name: Ryangkangto
+type: Division-1
+meta:
+  alpha2: KP-10
+  includes:
+    - ryanggang-do
+    - kp-10
+    - '10'
+    - ryanggang-do province
+    - ryangkangto
+    - ryangkangto province
+  category: PROVINCE

@@ -1,0 +1,13 @@
+name: Al Gharbīyah
+type: Division-1
+meta:
+  alpha2: EG-GH
+  includes:
+    - al gharbīyah
+    - eg-gh
+    - gh
+    - al gharbīyah governorate
+    - gharbia governorate
+    - al gharbiyah
+    - محافظة الغربية
+  category: GOVERNORATE

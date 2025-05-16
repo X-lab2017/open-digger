@@ -1,0 +1,10 @@
+name: Swieqi
+type: Division-1
+meta:
+  alpha2: MT-57
+  includes:
+    - swieqi
+    - mt-57
+    - '57'
+    - swieqi local council
+  category: LOCAL COUNCIL

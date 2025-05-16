@@ -1,0 +1,15 @@
+name: South Maalhosmadulu
+type: Division-1
+meta:
+  alpha2: MV-20
+  includes:
+    - maalhosmadulu dhekunuburi
+    - mv-20
+    - '20'
+    - maalhosmadulu dhekunuburi administrative atoll
+    - baa
+    - baa administrative atoll
+    - south maalhosmadulu
+    - south maalhosmadulu administrative atoll
+    - baa atoll
+  category: ADMINISTRATIVE ATOLL

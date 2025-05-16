@@ -1,0 +1,11 @@
+name: Västerbottens län
+type: Division-1
+meta:
+  alpha2: SE-AC
+  includes:
+    - västerbottens län
+    - se-ac
+    - ac
+    - västerbottens län county
+    - västerbotten county
+  category: COUNTY

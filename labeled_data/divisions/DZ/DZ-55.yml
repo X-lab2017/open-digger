@@ -1,0 +1,10 @@
+name: Touggourt
+type: Division-1
+meta:
+  alpha2: DZ-55
+  includes:
+    - touggourt
+    - dz-55
+    - '55'
+    - touggourt province
+  category: PROVINCE

@@ -1,0 +1,12 @@
+name: Hyôgo
+type: Division-1
+meta:
+  alpha2: JP-28
+  includes:
+    - hyogo
+    - jp-28
+    - '28'
+    - hyogo prefecture
+    - hyôgo
+    - hyôgo prefecture
+  category: PREFECTURE

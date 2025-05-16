@@ -1,0 +1,10 @@
+name: Omusati
+type: Division-1
+meta:
+  alpha2: NA-OS
+  includes:
+    - omusati
+    - na-os
+    - os
+    - omusati region
+  category: REGION

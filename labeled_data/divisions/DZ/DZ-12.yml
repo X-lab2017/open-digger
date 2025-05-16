@@ -1,0 +1,10 @@
+name: Tébessa
+type: Division-1
+meta:
+  alpha2: DZ-12
+  includes:
+    - tébessa
+    - dz-12
+    - '12'
+    - tébessa province
+  category: PROVINCE

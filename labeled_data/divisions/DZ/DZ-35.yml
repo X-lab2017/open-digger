@@ -1,0 +1,11 @@
+name: Boumerdès
+type: Division-1
+meta:
+  alpha2: DZ-35
+  includes:
+    - boumerdès
+    - dz-35
+    - '35'
+    - boumerdès province
+    - boumerdes
+  category: PROVINCE

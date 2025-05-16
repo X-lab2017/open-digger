@@ -1,0 +1,10 @@
+name: Žabljak
+type: Division-1
+meta:
+  alpha2: ME-21
+  includes:
+    - žabljak
+    - me-21
+    - '21'
+    - žabljak municipality
+  category: MUNICIPALITY

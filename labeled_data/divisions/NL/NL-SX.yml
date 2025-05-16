@@ -1,0 +1,10 @@
+name: Sint Maarten
+type: Division-1
+meta:
+  alpha2: NL-SX
+  includes:
+    - sint maarten
+    - nl-sx
+    - sx
+    - sint maarten country
+  category: COUNTRY

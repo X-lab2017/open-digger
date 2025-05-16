@@ -1,0 +1,12 @@
+name: Islas de la Bahía
+type: Division-1
+meta:
+  alpha2: HN-IB
+  includes:
+    - islas de la bahía
+    - hn-ib
+    - ib
+    - islas de la bahía department
+    - bay islands department
+    - hnib
+  category: DEPARTMENT

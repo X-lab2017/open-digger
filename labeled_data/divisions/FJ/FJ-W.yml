@@ -1,0 +1,22 @@
+name: Western
+type: Division-1
+meta:
+  alpha2: FJ-W
+  includes:
+    - ba
+    - fj-01
+    - '01'
+    - ba province
+    - nadroga and navosa
+    - fj-08
+    - '08'
+    - nadroga and navosa province
+    - ra
+    - fj-11
+    - '11'
+    - ra province
+    - western
+    - fj-w
+    - w
+    - western division
+  category: DIVISION

@@ -1,0 +1,10 @@
+name: Shan
+type: Division-1
+meta:
+  alpha2: MM-17
+  includes:
+    - shan
+    - mm-17
+    - '17'
+    - shan state
+  category: STATE

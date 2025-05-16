@@ -1,0 +1,11 @@
+name: Želino
+type: Division-1
+meta:
+  alpha2: MK-605
+  includes:
+    - želino
+    - mk-605
+    - '605'
+    - želino municipality
+    - municipality of želino
+  category: MUNICIPALITY

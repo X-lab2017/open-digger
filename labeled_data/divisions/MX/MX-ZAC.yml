@@ -1,0 +1,10 @@
+name: Zacatecas
+type: Division-1
+meta:
+  alpha2: MX-ZAC
+  includes:
+    - zacatecas
+    - mx-zac
+    - zac
+    - zacatecas state
+  category: STATE

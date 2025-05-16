@@ -1,0 +1,10 @@
+name: North Abaco
+type: Division-1
+meta:
+  alpha2: BS-NO
+  includes:
+    - north abaco
+    - bs-no
+    - 'no'
+    - north abaco district
+  category: DISTRICT

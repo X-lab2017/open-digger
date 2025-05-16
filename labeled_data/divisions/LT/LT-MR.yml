@@ -1,0 +1,31 @@
+name: Marijampolės apskritis
+type: Division-1
+meta:
+  alpha2: LT-MR
+  includes:
+    - kalvarija
+    - lt-14
+    - '14'
+    - kalvarija municipality
+    - kazlų rūdos
+    - lt-17
+    - '17'
+    - kazlų rūdos municipality
+    - marijampolė
+    - lt-25
+    - '25'
+    - marijampolė district municipality
+    - marijampolės apskritis
+    - lt-mr
+    - mr
+    - marijampolės apskritis county
+    - vilkaviškis
+    - lt-56
+    - '56'
+    - vilkaviškis district municipality
+    - šakiai
+    - lt-41
+    - '41'
+    - šakiai district municipality
+    - marijampolė county
+  category: COUNTY

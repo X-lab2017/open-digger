@@ -1,0 +1,10 @@
+name: Bijelo Polje
+type: Division-1
+meta:
+  alpha2: ME-04
+  includes:
+    - bijelo polje
+    - me-04
+    - '04'
+    - bijelo polje municipality
+  category: MUNICIPALITY

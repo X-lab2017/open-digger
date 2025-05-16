@@ -1,0 +1,13 @@
+name: Al Janūbī
+type: Division-1
+meta:
+  alpha2: ER-DU
+  includes:
+    - al janūbī
+    - er-du
+    - du
+    - al janūbī region
+    - debub
+    - debub region
+    - southern red sea
+  category: REGION

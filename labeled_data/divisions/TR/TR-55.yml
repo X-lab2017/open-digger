@@ -1,0 +1,10 @@
+name: Samsun
+type: Division-1
+meta:
+  alpha2: TR-55
+  includes:
+    - samsun
+    - tr-55
+    - '55'
+    - samsun province
+  category: PROVINCE

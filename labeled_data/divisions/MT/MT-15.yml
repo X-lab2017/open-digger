@@ -1,0 +1,10 @@
+name: Għargħur
+type: Division-1
+meta:
+  alpha2: MT-15
+  includes:
+    - għargħur
+    - mt-15
+    - '15'
+    - għargħur local council
+  category: LOCAL COUNCIL

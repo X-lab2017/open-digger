@@ -1,0 +1,13 @@
+name: Norra Karelen
+type: Division-1
+meta:
+  alpha2: FI-13
+  includes:
+    - norra karelen
+    - fi-13
+    - '13'
+    - norra karelen region
+    - pohjois-karjala
+    - pohjois-karjala region
+    - north karelia
+  category: REGION

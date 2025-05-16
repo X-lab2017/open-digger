@@ -1,0 +1,19 @@
+name: Umbria
+type: Division-1
+meta:
+  alpha2: IT-55
+  includes:
+    - perugia
+    - it-pg
+    - pg
+    - perugia province
+    - terni
+    - it-tr
+    - tr
+    - terni province
+    - umbria
+    - it-55
+    - '55'
+    - umbria region
+    - umbr.
+  category: REGION

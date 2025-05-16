@@ -1,0 +1,12 @@
+name: Kasaï Oriental
+type: Division-1
+meta:
+  alpha2: CD-KE
+  includes:
+    - kasaï oriental
+    - cd-ke
+    - ke
+    - kasaï oriental province
+    - kasai-oriental
+    - kasai oriental
+  category: PROVINCE

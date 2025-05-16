@@ -1,0 +1,72 @@
+name: Turks and Caicos Islands
+type: Division-0
+meta:
+  alpha2: TC
+  includes:
+    - Turks and Caicos Islands
+    - TC
+    - '796'
+    - 特克斯和凯科斯群岛
+  name_full: Turks and Caicos Islands
+  name_zh: 特克斯和凯科斯群岛
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 194
+    - year: 2020
+      quarter: 2
+      count: 232
+    - year: 2020
+      quarter: 3
+      count: 271
+    - year: 2020
+      quarter: 4
+      count: 315
+    - year: 2021
+      quarter: 1
+      count: 346
+    - year: 2021
+      quarter: 2
+      count: 379
+    - year: 2021
+      quarter: 3
+      count: 396
+    - year: 2021
+      quarter: 4
+      count: 417
+    - year: 2022
+      quarter: 1
+      count: 451
+    - year: 2022
+      quarter: 2
+      count: 493
+    - year: 2022
+      quarter: 3
+      count: 522
+    - year: 2022
+      quarter: 4
+      count: 550
+    - year: 2023
+      quarter: 1
+      count: 579
+    - year: 2023
+      quarter: 2
+      count: 619
+    - year: 2023
+      quarter: 3
+      count: 662
+    - year: 2023
+      quarter: 4
+      count: 700
+    - year: 2024
+      quarter: 1
+      count: 741
+    - year: 2024
+      quarter: 2
+      count: 782
+    - year: 2024
+      quarter: 3
+      count: 810
+    - year: 2024
+      quarter: 4
+      count: 845

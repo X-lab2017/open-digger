@@ -1,0 +1,10 @@
+name: Berane
+type: Division-1
+meta:
+  alpha2: ME-03
+  includes:
+    - berane
+    - me-03
+    - '03'
+    - berane municipality
+  category: MUNICIPALITY

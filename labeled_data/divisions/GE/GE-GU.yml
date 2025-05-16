@@ -1,0 +1,10 @@
+name: Guria
+type: Division-1
+meta:
+  alpha2: GE-GU
+  includes:
+    - guria
+    - ge-gu
+    - gu
+    - guria region
+  category: REGION

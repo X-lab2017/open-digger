@@ -1,0 +1,87 @@
+name: Albania
+type: Division-0
+meta:
+  alpha2: AL
+  includes:
+    - Albania
+    - AL
+    - '008'
+    - the Republic of Albania
+    - 阿尔巴尼亚
+  name_full: the Republic of Albania
+  name_zh: 阿尔巴尼亚
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 28833
+    - year: 2020
+      quarter: 2
+      count: 31852
+    - year: 2020
+      quarter: 3
+      count: 34198
+    - year: 2020
+      quarter: 4
+      count: 37541
+    - year: 2021
+      quarter: 1
+      count: 40744
+    - year: 2021
+      quarter: 2
+      count: 43582
+    - year: 2021
+      quarter: 3
+      count: 44938
+    - year: 2021
+      quarter: 4
+      count: 46795
+    - year: 2022
+      quarter: 1
+      count: 49486
+    - year: 2022
+      quarter: 2
+      count: 53489
+    - year: 2022
+      quarter: 3
+      count: 55658
+    - year: 2022
+      quarter: 4
+      count: 56814
+    - year: 2023
+      quarter: 1
+      count: 58221
+    - year: 2023
+      quarter: 2
+      count: 60525
+    - year: 2023
+      quarter: 3
+      count: 62709
+    - year: 2023
+      quarter: 4
+      count: 65419
+    - year: 2024
+      quarter: 1
+      count: 68358
+    - year: 2024
+      quarter: 2
+      count: 70631
+    - year: 2024
+      quarter: 3
+      count: 73563
+    - year: 2024
+      quarter: 4
+      count: 75961
+data:
+  labels:
+    - AL-01
+    - AL-09
+    - AL-02
+    - AL-03
+    - AL-04
+    - AL-05
+    - AL-06
+    - AL-07
+    - AL-08
+    - AL-10
+    - AL-11
+    - AL-12

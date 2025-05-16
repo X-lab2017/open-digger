@@ -1,0 +1,14 @@
+name: Alger
+type: Division-1
+meta:
+  alpha2: DZ-16
+  includes:
+    - alger
+    - dz-16
+    - '16'
+    - alger province
+    - algiers province
+    - wilaya d'alger
+    - algiers
+    - algeria
+  category: PROVINCE

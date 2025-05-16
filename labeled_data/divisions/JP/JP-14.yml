@@ -1,0 +1,10 @@
+name: Kanagawa
+type: Division-1
+meta:
+  alpha2: JP-14
+  includes:
+    - kanagawa
+    - jp-14
+    - '14'
+    - kanagawa prefecture
+  category: PREFECTURE

@@ -1,0 +1,10 @@
+name: Žetale
+type: Division-1
+meta:
+  alpha2: SI-191
+  includes:
+    - žetale
+    - si-191
+    - '191'
+    - žetale municipality
+  category: MUNICIPALITY

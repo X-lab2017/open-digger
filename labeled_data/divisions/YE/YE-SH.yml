@@ -1,0 +1,10 @@
+name: Shabwah
+type: Division-1
+meta:
+  alpha2: YE-SH
+  includes:
+    - shabwah
+    - ye-sh
+    - sh
+    - shabwah governorate
+  category: GOVERNORATE

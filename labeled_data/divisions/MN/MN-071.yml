@@ -1,0 +1,11 @@
+name: Bayan-Ölgiy
+type: Division-1
+meta:
+  alpha2: MN-071
+  includes:
+    - bayan-ölgiy
+    - mn-071
+    - '071'
+    - bayan-ölgiy province
+    - bayan-ölgii
+  category: PROVINCE

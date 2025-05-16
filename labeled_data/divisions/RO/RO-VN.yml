@@ -1,0 +1,10 @@
+name: Vrancea
+type: Division-1
+meta:
+  alpha2: RO-VN
+  includes:
+    - vrancea
+    - ro-vn
+    - vn
+    - vrancea department
+  category: DEPARTMENT

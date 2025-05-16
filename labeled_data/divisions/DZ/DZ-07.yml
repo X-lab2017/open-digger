@@ -1,0 +1,10 @@
+name: Biskra
+type: Division-1
+meta:
+  alpha2: DZ-07
+  includes:
+    - biskra
+    - dz-07
+    - '07'
+    - biskra province
+  category: PROVINCE

@@ -1,0 +1,10 @@
+name: Manchester
+type: Division-1
+meta:
+  alpha2: JM-12
+  includes:
+    - manchester
+    - jm-12
+    - '12'
+    - manchester parish
+  category: PARISH

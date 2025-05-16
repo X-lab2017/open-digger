@@ -1,0 +1,10 @@
+name: Mashonaland East
+type: Division-1
+meta:
+  alpha2: ZW-ME
+  includes:
+    - mashonaland east
+    - zw-me
+    - me
+    - mashonaland east province
+  category: PROVINCE

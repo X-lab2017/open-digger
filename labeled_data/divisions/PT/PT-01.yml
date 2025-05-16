@@ -1,0 +1,10 @@
+name: Aveiro
+type: Division-1
+meta:
+  alpha2: PT-01
+  includes:
+    - aveiro
+    - pt-01
+    - '01'
+    - aveiro district
+  category: DISTRICT

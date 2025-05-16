@@ -1,0 +1,11 @@
+name: Miranda
+type: Division-1
+meta:
+  alpha2: VE-M
+  includes:
+    - miranda
+    - ve-m
+    - m
+    - miranda state
+    - mi
+  category: STATE

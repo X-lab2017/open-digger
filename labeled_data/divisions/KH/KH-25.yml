@@ -1,0 +1,13 @@
+name: Tbong Khmŭm
+type: Division-1
+meta:
+  alpha2: KH-25
+  includes:
+    - tbong khmum
+    - kh-25
+    - '25'
+    - tbong khmum province
+    - tbong khmŭm
+    - tbong khmŭm province
+    - tb
+  category: PROVINCE

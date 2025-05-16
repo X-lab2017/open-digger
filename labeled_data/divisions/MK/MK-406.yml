@@ -1,0 +1,11 @@
+name: Dojran
+type: Division-1
+meta:
+  alpha2: MK-406
+  includes:
+    - dojran
+    - mk-406
+    - '406'
+    - dojran municipality
+    - municipality of dojran
+  category: MUNICIPALITY

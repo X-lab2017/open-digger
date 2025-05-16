@@ -1,0 +1,10 @@
+name: Guatemala
+type: Division-1
+meta:
+  alpha2: GT-01
+  includes:
+    - guatemala
+    - gt-01
+    - '01'
+    - guatemala department
+  category: DEPARTMENT

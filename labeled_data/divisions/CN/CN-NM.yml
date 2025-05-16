@@ -1,0 +1,14 @@
+name: Nei Mongol Zizhiqu
+type: Division-1
+meta:
+  alpha2: CN-NM
+  includes:
+    - nei mongol zizhiqu
+    - cn-nm
+    - nm
+    - nei mongol zizhiqu autonomous region
+    - nei meng gu zi zhi qu
+    - inner mongolia
+    - 内蒙古
+    - 内蒙古自治区
+  category: AUTONOMOUS REGION

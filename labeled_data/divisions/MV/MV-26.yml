@@ -1,0 +1,15 @@
+name: Male Atoll
+type: Division-1
+meta:
+  alpha2: MV-26
+  includes:
+    - maaleatholhu
+    - mv-26
+    - '26'
+    - maaleatholhu administrative atoll
+    - kaafu
+    - kaafu administrative atoll
+    - male atoll
+    - male atoll administrative atoll
+    - kaafu atoll
+  category: ADMINISTRATIVE ATOLL

@@ -1,0 +1,12 @@
+name: Kočani
+type: Division-1
+meta:
+  alpha2: MK-206
+  includes:
+    - kočani
+    - mk-206
+    - '206'
+    - kočani municipality
+    - municipality of kočani
+    - eastern
+  category: MUNICIPALITY

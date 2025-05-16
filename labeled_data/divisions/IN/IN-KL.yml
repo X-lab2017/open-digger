@@ -1,0 +1,10 @@
+name: Kerala
+type: Division-1
+meta:
+  alpha2: IN-KL
+  includes:
+    - kerala
+    - in-kl
+    - kl
+    - kerala state
+  category: STATE

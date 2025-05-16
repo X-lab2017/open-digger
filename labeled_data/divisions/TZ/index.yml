@@ -1,0 +1,108 @@
+name: Tanzania, United Republic of
+type: Division-0
+meta:
+  alpha2: TZ
+  includes:
+    - Tanzania, United Republic of
+    - TZ
+    - '834'
+    - the United Republic of Tanzania
+    - 坦桑尼亚
+    - Tanzania
+    - Tanzânia
+  name_full: the United Republic of Tanzania
+  name_zh: 坦桑尼亚
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 17267
+    - year: 2020
+      quarter: 2
+      count: 19288
+    - year: 2020
+      quarter: 3
+      count: 21372
+    - year: 2020
+      quarter: 4
+      count: 22745
+    - year: 2021
+      quarter: 1
+      count: 24089
+    - year: 2021
+      quarter: 2
+      count: 26518
+    - year: 2021
+      quarter: 3
+      count: 28341
+    - year: 2021
+      quarter: 4
+      count: 30232
+    - year: 2022
+      quarter: 1
+      count: 32358
+    - year: 2022
+      quarter: 2
+      count: 35625
+    - year: 2022
+      quarter: 3
+      count: 37923
+    - year: 2022
+      quarter: 4
+      count: 39754
+    - year: 2023
+      quarter: 1
+      count: 42327
+    - year: 2023
+      quarter: 2
+      count: 45353
+    - year: 2023
+      quarter: 3
+      count: 48357
+    - year: 2023
+      quarter: 4
+      count: 51367
+    - year: 2024
+      quarter: 1
+      count: 55681
+    - year: 2024
+      quarter: 2
+      count: 61372
+    - year: 2024
+      quarter: 3
+      count: 65542
+    - year: 2024
+      quarter: 4
+      count: 70044
+data:
+  labels:
+    - TZ-01
+    - TZ-19
+    - TZ-02
+    - TZ-03
+    - TZ-27
+    - TZ-04
+    - TZ-05
+    - TZ-06
+    - TZ-07
+    - TZ-28
+    - TZ-08
+    - TZ-09
+    - TZ-10
+    - TZ-11
+    - TZ-12
+    - TZ-26
+    - TZ-13
+    - TZ-14
+    - TZ-15
+    - TZ-16
+    - TZ-17
+    - TZ-18
+    - TZ-29
+    - TZ-20
+    - TZ-21
+    - TZ-22
+    - TZ-30
+    - TZ-23
+    - TZ-31
+    - TZ-24
+    - TZ-25

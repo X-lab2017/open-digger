@@ -1,0 +1,10 @@
+name: Adamawa
+type: Division-1
+meta:
+  alpha2: NG-AD
+  includes:
+    - adamawa
+    - ng-ad
+    - ad
+    - adamawa state
+  category: STATE

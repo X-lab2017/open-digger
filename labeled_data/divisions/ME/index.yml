@@ -1,0 +1,100 @@
+name: Montenegro
+type: Division-0
+meta:
+  alpha2: ME
+  includes:
+    - Montenegro
+    - ME
+    - '499'
+    - he Republic of Montenegro
+    - 黑山
+  name_full: he Republic of Montenegro
+  name_zh: 黑山
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 4978
+    - year: 2020
+      quarter: 2
+      count: 5768
+    - year: 2020
+      quarter: 3
+      count: 6277
+    - year: 2020
+      quarter: 4
+      count: 6656
+    - year: 2021
+      quarter: 1
+      count: 7087
+    - year: 2021
+      quarter: 2
+      count: 7499
+    - year: 2021
+      quarter: 3
+      count: 8214
+    - year: 2021
+      quarter: 4
+      count: 8519
+    - year: 2022
+      quarter: 1
+      count: 9084
+    - year: 2022
+      quarter: 2
+      count: 10779
+    - year: 2022
+      quarter: 3
+      count: 12157
+    - year: 2022
+      quarter: 4
+      count: 13750
+    - year: 2023
+      quarter: 1
+      count: 15603
+    - year: 2023
+      quarter: 2
+      count: 17482
+    - year: 2023
+      quarter: 3
+      count: 18660
+    - year: 2023
+      quarter: 4
+      count: 19519
+    - year: 2024
+      quarter: 1
+      count: 20366
+    - year: 2024
+      quarter: 2
+      count: 21077
+    - year: 2024
+      quarter: 3
+      count: 21942
+    - year: 2024
+      quarter: 4
+      count: 22597
+data:
+  labels:
+    - ME-01
+    - ME-02
+    - ME-03
+    - ME-04
+    - ME-05
+    - ME-06
+    - ME-07
+    - ME-22
+    - ME-08
+    - ME-09
+    - ME-10
+    - ME-11
+    - ME-12
+    - ME-23
+    - ME-13
+    - ME-14
+    - ME-15
+    - ME-16
+    - ME-17
+    - ME-19
+    - ME-24
+    - ME-20
+    - ME-25
+    - ME-18
+    - ME-21

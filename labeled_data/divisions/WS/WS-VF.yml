@@ -1,0 +1,10 @@
+name: Va'a-o-Fonoti
+type: Division-1
+meta:
+  alpha2: WS-VF
+  includes:
+    - va'a-o-fonoti
+    - ws-vf
+    - vf
+    - va'a-o-fonoti district
+  category: DISTRICT

@@ -1,0 +1,12 @@
+name: Puducherry
+type: Division-1
+meta:
+  alpha2: IN-PY
+  includes:
+    - puducherry
+    - in-py
+    - py
+    - puducherry union territory
+    - pondicherry
+    - pondicherry union territory
+  category: UNION TERRITORY

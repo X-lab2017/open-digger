@@ -1,0 +1,98 @@
+name: Germany
+type: Division-0
+meta:
+  alpha2: DE
+  includes:
+    - Germany
+    - DE
+    - '276'
+    - he Federal Republic of Germany
+    - 德国
+  name_full: he Federal Republic of Germany
+  name_zh: 德国
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 1319588
+    - year: 2020
+      quarter: 2
+      count: 1432550
+    - year: 2020
+      quarter: 3
+      count: 1519080
+    - year: 2020
+      quarter: 4
+      count: 1631022
+    - year: 2021
+      quarter: 1
+      count: 1741361
+    - year: 2021
+      quarter: 2
+      count: 1846894
+    - year: 2021
+      quarter: 3
+      count: 1930582
+    - year: 2021
+      quarter: 4
+      count: 2038582
+    - year: 2022
+      quarter: 1
+      count: 2180029
+    - year: 2022
+      quarter: 2
+      count: 2313149
+    - year: 2022
+      quarter: 3
+      count: 2417044
+    - year: 2022
+      quarter: 4
+      count: 2538291
+    - year: 2023
+      quarter: 1
+      count: 2676735
+    - year: 2023
+      quarter: 2
+      count: 2834959
+    - year: 2023
+      quarter: 3
+      count: 2972917
+    - year: 2023
+      quarter: 4
+      count: 3134538
+    - year: 2024
+      quarter: 1
+      count: 3316461
+    - year: 2024
+      quarter: 2
+      count: 3453380
+    - year: 2024
+      quarter: 3
+      count: 3594869
+    - year: 2024
+      quarter: 4
+      count: 3782196
+data:
+  labels:
+    - DE-BW
+    - DE-BY
+    - DE-BE
+    - DE-BB
+    - DE-HB
+    - DE-HH
+    - DE-HE
+    - DE-MV
+    - DE-NI
+    - DE-NW
+    - DE-RP
+    - DE-SL
+    - DE-SN
+    - DE-ST
+    - DE-SH
+    - DE-TH
+    - ':companies/camunda'
+    - ':companies/explosionai'
+    - ':companies/formbricks'
+    - ':companies/jina_ai'
+    - ':companies/n8n'
+    - ':companies/nextcloud'
+    - ':companies/zalando'

@@ -1,0 +1,12 @@
+name: Koprivničko-križevačka županija
+type: Division-1
+meta:
+  alpha2: HR-06
+  includes:
+    - koprivničko-križevačka županija
+    - hr-06
+    - '06'
+    - koprivničko-križevačka županija county
+    - koprivnicko-krizevacka
+    - koprivnica-križevci county
+  category: COUNTY

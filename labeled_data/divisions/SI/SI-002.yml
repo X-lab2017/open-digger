@@ -1,0 +1,10 @@
+name: Beltinci
+type: Division-1
+meta:
+  alpha2: SI-002
+  includes:
+    - beltinci
+    - si-002
+    - '002'
+    - beltinci municipality
+  category: MUNICIPALITY

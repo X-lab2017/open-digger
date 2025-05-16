@@ -1,0 +1,10 @@
+name: Beyləqan
+type: Division-1
+meta:
+  alpha2: AZ-BEY
+  includes:
+    - beyləqan
+    - az-bey
+    - bey
+    - beyləqan rayon
+  category: RAYON

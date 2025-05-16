@@ -1,0 +1,12 @@
+name: Hukui
+type: Division-1
+meta:
+  alpha2: JP-18
+  includes:
+    - fukui
+    - jp-18
+    - '18'
+    - fukui prefecture
+    - hukui
+    - hukui prefecture
+  category: PREFECTURE

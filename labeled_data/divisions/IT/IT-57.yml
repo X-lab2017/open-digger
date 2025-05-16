@@ -1,0 +1,32 @@
+name: Marche
+type: Division-1
+meta:
+  alpha2: IT-57
+  includes:
+    - ancona
+    - it-an
+    - an
+    - ancona province
+    - ascoli piceno
+    - it-ap
+    - ap
+    - ascoli piceno province
+    - fermo
+    - it-fm
+    - fm
+    - fermo province
+    - macerata
+    - it-mc
+    - mc
+    - macerata province
+    - marche
+    - it-57
+    - '57'
+    - marche region
+    - pesaro e urbino
+    - it-pu
+    - pu
+    - pesaro e urbino province
+    - marc.
+    - marches
+  category: REGION

@@ -1,0 +1,11 @@
+name: Lai Châu
+type: Division-1
+meta:
+  alpha2: VN-01
+  includes:
+    - lai châu
+    - vn-01
+    - '01'
+    - lai châu province
+    - lai chau
+  category: PROVINCE

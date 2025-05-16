@@ -1,0 +1,11 @@
+name: Andijon
+type: Division-1
+meta:
+  alpha2: UZ-AN
+  includes:
+    - andijon
+    - uz-an
+    - an
+    - andijon region
+    - andijan region
+  category: REGION

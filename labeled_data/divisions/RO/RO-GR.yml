@@ -1,0 +1,11 @@
+name: Giurgiu
+type: Division-1
+meta:
+  alpha2: RO-GR
+  includes:
+    - giurgiu
+    - ro-gr
+    - gr
+    - giurgiu department
+    - giurgiu county
+  category: DEPARTMENT

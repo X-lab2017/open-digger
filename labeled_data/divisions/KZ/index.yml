@@ -1,0 +1,95 @@
+name: Kazakhstan
+type: Division-0
+meta:
+  alpha2: KZ
+  includes:
+    - Kazakhstan
+    - KZ
+    - '398'
+    - the Republic of Kazakhstan
+    - 哈萨克斯坦
+  name_full: the Republic of Kazakhstan
+  name_zh: 哈萨克斯坦
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 69649
+    - year: 2020
+      quarter: 2
+      count: 77896
+    - year: 2020
+      quarter: 3
+      count: 86405
+    - year: 2020
+      quarter: 4
+      count: 96315
+    - year: 2021
+      quarter: 1
+      count: 105194
+    - year: 2021
+      quarter: 2
+      count: 111914
+    - year: 2021
+      quarter: 3
+      count: 118926
+    - year: 2021
+      quarter: 4
+      count: 127541
+    - year: 2022
+      quarter: 1
+      count: 138754
+    - year: 2022
+      quarter: 2
+      count: 151391
+    - year: 2022
+      quarter: 3
+      count: 161282
+    - year: 2022
+      quarter: 4
+      count: 183020
+    - year: 2023
+      quarter: 1
+      count: 196682
+    - year: 2023
+      quarter: 2
+      count: 213149
+    - year: 2023
+      quarter: 3
+      count: 225654
+    - year: 2023
+      quarter: 4
+      count: 239638
+    - year: 2024
+      quarter: 1
+      count: 258121
+    - year: 2024
+      quarter: 2
+      count: 269710
+    - year: 2024
+      quarter: 3
+      count: 279835
+    - year: 2024
+      quarter: 4
+      count: 296446
+data:
+  labels:
+    - KZ-10
+    - KZ-11
+    - KZ-15
+    - KZ-19
+    - KZ-75
+    - KZ-71
+    - KZ-23
+    - KZ-27
+    - KZ-35
+    - KZ-39
+    - KZ-43
+    - KZ-47
+    - KZ-55
+    - KZ-59
+    - KZ-63
+    - KZ-79
+    - KZ-61
+    - KZ-62
+    - KZ-31
+    - KZ-33

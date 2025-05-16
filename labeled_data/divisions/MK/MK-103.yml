@@ -1,0 +1,10 @@
+name: Demir Kapija
+type: Division-1
+meta:
+  alpha2: MK-103
+  includes:
+    - demir kapija
+    - mk-103
+    - '103'
+    - demir kapija municipality
+  category: MUNICIPALITY

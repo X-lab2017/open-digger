@@ -1,0 +1,12 @@
+name: Haut-Mbomou
+type: Division-1
+meta:
+  alpha2: CF-HM
+  includes:
+    - haut-mbomou
+    - cf-hm
+    - hm
+    - haut-mbomou prefecture
+    - tö-mbömü
+    - tö-mbömü prefecture
+  category: PREFECTURE

@@ -1,0 +1,10 @@
+name: Lempira
+type: Division-1
+meta:
+  alpha2: HN-LE
+  includes:
+    - lempira
+    - hn-le
+    - le
+    - lempira department
+  category: DEPARTMENT

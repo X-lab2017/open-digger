@@ -1,0 +1,13 @@
+name: Male
+type: Division-1
+meta:
+  alpha2: MV-MLE
+  includes:
+    - maale
+    - mv-mle
+    - mle
+    - maale city
+    - male
+    - male city
+    - malé
+  category: CITY

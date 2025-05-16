@@ -1,0 +1,23 @@
+name: Jõgevamaa
+type: Division-1
+meta:
+  alpha2: EE-50
+  includes:
+    - jõgeva
+    - ee-247
+    - '247'
+    - jõgeva rural municipality
+    - jõgevamaa
+    - ee-50
+    - '50'
+    - jõgevamaa county
+    - mustvee
+    - ee-486
+    - '486'
+    - mustvee rural municipality
+    - põltsamaa
+    - ee-618
+    - '618'
+    - põltsamaa rural municipality
+    - jõgeva county
+  category: COUNTY

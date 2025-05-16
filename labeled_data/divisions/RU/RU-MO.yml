@@ -1,0 +1,14 @@
+name: Mordoviya
+type: Division-1
+meta:
+  alpha2: RU-MO
+  includes:
+    - mordovija
+    - ru-mo
+    - mo
+    - mordovija republic
+    - mordoviya
+    - mordoviya republic
+    - mordovia republic
+    - mordovia
+  category: REPUBLIC

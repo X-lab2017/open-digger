@@ -1,0 +1,10 @@
+name: Cirkulane
+type: Division-1
+meta:
+  alpha2: SI-196
+  includes:
+    - cirkulane
+    - si-196
+    - '196'
+    - cirkulane municipality
+  category: MUNICIPALITY

@@ -1,0 +1,10 @@
+name: Studeničani
+type: Division-1
+meta:
+  alpha2: MK-813
+  includes:
+    - studeničani
+    - mk-813
+    - '813'
+    - studeničani municipality
+  category: MUNICIPALITY

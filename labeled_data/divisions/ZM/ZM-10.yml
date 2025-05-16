@@ -1,0 +1,10 @@
+name: Muchinga
+type: Division-1
+meta:
+  alpha2: ZM-10
+  includes:
+    - muchinga
+    - zm-10
+    - '10'
+    - muchinga province
+  category: PROVINCE

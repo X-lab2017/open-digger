@@ -1,0 +1,14 @@
+name: Rostovskaya oblast'
+type: Division-1
+meta:
+  alpha2: RU-ROS
+  includes:
+    - rostovskaja oblast'
+    - ru-ros
+    - ros
+    - rostovskaja oblast' administrative region
+    - rostovskaya oblast'
+    - rostovskaya oblast' administrative region
+    - rostov oblast
+    - rostov
+  category: ADMINISTRATIVE REGION

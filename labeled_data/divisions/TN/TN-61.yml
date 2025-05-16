@@ -1,0 +1,10 @@
+name: Sfax
+type: Division-1
+meta:
+  alpha2: TN-61
+  includes:
+    - sfax
+    - tn-61
+    - '61'
+    - sfax governorate
+  category: GOVERNORATE

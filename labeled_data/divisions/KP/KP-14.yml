@@ -1,0 +1,12 @@
+name: Namp’o
+type: Division-1
+meta:
+  alpha2: KP-14
+  includes:
+    - nampho
+    - kp-14
+    - '14'
+    - nampho metropolitan city
+    - namp’o
+    - namp’o metropolitan city
+  category: METROPOLITAN CITY

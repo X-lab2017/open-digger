@@ -1,0 +1,10 @@
+name: Fălești
+type: Division-1
+meta:
+  alpha2: MD-FA
+  includes:
+    - fălești
+    - md-fa
+    - fa
+    - fălești district
+  category: DISTRICT

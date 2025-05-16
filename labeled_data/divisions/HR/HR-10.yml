@@ -1,0 +1,12 @@
+name: Virovitičko-podravska županija
+type: Division-1
+meta:
+  alpha2: HR-10
+  includes:
+    - virovitičko-podravska županija
+    - hr-10
+    - '10'
+    - virovitičko-podravska županija county
+    - virovitica-podravina
+    - virovitica-podravina county
+  category: COUNTY

@@ -1,0 +1,12 @@
+name: Città di San Marino
+type: Division-1
+meta:
+  alpha2: SM-07
+  includes:
+    - città di san marino
+    - sm-07
+    - '07'
+    - città di san marino municipality
+    - san marino
+    - san marino municipality
+  category: MUNICIPALITY

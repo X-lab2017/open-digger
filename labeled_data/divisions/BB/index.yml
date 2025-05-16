@@ -1,0 +1,85 @@
+name: Barbados
+type: Division-0
+meta:
+  alpha2: BB
+  includes:
+    - Barbados
+    - BB
+    - '052'
+    - 巴巴多斯
+  name_full: Barbados
+  name_zh: 巴巴多斯
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 3049
+    - year: 2020
+      quarter: 2
+      count: 3428
+    - year: 2020
+      quarter: 3
+      count: 3686
+    - year: 2020
+      quarter: 4
+      count: 3970
+    - year: 2021
+      quarter: 1
+      count: 4343
+    - year: 2021
+      quarter: 2
+      count: 4566
+    - year: 2021
+      quarter: 3
+      count: 4743
+    - year: 2021
+      quarter: 4
+      count: 4985
+    - year: 2022
+      quarter: 1
+      count: 5327
+    - year: 2022
+      quarter: 2
+      count: 5591
+    - year: 2022
+      quarter: 3
+      count: 5796
+    - year: 2022
+      quarter: 4
+      count: 6001
+    - year: 2023
+      quarter: 1
+      count: 6223
+    - year: 2023
+      quarter: 2
+      count: 6491
+    - year: 2023
+      quarter: 3
+      count: 6728
+    - year: 2023
+      quarter: 4
+      count: 6973
+    - year: 2024
+      quarter: 1
+      count: 7291
+    - year: 2024
+      quarter: 2
+      count: 7497
+    - year: 2024
+      quarter: 3
+      count: 7720
+    - year: 2024
+      quarter: 4
+      count: 8230
+data:
+  labels:
+    - BB-01
+    - BB-02
+    - BB-03
+    - BB-04
+    - BB-05
+    - BB-06
+    - BB-07
+    - BB-08
+    - BB-09
+    - BB-10
+    - BB-11

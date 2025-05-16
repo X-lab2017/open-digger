@@ -1,0 +1,12 @@
+name: Limón
+type: Division-1
+meta:
+  alpha2: CR-L
+  includes:
+    - limón
+    - cr-l
+    - l
+    - limón province
+    - provincia de limón
+    - li
+  category: PROVINCE

@@ -1,0 +1,10 @@
+name: Moneghetti
+type: Division-1
+meta:
+  alpha2: MC-MG
+  includes:
+    - moneghetti
+    - mc-mg
+    - mg
+    - moneghetti quarter
+  category: QUARTER

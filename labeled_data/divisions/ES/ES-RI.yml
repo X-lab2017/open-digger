@@ -1,0 +1,14 @@
+name: La Rioja
+type: Division-1
+meta:
+  alpha2: ES-RI
+  includes:
+    - la rioja
+    - es-ri
+    - ri
+    - la rioja autonomous community
+    - es-lo
+    - lo
+    - la rioja province
+    - autonomía de la rioja
+  category: AUTONOMOUS COMMUNITY

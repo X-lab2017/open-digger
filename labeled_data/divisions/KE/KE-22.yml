@@ -1,0 +1,10 @@
+name: Machakos
+type: Division-1
+meta:
+  alpha2: KE-22
+  includes:
+    - machakos
+    - ke-22
+    - '22'
+    - machakos county
+  category: COUNTY

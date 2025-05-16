@@ -1,0 +1,46 @@
+name: Kauno apskritis
+type: Division-1
+meta:
+  alpha2: LT-KU
+  includes:
+    - birštonas
+    - lt-05
+    - '05'
+    - birštonas municipality
+    - jonava
+    - lt-10
+    - '10'
+    - jonava district municipality
+    - kaišiadorys
+    - lt-13
+    - '13'
+    - kaišiadorys district municipality
+    - kaunas
+    - lt-16
+    - '16'
+    - kaunas district municipality
+    - kauno apskritis
+    - lt-ku
+    - ku
+    - kauno apskritis county
+    - kauno miestas
+    - lt-15
+    - '15'
+    - kauno miestas city municipality
+    - kėdainiai
+    - lt-18
+    - '18'
+    - kėdainiai district municipality
+    - prienai
+    - lt-36
+    - '36'
+    - prienai district municipality
+    - raseiniai
+    - lt-38
+    - '38'
+    - raseiniai district municipality
+    - kauno m.
+    - kaunas region
+    - kauno
+    - kaunas county
+  category: COUNTY

@@ -1,0 +1,11 @@
+name: Golestān
+type: Division-1
+meta:
+  alpha2: IR-27
+  includes:
+    - golestān
+    - ir-27
+    - '27'
+    - golestān province
+    - golestan province
+  category: PROVINCE

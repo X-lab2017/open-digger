@@ -1,0 +1,14 @@
+name: Mulaku Atoll
+type: Division-1
+meta:
+  alpha2: MV-12
+  includes:
+    - mulakatholhu
+    - mv-12
+    - '12'
+    - mulakatholhu administrative atoll
+    - meemu
+    - meemu administrative atoll
+    - mulaku atoll
+    - mulaku atoll administrative atoll
+  category: ADMINISTRATIVE ATOLL

@@ -1,0 +1,10 @@
+name: Guadeloupe
+type: Division-1
+meta:
+  alpha2: FR-971
+  includes:
+    - guadeloupe
+    - fr-971
+    - '971'
+    - guadeloupe overseas departmental collectivity
+  category: OVERSEAS DEPARTMENTAL COLLECTIVITY

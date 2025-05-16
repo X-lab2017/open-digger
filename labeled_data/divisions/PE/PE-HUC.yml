@@ -1,0 +1,13 @@
+name: Huánuco
+type: Division-1
+meta:
+  alpha2: PE-HUC
+  includes:
+    - huánuco
+    - pe-huc
+    - huc
+    - huánuco region
+    - wanuku
+    - wanuku region
+    - huanuco
+  category: REGION

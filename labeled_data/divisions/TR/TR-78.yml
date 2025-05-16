@@ -1,0 +1,11 @@
+name: Karabük
+type: Division-1
+meta:
+  alpha2: TR-78
+  includes:
+    - karabük
+    - tr-78
+    - '78'
+    - karabük province
+    - karabuk
+  category: PROVINCE

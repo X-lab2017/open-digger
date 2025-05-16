@@ -1,0 +1,10 @@
+name: Haa
+type: Division-1
+meta:
+  alpha2: BT-13
+  includes:
+    - haa
+    - bt-13
+    - '13'
+    - haa district
+  category: DISTRICT

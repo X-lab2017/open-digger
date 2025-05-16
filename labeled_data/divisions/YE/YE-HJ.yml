@@ -1,0 +1,11 @@
+name: Ḩajjah
+type: Division-1
+meta:
+  alpha2: YE-HJ
+  includes:
+    - ḩajjah
+    - ye-hj
+    - hj
+    - ḩajjah governorate
+    - hajjah governorate
+  category: GOVERNORATE

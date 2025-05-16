@@ -1,0 +1,10 @@
+name: Gümüşhane
+type: Division-1
+meta:
+  alpha2: TR-29
+  includes:
+    - gümüşhane
+    - tr-29
+    - '29'
+    - gümüşhane province
+  category: PROVINCE

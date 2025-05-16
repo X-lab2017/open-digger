@@ -1,0 +1,10 @@
+name: Ontario
+type: Division-1
+meta:
+  alpha2: CA-ON
+  includes:
+    - ontario
+    - ca-on
+    - 'on'
+    - ontario province
+  category: PROVINCE

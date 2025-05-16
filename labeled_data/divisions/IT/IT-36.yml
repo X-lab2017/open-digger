@@ -1,0 +1,28 @@
+name: Friuli Venezia Giulia
+type: Division-1
+meta:
+  alpha2: IT-36
+  includes:
+    - friuli venezia giulia
+    - it-36
+    - '36'
+    - friuli venezia giulia autonomous region
+    - gorizia
+    - it-go
+    - go
+    - gorizia decentralized regional entity
+    - pordenone
+    - it-pn
+    - pn
+    - pordenone decentralized regional entity
+    - trieste
+    - it-ts
+    - ts
+    - trieste decentralized regional entity
+    - udine
+    - it-ud
+    - ud
+    - udine decentralized regional entity
+    - friuli-venezia giulia
+    - fr.v.g.
+  category: AUTONOMOUS REGION

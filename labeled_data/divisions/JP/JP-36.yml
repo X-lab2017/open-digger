@@ -1,0 +1,12 @@
+name: Tokusima
+type: Division-1
+meta:
+  alpha2: JP-36
+  includes:
+    - tokushima
+    - jp-36
+    - '36'
+    - tokushima prefecture
+    - tokusima
+    - tokusima prefecture
+  category: PREFECTURE

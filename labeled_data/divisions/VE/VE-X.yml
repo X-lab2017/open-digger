@@ -1,0 +1,12 @@
+name: La Guaira
+type: Division-1
+meta:
+  alpha2: VE-X
+  includes:
+    - la guaira
+    - ve-x
+    - x
+    - la guaira state
+    - la
+    - vargas
+  category: STATE

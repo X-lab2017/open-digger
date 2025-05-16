@@ -1,0 +1,14 @@
+name: Kâmpóng Thum
+type: Division-1
+meta:
+  alpha2: KH-6
+  includes:
+    - kampong thum
+    - kh-6
+    - '6'
+    - kampong thum province
+    - kampong thom
+    - kampong thom province
+    - kâmpóng thum
+    - kâmpóng thum province
+  category: PROVINCE

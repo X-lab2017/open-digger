@@ -1,0 +1,11 @@
+name: Mişrātah
+type: Division-1
+meta:
+  alpha2: LY-MI
+  includes:
+    - mişrātah
+    - ly-mi
+    - mi
+    - mişrātah popularate
+    - misrata district
+  category: POPULARATE

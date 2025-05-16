@@ -1,0 +1,10 @@
+name: Cantagalo
+type: Division-1
+meta:
+  alpha2: ST-02
+  includes:
+    - cantagalo
+    - st-02
+    - '02'
+    - cantagalo district
+  category: DISTRICT

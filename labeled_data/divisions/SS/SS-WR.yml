@@ -1,0 +1,10 @@
+name: Warrap
+type: Division-1
+meta:
+  alpha2: SS-WR
+  includes:
+    - warrap
+    - ss-wr
+    - wr
+    - warrap state
+  category: STATE

@@ -1,0 +1,10 @@
+name: Xocavənd
+type: Division-1
+meta:
+  alpha2: AZ-XVD
+  includes:
+    - xocavənd
+    - az-xvd
+    - xvd
+    - xocavənd rayon
+  category: RAYON

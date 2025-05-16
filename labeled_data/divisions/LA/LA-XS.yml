@@ -1,0 +1,13 @@
+name: Xaisômboun
+type: Division-1
+meta:
+  alpha2: LA-XS
+  includes:
+    - xaisômboun
+    - la-xs
+    - xs
+    - xaisômboun province
+    - xaysomboon
+    - xaysomboon province
+    - xb
+  category: PROVINCE

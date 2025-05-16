@@ -1,0 +1,10 @@
+name: Krabi
+type: Division-1
+meta:
+  alpha2: TH-81
+  includes:
+    - krabi
+    - th-81
+    - '81'
+    - krabi province
+  category: PROVINCE

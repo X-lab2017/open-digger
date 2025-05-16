@@ -1,0 +1,10 @@
+name: Bas-Uélé
+type: Division-1
+meta:
+  alpha2: CD-BU
+  includes:
+    - bas-uélé
+    - cd-bu
+    - bu
+    - bas-uélé province
+  category: PROVINCE

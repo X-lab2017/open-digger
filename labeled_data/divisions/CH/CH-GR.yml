@@ -1,0 +1,15 @@
+name: Grischun
+type: Division-1
+meta:
+  alpha2: CH-GR
+  includes:
+    - graubünden
+    - ch-gr
+    - gr
+    - graubünden canton
+    - grigioni
+    - grigioni canton
+    - grischun
+    - grischun canton
+    - grisons
+  category: CANTON

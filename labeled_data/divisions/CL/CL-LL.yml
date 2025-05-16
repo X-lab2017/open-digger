@@ -1,0 +1,11 @@
+name: Los Lagos
+type: Division-1
+meta:
+  alpha2: CL-LL
+  includes:
+    - los lagos
+    - cl-ll
+    - ll
+    - los lagos region
+    - x
+  category: REGION

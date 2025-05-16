@@ -1,0 +1,14 @@
+name: Kâmpóng Cham
+type: Division-1
+meta:
+  alpha2: KH-3
+  includes:
+    - kampong chaam
+    - kh-3
+    - '3'
+    - kampong chaam province
+    - kampong cham
+    - kampong cham province
+    - kâmpóng cham
+    - kâmpóng cham province
+  category: PROVINCE

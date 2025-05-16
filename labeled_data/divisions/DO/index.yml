@@ -1,0 +1,85 @@
+name: Dominican Republic
+type: Division-0
+meta:
+  alpha2: DO
+  includes:
+    - Dominican Republic
+    - DO
+    - '214'
+    - the Dominican Republic
+    - 多米尼加
+  name_full: the Dominican Republic
+  name_zh: 多米尼加
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 38046
+    - year: 2020
+      quarter: 2
+      count: 43098
+    - year: 2020
+      quarter: 3
+      count: 47859
+    - year: 2020
+      quarter: 4
+      count: 51993
+    - year: 2021
+      quarter: 1
+      count: 55675
+    - year: 2021
+      quarter: 2
+      count: 59641
+    - year: 2021
+      quarter: 3
+      count: 63522
+    - year: 2021
+      quarter: 4
+      count: 67172
+    - year: 2022
+      quarter: 1
+      count: 72082
+    - year: 2022
+      quarter: 2
+      count: 76989
+    - year: 2022
+      quarter: 3
+      count: 82085
+    - year: 2022
+      quarter: 4
+      count: 86973
+    - year: 2023
+      quarter: 1
+      count: 92849
+    - year: 2023
+      quarter: 2
+      count: 99701
+    - year: 2023
+      quarter: 3
+      count: 106058
+    - year: 2023
+      quarter: 4
+      count: 112174
+    - year: 2024
+      quarter: 1
+      count: 119980
+    - year: 2024
+      quarter: 2
+      count: 126140
+    - year: 2024
+      quarter: 3
+      count: 132498
+    - year: 2024
+      quarter: 4
+      count: 139113
+data:
+  labels:
+    - DO-41
+    - DO-38
+    - DO-33
+    - DO-34
+    - DO-35
+    - DO-36
+    - DO-40
+    - DO-42
+    - DO-37
+    - DO-39

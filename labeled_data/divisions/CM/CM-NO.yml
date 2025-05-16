@@ -1,0 +1,12 @@
+name: North
+type: Division-1
+meta:
+  alpha2: CM-NO
+  includes:
+    - nord
+    - cm-no
+    - 'no'
+    - nord region
+    - north
+    - north region
+  category: REGION

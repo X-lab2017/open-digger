@@ -1,0 +1,10 @@
+name: Sing Buri
+type: Division-1
+meta:
+  alpha2: TH-17
+  includes:
+    - sing buri
+    - th-17
+    - '17'
+    - sing buri province
+  category: PROVINCE

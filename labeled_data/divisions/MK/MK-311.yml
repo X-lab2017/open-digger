@@ -1,0 +1,10 @@
+name: Plasnica
+type: Division-1
+meta:
+  alpha2: MK-311
+  includes:
+    - plasnica
+    - mk-311
+    - '311'
+    - plasnica municipality
+  category: MUNICIPALITY

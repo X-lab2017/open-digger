@@ -1,0 +1,11 @@
+name: Wien
+type: Division-1
+meta:
+  alpha2: AT-9
+  includes:
+    - wien
+    - at-9
+    - '9'
+    - wien state
+    - vienna
+  category: STATE

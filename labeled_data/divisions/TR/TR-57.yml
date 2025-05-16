@@ -1,0 +1,10 @@
+name: Sinop
+type: Division-1
+meta:
+  alpha2: TR-57
+  includes:
+    - sinop
+    - tr-57
+    - '57'
+    - sinop province
+  category: PROVINCE

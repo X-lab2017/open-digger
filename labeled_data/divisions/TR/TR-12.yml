@@ -1,0 +1,10 @@
+name: Bingöl
+type: Division-1
+meta:
+  alpha2: TR-12
+  includes:
+    - bingöl
+    - tr-12
+    - '12'
+    - bingöl province
+  category: PROVINCE

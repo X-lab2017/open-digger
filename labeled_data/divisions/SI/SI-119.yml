@@ -1,0 +1,10 @@
+name: Šentjernej
+type: Division-1
+meta:
+  alpha2: SI-119
+  includes:
+    - šentjernej
+    - si-119
+    - '119'
+    - šentjernej municipality
+  category: MUNICIPALITY

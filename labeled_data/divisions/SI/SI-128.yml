@@ -1,0 +1,10 @@
+name: Tolmin
+type: Division-1
+meta:
+  alpha2: SI-128
+  includes:
+    - tolmin
+    - si-128
+    - '128'
+    - tolmin municipality
+  category: MUNICIPALITY

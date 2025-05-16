@@ -1,0 +1,11 @@
+name: La Paz
+type: Division-1
+meta:
+  alpha2: HN-LP
+  includes:
+    - la paz
+    - hn-lp
+    - lp
+    - la paz department
+    - hnlp
+  category: DEPARTMENT

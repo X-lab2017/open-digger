@@ -1,0 +1,12 @@
+name: Al Buḩayrah
+type: Division-1
+meta:
+  alpha2: EG-BH
+  includes:
+    - al buḩayrah
+    - eg-bh
+    - bh
+    - al buḩayrah governorate
+    - beheira governorate
+    - al buhayrah
+  category: GOVERNORATE

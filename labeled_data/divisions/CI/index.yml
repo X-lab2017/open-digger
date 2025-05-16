@@ -1,0 +1,89 @@
+name: Côte d'Ivoire
+type: Division-0
+meta:
+  alpha2: CI
+  includes:
+    - Côte d'Ivoire
+    - CI
+    - '384'
+    - the Republic of Côte d'Ivoire
+    - 科特迪瓦
+  name_full: the Republic of Côte d'Ivoire
+  name_zh: 科特迪瓦
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 16280
+    - year: 2020
+      quarter: 2
+      count: 17973
+    - year: 2020
+      quarter: 3
+      count: 19588
+    - year: 2020
+      quarter: 4
+      count: 21066
+    - year: 2021
+      quarter: 1
+      count: 22656
+    - year: 2021
+      quarter: 2
+      count: 24576
+    - year: 2021
+      quarter: 3
+      count: 26608
+    - year: 2021
+      quarter: 4
+      count: 28562
+    - year: 2022
+      quarter: 1
+      count: 31309
+    - year: 2022
+      quarter: 2
+      count: 33560
+    - year: 2022
+      quarter: 3
+      count: 35962
+    - year: 2022
+      quarter: 4
+      count: 38185
+    - year: 2023
+      quarter: 1
+      count: 41200
+    - year: 2023
+      quarter: 2
+      count: 44326
+    - year: 2023
+      quarter: 3
+      count: 47139
+    - year: 2023
+      quarter: 4
+      count: 50334
+    - year: 2024
+      quarter: 1
+      count: 53734
+    - year: 2024
+      quarter: 2
+      count: 57297
+    - year: 2024
+      quarter: 3
+      count: 61348
+    - year: 2024
+      quarter: 4
+      count: 65786
+data:
+  labels:
+    - CI-AB
+    - CI-BS
+    - CI-CM
+    - CI-DN
+    - CI-GD
+    - CI-LC
+    - CI-LG
+    - CI-MG
+    - CI-SM
+    - CI-SV
+    - CI-VB
+    - CI-WR
+    - CI-YM
+    - CI-ZZ

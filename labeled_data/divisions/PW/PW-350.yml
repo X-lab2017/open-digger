@@ -1,0 +1,10 @@
+name: Peleliu
+type: Division-1
+meta:
+  alpha2: PW-350
+  includes:
+    - peleliu
+    - pw-350
+    - '350'
+    - peleliu state
+  category: STATE

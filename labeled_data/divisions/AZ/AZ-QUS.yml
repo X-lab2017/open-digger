@@ -1,0 +1,10 @@
+name: Qusar
+type: Division-1
+meta:
+  alpha2: AZ-QUS
+  includes:
+    - qusar
+    - az-qus
+    - qus
+    - qusar rayon
+  category: RAYON

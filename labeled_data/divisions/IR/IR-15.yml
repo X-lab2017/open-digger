@@ -1,0 +1,11 @@
+name: Lorestān
+type: Division-1
+meta:
+  alpha2: IR-15
+  includes:
+    - lorestān
+    - ir-15
+    - '15'
+    - lorestān province
+    - lorestan province
+  category: PROVINCE

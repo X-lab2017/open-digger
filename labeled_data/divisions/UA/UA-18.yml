@@ -1,0 +1,13 @@
+name: Zhytomyrska oblast
+type: Division-1
+meta:
+  alpha2: UA-18
+  includes:
+    - zhytomyrska oblast
+    - ua-18
+    - '18'
+    - zhytomyrska oblast region
+    - zhytomyr oblast
+    - zhytomyrs'ka oblast
+    - zhytomyr
+  category: REGION

@@ -1,0 +1,12 @@
+name: Rām Allāh wal Bīrah
+type: Division-1
+meta:
+  alpha2: PS-RBH
+  includes:
+    - ramallah
+    - ps-rbh
+    - rbh
+    - ramallah governorate
+    - rām allāh wal bīrah
+    - rām allāh wal bīrah governorate
+  category: GOVERNORATE

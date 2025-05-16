@@ -1,0 +1,10 @@
+name: Sofala
+type: Division-1
+meta:
+  alpha2: MZ-S
+  includes:
+    - sofala
+    - mz-s
+    - s
+    - sofala province
+  category: PROVINCE

@@ -1,0 +1,10 @@
+name: Plateau
+type: Division-1
+meta:
+  alpha2: BJ-PL
+  includes:
+    - plateau
+    - bj-pl
+    - pl
+    - plateau department
+  category: DEPARTMENT

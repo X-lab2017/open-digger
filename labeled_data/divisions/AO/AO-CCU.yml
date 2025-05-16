@@ -1,0 +1,12 @@
+name: Cuando Cubango
+type: Division-1
+meta:
+  alpha2: AO-CCU
+  includes:
+    - cuando cubango
+    - ao-ccu
+    - ccu
+    - cuando cubango province
+    - kuando kubango
+    - kuando kubango province
+  category: PROVINCE

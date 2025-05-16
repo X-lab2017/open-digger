@@ -1,0 +1,10 @@
+name: Anabar
+type: Division-1
+meta:
+  alpha2: NR-02
+  includes:
+    - anabar
+    - nr-02
+    - '02'
+    - anabar district
+  category: DISTRICT

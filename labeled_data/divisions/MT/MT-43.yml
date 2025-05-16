@@ -1,0 +1,10 @@
+name: Qormi
+type: Division-1
+meta:
+  alpha2: MT-43
+  includes:
+    - qormi
+    - mt-43
+    - '43'
+    - qormi local council
+  category: LOCAL COUNCIL

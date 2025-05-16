@@ -1,0 +1,15 @@
+name: Astrakhanskaya oblast'
+type: Division-1
+meta:
+  alpha2: RU-AST
+  includes:
+    - astrahanskaja oblast'
+    - ru-ast
+    - ast
+    - astrahanskaja oblast' administrative region
+    - astrakhanskaya oblast'
+    - astrakhanskaya oblast' administrative region
+    - astrakhan oblast
+    - astrakhan
+    - astrakhan’
+  category: ADMINISTRATIVE REGION

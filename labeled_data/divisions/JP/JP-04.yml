@@ -1,0 +1,10 @@
+name: Miyagi
+type: Division-1
+meta:
+  alpha2: JP-04
+  includes:
+    - miyagi
+    - jp-04
+    - '04'
+    - miyagi prefecture
+  category: PREFECTURE

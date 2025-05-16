@@ -1,0 +1,10 @@
+name: Diego Martin
+type: Division-1
+meta:
+  alpha2: TT-DMN
+  includes:
+    - diego martin
+    - tt-dmn
+    - dmn
+    - diego martin region
+  category: REGION

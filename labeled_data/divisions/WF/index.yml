@@ -1,0 +1,18 @@
+name: Wallis and Futuna
+type: Division-0
+meta:
+  alpha2: WF
+  includes:
+    - Wallis and Futuna
+    - WF
+    - '876'
+    - Wallis and Futuna Islands
+    - 瓦利斯和富图纳
+  name_full: Wallis and Futuna Islands
+  name_zh: 瓦利斯和富图纳
+  developers: []
+data:
+  labels:
+    - WF-AL
+    - WF-SG
+    - WF-UV

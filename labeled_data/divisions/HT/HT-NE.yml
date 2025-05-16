@@ -1,0 +1,12 @@
+name: Nord-Est
+type: Division-1
+meta:
+  alpha2: HT-NE
+  includes:
+    - nord-est
+    - ht-ne
+    - ne
+    - nord-est department
+    - nòdès
+    - nòdès department
+  category: DEPARTMENT

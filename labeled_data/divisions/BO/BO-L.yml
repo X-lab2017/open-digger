@@ -1,0 +1,11 @@
+name: La Paz
+type: Division-1
+meta:
+  alpha2: BO-L
+  includes:
+    - la paz
+    - bo-l
+    - l
+    - la paz department
+    - departamento de la paz
+  category: DEPARTMENT

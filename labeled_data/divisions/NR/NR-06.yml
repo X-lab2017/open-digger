@@ -1,0 +1,10 @@
+name: Boe
+type: Division-1
+meta:
+  alpha2: NR-06
+  includes:
+    - boe
+    - nr-06
+    - '06'
+    - boe district
+  category: DISTRICT

@@ -1,0 +1,11 @@
+name: Vâlcea
+type: Division-1
+meta:
+  alpha2: RO-VL
+  includes:
+    - vâlcea
+    - ro-vl
+    - vl
+    - vâlcea department
+    - vâlcea county
+  category: DEPARTMENT

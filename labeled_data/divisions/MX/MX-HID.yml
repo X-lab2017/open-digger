@@ -1,0 +1,11 @@
+name: Hidalgo
+type: Division-1
+meta:
+  alpha2: MX-HID
+  includes:
+    - hidalgo
+    - mx-hid
+    - hid
+    - hidalgo state
+    - hgo
+  category: STATE

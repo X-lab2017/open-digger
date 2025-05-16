@@ -1,0 +1,12 @@
+name: Cuanza-Norte
+type: Division-1
+meta:
+  alpha2: AO-CNO
+  includes:
+    - cuanza-norte
+    - ao-cno
+    - cno
+    - cuanza-norte province
+    - kwanza norte
+    - kwanza norte province
+  category: PROVINCE

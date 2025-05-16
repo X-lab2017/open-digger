@@ -1,0 +1,11 @@
+name: Sucumbíos
+type: Division-1
+meta:
+  alpha2: EC-U
+  includes:
+    - sucumbíos
+    - ec-u
+    - u
+    - sucumbíos province
+    - sucumbios
+  category: PROVINCE

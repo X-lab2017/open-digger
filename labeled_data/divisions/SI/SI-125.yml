@@ -1,0 +1,10 @@
+name: Šmartno ob Paki
+type: Division-1
+meta:
+  alpha2: SI-125
+  includes:
+    - šmartno ob paki
+    - si-125
+    - '125'
+    - šmartno ob paki municipality
+  category: MUNICIPALITY

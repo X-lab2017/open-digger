@@ -1,0 +1,12 @@
+name: Taféa
+type: Division-1
+meta:
+  alpha2: VU-TAE
+  includes:
+    - taféa
+    - vu-tae
+    - tae
+    - taféa province
+    - tafea province
+    - tafea
+  category: PROVINCE

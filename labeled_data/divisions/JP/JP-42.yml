@@ -1,0 +1,10 @@
+name: Nagasaki
+type: Division-1
+meta:
+  alpha2: JP-42
+  includes:
+    - nagasaki
+    - jp-42
+    - '42'
+    - nagasaki prefecture
+  category: PREFECTURE

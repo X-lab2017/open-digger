@@ -1,0 +1,10 @@
+name: Emberá
+type: Division-1
+meta:
+  alpha2: PA-EM
+  includes:
+    - emberá
+    - pa-em
+    - em
+    - emberá indigenous region
+  category: INDIGENOUS REGION

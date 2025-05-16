@@ -1,0 +1,11 @@
+name: Portuguesa
+type: Division-1
+meta:
+  alpha2: VE-P
+  includes:
+    - portuguesa
+    - ve-p
+    - p
+    - portuguesa state
+    - po
+  category: STATE

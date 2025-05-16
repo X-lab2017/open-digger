@@ -1,0 +1,10 @@
+name: Alberta
+type: Division-1
+meta:
+  alpha2: CA-AB
+  includes:
+    - alberta
+    - ca-ab
+    - ab
+    - alberta province
+  category: PROVINCE

@@ -1,0 +1,10 @@
+name: Sololá
+type: Division-1
+meta:
+  alpha2: GT-07
+  includes:
+    - sololá
+    - gt-07
+    - '07'
+    - sololá department
+  category: DEPARTMENT

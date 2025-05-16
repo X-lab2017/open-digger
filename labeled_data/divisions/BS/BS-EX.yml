@@ -1,0 +1,10 @@
+name: Exuma
+type: Division-1
+meta:
+  alpha2: BS-EX
+  includes:
+    - exuma
+    - bs-ex
+    - ex
+    - exuma district
+  category: DISTRICT

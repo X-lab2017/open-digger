@@ -1,0 +1,10 @@
+name: Al Maḩwīt
+type: Division-1
+meta:
+  alpha2: YE-MW
+  includes:
+    - al maḩwīt
+    - ye-mw
+    - mw
+    - al maḩwīt governorate
+  category: GOVERNORATE

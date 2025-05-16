@@ -1,0 +1,11 @@
+name: Tarija
+type: Division-1
+meta:
+  alpha2: BO-T
+  includes:
+    - tarija
+    - bo-t
+    - t
+    - tarija department
+    - departamento de tarija
+  category: DEPARTMENT

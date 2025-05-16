@@ -1,0 +1,12 @@
+name: Sud
+type: Division-1
+meta:
+  alpha2: CM-SU
+  includes:
+    - south
+    - cm-su
+    - su
+    - south region
+    - sud
+    - sud region
+  category: REGION

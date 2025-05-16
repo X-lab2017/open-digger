@@ -1,0 +1,160 @@
+name: Northern
+type: Division-1
+meta:
+  alpha2: UG-N
+  includes:
+    - abim
+    - ug-314
+    - '314'
+    - abim district
+    - adjumani
+    - ug-301
+    - '301'
+    - adjumani district
+    - agago
+    - ug-322
+    - '322'
+    - agago district
+    - alebtong
+    - ug-323
+    - '323'
+    - alebtong district
+    - amolatar
+    - ug-315
+    - '315'
+    - amolatar district
+    - amudat
+    - ug-324
+    - '324'
+    - amudat district
+    - amuru
+    - ug-316
+    - '316'
+    - amuru district
+    - apac
+    - ug-302
+    - '302'
+    - apac district
+    - arua
+    - ug-303
+    - '303'
+    - arua district
+    - dokolo
+    - ug-317
+    - '317'
+    - dokolo district
+    - gulu
+    - ug-304
+    - '304'
+    - gulu district
+    - kaabong
+    - ug-318
+    - '318'
+    - kaabong district
+    - karenga
+    - ug-335
+    - '335'
+    - karenga district
+    - kitgum
+    - ug-305
+    - '305'
+    - kitgum district
+    - koboko
+    - ug-319
+    - '319'
+    - koboko district
+    - kole
+    - ug-325
+    - '325'
+    - kole district
+    - kotido
+    - ug-306
+    - '306'
+    - kotido district
+    - kwania
+    - ug-333
+    - '333'
+    - kwania district
+    - lamwo
+    - ug-326
+    - '326'
+    - lamwo district
+    - lira
+    - ug-307
+    - '307'
+    - lira district
+    - madi-okollo
+    - ug-336
+    - '336'
+    - madi-okollo district
+    - maracha
+    - ug-320
+    - '320'
+    - maracha district
+    - moroto
+    - ug-308
+    - '308'
+    - moroto district
+    - moyo
+    - ug-309
+    - '309'
+    - moyo district
+    - nabilatuk
+    - ug-334
+    - '334'
+    - nabilatuk district
+    - nakapiripirit
+    - ug-311
+    - '311'
+    - nakapiripirit district
+    - napak
+    - ug-327
+    - '327'
+    - napak district
+    - nebbi
+    - ug-310
+    - '310'
+    - nebbi district
+    - northern
+    - ug-n
+    - 'n'
+    - northern geographical region
+    - nwoya
+    - ug-328
+    - '328'
+    - nwoya district
+    - obongi
+    - ug-337
+    - '337'
+    - obongi district
+    - omoro
+    - ug-331
+    - '331'
+    - omoro district
+    - otuke
+    - ug-329
+    - '329'
+    - otuke district
+    - oyam
+    - ug-321
+    - '321'
+    - oyam district
+    - pader
+    - ug-312
+    - '312'
+    - pader district
+    - pakwach
+    - ug-332
+    - '332'
+    - pakwach district
+    - yumbe
+    - ug-313
+    - '313'
+    - yumbe district
+    - zombo
+    - ug-330
+    - '330'
+    - zombo district
+    - northern region
+    - mkoa wa kaskazini
+  category: GEOGRAPHICAL REGION

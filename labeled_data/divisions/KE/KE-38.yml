@@ -1,0 +1,10 @@
+name: Siaya
+type: Division-1
+meta:
+  alpha2: KE-38
+  includes:
+    - siaya
+    - ke-38
+    - '38'
+    - siaya county
+  category: COUNTY

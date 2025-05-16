@@ -1,0 +1,10 @@
+name: Grand Cay
+type: Division-1
+meta:
+  alpha2: BS-GC
+  includes:
+    - grand cay
+    - bs-gc
+    - gc
+    - grand cay district
+  category: DISTRICT

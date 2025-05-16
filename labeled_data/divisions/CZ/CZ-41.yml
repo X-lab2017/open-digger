@@ -1,0 +1,23 @@
+name: Karlovarský kraj
+type: Division-1
+meta:
+  alpha2: CZ-41
+  includes:
+    - cheb
+    - cz-411
+    - '411'
+    - cheb district
+    - karlovarský kraj
+    - cz-41
+    - '41'
+    - karlovarský kraj region
+    - karlovy vary
+    - cz-412
+    - '412'
+    - karlovy vary district
+    - sokolov
+    - cz-413
+    - '413'
+    - sokolov district
+    - karlovy vary region
+  category: REGION

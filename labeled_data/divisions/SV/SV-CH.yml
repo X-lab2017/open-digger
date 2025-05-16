@@ -1,0 +1,11 @@
+name: Chalatenango
+type: Division-1
+meta:
+  alpha2: SV-CH
+  includes:
+    - chalatenango
+    - sv-ch
+    - ch
+    - chalatenango department
+    - svch
+  category: DEPARTMENT

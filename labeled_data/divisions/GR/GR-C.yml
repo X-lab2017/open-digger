@@ -1,0 +1,11 @@
+name: Dytikí Makedonía
+type: Division-1
+meta:
+  alpha2: GR-C
+  includes:
+    - dytikí makedonía
+    - gr-c
+    - c
+    - dytikí makedonía administrative region
+    - western macedonia
+  category: ADMINISTRATIVE REGION

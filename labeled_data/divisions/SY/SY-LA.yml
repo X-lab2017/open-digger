@@ -1,0 +1,11 @@
+name: Al Lādhiqīyah
+type: Division-1
+meta:
+  alpha2: SY-LA
+  includes:
+    - al lādhiqīyah
+    - sy-la
+    - la
+    - al lādhiqīyah province
+    - latakia governorate
+  category: PROVINCE

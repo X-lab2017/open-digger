@@ -1,0 +1,10 @@
+name: Jegunovce
+type: Division-1
+meta:
+  alpha2: MK-606
+  includes:
+    - jegunovce
+    - mk-606
+    - '606'
+    - jegunovce municipality
+  category: MUNICIPALITY

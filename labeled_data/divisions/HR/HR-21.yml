@@ -1,0 +1,12 @@
+name: Grad Zagreb
+type: Division-1
+meta:
+  alpha2: HR-21
+  includes:
+    - grad zagreb
+    - hr-21
+    - '21'
+    - grad zagreb city
+    - city of zagreb
+    - zagreb
+  category: CITY

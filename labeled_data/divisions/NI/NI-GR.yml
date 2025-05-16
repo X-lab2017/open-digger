@@ -1,0 +1,10 @@
+name: Granada
+type: Division-1
+meta:
+  alpha2: NI-GR
+  includes:
+    - granada
+    - ni-gr
+    - gr
+    - granada department
+  category: DEPARTMENT

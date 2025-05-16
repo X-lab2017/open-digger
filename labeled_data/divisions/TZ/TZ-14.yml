@@ -1,0 +1,10 @@
+name: Mbeya
+type: Division-1
+meta:
+  alpha2: TZ-14
+  includes:
+    - mbeya
+    - tz-14
+    - '14'
+    - mbeya region
+  category: REGION

@@ -1,0 +1,10 @@
+name: Thurgau
+type: Division-1
+meta:
+  alpha2: CH-TG
+  includes:
+    - thurgau
+    - ch-tg
+    - tg
+    - thurgau canton
+  category: CANTON

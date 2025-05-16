@@ -1,0 +1,14 @@
+name: Sud-Ouest
+type: Division-1
+meta:
+  alpha2: CM-SW
+  includes:
+    - south-west
+    - cm-sw
+    - sw
+    - south-west region
+    - sud-ouest
+    - sud-ouest region
+    - southwest region
+    - southwest
+  category: REGION

@@ -1,0 +1,10 @@
+name: Soriano
+type: Division-1
+meta:
+  alpha2: UY-SO
+  includes:
+    - soriano
+    - uy-so
+    - so
+    - soriano department
+  category: DEPARTMENT

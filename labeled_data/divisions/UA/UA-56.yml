@@ -1,0 +1,13 @@
+name: Rivnenska oblast
+type: Division-1
+meta:
+  alpha2: UA-56
+  includes:
+    - rivnenska oblast
+    - ua-56
+    - '56'
+    - rivnenska oblast region
+    - rivne oblast
+    - rivnens'ka oblast
+    - rivne
+  category: REGION

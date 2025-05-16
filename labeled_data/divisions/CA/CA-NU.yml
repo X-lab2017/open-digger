@@ -1,0 +1,10 @@
+name: Nunavut
+type: Division-1
+meta:
+  alpha2: CA-NU
+  includes:
+    - nunavut
+    - ca-nu
+    - nu
+    - nunavut territory
+  category: TERRITORY

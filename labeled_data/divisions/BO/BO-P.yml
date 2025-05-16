@@ -1,0 +1,12 @@
+name: Potosí
+type: Division-1
+meta:
+  alpha2: BO-P
+  includes:
+    - potosí
+    - bo-p
+    - p
+    - potosí department
+    - potosi department
+    - departamento de potosí
+  category: DEPARTMENT

@@ -1,0 +1,12 @@
+name: Jakangto
+type: Division-1
+meta:
+  alpha2: KP-04
+  includes:
+    - chagang-do
+    - kp-04
+    - '04'
+    - chagang-do province
+    - jakangto
+    - jakangto province
+  category: PROVINCE

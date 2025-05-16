@@ -1,0 +1,90 @@
+name: Trinidad and Tobago
+type: Division-0
+meta:
+  alpha2: TT
+  includes:
+    - Trinidad and Tobago
+    - TT
+    - '780'
+    - the Republic of Trinidad and Tobago
+    - 特立尼达和多巴哥
+  name_full: the Republic of Trinidad and Tobago
+  name_zh: 特立尼达和多巴哥
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 8522
+    - year: 2020
+      quarter: 2
+      count: 9753
+    - year: 2020
+      quarter: 3
+      count: 10915
+    - year: 2020
+      quarter: 4
+      count: 11983
+    - year: 2021
+      quarter: 1
+      count: 13190
+    - year: 2021
+      quarter: 2
+      count: 14332
+    - year: 2021
+      quarter: 3
+      count: 15512
+    - year: 2021
+      quarter: 4
+      count: 16573
+    - year: 2022
+      quarter: 1
+      count: 18175
+    - year: 2022
+      quarter: 2
+      count: 19172
+    - year: 2022
+      quarter: 3
+      count: 20238
+    - year: 2022
+      quarter: 4
+      count: 21132
+    - year: 2023
+      quarter: 1
+      count: 22297
+    - year: 2023
+      quarter: 2
+      count: 23535
+    - year: 2023
+      quarter: 3
+      count: 24514
+    - year: 2023
+      quarter: 4
+      count: 25457
+    - year: 2024
+      quarter: 1
+      count: 26930
+    - year: 2024
+      quarter: 2
+      count: 27938
+    - year: 2024
+      quarter: 3
+      count: 28982
+    - year: 2024
+      quarter: 4
+      count: 30428
+data:
+  labels:
+    - TT-ARI
+    - TT-CHA
+    - TT-CTT
+    - TT-DMN
+    - TT-MRC
+    - TT-PED
+    - TT-PTF
+    - TT-POS
+    - TT-PRT
+    - TT-SFO
+    - TT-SJL
+    - TT-SGE
+    - TT-SIP
+    - TT-TOB
+    - TT-TUP

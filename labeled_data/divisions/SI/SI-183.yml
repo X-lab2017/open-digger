@@ -1,0 +1,10 @@
+name: Šempeter-Vrtojba
+type: Division-1
+meta:
+  alpha2: SI-183
+  includes:
+    - šempeter-vrtojba
+    - si-183
+    - '183'
+    - šempeter-vrtojba municipality
+  category: MUNICIPALITY

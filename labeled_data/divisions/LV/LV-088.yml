@@ -1,0 +1,12 @@
+name: Saldus novads
+type: Division-1
+meta:
+  alpha2: LV-088
+  includes:
+    - saldus novads
+    - lv-088
+    - '088'
+    - saldus novads municipality
+    - saldus
+    - saldus municipality
+  category: MUNICIPALITY

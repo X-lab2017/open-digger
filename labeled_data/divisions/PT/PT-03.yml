@@ -1,0 +1,10 @@
+name: Braga
+type: Division-1
+meta:
+  alpha2: PT-03
+  includes:
+    - braga
+    - pt-03
+    - '03'
+    - braga district
+  category: DISTRICT

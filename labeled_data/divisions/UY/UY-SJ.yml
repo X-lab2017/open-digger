@@ -1,0 +1,10 @@
+name: San José
+type: Division-1
+meta:
+  alpha2: UY-SJ
+  includes:
+    - san josé
+    - uy-sj
+    - sj
+    - san josé department
+  category: DEPARTMENT

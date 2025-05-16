@@ -1,0 +1,11 @@
+name: Negotino
+type: Division-1
+meta:
+  alpha2: MK-106
+  includes:
+    - negotino
+    - mk-106
+    - '106'
+    - negotino municipality
+    - municipality of negotino
+  category: MUNICIPALITY

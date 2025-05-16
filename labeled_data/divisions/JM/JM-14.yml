@@ -1,0 +1,11 @@
+name: Saint Catherine
+type: Division-1
+meta:
+  alpha2: JM-14
+  includes:
+    - saint catherine
+    - jm-14
+    - '14'
+    - saint catherine parish
+    - st. catherine parish
+  category: PARISH

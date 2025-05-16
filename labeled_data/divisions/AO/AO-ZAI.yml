@@ -1,0 +1,10 @@
+name: Zaire
+type: Division-1
+meta:
+  alpha2: AO-ZAI
+  includes:
+    - zaire
+    - ao-zai
+    - zai
+    - zaire province
+  category: PROVINCE

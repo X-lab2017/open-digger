@@ -1,0 +1,11 @@
+name: Nīnawá
+type: Division-1
+meta:
+  alpha2: IQ-NI
+  includes:
+    - nīnawá
+    - iq-ni
+    - ni
+    - nīnawá governorate
+    - nineveh governorate
+  category: GOVERNORATE

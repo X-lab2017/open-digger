@@ -1,0 +1,13 @@
+name: Xiangkhouang
+type: Division-1
+meta:
+  alpha2: LA-XI
+  includes:
+    - xiangkhouang
+    - la-xi
+    - xi
+    - xiangkhouang province
+    - xiengkhuang
+    - xiengkhuang province
+    - xk
+  category: PROVINCE

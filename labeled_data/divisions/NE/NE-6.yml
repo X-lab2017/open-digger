@@ -1,0 +1,10 @@
+name: Tillabéri
+type: Division-1
+meta:
+  alpha2: NE-6
+  includes:
+    - tillabéri
+    - ne-6
+    - '6'
+    - tillabéri region
+  category: REGION

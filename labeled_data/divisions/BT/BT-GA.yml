@@ -1,0 +1,10 @@
+name: Gasa
+type: Division-1
+meta:
+  alpha2: BT-GA
+  includes:
+    - gasa
+    - bt-ga
+    - ga
+    - gasa district
+  category: DISTRICT

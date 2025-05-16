@@ -1,0 +1,19 @@
+name: Canarias
+type: Division-1
+meta:
+  alpha2: ES-CN
+  includes:
+    - canarias
+    - es-cn
+    - cn
+    - canarias autonomous community
+    - las palmas
+    - es-gc
+    - gc
+    - las palmas province
+    - santa cruz de tenerife
+    - es-tf
+    - tf
+    - santa cruz de tenerife province
+    - canary islands
+  category: AUTONOMOUS COMMUNITY

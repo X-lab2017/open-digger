@@ -1,0 +1,15 @@
+name: Severo-Kazakhstanskaya oblast'
+type: Division-1
+meta:
+  alpha2: KZ-59
+  includes:
+    - severo-kazahstanskaja oblast'
+    - kz-59
+    - '59'
+    - severo-kazahstanskaja oblast' region
+    - severo-kazakhstanskaya oblast'
+    - severo-kazakhstanskaya oblast' region
+    - soltüstik qazaqstan oblysy
+    - soltüstik qazaqstan oblysy region
+    - north kazakhstan region
+  category: REGION

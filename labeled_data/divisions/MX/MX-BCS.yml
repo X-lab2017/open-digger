@@ -1,0 +1,10 @@
+name: Baja California Sur
+type: Division-1
+meta:
+  alpha2: MX-BCS
+  includes:
+    - baja california sur
+    - mx-bcs
+    - bcs
+    - baja california sur state
+  category: STATE

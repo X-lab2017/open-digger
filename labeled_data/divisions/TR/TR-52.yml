@@ -1,0 +1,10 @@
+name: Ordu
+type: Division-1
+meta:
+  alpha2: TR-52
+  includes:
+    - ordu
+    - tr-52
+    - '52'
+    - ordu province
+  category: PROVINCE

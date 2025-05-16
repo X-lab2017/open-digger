@@ -1,0 +1,11 @@
+name: Buxoro
+type: Division-1
+meta:
+  alpha2: UZ-BU
+  includes:
+    - buxoro
+    - uz-bu
+    - bu
+    - buxoro region
+    - bukhara region
+  category: REGION

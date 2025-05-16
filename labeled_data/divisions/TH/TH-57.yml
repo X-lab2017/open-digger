@@ -1,0 +1,11 @@
+name: Chiang Rai
+type: Division-1
+meta:
+  alpha2: TH-57
+  includes:
+    - chiang rai
+    - th-57
+    - '57'
+    - chiang rai province
+    - chang wat chiang rai
+  category: PROVINCE

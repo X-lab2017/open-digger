@@ -1,0 +1,139 @@
+name: Scotland
+type: Division-1
+meta:
+  alpha2: GB-SCT
+  includes:
+    - aberdeen city
+    - gb-abe
+    - abe
+    - aberdeen city council area
+    - aberdeenshire
+    - gb-abd
+    - abd
+    - aberdeenshire council area
+    - angus
+    - gb-ans
+    - ans
+    - angus council area
+    - argyll and bute
+    - gb-agb
+    - agb
+    - argyll and bute council area
+    - clackmannanshire
+    - gb-clk
+    - clk
+    - clackmannanshire council area
+    - dumfries and galloway
+    - gb-dgy
+    - dgy
+    - dumfries and galloway council area
+    - dundee city
+    - gb-dnd
+    - dnd
+    - dundee city council area
+    - east ayrshire
+    - gb-eay
+    - eay
+    - east ayrshire council area
+    - east dunbartonshire
+    - gb-edu
+    - edu
+    - east dunbartonshire council area
+    - east lothian
+    - gb-eln
+    - eln
+    - east lothian council area
+    - east renfrewshire
+    - gb-erw
+    - erw
+    - east renfrewshire council area
+    - edinburgh
+    - gb-edh
+    - edh
+    - edinburgh council area
+    - eilean siar
+    - gb-els
+    - els
+    - eilean siar council area
+    - falkirk
+    - gb-fal
+    - fal
+    - falkirk council area
+    - fife
+    - gb-fif
+    - fif
+    - fife council area
+    - glasgow city
+    - gb-glg
+    - glg
+    - glasgow city council area
+    - highland
+    - gb-hld
+    - hld
+    - highland council area
+    - inverclyde
+    - gb-ivc
+    - ivc
+    - inverclyde council area
+    - midlothian
+    - gb-mln
+    - mln
+    - midlothian council area
+    - moray
+    - gb-mry
+    - mry
+    - moray council area
+    - north ayrshire
+    - gb-nay
+    - nay
+    - north ayrshire council area
+    - north lanarkshire
+    - gb-nlk
+    - nlk
+    - north lanarkshire council area
+    - orkney islands
+    - gb-ork
+    - ork
+    - orkney islands council area
+    - perth and kinross
+    - gb-pkn
+    - pkn
+    - perth and kinross council area
+    - renfrewshire
+    - gb-rfw
+    - rfw
+    - renfrewshire council area
+    - scotland
+    - gb-sct
+    - sct
+    - scotland country
+    - scottish borders
+    - gb-scb
+    - scb
+    - scottish borders council area
+    - shetland islands
+    - gb-zet
+    - zet
+    - shetland islands council area
+    - south ayrshire
+    - gb-say
+    - say
+    - south ayrshire council area
+    - south lanarkshire
+    - gb-slk
+    - slk
+    - south lanarkshire council area
+    - stirling
+    - gb-stg
+    - stg
+    - stirling council area
+    - west dunbartonshire
+    - gb-wdu
+    - wdu
+    - west dunbartonshire council area
+    - west lothian
+    - gb-wln
+    - wln
+    - west lothian council area
+    - ayrshire
+  category: COUNTRY

@@ -1,0 +1,36 @@
+name: Central Visayas
+type: Division-1
+meta:
+  alpha2: PH-07
+  includes:
+    - bohol
+    - ph-boh
+    - boh
+    - bohol province
+    - cebu
+    - ph-ceb
+    - ceb
+    - cebu province
+    - central visayas
+    - ph-07
+    - '07'
+    - central visayas region
+    - negros oriental
+    - ph-ner
+    - ner
+    - negros oriental province
+    - rehiyon ng gitnang bisaya
+    - rehiyon ng gitnang bisaya region
+    - sebu
+    - sebu province
+    - sikihor
+    - ph-sig
+    - sig
+    - sikihor province
+    - silangang negros
+    - silangang negros province
+    - siquijor
+    - siquijor province
+    - gitnang kabisayaan
+    - gitnáng luzon
+  category: REGION

@@ -1,0 +1,10 @@
+name: West Grand Bahama
+type: Division-1
+meta:
+  alpha2: BS-WG
+  includes:
+    - west grand bahama
+    - bs-wg
+    - wg
+    - west grand bahama district
+  category: DISTRICT

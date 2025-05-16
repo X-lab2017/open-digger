@@ -1,0 +1,11 @@
+name: Mersin
+type: Division-1
+meta:
+  alpha2: TR-33
+  includes:
+    - mersin
+    - tr-33
+    - '33'
+    - mersin province
+    - i̇çel
+  category: PROVINCE

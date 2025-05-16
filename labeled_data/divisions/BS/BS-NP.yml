@@ -1,0 +1,11 @@
+name: New Providence
+type: Division-1
+meta:
+  alpha2: BS-NP
+  includes:
+    - new providence
+    - bs-np
+    - np
+    - new providence island
+    - n.p
+  category: ISLAND

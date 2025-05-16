@@ -1,0 +1,10 @@
+name: Nāgāland
+type: Division-1
+meta:
+  alpha2: IN-NL
+  includes:
+    - nāgāland
+    - in-nl
+    - nl
+    - nāgāland state
+  category: STATE

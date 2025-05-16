@@ -1,0 +1,10 @@
+name: Marsa
+type: Division-1
+meta:
+  alpha2: MT-26
+  includes:
+    - marsa
+    - mt-26
+    - '26'
+    - marsa local council
+  category: LOCAL COUNCIL

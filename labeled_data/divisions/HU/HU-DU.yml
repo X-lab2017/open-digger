@@ -1,0 +1,10 @@
+name: Dunaújváros
+type: Division-1
+meta:
+  alpha2: HU-DU
+  includes:
+    - dunaújváros
+    - hu-du
+    - du
+    - dunaújváros city with county rights
+  category: CITY WITH COUNTY RIGHTS

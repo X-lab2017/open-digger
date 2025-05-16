@@ -1,0 +1,12 @@
+name: Jerusalem
+type: Division-1
+meta:
+  alpha2: PS-JEM
+  includes:
+    - al quds
+    - ps-jem
+    - jem
+    - al quds governorate
+    - jerusalem
+    - jerusalem governorate
+  category: GOVERNORATE

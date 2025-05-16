@@ -1,0 +1,10 @@
+name: Putumayo
+type: Division-1
+meta:
+  alpha2: CO-PUT
+  includes:
+    - putumayo
+    - co-put
+    - put
+    - putumayo department
+  category: DEPARTMENT

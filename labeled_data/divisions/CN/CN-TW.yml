@@ -1,0 +1,12 @@
+name: Taiwan Sheng
+type: Division-1
+meta:
+  alpha2: CN-TW
+  includes:
+    - taiwan sheng
+    - cn-tw
+    - tw
+    - taiwan sheng province
+    - 台湾
+    - 台湾省
+  category: PROVINCE

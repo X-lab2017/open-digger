@@ -1,0 +1,17 @@
+name: Tromssan ja Finmarkun
+type: Division-1
+meta:
+  alpha2: NO-54
+  includes:
+    - romssa ja finnmárkku
+    - no-54
+    - '54'
+    - romssa ja finnmárkku county
+    - troms og finnmark
+    - troms og finnmark county
+    - tromssan ja finmarkun
+    - tromssan ja finmarkun county
+    - troms og finnmark fylke
+    - finnmark
+    - troms
+  category: COUNTY

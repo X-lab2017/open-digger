@@ -1,0 +1,12 @@
+name: Bissau
+type: Division-1
+meta:
+  alpha2: GW-BS
+  includes:
+    - bissau
+    - gw-bs
+    - bs
+    - bissau autonomous sector
+    - sab
+    - sab autonomous sector
+  category: AUTONOMOUS SECTOR

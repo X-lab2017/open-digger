@@ -1,0 +1,10 @@
+name: Laikipia
+type: Division-1
+meta:
+  alpha2: KE-20
+  includes:
+    - laikipia
+    - ke-20
+    - '20'
+    - laikipia county
+  category: COUNTY

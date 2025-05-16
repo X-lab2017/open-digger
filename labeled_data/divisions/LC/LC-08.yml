@@ -1,0 +1,10 @@
+name: Micoud
+type: Division-1
+meta:
+  alpha2: LC-08
+  includes:
+    - micoud
+    - lc-08
+    - '08'
+    - micoud district
+  category: DISTRICT

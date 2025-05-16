@@ -1,0 +1,11 @@
+name: Loṙi
+type: Division-1
+meta:
+  alpha2: AM-LO
+  includes:
+    - loṙi
+    - am-lo
+    - lo
+    - loṙi region
+    - lori province
+  category: REGION

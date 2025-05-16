@@ -1,0 +1,10 @@
+name: Matabeleland South
+type: Division-1
+meta:
+  alpha2: ZW-MS
+  includes:
+    - matabeleland south
+    - zw-ms
+    - ms
+    - matabeleland south province
+  category: PROVINCE

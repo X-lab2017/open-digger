@@ -1,0 +1,10 @@
+name: La Massana
+type: Division-1
+meta:
+  alpha2: AD-04
+  includes:
+    - la massana
+    - ad-04
+    - '04'
+    - la massana parish
+  category: PARISH

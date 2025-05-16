@@ -1,0 +1,11 @@
+name: Wādī al Ḩayāt
+type: Division-1
+meta:
+  alpha2: LY-WD
+  includes:
+    - wādī al ḩayāt
+    - ly-wd
+    - wd
+    - wādī al ḩayāt popularate
+    - wadi al hayaa district
+  category: POPULARATE

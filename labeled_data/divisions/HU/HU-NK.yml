@@ -1,0 +1,10 @@
+name: Nagykanizsa
+type: Division-1
+meta:
+  alpha2: HU-NK
+  includes:
+    - nagykanizsa
+    - hu-nk
+    - nk
+    - nagykanizsa city with county rights
+  category: CITY WITH COUNTY RIGHTS

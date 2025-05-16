@@ -1,0 +1,13 @@
+name: Kujawsko-Pomorskie
+type: Division-1
+meta:
+  alpha2: PL-04
+  includes:
+    - kujawsko-pomorskie
+    - pl-04
+    - '04'
+    - kujawsko-pomorskie voivodship
+    - kuyavian-pomeranian voivodeship
+    - województwo kujawsko-pomorskie
+    - kp
+  category: VOIVODSHIP

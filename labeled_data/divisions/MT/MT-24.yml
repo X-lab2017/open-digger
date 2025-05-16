@@ -1,0 +1,10 @@
+name: Lija
+type: Division-1
+meta:
+  alpha2: MT-24
+  includes:
+    - lija
+    - mt-24
+    - '24'
+    - lija local council
+  category: LOCAL COUNCIL

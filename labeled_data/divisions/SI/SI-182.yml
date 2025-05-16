@@ -1,0 +1,10 @@
+name: Sveti Andraž v Slovenskih goricah
+type: Division-1
+meta:
+  alpha2: SI-182
+  includes:
+    - sveti andraž v slovenskih goricah
+    - si-182
+    - '182'
+    - sveti andraž v slovenskih goricah municipality
+  category: MUNICIPALITY

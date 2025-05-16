@@ -1,0 +1,10 @@
+name: Radlje ob Dravi
+type: Division-1
+meta:
+  alpha2: SI-101
+  includes:
+    - radlje ob dravi
+    - si-101
+    - '101'
+    - radlje ob dravi municipality
+  category: MUNICIPALITY

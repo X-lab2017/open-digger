@@ -1,0 +1,12 @@
+name: Johor
+type: Division-1
+meta:
+  alpha2: MY-01
+  includes:
+    - johor
+    - my-01
+    - '01'
+    - johor state
+    - johore
+    - johor darul ta'zim
+  category: STATE

@@ -1,0 +1,10 @@
+name: Kičevo
+type: Division-1
+meta:
+  alpha2: MK-307
+  includes:
+    - kičevo
+    - mk-307
+    - '307'
+    - kičevo municipality
+  category: MUNICIPALITY

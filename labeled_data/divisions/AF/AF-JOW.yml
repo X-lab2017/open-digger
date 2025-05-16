@@ -1,0 +1,11 @@
+name: Jowzjān
+type: Division-1
+meta:
+  alpha2: AF-JOW
+  includes:
+    - jowzjān
+    - af-jow
+    - jow
+    - jowzjān province
+    - jowzjan
+  category: PROVINCE

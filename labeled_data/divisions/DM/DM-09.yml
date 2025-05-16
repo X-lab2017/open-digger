@@ -1,0 +1,10 @@
+name: Saint Patrick
+type: Division-1
+meta:
+  alpha2: DM-09
+  includes:
+    - saint patrick
+    - dm-09
+    - '09'
+    - saint patrick parish
+  category: PARISH

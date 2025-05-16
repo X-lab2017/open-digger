@@ -1,0 +1,10 @@
+name: Sopron
+type: Division-1
+meta:
+  alpha2: HU-SN
+  includes:
+    - sopron
+    - hu-sn
+    - sn
+    - sopron city with county rights
+  category: CITY WITH COUNTY RIGHTS

@@ -1,0 +1,10 @@
+name: Tanintharyi
+type: Division-1
+meta:
+  alpha2: MM-05
+  includes:
+    - tanintharyi
+    - mm-05
+    - '05'
+    - tanintharyi region
+  category: REGION

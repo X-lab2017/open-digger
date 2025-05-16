@@ -1,0 +1,10 @@
+name: Punjab
+type: Division-1
+meta:
+  alpha2: IN-PB
+  includes:
+    - punjab
+    - in-pb
+    - pb
+    - punjab state
+  category: STATE

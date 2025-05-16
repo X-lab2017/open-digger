@@ -1,0 +1,10 @@
+name: Hacıqabul
+type: Division-1
+meta:
+  alpha2: AZ-HAC
+  includes:
+    - hacıqabul
+    - az-hac
+    - hac
+    - hacıqabul rayon
+  category: RAYON

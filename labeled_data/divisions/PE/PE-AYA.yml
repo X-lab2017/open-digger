@@ -1,0 +1,14 @@
+name: Ayacucho
+type: Division-1
+meta:
+  alpha2: PE-AYA
+  includes:
+    - ayacucho
+    - pe-aya
+    - aya
+    - ayacucho region
+    - ayakuchu
+    - ayakuchu region
+    - ayaquchu
+    - ayaquchu region
+  category: REGION

@@ -1,0 +1,12 @@
+name: Preiļu novads
+type: Division-1
+meta:
+  alpha2: LV-073
+  includes:
+    - preiļu novads
+    - lv-073
+    - '073'
+    - preiļu novads municipality
+    - preiļi
+    - preiļi municipality
+  category: MUNICIPALITY

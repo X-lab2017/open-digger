@@ -1,0 +1,32 @@
+name: Lazio
+type: Division-1
+meta:
+  alpha2: IT-62
+  includes:
+    - frosinone
+    - it-fr
+    - fr
+    - frosinone province
+    - latina
+    - it-lt
+    - lt
+    - latina province
+    - lazio
+    - it-62
+    - '62'
+    - lazio region
+    - rieti
+    - it-ri
+    - ri
+    - rieti province
+    - roma
+    - it-rm
+    - rm
+    - roma metropolitan city
+    - viterbo
+    - it-vt
+    - vt
+    - viterbo province
+    - laz.
+    - latium
+  category: REGION

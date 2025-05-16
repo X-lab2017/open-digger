@@ -1,0 +1,10 @@
+name: Batna
+type: Division-1
+meta:
+  alpha2: DZ-05
+  includes:
+    - batna
+    - dz-05
+    - '05'
+    - batna province
+  category: PROVINCE

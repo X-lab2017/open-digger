@@ -1,0 +1,71 @@
+name: Sint Maarten (Dutch part)
+type: Division-0
+meta:
+  alpha2: SX
+  includes:
+    - Sint Maarten (Dutch part)
+    - SX
+    - '534'
+    - Sint Maarten
+    - 圣马丁
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 268
+    - year: 2020
+      quarter: 2
+      count: 307
+    - year: 2020
+      quarter: 3
+      count: 339
+    - year: 2020
+      quarter: 4
+      count: 379
+    - year: 2021
+      quarter: 1
+      count: 422
+    - year: 2021
+      quarter: 2
+      count: 441
+    - year: 2021
+      quarter: 3
+      count: 467
+    - year: 2021
+      quarter: 4
+      count: 485
+    - year: 2022
+      quarter: 1
+      count: 518
+    - year: 2022
+      quarter: 2
+      count: 552
+    - year: 2022
+      quarter: 3
+      count: 588
+    - year: 2022
+      quarter: 4
+      count: 607
+    - year: 2023
+      quarter: 1
+      count: 645
+    - year: 2023
+      quarter: 2
+      count: 681
+    - year: 2023
+      quarter: 3
+      count: 726
+    - year: 2023
+      quarter: 4
+      count: 762
+    - year: 2024
+      quarter: 1
+      count: 812
+    - year: 2024
+      quarter: 2
+      count: 837
+    - year: 2024
+      quarter: 3
+      count: 855
+    - year: 2024
+      quarter: 4
+      count: 875

@@ -1,0 +1,10 @@
+name: Kerċem
+type: Division-1
+meta:
+  alpha2: MT-22
+  includes:
+    - kerċem
+    - mt-22
+    - '22'
+    - kerċem local council
+  category: LOCAL COUNCIL

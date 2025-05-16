@@ -1,0 +1,11 @@
+name: Janūb al Bāţinah
+type: Division-1
+meta:
+  alpha2: OM-BJ
+  includes:
+    - janūb al bāţinah
+    - om-bj
+    - bj
+    - janūb al bāţinah governorate
+    - al batinah south governorate
+  category: GOVERNORATE

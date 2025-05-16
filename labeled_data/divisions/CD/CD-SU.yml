@@ -1,0 +1,10 @@
+name: Sud-Ubangi
+type: Division-1
+meta:
+  alpha2: CD-SU
+  includes:
+    - sud-ubangi
+    - cd-su
+    - su
+    - sud-ubangi province
+  category: PROVINCE

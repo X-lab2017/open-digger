@@ -1,0 +1,10 @@
+name: A'ana
+type: Division-1
+meta:
+  alpha2: WS-AA
+  includes:
+    - a'ana
+    - ws-aa
+    - aa
+    - a'ana district
+  category: DISTRICT

@@ -1,0 +1,11 @@
+name: Shumen
+type: Division-1
+meta:
+  alpha2: BG-27
+  includes:
+    - shumen
+    - bg-27
+    - '27'
+    - shumen district
+    - shumen province
+  category: DISTRICT

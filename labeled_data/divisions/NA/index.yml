@@ -1,0 +1,89 @@
+name: Namibia
+type: Division-0
+meta:
+  alpha2: NA
+  includes:
+    - Namibia
+    - NA
+    - '516'
+    - the Republic of Namibia
+    - 纳米比亚
+  name_full: the Republic of Namibia
+  name_zh: 纳米比亚
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 1870
+    - year: 2020
+      quarter: 2
+      count: 2549
+    - year: 2020
+      quarter: 3
+      count: 3126
+    - year: 2020
+      quarter: 4
+      count: 3687
+    - year: 2021
+      quarter: 1
+      count: 4078
+    - year: 2021
+      quarter: 2
+      count: 4886
+    - year: 2021
+      quarter: 3
+      count: 5388
+    - year: 2021
+      quarter: 4
+      count: 5797
+    - year: 2022
+      quarter: 1
+      count: 6269
+    - year: 2022
+      quarter: 2
+      count: 6826
+    - year: 2022
+      quarter: 3
+      count: 7483
+    - year: 2022
+      quarter: 4
+      count: 8057
+    - year: 2023
+      quarter: 1
+      count: 8625
+    - year: 2023
+      quarter: 2
+      count: 9315
+    - year: 2023
+      quarter: 3
+      count: 10175
+    - year: 2023
+      quarter: 4
+      count: 10664
+    - year: 2024
+      quarter: 1
+      count: 11434
+    - year: 2024
+      quarter: 2
+      count: 12138
+    - year: 2024
+      quarter: 3
+      count: 13064
+    - year: 2024
+      quarter: 4
+      count: 14035
+data:
+  labels:
+    - NA-KA
+    - NA-ER
+    - NA-HA
+    - NA-KE
+    - NA-KW
+    - NA-KH
+    - NA-KU
+    - NA-OW
+    - NA-OH
+    - NA-OS
+    - NA-ON
+    - NA-OT
+    - NA-OD
+    - NA-CA

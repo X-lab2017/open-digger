@@ -1,0 +1,91 @@
+name: Iraq
+type: Division-0
+meta:
+  alpha2: IQ
+  includes:
+    - Iraq
+    - IQ
+    - '368'
+    - the Republic of Iraq
+    - 伊拉克
+  name_full: the Republic of Iraq
+  name_zh: 伊拉克
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 51669
+    - year: 2020
+      quarter: 2
+      count: 60447
+    - year: 2020
+      quarter: 3
+      count: 69901
+    - year: 2020
+      quarter: 4
+      count: 78815
+    - year: 2021
+      quarter: 1
+      count: 89485
+    - year: 2021
+      quarter: 2
+      count: 99350
+    - year: 2021
+      quarter: 3
+      count: 109878
+    - year: 2021
+      quarter: 4
+      count: 120522
+    - year: 2022
+      quarter: 1
+      count: 136487
+    - year: 2022
+      quarter: 2
+      count: 148725
+    - year: 2022
+      quarter: 3
+      count: 158885
+    - year: 2022
+      quarter: 4
+      count: 170772
+    - year: 2023
+      quarter: 1
+      count: 181131
+    - year: 2023
+      quarter: 2
+      count: 193560
+    - year: 2023
+      quarter: 3
+      count: 202936
+    - year: 2023
+      quarter: 4
+      count: 211049
+    - year: 2024
+      quarter: 1
+      count: 223854
+    - year: 2024
+      quarter: 2
+      count: 234388
+    - year: 2024
+      quarter: 3
+      count: 245565
+    - year: 2024
+      quarter: 4
+      count: 258981
+data:
+  labels:
+    - IQ-AN
+    - IQ-BA
+    - IQ-MU
+    - IQ-QA
+    - IQ-NA
+    - IQ-KR
+    - IQ-BG
+    - IQ-BB
+    - IQ-DQ
+    - IQ-DI
+    - IQ-KA
+    - IQ-KI
+    - IQ-MA
+    - IQ-NI
+    - IQ-WA
+    - IQ-SD

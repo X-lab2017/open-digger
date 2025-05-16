@@ -1,0 +1,91 @@
+name: Ghana
+type: Division-0
+meta:
+  alpha2: GH
+  includes:
+    - Ghana
+    - GH
+    - '288'
+    - the Republic of Ghana
+    - 加纳
+  name_full: the Republic of Ghana
+  name_zh: 加纳
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 42569
+    - year: 2020
+      quarter: 2
+      count: 49033
+    - year: 2020
+      quarter: 3
+      count: 55278
+    - year: 2020
+      quarter: 4
+      count: 59738
+    - year: 2021
+      quarter: 1
+      count: 64799
+    - year: 2021
+      quarter: 2
+      count: 70575
+    - year: 2021
+      quarter: 3
+      count: 76245
+    - year: 2021
+      quarter: 4
+      count: 82027
+    - year: 2022
+      quarter: 1
+      count: 90202
+    - year: 2022
+      quarter: 2
+      count: 98686
+    - year: 2022
+      quarter: 3
+      count: 108077
+    - year: 2022
+      quarter: 4
+      count: 115790
+    - year: 2023
+      quarter: 1
+      count: 130935
+    - year: 2023
+      quarter: 2
+      count: 143402
+    - year: 2023
+      quarter: 3
+      count: 153191
+    - year: 2023
+      quarter: 4
+      count: 160756
+    - year: 2024
+      quarter: 1
+      count: 171415
+    - year: 2024
+      quarter: 2
+      count: 182458
+    - year: 2024
+      quarter: 3
+      count: 193179
+    - year: 2024
+      quarter: 4
+      count: 205106
+data:
+  labels:
+    - GH-AF
+    - GH-AH
+    - GH-BO
+    - GH-BE
+    - GH-CP
+    - GH-EP
+    - GH-AA
+    - GH-NE
+    - GH-NP
+    - GH-OT
+    - GH-SV
+    - GH-UE
+    - GH-UW
+    - GH-TV
+    - GH-WP
+    - GH-WN

@@ -1,0 +1,10 @@
+name: Pichincha
+type: Division-1
+meta:
+  alpha2: EC-P
+  includes:
+    - pichincha
+    - ec-p
+    - p
+    - pichincha province
+  category: PROVINCE

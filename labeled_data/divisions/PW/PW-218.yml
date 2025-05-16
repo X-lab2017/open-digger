@@ -1,0 +1,10 @@
+name: Ngarchelong
+type: Division-1
+meta:
+  alpha2: PW-218
+  includes:
+    - ngarchelong
+    - pw-218
+    - '218'
+    - ngarchelong state
+  category: STATE

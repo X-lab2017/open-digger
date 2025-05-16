@@ -1,0 +1,10 @@
+name: Sliema
+type: Division-1
+meta:
+  alpha2: MT-56
+  includes:
+    - sliema
+    - mt-56
+    - '56'
+    - sliema local council
+  category: LOCAL COUNCIL

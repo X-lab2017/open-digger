@@ -1,0 +1,11 @@
+name: Kavadarci
+type: Division-1
+meta:
+  alpha2: MK-104
+  includes:
+    - kavadarci
+    - mk-104
+    - '104'
+    - kavadarci municipality
+    - municipality of kavadarci
+  category: MUNICIPALITY

@@ -1,0 +1,10 @@
+name: Spélugues
+type: Division-1
+meta:
+  alpha2: MC-SP
+  includes:
+    - spélugues
+    - mc-sp
+    - sp
+    - spélugues quarter
+  category: QUARTER

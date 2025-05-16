@@ -1,0 +1,10 @@
+name: Uvea
+type: Division-1
+meta:
+  alpha2: WF-UV
+  includes:
+    - uvea
+    - wf-uv
+    - uv
+    - uvea administrative precinct
+  category: ADMINISTRATIVE PRECINCT

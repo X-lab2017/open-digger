@@ -1,0 +1,10 @@
+name: Grad
+type: Division-1
+meta:
+  alpha2: SI-158
+  includes:
+    - grad
+    - si-158
+    - '158'
+    - grad municipality
+  category: MUNICIPALITY

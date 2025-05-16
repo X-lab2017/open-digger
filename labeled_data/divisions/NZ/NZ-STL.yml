@@ -1,0 +1,13 @@
+name: Southland
+type: Division-1
+meta:
+  alpha2: NZ-STL
+  includes:
+    - southland
+    - nz-stl
+    - stl
+    - southland region
+    - te taiao tonga
+    - te taiao tonga region
+    - south island
+  category: REGION

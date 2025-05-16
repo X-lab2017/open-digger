@@ -1,0 +1,12 @@
+name: Krāslavas novads
+type: Division-1
+meta:
+  alpha2: LV-047
+  includes:
+    - krāslavas novads
+    - lv-047
+    - '047'
+    - krāslavas novads municipality
+    - krāslava
+    - krāslava municipality
+  category: MUNICIPALITY

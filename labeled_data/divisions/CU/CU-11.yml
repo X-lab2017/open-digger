@@ -1,0 +1,11 @@
+name: Holguín
+type: Division-1
+meta:
+  alpha2: CU-11
+  includes:
+    - holguín
+    - cu-11
+    - '11'
+    - holguín province
+    - holguin
+  category: PROVINCE

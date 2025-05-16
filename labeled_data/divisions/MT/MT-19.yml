@@ -1,0 +1,10 @@
+name: Iklin
+type: Division-1
+meta:
+  alpha2: MT-19
+  includes:
+    - iklin
+    - mt-19
+    - '19'
+    - iklin local council
+  category: LOCAL COUNCIL

@@ -1,0 +1,10 @@
+name: Ngatpang
+type: Division-1
+meta:
+  alpha2: PW-224
+  includes:
+    - ngatpang
+    - pw-224
+    - '224'
+    - ngatpang state
+  category: STATE

@@ -1,0 +1,10 @@
+name: Gusinje
+type: Division-1
+meta:
+  alpha2: ME-22
+  includes:
+    - gusinje
+    - me-22
+    - '22'
+    - gusinje municipality
+  category: MUNICIPALITY

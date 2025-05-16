@@ -1,0 +1,44 @@
+name: Marrakech-Safi
+type: Division-1
+meta:
+  alpha2: MA-07
+  includes:
+    - al haouz
+    - ma-hao
+    - hao
+    - al haouz province
+    - chichaoua
+    - ma-chi
+    - chi
+    - chichaoua province
+    - el kelâa des sraghna
+    - ma-kes
+    - kes
+    - el kelâa des sraghna province
+    - essaouira
+    - ma-esi
+    - esi
+    - essaouira province
+    - marrakech
+    - ma-mar
+    - mar
+    - marrakech prefecture
+    - marrakech-safi
+    - ma-07
+    - '07'
+    - marrakech-safi region
+    - rehamna
+    - ma-reh
+    - reh
+    - rehamna province
+    - safi
+    - ma-saf
+    - saf
+    - safi province
+    - youssoufia
+    - ma-yus
+    - yus
+    - youssoufia province
+    - marrakesh-safi
+    - مراكش - آسفي
+  category: REGION

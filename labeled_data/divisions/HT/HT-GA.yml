@@ -1,0 +1,12 @@
+name: Grande’Anse
+type: Division-1
+meta:
+  alpha2: HT-GA
+  includes:
+    - grandans
+    - ht-ga
+    - ga
+    - grandans department
+    - grande’anse
+    - grande’anse department
+  category: DEPARTMENT

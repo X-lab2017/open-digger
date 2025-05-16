@@ -1,0 +1,93 @@
+name: Somalia
+type: Division-0
+meta:
+  alpha2: SO
+  includes:
+    - Somalia
+    - SO
+    - '706'
+    - the Somali Republic
+    - 索马里
+  name_full: the Somali Republic
+  name_zh: 索马里
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 5156
+    - year: 2020
+      quarter: 2
+      count: 5851
+    - year: 2020
+      quarter: 3
+      count: 6727
+    - year: 2020
+      quarter: 4
+      count: 7784
+    - year: 2021
+      quarter: 1
+      count: 9412
+    - year: 2021
+      quarter: 2
+      count: 10368
+    - year: 2021
+      quarter: 3
+      count: 11417
+    - year: 2021
+      quarter: 4
+      count: 12736
+    - year: 2022
+      quarter: 1
+      count: 14424
+    - year: 2022
+      quarter: 2
+      count: 15680
+    - year: 2022
+      quarter: 3
+      count: 17145
+    - year: 2022
+      quarter: 4
+      count: 18836
+    - year: 2023
+      quarter: 1
+      count: 20479
+    - year: 2023
+      quarter: 2
+      count: 21904
+    - year: 2023
+      quarter: 3
+      count: 23560
+    - year: 2023
+      quarter: 4
+      count: 29856
+    - year: 2024
+      quarter: 1
+      count: 32447
+    - year: 2024
+      quarter: 2
+      count: 34508
+    - year: 2024
+      quarter: 3
+      count: 37522
+    - year: 2024
+      quarter: 4
+      count: 40871
+data:
+  labels:
+    - SO-AW
+    - SO-BK
+    - SO-BN
+    - SO-BR
+    - SO-BY
+    - SO-GA
+    - SO-GE
+    - SO-HI
+    - SO-JD
+    - SO-JH
+    - SO-MU
+    - SO-NU
+    - SO-SA
+    - SO-SD
+    - SO-SH
+    - SO-SO
+    - SO-TO
+    - SO-WO

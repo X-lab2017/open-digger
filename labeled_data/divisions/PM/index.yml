@@ -1,0 +1,57 @@
+name: Saint Pierre and Miquelon
+type: Division-0
+meta:
+  alpha2: PM
+  includes:
+    - Saint Pierre and Miquelon
+    - PM
+    - '666'
+    - 圣皮埃尔和密克隆
+  name_full: Saint Pierre and Miquelon
+  name_zh: 圣皮埃尔和密克隆
+  developers:
+    - year: 2021
+      quarter: 2
+      count: 122
+    - year: 2021
+      quarter: 3
+      count: 102
+    - year: 2021
+      quarter: 4
+      count: 107
+    - year: 2022
+      quarter: 1
+      count: 114
+    - year: 2022
+      quarter: 2
+      count: 116
+    - year: 2022
+      quarter: 3
+      count: 122
+    - year: 2022
+      quarter: 4
+      count: 130
+    - year: 2023
+      quarter: 1
+      count: 136
+    - year: 2023
+      quarter: 2
+      count: 140
+    - year: 2023
+      quarter: 3
+      count: 140
+    - year: 2023
+      quarter: 4
+      count: 145
+    - year: 2024
+      quarter: 1
+      count: 158
+    - year: 2024
+      quarter: 2
+      count: 160
+    - year: 2024
+      quarter: 3
+      count: 173
+    - year: 2024
+      quarter: 4
+      count: 184

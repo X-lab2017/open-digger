@@ -1,0 +1,36 @@
+name: Panevėžio apskritis
+type: Division-1
+meta:
+  alpha2: LT-PN
+  includes:
+    - biržai
+    - lt-06
+    - '06'
+    - biržai district municipality
+    - kupiškis
+    - lt-23
+    - '23'
+    - kupiškis district municipality
+    - panevėžio apskritis
+    - lt-pn
+    - pn
+    - panevėžio apskritis county
+    - panevėžio miestas
+    - lt-32
+    - '32'
+    - panevėžio miestas city municipality
+    - panevėžys
+    - lt-33
+    - '33'
+    - panevėžys district municipality
+    - pasvalys
+    - lt-34
+    - '34'
+    - pasvalys district municipality
+    - rokiškis
+    - lt-40
+    - '40'
+    - rokiškis district municipality
+    - panevėžio
+    - panevėžys county
+  category: COUNTY

@@ -1,0 +1,10 @@
+name: Aḑ Ḑāli‘
+type: Division-1
+meta:
+  alpha2: YE-DA
+  includes:
+    - aḑ ḑāli‘
+    - ye-da
+    - da
+    - aḑ ḑāli‘ governorate
+  category: GOVERNORATE

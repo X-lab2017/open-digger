@@ -1,0 +1,11 @@
+name: Sīstān va Balūchestān
+type: Division-1
+meta:
+  alpha2: IR-11
+  includes:
+    - sīstān va balūchestān
+    - ir-11
+    - '11'
+    - sīstān va balūchestān province
+    - sistan and baluchestan province
+  category: PROVINCE

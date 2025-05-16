@@ -1,0 +1,13 @@
+name: Małopolskie
+type: Division-1
+meta:
+  alpha2: PL-12
+  includes:
+    - małopolskie
+    - pl-12
+    - '12'
+    - małopolskie voivodship
+    - lesser poland voivodeship
+    - województwo małopolskie
+    - ma
+  category: VOIVODSHIP

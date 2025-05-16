@@ -1,0 +1,10 @@
+name: Pécs
+type: Division-1
+meta:
+  alpha2: HU-PS
+  includes:
+    - pécs
+    - hu-ps
+    - ps
+    - pécs city with county rights
+  category: CITY WITH COUNTY RIGHTS

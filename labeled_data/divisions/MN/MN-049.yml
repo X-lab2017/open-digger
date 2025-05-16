@@ -1,0 +1,10 @@
+name: Selenge
+type: Division-1
+meta:
+  alpha2: MN-049
+  includes:
+    - selenge
+    - mn-049
+    - '049'
+    - selenge province
+  category: PROVINCE

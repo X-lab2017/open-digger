@@ -1,0 +1,10 @@
+name: Tearce
+type: Division-1
+meta:
+  alpha2: MK-608
+  includes:
+    - tearce
+    - mk-608
+    - '608'
+    - tearce municipality
+  category: MUNICIPALITY

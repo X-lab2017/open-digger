@@ -1,0 +1,10 @@
+name: Sălaj
+type: Division-1
+meta:
+  alpha2: RO-SJ
+  includes:
+    - sălaj
+    - ro-sj
+    - sj
+    - sălaj department
+  category: DEPARTMENT

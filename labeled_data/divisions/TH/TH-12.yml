@@ -1,0 +1,11 @@
+name: Nonthaburi
+type: Division-1
+meta:
+  alpha2: TH-12
+  includes:
+    - nonthaburi
+    - th-12
+    - '12'
+    - nonthaburi province
+    - chang wat nonthaburi
+  category: PROVINCE

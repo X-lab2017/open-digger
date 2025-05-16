@@ -1,0 +1,11 @@
+name: Monggar
+type: Division-1
+meta:
+  alpha2: BT-42
+  includes:
+    - monggar
+    - bt-42
+    - '42'
+    - monggar district
+    - mongar
+  category: DISTRICT

@@ -1,0 +1,11 @@
+name: Kahramanmaraş
+type: Division-1
+meta:
+  alpha2: TR-46
+  includes:
+    - kahramanmaraş
+    - tr-46
+    - '46'
+    - kahramanmaraş province
+    - kahraman maras
+  category: PROVINCE

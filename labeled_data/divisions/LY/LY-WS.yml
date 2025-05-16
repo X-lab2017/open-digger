@@ -1,0 +1,11 @@
+name: Wādī ash Shāţi’
+type: Division-1
+meta:
+  alpha2: LY-WS
+  includes:
+    - wādī ash shāţi’
+    - ly-ws
+    - ws
+    - wādī ash shāţi’ popularate
+    - wadi al shatii
+  category: POPULARATE

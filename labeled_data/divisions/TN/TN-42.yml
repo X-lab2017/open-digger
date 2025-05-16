@@ -1,0 +1,11 @@
+name: Kasserine
+type: Division-1
+meta:
+  alpha2: TN-42
+  includes:
+    - kasserine
+    - tn-42
+    - '42'
+    - kasserine governorate
+    - kassérine governorate
+  category: GOVERNORATE

@@ -1,0 +1,10 @@
+name: Qom
+type: Division-1
+meta:
+  alpha2: IR-25
+  includes:
+    - qom
+    - ir-25
+    - '25'
+    - qom province
+  category: PROVINCE

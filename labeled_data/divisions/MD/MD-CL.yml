@@ -1,0 +1,11 @@
+name: Călărași
+type: Division-1
+meta:
+  alpha2: MD-CL
+  includes:
+    - călărași
+    - md-cl
+    - cl
+    - călărași district
+    - raionul călărași
+  category: DISTRICT

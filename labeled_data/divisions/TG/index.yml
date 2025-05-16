@@ -1,0 +1,80 @@
+name: Togo
+type: Division-0
+meta:
+  alpha2: TG
+  includes:
+    - Togo
+    - TG
+    - '768'
+    - the Togolese Republic
+    - 多哥
+  name_full: the Togolese Republic
+  name_zh: 多哥
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 5107
+    - year: 2020
+      quarter: 2
+      count: 5650
+    - year: 2020
+      quarter: 3
+      count: 6279
+    - year: 2020
+      quarter: 4
+      count: 6845
+    - year: 2021
+      quarter: 1
+      count: 7475
+    - year: 2021
+      quarter: 2
+      count: 8309
+    - year: 2021
+      quarter: 3
+      count: 9017
+    - year: 2021
+      quarter: 4
+      count: 9784
+    - year: 2022
+      quarter: 1
+      count: 10730
+    - year: 2022
+      quarter: 2
+      count: 11610
+    - year: 2022
+      quarter: 3
+      count: 12700
+    - year: 2022
+      quarter: 4
+      count: 13761
+    - year: 2023
+      quarter: 1
+      count: 14875
+    - year: 2023
+      quarter: 2
+      count: 16053
+    - year: 2023
+      quarter: 3
+      count: 17044
+    - year: 2023
+      quarter: 4
+      count: 18183
+    - year: 2024
+      quarter: 1
+      count: 19365
+    - year: 2024
+      quarter: 2
+      count: 20597
+    - year: 2024
+      quarter: 3
+      count: 21836
+    - year: 2024
+      quarter: 4
+      count: 23297
+data:
+  labels:
+    - TG-C
+    - TG-K
+    - TG-M
+    - TG-P
+    - TG-S

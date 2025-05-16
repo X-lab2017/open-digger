@@ -1,0 +1,10 @@
+name: Nyanga
+type: Division-1
+meta:
+  alpha2: GA-5
+  includes:
+    - nyanga
+    - ga-5
+    - '5'
+    - nyanga province
+  category: PROVINCE

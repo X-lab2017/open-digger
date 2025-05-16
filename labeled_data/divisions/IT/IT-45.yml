@@ -1,0 +1,47 @@
+name: Emilia-Romagna
+type: Division-1
+meta:
+  alpha2: IT-45
+  includes:
+    - bologna
+    - it-bo
+    - bo
+    - bologna metropolitan city
+    - emilia-romagna
+    - it-45
+    - '45'
+    - emilia-romagna region
+    - ferrara
+    - it-fe
+    - fe
+    - ferrara province
+    - forlì-cesena
+    - it-fc
+    - fc
+    - forlì-cesena province
+    - modena
+    - it-mo
+    - mo
+    - modena province
+    - parma
+    - it-pr
+    - pr
+    - parma province
+    - piacenza
+    - it-pc
+    - pc
+    - piacenza province
+    - ravenna
+    - it-ra
+    - ra
+    - ravenna province
+    - reggio emilia
+    - it-re
+    - re
+    - reggio emilia province
+    - rimini
+    - it-rn
+    - rn
+    - rimini province
+    - em.rom.
+  category: REGION

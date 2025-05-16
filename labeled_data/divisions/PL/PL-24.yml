@@ -1,0 +1,13 @@
+name: Śląskie
+type: Division-1
+meta:
+  alpha2: PL-24
+  includes:
+    - śląskie
+    - pl-24
+    - '24'
+    - śląskie voivodship
+    - silesian voivodeship
+    - województwo śląskie
+    - sl
+  category: VOIVODSHIP

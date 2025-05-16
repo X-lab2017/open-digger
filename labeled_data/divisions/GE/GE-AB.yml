@@ -1,0 +1,12 @@
+name: Abkhazia
+type: Division-1
+meta:
+  alpha2: GE-AB
+  includes:
+    - abkhazia
+    - ge-ab
+    - ab
+    - abkhazia autonomous republic
+    - apkhazeti
+    - apkhazeti autonomous republic
+  category: AUTONOMOUS REPUBLIC

@@ -1,0 +1,10 @@
+name: Sumqayıt
+type: Division-1
+meta:
+  alpha2: AZ-SM
+  includes:
+    - sumqayıt
+    - az-sm
+    - sm
+    - sumqayıt municipality
+  category: MUNICIPALITY

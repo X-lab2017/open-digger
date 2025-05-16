@@ -1,0 +1,14 @@
+name: Kostromskaya oblast'
+type: Division-1
+meta:
+  alpha2: RU-KOS
+  includes:
+    - kostromskaja oblast'
+    - ru-kos
+    - kos
+    - kostromskaja oblast' administrative region
+    - kostromskaya oblast'
+    - kostromskaya oblast' administrative region
+    - kostroma oblast
+    - kostroma
+  category: ADMINISTRATIVE REGION

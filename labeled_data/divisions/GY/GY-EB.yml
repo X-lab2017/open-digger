@@ -1,0 +1,10 @@
+name: East Berbice-Corentyne
+type: Division-1
+meta:
+  alpha2: GY-EB
+  includes:
+    - east berbice-corentyne
+    - gy-eb
+    - eb
+    - east berbice-corentyne region
+  category: REGION

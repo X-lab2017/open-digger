@@ -1,0 +1,22 @@
+name: Yuma
+type: Division-1
+meta:
+  alpha2: DO-42
+  includes:
+    - el seibo
+    - do-08
+    - '08'
+    - el seibo province
+    - la altagracia
+    - do-11
+    - '11'
+    - la altagracia province
+    - la romana
+    - do-12
+    - '12'
+    - la romana province
+    - yuma
+    - do-42
+    - '42'
+    - yuma region
+  category: REGION

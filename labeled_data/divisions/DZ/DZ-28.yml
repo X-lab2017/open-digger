@@ -1,0 +1,10 @@
+name: M'sila
+type: Division-1
+meta:
+  alpha2: DZ-28
+  includes:
+    - m'sila
+    - dz-28
+    - '28'
+    - m'sila province
+  category: PROVINCE

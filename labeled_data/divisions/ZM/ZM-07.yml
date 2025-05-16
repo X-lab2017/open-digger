@@ -1,0 +1,10 @@
+name: Southern
+type: Division-1
+meta:
+  alpha2: ZM-07
+  includes:
+    - southern
+    - zm-07
+    - '07'
+    - southern province
+  category: PROVINCE

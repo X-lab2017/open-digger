@@ -1,0 +1,10 @@
+name: Al Mahrah
+type: Division-1
+meta:
+  alpha2: YE-MR
+  includes:
+    - al mahrah
+    - ye-mr
+    - mr
+    - al mahrah governorate
+  category: GOVERNORATE

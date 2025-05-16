@@ -1,0 +1,30 @@
+name: Norðurland vestra
+type: Division-1
+meta:
+  alpha2: IS-5
+  includes:
+    - húnabyggð
+    - is-hug
+    - hug
+    - húnabyggð municipality
+    - húnaþing vestra
+    - is-huv
+    - huv
+    - húnaþing vestra municipality
+    - norðurland vestra
+    - is-5
+    - '5'
+    - norðurland vestra region
+    - skagabyggð
+    - is-skg
+    - skg
+    - skagabyggð municipality
+    - skagafjörður
+    - is-skr
+    - skr
+    - skagafjörður municipality
+    - sveitarfélagið skagaströnd
+    - is-sss
+    - sss
+    - sveitarfélagið skagaströnd municipality
+  category: REGION

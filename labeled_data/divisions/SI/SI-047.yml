@@ -1,0 +1,10 @@
+name: Kobilje
+type: Division-1
+meta:
+  alpha2: SI-047
+  includes:
+    - kobilje
+    - si-047
+    - '047'
+    - kobilje municipality
+  category: MUNICIPALITY

@@ -1,0 +1,90 @@
+name: Norway
+type: Division-0
+meta:
+  alpha2: 'NO'
+  includes:
+    - Norway
+    - 'NO'
+    - '578'
+    - the Kingdom of Norway
+    - 挪威
+  name_full: the Kingdom of Norway
+  name_zh: 挪威
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 158784
+    - year: 2020
+      quarter: 2
+      count: 167930
+    - year: 2020
+      quarter: 3
+      count: 177872
+    - year: 2020
+      quarter: 4
+      count: 188746
+    - year: 2021
+      quarter: 1
+      count: 199720
+    - year: 2021
+      quarter: 2
+      count: 208052
+    - year: 2021
+      quarter: 3
+      count: 217917
+    - year: 2021
+      quarter: 4
+      count: 229242
+    - year: 2022
+      quarter: 1
+      count: 243764
+    - year: 2022
+      quarter: 2
+      count: 254031
+    - year: 2022
+      quarter: 3
+      count: 265848
+    - year: 2022
+      quarter: 4
+      count: 277634
+    - year: 2023
+      quarter: 1
+      count: 291346
+    - year: 2023
+      quarter: 2
+      count: 303269
+    - year: 2023
+      quarter: 3
+      count: 316860
+    - year: 2023
+      quarter: 4
+      count: 329673
+    - year: 2024
+      quarter: 1
+      count: 345184
+    - year: 2024
+      quarter: 2
+      count: 356682
+    - year: 2024
+      quarter: 3
+      count: 368192
+    - year: 2024
+      quarter: 4
+      count: 382286
+data:
+  labels:
+    - NO-42
+    - NO-34
+    - NO-22
+    - NO-15
+    - NO-18
+    - NO-03
+    - NO-11
+    - NO-54
+    - NO-21
+    - NO-50
+    - NO-38
+    - NO-46
+    - NO-30
+    - ':companies/nordic_semiconductor'
+    - ':companies/opera'

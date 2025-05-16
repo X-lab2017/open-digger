@@ -1,0 +1,10 @@
+name: Cordillera
+type: Division-1
+meta:
+  alpha2: PY-3
+  includes:
+    - cordillera
+    - py-3
+    - '3'
+    - cordillera department
+  category: DEPARTMENT

@@ -1,0 +1,13 @@
+name: La Araucanía
+type: Division-1
+meta:
+  alpha2: CL-AR
+  includes:
+    - la araucanía
+    - cl-ar
+    - ar
+    - la araucanía region
+    - ix
+    - araucania
+    - araucanía
+  category: REGION

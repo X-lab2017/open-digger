@@ -1,0 +1,10 @@
+name: Overijssel
+type: Division-1
+meta:
+  alpha2: NL-OV
+  includes:
+    - overijssel
+    - nl-ov
+    - ov
+    - overijssel province
+  category: PROVINCE

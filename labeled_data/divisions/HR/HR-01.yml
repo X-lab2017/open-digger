@@ -1,0 +1,11 @@
+name: Zagrebačka županija
+type: Division-1
+meta:
+  alpha2: HR-01
+  includes:
+    - zagrebačka županija
+    - hr-01
+    - '01'
+    - zagrebačka županija county
+    - zagreb county
+  category: COUNTY

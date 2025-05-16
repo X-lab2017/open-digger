@@ -1,0 +1,10 @@
+name: Bomet
+type: Division-1
+meta:
+  alpha2: KE-02
+  includes:
+    - bomet
+    - ke-02
+    - '02'
+    - bomet county
+  category: COUNTY

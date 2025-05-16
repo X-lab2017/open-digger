@@ -1,0 +1,10 @@
+name: Guairá
+type: Division-1
+meta:
+  alpha2: PY-4
+  includes:
+    - guairá
+    - py-4
+    - '4'
+    - guairá department
+  category: DEPARTMENT

@@ -1,0 +1,97 @@
+name: Libya
+type: Division-0
+meta:
+  alpha2: LY
+  includes:
+    - Libya
+    - LY
+    - '434'
+    - the Socialist People's Libyan Arab Jamahiriya
+    - 利比亚
+  name_full: the Socialist People's Libyan Arab Jamahiriya
+  name_zh: 利比亚
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 9125
+    - year: 2020
+      quarter: 2
+      count: 10314
+    - year: 2020
+      quarter: 3
+      count: 11219
+    - year: 2020
+      quarter: 4
+      count: 12457
+    - year: 2021
+      quarter: 1
+      count: 13714
+    - year: 2021
+      quarter: 2
+      count: 14906
+    - year: 2021
+      quarter: 3
+      count: 16125
+    - year: 2021
+      quarter: 4
+      count: 17489
+    - year: 2022
+      quarter: 1
+      count: 19088
+    - year: 2022
+      quarter: 2
+      count: 20496
+    - year: 2022
+      quarter: 3
+      count: 22176
+    - year: 2022
+      quarter: 4
+      count: 24029
+    - year: 2023
+      quarter: 1
+      count: 25817
+    - year: 2023
+      quarter: 2
+      count: 28208
+    - year: 2023
+      quarter: 3
+      count: 30522
+    - year: 2023
+      quarter: 4
+      count: 31688
+    - year: 2024
+      quarter: 1
+      count: 33502
+    - year: 2024
+      quarter: 2
+      count: 35642
+    - year: 2024
+      quarter: 3
+      count: 38022
+    - year: 2024
+      quarter: 4
+      count: 41196
+data:
+  labels:
+    - LY-BU
+    - LY-JA
+    - LY-JG
+    - LY-JI
+    - LY-JU
+    - LY-KF
+    - LY-MJ
+    - LY-MB
+    - LY-WA
+    - LY-NQ
+    - LY-ZA
+    - LY-BA
+    - LY-DR
+    - LY-GT
+    - LY-MI
+    - LY-MQ
+    - LY-NL
+    - LY-SB
+    - LY-SR
+    - LY-WD
+    - LY-WS
+    - LY-TB

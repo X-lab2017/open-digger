@@ -1,0 +1,80 @@
+name: Denmark
+type: Division-0
+meta:
+  alpha2: DK
+  includes:
+    - Denmark
+    - DK
+    - '208'
+    - the Kingdom of Denmark
+    - 丹麦
+  name_full: the Kingdom of Denmark
+  name_zh: 丹麦
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 177756
+    - year: 2020
+      quarter: 2
+      count: 187717
+    - year: 2020
+      quarter: 3
+      count: 198968
+    - year: 2020
+      quarter: 4
+      count: 211440
+    - year: 2021
+      quarter: 1
+      count: 222468
+    - year: 2021
+      quarter: 2
+      count: 231435
+    - year: 2021
+      quarter: 3
+      count: 241348
+    - year: 2021
+      quarter: 4
+      count: 253517
+    - year: 2022
+      quarter: 1
+      count: 269000
+    - year: 2022
+      quarter: 2
+      count: 280283
+    - year: 2022
+      quarter: 3
+      count: 291541
+    - year: 2022
+      quarter: 4
+      count: 303995
+    - year: 2023
+      quarter: 1
+      count: 317817
+    - year: 2023
+      quarter: 2
+      count: 330524
+    - year: 2023
+      quarter: 3
+      count: 344148
+    - year: 2023
+      quarter: 4
+      count: 358428
+    - year: 2024
+      quarter: 1
+      count: 374840
+    - year: 2024
+      quarter: 2
+      count: 387094
+    - year: 2024
+      quarter: 3
+      count: 400769
+    - year: 2024
+      quarter: 4
+      count: 417886
+data:
+  labels:
+    - DK-84
+    - DK-82
+    - DK-81
+    - DK-85
+    - DK-83

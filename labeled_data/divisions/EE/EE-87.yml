@@ -1,0 +1,30 @@
+name: Võrumaa
+type: Division-1
+meta:
+  alpha2: EE-87
+  includes:
+    - antsla
+    - ee-142
+    - '142'
+    - antsla rural municipality
+    - rõuge
+    - ee-698
+    - '698'
+    - rõuge rural municipality
+    - setomaa
+    - ee-732
+    - '732'
+    - setomaa rural municipality
+    - võru
+    - ee-919
+    - '919'
+    - võru urban municipality
+    - ee-917
+    - '917'
+    - võru rural municipality
+    - võrumaa
+    - ee-87
+    - '87'
+    - võrumaa county
+    - võru county
+  category: COUNTY

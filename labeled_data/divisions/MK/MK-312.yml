@@ -1,0 +1,12 @@
+name: Struga
+type: Division-1
+meta:
+  alpha2: MK-312
+  includes:
+    - struga
+    - mk-312
+    - '312'
+    - struga municipality
+    - municipality of struga
+    - southwestern
+  category: MUNICIPALITY

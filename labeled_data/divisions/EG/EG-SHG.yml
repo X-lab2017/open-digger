@@ -1,0 +1,13 @@
+name: Sūhāj
+type: Division-1
+meta:
+  alpha2: EG-SHG
+  includes:
+    - sūhāj
+    - eg-shg
+    - shg
+    - sūhāj governorate
+    - sohag
+    - sohag governorate
+    - suhaj
+  category: GOVERNORATE

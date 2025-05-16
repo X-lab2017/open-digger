@@ -1,0 +1,10 @@
+name: West Sepik
+type: Division-1
+meta:
+  alpha2: PG-SAN
+  includes:
+    - west sepik
+    - pg-san
+    - san
+    - west sepik province
+  category: PROVINCE

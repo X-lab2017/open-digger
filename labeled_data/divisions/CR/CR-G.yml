@@ -1,0 +1,12 @@
+name: Guanacaste
+type: Division-1
+meta:
+  alpha2: CR-G
+  includes:
+    - guanacaste
+    - cr-g
+    - g
+    - guanacaste province
+    - provincia de guanacaste
+    - gu
+  category: PROVINCE

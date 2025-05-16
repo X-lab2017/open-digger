@@ -1,0 +1,43 @@
+name: Naxçıvan
+type: Division-1
+meta:
+  alpha2: AZ-NX
+  includes:
+    - babək
+    - az-bab
+    - bab
+    - babək rayon
+    - culfa
+    - az-cul
+    - cul
+    - culfa rayon
+    - kǝngǝrli
+    - az-kan
+    - kan
+    - kǝngǝrli rayon
+    - naxçıvan
+    - az-nx
+    - nx
+    - naxçıvan autonomous republic
+    - az-nv
+    - nv
+    - naxçıvan municipality
+    - ordubad
+    - az-ord
+    - ord
+    - ordubad rayon
+    - sədərək
+    - az-sad
+    - sad
+    - sədərək rayon
+    - şahbuz
+    - az-sah
+    - sah
+    - şahbuz rayon
+    - şərur
+    - az-sar
+    - sar
+    - şərur rayon
+    - nakhichevan autonomous republic
+    - nakhchivan autonomous republic
+  category: AUTONOMOUS REPUBLIC

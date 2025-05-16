@@ -1,0 +1,11 @@
+name: Saraburi
+type: Division-1
+meta:
+  alpha2: TH-19
+  includes:
+    - saraburi
+    - th-19
+    - '19'
+    - saraburi province
+    - sara buri
+  category: PROVINCE

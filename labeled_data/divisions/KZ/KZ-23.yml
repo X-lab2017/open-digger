@@ -1,0 +1,15 @@
+name: Atyrauskaya oblast'
+type: Division-1
+meta:
+  alpha2: KZ-23
+  includes:
+    - atyrauskaja oblast'
+    - kz-23
+    - '23'
+    - atyrauskaja oblast' region
+    - atyrauskaya oblast'
+    - atyrauskaya oblast' region
+    - atyraū oblysy
+    - atyraū oblysy region
+    - atyrau region
+  category: REGION

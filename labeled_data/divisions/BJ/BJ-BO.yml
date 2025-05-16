@@ -1,0 +1,10 @@
+name: Borgou
+type: Division-1
+meta:
+  alpha2: BJ-BO
+  includes:
+    - borgou
+    - bj-bo
+    - bo
+    - borgou department
+  category: DEPARTMENT

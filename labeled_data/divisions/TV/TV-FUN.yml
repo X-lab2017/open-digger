@@ -1,0 +1,10 @@
+name: Funafuti
+type: Division-1
+meta:
+  alpha2: TV-FUN
+  includes:
+    - funafuti
+    - tv-fun
+    - fun
+    - funafuti town council
+  category: TOWN COUNCIL

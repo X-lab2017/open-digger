@@ -1,0 +1,83 @@
+name: Niger
+type: Division-0
+meta:
+  alpha2: NE
+  includes:
+    - Niger
+    - NE
+    - '562'
+    - the Republic of the Niger
+    - 尼日尔
+  name_full: the Republic of the Niger
+  name_zh: 尼日尔
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 1116
+    - year: 2020
+      quarter: 2
+      count: 1217
+    - year: 2020
+      quarter: 3
+      count: 1362
+    - year: 2020
+      quarter: 4
+      count: 1501
+    - year: 2021
+      quarter: 1
+      count: 1607
+    - year: 2021
+      quarter: 2
+      count: 1721
+    - year: 2021
+      quarter: 3
+      count: 1909
+    - year: 2021
+      quarter: 4
+      count: 2103
+    - year: 2022
+      quarter: 1
+      count: 2381
+    - year: 2022
+      quarter: 2
+      count: 2654
+    - year: 2022
+      quarter: 3
+      count: 2905
+    - year: 2022
+      quarter: 4
+      count: 3158
+    - year: 2023
+      quarter: 1
+      count: 3626
+    - year: 2023
+      quarter: 2
+      count: 3922
+    - year: 2023
+      quarter: 3
+      count: 4119
+    - year: 2023
+      quarter: 4
+      count: 4301
+    - year: 2024
+      quarter: 1
+      count: 4493
+    - year: 2024
+      quarter: 2
+      count: 4668
+    - year: 2024
+      quarter: 3
+      count: 4896
+    - year: 2024
+      quarter: 4
+      count: 5166
+data:
+  labels:
+    - NE-1
+    - NE-2
+    - NE-3
+    - NE-4
+    - NE-8
+    - NE-5
+    - NE-6
+    - NE-7

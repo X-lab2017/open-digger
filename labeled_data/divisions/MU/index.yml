@@ -1,0 +1,87 @@
+name: Mauritius
+type: Division-0
+meta:
+  alpha2: MU
+  includes:
+    - Mauritius
+    - MU
+    - '480'
+    - the Republic of Mauritius
+    - 毛里求斯
+  name_full: the Republic of Mauritius
+  name_zh: 毛里求斯
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 10812
+    - year: 2020
+      quarter: 2
+      count: 11946
+    - year: 2020
+      quarter: 3
+      count: 12663
+    - year: 2020
+      quarter: 4
+      count: 13753
+    - year: 2021
+      quarter: 1
+      count: 14686
+    - year: 2021
+      quarter: 2
+      count: 15767
+    - year: 2021
+      quarter: 3
+      count: 16411
+    - year: 2021
+      quarter: 4
+      count: 17571
+    - year: 2022
+      quarter: 1
+      count: 20938
+    - year: 2022
+      quarter: 2
+      count: 22962
+    - year: 2022
+      quarter: 3
+      count: 22815
+    - year: 2022
+      quarter: 4
+      count: 23280
+    - year: 2023
+      quarter: 1
+      count: 24546
+    - year: 2023
+      quarter: 2
+      count: 26021
+    - year: 2023
+      quarter: 3
+      count: 27044
+    - year: 2023
+      quarter: 4
+      count: 28228
+    - year: 2024
+      quarter: 1
+      count: 29765
+    - year: 2024
+      quarter: 2
+      count: 30952
+    - year: 2024
+      quarter: 3
+      count: 32198
+    - year: 2024
+      quarter: 4
+      count: 33624
+data:
+  labels:
+    - MU-AG
+    - MU-BL
+    - MU-CC
+    - MU-FL
+    - MU-GP
+    - MU-MO
+    - MU-PA
+    - MU-PW
+    - MU-PL
+    - MU-RR
+    - MU-RO
+    - MU-SA

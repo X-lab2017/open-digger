@@ -1,0 +1,10 @@
+name: Žirovnica
+type: Division-1
+meta:
+  alpha2: SI-192
+  includes:
+    - žirovnica
+    - si-192
+    - '192'
+    - žirovnica municipality
+  category: MUNICIPALITY

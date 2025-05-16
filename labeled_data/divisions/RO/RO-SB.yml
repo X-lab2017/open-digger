@@ -1,0 +1,11 @@
+name: Sibiu
+type: Division-1
+meta:
+  alpha2: RO-SB
+  includes:
+    - sibiu
+    - ro-sb
+    - sb
+    - sibiu department
+    - județul sibiu
+  category: DEPARTMENT

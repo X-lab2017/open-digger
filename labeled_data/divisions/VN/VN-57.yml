@@ -1,0 +1,11 @@
+name: Bình Dương
+type: Division-1
+meta:
+  alpha2: VN-57
+  includes:
+    - bình dương
+    - vn-57
+    - '57'
+    - bình dương province
+    - binh duong
+  category: PROVINCE

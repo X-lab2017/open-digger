@@ -1,0 +1,10 @@
+name: Muyinga
+type: Division-1
+meta:
+  alpha2: BI-MY
+  includes:
+    - muyinga
+    - bi-my
+    - my
+    - muyinga province
+  category: PROVINCE

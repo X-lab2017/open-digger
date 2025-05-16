@@ -1,0 +1,11 @@
+name: Chubut
+type: Division-1
+meta:
+  alpha2: AR-U
+  includes:
+    - chubut
+    - ar-u
+    - u
+    - chubut province
+    - rn
+  category: PROVINCE

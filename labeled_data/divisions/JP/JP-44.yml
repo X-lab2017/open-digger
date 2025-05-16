@@ -1,0 +1,12 @@
+name: Ôita
+type: Division-1
+meta:
+  alpha2: JP-44
+  includes:
+    - oita
+    - jp-44
+    - '44'
+    - oita prefecture
+    - ôita
+    - ôita prefecture
+  category: PREFECTURE

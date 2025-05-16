@@ -1,0 +1,11 @@
+name: Delčevo
+type: Division-1
+meta:
+  alpha2: MK-203
+  includes:
+    - delčevo
+    - mk-203
+    - '203'
+    - delčevo municipality
+    - municipality of delcevo
+  category: MUNICIPALITY

@@ -1,0 +1,11 @@
+name: Bouira
+type: Division-1
+meta:
+  alpha2: DZ-10
+  includes:
+    - bouira
+    - dz-10
+    - '10'
+    - bouira province
+    - bouïra province
+  category: PROVINCE

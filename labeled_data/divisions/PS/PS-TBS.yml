@@ -1,0 +1,12 @@
+name: Ţūbās
+type: Division-1
+meta:
+  alpha2: PS-TBS
+  includes:
+    - tubas
+    - ps-tbs
+    - tbs
+    - tubas governorate
+    - ţūbās
+    - ţūbās governorate
+  category: GOVERNORATE

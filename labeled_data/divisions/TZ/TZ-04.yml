@@ -1,0 +1,11 @@
+name: Iringa
+type: Division-1
+meta:
+  alpha2: TZ-04
+  includes:
+    - iringa
+    - tz-04
+    - '04'
+    - iringa region
+    - mkoa wa iringa
+  category: REGION

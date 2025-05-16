@@ -1,0 +1,34 @@
+name: Vlaams Gewest
+type: Division-1
+meta:
+  alpha2: BE-VLG
+  includes:
+    - antwerpen
+    - be-van
+    - van
+    - antwerpen province
+    - limburg
+    - be-vli
+    - vli
+    - limburg province
+    - oost-vlaanderen
+    - be-vov
+    - vov
+    - oost-vlaanderen province
+    - vlaams gewest
+    - be-vlg
+    - vlg
+    - vlaams gewest region
+    - vlaams-brabant
+    - be-vbr
+    - vbr
+    - vlaams-brabant province
+    - west-vlaanderen
+    - be-vwv
+    - vwv
+    - west-vlaanderen province
+    - flanders
+    - région flamande
+    - flemish region
+    - meeuwen-gruitrode
+  category: REGION

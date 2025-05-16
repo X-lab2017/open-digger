@@ -1,0 +1,10 @@
+name: Montegiardino
+type: Division-1
+meta:
+  alpha2: SM-08
+  includes:
+    - montegiardino
+    - sm-08
+    - '08'
+    - montegiardino municipality
+  category: MUNICIPALITY

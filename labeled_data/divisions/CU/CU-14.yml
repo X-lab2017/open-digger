@@ -1,0 +1,11 @@
+name: Guantánamo
+type: Division-1
+meta:
+  alpha2: CU-14
+  includes:
+    - guantánamo
+    - cu-14
+    - '14'
+    - guantánamo province
+    - guantanamo
+  category: PROVINCE

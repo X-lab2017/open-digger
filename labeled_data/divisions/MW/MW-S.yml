@@ -1,0 +1,65 @@
+name: Southern Region
+type: Division-1
+meta:
+  alpha2: MW-S
+  includes:
+    - balaka
+    - mw-ba
+    - ba
+    - balaka district
+    - blantyre
+    - mw-bl
+    - bl
+    - blantyre district
+    - chakumwera
+    - mw-s
+    - s
+    - chakumwera region
+    - chikwawa
+    - mw-ck
+    - ck
+    - chikwawa district
+    - chiradzulu
+    - mw-cr
+    - cr
+    - chiradzulu district
+    - machinga
+    - mw-mh
+    - mh
+    - machinga district
+    - mangochi
+    - mw-mg
+    - mg
+    - mangochi district
+    - mulanje
+    - mw-mu
+    - mu
+    - mulanje district
+    - mwanza
+    - mw-mw
+    - mw
+    - mwanza district
+    - neno
+    - mw-ne
+    - ne
+    - neno district
+    - nsanje
+    - mw-ns
+    - ns
+    - nsanje district
+    - phalombe
+    - mw-ph
+    - ph
+    - phalombe district
+    - southern region
+    - southern region region
+    - thyolo
+    - mw-th
+    - th
+    - thyolo district
+    - zomba
+    - mw-zo
+    - zo
+    - zomba district
+    - southern region, malawi
+  category: REGION

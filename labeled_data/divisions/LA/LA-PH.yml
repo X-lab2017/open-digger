@@ -1,0 +1,13 @@
+name: Phôngsali
+type: Division-1
+meta:
+  alpha2: LA-PH
+  includes:
+    - phôngsali
+    - la-ph
+    - ph
+    - phôngsali province
+    - phongsaly
+    - phongsaly province
+    - sk
+  category: PROVINCE

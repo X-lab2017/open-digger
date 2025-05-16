@@ -1,0 +1,10 @@
+name: Novo Selo
+type: Division-1
+meta:
+  alpha2: MK-408
+  includes:
+    - novo selo
+    - mk-408
+    - '408'
+    - novo selo municipality
+  category: MUNICIPALITY

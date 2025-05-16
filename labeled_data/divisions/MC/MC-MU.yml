@@ -1,0 +1,10 @@
+name: Moulins
+type: Division-1
+meta:
+  alpha2: MC-MU
+  includes:
+    - moulins
+    - mc-mu
+    - mu
+    - moulins quarter
+  category: QUARTER

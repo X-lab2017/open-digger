@@ -1,0 +1,10 @@
+name: Zeta
+type: Division-1
+meta:
+  alpha2: ME-25
+  includes:
+    - zeta
+    - me-25
+    - '25'
+    - zeta municipality
+  category: MUNICIPALITY

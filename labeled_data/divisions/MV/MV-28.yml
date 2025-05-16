@@ -1,0 +1,14 @@
+name: South Huvadhu Atoll
+type: Division-1
+meta:
+  alpha2: MV-28
+  includes:
+    - huvadhuatholhu dhekunuburi
+    - mv-28
+    - '28'
+    - huvadhuatholhu dhekunuburi administrative atoll
+    - gaafu dhaalu
+    - gaafu dhaalu administrative atoll
+    - south huvadhu atoll
+    - south huvadhu atoll administrative atoll
+  category: ADMINISTRATIVE ATOLL

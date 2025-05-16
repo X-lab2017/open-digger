@@ -1,0 +1,10 @@
+name: Češinovo-Obleševo
+type: Division-1
+meta:
+  alpha2: MK-210
+  includes:
+    - češinovo-obleševo
+    - mk-210
+    - '210'
+    - češinovo-obleševo municipality
+  category: MUNICIPALITY

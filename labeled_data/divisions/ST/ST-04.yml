@@ -1,0 +1,10 @@
+name: Lembá
+type: Division-1
+meta:
+  alpha2: ST-04
+  includes:
+    - lembá
+    - st-04
+    - '04'
+    - lembá district
+  category: DISTRICT

@@ -1,0 +1,12 @@
+name: Balvu novads
+type: Division-1
+meta:
+  alpha2: LV-015
+  includes:
+    - balvu novads
+    - lv-015
+    - '015'
+    - balvu novads municipality
+    - balvi
+    - balvi municipality
+  category: MUNICIPALITY

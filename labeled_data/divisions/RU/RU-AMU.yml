@@ -1,0 +1,14 @@
+name: Amurskaya oblast'
+type: Division-1
+meta:
+  alpha2: RU-AMU
+  includes:
+    - amurskaja oblast'
+    - ru-amu
+    - amu
+    - amurskaja oblast' administrative region
+    - amurskaya oblast'
+    - amurskaya oblast' administrative region
+    - amur oblast
+    - amur
+  category: ADMINISTRATIVE REGION

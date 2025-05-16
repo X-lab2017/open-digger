@@ -1,0 +1,10 @@
+name: New Hampshire
+type: Division-1
+meta:
+  alpha2: US-NH
+  includes:
+    - new hampshire
+    - us-nh
+    - nh
+    - new hampshire state
+  category: STATE

@@ -1,0 +1,10 @@
+name: Melekeok
+type: Division-1
+meta:
+  alpha2: PW-212
+  includes:
+    - melekeok
+    - pw-212
+    - '212'
+    - melekeok state
+  category: STATE

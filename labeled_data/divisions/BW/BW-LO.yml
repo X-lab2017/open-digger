@@ -1,0 +1,10 @@
+name: Lobatse
+type: Division-1
+meta:
+  alpha2: BW-LO
+  includes:
+    - lobatse
+    - bw-lo
+    - lo
+    - lobatse town
+  category: TOWN

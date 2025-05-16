@@ -1,0 +1,11 @@
+name: Takhār
+type: Division-1
+meta:
+  alpha2: AF-TAK
+  includes:
+    - takhār
+    - af-tak
+    - tak
+    - takhār province
+    - takhar
+  category: PROVINCE

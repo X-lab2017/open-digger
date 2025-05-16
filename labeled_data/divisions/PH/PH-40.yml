@@ -1,0 +1,38 @@
+name: Calabarzon
+type: Division-1
+meta:
+  alpha2: PH-40
+  includes:
+    - batangas
+    - ph-btg
+    - btg
+    - batangas province
+    - calabarzon
+    - ph-40
+    - '40'
+    - calabarzon region
+    - cavite
+    - ph-cav
+    - cav
+    - cavite province
+    - kabite
+    - kabite province
+    - keson
+    - ph-que
+    - que
+    - keson province
+    - laguna
+    - ph-lag
+    - lag
+    - laguna province
+    - quezon
+    - quezon province
+    - rehiyon ng calabarzon
+    - rehiyon ng calabarzon region
+    - risal
+    - ph-riz
+    - riz
+    - risal province
+    - rizal
+    - rizal province
+  category: REGION

@@ -1,0 +1,10 @@
+name: Berlin
+type: Division-1
+meta:
+  alpha2: DE-BE
+  includes:
+    - berlin
+    - de-be
+    - be
+    - berlin land
+  category: LAND

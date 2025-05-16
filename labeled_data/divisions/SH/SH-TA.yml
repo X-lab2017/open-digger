@@ -1,0 +1,10 @@
+name: Tristan da Cunha
+type: Division-1
+meta:
+  alpha2: SH-TA
+  includes:
+    - tristan da cunha
+    - sh-ta
+    - ta
+    - tristan da cunha geographical entity
+  category: GEOGRAPHICAL ENTITY

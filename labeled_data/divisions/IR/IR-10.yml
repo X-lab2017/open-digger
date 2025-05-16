@@ -1,0 +1,11 @@
+name: Eşfahān
+type: Division-1
+meta:
+  alpha2: IR-10
+  includes:
+    - eşfahān
+    - ir-10
+    - '10'
+    - eşfahān province
+    - isfahan province
+  category: PROVINCE

@@ -1,0 +1,10 @@
+name: Szeged
+type: Division-1
+meta:
+  alpha2: HU-SD
+  includes:
+    - szeged
+    - hu-sd
+    - sd
+    - szeged city with county rights
+  category: CITY WITH COUNTY RIGHTS

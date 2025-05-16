@@ -1,0 +1,13 @@
+name: Lubelskie
+type: Division-1
+meta:
+  alpha2: PL-06
+  includes:
+    - lubelskie
+    - pl-06
+    - '06'
+    - lubelskie voivodship
+    - lublin voivodeship
+    - województwo lubelskie
+    - lu
+  category: VOIVODSHIP

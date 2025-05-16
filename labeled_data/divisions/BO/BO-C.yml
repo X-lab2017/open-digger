@@ -1,0 +1,11 @@
+name: Cochabamba
+type: Division-1
+meta:
+  alpha2: BO-C
+  includes:
+    - cochabamba
+    - bo-c
+    - c
+    - cochabamba department
+    - departamento de cochabamba
+  category: DEPARTMENT

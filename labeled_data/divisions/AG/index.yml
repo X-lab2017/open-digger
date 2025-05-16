@@ -1,0 +1,82 @@
+name: Antigua and Barbuda
+type: Division-0
+meta:
+  alpha2: AG
+  includes:
+    - Antigua and Barbuda
+    - AG
+    - '028'
+    - 安提瓜和巴布达
+  name_full: Antigua and Barbuda
+  name_zh: 安提瓜和巴布达
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 553
+    - year: 2020
+      quarter: 2
+      count: 628
+    - year: 2020
+      quarter: 3
+      count: 633
+    - year: 2020
+      quarter: 4
+      count: 662
+    - year: 2021
+      quarter: 1
+      count: 719
+    - year: 2021
+      quarter: 2
+      count: 786
+    - year: 2021
+      quarter: 3
+      count: 830
+    - year: 2021
+      quarter: 4
+      count: 878
+    - year: 2022
+      quarter: 1
+      count: 993
+    - year: 2022
+      quarter: 2
+      count: 1098
+    - year: 2022
+      quarter: 3
+      count: 1162
+    - year: 2022
+      quarter: 4
+      count: 1253
+    - year: 2023
+      quarter: 1
+      count: 1325
+    - year: 2023
+      quarter: 2
+      count: 1366
+    - year: 2023
+      quarter: 3
+      count: 1455
+    - year: 2023
+      quarter: 4
+      count: 1476
+    - year: 2024
+      quarter: 1
+      count: 1558
+    - year: 2024
+      quarter: 2
+      count: 1635
+    - year: 2024
+      quarter: 3
+      count: 1753
+    - year: 2024
+      quarter: 4
+      count: 1837
+data:
+  labels:
+    - AG-10
+    - AG-11
+    - AG-03
+    - AG-04
+    - AG-05
+    - AG-06
+    - AG-07
+    - AG-08

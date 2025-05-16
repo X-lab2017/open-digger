@@ -1,0 +1,10 @@
+name: Cəlilabad
+type: Division-1
+meta:
+  alpha2: AZ-CAL
+  includes:
+    - cəlilabad
+    - az-cal
+    - cal
+    - cəlilabad rayon
+  category: RAYON

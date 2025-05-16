@@ -1,0 +1,10 @@
+name: Vaduz
+type: Division-1
+meta:
+  alpha2: LI-11
+  includes:
+    - vaduz
+    - li-11
+    - '11'
+    - vaduz commune
+  category: COMMUNE

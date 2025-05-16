@@ -1,0 +1,10 @@
+name: Washington
+type: Division-1
+meta:
+  alpha2: US-WA
+  includes:
+    - washington
+    - us-wa
+    - wa
+    - washington state
+  category: STATE

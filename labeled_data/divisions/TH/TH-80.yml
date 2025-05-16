@@ -1,0 +1,10 @@
+name: Nakhon Si Thammarat
+type: Division-1
+meta:
+  alpha2: TH-80
+  includes:
+    - nakhon si thammarat
+    - th-80
+    - '80'
+    - nakhon si thammarat province
+  category: PROVINCE

@@ -1,0 +1,11 @@
+name: Baghlān
+type: Division-1
+meta:
+  alpha2: AF-BGL
+  includes:
+    - baghlān
+    - af-bgl
+    - bgl
+    - baghlān province
+    - baghlan province
+  category: PROVINCE

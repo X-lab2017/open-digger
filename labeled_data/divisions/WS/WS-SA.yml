@@ -1,0 +1,10 @@
+name: Satupa'itea
+type: Division-1
+meta:
+  alpha2: WS-SA
+  includes:
+    - satupa'itea
+    - ws-sa
+    - sa
+    - satupa'itea district
+  category: DISTRICT

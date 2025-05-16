@@ -1,0 +1,10 @@
+name: Iowa
+type: Division-1
+meta:
+  alpha2: US-IA
+  includes:
+    - iowa
+    - us-ia
+    - ia
+    - iowa state
+  category: STATE

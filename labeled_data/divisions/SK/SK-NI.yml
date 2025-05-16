@@ -1,0 +1,11 @@
+name: Nitriansky kraj
+type: Division-1
+meta:
+  alpha2: SK-NI
+  includes:
+    - nitriansky kraj
+    - sk-ni
+    - ni
+    - nitriansky kraj region
+    - nitra region
+  category: REGION

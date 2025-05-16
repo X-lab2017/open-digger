@@ -1,0 +1,12 @@
+name: Wallis
+type: Division-1
+meta:
+  alpha2: CH-VS
+  includes:
+    - valais
+    - ch-vs
+    - vs
+    - valais canton
+    - wallis
+    - wallis canton
+  category: CANTON

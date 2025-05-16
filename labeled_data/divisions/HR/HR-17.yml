@@ -1,0 +1,12 @@
+name: Splitsko-dalmatinska županija
+type: Division-1
+meta:
+  alpha2: HR-17
+  includes:
+    - splitsko-dalmatinska županija
+    - hr-17
+    - '17'
+    - splitsko-dalmatinska županija county
+    - split-dalmatia
+    - split-dalmatia county
+  category: COUNTY

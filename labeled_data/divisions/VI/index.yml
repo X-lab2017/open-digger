@@ -1,0 +1,73 @@
+name: Virgin Islands (U.S.)
+type: Division-0
+meta:
+  alpha2: VI
+  includes:
+    - Virgin Islands (U.S.)
+    - VI
+    - '850'
+    - the Virgin Islands of the United States
+    - 美属维尔京群岛
+  name_full: the Virgin Islands of the United States
+  name_zh: 美属维尔京群岛
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 673
+    - year: 2020
+      quarter: 2
+      count: 812
+    - year: 2020
+      quarter: 3
+      count: 919
+    - year: 2020
+      quarter: 4
+      count: 986
+    - year: 2021
+      quarter: 1
+      count: 1079
+    - year: 2021
+      quarter: 2
+      count: 1166
+    - year: 2021
+      quarter: 3
+      count: 1236
+    - year: 2021
+      quarter: 4
+      count: 1313
+    - year: 2022
+      quarter: 1
+      count: 1417
+    - year: 2022
+      quarter: 2
+      count: 1477
+    - year: 2022
+      quarter: 3
+      count: 1547
+    - year: 2022
+      quarter: 4
+      count: 1603
+    - year: 2023
+      quarter: 1
+      count: 1659
+    - year: 2023
+      quarter: 2
+      count: 1748
+    - year: 2023
+      quarter: 3
+      count: 1822
+    - year: 2023
+      quarter: 4
+      count: 1868
+    - year: 2024
+      quarter: 1
+      count: 1987
+    - year: 2024
+      quarter: 2
+      count: 2062
+    - year: 2024
+      quarter: 3
+      count: 2117
+    - year: 2024
+      quarter: 4
+      count: 2184

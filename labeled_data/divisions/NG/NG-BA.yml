@@ -1,0 +1,10 @@
+name: Bauchi
+type: Division-1
+meta:
+  alpha2: NG-BA
+  includes:
+    - bauchi
+    - ng-ba
+    - ba
+    - bauchi state
+  category: STATE

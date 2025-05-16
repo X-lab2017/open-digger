@@ -1,0 +1,12 @@
+name: Ladig
+type: Division-1
+meta:
+  alpha2: SC-15
+  includes:
+    - la digue
+    - sc-15
+    - '15'
+    - la digue district
+    - ladig
+    - ladig district
+  category: DISTRICT

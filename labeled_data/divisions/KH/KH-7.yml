@@ -1,0 +1,12 @@
+name: Kâmpôt
+type: Division-1
+meta:
+  alpha2: KH-7
+  includes:
+    - kampot
+    - kh-7
+    - '7'
+    - kampot province
+    - kâmpôt
+    - kâmpôt province
+  category: PROVINCE

@@ -1,0 +1,10 @@
+name: Bungoma
+type: Division-1
+meta:
+  alpha2: KE-03
+  includes:
+    - bungoma
+    - ke-03
+    - '03'
+    - bungoma county
+  category: COUNTY

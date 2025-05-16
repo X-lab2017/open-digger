@@ -1,0 +1,13 @@
+name: Yevreyskaya avtonomnaya oblast'
+type: Division-1
+meta:
+  alpha2: RU-YEV
+  includes:
+    - evrejskaja avtonomnaja oblast'
+    - ru-yev
+    - yev
+    - evrejskaja avtonomnaja oblast' autonomous region
+    - yevreyskaya avtonomnaya oblast'
+    - yevreyskaya avtonomnaya oblast' autonomous region
+    - jewish autonomous oblast
+  category: AUTONOMOUS REGION

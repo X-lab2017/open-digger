@@ -1,0 +1,10 @@
+name: Berea
+type: Division-1
+meta:
+  alpha2: LS-D
+  includes:
+    - berea
+    - ls-d
+    - d
+    - berea district
+  category: DISTRICT

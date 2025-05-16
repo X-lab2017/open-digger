@@ -1,0 +1,11 @@
+name: Distrito Federal
+type: Division-1
+meta:
+  alpha2: BR-DF
+  includes:
+    - distrito federal
+    - br-df
+    - df
+    - distrito federal federal district
+    - federal district
+  category: FEDERAL DISTRICT

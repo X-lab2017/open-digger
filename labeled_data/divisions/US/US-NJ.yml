@@ -1,0 +1,10 @@
+name: New Jersey
+type: Division-1
+meta:
+  alpha2: US-NJ
+  includes:
+    - new jersey
+    - us-nj
+    - nj
+    - new jersey state
+  category: STATE

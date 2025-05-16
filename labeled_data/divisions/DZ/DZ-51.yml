@@ -1,0 +1,10 @@
+name: Ouled Djellal
+type: Division-1
+meta:
+  alpha2: DZ-51
+  includes:
+    - ouled djellal
+    - dz-51
+    - '51'
+    - ouled djellal province
+  category: PROVINCE

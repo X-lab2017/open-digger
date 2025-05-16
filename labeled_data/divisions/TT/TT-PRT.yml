@@ -1,0 +1,11 @@
+name: Princes Town
+type: Division-1
+meta:
+  alpha2: TT-PRT
+  includes:
+    - princes town
+    - tt-prt
+    - prt
+    - princes town region
+    - princes town regional corporation
+  category: REGION

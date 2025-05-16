@@ -1,0 +1,10 @@
+name: Puconci
+type: Division-1
+meta:
+  alpha2: SI-097
+  includes:
+    - puconci
+    - si-097
+    - '097'
+    - puconci municipality
+  category: MUNICIPALITY

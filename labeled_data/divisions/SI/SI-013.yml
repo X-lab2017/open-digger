@@ -1,0 +1,10 @@
+name: Cerknica
+type: Division-1
+meta:
+  alpha2: SI-013
+  includes:
+    - cerknica
+    - si-013
+    - '013'
+    - cerknica municipality
+  category: MUNICIPALITY

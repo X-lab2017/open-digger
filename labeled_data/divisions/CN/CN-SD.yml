@@ -1,0 +1,13 @@
+name: Shandong Sheng
+type: Division-1
+meta:
+  alpha2: CN-SD
+  includes:
+    - shandong sheng
+    - cn-sd
+    - sd
+    - shandong sheng province
+    - shan dong sheng
+    - shandong
+    - 山东省
+  category: PROVINCE

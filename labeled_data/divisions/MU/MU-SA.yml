@@ -1,0 +1,10 @@
+name: Savanne
+type: Division-1
+meta:
+  alpha2: MU-SA
+  includes:
+    - savanne
+    - mu-sa
+    - sa
+    - savanne district
+  category: DISTRICT

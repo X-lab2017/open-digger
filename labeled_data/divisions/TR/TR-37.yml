@@ -1,0 +1,10 @@
+name: Kastamonu
+type: Division-1
+meta:
+  alpha2: TR-37
+  includes:
+    - kastamonu
+    - tr-37
+    - '37'
+    - kastamonu province
+  category: PROVINCE

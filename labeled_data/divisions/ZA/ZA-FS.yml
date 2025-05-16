@@ -1,0 +1,26 @@
+name: Freistata
+type: Division-1
+meta:
+  alpha2: ZA-FS
+  includes:
+    - foreisetata
+    - za-fs
+    - fs
+    - foreisetata province
+    - free state
+    - free state province
+    - freistata
+    - freistata province
+    - freyistata
+    - freyistata province
+    - fuleyisitata
+    - fuleyisitata province
+    - freyisitata
+    - freyisitata province
+    - fureisitata
+    - fureisitata province
+    - vrystaat
+    - vrystaat province
+    - ifreyistata
+    - ifreyistata province
+  category: PROVINCE

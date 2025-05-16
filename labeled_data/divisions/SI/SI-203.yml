@@ -1,0 +1,10 @@
+name: Straža
+type: Division-1
+meta:
+  alpha2: SI-203
+  includes:
+    - straža
+    - si-203
+    - '203'
+    - straža municipality
+  category: MUNICIPALITY

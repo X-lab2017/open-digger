@@ -1,0 +1,10 @@
+name: Oslo
+type: Division-1
+meta:
+  alpha2: NO-03
+  includes:
+    - oslo
+    - no-03
+    - '03'
+    - oslo county
+  category: COUNTY

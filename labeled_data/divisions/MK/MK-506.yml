@@ -1,0 +1,10 @@
+name: Mogila
+type: Division-1
+meta:
+  alpha2: MK-506
+  includes:
+    - mogila
+    - mk-506
+    - '506'
+    - mogila municipality
+  category: MUNICIPALITY

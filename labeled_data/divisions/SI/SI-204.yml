@@ -1,0 +1,10 @@
+name: Sveta Trojica v Slovenskih goricah
+type: Division-1
+meta:
+  alpha2: SI-204
+  includes:
+    - sveta trojica v slovenskih goricah
+    - si-204
+    - '204'
+    - sveta trojica v slovenskih goricah municipality
+  category: MUNICIPALITY

@@ -1,0 +1,12 @@
+name: Dar es Salaam
+type: Division-1
+meta:
+  alpha2: TZ-02
+  includes:
+    - dar es salaam
+    - tz-02
+    - '02'
+    - dar es salaam region
+    - dar es salam
+    - salaam
+  category: REGION

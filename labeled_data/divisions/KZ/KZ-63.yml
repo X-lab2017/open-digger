@@ -1,0 +1,15 @@
+name: Vostočno-Kazahstanskaja oblast'
+type: Division-1
+meta:
+  alpha2: KZ-63
+  includes:
+    - shyghys qazaqstan oblysy
+    - kz-63
+    - '63'
+    - shyghys qazaqstan oblysy region
+    - vostochno-kazakhstanskaya oblast'
+    - vostochno-kazakhstanskaya oblast' region
+    - vostočno-kazahstanskaja oblast'
+    - vostočno-kazahstanskaja oblast' region
+    - east kazakhstan region
+  category: REGION

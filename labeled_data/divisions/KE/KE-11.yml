@@ -1,0 +1,10 @@
+name: Kakamega
+type: Division-1
+meta:
+  alpha2: KE-11
+  includes:
+    - kakamega
+    - ke-11
+    - '11'
+    - kakamega county
+  category: COUNTY

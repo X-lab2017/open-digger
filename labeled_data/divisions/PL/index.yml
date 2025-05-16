@@ -1,0 +1,91 @@
+name: Poland
+type: Division-0
+meta:
+  alpha2: PL
+  includes:
+    - Poland
+    - PL
+    - '616'
+    - the Republic of Poland
+    - 波兰
+  name_full: the Republic of Poland
+  name_zh: 波兰
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 531465
+    - year: 2020
+      quarter: 2
+      count: 571515
+    - year: 2020
+      quarter: 3
+      count: 600202
+    - year: 2020
+      quarter: 4
+      count: 645840
+    - year: 2021
+      quarter: 1
+      count: 687888
+    - year: 2021
+      quarter: 2
+      count: 724435
+    - year: 2021
+      quarter: 3
+      count: 756585
+    - year: 2021
+      quarter: 4
+      count: 804421
+    - year: 2022
+      quarter: 1
+      count: 873922
+    - year: 2022
+      quarter: 2
+      count: 935738
+    - year: 2022
+      quarter: 3
+      count: 981895
+    - year: 2022
+      quarter: 4
+      count: 1048914
+    - year: 2023
+      quarter: 1
+      count: 1109622
+    - year: 2023
+      quarter: 2
+      count: 1171106
+    - year: 2023
+      quarter: 3
+      count: 1219463
+    - year: 2023
+      quarter: 4
+      count: 1283028
+    - year: 2024
+      quarter: 1
+      count: 1355588
+    - year: 2024
+      quarter: 2
+      count: 1412356
+    - year: 2024
+      quarter: 3
+      count: 1458937
+    - year: 2024
+      quarter: 4
+      count: 1526119
+data:
+  labels:
+    - PL-02
+    - PL-04
+    - PL-06
+    - PL-08
+    - PL-14
+    - PL-12
+    - PL-16
+    - PL-18
+    - PL-20
+    - PL-22
+    - PL-28
+    - PL-30
+    - PL-32
+    - PL-10
+    - PL-24
+    - PL-26

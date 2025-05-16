@@ -1,0 +1,10 @@
+name: Šentjur
+type: Division-1
+meta:
+  alpha2: SI-120
+  includes:
+    - šentjur
+    - si-120
+    - '120'
+    - šentjur municipality
+  category: MUNICIPALITY

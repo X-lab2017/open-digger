@@ -1,0 +1,11 @@
+name: Roraima
+type: Division-1
+meta:
+  alpha2: BR-RR
+  includes:
+    - roraima
+    - br-rr
+    - rr
+    - roraima state
+    - state of roraima
+  category: STATE

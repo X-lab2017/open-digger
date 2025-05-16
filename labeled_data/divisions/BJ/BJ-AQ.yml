@@ -1,0 +1,10 @@
+name: Atlantique
+type: Division-1
+meta:
+  alpha2: BJ-AQ
+  includes:
+    - atlantique
+    - bj-aq
+    - aq
+    - atlantique department
+  category: DEPARTMENT

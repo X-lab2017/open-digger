@@ -1,0 +1,10 @@
+name: Masvingo
+type: Division-1
+meta:
+  alpha2: ZW-MV
+  includes:
+    - masvingo
+    - zw-mv
+    - mv
+    - masvingo province
+  category: PROVINCE

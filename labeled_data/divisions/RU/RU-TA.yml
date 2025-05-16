@@ -1,0 +1,12 @@
+name: Tatarstan
+type: Division-1
+meta:
+  alpha2: RU-TA
+  includes:
+    - tatarstan
+    - ru-ta
+    - ta
+    - tatarstan republic
+    - respublika tatarstan
+    - republic of tatarstan
+  category: REPUBLIC

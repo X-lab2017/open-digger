@@ -1,0 +1,10 @@
+name: Oti
+type: Division-1
+meta:
+  alpha2: GH-OT
+  includes:
+    - oti
+    - gh-ot
+    - ot
+    - oti region
+  category: REGION

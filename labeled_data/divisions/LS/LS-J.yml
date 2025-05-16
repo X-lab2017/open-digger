@@ -1,0 +1,10 @@
+name: Mokhotlong
+type: Division-1
+meta:
+  alpha2: LS-J
+  includes:
+    - mokhotlong
+    - ls-j
+    - j
+    - mokhotlong district
+  category: DISTRICT

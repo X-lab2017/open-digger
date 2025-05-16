@@ -1,0 +1,10 @@
+name: Dobje
+type: Division-1
+meta:
+  alpha2: SI-154
+  includes:
+    - dobje
+    - si-154
+    - '154'
+    - dobje municipality
+  category: MUNICIPALITY

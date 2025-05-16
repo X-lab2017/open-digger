@@ -1,0 +1,10 @@
+name: Obwalden
+type: Division-1
+meta:
+  alpha2: CH-OW
+  includes:
+    - obwalden
+    - ch-ow
+    - ow
+    - obwalden canton
+  category: CANTON

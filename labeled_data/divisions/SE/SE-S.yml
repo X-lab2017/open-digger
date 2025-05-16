@@ -1,0 +1,11 @@
+name: Värmlands län
+type: Division-1
+meta:
+  alpha2: SE-S
+  includes:
+    - värmlands län
+    - se-s
+    - s
+    - värmlands län county
+    - varmland county
+  category: COUNTY

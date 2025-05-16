@@ -1,0 +1,10 @@
+name: Tlemcen
+type: Division-1
+meta:
+  alpha2: DZ-13
+  includes:
+    - tlemcen
+    - dz-13
+    - '13'
+    - tlemcen province
+  category: PROVINCE

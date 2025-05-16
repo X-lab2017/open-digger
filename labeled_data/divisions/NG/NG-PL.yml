@@ -1,0 +1,10 @@
+name: Plateau
+type: Division-1
+meta:
+  alpha2: NG-PL
+  includes:
+    - plateau
+    - ng-pl
+    - pl
+    - plateau state
+  category: STATE

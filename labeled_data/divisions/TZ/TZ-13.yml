@@ -1,0 +1,10 @@
+name: Mara
+type: Division-1
+meta:
+  alpha2: TZ-13
+  includes:
+    - mara
+    - tz-13
+    - '13'
+    - mara region
+  category: REGION

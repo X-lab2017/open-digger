@@ -1,0 +1,10 @@
+name: Kotor
+type: Division-1
+meta:
+  alpha2: ME-10
+  includes:
+    - kotor
+    - me-10
+    - '10'
+    - kotor municipality
+  category: MUNICIPALITY

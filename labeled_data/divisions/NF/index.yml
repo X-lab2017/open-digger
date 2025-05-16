@@ -1,0 +1,12 @@
+name: Norfolk Island
+type: Division-0
+meta:
+  alpha2: NF
+  includes:
+    - Norfolk Island
+    - NF
+    - '574'
+    - 诺福克岛
+  name_full: Norfolk Island
+  name_zh: 诺福克岛
+  developers: []

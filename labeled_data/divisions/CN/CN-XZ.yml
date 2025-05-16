@@ -1,0 +1,13 @@
+name: Xizang Zizhiqu
+type: Division-1
+meta:
+  alpha2: CN-XZ
+  includes:
+    - xizang zizhiqu
+    - cn-xz
+    - xz
+    - xizang zizhiqu autonomous region
+    - tibet
+    - 西藏
+    - 西藏自治区
+  category: AUTONOMOUS REGION

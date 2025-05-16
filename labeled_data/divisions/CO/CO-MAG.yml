@@ -1,0 +1,10 @@
+name: Magdalena
+type: Division-1
+meta:
+  alpha2: CO-MAG
+  includes:
+    - magdalena
+    - co-mag
+    - mag
+    - magdalena department
+  category: DEPARTMENT

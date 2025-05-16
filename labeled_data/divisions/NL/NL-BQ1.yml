@@ -1,0 +1,10 @@
+name: Bonaire
+type: Division-1
+meta:
+  alpha2: NL-BQ1
+  includes:
+    - bonaire
+    - nl-bq1
+    - bq1
+    - bonaire special municipality
+  category: SPECIAL MUNICIPALITY

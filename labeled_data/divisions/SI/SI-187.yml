@@ -1,0 +1,10 @@
+name: Velika Polana
+type: Division-1
+meta:
+  alpha2: SI-187
+  includes:
+    - velika polana
+    - si-187
+    - '187'
+    - velika polana municipality
+  category: MUNICIPALITY

@@ -1,0 +1,10 @@
+name: Strășeni
+type: Division-1
+meta:
+  alpha2: MD-ST
+  includes:
+    - strășeni
+    - md-st
+    - st
+    - strășeni district
+  category: DISTRICT

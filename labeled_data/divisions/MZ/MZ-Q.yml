@@ -1,0 +1,11 @@
+name: Zambézia
+type: Division-1
+meta:
+  alpha2: MZ-Q
+  includes:
+    - zambézia
+    - mz-q
+    - q
+    - zambézia province
+    - zambezia province
+  category: PROVINCE

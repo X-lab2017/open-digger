@@ -1,0 +1,10 @@
+name: Sukhothai
+type: Division-1
+meta:
+  alpha2: TH-64
+  includes:
+    - sukhothai
+    - th-64
+    - '64'
+    - sukhothai province
+  category: PROVINCE

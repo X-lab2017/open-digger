@@ -1,0 +1,10 @@
+name: South Andros
+type: Division-1
+meta:
+  alpha2: BS-SA
+  includes:
+    - south andros
+    - bs-sa
+    - sa
+    - south andros district
+  category: DISTRICT

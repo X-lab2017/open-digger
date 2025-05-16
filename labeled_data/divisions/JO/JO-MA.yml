@@ -1,0 +1,12 @@
+name: Al Mafraq
+type: Division-1
+meta:
+  alpha2: JO-MA
+  includes:
+    - al mafraq
+    - jo-ma
+    - ma
+    - al mafraq governorate
+    - mafraq
+    - mafraq governorate
+  category: GOVERNORATE

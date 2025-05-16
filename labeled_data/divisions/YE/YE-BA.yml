@@ -1,0 +1,10 @@
+name: Al Bayḑā’
+type: Division-1
+meta:
+  alpha2: YE-BA
+  includes:
+    - al bayḑā’
+    - ye-ba
+    - ba
+    - al bayḑā’ governorate
+  category: GOVERNORATE

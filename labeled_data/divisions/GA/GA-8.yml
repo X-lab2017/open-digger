@@ -1,0 +1,11 @@
+name: Ogooué-Maritime
+type: Division-1
+meta:
+  alpha2: GA-8
+  includes:
+    - ogooué-maritime
+    - ga-8
+    - '8'
+    - ogooué-maritime province
+    - ogooue-maritime
+  category: PROVINCE

@@ -1,0 +1,10 @@
+name: Bay
+type: Division-1
+meta:
+  alpha2: SO-BY
+  includes:
+    - bay
+    - so-by
+    - by
+    - bay region
+  category: REGION

@@ -1,0 +1,10 @@
+name: Potaro-Siparuni
+type: Division-1
+meta:
+  alpha2: GY-PT
+  includes:
+    - potaro-siparuni
+    - gy-pt
+    - pt
+    - potaro-siparuni region
+  category: REGION

@@ -1,0 +1,11 @@
+name: Udon Thani
+type: Division-1
+meta:
+  alpha2: TH-41
+  includes:
+    - udon thani
+    - th-41
+    - '41'
+    - udon thani province
+    - chang wat udon thani
+  category: PROVINCE

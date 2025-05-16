@@ -1,0 +1,10 @@
+name: Şuşa
+type: Division-1
+meta:
+  alpha2: AZ-SUS
+  includes:
+    - şuşa
+    - az-sus
+    - sus
+    - şuşa rayon
+  category: RAYON

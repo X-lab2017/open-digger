@@ -1,0 +1,11 @@
+name: Lạng Sơn
+type: Division-1
+meta:
+  alpha2: VN-09
+  includes:
+    - lạng sơn
+    - vn-09
+    - '09'
+    - lạng sơn province
+    - lang son
+  category: PROVINCE

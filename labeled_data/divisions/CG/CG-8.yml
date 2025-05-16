@@ -1,0 +1,10 @@
+name: Cuvette
+type: Division-1
+meta:
+  alpha2: CG-8
+  includes:
+    - cuvette
+    - cg-8
+    - '8'
+    - cuvette department
+  category: DEPARTMENT

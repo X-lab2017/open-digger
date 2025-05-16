@@ -1,0 +1,10 @@
+name: Qobustan
+type: Division-1
+meta:
+  alpha2: AZ-QOB
+  includes:
+    - qobustan
+    - az-qob
+    - qob
+    - qobustan rayon
+  category: RAYON

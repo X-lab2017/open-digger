@@ -1,0 +1,12 @@
+name: Isikawa
+type: Division-1
+meta:
+  alpha2: JP-17
+  includes:
+    - ishikawa
+    - jp-17
+    - '17'
+    - ishikawa prefecture
+    - isikawa
+    - isikawa prefecture
+  category: PREFECTURE

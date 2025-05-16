@@ -1,0 +1,10 @@
+name: Corozal
+type: Division-1
+meta:
+  alpha2: BZ-CZL
+  includes:
+    - corozal
+    - bz-czl
+    - czl
+    - corozal district
+  category: DISTRICT

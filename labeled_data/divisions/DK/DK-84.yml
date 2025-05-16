@@ -1,0 +1,11 @@
+name: Hovedstaden
+type: Division-1
+meta:
+  alpha2: DK-84
+  includes:
+    - hovedstaden
+    - dk-84
+    - '84'
+    - hovedstaden region
+    - capital region of denmark
+  category: REGION

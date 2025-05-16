@@ -1,0 +1,10 @@
+name: Escuintla
+type: Division-1
+meta:
+  alpha2: GT-05
+  includes:
+    - escuintla
+    - gt-05
+    - '05'
+    - escuintla department
+  category: DEPARTMENT

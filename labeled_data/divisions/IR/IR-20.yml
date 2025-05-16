@@ -1,0 +1,11 @@
+name: Semnān
+type: Division-1
+meta:
+  alpha2: IR-20
+  includes:
+    - semnān
+    - ir-20
+    - '20'
+    - semnān province
+    - semnan province
+  category: PROVINCE

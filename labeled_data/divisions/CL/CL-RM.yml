@@ -1,0 +1,13 @@
+name: Región Metropolitana de Santiago
+type: Division-1
+meta:
+  alpha2: CL-RM
+  includes:
+    - región metropolitana de santiago
+    - cl-rm
+    - rm
+    - región metropolitana de santiago region
+    - santiago metropolitan region
+    - región metropolitana
+    - xvi
+  category: REGION

@@ -1,0 +1,10 @@
+name: Mandera
+type: Division-1
+meta:
+  alpha2: KE-24
+  includes:
+    - mandera
+    - ke-24
+    - '24'
+    - mandera county
+  category: COUNTY

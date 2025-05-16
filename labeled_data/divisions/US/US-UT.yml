@@ -1,0 +1,10 @@
+name: Utah
+type: Division-1
+meta:
+  alpha2: US-UT
+  includes:
+    - utah
+    - us-ut
+    - ut
+    - utah state
+  category: STATE

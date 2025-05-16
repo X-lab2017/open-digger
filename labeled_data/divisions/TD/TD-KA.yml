@@ -1,0 +1,12 @@
+name: Kānim
+type: Division-1
+meta:
+  alpha2: TD-KA
+  includes:
+    - kanem
+    - td-ka
+    - ka
+    - kanem province
+    - kānim
+    - kānim province
+  category: PROVINCE

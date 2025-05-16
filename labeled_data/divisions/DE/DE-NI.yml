@@ -1,0 +1,11 @@
+name: Niedersachsen
+type: Division-1
+meta:
+  alpha2: DE-NI
+  includes:
+    - niedersachsen
+    - de-ni
+    - ni
+    - niedersachsen land
+    - lower saxony
+  category: LAND

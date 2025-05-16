@@ -1,0 +1,10 @@
+name: Santarém
+type: Division-1
+meta:
+  alpha2: PT-14
+  includes:
+    - santarém
+    - pt-14
+    - '14'
+    - santarém district
+  category: DISTRICT

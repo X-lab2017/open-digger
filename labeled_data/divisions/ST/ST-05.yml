@@ -1,0 +1,10 @@
+name: Lobata
+type: Division-1
+meta:
+  alpha2: ST-05
+  includes:
+    - lobata
+    - st-05
+    - '05'
+    - lobata district
+  category: DISTRICT

@@ -1,0 +1,10 @@
+name: Vaisigano
+type: Division-1
+meta:
+  alpha2: WS-VS
+  includes:
+    - vaisigano
+    - ws-vs
+    - vs
+    - vaisigano district
+  category: DISTRICT

@@ -1,0 +1,11 @@
+name: Quba
+type: Division-1
+meta:
+  alpha2: AZ-QBA
+  includes:
+    - quba
+    - az-qba
+    - qba
+    - quba rayon
+    - quba-khachmaz
+  category: RAYON

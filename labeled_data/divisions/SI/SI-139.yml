@@ -1,0 +1,10 @@
+name: Vojnik
+type: Division-1
+meta:
+  alpha2: SI-139
+  includes:
+    - vojnik
+    - si-139
+    - '139'
+    - vojnik municipality
+  category: MUNICIPALITY

@@ -1,0 +1,12 @@
+name: Mont Buxton
+type: Division-1
+meta:
+  alpha2: SC-17
+  includes:
+    - mon bikston
+    - sc-17
+    - '17'
+    - mon bikston district
+    - mont buxton
+    - mont buxton district
+  category: DISTRICT

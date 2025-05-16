@@ -1,0 +1,10 @@
+name: Aileu
+type: Division-1
+meta:
+  alpha2: TL-AL
+  includes:
+    - aileu
+    - tl-al
+    - al
+    - aileu municipality
+  category: MUNICIPALITY

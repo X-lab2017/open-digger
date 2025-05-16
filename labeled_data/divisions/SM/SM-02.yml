@@ -1,0 +1,10 @@
+name: Chiesanuova
+type: Division-1
+meta:
+  alpha2: SM-02
+  includes:
+    - chiesanuova
+    - sm-02
+    - '02'
+    - chiesanuova municipality
+  category: MUNICIPALITY

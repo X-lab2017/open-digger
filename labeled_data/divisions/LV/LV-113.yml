@@ -1,0 +1,12 @@
+name: Valmieras Novads
+type: Division-1
+meta:
+  alpha2: LV-113
+  includes:
+    - valmieras novads
+    - lv-113
+    - '113'
+    - valmieras novads municipality
+    - valmiera
+    - valmiera municipality
+  category: MUNICIPALITY

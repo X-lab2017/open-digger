@@ -1,0 +1,12 @@
+name: Jēkabpils novads
+type: Division-1
+meta:
+  alpha2: LV-042
+  includes:
+    - jēkabpils novads
+    - lv-042
+    - '042'
+    - jēkabpils novads municipality
+    - jēkabpils
+    - jēkabpils municipality
+  category: MUNICIPALITY

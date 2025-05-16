@@ -1,0 +1,11 @@
+name: Kirkūk
+type: Division-1
+meta:
+  alpha2: IQ-KI
+  includes:
+    - kirkūk
+    - iq-ki
+    - ki
+    - kirkūk governorate
+    - kirkuk governorate
+  category: GOVERNORATE

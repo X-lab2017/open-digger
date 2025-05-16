@@ -1,0 +1,11 @@
+name: Heredia
+type: Division-1
+meta:
+  alpha2: CR-H
+  includes:
+    - heredia
+    - cr-h
+    - h
+    - heredia province
+    - he
+  category: PROVINCE

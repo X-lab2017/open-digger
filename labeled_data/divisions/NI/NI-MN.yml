@@ -1,0 +1,11 @@
+name: Managua
+type: Division-1
+meta:
+  alpha2: NI-MN
+  includes:
+    - managua
+    - ni-mn
+    - mn
+    - managua department
+    - cd
+  category: DEPARTMENT

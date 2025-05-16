@@ -1,0 +1,10 @@
+name: Katavi
+type: Division-1
+meta:
+  alpha2: TZ-28
+  includes:
+    - katavi
+    - tz-28
+    - '28'
+    - katavi region
+  category: REGION

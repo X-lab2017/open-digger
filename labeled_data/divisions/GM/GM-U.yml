@@ -1,0 +1,10 @@
+name: Upper River
+type: Division-1
+meta:
+  alpha2: GM-U
+  includes:
+    - upper river
+    - gm-u
+    - u
+    - upper river division
+  category: DIVISION

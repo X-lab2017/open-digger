@@ -1,0 +1,14 @@
+name: Toliara
+type: Division-1
+meta:
+  alpha2: MG-U
+  includes:
+    - toliara
+    - mg-u
+    - u
+    - toliara province
+    - atsimo-andrefina
+    - anosy
+    - androy
+    - atsimo-andrefana
+  category: PROVINCE

@@ -1,0 +1,11 @@
+name: Negeri Sembilan
+type: Division-1
+meta:
+  alpha2: MY-05
+  includes:
+    - negeri sembilan
+    - my-05
+    - '05'
+    - negeri sembilan state
+    - negri sembilan
+  category: STATE

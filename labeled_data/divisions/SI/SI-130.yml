@@ -1,0 +1,10 @@
+name: Trebnje
+type: Division-1
+meta:
+  alpha2: SI-130
+  includes:
+    - trebnje
+    - si-130
+    - '130'
+    - trebnje municipality
+  category: MUNICIPALITY

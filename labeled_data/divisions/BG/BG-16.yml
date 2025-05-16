@@ -1,0 +1,11 @@
+name: Plovdiv
+type: Division-1
+meta:
+  alpha2: BG-16
+  includes:
+    - plovdiv
+    - bg-16
+    - '16'
+    - plovdiv district
+    - plovdiv province
+  category: DISTRICT

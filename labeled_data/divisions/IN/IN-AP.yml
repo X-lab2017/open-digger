@@ -1,0 +1,10 @@
+name: Andhra Pradesh
+type: Division-1
+meta:
+  alpha2: IN-AP
+  includes:
+    - andhra pradesh
+    - in-ap
+    - ap
+    - andhra pradesh state
+  category: STATE

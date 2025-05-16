@@ -1,0 +1,11 @@
+name: Điện Biên
+type: Division-1
+meta:
+  alpha2: VN-71
+  includes:
+    - điện biên
+    - vn-71
+    - '71'
+    - điện biên province
+    - dien bien
+  category: PROVINCE

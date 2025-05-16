@@ -1,0 +1,10 @@
+name: Agadez
+type: Division-1
+meta:
+  alpha2: NE-1
+  includes:
+    - agadez
+    - ne-1
+    - '1'
+    - agadez region
+  category: REGION

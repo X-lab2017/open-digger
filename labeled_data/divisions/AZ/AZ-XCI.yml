@@ -1,0 +1,10 @@
+name: Xocalı
+type: Division-1
+meta:
+  alpha2: AZ-XCI
+  includes:
+    - xocalı
+    - az-xci
+    - xci
+    - xocalı rayon
+  category: RAYON

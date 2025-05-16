@@ -1,0 +1,11 @@
+name: Los Ríos
+type: Division-1
+meta:
+  alpha2: EC-R
+  includes:
+    - los ríos
+    - ec-r
+    - r
+    - los ríos province
+    - los rios
+  category: PROVINCE

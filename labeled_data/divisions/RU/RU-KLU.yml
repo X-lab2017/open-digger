@@ -1,0 +1,14 @@
+name: Kalužskaja oblast'
+type: Division-1
+meta:
+  alpha2: RU-KLU
+  includes:
+    - kaluzhskaya oblast'
+    - ru-klu
+    - klu
+    - kaluzhskaya oblast' administrative region
+    - kalužskaja oblast'
+    - kalužskaja oblast' administrative region
+    - kaluga oblast
+    - kaluga
+  category: ADMINISTRATIVE REGION

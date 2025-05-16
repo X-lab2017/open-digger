@@ -1,0 +1,10 @@
+name: Kgatleng
+type: Division-1
+meta:
+  alpha2: BW-KL
+  includes:
+    - kgatleng
+    - bw-kl
+    - kl
+    - kgatleng district
+  category: DISTRICT

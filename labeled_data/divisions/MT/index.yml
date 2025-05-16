@@ -1,0 +1,143 @@
+name: Malta
+type: Division-0
+meta:
+  alpha2: MT
+  includes:
+    - Malta
+    - MT
+    - '470'
+    - the Republic of Malta
+    - 马耳他
+  name_full: the Republic of Malta
+  name_zh: 马耳他
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 12791
+    - year: 2020
+      quarter: 2
+      count: 13594
+    - year: 2020
+      quarter: 3
+      count: 14242
+    - year: 2020
+      quarter: 4
+      count: 15210
+    - year: 2021
+      quarter: 1
+      count: 16034
+    - year: 2021
+      quarter: 2
+      count: 16874
+    - year: 2021
+      quarter: 3
+      count: 17532
+    - year: 2021
+      quarter: 4
+      count: 18402
+    - year: 2022
+      quarter: 1
+      count: 19682
+    - year: 2022
+      quarter: 2
+      count: 20993
+    - year: 2022
+      quarter: 3
+      count: 21820
+    - year: 2022
+      quarter: 4
+      count: 22996
+    - year: 2023
+      quarter: 1
+      count: 24084
+    - year: 2023
+      quarter: 2
+      count: 25615
+    - year: 2023
+      quarter: 3
+      count: 26551
+    - year: 2023
+      quarter: 4
+      count: 27912
+    - year: 2024
+      quarter: 1
+      count: 29282
+    - year: 2024
+      quarter: 2
+      count: 30118
+    - year: 2024
+      quarter: 3
+      count: 31172
+    - year: 2024
+      quarter: 4
+      count: 32707
+data:
+  labels:
+    - MT-01
+    - MT-02
+    - MT-03
+    - MT-04
+    - MT-05
+    - MT-06
+    - MT-07
+    - MT-08
+    - MT-09
+    - MT-10
+    - MT-11
+    - MT-13
+    - MT-14
+    - MT-15
+    - MT-16
+    - MT-17
+    - MT-12
+    - MT-19
+    - MT-20
+    - MT-21
+    - MT-22
+    - MT-23
+    - MT-24
+    - MT-25
+    - MT-26
+    - MT-27
+    - MT-28
+    - MT-29
+    - MT-30
+    - MT-32
+    - MT-33
+    - MT-34
+    - MT-35
+    - MT-36
+    - MT-31
+    - MT-37
+    - MT-38
+    - MT-39
+    - MT-40
+    - MT-41
+    - MT-42
+    - MT-43
+    - MT-44
+    - MT-45
+    - MT-46
+    - MT-47
+    - MT-49
+    - MT-48
+    - MT-50
+    - MT-53
+    - MT-51
+    - MT-52
+    - MT-54
+    - MT-55
+    - MT-56
+    - MT-57
+    - MT-58
+    - MT-59
+    - MT-60
+    - MT-61
+    - MT-62
+    - MT-63
+    - MT-18
+    - MT-64
+    - MT-65
+    - MT-66
+    - MT-67
+    - MT-68

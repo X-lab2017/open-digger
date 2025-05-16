@@ -1,0 +1,105 @@
+name: France
+type: Division-0
+meta:
+  alpha2: FR
+  includes:
+    - France
+    - FR
+    - '250'
+    - the French Republic
+    - 法国
+    - Reunion
+  name_full: the French Republic
+  name_zh: 法国
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 1067323
+    - year: 2020
+      quarter: 2
+      count: 1154301
+    - year: 2020
+      quarter: 3
+      count: 1217848
+    - year: 2020
+      quarter: 4
+      count: 1310873
+    - year: 2021
+      quarter: 1
+      count: 1400063
+    - year: 2021
+      quarter: 2
+      count: 1475345
+    - year: 2021
+      quarter: 3
+      count: 1540101
+    - year: 2021
+      quarter: 4
+      count: 1630862
+    - year: 2022
+      quarter: 1
+      count: 1760940
+    - year: 2022
+      quarter: 2
+      count: 1860335
+    - year: 2022
+      quarter: 3
+      count: 1936463
+    - year: 2022
+      quarter: 4
+      count: 2037520
+    - year: 2023
+      quarter: 1
+      count: 2156516
+    - year: 2023
+      quarter: 2
+      count: 2271129
+    - year: 2023
+      quarter: 3
+      count: 2372522
+    - year: 2023
+      quarter: 4
+      count: 2501700
+    - year: 2024
+      quarter: 1
+      count: 2644936
+    - year: 2024
+      quarter: 2
+      count: 2730260
+    - year: 2024
+      quarter: 3
+      count: 2837148
+    - year: 2024
+      quarter: 4
+      count: 2978496
+data:
+  labels:
+    - FR-ARA
+    - FR-HDF
+    - FR-PAC
+    - FR-GES
+    - FR-OCC
+    - FR-BFC
+    - FR-BRE
+    - FR-NOR
+    - FR-CVL
+    - FR-NAQ
+    - FR-CP
+    - FR-20R
+    - FR-IDF
+    - FR-971
+    - FR-973
+    - FR-974
+    - FR-PDL
+    - FR-972
+    - FR-976
+    - FR-NC
+    - FR-PF
+    - FR-BL
+    - FR-MF
+    - FR-PM
+    - FR-TF
+    - FR-WF
+    - ':companies/material_ui_sas'
+    - ':companies/matra_datavision'
+    - ':companies/sensiolabs'

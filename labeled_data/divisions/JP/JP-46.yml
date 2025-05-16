@@ -1,0 +1,12 @@
+name: Kagosima
+type: Division-1
+meta:
+  alpha2: JP-46
+  includes:
+    - kagoshima
+    - jp-46
+    - '46'
+    - kagoshima prefecture
+    - kagosima
+    - kagosima prefecture
+  category: PREFECTURE

@@ -1,0 +1,81 @@
+name: Cyprus
+type: Division-0
+meta:
+  alpha2: CY
+  includes:
+    - Cyprus
+    - CY
+    - '196'
+    - the Republic of Cyprus
+    - 塞浦路斯
+  name_full: the Republic of Cyprus
+  name_zh: 塞浦路斯
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 14138
+    - year: 2020
+      quarter: 2
+      count: 15712
+    - year: 2020
+      quarter: 3
+      count: 17220
+    - year: 2020
+      quarter: 4
+      count: 18400
+    - year: 2021
+      quarter: 1
+      count: 20433
+    - year: 2021
+      quarter: 2
+      count: 22079
+    - year: 2021
+      quarter: 3
+      count: 23605
+    - year: 2021
+      quarter: 4
+      count: 25812
+    - year: 2022
+      quarter: 1
+      count: 28252
+    - year: 2022
+      quarter: 2
+      count: 31513
+    - year: 2022
+      quarter: 3
+      count: 34352
+    - year: 2022
+      quarter: 4
+      count: 37993
+    - year: 2023
+      quarter: 1
+      count: 41519
+    - year: 2023
+      quarter: 2
+      count: 45295
+    - year: 2023
+      quarter: 3
+      count: 48129
+    - year: 2023
+      quarter: 4
+      count: 51267
+    - year: 2024
+      quarter: 1
+      count: 54607
+    - year: 2024
+      quarter: 2
+      count: 57164
+    - year: 2024
+      quarter: 3
+      count: 58796
+    - year: 2024
+      quarter: 4
+      count: 63808
+data:
+  labels:
+    - CY-04
+    - CY-05
+    - CY-06
+    - CY-03
+    - CY-01
+    - CY-02

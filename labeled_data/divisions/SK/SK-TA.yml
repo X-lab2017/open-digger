@@ -1,0 +1,11 @@
+name: Trnavský kraj
+type: Division-1
+meta:
+  alpha2: SK-TA
+  includes:
+    - trnavský kraj
+    - sk-ta
+    - ta
+    - trnavský kraj region
+    - trnava region
+  category: REGION

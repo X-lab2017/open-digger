@@ -1,0 +1,10 @@
+name: Velenje
+type: Division-1
+meta:
+  alpha2: SI-133
+  includes:
+    - velenje
+    - si-133
+    - '133'
+    - velenje urban municipality
+  category: URBAN MUNICIPALITY

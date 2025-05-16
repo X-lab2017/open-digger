@@ -1,0 +1,10 @@
+name: Videm
+type: Division-1
+meta:
+  alpha2: SI-135
+  includes:
+    - videm
+    - si-135
+    - '135'
+    - videm municipality
+  category: MUNICIPALITY

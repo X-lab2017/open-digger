@@ -1,0 +1,23 @@
+name: Kwazulu-Natal
+type: Division-1
+meta:
+  alpha2: ZA-KZN
+  includes:
+    - gazulu-natala
+    - za-kzn
+    - kzn
+    - gazulu-natala province
+    - hazulu-natal
+    - hazulu-natal province
+    - hazolo-natala
+    - hazolo-natala province
+    - kwazulu-natal
+    - kwazulu-natal province
+    - kwazulu-natala
+    - kwazulu-natala province
+    - kwazulu-natali
+    - kwazulu-natali province
+    - ikwazulu-natal
+    - ikwazulu-natal province
+    - nl
+  category: PROVINCE

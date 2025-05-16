@@ -1,0 +1,17 @@
+name: El Callao
+type: Division-1
+meta:
+  alpha2: PE-CAL
+  includes:
+    - el callao
+    - pe-cal
+    - cal
+    - el callao region
+    - kallao
+    - kallao region
+    - qallaw
+    - qallaw region
+    - callao
+    - constitutional province of callao
+    - callao region
+  category: REGION

@@ -1,0 +1,10 @@
+name: Nyandarua
+type: Division-1
+meta:
+  alpha2: KE-35
+  includes:
+    - nyandarua
+    - ke-35
+    - '35'
+    - nyandarua county
+  category: COUNTY

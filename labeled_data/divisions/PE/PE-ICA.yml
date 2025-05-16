@@ -1,0 +1,11 @@
+name: Ica
+type: Division-1
+meta:
+  alpha2: PE-ICA
+  includes:
+    - ica
+    - pe-ica
+    - ica region
+    - ika
+    - ika region
+  category: REGION

@@ -1,0 +1,23 @@
+name: Hauts-Bassins
+type: Division-1
+meta:
+  alpha2: BF-09
+  includes:
+    - hauts-bassins
+    - bf-09
+    - '09'
+    - hauts-bassins region
+    - houet
+    - bf-hou
+    - hou
+    - houet province
+    - kénédougou
+    - bf-ken
+    - ken
+    - kénédougou province
+    - tuy
+    - bf-tui
+    - tui
+    - tuy province
+    - upper-basins
+  category: REGION

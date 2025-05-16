@@ -1,0 +1,11 @@
+name: Vaud
+type: Division-1
+meta:
+  alpha2: CH-VD
+  includes:
+    - vaud
+    - ch-vd
+    - vd
+    - vaud canton
+    - waadt
+  category: CANTON

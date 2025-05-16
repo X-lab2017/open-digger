@@ -1,0 +1,10 @@
+name: Alborz
+type: Division-1
+meta:
+  alpha2: IR-30
+  includes:
+    - alborz
+    - ir-30
+    - '30'
+    - alborz province
+  category: PROVINCE

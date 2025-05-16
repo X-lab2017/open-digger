@@ -1,0 +1,76 @@
+name: Guinea-Bissau
+type: Division-0
+meta:
+  alpha2: GW
+  includes:
+    - Guinea-Bissau
+    - GW
+    - '624'
+    - the Republic of Guinea-Bissau
+    - 几内亚比绍
+  name_full: the Republic of Guinea-Bissau
+  name_zh: 几内亚比绍
+  developers:
+    - year: 2020
+      quarter: 2
+      count: 106
+    - year: 2020
+      quarter: 3
+      count: 118
+    - year: 2020
+      quarter: 4
+      count: 134
+    - year: 2021
+      quarter: 1
+      count: 156
+    - year: 2021
+      quarter: 2
+      count: 165
+    - year: 2021
+      quarter: 3
+      count: 185
+    - year: 2021
+      quarter: 4
+      count: 201
+    - year: 2022
+      quarter: 1
+      count: 210
+    - year: 2022
+      quarter: 2
+      count: 213
+    - year: 2022
+      quarter: 3
+      count: 223
+    - year: 2022
+      quarter: 4
+      count: 233
+    - year: 2023
+      quarter: 1
+      count: 289
+    - year: 2023
+      quarter: 2
+      count: 343
+    - year: 2023
+      quarter: 3
+      count: 397
+    - year: 2023
+      quarter: 4
+      count: 433
+    - year: 2024
+      quarter: 1
+      count: 489
+    - year: 2024
+      quarter: 2
+      count: 532
+    - year: 2024
+      quarter: 3
+      count: 593
+    - year: 2024
+      quarter: 4
+      count: 635
+data:
+  labels:
+    - GW-L
+    - GW-N
+    - GW-BS
+    - GW-S

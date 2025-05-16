@@ -1,0 +1,10 @@
+name: Tahoua
+type: Division-1
+meta:
+  alpha2: NE-5
+  includes:
+    - tahoua
+    - ne-5
+    - '5'
+    - tahoua region
+  category: REGION

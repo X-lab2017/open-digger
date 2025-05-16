@@ -1,0 +1,10 @@
+name: Kosrae
+type: Division-1
+meta:
+  alpha2: FM-KSA
+  includes:
+    - kosrae
+    - fm-ksa
+    - ksa
+    - kosrae state
+  category: STATE

@@ -1,0 +1,10 @@
+name: Celje
+type: Division-1
+meta:
+  alpha2: SI-011
+  includes:
+    - celje
+    - si-011
+    - '011'
+    - celje urban municipality
+  category: URBAN MUNICIPALITY

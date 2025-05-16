@@ -1,0 +1,11 @@
+name: San Juan
+type: Division-1
+meta:
+  alpha2: AR-J
+  includes:
+    - san juan
+    - ar-j
+    - j
+    - san juan province
+    - sj
+  category: PROVINCE

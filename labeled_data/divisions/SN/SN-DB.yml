@@ -1,0 +1,11 @@
+name: Diourbel
+type: Division-1
+meta:
+  alpha2: SN-DB
+  includes:
+    - diourbel
+    - sn-db
+    - db
+    - diourbel region
+    - région de diourbel
+  category: REGION

@@ -1,0 +1,10 @@
+name: Montana
+type: Division-1
+meta:
+  alpha2: US-MT
+  includes:
+    - montana
+    - us-mt
+    - mt
+    - montana state
+  category: STATE

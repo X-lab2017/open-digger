@@ -1,0 +1,11 @@
+name: León
+type: Division-1
+meta:
+  alpha2: NI-LE
+  includes:
+    - león
+    - ni-le
+    - le
+    - león department
+    - leon
+  category: DEPARTMENT

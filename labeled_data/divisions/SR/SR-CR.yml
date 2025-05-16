@@ -1,0 +1,10 @@
+name: Coronie
+type: Division-1
+meta:
+  alpha2: SR-CR
+  includes:
+    - coronie
+    - sr-cr
+    - cr
+    - coronie district
+  category: DISTRICT

@@ -1,0 +1,10 @@
+name: Apače
+type: Division-1
+meta:
+  alpha2: SI-195
+  includes:
+    - apače
+    - si-195
+    - '195'
+    - apače municipality
+  category: MUNICIPALITY

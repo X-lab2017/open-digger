@@ -1,0 +1,10 @@
+name: Kaduna
+type: Division-1
+meta:
+  alpha2: NG-KD
+  includes:
+    - kaduna
+    - ng-kd
+    - kd
+    - kaduna state
+  category: STATE

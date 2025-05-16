@@ -1,0 +1,10 @@
+name: Karuzi
+type: Division-1
+meta:
+  alpha2: BI-KR
+  includes:
+    - karuzi
+    - bi-kr
+    - kr
+    - karuzi province
+  category: PROVINCE

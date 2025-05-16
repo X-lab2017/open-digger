@@ -1,0 +1,36 @@
+name: Puglia
+type: Division-1
+meta:
+  alpha2: IT-75
+  includes:
+    - bari
+    - it-ba
+    - ba
+    - bari metropolitan city
+    - barletta-andria-trani
+    - it-bt
+    - bt
+    - barletta-andria-trani province
+    - brindisi
+    - it-br
+    - br
+    - brindisi province
+    - foggia
+    - it-fg
+    - fg
+    - foggia province
+    - lecce
+    - it-le
+    - le
+    - lecce province
+    - puglia
+    - it-75
+    - '75'
+    - puglia region
+    - taranto
+    - it-ta
+    - ta
+    - taranto province
+    - apulia
+    - pugl.
+  category: REGION

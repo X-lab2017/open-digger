@@ -1,0 +1,10 @@
+name: Rožaje
+type: Division-1
+meta:
+  alpha2: ME-17
+  includes:
+    - rožaje
+    - me-17
+    - '17'
+    - rožaje municipality
+  category: MUNICIPALITY

@@ -1,0 +1,19 @@
+name: Corse
+type: Division-1
+meta:
+  alpha2: FR-20R
+  includes:
+    - corse
+    - fr-20r
+    - 20r
+    - corse metropolitan collectivity with special status
+    - corse-du-sud
+    - fr-2a
+    - 2a
+    - corse-du-sud metropolitan department
+    - haute-corse
+    - fr-2b
+    - 2b
+    - haute-corse metropolitan department
+    - corsica
+  category: METROPOLITAN COLLECTIVITY WITH SPECIAL STATUS

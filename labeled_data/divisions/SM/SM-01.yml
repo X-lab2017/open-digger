@@ -1,0 +1,10 @@
+name: Acquaviva
+type: Division-1
+meta:
+  alpha2: SM-01
+  includes:
+    - acquaviva
+    - sm-01
+    - '01'
+    - acquaviva municipality
+  category: MUNICIPALITY

@@ -1,0 +1,10 @@
+name: Cibitoke
+type: Division-1
+meta:
+  alpha2: BI-CI
+  includes:
+    - cibitoke
+    - bi-ci
+    - ci
+    - cibitoke province
+  category: PROVINCE

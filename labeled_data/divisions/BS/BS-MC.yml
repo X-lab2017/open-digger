@@ -1,0 +1,10 @@
+name: Mangrove Cay
+type: Division-1
+meta:
+  alpha2: BS-MC
+  includes:
+    - mangrove cay
+    - bs-mc
+    - mc
+    - mangrove cay district
+  category: DISTRICT

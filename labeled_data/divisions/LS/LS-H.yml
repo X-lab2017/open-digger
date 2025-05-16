@@ -1,0 +1,10 @@
+name: Qacha's Nek
+type: Division-1
+meta:
+  alpha2: LS-H
+  includes:
+    - qacha's nek
+    - ls-h
+    - h
+    - qacha's nek district
+  category: DISTRICT

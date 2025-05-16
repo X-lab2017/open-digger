@@ -1,0 +1,102 @@
+name: Switzerland
+type: Division-0
+meta:
+  alpha2: CH
+  includes:
+    - Switzerland
+    - CH
+    - '756'
+    - the Swiss Confederation
+    - 瑞士
+  name_full: the Swiss Confederation
+  name_zh: 瑞士
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 218096
+    - year: 2020
+      quarter: 2
+      count: 232183
+    - year: 2020
+      quarter: 3
+      count: 245643
+    - year: 2020
+      quarter: 4
+      count: 261426
+    - year: 2021
+      quarter: 1
+      count: 276209
+    - year: 2021
+      quarter: 2
+      count: 290158
+    - year: 2021
+      quarter: 3
+      count: 303277
+    - year: 2021
+      quarter: 4
+      count: 320661
+    - year: 2022
+      quarter: 1
+      count: 340839
+    - year: 2022
+      quarter: 2
+      count: 360201
+    - year: 2022
+      quarter: 3
+      count: 375796
+    - year: 2022
+      quarter: 4
+      count: 394402
+    - year: 2023
+      quarter: 1
+      count: 413957
+    - year: 2023
+      quarter: 2
+      count: 435394
+    - year: 2023
+      quarter: 3
+      count: 453622
+    - year: 2023
+      quarter: 4
+      count: 475424
+    - year: 2024
+      quarter: 1
+      count: 499736
+    - year: 2024
+      quarter: 2
+      count: 520443
+    - year: 2024
+      quarter: 3
+      count: 540768
+    - year: 2024
+      quarter: 4
+      count: 568066
+data:
+  labels:
+    - CH-AG
+    - CH-AR
+    - CH-AI
+    - CH-BL
+    - CH-BS
+    - CH-BE
+    - CH-FR
+    - CH-GE
+    - CH-GL
+    - CH-GR
+    - CH-JU
+    - CH-LU
+    - CH-NE
+    - CH-NW
+    - CH-OW
+    - CH-SG
+    - CH-SH
+    - CH-SZ
+    - CH-SO
+    - CH-TG
+    - CH-TI
+    - CH-UR
+    - CH-VS
+    - CH-VD
+    - CH-ZG
+    - CH-ZH
+    - ':foundations/anoma'

@@ -1,0 +1,10 @@
+name: Makedonski Brod
+type: Division-1
+meta:
+  alpha2: MK-308
+  includes:
+    - makedonski brod
+    - mk-308
+    - '308'
+    - makedonski brod municipality
+  category: MUNICIPALITY

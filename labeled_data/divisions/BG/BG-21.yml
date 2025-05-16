@@ -1,0 +1,12 @@
+name: Smolyan
+type: Division-1
+meta:
+  alpha2: BG-21
+  includes:
+    - smolyan
+    - bg-21
+    - '21'
+    - smolyan district
+    - smolyan province
+    - smoljan
+  category: DISTRICT

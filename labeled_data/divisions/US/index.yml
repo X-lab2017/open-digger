@@ -1,0 +1,268 @@
+name: United States of America
+type: Division-0
+meta:
+  alpha2: US
+  includes:
+    - United States of America
+    - US
+    - '840'
+    - the United States of America
+    - 美国
+    - United States
+  name_full: the United States of America
+  name_zh: 美国
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 9763122
+    - year: 2020
+      quarter: 2
+      count: 10434232
+    - year: 2020
+      quarter: 3
+      count: 11086139
+    - year: 2020
+      quarter: 4
+      count: 11660333
+    - year: 2021
+      quarter: 1
+      count: 12307169
+    - year: 2021
+      quarter: 2
+      count: 12895305
+    - year: 2021
+      quarter: 3
+      count: 13515151
+    - year: 2021
+      quarter: 4
+      count: 14190290
+    - year: 2022
+      quarter: 1
+      count: 15137065
+    - year: 2022
+      quarter: 2
+      count: 15941648
+    - year: 2022
+      quarter: 3
+      count: 16686238
+    - year: 2022
+      quarter: 4
+      count: 17416689
+    - year: 2023
+      quarter: 1
+      count: 18326730
+    - year: 2023
+      quarter: 2
+      count: 19338656
+    - year: 2023
+      quarter: 3
+      count: 20226711
+    - year: 2023
+      quarter: 4
+      count: 21077020
+    - year: 2024
+      quarter: 1
+      count: 22233197
+    - year: 2024
+      quarter: 2
+      count: 23027788
+    - year: 2024
+      quarter: 3
+      count: 23845773
+    - year: 2024
+      quarter: 4
+      count: 24759357
+data:
+  labels:
+    - US-AL
+    - US-AK
+    - US-AS
+    - US-AZ
+    - US-AR
+    - US-CA
+    - US-CO
+    - US-CT
+    - US-DE
+    - US-DC
+    - US-FL
+    - US-GA
+    - US-GU
+    - US-HI
+    - US-ID
+    - US-IL
+    - US-IN
+    - US-IA
+    - US-KS
+    - US-KY
+    - US-LA
+    - US-ME
+    - US-MD
+    - US-MA
+    - US-MI
+    - US-MN
+    - US-MS
+    - US-MO
+    - US-MT
+    - US-NE
+    - US-NV
+    - US-NH
+    - US-NJ
+    - US-NM
+    - US-NY
+    - US-NC
+    - US-ND
+    - US-MP
+    - US-OH
+    - US-OK
+    - US-OR
+    - US-PA
+    - US-PR
+    - US-RI
+    - US-SC
+    - US-SD
+    - US-TN
+    - US-TX
+    - US-UM
+    - US-UT
+    - US-VT
+    - US-VI
+    - US-VA
+    - US-WA
+    - US-WV
+    - US-WI
+    - US-WY
+    - ':agencies/us_va'
+    - ':companies/3drobotics'
+    - ':companies/650_industries'
+    - ':companies/acquia'
+    - ':companies/adobe'
+    - ':companies/airbnb'
+    - ':companies/airbyte'
+    - ':companies/alfresco'
+    - ':companies/alluxio'
+    - ':companies/amazon'
+    - ':companies/anaconda'
+    - ':companies/anysphere'
+    - ':companies/apple'
+    - ':companies/appsmith'
+    - ':companies/astral'
+    - ':companies/bitwarden'
+    - ':companies/bluesky'
+    - ':companies/brave'
+    - ':companies/cal.com'
+    - ':companies/cloudbees'
+    - ':companies/cloudera'
+    - ':companies/cloudflare'
+    - ':companies/cockroachlabs'
+    - ':companies/confluent'
+    - ':companies/consensys'
+    - ':companies/continue'
+    - ':companies/couchbase'
+    - ':companies/dagster_labs'
+    - ':companies/databricks'
+    - ':companies/datadog'
+    - ':companies/datastax'
+    - ':companies/deepmind'
+    - ':companies/deno'
+    - ':companies/docker'
+    - ':companies/elastic'
+    - ':companies/enterprisedb'
+    - ':companies/expensify'
+    - ':companies/fastly'
+    - ':companies/forgerock'
+    - ':companies/github'
+    - ':companies/google'
+    - ':companies/grafana'
+    - ':companies/gravitational'
+    - ':companies/greptime'
+    - ':companies/h2oai'
+    - ':companies/hashicorp'
+    - ':companies/hedera'
+    - ':companies/huggingface'
+    - ':companies/ibm'
+    - ':companies/instructure'
+    - ':companies/intel'
+    - ':companies/jfrog'
+    - ':companies/kaltura'
+    - ':companies/langchain'
+    - ':companies/laravel'
+    - ':companies/leetcode'
+    - ':companies/liferay'
+    - ':companies/linkedin'
+    - ':companies/llamaindex'
+    - ':companies/magento'
+    - ':companies/mapbox'
+    - ':companies/mattermost'
+    - ':companies/meta'
+    - ':companies/metabase'
+    - ':companies/microsoft'
+    - ':companies/mongodb'
+    - ':companies/mozilla'
+    - ':companies/mulesoft'
+    - ':companies/mycroftai'
+    - ':companies/mysten_labs'
+    - ':companies/nabucasa'
+    - ':companies/neo4j'
+    - ':companies/netflix'
+    - ':companies/netlify'
+    - ':companies/newrelic'
+    - ':companies/nicira'
+    - ':companies/novell'
+    - ':companies/nrwl'
+    - ':companies/nvidia'
+    - ':companies/open_webui'
+    - ':companies/openai'
+    - ':companies/openresty'
+    - ':companies/oracle'
+    - ':companies/paloaltonetworks'
+    - ':companies/paradigm'
+    - ':companies/paypal'
+    - ':companies/pentaho'
+    - ':companies/pivotal'
+    - ':companies/postman'
+    - ':companies/puppet_labs'
+    - ':companies/rancher'
+    - ':companies/rapid7'
+    - ':companies/redhat'
+    - ':companies/redis'
+    - ':companies/salesforce'
+    - ':companies/segment'
+    - ':companies/sourcefire'
+    - ':companies/stackblitz'
+    - ':companies/supabase'
+    - ':companies/talend'
+    - ':companies/terminus'
+    - ':companies/tooljet'
+    - ':companies/treasure_data'
+    - ':companies/twitter'
+    - ':companies/uber'
+    - ':companies/unkeyed'
+    - ':companies/valve'
+    - ':companies/varnish'
+    - ':companies/vercel'
+    - ':companies/vmware'
+    - ':companies/wordpress'
+    - ':companies/zed'
+    - ':foundations/apache'
+    - ':foundations/bevy'
+    - ':foundations/csa_iot'
+    - ':foundations/free_ebook'
+    - ':foundations/gentoo'
+    - ':foundations/linux_foundation'
+    - ':foundations/linux_foundation/cncf'
+    - ':foundations/linux_foundation/finops'
+    - ':foundations/linux_foundation/hyperledger'
+    - ':foundations/linux_foundation/lfai'
+    - ':foundations/linux_foundation/lfed'
+    - ':foundations/linux_foundation/lfne'
+    - ':foundations/linux_foundation/o3d'
+    - ':foundations/linux_foundation/openjs'
+    - ':foundations/linux_foundation/openssf'
+    - ':foundations/linux_foundation/pytorch'
+    - ':foundations/linux_foundation/riscv'
+    - ':foundations/openinfra'
+    - ':foundations/php'
+    - ':foundations/python'
+    - ':foundations/trino'
+    - ':universities/illinois'
+    - ':universities/ucsd'

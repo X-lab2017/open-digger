@@ -1,0 +1,10 @@
+name: Kamphaeng Phet
+type: Division-1
+meta:
+  alpha2: TH-62
+  includes:
+    - kamphaeng phet
+    - th-62
+    - '62'
+    - kamphaeng phet province
+  category: PROVINCE

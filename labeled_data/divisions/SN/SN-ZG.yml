@@ -1,0 +1,10 @@
+name: Ziguinchor
+type: Division-1
+meta:
+  alpha2: SN-ZG
+  includes:
+    - ziguinchor
+    - sn-zg
+    - zg
+    - ziguinchor region
+  category: REGION

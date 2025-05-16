@@ -1,0 +1,13 @@
+name: Zabaykal'skiy kray
+type: Division-1
+meta:
+  alpha2: RU-ZAB
+  includes:
+    - zabajkal'skij kraj
+    - ru-zab
+    - zab
+    - zabajkal'skij kraj administrative territory
+    - zabaykal'skiy kray
+    - zabaykal'skiy kray administrative territory
+    - zabaykalsky krai
+  category: ADMINISTRATIVE TERRITORY

@@ -1,0 +1,108 @@
+name: Bahamas
+type: Division-0
+meta:
+  alpha2: BS
+  includes:
+    - Bahamas
+    - BS
+    - '044'
+    - the Commonwealth of The Bahamas
+    - 巴哈马
+    - The Bahamas
+  name_full: the Commonwealth of The Bahamas
+  name_zh: 巴哈马
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 2431
+    - year: 2020
+      quarter: 2
+      count: 2926
+    - year: 2020
+      quarter: 3
+      count: 3276
+    - year: 2020
+      quarter: 4
+      count: 3648
+    - year: 2021
+      quarter: 1
+      count: 4003
+    - year: 2021
+      quarter: 2
+      count: 4303
+    - year: 2021
+      quarter: 3
+      count: 4558
+    - year: 2021
+      quarter: 4
+      count: 4867
+    - year: 2022
+      quarter: 1
+      count: 5283
+    - year: 2022
+      quarter: 2
+      count: 5662
+    - year: 2022
+      quarter: 3
+      count: 5914
+    - year: 2022
+      quarter: 4
+      count: 6150
+    - year: 2023
+      quarter: 1
+      count: 6440
+    - year: 2023
+      quarter: 2
+      count: 6726
+    - year: 2023
+      quarter: 3
+      count: 6955
+    - year: 2023
+      quarter: 4
+      count: 7177
+    - year: 2024
+      quarter: 1
+      count: 7642
+    - year: 2024
+      quarter: 2
+      count: 7873
+    - year: 2024
+      quarter: 3
+      count: 8046
+    - year: 2024
+      quarter: 4
+      count: 8505
+data:
+  labels:
+    - BS-AK
+    - BS-BY
+    - BS-BI
+    - BS-BP
+    - BS-CI
+    - BS-CO
+    - BS-CS
+    - BS-CE
+    - BS-FP
+    - BS-CK
+    - BS-EG
+    - BS-EX
+    - BS-GC
+    - BS-HI
+    - BS-HT
+    - BS-IN
+    - BS-LI
+    - BS-MC
+    - BS-MG
+    - BS-MI
+    - BS-NP
+    - BS-NO
+    - BS-NS
+    - BS-NE
+    - BS-RI
+    - BS-RC
+    - BS-SS
+    - BS-SO
+    - BS-SA
+    - BS-SE
+    - BS-SW
+    - BS-WG

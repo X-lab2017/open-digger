@@ -1,0 +1,17 @@
+name: Al Janūbī
+type: Division-1
+meta:
+  alpha2: IL-D
+  includes:
+    - al janūbī
+    - il-d
+    - d
+    - al janūbī district
+    - el janūbī
+    - el janūbī district
+    - hadarom
+    - hadarom district
+    - southern
+    - southern district
+    - south district
+  category: DISTRICT

@@ -1,0 +1,14 @@
+name: Gorod Minsk
+type: Division-1
+meta:
+  alpha2: BY-HM
+  includes:
+    - gorod minsk
+    - by-hm
+    - hm
+    - gorod minsk city
+    - horad minsk
+    - horad minsk city
+    - minsk
+    - minsk province
+  category: CITY

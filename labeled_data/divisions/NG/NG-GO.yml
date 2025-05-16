@@ -1,0 +1,10 @@
+name: Gombe
+type: Division-1
+meta:
+  alpha2: NG-GO
+  includes:
+    - gombe
+    - ng-go
+    - go
+    - gombe state
+  category: STATE

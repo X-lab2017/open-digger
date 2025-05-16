@@ -1,0 +1,12 @@
+name: Red Sea
+type: Division-1
+meta:
+  alpha2: SD-RS
+  includes:
+    - al baḩr al aḩmar
+    - sd-rs
+    - rs
+    - al baḩr al aḩmar state
+    - red sea
+    - red sea state
+  category: STATE

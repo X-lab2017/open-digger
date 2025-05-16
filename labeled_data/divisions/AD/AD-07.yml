@@ -1,0 +1,10 @@
+name: Andorra la Vella
+type: Division-1
+meta:
+  alpha2: AD-07
+  includes:
+    - andorra la vella
+    - ad-07
+    - '07'
+    - andorra la vella parish
+  category: PARISH

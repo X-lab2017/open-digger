@@ -1,0 +1,10 @@
+name: Škofljica
+type: Division-1
+meta:
+  alpha2: SI-123
+  includes:
+    - škofljica
+    - si-123
+    - '123'
+    - škofljica municipality
+  category: MUNICIPALITY

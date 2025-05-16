@@ -1,0 +1,10 @@
+name: Turnišče
+type: Division-1
+meta:
+  alpha2: SI-132
+  includes:
+    - turnišče
+    - si-132
+    - '132'
+    - turnišče municipality
+  category: MUNICIPALITY

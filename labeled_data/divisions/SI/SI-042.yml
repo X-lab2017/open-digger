@@ -1,0 +1,10 @@
+name: Juršinci
+type: Division-1
+meta:
+  alpha2: SI-042
+  includes:
+    - juršinci
+    - si-042
+    - '042'
+    - juršinci municipality
+  category: MUNICIPALITY

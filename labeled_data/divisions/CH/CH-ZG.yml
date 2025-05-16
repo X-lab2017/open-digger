@@ -1,0 +1,11 @@
+name: Zug
+type: Division-1
+meta:
+  alpha2: CH-ZG
+  includes:
+    - zug
+    - ch-zg
+    - zg
+    - zug canton
+    - canton of zug
+  category: CANTON

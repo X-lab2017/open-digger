@@ -1,0 +1,10 @@
+name: Qubadlı
+type: Division-1
+meta:
+  alpha2: AZ-QBI
+  includes:
+    - qubadlı
+    - az-qbi
+    - qbi
+    - qubadlı rayon
+  category: RAYON

@@ -1,0 +1,10 @@
+name: Castries
+type: Division-1
+meta:
+  alpha2: LC-02
+  includes:
+    - castries
+    - lc-02
+    - '02'
+    - castries district
+  category: DISTRICT

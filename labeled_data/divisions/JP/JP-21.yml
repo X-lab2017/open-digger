@@ -1,0 +1,12 @@
+name: Gihu
+type: Division-1
+meta:
+  alpha2: JP-21
+  includes:
+    - gifu
+    - jp-21
+    - '21'
+    - gifu prefecture
+    - gihu
+    - gihu prefecture
+  category: PREFECTURE

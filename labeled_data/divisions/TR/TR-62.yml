@@ -1,0 +1,10 @@
+name: Tunceli
+type: Division-1
+meta:
+  alpha2: TR-62
+  includes:
+    - tunceli
+    - tr-62
+    - '62'
+    - tunceli province
+  category: PROVINCE

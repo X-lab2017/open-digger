@@ -1,0 +1,10 @@
+name: Planken
+type: Division-1
+meta:
+  alpha2: LI-05
+  includes:
+    - planken
+    - li-05
+    - '05'
+    - planken commune
+  category: COMMUNE

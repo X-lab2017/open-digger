@@ -1,0 +1,12 @@
+name: Talsu novads
+type: Division-1
+meta:
+  alpha2: LV-097
+  includes:
+    - talsu novads
+    - lv-097
+    - '097'
+    - talsu novads municipality
+    - talsi
+    - talsi municipality
+  category: MUNICIPALITY

@@ -1,0 +1,10 @@
+name: Bouenza
+type: Division-1
+meta:
+  alpha2: CG-11
+  includes:
+    - bouenza
+    - cg-11
+    - '11'
+    - bouenza department
+  category: DEPARTMENT

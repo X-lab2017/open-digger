@@ -1,0 +1,10 @@
+name: Chimaltenango
+type: Division-1
+meta:
+  alpha2: GT-04
+  includes:
+    - chimaltenango
+    - gt-04
+    - '04'
+    - chimaltenango department
+  category: DEPARTMENT

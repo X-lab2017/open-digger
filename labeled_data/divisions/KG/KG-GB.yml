@@ -1,0 +1,14 @@
+name: Gorod Biškek
+type: Division-1
+meta:
+  alpha2: KG-GB
+  includes:
+    - bishkek shaary
+    - kg-gb
+    - gb
+    - bishkek shaary city
+    - gorod bishkek
+    - gorod bishkek city
+    - gorod biškek
+    - gorod biškek city
+  category: CITY

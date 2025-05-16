@@ -1,0 +1,10 @@
+name: Alabama
+type: Division-1
+meta:
+  alpha2: US-AL
+  includes:
+    - alabama
+    - us-al
+    - al
+    - alabama state
+  category: STATE

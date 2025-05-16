@@ -1,0 +1,10 @@
+name: Komen
+type: Division-1
+meta:
+  alpha2: SI-049
+  includes:
+    - komen
+    - si-049
+    - '049'
+    - komen municipality
+  category: MUNICIPALITY

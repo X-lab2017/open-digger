@@ -1,0 +1,86 @@
+name: Liechtenstein
+type: Division-0
+meta:
+  alpha2: LI
+  includes:
+    - Liechtenstein
+    - LI
+    - '438'
+    - the Principality of Liechtenstein
+    - 列支敦士登
+  name_full: the Principality of Liechtenstein
+  name_zh: 列支敦士登
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 736
+    - year: 2020
+      quarter: 2
+      count: 771
+    - year: 2020
+      quarter: 3
+      count: 844
+    - year: 2020
+      quarter: 4
+      count: 878
+    - year: 2021
+      quarter: 1
+      count: 952
+    - year: 2021
+      quarter: 2
+      count: 1014
+    - year: 2021
+      quarter: 3
+      count: 1050
+    - year: 2021
+      quarter: 4
+      count: 1088
+    - year: 2022
+      quarter: 1
+      count: 1184
+    - year: 2022
+      quarter: 2
+      count: 1276
+    - year: 2022
+      quarter: 3
+      count: 1330
+    - year: 2022
+      quarter: 4
+      count: 1400
+    - year: 2023
+      quarter: 1
+      count: 1470
+    - year: 2023
+      quarter: 2
+      count: 1575
+    - year: 2023
+      quarter: 3
+      count: 1634
+    - year: 2023
+      quarter: 4
+      count: 1700
+    - year: 2024
+      quarter: 1
+      count: 1838
+    - year: 2024
+      quarter: 2
+      count: 1842
+    - year: 2024
+      quarter: 3
+      count: 1901
+    - year: 2024
+      quarter: 4
+      count: 2114
+data:
+  labels:
+    - LI-01
+    - LI-02
+    - LI-03
+    - LI-04
+    - LI-05
+    - LI-06
+    - LI-07
+    - LI-08
+    - LI-09
+    - LI-10
+    - LI-11

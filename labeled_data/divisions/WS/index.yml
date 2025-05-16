@@ -1,0 +1,86 @@
+name: Samoa
+type: Division-0
+meta:
+  alpha2: WS
+  includes:
+    - Samoa
+    - WS
+    - '882'
+    - the Independent State of Samoa
+    - 萨摩亚
+  name_full: the Independent State of Samoa
+  name_zh: 萨摩亚
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 138
+    - year: 2020
+      quarter: 2
+      count: 158
+    - year: 2020
+      quarter: 3
+      count: 166
+    - year: 2020
+      quarter: 4
+      count: 178
+    - year: 2021
+      quarter: 1
+      count: 198
+    - year: 2021
+      quarter: 2
+      count: 215
+    - year: 2021
+      quarter: 3
+      count: 241
+    - year: 2021
+      quarter: 4
+      count: 262
+    - year: 2022
+      quarter: 1
+      count: 289
+    - year: 2022
+      quarter: 2
+      count: 317
+    - year: 2022
+      quarter: 3
+      count: 338
+    - year: 2022
+      quarter: 4
+      count: 366
+    - year: 2023
+      quarter: 1
+      count: 390
+    - year: 2023
+      quarter: 2
+      count: 423
+    - year: 2023
+      quarter: 3
+      count: 466
+    - year: 2023
+      quarter: 4
+      count: 495
+    - year: 2024
+      quarter: 1
+      count: 535
+    - year: 2024
+      quarter: 2
+      count: 558
+    - year: 2024
+      quarter: 3
+      count: 586
+    - year: 2024
+      quarter: 4
+      count: 623
+data:
+  labels:
+    - WS-AA
+    - WS-AL
+    - WS-AT
+    - WS-FA
+    - WS-GE
+    - WS-GI
+    - WS-PA
+    - WS-SA
+    - WS-TU
+    - WS-VF
+    - WS-VS

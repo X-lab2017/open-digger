@@ -1,0 +1,10 @@
+name: Şabran
+type: Division-1
+meta:
+  alpha2: AZ-SBN
+  includes:
+    - şabran
+    - az-sbn
+    - sbn
+    - şabran rayon
+  category: RAYON

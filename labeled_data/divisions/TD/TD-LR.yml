@@ -1,0 +1,13 @@
+name: Lūghūn ash Sharqī
+type: Division-1
+meta:
+  alpha2: TD-LR
+  includes:
+    - logone-oriental
+    - td-lr
+    - lr
+    - logone-oriental province
+    - lūghūn ash sharqī
+    - lūghūn ash sharqī province
+    - logone oriental
+  category: PROVINCE

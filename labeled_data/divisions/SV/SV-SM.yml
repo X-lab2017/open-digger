@@ -1,0 +1,11 @@
+name: San Miguel
+type: Division-1
+meta:
+  alpha2: SV-SM
+  includes:
+    - san miguel
+    - sv-sm
+    - sm
+    - san miguel department
+    - svsm
+  category: DEPARTMENT

@@ -1,0 +1,27 @@
+name: Suðurnes
+type: Division-1
+meta:
+  alpha2: IS-2
+  includes:
+    - grindavíkurbær
+    - is-grn
+    - grn
+    - grindavíkurbær municipality
+    - reykjanesbær
+    - is-rkn
+    - rkn
+    - reykjanesbær municipality
+    - suðurnes
+    - is-2
+    - '2'
+    - suðurnes region
+    - suðurnesjabær
+    - is-sdn
+    - sdn
+    - suðurnesjabær municipality
+    - sveitarfélagið vogar
+    - is-svg
+    - svg
+    - sveitarfélagið vogar municipality
+    - southern peninsula
+  category: REGION

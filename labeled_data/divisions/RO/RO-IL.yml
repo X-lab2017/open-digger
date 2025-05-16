@@ -1,0 +1,12 @@
+name: Ialomița
+type: Division-1
+meta:
+  alpha2: RO-IL
+  includes:
+    - ialomița
+    - ro-il
+    - il
+    - ialomița department
+    - ialomița county
+    - ialomiţa
+  category: DEPARTMENT

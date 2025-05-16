@@ -1,0 +1,10 @@
+name: Valletta
+type: Division-1
+meta:
+  alpha2: MT-60
+  includes:
+    - valletta
+    - mt-60
+    - '60'
+    - valletta local council
+  category: LOCAL COUNCIL

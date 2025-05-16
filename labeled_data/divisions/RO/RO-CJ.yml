@@ -1,0 +1,12 @@
+name: Cluj
+type: Division-1
+meta:
+  alpha2: RO-CJ
+  includes:
+    - cluj
+    - ro-cj
+    - cj
+    - cluj department
+    - județul cluj
+    - cluj county
+  category: DEPARTMENT

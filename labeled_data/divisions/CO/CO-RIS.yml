@@ -1,0 +1,10 @@
+name: Risaralda
+type: Division-1
+meta:
+  alpha2: CO-RIS
+  includes:
+    - risaralda
+    - co-ris
+    - ris
+    - risaralda department
+  category: DEPARTMENT

@@ -1,0 +1,10 @@
+name: Bovec
+type: Division-1
+meta:
+  alpha2: SI-006
+  includes:
+    - bovec
+    - si-006
+    - '006'
+    - bovec municipality
+  category: MUNICIPALITY

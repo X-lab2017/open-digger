@@ -1,0 +1,10 @@
+name: Manica
+type: Division-1
+meta:
+  alpha2: MZ-B
+  includes:
+    - manica
+    - mz-b
+    - b
+    - manica province
+  category: PROVINCE

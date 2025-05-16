@@ -1,0 +1,11 @@
+name: Sindh
+type: Division-1
+meta:
+  alpha2: PK-SD
+  includes:
+    - sindh
+    - pk-sd
+    - sd
+    - sindh province
+    - سندھ
+  category: PROVINCE

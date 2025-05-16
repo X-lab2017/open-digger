@@ -1,0 +1,10 @@
+name: Ta' Xbiex
+type: Division-1
+meta:
+  alpha2: MT-58
+  includes:
+    - ta' xbiex
+    - mt-58
+    - '58'
+    - ta' xbiex local council
+  category: LOCAL COUNCIL

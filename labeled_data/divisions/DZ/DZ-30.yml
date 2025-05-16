@@ -1,0 +1,10 @@
+name: Ouargla
+type: Division-1
+meta:
+  alpha2: DZ-30
+  includes:
+    - ouargla
+    - dz-30
+    - '30'
+    - ouargla province
+  category: PROVINCE

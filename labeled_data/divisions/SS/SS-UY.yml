@@ -1,0 +1,10 @@
+name: Unity
+type: Division-1
+meta:
+  alpha2: SS-UY
+  includes:
+    - unity
+    - ss-uy
+    - uy
+    - unity state
+  category: STATE

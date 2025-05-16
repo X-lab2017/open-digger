@@ -1,0 +1,12 @@
+name: Az Zarqā’
+type: Division-1
+meta:
+  alpha2: JO-AZ
+  includes:
+    - az zarqā’
+    - jo-az
+    - az
+    - az zarqā’ governorate
+    - zarqa
+    - zarqa governorate
+  category: GOVERNORATE

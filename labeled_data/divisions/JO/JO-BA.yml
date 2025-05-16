@@ -1,0 +1,12 @@
+name: Al Balqā’
+type: Division-1
+meta:
+  alpha2: JO-BA
+  includes:
+    - al balqā’
+    - jo-ba
+    - ba
+    - al balqā’ governorate
+    - balqa
+    - balqa governorate
+  category: GOVERNORATE

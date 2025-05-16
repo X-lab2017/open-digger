@@ -1,0 +1,10 @@
+name: Kelantan
+type: Division-1
+meta:
+  alpha2: MY-03
+  includes:
+    - kelantan
+    - my-03
+    - '03'
+    - kelantan state
+  category: STATE

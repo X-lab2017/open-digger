@@ -1,0 +1,11 @@
+name: Falcón
+type: Division-1
+meta:
+  alpha2: VE-I
+  includes:
+    - falcón
+    - ve-i
+    - i
+    - falcón state
+    - fa
+  category: STATE

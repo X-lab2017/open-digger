@@ -1,0 +1,11 @@
+name: Sétif
+type: Division-1
+meta:
+  alpha2: DZ-19
+  includes:
+    - sétif
+    - dz-19
+    - '19'
+    - sétif province
+    - setif
+  category: PROVINCE

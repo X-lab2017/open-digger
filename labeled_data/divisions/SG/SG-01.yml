@@ -1,0 +1,10 @@
+name: Central Singapore
+type: Division-1
+meta:
+  alpha2: SG-01
+  includes:
+    - central singapore
+    - sg-01
+    - '01'
+    - central singapore district
+  category: DISTRICT

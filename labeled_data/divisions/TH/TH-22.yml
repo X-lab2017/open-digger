@@ -1,0 +1,10 @@
+name: Chanthaburi
+type: Division-1
+meta:
+  alpha2: TH-22
+  includes:
+    - chanthaburi
+    - th-22
+    - '22'
+    - chanthaburi province
+  category: PROVINCE

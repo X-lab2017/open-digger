@@ -1,0 +1,10 @@
+name: Saint Mark
+type: Division-1
+meta:
+  alpha2: GD-05
+  includes:
+    - saint mark
+    - gd-05
+    - '05'
+    - saint mark parish
+  category: PARISH

@@ -1,0 +1,14 @@
+name: Cajamarca
+type: Division-1
+meta:
+  alpha2: PE-CAJ
+  includes:
+    - cajamarca
+    - pe-caj
+    - caj
+    - cajamarca region
+    - kashamarka
+    - kashamarka region
+    - qajamarka
+    - qajamarka region
+  category: REGION

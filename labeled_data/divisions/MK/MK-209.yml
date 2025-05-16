@@ -1,0 +1,10 @@
+name: Probištip
+type: Division-1
+meta:
+  alpha2: MK-209
+  includes:
+    - probištip
+    - mk-209
+    - '209'
+    - probištip municipality
+  category: MUNICIPALITY

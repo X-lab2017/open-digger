@@ -1,0 +1,10 @@
+name: Samangān
+type: Division-1
+meta:
+  alpha2: AF-SAM
+  includes:
+    - samangān
+    - af-sam
+    - sam
+    - samangān province
+  category: PROVINCE

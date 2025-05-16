@@ -1,0 +1,10 @@
+name: Al Kufrah
+type: Division-1
+meta:
+  alpha2: LY-KF
+  includes:
+    - al kufrah
+    - ly-kf
+    - kf
+    - al kufrah popularate
+  category: POPULARATE

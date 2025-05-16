@@ -1,0 +1,11 @@
+name: Si Sa Ket
+type: Division-1
+meta:
+  alpha2: TH-33
+  includes:
+    - si sa ket
+    - th-33
+    - '33'
+    - si sa ket province
+    - sisaket
+  category: PROVINCE

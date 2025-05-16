@@ -1,0 +1,10 @@
+name: Dennery
+type: Division-1
+meta:
+  alpha2: LC-05
+  includes:
+    - dennery
+    - lc-05
+    - '05'
+    - dennery district
+  category: DISTRICT

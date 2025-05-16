@@ -1,0 +1,11 @@
+name: Hà Tĩnh
+type: Division-1
+meta:
+  alpha2: VN-23
+  includes:
+    - hà tĩnh
+    - vn-23
+    - '23'
+    - hà tĩnh province
+    - ha tinh
+  category: PROVINCE

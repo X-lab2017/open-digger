@@ -1,0 +1,11 @@
+name: Mandalay
+type: Division-1
+meta:
+  alpha2: MM-04
+  includes:
+    - mandalay
+    - mm-04
+    - '04'
+    - mandalay region
+    - မန္တလေးတိုင်းဒေသကြီး
+  category: REGION

@@ -1,0 +1,11 @@
+name: Khūzestān
+type: Division-1
+meta:
+  alpha2: IR-06
+  includes:
+    - khūzestān
+    - ir-06
+    - '06'
+    - khūzestān province
+    - khuzestan province
+  category: PROVINCE

@@ -1,0 +1,10 @@
+name: Saint Patrick
+type: Division-1
+meta:
+  alpha2: GD-06
+  includes:
+    - saint patrick
+    - gd-06
+    - '06'
+    - saint patrick parish
+  category: PARISH

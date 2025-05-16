@@ -1,0 +1,10 @@
+name: Triesen
+type: Division-1
+meta:
+  alpha2: LI-09
+  includes:
+    - triesen
+    - li-09
+    - '09'
+    - triesen commune
+  category: COMMUNE

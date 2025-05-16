@@ -1,0 +1,11 @@
+name: Setúbal
+type: Division-1
+meta:
+  alpha2: PT-15
+  includes:
+    - setúbal
+    - pt-15
+    - '15'
+    - setúbal district
+    - setubal
+  category: DISTRICT

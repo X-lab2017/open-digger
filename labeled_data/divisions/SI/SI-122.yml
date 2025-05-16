@@ -1,0 +1,10 @@
+name: Škofja Loka
+type: Division-1
+meta:
+  alpha2: SI-122
+  includes:
+    - škofja loka
+    - si-122
+    - '122'
+    - škofja loka municipality
+  category: MUNICIPALITY

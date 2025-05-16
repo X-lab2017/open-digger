@@ -1,0 +1,10 @@
+name: Mahārāshtra
+type: Division-1
+meta:
+  alpha2: IN-MH
+  includes:
+    - mahārāshtra
+    - in-mh
+    - mh
+    - mahārāshtra state
+  category: STATE

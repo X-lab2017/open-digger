@@ -1,0 +1,10 @@
+name: Louisiana
+type: Division-1
+meta:
+  alpha2: US-LA
+  includes:
+    - louisiana
+    - us-la
+    - la
+    - louisiana state
+  category: STATE

@@ -1,0 +1,11 @@
+name: Az̧ Z̧āhirah
+type: Division-1
+meta:
+  alpha2: OM-ZA
+  includes:
+    - az̧ z̧āhirah
+    - om-za
+    - za
+    - az̧ z̧āhirah governorate
+    - ad dhahirah governorate
+  category: GOVERNORATE

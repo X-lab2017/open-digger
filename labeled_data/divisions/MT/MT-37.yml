@@ -1,0 +1,10 @@
+name: Nadur
+type: Division-1
+meta:
+  alpha2: MT-37
+  includes:
+    - nadur
+    - mt-37
+    - '37'
+    - nadur local council
+  category: LOCAL COUNCIL

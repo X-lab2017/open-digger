@@ -1,0 +1,12 @@
+name: White Nile
+type: Division-1
+meta:
+  alpha2: SD-NW
+  includes:
+    - an nīl al abyaḑ
+    - sd-nw
+    - nw
+    - an nīl al abyaḑ state
+    - white nile
+    - white nile state
+  category: STATE

@@ -1,0 +1,10 @@
+name: Helmand
+type: Division-1
+meta:
+  alpha2: AF-HEL
+  includes:
+    - helmand
+    - af-hel
+    - hel
+    - helmand province
+  category: PROVINCE

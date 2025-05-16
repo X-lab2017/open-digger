@@ -1,0 +1,14 @@
+name: Moskovskaya oblast'
+type: Division-1
+meta:
+  alpha2: RU-MOS
+  includes:
+    - moskovskaja oblast'
+    - ru-mos
+    - mos
+    - moskovskaja oblast' administrative region
+    - moskovskaya oblast'
+    - moskovskaya oblast' administrative region
+    - moscow oblast
+    - moscow
+  category: ADMINISTRATIVE REGION

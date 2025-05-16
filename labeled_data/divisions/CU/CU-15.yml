@@ -1,0 +1,10 @@
+name: Artemisa
+type: Division-1
+meta:
+  alpha2: CU-15
+  includes:
+    - artemisa
+    - cu-15
+    - '15'
+    - artemisa province
+  category: PROVINCE

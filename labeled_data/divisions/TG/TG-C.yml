@@ -1,0 +1,10 @@
+name: Centrale
+type: Division-1
+meta:
+  alpha2: TG-C
+  includes:
+    - centrale
+    - tg-c
+    - c
+    - centrale region
+  category: REGION

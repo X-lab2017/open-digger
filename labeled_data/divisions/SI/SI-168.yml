@@ -1,0 +1,10 @@
+name: Markovci
+type: Division-1
+meta:
+  alpha2: SI-168
+  includes:
+    - markovci
+    - si-168
+    - '168'
+    - markovci municipality
+  category: MUNICIPALITY

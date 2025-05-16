@@ -1,0 +1,13 @@
+name: Tyva
+type: Division-1
+meta:
+  alpha2: RU-TY
+  includes:
+    - tyva
+    - ru-ty
+    - ty
+    - tyva republic
+    - tuva
+    - tuva republic
+    - republic of tyva
+  category: REPUBLIC

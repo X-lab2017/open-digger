@@ -1,0 +1,13 @@
+name: Liaoning Sheng
+type: Division-1
+meta:
+  alpha2: CN-LN
+  includes:
+    - liaoning sheng
+    - cn-ln
+    - ln
+    - liaoning sheng province
+    - liao ning sheng
+    - liaoning
+    - 辽宁省
+  category: PROVINCE

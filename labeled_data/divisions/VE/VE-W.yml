@@ -1,0 +1,12 @@
+name: Dependencias Federales
+type: Division-1
+meta:
+  alpha2: VE-W
+  includes:
+    - dependencias federales
+    - ve-w
+    - w
+    - dependencias federales federal dependency
+    - federal district
+    - dc
+  category: FEDERAL DEPENDENCY

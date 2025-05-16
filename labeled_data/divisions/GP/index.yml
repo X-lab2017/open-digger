@@ -1,0 +1,72 @@
+name: Guadeloupe
+type: Division-0
+meta:
+  alpha2: GP
+  includes:
+    - Guadeloupe
+    - GP
+    - '312'
+    - 瓜德罗普
+  name_full: Guadeloupe
+  name_zh: 瓜德罗普
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 2054
+    - year: 2020
+      quarter: 2
+      count: 2307
+    - year: 2020
+      quarter: 3
+      count: 2484
+    - year: 2020
+      quarter: 4
+      count: 2703
+    - year: 2021
+      quarter: 1
+      count: 2934
+    - year: 2021
+      quarter: 2
+      count: 3131
+    - year: 2021
+      quarter: 3
+      count: 3328
+    - year: 2021
+      quarter: 4
+      count: 3500
+    - year: 2022
+      quarter: 1
+      count: 3686
+    - year: 2022
+      quarter: 2
+      count: 3848
+    - year: 2022
+      quarter: 3
+      count: 3992
+    - year: 2022
+      quarter: 4
+      count: 4136
+    - year: 2023
+      quarter: 1
+      count: 4326
+    - year: 2023
+      quarter: 2
+      count: 4614
+    - year: 2023
+      quarter: 3
+      count: 4832
+    - year: 2023
+      quarter: 4
+      count: 5067
+    - year: 2024
+      quarter: 1
+      count: 5416
+    - year: 2024
+      quarter: 2
+      count: 5682
+    - year: 2024
+      quarter: 3
+      count: 5941
+    - year: 2024
+      quarter: 4
+      count: 6196

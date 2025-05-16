@@ -1,0 +1,14 @@
+name: Khorāsān-e Raẕavī
+type: Division-1
+meta:
+  alpha2: IR-09
+  includes:
+    - khorāsān-e raẕavī
+    - ir-09
+    - '09'
+    - khorāsān-e raẕavī province
+    - razavi khorasan
+    - خراسان رضوی
+    - razavi khorasan province
+    - استان خراسان رضوی
+  category: PROVINCE

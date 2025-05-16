@@ -1,0 +1,10 @@
+name: Bács-Kiskun
+type: Division-1
+meta:
+  alpha2: HU-BK
+  includes:
+    - bács-kiskun
+    - hu-bk
+    - bk
+    - bács-kiskun county
+  category: COUNTY

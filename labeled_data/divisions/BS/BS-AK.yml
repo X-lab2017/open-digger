@@ -1,0 +1,10 @@
+name: Acklins
+type: Division-1
+meta:
+  alpha2: BS-AK
+  includes:
+    - acklins
+    - bs-ak
+    - ak
+    - acklins district
+  category: DISTRICT

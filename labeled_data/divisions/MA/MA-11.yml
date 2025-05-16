@@ -1,0 +1,26 @@
+name: Laâyoune-Sakia El Hamra
+type: Division-1
+meta:
+  alpha2: MA-11
+  includes:
+    - boujdour
+    - ma-bod
+    - bod
+    - boujdour province
+    - es-semara
+    - ma-esm
+    - esm
+    - es-semara province
+    - laâyoune
+    - ma-laa
+    - laa
+    - laâyoune province
+    - laâyoune-sakia el hamra
+    - ma-11
+    - '11'
+    - laâyoune-sakia el hamra region
+    - tarfaya
+    - ma-taf
+    - taf
+    - tarfaya province
+  category: REGION

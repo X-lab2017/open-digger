@@ -1,0 +1,10 @@
+name: Tipaza
+type: Division-1
+meta:
+  alpha2: DZ-42
+  includes:
+    - tipaza
+    - dz-42
+    - '42'
+    - tipaza province
+  category: PROVINCE

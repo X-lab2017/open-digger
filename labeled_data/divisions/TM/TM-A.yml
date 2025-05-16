@@ -1,0 +1,10 @@
+name: Ahal
+type: Division-1
+meta:
+  alpha2: TM-A
+  includes:
+    - ahal
+    - tm-a
+    - a
+    - ahal region
+  category: REGION

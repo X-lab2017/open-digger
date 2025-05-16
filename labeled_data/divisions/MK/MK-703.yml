@@ -1,0 +1,12 @@
+name: Kumanovo
+type: Division-1
+meta:
+  alpha2: MK-703
+  includes:
+    - kumanovo
+    - mk-703
+    - '703'
+    - kumanovo municipality
+    - municipality of kumanovo
+    - northeastern
+  category: MUNICIPALITY

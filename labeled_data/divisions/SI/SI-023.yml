@@ -1,0 +1,10 @@
+name: Domžale
+type: Division-1
+meta:
+  alpha2: SI-023
+  includes:
+    - domžale
+    - si-023
+    - '023'
+    - domžale municipality
+  category: MUNICIPALITY

@@ -1,0 +1,32 @@
+name: Kraj Vysočina
+type: Division-1
+meta:
+  alpha2: CZ-63
+  includes:
+    - havlíčkův brod
+    - cz-631
+    - '631'
+    - havlíčkův brod district
+    - jihlava
+    - cz-632
+    - '632'
+    - jihlava district
+    - kraj vysočina
+    - cz-63
+    - '63'
+    - kraj vysočina region
+    - pelhřimov
+    - cz-633
+    - '633'
+    - pelhřimov district
+    - třebíč
+    - cz-634
+    - '634'
+    - třebíč district
+    - žďár nad sázavou
+    - cz-635
+    - '635'
+    - žďár nad sázavou district
+    - vysočina region
+    - vysočina
+  category: REGION

@@ -1,0 +1,11 @@
+name: Corrientes
+type: Division-1
+meta:
+  alpha2: AR-W
+  includes:
+    - corrientes
+    - ar-w
+    - w
+    - corrientes province
+    - crr
+  category: PROVINCE

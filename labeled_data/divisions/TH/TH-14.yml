@@ -1,0 +1,10 @@
+name: Phra Nakhon Si Ayutthaya
+type: Division-1
+meta:
+  alpha2: TH-14
+  includes:
+    - phra nakhon si ayutthaya
+    - th-14
+    - '14'
+    - phra nakhon si ayutthaya province
+  category: PROVINCE

@@ -1,0 +1,14 @@
+name: Est
+type: Division-1
+meta:
+  alpha2: RW-02
+  includes:
+    - eastern
+    - rw-02
+    - '02'
+    - eastern province
+    - est
+    - est province
+    - iburasirazuba
+    - iburasirazuba province
+  category: PROVINCE

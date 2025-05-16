@@ -1,0 +1,10 @@
+name: Mizoram
+type: Division-1
+meta:
+  alpha2: IN-MZ
+  includes:
+    - mizoram
+    - in-mz
+    - mz
+    - mizoram state
+  category: STATE

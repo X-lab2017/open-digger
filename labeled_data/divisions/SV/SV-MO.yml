@@ -1,0 +1,10 @@
+name: Morazán
+type: Division-1
+meta:
+  alpha2: SV-MO
+  includes:
+    - morazán
+    - sv-mo
+    - mo
+    - morazán department
+  category: DEPARTMENT

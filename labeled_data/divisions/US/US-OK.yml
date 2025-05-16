@@ -1,0 +1,10 @@
+name: Oklahoma
+type: Division-1
+meta:
+  alpha2: US-OK
+  includes:
+    - oklahoma
+    - us-ok
+    - ok
+    - oklahoma state
+  category: STATE

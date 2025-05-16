@@ -1,0 +1,10 @@
+name: Hatohobei
+type: Division-1
+meta:
+  alpha2: PW-050
+  includes:
+    - hatohobei
+    - pw-050
+    - '050'
+    - hatohobei state
+  category: STATE

@@ -1,0 +1,11 @@
+name: Saint-Pierre-et-Miquelon
+type: Division-1
+meta:
+  alpha2: FR-PM
+  includes:
+    - saint-pierre-et-miquelon
+    - fr-pm
+    - pm
+    - saint-pierre-et-miquelon overseas collectivity
+    - saint-pierre
+  category: OVERSEAS COLLECTIVITY

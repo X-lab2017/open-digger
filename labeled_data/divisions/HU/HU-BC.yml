@@ -1,0 +1,10 @@
+name: Békéscsaba
+type: Division-1
+meta:
+  alpha2: HU-BC
+  includes:
+    - békéscsaba
+    - hu-bc
+    - bc
+    - békéscsaba city with county rights
+  category: CITY WITH COUNTY RIGHTS

@@ -1,0 +1,11 @@
+name: Buzău
+type: Division-1
+meta:
+  alpha2: RO-BZ
+  includes:
+    - buzău
+    - ro-bz
+    - bz
+    - buzău department
+    - buzău county
+  category: DEPARTMENT

@@ -1,0 +1,11 @@
+name: Vidin
+type: Division-1
+meta:
+  alpha2: BG-05
+  includes:
+    - vidin
+    - bg-05
+    - '05'
+    - vidin district
+    - vidin province
+  category: DISTRICT

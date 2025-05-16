@@ -1,0 +1,11 @@
+name: Littoral
+type: Division-1
+meta:
+  alpha2: CM-LT
+  includes:
+    - littoral
+    - cm-lt
+    - lt
+    - littoral region
+    - région du littoral
+  category: REGION

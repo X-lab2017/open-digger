@@ -1,0 +1,11 @@
+name: Qazvīn
+type: Division-1
+meta:
+  alpha2: IR-26
+  includes:
+    - qazvīn
+    - ir-26
+    - '26'
+    - qazvīn province
+    - qazvin province
+  category: PROVINCE

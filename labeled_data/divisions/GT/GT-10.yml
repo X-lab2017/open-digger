@@ -1,0 +1,10 @@
+name: Suchitepéquez
+type: Division-1
+meta:
+  alpha2: GT-10
+  includes:
+    - suchitepéquez
+    - gt-10
+    - '10'
+    - suchitepéquez department
+  category: DEPARTMENT

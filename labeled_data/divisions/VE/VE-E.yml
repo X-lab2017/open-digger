@@ -1,0 +1,11 @@
+name: Barinas
+type: Division-1
+meta:
+  alpha2: VE-E
+  includes:
+    - barinas
+    - ve-e
+    - e
+    - barinas state
+    - ba
+  category: STATE

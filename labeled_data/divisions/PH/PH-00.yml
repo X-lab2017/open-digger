@@ -1,0 +1,14 @@
+name: National Capital Region
+type: Division-1
+meta:
+  alpha2: PH-00
+  includes:
+    - national capital region
+    - ph-00
+    - '00'
+    - national capital region region
+    - pambansang punong rehiyon
+    - pambansang punong rehiyon region
+    - kalakhang maynila
+    - metro manila
+  category: REGION

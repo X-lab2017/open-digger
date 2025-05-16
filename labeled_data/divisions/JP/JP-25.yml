@@ -1,0 +1,12 @@
+name: Siga
+type: Division-1
+meta:
+  alpha2: JP-25
+  includes:
+    - shiga
+    - jp-25
+    - '25'
+    - shiga prefecture
+    - siga
+    - siga prefecture
+  category: PREFECTURE

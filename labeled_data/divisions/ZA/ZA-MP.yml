@@ -1,0 +1,12 @@
+name: Mpumalanga
+type: Division-1
+meta:
+  alpha2: ZA-MP
+  includes:
+    - mpumalanga
+    - za-mp
+    - mp
+    - mpumalanga province
+    - impumalanga
+    - impumalanga province
+  category: PROVINCE

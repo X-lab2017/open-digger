@@ -1,0 +1,11 @@
+name: Boyacá
+type: Division-1
+meta:
+  alpha2: CO-BOY
+  includes:
+    - boyacá
+    - co-boy
+    - boy
+    - boyacá department
+    - boyaca
+  category: DEPARTMENT

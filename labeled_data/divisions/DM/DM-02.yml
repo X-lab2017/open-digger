@@ -1,0 +1,10 @@
+name: Saint Andrew
+type: Division-1
+meta:
+  alpha2: DM-02
+  includes:
+    - saint andrew
+    - dm-02
+    - '02'
+    - saint andrew parish
+  category: PARISH

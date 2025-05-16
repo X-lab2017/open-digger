@@ -1,0 +1,12 @@
+name: Baukau
+type: Division-1
+meta:
+  alpha2: TL-BA
+  includes:
+    - baucau
+    - tl-ba
+    - ba
+    - baucau municipality
+    - baukau
+    - baukau municipality
+  category: MUNICIPALITY

@@ -1,0 +1,10 @@
+name: Starše
+type: Division-1
+meta:
+  alpha2: SI-115
+  includes:
+    - starše
+    - si-115
+    - '115'
+    - starše municipality
+  category: MUNICIPALITY

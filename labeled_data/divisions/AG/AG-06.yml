@@ -1,0 +1,10 @@
+name: Saint Paul
+type: Division-1
+meta:
+  alpha2: AG-06
+  includes:
+    - saint paul
+    - ag-06
+    - '06'
+    - saint paul parish
+  category: PARISH

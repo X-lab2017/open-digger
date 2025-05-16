@@ -1,0 +1,22 @@
+name: Centre-Est
+type: Division-1
+meta:
+  alpha2: BF-04
+  includes:
+    - boulgou
+    - bf-blg
+    - blg
+    - boulgou province
+    - centre-est
+    - bf-04
+    - '04'
+    - centre-est region
+    - koulpélogo
+    - bf-kop
+    - kop
+    - koulpélogo province
+    - kouritenga
+    - bf-kot
+    - kot
+    - kouritenga province
+  category: REGION

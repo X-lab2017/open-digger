@@ -1,0 +1,10 @@
+name: Virgin Islands
+type: Division-1
+meta:
+  alpha2: US-VI
+  includes:
+    - virgin islands
+    - us-vi
+    - vi
+    - virgin islands outlying area
+  category: OUTLYING AREA

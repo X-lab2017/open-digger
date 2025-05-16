@@ -1,0 +1,12 @@
+name: Haute-Sangha / Mambéré-Kadéï
+type: Division-1
+meta:
+  alpha2: CF-HS
+  includes:
+    - haute-sangha / mambéré-kadéï
+    - cf-hs
+    - hs
+    - haute-sangha / mambéré-kadéï prefecture
+    - tö-sangä / mbaere-kadeï
+    - tö-sangä / mbaere-kadeï prefecture
+  category: PREFECTURE

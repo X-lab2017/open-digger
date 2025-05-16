@@ -1,0 +1,10 @@
+name: Domagnano
+type: Division-1
+meta:
+  alpha2: SM-03
+  includes:
+    - domagnano
+    - sm-03
+    - '03'
+    - domagnano municipality
+  category: MUNICIPALITY

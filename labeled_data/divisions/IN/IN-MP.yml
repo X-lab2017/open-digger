@@ -1,0 +1,10 @@
+name: Madhya Pradesh
+type: Division-1
+meta:
+  alpha2: IN-MP
+  includes:
+    - madhya pradesh
+    - in-mp
+    - mp
+    - madhya pradesh state
+  category: STATE

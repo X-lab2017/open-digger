@@ -1,0 +1,15 @@
+name: Turkestanskaja oblast'
+type: Division-1
+meta:
+  alpha2: KZ-61
+  includes:
+    - turkestankaya oblast'
+    - kz-61
+    - '61'
+    - turkestankaya oblast' region
+    - turkestanskaja oblast'
+    - turkestanskaja oblast' region
+    - türkistan oblysy
+    - türkistan oblysy region
+    - turkistan region
+  category: REGION

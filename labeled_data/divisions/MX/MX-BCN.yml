@@ -1,0 +1,10 @@
+name: Baja California
+type: Division-1
+meta:
+  alpha2: MX-BCN
+  includes:
+    - baja california
+    - mx-bcn
+    - bcn
+    - baja california state
+  category: STATE

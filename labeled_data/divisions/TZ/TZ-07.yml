@@ -1,0 +1,12 @@
+name: Zanzibar North
+type: Division-1
+meta:
+  alpha2: TZ-07
+  includes:
+    - kaskazini unguja
+    - tz-07
+    - '07'
+    - kaskazini unguja region
+    - zanzibar north
+    - zanzibar north region
+  category: REGION

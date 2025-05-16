@@ -1,0 +1,11 @@
+name: İstanbul
+type: Division-1
+meta:
+  alpha2: TR-34
+  includes:
+    - i̇stanbul
+    - tr-34
+    - '34'
+    - i̇stanbul province
+    - istanbul
+  category: PROVINCE

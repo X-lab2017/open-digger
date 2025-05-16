@@ -1,0 +1,10 @@
+name: Qrendi
+type: Division-1
+meta:
+  alpha2: MT-44
+  includes:
+    - qrendi
+    - mt-44
+    - '44'
+    - qrendi local council
+  category: LOCAL COUNCIL

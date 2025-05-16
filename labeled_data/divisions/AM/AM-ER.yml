@@ -1,0 +1,11 @@
+name: Erevan
+type: Division-1
+meta:
+  alpha2: AM-ER
+  includes:
+    - erevan
+    - am-er
+    - er
+    - erevan city
+    - yerevan
+  category: CITY

@@ -1,0 +1,10 @@
+name: Artvin
+type: Division-1
+meta:
+  alpha2: TR-08
+  includes:
+    - artvin
+    - tr-08
+    - '08'
+    - artvin province
+  category: PROVINCE

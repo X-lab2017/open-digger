@@ -1,0 +1,10 @@
+name: Villa Clara
+type: Division-1
+meta:
+  alpha2: CU-05
+  includes:
+    - villa clara
+    - cu-05
+    - '05'
+    - villa clara province
+  category: PROVINCE

@@ -1,0 +1,12 @@
+name: Lac
+type: Division-1
+meta:
+  alpha2: TD-LC
+  includes:
+    - al buḩayrah
+    - td-lc
+    - lc
+    - al buḩayrah province
+    - lac
+    - lac province
+  category: PROVINCE

@@ -1,0 +1,14 @@
+name: Kamčatskij kraj
+type: Division-1
+meta:
+  alpha2: RU-KAM
+  includes:
+    - kamchatskiy kray
+    - ru-kam
+    - kam
+    - kamchatskiy kray administrative territory
+    - kamčatskij kraj
+    - kamčatskij kraj administrative territory
+    - kamchatka krai
+    - kamchatka
+  category: ADMINISTRATIVE TERRITORY

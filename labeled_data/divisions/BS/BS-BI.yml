@@ -1,0 +1,10 @@
+name: Bimini
+type: Division-1
+meta:
+  alpha2: BS-BI
+  includes:
+    - bimini
+    - bs-bi
+    - bi
+    - bimini district
+  category: DISTRICT

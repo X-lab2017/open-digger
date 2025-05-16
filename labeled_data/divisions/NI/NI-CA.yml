@@ -1,0 +1,10 @@
+name: Carazo
+type: Division-1
+meta:
+  alpha2: NI-CA
+  includes:
+    - carazo
+    - ni-ca
+    - ca
+    - carazo department
+  category: DEPARTMENT

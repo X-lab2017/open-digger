@@ -1,0 +1,10 @@
+name: Kano
+type: Division-1
+meta:
+  alpha2: NG-KN
+  includes:
+    - kano
+    - ng-kn
+    - kn
+    - kano state
+  category: STATE

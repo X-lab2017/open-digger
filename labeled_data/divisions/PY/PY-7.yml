@@ -1,0 +1,10 @@
+name: Itapúa
+type: Division-1
+meta:
+  alpha2: PY-7
+  includes:
+    - itapúa
+    - py-7
+    - '7'
+    - itapúa department
+  category: DEPARTMENT

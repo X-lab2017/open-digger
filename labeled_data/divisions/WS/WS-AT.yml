@@ -1,0 +1,10 @@
+name: Atua
+type: Division-1
+meta:
+  alpha2: WS-AT
+  includes:
+    - atua
+    - ws-at
+    - at
+    - atua district
+  category: DISTRICT

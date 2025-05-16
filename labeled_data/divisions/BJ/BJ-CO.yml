@@ -1,0 +1,10 @@
+name: Collines
+type: Division-1
+meta:
+  alpha2: BJ-CO
+  includes:
+    - collines
+    - bj-co
+    - co
+    - collines department
+  category: DEPARTMENT

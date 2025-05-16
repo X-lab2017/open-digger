@@ -1,0 +1,12 @@
+name: Prahova
+type: Division-1
+meta:
+  alpha2: RO-PH
+  includes:
+    - prahova
+    - ro-ph
+    - ph
+    - prahova department
+    - județul prahova
+    - prahova county
+  category: DEPARTMENT

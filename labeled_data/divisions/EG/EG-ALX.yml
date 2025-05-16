@@ -1,0 +1,13 @@
+name: Al Iskandarīyah
+type: Division-1
+meta:
+  alpha2: EG-ALX
+  includes:
+    - al iskandarīyah
+    - eg-alx
+    - alx
+    - al iskandarīyah governorate
+    - alexandria
+    - alexandria governorate
+    - محافظة الإسكندرية
+  category: GOVERNORATE

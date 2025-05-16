@@ -1,0 +1,10 @@
+name: Kinshasa
+type: Division-1
+meta:
+  alpha2: CD-KN
+  includes:
+    - kinshasa
+    - cd-kn
+    - kn
+    - kinshasa city
+  category: CITY

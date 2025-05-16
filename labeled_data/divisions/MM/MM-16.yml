@@ -1,0 +1,10 @@
+name: Rakhine
+type: Division-1
+meta:
+  alpha2: MM-16
+  includes:
+    - rakhine
+    - mm-16
+    - '16'
+    - rakhine state
+  category: STATE

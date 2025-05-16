@@ -1,0 +1,10 @@
+name: Lindi
+type: Division-1
+meta:
+  alpha2: TZ-12
+  includes:
+    - lindi
+    - tz-12
+    - '12'
+    - lindi region
+  category: REGION

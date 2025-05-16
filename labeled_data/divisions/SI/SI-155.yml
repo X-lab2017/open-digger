@@ -1,0 +1,10 @@
+name: Dobrna
+type: Division-1
+meta:
+  alpha2: SI-155
+  includes:
+    - dobrna
+    - si-155
+    - '155'
+    - dobrna municipality
+  category: MUNICIPALITY

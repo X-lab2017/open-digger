@@ -1,0 +1,133 @@
+name: Algeria
+type: Division-0
+meta:
+  alpha2: DZ
+  includes:
+    - Algeria
+    - DZ
+    - '012'
+    - the People's Democratic Republic of Algeria
+    - 阿尔及利亚
+  name_full: the People's Democratic Republic of Algeria
+  name_zh: 阿尔及利亚
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 91819
+    - year: 2020
+      quarter: 2
+      count: 103633
+    - year: 2020
+      quarter: 3
+      count: 112889
+    - year: 2020
+      quarter: 4
+      count: 122426
+    - year: 2021
+      quarter: 1
+      count: 132744
+    - year: 2021
+      quarter: 2
+      count: 145009
+    - year: 2021
+      quarter: 3
+      count: 157075
+    - year: 2021
+      quarter: 4
+      count: 169045
+    - year: 2022
+      quarter: 1
+      count: 181881
+    - year: 2022
+      quarter: 2
+      count: 193177
+    - year: 2022
+      quarter: 3
+      count: 205340
+    - year: 2022
+      quarter: 4
+      count: 219383
+    - year: 2023
+      quarter: 1
+      count: 238157
+    - year: 2023
+      quarter: 2
+      count: 256873
+    - year: 2023
+      quarter: 3
+      count: 273534
+    - year: 2023
+      quarter: 4
+      count: 291726
+    - year: 2024
+      quarter: 1
+      count: 313294
+    - year: 2024
+      quarter: 2
+      count: 331205
+    - year: 2024
+      quarter: 3
+      count: 346777
+    - year: 2024
+      quarter: 4
+      count: 367363
+data:
+  labels:
+    - DZ-01
+    - DZ-16
+    - DZ-23
+    - DZ-44
+    - DZ-46
+    - DZ-05
+    - DZ-07
+    - DZ-09
+    - DZ-50
+    - DZ-34
+    - DZ-10
+    - DZ-35
+    - DZ-08
+    - DZ-06
+    - DZ-52
+    - DZ-02
+    - DZ-25
+    - DZ-56
+    - DZ-17
+    - DZ-32
+    - DZ-57
+    - DZ-58
+    - DZ-39
+    - DZ-36
+    - DZ-47
+    - DZ-24
+    - DZ-33
+    - DZ-54
+    - DZ-53
+    - DZ-18
+    - DZ-40
+    - DZ-03
+    - DZ-28
+    - DZ-29
+    - DZ-43
+    - DZ-27
+    - DZ-26
+    - DZ-45
+    - DZ-31
+    - DZ-30
+    - DZ-51
+    - DZ-04
+    - DZ-48
+    - DZ-20
+    - DZ-22
+    - DZ-21
+    - DZ-41
+    - DZ-19
+    - DZ-11
+    - DZ-14
+    - DZ-49
+    - DZ-37
+    - DZ-42
+    - DZ-38
+    - DZ-15
+    - DZ-13
+    - DZ-55
+    - DZ-12

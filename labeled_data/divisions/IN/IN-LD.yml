@@ -1,0 +1,10 @@
+name: Lakshadweep
+type: Division-1
+meta:
+  alpha2: IN-LD
+  includes:
+    - lakshadweep
+    - in-ld
+    - ld
+    - lakshadweep union territory
+  category: UNION TERRITORY

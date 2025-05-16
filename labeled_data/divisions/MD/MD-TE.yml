@@ -1,0 +1,10 @@
+name: Telenești
+type: Division-1
+meta:
+  alpha2: MD-TE
+  includes:
+    - telenești
+    - md-te
+    - te
+    - telenești district
+  category: DISTRICT

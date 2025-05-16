@@ -1,0 +1,46 @@
+name: Vestfirðir
+type: Division-1
+meta:
+  alpha2: IS-4
+  includes:
+    - bolungarvíkurkaupstaður
+    - is-bol
+    - bol
+    - bolungarvíkurkaupstaður municipality
+    - kaldrananeshreppur
+    - is-kal
+    - kal
+    - kaldrananeshreppur municipality
+    - reykhólahreppur
+    - is-rhh
+    - rhh
+    - reykhólahreppur municipality
+    - strandabyggð
+    - is-str
+    - str
+    - strandabyggð municipality
+    - súðavíkurhreppur
+    - is-sdv
+    - sdv
+    - súðavíkurhreppur municipality
+    - tálknafjarðarhreppur
+    - is-tal
+    - tal
+    - tálknafjarðarhreppur municipality
+    - vestfirðir
+    - is-4
+    - '4'
+    - vestfirðir region
+    - vesturbyggð
+    - is-ver
+    - ver
+    - vesturbyggð municipality
+    - árneshreppur
+    - is-arn
+    - arn
+    - árneshreppur municipality
+    - ísafjarðarbær
+    - is-isa
+    - isa
+    - ísafjarðarbær municipality
+  category: REGION

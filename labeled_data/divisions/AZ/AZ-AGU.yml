@@ -1,0 +1,10 @@
+name: Ağsu
+type: Division-1
+meta:
+  alpha2: AZ-AGU
+  includes:
+    - ağsu
+    - az-agu
+    - agu
+    - ağsu rayon
+  category: RAYON

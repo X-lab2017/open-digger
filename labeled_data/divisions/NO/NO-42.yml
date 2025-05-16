@@ -1,0 +1,10 @@
+name: Agder
+type: Division-1
+meta:
+  alpha2: NO-42
+  includes:
+    - agder
+    - no-42
+    - '42'
+    - agder county
+  category: COUNTY

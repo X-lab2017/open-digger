@@ -1,0 +1,116 @@
+name: Romania
+type: Division-0
+meta:
+  alpha2: RO
+  includes:
+    - Romania
+    - RO
+    - '642'
+    - 罗马尼亚
+  name_full: Romania
+  name_zh: 罗马尼亚
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 216516
+    - year: 2020
+      quarter: 2
+      count: 235652
+    - year: 2020
+      quarter: 3
+      count: 249973
+    - year: 2020
+      quarter: 4
+      count: 270853
+    - year: 2021
+      quarter: 1
+      count: 291342
+    - year: 2021
+      quarter: 2
+      count: 307215
+    - year: 2021
+      quarter: 3
+      count: 321946
+    - year: 2021
+      quarter: 4
+      count: 341462
+    - year: 2022
+      quarter: 1
+      count: 366434
+    - year: 2022
+      quarter: 2
+      count: 387083
+    - year: 2022
+      quarter: 3
+      count: 404462
+    - year: 2022
+      quarter: 4
+      count: 425122
+    - year: 2023
+      quarter: 1
+      count: 444800
+    - year: 2023
+      quarter: 2
+      count: 465336
+    - year: 2023
+      quarter: 3
+      count: 481867
+    - year: 2023
+      quarter: 4
+      count: 502831
+    - year: 2024
+      quarter: 1
+      count: 530143
+    - year: 2024
+      quarter: 2
+      count: 548585
+    - year: 2024
+      quarter: 3
+      count: 565410
+    - year: 2024
+      quarter: 4
+      count: 589523
+data:
+  labels:
+    - RO-AB
+    - RO-AR
+    - RO-AG
+    - RO-BC
+    - RO-BH
+    - RO-BN
+    - RO-BT
+    - RO-BV
+    - RO-BR
+    - RO-B
+    - RO-BZ
+    - RO-CS
+    - RO-CJ
+    - RO-CT
+    - RO-CV
+    - RO-CL
+    - RO-DJ
+    - RO-DB
+    - RO-GL
+    - RO-GR
+    - RO-GJ
+    - RO-HR
+    - RO-HD
+    - RO-IL
+    - RO-IS
+    - RO-IF
+    - RO-MM
+    - RO-MH
+    - RO-MS
+    - RO-NT
+    - RO-OT
+    - RO-PH
+    - RO-SM
+    - RO-SB
+    - RO-SV
+    - RO-SJ
+    - RO-TR
+    - RO-TM
+    - RO-TL
+    - RO-VS
+    - RO-VN
+    - RO-VL

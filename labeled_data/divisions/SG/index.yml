@@ -1,0 +1,81 @@
+name: Singapore
+type: Division-0
+meta:
+  alpha2: SG
+  includes:
+    - Singapore
+    - SG
+    - '702'
+    - the Republic of Singapore
+    - 新加坡
+  name_full: the Republic of Singapore
+  name_zh: 新加坡
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 302591
+    - year: 2020
+      quarter: 2
+      count: 330375
+    - year: 2020
+      quarter: 3
+      count: 371132
+    - year: 2020
+      quarter: 4
+      count: 402074
+    - year: 2021
+      quarter: 1
+      count: 429261
+    - year: 2021
+      quarter: 2
+      count: 477580
+    - year: 2021
+      quarter: 3
+      count: 518833
+    - year: 2021
+      quarter: 4
+      count: 562951
+    - year: 2022
+      quarter: 1
+      count: 615939
+    - year: 2022
+      quarter: 2
+      count: 672124
+    - year: 2022
+      quarter: 3
+      count: 724785
+    - year: 2022
+      quarter: 4
+      count: 774024
+    - year: 2023
+      quarter: 1
+      count: 850023
+    - year: 2023
+      quarter: 2
+      count: 943281
+    - year: 2023
+      quarter: 3
+      count: 1020658
+    - year: 2023
+      quarter: 4
+      count: 1091989
+    - year: 2024
+      quarter: 1
+      count: 1180464
+    - year: 2024
+      quarter: 2
+      count: 1235877
+    - year: 2024
+      quarter: 3
+      count: 1311862
+    - year: 2024
+      quarter: 4
+      count: 1398636
+data:
+  labels:
+    - SG-01
+    - SG-02
+    - SG-03
+    - SG-04
+    - SG-05
+    - ':companies/cloudwise'

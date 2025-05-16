@@ -1,0 +1,10 @@
+name: Migori
+type: Division-1
+meta:
+  alpha2: KE-27
+  includes:
+    - migori
+    - ke-27
+    - '27'
+    - migori county
+  category: COUNTY

@@ -1,0 +1,13 @@
+name: Dumyāţ
+type: Division-1
+meta:
+  alpha2: EG-DT
+  includes:
+    - dumyāţ
+    - eg-dt
+    - dt
+    - dumyāţ governorate
+    - damietta
+    - damietta governorate
+    - dumyat
+  category: GOVERNORATE

@@ -1,0 +1,10 @@
+name: Colorado
+type: Division-1
+meta:
+  alpha2: US-CO
+  includes:
+    - colorado
+    - us-co
+    - co
+    - colorado state
+  category: STATE

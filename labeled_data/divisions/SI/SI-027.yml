@@ -1,0 +1,10 @@
+name: Gorenja vas-Poljane
+type: Division-1
+meta:
+  alpha2: SI-027
+  includes:
+    - gorenja vas-poljane
+    - si-027
+    - '027'
+    - gorenja vas-poljane municipality
+  category: MUNICIPALITY

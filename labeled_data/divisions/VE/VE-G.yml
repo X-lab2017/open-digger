@@ -1,0 +1,11 @@
+name: Carabobo
+type: Division-1
+meta:
+  alpha2: VE-G
+  includes:
+    - carabobo
+    - ve-g
+    - g
+    - carabobo state
+    - ca
+  category: STATE

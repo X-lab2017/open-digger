@@ -1,0 +1,10 @@
+name: Colima
+type: Division-1
+meta:
+  alpha2: MX-COL
+  includes:
+    - colima
+    - mx-col
+    - col
+    - colima state
+  category: STATE

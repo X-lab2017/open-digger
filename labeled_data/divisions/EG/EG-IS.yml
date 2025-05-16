@@ -1,0 +1,12 @@
+name: Al Ismā'īlīyah
+type: Division-1
+meta:
+  alpha2: EG-IS
+  includes:
+    - al ismā'īlīyah
+    - eg-is
+    - is
+    - al ismā'īlīyah governorate
+    - ismailia governorate
+    - al isma'iliyah
+  category: GOVERNORATE

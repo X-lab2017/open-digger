@@ -1,0 +1,12 @@
+name: Daejeon-gwangyeoksi
+type: Division-1
+meta:
+  alpha2: KR-30
+  includes:
+    - daejeon-gwangyeoksi
+    - kr-30
+    - '30'
+    - daejeon-gwangyeoksi metropolitan city
+    - daejeon
+    - daejeon metropolitan city
+  category: METROPOLITAN CITY

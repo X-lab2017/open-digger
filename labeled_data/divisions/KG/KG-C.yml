@@ -1,0 +1,15 @@
+name: Čujskaja oblast'
+type: Division-1
+meta:
+  alpha2: KG-C
+  includes:
+    - chuyskaya oblast'
+    - kg-c
+    - c
+    - chuyskaya oblast' region
+    - chüy
+    - chüy region
+    - čujskaja oblast'
+    - čujskaja oblast' region
+    - bishkek city
+  category: REGION

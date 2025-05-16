@@ -1,0 +1,98 @@
+name: Wales
+type: Division-1
+meta:
+  alpha2: GB-WLS
+  includes:
+    - blaenau gwent
+    - gb-bgw
+    - bgw
+    - blaenau gwent unitary authority
+    - bridgend
+    - gb-bge
+    - bge
+    - bridgend unitary authority
+    - caerphilly
+    - gb-cay
+    - cay
+    - caerphilly unitary authority
+    - cardiff
+    - gb-crf
+    - crf
+    - cardiff unitary authority
+    - carmarthenshire
+    - gb-cmn
+    - cmn
+    - carmarthenshire unitary authority
+    - ceredigion
+    - gb-cgn
+    - cgn
+    - ceredigion unitary authority
+    - conwy
+    - gb-cwy
+    - cwy
+    - conwy unitary authority
+    - denbighshire
+    - gb-den
+    - den
+    - denbighshire unitary authority
+    - flintshire
+    - gb-fln
+    - fln
+    - flintshire unitary authority
+    - gwynedd
+    - gb-gwn
+    - gwn
+    - gwynedd unitary authority
+    - isle of anglesey
+    - gb-agy
+    - agy
+    - isle of anglesey unitary authority
+    - merthyr tydfil
+    - gb-mty
+    - mty
+    - merthyr tydfil unitary authority
+    - monmouthshire
+    - gb-mon
+    - mon
+    - monmouthshire unitary authority
+    - neath port talbot
+    - gb-ntl
+    - ntl
+    - neath port talbot unitary authority
+    - newport
+    - gb-nwp
+    - nwp
+    - newport unitary authority
+    - pembrokeshire
+    - gb-pem
+    - pem
+    - pembrokeshire unitary authority
+    - powys
+    - gb-pow
+    - pow
+    - powys unitary authority
+    - rhondda cynon taff
+    - gb-rct
+    - rct
+    - rhondda cynon taff unitary authority
+    - swansea
+    - gb-swa
+    - swa
+    - swansea unitary authority
+    - torfaen
+    - gb-tof
+    - tof
+    - torfaen unitary authority
+    - vale of glamorgan
+    - gb-vgl
+    - vgl
+    - vale of glamorgan unitary authority
+    - wales
+    - gb-wls
+    - wls
+    - wales country
+    - wrexham
+    - gb-wrx
+    - wrx
+    - wrexham unitary authority
+  category: COUNTRY

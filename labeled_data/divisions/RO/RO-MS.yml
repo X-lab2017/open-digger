@@ -1,0 +1,11 @@
+name: Mureș
+type: Division-1
+meta:
+  alpha2: RO-MS
+  includes:
+    - mureș
+    - ro-ms
+    - ms
+    - mureș department
+    - mureş
+  category: DEPARTMENT

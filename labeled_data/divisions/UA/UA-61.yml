@@ -1,0 +1,13 @@
+name: Ternopilska oblast
+type: Division-1
+meta:
+  alpha2: UA-61
+  includes:
+    - ternopilska oblast
+    - ua-61
+    - '61'
+    - ternopilska oblast region
+    - ternopil oblast
+    - ternopil's'ka oblast
+    - ternopil
+  category: REGION

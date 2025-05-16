@@ -1,0 +1,10 @@
+name: Nyeri
+type: Division-1
+meta:
+  alpha2: KE-36
+  includes:
+    - nyeri
+    - ke-36
+    - '36'
+    - nyeri county
+  category: COUNTY

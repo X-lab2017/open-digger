@@ -1,0 +1,10 @@
+name: Pest
+type: Division-1
+meta:
+  alpha2: HU-PE
+  includes:
+    - pest
+    - hu-pe
+    - pe
+    - pest county
+  category: COUNTY

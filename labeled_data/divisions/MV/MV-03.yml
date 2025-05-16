@@ -1,0 +1,12 @@
+name: Faadhippolhu
+type: Division-1
+meta:
+  alpha2: MV-03
+  includes:
+    - faadhippolhu
+    - mv-03
+    - '03'
+    - faadhippolhu administrative atoll
+    - lhaviyani
+    - lhaviyani administrative atoll
+  category: ADMINISTRATIVE ATOLL

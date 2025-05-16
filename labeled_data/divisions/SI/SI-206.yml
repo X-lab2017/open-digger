@@ -1,0 +1,10 @@
+name: Šmarješke Toplice
+type: Division-1
+meta:
+  alpha2: SI-206
+  includes:
+    - šmarješke toplice
+    - si-206
+    - '206'
+    - šmarješke toplice municipality
+  category: MUNICIPALITY

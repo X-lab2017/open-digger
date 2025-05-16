@@ -1,0 +1,31 @@
+name: Austurland
+type: Division-1
+meta:
+  alpha2: IS-7
+  includes:
+    - austurland
+    - is-7
+    - '7'
+    - austurland region
+    - fjarðabyggð
+    - is-fjd
+    - fjd
+    - fjarðabyggð municipality
+    - fljótsdalshreppur
+    - is-flr
+    - flr
+    - fljótsdalshreppur municipality
+    - múlaþing
+    - is-mul
+    - mul
+    - múlaþing municipality
+    - sveitarfélagið hornafjörður
+    - is-shf
+    - shf
+    - sveitarfélagið hornafjörður municipality
+    - vopnafjarðarhreppur
+    - is-vop
+    - vop
+    - vopnafjarðarhreppur municipality
+    - sveitarf��lagið hornafjörður
+  category: REGION

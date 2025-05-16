@@ -1,0 +1,109 @@
+name: Afghanistan
+type: Division-0
+meta:
+  alpha2: AF
+  includes:
+    - Afghanistan
+    - AF
+    - '004'
+    - the Islamic Republic of Afghanistan
+    - 阿富汗
+  name_full: the Islamic Republic of Afghanistan
+  name_zh: 阿富汗
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 6481
+    - year: 2020
+      quarter: 2
+      count: 7457
+    - year: 2020
+      quarter: 3
+      count: 8214
+    - year: 2020
+      quarter: 4
+      count: 9236
+    - year: 2021
+      quarter: 1
+      count: 10176
+    - year: 2021
+      quarter: 2
+      count: 11195
+    - year: 2021
+      quarter: 3
+      count: 12024
+    - year: 2021
+      quarter: 4
+      count: 13038
+    - year: 2022
+      quarter: 1
+      count: 14215
+    - year: 2022
+      quarter: 2
+      count: 15473
+    - year: 2022
+      quarter: 3
+      count: 16913
+    - year: 2022
+      quarter: 4
+      count: 18290
+    - year: 2023
+      quarter: 1
+      count: 19894
+    - year: 2023
+      quarter: 2
+      count: 21664
+    - year: 2023
+      quarter: 3
+      count: 23912
+    - year: 2023
+      quarter: 4
+      count: 25795
+    - year: 2024
+      quarter: 1
+      count: 28223
+    - year: 2024
+      quarter: 2
+      count: 30143
+    - year: 2024
+      quarter: 3
+      count: 32356
+    - year: 2024
+      quarter: 4
+      count: 35158
+data:
+  labels:
+    - AF-BDS
+    - AF-BGL
+    - AF-BAL
+    - AF-BDG
+    - AF-BAM
+    - AF-DAY
+    - AF-FRA
+    - AF-FYB
+    - AF-GHA
+    - AF-GHO
+    - AF-HEL
+    - AF-HER
+    - AF-JOW
+    - AF-KAN
+    - AF-KHO
+    - AF-KNR
+    - AF-KDZ
+    - AF-KAB
+    - AF-KAP
+    - AF-LAG
+    - AF-LOG
+    - AF-NAN
+    - AF-NIM
+    - AF-NUR
+    - AF-PIA
+    - AF-PKA
+    - AF-PAN
+    - AF-PAR
+    - AF-SAM
+    - AF-SAR
+    - AF-TAK
+    - AF-URU
+    - AF-WAR
+    - AF-ZAB

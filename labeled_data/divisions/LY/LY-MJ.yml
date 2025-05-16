@@ -1,0 +1,10 @@
+name: Al Marj
+type: Division-1
+meta:
+  alpha2: LY-MJ
+  includes:
+    - al marj
+    - ly-mj
+    - mj
+    - al marj popularate
+  category: POPULARATE

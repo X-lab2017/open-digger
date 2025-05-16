@@ -1,0 +1,12 @@
+name: Varakļānu novads
+type: Division-1
+meta:
+  alpha2: LV-102
+  includes:
+    - varakļānu novads
+    - lv-102
+    - '102'
+    - varakļānu novads municipality
+    - varakļāni
+    - varakļāni municipality
+  category: MUNICIPALITY

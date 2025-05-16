@@ -439,7 +439,7 @@ import { getLogger } from "../utils";
 
       return map.get(endYear)!.sort((a, b) => b.value - a.value).filter(i => i.ratio > 0.01);
     };
-    const ids = [':regions/CN', ':regions/US'];
+    const ids = [':divisions/CN', ':divisions/US'];
 
     ids.forEach(findContributions);
 

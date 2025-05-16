@@ -1,0 +1,12 @@
+name: Koper
+type: Division-1
+meta:
+  alpha2: SI-050
+  includes:
+    - koper
+    - si-050
+    - '050'
+    - koper urban municipality
+    - capodistria
+    - capodistria urban municipality
+  category: URBAN MUNICIPALITY

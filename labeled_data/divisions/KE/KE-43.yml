@@ -1,0 +1,10 @@
+name: Turkana
+type: Division-1
+meta:
+  alpha2: KE-43
+  includes:
+    - turkana
+    - ke-43
+    - '43'
+    - turkana county
+  category: COUNTY

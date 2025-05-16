@@ -1,0 +1,11 @@
+name: Chihuahua
+type: Division-1
+meta:
+  alpha2: MX-CHH
+  includes:
+    - chihuahua
+    - mx-chh
+    - chh
+    - chihuahua state
+    - chih
+  category: STATE

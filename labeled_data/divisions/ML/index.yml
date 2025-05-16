@@ -1,0 +1,86 @@
+name: Mali
+type: Division-0
+meta:
+  alpha2: ML
+  includes:
+    - Mali
+    - ML
+    - '466'
+    - the Republic of Mali
+    - 马里
+  name_full: the Republic of Mali
+  name_zh: 马里
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 2024
+    - year: 2020
+      quarter: 2
+      count: 2296
+    - year: 2020
+      quarter: 3
+      count: 2630
+    - year: 2020
+      quarter: 4
+      count: 2930
+    - year: 2021
+      quarter: 1
+      count: 3232
+    - year: 2021
+      quarter: 2
+      count: 3589
+    - year: 2021
+      quarter: 3
+      count: 4050
+    - year: 2021
+      quarter: 4
+      count: 4432
+    - year: 2022
+      quarter: 1
+      count: 4963
+    - year: 2022
+      quarter: 2
+      count: 5489
+    - year: 2022
+      quarter: 3
+      count: 6082
+    - year: 2022
+      quarter: 4
+      count: 6747
+    - year: 2023
+      quarter: 1
+      count: 7485
+    - year: 2023
+      quarter: 2
+      count: 8109
+    - year: 2023
+      quarter: 3
+      count: 8740
+    - year: 2023
+      quarter: 4
+      count: 9363
+    - year: 2024
+      quarter: 1
+      count: 10049
+    - year: 2024
+      quarter: 2
+      count: 10543
+    - year: 2024
+      quarter: 3
+      count: 11268
+    - year: 2024
+      quarter: 4
+      count: 12066
+data:
+  labels:
+    - ML-BKO
+    - ML-7
+    - ML-1
+    - ML-8
+    - ML-2
+    - ML-5
+    - ML-9
+    - ML-3
+    - ML-4
+    - ML-10
+    - ML-6

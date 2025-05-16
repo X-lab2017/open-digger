@@ -1,0 +1,15 @@
+name: Tomskaya oblast'
+type: Division-1
+meta:
+  alpha2: RU-TOM
+  includes:
+    - tomskaja oblast'
+    - ru-tom
+    - tom
+    - tomskaja oblast' administrative region
+    - tomskaya oblast'
+    - tomskaya oblast' administrative region
+    - tomsk oblast
+    - magadan
+    - tomsk
+  category: ADMINISTRATIVE REGION

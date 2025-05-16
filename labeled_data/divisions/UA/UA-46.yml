@@ -1,0 +1,13 @@
+name: Lvivska oblast
+type: Division-1
+meta:
+  alpha2: UA-46
+  includes:
+    - lvivska oblast
+    - ua-46
+    - '46'
+    - lvivska oblast region
+    - lviv oblast
+    - l'vivs'ka oblast
+    - lviv
+  category: REGION

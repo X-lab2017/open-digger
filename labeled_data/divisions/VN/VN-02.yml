@@ -1,0 +1,11 @@
+name: Lào Cai
+type: Division-1
+meta:
+  alpha2: VN-02
+  includes:
+    - lào cai
+    - vn-02
+    - '02'
+    - lào cai province
+    - lao cai
+  category: PROVINCE

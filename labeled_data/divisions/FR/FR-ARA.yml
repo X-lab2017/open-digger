@@ -1,0 +1,63 @@
+name: Auvergne-Rhône-Alpes
+type: Division-1
+meta:
+  alpha2: FR-ARA
+  includes:
+    - ain
+    - fr-01
+    - '01'
+    - ain metropolitan department
+    - allier
+    - fr-03
+    - '03'
+    - allier metropolitan department
+    - ardèche
+    - fr-07
+    - '07'
+    - ardèche metropolitan department
+    - auvergne-rhône-alpes
+    - fr-ara
+    - ara
+    - auvergne-rhône-alpes metropolitan region
+    - cantal
+    - fr-15
+    - '15'
+    - cantal metropolitan department
+    - drôme
+    - fr-26
+    - '26'
+    - drôme metropolitan department
+    - haute-loire
+    - fr-43
+    - '43'
+    - haute-loire metropolitan department
+    - haute-savoie
+    - fr-74
+    - '74'
+    - haute-savoie metropolitan department
+    - isère
+    - fr-38
+    - '38'
+    - isère metropolitan department
+    - loire
+    - fr-42
+    - '42'
+    - loire metropolitan department
+    - métropole de lyon
+    - fr-69m
+    - 69m
+    - métropole de lyon metropolitan collectivity with special status
+    - puy-de-dôme
+    - fr-63
+    - '63'
+    - puy-de-dôme metropolitan department
+    - rhône
+    - fr-69
+    - '69'
+    - rhône metropolitan department
+    - savoie
+    - fr-73
+    - '73'
+    - savoie metropolitan department
+    - auvergne
+  category: METROPOLITAN REGION

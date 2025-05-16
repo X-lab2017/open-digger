@@ -1,0 +1,10 @@
+name: Bắc Kạn
+type: Division-1
+meta:
+  alpha2: VN-53
+  includes:
+    - bắc kạn
+    - vn-53
+    - '53'
+    - bắc kạn province
+  category: PROVINCE

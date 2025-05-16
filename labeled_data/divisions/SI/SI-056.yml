@@ -1,0 +1,10 @@
+name: Kuzma
+type: Division-1
+meta:
+  alpha2: SI-056
+  includes:
+    - kuzma
+    - si-056
+    - '056'
+    - kuzma municipality
+  category: MUNICIPALITY

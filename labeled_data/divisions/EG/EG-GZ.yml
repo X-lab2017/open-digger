@@ -1,0 +1,14 @@
+name: Al Jīzah
+type: Division-1
+meta:
+  alpha2: EG-GZ
+  includes:
+    - al jīzah
+    - eg-gz
+    - gz
+    - al jīzah governorate
+    - giza
+    - giza governorate
+    - al jizah
+    - محافظة الجيزة
+  category: GOVERNORATE

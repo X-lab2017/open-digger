@@ -1,0 +1,10 @@
+name: Enugu
+type: Division-1
+meta:
+  alpha2: NG-EN
+  includes:
+    - enugu
+    - ng-en
+    - en
+    - enugu state
+  category: STATE

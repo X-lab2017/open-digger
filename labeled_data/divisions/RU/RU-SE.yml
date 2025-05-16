@@ -1,0 +1,19 @@
+name: Severnaya Osetiya
+type: Division-1
+meta:
+  alpha2: RU-SE
+  includes:
+    - severnaja osetija
+    - ru-se
+    - se
+    - severnaja osetija republic
+    - alanija [respublika severnaja osetija-alanija]
+    - alanija [respublika severnaja osetija-alanija] republic
+    - severnaya osetiya
+    - severnaya osetiya republic
+    - alaniya [respublika severnaya osetiya alaniya]
+    - alaniya [respublika severnaya osetiya alaniya] republic
+    - north ossetia–alania republic
+    - respublika severnaya osetiya — alaniya
+    - north ossetia-alania
+  category: REPUBLIC

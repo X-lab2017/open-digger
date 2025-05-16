@@ -1,0 +1,27 @@
+name: North-West
+type: Division-1
+meta:
+  alpha2: ZA-NW
+  includes:
+    - bokone bophirima
+    - za-nw
+    - nw
+    - bokone bophirima province
+    - lebowa bodikela
+    - lebowa bodikela province
+    - leboya bophirima
+    - leboya bophirima province
+    - mntla-ntshona
+    - mntla-ntshona province
+    - n'walungu-vupeladyambu
+    - n'walungu-vupeladyambu province
+    - noordwes
+    - noordwes province
+    - north-west
+    - north-west province
+    - nyakatho-ntshonalanga
+    - nyakatho-ntshonalanga province
+    - itlhagwini-tjhingalanga
+    - itlhagwini-tjhingalanga province
+    - north west
+  category: PROVINCE

@@ -1,0 +1,81 @@
+name: Kuwait
+type: Division-0
+meta:
+  alpha2: KW
+  includes:
+    - Kuwait
+    - KW
+    - '414'
+    - he State of Kuwait
+    - 科威特
+  name_full: he State of Kuwait
+  name_zh: 科威特
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 21059
+    - year: 2020
+      quarter: 2
+      count: 24819
+    - year: 2020
+      quarter: 3
+      count: 28134
+    - year: 2020
+      quarter: 4
+      count: 30888
+    - year: 2021
+      quarter: 1
+      count: 33379
+    - year: 2021
+      quarter: 2
+      count: 35979
+    - year: 2021
+      quarter: 3
+      count: 38064
+    - year: 2021
+      quarter: 4
+      count: 40249
+    - year: 2022
+      quarter: 1
+      count: 43114
+    - year: 2022
+      quarter: 2
+      count: 45328
+    - year: 2022
+      quarter: 3
+      count: 48078
+    - year: 2022
+      quarter: 4
+      count: 50387
+    - year: 2023
+      quarter: 1
+      count: 53431
+    - year: 2023
+      quarter: 2
+      count: 56922
+    - year: 2023
+      quarter: 3
+      count: 60449
+    - year: 2023
+      quarter: 4
+      count: 63137
+    - year: 2024
+      quarter: 1
+      count: 66489
+    - year: 2024
+      quarter: 2
+      count: 69284
+    - year: 2024
+      quarter: 3
+      count: 72179
+    - year: 2024
+      quarter: 4
+      count: 75259
+data:
+  labels:
+    - KW-AH
+    - KW-FA
+    - KW-JA
+    - KW-KU
+    - KW-MU
+    - KW-HA

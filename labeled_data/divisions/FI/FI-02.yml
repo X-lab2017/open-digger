@@ -1,0 +1,13 @@
+name: Södra Karelen
+type: Division-1
+meta:
+  alpha2: FI-02
+  includes:
+    - etelä-karjala
+    - fi-02
+    - '02'
+    - etelä-karjala region
+    - södra karelen
+    - södra karelen region
+    - south karelia
+  category: REGION

@@ -1,0 +1,10 @@
+name: Baja Verapaz
+type: Division-1
+meta:
+  alpha2: GT-15
+  includes:
+    - baja verapaz
+    - gt-15
+    - '15'
+    - baja verapaz department
+  category: DEPARTMENT

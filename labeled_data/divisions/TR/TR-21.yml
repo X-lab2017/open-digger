@@ -1,0 +1,10 @@
+name: Diyarbakır
+type: Division-1
+meta:
+  alpha2: TR-21
+  includes:
+    - diyarbakır
+    - tr-21
+    - '21'
+    - diyarbakır province
+  category: PROVINCE

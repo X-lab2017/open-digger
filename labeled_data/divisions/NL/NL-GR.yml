@@ -1,0 +1,10 @@
+name: Groningen
+type: Division-1
+meta:
+  alpha2: NL-GR
+  includes:
+    - groningen
+    - nl-gr
+    - gr
+    - groningen province
+  category: PROVINCE

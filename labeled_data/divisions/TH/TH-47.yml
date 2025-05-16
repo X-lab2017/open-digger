@@ -1,0 +1,11 @@
+name: Sakon Nakhon
+type: Division-1
+meta:
+  alpha2: TH-47
+  includes:
+    - sakon nakhon
+    - th-47
+    - '47'
+    - sakon nakhon province
+    - chang wat sakon nakhon
+  category: PROVINCE

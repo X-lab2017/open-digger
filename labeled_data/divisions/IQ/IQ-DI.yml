@@ -1,0 +1,11 @@
+name: Diyālá
+type: Division-1
+meta:
+  alpha2: IQ-DI
+  includes:
+    - diyālá
+    - iq-di
+    - di
+    - diyālá governorate
+    - diyala governorate
+  category: GOVERNORATE

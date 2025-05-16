@@ -1,0 +1,12 @@
+name: Gisborne
+type: Division-1
+meta:
+  alpha2: NZ-GIS
+  includes:
+    - gisborne
+    - nz-gis
+    - gis
+    - gisborne region
+    - te tairāwhiti
+    - te tairāwhiti region
+  category: REGION

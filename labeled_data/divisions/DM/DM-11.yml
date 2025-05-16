@@ -1,0 +1,10 @@
+name: Saint Peter
+type: Division-1
+meta:
+  alpha2: DM-11
+  includes:
+    - saint peter
+    - dm-11
+    - '11'
+    - saint peter parish
+  category: PARISH

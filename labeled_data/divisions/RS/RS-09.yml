@@ -1,0 +1,10 @@
+name: Kolubarski okrug
+type: Division-1
+meta:
+  alpha2: RS-09
+  includes:
+    - kolubarski okrug
+    - rs-09
+    - '09'
+    - kolubarski okrug district
+  category: DISTRICT

@@ -1,0 +1,116 @@
+name: Central
+type: Division-1
+meta:
+  alpha2: UG-C
+  includes:
+    - buikwe
+    - ug-117
+    - '117'
+    - buikwe district
+    - bukomansibi
+    - ug-118
+    - '118'
+    - bukomansibi district
+    - butambala
+    - ug-119
+    - '119'
+    - butambala district
+    - buvuma
+    - ug-120
+    - '120'
+    - buvuma district
+    - central
+    - ug-c
+    - c
+    - central geographical region
+    - gomba
+    - ug-121
+    - '121'
+    - gomba district
+    - kalangala
+    - ug-101
+    - '101'
+    - kalangala district
+    - kalungu
+    - ug-122
+    - '122'
+    - kalungu district
+    - kampala
+    - ug-102
+    - '102'
+    - kampala city
+    - kasanda
+    - ug-126
+    - '126'
+    - kasanda district
+    - kayunga
+    - ug-112
+    - '112'
+    - kayunga district
+    - kiboga
+    - ug-103
+    - '103'
+    - kiboga district
+    - kyankwanzi
+    - ug-123
+    - '123'
+    - kyankwanzi district
+    - kyotera
+    - ug-125
+    - '125'
+    - kyotera district
+    - luwero
+    - ug-104
+    - '104'
+    - luwero district
+    - lwengo
+    - ug-124
+    - '124'
+    - lwengo district
+    - lyantonde
+    - ug-114
+    - '114'
+    - lyantonde district
+    - masaka
+    - ug-105
+    - '105'
+    - masaka district
+    - mityana
+    - ug-115
+    - '115'
+    - mityana district
+    - mpigi
+    - ug-106
+    - '106'
+    - mpigi district
+    - mubende
+    - ug-107
+    - '107'
+    - mubende district
+    - mukono
+    - ug-108
+    - '108'
+    - mukono district
+    - nakaseke
+    - ug-116
+    - '116'
+    - nakaseke district
+    - nakasongola
+    - ug-109
+    - '109'
+    - nakasongola district
+    - rakai
+    - ug-110
+    - '110'
+    - rakai district
+    - sembabule
+    - ug-111
+    - '111'
+    - sembabule district
+    - wakiso
+    - ug-113
+    - '113'
+    - wakiso district
+    - central region
+    - mkoa wa kati
+  category: GEOGRAPHICAL REGION

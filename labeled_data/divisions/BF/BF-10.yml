@@ -1,0 +1,26 @@
+name: Nord
+type: Division-1
+meta:
+  alpha2: BF-10
+  includes:
+    - loroum
+    - bf-lor
+    - lor
+    - loroum province
+    - nord
+    - bf-10
+    - '10'
+    - nord region
+    - passoré
+    - bf-pas
+    - pas
+    - passoré province
+    - yatenga
+    - bf-yat
+    - yat
+    - yatenga province
+    - zondoma
+    - bf-zon
+    - zon
+    - zondoma province
+  category: REGION

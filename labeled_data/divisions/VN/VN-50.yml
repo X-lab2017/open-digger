@@ -1,0 +1,11 @@
+name: Bến Tre
+type: Division-1
+meta:
+  alpha2: VN-50
+  includes:
+    - bến tre
+    - vn-50
+    - '50'
+    - bến tre province
+    - ben tre
+  category: PROVINCE

@@ -1,0 +1,11 @@
+name: Ma’rib
+type: Division-1
+meta:
+  alpha2: YE-MA
+  includes:
+    - ma’rib
+    - ye-ma
+    - ma
+    - ma’rib governorate
+    - ma'rib governorate
+  category: GOVERNORATE

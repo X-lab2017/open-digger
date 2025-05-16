@@ -1,0 +1,10 @@
+name: Appenzell Innerrhoden
+type: Division-1
+meta:
+  alpha2: CH-AI
+  includes:
+    - appenzell innerrhoden
+    - ch-ai
+    - ai
+    - appenzell innerrhoden canton
+  category: CANTON

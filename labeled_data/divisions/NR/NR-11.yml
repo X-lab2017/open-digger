@@ -1,0 +1,10 @@
+name: Meneng
+type: Division-1
+meta:
+  alpha2: NR-11
+  includes:
+    - meneng
+    - nr-11
+    - '11'
+    - meneng district
+  category: DISTRICT

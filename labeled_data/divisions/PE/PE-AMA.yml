@@ -1,0 +1,14 @@
+name: Amazonas
+type: Division-1
+meta:
+  alpha2: PE-AMA
+  includes:
+    - amarumayu
+    - pe-ama
+    - ama
+    - amarumayu region
+    - amasunu
+    - amasunu region
+    - amazonas
+    - amazonas region
+  category: REGION

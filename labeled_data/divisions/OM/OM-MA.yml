@@ -1,0 +1,13 @@
+name: Masqaţ
+type: Division-1
+meta:
+  alpha2: OM-MA
+  includes:
+    - masqaţ
+    - om-ma
+    - ma
+    - masqaţ governorate
+    - muscat
+    - muscat governorate
+    - محافظة مسقط
+  category: GOVERNORATE

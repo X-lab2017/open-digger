@@ -1,0 +1,12 @@
+name: An Najaf
+type: Division-1
+meta:
+  alpha2: IQ-NA
+  includes:
+    - an najaf
+    - iq-na
+    - na
+    - an najaf governorate
+    - al-najaf governorate
+    - najaf governorate
+  category: GOVERNORATE

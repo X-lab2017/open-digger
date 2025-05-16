@@ -1,0 +1,39 @@
+name: Ústecký kraj
+type: Division-1
+meta:
+  alpha2: CZ-42
+  includes:
+    - chomutov
+    - cz-422
+    - '422'
+    - chomutov district
+    - děčín
+    - cz-421
+    - '421'
+    - děčín district
+    - litoměřice
+    - cz-423
+    - '423'
+    - litoměřice district
+    - louny
+    - cz-424
+    - '424'
+    - louny district
+    - most
+    - cz-425
+    - '425'
+    - most district
+    - teplice
+    - cz-426
+    - '426'
+    - teplice district
+    - ústecký kraj
+    - cz-42
+    - '42'
+    - ústecký kraj region
+    - ústí nad labem
+    - cz-427
+    - '427'
+    - ústí nad labem district
+    - ústí nad labem region
+  category: REGION

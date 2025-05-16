@@ -1,0 +1,12 @@
+name: Boneiru
+type: Division-1
+meta:
+  alpha2: BQ-BO
+  includes:
+    - bonaire
+    - bq-bo
+    - bo
+    - bonaire special municipality
+    - boneiru
+    - boneiru special municipality
+  category: SPECIAL MUNICIPALITY

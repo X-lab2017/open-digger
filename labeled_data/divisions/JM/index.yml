@@ -1,0 +1,88 @@
+name: Jamaica
+type: Division-0
+meta:
+  alpha2: JM
+  includes:
+    - Jamaica
+    - JM
+    - '388'
+    - 牙买加
+  name_full: Jamaica
+  name_zh: 牙买加
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 11149
+    - year: 2020
+      quarter: 2
+      count: 12534
+    - year: 2020
+      quarter: 3
+      count: 13920
+    - year: 2020
+      quarter: 4
+      count: 15398
+    - year: 2021
+      quarter: 1
+      count: 16810
+    - year: 2021
+      quarter: 2
+      count: 18168
+    - year: 2021
+      quarter: 3
+      count: 19555
+    - year: 2021
+      quarter: 4
+      count: 21219
+    - year: 2022
+      quarter: 1
+      count: 23131
+    - year: 2022
+      quarter: 2
+      count: 24700
+    - year: 2022
+      quarter: 3
+      count: 26200
+    - year: 2022
+      quarter: 4
+      count: 27652
+    - year: 2023
+      quarter: 1
+      count: 29349
+    - year: 2023
+      quarter: 2
+      count: 31028
+    - year: 2023
+      quarter: 3
+      count: 32489
+    - year: 2023
+      quarter: 4
+      count: 34067
+    - year: 2024
+      quarter: 1
+      count: 35988
+    - year: 2024
+      quarter: 2
+      count: 37516
+    - year: 2024
+      quarter: 3
+      count: 39040
+    - year: 2024
+      quarter: 4
+      count: 40658
+data:
+  labels:
+    - JM-13
+    - JM-09
+    - JM-01
+    - JM-12
+    - JM-04
+    - JM-02
+    - JM-06
+    - JM-14
+    - JM-11
+    - JM-08
+    - JM-05
+    - JM-03
+    - JM-07
+    - JM-10

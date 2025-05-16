@@ -1,0 +1,10 @@
+name: Sainte-Dévote
+type: Division-1
+meta:
+  alpha2: MC-SD
+  includes:
+    - sainte-dévote
+    - mc-sd
+    - sd
+    - sainte-dévote quarter
+  category: QUARTER

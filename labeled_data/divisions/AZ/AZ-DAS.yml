@@ -1,0 +1,11 @@
+name: Daşkəsən
+type: Division-1
+meta:
+  alpha2: AZ-DAS
+  includes:
+    - daşkəsən
+    - az-das
+    - das
+    - daşkəsən rayon
+    - ganja-dashkasan
+  category: RAYON

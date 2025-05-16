@@ -1,0 +1,10 @@
+name: Black River
+type: Division-1
+meta:
+  alpha2: MU-BL
+  includes:
+    - black river
+    - mu-bl
+    - bl
+    - black river district
+  category: DISTRICT

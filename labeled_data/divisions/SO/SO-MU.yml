@@ -1,0 +1,10 @@
+name: Mudug
+type: Division-1
+meta:
+  alpha2: SO-MU
+  includes:
+    - mudug
+    - so-mu
+    - mu
+    - mudug region
+  category: REGION

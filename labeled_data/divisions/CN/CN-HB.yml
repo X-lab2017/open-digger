@@ -1,0 +1,39 @@
+name: Hubei Sheng
+type: Division-1
+meta:
+  alpha2: CN-HB
+  includes:
+    - hubei sheng
+    - cn-hb
+    - hb
+    - hubei sheng province
+    - hu bei sheng
+    - hubei
+    - 湖北省
+  category: PROVINCE
+data:
+  labels:
+    - ':companies/2mui'
+    - ':companies/bitland'
+    - ':companies/carbit'
+    - ':companies/cenboomh'
+    - ':companies/cqzww'
+    - ':companies/dodoedu'
+    - ':companies/douyu'
+    - ':companies/e_ray'
+    - ':companies/gitlab_cn'
+    - ':companies/huindata'
+    - ':companies/kongyun'
+    - ':companies/morequick'
+    - ':companies/naddod'
+    - ':companies/nasinet'
+    - ':companies/sxxfuture'
+    - ':companies/tw_iot'
+    - ':companies/weisolution'
+    - ':companies/wutos'
+    - ':companies/ygsoft'
+    - ':companies/zte'
+    - ':universities/cug'
+    - ':universities/hubu'
+    - ':universities/hust'
+    - ':universities/whu'

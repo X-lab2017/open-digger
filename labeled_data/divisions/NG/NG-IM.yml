@@ -1,0 +1,10 @@
+name: Imo
+type: Division-1
+meta:
+  alpha2: NG-IM
+  includes:
+    - imo
+    - ng-im
+    - im
+    - imo state
+  category: STATE

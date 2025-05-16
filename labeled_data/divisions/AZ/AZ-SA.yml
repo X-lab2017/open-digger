@@ -1,0 +1,11 @@
+name: Şəki
+type: Division-1
+meta:
+  alpha2: AZ-SA
+  includes:
+    - şəki
+    - az-sa
+    - sa
+    - şəki municipality
+    - sheki-zaqatala
+  category: MUNICIPALITY

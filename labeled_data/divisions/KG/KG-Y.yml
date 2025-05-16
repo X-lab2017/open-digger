@@ -1,0 +1,15 @@
+name: Issyk-Kul'skaya oblast'
+type: Division-1
+meta:
+  alpha2: KG-Y
+  includes:
+    - issyk-kul'skaja oblast'
+    - kg-y
+    - 'y'
+    - issyk-kul'skaja oblast' region
+    - issyk-kul'skaya oblast'
+    - issyk-kul'skaya oblast' region
+    - ysyk-köl
+    - ysyk-köl region
+    - issyk-kul region
+  category: REGION

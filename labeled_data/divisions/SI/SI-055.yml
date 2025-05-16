@@ -1,0 +1,10 @@
+name: Kungota
+type: Division-1
+meta:
+  alpha2: SI-055
+  includes:
+    - kungota
+    - si-055
+    - '055'
+    - kungota municipality
+  category: MUNICIPALITY

@@ -1,0 +1,14 @@
+name: Anse Étoile
+type: Division-1
+meta:
+  alpha2: SC-03
+  includes:
+    - ans etwal
+    - sc-03
+    - '03'
+    - ans etwal district
+    - anse etoile
+    - anse etoile district
+    - anse étoile
+    - anse étoile district
+  category: DISTRICT

@@ -1,0 +1,12 @@
+name: Sousse
+type: Division-1
+meta:
+  alpha2: TN-51
+  includes:
+    - sousse
+    - tn-51
+    - '51'
+    - sousse governorate
+    - gouvernorat de sousse
+    - سوسة
+  category: GOVERNORATE

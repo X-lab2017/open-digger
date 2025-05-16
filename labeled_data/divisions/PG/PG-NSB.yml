@@ -1,0 +1,11 @@
+name: Bougainville
+type: Division-1
+meta:
+  alpha2: PG-NSB
+  includes:
+    - bougainville
+    - pg-nsb
+    - nsb
+    - bougainville autonomous region
+    - autonomous region of bougainville
+  category: AUTONOMOUS REGION

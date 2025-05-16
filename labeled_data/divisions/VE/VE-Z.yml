@@ -1,0 +1,10 @@
+name: Amazonas
+type: Division-1
+meta:
+  alpha2: VE-Z
+  includes:
+    - amazonas
+    - ve-z
+    - z
+    - amazonas state
+  category: STATE

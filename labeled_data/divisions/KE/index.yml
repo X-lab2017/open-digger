@@ -1,0 +1,122 @@
+name: Kenya
+type: Division-0
+meta:
+  alpha2: KE
+  includes:
+    - Kenya
+    - KE
+    - '404'
+    - the Republic of Kenya
+    - 肯尼亚
+  name_full: the Republic of Kenya
+  name_zh: 肯尼亚
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 90770
+    - year: 2020
+      quarter: 2
+      count: 100837
+    - year: 2020
+      quarter: 3
+      count: 110279
+    - year: 2020
+      quarter: 4
+      count: 118828
+    - year: 2021
+      quarter: 1
+      count: 127932
+    - year: 2021
+      quarter: 2
+      count: 138374
+    - year: 2021
+      quarter: 3
+      count: 149157
+    - year: 2021
+      quarter: 4
+      count: 160129
+    - year: 2022
+      quarter: 1
+      count: 177396
+    - year: 2022
+      quarter: 2
+      count: 193410
+    - year: 2022
+      quarter: 3
+      count: 211103
+    - year: 2022
+      quarter: 4
+      count: 226754
+    - year: 2023
+      quarter: 1
+      count: 254108
+    - year: 2023
+      quarter: 2
+      count: 276380
+    - year: 2023
+      quarter: 3
+      count: 297581
+    - year: 2023
+      quarter: 4
+      count: 317073
+    - year: 2024
+      quarter: 1
+      count: 345178
+    - year: 2024
+      quarter: 2
+      count: 370363
+    - year: 2024
+      quarter: 3
+      count: 395210
+    - year: 2024
+      quarter: 4
+      count: 424346
+data:
+  labels:
+    - KE-01
+    - KE-02
+    - KE-03
+    - KE-04
+    - KE-05
+    - KE-06
+    - KE-07
+    - KE-08
+    - KE-09
+    - KE-10
+    - KE-11
+    - KE-12
+    - KE-13
+    - KE-14
+    - KE-15
+    - KE-16
+    - KE-17
+    - KE-18
+    - KE-19
+    - KE-20
+    - KE-21
+    - KE-22
+    - KE-23
+    - KE-24
+    - KE-25
+    - KE-26
+    - KE-27
+    - KE-28
+    - KE-29
+    - KE-30
+    - KE-31
+    - KE-32
+    - KE-33
+    - KE-34
+    - KE-35
+    - KE-36
+    - KE-37
+    - KE-38
+    - KE-39
+    - KE-40
+    - KE-41
+    - KE-42
+    - KE-43
+    - KE-44
+    - KE-45
+    - KE-46
+    - KE-47

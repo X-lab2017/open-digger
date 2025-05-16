@@ -1,0 +1,10 @@
+name: Tobago
+type: Division-1
+meta:
+  alpha2: TT-TOB
+  includes:
+    - tobago
+    - tt-tob
+    - tob
+    - tobago ward
+  category: WARD

@@ -1,0 +1,11 @@
+name: Nakhon Pathom
+type: Division-1
+meta:
+  alpha2: TH-73
+  includes:
+    - nakhon pathom
+    - th-73
+    - '73'
+    - nakhon pathom province
+    - chang wat nakhon pathom
+  category: PROVINCE

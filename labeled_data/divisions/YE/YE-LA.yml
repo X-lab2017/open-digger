@@ -1,0 +1,11 @@
+name: Laḩij
+type: Division-1
+meta:
+  alpha2: YE-LA
+  includes:
+    - laḩij
+    - ye-la
+    - la
+    - laḩij governorate
+    - lahij governorate
+  category: GOVERNORATE

@@ -1,0 +1,12 @@
+name: Bangui
+type: Division-1
+meta:
+  alpha2: CF-BGF
+  includes:
+    - bangui
+    - cf-bgf
+    - bgf
+    - bangui commune
+    - bangî
+    - bangî commune
+  category: COMMUNE

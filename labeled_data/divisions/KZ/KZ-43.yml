@@ -1,0 +1,16 @@
+name: Kyzylordinskaya oblast'
+type: Division-1
+meta:
+  alpha2: KZ-43
+  includes:
+    - kyzylordinskaja oblast'
+    - kz-43
+    - '43'
+    - kyzylordinskaja oblast' region
+    - kyzylordinskaya oblast'
+    - kyzylordinskaya oblast' region
+    - qyzylorda oblysy
+    - qyzylorda oblysy region
+    - kyzylorda region
+    - қызылорда облысы
+  category: REGION

@@ -1,0 +1,10 @@
+name: Lubombo
+type: Division-1
+meta:
+  alpha2: SZ-LU
+  includes:
+    - lubombo
+    - sz-lu
+    - lu
+    - lubombo region
+  category: REGION

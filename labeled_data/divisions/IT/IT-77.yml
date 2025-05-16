@@ -1,0 +1,19 @@
+name: Basilicata
+type: Division-1
+meta:
+  alpha2: IT-77
+  includes:
+    - basilicata
+    - it-77
+    - '77'
+    - basilicata region
+    - matera
+    - it-mt
+    - mt
+    - matera province
+    - potenza
+    - it-pz
+    - pz
+    - potenza province
+    - bas.
+  category: REGION

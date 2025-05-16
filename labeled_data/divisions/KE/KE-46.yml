@@ -1,0 +1,10 @@
+name: Wajir
+type: Division-1
+meta:
+  alpha2: KE-46
+  includes:
+    - wajir
+    - ke-46
+    - '46'
+    - wajir county
+  category: COUNTY

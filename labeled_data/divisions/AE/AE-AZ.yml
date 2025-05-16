@@ -1,0 +1,13 @@
+name: Abū Z̧aby
+type: Division-1
+meta:
+  alpha2: AE-AZ
+  includes:
+    - abū z̧aby
+    - ae-az
+    - az
+    - abū z̧aby emirate
+    - abu dhabi
+    - abu dhabi emirate
+    - أبو ظبي
+  category: EMIRATE

@@ -1,0 +1,11 @@
+name: Tunapuna-Piarco
+type: Division-1
+meta:
+  alpha2: TT-TUP
+  includes:
+    - tunapuna-piarco
+    - tt-tup
+    - tup
+    - tunapuna-piarco region
+    - tunapuna/piarco regional corporation
+  category: REGION

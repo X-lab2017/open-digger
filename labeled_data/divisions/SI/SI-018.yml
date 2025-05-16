@@ -1,0 +1,10 @@
+name: Destrnik
+type: Division-1
+meta:
+  alpha2: SI-018
+  includes:
+    - destrnik
+    - si-018
+    - '018'
+    - destrnik municipality
+  category: MUNICIPALITY

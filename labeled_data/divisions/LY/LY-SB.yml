@@ -1,0 +1,11 @@
+name: Sabhā
+type: Division-1
+meta:
+  alpha2: LY-SB
+  includes:
+    - sabhā
+    - ly-sb
+    - sb
+    - sabhā popularate
+    - sabha district
+  category: POPULARATE

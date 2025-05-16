@@ -1,0 +1,10 @@
+name: Kvemo Kartli
+type: Division-1
+meta:
+  alpha2: GE-KK
+  includes:
+    - kvemo kartli
+    - ge-kk
+    - kk
+    - kvemo kartli region
+  category: REGION

@@ -1,0 +1,10 @@
+name: North Bank
+type: Division-1
+meta:
+  alpha2: GM-N
+  includes:
+    - north bank
+    - gm-n
+    - 'n'
+    - north bank division
+  category: DIVISION

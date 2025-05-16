@@ -1,0 +1,10 @@
+name: Bubanza
+type: Division-1
+meta:
+  alpha2: BI-BB
+  includes:
+    - bubanza
+    - bi-bb
+    - bb
+    - bubanza province
+  category: PROVINCE

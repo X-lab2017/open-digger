@@ -1,0 +1,11 @@
+name: Tocantins
+type: Division-1
+meta:
+  alpha2: BR-TO
+  includes:
+    - tocantins
+    - br-to
+    - to
+    - tocantins state
+    - state of tocantins
+  category: STATE

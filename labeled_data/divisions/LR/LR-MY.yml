@@ -1,0 +1,10 @@
+name: Maryland
+type: Division-1
+meta:
+  alpha2: LR-MY
+  includes:
+    - maryland
+    - lr-my
+    - my
+    - maryland county
+  category: COUNTY

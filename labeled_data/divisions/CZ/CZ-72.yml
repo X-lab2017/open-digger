@@ -1,0 +1,28 @@
+name: Zlínský kraj
+type: Division-1
+meta:
+  alpha2: CZ-72
+  includes:
+    - kroměříž
+    - cz-721
+    - '721'
+    - kroměříž district
+    - uherské hradiště
+    - cz-722
+    - '722'
+    - uherské hradiště district
+    - vsetín
+    - cz-723
+    - '723'
+    - vsetín district
+    - zlín
+    - cz-724
+    - '724'
+    - zlín district
+    - zlínský kraj
+    - cz-72
+    - '72'
+    - zlínský kraj region
+    - zlin
+    - zlín region
+  category: REGION

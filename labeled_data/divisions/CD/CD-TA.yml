@@ -1,0 +1,11 @@
+name: Tanganyika
+type: Division-1
+meta:
+  alpha2: CD-TA
+  includes:
+    - tanganyika
+    - cd-ta
+    - ta
+    - tanganyika province
+    - katanga
+  category: PROVINCE

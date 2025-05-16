@@ -1,0 +1,12 @@
+name: Região Autónoma dos Açores
+type: Division-1
+meta:
+  alpha2: PT-20
+  includes:
+    - região autónoma dos açores
+    - pt-20
+    - '20'
+    - região autónoma dos açores autonomous region
+    - azores
+    - açores
+  category: AUTONOMOUS REGION

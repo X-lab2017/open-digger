@@ -1,0 +1,10 @@
+name: Souk Ahras
+type: Division-1
+meta:
+  alpha2: DZ-41
+  includes:
+    - souk ahras
+    - dz-41
+    - '41'
+    - souk ahras province
+  category: PROVINCE

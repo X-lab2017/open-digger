@@ -1,0 +1,10 @@
+name: Delta
+type: Division-1
+meta:
+  alpha2: NG-DE
+  includes:
+    - delta
+    - ng-de
+    - de
+    - delta state
+  category: STATE

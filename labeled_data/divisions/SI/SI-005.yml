@@ -1,0 +1,10 @@
+name: Borovnica
+type: Division-1
+meta:
+  alpha2: SI-005
+  includes:
+    - borovnica
+    - si-005
+    - '005'
+    - borovnica municipality
+  category: MUNICIPALITY

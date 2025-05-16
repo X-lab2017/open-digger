@@ -1,0 +1,20 @@
+name: Nyland
+type: Division-1
+meta:
+  alpha2: FI-18
+  includes:
+    - nyland
+    - fi-18
+    - '18'
+    - nyland region
+    - uusimaa
+    - uusimaa region
+    - southwest finland
+    - fi181
+    - fi182
+    - fi183
+    - fi184
+    - fi185
+    - fi186
+    - fi187
+  category: REGION

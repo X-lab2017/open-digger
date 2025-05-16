@@ -1,0 +1,12 @@
+name: Al Karak
+type: Division-1
+meta:
+  alpha2: JO-KA
+  includes:
+    - al karak
+    - jo-ka
+    - ka
+    - al karak governorate
+    - karak
+    - karak governorate
+  category: GOVERNORATE

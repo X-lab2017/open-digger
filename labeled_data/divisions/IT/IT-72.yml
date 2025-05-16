@@ -1,0 +1,31 @@
+name: Campania
+type: Division-1
+meta:
+  alpha2: IT-72
+  includes:
+    - avellino
+    - it-av
+    - av
+    - avellino province
+    - benevento
+    - it-bn
+    - bn
+    - benevento province
+    - campania
+    - it-72
+    - '72'
+    - campania region
+    - caserta
+    - it-ce
+    - ce
+    - caserta province
+    - napoli
+    - it-na
+    - na
+    - napoli metropolitan city
+    - salerno
+    - it-sa
+    - sa
+    - salerno province
+    - camp.
+  category: REGION

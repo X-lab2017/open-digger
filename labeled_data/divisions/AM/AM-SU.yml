@@ -1,0 +1,11 @@
+name: Syunik'
+type: Division-1
+meta:
+  alpha2: AM-SU
+  includes:
+    - syunik'
+    - am-su
+    - su
+    - syunik' region
+    - syunik province
+  category: REGION

@@ -1,0 +1,10 @@
+name: Geita
+type: Division-1
+meta:
+  alpha2: TZ-27
+  includes:
+    - geita
+    - tz-27
+    - '27'
+    - geita region
+  category: REGION

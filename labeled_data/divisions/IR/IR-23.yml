@@ -1,0 +1,11 @@
+name: Tehrān
+type: Division-1
+meta:
+  alpha2: IR-23
+  includes:
+    - tehrān
+    - ir-23
+    - '23'
+    - tehrān province
+    - tehran province
+  category: PROVINCE

@@ -1,0 +1,37 @@
+name: Northern Region
+type: Division-1
+meta:
+  alpha2: MW-N
+  includes:
+    - chakumpoto
+    - mw-n
+    - 'n'
+    - chakumpoto region
+    - chitipa
+    - mw-ct
+    - ct
+    - chitipa district
+    - karonga
+    - mw-kr
+    - kr
+    - karonga district
+    - likoma
+    - mw-lk
+    - lk
+    - likoma district
+    - mzimba
+    - mw-mz
+    - mz
+    - mzimba district
+    - nkhata bay
+    - mw-nb
+    - nb
+    - nkhata bay district
+    - northern region
+    - northern region region
+    - rumphi
+    - mw-ru
+    - ru
+    - rumphi district
+    - northern region, malawi
+  category: REGION

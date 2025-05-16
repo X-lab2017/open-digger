@@ -1,0 +1,13 @@
+name: Iași
+type: Division-1
+meta:
+  alpha2: RO-IS
+  includes:
+    - iași
+    - ro-is
+    - is
+    - iași department
+    - județul iași
+    - iaşi
+    - iași county
+  category: DEPARTMENT

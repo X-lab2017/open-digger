@@ -1,0 +1,10 @@
+name: Rîșcani
+type: Division-1
+meta:
+  alpha2: MD-RI
+  includes:
+    - rîșcani
+    - md-ri
+    - ri
+    - rîșcani district
+  category: DISTRICT

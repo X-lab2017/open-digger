@@ -1,0 +1,11 @@
+name: ‘Ajlūn
+type: Division-1
+meta:
+  alpha2: JO-AJ
+  includes:
+    - ‘ajlūn
+    - jo-aj
+    - aj
+    - ‘ajlūn governorate
+    - ajloun governorate
+  category: GOVERNORATE

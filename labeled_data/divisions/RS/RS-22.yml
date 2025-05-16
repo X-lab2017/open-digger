@@ -1,0 +1,10 @@
+name: Pirotski okrug
+type: Division-1
+meta:
+  alpha2: RS-22
+  includes:
+    - pirotski okrug
+    - rs-22
+    - '22'
+    - pirotski okrug district
+  category: DISTRICT

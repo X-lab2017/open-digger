@@ -1,0 +1,10 @@
+name: Žužemberk
+type: Division-1
+meta:
+  alpha2: SI-193
+  includes:
+    - žužemberk
+    - si-193
+    - '193'
+    - žužemberk municipality
+  category: MUNICIPALITY

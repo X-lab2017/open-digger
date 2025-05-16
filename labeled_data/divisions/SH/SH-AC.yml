@@ -1,0 +1,10 @@
+name: Ascension
+type: Division-1
+meta:
+  alpha2: SH-AC
+  includes:
+    - ascension
+    - sh-ac
+    - ac
+    - ascension geographical entity
+  category: GEOGRAPHICAL ENTITY

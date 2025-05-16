@@ -1,0 +1,10 @@
+name: Chuuk
+type: Division-1
+meta:
+  alpha2: FM-TRK
+  includes:
+    - chuuk
+    - fm-trk
+    - trk
+    - chuuk state
+  category: STATE

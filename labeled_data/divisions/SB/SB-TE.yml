@@ -1,0 +1,10 @@
+name: Temotu
+type: Division-1
+meta:
+  alpha2: SB-TE
+  includes:
+    - temotu
+    - sb-te
+    - te
+    - temotu province
+  category: PROVINCE

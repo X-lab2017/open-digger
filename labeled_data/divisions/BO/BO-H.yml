@@ -1,0 +1,10 @@
+name: Chuquisaca
+type: Division-1
+meta:
+  alpha2: BO-H
+  includes:
+    - chuquisaca
+    - bo-h
+    - h
+    - chuquisaca department
+  category: DEPARTMENT

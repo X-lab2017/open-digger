@@ -1,0 +1,10 @@
+name: Plav
+type: Division-1
+meta:
+  alpha2: ME-13
+  includes:
+    - plav
+    - me-13
+    - '13'
+    - plav municipality
+  category: MUNICIPALITY

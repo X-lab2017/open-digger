@@ -1,0 +1,10 @@
+name: Ruvuma
+type: Division-1
+meta:
+  alpha2: TZ-21
+  includes:
+    - ruvuma
+    - tz-21
+    - '21'
+    - ruvuma region
+  category: REGION

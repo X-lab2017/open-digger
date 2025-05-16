@@ -1,0 +1,10 @@
+name: Schwyz
+type: Division-1
+meta:
+  alpha2: CH-SZ
+  includes:
+    - schwyz
+    - ch-sz
+    - sz
+    - schwyz canton
+  category: CANTON

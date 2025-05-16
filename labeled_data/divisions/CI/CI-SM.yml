@@ -1,0 +1,10 @@
+name: Sassandra-Marahoué
+type: Division-1
+meta:
+  alpha2: CI-SM
+  includes:
+    - sassandra-marahoué
+    - ci-sm
+    - sm
+    - sassandra-marahoué district
+  category: DISTRICT

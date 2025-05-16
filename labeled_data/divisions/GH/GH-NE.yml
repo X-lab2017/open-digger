@@ -1,0 +1,11 @@
+name: North East
+type: Division-1
+meta:
+  alpha2: GH-NE
+  includes:
+    - north east
+    - gh-ne
+    - ne
+    - north east region
+    - northern east region
+  category: REGION

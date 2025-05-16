@@ -1,0 +1,10 @@
+name: Qəbələ
+type: Division-1
+meta:
+  alpha2: AZ-QAB
+  includes:
+    - qəbələ
+    - az-qab
+    - qab
+    - qəbələ rayon
+  category: RAYON

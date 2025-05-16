@@ -1,0 +1,43 @@
+name: Tartumaa
+type: Division-1
+meta:
+  alpha2: EE-79
+  includes:
+    - elva
+    - ee-171
+    - '171'
+    - elva rural municipality
+    - kambja
+    - ee-283
+    - '283'
+    - kambja rural municipality
+    - kastre
+    - ee-291
+    - '291'
+    - kastre rural municipality
+    - luunja
+    - ee-432
+    - '432'
+    - luunja rural municipality
+    - nõo
+    - ee-528
+    - '528'
+    - nõo rural municipality
+    - peipsiääre
+    - ee-586
+    - '586'
+    - peipsiääre rural municipality
+    - tartu
+    - ee-793
+    - '793'
+    - tartu urban municipality
+    - ee-796
+    - '796'
+    - tartu rural municipality
+    - tartumaa
+    - ee-79
+    - '79'
+    - tartumaa county
+    - tartu maakond
+    - tartu county
+  category: COUNTY

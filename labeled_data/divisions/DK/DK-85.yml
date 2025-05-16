@@ -1,0 +1,11 @@
+name: Sjælland
+type: Division-1
+meta:
+  alpha2: DK-85
+  includes:
+    - sjælland
+    - dk-85
+    - '85'
+    - sjælland region
+    - region zealand
+  category: REGION

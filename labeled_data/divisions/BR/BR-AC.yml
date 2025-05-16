@@ -1,0 +1,11 @@
+name: Acre
+type: Division-1
+meta:
+  alpha2: BR-AC
+  includes:
+    - acre
+    - br-ac
+    - ac
+    - acre state
+    - state of acre
+  category: STATE

@@ -1,0 +1,10 @@
+name: Canillo
+type: Division-1
+meta:
+  alpha2: AD-02
+  includes:
+    - canillo
+    - ad-02
+    - '02'
+    - canillo parish
+  category: PARISH

@@ -1,0 +1,10 @@
+name: Kāpīsā
+type: Division-1
+meta:
+  alpha2: AF-KAP
+  includes:
+    - kāpīsā
+    - af-kap
+    - kap
+    - kāpīsā province
+  category: PROVINCE

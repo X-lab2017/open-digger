@@ -1,0 +1,14 @@
+name: South Miladhunmadulu
+type: Division-1
+meta:
+  alpha2: MV-25
+  includes:
+    - miladhunmadulu dhekunuburi
+    - mv-25
+    - '25'
+    - miladhunmadulu dhekunuburi administrative atoll
+    - noonu
+    - noonu administrative atoll
+    - south miladhunmadulu
+    - south miladhunmadulu administrative atoll
+  category: ADMINISTRATIVE ATOLL

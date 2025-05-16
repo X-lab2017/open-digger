@@ -1,0 +1,11 @@
+name: Mato Grosso do Sul
+type: Division-1
+meta:
+  alpha2: BR-MS
+  includes:
+    - mato grosso do sul
+    - br-ms
+    - ms
+    - mato grosso do sul state
+    - state of mato grosso do sul
+  category: STATE

@@ -1,0 +1,10 @@
+name: Kirundo
+type: Division-1
+meta:
+  alpha2: BI-KI
+  includes:
+    - kirundo
+    - bi-ki
+    - ki
+    - kirundo province
+  category: PROVINCE

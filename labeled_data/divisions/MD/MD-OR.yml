@@ -1,0 +1,11 @@
+name: Orhei
+type: Division-1
+meta:
+  alpha2: MD-OR
+  includes:
+    - orhei
+    - md-or
+    - or
+    - orhei district
+    - raionul orhei
+  category: DISTRICT

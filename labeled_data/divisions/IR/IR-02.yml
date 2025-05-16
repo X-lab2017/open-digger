@@ -1,0 +1,11 @@
+name: Māzandarān
+type: Division-1
+meta:
+  alpha2: IR-02
+  includes:
+    - māzandarān
+    - ir-02
+    - '02'
+    - māzandarān province
+    - mazandaran province
+  category: PROVINCE

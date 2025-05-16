@@ -1,0 +1,10 @@
+name: Santa Venera
+type: Division-1
+meta:
+  alpha2: MT-54
+  includes:
+    - santa venera
+    - mt-54
+    - '54'
+    - santa venera local council
+  category: LOCAL COUNCIL

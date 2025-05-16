@@ -1,0 +1,10 @@
+name: Okinawa
+type: Division-1
+meta:
+  alpha2: JP-47
+  includes:
+    - okinawa
+    - jp-47
+    - '47'
+    - okinawa prefecture
+  category: PREFECTURE

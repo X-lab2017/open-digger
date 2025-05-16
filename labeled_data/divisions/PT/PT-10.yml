@@ -1,0 +1,10 @@
+name: Leiria
+type: Division-1
+meta:
+  alpha2: PT-10
+  includes:
+    - leiria
+    - pt-10
+    - '10'
+    - leiria district
+  category: DISTRICT

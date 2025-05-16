@@ -1,0 +1,14 @@
+name: Khabarovskiy kray
+type: Division-1
+meta:
+  alpha2: RU-KHA
+  includes:
+    - habarovskij kraj
+    - ru-kha
+    - kha
+    - habarovskij kraj administrative territory
+    - khabarovskiy kray
+    - khabarovskiy kray administrative territory
+    - khabarovsk krai
+    - khabarovsk
+  category: ADMINISTRATIVE TERRITORY

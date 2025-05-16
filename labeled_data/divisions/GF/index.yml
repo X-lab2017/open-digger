@@ -1,0 +1,72 @@
+name: French Guiana
+type: Division-0
+meta:
+  alpha2: GF
+  includes:
+    - French Guiana
+    - GF
+    - '254'
+    - 法属圭亚那
+  name_full: French Guiana
+  name_zh: 法属圭亚那
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 753
+    - year: 2020
+      quarter: 2
+      count: 867
+    - year: 2020
+      quarter: 3
+      count: 932
+    - year: 2020
+      quarter: 4
+      count: 965
+    - year: 2021
+      quarter: 1
+      count: 1057
+    - year: 2021
+      quarter: 2
+      count: 1145
+    - year: 2021
+      quarter: 3
+      count: 1210
+    - year: 2021
+      quarter: 4
+      count: 1275
+    - year: 2022
+      quarter: 1
+      count: 1346
+    - year: 2022
+      quarter: 2
+      count: 1515
+    - year: 2022
+      quarter: 3
+      count: 1620
+    - year: 2022
+      quarter: 4
+      count: 1677
+    - year: 2023
+      quarter: 1
+      count: 1790
+    - year: 2023
+      quarter: 2
+      count: 1908
+    - year: 2023
+      quarter: 3
+      count: 1989
+    - year: 2023
+      quarter: 4
+      count: 2115
+    - year: 2024
+      quarter: 1
+      count: 2272
+    - year: 2024
+      quarter: 2
+      count: 2342
+    - year: 2024
+      quarter: 3
+      count: 2470
+    - year: 2024
+      quarter: 4
+      count: 2645

@@ -1,0 +1,10 @@
+name: Satu Mare
+type: Division-1
+meta:
+  alpha2: RO-SM
+  includes:
+    - satu mare
+    - ro-sm
+    - sm
+    - satu mare department
+  category: DEPARTMENT

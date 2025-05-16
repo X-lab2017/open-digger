@@ -1,0 +1,81 @@
+name: Djibouti
+type: Division-0
+meta:
+  alpha2: DJ
+  includes:
+    - Djibouti
+    - DJ
+    - '262'
+    - the Republic of Djibouti
+    - 吉布提
+  name_full: the Republic of Djibouti
+  name_zh: 吉布提
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 753
+    - year: 2020
+      quarter: 2
+      count: 820
+    - year: 2020
+      quarter: 3
+      count: 889
+    - year: 2020
+      quarter: 4
+      count: 956
+    - year: 2021
+      quarter: 1
+      count: 1036
+    - year: 2021
+      quarter: 2
+      count: 1110
+    - year: 2021
+      quarter: 3
+      count: 1189
+    - year: 2021
+      quarter: 4
+      count: 1267
+    - year: 2022
+      quarter: 1
+      count: 1384
+    - year: 2022
+      quarter: 2
+      count: 1515
+    - year: 2022
+      quarter: 3
+      count: 1601
+    - year: 2022
+      quarter: 4
+      count: 1710
+    - year: 2023
+      quarter: 1
+      count: 1872
+    - year: 2023
+      quarter: 2
+      count: 2027
+    - year: 2023
+      quarter: 3
+      count: 2122
+    - year: 2023
+      quarter: 4
+      count: 2442
+    - year: 2024
+      quarter: 1
+      count: 2640
+    - year: 2024
+      quarter: 2
+      count: 2870
+    - year: 2024
+      quarter: 3
+      count: 3041
+    - year: 2024
+      quarter: 4
+      count: 3411
+data:
+  labels:
+    - DJ-AS
+    - DJ-AR
+    - DJ-OB
+    - DJ-DI
+    - DJ-DJ
+    - DJ-TA

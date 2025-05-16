@@ -1,0 +1,10 @@
+name: Monaco-Ville
+type: Division-1
+meta:
+  alpha2: MC-MO
+  includes:
+    - monaco-ville
+    - mc-mo
+    - mo
+    - monaco-ville quarter
+  category: QUARTER

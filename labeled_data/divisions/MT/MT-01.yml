@@ -1,0 +1,10 @@
+name: Attard
+type: Division-1
+meta:
+  alpha2: MT-01
+  includes:
+    - attard
+    - mt-01
+    - '01'
+    - attard local council
+  category: LOCAL COUNCIL

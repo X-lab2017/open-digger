@@ -1,0 +1,10 @@
+name: Viana do Castelo
+type: Division-1
+meta:
+  alpha2: PT-16
+  includes:
+    - viana do castelo
+    - pt-16
+    - '16'
+    - viana do castelo district
+  category: DISTRICT

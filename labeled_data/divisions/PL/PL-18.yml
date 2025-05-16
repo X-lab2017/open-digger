@@ -1,0 +1,13 @@
+name: Podkarpackie
+type: Division-1
+meta:
+  alpha2: PL-18
+  includes:
+    - podkarpackie
+    - pl-18
+    - '18'
+    - podkarpackie voivodship
+    - podkarpackie voivodeship
+    - województwo podkarpackie
+    - pk
+  category: VOIVODSHIP

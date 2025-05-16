@@ -1,0 +1,10 @@
+name: Tolima
+type: Division-1
+meta:
+  alpha2: CO-TOL
+  includes:
+    - tolima
+    - co-tol
+    - tol
+    - tolima department
+  category: DEPARTMENT

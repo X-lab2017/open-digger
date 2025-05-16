@@ -1,0 +1,13 @@
+name: Dubayy
+type: Division-1
+meta:
+  alpha2: AE-DU
+  includes:
+    - dubayy
+    - ae-du
+    - du
+    - dubayy emirate
+    - dubai
+    - dubai emirate
+    - دبي
+  category: EMIRATE

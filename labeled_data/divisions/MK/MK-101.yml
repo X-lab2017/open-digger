@@ -1,0 +1,11 @@
+name: Veles
+type: Division-1
+meta:
+  alpha2: MK-101
+  includes:
+    - veles
+    - mk-101
+    - '101'
+    - veles municipality
+    - municipality of veles
+  category: MUNICIPALITY

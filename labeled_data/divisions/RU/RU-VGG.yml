@@ -1,0 +1,14 @@
+name: Volgogradskaya oblast'
+type: Division-1
+meta:
+  alpha2: RU-VGG
+  includes:
+    - volgogradskaja oblast'
+    - ru-vgg
+    - vgg
+    - volgogradskaja oblast' administrative region
+    - volgogradskaya oblast'
+    - volgogradskaya oblast' administrative region
+    - volgograd oblast
+    - volgograd
+  category: ADMINISTRATIVE REGION

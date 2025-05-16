@@ -1,0 +1,10 @@
+name: Angaur
+type: Division-1
+meta:
+  alpha2: PW-010
+  includes:
+    - angaur
+    - pw-010
+    - '010'
+    - angaur state
+  category: STATE

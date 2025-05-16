@@ -1,0 +1,12 @@
+name: Wādī Fīrā’
+type: Division-1
+meta:
+  alpha2: TD-WF
+  includes:
+    - wadi fira
+    - td-wf
+    - wf
+    - wadi fira province
+    - wādī fīrā’
+    - wādī fīrā’ province
+  category: PROVINCE

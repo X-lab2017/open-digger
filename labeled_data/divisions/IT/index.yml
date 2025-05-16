@@ -1,0 +1,95 @@
+name: Italy
+type: Division-0
+meta:
+  alpha2: IT
+  includes:
+    - Italy
+    - IT
+    - '380'
+    - the Republic of Italy
+    - 意大利
+  name_full: the Republic of Italy
+  name_zh: 意大利
+  developers:
+    - year: 2020
+      quarter: 1
+      count: 468484
+    - year: 2020
+      quarter: 2
+      count: 521524
+    - year: 2020
+      quarter: 3
+      count: 553803
+    - year: 2020
+      quarter: 4
+      count: 600518
+    - year: 2021
+      quarter: 1
+      count: 647818
+    - year: 2021
+      quarter: 2
+      count: 689401
+    - year: 2021
+      quarter: 3
+      count: 721920
+    - year: 2021
+      quarter: 4
+      count: 765847
+    - year: 2022
+      quarter: 1
+      count: 822968
+    - year: 2022
+      quarter: 2
+      count: 868759
+    - year: 2022
+      quarter: 3
+      count: 906492
+    - year: 2022
+      quarter: 4
+      count: 952924
+    - year: 2023
+      quarter: 1
+      count: 1009526
+    - year: 2023
+      quarter: 2
+      count: 1065048
+    - year: 2023
+      quarter: 3
+      count: 1112253
+    - year: 2023
+      quarter: 4
+      count: 1176773
+    - year: 2024
+      quarter: 1
+      count: 1260832
+    - year: 2024
+      quarter: 2
+      count: 1304444
+    - year: 2024
+      quarter: 3
+      count: 1371508
+    - year: 2024
+      quarter: 4
+      count: 1430971
+data:
+  labels:
+    - IT-65
+    - IT-82
+    - IT-21
+    - IT-57
+    - IT-52
+    - IT-72
+    - IT-75
+    - IT-77
+    - IT-34
+    - IT-25
+    - IT-45
+    - IT-32
+    - IT-88
+    - IT-78
+    - IT-67
+    - IT-36
+    - IT-62
+    - IT-42
+    - IT-55
+    - IT-23

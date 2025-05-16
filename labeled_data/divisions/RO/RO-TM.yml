@@ -1,0 +1,13 @@
+name: Timiș
+type: Division-1
+meta:
+  alpha2: RO-TM
+  includes:
+    - timiș
+    - ro-tm
+    - tm
+    - timiș department
+    - județul timiș
+    - timiş
+    - timiș county
+  category: DEPARTMENT

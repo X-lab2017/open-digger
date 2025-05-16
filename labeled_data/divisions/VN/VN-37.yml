@@ -1,0 +1,11 @@
+name: Tây Ninh
+type: Division-1
+meta:
+  alpha2: VN-37
+  includes:
+    - tây ninh
+    - vn-37
+    - '37'
+    - tây ninh province
+    - tay ninh
+  category: PROVINCE

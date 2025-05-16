@@ -1,0 +1,14 @@
+name: Samarskaya oblast'
+type: Division-1
+meta:
+  alpha2: RU-SAM
+  includes:
+    - samarskaja oblast'
+    - ru-sam
+    - sam
+    - samarskaja oblast' administrative region
+    - samarskaya oblast'
+    - samarskaya oblast' administrative region
+    - samara oblast
+    - samara
+  category: ADMINISTRATIVE REGION

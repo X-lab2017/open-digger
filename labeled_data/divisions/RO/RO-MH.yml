@@ -1,0 +1,11 @@
+name: Mehedinți
+type: Division-1
+meta:
+  alpha2: RO-MH
+  includes:
+    - mehedinți
+    - ro-mh
+    - mh
+    - mehedinți department
+    - mehedinți county
+  category: DEPARTMENT

@@ -1,0 +1,10 @@
+name: Kırklareli
+type: Division-1
+meta:
+  alpha2: TR-39
+  includes:
+    - kırklareli
+    - tr-39
+    - '39'
+    - kırklareli province
+  category: PROVINCE

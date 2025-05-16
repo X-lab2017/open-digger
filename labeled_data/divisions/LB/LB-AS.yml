@@ -1,0 +1,13 @@
+name: Liban-Nord
+type: Division-1
+meta:
+  alpha2: LB-AS
+  includes:
+    - ash shimāl
+    - lb-as
+    - as
+    - ash shimāl governorate
+    - liban-nord
+    - liban-nord governorate
+    - north governorate
+  category: GOVERNORATE

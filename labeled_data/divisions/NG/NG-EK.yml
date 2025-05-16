@@ -1,0 +1,10 @@
+name: Ekiti
+type: Division-1
+meta:
+  alpha2: NG-EK
+  includes:
+    - ekiti
+    - ng-ek
+    - ek
+    - ekiti state
+  category: STATE

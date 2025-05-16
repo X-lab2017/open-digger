@@ -1,0 +1,33 @@
+name: Ulster
+type: Division-1
+meta:
+  alpha2: IE-U
+  includes:
+    - an cabhán
+    - ie-cn
+    - cn
+    - an cabhán county
+    - cavan
+    - cavan county
+    - donegal
+    - ie-dl
+    - dl
+    - donegal county
+    - dún na ngall
+    - dún na ngall county
+    - monaghan
+    - ie-mn
+    - mn
+    - monaghan county
+    - muineachán
+    - muineachán county
+    - ulaidh
+    - ie-u
+    - u
+    - ulaidh province
+    - ulster
+    - ulster province
+    - county donegal
+    - county monaghan
+    - county cavan
+  category: PROVINCE

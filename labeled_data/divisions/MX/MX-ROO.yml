@@ -1,0 +1,11 @@
+name: Quintana Roo
+type: Division-1
+meta:
+  alpha2: MX-ROO
+  includes:
+    - quintana roo
+    - mx-roo
+    - roo
+    - quintana roo state
+    - qr
+  category: STATE

@@ -1,0 +1,12 @@
+name: South East
+type: Division-1
+meta:
+  alpha2: BW-SE
+  includes:
+    - south east
+    - bw-se
+    - se
+    - south east district
+    - south-east district
+    - south-east
+  category: DISTRICT

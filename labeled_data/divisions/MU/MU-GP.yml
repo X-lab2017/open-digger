@@ -1,0 +1,10 @@
+name: Grand Port
+type: Division-1
+meta:
+  alpha2: MU-GP
+  includes:
+    - grand port
+    - mu-gp
+    - gp
+    - grand port district
+  category: DISTRICT

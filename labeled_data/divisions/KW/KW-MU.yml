@@ -1,0 +1,11 @@
+name: Mubārak al Kabīr
+type: Division-1
+meta:
+  alpha2: KW-MU
+  includes:
+    - mubārak al kabīr
+    - kw-mu
+    - mu
+    - mubārak al kabīr governorate
+    - mubarak al-kabeer governorate
+  category: GOVERNORATE

@@ -1,0 +1,11 @@
+name: Đồng Nai
+type: Division-1
+meta:
+  alpha2: VN-39
+  includes:
+    - đồng nai
+    - vn-39
+    - '39'
+    - đồng nai province
+    - dong nai
+  category: PROVINCE

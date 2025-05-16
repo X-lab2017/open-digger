@@ -1,0 +1,10 @@
+name: Odisha
+type: Division-1
+meta:
+  alpha2: IN-OD
+  includes:
+    - odisha
+    - in-od
+    - od
+    - odisha state
+  category: STATE

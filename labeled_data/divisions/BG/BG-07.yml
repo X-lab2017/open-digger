@@ -1,0 +1,11 @@
+name: Gabrovo
+type: Division-1
+meta:
+  alpha2: BG-07
+  includes:
+    - gabrovo
+    - bg-07
+    - '07'
+    - gabrovo district
+    - gabrovo province
+  category: DISTRICT

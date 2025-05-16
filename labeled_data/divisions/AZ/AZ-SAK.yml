@@ -1,0 +1,10 @@
+name: Şəki
+type: Division-1
+meta:
+  alpha2: AZ-SAK
+  includes:
+    - şəki
+    - az-sak
+    - sak
+    - şəki rayon
+  category: RAYON

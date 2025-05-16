@@ -1,0 +1,10 @@
+name: Šenčur
+type: Division-1
+meta:
+  alpha2: SI-117
+  includes:
+    - šenčur
+    - si-117
+    - '117'
+    - šenčur municipality
+  category: MUNICIPALITY

@@ -1,0 +1,10 @@
+name: Ñeembucú
+type: Division-1
+meta:
+  alpha2: PY-12
+  includes:
+    - ñeembucú
+    - py-12
+    - '12'
+    - ñeembucú department
+  category: DEPARTMENT

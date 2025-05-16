@@ -1,0 +1,10 @@
+name: Nibok
+type: Division-1
+meta:
+  alpha2: NR-12
+  includes:
+    - nibok
+    - nr-12
+    - '12'
+    - nibok district
+  category: DISTRICT

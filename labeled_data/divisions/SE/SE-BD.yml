@@ -1,0 +1,11 @@
+name: Norrbottens län
+type: Division-1
+meta:
+  alpha2: SE-BD
+  includes:
+    - norrbottens län
+    - se-bd
+    - bd
+    - norrbottens län county
+    - norrbotten county
+  category: COUNTY

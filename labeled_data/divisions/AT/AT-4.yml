@@ -1,0 +1,11 @@
+name: Oberösterreich
+type: Division-1
+meta:
+  alpha2: AT-4
+  includes:
+    - oberösterreich
+    - at-4
+    - '4'
+    - oberösterreich state
+    - upper austria
+  category: STATE

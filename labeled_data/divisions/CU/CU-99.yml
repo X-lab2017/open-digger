@@ -1,0 +1,11 @@
+name: Isla de la Juventud
+type: Division-1
+meta:
+  alpha2: CU-99
+  includes:
+    - isla de la juventud
+    - cu-99
+    - '99'
+    - isla de la juventud special municipality
+    - isle of youth
+  category: SPECIAL MUNICIPALITY

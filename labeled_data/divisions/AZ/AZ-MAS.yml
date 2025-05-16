@@ -1,0 +1,10 @@
+name: Masallı
+type: Division-1
+meta:
+  alpha2: AZ-MAS
+  includes:
+    - masallı
+    - az-mas
+    - mas
+    - masallı rayon
+  category: RAYON

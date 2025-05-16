@@ -1,0 +1,10 @@
+name: Lōgar
+type: Division-1
+meta:
+  alpha2: AF-LOG
+  includes:
+    - lōgar
+    - af-log
+    - log
+    - lōgar province
+  category: PROVINCE

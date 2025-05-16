@@ -1,0 +1,10 @@
+name: Göygöl
+type: Division-1
+meta:
+  alpha2: AZ-GYG
+  includes:
+    - göygöl
+    - az-gyg
+    - gyg
+    - göygöl rayon
+  category: RAYON

@@ -1,0 +1,11 @@
+name: Cao Bằng
+type: Division-1
+meta:
+  alpha2: VN-04
+  includes:
+    - cao bằng
+    - vn-04
+    - '04'
+    - cao bằng province
+    - cao bang
+  category: PROVINCE

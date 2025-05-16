@@ -1,0 +1,10 @@
+name: Semič
+type: Division-1
+meta:
+  alpha2: SI-109
+  includes:
+    - semič
+    - si-109
+    - '109'
+    - semič municipality
+  category: MUNICIPALITY

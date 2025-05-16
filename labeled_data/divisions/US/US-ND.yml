@@ -1,0 +1,10 @@
+name: North Dakota
+type: Division-1
+meta:
+  alpha2: US-ND
+  includes:
+    - north dakota
+    - us-nd
+    - nd
+    - north dakota state
+  category: STATE

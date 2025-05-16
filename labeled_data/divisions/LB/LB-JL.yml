@@ -1,0 +1,15 @@
+name: Mont-Liban
+type: Division-1
+meta:
+  alpha2: LB-JL
+  includes:
+    - jabal lubnān
+    - lb-jl
+    - jl
+    - jabal lubnān governorate
+    - mont-liban
+    - mont-liban governorate
+    - mount lebanon governorate
+    - jabal lubnan
+    - keserwan-jbeil governorate
+  category: GOVERNORATE

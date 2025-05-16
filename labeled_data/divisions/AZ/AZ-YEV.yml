@@ -1,0 +1,10 @@
+name: Yevlax
+type: Division-1
+meta:
+  alpha2: AZ-YEV
+  includes:
+    - yevlax
+    - az-yev
+    - yev
+    - yevlax rayon
+  category: RAYON

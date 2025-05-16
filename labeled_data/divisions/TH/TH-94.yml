@@ -1,0 +1,10 @@
+name: Pattani
+type: Division-1
+meta:
+  alpha2: TH-94
+  includes:
+    - pattani
+    - th-94
+    - '94'
+    - pattani province
+  category: PROVINCE

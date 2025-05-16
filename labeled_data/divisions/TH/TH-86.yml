@@ -1,0 +1,14 @@
+name: Chumphon
+type: Division-1
+meta:
+  alpha2: TH-86
+  includes:
+    - chumphon
+    - th-86
+    - '86'
+    - chumphon province
+    - chang wat phang-nga
+    - phang-nga
+    - phang nga
+    - จ.​ชุมพร
+  category: PROVINCE

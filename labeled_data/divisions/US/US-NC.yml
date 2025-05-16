@@ -1,0 +1,10 @@
+name: North Carolina
+type: Division-1
+meta:
+  alpha2: US-NC
+  includes:
+    - north carolina
+    - us-nc
+    - nc
+    - north carolina state
+  category: STATE

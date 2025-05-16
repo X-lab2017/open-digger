@@ -1,0 +1,10 @@
+name: Żurrieq
+type: Division-1
+meta:
+  alpha2: MT-68
+  includes:
+    - żurrieq
+    - mt-68
+    - '68'
+    - żurrieq local council
+  category: LOCAL COUNCIL

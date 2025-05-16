@@ -1,0 +1,10 @@
+name: Fejér
+type: Division-1
+meta:
+  alpha2: HU-FE
+  includes:
+    - fejér
+    - hu-fe
+    - fe
+    - fejér county
+  category: COUNTY

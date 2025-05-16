@@ -1,0 +1,10 @@
+name: South East
+type: Division-1
+meta:
+  alpha2: SG-04
+  includes:
+    - south east
+    - sg-04
+    - '04'
+    - south east district
+  category: DISTRICT

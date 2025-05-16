@@ -1,0 +1,10 @@
+name: Matam
+type: Division-1
+meta:
+  alpha2: SN-MT
+  includes:
+    - matam
+    - sn-mt
+    - mt
+    - matam region
+  category: REGION

@@ -1,0 +1,40 @@
+name: Jihočeský kraj
+type: Division-1
+meta:
+  alpha2: CZ-31
+  includes:
+    - jihočeský kraj
+    - cz-31
+    - '31'
+    - jihočeský kraj region
+    - jindřichův hradec
+    - cz-313
+    - '313'
+    - jindřichův hradec district
+    - prachatice
+    - cz-315
+    - '315'
+    - prachatice district
+    - písek
+    - cz-314
+    - '314'
+    - písek district
+    - strakonice
+    - cz-316
+    - '316'
+    - strakonice district
+    - tábor
+    - cz-317
+    - '317'
+    - tábor district
+    - české budějovice
+    - cz-311
+    - '311'
+    - české budějovice district
+    - český krumlov
+    - cz-312
+    - '312'
+    - český krumlov district
+    - south bohemian region
+    - south bohemia
+  category: REGION

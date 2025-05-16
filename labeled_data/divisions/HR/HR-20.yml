@@ -1,0 +1,12 @@
+name: Međimurska županija
+type: Division-1
+meta:
+  alpha2: HR-20
+  includes:
+    - međimurska županija
+    - hr-20
+    - '20'
+    - međimurska županija county
+    - međimurje
+    - međimurje county
+  category: COUNTY

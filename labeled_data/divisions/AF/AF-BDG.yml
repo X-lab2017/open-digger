@@ -1,0 +1,11 @@
+name: Bādghīs
+type: Division-1
+meta:
+  alpha2: AF-BDG
+  includes:
+    - bādghīs
+    - af-bdg
+    - bdg
+    - bādghīs province
+    - badghis
+  category: PROVINCE

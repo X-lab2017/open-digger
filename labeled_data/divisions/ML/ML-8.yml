@@ -1,0 +1,10 @@
+name: Kidal
+type: Division-1
+meta:
+  alpha2: ML-8
+  includes:
+    - kidal
+    - ml-8
+    - '8'
+    - kidal region
+  category: REGION

@@ -1,0 +1,13 @@
+name: Adamaoua
+type: Division-1
+meta:
+  alpha2: CM-AD
+  includes:
+    - adamaoua
+    - cm-ad
+    - ad
+    - adamaoua region
+    - adamawa region
+    - région de l'adamaoua
+    - adamawa
+  category: REGION

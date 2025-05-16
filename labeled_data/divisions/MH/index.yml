@@ -1,0 +1,74 @@
+name: Marshall Islands
+type: Division-0
+meta:
+  alpha2: MH
+  includes:
+    - Marshall Islands
+    - MH
+    - '584'
+    - the Republic of the Marshall Islands
+    - 马绍尔群岛
+  name_full: the Republic of the Marshall Islands
+  name_zh: 马绍尔群岛
+  developers:
+    - year: 2020
+      quarter: 2
+      count: 111
+    - year: 2020
+      quarter: 3
+      count: 115
+    - year: 2020
+      quarter: 4
+      count: 121
+    - year: 2021
+      quarter: 1
+      count: 124
+    - year: 2021
+      quarter: 2
+      count: 131
+    - year: 2021
+      quarter: 3
+      count: 134
+    - year: 2021
+      quarter: 4
+      count: 135
+    - year: 2022
+      quarter: 1
+      count: 149
+    - year: 2022
+      quarter: 2
+      count: 154
+    - year: 2022
+      quarter: 3
+      count: 159
+    - year: 2022
+      quarter: 4
+      count: 162
+    - year: 2023
+      quarter: 1
+      count: 172
+    - year: 2023
+      quarter: 2
+      count: 179
+    - year: 2023
+      quarter: 3
+      count: 186
+    - year: 2023
+      quarter: 4
+      count: 187
+    - year: 2024
+      quarter: 1
+      count: 201
+    - year: 2024
+      quarter: 2
+      count: 211
+    - year: 2024
+      quarter: 3
+      count: 212
+    - year: 2024
+      quarter: 4
+      count: 236
+data:
+  labels:
+    - MH-T
+    - MH-L

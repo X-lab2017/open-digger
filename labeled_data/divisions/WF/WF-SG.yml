@@ -1,0 +1,10 @@
+name: Sigave
+type: Division-1
+meta:
+  alpha2: WF-SG
+  includes:
+    - sigave
+    - wf-sg
+    - sg
+    - sigave administrative precinct
+  category: ADMINISTRATIVE PRECINCT

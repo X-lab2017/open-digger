@@ -1,0 +1,10 @@
+name: Demerara-Mahaica
+type: Division-1
+meta:
+  alpha2: GY-DE
+  includes:
+    - demerara-mahaica
+    - gy-de
+    - de
+    - demerara-mahaica region
+  category: REGION

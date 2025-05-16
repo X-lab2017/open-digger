@@ -1,0 +1,11 @@
+name: Pathum Thani
+type: Division-1
+meta:
+  alpha2: TH-13
+  includes:
+    - pathum thani
+    - th-13
+    - '13'
+    - pathum thani province
+    - chang wat pathum thani
+  category: PROVINCE

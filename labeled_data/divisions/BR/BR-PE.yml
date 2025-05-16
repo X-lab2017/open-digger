@@ -1,0 +1,11 @@
+name: Pernambuco
+type: Division-1
+meta:
+  alpha2: BR-PE
+  includes:
+    - pernambuco
+    - br-pe
+    - pe
+    - pernambuco state
+    - state of pernambuco
+  category: STATE

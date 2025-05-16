@@ -1,0 +1,10 @@
+name: Gujarāt
+type: Division-1
+meta:
+  alpha2: IN-GJ
+  includes:
+    - gujarāt
+    - in-gj
+    - gj
+    - gujarāt state
+  category: STATE

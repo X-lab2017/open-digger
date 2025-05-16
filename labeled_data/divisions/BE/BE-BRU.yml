@@ -1,0 +1,16 @@
+name: Bruxelles-Capitale
+type: Division-1
+meta:
+  alpha2: BE-BRU
+  includes:
+    - brussels hoofdstedelijk gewest
+    - be-bru
+    - bru
+    - brussels hoofdstedelijk gewest region
+    - bruxelles-capitale
+    - bruxelles-capitale region
+    - brussels
+    - brussel
+    - brussels region
+    - bruxelles
+  category: REGION

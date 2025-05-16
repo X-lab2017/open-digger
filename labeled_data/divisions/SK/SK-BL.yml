@@ -1,0 +1,12 @@
+name: Bratislavský kraj
+type: Division-1
+meta:
+  alpha2: SK-BL
+  includes:
+    - bratislavský kraj
+    - sk-bl
+    - bl
+    - bratislavský kraj region
+    - bratislava region
+    - bratislava
+  category: REGION

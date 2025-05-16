@@ -1,0 +1,10 @@
+name: Tamil Nādu
+type: Division-1
+meta:
+  alpha2: IN-TN
+  includes:
+    - tamil nādu
+    - in-tn
+    - tn
+    - tamil nādu state
+  category: STATE

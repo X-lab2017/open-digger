@@ -1,0 +1,10 @@
+name: Podunavski okrug
+type: Division-1
+meta:
+  alpha2: RS-10
+  includes:
+    - podunavski okrug
+    - rs-10
+    - '10'
+    - podunavski okrug district
+  category: DISTRICT

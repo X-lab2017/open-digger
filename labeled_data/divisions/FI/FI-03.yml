@@ -1,0 +1,17 @@
+name: Södra Österbotten
+type: Division-1
+meta:
+  alpha2: FI-03
+  includes:
+    - etelä-pohjanmaa
+    - fi-03
+    - '03'
+    - etelä-pohjanmaa region
+    - södra österbotten
+    - södra österbotten region
+    - south ostrobothnia
+    - fi131
+    - fi132
+    - fi133
+    - fi134
+  category: REGION

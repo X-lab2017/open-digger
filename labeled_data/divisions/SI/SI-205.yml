@@ -1,0 +1,10 @@
+name: Sveti Tomaž
+type: Division-1
+meta:
+  alpha2: SI-205
+  includes:
+    - sveti tomaž
+    - si-205
+    - '205'
+    - sveti tomaž municipality
+  category: MUNICIPALITY

@@ -1,0 +1,10 @@
+name: Majšperk
+type: Division-1
+meta:
+  alpha2: SI-069
+  includes:
+    - majšperk
+    - si-069
+    - '069'
+    - majšperk municipality
+  category: MUNICIPALITY

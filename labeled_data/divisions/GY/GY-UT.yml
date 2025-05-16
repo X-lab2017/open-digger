@@ -1,0 +1,10 @@
+name: Upper Takutu-Upper Essequibo
+type: Division-1
+meta:
+  alpha2: GY-UT
+  includes:
+    - upper takutu-upper essequibo
+    - gy-ut
+    - ut
+    - upper takutu-upper essequibo region
+  category: REGION

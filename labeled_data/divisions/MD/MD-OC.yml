@@ -1,0 +1,10 @@
+name: Ocnița
+type: Division-1
+meta:
+  alpha2: MD-OC
+  includes:
+    - ocnița
+    - md-oc
+    - oc
+    - ocnița district
+  category: DISTRICT

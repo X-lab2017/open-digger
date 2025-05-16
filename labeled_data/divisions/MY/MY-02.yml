@@ -1,0 +1,10 @@
+name: Kedah
+type: Division-1
+meta:
+  alpha2: MY-02
+  includes:
+    - kedah
+    - my-02
+    - '02'
+    - kedah state
+  category: STATE

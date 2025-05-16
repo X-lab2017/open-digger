@@ -1,0 +1,10 @@
+name: Omaheke
+type: Division-1
+meta:
+  alpha2: NA-OH
+  includes:
+    - omaheke
+    - na-oh
+    - oh
+    - omaheke region
+  category: REGION

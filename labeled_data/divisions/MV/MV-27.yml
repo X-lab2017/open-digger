@@ -1,0 +1,14 @@
+name: North Huvadhu Atoll
+type: Division-1
+meta:
+  alpha2: MV-27
+  includes:
+    - huvadhuatholhu uthuruburi
+    - mv-27
+    - '27'
+    - huvadhuatholhu uthuruburi administrative atoll
+    - gaafu alifu
+    - gaafu alifu administrative atoll
+    - north huvadhu atoll
+    - north huvadhu atoll administrative atoll
+  category: ADMINISTRATIVE ATOLL

@@ -1,0 +1,10 @@
+name: Santa Bárbara
+type: Division-1
+meta:
+  alpha2: HN-SB
+  includes:
+    - santa bárbara
+    - hn-sb
+    - sb
+    - santa bárbara department
+  category: DEPARTMENT

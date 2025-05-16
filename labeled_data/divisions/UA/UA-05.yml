@@ -1,0 +1,13 @@
+name: Vinnytska oblast
+type: Division-1
+meta:
+  alpha2: UA-05
+  includes:
+    - vinnytska oblast
+    - ua-05
+    - '05'
+    - vinnytska oblast region
+    - vinnytsia oblast
+    - vinnyts'ka oblast
+    - vinnytsya
+  category: REGION

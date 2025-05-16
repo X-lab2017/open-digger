@@ -1,0 +1,10 @@
+name: Ucar
+type: Division-1
+meta:
+  alpha2: AZ-UCA
+  includes:
+    - ucar
+    - az-uca
+    - uca
+    - ucar rayon
+  category: RAYON
