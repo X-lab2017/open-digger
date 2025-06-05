@@ -190,7 +190,7 @@ data:
     - ':companies/zstack'
     - ':foundations/openatom'
     - ':projects/skywalking'
-platforms:
+  platforms:
     - name: GitHub
       type: Code Hosting
       repos:
