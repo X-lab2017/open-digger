@@ -63,6 +63,8 @@ data:
           name: Postgres-XL/Postgres-XL
         - id: 74375185
           name: RedBeardLab/rediSQL
+        - id: 30113463
+          name: Remi-Coulom/joedb
         - id: 574694308
           name: RhizomeDB/rs-rhizome
         - id: 42580991
@@ -349,6 +351,8 @@ data:
           name: stephentu/silo
         - id: 11734713
           name: stewartsmith/drizzle
+        - id: 975891605
+          name: stoolap/stoolap
         - id: 436658287
           name: surrealdb/surrealdb
         - id: 591304097
