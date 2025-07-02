@@ -1,0 +1,53 @@
+name: LanceDB
+type: Company
+data:
+  platforms:
+  - name: GitHub
+    type: Code Hosting
+    repos:
+    - id: 511691380
+      name: LanceDB/lance
+    - id: 607441698
+      name: LanceDB/lancedb
+    - id: 628082351
+      name: LanceDB/llama_index
+    - id: 643303186
+      name: LanceDB/lance-benchmark-results
+    - id: 651303384
+      name: LanceDB/langchainjs
+    - id: 655059802
+      name: LanceDB/aifunctools
+    - id: 657243985
+      name: LanceDB/semantic-kernel
+    - id: 658219396
+      name: LanceDB/vectordb-recipes
+    - id: 658945697
+      name: LanceDB/openai-cookbook
+    - id: 663210518
+      name: LanceDB/lancedb-private
+    - id: 665015643
+      name: LanceDB/yoloexplorer
+    - id: 672079156
+      name: LanceDB/tantivy-object-store
+    - id: 673986788
+      name: LanceDB/lancedb-vercel-chatbot
+    - id: 686174089
+      name: LanceDB/vercel_blob
+    - id: 724137614
+      name: LanceDB/VectorDBBench
+    - id: 777215598
+      name: LanceDB/lance-deeplearning-recipes
+    - id: 792556055
+      name: LanceDB/trino
+    - id: 799605968
+      name: LanceDB/ragged
+    - id: 811321444
+      name: LanceDB/datasets
+    - id: 851596964
+      name: LanceDB/assets
+    - id: 878612163
+      name: LanceDB/lancedb-cloud-benchmarks
+    - id: 896274459
+      name: LanceDB/ocra
+    - id: 900349676
+      name: LanceDB/flight-sql-js-client
