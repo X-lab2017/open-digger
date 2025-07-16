@@ -1,0 +1,199 @@
+name: Spectro Cloud
+type: Company
+data:
+  platforms:
+  - name: GitHub
+    type: Code Hosting
+    repos:
+    - id: 260471399
+      name: spectrocloud/librarium
+    - id: 249604467
+      name: spectrocloud/cluster-api-provider-vsphere
+    - id: 405284335
+      name: spectrocloud/frp
+    - id: 220356927
+      name: spectrocloud/cluster-api-provider-aws
+    - id: 241495229
+      name: spectrocloud/cluster-api
+    - id: 230048291
+      name: spectrocloud/cluster-api-provider-gcp
+    - id: 251519490
+      name: spectrocloud/cluster-api-provider-azure
+    - id: 277661030
+      name: spectrocloud/cluster-api-provider-vsphere-static-ip
+    - id: 298924000
+      name: spectrocloud/kube-vip
+    - id: 218953514
+      name: spectrocloud/image-builder
+    - id: 324439340
+      name: spectrocloud/terraform-provider-spectrocloud
+    - id: 330281204
+      name: spectrocloud/gitops-picard
+    - id: 340087243
+      name: spectrocloud/cluster-api-provider-maas
+    - id: 281854004
+      name: spectrocloud/ip-address-manager
+    - id: 413607826
+      name: spectrocloud/terraform-spectrocloud-modules
+    - id: 326884682
+      name: spectrocloud/k8s-set-context
+    - id: 329347868
+      name: spectrocloud/k8s-deploy-cluster
+    - id: 253385269
+      name: spectrocloud/k8s-conformance
+    - id: 406831491
+      name: spectrocloud/cluster-api-provider-openstack
+    - id: 542683010
+      name: spectrocloud/cluster-api-provider-coxedge
+    - id: 562936180
+      name: spectrocloud/tutorials
+    - id: 409850640
+      name: spectrocloud/helm
+    - id: 384614800
+      name: spectrocloud/maas-client-go
+    - id: 582797619
+      name: spectrocloud/hello-universe
+    - id: 459768874
+      name: spectrocloud/terraform-controller
+    - id: 459769192
+      name: spectrocloud/docker-terraform
+    - id: 590777866
+      name: spectrocloud/cert-manager
+    - id: 538914523
+      name: spectrocloud/peg
+    - id: 543256071
+      name: spectrocloud/cluster-api-control-plane-provider-microk8s
+    - id: 543256154
+      name: spectrocloud/cluster-api-bootstrap-provider-microk8s
+    - id: 595477863
+      name: spectrocloud/pack-central
+    - id: 606994994
+      name: spectrocloud/system-upgrade-controller
+    - id: 495916820
+      name: spectrocloud/cluster-api-provider-vcluster
+    - id: 622033114
+      name: spectrocloud/spectromate
+    - id: 518234374
+      name: spectrocloud/terraform-spectrocloud-edge
+    - id: 629016559
+      name: spectrocloud/CanvOS
+    - id: 306723952
+      name: spectrocloud/kruise
+    - id: 653143408
+      name: spectrocloud/metrics-server
+    - id: 373589238
+      name: spectrocloud/gitops-project-edison
+    - id: 373596262
+      name: spectrocloud/gitops-tf-scripts
+    - id: 551333324
+      name: spectrocloud/pxke-samples
+    - id: 496421704
+      name: spectrocloud/vcluster
+    - id: 567385436
+      name: spectrocloud/stylus-image-builder
+    - id: 677481137
+      name: spectrocloud/mongo-k8s-sidecar
+    - id: 574623320
+      name: spectrocloud/docs-assignments
+    - id: 590753086
+      name: spectrocloud/aws-iam-authenticator
+    - id: 593294905
+      name: spectrocloud/oras
+    - id: 593294977
+      name: spectrocloud/kustomize
+    - id: 475983858
+      name: spectrocloud/kind
+    - id: 635303876
+      name: spectrocloud/autoscaler
+    - id: 653473151
+      name: spectrocloud/ingress-nginx
+    - id: 314142733
+      name: spectrocloud/reach
+    - id: 583368948
+      name: spectrocloud/hello-universe-api
+    - id: 583373081
+      name: spectrocloud/hello-universe-db
+    - id: 278792577
+      name: spectrocloud/container-engine-accelerators
+    - id: 670704336
+      name: spectrocloud/docs-prototype
+    - id: 523509802
+      name: spectrocloud/vsphere-csi-driver
+    - id: 531883851
+      name: spectrocloud/kubesplit
+    - id: 673785452
+      name: spectrocloud/etcd
+    - id: 281835472
+      name: spectrocloud/vault-pax
+    - id: 674270888
+      name: spectrocloud/kube-rbac-proxy
+    - id: 457024496
+      name: spectrocloud/k8s-exams
+    - id: 656100582
+      name: spectrocloud/devspace
+    - id: 697004973
+      name: spectrocloud/harbor-helm
+    - id: 485568182
+      name: spectrocloud/provider-jet-palette
+    - id: 553830851
+      name: spectrocloud/helm-charts
+    - id: 532589184
+      name: spectrocloud/terraform-provider-libvirt
+    - id: 512427039
+      name: spectrocloud/blackadder
+    - id: 416508632
+      name: spectrocloud/cluster-api-provider-nested
+    - id: 526123647
+      name: spectrocloud/rke-runtime-upload
+    - id: 326596759
+      name: spectrocloud/hipster-frontend
+    - id: 236508547
+      name: spectrocloud/packer-builder-vsphere
+    - id: 518234374
+      name: spectrocloud/terraform-palette-edge
+    - id: 561276483
+      name: spectrocloud/go-i18n
+    - id: 459764898
+      name: spectrocloud/instruqt-labs-automation
+    - id: 571991762
+      name: spectrocloud/gatsby-source-hubspot-forms
+    - id: 336645684
+      name: spectrocloud/gitops-argocd
+    - id: 381221889
+      name: spectrocloud/cluster-api-provider-nomad
+    - id: 244010765
+      name: spectrocloud/dev-test-release
+    - id: 587087095
+      name: spectrocloud/zarf
+    - id: 286257928
+      name: spectrocloud/ml-experiments
+    - id: 193471258
+      name: spectrocloud/playground
+    - id: 220857223
+      name: spectrocloud/cluster-api-bootstrap-provider-kubeadm
+    - id: 340259658
+      name: spectrocloud/gitops-jenkins
+    - id: 411508384
+      name: spectrocloud/yamux
+    - id: 472360392
+      name: spectrocloud/cluster-api-sample-bootstrap-provider
+    - id: 528909361
+      name: spectrocloud/cluster-api-provider-packet
+    - id: 567344877
+      name: spectrocloud/dashboard
+    - id: 592189022
+      name: spectrocloud/kubernetes
+    - id: 597101531
+      name: spectrocloud/kube-openapi
+    - id: 746889200
+      name: spectrocloud/palette-samples
+    - id: 246377193
+      name: spectrocloud/packer
+    - id: 626519821
+      name: spectrocloud/date-buddy
+    - id: 696361727
+      name: spectrocloud/webauthn
+    - id: 750337886
+      name: spectrocloud/controller-runtime
+    - id: 678310243
+      name: spectrocloud/remote-jupyter

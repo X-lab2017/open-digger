@@ -1,0 +1,67 @@
+name: Restate
+type: Company
+data:
+  platforms:
+  - name: GitHub
+    type: Code Hosting
+    repos:
+    - id: 480321346
+      name: restatedev/proto
+    - id: 489007488
+      name: restatedev/e2e
+    - id: 566406011
+      name: restatedev/service-protocol
+    - id: 569181470
+      name: restatedev/sdk-java
+    - id: 585196214
+      name: restatedev/restate
+    - id: 607697713
+      name: restatedev/sdk-typescript
+    - id: 633460934
+      name: restatedev/restate-dist
+    - id: 633940077
+      name: restatedev/documentation
+    - id: 638513257
+      name: restatedev/dev-tools
+    - id: 639841398
+      name: restatedev/node-template-generator
+    - id: 673406059
+      name: restatedev/.github
+    - id: 676874414
+      name: restatedev/examples
+    - id: 678807573
+      name: restatedev/tour-of-restate
+    - id: 718295358
+      name: restatedev/restate-holiday
+    - id: 718762052
+      name: restatedev/cdk
+    - id: 728652425
+      name: restatedev/homebrew-tap
+    - id: 743614783
+      name: restatedev/rust-rocksdb
+    - id: 747809835
+      name: restatedev/jemallocator
+    - id: 748269525
+      name: restatedev/example-dynamic-workflow-executor
+    - id: 753536642
+      name: restatedev/restate-operator
+    - id: 758166005
+      name: restatedev/aws-sdk-rust
+    - id: 764539934
+      name: restatedev/jemalloc
+    - id: 766998372
+      name: restatedev/sdk-go
+    - id: 772142097
+      name: restatedev/restate-web-ui
+    - id: 793528726
+      name: restatedev/lambdaconf-hackathon
+    - id: 824526120
+      name: restatedev/sdk-python
+    - id: 828808875
+      name: restatedev/sdk-shared-core
+    - id: 833488027
+      name: restatedev/datafusion
+    - id: 835826722
+      name: restatedev/sdk-test-suite
+    - id: 839942146
+      name: restatedev/sdk-rust

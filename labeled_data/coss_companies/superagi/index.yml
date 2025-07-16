@@ -1,0 +1,17 @@
+name: Superagi
+type: Company
+data:
+  platforms:
+  - name: GitHub
+    type: Code Hosting
+    repos:
+    - id: 731013747
+      name: superagi/llm-foundry-os
+    - id: 744976149
+      name: superagi/Veagle
+    - id: 775890693
+      name: superagi/CogVLM
+    - id: 832175282
+      name: superagi/docker-dind
+    - id: 916973948
+      name: superagi/automation_editor
