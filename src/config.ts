@@ -10,13 +10,13 @@ let config = {
   },
   db: {
     clickhouse: {
-      host: process.env.CLICKHOUSE_HOST ?? 'http://localhost:8123',
+      url: process.env.CLICKHOUSE_URL ?? 'http://localhost:8123',
       username: process.env.CLICKHOUSE_USERNAME ?? '',
       password: process.env.CLICKHOUSE_PASSWORD ?? '',
       database: process.env.CLICKHOUSE_DATABASE ?? 'opensource',
     },
     neo4j: {
-      url: process.env.NEO4J_HOST ?? 'neo4j://localhost',
+      url: process.env.NEO4J_URL ?? 'neo4j://localhost',
     }
   },
   oss: {
