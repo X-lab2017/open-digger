@@ -30,6 +30,8 @@ const analysisData = async (year: number) => {
     COUNT()
   FROM ${tableName} WHERE year=${year} AND state='Finished' GROUP BY univ ORDER BY COUNT() DESC`);
   console.log('高校分布: ', finishUnivDistributionRes.slice(0, 10).map(row => `${row[0]}:${row[1]}`).join(','));
+  console.log('高校分布: ',
+    JSON.stringify(finishUnivDistributionRes.filter(n => n[1] >= 2).map(n => ({ name: n[0], value: n[1] }))));
 
   const studentLoginMap = new Map<string, any[]>([['GitHub', []], ['Gitee', []]]);
   const reposMap = new Map<string, any[]>([['GitHub', []], ['Gitee', []]]);
@@ -79,11 +81,25 @@ const analysisData = async (year: number) => {
     openrank: +(r[1].openrank.toFixed(2)),
   })).sort((a, b) => b.openrank - a.openrank);
   console.table(univOpenrankRankingList.slice(0, 20));
+  const data2024 = univOpenrankRankingList.slice(0, 20).map((u, index) => {
+    return {
+      __index__: index + 1,
+      name: u.univ,
+      openrank: u.openrank,
+      openrankDelta: '-',
+      totalCount: u.count,
+      totalCountDelta: '-',
+      openrankAverage: +(u.openrank / u.count).toFixed(2),
+      openrankAverageDelta: '-',
+    };
+  });
+  console.log(JSON.stringify(data2024));
 
-  const studentOpenrankRankingList = studentOpenRankData.slice(0, 20).map(s => {
+  const studentOpenrankRankingList = studentOpenRankData.slice(0, 20).map((s, index) => {
     const record = rawData.find(r => r.student_login === s.login && r.student_platform === s.platform)!;
     if (!record) return {};
     return {
+      __index__: index + 1,
       name: record.student_name[0] + '*'.repeat(record.student_name.length - 1),
       openrank: s.openrank,
       univ: record.student_univ,
@@ -91,6 +107,7 @@ const analysisData = async (year: number) => {
     }
   });
   console.table(studentOpenrankRankingList);
+  console.log(JSON.stringify(studentOpenrankRankingList));
 
   const studentGlobalOpenRankRes = await getUserCommunityOpenrank({
     startYear: 2024, startMonth: 1, endYear: 2024, endMonth: 12,
@@ -105,20 +122,21 @@ const analysisData = async (year: number) => {
     order: 'DESC', orderOption: 'latest',
     limit: -1, limitOption: 'all', precision: 2,
   });
-  const studentGlobalOpenrankRankingList = studentGlobalOpenRankRes.slice(0, 10).map(s => {
+  const studentGlobalOpenrankRankingList = studentGlobalOpenRankRes.slice(0, 10).map((s, index) => {
     const openrank = s.openrank[0];
     const openrankDetails = s.openrankDetails[0].map(r => r[2]);
     const record = rawData.find(r => r.student_login === s.name && r.student_platform === s.platform)!;
     if (!record) return {};
     return {
+      __index__: index + 1,
       name: record.student_name[0] + '*'.repeat(record.student_name.length - 1),
       openrank,
       univ: record.student_univ,
-      projects: openrankDetails.slice(0, 3).join(','),
+      repos: openrankDetails.slice(0, 3).join('<br />'),
     };
   });
   console.table(studentGlobalOpenrankRankingList);
-
+  console.log(JSON.stringify(studentGlobalOpenrankRankingList));
 };
 
 (async () => {
