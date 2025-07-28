@@ -9,10 +9,6 @@ data:
   platforms:
     - name: GitHub
       type: Code Hosting
-      repos:
-        - id: 81367506
+      orgs:
+        - id: 320945
           name: CERN
-        - id: 77605371
-          name: CUG-hydro
-        - id: 66998566
-          name: CUG-EMI

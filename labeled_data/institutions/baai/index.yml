@@ -1,0 +1,14 @@
+name: Beijing Academy of Artificial Intelligence
+type: Institution
+meta:
+  name_zh: 智源研究院
+  name_zh_full: 北京智源人工智能研究院
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 114467038
+          name: FlagOpen
+        - id: 200870987
+          name: FlagTree
