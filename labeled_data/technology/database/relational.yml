@@ -229,6 +229,8 @@ data:
           name: h2database/h2database
         - id: 90541149
           name: heavyai/heavydb
+        - id: 911776933
+          name: hpides/skyrise
         - id: 291675222
           name: hstreamdb/hstream
         - id: 87414843
