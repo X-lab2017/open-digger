@@ -113,7 +113,7 @@ const task: Task = {
       // split the sql into 40 pieces to avoid memory issue
       const getPartition = async (type: 'User' | 'Repo'): Promise<Array<{ min: number, max: number }>> => {
         const quantileArr: number[] = [];
-        for (let i = 0.02; i <= 0.98; i += 0.02) {
+        for (let i = 0.01; i <= 0.99; i += 0.01) {
           quantileArr.push(i);
         }
         const partitions: any[] = [];
