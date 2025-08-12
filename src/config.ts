@@ -47,6 +47,7 @@ let config = {
   task: {
     enable: [],
     immediate: [],
+    configs: {} as any,
   },
 };
 
