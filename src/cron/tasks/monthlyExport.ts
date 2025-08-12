@@ -71,8 +71,7 @@ const task: Task = {
         `INSERT INTO ${exportRepoTableName}
   SELECT argMax(repo_id, time) AS id, platform, repo_name, any(orgid) AS org_id FROM
   (SELECT repo_id, platform, argMax(repo_name, created_at) AS repo_name, MAX(created_at) AS time, any(org_id) AS orgid 
-  FROM global_openrank WHERE type='Repo' AND (repo_id IN (SELECT repo_id FROM global_openrank WHERE openrank > 5 AND type='Repo') OR 
-  platform IN ('Gitee', 'AtomGit') OR ${(() => {
+  FROM global_openrank WHERE type='Repo' AND (repo_id IN (SELECT repo_id FROM global_openrank WHERE openrank > 10 AND type='Repo') OR ${(() => {
           const arr: string[] = [];
           for (const [name, p] of platform.entries()) {
             if (p.repos.size > 0) arr.push(`(platform = '${name}' AND repo_id IN (${Array.from(p.repos).join(',')}))`);
@@ -84,7 +83,7 @@ const task: Task = {
         `INSERT INTO ${exportUserTableName}
   SELECT argMax(actor_id, time) AS id, platform, actor_login FROM
   (SELECT actor_id, platform, argMax(actor_login, created_at) AS actor_login, MAX(created_at) AS time
-  FROM global_openrank WHERE type='User' AND (actor_id IN (SELECT actor_id FROM global_openrank WHERE openrank > 5 AND type='User') OR platform IN ('Gitee', 'AtomGit') OR ${(() => {
+  FROM global_openrank WHERE type='User' AND (actor_id IN (SELECT actor_id FROM global_openrank WHERE openrank > 10 AND type='User') OR ${(() => {
           const arr: string[] = [];
           for (const [name, p] of platform.entries()) {
             if (p.users.size > 0) arr.push(`(platform = '${name}' AND actor_id IN (${Array.from(p.users).join(',')}))`);
