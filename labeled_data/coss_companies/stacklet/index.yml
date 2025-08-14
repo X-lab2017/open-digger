@@ -1,0 +1,53 @@
+name: Stacklet
+type: Company
+data:
+  platforms:
+  - name: GitHub
+    type: Code Hosting
+    repos:
+    - id: 248398045
+      name: stacklet/netlify
+    - id: 305449851
+      name: stacklet/terraform-aws-atlantis
+    - id: 329429682
+      name: stacklet/chalice
+    - id: 343799199
+      name: stacklet/pytest-coverage-commentator
+    - id: 350788170
+      name: stacklet/cloud-custodian
+    - id: 357470284
+      name: stacklet/stacklet-admin
+    - id: 369591772
+      name: stacklet/redash
+    - id: 378233412
+      name: stacklet/tfresurrect
+    - id: 394493928
+      name: stacklet/tfdevops
+    - id: 394774567
+      name: stacklet/terraform-provider-postgresql
+    - id: 567803529
+      name: stacklet/c7n-left-demo
+    - id: 572671513
+      name: stacklet/cur-setup
+    - id: 602796541
+      name: stacklet/sinistral-cli
+    - id: 604159163
+      name: stacklet/shift-left-foundations-pack
+    - id: 617057108
+      name: stacklet/sinistral-getting-started
+    - id: 629596128
+      name: stacklet/terraform-aws-lambda-insights-layer
+    - id: 644367548
+      name: stacklet/aws-workshop
+    - id: 645956278
+      name: stacklet/terraform-azure-stacklet-relay
+    - id: 687676449
+      name: stacklet/terraform-aws-stacklet-cur-setup
+    - id: 687727519
+      name: stacklet/terraform-azure-stacklet-cost-setup
+    - id: 710373327
+      name: stacklet/dynamoquery
+    - id: 881041152
+      name: stacklet/terraform-aws-policy-attachment
+    - id: 894736645
+      name: stacklet/cube
