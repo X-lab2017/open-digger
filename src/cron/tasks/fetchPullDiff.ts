@@ -55,7 +55,7 @@ const task: Task = {
     const getDiff = async (repo: string, platform: string, number: number): Promise<any> => {
       try {
         if (platform === 'GitHub') {
-          const diff = await ghClient.rest.pulls.get({
+          const diff: any = await ghClient.rest.pulls.get({
             owner: repo.split('/')[0],
             repo: repo.split('/')[1],
             pull_number: number,
@@ -63,7 +63,7 @@ const task: Task = {
               format: 'diff',
             },
           });
-          return diff.data;
+          return diff.data.slice(0, config.task.configs.fetchPullDiff.maxDiffSize);
         } else {
           logger.error('Platform not supported.', platform);
         }

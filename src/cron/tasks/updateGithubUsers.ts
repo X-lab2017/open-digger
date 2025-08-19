@@ -14,10 +14,10 @@ const task: Task = {
   callback: async () => {
 
     const logger = getLogger('UpdateGitHubUserTask');
-
-    const updateBatchSize = 1500;
     const config = await getConfig();
-    const tokens = config.github.tokens;
+
+    const updateBatchSize = config.task.configs.updateGithubUsers.updateBatchSize;
+    const tokens = config.task.configs.updateGithubUsers.tokens;
     const graphqlClient = new GitHubClient({
       tokens,
       maxConcurrentReqNumber: 40,
