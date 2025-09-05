@@ -71,6 +71,9 @@ meta:
     - year: 2024
       quarter: 4
       count: 1586524
+    - year: 2025
+      quarter: 1
+      count: 1718562
 data:
   labels:
     - PK-JK

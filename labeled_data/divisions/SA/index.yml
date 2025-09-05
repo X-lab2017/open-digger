@@ -71,6 +71,9 @@ meta:
     - year: 2024
       quarter: 4
       count: 630310
+    - year: 2025
+      quarter: 1
+      count: 671395
 data:
   labels:
     - SA-14

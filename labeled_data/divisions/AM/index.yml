@@ -71,6 +71,9 @@ meta:
     - year: 2024
       quarter: 4
       count: 108552
+    - year: 2025
+      quarter: 1
+      count: 114516
 data:
   labels:
     - AM-AG

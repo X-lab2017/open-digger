@@ -67,6 +67,9 @@ meta:
     - year: 2024
       quarter: 4
       count: 3326
+    - year: 2025
+      quarter: 1
+      count: 3697
 data:
   labels:
     - SS-EC

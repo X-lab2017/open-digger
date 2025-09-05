@@ -71,6 +71,9 @@ meta:
     - year: 2024
       quarter: 4
       count: 8694
+    - year: 2025
+      quarter: 1
+      count: 9801
 data:
   labels:
     - MR-07

@@ -70,6 +70,9 @@ meta:
     - year: 2024
       quarter: 4
       count: 371670
+    - year: 2025
+      quarter: 1
+      count: 391998
 data:
   labels:
     - IE-U

@@ -71,6 +71,9 @@ meta:
     - year: 2024
       quarter: 4
       count: 33450
+    - year: 2025
+      quarter: 1
+      count: 34532
 data:
   labels:
     - SD-RS

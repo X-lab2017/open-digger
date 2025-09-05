@@ -70,6 +70,9 @@ meta:
     - year: 2024
       quarter: 4
       count: 40658
+    - year: 2025
+      quarter: 1
+      count: 44013
 data:
   labels:
     - JM-13

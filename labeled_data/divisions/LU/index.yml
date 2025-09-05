@@ -71,6 +71,9 @@ meta:
     - year: 2024
       quarter: 4
       count: 46797
+    - year: 2025
+      quarter: 1
+      count: 49165
 data:
   labels:
     - LU-CA

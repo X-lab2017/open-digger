@@ -71,6 +71,9 @@ meta:
     - year: 2024
       quarter: 4
       count: 3411
+    - year: 2025
+      quarter: 1
+      count: 3709
 data:
   labels:
     - DJ-AS

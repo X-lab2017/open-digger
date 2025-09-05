@@ -56,6 +56,9 @@ meta:
     - year: 2024
       quarter: 4
       count: 186
+    - year: 2025
+      quarter: 1
+      count: 189
 data:
   labels:
     - KI-G

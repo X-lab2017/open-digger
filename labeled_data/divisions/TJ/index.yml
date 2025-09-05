@@ -71,6 +71,9 @@ meta:
     - year: 2024
       quarter: 4
       count: 14692
+    - year: 2025
+      quarter: 1
+      count: 16007
 data:
   labels:
     - TJ-DU

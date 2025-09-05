@@ -70,6 +70,9 @@ meta:
     - year: 2024
       quarter: 4
       count: 589523
+    - year: 2025
+      quarter: 1
+      count: 623074
 data:
   labels:
     - RO-AB

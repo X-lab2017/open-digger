@@ -71,6 +71,9 @@ meta:
     - year: 2024
       quarter: 4
       count: 7844
+    - year: 2025
+      quarter: 1
+      count: 8939
 data:
   labels:
     - GN-N

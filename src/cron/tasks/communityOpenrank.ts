@@ -1,42 +1,42 @@
 import { Task } from '..';
 import { forEveryMonth } from '../../metrics/basic';
-import { ArrayMap, getLogger, waitUntil } from '../../utils';
+import { getLogger, waitUntil } from '../../utils';
 import { StaticPool } from 'node-worker-threads-pool';
 import { query as queryClickhouse, queryStream as queryStreamClickhouse, getNewClient } from '../../db/clickhouse';
 import { query as queryNeo4j, queryStream as queryStreamNeo4j } from '../../db/neo4j';
 import { Readable } from 'stream';
-import { join } from 'path';
-import getConfig from '../../config';
-import { mkdirSync, readFileSync, writeFileSync } from 'fs';
+// import { join } from 'path';
+// import getConfig from '../../config';
+// import { mkdirSync, readFileSync, writeFileSync } from 'fs';
 
 enum CalcStatus {
   Normal = 1,
   TooLarge = 2,
 }
 
-interface ExportDataType {
-  meta: {
-    repoId: number;
-    platform: string;
-    repoName: string;
-    retentionFactor: number;
-    backgroundRatio: number;
-    nodes: string[][];  // [id,name], for id: repo starts with r, user starts with u, issue starts with i, pr starts with p
-  },
-  data: {
-    [key: string]: {
-      openrank: number;
-      nodes: any[][];   // [index, initial value, openrank]
-      links: any[][];   // [source index, target index, weight]
-    };
-  },
-};
+// interface ExportDataType {
+//   meta: {
+//     repoId: number;
+//     platform: string;
+//     repoName: string;
+//     retentionFactor: number;
+//     backgroundRatio: number;
+//     nodes: string[][];  // [id,name], for id: repo starts with r, user starts with u, issue starts with i, pr starts with p
+//   },
+//   data: {
+//     [key: string]: {
+//       openrank: number;
+//       nodes: any[][];   // [index, initial value, openrank]
+//       links: any[][];   // [source index, target index, weight]
+//     };
+//   },
+// };
 
 const task: Task = {
   cron: '0 0 15 1 * *',
   callback: async () => {
     const logger = getLogger('CommunityOpenRankTask');
-    const config = await getConfig();
+    // const config = await getConfig();
 
     const openrankTable = 'community_openrank';
     const localWorkerNumber = 12;
@@ -312,56 +312,56 @@ GROUP BY
         stream.push(record);
         updateCor(platform, repoId, `${y}${m.toString().padStart(2, '0')}`, idStr === 'bg' ? repoId : idStr, openrank);
       };
-      const yyyymm = `${y}${m.toString().padStart(2, '0')}`;
+      // const yyyymm = `${y}${m.toString().padStart(2, '0')}`;
 
-      const saveExportData = async (param: { platform: string, exportData: any }) => {
-        const { platform, exportData } = param;
-        const repoName = exportData.meta.repoName;
-        const exportFileDir = join(config.export.path, platform.toLowerCase(), repoName);
-        const exportFilePath = join(exportFileDir, 'community_openrank.json');
-        mkdirSync(exportFileDir, { recursive: true });
-        let data: ExportDataType = {
-          meta: {
-            repoId: +exportData.meta.repoId,
-            platform,
-            repoName,
-            retentionFactor: 0.15,
-            backgroundRatio: 0.05,
-            nodes: [],
-          },
-          data: {},
-        };
-        try {
-          data = JSON.parse(readFileSync(exportFilePath).toString());
-        } catch { }
-        try {
-          const nodeArrayMap = new ArrayMap<string[]>(data.meta.nodes, n => n[0]);
-          nodeArrayMap.add(['r' + exportData.meta.repoId, repoName]);
-          for (let i = 0; i < exportData.nodes.length; i++) {
-            const node = exportData.nodes[i];
-            if (node.id[0] === 'u') {
-              // set user login
-              nodeArrayMap.add([node.id, actorNameMap.get(`${platform}_${node.id.slice(1)}`)!]);
-            } else if (node.id[0] === 'i' || node.id[0] === 'p') {
-              // set issue title
-              nodeArrayMap.add([exportData.nodes[i].id, issueTitleMap.get(`${platform}_${exportData.meta.repoId}_${node.id.slice(1)}`)!]);
-            }
-          }
-          data.meta.nodes = nodeArrayMap.getArray();
-          data.data[yyyymm] = {
-            openrank: exportData.meta.openrank,
-            nodes: exportData.nodes.map(n => [nodeArrayMap.getIndex(n.id)!, n.i, n.v]),
-            links: exportData.links.map(l => [nodeArrayMap.getIndex(l.s)!, nodeArrayMap.getIndex(l.t)!, l.w]),
-          };
-        } catch (e) {
-          console.log(e, exportFilePath);
-        }
-        try {
-          writeFileSync(exportFilePath, JSON.stringify(data));
-        } catch (e) {
-          logger.error(`Error on save export data, repoName=${repoName}, ${e}`);
-        }
-      };
+      // const saveExportData = async (param: { platform: string, exportData: any }) => {
+      //   const { platform, exportData } = param;
+      //   const repoName = exportData.meta.repoName;
+      //   const exportFileDir = join(config.export.path, platform.toLowerCase(), repoName);
+      //   const exportFilePath = join(exportFileDir, 'community_openrank.json');
+      //   mkdirSync(exportFileDir, { recursive: true });
+      //   let data: ExportDataType = {
+      //     meta: {
+      //       repoId: +exportData.meta.repoId,
+      //       platform,
+      //       repoName,
+      //       retentionFactor: 0.15,
+      //       backgroundRatio: 0.05,
+      //       nodes: [],
+      //     },
+      //     data: {},
+      //   };
+      //   try {
+      //     data = JSON.parse(readFileSync(exportFilePath).toString());
+      //   } catch { }
+      //   try {
+      //     const nodeArrayMap = new ArrayMap<string[]>(data.meta.nodes, n => n[0]);
+      //     nodeArrayMap.add(['r' + exportData.meta.repoId, repoName]);
+      //     for (let i = 0; i < exportData.nodes.length; i++) {
+      //       const node = exportData.nodes[i];
+      //       if (node.id[0] === 'u') {
+      //         // set user login
+      //         nodeArrayMap.add([node.id, actorNameMap.get(`${platform}_${node.id.slice(1)}`)!]);
+      //       } else if (node.id[0] === 'i' || node.id[0] === 'p') {
+      //         // set issue title
+      //         nodeArrayMap.add([exportData.nodes[i].id, issueTitleMap.get(`${platform}_${exportData.meta.repoId}_${node.id.slice(1)}`)!]);
+      //       }
+      //     }
+      //     data.meta.nodes = nodeArrayMap.getArray();
+      //     data.data[yyyymm] = {
+      //       openrank: exportData.meta.openrank,
+      //       nodes: exportData.nodes.map(n => [nodeArrayMap.getIndex(n.id)!, n.i, n.v]),
+      //       links: exportData.links.map(l => [nodeArrayMap.getIndex(l.s)!, nodeArrayMap.getIndex(l.t)!, l.w]),
+      //     };
+      //   } catch (e) {
+      //     console.log(e, exportFilePath);
+      //   }
+      //   try {
+      //     writeFileSync(exportFilePath, JSON.stringify(data));
+      //   } catch (e) {
+      //     logger.error(`Error on save export data, repoName=${repoName}, ${e}`);
+      //   }
+      // };
       for (const list of processLists) {
         localWorkerProcessing++;
         workerPool.exec({
@@ -376,7 +376,7 @@ GROUP BY
               for (const [idStr, openrank] of values) {
                 saveRecord(platform, repoId, idStr, openrank);
               }
-              saveExportData({ platform, exportData });
+              // saveExportData({ platform, exportData });
             } else {
               neo4jWaitingNumber++;
               let calcFinished = false;
@@ -393,7 +393,7 @@ GROUP BY
                   exportData.nodes.forEach(n => n.v = +nodeOpenrankMap.get(n.id)!.toFixed(3));
                   if (!elpsMap.has(size)) elpsMap.set(size, { count: 0, elps: 0 });
                   Object.keys(stat).forEach(k => { elpsMap.get(size)![k] += stat[k]; });
-                  saveExportData({ platform, exportData });
+                  // saveExportData({ platform, exportData });
                   calcFinished = true;
                 } catch (e) {
                   logger.error(`Error on calc by neo4j, ${repoId}, ${e}`);

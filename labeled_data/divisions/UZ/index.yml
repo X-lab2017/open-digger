@@ -71,6 +71,9 @@ meta:
     - year: 2024
       quarter: 4
       count: 238184
+    - year: 2025
+      quarter: 1
+      count: 257749
 data:
   labels:
     - UZ-AN

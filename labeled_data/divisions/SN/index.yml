@@ -71,6 +71,9 @@ meta:
     - year: 2024
       quarter: 4
       count: 54914
+    - year: 2025
+      quarter: 1
+      count: 61855
 data:
   labels:
     - SN-DK

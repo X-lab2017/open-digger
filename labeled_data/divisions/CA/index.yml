@@ -70,6 +70,9 @@ meta:
     - year: 2024
       quarter: 4
       count: 3064962
+    - year: 2025
+      quarter: 1
+      count: 3211400
 data:
   labels:
     - CA-AB

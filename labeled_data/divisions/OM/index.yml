@@ -71,6 +71,9 @@ meta:
     - year: 2024
       quarter: 4
       count: 57824
+    - year: 2025
+      quarter: 1
+      count: 63246
 data:
   labels:
     - OM-DA

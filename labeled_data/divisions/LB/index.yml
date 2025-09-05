@@ -71,6 +71,9 @@ meta:
     - year: 2024
       quarter: 4
       count: 114833
+    - year: 2025
+      quarter: 1
+      count: 122971
 data:
   labels:
     - LB-AK

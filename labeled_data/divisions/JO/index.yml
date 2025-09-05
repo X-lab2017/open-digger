@@ -71,6 +71,9 @@ meta:
     - year: 2024
       quarter: 4
       count: 151408
+    - year: 2025
+      quarter: 1
+      count: 163016
 data:
   labels:
     - JO-BA

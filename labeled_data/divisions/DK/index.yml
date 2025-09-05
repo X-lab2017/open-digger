@@ -71,6 +71,9 @@ meta:
     - year: 2024
       quarter: 4
       count: 417886
+    - year: 2025
+      quarter: 1
+      count: 439537
 data:
   labels:
     - DK-84

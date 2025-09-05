@@ -71,6 +71,9 @@ meta:
     - year: 2024
       quarter: 4
       count: 6953
+    - year: 2025
+      quarter: 1
+      count: 7637
 data:
   labels:
     - FJ-W

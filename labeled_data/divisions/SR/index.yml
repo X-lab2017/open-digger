@@ -71,6 +71,9 @@ meta:
     - year: 2024
       quarter: 4
       count: 5962
+    - year: 2025
+      quarter: 1
+      count: 6599
 data:
   labels:
     - SR-BR

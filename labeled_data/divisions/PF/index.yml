@@ -70,3 +70,6 @@ meta:
     - year: 2024
       quarter: 4
       count: 4233
+    - year: 2025
+      quarter: 1
+      count: 4500

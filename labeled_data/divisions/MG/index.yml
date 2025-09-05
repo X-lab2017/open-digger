@@ -71,6 +71,9 @@ meta:
     - year: 2024
       quarter: 4
       count: 47114
+    - year: 2025
+      quarter: 1
+      count: 51949
 data:
   labels:
     - MG-T

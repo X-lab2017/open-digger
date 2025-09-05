@@ -71,6 +71,9 @@ meta:
     - year: 2024
       quarter: 4
       count: 41196
+    - year: 2025
+      quarter: 1
+      count: 44636
 data:
   labels:
     - LY-BU

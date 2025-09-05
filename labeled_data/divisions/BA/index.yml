@@ -72,6 +72,9 @@ meta:
     - year: 2024
       quarter: 4
       count: 77322
+    - year: 2025
+      quarter: 1
+      count: 81944
 data:
   labels:
     - BA-BRC

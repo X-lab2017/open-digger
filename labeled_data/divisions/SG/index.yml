@@ -71,6 +71,9 @@ meta:
     - year: 2024
       quarter: 4
       count: 1398636
+    - year: 2025
+      quarter: 1
+      count: 1524913
 data:
   labels:
     - SG-01

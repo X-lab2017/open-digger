@@ -74,6 +74,9 @@ meta:
     - year: 2024
       quarter: 4
       count: 1507247
+    - year: 2025
+      quarter: 1
+      count: 1598457
 data:
   labels:
     - NL-AW
