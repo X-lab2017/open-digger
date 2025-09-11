@@ -10,7 +10,7 @@ import { repoParticipants } from '../metrics/metrics';
   const openDiggerOssUrl = 'https://oss.open-digger.cn/';
   const labels = getLabelData();
   const defaultOption: QueryConfig = {
-    startYear: 2024, startMonth: 1, endYear: 2024, endMonth: 12,
+    startYear: 2024, startMonth: 7, endYear: 2025, endMonth: 6,
     order: 'DESC', limit: 101, limitOption: 'all',
     groupTimeRange: 'year', precision: 2,
   };

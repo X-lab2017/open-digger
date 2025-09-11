@@ -21875,6 +21875,9 @@ export const countryInfo = [
   {
     "name": "Virgin Islands (British)",
     "name_zh": "英属维尔京群岛",
+    "includes": [
+      "British Virgin Islands"
+    ],
     "flag": "🇻🇬",
     "code": "092",
     "a2": "VG",
@@ -21902,6 +21905,9 @@ export const countryInfo = [
     "name": "Virgin Islands (U.S.)",
     "name_zh": "美属维尔京群岛",
     "flag": "🇻🇮",
+    "includes": [
+      "U.S. Virgin Islands"
+    ],
     "code": "850",
     "a2": "VI",
     "developerCount": {
