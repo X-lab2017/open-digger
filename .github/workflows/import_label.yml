@@ -16,4 +16,8 @@ jobs:
         with:
           node-version: 15
       - run: npm install
-      - run: npm run import-label-to-database
+      - env:
+          CLICKHOUSE_URL: ${{ secrets.CLICKHOUSE_URL }}
+          CLICKHOUSE_USERNAME: ${{ secrets.CLICKHOUSE_USERNAME }}
+          CLICKHOUSE_PASSWORD: ${{ secrets.CLICKHOUSE_PASSWORD }}
+        run: npm run import-label-to-database
