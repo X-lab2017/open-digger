@@ -1,0 +1,2179 @@
+name: 区块链与 Web3
+type: Tech-17
+data:
+  platforms:
+  - name: GitHub
+    type: Code Hosting
+    repos:
+    - id: 42009758
+      name: MetaMask/metamask-extension
+    - id: 111455867
+      name: smartcontractkit/chainlink
+    - id: 674559306
+      name: paritytech/polkadot-sdk
+    - id: 426075845
+      name: MystenLabs/sui
+    - id: 7634677
+      name: openssl/openssl
+    - id: 462597790
+      name: aptos-labs/aptos-core
+    - id: 141427485
+      name: MetaMask/metamask-mobile
+    - id: 537233603
+      name: paradigmxyz/reth
+    - id: 148657224
+      name: trezor/trezor-suite
+    - id: 365701873
+      name: dfinity/ic
+    - id: 99178995
+      name: MetaMask/eth-phishing-detect
+    - id: 157936592
+      name: bcgov/entity
+    - id: 750164628
+      name: anza-xyz/agave
+    - id: 826170402
+      name: elizaOS/eliza
+    - id: 188836864
+      name: erigontech/erigon
+    - id: 238797860
+      name: ethereum-optimism/optimism
+    - id: 201546443
+      name: trustwallet/assets
+    - id: 91253698
+      name: ccxt/ccxt
+    - id: 101194285
+      name: NethermindEth/nethermind
+    - id: 52308441
+      name: status-im/status-mobile
+    - id: 351106737
+      name: l2beat/l2beat
+    - id: 334215717
+      name: gnolang/gno
+    - id: 162613268
+      name: ethereum-lists/chains
+    - id: 404320053
+      name: foundry-rs/foundry
+    - id: 151331938
+      name: near/nearcore
+    - id: 116457726
+      name: ethereum/ethereum-org-website
+    - id: 51193526
+      name: cosmos/cosmos-sdk
+    - id: 529729250
+      name: thirdweb-dev/js
+    - id: 525383681
+      name: firedancer-io/firedancer
+    - id: 912991838
+      name: rairprotocol/dev-dapp-season1
+    - id: 783512367
+      name: RSSNext/Follow
+    - id: 15452919
+      name: ethereum/go-ethereum
+    - id: 760353685
+      name: iotaledger/iota
+    - id: 117294980
+      name: blockscout/blockscout
+    - id: 852613412
+      name: stakeme-team/story-validators-race
+    - id: 127246132
+      name: reown-com/appkit
+    - id: 518698474
+      name: taikoxyz/taiko-mono
+    - id: 437973582
+      name: hyperlane-xyz/hyperlane-monorepo
+    - id: 201821771
+      name: AudiusProject/audius-protocol
+    - id: 91629816
+      name: freqtrade/freqtrade
+    - id: 49765480
+      name: lightningnetwork/lnd
+    - id: 372866950
+      name: multiversx/mx-assets
+    - id: 261828887
+      name: hiero-ledger/hiero-consensus-node
+    - id: 11225014
+      name: etcd-io/etcd
+    - id: 180590388
+      name: trezor/trezor-firmware
+    - id: 206414745
+      name: hyperledger/besu
+    - id: 40892817
+      name: ethereum/solidity
+    - id: 24375248
+      name: stacks-network/stacks-core
+    - id: 430749584
+      name: OneKeyHQ/app-monorepo
+    - id: 117156031
+      name: prysmaticlabs/prysm
+    - id: 297778512
+      name: onflow/flow-go
+    - id: 695007969
+      name: input-output-hk/catalyst-voices
+    - id: 135296009
+      name: MetaMask/core
+    - id: 808266543
+      name: lambdaclass/ethrex
+    - id: 44971752
+      name: ethereum/EIPs
+    - id: 139952333
+      name: sigp/lighthouse
+    - id: 6687936
+      name: Mbed-TLS/mbedtls
+    - id: 114581326
+      name: MinaProtocol/mina
+    - id: 248697283
+      name: ethereum/remix-project
+    - id: 197153676
+      name: Chia-Network/chia-blockchain
+    - id: 401896836
+      name: shapeshift/web
+    - id: 604862837
+      name: immutable/ts-immutable-sdk
+    - id: 48833910
+      name: tikv/tikv
+    - id: 645815294
+      name: input-output-hk/lace
+    - id: 129558668
+      name: NomicFoundation/hardhat
+    - id: 847246281
+      name: DeFiHackLabs/Web3-CTF-Intensive-CoLearning
+    - id: 439772085
+      name: linera-io/linera-protocol
+    - id: 482833474
+      name: JoinColony/colonyCDapp
+    - id: 516564547
+      name: wevm/viem
+    - id: 61047867
+      name: status-im/status-go
+    - id: 727489129
+      name: succinctlabs/sp1
+    - id: 176777353
+      name: rainbow-me/rainbow
+    - id: 445370286
+      name: Koniverse/SubWallet-Extension
+    - id: 37350472
+      name: ElementsProject/lightning
+    - id: 752003386
+      name: berachain/beacon-kit
+    - id: 231816914
+      name: cake-tech/cake_wallet
+    - id: 73861563
+      name: IntersectMBO/plutus
+    - id: 21982089
+      name: rust-bitcoin/rust-bitcoin
+    - id: 369010411
+      name: fedimint/fedimint
+    - id: 653779748
+      name: ethereum/ERCs
+    - id: 629243152
+      name: alloy-rs/alloy
+    - id: 388872173
+      name: gear-tech/gear
+    - id: 594346359
+      name: rooch-network/rooch
+    - id: 730438594
+      name: coinbase/onchainkit
+    - id: 641656392
+      name: unionlabs/union
+    - id: 449088368
+      name: NethermindEth/juno
+    - id: 321061073
+      name: ssvlabs/ssv
+    - id: 675647111
+      name: dfinity/oisy-wallet
+    - id: 123909654
+      name: rotki/rotki
+    - id: 725068070
+      name: 0xPolygonHermez/cdk-erigon
+    - id: 409867754
+      name: zeta-chain/node
+    - id: 2724167
+      name: XRPLF/rippled
+    - id: 193681111
+      name: filecoin-project/lotus
+    - id: 681656806
+      name: Consensys/linea-monorepo
+    - id: 783512367
+      name: RSSNext/Folo
+    - id: 150113380
+      name: IntersectMBO/cardano-ledger
+    - id: 290882787
+      name: FuelLabs/fuel-core
+    - id: 136492920
+      name: bitcoinops/bitcoinops.github.io
+    - id: 608683796
+      name: opentensor/subtensor
+    - id: 416030891
+      name: hashgraph/guardian
+    - id: 502893537
+      name: ton-society/grants-and-bounties
+    - id: 179163124
+      name: hummingbot/hummingbot
+    - id: 145102495
+      name: multiversx/mx-chain-go
+    - id: 168006517
+      name: ChainSafe/gossamer
+    - id: 117463191
+      name: BlueWallet/BlueWallet
+    - id: 138313497
+      name: ChainSafe/lodestar
+    - id: 198068297
+      name: mempool/mempool
+    - id: 487874997
+      name: kadena-community/kadena.js
+    - id: 787392513
+      name: yetanotherco/aligned_layer
+    - id: 510559980
+      name: anoma/namada
+    - id: 470904030
+      name: bithyve/bitcoin-keeper
+    - id: 553749291
+      name: ethereum/execution-spec-tests
+    - id: 121809370
+      name: lightningdevkit/rust-lightning
+    - id: 643094518
+      name: Syndica/sig
+    - id: 119973711
+      name: KomodoPlatform/komodo-defi-framework
+    - id: 581314918
+      name: cometbft/cometbft
+    - id: 600932680
+      name: BibliothecaDAO/eternum
+    - id: 147802356
+      name: Consensys/teku
+    - id: 602987603
+      name: tact-lang/tact
+    - id: 5274894
+      name: spesmilo/electrum
+    - id: 782281810
+      name: AntelopeIO/spring
+    - id: 200152386
+      name: electric-capital/crypto-ecosystems
+    - id: 19316619
+      name: monero-project/monero
+    - id: 481196344
+      name: safe-global/safe-wallet-monorepo
+    - id: 761575205
+      name: movementlabsxyz/movement
+    - id: 491143940
+      name: AmbireTech/ambire-common
+    - id: 323048702
+      name: OpenBB-finance/OpenBB
+    - id: 218881898
+      name: nimiq/core-rs-albatross
+    - id: 662788006
+      name: foundry-rs/starknet-foundry
+    - id: 525928541
+      name: ponder-sh/ponder
+    - id: 221071442
+      name: ChainSafe/forest
+    - id: 20107959
+      name: moneymanagerex/moneymanagerex
+    - id: 560725747
+      name: openmina/openmina
+    - id: 130174051
+      name: graphprotocol/graph-node
+    - id: 307293958
+      name: planetarium/NineChronicles
+    - id: 381179718
+      name: stackernews/stacker.news
+    - id: 437485701
+      name: ordinals/ord
+    - id: 824431992
+      name: getAlby/hub
+    - id: 36613036
+      name: neo-project/neo
+    - id: 498441336
+      name: blockscout/frontend
+    - id: 334244275
+      name: valora-inc/wallet
+    - id: 21287076
+      name: aws/s2n-tls
+    - id: 286462146
+      name: hoprnet/hoprnet
+    - id: 334176717
+      name: kodadot/nft-gallery
+    - id: 116221698
+      name: status-im/nimbus-eth1
+    - id: 216610150
+      name: hyperledger-cacti/cacti
+    - id: 680208296
+      name: ethereum-optimism/superchain-ops
+    - id: 327696712
+      name: celestiaorg/celestia-app
+    - id: 55341469
+      name: WalletWasabi/WalletWasabi
+    - id: 141717232
+      name: status-im/nimbus-eth2
+    - id: 730916969
+      name: Stand-With-Crypto/swc-web
+    - id: 265775217
+      name: bnb-chain/bsc
+    - id: 243261301
+      name: moonbeam-foundation/moonbeam
+    - id: 223565044
+      name: w3f/Grants-Program
+    - id: 804856973
+      name: openbuildxyz/Web3-Frontend-Bootcamp
+    - id: 449218544
+      name: ten-protocol/go-ten
+    - id: 510614059
+      name: novasamatech/nova-spektr
+    - id: 170738310
+      name: trustwallet/wallet-core
+    - id: 280159108
+      name: lidofinance/core
+    - id: 300205799
+      name: zama-ai/concrete
+    - id: 398849559
+      name: autonomys/subspace
+    - id: 206946371
+      name: ton-blockchain/ton
+    - id: 100711978
+      name: btcpayserver/btcpayserver
+    - id: 233632633
+      name: holochain/holochain
+    - id: 600761102
+      name: PlanB-Network/bitcoin-learning-management-system
+    - id: 242863647
+      name: haveno-dex/haveno
+    - id: 491586683
+      name: latticexyz/mud
+    - id: 188299874
+      name: IntersectMBO/cardano-node
+    - id: 128733562
+      name: polkadot-js/apps
+    - id: 226972903
+      name: lnbits/lnbits
+    - id: 403852780
+      name: input-output-hk/mithril
+    - id: 38885825
+      name: ethereumjs/ethereumjs-monorepo
+    - id: 674908609
+      name: Nearblocks/nearblocks
+    - id: 373285604
+      name: beefyfinance/beefy-v2
+    - id: 25868356
+      name: thrasher-corp/gocryptotrader
+    - id: 234530887
+      name: ethersphere/bee
+    - id: 286412256
+      name: galacticcouncil/hydration-node
+    - id: 112683472
+      name: unlock-protocol/unlock
+    - id: 148600712
+      name: qdrvm/kagome
+    - id: 579642854
+      name: rango-exchange/rango-client
+    - id: 8608254
+      name: randombit/botan
+    - id: 19352450
+      name: dashpay/dash
+    - id: 626044771
+      name: solana-foundation/developer-content
+    - id: 519234480
+      name: ton-community/ton-docs
+    - id: 608133820
+      name: elys-network/elys
+    - id: 463671443
+      name: jk-labs-inc/jokerace
+    - id: 603937105
+      name: ava-labs/hypersdk
+    - id: 686920393
+      name: KeystoneHQ/keystone3-firmware
+    - id: 171051201
+      name: ZeusLN/zeus
+    - id: 159905448
+      name: MetaMask/metamask-docs
+    - id: 382903767
+      name: wax-office-of-inspector-general/waxguilds
+    - id: 497045217
+      name: drift-labs/protocol-v2
+    - id: 574934335
+      name: IntersectMBO/ouroboros-consensus
+    - id: 263892105
+      name: casper-network/casper-node
+    - id: 421405988
+      name: stereum-dev/ethereum-node
+    - id: 343431081
+      name: cardano-scaling/hydra
+    - id: 428859629
+      name: Crossmint/crossmint-sdk
+    - id: 855747432
+      name: DeFiHackLabs/Solidity-Intensive-CoLearning
+    - id: 108372143
+      name: spacemeshos/go-spacemesh
+    - id: 352717417
+      name: smartcontractkit/documentation
+    - id: 411607920
+      name: bluealloy/revm
+    - id: 243742556
+      name: superhero-com/superhero-wallet
+    - id: 197364349
+      name: hiero-ledger/hiero-mirror-node
+    - id: 682146715
+      name: Lilypad-Tech/lilypad
+    - id: 494543151
+      name: bitpay/bitpay-app
+    - id: 481196344
+      name: safe-global/safe-wallet-web
+    - id: 134407560
+      name: RainbowMiner/RainbowMiner
+    - id: 235668568
+      name: bitcoindevkit/bdk
+    - id: 803285289
+      name: RootstockCollective/dao-frontend
+    - id: 17273151
+      name: XRPLF/xrpl-dev-portal
+    - id: 353494486
+      name: iron-fish/ironfish
+    - id: 292859835
+      name: synonymdev/bitkit
+    - id: 733729681
+      name: okx/xlayer-erigon
+    - id: 94728962
+      name: livepeer/go-livepeer
+    - id: 246072685
+      name: hirosystems/explorer
+    - id: 799832387
+      name: eth-protocol-fellows/cohort-five
+    - id: 11765017
+      name: JetBrains/Exposed
+    - id: 143284695
+      name: BitBoxSwiss/bitbox-wallet-app
+    - id: 136573514
+      name: vechain/thor
+    - id: 456585798
+      name: vegaprotocol/frontend-monorepo
+    - id: 722413328
+      name: Hardhat-Enterprises/website
+    - id: 113932055
+      name: FISCO-BCOS/FISCO-BCOS
+    - id: 595315478
+      name: VolumeFi/paloma
+    - id: 356248265
+      name: RabbyHub/Rabby
+    - id: 458639843
+      name: gofractally/psibase
+    - id: 728234768
+      name: consensus-shipyard/ipc
+    - id: 493947779
+      name: teambtcmap/btcmap-data
+    - id: 376807007
+      name: jumperexchange/jumper-exchange
+    - id: 567483826
+      name: skot/ESP-Miner
+    - id: 777294253
+      name: stacks-network/sbtc
+    - id: 848171036
+      name: polkadot-developers/polkadot-docs
+    - id: 777452130
+      name: primev/mev-commit
+    - id: 534169333
+      name: InverterNetwork/contracts
+    - id: 149554797
+      name: ethereum/consensus-specs
+    - id: 236699683
+      name: chainapsis/keplr-wallet
+    - id: 728420303
+      name: aptos-labs/developer-docs
+    - id: 203447698
+      name: leather-io/extension
+    - id: 140937793
+      name: raspiblitz/raspiblitz
+    - id: 429237278
+      name: Lightprotocol/light-protocol
+    - id: 301345449
+      name: c9s/bbgo
+    - id: 304841810
+      name: osmosis-labs/osmosis
+    - id: 587766389
+      name: Entropy-Foundation/aptos-core
+    - id: 282684311
+      name: wormhole-foundation/wormhole
+    - id: 325891672
+      name: coral-xyz/anchor
+    - id: 822453964
+      name: flashbots/rbuilder
+    - id: 680030799
+      name: ant-design/ant-design-web3
+    - id: 356546020
+      name: sora-xor/sora2-network
+    - id: 889798967
+      name: sendaifun/solana-agent-kit
+    - id: 181739240
+      name: hyperledger-iroha/iroha
+    - id: 14531737
+      name: bitcoin/bips
+    - id: 283347912
+      name: opentensor/bittensor
+    - id: 183183290
+      name: ethereum/sourcify
+    - id: 466066442
+      name: lifinance/contracts
+    - id: 297339779
+      name: polkadot-js/phishing
+    - id: 322745209
+      name: balancednetwork/balanced-network-interface
+    - id: 218343552
+      name: maticnetwork/bor
+    - id: 284779571
+      name: OriginProtocol/origin-dollar
+    - id: 142825178
+      name: horizontalsystems/unstoppable-wallet-android
+    - id: 163892008
+      name: near/docs
+    - id: 424232911
+      name: dashpay/platform
+    - id: 434016589
+      name: scroll-tech/go-ethereum
+    - id: 271566371
+      name: erigontech/silkworm
+    - id: 771582160
+      name: thebrumby/HotWalletClaimer
+    - id: 477198595
+      name: damus-io/damus
+    - id: 74451355
+      name: EdgeApp/edge-react-gui
+    - id: 900981601
+      name: kindfi-org/kindfi
+    - id: 516003390
+      name: wizardsardine/liana
+    - id: 64700934
+      name: OpenZeppelin/openzeppelin-contracts
+    - id: 10416648
+      name: bcgit/bc-java
+    - id: 249139477
+      name: sparrowwallet/sparrow
+    - id: 430942608
+      name: wevm/wagmi
+    - id: 192216193
+      name: privacy-scaling-explorations/maci
+    - id: 775930816
+      name: agglayer/agglayer
+    - id: 151387091
+      name: Emurgo/yoroi
+    - id: 770982082
+      name: Moonsong-Labs/storage-hub
+    - id: 359924608
+      name: penumbra-zone/penumbra
+    - id: 644904916
+      name: IntersectMBO/cardano-cli
+    - id: 486208048
+      name: rubixchain/rubixgoplatform
+    - id: 73461676
+      name: vyperlang/vyper
+    - id: 16446099
+      name: cryptomator/cryptomator
+    - id: 146185516
+      name: WalletConnect/walletconnect-monorepo
+    - id: 393163188
+      name: NomicFoundation/edr
+    - id: 333186278
+      name: MetaMask/snaps
+    - id: 260060352
+      name: stakwork/sphinx-tribes
+    - id: 642557888
+      name: a16z/jolt
+    - id: 747331578
+      name: stakwork/sphinx-tribes-frontend
+    - id: 763703180
+      name: globe-and-citizen/cnc-portal
+    - id: 748433404
+      name: taoshidev/proprietary-trading-network
+    - id: 731488432
+      name: r0gue-io/pop-node
+    - id: 198344153
+      name: dfinity/sdk
+    - id: 632962207
+      name: prosopo/captcha
+    - id: 601957948
+      name: tonkeeper/tonkeeper-web
+    - id: 650119466
+      name: citadel-tech/coinswap
+    - id: 520822851
+      name: safe-global/safe-client-gateway
+    - id: 409651007
+      name: ObolNetwork/charon
+    - id: 64954128
+      name: stellar/go
+    - id: 844893336
+      name: piplabs/story
+    - id: 526617419
+      name: LIT-Protocol/js-sdk
+    - id: 187523334
+      name: kamu-data/kamu-cli
+    - id: 605590309
+      name: LimeChain/Fruzhin
+    - id: 787637064
+      name: shardeum/shardeum
+    - id: 353305930
+      name: smartcontractkit/chainlink-testing-framework
+    - id: 660253213
+      name: fetchai/docs
+    - id: 457823171
+      name: bitcoin-sv/spv-wallet
+    - id: 671016974
+      name: bob-collective/bob
+    - id: 44207815
+      name: stellar/laboratory
+    - id: 204518099
+      name: w3f/polkadot-wiki
+    - id: 736464611
+      name: left-curve/left-curve
+    - id: 629363739
+      name: Portkey-Wallet/portkey-wallet
+    - id: 149481615
+      name: IntersectMBO/ouroboros-network
+    - id: 639015226
+      name: block-core/angor
+    - id: 181034362
+      name: skalenetwork/skaled
+    - id: 518200848
+      name: Official-MoonDao/MoonDAO
+    - id: 197642503
+      name: celo-org/celo-monorepo
+    - id: 145759605
+      name: solana-labs/solana-web3.js
+    - id: 837917950
+      name: AFK-AlignedFamKernel/afk_monorepo
+    - id: 406078114
+      name: GooseFX1/gfx-web-app
+    - id: 177158447
+      name: openkfw/TruBudget
+    - id: 119681680
+      name: nspcc-dev/neo-go
+    - id: 99802036
+      name: aeternity/aeternity
+    - id: 184357431
+      name: coinbase/coinbase-wallet-sdk
+    - id: 512413660
+      name: dymensionxyz/dymension
+    - id: 337806885
+      name: safe-global/safe-core-sdk
+    - id: 294371636
+      name: Lumiwealth/lumibot
+    - id: 805282401
+      name: enviodev/hyperindex
+    - id: 142790135
+      name: safe-global/safe-docs
+    - id: 161279364
+      name: Taraxa-project/taraxa-node
+    - id: 528201640
+      name: HyperPlay-Gaming/hyperplay-desktop-client
+    - id: 117156031
+      name: OffchainLabs/prysm
+    - id: 673304504
+      name: polkadot-api/polkadot-api
+    - id: 749406654
+      name: NEAR-DevHub/neardevhub-treasury-dashboard
+    - id: 356347737
+      name: dfinity/internet-identity
+    - id: 567248195
+      name: input-output-hk/ouroboros-leios
+    - id: 24655114
+      name: web3/web3.js
+    - id: 798849700
+      name: defi-wonderland/optimism
+    - id: 475035363
+      name: frequency-chain/frequency
+    - id: 411212454
+      name: evmos/evmos
+    - id: 134344706
+      name: harmony-one/harmony
+    - id: 312703459
+      name: Start9Labs/start-os
+    - id: 587472295
+      name: thorswap/SwapKit
+    - id: 666431926
+      name: streamethorg/streameth-platform
+    - id: 828285248
+      name: commonwarexyz/monorepo
+    - id: 130281002
+      name: iotexproject/iotex-core
+    - id: 278651936
+      name: nspcc-dev/neofs-node
+    - id: 659343702
+      name: 0xPolygonMiden/miden-client
+    - id: 414245082
+      name: cosmos/interchain-security
+    - id: 514979191
+      name: kaspanet/rusty-kaspa
+    - id: 192964514
+      name: ACINQ/phoenix
+    - id: 338460624
+      name: ethereum/trin
+    - id: 547599105
+      name: Blobscan/blobscan
+    - id: 244870223
+      name: aeternity/ae_mdw
+    - id: 397755303
+      name: OpenZeppelin/cairo-contracts
+    - id: 795558005
+      name: alpenlabs/strata
+    - id: 611397625
+      name: onflow/docs
+    - id: 482802827
+      name: neutron-org/neutron
+    - id: 119876311
+      name: OriginTrail/ot-node
+    - id: 858676010
+      name: balancer/frontend-monorepo
+    - id: 668138483
+      name: lidofinance/ethereum-staking-widget
+    - id: 14735429
+      name: capstone-engine/capstone
+    - id: 597493739
+      name: Cuprate/cuprate
+    - id: 209048102
+      name: thesandboxgame/sandbox-smart-contracts
+    - id: 894659403
+      name: goat-sdk/goat
+    - id: 160548111
+      name: ethereum/evmone
+    - id: 710314750
+      name: gear-tech/gear-bridges
+    - id: 19347340
+      name: nanocurrency/nano-node
+    - id: 522382674
+      name: futureversecom/trn-seed
+    - id: 418545583
+      name: starknet-io/starknet.js
+    - id: 513232514
+      name: usecannon/cannon
+    - id: 177367936
+      name: AstarNetwork/Astar
+    - id: 12960439
+      name: CorfuDB/CorfuDB
+    - id: 391127422
+      name: kairos-io/kairos
+    - id: 355107265
+      name: bitcoin-core/guix.sigs
+    - id: 321209306
+      name: paytaca/paytaca-app
+    - id: 522703637
+      name: SiaFoundation/renterd
+    - id: 122554275
+      name: jmfernandes/robin_stocks
+    - id: 484260531
+      name: orca-so/whirlpools
+    - id: 567483826
+      name: bitaxeorg/ESP-Miner
+    - id: 199428833
+      name: bifrost-io/bifrost
+    - id: 238777884
+      name: starcoinorg/starcoin
+    - id: 569055169
+      name: vinteumorg/Floresta
+    - id: 157553072
+      name: KILTprotocol/kilt-node
+    - id: 745003896
+      name: zkVerify/zkVerify
+    - id: 573523103
+      name: Granola-Team/mina-indexer
+    - id: 274450818
+      name: ignite/cli
+    - id: 922934525
+      name: Bloceducare/Web3bridge-Web3-Cohort-XII
+    - id: 326268532
+      name: ProvableHQ/sdk
+    - id: 542889195
+      name: rainbow-me/browser-extension
+    - id: 477089428
+      name: OpenSats/website
+    - id: 369698813
+      name: ChainSafe/web3.unity
+    - id: 714043074
+      name: MystenLabs/walrus-sites
+    - id: 887001058
+      name: ithacaxyz/porto
+    - id: 321206474
+      name: SeedSigner/seedsigner
+    - id: 343333137
+      name: espresso-cash/espresso-cash-public
+    - id: 363175783
+      name: multiversx/mx-api-service
+    - id: 857707429
+      name: UTSAVS26/PyVerse
+    - id: 653813871
+      name: SatoshiPortal/bullbitcoin-mobile
+    - id: 797188605
+      name: HemeraProtocol/hemera-indexer
+    - id: 14981376
+      name: dogecoin/dogecoin
+    - id: 238316466
+      name: ava-labs/coreth
+    - id: 66573241
+      name: hyperledger/fabric
+    - id: 709544293
+      name: BitVM/BitVM
+    - id: 231771029
+      name: multiversx/mx-sdk-rs
+    - id: 487361210
+      name: zeriontech/zerion-wallet-extension
+    - id: 442756719
+      name: push-protocol/push-dapp
+    - id: 431390511
+      name: mintlayer/mintlayer-core
+    - id: 62937181
+      name: PrivateBin/PrivateBin
+    - id: 741209532
+      name: macrocosm-os/prompting
+    - id: 597307357
+      name: SuperteamDAO/earn
+    - id: 644331942
+      name: rainlanguage/rain.orderbook
+    - id: 703114651
+      name: aptos-labs/aptos-ts-sdk
+    - id: 753309728
+      name: risc0/risc0-ethereum
+    - id: 175973818
+      name: kadena-io/chainweb-node
+    - id: 514706800
+      name: Vectorized/solady
+    - id: 393529592
+      name: BeanstalkFarms/Beanstalk
+    - id: 557270398
+      name: logos-co/nomos-node
+    - id: 499363940
+      name: MeshJS/mesh
+    - id: 204029551
+      name: HathorNetwork/hathor-core
+    - id: 520963965
+      name: bitcoin-computer/monorepo
+    - id: 626148574
+      name: aptos-labs/aptos-indexer-processors
+    - id: 335243209
+      name: anoma/anoma
+    - id: 731515368
+      name: r0gue-io/pop-cli
+    - id: 767774937
+      name: thrumdev/nomt
+    - id: 454562755
+      name: Chia-Network/chia_rs
+    - id: 454511038
+      name: NibiruChain/nibiru
+    - id: 206936040
+      name: hollaex/hollaex-kit
+    - id: 151569932
+      name: cybercongress/cyb-ts
+    - id: 845595897
+      name: CKS-Systems/manifest
+    - id: 468319547
+      name: MetaMask/metamask-sdk
+    - id: 424083487
+      name: Web3Auth/web3auth-web
+    - id: 191593548
+      name: 0chain/gosdk
+    - id: 127246132
+      name: WalletConnect/web3modal
+    - id: 676062391
+      name: hadronlabs-org/drop-contracts
+    - id: 520604567
+      name: kwilteam/kwil-db
+    - id: 863208388
+      name: boundless-xyz/boundless
+    - id: 535677466
+      name: drips-network/app
+    - id: 493497664
+      name: TalismanSociety/talisman
+    - id: 722878666
+      name: op-rs/kona
+    - id: 601433992
+      name: layer-3/clearsync
+    - id: 15259244
+      name: bitpay/bitcore
+    - id: 501990676
+      name: SunWeb3Sec/DeFiHackLabs
+    - id: 510640751
+      name: payjoin/rust-payjoin
+    - id: 401814297
+      name: crytic/medusa
+    - id: 721612821
+      name: broxus/tycho
+    - id: 374740347
+      name: Switcheo/carbon-js-sdk
+    - id: 387535440
+      name: radixdlt/radixdlt-scrypto
+    - id: 457979552
+      name: enkryptcom/enKrypt
+    - id: 179141420
+      name: cosmos/gaia
+    - id: 357195137
+      name: lidofinance/scripts
+    - id: 9681561
+      name: XRPLF/xrpl.js
+    - id: 673336914
+      name: celo-org/optimism
+    - id: 925436938
+      name: IntensiveCoLearning/Ethereum-Protocol-Fellowship
+    - id: 625811453
+      name: pimlicolabs/alto
+    - id: 356633717
+      name: rebase-network/who-is-hiring
+    - id: 199980228
+      name: RunOnFlux/flux
+    - id: 216828771
+      name: alcorexchange/alcor-ui
+    - id: 243559939
+      name: 0xsequence/sequence.js
+    - id: 343321701
+      name: KyberNetwork/kyberswap-interface
+    - id: 240971104
+      name: AleoNet/snarkOS
+    - id: 310064032
+      name: ava-labs/builders-hub
+    - id: 426443530
+      name: kleros/kleros-v2
+    - id: 402653354
+      name: dhiway/cord
+    - id: 575011898
+      name: oasisprotocol/explorer
+    - id: 371730394
+      name: hyperledger-labs/fabric-token-sdk
+    - id: 378282555
+      name: connext/monorepo
+    - id: 459735046
+      name: NomicFoundation/slang
+    - id: 699238113
+      name: icon-project/centralized-relay
+    - id: 690123388
+      name: ethereum-optimism/ecosystem
+    - id: 892614011
+      name: ReamLabs/ream
+    - id: 178806582
+      name: DimensionDev/Maskbook
+    - id: 301177237
+      name: beefyfinance/beefy-api
+    - id: 796633002
+      name: erpc/erpc
+    - id: 600624635
+      name: orochi-network/zkDatabase
+    - id: 56251096
+      name: ethereum/web3.py
+    - id: 509524133
+      name: solana-developers/program-examples
+    - id: 531910353
+      name: paraspell/xcm-tools
+    - id: 855886026
+      name: reown-com/reown_flutter
+    - id: 127488838
+      name: oasisprotocol/oasis-core
+    - id: 469999701
+      name: bnb-chain/bnb-chain.github.io
+    - id: 607235340
+      name: polytope-labs/hyperbridge
+    - id: 777294253
+      name: stacks-sbtc/sbtc
+    - id: 527301270
+      name: lfglabs-dev/app.starknet.id
+    - id: 41030802
+      name: ACINQ/eclair
+    - id: 597939974
+      name: alchemyplatform/rundler
+    - id: 67837600
+      name: firoorg/firo
+    - id: 165770137
+      name: nervosnetwork/neuron
+    - id: 459692084
+      name: oasisprotocol/nexus
+    - id: 181739240
+      name: hyperledger/iroha
+    - id: 892594833
+      name: ton-studio/ton-labels
+    - id: 366509071
+      name: Balmy-protocol/dca-fe
+    - id: 554331634
+      name: rpcpool/yellowstone-grpc
+    - id: 498649852
+      name: Tonomy-Foundation/Tonomy-ID
+    - id: 529170413
+      name: cypherstack/stack_wallet
+    - id: 832042115
+      name: cosmos/solidity-ibc-eureka
+    - id: 409345141
+      name: UpstreamData/pyasic
+    - id: 659342082
+      name: 0xPolygonMiden/miden-node
+    - id: 332949224
+      name: jbx-protocol/juice-interface
+    - id: 385102171
+      name: selfcustody/krux
+    - id: 121044572
+      name: Adamant-im/adamant-iOS
+    - id: 69834435
+      name: runtimeverification/evm-semantics
+    - id: 386017669
+      name: iterativv/NostalgiaForInfinity
+    - id: 161252517
+      name: graphprotocol/contracts
+    - id: 715321557
+      name: exactly/mobile
+    - id: 328709047
+      name: provenance-io/provenance
+    - id: 245060662
+      name: axieinfinity/ronin
+    - id: 104517377
+      name: Adamant-im/adamant-im
+    - id: 388420363
+      name: AstarNetwork/astar-apps
+    - id: 142568914
+      name: horizontalsystems/unstoppable-wallet-ios
+    - id: 700886429
+      name: informalsystems/malachite
+    - id: 331384753
+      name: tangle-network/dapp
+    - id: 480614136
+      name: ar-io/ar-io-node
+    - id: 845072413
+      name: input-output-hk/catalyst-libs
+    - id: 745048832
+      name: stampchain-io/BTCStampsExplorer
+    - id: 684453598
+      name: lidofinance/community-staking-module
+    - id: 753056996
+      name: tvmlabs/tvm-sdk
+    - id: 553023373
+      name: solana-foundation/solana-improvement-documents
+    - id: 790596173
+      name: chainbound/bolt
+    - id: 951116925
+      name: openbuildxyz/Monad-101-Bootcamp
+    - id: 524439231
+      name: reown-com/blockchain-api
+    - id: 685224325
+      name: dfinity/orbit
+    - id: 659205972
+      name: kroma-network/tachyon
+    - id: 601684708
+      name: kurtosis-tech/kurtosis
+    - id: 267940560
+      name: solana-labs/solana-program-library
+    - id: 558430532
+      name: ethpandaops/ethereum-package
+    - id: 59867841
+      name: LedgerHQ/app-ethereum
+    - id: 491459489
+      name: gitcoinco/grants-stack
+    - id: 401714552
+      name: geyserfund/geyser-app
+    - id: 809079471
+      name: gemwalletcom/gem-ios
+    - id: 63465664
+      name: ethers-io/ethers.js
+    - id: 326840499
+      name: ApeWorX/ape
+    - id: 101660168
+      name: trezor/blockbook
+    - id: 98333687
+      name: Electron-Cash/Electron-Cash
+    - id: 807088869
+      name: FuelLabs/data-systems
+    - id: 760882088
+      name: boostxyz/boost-protocol
+    - id: 722618415
+      name: FlowFans/zealy-campaigns
+    - id: 216610150
+      name: hyperledger/cacti
+    - id: 313859125
+      name: bandprotocol/chain
+    - id: 158225088
+      name: nervosnetwork/ckb
+    - id: 659687360
+      name: DeXter-on-Radix/website
+    - id: 537366298
+      name: frostsnap/frostsnap
+    - id: 443566756
+      name: RoboSats/robosats
+    - id: 275859767
+      name: Snowfork/snowbridge
+    - id: 271441648
+      name: hirosystems/clarinet
+    - id: 392610935
+      name: rainbow-me/rainbowkit
+    - id: 460936035
+      name: streamingfast/substreams
+    - id: 127840663
+      name: MyEtherWallet/MyEtherWallet
+    - id: 228198960
+      name: DeFiCh/ain
+    - id: 798000783
+      name: neonlabsorg/neon-proxy.py
+    - id: 835381898
+      name: ethproofs/ethproofs
+    - id: 489473565
+      name: Stride-Labs/stride
+    - id: 375099762
+      name: reserve-protocol/protocol
+    - id: 315632044
+      name: Joystream/atlas
+    - id: 770187441
+      name: Layr-Labs/eigensdk-rs
+    - id: 375027355
+      name: Dapp-Learning-DAO/Dapp-Learning
+    - id: 483157350
+      name: oasisprotocol/sapphire-paratime
+    - id: 568990949
+      name: aptos-labs/aptos-wallet-adapter
+    - id: 922869278
+      name: 0xsoniclabs/sonic
+    - id: 429403881
+      name: Betarena/scores
+    - id: 421875410
+      name: internet-identity-labs/nfid-wallet-client
+    - id: 23247808
+      name: rqlite/rqlite
+    - id: 172682590
+      name: pocketnetteam/pocketnet.gui
+    - id: 473711084
+      name: quasar-finance/quasar
+    - id: 414606971
+      name: novasamatech/nova-wallet-ios
+    - id: 805502920
+      name: BlocSoc-iitr/selene
+    - id: 425736647
+      name: massalabs/massa
+    - id: 701341320
+      name: thesis/acre
+    - id: 139428636
+      name: safe-global/safe-transaction-service
+    - id: 900577388
+      name: crestalnetwork/intentkit
+    - id: 735959468
+      name: CoinFabrik/scout-audit
+    - id: 599623133
+      name: AltheaFoundation/althea-L1-docs
+    - id: 327451815
+      name: XRPLF/xrpl-py
+    - id: 524994858
+      name: Polimec/polimec-node
+    - id: 321530801
+      name: subquery/subql
+    - id: 849678010
+      name: xch-dev/sage
+    - id: 80501529
+      name: apache/ratis
+    - id: 147583941
+      name: crytic/slither
+    - id: 881004665
+      name: KaizeNodeLabs/SafeSwap
+    - id: 738556550
+      name: superbridgeapp/superbridge-app
+    - id: 209031469
+      name: madfish-solutions/templewallet-extension
+    - id: 790342713
+      name: CityOfZion/neon-wallet-desktop
+    - id: 88327406
+      name: xmrig/xmrig
+    - id: 528898425
+      name: nkaz001/hftbacktest
+    - id: 480589660
+      name: hiero-ledger/hiero-json-rpc-relay
+    - id: 662610613
+      name: Consensys/linea-attestation-registry
+    - id: 832960091
+      name: keep-starknet-strange/shinigami
+    - id: 200548898
+      name: ecadlabs/taquito
+    - id: 437026094
+      name: IndexCoop/index-app
+    - id: 595618472
+      name: xmtp/xmtpd
+    - id: 415834480
+      name: novasamatech/nova-wallet-android
+    - id: 238719629
+      name: hirosystems/stacks-blockchain-api
+    - id: 683427841
+      name: Cyfrin/aderyn
+    - id: 151067423
+      name: wavesplatform/gowaves
+    - id: 774237895
+      name: FinCube-23/DAO-Proposal-Governance
+    - id: 251149394
+      name: cardano-community/guild-operators
+    - id: 836095472
+      name: keep-starknet-strange/raito
+    - id: 14514251
+      name: bitcoinj/bitcoinj
+    - id: 300665353
+      name: pactus-project/pactus
+    - id: 461335313
+      name: alpacahq/alpaca-py
+    - id: 247216177
+      name: AleoNet/snarkVM
+    - id: 146720563
+      name: safe-global/safe-eth-py
+    - id: 178884117
+      name: PolymeshAssociation/Polymesh
+    - id: 670653052
+      name: ethstorage/optimism
+    - id: 502567719
+      name: PrimitivesLane/bitcoinops.github.io
+    - id: 374778240
+      name: AstarNetwork/growth-program
+    - id: 528358675
+      name: helium/helium-program-library
+    - id: 855733947
+      name: sevenlabs-hq/carbon
+    - id: 375038340
+      name: lukso-network/docs
+    - id: 678920523
+      name: bitcoin-dev-project/warnet
+    - id: 545531678
+      name: kkrt-labs/kakarot
+    - id: 485838614
+      name: lambdaclass/cairo-vm
+    - id: 721645632
+      name: citizenweb3/validatorinfo
+    - id: 569861981
+      name: MostroP2P/mostro
+    - id: 523436104
+      name: a16z/helios
+    - id: 716875016
+      name: RSS3-Network/Node
+    - id: 900625544
+      name: openbuildxyz/openbuild-frontend
+    - id: 666279492
+      name: gear-foundation/dapps
+    - id: 237499139
+      name: dfinity/examples
+    - id: 758747497
+      name: macrocosm-os/folding
+    - id: 557270398
+      name: logos-co/nomos
+    - id: 509638828
+      name: secretflow/yacl
+    - id: 131245808
+      name: MixinNetwork/android-app
+    - id: 687903087
+      name: lidofinance/core
+    - id: 350340084
+      name: syscoin/pali-wallet
+    - id: 339718509
+      name: Synthetixio/synthetix-v3
+    - id: 343378219
+      name: gasp-xyz/gasp-e2e
+    - id: 722053258
+      name: RabbyHub/rabby-mobile
+    - id: 601043163
+      name: node-real/bsc-erigon
+    - id: 353609988
+      name: dipdup-io/dipdup
+    - id: 608076625
+      name: secretkeylabs/sats-connect
+    - id: 306611600
+      name: defisaver/defisaver-v3-contracts
+    - id: 117603764
+      name: oxen-io/oxen-core
+    - id: 346526277
+      name: waku-org/js-waku
+    - id: 684699597
+      name: ethereumfollowprotocol/app
+    - id: 617986344
+      name: enzymefinance/sdk
+    - id: 247216177
+      name: ProvableHQ/snarkVM
+    - id: 177399789
+      name: Conflux-Chain/conflux-rust
+    - id: 249487917
+      name: Consensys/gnark-crypto
+    - id: 627018385
+      name: ava-labs/firewood
+    - id: 572438993
+      name: MoralisWeb3/docs
+    - id: 608807566
+      name: thirdweb-dev/engine
+    - id: 616222670
+      name: BitMaker-hub/NerdMiner_v2
+    - id: 913726746
+      name: DistinctCodes/NFT-Scavenger-Hunt-Game
+    - id: 804014915
+      name: ethereum-optimism/infra
+    - id: 745133202
+      name: projectawakening/world-chain-contracts
+    - id: 310064032
+      name: ava-labs/avalanche-docs
+    - id: 773706205
+      name: blocksense-network/blocksense
+    - id: 601475124
+      name: evmts/tevm-monorepo
+    - id: 471728341
+      name: heyxyz/hey
+    - id: 456470362
+      name: polkadot-cloud/polkadot-staking-dashboard
+    - id: 390808594
+      name: Electric-Coin-Company/zashi-android
+    - id: 700518667
+      name: a-sit-plus/signum
+    - id: 325891672
+      name: solana-foundation/anchor
+    - id: 835580035
+      name: vianetwork/via-core
+    - id: 114950878
+      name: 0chain/0chain
+    - id: 196997922
+      name: centrifuge/centrifuge-chain
+    - id: 190487408
+      name: Synthetixio/SIPs
+    - id: 574980130
+      name: zama-ai/fhevm
+    - id: 826170402
+      name: ai16z/eliza
+    - id: 544386382
+      name: PolkaGate/extension
+    - id: 728829850
+      name: paritytech/revive
+    - id: 160999
+      name: apache/zookeeper
+    - id: 111184073
+      name: polkadot-js/api
+    - id: 172392769
+      name: ensdomains/docs
+    - id: 577324647
+      name: Xahau/xahaud
+    - id: 464350186
+      name: aptos-labs/explorer
+    - id: 240971104
+      name: ProvableHQ/snarkOS
+    - id: 658517501
+      name: dcSpark/shinkai-node
+    - id: 438230431
+      name: dm3-org/dm3
+    - id: 762853075
+      name: 0xsequence/docs
+    - id: 428810224
+      name: telosnetwork/teloscan
+    - id: 878484385
+      name: CodyTseng/jumble
+    - id: 438763763
+      name: ava-labs/subnet-evm
+    - id: 615615641
+      name: KintoXYZ/kinto-core
+    - id: 266361547
+      name: brianlong/www.validators.app
+    - id: 3333998
+      name: knowm/XChange
+    - id: 639929435
+      name: 0xSpaceShard/starknet-devnet-rs
+    - id: 509408072
+      name: drpcorg/dshackle
+    - id: 858471444
+      name: MetaMask/metamask-design-system
+    - id: 626367194
+      name: ArkEcosystem/mainsail
+    - id: 381346344
+      name: grandinetech/grandine
+    - id: 277621205
+      name: getumbrel/umbrel
+    - id: 446566579
+      name: symbol/symbol
+    - id: 418839993
+      name: Qitmeer/qng
+    - id: 745682405
+      name: zingolabs/zaino
+    - id: 450780627
+      name: tradingstrategy-ai/trade-executor
+    - id: 810126091
+      name: bithyve/bitcoin-tribe
+    - id: 401279564
+      name: gear-tech/gear-js
+    - id: 615421431
+      name: alloy-rs/core
+    - id: 460352457
+      name: margelo/react-native-quick-crypto
+    - id: 643945817
+      name: fleek-network/lightning
+    - id: 253448453
+      name: airalab/robonomics.network
+    - id: 457703549
+      name: oasisprotocol/docs
+    - id: 444220622
+      name: NethermindEth/starknet.go
+    - id: 685523395
+      name: Cardinal-Cryptography/most
+    - id: 826372536
+      name: sivicstudio/starkludo
+    - id: 528202897
+      name: Consensys/starknet-snap
+    - id: 425370270
+      name: ObolNetwork/obol-docs
+    - id: 601088814
+      name: cocrafts/walless
+    - id: 172682555
+      name: pocketnetteam/pocketnet.core
+    - id: 754259494
+      name: eth-protocol-fellows/protocol-studies
+    - id: 331313912
+      name: Cardinal-Cryptography/aleph-node
+    - id: 774385001
+      name: SwaprHQ/presagio
+    - id: 70137417
+      name: corda/corda
+    - id: 356134261
+      name: nucypher/nucypher-contracts
+    - id: 696687380
+      name: CornixIO/ccxt
+    - id: 352905367
+      name: Concordium/concordium-node
+    - id: 295332175
+      name: dedis/popstellar
+    - id: 839276841
+      name: Swaylend/swaylend-monorepo
+    - id: 400161011
+      name: CoinSpace/crypto-db
+    - id: 849681914
+      name: Girlscript-WOB/Open-source-Practice
+    - id: 777190910
+      name: compolabs/spark-frontend
+    - id: 448159458
+      name: foundry-rs/book
+    - id: 295767877
+      name: eth-educators/eth-docker
+    - id: 194237610
+      name: archethic-foundation/archethic-node
+    - id: 733699829
+      name: xian-network/xian-core
+    - id: 159026371
+      name: BoltzExchange/boltz-backend
+    - id: 183510832
+      name: BittyTax/BittyTax
+    - id: 486921395
+      name: Koniverse/SubWallet-Mobile
+    - id: 442934688
+      name: cosmostation/cosmostation-chrome-extension
+    - id: 593895987
+      name: hummingbot/gateway
+    - id: 463692480
+      name: FlipsideCrypto/solana-models
+    - id: 907062544
+      name: NeurProjects/neur-app
+    - id: 678737176
+      name: 3loop/loop-decoder
+    - id: 658183413
+      name: axiomesh/axiom-ledger
+    - id: 913215461
+      name: songifi/lyricsflip
+    - id: 552787159
+      name: consenlabs/token-core-monorepo
+    - id: 758982390
+      name: TaggrNetwork/Taggr
+    - id: 745003896
+      name: HorizenLabs/zkVerify
+    - id: 235563379
+      name: PolymeshAssociation/polymesh-sdk
+    - id: 175032889
+      name: aleph-im/pyaleph
+    - id: 695126332
+      name: axelarnetwork/axelar-cgp-sui
+    - id: 454854993
+      name: liquid-collective/liquid-collective-protocol
+    - id: 293848306
+      name: EYBlockchain/starlight
+    - id: 361204082
+      name: humanode-network/humanode
+    - id: 851842555
+      name: flashbots/contender
+    - id: 485893520
+      name: xssnick/tonutils-go
+    - id: 274263743
+      name: BitcoinDesign/Guide
+    - id: 804243843
+      name: NethermindEth/Taiko-Preconf-AVS
+    - id: 345946012
+      name: nftstorage/nft.storage
+    - id: 911786201
+      name: EspressoSystems/optimism-espresso-integration
+    - id: 288965634
+      name: stellar/stellar-etl-airflow
+    - id: 593995391
+      name: fullstack-development/blockchain-wiki
+    - id: 33331247
+      name: cirosantilli/china-dictatorship
+    - id: 964133781
+      name: coinbase/cdp-sdk
+    - id: 673960242
+      name: hero-org/herocast
+    - id: 879171637
+      name: alpenlabs/strata-bridge
+    - id: 444911896
+      name: NethermindEth/sedge
+    - id: 830269524
+      name: PolkadotEducation/app
+    - id: 476957520
+      name: AmazingAng/WTF-Solidity
+    - id: 142173232
+      name: mratsim/constantine
+    - id: 509610215
+      name: pontem-network/coins-registry
+    - id: 454725626
+      name: reown-com/web-examples
+    - id: 681412847
+      name: aws-samples/aws-blockchain-node-runners
+    - id: 112839586
+      name: dyne/Zenroom
+    - id: 156847937
+      name: jesse-ai/jesse
+    - id: 294654729
+      name: Cryptorubic/rubic-app
+    - id: 546614312
+      name: owallet-io/owallet
+    - id: 242750177
+      name: informalsystems/hermes
+    - id: 337024465
+      name: oasisprotocol/oasis-sdk
+    - id: 787998692
+      name: GaiaNet-AI/docs
+    - id: 800994352
+      name: projectawakening/builder-examples
+    - id: 167559870
+      name: likecoin/liker-land
+    - id: 668058173
+      name: ethpandaops/dora
+    - id: 224672691
+      name: paritytech/substrate-api-sidecar
+    - id: 92390696
+      name: Sjors/bitcoin
+    - id: 618749129
+      name: Virus-Axel/godot-solana-sdk
+    - id: 600530281
+      name: ethui/ethui
+    - id: 824858442
+      name: IntensiveCoLearning/Web3-URL
+    - id: 631030757
+      name: paradigmxyz/solar
+    - id: 472489889
+      name: graphops/launchpad-charts
+    - id: 449707141
+      name: lifinance/widget
+    - id: 398770709
+      name: SChernykh/p2pool
+    - id: 380284064
+      name: ripple/explorer
+    - id: 791299248
+      name: getAlby/go
+    - id: 827625262
+      name: LogicNet-Subnet/LogicNet
+    - id: 134100708
+      name: Kava-Labs/kava
+    - id: 798148656
+      name: OpenZeppelin/openzeppelin-community-contracts
+    - id: 662251967
+      name: FuelLabs/fuel-bridge
+    - id: 620373427
+      name: reown-com/appkit-react-native
+    - id: 713500295
+      name: DLC-link/dlc-btc-website
+    - id: 437100101
+      name: near/wallet-selector
+    - id: 618623970
+      name: zeko-labs/zeko
+    - id: 272700405
+      name: bitcoin-core/gui
+    - id: 33237663
+      name: monero-project/monero-gui
+    - id: 179699830
+      name: semaphore-protocol/semaphore
+    - id: 843522933
+      name: 4darsh-Dev/DecenTrade
+    - id: 198278603
+      name: HathorNetwork/hathor-wallet-mobile
+    - id: 666774689
+      name: 21ideas-org/21ideas.org
+    - id: 107303134
+      name: JKorf/Binance.Net
+    - id: 94121845
+      name: blockchain/blockchain-wallet-v4-frontend
+    - id: 908938180
+      name: nazar-pc/abundance
+    - id: 120209021
+      name: witnet/witnet-rust
+    - id: 611253330
+      name: BoltzExchange/boltz-web-app
+    - id: 846881952
+      name: ecency/vision-next
+    - id: 808266543
+      name: lambdaclass/ethereum_rust
+    - id: 499880203
+      name: Jon-Becker/heimdall-rs
+    - id: 11931032
+      name: btcsuite/btcd
+    - id: 586821913
+      name: etherspot/skandha
+    - id: 560079884
+      name: involveMINT/iMPublic
+    - id: 131245864
+      name: MixinNetwork/ios-app
+    - id: 694701077
+      name: matter-labs/era-consensus
+    - id: 708035292
+      name: LayerTwo-Labs/drivechain-frontends
+    - id: 592743944
+      name: odradev/awesome-zero-knowledge
+    - id: 380324692
+      name: lnp2pBot/bot
+    - id: 289852378
+      name: alephium/alephium
+    - id: 685141528
+      name: dcSpark/shinkai-apps
+    - id: 855205059
+      name: Abstract-Foundation/agw-sdk
+    - id: 785607697
+      name: liftedinit/manifest-app
+    - id: 728372622
+      name: paseo-network/runtimes
+    - id: 201584176
+      name: ethereum/fe
+    - id: 742291966
+      name: WTFAcademy/WTF-Dapp
+    - id: 810494535
+      name: Commit-Boost/commit-boost-client
+    - id: 360102831
+      name: unstoppabledomains/uns
+    - id: 574414999
+      name: DarkFlorist/TheInterceptor
+    - id: 645412990
+      name: scroll-tech/contribute-to-scroll
+    - id: 378396257
+      name: saturneric/GpgFrontend
+    - id: 369173225
+      name: fetchai/asi-alliance-wallet
+    - id: 434367716
+      name: ethereumjs/ultralight
+    - id: 19937094
+      name: quickfix-j/quickfixj
+    - id: 411969177
+      name: CESSProject/cess
+    - id: 101585932
+      name: crytic/echidna
+    - id: 750132754
+      name: txtx/txtx
+    - id: 775550777
+      name: rarimo/rarime-ios-app
+    - id: 594577896
+      name: BioforestChain/dweb_browser
+    - id: 313403077
+      name: WatchItDev/watchit-app
+    - id: 197537954
+      name: WalletWasabi/WasabiDoc
+    - id: 554756922
+      name: kkrt-labs/kakarot-rpc
+    - id: 108706901
+      name: Uniswap/interface
+    - id: 543738405
+      name: neodix42/ton4j
+    - id: 202696503
+      name: quarkfin/qf-lib
+    - id: 145594246
+      name: blockchain-etl/ethereum-etl-airflow
+    - id: 636886549
+      name: OpenZeppelin/defender-sdk
+    - id: 747694073
+      name: Hu-Fi/Mr.Market
+    - id: 701320118
+      name: LiskHQ/lisk-contracts
+    - id: 379705697
+      name: archethic-foundation/archethic-wallet
+    - id: 536157624
+      name: axone-protocol/networks
+    - id: 535160981
+      name: cashubtc/nutshell
+    - id: 478760777
+      name: toncenter/ton-indexer
+    - id: 310632133
+      name: solana-labs/token-list
+    - id: 492379518
+      name: Schnitzel/hass-miner
+    - id: 142194760
+      name: Coldcard/firmware
+    - id: 225880766
+      name: KomodoPlatform/komodo-wallet
+    - id: 835748820
+      name: argotorg/solcore
+    - id: 871218885
+      name: omnisat/lasereyes-mono
+    - id: 125034762
+      name: dappnode/DNP_DAPPMANAGER
+    - id: 768161082
+      name: IPOR-Labs/ipor-fusion
+    - id: 108264534
+      name: adshao/go-binance
+    - id: 742487930
+      name: regolith-labs/ore-app
+    - id: 872701917
+      name: deficollective/defiscan
+    - id: 399872252
+      name: streamflow-finance/js-sdk
+    - id: 652427733
+      name: soonaverse/app
+    - id: 789438642
+      name: ckb-devrel/ccc
+    - id: 375092559
+      name: nucypher/taco-web
+    - id: 490991821
+      name: bgd-labs/aave-address-book
+    - id: 691238354
+      name: pimlicolabs/permissionless.js
+    - id: 674372480
+      name: gemwalletcom/core
+    - id: 57332261
+      name: bitcoin-s/bitcoin-s
+    - id: 100446516
+      name: nucypher/nucypher
+    - id: 431103060
+      name: software-mansion/starknet.py
+    - id: 92066127
+      name: opencryptoki/opencryptoki
+    - id: 840132501
+      name: IntensiveCoLearning/DeFi
+    - id: 754571272
+      name: nmshd/rust-crypto
+    - id: 419481604
+      name: sudoblockio/icon-status-page
+    - id: 828838632
+      name: freespek/ssf-mc
+    - id: 416383556
+      name: codex-storage/codex-contracts-eth
+    - id: 754229895
+      name: Virtual-Protocol/protocol-contracts
+    - id: 429926874
+      name: AElfProject/aelf-docs
+    - id: 178964735
+      name: corretto/amazon-corretto-crypto-provider
+    - id: 738510390
+      name: narval-xyz/armory
+    - id: 665168221
+      name: VibeNL/GhostfolioSidekick
+    - id: 711110424
+      name: space-operator/flow-backend
+    - id: 651221445
+      name: Phoenix-Protocol-Group/phoenix-contracts
+    - id: 100263581
+      name: sammchardy/python-binance
+    - id: 425896296
+      name: Ackee-Blockchain/trident
+    - id: 775257800
+      name: naviprotocol/navi-sdk
+    - id: 499438649
+      name: alephium/alephium-web3
+    - id: 296229287
+      name: zeitgeistpm/zeitgeist
+    - id: 234135993
+      name: MetaMask/website
+    - id: 563370008
+      name: gear-foundation/vara-wiki
+    - id: 822502143
+      name: playmint/playerchain-demo
+    - id: 352898787
+      name: cheqd/cheqd-node
+    - id: 158087990
+      name: planetarium/libplanet
+    - id: 571266377
+      name: NethermindEth/Paprika
+    - id: 840417875
+      name: pixel-genius/pixel-client
+    - id: 659862499
+      name: bitcoin-dev-project/bitcoin-dev-project
+    - id: 221135660
+      name: BuildOnViction/victionchain
+    - id: 713430256
+      name: Sindri-Labs/sindri-js
+    - id: 591205899
+      name: junobuild/juno
+    - id: 596682032
+      name: matter-labs/era-solidity
+    - id: 403541655
+      name: arcana-network/developer-dashboard
+    - id: 300211586
+      name: UniqueNetwork/unique-chain
+    - id: 33684726
+      name: stellar/js-stellar-sdk
+    - id: 192062777
+      name: nervosnetwork/ckb-explorer-frontend
+    - id: 601918334
+      name: sarvalabs/js-moi-sdk
+    - id: 100385838
+      name: tiagosiebler/binance
+    - id: 852912600
+      name: KatSchreiner/iOS-FakeNFT-StarterProject-Public
+    - id: 833134540
+      name: ChorusOne/chorus-one-sdk
+    - id: 607300872
+      name: cashubtc/cashu.me
+    - id: 347138002
+      name: bitcointranscripts/bitcointranscripts
+    - id: 600516375
+      name: ApeWorX/silverback
+    - id: 659342082
+      name: 0xMiden/miden-node
+    - id: 531511287
+      name: nix-community/ethereum.nix
+    - id: 894840827
+      name: StarShopCr/StarShop-Frontend
+    - id: 362987107
+      name: airswap/airswap-web
+    - id: 89702863
+      name: JoinColony/colonyNetwork
+    - id: 791766435
+      name: Koniverse/Playnation
+    - id: 277798274
+      name: tatumio/tatum-js
+    - id: 816360448
+      name: wiepteam/studygroup
+    - id: 753202365
+      name: primev/mev-commit-docs
+    - id: 567322453
+      name: shocknet/wallet2
+    - id: 617770441
+      name: web3bio/web3bio-profile-api
+    - id: 47279130
+      name: zcash/zips
+    - id: 160502607
+      name: TokenySolutions/T-REX
+    - id: 22190497
+      name: stefanberger/swtpm
+    - id: 838614682
+      name: meldsun0/samba
+    - id: 140883594
+      name: ecency/ecency-mobile
+    - id: 857841930
+      name: settlemint/asset-tokenization-kit
+    - id: 391039385
+      name: Chia-Network/chia-docs
+    - id: 808235398
+      name: bitcoinppl/cove
+    - id: 130981854
+      name: CortexFoundation/CortexTheseus
+    - id: 324744034
+      name: getAlby/lightning-browser-extension
+    - id: 429112659
+      name: lidofinance/alerting-forta
+    - id: 539878343
+      name: rumos-io/gears
+    - id: 500356343
+      name: GoodDollar/GoodWeb3-Mono
+    - id: 352407711
+      name: raspiblitz/raspiblitz-web
+    - id: 155697390
+      name: maticnetwork/heimdall
+    - id: 823822789
+      name: MetaMask/delegation-framework
+    - id: 483721519
+      name: solana-playground/solana-playground
+    - id: 840209937
+      name: shufps/ESP-Miner-NerdQAxePlus
+    - id: 755223928
+      name: wolfSSL/wolfHSM
+    - id: 278060397
+      name: soramitsu/fearless-Android
+    - id: 731831089
+      name: celo-org/celo-mondo
+    - id: 735613519
+      name: RSS3-Network/Global-Indexer
+    - id: 388427168
+      name: crypto-org-chain/cronos
+    - id: 501841667
+      name: metacraft-labs/DendrETH
+    - id: 262781691
+      name: t3rn/t3rn
+    - id: 373013401
+      name: FuelLabs/fuel-vm
+    - id: 102358506
+      name: bisq-network/roles
+    - id: 201514509
+      name: jamaljsr/polar
+    - id: 417649707
+      name: DA0-DA0/dao-dao-ui
+    - id: 418314439
+      name: cosmostation/cosmostation-android
+    - id: 122682362
+      name: Drakkar-Software/OctoBot
+    - id: 621855514
+      name: fluree/server
+    - id: 505558525
+      name: centrifuge/liquidity-pools
+    - id: 637525481
+      name: redgold-io/redgold
+    - id: 628168721
+      name: shopstr-eng/shopstr
+    - id: 674535047
+      name: Baseflow/stellar-rust-sdk
+    - id: 650610039
+      name: bloomwalletio/bloom
+    - id: 670727802
+      name: SigmaGmbH/swisstronik-chain
+    - id: 542983711
+      name: celestiaorg/go-header
+    - id: 638495694
+      name: klever-io/kos-rs
+    - id: 927110558
+      name: anza-xyz/solana-sdk
+    - id: 768036550
+      name: GaiaNet-AI/gaianet-node
+    - id: 497232768
+      name: Planetable/Planet
+    - id: 645855657
+      name: NethermindEth/helm-charts
+    - id: 787314441
+      name: multiversx/mx-sdk-dapp-core
+    - id: 50457080
+      name: decred/dcrd
+    - id: 560015065
+      name: Galactica-corp/galactica-monorepo
+    - id: 595344127
+      name: radixdlt/radix-dapp-toolkit
+    - id: 827382979
+      name: elementlabs42/BitVM
+    - id: 759922422
+      name: curvefi/curve-core
+    - id: 833297175
+      name: ideal-lab5/idn-sdk
+    - id: 744909666
+      name: igneous-labs/sanctum-lst-list
+    - id: 537205178
+      name: metaDAOproject/futarchy
+    - id: 373186245
+      name: metaplex-foundation/metaplex
+    - id: 506326775
+      name: 0xSplits/splits-sdk
+    - id: 794520925
+      name: tupui/soroban-versioning
+    - id: 745451510
+      name: tileville/tileville
+    - id: 511928256
+      name: 0xPolygon/polygon-cli
+    - id: 143212778
+      name: hebasto/bitcoin
+    - id: 207422306
+      name: hyperledger/besu-docs
+    - id: 592241653
+      name: unstoppabledomains/unstoppable-ios-app
+    - id: 737620909
+      name: BenGWeeks/Zapp.ie
+    - id: 379762898
+      name: xelis-project/xelis-blockchain
+    - id: 279344506
+      name: zigbee-alliance/distributed-compliance-ledger
+    - id: 195896706
+      name: airswap/airswap-protocols
+    - id: 496364097
+      name: SiaFoundation/hostd
+    - id: 447302234
+      name: Ackee-Blockchain/wake
+    - id: 535835120
+      name: step-finance/indexer-geyser-plugin
+    - id: 772589136
+      name: gizatechxyz/scarb-agent
+    - id: 775610712
+      name: aha-oida/aha-secret
+    - id: 796321797
+      name: uballet/uballet
+    - id: 567148336
+      name: Bisonai/orakl
+    - id: 420880291
+      name: lifinance/types
+    - id: 532577189
+      name: FrankC01/pysui
+    - id: 589385734
+      name: edtechre/pybroker
+    - id: 708054834
+      name: bigshortbets/market-frontend
+    - id: 724107740
+      name: Granola-Team/mina-block-explorer
+    - id: 121182921
+      name: trustwallet/trust-web3-provider
+    - id: 855455483
+      name: masterking32/MasterCryptoFarmBot
+    - id: 713509512
+      name: 0xPolygon/heimdall-v2
+    - id: 519519452
+      name: scamsniffer/scam-database
+    - id: 27359183
+      name: guanzhi/GmSSL
+    - id: 448093032
+      name: make-software/casper-wallet
+    - id: 465909742
+      name: eprbell/dali-rp2
+    - id: 474612860
+      name: oasysgames/oasys-validator
+    - id: 288933881
+      name: michaelhly/solana-py
+    - id: 97364177
+      name: gballet/go-ethereum
+    - id: 847993691
+      name: Vagabonds-Labs/cofiblocks
+    - id: 837859472
+      name: anza-xyz/pinocchio
+    - id: 464691559
+      name: jito-foundation/jito-solana
+    - id: 698826938
+      name: Stacked-Labs/poker-game
+    - id: 461921306
+      name: tangle-network/tangle
+    - id: 862915541
+      name: scroll-tech/reth
+    - id: 382121439
+      name: otterscan/otterscan
+    - id: 477275552
+      name: sablier-labs/v2-core
+    - id: 599106753
+      name: smol-dot/smoldot
+    - id: 184497209
+      name: CashScript/cashscript
+    - id: 835229133
+      name: MinaFoundation/MinaMesh
+    - id: 373708688
+      name: nounsDAO/nouns-monorepo
+    - id: 797265325
+      name: UnitsNetwork/consensus-client
+    - id: 371399014
+      name: multiversx/mx-sdk-js-core
+    - id: 197336679
+      name: 3rdIteration/btcrecover
+    - id: 187620157
+      name: polkadot-js/extension
+    - id: 332254867
+      name: tryethernal/ethernal
+    - id: 853331173
+      name: gonative-cc/relayer
+    - id: 314070291
+      name: Synthetixio/synpress
+    - id: 381333195
+      name: gagliardetto/solana-go
+    - id: 751044844
+      name: trisacrypto/envoy
+    - id: 89773035
+      name: chawyehsu/dorado
+    - id: 183616787
+      name: darwinia-network/darwinia
+    - id: 243326972
+      name: ACINQ/lightning-kmp
+    - id: 830119334
+      name: Cyfrin/moccasin
+    - id: 570064976
+      name: dappradar/defi-providers
+    - id: 202667253
+      name: blocknative/web3-onboard
+    - id: 190420860
+      name: near/NEPs
+    - id: 232340075
+      name: Nashatyrev/teku
+    - id: 710486385
+      name: blockchain-insights/blockchain-data-subnet
+    - id: 474285337
+      name: Cypherock/x1_wallet_firmware
+    - id: 385975421
+      name: mx-space/core
+    - id: 708742679
+      name: celenium-io/celestia-indexer
+    - id: 537528123
+      name: oasisprotocol/cli
+    - id: 808890373
+      name: gemwalletcom/gem-android
+    - id: 875026091
+      name: pytorch/torchft
+    - id: 343226536
+      name: virto-network/virto-sdk
+    - id: 301125306
+      name: xchainjs/xchainjs-lib
+    - id: 664716838
+      name: lambdaclass/lambda_ethereum_consensus
+    - id: 812505637
+      name: tien/reactive-dot
+    - id: 790764108
+      name: dl-solarity/hardhat-zkit
+    - id: 942873690
+      name: IntensiveCoLearning/Ethereum-Protocol-Fellowship-3
+    - id: 84310208
+      name: f-klubben/stregsystemet
+    - id: 824389171
+      name: reddio-com/reddio
+    - id: 944743323
+      name: Polkadot-Fast-Grants/apply
+    - id: 256177320
+      name: ethersphere/beekeeper
+    - id: 782852216
+      name: Bitshala-Incubator/silent-pay-indexer
+    - id: 215791627
+      name: shocknet/Lightning.Pub
+    - id: 635235418
+      name: karpatkey/defi-kit
+    - id: 430110728
+      name: txpipe/pallas
+    - id: 376770864
+      name: TalismanSociety/talisman-web
+    - id: 598210630
+      name: lindy-labs/sandclock-contracts
+    - id: 786562590
+      name: minisat0shi/minisatoshi.cash
+    - id: 709878682
+      name: stabilitydao/stability-ui
+    - id: 949214934
+      name: BioCoinLab/BioCoin
+    - id: 569066775
+      name: Argus-Labs/world-engine
+    - id: 708156888
+      name: stampchain-io/btc_stamps
+    - id: 276042162
+      name: soramitsu/fearless-iOS
+    - id: 950515906
+      name: cosmos/evm
+    - id: 563865519
+      name: eigerco/beerus
+    - id: 808964526
+      name: ava-labs/avalanche-academy
+    - id: 885891374
+      name: DEVRhylme-Foundation/new-website
+    - id: 709929116
+      name: magicblock-labs/bolt
+    - id: 883397691
+      name: ithacaxyz/account
+    - id: 897068154
+      name: heurist-network/heurist-agent-framework
+    - id: 497854996
+      name: shner-elmo/TradingView-Screener
+    - id: 702459591
+      name: input-output-hk/hermes
+    - id: 261752121
+      name: everx-labs/ever-node
+    - id: 810568530
+      name: open-web3-stack/polkadot-ecosystem-tests
+    - id: 121470383
+      name: solana-labs/solana
+    - id: 389887415
+      name: TalismanSociety/chaindata
+    - id: 351812091
+      name: anza-xyz/wallet-adapter
+    - id: 455638351
+      name: apibara/starknet-react
+    - id: 765069844
+      name: coincashew/EthPillar
+    - id: 570482130
+      name: 0xcregis/anychain
+    - id: 874698486
+      name: bnb-chain/canonical-bridge
+    - id: 403346224
+      name: InvisibleSymbol/rocketwatch
+    - id: 372490866
+      name: arkadiko-dao/arkadiko
+    - id: 862255947
+      name: chainbase-labs/manuscript-core
+    - id: 161224066
+      name: use-ink/ink
+    - id: 677301333
+      name: propeller-heads/tycho-indexer
+    - id: 50457727
+      name: decred/dcrwallet
+    - id: 331384753
+      name: webb-tools/webb-dapp
+    - id: 880061080
+      name: InternetMaximalism/intmax2
+    - id: 665244267
+      name: movementlabsxyz/aptos-core
+    - id: 488519742
+      name: vsys-host/shkeeper.io
+    - id: 264921815
+      name: oceanprotocol/ocean.js
+    - id: 515514394
+      name: ARK-Builders/ARK-Rate
+    - id: 100618359
+      name: jlopp/lopp.net

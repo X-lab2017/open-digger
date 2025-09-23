@@ -1,0 +1,651 @@
+name: 操作系统
+type: Tech-14
+data:
+  platforms:
+  - name: GitHub
+    type: Code Hosting
+    repos:
+    - id: 59771425
+      name: zephyrproject-rtos/zephyr
+    - id: 601205363
+      name: tenstorrent/tt-metal
+    - id: 48109239
+      name: cilium/cilium
+    - id: 281765424
+      name: microsoft/azurelinux
+    - id: 228103273
+      name: apache/nuttx
+    - id: 34098300
+      name: AOSC-Dev/aosc-os-abbs
+    - id: 239001792
+      name: Azure/AgentBaker
+    - id: 52308441
+      name: status-im/status-mobile
+    - id: 334215717
+      name: gnolang/gno
+    - id: 105627846
+      name: reactos/reactos
+    - id: 221458136
+      name: Effect-TS/effect
+    - id: 7408108
+      name: RT-Thread/rt-thread
+    - id: 21663285
+      name: chapel-lang/chapel
+    - id: 3199002
+      name: raspberrypi/linux
+    - id: 24905898
+      name: armbian/build
+    - id: 7370241
+      name: RIOT-OS/RIOT
+    - id: 493375250
+      name: asterinas/asterinas
+    - id: 663900193
+      name: sxyazi/yazi
+    - id: 160083795
+      name: SerenityOS/serenity
+    - id: 473137633
+      name: cilium/tetragon
+    - id: 2567844
+      name: mavlink/qgroundcontrol
+    - id: 766341786
+      name: HeyPuter/puter
+    - id: 812554671
+      name: Jas-SinghFSU/HyprPanel
+    - id: 53762444
+      name: LibreELEC/LibreELEC.tv
+    - id: 665383420
+      name: kmesh-net/kmesh
+    - id: 135611127
+      name: thesofproject/linux
+    - id: 44087204
+      name: google/syzkaller
+    - id: 525281948
+      name: mondoohq/cnquery
+    - id: 669331976
+      name: flashinfer-ai/flashinfer
+    - id: 29099181
+      name: keybase/client
+    - id: 36428094
+      name: tock/tock
+    - id: 134079884
+      name: zio/zio
+    - id: 2325298
+      name: torvalds/linux
+    - id: 11909954
+      name: chromebrew/chromebrew
+    - id: 63237385
+      name: systemd/mkosi
+    - id: 150100207
+      name: zowe/zowe-explorer-vscode
+    - id: 6124250
+      name: analogdevicesinc/linux
+    - id: 48610662
+      name: acmesh-official/acme.sh
+    - id: 3018212
+      name: genodelabs/genode
+    - id: 959908
+      name: OpenRA/OpenRA
+    - id: 31769954
+      name: QubesOS/qubes-issues
+    - id: 109257440
+      name: latex3/latex2e
+    - id: 13807606
+      name: junegunn/fzf
+    - id: 337107978
+      name: falcosecurity/libs
+    - id: 228103139
+      name: apache/nuttx-apps
+    - id: 246335987
+      name: ventoy/Ventoy
+    - id: 587553349
+      name: Joshua-Riek/ubuntu-rockchip
+    - id: 22529973
+      name: beeware/toga
+    - id: 252664485
+      name: linuxkerneltravel/lmp
+    - id: 245713798
+      name: gardenlinux/gardenlinux
+    - id: 46462030
+      name: u-root/u-root
+    - id: 493612380
+      name: telink-semi/zephyr
+    - id: 155009767
+      name: linux-surface/linux-surface
+    - id: 5133949
+      name: swoole/swoole-src
+    - id: 448203875
+      name: DragonOS-Community/DragonOS
+    - id: 28232663
+      name: dotnet/orleans
+    - id: 732124850
+      name: hatchet-dev/hatchet
+    - id: 576303915
+      name: tiann/KernelSU
+    - id: 681215919
+      name: bmax121/APatch
+    - id: 316098156
+      name: kubearmor/KubeArmor
+    - id: 662640428
+      name: winapps-org/winapps
+    - id: 131212638
+      name: google/gvisor
+    - id: 699187192
+      name: ading2210/shimboot
+    - id: 168370
+      name: jruby/jruby
+    - id: 4455628
+      name: STEllAR-GROUP/hpx
+    - id: 44804216
+      name: termux/termux-app
+    - id: 26328907
+      name: multipath-tcp/mptcp_net-next
+    - id: 2909429
+      name: nicolargo/glances
+    - id: 19348028
+      name: Netatalk/netatalk
+    - id: 208364128
+      name: google/XNNPACK
+    - id: 541188877
+      name: bin456789/reinstall
+    - id: 806971211
+      name: cizia64/CrossMix-OS
+    - id: 200663555
+      name: axboe/liburing
+    - id: 33078138
+      name: embox/embox
+    - id: 1257084
+      name: dlang/phobos
+    - id: 488002779
+      name: NVIDIA/open-gpu-kernel-modules
+    - id: 181022316
+      name: unikraft/unikraft
+    - id: 14812739
+      name: libuv/libuv
+    - id: 85870099
+      name: btrfs/linux
+    - id: 531444920
+      name: deepin-community/kernel
+    - id: 45695616
+      name: mydumper/mydumper
+    - id: 403052556
+      name: gramineproject/gramine
+    - id: 207354223
+      name: FreeRTOS/FreeRTOS-Kernel
+    - id: 36930672
+      name: ColinIanKing/stress-ng
+    - id: 837917950
+      name: AFK-AlignedFamKernel/afk_monorepo
+    - id: 263565431
+      name: mbed-ce/mbed-os
+    - id: 290446899
+      name: virt-s1/os-tests
+    - id: 91378740
+      name: elementary/gala
+    - id: 312703459
+      name: Start9Labs/start-os
+    - id: 78134122
+      name: chaoss/augur
+    - id: 2441517
+      name: puma/puma
+    - id: 748774838
+      name: torizon/meta-toradex-torizon
+    - id: 507829396
+      name: openGemini/openGemini
+    - id: 391476365
+      name: FDH2/UxPlay
+    - id: 915203368
+      name: KernelSU-Next/KernelSU-Next
+    - id: 416959991
+      name: dingodb/dingo
+    - id: 14411731
+      name: ghaerr/elks
+    - id: 252314296
+      name: oxidecomputer/hubris
+    - id: 1911523
+      name: eclipse-vertx/vert.x
+    - id: 549714010
+      name: topgrade-rs/topgrade
+    - id: 573107980
+      name: touchHLE/touchHLE
+    - id: 1449773
+      name: red/red
+    - id: 151977818
+      name: felangel/bloc
+    - id: 350963338
+      name: vmware/ansible-vsphere-gos-validation
+    - id: 274442284
+      name: stnolting/neorv32
+    - id: 45055693
+      name: balena-io/etcher
+    - id: 79083614
+      name: python-trio/trio
+    - id: 559857046
+      name: apache/pekko
+    - id: 601873626
+      name: sophgo/linux-riscv
+    - id: 206649463
+      name: cilium/ebpf
+    - id: 587667904
+      name: CHERIoT-Platform/cheriot-rtos
+    - id: 29329884
+      name: minio/mc
+    - id: 8720130
+      name: particle-iot/device-os
+    - id: 228700796
+      name: kartben/zephyr
+    - id: 207777501
+      name: osbuild/osbuild-composer
+    - id: 156583448
+      name: lf-lang/lingua-franca
+    - id: 49682772
+      name: RamonSilva20/mapos
+    - id: 768455629
+      name: AMDESE/linux-aspeed
+    - id: 1208360
+      name: tvheadend/tvheadend
+    - id: 21977691
+      name: seL4/seL4
+    - id: 28653585
+      name: MiCode/Xiaomi_Kernel_OpenSource
+    - id: 536799383
+      name: obhq/obliteration
+    - id: 27551693
+      name: CosmosOS/Cosmos
+    - id: 112536545
+      name: Badgerati/Pode
+    - id: 451563714
+      name: google/horologist
+    - id: 647022990
+      name: OpenVoiceOS/status
+    - id: 114780062
+      name: clearlinux/distribution
+    - id: 322249637
+      name: AsahiLinux/linux
+    - id: 642483773
+      name: posit-dev/ark
+    - id: 587280747
+      name: pachi81/GlucoDataHandler
+    - id: 54111079
+      name: utwente-fmt/vercors
+    - id: 133577268
+      name: kworkflow/kworkflow
+    - id: 531416506
+      name: Aiven-Open/klaw
+    - id: 9524997
+      name: glfw/glfw
+    - id: 754493863
+      name: HTRamsey/qgroundcontrol
+    - id: 331085111
+      name: kmod-project/kmod
+    - id: 174574337
+      name: phoenix-rtos/phoenix-rtos-project
+    - id: 605157846
+      name: ColleagueRiley/RGFW
+    - id: 19606299
+      name: platformio/platformio-core
+    - id: 145337588
+      name: agronholm/anyio
+    - id: 770690133
+      name: ruyisdk/support-matrix
+    - id: 679086250
+      name: XiaoYouChR/Ghost-Downloader-3
+    - id: 72268885
+      name: robinrodricks/FluentFTP
+    - id: 309941280
+      name: ariel-os/ariel-os
+    - id: 146427314
+      name: HCK-CI/AutoHCK
+    - id: 104926650
+      name: DARMA-tasking/vt
+    - id: 9435887
+      name: the-tcpdump-group/libpcap
+    - id: 415603044
+      name: CachyOS/linux-cachyos
+    - id: 26217535
+      name: alpaka-group/alpaka
+    - id: 778215606
+      name: Xilinx-CNS/tcpdirect
+    - id: 96814966
+      name: OsProgramadores/op-desafios
+    - id: 63081862
+      name: managarm/managarm
+    - id: 921595267
+      name: LoveRetro/NextUI
+    - id: 210639008
+      name: hexdump0815/imagebuilder
+    - id: 16743039
+      name: dynup/kpatch
+    - id: 702606174
+      name: Ana-Pimenta-Conceicao/COMTUR
+    - id: 505613691
+      name: OnionUI/Onion
+    - id: 135060910
+      name: hermit-os/kernel
+    - id: 45165993
+      name: apache/mynewt-core
+    - id: 80723074
+      name: gopasspw/gopass
+    - id: 789919217
+      name: DHD2280/Oxygen-Customizer
+    - id: 31986253
+      name: GuillaumeGomez/sysinfo
+    - id: 594680497
+      name: AOSC-Dev/oma
+    - id: 43684525
+      name: ultimatepp/ultimatepp
+    - id: 468652496
+      name: Mistium/Origin-OS
+    - id: 820097839
+      name: rcaa/micro-livraria
+    - id: 787028121
+      name: REG-Linux/REG-Linux
+    - id: 183284784
+      name: GoogleCloudPlatform/guest-test-infra
+    - id: 32572504
+      name: commixproject/commix
+    - id: 878663690
+      name: gpu-mode/discord-cluster-manager
+    - id: 676255355
+      name: keep-starknet-strange/snos
+    - id: 403656091
+      name: kellerza/sunsynk
+    - id: 455922808
+      name: probonopd/MiniDexed
+    - id: 50490166
+      name: puavo-org/puavo-os
+    - id: 77596687
+      name: freemint/freemint
+    - id: 686252426
+      name: ferrumc-rs/ferrumc
+    - id: 19863023
+      name: proftpd/proftpd
+    - id: 603952413
+      name: PaperMC/Folia
+    - id: 793985221
+      name: hengyoush/kyanos
+    - id: 904370907
+      name: microsoft/Multi-Agent-Custom-Automation-Engine-Solution-Accelerator
+    - id: 23442278
+      name: victronenergy/venus
+    - id: 390510
+      name: benoitc/gunicorn
+    - id: 92887912
+      name: javapathfinder/jpf-core
+    - id: 3649922
+      name: linux-test-project/ltp
+    - id: 225092802
+      name: tabemann/zeptoforth
+    - id: 169136305
+      name: spryker-shop/b2b-demo-marketplace
+    - id: 449602244
+      name: rancher/elemental
+    - id: 765617179
+      name: rhkdump/kdump-utils
+    - id: 170118980
+      name: threefoldtech/zos
+    - id: 15509440
+      name: akkadotnet/akka.net
+    - id: 204054715
+      name: WireCell/wire-cell-toolkit
+    - id: 97125907
+      name: composewell/streamly
+    - id: 277621205
+      name: getumbrel/umbrel
+    - id: 125823596
+      name: phoenix-rtos/phoenix-rtos-kernel
+    - id: 762571895
+      name: buckyos/buckyos
+    - id: 22734848
+      name: nix-rust/nix
+    - id: 157422219
+      name: occlum/occlum
+    - id: 125231084
+      name: spryker-shop/b2b-demo-shop
+    - id: 781512464
+      name: SUSE/klp-build
+    - id: 405395729
+      name: Mathics3/mathics-core
+    - id: 860728124
+      name: uw-midsun/fwxvi
+    - id: 239806806
+      name: rokath/trice
+    - id: 140086420
+      name: opensolon/solon
+    - id: 146762488
+      name: jborgers/PMD-jPinpoint-rules
+    - id: 130068982
+      name: taskflow/taskflow
+    - id: 262141303
+      name: Kimplul/hid-tmff2
+    - id: 206121828
+      name: FreeRTOS/FreeRTOS
+    - id: 91191972
+      name: contiki-ng/contiki-ng
+    - id: 605959548
+      name: armbian/linux-rockchip
+    - id: 45863890
+      name: swiftlang/swift-corelibs-foundation
+    - id: 467350582
+      name: codaqui/institucional
+    - id: 381788380
+      name: ideal-world/bios
+    - id: 116998525
+      name: spryker-shop/suite
+    - id: 347905832
+      name: smplayer-dev/smplayer
+    - id: 731625798
+      name: pieces-app/cli-agent
+    - id: 222023386
+      name: gtkwave/gtkwave
+    - id: 692184706
+      name: kubeshark/tracer
+    - id: 185160931
+      name: mudita/MuditaOS
+    - id: 600974136
+      name: foldright/cffu
+    - id: 5390156
+      name: fontforge/fontforge
+    - id: 152181901
+      name: rmottola/Arctic-Fox
+    - id: 33331247
+      name: cirosantilli/china-dictatorship
+    - id: 50354756
+      name: crosswire/xiphos
+    - id: 6433838
+      name: jstedfast/MimeKit
+    - id: 177494633
+      name: ChimeraOS/chimeraos
+    - id: 814249293
+      name: microsoft/semantic-kernel-java
+    - id: 688686285
+      name: syswonder/ruxos
+    - id: 724330786
+      name: SvarDOS/edrdos
+    - id: 48567004
+      name: namjaejeon/ksmbd
+    - id: 154072033
+      name: radxa/kernel
+    - id: 37735755
+      name: LibrePCB/LibrePCB
+    - id: 345753726
+      name: pmem/run_qemu
+    - id: 144771489
+      name: stratumauth/app
+    - id: 83947369
+      name: rtic-rs/rtic
+    - id: 517900636
+      name: facebookincubator/dynolog
+    - id: 588739758
+      name: iopsystems/rezolus
+    - id: 322263570
+      name: u-blox/ubxlib
+    - id: 2465166
+      name: zen-kernel/zen-kernel
+    - id: 15078635
+      name: CISOfy/lynis
+    - id: 496604518
+      name: open-feature/flagd
+    - id: 531719140
+      name: embeddedTS/linux-lts
+    - id: 516838146
+      name: MentorEmbedded/meta-sokol-flex
+    - id: 131418962
+      name: luainkernel/lunatik
+    - id: 286179743
+      name: DustinBrett/daedalOS
+    - id: 21040543
+      name: ni/linux
+    - id: 695196901
+      name: ocaml-multicore/picos
+    - id: 744358703
+      name: cbepx-me/Anbernic-H700-RG-xx-StockOS-Modification
+    - id: 15878393
+      name: MotorolaMobilityLLC/kernel-msm
+    - id: 456446697
+      name: Axcient/elastio-snap
+    - id: 856851849
+      name: Fatec-Bug-Busters/alplaca
+    - id: 587328473
+      name: kernel-community/convo-app
+    - id: 702134322
+      name: dabao1955/kernel_build_action
+    - id: 399838144
+      name: spryker-shop/b2c-demo-marketplace
+    - id: 703426991
+      name: oracle-samples/drgn-tools
+    - id: 83734828
+      name: intel/lkp-tests
+    - id: 137065390
+      name: minecraft-linux/mcpelauncher-manifest
+    - id: 73090230
+      name: tud-zih-energy/lo2s
+    - id: 10717754
+      name: elves/elvish
+    - id: 677829141
+      name: AugmentOS-Community/AugmentOS
+    - id: 760659700
+      name: Leonardo9119aH4/PPO-IA23-SOCORRO
+    - id: 587300950
+      name: Deltares/D-EcoImpact
+    - id: 831085793
+      name: keep-starknet-strange/starknet-phone
+    - id: 647065685
+      name: Nuvoton-Israel/zephyr
+    - id: 367076134
+      name: JafarAkhondali/acer-predator-turbo-and-rgb-keyboard-linux-module
+    - id: 623336962
+      name: android/platform-samples
+    - id: 212659217
+      name: NNPDF/eko
+    - id: 328278162
+      name: VBAndCs/sVB-Small-Visual-Basic
+    - id: 54894320
+      name: KernelTuner/kernel_tuner
+    - id: 66725653
+      name: libretro/Lakka-LibreELEC
+    - id: 452701147
+      name: kubernetes-sigs/kernel-module-management
+    - id: 256645086
+      name: vtereshkov/umka-lang
+    - id: 40202110
+      name: IgorTimofeev/MineOS
+    - id: 448873865
+      name: pika-org/pika
+    - id: 733665906
+      name: paxo-phone/PaxOS-9
+    - id: 605446225
+      name: arceos-org/arceos
+    - id: 343441074
+      name: aviant-tech/qgroundcontrol
+    - id: 670859426
+      name: nuta/operating-system-in-1000-lines
+    - id: 285020891
+      name: lkrg-org/lkrg
+    - id: 192007253
+      name: android/wear-os-samples
+    - id: 499643583
+      name: rh-ecosystem-edge/kernel-module-management
+    - id: 603971444
+      name: kouprlabs/voltaserve
+    - id: 9069721
+      name: bevry/dorothy
+    - id: 269336148
+      name: sickcodes/Docker-OSX
+    - id: 662576781
+      name: bmax121/KernelPatch
+    - id: 733524831
+      name: podman-desktop/extension-bootc
+    - id: 962393356
+      name: open-edge-platform/edge-microvisor-toolkit
+    - id: 407314908
+      name: AlmaLinux/build-system
+    - id: 429736728
+      name: FreeBSD-Ask/FreeBSD-Ask
+    - id: 682919984
+      name: ZjzMisaka/PowerThreadPool
+    - id: 672307507
+      name: Valthrun/Valthrun
+    - id: 115159616
+      name: nanovms/nanos
+    - id: 7115259
+      name: eventlet/eventlet
+    - id: 512105473
+      name: sysprog21/semu
+    - id: 114466145
+      name: yewstack/yew
+    - id: 275410174
+      name: HelloVolla/volla-os-beta-test
+    - id: 374210569
+      name: BlissRoms-x86/support
+    - id: 563925070
+      name: owntech-foundation/Core
+    - id: 285412527
+      name: RavEngine/RavEngine
+    - id: 416278604
+      name: cilium/pwru
+    - id: 503528235
+      name: Athena-OS/athena
+    - id: 91255224
+      name: Nuvoton-Israel/linux
+    - id: 90277694
+      name: elementary/code
+    - id: 137949274
+      name: a13xp0p0v/kernel-hardening-checker
+    - id: 276969239
+      name: MichaIng/DietPi-Docs
+    - id: 794607832
+      name: arleypadua/PKHeX.Everywhere
+    - id: 585146254
+      name: Mellvik/TLVC
+    - id: 754817477
+      name: savedra1/clipse
+    - id: 226597120
+      name: timcassell/ProtoPromise
+    - id: 477156
+      name: vslavik/poedit
+    - id: 529238370
+      name: KonghaYao/cn-font-split
+    - id: 49201667
+      name: BobBuildTool/bob
+    - id: 122735174
+      name: heatd/Onyx
+    - id: 879835503
+      name: FGA0138-MDS-Ajax/2024.2-Wunjo
+    - id: 770539826
+      name: Red-Dragons-UFSCar/RedSSL
+    - id: 832264133
+      name: nfewizard-org/nfewizard-io
+    - id: 695103974
+      name: fiftydinar/gidro-os
+    - id: 241449313
+      name: elementary/dock
+    - id: 1005627
+      name: liballeg/allegro5
+    - id: 422409992
+      name: Mario-Junior/trybe-exercises
+    - id: 773401625
+      name: qlenlen/android_kernel_samsung_sm8550
+    - id: 170811230
+      name: bootlin/training-materials
+    - id: 2367090
+      name: geopython/pycsw

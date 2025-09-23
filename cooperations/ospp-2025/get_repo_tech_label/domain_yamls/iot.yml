@@ -1,0 +1,689 @@
+name: 物联网与边缘计算
+type: Tech-18
+data:
+  platforms:
+  - name: GitHub
+    type: Code Hosting
+    repos:
+    - id: 12888993
+      name: home-assistant/core
+    - id: 59771425
+      name: zephyrproject-rtos/zephyr
+    - id: 210716005
+      name: dotnet/runtime
+    - id: 128636610
+      name: Koenkk/zigbee2mqtt
+    - id: 244694174
+      name: project-chip/connectedhomeip
+    - id: 226368338
+      name: evcc-io/evcc
+    - id: 65899476
+      name: espressif/esp-idf
+    - id: 196353673
+      name: taosdata/TDengine
+    - id: 75277003
+      name: thingsboard/thingsboard
+    - id: 128479644
+      name: esphome/esphome
+    - id: 158975124
+      name: apache/iotdb
+    - id: 569041
+      name: curl/curl
+    - id: 315377678
+      name: apache/ignite-3
+    - id: 167694194
+      name: blakeblackshear/frigate
+    - id: 542714
+      name: ravendb/ravendb
+    - id: 379584201
+      name: Cumulocity-IoT/c8y-docs
+    - id: 165088483
+      name: esphome/issues
+    - id: 82517252
+      name: Samsung/TizenRT
+    - id: 158094364
+      name: zigpy/zha-device-handlers
+    - id: 7408108
+      name: RT-Thread/rt-thread
+    - id: 33258973
+      name: influxdata/telegraf
+    - id: 28928522
+      name: wolfSSL/wolfssl
+    - id: 84240850
+      name: timescale/timescaledb
+    - id: 9342529
+      name: crate/crate
+    - id: 7370241
+      name: RIOT-OS/RIOT
+    - id: 924551
+      name: rabbitmq/rabbitmq-server
+    - id: 262296122
+      name: PaddlePaddle/PaddleOCR
+    - id: 180481986
+      name: apache/apisix
+    - id: 7202769
+      name: emqx/emqx
+    - id: 795166961
+      name: pr3y/Bruce
+    - id: 55808787
+      name: openthread/openthread
+    - id: 80286288
+      name: arendst/Tasmota
+    - id: 13836499
+      name: raysan5/raylib
+    - id: 1390248
+      name: saltstack/salt
+    - id: 182198941
+      name: lf-edge/eve
+    - id: 31006158
+      name: apache/ignite
+    - id: 133223461
+      name: esphome/esphome-docs
+    - id: 224908244
+      name: WasmEdge/WasmEdge
+    - id: 318182014
+      name: al-one/hass-xiaomi-miot
+    - id: 184654298
+      name: bytecodealliance/wasm-micro-runtime
+    - id: 15101579
+      name: kamailio/kamailio
+    - id: 11526715
+      name: dresden-elektronik/deconz-rest-plugin
+    - id: 517581241
+      name: hoylabs/OpenDTU-OnBattery
+    - id: 115992009
+      name: home-assistant/operating-system
+    - id: 36428094
+      name: tock/tock
+    - id: 167687348
+      name: esphome/feature-requests
+    - id: 48337670
+      name: openhab/openhab-core
+    - id: 588734673
+      name: greghesp/ha-bambulab
+    - id: 43470020
+      name: GeoNet/delta
+    - id: 178738556
+      name: teslamate-org/teslamate
+    - id: 347619427
+      name: emsesp/EMS-ESP32
+    - id: 165405689
+      name: TheThingsNetwork/lorawan-stack
+    - id: 174708928
+      name: frangoteam/FUXA
+    - id: 525545289
+      name: espressif/esp-zigbee-sdk
+    - id: 235377467
+      name: eclipse-zenoh/zenoh
+    - id: 361784175
+      name: openshift/microshift
+    - id: 50994619
+      name: openremote/openremote
+    - id: 454138964
+      name: openshwprojects/OpenBK7231T_App
+    - id: 630993399
+      name: FlowFuse/node-red-dashboard
+    - id: 561960509
+      name: project-chip/matter.js
+    - id: 36057260
+      name: apache/activemq-artemis
+    - id: 379584201
+      name: SoftwareAG/c8y-docs
+    - id: 600215024
+      name: google/testrun
+    - id: 471439077
+      name: lumapu/ahoy
+    - id: 15237269
+      name: eclipse-kura/kura
+    - id: 90196632
+      name: cloudamqp/lavinmq
+    - id: 311373685
+      name: thin-edge/thin-edge.io
+    - id: 85435841
+      name: home-assistant/addons
+    - id: 660584069
+      name: hivemq/hivemq-edge
+    - id: 187078631
+      name: shellhub-io/shellhub
+    - id: 600113513
+      name: Shelf-nu/shelf.nu
+    - id: 424699742
+      name: awslabs/iot-app-kit
+    - id: 6376337
+      name: pocoproject/poco
+    - id: 225508004
+      name: fledge-iot/fledge
+    - id: 78083065
+      name: thingsboard/thingsboard-gateway
+    - id: 863835427
+      name: fosrl/pangolin
+    - id: 61128545
+      name: nextcloud-snap/nextcloud-snap
+    - id: 506984830
+      name: tbnobody/OpenDTU
+    - id: 192117701
+      name: Koenkk/zigbee-herdsman
+    - id: 123944107
+      name: jgromes/RadioLib
+    - id: 47403260
+      name: instana/nodejs
+    - id: 130742303
+      name: home-assistant/developers.home-assistant
+    - id: 130603282
+      name: apache/streampipes
+    - id: 90885820
+      name: openthread/ot-br-posix
+    - id: 114859883
+      name: apache/plc4x
+    - id: 305933027
+      name: zwave-js/zwave-js-ui
+    - id: 67943756
+      name: firewalla/firewalla
+    - id: 241225122
+      name: microsoft/azure_arc
+    - id: 380502721
+      name: mrlt8/docker-wyze-bridge
+    - id: 26161892
+      name: jeedom/core
+    - id: 417240185
+      name: Azure/azure-osconfig
+    - id: 673851163
+      name: project-chip/certification-tool
+    - id: 423384394
+      name: emqx/emqx-dashboard5
+    - id: 154525111
+      name: signalwire/freeswitch
+    - id: 126682032
+      name: zwave-js/node-zwave-js
+    - id: 137122764
+      name: ioBroker/ioBroker.zigbee
+    - id: 195003588
+      name: lf-edge/ekuiper
+    - id: 76305806
+      name: mcu-tools/mcuboot
+    - id: 645100332
+      name: Azure/azure-iot-ops-cli-extension
+    - id: 45199136
+      name: canonical/snapcraft
+    - id: 424996787
+      name: bacalhau-project/bacalhau
+    - id: 61721573
+      name: jens-maus/RaspberryMatic
+    - id: 674088481
+      name: robustmq/robustmq
+    - id: 247519053
+      name: Koenkk/zigbee-OTA
+    - id: 472920020
+      name: technyon/nuki_hub
+    - id: 378529353
+      name: emqx/neuron
+    - id: 178833625
+      name: Egyras/HeishaMon
+    - id: 409653223
+      name: Nixtla/nixtla
+    - id: 719934237
+      name: apache/tsfile
+    - id: 451419201
+      name: Orange-OpenSource/its-client
+    - id: 291484700
+      name: AlexxIT/XiaomiGateway3
+    - id: 5414488
+      name: cesanta/mongoose
+    - id: 410430370
+      name: IceWhaleTech/CasaOS
+    - id: 127430141
+      name: astarte-platform/astarte
+    - id: 45860898
+      name: eclipse-hawkbit/hawkbit
+    - id: 507829396
+      name: openGemini/openGemini
+    - id: 769727949
+      name: zigpy/zha
+    - id: 455159517
+      name: britkat1980/giv_tcp
+    - id: 35332768
+      name: rauc/rauc
+    - id: 422931599
+      name: KartoffelToby/better_thermostat
+    - id: 290152313
+      name: e-m-b-a/emba
+    - id: 421784465
+      name: intel/intel-inb-manageability
+    - id: 436039945
+      name: aklivity/zilla
+    - id: 71603115
+      name: platformio/platform-espressif32
+    - id: 211185602
+      name: aws4embeddedlinux/meta-aws
+    - id: 531211044
+      name: golioth/golioth-firmware-sdk
+    - id: 761692590
+      name: Luligu/matterbridge
+    - id: 27561102
+      name: stamparm/maltrail
+    - id: 53614190
+      name: eclipse-mosquitto/mosquitto
+    - id: 272199362
+      name: nurikk/zigbee2mqtt-frontend
+    - id: 405717191
+      name: tier4/aip_launcher
+    - id: 99690601
+      name: espressif/esp-iot-solution
+    - id: 72213073
+      name: instana/go-sensor
+    - id: 507610
+      name: processone/ejabberd
+    - id: 8720130
+      name: particle-iot/device-os
+    - id: 138646782
+      name: Azure/iotedge
+    - id: 170255143
+      name: UtilitechAS/amsreader-firmware
+    - id: 404353300
+      name: nodecross/nodex
+    - id: 513812772
+      name: ezloteam/Ezlo_Pi
+    - id: 103446460
+      name: containers/crun
+    - id: 76643138
+      name: instana/python-sensor
+    - id: 87849739
+      name: eclipse-ditto/ditto
+    - id: 118159643
+      name: KiwiHC16/Abeille
+    - id: 274303220
+      name: faucetsdn/udmi
+    - id: 597219434
+      name: xlang-foundation/xlang
+    - id: 699034779
+      name: Thymis-io/thymis
+    - id: 68460326
+      name: 1technophile/OpenMQTTGateway
+    - id: 132732601
+      name: canonical/microk8s
+    - id: 194516051
+      name: sprut/Hub
+    - id: 917367202
+      name: SE4CPS/PlantWaterSystem
+    - id: 213168548
+      name: bacnet-stack/bacnet-stack
+    - id: 196095061
+      name: aws-greengrass/aws-greengrass-nucleus
+    - id: 124137241
+      name: TheThingsNetwork/lorawan-devices
+    - id: 75732018
+      name: wirenboard/wb-mqtt-serial
+    - id: 155974736
+      name: kubermatic/kubeone
+    - id: 36928490
+      name: GladysAssistant/Gladys
+    - id: 73599169
+      name: nanomq/nanomq
+    - id: 19606299
+      name: platformio/platformio-core
+    - id: 146397768
+      name: ithewei/libhv
+    - id: 681244863
+      name: ioBroker/ioBroker.matter
+    - id: 147234395
+      name: iobroker-community-adapters/ioBroker.shelly
+    - id: 309941280
+      name: ariel-os/ariel-os
+    - id: 302841413
+      name: zigbee2mqtt/hassio-zigbee2mqtt
+    - id: 35562367
+      name: particle-iot/particle-cli
+    - id: 316803319
+      name: helgeerbe/picframe
+    - id: 177154737
+      name: philips-software/amp-embedded-infra-lib
+    - id: 621370202
+      name: AMRC-FactoryPlus/amrc-connectivity-stack
+    - id: 517581241
+      name: helgeerbe/OpenDTU-OnBattery
+    - id: 173776180
+      name: Azure/Industrial-IoT
+    - id: 30419413
+      name: eclipse-leshan/leshan
+    - id: 257818724
+      name: stellio-hub/stellio-context-broker
+    - id: 798662592
+      name: andrewdavidmackenzie/pigg
+    - id: 85242321
+      name: dotnet/MQTTnet
+    - id: 599623133
+      name: AltheaFoundation/althea-L1-docs
+    - id: 891921880
+      name: eclipse-mnestix/mnestix-browser
+    - id: 38644318
+      name: absmach/supermq
+    - id: 626668603
+      name: joshuar/go-hass-agent
+    - id: 337594329
+      name: pppscn/SmsForwarder
+    - id: 779693202
+      name: litinoveweedle/SmartIR
+    - id: 126682032
+      name: zwave-js/zwave-js
+    - id: 315620558
+      name: thingsboard/tbmq
+    - id: 188673259
+      name: RWTH-EBC/FiLiP
+    - id: 288849348
+      name: adafruit/Adafruit_Wippersnapper_Arduino
+    - id: 403656091
+      name: kellerza/sunsynk
+    - id: 856558260
+      name: skodaconnect/myskoda
+    - id: 208325027
+      name: justcallmekoko/ESP32Marauder
+    - id: 319316246
+      name: kuzzleio/kuzzle-device-manager
+    - id: 235378028
+      name: eclipse-zenoh/zenoh-c
+    - id: 16479425
+      name: owntracks/android
+    - id: 331701152
+      name: RomRider/apexcharts-card
+    - id: 826859753
+      name: UpstreamDataInc/goosebit
+    - id: 59224410
+      name: zarusz/SlimMessageBus
+    - id: 95903234
+      name: renode/renode
+    - id: 234790574
+      name: HASwitchPlate/openHASP
+    - id: 460598783
+      name: tuya-cloudcutter/tuya-cloudcutter
+    - id: 206387
+      name: apache/activemq
+    - id: 833401979
+      name: DoneTech-IoT/IoTPlatform
+    - id: 106746673
+      name: lora-rs/lora-rs
+    - id: 188391577
+      name: emqx/MQTTX
+    - id: 31425145
+      name: RaspAP/raspap-webgui
+    - id: 691567577
+      name: Azure/arc_jumpstart_docs
+    - id: 717644786
+      name: pvvx/ZigbeeTLc
+    - id: 548905325
+      name: tobiasfaust/SolaxModbusGateway
+    - id: 328461176
+      name: united-manufacturing-hub/united-manufacturing-hub
+    - id: 493488500
+      name: markniu/Bed_Distance_sensor
+    - id: 507481405
+      name: Laxilef/OTGateway
+    - id: 594469258
+      name: j-kaltes/Juggluco
+    - id: 355422624
+      name: sepfy/libpeer
+    - id: 36350782
+      name: vernemq/vernemq
+    - id: 253448453
+      name: airalab/robonomics.network
+    - id: 56644458
+      name: nxhack/openwrt-node-packages
+    - id: 107216551
+      name: Moddable-OpenSource/moddable
+    - id: 231329990
+      name: jetlinks/jetlinks-community
+    - id: 384466772
+      name: chirpstack/chirpstack
+    - id: 655275235
+      name: Dielee/volvo2mqtt
+    - id: 161507858
+      name: carbon-design-system/carbon-addons-iot-react
+    - id: 423942783
+      name: edgehog-device-manager/edgehog
+    - id: 151280062
+      name: kalkih/mini-graph-card
+    - id: 265219427
+      name: jetlinks/jetlinks-ui-vue
+    - id: 732052370
+      name: Azure/arc_jumpstart_drops
+    - id: 845731457
+      name: Azure/iot-operations-sdks
+    - id: 588032914
+      name: KouShenhai/KCloud-Platform-IoT
+    - id: 527469371
+      name: u236/homed-service-zigbee
+    - id: 202533650
+      name: OpenEVSE/openevse_esp32_firmware
+    - id: 171140341
+      name: ESPWortuhr/Multilayout-ESP-Wordclock
+    - id: 155628154
+      name: WildernessLabs/Meadow.Foundation
+    - id: 91191972
+      name: contiki-ng/contiki-ng
+    - id: 337235577
+      name: Azure/iot-hub-device-update
+    - id: 777202050
+      name: xyzroe/XZG
+    - id: 92336263
+      name: platformio/platformio-vscode-ide
+    - id: 406058893
+      name: fairecasoimeme/Zlinky_TIC
+    - id: 384518972
+      name: RedHatInsights/rhc
+    - id: 71359873
+      name: keylime/keylime
+    - id: 263516562
+      name: leondavi/NErlNet
+    - id: 351720449
+      name: autonomousvision/transfuser
+    - id: 793685930
+      name: thor0215/hassio-xfinity-usage
+    - id: 695977852
+      name: s-allius/tsun-gen3-proxy
+    - id: 697912478
+      name: aws-greengrass/aws-greengrass-lite
+    - id: 53928710
+      name: smarthomeNG/smarthome
+    - id: 33331247
+      name: cirosantilli/china-dictatorship
+    - id: 394207324
+      name: Edgenesis/shifu
+    - id: 201805130
+      name: custom-components/nordpool
+    - id: 483993196
+      name: s07641069/connectedhomeip
+    - id: 706171373
+      name: wot-oss/tmc
+    - id: 836477763
+      name: chrivers/bifrost
+    - id: 490231805
+      name: lamassuiot/lamassuiot
+    - id: 215238831
+      name: bytebeamio/rumqtt
+    - id: 322263570
+      name: u-blox/ubxlib
+    - id: 368186968
+      name: CANopenNode/CANopenEditor
+    - id: 138156699
+      name: simatec/ioBroker.backitup
+    - id: 608022069
+      name: open3e/open3e
+    - id: 876327247
+      name: jniebuhr/gaggimate
+    - id: 786984751
+      name: philippoo66/optolink-splitter
+    - id: 127251446
+      name: xirixiz/homeassistant-afvalwijzer
+    - id: 311230
+      name: mtconnect/cppagent
+    - id: 784939200
+      name: 5minds/node-red-contrib-processcube
+    - id: 198852178
+      name: Supergiovane/node-red-contrib-knx-ultimate
+    - id: 15802263
+      name: bblanchon/ArduinoJson
+    - id: 5169716
+      name: Screenly/Anthias
+    - id: 787032408
+      name: the-codegen-project/cli
+    - id: 109583684
+      name: zigbeefordomoticz/Domoticz-Zigbee
+    - id: 713070863
+      name: Azure-Samples/explore-iot-operations
+    - id: 120253126
+      name: zigpy/zigpy
+    - id: 32271212
+      name: SmingHub/Sming
+    - id: 16153672
+      name: node-opcua/node-opcua
+    - id: 41084349
+      name: kuzzleio/kuzzle
+    - id: 249370872
+      name: tedee-com/tedee-api-doc
+    - id: 49672452
+      name: theyosh/TerrariumPI
+    - id: 299628803
+      name: Cumulocity-IoT/cumulocity-dynamic-mapper
+    - id: 697428820
+      name: jlab-sensing/ENTS-node-firmware
+    - id: 333268038
+      name: bkbilly/lnxlink
+    - id: 161691980
+      name: esphome/aioesphomeapi
+    - id: 305089628
+      name: Serial-Studio/Serial-Studio
+    - id: 554655573
+      name: redboltz/async_mqtt
+    - id: 714782340
+      name: andrew-codes/playnite-web
+    - id: 253439868
+      name: plgd-dev/hub
+    - id: 597584935
+      name: MichelFR/MqDockerUp
+    - id: 160075573
+      name: pySmartThings/pysmartthings
+    - id: 34525124
+      name: Waboodoo/HTTP-Shortcuts
+    - id: 500625057
+      name: mihai-dinculescu/tapo
+    - id: 232316472
+      name: Jason2866/Tasmota
+    - id: 346080029
+      name: rmqtt/rmqtt
+    - id: 301526222
+      name: grafana/iot-sitewise-datasource
+    - id: 1569980
+      name: mqttjs/MQTT.js
+    - id: 175166970
+      name: Arnold-n/P1P2MQTT
+    - id: 383374342
+      name: thingsboard/flutter_thingsboard_pe_app
+    - id: 397588892
+      name: ESPresense/ESPresense
+    - id: 50594316
+      name: senx/warp10-platform
+    - id: 42249040
+      name: dotnet-bluetooth-le/dotnet-bluetooth-le
+    - id: 59845233
+      name: platformio/platform-ststm32
+    - id: 76129595
+      name: smarthomeNG/plugins
+    - id: 213378235
+      name: TOPLLab/WARDuino
+    - id: 209977108
+      name: mochi-mqtt/server
+    - id: 777146767
+      name: iory/riberry
+    - id: 533320462
+      name: ARM-software/psa-api
+    - id: 34815037
+      name: particle-iot/docs
+    - id: 340930420
+      name: softwarecrash/Solar2MQTT
+    - id: 428174451
+      name: bytebeamio/uplink
+    - id: 41995199
+      name: john30/ebusd
+    - id: 584240610
+      name: machbase/neo-server
+    - id: 570557896
+      name: ESPresense/ESPresense-companion
+    - id: 43075480
+      name: eclipse-californium/californium
+    - id: 329395509
+      name: CrowdStrike/falcon-helm
+    - id: 268571054
+      name: datakaveri/dx-resource-server
+    - id: 328812679
+      name: CrowdStrike/falcon-operator
+    - id: 290261325
+      name: basnijholt/adaptive-lighting
+    - id: 169880485
+      name: dgatf/msrc
+    - id: 838563127
+      name: ISPC-TST-FP-2024/proyecto-CGRH
+    - id: 236081697
+      name: ptcrealitylab/vuforia-spatial-toolbox-userinterface
+    - id: 189450801
+      name: smartrent/grizzly
+    - id: 617443112
+      name: SAIC-iSmart-API/saic-python-mqtt-gateway
+    - id: 124976393
+      name: oatpp/oatpp
+    - id: 803632522
+      name: modbus2mqtt/server
+    - id: 349738754
+      name: halfgaar/FlashMQ
+    - id: 527494455
+      name: Cosys-Lab/Cosys-AirSim
+    - id: 675699077
+      name: 4Subsea/smsfusion-python
+    - id: 279344506
+      name: zigbee-alliance/distributed-compliance-ledger
+    - id: 510948608
+      name: tier4/CalibrationTools
+    - id: 108903509
+      name: OceanDataTools/openrvdas
+    - id: 259331118
+      name: hjelev/rpi-mqtt-monitor
+    - id: 395132946
+      name: theengs/decoder
+    - id: 38644318
+      name: absmach/magistrala
+    - id: 421933521
+      name: Unity-Technologies/runtime
+    - id: 358585486
+      name: danieldotnl/ha-multiscrape
+    - id: 331597657
+      name: niceboygithub/AqaraGateway
+    - id: 244730447
+      name: ClusterDuck-Protocol/ClusterDuck-Protocol
+    - id: 472497355
+      name: MTrab/energidataservice
+    - id: 352284947
+      name: Minims/SomfyProtect2MQTT
+    - id: 897182009
+      name: Milesight-IoT/beaver-iot
+    - id: 323535558
+      name: Milesight-IoT/SensorDecoders
+    - id: 907553732
+      name: romasku/tuya-zigbee-switch
+    - id: 360942014
+      name: thingsboard/flutter_thingsboard_app
+    - id: 243737825
+      name: arjenhiemstra/ithowifi
+    - id: 275358034
+      name: itavero/homebridge-z2m
+    - id: 18909093
+      name: eclipse-wakaama/wakaama
+    - id: 752320504
+      name: and3rson/lilka
+    - id: 215634474
+      name: OpenInverterGateway/OpenInverterGateway
+    - id: 646719787
+      name: bifromqio/bifromq
+    - id: 45860898
+      name: eclipse/hawkbit
+    - id: 21134745
+      name: wolfSSL/wolfssh
+    - id: 883012705
+      name: 2425-4chif-syp/01-projekte-2025-4chif-syp-trench
