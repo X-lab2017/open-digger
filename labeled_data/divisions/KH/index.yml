@@ -1,4 +1,5 @@
 name: Cambodia
+name_zh: 柬埔寨
 type: Division-0
 meta:
   alpha2: KH
@@ -9,7 +10,6 @@ meta:
     - the Kingdom of Cambodia
     - 柬埔寨
   name_full: the Kingdom of Cambodia
-  name_zh: 柬埔寨
   developers:
     - year: 2020
       quarter: 1

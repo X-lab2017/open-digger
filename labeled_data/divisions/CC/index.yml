@@ -1,4 +1,5 @@
 name: Cocos (Keeling) Islands
+name_zh: 科科斯（基林）群岛
 type: Division-0
 meta:
   alpha2: CC
@@ -8,5 +9,4 @@ meta:
     - '166'
     - 科科斯（基林）群岛
   name_full: Cocos (Keeling) Islands
-  name_zh: 科科斯（基林）群岛
   developers: []

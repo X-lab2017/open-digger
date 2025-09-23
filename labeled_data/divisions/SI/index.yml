@@ -1,4 +1,5 @@
 name: Slovenia
+name_zh: 斯洛文尼亚
 type: Division-0
 meta:
   alpha2: SI
@@ -9,7 +10,6 @@ meta:
     - the Republic of Slovenia
     - 斯洛文尼亚
   name_full: the Republic of Slovenia
-  name_zh: 斯洛文尼亚
   developers:
     - year: 2020
       quarter: 1

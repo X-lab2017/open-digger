@@ -1,4 +1,5 @@
 name: Togo
+name_zh: 多哥
 type: Division-0
 meta:
   alpha2: TG
@@ -9,7 +10,6 @@ meta:
     - the Togolese Republic
     - 多哥
   name_full: the Togolese Republic
-  name_zh: 多哥
   developers:
     - year: 2020
       quarter: 1

@@ -1,4 +1,5 @@
 name: Iran, Islamic Republic of
+name_zh: 伊朗
 type: Division-0
 meta:
   alpha2: IR
@@ -10,7 +11,6 @@ meta:
     - 伊朗
     - Iran
   name_full: the Islamic Republic of Iran
-  name_zh: 伊朗
   developers:
     - year: 2020
       quarter: 1

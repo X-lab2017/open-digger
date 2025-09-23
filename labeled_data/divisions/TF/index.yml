@@ -1,4 +1,5 @@
 name: French Southern Territories
+name_zh: 法属南部领地
 type: Division-0
 meta:
   alpha2: TF
@@ -9,5 +10,4 @@ meta:
     - 法属南部领地
     - French Southern and Antarctic Lands
   name_full: French Southern Territories
-  name_zh: 法属南部领地
   developers: []

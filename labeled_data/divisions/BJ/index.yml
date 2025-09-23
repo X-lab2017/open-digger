@@ -1,4 +1,5 @@
 name: Benin
+name_zh: 贝宁
 type: Division-0
 meta:
   alpha2: BJ
@@ -10,7 +11,6 @@ meta:
     - 贝宁
     - Bénin
   name_full: the Republic of Benin
-  name_zh: 贝宁
   developers:
     - year: 2020
       quarter: 1

@@ -1,4 +1,5 @@
 name: Paraguay
+name_zh: 巴拉圭
 type: Division-0
 meta:
   alpha2: PY
@@ -9,7 +10,6 @@ meta:
     - the Republic of Paraguay
     - 巴拉圭
   name_full: the Republic of Paraguay
-  name_zh: 巴拉圭
   developers:
     - year: 2020
       quarter: 1

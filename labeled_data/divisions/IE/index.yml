@@ -1,4 +1,5 @@
 name: Ireland
+name_zh: 爱尔兰
 type: Division-0
 meta:
   alpha2: IE
@@ -8,7 +9,6 @@ meta:
     - '372'
     - 爱尔兰
   name_full: Ireland
-  name_zh: 爱尔兰
   developers:
     - year: 2020
       quarter: 1

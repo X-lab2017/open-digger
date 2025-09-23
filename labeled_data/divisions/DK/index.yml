@@ -1,4 +1,5 @@
 name: Denmark
+name_zh: 丹麦
 type: Division-0
 meta:
   alpha2: DK
@@ -9,7 +10,6 @@ meta:
     - the Kingdom of Denmark
     - 丹麦
   name_full: the Kingdom of Denmark
-  name_zh: 丹麦
   developers:
     - year: 2020
       quarter: 1

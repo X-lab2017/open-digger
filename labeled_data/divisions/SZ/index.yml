@@ -1,4 +1,5 @@
 name: Eswatini
+name_zh: 斯威士兰
 type: Division-0
 meta:
   alpha2: SZ
@@ -9,7 +10,6 @@ meta:
     - the Kingdom of Swaziland
     - 斯威士兰
   name_full: the Kingdom of Swaziland
-  name_zh: 斯威士兰
   developers:
     - year: 2020
       quarter: 1

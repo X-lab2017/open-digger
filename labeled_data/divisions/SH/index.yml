@@ -1,4 +1,5 @@
 name: Saint Helena, Ascension and Tristan da Cunha
+name_zh: 圣赫勒拿
 type: Division-0
 meta:
   alpha2: SH
@@ -9,7 +10,6 @@ meta:
     - Saint Helena
     - 圣赫勒拿
   name_full: Saint Helena
-  name_zh: 圣赫勒拿
   developers: []
 data:
   labels:

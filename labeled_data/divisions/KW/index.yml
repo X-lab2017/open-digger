@@ -1,4 +1,5 @@
 name: Kuwait
+name_zh: 科威特
 type: Division-0
 meta:
   alpha2: KW
@@ -9,7 +10,6 @@ meta:
     - he State of Kuwait
     - 科威特
   name_full: he State of Kuwait
-  name_zh: 科威特
   developers:
     - year: 2020
       quarter: 1

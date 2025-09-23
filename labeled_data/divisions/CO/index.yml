@@ -1,4 +1,5 @@
 name: Colombia
+name_zh: 哥伦比亚
 type: Division-0
 meta:
   alpha2: CO
@@ -9,7 +10,6 @@ meta:
     - the Republic of Colombia
     - 哥伦比亚
   name_full: the Republic of Colombia
-  name_zh: 哥伦比亚
   developers:
     - year: 2020
       quarter: 1

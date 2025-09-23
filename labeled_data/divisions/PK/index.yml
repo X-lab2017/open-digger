@@ -1,4 +1,5 @@
 name: Pakistan
+name_zh: 巴基斯坦
 type: Division-0
 meta:
   alpha2: PK
@@ -9,7 +10,6 @@ meta:
     - the Islamic Republic of Pakistan
     - 巴基斯坦
   name_full: the Islamic Republic of Pakistan
-  name_zh: 巴基斯坦
   developers:
     - year: 2020
       quarter: 1

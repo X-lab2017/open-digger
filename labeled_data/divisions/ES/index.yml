@@ -1,4 +1,5 @@
 name: Spain
+name_zh: 西班牙
 type: Division-0
 meta:
   alpha2: ES
@@ -9,7 +10,6 @@ meta:
     - the Kingdom of Spain
     - 西班牙
   name_full: the Kingdom of Spain
-  name_zh: 西班牙
   developers:
     - year: 2020
       quarter: 1

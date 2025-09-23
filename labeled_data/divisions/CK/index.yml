@@ -1,4 +1,5 @@
 name: Cook Islands
+name_zh: 库克群岛
 type: Division-0
 meta:
   alpha2: CK
@@ -8,7 +9,6 @@ meta:
     - '184'
     - 库克群岛
   name_full: Cook Islands
-  name_zh: 库克群岛
   developers:
     - year: 2021
       quarter: 2

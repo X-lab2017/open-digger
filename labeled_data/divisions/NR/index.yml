@@ -1,4 +1,5 @@
 name: Nauru
+name_zh: 瑙鲁
 type: Division-0
 meta:
   alpha2: NR
@@ -9,7 +10,6 @@ meta:
     - the Republic of Nauru
     - 瑙鲁
   name_full: the Republic of Nauru
-  name_zh: 瑙鲁
   developers: []
 data:
   labels:

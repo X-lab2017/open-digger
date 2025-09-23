@@ -1,4 +1,5 @@
 name: Micronesia, Federated States of
+name_zh: 密克罗尼西亚联邦
 type: Division-0
 meta:
   alpha2: FM
@@ -10,7 +11,6 @@ meta:
     - 密克罗尼西亚联邦
     - Micronesia
   name_full: the Federated States of Micronesia
-  name_zh: 密克罗尼西亚联邦
   developers:
     - year: 2020
       quarter: 1

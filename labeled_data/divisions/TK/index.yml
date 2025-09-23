@@ -1,4 +1,5 @@
 name: Tokelau
+name_zh: 托克劳
 type: Division-0
 meta:
   alpha2: TK
@@ -8,5 +9,4 @@ meta:
     - '772'
     - 托克劳
   name_full: Tokelau
-  name_zh: 托克劳
   developers: []

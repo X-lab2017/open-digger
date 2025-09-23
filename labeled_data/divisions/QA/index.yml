@@ -1,4 +1,5 @@
 name: Qatar
+name_zh: 卡塔尔
 type: Division-0
 meta:
   alpha2: QA
@@ -9,7 +10,6 @@ meta:
     - the State of Qatar
     - 卡塔尔
   name_full: the State of Qatar
-  name_zh: 卡塔尔
   developers:
     - year: 2020
       quarter: 1

@@ -1,4 +1,5 @@
 name: Saudi Arabia
+name_zh: 沙特阿拉伯
 type: Division-0
 meta:
   alpha2: SA
@@ -9,7 +10,6 @@ meta:
     - the Kingdom of Saudi Arabia
     - 沙特阿拉伯
   name_full: the Kingdom of Saudi Arabia
-  name_zh: 沙特阿拉伯
   developers:
     - year: 2020
       quarter: 1

@@ -1,4 +1,5 @@
 name: Bangladesh
+name_zh: 孟加拉国
 type: Division-0
 meta:
   alpha2: BD
@@ -9,7 +10,6 @@ meta:
     - the People's Republic of Bangladesh
     - 孟加拉国
   name_full: the People's Republic of Bangladesh
-  name_zh: 孟加拉国
   developers:
     - year: 2020
       quarter: 1

@@ -1,4 +1,5 @@
 name: Greenland
+name_zh: 格陵兰
 type: Division-0
 meta:
   alpha2: GL
@@ -8,7 +9,6 @@ meta:
     - '304'
     - 格陵兰
   name_full: Greenland
-  name_zh: 格陵兰
   developers:
     - year: 2020
       quarter: 1

@@ -1,4 +1,5 @@
 name: Saint Lucia
+name_zh: 圣卢西亚
 type: Division-0
 meta:
   alpha2: LC
@@ -8,7 +9,6 @@ meta:
     - '662'
     - 圣卢西亚
   name_full: Saint Lucia
-  name_zh: 圣卢西亚
   developers:
     - year: 2020
       quarter: 1

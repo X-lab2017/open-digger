@@ -1,4 +1,5 @@
 name: Peru
+name_zh: 秘鲁
 type: Division-0
 meta:
   alpha2: PE
@@ -9,7 +10,6 @@ meta:
     - the Republic of Peru
     - 秘鲁
   name_full: the Republic of Peru
-  name_zh: 秘鲁
   developers:
     - year: 2020
       quarter: 1

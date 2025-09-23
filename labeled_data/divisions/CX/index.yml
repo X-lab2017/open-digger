@@ -1,4 +1,5 @@
 name: Christmas Island
+name_zh: 圣诞岛
 type: Division-0
 meta:
   alpha2: CX
@@ -8,5 +9,4 @@ meta:
     - '162'
     - 圣诞岛
   name_full: Christmas Island
-  name_zh: 圣诞岛
   developers: []

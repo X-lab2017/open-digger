@@ -1,4 +1,5 @@
 name: Nepal
+name_zh: 尼泊尔
 type: Division-0
 meta:
   alpha2: NP
@@ -8,7 +9,6 @@ meta:
     - '524'
     - 尼泊尔
   name_full: Nepal
-  name_zh: 尼泊尔
   developers:
     - year: 2020
       quarter: 1

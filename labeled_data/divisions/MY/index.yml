@@ -1,4 +1,5 @@
 name: Malaysia
+name_zh: 马来西亚
 type: Division-0
 meta:
   alpha2: MY
@@ -8,7 +9,6 @@ meta:
     - '458'
     - 马来西亚
   name_full: Malaysia
-  name_zh: 马来西亚
   developers:
     - year: 2020
       quarter: 1

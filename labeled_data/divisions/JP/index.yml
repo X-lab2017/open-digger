@@ -1,4 +1,5 @@
 name: Japan
+name_zh: 日本
 type: Division-0
 meta:
   alpha2: JP
@@ -8,7 +9,6 @@ meta:
     - '392'
     - 日本
   name_full: Japan
-  name_zh: 日本
   developers:
     - year: 2020
       quarter: 1

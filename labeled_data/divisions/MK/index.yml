@@ -1,4 +1,5 @@
 name: North Macedonia
+name_zh: 北马其顿
 type: Division-0
 meta:
   alpha2: MK
@@ -9,7 +10,6 @@ meta:
     - the former Yugoslav Republic of Macedonia
     - 前南马其顿
   name_full: the former Yugoslav Republic of Macedonia
-  name_zh: 前南马其顿
   developers:
     - year: 2020
       quarter: 1

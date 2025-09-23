@@ -1,4 +1,5 @@
 name: Burkina Faso
+name_zh: 布基纳法索
 type: Division-0
 meta:
   alpha2: BF
@@ -8,7 +9,6 @@ meta:
     - '854'
     - 布基纳法索
   name_full: Burkina Faso
-  name_zh: 布基纳法索
   developers:
     - year: 2020
       quarter: 1

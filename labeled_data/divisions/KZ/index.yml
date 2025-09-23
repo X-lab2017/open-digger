@@ -1,4 +1,5 @@
 name: Kazakhstan
+name_zh: 哈萨克斯坦
 type: Division-0
 meta:
   alpha2: KZ
@@ -9,7 +10,6 @@ meta:
     - the Republic of Kazakhstan
     - 哈萨克斯坦
   name_full: the Republic of Kazakhstan
-  name_zh: 哈萨克斯坦
   developers:
     - year: 2020
       quarter: 1

@@ -1,4 +1,5 @@
 name: Mauritius
+name_zh: 毛里求斯
 type: Division-0
 meta:
   alpha2: MU
@@ -9,7 +10,6 @@ meta:
     - the Republic of Mauritius
     - 毛里求斯
   name_full: the Republic of Mauritius
-  name_zh: 毛里求斯
   developers:
     - year: 2020
       quarter: 1

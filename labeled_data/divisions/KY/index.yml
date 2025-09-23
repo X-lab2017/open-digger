@@ -1,4 +1,5 @@
 name: Cayman Islands
+name_zh: 开曼群岛
 type: Division-0
 meta:
   alpha2: KY
@@ -8,7 +9,6 @@ meta:
     - '136'
     - 开曼群岛
   name_full: Cayman Islands
-  name_zh: 开曼群岛
   developers:
     - year: 2020
       quarter: 1

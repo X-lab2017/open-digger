@@ -1,4 +1,5 @@
 name: Switzerland
+name_zh: 瑞士
 type: Division-0
 meta:
   alpha2: CH
@@ -9,7 +10,6 @@ meta:
     - the Swiss Confederation
     - 瑞士
   name_full: the Swiss Confederation
-  name_zh: 瑞士
   developers:
     - year: 2020
       quarter: 1

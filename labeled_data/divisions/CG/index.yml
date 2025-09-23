@@ -1,4 +1,5 @@
 name: Congo
+name_zh: 刚果（布）
 type: Division-0
 meta:
   alpha2: CG
@@ -10,7 +11,6 @@ meta:
     - 刚果（布）
     - Republic of the Congo
   name_full: the Republic of the Congo
-  name_zh: 刚果（布）
   developers:
     - year: 2020
       quarter: 1

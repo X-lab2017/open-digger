@@ -1,4 +1,5 @@
 name: Norway
+name_zh: 挪威
 type: Division-0
 meta:
   alpha2: 'NO'
@@ -9,7 +10,6 @@ meta:
     - the Kingdom of Norway
     - 挪威
   name_full: the Kingdom of Norway
-  name_zh: 挪威
   developers:
     - year: 2020
       quarter: 1

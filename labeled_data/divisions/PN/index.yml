@@ -1,4 +1,5 @@
 name: Pitcairn
+name_zh: 皮特凯恩群岛
 type: Division-0
 meta:
   alpha2: PN
@@ -8,5 +9,4 @@ meta:
     - '612'
     - 皮特凯恩
   name_full: Pitcairn
-  name_zh: 皮特凯恩
   developers: []

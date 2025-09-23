@@ -1,4 +1,5 @@
 name: Cyprus
+name_zh: 塞浦路斯
 type: Division-0
 meta:
   alpha2: CY
@@ -9,7 +10,6 @@ meta:
     - the Republic of Cyprus
     - 塞浦路斯
   name_full: the Republic of Cyprus
-  name_zh: 塞浦路斯
   developers:
     - year: 2020
       quarter: 1

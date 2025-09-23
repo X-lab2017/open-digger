@@ -1,4 +1,5 @@
 name: Antarctica
+name_zh: 南极洲
 type: Division-0
 meta:
   alpha2: AQ
@@ -8,5 +9,4 @@ meta:
     - '010'
     - 南极洲
   name_full: Antarctica
-  name_zh: 南极洲
   developers: []

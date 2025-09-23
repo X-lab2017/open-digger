@@ -1,4 +1,5 @@
 name: Italy
+name_zh: 意大利
 type: Division-0
 meta:
   alpha2: IT
@@ -9,7 +10,6 @@ meta:
     - the Republic of Italy
     - 意大利
   name_full: the Republic of Italy
-  name_zh: 意大利
   developers:
     - year: 2020
       quarter: 1

@@ -1,4 +1,5 @@
 name: Ukraine
+name_zh: 乌克兰
 type: Division-0
 meta:
   alpha2: UA
@@ -8,7 +9,6 @@ meta:
     - '804'
     - 乌克兰
   name_full: Ukraine
-  name_zh: 乌克兰
   developers:
     - year: 2020
       quarter: 1

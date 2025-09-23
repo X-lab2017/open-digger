@@ -1,4 +1,5 @@
 name: Guinea-Bissau
+name_zh: 几内亚比绍
 type: Division-0
 meta:
   alpha2: GW
@@ -9,7 +10,6 @@ meta:
     - the Republic of Guinea-Bissau
     - 几内亚比绍
   name_full: the Republic of Guinea-Bissau
-  name_zh: 几内亚比绍
   developers:
     - year: 2020
       quarter: 2

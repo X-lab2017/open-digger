@@ -1,4 +1,5 @@
 name: United States Minor Outlying Islands
+name_zh: 美国本土外小岛屿
 type: Division-0
 meta:
   alpha2: UM
@@ -8,7 +9,6 @@ meta:
     - '581'
     - 美国本土外小岛屿
   name_full: United States Minor Outlying Islands
-  name_zh: 美国本土外小岛屿
   developers: []
 data:
   labels:

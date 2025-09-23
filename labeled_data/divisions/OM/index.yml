@@ -1,4 +1,5 @@
 name: Oman
+name_zh: 阿曼
 type: Division-0
 meta:
   alpha2: OM
@@ -9,7 +10,6 @@ meta:
     - the Sultanate of Oman
     - 阿曼
   name_full: the Sultanate of Oman
-  name_zh: 阿曼
   developers:
     - year: 2020
       quarter: 1

@@ -1,4 +1,5 @@
 name: Saint Pierre and Miquelon
+name_zh: 圣皮埃尔和密克隆
 type: Division-0
 meta:
   alpha2: PM
@@ -8,7 +9,6 @@ meta:
     - '666'
     - 圣皮埃尔和密克隆
   name_full: Saint Pierre and Miquelon
-  name_zh: 圣皮埃尔和密克隆
   developers:
     - year: 2021
       quarter: 2

@@ -1,4 +1,5 @@
 name: United States of America
+name_zh: 美国
 type: Division-0
 meta:
   alpha2: US
@@ -10,7 +11,6 @@ meta:
     - 美国
     - United States
   name_full: the United States of America
-  name_zh: 美国
   developers:
     - year: 2020
       quarter: 1

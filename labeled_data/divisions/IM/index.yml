@@ -1,4 +1,5 @@
 name: Isle of Man
+name_zh: 马恩岛
 type: Division-0
 meta:
   alpha2: IM
@@ -8,7 +9,6 @@ meta:
     - '833'
     - 英国属地曼岛
   name_full: Isle of Man
-  name_zh: 英国属地曼岛
   developers:
     - year: 2020
       quarter: 1

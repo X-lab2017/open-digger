@@ -1,4 +1,5 @@
 name: Cameroon
+name_zh: 喀麦隆
 type: Division-0
 meta:
   alpha2: CM
@@ -9,7 +10,6 @@ meta:
     - the Republic of Cameroon
     - 喀麦隆
   name_full: the Republic of Cameroon
-  name_zh: 喀麦隆
   developers:
     - year: 2020
       quarter: 1

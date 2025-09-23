@@ -1,4 +1,5 @@
 name: Western Sahara
+name_zh: 西撒哈拉
 type: Division-0
 meta:
   alpha2: EH
@@ -8,5 +9,4 @@ meta:
     - '732'
     - 西撒哈拉
   name_full: Western Sahara
-  name_zh: 西撒哈拉
   developers: []

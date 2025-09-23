@@ -1,4 +1,5 @@
 name: Niue
+name_zh: 纽埃
 type: Division-0
 meta:
   alpha2: NU
@@ -9,5 +10,4 @@ meta:
     - the Republic of Niue
     - 纽埃
   name_full: the Republic of Niue
-  name_zh: 纽埃
   developers: []

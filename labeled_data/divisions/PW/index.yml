@@ -1,4 +1,5 @@
 name: Palau
+name_zh: 帕劳
 type: Division-0
 meta:
   alpha2: PW
@@ -9,7 +10,6 @@ meta:
     - the Republic of Palau
     - 帕劳
   name_full: the Republic of Palau
-  name_zh: 帕劳
   developers:
     - year: 2020
       quarter: 2

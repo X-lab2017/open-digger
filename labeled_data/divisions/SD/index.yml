@@ -1,4 +1,5 @@
 name: Sudan
+name_zh: 苏丹
 type: Division-0
 meta:
   alpha2: SD
@@ -9,7 +10,6 @@ meta:
     - the Republic of the Sudan
     - 苏丹
   name_full: the Republic of the Sudan
-  name_zh: 苏丹
   developers:
     - year: 2020
       quarter: 1

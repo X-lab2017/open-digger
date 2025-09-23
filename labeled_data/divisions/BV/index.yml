@@ -1,4 +1,5 @@
 name: Bouvet Island
+name_zh: 布韦岛
 type: Division-0
 meta:
   alpha2: BV
@@ -8,5 +9,4 @@ meta:
     - '074'
     - 布维岛
   name_full: Bouvet Island
-  name_zh: 布维岛
   developers: []

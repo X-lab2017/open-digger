@@ -1,4 +1,5 @@
 name: Viet Nam
+name_zh: 越南
 type: Division-0
 meta:
   alpha2: VN
@@ -10,7 +11,6 @@ meta:
     - 越南
     - Vietnam
   name_full: the Socialist Republic of Viet Nam
-  name_zh: 越南
   developers:
     - year: 2020
       quarter: 1

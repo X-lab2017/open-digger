@@ -1,4 +1,5 @@
 name: Holy See
+name_zh: 梵蒂冈
 type: Division-0
 meta:
   alpha2: VA
@@ -10,7 +11,6 @@ meta:
     - 梵蒂冈
     - Vatican City
   name_full: Holy See [Vatican City State]
-  name_zh: 梵蒂冈
   developers:
     - year: 2023
       quarter: 2

@@ -1,4 +1,5 @@
 name: Zambia
+name_zh: 赞比亚
 type: Division-0
 meta:
   alpha2: ZM
@@ -9,7 +10,6 @@ meta:
     - the Republic of Zambia
     - 赞比亚
   name_full: the Republic of Zambia
-  name_zh: 赞比亚
   developers:
     - year: 2020
       quarter: 1

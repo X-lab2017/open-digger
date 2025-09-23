@@ -1,4 +1,5 @@
 name: Marshall Islands
+name_zh: 马绍尔群岛
 type: Division-0
 meta:
   alpha2: MH
@@ -9,7 +10,6 @@ meta:
     - the Republic of the Marshall Islands
     - 马绍尔群岛
   name_full: the Republic of the Marshall Islands
-  name_zh: 马绍尔群岛
   developers:
     - year: 2020
       quarter: 2

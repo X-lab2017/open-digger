@@ -1,4 +1,5 @@
 name: Maldives
+name_zh: 马尔代夫
 type: Division-0
 meta:
   alpha2: MV
@@ -9,7 +10,6 @@ meta:
     - the Republic of Maldives
     - 马尔代夫
   name_full: the Republic of Maldives
-  name_zh: 马尔代夫
   developers:
     - year: 2020
       quarter: 1

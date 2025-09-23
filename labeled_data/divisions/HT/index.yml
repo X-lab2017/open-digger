@@ -1,4 +1,5 @@
 name: Haiti
+name_zh: 海地
 type: Division-0
 meta:
   alpha2: HT
@@ -10,7 +11,6 @@ meta:
     - 海地
     - Haïti
   name_full: the Republic of Haiti
-  name_zh: 海地
   developers:
     - year: 2020
       quarter: 1

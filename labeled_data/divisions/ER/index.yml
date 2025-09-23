@@ -1,4 +1,5 @@
 name: Eritrea
+name_zh: 厄立特里亚
 type: Division-0
 meta:
   alpha2: ER
@@ -8,7 +9,6 @@ meta:
     - '232'
     - 厄立特里亚
   name_full: Eritrea
-  name_zh: 厄立特里亚
   developers:
     - year: 2020
       quarter: 1

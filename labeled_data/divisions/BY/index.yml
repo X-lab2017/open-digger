@@ -1,4 +1,5 @@
 name: Belarus
+name_zh: 白俄罗斯
 type: Division-0
 meta:
   alpha2: BY
@@ -10,7 +11,6 @@ meta:
     - 白俄罗斯
     - Republic of Belarus
   name_full: the Republic of Belarus
-  name_zh: 白俄罗斯
   developers:
     - year: 2020
       quarter: 1

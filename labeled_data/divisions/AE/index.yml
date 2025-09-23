@@ -1,4 +1,5 @@
 name: United Arab Emirates
+name_zh: 阿拉伯联合酋长国
 type: Division-0
 meta:
   alpha2: AE
@@ -9,7 +10,6 @@ meta:
     - the United Arab Emirates
     - 阿联酋
   name_full: the United Arab Emirates
-  name_zh: 阿联酋
   developers:
     - year: 2020
       quarter: 1

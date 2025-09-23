@@ -1,4 +1,5 @@
 name: Belgium
+name_zh: 比利时
 type: Division-0
 meta:
   alpha2: BE
@@ -9,7 +10,6 @@ meta:
     - the Kingdom of Belgium
     - 比利时
   name_full: the Kingdom of Belgium
-  name_zh: 比利时
   developers:
     - year: 2020
       quarter: 1
