@@ -1,8 +1,6 @@
 name: Hubei University
+name_zh: 湖北大学
 type: University-0
-meta:
-  name_zh: 湖大
-  name_zh_full: 湖北大学
 data:
   labels:
     - os

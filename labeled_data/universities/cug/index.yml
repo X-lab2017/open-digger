@@ -1,8 +1,6 @@
 name: China University of Geosciences
+name_zh: 中国地质大学（武汉）
 type: University-0
-meta:
-  name_zh: 地大
-  name_zh_full: 中国地质大学（武汉）
 data:
   labels:
     - geohazard

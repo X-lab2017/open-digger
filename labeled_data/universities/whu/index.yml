@@ -1,8 +1,6 @@
 name: Wuhan University
+name_zh: 武汉大学
 type: University-0
-meta:
-  name_zh: 武大
-  name_zh_full: 武汉大学
 data:
   labels:
     - coding_open

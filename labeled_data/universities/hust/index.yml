@@ -1,8 +1,6 @@
 name: Huazhong University of Science and Technology
+name_zh: 华中科技大学
 type: University-0
-meta:
-  name_zh: 华科大
-  name_zh_full: 华中科技大学
 data:
   labels:
     - ai
