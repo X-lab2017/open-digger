@@ -108,11 +108,10 @@ const task: Task = {
     const exportBasePath = join(config.export.path);
 
     const exportMetrics = async () => {
-      // start to export data for all repos and actors
-      // split the sql into 40 pieces to avoid memory issue
-      const getPartition = async (type: 'User' | 'Repo'): Promise<Array<{ min: number, max: number }>> => {
+      const getPartition = async (type: 'User' | 'Repo', parts: number = 100): Promise<Array<{ min: number, max: number }>> => {
         const quantileArr: number[] = [];
-        for (let i = 0.01; i <= 0.99; i += 0.01) {
+        const step = 1 / parts;
+        for (let i = step; i < 1; i += step) {
           quantileArr.push(i);
         }
         const partitions: any[] = [];
@@ -260,7 +259,8 @@ const task: Task = {
         option.whereClause = `repo_id BETWEEN ${min} AND ${max} AND repo_id IN (SELECT id FROM ${exportRepoTableName})`;
         option.type = 'repo';
         // [X-lab index] repo activity
-        await processMetric(getRepoActivity, { ...option, options: { developerDetail: true } }, [getField('activity'), getField('details', { targetKey: 'activity_details', ...arrayFieldOption, parser: arr => arr.length <= 100 ? arr : arr.filter(i => i[1] >= 2) })]);
+        await processMetric(getRepoActivity, { ...option, options: { developerDetail: true } },
+          [getField('activity'), getField('details', { targetKey: 'activity_details', ...arrayFieldOption, parser: arr => arr.length <= 100 ? arr : arr.filter(i => i[1] >= 2) })]);
         // [X-lab index] repo openrank
         await processMetric(getRepoOpenrank, option, getField('openrank'));
         // [X-lab index] repo attention
@@ -320,6 +320,26 @@ const task: Task = {
       }
       logger.info('Process repo export task done.');
 
+      logger.info('Start to process repo brief export task.');
+      const repoBriefPartitions = await getPartition('Repo', 200);
+      for (let i = 0; i < repoBriefPartitions.length; i++) {
+        const { min, max } = repoBriefPartitions[i];
+        option.whereClause = `repo_id BETWEEN ${min} AND ${max}
+          AND (platform, repo_id) IN (SELECT platform, repo_id FROM global_openrank WHERE type='Repo' AND openrank > 3)`;
+        option.type = 'repo';
+        // [X-lab index] repo activity
+        await processMetric(getRepoActivity, { ...option, options: { developerDetail: false } }, getField('activity'));
+        // [X-lab index] repo openrank
+        await processMetric(getRepoOpenrank, option, getField('openrank'));
+        // [X-lab metric] repo participants
+        await processMetric(repoParticipants, option, getField('count', { targetKey: 'participants' }));
+        // [CHAOSS] contributors
+        await processMetric(chaossContributors, option, getField('count', { targetKey: 'contributors' }));
+        // [X-lab metric] repo stars
+        await processMetric(repoStars, option, getField('count', { targetKey: 'stars' }));
+        logger.info(`Process repo brief for round ${i} done.`);
+      }
+
       logger.info('Start to process user export task.');
       const userPartitions = await getPartition('User');
       for (let i = 0; i < userPartitions.length; i++) {
@@ -327,7 +347,8 @@ const task: Task = {
         option.whereClause = `actor_id BETWEEN ${min} AND ${max} AND actor_id IN (SELECT id FROM ${exportUserTableName})`;
         option.type = 'user';
         // user activity
-        await processMetric(getUserActivity, { ...option, options: { repoDetail: true } }, [...['activity', 'open_issue', 'issue_comment', 'open_pull', 'merged_pull', 'review_comment'].map(f => getField(f)), getField('details', { targetKey: 'activity_details', ...arrayFieldOption, parser: arr => arr.slice(0, 30) })]);
+        await processMetric(getUserActivity, { ...option, options: { repoDetail: false } },
+          [...['activity', 'open_issue', 'issue_comment', 'open_pull', 'merged_pull', 'review_comment'].map(f => getField(f))]);
         // user openrank
         await processMetric(getUserOpenrank, option, getField('openrank'));
         logger.info(`Process user for round ${i} done.`);
