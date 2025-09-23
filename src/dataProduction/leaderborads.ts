@@ -11,8 +11,7 @@ import { repoParticipants } from '../metrics/metrics';
   const labels = getLabelData();
   const defaultOption: QueryConfig = {
     startYear: 2024, startMonth: 7, endYear: 2025, endMonth: 6,
-    order: 'DESC', limit: 101, limitOption: 'all',
-    groupTimeRange: 'year', precision: 2,
+    order: 'DESC', limit: 101, limitOption: 'all', precision: 2,
   };
   const getLogoUrl = (id: string) => id ? `${openDiggerOssUrl}logos/${id.split(':')[1]}.png` : null;
   // @ts-ignore
