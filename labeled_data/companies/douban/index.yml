@@ -1,4 +1,5 @@
 name: Douban
+name_zh: 豆瓣
 type: Company
 data:
   platforms:
