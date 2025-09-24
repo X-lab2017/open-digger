@@ -1,10 +1,11 @@
 name: Raymah
-name_zh: 拉伊马省
+name_zh: 赖马省
 type: Division-1
 meta:
   alpha2: YE-RA
   includes:
     - raymah
+    - raimah
     - ye-ra
     - ra
     - raymah governorate

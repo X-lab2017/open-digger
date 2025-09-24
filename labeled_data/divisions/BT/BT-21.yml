@@ -1,10 +1,11 @@
 name: Tsirang
-name_zh: 措朗宗
+name_zh: 奇朗宗
 type: Division-1
 meta:
   alpha2: BT-21
   includes:
     - tsirang
+    - chirang
     - bt-21
     - '21'
     - tsirang district
