@@ -1,0 +1,57 @@
+name: Lago
+type: Company
+data:
+  platforms:
+  - name: GitHub
+    type: Code Hosting
+    repos:
+    - id: 464415161
+      name: getlago/lago
+    - id: 464425543
+      name: getlago/lago-front
+    - id: 464630029
+      name: getlago/lago-api
+    - id: 481514094
+      name: getlago/lago-docs
+    - id: 488181670
+      name: getlago/lago-ruby-client
+    - id: 491238814
+      name: getlago/lago-python-client
+    - id: 493260481
+      name: getlago/lago-nodejs-client
+    - id: 507932970
+      name: getlago/lago-stripe-qa
+    - id: 514931355
+      name: getlago/lago-go-client
+    - id: 530578236
+      name: getlago/activejob-traceable
+    - id: 531513007
+      name: getlago/lago-gotenberg
+    - id: 574917694
+      name: getlago/lago-openapi
+    - id: 587370260
+      name: getlago/lago-javascript-client
+    - id: 590028302
+      name: getlago/lago-csharp-client
+    - id: 590035993
+      name: getlago/lago-php-client
+    - id: 590037651
+      name: getlago/lago-rust-client
+    - id: 599436604
+      name: getlago/lago-java-client
+    - id: 604086654
+      name: getlago/lago-helm-charts
+    - id: 660092039
+      name: getlago/lago-doc
+    - id: 676947669
+      name: getlago/lago-ruby
+    - id: 709329252
+      name: getlago/clickhouse-activerecord
+    - id: 720895219
+      name: getlago/lago-pulumi
+    - id: 722625140
+      name: getlago/lago-sdk
+    - id: 863547836
+      name: getlago/turbine_service
+    - id: 870621894
+      name: getlago/lago-expression
