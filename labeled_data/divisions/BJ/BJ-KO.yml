@@ -1,9 +1,11 @@
 name: Couffo
+name_zh: 库福省
 type: Division-1
 meta:
   alpha2: BJ-KO
   includes:
     - couffo
+    - kouffo
     - bj-ko
     - ko
     - couffo department
