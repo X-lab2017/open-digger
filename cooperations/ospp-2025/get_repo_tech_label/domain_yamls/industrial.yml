@@ -1,0 +1,269 @@
+name: 工业软件
+type: Tech-21
+data:
+  platforms:
+  - name: GitHub
+    type: Code Hosting
+    repos:
+    - id: 19745004
+      name: odoo/odoo
+    - id: 5736080
+      name: FreeCAD/FreeCAD
+    - id: 1957456
+      name: Dolibarr/dolibarr
+    - id: 1864233
+      name: frappe/erpnext
+    - id: 43760104
+      name: metasfresh/metasfresh
+    - id: 1049088
+      name: openscad/openscad
+    - id: 299651802
+      name: espoon-voltti/evaka
+    - id: 38118370
+      name: verilog-to-routing/vtr-verilog-to-routing
+    - id: 8927606
+      name: frankframework/frankframework
+    - id: 20882412
+      name: OCA/sale-workflow
+    - id: 174708928
+      name: frangoteam/FUXA
+    - id: 20920616
+      name: OCA/l10n-spain
+    - id: 442197315
+      name: resilient-tech/india-compliance
+    - id: 122963675
+      name: idempiere/idempiere
+    - id: 250169028
+      name: gdsfactory/gdsfactory
+    - id: 189829392
+      name: ever-co/ever-gauzy
+    - id: 22908548
+      name: VodovozOrganization/Vodovoz
+    - id: 19951562
+      name: OCA/OpenUpgrade
+    - id: 173714958
+      name: steedos/steedos-platform
+    - id: 912263729
+      name: ardiansyah-sweng/erp_rpl
+    - id: 20895915
+      name: OCA/web
+    - id: 20882845
+      name: OCA/purchase-workflow
+    - id: 268810950
+      name: IRPTeam/IRP
+    - id: 1596580
+      name: LibreCAD/LibreCAD
+    - id: 485659788
+      name: VIENNA-Advantage-ERP-CRM/Official-VAStandard-ERP-CRM
+    - id: 20891076
+      name: OCA/stock-logistics-workflow
+    - id: 20894654
+      name: OCA/product-attribute
+    - id: 418911760
+      name: Easya-Solutions/dolibarr
+    - id: 500405519
+      name: AcharyaUniversity/AcharyaERP
+    - id: 530531608
+      name: ansys/pyansys-geometry
+    - id: 506989477
+      name: etendosoftware/etendo_core
+    - id: 20896532
+      name: OCA/server-tools
+    - id: 155099400
+      name: CadQuery/cadquery
+    - id: 757963356
+      name: eclipse-4diac/4diac-forte
+    - id: 378529353
+      name: emqx/neuron
+    - id: 20891354
+      name: OCA/stock-logistics-warehouse
+    - id: 7772312
+      name: kivitendo/kivitendo-erp
+    - id: 20881777
+      name: OCA/account-invoicing
+    - id: 39009740
+      name: OCA/social
+    - id: 20922147
+      name: OCA/partner-contact
+    - id: 522877749
+      name: inikoo/aiku
+    - id: 332685566
+      name: openfun/joanie
+    - id: 62729823
+      name: SCADA-LTS/Scada-LTS
+    - id: 841067032
+      name: Lost-Paradise-Project/Lost-Paradise
+    - id: 780875176
+      name: QodeFarm/cnl-backend
+    - id: 20894327
+      name: OCA/manufacture
+    - id: 132338773
+      name: LibreDWG/libredwg
+    - id: 339442017
+      name: storybuilder-org/StoryCAD
+    - id: 35604128
+      name: gismo/gismo
+    - id: 88370518
+      name: grocy/grocy
+    - id: 106387887
+      name: OCA/server-ux
+    - id: 136248488
+      name: OCA/field-service
+    - id: 20896145
+      name: OCA/project
+    - id: 23318823
+      name: Viindoo/odoo
+    - id: 32905910
+      name: solvespace/solvespace
+    - id: 336077693
+      name: DomCR/ACadSharp
+    - id: 733661878
+      name: atopile/atopile
+    - id: 727360417
+      name: betagouv/reno
+    - id: 246047362
+      name: DanWBR/dwsim
+    - id: 522877749
+      name: Inikoo-Ltd/aiku
+    - id: 20894219
+      name: OCA/multi-company
+    - id: 18471236
+      name: ledgersmb/LedgerSMB
+    - id: 247737613
+      name: Open-Cascade-SAS/OCCT
+    - id: 24946822
+      name: OCA/pos
+    - id: 122996980
+      name: timschofield/webERP
+    - id: 20882178
+      name: OCA/bank-payment
+    - id: 95011974
+      name: akaunting/akaunting
+    - id: 106394816
+      name: OCA/server-auth
+    - id: 189049798
+      name: OCA/helpdesk
+    - id: 20882197
+      name: OCA/account-reconcile
+    - id: 312191864
+      name: ishgroup/oncourse
+    - id: 20896181
+      name: OCA/contract
+    - id: 399456228
+      name: earthians/marley
+    - id: 63108821
+      name: Autodesk/synthesis
+    - id: 349122675
+      name: BRL-CAD/brlcad
+    - id: 9263296
+      name: NeoRazorX/facturascripts
+    - id: 104857648
+      name: compas-dev/compas
+    - id: 591898775
+      name: GeekCornerGH/status-page
+    - id: 16066774
+      name: ATM-Consulting/dolibarr
+    - id: 9817898
+      name: openeducat/openeducat_erp
+    - id: 703161047
+      name: MTDOJRP/docs
+    - id: 37735755
+      name: LibrePCB/LibrePCB
+    - id: 784161096
+      name: prusa3d/Prusa-Firmware-ESP32-Cam
+    - id: 134668469
+      name: zamtmn/zcad
+    - id: 539526271
+      name: andrewdwallo/erpsaas
+    - id: 88670779
+      name: GridSpace/grid-apps
+    - id: 20992391
+      name: OCA/reporting-engine
+    - id: 564591219
+      name: McMaster-Baja-Racing/Better-Data-Viewer
+    - id: 808433248
+      name: efeoneAcademy/versa_system
+    - id: 679553008
+      name: partcad/partcad
+    - id: 64474598
+      name: fougue/mayo
+    - id: 175920536
+      name: LabRedesCefetRJ/WeGIA
+    - id: 20893062
+      name: OCA/e-commerce
+    - id: 21203040
+      name: OCA/account-financial-reporting
+    - id: 248017816
+      name: NCAR/ADF
+    - id: 205963428
+      name: Mitchy25/erpnext
+    - id: 818339332
+      name: space-sunrise/lust-station
+    - id: 304981340
+      name: idurar/idurar-erp-crm
+    - id: 383749774
+      name: unfoldtoolbox/UnfoldMakie.jl
+    - id: 336567501
+      name: bropat/eufy-security-client
+    - id: 781211748
+      name: iota-uz/iota-sdk
+    - id: 4562820
+      name: libplctag/libplctag
+    - id: 331308072
+      name: Tampere/trevaka
+    - id: 8289504
+      name: frederic34/dolibarr
+    - id: 708492632
+      name: dune3d/dune3d
+    - id: 385950884
+      name: bldrs-ai/Share
+    - id: 442578034
+      name: MikaylaFischler/cc-mek-scada
+    - id: 760104830
+      name: prescient-design/lobster
+    - id: 208254556
+      name: OCA/wms
+    - id: 520844870
+      name: gouchere/Lymytz_Erp
+    - id: 579721483
+      name: gsohler/openscad
+    - id: 920995405
+      name: aureuserp/aureuserp
+    - id: 607548830
+      name: efeone/one_compliance
+    - id: 71813459
+      name: shopinvader/odoo-shopinvader
+    - id: 20891557
+      name: OCA/timesheet
+    - id: 511467713
+      name: OpenXE-org/OpenXE
+    - id: 430798206
+      name: NCAR/amwg_dev
+    - id: 81799714
+      name: apache/ofbiz-framework
+    - id: 23313699
+      name: tpaviot/pythonocc-core
+    - id: 872775739
+      name: tachybase/tachybase
+    - id: 584016836
+      name: xiangechen/chili3d
+    - id: 20891607
+      name: OCA/hr
+    - id: 75864770
+      name: realthunder/FreeCAD
+    - id: 142013463
+      name: gopcua/opcua
+    - id: 133899600
+      name: getrebuild/rebuild
+    - id: 683821095
+      name: shamiitltd/edu.shamiit.org
+    - id: 15457787
+      name: abap2xlsx/abap2xlsx
+    - id: 389974684
+      name: SMEWebify/WebErpMesv2
+    - id: 61285145
+      name: svenhb/GRBL-Plotter
+    - id: 252126563
+      name: FriendsOfCADability/CADability
+    - id: 136604983
+      name: CadQuery/CQ-editor

@@ -1,0 +1,1095 @@
+name: RISC-V 与硬件
+type: Tech-19
+data:
+  platforms:
+  - name: GitHub
+    type: Code Hosting
+    repos:
+    - id: 65600975
+      name: pytorch/pytorch
+    - id: 59771425
+      name: zephyrproject-rtos/zephyr
+    - id: 601205363
+      name: tenstorrent/tt-metal
+    - id: 244694174
+      name: project-chip/connectedhomeip
+    - id: 463628495
+      name: pytorch/executorch
+    - id: 228103273
+      name: apache/nuttx
+    - id: 60667730
+      name: lvgl/lvgl
+    - id: 90506918
+      name: rapidsai/cudf
+    - id: 568085558
+      name: AuxXxilium/arc
+    - id: 464909502
+      name: huggingface/optimum-habana
+    - id: 296416761
+      name: NVIDIA/cccl
+    - id: 15337142
+      name: micropython/micropython
+    - id: 271929004
+      name: OpenXiangShan/XiangShan
+    - id: 448599559
+      name: deepflowio/deepflow
+    - id: 46374199
+      name: IntelRealSense/librealsense
+    - id: 29933948
+      name: fluent/fluent-bit
+    - id: 131810578
+      name: GEOS-DEV/GEOS
+    - id: 634643296
+      name: hackclub/OnBoard
+    - id: 539057023
+      name: NVIDIA/TransformerEngine
+    - id: 531220682
+      name: DiceDB/dice
+    - id: 7408108
+      name: RT-Thread/rt-thread
+    - id: 21663285
+      name: chapel-lang/chapel
+    - id: 395140743
+      name: skypilot-org/skypilot
+    - id: 475553026
+      name: ghostty-org/ghostty
+    - id: 66823715
+      name: intel-analytics/ipex-llm
+    - id: 264043501
+      name: NVIDIA/spark-rapids
+    - id: 148686316
+      name: gfx-rs/wgpu
+    - id: 429554022
+      name: esp-rs/esp-hal
+    - id: 600246354
+      name: seerge/g-helper
+    - id: 135623245
+      name: thesofproject/sof
+    - id: 151636194
+      name: triton-inference-server/server
+    - id: 235860204
+      name: microsoft/DeepSpeed
+    - id: 135502094
+      name: Xilinx/XRT
+    - id: 70746484
+      name: apache/tvm
+    - id: 795166961
+      name: pr3y/Bruce
+    - id: 71056775
+      name: kovidgoyal/kitty
+    - id: 66166069
+      name: adafruit/circuitpython
+    - id: 118652371
+      name: openhwgroup/cva6
+    - id: 531380835
+      name: k2-fsa/sherpa-onnx
+    - id: 66823715
+      name: intel/ipex-llm
+    - id: 112542515
+      name: NVIDIA/cutlass
+    - id: 615869301
+      name: mudler/LocalAI
+    - id: 461330861
+      name: risc0/risc0
+    - id: 799049436
+      name: gpustack/gpustack
+    - id: 636004047
+      name: SynthstromAudible/DelugeFirmware
+    - id: 104806923
+      name: MakieOrg/Makie.jl
+    - id: 7885934
+      name: xLightsSequencer/xLights
+    - id: 611226044
+      name: ingonyama-zk/icicle
+    - id: 70124554
+      name: lablup/backend.ai
+    - id: 135768037
+      name: NVIDIA/DALI
+    - id: 727489129
+      name: succinctlabs/sp1
+    - id: 592505297
+      name: Enterprise-CMCS/macpro-mako
+    - id: 17035121
+      name: analogdevicesinc/hdl
+    - id: 520357130
+      name: haosulab/ManiSkill
+    - id: 823484490
+      name: sipeed/NanoKVM
+    - id: 385408663
+      name: pytorch/torchrec
+    - id: 32219677
+      name: MichaIng/DietPi
+    - id: 924058625
+      name: vllm-project/vllm-ascend
+    - id: 80689539
+      name: riscv/riscv-isa-manual
+    - id: 38118370
+      name: verilog-to-routing/vtr-verilog-to-routing
+    - id: 128132891
+      name: ROCm/pytorch
+    - id: 669331976
+      name: flashinfer-ai/flashinfer
+    - id: 501385974
+      name: themactep/thingino-firmware
+    - id: 36428094
+      name: tock/tock
+    - id: 721217347
+      name: rapidsai/cuvs
+    - id: 696933770
+      name: oneapi-src/unified-memory-framework
+    - id: 51980455
+      name: alacritty/alacritty
+    - id: 226408450
+      name: neovide/neovide
+    - id: 136505169
+      name: tinygo-org/tinygo
+    - id: 783091980
+      name: EnzymeAD/Reactant.jl
+    - id: 195173710
+      name: calyxir/calyx
+    - id: 932314
+      name: tenzir/tenzir
+    - id: 444377346
+      name: dstackai/dstack
+    - id: 268350681
+      name: Rem0o/FanControl.Releases
+    - id: 34695562
+      name: chipsalliance/chisel
+    - id: 235860204
+      name: deepspeedai/DeepSpeed
+    - id: 170021740
+      name: probe-rs/probe-rs
+    - id: 152878952
+      name: CliMA/Oceananigans.jl
+    - id: 189285554
+      name: exelban/stats
+    - id: 150626842
+      name: ECP-WarpX/WarpX
+    - id: 342120988
+      name: earlephilhower/arduino-pico
+    - id: 159356599
+      name: riscv/sail-riscv
+    - id: 72523920
+      name: cupy/cupy
+    - id: 378795568
+      name: sony/model_optimization
+    - id: 277556169
+      name: PennyLaneAI/pennylane-lightning
+    - id: 75413130
+      name: isl-org/Open3D
+    - id: 471527576
+      name: NVIDIA/warp
+    - id: 234613059
+      name: truenas/documentation
+    - id: 250622820
+      name: celeritas-project/celeritas
+    - id: 705428944
+      name: NVIDIA/bionemo-framework
+    - id: 81512059
+      name: gpuweb/gpuweb
+    - id: 698678789
+      name: aws-samples/awsome-distributed-training
+    - id: 765195418
+      name: siderolabs/omni
+    - id: 546129875
+      name: raphamorim/rio
+    - id: 827956328
+      name: riscv-software-src/riscv-unified-db
+    - id: 3030065
+      name: gnuradio/gnuradio
+    - id: 228103139
+      name: apache/nuttx-apps
+    - id: 129527056
+      name: jotego/jtcores
+    - id: 10651005
+      name: cocotb/cocotb
+    - id: 324254942
+      name: TraceMachina/nativelink
+    - id: 152616802
+      name: rapidsai/cuml
+    - id: 250169028
+      name: gdsfactory/gdsfactory
+    - id: 815155760
+      name: tracel-ai/cubecl
+    - id: 971513379
+      name: hackclub/highway
+    - id: 100711978
+      name: btcpayserver/btcpayserver
+    - id: 241307936
+      name: qiboteam/qibo
+    - id: 5241312
+      name: halide/Halide
+    - id: 10178188
+      name: openmm/openmm
+    - id: 157752451
+      name: rapidsai/cugraph
+    - id: 706782581
+      name: rdkcentral/rdk-halif-test-device_settings
+    - id: 751446221
+      name: rackerlabs/understack
+    - id: 11764461
+      name: ComputationalRadiationPhysics/picongpu
+    - id: 78669859
+      name: QMCPACK/qmcpack
+    - id: 590134721
+      name: axoflow/axosyslog
+    - id: 97248567
+      name: brucefan1983/GPUMD
+    - id: 793866369
+      name: bluewave-labs/Checkmate
+    - id: 267223745
+      name: oneapi-src/oneAPI-samples
+    - id: 686920393
+      name: KeystoneHQ/keystone3-firmware
+    - id: 788627595
+      name: intel/graph-compiler
+    - id: 51292491
+      name: NixOS/nixos-hardware
+    - id: 189206704
+      name: Devsh-Graphics-Programming/Nabla
+    - id: 473126327
+      name: qilimanjaro-tech/qililab
+    - id: 493612380
+      name: telink-semi/zephyr
+    - id: 873850510
+      name: TexasInstruments/processor-sdk-doc
+    - id: 682146715
+      name: Lilypad-Tech/lilypad
+    - id: 387786881
+      name: huggingface/optimum
+    - id: 134407560
+      name: RainbowMiner/RainbowMiner
+    - id: 1335680
+      name: blackmagic-debug/blackmagic
+    - id: 689172674
+      name: kaito-project/kaito
+    - id: 63732479
+      name: riscv-collab/riscv-openocd
+    - id: 490368464
+      name: kernelkit/infix
+    - id: 17371412
+      name: h2oai/h2o-3
+    - id: 29812153
+      name: SpinalHDL/SpinalHDL
+    - id: 198475661
+      name: MFlowCode/MFC
+    - id: 528328355
+      name: modal-labs/modal-examples
+    - id: 140986400
+      name: AdaptiveCpp/AdaptiveCpp
+    - id: 99942769
+      name: LibreHardwareMonitor/LibreHardwareMonitor
+    - id: 172803655
+      name: NVIDIA/gpu-operator
+    - id: 567483826
+      name: skot/ESP-Miner
+    - id: 320398696
+      name: siliconcompiler/siliconcompiler
+    - id: 738776129
+      name: intel/auto-round
+    - id: 676419965
+      name: zilliztech/knowhere
+    - id: 292883193
+      name: IntelPython/dpnp
+    - id: 1300564
+      name: lattice/quda
+    - id: 189070140
+      name: Xiangyu-Hu/SPHinXsys
+    - id: 372437728
+      name: y-scope/clp
+    - id: 54585666
+      name: devitocodes/devito
+    - id: 172703996
+      name: spcl/dace
+    - id: 133808899
+      name: helmholtz-analytics/heat
+    - id: 108329371
+      name: fastmachinelearning/hls4ml
+    - id: 524145041
+      name: PyLabRobot/pylabrobot
+    - id: 2715244
+      name: nickg/nvc
+    - id: 608574787
+      name: SEKOIA-IO/automation-library
+    - id: 364867193
+      name: qiboteam/qibolab
+    - id: 707007021
+      name: Tencent/tgfx
+    - id: 682088136
+      name: bluesky/ophyd-async
+    - id: 2276287
+      name: riscv-software-src/riscv-isa-sim
+    - id: 39145413
+      name: Freescale/meta-freescale
+    - id: 739559007
+      name: riscv/riscv-cheri
+    - id: 329806615
+      name: openhwgroup/cvw
+    - id: 509680851
+      name: sspanak/tt9
+    - id: 184146705
+      name: input-output-hk/cardano-js-sdk
+    - id: 3721224
+      name: nolimits4web/swiper
+    - id: 751640942
+      name: tenstorrent/pytorch2.0_ttnn
+    - id: 154525111
+      name: signalwire/freeswitch
+    - id: 63999998
+      name: kubernetes-sigs/node-feature-discovery
+    - id: 33078138
+      name: embox/embox
+    - id: 198344153
+      name: dfinity/sdk
+    - id: 438722274
+      name: CliMA/ClimaLand.jl
+    - id: 488002779
+      name: NVIDIA/open-gpu-kernel-modules
+    - id: 745992510
+      name: tenstorrent/tt-umd
+    - id: 7815213
+      name: openpnp/openpnp
+    - id: 560906185
+      name: ecmwf-ifs/loki
+    - id: 940296815
+      name: deepbeepmeep/Wan2GP
+    - id: 860104567
+      name: xlsynth/bedrock-rtl
+    - id: 466161961
+      name: Enterprise-CMCS/macpro-mdct-mcr
+    - id: 910061041
+      name: remsky/Kokoro-FastAPI
+    - id: 533322185
+      name: opendatahub-io/notebooks
+    - id: 44407454
+      name: geopm/geopm
+    - id: 410435607
+      name: pyscf/gpu4pyscf
+    - id: 445614410
+      name: esl-epfl/x-heep
+    - id: 61721573
+      name: jens-maus/RaspberryMatic
+    - id: 140494324
+      name: Xilinx/brevitas
+    - id: 23780138
+      name: riscv-collab/riscv-gnu-toolchain
+    - id: 95700338
+      name: kubeflow/training-operator
+    - id: 662956038
+      name: gchq/coreax
+    - id: 406542788
+      name: NVIDIA/MatX
+    - id: 94702367
+      name: pdfcpu/pdfcpu
+    - id: 143831524
+      name: intel/scikit-learn-intelex
+    - id: 693809511
+      name: utmstack/UTMStack
+    - id: 45734719
+      name: enjoy-digital/litex
+    - id: 238835562
+      name: quokka-astro/quokka
+    - id: 113349904
+      name: CEED/libCEED
+    - id: 46439446
+      name: ghdl/ghdl
+    - id: 304892612
+      name: ilya-zlobintsev/LACT
+    - id: 4470435
+      name: mapstruct/mapstruct
+    - id: 255966443
+      name: linebender/vello
+    - id: 208804714
+      name: pikvm/pikvm
+    - id: 143831524
+      name: uxlfoundation/scikit-learn-intelex
+    - id: 866304035
+      name: waterloo-rocketry/cansw_processor_canards
+    - id: 383059042
+      name: OpenXiangShan/difftest
+    - id: 843471391
+      name: leptonai/gpud
+    - id: 139168534
+      name: Xilinx/finn
+    - id: 795179935
+      name: Enterprise-CMCS/macpro-mdct-hcbs
+    - id: 525887953
+      name: synnaxlabs/synnax
+    - id: 24217298
+      name: logisim-evolution/logisim-evolution
+    - id: 474883764
+      name: mind-inria/mri-nufft
+    - id: 299356439
+      name: Enterprise-CMCS/cmcs-eregulations
+    - id: 95700338
+      name: kubeflow/trainer
+    - id: 794973014
+      name: patientx/ComfyUI-Zluda
+    - id: 71811858
+      name: ucb-bar/chipyard
+    - id: 643393928
+      name: NascentCore/3k
+    - id: 17724730
+      name: 2factorauth/twofactorauth
+    - id: 48713776
+      name: nion-software/nionswift
+    - id: 161444705
+      name: grumpycoders/pcsx-redux
+    - id: 183315216
+      name: Cytnx-dev/Cytnx
+    - id: 567483826
+      name: bitaxeorg/ESP-Miner
+    - id: 274442284
+      name: stnolting/neorv32
+    - id: 826984591
+      name: intel/AI-Playground
+    - id: 232916517
+      name: chipsalliance/Cores-VeeR-EL2
+    - id: 61130280
+      name: rwth-i6/returnn
+    - id: 602320913
+      name: intel/intel-technology-enabling-for-openshift
+    - id: 858639154
+      name: zml/zml
+    - id: 575770340
+      name: veryl-lang/veryl
+    - id: 758923102
+      name: software-mansion/TypeGPU
+    - id: 212488700
+      name: pytorch/serve
+    - id: 150626842
+      name: BLAST-WarpX/warpx
+    - id: 335799265
+      name: simdutf/simdutf
+    - id: 206801089
+      name: JuliaGPU/CUDA.jl
+    - id: 111158319
+      name: intel/media-driver
+    - id: 11172497
+      name: clash-lang/clash-compiler
+    - id: 688186076
+      name: leptonai/leptonai
+    - id: 598267148
+      name: bytedance/byteir
+    - id: 362356367
+      name: pschatzmann/arduino-audio-tools
+    - id: 228700796
+      name: kartben/zephyr
+    - id: 298353384
+      name: OpenVisualCloud/Media-Transport-Library
+    - id: 43475440
+      name: sstsimulator/sst-elements
+    - id: 615220314
+      name: jaxleyverse/jaxley
+    - id: 45703884
+      name: olikraus/u8g2
+    - id: 395039200
+      name: NVIDIA/dcgm-exporter
+    - id: 297822341
+      name: rapidstream-org/rapidstream-tapa
+    - id: 427166323
+      name: gyroflow/gyroflow
+    - id: 101807844
+      name: Xilinx/RapidWright
+    - id: 97556265
+      name: catboost/catboost
+    - id: 577182964
+      name: sovity/edc-ce
+    - id: 652823055
+      name: ROCm/rocDecode
+    - id: 104208128
+      name: PaddlePaddle/Paddle-Lite
+    - id: 276901861
+      name: sktime/pytorch-forecasting
+    - id: 143147942
+      name: YosysHQ/nextpnr
+    - id: 304615451
+      name: sysprog21/rv32emu
+    - id: 218508059
+      name: team-telnyx/freeswitch
+    - id: 465199162
+      name: os-fpga/Raptor
+    - id: 652088432
+      name: yuri-panchul/basics-graphics-music
+    - id: 2997204
+      name: openwall/john
+    - id: 1068018
+      name: paparazzi/paparazzi
+    - id: 224885491
+      name: openhwgroup/core-v-verif
+    - id: 409345141
+      name: UpstreamData/pyasic
+    - id: 472190973
+      name: LuxDL/Lux.jl
+    - id: 282197614
+      name: airgradienthq/arduino
+    - id: 45614485
+      name: ROCm/Tensile
+    - id: 485481453
+      name: fastplotlib/fastplotlib
+    - id: 588277066
+      name: NVIDIA/gpu-driver-container
+    - id: 703921209
+      name: exasim-project/NeoFOAM
+    - id: 350703967
+      name: xsuite/xtrack
+    - id: 603354617
+      name: cnlohr/ch32v003fun
+    - id: 269544601
+      name: remote-android/redroid-doc
+    - id: 342315688
+      name: Enterprise-CMCS/macpro-mdct-qmr
+    - id: 718542341
+      name: fxsound2/fxsound-app
+    - id: 19606299
+      name: platformio/platformio-core
+    - id: 191779319
+      name: rapidsai/raft
+    - id: 67452779
+      name: Dallinger/Dallinger
+    - id: 770690133
+      name: ruyisdk/support-matrix
+    - id: 659205972
+      name: kroma-network/tachyon
+    - id: 309941280
+      name: ariel-os/ariel-os
+    - id: 316342881
+      name: Dasharo/docs
+    - id: 279842328
+      name: IntelPython/dpctl
+    - id: 781086664
+      name: sift-stack/sift
+    - id: 5101141
+      name: jqlang/jq
+    - id: 480949376
+      name: riscv-non-isa/riscv-iommu
+    - id: 669293965
+      name: cornell-zhang/allo
+    - id: 468027705
+      name: kuznia-rdzeni/coreblocks
+    - id: 26217535
+      name: alpaka-group/alpaka
+    - id: 680486291
+      name: IPPL-framework/ippl
+    - id: 36759907
+      name: graphistry/pygraphistry
+    - id: 721394826
+      name: RIT-Launch-Initiative/FSW
+    - id: 798662592
+      name: andrewdavidmackenzie/pigg
+    - id: 488906115
+      name: hz-b/rayx
+    - id: 851997597
+      name: google-ai-edge/LiteRT
+    - id: 720968026
+      name: intel/neural-speed
+    - id: 72926839
+      name: grame-cncm/faust
+    - id: 589378383
+      name: efabless/openlane2
+    - id: 477094400
+      name: waltsims/k-wave-python
+    - id: 245292084
+      name: oneapi-src/oneMKL
+    - id: 43225113
+      name: mikefarah/yq
+    - id: 191186049
+      name: Mellanox/rshim-user-space
+    - id: 429813020
+      name: koide3/glim
+    - id: 409128272
+      name: euzu/m3u-filter
+    - id: 590618227
+      name: tompi/cheapino
+    - id: 707226109
+      name: riscv-non-isa/riscv-external-debug-security
+    - id: 798146281
+      name: chili-chips-ba/openCologne
+    - id: 118316091
+      name: GlasgowEmbedded/glasgow
+    - id: 162634193
+      name: spacetelescope/catkit2
+    - id: 778157506
+      name: sabamdarif/termux-desktop
+    - id: 72425875
+      name: intel/pcm
+    - id: 67768325
+      name: zeux/meshoptimizer
+    - id: 768391836
+      name: drexjj/sbitx
+    - id: 946310728
+      name: tenstorrent/tt-zephyr-platforms
+    - id: 531413954
+      name: pulp-platform/cheshire
+    - id: 749603971
+      name: ni/semi-test-library-dotnet
+    - id: 326499811
+      name: Blockstream/Jade
+    - id: 714392906
+      name: ubopod/ubo_app
+    - id: 262279120
+      name: JuliaGPU/Metal.jl
+    - id: 186746473
+      name: limine-bootloader/limine
+    - id: 418538729
+      name: Ulm-IQO/qudi-iqo-modules
+    - id: 769344268
+      name: hackclub/the-trail
+    - id: 95903234
+      name: renode/renode
+    - id: 893699795
+      name: open-vela/frameworks_bluetooth
+    - id: 199064632
+      name: open-atmos/PySDM
+    - id: 798980985
+      name: quic/fastrpc
+    - id: 357105872
+      name: graphnet-team/graphnet
+    - id: 521191759
+      name: ProjectPhysX/FluidX3D
+    - id: 135489692
+      name: LeelaChessZero/lc0
+    - id: 887506816
+      name: sparcians/atlas
+    - id: 134288850
+      name: riscv-non-isa/riscv-trace-spec
+    - id: 553133342
+      name: oss-slu/Pi4Micronaut
+    - id: 626059546
+      name: riscv/riscv-smmtt
+    - id: 924059323
+      name: vllm-project/vllm-spyre
+    - id: 538359993
+      name: tillitis/tillitis-key1
+    - id: 190549724
+      name: BitBoxSwiss/bitbox02-firmware
+    - id: 83160811
+      name: littlefs-project/littlefs
+    - id: 105299354
+      name: intel/compute-runtime
+    - id: 621521356
+      name: intel/rohd-hcl
+    - id: 63755042
+      name: Novum/vkQuake
+    - id: 509476994
+      name: 117HD/RLHD
+    - id: 65180686
+      name: MEGA65/mega65-core
+    - id: 717644786
+      name: pvvx/ZigbeeTLc
+    - id: 677847575
+      name: withcatai/node-llama-cpp
+    - id: 597208139
+      name: atsign-foundation/at_c
+    - id: 308172757
+      name: elixir-nx/nx
+    - id: 725429681
+      name: onnx/turnkeyml
+    - id: 26829379
+      name: VUnit/vunit
+    - id: 684662328
+      name: HyperInspire/InspireFace
+    - id: 228486057
+      name: pygfx/wgpu-py
+    - id: 74834622
+      name: nanoframework/nf-interpreter
+    - id: 263754522
+      name: TerosTechnology/vscode-terosHDL
+    - id: 537639358
+      name: coreylowman/cudarc
+    - id: 950268214
+      name: google-deepmind/mujoco_warp
+    - id: 384153162
+      name: ska-sa/katgpucbf
+    - id: 226973898
+      name: NVIDIA/cuCollections
+    - id: 147663007
+      name: glotzerlab/hoomd-blue
+    - id: 709906153
+      name: ratgdo/homekit-ratgdo
+    - id: 767436076
+      name: pulp-platform/astral
+    - id: 447431749
+      name: uw-midsun/fwxv
+    - id: 162182953
+      name: Qiskit/qiskit-aer
+    - id: 51361989
+      name: FPGAwars/apio
+    - id: 731792347
+      name: riscv-non-isa/riscv-rpmi
+    - id: 780645077
+      name: dec05eba/gpu-screen-recorder-issues
+    - id: 525061814
+      name: riscv-software-src/riscv-perf-model
+    - id: 452809222
+      name: djeedai/bevy_hanabi
+    - id: 196389968
+      name: hanatos/vkdt
+    - id: 784844690
+      name: mlcommons/cm4mlops
+    - id: 312038875
+      name: zephyrproject-rtos/hal_espressif
+    - id: 9062266
+      name: EttusResearch/uhd
+    - id: 225425551
+      name: broadinstitute/palantir-workflows
+    - id: 711963222
+      name: bzkf/obds-to-fhir
+    - id: 68347823
+      name: purduesigbots/pros
+    - id: 208408394
+      name: fwupd/firmware-lenovo
+    - id: 729847803
+      name: CharlyCst/miralis
+    - id: 14734876
+      name: deeplearning4j/deeplearning4j
+    - id: 92336263
+      name: platformio/platformio-vscode-ide
+    - id: 603354617
+      name: cnlohr/ch32fun
+    - id: 21307203
+      name: freerouting/freerouting
+    - id: 482055059
+      name: neurobionics/opensourceleg
+    - id: 770586190
+      name: open-logic/open-logic
+    - id: 291543462
+      name: sysprog21/shecc
+    - id: 4359038
+      name: allegro/ralph
+    - id: 296369718
+      name: IBM/aihwkit
+    - id: 552787159
+      name: consenlabs/token-core-monorepo
+    - id: 196650246
+      name: analogdevicesinc/pyadi-iio
+    - id: 211133953
+      name: trabucayre/openFPGALoader
+    - id: 114167580
+      name: ROCm/rocPRIM
+    - id: 69863074
+      name: arbor-sim/arbor
+    - id: 501070184
+      name: SpartanJ/ecode
+    - id: 7960131
+      name: diku-dk/futhark
+    - id: 25889802
+      name: arrayfire/arrayfire
+    - id: 226399669
+      name: Enterprise-CMCS/macpro-mdct-carts
+    - id: 733561337
+      name: HabanaAI/optimum-habana-fork
+    - id: 48029439
+      name: roc-streaming/roc-toolkit
+    - id: 243560772
+      name: IObundle/iob-soc
+    - id: 37735755
+      name: LibrePCB/LibrePCB
+    - id: 782177498
+      name: alifsemi/sdk-alif
+    - id: 744438661
+      name: canonical/hardware-api
+    - id: 522160671
+      name: FPGA-MAFIA/fpga_mafia
+    - id: 364573913
+      name: scverse/rapids_singlecell
+    - id: 233099706
+      name: bao-project/bao-hypervisor
+    - id: 83947369
+      name: rtic-rs/rtic
+    - id: 588739758
+      name: iopsystems/rezolus
+    - id: 322263570
+      name: u-blox/ubxlib
+    - id: 294536102
+      name: flipacholas/Architecture-of-consoles
+    - id: 774482172
+      name: HEP-SoC/SoCMake
+    - id: 681318254
+      name: antedebaas/Viesti-Reports
+    - id: 339248351
+      name: LekKit/RVVM
+    - id: 508234417
+      name: pixpark/gpupixel
+    - id: 64799593
+      name: sonic-net/sonic-platform-common
+    - id: 546772350
+      name: DiamondLightSource/httomo
+    - id: 1253879
+      name: stlink-org/stlink
+    - id: 846627057
+      name: shader-slang/slang-rhi
+    - id: 670332256
+      name: vectorch-ai/ScaleLLM
+    - id: 414906187
+      name: najaeda/naja
+    - id: 304031466
+      name: pd-l2ork/pd-l2ork
+    - id: 208508586
+      name: Paciente8159/uCNC
+    - id: 765726016
+      name: 3DevApps/multi-gpu-path-tracer
+    - id: 510038761
+      name: gusmanb/logicanalyzer
+    - id: 180446569
+      name: arborx/ArborX
+    - id: 563021361
+      name: CerebriumAI/documentation
+    - id: 904253621
+      name: ubuntu/ubuntu-insights
+    - id: 285721510
+      name: exo-lang/exo
+    - id: 77459564
+      name: modm-io/modm
+    - id: 676866666
+      name: eunomia-bpf/bpftime
+    - id: 660363535
+      name: JuliaORNL/JACC.jl
+    - id: 236501540
+      name: amaranth-lang/amaranth
+    - id: 685115136
+      name: paritytech/polkavm
+    - id: 44370912
+      name: electronic-structure/SIRIUS
+    - id: 74660642
+      name: taichi-dev/taichi
+    - id: 137416811
+      name: lnis-uofu/OpenFPGA
+    - id: 205044193
+      name: ROCm/rpp
+    - id: 373310764
+      name: google/brax
+    - id: 498776365
+      name: ARM-software/CMSIS-DSP
+    - id: 32271212
+      name: SmingHub/Sming
+    - id: 290931862
+      name: doudar/SmartSpin2k
+    - id: 765924683
+      name: bytedance/flux
+    - id: 647065685
+      name: Nuvoton-Israel/zephyr
+    - id: 782430044
+      name: MaistoV/UninaSoC
+    - id: 6309729
+      name: librosa/librosa
+    - id: 265635506
+      name: wireviz/WireViz
+    - id: 142194760
+      name: Coldcard/firmware
+    - id: 305089628
+      name: Serial-Studio/Serial-Studio
+    - id: 271040312
+      name: tactcomplabs/rev
+    - id: 54894320
+      name: KernelTuner/kernel_tuner
+    - id: 104085299
+      name: rust-embedded/riscv
+    - id: 245292084
+      name: uxlfoundation/oneMath
+    - id: 138358397
+      name: riscv/riscv-fast-interrupt
+    - id: 827357591
+      name: Rust-GPU/rust-gpu
+    - id: 92066127
+      name: opencryptoki/opencryptoki
+    - id: 682775635
+      name: TUDB-Labs/mLoRA
+    - id: 448873865
+      name: pika-org/pika
+    - id: 477419126
+      name: iic-jku/IIC-OSIC-TOOLS
+    - id: 72888735
+      name: aws/aws-fpga
+    - id: 281519510
+      name: FedML-AI/FedML
+    - id: 460250198
+      name: ICLDisco/parsec
+    - id: 280276446
+      name: pytorch/kineto
+    - id: 387853787
+      name: ECP-WarpX/impactx
+    - id: 89939739
+      name: heavyai/heavyai-charting
+    - id: 94530674
+      name: Syllo/nvtop
+    - id: 349547047
+      name: xsuite/xsuite
+    - id: 426159950
+      name: SakuraEngine/SakuraEngine
+    - id: 657047836
+      name: arduino/ArduinoCore-renesas
+    - id: 244493665
+      name: broadinstitute/dsp-appsec-infrastructure-apps
+    - id: 276693068
+      name: JuliaGPU/AMDGPU.jl
+    - id: 666783113
+      name: BabitMF/bmf
+    - id: 417490830
+      name: Allen-Synthesis/EuroPi
+    - id: 840209937
+      name: shufps/ESP-Miner-NerdQAxePlus
+    - id: 66395341
+      name: slaclab/surf
+    - id: 370740386
+      name: eh2k/squares-and-circles
+    - id: 167215597
+      name: bifurcationkit/BifurcationKit.jl
+    - id: 592027893
+      name: gaph-pucrs/RS5
+    - id: 667794316
+      name: rdkcentral/rdkv-halif-test-tvsettings
+    - id: 155625402
+      name: byuccl/bfasst
+    - id: 79597821
+      name: riscv/riscv-debug-spec
+    - id: 768057567
+      name: emanuelen5/kitchen-timer
+    - id: 240025453
+      name: amigavision/AmigaVision
+    - id: 793866369
+      name: bluewave-labs/bluewave-uptime
+    - id: 770933357
+      name: worldcoin/orb-firmware
+    - id: 179260956
+      name: JeffyCN/meta-rockchip
+    - id: 828181169
+      name: rv2036/riscv-board-wandering
+    - id: 467381275
+      name: lmarzen/esp32-weather-epd
+    - id: 387853787
+      name: BLAST-ImpactX/impactx
+    - id: 172975569
+      name: Severson-Group/AMDC-Firmware
+    - id: 774059925
+      name: AzonInc/Doorman
+    - id: 594884099
+      name: Quicr/hactar
+    - id: 496299024
+      name: cmajor-lang/cmajor
+    - id: 751865030
+      name: luicfrr/react-native-vision-camera-face-detector
+    - id: 620373741
+      name: omerfaruk-aran/esphome_samsung_hvac_bus
+    - id: 763056902
+      name: cs-pub-ro/hardware-software-interface
+    - id: 742969098
+      name: xenon-emu/xenon
+    - id: 83270489
+      name: Infineon/XMC-for-Arduino
+    - id: 512105473
+      name: sysprog21/semu
+    - id: 414723774
+      name: zauberzeug/lizard
+    - id: 576438535
+      name: runpod/runpod-python
+    - id: 468047019
+      name: riscv-non-isa/riscv-brs
+    - id: 831035479
+      name: libsdl-org/SDL_shadercross
+    - id: 503645205
+      name: QuantumSavory/QuantumSavory.jl
+    - id: 104846993
+      name: PyFixate/Fixate
+    - id: 612334246
+      name: riscv-admin/dev-partners
+    - id: 121606375
+      name: AxFoundation/strax
+    - id: 591890511
+      name: idefix-code/idefix
+    - id: 47247176
+      name: entrylabs/entry-hw
+    - id: 50597128
+      name: FPGAwars/icestudio
+    - id: 166422375
+      name: Mellanox/bfscripts
+    - id: 539665622
+      name: erichdongubler-mozilla/wgpu
+    - id: 26653684
+      name: openstreetmap/chef
+    - id: 274529049
+      name: hpc/quo-vadis
+    - id: 360040084
+      name: entity-toolkit/entity
+    - id: 706295924
+      name: rdkcentral/rdk-halif-device_settings
+    - id: 677316969
+      name: orbbec/pyorbbecsdk
+    - id: 25455830
+      name: keirf/flashfloppy
+    - id: 555505677
+      name: google/bigwheels
+    - id: 171392325
+      name: cdgriffith/FastFlix
+    - id: 841236627
+      name: XS-MLVP/UnityChipForXiangShan
+    - id: 795504117
+      name: GATEOverflow/cm4mlops
+    - id: 808280286
+      name: AnswerDotAI/gpu.cpp
+    - id: 29609157
+      name: AMReX-Astro/Castro
+    - id: 78356810
+      name: m4rs-mt/ILGPU
+    - id: 848600003
+      name: kevmo314/scuda
+    - id: 275405814
+      name: tomcl/issie
+    - id: 679688599
+      name: brilliantlabsAR/frame-codebase
+    - id: 77145569
+      name: SAP/olingo-jpa-processor-v4
+    - id: 517643950
+      name: ThomasVon2021/blikvm
+    - id: 434098140
+      name: AmusementClub/vs-mlrt
+    - id: 320142424
+      name: rern/rAudio
+    - id: 2297031
+      name: riscv/riscv-opcodes
+    - id: 228700143
+      name: plasma-umass/scalene
+    - id: 788212147
+      name: randbatch-md/rbmd-gpu
+    - id: 13098944
+      name: open-mpi/hwloc
+    - id: 148245811
+      name: waterloo-rocketry/canhw
+    - id: 278593354
+      name: rustsbi/rustsbi
+    - id: 299881063
+      name: MikroElektronika/mikrosdk_v2
+    - id: 336830060
+      name: RIT-EVT/EVT-core
+    - id: 738092865
+      name: BitsAndDroids/FlightConnector-Rust
+    - id: 172423631
+      name: merzlab/QUICK
+    - id: 278472319
+      name: BerkeleyHCI/PolymorphicBlocks
+    - id: 224718305
+      name: HEnquist/camilladsp
+    - id: 671753308
+      name: sophgocommunity/SG2042-Newsletter
+    - id: 638068108
+      name: sophgo/zsbl
+    - id: 593759534
+      name: RobotecAI/o3de-rgl-gem
+    - id: 383864114
+      name: fastmachinelearning/qonnx
+    - id: 187874998
+      name: sle118/squeezelite-esp32
+    - id: 702459591
+      name: input-output-hk/hermes
+    - id: 780323643
+      name: modelscope/dash-infer
+    - id: 523290077
+      name: ArnesSI/netbox-inventory
+    - id: 120540744
+      name: adafruit/Adafruit_Blinka
+    - id: 397740987
+      name: oxidecomputer/quartz
+    - id: 374381865
+      name: stack-chan/stack-chan
+    - id: 488519742
+      name: vsys-host/shkeeper.io
