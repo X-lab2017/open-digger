@@ -67,6 +67,8 @@ data:
           name: Remi-Coulom/joedb
         - id: 574694308
           name: RhizomeDB/rs-rhizome
+        - id: 685897222
+          name: Shannon-Data/ShannonBase
         - id: 42580991
           name: SnappyDataInc/snappydata
         - id: 402945349
@@ -247,6 +249,8 @@ data:
           name: kelindar/column
         - id: 199466858
           name: kkuchta/tabdb
+        - id: 591417438
+          name: launix-de/memcp
         - id: 7502247
           name: lealone/Lealone
         - id: 543276238

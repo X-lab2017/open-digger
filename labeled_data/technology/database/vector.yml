@@ -9,6 +9,10 @@ data:
           name: DeployQL/LintDB
         - id: 893031915
           name: HelixDB/helix-db
+        - id: 1041584089
+          name: RijinRaju/octanedb
+        - id: 685897222
+          name: Shannon-Data/ShannonBase
         - id: 201403923
           name: activeloopai/deeplake
         - id: 124315604
