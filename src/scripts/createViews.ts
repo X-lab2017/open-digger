@@ -53,8 +53,11 @@ SELECT
     argMax(gu.name, gu.updated_at) AS name,
     argMax(gu.company, gu.updated_at) AS company,
     argMax(gu.twitter_username, gu.updated_at) AS twitter_username,
+    any(l.location) AS location,
+    any(l.country_id) AS country_id,
     any(l.country) AS country,
     any(l.country_zh) AS country_zh,
+    any(l.province_id) AS province_id,
     any(l.province) AS province,
     any(l.province_zh) AS province_zh,
     any(l.city) AS city
@@ -68,14 +71,16 @@ LEFT JOIN
     li.location AS location,
     if(li.country IN ['Macao', 'Hong Kong', 'Taiwan', 'Hong Kong SAR', 'Macao SAR'], 'China', li.country) AS original_country,
     if(li.country IN ['Macao', 'Hong Kong', 'Taiwan', 'Hong Kong SAR', 'Macao SAR'], li.country, li.administrative_area_level_1) AS original_province,
+    country_matched.id AS country_id,
     country_matched.name AS country,
     country_matched.name_zh AS country_zh,
+    province_matched.id AS province_id,
     COALESCE(province_matched.name, '') AS province,
     COALESCE(province_matched.name_zh, '') AS province_zh,
     li.administrative_area_level_2 AS city
   FROM location_info li
   LEFT JOIN country_labels country_matched ON country_matched.includes_lower = lower(original_country)
-  LEFT JOIN province_labels province_matched ON province_matched.parent_country_id = country_matched.id AND province_matched.includes_lower = lower(original_province)
+  LEFT JOIN province_labels province_matched ON province_matched.parent_country_id = country_matched.id AND original_province !='' AND province_matched.includes_lower = lower(original_province)
   WHERE 
     li.status = 'normal'
   ) l ON gu.location = l.location
