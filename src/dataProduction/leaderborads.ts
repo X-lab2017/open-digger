@@ -9,170 +9,134 @@ import { repoParticipants } from '../metrics/metrics';
 (async () => {
   const openDiggerOssUrl = 'https://oss.open-digger.cn/';
   const labels = getLabelData();
+  const startYear = 2024, startMonth = 7, endYear = 2025, endMonth = 6;
   const defaultOption: QueryConfig = {
-    startYear: 2024, startMonth: 7, endYear: 2025, endMonth: 6,
+    startYear, startMonth, endYear, endMonth,
     order: 'DESC', limit: 101, limitOption: 'all', precision: 2,
   };
   const getLogoUrl = (id: string) => id ? `${openDiggerOssUrl}logos/${id.split(':')[1]}.png` : null;
-  // @ts-ignore
-  const produceGlobalData = async () => {
-    const allCountries: any[] = await query(`
-SELECT c, groupArray((p, d, o)) FROM
-(SELECT a.c AS c, a.p AS p, COUNT(DISTINCT a.id) AS d, SUM(b.openrank) AS o FROM
-(SELECT u.id AS id, l.country AS c, l.province AS p FROM
-(SELECT id, location FROM gh_user_info WHERE location != '') u,
-(SELECT location, country, administrative_area_level_1 AS province FROM location_info WHERE status = 'normal' AND country != '' AND province != '') l
-WHERE u.location=l.location)a
-LEFT JOIN
-(SELECT actor_id, SUM(openrank) AS openrank FROM global_openrank WHERE toYear(created_at)=2024 AND type='User' AND platform='GitHub' GROUP BY actor_id)b
-ON a.id=b.actor_id
-GROUP BY c, p)
-GROUP BY c`);
-    const countryMap = new Map<string, any>();
-    const countryTotalMap = new Map<string, number>();
-    const countryDataMap = new Map<string, Map<string, number[]>>();
-    for (const row of allCountries) {
-      const [name, provinces] = row;
-      const country = countryInfo.find(c => c.name === name || c.includes?.includes(name))!;
-      if (!country) {
-        throw new Error(`Country not found, ${name}`);
-      }
-      if (!country.provinces) {
-        console.log(`No provinces found for ${country.name}`);
-        country.provinces = [] as any;
-      }
-      let countryName = country.name;
-      if (['香港', '澳门', '台湾'].includes(country.name_zh)) {
-        const totalOpenRank = provinces.map(i => +i[2]).reduce((a, c) => a + c, 0);
-        console.log(country.name_zh, totalOpenRank);
-        continue;
-      }
-      countryMap.set(country.name, country);
-      if (!countryDataMap.has(countryName)) {
-        countryDataMap.set(countryName, new Map<string, number[]>());
-      }
-      const provinceMap = countryDataMap.get(countryName)!;
-      if (country.name_zh === '美国') {
-        country.provinces!.forEach(p => { if (!p.name_zh.endsWith('州')) p.name_zh += '州' });
-      }
-      const notFound = provinces.filter(p => !country.provinces!.find((pp: any) => pp.name === p[0] || pp.name_zh === p[0] || pp.alias?.includes(p[0]))).map(p => p[0]);
-      if (notFound.length > 0) {
-        console.log(`${JSON.stringify(notFound)} 这个数组中是 ${country.name_zh} 的一些省或州，他们的中文名是什么？`);
-      }
-      for (const p of provinces) {
-        const provinceName = country.provinces!.find((pp: any) => pp.name === p[0] || pp.name_zh === p[0] || pp.alias?.includes(p[0]));
-        if (!provinceName) continue;
-        let key = `${provinceName.name}___${provinceName.name_zh}`;
-        if (!provinceMap.has(key)) {
-          provinceMap.set(key, [0, 0]);
-        }
-        provinceMap.get(key)![0] += +p[1];
-        provinceMap.get(key)![1] += +p[2];
-        countryTotalMap.set(countryName, (countryTotalMap.get(countryName) ?? 0) + (+p[1]));
-      }
-    }
-    let finalArr: any = [{
-      country: '🇨🇳China',
-      country_zh: '🇨🇳中国',
-      province: 'Taiwan',
-      province_zh: '台湾省',
-      flag: '🇨🇳',
-      developerCount: Math.round(1178832 / 100) / 100,
-      openrank: 166978.24,
-      avgOpenrank: (166978.24 / (1178832 / 10000)).toFixed(2)
-    },
-    {
-      country: '🇨🇳China',
-      country_zh: '🇨🇳中国',
-      province: 'Hong Kong',
-      province_zh: '香港特别行政区',
-      flag: '🇨🇳',
-      developerCount: Math.round(1977504 / 100) / 100,
-      openrank: 3392.56,
-      avgOpenrank: (3392.56 / (1977504 / 10000)).toFixed(2)
-    },
-    {
-      country: '🇨🇳China',
-      country_zh: '🇨🇳中国',
-      province: 'Macao',
-      province_zh: '澳门特别行政区',
-      flag: '🇨🇳',
-      developerCount: Math.round(23633 / 100) / 100,
-      openrank: 4351.21,
-      avgOpenrank: (4351.21 / (23633 / 10000)).toFixed(2)
-    }];
 
-    for (const [countryName, data] of countryDataMap.entries()) {
-      const country = countryMap.get(countryName)!;
-      if (!country) {
-        throw new Error(`No country data found ${countryName}`);
-      }
-      if (!country.developerCount) continue;
-      const mutiple = country.developerCount['2024Q1'] / countryTotalMap.get(countryName)!
-      for (const [p, c] of data) {
-        finalArr.push({
-          country: country.flag + country.name,
-          country_zh: country.flag + country.name_zh,
-          province: p.split('___')[0],
-          province_zh: p.split('___')[1],
-          flag: country.flag,
-          developerCount: Math.round(c[0] * mutiple / 100) / 100,
-          openrank: +(c[1].toFixed(2)),
-          avgOpenrank: +(c[1] / (c[0] * mutiple / 10000)).toFixed(2),
-        });
-      }
-    }
+  const produceDivisionsData = async () => {
+    const countryMultipleRes = await query(`
+SELECT
+  name,
+  toUInt64OrNull(JSONExtractString(data, 'developers', -1, 'count')) / u.c
+FROM
+  labels l,
+  (SELECT
+    country,
+    COUNT(DISTINCT id) AS c
+  FROM
+    user_info
+  WHERE
+    country != '' AND
+    province != ''
+  GROUP BY country) u
+WHERE
+  type = 'Division-0' AND
+  notEmpty(JSONExtractArrayRaw(data, 'developers')) AND
+  u.country = l.name
+    `);
+    const countryMultipleMap = new Map<string, number>();
+    countryMultipleRes.forEach(row => {
+      countryMultipleMap.set(row[0], +row[1]);
+    });
 
-    finalArr = finalArr.sort((a, b) => b.openrank - a.openrank);
+    const data = await query(`
+SELECT
+    country,
+    country_zh,
+    province,
+    province_zh,
+    COUNT(DISTINCT id) AS user_count,
+    SUM(ifNull(openrank, 0)) AS openrank
+FROM
+    (SELECT
+        u.id AS id,
+        u.platform AS platform,
+        u.country AS country,
+        u.country_zh AS country_zh,
+        u.province AS province,
+        u.province_zh AS province_zh,
+        ifNull(argMax(g.openrank, g.created_at), 0) AS openrank
+    FROM
+        user_info u
+    LEFT JOIN
+        global_openrank g
+    ON
+        u.id = g.actor_id AND u.platform = g.platform AND g.type = 'User' AND g.legacy = 0
+        AND toYYYYMM(g.created_at) >= ${startYear}${startMonth.toString().padStart(2, '0')} AND
+        toYYYYMM(g.created_at) <= ${endYear}${endMonth.toString().padStart(2, '0')}
+    WHERE
+        u.country != '' AND u.province != ''
+    GROUP BY
+        id, platform, country, country_zh, province, province_zh
+    )
+GROUP BY
+    country, country_zh, province, province_zh
+ORDER BY
+    openrank DESC;
+    `);
 
-    console.log(JSON.stringify({
-      title: '2024 全球行政区划开发者 OpenRank 排行榜 Top 30',
-      data: finalArr.slice(0, 30).map((v, i) => ({
-        rank: i + 1,
-        ...v
-      })),
-      options: [
-        { name: '#', type: 'String', fields: ['rank'], width: 40 },
-        { name: '行政区划', type: 'String', fields: ['province_zh'], width: 250 },
-        { name: '所属国家', type: 'String', fields: ['country_zh'], width: 200 },
-        { name: 'OpenRank', type: 'String', fields: ['openrank'], width: 200 },
-        { name: '开发者数量(万)', type: 'String', fields: ['developerCount'], width: 200 },
-        { name: '平均 OpenRank(/万人)', type: 'String', fields: ['avgOpenrank'], width: 200 },
-      ]
-    }));
-
-    console.log(JSON.stringify({
-      title: '2024 中国行政区划开发者 OpenRank 排行榜 Top 30',
-      data: finalArr.filter(i => i.country.includes('China')).map((v, i) => ({
-        rank: i + 1,
-        ...v
-      })),
-      options: [
-        { name: '#', type: 'String', fields: ['rank'], width: 40 },
-        { name: '行政区划', type: 'String', fields: ['province_zh'], width: 300 },
-        { name: 'OpenRank', type: 'String', fields: ['openrank'], width: 200 },
-        { name: '开发者数量(万)', type: 'String', fields: ['developerCount'], width: 200 },
-        { name: '平均 OpenRank(/万人)', type: 'String', fields: ['avgOpenrank'], width: 200 },
-      ]
-    }));
-
-    const ret = finalArr.slice(0, 100).map((v, i) => ({
+    const ret = data.map((row, i) => ({
       rank: i + 1,
-      ...v
-    }));
+      country: row[0],
+      country_zh: row[1],
+      province: row[2],
+      province_zh: row[3],
+      developerCount: +(countryMultipleMap.get(row[0])! * +row[4] / 10000).toFixed(2),
+      openrank: +(+row[5]).toFixed(2),
+    })).filter(i => i.developerCount);
+
     writeFileSync('local_files/leaderboards/divisions.json', JSON.stringify({
-      data: ret,
+      title: 'Global Administrative Divisions Developer OpenRank Top 100',
+      title_zh: '全球各国行政区划开发者 OpenRank 排行榜 Top 100',
+      options: [
+        { name: '#', type: 'String', fields: ['rank'], width: 80 },
+        { name: 'Administrative Division', type: 'String', fields: ['province'], width: 300 },
+        { name: 'OpenRank', type: 'String', fields: ['openrank'], width: 300 },
+        { name: 'Developer Count (10k)', type: 'String', fields: ['developerCount'], width: 300 },
+        { name: 'Country', type: 'String', fields: ['country'], width: 300 },
+      ],
+      options_zh: [
+        { name: '#', type: 'String', fields: ['rank'], width: 80 },
+        { name: '行政区划', type: 'String', fields: ['province_zh'], width: 300 },
+        { name: 'OpenRank', type: 'String', fields: ['openrank'], width: 300 },
+        { name: '开发者数量(万)', type: 'String', fields: ['developerCount'], width: 300 },
+        { name: '所属国家', type: 'String', fields: ['country_zh'], width: 300 },
+      ],
+      data: ret.slice(0, 100),
     }));
+
+    writeFileSync('local_files/leaderboards/divisions-cn.json', JSON.stringify({
+      title: 'Chinese Administrative Divisions Developer OpenRank',
+      title_zh: '中国各行政区划开发者 OpenRank 排行榜',
+      options: [
+        { name: '#', type: 'String', fields: ['rank'], width: 80 },
+        { name: 'Administrative Division', type: 'String', fields: ['province'], width: 400 },
+        { name: 'OpenRank', type: 'String', fields: ['openrank'], width: 400 },
+        { name: 'Developer Count (10k)', type: 'String', fields: ['developerCount'], width: 400 },
+      ],
+      options_zh: [
+        { name: '#', type: 'String', fields: ['rank'], width: 80 },
+        { name: '行政区划', type: 'String', fields: ['province_zh'], width: 400 },
+        { name: 'OpenRank', type: 'String', fields: ['openrank'], width: 400 },
+        { name: '开发者数量(万)', type: 'String', fields: ['developerCount'], width: 400 },
+      ],
+      data: ret.filter(i => i.country === 'China').map((i, index) => ({ ...i, rank: index + 1 })),
+    }));
+
   };
 
-  // @ts-ignore
-  const produceProjectData = async () => {
+  const produceProjectData = async (isChinese: boolean = false) => {
     const data = (await getRepoOpenrank({
       ...defaultOption,
+      labelIntersect: isChinese ? [':divisions/CN'] : undefined,
       groupBy: 'Project',
     })).filter(i => i.id !== 'Others');
     const participantsData = (await repoParticipants({
       ...defaultOption,
+      labelIntersect: isChinese ? [':divisions/CN'] : undefined,
       limit: -1, groupBy: 'Project',
     })).filter(i => i.id !== 'Others');
     const ret: any[] = [];
@@ -226,18 +190,59 @@ GROUP BY c`);
         country,
       });
     }
-    writeFileSync('local_files/leaderboards/projects.json', JSON.stringify({
+
+    const result: any = {
       data: ret,
-    }));
+    };
+    if (isChinese) {
+      result.title = 'Chinese Project OpenRank Leaderboard Top 100';
+      result.title_zh = '中国开源项目 OpenRank 排行榜 Top 100';
+      result.options = [
+        { name: '#', type: 'String', fields: ['rank'], width: 80 },
+        { name: 'Project', type: 'StringWithIcon', fields: ['name', 'logo'], width: 300 },
+        { name: 'OpenRank', type: 'String', fields: ['openrank'], width: 300 },
+        { name: 'Developer Count', type: 'String', fields: ['developerCount'], width: 300 },
+        { name: 'Initiator', type: 'StringWithIcon', fields: ['initiator', 'initiatorLogo'], width: 300 },
+      ];
+      result.options_zh = [
+        { name: '#', type: 'String', fields: ['rank'], width: 80 },
+        { name: '项目名称', type: 'StringWithIcon', fields: ['name', 'logo'], width: 300 },
+        { name: 'OpenRank', type: 'String', fields: ['openrank'], width: 300 },
+        { name: '开发者规模', type: 'String', fields: ['developerCount'], width: 300 },
+        { name: '发起组织', type: 'StringWithIcon', fields: ['initiator', 'initiatorLogo'], width: 300 },
+      ];
+    } else {
+      result.title = 'Global Project OpenRank Leaderboard Top 100';
+      result.title_zh = '全球开源项目 OpenRank 排行榜 Top 100';
+      result.options = [
+        { name: '#', type: 'String', fields: ['rank'], width: 80 },
+        { name: 'Project', type: 'StringWithIcon', fields: ['name', 'logo'], width: 200 },
+        { name: 'OpenRank', type: 'String', fields: ['openrank'], width: 180 },
+        { name: 'Developer Count', type: 'String', fields: ['developerCount'], width: 180 },
+        { name: 'Initiator', type: 'StringWithIcon', fields: ['initiator', 'initiatorLogo'], width: 250 },
+        { name: 'Initiator Country', type: 'String', fields: ['country'], width: 150 },
+      ];
+      result.options_zh = [
+        { name: '#', type: 'String', fields: ['rank'], width: 80 },
+        { name: '项目名称', type: 'StringWithIcon', fields: ['name', 'logo'], width: 200 },
+        { name: 'OpenRank', type: 'String', fields: ['openrank'], width: 180 },
+        { name: '开发者规模', type: 'String', fields: ['developerCount'], width: 180 },
+        { name: '发起组织', type: 'StringWithIcon', fields: ['initiator', 'initiatorLogo'], width: 250 },
+        { name: '发起组织所在国家', type: 'String', fields: ['country'], width: 150 },
+      ];
+    }
+    writeFileSync(`local_files/leaderboards/projects${isChinese ? '-cn' : ''}.json`, JSON.stringify(result));
   };
-  // @ts-ignore
-  const produceCompanyData = async () => {
+
+  const produceCompanyData = async (isChinese: boolean = false) => {
     const data = (await getRepoOpenrank({
       ...defaultOption,
+      labelIntersect: isChinese ? [':divisions/CN'] : undefined,
       groupBy: 'Company',
     })).filter(i => i.id !== 'Others');
     const activityData = (await getRepoActivity({
       ...defaultOption,
+      labelIntersect: isChinese ? [':divisions/CN'] : undefined,
       limit: -1, groupBy: 'Company',
     })).filter(i => i.id !== 'Others');
     const ret: any[] = [];
@@ -247,6 +252,7 @@ GROUP BY c`);
       const openrank = +row.openrank[0];
       const label = labels.find(l => l.identifier === id)!;
       const findCountry = (labelId: string) => {
+        if (isChinese) return null;
         const label = labels.find(l => l.identifier === labelId)!;
         const countryLabelId = label.parents.find(p => p.startsWith(':divisions'));
         if (countryLabelId) {
@@ -281,12 +287,52 @@ GROUP BY c`);
         ...country,
       });
     }
-    writeFileSync('local_files/leaderboards/companies.json', JSON.stringify({
+    const result: any = {
       data: ret,
-    }));
+    };
+    if (isChinese) {
+      result.title = 'Chinese Company OpenRank Leaderboard Top 100';
+      result.title_zh = '中国开源企业 OpenRank 排行榜 Top 100';
+      result.options = [
+        { name: '#', type: 'String', fields: ['rank'], width: 80 },
+        { name: 'Company', type: 'StringWithIcon', fields: ['name', 'logo'], width: 300 },
+        { name: 'OpenRank', type: 'String', fields: ['openrank'], width: 300 },
+        { name: 'Repo Count', type: 'String', fields: ['repoCount'], width: 250 },
+        { name: 'Developer Count', type: 'String', fields: ['developerCount'], width: 250 },
+      ];
+      result.options_zh = [
+        { name: '#', type: 'String', fields: ['rank'], width: 80 },
+        { name: '企业名称', type: 'StringWithIcon', fields: ['name', 'logo'], width: 300 },
+        { name: 'OpenRank', type: 'String', fields: ['openrank'], width: 300 },
+        { name: '活跃仓库数', type: 'String', fields: ['repoCount'], width: 250 },
+        { name: '活跃开发者数', type: 'String', fields: ['developerCount'], width: 250 },
+      ];
+    } else {
+      result.title = 'Global Company OpenRank Leaderboard Top 100';
+      result.title_zh = '全球开源企业 OpenRank 排行榜 Top 100';
+      result.options = [
+        { name: '#', type: 'String', fields: ['rank'], width: 80 },
+        { name: 'Company', type: 'StringWithIcon', fields: ['name', 'logo'], width: 300 },
+        { name: 'OpenRank', type: 'String', fields: ['openrank'], width: 200 },
+        { name: 'Repo Count', type: 'String', fields: ['repoCount'], width: 200 },
+        { name: 'Developer Count', type: 'String', fields: ['developerCount'], width: 200 },
+        { name: 'Country', type: 'String', fields: ['country'], width: 200 },
+      ];
+      result.options_zh = [
+        { name: '#', type: 'String', fields: ['rank'], width: 80 },
+        { name: '企业名称', type: 'StringWithIcon', fields: ['name', 'logo'], width: 300 },
+        { name: 'OpenRank', type: 'String', fields: ['openrank'], width: 200 },
+        { name: '活跃仓库数', type: 'String', fields: ['repoCount'], width: 200 },
+        { name: '活跃开发者数', type: 'String', fields: ['developerCount'], width: 200 },
+        { name: '所属国家', type: 'String', fields: ['country'], width: 200 },
+      ];
+    }
+    writeFileSync(`local_files/leaderboards/companies${isChinese ? '-cn' : ''}.json`, JSON.stringify(result));
   };
 
-  await produceGlobalData();
-  await produceProjectData();
-  await produceCompanyData();
+  await produceDivisionsData();
+  await produceProjectData(true);
+  await produceProjectData(false);
+  await produceCompanyData(true);
+  await produceCompanyData(false);
 })();
