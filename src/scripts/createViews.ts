@@ -92,5 +92,48 @@ GROUP BY
     await query(createViewQuery);
   };
 
+  const createNameView = async () => {
+    await query(`DROP TABLE IF EXISTS name_info`);
+    const createViewQuery = `
+CREATE MATERIALIZED VIEW IF NOT EXISTS name_info
+REFRESH EVERY 1 DAY
+ENGINE = MergeTree()
+ORDER BY (id, platform)
+POPULATE
+AS
+SELECT
+  platform,
+  repo_id AS id,
+  argMax(repo_name, created_at) AS name,
+  SUM(openrank) AS openrank,
+  CAST('Repo','Enum8(\\\'Repo\\\'=1, \\\'Org\\\'=2, \\\'User\\\'=3)') AS type
+FROM global_openrank g
+WHERE g.type='Repo'
+GROUP BY repo_id, platform
+UNION ALL
+SELECT
+  platform,
+  org_id AS id,
+  argMax(org_login, created_at) AS name,
+  SUM(openrank) AS openrank,
+  CAST('Org','Enum8(\\\'Repo\\\'=1, \\\'Org\\\'=2, \\\'User\\\'=3)') AS type
+FROM global_openrank g
+WHERE g.type='Repo'
+GROUP BY org_id, platform
+UNION ALL
+SELECT
+  platform,
+  actor_id AS id,
+  argMax(actor_login, created_at) AS name,
+  SUM(openrank) AS openrank,
+  CAST('User','Enum8(\\\'Repo\\\'=1, \\\'Org\\\'=2, \\\'User\\\'=3)') AS type
+FROM global_openrank g
+WHERE g.type='User'
+GROUP BY actor_id, platform
+`;
+    await query(createViewQuery);
+  };
+
   await createUserView();
+  await createNameView();
 })();

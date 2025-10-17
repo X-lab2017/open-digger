@@ -150,7 +150,7 @@ ORDER BY
       }
       let initiator = '';
       let initiatorId = '';
-      for (const type of [':companies', ':universities', ':agencies', ':foundations']) {
+      for (const type of [':foundations', ':companies', ':universities', ':agencies']) {
         const parent = label.parents.find(p => p.startsWith(type));
         if (parent) {
           const parentLabel = labels.find(l => l.identifier === parent);
@@ -175,7 +175,7 @@ ORDER BY
         }
         return null;
       };
-      const country = findCountry(label.identifier) ?? '';
+      const country = findCountry(initiatorId || label.identifier) ?? '';
       ret.push({
         rank: i + 1,
         id,
