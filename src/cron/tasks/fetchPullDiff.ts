@@ -11,6 +11,7 @@ import { Octokit } from '@octokit/rest';
  */
 
 let round = 0;
+const API_RATE_LIMIT_EXCEEDED = 'API RATE LIMIT EXCEEDED';
 const task: Task = {
   cron: '*/10 * * * *',
   callback: async () => {
@@ -67,7 +68,11 @@ const task: Task = {
         } else {
           logger.error('Platform not supported.', platform);
         }
-      } catch (error) {
+      } catch (error: any) {
+        const msg: string = error.message;
+        if (msg.includes('API rate limit exceeded')) {
+          return API_RATE_LIMIT_EXCEEDED;
+        }
         return null;
       }
     };
@@ -110,6 +115,8 @@ const task: Task = {
         if (!diff) {
           item.status = 'not_found';
           item.diff = '';
+        } else if (diff === API_RATE_LIMIT_EXCEEDED) {
+          return null;
         } else {
           item.status = 'normal';
           item.diff = diff;
@@ -124,8 +131,10 @@ const task: Task = {
 
       // Push results to stream
       for (const item of batchResults) {
-        stream.push(item);
-        processedCount++;
+        if (item) {
+          stream.push(item);
+          processedCount++;
+        }
       }
 
       // Record progress every 100 requests
