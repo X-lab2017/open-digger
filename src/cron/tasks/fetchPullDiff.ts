@@ -32,7 +32,7 @@ const task: Task = {
     CREATE TABLE IF NOT EXISTS pull_diff
     (
       \`id\` UInt64,
-      \`platform\` Enum('GitHub' = 1, 'Gitee' = 2, 'AtomGit' = 3, 'GitLab.com' = 4, 'Gitea' = 5, 'GitLab.cn' = 6),
+      \`platform\` LowCardinality(String),
       \`status\` Enum('normal' = 1, 'not_found' = 2),
       \`updated_at\` DateTime,
       \`diff\` String

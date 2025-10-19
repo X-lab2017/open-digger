@@ -51,7 +51,7 @@ const task: Task = {
       const exportTableQueries: string[] = [
         `CREATE TABLE IF NOT EXISTS ${exportRepoTableName}
   (\`id\` UInt64,
-  \`platform\` Enum('GitHub' = 1, 'Gitee' = 2, 'AtomGit' = 3, 'GitLab.com' = 4, 'Gitea' = 5, 'GitLab.cn' = 6),
+  \`platform\` LowCardinality(String),
   \`repo_name\` LowCardinality(String),
   \`org_id\` UInt64
   )
@@ -60,7 +60,7 @@ const task: Task = {
   SETTINGS index_granularity = 8192`,
         `CREATE TABLE IF NOT EXISTS ${exportUserTableName}
   (\`id\` UInt64,
-  \`platform\` Enum('GitHub' = 1, 'Gitee' = 2, 'AtomGit' = 3, 'GitLab.com' = 4, 'Gitea' = 5, 'GitLab.cn' = 6),
+  \`platform\` LowCardinality(String),
   \`actor_login\` LowCardinality(String)
   )
   ENGINE = ReplacingMergeTree
@@ -71,7 +71,7 @@ const task: Task = {
         `INSERT INTO ${exportRepoTableName}
   SELECT argMax(repo_id, time) AS id, platform, repo_name, any(orgid) AS org_id FROM
   (SELECT repo_id, platform, argMax(repo_name, created_at) AS repo_name, MAX(created_at) AS time, any(org_id) AS orgid 
-  FROM global_openrank WHERE type='Repo' AND (${(() => {
+  FROM global_openrank WHERE type='Repo' AND (repo_id IN (SELECT repo_id FROM global_openrank WHERE openrank > 5 AND type='Repo') OR ${(() => {
           const arr: string[] = [];
           for (const [name, p] of platform.entries()) {
             if (p.repos.size > 0) arr.push(`(platform = '${name}' AND repo_id IN (${Array.from(p.repos).join(',')}))`);
@@ -503,7 +503,7 @@ const task: Task = {
     const exportUserInfo = async () => {
       let processedCount = 0;
       const userInfoQuery = `SELECT platform, b.actor_login, a.location, a.bio, a.name, a.company FROM
-    (SELECT CAST('GitHub','Enum8(\\\'GitHub\\\'=1)') AS platform, id, location, bio, name, company FROM gh_user_info WHERE status='normal' AND id IN (SELECT id FROM ${exportUserTableName} WHERE platform='GitHub'))a
+    (SELECT 'GitHub' AS platform, id, location, bio, name, company FROM gh_user_info WHERE status='normal' AND id IN (SELECT id FROM ${exportUserTableName} WHERE platform='GitHub'))a
     LEFT JOIN
     (SELECT id, platform, actor_login FROM ${exportUserTableName})b
     ON a.id = b.id AND a.platform = b.platform

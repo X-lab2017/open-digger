@@ -22,7 +22,7 @@ const task: Task = {
     const createTable = async () => {
       const sql = `CREATE TABLE IF NOT EXISTS ${globalOpenrankTableName}
         (
-          \`platform\` Enum('GitHub' = 1, 'Gitee' = 2, 'AtomGit' = 3, 'GitLab.com' = 4, 'Gitea' = 5, 'GitLab.cn' = 6),
+          \`platform\` LowCardinality(String),
           \`repo_id\` UInt64,
           \`repo_name\` LowCardinality(String),
           \`actor_id\` UInt64,

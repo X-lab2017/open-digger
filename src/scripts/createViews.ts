@@ -6,6 +6,24 @@ import { query } from "../db/clickhouse";
     const createViewQuery = `
 CREATE MATERIALIZED VIEW IF NOT EXISTS user_info
 REFRESH EVERY 3 HOUR
+(
+    \`platform\` LowCardinality(String),
+    \`id\` UInt64,
+    \`login\` String,
+    \`bio\` String,
+    \`email\` String,
+    \`name\` String,
+    \`company\` String,
+    \`twitter_username\` String,
+    \`location\` String,
+    \`country_id\` LowCardinality(String),
+    \`country\` LowCardinality(String),
+    \`country_zh\` LowCardinality(String),
+    \`province_id\` LowCardinality(String),
+    \`province\` LowCardinality(String),
+    \`province_zh\` LowCardinality(String),
+    \`city\` String
+)
 ENGINE = MergeTree()
 ORDER BY (id, platform)
 POPULATE
@@ -45,7 +63,7 @@ province_labels AS (
       AND has(cl.children, pl.id)
 )
 SELECT 
-    CAST('GitHub', 'Enum8(\\\'GitHub\\\' = 1, \\\'Gitee\\\' = 2, \\\'AtomGit\\\' = 3, \\\'GitLab.com\\\' = 4, \\\'Gitea\\\' = 5, \\\'GitLab.cn\\\' = 6)') AS platform, 
+    'GitHub' AS platform, 
     gu.id AS id,
     argMax(go.actor_login, go.created_at) AS login,
     argMax(gu.bio, gu.updated_at) AS bio,
