@@ -1,0 +1,807 @@
+{"repo_id": 4542716, "repo_name": "NixOS/nixpkgs", "topics": ["hacktoberfest", "linux", "nix", "nixos", "nixpkgs"]}
+{"repo_id": 12888993, "repo_name": "home-assistant/core", "topics": ["asyncio", "hacktoberfest", "home-automation", "internet-of-things", "iot", "mqtt", "python", "raspberry-pi"]}
+{"repo_id": 65600975, "repo_name": "pytorch/pytorch", "topics": ["autograd", "deep-learning", "gpu", "machine-learning", "neural-network", "numpy", "python", "tensor"]}
+{"repo_id": 632909818, "repo_name": "digitalinnovationone/dio-lab-open-source", "topics": ["git", "github", "open-source"]}
+{"repo_id": 19745004, "repo_name": "odoo/odoo", "topics": ["apps", "business", "erp", "management", "odoo", "odoo-apps", "python"]}
+{"repo_id": 41881900, "repo_name": "microsoft/vscode", "topics": ["editor", "electron", "microsoft", "typescript", "visual-studio-code"]}
+{"repo_id": 808144141, "repo_name": "DigitalPlatDev/FreeDomain", "topics": ["digitalplat", "domain", "domain-platform", "domainname", "domains", "free", "freedomain"]}
+{"repo_id": 59771425, "repo_name": "zephyrproject-rtos/zephyr", "topics": ["bluetooth", "bluetooth-le", "embedded", "embedded-c", "iot", "mcu", "microcontroller", "real-time", "rtos", "zephyr", "zephyr-rtos", "zephyros"]}
+{"repo_id": 15634981, "repo_name": "godotengine/godot", "topics": ["game-development", "game-engine", "gamedev", "godot", "godotengine", "multi-platform", "open-source"]}
+{"repo_id": 7833168, "repo_name": "elastic/kibana", "topics": ["dashboards", "elasticsearch", "hacktoberfest", "kibana", "metrics", "observability", "visualizations"]}
+{"repo_id": 197275551, "repo_name": "microsoft/winget-pkgs", "topics": ["hacktoberfest"]}
+{"repo_id": 133843125, "repo_name": "department-of-veterans-affairs/va.gov-team", "topics": ["docs"]}
+{"repo_id": 31792824, "repo_name": "flutter/flutter", "topics": ["android", "app-framework", "cross-platform", "dart", "dart-platform", "desktop", "flutter", "flutter-package", "fuchsia", "ios", "linux-desktop", "macos", "material-design", "mobile", "mobile-development", "skia", "web", "web-framework", "windows"]}
+{"repo_id": 15111821, "repo_name": "grafana/grafana", "topics": ["alerting", "analytics", "business-intelligence", "dashboard", "data-visualization", "elasticsearch", "go", "grafana", "hacktoberfest", "influxdb", "metrics", "monitoring", "mysql", "postgres", "prometheus"]}
+{"repo_id": 340547520, "repo_name": "zed-industries/zed", "topics": ["gpui", "rust-lang", "text-editor", "zed"]}
+{"repo_id": 724712, "repo_name": "rust-lang/rust", "topics": ["compiler", "hacktoberfest", "language", "rust"]}
+{"repo_id": 210716005, "repo_name": "dotnet/runtime", "topics": ["dotnet", "hacktoberfest", "help-wanted"]}
+{"repo_id": 404565294, "repo_name": "DaoCloud/public-image-mirror", "topics": ["mirror", "speedup"]}
+{"repo_id": 21740844, "repo_name": "openshift/openshift-docs", "topics": ["documentation", "hacktoberfest", "openshift"]}
+{"repo_id": 60246359, "repo_name": "ClickHouse/ClickHouse", "topics": ["ai", "analytics", "big-data", "clickhouse", "cloud-native", "cpp", "database", "dbms", "distributed", "embedded", "hacktoberfest", "lakehouse", "mpp", "olap", "rust", "self-hosted", "sql"]}
+{"repo_id": 599547518, "repo_name": "vllm-project/vllm", "topics": ["amd", "cuda", "gpt", "hpu", "inference", "inferentia", "llama", "llm", "llm-serving", "llmops", "mlops", "model-serving", "pytorch", "rocm", "tpu", "trainium", "transformer", "xpu"]}
+{"repo_id": 320636477, "repo_name": "WebKit/WebKit", "topics": ["browser", "gtk", "ios", "javascript", "macos", "web", "webkit"]}
+{"repo_id": 70107786, "repo_name": "vercel/next.js", "topics": ["blog", "browser", "compiler", "components", "hybrid", "nextjs", "node", "react", "server-rendering", "ssg", "static", "static-site-generator", "universal", "vercel"]}
+{"repo_id": 45936895, "repo_name": "Automattic/wp-calypso", "topics": ["es2015", "es6", "es6-javascript", "javascript", "nodejs", "react", "redux", "wordpress"]}
+{"repo_id": 149121954, "repo_name": "openjdk/jdk", "topics": ["java", "jvm", "openjdk"]}
+{"repo_id": 155220641, "repo_name": "huggingface/transformers", "topics": ["bert", "deep-learning", "flax", "hacktoberfest", "jax", "language-model", "language-models", "machine-learning", "model-hub", "natural-language-processing", "nlp", "nlp-library", "pretrained-models", "python", "pytorch", "pytorch-transformers", "seq2seq", "speech-recognition", "tensorflow", "transformer"]}
+{"repo_id": 72685026, "repo_name": "MicrosoftDocs/azure-docs", "topics": ["skilling"]}
+{"repo_id": 68720867, "repo_name": "firstcontributions/first-contributions", "topics": ["beginner", "beginner-friendly", "contribute", "contribution", "contributions-welcome", "good-first-contribution", "good-first-issue", "good-first-pr", "open-source", "tutorial"]}
+{"repo_id": 873328, "repo_name": "getsentry/sentry", "topics": ["apm", "crash-reporting", "crash-reports", "csp-report", "devops", "django", "error-logging", "error-monitoring", "fair-source", "hacktoberfest", "monitor", "monitoring", "python", "sentry", "tag-production"]}
+{"repo_id": 80862584, "repo_name": "WordPress/gutenberg", "topics": ["gutenberg", "wordpress", "wordpress-plugin"]}
+{"repo_id": 65711522, "repo_name": "PaddlePaddle/Paddle", "topics": ["deep-learning", "distributed-training", "efficiency", "machine-learning", "neural-network", "paddlepaddle", "python", "scalability"]}
+{"repo_id": 357728969, "repo_name": "oven-sh/bun", "topics": ["bun", "bundler", "javascript", "javascriptcore", "jsx", "nodejs", "npm", "react", "transpiler", "typescript", "zig", "ziglang"]}
+{"repo_id": 99919302, "repo_name": "apache/doris", "topics": ["bigquery", "database", "dbt", "delta-lake", "elt", "etl", "hadoop", "hive", "hudi", "iceberg", "lakehouse", "olap", "query-engine", "real-time", "redshift", "snowflake", "spark", "sql"]}
+{"repo_id": 20580498, "repo_name": "kubernetes/kubernetes", "topics": ["cncf", "containers", "go", "kubernetes"]}
+{"repo_id": 507775, "repo_name": "elastic/elasticsearch", "topics": ["elasticsearch", "java", "search-engine"]}
+{"repo_id": 3234987, "repo_name": "tgstation/tgstation", "topics": ["byond", "corgis", "dm", "dreammaker", "game", "hacktoberfest", "hugbox", "memes", "role-playing", "space", "ss13", "tgstation", "tgui"]}
+{"repo_id": 535360445, "repo_name": "ultralytics/ultralytics", "topics": ["cli", "computer-vision", "deep-learning", "hub", "image-classification", "instance-segmentation", "machine-learning", "object-detection", "pose-estimation", "python", "pytorch", "rotated-object-detection", "segment-anything", "tracking", "ultralytics", "yolo", "yolo-world", "yolo11", "yolov10", "yolov8"]}
+{"repo_id": 65750241, "repo_name": "expo/expo", "topics": ["android", "app-framework", "expo", "framework", "frontend", "ios", "javascript", "mobile", "native", "native-apps", "react", "react-native", "typescript", "universal", "web", "web-framework"]}
+{"repo_id": 92001425, "repo_name": "space-wizards/space-station-14", "topics": ["c-sharp", "game", "hacktoberfest", "space-station-13", "space-station-14", "ss13", "ss14"]}
+{"repo_id": 2179920, "repo_name": "woocommerce/woocommerce", "topics": ["automattic", "ecommerce", "ecommerce-platform", "hacktoberfest", "php", "reactjs", "woocommerce", "wordpress"]}
+{"repo_id": 49970739, "repo_name": "DataDog/datadog-agent", "topics": ["apm-agent", "apm-instrumentation", "datadog", "distributed-tracing", "go", "logging", "metrics", "monitoring", "observability", "open-telemetry", "otel", "profiling", "tracing"]}
+{"repo_id": 153097643, "repo_name": "openvinotoolkit/openvino", "topics": ["ai", "computer-vision", "deep-learning", "deploy-ai", "diffusion-models", "generative-ai", "good-first-issue", "inference", "llm-inference", "natural-language-processing", "nlp", "openvino", "optimize-ai", "performance-boost", "recommendation-system", "speech-recognition", "stable-diffusion", "transformers", "yolo"]}
+{"repo_id": 365697493, "repo_name": "leanprover-community/mathlib4", "topics": ["lean4"]}
+{"repo_id": 658928958, "repo_name": "ollama/ollama", "topics": ["deepseek", "gemma", "gemma2", "go", "golang", "llama", "llama2", "llama3", "llava", "llm", "llms", "mistral", "ollama", "phi3", "phi4"]}
+{"repo_id": 283046497, "repo_name": "airbytehq/airbyte", "topics": ["bigquery", "change-data-capture", "data", "data-analysis", "data-collection", "data-engineering", "data-integration", "data-pipeline", "elt", "etl", "java", "mssql", "mysql", "pipeline", "postgresql", "python", "redshift", "s3", "self-hosted", "snowflake"]}
+{"repo_id": 2310495, "repo_name": "ceph/ceph", "topics": ["block-storage", "cloud-storage", "distributed-file-system", "distributed-storage", "erasure-coding", "fuse", "hdfs", "high-performance", "highly-available", "iscsi", "kubernetes", "nfs", "nvme-over-fabrics", "object-store", "posix", "replication", "s3", "smb", "software-defined-storage", "storage"]}
+{"repo_id": 626805178, "repo_name": "langgenius/dify", "topics": ["agent", "ai", "anthropic", "backend-as-a-service", "chatbot", "gemini", "genai", "gpt", "gpt-4", "llama3", "llm", "llmops", "nextjs", "openai", "orchestration", "python", "rag", "workflow", "workflows"]}
+{"repo_id": 612354784, "repo_name": "ggml-org/llama.cpp", "topics": ["ggml", "llama"]}
+{"repo_id": 262395224, "repo_name": "dotnet/maui", "topics": ["android", "desktop", "dotnet", "hacktoberfest", "ios", "maccatalyst", "maui", "microsoft", "mobile", "multi-platform", "user-interface", "winui", "winui3"]}
+{"repo_id": 402945349, "repo_name": "StarRocks/starrocks", "topics": ["analytics", "big-data", "cloudnative", "database", "datalake", "delta-lake", "distributed-database", "hudi", "iceberg", "join", "lakehouse", "lakehouse-platform", "mpp", "olap", "real-time-analytics", "real-time-updates", "realtime-database", "sql", "star-schema", "vectorized"]}
+{"repo_id": 301216792, "repo_name": "is-a-dev/register", "topics": ["cloudflare", "dev", "developer", "dns", "domain", "foss", "free", "free-domain", "free-for-dev", "free-for-developers", "github-pages", "oss", "subdomain", "website"]}
+{"repo_id": 5973855, "repo_name": "CleverRaven/Cataclysm-DDA", "topics": ["c-plus-plus", "cataclysm", "game", "hacktoberfest", "zombies"]}
+{"repo_id": 39093389, "repo_name": "Azure/azure-rest-api-specs", "topics": ["azure", "cloud", "openapi", "rest", "swagger"]}
+{"repo_id": 33884891, "repo_name": "apache/airflow", "topics": ["airflow", "apache", "apache-airflow", "automation", "dag", "data-engineering", "data-integration", "data-orchestrator", "data-pipelines", "data-science", "elt", "etl", "machine-learning", "mlops", "orchestration", "python", "scheduler", "workflow", "workflow-engine", "workflow-orchestration"]}
+{"repo_id": 48109239, "repo_name": "cilium/cilium", "topics": ["bpf", "cncf", "cni", "containers", "ebpf", "k8s", "kernel", "kubernetes", "kubernetes-networking", "loadbalancing", "monitoring", "networking", "observability", "security", "troubleshooting", "xdp"]}
+{"repo_id": 52855516, "repo_name": "Homebrew/homebrew-core", "topics": ["core", "formulae", "hacktoberfest", "homebrew", "ruby", "tap"]}
+{"repo_id": 2967233, "repo_name": "DataDog/documentation", "topics": ["datadog", "documentation", "hacktoberfest", "hugo", "wiki"]}
+{"repo_id": 156939672, "repo_name": "microsoft/onnxruntime", "topics": ["ai-framework", "deep-learning", "hardware-acceleration", "machine-learning", "neural-networks", "onnx", "pytorch", "scikit-learn", "tensorflow"]}
+{"repo_id": 733006926, "repo_name": "mouredev/roadmap-retos-programacion", "topics": ["c-plus-plus", "c-sharp", "dart", "ejercicios", "go", "java", "javascript", "katas", "kotlin", "logica-de-programacion", "php", "python", "retos", "retos-programacion", "roadmap", "ruby", "rust", "ruta-de-estudio", "swift", "typescript"]}
+{"repo_id": 3623050, "repo_name": "Homebrew/homebrew-cask", "topics": ["cask", "hacktoberfest", "homebrew"]}
+{"repo_id": 30203935, "repo_name": "metabase/metabase", "topics": ["analytics", "bi", "business-intelligence", "businessintelligence", "clojure", "dashboard", "data", "data-analysis", "data-visualization", "database", "metabase", "mysql", "postgres", "postgresql", "reporting", "slack", "sql-editor", "visualization"]}
+{"repo_id": 11125589, "repo_name": "keycloak/keycloak", "topics": ["keycloak", "oidc", "saml"]}
+{"repo_id": 33202667, "repo_name": "department-of-veterans-affairs/vets-website", "topics": ["frontend", "hacktoberfest", "platform"]}
+{"repo_id": 560704231, "repo_name": "run-llama/llama_index", "topics": ["agents", "application", "data", "fine-tuning", "framework", "llamaindex", "llm", "multi-agents", "rag", "vector-database"]}
+{"repo_id": 68312233, "repo_name": "microsoft/vcpkg", "topics": ["c", "cmake", "cplusplus", "cpp", "libraries", "package-manager", "packages", "vcpkg", "visual-studio", "windows"]}
+{"repo_id": 71932349, "repo_name": "ray-project/ray", "topics": ["automl", "data-science", "deep-learning", "deployment", "distributed", "hyperparameter-optimization", "hyperparameter-search", "java", "llm-serving", "machine-learning", "model-selection", "optimization", "parallel", "python", "pytorch", "ray", "reinforcement-learning", "rllib", "serving", "tensorflow"]}
+{"repo_id": 60525392, "repo_name": "demisto/content", "topics": ["xsoar-content"]}
+{"repo_id": 31558937, "repo_name": "gravitational/teleport", "topics": ["audit", "bastion", "certificate", "cluster", "database-access", "firewall", "firewalls", "go", "golang", "jumpserver", "kubernetes", "kubernetes-access", "pam", "postgres", "rbac", "rdp", "security", "ssh", "teleport", "teleport-binaries"]}
+{"repo_id": 470730648, "repo_name": "hyprwm/Hyprland", "topics": ["compositor", "cpp26", "wayland", "wayland-compositor"]}
+{"repo_id": 236095576, "repo_name": "backstage/backstage", "topics": ["backstage", "cncf", "developer-experience", "developer-portal", "dx", "infrastructure", "microservices", "self-service-portal"]}
+{"repo_id": 23096959, "repo_name": "golang/go", "topics": ["go", "golang", "language", "programming-language"]}
+{"repo_id": 244694174, "repo_name": "project-chip/connectedhomeip", "topics": ["build-with-matter", "chip", "connected-devices", "connected-home", "connectedhomeip", "connectivity-standards-alliance", "csa-iot", "internet-of-things", "iot", "matter", "standard"]}
+{"repo_id": 292673424, "repo_name": "cloudflare/cloudflare-docs", "topics": ["cloudflare", "docs", "hacktoberfest", "markdown", "mdx"]}
+{"repo_id": 16563587, "repo_name": "cockroachdb/cockroach", "topics": ["cockroachdb", "database", "distributed-database", "go", "hacktoberfest", "sql"]}
+{"repo_id": 137503442, "repo_name": "void-linux/void-packages", "topics": ["hacktoberfest", "voidlinux"]}
+{"repo_id": 17165658, "repo_name": "apache/spark", "topics": ["big-data", "java", "jdbc", "python", "r", "scala", "spark", "sql"]}
+{"repo_id": 455229168, "repo_name": "immich-app/immich", "topics": ["backup-tool", "flutter", "google-photos", "google-photos-alternative", "hacktoberfest", "javascript", "mobile-app", "nestjs", "nodejs", "photo-gallery", "photos", "photos-management", "self-hosted", "svelte", "sveltekit", "typescript", "videos"]}
+{"repo_id": 5736080, "repo_name": "FreeCAD/FreeCAD", "topics": ["3d", "3d-printing", "architecture", "bim", "cad", "coin", "engineering", "fem", "freecad", "linux", "mac-osx", "opencascade", "windows"]}
+{"repo_id": 214587193, "repo_name": "supabase/supabase", "topics": ["ai", "alternative", "auth", "database", "deno", "embeddings", "example", "firebase", "nextjs", "oauth2", "pgvector", "postgis", "postgres", "postgresql", "postgrest", "realtime", "supabase", "vectors", "websockets"]}
+{"repo_id": 65214191, "repo_name": "envoyproxy/envoy", "topics": ["cars", "cats", "cats-over-dogs", "cncf", "corgis", "more-cats", "nanoservices", "rocket-ships"]}
+{"repo_id": 275993885, "repo_name": "appsmithorg/appsmith", "topics": ["admin-dashboard", "admin-panels", "app-builder", "automation", "crud", "custom-internal", "developer-tools", "gui", "gui-application", "hacktoberfest", "internal-tools", "java", "javascript", "low-code", "low-code-framework", "react", "self-hosted", "typescript", "webdevelopment", "workflows"]}
+{"repo_id": 184456251, "repo_name": "microsoft/PowerToys", "topics": ["color-picker", "desktop", "fancyzones", "keyboard-manager", "microsoft-powertoys", "powerrename", "powertoys", "windows"]}
+{"repo_id": 15730865, "repo_name": "spack/spack", "topics": ["build-tools", "hpc", "hpsf", "linux", "macos", "package-manager", "python", "radiuss", "scientific-computing", "spack"]}
+{"repo_id": 699532645, "repo_name": "astral-sh/uv", "topics": ["packaging", "python", "resolver", "uv"]}
+{"repo_id": 53538899, "repo_name": "bitwarden/clients", "topics": ["angular", "bitwarden", "browser-extension", "chrome", "cli", "desktop", "electron", "firefox", "javascript", "nodejs", "safari", "typescript", "webextension"]}
+{"repo_id": 29028775, "repo_name": "facebook/react-native", "topics": ["android", "app-framework", "cross-platform", "ios", "mobile", "mobile-development", "react", "react-native"]}
+{"repo_id": 100061716, "repo_name": "nrwl/nx", "topics": ["angular", "build", "build-system", "build-tool", "building-tool", "cli", "cypress", "hacktoberfest", "javascript", "monorepo", "nextjs", "nodejs", "nx", "nx-workspaces", "react", "storybook", "typescript"]}
+{"repo_id": 24195339, "repo_name": "angular/angular", "topics": ["angular", "javascript", "pwa", "typescript", "web", "web-framework", "web-performance"]}
+{"repo_id": 601205363, "repo_name": "tenstorrent/tt-metal", "topics": ["accelerator", "llama", "llm", "low-level-programming", "metal", "mistral", "mixtral", "ml", "resnet", "stable-diffusion", "tenstorrent"]}
+{"repo_id": 166008577, "repo_name": "intel/llvm", "topics": ["intel", "llvm", "oneapi", "sycl"]}
+{"repo_id": 498011141, "repo_name": "huggingface/diffusers", "topics": ["deep-learning", "diffusion", "flax", "flux", "hacktoberfest", "image-generation", "image2image", "image2video", "jax", "latent-diffusion-models", "pytorch", "score-based-generative-modeling", "stable-diffusion", "stable-diffusion-diffusers", "text2image", "text2video", "video2video"]}
+{"repo_id": 456549280, "repo_name": "ydb-platform/ydb", "topics": ["cloud-native", "cpp", "database", "dbms", "distributed", "distributed-database", "distributed-sql", "distributed-sql-database", "sql"]}
+{"repo_id": 514553345, "repo_name": "SoftFever/OrcaSlicer", "topics": ["3d-printer", "3d-printing", "makers"]}
+{"repo_id": 15231212, "repo_name": "Automattic/jetpack", "topics": ["hacktoberfest", "js", "php", "plugin", "react", "wordpress", "wordpress-plugin"]}
+{"repo_id": 60243197, "repo_name": "nextcloud/server", "topics": ["cloud", "collaboration", "decentralized", "design", "distributed", "enterprise", "federation", "file-sharing", "free-software", "hacktoberfest", "javascript", "nextcloud", "open-source", "opensource", "owncloud", "php", "self-hosting", "sharing", "usability", "ux"]}
+{"repo_id": 234798675, "repo_name": "bevyengine/bevy", "topics": ["bevy", "game-development", "game-engine", "gamedev", "open-source", "rust"]}
+{"repo_id": 93444615, "repo_name": "hashicorp/terraform-provider-aws", "topics": ["aws", "terraform", "terraform-provider"]}
+{"repo_id": 62409417, "repo_name": "department-of-veterans-affairs/vets-api", "topics": ["civic-tech", "gov", "hacktoberfest", "platform", "rails", "ruby"]}
+{"repo_id": 32873313, "repo_name": "systemd/systemd", "topics": ["c", "init", "linux", "services", "system", "systemd"]}
+{"repo_id": 263727855, "repo_name": "pola-rs/polars", "topics": ["arrow", "dataframe", "dataframe-library", "dataframes", "out-of-core", "polars", "python", "rust"]}
+{"repo_id": 52558133, "repo_name": "sonic-net/sonic-mgmt", "topics": ["hacktoberfest", "sonic"]}
+{"repo_id": 426075845, "repo_name": "MystenLabs/sui", "topics": ["blockchain", "distributed-ledger-technology", "move", "smart-contracts"]}
+{"repo_id": 42009758, "repo_name": "MetaMask/metamask-extension", "topics": ["brave", "chrome", "dapp", "dapp-developers", "edge", "ethereum", "extension", "firefox", "opera"]}
+{"repo_id": 350360184, "repo_name": "calcom/cal.com", "topics": ["next-auth", "nextjs", "open-source", "postgresql", "prisma", "t3-stack", "tailwindcss", "trpc", "turborepo", "typescript", "zod"]}
+{"repo_id": 196414933, "repo_name": "open-telemetry/opentelemetry-collector-contrib", "topics": ["open-telemetry", "opentelemetry"]}
+{"repo_id": 237523442, "repo_name": "tailscale/tailscale", "topics": ["2fa", "oauth", "sso", "tailscale", "vpn", "wireguard"]}
+{"repo_id": 131619646, "repo_name": "dagster-io/dagster", "topics": ["analytics", "dagster", "data-engineering", "data-integration", "data-orchestrator", "data-pipelines", "data-science", "etl", "metadata", "mlops", "orchestration", "python", "scheduler", "workflow", "workflow-automation"]}
+{"repo_id": 2211243, "repo_name": "apache/kafka", "topics": ["kafka", "scala"]}
+{"repo_id": 139914932, "repo_name": "quarkusio/quarkus", "topics": ["cloud-native", "hacktoberfest", "java", "kubernetes", "reactive"]}
+{"repo_id": 93446042, "repo_name": "hashicorp/terraform-provider-azurerm", "topics": ["azure", "azure-resource-manager", "terraform", "terraform-provider"]}
+{"repo_id": 2928944, "repo_name": "Azure/azure-sdk-for-net", "topics": ["azure", "azure-sdk", "c-sharp", "dotnet", "hacktoberfest", "microsoft"]}
+{"repo_id": 646410686, "repo_name": "hiyouga/LLaMA-Factory", "topics": ["agent", "ai", "chatglm", "fine-tuning", "gpt", "instruction-tuning", "language-model", "large-language-models", "llama", "llama3", "llm", "lora", "mistral", "moe", "peft", "qlora", "quantization", "qwen", "rlhf", "transformers"]}
+{"repo_id": 166515022, "repo_name": "trinodb/trino", "topics": ["analytics", "big-data", "data-science", "database", "databases", "datalake", "delta-lake", "distributed-database", "distributed-systems", "hadoop", "hive", "iceberg", "java", "jdbc", "presto", "prestodb", "query-engine", "sql", "trino"]}
+{"repo_id": 221981891, "repo_name": "microsoft/playwright", "topics": ["automation", "chrome", "chromium", "e2e-testing", "electron", "end-to-end-testing", "firefox", "javascript", "playwright", "test", "test-automation", "testing", "testing-tools", "web", "webkit"]}
+{"repo_id": 34526884, "repo_name": "ant-design/ant-design", "topics": ["ant-design", "antd", "design-systems", "react", "typescript", "ui-kit", "ui-library"]}
+{"repo_id": 200722670, "repo_name": "NVIDIA/NeMo", "topics": ["asr", "deeplearning", "generative-ai", "large-language-models", "machine-translation", "multimodal", "neural-networks", "speaker-diariazation", "speaker-recognition", "speech-synthesis", "speech-translation", "tts"]}
+{"repo_id": 105808767, "repo_name": "aws/aws-cdk", "topics": ["aws", "cloud-infrastructure", "hacktoberfest", "infrastructure-as-code", "typescript"]}
+{"repo_id": 208728772, "repo_name": "milvus-io/milvus", "topics": ["anns", "cloud-native", "diskann", "distributed", "embedding-database", "embedding-similarity", "embedding-store", "faiss", "golang", "hnsw", "image-search", "llm", "nearest-neighbor-search", "rag", "vector-database", "vector-search", "vector-similarity", "vector-store"]}
+{"repo_id": 40276274, "repo_name": "ziglang/zig", "topics": ["compiler", "language", "zig"]}
+{"repo_id": 70365100, "repo_name": "macports/macports-ports", "topics": ["command-line", "macos", "macosx", "macports", "package-manager", "ports"]}
+{"repo_id": 27193779, "repo_name": "nodejs/node", "topics": ["javascript", "js", "linux", "macos", "mit", "node", "nodejs", "runtime", "windows"]}
+{"repo_id": 52300938, "repo_name": "bitnami/charts", "topics": ["bitnami", "charts", "helm", "helm-charts", "kubernetes", "vmware"]}
+{"repo_id": 105944401, "repo_name": "yugabyte/yugabyte-db", "topics": ["cloud-native", "cpp", "database", "distributed-database", "distributed-sql", "distributed-sql-database", "high-performance", "kubernetes", "multi-cloud", "multi-region", "scale-out", "sql"]}
+{"repo_id": 295774370, "repo_name": "mdn/content", "topics": ["css", "documentation", "html", "http", "javascript", "learning", "mdn", "reference", "web-development", "web-standards"]}
+{"repo_id": 674559306, "repo_name": "paritytech/polkadot-sdk", "topics": ["blockchain", "cumulus", "polkadot", "substrate"]}
+{"repo_id": 10969551, "repo_name": "cms-sw/cmssw", "topics": ["c-plus-plus", "cern", "cms-experiment", "hep"]}
+{"repo_id": 41986369, "repo_name": "pingcap/tidb", "topics": ["cloud-native", "database", "distributed-database", "distributed-transactions", "go", "hacktoberfest", "htap", "mysql", "mysql-compatibility", "scale", "serverless", "sql", "tidb"]}
+{"repo_id": 17620347, "repo_name": "dotnet/aspnetcore", "topics": ["aspnetcore", "dotnet", "hacktoberfest", "help-wanted"]}
+{"repo_id": 4127088, "repo_name": "Azure/azure-sdk-for-python", "topics": ["azure", "azure-sdk", "hacktoberfest", "python"]}
+{"repo_id": 8514, "repo_name": "rails/rails", "topics": ["activejob", "activerecord", "framework", "html", "mvc", "rails", "ruby"]}
+{"repo_id": 20929025, "repo_name": "microsoft/TypeScript", "topics": ["javascript", "language", "typechecker", "typescript"]}
+{"repo_id": 40556106, "repo_name": "wazuh/wazuh", "topics": ["cloud-security", "compliance", "configuration-assessement", "container-security", "cybersecurity", "file-integrity-monitoring", "incident-response", "infosec", "log-analysis", "malware-detection", "pci-dss", "security", "security-audit", "security-automation", "security-hardening", "security-tools", "siem", "vulnerability-detection", "wazuh", "xdr"]}
+{"repo_id": 43160685, "repo_name": "zulip/zulip", "topics": ["apache", "chat", "collaboration", "electron", "foss", "free", "javascript", "python", "python3", "react-native", "slack", "zulip"]}
+{"repo_id": 334274271, "repo_name": "opensearch-project/OpenSearch", "topics": ["analytics", "apache2", "foss", "java", "search", "search-engine"]}
+{"repo_id": 4454793, "repo_name": "musescore/MuseScore", "topics": ["cpp", "musescore", "music-notation", "musicxml", "qt", "sfz", "sheet-music", "sheetmusic"]}
+{"repo_id": 120896210, "repo_name": "argoproj/argo-cd", "topics": ["argo", "argo-cd", "cd", "ci-cd", "cicd", "continuous-delivery", "continuous-deployment", "devops", "docker", "gitops", "hacktoberfest", "helm", "jsonnet", "kubernetes", "kustomize", "pipeline"]}
+{"repo_id": 28312955, "repo_name": "home-assistant/home-assistant.io", "topics": ["documentation", "hacktoberfest", "hass", "hassio", "home-assistant", "jekyll"]}
+{"repo_id": 74293321, "repo_name": "sveltejs/svelte", "topics": ["compiler", "template", "ui"]}
+{"repo_id": 7548986, "repo_name": "laravel/framework", "topics": ["framework", "laravel", "php"]}
+{"repo_id": 22637619, "repo_name": "AdguardTeam/AdguardFilters", "topics": ["adblock", "adguard", "filter-list", "open-source", "ublock"]}
+{"repo_id": 16408992, "repo_name": "neovim/neovim", "topics": ["api", "c", "lua", "neovim", "nvim", "text-editor", "vim"]}
+{"repo_id": 309820286, "repo_name": "fleetdm/fleet", "topics": ["device-management", "employee-experience", "endpoint-ops", "endpoint-security", "gitops", "mdm-api", "open-source", "osquery", "security-analytics", "vulnerability-management"]}
+{"repo_id": 31288958, "repo_name": "hashicorp/vault", "topics": ["go", "secrets", "vault"]}
+{"repo_id": 458058, "repo_name": "symfony/symfony", "topics": ["bundle", "framework", "hacktoberfest", "php", "php-framework", "symfony", "symfony-bundle"]}
+{"repo_id": 71995937, "repo_name": "nuxt/nuxt", "topics": ["csr", "framework", "full-stack", "hacktoberfest", "hybrid", "node", "nuxt", "server-rendering", "ssg", "ssr", "static-site-generator", "universal", "vue"]}
+{"repo_id": 307260205, "repo_name": "yt-dlp/yt-dlp", "topics": ["python", "sponsorblock", "video-downloader", "youtube-dl", "youtube-dlc", "youtube-downloader", "yt-dlp"]}
+{"repo_id": 740710728, "repo_name": "keiyoushi/extensions-source", "topics": ["android", "hacktoberfest", "kotlin", "mihon", "tachiyomi"]}
+{"repo_id": 39464018, "repo_name": "apache/superset", "topics": ["analytics", "apache", "apache-superset", "asf", "bi", "business-analytics", "business-intelligence", "data-analysis", "data-analytics", "data-engineering", "data-science", "data-visualization", "data-viz", "flask", "python", "react", "sql-editor", "superset"]}
+{"repo_id": 226368338, "repo_name": "evcc-io/evcc", "topics": ["battery", "charger", "eebus", "emobility", "golang", "home-automation", "modbus", "mqtt", "ocpp", "pv", "semp", "solar", "sunspec", "wallbox"]}
+{"repo_id": 671269505, "repo_name": "BerriAI/litellm", "topics": ["ai-gateway", "anthropic", "azure-openai", "bedrock", "gateway", "langchain", "llm", "llm-gateway", "llmops", "openai", "openai-proxy", "vertex-ai"]}
+{"repo_id": 462597790, "repo_name": "aptos-labs/aptos-core", "topics": ["aptos", "blockchain", "blockchain-network", "move", "smart-contracts"]}
+{"repo_id": 28449431, "repo_name": "scylladb/scylladb", "topics": ["c-plus-plus", "cassandra", "cpp", "database", "nosql", "scylla", "seastar"]}
+{"repo_id": 43441403, "repo_name": "strapi/strapi", "topics": ["api", "cms", "cms-framework", "content-management", "content-management-system", "customizable", "dashboard", "graphql", "hacktoberfest", "headless-cms", "jamstack", "javascript", "koa", "koa2", "mysql", "no-code", "nodejs", "rest", "strapi", "typescript"]}
+{"repo_id": 696529789, "repo_name": "dotnet/aspire", "topics": ["cloud", "cloud-native", "distributed-systems", "dotnet", "dotnet-core"]}
+{"repo_id": 110178895, "repo_name": "brave/brave-browser", "topics": ["brave", "browser", "chromium", "linux", "macos", "windows"]}
+{"repo_id": 72495579, "repo_name": "go-gitea/gitea", "topics": ["bitbucket", "cicd", "devops", "docker-registry-v2", "git", "git-gui", "git-server", "gitea", "github", "github-actions", "gitlab", "go", "golang", "hacktoberfest", "maven-server", "npm-registry", "vue"]}
+{"repo_id": 388946490, "repo_name": "facebookincubator/velox", "topics": ["data-management", "query-processing"]}
+{"repo_id": 114834469, "repo_name": "GoogleCloudPlatform/magic-modules", "topics": ["gcp", "go", "golang", "google-cloud", "googlecloud", "googlecloudplatform", "magic-modules", "ruby", "terraform"]}
+{"repo_id": 319742187, "repo_name": "mdn/translated-content", "topics": ["documentation", "l10n", "mdn"]}
+{"repo_id": 1957456, "repo_name": "Dolibarr/dolibarr", "topics": ["accounting", "agenda", "crm", "erp", "hacktoberfest", "human-resource-managment", "invoice", "invoices", "invoicing", "mysql", "orders", "php", "postgresql", "proposal", "purchase", "quotations", "sales", "stock", "stocks", "suppliers"]}
+{"repo_id": 29078997, "repo_name": "dotnet/roslyn", "topics": ["csharp", "hacktoberfest", "roslyn", "visual-basic", "visual-studio"]}
+{"repo_id": 27286452, "repo_name": "ParadiseSS13/Paradise", "topics": ["byond", "game", "hacktoberfest", "role-playing", "ss13"]}
+{"repo_id": 701547123, "repo_name": "open-webui/open-webui", "topics": ["ai", "llm", "llm-ui", "llm-webui", "llms", "ollama", "ollama-webui", "open-webui", "openai", "rag", "self-hosted", "ui", "webui"]}
+{"repo_id": 327089870, "repo_name": "payloadcms/payload", "topics": ["cms", "content-management", "content-management-system", "express", "graphql", "headless", "headless-cms", "jamstack", "javascript", "mit-license", "mongodb", "nextjs", "nodejs", "open-source", "payload", "payloadcms", "postgres", "react", "typescript"]}
+{"repo_id": 585146387, "repo_name": "shadcn-ui/ui", "topics": ["components", "nextjs", "radix-ui", "react", "shadcn", "tailwindcss", "ui"]}
+{"repo_id": 74175805, "repo_name": "istio/istio", "topics": ["api-management", "circuit-breaker", "consul", "enforce-policies", "envoy", "fault-injection", "kubernetes", "lyft-envoy", "microservice", "microservices", "nomad", "polyglot-microservices", "proxies", "request-routing", "resiliency", "service-mesh"]}
+{"repo_id": 523043277, "repo_name": "astral-sh/ruff", "topics": ["linter", "pep8", "python", "python3", "ruff", "rust", "rustpython", "static-analysis", "static-code-analysis", "style-guide", "styleguide"]}
+{"repo_id": 51905353, "repo_name": "apache/arrow", "topics": ["arrow"]}
+{"repo_id": 302322, "repo_name": "gradle/gradle", "topics": ["build-tool", "good-first-issue", "gradle", "gradle-bt", "groovy", "hacktoberfest", "java", "kotlin"]}
+{"repo_id": 203843667, "repo_name": "microsoft/FluidFramework", "topics": ["collaboration", "crdt", "datastructure", "distributed", "fluid", "fluid-framework", "microsoft", "realtime"]}
+{"repo_id": 111455867, "repo_name": "smartcontractkit/chainlink", "topics": ["blockchain", "chainlink", "ethereum", "golang", "oracle", "solidity"]}
+{"repo_id": 54173593, "repo_name": "storybookjs/storybook", "topics": ["angular", "components", "design-systems", "documentation", "html", "javascript", "react", "react-native", "stories", "storybook", "styleguide", "svelte", "testing", "typescript", "ui", "vite", "vue", "web-components", "webpack", "workshop"]}
+{"repo_id": 858127, "repo_name": "pandas-dev/pandas", "topics": ["alignment", "data-analysis", "data-science", "flexible", "pandas", "python"]}
+{"repo_id": 53432472, "repo_name": "sonic-net/sonic-buildimage", "topics": ["hacktoberfest", "sonic"]}
+{"repo_id": 162405963, "repo_name": "gradio-app/gradio", "topics": ["data-analysis", "data-science", "data-visualization", "deep-learning", "deploy", "gradio", "gradio-interface", "hacktoberfest", "interface", "machine-learning", "models", "python", "python-notebook", "ui", "ui-components"]}
+{"repo_id": 235901813, "repo_name": "PostHog/posthog", "topics": ["ab-testing", "ai-analytics", "analytics", "cdp", "data-warehouse", "experiments", "feature-flags", "javascript", "product-analytics", "python", "react", "session-replay", "surveys", "typescript", "web-analytics"]}
+{"repo_id": 133442384, "repo_name": "denoland/deno", "topics": ["deno", "javascript", "rust", "typescript"]}
+{"repo_id": 434017296, "repo_name": "stackrox/stackrox", "topics": ["containers", "hacktoberfest", "k8s", "kubernetes", "security"]}
+{"repo_id": 35866694, "repo_name": "RocketChat/Rocket.Chat", "topics": ["chat", "collaboration", "foss", "free", "hacktoberfest", "javascript", "meteor", "mit", "real-time", "slack", "webrtc"]}
+{"repo_id": 23083156, "repo_name": "mui/material-ui", "topics": ["design-systems", "material-design", "react", "react-components"]}
+{"repo_id": 44662669, "repo_name": "dbeaver/dbeaver", "topics": ["database", "db2", "dbeaver", "erd", "gui", "java", "jdbc", "mysql", "nosql", "oracle", "postgresql", "redshift", "sql", "sqlite", "sqlserver"]}
+{"repo_id": 37448451, "repo_name": "mattermost/mattermost", "topics": ["collaboration", "golang", "hacktoberfest", "mattermost", "monorepo", "react", "react-native"]}
+{"repo_id": 633022779, "repo_name": "YoYoGames/GameMaker-Bugs", "topics": ["bugs"]}
+{"repo_id": 1644196, "repo_name": "JuliaLang/julia", "topics": ["hacktoberfest", "hpc", "julia", "julia-language", "julialang", "machine-learning", "numerical", "programming-language", "science", "scientific"]}
+{"repo_id": 589831718, "repo_name": "comfyanonymous/ComfyUI", "topics": ["pytorch", "stable-diffusion"]}
+{"repo_id": 463628495, "repo_name": "pytorch/executorch", "topics": ["deep-learning", "embedded", "gpu", "machine-learning", "mobile", "neural-network", "tensor"]}
+{"repo_id": 42372094, "repo_name": "bioconda/bioconda-recipes", "topics": ["bioinformatics", "conda", "hacktoberfest", "package-management"]}
+{"repo_id": 27737393, "repo_name": "qmk/qmk_firmware", "topics": ["atmel-avr", "c", "c-plus-plus", "clueboard", "ergodox-ez", "hacktoberfest", "keyboard-firmware", "keyboard-support", "olkb", "qmk"]}
+{"repo_id": 129717717, "repo_name": "grafana/loki", "topics": ["cloudnative", "grafana", "hacktoberfest", "logging", "loki", "prometheus"]}
+{"repo_id": 7634677, "repo_name": "openssl/openssl", "topics": ["cryptography", "decryption", "encryption", "openssl", "ssl", "tls"]}
+{"repo_id": 2928948, "repo_name": "Azure/azure-sdk-for-java", "topics": ["azure", "azure-resources", "azure-sdk", "azure-services", "hacktoberfest", "java", "media"]}
+{"repo_id": 24250009, "repo_name": "code-dot-org/code-dot-org", "topics": ["blockly", "code", "coding", "computer", "educational", "learning", "online", "science", "studio"]}
+{"repo_id": 260240241, "repo_name": "mui/mui-x", "topics": ["charts", "data-grid", "data-table", "date-picker", "date-range-picker", "hacktoberfest", "react", "time-picker"]}
+{"repo_id": 261828887, "repo_name": "hiero-ledger/hiero-consensus-node", "topics": ["hacktoberfest"]}
+{"repo_id": 358917318, "repo_name": "apache/datafusion", "topics": ["arrow", "big-data", "dataframe", "datafusion", "olap", "python", "query-engine", "rust", "sql"]}
+{"repo_id": 680120071, "repo_name": "microsoft/autogen", "topics": ["agentic", "agentic-agi", "agents", "ai", "autogen", "autogen-ecosystem", "chatgpt", "framework", "llm-agent", "llm-framework"]}
+{"repo_id": 10270250, "repo_name": "facebook/react", "topics": ["declarative", "frontend", "javascript", "library", "react", "ui"]}
+{"repo_id": 228103273, "repo_name": "apache/nuttx", "topics": ["embedded", "mcu", "microcontroller", "nuttx", "real-time", "rtos"]}
+{"repo_id": 17630288, "repo_name": "os-autoinst/os-autoinst-distri-opensuse", "topics": ["hacktoberfest"]}
+{"repo_id": 60537144, "repo_name": "microsoft/fluentui", "topics": ["components", "fluent", "microsoft", "office-ui-fabric", "react", "react-components"]}
+{"repo_id": 26337322, "repo_name": "rancher/rancher", "topics": ["cattle", "containers", "docker", "kubernetes", "orchestration", "rancher"]}
+{"repo_id": 9384267, "repo_name": "electron/electron", "topics": ["c-plus-plus", "chrome", "css", "electron", "html", "javascript", "nodejs", "v8", "works-with-codespaces"]}
+{"repo_id": 145183271, "repo_name": "Azure/Azure-Sentinel", "topics": ["cybersecurity", "sample-code"]}
+{"repo_id": 20587599, "repo_name": "apache/flink", "topics": ["big-data", "flink", "java", "python", "scala", "sql"]}
+{"repo_id": 51040886, "repo_name": "Azure/azure-cli", "topics": ["azure", "azure-cli", "cloud"]}
+{"repo_id": 335164964, "repo_name": "dataease/dataease", "topics": ["apache-doris", "business-intelligence", "data-analysis", "data-visualization", "echarts", "kettle", "superset", "tableau"]}
+{"repo_id": 252047483, "repo_name": "goonstation/goonstation", "topics": ["byond", "dm", "game", "goonstation", "hacktoberfest", "role-playing", "space", "ss13"]}
+{"repo_id": 28457823, "repo_name": "freeCodeCamp/freeCodeCamp", "topics": ["careers", "certification", "community", "curriculum", "d3", "education", "freecodecamp", "hacktoberfest", "javascript", "learn-to-code", "math", "nodejs", "nonprofits", "programming", "react", "teachers"]}
+{"repo_id": 54298946, "repo_name": "camunda/camunda", "topics": ["bpmn", "grpc", "java", "microservices", "orchestration-framework", "workflow", "workflow-engine"]}
+{"repo_id": 607289185, "repo_name": "microsoft/semantic-kernel", "topics": ["ai", "artificial-intelligence", "llm", "openai", "sdk"]}
+{"repo_id": 50904245, "repo_name": "apache/beam", "topics": ["batch", "beam", "big-data", "golang", "java", "python", "sql", "streaming"]}
+{"repo_id": 143040428, "repo_name": "github/codeql", "topics": ["codeql", "github-advanced-security", "github-security-lab", "semmle-ql", "works-with-codespaces"]}
+{"repo_id": 23891194, "repo_name": "Azure/azure-powershell", "topics": ["arm", "azure", "microsoft", "microsoft-azure-powershell", "powershell"]}
+{"repo_id": 324829379, "repo_name": "organicmaps/organicmaps", "topics": ["android", "app", "cpp", "cyclists", "hacktoberfest", "hikers", "ios", "java", "maps", "mobile", "mobile-app", "navigation", "objective-c", "offline", "offline-maps", "openstreetmap", "privacy", "routing", "tourists", "travelers"]}
+{"repo_id": 5349565, "repo_name": "prestodb/presto", "topics": ["big-data", "data", "hadoop", "hive", "java", "lakehouse", "presto", "query", "sql"]}
+{"repo_id": 204671232, "repo_name": "conan-io/conan-center-index", "topics": ["conan", "conan-center", "conan-index", "conan-packages", "conan-recipe", "cpp", "cpp-library", "dependencies", "hacktoberfest", "package-management", "package-manager"]}
+{"repo_id": 246203444, "repo_name": "ProvableHQ/leo", "topics": ["compiler", "leo", "programming-language", "zero-knowledge", "zksnarks"]}
+{"repo_id": 533917104, "repo_name": "wolfi-dev/os", "topics": ["wolfi"]}
+{"repo_id": 572984571, "repo_name": "twentyhq/twenty", "topics": ["crm", "crm-system", "customer", "good-first-issue", "graphql", "hacktoberfest", "javascript", "marketing", "monorepo", "nestjs", "open-source", "postgresql", "react", "reactjs", "sales", "typescript", "web"]}
+{"repo_id": 552877440, "repo_name": "juspay/hyperswitch", "topics": ["beginner-friendly", "featured", "finance", "hacktoberfest", "high-performance", "open-source", "orchestration", "payments", "postgresql", "redis", "restful-api", "rust", "sdk", "works-with-react"]}
+{"repo_id": 45717250, "repo_name": "tensorflow/tensorflow", "topics": ["deep-learning", "deep-neural-networks", "distributed", "machine-learning", "ml", "neural-network", "python", "tensorflow"]}
+{"repo_id": 158256479, "repo_name": "apache/iceberg", "topics": ["apache", "hacktoberfest", "iceberg"]}
+{"repo_id": 537233603, "repo_name": "paradigmxyz/reth", "topics": ["blockchain", "contributor-friendly", "distributed-systems", "ethereum", "execution-layer", "modular", "p2p", "rust"]}
+{"repo_id": 215783734, "repo_name": "deckhouse/deckhouse", "topics": ["kubernetes", "kubernetes-distribution", "kubernetes-platform"]}
+{"repo_id": 41288708, "repo_name": "sourcegraph/sourcegraph-public-snapshot", "topics": ["code-intelligence", "code-search", "cody", "repo-type-main", "sourcegraph"]}
+{"repo_id": 384520418, "repo_name": "MaaAssistantArknights/MaaAssistantArknights", "topics": ["arknights", "computer-vision", "maa"]}
+{"repo_id": 193215554, "repo_name": "n8n-io/n8n", "topics": ["ai", "apis", "automated", "automation", "cli", "data-flow", "development", "docker", "integration-framework", "integrations", "ipaas", "low-code", "low-code-platform", "n8n", "no-code", "node", "self-hosted", "typescript", "workflow", "workflow-automation"]}
+{"repo_id": 7512484, "repo_name": "ArduPilot/ardupilot", "topics": ["arducopter", "ardupilot", "arduplane", "ardurover", "ardusub", "autopilot", "auv", "copter", "drone", "dronekit", "mavlink", "plane", "robotics", "ros", "rov", "rover", "sub", "uas", "uav", "ugv"]}
+{"repo_id": 348060227, "repo_name": "withastro/astro", "topics": ["astro", "blog", "browser", "components", "hybrid", "islands", "node", "server", "static", "static-site-generator", "universal"]}
+{"repo_id": 1181927, "repo_name": "bitcoin/bitcoin", "topics": ["bitcoin", "c-plus-plus", "cryptocurrency", "cryptography", "p2p"]}
+{"repo_id": 196353673, "repo_name": "taosdata/TDengine", "topics": ["bigdata", "cloud-native", "cluster", "connected-vehicles", "database", "distributed", "financial-analysis", "industrial-iot", "iot", "metrics", "monitoring", "scalability", "sql", "tdengine", "time-series", "time-series-database", "tsdb"]}
+{"repo_id": 643445235, "repo_name": "lobehub/lobe-chat", "topics": ["ai", "artifacts", "chat", "chatgpt", "claude", "deepseek", "deepseek-r1", "function-calling", "gemini", "gpt", "knowledge-base", "nextjs", "ollama", "openai", "rag"]}
+{"repo_id": 829386281, "repo_name": "GSSoC24/Postman-Challenge", "topics": ["certification", "gssoc", "hacktoberfest", "postman", "postman-api"]}
+{"repo_id": 444497690, "repo_name": "LedgerHQ/ledger-live", "topics": ["ledger-live"]}
+{"repo_id": 52281283, "repo_name": "mastodon/mastodon", "topics": ["activity-stream", "activitypub", "docker", "fediverse", "mastodon", "microblog", "social-network", "social-web", "webfinger"]}
+{"repo_id": 192925833, "repo_name": "prisma/prisma", "topics": ["cockroachdb", "database", "javascript", "mariadb", "mongo", "mongodb", "mongodb-orm", "mssql", "mysql", "nodejs", "orm", "postgres", "postgresql", "prisma", "prisma-client", "query-builder", "sql-server", "sqlite", "sqlserver", "typescript"]}
+{"repo_id": 391740664, "repo_name": "open-metadata/OpenMetadata", "topics": ["data-catalog", "data-collaboration", "data-contracts", "data-discovery", "data-governance", "data-lineage", "data-observability", "data-profiling", "data-quality", "data-quality-checks", "data-science", "data-validation", "datadiscovery", "dataengineering", "dataquality", "dbt", "hacktoberfest", "metadata", "metadata-management", "snowflake"]}
+{"repo_id": 7122594, "repo_name": "directus/directus", "topics": ["api", "app", "cms", "composable", "data-visualization", "database", "directus", "graphql", "headless-cms", "javascript", "mariadb", "mssql", "mysql", "no-code", "node", "postgresql", "sql", "sqlite", "typescript", "vue"]}
+{"repo_id": 133134007, "repo_name": "OpenAPITools/openapi-generator", "topics": ["api", "api-client", "api-server", "generator", "hacktoberfest", "openapi", "openapi-generator", "openapi3", "rest", "rest-api", "rest-client", "restful-api", "sdk"]}
+{"repo_id": 76686583, "repo_name": "kubevirt/kubevirt", "topics": ["hacktoberfest", "kubernetes", "libvirt", "virtualization", "vms"]}
+{"repo_id": 366979357, "repo_name": "cmss13-devs/cmss13", "topics": ["byond", "game", "ss13"]}
+{"repo_id": 20773773, "repo_name": "bazelbuild/bazel", "topics": ["bazel", "build", "build-system", "correct", "fast", "multi-language", "scalable", "test"]}
+{"repo_id": 38982731, "repo_name": "home-assistant/frontend", "topics": ["frontend", "hacktoberfest", "home-assistant", "home-automation", "lit-element", "polymer", "webcomponents"]}
+{"repo_id": 1864233, "repo_name": "frappe/erpnext", "topics": ["accounting", "asset-management", "crm", "distribution", "erp", "erpnext", "frappe", "healthcare", "hrms", "manufacturing", "point-of-sale", "procurement", "project-management", "python", "retail", "support"]}
+{"repo_id": 309512982, "repo_name": "redpanda-data/redpanda", "topics": ["containers", "cpp", "event-driven", "go", "kafka", "kubernetes", "microservices", "realtime", "redpanda", "seastar", "storage-engine", "stream-processing", "streaming"]}
+{"repo_id": 6093316, "repo_name": "DefinitelyTyped/DefinitelyTyped", "topics": ["definition", "dts", "hacktoberfest", "types", "typescript", "typescript-definitions", "typings"]}
+{"repo_id": 26133979, "repo_name": "mozilla-mobile/firefox-ios", "topics": ["browser", "firefox", "ios-app", "mozilla", "swift"]}
+{"repo_id": 35726310, "repo_name": "dart-lang/sdk", "topics": ["dart", "language", "programming-language", "sdk"]}
+{"repo_id": 108311273, "repo_name": "Azure/azure-sdk-for-js", "topics": ["azure", "azure-sdk", "browser", "hacktoberfest", "javascript", "nodejs", "typescript"]}
+{"repo_id": 63984307, "repo_name": "dotnet/sdk", "topics": ["cli", "dotnet", "sdk", "visual-studio"]}
+{"repo_id": 234739976, "repo_name": "medusajs/medusa", "topics": ["commerce", "e-commerce", "ecommerce", "framework", "javascript", "medusa", "nodejs", "react", "typescript"]}
+{"repo_id": 435375021, "repo_name": "apache/incubator-gluten", "topics": ["arrow", "clickhouse", "simd", "spark-sql", "vectorization", "velox"]}
+{"repo_id": 86031674, "repo_name": "wandb/wandb", "topics": ["ai", "collaboration", "data-science", "data-versioning", "deep-learning", "experiment-track", "hyperparameter-optimization", "hyperparameter-search", "hyperparameter-tuning", "jax", "keras", "machine-learning", "ml-platform", "mlops", "model-versioning", "pytorch", "reinforcement-learning", "reproducibility", "tensorflow"]}
+{"repo_id": 426659329, "repo_name": "cloudflare/workers-sdk", "topics": ["cli", "cloudflare", "cloudflare-workers", "javascript", "serverless", "wasm"]}
+{"repo_id": 154739597, "repo_name": "jax-ml/jax", "topics": ["jax"]}
+{"repo_id": 699955973, "repo_name": "Yellow-Dog-Man/Resonite-Issues", "topics": ["frooxengine", "resonite"]}
+{"repo_id": 76474200, "repo_name": "apache/hudi", "topics": ["apacheflink", "apachehudi", "apachespark", "bigdata", "data-integration", "datalake", "hudi", "incremental-processing", "stream-processing"]}
+{"repo_id": 138754790, "repo_name": "duckdb/duckdb", "topics": ["analytics", "database", "embedded-database", "olap", "sql"]}
+{"repo_id": 141427485, "repo_name": "MetaMask/metamask-mobile", "topics": ["android", "dapps-browser", "ios", "javascript", "metamask", "react-native", "web3"]}
+{"repo_id": 69562331, "repo_name": "ls1intum/Artemis", "topics": ["apollon", "artificial-intelligence", "assessment", "autograding", "automatic-feedback", "computer-science", "education", "education-technology", "exam-mode", "exercises", "feedback", "gen-ai", "interactive-learning", "learning", "modeling-exercises", "programming-exercises", "research", "software-engineering", "text-exercises", "university"]}
+{"repo_id": 75277003, "repo_name": "thingsboard/thingsboard", "topics": ["cloud", "coap", "dashboard", "iot", "iot-analytics", "iot-platform", "iot-solutions", "java", "kafka", "lwm2m", "microservices", "middleware", "mqtt", "netty", "platform", "snmp", "thingsboard", "visualization", "websockets", "widgets"]}
+{"repo_id": 3328572, "repo_name": "getsentry/sentry-javascript", "topics": ["angular", "crash-reporting", "ember", "error-monitoring", "hacktoberfest", "javascript", "javascript-client", "nextjs", "node", "raven", "react", "sdk", "sentry", "sentry-client", "tag-production", "team-web-frontend", "typescript", "vue"]}
+{"repo_id": 161012019, "repo_name": "jellyfin/jellyfin", "topics": ["csharp", "dotnet", "jellyfin"]}
+{"repo_id": 6296790, "repo_name": "spring-projects/spring-boot", "topics": ["framework", "java", "spring", "spring-boot"]}
+{"repo_id": 429651616, "repo_name": "autowarefoundation/autoware_universe", "topics": ["3d-map", "autonomous-driving", "autonomous-vehicles", "autoware", "calibration", "planner", "ros", "ros2", "self-driving-car"]}
+{"repo_id": 14964475, "repo_name": "AvaloniaUI/Avalonia", "topics": ["android", "app-framework", "avalonia", "avaloniaui", "browser", "c-sharp", "cross-platform", "csharp", "desktop", "dotnet", "gui", "ios", "linux", "macos", "mobile", "mvvm", "wasm", "windows", "xamarin", "xaml"]}
+{"repo_id": 352933140, "repo_name": "ToolJet/ToolJet", "topics": ["docker", "hacktoberfest", "internal-applications", "internal-project", "internal-tool", "internal-tools", "javascript", "kubernetes", "low-code", "low-code-development-platform", "low-code-framework", "nestjs", "no-code", "nodejs", "openai", "reactjs", "self-hosted", "typeorm", "typescript", "web-development-tools"]}
+{"repo_id": 46398090, "repo_name": "datahub-project/datahub", "topics": ["data-catalog", "data-discovery", "data-governance", "datahub", "metadata"]}
+{"repo_id": 60010673, "repo_name": "elementor/elementor", "topics": ["editor-frontier", "united-elements"]}
+{"repo_id": 139199684, "repo_name": "PrefectHQ/prefect", "topics": ["automation", "data", "data-engineering", "data-ops", "data-science", "infrastructure", "ml-ops", "observability", "orchestration", "pipeline", "prefect", "python", "workflow", "workflow-engine"]}
+{"repo_id": 453068084, "repo_name": "risingwavelabs/risingwave", "topics": ["data-engineering", "database", "kafka", "materialized-view", "postgresql", "rust", "stream-processing"]}
+{"repo_id": 136202695, "repo_name": "mlflow/mlflow", "topics": ["ai", "apache-spark", "machine-learning", "ml", "mlflow", "model-management"]}
+{"repo_id": 20307838, "repo_name": "openwrt/packages", "topics": ["hacktoberfest"]}
+{"repo_id": 385634291, "repo_name": "grafana/mimir", "topics": ["metrics", "observability", "opentelemetry", "otlp", "prometheus", "tsdb"]}
+{"repo_id": 167405382, "repo_name": "SAP/ui5-webcomponents", "topics": ["open-source", "ui5", "ui5-webcomponents", "web-component", "webcomponent"]}
+{"repo_id": 66823715, "repo_name": "intel/ipex-llm", "topics": ["gpu", "llm", "pytorch", "transformers"]}
+{"repo_id": 515647260, "repo_name": "1Panel-dev/1Panel", "topics": ["1panel", "cockpit", "docker", "docker-ui", "lamp", "linux", "lnmp", "ollama", "webmin"]}
+{"repo_id": 499950832, "repo_name": "foundryvtt/pf2e", "topics": ["foundryvtt"]}
+{"repo_id": 158907057, "repo_name": "tgstation/TerraGov-Marine-Corps", "topics": ["byond", "corgis", "game", "hacktoberfest", "marines", "roleplaying", "space"]}
+{"repo_id": 204086862, "repo_name": "streamlit/streamlit", "topics": ["data-analysis", "data-science", "data-visualization", "deep-learning", "developer-tools", "machine-learning", "python", "streamlit"]}
+{"repo_id": 60667730, "repo_name": "lvgl/lvgl", "topics": ["c", "embedded", "graphics", "gui", "mcu", "microcontroller", "tft"]}
+{"repo_id": 330008801, "repo_name": "libsdl-org/SDL", "topics": ["sdl", "sdl2", "sdl3"]}
+{"repo_id": 771302083, "repo_name": "All-Hands-AI/OpenHands", "topics": ["agent", "artificial-intelligence", "chatgpt", "claude-ai", "cli", "developer-tools", "gpt", "llm", "openai"]}
+{"repo_id": 167694194, "repo_name": "blakeblackshear/frigate", "topics": ["ai", "camera", "google-coral", "home-assistant", "home-automation", "homeautomation", "mqtt", "nvr", "object-detection", "realtime", "rtsp", "tensorflow"]}
+{"repo_id": 183483988, "repo_name": "ruffle-rs/ruffle", "topics": ["emulator", "flash", "hacktoberfest", "reimplementation", "rust", "swf"]}
+{"repo_id": 440752086, "repo_name": "coder/coder", "topics": ["dev-tools", "development-environment", "go", "golang", "ide", "jetbrains", "remote-development", "terraform", "vscode"]}
+{"repo_id": 172104891, "repo_name": "MaterializeInc/materialize", "topics": ["data-store", "database", "distributed-systems", "kafka", "materialized-view", "operational-data-store", "postgresql", "postgresql-dialect", "rust", "sql", "stream-processing", "streaming", "streaming-data"]}
+{"repo_id": 19961085, "repo_name": "apache/pinot", "topics": ["java"]}
+{"repo_id": 377377122, "repo_name": "withastro/docs", "topics": ["astro", "docs", "documentation", "website"]}
+{"repo_id": 148657224, "repo_name": "trezor/trezor-suite", "topics": ["bitcoin", "cryptocurrency", "cryptography", "electron", "suite", "trezor", "typescript", "wallet", "web"]}
+{"repo_id": 178495478, "repo_name": "manwar/perlweeklychallenge-club", "topics": ["hacktoberfest"]}
+{"repo_id": 22456440, "repo_name": "ppy/osu", "topics": ["beatmap", "catch", "game", "mania", "osu", "rhythm", "taiko"]}
+{"repo_id": 2464908, "repo_name": "joomla/joomla-cms", "topics": ["cms", "content-management", "ha", "hacktoberfest", "joomla", "multilingual-websites", "php", "php-cms", "website-builder"]}
+{"repo_id": 778556932, "repo_name": "zen-browser/desktop", "topics": ["firefox", "firefox-based", "firefox-browser", "zen-browser"]}
+{"repo_id": 91253698, "repo_name": "ccxt/ccxt", "topics": ["altcoin", "api", "arbitrage", "bitcoin", "bot", "btc", "crypto", "cryptocurrencies", "cryptocurrency", "eth", "ethereum", "exchange", "invest", "library", "market-data", "memecoin", "merchant", "strategy", "trade", "trading"]}
+{"repo_id": 19753195, "repo_name": "openhab/openhab-addons", "topics": ["add-ons", "java", "openhab"]}
+{"repo_id": 339993112, "repo_name": "matrixorigin/matrixone", "topics": ["cloud-native", "database", "distributed-database", "distributed-systems", "go", "htap", "hyperconverged", "olap", "one-size-fits-all", "sql", "streaming"]}
+{"repo_id": 203611792, "repo_name": "OpenRailAssociation/osrd", "topics": ["railway", "simulation"]}
+{"repo_id": 162200234, "repo_name": "OpenCTI-Platform/opencti", "topics": ["cti", "cyber", "cybersecurity", "intelligence", "osint", "security", "threat-intelligence"]}
+{"repo_id": 126852331, "repo_name": "1024pix/pix", "topics": ["chai", "circleci", "cypress", "docker", "emberjs", "hacktoberfest", "hapijs", "knexjs", "mocha", "nock", "nodejs", "npm", "postgresql", "scalingo", "sinonjs"]}
+{"repo_id": 69390670, "repo_name": "daos-stack/daos", "topics": ["daos", "distributed-storage", "hyperconverged", "hyperscale", "kvstore", "nvme-storage", "object-store", "pmdk", "software-defined-storage", "spdk", "storage-as-a-service"]}
+{"repo_id": 157936592, "repo_name": "bcgov/entity", "topics": ["axios", "bcregistry", "blockchain", "flask", "flask-sqlalchemy", "government", "hyperledger-indy", "javascript", "jupyterhub", "keycloak", "kubernetes", "legal-entity-identifier", "oidc", "openshift", "postgres", "python3", "vue", "vue-router", "vuex"]}
+{"repo_id": 1217614, "repo_name": "xbmc/xbmc", "topics": ["android", "c-plus-plus", "entertainment-hub", "hacktoberfest", "home-theater", "ios", "kodi", "linux", "macos", "media-center", "media-player", "multimedia", "python", "windows-desktop", "windows-uwp", "xbmc", "xml"]}
+{"repo_id": 359754519, "repo_name": "Facepunch/sbox-issues", "topics": ["sbox"]}
+{"repo_id": 37346186, "repo_name": "termux/termux-packages", "topics": ["android", "hacktoberfest", "linux", "linux-distribution", "packages", "termux"]}
+{"repo_id": 5108051, "repo_name": "opencv/opencv", "topics": ["c-plus-plus", "computer-vision", "deep-learning", "image-processing", "opencv"]}
+{"repo_id": 68188478, "repo_name": "mendix/docs", "topics": ["documentation", "hugo", "mendix-documentation"]}
+{"repo_id": 281319253, "repo_name": "element-plus/element-plus", "topics": ["component-library", "element-plus", "element-ui", "vue", "vue-components", "vuejs"]}
+{"repo_id": 843222, "repo_name": "scikit-learn/scikit-learn", "topics": ["data-analysis", "data-science", "machine-learning", "python", "statistics"]}
+{"repo_id": 196701619, "repo_name": "tauri-apps/tauri", "topics": ["desktop-app", "high-performance", "mobile-app", "native-app", "rust", "web-frontend", "webview"]}
+{"repo_id": 3729629, "repo_name": "dotCMS/core", "topics": ["cloud", "cms", "content", "content-management-system", "dotcms", "dxp", "graphql", "headless-cms", "java", "opensouce"]}
+{"repo_id": 6358188, "repo_name": "apache/druid", "topics": ["druid"]}
+{"repo_id": 212382406, "repo_name": "apache/ozone", "topics": ["big-data", "hadoop", "kubernetes", "object-store", "s3", "storage"]}
+{"repo_id": 16157746, "repo_name": "dotnet/efcore", "topics": ["aspnet-product", "c-sharp", "database", "dotnet-core", "dotnet-framework", "dotnet-standard", "entity-framework", "hacktoberfest", "orm"]}
+{"repo_id": 109145553, "repo_name": "containers/podman", "topics": ["containers", "docker", "kubernetes", "linux", "oci"]}
+{"repo_id": 621799276, "repo_name": "chatchat-space/Langchain-Chatchat", "topics": ["chatbot", "chatchat", "chatglm", "chatgpt", "embedding", "faiss", "fastchat", "gpt", "knowledge-base", "langchain", "langchain-chatglm", "llama", "llm", "milvus", "ollama", "qwen", "rag", "retrieval-augmented-generation", "streamlit", "xinference"]}
+{"repo_id": 135275788, "repo_name": "ministryofjustice/cloud-platform-environments", "topics": ["cloud-platform", "go", "kubernetes-manifests", "terraform-configurations"]}
+{"repo_id": 9759448, "repo_name": "apache/cloudstack", "topics": ["cloud", "cloudstack", "iaas", "infrastructure", "java", "kubernetes", "kvm", "libvirt", "orchestration", "python", "virtual-machine", "virtualization", "vmware", "vsphere", "xcp-ng", "xenserver"]}
+{"repo_id": 186024298, "repo_name": "nushell/nushell", "topics": ["rust", "shell"]}
+{"repo_id": 155360607, "repo_name": "ovh/manager", "topics": ["angularjs", "hacktoberfest", "lerna", "ovhcloud", "react", "rollup", "vitest", "webpack", "workspace", "yarn"]}
+{"repo_id": 125098880, "repo_name": "ValveSoftware/Proton", "topics": ["proton"]}
+{"repo_id": 2884111, "repo_name": "magento/magento2", "topics": ["ecommerce", "ecommerce-platform", "hacktoberfest", "magento", "magento2", "php"]}
+{"repo_id": 28964450, "repo_name": "ckeditor/ckeditor5", "topics": ["ckeditor", "ckeditor5", "contenteditable", "javascript", "rich-text-editor", "rte", "wysiwyg", "wysiwyg-editor"]}
+{"repo_id": 150954997, "repo_name": "VictoriaMetrics/VictoriaMetrics", "topics": ["cluster", "database", "grafana", "graphite", "influxdb", "k8s", "kubernetes", "monitoring", "observability", "opentsdb", "prometheus", "promql", "scalability", "thanos", "tsdb"]}
+{"repo_id": 664592117, "repo_name": "sourcegraph/cody", "topics": ["ai", "intellij-plugin", "vscode-extension"]}
+{"repo_id": 39211337, "repo_name": "flutter/engine", "topics": ["c-plus-plus"]}
+{"repo_id": 7569578, "repo_name": "discourse/discourse", "topics": ["discourse", "ember", "forum", "javascript", "postgresql", "rails", "ruby"]}
+{"repo_id": 6201092, "repo_name": "mpv-player/mpv", "topics": ["audio", "c", "ffmpeg", "hacktoberfest", "libav", "mplayer", "mpv", "multimedia", "video"]}
+{"repo_id": 599320067, "repo_name": "langflow-ai/langflow", "topics": ["chatgpt", "generative-ai", "large-language-models", "react-flow"]}
+{"repo_id": 248372441, "repo_name": "filamentphp/filament", "topics": ["admin", "alpine-js", "builder", "cms", "forms", "laravel", "laravel-admin-panel", "livewire", "tables", "tailwind-css", "tall-stack"]}
+{"repo_id": 49767244, "repo_name": "primefaces/primeng", "topics": ["angular", "charts", "components", "datagrid", "datatable", "mit", "typescript", "ui"]}
+{"repo_id": 1460385, "repo_name": "scipy/scipy", "topics": ["algorithms", "closember", "python", "scientific-computing", "scipy"]}
+{"repo_id": 47203045, "repo_name": "DataDog/integrations-core", "topics": ["datadog", "datadog-agent", "dd", "integrations"]}
+{"repo_id": 268424739, "repo_name": "helix-editor/helix", "topics": ["kakoune", "rust", "text-editor", "vim"]}
+{"repo_id": 253846879, "repo_name": "determined-ai/determined", "topics": ["data-science", "deep-learning", "distributed-training", "hyperparameter-optimization", "hyperparameter-search", "hyperparameter-tuning", "keras", "kubernetes", "machine-learning", "ml-infrastructure", "ml-platform", "mlops", "pytorch", "tensorflow"]}
+{"repo_id": 291438522, "repo_name": "siyuan-note/siyuan", "topics": ["anki", "chatgpt", "deepseek", "electron", "evernote", "knowledge-base", "local-first", "markdown", "note-taking", "notes-app", "notion", "obsidian", "ocr", "openai", "pdf", "pkm", "s3", "self-hosted", "webdav"]}
+{"repo_id": 763272326, "repo_name": "Yawn-Sean/Daily_CF_Problems", "topics": ["codeforces", "competitive-programming"]}
+{"repo_id": 644686905, "repo_name": "continuedev/continue", "topics": ["ai", "chatgpt", "copilot", "developer-tools", "intellij", "jetbrains", "llm", "open-source", "openai", "pycharm", "software-development", "visual-studio-code", "vscode"]}
+{"repo_id": 101408117, "repo_name": "eclipse-openj9/openj9", "topics": ["compiler", "eclipse-openj9", "garbage-collector", "gc", "hacktoberfest", "interpreter", "java", "jit", "jvm", "runtime", "virtual-machine"]}
+{"repo_id": 38825372, "repo_name": "odoo/documentation", "topics": ["documentation", "odoo"]}
+{"repo_id": 721767116, "repo_name": "clash-verge-rev/clash-verge-rev", "topics": ["clash", "clash-meta", "clash-verge", "linux", "mac", "mihomo", "tauri-app", "windows"]}
+{"repo_id": 634043200, "repo_name": "modular/modular", "topics": ["ai", "language", "machine-learning", "modular", "mojo", "programming-language"]}
+{"repo_id": 1864194, "repo_name": "frappe/frappe", "topics": ["cms", "email", "erpnext", "frappe", "full-stack", "javascript", "low-code", "mariadb", "multitenant", "postgres", "python", "rest-api", "security", "socket-io", "web-framework", "webhooks"]}
+{"repo_id": 230885748, "repo_name": "goauthentik/authentik", "topics": ["authentication", "authentik", "authorization", "kubernetes", "oauth2", "oauth2-client", "oauth2-server", "oidc", "oidc-client", "oidc-provider", "proxy", "reverse-proxy", "saml", "saml-idp", "saml-sp", "security", "sso"]}
+{"repo_id": 49876476, "repo_name": "apache/shardingsphere", "topics": ["bigdata", "data-encryption", "data-pipeline", "database", "database-cluster", "database-gateway", "database-middleware", "distributed-database", "distributed-sql-database", "distributed-transaction", "encrypt", "mysql", "postgresql", "read-write-splitting", "shard", "sql"]}
+{"repo_id": 27732028, "repo_name": "GTNewHorizons/GT-New-Horizons-Modpack", "topics": ["gregtech", "minecraft", "modpack", "quests", "thaumcraft"]}
+{"repo_id": 210702427, "repo_name": "typst/typst", "topics": ["compiler", "markup", "typesetting"]}
+{"repo_id": 660489378, "repo_name": "microsoft/promptflow", "topics": ["ai", "ai-application-development", "ai-applications", "chatgpt", "gpt", "llm", "prompt", "prompt-engineering"]}
+{"repo_id": 188836864, "repo_name": "erigontech/erigon", "topics": ["blockchain", "ethereum"]}
+{"repo_id": 52308441, "repo_name": "status-im/status-mobile", "topics": ["android", "blockchain", "clojure", "clojurescript", "cryptocurrency", "ethereum", "ios", "messenger", "mobile", "re-frame", "react-native", "react-native-app", "reactnative", "reagent", "wallet"]}
+{"repo_id": 76599439, "repo_name": "FRRouting/frr", "topics": ["babel", "bgp", "eigrp", "evpn", "is-is", "ldp", "mpls", "msdp", "networking", "nhrp", "ospf", "pbr", "pim", "rip", "ripng", "routing", "vrrp"]}
+{"repo_id": 61572326, "repo_name": "DataDog/dd-trace-py", "topics": ["apm", "ci", "datadog", "debugging", "error-monitoring", "observability", "profiling", "python", "security", "tracing"]}
+{"repo_id": 10614101, "repo_name": "TheOdinProject/curriculum", "topics": ["css", "curriculum", "hacktoberfest", "html", "javascript", "lessons", "node", "nodejs", "ruby", "ruby-on-rails", "students"]}
+{"repo_id": 671654508, "repo_name": "biomejs/biome", "topics": ["css", "formatter", "javascript", "json", "jsx", "linter", "static-code-analysis", "typescript", "web"]}
+{"repo_id": 351806852, "repo_name": "neondatabase/neon", "topics": ["database", "postgres", "postgresql", "rust", "serverless"]}
+{"repo_id": 332880689, "repo_name": "coollabsio/coolify", "topics": ["analytics", "couchdb", "databases", "docker", "minio", "mongodb", "mysql", "mysql-database", "nextjs", "nodejs", "php", "postgresql", "reactjs", "redis", "self-hosting", "static", "svelte", "vscode", "vuejs"]}
+{"repo_id": 208145128, "repo_name": "iree-org/iree", "topics": ["compiler", "cuda", "jax", "machine-learning", "mlir", "onnx", "pytorch", "runtime", "spirv", "tensorflow", "vulkan"]}
+{"repo_id": 542284380, "repo_name": "usebruno/bruno", "topics": ["api-client", "automation", "git", "graphql-client", "javascript", "opensource", "testing"]}
+{"repo_id": 160083795, "repo_name": "SerenityOS/serenity", "topics": ["browser", "c-plus-plus", "desktop-environment", "kernel", "operating-system", "os", "unix"]}
+{"repo_id": 30634542, "repo_name": "ILIAS-eLearning/ILIAS", "topics": ["hacktoberfest", "ilias", "ilias-elearning", "lms", "php"]}
+{"repo_id": 40687563, "repo_name": "oppia/oppia", "topics": ["angular", "angularjs", "appengine", "appengine-python", "education", "hacktoberfest", "interactive", "javascript", "learning", "nonprofit", "python", "sdg", "sdg-4", "sdg4", "sdgs", "teaching", "tutor", "tutorials", "typescript", "web"]}
+{"repo_id": 379865325, "repo_name": "drizzle-team/drizzle-orm", "topics": ["bunjs", "d1", "libsql", "litefs", "mysql", "mysql2", "neon", "nodejs", "orm", "postgres", "postgresjs", "postgresql", "sql", "sqlite", "sqlite3", "sqljs", "turso", "typescript", "vercel-postgres"]}
+{"repo_id": 71948498, "repo_name": "localstack/localstack", "topics": ["aws", "cloud", "continuous-integration", "developer-tools", "localstack", "python", "testing"]}
+{"repo_id": 40997482, "repo_name": "vim/vim", "topics": ["c", "cross-platform", "text-editor", "vim"]}
+{"repo_id": 428561966, "repo_name": "SkylineCommunications/dataminer-docs", "topics": ["dataminer", "skyline-communications"]}
+{"repo_id": 6763587, "repo_name": "PrestaShop/PrestaShop", "topics": ["cms", "ecommerce", "ecommerce-framework", "ecommerce-platform", "hacktoberfest", "php", "php-framework", "prestashop"]}
+{"repo_id": 300155217, "repo_name": "CollaboraOnline/online", "topics": ["android", "cpp", "documents", "enterprise", "free-software", "hacktoberfest", "ios", "javascript", "libreoffice", "office", "open-source", "opensource", "productivity"]}
+{"repo_id": 17914657, "repo_name": "webcompat/web-bugs", "topics": ["webcompat"]}
+{"repo_id": 238797860, "repo_name": "ethereum-optimism/optimism", "topics": ["ethereum", "l2-scaling", "optimism", "ovm", "rollup"]}
+{"repo_id": 47190624, "repo_name": "conan-io/conan", "topics": ["c", "cmake", "conan", "cplusplus", "cpp", "multi-platform", "package-manager"]}
+{"repo_id": 119162419, "repo_name": "nextauthjs/next-auth", "topics": ["auth", "authentication", "csrf", "jwt", "nextauth", "nextjs", "nodejs", "nuxt", "nuxt-auth", "oauth", "oauth2", "oidc", "react", "remix-auth", "solid-auth", "solidjs", "sveltekit", "web"]}
+{"repo_id": 127769231, "repo_name": "DIYgod/RSSHub", "topics": ["bilibili", "douban", "dribbble", "instagram", "lofter", "pixiv", "rss", "rsshub", "spotify", "telegram", "tiktok", "twitter", "v2ex", "wechat", "weibo", "ximalaya", "youtube", "zhihu"]}
+{"repo_id": 39321023, "repo_name": "prebid/Prebid.js", "topics": ["bidder-adapter", "header-bidding", "prebid"]}
+{"repo_id": 183874244, "repo_name": "baidu/amis", "topics": ["admin", "frontend", "frontend-framework", "json", "low-code", "low-code-development-platform", "lowcode", "no-code"]}
+{"repo_id": 671825, "repo_name": "Graylog2/graylog2-server", "topics": ["amqp", "gelf", "graylog", "hacktoberfest", "kafka", "log-analysis", "log-collector", "log-management", "log-viewer", "logging", "logging-server", "secure-logging", "security", "siem", "syslog"]}
+{"repo_id": 41829476, "repo_name": "conda-forge/staged-recipes", "topics": ["conda-forge", "hacktoberfest"]}
+{"repo_id": 172700355, "repo_name": "hmcts/cnp-flux-config", "topics": ["flux"]}
+{"repo_id": 13233158, "repo_name": "obsproject/obs-studio", "topics": ["c", "c-plus-plus", "directshow", "facebook-live", "ffmpeg", "game-capture", "live-streaming", "screen-capture", "twitch-tv", "video-recording", "youtube-live"]}
+{"repo_id": 16554739, "repo_name": "elastic/beats", "topics": ["filebeat", "heartbeat", "metricbeat", "packetbeat", "winlogbeat"]}
+{"repo_id": 235860204, "repo_name": "deepspeedai/DeepSpeed", "topics": ["billion-parameters", "compression", "data-parallelism", "deep-learning", "gpu", "inference", "machine-learning", "mixture-of-experts", "model-parallelism", "pipeline-parallelism", "pytorch", "trillion-parameters", "zero"]}
+{"repo_id": 605673387, "repo_name": "labring/FastGPT", "topics": ["claude", "deepseek", "gpt-4", "llm", "nextjs", "openai", "qwen", "rag", "react", "workflow"]}
+{"repo_id": 304423150, "repo_name": "CDCgov/prime-reportstream", "topics": ["civic-tech", "fhir", "hl7", "public-health"]}
+{"repo_id": 6228403, "repo_name": "easybuilders/easybuild-easyconfigs", "topics": ["hpc", "linux", "python", "scientific-software"]}
+{"repo_id": 568098118, "repo_name": "makeplane/plane", "topics": ["django", "docker", "issue-tracker", "jira", "jira-alternative", "kanban", "linear", "nextjs", "postgresql", "product-management", "project-management", "python", "react", "redis", "rest-api", "typescript", "work-management"]}
+{"repo_id": 576201, "repo_name": "mrdoob/three.js", "topics": ["3d", "augmented-reality", "canvas", "html5", "javascript", "svg", "virtual-reality", "webaudio", "webgl", "webgl2", "webgpu", "webxr"]}
+{"repo_id": 525592995, "repo_name": "invoke-ai/InvokeAI", "topics": ["ai-art", "artificial-intelligence", "generative-art", "image-generation", "img2img", "inpainting", "latent-diffusion", "linux", "macos", "outpainting", "stable-diffusion", "txt2img", "windows"]}
+{"repo_id": 74627617, "repo_name": "commaai/openpilot", "topics": ["advanced-driver-assistance-systems", "driver-assistance-systems", "robotics"]}
+{"repo_id": 237867883, "repo_name": "metersphere/metersphere", "topics": ["api-testing", "continuous-testing", "jmeter", "metersphere", "postman", "swagger", "test-automation", "testcase", "testing", "testlink", "testlink-alternative"]}
+{"repo_id": 160313905, "repo_name": "primefaces/primevue", "topics": ["nuxt", "nuxtjs", "vue", "vue-component", "vue-components", "vue-datatable", "vue-datepicker", "vue-grid", "vue-library", "vue-select", "vue-table", "vue-tree", "vue-tree-table", "vue-ui-components", "vue3", "vuejs"]}
+{"repo_id": 10601208, "repo_name": "umbraco/Umbraco-CMS", "topics": ["asp-net-core", "cms", "csharp", "dotnet-core", "hacktoberfest", "umbraco", "umbraco-cms"]}
+{"repo_id": 50386243, "repo_name": "18F/identity-idp", "topics": ["civic-tech", "identity", "identity-provider", "oidc", "rails"]}
+{"repo_id": 26783295, "repo_name": "Kong/kong", "topics": ["ai", "ai-gateway", "api-gateway", "api-management", "apis", "artificial-intelligence", "cloud-native", "consul", "devops", "docker", "kong", "kubernetes", "kubernetes-ingress", "kubernetes-ingress-controller", "luajit", "microservice", "microservices", "nginx", "reverse-proxy", "serverless"]}
+{"repo_id": 75505125, "repo_name": "abpframework/abp", "topics": ["abp", "angular", "architecture", "aspnet", "aspnet-core", "aspnetcore", "blazor", "c-sharp", "csharp", "domain-driven-design", "dotnet-core", "framework", "multi-tenancy", "saas"]}
+{"repo_id": 413918947, "repo_name": "vercel/turborepo", "topics": ["build-system", "build-tool", "javascript", "monorepo", "typescript"]}
+{"repo_id": 384219990, "repo_name": "warpdotdev/Warp", "topics": ["bash", "linux", "macos", "rust", "shell", "terminal", "wasm", "zsh"]}
+{"repo_id": 52796596, "repo_name": "netbox-community/netbox", "topics": ["cabling", "dcim", "django", "infrastructure-management", "ipam", "netbox", "network", "network-automation", "python", "sot", "sysadmin"]}
+{"repo_id": 157554479, "repo_name": "meshery/meshery", "topics": ["cloud-native", "cncf", "control-plane", "docker", "gitops", "golang", "gsoc", "hacktoberfest", "infrastructure-as-code", "internal-developer-platform", "kubernetes", "kubernetes-operator", "management-plane", "meshery", "opa", "platform-engineering", "reactjs", "visualization", "wasm", "webassembly"]}
+{"repo_id": 472064898, "repo_name": "adobecom/milo", "topics": ["franklin"]}
+{"repo_id": 257485422, "repo_name": "vitejs/vite", "topics": ["build-tool", "dev-server", "frontend", "hmr", "vite"]}
+{"repo_id": 3351871, "repo_name": "qbittorrent/qBittorrent", "topics": ["bittorrent", "bittorrent-client", "c-plus-plus", "crossplatform", "torrent", "torrent-client"]}
+{"repo_id": 93163073, "repo_name": "dependabot/dependabot-core", "topics": ["dependencies", "docker", "dotnet", "elixir", "elm", "go", "java", "javascript", "php", "pnpm", "python", "ruby", "rubygems", "rust", "terraform"]}
+{"repo_id": 476642602, "repo_name": "web-infra-dev/rspack", "topics": ["build-tool", "bundler", "compiler", "esm", "javascript", "jsx", "loaders", "module-bundler", "rspack", "rstack", "rust", "typescript", "web", "web-performance", "webpack"]}
+{"repo_id": 99412308, "repo_name": "apache/seatunnel", "topics": ["apache", "batch", "cdc", "change-data-capture", "data-ingestion", "data-integration", "elt", "high-performance", "offline", "real-time", "streaming"]}
+{"repo_id": 654122609, "repo_name": "InternLM/lmdeploy", "topics": ["codellama", "cuda-kernels", "deepspeed", "fastertransformer", "internlm", "llama", "llama2", "llama3", "llm", "llm-inference", "turbomind"]}
+{"repo_id": 45885732, "repo_name": "nvaccess/nvda", "topics": ["accessibility", "blind", "screen-reader"]}
+{"repo_id": 158975124, "repo_name": "apache/iotdb", "topics": ["big-data", "database", "iot", "java", "nosql", "timeseries", "tsdb"]}
+{"repo_id": 3507455, "repo_name": "lichess-org/lila", "topics": ["chess", "free-software", "functional-programming", "game", "lichess", "non-profit", "play-framework", "scala", "type-safe", "typescript"]}
+{"repo_id": 164140756, "repo_name": "files-community/Files", "topics": ["alternatives", "csharp", "customization", "developer-tools", "dotnet", "file-manager", "files", "fluent", "fluent-design", "git", "good-first-issue", "power-user", "productivity", "utilities", "winappsdk", "windows", "windows-10", "windows-11", "winui", "xaml"]}
+{"repo_id": 520583586, "repo_name": "bloxstraplabs/bloxstrap", "topics": ["csharp", "launcher", "mod", "roblox"]}
+{"repo_id": 132453438, "repo_name": "unoplatform/uno", "topics": ["android", "c-sharp", "cross-platform", "csharp", "dotnet", "hacktoberfest", "linux", "macos", "mono", "mvvm", "roslyn", "uno", "uno-platform", "uwp", "wasm", "webassembly", "windows", "winui", "xamarin", "xaml"]}
+{"repo_id": 90506918, "repo_name": "rapidsai/cudf", "topics": ["arrow", "cpp", "cuda", "cudf", "dask", "data-analysis", "data-science", "dataframe", "gpu", "pandas", "pydata", "python", "rapids"]}
+{"repo_id": 100060912, "repo_name": "microsoft/terminal", "topics": ["cmd", "command-line", "console", "contributions-welcome", "good-first-issue", "hacktoberfest", "terminal", "windows", "windows-console", "windows-terminal", "wsl"]}
+{"repo_id": 85077558, "repo_name": "kamranahmedse/developer-roadmap", "topics": ["angular-roadmap", "backend-roadmap", "blockchain-roadmap", "computer-science", "dba-roadmap", "developer-roadmap", "devops-roadmap", "frontend-roadmap", "go-roadmap", "java-roadmap", "javascript-roadmap", "nodejs-roadmap", "python-roadmap", "qa-roadmap", "react-roadmap", "roadmap", "software-architect-roadmap", "vue-roadmap"]}
+{"repo_id": 208362715, "repo_name": "adobe/react-spectrum", "topics": ["accessibility", "design-systems", "react", "react-components", "ui-components", "wai-aria"]}
+{"repo_id": 120966336, "repo_name": "yogstation13/Yogstation", "topics": ["2d", "2d-game", "byond", "dm", "dream-maker", "game", "hacktoberfest", "multiplayer", "space", "spacestation13", "ss13", "station", "videogame", "yogstation"]}
+{"repo_id": 105590837, "repo_name": "aws-amplify/amplify-js", "topics": ["amazon-cognito", "analytics", "aws", "aws-amplify", "aws-apigateway", "aws-cognito", "aws-mobile", "aws-s3", "cloud-service", "cognito", "javascript", "metrics", "mobile-analytics", "pinpoint", "pwa", "react", "react-native", "storage"]}
+{"repo_id": 202429703, "repo_name": "firebase/flutterfire", "topics": ["dart", "firebase", "flutter", "google"]}
+{"repo_id": 353645846, "repo_name": "ArchipelagoMW/Archipelago", "topics": ["alttp", "archipelago", "factorio", "minecraft", "multiworld", "randomizer"]}
+{"repo_id": 42579199, "repo_name": "Aurorastation/Aurora.3", "topics": ["byond", "dm", "dreammaker", "game", "role-playing", "ss13"]}
+{"repo_id": 2944302, "repo_name": "wiredtiger/wiredtiger", "topics": ["hacktoberfest"]}
+{"repo_id": 51193526, "repo_name": "cosmos/cosmos-sdk", "topics": ["blockchain", "cometbft", "cosmos-sdk", "cryptocurrency", "go", "golang", "tendermint"]}
+{"repo_id": 336274588, "repo_name": "PaddlePaddle/PaddleNLP", "topics": ["bert", "compression", "distributed-training", "document-intelligence", "embedding", "ernie", "information-extraction", "llama", "llm", "neural-search", "nlp", "paddlenlp", "pretrained-models", "question-answering", "search-engine", "semantic-analysis", "sentiment-analysis", "transformers", "uie"]}
+{"repo_id": 67962648, "repo_name": "vuetifyjs/vuetify", "topics": ["javascript", "material", "material-components", "material-design", "material-theme", "semantic", "typescript", "ui", "ui-components", "ui-design", "ui-kit", "ui-library", "vue", "vue-components", "vue-material", "vuejs", "vuejs3", "vuetify", "vuetifyjs"]}
+{"repo_id": 35890081, "repo_name": "dotnet/docs", "topics": ["csharp", "dotnet", "dotnet-core", "fsharp", "hacktoberfest", "visual-basic"]}
+{"repo_id": 237647258, "repo_name": "meshtastic/firmware", "topics": ["esp32", "gps", "heltec", "hiking", "lora", "mesh", "mesh-networks", "meshtastic", "nrf52", "off-grid", "pico", "rp2040", "stm32", "ttgo", "ttgo-tbeam"]}
+{"repo_id": 130000551, "repo_name": "hackforla/website", "topics": ["docker", "docker-compose", "gh-pages", "ghpages", "hack-for-la", "jekyll"]}
+{"repo_id": 17728164, "repo_name": "hashicorp/terraform", "topics": ["cloud", "cloud-management", "graph", "infrastructure-as-code", "terraform"]}
+{"repo_id": 629635341, "repo_name": "microsoft/vscode-copilot-release", "topics": ["ai", "copilot", "copilot-chat", "copilot-x", "vscode"]}
+{"repo_id": 1148753, "repo_name": "spring-projects/spring-framework", "topics": ["framework", "spring", "spring-framework"]}
+{"repo_id": 202291859, "repo_name": "chatwoot/chatwoot", "topics": ["actioncable", "chat-widget", "conversation", "customer-support", "dashboard", "design", "docker", "docker-image", "hacktoberfest", "heroku", "intercom", "javascript", "livechat", "opensource", "rails", "ruby", "sass", "vuejs", "whatsapp", "zendesk"]}
+{"repo_id": 10391073, "repo_name": "openedx/edx-platform", "topics": ["backend-service", "hacktoberfest", "pr-sandboxes-enabled"]}
+{"repo_id": 115039706, "repo_name": "rust-lang/rust-analyzer", "topics": ["hacktoberfest", "lsp-server", "rust"]}
+{"repo_id": 288428676, "repo_name": "MudBlazor/MudBlazor", "topics": ["blazor", "blazor-client", "blazor-components", "blazor-server", "blazor-webassembly", "component", "component-library", "components", "csharp", "hacktoberfest", "material", "netcore", "wasm"]}
+{"repo_id": 7716883, "repo_name": "ankidroid/Anki-Android", "topics": ["android", "anki", "ankidroid", "education", "flashcards", "kotlin", "learning", "srs"]}
+{"repo_id": 10994345, "repo_name": "root-project/root", "topics": ["c-plus-plus", "cling", "data-analysis", "geometry", "graphics", "hacktoberfest", "interpreter", "machine-learning", "mathematics", "parallel", "physics", "python", "root", "root-cern", "statistics", "visualization"]}
+{"repo_id": 128479644, "repo_name": "esphome/esphome", "topics": ["esp32", "esp8266", "hacktoberfest", "home-assistant", "home-automation", "iot", "mqtt", "platformio", "python", "yaml"]}
+{"repo_id": 2168780, "repo_name": "luanti-org/luanti", "topics": ["c-plus-plus", "cpp17", "game-engine", "hacktoberfest", "lua", "minetest", "voxel", "voxel-engine"]}
+{"repo_id": 399618999, "repo_name": "Azure/LogicAppsUX", "topics": ["azure", "logicapps", "nodejs", "react"]}
+{"repo_id": 743230067, "repo_name": "RVC-Boss/GPT-SoVITS", "topics": ["text-to-speech", "tts", "vits", "voice-clone", "voice-cloneai", "voice-cloning"]}
+{"repo_id": 638629097, "repo_name": "Aider-AI/aider", "topics": ["anthropic", "chatgpt", "claude-3", "cli", "command-line", "gemini", "gpt-3", "gpt-35-turbo", "gpt-4", "gpt-4o", "llama", "openai", "sonnet"]}
+{"repo_id": 106580024, "repo_name": "Azure/azure-cli-extensions", "topics": ["azure-cli", "azure-cli-extension"]}
+{"repo_id": 519859998, "repo_name": "toeverything/AFFiNE", "topics": ["app", "crdt", "editor", "electron", "knowledge-base", "markdown", "miro", "notes", "notion", "notion-alternative", "rust", "rust-lang", "rust-language", "table", "tableview", "whiteboard", "wiki", "workspace"]}
+{"repo_id": 360522116, "repo_name": "heroui-inc/heroui", "topics": ["component-library", "components", "library", "reactjs"]}
+{"repo_id": 334274317, "repo_name": "opensearch-project/OpenSearch-Dashboards", "topics": ["analytics", "apache2", "foss", "opensearch", "search"]}
+{"repo_id": 38644841, "repo_name": "Opentrons/opentrons", "topics": ["biology", "robotics", "science"]}
+{"repo_id": 162613268, "repo_name": "ethereum-lists/chains", "topics": ["chainid", "chains", "eip155", "ethereum", "evm", "hacktoberfest"]}
+{"repo_id": 90194616, "repo_name": "pydantic/pydantic", "topics": ["hints", "json-schema", "parsing", "pydantic", "python", "python310", "python311", "python312", "python37", "python38", "python39", "validation"]}
+{"repo_id": 50049789, "repo_name": "youtube/cobalt", "topics": ["cpp", "web", "youtube"]}
+{"repo_id": 80249302, "repo_name": "craftcms/cms", "topics": ["cms", "content-management", "craft3", "craft4", "craftcms", "graphql", "php", "php7", "php8", "twig", "yii2"]}
+{"repo_id": 16851223, "repo_name": "idaholab/moose", "topics": ["amr", "fem", "finite-elements", "finite-volumes", "multiphysics", "object-oriented", "parallel", "simulation"]}
+{"repo_id": 359745886, "repo_name": "ministryofjustice/modernisation-platform-environments", "topics": ["aws", "civil-service", "environments", "modernisation-platform"]}
+{"repo_id": 253044228, "repo_name": "projectdiscovery/nuclei-templates", "topics": ["bugbounty", "exploit-development", "exploits", "fingerprint", "hacktoberfest", "nuclei", "nuclei-checks", "nuclei-templates", "security", "vulnerability-detection"]}
+{"repo_id": 116457726, "repo_name": "ethereum/ethereum-org-website", "topics": ["blockchain", "chakra-ui", "ethereum", "hacktoberfest", "nextjs", "react", "typescript", "web3"]}
+{"repo_id": 31629751, "repo_name": "cypress-io/cypress", "topics": ["angular-testing-library", "component-testing", "cypress", "cypress-cloud", "cypress-schematic", "end-to-end-testing", "react-testing-library", "svelte-testing-library", "test-replay", "testing-framework", "testing-library", "testing-tool", "vue-testing-library"]}
+{"repo_id": 702188183, "repo_name": "TheRealJoelmatic/RemoveAdblockThing", "topics": ["adblock", "remove-not-allowed", "tampermonkey", "tampermonkey-userscript", "undetected", "youtube", "youtube-adblocker"]}
+{"repo_id": 447060287, "repo_name": "apache/paimon", "topics": ["big-data", "data-ingestion", "flink", "paimon", "real-time-analytics", "spark", "streaming-datalake", "table-store"]}
+{"repo_id": 8986217, "repo_name": "koreader/koreader", "topics": ["cbz", "djvu", "djvu-reflow", "ebook", "ebook-reader", "eink", "epub", "ereader", "fb2", "kindle", "kobo", "luajit", "opds", "pdf", "pdf-reflow", "pocketbook", "reader", "reflow", "remarkable-tablet", "ubuntu-touch"]}
+{"repo_id": 6899875, "repo_name": "opf/openproject", "topics": ["angular", "bcf", "boards", "bug-tracker", "gantt", "gantt-chart", "ifc", "issue-tracker", "kanban", "openproject", "project-management", "project-planning", "roadmap", "ruby", "scrum", "timeline", "workflows"]}
+{"repo_id": 58876201, "repo_name": "easylist/easylist", "topics": ["adblock", "adblock-list", "adblock-plus", "adblocker", "adblocking", "easylist", "filterlist", "ublock", "ublock-origin"]}
+{"repo_id": 108761645, "repo_name": "nocodb/nocodb", "topics": ["admin-dashboard", "admin-ui", "airtable", "airtable-alternative", "automatic-api", "hacktoberfest", "low-code", "mariadb", "mysql", "no-code", "no-code-database", "no-code-platform", "postgresql", "rest-api", "restful-api", "spreadsheet", "sqlite", "sqlserver", "swagger"]}
+{"repo_id": 730534580, "repo_name": "infiniflow/ragflow", "topics": ["agent", "agents", "ai-search", "chatbot", "chatgpt", "deep-learning", "deepseek", "deepseek-r1", "document-parser", "document-understanding", "genai", "graphrag", "llm", "nlp", "ollama", "pdf-to-text", "rag", "retrieval-augmented-generation", "table-structure-recognition", "text2sql"]}
+{"repo_id": 9252268, "repo_name": "w3c/csswg-drafts", "topics": ["css"]}
+{"repo_id": 679222494, "repo_name": "getsolus/packages", "topics": ["hacktoberfest", "solus"]}
+{"repo_id": 569041, "repo_name": "curl/curl", "topics": ["c", "client", "curl", "ftp", "gopher", "hacktoberfest", "http", "https", "imaps", "ldap", "libcurl", "library", "mqtt", "pop3", "scp", "sftp", "transfer-data", "transferring-data", "user-agent", "websocket"]}
+{"repo_id": 357897199, "repo_name": "netbirdio/netbird", "topics": ["golang", "mesh", "mesh-networks", "nat-traversal", "netbird", "vpn", "wireguard", "wireguard-vpn", "wiretrustee", "zero-trust-network-access"]}
+{"repo_id": 20884782, "repo_name": "Ultimaker/Cura", "topics": ["3d-printing", "cura", "gcode", "gui", "pyqt6", "python", "qml", "slicer", "uranium"]}
+{"repo_id": 496143272, "repo_name": "centreon/centreon", "topics": ["alerting", "analytics", "dashboard", "devops", "graphing", "metrics", "monitoring", "observability", "time-series", "troubleshooting"]}
+{"repo_id": 7248956, "repo_name": "ValveSoftware/steam-for-linux", "topics": ["linux", "steam"]}
+{"repo_id": 486815039, "repo_name": "actualbudget/actual", "topics": ["budgeting", "finance", "money", "personal-finance"]}
+{"repo_id": 149351199, "repo_name": "SAP/spartacus", "topics": ["commerce-cloud", "open-source"]}
+{"repo_id": 908607, "repo_name": "numpy/numpy", "topics": ["numpy", "python"]}
+{"repo_id": 6838921, "repo_name": "prometheus/prometheus", "topics": ["alerting", "graphing", "hacktoberfest", "metrics", "monitoring", "prometheus", "time-series"]}
+{"repo_id": 27911088, "repo_name": "apache/nifi", "topics": ["hacktoberfest", "java", "nifi"]}
+{"repo_id": 357625148, "repo_name": "Codecademy/docs", "topics": ["codecademy", "documentation", "encyclopedia", "glossary", "hacktoberfest", "wiki"]}
+{"repo_id": 479289739, "repo_name": "rerun-io/rerun", "topics": ["computer-vision", "cpp", "multimodal", "python", "robotics", "rust", "visualization"]}
+{"repo_id": 4164482, "repo_name": "django/django", "topics": ["apps", "django", "framework", "models", "orm", "python", "templates", "views", "web"]}
+{"repo_id": 5298790, "repo_name": "PX4/PX4-Autopilot", "topics": ["autonomous", "autopilot", "avoidance", "dds", "drone", "dronecode", "drones", "fixed-wing", "hacktoberfest", "mavlink", "mavros", "multicopter", "pixhawk", "px4", "qgroundcontrol", "ros", "ros2", "uas", "uav", "ugv"]}
+{"repo_id": 23418517, "repo_name": "apache/hadoop", "topics": ["hadoop"]}
+{"repo_id": 182849188, "repo_name": "delta-io/delta", "topics": ["acid", "analytics", "big-data", "delta-lake", "spark"]}
+{"repo_id": 70127218, "repo_name": "espressif/arduino-esp32", "topics": ["arduino", "esp-idf", "esp32", "platformio"]}
+{"repo_id": 6520784, "repo_name": "RPCS3/rpcs3", "topics": ["assembly-language", "c", "cpp", "emulation", "emulator", "hacktoberfest", "llvm", "multiplatform", "opengl", "ps3", "vulkan"]}
+{"repo_id": 527591471, "repo_name": "AUTOMATIC1111/stable-diffusion-webui", "topics": ["ai", "ai-art", "deep-learning", "diffusion", "gradio", "image-generation", "image2image", "img2img", "pytorch", "stable-diffusion", "text2image", "torch", "txt2img", "unstable", "upscaling", "web"]}
+{"repo_id": 591902831, "repo_name": "Bubberstation/Bubberstation", "topics": ["furry", "furry-games", "furrygamesindex", "hackoberfest", "hacktoberfest", "hacktoberfest2023", "roleplaying", "roleplaying-game", "ss13"]}
+{"repo_id": 437011, "repo_name": "openzfs/zfs", "topics": ["file-system", "openzfs", "system-software"]}
+{"repo_id": 334825694, "repo_name": "deepmodeling/abacus-develop", "topics": ["ab-initio", "density-functional-theory", "dft", "electronic-structure"]}
+{"repo_id": 673412924, "repo_name": "modelscope/ms-swift", "topics": ["agent", "deepseek-r1", "deploy", "distill", "embedding", "grpo", "internvl", "liger", "llama", "llama3-3", "llm", "lora", "multimodal", "open-r1", "peft", "qwen2-5", "qwen2-vl", "rft", "sft"]}
+{"repo_id": 33837371, "repo_name": "getsentry/sentry-docs", "topics": ["docs", "documentation", "hacktoberfest", "sentry-documentation", "tag-production", "team-web-frontend"]}
+{"repo_id": 7035651, "repo_name": "scala/scala3", "topics": ["compiler", "dotty", "epfl", "scala", "scala3"]}
+{"repo_id": 113404957, "repo_name": "kata-containers/kata-containers", "topics": ["acrn", "containers", "cri", "cri-o", "docker", "firecracker", "k8s", "kubernetes", "kvm", "oci", "qemu", "security", "virtual-machine", "virtualization"]}
+{"repo_id": 3618133, "repo_name": "web-platform-tests/wpt", "topics": ["blink", "browser", "dom", "firefox", "gecko", "google-chrome", "html", "javascript", "microsoft-edge", "opera", "safari", "test-automation", "test-runner", "testing", "w3c", "web-development", "web-standards", "webkit", "whatwg"]}
+{"repo_id": 528464304, "repo_name": "Vendicated/Vencord", "topics": ["discord", "mod", "plugins", "themes", "vendetta", "vendetta-plugins"]}
+{"repo_id": 262342594, "repo_name": "obsidianmd/obsidian-releases", "topics": ["obsidian", "obsidian-md"]}
+{"repo_id": 438331492, "repo_name": "clerk/javascript", "topics": ["authentication", "expo", "gatsby", "gatsbyjs", "hasura", "javascript", "jwt", "jwt-authentication", "next", "nextjs", "nodejs", "react", "redwood", "redwoodjs", "remix-run"]}
+{"repo_id": 156293205, "repo_name": "pytorch/xla", "topics": ["compiler", "deep-learning", "pytorch", "xla"]}
+{"repo_id": 731390704, "repo_name": "ReVanced/revanced-patches", "topics": ["android", "dalvik", "kotlin", "patches", "revanced", "reverse-engineering"]}
+{"repo_id": 192640529, "repo_name": "HumanSignal/label-studio", "topics": ["annotation", "annotation-tool", "annotations", "boundingbox", "computer-vision", "data-labeling", "dataset", "datasets", "deep-learning", "image-annotation", "image-classification", "image-labeling", "image-labelling-tool", "label-studio", "labeling", "labeling-tool", "mlops", "semantic-segmentation", "text-annotation", "yolo"]}
+{"repo_id": 55870442, "repo_name": "TauCetiStation/TauCetiClassic", "topics": ["byond", "dm", "game", "ss13", "tauceti", "taucetistation"]}
+{"repo_id": 599431918, "repo_name": "oxc-project/oxc", "topics": ["compiler", "javascript", "linter", "minifier", "parser", "transpiler", "typescript"]}
+{"repo_id": 448599559, "repo_name": "deepflowio/deepflow", "topics": ["apm", "gpu", "kubernetes", "llm", "opentelemetry", "wasm", "zero-code"]}
+{"repo_id": 15379620, "repo_name": "PCSX2/pcsx2", "topics": ["cpp", "emulation", "emulator", "pcsx2", "ps2"]}
+{"repo_id": 424598738, "repo_name": "apollographql/router", "topics": ["apollo", "federated-graph", "federation", "gateway", "gateway-api", "graph-router", "graphql"]}
+{"repo_id": 235468657, "repo_name": "PipedreamHQ/pipedream", "topics": ["apis", "automation", "bash", "cli", "data-flow", "event-sourcing", "eventsourcing", "golang", "integration-flow", "integrations", "ipaas", "low-code", "low-code-development-platform", "nodejs", "python", "serverless", "typescript", "workflow", "workflows"]}
+{"repo_id": 404320053, "repo_name": "foundry-rs/foundry", "topics": ["blockchain", "dapp", "dapptools", "eth", "ethereum", "evm", "framework", "fuzzing", "mainnet-fork", "rust", "seth", "solidity", "testing", "tooling"]}
+{"repo_id": 379584201, "repo_name": "Cumulocity-IoT/c8y-docs", "topics": ["cumulocity-documentation", "cumulocity-iot", "hugo", "iot-analytics"]}
+{"repo_id": 61980658, "repo_name": "azerothcore/azerothcore-wotlk", "topics": ["azerothcore", "emulator", "game", "game-server", "gaming", "hacktoberfest", "mangos", "mmorpg", "mmorpg-game", "mmorpg-server", "modular", "scriptdev2", "server", "sunwellcore", "trinitycore", "world-of-warcraft", "wow"]}
+{"repo_id": 19374812, "repo_name": "telegramdesktop/tdesktop", "topics": ["messenger", "multi-platform", "telegram", "telegram-desktop", "telegram-solution"]}
+{"repo_id": 33015583, "repo_name": "keras-team/keras", "topics": ["data-science", "deep-learning", "jax", "machine-learning", "neural-networks", "python", "pytorch", "tensorflow"]}
+{"repo_id": 129936360, "repo_name": "PennyLaneAI/pennylane", "topics": ["autograd", "automatic-differentiation", "cirq", "deep-learning", "differentiable-computing", "hacktoberfest", "jax", "machine-learning", "neural-network", "optimization", "python", "pytorch", "qiskit", "qml", "quantum", "quantum-chemistry", "quantum-computing", "quantum-machine-learning", "strawberryfields", "tensorflow"]}
+{"repo_id": 139156354, "repo_name": "cvat-ai/cvat", "topics": ["annotation", "annotation-tool", "annotations", "boundingbox", "computer-vision", "computer-vision-annotation", "dataset", "deep-learning", "image-annotation", "image-classification", "image-labeling", "image-labelling-tool", "imagenet", "labeling", "labeling-tool", "object-detection", "pytorch", "semantic-segmentation", "tensorflow", "video-annotation"]}
+{"repo_id": 299354207, "repo_name": "rustdesk/rustdesk", "topics": ["anydesk", "dart", "flutter", "flutter-apps", "flutter-desktop", "flutter-examples", "flutter-mobile", "flutter-ui", "flutter-web", "hacktoberfest", "linux", "p2p", "rdp", "remote-control", "remote-desktop", "rust", "rust-lang", "teamviewer", "vnc", "wayland"]}
+{"repo_id": 292052392, "repo_name": "department-of-veterans-affairs/va-mobile-app", "topics": ["mobile"]}
+{"repo_id": 55072677, "repo_name": "weaviate/weaviate", "topics": ["approximate-nearest-neighbor-search", "generative-search", "grpc", "hnsw", "hybrid-search", "image-search", "information-retrieval", "mlops", "nearest-neighbor-search", "neural-search", "recommender-system", "search-engine", "semantic-search", "semantic-search-engine", "similarity-search", "vector-database", "vector-search", "vector-search-engine", "vectors", "weaviate"]}
+{"repo_id": 505864478, "repo_name": "Shopify/cli", "topics": ["cli", "oclif", "shopify", "shopify-apps", "shopify-themes", "typescript"]}
+{"repo_id": 3386088, "repo_name": "NixOS/nix", "topics": ["c-plus-plus", "declarative-language", "functional-programming", "nix", "package-manager"]}
+{"repo_id": 19816070, "repo_name": "MariaDB/server", "topics": ["amazon-web-services", "database", "fulltext-search", "galera", "geographical-information-system", "innodb", "json", "mariadb", "mysql", "rdbms", "relational-databases", "sql", "storage-engine", "vector-database"]}
+{"repo_id": 596377730, "repo_name": "openobserve/openobserve", "topics": ["analytics", "apm", "datadog", "elasticsearch", "grafana", "jaeger", "kibana", "log-analytics", "log-management", "log-search", "logs", "metrics", "monitoring", "observability", "openobserve", "opentelemetry", "prometheus", "rust-lang", "splunk", "traces"]}
+{"repo_id": 371620664, "repo_name": "SAP/open-ux-tools", "topics": ["fiori", "fiori-elements", "fiori-tools", "ui5"]}
+{"repo_id": 647676122, "repo_name": "TencentBlueKing/blueking-dbm", "topics": ["db", "dbms", "dbs", "dms", "doris", "elasticsearch", "go", "hdfs", "influxdb", "kafka", "mongodb", "mysql", "pulsar", "python", "redis", "sqlserver", "victoriametrics", "vm"]}
+{"repo_id": 322484700, "repo_name": "jj-vcs/jj", "topics": ["cli", "git", "jj", "jujutsu", "mercurial", "vcs"]}
+{"repo_id": 740303686, "repo_name": "sgl-project/sglang", "topics": ["cuda", "deepseek", "deepseek-llm", "deepseek-r1", "deepseek-r1-zero", "deepseek-v3", "inference", "llama", "llama3", "llama3-1", "llava", "llm", "llm-serving", "moe", "pytorch", "transformer", "vlm"]}
+{"repo_id": 76734068, "repo_name": "renovatebot/renovate", "topics": ["azure-devops", "bitbucket", "dependencies", "dependencies-checking", "dependency-manager", "github", "gitlab", "npm", "package-management"]}
+{"repo_id": 66639319, "repo_name": "ppy/osu-wiki", "topics": ["hacktoberfest", "osu", "wiki"]}
+{"repo_id": 644461337, "repo_name": "vercel/ai", "topics": ["artificial-intelligence", "generative-ai", "generative-ui", "huggingface", "javascript", "language-model", "llm", "nextjs", "openai", "react", "solidjs", "svelte", "typescript", "vercel", "vue"]}
+{"repo_id": 9852918, "repo_name": "TryGhost/Ghost", "topics": ["blogging", "cms", "creator-economy", "ghost", "hacktoberfest", "headless-cms", "jamstack", "javascript", "journalism", "nodejs", "publishing", "web-application"]}
+{"repo_id": 49609581, "repo_name": "PowerShell/PowerShell", "topics": ["command-line", "hacktoberfest", "linux", "macos", "netcore", "powershell", "shell", "windows"]}
+{"repo_id": 89033556, "repo_name": "firebase/firebase-ios-sdk", "topics": ["authentication", "database-as-a-service", "firebase", "firebase-auth", "firebase-authentication", "firebase-database", "firebase-messaging", "firebase-storage", "ios-sdk", "objective-c", "push-notifications", "storage-service"]}
+{"repo_id": 600596928, "repo_name": "danny-avila/LibreChat", "topics": ["ai", "anthropic", "artifacts", "assistant-api", "aws", "azure", "chatgpt", "chatgpt-clone", "claude", "clone", "dall-e-3", "deepseek", "gemini", "google", "librechat", "o1", "openai", "plugins", "vision", "webui"]}
+{"repo_id": 153711830, "repo_name": "dotnet/winforms", "topics": ["desktop", "hacktoberfest", "help-wanted", "windows-forms", "winforms"]}
+{"repo_id": 47882383, "repo_name": "godotengine/godot-docs", "topics": ["docs", "documentation", "game-development", "game-engine", "gamedev", "godot", "godotengine", "multi-platform", "open-source"]}
+{"repo_id": 518122174, "repo_name": "Hex-Dragon/PCL2", "topics": ["launcher", "minecraft", "minecraft-launcher"]}
+{"repo_id": 72561765, "repo_name": "sapcc/helm-charts", "topics": ["helm", "kubernetes", "openstack"]}
+{"repo_id": 15019962, "repo_name": "tldr-pages/tldr", "topics": ["android", "bsd", "cheatsheet", "cheatsheets", "command-line", "console", "documentation", "examples", "hacktoberfest", "help", "linux", "macos", "man-page", "manpages", "manual", "osx", "shell", "terminal", "tldr", "windows"]}
+{"repo_id": 84835535, "repo_name": "carbon-design-system/carbon", "topics": ["design-system", "hacktoberfest", "javascript", "react", "scss"]}
+{"repo_id": 81815495, "repo_name": "KratosMultiphysics/Kratos", "topics": ["bsd-license", "c-plus-plus", "dem", "fem", "kratos", "kratos-multiphysics", "mpi", "multi-platform", "multiphysics", "numerical-methods", "openmp", "parallel-computing", "python"]}
+{"repo_id": 808045485, "repo_name": "LadybirdBrowser/ladybird", "topics": ["browser", "browser-engine"]}
+{"repo_id": 631431061, "repo_name": "apache/gravitino", "topics": ["ai-catalog", "data-catalog", "datalake", "federated-query", "lakehouse", "metadata", "metalake", "model-catalog", "opendatacatalog", "skycomputing", "stratosphere"]}
+{"repo_id": 862449441, "repo_name": "stackblitz/bolt.new", "topics": ["ai-playground", "anthropic", "chatbot", "webcontainers-api"]}
+{"repo_id": 612344730, "repo_name": "ChatGPTNextWeb/NextChat", "topics": ["calclaude", "chatgpt", "claude", "cross-platform", "desktop", "fe", "gemini", "gemini-pro", "gemini-server", "gemini-ultra", "gpt-4o", "groq", "nextjs", "ollama", "react", "tauri", "tauri-app", "vercel", "webui"]}
+{"repo_id": 165088483, "repo_name": "esphome/issues", "topics": ["esp32", "esp8266", "home-assistant", "home-automation", "iot", "wifi"]}
+{"repo_id": 480573177, "repo_name": "envoyproxy/gateway", "topics": ["api-gateway", "cncf", "envoy", "gateway-api", "go-control-plane", "hacktoberfest", "kubernetes"]}
+{"repo_id": 239001792, "repo_name": "Azure/AgentBaker", "topics": ["agent", "cloud-init", "k8s", "os", "vhd"]}
+{"repo_id": 152842728, "repo_name": "iTwin/itwinjs-core", "topics": ["autodesk", "bentley", "bim", "digital-twin", "imodel", "itwin", "monorepo", "nodejs", "rush", "sqlite", "typescript", "webgl"]}
+{"repo_id": 10441188, "repo_name": "vgstation-coders/vgstation13", "topics": ["byond", "dm", "game", "hacktoberfest", "ss13", "vgstation"]}
+{"repo_id": 50160261, "repo_name": "PaperMC/Paper", "topics": ["bukkit", "hacktoberfest", "java", "minecraft", "minecraft-api", "minecraft-performance", "minecraft-server", "paper", "paper-api", "papermc", "tacos"]}
+{"repo_id": 518698474, "repo_name": "taikoxyz/taiko-mono", "topics": ["based", "ethereum", "layer2", "rollup", "taiko", "zk"]}
+{"repo_id": 11914939, "repo_name": "ScoopInstaller/Extras", "topics": ["scoop", "scoop-apps", "scoop-bucket"]}
+{"repo_id": 9432220, "repo_name": "wesnoth/wesnoth", "topics": ["fantasy", "free", "game", "opensource", "strategy-game", "turn-based-strategy"]}
+{"repo_id": 365505203, "repo_name": "ss220-space/Paradise", "topics": ["ss13"]}
+{"repo_id": 542714, "repo_name": "ravendb/ravendb", "topics": ["c-sharp", "database", "document-database", "nosql", "nosql-data-storage", "nosql-databases", "ravendb"]}
+{"repo_id": 227686161, "repo_name": "runelite/plugin-hub", "topics": ["runelite"]}
+{"repo_id": 32231207, "repo_name": "endless-sky/endless-sky", "topics": ["2d-game", "adventure-game", "arcade-game", "c-plus-plus", "cpp", "endless-sky", "exploration", "free", "game", "game-development", "gamedev", "indie", "modding", "multiplatform", "open-source", "opengl", "opensource", "rpg", "space", "top-down"]}
+{"repo_id": 185709634, "repo_name": "Esri/calcite-design-system", "topics": ["accessibility", "arcgis-online", "calcite", "calcite-components", "component-library", "custom-elements", "design-system", "esri", "hacktoberfest", "i18n", "stenciljs", "typescript", "ui", "web-components"]}
+{"repo_id": 100982449, "repo_name": "argoproj/argo-workflows", "topics": ["airflow", "argo", "argo-workflows", "batch-processing", "cloud-native", "cncf", "dag", "data-engineering", "gitops", "hacktoberfest", "k8s", "knative", "kubernetes", "machine-learning", "mlops", "pipelines", "workflow", "workflow-engine"]}
+{"repo_id": 231111750, "repo_name": "CCBlueX/LiquidBounce", "topics": ["fabric", "fabricmc", "hacked-client", "liquidbounce", "minecraft", "minecraft-mod", "utility-mod"]}
+{"repo_id": 436658287, "repo_name": "surrealdb/surrealdb", "topics": ["backend-as-a-service", "cloud-database", "database", "database-as-a-service", "developer-tools", "devtools", "distributed", "distributed-database", "document-database", "graph-database", "iot-database", "nosql", "realtime-database", "serverless", "sql", "surreal", "surrealdb", "web"]}
+{"repo_id": 3638964, "repo_name": "ansible/ansible", "topics": ["ansible", "hacktoberfest", "python"]}
+{"repo_id": 46374199, "repo_name": "IntelRealSense/librealsense", "topics": ["camera-api", "computer-vision", "developer-kits", "hardware", "library", "librealsense", "sdk"]}
+{"repo_id": 169677297, "repo_name": "vlang/v", "topics": ["compiler", "language", "programming-language", "v"]}
+{"repo_id": 222824662, "repo_name": "dagger/dagger", "topics": ["buildkit", "ci-cd", "containers", "continuous-delivery", "continuous-deployment", "continuous-integration", "deployment", "devops", "docker"]}
+{"repo_id": 521778721, "repo_name": "secondlife/viewer", "topics": ["3d", "chat", "game-engine", "metaverse", "mmo", "modeling", "multiplayer", "sandbox", "scripting", "secondlife", "simulation", "virtual-reality", "virtual-worlds"]}
+{"repo_id": 135623245, "repo_name": "thesofproject/sof", "topics": ["audio", "dsp", "firmware", "sound"]}
+{"repo_id": 315377678, "repo_name": "apache/ignite-3", "topics": ["big-data", "cache", "cloud", "data-management-platform", "database", "distributed-sql-database", "ignite", "in-memory-computing", "in-memory-database", "iot", "network-client", "network-server", "sql"]}
+{"repo_id": 105627846, "repo_name": "reactos/reactos", "topics": ["c", "drivers", "gpl", "hacktoberfest", "kernel", "operating-system", "os", "osdev", "reactos", "win32", "win32api", "windows", "x86"]}
+{"repo_id": 634081686, "repo_name": "mlc-ai/mlc-llm", "topics": ["language-model", "llm", "machine-learning-compilation", "tvm"]}
+{"repo_id": 653496050, "repo_name": "xorbitsai/inference", "topics": ["artificial-intelligence", "chatglm", "deployment", "flan-t5", "gemma", "ggml", "glm4", "inference", "llama", "llama3", "llamacpp", "llm", "machine-learning", "mistral", "openai-api", "pytorch", "qwen", "vllm", "whisper", "wizardlm"]}
+{"repo_id": 83821669, "repo_name": "Qiskit/qiskit", "topics": ["python", "qiskit", "quantum", "quantum-circuit", "quantum-computing", "quantum-programming-language", "sdk"]}
+{"repo_id": 621803253, "repo_name": "FlowiseAI/Flowise", "topics": ["artificial-intelligence", "chatbot", "chatgpt", "javascript", "langchain", "large-language-models", "llamaindex", "low-code", "no-code", "openai", "rag", "react", "typescript", "workflow-automation"]}
+{"repo_id": 33014811, "repo_name": "notepad-plus-plus/notepad-plus-plus", "topics": ["editor", "notepad", "notepad-official", "windows"]}
+{"repo_id": 62117812, "repo_name": "apache/pulsar", "topics": ["event-streaming", "messaging", "pubsub", "pulsar", "queuing", "streaming"]}
+{"repo_id": 111562942, "repo_name": "statamic/cms", "topics": ["api-rest", "cms", "composer-package", "content-management-system", "flat-file-cms", "flatfile", "flatfilecms", "graphql", "headless", "jamstack", "laravel", "laravel-cms", "laravel-package", "php", "php8", "ssg", "statamic", "vuejs"]}
+{"repo_id": 18987413, "repo_name": "wso2/product-is", "topics": ["access-management", "adaptive-authentication", "authentication", "authorization", "hacktoberfest", "identity", "mfa", "oauth2", "oidc", "saml2", "sso"]}
+{"repo_id": 49016322, "repo_name": "angular/components", "topics": ["angular", "angular-components", "material", "material-design"]}
+{"repo_id": 151331938, "repo_name": "near/nearcore", "topics": ["blockchain", "nearprotocol", "rust", "webassembly"]}
+{"repo_id": 109825187, "repo_name": "Kaiserreich/Kaiserreich-4-Bug-Reports", "topics": ["bugtracker", "suggestions", "videogame"]}
+{"repo_id": 377496562, "repo_name": "AppFlowy-IO/AppFlowy", "topics": ["blog", "confluence-alternative", "content-management", "content-services", "documentation", "note-taking", "notion-alternative", "project-management", "task-management", "team-collaboration", "wiki"]}
+{"repo_id": 359558698, "repo_name": "snowflakedb/snowpark-python", "topics": ["data-analytics", "data-engineering", "data-science", "dataframe", "python", "snowflake", "sql"]}
+{"repo_id": 114742422, "repo_name": "mullvad/mullvadvpn-app", "topics": ["electron", "nodejs", "openvpn", "rust", "vpn", "wireguard"]}
+{"repo_id": 7691631, "repo_name": "moby/moby", "topics": ["containers", "docker", "go", "golang"]}
+{"repo_id": 15452919, "repo_name": "ethereum/go-ethereum", "topics": ["blockchain", "ethereum", "geth", "go", "p2p"]}
+{"repo_id": 538746, "repo_name": "ruby/ruby", "topics": ["c", "jit", "language", "object-oriented", "programming-language", "ruby", "ruby-language", "rust"]}
+{"repo_id": 428329515, "repo_name": "nuxt/ui", "topics": ["nuxt", "nuxt-module", "reka-ui", "tailwindcss", "ui", "ui-components", "vue", "vue3"]}
+{"repo_id": 302827809, "repo_name": "databendlabs/databend", "topics": ["ai", "bigdata", "database", "lakehouse", "olap", "rust", "serverless", "snowflake"]}
+{"repo_id": 72477752, "repo_name": "pulumi/pulumi", "topics": ["aws", "azure", "cloud", "cloud-computing", "containers", "csharp", "dotnet", "fsharp", "gcp", "go", "golang", "iac", "infrastructure-as-code", "javascript", "kubernetes", "python", "serverless", "typescript"]}
+{"repo_id": 28407613, "repo_name": "ag-grid/ag-grid", "topics": ["angular", "angular-grid", "angular-table", "charting", "datagrid", "datatable", "excel", "filtering", "grid", "grouping", "javascript-table", "pagination", "pivoting", "react", "react-grid", "react-table", "sorting", "table", "vue-table", "vuejs"]}
+{"repo_id": 130961487, "repo_name": "software-mansion/react-native-reanimated", "topics": ["animation", "gesture", "javascript", "react-native"]}
+{"repo_id": 464909502, "repo_name": "huggingface/optimum-habana", "topics": ["bert", "fine-tuning", "habana", "hpu", "transformers"]}
+{"repo_id": 126810873, "repo_name": "ovh/docs", "topics": ["cloud", "docs", "documentations", "guides", "hosting", "markdown", "ovh", "ovhcloud", "webhosting"]}
+{"repo_id": 184126748, "repo_name": "open-telemetry/opentelemetry.io", "topics": ["documentation", "opentelemetry"]}
+{"repo_id": 215654064, "repo_name": "temporalio/temporal", "topics": ["cronjob-scheduler", "distributed-cron", "distributed-systems", "golang", "microservice-framework", "microservice-orchestration", "microservices-architecture", "orchestrator", "service-bus", "service-fabric", "workflow-automation", "workflow-engine", "workflow-management", "workflow-management-system", "workflows"]}
+{"repo_id": 1385122, "repo_name": "matplotlib/matplotlib", "topics": ["data-science", "data-visualization", "gtk", "matplotlib", "plotting", "python", "qt", "tk", "wx"]}
+{"repo_id": 79375056, "repo_name": "sanity-io/sanity", "topics": ["cms", "headless", "react", "reactjs", "real-time", "realtime"]}
+{"repo_id": 1357796, "repo_name": "emscripten-core/emscripten", "topics": ["emscripten", "hacktoberfest", "wasm", "webassembly"]}
+{"repo_id": 25129800, "repo_name": "mikf/gallery-dl", "topics": ["danbooru", "deviantart", "downloader", "flickr", "gallery", "kemono", "mangadex", "pixiv", "tumblr", "twitter"]}
+{"repo_id": 597222638, "repo_name": "microsoft/devhome", "topics": ["contributions-welcome", "dashboard", "developer", "developer-tools", "repository-management", "setup", "windows"]}
+{"repo_id": 146327667, "repo_name": "vectordotdev/vector", "topics": ["events", "forwarder", "logs", "metrics", "observability", "parser", "pipeline", "router", "rust", "stream-processing", "vector"]}
+{"repo_id": 560284721, "repo_name": "ente-io/ente", "topics": ["2fa", "android", "authy", "e2ee", "encryption", "end-to-end-encryption", "flutter", "golang", "google-photos", "google-photos-alternative", "ios", "opensource", "photos", "privacy", "privacy-tools", "typescript", "zero-knowledge"]}
+{"repo_id": 21663285, "repo_name": "chapel-lang/chapel", "topics": ["chapel", "compiler", "concurrency", "distributed-computing", "gpu", "high-performance-computing", "hpc", "language", "open-source", "parallel", "parallel-computing", "performance", "productive", "programming-language", "scientific-computing"]}
+{"repo_id": 18524934, "repo_name": "Roll20/roll20-character-sheets", "topics": ["hacktoberfest"]}
+{"repo_id": 14346979, "repo_name": "grokability/snipe-it", "topics": ["asset-management", "asset-manager", "assets-management", "itam", "license-management"]}
+{"repo_id": 294157477, "repo_name": "cagnulein/qdomyos-zwift", "topics": ["bike", "bluetooth", "bluetooth-low-energy", "cyclette", "cycling", "dietpi", "domyos", "hacktoberfest", "ios", "macos", "qdomyos-zwift", "qt", "raspberry", "raspberry-pi", "runner", "running", "toorx", "treadmill", "zwift", "zwift-bridge"]}
+{"repo_id": 1613176, "repo_name": "tianocore/edk2", "topics": ["c", "firmware", "python", "uefi"]}
+{"repo_id": 93446075, "repo_name": "hashicorp/terraform-provider-google", "topics": ["google-cloud", "terraform", "terraform-provider"]}
+{"repo_id": 101194285, "repo_name": "NethermindEth/nethermind", "topics": ["blockchain", "eth", "ethereum", "ethereum-client", "evm"]}
+{"repo_id": 498761556, "repo_name": "grafana/oncall", "topics": ["alert", "alerting", "grafana", "oncall", "oncall-schedule", "slack", "telegram"]}
+{"repo_id": 649170660, "repo_name": "Mintplex-Labs/anything-llm", "topics": ["agent-framework-javascript", "ai-agents", "crewai", "custom-ai-agents", "deepseek", "deepseek-r1", "desktop-app", "llama3", "llm", "llm-application", "llm-webui", "lmstudio", "local-llm", "localai", "multimodal", "nodejs", "ollama", "rag", "vector-database", "webui"]}
+{"repo_id": 7613257, "repo_name": "SeleniumHQ/selenium", "topics": ["dotnet", "java", "javascript", "python", "ruby", "selenium", "webdriver"]}
+{"repo_id": 54160369, "repo_name": "ROCm/ROCm", "topics": ["documentation"]}
+{"repo_id": 32921736, "repo_name": "audacity/audacity", "topics": ["audio", "cross-platform", "editor", "gplv2", "wxwidgets-applications"]}
+{"repo_id": 36891867, "repo_name": "angular/angular-cli", "topics": ["angular", "angular-cli", "cli", "typescript"]}
+{"repo_id": 245072514, "repo_name": "llvm/circt", "topics": ["circt", "llvm", "mlir"]}
+{"repo_id": 57912964, "repo_name": "kubernetes/enhancements", "topics": ["enhancements", "k8s-sig-architecture", "kubernetes", "kubernetes-releases"]}
+{"repo_id": 114694829, "repo_name": "transcom/mymove", "topics": ["code-mil"]}
+{"repo_id": 725205304, "repo_name": "unslothai/unsloth", "topics": ["deepseek", "deepseek-r1", "fine-tuning", "finetuning", "gemma", "gemma2", "llama", "llama3", "llm", "llms", "lora", "mistral", "phi3", "qlora", "unsloth"]}
+{"repo_id": 167229099, "repo_name": "braze-inc/braze-docs", "topics": ["appboy", "braze", "braze-documentation", "docs", "documentation", "open-source"]}
+{"repo_id": 304344049, "repo_name": "sveltejs/kit", "topics": ["hacktoberfest", "svelte"]}
+{"repo_id": 400215964, "repo_name": "novuhq/novu", "topics": ["alternative", "communication", "email", "hacktoberfest", "inbox", "javascript", "nodejs", "notification-center", "notifications", "novu", "push-notifications", "react", "reactjs", "sms", "transactional", "typescript"]}
+{"repo_id": 1358940, "repo_name": "scummvm/scummvm", "topics": ["adventure-engine", "adventure-games", "multiplatform", "rpg-engine"]}
+{"repo_id": 351106737, "repo_name": "l2beat/l2beat", "topics": ["ethereum", "layer-2", "research"]}
+{"repo_id": 290909192, "repo_name": "EleutherAI/lm-evaluation-harness", "topics": ["evaluation-framework", "language-model", "transformer"]}
+{"repo_id": 734906167, "repo_name": "NovaSector/NovaSector", "topics": ["hacktoberfest", "ss13"]}
+{"repo_id": 28239455, "repo_name": "dotnet/AspNetCore.Docs", "topics": ["asp", "aspnet", "aspnet-core", "aspnetcore", "docs"]}
+{"repo_id": 262296122, "repo_name": "PaddlePaddle/PaddleOCR", "topics": ["chineseocr", "crnn", "db", "ocr", "ocrlite"]}
+{"repo_id": 165536154, "repo_name": "typescript-eslint/typescript-eslint", "topics": ["eslint", "eslint-plugin", "eslintplugin", "plugin", "tslint", "typescript"]}
+{"repo_id": 710601088, "repo_name": "crewAIInc/crewAI", "topics": ["agents", "ai", "ai-agents", "llms"]}
+{"repo_id": 198982083, "repo_name": "nf-core/modules", "topics": ["dsl2", "modules", "nextflow", "nf-core", "nf-test", "pipelines", "workflows"]}
+{"repo_id": 420297429, "repo_name": "babelfish-for-postgresql/babelfish_extensions", "topics": ["database", "postgresql", "sqlserver"]}
+{"repo_id": 76672223, "repo_name": "enso-org/enso", "topics": ["compiler", "enso", "functional", "graalvm", "hybrid", "interpreter", "jit", "language", "polyglot", "rts", "textual", "visual"]}
+{"repo_id": 78938149, "repo_name": "nix-community/home-manager", "topics": ["dotfiles", "nix", "nix-dotfiles", "nixos", "nixpkgs"]}
+{"repo_id": 190729906, "repo_name": "Budibase/budibase", "topics": ["ai-app-builder", "ai-applications", "crud-app", "crud-application", "data-application", "data-apps", "internal-tools", "it-workflows", "low-code", "low-code-no-code", "low-code-platform", "no-code", "no-code-platform", "open-source", "rest-api-framework", "sql-gui", "workflow-apps", "workflow-automation", "workflow-engine"]}
+{"repo_id": 111605778, "repo_name": "yairm210/Unciv", "topics": ["4x", "4x-strategy-game", "android", "civ", "civilization", "civilization-v", "game", "itch", "libgdx", "strategy-game"]}
+{"repo_id": 601635112, "repo_name": "openstack-k8s-operators/ci-framework", "topics": ["ansible", "ci", "openshift", "openstack", "operators"]}
+{"repo_id": 302922505, "repo_name": "devtron-labs/devtron", "topics": ["aks", "appops", "argocd", "continuous-deployment", "dashboard", "deployment", "deployment-automation", "deployment-pipeline", "deployment-strategy", "devtron", "eks", "gitops", "gke", "hacktoberfest", "kubectl", "kubernetes", "kubernetes-dashboard", "kubernetes-deployment", "release-automation", "workflow-engine"]}
+{"repo_id": 118510171, "repo_name": "kgateway-dev/kgateway", "topics": ["api-gateway", "api-management", "cloud-native", "envoy", "envoy-proxy", "grpc", "hybrid-apps", "kubernetes", "kubernetes-ingress-controller", "legacy-apps", "microservices", "serverless"]}
+{"repo_id": 45844314, "repo_name": "devopsdays/devopsdays-web", "topics": ["hacktoberfest"]}
+{"repo_id": 26682105, "repo_name": "darkreader/darkreader", "topics": ["accessibility", "chrome-extension", "dark-mode", "dark-theme", "darkmode", "eye-care", "firefox-addon", "night-mode", "nightmode"]}
+{"repo_id": 162356927, "repo_name": "BeeStation/BeeStation-Hornet", "topics": ["atmospheric-modelling", "bees", "byond", "codebase", "dm", "game", "hacktoberfest", "retrogaming", "roleplay", "space", "space-station-13", "ss13"]}
+{"repo_id": 656264456, "repo_name": "langchain4j/langchain4j", "topics": ["anthropic", "chatgpt", "chroma", "embeddings", "gemini", "gpt", "huggingface", "java", "langchain", "llama", "milvus", "ollama", "onnx", "openai", "openai-api", "pgvector", "pinecone", "vector-database", "weaviate"]}
+{"repo_id": 346070752, "repo_name": "corda/corda-runtime-os", "topics": ["corda", "corda-next-generation", "distributed-ledger", "dlt", "kotlin"]}
+{"repo_id": 710164410, "repo_name": "TencentBlueKing/bk-monitor", "topics": ["monitoring"]}
+{"repo_id": 402527443, "repo_name": "androidx/media", "topics": ["android", "exoplayer", "java", "media3", "media3-exoplayer", "media3-transformer", "mediaplayer"]}
+{"repo_id": 231283452, "repo_name": "excalidraw/excalidraw", "topics": ["canvas", "collaboration", "diagrams", "drawing", "hacktoberfest", "productivity", "whiteboard"]}
+{"repo_id": 296602422, "repo_name": "camunda/camunda-docs", "topics": ["documentation"]}
+{"repo_id": 364871330, "repo_name": "EdgeTX/edgetx", "topics": ["fpv-racing", "hacktoberfest", "radio", "rc"]}
+{"repo_id": 165670309, "repo_name": "TanStack/router", "topics": ["framework", "fullstack", "javascript", "react", "route", "router", "routing", "rpc", "search", "searchparams", "server-functions", "ssr", "state-management", "typesafe", "typescript", "url"]}
+{"repo_id": 74583692, "repo_name": "odin-lang/Odin", "topics": ["compiler", "language", "odin", "odin-lang", "odin-programming-language", "programming-language", "programming-languages"]}
+{"repo_id": 103071520, "repo_name": "great-expectations/great_expectations", "topics": ["cleandata", "data-engineering", "data-profilers", "data-profiling", "data-quality", "data-science", "data-unit-tests", "datacleaner", "datacleaning", "dataquality", "dataunittest", "eda", "exploratory-analysis", "exploratory-data-analysis", "exploratorydataanalysis", "mlops", "pipeline", "pipeline-debt", "pipeline-testing", "pipeline-tests"]}
+{"repo_id": 394102612, "repo_name": "fmhy/edit", "topics": ["fmhy", "freemediaheckyeah"]}
+{"repo_id": 89221572, "repo_name": "DataDog/dd-trace-java", "topics": ["apm", "bytebuddy", "datadog", "datadog-apm", "datadoghq", "distributed-trace", "distributed-tracing", "java", "javaagent", "tracing"]}
+{"repo_id": 58559694, "repo_name": "desktop/desktop", "topics": ["electron", "git", "github", "github-desktop", "typescript"]}
+{"repo_id": 131810578, "repo_name": "GEOS-DEV/GEOS", "topics": ["carbon-storage", "geomechanics", "gpu", "hpc", "llnl", "reservoir-simulation"]}
+{"repo_id": 206444, "repo_name": "apache/hive", "topics": ["apache", "big-data", "database", "hadoop", "hive", "java", "sql"]}
+{"repo_id": 268163609, "repo_name": "qdrant/qdrant", "topics": ["approximate-nearest-neighbor-search", "embeddings-similarity", "hacktoberfest", "hnsw", "image-search", "knn-algorithm", "machine-learning", "matching", "mlops", "nearest-neighbor-search", "neural-network", "neural-search", "recommender-system", "search", "search-engine", "search-engines", "similarity-search", "vector-database", "vector-search", "vector-search-engine"]}
+{"repo_id": 88860262, "repo_name": "flathub/flathub", "topics": ["flathub", "flatpak"]}
+{"repo_id": 26850443, "repo_name": "rust-lang/rust-clippy", "topics": ["lint", "rust"]}
+{"repo_id": 87712244, "repo_name": "xmake-io/xmake-repo", "topics": ["build", "cross-platform", "package", "repository", "xmake"]}
+{"repo_id": 546206616, "repo_name": "chroma-core/chroma", "topics": ["document-retrieval", "embeddings", "llms"]}
+{"repo_id": 10744183, "repo_name": "netdata/netdata", "topics": ["alerting", "cncf", "data-visualization", "database", "devops", "docker", "grafana", "influxdb", "kubernetes", "linux", "machine-learning", "mongodb", "monitoring", "mysql", "netdata", "observability", "postgresql", "prometheus", "raspberry-pi", "statsd"]}
+{"repo_id": 535103658, "repo_name": "toeverything/blocksuite", "topics": ["block", "block-editor", "collaboration", "components", "components-library", "crdt", "editor", "local-first", "notion-editor", "rich-text-editor", "state-management", "webcomponents", "wysiwyg", "wysiwyg-editor", "yjs"]}
+{"repo_id": 52729242, "repo_name": "keepassxreboot/keepassxc", "topics": ["cross-platform", "hacktoberfest", "keepass", "keepassxc", "linux", "macos", "password", "password-manager", "privacy", "security", "windows", "yubikey"]}
+{"repo_id": 568085558, "repo_name": "AuxXxilium/arc", "topics": ["arc", "arc-loader", "diskstation", "dsm", "nas", "network", "redpill", "redpill-load", "storage", "synology", "xpenology"]}
+{"repo_id": 485261484, "repo_name": "hagezi/dns-blocklists", "topics": ["adblock", "adguard", "ads", "blacklist", "blocklist", "coins", "dns", "domains", "fake", "filterlist", "hosts", "malware", "metrics", "phishing", "pi-hole", "privacy", "scam", "telemetry", "threat-intelligence-feeds", "tracking"]}
+{"repo_id": 543101941, "repo_name": "dream-num/univer", "topics": ["appscript", "collaboration", "data-table", "doc", "document", "excel", "grid", "live-share", "office", "powerpoint", "ppt", "productivity", "sdk", "sheet", "slide", "spreadsheet", "word", "xlsx"]}
+{"repo_id": 247714750, "repo_name": "zitadel/zitadel", "topics": ["2fa", "authentication", "authorization", "fido2", "identity", "login", "mfa", "multitenancy", "oauth2", "oidc", "openid-connect", "passkeys", "saml", "scim", "sso", "user"]}
+{"repo_id": 427397617, "repo_name": "syncfusion-content/blazor-docs", "topics": ["blazor", "documentation", "help-docs", "syncfusion", "user-guide"]}
+{"repo_id": 349372179, "repo_name": "lightdash/lightdash", "topics": ["business-intelligence", "data-analytics", "data-visualization", "dbt"]}
+{"repo_id": 127204751, "repo_name": "ProcessMaker/processmaker", "topics": ["processmaker-4"]}
+{"repo_id": 684382, "repo_name": "bigbluebutton/bigbluebutton", "topics": ["bigbluebutton", "collaboration", "conferencing", "video", "video-conferencing", "webrtc"]}
+{"repo_id": 15337142, "repo_name": "micropython/micropython", "topics": ["embedded", "microcontroller", "micropython", "python"]}
+{"repo_id": 156401841, "repo_name": "sktime/sktime", "topics": ["ai", "anomaly-detection", "changepoint-detection", "data-mining", "data-science", "forecasting", "hacktoberfest", "machine-learning", "scikit-learn", "sktime", "time-series", "time-series-analysis", "time-series-classification", "time-series-regression", "time-series-segmentation"]}
+{"repo_id": 500289888, "repo_name": "formbricks/formbricks", "topics": ["experience-management", "form", "forms", "nextjs", "open-source", "react", "reactjs", "survey", "survey-analysis", "survey-data", "survey-form", "surveys", "tailwindcss", "turborepo", "typeform", "typescript", "xm"]}
+{"repo_id": 541798154, "repo_name": "Unstructured-IO/unstructured", "topics": ["data-pipelines", "deep-learning", "document-image-analysis", "document-image-processing", "document-parser", "document-parsing", "docx", "donut", "information-retrieval", "langchain", "llm", "machine-learning", "ml", "natural-language-processing", "nlp", "ocr", "pdf", "pdf-to-json", "pdf-to-text", "preprocessing"]}
+{"repo_id": 151636194, "repo_name": "triton-inference-server/server", "topics": ["cloud", "datacenter", "deep-learning", "edge", "gpu", "inference", "machine-learning"]}
+{"repo_id": 368917877, "repo_name": "QwikDev/qwik", "topics": ["framework", "hacktoberfest", "javascript", "web"]}
+{"repo_id": 600246354, "repo_name": "seerge/g-helper", "topics": ["ally", "amd", "armoury", "armoury-crate", "asus", "aura", "cpu", "fan", "g-helper", "g14", "g16", "gpu", "intel", "mux", "nvidia", "overclock", "power", "rog", "strix", "tuf"]}
+{"repo_id": 583706111, "repo_name": "LazyVim/LazyVim", "topics": ["neovim", "neovim-conf", "neovim-config", "neovim-configuration", "neovim-plugin", "nvim"]}
+{"repo_id": 640534, "repo_name": "sympy/sympy", "topics": ["computer-algebra", "hacktoberfest", "math", "python", "science"]}
+{"repo_id": 547806116, "repo_name": "huggingface/text-generation-inference", "topics": ["bloom", "deep-learning", "falcon", "gpt", "inference", "nlp", "pytorch", "starcoder", "transformer"]}
+{"repo_id": 63882194, "repo_name": "projectcalico/calico", "topics": ["cats", "cni", "cni-plugin", "ebpf", "host-protection", "identity-aware-policy", "k8s", "kubernetes", "kubernetes-networking", "kubernetes-windows", "network-policy", "networking", "openstack", "security", "windows", "xdp"]}
+{"repo_id": 249027166, "repo_name": "ohcnetwork/care_fe", "topics": ["digital-public-goods", "hacktoberfest", "healthcare", "hmis"]}
+{"repo_id": 8223542, "repo_name": "ValveSoftware/Source-1-Games", "topics": ["source-engine", "source-engine-games", "source-games", "team-fortress", "tf2"]}
+{"repo_id": 378744594, "repo_name": "modrinth/code", "topics": ["hacktoberfest", "minecraft", "minecraft-launcher", "modrinth", "modrinth-api"]}
+{"repo_id": 11008207, "repo_name": "vitessio/vitess", "topics": ["cncf", "database-cluster", "kubernetes", "mysql", "shard", "vitess"]}
+{"repo_id": 595662105, "repo_name": "gitbutlerapp/gitbutler", "topics": ["git", "github", "tauri"]}
+{"repo_id": 29261473, "repo_name": "minio/minio", "topics": ["amazon-s3", "cloud", "cloudnative", "cloudstorage", "go", "k8s", "kubernetes", "multi-cloud", "multi-cloud-kubernetes", "objectstorage", "s3", "storage"]}
+{"repo_id": 311639195, "repo_name": "karmada-io/karmada", "topics": ["cloud-computing", "cloud-native", "containers", "k8s", "kubernetes", "multi-cluster", "multicloud"]}
+{"repo_id": 33258973, "repo_name": "influxdata/telegraf", "topics": ["gnmi", "golang", "influxdb", "json", "kafka", "logs", "metrics", "modbus", "monitoring", "mqtt", "opcua", "telegraf", "time-series", "windows-eventlog", "windows-management-instrumentation", "xpath"]}
+{"repo_id": 56353740, "repo_name": "kubernetes/minikube", "topics": ["cluster", "cncf", "containers", "go", "kubernetes", "minikube"]}
+{"repo_id": 88523356, "repo_name": "DevExpress/DevExtreme", "topics": ["chart", "charting-library", "charts", "datagrid", "devexpress", "filemanager", "gantt", "html", "javascript", "pivotgrid", "responsive", "scheduler", "treelist", "ui-components", "widgets"]}
+{"repo_id": 202511099, "repo_name": "owncloud/ocis", "topics": ["ocis", "reva"]}
+{"repo_id": 185861173, "repo_name": "open-telemetry/opentelemetry-collector", "topics": ["metrics", "monitoring", "observability", "open-telemetry", "opentelemetry", "telemetry"]}
+{"repo_id": 323965659, "repo_name": "AlistGo/alist", "topics": ["file-server", "gin", "golang", "onedrive", "solidjs", "webdav"]}
+{"repo_id": 37287688, "repo_name": "mfem/mfem", "topics": ["amr", "computational-science", "fem", "finite-elements", "high-order", "high-performance-computing", "hpc", "math-physics", "parallel-computing", "radiuss", "scientific-computing"]}
+{"repo_id": 247278, "repo_name": "dimagi/commcare-hq", "topics": ["commcare-hq"]}
+{"repo_id": 70746484, "repo_name": "apache/tvm", "topics": ["compiler", "deep-learning", "gpu", "javascript", "machine-learning", "metal", "opencl", "performance", "rocm", "spirv", "tensor", "tvm", "vulkan"]}
+{"repo_id": 309721058, "repo_name": "JanssenProject/jans", "topics": ["access-management", "api", "iam", "identity", "kubernetes", "oauth2", "openid-connect", "security", "sso"]}
+{"repo_id": 217420145, "repo_name": "antrea-io/antrea", "topics": ["cncf", "cni", "kubernetes", "networking", "security"]}
+{"repo_id": 21484781, "repo_name": "jumpserver/jumpserver", "topics": ["bastion-host", "cyberark", "django", "jumpserver", "pam", "python", "ssh-server", "teleport", "terminal"]}
+{"repo_id": 640006076, "repo_name": "aws-amplify/amplify-backend", "topics": ["amplify", "aws", "backend", "fullstack"]}
+{"repo_id": 2293158, "repo_name": "rapid7/metasploit-framework", "topics": ["hacktoberfest"]}
+{"repo_id": 20089857, "repo_name": "apache/hbase", "topics": ["database", "hbase", "java"]}
+{"repo_id": 143328315, "repo_name": "mindsdb/mindsdb", "topics": ["agi", "ai", "artificial-inteligence", "databases", "llms", "rag"]}
+{"repo_id": 79162682, "repo_name": "laurent22/joplin", "topics": ["android", "dropbox", "electron", "enex-files", "evernote", "javascript", "joplin", "nextcloud", "nodejs", "note-taking", "onedrive", "react-native", "synchronisation", "web-clipper", "webdav"]}
+{"repo_id": 246464565, "repo_name": "PojavLauncherTeam/PojavLauncher", "topics": ["minecraft", "minecraft-launcher"]}
+{"repo_id": 459870310, "repo_name": "kubernetes-sigs/kueue", "topics": ["k8s", "k8s-sig-scheduling", "kubernetes"]}
+{"repo_id": 15783450, "repo_name": "jlord/patchwork", "topics": ["app", "git", "github", "learn-to-code"]}
+{"repo_id": 201821771, "repo_name": "AudiusProject/audius-protocol", "topics": ["audio", "blockchain", "ethereum", "hacktoberfest", "music", "protocol", "solana", "streaming"]}
+{"repo_id": 29933948, "repo_name": "fluent/fluent-bit", "topics": ["c", "cloudnative", "data-collector", "fluent-bit", "fluentd", "forwarder", "logging", "logs", "metrics", "opentelemetry", "prometheus", "sql-queries", "stream-processing", "traces"]}
+{"repo_id": 718823646, "repo_name": "sst/ion", "topics": ["ion", "sst"]}
+{"repo_id": 105010691, "repo_name": "nextcloud/desktop", "topics": ["c-plus-plus", "cpp", "desktop", "hacktoberfest", "nextcloud", "nextcloud-desktop-client"]}
+{"repo_id": 50565430, "repo_name": "pnpm/pnpm", "topics": ["dependency-manager", "install", "javascript", "modules", "node", "nodejs", "npm", "package-manager"]}
+{"repo_id": 266231149, "repo_name": "logseq/logseq", "topics": ["clojure", "clojurescript", "git", "graph", "knowledge-base", "knowledge-graph", "local-first", "markdown", "note-taking", "org-mode", "pkm"]}
+{"repo_id": 382496361, "repo_name": "louislam/uptime-kuma", "topics": ["docker", "monitor", "monitoring", "responsive", "self-hosted", "selfhosted", "single-page-app", "socket-io", "uptime", "uptime-monitoring", "webapp", "websocket"]}
+{"repo_id": 764670636, "repo_name": "grafana/alloy", "topics": ["collector", "grafana", "loki", "monitoring", "observability", "opentelemetry", "opentelemetry-collector", "prometheus"]}
+{"repo_id": 117294980, "repo_name": "blockscout/blockscout", "topics": ["blockchain", "elixir", "ethereum", "explorer"]}
+{"repo_id": 659402878, "repo_name": "spring-projects/spring-ai", "topics": ["artificial-intelligence", "java"]}
+{"repo_id": 173335706, "repo_name": "apache/dolphinscheduler", "topics": ["airflow", "azkaban", "cloud-native", "data-pipelines", "job-scheduler", "orchestration", "powerful-data-pipelines", "task-scheduler", "workflow", "workflow-orchestration", "workflow-schedule"]}
+{"repo_id": 354743391, "repo_name": "o3de/o3de", "topics": ["3d-graphics", "3d-graphics-engine", "animation", "game-development", "game-engine", "gamedev"]}
+{"repo_id": 281975310, "repo_name": "type-challenges/type-challenges", "topics": ["challenges", "type", "type-system", "typescript"]}
+{"repo_id": 261270348, "repo_name": "status-im/status-desktop", "topics": ["decentralized", "messenger", "nim", "privacy", "qml"]}
+{"repo_id": 34098300, "repo_name": "AOSC-Dev/aosc-os-abbs", "topics": ["abbs", "acbs", "aosc-os", "autobuild"]}
+{"repo_id": 422114860, "repo_name": "hmcts/civil-citizen-ui", "topics": ["jenkins-cft", "jenkins-cft-a-c"]}
+{"repo_id": 77326607, "repo_name": "misskey-dev/misskey", "topics": ["activitypub", "federation", "fediverse", "microblog", "misskey"]}
+{"repo_id": 46297649, "repo_name": "trilinos/Trilinos", "topics": ["c-plus-plus", "high-performance-computing", "hpc", "hpsf", "sandia-national-laboratories", "scientific-computing", "snl-science-libs", "trilinos"]}
+{"repo_id": 159152904, "repo_name": "jeecgboot/JeecgBoot", "topics": ["activiti", "ai", "ant-design-vue", "antd", "bigscreen", "chatgpt", "codegenerator", "deepseek", "flowable", "java", "jeecgboot", "langchain4j", "low-code", "mybatis", "ollama", "spring-boot", "springboot", "springcloud", "vue", "vue3"]}
+{"repo_id": 22344874, "repo_name": "tutao/tutanota", "topics": ["email", "encryption", "javascript", "mithril", "privacy", "security", "tutanota"]}
+{"repo_id": 141753419, "repo_name": "aws/aws-toolkit-vscode", "topics": ["amazon", "amazon-q", "aws", "cdk", "cloudformation", "codecatalyst", "codewhisperer", "lambda", "s3", "serverless", "vscode", "vscode-extension"]}
+{"repo_id": 137451403, "repo_name": "alibaba/nacos", "topics": ["alibaba", "config", "configuration-management", "distributed-configuration", "dns", "dubbo", "istio", "kubernetes", "microservices", "nacos", "service-discovery", "service-mesh", "spring-cloud"]}
+{"repo_id": 2594116, "repo_name": "mantidproject/mantid", "topics": ["c-plus-plus-17", "mantid", "muon", "neutron", "numpy", "python", "reduction"]}
+{"repo_id": 27965134, "repo_name": "opnsense/core", "topics": ["api", "bsd", "captive-portal", "firewall", "gui", "hacktoberfest", "ips", "proxy", "routing", "shaping", "vpn"]}
+{"repo_id": 16256144, "repo_name": "RobotLocomotion/drake", "topics": ["drake", "robotics"]}
+{"repo_id": 24898648, "repo_name": "AliceO2Group/AliceO2", "topics": ["alice", "alice-experiment", "c-plus-plus", "cern"]}
+{"repo_id": 60377070, "repo_name": "vespa-engine/vespa", "topics": ["ai", "big-data", "cpp", "java", "machine-learning", "search-engine", "server", "serving", "serving-recommendation", "tensorflow", "vector-search", "vespa"]}
+{"repo_id": 284871753, "repo_name": "flybywiresim/aircraft", "topics": ["a320", "a380", "javascript", "matlab", "msfs2020", "react", "reactjs", "rust", "typescript"]}
+{"repo_id": 6148317, "repo_name": "OSGeo/gdal", "topics": ["geospatial-data", "raster", "remote-sensing", "vector"]}
+{"repo_id": 101895131, "repo_name": "DataDog/dd-trace-dotnet", "topics": ["apm", "datadog", "dotnet", "opentracing", "profiling", "tracing"]}
+{"repo_id": 224386599, "repo_name": "bridgecrewio/checkov", "topics": ["aws", "aws-security", "azure", "cloudformation", "compliance", "devops", "gcp", "hacktoberfest", "infrastructure-as-code", "kubernetes", "scans", "static-analysis", "terraform"]}
+{"repo_id": 123220152, "repo_name": "FreeTubeApp/FreeTube", "topics": ["freetube", "privacy", "subscriptions", "video", "videos", "youtube"]}
+{"repo_id": 556675672, "repo_name": "shadps4-emu/shadPS4", "topics": ["cpp", "cpp20", "emulation", "emulator", "imgui", "linux", "macos", "playstation4", "ps4", "sdl3", "vulkan", "windows"]}
+{"repo_id": 436466520, "repo_name": "rilldata/rill", "topics": ["bi", "business-analytics", "csv", "data", "data-analysis", "data-visualization", "dataviz", "duckdb", "gcs", "golang", "parquet", "parquet-tools", "parquet-viewer", "s3", "sql", "sql-editor", "svelte", "sveltejs", "sveltekit"]}
+{"repo_id": 35927665, "repo_name": "satijalab/seurat", "topics": ["cran", "human-cell-atlas", "single-cell-genomics", "single-cell-rna-seq"]}
+{"repo_id": 180481986, "repo_name": "apache/apisix", "topics": ["api", "api-gateway", "api-management", "apigateway", "apis", "apisix", "cloud-native", "devops", "docker", "iot", "kubernetes", "kubernetes-ingress", "kubernetes-ingress-controller", "loadbalancing", "luajit", "microservices", "nginx", "reverse-proxy", "serverless", "service-mesh"]}
+{"repo_id": 11981144, "repo_name": "languagetool-org/languagetool", "topics": ["grammar", "natural-language", "natural-language-processing", "proofreading", "spellcheck", "style-checker"]}
+{"repo_id": 263503250, "repo_name": "Azure/bicep", "topics": ["arm-json", "arm-templates", "bicep"]}
+{"repo_id": 261124045, "repo_name": "slint-ui/slint", "topics": ["cpp", "declarative-ui", "desktop", "embedded-devices", "gui", "javascript", "language", "lsp-server", "native", "rust", "rust-lang", "toolkit", "ui", "user-interface", "wasm", "webassembly", "widgets"]}
+{"repo_id": 465844859, "repo_name": "podman-desktop/podman-desktop", "topics": ["container", "containers", "desktop", "docker", "hacktoberfest", "kubernetes", "podman", "podman-desktop", "tray-application", "ui"]}
+{"repo_id": 18348651, "repo_name": "OpenRCT2/OpenRCT2", "topics": ["c", "c-plus-plus", "cmake", "cpp", "discord", "game", "hacktoberfest", "linux", "msbuild", "multiplayer", "opengl", "openrct2", "roller-coaster", "roller-coaster-tycoon", "sdl2", "server", "simulation", "visual-studio", "windows", "xcode"]}
+{"repo_id": 911980, "repo_name": "tarantool/tarantool", "topics": ["appserver", "database", "disk", "in-memory", "lua", "msgpack", "tarantool", "transactions"]}
+{"repo_id": 362472704, "repo_name": "hmcts/civil-service", "topics": ["jenkins-cft", "jenkins-cft-a-c"]}
+{"repo_id": 334215717, "repo_name": "gnolang/gno", "topics": ["bft", "blockchain", "composability", "concurrency", "cosmos", "fairness", "gno", "gnoland", "gnolang", "gnovm", "golang", "hacktoberfest", "interpreter", "proof-of-contribution", "smart-contracts", "tendermint", "tendermint2", "truth-discovery", "virtual-machine", "web3"]}
+{"repo_id": 4000279, "repo_name": "SatelliteQE/robottelo", "topics": ["foreman", "hacktoberfest", "katello", "python", "redhat-qe", "satellite6", "satellite6qe"]}
+{"repo_id": 189621607, "repo_name": "github/docs", "topics": ["docs", "works-with-codespaces"]}
+{"repo_id": 216628419, "repo_name": "flyteorg/flyte", "topics": ["data", "data-analysis", "data-science", "dataops", "declarative", "fine-tuning", "flyte", "golang", "grpc", "hacktoberfest", "kubernetes", "kubernetes-operator", "llm", "machine-learning", "mlops", "orchestration-engine", "production", "python", "scale", "workflow"]}
+{"repo_id": 102578345, "repo_name": "coolsnowwolf/lede", "topics": ["lede", "lua", "openwrt-feed", "openwrt-package", "openwrt-zh-cn"]}
+{"repo_id": 180190854, "repo_name": "appwrite/appwrite", "topics": ["android", "appwrite", "backend", "backend-as-a-service", "docker", "firebase", "flutter", "hacktoberfest", "ios", "javascript", "nextjs", "react", "react-native", "reactnative", "self-hosted", "selfhosted", "serverless", "swift", "web"]}
+{"repo_id": 468311851, "repo_name": "cloudnative-pg/cloudnative-pg", "topics": ["automated-failover", "business-continuity", "database", "database-management", "devops", "disaster-recovery", "failover", "high-availability", "json-logging", "k8s", "kubectl-plugin", "kubernetes", "operator", "postgres", "postgresql", "prometheus-exporter", "replication", "self-healing", "sql", "switchover"]}
+{"repo_id": 330914717, "repo_name": "ivy-llc/ivy", "topics": ["converter", "deep-learning", "ivy", "jax", "machine-learning", "neural-network", "numpy", "python", "pytorch", "tensorflow", "translation", "transpilation"]}
+{"repo_id": 268804625, "repo_name": "opendatahub-io/odh-dashboard", "topics": ["dashboard"]}
+{"repo_id": 3390243, "repo_name": "servo/servo", "topics": ["browser", "rust", "servo", "web", "webbrowser", "webengine", "webplatform"]}
+{"repo_id": 69609, "repo_name": "internetarchive/openlibrary", "topics": ["books", "hacktoberfest", "internet-archive", "library-catalogue", "open-source"]}
+{"repo_id": 157616880, "repo_name": "iptv-org/iptv", "topics": ["iptv", "m3u", "playlist", "streams", "tv"]}
+{"repo_id": 108592307, "repo_name": "eclipse-sumo/sumo", "topics": ["simulation", "traffic", "transport"]}
+{"repo_id": 348132133, "repo_name": "microsoft/fluentui-blazor", "topics": ["adaptive-ui", "blazor", "component-architecture", "component-library", "components", "csharp", "csharp-library", "design-systems", "development-tools", "fluent", "fluentui", "front-end-framework", "web-components", "web-standards", "webassembly"]}
+{"repo_id": 128624453, "repo_name": "NervJS/taro", "topics": ["javascript", "jquery", "nerv", "nervjs", "react", "react-native", "reactjs", "taro", "typescript", "vue", "vue3", "wechat", "wechat-mini-program", "weixin", "wxapp"]}
+{"repo_id": 599731589, "repo_name": "ublue-os/bazzite", "topics": ["desktop", "fedora-kinoite", "fedora-linux", "fedora-silverblue", "gaming", "htpc", "legiongo", "oci-image", "operating-system", "ostree", "rog-ally", "steam", "steam-deck", "valve"]}
+{"repo_id": 50613991, "repo_name": "goharbor/harbor", "topics": ["cloud-native", "cncf", "cncf-project", "container", "container-management", "container-registry", "containers", "docker", "hacktoberfest", "helm", "kubernetes", "registry"]}
+{"repo_id": 5139175, "repo_name": "fjordllc/bootcamp", "topics": ["hacktoberfest", "rails", "ruby"]}
+{"repo_id": 625183383, "repo_name": "RROrg/rr", "topics": ["bootloader", "dsm", "redpill", "synology"]}
+{"repo_id": 501218027, "repo_name": "cloudscape-design/components", "topics": ["components", "design-system", "react", "scss", "typescript"]}
+{"repo_id": 367252075, "repo_name": "shiptest-ss13/Shiptest", "topics": ["byond", "exploration-game", "ftl", "game", "hacktoberfest", "space-ship", "space-station-13", "ss13", "tgstation"]}
+{"repo_id": 49765480, "repo_name": "lightningnetwork/lnd", "topics": ["bitcoin", "blockchain", "cryptocurrency", "cryptography", "lightning", "lightning-network", "micropayments", "payments", "peer-to-peer", "protocol"]}
+{"repo_id": 341631350, "repo_name": "apache/lucene", "topics": ["backend", "information-retrieval", "java", "lucene", "nosql", "search", "search-engine"]}
+{"repo_id": 48769241, "repo_name": "penpot/penpot", "topics": ["clojure", "clojurescript", "design", "prototyping", "ui", "ux-design", "ux-experience"]}
+{"repo_id": 10126031, "repo_name": "mixxxdj/mixxx", "topics": ["audio", "dj", "hid", "linux", "mac", "midi", "music", "qt", "windows"]}
+{"repo_id": 205706595, "repo_name": "mlrun/mlrun", "topics": ["data-engineering", "data-science", "experiment-tracking", "kubernetes", "machine-learning", "mlops", "mlops-workflow", "model-serving", "python", "workflow"]}
+{"repo_id": 331411128, "repo_name": "Azure/communication-ui-library", "topics": ["azure", "azure-communication-services", "communication-application", "fluent-ui", "microsoft", "react", "storybook"]}
+{"repo_id": 46755185, "repo_name": "bitwarden/server", "topics": ["api", "aspnet", "aspnetcore", "bitwarden", "csharp", "docker", "dotnet", "dotnet-core", "signalr", "sql", "sql-server"]}
+{"repo_id": 12204147, "repo_name": "mautic/mautic", "topics": ["digital-experience-platform", "digitalexperienceplatform", "dxp", "email-marketing", "email-marketing-automation", "email-marketing-software", "hacktoberfest", "marketing-automation", "marketing-tools", "mautic", "open-source", "php"]}
+{"repo_id": 679280065, "repo_name": "scalar/scalar", "topics": ["api", "api-client", "docs", "http-client", "openapi", "openapi3", "reference", "rest-api", "swagger", "vue"]}
+{"repo_id": 177839194, "repo_name": "microsoft/vscode-remote-release", "topics": ["containers", "dev-containers", "devcontainers", "docker", "remote", "remote-development", "ssh", "visual-studio-code", "vscode", "wsl"]}
+{"repo_id": 260550412, "repo_name": "PostHog/posthog.com", "topics": ["design", "docs", "gatsby", "handbook", "posthog", "tailwindcss"]}
+{"repo_id": 7408108, "repo_name": "RT-Thread/rt-thread", "topics": ["aiot", "arm", "cortex-a", "cortex-m", "embedded-systems", "iot", "kernel", "microcontroller", "microkernel", "mips", "real-time", "risc-v", "rtos"]}
+{"repo_id": 178222328, "repo_name": "digital-asset/daml", "topics": ["bazel", "daml", "distributed-ledger", "dlt", "privacy-by-design", "sdk", "smart-contract", "workflow-automation"]}
+{"repo_id": 17420913, "repo_name": "rust-lang/cargo", "topics": ["cargo", "package-manager", "rust"]}
+{"repo_id": 22067521, "repo_name": "ocornut/imgui", "topics": ["api", "cplusplus", "framework", "game-development", "game-engine", "gamedev", "gui", "imgui", "immediate-gui", "library", "multi-platform", "native", "toolkit", "tools", "ui"]}
+{"repo_id": 272755937, "repo_name": "carbon-design-system/ibm-products", "topics": ["carbon-design-system", "design-system", "hacktoberfest", "ibm-products", "javascript", "react", "scss"]}
+{"repo_id": 689344, "repo_name": "libretro/RetroArch", "topics": ["c", "libretro", "retroarch"]}
+{"repo_id": 21180741, "repo_name": "hapifhir/hapi-fhir", "topics": ["apps", "fhir", "hapi-fhir", "healthcare", "hl7", "java", "java-api", "mhealth"]}
+{"repo_id": 102083576, "repo_name": "apache/netbeans", "topics": ["code-editor", "ide", "java", "netbeans", "netbeans-platform"]}
+{"repo_id": 271929004, "repo_name": "OpenXiangShan/XiangShan", "topics": ["chisel", "microarchitecture", "risc-v"]}
+{"repo_id": 229072307, "repo_name": "prusa3d/Prusa-Firmware-Buddy", "topics": ["buddy", "firmware", "prusa"]}
+{"repo_id": 26884725, "repo_name": "OrchardCMS/OrchardCore", "topics": ["asp-net", "c-sharp", "cms", "dotnet-core", "modular", "orchard-cms", "orchardcore"]}
+{"repo_id": 31211061, "repo_name": "galaxyproject/galaxy", "topics": ["bioinformatics", "dna", "genomics", "hacktoberfest", "ngs", "pipeline", "science", "sequencing", "usegalaxy", "workflow", "workflow-engine"]}
+{"repo_id": 16479108, "repo_name": "wagtail/wagtail", "topics": ["cms", "django", "hacktoberfest", "python", "wagtail"]}
+{"repo_id": 340499469, "repo_name": "nautobot/nautobot", "topics": ["dcim", "hacktoberfest", "ipam", "nautobot", "network-automation", "python", "sot"]}
+{"repo_id": 527483772, "repo_name": "apecloud/kubeblocks", "topics": ["database", "dbaas", "dbpaas", "kafka", "kubernetes", "mongodb", "mysql", "operator", "postgresql", "redis"]}
+{"repo_id": 51516387, "repo_name": "IgniteUI/igniteui-angular", "topics": ["angular", "angular-charts", "angular-components", "angular-datatable", "angular-grid", "angular-table", "igniteui", "infragistics", "progressive-web-apps", "typescript", "ui-components"]}
+{"repo_id": 392073243, "repo_name": "hcengineering/platform", "topics": ["applicant-tracking-system", "chat-application", "crm", "crm-platform", "hrms", "human-resources", "issue-management", "issue-tracker", "jira-alternative", "project-management", "qms", "support", "team-management", "team-platform", "wiki"]}
+{"repo_id": 479890272, "repo_name": "Card-Forge/forge", "topics": ["adventure", "ai", "android", "java", "magic-the-gathering", "quest", "rules-engine"]}
+{"repo_id": 203587744, "repo_name": "hoppscotch/hoppscotch", "topics": ["api", "api-client", "api-rest", "api-testing", "developer-tools", "graphql", "hacktoberfest", "http", "http-client", "pwa", "rest", "rest-api", "spa", "testing", "testing-tools", "tools", "vue", "vuejs", "websocket"]}
+{"repo_id": 28928522, "repo_name": "wolfSSL/wolfssl", "topics": ["c-library", "cipher-suites", "cryptography", "cryptography-api", "dtls", "embedded-systems", "encryption", "fips", "https", "iot", "openssl", "openssl-alternative", "openssl-api", "security", "sniffer", "ssl", "tls", "tls13", "trusted-execution-environment", "wolfssl"]}
+{"repo_id": 39182755, "repo_name": "glpi-project/glpi", "topics": ["asset-manager", "assets-management", "cmdb", "data-center", "dcim", "glpi", "hacktoberfest", "helpdesk", "impact-analysis", "inventory", "itam", "itil", "itsm", "license-management", "ticketing"]}
+{"repo_id": 25379390, "repo_name": "openucx/ucx", "topics": ["aries", "c", "c-plus-plus", "cray", "drivers", "gemini", "hacktoberfest", "hpc", "infiniband", "iwarp", "mpi", "networking", "openshmem", "pgas", "rdma", "roce", "shared-memory", "shmem", "tcp-ip", "verbs"]}
+{"repo_id": 127246132, "repo_name": "reown-com/appkit", "topics": ["dapps", "ethereum", "integration", "plugin", "react", "wallet", "walletconnect", "widget"]}
+{"repo_id": 2200856, "repo_name": "MarlinFirmware/Marlin", "topics": ["3d-printing", "arduino", "atmel", "avr", "esp32", "firmware", "hacktoberfest", "reprap", "stmicro"]}
+{"repo_id": 365739812, "repo_name": "tldraw/tldraw", "topics": ["canvas", "collaboration", "design", "diagram", "drawing", "infinite", "multiplayer", "react", "sdk", "sketch", "sync", "whiteboard"]}
+{"repo_id": 143291989, "repo_name": "uyuni-project/uyuni", "topics": ["cucumber", "hacktoberfest", "java", "linux", "postgresql", "python", "reactjs", "saltstack", "spacewalk", "suse-manager", "system-management", "uyuni"]}
+{"repo_id": 6720403, "repo_name": "simple-icons/simple-icons", "topics": ["brand", "brand-assets", "brand-colors", "branding", "branding-assets", "brands", "company-brands", "design", "design-assets", "icon-pack", "icon-packs", "icons", "iconset", "logo", "logos", "svg", "svg-files", "svg-icons", "svg-images"]}

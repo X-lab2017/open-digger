@@ -1,0 +1,5019 @@
+name: 人工智能
+type: Tech-10
+data:
+  platforms:
+  - name: GitHub
+    type: Code Hosting
+    repos:
+    - id: 75821432
+      name: llvm/llvm-project
+    - id: 65600975
+      name: pytorch/pytorch
+    - id: 599547518
+      name: vllm-project/vllm
+    - id: 626805178
+      name: langgenius/dify
+    - id: 60246359
+      name: ClickHouse/ClickHouse
+    - id: 155220641
+      name: huggingface/transformers
+    - id: 99919302
+      name: apache/doris
+    - id: 601205363
+      name: tenstorrent/tt-metal
+    - id: 658928958
+      name: ollama/ollama
+    - id: 153097643
+      name: openvinotoolkit/openvino
+    - id: 535360445
+      name: ultralytics/ultralytics
+    - id: 33884891
+      name: apache/airflow
+    - id: 65711522
+      name: PaddlePaddle/Paddle
+    - id: 71932349
+      name: ray-project/ray
+    - id: 156939672
+      name: microsoft/onnxruntime
+    - id: 552661142
+      name: langchain-ai/langchain
+    - id: 629635341
+      name: microsoft/vscode-copilot-release
+    - id: 166008577
+      name: intel/llvm
+    - id: 701547123
+      name: open-webui/open-webui
+    - id: 671269505
+      name: BerriAI/litellm
+    - id: 740303686
+      name: sgl-project/sglang
+    - id: 214587193
+      name: supabase/supabase
+    - id: 200722670
+      name: NVIDIA/NeMo
+    - id: 193215554
+      name: n8n-io/n8n
+    - id: 463628495
+      name: pytorch/executorch
+    - id: 100061716
+      name: nrwl/nx
+    - id: 862449441
+      name: stackblitz/bolt.new
+    - id: 730534580
+      name: infiniflow/ragflow
+    - id: 805155266
+      name: CherryHQ/cherry-studio
+    - id: 208728772
+      name: milvus-io/milvus
+    - id: 560704231
+      name: run-llama/llama_index
+    - id: 498011141
+      name: huggingface/diffusers
+    - id: 589831718
+      name: comfyanonymous/ComfyUI
+    - id: 646410686
+      name: hiyouga/LLaMA-Factory
+    - id: 644686905
+      name: continuedev/continue
+    - id: 612354784
+      name: ggerganov/llama.cpp
+    - id: 643445235
+      name: lobehub/lobe-chat
+    - id: 44662669
+      name: dbeaver/dbeaver
+    - id: 679366051
+      name: NVIDIA/TensorRT-LLM
+    - id: 1644196
+      name: JuliaLang/julia
+    - id: 7512484
+      name: ArduPilot/ardupilot
+    - id: 771302083
+      name: All-Hands-AI/OpenHands
+    - id: 607289185
+      name: microsoft/semantic-kernel
+    - id: 162405963
+      name: gradio-app/gradio
+    - id: 46398090
+      name: datahub-project/datahub
+    - id: 204086862
+      name: streamlit/streamlit
+    - id: 612354784
+      name: ggml-org/llama.cpp
+    - id: 644461337
+      name: vercel/ai
+    - id: 673412924
+      name: modelscope/ms-swift
+    - id: 136202695
+      name: mlflow/mlflow
+    - id: 826170402
+      name: elizaOS/eliza
+    - id: 680120071
+      name: microsoft/autogen
+    - id: 725205304
+      name: unslothai/unsloth
+    - id: 605673387
+      name: labring/FastGPT
+    - id: 86031674
+      name: wandb/wandb
+    - id: 237647258
+      name: meshtastic/firmware
+    - id: 638629097
+      name: Aider-AI/aider
+    - id: 291438522
+      name: siyuan-note/siyuan
+    - id: 45717250
+      name: tensorflow/tensorflow
+    - id: 843222
+      name: scikit-learn/scikit-learn
+    - id: 600596928
+      name: danny-avila/LibreChat
+    - id: 99412308
+      name: apache/seatunnel
+    - id: 208145128
+      name: iree-org/iree
+    - id: 5108051
+      name: opencv/opencv
+    - id: 336274588
+      name: PaddlePaddle/PaddleNLP
+    - id: 129936360
+      name: PennyLaneAI/pennylane
+    - id: 659402878
+      name: spring-projects/spring-ai
+    - id: 384219990
+      name: warpdotdev/Warp
+    - id: 38644841
+      name: Opentrons/opentrons
+    - id: 654122609
+      name: InternLM/lmdeploy
+    - id: 250510075
+      name: huggingface/trl
+    - id: 10994345
+      name: root-project/root
+    - id: 479289739
+      name: rerun-io/rerun
+    - id: 567038244
+      name: isaac-sim/IsaacLab
+    - id: 523007292
+      name: openxla/xla
+    - id: 204164353
+      name: kestra-io/kestra
+    - id: 192640529
+      name: HumanSignal/label-studio
+    - id: 464909502
+      name: huggingface/optimum-habana
+    - id: 3390243
+      name: servo/servo
+    - id: 653496050
+      name: xorbitsai/inference
+    - id: 6520784
+      name: RPCS3/rpcs3
+    - id: 612781022
+      name: getcursor/cursor
+    - id: 710601088
+      name: crewAIInc/crewAI
+    - id: 649170660
+      name: Mintplex-Labs/anything-llm
+    - id: 546206616
+      name: chroma-core/chroma
+    - id: 705678696
+      name: openvinotoolkit/openvino.genai
+    - id: 222824662
+      name: dagger/dagger
+    - id: 167694194
+      name: blakeblackshear/frigate
+    - id: 733558285
+      name: HabanaAI/vllm-fork
+    - id: 814403270
+      name: Comfy-Org/ComfyUI_frontend
+    - id: 678526156
+      name: marimo-team/marimo
+    - id: 26783295
+      name: Kong/kong
+    - id: 642497346
+      name: langfuse/langfuse
+    - id: 793795224
+      name: firebase/genkit
+    - id: 707441527
+      name: livekit/agents
+    - id: 89033556
+      name: firebase/firebase-ios-sdk
+    - id: 691347156
+      name: 1Panel-dev/MaxKB
+    - id: 537329801
+      name: ROCm/hipBLASLt
+    - id: 783473979
+      name: TheBi11iona1re/Study-App
+    - id: 33015583
+      name: keras-team/keras
+    - id: 842586148
+      name: yetone/avante.nvim
+    - id: 846698999
+      name: block/goose
+    - id: 215875945
+      name: swiftlang/llvm-project
+    - id: 656264456
+      name: langchain4j/langchain4j
+    - id: 156401841
+      name: sktime/sktime
+    - id: 245072514
+      name: llvm/circt
+    - id: 714073518
+      name: pytorch/ao
+    - id: 621803253
+      name: FlowiseAI/Flowise
+    - id: 448599559
+      name: deepflowio/deepflow
+    - id: 268163609
+      name: qdrant/qdrant
+    - id: 74627617
+      name: commaai/openpilot
+    - id: 139156354
+      name: cvat-ai/cvat
+    - id: 820145382
+      name: meta-llama/llama-stack
+    - id: 607845880
+      name: AI-Hypercomputer/maxtext
+    - id: 268804625
+      name: opendatahub-io/odh-dashboard
+    - id: 156293205
+      name: pytorch/xla
+    - id: 377496562
+      name: AppFlowy-IO/AppFlowy
+    - id: 205706595
+      name: mlrun/mlrun
+    - id: 349172057
+      name: linkedin/venice
+    - id: 60377070
+      name: vespa-engine/vespa
+    - id: 783512367
+      name: RSSNext/Follow
+    - id: 615510678
+      name: camel-ai/camel
+    - id: 159152904
+      name: jeecgboot/JeecgBoot
+    - id: 775149161
+      name: opea-project/GenAIExamples
+    - id: 257913595
+      name: voxel51/fiftyone
+    - id: 100982449
+      name: argoproj/argo-workflows
+    - id: 778431525
+      name: microsoft/graphrag
+    - id: 743230067
+      name: RVC-Boss/GPT-SoVITS
+    - id: 573661753
+      name: activepieces/activepieces
+    - id: 823430322
+      name: FunAudioLLM/CosyVoice
+    - id: 881458615
+      name: browser-use/browser-use
+    - id: 539057023
+      name: NVIDIA/TransformerEngine
+    - id: 479890272
+      name: Card-Forge/forge
+    - id: 17634071
+      name: JabRef/jabref
+    - id: 16256144
+      name: RobotLocomotion/drake
+    - id: 564072810
+      name: Arize-ai/phoenix
+    - id: 478037973
+      name: embeddings-benchmark/mteb
+    - id: 149026292
+      name: cube-js/cube
+    - id: 143328315
+      name: mindsdb/mindsdb
+    - id: 395140743
+      name: skypilot-org/skypilot
+    - id: 633927609
+      name: promptfoo/promptfoo
+    - id: 736272311
+      name: pipecat-ai/pipecat
+    - id: 10744183
+      name: netdata/netdata
+    - id: 241095326
+      name: adap/flower
+    - id: 718314761
+      name: microsoft/onnxruntime-genai
+    - id: 290909192
+      name: EleutherAI/lm-evaluation-harness
+    - id: 66823715
+      name: intel-analytics/ipex-llm
+    - id: 547806116
+      name: huggingface/text-generation-inference
+    - id: 488641606
+      name: agno-agi/agno
+    - id: 599524116
+      name: SillyTavern/SillyTavern
+    - id: 137451403
+      name: alibaba/nacos
+    - id: 108102826
+      name: carla-simulator/carla
+    - id: 553878560
+      name: modal-labs/modal-client
+    - id: 634043200
+      name: modularml/mojo
+    - id: 866513204
+      name: HKUDS/LightRAG
+    - id: 872087586
+      name: stackblitz-labs/bolt.diy
+    - id: 151636194
+      name: triton-inference-server/server
+    - id: 614765452
+      name: Significant-Gravitas/AutoGPT
+    - id: 636693030
+      name: GoogleCloudPlatform/generative-ai
+    - id: 833984877
+      name: kvcache-ai/ktransformers
+    - id: 839037098
+      name: mastra-ai/mastra
+    - id: 216628419
+      name: flyteorg/flyte
+    - id: 526514610
+      name: dust-tt/dust
+    - id: 235860204
+      name: microsoft/DeepSpeed
+    - id: 485548415
+      name: Eventual-Inc/Daft
+    - id: 4158448
+      name: magefree/mage
+    - id: 748713144
+      name: huggingface/lerobot
+    - id: 638951438
+      name: comet-ml/opik
+    - id: 558188628
+      name: alibaba/higress
+    - id: 614764248
+      name: TabbyML/tabby
+    - id: 253846879
+      name: determined-ai/determined
+    - id: 70746484
+      name: apache/tvm
+    - id: 773894671
+      name: Lightning-AI/lightning-thunder
+    - id: 302827809
+      name: databendlabs/databend
+    - id: 180481986
+      name: apache/apisix
+    - id: 695864515
+      name: hacksider/Deep-Live-Cam
+    - id: 458648791
+      name: paperless-ngx/paperless-ngx
+    - id: 7202769
+      name: emqx/emqx
+    - id: 776121034
+      name: BasedHardware/omi
+    - id: 656099147
+      name: mem0ai/mem0
+    - id: 651487266
+      name: EvolutionAPI/evolution-api
+    - id: 613984283
+      name: Chainlit/chainlit
+    - id: 175592968
+      name: volcano-sh/volcano
+    - id: 460914281
+      name: Avaiga/taipy
+    - id: 257688216
+      name: quic/aimet
+    - id: 654096725
+      name: IBM/unitxt
+    - id: 308444913
+      name: ray-project/kuberay
+    - id: 881506708
+      name: RooVetGit/Roo-Code
+    - id: 245704608
+      name: colinhacks/zod
+    - id: 627480054
+      name: eosphoros-ai/DB-GPT
+    - id: 688398751
+      name: epam/ai-dial-chat
+    - id: 712225112
+      name: Genesis-Embodied-AI/Genesis
+    - id: 58414589
+      name: uxlfoundation/oneDNN
+    - id: 787076358
+      name: mendableai/firecrawl
+    - id: 725956246
+      name: open-compass/VLMEvalKit
+    - id: 621799276
+      name: chatchat-space/Langchain-Chatchat
+    - id: 580387696
+      name: aeon-toolkit/aeon
+    - id: 531380835
+      name: k2-fsa/sherpa-onnx
+    - id: 187247007
+      name: OSGeo/grass
+    - id: 654124617
+      name: open-compass/opencompass
+    - id: 627727693
+      name: axolotl-ai-cloud/axolotl
+    - id: 221654678
+      name: deepset-ai/haystack
+    - id: 753490180
+      name: daytonaio/daytona
+    - id: 135363400
+      name: ros-navigation/navigation2
+    - id: 673010778
+      name: roboflow/inference
+    - id: 66823715
+      name: intel/ipex-llm
+    - id: 355032495
+      name: opensearch-project/ml-commons
+    - id: 511691380
+      name: lancedb/lance
+    - id: 112542515
+      name: NVIDIA/cutlass
+    - id: 615869301
+      name: mudler/LocalAI
+    - id: 510889311
+      name: Azure/azure-dev
+    - id: 833306239
+      name: containers/ramalama
+    - id: 570384908
+      name: huggingface/peft
+    - id: 606266313
+      name: apple/axlearn
+    - id: 694266896
+      name: intuitem/ciso-assistant-community
+    - id: 761150311
+      name: Zipstack/unstract
+    - id: 798201435
+      name: unclecode/crawl4ai
+    - id: 799049436
+      name: gpustack/gpustack
+    - id: 721995615
+      name: OpenGVLab/InternVL
+    - id: 45727810
+      name: DaoCloud/DaoCloud-docs
+    - id: 161133770
+      name: feast-dev/feast
+    - id: 378310716
+      name: logto-io/logto
+    - id: 637924634
+      name: explodinggradients/ragas
+    - id: 730753909
+      name: Azure/PyRIT
+    - id: 53976910
+      name: Texera/texera
+    - id: 515368123
+      name: tracel-ai/burn
+    - id: 817326197
+      name: mediar-ai/screenpipe
+    - id: 686161611
+      name: Acly/krita-ai-diffusion
+    - id: 58414589
+      name: oneapi-src/oneDNN
+    - id: 106024057
+      name: pyg-team/pytorch_geometric
+    - id: 133100880
+      name: kubeflow/pipelines
+    - id: 355464516
+      name: dxos/dxos
+    - id: 580642043
+      name: oobabooga/text-generation-webui
+    - id: 881506708
+      name: RooCodeInc/Roo-Code
+    - id: 663604762
+      name: aryn-ai/sycamore
+    - id: 150458335
+      name: openvinotoolkit/model_server
+    - id: 598261814
+      name: huggingface/huggingface.js
+    - id: 138552196
+      name: nautechsystems/nautilus_trader
+    - id: 655515393
+      name: CopilotKit/CopilotKit
+    - id: 511003180
+      name: basetenlabs/truss
+    - id: 182067506
+      name: kedro-org/kedro
+    - id: 135768037
+      name: NVIDIA/DALI
+    - id: 541798154
+      name: Unstructured-IO/unstructured
+    - id: 249615315
+      name: nnstreamer/nntrainer
+    - id: 814708478
+      name: unitycatalog/unitycatalog
+    - id: 672415139
+      name: OpenRLHF/OpenRLHF
+    - id: 771350543
+      name: Canner/WrenAI
+    - id: 730932260
+      name: pytorch/torchtitan
+    - id: 246634306
+      name: pytorch/TensorRT
+    - id: 590158156
+      name: ubicloud/ubicloud
+    - id: 178075572
+      name: kserve/kserve
+    - id: 634081686
+      name: mlc-ai/mlc-llm
+    - id: 915198910
+      name: yeongpin/cursor-free-vip
+    - id: 942206898
+      name: ai-dynamo/dynamo
+    - id: 497512032
+      name: THUDM/CogVideo
+    - id: 104670986
+      name: JohnSnowLabs/spark-nlp
+    - id: 789558007
+      name: nod-ai/shark-ai
+    - id: 660489378
+      name: microsoft/promptflow
+    - id: 667598363
+      name: googleapis/python-bigquery-dataframes
+    - id: 612344730
+      name: ChatGPTNextWeb/ChatGPT-Next-Web
+    - id: 481901631
+      name: secretflow/secretflow
+    - id: 521075862
+      name: llvm/clangir
+    - id: 633262635
+      name: onyx-dot-app/onyx
+    - id: 620936652
+      name: xtekky/gpt4free
+    - id: 602822750
+      name: PennyLaneAI/catalyst
+    - id: 854337508
+      name: alibaba/spring-ai-alibaba
+    - id: 314197645
+      name: zenml-io/zenml
+    - id: 819554665
+      name: exo-explore/exo
+    - id: 574630761
+      name: nvidia-holoscan/holohub
+    - id: 365250183
+      name: zauberzeug/nicegui
+    - id: 631254164
+      name: songquanpeng/one-api
+    - id: 662392605
+      name: PaddlePaddle/PaddleMIX
+    - id: 818118661
+      name: mcmonkeyprojects/SwarmUI
+    - id: 520357130
+      name: haosulab/ManiSkill
+    - id: 607441698
+      name: lancedb/lancedb
+    - id: 614637892
+      name: LostRuins/koboldcpp
+    - id: 385408663
+      name: pytorch/torchrec
+    - id: 178626720
+      name: Lightning-AI/pytorch-lightning
+    - id: 527591471
+      name: AUTOMATIC1111/stable-diffusion-webui
+    - id: 184657328
+      name: NVIDIA/TensorRT
+    - id: 638629097
+      name: paul-gauthier/aider
+    - id: 449742743
+      name: viamrobotics/docs
+    - id: 738733003
+      name: danielmiessler/fabric
+    - id: 572570113
+      name: triggerdotdev/trigger.dev
+    - id: 924058625
+      name: vllm-project/vllm-ascend
+    - id: 702796244
+      name: fishaudio/fish-speech
+    - id: 610038902
+      name: karthink/gptel
+    - id: 762304524
+      name: ComposioHQ/composio
+    - id: 763774926
+      name: EricLBuehler/mistral.rs
+    - id: 493014338
+      name: mage-ai/mage-ai
+    - id: 201991558
+      name: microsoft/Olive
+    - id: 849239437
+      name: QwenLM/Qwen2.5-VL
+    - id: 764723738
+      name: Skyvern-AI/skyvern
+    - id: 45357724
+      name: huridocs/uwazi
+    - id: 701494311
+      name: BoundaryML/baml
+    - id: 294546561
+      name: microsoft/vscode-jupyter
+    - id: 679506386
+      name: janhq/jan
+    - id: 639835356
+      name: assafelovic/gpt-researcher
+    - id: 41288708
+      name: sourcegraph/sourcegraph-public-snapshot
+    - id: 175681313
+      name: joernio/joern
+    - id: 323591830
+      name: huggingface/huggingface_hub
+    - id: 958830659
+      name: google/adk-python
+    - id: 768612800
+      name: EvolvingLMMs-Lab/lmms-eval
+    - id: 779482952
+      name: quic/efficient-transformers
+    - id: 209120637
+      name: Netflix/metaflow
+    - id: 394089041
+      name: spiceai/spiceai
+    - id: 432968463
+      name: stanford-crfm/helm
+    - id: 783512367
+      name: RSSNext/Folo
+    - id: 575865240
+      name: AstrBotDevs/AstrBot
+    - id: 267715375
+      name: keras-team/keras-hub
+    - id: 669331976
+      name: flashinfer-ai/flashinfer
+    - id: 400589095
+      name: Xilinx/mlir-aie
+    - id: 422274596
+      name: hpcaitech/ColossalAI
+    - id: 736363011
+      name: olimorris/codecompanion.nvim
+    - id: 130688011
+      name: meilisearch/meilisearch
+    - id: 370740787
+      name: liveblocks/liveblocks
+    - id: 713150077
+      name: ROCm/vllm
+    - id: 110621895
+      name: aws/sagemaker-python-sdk
+    - id: 850267588
+      name: 78/xiaozhi-esp32
+    - id: 456699558
+      name: oracle/accelerated-data-science
+    - id: 39812341
+      name: matsim-org/matsim-libs
+    - id: 799032556
+      name: Jeffser/Alpaca
+    - id: 549830413
+      name: civitai/civitai
+    - id: 820144741
+      name: iterative/datachain
+    - id: 340402576
+      name: mrousavy/react-native-vision-camera
+    - id: 838970603
+      name: linkedin/Liger-Kernel
+    - id: 853189791
+      name: Byaidu/PDFMathTranslate
+    - id: 634046345
+      name: mosaicml/llm-foundry
+    - id: 426848256
+      name: quadratichq/quadratic
+    - id: 191820100
+      name: google-ai-edge/mediapipe
+    - id: 801573009
+      name: timescale/pgai
+    - id: 526520932
+      name: deepset-ai/haystack-core-integrations
+    - id: 646537482
+      name: bghira/SimpleTuner
+    - id: 114054873
+      name: espnet/espnet
+    - id: 595832198
+      name: Helicone/helicone
+    - id: 721217347
+      name: rapidsai/cuvs
+    - id: 783968898
+      name: IBM/data-prep-kit
+    - id: 73964895
+      name: botpress/botpress
+    - id: 214485001
+      name: Project-MONAI/MONAI
+    - id: 673596675
+      name: FlagOpen/FlagEmbedding
+    - id: 429104828
+      name: opensumi/core
+    - id: 406346103
+      name: Project-HAMi/HAMi
+    - id: 400501136
+      name: google-deepmind/mujoco
+    - id: 235221262
+      name: meshtastic/Meshtastic-Android
+    - id: 16587283
+      name: dmlc/xgboost
+    - id: 816158613
+      name: ModelCloud/GPTQModel
+    - id: 136505169
+      name: tinygo-org/tinygo
+    - id: 741100585
+      name: langchain-ai/langgraphjs
+    - id: 374763231
+      name: inngest/inngest
+    - id: 199509705
+      name: autogluon/autogluon
+    - id: 176982014
+      name: NVIDIA/Megatron-LM
+    - id: 43098215
+      name: deepchem/deepchem
+    - id: 63237385
+      name: systemd/mkosi
+    - id: 777111718
+      name: Cinnamon/kotaemon
+    - id: 820087727
+      name: onlook-dev/onlook
+    - id: 655797848
+      name: huggingface/candle
+    - id: 626790707
+      name: Nerogar/OneTrainer
+    - id: 82206054
+      name: weseek/growi
+    - id: 598249096
+      name: microsoft/teams-ai
+    - id: 540357453
+      name: mindspore-lab/mindnlp
+    - id: 118510171
+      name: solo-io/gloo
+    - id: 800839481
+      name: THUDM/GLM-4
+    - id: 444377346
+      name: dstackai/dstack
+    - id: 763627277
+      name: KGU-SSF/SSF-AI
+    - id: 396992684
+      name: deepjavalibrary/djl-serving
+    - id: 522158088
+      name: zhayujie/chatgpt-on-wechat
+    - id: 782193084
+      name: boozallen/aissemble
+    - id: 845191835
+      name: MicrosoftDocs/azure-ai-docs
+    - id: 429736266
+      name: baptisteArno/typebot.io
+    - id: 756142546
+      name: SciPhi-AI/R2R
+    - id: 790370060
+      name: Xilinx/llvm-aie
+    - id: 454479855
+      name: pytorch/rl
+    - id: 323048702
+      name: OpenBB-finance/OpenBB
+    - id: 946380199
+      name: openai/openai-agents-python
+    - id: 166579829
+      name: ROCm/aomp
+    - id: 235860204
+      name: deepspeedai/DeepSpeed
+    - id: 784181462
+      name: ItzCrazyKns/Perplexica
+    - id: 346639494
+      name: openvinotoolkit/openvino_notebooks
+    - id: 377498937
+      name: AppFlowy-IO/AppFlowy-Cloud
+    - id: 152878952
+      name: CliMA/Oceananigans.jl
+    - id: 515204860
+      name: infiniflow/infinity
+    - id: 181436799
+      name: alibaba/MNN
+    - id: 644293378
+      name: CVHub520/X-AnyLabeling
+    - id: 603085008
+      name: huggingface/chat-ui
+    - id: 266339717
+      name: n8n-io/n8n-docs
+    - id: 165405689
+      name: TheThingsNetwork/lorawan-stack
+    - id: 370342171
+      name: grafbase/grafbase
+    - id: 717197250
+      name: Calcium-Ion/new-api
+    - id: 148221325
+      name: tensorflow/datasets
+    - id: 498449014
+      name: nerfstudio-project/nerfstudio
+    - id: 653673792
+      name: secretflow/kuscia
+    - id: 496192011
+      name: huggingface/optimum-intel
+    - id: 634043200
+      name: modular/modular
+    - id: 411912097
+      name: bytechefhq/bytechef
+    - id: 470472185
+      name: koordinator-sh/koordinator
+    - id: 650796703
+      name: GoogleCloudPlatform/ai-on-gke
+    - id: 730833649
+      name: breadboard-ai/breadboard
+    - id: 619284964
+      name: devflowinc/trieve
+    - id: 541269386
+      name: ggerganov/whisper.cpp
+    - id: 885037479
+      name: solo-io/gloo
+    - id: 543052826
+      name: speakeasy-api/speakeasy
+    - id: 299832860
+      name: livekit/livekit
+    - id: 122299416
+      name: optuna/optuna
+    - id: 642608852
+      name: ShishirPatil/gorilla
+    - id: 250213286
+      name: huggingface/datasets
+    - id: 235377467
+      name: eclipse-zenoh/zenoh
+    - id: 747132211
+      name: ayush-that/FinVeda
+    - id: 378795568
+      name: sony/model_optimization
+    - id: 154843614
+      name: openvinotoolkit/training_extensions
+    - id: 136450404
+      name: PaddlePaddle/docs
+    - id: 772255271
+      name: NVIDIA/NeMo-Curator
+    - id: 650344440
+      name: openmeterio/openmeter
+    - id: 95817032
+      name: edgedb/edgedb
+    - id: 588992876
+      name: griptape-ai/griptape
+    - id: 75413130
+      name: isl-org/Open3D
+    - id: 241394221
+      name: dell/omnia
+    - id: 633262635
+      name: danswer-ai/danswer
+    - id: 151064439
+      name: ExpressLRS/ExpressLRS
+    - id: 427384949
+      name: Hufe921/canvas-editor
+    - id: 599950865
+      name: deepinv/deepinv
+    - id: 342728683
+      name: replicate/cog
+    - id: 807305060
+      name: LMCache/LMCache
+    - id: 260027545
+      name: dusty-nv/jetson-containers
+    - id: 632871628
+      name: Agenta-AI/agenta
+    - id: 849007972
+      name: kubernetes-sigs/gateway-api-inference-extension
+    - id: 638156745
+      name: zjunlp/EasyEdit
+    - id: 826168160
+      name: docling-project/docling
+    - id: 673277958
+      name: modelscope/data-juicer
+    - id: 652967817
+      name: run-llama/LlamaIndexTS
+    - id: 599293758
+      name: Azure-Samples/azure-search-openai-demo
+    - id: 427274423
+      name: castai/helm-charts
+    - id: 20296703
+      name: eProsima/Fast-DDS
+    - id: 336277921
+      name: gchq/Bailo
+    - id: 301690023
+      name: mondaycom/vibe
+    - id: 119160553
+      name: photoprism/photoprism
+    - id: 855528273
+      name: voideditor/void
+    - id: 118510171
+      name: kgateway-dev/kgateway
+    - id: 816360433
+      name: probabl-ai/skore
+    - id: 705428944
+      name: NVIDIA/bionemo-framework
+    - id: 102692863
+      name: onnx/onnx
+    - id: 728528910
+      name: modelscope/evalscope
+    - id: 470594388
+      name: huggingface/hub-docs
+    - id: 749126547
+      name: ScrapeGraphAI/Scrapegraph-ai
+    - id: 1301584
+      name: mne-tools/mne-python
+    - id: 896335270
+      name: punkpeye/awesome-mcp-servers
+    - id: 478288303
+      name: nuclia/nucliadb
+    - id: 675859069
+      name: IAHispano/Applio
+    - id: 370977430
+      name: openimsdk/open-im-server
+    - id: 781261349
+      name: microsoft/RD-Agent
+    - id: 718048072
+      name: quarkiverse/quarkus-langchain4j
+    - id: 826168160
+      name: DS4SD/docling
+    - id: 275431435
+      name: PhotonVision/photonvision
+    - id: 742356612
+      name: OpenCSGs/csghub
+    - id: 852998534
+      name: obot-platform/obot
+    - id: 679017521
+      name: AgentOps-AI/agentops
+    - id: 288509390
+      name: AltimateAI/vscode-dbt-power-user
+    - id: 835452752
+      name: facebookresearch/sam2
+    - id: 64991887
+      name: microsoft/LightGBM
+    - id: 289334021
+      name: Azure/azureml-examples
+    - id: 315977578
+      name: evidentlyai/evidently
+    - id: 133060053
+      name: sdv-dev/SDV
+    - id: 703227205
+      name: GoogleCloudPlatform/ml-auto-solutions
+    - id: 642917329
+      name: vercel/ai-chatbot
+    - id: 95879426
+      name: Tencent/ncnn
+    - id: 581166973
+      name: facebookresearch/fairseq2
+    - id: 517552648
+      name: modelscope/modelscope
+    - id: 703411624
+      name: letta-ai/letta
+    - id: 148657183
+      name: unit8co/darts
+    - id: 664013991
+      name: gitroomhq/postiz-app
+    - id: 849239437
+      name: QwenLM/Qwen2-VL
+    - id: 50613360
+      name: ihmcrobotics/ihmc-open-robotics-software
+    - id: 886637886
+      name: google-deepmind/alphafold3
+    - id: 636372163
+      name: Lightning-AI/litgpt
+    - id: 879739593
+      name: andriygav/MLbook
+    - id: 561311177
+      name: pymc-devs/pytensor
+    - id: 903304373
+      name: StructuredLabs/preswald
+    - id: 152616802
+      name: rapidsai/cuml
+    - id: 806709826
+      name: 2noise/ChatTTS
+    - id: 374686811
+      name: usnistgov/dioptra
+    - id: 581913613
+      name: vladmandic/automatic
+    - id: 682080300
+      name: Portkey-AI/gateway
+    - id: 705659536
+      name: PFCCLab/Starter
+    - id: 369428935
+      name: microsoft/torchgeo
+    - id: 396569538
+      name: khoj-ai/khoj
+    - id: 300205799
+      name: zama-ai/concrete
+    - id: 167628014
+      name: chemprop/chemprop
+    - id: 183522394
+      name: intel/onnxruntime
+    - id: 660551251
+      name: geekan/MetaGPT
+    - id: 490725794
+      name: run-house/runhouse
+    - id: 910986056
+      name: browser-use/web-ui
+    - id: 724233270
+      name: emdgroup/baybe
+    - id: 764020969
+      name: spiraldb/vortex
+    - id: 747952953
+      name: google/oss-fuzz-gen
+    - id: 531473036
+      name: JohnSnowLabs/johnsnowlabs
+    - id: 17050358
+      name: vgvassilev/clad
+    - id: 608896930
+      name: sigoden/aichat
+    - id: 644742603
+      name: apache/cloudberry
+    - id: 1235740
+      name: nilearn/nilearn
+    - id: 669420857
+      name: ModelTC/lightllm
+    - id: 300087031
+      name: airbnb/chronon
+    - id: 416157128
+      name: mosaicml/composer
+    - id: 886637961
+      name: ROCm/aiter
+    - id: 741365632
+      name: apify/crawlee-python
+    - id: 842906219
+      name: BinaryStudioAcademy/bsa-2024-bebalance
+    - id: 520096046
+      name: marqo-ai/marqo
+    - id: 37459110
+      name: Ericsson/codechecker
+    - id: 259710503
+      name: speechbrain/speechbrain
+    - id: 707818217
+      name: predibase/lorax
+    - id: 798235565
+      name: ant-design/x
+    - id: 679125280
+      name: kolbytn/mindcraft
+    - id: 861937484
+      name: aws/amazon-q-developer-cli
+    - id: 789940696
+      name: iree-org/iree-turbine
+    - id: 373674258
+      name: bitsandbytes-foundation/bitsandbytes
+    - id: 3659275
+      name: numba/numba
+    - id: 615928156
+      name: enricoros/big-AGI
+    - id: 141040516
+      name: UBC-Thunderbots/Software
+    - id: 178976529
+      name: bentoml/BentoML
+    - id: 494796716
+      name: aixplain/aiXplain
+    - id: 479735289
+      name: dmMaze/BallonsTranslator
+    - id: 821360765
+      name: latitude-dev/latitude-llm
+    - id: 16389919
+      name: Charcoal-SE/SmokeDetector
+    - id: 686364232
+      name: traceloop/openllmetry
+    - id: 102971729
+      name: ros-controls/ros2_control
+    - id: 377910358
+      name: CliMA/ClimaAtmos.jl
+    - id: 832452447
+      name: web-infra-dev/midscene
+    - id: 4557968
+      name: comic/grand-challenge.org
+    - id: 281528773
+      name: intel/neural-compressor
+    - id: 439439857
+      name: StanfordVL/OmniGibson
+    - id: 97248567
+      name: brucefan1983/GPUMD
+    - id: 881171866
+      name: WEIFENG2333/VideoCaptioner
+    - id: 652941996
+      name: LykosAI/StabilityMatrix
+    - id: 604360463
+      name: allenai/OLMo
+    - id: 267223745
+      name: oneapi-src/oneAPI-samples
+    - id: 97641933
+      name: OpenMined/PySyft
+    - id: 596047712
+      name: huggingface/optimum-neuron
+    - id: 582432706
+      name: brianpetro/obsidian-smart-connections
+    - id: 926252103
+      name: Mail-0/Zero
+    - id: 801016442
+      name: IBM/terratorch
+    - id: 884123664
+      name: mit-han-lab/nunchaku
+    - id: 968197216
+      name: google-gemini/gemini-cli
+    - id: 679506386
+      name: menloresearch/jan
+    - id: 521070550
+      name: openxla/stablehlo
+    - id: 206866282
+      name: EnzymeAD/Enzyme.jl
+    - id: 612344730
+      name: ChatGPTNextWeb/NextChat
+    - id: 596516907
+      name: arc53/DocsGPT
+    - id: 883874070
+      name: egoist/chatwise-releases
+    - id: 610260322
+      name: Bin-Huang/chatbox
+    - id: 629355356
+      name: tensorlakeai/indexify
+    - id: 593782352
+      name: NVIDIA/modulus
+    - id: 847229423
+      name: Ewha-Euron/7th-DL
+    - id: 66841979
+      name: crowbartools/Firebot
+    - id: 362500938
+      name: argilla-io/argilla
+    - id: 488641606
+      name: phidatahq/phidata
+    - id: 130375797
+      name: dmlc/dgl
+    - id: 691333704
+      name: awslabs/generative-ai-cdk-constructs
+    - id: 850490697
+      name: ed-donner/llm_engineering
+    - id: 679343504
+      name: topoteretes/cognee
+    - id: 411456638
+      name: bcgov/tno
+    - id: 808146034
+      name: robusta-dev/holmesgpt
+    - id: 742622357
+      name: kubeflow/model-registry
+    - id: 682146715
+      name: Lilypad-Tech/lilypad
+    - id: 810121174
+      name: LazyAGI/LazyLLM
+    - id: 387786881
+      name: huggingface/optimum
+    - id: 813810516
+      name: instructlab/ui
+    - id: 264818686
+      name: ultralytics/yolov5
+    - id: 829640443
+      name: tensorzero/tensorzero
+    - id: 600368121
+      name: SYSTRAN/faster-whisper
+    - id: 575321313
+      name: RockChinQ/LangBot
+    - id: 371198718
+      name: GoogleCloudPlatform/vertex-ai-samples
+    - id: 358226004
+      name: pollinations/pollinations
+    - id: 689172674
+      name: kaito-project/kaito
+    - id: 643978507
+      name: langfuse/langfuse-docs
+    - id: 45896813
+      name: apache/systemds
+    - id: 679504479
+      name: aws-samples/generative-ai-use-cases-jp
+    - id: 640079149
+      name: QuivrHQ/quivr
+    - id: 323721661
+      name: Lightning-AI/torchmetrics
+    - id: 197033610
+      name: hashintel/hash
+    - id: 318520609
+      name: FlexMeasures/flexmeasures
+    - id: 17371412
+      name: h2oai/h2o-3
+    - id: 86362856
+      name: borglab/gtsam
+    - id: 625486047
+      name: n4ze3m/page-assist
+    - id: 126897385
+      name: DeepLabCut/DeepLabCut
+    - id: 145670234
+      name: open-mmlab/mmdetection
+    - id: 573398710
+      name: awslabs/graphstorm
+    - id: 528328355
+      name: modal-labs/modal-examples
+    - id: 599781179
+      name: jupyterlab/jupyter-ai
+    - id: 597583114
+      name: Future-House/paper-qa
+    - id: 738290765
+      name: expectedparrot/edsl
+    - id: 114006193
+      name: deepmodeling/deepmd-kit
+    - id: 95862535
+      name: apple/coremltools
+    - id: 677953180
+      name: leejet/stable-diffusion.cpp
+    - id: 727502310
+      name: baidubce/app-builder
+    - id: 950140488
+      name: TecharoHQ/anubis
+    - id: 162726765
+      name: DraftBot-A-Discord-Adventure/DraftBot
+    - id: 530655405
+      name: superduper-io/superduper
+    - id: 460615268
+      name: dora-rs/dora
+    - id: 185778964
+      name: kedro-org/kedro-viz
+    - id: 781914762
+      name: julep-ai/julep
+    - id: 812975380
+      name: frdel/agent-zero
+    - id: 742244656
+      name: modelscope/agentscope
+    - id: 73328905
+      name: pytorch/vision
+    - id: 935223529
+      name: IAAR-Shanghai/SurveyX
+    - id: 542713154
+      name: fetchai/uAgents
+    - id: 239769118
+      name: sbi-dev/sbi
+    - id: 840286946
+      name: Huanshere/VideoLingo
+    - id: 899744518
+      name: googleapis/python-genai
+    - id: 114540126
+      name: SciSharp/BotSharp
+    - id: 684031003
+      name: dataelement/bisheng
+    - id: 727495773
+      name: Mirascope/mirascope
+    - id: 735999703
+      name: Arize-ai/openinference
+    - id: 473188634
+      name: zama-ai/concrete-ml
+    - id: 128056991
+      name: kendryte/nncase
+    - id: 596332767
+      name: microsoft/mscclpp
+    - id: 5805151
+      name: rdiankov/openrave
+    - id: 817686552
+      name: SAP/ai-sdk-js
+    - id: 541169728
+      name: awslabs/data-on-eks
+    - id: 289605524
+      name: nonebot/nonebot2
+    - id: 356055024
+      name: tensorflow/tflite-micro
+    - id: 889798967
+      name: sendaifun/solana-agent-kit
+    - id: 776122617
+      name: pytorch/torchchat
+    - id: 629102662
+      name: haotian-liu/LLaVA
+    - id: 875880554
+      name: envoyproxy/ai-gateway
+    - id: 581913613
+      name: vladmandic/sdnext
+    - id: 255865265
+      name: gazebosim/gz-sim
+    - id: 102567256
+      name: scverse/scvi-tools
+    - id: 689858385
+      name: janhq/cortex.cpp
+    - id: 283347912
+      name: opentensor/bittensor
+    - id: 256186036
+      name: digiteinfotech/kairon
+    - id: 133808899
+      name: helmholtz-analytics/heat
+    - id: 896927006
+      name: clusterzx/paperless-ai
+    - id: 681482900
+      name: aws-samples/bedrock-claude-chat
+    - id: 730728120
+      name: Lightning-AI/LitServe
+    - id: 776908852
+      name: browserbase/stagehand
+    - id: 638609341
+      name: SciSharp/LLamaSharp
+    - id: 747333129
+      name: ServerlessLLM/ServerlessLLM
+    - id: 628729877
+      name: langroid/langroid
+    - id: 852758065
+      name: cocktailpeanut/fluxgym
+    - id: 38696925
+      name: python-telegram-bot/python-telegram-bot
+    - id: 622352364
+      name: simonw/llm
+    - id: 108329371
+      name: fastmachinelearning/hls4ml
+    - id: 877649153
+      name: hao-ai-lab/FastVideo
+    - id: 747394363
+      name: konveyor/kai
+    - id: 678929101
+      name: Emerge-Lab/gpudrive
+    - id: 854776745
+      name: Hexastack/Hexabot
+    - id: 205679232
+      name: flipped-aurora/gin-vue-admin
+    - id: 567454609
+      name: quixio/quix-streams
+    - id: 745106729
+      name: i-dot-ai/redbox
+    - id: 675996945
+      name: smallcloudai/refact-lsp
+    - id: 427391551
+      name: ultralytics/hub
+    - id: 423775360
+      name: openvinotoolkit/anomalib
+    - id: 222209282
+      name: bayesflow-org/bayesflow
+    - id: 618613272
+      name: h2oai/h2ogpt
+    - id: 378598624
+      name: robusta-dev/robusta
+    - id: 918932603
+      name: bytedance/UI-TARS-desktop
+    - id: 426046572
+      name: PaddlePaddle/PaddleScience
+    - id: 74505259
+      name: shap/shap
+    - id: 28349648
+      name: matecat/MateCat
+    - id: 819733173
+      name: kvcache-ai/Mooncake
+    - id: 871368615
+      name: NVlabs/Sana
+    - id: 626937684
+      name: kwaroran/RisuAI
+    - id: 942837343
+      name: eyaltoledano/claude-task-master
+    - id: 840007159
+      name: METR/vivaria
+    - id: 699432836
+      name: jianchang512/pyvideotrans
+    - id: 688164459
+      name: harvard-edge/cs249r_book
+    - id: 119190187
+      name: gitleaks/gitleaks
+    - id: 760482259
+      name: PKU-YuanGroup/Open-Sora-Plan
+    - id: 741744308
+      name: deepseek-ai/awesome-deepseek-integration
+    - id: 615882673
+      name: lm-sys/FastChat
+    - id: 594609262
+      name: guardrails-ai/guardrails
+    - id: 688398456
+      name: epam/ai-dial-core
+    - id: 780845743
+      name: middlewarehq/middleware
+    - id: 114898943
+      name: SeldonIO/seldon-core
+    - id: 900981601
+      name: kindfi-org/kindfi
+    - id: 677083126
+      name: e2b-dev/infra
+    - id: 272003394
+      name: Teahouse-Studios/akari-bot
+    - id: 124964482
+      name: skrub-data/skrub
+    - id: 866415939
+      name: UKGovernmentBEIS/inspect_evals
+    - id: 679784368
+      name: microsoft/genaiscript
+    - id: 620363420
+      name: TimefoldAI/timefold-solver
+    - id: 84538053
+      name: theopenconversationkit/tock
+    - id: 877230294
+      name: blinko-space/blinko
+    - id: 686834603
+      name: alibaba/Pai-Megatron-Patch
+    - id: 733663692
+      name: containers/podman-desktop-extension-ai-lab
+    - id: 743870569
+      name: InternLM/InternEvo
+    - id: 626923940
+      name: kolenaIO/kolena
+    - id: 650952255
+      name: blinq-io/automation_model
+    - id: 844279282
+      name: bluewave-labs/verifywise
+    - id: 23809180
+      name: NUbots/NUbots
+    - id: 208364128
+      name: google/XNNPACK
+    - id: 845429398
+      name: oaknational/oak-ai-lesson-assistant
+    - id: 460609164
+      name: writer/writer-framework
+    - id: 603535454
+      name: tmc/langchaingo
+    - id: 862802466
+      name: a-r-r-o-w/finetrainers
+    - id: 28149409
+      name: mlpack/mlpack
+    - id: 943421085
+      name: ai-dynamo/nixl
+    - id: 752925682
+      name: QwenLM/Qwen2.5
+    - id: 800568407
+      name: valentinfrlch/ha-llmvision
+    - id: 856027722
+      name: abdelh17/Quolance
+    - id: 807727161
+      name: run-llama/llama_deploy
+    - id: 148566613
+      name: mlcommons/inference
+    - id: 774210161
+      name: xdit-project/xDiT
+    - id: 667297720
+      name: meta-llama/llama-recipes
+    - id: 722915433
+      name: SwanHubX/SwanLab
+    - id: 154626012
+      name: ARISE-Initiative/robosuite
+    - id: 739562545
+      name: MrForExample/ComfyUI-3D-Pack
+    - id: 732344140
+      name: dtcxzyw/llvm-opt-benchmark
+    - id: 80342493
+      name: scverse/scanpy
+    - id: 127136978
+      name: KhronosGroup/SPIRV-LLVM-Translator
+    - id: 256061008
+      name: intel/intel-extension-for-pytorch
+    - id: 834369920
+      name: jingyaogong/minimind
+    - id: 20333051
+      name: Clarifai/clarifai-python
+    - id: 763923484
+      name: TracecatHQ/tracecat
+    - id: 372536760
+      name: oceanbase/oceanbase
+    - id: 303928050
+      name: castai/terraform-provider-castai
+    - id: 63110867
+      name: typedb/typedb
+    - id: 167853042
+      name: responsible-ai-collaborative/aiid
+    - id: 748433404
+      name: taoshidev/proprietary-trading-network
+    - id: 679869950
+      name: facefusion/facefusion
+    - id: 843570824
+      name: NexaAI/nexa-sdk
+    - id: 703411624
+      name: cpacker/MemGPT
+    - id: 804236872
+      name: kyma-project/kyma-companion
+    - id: 218396611
+      name: deepjavalibrary/djl
+    - id: 639079153
+      name: pixeltable/pixeltable
+    - id: 681002458
+      name: arcee-ai/mergekit
+    - id: 277068989
+      name: ersilia-os/ersilia
+    - id: 810861466
+      name: 0xPlaygrounds/rig
+    - id: 878167932
+      name: PickNikRobotics/moveit_pro_example_ws
+    - id: 740293013
+      name: thewh1teagle/vibe
+    - id: 791124680
+      name: TeamWiseFlow/wiseflow
+    - id: 225454419
+      name: revbayes/revbayes
+    - id: 519577891
+      name: upscayl/upscayl
+    - id: 787462297
+      name: Blaizzy/mlx-vlm
+    - id: 940296815
+      name: deepbeepmeep/Wan2GP
+    - id: 682760329
+      name: nucleuscloud/neosync
+    - id: 314466793
+      name: sillsdev/silnlp
+    - id: 810333340
+      name: nebius/soperator
+    - id: 275118967
+      name: mikel-brostrom/boxmot
+    - id: 835381179
+      name: justicecanada/otto
+    - id: 12968651
+      name: pgmpy/pgmpy
+    - id: 223592087
+      name: PLC-lang/rusty
+    - id: 576103395
+      name: m-bain/whisperX
+    - id: 424912087
+      name: desy-ml/cheetah
+    - id: 938921425
+      name: microsoft/AI_Agents_Hackathon
+    - id: 520784735
+      name: parseablehq/parseable
+    - id: 846600394
+      name: peculab/PythonAI4Beginners
+    - id: 768146998
+      name: ModelTC/llmc
+    - id: 847229258
+      name: Ewha-Euron/7th-ML
+    - id: 707018563
+      name: baidubce/bce-qianfan-sdk
+    - id: 175458153
+      name: cram2/pycram
+    - id: 603059136
+      name: discourse/discourse-ai
+    - id: 339920287
+      name: zyddnys/manga-image-translator
+    - id: 910061041
+      name: remsky/Kokoro-FastAPI
+    - id: 645112158
+      name: ROCm/xla
+    - id: 571613891
+      name: roboflow/supervision
+    - id: 136265021
+      name: albumentations-team/albumentations
+    - id: 141988388
+      name: nnstreamer/nnstreamer
+    - id: 271834742
+      name: google-deepmind/optax
+    - id: 881569514
+      name: coinbase/agentkit
+    - id: 660253213
+      name: fetchai/docs
+    - id: 282490868
+      name: openucx/ucc
+    - id: 730384901
+      name: fal-ai/fal
+    - id: 140494324
+      name: Xilinx/brevitas
+    - id: 691877011
+      name: IDinsight/ask-a-question
+    - id: 311268879
+      name: CrayLabs/SmartSim
+    - id: 95817032
+      name: geldata/gel
+    - id: 169164539
+      name: facebookresearch/habitat-sim
+    - id: 717197250
+      name: QuantumNous/new-api
+    - id: 848234615
+      name: Rivier-Computer-Science/AI-Agent-Stock-Prediction
+    - id: 95700338
+      name: kubeflow/training-operator
+    - id: 599338659
+      name: cheshire-cat-ai/core
+    - id: 704543233
+      name: huggingface/text-embeddings-inference
+    - id: 719367888
+      name: datawhalechina/self-llm
+    - id: 676474927
+      name: olympus-robotics/hephaestus
+    - id: 409653223
+      name: Nixtla/nixtla
+    - id: 539362736
+      name: siliconflow/onediff
+    - id: 143831524
+      name: intel/scikit-learn-intelex
+    - id: 601044104
+      name: thuml/Time-Series-Library
+    - id: 829468847
+      name: SAP/ai-sdk-java
+    - id: 821774598
+      name: highlight-ing/highlight-chat-frontend
+    - id: 261321778
+      name: devopness/devopness
+    - id: 130430977
+      name: kubesphere/kubesphere
+    - id: 513457910
+      name: MobileTeleSystems/RecTools
+    - id: 647137207
+      name: fedbiomed/fedbiomed
+    - id: 719017363
+      name: open-mmlab/Amphion
+    - id: 813348592
+      name: vllm-project/aibrix
+    - id: 837911756
+      name: feder-cr/Auto_Jobs_Applier_AIHawk
+    - id: 249877309
+      name: mirai-mamori/Sakurairo
+    - id: 664913876
+      name: InternLM/xtuner
+    - id: 722184017
+      name: assistant-ui/assistant-ui
+    - id: 169164391
+      name: facebookresearch/habitat-lab
+    - id: 888427
+      name: the-blue-alliance/the-blue-alliance
+    - id: 87006077
+      name: chromiumembedded/cef
+    - id: 36905975
+      name: SVF-tools/SVF
+    - id: 439278592
+      name: neo4j/graph-data-science-client
+    - id: 845317529
+      name: giselles-ai/giselle
+    - id: 840056306
+      name: getzep/graphiti
+    - id: 6138801
+      name: CakeML/cakeml
+    - id: 942114501
+      name: camel-ai/owl
+    - id: 66670819
+      name: apify/crawlee
+    - id: 803133426
+      name: AlibabaPAI/llumnix
+    - id: 140302908
+      name: supervisely/supervisely
+    - id: 303705119
+      name: lightly-ai/lightly
+    - id: 280567579
+      name: NaiboWang/EasySpider
+    - id: 657414607
+      name: PygmalionAI/aphrodite-engine
+    - id: 669879380
+      name: rasbt/LLMs-from-scratch
+    - id: 537457594
+      name: VectorInstitute/FL4Health
+    - id: 8357227
+      name: biolab/orange3
+    - id: 847943118
+      name: thoughtspot/visual-embed-sdk
+    - id: 429907564
+      name: foxglove/mcap
+    - id: 758163683
+      name: Lightning-AI/litdata
+    - id: 46439446
+      name: ghdl/ghdl
+    - id: 854894431
+      name: The64thGamer/cheeseepedia
+    - id: 298017988
+      name: googleapis/python-aiplatform
+    - id: 580237177
+      name: SleipnirGroup/Choreo
+    - id: 657326951
+      name: KhiopsML/khiops
+    - id: 629849791
+      name: smallcloudai/refact
+    - id: 896144595
+      name: virattt/ai-hedge-fund
+    - id: 879473096
+      name: bespokelabsai/curator
+    - id: 705695450
+      name: argilla-io/distilabel
+    - id: 145453331
+      name: JohnSnowLabs/spark-nlp-workshop
+    - id: 810385004
+      name: RobotecAI/rai
+    - id: 700760709
+      name: taranis-ai/taranis-ai
+    - id: 110688239
+      name: PaddlePaddle/PaddleSpeech
+    - id: 39567107
+      name: JdeRobot/RoboticsAcademy
+    - id: 649039603
+      name: aiverify-foundation/aiverify
+    - id: 100038377
+      name: scverse/anndata
+    - id: 928427049
+      name: om-ai-lab/VLM-R1
+    - id: 147428821
+      name: Labelbox/labelbox-python
+    - id: 534268010
+      name: Xilinx/llvm-project
+    - id: 143831524
+      name: uxlfoundation/scikit-learn-intelex
+    - id: 629651008
+      name: patterns-ai-core/langchainrb
+    - id: 47632957
+      name: stratosphereips/StratosphereLinuxIPS
+    - id: 496006022
+      name: SAGE-3/next
+    - id: 721195384
+      name: metatensor/metatrain
+    - id: 649821083
+      name: polaris-hub/polaris
+    - id: 630192834
+      name: defenseunicorns/leapfrogai
+    - id: 704728050
+      name: google/mesop
+    - id: 22850110
+      name: introlab/rtabmap
+    - id: 139168534
+      name: Xilinx/finn
+    - id: 361568869
+      name: Nixtla/neuralforecast
+    - id: 771302083
+      name: OpenDevin/OpenDevin
+    - id: 699272442
+      name: ONLYOFFICE/DocSpace-client
+    - id: 817877504
+      name: illuin-tech/colpali
+    - id: 778774319
+      name: Anxcye/anx-reader
+    - id: 608663046
+      name: jhj0517/Whisper-WebUI
+    - id: 717168518
+      name: mlcommons/modelbench
+    - id: 784546140
+      name: jina-ai/reader
+    - id: 206917330
+      name: axinc-ai/ailia-models
+    - id: 610260322
+      name: chatboxai/chatbox
+    - id: 505209
+      name: dipy/dipy
+    - id: 824797224
+      name: sol-wizard/Blotz-Task-App
+    - id: 607105530
+      name: CAREamics/careamics
+    - id: 132129752
+      name: microsoft/presidio
+    - id: 95700338
+      name: kubeflow/trainer
+    - id: 466864356
+      name: Giskard-AI/giskard
+    - id: 267749451
+      name: casibase/casibase
+    - id: 395536587
+      name: hkust-taco/mlscript
+    - id: 390573152
+      name: patrick-kidger/equinox
+    - id: 639097338
+      name: NVIDIA/garak
+    - id: 2174666
+      name: ldc-developers/ldc
+    - id: 136914524
+      name: flairNLP/flair
+    - id: 218952803
+      name: doocs/md
+    - id: 599559357
+      name: richonguzman/LoRa_APRS_iGate
+    - id: 846579774
+      name: i-am-bee/beeai-framework
+    - id: 895942941
+      name: cyclotruc/gitingest
+    - id: 975734319
+      name: sst/opencode
+    - id: 147803317
+      name: beehive-lab/TornadoVM
+    - id: 952842018
+      name: QwenLM/Qwen2.5-Omni
+    - id: 650443766
+      name: mongodb/chatbot
+    - id: 656227652
+      name: CodePhiliaX/Chat2DB
+    - id: 93381875
+      name: microsoft/SynapseML
+    - id: 666163354
+      name: microsoft/kernel-memory
+    - id: 803840981
+      name: openvinotoolkit/openvino_build_deploy
+    - id: 616643637
+      name: mlcommons/croissant
+    - id: 219035799
+      name: huggingface/tokenizers
+    - id: 894659403
+      name: goat-sdk/goat
+    - id: 201403923
+      name: activeloopai/deeplake
+    - id: 656417398
+      name: intel/ai-containers
+    - id: 638806609
+      name: lyuwenyu/RT-DETR
+    - id: 565009884
+      name: zauberzeug/field_friend
+    - id: 783968898
+      name: data-prep-kit/data-prep-kit
+    - id: 741450201
+      name: Marker-Inc-Korea/AutoRAG
+    - id: 805155266
+      name: kangfenmao/cherry-studio
+    - id: 834688418
+      name: InternLM/MindSearch
+    - id: 703686617
+      name: michaelfeil/infinity
+    - id: 164874894
+      name: asreview/asreview
+    - id: 454087931
+      name: ami-iit/jaxsim
+    - id: 701455198
+      name: chalk-ai/docs
+    - id: 24897645
+      name: stack-of-tasks/pinocchio
+    - id: 707771473
+      name: ndif-team/nnsight
+    - id: 816681815
+      name: Unique-AG/ai
+    - id: 110216866
+      name: dailydotdev/daily
+    - id: 666119207
+      name: scaleapi/llm-engine
+    - id: 277877505
+      name: bluerobotics/BlueOS
+    - id: 743359402
+      name: agiresearch/AIOS
+    - id: 239201565
+      name: serengil/deepface
+    - id: 527612250
+      name: coroot/coroot
+    - id: 123870315
+      name: tensorflow/tfjs
+    - id: 626596133
+      name: scikit-fingerprints/scikit-fingerprints
+    - id: 3671479
+      name: nmap/nmap
+    - id: 831914256
+      name: MadcowD/ell
+    - id: 665613753
+      name: elie222/inbox-zero
+    - id: 792037482
+      name: instructlab/training
+    - id: 634043200
+      name: modular/max
+    - id: 826984591
+      name: intel/AI-Playground
+    - id: 640317662
+      name: vanna-ai/vanna
+    - id: 398081749
+      name: d2cml-ai/CausalAI-Course
+    - id: 726564101
+      name: magshimim-next/cv-next
+    - id: 499187872
+      name: RocketChat/EmbeddedChat
+    - id: 267705904
+      name: TissueImageAnalytics/tiatoolbox
+    - id: 99561213
+      name: sonos/tract
+    - id: 2810292
+      name: pbatard/rufus
+    - id: 62843932
+      name: microsoft/BotFramework-WebChat
+    - id: 302827809
+      name: datafuselabs/databend
+    - id: 399775320
+      name: zinggAI/zingg
+    - id: 780635287
+      name: livekit/agents-js
+    - id: 857707429
+      name: UTSAVS26/PyVerse
+    - id: 483904733
+      name: Oxen-AI/Oxen
+    - id: 27235687
+      name: scala-native/scala-native
+    - id: 886698771
+      name: stacklok/codegate
+    - id: 111751293
+      name: google/deepvariant
+    - id: 61130280
+      name: rwth-i6/returnn
+    - id: 591961298
+      name: Akegarasu/lora-scripts
+    - id: 843988367
+      name: Metta-AI/metta
+    - id: 501667548
+      name: mosaicml/streaming
+    - id: 819526398
+      name: cosdata/cosdata
+    - id: 782634112
+      name: NVIDIA/earth2studio
+    - id: 771698228
+      name: ubco-db/helpme
+    - id: 161120445
+      name: facebook/Rapid
+    - id: 799816731
+      name: google-ai-edge/ai-edge-torch
+    - id: 899109437
+      name: arm/arm-toolchain
+    - id: 707913607
+      name: substratusai/kubeai
+    - id: 603866391
+      name: OvidijusParsiunas/deep-chat
+    - id: 730330208
+      name: zetane/ZetaForge
+    - id: 297672263
+      name: MaartenGr/BERTopic
+    - id: 168799526
+      name: huggingface/pytorch-image-models
+    - id: 708621214
+      name: rnadigital/agentcloud
+    - id: 602320913
+      name: intel/intel-technology-enabling-for-openshift
+    - id: 122758193
+      name: k4yt3x/video2x
+    - id: 631258918
+      name: Sinaptik-AI/pandas-ai
+    - id: 685996384
+      name: lobehub/lobe-chat-agents
+    - id: 791622368
+      name: nbonamy/witsy
+    - id: 741209532
+      name: macrocosm-os/prompting
+    - id: 132021166
+      name: dotnet/machinelearning
+    - id: 413486077
+      name: argoproj-labs/hera
+    - id: 685159924
+      name: UbiquitousLearning/mllm
+    - id: 27436491
+      name: pbek/QOwnNotes
+    - id: 858639154
+      name: zml/zml
+    - id: 711904962
+      name: aurelio-labs/semantic-router
+    - id: 863454901
+      name: dynamiq-ai/dynamiq
+    - id: 706031756
+      name: helixml/helix
+    - id: 389571254
+      name: huggingface/dataset-viewer
+    - id: 747349080
+      name: tegonhq/tegon
+    - id: 832444464
+      name: privacera/paig
+    - id: 872087586
+      name: coleam00/bolt.new-any-llm
+    - id: 774497032
+      name: MervinPraison/PraisonAI
+    - id: 395142441
+      name: ray-project/deltacat
+    - id: 80554426
+      name: opentripplanner/otp-react-redux
+    - id: 66841911
+      name: qax-os/excelize
+    - id: 165041732
+      name: go-kratos/kratos
+    - id: 783516011
+      name: swarmauri/swarmauri-sdk
+    - id: 821134374
+      name: meta-llama/llama-models
+    - id: 758923102
+      name: software-mansion/TypeGPU
+    - id: 206349888
+      name: xpsi-group/xpsi
+    - id: 841742628
+      name: Comfy-Org/desktop
+    - id: 212488700
+      name: pytorch/serve
+    - id: 731489151
+      name: aiverify-foundation/moonshot
+    - id: 609539715
+      name: e2b-dev/E2B
+    - id: 649943230
+      name: Azure-Samples/chat-with-your-data-solution-accelerator
+    - id: 868173144
+      name: kortix-ai/suna
+    - id: 605682921
+      name: DAGWorks-Inc/hamilton
+    - id: 576472685
+      name: RolnickLab/antenna
+    - id: 698288684
+      name: llmware-ai/llmware
+    - id: 724478159
+      name: petercat-ai/petercat
+    - id: 576226376
+      name: aerostack2/aerostack2
+    - id: 752925682
+      name: QwenLM/Qwen2
+    - id: 840672252
+      name: filipstrand/mflux
+    - id: 54928587
+      name: uxlfoundation/oneDAL
+    - id: 857422851
+      name: UppuluriKalyani/ML-Nexus
+    - id: 639195966
+      name: kyegomez/swarms
+    - id: 678214856
+      name: timeplus-io/proton
+    - id: 644559794
+      name: LLNL/LEAP
+    - id: 466256706
+      name: mlte-team/mlte
+    - id: 33294317
+      name: apache/singa
+    - id: 552121954
+      name: CliMA/ClimaOcean.jl
+    - id: 144950190
+      name: Kommunicate-io/Kommunicate-Web-SDK
+    - id: 797371964
+      name: oumi-ai/oumi
+    - id: 979115477
+      name: bytedance/deer-flow
+    - id: 762193211
+      name: NVlabs/VILA
+    - id: 539389184
+      name: TheLastBen/fast-stable-diffusion
+    - id: 831092576
+      name: neuralmagic/vllm
+    - id: 174168383
+      name: talmolab/sleap
+    - id: 742063678
+      name: crewAIInc/crewAI-tools
+    - id: 647381053
+      name: mehta-lab/VisCy
+    - id: 323979256
+      name: all-rit/ALL
+    - id: 541269386
+      name: ggml-org/whisper.cpp
+    - id: 130741783
+      name: netket/netket
+    - id: 783833344
+      name: karpathy/llm.c
+    - id: 838253246
+      name: microsoft/BitNet
+    - id: 389461512
+      name: patrick-kidger/diffrax
+    - id: 313501668
+      name: wenet-e2e/wenet
+    - id: 828505099
+      name: PKU-Alignment/align-anything
+    - id: 688186076
+      name: leptonai/leptonai
+    - id: 598267148
+      name: bytedance/byteir
+    - id: 127004420
+      name: inception-project/inception
+    - id: 682990534
+      name: casper-hansen/AutoAWQ
+    - id: 327949189
+      name: mindee/doctr
+    - id: 161619952
+      name: bit-bots/bitbots_main
+    - id: 671555585
+      name: limebit/medmodels
+    - id: 291498455
+      name: roflcoopter/viseron
+    - id: 702069002
+      name: apache/incubator-hugegraph-ai
+    - id: 581713338
+      name: LostRuins/lite.koboldai.net
+    - id: 646915306
+      name: richonguzman/LoRa_APRS_Tracker
+    - id: 742385776
+      name: OpenCSGs/csghub-server
+    - id: 602041947
+      name: carlrobertoh/CodeGPT
+    - id: 942756187
+      name: ConardLi/easy-dataset
+    - id: 641487831
+      name: OWASP/www-project-top-10-for-large-language-model-applications
+    - id: 854761423
+      name: ubclaunchpad/forum
+    - id: 809849703
+      name: eole-nlp/eole
+    - id: 1198539
+      name: lutzroeder/netron
+    - id: 681186081
+      name: superlinked/VectorHub
+    - id: 668797369
+      name: openshift-psap/topsail
+    - id: 776854298
+      name: stanford-oval/storm
+    - id: 928631159
+      name: Zyphra/Zonos
+    - id: 681566005
+      name: google/magika
+    - id: 672381141
+      name: GOFIRST-Robotics/Lunabotics
+    - id: 50461701
+      name: tensorflow/serving
+    - id: 541932663
+      name: FlagOpen/FlagPerf
+    - id: 763795053
+      name: lavague-ai/LaVague
+    - id: 895029087
+      name: mark3labs/mcp-go
+    - id: 34243409
+      name: EDDiscovery/EDDiscovery
+    - id: 770153867
+      name: harry0703/MoneyPrinterTurbo
+    - id: 726082384
+      name: wasp-lang/open-saas
+    - id: 433067589
+      name: mathLab/PINA
+    - id: 753697606
+      name: moxin-org/moly
+    - id: 786187721
+      name: rio-labs/rio
+    - id: 764287615
+      name: supermemoryai/supermemory
+    - id: 786568321
+      name: devoxx/DevoxxGenieIDEAPlugin
+    - id: 403625715
+      name: vincentarelbundock/marginaleffects
+    - id: 682242505
+      name: foundation-model-stack/foundation-model-stack
+    - id: 133444044
+      name: fairlearn/fairlearn
+    - id: 743986791
+      name: kaiko-ai/eva
+    - id: 306265382
+      name: ovh/public-cloud-roadmap
+    - id: 665299585
+      name: MeetKai/functionary
+    - id: 598667202
+      name: lightpanda-io/browser
+    - id: 934997412
+      name: facebookresearch/vggt
+    - id: 751983018
+      name: jozu-ai/kitops
+    - id: 684980325
+      name: turboderp/exllamav2
+    - id: 616363358
+      name: xenodium/chatgpt-shell
+    - id: 786118500
+      name: heshengtao/comfyui_LLM_party
+    - id: 644742603
+      name: cloudberrydb/cloudberrydb
+    - id: 788753875
+      name: trypear/pear-landing-page
+    - id: 620553291
+      name: CDOT-CV/jpo-cvmanager
+    - id: 834228100
+      name: hopps-app/hopps
+    - id: 814138036
+      name: LiveBench/LiveBench
+    - id: 872021590
+      name: theJayTea/WritingTools
+    - id: 898305045
+      name: cloudwego/eino-ext
+    - id: 291527180
+      name: flyerhq/flutter_chat_ui
+    - id: 919609219
+      name: modelcontextprotocol/java-sdk
+    - id: 788791942
+      name: SylphAI-Inc/AdalFlow
+    - id: 243394576
+      name: pixie-io/pixie
+    - id: 932490533
+      name: ThinkInAIXYZ/deepchat
+    - id: 126741221
+      name: hubtype/botonic
+    - id: 639824542
+      name: lunary-ai/lunary
+    - id: 97556265
+      name: catboost/catboost
+    - id: 800657426
+      name: awslabs/LISA
+    - id: 710576800
+      name: bitcashorg/masterbots
+    - id: 681211986
+      name: twinnydotdev/twinny
+    - id: 699277022
+      name: ONLYOFFICE/DocSpace-server
+    - id: 955620917
+      name: upstash/context7
+    - id: 597219434
+      name: xlang-foundation/xlang
+    - id: 471191206
+      name: instill-ai/console
+    - id: 453195638
+      name: Noble-Lab/casanovo
+    - id: 28635894
+      name: alicevision/AliceVision
+    - id: 620693817
+      name: pixano/pixano
+    - id: 748086500
+      name: ogkalu2/comic-translate
+    - id: 647022990
+      name: OpenVoiceOS/status
+    - id: 479199191
+      name: swirlai/swirl-search
+    - id: 83878269
+      name: iterative/dvc
+    - id: 871324801
+      name: ServiceNow/Fast-LLM
+    - id: 71516397
+      name: Cloud-CV/EvalAI
+    - id: 28114218
+      name: benjjneb/dada2
+    - id: 68460326
+      name: 1technophile/OpenMQTTGateway
+    - id: 836642963
+      name: black-forest-labs/flux
+    - id: 873548300
+      name: software-mansion/react-native-executorch
+    - id: 255657224
+      name: motis-project/motis
+    - id: 747658640
+      name: nntile/nntile
+    - id: 752946440
+      name: pingcap/autoflow
+    - id: 848499483
+      name: tidyverse/ellmer
+    - id: 156228018
+      name: cyberbotics/webots
+    - id: 104208128
+      name: PaddlePaddle/Paddle-Lite
+    - id: 276901861
+      name: sktime/pytorch-forecasting
+    - id: 558916769
+      name: flairNLP/fundus
+    - id: 169674091
+      name: lululxvi/deepxde
+    - id: 593782352
+      name: NVIDIA/physicsnemo
+    - id: 21428070
+      name: jank-lang/jank
+    - id: 587499842
+      name: rhasspy/piper
+    - id: 460438204
+      name: StampyAI/stampy-ui
+    - id: 857423428
+      name: ML-Fusion-Lab/ML-Fusion-Lab-Website
+    - id: 664226598
+      name: pinokiocomputer/pinokio
+    - id: 861606962
+      name: AimRT/AimRT
+    - id: 748528018
+      name: argmaxinc/WhisperKit
+    - id: 311536795
+      name: blakeblackshear/frigate-hass-integration
+    - id: 653773074
+      name: elastic/elasticsearch-labs
+    - id: 210288294
+      name: cloud-barista/cb-tumblebug
+    - id: 274528384
+      name: epfml/disco
+    - id: 47648456
+      name: espeak-ng/espeak-ng
+    - id: 688576891
+      name: Zero-True/zero-true
+    - id: 704959035
+      name: WeThinkIn/Interview-for-Algorithm-Engineer
+    - id: 15662105
+      name: RoboJackets/robocup-software
+    - id: 824259091
+      name: om-ai-lab/OmAgent
+    - id: 4539167
+      name: qpdf/qpdf
+    - id: 82240075
+      name: skyportal/skyportal
+    - id: 134720142
+      name: asterics/AsTeRICS-Grid
+    - id: 782544882
+      name: patched-codes/patchwork
+    - id: 900461318
+      name: antinomyhq/forge
+    - id: 787368344
+      name: QwenLM/Qwen2.5-Coder
+    - id: 744696448
+      name: neuralmagic/nm-vllm
+    - id: 172835975
+      name: EnzymeAD/Enzyme
+    - id: 785127941
+      name: aigc-apps/EasyAnimate
+    - id: 729640102
+      name: NimaNzrii/comfyui-photoshop
+    - id: 16331291
+      name: davisking/dlib
+    - id: 764049913
+      name: neo4j/neo4j-graphrag-python
+    - id: 254879070
+      name: xpf0000/FlyEnv
+    - id: 894430000
+      name: bodo-ai/Bodo
+    - id: 665653661
+      name: brainlid/langchain
+    - id: 828119367
+      name: yamadashy/repomix
+    - id: 666260877
+      name: qdrant/fastembed
+    - id: 830266991
+      name: microsoft/eureka-ml-insights
+    - id: 823429665
+      name: FunAudioLLM/SenseVoice
+    - id: 951534260
+      name: roboflow/rf-detr
+    - id: 657636500
+      name: KhiopsML/khiops-python
+    - id: 689299900
+      name: langwatch/langwatch
+    - id: 739667828
+      name: nanbingxyz/5ire
+    - id: 857019392
+      name: tenstorrent/tt-xla
+    - id: 145693916
+      name: kornia/kornia
+    - id: 123154803
+      name: puzzle/skills
+    - id: 924568745
+      name: crmne/ruby_llm
+    - id: 817354652
+      name: TEN-framework/TEN-Agent
+    - id: 512980605
+      name: kubeedge/ianvs
+    - id: 608227238
+      name: AgileRL/AgileRL
+    - id: 958830661
+      name: google/adk-docs
+    - id: 621641043
+      name: kubernetes-sigs/jobset
+    - id: 723894467
+      name: reorproject/reor
+    - id: 472190973
+      name: LuxDL/Lux.jl
+    - id: 352983353
+      name: instadeepai/Mava
+    - id: 796858994
+      name: epic-open-source/seismometer
+    - id: 451416687
+      name: cubzh/cubzh
+    - id: 261372860
+      name: DLR-RM/stable-baselines3
+    - id: 450188582
+      name: mito-ds/mito
+    - id: 45614485
+      name: ROCm/Tensile
+    - id: 556679123
+      name: edenai/edenai-apis
+    - id: 607845880
+      name: google/maxtext
+    - id: 740316987
+      name: microsoft/UFO
+    - id: 124910572
+      name: mozilla/bugbug
+    - id: 841242731
+      name: APIParkLab/APIPark
+    - id: 838810610
+      name: CloudDetail/apo
+    - id: 969010919
+      name: nari-labs/dia
+    - id: 332905702
+      name: hardisgroupcom/sfdx-hardis
+    - id: 555557595
+      name: Ekumen-OS/beluga
+    - id: 495067397
+      name: deepmodeling/Uni-Mol
+    - id: 792692027
+      name: helicalAI/helical
+    - id: 734499595
+      name: coderabbitai/coderabbit-docs
+    - id: 841376583
+      name: SakanaAI/AI-Scientist
+    - id: 766941943
+      name: AdvancedPlugins/Chat
+    - id: 940018401
+      name: deepseek-ai/3FS
+    - id: 832647441
+      name: awslabs/multi-agent-orchestrator
+    - id: 741168365
+      name: aws-samples/foundation-model-benchmarking-tool
+    - id: 539531969
+      name: BESSER-PEARL/BESSER
+    - id: 846579774
+      name: i-am-bee/bee-agent-framework
+    - id: 655806940
+      name: microsoft/generative-ai-for-beginners
+    - id: 822285449
+      name: andrewyng/aisuite
+    - id: 363274616
+      name: mozilla/translations
+    - id: 803954003
+      name: ServiceNow/AgentLab
+    - id: 668673665
+      name: FalkorDB/FalkorDB
+    - id: 645863803
+      name: cerbrec/graphbook
+    - id: 705433049
+      name: xlang-ai/OSWorld
+    - id: 510876221
+      name: zkonduit/ezkl
+    - id: 308422324
+      name: UniversalRobots/Universal_Robots_ROS2_Driver
+    - id: 785628940
+      name: whittle-org/whittle
+    - id: 320463703
+      name: dathere/qsv
+    - id: 871077977
+      name: glowingjade/obsidian-smart-composer
+    - id: 705358800
+      name: awaescher/OllamaSharp
+    - id: 949271792
+      name: mindverse/Second-Me
+    - id: 656411615
+      name: MEDomics-UdeS/MEDomicsLab
+    - id: 909879268
+      name: wzc520pyfm/ant-design-x-vue
+    - id: 660299583
+      name: bincooo/chatgpt-adapter
+    - id: 191779319
+      name: rapidsai/raft
+    - id: 322152335
+      name: microsoft/superbenchmark
+    - id: 582668372
+      name: Striveworks/valor
+    - id: 898304583
+      name: cloudwego/eino
+    - id: 689849471
+      name: microsoft/TaskWeaver
+    - id: 299862
+      name: nltk/nltk
+    - id: 888963901
+      name: Gurubase/gurubase
+    - id: 601534680
+      name: MathiasGruber/TheNinjaRPG
+    - id: 364344493
+      name: pytorch/torchx
+    - id: 790916393
+      name: NVIDIA/TensorRT-Model-Optimizer
+    - id: 602041947
+      name: carlrobertoh/ProxyAI
+    - id: 665133526
+      name: helsingborg-stad/F-AI
+    - id: 849139885
+      name: lmnr-ai/lmnr
+    - id: 216696377
+      name: quark-engine/quark-engine
+    - id: 833650070
+      name: deeppavlov/AutoIntent
+    - id: 780737106
+      name: SWE-agent/SWE-agent
+    - id: 826498000
+      name: katanemo/archgw
+    - id: 437472240
+      name: olliw42/mLRS
+    - id: 617152691
+      name: k8sgpt-ai/k8sgpt
+    - id: 811058716
+      name: Mirascope/lilypad
+    - id: 544898462
+      name: google/gematria
+    - id: 321753299
+      name: huggingface/autotrain-advanced
+    - id: 480239936
+      name: postgresml/postgresml
+    - id: 711052313
+      name: hypermodeinc/modus
+    - id: 290790298
+      name: copper-project/copper-rs
+    - id: 801065919
+      name: COS301-SE-2024/Dispute-Resolution-Engine
+    - id: 631258918
+      name: sinaptik-ai/pandas-ai
+    - id: 570985989
+      name: pykeio/ort
+    - id: 871910697
+      name: infinilabs/coco-app
+    - id: 485035680
+      name: lhnguyen102/cuTAGI
+    - id: 13639751
+      name: hcfyapp/crx-selection-translate
+    - id: 127941481
+      name: kubeflow/katib
+    - id: 214938881
+      name: fragcolor-xyz/shards
+    - id: 735425203
+      name: transformerlab/transformerlab-app
+    - id: 693866605
+      name: greymatter-labs/vocode-python-main
+    - id: 75125125
+      name: compdemocracy/polis
+    - id: 22887094
+      name: tesseract-ocr/tesseract
+    - id: 269096539
+      name: ARM-software/LLVM-embedded-toolchain-for-Arm
+    - id: 855668590
+      name: sapujagad-id/sapungobrol
+    - id: 415408545
+      name: parcel-bundler/lightningcss
+    - id: 861746639
+      name: icereed/paperless-gpt
+    - id: 66772740
+      name: qupath/qupath
+    - id: 428780722
+      name: foxglove/foxglove-sdk
+    - id: 538180525
+      name: ggerganov/ggml
+    - id: 257648141
+      name: adapter-hub/adapters
+    - id: 720959702
+      name: InftyAI/llmaz
+    - id: 395688425
+      name: huggingface/course
+    - id: 708737761
+      name: X-LANCE/SLAM-LLM
+    - id: 409216041
+      name: kahst/BirdNET-Analyzer
+    - id: 654683979
+      name: aws-samples/aws-genai-llm-chatbot
+    - id: 672002598
+      name: weaviate/Verba
+    - id: 682728444
+      name: opensearch-project/dashboards-flow-framework
+    - id: 172822195
+      name: hongbo-miao/hongbomiao.com
+    - id: 890663853
+      name: gwhs/2025-Reefscape
+    - id: 905016458
+      name: lastmile-ai/mcp-agent
+    - id: 220339090
+      name: ATOMScience-org/AMPL
+    - id: 210299376
+      name: OpenNMT/CTranslate2
+    - id: 817365099
+      name: radicalbit/radicalbit-ai-monitoring
+    - id: 883626094
+      name: SENATOROVAI/Data-Science-For-Beginners-from-scratch-SENATOROV
+    - id: 561914940
+      name: redis/redis-vl-python
+    - id: 206138137
+      name: alphacep/vosk-api
+    - id: 618130283
+      name: hollowstrawberry/kohya-colab
+    - id: 627561173
+      name: mlc-ai/web-llm
+    - id: 788341677
+      name: optuna/optunahub-registry
+    - id: 603172666
+      name: Avdhesh-Varshney/WebMasterLog
+    - id: 393117783
+      name: matter-labs/era-compiler-llvm
+    - id: 189640071
+      name: aimhubio/aim
+    - id: 76109394
+      name: pytorch/tnt
+    - id: 276288252
+      name: yomorun/yomo
+    - id: 306237881
+      name: thoughtspot/visual-embed-sdk
+    - id: 467970089
+      name: HewlettPackard/cmf
+    - id: 337705968
+      name: skforecast/skforecast
+    - id: 944828547
+      name: canopyai/Orpheus-TTS
+    - id: 687510822
+      name: sambecker/exif-photo-blog
+    - id: 190654577
+      name: ROCm/llvm-project
+    - id: 605825777
+      name: aj-archipelago/cortex
+    - id: 265612440
+      name: coqui-ai/TTS
+    - id: 874559208
+      name: deepseek-ai/Janus
+    - id: 683496838
+      name: KoljaB/RealtimeTTS
+    - id: 130309267
+      name: cfug/dio
+    - id: 824091324
+      name: yym68686/uni-api
+    - id: 119072951
+      name: pro3d-space/PRo3D
+    - id: 649025519
+      name: davidmigloz/langchain_dart
+    - id: 931627829
+      name: NN-complr-tech/compiler-course-2025
+    - id: 855100064
+      name: 2U1/Qwen2-VL-Finetune
+    - id: 832879402
+      name: Kiln-AI/Kiln
+    - id: 24376854
+      name: libxsmm/libxsmm
+    - id: 826180347
+      name: etalab-ia/albert-api
+    - id: 187224566
+      name: aramis-lab/clinica
+    - id: 587187823
+      name: mindspore-lab/mindyolo
+    - id: 499023976
+      name: abhisheks008/DL-Simplified
+    - id: 192432654
+      name: cs-internship/cs-internship-spec
+    - id: 787560187
+      name: swe-bench/experiments
+    - id: 272424544
+      name: microsoft/Conversation-Knowledge-Mining-Solution-Accelerator
+    - id: 737379304
+      name: laylavish/uBlockOrigin-HUGE-AI-Blocklist
+    - id: 329492113
+      name: caoccao/Javet
+    - id: 913152769
+      name: aevatarAI/aevatar-station
+    - id: 586046589
+      name: PNNL-CompBio/coderdata
+    - id: 465792136
+      name: cleanlab/cleanlab-studio
+    - id: 838093526
+      name: JoshuaC215/agent-service-toolkit
+    - id: 784765929
+      name: Sema4AI/gallery
+    - id: 158034767
+      name: bilby-dev/bilby
+    - id: 799171422
+      name: robocasa/robocasa
+    - id: 575865240
+      name: Soulter/AstrBot
+    - id: 32946662
+      name: spotify/scio
+    - id: 569713120
+      name: OpenGVLab/InternVideo
+    - id: 851997597
+      name: google-ai-edge/LiteRT
+    - id: 459729112
+      name: NVlabs/sionna
+    - id: 720968026
+      name: intel/neural-speed
+    - id: 706229337
+      name: mmschlk/shapiq
+    - id: 414686117
+      name: mkiol/dsnote
+    - id: 750069596
+      name: DAGWorks-Inc/burr
+    - id: 667215372
+      name: basetenlabs/truss-examples
+    - id: 754167312
+      name: ServiceNow/BrowserGym
+    - id: 702932393
+      name: citadel-ai/langcheck
+    - id: 655255996
+      name: tjtanjin/react-chatbotify
+    - id: 805616069
+      name: batteries-included/batteries-included
+    - id: 834595923
+      name: av/harbor
+    - id: 727351788
+      name: huggingface/tgi-gaudi
+    - id: 5797013
+      name: kermitt2/grobid
+    - id: 887977189
+      name: thousandbrainsproject/tbp.monty
+    - id: 667297720
+      name: meta-llama/llama-cookbook
+    - id: 238784472
+      name: s60sc/ESP32-CAM_MJPEG2SD
+    - id: 72926839
+      name: grame-cncm/faust
+    - id: 771479895
+      name: lingodotdev/lingo.dev
+    - id: 657562438
+      name: sendbird/chat-ai-widget
+    - id: 712370652
+      name: idiap/coqui-ai-TTS
+    - id: 281124022
+      name: zauberzeug/rosys
+    - id: 671064065
+      name: truefoundry/cognita
+    - id: 48904888
+      name: Cog-Creators/Red-DiscordBot
+    - id: 900577388
+      name: crestalnetwork/intentkit
+    - id: 590146450
+      name: conrad-blucher-institute/semaphore
+    - id: 489591401
+      name: insight-platform/Savant
+    - id: 490172166
+      name: Canner/wren-engine
+    - id: 54928587
+      name: oneapi-src/oneDAL
+    - id: 790316547
+      name: microsoft/prompty
+    - id: 588041764
+      name: derrian-distro/LoRA_Easy_Training_Scripts
+    - id: 814055205
+      name: aertslab/CREsted
+    - id: 38644318
+      name: absmach/supermq
+    - id: 267719344
+      name: google/ml-compiler-opt
+    - id: 226441159
+      name: pytorch/opacus
+    - id: 775556234
+      name: pymupdf/RAG
+    - id: 648021633
+      name: opendatahub-io/kserve
+    - id: 886193637
+      name: GDGoC-SCHU/2024-ai-study
+    - id: 748070051
+      name: coze-dev/coze-js
+    - id: 708991650
+      name: sotopia-lab/sotopia
+    - id: 678615763
+      name: opensearch-project/flow-framework
+    - id: 946087422
+      name: Kilo-Org/kilocode
+    - id: 167349656
+      name: FederatedAI/FATE
+    - id: 99374952
+      name: EDCD/EDDI
+    - id: 635240594
+      name: zylon-ai/private-gpt
+    - id: 691572873
+      name: instill-ai/component
+    - id: 780737106
+      name: princeton-nlp/SWE-agent
+    - id: 209743198
+      name: bachlab/PsPM
+    - id: 149430917
+      name: recommenders-team/recommenders
+    - id: 337014238
+      name: fedora-llvm-team/llvm-snapshots
+    - id: 318536617
+      name: flutter-ml/google_ml_kit_flutter
+    - id: 674153903
+      name: modelscope/modelscope-agent
+    - id: 714695155
+      name: jinworks/CellChat
+    - id: 528152092
+      name: easydiffusion/easydiffusion
+    - id: 524510459
+      name: ml-energy/zeus
+    - id: 812053723
+      name: castacks/AirStack
+    - id: 735528614
+      name: FalkorDB/falkordb-browser
+    - id: 610217037
+      name: di-sukharev/opencommit
+    - id: 685897222
+      name: Shannon-Data/ShannonBase
+    - id: 683039317
+      name: GoogleCloudPlatform/applied-ai-engineering-samples
+    - id: 143090423
+      name: zjunlp/DeepKE
+    - id: 657414607
+      name: aphrodite-engine/aphrodite-engine
+    - id: 377270101
+      name: automl/neps
+    - id: 11771697
+      name: osrf/homebrew-simulation
+    - id: 706623438
+      name: ultravioletrs/cocos
+    - id: 915963369
+      name: Shonen-Labs/StarkFinder
+    - id: 624349894
+      name: ChatLunaLab/chatluna
+    - id: 838659679
+      name: codexu/note-gen
+    - id: 696572451
+      name: InternLM/InternLM-XComposer
+    - id: 826111692
+      name: ucbepic/docetl
+    - id: 653567769
+      name: intel/xFasterTransformer
+    - id: 712815595
+      name: sb-ai-lab/HypEx
+    - id: 797944032
+      name: srcbookdev/srcbook
+    - id: 195920083
+      name: uf-mil/mil
+    - id: 835452752
+      name: facebookresearch/segment-anything-2
+    - id: 802502600
+      name: Lamatic/Lamatic-Docs
+    - id: 180136168
+      name: adbar/trafilatura
+    - id: 1461954
+      name: AcademySoftwareFoundation/OpenShadingLanguage
+    - id: 235378028
+      name: eclipse-zenoh/zenoh-c
+    - id: 807860806
+      name: fixie-ai/ultravox
+    - id: 742379611
+      name: fofr/cog-comfyui
+    - id: 753797592
+      name: PAIR-code/deliberate-lab
+    - id: 283858848
+      name: luxonis/depthai-ros
+    - id: 644995806
+      name: floneum/floneum
+    - id: 617708951
+      name: refuel-ai/autolabel
+    - id: 693363124
+      name: AssemblyAI/assemblyai-api-spec
+    - id: 429080848
+      name: MyoHub/myosuite
+    - id: 835458362
+      name: langchain-ai/langgraph-studio
+    - id: 673412924
+      name: modelscope/swift
+    - id: 304530333
+      name: featureform/featureform
+    - id: 807840349
+      name: neuralmagic/guidellm
+    - id: 800434192
+      name: COS301-SE-2024/ECHO
+    - id: 619825247
+      name: OptimalScale/LMFlow
+    - id: 771153053
+      name: ultralytics/yolo-flutter-app
+    - id: 714392906
+      name: ubopod/ubo_app
+    - id: 186746473
+      name: limine-bootloader/limine
+    - id: 771724330
+      name: RMoodsTeam/RMoods
+    - id: 783754794
+      name: opendatahub-io/vllm
+    - id: 716968913
+      name: aieditor-team/AiEditor
+    - id: 757102919
+      name: Scale3-Labs/langtrace-python-sdk
+    - id: 793375104
+      name: Shubhamsaboo/awesome-llm-apps
+    - id: 722844356
+      name: Open-LLM-VTuber/Open-LLM-VTuber
+    - id: 707237272
+      name: NVIDIA/GenerativeAIExamples
+    - id: 214496234
+      name: regehr/llvm-project
+    - id: 717216771
+      name: eidolon-ai/eidolon
+    - id: 756787382
+      name: huggingface/parler-tts
+    - id: 233594133
+      name: aimclub/FEDOT
+    - id: 658219396
+      name: lancedb/vectordb-recipes
+    - id: 141266584
+      name: apache/dubbo-kubernetes
+    - id: 704324955
+      name: jupyter-naas/abi
+    - id: 733046669
+      name: DeepWok/mase
+    - id: 753525670
+      name: sophgo/LLM-TPU
+    - id: 938453471
+      name: SparkAudio/Spark-TTS
+    - id: 514217996
+      name: tdspora/syngen
+    - id: 204380779
+      name: PaddlePaddle/PaddleSeg
+    - id: 809911373
+      name: umrover/mrover-ros2
+    - id: 629142696
+      name: h2oai/h2o-llmstudio
+    - id: 241649317
+      name: commercetools/commercetools-sdk-typescript
+    - id: 440562542
+      name: Clarifai/docs
+    - id: 846495848
+      name: TEN-framework/ten_framework
+    - id: 866629172
+      name: tninja/aider.el
+    - id: 902154589
+      name: springaialibaba/spring-ai-alibaba-examples
+    - id: 551376520
+      name: tw93/Pake
+    - id: 762355055
+      name: prism-php/prism
+    - id: 536134468
+      name: PRBonn/kiss-icp
+    - id: 357105872
+      name: graphnet-team/graphnet
+    - id: 159004094
+      name: macanv/BERT-BiLSTM-CRF-NER
+    - id: 923122157
+      name: i-am-bee/beeai-platform
+    - id: 919615603
+      name: GoogleCloudPlatform/kubectl-ai
+    - id: 135489692
+      name: LeelaChessZero/lc0
+    - id: 535525769
+      name: sstary/SSRS
+    - id: 922873328
+      name: willmiao/ComfyUI-Lora-Manager
+    - id: 827597795
+      name: thoras-ai/helm-charts
+    - id: 176492768
+      name: lardemua/atom
+    - id: 856917013
+      name: ServiceNow/TapeAgents
+    - id: 760022246
+      name: myshell-ai/MeloTTS
+    - id: 446769486
+      name: Mattk70/Chirpity-Electron
+    - id: 802632515
+      name: masa-finance/masa-bittensor
+    - id: 813857006
+      name: lzell/AIProxySwift
+    - id: 722208169
+      name: open-retina/open-retina
+    - id: 812763402
+      name: bosun-ai/swiftide
+    - id: 791796984
+      name: Sema4AI/actions
+    - id: 827838818
+      name: Hacksore/oghunt
+    - id: 106746673
+      name: lora-rs/lora-rs
+    - id: 621776077
+      name: Ikaros-521/AI-Vtuber
+    - id: 617993055
+      name: MakeFrog/TechTalk
+    - id: 865387018
+      name: grant-TraDA/NLP-2024W
+    - id: 904370907
+      name: microsoft/Multi-Agent-Custom-Automation-Engine-Solution-Accelerator
+    - id: 539888500
+      name: chenzomi12/AISystem
+    - id: 609727033
+      name: agnaistic/agnai
+    - id: 132067444
+      name: PyTorchKorea/tutorials-kr
+    - id: 758975200
+      name: sugarforever/chat-ollama
+    - id: 839428333
+      name: huggingface/speech-to-speech
+    - id: 631567741
+      name: chatanywhere/GPT_API_free
+    - id: 104114161
+      name: microsoft/vscode-tools-for-ai
+    - id: 933963452
+      name: bytedance/flowgram.ai
+    - id: 707552952
+      name: MolecularAI/REINVENT4
+    - id: 851253613
+      name: RobotPsychologist/bg_control
+    - id: 143982960
+      name: aistabci/abci-docs
+    - id: 489151277
+      name: groundlight/python-sdk
+    - id: 652229784
+      name: rendercv/rendercv
+    - id: 509436902
+      name: PriorLabs/TabPFN
+    - id: 837911756
+      name: AIHawk-FOSS/Auto_Jobs_Applier_AI_Agent
+    - id: 27415685
+      name: nyaruka/rapidpro
+    - id: 308651874
+      name: napframework/nap
+    - id: 759799529
+      name: refly-ai/refly
+    - id: 442405131
+      name: lakesoul-io/LakeSoul
+    - id: 670089677
+      name: TensorOpsAI/LLMstudio
+    - id: 834029203
+      name: marchhq/march
+    - id: 756904357
+      name: agimus-project/agimus_controller
+    - id: 169116405
+      name: tensorflow/tfx
+    - id: 750808157
+      name: Lichtblick-Suite/lichtblick
+    - id: 641796050
+      name: sQUlearn/squlearn
+    - id: 758762495
+      name: rllm-team/rllm
+    - id: 684718636
+      name: KoljaB/RealtimeSTT
+    - id: 740338525
+      name: TaskingAI/TaskingAI
+    - id: 778214159
+      name: gcui-art/suno-api
+    - id: 512834024
+      name: microsoft/mttl
+    - id: 514358250
+      name: ROCm/Megatron-LM
+    - id: 114950878
+      name: 0chain/0chain
+    - id: 538180525
+      name: ggml-org/ggml
+    - id: 63477612
+      name: TheAlgorithms/C-Plus-Plus
+    - id: 820937008
+      name: hezhijie0327/lobe-chat
+    - id: 624268705
+      name: google/generative-ai-docs
+    - id: 863334157
+      name: DashHub-ai/DashHub
+    - id: 776527409
+      name: simpler-env/SimplerEnv
+    - id: 371569604
+      name: ORNL/HydraGNN
+    - id: 705574656
+      name: lencx/Noi
+    - id: 429085193
+      name: robotics-laboratory/truck
+    - id: 682178126
+      name: sigstore/model-transparency
+    - id: 826170402
+      name: ai16z/eliza
+    - id: 694398667
+      name: Azure-Samples/azureai-samples
+    - id: 773787426
+      name: tabiya-tech/compass
+    - id: 259929969
+      name: diplodoc-platform/transform
+    - id: 507861208
+      name: PaddlePaddle/FastDeploy
+    - id: 575445105
+      name: raycast/ray-so
+    - id: 765080394
+      name: Visionatrix/Visionatrix
+    - id: 53344691
+      name: pyannote/pyannote-audio
+    - id: 677847575
+      name: withcatai/node-llama-cpp
+    - id: 722011739
+      name: AI4Bharat/Anudesh-Frontend
+    - id: 271800973
+      name: GoogleCloudPlatform/asl-ml-immersion
+    - id: 658517501
+      name: dcSpark/shinkai-node
+    - id: 271251138
+      name: vespa-engine/pyvespa
+    - id: 740973714
+      name: JuliaDiff/DifferentiationInterface.jl
+    - id: 118510171
+      name: k8sgateway/k8sgateway
+    - id: 809057064
+      name: TorchJD/torchjd
+    - id: 606364803
+      name: icssw-org/MeshCom-Firmware
+    - id: 729761761
+      name: AI21Labs/ai21-python
+    - id: 725429681
+      name: onnx/turnkeyml
+    - id: 786207190
+      name: amosproj/amos2024ss06-health-ai-framework
+    - id: 723485772
+      name: fmaclen/hollama
+    - id: 580230494
+      name: mindspore-lab/mindocr
+    - id: 299235762
+      name: caraml-dev/merlin
+    - id: 765608128
+      name: finos/ai-readiness
+    - id: 684662328
+      name: HyperInspire/InspireFace
+    - id: 342691278
+      name: mlcommons/GaNDLF
+    - id: 661684494
+      name: valory-xyz/trader
+    - id: 636344889
+      name: collabora/WhisperLive
+    - id: 793541695
+      name: ADA-research/Sparkle
+    - id: 772699441
+      name: meta-llama/llama3
+    - id: 874695835
+      name: ScottLogic/InferESG
+    - id: 530360664
+      name: EveryVoiceTTS/EveryVoice
+    - id: 63108821
+      name: Autodesk/synthesis
+    - id: 804362023
+      name: microsoft/MInference
+    - id: 107937815
+      name: aws/amazon-sagemaker-examples
+    - id: 593641806
+      name: holistic-ai/holisticai
+    - id: 752521913
+      name: chaibuilder/sdk
+    - id: 786008946
+      name: XInTheDark/raycast-g4f
+    - id: 745912442
+      name: mitdbg/palimpzest
+    - id: 758197374
+      name: emcie-co/parlant
+    - id: 169053362
+      name: googlecloudrobotics/core
+    - id: 71472695
+      name: PythonOT/POT
+    - id: 762571895
+      name: buckyos/buckyos
+    - id: 147224878
+      name: atomistic-machine-learning/schnetpack
+    - id: 292049260
+      name: Niketkumardheeryan/ML-CaPsule
+    - id: 114185437
+      name: NVIDIA/aistore
+    - id: 581637435
+      name: pinecone-io/pinecone-ts-client
+    - id: 764020969
+      name: vortex-data/vortex
+    - id: 320463703
+      name: jqnatividad/qsv
+    - id: 394719554
+      name: fhswf/MLPro
+    - id: 593408514
+      name: MahmoudAshraf97/whisper-diarization
+    - id: 448896667
+      name: sea-bass/pyrobosim
+    - id: 104854615
+      name: stanfordnlp/stanza
+    - id: 642642539
+      name: BradyFU/Awesome-Multimodal-Large-Language-Models
+    - id: 798885005
+      name: starwit/ai-cockpit
+    - id: 135584946
+      name: py-why/dowhy
+    - id: 770984750
+      name: aws-samples/generative-bi-using-rag
+    - id: 126898329
+      name: microsoft/PowerApps-Samples
+    - id: 272133018
+      name: open-mmlab/mmsegmentation
+    - id: 786925690
+      name: lmstudio-ai/lms
+    - id: 674660881
+      name: finegrain-ai/refiners
+    - id: 292672302
+      name: open-ce/open-ce
+    - id: 743770309
+      name: HuLaSpark/HuLa
+    - id: 140451875
+      name: parkpow/deep-license-plate-recognition
+    - id: 800434001
+      name: COS301-SE-2024/Crop-Prediction-System
+    - id: 12567717
+      name: projectchrono/chrono
+    - id: 788681745
+      name: trypear/pearai-app
+    - id: 608736826
+      name: Safe-DS/Library
+    - id: 787110844
+      name: Azure-Samples/contoso-creative-writer
+    - id: 92872816
+      name: aws-samples/aws-lex-web-ui
+    - id: 337343508
+      name: OpenSTEF/openstef
+    - id: 703574474
+      name: microbit-foundation/ml-trainer
+    - id: 384466772
+      name: chirpstack/chirpstack
+    - id: 268795735
+      name: slackapi/bolt-python
+    - id: 639659909
+      name: amd/RyzenAI-SW
+    - id: 848215538
+      name: gpt-omni/mini-omni
+    - id: 633546245
+      name: rsxdalv/tts-generation-webui
+    - id: 777432944
+      name: php-llm/llm-chain
+    - id: 678763749
+      name: frankroeder/parrot.nvim
+    - id: 889794161
+      name: Yuanshi9815/OminiControl
+    - id: 709011126
+      name: MultimodalUniverse/MultimodalUniverse
+    - id: 901692986
+      name: mlcommons/mlperf-automations
+    - id: 774385001
+      name: SwaprHQ/presagio
+    - id: 447609265
+      name: instill-ai/instill-core
+    - id: 727470807
+      name: b4rtaz/distributed-llama
+    - id: 899744532
+      name: googleapis/js-genai
+    - id: 735423333
+      name: gwkokab/gwkokab
+    - id: 620258962
+      name: Hk-Gosuto/ChatGPT-Next-Web-LangChain
+    - id: 240847415
+      name: ros-navigation/docs.nav2.org
+    - id: 467585436
+      name: aphp/edsnlp
+    - id: 57377821
+      name: TuringLang/Turing.jl
+    - id: 551546945
+      name: Cambridge-ICCS/FTorch
+    - id: 607840368
+      name: rvion/CushyStudio
+    - id: 553148185
+      name: hexlet-rus/runit
+    - id: 784844690
+      name: mlcommons/cm4mlops
+    - id: 544527376
+      name: WATonomous/wato_monorepo
+    - id: 69257805
+      name: axondeepseg/axondeepseg
+    - id: 779939187
+      name: Moonlark-Dev/Moonlark
+    - id: 152634113
+      name: microsoft/CameraTraps
+    - id: 388781034
+      name: tattle-made/Uli
+    - id: 807512074
+      name: QuivrHQ/MegaParse
+    - id: 66944590
+      name: kulshekhar/ts-jest
+    - id: 751927947
+      name: genai-impact/ecologits
+    - id: 390536799
+      name: mlfoundations/open_clip
+    - id: 793526430
+      name: bigcode-project/bigcodebench
+    - id: 260550513
+      name: roboflow/roboflow-python
+    - id: 757448185
+      name: NN-complr-tech/llvm-nnsu-2024
+    - id: 810883820
+      name: The-OpenROAD-Project/ORAssistant
+    - id: 366146447
+      name: rany2/edge-tts
+    - id: 868847693
+      name: encord-team/encord-agents
+    - id: 643530496
+      name: livekit/python-sdks
+    - id: 140086420
+      name: opensolon/solon
+    - id: 867433720
+      name: mostlygeek/llama-swap
+    - id: 198350484
+      name: microsoft/unilm
+    - id: 200867511
+      name: hsahovic/poke-env
+    - id: 707169610
+      name: mobiusml/aana_sdk
+    - id: 848352150
+      name: opendatahub-io/ilab-on-ocp
+    - id: 963821528
+      name: open-edge-platform/geti
+    - id: 661828648
+      name: runpod-workers/worker-vllm
+    - id: 627024850
+      name: OpenAdaptAI/OpenAdapt
+    - id: 668227173
+      name: DimensionDev/Flare
+    - id: 597109271
+      name: sandrohanea/whisper.net
+    - id: 618514446
+      name: ErikBjare/gptme
+    - id: 649978765
+      name: grafana/grafana-llm-app
+    - id: 743391967
+      name: daxa-ai/pebblo
+    - id: 532854029
+      name: google-deepmind/mujoco_menagerie
+    - id: 21467110
+      name: explosion/spaCy
+    - id: 201441751
+      name: milvus-io/bootcamp
+    - id: 184704903
+      name: interpretml/interpret
+    - id: 736173948
+      name: undreamai/LLMUnity
+    - id: 916019032
+      name: rebellions-sw/optimum-rbln
+    - id: 906427015
+      name: daydreamsai/daydreams
+    - id: 837911756
+      name: feder-cr/Jobs_Applier_AI_Agent_AIHawk
+    - id: 638845853
+      name: AlekPet/ComfyUI_Custom_Nodes_AlekPet
+    - id: 52725411
+      name: OpenKore/openkore
+    - id: 887111470
+      name: modelscope/ClearerVoice-Studio
+    - id: 762181983
+      name: microsoft/BitBLAS
+    - id: 941428244
+      name: Ewha-Euron/8th-DL
+    - id: 817439929
+      name: kijai/ComfyUI-Florence2
+    - id: 878743356
+      name: BuildCLI/BuildCLI
+    - id: 797821110
+      name: lucidrains/alphafold3-pytorch
+    - id: 773458251
+      name: fedora-copr/logdetective
+    - id: 914053359
+      name: OpenmindAGI/OM1
+    - id: 406829138
+      name: CHIP-SPV/chipStar
+    - id: 482051625
+      name: asapdiscovery/asapdiscovery
+    - id: 423775360
+      name: open-edge-platform/anomalib
+    - id: 880897058
+      name: VirtualPatientEngine/AIAgents4Pharma
+    - id: 730068722
+      name: OpenRobotLab/EmbodiedScan
+    - id: 921286345
+      name: aristotle-ai/RagaAI-Catalyst
+    - id: 833512367
+      name: gusye1234/nano-graphrag
+    - id: 221214820
+      name: DagsHub/client
+    - id: 818499635
+      name: innocommerce/innoshop
+    - id: 683212753
+      name: mahseema/awesome-ai-tools
+    - id: 601549892
+      name: luxonis/luxonis-ml
+    - id: 949662713
+      name: opencode-ai/opencode
+    - id: 735605168
+      name: jataware/beaker-kernel
+    - id: 500550780
+      name: inverted-ai/invertedai
+    - id: 901585471
+      name: ai-christianson/RA.Aid
+    - id: 4262493
+      name: ilastik/ilastik
+    - id: 924394244
+      name: cloudflare/agents
+    - id: 430661738
+      name: maps-as-data/MapReader
+    - id: 614149835
+      name: tmoroney/auto-subs
+    - id: 800434074
+      name: COS301-SE-2024/The-Republic
+    - id: 843948787
+      name: autogenhub/autogen
+    - id: 809673506
+      name: BrainBlend-AI/atomic-agents
+    - id: 311302509
+      name: Apra-Labs/ApraPipes
+    - id: 920159501
+      name: kagent-dev/kagent
+    - id: 652562190
+      name: jitsi/skynet
+    - id: 482055059
+      name: neurobionics/opensourceleg
+    - id: 722184017
+      name: Yonom/assistant-ui
+    - id: 931892749
+      name: GLips/Figma-Context-MCP
+    - id: 731625798
+      name: pieces-app/cli-agent
+    - id: 106459220
+      name: mlr-org/mlr3pipelines
+    - id: 843159894
+      name: RogueRobotics2987/Season2025
+    - id: 296369718
+      name: IBM/aihwkit
+    - id: 885902812
+      name: zhaochenyang20/Awesome-ML-SYS-Tutorial
+    - id: 702880644
+      name: ggozad/oterm
+    - id: 840162905
+      name: showlab/Show-o
+    - id: 549727599
+      name: eth-easl/modyn
+    - id: 304116981
+      name: pnnl/neuromancer
+    - id: 765773809
+      name: AIObjectives/tttc-light-js
+    - id: 775427324
+      name: vertesia/composableai
+    - id: 941428050
+      name: Ewha-Euron/8th-ML
+    - id: 142207321
+      name: runtimeverification/llvm-backend
+    - id: 926902509
+      name: neavo/LinguaGacha
+    - id: 672847735
+      name: theodo-group/LLPhant
+    - id: 263516562
+      name: leondavi/NErlNet
+    - id: 606164768
+      name: vocodedev/vocode-core
+    - id: 351720449
+      name: autonomousvision/transfuser
+    - id: 131646318
+      name: py-why/EconML
+    - id: 258529948
+      name: lhotse-speech/lhotse
+    - id: 482441164
+      name: timoniq/telegrinder
+    - id: 667370415
+      name: langfuse/langfuse-python
+    - id: 765366922
+      name: rustic-ai/ui-components
+    - id: 339036827
+      name: Riminder/hrflow-connectors
+    - id: 763341039
+      name: OpenNyAI/Jugalbandi-Manager
+    - id: 634938527
+      name: kardolus/chatgpt-cli
+    - id: 543057724
+      name: Olympus-HPC/proteus
+    - id: 499438243
+      name: hotosm/fAIr
+    - id: 606520610
+      name: Purfview/whisper-standalone-win
+    - id: 693337943
+      name: UW-Madison-DataScience/ML-X-Nexus
+    - id: 111835796
+      name: pytorch/ignite
+    - id: 811279643
+      name: FGA-DIKU/EHR
+    - id: 642508441
+      name: hank-ai/darknet
+    - id: 780174294
+      name: StarlightSearch/EmbedAnything
+    - id: 167388434
+      name: online-ml/river
+    - id: 787655686
+      name: MLSysOps/MLE-agent
+    - id: 176126178
+      name: CogStack/MedCAT
+    - id: 846923721
+      name: bolna-ai/bolna
+    - id: 397338367
+      name: GoogleCloudPlatform/dfcx-scrapi
+    - id: 797465563
+      name: microsoft/Phi-3CookBook
+    - id: 639748676
+      name: kaixxx/noScribe
+    - id: 851256132
+      name: xynehq/xyne
+    - id: 869014465
+      name: TIGER-AI-Lab/VLM2Vec
+    - id: 593032164
+      name: KarhouTam/FL-bench
+    - id: 655413331
+      name: Zeyi-Lin/HivisionIDPhotos
+    - id: 930786354
+      name: MatthewZMD/aidermacs
+    - id: 263887679
+      name: dice-group/Ontolearn
+    - id: 696720966
+      name: CliDyn/climsight
+    - id: 816219992
+      name: OpenVisualCloud/Intel-Tiber-Broadcast-Suite
+    - id: 33331247
+      name: cirosantilli/china-dictatorship
+    - id: 585099371
+      name: microbit-foundation/cctd-ml-machine
+    - id: 434167585
+      name: Nyanyan/Egaroucid
+    - id: 722056770
+      name: athina-ai/athina-evals
+    - id: 804582214
+      name: RatherRude/Elite-Dangerous-AI-Integration
+    - id: 624516901
+      name: ParisNeo/lollms-webui
+    - id: 639097338
+      name: leondz/garak
+    - id: 178327569
+      name: dji-sdk/Payload-SDK
+    - id: 849383523
+      name: minusxai/minusx
+    - id: 828584688
+      name: stefanodellosa-personal/WADAS
+    - id: 821875747
+      name: CWRUbotix/rov-25
+    - id: 319886963
+      name: blackjax-devs/blackjax
+    - id: 553041868
+      name: ricky0123/vad
+    - id: 814249293
+      name: microsoft/semantic-kernel-java
+    - id: 287463830
+      name: microsoft/qlib
+    - id: 505555974
+      name: janosh/matbench-discovery
+    - id: 863116239
+      name: AI-Coach-PT/ExerSights
+    - id: 839372398
+      name: zaidmukaddam/scira
+    - id: 589617957
+      name: wilhelm-lab/koina
+    - id: 754705312
+      name: Fediory/HVI-CIDNet
+    - id: 228203350
+      name: VainF/Torch-Pruning
+    - id: 411827701
+      name: fani-lab/OpeNTF
+    - id: 397819121
+      name: rfcx/arbimon
+    - id: 438514144
+      name: wangrongding/wechat-bot
+    - id: 523693675
+      name: MOV-AI/frontend-npm-lib-ide
+    - id: 142140875
+      name: sintel-dev/Orion
+    - id: 726261658
+      name: GreenmaskIO/greenmask
+    - id: 137747179
+      name: 10up/classifai
+    - id: 851458354
+      name: autrainer/autrainer
+    - id: 952634895
+      name: opendatahub-io/llama-stack-demos
+    - id: 711118194
+      name: Vchitect/Latte
+    - id: 734710598
+      name: mostly-ai/mostlyai
+    - id: 711338659
+      name: semperai/amica
+    - id: 666719111
+      name: caiyuanhao1998/Retinexformer
+    - id: 797069797
+      name: LLM-Red-Team/deepseek-free-api
+    - id: 629868874
+      name: IBM/dsce-sample-apps
+    - id: 705950346
+      name: Mobile-Artificial-Intelligence/maid
+    - id: 787998692
+      name: GaiaNet-AI/docs
+    - id: 457523927
+      name: robocode-dev/tank-royale
+    - id: 859556091
+      name: AgentOps-AI/AgentStack
+    - id: 249480042
+      name: yokoffing/Betterfox
+    - id: 384007696
+      name: ubicomplab/rPPG-Toolbox
+    - id: 522160671
+      name: FPGA-MAFIA/fpga_mafia
+    - id: 817483493
+      name: Vikit-ai/sdk
+    - id: 826001091
+      name: mind-inria/hidimstat
+    - id: 283546804
+      name: scikit-activeml/scikit-activeml
+    - id: 201089222
+      name: webdataset/webdataset
+    - id: 295559728
+      name: triton-inference-server/core
+    - id: 905923554
+      name: signalwire/docs
+    - id: 798671457
+      name: Tencent/HunyuanDiT
+    - id: 516853136
+      name: AmbiqAI/neuralSPOT
+    - id: 655155250
+      name: jackmpcollins/magentic
+    - id: 151228909
+      name: carologistics/fawkes-robotino
+    - id: 823175328
+      name: Zheng-Chong/CatVTON
+    - id: 707350933
+      name: rupeshs/fastsdcpu
+    - id: 431435084
+      name: t9k/apps
+    - id: 494160304
+      name: LORD-MicroStrain/mip_sdk
+    - id: 719329578
+      name: wea-f/ByePassHub
+    - id: 592163008
+      name: VoxelCubes/PanelCleaner
+    - id: 931933207
+      name: codeflash-ai/codeflash
+    - id: 496315358
+      name: liesel-devs/liesel
+    - id: 750808157
+      name: lichtblick-suite/lichtblick
+    - id: 256401220
+      name: DataTalksClub/machine-learning-zoomcamp
+    - id: 709538270
+      name: plandex-ai/plandex
+    - id: 778427389
+      name: ai-robots-txt/ai.robots.txt
+    - id: 827625262
+      name: LogicNet-Subnet/LogicNet
+    - id: 891188391
+      name: troyvvgroup/quemb
+    - id: 781422111
+      name: Azure-Samples/AI-Gateway
+    - id: 704667494
+      name: NVlabs/curobo
+    - id: 609517170
+      name: chathub-dev/chathub
+    - id: 678540761
+      name: Quansight/ragna
+    - id: 228251956
+      name: treygrainger/ai-powered-search
+    - id: 672730040
+      name: tjake/Jlama
+    - id: 815271446
+      name: microsoft/Trace
+    - id: 787560187
+      name: SWE-bench/experiments
+    - id: 508234417
+      name: pixpark/gpupixel
+    - id: 644349088
+      name: lab-cosmo/atomistic-cookbook
+    - id: 156403341
+      name: deephyper/deephyper
+    - id: 681603891
+      name: facebookresearch/BenchMARL
+    - id: 737722024
+      name: PySymGym/PySymGym
+    - id: 837411728
+      name: apple/ml-mdm
+    - id: 151619717
+      name: google-research/google-research
+    - id: 728103628
+      name: Pointcept/PointTransformerV3
+    - id: 803465574
+      name: Firm-Collective/ai-journal
+    - id: 926531000
+      name: KouriChat/KouriChat
+    - id: 629049442
+      name: aandrew-me/tgpt
+    - id: 752925682
+      name: QwenLM/Qwen3
+    - id: 739139750
+      name: HumeAI/empathic-voice-api-js
+    - id: 561376900
+      name: google-deepmind/tapnet
+    - id: 670332256
+      name: vectorch-ai/ScaleLLM
+    - id: 641312714
+      name: UMCU-Digital-Health/No_Show
+    - id: 677863227
+      name: jw1912/bullet
+    - id: 353335620
+      name: mala-project/mala
+    - id: 692343460
+      name: Nexesenex/croco.cpp
+    - id: 143215610
+      name: gazebosim/ros_gz
+    - id: 787312976
+      name: TAHIR0110/ThereForYou
+    - id: 762300924
+      name: GaParmar/img2img-turbo
+    - id: 774011471
+      name: bsorrentino/langgraph4j
+    - id: 428374316
+      name: castai/cluster-controller
+    - id: 766391346
+      name: Passer1072/RookieAI_yolov8
+    - id: 793137423
+      name: liamcottle/reticulum-meshchat
+    - id: 939618155
+      name: NVIDIA/KAI-Scheduler
+    - id: 912515181
+      name: NRG948/NRGRobot2025
+    - id: 567475363
+      name: UoA-CARES/cares_reinforcement_learning
+    - id: 496233655
+      name: drl990114/MarkFlowy
+    - id: 163630824
+      name: feature-engine/feature_engine
+    - id: 30907774
+      name: spmallick/learnopencv
+    - id: 563021361
+      name: CerebriumAI/documentation
+    - id: 224664015
+      name: lbr-stack/lbr_fri_ros2_stack
+    - id: 736327352
+      name: transformerlab/transformerlab-api
+    - id: 314729128
+      name: RoboJackets/urc-software
+    - id: 856851849
+      name: Fatec-Bug-Busters/alplaca
+    - id: 809248191
+      name: the-database/traiNNer-redux
+    - id: 884452470
+      name: NVIDIA/kvpress
+    - id: 790743929
+      name: Teradata/developer-resources
+    - id: 81634683
+      name: Oneflow-Inc/oneflow
+    - id: 181023408
+      name: stereolabs/zed-ros2-wrapper
+    - id: 775979421
+      name: decisionintelligence/TFB
+    - id: 685141528
+      name: dcSpark/shinkai-apps
+    - id: 691898483
+      name: lmstudio-ai/lmstudio.js
+    - id: 748674684
+      name: X-PLUG/MobileAgent
+    - id: 338680242
+      name: NLP-Suite/NLP-Suite
+    - id: 902606995
+      name: flexflow/flexflow-serve
+    - id: 255534210
+      name: DeepTrackAI/DeepTrack2
+    - id: 85685354
+      name: LPCIC/coq-elpi
+    - id: 676866666
+      name: eunomia-bpf/bpftime
+    - id: 679553008
+      name: partcad/partcad
+    - id: 829825571
+      name: airtai/fastagency
+    - id: 830468922
+      name: MinishLab/model2vec
+    - id: 651639712
+      name: aiclub-igdtuw/AIMLMonth2023
+    - id: 947349598
+      name: stacklok/toolhive
+    - id: 676089005
+      name: OpenDriveLab/DriveLM
+    - id: 841977463
+      name: sirocco-ventures/raggenie
+    - id: 690869892
+      name: dkubeio/paper-qa
+    - id: 865656561
+      name: souzatharsis/podcastfy
+    - id: 696865544
+      name: Woolverine94/biniou
+    - id: 652134847
+      name: qwersyk/Newelle
+    - id: 905217578
+      name: FissionAI/FloTorch
+    - id: 851630314
+      name: nobodywho-ooo/nobodywho
+    - id: 108669343
+      name: hosseinmoein/DataFrame
+    - id: 200265390
+      name: xmos/ai_tools
+    - id: 941557796
+      name: nvidia-cosmos/cosmos-predict1
+    - id: 632549970
+      name: climate-action-kits/pxt-fwd-edu
+    - id: 855394474
+      name: meta-llama/llama-stack-client-python
+    - id: 26921116
+      name: haifengl/smile
+    - id: 523113630
+      name: DashAISoftware/DashAI
+    - id: 912500312
+      name: Yeti-Robotics/reefscape-2025
+    - id: 703520789
+      name: open-spaced-repetition/srs-benchmark
+    - id: 418399149
+      name: Toni-SM/skrl
+    - id: 760947966
+      name: TinyLLaVA/TinyLLaVA_Factory
+    - id: 286301447
+      name: neuml/txtai
+    - id: 477665677
+      name: AdaptiveMotorControlLab/CEBRA
+    - id: 340898532
+      name: janosh/pymatviz
+    - id: 789601531
+      name: codefuse-ai/CodeFuse-muAgent
+    - id: 422324608
+      name: NREL/sup3r
+    - id: 312112440
+      name: LibrePhotos/librephotos
+    - id: 197618728
+      name: Kompakkt/Repo
+    - id: 827359115
+      name: janelia-cellmap/cellmap-segmentation-challenge
+    - id: 333642667
+      name: openspyrit/spyrit
+    - id: 895930732
+      name: FoundationVision/Infinity
+    - id: 614414468
+      name: BasisResearch/collab-creatures
+    - id: 740759298
+      name: MicrosoftLearning/mslearn-ai-studio
+    - id: 701627142
+      name: AJaySi/AI-Writer
+    - id: 676114409
+      name: nndeploy/nndeploy
+    - id: 675615889
+      name: EthoML/VAME
+    - id: 153316914
+      name: BehaviorTree/BehaviorTree.CPP
+    - id: 695057717
+      name: epam/ai-dial
+    - id: 907754163
+      name: airweave-ai/airweave
+    - id: 382382840
+      name: vertyco/vrt-cogs
+    - id: 646875198
+      name: nimroddolev/chime_tts
+    - id: 561112208
+      name: weareunderdesign/rnbw
+    - id: 373310764
+      name: google/brax
+    - id: 677829141
+      name: AugmentOS-Community/AugmentOS
+    - id: 498776365
+      name: ARM-software/CMSIS-DSP
+    - id: 776894514
+      name: Qtoss-AI/BotSharp
+    - id: 777502336
+      name: unifyai/unify
+    - id: 736491949
+      name: InternLM/HuixiangDou
+    - id: 641317396
+      name: lamalab-org/chem-bench
+    - id: 920995232
+      name: multimodal-art-projection/YuE
+    - id: 868076923
+      name: moss-foundation/sapic
+    - id: 691939486
+      name: secretflow/serving
+    - id: 930217913
+      name: AgentDeskAI/browser-tools-mcp
+    - id: 967889784
+      name: ByteDance-Seed/Bagel
+    - id: 620999276
+      name: charmbracelet/mods
+    - id: 656376920
+      name: allenai/dolma
+    - id: 658978187
+      name: talmolab/sleap-nn
+    - id: 877756055
+      name: oramasearch/oramacore
+    - id: 103107372
+      name: sktime/skpro
+    - id: 445543052
+      name: lmitechnologies/LMI_AI_Solutions
+    - id: 703433265
+      name: cure-lab/MagicDrive
+    - id: 689172454
+      name: lean-dojo/LeanCopilot
+    - id: 377564696
+      name: dingo-gw/dingo
+    - id: 197020652
+      name: aramis-lab/clinicadl
+    - id: 513323345
+      name: numaproj/numalogic
+    - id: 539645566
+      name: brain-link/scanhub
+    - id: 710968229
+      name: NCAR/miles-credit
+    - id: 68208433
+      name: codac-team/codac
+    - id: 898600610
+      name: omegalabsinc/omega-awesome-a2a
+    - id: 832552991
+      name: ai-shifu/ai-shifu
+    - id: 581656211
+      name: MagnivOrg/prompt-layer-library
+    - id: 434324346
+      name: codeproject/CodeProject.AI-Server
+    - id: 865062553
+      name: LangbaseInc/BaseAI
+    - id: 948491206
+      name: deco-cx/chat
+    - id: 282100834
+      name: khanlab/hippunfold
+    - id: 650355303
+      name: forcedotcom/Einstein-GPT-for-Developers
+    - id: 689858385
+      name: menloresearch/cortex.cpp
+    - id: 857596299
+      name: hijkzzz/Awesome-LLM-Strawberry
+    - id: 902697574
+      name: deepseek-ai/DeepSeek-VL2
+    - id: 912559512
+      name: simstudioai/sim
+    - id: 499830255
+      name: OML-Team/open-metric-learning
+    - id: 579947672
+      name: MacPaw/OpenAI
+    - id: 846830656
+      name: entelecheia/intronlp-2024
+    - id: 821294986
+      name: neavo/KeywordGacha
+    - id: 159849469
+      name: coderaiser/putout
+    - id: 125381318
+      name: Trusted-AI/adversarial-robustness-toolbox
+    - id: 895253710
+      name: Blaizzy/mlx-audio
+    - id: 55262614
+      name: FluxML/Flux.jl
+    - id: 490861517
+      name: learnhouse/learnhouse
+    - id: 144723662
+      name: ESIPFed/Geoweaver
+    - id: 19983886
+      name: ompl/ompl
+    - id: 926861272
+      name: dzhng/deep-research
+    - id: 664914276
+      name: deepmodeling/DeePTB
+    - id: 556553471
+      name: JSv4/OpenContracts
+    - id: 352969947
+      name: HKU-BAL/Clair3
+    - id: 605728251
+      name: ax-llm/ax
+    - id: 801535501
+      name: ufal/factgenie
+    - id: 423737330
+      name: alibaba/TinyNeuralNetwork
+    - id: 872550457
+      name: video-db/Director
+    - id: 800434039
+      name: COS301-SE-2024/Autonomous-Car-Vision
+    - id: 846237240
+      name: codelion/optillm
+    - id: 707504998
+      name: ant-design/pro-chat
+    - id: 800050396
+      name: AnswerDotAI/ModernBERT
+    - id: 669042490
+      name: Pedal-Intelligence/saypi-userscript
+    - id: 295391759
+      name: MilesCranmer/PySR
+    - id: 867812115
+      name: rishikanthc/Scriberr
+    - id: 712450972
+      name: hyperledger-labs/aifaq
+    - id: 910426589
+      name: takahirom/arbigent
+    - id: 697526683
+      name: aws-solutions/generative-ai-application-builder-on-aws
+    - id: 742315659
+      name: Vahe1994/AQLM
+    - id: 628230315
+      name: tensorchord/pgvecto.rs
+    - id: 809578455
+      name: bc-compsci-club/bccs-club
+    - id: 54894320
+      name: KernelTuner/kernel_tuner
+    - id: 612781022
+      name: cursor/cursor
+    - id: 363274616
+      name: mozilla/firefox-translations-training
+    - id: 473583082
+      name: ENHANCE-PET/MOOSE
+    - id: 763622789
+      name: AceDataCloud/Nexior
+    - id: 475477908
+      name: WenjieDu/PyPOTS
+    - id: 831475852
+      name: zjysteven/lmms-finetune
+    - id: 646957069
+      name: ansari-project/ansari-backend
+    - id: 643435168
+      name: lobehub/lobe-ui
+    - id: 776598834
+      name: osllmai/inDox
+    - id: 132666782
+      name: vertica/VerticaPy
+    - id: 491172215
+      name: mazarynio/mazaryn
+    - id: 138355364
+      name: astro-datalab/notebooks-latest
+    - id: 576352682
+      name: Jordan-Pierce/CoralNet-Toolbox
+    - id: 895202428
+      name: stivenloaiza/assistance-registration-flutter
+    - id: 841472636
+      name: linyqh/NarratoAI
+    - id: 408703338
+      name: kozistr/pytorch_optimizer
+    - id: 728611905
+      name: mistralai/client-python
+    - id: 62449869
+      name: slackapi/java-slack-sdk
+    - id: 789558007
+      name: nod-ai/SHARK-Platform
+    - id: 177514615
+      name: tattle-made/feluda
+    - id: 705022737
+      name: tegnike/aituber-kit
+    - id: 689891864
+      name: OpenXAIProject/pnpxai
+    - id: 291848163
+      name: womeninrobotics/womeninrobotics.github.io
+    - id: 935604638
+      name: Fosowl/agenticSeek
+    - id: 801067663
+      name: it-at-m/mucgpt
+    - id: 276036730
+      name: pykale/pykale
+    - id: 641355235
+      name: NiklasPfister/adaXT
+    - id: 680797687
+      name: InternLM/lagent
+    - id: 243786996
+      name: bhklab/med-imagetools
+    - id: 733844999
+      name: Yuyz0112/dewhale
+    - id: 975318071
+      name: AsyncFuncAI/deepwiki-open
+    - id: 609721722
+      name: xx025/carrot
+    - id: 682775635
+      name: TUDB-Labs/mLoRA
+    - id: 712246301
+      name: dharmab/skyeye
+    - id: 666497543
+      name: nasa/OnAIR
+    - id: 779843396
+      name: Scale3-Labs/langtrace
+    - id: 601538369
+      name: meta-llama/llama
+    - id: 762224673
+      name: amazon-science/chronos-forecasting
+    - id: 813390194
+      name: TarsLab/obsidian-tars
+    - id: 794199679
+      name: rmusser01/tldw
+    - id: 765325999
+      name: Novartis/torchsurv
+    - id: 783667408
+      name: subhadeeproy3902/BloxAI
+    - id: 272777821
+      name: SeldonIO/MLServer
+    - id: 775483779
+      name: JackismyShephard/ultimate-rvc
+    - id: 742134961
+      name: aimclub/Edulytica
+    - id: 665607876
+      name: guillermoscript/lms-front
+    - id: 631169911
+      name: Ironclad/rivet
+    - id: 751474418
+      name: enoch3712/ExtractThinker
+    - id: 281519510
+      name: FedML-AI/FedML
+    - id: 148227812
+      name: aws-samples/aws-ai-ml-workshop-kr
+    - id: 575913453
+      name: continew-org/continew-admin
+    - id: 900207021
+      name: daodao97/chatmcp
+    - id: 267702531
+      name: googlesamples/mlkit
+    - id: 703538575
+      name: neuralinternet/ni-compute
+    - id: 966158939
+      name: global-agent-hackathon/global-agent-hackathon-may-2025
+    - id: 676793232
+      name: hitsz-ids/synthetic-data-generator
+    - id: 132975485
+      name: cleanlab/cleanlab
+    - id: 762355055
+      name: echolabsdev/prism
+    - id: 382066008
+      name: ocean-data-factory-sweden/kso
+    - id: 655303345
+      name: Robitx/gp.nvim
+    - id: 733722162
+      name: sipeed/MaixCDK
+    - id: 288411806
+      name: jolibrain/joliGEN
+    - id: 284824224
+      name: alexrudall/ruby-openai
+    - id: 281904557
+      name: Apparence-io/CamerAwesome
+    - id: 247581239
+      name: haosulab/SAPIEN
+    - id: 800434054
+      name: COS301-SE-2024/AI-Trip-Creator
+    - id: 173138251
+      name: BiaPyX/BiaPy
+    - id: 138181193
+      name: jphall663/awesome-machine-learning-interpretability
+    - id: 650181006
+      name: biocypher/biochatter
+    - id: 967530387
+      name: VoltAgent/voltagent
+    - id: 903700733
+      name: ahmedkhaleel2004/gitdiagram
+    - id: 691898483
+      name: lmstudio-ai/lmstudio-js
+    - id: 729651553
+      name: worldcoin/open-iris
+    - id: 700964758
+      name: chemle/emle-engine
+    - id: 852647993
+      name: MrKahr/P5
+    - id: 266369147
+      name: takuseno/d3rlpy
+    - id: 627981518
+      name: HumeAI/hume-api-examples
+    - id: 619143361
+      name: elevenlabs/elevenlabs-python
+    - id: 804600851
+      name: mbodiai/embodied-agents
+    - id: 761281854
+      name: Azure/Security-Copilot
+    - id: 823252593
+      name: nicepkg/aide
+    - id: 567676483
+      name: JohnSnowLabs/langtest
+    - id: 704892113
+      name: felladrin/MiniSearch
+    - id: 660332216
+      name: llm-tools/embedJs
+    - id: 275216909
+      name: carnegierobotics/LibMultiSense
+    - id: 495861970
+      name: creatis-myriad/creatis-myriad.github.io
+    - id: 54041620
+      name: matthiasn/lotti
+    - id: 428292281
+      name: Sanster/IOPaint
+    - id: 768443449
+      name: d-run/drun-docs
+    - id: 773065590
+      name: atoma-network/atoma-node
+    - id: 107305157
+      name: allenai/ai2thor
+    - id: 736191625
+      name: alibaba/rtp-llm
+    - id: 500850617
+      name: ecboghiu/inflation
+    - id: 567671275
+      name: molmod/psiflow
+    - id: 685565443
+      name: MSF-USA/chatbot-ui
+    - id: 224529184
+      name: reinfer/cli
+    - id: 347129505
+      name: aleximmer/Laplace
+    - id: 751684449
+      name: microsoft/T-MAC
+    - id: 832810328
+      name: microsoft/RAG_Hack
+    - id: 767358941
+      name: kwuking/TimeMixer
+    - id: 943394904
+      name: open-edge-platform/edge-ai-libraries
+    - id: 530323399
+      name: flydelabs/flyde
+    - id: 829544540
+      name: lotus-data/lotus
+    - id: 590604203
+      name: TheR1D/shell_gpt
+    - id: 54376220
+      name: AtsushiSakai/PythonRobotics
+    - id: 287642401
+      name: whylabs/whylogs
+    - id: 635850823
+      name: mattermost/mattermost-plugin-ai
+    - id: 273547783
+      name: ZigRazor/CXXGraph
+    - id: 790243389
+      name: CAIIVS/chuchichaestli
+    - id: 753270666
+      name: nebulastream/nautilus
+    - id: 610300171
+      name: Taewan-P/gpt_mobile
+    - id: 862453606
+      name: gibran96/course-registration-chatbot
+    - id: 780522250
+      name: FoundationVision/VAR
+    - id: 804026091
+      name: princeton-nlp/SimPO
+    - id: 541831874
+      name: PINTO0309/onnx2tf
+    - id: 771488718
+      name: parkchamchi/GlossySnake
+    - id: 619861948
+      name: FLAIROx/JaxMARL
+    - id: 831831999
+      name: suryanshsk/Python-Voice-Assistant-Suryanshsk
+    - id: 776695016
+      name: 2501-ai/cli
+    - id: 688141049
+      name: mangiucugna/json_repair
+    - id: 540020892
+      name: ahmetoner/whisper-asr-webservice
+    - id: 795538374
+      name: pnd280/complexity
+    - id: 531252554
+      name: robertknight/rten
+    - id: 666084768
+      name: taubyte/tau
+    - id: 329653923
+      name: MilesCranmer/SymbolicRegression.jl
+    - id: 944039567
+      name: NVIDIA/AIQToolkit
+    - id: 235458674
+      name: uxlfoundation/oneAPI-spec
+    - id: 676931962
+      name: modelscope/facechain
+    - id: 692674090
+      name: vegu-ai/talemate
+    - id: 861892731
+      name: PySpur-Dev/pyspur
+    - id: 530015602
+      name: arthurlockman/gatool-ui
+    - id: 735090310
+      name: allenai/reward-bench
+    - id: 802434683
+      name: qodo-ai/qodo-cover
+    - id: 851791259
+      name: reilabs/hieratika
+    - id: 705649405
+      name: radareorg/r2ai
+    - id: 911831076
+      name: icip-cas/PPTAgent
+    - id: 428860719
+      name: lanl/hippynn
+    - id: 130981854
+      name: CortexFoundation/CortexTheseus
+    - id: 900152988
+      name: nottelabs/notte
+    - id: 131954048
+      name: secure-software-engineering/phasar
+    - id: 698210830
+      name: Clay-foundation/model
+    - id: 618795683
+      name: MyLife-Services/mylife-maht
+    - id: 953683578
+      name: oraios/serena
+    - id: 366871642
+      name: deepgram/deepgram-python-sdk
+    - id: 777146767
+      name: iory/riberry
+    - id: 850585529
+      name: dentiny/ray
+    - id: 914796651
+      name: phospho-app/phosphobot
+    - id: 706338813
+      name: agh-space-systems-rover/kalman_robot
+    - id: 673882087
+      name: twosixlabs/armory-library
+    - id: 527730517
+      name: argonne-lcf/dlio_benchmark
+    - id: 883037083
+      name: edwko/OuteTTS
+    - id: 538093499
+      name: Safe3/uuWAF
+    - id: 764823366
+      name: reactome/reactome_chatbot
+    - id: 622048803
+      name: adamlui/ai-web-extensions
+    - id: 666783113
+      name: BabitMF/bmf
+    - id: 851052800
+      name: COSC481W-2024Fall/MLite
+    - id: 682737270
+      name: janelia-cellmap/dacapo
+    - id: 970996146
+      name: azure-ai-foundry/foundry-samples
+    - id: 810381411
+      name: ucl-contoso-chat/ucl-openai-search
+    - id: 952074980
+      name: dart-lang/ai
+    - id: 19861024
+      name: rock-core/tools-syskit
+    - id: 698634691
+      name: best-of-ai/ai-directories
+    - id: 242672435
+      name: pykeen/pykeen
+    - id: 520897311
+      name: TheRacetrack/racetrack
+    - id: 655024899
+      name: Vincentqyw/image-matching-webui
+    - id: 216003952
+      name: kreshuklab/plant-seg
+    - id: 895508656
+      name: microsoft/ai-agents-for-beginners
+    - id: 823975807
+      name: manikumarreddyu/AgroTech-AI
+    - id: 154843614
+      name: open-edge-platform/training_extensions
+    - id: 755278201
+      name: NapthaAI/naptha-sdk
+    - id: 876544822
+      name: superagentxai/superagentx
+    - id: 755804236
+      name: HanaokaYuzu/Gemini-API
+    - id: 689777286
+      name: plastic-labs/honcho
+    - id: 849379735
+      name: jishengpeng/WavTokenizer
+    - id: 806364139
+      name: VisActor/VStory
+    - id: 416389826
+      name: mlr-org/mlr3torch
+    - id: 646272998
+      name: BasedLabs/NoLabs
+    - id: 800662898
+      name: COS301-SE-2024/MoodMix
+    - id: 926248435
+      name: supercog-ai/agentic
+    - id: 756673810
+      name: google/gemma.cpp
+    - id: 859537060
+      name: anti-work/shortest
+    - id: 702370097
+      name: flyun/chatAir
+    - id: 894945634
+      name: ali-vilab/TeaCache
+    - id: 851641984
+      name: ProjectCED/CED-LLM
+    - id: 861259190
+      name: Time-MoE/Time-MoE
+    - id: 112074575
+      name: ros2-rust/ros2_rust
+    - id: 919420822
+      name: Arquisoft/wichat_en2a
+    - id: 854902472
+      name: JaredBaker99/Escaping-Amnesia
+    - id: 806087264
+      name: MindWorkAI/AI-Studio
+    - id: 773636291
+      name: sirji-ai/sirji
+    - id: 899725411
+      name: spring-projects-experimental/spring-ai-mcp
+    - id: 710109738
+      name: BioTechCo/main_project
+    - id: 345211122
+      name: Nova-UTD/navigator
+    - id: 627950717
+      name: RamiAwar/dataline
+    - id: 822839116
+      name: token-js/token.js
+    - id: 784439620
+      name: Autism-Technology-Research-Syndicate/SEALApplication
+    - id: 750368232
+      name: tak-bro/aicommit2
+    - id: 715778092
+      name: mobiusml/hqq
+    - id: 584639396
+      name: ai-collection/ai-collection
+    - id: 793454852
+      name: ragapp/ragapp
+    - id: 775356180
+      name: Lambdua/openai4j
+    - id: 108922565
+      name: MattFiler/OpenCAGE
+    - id: 725089041
+      name: myshell-ai/OpenVoice
+    - id: 186055899
+      name: dynamicslab/pysindy
+    - id: 615709657
+      name: Undertone0809/promptulate
+    - id: 34213430
+      name: pyRiemann/pyRiemann
+    - id: 204803626
+      name: huskyroboticsteam/Resurgence
+    - id: 572304241
+      name: THU-DSP-LAB/llvm-project
+    - id: 598882617
+      name: intel/openvino-ai-plugins-gimp
+    - id: 648735028
+      name: ur-whitelab/md-agent
+    - id: 346976717
+      name: 4paradigm/OpenMLDB
+    - id: 581900084
+      name: MichelNivard/gptstudio
+    - id: 292016444
+      name: openvinotoolkit/datumaro
+    - id: 768036550
+      name: GaiaNet-AI/gaianet-node
+    - id: 657153187
+      name: GoogleCloudPlatform/genai-for-marketing
+    - id: 703538575
+      name: neuralinternet/compute-subnet
+    - id: 609002853
+      name: TBXark/ChatGPT-Telegram-Workers
+    - id: 651170890
+      name: mayneyao/eidos
+    - id: 579082810
+      name: dair-ai/Prompt-Engineering-Guide
+    - id: 784941054
+      name: inference-labs-inc/omron-subnet
+    - id: 845808708
+      name: oslabs-beta/mlflow-js
+    - id: 871829086
+      name: ITSpecialist111/ai_automation_suggester
+    - id: 694517360
+      name: codefuse-ai/Awesome-Code-LLM
+    - id: 904831157
+      name: microsoft/bioemu
+    - id: 436510608
+      name: deepdoctection/deepdoctection
+    - id: 516338250
+      name: openvinotoolkit/geti-sdk
+    - id: 831517105
+      name: milanglacier/minuet-ai.nvim
+    - id: 404589375
+      name: flexivrobotics/flexiv_rdk
+    - id: 582207650
+      name: Avdhesh-Varshney/AI-Code
+    - id: 858564699
+      name: mobilon-dev/chotto
+    - id: 772331551
+      name: sbintuitions/JMTEB
+    - id: 431319532
+      name: Nixtla/statsforecast
+    - id: 772010792
+      name: deepsense-ai/db-ally
+    - id: 594208922
+      name: rakuri255/UltraSinger
+    - id: 964314175
+      name: mediar-ai/terminator
+    - id: 878594181
+      name: Santa-Clara-Imaginarium-Lab/human-ai
+    - id: 731792488
+      name: skfolio/skfolio
+    - id: 500099058
+      name: smlnj/legacy
+    - id: 823607457
+      name: THUDM/CodeGeeX4
+    - id: 828987595
+      name: microsoft/aurora
+    - id: 612640604
+      name: mckaywrigley/chatbot-ui
+    - id: 720691684
+      name: embedded-dev-research/itlab_2023
+    - id: 62041313
+      name: clustervision/trinityX
+    - id: 829561338
+      name: abstractoperators/concrete
+    - id: 855918092
+      name: PrimeIntellect-ai/prime
+    - id: 898345892
+      name: wonderwhy-er/DesktopCommanderMCP
+    - id: 828268839
+      name: NirDiamant/RAG_Techniques
+    - id: 788522674
+      name: pieces-app/plugin_sublime
+    - id: 628238571
+      name: Hugo-COLLIN/SaveMyPhind-conversation-exporter
+    - id: 679353662
+      name: open-spaced-repetition/fsrs-rs
+    - id: 826980617
+      name: trustgraph-ai/trustgraph
+    - id: 301649706
+      name: nnstreamer/api
+    - id: 662878020
+      name: InternLM/InternLM
+    - id: 815403287
+      name: memfreeme/memfree
+    - id: 377027506
+      name: xArm-Developer/xarm_ros2
+    - id: 383471193
+      name: spotify/pedalboard
+    - id: 500473121
+      name: libxsmm/tpp-mlir
+    - id: 576438535
+      name: runpod/runpod-python
+    - id: 593131870
+      name: cequence-io/openai-scala-client
+    - id: 689942994
+      name: CHERIoT-Platform/llvm-project
+    - id: 668934292
+      name: LLNL/AMS
+    - id: 798552790
+      name: rileycleavenger/StockBuddy
+    - id: 719805217
+      name: ProjectNeura/LEADS
+    - id: 360444739
+      name: google/yggdrasil-decision-forests
+    - id: 128066037
+      name: markqvist/Reticulum
+    - id: 617136332
+      name: Capsize-Games/airunner
+    - id: 755889931
+      name: google-gemini-php/client
+    - id: 474467598
+      name: pyg-team/pyg-lib
+    - id: 752616166
+      name: Avdhesh-Varshney/chanakya-niti
+    - id: 637639667
+      name: targed/Awesome-Plugins
+    - id: 791285861
+      name: dida-do/eurocropsml
+    - id: 267715375
+      name: keras-team/keras-nlp
+    - id: 805358462
+      name: Giskard-AI/giskard-hub
+    - id: 653386433
+      name: yl4579/StyleTTS2
+    - id: 770181564
+      name: satvik314/educhain
+    - id: 737620909
+      name: BenGWeeks/Zapp.ie
+    - id: 320299900
+      name: pipipi-pikachu/PPTist
+    - id: 699980700
+      name: patrick-kidger/optimistix
+    - id: 775226241
+      name: quic/ai-hub-apps
+    - id: 529716953
+      name: xability/maidr
+    - id: 494320113
+      name: k2-fsa/sherpa
+    - id: 732296271
+      name: shell-nlp/gpt_server
+    - id: 669086709
+      name: rowyio/buildship-docs
+    - id: 916164177
+      name: HenryXiaoYang/XYBotV2
+    - id: 699275912
+      name: ONLYOFFICE/DocSpace-buildtools
+    - id: 627536768
+      name: camera-2018/hdu-cs-wiki
+    - id: 707154421
+      name: ayrna/dlordinal
+    - id: 615521470
+      name: kognetiks/kognetiks-chatbot
+    - id: 378263386
+      name: kserve/website
+    - id: 771997054
+      name: elevenlabs/elevenlabs-examples
+    - id: 701394709
+      name: jeffreywallphd/AutoProphet
+    - id: 825125434
+      name: Yugen-ai/canso-helm-charts
+    - id: 721860587
+      name: glossyio/traffic-monitor
+    - id: 667532295
+      name: coaidev/coai
+    - id: 696950657
+      name: codestoryai/sidecar
+    - id: 734949727
+      name: WaitThatShouldntWork/InferGPT
+    - id: 176360250
+      name: tstellar/llvm-project
+    - id: 631081868
+      name: Solarint/SAIN
+    - id: 437876523
+      name: frankaemika/franka_ros2
+    - id: 854455730
+      name: gergap/vim-ollama
+    - id: 589385734
+      name: edtechre/pybroker
+    - id: 659463960
+      name: R3gm/SoniTranslate
+    - id: 794804846
+      name: foundation-model-stack/fms-acceleration
+    - id: 945671748
+      name: openops-cloud/openops
+    - id: 859853845
+      name: Iotic-Labs/nyx-sdk
+    - id: 360542372
+      name: nextcloud/recognize
+    - id: 760683276
+      name: google-deepmind/gemma
+    - id: 798179440
+      name: ddean2009/MoneyPrinterPlus
+    - id: 150591997
+      name: ntua-unit-of-control-and-informatics/jaqpotpy
+    - id: 752946440
+      name: pingcap/tidb.ai
+    - id: 663488105
+      name: Haidra-Org/horde-worker-reGen
+    - id: 237983740
+      name: braph-software/BRAPH-2
+    - id: 614655497
+      name: log10-io/log10
+    - id: 796786327
+      name: TheFireCo/genkit-plugins
+    - id: 826829976
+      name: FrancescoXX/rustcrab
+    - id: 441467833
+      name: open-mmlab/mmdeploy
+    - id: 886643127
+      name: lee88688/aider-composer
+    - id: 610786335
+      name: Eppie-io/Eppie-App
+    - id: 42290369
+      name: openaire/iis
+    - id: 510948608
+      name: tier4/CalibrationTools
+    - id: 586385182
+      name: UOA-FSAE/autonomous
+    - id: 734937478
+      name: acon96/home-llm
+    - id: 567723645
+      name: apax-hub/apax
+    - id: 345180734
+      name: aallam/openai-kotlin
+    - id: 687187890
+      name: JetBrains-Research/coqpilot
+    - id: 293582703
+      name: Limmen/csle
+    - id: 915425472
+      name: Davidyz/VectorCode
+    - id: 784449279
+      name: thecml/mensa
+    - id: 726390185
+      name: foldl/chatllm.cpp
+    - id: 447971073
+      name: aimclub/Fedot.Industrial
+    - id: 853917967
+      name: omeryusufyagci/fast-music-remover
+    - id: 663216804
+      name: mila-iqia/ResearchTemplate
+    - id: 938231495
+      name: rmurai0610/MASt3R-SLAM
+    - id: 973292935
+      name: CJackHwang/AIstudioProxyAPI
+    - id: 70415756
+      name: RobRich999/Chromium_Clang
+    - id: 878324994
+      name: XpiritCommunityEvents/LegacyLiftOffWorkshop
+    - id: 863748145
+      name: NVIDIA-AI-Blueprints/vulnerability-analysis
+    - id: 912352695
+      name: MelbourneRoboCats5648/Reefscape_2025
+    - id: 161178225
+      name: omegaml/omegaml
+    - id: 618925533
+      name: Blarc/ai-commits-intellij-plugin
+    - id: 38182966
+      name: TelegramBots/Telegram.Bot
+    - id: 807634130
+      name: lastsunday/job-hunting
+    - id: 92700249
+      name: CycloneDX/specification
+    - id: 765133369
+      name: ethz-spylab/agentdojo
+    - id: 641205268
+      name: jujumilk3/leaked-system-prompts
+    - id: 715536935
+      name: superlinked/superlinked
+    - id: 819655523
+      name: sourcegraph/cody-vs
+    - id: 817366085
+      name: Team-Clody/Clody_server
+    - id: 841588153
+      name: vectara/py-vectara-agentic
+    - id: 192571993
+      name: calcitem/Sanmill
+    - id: 587012822
+      name: ggjara/teachvatory
+    - id: 215813701
+      name: github0null/eide
+    - id: 764024461
+      name: mscraftsman/generative-ai
+    - id: 706012006
+      name: Kedreamix/Linly-Talker
+    - id: 696392815
+      name: microsoft/rag-experiment-accelerator
+    - id: 790704526
+      name: alipay/agentUniverse
+    - id: 735403495
+      name: SciSharp/BotSharp-UI
+    - id: 244730447
+      name: ClusterDuck-Protocol/ClusterDuck-Protocol
+    - id: 776121034
+      name: BasedHardware/Omi
+    - id: 258021544
+      name: ros-controls/ros2_control_demos
+    - id: 859982835
+      name: pixlie/PixlieAI
+    - id: 856760782
+      name: SakiRinn/LiveCaptions-Translator
+    - id: 795504117
+      name: GATEOverflow/cm4mlops
+    - id: 925634755
+      name: ErlichLiu/DeepClaude
+    - id: 367169299
+      name: mvukov/rules_ros2
+    - id: 850195226
+      name: NitroRCr/AIaW
+    - id: 394933651
+      name: Natooz/MidiTok
+    - id: 777729549
+      name: dilyabareeva/quanda
+    - id: 484003883
+      name: huggingface/deep-rl-class
+    - id: 902291246
+      name: portiaAI/portia-sdk-python
+    - id: 445768278
+      name: katanaml/sparrow
+    - id: 351826770
+      name: Project-MONAI/MONAILabel
+    - id: 272252323
+      name: neoml-lib/neoml
+    - id: 835378168
+      name: replicate/cog-flux
+    - id: 607355225
+      name: madox2/vim-ai
+    - id: 784962136
+      name: CentML/flexible-inference-bench
+    - id: 753369962
+      name: multiverseweb/Dataverse
+    - id: 672847735
+      name: LLPhant/LLPhant
+    - id: 665339628
+      name: microsoft/azurechat
+    - id: 838228483
+      name: EliHei2/segger_dev
+    - id: 806192576
+      name: Upsonic/Upsonic
+    - id: 143867706
+      name: KamilSJaron/smudgeplot
+    - id: 740789348
+      name: ThuCCSLab/Awesome-LM-SSP
+    - id: 9517720
+      name: robotology/yarp
+    - id: 90321822
+      name: pytorch/audio
+    - id: 760938480
+      name: omegalabsinc/omegalabs-bittensor-subnet
+    - id: 41313736
+      name: pyscripter/pyscripter
+    - id: 208142160
+      name: blisc/NeMo
+    - id: 774352221
+      name: Owen-Caudinata/RPL-AI-ML-Health-Diagnosis
+    - id: 910418754
+      name: nanobrowser/nanobrowser
+    - id: 800050396
+      name: AnswerDotAI/bert24
+    - id: 647984858
+      name: mit-han-lab/llm-awq
+    - id: 746406196
+      name: OpenMinds-LCIT/cardiovascular-disease-prediction
+    - id: 818263321
+      name: matteocodogno/CipherQuest
+    - id: 679688599
+      name: brilliantlabsAR/frame-codebase
+    - id: 125461261
+      name: antgroup/ant-ray
+    - id: 785158333
+      name: dotimplement/HealthChain
+    - id: 251615517
+      name: pyomeca/bioptim
+    - id: 656933936
+      name: Stability-AI/generative-models
+    - id: 670822500
+      name: asagi4/comfyui-prompt-control
+    - id: 750767122
+      name: BAAI-DCAI/Bunny
+    - id: 785735139
+      name: arshad-yaseen/monacopilot
+    - id: 123680222
+      name: cogip/mcu-firmware
+    - id: 872377246
+      name: restackio/examples-python
+    - id: 763481288
+      name: saeyslab/harpy
+    - id: 971482332
+      name: SanthoshNC/KEC-ML-Assignments
+    - id: 394610101
+      name: HabanaAI/Gaudi-tutorials
+    - id: 834908960
+      name: MichiganDataScienceTeam/F24-mini-copilot
+    - id: 596035728
+      name: crisostomi/gladia-website
+    - id: 696786715
+      name: ARTIST-Association/ARTIST
+    - id: 38238163
+      name: davidemms/OrthoFinder
+    - id: 434098140
+      name: AmusementClub/vs-mlrt
+    - id: 906505036
+      name: acm-ucr/CSE-AI-resources
+    - id: 823095256
+      name: meteofrance/mfai
+    - id: 742356612
+      name: OpenCSGs/CSGHub
+    - id: 688392062
+      name: chhoumann/thesis-chemcam
+    - id: 755968402
+      name: ultralytics/yolo-ios-app
+    - id: 703751361
+      name: google/deepsomatic
+    - id: 653734533
+      name: guinmoon/LLMFarm
+    - id: 456464737
+      name: ucl-cssb/MIMIC
+    - id: 780535967
+      name: Snowflake-Labs/snowflake-demo-notebooks
+    - id: 879790282
+      name: alumnium-hq/alumnium
+    - id: 944976593
+      name: tadata-org/fastapi_mcp
+    - id: 646425794
+      name: qcri/LLMeBench
+    - id: 575340621
+      name: lencx/ChatGPT
+    - id: 623876455
+      name: ufal/whisper_streaming
+    - id: 297264036
+      name: CreditMutuelArkea/tock
+    - id: 960200422
+      name: RoboVerseOrg/RoboVerse
+    - id: 619234173
+      name: ianarawjo/ChainForge
+    - id: 266582853
+      name: gvergnaud/ts-pattern
+    - id: 878243150
+      name: inferablehq/inferable
+    - id: 208283588
+      name: slideflow/slideflow
+    - id: 346124279
+      name: pinecone-io/examples
+    - id: 664157329
+      name: llm-jp/awesome-japanese-llm
+    - id: 392837160
+      name: utiasDSL/safe-control-gym
+    - id: 470698486
+      name: PatBall1/detectree2
+    - id: 750896555
+      name: Abraxas-365/langchain-rust
+    - id: 673368307
+      name: causalens/cai-causal-graph
+    - id: 583226759
+      name: InkTimeRecord/TTime
+    - id: 784575208
+      name: gptscript-ai/knowledge
+    - id: 778471044
+      name: aws-samples/genai-quickstart-pocs
+    - id: 913540439
+      name: hotovo/aider-desk
+    - id: 769564277
+      name: mufeedvh/code2prompt
+    - id: 875026091
+      name: pytorch/torchft
+    - id: 789781153
+      name: Runware/sdk-python
+    - id: 751025428
+      name: jeffrey-l-turner/CPSC_298
+    - id: 354117916
+      name: aai-institute/pyDVL
+    - id: 925270205
+      name: trycua/cua
+    - id: 724078047
+      name: NorskRegnesentral/skchange
+    - id: 851099231
+      name: Unknowneth/Mob-AI-Tweaks
+    - id: 455340841
+      name: OpenCovenant/quill
+    - id: 920202340
+      name: PRONTOLab/GB-25
+    - id: 781581079
+      name: unoplat/unoplat-code-confluence
+    - id: 204056467
+      name: prominenceai/deepstream-services-library
+    - id: 599406359
+      name: iKonoTelecomunicaciones/menuflow
+    - id: 850683423
+      name: kodu-ai/claude-coder
+    - id: 637044502
+      name: orbbec/OrbbecSDK
+    - id: 152771129
+      name: NVlabs/Deep_Object_Pose
+    - id: 195914972
+      name: uber/causalml
+    - id: 814502811
+      name: AIDC-AI/Ovis
+    - id: 119336293
+      name: purocean/yn
+    - id: 684388144
+      name: Panopticon-AI-team/panopticon
+    - id: 182043142
+      name: nikhil-sarin/redback
+    - id: 883185091
+      name: deniz-oezdemir/Transcendence
+    - id: 860788283
+      name: wix-incubator/pilot
+    - id: 636535720
+      name: josStorer/RWKV-Runner
+    - id: 643058819
+      name: agentmorris/MegaDetector
+    - id: 564107658
+      name: ORNL/flowcept
+    - id: 451416687
+      name: bliporg/blip
+    - id: 931668210
+      name: GSA-TTS/document-extractor-poc
+    - id: 761696382
+      name: miquido/draive
+    - id: 940662305
+      name: PeterGriffinJin/Search-R1
+    - id: 946153980
+      name: badboysm890/ClaraVerse
+    - id: 688499014
+      name: soorria/prompt-racer
+    - id: 292374787
+      name: stas00/ml-engineering
+    - id: 876064934
+      name: patchy631/ai-engineering-hub
+    - id: 572583953
+      name: somta/Juggle
+    - id: 173002255
+      name: sdv-dev/SDGym
+    - id: 890168727
+      name: inngest/agent-kit
+    - id: 798480726
+      name: uclamii/model_tuner
+    - id: 707837651
+      name: LiuzLab/AI_MARRVEL
+    - id: 657213887
+      name: mit-submit/A2rchi
+    - id: 827087200
+      name: BICLab/SpikeYOLO
+    - id: 477370194
+      name: Djdefrag/QualityScaler
+    - id: 645534213
+      name: coretex-ai/coretexpylib
+    - id: 392331617
+      name: felixbur/nkululeko
+    - id: 102904613
+      name: Unity-Technologies/ml-agents
+    - id: 727311825
+      name: google/generative-ai-go
+    - id: 792847444
+      name: distantmagic/paddler
+    - id: 452328925
+      name: NannyML/nannyml
+    - id: 165106695
+      name: arcana-lab/noelle
+    - id: 750678695
+      name: xming521/WeClone
+    - id: 823467100
+      name: TransformerOptimus/SuperCoder
+    - id: 631705933
+      name: bowang-lab/scGPT
+    - id: 133101528
+      name: bazel-contrib/toolchains_llvm
+    - id: 857598583
+      name: trailheadapps/coral-cloud
+    - id: 758404949
+      name: DakeQQ/Native-LLM-for-Android
+    - id: 627210550
+      name: AutoGPTQ/AutoGPTQ
+    - id: 578081952
+      name: pkeilbach/htwg-practical-nlp
+    - id: 765945143
+      name: redhat-ai-services/ai-accelerator
+    - id: 233984636
+      name: OpenCilk/opencilk-project
+    - id: 343370569
+      name: constantinpape/torch-em
+    - id: 863328719
+      name: iASL-Gifu/aichallenge-2024-final
+    - id: 701394709
+      name: jeffreywallphd/OpenFinAL
+    - id: 766597813
+      name: muskie82/MonoGS
+    - id: 593759534
+      name: RobotecAI/o3de-rgl-gem
+    - id: 378841874
+      name: recodehive/Stackoverflow-Analysis
+    - id: 822617618
+      name: hand-e-fr/OpenHosta
+    - id: 833453356
+      name: Nutlope/llamacoder
+    - id: 822351105
+      name: animalnots/BetterChatGPT-PLUS
+    - id: 885891374
+      name: DEVRhylme-Foundation/new-website
+    - id: 877230294
+      name: blinkospace/blinko
+    - id: 383864114
+      name: fastmachinelearning/qonnx
+    - id: 751983018
+      name: kitops-ml/kitops
+    - id: 816163847
+      name: cambrian-mllm/cambrian
+    - id: 813220336
+      name: NVlabs/MambaVision
+    - id: 749971963
+      name: IntelLabs/scenario_execution
+    - id: 897068154
+      name: heurist-network/heurist-agent-framework
+    - id: 570093471
+      name: memori-ai/memori-react
+    - id: 876725017
+      name: aimclub/OSA
+    - id: 111796716
+      name: robotology/robotology-superbuild
+    - id: 324027147
+      name: ttop32/MouseTooltipTranslator
+    - id: 917278000
+      name: marimo-team/learn
+    - id: 229773785
+      name: ReactiveBayes/ReactiveMP.jl
+    - id: 808123482
+      name: sammcj/gollama
+    - id: 361892304
+      name: Nixtla/mlforecast
+    - id: 780323643
+      name: modelscope/dash-infer
+    - id: 100936800
+      name: NatLibFi/Annif
+    - id: 829511330
+      name: Tanzania-AI-Community/twiga
+    - id: 371186973
+      name: hal9ai/hal9
+    - id: 505761087
+      name: KULeuven-MICAS/zigzag
+    - id: 162616652
+      name: ROCm/MIVisionX
+    - id: 630990398
+      name: justinkay/aldi
+    - id: 912701678
+      name: Team-Optix-3749/Team-3749-2025
+    - id: 780897965
+      name: DenisovAV/flutter_gemma
+    - id: 860612327
+      name: cvs-health/langfair
+    - id: 718127083
+      name: NaC-L/Mergen
+    - id: 716445208
+      name: opsre/WatchAlert
+    - id: 682259362
+      name: Clarifai/examples
+    - id: 527624781
+      name: kkirchheim/pytorch-ood
+    - id: 95596448
+      name: TheDan64/inkwell
+    - id: 675151062
+      name: trypromptly/LLMStack
+    - id: 843817608
+      name: Kurama622/llm.nvim
+    - id: 914964527
+      name: SolaceLabs/solace-agent-mesh
+    - id: 862255947
+      name: chainbase-labs/manuscript-core
+    - id: 684722434
+      name: lac-dcc/Daedalus
+    - id: 802434683
+      name: Codium-ai/cover-agent
+    - id: 794594479
+      name: gretelai/navigator-helpers
+    - id: 702911793
+      name: Babyhamsta/Aimmy
+    - id: 646129383
+      name: the-crypt-keeper/can-ai-code
+    - id: 500473121
+      name: plaidml/tpp-mlir
+    - id: 809205048
+      name: jamesmurdza/sandbox
+    - id: 23940688
+      name: kraj/meta-clang
+    - id: 777814395
+      name: DataTalksClub/llm-zoomcamp
+    - id: 733053529
+      name: artefactory/choice-learn
+    - id: 296442136
+      name: mims-harvard/TDC
+    - id: 801296196
+      name: sigoden/llm-functions
+    - id: 745258309
+      name: gitbito/CodeReviewAgent
+    - id: 814423356
+      name: dvlab-research/ControlNeXt
+    - id: 501995296
+      name: ReactiveBayes/RxInfer.jl
+    - id: 625187946
+      name: ai-shifu/ChatALL
