@@ -1,0 +1,33 @@
+name: Mermaid
+type: Company
+data:
+  platforms:
+  - name: GitHub
+    type: Code Hosting
+    repos:
+    - id: 26066727
+      name: mermaid-js/mermaid
+    - id: 218584802
+      name: mermaid-js/mermaid-live-editor-old
+    - id: 223260063
+      name: mermaid-js/mermaid-live-editor
+    - id: 224363581
+      name: mermaid-js/dagre-d3
+    - id: 226655837
+      name: mermaid-js/docs
+    - id: 229769892
+      name: mermaid-js/api-integration-ex
+    - id: 243479251
+      name: mermaid-js/react-wrapper
+    - id: 264861225
+      name: mermaid-js/mermaid-cli
+    - id: 283584912
+      name: mermaid-js/mermaid-js.github.io
+    - id: 561169305
+      name: mermaid-js/.github
+    - id: 579366469
+      name: mermaid-js/java-control-plane
+    - id: 621663598
+      name: mermaid-js/mermaid-bot
+    - id: 624311398
+      name: mermaid-js/zenuml-core
