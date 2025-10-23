@@ -11,7 +11,8 @@ import {
   QueryConfig,
   processQueryResult,
   getTopLevelPlatform,
-  getInnerGroupBy
+  getInnerGroupBy,
+  getWithClause
 } from "./basic";
 import * as clickhouse from '../db/clickhouse';
 
@@ -23,6 +24,7 @@ export const repoStars = async (config: QueryConfig) => {
   whereClauses.push(getTimeRangeWhereClause(config));
 
   const sql = `
+${getWithClause(config)}
 SELECT
   id,
   ${getTopLevelPlatform(config)},
@@ -54,6 +56,7 @@ export const repoIssueComments = async (config: QueryConfig) => {
   whereClauses.push(getTimeRangeWhereClause(config));
 
   const sql = `
+${getWithClause(config)}
 SELECT
   id,
   ${getTopLevelPlatform(config)},
@@ -85,6 +88,7 @@ export const repoCount = async (config: QueryConfig) => {
   whereClauses.push(getTimeRangeWhereClause(config));
 
   const sql = `
+${getWithClause(config)}
 SELECT
   id,
   ${getTopLevelPlatform(config)},
@@ -116,6 +120,7 @@ export const repoParticipants = async (config: QueryConfig) => {
   whereClauses.push(getTimeRangeWhereClause(config));
 
   const sql = `
+${getWithClause(config)}
 SELECT
   id,
   ${getTopLevelPlatform(config)},
@@ -162,6 +167,7 @@ export const userEquivalentTimeZone = async (config: QueryConfig<EquivalentTimeZ
    * The procedure will return `13` which is an invalid result for time period without data
    */
   const sql = `
+${getWithClause(config)}
 SELECT
   id,
   ${getTopLevelPlatform(config)},
@@ -205,6 +211,7 @@ export const contributorEmailSuffixes = async (config: QueryConfig) => {
   whereClauses.push(getTimeRangeWhereClause(config));
 
   const sql = `
+${getWithClause(config)}
 SELECT
   id,
   ${getTopLevelPlatform(config)},

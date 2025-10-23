@@ -11,7 +11,8 @@ import {
   getOutterOrderAndLimit,
   processQueryResult,
   getTopLevelPlatform,
-  getInnerGroupBy
+  getInnerGroupBy,
+  getWithClause
 } from './basic';
 import * as clickhouse from '../db/clickhouse';
 import { getPlatformData } from '../labelDataUtils';
@@ -32,6 +33,7 @@ export const getRepoOpenrank = async (config: QueryConfig) => {
   whereClause.push("type='Repo' AND legacy=0");
 
   const sql = `
+${getWithClause(config)}
 SELECT
   id,
   ${getTopLevelPlatform(config)},
@@ -64,6 +66,7 @@ export const getUserOpenrank = async (config: QueryConfig) => {
   whereClause.push("type='User' AND legacy=0");
 
   const sql = `
+${getWithClause(config)}
 SELECT
   id,
   ${getTopLevelPlatform(config)},
@@ -108,6 +111,7 @@ export const getRepoCommunityOpenrank = async (config: QueryConfig<RepoCommunity
   }
 
   const sql = `
+${getWithClause(config)}
 SELECT
   id,
   ${getTopLevelPlatform(config, true)},
@@ -198,6 +202,7 @@ export const getUserCommunityOpenrank = async (config: QueryConfig<UserCommunity
   }
 
   const sql = `
+${getWithClause(config)}
 SELECT
   id,
   ${getTopLevelPlatform(config)},
@@ -285,6 +290,7 @@ export const getRepoActivity = async (config: QueryConfig<RepoActivityOption>) =
   const developerDetail = config.options?.developerDetail;
 
   const sql = `
+${getWithClause(config)}
 SELECT
   id,
   ${getTopLevelPlatform(config)},
@@ -346,6 +352,7 @@ export const getUserActivity = async (config: QueryConfig<UserActivityOption>, w
   const repoDetail = config.options?.repoDetail;
 
   const sql = `
+${getWithClause(config)}
 SELECT
   id,
   ${getTopLevelPlatform(config)},
@@ -401,6 +408,7 @@ export const getAttention = async (config: QueryConfig) => {
   whereClauses.push(getTimeRangeWhereClause(config));
 
   const sql = `
+${getWithClause(config)}
 SELECT
   id,
   ${getTopLevelPlatform(config)},

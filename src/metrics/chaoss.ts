@@ -4,6 +4,7 @@ import {
   getGroupArrayInsertAtClause, getGroupTimeClause, getGroupIdClause,
   getInnerOrderAndLimit, getOutterOrderAndLimit,
   QueryConfig, TimeDurationOption, timeDurationConstants, processQueryResult, getTopLevelPlatform, getInnerGroupBy,
+  getWithClause,
 } from "./basic";
 import * as clickhouse from '../db/clickhouse';
 import { basicActivitySqlComponent } from "./indices";
@@ -17,6 +18,7 @@ export const chaossTechnicalFork = async (config: QueryConfig) => {
   whereClauses.push(getTimeRangeWhereClause(config));
 
   const sql = `
+${getWithClause(config)}
 SELECT
   id,
   ${getTopLevelPlatform(config)},
@@ -53,6 +55,7 @@ export const chaossCodeChangeCommits = async (config: QueryConfig<CodeChangeComm
   whereClauses.push(getTimeRangeWhereClause(config));
 
   const sql = `
+${getWithClause(config)}
 SELECT
   id,
   ${getTopLevelPlatform(config)},
@@ -88,6 +91,7 @@ export const chaossCodeChangeLines = async (config: QueryConfig<CodeChangeLinesO
   whereClauses.push(getTimeRangeWhereClause(config));
 
   const sql = `
+${getWithClause(config)}
 SELECT
   id,
   ${getTopLevelPlatform(config)},
@@ -133,6 +137,7 @@ export const chaossIssuesNew = async (config: QueryConfig) => {
   whereClauses.push(getTimeRangeWhereClause(config));
 
   const sql = `
+${getWithClause(config)}
 SELECT
   id,
   ${getTopLevelPlatform(config)},
@@ -167,6 +172,7 @@ export const chaossIssuesAndChangeRequestActive = async (config: QueryConfig) =>
   whereClauses.push(getTimeRangeWhereClause(config));
 
   const sql = `
+${getWithClause(config)}
 SELECT
   id,
   ${getTopLevelPlatform(config)},
@@ -198,6 +204,7 @@ export const chaossIssuesClosed = async (config: QueryConfig) => {
   whereClauses.push(getTimeRangeWhereClause(config));
 
   const sql = `
+${getWithClause(config)}
 SELECT
   id,
   ${getTopLevelPlatform(config)},
@@ -244,6 +251,7 @@ const chaossResolutionDuration = async (config: QueryConfig<ResolutionDurationOp
   const sortBy = filterEnumType(config.options?.sortBy, timeDurationConstants.sortByArray, 'avg');
 
   const sql = `
+${getWithClause(config)}
 SELECT
   id,
   ${getTopLevelPlatform(config)},
@@ -308,6 +316,7 @@ const chaossResponseTime = async (config: QueryConfig<TimeDurationOption>, type:
   const sortBy = filterEnumType(config.options?.sortBy, timeDurationConstants.sortByArray, 'avg');
 
   const sql = `
+${getWithClause(config)}
 SELECT
   id,
   ${getTopLevelPlatform(config)},
@@ -374,6 +383,7 @@ export const chaossAge = async (config: QueryConfig<TimeDurationOption>, type: '
   const sortBy = filterEnumType(config.options?.sortBy, timeDurationConstants.sortByArray, 'avg');
 
   const sql = `
+${getWithClause(config)}
 SELECT
   id,
   ${getTopLevelPlatform(config)},
@@ -436,6 +446,7 @@ export const chaossChangeRequestsAccepted = async (config: QueryConfig) => {
   whereClauses.push(getTimeRangeWhereClause(config));
 
   const sql = `
+${getWithClause(config)}
 SELECT
   id,
   ${getTopLevelPlatform(config)},
@@ -470,6 +481,7 @@ export const chaossChangeRequestsDeclined = async (config: QueryConfig) => {
   whereClauses.push(getTimeRangeWhereClause(config));
 
   const sql = `
+${getWithClause(config)}
 SELECT
   id,
   ${getTopLevelPlatform(config)},
@@ -516,6 +528,7 @@ export const chaossChangeRequestsDuration = async (config: QueryConfig<ChangeReq
   const sortBy = filterEnumType(config.options?.sortBy, timeDurationConstants.sortByArray, 'avg');
 
   const sql = `
+${getWithClause(config)}
 SELECT
   id,
   ${getTopLevelPlatform(config)},
@@ -568,6 +581,7 @@ export const chaossChangeRequestsAcceptanceRatio = async (config: QueryConfig) =
   if (repoWhereClause) whereClauses.push(repoWhereClause);
   whereClauses.push(getTimeRangeWhereClause(config));
   const sql = `
+${getWithClause(config)}
 SELECT
   id,
   ${getTopLevelPlatform(config)},
@@ -606,6 +620,7 @@ export const chaossChangeRequests = async (config: QueryConfig) => {
   whereClauses.push(getTimeRangeWhereClause(config));
 
   const sql = `
+${getWithClause(config)}
 SELECT
   id,
   ${getTopLevelPlatform(config)},
@@ -637,6 +652,7 @@ export const chaossChangeRequestReviews = async (config: QueryConfig) => {
   whereClauses.push(getTimeRangeWhereClause(config));
 
   const sql = `
+${getWithClause(config)}
 SELECT
   id,
   ${getTopLevelPlatform(config)},
@@ -685,6 +701,7 @@ export const chaossBusFactor = async (config: QueryConfig<BusFactorOptions>) => 
   whereClauses.push(getTimeRangeWhereClause(config));
 
   const sql = `
+${getWithClause(config)}
 SELECT
   id,
   ${getTopLevelPlatform(config)},
@@ -758,6 +775,7 @@ export const chaossNewContributors = async (config: QueryConfig<NewContributorsO
   const repoWhereClause = await getRepoWhereClause(config);
   if (repoWhereClause) whereClauses.push(repoWhereClause);
   const sql = `
+${getWithClause(config)}
   SELECT
     id,
     ${getTopLevelPlatform(config)},
@@ -840,6 +858,7 @@ export const chaossContributors = async (config: QueryConfig) => {
   whereClauses.push(getTimeRangeWhereClause(config));
 
   const sql = `
+${getWithClause(config)}
 SELECT
   id,
   ${getTopLevelPlatform(config)},
@@ -897,6 +916,7 @@ export const chaossInactiveContributors = async (config: QueryConfig<InactiveCon
   whereClauses.push(`created_at < ${endTimeClause}`);
 
   const sql = `
+${getWithClause(config)}
 SELECT
   id,
   ${getTopLevelPlatform(config)},
@@ -971,6 +991,7 @@ export const chaossActiveDatesAndTimes = async (config: QueryConfig<ActiveDatesA
   }
 
   const sql = `
+${getWithClause(config)}
 SELECT
   id,
   ${getTopLevelPlatform(config)},

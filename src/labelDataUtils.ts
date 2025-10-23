@@ -193,3 +193,87 @@ export function getPlatformData(typeOrIds: string[], injectLabelData?: any[]): C
   const arr = data.filter(i => typeOrIds.includes(i.type) || typeOrIds.includes(i.identifier));
   return mergePlatforms(...arr.map(item => item.platforms));
 }
+
+export interface OptionLabelItem {
+  withParamClause: string;
+  tableName: string;
+  whereClause: string;
+  whereClauseFunc: (params: { platformCol?: string, repoCol?: string, orgCol?: string, userCol?: string }) => string;
+};
+
+export const LabelUtil = {
+  // get a label item by id or type
+  get(idOrType: string): OptionLabelItem {
+    const tableName = 'label_' + idOrType.replaceAll(':', '_').replaceAll('/', '_');
+    return {
+      tableName,
+      withParamClause: `${tableName} AS (SELECT p.name AS platform, p.repos AS repos, p.orgs AS orgs, p.users AS users
+        FROM labels ARRAY JOIN platforms AS p WHERE id = '${idOrType}' OR type = '${idOrType}')`,
+      whereClause: `(
+        (platform, repo_id) IN (SELECT platform, arrayJoin(repos) FROM ${tableName}) OR
+        (platform, org_id) IN (SELECT platform, arrayJoin(orgs) FROM ${tableName}) OR
+        (platform, actor_id) IN (SELECT platform, arrayJoin(users) FROM ${tableName})
+      )`,
+      whereClauseFunc: (params: { platformCol?: string, repoCol?: string, orgCol?: string, userCol?: string }) => {
+        const platformCol = params.platformCol ?? 'platform';
+        const repoCol = params.repoCol ?? 'repo_id';
+        const orgCol = params.orgCol ?? 'org_id';
+        const userCol = params.userCol ?? 'actor_id';
+        return `(
+          (${platformCol}, ${repoCol}) IN (SELECT platform, arrayJoin(repos) FROM ${tableName}) OR
+          (${platformCol}, ${orgCol}) IN (SELECT platform, arrayJoin(orgs) FROM ${tableName}) OR
+          (${platformCol}, ${userCol}) IN (SELECT platform, arrayJoin(users) FROM ${tableName})
+        )`;
+      },
+    };
+  },
+
+  // union multiple label items
+  union(...labelItems: OptionLabelItem[]): OptionLabelItem {
+    return {
+      tableName: labelItems.map(l => l.tableName).join('_union_'),
+      withParamClause: `${labelItems.map(l => l.withParamClause).join(' , ')}`,
+      whereClause: `(${labelItems.map(l => l.whereClause).join(' OR ')})`,
+      whereClauseFunc: (params: { platformCol?: string, repoCol?: string, orgCol?: string, userCol?: string }) => {
+        return `(${labelItems.map(l => l.whereClauseFunc(params)).join(' OR ')})`;
+      },
+    };
+  },
+
+  // intersect multiple label items
+  intersect(...labelItems: OptionLabelItem[]): OptionLabelItem {
+    return {
+      tableName: labelItems.map(l => l.tableName).join('_intersect_'),
+      withParamClause: `${labelItems.map(l => l.withParamClause).join(' , ')}`,
+      whereClause: `(${labelItems.map(l => l.whereClause).join(' AND ')})`,
+      whereClauseFunc: (params: { platformCol?: string, repoCol?: string, orgCol?: string, userCol?: string }) => {
+        return `(${labelItems.map(l => l.whereClauseFunc(params)).join(' AND ')})`;
+      },
+    };
+  },
+
+  // difference between two label items
+  difference(item1: OptionLabelItem, item2: OptionLabelItem): OptionLabelItem {
+    return {
+      tableName: `${item1.tableName}_difference_${item2.tableName}`,
+      withParamClause: `${item1.withParamClause} , ${item2.withParamClause}`,
+      whereClause: `(${item1.whereClause} AND NOT ${item2.whereClause})`,
+      whereClauseFunc: (params: { platformCol?: string, repoCol?: string, orgCol?: string, userCol?: string }) => {
+        return `(${item1.whereClauseFunc(params)} AND NOT ${item2.whereClauseFunc(params)})`;
+      },
+    };
+  },
+
+  // not a label item
+  not(item: OptionLabelItem): OptionLabelItem {
+    return {
+      tableName: `not_${item.tableName}`,
+      withParamClause: `(${item.withParamClause})`,
+      whereClause: `(NOT ${item.whereClause})`,
+      whereClauseFunc: (params: { platformCol?: string, repoCol?: string, orgCol?: string, userCol?: string }) => {
+        return `(NOT ${item.whereClauseFunc(params)})`;
+      },
+    };
+  },
+
+}
