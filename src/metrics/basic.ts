@@ -1,10 +1,11 @@
 import { merge } from 'lodash';
 import { query } from '../db/clickhouse';
-import { getPlatformData, getLabelData, PlatformNames } from '../labelDataUtils';
+import { getLabelData, PlatformNames, OptionLabelItem, getPlatformData } from '../labelDataUtils';
 
 export interface QueryConfig<T = any> {
   labelUnion?: string[];
   labelIntersect?: string[];
+  label?: OptionLabelItem;
   idOrNames?: {
     platform: PlatformNames;
     repoIds?: number[];
@@ -100,6 +101,13 @@ export const forEveryYearByConfig = async (config: QueryConfig, func: (y: number
   }
 };
 
+export const getWithClause = (config: QueryConfig): string => {
+  if (config.label) {
+    return `WITH ${config.label.withParamClause}`;
+  }
+  return '';
+}
+
 // Repo
 export const getRepoWhereClause = async (config: QueryConfig): Promise<string | null> => {
   const repoWhereClauseArray: string[] = [];
@@ -151,6 +159,10 @@ export const getRepoWhereClause = async (config: QueryConfig): Promise<string | 
     }
   }
 
+  if (config.label) {
+    repoWhereClauseArray.push(config.label.whereClause);
+  }
+
   // where clause
   if (config.whereClause) {
     repoWhereClauseArray.push(config.whereClause);
@@ -198,6 +210,10 @@ export const getUserWhereClause = async (config: QueryConfig, idCol: string = 'a
     for (const p of data) {
       if (p.users.length > 0) userWhereClauseArray.push(`(${idCol} IN [${p.users.map(u => u.id).join(',')}] AND platform='${p.name}')`);
     }
+  }
+
+  if (config.label) {
+    userWhereClauseArray.push(config.label.whereClause);
   }
 
   // where clause
