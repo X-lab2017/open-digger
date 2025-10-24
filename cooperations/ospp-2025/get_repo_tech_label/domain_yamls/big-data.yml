@@ -1,0 +1,855 @@
+name: 大数据与数据工程
+type: Tech-12
+data:
+  platforms:
+  - name: GitHub
+    type: Code Hosting
+    repos:
+    - id: 7833168
+      name: elastic/kibana
+    - id: 60246359
+      name: ClickHouse/ClickHouse
+    - id: 99919302
+      name: apache/doris
+    - id: 33884891
+      name: apache/airflow
+    - id: 283046497
+      name: airbytehq/airbyte
+    - id: 402945349
+      name: StarRocks/starrocks
+    - id: 17165658
+      name: apache/spark
+    - id: 2211243
+      name: apache/kafka
+    - id: 131619646
+      name: dagster-io/dagster
+    - id: 275993885
+      name: appsmithorg/appsmith
+    - id: 166515022
+      name: trinodb/trino
+    - id: 358917318
+      name: apache/datafusion
+    - id: 5349565
+      name: prestodb/presto
+    - id: 75277003
+      name: thingsboard/thingsboard
+    - id: 138754790
+      name: duckdb/duckdb
+    - id: 19961085
+      name: apache/pinot
+    - id: 20587599
+      name: apache/flink
+    - id: 309512982
+      name: redpanda-data/redpanda
+    - id: 212382406
+      name: apache/ozone
+    - id: 453068084
+      name: risingwavelabs/risingwave
+    - id: 671825
+      name: Graylog2/graylog2-server
+    - id: 339993112
+      name: matrixorigin/matrixone
+    - id: 447060287
+      name: apache/paimon
+    - id: 172104891
+      name: MaterializeInc/materialize
+    - id: 334274317
+      name: opensearch-project/OpenSearch-Dashboards
+    - id: 647676122
+      name: TencentBlueKing/blueking-dbm
+    - id: 182849188
+      name: delta-io/delta
+    - id: 23418517
+      name: apache/hadoop
+    - id: 349372179
+      name: lightdash/lightdash
+    - id: 364003912
+      name: opensearch-project/documentation-website
+    - id: 169303946
+      name: mozilla/bigquery-etl
+    - id: 349172057
+      name: linkedin/venice
+    - id: 206444
+      name: apache/hive
+    - id: 540527604
+      name: TobikoData/sqlmesh
+    - id: 100982449
+      name: argoproj/argo-workflows
+    - id: 436466520
+      name: rilldata/rill
+    - id: 149026292
+      name: cube-js/cube
+    - id: 33258973
+      name: influxdata/telegraf
+    - id: 264043501
+      name: NVIDIA/spark-rapids
+    - id: 95784433
+      name: TouK/nussknacker
+    - id: 527483772
+      name: apecloud/kubeblocks
+    - id: 52080367
+      name: CUBRID/cubrid
+    - id: 9342529
+      name: crate/crate
+    - id: 203634431
+      name: flyteorg/flytekit
+    - id: 638951438
+      name: comet-ml/opik
+    - id: 53548867
+      name: dbt-labs/dbt-core
+    - id: 19257422
+      name: questdb/questdb
+    - id: 302827809
+      name: databendlabs/databend
+    - id: 173335706
+      name: apache/dolphinscheduler
+    - id: 347277349
+      name: tobymao/sqlglot
+    - id: 58194180
+      name: strimzi/strimzi-kafka-operator
+    - id: 436912897
+      name: apache/celeborn
+    - id: 574588439
+      name: ytsaurus/ytsaurus
+    - id: 149782046
+      name: apache/doris-website
+    - id: 761150311
+      name: Zipstack/unstract
+    - id: 331293626
+      name: refinedev/refine
+    - id: 197743848
+      name: rudderlabs/rudder-server
+    - id: 31006158
+      name: apache/ignite
+    - id: 663604762
+      name: aryn-ai/sycamore
+    - id: 541798154
+      name: Unstructured-IO/unstructured
+    - id: 21827146
+      name: seaweedfs/seaweedfs
+    - id: 104670986
+      name: JohnSnowLabs/spark-nlp
+    - id: 50205233
+      name: debezium/debezium
+    - id: 210579021
+      name: apache/hop
+    - id: 297302063
+      name: memgraph/memgraph
+    - id: 743651128
+      name: apache/datafusion-comet
+    - id: 513726216
+      name: apache/amoro
+    - id: 660776503
+      name: paradedb/paradedb
+    - id: 282994686
+      name: apache/flink-cdc
+    - id: 21193524
+      name: apache/calcite
+    - id: 384111310
+      name: apache/incubator-devlake
+    - id: 13421878
+      name: pentaho/pentaho-kettle
+    - id: 493014338
+      name: mage-ai/mage-ai
+    - id: 679601811
+      name: AutoMQ/automq
+    - id: 375260798
+      name: DataLinkDC/dinky
+    - id: 820144741
+      name: iterative/datachain
+    - id: 426848256
+      name: quadratichq/quadratic
+    - id: 371239231
+      name: evidence-dev/evidence
+    - id: 27452807
+      name: broadinstitute/gatk
+    - id: 783968898
+      name: IBM/data-prep-kit
+    - id: 628390075
+      name: PeerDB-io/peerdb
+    - id: 16587283
+      name: dmlc/xgboost
+    - id: 577757880
+      name: astronomer/astronomer-cosmos
+    - id: 447289206
+      name: NVIDIA/spark-rapids-jni
+    - id: 159866229
+      name: build-trust/ockam
+    - id: 39382076
+      name: geosolutions-it/MapStore2
+    - id: 80646423
+      name: catalyst-cooperative/pudl
+    - id: 650344440
+      name: openmeterio/openmeter
+    - id: 145848899
+      name: holoviz/panel
+    - id: 211644266
+      name: redpanda-data/console
+    - id: 114619105
+      name: apache/kyuubi
+    - id: 473134112
+      name: kroxylicious/kroxylicious
+    - id: 54435102
+      name: redpanda-data/connect
+    - id: 288509390
+      name: AltimateAI/vscode-dbt-power-user
+    - id: 392768635
+      name: faros-ai/airbyte-connectors
+    - id: 903304373
+      name: StructuredLabs/preswald
+    - id: 523049643
+      name: TEAMSchools/teamster
+    - id: 493549968
+      name: graphql-hive/console
+    - id: 346720555
+      name: kyma-project/busola
+    - id: 715879605
+      name: reearth/reearth-flow
+    - id: 561401129
+      name: NVIDIA/spark-rapids-tools
+    - id: 531473036
+      name: JohnSnowLabs/johnsnowlabs
+    - id: 746689243
+      name: kafbat/kafka-ui
+    - id: 644742603
+      name: apache/cloudberry
+    - id: 664873197
+      name: opensearch-project/opensearch-spark
+    - id: 428249739
+      name: mui/toolpad
+    - id: 427413105
+      name: tuva-health/tuva
+    - id: 152362178
+      name: lablup/backend.ai-webui
+    - id: 342259394
+      name: svix/svix-webhooks
+    - id: 27790789
+      name: confluentinc/schema-registry
+    - id: 401275197
+      name: elementary-data/elementary
+    - id: 41960013
+      name: metabrainz/listenbrainz-server
+    - id: 581145740
+      name: ByConity/ByConity
+    - id: 33702544
+      name: plotly/dash
+    - id: 411456638
+      name: bcgov/tno
+    - id: 29259281
+      name: filodb/FiloDB
+    - id: 187924780
+      name: snowflakedb/snowflake-kafka-connector
+    - id: 92834468
+      name: Pometry/Raphtory
+    - id: 313853293
+      name: cloudquery/cloudquery
+    - id: 17371412
+      name: h2oai/h2o-3
+    - id: 419004753
+      name: databricks/dbt-databricks
+    - id: 572911222
+      name: airtai/faststream
+    - id: 167388333
+      name: grafana/grafana-operator
+    - id: 722588450
+      name: prefeitura-rio/pipelines_rj_smtr
+    - id: 127888390
+      name: confluentinc/cli
+    - id: 541169728
+      name: awslabs/data-on-eks
+    - id: 201455508
+      name: pingcap/tiflow
+    - id: 116165188
+      name: kubeflow/spark-operator
+    - id: 14146757
+      name: syslog-ng/syslog-ng
+    - id: 567454609
+      name: quixio/quix-streams
+    - id: 22542759
+      name: cdapio/cdap
+    - id: 843021146
+      name: confluentinc/vscode
+    - id: 120338179
+      name: Security-Onion-Solutions/securityonion
+    - id: 65394827
+      name: fedspendingtransparency/usaspending-api
+    - id: 5870069
+      name: confluentinc/librdkafka
+    - id: 585157543
+      name: grafana/scenes
+    - id: 504360264
+      name: apache/incubator-uniffle
+    - id: 117595674
+      name: astronomer/astronomer
+    - id: 72740687
+      name: gchq/stroom
+    - id: 372536760
+      name: oceanbase/oceanbase
+    - id: 364354276
+      name: newrelic/newrelic-quickstarts
+    - id: 701239058
+      name: DataRecce/recce
+    - id: 380944275
+      name: kwai/blaze
+    - id: 2442457
+      name: apache/ambari
+    - id: 682760329
+      name: nucleuscloud/neosync
+    - id: 119811010
+      name: tabler/tabler
+    - id: 13926404
+      name: getredash/redash
+    - id: 187523334
+      name: kamu-data/kamu-cli
+    - id: 820192032
+      name: sequinstream/sequin
+    - id: 211165922
+      name: dapr/components-contrib
+    - id: 697495192
+      name: observablehq/framework
+    - id: 52980493
+      name: spring-projects/spring-kafka
+    - id: 674088481
+      name: robustmq/robustmq
+    - id: 240488592
+      name: ozontech/file.d
+    - id: 119743330
+      name: confluentinc/cp-ansible
+    - id: 707752626
+      name: Multiwoven/multiwoven
+    - id: 304285216
+      name: slingdata-io/sling-cli
+    - id: 364565857
+      name: fkie-cad/Logprep
+    - id: 327982386
+      name: aws-samples/aws-cudos-framework-deployment
+    - id: 580867522
+      name: opensearch-project/dashboards-observability
+    - id: 254450741
+      name: projectnessie/nessie
+    - id: 69400326
+      name: confluentinc/ksql
+    - id: 145453331
+      name: JohnSnowLabs/spark-nlp-workshop
+    - id: 309506416
+      name: j-a-n/lovelace-wallpanel
+    - id: 457636580
+      name: apache/flink-kubernetes-operator
+    - id: 164508278
+      name: Aiven-Open/karapace
+    - id: 172615836
+      name: aws/aws-sdk-pandas
+    - id: 10458362
+      name: rsyslog/rsyslog
+    - id: 93576430
+      name: scality/Zenko
+    - id: 685641731
+      name: hiveboardgame/hive
+    - id: 22305416
+      name: apache/ranger
+    - id: 656227652
+      name: CodePhiliaX/Chat2DB
+    - id: 93381875
+      name: microsoft/SynapseML
+    - id: 163955174
+      name: springwolf/springwolf-core
+    - id: 783968898
+      name: data-prep-kit/data-prep-kit
+    - id: 120663559
+      name: astronomer/astro-cli
+    - id: 527612250
+      name: coroot/coroot
+    - id: 223420284
+      name: moj-analytical-services/splink
+    - id: 26417283
+      name: gridstack/gridstack.js
+    - id: 147217097
+      name: dataform-co/dataform
+    - id: 359419233
+      name: kubeshark/kubeshark
+    - id: 302827809
+      name: datafuselabs/databend
+    - id: 399775320
+      name: zinggAI/zingg
+    - id: 797188605
+      name: HemeraProtocol/hemera-indexer
+    - id: 436039945
+      name: aklivity/zilla
+    - id: 808268486
+      name: warpstreamlabs/bento
+    - id: 854628278
+      name: briefercloud/briefer
+    - id: 437073864
+      name: scribe-org/Scribe-Data
+    - id: 605682921
+      name: DAGWorks-Inc/hamilton
+    - id: 428837257
+      name: sul-dlss/libsys-airflow
+    - id: 678214856
+      name: timeplus-io/proton
+    - id: 1223855
+      name: BrighterCommand/Brighter
+    - id: 715507877
+      name: confluentinc/confluent-kafka-javascript
+    - id: 733432432
+      name: VladaZakharova/airflow
+    - id: 409655014
+      name: Qbeast-io/qbeast-spark
+    - id: 172799788
+      name: GoogleCloudDataproc/spark-bigquery-connector
+    - id: 10365263
+      name: pentaho/pentaho-hadoop-shims
+    - id: 644742603
+      name: cloudberrydb/cloudberrydb
+    - id: 7276954
+      name: Alluxio/alluxio
+    - id: 35662043
+      name: allegro/hermes
+    - id: 250119558
+      name: openshift/sippy
+    - id: 683347556
+      name: penberg/limbo
+    - id: 39474293
+      name: terascope/teraslice
+    - id: 283410102
+      name: sogou/workflow
+    - id: 201033534
+      name: smart-data-lake/smart-data-lake
+    - id: 356069432
+      name: delta-io/delta-sharing
+    - id: 32848140
+      name: apache/zeppelin
+    - id: 321458274
+      name: sodadata/soda-core
+    - id: 613212976
+      name: goto/optimus
+    - id: 407764022
+      name: starlake-ai/starlake
+    - id: 531416506
+      name: Aiven-Open/klaw
+    - id: 141376301
+      name: apache/incubator-hugegraph
+    - id: 19684359
+      name: GoogleCloudDataproc/hadoop-connectors
+    - id: 370006659
+      name: flow-php/flow
+    - id: 409646191
+      name: NVIDIA/spark-rapids-ml
+    - id: 4514536
+      name: pentaho/big-data-plugin
+    - id: 177659629
+      name: twmb/franz-go
+    - id: 621929252
+      name: ArroyoSystems/arroyo
+    - id: 364344493
+      name: pytorch/torchx
+    - id: 72554578
+      name: confluentinc/confluent-kafka-dotnet
+    - id: 334164334
+      name: ClickHouse/dbt-clickhouse
+    - id: 446826327
+      name: ConduitIO/conduit
+    - id: 47973088
+      name: gchq/Gaffer
+    - id: 247921103
+      name: Aiven-Open/cloud-storage-connectors-for-apache-kafka
+    - id: 35144191
+      name: apache/orc
+    - id: 56217288
+      name: confluentinc/confluent-kafka-python
+    - id: 772214630
+      name: VolkovLabs/business-table
+    - id: 694451185
+      name: opensearch-project/dashboards-assistant
+    - id: 305766157
+      name: Ferlab-Ste-Justine/clin-pipelines-dags
+    - id: 158467856
+      name: astronomer/dag-factory
+    - id: 76445704
+      name: dotnetcore/CAP
+    - id: 515188090
+      name: otterize/intents-operator
+    - id: 518501680
+      name: apache/flink-connector-aws
+    - id: 330425761
+      name: turbot/steampipe-plugin-aws
+    - id: 727136735
+      name: certeu/morio
+    - id: 140577760
+      name: minershive/hive-pooltemplates
+    - id: 774759366
+      name: amphi-ai/amphi-etl
+    - id: 100402355
+      name: linkedin/cruise-control
+    - id: 37555321
+      name: confluentinc/kafka
+    - id: 148059143
+      name: tchiotludo/akhq
+    - id: 510750851
+      name: ScalefreeCOM/datavault4dbt
+    - id: 457633995
+      name: jasonacox/Powerwall-Dashboard
+    - id: 493549968
+      name: kamilkisiela/graphql-hive
+    - id: 139424909
+      name: DTStack/dt-sql-parser
+    - id: 315620558
+      name: thingsboard/tbmq
+    - id: 705442135
+      name: turbot/powerpipe
+    - id: 826111692
+      name: ucbepic/docetl
+    - id: 798881004
+      name: app-generator/app-generator
+    - id: 173121216
+      name: zio/zio-kafka
+    - id: 404539018
+      name: opensearch-project/opensearch-dashboards-functional-test
+    - id: 59224410
+      name: zarusz/SlimMessageBus
+    - id: 681989124
+      name: duckdb/duckdb-r
+    - id: 553796848
+      name: prefeitura-rio/queries-rj-sms
+    - id: 193060499
+      name: pixelsdb/pixels
+    - id: 817002672
+      name: IO-Design-Team/hive_ce
+    - id: 11206255
+      name: IBM/sarama
+    - id: 472249049
+      name: Altinity/clickhouse-sink-connector
+    - id: 285892219
+      name: google/fhir-data-pipes
+    - id: 298630871
+      name: duckdb/dbt-duckdb
+    - id: 442405131
+      name: lakesoul-io/LakeSoul
+    - id: 578974845
+      name: bakdata/kpops
+    - id: 540480040
+      name: apache/incubator-graphar
+    - id: 878051005
+      name: ministryofjustice/analytical-platform-airflow
+    - id: 648209582
+      name: ssagroup/ui-kit
+    - id: 541873766
+      name: dromara/easy-query
+    - id: 645018084
+      name: responsivedev/responsive-pub
+    - id: 596226119
+      name: NASA-IMPACT/veda-data-airflow
+    - id: 605189726
+      name: FgForrest/evitaDB
+    - id: 63196359
+      name: confluentinc/confluent-kafka-go
+    - id: 363909232
+      name: Axual/ksml
+    - id: 562368887
+      name: artie-labs/transfer
+    - id: 614426997
+      name: isxcode/spark-yun
+    - id: 433204426
+      name: profcomff/dwh-pipelines
+    - id: 756878861
+      name: PicnicSupermarket/dbt-score
+    - id: 447609265
+      name: instill-ai/instill-core
+    - id: 322673413
+      name: ajthinking/data-story
+    - id: 71823870
+      name: prometheus-operator/kube-prometheus
+    - id: 297470054
+      name: mozilla/docker-etl
+    - id: 411451561
+      name: dbt-labs/terraform-provider-dbtcloud
+    - id: 777190910
+      name: compolabs/spark-frontend
+    - id: 115119636
+      name: strimzi/strimzi.github.io
+    - id: 711963222
+      name: bzkf/obds-to-fhir
+    - id: 588032914
+      name: KouShenhai/KCloud-Platform-IoT
+    - id: 47927525
+      name: pmacct/pmacct
+    - id: 512901698
+      name: ClickHouse/ClickBench
+    - id: 246417781
+      name: shotover/shotover-proxy
+    - id: 14734876
+      name: deeplearning4j/deeplearning4j
+    - id: 508330030
+      name: akvorado/akvorado
+    - id: 153155267
+      name: smallrye/smallrye-reactive-messaging
+    - id: 106460885
+      name: dbt-labs/hub.getdbt.com
+    - id: 463727703
+      name: GoogleCloudDataproc/flink-bigquery-connector
+    - id: 133923497
+      name: grafana/grafana-image-renderer
+    - id: 39947871
+      name: karafka/karafka
+    - id: 74359442
+      name: Tencent/APIJSON
+    - id: 288965634
+      name: stellar/stellar-etl-airflow
+    - id: 33331247
+      name: cirosantilli/china-dictatorship
+    - id: 849383523
+      name: minusxai/minusx
+    - id: 9290699
+      name: apache/tez
+    - id: 458226256
+      name: apache/doris-flink-connector
+    - id: 170433254
+      name: podlove/radiator
+    - id: 58476639
+      name: mozilla/telemetry-airflow
+    - id: 98013453
+      name: apache/atlas
+    - id: 419661684
+      name: DataTalksClub/data-engineering-zoomcamp
+    - id: 708535366
+      name: koralium/flowtide
+    - id: 413811638
+      name: IndustryFusion/DigitalTwin
+    - id: 197400272
+      name: wgzhao/Addax
+    - id: 569891290
+      name: dfpc-coe/CloudTAK
+    - id: 477096938
+      name: datavane/datavines
+    - id: 277951507
+      name: slackhq/astra
+    - id: 636041665
+      name: flink-extended/flink-scala-api
+    - id: 345611043
+      name: Aiven-Open/tiered-storage-for-apache-kafka
+    - id: 26873147
+      name: confluentinc/kafka-rest
+    - id: 846881952
+      name: ecency/vision-next
+    - id: 779091052
+      name: apache/spark-kubernetes-operator
+    - id: 595979674
+      name: ABFSDriver/AbfsHadoop
+    - id: 768043868
+      name: dorianjagusch/ft_transcendence
+    - id: 465637205
+      name: datarobot/airflow-provider-datarobot
+    - id: 387724608
+      name: vmware/versatile-data-kit
+    - id: 234373422
+      name: swimos/swim-rust
+    - id: 164198539
+      name: apache/airflow-site
+    - id: 136154026
+      name: evolution-gaming/kafka-journal
+    - id: 787032408
+      name: the-codegen-project/cli
+    - id: 572911222
+      name: ag2ai/faststream
+    - id: 586785918
+      name: carlopi/duckdb
+    - id: 608695746
+      name: openmrs/openmrs-module-mamba-core
+    - id: 387484203
+      name: coderxio/sagerx
+    - id: 130843750
+      name: kubernetes-monitoring/kubernetes-mixin
+    - id: 145594246
+      name: blockchain-etl/ethereum-etl-airflow
+    - id: 790902344
+      name: databrickslabs/dqx
+    - id: 540168190
+      name: dremio/dbt-dremio
+    - id: 156768326
+      name: ThreeDotsLabs/watermill
+    - id: 556553471
+      name: JSv4/OpenContracts
+    - id: 569293325
+      name: apache/flink-connector-kafka
+    - id: 761467679
+      name: CDPVD/core.dashboards_store
+    - id: 168736372
+      name: opensearch-project/security-dashboards-plugin
+    - id: 832532742
+      name: jojaegu2/Apache_Airflow_Book
+    - id: 409946519
+      name: openshift-knative/eventing-kafka-broker
+    - id: 374544800
+      name: duckdb/duckdb-rs
+    - id: 354899090
+      name: opensearch-project/index-management-dashboards-plugin
+    - id: 50067430
+      name: graphframes/graphframes
+    - id: 658540732
+      name: shannonhochkins/ha-component-kit
+    - id: 493426138
+      name: tuva-health/docs
+    - id: 481197057
+      name: canonical/kafka-operator
+    - id: 436393487
+      name: Sage-Bionetworks/agora-data-tools
+    - id: 567313082
+      name: propeldata/ui-kit
+    - id: 843022211
+      name: confluentinc/ide-sidecar
+    - id: 383374342
+      name: thingsboard/flutter_thingsboard_pe_app
+    - id: 657354540
+      name: ApiLogicServer/ApiLogicServer-src
+    - id: 300252678
+      name: lowdefy/lowdefy
+    - id: 354896809
+      name: opensearch-project/alerting-dashboards-plugin
+    - id: 368257515
+      name: duckdb/duckdb-wasm
+    - id: 478333436
+      name: catalyst/moodle-tool_dataflows
+    - id: 140883594
+      name: ecency/ecency-mobile
+    - id: 674112959
+      name: aws-samples/amazon-managed-service-for-apache-flink-examples
+    - id: 432838863
+      name: getindata/flink-http-connector
+    - id: 205167638
+      name: chartbrew/chartbrew
+    - id: 45992602
+      name: mhcomm/pypeman
+    - id: 606433492
+      name: chdb-io/chdb
+    - id: 446093093
+      name: elementary-data/dbt-data-reliability
+    - id: 504494078
+      name: AbsaOSS/pramen
+    - id: 311956260
+      name: morph-kgc/morph-kgc
+    - id: 114324402
+      name: cognitedata/cdp-spark-datasource
+    - id: 250869627
+      name: grafana/grizzly
+    - id: 449402772
+      name: oracle-quickstart/oci-kubernetes-monitoring
+    - id: 639753221
+      name: awslabs/cid-framework
+    - id: 806015479
+      name: spring-rs/spring-rs
+    - id: 164392211
+      name: dflib/dflib
+    - id: 246343828
+      name: atoti/atoti
+    - id: 5683653
+      name: apache/drill
+    - id: 629656845
+      name: linkedin/Hoptimator
+    - id: 739131815
+      name: OHDSI/dbt-synthea
+    - id: 330405184
+      name: turbot/steampipe
+    - id: 35755560
+      name: apache/flink-web
+    - id: 665115793
+      name: neo4j/neo4j-kafka-connector
+    - id: 97950116
+      name: sky-uk/kafka-message-scheduler
+    - id: 355031433
+      name: netsampler/goflow2
+    - id: 533483360
+      name: AmityCo/Amity-Social-UIKit-Flutter-Opensource
+    - id: 159393955
+      name: TPC-Council/HammerDB
+    - id: 445691314
+      name: Teradata/dbt-teradata
+    - id: 41291958
+      name: hbz/lobid-resources
+    - id: 782661155
+      name: prestodb/pbench
+    - id: 74387321
+      name: confluentinc/kafka-connect-storage-cloud
+    - id: 858162518
+      name: dhdaines/playa
+    - id: 438858689
+      name: RESOStandards/reso-certification-utils
+    - id: 630598259
+      name: marklogic/marklogic-spark-connector
+    - id: 42290369
+      name: openaire/iis
+    - id: 494107715
+      name: apache/datafusion-ballista
+    - id: 254207433
+      name: confluentinc/jmx-monitoring-stacks
+    - id: 561546737
+      name: edanalytics/edu_edfi_airflow
+    - id: 795744160
+      name: jusylopes/flutter_fiveflix
+    - id: 715536935
+      name: superlinked/superlinked
+    - id: 755145619
+      name: conduktor/ctl
+    - id: 658996468
+      name: crate/cratedb-toolkit
+    - id: 165239636
+      name: sogis/gretl
+    - id: 453103811
+      name: communitiesuk/pkg_gov_uk_dashboards
+    - id: 798430703
+      name: paradedb/pg_analytics
+    - id: 73781385
+      name: orchidsoftware/platform
+    - id: 172465643
+      name: astrolabsoftware/fink-broker
+    - id: 862592884
+      name: Embucket/embucket
+    - id: 642397039
+      name: Sciance-Inc/core.dashboards_store
+    - id: 394337539
+      name: NVIDIA/spark-rapids-examples
+    - id: 730703030
+      name: IDoneShaveIt/jaffle-shop-goes-online
+    - id: 8483862
+      name: metafacture/metafacture-core
+    - id: 360942014
+      name: thingsboard/flutter_thingsboard_app
+    - id: 814707540
+      name: sul-dlss/rialto-airflow
+    - id: 357302171
+      name: esnet/gdg
+    - id: 744439308
+      name: mahendrapaipuri/grafana-dashboard-reporter-app
+    - id: 296969993
+      name: icanbwell/SparkPipelineFramework
+    - id: 743635938
+      name: luno/workflow
+    - id: 38119552
+      name: arquivo/pwa-technologies
+    - id: 156934209
+      name: Consdata/kouncil
+    - id: 406370416
+      name: spotinst/bigdata-charts
+    - id: 441725814
+      name: ydf0509/funboost
+    - id: 232286451
+      name: logicalclocks/feature-store-api
+    - id: 213897239
+      name: JugruGroup/guess-game
+    - id: 5542805
+      name: mumrah/kafka
+    - id: 561536499
+      name: edanalytics/edu_edfi_source
+    - id: 258625472
+      name: oracle/okafka
+    - id: 410144084
+      name: z3z1ma/dbt-osmosis
+    - id: 819407531
+      name: amsdal/amsdal-glue
+    - id: 862255947
+      name: chainbase-labs/manuscript-core
+    - id: 423942690
+      name: databrickslabs/mosaic
+    - id: 697801211
+      name: TaiJuWu/kafka
+    - id: 396570683
+      name: mateusjunges/laravel-kafka

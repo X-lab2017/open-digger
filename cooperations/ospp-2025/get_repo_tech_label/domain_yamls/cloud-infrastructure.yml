@@ -1,0 +1,4085 @@
+name: 云基础设施
+type: Tech-11
+data:
+  platforms:
+  - name: GitHub
+    type: Code Hosting
+    repos:
+    - id: 20580498
+      name: kubernetes/kubernetes
+    - id: 2310495
+      name: ceph/ceph
+    - id: 48109239
+      name: cilium/cilium
+    - id: 402945349
+      name: StarRocks/starrocks
+    - id: 31558937
+      name: gravitational/teleport
+    - id: 236095576
+      name: backstage/backstage
+    - id: 54298946
+      name: camunda/camunda
+    - id: 139914932
+      name: quarkusio/quarkus
+    - id: 93444615
+      name: hashicorp/terraform-provider-aws
+    - id: 51478266
+      name: kubernetes/website
+    - id: 105944401
+      name: yugabyte/yugabyte-db
+    - id: 120896210
+      name: argoproj/argo-cd
+    - id: 93446042
+      name: hashicorp/terraform-provider-azurerm
+    - id: 114834469
+      name: GoogleCloudPlatform/magic-modules
+    - id: 215783734
+      name: deckhouse/deckhouse
+    - id: 74175805
+      name: istio/istio
+    - id: 129717717
+      name: grafana/loki
+    - id: 52300938
+      name: bitnami/charts
+    - id: 26337322
+      name: rancher/rancher
+    - id: 434017296
+      name: stackrox/stackrox
+    - id: 332880689
+      name: coollabsio/coolify
+    - id: 157936592
+      name: bcgov/entity
+    - id: 75277003
+      name: thingsboard/thingsboard
+    - id: 440752086
+      name: coder/coder
+    - id: 352933140
+      name: ToolJet/ToolJet
+    - id: 309512982
+      name: redpanda-data/redpanda
+    - id: 52281283
+      name: mastodon/mastodon
+    - id: 150954997
+      name: VictoriaMetrics/VictoriaMetrics
+    - id: 126852331
+      name: 1024pix/pix
+    - id: 230885748
+      name: goauthentik/authentik
+    - id: 9759448
+      name: apache/cloudstack
+    - id: 157554479
+      name: meshery/meshery
+    - id: 212382406
+      name: apache/ozone
+    - id: 109145553
+      name: containers/podman
+    - id: 515647260
+      name: 1Panel-dev/1Panel
+    - id: 50049789
+      name: youtube/cobalt
+    - id: 93163073
+      name: dependabot/dependabot-core
+    - id: 75505125
+      name: abpframework/abp
+    - id: 568098118
+      name: makeplane/plane
+    - id: 480573177
+      name: envoyproxy/gateway
+    - id: 202291859
+      name: chatwoot/chatwoot
+    - id: 17728164
+      name: hashicorp/terraform
+    - id: 239001792
+      name: Azure/AgentBaker
+    - id: 359745886
+      name: ministryofjustice/modernisation-platform-environments
+    - id: 811288631
+      name: kubesre/docker-registry-mirrors
+    - id: 72561765
+      name: sapcc/helm-charts
+    - id: 130000551
+      name: hackforla/website
+    - id: 649170660
+      name: Mintplex-Labs/anything-llm
+    - id: 222824662
+      name: dagger/dagger
+    - id: 57912964
+      name: kubernetes/enhancements
+    - id: 26783295
+      name: Kong/kong
+    - id: 459870310
+      name: kubernetes-sigs/kueue
+    - id: 72477752
+      name: pulumi/pulumi
+    - id: 63882194
+      name: projectcalico/calico
+    - id: 278480393
+      name: aws/karpenter-provider-aws
+    - id: 7691631
+      name: moby/moby
+    - id: 881925790
+      name: community-scripts/ProxmoxVE
+    - id: 113404957
+      name: kata-containers/kata-containers
+    - id: 448599559
+      name: deepflowio/deepflow
+    - id: 29933948
+      name: fluent/fluent-bit
+    - id: 468311851
+      name: cloudnative-pg/cloudnative-pg
+    - id: 46755185
+      name: bitwarden/server
+    - id: 912991838
+      name: rairprotocol/dev-dapp-season1
+    - id: 279592699
+      name: harvester/harvester
+    - id: 205706595
+      name: mlrun/mlrun
+    - id: 87990209
+      name: kubernetes/autoscaler
+    - id: 13655949
+      name: docker-library/official-images
+    - id: 198819992
+      name: rancher/dashboard
+    - id: 190729906
+      name: Budibase/budibase
+    - id: 93446075
+      name: hashicorp/terraform-provider-google
+    - id: 11008207
+      name: vitessio/vitess
+    - id: 169108858
+      name: kyverno/kyverno
+    - id: 311639195
+      name: karmada-io/karmada
+    - id: 100982449
+      name: argoproj/argo-workflows
+    - id: 309721058
+      name: JanssenProject/jans
+    - id: 788847937
+      name: Dokploy/dokploy
+    - id: 117377862
+      name: gardener/gardener
+    - id: 109451092
+      name: siderolabs/talos
+    - id: 180096009
+      name: GoogleCloudPlatform/k8s-config-connector
+    - id: 20445947
+      name: juju/juju
+    - id: 10744183
+      name: netdata/netdata
+    - id: 240583093
+      name: buildbuddy-io/buildbuddy
+    - id: 302922505
+      name: devtron-labs/devtron
+    - id: 56353740
+      name: kubernetes/minikube
+    - id: 36487440
+      name: gravitee-io/gravitee-api-management
+    - id: 43723161
+      name: helm/helm
+    - id: 31028375
+      name: DefectDojo/django-DefectDojo
+    - id: 66474729
+      name: prowler-cloud/prowler
+    - id: 180190854
+      name: appwrite/appwrite
+    - id: 137451403
+      name: alibaba/nacos
+    - id: 217420145
+      name: antrea-io/antrea
+    - id: 594155488
+      name: Stirling-Tools/Stirling-PDF
+    - id: 527483772
+      name: apecloud/kubeblocks
+    - id: 50613991
+      name: goharbor/harbor
+    - id: 46089560
+      name: containerd/containerd
+    - id: 42408804
+      name: traefik/traefik
+    - id: 216628419
+      name: flyteorg/flyte
+    - id: 27729907
+      name: grpc/grpc-go
+    - id: 206317
+      name: apache/camel
+    - id: 382496361
+      name: louislam/uptime-kuma
+    - id: 108296269
+      name: Azure/AKS
+    - id: 21484781
+      name: jumpserver/jumpserver
+    - id: 2045207
+      name: jetty/jetty.project
+    - id: 11225014
+      name: etcd-io/etcd
+    - id: 57333709
+      name: kubernetes/test-infra
+    - id: 53971519
+      name: Azure/azure-container-networking
+    - id: 224386599
+      name: bridgecrewio/checkov
+    - id: 62921553
+      name: rook/rook
+    - id: 253846879
+      name: determined-ai/determined
+    - id: 7209075
+      name: pantsbuild/pants
+    - id: 88298561
+      name: longhorn/longhorn
+    - id: 180481986
+      name: apache/apisix
+    - id: 59435364
+      name: outline/outline
+    - id: 140466175
+      name: huaweicloud/terraform-provider-huaweicloud
+    - id: 337513916
+      name: open-condo-software/condo
+    - id: 286108332
+      name: prometheus-community/helm-charts
+    - id: 177839194
+      name: microsoft/vscode-remote-release
+    - id: 99143276
+      name: vmware-tanzu/velero
+    - id: 93446113
+      name: cloudflare/terraform-provider-cloudflare
+    - id: 514062293
+      name: akuity/kargo
+    - id: 175592968
+      name: volcano-sh/volcano
+    - id: 308444913
+      name: ray-project/kuberay
+    - id: 313628863
+      name: external-secrets/external-secrets
+    - id: 22442668
+      name: openshift/origin
+    - id: 72891330
+      name: kubernetes/ingress-nginx
+    - id: 43613404
+      name: kubernetes-sigs/kubespray
+    - id: 59522149
+      name: gruntwork-io/terragrunt
+    - id: 135516270
+      name: k3s-io/k3s
+    - id: 146285827
+      name: helidon-io/helidon
+    - id: 26192117
+      name: canonical/lxd
+    - id: 29261473
+      name: minio/minio
+    - id: 27729926
+      name: grpc/grpc-java
+    - id: 58194180
+      name: strimzi/strimzi-kafka-operator
+    - id: 473137633
+      name: cilium/tetragon
+    - id: 476381845
+      name: bitnami/containers
+    - id: 549857084
+      name: kubernetes-sigs/karpenter
+    - id: 240289534
+      name: databricks/terraform-provider-databricks
+    - id: 673010778
+      name: roboflow/inference
+    - id: 64405875
+      name: docker/for-win
+    - id: 669486760
+      name: lxc/incus
+    - id: 9052236
+      name: nextflow-io/nextflow
+    - id: 615869301
+      name: mudler/LocalAI
+    - id: 82577089
+      name: TykTechnologies/tyk-docs
+    - id: 94801963
+      name: IBM-Cloud/terraform-provider-ibm
+    - id: 15045751
+      name: docker/compose
+    - id: 202890778
+      name: chakra-ui/chakra-ui
+    - id: 192632000
+      name: dapr/dapr
+    - id: 181724380
+      name: inspektor-gadget/inspektor-gadget
+    - id: 45727810
+      name: DaoCloud/DaoCloud-docs
+    - id: 378310716
+      name: logto-io/logto
+    - id: 114938943
+      name: NginxProxyManager/nginx-proxy-manager
+    - id: 2046192
+      name: openSUSE/open-build-service
+    - id: 438803890
+      name: LizardByte/Sunshine
+    - id: 184825074
+      name: GoogleCloudPlatform/cloud-foundation-fabric
+    - id: 4710920
+      name: apache/dubbo
+    - id: 133100880
+      name: kubeflow/pipelines
+    - id: 76064827
+      name: mailcow/mailcow-dockerized
+    - id: 239642570
+      name: stolostron/rhacm-docs
+    - id: 308627472
+      name: elastisys/compliantkubernetes-apps
+    - id: 150458335
+      name: openvinotoolkit/model_server
+    - id: 70124554
+      name: lablup/backend.ai
+    - id: 224908244
+      name: WasmEdge/WasmEdge
+    - id: 170411418
+      name: kedacore/keda
+    - id: 80669528
+      name: ddev/ddev
+    - id: 590158156
+      name: ubicloud/ubicloud
+    - id: 379547795
+      name: k8s-operatorhub/community-operators
+    - id: 178075572
+      name: kserve/kserve
+    - id: 21827146
+      name: seaweedfs/seaweedfs
+    - id: 81497153
+      name: kubernetes-sigs/external-dns
+    - id: 59239347
+      name: portainer/portainer
+    - id: 665383420
+      name: kmesh-net/kmesh
+    - id: 181939935
+      name: kubernetes-sigs/vsphere-csi-driver
+    - id: 114128199
+      name: canonical/multipass
+    - id: 330041749
+      name: Cray-HPE/docs-csm
+    - id: 80945428
+      name: nestjs/nest
+    - id: 93446053
+      name: DataDog/terraform-provider-datadog
+    - id: 285297257
+      name: ministryofjustice/modernisation-platform
+    - id: 729308541
+      name: homarr-labs/homarr
+    - id: 602943934
+      name: orbstack/orbstack
+    - id: 631254164
+      name: songquanpeng/one-api
+    - id: 66314075
+      name: kubernetes/k8s.io
+    - id: 355946670
+      name: loft-sh/vcluster
+    - id: 825470378
+      name: henrygd/beszel
+    - id: 263258362
+      name: Dynatrace/dynatrace-operator
+    - id: 202570697
+      name: mongodb/terraform-provider-mongodbatlas
+    - id: 436297812
+      name: usememos/memos
+    - id: 220546758
+      name: headlamp-k8s/headlamp
+    - id: 93446083
+      name: aliyun/terraform-provider-alicloud
+    - id: 214266955
+      name: VictoriaMetrics/helm-charts
+    - id: 68964263
+      name: prometheus-operator/prometheus-operator
+    - id: 226800899
+      name: frappe/press
+    - id: 70882616
+      name: zalando-incubator/kubernetes-on-aws
+    - id: 23267883
+      name: semaphoreui/semaphore
+    - id: 594346359
+      name: rooch-network/rooch
+    - id: 142542006
+      name: yunionio/cloudpods
+    - id: 388260896
+      name: aws/eks-anywhere
+    - id: 92969352
+      name: moby/buildkit
+    - id: 179344069
+      name: woodpecker-ci/woodpecker
+    - id: 225525029
+      name: dev-launchers/dev-launchers-platform
+    - id: 175425051
+      name: kumahq/kuma
+    - id: 64405770
+      name: docker/for-mac
+    - id: 228925870
+      name: open-telemetry/opentelemetry-operator
+    - id: 147886080
+      name: crossplane/crossplane
+    - id: 34847907
+      name: ntop/ntopng
+    - id: 118596920
+      name: ITISFoundation/osparc-simcore
+    - id: 260471399
+      name: spectrocloud/librarium
+    - id: 177068961
+      name: kubeovn/kube-ovn
+    - id: 746962176
+      name: microsoft/retina
+    - id: 128412714
+      name: opensciencegrid/topology
+    - id: 136411008
+      name: layer5io/layer5
+    - id: 525281948
+      name: mondoohq/cnquery
+    - id: 382379200
+      name: cue-lang/cue
+    - id: 48384473
+      name: ParabolInc/parabol
+    - id: 136163130
+      name: Flagsmith/flagsmith
+    - id: 95761244
+      name: gogf/gf
+    - id: 450409826
+      name: togettoyou/hub-mirror
+    - id: 724645196
+      name: deckhouse/virtualization
+    - id: 561356395
+      name: kubestellar/kubestellar
+    - id: 703945834
+      name: edgelesssys/contrast
+    - id: 774258963
+      name: pelican-dev/panel
+    - id: 209120637
+      name: Netflix/metaflow
+    - id: 88013053
+      name: docker/cli
+    - id: 180687624
+      name: aquasecurity/trivy
+    - id: 92313258
+      name: cert-manager/cert-manager
+    - id: 575865240
+      name: AstrBotDevs/AstrBot
+    - id: 67793333
+      name: cortexproject/cortex
+    - id: 27551774
+      name: aws/amazon-ecs-agent
+    - id: 373364482
+      name: vmware-tanzu/nsx-operator
+    - id: 84610043
+      name: kubernetes-sigs/aws-load-balancer-controller
+    - id: 50734768
+      name: kubermatic/kubermatic
+    - id: 115992009
+      name: home-assistant/operating-system
+    - id: 719489743
+      name: canonical/k8s-snap
+    - id: 336090118
+      name: MyPureCloud/terraform-provider-genesyscloud
+    - id: 179163124
+      name: hummingbot/hummingbot
+    - id: 75785240
+      name: authelia/authelia
+    - id: 306701996
+      name: rancher-sandbox/rancher-desktop
+    - id: 65489927
+      name: ovn-kubernetes/ovn-kubernetes
+    - id: 165926555
+      name: Snowflake-Labs/terraform-provider-snowflake
+    - id: 494617920
+      name: numaproj/numaflow
+    - id: 834966974
+      name: Pumpkin-MC/Pumpkin
+    - id: 234634164
+      name: aws/deep-learning-containers
+    - id: 406346103
+      name: Project-HAMi/HAMi
+    - id: 167596393
+      name: derailed/k9s
+    - id: 281924201
+      name: vmware/load-balancer-and-ingress-services-for-kubernetes
+    - id: 219058535
+      name: kubernetes-sigs/gateway-api
+    - id: 419398994
+      name: microsoft/azure-container-apps
+    - id: 14125254
+      name: hashicorp/consul
+    - id: 271250363
+      name: k0sproject/k0s
+    - id: 485538823
+      name: operator-framework/operator-controller
+    - id: 186178706
+      name: tigera/operator
+    - id: 302387839
+      name: CDCgov/prime-simplereport
+    - id: 21298446
+      name: firefly-iii/firefly-iii
+    - id: 82206054
+      name: weseek/growi
+    - id: 848497195
+      name: OWASP/Nest
+    - id: 398998426
+      name: zarf-dev/zarf
+    - id: 19537979
+      name: TykTechnologies/tyk
+    - id: 113106184
+      name: linkerd/linkerd2
+    - id: 444377346
+      name: dstackai/dstack
+    - id: 121898717
+      name: dani-garcia/vaultwarden
+    - id: 113473682
+      name: googleforgames/agones
+    - id: 116693072
+      name: ceph/ceph-csi
+    - id: 394755539
+      name: cgerard321/champlain_petclinic
+    - id: 569126902
+      name: trungdq88/Awesome-Black-Friday-Cyber-Monday
+    - id: 660211576
+      name: Azure/Azure-Verified-Modules
+    - id: 433383766
+      name: nextcloud/all-in-one
+    - id: 178738556
+      name: teslamate-org/teslamate
+    - id: 278954673
+      name: fluid-cloudnative/fluid
+    - id: 291137
+      name: ohmyzsh/ohmyzsh
+    - id: 220517730
+      name: quay/quay
+    - id: 632119516
+      name: hashicorp/tfc-workflows-github
+    - id: 735015852
+      name: keyshade-xyz/keyshade
+    - id: 467856408
+      name: fallenbagel/jellyseerr
+    - id: 67828134
+      name: cri-o/cri-o
+    - id: 660174004
+      name: redhatci/ansible-collection-redhatci-ocp
+    - id: 653673792
+      name: secretflow/kuscia
+    - id: 557617420
+      name: TencentBlueKing/blueking-paas
+    - id: 339786950
+      name: encoredev/encore
+    - id: 548243758
+      name: TencentBlueKing/bk-repo
+    - id: 123933470
+      name: flatcar/scripts
+    - id: 144849757
+      name: labring/sealos
+    - id: 411912097
+      name: bytechefhq/bytechef
+    - id: 724700691
+      name: rackerlabs/genestack
+    - id: 470472185
+      name: koordinator-sh/koordinator
+    - id: 650796703
+      name: GoogleCloudPlatform/ai-on-gke
+    - id: 59985646
+      name: finnishtransportagency/harja
+    - id: 84464014
+      name: F5Networks/k8s-bigip-ctlr
+    - id: 222730845
+      name: DataDog/datadog-operator
+    - id: 592748160
+      name: loft-sh/devpod
+    - id: 93446086
+      name: grafana/terraform-provider-grafana
+    - id: 585196214
+      name: restatedev/restate
+    - id: 53553027
+      name: nginxinc/kubernetes-ingress
+    - id: 543052826
+      name: speakeasy-api/speakeasy
+    - id: 51547791
+      name: getsentry/self-hosted
+    - id: 361784175
+      name: openshift/microshift
+    - id: 87859908
+      name: micrometer-metrics/micrometer
+    - id: 593558875
+      name: polarsource/polar
+    - id: 333483116
+      name: dgtlmoon/changedetection.io
+    - id: 155368246
+      name: elastic/cloud-on-k8s
+    - id: 304403692
+      name: wasmCloud/wasmCloud
+    - id: 241394221
+      name: dell/omnia
+    - id: 245747437
+      name: rancher/fleet
+    - id: 315511161
+      name: dell/csm-docs
+    - id: 155297903
+      name: amir20/dozzle
+    - id: 57939112
+      name: kubernetes/community
+    - id: 342728683
+      name: replicate/cog
+    - id: 435440409
+      name: Kuadrant/kuadrant-operator
+    - id: 7167597
+      name: elabftw/elabftw
+    - id: 260027545
+      name: dusty-nv/jetson-containers
+    - id: 124230204
+      name: micronaut-projects/micronaut-core
+    - id: 668392754
+      name: littlehorse-enterprises/littlehorse
+    - id: 439011383
+      name: userver-framework/userver
+    - id: 112892985
+      name: garden-io/garden
+    - id: 285864199
+      name: zeromicro/go-zero
+    - id: 384334423
+      name: RafaySystems/terraform-provider-rafay
+    - id: 427274423
+      name: castai/helm-charts
+    - id: 92205085
+      name: aws/aws-sam-cli
+    - id: 114619105
+      name: apache/kyuubi
+    - id: 564809052
+      name: ministryofjustice/analytical-platform
+    - id: 118510171
+      name: kgateway-dev/kgateway
+    - id: 730608144
+      name: Siemens-Healthineers/K2s
+    - id: 535309783
+      name: alexjustesen/speedtest-tracker
+    - id: 678441731
+      name: akash-network/console
+    - id: 765195418
+      name: siderolabs/omni
+    - id: 454467716
+      name: metalbear-co/mirrord
+    - id: 171396748
+      name: cubefs/cubefs
+    - id: 465844859
+      name: containers/podman-desktop
+    - id: 381952060
+      name: kubeshop/testkube
+    - id: 120519269
+      name: runatlantis/atlantis
+    - id: 159606650
+      name: hyperf/hyperf
+    - id: 501095512
+      name: odigos-io/odigos
+    - id: 138105554
+      name: kubernetes/org
+    - id: 221546437
+      name: TandoorRecipes/recipes
+    - id: 262126497
+      name: anchore/syft
+    - id: 373163326
+      name: dell/csm
+    - id: 99268620
+      name: cncf/k8s-conformance
+    - id: 110395561
+      name: MCSManager/MCSManager
+    - id: 304830226
+      name: oxsecurity/megalinter
+    - id: 394751388
+      name: cloudfoundry/korifi
+    - id: 335154864
+      name: aaronwmorris/indi-allsky
+    - id: 84926758
+      name: home-assistant/supervisor
+    - id: 536150270
+      name: customeros/customeros
+    - id: 192768713
+      name: armadaproject/armada
+    - id: 53553027
+      name: nginx/kubernetes-ingress
+    - id: 486895319
+      name: kyma-project/lifecycle-manager
+    - id: 141451032
+      name: testcontainers/testcontainers-go
+    - id: 518724484
+      name: runtipi/runtipi-appstore
+    - id: 198238470
+      name: mercedes-benz/sechub
+    - id: 434898411
+      name: trento-project/web
+    - id: 346720555
+      name: kyma-project/busola
+    - id: 62091339
+      name: kubernetes/kops
+    - id: 704881002
+      name: hanxi/xiaomusic
+    - id: 292427680
+      name: cloudposse/atmos
+    - id: 271714774
+      name: pipe-cd/pipecd
+    - id: 200118806
+      name: linode/apl-core
+    - id: 209313689
+      name: aquasecurity/tracee
+    - id: 211560455
+      name: pulumi/pulumi-terraform-bridge
+    - id: 396762794
+      name: camunda/camunda-platform-helm
+    - id: 441062625
+      name: jokob-sk/NetAlertX
+    - id: 381178875
+      name: webrecorder/browsertrix
+    - id: 2416064
+      name: alphagov/whitehall
+    - id: 528194129
+      name: vexxhost/atmosphere
+    - id: 150627051
+      name: tencentcloudstack/terraform-provider-tencentcloud
+    - id: 299880639
+      name: kruize/autotune
+    - id: 261776181
+      name: liqotech/liqo
+    - id: 504253062
+      name: mariadb-operator/mariadb-operator
+    - id: 420960244
+      name: freiheit-com/kuberpult
+    - id: 812275373
+      name: nighthawkcoders/portfolio_2025
+    - id: 37459110
+      name: Ericsson/codechecker
+    - id: 13753636
+      name: jhipster/generator-jhipster
+    - id: 125275487
+      name: kubernetes-sigs/kubebuilder
+    - id: 23653453
+      name: pachyderm/pachyderm
+    - id: 578519249
+      name: konturio/disaster-ninja-cd
+    - id: 384451028
+      name: cloudwego/kitex
+    - id: 340339997
+      name: 0xJacky/nginx-ui
+    - id: 792861139
+      name: glanceapp/glance
+    - id: 309733671
+      name: mongodb/mongodb-atlas-kubernetes
+    - id: 355247090
+      name: vertica/vertica-kubernetes
+    - id: 182050419
+      name: TencentBlueKing/bk-bcs
+    - id: 46251204
+      name: line/armeria
+    - id: 327377712
+      name: duplocloud/terraform-provider-duplocloud
+    - id: 506953078
+      name: intelligent-machine-learning/dlrover
+    - id: 762303525
+      name: cloudoperators/greenhouse
+    - id: 388727019
+      name: jhipster/jhipster-lite
+    - id: 4557968
+      name: comic/grand-challenge.org
+    - id: 235453730
+      name: sentry-kubernetes/charts
+    - id: 590134721
+      name: axoflow/axosyslog
+    - id: 752615721
+      name: Guovin/iptv-api
+    - id: 846145923
+      name: NVIDIA/nv-ingest
+    - id: 539768967
+      name: zenstackhq/zenstack
+    - id: 523091309
+      name: UBCSailbot/sailbot_workspace
+    - id: 105967469
+      name: kubernetes/ingress-gce
+    - id: 141609301
+      name: kubernetes-sigs/cluster-api-provider-aws
+    - id: 245713798
+      name: gardenlinux/gardenlinux
+    - id: 120530079
+      name: qdm12/gluetun
+    - id: 307702666
+      name: devtron-labs/dashboard
+    - id: 744016174
+      name: Kong/gateway-operator
+    - id: 85435841
+      name: home-assistant/addons
+    - id: 47574295
+      name: cncf/toc
+    - id: 585882434
+      name: tailcallhq/tailcall
+    - id: 111599187
+      name: kanisterio/kanister
+    - id: 98925529
+      name: spantaleev/matrix-docker-ansible-deploy
+    - id: 73963835
+      name: spring-cloud/spring-cloud-gateway
+    - id: 404135384
+      name: bpg/terraform-provider-proxmox
+    - id: 173714958
+      name: steedos/steedos-platform
+    - id: 177210627
+      name: docker/buildx
+    - id: 295290852
+      name: pluralsh/console
+    - id: 159005377
+      name: aws/containers-roadmap
+    - id: 743140652
+      name: dockur/windows
+    - id: 313393628
+      name: cal-itp/data-infra
+    - id: 808146034
+      name: robusta-dev/holmesgpt
+    - id: 178079595
+      name: opencost/opencost
+    - id: 127765544
+      name: Kong/kubernetes-ingress-controller
+    - id: 494458453
+      name: blockscout/blockscout-rs
+    - id: 689172674
+      name: kaito-project/kaito
+    - id: 151700458
+      name: scalar-labs/scalardb
+    - id: 236736020
+      name: actions/actions-runner-controller
+    - id: 746935181
+      name: DrewThomasson/ebook2audiobook
+    - id: 313853293
+      name: cloudquery/cloudquery
+    - id: 126132964
+      name: kubernetes-sigs/cloud-provider-azure
+    - id: 742483865
+      name: ministryofjustice/find-moj-data
+    - id: 640079149
+      name: QuivrHQ/quivr
+    - id: 33816473
+      name: testcontainers/testcontainers-java
+    - id: 863835427
+      name: fosrl/pangolin
+    - id: 465198908
+      name: GoogleContainerTools/kpt-config-sync
+    - id: 545901542
+      name: neondatabase/autoscaling
+    - id: 308060485
+      name: warewulf/warewulf
+    - id: 26768643
+      name: SeleniumHQ/docker-selenium
+    - id: 528313152
+      name: gethomepage/homepage
+    - id: 134539560
+      name: eksctl-io/eksctl
+    - id: 267054247
+      name: anchore/grype
+    - id: 172803655
+      name: NVIDIA/gpu-operator
+    - id: 139611779
+      name: hashicorp/consul-k8s
+    - id: 252841745
+      name: nebari-dev/nebari
+    - id: 139728360
+      name: kubernetes-sigs/aws-ebs-csi-driver
+    - id: 200621714
+      name: ministryofjustice/opg-digideps
+    - id: 4007018
+      name: Katello/katello
+    - id: 347404990
+      name: whyour/qinglong
+    - id: 93446099
+      name: integrations/terraform-provider-github
+    - id: 2331534
+      name: alphagov/frontend
+    - id: 23930639
+      name: payara/Payara
+    - id: 158012967
+      name: argoproj/argo-rollouts
+    - id: 197483319
+      name: Azure/azure-service-operator
+    - id: 189490177
+      name: openkruise/kruise
+    - id: 327694933
+      name: hashicorp/terraform-provider-hcp
+    - id: 167388333
+      name: grafana/grafana-operator
+    - id: 36960321
+      name: opencontainers/runc
+    - id: 532049613
+      name: DeterminateSystems/nix-installer
+    - id: 83363132
+      name: CrunchyData/postgres-operator
+    - id: 574379491
+      name: oracle/macaron
+    - id: 203456148
+      name: bunkerity/bunkerweb
+    - id: 15999638
+      name: checkpoint-restore/criu
+    - id: 248407953
+      name: rubyforgood/casa
+    - id: 118716875
+      name: portworx/helm
+    - id: 396856161
+      name: authzed/spicedb
+    - id: 316098156
+      name: kubearmor/KubeArmor
+    - id: 622384161
+      name: cyclops-ui/cyclops
+    - id: 161264999
+      name: scylladb/scylla-operator
+    - id: 44998824
+      name: Yelp/paasta
+    - id: 840439221
+      name: chiche-ds/30-Day-Terraform-challenge-
+    - id: 662640428
+      name: winapps-org/winapps
+    - id: 54631744
+      name: Aam-Digital/ndb-core
+    - id: 131212638
+      name: google/gvisor
+    - id: 630384001
+      name: IT-Academy-BCN/ita-challenges-backend
+    - id: 541169728
+      name: awslabs/data-on-eks
+    - id: 161347705
+      name: demisto/dockerfiles
+    - id: 593867048
+      name: xpipe-io/xpipe
+    - id: 165021340
+      name: Altinity/clickhouse-operator
+    - id: 205453332
+      name: plankanban/planka
+    - id: 323109016
+      name: truecharts/public
+    - id: 134538006
+      name: wso2/product-microgateway
+    - id: 181739240
+      name: hyperledger-iroha/iroha
+    - id: 130603282
+      name: apache/streampipes
+    - id: 875880554
+      name: envoyproxy/ai-gateway
+    - id: 65489927
+      name: ovn-org/ovn-kubernetes
+    - id: 290077536
+      name: boxwise/boxtribute
+    - id: 116165188
+      name: kubeflow/spark-operator
+    - id: 291749387
+      name: SEKOIA-IO/documentation
+    - id: 373353703
+      name: harness/terraform-provider-harness
+    - id: 681482900
+      name: aws-samples/bedrock-claude-chat
+    - id: 193163140
+      name: project-zot/zot
+    - id: 128805309
+      name: vmware/terraform-provider-nsxt
+    - id: 154894457
+      name: open-policy-agent/gatekeeper
+    - id: 572471573
+      name: containers/qm
+    - id: 378598624
+      name: robusta-dev/robusta
+    - id: 80711933
+      name: secureCodeBox/secureCodeBox
+    - id: 38829639
+      name: fabric8io/kubernetes-client
+    - id: 349578094
+      name: AzBuilder/terrakube
+    - id: 534160590
+      name: kubev2v/forklift
+    - id: 93446044
+      name: ovh/terraform-provider-ovh
+    - id: 117756215
+      name: kubevirt/containerized-data-importer
+    - id: 107597148
+      name: aws/amazon-vpc-cni-k8s
+    - id: 171763756
+      name: openshift/ovn-kubernetes
+    - id: 118654121
+      name: GoogleContainerTools/skaffold
+    - id: 46298331
+      name: dotnet/dotnet-docker
+    - id: 467856408
+      name: Fallenbagel/jellyseerr
+    - id: 405026690
+      name: alphagov/govuk-helm-charts
+    - id: 779449791
+      name: seanmorley15/AdventureLog
+    - id: 19897878
+      name: itzg/docker-minecraft-server
+    - id: 114898943
+      name: SeldonIO/seldon-core
+    - id: 38744670
+      name: patroni/patroni
+    - id: 113495947
+      name: opentelekomcloud/terraform-provider-opentelekomcloud
+    - id: 635968047
+      name: aws/sagemaker-distribution
+    - id: 278376996
+      name: alphagov/govuk-infrastructure
+    - id: 196400330
+      name: juicedata/juicefs-csi-driver
+    - id: 451862186
+      name: seqeralabs/wave
+    - id: 230924711
+      name: CycloneDX/cdxgen
+    - id: 677083126
+      name: e2b-dev/infra
+    - id: 234611145
+      name: IBM/ibm-spectrum-scale-csi
+    - id: 33037215
+      name: docker-mailserver/docker-mailserver
+    - id: 313741735
+      name: aws/eks-distro
+    - id: 162647455
+      name: kubernetes-sigs/aws-efs-csi-driver
+    - id: 65394827
+      name: fedspendingtransparency/usaspending-api
+    - id: 284753690
+      name: argoproj-labs/argocd-image-updater
+    - id: 636231145
+      name: eclipse-ankaios/ankaios
+    - id: 241225122
+      name: microsoft/azure_arc
+    - id: 490359003
+      name: devcontainers/features
+    - id: 170659275
+      name: fluent/fluent-operator
+    - id: 334846691
+      name: hystax/optscale
+    - id: 85039965
+      name: litmuschaos/litmus
+    - id: 203256603
+      name: AviatrixSystems/terraform-provider-aviatrix
+    - id: 146641150
+      name: tektoncd/pipeline
+    - id: 80134675
+      name: containers/buildah
+    - id: 380502721
+      name: mrlt8/docker-wyze-bridge
+    - id: 678466048
+      name: citrix/terraform-provider-citrix
+    - id: 529896509
+      name: edgelesssys/constellation
+    - id: 172097026
+      name: ministryofjustice/opg-use-an-lpa
+    - id: 420195478
+      name: nginxinc/nginx-gateway-fabric
+    - id: 2899580
+      name: AxonFramework/AxonFramework
+    - id: 287874262
+      name: sct/overseerr
+    - id: 905779686
+      name: kubestellar/ui
+    - id: 117595674
+      name: astronomer/astronomer
+    - id: 353364259
+      name: kcp-dev/kcp
+    - id: 278200746
+      name: Checkmarx/kics
+    - id: 91074692
+      name: zalando/postgres-operator
+    - id: 694035605
+      name: it-at-m/eappointment
+    - id: 50365232
+      name: werf/werf
+    - id: 33148320
+      name: DataBiosphere/toil
+    - id: 685005089
+      name: kosmos-io/kosmos
+    - id: 719240389
+      name: bcgov/nr-permitconnect-navigator-service
+    - id: 655181249
+      name: DefangLabs/defang
+    - id: 447140444
+      name: jorenn92/Maintainerr
+    - id: 136977103
+      name: kubernetes-sigs/gcp-compute-persistent-disk-csi-driver
+    - id: 499826943
+      name: cedana/cedana
+    - id: 214247981
+      name: splunk/splunk-operator
+    - id: 793379298
+      name: beclab/Olares
+    - id: 72815297
+      name: oracle/terraform-provider-oci
+    - id: 63999998
+      name: kubernetes-sigs/node-feature-discovery
+    - id: 303928050
+      name: castai/terraform-provider-castai
+    - id: 818983046
+      name: crocodilestick/Calibre-Web-Automated
+    - id: 421774239
+      name: elastic/terraform-provider-elasticstack
+    - id: 566499790
+      name: GoogleCloudPlatform/gcs-fuse-csi-driver
+    - id: 319271388
+      name: ionos-cloud/terraform-provider-ionoscloud
+    - id: 247710440
+      name: znsio/specmatic
+    - id: 32935745
+      name: eclipse-che/che
+    - id: 358316740
+      name: hashicorp/terraform-provider-awscc
+    - id: 38812664
+      name: zalando/skipper
+    - id: 154578184
+      name: minio/operator
+    - id: 690825026
+      name: hyperdxio/hyperdx
+    - id: 411630635
+      name: terramate-io/terramate
+    - id: 195619075
+      name: vdaas/vald
+    - id: 49986046
+      name: falcosecurity/falco
+    - id: 341374526
+      name: direktiv/direktiv
+    - id: 220546758
+      name: kubernetes-sigs/headlamp
+    - id: 270910423
+      name: FlareSolverr/FlareSolverr
+    - id: 682760329
+      name: nucleuscloud/neosync
+    - id: 136401408
+      name: terraform-aws-modules/terraform-aws-eks
+    - id: 810333340
+      name: nebius/soperator
+    - id: 143907880
+      name: hashicorp/terraform-provider-tfe
+    - id: 572685958
+      name: containers/bootc
+    - id: 520784735
+      name: parseablehq/parseable
+    - id: 463080892
+      name: solarwinds/swi-k8s-opentelemetry-collector
+    - id: 549643808
+      name: canonical/lxd-ui
+    - id: 1996077
+      name: alphagov/publisher
+    - id: 533322185
+      name: opendatahub-io/notebooks
+    - id: 724754781
+      name: allthingslinux/tux
+    - id: 486261159
+      name: confluentinc/terraform-provider-confluent
+    - id: 170988906
+      name: testcontainers/testcontainers-dotnet
+    - id: 394993468
+      name: autobrr/autobrr
+    - id: 34136406
+      name: broadinstitute/cromwell
+    - id: 62256097
+      name: ThreeMammals/Ocelot
+    - id: 273244625
+      name: microsoft/terraform-provider-azuredevops
+    - id: 61721573
+      name: jens-maus/RaspberryMatic
+    - id: 403020531
+      name: abiosoft/colima
+    - id: 95700338
+      name: kubeflow/training-operator
+    - id: 167096776
+      name: metal3-io/baremetal-operator
+    - id: 164690788
+      name: hashicorp/terraform-provider-azuread
+    - id: 454528656
+      name: sustainable-computing-io/kepler
+    - id: 599338659
+      name: cheshire-cat-ai/core
+    - id: 216815773
+      name: eclipse-jkube/jkube
+    - id: 16347164
+      name: buildkite/agent
+    - id: 489274556
+      name: kyma-project/istio
+    - id: 97860239
+      name: kubernetes/sig-release
+    - id: 133067498
+      name: kubernetes-sigs/kustomize
+    - id: 159697334
+      name: bassmaster187/TeslaLogger
+    - id: 803737740
+      name: djangoindia/djangoindia.org
+    - id: 351512090
+      name: brainboxdotcc/DPP
+    - id: 130430977
+      name: kubesphere/kubesphere
+    - id: 49904068
+      name: openshift/kubernetes
+    - id: 289632902
+      name: alkem-io/server
+    - id: 803491346
+      name: aws-games/cloud-game-development-toolkit
+    - id: 162945532
+      name: oras-project/oras
+    - id: 32484381
+      name: ripienaar/free-for-dev
+    - id: 180326593
+      name: kubernetes-sigs/cluster-api-provider-ibmcloud
+    - id: 409095307
+      name: Azure/terraform-provider-azapi
+    - id: 613960200
+      name: mother-of-all-self-hosting/mash-playbook
+    - id: 351486934
+      name: gravitl/netmaker
+    - id: 251637497
+      name: OT-CONTAINER-KIT/redis-operator
+    - id: 54076950
+      name: microsoft/Docker-Provider
+    - id: 147747963
+      name: apple/servicetalk
+    - id: 53127403
+      name: apolloconfig/apollo
+    - id: 143867478
+      name: pingcap/tidb-operator
+    - id: 658320826
+      name: dell/terraform-provider-powerscale
+    - id: 262521997
+      name: VictoriaMetrics/operator
+    - id: 832212739
+      name: wushuo894/ani-rss
+    - id: 93446115
+      name: hashicorp/terraform-provider-kubernetes
+    - id: 689105238
+      name: linode/cluster-api-provider-linode
+    - id: 148545807
+      name: kubernetes-sigs/kind
+    - id: 221825058
+      name: meshery/meshery.io
+    - id: 71485542
+      name: kimai/kimai
+    - id: 225753076
+      name: argoproj-labs/argocd-operator
+    - id: 651275904
+      name: Azure/dalec
+    - id: 743236170
+      name: immichFrame/ImmichFrame
+    - id: 111058386
+      name: browserless/browserless
+    - id: 396867188
+      name: ArcadeData/arcadedb
+    - id: 82933315
+      name: telepresenceio/telepresence
+    - id: 491539130
+      name: cloudwego/hertz
+    - id: 184087886
+      name: giantswarm/roadmap
+    - id: 429907564
+      name: foxglove/mcap
+    - id: 795145086
+      name: kubeflow/notebooks
+    - id: 449114455
+      name: nashtech-garage/yas
+    - id: 104932805
+      name: microsoft/navcontainerhelper
+    - id: 308597111
+      name: thinkingreed-inc/F-RevoCRM
+    - id: 702778587
+      name: OpenVisualCloud/Media-Communications-Mesh
+    - id: 124905930
+      name: scality/metalk8s
+    - id: 436836258
+      name: terraform-routeros/terraform-provider-routeros
+    - id: 474521466
+      name: helmfile/helmfile
+    - id: 410430370
+      name: IceWhaleTech/CasaOS
+    - id: 457636580
+      name: apache/flink-kubernetes-operator
+    - id: 593716393
+      name: microsoft/terraform-provider-power-platform
+    - id: 215379262
+      name: okta/terraform-provider-okta
+    - id: 47632957
+      name: stratosphereips/StratosphereLinuxIPS
+    - id: 206214867
+      name: TwiN/gatus
+    - id: 843471391
+      name: leptonai/gpud
+    - id: 630192834
+      name: defenseunicorns/leapfrogai
+    - id: 108462822
+      name: projectcontour/contour
+    - id: 210557564
+      name: gardener/etcd-druid
+    - id: 206102714
+      name: boredazfcuk/docker-icloudpd
+    - id: 513870749
+      name: Permify/permify
+    - id: 520025361
+      name: ministryofjustice/opg-modernising-lpa
+    - id: 229105965
+      name: Alfresco/alfresco-process-infrastructure-deployment
+    - id: 124951822
+      name: knative/eventing
+    - id: 465687843
+      name: CodeForAfrica/ui
+    - id: 93576430
+      name: scality/Zenko
+    - id: 98671007
+      name: kubernetes-sigs/descheduler
+    - id: 95700338
+      name: kubeflow/trainer
+    - id: 897285087
+      name: ali-ahnaf/cse-3100
+    - id: 488865524
+      name: kcl-lang/kcl
+    - id: 644421005
+      name: streamshub/console
+    - id: 157166750
+      name: lensapp/lens
+    - id: 560772443
+      name: Stratio/kind
+    - id: 110027931
+      name: metallb/metallb
+    - id: 695280596
+      name: awslabs/mountpoint-s3-csi-driver
+    - id: 507829396
+      name: openGemini/openGemini
+    - id: 22305416
+      name: apache/ranger
+    - id: 274625369
+      name: infracost/infracost
+    - id: 102562155
+      name: libopenstorage/stork
+    - id: 44248957
+      name: signal18/replication-manager
+    - id: 210624794
+      name: traefik/traefik-helm-chart
+    - id: 470572304
+      name: unikraft/kraftkit
+    - id: 248143991
+      name: thecourseforum/theCourseForum2
+    - id: 835839990
+      name: NVIDIA/k8s-nim-operator
+    - id: 84795536
+      name: kubedb/apimachinery
+    - id: 47508644
+      name: pterodactyl/panel
+    - id: 656417398
+      name: intel/ai-containers
+    - id: 81410439
+      name: Telmate/terraform-provider-proxmox
+    - id: 747705689
+      name: peviitor-ro/validator-ui
+    - id: 792556174
+      name: bcgov/nr-site-registry
+    - id: 22470303
+      name: Difegue/LANraragi
+    - id: 126493684
+      name: gotenberg/gotenberg
+    - id: 513232514
+      name: usecannon/cannon
+    - id: 141265446
+      name: jitsi/docker-jitsi-meet
+    - id: 622907471
+      name: KusionStack/karpor
+    - id: 93446047
+      name: scaleway/terraform-provider-scaleway
+    - id: 391127422
+      name: kairos-io/kairos
+    - id: 217622305
+      name: aws-controllers-k8s/community
+    - id: 2090979
+      name: spring-projects/spring-integration
+    - id: 93446098
+      name: newrelic/terraform-provider-newrelic
+    - id: 472891457
+      name: ni/install-systemlink-enterprise
+    - id: 429485913
+      name: 89luca89/distrobox
+    - id: 277877505
+      name: bluerobotics/BlueOS
+    - id: 175842832
+      name: binbashar/le-tf-infra-aws
+    - id: 93446120
+      name: hashicorp/terraform-provider-vault
+    - id: 525443495
+      name: homarr-labs/dashboard-icons
+    - id: 8463294
+      name: mozilla/treeherder
+    - id: 120663559
+      name: astronomer/astro-cli
+    - id: 177737912
+      name: OctopusDeployLabs/terraform-provider-octopusdeploy
+    - id: 67164756
+      name: noironetworks/aci-containers
+    - id: 215840316
+      name: temporalio/sdk-java
+    - id: 72894587
+      name: flipt-io/flipt
+    - id: 376126748
+      name: k8ssandra/k8ssandra-operator
+    - id: 198856247
+      name: replicatedhq/kots
+    - id: 532663923
+      name: syntasso/kratix-docs
+    - id: 49386559
+      name: Mailu/Mailu
+    - id: 237778673
+      name: kube-vip/kube-vip
+    - id: 390985926
+      name: kube-hetzner/terraform-hcloud-kube-hetzner
+    - id: 118828329
+      name: knative/serving
+    - id: 393666948
+      name: vitobotta/hetzner-k3s
+    - id: 25437858
+      name: pyinfra-dev/pyinfra
+    - id: 359419233
+      name: kubeshark/kubeshark
+    - id: 268635807
+      name: dell/terraform-provider-redfish
+    - id: 718475919
+      name: TIBCOSoftware/tp-helm-charts
+    - id: 368236463
+      name: syntasso/kratix
+    - id: 747408304
+      name: openshift/dpu-operator
+    - id: 248386471
+      name: kubesphere/kubekey
+    - id: 265800635
+      name: openyurtio/openyurt
+    - id: 144343719
+      name: stackrox/collector
+    - id: 159351868
+      name: parca-dev/parca
+    - id: 451011520
+      name: rapidfort/community-images
+    - id: 436039945
+      name: aklivity/zilla
+    - id: 464859166
+      name: datreeio/CRDs-catalog
+    - id: 292511965
+      name: elastisys/welkin
+    - id: 143808337
+      name: kubernetes-sigs/alibaba-cloud-csi-driver
+    - id: 343487704
+      name: leemonade/leemons
+    - id: 707913607
+      name: substratusai/kubeai
+    - id: 730330208
+      name: zetane/ZetaForge
+    - id: 222010141
+      name: bcgov/PIMS
+    - id: 85802819
+      name: testcontainers/testcontainers-python
+    - id: 112785414
+      name: alibaba/spring-cloud-alibaba
+    - id: 708621214
+      name: rnadigital/agentcloud
+    - id: 223385041
+      name: ministryofjustice/operations-engineering
+    - id: 602320913
+      name: intel/intel-technology-enabling-for-openshift
+    - id: 554065369
+      name: pytorch/tensordict
+    - id: 276756059
+      name: vmware-tanzu/pinniped
+    - id: 176206805
+      name: wso2/product-micro-integrator
+    - id: 489865430
+      name: aquasecurity/trivy-operator
+    - id: 485134435
+      name: ajnart/homarr
+    - id: 97563790
+      name: open-learning-exchange/planet
+    - id: 754073698
+      name: ministryofjustice/opg-paper-identity
+    - id: 75643400
+      name: kubermatic/dashboard
+    - id: 413486077
+      name: argoproj-labs/hera
+    - id: 281631292
+      name: equinix/terraform-provider-equinix
+    - id: 493550477
+      name: FOSSBilling/FOSSBilling
+    - id: 420195478
+      name: nginx/nginx-gateway-fabric
+    - id: 706031756
+      name: helixml/helix
+    - id: 98185781
+      name: hexlet-codebattle/codebattle
+    - id: 95368512
+      name: hashicorp/terraform-provider-helm
+    - id: 359922324
+      name: linuxserver/docker-webtop
+    - id: 721858229
+      name: aenix-io/cozystack
+    - id: 143846881
+      name: okteto/okteto
+    - id: 319664200
+      name: dynatrace-oss/terraform-provider-dynatrace
+    - id: 197973341
+      name: netbox-community/netbox-chart
+    - id: 221993778
+      name: FoundationDB/fdb-kubernetes-operator
+    - id: 165041732
+      name: go-kratos/kratos
+    - id: 204020918
+      name: USEPA/webcms
+    - id: 56667109
+      name: ICIJ/datashare
+    - id: 146865191
+      name: apache/camel-k
+    - id: 212488700
+      name: pytorch/serve
+    - id: 105940648
+      name: confluentinc/common-docker
+    - id: 463303596
+      name: aws-samples/eks-workshop-v2
+    - id: 473191810
+      name: wandb/helm-charts
+    - id: 682065256
+      name: couchbasecloud/terraform-provider-couchbase-capella
+    - id: 163516932
+      name: kubernetes-sigs/azuredisk-csi-driver
+    - id: 582275238
+      name: imagegenius/docker-immich
+    - id: 108221729
+      name: caprover/caprover
+    - id: 238662977
+      name: deepfence/ThreatMapper
+    - id: 24703136
+      name: hydroshare/hydroshare
+    - id: 735172658
+      name: Panfactum/stack
+    - id: 1223855
+      name: BrighterCommand/Brighter
+    - id: 195487209
+      name: kubernetes-sigs/image-builder
+    - id: 186511668
+      name: simonsobs/socs
+    - id: 461280850
+      name: shuttle-hq/shuttle
+    - id: 350005438
+      name: cerbos/cerbos
+    - id: 298504577
+      name: MTES-MCT/monitorfish
+    - id: 566485695
+      name: hashicorp/vault-secrets-operator
+    - id: 230999826
+      name: onedr0p/home-ops
+    - id: 30184278
+      name: giantswarm/docs
+    - id: 286847478
+      name: signalfx/splunk-otel-collector-chart
+    - id: 739378779
+      name: tofuutils/tenv
+    - id: 444720954
+      name: oceanbase/ob-operator
+    - id: 345164646
+      name: env0/terraform-provider-env0
+    - id: 490311232
+      name: devcontainers/images
+    - id: 162033435
+      name: phlask/phlask-map
+    - id: 522837859
+      name: castai/kvisor
+    - id: 258469100
+      name: fluxcd/flux2
+    - id: 106473613
+      name: NVIDIA/k8s-device-plugin
+    - id: 33383826
+      name: dockstore/dockstore
+    - id: 234632572
+      name: cnti-testcatalog/testsuite
+    - id: 599993480
+      name: siemens/continuous-clearing
+    - id: 381500711
+      name: GoogleCloudPlatform/prometheus-engine
+    - id: 196191454
+      name: herlesupreeth/docker_open5gs
+    - id: 454465421
+      name: auth0/terraform-provider-auth0
+    - id: 444033465
+      name: K-vanc/Tempest-EPG-Generator
+    - id: 616230792
+      name: ytsaurus/ytsaurus-k8s-operator
+    - id: 42135842
+      name: GSA/data.gov
+    - id: 50894333
+      name: pi-hole/docker-pi-hole
+    - id: 553409106
+      name: Websoft9/docker-library
+    - id: 517689736
+      name: package-operator/package-operator
+    - id: 726082384
+      name: wasp-lang/open-saas
+    - id: 543666489
+      name: buildkite/agent-stack-k8s
+    - id: 67212828
+      name: karmab/kcli
+    - id: 18843954
+      name: compiler-explorer/infra
+    - id: 843496957
+      name: bcgov/nr-bcws-wfprev
+    - id: 399794767
+      name: syself/cluster-api-provider-hetzner
+    - id: 576455465
+      name: FuzzyGrim/Yamtrack
+    - id: 539168222
+      name: JhumanJ/OpnForm
+    - id: 696454126
+      name: bcgov/ECC-OFM-D365
+    - id: 395717930
+      name: ratify-project/ratify
+    - id: 548798869
+      name: eclipse-xpanse/xpanse
+    - id: 306265382
+      name: ovh/public-cloud-roadmap
+    - id: 28366058
+      name: distribution/distribution
+    - id: 374917397
+      name: onekey-sec/unblob
+    - id: 611174067
+      name: defenseunicorns/pepr
+    - id: 517108640
+      name: ecotoneframework/ecotone-dev
+    - id: 64825667
+      name: zabbix/zabbix-docker
+    - id: 250143965
+      name: stolostron/multicluster-observability-operator
+    - id: 69382485
+      name: antonbabenko/pre-commit-terraform
+    - id: 165926555
+      name: snowflakedb/terraform-provider-snowflake
+    - id: 751983018
+      name: jozu-ai/kitops
+    - id: 194212327
+      name: sissbruecker/linkding
+    - id: 128183276
+      name: Alfresco/acs-packaging
+    - id: 180181760
+      name: pegasystems/pega-helm-charts
+    - id: 549007739
+      name: JoeanAmier/TikTokDownloader
+    - id: 620069905
+      name: scidsg/hushline
+    - id: 587859813
+      name: project-copacetic/copacetic
+    - id: 722655859
+      name: donknap/dpanel
+    - id: 234348022
+      name: IBM/ibm-licensing-operator
+    - id: 210497673
+      name: cloud-barista/cb-spider
+    - id: 339340085
+      name: asyncapi/cli
+    - id: 729182458
+      name: securesign/secure-sign-operator
+    - id: 152559953
+      name: dfds/infrastructure-modules
+    - id: 685392779
+      name: msgbyte/tianji
+    - id: 243394576
+      name: pixie-io/pixie
+    - id: 56333861
+      name: verdaccio/verdaccio
+    - id: 868828087
+      name: almeidapaulopt/tsdproxy
+    - id: 13367154
+      name: sameersbn/docker-gitlab
+    - id: 316823064
+      name: antonputra/tutorials
+    - id: 194805859
+      name: noobaa/noobaa-operator
+    - id: 28241982
+      name: oracle/docker-images
+    - id: 648235359
+      name: C9Glax/tranga
+    - id: 82976691
+      name: aiven/terraform-provider-aiven
+    - id: 51429040
+      name: ladybirdweb/agora-invoicing-community
+    - id: 112536545
+      name: Badgerati/Pode
+    - id: 480418817
+      name: ThePorgs/Exegol-images
+    - id: 5425992
+      name: nats-io/nats.go
+    - id: 63429318
+      name: containers/storage
+    - id: 60165924
+      name: scality/cloudserver
+    - id: 200432345
+      name: zoriya/Kyoo
+    - id: 612519947
+      name: xhongc/music-tag-web
+    - id: 175814044
+      name: DataDog/chaos-controller
+    - id: 147543887
+      name: StaPH-B/docker-builds
+    - id: 71516397
+      name: Cloud-CV/EvalAI
+    - id: 673120693
+      name: EndstoneMC/endstone
+    - id: 725111108
+      name: ionos-cloud/cluster-api-provider-proxmox
+    - id: 471081779
+      name: trimble-oss/tierceron
+    - id: 58184885
+      name: kubernetes/kube-state-metrics
+    - id: 616140032
+      name: observeinc/helm-charts
+    - id: 220017901
+      name: humio/humio-operator
+    - id: 159793611
+      name: kubernetes-sigs/azurefile-csi-driver
+    - id: 197008093
+      name: getwud/wud
+    - id: 377239642
+      name: morganstanley/ComposeUI
+    - id: 613270370
+      name: IT-Academy-BCN/ita-wiki
+    - id: 609852323
+      name: sbondCo/Watcharr
+    - id: 132732601
+      name: canonical/microk8s
+    - id: 31214867
+      name: microcks/microcks
+    - id: 382792380
+      name: RedHatQE/openshift-python-wrapper
+    - id: 294443538
+      name: aboutcode-org/scancode.io
+    - id: 268924826
+      name: microsoft/Windows-Containers
+    - id: 5793738
+      name: Activiti/Activiti
+    - id: 191787065
+      name: apache/yunikorn-core
+    - id: 768097869
+      name: omnistrate-oss/saasbuilder
+    - id: 184343377
+      name: Azure/vscode-aks-tools
+    - id: 601138589
+      name: afet-yonetim-sistemi/ays-be
+    - id: 210288294
+      name: cloud-barista/cb-tumblebug
+    - id: 629016559
+      name: spectrocloud/CanvOS
+    - id: 181030685
+      name: alchemy-fr/phrasea
+    - id: 389997476
+      name: Netcracker/KubeMarine
+    - id: 563468160
+      name: padok-team/burrito
+    - id: 201749357
+      name: nix-community/infra
+    - id: 188592933
+      name: operator-framework/java-operator-sdk
+    - id: 366123719
+      name: ibm-vpc/terraform-provider-ibm
+    - id: 160838120
+      name: anchore/anchore-charts
+    - id: 283263924
+      name: honeycombio/terraform-provider-honeycombio
+    - id: 664925328
+      name: MetaCubeX/metacubexd
+    - id: 352051262
+      name: youki-dev/youki
+    - id: 241962363
+      name: nosqlbench/nosqlbench
+    - id: 630390665
+      name: headlamp-k8s/plugins
+    - id: 466932812
+      name: spidernet-io/spiderpool
+    - id: 121515217
+      name: bu-ist/webrouter-prod
+    - id: 488965322
+      name: konflux-ci/integration-service
+    - id: 639968118
+      name: ClickHouse/terraform-provider-clickhouse
+    - id: 181739240
+      name: hyperledger/iroha
+    - id: 549096434
+      name: containerbuildsystem/cachi2
+    - id: 343078060
+      name: Lissy93/dashy
+    - id: 344676663
+      name: erda-project/erda
+    - id: 64654523
+      name: openebs/openebs
+    - id: 386557591
+      name: Leukocyte-Lab/helm-charts
+    - id: 834966974
+      name: Snowiiii/Pumpkin
+    - id: 467513973
+      name: GZTimeWalker/GZCTF
+    - id: 605995490
+      name: diggerhq/digger
+    - id: 153338661
+      name: linode/terraform-provider-linode
+    - id: 621641043
+      name: kubernetes-sigs/jobset
+    - id: 474540881
+      name: railwayapp/nixpacks
+    - id: 448972168
+      name: DSD-DBS/capella-collab-manager
+    - id: 72473727
+      name: kubernetes-client/python
+    - id: 248584331
+      name: Scalr/terraform-provider-scalr
+    - id: 197914161
+      name: drakkan/sftpgo
+    - id: 93446088
+      name: digitalocean/terraform-provider-digitalocean
+    - id: 12115269
+      name: cookiecutter/cookiecutter-django
+    - id: 155974736
+      name: kubermatic/kubeone
+    - id: 10567197
+      name: dokku/dokku
+    - id: 257347688
+      name: canonical/charmcraft
+    - id: 32792022
+      name: hazelcast/hazelcast-docker
+    - id: 441756043
+      name: games-on-whales/wolf
+    - id: 99224194
+      name: frappe/frappe_docker
+    - id: 69466511
+      name: uyuni-project/sumaform
+    - id: 588277066
+      name: NVIDIA/gpu-driver-container
+    - id: 20717348
+      name: wso2/product-apim
+    - id: 139727567
+      name: stakater/Reloader
+    - id: 133999225
+      name: coreos/coreos-assembler
+    - id: 196359824
+      name: tektoncd/operator
+    - id: 749599017
+      name: QYG2297248353/appstore-1panel
+    - id: 269544601
+      name: remote-android/redroid-doc
+    - id: 27546098
+      name: alphagov/publishing-api
+    - id: 333437150
+      name: SAP/sap-btp-service-operator
+    - id: 73843076
+      name: wazuh/wazuh-docker
+    - id: 490240074
+      name: easypanel-io/templates
+    - id: 106704041
+      name: air-verse/air
+    - id: 170595842
+      name: noironetworks/acc-provision
+    - id: 138716355
+      name: kube-logging/logging-operator
+    - id: 468308355
+      name: dspace-group/simphera-reference-architecture-aws
+    - id: 588529285
+      name: climatepolicyradar/navigator-frontend
+    - id: 227892192
+      name: observeinc/terraform-provider-observe
+    - id: 323610158
+      name: cilium/cilium-cli
+    - id: 888963901
+      name: Gurubase/gurubase
+    - id: 91797088
+      name: nuclio/nuclio
+    - id: 257791501
+      name: diced/zipline
+    - id: 364344493
+      name: pytorch/torchx
+    - id: 242857618
+      name: lsst-it/k8s-cookbook
+    - id: 91674936
+      name: apache/servicecomb-java-chassis
+    - id: 540439370
+      name: ministryofjustice/modernisation-platform-configuration-management
+    - id: 629588766
+      name: Azure/eno
+    - id: 173346239
+      name: kubevirt/hyperconverged-cluster-operator
+    - id: 617152691
+      name: k8sgpt-ai/k8sgpt
+    - id: 447256665
+      name: Azure/avdaccelerator
+    - id: 481313546
+      name: PrefectHQ/terraform-provider-prefect
+    - id: 601684708
+      name: kurtosis-tech/kurtosis
+    - id: 558430532
+      name: ethpandaops/ethereum-package
+    - id: 144564856
+      name: jfrog/charts
+    - id: 507879760
+      name: IndicoDataSolutions/tf_cod
+    - id: 38764029
+      name: spring-cloud/spring-cloud-stream
+    - id: 7040500
+      name: falconry/falcon
+    - id: 204673264
+      name: openebs/mayastor
+    - id: 152326454
+      name: aws/aws-k8s-tester
+    - id: 127941481
+      name: kubeflow/katib
+    - id: 516550707
+      name: ngrok/ngrok-operator
+    - id: 206213815
+      name: chaos-mesh/chaos-mesh
+    - id: 606824575
+      name: netascode/terraform-aci-nac-aci
+    - id: 34117853
+      name: zalando/spilo
+    - id: 505935874
+      name: hashicorp/hcp-terraform-operator
+    - id: 656880403
+      name: databricks/terraform-databricks-sra
+    - id: 292393392
+      name: kube-burner/kube-burner
+    - id: 262414542
+      name: aerospike/aerospike-kubernetes-operator
+    - id: 452772221
+      name: vercel/terraform-provider-vercel
+    - id: 247350713
+      name: m1k1o/neko
+    - id: 593935068
+      name: OctopusDeploy/helm-charts
+    - id: 20789757
+      name: ManageIQ/manageiq
+    - id: 783685467
+      name: cioraneanu/firefly-pico
+    - id: 720959702
+      name: InftyAI/llmaz
+    - id: 851136729
+      name: belastingdienst/opr-paas
+    - id: 389076818
+      name: kubenetworks/kubevpn
+    - id: 111555721
+      name: kube-HPC/hkube
+    - id: 161704259
+      name: libopenstorage/operator
+    - id: 782430805
+      name: alumet-dev/alumet
+    - id: 753001019
+      name: stefanpejcic/OpenPanel
+    - id: 362107654
+      name: SUSE/BCI-tests
+    - id: 32290815
+      name: jolie/jolie
+    - id: 172822195
+      name: hongbo-miao/hongbomiao.com
+    - id: 437944910
+      name: opensearch-project/opensearch-k8s-operator
+    - id: 3569726
+      name: CppMicroServices/CppMicroServices
+    - id: 249236918
+      name: InseeFrLab/onyxia
+    - id: 810362103
+      name: pagopa/io-messages
+    - id: 202194314
+      name: fluxcd/website
+    - id: 557959507
+      name: openappsec/openappsec
+    - id: 195657294
+      name: photoview/photoview
+    - id: 758672530
+      name: jovandeginste/workout-tracker
+    - id: 507844083
+      name: dyrector-io/dyrectorio
+    - id: 745410009
+      name: ministryofjustice/opg-sirius-supervision-finance-hub
+    - id: 439021003
+      name: clastix/kamaji
+    - id: 798682613
+      name: Ramilito/kubectl.nvim
+    - id: 338791379
+      name: permitio/opal
+    - id: 212429244
+      name: MobilityData/gtfs-validator
+    - id: 110494762
+      name: anjia0532/gcr.io_mirror
+    - id: 224421982
+      name: k8gb-io/k8gb
+    - id: 175095528
+      name: submariner-io/submariner
+    - id: 44350607
+      name: kubernetes/dashboard
+    - id: 509563246
+      name: dominodatalab/terraform-aws-eks
+    - id: 309475982
+      name: cds-snc/notification-terraform
+    - id: 50390111
+      name: yarpc/yarpc-go
+    - id: 90675730
+      name: kubernetes-client/java
+    - id: 172227885
+      name: fastapi/full-stack-fastapi-template
+    - id: 76445704
+      name: dotnetcore/CAP
+    - id: 515188090
+      name: otterize/intents-operator
+    - id: 96100263
+      name: overhangio/tutor
+    - id: 595477732
+      name: kubescape/node-agent
+    - id: 284387887
+      name: berops/claudie
+    - id: 203845904
+      name: istio-ecosystem/admiral
+    - id: 566195489
+      name: dell/terraform-provider-powerflex
+    - id: 500498769
+      name: prefapp/tfm
+    - id: 119419195
+      name: GoogleContainerTools/kaniko
+    - id: 288509997
+      name: jfrog/terraform-provider-artifactory
+    - id: 717124565
+      name: osbuild/bootc-image-builder
+    - id: 376068634
+      name: IBM/Ansible-OpenShift-Provisioning
+    - id: 59517730
+      name: screwdriver-cd/screwdriver
+    - id: 590446748
+      name: terraform-redhat/terraform-provider-rhcs
+    - id: 812323913
+      name: tech-shrimp/docker_image_pusher
+    - id: 592788421
+      name: spegel-org/spegel
+    - id: 801051598
+      name: aws/eks-hybrid
+    - id: 648259630
+      name: zapier/kubechecks
+    - id: 426597581
+      name: CartoDB/carto-selfhosted-helm
+    - id: 575865240
+      name: Soulter/AstrBot
+    - id: 39469487
+      name: spring-cloud/spring-cloud-dataflow
+    - id: 126135241
+      name: kubernetes/cloud-provider-openstack
+    - id: 726128134
+      name: rajnandan1/kener
+    - id: 456585103
+      name: PilotDataPlatform/helm-charts
+    - id: 784266290
+      name: argoproj-labs/gitops-promoter
+    - id: 667215372
+      name: basetenlabs/truss-examples
+    - id: 805616069
+      name: batteries-included/batteries-included
+    - id: 103191852
+      name: jpbetz/kubernetes
+    - id: 834595923
+      name: av/harbor
+    - id: 679511608
+      name: nycmeshnet/meshdb
+    - id: 436915688
+      name: bazel-contrib/rules_oci
+    - id: 473123944
+      name: MTES-MCT/camino
+    - id: 373865136
+      name: favonia/cloudflare-ddns
+    - id: 785706631
+      name: ironcore-dev/metal-operator
+    - id: 54142870
+      name: GoogleCloudPlatform/kubernetes-engine-samples
+    - id: 618531988
+      name: SAP/terraform-provider-btp
+    - id: 93446054
+      name: PagerDuty/terraform-provider-pagerduty
+    - id: 666069735
+      name: meteroid-oss/meteroid
+    - id: 276822250
+      name: kubevela/kubevela
+    - id: 295212900
+      name: truenas/charts
+    - id: 685934319
+      name: rigdev/rig
+    - id: 38546546
+      name: balena-os/meta-balena
+    - id: 689518268
+      name: cloudnativedaysjp/cnd-handson
+    - id: 224816321
+      name: dcsaorg/DCSA-OpenAPI
+    - id: 357999885
+      name: terraform-google-modules/terraform-docs-samples
+    - id: 408943403
+      name: Worklytics/psoxy
+    - id: 512402898
+      name: aptakube/aptakube
+    - id: 249182649
+      name: openclarity/openclarity
+    - id: 297436961
+      name: porter-dev/porter-archive
+    - id: 656831161
+      name: niledatabase/niledatabase
+    - id: 648021633
+      name: opendatahub-io/kserve
+    - id: 488589094
+      name: openstack-k8s-operators/install_yamls
+    - id: 143918036
+      name: redhat-developer/vscode-openshift-tools
+    - id: 540236456
+      name: implerhq/impler.io
+    - id: 687448210
+      name: stackitcloud/terraform-provider-stackit
+    - id: 272962299
+      name: NeuroDesk/neurocontainers
+    - id: 599991595
+      name: G-Core/terraform-provider-gcore
+    - id: 268617165
+      name: ansible/awx-operator
+    - id: 590406998
+      name: mag37/dockcheck
+    - id: 475423377
+      name: namespacelabs/foundation
+    - id: 75327325
+      name: mozilla/multi-account-containers
+    - id: 899771
+      name: Yelp/Tron
+    - id: 674327831
+      name: temporalio/terraform-provider-temporalcloud
+    - id: 149430917
+      name: recommenders-team/recommenders
+    - id: 772037579
+      name: openshift-service-mesh/sail-operator
+    - id: 66050533
+      name: fission/fission
+    - id: 152297176
+      name: qdm12/ddns-updater
+    - id: 190630770
+      name: rstudio/rstudio-docker-products
+    - id: 397479301
+      name: moderneinc/moderne-docs
+    - id: 424629608
+      name: NUTFes/FinanSu
+    - id: 44771822
+      name: markshust/docker-magento
+    - id: 633926758
+      name: eclipse-store/store
+    - id: 647175608
+      name: phasehq/console
+    - id: 301151089
+      name: Ocelot-Social-Community/Ocelot-Social
+    - id: 742106639
+      name: glasskube/glasskube
+    - id: 140279295
+      name: sysdiglabs/terraform-provider-sysdig
+    - id: 762147600
+      name: SquirrelCorporation/SquirrelServersManager
+    - id: 122635841
+      name: ministryofjustice/cloud-platform-infrastructure
+    - id: 695675360
+      name: panoratech/Panora
+    - id: 705442135
+      name: turbot/powerpipe
+    - id: 101113696
+      name: GoogleCloudPlatform/container-engine-accelerators
+    - id: 533235473
+      name: ML-TANGO/TANGO
+    - id: 189503489
+      name: cncf/kubernetes-community-days
+    - id: 118813635
+      name: dotnet/dotnet-buildtools-prereqs-docker
+    - id: 40916314
+      name: dexidp/dex
+    - id: 736060713
+      name: livepeer/ai-runner
+    - id: 36071697
+      name: ory/hydra
+    - id: 166299071
+      name: archtechx/tenancy
+    - id: 662734440
+      name: yonahd/kor
+    - id: 488866928
+      name: KusionStack/kusion
+    - id: 201228816
+      name: gotson/komga
+    - id: 232603801
+      name: hashicorp/terraform-cdk
+    - id: 604692150
+      name: NSPManager/NSPanelManager
+    - id: 197627721
+      name: CiscoDevNet/terraform-provider-aci
+    - id: 709665723
+      name: layer5io/docs
+    - id: 145051421
+      name: pulumi/pulumi-eks
+    - id: 366002731
+      name: fivetran/terraform-provider-fivetran
+    - id: 287300864
+      name: geoadmin/service-stac
+    - id: 196518074
+      name: snetsystems/cloudhub
+    - id: 252358889
+      name: minio/console
+    - id: 721263834
+      name: microsoft/terraform-provider-fabric
+    - id: 590606779
+      name: rancher/k3k
+    - id: 531839724
+      name: keptn/lifecycle-toolkit
+    - id: 326896523
+      name: everoute/everoute
+    - id: 133428589
+      name: intel/intel-device-plugins-for-kubernetes
+    - id: 820701529
+      name: kurtosis-tech/kardinal
+    - id: 89090804
+      name: dunglas/symfony-docker
+    - id: 287502052
+      name: hauler-dev/hauler
+    - id: 581550440
+      name: enix/kube-image-keeper
+    - id: 365300077
+      name: OliveTin/OliveTin
+    - id: 822331793
+      name: donetick/donetick
+    - id: 375935360
+      name: ChristianLempa/boilerplates
+    - id: 91702293
+      name: BioContainers/multi-package-containers
+    - id: 78168850
+      name: MatheMatrix/zstack
+    - id: 342592099
+      name: weaveworks/weave-gitops
+    - id: 323976419
+      name: owncloud/ocis-charts
+    - id: 237499139
+      name: dfinity/examples
+    - id: 151291406
+      name: openshift/verification-tests
+    - id: 410808925
+      name: Orange-Cyberdefense/GOAD
+    - id: 572968060
+      name: Ravinou/borgwarehouse
+    - id: 141266584
+      name: apache/dubbo-kubernetes
+    - id: 258465213
+      name: philips-labs/terraform-aws-github-runner
+    - id: 697890131
+      name: cnoe-io/idpbuilder
+    - id: 304836585
+      name: mayswind/ezbookkeeping
+    - id: 510636979
+      name: kubean-io/kubean
+    - id: 141335261
+      name: linode/linode-blockstorage-csi-driver
+    - id: 434304858
+      name: bpfman/bpfman
+    - id: 311657093
+      name: XenitAB/terraform-modules
+    - id: 91857856
+      name: kubedb/docs
+    - id: 507759939
+      name: loxilb-io/loxilb
+    - id: 919615603
+      name: GoogleCloudPlatform/kubectl-ai
+    - id: 112146910
+      name: helm-unittest/helm-unittest
+    - id: 130411885
+      name: cloudposse/packages
+    - id: 503165329
+      name: phamleduy04/texas-dps-scheduler
+    - id: 63169079
+      name: nextcloud/docker
+    - id: 454340977
+      name: intershop/helm-charts
+    - id: 167723470
+      name: golevelup/nestjs
+    - id: 817260911
+      name: freelensapp/freelens
+    - id: 635810127
+      name: nacos-group/r-nacos
+    - id: 284555713
+      name: nestybox/sysbox
+    - id: 315369058
+      name: wiremind/wiremind-helm-charts
+    - id: 573930092
+      name: bullet-train-co/bullet_train-core
+    - id: 626121312
+      name: thomiceli/opengist
+    - id: 303900617
+      name: dave-inc/charts
+    - id: 282210707
+      name: elifesciences/elife-flux-cluster
+    - id: 257347648
+      name: notaryproject/notation
+    - id: 466948543
+      name: hwameistor/hwameistor
+    - id: 616034077
+      name: okxlin/appstore
+    - id: 311688903
+      name: FoxxMD/multi-scrobbler
+    - id: 259274091
+      name: kubesphere/website
+    - id: 452780719
+      name: containerd/runwasi
+    - id: 702901147
+      name: kyverno/chainsaw
+    - id: 238475032
+      name: release-engineering/iib
+    - id: 353069820
+      name: Twingate/terraform-provider-twingate
+    - id: 390607649
+      name: Tencent/spring-cloud-tencent
+    - id: 237219167
+      name: gardener/gardener-extension-provider-aws
+    - id: 736060713
+      name: livepeer/ai-worker
+    - id: 27415685
+      name: nyaruka/rapidpro
+    - id: 595921199
+      name: iam-veeramalla/Jenkins-Zero-To-Hero
+    - id: 696723696
+      name: crashappsec/chalk
+    - id: 633137336
+      name: githedgehog/fabricator
+    - id: 190660950
+      name: akamai/terraform-provider-akamai
+    - id: 555233743
+      name: freshdesk/conductor
+    - id: 316158674
+      name: stackabletech/operator-rs
+    - id: 578974845
+      name: bakdata/kpops
+    - id: 405860551
+      name: line/abc-user-feedback
+    - id: 90157914
+      name: lineageos4microg/docker-lineage-cicd
+    - id: 691567577
+      name: Azure/arc_jumpstart_docs
+    - id: 340518195
+      name: kyverno/policy-reporter
+    - id: 20811348
+      name: spring-cloud/spring-cloud-config
+    - id: 360961699
+      name: oakestra/oakestra
+    - id: 460578574
+      name: konveyor/tackle2-ui
+    - id: 465046773
+      name: konpyutaika/nifikop
+    - id: 878051005
+      name: ministryofjustice/analytical-platform-airflow
+    - id: 449602244
+      name: rancher/elemental
+    - id: 263554680
+      name: sourcefuse/loopback4-microservice-catalog
+    - id: 790759594
+      name: newrelic/k8s-agents-operator
+    - id: 830216255
+      name: netbox-community/netbox-operator
+    - id: 422318103
+      name: cloudprober/cloudprober
+    - id: 141686094
+      name: nacos-group/nacos-group.github.io
+    - id: 143965255
+      name: apache/dubbo-go
+    - id: 116869354
+      name: pulumi/pulumi-kubernetes
+    - id: 785621437
+      name: H0llyW00dzZ/My-RESTAPIs-Boilerplate
+    - id: 765080394
+      name: Visionatrix/Visionatrix
+    - id: 154173733
+      name: InteIIigeNET/HwProj-2.0.1
+    - id: 518708142
+      name: kubernetes-sigs/kwok
+    - id: 456415869
+      name: kubernetes-sigs/prow
+    - id: 290729263
+      name: grafana/k6-operator
+    - id: 126136847
+      name: kubernetes/cloud-provider-gcp
+    - id: 764231951
+      name: migtools/oadp-non-admin
+    - id: 801183222
+      name: ceph/ceph-csi-operator
+    - id: 118510171
+      name: k8sgateway/k8sgateway
+    - id: 721858229
+      name: cozystack/cozystack
+    - id: 131137115
+      name: kubevirt/kubevirtci
+    - id: 344901018
+      name: redhat-performance/jetlag
+    - id: 667740250
+      name: KusionStack/kuperator
+    - id: 364269021
+      name: sylabs/singularity
+    - id: 157133149
+      name: kube-rs/kube
+    - id: 706522229
+      name: wso2/azure-terraform-modules
+    - id: 200523457
+      name: rancher/steve
+    - id: 296550082
+      name: dragonflyoss/nydus
+    - id: 175017178
+      name: kubevirt/cluster-network-addons-operator
+    - id: 705874642
+      name: NorskHelsenett/ror
+    - id: 768813127
+      name: nandyalu/trailarr
+    - id: 41636424
+      name: netbootxyz/netboot.xyz
+    - id: 384767370
+      name: cert-manager/trust-manager
+    - id: 518843713
+      name: simpledotorg/container-deployment
+    - id: 303955221
+      name: cloudogu/gitops-playground
+    - id: 221505026
+      name: opendatahub-io/kubeflow
+    - id: 755212946
+      name: falcondev-oss/github-actions-cache-server
+    - id: 457026559
+      name: chainguard-dev/apko
+    - id: 306234208
+      name: Gradiant/5g-images
+    - id: 254212870
+      name: SumoLogic/terraform-provider-sumologic
+    - id: 139755708
+      name: CSSS/wall_e
+    - id: 539173312
+      name: AutomatingSciencePipeline/Monorepo
+    - id: 118690798
+      name: kubernetes-sigs/lwkd
+    - id: 450451649
+      name: gravitee-io/gravitee-kubernetes-operator
+    - id: 285587924
+      name: sse-secure-systems/connaisseur
+    - id: 427355461
+      name: canonical/postgresql-k8s-operator
+    - id: 425859572
+      name: mozilla/terraform-modules
+    - id: 118783793
+      name: hetznercloud/hcloud-cloud-controller-manager
+    - id: 277621205
+      name: getumbrel/umbrel
+    - id: 756058516
+      name: zane-ops/zane-ops
+    - id: 169053362
+      name: googlecloudrobotics/core
+    - id: 114185437
+      name: NVIDIA/aistore
+    - id: 411168701
+      name: netobserv/network-observability-operator
+    - id: 688538087
+      name: coder/modules
+    - id: 195894190
+      name: replicatedhq/troubleshoot
+    - id: 196256559
+      name: percona/percona-helm-charts
+    - id: 147663007
+      name: glotzerlab/hoomd-blue
+    - id: 804570938
+      name: controlplaneio-fluxcd/flux-operator
+    - id: 39431147
+      name: dzhw/metadatamanagement
+    - id: 635030098
+      name: bluesky-social/pds
+    - id: 853670434
+      name: PratikMane0112/TelMedSphere
+    - id: 475550441
+      name: Azure/aks-app-routing-operator
+    - id: 614426997
+      name: isxcode/spark-yun
+    - id: 119913038
+      name: Azure/azure-functions-docker
+    - id: 562778457
+      name: runfinch/finch
+    - id: 751620612
+      name: Aembit/terraform-provider-aembit
+    - id: 268795735
+      name: slackapi/bolt-python
+    - id: 215406220
+      name: red-hat-storage/rook
+    - id: 77207633
+      name: eclipse-che/che-docs
+    - id: 55792443
+      name: alphagov/specialist-publisher
+    - id: 673479242
+      name: aws/amazon-cloudwatch-agent-operator
+    - id: 288646913
+      name: OWASP/wrongsecrets
+    - id: 614317683
+      name: dragonflydb/dragonfly-operator
+    - id: 539385775
+      name: mondoohq/cnspec
+    - id: 44415469
+      name: microsoft/vscode-docker
+    - id: 454341458
+      name: kubeshop/tracetest
+    - id: 767041148
+      name: ministryofjustice/data-catalogue
+    - id: 89286697
+      name: suttacentral/suttacentral
+    - id: 144193954
+      name: linode/linode-cloud-controller-manager
+    - id: 164398718
+      name: imperva/terraform-provider-incapsula
+    - id: 360277156
+      name: StackGuardian/tirith
+    - id: 444726282
+      name: JiscSD/octopus
+    - id: 237007942
+      name: MTES-MCT/partaj
+    - id: 238886969
+      name: stevehipwell/helm-charts
+    - id: 71823870
+      name: prometheus-operator/kube-prometheus
+    - id: 355197825
+      name: openshift-pipelines/pipelines-as-code
+    - id: 808517453
+      name: lanedirt/AliasVault
+    - id: 398181340
+      name: fullstackhero/dotnet-starter-kit
+    - id: 359374876
+      name: CiscoDevNet/terraform-provider-sdwan
+    - id: 133830411
+      name: argoproj/argo-events
+    - id: 44532672
+      name: Amsterdam/mapserver
+    - id: 202789481
+      name: convox/convox
+    - id: 25623942
+      name: apache/syncope
+    - id: 703686572
+      name: deploymenttheory/terraform-provider-jamfpro
+    - id: 411451561
+      name: dbt-labs/terraform-provider-dbtcloud
+    - id: 92077390
+      name: cypress-io/cypress-docker-images
+    - id: 226428378
+      name: mongodb-js/vscode
+    - id: 109566657
+      name: goodrain/rainbond
+    - id: 429509802
+      name: Azure/draft
+    - id: 215906650
+      name: longhorn/website
+    - id: 295767877
+      name: eth-educators/eth-docker
+    - id: 572685958
+      name: bootc-dev/bootc
+    - id: 389448216
+      name: iriusrisk/startleft
+    - id: 115119636
+      name: strimzi/strimzi.github.io
+    - id: 93446037
+      name: hashicorp/terraform-provider-vsphere
+    - id: 732052370
+      name: Azure/arc_jumpstart_drops
+    - id: 725803714
+      name: androidseb25/iGotify-Notification-Assistent
+    - id: 190869910
+      name: buildkite/terraform-provider-buildkite
+    - id: 317093750
+      name: megaport/terraform-provider-megaport
+    - id: 259216197
+      name: cybozu-go/moco
+    - id: 679219059
+      name: JoeanAmier/XHS-Downloader
+    - id: 533713498
+      name: kubescape/helm-charts
+    - id: 147036024
+      name: keycloak/terraform-provider-keycloak
+    - id: 311450116
+      name: cds-snc/notification-manifests
+    - id: 747385459
+      name: bym-refitted/backyard-monsters-refitted
+    - id: 1924888
+      name: haskell/containers
+    - id: 757552345
+      name: cloudstoragesec/terraform-aws-cloud-storage-security
+    - id: 57145363
+      name: alphagov/govuk-developer-docs
+    - id: 307940262
+      name: ansible-collections/community.docker
+    - id: 344629897
+      name: QuarkContainer/Quark
+    - id: 181311865
+      name: deardurham/dear-petition
+    - id: 128145602
+      name: cybozu/ubuntu-base
+    - id: 707953960
+      name: k-orc/openstack-resource-controller
+    - id: 4614541
+      name: ostreedev/ostree
+    - id: 179526936
+      name: SteeltoeOSS/Steeltoe
+    - id: 614951598
+      name: canonical/oci-factory
+    - id: 831014610
+      name: getconnect-tech/connect
+    - id: 708113285
+      name: broersma-forslund/homelab
+    - id: 222003131
+      name: okd-project/okd
+    - id: 93446091
+      name: vmware/terraform-provider-vcd
+    - id: 416083486
+      name: chaynHQ/bloom-backend
+    - id: 881252850
+      name: wukongdaily/AutoBuildImmortalWrt
+    - id: 612246392
+      name: incident-io/terraform-provider-incident
+    - id: 725709424
+      name: DataDog/terraform-module-datadog-agentless-scanner
+    - id: 240133006
+      name: k8ssandra/management-api-for-apache-cassandra
+    - id: 255744821
+      name: someengineering/fixinventory
+    - id: 94897336
+      name: imgproxy/imgproxy
+    - id: 81226206
+      name: karatelabs/karate
+    - id: 533850513
+      name: anvil-verifier/anvil
+    - id: 640642410
+      name: gelecekbilimde/backend
+    - id: 159386562
+      name: wazuh/wazuh-kubernetes
+    - id: 413286655
+      name: apache/camel-karavan
+    - id: 768292597
+      name: astronomer/terraform-provider-astro
+    - id: 92702519
+      name: bitnami-labs/sealed-secrets
+    - id: 186499949
+      name: rancher/kontainer-driver-metadata
+    - id: 364544651
+      name: ironcore-dev/ironcore
+    - id: 617122588
+      name: Juniper/terraform-provider-apstra
+    - id: 807555568
+      name: monlor/docker-xiaoya
+    - id: 117113041
+      name: outscale/terraform-provider-outscale
+    - id: 252022100
+      name: argoproj-labs/terraform-provider-argocd
+    - id: 288719776
+      name: e-breuninger/terraform-provider-netbox
+    - id: 220090417
+      name: carvel-dev/kapp-controller
+    - id: 809427242
+      name: Ptero-Eggs/game-eggs
+    - id: 707812226
+      name: Twingate/kubernetes-operator
+    - id: 898367685
+      name: zabavb/Libro
+    - id: 174406527
+      name: NaverCloudPlatform/terraform-provider-ncloud
+    - id: 462231739
+      name: ovh/infrastructure-roadmap
+    - id: 120325908
+      name: arangodb/kube-arangodb
+    - id: 488320432
+      name: kartverket/skiperator
+    - id: 434705380
+      name: sourcegraph/deploy-sourcegraph-helm
+    - id: 302701425
+      name: ansible-collections/kubernetes.core
+    - id: 24183312
+      name: AmpersandTarski/Ampersand
+    - id: 493291937
+      name: kubero-dev/kubero
+    - id: 837670148
+      name: lovelaze/nebula-sync
+    - id: 720449800
+      name: otwld/ollama-helm
+    - id: 656281656
+      name: SAP-samples/btp-terraform-samples
+    - id: 691721231
+      name: gunh0/kr-vulhub
+    - id: 410294435
+      name: sudojia/AutoTaskScript
+    - id: 171947379
+      name: yandex-cloud/terraform-provider-yandex
+    - id: 133923497
+      name: grafana/grafana-image-renderer
+    - id: 523660484
+      name: np-guard/netpol-analyzer
+    - id: 875405447
+      name: stephanlensky/zendriver
+    - id: 211975532
+      name: aerospike/aerolab
+    - id: 793685930
+      name: thor0215/hassio-xfinity-usage
+    - id: 695977852
+      name: s-allius/tsun-gen3-proxy
+    - id: 185001813
+      name: snyk/kubernetes-monitor
+    - id: 318298974
+      name: cloud-bulldozer/cpt-dashboard
+    - id: 111423359
+      name: ardanlabs/service
+    - id: 149645874
+      name: hashicorp/terraform-provider-google-beta
+    - id: 370873536
+      name: Sitoi/dailycheckin
+    - id: 581182591
+      name: gscwd-ictd/api
+    - id: 488069222
+      name: EstrellaXD/Auto_Bangumi
+    - id: 693435091
+      name: SUGAM-ARORA/UniCollab
+    - id: 46716359
+      name: alphagov/paas-cf
+    - id: 865468038
+      name: NUSpecialProjects/gitmarks
+    - id: 523035254
+      name: parseablehq/console
+    - id: 608612485
+      name: Azure/ALZ-PowerShell-Module
+    - id: 780292579
+      name: SMWU-POCHAK/POCHAK-Server
+    - id: 655413331
+      name: Zeyi-Lin/HivisionIDPhotos
+    - id: 816219992
+      name: OpenVisualCloud/Intel-Tiber-Broadcast-Suite
+    - id: 607840732
+      name: stakater/mto-docs
+    - id: 33331247
+      name: cirosantilli/china-dictatorship
+    - id: 76400426
+      name: spring-cloud/spring-cloud-kubernetes
+    - id: 797763686
+      name: dash0hq/dash0-operator
+    - id: 647936979
+      name: openshift/operator-framework-operator-controller
+    - id: 685102574
+      name: evolutionary-architecture/evolutionary-architecture-by-example
+    - id: 143896900
+      name: tilt-dev/tilt
+    - id: 681704702
+      name: terraform-ibm-modules/terraform-ibm-hpc
+    - id: 294173697
+      name: sassoftware/viya4-iac-azure
+    - id: 236850662
+      name: portworx/kdmp
+    - id: 49217007
+      name: hwdsl2/setup-ipsec-vpn
+    - id: 298040750
+      name: Azure/terraform-azurerm-caf-enterprise-scale
+    - id: 290459249
+      name: nextcloud/helm
+    - id: 27579614
+      name: goadesign/goa
+    - id: 129869782
+      name: ExpediaGroup/apiary-data-lake
+    - id: 817707261
+      name: KubeRocketCI/docs
+    - id: 360040662
+      name: zhangzujian/kube-ovn
+    - id: 394207324
+      name: Edgenesis/shifu
+    - id: 272508670
+      name: pulumi/pulumi-kubernetes-operator
+    - id: 833001731
+      name: caas-team/GoKubeDownscaler
+    - id: 622134207
+      name: k8sgpt-ai/k8sgpt-operator
+    - id: 288694718
+      name: ahdis/matchbox
+    - id: 248535515
+      name: immauss/openvas
+    - id: 81840826
+      name: gyroidos/cml
+    - id: 26582330
+      name: alphagov/government-frontend
+    - id: 203002681
+      name: astuto/astuto
+    - id: 576223889
+      name: evroon/bracket
+    - id: 238988646
+      name: IBM/ibm-spectrum-scale-cloud-install
+    - id: 98013453
+      name: apache/atlas
+    - id: 238597776
+      name: shipwright-io/build
+    - id: 198912722
+      name: piraeusdatastore/piraeus-operator
+    - id: 848739292
+      name: cloudfoundry/terraform-provider-cloudfoundry
+    - id: 733395713
+      name: yuntijs/yunti-ui
+    - id: 896924279
+      name: moeru-ai/airi
+    - id: 207659922
+      name: quay/claircore
+    - id: 708775091
+      name: louislam/dockge
+    - id: 425916356
+      name: hazelcast/hazelcast-platform-operator-docs
+    - id: 507980192
+      name: epam/edp-headlamp
+    - id: 753338233
+      name: awslabs/sbt-aws
+    - id: 419661684
+      name: DataTalksClub/data-engineering-zoomcamp
+    - id: 128265535
+      name: GoogleCloudPlatform/click-to-deploy
+    - id: 486125557
+      name: devcontainers/cli
+    - id: 471369341
+      name: EsperoTech/yaade
+    - id: 472489889
+      name: graphops/launchpad-charts
+    - id: 420401610
+      name: logchange/logchange
+    - id: 309215235
+      name: helmwave/helmwave
+    - id: 126647111
+      name: cloud-ark/kubeplus
+    - id: 159704568
+      name: wireapp/wire-server-deploy
+    - id: 151991294
+      name: mbentley/docker-omada-controller
+    - id: 174412822
+      name: SumoLogic/sumologic-kubernetes-collection
+    - id: 505209384
+      name: xtrime-ru/antizapret-vpn-docker
+    - id: 825322920
+      name: EddieHubCommunity/HealthCheck
+    - id: 152318674
+      name: nutanix/terraform-provider-nutanix
+    - id: 643148357
+      name: trustyai-explainability/trustyai-service-operator
+    - id: 287313420
+      name: jetstack/version-checker
+    - id: 654583530
+      name: foundation-go/foundation
+    - id: 329260293
+      name: science-computing/butido
+    - id: 793379298
+      name: beclab/Terminus
+    - id: 485567631
+      name: formalco/terraform-provider-formal
+    - id: 533389348
+      name: grafana/tempo-operator
+    - id: 216632843
+      name: aws/aws-for-fluent-bit
+    - id: 67683496
+      name: hashicorp/vscode-terraform
+    - id: 201511855
+      name: exoscale/terraform-provider-exoscale
+    - id: 211406020
+      name: argoproj/gitops-engine
+    - id: 53174289
+      name: gruntwork-io/terratest
+    - id: 254972764
+      name: isaacHagoel/svelte-dnd-action
+    - id: 346928232
+      name: oracle/microservices-datadriven
+    - id: 136228185
+      name: spack/spack-infrastructure
+    - id: 278224098
+      name: coralogix/coralogix-operator
+    - id: 539526271
+      name: andrewdwallo/erpsaas
+    - id: 872217200
+      name: GluuFederation/gluu4
+    - id: 277951507
+      name: slackhq/astra
+    - id: 485383634
+      name: outscale/cluster-api-provider-outscale
+    - id: 108337180
+      name: rancher/rke
+    - id: 140244788
+      name: kubernetes-csi/external-snapshotter
+    - id: 208038527
+      name: hmcts/azure-platform-terraform
+    - id: 911701072
+      name: cleitonme/Whazing-SaaS
+    - id: 381891423
+      name: CanastaWiki/Canasta
+    - id: 338661788
+      name: exograph/exograph
+    - id: 309258998
+      name: webrecorder/browsertrix-crawler
+    - id: 772544268
+      name: ELEVATE-Project/sl-backend-automation
+    - id: 162752436
+      name: openshift/cloud-credential-operator
+    - id: 785088369
+      name: SourceMation/charts
+    - id: 590023059
+      name: RARgames/4gaBoards
+    - id: 138207223
+      name: knative/docs
+    - id: 497995184
+      name: juju/terraform-provider-juju
+    - id: 585523686
+      name: AurimasNav/k8s-at-home
+    - id: 170735521
+      name: bartfeenstra/betty
+    - id: 489384034
+      name: C2Devel/terraform-provider-rockitcloud
+    - id: 428374316
+      name: castai/cluster-controller
+    - id: 149515625
+      name: fluxcd/flagger
+    - id: 939618155
+      name: NVIDIA/KAI-Scheduler
+    - id: 188791808
+      name: CheckPointSW/CloudGuardIaaS
+    - id: 505498076
+      name: otterize/network-mapper
+    - id: 200776284
+      name: jpaztech/blog
+    - id: 535578006
+      name: DeiC-HPC/cotainr
+    - id: 777257066
+      name: gardener/gardener-extension-shoot-falco-service
+    - id: 779091052
+      name: apache/spark-kubernetes-operator
+    - id: 657204276
+      name: goniszewski/grimoire
+    - id: 198898598
+      name: replicatedhq/kURL
+    - id: 634289114
+      name: engageub/InternetIncome
+    - id: 268833180
+      name: aquasecurity/trivy-action
+    - id: 311230
+      name: mtconnect/cppagent
+    - id: 1056713
+      name: Particular/NServiceBus
+    - id: 112175527
+      name: MAIF/otoroshi
+    - id: 52776929
+      name: maptiler/tileserver-gl
+    - id: 263609668
+      name: crate/crate-operator
+    - id: 176206805
+      name: wso2/micro-integrator
+    - id: 367420442
+      name: canonical/k8s-dqlite
+    - id: 845272512
+      name: Api-programming-company/TisTracker
+    - id: 169382033
+      name: metal3-io/ironic-image
+    - id: 27275442
+      name: telekom-security/tpotce
+    - id: 575291015
+      name: RaunoT/plex-rewind
+    - id: 33904449
+      name: Kaggle/docker-python
+    - id: 498835024
+      name: hmlongco/Factory
+    - id: 190382296
+      name: haproxytech/kubernetes-ingress
+    - id: 751616553
+      name: langfuse/langfuse-k8s
+    - id: 402531405
+      name: microsoft/vscode-azurecontainerapps
+    - id: 51429040
+      name: faveosuite/faveo-invoicing-community
+    - id: 826952784
+      name: taksssss/EPG-Server
+    - id: 93446101
+      name: terraform-provider-openstack/terraform-provider-openstack
+    - id: 297927857
+      name: ministryofjustice/aws-root-account
+    - id: 118932996
+      name: convertigo/convertigo
+    - id: 697338262
+      name: udoma-co/terraform-provider-udoma
+    - id: 285445955
+      name: Erisa/Cliptok
+    - id: 634972366
+      name: maelstrom-software/maelstrom
+    - id: 947349598
+      name: stacklok/toolhive
+    - id: 317893861
+      name: openshift/operator-framework-olm
+    - id: 629723023
+      name: mykso/myks
+    - id: 235835211
+      name: sighupio/fury-distribution
+    - id: 55106124
+      name: factoriotools/factorio-docker
+    - id: 738589138
+      name: PaloAltoNetworks/terraform-aws-swfw-modules
+    - id: 72820841
+      name: Azure/acr
+    - id: 240234279
+      name: cowboysysop/charts
+    - id: 731380504
+      name: kevinthedang/discord-ollama
+    - id: 283868135
+      name: subzeroid/instagrapi
+    - id: 745388807
+      name: thijsvanloef/palworld-server-docker
+    - id: 696777593
+      name: grafana/docker-otel-lgtm
+    - id: 216631734
+      name: aws/aws-node-termination-handler
+    - id: 44639036
+      name: helm/helm-www
+    - id: 76367175
+      name: k8snetworkplumbingwg/multus-cni
+    - id: 46266306
+      name: invoiceninja/dockerfiles
+    - id: 52522046
+      name: Ombi-app/Ombi
+    - id: 294181202
+      name: regclient/regclient
+    - id: 89951797
+      name: dotnet/docker-tools
+    - id: 662391505
+      name: apache/doris-operator
+    - id: 615731791
+      name: RandomNinjaAtk/arr-scripts
+    - id: 296009047
+      name: recognizegroup/terraform
+    - id: 134471640
+      name: kubernetes/cloud-provider-vsphere
+    - id: 750132754
+      name: txtx/txtx
+    - id: 758102697
+      name: terraform-ibm-modules/terraform-ibm-observability-da
+    - id: 387484203
+      name: coderxio/sagerx
+    - id: 829540769
+      name: webhookx-io/webhookx
+    - id: 601078135
+      name: terraform-ibm-modules/terraform-ibm-base-ocp-vpc
+    - id: 527535221
+      name: openkruise/kruise-game
+    - id: 499045218
+      name: StarRocks/starrocks-kubernetes-operator
+    - id: 665460740
+      name: terraform-ibm-modules/terraform-ibm-icd-elasticsearch
+    - id: 880479831
+      name: kgateway-dev/kgateway.dev
+    - id: 345699776
+      name: Ontotext-AD/graphdb-helm
+    - id: 583122491
+      name: visiativ-agora/terraform-azurerm-caf
+    - id: 91441949
+      name: unep-grid/mapx
+    - id: 317908325
+      name: cosmoconsult/container-scripts-for-selfservice
+    - id: 550141550
+      name: shakacode/control-plane-flow
+    - id: 777399831
+      name: shyim/wolfi-php
+    - id: 188207281
+      name: civo/terraform-provider-civo
+    - id: 130843750
+      name: kubernetes-monitoring/kubernetes-mixin
+    - id: 522592754
+      name: CDCgov/tostadas
+    - id: 132013697
+      name: reportportal/kubernetes
+    - id: 725053880
+      name: DayMarket/infra-docker
+    - id: 136213126
+      name: hetznercloud/terraform-provider-hcloud
+    - id: 131331275
+      name: cloudposse/docs
+    - id: 227346582
+      name: compose-spec/compose-go
+    - id: 650561814
+      name: mezmo/terraform-provider-mezmo
+    - id: 775364090
+      name: GraduationDku/tastyHub
+    - id: 691671214
+      name: nubificus/urunc
+    - id: 775025626
+      name: chronosphereio/terraform-provider-chronosphere
+    - id: 826621695
+      name: docker/labs-ai-tools-for-devs
+    - id: 610880732
+      name: oci-landing-zones/oci-landing-zone-operating-entities
+    - id: 358139617
+      name: dell/terraform-provider-powerstore
+    - id: 88978363
+      name: netbox-community/netbox-docker
+    - id: 92829645
+      name: aquasecurity/aqua-helm
+    - id: 541415678
+      name: Interhyp/metadata-service
+    - id: 217268647
+      name: liqd/adhocracy-plus
+    - id: 743658845
+      name: rumenpetrov/fe-hunger-games
+    - id: 536231886
+      name: EnterpriseDB/terraform-provider-biganimal
+    - id: 163906733
+      name: kubernetes-sigs/secrets-store-csi-driver
+    - id: 39144867
+      name: jupyter/docker-stacks
+    - id: 203545818
+      name: openebs/zfs-localpv
+    - id: 292511965
+      name: elastisys/compliantkubernetes
+    - id: 93446112
+      name: spotinst/terraform-provider-spotinst
+    - id: 322607229
+      name: Alfresco/alfresco-build-tools
+    - id: 289747144
+      name: brocoders/nestjs-boilerplate
+    - id: 162441106
+      name: hetznercloud/csi-driver
+    - id: 186468979
+      name: rancher/terraform-provider-rancher2
+    - id: 93104559
+      name: MozillaSecurity/orion
+    - id: 605573518
+      name: NVIDIA/cloud-native-docs
+    - id: 145490026
+      name: testcontainers/testcontainers-rs
+    - id: 221468226
+      name: apache/apisix-ingress-controller
+    - id: 835663246
+      name: vocdoni/saas-backend
+    - id: 486884451
+      name: metatube-community/metatube-sdk-go
+    - id: 120650407
+      name: operator-framework/operator-sdk
+    - id: 242855443
+      name: jsonnet-libs/k8s
+    - id: 675965180
+      name: THEY-Consulting/they-terraform
+    - id: 501637507
+      name: 4ALLPORTAL/helm-charts
+    - id: 82394452
+      name: MarkEWaite/docker-lfs
+    - id: 36817457
+      name: docker/hub-feedback
+    - id: 157924883
+      name: selectel/terraform-provider-selectel
+    - id: 652819813
+      name: pingidentity/terraform-provider-pingfederate
+    - id: 305793798
+      name: sablierapp/sablier
+    - id: 802330841
+      name: fedirz/faster-whisper-server
+    - id: 129965578
+      name: 1Password/scim-examples
+    - id: 452012446
+      name: tyriis/home-ops
+    - id: 536067096
+      name: mondoohq/cnspec-policies
+    - id: 452701147
+      name: kubernetes-sigs/kernel-module-management
+    - id: 59044721
+      name: kubernetes/node-problem-detector
+    - id: 578554538
+      name: helpwave/services
+    - id: 603117527
+      name: robusta-dev/krr
+    - id: 280142615
+      name: newrelic/nri-kubernetes
+    - id: 54596517
+      name: kubernetes/release
+    - id: 472405454
+      name: p2-inc/keycloak-orgs
+    - id: 143460965
+      name: GoogleCloudPlatform/microservices-demo
+    - id: 668163127
+      name: Azure/terraform-azurerm-avm-res-storage-storageaccount
+    - id: 615259748
+      name: kr8s-org/kr8s
+    - id: 597584935
+      name: MichelFR/MqDockerUp
+    - id: 269605127
+      name: sitkoru/Sitko.Core
+    - id: 162656117
+      name: canonical/bundle-kubeflow
+    - id: 733142262
+      name: tsaridas/stremio-docker
+    - id: 851355576
+      name: beyond-sw-camp/be06-fin-MINIONZ-CalIT
+    - id: 213961126
+      name: pulp/pulp_container
+    - id: 123613440
+      name: dmwm/CMSKubernetes
+    - id: 737077511
+      name: josephnhtam/live-streaming-server-net
+    - id: 869403474
+      name: softwareone-platform/optscale
+    - id: 754345634
+      name: edurange/edurange3
+    - id: 353125883
+      name: monogon-dev/monogon
+    - id: 740468749
+      name: PaloAltoNetworks/terraform-azurerm-swfw-modules
+    - id: 44610249
+      name: zentralopensource/zentral
+    - id: 408843751
+      name: containers/netavark
+    - id: 894060097
+      name: The-mallocers/Transcendence
+    - id: 665168221
+      name: VibeNL/GhostfolioSidekick
+    - id: 354647574
+      name: spacelift-io/spacectl
+    - id: 327003095
+      name: k0sproject/k0sctl
+    - id: 310426656
+      name: Peppermint-Lab/peppermint
+    - id: 164661368
+      name: deep-learning-indaba/Baobab
+    - id: 141641684
+      name: nimbix/jarvice-helm
+    - id: 668325891
+      name: vmware-tanzu/secrets-manager
+    - id: 290415303
+      name: meshery/meshkit
+    - id: 477419126
+      name: iic-jku/IIC-OSIC-TOOLS
+    - id: 223211268
+      name: democratic-csi/democratic-csi
+    - id: 819864674
+      name: numerique-gouv/meet
+    - id: 335331397
+      name: coralogix/terraform-provider-coralogix
+    - id: 22484898
+      name: docker-library/docs
+    - id: 561149177
+      name: aws/aws-application-networking-k8s
+    - id: 687049294
+      name: kviklet/kviklet
+    - id: 962564
+      name: expertiza/expertiza
+    - id: 278397560
+      name: geoserver/geoserver-cloud
+    - id: 440496898
+      name: flux-iac/tofu-controller
+    - id: 131640155
+      name: warrensbox/terraform-switcher
+    - id: 316028075
+      name: kedacore/http-add-on
+    - id: 22983651
+      name: nager/Nager.Date
+    - id: 366089286
+      name: SonarSource/sonar-iac
+    - id: 61153677
+      name: m3db/m3
+    - id: 349227174
+      name: Swetrix/swetrix
+    - id: 685938707
+      name: deskpro/docker-product-base
+    - id: 529080126
+      name: mattwebbio/orbital-sync
+    - id: 911070655
+      name: dingodb/dingofs
+    - id: 800632485
+      name: subtrace/subtrace
+    - id: 311463909
+      name: laravel/sail
+    - id: 160796624
+      name: unchainedshop/unchained
+    - id: 156402736
+      name: binhex/arch-qbittorrentvpn
+    - id: 418411927
+      name: RADAR-base/radar-helm-charts
+    - id: 462488677
+      name: coralogix/terraform-coralogix-aws
+    - id: 663862438
+      name: pgautoupgrade/docker-pgautoupgrade
+    - id: 318623421
+      name: Der-Henning/tgtg
+    - id: 823911366
+      name: cloudpilot-ai/karpenter-provider-alibabacloud
+    - id: 395105675
+      name: pomerium/ingress-controller
+    - id: 591205899
+      name: junobuild/juno
+    - id: 782416935
+      name: mozillazg/ptcpdump
+    - id: 4726428
+      name: miso-lims/miso-lims
+    - id: 4751958
+      name: rafalp/Misago
+    - id: 815887211
+      name: cleitonme/Whazing-SaaS
+    - id: 347000736
+      name: Forceu/Gokapi
+    - id: 319976193
+      name: cds-snc/forms-terraform
+    - id: 872726164
+      name: domalab/ha-unraid
+    - id: 112944063
+      name: krakend/krakend-ce
+    - id: 733971563
+      name: lingarr-translate/lingarr
+    - id: 233809604
+      name: artifacthub/hub
+    - id: 561743112
+      name: bentoml/yatai-image-builder
+    - id: 800418764
+      name: uh-dcm/news-article-collection-container
+    - id: 563625516
+      name: zeabur/zeabur
+    - id: 718213959
+      name: AvitalTamir/cyphernetes
+    - id: 429510684
+      name: gefyrahq/gefyra
+    - id: 495692811
+      name: floryn90/docker-hugo
+    - id: 347929503
+      name: BeryJu/k8s
+    - id: 815467414
+      name: sergi0g/cup
+    - id: 501183905
+      name: oracle-samples/maa
+    - id: 123190312
+      name: roundcube/roundcubemail-docker
+    - id: 345794709
+      name: serversideup/docker-php
+    - id: 496581255
+      name: budimanjojo/talhelper
+    - id: 619260050
+      name: vdsm/virtual-dsm
+    - id: 285482923
+      name: stackitcloud/gardener
+    - id: 178249461
+      name: open-policy-agent/conftest
+    - id: 943394904
+      name: open-edge-platform/edge-ai-libraries
+    - id: 137915065
+      name: fussybeaver/bollard
+    - id: 504365279
+      name: kubeclipper/kubeclipper
+    - id: 599788608
+      name: fatihtokus/scan2html
+    - id: 371457897
+      name: nautobot/helm-charts
+    - id: 52690290
+      name: dmacvicar/terraform-provider-libvirt
+    - id: 16607898
+      name: harness/harness
+    - id: 700824365
+      name: ironcore-dev/libvirt-provider
+    - id: 373413574
+      name: lablabs/ansible-role-rke2
+    - id: 839187308
+      name: etcd-io/etcd-operator
+    - id: 458053748
+      name: shinsenter/php
+    - id: 462667874
+      name: ministryofjustice/opg-sirius-lpa-frontend
+    - id: 112189156
+      name: jenkins-infra/kubernetes-management
+    - id: 541831874
+      name: PINTO0309/onnx2tf
+    - id: 360837116
+      name: canonical/terraform-provider-maas
+    - id: 540020892
+      name: ahmetoner/whisper-asr-webservice
+    - id: 241463753
+      name: hashicorp/terraform-ls
+    - id: 666084768
+      name: taubyte/tau
+    - id: 16752620
+      name: gogs/gogs
+    - id: 86740149
+      name: emissary-ingress/emissary
+    - id: 540917299
+      name: jaywcjlove/reference
+    - id: 416602465
+      name: daniel-hauser/moneyman
+    - id: 111354986
+      name: cattle-ops/terraform-aws-gitlab-runner
+    - id: 92132038
+      name: kubernetes-sigs/metrics-server
+    - id: 940715397
+      name: ls1intum/edutelligence
+    - id: 359823202
+      name: nobl9/terraform-provider-nobl9
+    - id: 675986268
+      name: bytedance/vArmor
+    - id: 113222463
+      name: oracle/weblogic-kubernetes-operator
+    - id: 65609526
+      name: jianyuan/terraform-provider-sentry
+    - id: 21741891
+      name: spring-cloud/spring-cloud-netflix
+    - id: 535067147
+      name: SapiensAnatis/Dawnshard
+    - id: 117169328
+      name: Azure/terraform
+    - id: 235817168
+      name: youtype/mypy_boto3_builder
+    - id: 493929679
+      name: SnickerdoodleLabs/protocol
+    - id: 21704134
+      name: flannel-io/flannel
+    - id: 269336148
+      name: sickcodes/Docker-OSX
+    - id: 851052800
+      name: COSC481W-2024Fall/MLite
+    - id: 376885239
+      name: shorelinesoftware/terraform-provider-shoreline
+    - id: 580443474
+      name: cryostatio/cryostat
+    - id: 80172100
+      name: kubernetes-sigs/cri-tools
+    - id: 620006704
+      name: coder/envbuilder
+    - id: 128018428
+      name: alibaba/Sentinel
+    - id: 166778187
+      name: pace/bricks
+    - id: 451493771
+      name: kiwix/operations
+    - id: 373247402
+      name: dell/csm-replication
+    - id: 520897311
+      name: TheRacetrack/racetrack
+    - id: 589430875
+      name: nwithan8/unraid_templates
+    - id: 71341253
+      name: api-platform/demo
+    - id: 656075575
+      name: dromara/orion-visor
+    - id: 104974983
+      name: UpCloudLtd/terraform-provider-upcloud
+    - id: 245970010
+      name: netgroup-polito/CrownLabs
+    - id: 819864674
+      name: suitenumerique/meet
+    - id: 277526580
+      name: openSUSE/MirrorCache
+    - id: 676520650
+      name: gardener/diki
+    - id: 558506727
+      name: helium/helium-foundation-k8s
+    - id: 570557896
+      name: ESPresense/ESPresense-companion
+    - id: 631953129
+      name: Hamburg-Port-Authority/kubernetes-service-catalog
+    - id: 167666671
+      name: cyrilgdn/terraform-provider-postgresql
+    - id: 92401828
+      name: DecisionsDev/odm-docker-kubernetes
+    - id: 329332354
+      name: cert-manager/aws-privateca-issuer
+    - id: 706266756
+      name: CIROH-UA/ngen-datastream
+    - id: 849411001
+      name: qdrant/kubernetes-api
+    - id: 493801599
+      name: TiVo/terraform-provider-splunk-itsi
+    - id: 615208684
+      name: YanWenKun/ComfyUI-Docker
+    - id: 74496173
+      name: kubernetes/kubeadm
+    - id: 467328478
+      name: SPARKLEWINNER/starjobs-client
+    - id: 407540085
+      name: aneoconsulting/ArmoniK
+    - id: 430841291
+      name: microsoft/azure-pipelines-terraform
+    - id: 181233957
+      name: linuxserver/docker-mods
+    - id: 373089792
+      name: leg100/otf
+    - id: 527902996
+      name: Edge-Center/terraform-provider-edgecenter
+    - id: 201514509
+      name: jamaljsr/polar
+    - id: 88608345
+      name: kubereboot/kured
+    - id: 309733152
+      name: aws-samples/aws2tf
+    - id: 426785315
+      name: christianhuth/helm-charts
+    - id: 329395509
+      name: CrowdStrike/falcon-helm
+    - id: 241092383
+      name: docker/build-push-action
+    - id: 414808003
+      name: jp00p/AGIMUS
+    - id: 757940934
+      name: PaloAltoNetworks/pan-os-codegen
+    - id: 470577427
+      name: osbuild/cloud-image-val
+    - id: 700291420
+      name: Carl-Johnsons/Chat-Application
+    - id: 555674024
+      name: ruanformigoni/gameimage
+    - id: 328812679
+      name: CrowdStrike/falcon-operator
+    - id: 36488517
+      name: buildkite/elastic-ci-stack-for-aws
+    - id: 643412418
+      name: traPtitech/manifest
+    - id: 449402772
+      name: oracle-quickstart/oci-kubernetes-monitoring
+    - id: 793454852
+      name: ragapp/ragapp
+    - id: 108295527
+      name: SkautDevs/kissj
+    - id: 672900522
+      name: Ontotext-AD/terraform-aws-graphdb
+    - id: 268826962
+      name: terraform-aws-modules/terraform-aws-lambda
+    - id: 474985790
+      name: FRINXio/helm-charts
+    - id: 630487072
+      name: vmware/terraform-provider-vcf
+    - id: 770302744
+      name: NerdConnection/Raspberry-Pi-5-Computer-Vision
+    - id: 739512592
+      name: BigBoot/AutoKuma
+    - id: 503127327
+      name: pingidentity/terraform-provider-pingone
+    - id: 962393356
+      name: open-edge-platform/edge-microvisor-toolkit
+    - id: 824541776
+      name: xerrors/Yuxi-Know
+    - id: 698739381
+      name: meshery/schemas
+    - id: 615960920
+      name: TeskaLabs/asab-maestro-library
+    - id: 732506908
+      name: MatthewL246/pretendo-docker
+    - id: 91861703
+      name: docker/docker-ce-packaging
+    - id: 184717787
+      name: openebs/website
+    - id: 664629707
+      name: SAP/cap-operator
+    - id: 537157606
+      name: opalsecurity/terraform-provider-opal
+    - id: 406296119
+      name: percona/percona-server-mysql-operator
+    - id: 859083953
+      name: hardingadonis/ligevan
+    - id: 411696354
+      name: wandb/terraform-google-wandb
+    - id: 148756498
+      name: falcosecurity/falcosidekick
+    - id: 645855657
+      name: NethermindEth/helm-charts
+    - id: 413586239
+      name: slntopp/nocloud
+    - id: 139171577
+      name: knowledgesystems/knowledgesystems-k8s-deployment
+    - id: 498979283
+      name: netlogix/docker
+    - id: 534826894
+      name: zabbix-community/helm-zabbix
+    - id: 829161238
+      name: Juniper/terraform-provider-mist
+    - id: 536768553
+      name: shinamicorp/sui-docker
+    - id: 680634709
+      name: maldoinc/wireup
+    - id: 590363017
+      name: sovity/edc-ui
+    - id: 706981767
+      name: Azure/AppConfiguration-KubernetesProvider
+    - id: 716412370
+      name: hslr-s/sun-panel
+    - id: 424920574
+      name: TheAxelander/OpenBudgeteer
+    - id: 279751471
+      name: dpc-sdp/bay
+    - id: 719953291
+      name: datafold/helm-charts
+    - id: 339552385
+      name: mandarons/icloud-docker
+    - id: 137372479
+      name: sillsdev/appbuilder-portal
+    - id: 539390450
+      name: wso2/docs-apk
+    - id: 242175594
+      name: FairwindsOps/insights-plugins
+    - id: 648572792
+      name: xenserver/terraform-provider-xenserver
+    - id: 407142976
+      name: ydb-platform/ydb-kubernetes-operator
+    - id: 330405184
+      name: turbot/steampipe
+    - id: 419517499
+      name: oracle/oracle-database-operator
+    - id: 187335810
+      name: jesseduffield/lazydocker
+    - id: 94779471
+      name: aquasecurity/kube-bench
+    - id: 150465924
+      name: F5Networks/terraform-provider-bigip
+    - id: 250050091
+      name: Azure/kubelogin
+    - id: 875938056
+      name: silogen/cluster-forge
+    - id: 848296060
+      name: SAP/terraform-exporter-btp
+    - id: 809475352
+      name: dockur/macos
+    - id: 271725531
+      name: sbercloud-terraform/terraform-provider-sbercloud
+    - id: 385179469
+      name: getstation/desktop-app
+    - id: 165707159
+      name: FairwindsOps/charts
+    - id: 644651253
+      name: runabol/tork
+    - id: 124976393
+      name: oatpp/oatpp
+    - id: 817949277
+      name: argoproj-labs/argocd-ephemeral-access
+    - id: 648751227
+      name: cnpem/epics-in-docker
+    - id: 760726157
+      name: seqeralabs/cx-field-tools-installer
+    - id: 547077074
+      name: Axual/terraform-provider-axual
+    - id: 123427146
+      name: snyk/snyk-docker-plugin
+    - id: 376307389
+      name: games-on-whales/gow
+    - id: 787260502
+      name: Traceableai/terraform-provider-traceable
+    - id: 721558220
+      name: jodzga/autoscaler
+    - id: 701266204
+      name: automat-it/terraform-aws-eks-auxiliary
+    - id: 372972551
+      name: omics-datascience/multiomix
+    - id: 87231675
+      name: topfreegames/maestro
+    - id: 27929056
+      name: nodejs/docker-node
+    - id: 467960240
+      name: cockroachdb/terraform-provider-cockroach
+    - id: 18403824
+      name: alphagov/collections
+    - id: 523416658
+      name: fr3fou/home
+    - id: 717316470
+      name: SanjinDedic/agent_games
+    - id: 723535263
+      name: hcavarsan/kftray
+    - id: 406740721
+      name: coroot/coroot-node-agent
+    - id: 699275912
+      name: ONLYOFFICE/DocSpace-buildtools
+    - id: 191308211
+      name: jumpserver/koko
+    - id: 847954278
+      name: wri/terramatch-microservices
+    - id: 467035748
+      name: netobserv/netobserv-ebpf-agent
+    - id: 872358547
+      name: giuseppe99barchetta/SuggestArr
+    - id: 363426109
+      name: Venafi/VenafiPS
+    - id: 785682005
+      name: numerous-com/numerous-sdk
+    - id: 97129318
+      name: ministryofjustice/analytics-platform-control-panel
+    - id: 698669114
+      name: joedwards32/CS2
+    - id: 446786489
+      name: openclimatefix/ocf-infrastructure
+    - id: 236025727
+      name: boostercloud/booster
+    - id: 203553224
+      name: timescale/timescaledb-docker-ha
+    - id: 549096434
+      name: hermetoproject/hermeto
+    - id: 734546630
+      name: streamnative/terraform-provider-streamnative
+    - id: 520220155
+      name: yugabyte/terraform-provider-ybm
+    - id: 421552845
+      name: oracle/oracle-db-appdev-monitoring
+    - id: 281641020
+      name: weka/csi-wekafs
+    - id: 88471725
+      name: cloudnativelabs/kube-router
+    - id: 355360954
+      name: aws-ia/terraform-aws-eks-blueprints
+    - id: 87699760
+      name: vulhub/vulhub
+    - id: 797148704
+      name: api7/api7-ingress-controller
+    - id: 490310418
+      name: nebari-dev/nebari-docs
+    - id: 320185877
+      name: boldbi/boldbi-kubernetes
+    - id: 169089379
+      name: nuvla/ui
+    - id: 760508362
+      name: ADORSYS-GIS/e2e-banking-app
+    - id: 567309389
+      name: Azure/AKS-Edge
+    - id: 687724509
+      name: zelikos/davincibox
+    - id: 642974716
+      name: SovereignCloudStack/cluster-stacks
+    - id: 235510448
+      name: instaclustr/terraform-provider-instaclustr
+    - id: 375798787
+      name: saltyorg/Saltbox
+    - id: 665003039
+      name: unicef/giga-dagster
+    - id: 139204938
+      name: kubernetes-sigs/gcp-filestore-csi-driver
+    - id: 238752355
+      name: GoogleCloudPlatform/anthos-service-mesh-packages
+    - id: 254207433
+      name: confluentinc/jmx-monitoring-stacks
+    - id: 271888852
+      name: aws-cloudformation/cloudformation-guard
+    - id: 322475728
+      name: bytedance/Elkeid
+    - id: 278933035
+      name: RustScan/RustScan
+    - id: 100482658
+      name: borgmatic-collective/docker-borgmatic
+    - id: 351854144
+      name: Kron4ek/Conty
+    - id: 592055205
+      name: ViktorUJ/cks
+    - id: 262792027
+      name: docker-easyconnect/docker-easyconnect
+    - id: 384747368
+      name: OpsLevel/terraform-provider-opslevel
+    - id: 129089460
+      name: mlocati/docker-php-extension-installer
+    - id: 469443995
+      name: netbrain/zwift
+    - id: 699534226
+      name: Smana/cloud-native-ref
+    - id: 863748145
+      name: NVIDIA-AI-Blueprints/vulnerability-analysis
+    - id: 421373551
+      name: csi-addons/kubernetes-csi-addons
+    - id: 870040228
+      name: luisrca-tech/Attios-CRM
+    - id: 801657154
+      name: bpfman/bpfman-operator
+    - id: 754527535
+      name: damacus/home-ops
+    - id: 275918955
+      name: projectcapsule/capsule
+    - id: 99036030
+      name: kubernetes-sigs/aws-iam-authenticator
+    - id: 291525506
+      name: gabrieldemarmiesse/python-on-whales
+    - id: 542729513
+      name: stakwork/sphinx-swarm
+    - id: 608711730
+      name: joryirving/home-ops
+    - id: 763983385
+      name: UKHomeOffice/core-cloud-terraform-modules
+    - id: 209643668
+      name: openshift/linuxptp-daemon
+    - id: 202345924
+      name: spacelift-io/terraform-provider-spacelift
+    - id: 175895515
+      name: carvel-dev/kapp
+    - id: 358007078
+      name: aws/secrets-store-csi-driver-provider-aws
+    - id: 496638610
+      name: vehagn/homelab
+    - id: 854659462
+      name: AlexGustafsson/cupdate
+    - id: 812217288
+      name: ipitio/backage
+    - id: 771382347
+      name: caas-team/py-kube-downscaler
+    - id: 35156663
+      name: SonarSource/docker-sonarqube
+    - id: 797325032
+      name: OpenVPN/terraform-provider-cloudconnexa
+    - id: 816789376
+      name: depromeet/WalWal-server
+    - id: 234632572
+      name: lfn-cnti/testsuite
+    - id: 850195226
+      name: NitroRCr/AIaW
+    - id: 491228412
+      name: escapingnetwork/core-keeper-dedicated
+    - id: 751872684
+      name: holos-run/holos
+    - id: 313355868
+      name: hezhijie0327/DockerimageBuilder
+    - id: 807284112
+      name: zijiren233/sealos
+    - id: 828341600
+      name: dingodb/dingofs
+    - id: 613905799
+      name: JetBrains/qodana-docker
+    - id: 227435368
+      name: flanksource/canary-checker
+    - id: 745454408
+      name: SaaShup/netbox-docker-agent
+    - id: 624585212
+      name: hashicorp/terraform-enterprise-helm
+    - id: 160878303
+      name: cloudflare/cf-terraforming
+    - id: 13973168
+      name: discourse/discourse_docker
+    - id: 205836734
+      name: jeremmfr/terraform-provider-junos
+    - id: 314070291
+      name: Synthetixio/synpress
+    - id: 136925861
+      name: tikk3r/flocs
+    - id: 651667009
+      name: pelotech/foundation
+    - id: 21054928
+      name: docker-library/python
+    - id: 196433993
+      name: TheCaptain989/radarr-striptracks
+    - id: 354002444
+      name: offen/docker-volume-backup
+    - id: 332999480
+      name: konstructio/kubefirst
+    - id: 700176268
+      name: trentnbauer/agg
+    - id: 702167193
+      name: Minituff/nautical-backup
+    - id: 228693638
+      name: vmware-tanzu/helm-charts
+    - id: 862209751
+      name: WJQSERVER-STUDIO/ghproxy
+    - id: 354394886
+      name: EnigmaCurry/d.rymcg.tech
+    - id: 131873230
+      name: delphix/appliance-build
+    - id: 115122274
+      name: gardener/machine-controller-manager
+    - id: 61392620
+      name: open-lambda/open-lambda
+    - id: 426559977
+      name: micrometer-metrics/tracing
+    - id: 850944233
+      name: Sathvik-Rao/ClipCascade
+    - id: 809790189
+      name: canonical/tempo-coordinator-k8s-operator
+    - id: 856968936
+      name: mikeiken/tam-prog
+    - id: 254084650
+      name: Azure/jpazpaas
+    - id: 170343301
+      name: rabbitmq/cluster-operator
+    - id: 26722690
+      name: SoftInstigate/restheart
+    - id: 134947517
+      name: cloudkats/docker-tools
+    - id: 383553362
+      name: axeII/home-ops
+    - id: 508001850
+      name: terraform-ibm-modules/terraform-ibm-landing-zone
+    - id: 245380091
+      name: pingcap/docs-tidb-operator
+    - id: 678591884
+      name: jezzsantos/saastack
+    - id: 405102907
+      name: crowdsecurity/helm-charts
+    - id: 637866942
+      name: kejilion/sh
+    - id: 16338711
+      name: apache/airavata
+    - id: 369438883
+      name: quortex/kubestatic
+    - id: 333839183
+      name: bcgov/GDX-Analytics-microservice
+    - id: 925270205
+      name: trycua/cua
+    - id: 94173282
+      name: lucaslorentz/caddy-docker-proxy
+    - id: 490042415
+      name: euanwm/OpenWeightlifting
+    - id: 2651887
+      name: alphagov/smart-answers
+    - id: 518397812
+      name: SkyUOI/OurChat
+    - id: 754190674
+      name: tx-pts-dai/terraform-aws-kubernetes-platform
+    - id: 752615721
+      name: Guovin/TV
+    - id: 356835174
+      name: OT-CONTAINER-KIT/helm-charts
+    - id: 661966727
+      name: middleware-labs/mw-agent
+    - id: 315769786
+      name: 8gears/n8n-helm-chart
+    - id: 711970303
+      name: CiscoDevNet/terraform-provider-catalystcenter
+    - id: 540576983
+      name: kubecolor/kubecolor
+    - id: 493404403
+      name: bcgov/nr-fom
+    - id: 549077250
+      name: oracle-devrel/cd3-automation-toolkit
+    - id: 864959464
+      name: ZakariaElbouzkri/transcendance
+    - id: 722588788
+      name: growupanand/ConvoForm
+    - id: 712736463
+      name: stackbuilders/nixpkgs-terraform
+    - id: 335312873
+      name: traefik/hub
+    - id: 849602235
+      name: bonsite/bonsite
+    - id: 522867425
+      name: port-labs/terraform-provider-port-labs
+    - id: 417395881
+      name: Tricentis/qTest.Charts
+    - id: 538612842
+      name: klothoplatform/klotho
+    - id: 543094110
+      name: gardener/gardener-extension-registry-cache
+    - id: 58283472
+      name: savoirfairelinux/cqfd
+    - id: 223206314
+      name: nationalarchives/tdr-terraform-environments
+    - id: 599131296
+      name: openstack-k8s-operators/tcib
+    - id: 119094825
+      name: jfrog/JFrog-Cloud-Installers
+    - id: 769733911
+      name: Sella-GH/AzzyBot
+    - id: 439070028
+      name: cnk3x/xunlei
+    - id: 323109016
+      name: truecharts/charts
+    - id: 857957580
+      name: DobDub/TrackMyDegree
+    - id: 344553996
+      name: quarkiverse/quarkus-operator-sdk
+    - id: 156934209
+      name: Consdata/kouncil
+    - id: 809498727
+      name: canonical/cluster-api-k8s
+    - id: 540642314
+      name: redhat-developer/mapt
+    - id: 637682935
+      name: quentintaranpino/nostrcheck-server
+    - id: 474074901
+      name: PAWECOGmbH/saaster
+    - id: 339200406
+      name: petoju/terraform-provider-mysql
+    - id: 814774823
+      name: illumio/terraform-provider-illumio-cloudsecure
+    - id: 619435182
+      name: Azure/azure-functions-on-container-apps
+    - id: 792217631
+      name: syntho-ai/deployment-tools
+    - id: 120520862
+      name: runatlantis/atlantis-tests
+    - id: 294174862
+      name: sassoftware/viya4-deployment
+    - id: 197559490
+      name: ViewTube/viewtube
+    - id: 774278787
+      name: severalnines/helm-charts
+    - id: 273180514
+      name: swan-cern/swan-charts
+    - id: 127954029
+      name: lanl/dfnWorks
+    - id: 376415419
+      name: zengxs/gitlab-arm64
+    - id: 218043270
+      name: namecheap/ilc
+    - id: 842013617
+      name: WANG-Guangxin/DockerPull
+    - id: 363204786
+      name: pyrra-dev/pyrra
+    - id: 17276380
+      name: GoogleCloudPlatform/cloud-sdk-docker
+    - id: 122529924
+      name: rackspace/runway
+    - id: 97382188
+      name: lavalink-devs/Lavalink
+    - id: 419452495
+      name: jalantechnologies/boilerplate-mern
+    - id: 751983018
+      name: kitops-ml/kitops
+    - id: 592200521
+      name: it-at-m/helm-charts
+    - id: 327685695
+      name: tailscale/terraform-provider-tailscale
+    - id: 486517589
+      name: cloudtty/cloudtty
+    - id: 125524643
+      name: Sitecore/docker-images
+    - id: 135115234
+      name: equinor/radix-operator
+    - id: 258625472
+      name: oracle/okafka
+    - id: 502904686
+      name: maxplanck-ie/parkour2
+    - id: 341547171
+      name: codefresh-io/argo-cd
+    - id: 563163625
+      name: githedgehog/fabric
+    - id: 606751742
+      name: openbfdev/bfdev
+    - id: 535110107
+      name: dev-xo/remix-saas
+    - id: 422409992
+      name: Mario-Junior/trybe-exercises
+    - id: 844579362
+      name: domain-protect/terraform-aws-domain-protect
+    - id: 290168435
+      name: spacelift-io/terraform-aws-spacelift-workerpool-on-ec2
+    - id: 857315781
+      name: Rtarun3606k/Walkez
+    - id: 46880661
+      name: amacneil/dbmate
+    - id: 671196957
+      name: SAP-samples/btp-cap-multitenant-saas
+    - id: 217888995
+      name: adam-rms/adam-rms
+    - id: 437281588
+      name: conference-hall/conference-hall
+    - id: 428415771
+      name: 9-FS/nhentai_archivist
+    - id: 800869614
+      name: TOBE-TOGETHER/tobe-blog
+    - id: 610499190
+      name: google/osdfir-infrastructure
+    - id: 436425883
+      name: GoogleCloudPlatform/appengine-java-standard
+    - id: 485272500
+      name: MatthewJohn/terrareg
+    - id: 122335237
+      name: infobloxopen/terraform-provider-infoblox
+    - id: 783445579
+      name: drikusroor/brazil-blog
+    - id: 716445208
+      name: opsre/WatchAlert
+    - id: 140638875
+      name: tl-its-umich-edu/my-learning-analytics
+    - id: 225690537
+      name: planetscale/vitess-operator
+    - id: 682598796
+      name: google/kube-startup-cpu-boost
+    - id: 536623400
+      name: openstack-k8s-operators/octavia-operator
+    - id: 208118727
+      name: boostorg/json
+    - id: 825285873
+      name: sahara101/Movie-Roulette
+    - id: 610775130
+      name: r2c-CSE/semgrep-utilities
+    - id: 267427111
+      name: GoogleCloudPlatform/secrets-store-csi-driver-provider-gcp
+    - id: 106518101
+      name: paralect/ship
+    - id: 551654775
+      name: ishioni/homelab-ops
+    - id: 564017681
+      name: engedaam/karpenter
+    - id: 625205215
+      name: fscarmen2/Argo-Nezha-Service-Container
+    - id: 125116575
+      name: Jigsaw-Code/outline-server
+    - id: 158278370
+      name: sighupio/furyctl
+    - id: 244937107
+      name: yandex/yandex-taxi-testsuite
+    - id: 452250821
+      name: ionos-cloud/crossplane-provider-ionoscloud
+    - id: 631569264
+      name: sergelogvinov/proxmox-csi-plugin
+    - id: 138641229
+      name: AEGEE/frontend
+    - id: 682085013
+      name: nullplatform/terraform-provider-nullplatform
