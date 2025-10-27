@@ -76,17 +76,17 @@ meta:
       count: 316219
 data:
   labels:
-    - GR-A
-    - GR-I
-    - GR-G
-    - GR-C
-    - GR-F
-    - GR-B
-    - GR-M
-    - GR-L
-    - GR-J
-    - GR-H
-    - GR-E
-    - GR-K
     - GR-69
+    - GR-A
+    - GR-B
+    - GR-C
     - GR-D
+    - GR-E
+    - GR-F
+    - GR-G
+    - GR-H
+    - GR-I
+    - GR-J
+    - GR-K
+    - GR-L
+    - GR-M

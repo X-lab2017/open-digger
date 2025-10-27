@@ -76,17 +76,17 @@ meta:
       count: 15240
 data:
   labels:
-    - NA-KA
+    - NA-CA
     - NA-ER
     - NA-HA
+    - NA-KA
     - NA-KE
-    - NA-KW
     - NA-KH
     - NA-KU
-    - NA-OW
-    - NA-OH
-    - NA-OS
-    - NA-ON
-    - NA-OT
+    - NA-KW
     - NA-OD
-    - NA-CA
+    - NA-OH
+    - NA-ON
+    - NA-OS
+    - NA-OT
+    - NA-OW

@@ -76,8 +76,8 @@ meta:
       count: 55098
 data:
   labels:
-    - RW-03
-    - RW-05
     - RW-01
     - RW-02
+    - RW-03
     - RW-04
+    - RW-05

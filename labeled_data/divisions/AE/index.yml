@@ -76,10 +76,10 @@ meta:
       count: 453949
 data:
   labels:
-    - AE-AZ
-    - AE-FU
-    - AE-SH
-    - AE-DU
-    - AE-RK
-    - AE-UQ
     - AE-AJ
+    - AE-AZ
+    - AE-DU
+    - AE-FU
+    - AE-RK
+    - AE-SH
+    - AE-UQ

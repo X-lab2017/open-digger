@@ -76,8 +76,8 @@ meta:
       count: 7637
 data:
   labels:
-    - FJ-W
-    - FJ-N
     - FJ-C
     - FJ-E
+    - FJ-N
     - FJ-R
+    - FJ-W

@@ -81,14 +81,14 @@ data:
     - AO-BIE
     - AO-CAB
     - AO-CCU
+    - AO-CNN
     - AO-CNO
     - AO-CUS
-    - AO-CNN
     - AO-HUA
     - AO-HUI
-    - AO-LUA
     - AO-LNO
     - AO-LSU
+    - AO-LUA
     - AO-MAL
     - AO-MOX
     - AO-NAM

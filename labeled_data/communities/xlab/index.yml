@@ -2,10 +2,10 @@ name: X-lab
 type: Community
 data:
   labels:
+    - hypercrx
     - hypertrons
     - open_digger
     - open_galaxy
-    - hypercrx
   platforms:
     - name: GitHub
       type: Code Hosting

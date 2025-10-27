@@ -77,34 +77,34 @@ meta:
       count: 750295
 data:
   labels:
-    - IR-30
-    - IR-24
-    - IR-18
-    - IR-14
-    - IR-10
-    - IR-07
-    - IR-27
-    - IR-01
-    - IR-13
-    - IR-22
-    - IR-08
-    - IR-05
-    - IR-29
-    - IR-09
-    - IR-28
-    - IR-06
-    - IR-17
-    - IR-12
-    - IR-15
     - IR-00
+    - IR-01
     - IR-02
-    - IR-26
-    - IR-25
-    - IR-20
-    - IR-11
-    - IR-23
-    - IR-21
-    - IR-19
-    - IR-04
     - IR-03
+    - IR-04
+    - IR-05
+    - IR-06
+    - IR-07
+    - IR-08
+    - IR-09
+    - IR-10
+    - IR-11
+    - IR-12
+    - IR-13
+    - IR-14
+    - IR-15
     - IR-16
+    - IR-17
+    - IR-18
+    - IR-19
+    - IR-20
+    - IR-21
+    - IR-22
+    - IR-23
+    - IR-24
+    - IR-25
+    - IR-26
+    - IR-27
+    - IR-28
+    - IR-29
+    - IR-30

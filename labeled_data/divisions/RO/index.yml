@@ -76,44 +76,44 @@ meta:
 data:
   labels:
     - RO-AB
-    - RO-AR
     - RO-AG
+    - RO-AR
+    - RO-B
     - RO-BC
     - RO-BH
     - RO-BN
+    - RO-BR
     - RO-BT
     - RO-BV
-    - RO-BR
-    - RO-B
     - RO-BZ
-    - RO-CS
     - RO-CJ
+    - RO-CL
+    - RO-CS
     - RO-CT
     - RO-CV
-    - RO-CL
-    - RO-DJ
     - RO-DB
+    - RO-DJ
+    - RO-GJ
     - RO-GL
     - RO-GR
-    - RO-GJ
-    - RO-HR
     - RO-HD
+    - RO-HR
+    - RO-IF
     - RO-IL
     - RO-IS
-    - RO-IF
-    - RO-MM
     - RO-MH
+    - RO-MM
     - RO-MS
     - RO-NT
     - RO-OT
     - RO-PH
-    - RO-SM
     - RO-SB
-    - RO-SV
     - RO-SJ
-    - RO-TR
-    - RO-TM
+    - RO-SM
+    - RO-SV
     - RO-TL
-    - RO-VS
-    - RO-VN
+    - RO-TM
+    - RO-TR
     - RO-VL
+    - RO-VN
+    - RO-VS

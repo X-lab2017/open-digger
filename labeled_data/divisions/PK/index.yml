@@ -76,10 +76,10 @@ meta:
       count: 1718562
 data:
   labels:
-    - PK-JK
     - PK-BA
     - PK-GB
     - PK-IS
+    - PK-JK
     - PK-KP
     - PK-PB
     - PK-SD

@@ -75,25 +75,25 @@ meta:
       count: 10220
 data:
   labels:
-    - PG-NSB
-    - PG-CPM
     - PG-CPK
+    - PG-CPM
     - PG-EBR
-    - PG-ESW
     - PG-EHG
     - PG-EPW
+    - PG-ESW
     - PG-GPK
     - PG-HLA
     - PG-JWK
-    - PG-MPM
-    - PG-MRL
     - PG-MBA
     - PG-MPL
+    - PG-MPM
+    - PG-MRL
     - PG-NCD
     - PG-NIK
     - PG-NPP
+    - PG-NSB
+    - PG-SAN
     - PG-SHM
     - PG-WBK
-    - PG-SAN
-    - PG-WPD
     - PG-WHM
+    - PG-WPD

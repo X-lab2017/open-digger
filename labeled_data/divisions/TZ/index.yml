@@ -79,33 +79,33 @@ meta:
 data:
   labels:
     - TZ-01
-    - TZ-19
     - TZ-02
     - TZ-03
-    - TZ-27
     - TZ-04
     - TZ-05
     - TZ-06
     - TZ-07
-    - TZ-28
     - TZ-08
     - TZ-09
     - TZ-10
     - TZ-11
     - TZ-12
-    - TZ-26
     - TZ-13
     - TZ-14
     - TZ-15
     - TZ-16
     - TZ-17
     - TZ-18
-    - TZ-29
+    - TZ-19
     - TZ-20
     - TZ-21
     - TZ-22
-    - TZ-30
     - TZ-23
-    - TZ-31
     - TZ-24
     - TZ-25
+    - TZ-26
+    - TZ-27
+    - TZ-28
+    - TZ-29
+    - TZ-30
+    - TZ-31

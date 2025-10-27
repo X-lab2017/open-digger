@@ -77,24 +77,24 @@ meta:
 data:
   labels:
     - YE-AB
-    - YE-BA
-    - YE-JA
-    - YE-MR
-    - YE-MW
-    - YE-HU
-    - YE-SA
-    - YE-SU
-    - YE-DA
-    - YE-DH
-    - YE-IB
-    - YE-LA
-    - YE-MA
-    - YE-RA
-    - YE-SH
-    - YE-TA
-    - YE-SN
-    - YE-SD
-    - YE-HJ
-    - YE-HD
     - YE-AD
     - YE-AM
+    - YE-BA
+    - YE-DA
+    - YE-DH
+    - YE-HD
+    - YE-HJ
+    - YE-HU
+    - YE-IB
+    - YE-JA
+    - YE-LA
+    - YE-MA
+    - YE-MR
+    - YE-MW
+    - YE-RA
+    - YE-SA
+    - YE-SD
+    - YE-SH
+    - YE-SN
+    - YE-SU
+    - YE-TA

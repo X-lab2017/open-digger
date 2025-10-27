@@ -78,9 +78,9 @@ data:
   labels:
     - QA-DA
     - QA-KH
-    - QA-WA
-    - QA-RA
     - QA-MS
+    - QA-RA
     - QA-SH
-    - QA-ZA
     - QA-US
+    - QA-WA
+    - QA-ZA

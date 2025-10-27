@@ -76,13 +76,13 @@ meta:
       count: 6715
 data:
   labels:
-    - LS-D
+    - LS-A
     - LS-B
     - LS-C
+    - LS-D
     - LS-E
-    - LS-A
     - LS-F
-    - LS-J
-    - LS-H
     - LS-G
+    - LS-H
+    - LS-J
     - LS-K

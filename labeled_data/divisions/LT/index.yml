@@ -76,13 +76,13 @@ meta:
       count: 175248
 data:
   labels:
-    - LT-SA
     - LT-AL
-    - LT-UT
-    - LT-KU
-    - LT-PN
-    - LT-VL
-    - LT-TA
-    - LT-MR
     - LT-KL
+    - LT-KU
+    - LT-MR
+    - LT-PN
+    - LT-SA
+    - LT-TA
     - LT-TE
+    - LT-UT
+    - LT-VL

@@ -77,7 +77,7 @@ meta:
 data:
   labels:
     - SL-E
-    - SL-NW
     - SL-N
+    - SL-NW
     - SL-S
     - SL-W

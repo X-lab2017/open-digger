@@ -76,21 +76,21 @@ meta:
       count: 34532
 data:
   labels:
-    - SD-RS
-    - SD-GZ
-    - SD-KH
-    - SD-GD
-    - SD-NW
-    - SD-NB
-    - SD-NO
     - SD-DC
     - SD-DE
-    - SD-DW
-    - SD-GK
-    - SD-DS
-    - SD-KS
-    - SD-KA
-    - SD-NR
     - SD-DN
+    - SD-DS
+    - SD-DW
+    - SD-GD
+    - SD-GK
+    - SD-GZ
+    - SD-KA
+    - SD-KH
     - SD-KN
+    - SD-KS
+    - SD-NB
+    - SD-NO
+    - SD-NR
+    - SD-NW
+    - SD-RS
     - SD-SI

@@ -77,7 +77,7 @@ meta:
       count: 244921
 data:
   labels:
-    - VE-Z
+    - VE-A
     - VE-B
     - VE-C
     - VE-D
@@ -85,20 +85,20 @@ data:
     - VE-F
     - VE-G
     - VE-H
-    - VE-Y
-    - VE-W
-    - VE-A
     - VE-I
     - VE-J
-    - VE-X
     - VE-K
+    - VE-L
     - VE-M
     - VE-N
-    - VE-L
     - VE-O
     - VE-P
     - VE-R
-    - VE-T
     - VE-S
+    - VE-T
     - VE-U
     - VE-V
+    - VE-W
+    - VE-X
+    - VE-Y
+    - VE-Z

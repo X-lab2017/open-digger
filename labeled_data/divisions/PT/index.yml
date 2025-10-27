@@ -76,24 +76,24 @@ meta:
       count: 557653
 data:
   labels:
+    - ':companies/dio'
     - PT-01
     - PT-02
     - PT-03
     - PT-04
     - PT-05
     - PT-06
+    - PT-07
     - PT-08
     - PT-09
     - PT-10
     - PT-11
     - PT-12
     - PT-13
-    - PT-30
-    - PT-20
     - PT-14
     - PT-15
     - PT-16
     - PT-17
     - PT-18
-    - PT-07
-    - ':companies/dio'
+    - PT-20
+    - PT-30

@@ -76,20 +76,20 @@ meta:
       count: 2390
 data:
   labels:
-    - MC-FO
-    - MC-JE
     - MC-CL
     - MC-CO
+    - MC-FO
     - MC-GA
-    - MC-SO
+    - MC-JE
     - MC-LA
     - MC-MA
-    - MC-MO
-    - MC-MG
     - MC-MC
+    - MC-MG
+    - MC-MO
     - MC-MU
     - MC-PH
-    - MC-SR
     - MC-SD
+    - MC-SO
     - MC-SP
+    - MC-SR
     - MC-VR

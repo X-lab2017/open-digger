@@ -21,8 +21,10 @@ data:
     - eosphoros
     - fury
     - galacean
+    - geaflow
     - horaedb
     - hyper_enclave
+    - inclusionai
     - intelligent_machine_learning
     - karas
     - kata_container

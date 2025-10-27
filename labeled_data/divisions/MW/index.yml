@@ -76,6 +76,6 @@ meta:
       count: 21961
 data:
   labels:
-    - MW-S
     - MW-C
     - MW-N
+    - MW-S

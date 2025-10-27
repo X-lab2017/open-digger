@@ -78,22 +78,23 @@ meta:
       count: 35272
 data:
   labels:
+    - CD-BC
     - CD-BU
+    - CD-EQ
     - CD-HK
     - CD-HL
     - CD-HU
     - CD-IT
-    - CD-KS
     - CD-KC
     - CD-KE
-    - CD-KN
-    - CD-BC
     - CD-KG
     - CD-KL
+    - CD-KN
+    - CD-KS
     - CD-LO
     - CD-LU
-    - CD-MN
     - CD-MA
+    - CD-MN
     - CD-MO
     - CD-NK
     - CD-NU
@@ -103,4 +104,3 @@ data:
     - CD-TA
     - CD-TO
     - CD-TU
-    - CD-EQ

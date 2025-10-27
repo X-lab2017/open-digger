@@ -76,43 +76,43 @@ meta:
       count: 19257589
 data:
   labels:
+    - ':companies/blue_spire'
+    - ':companies/merico'
+    - ':companies/moving_tech_innovations'
+    - ':foundations/girlscript'
     - IN-AN
     - IN-AP
     - IN-AR
     - IN-AS
     - IN-BR
-    - IN-CH
     - IN-CG
-    - IN-DL
+    - IN-CH
     - IN-DH
+    - IN-DL
     - IN-GA
     - IN-GJ
-    - IN-HR
     - IN-HP
-    - IN-JK
+    - IN-HR
     - IN-JH
+    - IN-JK
     - IN-KA
     - IN-KL
     - IN-LA
     - IN-LD
-    - IN-MP
     - IN-MH
-    - IN-MN
     - IN-ML
+    - IN-MN
+    - IN-MP
     - IN-MZ
     - IN-NL
     - IN-OD
-    - IN-PY
     - IN-PB
+    - IN-PY
     - IN-RJ
     - IN-SK
     - IN-TN
-    - IN-TS
     - IN-TR
-    - IN-UP
+    - IN-TS
     - IN-UK
+    - IN-UP
     - IN-WB
-    - ':companies/blue_spire'
-    - ':companies/merico'
-    - ':companies/moving_tech_innovations'
-    - ':foundations/girlscript'

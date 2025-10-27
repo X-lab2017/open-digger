@@ -77,12 +77,12 @@ meta:
       count: 4465829
 data:
   labels:
-    - GB-SCT
-    - GB-NIR
-    - GB-ENG
-    - GB-WLS
     - ':agencies/moj_uk'
     - ':companies/deepmind'
     - ':companies/gaas'
     - ':companies/rare'
     - ':companies/raycast'
+    - GB-ENG
+    - GB-NIR
+    - GB-SCT
+    - GB-WLS

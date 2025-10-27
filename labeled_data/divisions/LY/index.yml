@@ -76,25 +76,25 @@ meta:
       count: 44636
 data:
   labels:
+    - LY-BA
     - LY-BU
+    - LY-DR
+    - LY-GT
     - LY-JA
     - LY-JG
     - LY-JI
     - LY-JU
     - LY-KF
-    - LY-MJ
     - LY-MB
-    - LY-WA
-    - LY-NQ
-    - LY-ZA
-    - LY-BA
-    - LY-DR
-    - LY-GT
     - LY-MI
+    - LY-MJ
     - LY-MQ
     - LY-NL
+    - LY-NQ
     - LY-SB
     - LY-SR
+    - LY-TB
+    - LY-WA
     - LY-WD
     - LY-WS
-    - LY-TB
+    - LY-ZA

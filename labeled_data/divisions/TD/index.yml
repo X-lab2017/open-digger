@@ -77,7 +77,6 @@ meta:
 data:
   labels:
     - TD-BA
-    - TD-LC
     - TD-BG
     - TD-BO
     - TD-CB
@@ -86,13 +85,14 @@ data:
     - TD-GR
     - TD-HL
     - TD-KA
+    - TD-LC
     - TD-LO
     - TD-LR
-    - TD-ND
     - TD-MA
+    - TD-MC
     - TD-ME
     - TD-MO
-    - TD-MC
+    - TD-ND
     - TD-OD
     - TD-SA
     - TD-SI

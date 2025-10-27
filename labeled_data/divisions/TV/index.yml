@@ -13,10 +13,10 @@ meta:
 data:
   labels:
     - TV-FUN
-    - TV-NMG
-    - TV-NMA
     - TV-NIT
-    - TV-NUI
     - TV-NKF
     - TV-NKL
+    - TV-NMA
+    - TV-NMG
+    - TV-NUI
     - TV-VAI

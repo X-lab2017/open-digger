@@ -82,12 +82,12 @@ data:
     - TT-DMN
     - TT-MRC
     - TT-PED
-    - TT-PTF
     - TT-POS
     - TT-PRT
+    - TT-PTF
     - TT-SFO
-    - TT-SJL
     - TT-SGE
     - TT-SIP
+    - TT-SJL
     - TT-TOB
     - TT-TUP

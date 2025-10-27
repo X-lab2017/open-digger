@@ -76,22 +76,6 @@ meta:
       count: 4006483
 data:
   labels:
-    - DE-BW
-    - DE-BY
-    - DE-BE
-    - DE-BB
-    - DE-HB
-    - DE-HH
-    - DE-HE
-    - DE-MV
-    - DE-NI
-    - DE-NW
-    - DE-RP
-    - DE-SL
-    - DE-SN
-    - DE-ST
-    - DE-SH
-    - DE-TH
     - ':companies/camunda'
     - ':companies/explosionai'
     - ':companies/formbricks'
@@ -99,3 +83,19 @@ data:
     - ':companies/n8n'
     - ':companies/nextcloud'
     - ':companies/zalando'
+    - DE-BB
+    - DE-BE
+    - DE-BW
+    - DE-BY
+    - DE-HB
+    - DE-HE
+    - DE-HH
+    - DE-MV
+    - DE-NI
+    - DE-NW
+    - DE-RP
+    - DE-SH
+    - DE-SL
+    - DE-SN
+    - DE-ST
+    - DE-TH

@@ -77,72 +77,72 @@ meta:
 data:
   labels:
     - AZ-ABS
-    - AZ-AST
+    - AZ-AGA
     - AZ-AGC
     - AZ-AGM
     - AZ-AGS
-    - AZ-AGA
     - AZ-AGU
-    - AZ-NX
+    - AZ-AST
     - AZ-BA
     - AZ-BAL
+    - AZ-BAR
     - AZ-BEY
     - AZ-BIL
-    - AZ-BAR
     - AZ-CAB
     - AZ-CAL
     - AZ-DAS
     - AZ-FUZ
-    - AZ-GOR
-    - AZ-GYG
-    - AZ-GOY
-    - AZ-GAD
     - AZ-GA
+    - AZ-GAD
+    - AZ-GOR
+    - AZ-GOY
+    - AZ-GYG
     - AZ-HAC
-    - AZ-KUR
+    - AZ-IMI
+    - AZ-ISM
     - AZ-KAL
-    - AZ-LAC
-    - AZ-LER
+    - AZ-KUR
     - AZ-LA
+    - AZ-LAC
     - AZ-LAN
+    - AZ-LER
     - AZ-MAS
     - AZ-MI
     - AZ-NA
     - AZ-NEF
+    - AZ-NX
     - AZ-OGU
+    - AZ-QAB
     - AZ-QAX
     - AZ-QAZ
-    - AZ-QOB
     - AZ-QBA
     - AZ-QBI
+    - AZ-QOB
     - AZ-QUS
-    - AZ-QAB
-    - AZ-SAT
+    - AZ-SA
     - AZ-SAB
+    - AZ-SAK
     - AZ-SAL
-    - AZ-SMX
+    - AZ-SAT
+    - AZ-SBN
     - AZ-SIY
+    - AZ-SKR
     - AZ-SM
-    - AZ-TOV
+    - AZ-SMI
+    - AZ-SMX
+    - AZ-SR
+    - AZ-SUS
     - AZ-TAR
+    - AZ-TOV
     - AZ-UCA
     - AZ-XA
     - AZ-XAC
     - AZ-XCI
-    - AZ-XVD
     - AZ-XIZ
+    - AZ-XVD
     - AZ-YAR
     - AZ-YE
     - AZ-YEV
-    - AZ-ZAQ
     - AZ-ZAN
+    - AZ-ZAQ
     - AZ-ZAR
-    - AZ-IMI
-    - AZ-ISM
-    - AZ-SBN
-    - AZ-SMI
-    - AZ-SR
-    - AZ-SUS
-    - AZ-SA
-    - AZ-SAK
-    - AZ-SKR

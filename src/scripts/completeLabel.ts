@@ -66,7 +66,7 @@ async function readPath(p: string, base: string, fileProcessor: (f: string) => P
           }
         }
       }
-      if (label.data.labels) {
+      if (label.data && label.data.labels) {
         label.data.labels = label.data.labels.sort();
       }
       writeFileSync(filePath, dump(label, { noRefs: true, lineWidth: -1 }));

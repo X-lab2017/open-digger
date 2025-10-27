@@ -77,32 +77,32 @@ meta:
       count: 3153280
 data:
   labels:
-    - FR-ARA
-    - FR-HDF
-    - FR-PAC
-    - FR-GES
-    - FR-OCC
-    - FR-BFC
-    - FR-BRE
-    - FR-NOR
-    - FR-CVL
-    - FR-NAQ
-    - FR-CP
-    - FR-20R
-    - FR-IDF
-    - FR-971
-    - FR-973
-    - FR-974
-    - FR-PDL
-    - FR-972
-    - FR-976
-    - FR-NC
-    - FR-PF
-    - FR-BL
-    - FR-MF
-    - FR-PM
-    - FR-TF
-    - FR-WF
     - ':companies/material_ui_sas'
     - ':companies/matra_datavision'
     - ':companies/sensiolabs'
+    - FR-20R
+    - FR-971
+    - FR-972
+    - FR-973
+    - FR-974
+    - FR-976
+    - FR-ARA
+    - FR-BFC
+    - FR-BL
+    - FR-BRE
+    - FR-CP
+    - FR-CVL
+    - FR-GES
+    - FR-HDF
+    - FR-IDF
+    - FR-MF
+    - FR-NAQ
+    - FR-NC
+    - FR-NOR
+    - FR-OCC
+    - FR-PAC
+    - FR-PDL
+    - FR-PF
+    - FR-PM
+    - FR-TF
+    - FR-WF

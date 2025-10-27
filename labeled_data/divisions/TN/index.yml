@@ -76,27 +76,27 @@ meta:
       count: 316372
 data:
   labels:
+    - TN-11
+    - TN-12
     - TN-13
+    - TN-14
+    - TN-21
+    - TN-22
     - TN-23
     - TN-31
-    - TN-81
-    - TN-71
     - TN-32
+    - TN-33
+    - TN-34
     - TN-41
     - TN-42
-    - TN-73
-    - TN-12
-    - TN-14
-    - TN-33
-    - TN-53
-    - TN-52
-    - TN-82
-    - TN-21
-    - TN-61
     - TN-43
-    - TN-34
     - TN-51
-    - TN-83
+    - TN-52
+    - TN-53
+    - TN-61
+    - TN-71
     - TN-72
-    - TN-11
-    - TN-22
+    - TN-73
+    - TN-81
+    - TN-82
+    - TN-83

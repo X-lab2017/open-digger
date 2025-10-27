@@ -78,40 +78,6 @@ meta:
       count: 14392642
 data:
   labels:
-    - CN-AH
-    - CN-MO
-    - CN-BJ
-    - CN-CQ
-    - CN-FJ
-    - CN-GS
-    - CN-GD
-    - CN-GX
-    - CN-GZ
-    - CN-HI
-    - CN-HE
-    - CN-HL
-    - CN-HA
-    - CN-HK
-    - CN-HB
-    - CN-HN
-    - CN-JS
-    - CN-JX
-    - CN-JL
-    - CN-LN
-    - CN-NM
-    - CN-NX
-    - CN-QH
-    - CN-SN
-    - CN-SD
-    - CN-SH
-    - CN-SX
-    - CN-SC
-    - CN-TW
-    - CN-TJ
-    - CN-XJ
-    - CN-XZ
-    - CN-YN
-    - CN-ZJ
     - ':communities/kaiyuanshe'
     - ':communities/mulan'
     - ':communities/openbuild'
@@ -193,6 +159,40 @@ data:
     - ':companies/zstack'
     - ':foundations/openatom'
     - ':projects/skywalking'
+    - CN-AH
+    - CN-BJ
+    - CN-CQ
+    - CN-FJ
+    - CN-GD
+    - CN-GS
+    - CN-GX
+    - CN-GZ
+    - CN-HA
+    - CN-HB
+    - CN-HE
+    - CN-HI
+    - CN-HK
+    - CN-HL
+    - CN-HN
+    - CN-JL
+    - CN-JS
+    - CN-JX
+    - CN-LN
+    - CN-MO
+    - CN-NM
+    - CN-NX
+    - CN-QH
+    - CN-SC
+    - CN-SD
+    - CN-SH
+    - CN-SN
+    - CN-SX
+    - CN-TJ
+    - CN-TW
+    - CN-XJ
+    - CN-XZ
+    - CN-YN
+    - CN-ZJ
   platforms:
     - name: GitHub
       type: Code Hosting

@@ -73,7 +73,7 @@ meta:
       count: 825
 data:
   labels:
+    - GW-BS
     - GW-L
     - GW-N
-    - GW-BS
     - GW-S

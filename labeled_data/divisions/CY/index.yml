@@ -76,9 +76,9 @@ meta:
       count: 69908
 data:
   labels:
+    - CY-01
+    - CY-02
+    - CY-03
     - CY-04
     - CY-05
     - CY-06
-    - CY-03
-    - CY-01
-    - CY-02

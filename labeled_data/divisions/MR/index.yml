@@ -76,18 +76,18 @@ meta:
       count: 9801
 data:
   labels:
-    - MR-07
-    - MR-03
-    - MR-05
-    - MR-08
-    - MR-04
-    - MR-10
     - MR-01
     - MR-02
-    - MR-12
-    - MR-14
-    - MR-13
-    - MR-15
-    - MR-09
-    - MR-11
+    - MR-03
+    - MR-04
+    - MR-05
     - MR-06
+    - MR-07
+    - MR-08
+    - MR-09
+    - MR-10
+    - MR-11
+    - MR-12
+    - MR-13
+    - MR-14
+    - MR-15

@@ -77,28 +77,28 @@ meta:
 data:
   labels:
     - NG-AB
-    - NG-FC
     - NG-AD
     - NG-AK
     - NG-AN
     - NG-BA
-    - NG-BY
     - NG-BE
     - NG-BO
+    - NG-BY
     - NG-CR
     - NG-DE
     - NG-EB
     - NG-ED
     - NG-EK
     - NG-EN
+    - NG-FC
     - NG-GO
     - NG-IM
     - NG-JI
     - NG-KD
-    - NG-KN
-    - NG-KT
     - NG-KE
+    - NG-KN
     - NG-KO
+    - NG-KT
     - NG-KW
     - NG-LA
     - NG-NA

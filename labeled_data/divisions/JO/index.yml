@@ -76,15 +76,15 @@ meta:
       count: 163016
 data:
   labels:
-    - JO-BA
-    - JO-KA
-    - JO-MA
-    - JO-AQ
+    - JO-AJ
     - JO-AM
-    - JO-AZ
+    - JO-AQ
     - JO-AT
+    - JO-AZ
+    - JO-BA
     - JO-IR
     - JO-JA
-    - JO-MN
+    - JO-KA
+    - JO-MA
     - JO-MD
-    - JO-AJ
+    - JO-MN

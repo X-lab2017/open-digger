@@ -76,14 +76,14 @@ meta:
       count: 63246
 data:
   labels:
-    - OM-DA
-    - OM-BU
-    - OM-WU
-    - OM-ZA
     - OM-BJ
-    - OM-SJ
+    - OM-BS
+    - OM-BU
+    - OM-DA
     - OM-MA
     - OM-MU
-    - OM-BS
+    - OM-SJ
     - OM-SS
+    - OM-WU
+    - OM-ZA
     - OM-ZU

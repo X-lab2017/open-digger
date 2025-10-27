@@ -78,27 +78,27 @@ data:
   labels:
     - BR-AC
     - BR-AL
-    - BR-AP
     - BR-AM
+    - BR-AP
     - BR-BA
     - BR-CE
     - BR-DF
     - BR-ES
     - BR-GO
     - BR-MA
-    - BR-MT
-    - BR-MS
     - BR-MG
-    - BR-PR
-    - BR-PB
+    - BR-MS
+    - BR-MT
     - BR-PA
+    - BR-PB
     - BR-PE
     - BR-PI
-    - BR-RN
-    - BR-RS
+    - BR-PR
     - BR-RJ
+    - BR-RN
     - BR-RO
     - BR-RR
+    - BR-RS
     - BR-SC
     - BR-SE
     - BR-SP

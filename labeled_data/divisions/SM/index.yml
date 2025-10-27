@@ -77,11 +77,11 @@ meta:
 data:
   labels:
     - SM-01
-    - SM-06
     - SM-02
-    - SM-07
     - SM-03
     - SM-04
     - SM-05
+    - SM-06
+    - SM-07
     - SM-08
     - SM-09

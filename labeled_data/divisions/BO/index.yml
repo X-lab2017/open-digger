@@ -77,12 +77,12 @@ meta:
       count: 155263
 data:
   labels:
-    - BO-H
-    - BO-C
     - BO-B
+    - BO-C
+    - BO-H
     - BO-L
-    - BO-O
     - BO-N
+    - BO-O
     - BO-P
     - BO-S
     - BO-T

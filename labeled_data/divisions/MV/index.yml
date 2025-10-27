@@ -76,24 +76,24 @@ meta:
       count: 16643
 data:
   labels:
-    - MV-01
     - MV-00
+    - MV-01
     - MV-02
     - MV-03
     - MV-04
-    - MV-29
     - MV-05
-    - MV-28
-    - MV-27
-    - MV-08
-    - MV-MLE
-    - MV-26
-    - MV-20
-    - MV-13
-    - MV-25
-    - MV-24
-    - MV-12
-    - MV-17
-    - MV-14
     - MV-07
+    - MV-08
+    - MV-12
+    - MV-13
+    - MV-14
+    - MV-17
+    - MV-20
     - MV-23
+    - MV-24
+    - MV-25
+    - MV-26
+    - MV-27
+    - MV-28
+    - MV-29
+    - MV-MLE

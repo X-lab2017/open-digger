@@ -79,19 +79,19 @@ meta:
       count: 85493
 data:
   labels:
-    - PS-HBN
-    - PS-JEM
-    - PS-JRH
     - PS-BTH
     - PS-DEB
     - PS-GZA
+    - PS-HBN
+    - PS-JEM
     - PS-JEN
+    - PS-JRH
     - PS-KYS
     - PS-NBS
     - PS-NGZ
     - PS-QQA
-    - PS-RFH
     - PS-RBH
+    - PS-RFH
     - PS-SLT
     - PS-TBS
     - PS-TKM

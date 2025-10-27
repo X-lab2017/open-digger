@@ -9,3 +9,5 @@ data:
           name: X-lab2017/open-digger
         - id: 395283937
           name: X-lab2017/open-digger-website
+        - id: 950519497
+          name: X-lab2017/open-digger-mcp-server

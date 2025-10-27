@@ -76,18 +76,18 @@ meta:
       count: 462906
 data:
   labels:
+    - ':companies/jetbrains'
+    - CZ-10
     - CZ-20
-    - CZ-64
-    - CZ-80
+    - CZ-31
+    - CZ-32
     - CZ-41
     - CZ-42
-    - CZ-53
-    - CZ-32
-    - CZ-63
-    - CZ-52
     - CZ-51
+    - CZ-52
+    - CZ-53
+    - CZ-63
+    - CZ-64
     - CZ-71
-    - CZ-31
     - CZ-72
-    - CZ-10
-    - ':companies/jetbrains'
+    - CZ-80

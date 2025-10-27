@@ -77,7 +77,6 @@ meta:
 data:
   labels:
     - AL-01
-    - AL-09
     - AL-02
     - AL-03
     - AL-04
@@ -85,6 +84,7 @@ data:
     - AL-06
     - AL-07
     - AL-08
+    - AL-09
     - AL-10
     - AL-11
     - AL-12

@@ -76,8 +76,8 @@ meta:
 data:
   labels:
     - TM-A
-    - TM-S
     - TM-B
     - TM-D
     - TM-L
     - TM-M
+    - TM-S

@@ -76,19 +76,19 @@ meta:
       count: 115679
 data:
   labels:
-    - EE-45
+    - ':companies/flant'
     - EE-37
-    - EE-87
-    - EE-79
+    - EE-39
+    - EE-45
+    - EE-50
+    - EE-52
     - EE-56
     - EE-60
-    - EE-39
-    - EE-68
-    - EE-52
-    - EE-50
     - EE-64
+    - EE-68
     - EE-71
     - EE-74
-    - EE-84
+    - EE-79
     - EE-81
-    - ':companies/flant'
+    - EE-84
+    - EE-87

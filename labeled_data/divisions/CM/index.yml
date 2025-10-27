@@ -78,8 +78,8 @@ data:
   labels:
     - CM-AD
     - CM-CE
-    - CM-ES
     - CM-EN
+    - CM-ES
     - CM-LT
     - CM-NO
     - CM-NW

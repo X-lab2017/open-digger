@@ -75,7 +75,7 @@ meta:
       count: 391998
 data:
   labels:
-    - IE-U
-    - IE-M
-    - IE-L
     - IE-C
+    - IE-L
+    - IE-M
+    - IE-U

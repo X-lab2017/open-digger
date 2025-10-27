@@ -76,13 +76,13 @@ meta:
       count: 741633
 data:
   labels:
-    - ZA-NW
+    - ':companies/woo'
     - ZA-EC
     - ZA-FS
-    - ZA-KZN
     - ZA-GP
-    - ZA-WC
-    - ZA-NC
+    - ZA-KZN
     - ZA-LP
     - ZA-MP
-    - ':companies/woo'
+    - ZA-NC
+    - ZA-NW
+    - ZA-WC

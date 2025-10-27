@@ -76,23 +76,23 @@ meta:
       count: 10505
 data:
   labels:
-    - BT-33
-    - BT-12
-    - BT-22
-    - BT-GA
-    - BT-13
-    - BT-44
-    - BT-42
     - BT-11
-    - BT-43
-    - BT-23
-    - BT-45
+    - BT-12
+    - BT-13
     - BT-14
-    - BT-31
     - BT-15
-    - BT-TY
-    - BT-41
-    - BT-32
     - BT-21
+    - BT-22
+    - BT-23
     - BT-24
+    - BT-31
+    - BT-32
+    - BT-33
     - BT-34
+    - BT-41
+    - BT-42
+    - BT-43
+    - BT-44
+    - BT-45
+    - BT-GA
+    - BT-TY

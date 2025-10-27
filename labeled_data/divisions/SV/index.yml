@@ -81,12 +81,12 @@ data:
     - SV-CH
     - SV-CU
     - SV-LI
-    - SV-PA
-    - SV-UN
     - SV-MO
+    - SV-PA
+    - SV-SA
     - SV-SM
+    - SV-SO
     - SV-SS
     - SV-SV
-    - SV-SA
-    - SV-SO
+    - SV-UN
     - SV-US

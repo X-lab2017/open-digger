@@ -76,8 +76,8 @@ meta:
 data:
   labels:
     - VC-01
-    - VC-06
     - VC-02
     - VC-03
     - VC-04
     - VC-05
+    - VC-06

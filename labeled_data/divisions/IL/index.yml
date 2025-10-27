@@ -76,9 +76,9 @@ meta:
       count: 720587
 data:
   labels:
-    - IL-M
     - IL-D
-    - IL-JM
-    - IL-Z
     - IL-HA
+    - IL-JM
+    - IL-M
     - IL-TA
+    - IL-Z

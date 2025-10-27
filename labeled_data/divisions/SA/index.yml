@@ -76,16 +76,16 @@ meta:
       count: 671395
 data:
   labels:
-    - SA-14
+    - SA-01
+    - SA-02
+    - SA-03
+    - SA-04
+    - SA-05
+    - SA-06
+    - SA-07
+    - SA-08
+    - SA-09
+    - SA-10
     - SA-11
     - SA-12
-    - SA-03
-    - SA-05
-    - SA-08
-    - SA-01
-    - SA-04
-    - SA-09
-    - SA-02
-    - SA-10
-    - SA-07
-    - SA-06
+    - SA-14

@@ -77,10 +77,10 @@ meta:
       count: 495
 data:
   labels:
+    - ST-01
     - ST-02
     - ST-03
     - ST-04
     - ST-05
     - ST-06
     - ST-P
-    - ST-01

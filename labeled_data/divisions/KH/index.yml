@@ -76,9 +76,24 @@ meta:
       count: 147712
 data:
   labels:
-    - KH-2
     - KH-1
+    - KH-10
+    - KH-11
+    - KH-12
+    - KH-13
+    - KH-14
+    - KH-15
+    - KH-16
+    - KH-17
+    - KH-18
+    - KH-19
+    - KH-2
+    - KH-20
+    - KH-21
+    - KH-22
     - KH-23
+    - KH-24
+    - KH-25
     - KH-3
     - KH-4
     - KH-5
@@ -86,18 +101,3 @@ data:
     - KH-7
     - KH-8
     - KH-9
-    - KH-10
-    - KH-11
-    - KH-22
-    - KH-24
-    - KH-12
-    - KH-15
-    - KH-18
-    - KH-13
-    - KH-14
-    - KH-16
-    - KH-17
-    - KH-19
-    - KH-20
-    - KH-21
-    - KH-25

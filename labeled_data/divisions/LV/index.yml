@@ -78,33 +78,27 @@ data:
   labels:
     - LV-002
     - LV-007
-    - LV-111
+    - LV-011
     - LV-015
     - LV-016
     - LV-022
-    - LV-DGV
-    - LV-112
     - LV-026
     - LV-033
-    - LV-JEL
     - LV-041
     - LV-042
-    - LV-JUR
     - LV-047
     - LV-050
-    - LV-LPX
+    - LV-052
     - LV-054
-    - LV-058
     - LV-056
+    - LV-058
     - LV-059
     - LV-062
     - LV-067
     - LV-068
     - LV-073
-    - LV-080
-    - LV-REZ
     - LV-077
-    - LV-RIX
+    - LV-080
     - LV-087
     - LV-088
     - LV-089
@@ -113,9 +107,15 @@ data:
     - LV-097
     - LV-099
     - LV-101
-    - LV-113
     - LV-102
-    - LV-VEN
     - LV-106
-    - LV-011
-    - LV-052
+    - LV-111
+    - LV-112
+    - LV-113
+    - LV-DGV
+    - LV-JEL
+    - LV-JUR
+    - LV-LPX
+    - LV-REZ
+    - LV-RIX
+    - LV-VEN

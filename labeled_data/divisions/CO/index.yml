@@ -88,8 +88,8 @@ data:
     - CO-CAU
     - CO-CES
     - CO-CHO
-    - CO-CUN
     - CO-COR
+    - CO-CUN
     - CO-DC
     - CO-GUA
     - CO-GUV
@@ -102,8 +102,8 @@ data:
     - CO-PUT
     - CO-QUI
     - CO-RIS
-    - CO-SAP
     - CO-SAN
+    - CO-SAP
     - CO-SUC
     - CO-TOL
     - CO-VAC

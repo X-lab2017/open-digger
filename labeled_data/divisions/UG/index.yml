@@ -76,7 +76,7 @@ meta:
       count: 91451
 data:
   labels:
-    - UG-N
-    - UG-E
-    - UG-W
     - UG-C
+    - UG-E
+    - UG-N
+    - UG-W

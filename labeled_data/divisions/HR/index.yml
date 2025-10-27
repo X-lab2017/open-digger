@@ -76,24 +76,24 @@ meta:
       count: 156590
 data:
   labels:
-    - HR-07
-    - HR-12
-    - HR-19
-    - HR-21
-    - HR-18
-    - HR-04
-    - HR-06
-    - HR-02
-    - HR-09
-    - HR-20
-    - HR-14
-    - HR-11
-    - HR-08
-    - HR-03
-    - HR-17
-    - HR-05
-    - HR-10
-    - HR-16
-    - HR-13
     - HR-01
+    - HR-02
+    - HR-03
+    - HR-04
+    - HR-05
+    - HR-06
+    - HR-07
+    - HR-08
+    - HR-09
+    - HR-10
+    - HR-11
+    - HR-12
+    - HR-13
+    - HR-14
     - HR-15
+    - HR-16
+    - HR-17
+    - HR-18
+    - HR-19
+    - HR-20
+    - HR-21

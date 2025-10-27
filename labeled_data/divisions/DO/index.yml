@@ -76,13 +76,13 @@ meta:
       count: 149792
 data:
   labels:
-    - DO-41
-    - DO-38
     - DO-33
     - DO-34
     - DO-35
     - DO-36
-    - DO-40
-    - DO-42
     - DO-37
+    - DO-38
     - DO-39
+    - DO-40
+    - DO-41
+    - DO-42

@@ -76,23 +76,23 @@ meta:
       count: 1508146
 data:
   labels:
-    - IT-65
-    - IT-82
     - IT-21
-    - IT-57
+    - IT-23
+    - IT-25
+    - IT-32
+    - IT-34
+    - IT-36
+    - IT-42
+    - IT-45
     - IT-52
+    - IT-55
+    - IT-57
+    - IT-62
+    - IT-65
+    - IT-67
     - IT-72
     - IT-75
     - IT-77
-    - IT-34
-    - IT-25
-    - IT-45
-    - IT-32
-    - IT-88
     - IT-78
-    - IT-67
-    - IT-36
-    - IT-62
-    - IT-42
-    - IT-55
-    - IT-23
+    - IT-82
+    - IT-88

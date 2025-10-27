@@ -73,13 +73,13 @@ meta:
       count: 3697
 data:
   labels:
+    - SS-BN
+    - SS-BW
     - SS-EC
     - SS-EE
+    - SS-EW
     - SS-JG
     - SS-LK
-    - SS-BN
-    - SS-UY
     - SS-NU
+    - SS-UY
     - SS-WR
-    - SS-BW
-    - SS-EW

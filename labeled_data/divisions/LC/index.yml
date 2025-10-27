@@ -76,7 +76,6 @@ meta:
 data:
   labels:
     - LC-01
-    - LC-12
     - LC-02
     - LC-03
     - LC-05
@@ -85,3 +84,4 @@ data:
     - LC-08
     - LC-10
     - LC-11
+    - LC-12

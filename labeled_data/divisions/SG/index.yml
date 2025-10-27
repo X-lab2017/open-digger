@@ -76,9 +76,9 @@ meta:
       count: 1524913
 data:
   labels:
+    - ':companies/cloudwise'
     - SG-01
     - SG-02
     - SG-03
     - SG-04
     - SG-05
-    - ':companies/cloudwise'

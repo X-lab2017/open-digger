@@ -78,22 +78,22 @@ meta:
 data:
   labels:
     - RS-00
-    - RS-14
-    - RS-11
-    - RS-23
-    - RS-VO
-    - RS-09
-    - RS-KM
     - RS-08
-    - RS-17
-    - RS-20
-    - RS-22
+    - RS-09
     - RS-10
+    - RS-11
+    - RS-12
     - RS-13
-    - RS-24
-    - RS-19
-    - RS-18
-    - RS-21
+    - RS-14
     - RS-15
     - RS-16
-    - RS-12
+    - RS-17
+    - RS-18
+    - RS-19
+    - RS-20
+    - RS-21
+    - RS-22
+    - RS-23
+    - RS-24
+    - RS-KM
+    - RS-VO

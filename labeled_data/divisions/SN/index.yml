@@ -76,17 +76,17 @@ meta:
       count: 61855
 data:
   labels:
-    - SN-DK
     - SN-DB
+    - SN-DK
     - SN-FK
     - SN-KA
-    - SN-KL
     - SN-KD
     - SN-KE
+    - SN-KL
     - SN-LG
     - SN-MT
-    - SN-SL
     - SN-SE
+    - SN-SL
     - SN-TC
     - SN-TH
     - SN-ZG

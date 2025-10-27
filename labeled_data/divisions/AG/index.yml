@@ -75,11 +75,11 @@ meta:
       count: 1957
 data:
   labels:
-    - AG-10
-    - AG-11
     - AG-03
     - AG-04
     - AG-05
     - AG-06
     - AG-07
     - AG-08
+    - AG-10
+    - AG-11

@@ -80,15 +80,15 @@ data:
     - NZ-CAN
     - NZ-CIT
     - NZ-GIS
-    - NZ-WGN
     - NZ-HKB
-    - NZ-MWT
     - NZ-MBH
+    - NZ-MWT
     - NZ-NSN
     - NZ-NTL
     - NZ-OTA
     - NZ-STL
-    - NZ-TKI
     - NZ-TAS
-    - NZ-WTC
+    - NZ-TKI
+    - NZ-WGN
     - NZ-WKO
+    - NZ-WTC

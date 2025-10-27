@@ -76,6 +76,6 @@ meta:
       count: 688
 data:
   labels:
-    - KM-G
     - KM-A
+    - KM-G
     - KM-M

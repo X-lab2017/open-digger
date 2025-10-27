@@ -1,0 +1,9 @@
+name: inclusionAI
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 199075982
+          name: inclusionAI

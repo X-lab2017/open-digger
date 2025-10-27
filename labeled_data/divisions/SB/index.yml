@@ -75,9 +75,9 @@ meta:
       count: 894
 data:
   labels:
-    - SB-CT
     - SB-CE
     - SB-CH
+    - SB-CT
     - SB-GU
     - SB-IS
     - SB-MK

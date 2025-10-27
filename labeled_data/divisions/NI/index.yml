@@ -76,12 +76,12 @@ meta:
       count: 48568
 data:
   labels:
+    - NI-AN
+    - NI-AS
     - NI-BO
     - NI-CA
     - NI-CI
     - NI-CO
-    - NI-AN
-    - NI-AS
     - NI-ES
     - NI-GR
     - NI-JI

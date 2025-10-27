@@ -76,12 +76,13 @@ meta:
       count: 599880
 data:
   labels:
+    - ':foundations/anoma'
     - CH-AG
-    - CH-AR
     - CH-AI
+    - CH-AR
+    - CH-BE
     - CH-BL
     - CH-BS
-    - CH-BE
     - CH-FR
     - CH-GE
     - CH-GL
@@ -93,13 +94,12 @@ data:
     - CH-OW
     - CH-SG
     - CH-SH
-    - CH-SZ
     - CH-SO
+    - CH-SZ
     - CH-TG
     - CH-TI
     - CH-UR
-    - CH-VS
     - CH-VD
+    - CH-VS
     - CH-ZG
     - CH-ZH
-    - ':foundations/anoma'

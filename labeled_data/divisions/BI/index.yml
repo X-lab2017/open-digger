@@ -77,19 +77,19 @@ meta:
 data:
   labels:
     - BI-BB
-    - BI-BM
     - BI-BL
+    - BI-BM
     - BI-BR
     - BI-CA
     - BI-CI
     - BI-GI
+    - BI-KI
     - BI-KR
     - BI-KY
-    - BI-KI
     - BI-MA
     - BI-MU
-    - BI-MY
     - BI-MW
+    - BI-MY
     - BI-NG
     - BI-RM
     - BI-RT

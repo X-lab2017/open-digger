@@ -78,25 +78,25 @@ meta:
 data:
   labels:
     - MD-AN
-    - MD-BS
+    - MD-BA
     - MD-BD
     - MD-BR
-    - MD-BA
+    - MD-BS
     - MD-CA
-    - MD-CT
-    - MD-CU
+    - MD-CL
     - MD-CM
     - MD-CR
-    - MD-CL
     - MD-CS
+    - MD-CT
+    - MD-CU
     - MD-DO
     - MD-DR
     - MD-DU
     - MD-ED
-    - MD-FL
     - MD-FA
-    - MD-GL
+    - MD-FL
     - MD-GA
+    - MD-GL
     - MD-HI
     - MD-IA
     - MD-LE
@@ -105,12 +105,12 @@ data:
     - MD-OR
     - MD-RE
     - MD-RI
+    - MD-SD
+    - MD-SI
+    - MD-SN
     - MD-SO
     - MD-ST
-    - MD-SN
-    - MD-SI
+    - MD-SV
     - MD-TA
     - MD-TE
     - MD-UN
-    - MD-SD
-    - MD-SV

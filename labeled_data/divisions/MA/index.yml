@@ -76,15 +76,15 @@ meta:
       count: 632885
 data:
   labels:
-    - MA-09
-    - MA-07
     - MA-01
-    - MA-12
-    - MA-10
+    - MA-02
+    - MA-03
+    - MA-04
     - MA-05
     - MA-06
-    - MA-02
-    - MA-11
-    - MA-03
+    - MA-07
     - MA-08
-    - MA-04
+    - MA-09
+    - MA-10
+    - MA-11
+    - MA-12

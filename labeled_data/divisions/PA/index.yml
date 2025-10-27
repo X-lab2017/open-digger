@@ -77,16 +77,16 @@ meta:
 data:
   labels:
     - PA-1
-    - PA-4
+    - PA-10
     - PA-2
     - PA-3
+    - PA-4
     - PA-5
-    - PA-EM
-    - PA-KY
     - PA-6
     - PA-7
-    - PA-NT
-    - PA-NB
     - PA-8
-    - PA-10
     - PA-9
+    - PA-EM
+    - PA-KY
+    - PA-NB
+    - PA-NT

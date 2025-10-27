@@ -77,40 +77,41 @@ meta:
 data:
   labels:
     - HU-BA
-    - HU-BZ
-    - HU-BU
-    - HU-BK
-    - HU-BE
     - HU-BC
+    - HU-BE
+    - HU-BK
+    - HU-BU
+    - HU-BZ
     - HU-CS
     - HU-DE
     - HU-DU
     - HU-EG
+    - HU-ER
     - HU-FE
-    - HU-GY
     - HU-GS
+    - HU-GY
     - HU-HB
     - HU-HE
     - HU-HV
     - HU-JN
-    - HU-KV
-    - HU-KM
     - HU-KE
+    - HU-KM
+    - HU-KV
     - HU-MI
     - HU-NK
-    - HU-NY
     - HU-NO
+    - HU-NY
     - HU-PE
     - HU-PS
-    - HU-ST
-    - HU-SO
-    - HU-SN
-    - HU-SZ
     - HU-SD
-    - HU-SS
-    - HU-SK
-    - HU-SH
     - HU-SF
+    - HU-SH
+    - HU-SK
+    - HU-SN
+    - HU-SO
+    - HU-SS
+    - HU-ST
+    - HU-SZ
     - HU-TB
     - HU-TO
     - HU-VA
@@ -118,4 +119,3 @@ data:
     - HU-VM
     - HU-ZA
     - HU-ZE
-    - HU-ER

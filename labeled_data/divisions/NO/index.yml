@@ -76,18 +76,18 @@ meta:
       count: 400613
 data:
   labels:
-    - NO-42
-    - NO-34
-    - NO-22
-    - NO-15
-    - NO-18
-    - NO-03
-    - NO-11
-    - NO-54
-    - NO-21
-    - NO-50
-    - NO-38
-    - NO-46
-    - NO-30
     - ':companies/nordic_semiconductor'
     - ':companies/opera'
+    - NO-03
+    - NO-11
+    - NO-15
+    - NO-18
+    - NO-21
+    - NO-22
+    - NO-30
+    - NO-34
+    - NO-38
+    - NO-42
+    - NO-46
+    - NO-50
+    - NO-54

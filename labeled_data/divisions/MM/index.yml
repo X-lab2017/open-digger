@@ -77,18 +77,18 @@ meta:
       count: 150194
 data:
   labels:
-    - MM-07
+    - MM-01
     - MM-02
-    - MM-14
+    - MM-03
+    - MM-04
+    - MM-05
+    - MM-06
+    - MM-07
     - MM-11
     - MM-12
     - MM-13
-    - MM-03
-    - MM-04
+    - MM-14
     - MM-15
-    - MM-18
     - MM-16
-    - MM-01
     - MM-17
-    - MM-05
-    - MM-06
+    - MM-18

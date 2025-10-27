@@ -77,13 +77,13 @@ meta:
       count: 42377
 data:
   labels:
-    - BJ-AL
     - BJ-AK
+    - BJ-AL
     - BJ-AQ
     - BJ-BO
     - BJ-CO
-    - BJ-KO
     - BJ-DO
+    - BJ-KO
     - BJ-LI
     - BJ-MO
     - BJ-OU

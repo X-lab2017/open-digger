@@ -78,8 +78,8 @@ meta:
 data:
   labels:
     - BY-BR
-    - BY-HO
     - BY-HM
+    - BY-HO
     - BY-HR
     - BY-MA
     - BY-MI

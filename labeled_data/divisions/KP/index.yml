@@ -14,16 +14,16 @@ meta:
   developers: []
 data:
   labels:
-    - KP-04
-    - KP-09
-    - KP-08
-    - KP-06
-    - KP-05
-    - KP-15
-    - KP-07
-    - KP-14
-    - KP-03
-    - KP-02
     - KP-01
-    - KP-13
+    - KP-02
+    - KP-03
+    - KP-04
+    - KP-05
+    - KP-06
+    - KP-07
+    - KP-08
+    - KP-09
     - KP-10
+    - KP-13
+    - KP-14
+    - KP-15

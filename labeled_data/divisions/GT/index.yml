@@ -76,25 +76,25 @@ meta:
       count: 142624
 data:
   labels:
-    - GT-16
-    - GT-15
-    - GT-04
-    - GT-20
-    - GT-02
-    - GT-05
     - GT-01
-    - GT-13
-    - GT-18
-    - GT-21
-    - GT-22
-    - GT-17
-    - GT-09
-    - GT-14
-    - GT-11
+    - GT-02
     - GT-03
-    - GT-12
+    - GT-04
+    - GT-05
     - GT-06
     - GT-07
-    - GT-10
     - GT-08
+    - GT-09
+    - GT-10
+    - GT-11
+    - GT-12
+    - GT-13
+    - GT-14
+    - GT-15
+    - GT-16
+    - GT-17
+    - GT-18
     - GT-19
+    - GT-20
+    - GT-21
+    - GT-22

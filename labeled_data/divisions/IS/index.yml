@@ -76,12 +76,12 @@ meta:
       count: 35655
 data:
   labels:
+    - ':companies/llama_corp'
+    - IS-1
+    - IS-2
     - IS-3
+    - IS-4
+    - IS-5
     - IS-6
     - IS-7
     - IS-8
-    - IS-4
-    - IS-1
-    - IS-2
-    - IS-5
-    - ':companies/llama_corp'

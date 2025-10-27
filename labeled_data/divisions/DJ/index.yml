@@ -76,9 +76,9 @@ meta:
       count: 3709
 data:
   labels:
-    - DJ-AS
     - DJ-AR
-    - DJ-OB
+    - DJ-AS
     - DJ-DI
     - DJ-DJ
+    - DJ-OB
     - DJ-TA

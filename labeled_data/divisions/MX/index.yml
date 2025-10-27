@@ -80,27 +80,27 @@ data:
     - MX-BCN
     - MX-BCS
     - MX-CAM
-    - MX-CHP
     - MX-CHH
+    - MX-CHP
     - MX-CMX
     - MX-COA
     - MX-COL
     - MX-DUR
-    - MX-GUA
     - MX-GRO
+    - MX-GUA
     - MX-HID
     - MX-JAL
+    - MX-MEX
     - MX-MIC
     - MX-MOR
-    - MX-MEX
     - MX-NAY
     - MX-NLE
     - MX-OAX
     - MX-PUE
     - MX-QUE
     - MX-ROO
-    - MX-SLP
     - MX-SIN
+    - MX-SLP
     - MX-SON
     - MX-TAB
     - MX-TAM

@@ -75,19 +75,19 @@ meta:
       count: 3211400
 data:
   labels:
+    - ':companies/tailscale'
+    - ':companies/tenstorrent'
+    - ':foundations/eclipse'
     - CA-AB
     - CA-BC
     - CA-MB
     - CA-NB
     - CA-NL
-    - CA-NT
     - CA-NS
+    - CA-NT
     - CA-NU
     - CA-ON
     - CA-PE
     - CA-QC
     - CA-SK
     - CA-YT
-    - ':companies/tailscale'
-    - ':companies/tenstorrent'
-    - ':foundations/eclipse'

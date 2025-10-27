@@ -76,21 +76,21 @@ meta:
       count: 64639
 data:
   labels:
-    - PY-16
-    - PY-10
-    - PY-13
-    - PY-ASU
-    - PY-19
-    - PY-5
-    - PY-6
-    - PY-14
-    - PY-11
     - PY-1
+    - PY-10
+    - PY-11
+    - PY-12
+    - PY-13
+    - PY-14
+    - PY-15
+    - PY-16
+    - PY-19
+    - PY-2
     - PY-3
     - PY-4
+    - PY-5
+    - PY-6
     - PY-7
     - PY-8
     - PY-9
-    - PY-15
-    - PY-2
-    - PY-12
+    - PY-ASU

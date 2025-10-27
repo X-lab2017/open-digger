@@ -76,23 +76,23 @@ meta:
       count: 2116788
 data:
   labels:
-    - ES-GA
-    - ES-VC
-    - ES-CM
+    - ':companies/artelnics'
     - ES-AN
-    - ES-PV
     - ES-AR
     - ES-AS
-    - ES-EX
-    - ES-CT
-    - ES-CL
-    - ES-CN
     - ES-CB
     - ES-CE
+    - ES-CL
+    - ES-CM
+    - ES-CN
+    - ES-CT
+    - ES-EX
+    - ES-GA
     - ES-IB
-    - ES-RI
+    - ES-MC
     - ES-MD
     - ES-ML
-    - ES-MC
     - ES-NC
-    - ':companies/artelnics'
+    - ES-PV
+    - ES-RI
+    - ES-VC

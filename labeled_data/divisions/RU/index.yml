@@ -78,6 +78,7 @@ meta:
       count: 3962314
 data:
   labels:
+    - ':companies/yandex'
     - RU-AD
     - RU-AL
     - RU-ALT
@@ -93,30 +94,27 @@ data:
     - RU-CHU
     - RU-CU
     - RU-DA
-    - RU-YEV
-    - RU-KHA
-    - RU-KK
-    - RU-KHM
     - RU-IN
     - RU-IRK
     - RU-IVA
-    - RU-YAN
-    - RU-YAR
+    - RU-KAM
     - RU-KB
+    - RU-KC
+    - RU-KDA
+    - RU-KEM
     - RU-KGD
+    - RU-KGN
+    - RU-KHA
+    - RU-KHM
+    - RU-KIR
+    - RU-KK
     - RU-KL
     - RU-KLU
-    - RU-KAM
-    - RU-KC
-    - RU-KR
-    - RU-KEM
-    - RU-KIR
     - RU-KO
     - RU-KOS
-    - RU-KDA
-    - RU-KYA
-    - RU-KGN
+    - RU-KR
     - RU-KRS
+    - RU-KYA
     - RU-LEN
     - RU-LIP
     - RU-MAG
@@ -126,39 +124,41 @@ data:
     - RU-MOW
     - RU-MUR
     - RU-NEN
-    - RU-NIZ
     - RU-NGR
+    - RU-NIZ
     - RU-NVS
     - RU-OMS
     - RU-ORE
     - RU-ORL
-    - RU-PNZ
     - RU-PER
+    - RU-PNZ
     - RU-PRI
     - RU-PSK
-    - RU-RYA
     - RU-ROS
+    - RU-RYA
     - RU-SA
     - RU-SAK
     - RU-SAM
-    - RU-SPE
     - RU-SAR
     - RU-SE
     - RU-SMO
+    - RU-SPE
     - RU-STA
     - RU-SVE
-    - RU-TAM
     - RU-TA
-    - RU-TYU
+    - RU-TAM
     - RU-TOM
     - RU-TUL
     - RU-TVE
     - RU-TY
+    - RU-TYU
     - RU-UD
     - RU-ULY
-    - RU-VLA
     - RU-VGG
+    - RU-VLA
     - RU-VLG
     - RU-VOR
+    - RU-YAN
+    - RU-YAR
+    - RU-YEV
     - RU-ZAB
-    - ':companies/yandex'

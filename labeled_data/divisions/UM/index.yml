@@ -12,12 +12,12 @@ meta:
   developers: []
 data:
   labels:
+    - UM-67
+    - UM-71
+    - UM-76
+    - UM-79
     - UM-81
     - UM-84
     - UM-86
-    - UM-67
     - UM-89
-    - UM-71
-    - UM-76
     - UM-95
-    - UM-79

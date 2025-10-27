@@ -76,27 +76,27 @@ meta:
       count: 1223581
 data:
   labels:
+    - AR-A
     - AR-B
-    - AR-K
-    - AR-H
-    - AR-U
     - AR-C
-    - AR-W
-    - AR-X
+    - AR-D
     - AR-E
-    - AR-P
-    - AR-Y
-    - AR-L
     - AR-F
+    - AR-G
+    - AR-H
+    - AR-J
+    - AR-K
+    - AR-L
     - AR-M
     - AR-N
+    - AR-P
     - AR-Q
     - AR-R
-    - AR-A
-    - AR-J
-    - AR-D
-    - AR-Z
     - AR-S
-    - AR-G
-    - AR-V
     - AR-T
+    - AR-U
+    - AR-V
+    - AR-W
+    - AR-X
+    - AR-Y
+    - AR-Z

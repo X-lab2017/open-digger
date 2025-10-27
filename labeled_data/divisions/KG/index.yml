@@ -77,11 +77,11 @@ meta:
 data:
   labels:
     - KG-B
-    - KG-GB
     - KG-C
-    - KG-J
+    - KG-GB
     - KG-GO
-    - KG-Y
+    - KG-J
     - KG-N
     - KG-O
     - KG-T
+    - KG-Y

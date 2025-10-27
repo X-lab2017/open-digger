@@ -79,21 +79,21 @@ meta:
       count: 2434485
 data:
   labels:
+    - ':companies/samsung'
+    - KR-11
     - KR-26
+    - KR-27
+    - KR-28
+    - KR-29
+    - KR-30
+    - KR-31
+    - KR-41
+    - KR-42
     - KR-43
     - KR-44
-    - KR-27
-    - KR-30
-    - KR-42
-    - KR-29
-    - KR-41
-    - KR-47
-    - KR-48
-    - KR-28
-    - KR-49
     - KR-45
     - KR-46
+    - KR-47
+    - KR-48
+    - KR-49
     - KR-50
-    - KR-11
-    - KR-31
-    - ':companies/samsung'

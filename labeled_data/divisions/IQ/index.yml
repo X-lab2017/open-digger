@@ -78,17 +78,17 @@ data:
   labels:
     - IQ-AN
     - IQ-BA
-    - IQ-MU
-    - IQ-QA
-    - IQ-NA
-    - IQ-KR
-    - IQ-BG
     - IQ-BB
-    - IQ-DQ
+    - IQ-BG
     - IQ-DI
+    - IQ-DQ
     - IQ-KA
     - IQ-KI
+    - IQ-KR
     - IQ-MA
+    - IQ-MU
+    - IQ-NA
     - IQ-NI
-    - IQ-WA
+    - IQ-QA
     - IQ-SD
+    - IQ-WA

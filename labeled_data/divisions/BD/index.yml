@@ -76,11 +76,11 @@ meta:
       count: 1399654
 data:
   labels:
-    - BD-D
-    - BD-B
     - BD-A
-    - BD-E
+    - BD-B
     - BD-C
+    - BD-D
+    - BD-E
     - BD-F
     - BD-G
     - BD-H

@@ -76,15 +76,15 @@ meta:
 data:
   labels:
     - BF-01
-    - BF-05
-    - BF-07
-    - BF-13
-    - BF-04
-    - BF-06
     - BF-02
     - BF-03
+    - BF-04
+    - BF-05
+    - BF-06
+    - BF-07
     - BF-08
-    - BF-11
     - BF-09
     - BF-10
+    - BF-11
     - BF-12
+    - BF-13

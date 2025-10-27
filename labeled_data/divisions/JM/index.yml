@@ -75,17 +75,17 @@ meta:
       count: 44013
 data:
   labels:
-    - JM-13
-    - JM-09
     - JM-01
-    - JM-12
-    - JM-04
     - JM-02
-    - JM-06
-    - JM-14
-    - JM-11
-    - JM-08
-    - JM-05
     - JM-03
+    - JM-04
+    - JM-05
+    - JM-06
     - JM-07
+    - JM-08
+    - JM-09
     - JM-10
+    - JM-11
+    - JM-12
+    - JM-13
+    - JM-14

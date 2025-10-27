@@ -76,11 +76,15 @@ meta:
       count: 283597
 data:
   labels:
+    - ':companies/ggml.ai'
     - BG-01
     - BG-02
-    - BG-08
+    - BG-03
+    - BG-04
+    - BG-05
+    - BG-06
     - BG-07
-    - BG-26
+    - BG-08
     - BG-09
     - BG-10
     - BG-11
@@ -91,17 +95,13 @@ data:
     - BG-16
     - BG-17
     - BG-18
-    - BG-27
     - BG-19
     - BG-20
     - BG-21
-    - BG-23
     - BG-22
+    - BG-23
     - BG-24
     - BG-25
-    - BG-03
-    - BG-04
-    - BG-05
-    - BG-06
+    - BG-26
+    - BG-27
     - BG-28
-    - ':companies/ggml.ai'

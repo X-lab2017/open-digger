@@ -76,19 +76,19 @@ meta:
       count: 223235
 data:
   labels:
+    - GH-AA
     - GH-AF
     - GH-AH
-    - GH-BO
     - GH-BE
+    - GH-BO
     - GH-CP
     - GH-EP
-    - GH-AA
     - GH-NE
     - GH-NP
     - GH-OT
     - GH-SV
+    - GH-TV
     - GH-UE
     - GH-UW
-    - GH-TV
-    - GH-WP
     - GH-WN
+    - GH-WP

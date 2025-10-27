@@ -76,11 +76,11 @@ meta:
       count: 8939
 data:
   labels:
-    - GN-N
     - GN-B
     - GN-C
     - GN-D
     - GN-F
-    - GN-M
     - GN-K
     - GN-L
+    - GN-M
+    - GN-N

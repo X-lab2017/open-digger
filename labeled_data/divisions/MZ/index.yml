@@ -76,14 +76,14 @@ meta:
       count: 27571
 data:
   labels:
-    - MZ-P
+    - MZ-A
+    - MZ-B
     - MZ-G
     - MZ-I
-    - MZ-B
-    - MZ-MPM
     - MZ-L
+    - MZ-MPM
     - MZ-N
-    - MZ-A
+    - MZ-P
+    - MZ-Q
     - MZ-S
     - MZ-T
-    - MZ-Q

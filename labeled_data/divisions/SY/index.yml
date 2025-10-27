@@ -78,17 +78,17 @@ meta:
       count: 49580
 data:
   labels:
-    - SY-LA
-    - SY-QU
-    - SY-HA
-    - SY-RA
-    - SY-SU
+    - SY-DI
     - SY-DR
     - SY-DY
-    - SY-DI
-    - SY-ID
-    - SY-RD
-    - SY-TA
+    - SY-HA
+    - SY-HI
     - SY-HL
     - SY-HM
-    - SY-HI
+    - SY-ID
+    - SY-LA
+    - SY-QU
+    - SY-RA
+    - SY-RD
+    - SY-SU
+    - SY-TA

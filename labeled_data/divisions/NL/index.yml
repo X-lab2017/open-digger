@@ -79,8 +79,13 @@ meta:
       count: 1598457
 data:
   labels:
+    - ':companies/polars'
+    - ':foundations/godot'
+    - ':foundations/nixos'
     - NL-AW
     - NL-BQ1
+    - NL-BQ2
+    - NL-BQ3
     - NL-CW
     - NL-DR
     - NL-FL
@@ -91,12 +96,7 @@ data:
     - NL-NB
     - NL-NH
     - NL-OV
-    - NL-BQ2
-    - NL-BQ3
     - NL-SX
     - NL-UT
     - NL-ZE
     - NL-ZH
-    - ':companies/polars'
-    - ':foundations/godot'
-    - ':foundations/nixos'

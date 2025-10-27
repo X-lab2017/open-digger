@@ -73,5 +73,5 @@ meta:
       count: 244
 data:
   labels:
-    - MH-T
     - MH-L
+    - MH-T

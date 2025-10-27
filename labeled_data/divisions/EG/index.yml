@@ -76,30 +76,30 @@ meta:
       count: 1130281
 data:
   labels:
-    - EG-DK
-    - EG-BA
-    - EG-BH
-    - EG-FYM
-    - EG-GH
     - EG-ALX
-    - EG-IS
-    - EG-GZ
-    - EG-MN
-    - EG-MNF
-    - EG-KB
-    - EG-C
-    - EG-LX
-    - EG-WAD
-    - EG-SUZ
-    - EG-SHR
     - EG-ASN
     - EG-AST
+    - EG-BA
+    - EG-BH
     - EG-BNS
-    - EG-PTS
+    - EG-C
+    - EG-DK
     - EG-DT
+    - EG-FYM
+    - EG-GH
+    - EG-GZ
+    - EG-IS
     - EG-JS
+    - EG-KB
     - EG-KFS
-    - EG-MT
     - EG-KN
-    - EG-SIN
+    - EG-LX
+    - EG-MN
+    - EG-MNF
+    - EG-MT
+    - EG-PTS
     - EG-SHG
+    - EG-SHR
+    - EG-SIN
+    - EG-SUZ
+    - EG-WAD

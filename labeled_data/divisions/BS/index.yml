@@ -78,17 +78,17 @@ meta:
 data:
   labels:
     - BS-AK
-    - BS-BY
     - BS-BI
     - BS-BP
+    - BS-BY
+    - BS-CE
     - BS-CI
+    - BS-CK
     - BS-CO
     - BS-CS
-    - BS-CE
-    - BS-FP
-    - BS-CK
     - BS-EG
     - BS-EX
+    - BS-FP
     - BS-GC
     - BS-HI
     - BS-HT
@@ -97,15 +97,15 @@ data:
     - BS-MC
     - BS-MG
     - BS-MI
-    - BS-NP
-    - BS-NO
-    - BS-NS
     - BS-NE
-    - BS-RI
+    - BS-NO
+    - BS-NP
+    - BS-NS
     - BS-RC
-    - BS-SS
-    - BS-SO
+    - BS-RI
     - BS-SA
     - BS-SE
+    - BS-SO
+    - BS-SS
     - BS-SW
     - BS-WG

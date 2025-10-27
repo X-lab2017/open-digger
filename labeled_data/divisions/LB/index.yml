@@ -77,10 +77,10 @@ meta:
 data:
   labels:
     - LB-AK
+    - LB-AS
+    - LB-BA
+    - LB-BH
     - LB-BI
     - LB-JA
-    - LB-NA
-    - LB-AS
-    - LB-BH
-    - LB-BA
     - LB-JL
+    - LB-NA

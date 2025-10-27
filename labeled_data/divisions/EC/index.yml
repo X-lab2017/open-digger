@@ -79,24 +79,24 @@ data:
     - EC-A
     - EC-B
     - EC-C
-    - EC-F
-    - EC-H
-    - EC-X
-    - EC-O
+    - EC-D
     - EC-E
-    - EC-W
+    - EC-F
     - EC-G
+    - EC-H
     - EC-I
     - EC-L
-    - EC-R
     - EC-M
-    - EC-S
     - EC-N
-    - EC-D
-    - EC-Y
+    - EC-O
     - EC-P
-    - EC-SE
+    - EC-R
+    - EC-S
     - EC-SD
-    - EC-U
+    - EC-SE
     - EC-T
+    - EC-U
+    - EC-W
+    - EC-X
+    - EC-Y
     - EC-Z

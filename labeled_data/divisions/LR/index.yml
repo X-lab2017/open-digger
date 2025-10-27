@@ -76,18 +76,18 @@ meta:
       count: 7540
 data:
   labels:
-    - LR-BM
     - LR-BG
-    - LR-GP
-    - LR-GB
+    - LR-BM
     - LR-CM
+    - LR-GB
     - LR-GG
     - LR-GK
+    - LR-GP
     - LR-LO
     - LR-MG
-    - LR-MY
     - LR-MO
+    - LR-MY
     - LR-NI
-    - LR-RI
     - LR-RG
+    - LR-RI
     - LR-SI

@@ -1,0 +1,11 @@
+name: Geaflow
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 649505588
+          name: apache/geaflow
+        - id: 1033899006
+          name: apache/geaflow-website

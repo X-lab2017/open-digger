@@ -76,7 +76,7 @@ meta:
       count: 589582
 data:
   labels:
+    - ':companies/odoo'
+    - BE-BRU
     - BE-VLG
     - BE-WAL
-    - BE-BRU
-    - ':companies/odoo'

@@ -78,14 +78,14 @@ meta:
 data:
   labels:
     - CG-11
-    - CG-BZV
-    - CG-8
-    - CG-15
-    - CG-5
-    - CG-7
-    - CG-2
-    - CG-9
-    - CG-14
-    - CG-16
     - CG-12
     - CG-13
+    - CG-14
+    - CG-15
+    - CG-16
+    - CG-2
+    - CG-5
+    - CG-7
+    - CG-8
+    - CG-9
+    - CG-BZV

@@ -76,11 +76,11 @@ meta:
       count: 38203
 data:
   labels:
+    - AF-BAL
+    - AF-BAM
+    - AF-BDG
     - AF-BDS
     - AF-BGL
-    - AF-BAL
-    - AF-BDG
-    - AF-BAM
     - AF-DAY
     - AF-FRA
     - AF-FYB
@@ -89,21 +89,21 @@ data:
     - AF-HEL
     - AF-HER
     - AF-JOW
+    - AF-KAB
     - AF-KAN
+    - AF-KAP
+    - AF-KDZ
     - AF-KHO
     - AF-KNR
-    - AF-KDZ
-    - AF-KAB
-    - AF-KAP
     - AF-LAG
     - AF-LOG
     - AF-NAN
     - AF-NIM
     - AF-NUR
-    - AF-PIA
-    - AF-PKA
     - AF-PAN
     - AF-PAR
+    - AF-PIA
+    - AF-PKA
     - AF-SAM
     - AF-SAR
     - AF-TAK

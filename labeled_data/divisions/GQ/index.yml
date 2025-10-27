@@ -76,5 +76,5 @@ meta:
       count: 1450
 data:
   labels:
-    - GQ-I
     - GQ-C
+    - GQ-I

@@ -78,8 +78,8 @@ meta:
 data:
   labels:
     - GM-B
-    - GM-M
     - GM-L
+    - GM-M
     - GM-N
     - GM-U
     - GM-W

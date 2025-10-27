@@ -76,25 +76,25 @@ meta:
       count: 822949
 data:
   labels:
-    - SE-K
-    - SE-W
-    - SE-I
-    - SE-X
-    - SE-N
-    - SE-Z
-    - SE-F
-    - SE-H
-    - SE-G
-    - SE-BD
-    - SE-M
-    - SE-AB
-    - SE-D
-    - SE-C
-    - SE-S
-    - SE-AC
-    - SE-Y
-    - SE-U
-    - SE-O
-    - SE-T
-    - SE-E
     - ':companies/spotify'
+    - SE-AB
+    - SE-AC
+    - SE-BD
+    - SE-C
+    - SE-D
+    - SE-E
+    - SE-F
+    - SE-G
+    - SE-H
+    - SE-I
+    - SE-K
+    - SE-M
+    - SE-N
+    - SE-O
+    - SE-S
+    - SE-T
+    - SE-U
+    - SE-W
+    - SE-X
+    - SE-Y
+    - SE-Z

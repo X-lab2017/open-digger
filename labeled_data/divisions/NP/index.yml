@@ -75,10 +75,10 @@ meta:
       count: 345782
 data:
   labels:
+    - NP-P1
+    - NP-P2
     - NP-P3
     - NP-P4
-    - NP-P6
-    - NP-P1
     - NP-P5
-    - NP-P2
+    - NP-P6
     - NP-P7

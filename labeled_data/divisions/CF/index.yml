@@ -70,20 +70,20 @@ meta:
       count: 524
 data:
   labels:
+    - CF-AC
     - CF-BB
     - CF-BGF
     - CF-BK
-    - CF-KB
-    - CF-HM
     - CF-HK
+    - CF-HM
     - CF-HS
+    - CF-KB
     - CF-KG
     - CF-LB
     - CF-MB
-    - CF-NM
     - CF-MP
-    - CF-UK
-    - CF-AC
+    - CF-NM
     - CF-OP
     - CF-SE
+    - CF-UK
     - CF-VK

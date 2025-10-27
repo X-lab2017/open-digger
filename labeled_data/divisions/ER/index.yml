@@ -75,9 +75,9 @@ meta:
       count: 1677
 data:
   labels:
-    - ER-MA
-    - ER-DU
     - ER-AN
     - ER-DK
+    - ER-DU
     - ER-GB
+    - ER-MA
     - ER-SK
