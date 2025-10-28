@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>各国新增参与者数量趋势（2016-2025）</title>
+    <!-- 引入ECharts官方CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.4.3/dist/echarts.min.js"></script>
+    <style>
+        /* 图表容器样式，保持响应式 */
+        #participantChart {
+            width: 100%;
+            height: 600px;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+<body>
+<div id="participantChart"></div>
+
+<script type="text/javascript">
+    // -------------------------- 1. 单独提取所有数据，结构清晰 --------------------------
+    // 年份数据（X轴）
+    const xAxisData = ["2016", "2017", "2018", "2019", "2020", "2021", "2022", "2023", "2024", "2025"];
+    // 各国新增参与者数据（键：国家名，值：对应年份的数值数组）
+    const countryData = {
+        "巴西": [13212, 14181, 15382, 16836, 23973, 31121, 34367, 37152, 35935, 33441],
+        "加拿大": [16592, 14859, 13508, 13051, 14784, 15422, 12191, 12040, 9981, 10122],
+        "中国": [32250, 36535, 36252, 34123, 29124, 22425, 19832, 18785, 16452, 15312],
+        "法国": [13483, 11852, 11284, 10534, 12087, 12760, 11128, 11084, 9656, 8312],
+        "德国": [23337, 20031, 18372, 16959, 19394, 20441, 15672, 15074, 12990, 12941],
+        "印度": [21315, 27088, 31465, 33318, 46977, 58436, 48334, 58715, 59634, 56123],
+        "印度尼西亚": [3031, 3584, 4177, 4646, 7042, 8798, 9394, 9650, 8428, 8931],
+        "俄罗斯": [8035, 8063, 8208, 8639, 10723, 12604, 12688, 13142, 9787, 9821],
+        "英国": [22342, 19371, 17724, 15827, 17272, 16975, 13485, 12979, 10607, 9831],
+        "美国": [115813, 100345, 88840, 78455, 82019, 78006, 60549, 55689, 43399, 35213]
+    };
+
+    // 配色方案（与原始代码一致，确保视觉统一）
+    const colorList = ["#5470c6", "#91cc75", "#fac858", "#ee6666", "#73c0de", "#3ba272", "#fc8452", "#9a60b4", "#ea7ccc", "#61a0a8"];
+
+
+    // -------------------------- 2. 按2025年数值对国家进行倒序排序 --------------------------
+    // 获取所有国家并添加2025年数据
+    const countriesWith2025Data = Object.keys(countryData).map(country => ({
+        name: country,
+        value2025: countryData[country][9]  // 2025年是数组的第10个元素，索引为9
+    }));
+
+    // 按2025年数值倒序排序
+    const sortedCountries = countriesWith2025Data.sort((a, b) => b.value2025 - a.value2025).map(item => item.name);
+
+
+    // -------------------------- 3. 初始化图表并配置 --------------------------
+    const myChart = echarts.init(document.getElementById('participantChart'));
+
+    // 按排序后的国家生成series数组
+    const series = sortedCountries.map((country, index) => ({
+        name: country,
+        type: "line",
+        data: countryData[country],
+        smooth: true, // 平滑曲线
+        symbol: "circle", // 数据点标记
+        symbolSize: 6, // 标记大小
+        lineStyle: {
+            width: 2, // 线条宽度
+            color: colorList[index] // 对应配色
+        },
+        itemStyle: {
+            color: colorList[index] // 标记颜色
+        }
+    }));
+
+    // 图表核心配置
+    const option = {
+        // 图例（使用排序后的国家列表）
+        legend: {
+            data: sortedCountries,  // 使用排序后的国家顺序
+            orient: "horizontal",
+            left: "center",
+            top: "top",
+            textStyle: {
+                fontSize: 14,
+                color: "#333"
+            },
+            itemWidth: 12, // 缩小图例项宽度，避免拥挤
+            itemHeight: 12
+        },
+
+        // 鼠标悬浮提示
+        tooltip: {
+            trigger: "axis",
+            axisPointer: {type: "shadow"},
+            formatter: params => {
+                let tip = `<div style="font-weight:bold">${params[0].name}年</div>`;
+                params.forEach(item => {
+                    tip += `<div>${item.seriesName}: ${item.value.toLocaleString()} 人</div>`;
+                });
+                return tip;
+            }
+        },
+
+        // 图表网格
+        grid: {
+            left: "3%",
+            right: "4%",
+            bottom: "10%",
+            top: "15%",
+            containLabel: true
+        },
+
+        // X轴
+        xAxis: {
+            type: "category",
+            data: xAxisData,
+            axisLabel: {
+                fontSize: 12,
+                color: "#333"
+            },
+            axisLine: {lineStyle: {color: "#333"}},
+            axisTick: {lineStyle: {color: "#333"}},
+            splitLine: {show: false} // 隐藏X轴网格线
+        },
+
+        // Y轴
+        yAxis: {
+            type: "value",
+            name: "新增参与者数量（人）",
+            nameTextStyle: {color: "#333", fontSize: 12},
+            axisLabel: {
+                fontSize: 12,
+                color: "#333",
+                formatter: "{value} 人" // 显示单位
+            },
+            axisLine: {lineStyle: {color: "#333"}},
+            axisTick: {lineStyle: {color: "#333"}},
+            splitLine: {lineStyle: {color: "#f5f5f5"}} // 浅灰色网格线
+        },
+
+        // 数据系列（使用排序后的国家顺序）
+        series: series
+    };
+
+    // 应用配置并监听窗口 resize
+    myChart.setOption(option);
+    window.addEventListener("resize", () => myChart.resize());
+</script>
+</body>
+</html>

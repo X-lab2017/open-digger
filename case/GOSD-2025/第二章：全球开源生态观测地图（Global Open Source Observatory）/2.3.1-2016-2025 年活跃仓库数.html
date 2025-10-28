@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>数据趋势曲线图</title>
+    <!-- 引入ECharts官方CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.4.3/dist/echarts.min.js"></script>
+    <style>
+        #chartContainer {
+            width: 100%;
+            height: 600px;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+<body>
+<div id="chartContainer"></div>
+
+<script type="text/javascript">
+    // 初始化ECharts实例
+    var myChart = echarts.init(document.getElementById('chartContainer'));
+
+    // 数据处理 - 按年份升序排列
+    const yearData = ["2016", "2017", "2018", "2019", "2020", "2021", "2022", "2023", "2024", "2025"];
+    const valueData = [1938198, 2264387, 2690676, 3116420, 3972624, 4669083, 4613708, 5338769, 5473903, 5936333];
+
+    // 配置图表参数
+    var option = {
+        // 移除标题和图例
+
+        // 图表网格
+        grid: {
+            left: '0',
+            right: '5%',
+            bottom: '0',
+            top: '5%',
+            containLabel: true
+        },
+
+        // X轴（年份）
+        xAxis: {
+            type: 'category',
+            data: yearData,
+            name: "年份",
+            nameTextStyle: {
+                fontSize: 16,
+                fontWeight: 'bold'
+            },
+            axisLabel: {
+                fontSize: 14,
+                fontWeight: 'bold',
+                color: '#333' // 深色文字
+            },
+            axisLine: {
+                lineStyle: {
+                    color: '#333' // 深色轴线
+                }
+            },
+            axisTick: {
+                lineStyle: {
+                    color: '#333' // 深色刻度线
+                }
+            }
+        },
+
+        // Y轴（数值）
+        yAxis: {
+            type: 'value',
+            name: "活跃仓库数",
+            nameTextStyle: {
+                fontSize: 16,
+                fontWeight: 'bold'
+            },
+            axisLabel: {
+                fontSize: 14,
+                fontWeight: 'bold',
+                color: '#333', // 深色文字
+                formatter: '{value}' // 数值格式化
+            },
+            splitLine: {
+                lineStyle: {
+                    color: '#e0e0e0' // 浅灰色网格线
+                }
+            },
+            axisLine: {
+                lineStyle: {
+                    color: '#333' // 深色轴线
+                }
+            },
+            axisTick: {
+                lineStyle: {
+                    color: '#333' // 深色刻度线
+                }
+            }
+        },
+
+        // 数据系列（单条曲线）
+        series: [
+            {
+                data: valueData,
+                type: "line",
+                smooth: true, // 平滑曲线
+                lineStyle: {
+                    width: 3, // 线条宽度
+                    color: '#2f4554' // 曲线颜色
+                },
+                symbol: 'circle', // 数据点标记
+                symbolSize: 8, // 标记大小
+                itemStyle: {
+                    color: '#2f4554' // 标记颜色
+                }
+            }
+        ]
+    };
+
+    // 应用配置项
+    myChart.setOption(option);
+
+    // 监听窗口大小变化，自动调整图表尺寸
+    window.addEventListener('resize', function () {
+        myChart.resize();
+    });
+</script>
+</body>
+</html>

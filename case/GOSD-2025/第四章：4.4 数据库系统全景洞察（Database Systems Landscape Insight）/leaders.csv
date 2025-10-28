@@ -1,0 +1,92 @@
+full_name,dbms_name,quadrant
+postgres/postgres,PostgreSQL,market_strong_community_weak
+redis/redis,Redis,market_strong_community_weak
+elastic/elasticsearch,Elasticsearch,leaders_market+community_strong
+apache/cassandra,Apache Cassandra,leaders_market+community_strong
+mariadb/server,MariaDB,leaders_market+community_strong
+apache/hive,Apache Hive,leaders_market+community_strong
+neo4j/neo4j,Neo4j,market_strong_community_weak
+apache/hbase,Apache HBase,leaders_market+community_strong
+influxdata/influxdb,InfluxDB,leaders_market+community_strong
+apache/spark,Apache Spark (SQL),leaders_market+community_strong
+clickhouse/clickhouse,ClickHouse,leaders_market+community_strong
+opensearch-project/opensearch,OpenSearch,leaders_market+community_strong
+firebirdsql/firebird,Firebird,market_strong_community_weak
+couchbase/couchbase-lite-core,Couchbase,market_strong_community_weak
+apache/flink,Apache Flink,leaders_market+community_strong
+apache/couchdb,CouchDB,market_strong_community_weak
+etcd-io/etcd,etcd,leaders_market+community_strong
+h2database/h2database,H2,market_strong_community_weak
+prometheus/prometheus,Prometheus,leaders_market+community_strong
+duckdb/duckdb,DuckDB,leaders_market+community_strong
+realm/realm-core,Realm,market_strong_community_weak
+prestodb/presto,Presto,leaders_market+community_strong
+trinodb/trino,Trino,leaders_market+community_strong
+hazelcast/hazelcast,Hazelcast,market_strong_community_weak
+cockroachdb/cockroach,CockroachDB,leaders_market+community_strong
+timescale/timescaledb,TimescaleDB,leaders_market+community_strong
+pingcap/tidb,TiDB,leaders_market+community_strong
+milvus-io/milvus,Milvus,leaders_market+community_strong
+apache/druid,Apache Druid,leaders_market+community_strong
+questdb/questdb,QuestDB,leaders_market+community_strong
+apache/ignite,Apache Ignite,market_strong_community_weak
+facebook/rocksdb,RocksDB,leaders_market+community_strong
+arangodb/arangodb,ArangoDB,market_strong_community_weak
+orientechnologies/orientdb,OrientDB,market_strong_community_weak
+apache/jena,Apache Jena - TDB,market_strong_community_weak
+apache/accumulo,Apache Accumulo,market_strong_community_weak
+memgraph/memgraph,Memgraph,market_strong_community_weak
+ravendb/ravendb,RavenDB,leaders_market+community_strong
+oceanbase/oceanbase,OceanBase,market_strong_community_weak
+qdrant/qdrant,Qdrant,leaders_market+community_strong
+yugabyte/yugabyte-db,YugabyteDB,leaders_market+community_strong
+infinispan/infinispan,Infinispan,market_strong_community_weak
+citusdata/citus,Citus,market_strong_community_weak
+percona/percona-server,Percona Server for MySQL,market_strong_community_weak
+chroma-core/chroma,Chroma,leaders_market+community_strong
+apache/phoenix,Apache Phoenix,market_strong_community_weak
+taosdata/tdengine,TDengine,community_strong_market_weak
+monetdb/monetdb,MonetDB,laggards_market+community_weak
+apache/iotdb,Apache IoTDB,community_strong_market_weak
+victoriametrics/victoriametrics,VictoriaMetrics,community_strong_market_weak
+tarantool/tarantool,Tarantool,community_strong_market_weak
+gridgain/gridgain,GridGain,laggards_market+community_weak
+valkey-io/valkey,Valkey,community_strong_market_weak
+dgraph-io/dgraph,Dgraph,laggards_market+community_weak
+meilisearch/meilisearch,Meilisearch,laggards_market+community_weak
+starrocks/starrocks,StarRocks,community_strong_market_weak
+mbdavid/litedb,LiteDB,laggards_market+community_weak
+eventstore/eventstore,KurrentDB (aka EventStoreDB),laggards_market+community_weak
+surrealdb/surrealdb,SurrealDB,community_strong_market_weak
+vitessio/vitess,Vitess,community_strong_market_weak
+cubrid/cubrid,Cubrid,community_strong_market_weak
+apple/foundationdb,FoundationDB,community_strong_market_weak
+matrixorigin/matrixone,MatrixOne,community_strong_market_weak
+typesense/typesense,Typesense,laggards_market+community_weak
+vespa-engine/vespa,Vespa,community_strong_market_weak
+exist-db/exist,eXist-db,laggards_market+community_weak
+dolthub/dolt,Dolt,laggards_market+community_weak
+risingwavelabs/risingwave,RisingWave,community_strong_market_weak
+crate/crate,CrateDB,community_strong_market_weak
+typedb/typedb,TypeDB,laggards_market+community_weak
+dragonflydb/dragonfly,Dragonfly,community_strong_market_weak
+apache/doris,Apache Doris,community_strong_market_weak
+percona/percona-server-mongodb,Percona Server for MongoDB,laggards_market+community_weak
+ydb-platform/ydb,YDB,community_strong_market_weak
+apache/pinot,Apache Pinot,community_strong_market_weak
+apache/sedona,Apache Sedona,laggards_market+community_weak
+fluree/db,Fluree,laggards_market+community_weak
+activeloopai/deeplake,Deep Lake,laggards_market+community_weak
+marqo-ai/marqo,Marqo,laggards_market+community_weak
+cnosdb/cnosdb,CnosDB,laggards_market+community_weak
+bloomberg/comdb2,Comdb2,laggards_market+community_weak
+vdaas/vald,Vald,laggards_market+community_weak
+manticoresoftware/manticoresearch,Manticore Search,laggards_market+community_weak
+apache/incubator-hugegraph,Apache HugeGraph,laggards_market+community_weak
+ytsaurus/ytsaurus,YTsaurus,laggards_market+community_weak
+xtdb/xtdb,XTDB,laggards_market+community_weak
+greptimeteam/greptimedb,GreptimeDB,community_strong_market_weak
+arcadedata/arcadedb,ArcadeDB,laggards_market+community_weak
+apache/tinkerpop,TinkerGraph,laggards_market+community_weak
+kuzudb/kuzu,Kuzu,community_strong_market_weak
+opengemini/opengemini,openGemini,laggards_market+community_weak

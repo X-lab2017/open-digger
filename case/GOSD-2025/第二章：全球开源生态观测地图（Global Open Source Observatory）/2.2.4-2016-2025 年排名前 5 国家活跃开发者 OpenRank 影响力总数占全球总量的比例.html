@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>2016-2025年排名前5国家百分比分析</title>
+    <!-- 引入ECharts CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.4.3/dist/echarts.min.js"></script>
+    <style>
+        /* 设置图表容器样式 */
+        #chart-container {
+            width: 100%;
+            height: 700px;
+            margin: 20px auto;
+            border: 1px solid #f0f0f0;
+            border-radius: 8px;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        /* 标题样式 */
+        h1 {
+            text-align: center;
+            color: #333;
+            font-size: 28px;
+            margin-top: 30px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>2016-2025年排名前5国家百分比总和及构成分析</h1>
+    <div id="chart-container"></div>
+
+    <script type="text/javascript">
+        // 1. 初始化ECharts实例
+        var myChart = echarts.init(document.getElementById('chart-container'));
+
+        // 2. 处理数据（从表格提取，结构化格式）
+        const years = ['2016', '2017', '2018', '2019', '2020', '2021', '2022', '2023', '2024', '2025'];
+        const countryData = {
+            '美国': [34.43, 32.86, 31.16, 29.98, 28.55, 26.52, 24.36, 22.93, 22.35, 22.55],
+            '德国': [8.10, 8.08, 8.07, 8.00, 7.92, 8.04, 7.86, 7.60, 7.63, 7.91],
+            '中国': [4.62, 5.48, 6.11, 6.65, 6.62, 6.47, 7.56, 7.87, 8.13, 7.71],
+            '英国': [7.17, 6.98, 6.77, 6.51, 6.33, 6.20, 5.86, 5.64, 5.51, 5.64],
+            '印度': [0, 0, 0, 0, 0, 4.59, 4.61, 4.92, 5.14, 5.01], // 2016-2019年印度未进前5，占比0
+            '法国': [4.41, 4.35, 4.36, 4.26, 4.21, 0, 0, 0, 0, 0]  // 2020年后法国未进前5，占比0
+        };
+
+        // 3. 配置图表选项
+        var option = {
+            // 标题（含副标题，说明数据背景）
+            // title: {
+            //     text: '前5国家百分比构成（2016-2025）',
+            //     subtext: '展示各国占比构成及总和',
+            //     left: 'center',
+            //     textStyle: {
+            //         fontSize: 22,
+            //         color: '#333',
+            //         fontWeight: 'bold'
+            //     },
+            //     subtextStyle: {
+            //         fontSize: 16,
+            //         color: '#666',
+            //         fontWeight: 'bold'
+            //     }
+            // },
+
+            // 图例（区分国家）
+            legend: {
+                data: ['美国', '德国', '中国', '英国', '印度', '法国'],
+                top: 70,
+                left: 'center',
+                orient: 'horizontal',
+                textStyle: {
+                    fontSize: 16,
+                    fontWeight: 'bold'
+                }
+            },
+
+            // 工具箱（支持下载图片、刷新等）
+            toolbox: {
+                feature: {
+                    saveAsImage: { show: true, title: '下载图表' },
+                    restore: { show: true, title: '重置' },
+                    dataView: { show: true, title: '查看数据', readOnly: false }
+                },
+                right: 20,
+                top: 20
+            },
+
+            // 提示框（鼠标悬浮时显示详细数据）
+            tooltip: {
+                trigger: 'axis',
+                axisPointer: {
+                    type: 'shadow'
+                },
+                formatter: function(params) {
+                    let html = `<div style="font-weight: bold; font-size: 16px;">${params[0].name}年</div>`;
+                    let total = 0;
+                    params.forEach(item => {
+                        if (item.value > 0) {
+                            html += `<div style="font-size: 14px;">${item.seriesName}: <span style="color:${item.color}">${item.value}%</span></div>`;
+                            total += item.value;
+                        }
+                    });
+                    html += `<div style="font-weight: bold; font-size: 14px; margin-top: 5px;">总计: ${total.toFixed(2)}%</div>`;
+                    return html;
+                }
+            },
+
+            // 网格（调整图表位置，避免与图例重叠）
+            grid: {
+                left: '3%',
+                right: '4%',
+                bottom: '3%',
+                top: '15%',
+                containLabel: true
+            },
+
+            // X轴（年份）
+            xAxis: {
+                type: 'category',
+                data: years,
+                axisLabel: {
+                    rotate: 0,
+                    fontSize: 16,
+                    fontWeight: 'bold',
+                    color: '#000'  // X轴文字设为黑色
+                },
+                axisLine: {
+                    lineStyle: {
+                        color: '#000',  // X轴线设为黑色
+                        width: 2
+                    }
+                },
+                axisTick: {
+                    lineStyle: {
+                        color: '#000',  // X轴刻度线设为黑色
+                        width: 2
+                    }
+                }
+            },
+
+            // Y轴（百分比，范围0-60%，匹配数据最大值）
+            yAxis: {
+                type: 'value',
+                max: 60,
+                axisLabel: {
+                    formatter: '{value}%',
+                    fontSize: 16,
+                    fontWeight: 'bold',
+                    color: '#000'  // Y轴文字设为黑色
+                },
+                splitLine: {
+                    lineStyle: {
+                        color: '#f0f0f0'
+                    }
+                },
+                axisLine: {
+                    lineStyle: {
+                        color: '#000',  // Y轴线设为黑色
+                        width: 2
+                    }
+                },
+                axisTick: {
+                    lineStyle: {
+                        color: '#000',  // Y轴刻度线设为黑色
+                        width: 2
+                    }
+                }
+            },
+
+            // 系列（堆叠柱状图，按新顺序排列）
+            series: [
+                // 6. 法国（最底部）
+                {
+                    name: '法国',
+                    type: 'bar',
+                    stack: 'total',
+                    emphasis: {
+                        focus: 'series'
+                    },
+                    data: countryData['法国'],
+                    itemStyle: {
+                        color: '#8c564b' // 棕色
+                    },
+                    label: {
+                        show: true,
+                        position: 'inside',
+                        formatter: function(params) {
+                            return params.value > 0 ? params.value + '%' : '';
+                        },
+                        fontSize: 14,
+                        fontWeight: 'bold',
+                        color: '#fff'
+                    }
+                },
+
+                // 5. 印度
+                {
+                    name: '印度',
+                    type: 'bar',
+                    stack: 'total',
+                    emphasis: {
+                        focus: 'series'
+                    },
+                    data: countryData['印度'],
+                    itemStyle: {
+                        color: '#9467bd' // 紫色
+                    },
+                    label: {
+                        show: true,
+                        position: 'inside',
+                        formatter: function(params) {
+                            return params.value > 0 ? params.value + '%' : '';
+                        },
+                        fontSize: 14,
+                        fontWeight: 'bold',
+                        color: '#fff'
+                    }
+                },
+
+                // 4. 英国
+                {
+                    name: '英国',
+                    type: 'bar',
+                    stack: 'total',
+                    emphasis: {
+                        focus: 'series'
+                    },
+                    data: countryData['英国'],
+                    itemStyle: {
+                        color: '#d62728' // 红色
+                    },
+                    label: {
+                        show: true,
+                        position: 'inside',
+                        formatter: function(params) {
+                            return params.value > 0 ? params.value + '%' : '';
+                        },
+                        fontSize: 14,
+                        fontWeight: 'bold',
+                        color: '#fff'
+                    }
+                },
+
+                // 3. 中国
+                {
+                    name: '中国',
+                    type: 'bar',
+                    stack: 'total',
+                    emphasis: {
+                        focus: 'series'
+                    },
+                    data: countryData['中国'],
+                    itemStyle: {
+                        color: '#2ca02c' // 绿色
+                    },
+                    label: {
+                        show: true,
+                        position: 'inside',
+                        formatter: function(params) {
+                            return params.value > 0 ? params.value + '%' : '';
+                        },
+                        fontSize: 14,
+                        fontWeight: 'bold',
+                        color: '#fff'
+                    }
+                },
+
+                // 2. 德国
+                {
+                    name: '德国',
+                    type: 'bar',
+                    stack: 'total',
+                    emphasis: {
+                        focus: 'series'
+                    },
+                    data: countryData['德国'],
+                    itemStyle: {
+                        color: '#ff7f0e' // 橙色
+                    },
+                    label: {
+                        show: true,
+                        position: 'inside',
+                        formatter: function(params) {
+                            return params.value > 0 ? params.value + '%' : '';
+                        },
+                        fontSize: 14,
+                        fontWeight: 'bold',
+                        color: '#fff'
+                    }
+                },
+
+                // 1. 美国（最顶部）
+                {
+                    name: '美国',
+                    type: 'bar',
+                    stack: 'total',
+                    emphasis: {
+                        focus: 'series'
+                    },
+                    data: countryData['美国'],
+                    itemStyle: {
+                        color: '#1f77b4' // 蓝色
+                    },
+                    label: {
+                        show: true,
+                        position: 'inside',
+                        formatter: function(params) {
+                            return params.value > 0 ? params.value + '%' : '';
+                        },
+                        fontSize: 14,
+                        fontWeight: 'bold',
+                        color: '#fff'
+                    }
+                }
+            ]
+        };
+
+        // 4. 渲染图表
+        myChart.setOption(option);
+
+        // 5. 监听窗口大小变化，自动适配图表
+        window.addEventListener('resize', function() {
+            myChart.resize();
+        });
+    </script>
+</body>
+</html>

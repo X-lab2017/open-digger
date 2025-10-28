@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>2017-2024年数据堆叠柱状图</title>
+    <!-- 引入ECharts -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.4.3/dist/echarts.min.js"></script>
+    <style>
+        #chart-container {
+            width: 100%;
+            height: 550px;
+            margin: 30px auto;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+<div id="chart-container"></div>
+
+<script>
+    // 初始化图表实例
+    const chartDom = document.getElementById("chart-container");
+    const myChart = echarts.init(chartDom);
+
+    // 定义年份（X轴数据）
+    const years = [2021, 2022, 2023, 2024, 2025];
+
+    // 数据源（堆叠数据）
+    const dataSource = [
+            {
+                name: "工业软件",
+                data: [16113.93, 17647.25, 21549.82, 26600.09, 29780.85]
+            },
+            {
+                name: "操作系统",
+                data: [36470.52, 37598.25, 44067.77, 52102.21, 58869.69]
+            },
+            {
+                name: "物联网与边缘计算",
+                data: [66606.25, 71342.29, 80895.36, 86929.81, 86347.54]
+            },
+            {
+                name: "大数据与数据工程",
+                data: [60037.65, 74702.89, 100105.52, 113685.13, 111791.73]
+            },
+            {
+                name: "RISC-V与硬件",
+                data: [61752.25, 66462.64, 78227.64, 94930.27, 112327.25]
+            },
+            {
+                name: "数据库",
+                data: [80813.07, 88255.31, 110276.49, 127193.07, 129806.39]
+            },
+            {
+                name: "区块链与Web3",
+                data: [67657.65, 101969.07, 124256.64, 149373.52, 167408.87]
+            },
+            {
+                name: "应用与解决方案",
+                data: [119199.24, 127320.51, 159211.63, 196445.69, 218783.39]
+            },
+            {
+                name: "编程语言与开发",
+                data: [178045.24, 182478.83, 219808.94, 272788.18, 291487.6]
+            },
+            {
+                name: "前端与交互式",
+                data: [220179.68, 219567.71, 259604.03, 298183.23, 314618.8]
+            },
+            {
+                name: "云基础设施",
+                data: [221344.4, 238427.71, 293137.15, 327864.45, 333165.33]
+            },
+            {
+                name: "AI大模型",
+                data: [164514.84, 182270.17, 255850.7, 401121.07, 535299.56]
+            },
+        ]
+    ;
+
+    const dataSourceEn = [
+        {name: "Industrial Software", data: [16113.93, 17647.25, 21549.82, 26600.09, 29780.85]},
+        {name: "Operating Systems", data: [36470.52, 37598.25, 44067.77, 52102.21, 58869.69]},
+        {name: "IoT & Edge Computing", data: [66606.25, 71342.29, 80895.36, 86929.81, 86347.54]},
+        {name: "Big Data & Data Eng.", data: [60037.65, 74702.89, 100105.52, 113685.13, 111791.73]},
+        {name: "RISC-V & Hardware", data: [61752.25, 66462.64, 78227.64, 94930.27, 112327.25]},
+        {name: "Databases", data: [80813.07, 88255.31, 110276.49, 127193.07, 129806.39]},
+        {name: "Blockchain & Web3", data: [67657.65, 101969.07, 124256.64, 149373.52, 167408.87]},
+        {name: "Applications & Solutions", data: [119199.24, 127320.51, 159211.63, 196445.69, 218783.39]},
+        {name: "Prog. Lang. & Dev.", data: [178045.24, 182478.83, 219808.94, 272788.18, 291487.6]},
+        {name: "Frontend & Interactive", data: [220179.68, 219567.71, 259604.03, 298183.23, 314618.8]},
+        {name: "Cloud Infrastructure", data: [221344.4, 238427.71, 293137.15, 327864.45, 333165.33]},
+        {name: "AI Large Models", data: [164514.84, 182270.17, 255850.7, 401121.07, 535299.56]},
+    ];
+
+
+    // 高对比度配色方案
+    const colorPalette = [
+        "#1f77b4", // 蓝
+        "#ff7f0e", // 橙
+        "#2ca02c", // 绿
+        "#d62728", // 红
+        "#9467bd", // 紫
+        "#8c564b", // 棕
+        "#e377c2", // 粉
+        "#7f7f7f", // 灰
+        "#17becf", // 青
+        "#bcbd22", // 黄绿
+        "#ff9896", // 浅红
+        "#c49c94", // 浅棕
+    ];
+
+    // 配置堆叠柱状图
+    const option = {
+        title: {
+            text: "",
+            left: "center",
+            textStyle: {
+                fontSize: 24,
+                fontWeight: "bold",
+                color: "#333",
+            },
+            padding: [20, 0, 30, 0],
+        },
+        tooltip: {
+            trigger: "axis"
+        },
+        legend: {
+            data: dataSourceEn.map((item) => item.name).reverse(),
+            top: 110,
+            type: "scroll",
+            right: 10,
+            orient: "vertical",
+            textStyle: {
+                fontSize: 14,
+                fontWeight: "bold",
+                color: "#555",
+            },
+            itemWidth: 18,
+            itemHeight: 18,
+            padding: [10, 10],
+        },
+        grid: {
+            left: "4%",
+            right: "18%",
+            bottom: "0",
+            top: "8%",
+            containLabel: true,
+        },
+        xAxis: {
+            type: "category",
+            data: years,
+            name: "Year",
+            nameTextStyle: {
+                fontSize: 16,
+                fontWeight: "bold",
+                padding: [15, 0, 0, 0],
+            },
+            axisLabel: {
+                fontSize: 14,
+                fontWeight: "bold",
+                color: "#555",
+            },
+            axisLine: {
+                lineStyle: {
+                    width: 2,
+                },
+            },
+            axisTick: {
+                length: 8,
+            },
+        },
+        yAxis: {
+            type: "value",
+            name: "OpenRank",
+            nameTextStyle: {
+                fontSize: 16,
+                fontWeight: "bold",
+                padding: [0, 0, 0, 15],
+            },
+            axisLabel: {
+                fontSize: 14,
+                fontWeight: "bold",
+                color: "#555",
+            },
+            axisLine: {
+                lineStyle: {
+                    width: 2,
+                },
+            },
+            axisTick: {
+                length: 8,
+            },
+            splitLine: {
+                lineStyle: {
+                    type: "dashed",
+                },
+            },
+        },
+        series: dataSourceEn.map((item, index) => ({
+            name: item.name,
+            type: "line",
+            // stack: "total",
+            emphasis: {
+                focus: "series",
+            },
+            data: item.data,
+            itemStyle: {
+                color: colorPalette[index],
+                borderRadius: [4, 4, 0, 0],
+                borderWidth: 0.5,
+                borderColor: "#fff",
+            },
+            barCategoryGap: "30%",
+            barWidth: "70%",
+            // label: {
+            //   show: true,
+            //   position: "insideTop", // 数值显示在柱子内部上方
+            //   fontSize: 12,
+            //   fontWeight: "bold",
+            //   color: "#fff",
+            //   formatter: (params) => {
+            //     const yearIndex = params.dataIndex;
+            //     const yearTotal = yearTotals[yearIndex];
+            //     const percent = ((params.value / yearTotal) * 100).toFixed(1);
+            //
+            //     // 只在数值足够大时显示百分比，避免拥挤
+            //     return params.value > 3 ? `${percent}` : "";
+            //   },
+            // },
+        })),
+    };
+
+    // 渲染图表
+    myChart.setOption(option);
+
+    // 响应窗口大小变化
+    window.addEventListener("resize", function () {
+        myChart.resize();
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>中国历年数据统计柱状图</title>
+    <!-- 引入Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- 引入Font Awesome -->
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- 引入ECharts -->
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.4.3/dist/echarts.min.js"></script>
+
+    <!-- 配置Tailwind自定义颜色 -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#165DFF',
+                        secondary: '#36CFC9',
+                        accent: '#722ED1',
+                        neutral: '#F5F7FA',
+                        dark: '#1D2129'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .content-auto {
+                content-visibility: auto;
+            }
+            .chart-container {
+                height: 500px;
+                min-height: 300px;
+            }
+            .card-shadow {
+                box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.1);
+            }
+            .hover-scale {
+                transition: transform 0.3s ease;
+            }
+            .hover-scale:hover {
+                transform: scale(1.02);
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-dark font-sans text-lg font-semibold">
+    <div class="container mx-auto px-4 py-8 max-w-6xl">
+        <!-- 页面标题 -->
+        <header class="mb-8 text-center">
+            <h1 class="text-[clamp(2.2rem,5vw,3.5rem)] font-bold text-dark mb-3">中国历年数据统计</h1>
+            <p class="text-gray-500 text-xl font-semibold">2016-2025年数据趋势分析</p>
+        </header>
+
+        <!-- 图表卡片 -->
+        <div class="bg-white rounded-xl p-6 card-shadow hover-scale mb-8">
+            <!-- 图表工具栏 -->
+            <div class="flex flex-wrap justify-between items-center mb-6 gap-4">
+                <div class="flex items-center space-x-2">
+                    <i class="fa fa-bar-chart text-primary text-2xl"></i>
+                    <h2 class="text-2xl font-bold">数据趋势柱状图</h2>
+                </div>
+                <div class="flex space-x-2">
+                    <button id="refreshBtn" class="bg-neutral hover:bg-gray-200 text-dark px-5 py-3 rounded-lg transition-colors flex items-center text-lg font-semibold">
+                        <i class="fa fa-refresh mr-2"></i>刷新
+                    </button>
+                    <button id="downloadBtn" class="bg-primary hover:bg-primary/90 text-white px-5 py-3 rounded-lg transition-colors flex items-center text-lg font-semibold">
+                        <i class="fa fa-download mr-2"></i>下载图表
+                    </button>
+                </div>
+            </div>
+
+            <!-- 图表容器 -->
+            <div id="chart" class="chart-container w-full rounded-lg"></div>
+        </div>
+
+        <!-- 数据说明卡片 -->
+        <div class="bg-white rounded-xl p-6 card-shadow">
+            <h3 class="text-xl font-bold mb-4 flex items-center">
+                <i class="fa fa-info-circle text-primary mr-2 text-xl"></i>数据说明
+            </h3>
+            <ul class="text-gray-600 space-y-3 text-lg font-semibold">
+                <li class="flex items-start">
+                    <i class="fa fa-check-circle text-secondary mt-1 mr-3 text-lg"></i>
+                    <span>图表展示了2016年至2025年的中国相关数据变化趋势</span>
+                </li>
+                <li class="flex items-start">
+                    <i class="fa fa-check-circle text-secondary mt-1 mr-3 text-lg"></i>
+                    <span>鼠标悬停在柱状图上可查看具体年份的详细数据</span>
+                </li>
+                <li class="flex items-start">
+                    <i class="fa fa-check-circle text-secondary mt-1 mr-3 text-lg"></i>
+                    <span>点击"下载图表"按钮可将当前图表保存为图片</span>
+                </li>
+            </ul>
+        </div>
+
+        <!-- 页脚 -->
+        <footer class="mt-12 text-center text-gray-500 text-lg font-semibold">
+            <p>© 2025 数据可视化展示平台 | 使用 ECharts 构建</p>
+        </footer>
+    </div>
+
+    <script>
+        // 初始化图表
+        const chartDom = document.getElementById('chart');
+        const myChart = echarts.init(chartDom);
+        let option;
+
+        // 数据
+        const years = [2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025];
+        const countryTotalMap = {
+            "中国": [3, 30, 25, 32, 32, 46, 40, 71, 71, 94],
+        };
+
+        // 图表配置
+        function setChartOption() {
+            option = {
+                // 背景色
+                backgroundColor: 'transparent',
+
+                // 提示框
+                tooltip: {
+                    trigger: 'axis',
+                    axisPointer: {
+                        type: 'shadow',
+                        shadowStyle: {
+                            color: 'rgba(22, 93, 255, 0.1)'
+                        }
+                    },
+                    backgroundColor: 'rgba(255, 255, 255, 0.9)',
+                    borderColor: '#eee',
+                    borderWidth: 1,
+                    textStyle: {
+                        color: '#333',
+                        fontSize: 16,
+                        fontWeight: 'bold'
+                    },
+                    formatter: function(params) {
+                        return `<div class="font-bold text-lg">${params[0].name}年</div>
+                                <div class="font-bold">数据: ${params[0].value}</div>`;
+                    },
+                    padding: 12,
+                    boxShadow: '0 2px 10px rgba(0, 0, 0, 0.1)'
+                },
+
+                // 网格
+                grid: {
+                    left: '3%',
+                    right: '4%',
+                    bottom: '3%',
+                    containLabel: true
+                },
+
+                // x轴
+                xAxis: {
+                    type: 'category',
+                    data: years,
+                    axisLine: {
+                        lineStyle: {
+                            color: '#ddd'
+                        }
+                    },
+                    axisTick: {
+                        alignWithLabel: true
+                    },
+                    axisLabel: {
+                        color: '#666',
+                        interval: 0,
+                        fontSize: 18,
+                        fontWeight: 'bold'
+                    },
+                    z: 10
+                },
+
+                // y轴
+                yAxis: {
+                    type: 'value',
+                    axisLine: {
+                        show: false
+                    },
+                    axisTick: {
+                        show: false
+                    },
+                    splitLine: {
+                        lineStyle: {
+                            color: '#f0f0f0'
+                        }
+                    },
+                    axisLabel: {
+                        color: '#666',
+                        formatter: '{value}',
+                        fontSize: 18,
+                        fontWeight: 'bold'
+                    }
+                },
+
+                // 系列数据
+                series: [
+                    {
+                        name: '中国',
+                        type: 'bar',
+                        data: countryTotalMap['中国'],
+                        barWidth: '60%',
+                        itemStyle: {
+                            color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
+                                { offset: 0, color: '#165DFF' },
+                                { offset: 1, color: '#69b1ff' }
+                            ]),
+                            borderRadius: [6, 6, 0, 0]
+                        },
+                        emphasis: {
+                            itemStyle: {
+                                color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
+                                    { offset: 0, color: '#0E42D2' },
+                                    { offset: 1, color: '#4080ff' }
+                                ])
+                            }
+                        },
+                        // 动画效果
+                        animationDuration: 1000,
+                        animationEasing: 'elasticOut'
+                    }
+                ],
+
+                // 动画配置
+                animationDuration: 1500,
+                animationEasingUpdate: 'quinticInOut'
+            };
+
+            myChart.setOption(option);
+        }
+
+        // 初始化图表
+        setChartOption();
+
+        // 响应窗口大小变化
+        window.addEventListener('resize', function() {
+            myChart.resize();
+        });
+
+        // 刷新按钮事件
+        document.getElementById('refreshBtn').addEventListener('click', function() {
+            myChart.clear();
+            setTimeout(() => {
+                setChartOption();
+                // 添加刷新动画效果
+                myChart.dispatchAction({
+                    type: 'highlight',
+                    seriesIndex: 0,
+                    dataIndex: 0
+                });
+                setTimeout(() => {
+                    myChart.dispatchAction({
+                        type: 'downplay',
+                        seriesIndex: 0,
+                        dataIndex: 0
+                    });
+                }, 1000);
+            }, 300);
+        });
+
+        // 下载图表按钮事件
+        document.getElementById('downloadBtn').addEventListener('click', function() {
+            // 获取图表的base64图片数据
+            const imgData = myChart.getDataURL({
+                type: 'png',
+                pixelRatio: 2, // 提高分辨率
+                backgroundColor: '#fff'
+            });
+
+            // 创建下载链接
+            const link = document.createElement('a');
+            link.download = '中国历年数据统计_' + new Date().toLocaleDateString() + '.png';
+            link.href = imgData;
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        });
+    </script>
+</body>
+</html>

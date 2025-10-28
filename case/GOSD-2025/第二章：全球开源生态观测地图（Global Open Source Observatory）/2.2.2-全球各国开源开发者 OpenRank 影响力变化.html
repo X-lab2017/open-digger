@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>各国开源开发者 OpenRank 影响力十年变化</title>
+    <!-- 引入ECharts CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.4.3/dist/echarts.min.js"></script>
+    <style>
+        /* 简洁容器样式，确保响应式 */
+        #openRankChart {
+            width: 100%;
+            height: 600px;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+<body>
+<div id="openRankChart"></div>
+
+<script type="text/javascript">
+    // 1. 初始化图表
+    const myChart = echarts.init(document.getElementById('openRankChart'));
+
+    // 2. 原始数据（保留核心信息，简化结构）
+    const yearData = ["2016", "2017", "2018", "2019", "2020", "2021", "2022", "2023", "2024", "2025"];
+    let seriesData = [
+        {
+            name: "美国",
+            data: [1192383, 1479864, 1627003, 1711819, 1954174, 2055538, 1811696, 1931803, 1943042, 1824052]
+        },
+        {name: "德国", data: [280408, 364106, 421396, 457129, 541902, 623316, 584949, 640087, 663751, 639342]},
+        {name: "中国", data: [160183, 246612, 319014, 379527, 453294, 501854, 562074, 662876, 707013, 623328]},
+        {name: "英国", data: [248394, 314281, 353323, 372033, 433313, 480500, 435968, 474887, 479337, 455824]},
+        {name: "印度", data: [64077, 103627, 144314, 176102, 251641, 355688, 342548, 414776, 446703, 405399]},
+        {name: "法国", data: [152899, 195707, 227435, 243256, 288405, 321603, 305699, 345849, 366529, 353262]},
+        {name: "加拿大", data: [150106, 190361, 215107, 236048, 280001, 320576, 299027, 331610, 339218, 322801]},
+        {name: "巴西", data: [63624, 86163, 111168, 128917, 173268, 237163, 255219, 290892, 302873, 278008]},
+        {name: "荷兰", data: [98115, 125201, 142661, 152408, 180618, 200826, 183332, 199889, 207725, 201070]},
+        {name: "日本", data: [88913, 110209, 129175, 143931, 177156, 195221, 189624, 202096, 202984, 191670]}
+    ];
+
+
+    // 3. 按2025年数据（data[9]）降序排序series
+    seriesData.sort((a, b) => b.data[9] - a.data[9]);
+
+    // 4. 统一配置图表样式（减少冗余）
+    const colorList = ["#5470c6", "#91cc75", "#fac858", "#ee6666", "#73c0de", "#3ba272", "#fc8452", "#9a60b4", "#ea7ccc", "#61a0a8"];
+    const formattedSeries = seriesData.map((item, index) => ({
+        ...item, // 继承原始name和data
+        type: "line",
+        smooth: true,
+        lineStyle: {width: 2, color: colorList[index]},
+        symbol: "circle",
+        symbolSize: 6,
+        itemStyle: {color: colorList[index]}
+    }));
+
+    // 5. 图表核心配置
+    const option = {
+        // title: {
+        //     text: "各国开源开发者 OpenRank 影响力十年变化",
+        //     left: "center",
+        //     top: 20, // 调整标题位置，避免遮挡图例
+        //     textStyle: { fontSize: 16 }
+        // },
+        legend: {
+            data: seriesData.map(item => item.name), // 排序后的图例名称
+            orient: "horizontal",
+            left: "center",
+            top: 60,
+            textStyle: {fontSize: 12}
+        },
+        tooltip: {
+            trigger: "axis",
+            formatter: params => `${params[0].name}年<br/>${params[0].seriesName}: ${params[0].value.toLocaleString()}`
+        },
+        grid: {left: "3%", right: "4%", bottom: "10%", top: "15%", containLabel: true},
+        xAxis: {type: "category", data: yearData, axisLabel: {rotate: 0}},
+        yAxis: {type: "value"}, // 千位分隔符
+        series: formattedSeries
+    };
+
+    // 6. 渲染图表 + 响应式
+    myChart.setOption(option);
+    window.addEventListener("resize", () => myChart.resize());
+</script>
+</body>
+</html>

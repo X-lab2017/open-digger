@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>世界前10国家标记地图（其他国家显颜色）</title>
+    <!-- 引入 ECharts 核心库 -->
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.4.3/dist/echarts.min.js"></script>
+    <!-- 引入 ECharts 世界地图 GeoJSON 数据 -->
+    <script src="https://cdn.jsdelivr.net/npm/echarts/map/js/world.js"></script>
+    <style>
+        #map-container {
+            width: 1400px;
+            height: 800px;
+            margin: 20px auto;
+            border: 1px solid #eee;
+        }
+    </style>
+</head>
+<body>
+    <div id="map-container"></div>
+
+    <script type="text/javascript">
+        // 1. 初始化 ECharts 实例
+        var myChart = echarts.init(document.getElementById('map-container'));
+
+        // 2. 原始数据（已修正地区名称，保留所有国家数据）
+        var allData = [{"name":"United States","value":501.15},{"name":"India","value":258.01},{"name":"China","value":400},{"name":"Brazil","value":151.72},{"name":"Germany","value":113.95},{"name":"United Kingdom","value":103.44},{"name":"Canada","value":84.19},{"name":"France","value":72.74},{"name":"Russia","value":60.16},{"name":"Poland","value":40.79},{"name":"Australia","value":40.03},{"name":"Spain","value":38.93},{"name":"Indonesia","value":38.9},{"name":"Japan","value":38.75},{"name":"Netherlands","value":38.1},{"name":"South Korea","value":38.05},{"name":"Ukraine","value":33.98},{"name":"Türkiye","value":28.88},{"name":"Italy","value":28.82},{"name":"Argentina","value":27.18},{"name":"Sweden","value":25.22},{"name":"Mexico","value":23.46},{"name":"Vietnam","value":23.14},{"name":"Pakistan","value":20.36},{"name":"Bangladesh","value":19.69},{"name":"Colombia","value":19.57},{"name":"Switzerland","value":19.14},{"name":"Nigeria","value":18.73},{"name":"Portugal","value":15.63},{"name":"中国台湾","value":14.41},{"name":"Belgium","value":13.45},{"name":"Egypt","value":12.79},{"name":"Singapore","value":12.43},{"name":"Norway","value":12.35},{"name":"Denmark","value":12.28},{"name":"Finland","value":11.76},{"name":"Austria","value":11.4},{"name":"South Africa","value":11.14},{"name":"Iran","value":11.07},{"name":"Czechia","value":11.02},{"name":"Philippines","value":10.86},{"name":"Romania","value":10.78},{"name":"Kenya","value":10},{"name":"New Zealand","value":9.61},{"name":"Israel","value":9.58},{"name":"Sri Lanka","value":9.04},{"name":"Belarus","value":8.91},{"name":"Chile","value":8.87},{"name":"Thailand","value":8.18},{"name":"Greece","value":7.4},{"name":"Ireland","value":7.37},{"name":"Hungary","value":7.32},{"name":"Bulgaria","value":7.19},{"name":"Peru","value":6.83},{"name":"Serbia","value":6.43},{"name":"Malaysia","value":6.36},{"name":"中国香港","value":6.11},{"name":"Nepal","value":5.84},{"name":"United Arab Emirates","value":5.6},{"name":"Morocco","value":4.8},{"name":"Uzbekistan","value":3.97},{"name":"Kazakhstan","value":3.84},{"name":"Croatia","value":3.66},{"name":"Lithuania","value":3.65},{"name":"Saudi Arabia","value":3.59},{"name":"Venezuela","value":3.52},{"name":"Ghana","value":3.52},{"name":"Georgia","value":3.41},{"name":"Tunisia","value":3.24},{"name":"Slovakia","value":3.06},{"name":"Estonia","value":3.06},{"name":"Ecuador","value":3.01},{"name":"Costa Rica","value":2.97},{"name":"Uruguay","value":2.88},{"name":"Ethiopia","value":2.51},{"name":"Armenia","value":2.2},{"name":"Algeria","value":2.18},{"name":"Latvia","value":2.13},{"name":"Slovenia","value":2.04},{"name":"Uganda","value":1.91},{"name":"Azerbaijan","value":1.81},{"name":"Dominican Republic","value":1.75},{"name":"Guatemala","value":1.7},{"name":"Cyprus","value":1.51},{"name":"Bosnia and Herzegovina","value":1.47},{"name":"Myanmar","value":1.43},{"name":"El Salvador","value":1.36},{"name":"Rwanda","value":1.32},{"name":"Cameroon","value":1.31},{"name":"Bolivia","value":1.29},{"name":"Kyrgyzstan","value":1.29},{"name":"Luxembourg","value":1.24},{"name":"Jordan","value":1.2},{"name":"Iraq","value":1.13},{"name":"Cambodia","value":1.12},{"name":"Moldova","value":1.11},{"name":"Lebanon","value":1.1},{"name":"North Macedonia","value":1.03},{"name":"Iceland","value":1.01},{"name":"Tanzania","value":1},{"name":"Paraguay","value":0.87},{"name":"Panama","value":0.82},{"name":"Angola","value":0.76},{"name":"Puerto Rico","value":0.74},{"name":"Malta","value":0.73},{"name":"Honduras","value":0.68},{"name":"Madagascar","value":0.68},{"name":"Cuba","value":0.68},{"name":"Zimbabwe","value":0.67},{"name":"Nicaragua","value":0.63},{"name":"Senegal","value":0.62},{"name":"Montenegro","value":0.59},{"name":"Albania","value":0.56},{"name":"Afghanistan","value":0.52},{"name":"Democratic Republic of the Congo","value":0.5},{"name":"Zambia","value":0.49},{"name":"Mongolia","value":0.48},{"name":"Mozambique","value":0.47},{"name":"Syria","value":0.46},{"name":"Côte d'Ivoire","value":0.45},{"name":"Mauritius","value":0.44},{"name":"Yemen","value":0.43},{"name":"Benin","value":0.41},{"name":"Qatar","value":0.41},{"name":"Palestine","value":0.41},{"name":"Kuwait","value":0.39},{"name":"Jamaica","value":0.38},{"name":"Sudan","value":0.35},{"name":"Somalia","value":0.33},{"name":"Antarctica","value":0.3},{"name":"Oman","value":0.3},{"name":"Bahrain","value":0.29},{"name":"Malawi","value":0.28},{"name":"Tajikistan","value":0.27},{"name":"Libya","value":0.25},{"name":"Togo","value":0.24},{"name":"中国澳门","value":0.24}];
+
+        // 3. 筛选前10国家名称（用于判断是否显示标记）
+        var top10Names = allData
+            .sort((a, b) => b.value - a.value) // 按数值降序
+            .slice(0, 10) // 取前10
+            .map(item => item.name); // 提取前10国家名称，存为集合
+
+        // 4. 地图核心配置
+        var option = {
+            title: {
+                text: '世界前10国家标记地图（其他国家显颜色）',
+                left: 'center',
+                textStyle: { fontSize: 20, fontWeight: 'bold' }
+            },
+            // 悬停提示：所有国家都显示“国家名+数值万”（非前10也显示基础信息）
+            tooltip: {
+                trigger: 'item',
+                formatter: (params) => {
+                    return `${params.name}<br/>${params.value.toFixed(2)}万`;
+                }
+            },
+            // 视觉映射：覆盖所有国家数值范围（0~501.15），所有国家按数值显颜色
+            visualMap: {
+                min: 0,
+                max: 501.15, // 整体数据最大值（美国501.15）
+                left: '160px',
+                bottom: '100px',
+                text: ['高数值', '低数值'],
+                calculable: true,
+                inRange: {
+                    color: ['#b3e5fc', '#81d4fa', '#4fc3f7', '#2196f3', '#1976d2']  // 梯度（清晰区分数值）
+                }
+            },
+            series: [
+                {
+                    name: '数据值（万）',
+                    type: 'map',
+                    mapType: 'world',
+                    roam: true, // 允许缩放/拖动
+                    label: {
+                        show: true, // 开启标签（但仅前10显示内容）
+                        fontSize: 11,
+                        color: 'black', // 前10标签文字颜色（绿色系，匹配视觉映射）
+                        fontWeight: 'bold',
+                        // 标签逻辑：仅前10国家显示“国家名+数值万”，其他国家隐藏标签（返回空字符串）
+                        formatter: (params) => {
+                            return top10Names.includes(params.name)
+                                ? `${params.name}\n${params.value.toFixed(2)}万` // 前10：换行显示标记
+                                : ''; // 非前10：不显示任何标记
+                        }
+                    },
+                    data: allData, // 传入所有国家数据（确保所有国家都有颜色）
+                    // 地图基础样式：所有国家统一边框
+                    itemStyle: {
+                        borderColor: '#fff',
+                        borderWidth: 0.5
+                    },
+                    // 悬停高亮：前10国家特殊高亮，其他国家默认高亮
+                    // emphasis: {
+                    //     itemStyle: {
+                    //         areaColor: top10Names.includes(params.name)
+                    //             ? '#ffeb3b' // 前10悬停：亮黄色（突出）
+                    //             : '#dcedc8' // 非前10悬停：浅绿色（柔和）
+                    //     },
+                    //     label: {
+                    //         // 前10悬停时标签放大变深，非前10仍隐藏标签
+                    //         fontSize: (params) => top10Names.includes(params.name) ? 13 : 0,
+                    //         color: (params) => top10Names.includes(params.name) ? '#1b5e20' : 'transparent'
+                    //     }
+                    // }
+                }
+            ]
+        };
+
+        // 5. 应用配置并适配窗口大小
+        myChart.setOption(option);
+        window.addEventListener('resize', () => myChart.resize());
+    </script>
+</body>
+</html>

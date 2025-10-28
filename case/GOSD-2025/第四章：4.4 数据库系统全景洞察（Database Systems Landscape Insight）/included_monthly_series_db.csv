@@ -1,0 +1,1089 @@
+full_name,dbms_name,slug,date,score
+activeloopai/deeplake,Deep Lake,Deep+Lake,2024-10,0.304
+activeloopai/deeplake,Deep Lake,Deep+Lake,2024-11,0.307
+activeloopai/deeplake,Deep Lake,Deep+Lake,2024-12,0.313
+activeloopai/deeplake,Deep Lake,Deep+Lake,2025-01,0.327
+activeloopai/deeplake,Deep Lake,Deep+Lake,2025-02,0.325
+activeloopai/deeplake,Deep Lake,Deep+Lake,2025-03,0.36
+activeloopai/deeplake,Deep Lake,Deep+Lake,2025-04,0.383
+activeloopai/deeplake,Deep Lake,Deep+Lake,2025-05,0.406
+activeloopai/deeplake,Deep Lake,Deep+Lake,2025-06,0.412
+activeloopai/deeplake,Deep Lake,Deep+Lake,2025-07,0.402
+activeloopai/deeplake,Deep Lake,Deep+Lake,2025-08,0.441
+activeloopai/deeplake,Deep Lake,Deep+Lake,2025-09,0.506
+apache/accumulo,Apache Accumulo,Apache+Accumulo,2024-10,3.312
+apache/accumulo,Apache Accumulo,Apache+Accumulo,2024-11,3.081
+apache/accumulo,Apache Accumulo,Apache+Accumulo,2024-12,2.934
+apache/accumulo,Apache Accumulo,Apache+Accumulo,2025-01,2.785
+apache/accumulo,Apache Accumulo,Apache+Accumulo,2025-02,2.62
+apache/accumulo,Apache Accumulo,Apache+Accumulo,2025-03,2.432
+apache/accumulo,Apache Accumulo,Apache+Accumulo,2025-04,2.451
+apache/accumulo,Apache Accumulo,Apache+Accumulo,2025-05,2.22
+apache/accumulo,Apache Accumulo,Apache+Accumulo,2025-06,2.168
+apache/accumulo,Apache Accumulo,Apache+Accumulo,2025-07,2.206
+apache/accumulo,Apache Accumulo,Apache+Accumulo,2025-08,2.284
+apache/accumulo,Apache Accumulo,Apache+Accumulo,2025-09,2.551
+apache/cassandra,Apache Cassandra,Apache+Cassandra,2024-10,97.608
+apache/cassandra,Apache Cassandra,Apache+Cassandra,2024-11,97.713
+apache/cassandra,Apache Cassandra,Apache+Cassandra,2024-12,97.936
+apache/cassandra,Apache Cassandra,Apache+Cassandra,2025-01,99.193
+apache/cassandra,Apache Cassandra,Apache+Cassandra,2025-02,102.582
+apache/cassandra,Apache Cassandra,Apache+Cassandra,2025-03,106.654
+apache/cassandra,Apache Cassandra,Apache+Cassandra,2025-04,108.207
+apache/cassandra,Apache Cassandra,Apache+Cassandra,2025-05,108.054
+apache/cassandra,Apache Cassandra,Apache+Cassandra,2025-06,108.271
+apache/cassandra,Apache Cassandra,Apache+Cassandra,2025-07,108.757
+apache/cassandra,Apache Cassandra,Apache+Cassandra,2025-08,108.512
+apache/cassandra,Apache Cassandra,Apache+Cassandra,2025-09,106.981
+apache/couchdb,CouchDB,CouchDB,2024-10,7.534
+apache/couchdb,CouchDB,CouchDB,2024-11,7.64
+apache/couchdb,CouchDB,CouchDB,2024-12,7.7
+apache/couchdb,CouchDB,CouchDB,2025-01,7.78
+apache/couchdb,CouchDB,CouchDB,2025-02,7.812
+apache/couchdb,CouchDB,CouchDB,2025-03,7.342
+apache/couchdb,CouchDB,CouchDB,2025-04,7.168
+apache/couchdb,CouchDB,CouchDB,2025-05,6.596
+apache/couchdb,CouchDB,CouchDB,2025-06,6.774
+apache/couchdb,CouchDB,CouchDB,2025-07,7.121
+apache/couchdb,CouchDB,CouchDB,2025-08,6.812
+apache/couchdb,CouchDB,CouchDB,2025-09,6.553
+apache/doris,Apache Doris,Apache+Doris,2024-10,0.577
+apache/doris,Apache Doris,Apache+Doris,2024-11,0.527
+apache/doris,Apache Doris,Apache+Doris,2024-12,0.484
+apache/doris,Apache Doris,Apache+Doris,2025-01,0.446
+apache/doris,Apache Doris,Apache+Doris,2025-02,0.443
+apache/doris,Apache Doris,Apache+Doris,2025-03,0.46
+apache/doris,Apache Doris,Apache+Doris,2025-04,0.515
+apache/doris,Apache Doris,Apache+Doris,2025-05,0.509
+apache/doris,Apache Doris,Apache+Doris,2025-06,0.484
+apache/doris,Apache Doris,Apache+Doris,2025-07,0.565
+apache/doris,Apache Doris,Apache+Doris,2025-08,0.508
+apache/doris,Apache Doris,Apache+Doris,2025-09,0.495
+apache/druid,Apache Druid,Apache+Druid,2024-10,2.792
+apache/druid,Apache Druid,Apache+Druid,2024-11,2.701
+apache/druid,Apache Druid,Apache+Druid,2024-12,2.876
+apache/druid,Apache Druid,Apache+Druid,2025-01,2.917
+apache/druid,Apache Druid,Apache+Druid,2025-02,2.86
+apache/druid,Apache Druid,Apache+Druid,2025-03,2.789
+apache/druid,Apache Druid,Apache+Druid,2025-04,3.047
+apache/druid,Apache Druid,Apache+Druid,2025-05,3.176
+apache/druid,Apache Druid,Apache+Druid,2025-06,3.396
+apache/druid,Apache Druid,Apache+Druid,2025-07,3.531
+apache/druid,Apache Druid,Apache+Druid,2025-08,3.486
+apache/druid,Apache Druid,Apache+Druid,2025-09,3.776
+apache/flink,Apache Flink,Apache+Flink,2024-10,10.925
+apache/flink,Apache Flink,Apache+Flink,2024-11,9.904
+apache/flink,Apache Flink,Apache+Flink,2024-12,10.723
+apache/flink,Apache Flink,Apache+Flink,2025-01,12.033
+apache/flink,Apache Flink,Apache+Flink,2025-02,11.373
+apache/flink,Apache Flink,Apache+Flink,2025-03,11.311
+apache/flink,Apache Flink,Apache+Flink,2025-04,11.414
+apache/flink,Apache Flink,Apache+Flink,2025-05,12.239
+apache/flink,Apache Flink,Apache+Flink,2025-06,11.815
+apache/flink,Apache Flink,Apache+Flink,2025-07,12.425
+apache/flink,Apache Flink,Apache+Flink,2025-08,12.038
+apache/flink,Apache Flink,Apache+Flink,2025-09,13.035
+apache/hbase,Apache HBase,Apache+HBase,2024-10,27.194
+apache/hbase,Apache HBase,Apache+HBase,2024-11,25.25
+apache/hbase,Apache HBase,Apache+HBase,2024-12,25.002
+apache/hbase,Apache HBase,Apache+HBase,2025-01,24.751
+apache/hbase,Apache HBase,Apache+HBase,2025-02,24.477
+apache/hbase,Apache HBase,Apache+HBase,2025-03,24.082
+apache/hbase,Apache HBase,Apache+HBase,2025-04,22.116
+apache/hbase,Apache HBase,Apache+HBase,2025-05,22.623
+apache/hbase,Apache HBase,Apache+HBase,2025-06,22.687
+apache/hbase,Apache HBase,Apache+HBase,2025-07,22.725
+apache/hbase,Apache HBase,Apache+HBase,2025-08,22.079
+apache/hbase,Apache HBase,Apache+HBase,2025-09,21.392
+apache/hive,Apache Hive,Apache+Hive,2024-10,52.573
+apache/hive,Apache Hive,Apache+Hive,2024-11,51.5
+apache/hive,Apache Hive,Apache+Hive,2024-12,53.095
+apache/hive,Apache Hive,Apache+Hive,2025-01,56.874
+apache/hive,Apache Hive,Apache+Hive,2025-02,62.488
+apache/hive,Apache Hive,Apache+Hive,2025-03,70.082
+apache/hive,Apache Hive,Apache+Hive,2025-04,72.652
+apache/hive,Apache Hive,Apache+Hive,2025-05,75.767
+apache/hive,Apache Hive,Apache+Hive,2025-06,76.681
+apache/hive,Apache Hive,Apache+Hive,2025-07,75.743
+apache/hive,Apache Hive,Apache+Hive,2025-08,71.034
+apache/hive,Apache Hive,Apache+Hive,2025-09,76.096
+apache/ignite,Apache Ignite,Apache+Ignite,2024-10,2.941
+apache/ignite,Apache Ignite,Apache+Ignite,2024-11,2.92
+apache/ignite,Apache Ignite,Apache+Ignite,2024-12,2.974
+apache/ignite,Apache Ignite,Apache+Ignite,2025-01,2.936
+apache/ignite,Apache Ignite,Apache+Ignite,2025-02,2.888
+apache/ignite,Apache Ignite,Apache+Ignite,2025-03,2.994
+apache/ignite,Apache Ignite,Apache+Ignite,2025-04,3.102
+apache/ignite,Apache Ignite,Apache+Ignite,2025-05,3.232
+apache/ignite,Apache Ignite,Apache+Ignite,2025-06,3.181
+apache/ignite,Apache Ignite,Apache+Ignite,2025-07,3.125
+apache/ignite,Apache Ignite,Apache+Ignite,2025-08,3.121
+apache/ignite,Apache Ignite,Apache+Ignite,2025-09,3.1
+apache/incubator-hugegraph,Apache HugeGraph,Apache+HugeGraph,2024-10,0.201
+apache/incubator-hugegraph,Apache HugeGraph,Apache+HugeGraph,2024-11,0.234
+apache/incubator-hugegraph,Apache HugeGraph,Apache+HugeGraph,2024-12,0.268
+apache/incubator-hugegraph,Apache HugeGraph,Apache+HugeGraph,2025-01,0.302
+apache/incubator-hugegraph,Apache HugeGraph,Apache+HugeGraph,2025-02,0.276
+apache/incubator-hugegraph,Apache HugeGraph,Apache+HugeGraph,2025-03,0.25
+apache/incubator-hugegraph,Apache HugeGraph,Apache+HugeGraph,2025-04,0.174
+apache/incubator-hugegraph,Apache HugeGraph,Apache+HugeGraph,2025-05,0.182
+apache/incubator-hugegraph,Apache HugeGraph,Apache+HugeGraph,2025-06,0.156
+apache/incubator-hugegraph,Apache HugeGraph,Apache+HugeGraph,2025-07,0.174
+apache/incubator-hugegraph,Apache HugeGraph,Apache+HugeGraph,2025-08,0.167
+apache/incubator-hugegraph,Apache HugeGraph,Apache+HugeGraph,2025-09,0.171
+apache/iotdb,Apache IoTDB,Apache+IoTDB,2024-10,1.388
+apache/iotdb,Apache IoTDB,Apache+IoTDB,2024-11,1.409
+apache/iotdb,Apache IoTDB,Apache+IoTDB,2024-12,1.397
+apache/iotdb,Apache IoTDB,Apache+IoTDB,2025-01,1.381
+apache/iotdb,Apache IoTDB,Apache+IoTDB,2025-02,1.414
+apache/iotdb,Apache IoTDB,Apache+IoTDB,2025-03,1.438
+apache/iotdb,Apache IoTDB,Apache+IoTDB,2025-04,1.395
+apache/iotdb,Apache IoTDB,Apache+IoTDB,2025-05,1.452
+apache/iotdb,Apache IoTDB,Apache+IoTDB,2025-06,1.47
+apache/iotdb,Apache IoTDB,Apache+IoTDB,2025-07,1.435
+apache/iotdb,Apache IoTDB,Apache+IoTDB,2025-08,1.539
+apache/iotdb,Apache IoTDB,Apache+IoTDB,2025-09,1.687
+apache/jena,Apache Jena - TDB,Apache+Jena+-+TDB,2024-10,3.003
+apache/jena,Apache Jena - TDB,Apache+Jena+-+TDB,2024-11,2.871
+apache/jena,Apache Jena - TDB,Apache+Jena+-+TDB,2024-12,2.981
+apache/jena,Apache Jena - TDB,Apache+Jena+-+TDB,2025-01,2.847
+apache/jena,Apache Jena - TDB,Apache+Jena+-+TDB,2025-02,2.759
+apache/jena,Apache Jena - TDB,Apache+Jena+-+TDB,2025-03,2.66
+apache/jena,Apache Jena - TDB,Apache+Jena+-+TDB,2025-04,2.443
+apache/jena,Apache Jena - TDB,Apache+Jena+-+TDB,2025-05,2.44
+apache/jena,Apache Jena - TDB,Apache+Jena+-+TDB,2025-06,2.396
+apache/jena,Apache Jena - TDB,Apache+Jena+-+TDB,2025-07,2.341
+apache/jena,Apache Jena - TDB,Apache+Jena+-+TDB,2025-08,2.371
+apache/jena,Apache Jena - TDB,Apache+Jena+-+TDB,2025-09,2.51
+apache/phoenix,Apache Phoenix,Apache+Phoenix,2024-10,1.927
+apache/phoenix,Apache Phoenix,Apache+Phoenix,2024-11,1.933
+apache/phoenix,Apache Phoenix,Apache+Phoenix,2024-12,1.898
+apache/phoenix,Apache Phoenix,Apache+Phoenix,2025-01,1.876
+apache/phoenix,Apache Phoenix,Apache+Phoenix,2025-02,1.84
+apache/phoenix,Apache Phoenix,Apache+Phoenix,2025-03,1.835
+apache/phoenix,Apache Phoenix,Apache+Phoenix,2025-04,1.813
+apache/phoenix,Apache Phoenix,Apache+Phoenix,2025-05,1.825
+apache/phoenix,Apache Phoenix,Apache+Phoenix,2025-06,1.828
+apache/phoenix,Apache Phoenix,Apache+Phoenix,2025-07,1.832
+apache/phoenix,Apache Phoenix,Apache+Phoenix,2025-08,2.001
+apache/phoenix,Apache Phoenix,Apache+Phoenix,2025-09,2.18
+apache/pinot,Apache Pinot,Apache+Pinot,2024-10,0.336
+apache/pinot,Apache Pinot,Apache+Pinot,2024-11,0.358
+apache/pinot,Apache Pinot,Apache+Pinot,2024-12,0.354
+apache/pinot,Apache Pinot,Apache+Pinot,2025-01,0.346
+apache/pinot,Apache Pinot,Apache+Pinot,2025-02,0.374
+apache/pinot,Apache Pinot,Apache+Pinot,2025-03,0.39
+apache/pinot,Apache Pinot,Apache+Pinot,2025-04,0.457
+apache/pinot,Apache Pinot,Apache+Pinot,2025-05,0.499
+apache/pinot,Apache Pinot,Apache+Pinot,2025-06,0.486
+apache/pinot,Apache Pinot,Apache+Pinot,2025-07,0.488
+apache/pinot,Apache Pinot,Apache+Pinot,2025-08,0.545
+apache/pinot,Apache Pinot,Apache+Pinot,2025-09,0.629
+apache/sedona,Apache Sedona,Apache+Sedona,2024-10,0.317
+apache/sedona,Apache Sedona,Apache+Sedona,2024-11,0.327
+apache/sedona,Apache Sedona,Apache+Sedona,2024-12,0.335
+apache/sedona,Apache Sedona,Apache+Sedona,2025-01,0.364
+apache/sedona,Apache Sedona,Apache+Sedona,2025-02,0.38
+apache/sedona,Apache Sedona,Apache+Sedona,2025-03,0.389
+apache/sedona,Apache Sedona,Apache+Sedona,2025-04,0.413
+apache/sedona,Apache Sedona,Apache+Sedona,2025-05,0.411
+apache/sedona,Apache Sedona,Apache+Sedona,2025-06,0.424
+apache/sedona,Apache Sedona,Apache+Sedona,2025-07,0.427
+apache/sedona,Apache Sedona,Apache+Sedona,2025-08,0.516
+apache/sedona,Apache Sedona,Apache+Sedona,2025-09,0.65
+apache/spark,Apache Spark (SQL),Apache+Spark+%28SQL%29,2024-10,16.726
+apache/spark,Apache Spark (SQL),Apache+Spark+%28SQL%29,2024-11,16.782
+apache/spark,Apache Spark (SQL),Apache+Spark+%28SQL%29,2024-12,17.392
+apache/spark,Apache Spark (SQL),Apache+Spark+%28SQL%29,2025-01,17.797
+apache/spark,Apache Spark (SQL),Apache+Spark+%28SQL%29,2025-02,18.445
+apache/spark,Apache Spark (SQL),Apache+Spark+%28SQL%29,2025-03,19.758
+apache/spark,Apache Spark (SQL),Apache+Spark+%28SQL%29,2025-04,20.396
+apache/spark,Apache Spark (SQL),Apache+Spark+%28SQL%29,2025-05,21.619
+apache/spark,Apache Spark (SQL),Apache+Spark+%28SQL%29,2025-06,22.729
+apache/spark,Apache Spark (SQL),Apache+Spark+%28SQL%29,2025-07,23.797
+apache/spark,Apache Spark (SQL),Apache+Spark+%28SQL%29,2025-08,24.635
+apache/spark,Apache Spark (SQL),Apache+Spark+%28SQL%29,2025-09,25.363
+apache/tinkerpop,TinkerGraph,TinkerGraph,2024-10,0.073
+apache/tinkerpop,TinkerGraph,TinkerGraph,2024-11,0.07
+apache/tinkerpop,TinkerGraph,TinkerGraph,2024-12,0.081
+apache/tinkerpop,TinkerGraph,TinkerGraph,2025-01,0.058
+apache/tinkerpop,TinkerGraph,TinkerGraph,2025-02,0.047
+apache/tinkerpop,TinkerGraph,TinkerGraph,2025-03,0.068
+apache/tinkerpop,TinkerGraph,TinkerGraph,2025-04,0.05
+apache/tinkerpop,TinkerGraph,TinkerGraph,2025-05,0.053
+apache/tinkerpop,TinkerGraph,TinkerGraph,2025-06,0.034
+apache/tinkerpop,TinkerGraph,TinkerGraph,2025-07,0.067
+apache/tinkerpop,TinkerGraph,TinkerGraph,2025-08,0.02
+apache/tinkerpop,TinkerGraph,TinkerGraph,2025-09,0.028
+apple/foundationdb,FoundationDB,FoundationDB,2024-10,0.985
+apple/foundationdb,FoundationDB,FoundationDB,2024-11,0.94
+apple/foundationdb,FoundationDB,FoundationDB,2024-12,0.918
+apple/foundationdb,FoundationDB,FoundationDB,2025-01,0.887
+apple/foundationdb,FoundationDB,FoundationDB,2025-02,0.944
+apple/foundationdb,FoundationDB,FoundationDB,2025-03,0.96
+apple/foundationdb,FoundationDB,FoundationDB,2025-04,0.871
+apple/foundationdb,FoundationDB,FoundationDB,2025-05,0.893
+apple/foundationdb,FoundationDB,FoundationDB,2025-06,0.884
+apple/foundationdb,FoundationDB,FoundationDB,2025-07,0.917
+apple/foundationdb,FoundationDB,FoundationDB,2025-08,0.904
+apple/foundationdb,FoundationDB,FoundationDB,2025-09,0.97
+arangodb/arangodb,ArangoDB,ArangoDB,2024-10,3.435
+arangodb/arangodb,ArangoDB,ArangoDB,2024-11,3.088
+arangodb/arangodb,ArangoDB,ArangoDB,2024-12,2.96
+arangodb/arangodb,ArangoDB,ArangoDB,2025-01,2.916
+arangodb/arangodb,ArangoDB,ArangoDB,2025-02,2.91
+arangodb/arangodb,ArangoDB,ArangoDB,2025-03,2.867
+arangodb/arangodb,ArangoDB,ArangoDB,2025-04,2.823
+arangodb/arangodb,ArangoDB,ArangoDB,2025-05,2.849
+arangodb/arangodb,ArangoDB,ArangoDB,2025-06,2.899
+arangodb/arangodb,ArangoDB,ArangoDB,2025-07,2.834
+arangodb/arangodb,ArangoDB,ArangoDB,2025-08,2.905
+arangodb/arangodb,ArangoDB,ArangoDB,2025-09,2.938
+arcadedata/arcadedb,ArcadeDB,ArcadeDB,2024-10,0.009
+arcadedata/arcadedb,ArcadeDB,ArcadeDB,2024-11,0.035
+arcadedata/arcadedb,ArcadeDB,ArcadeDB,2024-12,0.037
+arcadedata/arcadedb,ArcadeDB,ArcadeDB,2025-01,0.045
+arcadedata/arcadedb,ArcadeDB,ArcadeDB,2025-02,0.044
+arcadedata/arcadedb,ArcadeDB,ArcadeDB,2025-03,0.106
+arcadedata/arcadedb,ArcadeDB,ArcadeDB,2025-04,0.06
+arcadedata/arcadedb,ArcadeDB,ArcadeDB,2025-05,0.114
+arcadedata/arcadedb,ArcadeDB,ArcadeDB,2025-06,0.084
+arcadedata/arcadedb,ArcadeDB,ArcadeDB,2025-07,0.136
+arcadedata/arcadedb,ArcadeDB,ArcadeDB,2025-08,0.103
+arcadedata/arcadedb,ArcadeDB,ArcadeDB,2025-09,0.175
+bloomberg/comdb2,Comdb2,Comdb2,2024-10,0.325
+bloomberg/comdb2,Comdb2,Comdb2,2024-11,0.325
+bloomberg/comdb2,Comdb2,Comdb2,2024-12,0.324
+bloomberg/comdb2,Comdb2,Comdb2,2025-01,0.332
+bloomberg/comdb2,Comdb2,Comdb2,2025-02,0.334
+bloomberg/comdb2,Comdb2,Comdb2,2025-03,0.333
+bloomberg/comdb2,Comdb2,Comdb2,2025-04,0.332
+bloomberg/comdb2,Comdb2,Comdb2,2025-05,0.333
+bloomberg/comdb2,Comdb2,Comdb2,2025-06,0.335
+bloomberg/comdb2,Comdb2,Comdb2,2025-07,0.335
+bloomberg/comdb2,Comdb2,Comdb2,2025-08,0.336
+bloomberg/comdb2,Comdb2,Comdb2,2025-09,0.341
+chroma-core/chroma,Chroma,Chroma,2024-10,1.872
+chroma-core/chroma,Chroma,Chroma,2024-11,1.813
+chroma-core/chroma,Chroma,Chroma,2024-12,1.867
+chroma-core/chroma,Chroma,Chroma,2025-01,1.95
+chroma-core/chroma,Chroma,Chroma,2025-02,1.844
+chroma-core/chroma,Chroma,Chroma,2025-03,1.887
+chroma-core/chroma,Chroma,Chroma,2025-04,1.904
+chroma-core/chroma,Chroma,Chroma,2025-05,1.919
+chroma-core/chroma,Chroma,Chroma,2025-06,1.936
+chroma-core/chroma,Chroma,Chroma,2025-07,2.001
+chroma-core/chroma,Chroma,Chroma,2025-08,2.216
+chroma-core/chroma,Chroma,Chroma,2025-09,2.366
+citusdata/citus,Citus,Citus,2024-10,2.057
+citusdata/citus,Citus,Citus,2024-11,1.961
+citusdata/citus,Citus,Citus,2024-12,2.011
+citusdata/citus,Citus,Citus,2025-01,2.038
+citusdata/citus,Citus,Citus,2025-02,1.981
+citusdata/citus,Citus,Citus,2025-03,1.943
+citusdata/citus,Citus,Citus,2025-04,1.991
+citusdata/citus,Citus,Citus,2025-05,1.913
+citusdata/citus,Citus,Citus,2025-06,1.892
+citusdata/citus,Citus,Citus,2025-07,1.903
+citusdata/citus,Citus,Citus,2025-08,1.967
+citusdata/citus,Citus,Citus,2025-09,2.209
+clickhouse/clickhouse,ClickHouse,ClickHouse,2024-10,16.25
+clickhouse/clickhouse,ClickHouse,ClickHouse,2024-11,16.499
+clickhouse/clickhouse,ClickHouse,ClickHouse,2024-12,17.441
+clickhouse/clickhouse,ClickHouse,ClickHouse,2025-01,18.562
+clickhouse/clickhouse,ClickHouse,ClickHouse,2025-02,18.706
+clickhouse/clickhouse,ClickHouse,ClickHouse,2025-03,18.613
+clickhouse/clickhouse,ClickHouse,ClickHouse,2025-04,18.73
+clickhouse/clickhouse,ClickHouse,ClickHouse,2025-05,18.766
+clickhouse/clickhouse,ClickHouse,ClickHouse,2025-06,18.6
+clickhouse/clickhouse,ClickHouse,ClickHouse,2025-07,18.542
+clickhouse/clickhouse,ClickHouse,ClickHouse,2025-08,18.853
+clickhouse/clickhouse,ClickHouse,ClickHouse,2025-09,20.149
+cnosdb/cnosdb,CnosDB,CnosDB,2024-10,0.304
+cnosdb/cnosdb,CnosDB,CnosDB,2024-11,0.295
+cnosdb/cnosdb,CnosDB,CnosDB,2024-12,0.323
+cnosdb/cnosdb,CnosDB,CnosDB,2025-01,0.366
+cnosdb/cnosdb,CnosDB,CnosDB,2025-02,0.331
+cnosdb/cnosdb,CnosDB,CnosDB,2025-03,0.273
+cnosdb/cnosdb,CnosDB,CnosDB,2025-04,0.27
+cnosdb/cnosdb,CnosDB,CnosDB,2025-05,0.268
+cnosdb/cnosdb,CnosDB,CnosDB,2025-06,0.322
+cnosdb/cnosdb,CnosDB,CnosDB,2025-07,0.384
+cnosdb/cnosdb,CnosDB,CnosDB,2025-08,0.47
+cnosdb/cnosdb,CnosDB,CnosDB,2025-09,0.485
+cockroachdb/cockroach,CockroachDB,CockroachDB,2024-10,4.846
+cockroachdb/cockroach,CockroachDB,CockroachDB,2024-11,4.244
+cockroachdb/cockroach,CockroachDB,CockroachDB,2024-12,4.193
+cockroachdb/cockroach,CockroachDB,CockroachDB,2025-01,4.292
+cockroachdb/cockroach,CockroachDB,CockroachDB,2025-02,4.016
+cockroachdb/cockroach,CockroachDB,CockroachDB,2025-03,4.403
+cockroachdb/cockroach,CockroachDB,CockroachDB,2025-04,4.171
+cockroachdb/cockroach,CockroachDB,CockroachDB,2025-05,3.9
+cockroachdb/cockroach,CockroachDB,CockroachDB,2025-06,4.085
+cockroachdb/cockroach,CockroachDB,CockroachDB,2025-07,4.346
+cockroachdb/cockroach,CockroachDB,CockroachDB,2025-08,4.274
+cockroachdb/cockroach,CockroachDB,CockroachDB,2025-09,5.035
+couchbase/couchbase-lite-core,Couchbase,Couchbase,2024-10,17.104
+couchbase/couchbase-lite-core,Couchbase,Couchbase,2024-11,15.818
+couchbase/couchbase-lite-core,Couchbase,Couchbase,2024-12,15.826
+couchbase/couchbase-lite-core,Couchbase,Couchbase,2025-01,16.008
+couchbase/couchbase-lite-core,Couchbase,Couchbase,2025-02,15.626
+couchbase/couchbase-lite-core,Couchbase,Couchbase,2025-03,15.046
+couchbase/couchbase-lite-core,Couchbase,Couchbase,2025-04,14.045
+couchbase/couchbase-lite-core,Couchbase,Couchbase,2025-05,13.816
+couchbase/couchbase-lite-core,Couchbase,Couchbase,2025-06,13.797
+couchbase/couchbase-lite-core,Couchbase,Couchbase,2025-07,12.962
+couchbase/couchbase-lite-core,Couchbase,Couchbase,2025-08,12.67
+couchbase/couchbase-lite-core,Couchbase,Couchbase,2025-09,12.58
+crate/crate,CrateDB,CrateDB,2024-10,0.676
+crate/crate,CrateDB,CrateDB,2024-11,0.641
+crate/crate,CrateDB,CrateDB,2024-12,0.656
+crate/crate,CrateDB,CrateDB,2025-01,0.64
+crate/crate,CrateDB,CrateDB,2025-02,0.659
+crate/crate,CrateDB,CrateDB,2025-03,0.659
+crate/crate,CrateDB,CrateDB,2025-04,0.635
+crate/crate,CrateDB,CrateDB,2025-05,0.667
+crate/crate,CrateDB,CrateDB,2025-06,0.643
+crate/crate,CrateDB,CrateDB,2025-07,0.623
+crate/crate,CrateDB,CrateDB,2025-08,0.644
+crate/crate,CrateDB,CrateDB,2025-09,0.654
+cubrid/cubrid,Cubrid,Cubrid,2024-10,0.967
+cubrid/cubrid,Cubrid,Cubrid,2024-11,0.949
+cubrid/cubrid,Cubrid,Cubrid,2024-12,0.921
+cubrid/cubrid,Cubrid,Cubrid,2025-01,0.872
+cubrid/cubrid,Cubrid,Cubrid,2025-02,0.931
+cubrid/cubrid,Cubrid,Cubrid,2025-03,0.893
+cubrid/cubrid,Cubrid,Cubrid,2025-04,0.947
+cubrid/cubrid,Cubrid,Cubrid,2025-05,1.003
+cubrid/cubrid,Cubrid,Cubrid,2025-06,1.073
+cubrid/cubrid,Cubrid,Cubrid,2025-07,1.04
+cubrid/cubrid,Cubrid,Cubrid,2025-08,1.006
+cubrid/cubrid,Cubrid,Cubrid,2025-09,0.971
+dgraph-io/dgraph,Dgraph,Dgraph,2024-10,1.394
+dgraph-io/dgraph,Dgraph,Dgraph,2024-11,1.336
+dgraph-io/dgraph,Dgraph,Dgraph,2024-12,1.313
+dgraph-io/dgraph,Dgraph,Dgraph,2025-01,1.248
+dgraph-io/dgraph,Dgraph,Dgraph,2025-02,1.2
+dgraph-io/dgraph,Dgraph,Dgraph,2025-03,1.213
+dgraph-io/dgraph,Dgraph,Dgraph,2025-04,1.186
+dgraph-io/dgraph,Dgraph,Dgraph,2025-05,1.246
+dgraph-io/dgraph,Dgraph,Dgraph,2025-06,1.204
+dgraph-io/dgraph,Dgraph,Dgraph,2025-07,1.2
+dgraph-io/dgraph,Dgraph,Dgraph,2025-08,1.249
+dgraph-io/dgraph,Dgraph,Dgraph,2025-09,1.337
+dolthub/dolt,Dolt,Dolt,2024-10,0.875
+dolthub/dolt,Dolt,Dolt,2024-11,0.852
+dolthub/dolt,Dolt,Dolt,2024-12,0.767
+dolthub/dolt,Dolt,Dolt,2025-01,0.691
+dolthub/dolt,Dolt,Dolt,2025-02,0.655
+dolthub/dolt,Dolt,Dolt,2025-03,0.66
+dolthub/dolt,Dolt,Dolt,2025-04,0.624
+dolthub/dolt,Dolt,Dolt,2025-05,0.599
+dolthub/dolt,Dolt,Dolt,2025-06,0.61
+dolthub/dolt,Dolt,Dolt,2025-07,0.611
+dolthub/dolt,Dolt,Dolt,2025-08,0.63
+dolthub/dolt,Dolt,Dolt,2025-09,0.63
+dragonflydb/dragonfly,Dragonfly,Dragonfly,2024-10,0.457
+dragonflydb/dragonfly,Dragonfly,Dragonfly,2024-11,0.498
+dragonflydb/dragonfly,Dragonfly,Dragonfly,2024-12,0.518
+dragonflydb/dragonfly,Dragonfly,Dragonfly,2025-01,0.491
+dragonflydb/dragonfly,Dragonfly,Dragonfly,2025-02,0.476
+dragonflydb/dragonfly,Dragonfly,Dragonfly,2025-03,0.503
+dragonflydb/dragonfly,Dragonfly,Dragonfly,2025-04,0.51
+dragonflydb/dragonfly,Dragonfly,Dragonfly,2025-05,0.527
+dragonflydb/dragonfly,Dragonfly,Dragonfly,2025-06,0.501
+dragonflydb/dragonfly,Dragonfly,Dragonfly,2025-07,0.494
+dragonflydb/dragonfly,Dragonfly,Dragonfly,2025-08,0.499
+dragonflydb/dragonfly,Dragonfly,Dragonfly,2025-09,0.55
+duckdb/duckdb,DuckDB,DuckDB,2024-10,5.982
+duckdb/duckdb,DuckDB,DuckDB,2024-11,6.082
+duckdb/duckdb,DuckDB,DuckDB,2024-12,6.171
+duckdb/duckdb,DuckDB,DuckDB,2025-01,6.323
+duckdb/duckdb,DuckDB,DuckDB,2025-02,6.349
+duckdb/duckdb,DuckDB,DuckDB,2025-03,6.714
+duckdb/duckdb,DuckDB,DuckDB,2025-04,7.385
+duckdb/duckdb,DuckDB,DuckDB,2025-05,7.441
+duckdb/duckdb,DuckDB,DuckDB,2025-06,7.299
+duckdb/duckdb,DuckDB,DuckDB,2025-07,7.149
+duckdb/duckdb,DuckDB,DuckDB,2025-08,7.899
+duckdb/duckdb,DuckDB,DuckDB,2025-09,8.696
+elastic/elasticsearch,Elasticsearch,Elasticsearch,2024-10,131.845
+elastic/elasticsearch,Elasticsearch,Elasticsearch,2024-11,131.643
+elastic/elasticsearch,Elasticsearch,Elasticsearch,2024-12,132.32
+elastic/elasticsearch,Elasticsearch,Elasticsearch,2025-01,134.922
+elastic/elasticsearch,Elasticsearch,Elasticsearch,2025-02,134.633
+elastic/elasticsearch,Elasticsearch,Elasticsearch,2025-03,131.382
+elastic/elasticsearch,Elasticsearch,Elasticsearch,2025-04,128.083
+elastic/elasticsearch,Elasticsearch,Elasticsearch,2025-05,123.813
+elastic/elasticsearch,Elasticsearch,Elasticsearch,2025-06,121.279
+elastic/elasticsearch,Elasticsearch,Elasticsearch,2025-07,118.825
+elastic/elasticsearch,Elasticsearch,Elasticsearch,2025-08,114.268
+elastic/elasticsearch,Elasticsearch,Elasticsearch,2025-09,118.256
+etcd-io/etcd,etcd,etcd,2024-10,7.171
+etcd-io/etcd,etcd,etcd,2024-11,7.196
+etcd-io/etcd,etcd,etcd,2024-12,7.139
+etcd-io/etcd,etcd,etcd,2025-01,7.08
+etcd-io/etcd,etcd,etcd,2025-02,7.061
+etcd-io/etcd,etcd,etcd,2025-03,7.078
+etcd-io/etcd,etcd,etcd,2025-04,7.053
+etcd-io/etcd,etcd,etcd,2025-05,7.143
+etcd-io/etcd,etcd,etcd,2025-06,7.053
+etcd-io/etcd,etcd,etcd,2025-07,6.891
+etcd-io/etcd,etcd,etcd,2025-08,6.886
+etcd-io/etcd,etcd,etcd,2025-09,7.443
+eventstore/eventstore,KurrentDB (aka EventStoreDB),KurrentDB+%28aka+EventStoreDB%29,2024-10,1.075
+eventstore/eventstore,KurrentDB (aka EventStoreDB),KurrentDB+%28aka+EventStoreDB%29,2024-11,1.075
+eventstore/eventstore,KurrentDB (aka EventStoreDB),KurrentDB+%28aka+EventStoreDB%29,2024-12,1.065
+eventstore/eventstore,KurrentDB (aka EventStoreDB),KurrentDB+%28aka+EventStoreDB%29,2025-01,1.035
+eventstore/eventstore,KurrentDB (aka EventStoreDB),KurrentDB+%28aka+EventStoreDB%29,2025-02,0.992
+eventstore/eventstore,KurrentDB (aka EventStoreDB),KurrentDB+%28aka+EventStoreDB%29,2025-03,1.041
+eventstore/eventstore,KurrentDB (aka EventStoreDB),KurrentDB+%28aka+EventStoreDB%29,2025-04,0.998
+eventstore/eventstore,KurrentDB (aka EventStoreDB),KurrentDB+%28aka+EventStoreDB%29,2025-05,1.048
+eventstore/eventstore,KurrentDB (aka EventStoreDB),KurrentDB+%28aka+EventStoreDB%29,2025-06,1.078
+eventstore/eventstore,KurrentDB (aka EventStoreDB),KurrentDB+%28aka+EventStoreDB%29,2025-07,1.101
+eventstore/eventstore,KurrentDB (aka EventStoreDB),KurrentDB+%28aka+EventStoreDB%29,2025-08,1.073
+eventstore/eventstore,KurrentDB (aka EventStoreDB),KurrentDB+%28aka+EventStoreDB%29,2025-09,1.15
+exist-db/exist,eXist-db,eXist-db,2024-10,0.696
+exist-db/exist,eXist-db,eXist-db,2024-11,0.691
+exist-db/exist,eXist-db,eXist-db,2024-12,0.728
+exist-db/exist,eXist-db,eXist-db,2025-01,0.699
+exist-db/exist,eXist-db,eXist-db,2025-02,0.686
+exist-db/exist,eXist-db,eXist-db,2025-03,0.674
+exist-db/exist,eXist-db,eXist-db,2025-04,0.689
+exist-db/exist,eXist-db,eXist-db,2025-05,0.682
+exist-db/exist,eXist-db,eXist-db,2025-06,0.679
+exist-db/exist,eXist-db,eXist-db,2025-07,0.683
+exist-db/exist,eXist-db,eXist-db,2025-08,0.715
+exist-db/exist,eXist-db,eXist-db,2025-09,0.703
+facebook/rocksdb,RocksDB,RocksDB,2024-10,3.047
+facebook/rocksdb,RocksDB,RocksDB,2024-11,2.96
+facebook/rocksdb,RocksDB,RocksDB,2024-12,2.852
+facebook/rocksdb,RocksDB,RocksDB,2025-01,2.729
+facebook/rocksdb,RocksDB,RocksDB,2025-02,3.062
+facebook/rocksdb,RocksDB,RocksDB,2025-03,3.147
+facebook/rocksdb,RocksDB,RocksDB,2025-04,3.14
+facebook/rocksdb,RocksDB,RocksDB,2025-05,3.205
+facebook/rocksdb,RocksDB,RocksDB,2025-06,2.857
+facebook/rocksdb,RocksDB,RocksDB,2025-07,3.118
+facebook/rocksdb,RocksDB,RocksDB,2025-08,2.924
+facebook/rocksdb,RocksDB,RocksDB,2025-09,3.331
+firebirdsql/firebird,Firebird,Firebird,2024-10,19.017
+firebirdsql/firebird,Firebird,Firebird,2024-11,18.426
+firebirdsql/firebird,Firebird,Firebird,2024-12,18.543
+firebirdsql/firebird,Firebird,Firebird,2025-01,17.72
+firebirdsql/firebird,Firebird,Firebird,2025-02,17.28
+firebirdsql/firebird,Firebird,Firebird,2025-03,16.823
+firebirdsql/firebird,Firebird,Firebird,2025-04,16.74
+firebirdsql/firebird,Firebird,Firebird,2025-05,16.657
+firebirdsql/firebird,Firebird,Firebird,2025-06,16.564
+firebirdsql/firebird,Firebird,Firebird,2025-07,17.015
+firebirdsql/firebird,Firebird,Firebird,2025-08,17.404
+firebirdsql/firebird,Firebird,Firebird,2025-09,16.537
+fluree/db,Fluree,Fluree,2024-10,0.355
+fluree/db,Fluree,Fluree,2024-11,0.35
+fluree/db,Fluree,Fluree,2024-12,0.312
+fluree/db,Fluree,Fluree,2025-01,0.347
+fluree/db,Fluree,Fluree,2025-02,0.334
+fluree/db,Fluree,Fluree,2025-03,0.391
+fluree/db,Fluree,Fluree,2025-04,0.435
+fluree/db,Fluree,Fluree,2025-05,0.455
+fluree/db,Fluree,Fluree,2025-06,0.42
+fluree/db,Fluree,Fluree,2025-07,0.404
+fluree/db,Fluree,Fluree,2025-08,0.356
+fluree/db,Fluree,Fluree,2025-09,0.339
+greptimeteam/greptimedb,GreptimeDB,GreptimeDB,2024-10,0.108
+greptimeteam/greptimedb,GreptimeDB,GreptimeDB,2024-11,0.106
+greptimeteam/greptimedb,GreptimeDB,GreptimeDB,2024-12,0.125
+greptimeteam/greptimedb,GreptimeDB,GreptimeDB,2025-01,0.098
+greptimeteam/greptimedb,GreptimeDB,GreptimeDB,2025-02,0.106
+greptimeteam/greptimedb,GreptimeDB,GreptimeDB,2025-03,0.134
+greptimeteam/greptimedb,GreptimeDB,GreptimeDB,2025-04,0.128
+greptimeteam/greptimedb,GreptimeDB,GreptimeDB,2025-05,0.153
+greptimeteam/greptimedb,GreptimeDB,GreptimeDB,2025-06,0.131
+greptimeteam/greptimedb,GreptimeDB,GreptimeDB,2025-07,0.138
+greptimeteam/greptimedb,GreptimeDB,GreptimeDB,2025-08,0.148
+greptimeteam/greptimedb,GreptimeDB,GreptimeDB,2025-09,0.122
+gridgain/gridgain,GridGain,GridGain,2024-10,1.49
+gridgain/gridgain,GridGain,GridGain,2024-11,1.418
+gridgain/gridgain,GridGain,GridGain,2024-12,1.373
+gridgain/gridgain,GridGain,GridGain,2025-01,1.315
+gridgain/gridgain,GridGain,GridGain,2025-02,1.285
+gridgain/gridgain,GridGain,GridGain,2025-03,1.317
+gridgain/gridgain,GridGain,GridGain,2025-04,1.324
+gridgain/gridgain,GridGain,GridGain,2025-05,1.326
+gridgain/gridgain,GridGain,GridGain,2025-06,1.303
+gridgain/gridgain,GridGain,GridGain,2025-07,1.322
+gridgain/gridgain,GridGain,GridGain,2025-08,1.287
+gridgain/gridgain,GridGain,GridGain,2025-09,1.388
+h2database/h2database,H2,H2,2024-10,7.316
+h2database/h2database,H2,H2,2024-11,7.095
+h2database/h2database,H2,H2,2024-12,7.021
+h2database/h2database,H2,H2,2025-01,6.952
+h2database/h2database,H2,H2,2025-02,6.831
+h2database/h2database,H2,H2,2025-03,6.939
+h2database/h2database,H2,H2,2025-04,7.19
+h2database/h2database,H2,H2,2025-05,7.259
+h2database/h2database,H2,H2,2025-06,7.068
+h2database/h2database,H2,H2,2025-07,6.888
+h2database/h2database,H2,H2,2025-08,6.76
+h2database/h2database,H2,H2,2025-09,7.263
+hazelcast/hazelcast,Hazelcast,Hazelcast,2024-10,5.567
+hazelcast/hazelcast,Hazelcast,Hazelcast,2024-11,5.459
+hazelcast/hazelcast,Hazelcast,Hazelcast,2024-12,5.356
+hazelcast/hazelcast,Hazelcast,Hazelcast,2025-01,5.591
+hazelcast/hazelcast,Hazelcast,Hazelcast,2025-02,5.516
+hazelcast/hazelcast,Hazelcast,Hazelcast,2025-03,5.474
+hazelcast/hazelcast,Hazelcast,Hazelcast,2025-04,5.553
+hazelcast/hazelcast,Hazelcast,Hazelcast,2025-05,5.583
+hazelcast/hazelcast,Hazelcast,Hazelcast,2025-06,5.236
+hazelcast/hazelcast,Hazelcast,Hazelcast,2025-07,5.044
+hazelcast/hazelcast,Hazelcast,Hazelcast,2025-08,4.704
+hazelcast/hazelcast,Hazelcast,Hazelcast,2025-09,5.261
+infinispan/infinispan,Infinispan,Infinispan,2024-10,2.327
+infinispan/infinispan,Infinispan,Infinispan,2024-11,2.219
+infinispan/infinispan,Infinispan,Infinispan,2024-12,2.343
+infinispan/infinispan,Infinispan,Infinispan,2025-01,2.08
+infinispan/infinispan,Infinispan,Infinispan,2025-02,2.009
+infinispan/infinispan,Infinispan,Infinispan,2025-03,2.008
+infinispan/infinispan,Infinispan,Infinispan,2025-04,1.984
+infinispan/infinispan,Infinispan,Infinispan,2025-05,1.919
+infinispan/infinispan,Infinispan,Infinispan,2025-06,1.917
+infinispan/infinispan,Infinispan,Infinispan,2025-07,1.906
+infinispan/infinispan,Infinispan,Infinispan,2025-08,1.94
+infinispan/infinispan,Infinispan,Infinispan,2025-09,2.045
+influxdata/influxdb,InfluxDB,InfluxDB,2024-10,22.394
+influxdata/influxdb,InfluxDB,InfluxDB,2024-11,21.472
+influxdata/influxdb,InfluxDB,InfluxDB,2024-12,21.232
+influxdata/influxdb,InfluxDB,InfluxDB,2025-01,21.54
+influxdata/influxdb,InfluxDB,InfluxDB,2025-02,21.769
+influxdata/influxdb,InfluxDB,InfluxDB,2025-03,21.499
+influxdata/influxdb,InfluxDB,InfluxDB,2025-04,21.539
+influxdata/influxdb,InfluxDB,InfluxDB,2025-05,21.781
+influxdata/influxdb,InfluxDB,InfluxDB,2025-06,21.739
+influxdata/influxdb,InfluxDB,InfluxDB,2025-07,22.648
+influxdata/influxdb,InfluxDB,InfluxDB,2025-08,22.597
+influxdata/influxdb,InfluxDB,InfluxDB,2025-09,23.753
+kuzudb/kuzu,Kuzu,Kuzu,2024-10,0.008
+kuzudb/kuzu,Kuzu,Kuzu,2024-11,0.01
+kuzudb/kuzu,Kuzu,Kuzu,2024-12,0.019
+kuzudb/kuzu,Kuzu,Kuzu,2025-01,0.018
+kuzudb/kuzu,Kuzu,Kuzu,2025-02,0.018
+kuzudb/kuzu,Kuzu,Kuzu,2025-03,0.074
+kuzudb/kuzu,Kuzu,Kuzu,2025-04,0.019
+kuzudb/kuzu,Kuzu,Kuzu,2025-05,0.019
+kuzudb/kuzu,Kuzu,Kuzu,2025-06,0.019
+kuzudb/kuzu,Kuzu,Kuzu,2025-07,0.019
+kuzudb/kuzu,Kuzu,Kuzu,2025-08,0.024
+kuzudb/kuzu,Kuzu,Kuzu,2025-09,0.039
+manticoresoftware/manticoresearch,Manticore Search,Manticore+Search,2024-10,0.219
+manticoresoftware/manticoresearch,Manticore Search,Manticore+Search,2024-11,0.229
+manticoresoftware/manticoresearch,Manticore Search,Manticore+Search,2024-12,0.229
+manticoresoftware/manticoresearch,Manticore Search,Manticore+Search,2025-01,0.198
+manticoresoftware/manticoresearch,Manticore Search,Manticore+Search,2025-02,0.222
+manticoresoftware/manticoresearch,Manticore Search,Manticore+Search,2025-03,0.254
+manticoresoftware/manticoresearch,Manticore Search,Manticore+Search,2025-04,0.256
+manticoresoftware/manticoresearch,Manticore Search,Manticore+Search,2025-05,0.278
+manticoresoftware/manticoresearch,Manticore Search,Manticore+Search,2025-06,0.26
+manticoresoftware/manticoresearch,Manticore Search,Manticore+Search,2025-07,0.252
+manticoresoftware/manticoresearch,Manticore Search,Manticore+Search,2025-08,0.247
+manticoresoftware/manticoresearch,Manticore Search,Manticore+Search,2025-09,0.254
+mariadb/server,MariaDB,MariaDB,2024-10,84.886
+mariadb/server,MariaDB,MariaDB,2024-11,82.701
+mariadb/server,MariaDB,MariaDB,2024-12,83.767
+mariadb/server,MariaDB,MariaDB,2025-01,85.582
+mariadb/server,MariaDB,MariaDB,2025-02,89.505
+mariadb/server,MariaDB,MariaDB,2025-03,94.227
+mariadb/server,MariaDB,MariaDB,2025-04,94.339
+mariadb/server,MariaDB,MariaDB,2025-05,93.608
+mariadb/server,MariaDB,MariaDB,2025-06,94.536
+mariadb/server,MariaDB,MariaDB,2025-07,95.442
+mariadb/server,MariaDB,MariaDB,2025-08,93.593
+mariadb/server,MariaDB,MariaDB,2025-09,91.46
+marqo-ai/marqo,Marqo,Marqo,2024-10,0.351
+marqo-ai/marqo,Marqo,Marqo,2024-11,0.349
+marqo-ai/marqo,Marqo,Marqo,2024-12,0.332
+marqo-ai/marqo,Marqo,Marqo,2025-01,0.308
+marqo-ai/marqo,Marqo,Marqo,2025-02,0.291
+marqo-ai/marqo,Marqo,Marqo,2025-03,0.322
+marqo-ai/marqo,Marqo,Marqo,2025-04,0.355
+marqo-ai/marqo,Marqo,Marqo,2025-05,0.369
+marqo-ai/marqo,Marqo,Marqo,2025-06,0.348
+marqo-ai/marqo,Marqo,Marqo,2025-07,0.339
+marqo-ai/marqo,Marqo,Marqo,2025-08,0.376
+marqo-ai/marqo,Marqo,Marqo,2025-09,0.403
+matrixorigin/matrixone,MatrixOne,MatrixOne,2024-10,0.977
+matrixorigin/matrixone,MatrixOne,MatrixOne,2024-11,0.967
+matrixorigin/matrixone,MatrixOne,MatrixOne,2024-12,1.046
+matrixorigin/matrixone,MatrixOne,MatrixOne,2025-01,1.053
+matrixorigin/matrixone,MatrixOne,MatrixOne,2025-02,1.046
+matrixorigin/matrixone,MatrixOne,MatrixOne,2025-03,0.989
+matrixorigin/matrixone,MatrixOne,MatrixOne,2025-04,0.906
+matrixorigin/matrixone,MatrixOne,MatrixOne,2025-05,0.851
+matrixorigin/matrixone,MatrixOne,MatrixOne,2025-06,0.803
+matrixorigin/matrixone,MatrixOne,MatrixOne,2025-07,0.744
+matrixorigin/matrixone,MatrixOne,MatrixOne,2025-08,0.737
+matrixorigin/matrixone,MatrixOne,MatrixOne,2025-09,0.756
+mbdavid/litedb,LiteDB,LiteDB,2024-10,1.13
+mbdavid/litedb,LiteDB,LiteDB,2024-11,1.145
+mbdavid/litedb,LiteDB,LiteDB,2024-12,1.136
+mbdavid/litedb,LiteDB,LiteDB,2025-01,1.078
+mbdavid/litedb,LiteDB,LiteDB,2025-02,1.114
+mbdavid/litedb,LiteDB,LiteDB,2025-03,1.091
+mbdavid/litedb,LiteDB,LiteDB,2025-04,1.053
+mbdavid/litedb,LiteDB,LiteDB,2025-05,1.065
+mbdavid/litedb,LiteDB,LiteDB,2025-06,1.043
+mbdavid/litedb,LiteDB,LiteDB,2025-07,1.045
+mbdavid/litedb,LiteDB,LiteDB,2025-08,1.055
+mbdavid/litedb,LiteDB,LiteDB,2025-09,1.189
+meilisearch/meilisearch,Meilisearch,Meilisearch,2024-10,1.068
+meilisearch/meilisearch,Meilisearch,Meilisearch,2024-11,1.096
+meilisearch/meilisearch,Meilisearch,Meilisearch,2024-12,1.15
+meilisearch/meilisearch,Meilisearch,Meilisearch,2025-01,1.077
+meilisearch/meilisearch,Meilisearch,Meilisearch,2025-02,1.134
+meilisearch/meilisearch,Meilisearch,Meilisearch,2025-03,1.201
+meilisearch/meilisearch,Meilisearch,Meilisearch,2025-04,1.162
+meilisearch/meilisearch,Meilisearch,Meilisearch,2025-05,1.139
+meilisearch/meilisearch,Meilisearch,Meilisearch,2025-06,1.134
+meilisearch/meilisearch,Meilisearch,Meilisearch,2025-07,1.237
+meilisearch/meilisearch,Meilisearch,Meilisearch,2025-08,1.274
+meilisearch/meilisearch,Meilisearch,Meilisearch,2025-09,1.483
+memgraph/memgraph,Memgraph,Memgraph,2024-10,2.816
+memgraph/memgraph,Memgraph,Memgraph,2024-11,2.722
+memgraph/memgraph,Memgraph,Memgraph,2024-12,2.706
+memgraph/memgraph,Memgraph,Memgraph,2025-01,2.621
+memgraph/memgraph,Memgraph,Memgraph,2025-02,2.542
+memgraph/memgraph,Memgraph,Memgraph,2025-03,2.606
+memgraph/memgraph,Memgraph,Memgraph,2025-04,2.569
+memgraph/memgraph,Memgraph,Memgraph,2025-05,2.535
+memgraph/memgraph,Memgraph,Memgraph,2025-06,2.478
+memgraph/memgraph,Memgraph,Memgraph,2025-07,2.526
+memgraph/memgraph,Memgraph,Memgraph,2025-08,2.366
+memgraph/memgraph,Memgraph,Memgraph,2025-09,2.437
+milvus-io/milvus,Milvus,Milvus,2024-10,3.024
+milvus-io/milvus,Milvus,Milvus,2024-11,2.854
+milvus-io/milvus,Milvus,Milvus,2024-12,2.818
+milvus-io/milvus,Milvus,Milvus,2025-01,2.76
+milvus-io/milvus,Milvus,Milvus,2025-02,2.771
+milvus-io/milvus,Milvus,Milvus,2025-03,2.772
+milvus-io/milvus,Milvus,Milvus,2025-04,2.899
+milvus-io/milvus,Milvus,Milvus,2025-05,2.918
+milvus-io/milvus,Milvus,Milvus,2025-06,3.017
+milvus-io/milvus,Milvus,Milvus,2025-07,3.358
+milvus-io/milvus,Milvus,Milvus,2025-08,3.829
+milvus-io/milvus,Milvus,Milvus,2025-09,4.517
+monetdb/monetdb,MonetDB,MonetDB,2024-10,1.699
+monetdb/monetdb,MonetDB,MonetDB,2024-11,1.636
+monetdb/monetdb,MonetDB,MonetDB,2024-12,1.693
+monetdb/monetdb,MonetDB,MonetDB,2025-01,1.625
+monetdb/monetdb,MonetDB,MonetDB,2025-02,1.671
+monetdb/monetdb,MonetDB,MonetDB,2025-03,1.615
+monetdb/monetdb,MonetDB,MonetDB,2025-04,1.57
+monetdb/monetdb,MonetDB,MonetDB,2025-05,1.578
+monetdb/monetdb,MonetDB,MonetDB,2025-06,1.565
+monetdb/monetdb,MonetDB,MonetDB,2025-07,1.607
+monetdb/monetdb,MonetDB,MonetDB,2025-08,1.614
+monetdb/monetdb,MonetDB,MonetDB,2025-09,1.554
+neo4j/neo4j,Neo4j,Neo4j,2024-10,42.506
+neo4j/neo4j,Neo4j,Neo4j,2024-11,42.699
+neo4j/neo4j,Neo4j,Neo4j,2024-12,43.073
+neo4j/neo4j,Neo4j,Neo4j,2025-01,43.69
+neo4j/neo4j,Neo4j,Neo4j,2025-02,45.344
+neo4j/neo4j,Neo4j,Neo4j,2025-03,46.147
+neo4j/neo4j,Neo4j,Neo4j,2025-04,47.59
+neo4j/neo4j,Neo4j,Neo4j,2025-05,47.912
+neo4j/neo4j,Neo4j,Neo4j,2025-06,51.333
+neo4j/neo4j,Neo4j,Neo4j,2025-07,54.636
+neo4j/neo4j,Neo4j,Neo4j,2025-08,54.473
+neo4j/neo4j,Neo4j,Neo4j,2025-09,53.781
+oceanbase/oceanbase,OceanBase,OceanBase,2024-10,2.034
+oceanbase/oceanbase,OceanBase,OceanBase,2024-11,2.018
+oceanbase/oceanbase,OceanBase,OceanBase,2024-12,2.02
+oceanbase/oceanbase,OceanBase,OceanBase,2025-01,2.363
+oceanbase/oceanbase,OceanBase,OceanBase,2025-02,2.361
+oceanbase/oceanbase,OceanBase,OceanBase,2025-03,2.327
+oceanbase/oceanbase,OceanBase,OceanBase,2025-04,2.324
+oceanbase/oceanbase,OceanBase,OceanBase,2025-05,2.425
+oceanbase/oceanbase,OceanBase,OceanBase,2025-06,2.431
+oceanbase/oceanbase,OceanBase,OceanBase,2025-07,2.515
+oceanbase/oceanbase,OceanBase,OceanBase,2025-08,2.821
+oceanbase/oceanbase,OceanBase,OceanBase,2025-09,3.04
+opengemini/opengemini,openGemini,openGemini,2024-10,0.005
+opengemini/opengemini,openGemini,openGemini,2024-11,0.005
+opengemini/opengemini,openGemini,openGemini,2024-12,0.018
+opengemini/opengemini,openGemini,openGemini,2025-01,0.005
+opengemini/opengemini,openGemini,openGemini,2025-02,0.005
+opengemini/opengemini,openGemini,openGemini,2025-03,0.036
+opengemini/opengemini,openGemini,openGemini,2025-04,0.005
+opengemini/opengemini,openGemini,openGemini,2025-05,0.018
+opengemini/opengemini,openGemini,openGemini,2025-06,0.005
+opengemini/opengemini,openGemini,openGemini,2025-07,0.04
+opengemini/opengemini,openGemini,openGemini,2025-08,0.005
+opengemini/opengemini,openGemini,openGemini,2025-09,0.005
+opensearch-project/opensearch,OpenSearch,OpenSearch,2024-10,17.311
+opensearch-project/opensearch,OpenSearch,OpenSearch,2024-11,17.601
+opensearch-project/opensearch,OpenSearch,OpenSearch,2024-12,17.184
+opensearch-project/opensearch,OpenSearch,OpenSearch,2025-01,16.789
+opensearch-project/opensearch,OpenSearch,OpenSearch,2025-02,16.85
+opensearch-project/opensearch,OpenSearch,OpenSearch,2025-03,16.972
+opensearch-project/opensearch,OpenSearch,OpenSearch,2025-04,17.193
+opensearch-project/opensearch,OpenSearch,OpenSearch,2025-05,17.377
+opensearch-project/opensearch,OpenSearch,OpenSearch,2025-06,16.896
+opensearch-project/opensearch,OpenSearch,OpenSearch,2025-07,17.299
+opensearch-project/opensearch,OpenSearch,OpenSearch,2025-08,18.483
+opensearch-project/opensearch,OpenSearch,OpenSearch,2025-09,19.931
+orientechnologies/orientdb,OrientDB,OrientDB,2024-10,3.032
+orientechnologies/orientdb,OrientDB,OrientDB,2024-11,2.973
+orientechnologies/orientdb,OrientDB,OrientDB,2024-12,2.868
+orientechnologies/orientdb,OrientDB,OrientDB,2025-01,2.792
+orientechnologies/orientdb,OrientDB,OrientDB,2025-02,2.727
+orientechnologies/orientdb,OrientDB,OrientDB,2025-03,2.722
+orientechnologies/orientdb,OrientDB,OrientDB,2025-04,2.715
+orientechnologies/orientdb,OrientDB,OrientDB,2025-05,2.709
+orientechnologies/orientdb,OrientDB,OrientDB,2025-06,2.709
+orientechnologies/orientdb,OrientDB,OrientDB,2025-07,2.644
+orientechnologies/orientdb,OrientDB,OrientDB,2025-08,2.641
+orientechnologies/orientdb,OrientDB,OrientDB,2025-09,2.587
+percona/percona-server,Percona Server for MySQL,Percona+Server+for+MySQL,2024-10,2.034
+percona/percona-server,Percona Server for MySQL,Percona+Server+for+MySQL,2024-11,2.075
+percona/percona-server,Percona Server for MySQL,Percona+Server+for+MySQL,2024-12,2.006
+percona/percona-server,Percona Server for MySQL,Percona+Server+for+MySQL,2025-01,1.948
+percona/percona-server,Percona Server for MySQL,Percona+Server+for+MySQL,2025-02,1.954
+percona/percona-server,Percona Server for MySQL,Percona+Server+for+MySQL,2025-03,1.945
+percona/percona-server,Percona Server for MySQL,Percona+Server+for+MySQL,2025-04,1.918
+percona/percona-server,Percona Server for MySQL,Percona+Server+for+MySQL,2025-05,1.937
+percona/percona-server,Percona Server for MySQL,Percona+Server+for+MySQL,2025-06,1.926
+percona/percona-server,Percona Server for MySQL,Percona+Server+for+MySQL,2025-07,1.91
+percona/percona-server,Percona Server for MySQL,Percona+Server+for+MySQL,2025-08,1.961
+percona/percona-server,Percona Server for MySQL,Percona+Server+for+MySQL,2025-09,2.114
+percona/percona-server-mongodb,Percona Server for MongoDB,Percona+Server+for+MongoDB,2024-10,0.472
+percona/percona-server-mongodb,Percona Server for MongoDB,Percona+Server+for+MongoDB,2024-11,0.496
+percona/percona-server-mongodb,Percona Server for MongoDB,Percona+Server+for+MongoDB,2024-12,0.487
+percona/percona-server-mongodb,Percona Server for MongoDB,Percona+Server+for+MongoDB,2025-01,0.435
+percona/percona-server-mongodb,Percona Server for MongoDB,Percona+Server+for+MongoDB,2025-02,0.429
+percona/percona-server-mongodb,Percona Server for MongoDB,Percona+Server+for+MongoDB,2025-03,0.474
+percona/percona-server-mongodb,Percona Server for MongoDB,Percona+Server+for+MongoDB,2025-04,0.465
+percona/percona-server-mongodb,Percona Server for MongoDB,Percona+Server+for+MongoDB,2025-05,0.475
+percona/percona-server-mongodb,Percona Server for MongoDB,Percona+Server+for+MongoDB,2025-06,0.462
+percona/percona-server-mongodb,Percona Server for MongoDB,Percona+Server+for+MongoDB,2025-07,0.512
+percona/percona-server-mongodb,Percona Server for MongoDB,Percona+Server+for+MongoDB,2025-08,0.486
+percona/percona-server-mongodb,Percona Server for MongoDB,Percona+Server+for+MongoDB,2025-09,0.498
+pingcap/tidb,TiDB,TiDB,2024-10,3.661
+pingcap/tidb,TiDB,TiDB,2024-11,3.63
+pingcap/tidb,TiDB,TiDB,2024-12,3.862
+pingcap/tidb,TiDB,TiDB,2025-01,3.679
+pingcap/tidb,TiDB,TiDB,2025-02,3.856
+pingcap/tidb,TiDB,TiDB,2025-03,3.742
+pingcap/tidb,TiDB,TiDB,2025-04,3.496
+pingcap/tidb,TiDB,TiDB,2025-05,3.584
+pingcap/tidb,TiDB,TiDB,2025-06,3.278
+pingcap/tidb,TiDB,TiDB,2025-07,3.628
+pingcap/tidb,TiDB,TiDB,2025-08,3.381
+pingcap/tidb,TiDB,TiDB,2025-09,3.42
+postgres/postgres,PostgreSQL,PostgreSQL,2024-10,652.156
+postgres/postgres,PostgreSQL,PostgreSQL,2024-11,654.336
+postgres/postgres,PostgreSQL,PostgreSQL,2024-12,666.372
+postgres/postgres,PostgreSQL,PostgreSQL,2025-01,663.405
+postgres/postgres,PostgreSQL,PostgreSQL,2025-02,659.618
+postgres/postgres,PostgreSQL,PostgreSQL,2025-03,663.424
+postgres/postgres,PostgreSQL,PostgreSQL,2025-04,667.246
+postgres/postgres,PostgreSQL,PostgreSQL,2025-05,674.315
+postgres/postgres,PostgreSQL,PostgreSQL,2025-06,680.651
+postgres/postgres,PostgreSQL,PostgreSQL,2025-07,680.886
+postgres/postgres,PostgreSQL,PostgreSQL,2025-08,671.255
+postgres/postgres,PostgreSQL,PostgreSQL,2025-09,657.171
+prestodb/presto,Presto,Presto,2024-10,7.052
+prestodb/presto,Presto,Presto,2024-11,6.56
+prestodb/presto,Presto,Presto,2024-12,6.544
+prestodb/presto,Presto,Presto,2025-01,6.579
+prestodb/presto,Presto,Presto,2025-02,6.309
+prestodb/presto,Presto,Presto,2025-03,6.118
+prestodb/presto,Presto,Presto,2025-04,6.287
+prestodb/presto,Presto,Presto,2025-05,6.375
+prestodb/presto,Presto,Presto,2025-06,6.158
+prestodb/presto,Presto,Presto,2025-07,6.047
+prestodb/presto,Presto,Presto,2025-08,6.035
+prestodb/presto,Presto,Presto,2025-09,6.481
+prometheus/prometheus,Prometheus,Prometheus,2024-10,7.31
+prometheus/prometheus,Prometheus,Prometheus,2024-11,6.921
+prometheus/prometheus,Prometheus,Prometheus,2024-12,7.123
+prometheus/prometheus,Prometheus,Prometheus,2025-01,6.853
+prometheus/prometheus,Prometheus,Prometheus,2025-02,6.687
+prometheus/prometheus,Prometheus,Prometheus,2025-03,6.379
+prometheus/prometheus,Prometheus,Prometheus,2025-04,6.482
+prometheus/prometheus,Prometheus,Prometheus,2025-05,6.766
+prometheus/prometheus,Prometheus,Prometheus,2025-06,6.957
+prometheus/prometheus,Prometheus,Prometheus,2025-07,7.124
+prometheus/prometheus,Prometheus,Prometheus,2025-08,7.306
+prometheus/prometheus,Prometheus,Prometheus,2025-09,7.923
+qdrant/qdrant,Qdrant,Qdrant,2024-10,1.691
+qdrant/qdrant,Qdrant,Qdrant,2024-11,1.765
+qdrant/qdrant,Qdrant,Qdrant,2024-12,1.849
+qdrant/qdrant,Qdrant,Qdrant,2025-01,1.933
+qdrant/qdrant,Qdrant,Qdrant,2025-02,1.937
+qdrant/qdrant,Qdrant,Qdrant,2025-03,2.034
+qdrant/qdrant,Qdrant,Qdrant,2025-04,2.23
+qdrant/qdrant,Qdrant,Qdrant,2025-05,2.281
+qdrant/qdrant,Qdrant,Qdrant,2025-06,2.418
+qdrant/qdrant,Qdrant,Qdrant,2025-07,2.538
+qdrant/qdrant,Qdrant,Qdrant,2025-08,2.925
+qdrant/qdrant,Qdrant,Qdrant,2025-09,3.437
+questdb/questdb,QuestDB,QuestDB,2024-10,2.833
+questdb/questdb,QuestDB,QuestDB,2024-11,2.906
+questdb/questdb,QuestDB,QuestDB,2024-12,2.98
+questdb/questdb,QuestDB,QuestDB,2025-01,3.003
+questdb/questdb,QuestDB,QuestDB,2025-02,3.093
+questdb/questdb,QuestDB,QuestDB,2025-03,3.097
+questdb/questdb,QuestDB,QuestDB,2025-04,3.124
+questdb/questdb,QuestDB,QuestDB,2025-05,3.255
+questdb/questdb,QuestDB,QuestDB,2025-06,3.237
+questdb/questdb,QuestDB,QuestDB,2025-07,3.241
+questdb/questdb,QuestDB,QuestDB,2025-08,3.053
+questdb/questdb,QuestDB,QuestDB,2025-09,3.506
+ravendb/ravendb,RavenDB,RavenDB,2024-10,2.696
+ravendb/ravendb,RavenDB,RavenDB,2024-11,2.7
+ravendb/ravendb,RavenDB,RavenDB,2024-12,2.591
+ravendb/ravendb,RavenDB,RavenDB,2025-01,2.497
+ravendb/ravendb,RavenDB,RavenDB,2025-02,2.528
+ravendb/ravendb,RavenDB,RavenDB,2025-03,2.532
+ravendb/ravendb,RavenDB,RavenDB,2025-04,2.504
+ravendb/ravendb,RavenDB,RavenDB,2025-05,2.593
+ravendb/ravendb,RavenDB,RavenDB,2025-06,2.65
+ravendb/ravendb,RavenDB,RavenDB,2025-07,2.586
+ravendb/ravendb,RavenDB,RavenDB,2025-08,2.52
+ravendb/ravendb,RavenDB,RavenDB,2025-09,2.424
+realm/realm-core,Realm,Realm,2024-10,7.047
+realm/realm-core,Realm,Realm,2024-11,7.054
+realm/realm-core,Realm,Realm,2024-12,7.121
+realm/realm-core,Realm,Realm,2025-01,6.992
+realm/realm-core,Realm,Realm,2025-02,6.742
+realm/realm-core,Realm,Realm,2025-03,6.622
+realm/realm-core,Realm,Realm,2025-04,6.761
+realm/realm-core,Realm,Realm,2025-05,6.803
+realm/realm-core,Realm,Realm,2025-06,6.597
+realm/realm-core,Realm,Realm,2025-07,6.454
+realm/realm-core,Realm,Realm,2025-08,6.43
+realm/realm-core,Realm,Realm,2025-09,6.816
+redis/redis,Redis,Redis,2024-10,149.63
+redis/redis,Redis,Redis,2024-11,148.642
+redis/redis,Redis,Redis,2024-12,150.271
+redis/redis,Redis,Redis,2025-01,153.356
+redis/redis,Redis,Redis,2025-02,157.909
+redis/redis,Redis,Redis,2025-03,155.361
+redis/redis,Redis,Redis,2025-04,154.111
+redis/redis,Redis,Redis,2025-05,152.189
+redis/redis,Redis,Redis,2025-06,151.722
+redis/redis,Redis,Redis,2025-07,149.716
+redis/redis,Redis,Redis,2025-08,147.19
+redis/redis,Redis,Redis,2025-09,145.174
+risingwavelabs/risingwave,RisingWave,RisingWave,2024-10,0.601
+risingwavelabs/risingwave,RisingWave,RisingWave,2024-11,0.632
+risingwavelabs/risingwave,RisingWave,RisingWave,2024-12,0.615
+risingwavelabs/risingwave,RisingWave,RisingWave,2025-01,0.611
+risingwavelabs/risingwave,RisingWave,RisingWave,2025-02,0.581
+risingwavelabs/risingwave,RisingWave,RisingWave,2025-03,0.644
+risingwavelabs/risingwave,RisingWave,RisingWave,2025-04,0.724
+risingwavelabs/risingwave,RisingWave,RisingWave,2025-05,0.747
+risingwavelabs/risingwave,RisingWave,RisingWave,2025-06,0.722
+risingwavelabs/risingwave,RisingWave,RisingWave,2025-07,0.708
+risingwavelabs/risingwave,RisingWave,RisingWave,2025-08,0.675
+risingwavelabs/risingwave,RisingWave,RisingWave,2025-09,0.641
+starrocks/starrocks,StarRocks,StarRocks,2024-10,0.964
+starrocks/starrocks,StarRocks,StarRocks,2024-11,0.873
+starrocks/starrocks,StarRocks,StarRocks,2024-12,1.07
+starrocks/starrocks,StarRocks,StarRocks,2025-01,1.135
+starrocks/starrocks,StarRocks,StarRocks,2025-02,1.065
+starrocks/starrocks,StarRocks,StarRocks,2025-03,1.005
+starrocks/starrocks,StarRocks,StarRocks,2025-04,1.082
+starrocks/starrocks,StarRocks,StarRocks,2025-05,0.94
+starrocks/starrocks,StarRocks,StarRocks,2025-06,1.111
+starrocks/starrocks,StarRocks,StarRocks,2025-07,1.309
+starrocks/starrocks,StarRocks,StarRocks,2025-08,1.283
+starrocks/starrocks,StarRocks,StarRocks,2025-09,1.33
+surrealdb/surrealdb,SurrealDB,SurrealDB,2024-10,1.068
+surrealdb/surrealdb,SurrealDB,SurrealDB,2024-11,1.008
+surrealdb/surrealdb,SurrealDB,SurrealDB,2024-12,0.977
+surrealdb/surrealdb,SurrealDB,SurrealDB,2025-01,0.968
+surrealdb/surrealdb,SurrealDB,SurrealDB,2025-02,0.949
+surrealdb/surrealdb,SurrealDB,SurrealDB,2025-03,0.996
+surrealdb/surrealdb,SurrealDB,SurrealDB,2025-04,1.009
+surrealdb/surrealdb,SurrealDB,SurrealDB,2025-05,1.083
+surrealdb/surrealdb,SurrealDB,SurrealDB,2025-06,1.067
+surrealdb/surrealdb,SurrealDB,SurrealDB,2025-07,1.057
+surrealdb/surrealdb,SurrealDB,SurrealDB,2025-08,1.142
+surrealdb/surrealdb,SurrealDB,SurrealDB,2025-09,1.279
+taosdata/tdengine,TDengine,TDengine,2024-10,2.466
+taosdata/tdengine,TDengine,TDengine,2024-11,2.275
+taosdata/tdengine,TDengine,TDengine,2024-12,2.113
+taosdata/tdengine,TDengine,TDengine,2025-01,1.957
+taosdata/tdengine,TDengine,TDengine,2025-02,1.814
+taosdata/tdengine,TDengine,TDengine,2025-03,1.757
+taosdata/tdengine,TDengine,TDengine,2025-04,1.664
+taosdata/tdengine,TDengine,TDengine,2025-05,1.683
+taosdata/tdengine,TDengine,TDengine,2025-06,1.554
+taosdata/tdengine,TDengine,TDengine,2025-07,1.55
+taosdata/tdengine,TDengine,TDengine,2025-08,1.623
+taosdata/tdengine,TDengine,TDengine,2025-09,1.821
+tarantool/tarantool,Tarantool,Tarantool,2024-10,1.581
+tarantool/tarantool,Tarantool,Tarantool,2024-11,1.501
+tarantool/tarantool,Tarantool,Tarantool,2024-12,1.437
+tarantool/tarantool,Tarantool,Tarantool,2025-01,1.377
+tarantool/tarantool,Tarantool,Tarantool,2025-02,1.33
+tarantool/tarantool,Tarantool,Tarantool,2025-03,1.399
+tarantool/tarantool,Tarantool,Tarantool,2025-04,1.465
+tarantool/tarantool,Tarantool,Tarantool,2025-05,1.421
+tarantool/tarantool,Tarantool,Tarantool,2025-06,1.377
+tarantool/tarantool,Tarantool,Tarantool,2025-07,1.337
+tarantool/tarantool,Tarantool,Tarantool,2025-08,1.288
+tarantool/tarantool,Tarantool,Tarantool,2025-09,1.373
+timescale/timescaledb,TimescaleDB,TimescaleDB,2024-10,3.794
+timescale/timescaledb,TimescaleDB,TimescaleDB,2024-11,3.676
+timescale/timescaledb,TimescaleDB,TimescaleDB,2024-12,3.745
+timescale/timescaledb,TimescaleDB,TimescaleDB,2025-01,3.561
+timescale/timescaledb,TimescaleDB,TimescaleDB,2025-02,3.624
+timescale/timescaledb,TimescaleDB,TimescaleDB,2025-03,3.485
+timescale/timescaledb,TimescaleDB,TimescaleDB,2025-04,3.593
+timescale/timescaledb,TimescaleDB,TimescaleDB,2025-05,3.594
+timescale/timescaledb,TimescaleDB,TimescaleDB,2025-06,3.635
+timescale/timescaledb,TimescaleDB,TimescaleDB,2025-07,3.771
+timescale/timescaledb,TimescaleDB,TimescaleDB,2025-08,3.911
+timescale/timescaledb,TimescaleDB,TimescaleDB,2025-09,4.289
+trinodb/trino,Trino,Trino,2024-10,5.472
+trinodb/trino,Trino,Trino,2024-11,5.352
+trinodb/trino,Trino,Trino,2024-12,5.384
+trinodb/trino,Trino,Trino,2025-01,5.401
+trinodb/trino,Trino,Trino,2025-02,5.058
+trinodb/trino,Trino,Trino,2025-03,5.125
+trinodb/trino,Trino,Trino,2025-04,5.184
+trinodb/trino,Trino,Trino,2025-05,5.337
+trinodb/trino,Trino,Trino,2025-06,5.378
+trinodb/trino,Trino,Trino,2025-07,5.264
+trinodb/trino,Trino,Trino,2025-08,5.833
+trinodb/trino,Trino,Trino,2025-09,6.583
+typedb/typedb,TypeDB,TypeDB,2024-10,0.66
+typedb/typedb,TypeDB,TypeDB,2024-11,0.632
+typedb/typedb,TypeDB,TypeDB,2024-12,0.616
+typedb/typedb,TypeDB,TypeDB,2025-01,0.606
+typedb/typedb,TypeDB,TypeDB,2025-02,0.589
+typedb/typedb,TypeDB,TypeDB,2025-03,0.635
+typedb/typedb,TypeDB,TypeDB,2025-04,0.58
+typedb/typedb,TypeDB,TypeDB,2025-05,0.592
+typedb/typedb,TypeDB,TypeDB,2025-06,0.565
+typedb/typedb,TypeDB,TypeDB,2025-07,0.615
+typedb/typedb,TypeDB,TypeDB,2025-08,0.556
+typedb/typedb,TypeDB,TypeDB,2025-09,0.633
+typesense/typesense,Typesense,Typesense,2024-10,0.979
+typesense/typesense,Typesense,Typesense,2024-11,0.803
+typesense/typesense,Typesense,Typesense,2024-12,0.821
+typesense/typesense,Typesense,Typesense,2025-01,0.791
+typesense/typesense,Typesense,Typesense,2025-02,0.84
+typesense/typesense,Typesense,Typesense,2025-03,0.809
+typesense/typesense,Typesense,Typesense,2025-04,0.807
+typesense/typesense,Typesense,Typesense,2025-05,0.925
+typesense/typesense,Typesense,Typesense,2025-06,0.85
+typesense/typesense,Typesense,Typesense,2025-07,0.877
+typesense/typesense,Typesense,Typesense,2025-08,0.96
+typesense/typesense,Typesense,Typesense,2025-09,1.247
+valkey-io/valkey,Valkey,Valkey,2025-02,0.998
+valkey-io/valkey,Valkey,Valkey,2025-03,1.074
+valkey-io/valkey,Valkey,Valkey,2025-04,1.139
+valkey-io/valkey,Valkey,Valkey,2025-05,1.352
+valkey-io/valkey,Valkey,Valkey,2025-06,1.496
+valkey-io/valkey,Valkey,Valkey,2025-07,1.467
+valkey-io/valkey,Valkey,Valkey,2025-08,1.497
+valkey-io/valkey,Valkey,Valkey,2025-09,1.731
+vdaas/vald,Vald,Vald,2024-10,0.309
+vdaas/vald,Vald,Vald,2024-11,0.27
+vdaas/vald,Vald,Vald,2024-12,0.302
+vdaas/vald,Vald,Vald,2025-01,0.268
+vdaas/vald,Vald,Vald,2025-02,0.24
+vdaas/vald,Vald,Vald,2025-03,0.248
+vdaas/vald,Vald,Vald,2025-04,0.3
+vdaas/vald,Vald,Vald,2025-05,0.271
+vdaas/vald,Vald,Vald,2025-06,0.265
+vdaas/vald,Vald,Vald,2025-07,0.241
+vdaas/vald,Vald,Vald,2025-08,0.287
+vdaas/vald,Vald,Vald,2025-09,0.261
+vespa-engine/vespa,Vespa,Vespa,2024-10,0.611
+vespa-engine/vespa,Vespa,Vespa,2024-11,0.607
+vespa-engine/vespa,Vespa,Vespa,2024-12,0.63
+vespa-engine/vespa,Vespa,Vespa,2025-01,0.679
+vespa-engine/vespa,Vespa,Vespa,2025-02,0.687
+vespa-engine/vespa,Vespa,Vespa,2025-03,0.757
+vespa-engine/vespa,Vespa,Vespa,2025-04,0.834
+vespa-engine/vespa,Vespa,Vespa,2025-05,0.89
+vespa-engine/vespa,Vespa,Vespa,2025-06,0.886
+vespa-engine/vespa,Vespa,Vespa,2025-07,0.864
+vespa-engine/vespa,Vespa,Vespa,2025-08,0.938
+vespa-engine/vespa,Vespa,Vespa,2025-09,1.012
+victoriametrics/victoriametrics,VictoriaMetrics,VictoriaMetrics,2024-10,1.291
+victoriametrics/victoriametrics,VictoriaMetrics,VictoriaMetrics,2024-11,1.28
+victoriametrics/victoriametrics,VictoriaMetrics,VictoriaMetrics,2024-12,1.245
+victoriametrics/victoriametrics,VictoriaMetrics,VictoriaMetrics,2025-01,1.328
+victoriametrics/victoriametrics,VictoriaMetrics,VictoriaMetrics,2025-02,1.367
+victoriametrics/victoriametrics,VictoriaMetrics,VictoriaMetrics,2025-03,1.383
+victoriametrics/victoriametrics,VictoriaMetrics,VictoriaMetrics,2025-04,1.345
+victoriametrics/victoriametrics,VictoriaMetrics,VictoriaMetrics,2025-05,1.546
+victoriametrics/victoriametrics,VictoriaMetrics,VictoriaMetrics,2025-06,1.356
+victoriametrics/victoriametrics,VictoriaMetrics,VictoriaMetrics,2025-07,1.547
+victoriametrics/victoriametrics,VictoriaMetrics,VictoriaMetrics,2025-08,1.505
+victoriametrics/victoriametrics,VictoriaMetrics,VictoriaMetrics,2025-09,1.753
+vitessio/vitess,Vitess,Vitess,2024-10,0.876
+vitessio/vitess,Vitess,Vitess,2024-11,0.941
+vitessio/vitess,Vitess,Vitess,2024-12,0.918
+vitessio/vitess,Vitess,Vitess,2025-01,0.893
+vitessio/vitess,Vitess,Vitess,2025-02,0.908
+vitessio/vitess,Vitess,Vitess,2025-03,0.932
+vitessio/vitess,Vitess,Vitess,2025-04,0.916
+vitessio/vitess,Vitess,Vitess,2025-05,0.99
+vitessio/vitess,Vitess,Vitess,2025-06,1.044
+vitessio/vitess,Vitess,Vitess,2025-07,1.029
+vitessio/vitess,Vitess,Vitess,2025-08,1.129
+vitessio/vitess,Vitess,Vitess,2025-09,1.256
+xtdb/xtdb,XTDB,XTDB,2024-10,0.145
+xtdb/xtdb,XTDB,XTDB,2024-11,0.15
+xtdb/xtdb,XTDB,XTDB,2024-12,0.168
+xtdb/xtdb,XTDB,XTDB,2025-01,0.178
+xtdb/xtdb,XTDB,XTDB,2025-02,0.184
+xtdb/xtdb,XTDB,XTDB,2025-03,0.189
+xtdb/xtdb,XTDB,XTDB,2025-04,0.198
+xtdb/xtdb,XTDB,XTDB,2025-05,0.196
+xtdb/xtdb,XTDB,XTDB,2025-06,0.204
+xtdb/xtdb,XTDB,XTDB,2025-07,0.204
+xtdb/xtdb,XTDB,XTDB,2025-08,0.201
+xtdb/xtdb,XTDB,XTDB,2025-09,0.212
+ydb-platform/ydb,YDB,YDB,2024-10,0.395
+ydb-platform/ydb,YDB,YDB,2024-11,0.389
+ydb-platform/ydb,YDB,YDB,2024-12,0.376
+ydb-platform/ydb,YDB,YDB,2025-01,0.386
+ydb-platform/ydb,YDB,YDB,2025-02,0.367
+ydb-platform/ydb,YDB,YDB,2025-03,0.488
+ydb-platform/ydb,YDB,YDB,2025-04,0.571
+ydb-platform/ydb,YDB,YDB,2025-05,0.63
+ydb-platform/ydb,YDB,YDB,2025-06,0.577
+ydb-platform/ydb,YDB,YDB,2025-07,0.514
+ydb-platform/ydb,YDB,YDB,2025-08,0.419
+ydb-platform/ydb,YDB,YDB,2025-09,0.431
+ytsaurus/ytsaurus,YTsaurus,YTsaurus,2024-10,0.157
+ytsaurus/ytsaurus,YTsaurus,YTsaurus,2024-11,0.16
+ytsaurus/ytsaurus,YTsaurus,YTsaurus,2024-12,0.163
+ytsaurus/ytsaurus,YTsaurus,YTsaurus,2025-01,0.174
+ytsaurus/ytsaurus,YTsaurus,YTsaurus,2025-02,0.185
+ytsaurus/ytsaurus,YTsaurus,YTsaurus,2025-03,0.227
+ytsaurus/ytsaurus,YTsaurus,YTsaurus,2025-04,0.207
+ytsaurus/ytsaurus,YTsaurus,YTsaurus,2025-05,0.218
+ytsaurus/ytsaurus,YTsaurus,YTsaurus,2025-06,0.22
+ytsaurus/ytsaurus,YTsaurus,YTsaurus,2025-07,0.281
+ytsaurus/ytsaurus,YTsaurus,YTsaurus,2025-08,0.23
+ytsaurus/ytsaurus,YTsaurus,YTsaurus,2025-09,0.228
+yugabyte/yugabyte-db,YugabyteDB,YugabyteDB,2024-10,2.458
+yugabyte/yugabyte-db,YugabyteDB,YugabyteDB,2024-11,2.364
+yugabyte/yugabyte-db,YugabyteDB,YugabyteDB,2024-12,2.45
+yugabyte/yugabyte-db,YugabyteDB,YugabyteDB,2025-01,2.346
+yugabyte/yugabyte-db,YugabyteDB,YugabyteDB,2025-02,2.249
+yugabyte/yugabyte-db,YugabyteDB,YugabyteDB,2025-03,2.215
+yugabyte/yugabyte-db,YugabyteDB,YugabyteDB,2025-04,2.227
+yugabyte/yugabyte-db,YugabyteDB,YugabyteDB,2025-05,2.197
+yugabyte/yugabyte-db,YugabyteDB,YugabyteDB,2025-06,2.092
+yugabyte/yugabyte-db,YugabyteDB,YugabyteDB,2025-07,2.029
+yugabyte/yugabyte-db,YugabyteDB,YugabyteDB,2025-08,2.001
+yugabyte/yugabyte-db,YugabyteDB,YugabyteDB,2025-09,2.126
