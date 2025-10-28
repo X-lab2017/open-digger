@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>国家数据热力图 (2016-2025)</title>
+    <!-- 引入Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- 引入Font Awesome -->
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- 引入ECharts -->
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.4.3/dist/echarts.min.js"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#165DFF',
+                        secondary: '#6B7280',
+                        accent: '#3B82F6',
+                        light: '#F3F4F6',
+                        dark: '#1F2937'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .content-auto {
+                content-visibility: auto;
+            }
+
+            .chart-container {
+                height: calc(100vh - 12rem);
+            }
+
+            @media (max-width: 768px) {
+                .chart-container {
+                    height: calc(100vh - 16rem);
+                }
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans text-dark">
+<div class="container mx-auto px-4 py-8 max-w-7xl">
+    <!-- 标题区域 -->
+    <header class="mb-8 text-center">
+        <h1 class="text-[clamp(1.8rem,4vw,2.8rem)] font-bold text-dark mb-2">国家数据热力图分析</h1>
+        <p class="text-secondary text-lg">2016-2025年各国数据分布可视化</p>
+    </header>
+
+    <!-- 图表容器 -->
+    <div class="bg-white rounded-xl shadow-lg p-4 md:p-6 mb-8 transition-all duration-300 hover:shadow-xl">
+        <div id="heatmap" class="chart-container w-full"></div>
+    </div>
+
+    <!-- 信息面板 -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+        <div class="bg-white rounded-xl shadow p-5 transition-all duration-300 hover:shadow-md">
+            <div class="flex items-center mb-3">
+                <i class="fa fa-info-circle text-primary text-xl mr-3"></i>
+                <h3 class="font-semibold text-lg">颜色说明</h3>
+            </div>
+            <p class="text-secondary">50以下值为蓝色系，50-150值为黄色系过渡，150以上值逐渐向红色过渡，值越高红色越深。</p>
+        </div>
+        <div class="bg-white rounded-xl shadow p-5 transition-all duration-300 hover:shadow-md">
+            <div class="flex items-center mb-3">
+                <i class="fa fa-hand-pointer-o text-primary text-xl mr-3"></i>
+                <h3 class="font-semibold text-lg">交互提示</h3>
+            </div>
+            <p class="text-secondary">鼠标悬停在热力图上可查看详细信息，支持缩放和平移操作以查看更多细节。</p>
+        </div>
+        <div class="bg-white rounded-xl shadow p-5 transition-all duration-300 hover:shadow-md">
+            <div class="flex items-center mb-3">
+                <i class="fa fa-line-chart text-primary text-xl mr-3"></i>
+                <h3 class="font-semibold text-lg">趋势分析</h3>
+            </div>
+            <p class="text-secondary">
+                美国多数年份数据超过150（红色系），德国近年数据接近100（黄色系），其他国家多在蓝色系区域。</p>
+        </div>
+    </div>
+
+    <!-- 页脚 -->
+    <footer class="text-center text-secondary text-sm py-4">
+        <p>© 2025 数据可视化展示 | 使用ECharts构建</p>
+    </footer>
+</div>
+
+<script>
+    // 初始化图表
+    const chartDom = document.getElementById('heatmap');
+    const myChart = echarts.init(chartDom);
+    let option;
+
+    // 数据
+    const years = [2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025];
+
+    const countryTotalMap = {
+        "美国": [136, 211, 229, 223, 286, 290, 212, 254, 299, 310],
+        "德国": [25, 55, 64, 68, 68, 88, 75, 91, 103, 121],
+        "中国": [3, 30, 25, 32, 32, 46, 40, 71, 71, 94],
+        "英国": [18, 34, 44, 35, 48, 66, 51, 65, 68, 59],
+        "法国": [14, 25, 32, 35, 50, 59, 33, 43, 48, 42],
+        "加拿大": [22, 33, 38, 33, 32, 44, 35, 44, 43, 42],
+        "荷兰": [7, 9, 18, 15, 23, 30, 28, 33, 38, 33],
+        "瑞士": [10, 19, 22, 23, 32, 32, 21, 21, 28, 31],
+        "澳大利亚": [5, 8, 14, 15, 16, 20, 19, 29, 24, 30],
+        "日本": [11, 14, 16, 10, 19, 23, 18, 20, 27, 24]
+    };
+
+
+    // 处理数据格式以适应热力图
+    const countries = Object.keys(countryTotalMap);
+    const data = [];
+
+    countries.forEach((country, countryIndex) => {
+        const values = countryTotalMap[country];
+        values.forEach((value, yearIndex) => {
+            data.push([yearIndex, countryIndex, value]);
+        });
+    });
+
+    // 关键阈值和最大值（调整阈值适配黄色过渡）
+    const lowThreshold = 50;  // 蓝色系上限
+    const highThreshold = 150; // 红色系下限
+    const maxValue = 310;      // 最大值
+
+    // 为了增强小数值的对比度，使用对数刻度转换
+    function logTransform(value) {
+        return Math.log(value + 1);
+    }
+
+    // 转换所有数据用于视觉映射
+    const transformedData = data.map(item => [
+        item[0],
+        item[1],
+        logTransform(item[2])
+    ]);
+
+    const transformedLow = logTransform(lowThreshold);  // 50的转换值（蓝→黄过渡点）
+    const transformedHigh = logTransform(highThreshold); // 150的转换值（黄→红过渡点）
+    const transformedMax = logTransform(maxValue);       // 310的转换值
+
+    // 配置图表选项
+    option = {
+        tooltip: {
+            position: 'top',
+            formatter: function (params) {
+                return `${countries[params.data[1]]}<br/>${years[params.data[0]]}: ${data.find(
+                    d => d[0] === params.data[0] && d[1] === params.data[1]
+                )[2]}`;
+            }
+        },
+        grid: {
+            left: '15%',
+            right: '15%',
+            bottom: '15%',
+            top: '10%',
+            containLabel: true
+        },
+        xAxis: {
+            type: 'category',
+            name: '年份',
+            nameLocation: 'middle',
+            nameGap: 30,
+            nameTextStyle: {
+                fontSize: 16,
+                fontWeight: 'bold',
+                color: '#333333'
+            },
+            data: years,
+            axisLabel: {
+                interval: 0,
+                rotate: 30,
+                color: '#333333',
+                fontSize: 12,
+                fontWeight: 'bold'
+            },
+            axisLine: {
+                lineStyle: {
+                    color: '#E5E7EB'
+                }
+            },
+            splitLine: {
+                show: false
+            }
+        },
+        yAxis: {
+            type: 'category',
+            name: '国家',
+            nameLocation: 'middle',
+            nameGap: 50,
+            nameTextStyle: {
+                fontSize: 16,
+                fontWeight: 'bold',
+                color: '#333333'
+            },
+            data: countries,
+            axisLabel: {
+                color: '#333333',
+                fontSize: 12,
+                fontWeight: 'bold'
+            },
+            axisLine: {
+                lineStyle: {
+                    color: '#E5E7EB'
+                }
+            },
+            splitLine: {
+                show: false
+            }
+        },
+        visualMap: {
+            min: 0,
+            max: transformedMax,
+            calculable: true,
+            orient: 'vertical',
+            right: '5%',
+            top: 'center',
+            inverse: true,
+            textStyle: {
+                color: '#6B7280',
+                fontWeight: 'bold'
+            },
+            // 核心修改：加入黄色过渡色，实现「深蓝→浅蓝→浅黄→中黄→浅红→深红」渐变
+            inRange: {
+                color: [
+                    '#0A2463',  // 深蓝色（最低值，<20）
+                    '#1E3A8A',  // 深蓝色（20-30）
+                    '#3B82F6',  // 蓝色（30-40）
+                    '#60A5FA',  // 中蓝色（40-50）
+                    // '#93C5FD',  // 浅蓝色（50-80，蓝→黄过渡起点）
+                    '#FFF9C4',  // 浅黄色（80-100，核心过渡色1）
+                    '#FFE066',  // 中黄色（100-150，核心过渡色2）
+                    // '#FFCC80',  // 浅橙红（150-180，黄→红过渡起点）
+                    // '#F87171',  // 中红色（180-220）
+                    // '#EF4444',  // 红色（220-260）
+                    '#DC2626',  // 深红色（260-300）
+                    '#991B1B'   // 最深红色（>300，最高值）
+                ]
+            },
+            // 图例显示原始数值，确保关键阈值（50/100/150/310）准确显示
+            formatter: function (value) {
+                const originalValue = Math.exp(value) - 1;
+                // 高亮显示关键过渡阈值
+                if (Math.abs(originalValue - lowThreshold) <= 5) return 50;
+                if (Math.abs(originalValue - 100) <= 5) return 100;
+                if (Math.abs(originalValue - highThreshold) <= 5) return 150;
+                return value === transformedMax ? 310 : Math.round(originalValue);
+            },
+            borderColor: '#E5E7EB',
+            backgroundColor: 'rgba(255, 255, 255, 0.8)',
+            borderRadius: 6,
+            padding: [15, 8]
+        },
+        series: [
+            {
+                name: '数据分布',
+                type: 'heatmap',
+                data: transformedData,
+                label: {
+                    show: true,
+                    fontSize: 14,
+                    fontWeight: 'bold',
+                    color: '#FFFFFF',
+                    textBorderColor: '#000000',
+                    textBorderWidth: 1.5,
+                    formatter: function (params) {
+                        return data.find(
+                            d => d[0] === params.data[0] && d[1] === params.data[1]
+                        )[2];
+                    }
+                },
+                emphasis: {
+                    itemStyle: {
+                        shadowBlur: 10,
+                        shadowColor: 'rgba(0, 0, 0, 0.3)'
+                    }
+                },
+                itemStyle: {
+                    borderRadius: 4,
+                    borderWidth: 1,
+                    borderColor: '#fff'
+                },
+                symbolSize: [45, 35]
+            }
+        ],
+        animation: true,
+        animationDuration: 1000,
+        animationEasing: 'cubicOut'
+    };
+
+    // 设置图表选项
+    option && myChart.setOption(option);
+
+    // 响应窗口大小变化
+    window.addEventListener('resize', function () {
+        myChart.resize();
+    });
+</script>
+</body>
+</html>

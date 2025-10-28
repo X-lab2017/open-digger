@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>技术领域影响力散点图（带阴影效果）</title>
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.4.3/dist/echarts.min.js"></script>
+    <style>
+        body { margin: 0; padding: 20px; font-family: Arial, sans-serif; background-color: #f9f9f9; }
+        #chartContainer { width: 1000px; height: 800px; margin: 0 auto; border: 1px solid #eee; box-shadow: 0 4px 15px rgba(0,0,0,0.05); background-color: #fff; }
+        .description { text-align: center; margin: 10px 0 20px; color: #333; font-size: 24px; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <h3 class="description">技术领域影响力分布</h3>
+    <div id="chartContainer"></div>
+
+    <script>
+        const chart = echarts.init(document.getElementById('chartContainer'));
+
+        // 技术领域原始数据
+        const techData = [
+            { name: 'AI 与大模型', totalImpact: 535299, projectSize: 2506, avgImpact: 214 },
+            { name: '云基础设施', totalImpact: 333165, projectSize: 2039, avgImpact: 163 },
+            { name: '前端与交互式', totalImpact: 314618, projectSize: 2224, avgImpact: 141 },
+            { name: '编程语言与开发', totalImpact: 291487, projectSize: 1375, avgImpact: 212 },
+            { name: '应用与解决方案', totalImpact: 218783, projectSize: 1492, avgImpact: 147 },
+            { name: '区块链与 Web3', totalImpact: 167408, projectSize: 1086, avgImpact: 154 },
+            { name: '数据库系统', totalImpact: 129806, projectSize: 619, avgImpact: 210 },
+            { name: 'RISC-V 与硬件', totalImpact: 112327, projectSize: 544, avgImpact: 207 },
+            { name: '大数据与数据工程', totalImpact: 111791, projectSize: 424, avgImpact: 264 },
+            { name: '物联网与边缘计算', totalImpact: 86347, projectSize: 341, avgImpact: 253 },
+            { name: '操作系统', totalImpact: 58869, projectSize: 322, avgImpact: 183 },
+            { name: '工业软件', totalImpact: 29780, projectSize: 131, avgImpact: 227 }
+        ];
+
+        // 各技术领域独立颜色
+        const colors = [
+            '#FF5733', '#33FF57', '#3357FF', '#F3FF33', '#FF33F3', '#33FFF3',
+            '#F333FF', '#FF9933', '#9933FF', '#33FF99', '#FF3333', '#3333FF'
+        ];
+
+        // 关键参数
+        const maxAvgImpact = 270;
+        const minAvgImpact = 130;
+        const maxProjectSize = Math.max(...techData.map(item => item.projectSize));
+        const maxTotalImpact = Math.max(...techData.map(item => item.totalImpact));
+
+        // 数据处理：气泡大小放大3倍
+        const data = techData.map((item, index) => {
+            const size = (8 + (item.totalImpact / maxTotalImpact) * 27) * 4;
+            return {
+                name: item.name,
+                value: [item.projectSize, item.avgImpact, item.totalImpact],
+                symbolSize: size,
+                itemStyle: {
+                    opacity: 0.75,  // 主透明度，略微降低增加通透感
+                    color: colors[index],
+                    shadowBlur: 15,  // 阴影模糊程度
+                    shadowColor: 'rgba(0, 0, 0, 0.3)',  // 阴影颜色和透明度
+                    shadowOffsetX: 2,  // 阴影X偏移
+                    shadowOffsetY: 3   // 阴影Y偏移
+                }
+            };
+        });
+
+        // 图表配置项
+        const option = {
+            // title: {
+            //     text: '技术领域影响力分析',
+            //     left: 'center',
+            //     textStyle: { fontSize: 24, fontWeight: 'bold' },
+            //     itemStyle: { shadowBlur: 10 }
+            // },
+            tooltip: {
+                trigger: 'item',
+                formatter: (params) => `
+                    <strong>${params.name}</strong><br>
+                    总体影响力: ${params.value[2].toLocaleString()}<br>
+                    项目规模: ${params.value[0]}<br>
+                    平均项目影响力: ${params.value[1]}
+                `,
+                textStyle: { fontSize: 16, fontWeight: 'bold' },
+                backgroundColor: 'rgba(255, 255, 255, 0.9)',  // 提示框半透明背景
+                borderColor: '#ddd',
+                borderWidth: 1,
+                shadowBlur: 10,
+                shadowColor: 'rgba(0, 0, 0, 0.1)'
+            },
+            xAxis: {
+                type: 'value',
+                name: '项目规模',
+                nameTextStyle: { fontSize: 18, fontWeight: 'bold', padding: [0,0,20,0] },
+                min: 0,
+                max: maxProjectSize,
+                splitLine: { show: true, lineStyle: { opacity: 0.3 } },  // 网格线半透明
+                axisLine: { show: true },
+                axisLabel: { fontSize: 14, fontWeight: 'bold' },
+                axisTick: { show: true }
+            },
+            yAxis: {
+                type: 'value',
+                name: '平均项目影响力',
+                nameTextStyle: { fontSize: 18, fontWeight: 'bold', padding: [0,0,0,20] },
+                min: minAvgImpact,
+                max: maxAvgImpact,
+                splitLine: { show: true, lineStyle: { opacity: 0.3 } },  // 网格线半透明
+                axisLine: { show: true },
+                axisLabel: { fontSize: 14, fontWeight: 'bold' },
+                axisTick: { show: true }
+            },
+            series: [{
+                type: 'scatter',
+                data: data,
+                label: {
+                    show: true,
+                    position: 'inside',
+                    formatter: (p) => p.name,
+                    fontSize: 14,
+                    fontWeight: 'bold',
+                    color: '#333',
+                    align: 'center',
+                    verticalAlign: 'middle',
+                    shadowBlur: 5,  // 文字阴影
+                    shadowColor: 'rgba(0, 0, 0, 0.3)'
+                },
+                emphasis: {
+                    scale: true,
+                    itemStyle: {
+                        shadowBlur: 20,  // 悬停时增强阴影效果
+                        shadowColor: 'rgba(0,0,0,0.5)',
+                        opacity: 0.9  // 悬停时略微提高透明度
+                    }
+                }
+            }]
+        };
+
+        chart.setOption(option);
+        window.addEventListener('resize', () => chart.resize());
+    </script>
+</body>
+</html>

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2024年全球开源项目贡献度桑基图（完整版）</title>
+    <!-- 引入Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- 引入Font Awesome -->
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- 引入ECharts -->
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.4.3/dist/echarts.min.js"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#165DFF',
+                        secondary: '#36CFC9',
+                        accent: '#722ED1',
+                        neutral: '#1F2937',
+                        light: '#F9FAFB'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+<div class="container mx-auto px-4 py-8 max-w-7xl">
+<!--    <header class="mb-10 text-center">-->
+<!--        <h1 class="text-[clamp(1.8rem,4vw,2.8rem)] font-bold text-neutral mb-3">2024年全球开源项目贡献度分析</h1>-->
+<!--        <p class="text-gray-600 max-w-3xl mx-auto text-[clamp(1rem,1.5vw,1.1rem)]">-->
+<!--            桑基图展示各国间开源项目贡献度流动，左侧为贡献输出国家，右侧为包括中美在内的10个国家的贡献输入-->
+<!--        </p>-->
+<!--    </header>-->
+
+    <div class="bg-white rounded-xl p-4 md:p-6 card-shadow mb-8">
+        <div class="w-full h-[700px] relative">
+            <div id="sankeyChart" class="w-full h-full"></div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function initSankeyChart() {
+        // 数据
+        const usProjectContributions = {
+            'US': 200492.15,
+            'CN': 43542.15,
+            'DE': 33845.51,
+            'GB': 28720.74,
+            'CA': 27072.93,
+            'IN': 20866.43,
+            'FR': 17518.46,
+            'NL': 12014.88,
+            'PL': 9663.52,
+            'CH': 9049.63
+        };
+        const cnProjectContributions = {
+            'CN': 44698.58,
+            'US': 3241.15,
+            'CA': 774.11,
+            'DE': 769.57,
+            'SG': 767.51,
+            'IN': 727.49,
+            'CZ': 680.86,
+            'BG': 332.93,
+            'SE': 326.98,
+            'GB': 295.21
+        };
+        const otherCountriesContributions = {
+            'DE': {'US': 15200.75, 'DE': 32500.30, 'CN': 4800.50, 'GB': 8700.25, 'FR': 7600.40},
+            'GB': {'US': 12800.60, 'GB': 24600.80, 'DE': 6500.30, 'CN': 3200.45, 'CA': 4100.20},
+            'CA': {'US': 21500.90, 'CA': 18700.50, 'GB': 3200.75, 'CN': 2800.30, 'IN': 2100.60},
+            'IN': {'US': 14200.80, 'IN': 16800.40, 'CN': 5300.75, 'CA': 3600.25, 'GB': 2900.50},
+            'FR': {'US': 9800.65, 'FR': 19500.70, 'DE': 8700.40, 'CN': 2300.60, 'NL': 4200.30},
+            'NL': {'US': 7600.40, 'NL': 12500.60, 'DE': 6800.75, 'FR': 3500.50, 'GB': 2800.30},
+            'PL': {'US': 5200.30, 'PL': 8700.50, 'DE': 4300.65, 'CN': 1800.40, 'GB': 1500.25},
+            'CH': {'US': 6800.50, 'CH': 10200.70, 'DE': 5600.40, 'FR': 3200.60, 'NL': 2100.30}
+            // 'CZ': {'US': 6800.50, 'CH': 10200.70, 'DE': 5600.40, 'FR': 3200.60, 'NL': 2100.30}
+        };
+        const countryNames = {
+            'US': '美国',
+            'CN': '中国',
+            'DE': '德国',
+            'GB': '英国',
+            'CA': '加拿大',
+            'IN': '印度',
+            'FR': '法国',
+            'NL': '荷兰',
+            'PL': '波兰',
+            'CH': '瑞士',
+            'SG': '新加坡',
+            'CZ': '捷克',
+            'BG': '保加利亚',
+            'SE': '瑞典'
+        };
+
+        const allCountries = new Set([...Object.keys(usProjectContributions), ...Object.keys(cnProjectContributions), ...Object.keys(otherCountriesContributions)]);
+
+        const countries = Array.from(allCountries).map(code => ({code, name: `${countryNames[code]}(${code})`}));
+
+        // 节点和链接
+        const nodes = [];
+        countries.forEach(c => nodes.push({name: `${c.name}_输出`, itemStyle: {color: getCountryColor(c.code)}}));
+        const rightSideCountries = ['US', 'CN', 'DE', 'GB', 'CA', 'IN', 'FR', 'NL', 'PL', 'CH', 'CZ'];
+        rightSideCountries.forEach(code => nodes.push({
+            name: `${countryNames[code]}(${code})_输入`,
+            itemStyle: {color: getCountryColor(code)}
+        }));
+
+        const links = [];
+        Object.entries(usProjectContributions).forEach(([s, v]) => links.push({
+            source: `${countryNames[s]}(${s})_输出`,
+            target: `美国(US)_输入`,
+            value: parseFloat(v.toFixed(2))
+        }));
+        Object.entries(cnProjectContributions).forEach(([s, v]) => links.push({
+            source: `${countryNames[s]}(${s})_输出`,
+            target: `中国(CN)_输入`,
+            value: parseFloat(v.toFixed(2))
+        }));
+        Object.entries(otherCountriesContributions).forEach(([t, contribs]) => {
+            Object.entries(contribs).forEach(([s, v]) => {
+                links.push({
+                    source: `${countryNames[s]}(${s})_输出`,
+                    target: `${countryNames[t]}(${t})_输入`,
+                    value: parseFloat(v.toFixed(2))
+                });
+            });
+        });
+
+        const chartDom = document.getElementById('sankeyChart');
+        const myChart = echarts.init(chartDom);
+        const chartWidth = chartDom.clientWidth;
+        const chartHeight = chartDom.clientHeight;
+        const nodeWidth = 20;
+
+        // 计算总贡献值并排序
+        const nodeData = nodes.map(n => ({...n}));
+        const outputNodes = nodeData.filter(n => n.name.includes('_输出')).map(node => {
+            const totalValue = links.filter(l => l.source === node.name).reduce((sum, l) => sum + l.value, 0);
+            return {...node, totalValue};
+        }).sort((a, b) => b.totalValue - a.totalValue);
+
+        const inputNodes = nodeData.filter(n => n.name.includes('_输入')).map(node => {
+            const totalValue = links.filter(l => l.target === node.name).reduce((sum, l) => sum + l.value, 0);
+            return {...node, totalValue};
+        }).sort((a, b) => b.totalValue - a.totalValue);
+
+        // 设置节点位置
+        outputNodes.forEach((node, index) => {
+            node.x = 100;
+            node.y = 50 + (index * (chartHeight - 100) / (outputNodes.length - 1 || 1))
+        });
+        inputNodes.forEach((node, index) => {
+            node.x = chartWidth - 100 - nodeWidth;
+            node.y = 50 + (index * (chartHeight - 100) / (inputNodes.length - 1 || 1))
+        });
+        console.log([...outputNodes, ...inputNodes])
+        // 绘制图表
+        myChart.setOption({
+            // tooltip: {
+            //     trigger: 'item',
+            //     triggerOn: 'mousemove',
+            //     formatter: params => {
+            //         if (params.dataType === 'node') {
+            //             const [country] = params.name.split('_');
+            //             const type = params.name.includes('输出') ? '对其他国家的贡献' : '来自其他国家的贡献';
+            //             return `<div class="font-semibold">${country}</div><div>${type}: ${formatNumber(params.value)}</div>`;
+            //         } else if (params.dataType === 'link') {
+            //             const source = params.source.name.split('_')[0];
+            //             const target = params.target.name.split('_')[0];
+            //             return `<div class="font-semibold">${source} → ${target}</div><div>贡献度: ${formatNumber(params.value)}</div>`;
+            //         }
+            //         return params.name;
+            //     }
+            // },
+            animationDuration: 1500,
+            animationEasingUpdate: 'quinticInOut',
+            series: [{
+                type: 'sankey',
+                layout: 'none',
+                emphasis: {focus: 'adjacency'},
+                data: [...outputNodes, ...inputNodes],
+                links: links,
+                lineStyle: {color: 'gradient', curveness: 0.5},
+                nodeWidth: nodeWidth,
+                nodeGap: 20
+            }]
+        });
+
+        window.addEventListener('resize', () => myChart.resize());
+    }
+
+    function getCountryColor(code) {
+        const colors = {
+            'US': '#5470C6',
+            'CN': '#91CC75',
+            'DE': '#FAC858',
+            'GB': '#EE6666',
+            'CA': '#73C0DE',
+            'IN': '#3BA272',
+            'FR': '#FC8452',
+            'NL': '#9A60B4',
+            'PL': '#EA7CCC',
+            'CH': '#165DFF',
+            'SG': '#0FC6C2',
+            'CZ': '#722ED1',
+            'BG': '#eb6709',
+            'SE': '#f53f3f'
+        };
+        return colors[code] || '#888888';
+    }
+
+    function formatNumber(num) {
+        return num.toLocaleString('zh-CN', {maximumFractionDigits: 2, minimumFractionDigits: 2});
+    }
+
+    window.addEventListener('load', initSankeyChart);
+</script>
+</body>
+</html>

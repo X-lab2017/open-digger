@@ -1,0 +1,1093 @@
+month,full_name_lc,full_name,dbms_name,openrank,popularity
+2024-10-01,activeloopai/deeplake,activeloopai/deeplake,Deep Lake,12.973800659179688,0.304
+2024-11-01,activeloopai/deeplake,activeloopai/deeplake,Deep Lake,12.33685302734375,0.307
+2024-12-01,activeloopai/deeplake,activeloopai/deeplake,Deep Lake,9.804609298706056,0.313
+2025-01-01,activeloopai/deeplake,activeloopai/deeplake,Deep Lake,9.45195770263672,0.327
+2025-02-01,activeloopai/deeplake,activeloopai/deeplake,Deep Lake,9.3523530960083,0.325
+2025-03-01,activeloopai/deeplake,activeloopai/deeplake,Deep Lake,9.57774543762207,0.36
+2025-04-01,activeloopai/deeplake,activeloopai/deeplake,Deep Lake,5.3983154296875,0.383
+2025-05-01,activeloopai/deeplake,activeloopai/deeplake,Deep Lake,4.021633148193359,0.406
+2025-06-01,activeloopai/deeplake,activeloopai/deeplake,Deep Lake,3.312541246414185,0.412
+2025-07-01,activeloopai/deeplake,activeloopai/deeplake,Deep Lake,2.446216583251953,0.402
+2025-08-01,activeloopai/deeplake,activeloopai/deeplake,Deep Lake,1.5058526992797852,0.441
+2025-09-01,activeloopai/deeplake,activeloopai/deeplake,Deep Lake,2.0820298194885254,0.506
+2024-10-01,apache/accumulo,apache/accumulo,Apache Accumulo,25.478883743286133,3.312
+2024-11-01,apache/accumulo,apache/accumulo,Apache Accumulo,23.74968719482422,3.081
+2024-12-01,apache/accumulo,apache/accumulo,Apache Accumulo,20.82707977294922,2.934
+2025-01-01,apache/accumulo,apache/accumulo,Apache Accumulo,25.03933334350586,2.785
+2025-02-01,apache/accumulo,apache/accumulo,Apache Accumulo,22.46586799621582,2.62
+2025-03-01,apache/accumulo,apache/accumulo,Apache Accumulo,25.351985931396484,2.432
+2025-04-01,apache/accumulo,apache/accumulo,Apache Accumulo,24.79206085205078,2.451
+2025-05-01,apache/accumulo,apache/accumulo,Apache Accumulo,24.66826438903809,2.22
+2025-06-01,apache/accumulo,apache/accumulo,Apache Accumulo,23.37416076660156,2.168
+2025-07-01,apache/accumulo,apache/accumulo,Apache Accumulo,22.287464141845703,2.206
+2025-08-01,apache/accumulo,apache/accumulo,Apache Accumulo,22.044050216674805,2.284
+2025-09-01,apache/accumulo,apache/accumulo,Apache Accumulo,22.19327163696289,2.551
+2024-10-01,apache/cassandra,apache/cassandra,Apache Cassandra,45.454856872558594,97.608
+2024-11-01,apache/cassandra,apache/cassandra,Apache Cassandra,45.88516998291016,97.713
+2024-12-01,apache/cassandra,apache/cassandra,Apache Cassandra,40.60020065307617,97.936
+2025-01-01,apache/cassandra,apache/cassandra,Apache Cassandra,46.20135498046875,99.193
+2025-02-01,apache/cassandra,apache/cassandra,Apache Cassandra,41.26237869262695,102.582
+2025-03-01,apache/cassandra,apache/cassandra,Apache Cassandra,44.305137634277344,106.654
+2025-04-01,apache/cassandra,apache/cassandra,Apache Cassandra,54.394187927246094,108.207
+2025-05-01,apache/cassandra,apache/cassandra,Apache Cassandra,46.74881362915039,108.054
+2025-06-01,apache/cassandra,apache/cassandra,Apache Cassandra,33.77362823486328,108.271
+2025-07-01,apache/cassandra,apache/cassandra,Apache Cassandra,32.955928802490234,108.757
+2025-08-01,apache/cassandra,apache/cassandra,Apache Cassandra,42.80636596679688,108.512
+2025-09-01,apache/cassandra,apache/cassandra,Apache Cassandra,41.07016754150391,106.981
+2024-10-01,apache/couchdb,apache/couchdb,CouchDB,20.98615837097168,7.534
+2024-11-01,apache/couchdb,apache/couchdb,CouchDB,17.90456199645996,7.64
+2024-12-01,apache/couchdb,apache/couchdb,CouchDB,19.43376922607422,7.7
+2025-01-01,apache/couchdb,apache/couchdb,CouchDB,21.4918270111084,7.78
+2025-02-01,apache/couchdb,apache/couchdb,CouchDB,17.831493377685547,7.812
+2025-03-01,apache/couchdb,apache/couchdb,CouchDB,15.565719604492188,7.342
+2025-04-01,apache/couchdb,apache/couchdb,CouchDB,20.602375030517575,7.168
+2025-05-01,apache/couchdb,apache/couchdb,CouchDB,19.729291915893555,6.596
+2025-06-01,apache/couchdb,apache/couchdb,CouchDB,18.079120635986328,6.774
+2025-07-01,apache/couchdb,apache/couchdb,CouchDB,17.926227569580078,7.121
+2025-08-01,apache/couchdb,apache/couchdb,CouchDB,15.58609390258789,6.812
+2025-09-01,apache/couchdb,apache/couchdb,CouchDB,19.00630569458008,6.553
+2024-10-01,apache/doris,apache/doris,Apache Doris,305.42633056640625,0.577
+2024-11-01,apache/doris,apache/doris,Apache Doris,305.74932861328125,0.527
+2024-12-01,apache/doris,apache/doris,Apache Doris,300.11553955078125,0.484
+2025-01-01,apache/doris,apache/doris,Apache Doris,292.5829467773437,0.446
+2025-02-01,apache/doris,apache/doris,Apache Doris,286.92755126953125,0.443
+2025-03-01,apache/doris,apache/doris,Apache Doris,285.3594665527344,0.46
+2025-04-01,apache/doris,apache/doris,Apache Doris,284.3272399902344,0.515
+2025-05-01,apache/doris,apache/doris,Apache Doris,283.0904846191406,0.509
+2025-06-01,apache/doris,apache/doris,Apache Doris,281.1908874511719,0.484
+2025-07-01,apache/doris,apache/doris,Apache Doris,279.6606140136719,0.565
+2025-08-01,apache/doris,apache/doris,Apache Doris,269.1495361328125,0.508
+2025-09-01,apache/doris,apache/doris,Apache Doris,265.80816650390625,0.495
+2024-10-01,apache/druid,apache/druid,Apache Druid,95.60450744628906,2.792
+2024-11-01,apache/druid,apache/druid,Apache Druid,84.10227966308594,2.701
+2024-12-01,apache/druid,apache/druid,Apache Druid,65.03897857666016,2.876
+2025-01-01,apache/druid,apache/druid,Apache Druid,54.80874252319336,2.917
+2025-02-01,apache/druid,apache/druid,Apache Druid,54.53457260131836,2.86
+2025-03-01,apache/druid,apache/druid,Apache Druid,51.7884407043457,2.789
+2025-04-01,apache/druid,apache/druid,Apache Druid,50.49333190917969,3.047
+2025-05-01,apache/druid,apache/druid,Apache Druid,52.58512496948242,3.176
+2025-06-01,apache/druid,apache/druid,Apache Druid,54.217529296875,3.396
+2025-07-01,apache/druid,apache/druid,Apache Druid,51.63981628417969,3.531
+2025-08-01,apache/druid,apache/druid,Apache Druid,53.560977935791016,3.486
+2025-09-01,apache/druid,apache/druid,Apache Druid,49.748531341552734,3.776
+2024-10-01,apache/flink,apache/flink,Apache Flink,102.31673431396484,10.925
+2024-11-01,apache/flink,apache/flink,Apache Flink,94.86864471435548,9.904
+2024-12-01,apache/flink,apache/flink,Apache Flink,94.38475799560548,10.723
+2025-01-01,apache/flink,apache/flink,Apache Flink,112.39026641845705,12.033
+2025-02-01,apache/flink,apache/flink,Apache Flink,108.89878845214844,11.373
+2025-03-01,apache/flink,apache/flink,Apache Flink,98.7450714111328,11.311
+2025-04-01,apache/flink,apache/flink,Apache Flink,101.63249206542967,11.414
+2025-05-01,apache/flink,apache/flink,Apache Flink,82.76715850830078,12.239
+2025-06-01,apache/flink,apache/flink,Apache Flink,82.51332092285156,11.815
+2025-07-01,apache/flink,apache/flink,Apache Flink,79.45555114746094,12.425
+2025-08-01,apache/flink,apache/flink,Apache Flink,67.0993423461914,12.038
+2025-09-01,apache/flink,apache/flink,Apache Flink,57.30758666992188,13.035
+2024-10-01,apache/hbase,apache/hbase,Apache HBase,58.63887023925781,27.194
+2024-11-01,apache/hbase,apache/hbase,Apache HBase,59.808692932128906,25.25
+2024-12-01,apache/hbase,apache/hbase,Apache HBase,60.87234115600586,25.002
+2025-01-01,apache/hbase,apache/hbase,Apache HBase,61.06839370727539,24.751
+2025-02-01,apache/hbase,apache/hbase,Apache HBase,56.78638458251953,24.477
+2025-03-01,apache/hbase,apache/hbase,Apache HBase,59.1331672668457,24.082
+2025-04-01,apache/hbase,apache/hbase,Apache HBase,61.43351364135742,22.116
+2025-05-01,apache/hbase,apache/hbase,Apache HBase,66.89292907714844,22.623
+2025-06-01,apache/hbase,apache/hbase,Apache HBase,65.41212463378906,22.687
+2025-07-01,apache/hbase,apache/hbase,Apache HBase,53.8509635925293,22.725
+2025-08-01,apache/hbase,apache/hbase,Apache HBase,58.0562629699707,22.079
+2025-09-01,apache/hbase,apache/hbase,Apache HBase,63.93349075317383,21.392
+2024-10-01,apache/hive,apache/hive,Apache Hive,58.26952362060547,52.573
+2024-11-01,apache/hive,apache/hive,Apache Hive,52.0969123840332,51.5
+2024-12-01,apache/hive,apache/hive,Apache Hive,47.29265975952149,53.095
+2025-01-01,apache/hive,apache/hive,Apache Hive,52.51921844482422,56.874
+2025-02-01,apache/hive,apache/hive,Apache Hive,53.39881896972656,62.488
+2025-03-01,apache/hive,apache/hive,Apache Hive,49.987083435058594,70.082
+2025-04-01,apache/hive,apache/hive,Apache Hive,58.06101989746094,72.652
+2025-05-01,apache/hive,apache/hive,Apache Hive,56.73788070678711,75.767
+2025-06-01,apache/hive,apache/hive,Apache Hive,61.47094345092773,76.681
+2025-07-01,apache/hive,apache/hive,Apache Hive,62.64988327026367,75.743
+2025-08-01,apache/hive,apache/hive,Apache Hive,55.16452407836914,71.034
+2025-09-01,apache/hive,apache/hive,Apache Hive,48.59136962890625,76.096
+2024-10-01,apache/ignite,apache/ignite,Apache Ignite,32.47809982299805,2.941
+2024-11-01,apache/ignite,apache/ignite,Apache Ignite,35.25327682495117,2.92
+2024-12-01,apache/ignite,apache/ignite,Apache Ignite,34.516883850097656,2.974
+2025-01-01,apache/ignite,apache/ignite,Apache Ignite,37.37843704223633,2.936
+2025-02-01,apache/ignite,apache/ignite,Apache Ignite,28.293895721435547,2.888
+2025-03-01,apache/ignite,apache/ignite,Apache Ignite,33.45537185668945,2.994
+2025-04-01,apache/ignite,apache/ignite,Apache Ignite,30.48626518249512,3.102
+2025-05-01,apache/ignite,apache/ignite,Apache Ignite,35.59652328491211,3.232
+2025-06-01,apache/ignite,apache/ignite,Apache Ignite,33.22915267944336,3.181
+2025-07-01,apache/ignite,apache/ignite,Apache Ignite,27.312891006469727,3.125
+2025-08-01,apache/ignite,apache/ignite,Apache Ignite,28.62003898620605,3.121
+2025-09-01,apache/ignite,apache/ignite,Apache Ignite,33.89297866821289,3.1
+2024-10-01,apache/incubator-hugegraph,apache/incubator-hugegraph,Apache HugeGraph,13.026546478271484,0.201
+2024-11-01,apache/incubator-hugegraph,apache/incubator-hugegraph,Apache HugeGraph,6.651495933532715,0.234
+2024-12-01,apache/incubator-hugegraph,apache/incubator-hugegraph,Apache HugeGraph,5.767064094543457,0.268
+2025-01-01,apache/incubator-hugegraph,apache/incubator-hugegraph,Apache HugeGraph,4.646064758300781,0.302
+2025-02-01,apache/incubator-hugegraph,apache/incubator-hugegraph,Apache HugeGraph,3.652344703674317,0.276
+2025-03-01,apache/incubator-hugegraph,apache/incubator-hugegraph,Apache HugeGraph,3.913364887237549,0.25
+2025-04-01,apache/incubator-hugegraph,apache/incubator-hugegraph,Apache HugeGraph,4.096567153930664,0.174
+2025-05-01,apache/incubator-hugegraph,apache/incubator-hugegraph,Apache HugeGraph,4.034698009490967,0.182
+2025-06-01,apache/incubator-hugegraph,apache/incubator-hugegraph,Apache HugeGraph,6.512360572814941,0.156
+2025-07-01,apache/incubator-hugegraph,apache/incubator-hugegraph,Apache HugeGraph,6.06613302230835,0.174
+2025-08-01,apache/incubator-hugegraph,apache/incubator-hugegraph,Apache HugeGraph,5.721897125244141,0.167
+2025-09-01,apache/incubator-hugegraph,apache/incubator-hugegraph,Apache HugeGraph,6.242297172546387,0.171
+2024-10-01,apache/iotdb,apache/iotdb,Apache IoTDB,76.42536926269531,1.388
+2024-11-01,apache/iotdb,apache/iotdb,Apache IoTDB,76.5328369140625,1.409
+2024-12-01,apache/iotdb,apache/iotdb,Apache IoTDB,79.4422378540039,1.397
+2025-01-01,apache/iotdb,apache/iotdb,Apache IoTDB,79.92050170898438,1.381
+2025-02-01,apache/iotdb,apache/iotdb,Apache IoTDB,84.04027557373047,1.414
+2025-03-01,apache/iotdb,apache/iotdb,Apache IoTDB,84.72938537597656,1.438
+2025-04-01,apache/iotdb,apache/iotdb,Apache IoTDB,88.7496109008789,1.395
+2025-05-01,apache/iotdb,apache/iotdb,Apache IoTDB,80.3280258178711,1.452
+2025-06-01,apache/iotdb,apache/iotdb,Apache IoTDB,74.2315673828125,1.47
+2025-07-01,apache/iotdb,apache/iotdb,Apache IoTDB,66.11406707763672,1.435
+2025-08-01,apache/iotdb,apache/iotdb,Apache IoTDB,64.74156188964844,1.539
+2025-09-01,apache/iotdb,apache/iotdb,Apache IoTDB,64.25800323486328,1.687
+2024-10-01,apache/jena,apache/jena,Apache Jena - TDB,9.91456413269043,3.003
+2024-11-01,apache/jena,apache/jena,Apache Jena - TDB,8.810093879699707,2.871
+2024-12-01,apache/jena,apache/jena,Apache Jena - TDB,7.219629287719727,2.981
+2025-01-01,apache/jena,apache/jena,Apache Jena - TDB,7.769053936004639,2.847
+2025-02-01,apache/jena,apache/jena,Apache Jena - TDB,10.271061897277832,2.759
+2025-03-01,apache/jena,apache/jena,Apache Jena - TDB,10.331089973449709,2.66
+2025-04-01,apache/jena,apache/jena,Apache Jena - TDB,9.513833045959473,2.443
+2025-05-01,apache/jena,apache/jena,Apache Jena - TDB,11.780006408691406,2.44
+2025-06-01,apache/jena,apache/jena,Apache Jena - TDB,11.306992530822754,2.396
+2025-07-01,apache/jena,apache/jena,Apache Jena - TDB,13.572501182556152,2.341
+2025-08-01,apache/jena,apache/jena,Apache Jena - TDB,7.610642910003662,2.371
+2025-09-01,apache/jena,apache/jena,Apache Jena - TDB,9.44747257232666,2.51
+2024-10-01,apache/phoenix,apache/phoenix,Apache Phoenix,17.180997848510742,1.927
+2024-11-01,apache/phoenix,apache/phoenix,Apache Phoenix,14.659401893615724,1.933
+2024-12-01,apache/phoenix,apache/phoenix,Apache Phoenix,16.225723266601562,1.898
+2025-01-01,apache/phoenix,apache/phoenix,Apache Phoenix,17.04885482788086,1.876
+2025-02-01,apache/phoenix,apache/phoenix,Apache Phoenix,17.461830139160156,1.84
+2025-03-01,apache/phoenix,apache/phoenix,Apache Phoenix,14.95490837097168,1.835
+2025-04-01,apache/phoenix,apache/phoenix,Apache Phoenix,17.98867416381836,1.813
+2025-05-01,apache/phoenix,apache/phoenix,Apache Phoenix,19.720394134521484,1.825
+2025-06-01,apache/phoenix,apache/phoenix,Apache Phoenix,24.03806495666504,1.828
+2025-07-01,apache/phoenix,apache/phoenix,Apache Phoenix,28.098203659057617,1.832
+2025-08-01,apache/phoenix,apache/phoenix,Apache Phoenix,22.03061866760254,2.001
+2025-09-01,apache/phoenix,apache/phoenix,Apache Phoenix,11.836644172668455,2.18
+2024-10-01,apache/pinot,apache/pinot,Apache Pinot,97.93326568603516,0.336
+2024-11-01,apache/pinot,apache/pinot,Apache Pinot,102.32247161865234,0.358
+2024-12-01,apache/pinot,apache/pinot,Apache Pinot,98.85437774658205,0.354
+2025-01-01,apache/pinot,apache/pinot,Apache Pinot,101.51042175292967,0.346
+2025-02-01,apache/pinot,apache/pinot,Apache Pinot,103.34771728515624,0.374
+2025-03-01,apache/pinot,apache/pinot,Apache Pinot,100.94183349609376,0.39
+2025-04-01,apache/pinot,apache/pinot,Apache Pinot,103.13217163085938,0.457
+2025-05-01,apache/pinot,apache/pinot,Apache Pinot,107.16436004638672,0.499
+2025-06-01,apache/pinot,apache/pinot,Apache Pinot,95.8674087524414,0.486
+2025-07-01,apache/pinot,apache/pinot,Apache Pinot,93.82686614990234,0.488
+2025-08-01,apache/pinot,apache/pinot,Apache Pinot,96.0692367553711,0.545
+2025-09-01,apache/pinot,apache/pinot,Apache Pinot,82.36997985839844,0.629
+2024-10-01,apache/sedona,apache/sedona,Apache Sedona,12.109853744506836,0.317
+2024-11-01,apache/sedona,apache/sedona,Apache Sedona,13.49374771118164,0.327
+2024-12-01,apache/sedona,apache/sedona,Apache Sedona,11.318074226379396,0.335
+2025-01-01,apache/sedona,apache/sedona,Apache Sedona,15.343256950378418,0.364
+2025-02-01,apache/sedona,apache/sedona,Apache Sedona,16.169343948364258,0.38
+2025-03-01,apache/sedona,apache/sedona,Apache Sedona,15.80751609802246,0.389
+2025-04-01,apache/sedona,apache/sedona,Apache Sedona,14.22063159942627,0.413
+2025-05-01,apache/sedona,apache/sedona,Apache Sedona,10.78083038330078,0.411
+2025-06-01,apache/sedona,apache/sedona,Apache Sedona,16.59088134765625,0.424
+2025-07-01,apache/sedona,apache/sedona,Apache Sedona,21.292015075683597,0.427
+2025-08-01,apache/sedona,apache/sedona,Apache Sedona,18.54730224609375,0.516
+2025-09-01,apache/sedona,apache/sedona,Apache Sedona,9.250247955322266,0.65
+2024-10-01,apache/spark,apache/spark,Apache Spark (SQL),213.0627593994141,16.726
+2024-11-01,apache/spark,apache/spark,Apache Spark (SQL),203.8124084472656,16.782
+2024-12-01,apache/spark,apache/spark,Apache Spark (SQL),211.77833557128903,17.392
+2025-01-01,apache/spark,apache/spark,Apache Spark (SQL),221.01409912109372,17.797
+2025-02-01,apache/spark,apache/spark,Apache Spark (SQL),209.57505798339844,18.445
+2025-03-01,apache/spark,apache/spark,Apache Spark (SQL),192.11175537109372,19.758
+2025-04-01,apache/spark,apache/spark,Apache Spark (SQL),174.21307373046875,20.396
+2025-05-01,apache/spark,apache/spark,Apache Spark (SQL),165.34457397460938,21.619
+2025-06-01,apache/spark,apache/spark,Apache Spark (SQL),162.14639282226562,22.729
+2025-07-01,apache/spark,apache/spark,Apache Spark (SQL),165.058349609375,23.797
+2025-08-01,apache/spark,apache/spark,Apache Spark (SQL),177.04147338867188,24.635
+2025-09-01,apache/spark,apache/spark,Apache Spark (SQL),163.2351531982422,25.363
+2024-10-01,apache/tinkerpop,apache/tinkerpop,TinkerGraph,16.357309341430664,0.073
+2024-11-01,apache/tinkerpop,apache/tinkerpop,TinkerGraph,16.09819221496582,0.07
+2024-12-01,apache/tinkerpop,apache/tinkerpop,TinkerGraph,13.93036937713623,0.081
+2025-01-01,apache/tinkerpop,apache/tinkerpop,TinkerGraph,14.709203720092772,0.058
+2025-02-01,apache/tinkerpop,apache/tinkerpop,TinkerGraph,12.408349990844728,0.047
+2025-03-01,apache/tinkerpop,apache/tinkerpop,TinkerGraph,10.802274703979492,0.068
+2025-04-01,apache/tinkerpop,apache/tinkerpop,TinkerGraph,14.753521919250488,0.05
+2025-05-01,apache/tinkerpop,apache/tinkerpop,TinkerGraph,11.89710807800293,0.053
+2025-06-01,apache/tinkerpop,apache/tinkerpop,TinkerGraph,8.702881813049316,0.034
+2025-07-01,apache/tinkerpop,apache/tinkerpop,TinkerGraph,10.797685623168944,0.067
+2025-08-01,apache/tinkerpop,apache/tinkerpop,TinkerGraph,10.307032585144045,0.02
+2025-09-01,apache/tinkerpop,apache/tinkerpop,TinkerGraph,13.845952033996582,0.028
+2024-10-01,apple/foundationdb,apple/foundationdb,FoundationDB,49.83972930908203,0.985
+2024-11-01,apple/foundationdb,apple/foundationdb,FoundationDB,47.94648742675781,0.94
+2024-12-01,apple/foundationdb,apple/foundationdb,FoundationDB,47.88003921508789,0.918
+2025-01-01,apple/foundationdb,apple/foundationdb,FoundationDB,46.323463439941406,0.887
+2025-02-01,apple/foundationdb,apple/foundationdb,FoundationDB,44.99837493896485,0.944
+2025-03-01,apple/foundationdb,apple/foundationdb,FoundationDB,42.65475082397461,0.96
+2025-04-01,apple/foundationdb,apple/foundationdb,FoundationDB,45.37215805053711,0.871
+2025-05-01,apple/foundationdb,apple/foundationdb,FoundationDB,42.25764083862305,0.893
+2025-06-01,apple/foundationdb,apple/foundationdb,FoundationDB,38.5460319519043,0.884
+2025-07-01,apple/foundationdb,apple/foundationdb,FoundationDB,40.34238052368164,0.917
+2025-08-01,apple/foundationdb,apple/foundationdb,FoundationDB,40.37459945678711,0.904
+2025-09-01,apple/foundationdb,apple/foundationdb,FoundationDB,40.289432525634766,0.97
+2024-10-01,arangodb/arangodb,arangodb/arangodb,ArangoDB,31.49615859985352,3.435
+2024-11-01,arangodb/arangodb,arangodb/arangodb,ArangoDB,32.0839729309082,3.088
+2024-12-01,arangodb/arangodb,arangodb/arangodb,ArangoDB,31.716270446777344,2.96
+2025-01-01,arangodb/arangodb,arangodb/arangodb,ArangoDB,30.973529815673828,2.916
+2025-02-01,arangodb/arangodb,arangodb/arangodb,ArangoDB,32.60919570922852,2.91
+2025-03-01,arangodb/arangodb,arangodb/arangodb,ArangoDB,31.772218704223636,2.867
+2025-04-01,arangodb/arangodb,arangodb/arangodb,ArangoDB,29.18572998046875,2.823
+2025-05-01,arangodb/arangodb,arangodb/arangodb,ArangoDB,32.5902099609375,2.849
+2025-06-01,arangodb/arangodb,arangodb/arangodb,ArangoDB,28.975116729736328,2.899
+2025-07-01,arangodb/arangodb,arangodb/arangodb,ArangoDB,29.40714263916016,2.834
+2025-08-01,arangodb/arangodb,arangodb/arangodb,ArangoDB,27.64598274230957,2.905
+2025-09-01,arangodb/arangodb,arangodb/arangodb,ArangoDB,30.99255752563477,2.938
+2024-10-01,arcadedata/arcadedb,arcadedata/arcadedb,ArcadeDB,10.950081825256348,0.009
+2024-11-01,arcadedata/arcadedb,arcadedata/arcadedb,ArcadeDB,9.63554573059082,0.035
+2024-12-01,arcadedata/arcadedb,arcadedata/arcadedb,ArcadeDB,10.89145278930664,0.037
+2025-01-01,arcadedata/arcadedb,arcadedata/arcadedb,ArcadeDB,11.0833740234375,0.045
+2025-02-01,arcadedata/arcadedb,arcadedata/arcadedb,ArcadeDB,12.78096866607666,0.044
+2025-03-01,arcadedata/arcadedb,arcadedata/arcadedb,ArcadeDB,12.089653968811035,0.106
+2025-04-01,arcadedata/arcadedb,arcadedata/arcadedb,ArcadeDB,10.721750259399414,0.06
+2025-05-01,arcadedata/arcadedb,arcadedata/arcadedb,ArcadeDB,11.40634536743164,0.114
+2025-06-01,arcadedata/arcadedb,arcadedata/arcadedb,ArcadeDB,11.42288303375244,0.084
+2025-07-01,arcadedata/arcadedb,arcadedata/arcadedb,ArcadeDB,10.990558624267578,0.136
+2025-08-01,arcadedata/arcadedb,arcadedata/arcadedb,ArcadeDB,10.618659019470217,0.103
+2025-09-01,arcadedata/arcadedb,arcadedata/arcadedb,ArcadeDB,10.88076877593994,0.175
+2024-10-01,bloomberg/comdb2,bloomberg/comdb2,Comdb2,28.734947204589844,0.325
+2024-11-01,bloomberg/comdb2,bloomberg/comdb2,Comdb2,28.59245109558105,0.325
+2024-12-01,bloomberg/comdb2,bloomberg/comdb2,Comdb2,28.72675895690918,0.324
+2025-01-01,bloomberg/comdb2,bloomberg/comdb2,Comdb2,29.1784610748291,0.332
+2025-02-01,bloomberg/comdb2,bloomberg/comdb2,Comdb2,28.27166748046875,0.334
+2025-03-01,bloomberg/comdb2,bloomberg/comdb2,Comdb2,26.856454849243164,0.333
+2025-04-01,bloomberg/comdb2,bloomberg/comdb2,Comdb2,27.48224830627441,0.332
+2025-05-01,bloomberg/comdb2,bloomberg/comdb2,Comdb2,27.09093475341797,0.333
+2025-06-01,bloomberg/comdb2,bloomberg/comdb2,Comdb2,26.95715713500977,0.335
+2025-07-01,bloomberg/comdb2,bloomberg/comdb2,Comdb2,24.44002723693848,0.335
+2025-08-01,bloomberg/comdb2,bloomberg/comdb2,Comdb2,24.64895439147949,0.336
+2025-09-01,bloomberg/comdb2,bloomberg/comdb2,Comdb2,26.41046142578125,0.341
+2024-10-01,chroma-core/chroma,chroma-core/chroma,Chroma,57.68161010742188,1.872
+2024-11-01,chroma-core/chroma,chroma-core/chroma,Chroma,60.97046661376953,1.813
+2024-12-01,chroma-core/chroma,chroma-core/chroma,Chroma,63.18720245361328,1.867
+2025-01-01,chroma-core/chroma,chroma-core/chroma,Chroma,64.63961029052734,1.95
+2025-02-01,chroma-core/chroma,chroma-core/chroma,Chroma,66.2392349243164,1.844
+2025-03-01,chroma-core/chroma,chroma-core/chroma,Chroma,67.16112518310547,1.887
+2025-04-01,chroma-core/chroma,chroma-core/chroma,Chroma,76.28707885742188,1.904
+2025-05-01,chroma-core/chroma,chroma-core/chroma,Chroma,74.08245849609375,1.919
+2025-06-01,chroma-core/chroma,chroma-core/chroma,Chroma,73.86102294921875,1.936
+2025-07-01,chroma-core/chroma,chroma-core/chroma,Chroma,72.38939666748047,2.001
+2025-08-01,chroma-core/chroma,chroma-core/chroma,Chroma,62.97569274902344,2.216
+2025-09-01,chroma-core/chroma,chroma-core/chroma,Chroma,51.900856018066406,2.366
+2024-10-01,citusdata/citus,citusdata/citus,Citus,15.961395263671877,2.057
+2024-11-01,citusdata/citus,citusdata/citus,Citus,18.66479110717773,1.961
+2024-12-01,citusdata/citus,citusdata/citus,Citus,20.101001739501957,2.011
+2025-01-01,citusdata/citus,citusdata/citus,Citus,19.367481231689453,2.038
+2025-02-01,citusdata/citus,citusdata/citus,Citus,21.71776580810547,1.981
+2025-03-01,citusdata/citus,citusdata/citus,Citus,24.661540985107425,1.943
+2025-04-01,citusdata/citus,citusdata/citus,Citus,26.84351921081543,1.991
+2025-05-01,citusdata/citus,citusdata/citus,Citus,22.951515197753903,1.913
+2025-06-01,citusdata/citus,citusdata/citus,Citus,24.260297775268555,1.892
+2025-07-01,citusdata/citus,citusdata/citus,Citus,23.295494079589844,1.903
+2025-08-01,citusdata/citus,citusdata/citus,Citus,22.76339530944824,1.967
+2025-09-01,citusdata/citus,citusdata/citus,Citus,20.551708221435547,2.209
+2024-10-01,clickhouse/clickhouse,clickhouse/clickhouse,ClickHouse,387.8421936035156,16.25
+2024-11-01,clickhouse/clickhouse,clickhouse/clickhouse,ClickHouse,385.2952270507813,16.499
+2024-12-01,clickhouse/clickhouse,clickhouse/clickhouse,ClickHouse,378.157470703125,17.441
+2025-01-01,clickhouse/clickhouse,clickhouse/clickhouse,ClickHouse,389.9096984863281,18.562
+2025-02-01,clickhouse/clickhouse,clickhouse/clickhouse,ClickHouse,394.3828125,18.706
+2025-03-01,clickhouse/clickhouse,clickhouse/clickhouse,ClickHouse,391.7667541503906,18.613
+2025-04-01,clickhouse/clickhouse,clickhouse/clickhouse,ClickHouse,386.0302429199219,18.73
+2025-05-01,clickhouse/clickhouse,clickhouse/clickhouse,ClickHouse,383.9680786132813,18.766
+2025-06-01,clickhouse/clickhouse,clickhouse/clickhouse,ClickHouse,371.5789794921875,18.6
+2025-07-01,clickhouse/clickhouse,clickhouse/clickhouse,ClickHouse,358.09674072265625,18.542
+2025-08-01,clickhouse/clickhouse,clickhouse/clickhouse,ClickHouse,359.1044616699219,18.853
+2025-09-01,clickhouse/clickhouse,clickhouse/clickhouse,ClickHouse,350.0162048339844,20.149
+2024-10-01,cnosdb/cnosdb,cnosdb/cnosdb,CnosDB,19.899742126464844,0.304
+2024-11-01,cnosdb/cnosdb,cnosdb/cnosdb,CnosDB,19.403289794921875,0.295
+2024-12-01,cnosdb/cnosdb,cnosdb/cnosdb,CnosDB,18.445484161376957,0.323
+2025-01-01,cnosdb/cnosdb,cnosdb/cnosdb,CnosDB,8.50918960571289,0.366
+2025-02-01,cnosdb/cnosdb,cnosdb/cnosdb,CnosDB,6.861161708831787,0.331
+2025-03-01,cnosdb/cnosdb,cnosdb/cnosdb,CnosDB,6.27914571762085,0.273
+2025-04-01,cnosdb/cnosdb,cnosdb/cnosdb,CnosDB,6.526017189025879,0.27
+2025-05-01,cnosdb/cnosdb,cnosdb/cnosdb,CnosDB,5.547114372253418,0.268
+2025-06-01,cnosdb/cnosdb,cnosdb/cnosdb,CnosDB,4.715047359466553,0.322
+2025-07-01,cnosdb/cnosdb,cnosdb/cnosdb,CnosDB,1.5860280990600586,0.384
+2025-08-01,cnosdb/cnosdb,cnosdb/cnosdb,CnosDB,1.3481239080429075,0.47
+2025-09-01,cnosdb/cnosdb,cnosdb/cnosdb,CnosDB,2.776962280273437,0.485
+2024-10-01,cockroachdb/cockroach,cockroachdb/cockroach,CockroachDB,219.87008666992188,4.846
+2024-11-01,cockroachdb/cockroach,cockroachdb/cockroach,CockroachDB,216.84996032714844,4.244
+2024-12-01,cockroachdb/cockroach,cockroachdb/cockroach,CockroachDB,216.26364135742188,4.193
+2025-01-01,cockroachdb/cockroach,cockroachdb/cockroach,CockroachDB,221.1886749267578,4.292
+2025-02-01,cockroachdb/cockroach,cockroachdb/cockroach,CockroachDB,211.27296447753903,4.016
+2025-03-01,cockroachdb/cockroach,cockroachdb/cockroach,CockroachDB,209.18772888183597,4.403
+2025-04-01,cockroachdb/cockroach,cockroachdb/cockroach,CockroachDB,210.1357269287109,4.171
+2025-05-01,cockroachdb/cockroach,cockroachdb/cockroach,CockroachDB,205.9557037353516,3.9
+2025-06-01,cockroachdb/cockroach,cockroachdb/cockroach,CockroachDB,197.97735595703125,4.085
+2025-07-01,cockroachdb/cockroach,cockroachdb/cockroach,CockroachDB,206.9703063964844,4.346
+2025-08-01,cockroachdb/cockroach,cockroachdb/cockroach,CockroachDB,200.0230712890625,4.274
+2025-09-01,cockroachdb/cockroach,cockroachdb/cockroach,CockroachDB,197.5344390869141,5.035
+2024-10-01,couchbase/couchbase-lite-core,couchbase/couchbase-lite-core,Couchbase,11.42927074432373,17.104
+2024-11-01,couchbase/couchbase-lite-core,couchbase/couchbase-lite-core,Couchbase,10.830787658691406,15.818
+2024-12-01,couchbase/couchbase-lite-core,couchbase/couchbase-lite-core,Couchbase,11.710577964782717,15.826
+2025-01-01,couchbase/couchbase-lite-core,couchbase/couchbase-lite-core,Couchbase,10.423579216003418,16.008
+2025-02-01,couchbase/couchbase-lite-core,couchbase/couchbase-lite-core,Couchbase,8.914600372314453,15.626
+2025-03-01,couchbase/couchbase-lite-core,couchbase/couchbase-lite-core,Couchbase,6.832382678985596,15.046
+2025-04-01,couchbase/couchbase-lite-core,couchbase/couchbase-lite-core,Couchbase,7.173479080200195,14.045
+2025-05-01,couchbase/couchbase-lite-core,couchbase/couchbase-lite-core,Couchbase,9.417155265808104,13.816
+2025-06-01,couchbase/couchbase-lite-core,couchbase/couchbase-lite-core,Couchbase,9.82765769958496,13.797
+2025-07-01,couchbase/couchbase-lite-core,couchbase/couchbase-lite-core,Couchbase,11.05958080291748,12.962
+2025-08-01,couchbase/couchbase-lite-core,couchbase/couchbase-lite-core,Couchbase,10.158090591430664,12.67
+2025-09-01,couchbase/couchbase-lite-core,couchbase/couchbase-lite-core,Couchbase,9.239338874816896,12.58
+2024-10-01,crate/crate,crate/crate,CrateDB,48.49090576171875,0.676
+2024-11-01,crate/crate,crate/crate,CrateDB,47.69637298583984,0.641
+2024-12-01,crate/crate,crate/crate,CrateDB,36.12879180908203,0.656
+2025-01-01,crate/crate,crate/crate,CrateDB,41.85570526123047,0.64
+2025-02-01,crate/crate,crate/crate,CrateDB,45.80891799926758,0.659
+2025-03-01,crate/crate,crate/crate,CrateDB,43.18447113037109,0.659
+2025-04-01,crate/crate,crate/crate,CrateDB,42.29520797729492,0.635
+2025-05-01,crate/crate,crate/crate,CrateDB,41.55744171142578,0.667
+2025-06-01,crate/crate,crate/crate,CrateDB,37.896583557128906,0.643
+2025-07-01,crate/crate,crate/crate,CrateDB,35.11488342285156,0.623
+2025-08-01,crate/crate,crate/crate,CrateDB,26.083372116088867,0.644
+2025-09-01,crate/crate,crate/crate,CrateDB,26.188291549682617,0.654
+2024-10-01,cubrid/cubrid,cubrid/cubrid,Cubrid,43.04837417602539,0.967
+2024-11-01,cubrid/cubrid,cubrid/cubrid,Cubrid,39.60982131958008,0.949
+2024-12-01,cubrid/cubrid,cubrid/cubrid,Cubrid,42.59395217895508,0.921
+2025-01-01,cubrid/cubrid,cubrid/cubrid,Cubrid,33.2891731262207,0.872
+2025-02-01,cubrid/cubrid,cubrid/cubrid,Cubrid,47.513126373291016,0.931
+2025-03-01,cubrid/cubrid,cubrid/cubrid,Cubrid,44.382022857666016,0.893
+2025-04-01,cubrid/cubrid,cubrid/cubrid,Cubrid,45.99907302856445,0.947
+2025-05-01,cubrid/cubrid,cubrid/cubrid,Cubrid,51.88252258300781,1.003
+2025-06-01,cubrid/cubrid,cubrid/cubrid,Cubrid,54.98728942871094,1.073
+2025-07-01,cubrid/cubrid,cubrid/cubrid,Cubrid,51.271759033203125,1.04
+2025-08-01,cubrid/cubrid,cubrid/cubrid,Cubrid,53.65519714355469,1.006
+2025-09-01,cubrid/cubrid,cubrid/cubrid,Cubrid,55.15877532958984,0.971
+2024-10-01,dgraph-io/dgraph,dgraph-io/dgraph,Dgraph,11.43497085571289,1.394
+2024-11-01,dgraph-io/dgraph,dgraph-io/dgraph,Dgraph,10.306777000427246,1.336
+2024-12-01,dgraph-io/dgraph,dgraph-io/dgraph,Dgraph,10.29160976409912,1.313
+2025-01-01,dgraph-io/dgraph,dgraph-io/dgraph,Dgraph,,1.248
+2025-02-01,dgraph-io/dgraph,dgraph-io/dgraph,Dgraph,,1.2
+2025-03-01,dgraph-io/dgraph,dgraph-io/dgraph,Dgraph,,1.213
+2025-04-01,dgraph-io/dgraph,dgraph-io/dgraph,Dgraph,,1.186
+2025-05-01,dgraph-io/dgraph,dgraph-io/dgraph,Dgraph,,1.246
+2025-06-01,dgraph-io/dgraph,dgraph-io/dgraph,Dgraph,,1.204
+2025-07-01,dgraph-io/dgraph,dgraph-io/dgraph,Dgraph,,1.2
+2025-08-01,dgraph-io/dgraph,dgraph-io/dgraph,Dgraph,,1.249
+2025-09-01,dgraph-io/dgraph,dgraph-io/dgraph,Dgraph,,1.337
+2024-10-01,dolthub/dolt,dolthub/dolt,Dolt,22.376665115356445,0.875
+2024-11-01,dolthub/dolt,dolthub/dolt,Dolt,21.32495880126953,0.852
+2024-12-01,dolthub/dolt,dolthub/dolt,Dolt,21.81644630432129,0.767
+2025-01-01,dolthub/dolt,dolthub/dolt,Dolt,24.53273200988769,0.691
+2025-02-01,dolthub/dolt,dolthub/dolt,Dolt,23.20892333984375,0.655
+2025-03-01,dolthub/dolt,dolthub/dolt,Dolt,24.247203826904297,0.66
+2025-04-01,dolthub/dolt,dolthub/dolt,Dolt,22.531570434570312,0.624
+2025-05-01,dolthub/dolt,dolthub/dolt,Dolt,24.51022148132324,0.599
+2025-06-01,dolthub/dolt,dolthub/dolt,Dolt,27.30509376525879,0.61
+2025-07-01,dolthub/dolt,dolthub/dolt,Dolt,28.244029998779297,0.611
+2025-08-01,dolthub/dolt,dolthub/dolt,Dolt,28.54658317565918,0.63
+2025-09-01,dolthub/dolt,dolthub/dolt,Dolt,26.11038398742676,0.63
+2024-10-01,dragonflydb/dragonfly,dragonflydb/dragonfly,Dragonfly,45.80575180053711,0.457
+2024-11-01,dragonflydb/dragonfly,dragonflydb/dragonfly,Dragonfly,47.66943359375,0.498
+2024-12-01,dragonflydb/dragonfly,dragonflydb/dragonfly,Dragonfly,44.22310256958008,0.518
+2025-01-01,dragonflydb/dragonfly,dragonflydb/dragonfly,Dragonfly,40.88438034057617,0.491
+2025-02-01,dragonflydb/dragonfly,dragonflydb/dragonfly,Dragonfly,42.08665466308594,0.476
+2025-03-01,dragonflydb/dragonfly,dragonflydb/dragonfly,Dragonfly,45.03793716430664,0.503
+2025-04-01,dragonflydb/dragonfly,dragonflydb/dragonfly,Dragonfly,46.0025634765625,0.51
+2025-05-01,dragonflydb/dragonfly,dragonflydb/dragonfly,Dragonfly,44.67325592041016,0.527
+2025-06-01,dragonflydb/dragonfly,dragonflydb/dragonfly,Dragonfly,44.482078552246094,0.501
+2025-07-01,dragonflydb/dragonfly,dragonflydb/dragonfly,Dragonfly,39.95749282836914,0.494
+2025-08-01,dragonflydb/dragonfly,dragonflydb/dragonfly,Dragonfly,35.88527297973633,0.499
+2025-09-01,dragonflydb/dragonfly,dragonflydb/dragonfly,Dragonfly,35.90847396850586,0.55
+2024-10-01,duckdb/duckdb,duckdb/duckdb,DuckDB,112.71958923339844,5.982
+2024-11-01,duckdb/duckdb,duckdb/duckdb,DuckDB,106.56231689453124,6.082
+2024-12-01,duckdb/duckdb,duckdb/duckdb,DuckDB,103.72254180908205,6.171
+2025-01-01,duckdb/duckdb,duckdb/duckdb,DuckDB,108.3678207397461,6.323
+2025-02-01,duckdb/duckdb,duckdb/duckdb,DuckDB,105.86206817626952,6.349
+2025-03-01,duckdb/duckdb,duckdb/duckdb,DuckDB,101.20166778564452,6.714
+2025-04-01,duckdb/duckdb,duckdb/duckdb,DuckDB,92.12860870361328,7.385
+2025-05-01,duckdb/duckdb,duckdb/duckdb,DuckDB,95.07369995117188,7.441
+2025-06-01,duckdb/duckdb,duckdb/duckdb,DuckDB,83.69971466064453,7.299
+2025-07-01,duckdb/duckdb,duckdb/duckdb,DuckDB,82.74395751953125,7.149
+2025-08-01,duckdb/duckdb,duckdb/duckdb,DuckDB,82.10210418701172,7.899
+2025-09-01,duckdb/duckdb,duckdb/duckdb,DuckDB,73.62518310546875,8.696
+2024-10-01,elastic/elasticsearch,elastic/elasticsearch,Elasticsearch,346.0210876464844,131.845
+2024-11-01,elastic/elasticsearch,elastic/elasticsearch,Elasticsearch,361.2993774414063,131.643
+2024-12-01,elastic/elasticsearch,elastic/elasticsearch,Elasticsearch,366.2110900878906,132.32
+2025-01-01,elastic/elasticsearch,elastic/elasticsearch,Elasticsearch,363.9760437011719,134.922
+2025-02-01,elastic/elasticsearch,elastic/elasticsearch,Elasticsearch,348.0582275390625,134.633
+2025-03-01,elastic/elasticsearch,elastic/elasticsearch,Elasticsearch,341.3695373535156,131.382
+2025-04-01,elastic/elasticsearch,elastic/elasticsearch,Elasticsearch,343.7467346191406,128.083
+2025-05-01,elastic/elasticsearch,elastic/elasticsearch,Elasticsearch,348.2755432128906,123.813
+2025-06-01,elastic/elasticsearch,elastic/elasticsearch,Elasticsearch,340.00213623046875,121.279
+2025-07-01,elastic/elasticsearch,elastic/elasticsearch,Elasticsearch,335.1673278808594,118.825
+2025-08-01,elastic/elasticsearch,elastic/elasticsearch,Elasticsearch,333.7643737792969,114.268
+2025-09-01,elastic/elasticsearch,elastic/elasticsearch,Elasticsearch,336.5661315917969,118.256
+2024-10-01,etcd-io/etcd,etcd-io/etcd,etcd,36.98942565917969,7.171
+2024-11-01,etcd-io/etcd,etcd-io/etcd,etcd,34.47004699707031,7.196
+2024-12-01,etcd-io/etcd,etcd-io/etcd,etcd,36.09936141967773,7.139
+2025-01-01,etcd-io/etcd,etcd-io/etcd,etcd,43.79414749145508,7.08
+2025-02-01,etcd-io/etcd,etcd-io/etcd,etcd,43.386226654052734,7.061
+2025-03-01,etcd-io/etcd,etcd-io/etcd,etcd,40.35073471069336,7.078
+2025-04-01,etcd-io/etcd,etcd-io/etcd,etcd,51.76612091064453,7.053
+2025-05-01,etcd-io/etcd,etcd-io/etcd,etcd,55.47756576538086,7.143
+2025-06-01,etcd-io/etcd,etcd-io/etcd,etcd,50.644493103027344,7.053
+2025-07-01,etcd-io/etcd,etcd-io/etcd,etcd,52.798770904541016,6.891
+2025-08-01,etcd-io/etcd,etcd-io/etcd,etcd,49.12248229980469,6.886
+2025-09-01,etcd-io/etcd,etcd-io/etcd,etcd,47.82255554199219,7.443
+2024-10-01,eventstore/eventstore,eventstore/eventstore,KurrentDB (aka EventStoreDB),24.68024444580078,1.075
+2024-11-01,eventstore/eventstore,eventstore/eventstore,KurrentDB (aka EventStoreDB),22.65255546569824,1.075
+2024-12-01,eventstore/eventstore,eventstore/eventstore,KurrentDB (aka EventStoreDB),20.850635528564453,1.065
+2025-01-01,eventstore/eventstore,eventstore/eventstore,KurrentDB (aka EventStoreDB),25.97716522216797,1.035
+2025-02-01,eventstore/eventstore,eventstore/eventstore,KurrentDB (aka EventStoreDB),21.933666229248047,0.992
+2025-03-01,eventstore/eventstore,eventstore/eventstore,KurrentDB (aka EventStoreDB),,1.041
+2025-04-01,eventstore/eventstore,eventstore/eventstore,KurrentDB (aka EventStoreDB),,0.998
+2025-05-01,eventstore/eventstore,eventstore/eventstore,KurrentDB (aka EventStoreDB),,1.048
+2025-06-01,eventstore/eventstore,eventstore/eventstore,KurrentDB (aka EventStoreDB),,1.078
+2025-07-01,eventstore/eventstore,eventstore/eventstore,KurrentDB (aka EventStoreDB),,1.101
+2025-08-01,eventstore/eventstore,eventstore/eventstore,KurrentDB (aka EventStoreDB),,1.073
+2025-09-01,eventstore/eventstore,eventstore/eventstore,KurrentDB (aka EventStoreDB),,1.15
+2024-10-01,exist-db/exist,exist-db/exist,eXist-db,8.662447929382324,0.696
+2024-11-01,exist-db/exist,exist-db/exist,eXist-db,10.843092918395996,0.691
+2024-12-01,exist-db/exist,exist-db/exist,eXist-db,11.131468772888184,0.728
+2025-01-01,exist-db/exist,exist-db/exist,eXist-db,7.893265724182129,0.699
+2025-02-01,exist-db/exist,exist-db/exist,eXist-db,5.990169525146484,0.686
+2025-03-01,exist-db/exist,exist-db/exist,eXist-db,8.314096450805664,0.674
+2025-04-01,exist-db/exist,exist-db/exist,eXist-db,6.65192985534668,0.689
+2025-05-01,exist-db/exist,exist-db/exist,eXist-db,5.690880298614502,0.682
+2025-06-01,exist-db/exist,exist-db/exist,eXist-db,4.9414801597595215,0.679
+2025-07-01,exist-db/exist,exist-db/exist,eXist-db,5.162357807159424,0.683
+2025-08-01,exist-db/exist,exist-db/exist,eXist-db,5.389017105102539,0.715
+2025-09-01,exist-db/exist,exist-db/exist,eXist-db,4.901040077209473,0.703
+2024-10-01,facebook/rocksdb,facebook/rocksdb,RocksDB,35.89080810546875,3.047
+2024-11-01,facebook/rocksdb,facebook/rocksdb,RocksDB,34.4633903503418,2.96
+2024-12-01,facebook/rocksdb,facebook/rocksdb,RocksDB,37.3453254699707,2.852
+2025-01-01,facebook/rocksdb,facebook/rocksdb,RocksDB,40.26769256591797,2.729
+2025-02-01,facebook/rocksdb,facebook/rocksdb,RocksDB,38.80738067626953,3.062
+2025-03-01,facebook/rocksdb,facebook/rocksdb,RocksDB,36.47379684448242,3.147
+2025-04-01,facebook/rocksdb,facebook/rocksdb,RocksDB,34.13298034667969,3.14
+2025-05-01,facebook/rocksdb,facebook/rocksdb,RocksDB,35.57047653198242,3.205
+2025-06-01,facebook/rocksdb,facebook/rocksdb,RocksDB,34.811012268066406,2.857
+2025-07-01,facebook/rocksdb,facebook/rocksdb,RocksDB,33.10976028442383,3.118
+2025-08-01,facebook/rocksdb,facebook/rocksdb,RocksDB,31.95550537109375,2.924
+2025-09-01,facebook/rocksdb,facebook/rocksdb,RocksDB,30.710664749145508,3.331
+2024-10-01,firebirdsql/firebird,firebirdsql/firebird,Firebird,28.90729141235352,19.017
+2024-11-01,firebirdsql/firebird,firebirdsql/firebird,Firebird,31.451566696166992,18.426
+2024-12-01,firebirdsql/firebird,firebirdsql/firebird,Firebird,28.41351127624512,18.543
+2025-01-01,firebirdsql/firebird,firebirdsql/firebird,Firebird,32.18882369995117,17.72
+2025-02-01,firebirdsql/firebird,firebirdsql/firebird,Firebird,32.21588516235352,17.28
+2025-03-01,firebirdsql/firebird,firebirdsql/firebird,Firebird,27.473915100097656,16.823
+2025-04-01,firebirdsql/firebird,firebirdsql/firebird,Firebird,30.53854179382324,16.74
+2025-05-01,firebirdsql/firebird,firebirdsql/firebird,Firebird,28.926958084106445,16.657
+2025-06-01,firebirdsql/firebird,firebirdsql/firebird,Firebird,29.000450134277344,16.564
+2025-07-01,firebirdsql/firebird,firebirdsql/firebird,Firebird,30.77227020263672,17.015
+2025-08-01,firebirdsql/firebird,firebirdsql/firebird,Firebird,29.793554306030277,17.404
+2025-09-01,firebirdsql/firebird,firebirdsql/firebird,Firebird,26.3667049407959,16.537
+2024-10-01,fluree/db,fluree/db,Fluree,13.148238182067873,0.355
+2024-11-01,fluree/db,fluree/db,Fluree,13.53098201751709,0.35
+2024-12-01,fluree/db,fluree/db,Fluree,12.51147747039795,0.312
+2025-01-01,fluree/db,fluree/db,Fluree,10.015714645385742,0.347
+2025-02-01,fluree/db,fluree/db,Fluree,9.647765159606934,0.334
+2025-03-01,fluree/db,fluree/db,Fluree,8.859598159790039,0.391
+2025-04-01,fluree/db,fluree/db,Fluree,7.694231986999512,0.435
+2025-05-01,fluree/db,fluree/db,Fluree,9.99018096923828,0.455
+2025-06-01,fluree/db,fluree/db,Fluree,7.809561252593994,0.42
+2025-07-01,fluree/db,fluree/db,Fluree,7.052323818206787,0.404
+2025-08-01,fluree/db,fluree/db,Fluree,8.842041969299316,0.356
+2025-09-01,fluree/db,fluree/db,Fluree,9.44916820526123,0.339
+2024-10-01,greptimeteam/greptimedb,greptimeteam/greptimedb,GreptimeDB,38.20546340942383,0.108
+2024-11-01,greptimeteam/greptimedb,greptimeteam/greptimedb,GreptimeDB,35.49949264526367,0.106
+2024-12-01,greptimeteam/greptimedb,greptimeteam/greptimedb,GreptimeDB,43.2736930847168,0.125
+2025-01-01,greptimeteam/greptimedb,greptimeteam/greptimedb,GreptimeDB,50.90605926513672,0.098
+2025-02-01,greptimeteam/greptimedb,greptimeteam/greptimedb,GreptimeDB,51.41712188720703,0.106
+2025-03-01,greptimeteam/greptimedb,greptimeteam/greptimedb,GreptimeDB,45.64080047607422,0.134
+2025-04-01,greptimeteam/greptimedb,greptimeteam/greptimedb,GreptimeDB,44.8325309753418,0.128
+2025-05-01,greptimeteam/greptimedb,greptimeteam/greptimedb,GreptimeDB,43.08541870117188,0.153
+2025-06-01,greptimeteam/greptimedb,greptimeteam/greptimedb,GreptimeDB,39.62076187133789,0.131
+2025-07-01,greptimeteam/greptimedb,greptimeteam/greptimedb,GreptimeDB,39.83594512939453,0.138
+2025-08-01,greptimeteam/greptimedb,greptimeteam/greptimedb,GreptimeDB,42.0536994934082,0.148
+2025-09-01,greptimeteam/greptimedb,greptimeteam/greptimedb,GreptimeDB,40.54775238037109,0.122
+2024-10-01,gridgain/gridgain,gridgain/gridgain,GridGain,16.751039505004883,1.49
+2024-11-01,gridgain/gridgain,gridgain/gridgain,GridGain,17.86686134338379,1.418
+2024-12-01,gridgain/gridgain,gridgain/gridgain,GridGain,14.690258979797363,1.373
+2025-01-01,gridgain/gridgain,gridgain/gridgain,GridGain,11.273993492126465,1.315
+2025-02-01,gridgain/gridgain,gridgain/gridgain,GridGain,10.079327583312988,1.285
+2025-03-01,gridgain/gridgain,gridgain/gridgain,GridGain,9.36215591430664,1.317
+2025-04-01,gridgain/gridgain,gridgain/gridgain,GridGain,9.732522010803224,1.324
+2025-05-01,gridgain/gridgain,gridgain/gridgain,GridGain,9.830782890319824,1.326
+2025-06-01,gridgain/gridgain,gridgain/gridgain,GridGain,12.124303817749023,1.303
+2025-07-01,gridgain/gridgain,gridgain/gridgain,GridGain,9.99575424194336,1.322
+2025-08-01,gridgain/gridgain,gridgain/gridgain,GridGain,8.693766593933105,1.287
+2025-09-01,gridgain/gridgain,gridgain/gridgain,GridGain,8.640901565551758,1.388
+2024-10-01,h2database/h2database,h2database/h2database,H2,9.054088592529297,7.316
+2024-11-01,h2database/h2database,h2database/h2database,H2,8.940502166748047,7.095
+2024-12-01,h2database/h2database,h2database/h2database,H2,8.328389167785645,7.021
+2025-01-01,h2database/h2database,h2database/h2database,H2,9.32746124267578,6.952
+2025-02-01,h2database/h2database,h2database/h2database,H2,7.332799434661865,6.831
+2025-03-01,h2database/h2database,h2database/h2database,H2,7.099301338195801,6.939
+2025-04-01,h2database/h2database,h2database/h2database,H2,5.005490303039551,7.19
+2025-05-01,h2database/h2database,h2database/h2database,H2,4.938065052032471,7.259
+2025-06-01,h2database/h2database,h2database/h2database,H2,3.3270747661590576,7.068
+2025-07-01,h2database/h2database,h2database/h2database,H2,3.38694429397583,6.888
+2025-08-01,h2database/h2database,h2database/h2database,H2,5.63352632522583,6.76
+2025-09-01,h2database/h2database,h2database/h2database,H2,7.369428634643555,7.263
+2024-10-01,hazelcast/hazelcast,hazelcast/hazelcast,Hazelcast,17.174335479736328,5.567
+2024-11-01,hazelcast/hazelcast,hazelcast/hazelcast,Hazelcast,14.472143173217772,5.459
+2024-12-01,hazelcast/hazelcast,hazelcast/hazelcast,Hazelcast,10.348305702209473,5.356
+2025-01-01,hazelcast/hazelcast,hazelcast/hazelcast,Hazelcast,10.789057731628418,5.591
+2025-02-01,hazelcast/hazelcast,hazelcast/hazelcast,Hazelcast,6.236995697021484,5.516
+2025-03-01,hazelcast/hazelcast,hazelcast/hazelcast,Hazelcast,6.831390857696533,5.474
+2025-04-01,hazelcast/hazelcast,hazelcast/hazelcast,Hazelcast,7.985430240631103,5.553
+2025-05-01,hazelcast/hazelcast,hazelcast/hazelcast,Hazelcast,5.006893157958984,5.583
+2025-06-01,hazelcast/hazelcast,hazelcast/hazelcast,Hazelcast,7.557844638824463,5.236
+2025-07-01,hazelcast/hazelcast,hazelcast/hazelcast,Hazelcast,5.847249984741211,5.044
+2025-08-01,hazelcast/hazelcast,hazelcast/hazelcast,Hazelcast,4.442217350006104,4.704
+2025-09-01,hazelcast/hazelcast,hazelcast/hazelcast,Hazelcast,4.168634414672852,5.261
+2024-10-01,infinispan/infinispan,infinispan/infinispan,Infinispan,25.702241897583008,2.327
+2024-11-01,infinispan/infinispan,infinispan/infinispan,Infinispan,26.853485107421875,2.219
+2024-12-01,infinispan/infinispan,infinispan/infinispan,Infinispan,30.10912132263184,2.343
+2025-01-01,infinispan/infinispan,infinispan/infinispan,Infinispan,28.50943374633789,2.08
+2025-02-01,infinispan/infinispan,infinispan/infinispan,Infinispan,34.187767028808594,2.009
+2025-03-01,infinispan/infinispan,infinispan/infinispan,Infinispan,32.217323303222656,2.008
+2025-04-01,infinispan/infinispan,infinispan/infinispan,Infinispan,29.23198699951172,1.984
+2025-05-01,infinispan/infinispan,infinispan/infinispan,Infinispan,29.69408416748047,1.919
+2025-06-01,infinispan/infinispan,infinispan/infinispan,Infinispan,30.486026763916016,1.917
+2025-07-01,infinispan/infinispan,infinispan/infinispan,Infinispan,27.424827575683597,1.906
+2025-08-01,infinispan/infinispan,infinispan/infinispan,Infinispan,23.26722717285156,1.94
+2025-09-01,infinispan/infinispan,infinispan/infinispan,Infinispan,20.00526237487793,2.045
+2024-10-01,influxdata/influxdb,influxdata/influxdb,InfluxDB,32.40165328979492,22.394
+2024-11-01,influxdata/influxdb,influxdata/influxdb,InfluxDB,30.12936782836914,21.472
+2024-12-01,influxdata/influxdb,influxdata/influxdb,InfluxDB,38.21213912963867,21.232
+2025-01-01,influxdata/influxdb,influxdata/influxdb,InfluxDB,41.01860809326172,21.54
+2025-02-01,influxdata/influxdb,influxdata/influxdb,InfluxDB,45.03697204589844,21.769
+2025-03-01,influxdata/influxdb,influxdata/influxdb,InfluxDB,43.15478897094727,21.499
+2025-04-01,influxdata/influxdb,influxdata/influxdb,InfluxDB,45.91910552978516,21.539
+2025-05-01,influxdata/influxdb,influxdata/influxdb,InfluxDB,40.25901794433594,21.781
+2025-06-01,influxdata/influxdb,influxdata/influxdb,InfluxDB,38.30722427368164,21.739
+2025-07-01,influxdata/influxdb,influxdata/influxdb,InfluxDB,37.97166061401367,22.648
+2025-08-01,influxdata/influxdb,influxdata/influxdb,InfluxDB,34.96635818481445,22.597
+2025-09-01,influxdata/influxdb,influxdata/influxdb,InfluxDB,29.8778133392334,23.753
+2024-10-01,kuzudb/kuzu,kuzudb/kuzu,Kuzu,38.87074279785156,0.008
+2024-11-01,kuzudb/kuzu,kuzudb/kuzu,Kuzu,37.67331314086914,0.01
+2024-12-01,kuzudb/kuzu,kuzudb/kuzu,Kuzu,35.873931884765625,0.019
+2025-01-01,kuzudb/kuzu,kuzudb/kuzu,Kuzu,36.42535400390625,0.018
+2025-02-01,kuzudb/kuzu,kuzudb/kuzu,Kuzu,37.76370620727539,0.018
+2025-03-01,kuzudb/kuzu,kuzudb/kuzu,Kuzu,39.517425537109375,0.074
+2025-04-01,kuzudb/kuzu,kuzudb/kuzu,Kuzu,42.02019119262695,0.019
+2025-05-01,kuzudb/kuzu,kuzudb/kuzu,Kuzu,43.10702896118164,0.019
+2025-06-01,kuzudb/kuzu,kuzudb/kuzu,Kuzu,42.86113739013672,0.019
+2025-07-01,kuzudb/kuzu,kuzudb/kuzu,Kuzu,39.57453155517578,0.019
+2025-08-01,kuzudb/kuzu,kuzudb/kuzu,Kuzu,40.97956466674805,0.024
+2025-09-01,kuzudb/kuzu,kuzudb/kuzu,Kuzu,35.8045654296875,0.039
+2024-10-01,manticoresoftware/manticoresearch,manticoresoftware/manticoresearch,Manticore Search,32.235538482666016,0.219
+2024-11-01,manticoresoftware/manticoresearch,manticoresoftware/manticoresearch,Manticore Search,34.42683792114258,0.229
+2024-12-01,manticoresoftware/manticoresearch,manticoresoftware/manticoresearch,Manticore Search,32.272560119628906,0.229
+2025-01-01,manticoresoftware/manticoresearch,manticoresoftware/manticoresearch,Manticore Search,31.385557174682617,0.198
+2025-02-01,manticoresoftware/manticoresearch,manticoresoftware/manticoresearch,Manticore Search,32.42357635498047,0.222
+2025-03-01,manticoresoftware/manticoresearch,manticoresoftware/manticoresearch,Manticore Search,34.06580352783203,0.254
+2025-04-01,manticoresoftware/manticoresearch,manticoresoftware/manticoresearch,Manticore Search,29.13678932189941,0.256
+2025-05-01,manticoresoftware/manticoresearch,manticoresoftware/manticoresearch,Manticore Search,30.55214500427246,0.278
+2025-06-01,manticoresoftware/manticoresearch,manticoresoftware/manticoresearch,Manticore Search,31.64437294006348,0.26
+2025-07-01,manticoresoftware/manticoresearch,manticoresoftware/manticoresearch,Manticore Search,32.72427749633789,0.252
+2025-08-01,manticoresoftware/manticoresearch,manticoresoftware/manticoresearch,Manticore Search,34.10328674316406,0.247
+2025-09-01,manticoresoftware/manticoresearch,manticoresoftware/manticoresearch,Manticore Search,31.84084701538086,0.254
+2024-10-01,mariadb/server,mariadb/server,MariaDB,67.59413146972656,84.886
+2024-11-01,mariadb/server,mariadb/server,MariaDB,67.60105895996094,82.701
+2024-12-01,mariadb/server,mariadb/server,MariaDB,56.95252227783203,83.767
+2025-01-01,mariadb/server,mariadb/server,MariaDB,60.07398986816406,85.582
+2025-02-01,mariadb/server,mariadb/server,MariaDB,63.23159408569336,89.505
+2025-03-01,mariadb/server,mariadb/server,MariaDB,72.76953887939453,94.227
+2025-04-01,mariadb/server,mariadb/server,MariaDB,76.57212829589844,94.339
+2025-05-01,mariadb/server,mariadb/server,MariaDB,66.77778625488281,93.608
+2025-06-01,mariadb/server,mariadb/server,MariaDB,65.69363403320312,94.536
+2025-07-01,mariadb/server,mariadb/server,MariaDB,59.312232971191406,95.442
+2025-08-01,mariadb/server,mariadb/server,MariaDB,61.15165328979492,93.593
+2025-09-01,mariadb/server,mariadb/server,MariaDB,60.51778411865234,91.46
+2024-10-01,marqo-ai/marqo,marqo-ai/marqo,Marqo,17.961633682250977,0.351
+2024-11-01,marqo-ai/marqo,marqo-ai/marqo,Marqo,16.28384780883789,0.349
+2024-12-01,marqo-ai/marqo,marqo-ai/marqo,Marqo,17.114700317382812,0.332
+2025-01-01,marqo-ai/marqo,marqo-ai/marqo,Marqo,17.7745304107666,0.308
+2025-02-01,marqo-ai/marqo,marqo-ai/marqo,Marqo,17.33434295654297,0.291
+2025-03-01,marqo-ai/marqo,marqo-ai/marqo,Marqo,18.773630142211918,0.322
+2025-04-01,marqo-ai/marqo,marqo-ai/marqo,Marqo,17.131052017211914,0.355
+2025-05-01,marqo-ai/marqo,marqo-ai/marqo,Marqo,16.4735164642334,0.369
+2025-06-01,marqo-ai/marqo,marqo-ai/marqo,Marqo,14.190597534179688,0.348
+2025-07-01,marqo-ai/marqo,marqo-ai/marqo,Marqo,16.352283477783203,0.339
+2025-08-01,marqo-ai/marqo,marqo-ai/marqo,Marqo,14.054608345031738,0.376
+2025-09-01,marqo-ai/marqo,marqo-ai/marqo,Marqo,13.383359909057615,0.403
+2024-10-01,matrixorigin/matrixone,matrixorigin/matrixone,MatrixOne,89.6214370727539,0.977
+2024-11-01,matrixorigin/matrixone,matrixorigin/matrixone,MatrixOne,98.53453063964844,0.967
+2024-12-01,matrixorigin/matrixone,matrixorigin/matrixone,MatrixOne,93.1936264038086,1.046
+2025-01-01,matrixorigin/matrixone,matrixorigin/matrixone,MatrixOne,87.63159942626953,1.053
+2025-02-01,matrixorigin/matrixone,matrixorigin/matrixone,MatrixOne,72.31371307373047,1.046
+2025-03-01,matrixorigin/matrixone,matrixorigin/matrixone,MatrixOne,69.07966613769531,0.989
+2025-04-01,matrixorigin/matrixone,matrixorigin/matrixone,MatrixOne,65.79861450195312,0.906
+2025-05-01,matrixorigin/matrixone,matrixorigin/matrixone,MatrixOne,59.009525299072266,0.851
+2025-06-01,matrixorigin/matrixone,matrixorigin/matrixone,MatrixOne,57.41508483886719,0.803
+2025-07-01,matrixorigin/matrixone,matrixorigin/matrixone,MatrixOne,52.985164642333984,0.744
+2025-08-01,matrixorigin/matrixone,matrixorigin/matrixone,MatrixOne,47.22665023803711,0.737
+2025-09-01,matrixorigin/matrixone,matrixorigin/matrixone,MatrixOne,46.35665893554688,0.756
+2024-10-01,mbdavid/litedb,mbdavid/litedb,LiteDB,6.270891189575195,1.13
+2024-11-01,mbdavid/litedb,mbdavid/litedb,LiteDB,,1.145
+2024-12-01,mbdavid/litedb,mbdavid/litedb,LiteDB,,1.136
+2025-01-01,mbdavid/litedb,mbdavid/litedb,LiteDB,,1.078
+2025-02-01,mbdavid/litedb,mbdavid/litedb,LiteDB,,1.114
+2025-03-01,mbdavid/litedb,mbdavid/litedb,LiteDB,,1.091
+2025-04-01,mbdavid/litedb,mbdavid/litedb,LiteDB,,1.053
+2025-05-01,mbdavid/litedb,mbdavid/litedb,LiteDB,,1.065
+2025-06-01,mbdavid/litedb,mbdavid/litedb,LiteDB,,1.043
+2025-07-01,mbdavid/litedb,mbdavid/litedb,LiteDB,,1.045
+2025-08-01,mbdavid/litedb,mbdavid/litedb,LiteDB,,1.055
+2025-09-01,mbdavid/litedb,mbdavid/litedb,LiteDB,,1.189
+2024-10-01,meilisearch/meilisearch,meilisearch/meilisearch,Meilisearch,24.26921272277832,1.068
+2024-11-01,meilisearch/meilisearch,meilisearch/meilisearch,Meilisearch,25.81222915649414,1.096
+2024-12-01,meilisearch/meilisearch,meilisearch/meilisearch,Meilisearch,26.36005210876465,1.15
+2025-01-01,meilisearch/meilisearch,meilisearch/meilisearch,Meilisearch,29.182523727416992,1.077
+2025-02-01,meilisearch/meilisearch,meilisearch/meilisearch,Meilisearch,25.17849349975586,1.134
+2025-03-01,meilisearch/meilisearch,meilisearch/meilisearch,Meilisearch,24.80806541442871,1.201
+2025-04-01,meilisearch/meilisearch,meilisearch/meilisearch,Meilisearch,21.57963752746582,1.162
+2025-05-01,meilisearch/meilisearch,meilisearch/meilisearch,Meilisearch,26.34576797485352,1.139
+2025-06-01,meilisearch/meilisearch,meilisearch/meilisearch,Meilisearch,30.6157283782959,1.134
+2025-07-01,meilisearch/meilisearch,meilisearch/meilisearch,Meilisearch,22.08392906188965,1.237
+2025-08-01,meilisearch/meilisearch,meilisearch/meilisearch,Meilisearch,20.240121841430664,1.274
+2025-09-01,meilisearch/meilisearch,meilisearch/meilisearch,Meilisearch,16.604978561401367,1.483
+2024-10-01,memgraph/memgraph,memgraph/memgraph,Memgraph,33.25961685180664,2.816
+2024-11-01,memgraph/memgraph,memgraph/memgraph,Memgraph,26.85819625854492,2.722
+2024-12-01,memgraph/memgraph,memgraph/memgraph,Memgraph,29.285106658935547,2.706
+2025-01-01,memgraph/memgraph,memgraph/memgraph,Memgraph,27.294662475585938,2.621
+2025-02-01,memgraph/memgraph,memgraph/memgraph,Memgraph,30.00180435180664,2.542
+2025-03-01,memgraph/memgraph,memgraph/memgraph,Memgraph,27.14887809753418,2.606
+2025-04-01,memgraph/memgraph,memgraph/memgraph,Memgraph,24.29906845092773,2.569
+2025-05-01,memgraph/memgraph,memgraph/memgraph,Memgraph,28.490589141845703,2.535
+2025-06-01,memgraph/memgraph,memgraph/memgraph,Memgraph,27.9815731048584,2.478
+2025-07-01,memgraph/memgraph,memgraph/memgraph,Memgraph,27.03925895690918,2.526
+2025-08-01,memgraph/memgraph,memgraph/memgraph,Memgraph,24.150697708129883,2.366
+2025-09-01,memgraph/memgraph,memgraph/memgraph,Memgraph,26.97128677368164,2.437
+2024-10-01,milvus-io/milvus,milvus-io/milvus,Milvus,166.43165588378906,3.024
+2024-11-01,milvus-io/milvus,milvus-io/milvus,Milvus,159.57861328125,2.854
+2024-12-01,milvus-io/milvus,milvus-io/milvus,Milvus,162.68577575683594,2.818
+2025-01-01,milvus-io/milvus,milvus-io/milvus,Milvus,162.14547729492188,2.76
+2025-02-01,milvus-io/milvus,milvus-io/milvus,Milvus,153.91873168945312,2.771
+2025-03-01,milvus-io/milvus,milvus-io/milvus,Milvus,153.52378845214844,2.772
+2025-04-01,milvus-io/milvus,milvus-io/milvus,Milvus,152.30661010742188,2.899
+2025-05-01,milvus-io/milvus,milvus-io/milvus,Milvus,144.91775512695312,2.918
+2025-06-01,milvus-io/milvus,milvus-io/milvus,Milvus,133.74412536621094,3.017
+2025-07-01,milvus-io/milvus,milvus-io/milvus,Milvus,141.54283142089844,3.358
+2025-08-01,milvus-io/milvus,milvus-io/milvus,Milvus,123.9555892944336,3.829
+2025-09-01,milvus-io/milvus,milvus-io/milvus,Milvus,116.4377212524414,4.517
+2024-10-01,monetdb/monetdb,monetdb/monetdb,MonetDB,11.688950538635254,1.699
+2024-11-01,monetdb/monetdb,monetdb/monetdb,MonetDB,11.916437149047852,1.636
+2024-12-01,monetdb/monetdb,monetdb/monetdb,MonetDB,6.733436107635498,1.693
+2025-01-01,monetdb/monetdb,monetdb/monetdb,MonetDB,6.326675415039063,1.625
+2025-02-01,monetdb/monetdb,monetdb/monetdb,MonetDB,5.045425415039063,1.671
+2025-03-01,monetdb/monetdb,monetdb/monetdb,MonetDB,6.942739963531494,1.615
+2025-04-01,monetdb/monetdb,monetdb/monetdb,MonetDB,5.568955898284912,1.57
+2025-05-01,monetdb/monetdb,monetdb/monetdb,MonetDB,6.733868598937988,1.578
+2025-06-01,monetdb/monetdb,monetdb/monetdb,MonetDB,3.899982690811157,1.565
+2025-07-01,monetdb/monetdb,monetdb/monetdb,MonetDB,3.865493297576904,1.607
+2025-08-01,monetdb/monetdb,monetdb/monetdb,MonetDB,4.210318088531494,1.614
+2025-09-01,monetdb/monetdb,monetdb/monetdb,MonetDB,5.512317180633545,1.554
+2024-10-01,neo4j/neo4j,neo4j/neo4j,Neo4j,7.7669806480407715,42.506
+2024-11-01,neo4j/neo4j,neo4j/neo4j,Neo4j,8.13928508758545,42.699
+2024-12-01,neo4j/neo4j,neo4j/neo4j,Neo4j,10.090578079223633,43.073
+2025-01-01,neo4j/neo4j,neo4j/neo4j,Neo4j,7.453680992126465,43.69
+2025-02-01,neo4j/neo4j,neo4j/neo4j,Neo4j,7.260646820068359,45.344
+2025-03-01,neo4j/neo4j,neo4j/neo4j,Neo4j,10.406935691833496,46.147
+2025-04-01,neo4j/neo4j,neo4j/neo4j,Neo4j,10.393237113952637,47.59
+2025-05-01,neo4j/neo4j,neo4j/neo4j,Neo4j,8.420438766479492,47.912
+2025-06-01,neo4j/neo4j,neo4j/neo4j,Neo4j,4.437264919281006,51.333
+2025-07-01,neo4j/neo4j,neo4j/neo4j,Neo4j,4.973233222961426,54.636
+2025-08-01,neo4j/neo4j,neo4j/neo4j,Neo4j,3.5035829544067383,54.473
+2025-09-01,neo4j/neo4j,neo4j/neo4j,Neo4j,3.5775535106658936,53.781
+2024-10-01,oceanbase/oceanbase,oceanbase/oceanbase,OceanBase,10.877570152282717,2.034
+2024-11-01,oceanbase/oceanbase,oceanbase/oceanbase,OceanBase,7.870358467102051,2.018
+2024-12-01,oceanbase/oceanbase,oceanbase/oceanbase,OceanBase,12.347079277038574,2.02
+2025-01-01,oceanbase/oceanbase,oceanbase/oceanbase,OceanBase,9.884033203125,2.363
+2025-02-01,oceanbase/oceanbase,oceanbase/oceanbase,OceanBase,7.652290821075439,2.361
+2025-03-01,oceanbase/oceanbase,oceanbase/oceanbase,OceanBase,7.075032711029053,2.327
+2025-04-01,oceanbase/oceanbase,oceanbase/oceanbase,OceanBase,8.07068920135498,2.324
+2025-05-01,oceanbase/oceanbase,oceanbase/oceanbase,OceanBase,9.60774040222168,2.425
+2025-06-01,oceanbase/oceanbase,oceanbase/oceanbase,OceanBase,6.656572818756104,2.431
+2025-07-01,oceanbase/oceanbase,oceanbase/oceanbase,OceanBase,7.204418659210205,2.515
+2025-08-01,oceanbase/oceanbase,oceanbase/oceanbase,OceanBase,3.6211678981781006,2.821
+2025-09-01,oceanbase/oceanbase,oceanbase/oceanbase,OceanBase,2.3751471042633057,3.04
+2024-10-01,opengemini/opengemini,opengemini/opengemini,openGemini,14.307270050048828,0.005
+2024-11-01,opengemini/opengemini,opengemini/opengemini,openGemini,11.974745750427246,0.005
+2024-12-01,opengemini/opengemini,opengemini/opengemini,openGemini,12.720630645751951,0.018
+2025-01-01,opengemini/opengemini,opengemini/opengemini,openGemini,10.135269165039062,0.005
+2025-02-01,opengemini/opengemini,opengemini/opengemini,openGemini,5.493289947509766,0.005
+2025-03-01,opengemini/opengemini,opengemini/opengemini,openGemini,4.259425163269043,0.036
+2025-04-01,opengemini/opengemini,opengemini/opengemini,openGemini,5.071835994720459,0.005
+2025-05-01,opengemini/opengemini,opengemini/opengemini,openGemini,3.9129600524902335,0.018
+2025-06-01,opengemini/opengemini,opengemini/opengemini,openGemini,4.127957344055176,0.005
+2025-07-01,opengemini/opengemini,opengemini/opengemini,openGemini,3.266425609588623,0.04
+2025-08-01,opengemini/opengemini,opengemini/opengemini,openGemini,2.4249634742736816,0.005
+2025-09-01,opengemini/opengemini,opengemini/opengemini,openGemini,1.3542555570602417,0.005
+2024-10-01,opensearch-project/opensearch,opensearch-project/opensearch,OpenSearch,145.2710723876953,17.311
+2024-11-01,opensearch-project/opensearch,opensearch-project/opensearch,OpenSearch,118.8766632080078,17.601
+2024-12-01,opensearch-project/opensearch,opensearch-project/opensearch,OpenSearch,111.1177749633789,17.184
+2025-01-01,opensearch-project/opensearch,opensearch-project/opensearch,OpenSearch,114.9724349975586,16.789
+2025-02-01,opensearch-project/opensearch,opensearch-project/opensearch,OpenSearch,114.82818603515624,16.85
+2025-03-01,opensearch-project/opensearch,opensearch-project/opensearch,OpenSearch,108.96736145019533,16.972
+2025-04-01,opensearch-project/opensearch,opensearch-project/opensearch,OpenSearch,123.4405746459961,17.193
+2025-05-01,opensearch-project/opensearch,opensearch-project/opensearch,OpenSearch,125.14869689941406,17.377
+2025-06-01,opensearch-project/opensearch,opensearch-project/opensearch,OpenSearch,121.96631622314452,16.896
+2025-07-01,opensearch-project/opensearch,opensearch-project/opensearch,OpenSearch,117.67288970947266,17.299
+2025-08-01,opensearch-project/opensearch,opensearch-project/opensearch,OpenSearch,111.95774841308594,18.483
+2025-09-01,opensearch-project/opensearch,opensearch-project/opensearch,OpenSearch,111.0180435180664,19.931
+2024-10-01,orientechnologies/orientdb,orientechnologies/orientdb,OrientDB,6.610676288604736,3.032
+2024-11-01,orientechnologies/orientdb,orientechnologies/orientdb,OrientDB,5.692592620849609,2.973
+2024-12-01,orientechnologies/orientdb,orientechnologies/orientdb,OrientDB,5.180166244506836,2.868
+2025-01-01,orientechnologies/orientdb,orientechnologies/orientdb,OrientDB,7.043922424316406,2.792
+2025-02-01,orientechnologies/orientdb,orientechnologies/orientdb,OrientDB,6.1363606452941895,2.727
+2025-03-01,orientechnologies/orientdb,orientechnologies/orientdb,OrientDB,6.117609977722168,2.722
+2025-04-01,orientechnologies/orientdb,orientechnologies/orientdb,OrientDB,5.444797992706299,2.715
+2025-05-01,orientechnologies/orientdb,orientechnologies/orientdb,OrientDB,6.238330841064453,2.709
+2025-06-01,orientechnologies/orientdb,orientechnologies/orientdb,OrientDB,5.364412784576416,2.709
+2025-07-01,orientechnologies/orientdb,orientechnologies/orientdb,OrientDB,4.669545650482178,2.644
+2025-08-01,orientechnologies/orientdb,orientechnologies/orientdb,OrientDB,6.310491561889648,2.641
+2025-09-01,orientechnologies/orientdb,orientechnologies/orientdb,OrientDB,6.544559478759766,2.587
+2024-10-01,percona/percona-server,percona/percona-server,Percona Server for MySQL,12.874673843383787,2.034
+2024-11-01,percona/percona-server,percona/percona-server,Percona Server for MySQL,11.77324104309082,2.075
+2024-12-01,percona/percona-server,percona/percona-server,Percona Server for MySQL,11.201940536499023,2.006
+2025-01-01,percona/percona-server,percona/percona-server,Percona Server for MySQL,10.205443382263184,1.948
+2025-02-01,percona/percona-server,percona/percona-server,Percona Server for MySQL,7.91937255859375,1.954
+2025-03-01,percona/percona-server,percona/percona-server,Percona Server for MySQL,4.771901607513428,1.945
+2025-04-01,percona/percona-server,percona/percona-server,Percona Server for MySQL,10.967086791992188,1.918
+2025-05-01,percona/percona-server,percona/percona-server,Percona Server for MySQL,7.376415252685547,1.937
+2025-06-01,percona/percona-server,percona/percona-server,Percona Server for MySQL,7.408009052276611,1.926
+2025-07-01,percona/percona-server,percona/percona-server,Percona Server for MySQL,14.775629043579102,1.91
+2025-08-01,percona/percona-server,percona/percona-server,Percona Server for MySQL,8.976248741149902,1.961
+2025-09-01,percona/percona-server,percona/percona-server,Percona Server for MySQL,7.249982833862305,2.114
+2024-10-01,percona/percona-server-mongodb,percona/percona-server-mongodb,Percona Server for MongoDB,2.2803850173950195,0.472
+2024-11-01,percona/percona-server-mongodb,percona/percona-server-mongodb,Percona Server for MongoDB,4.791482925415039,0.496
+2024-12-01,percona/percona-server-mongodb,percona/percona-server-mongodb,Percona Server for MongoDB,2.471831798553467,0.487
+2025-01-01,percona/percona-server-mongodb,percona/percona-server-mongodb,Percona Server for MongoDB,4.754842758178711,0.435
+2025-02-01,percona/percona-server-mongodb,percona/percona-server-mongodb,Percona Server for MongoDB,4.059600353240967,0.429
+2025-03-01,percona/percona-server-mongodb,percona/percona-server-mongodb,Percona Server for MongoDB,4.679779052734375,0.474
+2025-04-01,percona/percona-server-mongodb,percona/percona-server-mongodb,Percona Server for MongoDB,6.595656394958496,0.465
+2025-05-01,percona/percona-server-mongodb,percona/percona-server-mongodb,Percona Server for MongoDB,6.630852699279785,0.475
+2025-06-01,percona/percona-server-mongodb,percona/percona-server-mongodb,Percona Server for MongoDB,7.426379680633545,0.462
+2025-07-01,percona/percona-server-mongodb,percona/percona-server-mongodb,Percona Server for MongoDB,8.167168617248535,0.512
+2025-08-01,percona/percona-server-mongodb,percona/percona-server-mongodb,Percona Server for MongoDB,7.867929935455322,0.486
+2025-09-01,percona/percona-server-mongodb,percona/percona-server-mongodb,Percona Server for MongoDB,5.374646663665772,0.498
+2024-10-01,pingcap/tidb,pingcap/tidb,TiDB,158.1168212890625,3.661
+2024-11-01,pingcap/tidb,pingcap/tidb,TiDB,159.18548583984375,3.63
+2024-12-01,pingcap/tidb,pingcap/tidb,TiDB,160.46876525878906,3.862
+2025-01-01,pingcap/tidb,pingcap/tidb,TiDB,152.85133361816406,3.679
+2025-02-01,pingcap/tidb,pingcap/tidb,TiDB,144.97662353515625,3.856
+2025-03-01,pingcap/tidb,pingcap/tidb,TiDB,144.6322021484375,3.742
+2025-04-01,pingcap/tidb,pingcap/tidb,TiDB,152.55076599121094,3.496
+2025-05-01,pingcap/tidb,pingcap/tidb,TiDB,156.16775512695312,3.584
+2025-06-01,pingcap/tidb,pingcap/tidb,TiDB,156.69729614257812,3.278
+2025-07-01,pingcap/tidb,pingcap/tidb,TiDB,149.95152282714844,3.628
+2025-08-01,pingcap/tidb,pingcap/tidb,TiDB,142.44351196289062,3.381
+2025-09-01,pingcap/tidb,pingcap/tidb,TiDB,136.91830444335938,3.42
+2024-10-01,postgres/postgres,postgres/postgres,PostgreSQL,5.421685695648193,652.156
+2024-11-01,postgres/postgres,postgres/postgres,PostgreSQL,5.979850769042969,654.336
+2024-12-01,postgres/postgres,postgres/postgres,PostgreSQL,7.706209182739258,666.372
+2025-01-01,postgres/postgres,postgres/postgres,PostgreSQL,7.090710639953613,663.405
+2025-02-01,postgres/postgres,postgres/postgres,PostgreSQL,6.830920696258545,659.618
+2025-03-01,postgres/postgres,postgres/postgres,PostgreSQL,6.815482139587402,663.424
+2025-04-01,postgres/postgres,postgres/postgres,PostgreSQL,7.963947772979736,667.246
+2025-05-01,postgres/postgres,postgres/postgres,PostgreSQL,8.782879829406738,674.315
+2025-06-01,postgres/postgres,postgres/postgres,PostgreSQL,7.793498516082764,680.651
+2025-07-01,postgres/postgres,postgres/postgres,PostgreSQL,6.571386814117432,680.886
+2025-08-01,postgres/postgres,postgres/postgres,PostgreSQL,2.5942206382751465,671.255
+2025-09-01,postgres/postgres,postgres/postgres,PostgreSQL,5.256667137145996,657.171
+2024-10-01,prestodb/presto,prestodb/presto,Presto,107.15837860107422,7.052
+2024-11-01,prestodb/presto,prestodb/presto,Presto,112.9509048461914,6.56
+2024-12-01,prestodb/presto,prestodb/presto,Presto,110.02892303466795,6.544
+2025-01-01,prestodb/presto,prestodb/presto,Presto,100.29557037353516,6.579
+2025-02-01,prestodb/presto,prestodb/presto,Presto,112.74722290039062,6.309
+2025-03-01,prestodb/presto,prestodb/presto,Presto,108.77367401123048,6.118
+2025-04-01,prestodb/presto,prestodb/presto,Presto,114.1112289428711,6.287
+2025-05-01,prestodb/presto,prestodb/presto,Presto,115.18756866455078,6.375
+2025-06-01,prestodb/presto,prestodb/presto,Presto,116.73843383789062,6.158
+2025-07-01,prestodb/presto,prestodb/presto,Presto,108.1837158203125,6.047
+2025-08-01,prestodb/presto,prestodb/presto,Presto,116.08021545410156,6.035
+2025-09-01,prestodb/presto,prestodb/presto,Presto,107.61167907714844,6.481
+2024-10-01,prometheus/prometheus,prometheus/prometheus,Prometheus,81.41429901123047,7.31
+2024-11-01,prometheus/prometheus,prometheus/prometheus,Prometheus,78.30824279785156,6.921
+2024-12-01,prometheus/prometheus,prometheus/prometheus,Prometheus,73.83592987060547,7.123
+2025-01-01,prometheus/prometheus,prometheus/prometheus,Prometheus,68.04647064208984,6.853
+2025-02-01,prometheus/prometheus,prometheus/prometheus,Prometheus,66.4386978149414,6.687
+2025-03-01,prometheus/prometheus,prometheus/prometheus,Prometheus,68.02273559570312,6.379
+2025-04-01,prometheus/prometheus,prometheus/prometheus,Prometheus,61.41971206665039,6.482
+2025-05-01,prometheus/prometheus,prometheus/prometheus,Prometheus,55.88726043701172,6.766
+2025-06-01,prometheus/prometheus,prometheus/prometheus,Prometheus,57.86458587646485,6.957
+2025-07-01,prometheus/prometheus,prometheus/prometheus,Prometheus,53.42953872680664,7.124
+2025-08-01,prometheus/prometheus,prometheus/prometheus,Prometheus,54.395206451416016,7.306
+2025-09-01,prometheus/prometheus,prometheus/prometheus,Prometheus,47.94795608520508,7.923
+2024-10-01,qdrant/qdrant,qdrant/qdrant,Qdrant,55.88131332397461,1.691
+2024-11-01,qdrant/qdrant,qdrant/qdrant,Qdrant,63.01440048217773,1.765
+2024-12-01,qdrant/qdrant,qdrant/qdrant,Qdrant,62.84058380126953,1.849
+2025-01-01,qdrant/qdrant,qdrant/qdrant,Qdrant,58.7779655456543,1.933
+2025-02-01,qdrant/qdrant,qdrant/qdrant,Qdrant,58.64118957519531,1.937
+2025-03-01,qdrant/qdrant,qdrant/qdrant,Qdrant,59.98347854614258,2.034
+2025-04-01,qdrant/qdrant,qdrant/qdrant,Qdrant,57.75339889526367,2.23
+2025-05-01,qdrant/qdrant,qdrant/qdrant,Qdrant,56.96608352661133,2.281
+2025-06-01,qdrant/qdrant,qdrant/qdrant,Qdrant,54.07514572143555,2.418
+2025-07-01,qdrant/qdrant,qdrant/qdrant,Qdrant,51.07266616821289,2.538
+2025-08-01,qdrant/qdrant,qdrant/qdrant,Qdrant,53.44366455078125,2.925
+2025-09-01,qdrant/qdrant,qdrant/qdrant,Qdrant,46.09051132202149,3.437
+2024-10-01,questdb/questdb,questdb/questdb,QuestDB,45.36075973510742,2.833
+2024-11-01,questdb/questdb,questdb/questdb,QuestDB,45.17233276367188,2.906
+2024-12-01,questdb/questdb,questdb/questdb,QuestDB,42.794044494628906,2.98
+2025-01-01,questdb/questdb,questdb/questdb,QuestDB,38.3868522644043,3.003
+2025-02-01,questdb/questdb,questdb/questdb,QuestDB,37.59767532348633,3.093
+2025-03-01,questdb/questdb,questdb/questdb,QuestDB,37.49320983886719,3.097
+2025-04-01,questdb/questdb,questdb/questdb,QuestDB,38.48898315429688,3.124
+2025-05-01,questdb/questdb,questdb/questdb,QuestDB,32.783660888671875,3.255
+2025-06-01,questdb/questdb,questdb/questdb,QuestDB,34.842769622802734,3.237
+2025-07-01,questdb/questdb,questdb/questdb,QuestDB,53.59370803833008,3.241
+2025-08-01,questdb/questdb,questdb/questdb,QuestDB,42.041236877441406,3.053
+2025-09-01,questdb/questdb,questdb/questdb,QuestDB,39.48556518554688,3.506
+2024-10-01,ravendb/ravendb,ravendb/ravendb,RavenDB,69.22344207763672,2.696
+2024-11-01,ravendb/ravendb,ravendb/ravendb,RavenDB,70.22880554199219,2.7
+2024-12-01,ravendb/ravendb,ravendb/ravendb,RavenDB,70.83312225341797,2.591
+2025-01-01,ravendb/ravendb,ravendb/ravendb,RavenDB,63.46864318847656,2.497
+2025-02-01,ravendb/ravendb,ravendb/ravendb,RavenDB,65.11988830566406,2.528
+2025-03-01,ravendb/ravendb,ravendb/ravendb,RavenDB,56.30150604248047,2.532
+2025-04-01,ravendb/ravendb,ravendb/ravendb,RavenDB,63.333126068115234,2.504
+2025-05-01,ravendb/ravendb,ravendb/ravendb,RavenDB,62.7842025756836,2.593
+2025-06-01,ravendb/ravendb,ravendb/ravendb,RavenDB,58.59991455078125,2.65
+2025-07-01,ravendb/ravendb,ravendb/ravendb,RavenDB,59.60065078735352,2.586
+2025-08-01,ravendb/ravendb,ravendb/ravendb,RavenDB,58.24062347412109,2.52
+2025-09-01,ravendb/ravendb,ravendb/ravendb,RavenDB,60.36891174316406,2.424
+2024-10-01,realm/realm-core,realm/realm-core,Realm,16.963672637939453,7.047
+2024-11-01,realm/realm-core,realm/realm-core,Realm,11.13376522064209,7.054
+2024-12-01,realm/realm-core,realm/realm-core,Realm,8.734758377075195,7.121
+2025-01-01,realm/realm-core,realm/realm-core,Realm,7.224690914154053,6.992
+2025-02-01,realm/realm-core,realm/realm-core,Realm,5.53431510925293,6.742
+2025-03-01,realm/realm-core,realm/realm-core,Realm,2.079113721847534,6.622
+2025-04-01,realm/realm-core,realm/realm-core,Realm,0.9939554333686828,6.761
+2025-05-01,realm/realm-core,realm/realm-core,Realm,,6.803
+2025-06-01,realm/realm-core,realm/realm-core,Realm,0.3556070029735565,6.597
+2025-07-01,realm/realm-core,realm/realm-core,Realm,0.4672315120697021,6.454
+2025-08-01,realm/realm-core,realm/realm-core,Realm,,6.43
+2025-09-01,realm/realm-core,realm/realm-core,Realm,,6.816
+2024-10-01,redis/redis,redis/redis,Redis,32.47606658935547,149.63
+2024-11-01,redis/redis,redis/redis,Redis,26.83769989013672,148.642
+2024-12-01,redis/redis,redis/redis,Redis,25.814781188964844,150.271
+2025-01-01,redis/redis,redis/redis,Redis,24.923858642578125,153.356
+2025-02-01,redis/redis,redis/redis,Redis,29.086071014404297,157.909
+2025-03-01,redis/redis,redis/redis,Redis,28.543466567993164,155.361
+2025-04-01,redis/redis,redis/redis,Redis,38.54297637939453,154.111
+2025-05-01,redis/redis,redis/redis,Redis,45.67014694213867,152.189
+2025-06-01,redis/redis,redis/redis,Redis,35.60395050048828,151.722
+2025-07-01,redis/redis,redis/redis,Redis,37.62496948242188,149.716
+2025-08-01,redis/redis,redis/redis,Redis,32.56609344482422,147.19
+2025-09-01,redis/redis,redis/redis,Redis,26.91957664489746,145.174
+2024-10-01,risingwavelabs/risingwave,risingwavelabs/risingwave,RisingWave,90.34680938720705,0.601
+2024-11-01,risingwavelabs/risingwave,risingwavelabs/risingwave,RisingWave,90.02167510986328,0.632
+2024-12-01,risingwavelabs/risingwave,risingwavelabs/risingwave,RisingWave,89.04462432861328,0.615
+2025-01-01,risingwavelabs/risingwave,risingwavelabs/risingwave,RisingWave,88.66376495361328,0.611
+2025-02-01,risingwavelabs/risingwave,risingwavelabs/risingwave,RisingWave,88.15476989746094,0.581
+2025-03-01,risingwavelabs/risingwave,risingwavelabs/risingwave,RisingWave,79.25252532958984,0.644
+2025-04-01,risingwavelabs/risingwave,risingwavelabs/risingwave,RisingWave,75.12059020996094,0.724
+2025-05-01,risingwavelabs/risingwave,risingwavelabs/risingwave,RisingWave,76.70072937011719,0.747
+2025-06-01,risingwavelabs/risingwave,risingwavelabs/risingwave,RisingWave,74.60005187988281,0.722
+2025-07-01,risingwavelabs/risingwave,risingwavelabs/risingwave,RisingWave,75.1795425415039,0.708
+2025-08-01,risingwavelabs/risingwave,risingwavelabs/risingwave,RisingWave,78.00313568115234,0.675
+2025-09-01,risingwavelabs/risingwave,risingwavelabs/risingwave,RisingWave,68.09107208251953,0.641
+2024-10-01,starrocks/starrocks,starrocks/starrocks,StarRocks,227.8804931640625,0.964
+2024-11-01,starrocks/starrocks,starrocks/starrocks,StarRocks,210.93637084960935,0.873
+2024-12-01,starrocks/starrocks,starrocks/starrocks,StarRocks,216.1298675537109,1.07
+2025-01-01,starrocks/starrocks,starrocks/starrocks,StarRocks,207.5700836181641,1.135
+2025-02-01,starrocks/starrocks,starrocks/starrocks,StarRocks,203.28488159179688,1.065
+2025-03-01,starrocks/starrocks,starrocks/starrocks,StarRocks,216.81219482421875,1.005
+2025-04-01,starrocks/starrocks,starrocks/starrocks,StarRocks,213.22122192382807,1.082
+2025-05-01,starrocks/starrocks,starrocks/starrocks,StarRocks,210.68289184570312,0.94
+2025-06-01,starrocks/starrocks,starrocks/starrocks,StarRocks,191.16026306152344,1.111
+2025-07-01,starrocks/starrocks,starrocks/starrocks,StarRocks,197.28305053710935,1.309
+2025-08-01,starrocks/starrocks,starrocks/starrocks,StarRocks,191.03921508789065,1.283
+2025-09-01,starrocks/starrocks,starrocks/starrocks,StarRocks,182.24566650390625,1.33
+2024-10-01,surrealdb/surrealdb,surrealdb/surrealdb,SurrealDB,62.83732986450195,1.068
+2024-11-01,surrealdb/surrealdb,surrealdb/surrealdb,SurrealDB,60.68536758422852,1.008
+2024-12-01,surrealdb/surrealdb,surrealdb/surrealdb,SurrealDB,57.15004348754883,0.977
+2025-01-01,surrealdb/surrealdb,surrealdb/surrealdb,SurrealDB,53.37353897094727,0.968
+2025-02-01,surrealdb/surrealdb,surrealdb/surrealdb,SurrealDB,47.21595764160156,0.949
+2025-03-01,surrealdb/surrealdb,surrealdb/surrealdb,SurrealDB,41.081504821777344,0.996
+2025-04-01,surrealdb/surrealdb,surrealdb/surrealdb,SurrealDB,49.46030044555664,1.009
+2025-05-01,surrealdb/surrealdb,surrealdb/surrealdb,SurrealDB,55.55487823486328,1.083
+2025-06-01,surrealdb/surrealdb,surrealdb/surrealdb,SurrealDB,50.29642868041992,1.067
+2025-07-01,surrealdb/surrealdb,surrealdb/surrealdb,SurrealDB,36.63300704956055,1.057
+2025-08-01,surrealdb/surrealdb,surrealdb/surrealdb,SurrealDB,39.57836532592773,1.142
+2025-09-01,surrealdb/surrealdb,surrealdb/surrealdb,SurrealDB,40.37076187133789,1.279
+2024-10-01,taosdata/tdengine,taosdata/tdengine,TDengine,108.6556167602539,2.466
+2024-11-01,taosdata/tdengine,taosdata/tdengine,TDengine,108.85790252685548,2.275
+2024-12-01,taosdata/tdengine,taosdata/tdengine,TDengine,109.92318725585938,2.113
+2025-01-01,taosdata/tdengine,taosdata/tdengine,TDengine,104.16230010986328,1.957
+2025-02-01,taosdata/tdengine,taosdata/tdengine,TDengine,104.83646392822266,1.814
+2025-03-01,taosdata/tdengine,taosdata/tdengine,TDengine,111.12435913085938,1.757
+2025-04-01,taosdata/tdengine,taosdata/tdengine,TDengine,110.68331909179688,1.664
+2025-05-01,taosdata/tdengine,taosdata/tdengine,TDengine,102.91700744628906,1.683
+2025-06-01,taosdata/tdengine,taosdata/tdengine,TDengine,96.83112335205078,1.554
+2025-07-01,taosdata/tdengine,taosdata/tdengine,TDengine,103.29322814941406,1.55
+2025-08-01,taosdata/tdengine,taosdata/tdengine,TDengine,105.45738220214844,1.623
+2025-09-01,taosdata/tdengine,taosdata/tdengine,TDengine,96.96826171875,1.821
+2024-10-01,tarantool/tarantool,tarantool/tarantool,Tarantool,50.04361724853516,1.581
+2024-11-01,tarantool/tarantool,tarantool/tarantool,Tarantool,52.89982604980469,1.501
+2024-12-01,tarantool/tarantool,tarantool/tarantool,Tarantool,52.3659782409668,1.437
+2025-01-01,tarantool/tarantool,tarantool/tarantool,Tarantool,43.96270751953125,1.377
+2025-02-01,tarantool/tarantool,tarantool/tarantool,Tarantool,45.00601959228516,1.33
+2025-03-01,tarantool/tarantool,tarantool/tarantool,Tarantool,40.86935424804688,1.399
+2025-04-01,tarantool/tarantool,tarantool/tarantool,Tarantool,42.306915283203125,1.465
+2025-05-01,tarantool/tarantool,tarantool/tarantool,Tarantool,41.577186584472656,1.421
+2025-06-01,tarantool/tarantool,tarantool/tarantool,Tarantool,42.95068740844727,1.377
+2025-07-01,tarantool/tarantool,tarantool/tarantool,Tarantool,41.55523681640625,1.337
+2025-08-01,tarantool/tarantool,tarantool/tarantool,Tarantool,38.71558380126953,1.288
+2025-09-01,tarantool/tarantool,tarantool/tarantool,Tarantool,35.960819244384766,1.373
+2024-10-01,timescale/timescaledb,timescale/timescaledb,TimescaleDB,39.83600616455078,3.794
+2024-11-01,timescale/timescaledb,timescale/timescaledb,TimescaleDB,40.92478561401367,3.676
+2024-12-01,timescale/timescaledb,timescale/timescaledb,TimescaleDB,41.87250518798828,3.745
+2025-01-01,timescale/timescaledb,timescale/timescaledb,TimescaleDB,37.85845565795898,3.561
+2025-02-01,timescale/timescaledb,timescale/timescaledb,TimescaleDB,44.02176284790039,3.624
+2025-03-01,timescale/timescaledb,timescale/timescaledb,TimescaleDB,42.89892959594727,3.485
+2025-04-01,timescale/timescaledb,timescale/timescaledb,TimescaleDB,48.52706146240234,3.593
+2025-05-01,timescale/timescaledb,timescale/timescaledb,TimescaleDB,53.06818389892578,3.594
+2025-06-01,timescale/timescaledb,timescale/timescaledb,TimescaleDB,47.6461067199707,3.635
+2025-07-01,timescale/timescaledb,timescale/timescaledb,TimescaleDB,51.270782470703125,3.771
+2025-08-01,timescale/timescaledb,timescale/timescaledb,TimescaleDB,49.781131744384766,3.911
+2025-09-01,timescale/timescaledb,timescale/timescaledb,TimescaleDB,50.33723068237305,4.289
+2024-10-01,trinodb/trino,trinodb/trino,Trino,173.2798614501953,5.472
+2024-11-01,trinodb/trino,trinodb/trino,Trino,164.8733673095703,5.352
+2024-12-01,trinodb/trino,trinodb/trino,Trino,155.07980346679688,5.384
+2025-01-01,trinodb/trino,trinodb/trino,Trino,150.82875061035156,5.401
+2025-02-01,trinodb/trino,trinodb/trino,Trino,156.45489501953125,5.058
+2025-03-01,trinodb/trino,trinodb/trino,Trino,145.9140625,5.125
+2025-04-01,trinodb/trino,trinodb/trino,Trino,132.997314453125,5.184
+2025-05-01,trinodb/trino,trinodb/trino,Trino,122.1628875732422,5.337
+2025-06-01,trinodb/trino,trinodb/trino,Trino,107.26859283447266,5.378
+2025-07-01,trinodb/trino,trinodb/trino,Trino,95.2350616455078,5.264
+2025-08-01,trinodb/trino,trinodb/trino,Trino,95.96974182128906,5.833
+2025-09-01,trinodb/trino,trinodb/trino,Trino,86.38065338134766,6.583
+2024-10-01,typedb/typedb,typedb/typedb,TypeDB,11.888168334960938,0.66
+2024-11-01,typedb/typedb,typedb/typedb,TypeDB,13.275527000427246,0.632
+2024-12-01,typedb/typedb,typedb/typedb,TypeDB,12.786479949951172,0.616
+2025-01-01,typedb/typedb,typedb/typedb,TypeDB,11.2688627243042,0.606
+2025-02-01,typedb/typedb,typedb/typedb,TypeDB,12.712265968322754,0.589
+2025-03-01,typedb/typedb,typedb/typedb,TypeDB,14.761141777038574,0.635
+2025-04-01,typedb/typedb,typedb/typedb,TypeDB,11.568549156188965,0.58
+2025-05-01,typedb/typedb,typedb/typedb,TypeDB,13.458563804626465,0.592
+2025-06-01,typedb/typedb,typedb/typedb,TypeDB,9.34144401550293,0.565
+2025-07-01,typedb/typedb,typedb/typedb,TypeDB,12.143390655517578,0.615
+2025-08-01,typedb/typedb,typedb/typedb,TypeDB,9.01557731628418,0.556
+2025-09-01,typedb/typedb,typedb/typedb,TypeDB,9.350804328918455,0.633
+2024-10-01,typesense/typesense,typesense/typesense,Typesense,27.899293899536133,0.979
+2024-11-01,typesense/typesense,typesense/typesense,Typesense,24.64470863342285,0.803
+2024-12-01,typesense/typesense,typesense/typesense,Typesense,24.77633476257324,0.821
+2025-01-01,typesense/typesense,typesense/typesense,Typesense,19.524215698242188,0.791
+2025-02-01,typesense/typesense,typesense/typesense,Typesense,25.117341995239254,0.84
+2025-03-01,typesense/typesense,typesense/typesense,Typesense,23.242679595947266,0.809
+2025-04-01,typesense/typesense,typesense/typesense,Typesense,22.878345489501957,0.807
+2025-05-01,typesense/typesense,typesense/typesense,Typesense,22.49066925048828,0.925
+2025-06-01,typesense/typesense,typesense/typesense,Typesense,21.04272079467773,0.85
+2025-07-01,typesense/typesense,typesense/typesense,Typesense,16.509437561035156,0.877
+2025-08-01,typesense/typesense,typesense/typesense,Typesense,20.453243255615234,0.96
+2025-09-01,typesense/typesense,typesense/typesense,Typesense,20.812915802001957,1.247
+2024-10-01,valkey-io/valkey,valkey-io/valkey,Valkey,64.45689392089844,
+2024-11-01,valkey-io/valkey,valkey-io/valkey,Valkey,71.29996490478516,
+2024-12-01,valkey-io/valkey,valkey-io/valkey,Valkey,75.27284240722656,
+2025-01-01,valkey-io/valkey,valkey-io/valkey,Valkey,73.97675323486328,
+2025-02-01,valkey-io/valkey,valkey-io/valkey,Valkey,74.94464111328125,0.998
+2025-03-01,valkey-io/valkey,valkey-io/valkey,Valkey,62.56987762451172,1.074
+2025-04-01,valkey-io/valkey,valkey-io/valkey,Valkey,68.28905487060547,1.139
+2025-05-01,valkey-io/valkey,valkey-io/valkey,Valkey,67.42157745361328,1.352
+2025-06-01,valkey-io/valkey,valkey-io/valkey,Valkey,63.69139862060547,1.496
+2025-07-01,valkey-io/valkey,valkey-io/valkey,Valkey,61.30900955200195,1.467
+2025-08-01,valkey-io/valkey,valkey-io/valkey,Valkey,58.39491653442383,1.497
+2025-09-01,valkey-io/valkey,valkey-io/valkey,Valkey,52.16264343261719,1.731
+2024-10-01,vdaas/vald,vdaas/vald,Vald,12.145140647888184,0.309
+2024-11-01,vdaas/vald,vdaas/vald,Vald,11.164300918579102,0.27
+2024-12-01,vdaas/vald,vdaas/vald,Vald,11.059558868408203,0.302
+2025-01-01,vdaas/vald,vdaas/vald,Vald,13.133981704711914,0.268
+2025-02-01,vdaas/vald,vdaas/vald,Vald,12.684565544128418,0.24
+2025-03-01,vdaas/vald,vdaas/vald,Vald,13.204429626464844,0.248
+2025-04-01,vdaas/vald,vdaas/vald,Vald,13.516319274902344,0.3
+2025-05-01,vdaas/vald,vdaas/vald,Vald,12.80808448791504,0.271
+2025-06-01,vdaas/vald,vdaas/vald,Vald,12.12648105621338,0.265
+2025-07-01,vdaas/vald,vdaas/vald,Vald,12.27822971343994,0.241
+2025-08-01,vdaas/vald,vdaas/vald,Vald,12.651915550231934,0.287
+2025-09-01,vdaas/vald,vdaas/vald,Vald,15.49937915802002,0.261
+2024-10-01,vespa-engine/vespa,vespa-engine/vespa,Vespa,54.05829620361328,0.611
+2024-11-01,vespa-engine/vespa,vespa-engine/vespa,Vespa,60.47804260253906,0.607
+2024-12-01,vespa-engine/vespa,vespa-engine/vespa,Vespa,52.61377716064453,0.63
+2025-01-01,vespa-engine/vespa,vespa-engine/vespa,Vespa,49.4280891418457,0.679
+2025-02-01,vespa-engine/vespa,vespa-engine/vespa,Vespa,53.06901550292969,0.687
+2025-03-01,vespa-engine/vespa,vespa-engine/vespa,Vespa,55.07733917236328,0.757
+2025-04-01,vespa-engine/vespa,vespa-engine/vespa,Vespa,55.98655319213867,0.834
+2025-05-01,vespa-engine/vespa,vespa-engine/vespa,Vespa,59.25485610961914,0.89
+2025-06-01,vespa-engine/vespa,vespa-engine/vespa,Vespa,48.498313903808594,0.886
+2025-07-01,vespa-engine/vespa,vespa-engine/vespa,Vespa,45.81557083129883,0.864
+2025-08-01,vespa-engine/vespa,vespa-engine/vespa,Vespa,44.73583984375,0.938
+2025-09-01,vespa-engine/vespa,vespa-engine/vespa,Vespa,40.295654296875,1.012
+2024-10-01,victoriametrics/victoriametrics,victoriametrics/victoriametrics,VictoriaMetrics,97.08511352539062,1.291
+2024-11-01,victoriametrics/victoriametrics,victoriametrics/victoriametrics,VictoriaMetrics,97.08438110351562,1.28
+2024-12-01,victoriametrics/victoriametrics,victoriametrics/victoriametrics,VictoriaMetrics,91.77717590332033,1.245
+2025-01-01,victoriametrics/victoriametrics,victoriametrics/victoriametrics,VictoriaMetrics,95.903564453125,1.328
+2025-02-01,victoriametrics/victoriametrics,victoriametrics/victoriametrics,VictoriaMetrics,100.66626739501952,1.367
+2025-03-01,victoriametrics/victoriametrics,victoriametrics/victoriametrics,VictoriaMetrics,94.0720443725586,1.383
+2025-04-01,victoriametrics/victoriametrics,victoriametrics/victoriametrics,VictoriaMetrics,100.2694091796875,1.345
+2025-05-01,victoriametrics/victoriametrics,victoriametrics/victoriametrics,VictoriaMetrics,96.91708374023438,1.546
+2025-06-01,victoriametrics/victoriametrics,victoriametrics/victoriametrics,VictoriaMetrics,104.19246673583984,1.356
+2025-07-01,victoriametrics/victoriametrics,victoriametrics/victoriametrics,VictoriaMetrics,78.47259521484375,1.547
+2025-08-01,victoriametrics/victoriametrics,victoriametrics/victoriametrics,VictoriaMetrics,74.41365814208984,1.505
+2025-09-01,victoriametrics/victoriametrics,victoriametrics/victoriametrics,VictoriaMetrics,57.91525268554688,1.753
+2024-10-01,vitessio/vitess,vitessio/vitess,Vitess,50.3220329284668,0.876
+2024-11-01,vitessio/vitess,vitessio/vitess,Vitess,51.148624420166016,0.941
+2024-12-01,vitessio/vitess,vitessio/vitess,Vitess,54.738651275634766,0.918
+2025-01-01,vitessio/vitess,vitessio/vitess,Vitess,62.40481185913086,0.893
+2025-02-01,vitessio/vitess,vitessio/vitess,Vitess,60.27842330932617,0.908
+2025-03-01,vitessio/vitess,vitessio/vitess,Vitess,57.813995361328125,0.932
+2025-04-01,vitessio/vitess,vitessio/vitess,Vitess,52.64079666137695,0.916
+2025-05-01,vitessio/vitess,vitessio/vitess,Vitess,47.40045166015625,0.99
+2025-06-01,vitessio/vitess,vitessio/vitess,Vitess,44.97645950317383,1.044
+2025-07-01,vitessio/vitess,vitessio/vitess,Vitess,49.89540481567383,1.029
+2025-08-01,vitessio/vitess,vitessio/vitess,Vitess,39.44534683227539,1.129
+2025-09-01,vitessio/vitess,vitessio/vitess,Vitess,37.884464263916016,1.256
+2024-10-01,xtdb/xtdb,xtdb/xtdb,XTDB,27.595569610595703,0.145
+2024-11-01,xtdb/xtdb,xtdb/xtdb,XTDB,26.381505966186523,0.15
+2024-12-01,xtdb/xtdb,xtdb/xtdb,XTDB,23.284717559814453,0.168
+2025-01-01,xtdb/xtdb,xtdb/xtdb,XTDB,23.989978790283203,0.178
+2025-02-01,xtdb/xtdb,xtdb/xtdb,XTDB,22.850521087646484,0.184
+2025-03-01,xtdb/xtdb,xtdb/xtdb,XTDB,23.819679260253903,0.189
+2025-04-01,xtdb/xtdb,xtdb/xtdb,XTDB,23.52828025817871,0.198
+2025-05-01,xtdb/xtdb,xtdb/xtdb,XTDB,22.08365821838379,0.196
+2025-06-01,xtdb/xtdb,xtdb/xtdb,XTDB,23.33805274963379,0.204
+2025-07-01,xtdb/xtdb,xtdb/xtdb,XTDB,22.19147491455078,0.204
+2025-08-01,xtdb/xtdb,xtdb/xtdb,XTDB,22.03510093688965,0.201
+2025-09-01,xtdb/xtdb,xtdb/xtdb,XTDB,20.9456729888916,0.212
+2024-10-01,ydb-platform/ydb,ydb-platform/ydb,YDB,232.78440856933597,0.395
+2024-11-01,ydb-platform/ydb,ydb-platform/ydb,YDB,235.6053771972656,0.389
+2024-12-01,ydb-platform/ydb,ydb-platform/ydb,YDB,238.03614807128903,0.376
+2025-01-01,ydb-platform/ydb,ydb-platform/ydb,YDB,243.5507354736328,0.386
+2025-02-01,ydb-platform/ydb,ydb-platform/ydb,YDB,242.4770050048828,0.367
+2025-03-01,ydb-platform/ydb,ydb-platform/ydb,YDB,239.96424865722656,0.488
+2025-04-01,ydb-platform/ydb,ydb-platform/ydb,YDB,258.6754150390625,0.571
+2025-05-01,ydb-platform/ydb,ydb-platform/ydb,YDB,259.2495422363281,0.63
+2025-06-01,ydb-platform/ydb,ydb-platform/ydb,YDB,268.1167297363281,0.577
+2025-07-01,ydb-platform/ydb,ydb-platform/ydb,YDB,274.2600402832031,0.514
+2025-08-01,ydb-platform/ydb,ydb-platform/ydb,YDB,274.2535095214844,0.419
+2025-09-01,ydb-platform/ydb,ydb-platform/ydb,YDB,274.7593078613281,0.431
+2024-10-01,ytsaurus/ytsaurus,ytsaurus/ytsaurus,YTsaurus,35.01166534423828,0.157
+2024-11-01,ytsaurus/ytsaurus,ytsaurus/ytsaurus,YTsaurus,30.614431381225582,0.16
+2024-12-01,ytsaurus/ytsaurus,ytsaurus/ytsaurus,YTsaurus,29.53776741027832,0.163
+2025-01-01,ytsaurus/ytsaurus,ytsaurus/ytsaurus,YTsaurus,25.12716293334961,0.174
+2025-02-01,ytsaurus/ytsaurus,ytsaurus/ytsaurus,YTsaurus,27.73907852172852,0.185
+2025-03-01,ytsaurus/ytsaurus,ytsaurus/ytsaurus,YTsaurus,35.4682502746582,0.227
+2025-04-01,ytsaurus/ytsaurus,ytsaurus/ytsaurus,YTsaurus,34.8686408996582,0.207
+2025-05-01,ytsaurus/ytsaurus,ytsaurus/ytsaurus,YTsaurus,33.149620056152344,0.218
+2025-06-01,ytsaurus/ytsaurus,ytsaurus/ytsaurus,YTsaurus,26.96932029724121,0.22
+2025-07-01,ytsaurus/ytsaurus,ytsaurus/ytsaurus,YTsaurus,22.84922218322754,0.281
+2025-08-01,ytsaurus/ytsaurus,ytsaurus/ytsaurus,YTsaurus,19.523283004760746,0.23
+2025-09-01,ytsaurus/ytsaurus,ytsaurus/ytsaurus,YTsaurus,22.76730155944824,0.228
+2024-10-01,yugabyte/yugabyte-db,yugabyte/yugabyte-db,YugabyteDB,161.68284606933594,2.458
+2024-11-01,yugabyte/yugabyte-db,yugabyte/yugabyte-db,YugabyteDB,168.6757049560547,2.364
+2024-12-01,yugabyte/yugabyte-db,yugabyte/yugabyte-db,YugabyteDB,160.576171875,2.45
+2025-01-01,yugabyte/yugabyte-db,yugabyte/yugabyte-db,YugabyteDB,155.5228271484375,2.346
+2025-02-01,yugabyte/yugabyte-db,yugabyte/yugabyte-db,YugabyteDB,155.3059844970703,2.249
+2025-03-01,yugabyte/yugabyte-db,yugabyte/yugabyte-db,YugabyteDB,160.9401397705078,2.215
+2025-04-01,yugabyte/yugabyte-db,yugabyte/yugabyte-db,YugabyteDB,156.81549072265625,2.227
+2025-05-01,yugabyte/yugabyte-db,yugabyte/yugabyte-db,YugabyteDB,162.74282836914062,2.197
+2025-06-01,yugabyte/yugabyte-db,yugabyte/yugabyte-db,YugabyteDB,157.6293182373047,2.092
+2025-07-01,yugabyte/yugabyte-db,yugabyte/yugabyte-db,YugabyteDB,139.9287872314453,2.029
+2025-08-01,yugabyte/yugabyte-db,yugabyte/yugabyte-db,YugabyteDB,131.57521057128906,2.001
+2025-09-01,yugabyte/yugabyte-db,yugabyte/yugabyte-db,YugabyteDB,122.8870620727539,2.126

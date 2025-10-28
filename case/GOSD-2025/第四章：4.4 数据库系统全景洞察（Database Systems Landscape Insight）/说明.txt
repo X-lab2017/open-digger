@@ -1,0 +1,3 @@
+运行compute_momentum_r3_prev9.py，可得到“图 4.4.2 数据库社区影响力与市场热度的散点分布”。
+
+运行compute_momentum_r3_prev9.py，可得到“图 4.4.3 数据库社区动量与市场动量的散点分布”、“图 4.4.4  OpenRank 动量、DB-Engines 动量、OpenRank 平均水平、DB-Engines 平均水平在三类标签中的分布”、“图 4.4.5   “Leaders / 市场强社区弱 / 社区强市场弱 / Laggards” 在三类标签中的相对占比”。

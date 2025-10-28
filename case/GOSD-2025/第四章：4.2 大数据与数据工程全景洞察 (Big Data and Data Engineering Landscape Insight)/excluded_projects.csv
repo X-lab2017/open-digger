@@ -1,0 +1,201 @@
+full_name,category_l1,category_l2,months_count,or_12m_avg,exclude_reason
+windmill-labs/windmill,WORKFLOW MANAGEMENT & DATAOPS,Workflow Orchestration,12.0,39.52951176961263,avg_le_50
+juicedata/juicefs,DATA LAKE PLATFORM,Distributed File System,12.0,39.39396444956461,avg_le_50
+influxdata/influxdb,STORAGE SYSTEMS,Time-Series Database,12.0,38.33753522237142,avg_le_50
+great-expectations/great_expectations,WORKFLOW MANAGEMENT & DATAOPS,Data Quality,12.0,38.19370444615682,avg_le_50
+dbt-labs/dbt-core,WORKFLOW MANAGEMENT & DATAOPS,Data Modeling,12.0,37.51069418589274,avg_le_50
+feldera/feldera,DATA PROCESSING AND COMPUTATION,Unified Processing,12.0,37.4977757136027,avg_le_50
+lancedb/lance,DATA LAKE PLATFORM,Serialisation Framework,12.0,36.886164824167885,avg_le_50
+apache/iceberg-python,DATA LAKE PLATFORM,Native Open Table Format Library,12.0,36.17950280507406,avg_le_50
+facebook/rocksdb,STORAGE SYSTEMS,Embedded Key-value Store,12.0,36.001705487569176,avg_le_50
+tobymao/sqlglot,DATA PROCESSING AND COMPUTATION,SQL Toolkit,12.0,35.970546086629234,avg_le_50
+apache/rocketmq,DATA INTEGRATION,Event Hub,12.0,35.38509861628214,avg_le_50
+apache/dolphinscheduler,WORKFLOW MANAGEMENT & DATAOPS,Workflow Orchestration,12.0,34.94065284729004,avg_le_50
+mckinsey/vizro,BI as Code (Web App),,12.0,33.037280559539795,avg_le_50
+redis/redis,STORAGE SYSTEMS,Cache Store,12.0,32.84101915359497,avg_le_50
+edgedb/edgedb,STORAGE SYSTEMS,NoSQL Multi-model,5.0,32.77386589050293,avg_le_50
+rudderlabs/rudder-server,DATA INTEGRATION,CDC Tool,12.0,32.75260512034098,avg_le_50
+apache/ignite,STORAGE SYSTEMS,In-memory SQL Database,12.0,32.29218943913778,avg_le_50
+deepset-ai/haystack,ML/AI PLATFORM,LLMOps,12.0,31.772974491119385,avg_le_50
+tikv/tikv,STORAGE SYSTEMS,Distributed Key-value Store,12.0,31.3697829246521,avg_le_50
+arangodb/arangodb,STORAGE SYSTEMS,NoSQL Multi-model,12.0,30.846224625905354,avg_le_50
+kedro-org/kedro,ML/AI PLATFORM,MLOps,12.0,30.68421681722005,avg_le_50
+minio/minio,DATA LAKE PLATFORM,Distributed Object Store,12.0,30.48969316482544,avg_le_50
+debezium/debezium,DATA INTEGRATION,CDC Tool,12.0,29.87005027135213,avg_le_50
+paradedb/paradedb,STORAGE SYSTEMS,Search Engine,12.0,29.717753887176514,avg_le_50
+apache/opendal,BI as Code (Web App),Semantic & Middleware Layer,12.0,28.793816884358723,avg_le_50
+OpenLineage/OpenLineage,METADATA MANAGEMENT,Open Standards,12.0,28.27759011586507,avg_le_50
+ibis-project/ibis,DATA PROCESSING AND COMPUTATION,Python Processing Framework,12.0,28.17821168899536,avg_le_50
+apache/Inlong,DATA INTEGRATION,Data Integration Platform,12.0,27.829639593760174,avg_le_50
+cloudera/hue,BI as Code (Web App),Query & Collaboration,12.0,27.50049130121867,avg_le_50
+alibaba/fluss,STORAGE SYSTEMS,Streaming Database,8.0,27.328831613063812,avg_le_50
+apache/amoro,DATA LAKE PLATFORM,Universal Lakehouse,12.0,26.69572941462199,avg_le_50
+lancedb/lancedb,ML/AI PLATFORM,Vector Storage,12.0,26.65465211868286,avg_le_50
+apache/flink-cdc,DATA INTEGRATION,CDC Tool,12.0,25.95905526479085,avg_le_50
+determined-ai/determined,ML/AI PLATFORM,MLOps,12.0,25.884112070004146,avg_le_50
+PeerDB-io/peerdb,DATA INTEGRATION,CDC Tool,12.0,25.18454583485921,avg_le_50
+unitycatalog/unitycatalog,METADATA MANAGEMENT,Schema & Catalog Service,12.0,25.17590804894765,avg_le_50
+Netflix/metaflow,ML/AI PLATFORM,MLOps,12.0,25.14373795191447,avg_le_50
+meilisearch/meilisearch,STORAGE SYSTEMS,Search Engine,12.0,25.075375080108643,avg_le_50
+iterative/datachain,WORKFLOW MANAGEMENT & DATAOPS,Data Versioning,12.0,25.008485635121662,avg_le_50
+dolthub/dolt,WORKFLOW MANAGEMENT & DATAOPS,Data Versioning,12.0,24.428534030914307,avg_le_50
+spiraldb/vortex,DATA LAKE PLATFORM,Serialisation Framework,8.0,23.685845017433167,avg_le_50
+apache/accumulo,STORAGE SYSTEMS,Wide-column Key-value Store,12.0,23.593237082163494,avg_le_50
+AutoMQ/automq,DATA INTEGRATION,Event Hub,12.0,23.222356637318928,avg_le_50
+EventStore/EventStore,STORAGE SYSTEMS,Streaming Database,6.0,23.141293207804363,avg_le_50
+delta-io/delta-rs,DATA LAKE PLATFORM,Native Open Table Format Library,12.0,22.026032368342083,avg_le_50
+sqlalchemy/sqlalchemy,DATA PROCESSING AND COMPUTATION,SQL Toolkit,12.0,21.69426170984904,avg_le_50
+slatedb/slatedb,STORAGE SYSTEMS,In-process OLAP Engine,12.0,21.35256290435791,avg_le_50
+mage-ai/mage-ai,WORKFLOW MANAGEMENT & DATAOPS,Workflow Orchestration,12.0,21.138463815053303,avg_le_50
+citusdata/citus,STORAGE SYSTEMS,Distributed SQL DBMS,12.0,21.135889371236164,avg_le_50
+apache/kvrocks,STORAGE SYSTEMS,Distributed Key-value Store,12.0,21.126343250274658,avg_le_50
+DataLinkDC/dinky,DATA PROCESSING AND COMPUTATION,Unified Processing,12.0,20.865012804667156,avg_le_50
+linkedin/openhouse,DATA LAKE PLATFORM,Open Table Format,12.0,20.7201566696167,avg_le_50
+elastic/logstash,DATA INFRASTRUCTURE,Log & Metrics Pipeline,12.0,20.49861224492391,avg_le_50
+airtai/faststream,DATA PROCESSING AND COMPUTATION,Stream Processing,7.0,20.443464824131556,avg_le_50
+topoteretes/cognee,ML/AI PLATFORM,LLMOps,12.0,19.69969868659973,avg_le_50
+duckdb/pg_duckdb,STORAGE SYSTEMS,OLAP Extensions,12.0,19.690981070200603,avg_le_50
+evidence-dev/evidence,BI as Code (Web App),,12.0,19.233732094367344,avg_le_50
+redpanda-data/connect,DATA INTEGRATION,CDC Tool,12.0,19.16567866007487,avg_le_50
+celery/celery,WORKFLOW MANAGEMENT & DATAOPS,Job Scheduling,12.0,19.125694274902344,avg_le_50
+redpanda-data/console,DATA INFRASTRUCTURE,Monitoring Dashboard,12.0,19.114815711975098,avg_le_50
+quickwit-oss/quickwit,STORAGE SYSTEMS,Search Engine,12.0,18.8059086004893,avg_le_50
+apache/couchdb,STORAGE SYSTEMS,Document Store,12.0,18.692283312479656,avg_le_50
+ckan/ckan,METADATA MANAGEMENT,Metadata Platform,12.0,17.769551038742065,avg_le_50
+confluentinc/schema-registry,METADATA MANAGEMENT,Schema & Catalog Service,12.0,17.467061678568523,avg_le_50
+marqo-ai/marqo,ML/AI PLATFORM,Vector Storage,12.0,16.66410740216573,avg_le_50
+dask/dask,DATA PROCESSING AND COMPUTATION,Python Workflow Scaling,12.0,16.392358382542927,avg_le_50
+lakekeeper/lakekeeper,METADATA MANAGEMENT,Schema & Catalog Service,11.0,15.602074883200906,avg_le_50
+elementary-data/elementary,WORKFLOW MANAGEMENT & DATAOPS,Pipeline Observability,12.0,14.777671257654825,avg_le_50
+opencost/opencost,DATA INFRASTRUCTURE,Cost Management,12.0,14.547618468602499,avg_le_50
+plotly/dash,BI as Code (Web App),,12.0,14.41682235399882,avg_le_50
+estuary/flow,DATA INTEGRATION,Data Integration Platform,12.0,14.363540252049765,avg_le_50
+bentoml/BentoML,ML/AI PLATFORM,MLOps,12.0,14.257829229036966,avg_le_50
+cloudquery/cloudquery,DATA INTEGRATION,Log & Event Collection,12.0,14.055333773295084,avg_le_50
+pachyderm/pachyderm,ML/AI PLATFORM,MLOps,10.0,13.198078505694866,avg_le_50
+ByConity/ByConity,STORAGE SYSTEMS,Columnar OLAP Database,11.0,12.617142335935073,avg_le_50
+superduper-io/superduper,ML/AI PLATFORM,LLMOps,12.0,12.5499640305837,avg_le_50
+vdaas/vald,ML/AI PLATFORM,Vector Storage,12.0,12.429203748703003,avg_le_50
+apache/ambari,DATA INFRASTRUCTURE,Cluster Administration,12.0,12.011212746302286,avg_le_50
+readysettech/readyset,STORAGE SYSTEMS,In-memory SQL Database,12.0,11.66453997294108,avg_le_50
+FerretDB/FerretDB,STORAGE SYSTEMS,Document Store,12.0,11.10618245601654,avg_le_50
+confluentinc/ksql,STORAGE SYSTEMS,Streaming Database,12.0,10.835047364234924,avg_le_50
+slingdata-io/sling-cli,DATA INTEGRATION,Data Migration,12.0,10.748063405354818,avg_le_50
+warpstreamlabs/bento,DATA PROCESSING AND COMPUTATION,Stream Processing,12.0,10.73595118522644,avg_le_50
+apache/ranger,DATA INFRASTRUCTURE,Security,12.0,10.728512048721313,avg_le_50
+Multiwoven/multiwoven,DATA INTEGRATION,Reverse ETL,12.0,10.542775173981985,avg_le_50
+getredash/redash,ANALYTICS & VISUALISATION,BI & Dashboard,12.0,10.497794191042582,avg_le_50
+dgraph-io/dgraph,STORAGE SYSTEMS,Graph Database,4.0,10.459531784057617,avg_le_50
+pgvector/pgvector,ML/AI PLATFORM,Vector Storage,12.0,10.372308850288391,avg_le_50
+unionai-oss/pandera,WORKFLOW MANAGEMENT & DATAOPS,Data Quality,12.0,10.170148928960165,avg_le_50
+gluster/glusterfs,DATA LAKE PLATFORM,Distributed File System,12.0,10.074462215105692,avg_le_50
+apache/helix,DATA INFRASTRUCTURE,Cluster Administration,12.0,10.06433935960134,avg_le_50
+ipython/ipython,BI as Code (Web App),Query & Collaboration,12.0,10.036021888256073,avg_le_50
+apache/incubator-xtable,DATA LAKE PLATFORM,Universal Lakehouse,12.0,9.551816622416178,avg_le_50
+apache/gobblin,DATA INTEGRATION,Data Integration Platform,12.0,9.510478218396505,avg_le_50
+apache/zeppelin,BI as Code (Web App),Query & Collaboration,12.0,9.35123324394226,avg_le_50
+infinyon/fluvio,DATA PROCESSING AND COMPUTATION,Stream Processing,12.0,9.346965988477072,avg_le_50
+apache/knox,DATA INFRASTRUCTURE,Security,12.0,9.345891952514648,avg_le_50
+oceanbase/oceanbase,STORAGE SYSTEMS,Distributed SQL DBMS,12.0,9.176009078820547,avg_le_50
+git-lfs/git-lfs,WORKFLOW MANAGEMENT & DATAOPS,Data Versioning,12.0,8.899919350941977,avg_le_50
+sodadata/soda-core,WORKFLOW MANAGEMENT & DATAOPS,Data Quality,12.0,8.283169309298197,avg_le_50
+apache/avro,DATA LAKE PLATFORM,Serialisation Framework,12.0,8.102603236834208,avg_le_50
+FalkorDB/falkordb,STORAGE SYSTEMS,Graph Database,12.0,8.085389693578085,avg_le_50
+projectnessie/nessie,WORKFLOW MANAGEMENT & DATAOPS,Data Versioning,12.0,7.891637881596883,avg_le_50
+delta-io/delta-sharing,BI as Code (Web App),Data Sharing,12.0,7.879646082719167,avg_le_50
+activeloopai/deeplake,ML/AI PLATFORM,Vector Storage,12.0,7.867830773194631,avg_le_50
+iterative/dvc,WORKFLOW MANAGEMENT & DATAOPS,Data Versioning,12.0,7.65499218304952,avg_le_50
+apache/orc,DATA LAKE PLATFORM,Serialisation Framework,12.0,7.622352600097656,avg_le_50
+neo4j/neo4j,STORAGE SYSTEMS,Graph Database,12.0,7.586041847864787,avg_le_50
+meltano/meltano,DATA INTEGRATION,Data Integration Platform,12.0,7.436529517173767,avg_le_50
+ArroyoSystems/arroyo,DATA PROCESSING AND COMPUTATION,Stream Processing,12.0,7.277154644330342,avg_le_50
+apache/age,STORAGE SYSTEMS,Graph Database,12.0,7.249226411183675,avg_le_50
+jitsucom/jitsu,DATA INTEGRATION,Log & Event Collection,12.0,7.070395151774089,avg_le_50
+Mooncake-Labs/pg_mooncake,STORAGE SYSTEMS,OLAP Extensions,11.0,6.950112581253052,avg_le_50
+MonetDB/MonetDB,STORAGE SYSTEMS,Columnar OLAP Database,12.0,6.870767176151276,avg_le_50
+timeplus-io/proton,STORAGE SYSTEMS,Streaming Database,12.0,6.815386672814687,avg_le_50
+apache/atlas,METADATA MANAGEMENT,Metadata Platform,12.0,6.768893800675869,avg_le_50
+postgres/postgres,STORAGE SYSTEMS,Relational DBMS,12.0,6.622463703155518,avg_le_50
+fluent/fluentd,DATA INFRASTRUCTURE,Log & Metrics Pipeline,12.0,6.532174547513326,avg_le_50
+apache/incubator-hugegraph,STORAGE SYSTEMS,Graph Database,12.0,6.467914700508118,avg_le_50
+apache/yunikorn-core,DATA INFRASTRUCTURE,Resource Scheduling,12.0,6.3148225744565325,avg_le_50
+artie-labs/transfer,DATA INTEGRATION,CDC Tool,12.0,6.097252766291301,avg_le_50
+MarquezProject/marquez,METADATA MANAGEMENT,Metadata Platform,12.0,5.973155488570531,avg_le_50
+orientechnologies/orientdb,STORAGE SYSTEMS,NoSQL Multi-model,12.0,5.954495310783386,avg_le_50
+jupyter/notebook,BI as Code (Web App),Query & Collaboration,12.0,5.795548439025879,avg_le_50
+krb5/krb5,DATA INFRASTRUCTURE,Security,12.0,5.5490065813064575,avg_le_50
+modin-project/modin,DATA PROCESSING AND COMPUTATION,Python Workflow Scaling,12.0,5.420901795228322,avg_le_50
+eakmanrq/sqlframe,DATA PROCESSING AND COMPUTATION,Python Processing Framework,12.0,5.244527538617452,avg_le_50
+apache/hudi-rs,DATA LAKE PLATFORM,Native Open Table Format Library,12.0,5.2044207354386645,avg_le_50
+JanusGraph/janusgraph,STORAGE SYSTEMS,Graph Database,12.0,5.11633978287379,avg_le_50
+apache/parquet-format,DATA LAKE PLATFORM,Serialisation Framework,12.0,5.0747437079747515,avg_le_50
+CrunchyData/pg_parquet,STORAGE SYSTEMS,OLAP Extensions,11.0,4.990397084843028,avg_le_50
+bruin-data/ingestr,DATA INTEGRATION,Data Migration,12.0,4.915838062763214,avg_le_50
+Alluxio/alluxio,BI as Code (Web App),Semantic & Middleware Layer,12.0,4.766558401286602,avg_le_50
+vesoft-inc/nebula,STORAGE SYSTEMS,Graph Database,12.0,4.64359184106191,avg_le_50
+akka/akka,DATA PROCESSING AND COMPUTATION,Stream Processing,12.0,4.622441252072652,avg_le_50
+apache/tez,DATA PROCESSING AND COMPUTATION,Batch processing,12.0,4.595970332622528,avg_le_50
+chdb-io/chdb,STORAGE SYSTEMS,In-process OLAP Engine,12.0,4.332878490289052,avg_le_50
+apache/eventmesh,DATA INTEGRATION,Log & Event Collection,12.0,4.302058686812718,avg_le_50
+jina-ai/jina,ML/AI PLATFORM,MLOps,1.0,4.2214155197143555,avg_le_50
+apache/datafusion-ballista,BI as Code (Web App),MPP Query Engine,12.0,4.203081885973613,avg_le_50
+pinterest/querybook,BI as Code (Web App),Query & Collaboration,12.0,4.162681818008423,avg_le_50
+memcached/memcached,STORAGE SYSTEMS,Cache Store,12.0,4.127921005090077,avg_le_50
+m3db/m3,DATA INFRASTRUCTURE,Metrics Store,12.0,4.094300429026286,avg_le_50
+GlareDB/glaredb,STORAGE SYSTEMS,In-process OLAP Engine,12.0,3.9292426705360413,avg_le_50
+dgraph-io/badger,STORAGE SYSTEMS,Embedded Key-value Store,5.0,3.8314988136291506,avg_le_50
+kubeflow/kubeflow,ML/AI PLATFORM,MLOps,12.0,3.7813442945480347,avg_le_50
+turbot/steampipe,DATA INTEGRATION,Log & Event Collection,12.0,3.685789108276367,avg_le_50
+apache/drill,BI as Code (Web App),MPP Query Engine,12.0,3.605445990959803,avg_le_50
+paradedb/pg_analytics,STORAGE SYSTEMS,OLAP Extensions,11.0,3.4202218380841343,avg_le_50
+amacneil/dbmate,DATA INTEGRATION,Data Migration,12.0,3.2941495180130005,avg_le_50
+apache/kylin,STORAGE SYSTEMS,Real-time OLAP Engine,12.0,3.2023969093958535,avg_le_50
+apache/horaedb,STORAGE SYSTEMS,Time-Series Database,10.0,3.0380261063575746,avg_le_50
+odpi/egeria,METADATA MANAGEMENT,Open Standards,12.0,2.9668479363123574,avg_le_50
+awslabs/deequ,WORKFLOW MANAGEMENT & DATAOPS,Data Quality,12.0,2.908253331979116,avg_le_50
+mysql/mysql-server,STORAGE SYSTEMS,Relational DBMS,12.0,2.8464309771855674,avg_le_50
+apache/storm,DATA PROCESSING AND COMPUTATION,Stream Processing,12.0,2.817462762196859,avg_le_50
+spotify/luigi,WORKFLOW MANAGEMENT & DATAOPS,Workflow Orchestration,12.0,2.733126406868299,avg_le_50
+Netflix/atlas,STORAGE SYSTEMS,Time-Series Database,12.0,2.6247147917747498,avg_le_50
+Netflix/maestro,WORKFLOW MANAGEMENT & DATAOPS,Workflow Orchestration,12.0,2.551856219768524,avg_le_50
+amundsen-io/amundsen,METADATA MANAGEMENT,Metadata Platform,9.0,2.499795279569096,avg_le_50
+bytewax/bytewax,DATA PROCESSING AND COMPUTATION,Stream Processing,10.0,2.478207436203957,avg_le_50
+apache/linkis,BI as Code (Web App),Semantic & Middleware Layer,12.0,2.2406583055853844,avg_le_50
+distribworks/dkron,WORKFLOW MANAGEMENT & DATAOPS,Job Scheduling,12.0,2.1705063432455063,avg_le_50
+facebook/mysql-5.6,STORAGE SYSTEMS,Embedded Key-value Store,9.0,2.1019123933381505,avg_le_50
+codenotary/immudb,STORAGE SYSTEMS,Distributed Key-value Store,12.0,2.0124540825684867,avg_le_50
+apache/samza,DATA PROCESSING AND COMPUTATION,Stream Processing,10.0,1.9262278735637666,avg_le_50
+hydradatabase/hydra,STORAGE SYSTEMS,Columnar OLAP Database,5.0,1.864097785949707,avg_le_50
+opendatadiscovery/odd-platform,METADATA MANAGEMENT,Metadata Platform,8.0,1.840905711054802,avg_le_50
+simonw/datasette,BI as Code (Web App),Query & Collaboration,12.0,1.8024287596344948,avg_le_50
+rethinkdb/rethinkdb,STORAGE SYSTEMS,Document Store,12.0,1.6560982465744019,avg_le_50
+google/leveldb,STORAGE SYSTEMS,Embedded Key-value Store,12.0,1.4598317394653957,avg_le_50
+nsqio/nsq,DATA INTEGRATION,Event Hub,12.0,1.3879642685254414,avg_le_50
+mljar/mercury,BI as Code (Web App),,12.0,1.3831809808810551,avg_le_50
+apache/mesos,DATA INFRASTRUCTURE,Resource Scheduling,10.0,1.3607340276241302,avg_le_50
+vaexio/vaex,DATA PROCESSING AND COMPUTATION,Python Processing Framework,12.0,1.2599999358256657,avg_le_50
+typicode/lowdb,STORAGE SYSTEMS,Document Store,10.0,1.2371872425079347,avg_le_50
+datafold/data-diff,WORKFLOW MANAGEMENT & DATAOPS,Data Quality,4.0,1.179641529917717,avg_le_50
+zabbix/zabbix,DATA INFRASTRUCTURE,Observability Framework,12.0,1.0835415174563725,avg_le_50
+statsd/statsd,DATA INFRASTRUCTURE,Log & Metrics Pipeline,7.0,1.0491789792265211,avg_le_50
+microsoft/nni,ML/AI PLATFORM,MLOps,2.0,0.9701225757598877,avg_le_50
+quarylabs/quary,BI as Code (Web App),,9.0,0.9225390470690198,avg_le_50
+snowplow/snowplow,DATA INTEGRATION,Log & Event Collection,6.0,0.7377795229355494,avg_le_50
+mongodb/mongo,STORAGE SYSTEMS,Document Store,12.0,0.6731186459461848,avg_le_50
+OpenTSDB/opentsdb,DATA INFRASTRUCTURE,Metrics Store,6.0,0.6018036628762881,avg_le_50
+getdozer/dozer,DATA INTEGRATION,CDC Tool,2.0,0.5599621459841728,avg_le_50
+nalepae/pandarallel,DATA PROCESSING AND COMPUTATION,Python Workflow Scaling,4.0,0.4973301663994789,avg_le_50
+sqlite/sqlite,STORAGE SYSTEMS,Relational DBMS,8.0,0.4688583165407181,avg_le_50
+azkaban/azkaban,WORKFLOW MANAGEMENT & DATAOPS,Workflow Orchestration,8.0,0.42255851440131664,avg_le_50
+kairosdb/kairosdb,STORAGE SYSTEMS,Time-Series Database,1.0,0.399820476770401,avg_le_50
+apache/kudu,STORAGE SYSTEMS,Columnar OLAP Database,2.0,0.3684354592114687,avg_le_50
+basho/riak,STORAGE SYSTEMS,Distributed Key-value Store,2.0,0.3286840170621872,avg_le_50
+linkedin/brooklin,DATA INTEGRATION,CDC Tool,1.0,0.3251664936542511,avg_le_50
+cayleygraph/cayley,STORAGE SYSTEMS,Graph Database,3.0,0.24966938296953836,avg_le_50
+apache/impala,BI as Code (Web App),MPP Query Engine,2.0,0.14546228758990765,avg_le_50
+apache/flume,DATA INTEGRATION,Log & Event Collection,,,no_data_in_window
+apache/incubator-paimon,DATA LAKE PLATFORM,Open Table Format,,,no_data_in_window
+datafuselabs/databend,STORAGE SYSTEMS,Columnar OLAP Database,,,no_data_in_window
+greenplum-db/gpdb-archive,STORAGE SYSTEMS,Columnar OLAP Database,,,no_data_in_window
+memphisdev/memphis,DATA INTEGRATION,Event Hub,,,no_data_in_window
+sphinxsearch/sphinx,STORAGE SYSTEMS,Search Engine,,,no_data_in_window

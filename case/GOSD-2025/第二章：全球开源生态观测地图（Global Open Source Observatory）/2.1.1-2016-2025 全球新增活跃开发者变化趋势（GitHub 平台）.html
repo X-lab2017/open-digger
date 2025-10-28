@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>2016-2025年数据趋势曲线图</title>
+    <!-- 引入ECharts -->
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.4.3/dist/echarts.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .chart-container {
+            width: 100%;
+            height: 600px;
+            max-width: 1200px;
+            margin: 0 auto;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>2016-2025年数据趋势</h1>
+    <div class="chart-container" id="trendChart"></div>
+
+    <script type="text/javascript">
+        // 初始化图表
+        const chartDom = document.getElementById('trendChart');
+        const myChart = echarts.init(chartDom);
+
+        // 数据处理
+        const years = ['2016', '2017', '2018', '2019', '2020', '2021', '2022', '2023', '2024', '2025'];
+        const values = [1563650, 1568022, 1734413, 1746506, 2101173, 2458901, 2396197, 2712725, 2795941, 3005795];
+
+        // 图表配置
+        const option = {
+            // 图表标题
+            // title: {
+            //     text: '年度数据变化趋势',
+            //     left: 'center',
+            //     textStyle: {
+            //         fontSize: 18,
+            //         fontWeight: 'normal'
+            //     }
+            // },
+
+            // 提示框组件
+            tooltip: {
+                trigger: 'axis',
+                axisPointer: {
+                    type: 'shadow'
+                },
+                formatter: function(params) {
+                    return `${params[0].name}年<br/>数值: ${params[0].value.toLocaleString()}`;
+                },
+                backgroundColor: 'rgba(255, 255, 255, 0.9)',
+                borderColor: '#ddd',
+                borderWidth: 1,
+                textStyle: {
+                    color: '#333'
+                },
+                padding: 10
+            },
+
+            // 网格配置
+            grid: {
+                left: '3%',
+                right: '4%',
+                bottom: '3%',
+                containLabel: true
+            },
+
+            // x轴配置
+            xAxis: {
+                type: 'category',
+                data: years,
+                axisLine: {
+                    lineStyle: {
+                        color: '#999'
+                    }
+                },
+                axisLabel: {
+                    color: '#666',
+                    fontSize: 12
+                },
+                splitLine: {
+                    show: false
+                }
+            },
+
+            // y轴配置
+            yAxis: {
+                type: 'value',
+                axisLine: {
+                    lineStyle: {
+                        color: '#999'
+                    }
+                },
+                axisLabel: {
+                    color: '#666',
+                    fontSize: 12,
+                    // formatter: '{value:,}' // 千位分隔符
+                },
+                splitLine: {
+                    lineStyle: {
+                        color: '#f0f0f0'
+                    }
+                },
+                nameTextStyle: {
+                    color: '#666',
+                    padding: [0, 0, 0, 10]
+                }
+            },
+
+            // 系列数据配置
+            series: [
+                {
+                    name: '年度数据',
+                    type: 'line',
+                    data: values,
+                    smooth: true, // 平滑曲线
+                    symbol: 'circle', // 数据点标记
+                    symbolSize: 8, // 标记大小
+                    showSymbol: true, // 显示标记
+                    emphasis: {
+                        symbolSize: 10 // 鼠标悬停时标记放大
+                    },
+                    lineStyle: {
+                        width: 3,
+                        color: '#5470c6'
+                    },
+                    itemStyle: {
+                        color: '#5470c6',
+                        borderColor: '#fff',
+                        borderWidth: 2
+                    },
+                    areaStyle: {
+                        color: {
+                            type: 'linear',
+                            x: 0,
+                            y: 0,
+                            x2: 0,
+                            y2: 1,
+                            colorStops: [{
+                                offset: 0, color: 'rgba(84, 112, 198, 0.3)'
+                            }, {
+                                offset: 1, color: 'rgba(84, 112, 198, 0)'
+                            }]
+                        }
+                    }
+                }
+            ]
+        };
+
+        // 设置图表配置
+        myChart.setOption(option);
+
+        // 响应窗口大小变化
+        window.addEventListener('resize', function() {
+            myChart.resize();
+        });
+    </script>
+</body>
+</html>

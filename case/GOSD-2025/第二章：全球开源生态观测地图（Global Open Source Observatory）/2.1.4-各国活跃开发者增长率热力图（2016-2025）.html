@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>各国开源开发者增长率热力图（2016-2025）</title>
+    <!-- 引入 ECharts 在线CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.4.3/dist/echarts.min.js"></script>
+    <style>
+        /* 图表容器样式：全屏适配 + 响应式 */
+        #heatmap-container {
+            width: 95%;
+            height: 85vh; /* 增加高度以适应更大的字体 */
+            margin: 20px auto;
+            border: 1px solid #eee;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+        /* 标题样式 - 放大并加粗 */
+        h1 {
+            text-align: center;
+            color: #333;
+            font-weight: 700; /* 加粗 */
+            font-size: 24px; /* 放大标题 */
+            margin: 30px 0 10px;
+        }
+        /* 说明文本样式 - 放大并加粗 */
+        .note {
+            text-align: center;
+            color: #666;
+            font-size: 16px; /* 放大说明文字 */
+            font-weight: 600; /* 加粗 */
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>各国开源开发者增长率热力图（2016-2025）</h1>
+    <p class="note">颜色越深红代表增长率越高，越深蓝代表增长率越低（负增长）</p>
+    <!-- 图表容器 -->
+    <div id="heatmap-container"></div>
+
+    <script type="text/javascript">
+        // 1. 初始化 ECharts 实例
+        var myChart = echarts.init(document.getElementById('heatmap-container'));
+
+        // 2. 预处理数据
+        var countries = ['美国', '中国', '印度', '巴西', '德国', '英国', '加拿大', '法国', '俄罗斯', '波兰'];
+        var years = ['2016', '2017', '2018', '2019', '2020', '2021', '2022', '2023', '2024', '2025'];
+        var growthData = [
+            [0, 0, 12.07], [0, 1, 11.96], [0, 2, 12.18], [0, 3, 4.78], [0, 4, 15.34], [0, 5, 4.50], [0, 6, -4.10], [0, 7, 6.14], [0, 8, 6.79], [0, 9, 1.77],
+            [1, 0, 32.35], [1, 1, 36.93], [1, 2, 27.77], [1, 3, 16.62], [1, 4, 12.86], [1, 5, 4.89], [1, 6, 5.39], [1, 7, 8.54], [1, 8, 8.34], [1, 9, 1.41],
+            [2, 0, 39.48], [2, 1, 42.86], [2, 2, 36.10], [2, 3, 20.18], [2, 4, 47.90], [2, 5, 2.00], [2, 6, -0.89], [2, 7, 24.22], [2, 8, 19.33], [2, 9, -7.35],
+            [3, 0, 29.14], [3, 1, 28.27], [3, 2, 30.01], [3, 3, 21.10], [3, 4, 44.70], [3, 5, 30.83], [3, 6, 15.93], [3, 7, 18.70], [3, 8, 20.27], [3, 9, -6.42],
+            [4, 0, 16.30], [4, 1, 15.44], [4, 2, 17.15], [4, 3, 10.08], [4, 4, 22.61], [4, 5, 13.08], [4, 6, 0.99], [4, 7, 10.31], [4, 8, 11.20], [4, 9, 2.81],
+            [5, 0, 15.18], [5, 1, 13.98], [5, 2, 16.39], [5, 3, 6.96], [5, 4, 19.77], [5, 5, 7.80], [5, 6, -2.00], [5, 7, 8.80], [5, 8, 7.80], [5, 9, 0.83],
+            [6, 0, 16.15], [6, 1, 16.43], [6, 2, 15.87], [6, 3, 10.50], [6, 4, 21.40], [6, 5, 11.56], [6, 6, -1.91], [6, 7, 10.50], [6, 8, 9.37], [6, 9, 0.08],
+            [7, 0, 16.86], [7, 1, 15.33], [7, 2, 18.38], [7, 3, 8.86], [7, 4, 21.85], [7, 5, 12.76], [7, 6, 2.99], [7, 7, 12.50], [7, 8, 12.41], [7, 9, 1.61],
+            [8, 0, 23.52], [8, 1, 23.04], [8, 2, 23.99], [8, 3, 15.77], [8, 4, 30.99], [8, 5, 21.05], [8, 6, 11.20], [8, 7, 14.05], [8, 8, 5.87], [8, 9, -6.09],
+            [9, 0, 14.97], [9, 1, 14.25], [9, 2, 15.68], [9, 3, 7.53], [9, 4, 18.17], [9, 5, 1.78], [9, 6, -1.23], [9, 7, 10.36], [9, 8, 9.05], [9, 9, 3.34]
+        ];
+
+        // 3. ECharts 配置项（核心）
+        var option = {
+            // title: {
+            //     subtext: '数据来源：各国开源开发者增长统计（2016-2025）',
+            //     left: 'center',
+            //     textStyle: {
+            //         fontSize: 14,  // 放大副标题
+            //         color: '#666',
+            //         fontWeight: 'bold'  // 副标题加粗
+            //     }
+            // },
+            visualMap: {
+                min: -8,
+                max: 50,
+                calculable: true,
+                orient: 'vertical',
+                right: '5%',
+                top: 'center',
+                inRange: {
+                    color: ['#313695', '#4575b4', '#74add1', '#abd9e9', '#e0f3f8',
+                            '#ffffbf', '#fee090', '#fdae61', '#f46d43', '#d73027', '#a50026']
+                },
+                label: {
+                    formatter: '{value}%',
+                    fontSize: 14,  // 图例标签放大
+                    fontWeight: 'bold'  // 图例标签加粗
+                }
+            },
+            // x轴：国家（字体放大加粗）
+            xAxis: {
+                type: 'category',
+                data: countries,
+                axisLabel: {
+                    rotate: 45,
+                    fontSize: 14,  // 国家名称放大
+                    fontWeight: 'bold',  // 国家名称加粗
+                    interval: 0
+                },
+                axisLine: {
+                    lineStyle: { color: '#333' }
+                },
+                axisTick: {
+                    show: true,
+                    alignWithLabel: true
+                },
+                name: '国家',
+                nameLocation: 'middle',
+                nameGap: 30,
+                nameTextStyle: {
+                    fontSize: 16,  // 轴名称放大
+                    fontWeight: 'bold'  // 轴名称加粗
+                }
+            },
+            // y轴：年份（字体放大加粗）
+            yAxis: {
+                type: 'category',
+                data: years,
+                axisLabel: {
+                    fontSize: 14,  // 年份放大
+                    fontWeight: 'bold'  // 年份加粗
+                },
+                axisLine: {
+                    lineStyle: { color: '#333' }
+                },
+                axisTick: {
+                    show: true,
+                    alignWithLabel: true
+                },
+                name: '年份',
+                nameLocation: 'middle',
+                nameGap: 40,
+                nameTextStyle: {
+                    fontSize: 16,  // 轴名称放大
+                    fontWeight: 'bold'  // 轴名称加粗
+                }
+            },
+            grid: {
+                left: '8%',
+                right: '15%',
+                bottom: '25%',  // 增加底部空间，避免标签被截断
+                top: '5%'
+            },
+            // 系列：热力图（重点放大数字并加粗）
+            series: [{
+                name: '增长率（%）',
+                type: 'heatmap',
+                data: growthData,
+                label: {
+                    show: true,
+                    fontSize: 14,  // 热力图中数字显著放大
+                    fontWeight: 'bold',  // 数字加粗
+                    color: '#333'
+                },
+                emphasis: {
+                    itemStyle: {
+                        borderColor: '#fff',
+                        borderWidth: 2
+                    }
+                },
+                itemStyle: {
+                    borderRadius: 4,
+                    borderWidth: 1,
+                    borderColor: '#fff'
+                }
+            }]
+        };
+
+        // 4. 应用配置
+        myChart.setOption(option);
+
+        // 5. 响应式适配
+        window.addEventListener('resize', function() {
+            myChart.resize();
+        });
+    </script>
+</body>
+</html>

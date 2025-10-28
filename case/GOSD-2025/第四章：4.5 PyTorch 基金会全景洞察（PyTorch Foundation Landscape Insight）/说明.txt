@@ -1,0 +1,11 @@
+代码运行顺序：
+1.获取openrank
+2.筛选
+3.图 4.5.2 OpenRank 前五名的项目影响力月度变化趋势
+4.图 4.5.3 三个大类中各子类入选项目数量
+
+数据说明：
+items.csv：从pytorch官网下载的数据
+items_with_2025_value_2.csv：对items.csv加入了openrank影响力这一列
+filtered_data_2.csv：按照openrank阈值进行筛选
+filtered_data_2修改基金会项目.csv：手动修改三个基金会自有项目的标签，使得数据集符合统计项目数量的需求
