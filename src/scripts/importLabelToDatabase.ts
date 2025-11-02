@@ -41,4 +41,7 @@ import { query, insertRecords } from "../db/clickhouse";
 
   const count = await query<number[]>(`SELECT COUNT(*) FROM labels`);
   console.log(`Total labels imported: ${count[0][0]}, total labels: ${labelData.length}`);
+
+  // Manually refresh the flatten_labels view
+  await query('SYSTEM REFRESH VIEW flatten_labels;');
 })();
