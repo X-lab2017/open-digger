@@ -114,42 +114,44 @@ Description: ${pullRequest.body}
 Git Diff: ${pullRequest.diff}
     `;
 
-    const response = await openai.chat.completions.create({
-      model: 'qwen3-32b',
-      enable_thinking: false,
-      messages: [{ role: 'user', content: prompt }],
-    } as any);
-
-    const resultStr = response.choices[0].message.content!;
-    // extract data from the returned string content
-    // Use regex to extract data from the returned string content
-    const outputPullRequest: Partial<OutputPullRequest> = {
-      id: pullRequest.id,
-      platform: pullRequest.platform,
-    };
-
-    // Helper to extract each line by key
-    function extractValue(regex: RegExp, str: string, values?: string[]) {
-      const match = str.match(regex);
-      const ret = match ? match[1].trim() : undefined;
-      if (values && ret && !values.includes(ret)) {
-        throw new Error(`Invalid value: ${ret}`);
-      }
-      return ret;
-    }
-
     try {
+
+      const response = await openai.chat.completions.create({
+        model: 'qwen3-32b',
+        enable_thinking: false,
+        messages: [{ role: 'user', content: prompt }],
+      } as any);
+
+      const resultStr = response.choices[0].message.content!;
+      // extract data from the returned string content
+      // Use regex to extract data from the returned string content
+      const outputPullRequest: Partial<OutputPullRequest> = {
+        id: pullRequest.id,
+        platform: pullRequest.platform,
+      };
+
+      // Helper to extract each line by key
+      function extractValue(regex: RegExp, str: string, values?: string[]) {
+        const match = str.match(regex);
+        const ret = match ? match[1].trim() : undefined;
+        if (values && ret && !values.includes(ret)) {
+          throw new Error(`Invalid value: ${ret}`);
+        }
+        return ret;
+      }
+
       outputPullRequest.codeQuality = extractValue(/Code Quality:\s*([^\n]+)/i, resultStr, qualityOptions);
       outputPullRequest.titleDescQuality = extractValue(/PR Title and Description Quality:\s*([^\n]+)/i, resultStr, qualityOptions);
       outputPullRequest.prType = extractValue(/PR Type:\s*([^\n]+)/i, resultStr);
       outputPullRequest.valueLevel = parseInt(extractValue(/Value Level:\s*([^\n]+)/i, resultStr, ['1', '2', '3', '4', '5']) || '0');
       outputPullRequest.primaryLanguage = extractValue(/Primary Language:\s*([^\n]+)/i, resultStr);
       outputPullRequest.isAutomaticallyGenerated = extractValue(/Is Automatically Generated:\s*([^\n]+)/i, resultStr, ['Yes', 'Uncertain']);
-    } catch {
+
+      return (outputPullRequest as OutputPullRequest);
+    } catch (e) {
+      logger.error(`Error analyzing pull request ${pullRequest.id}: ${e}`);
       return null;
     }
-
-    return (outputPullRequest as OutputPullRequest);
   };
 
   const getPullRequests = async (num: number): Promise<InputPullRequest[]> => {
