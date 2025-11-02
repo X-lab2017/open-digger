@@ -149,6 +149,19 @@ Git Diff: ${pullRequest.diff}
 
       return (outputPullRequest as OutputPullRequest);
     } catch (e) {
+      if (e instanceof Error && e.message.includes('Input data may contain inappropriate content.')) {
+        // inappropriate content, return default values
+        return {
+          id: pullRequest.id,
+          platform: pullRequest.platform,
+          primaryLanguage: 'Unknown',
+          codeQuality: 'Very Poor',
+          titleDescQuality: 'Very Poor',
+          prType: 'Other',
+          valueLevel: 5,
+          isAutomaticallyGenerated: 'Uncertain',
+        } as OutputPullRequest;
+      }
       logger.error(`Error analyzing pull request ${pullRequest.id}: ${e}`);
       return null;
     }
