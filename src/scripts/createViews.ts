@@ -187,7 +187,33 @@ SELECT id, type, name, name_zh, platform, arrayJoin(users) AS entity_id, 'User' 
     await query(createViewQuery);
   };
 
+  const createPullsWitLabelView = async () => {
+    // The pulls_with_label view is used to store the pull requests with label info for the pull requests
+    // The pulls_with_label view is refreshed every 1 hour
+    await query(`DROP TABLE IF EXISTS pulls_with_label`);
+    const createViewQuery = `
+CREATE MATERIALIZED VIEW IF NOT EXISTS pulls_with_label
+REFRESH EVERY 1 HOUR
+(
+  id UInt64,
+  platform LowCardinality(String)
+) ENGINE = MergeTree()
+ORDER BY (id, platform)
+POPULATE
+AS
+SELECT
+  issue_id AS id,
+  platform
+FROM events WHERE type = 'PullRequestEvent' AND action = 'opened' AND actor_login NOT LIKE '%[bot]%'
+AND (((platform, repo_id) IN (SELECT platform, entity_id FROM flatten_labels WHERE entity_type = 'Repo'))
+   OR ((platform, org_id) IN (SELECT platform, entity_id FROM flatten_labels WHERE entity_type = 'Org')))
+GROUP BY issue_id, platform
+`;
+    await query(createViewQuery);
+  };
+
   await createUserView();
   await createNameView();
   await createFlattenLabelView();
+  await createPullsWitLabelView();
 })();
