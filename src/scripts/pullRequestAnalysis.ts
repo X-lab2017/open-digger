@@ -67,7 +67,8 @@ Only return the results, do not return any other text.
 ## Submission Quality Analysis
 
 - Code Quality: [Excellent/Good/Fair/Poor/Very Poor]
-(Evaluate code style, naming conventions, comments, etc. If there is no code in the PR, return Very Poor.)
+(Evaluate code style, naming conventions, code quantity and code complexity etc. If there is no code in the PR, return Very Poor. If the code is not good, return Poor.)
+
 - PR Title and Description Quality: [Excellent/Good/Fair/Poor/Very Poor]
 (Evaluate title conciseness, description detail, and adherence to project standards. If there is no title or description in the PR, return Very Poor.)
 
@@ -75,6 +76,7 @@ Only return the results, do not return any other text.
 
 - PR Type: [Feature/Refactor/Docs/Fix/Chore/Other]
 (Classify the PR based on its content and purpose.)
+
 ## PR Value Assessment
 
 - Value Level: [1/2/3/4/5]
@@ -112,49 +114,61 @@ Description: ${pullRequest.body}
 Git Diff: ${pullRequest.diff}
     `;
 
-    const response = await openai.chat.completions.create({
-      model: 'qwen3-32b',
-      enable_thinking: false,
-      messages: [{ role: 'user', content: prompt }],
-    } as any);
-
-    const resultStr = response.choices[0].message.content!;
-    // extract data from the returned string content
-    // Use regex to extract data from the returned string content
-    const outputPullRequest: Partial<OutputPullRequest> = {
-      id: pullRequest.id,
-      platform: pullRequest.platform,
-    };
-
-    // Helper to extract each line by key
-    function extractValue(regex: RegExp, str: string, values?: string[]) {
-      const match = str.match(regex);
-      const ret = match ? match[1].trim() : undefined;
-      if (values && ret && !values.includes(ret)) {
-        throw new Error(`Invalid value: ${ret}`);
-      }
-      return ret;
-    }
-
     try {
+
+      const response = await openai.chat.completions.create({
+        model: 'qwen3-32b',
+        enable_thinking: false,
+        messages: [{ role: 'user', content: prompt }],
+      } as any);
+
+      const resultStr = response.choices[0].message.content!;
+      // extract data from the returned string content
+      // Use regex to extract data from the returned string content
+      const outputPullRequest: Partial<OutputPullRequest> = {
+        id: pullRequest.id,
+        platform: pullRequest.platform,
+      };
+
+      // Helper to extract each line by key
+      function extractValue(regex: RegExp, str: string, values?: string[]) {
+        const match = str.match(regex);
+        const ret = match ? match[1].trim() : undefined;
+        if (values && ret && !values.includes(ret)) {
+          throw new Error(`Invalid value: ${ret}`);
+        }
+        return ret;
+      }
+
       outputPullRequest.codeQuality = extractValue(/Code Quality:\s*([^\n]+)/i, resultStr, qualityOptions);
       outputPullRequest.titleDescQuality = extractValue(/PR Title and Description Quality:\s*([^\n]+)/i, resultStr, qualityOptions);
       outputPullRequest.prType = extractValue(/PR Type:\s*([^\n]+)/i, resultStr);
       outputPullRequest.valueLevel = parseInt(extractValue(/Value Level:\s*([^\n]+)/i, resultStr, ['1', '2', '3', '4', '5']) || '0');
       outputPullRequest.primaryLanguage = extractValue(/Primary Language:\s*([^\n]+)/i, resultStr);
       outputPullRequest.isAutomaticallyGenerated = extractValue(/Is Automatically Generated:\s*([^\n]+)/i, resultStr, ['Yes', 'Uncertain']);
-    } catch {
+
+      return (outputPullRequest as OutputPullRequest);
+    } catch (e) {
+      logger.error(`Error analyzing pull request ${pullRequest.id}: ${e}`);
       return null;
     }
-
-    return (outputPullRequest as OutputPullRequest);
   };
 
   const getPullRequests = async (num: number): Promise<InputPullRequest[]> => {
+    // try to get pull requests from label data first
     const q = `SELECT id, platform, substring(diff, 1, 10000)
     FROM pull_diff WHERE status = 'normal' AND (platform, id) NOT IN (SELECT platform, id FROM pull_info)
+    AND (platform, id) IN (SELECT platform, id FROM pulls_with_label)
     LIMIT ${num}`;
-    const diffs = await query(q);
+    let diffs = await query(q);
+    if (diffs.length === 0) {
+      diffs = await query(`SELECT id, platform, substring(diff, 1, 10000)
+    FROM pull_diff WHERE status = 'normal' AND (platform, id) NOT IN (SELECT platform, id FROM pull_info)
+    LIMIT ${num}`);
+      if (diffs.length === 0) {
+        return [];
+      }
+    }
     const diffsObj = diffs.map(item => ({ id: +item[0], platform: item[1], diff: item[2] }));
     const pullInfo = await query(`SELECT issue_id, platform, any(repo_name), any(issue_number), argMax(issue_title, created_at), argMax(body, created_at)
     FROM events WHERE type = 'PullRequestEvent' AND (platform, issue_id) IN (${diffsObj.map(item => `('${item.platform}', ${item.id})`).join(',')})

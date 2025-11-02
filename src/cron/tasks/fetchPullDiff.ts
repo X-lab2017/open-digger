@@ -45,11 +45,20 @@ const task: Task = {
 
     // get pull requests ids
     const getPullRequests = async (totalCount: number): Promise<any[]> => {
-      // try to get pull requests ids first
-      const q = `SELECT argMax(repo_name, created_at), argMax(platform, created_at), argMax(issue_number, created_at), argMax(issue_id, created_at)
+      // try to get pull requests ids from label data first
+      let q = `SELECT argMax(repo_name, created_at), argMax(platform, created_at), argMax(issue_number, created_at), argMax(issue_id, created_at)
+        FROM events WHERE type='PullRequestEvent' AND platform='GitHub' AND (issue_id, platform) IN (SELECT id, platform FROM pulls_with_label)
+        AND (issue_id, platform) NOT IN (SELECT id, platform FROM pull_diff) GROUP BY issue_id LIMIT ${totalCount}`;
+      let pullRequests = await query(q);
+      if (pullRequests.length > 0) {
+        logger.info(`Get ${pullRequests.length} pull requests to update from label data`);
+        return pullRequests;
+      }
+      q = `SELECT argMax(repo_name, created_at), argMax(platform, created_at), argMax(issue_number, created_at), argMax(issue_id, created_at)
         FROM events WHERE type='PullRequestEvent' AND platform='GitHub' AND repo_id IN (SELECT id FROM export_repo)
         AND (issue_id, platform) NOT IN (SELECT id, platform FROM pull_diff) GROUP BY issue_id LIMIT ${totalCount}`;
-      const pullRequests = await query(q);
+      pullRequests = await query(q);
+      logger.info(`Get ${pullRequests.length} pull requests to update from export repo data`);
       return pullRequests;
     };
 
@@ -82,7 +91,6 @@ const task: Task = {
       logger.info(`No pull requests to update`);
       return;
     }
-    logger.info(`Get ${pullRequests.length} pull requests to update`);
 
     let processedCount = 0;
     const stream = new Readable({

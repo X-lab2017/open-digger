@@ -2,6 +2,9 @@ import { query } from "../db/clickhouse";
 
 (async () => {
   const createUserView = async () => {
+    // The user view is used to store the user info for the users
+    // The user view is refreshed every 3 hours
+    // The user view uses user info from API and location info to generate the user info
     await query(`DROP TABLE IF EXISTS user_info`);
     const createViewQuery = `
 CREATE MATERIALIZED VIEW IF NOT EXISTS user_info
@@ -111,6 +114,9 @@ GROUP BY
   };
 
   const createNameView = async () => {
+    // The name view is used to store the name info for the repos and orgs
+    // The name view is refreshed every 1 day
+    // OpenRank is used for sorting the repos and orgs
     await query(`DROP TABLE IF EXISTS name_info`);
     const createViewQuery = `
 CREATE MATERIALIZED VIEW IF NOT EXISTS name_info
@@ -152,6 +158,62 @@ GROUP BY actor_id, platform
     await query(createViewQuery);
   };
 
+  const createFlattenLabelView = async () => {
+    // The flatten_labels view is used to store the flatten label info for the repos, orgs and users
+    // The flatten_labels view is refreshed after label import
+    await query(`DROP TABLE IF EXISTS flatten_labels`);
+    const createViewQuery = `
+CREATE MATERIALIZED VIEW IF NOT EXISTS flatten_labels
+(
+  id LowCardinality(String),
+  type LowCardinality(String),
+  name LowCardinality(String),
+  name_zh LowCardinality(String),
+  platform LowCardinality(String),
+  entity_id UInt64,
+  entity_type Enum8('Repo'=1, 'Org'=2, 'User'=3)
+)
+ENGINE = MergeTree()
+ORDER BY (id, platform)
+POPULATE
+AS
+WITH l AS (SELECT id, type, name, name_zh, p.name AS platform, p.repos AS repos, p.orgs AS orgs, p.users AS users FROM labels ARRAY JOIN platforms AS p)
+SELECT id, type, name, name_zh, platform, arrayJoin(repos) AS entity_id, 'Repo' AS entity_type FROM l
+UNION ALL
+SELECT id, type, name, name_zh, platform, arrayJoin(orgs) AS entity_id, 'Org' AS entity_type FROM l
+UNION ALL
+SELECT id, type, name, name_zh, platform, arrayJoin(users) AS entity_id, 'User' AS entity_type FROM l
+`;
+    await query(createViewQuery);
+  };
+
+  const createPullsWitLabelView = async () => {
+    // The pulls_with_label view is used to store the pull requests with label info for the pull requests
+    // The pulls_with_label view is refreshed every 1 hour
+    await query(`DROP TABLE IF EXISTS pulls_with_label`);
+    const createViewQuery = `
+CREATE MATERIALIZED VIEW IF NOT EXISTS pulls_with_label
+REFRESH EVERY 1 HOUR
+(
+  id UInt64,
+  platform LowCardinality(String)
+) ENGINE = MergeTree()
+ORDER BY (id, platform)
+POPULATE
+AS
+SELECT
+  issue_id AS id,
+  platform
+FROM events WHERE type = 'PullRequestEvent' AND action = 'opened' AND actor_login NOT LIKE '%[bot]%'
+AND (((platform, repo_id) IN (SELECT platform, entity_id FROM flatten_labels WHERE entity_type = 'Repo'))
+   OR ((platform, org_id) IN (SELECT platform, entity_id FROM flatten_labels WHERE entity_type = 'Org')))
+GROUP BY issue_id, platform
+`;
+    await query(createViewQuery);
+  };
+
   await createUserView();
   await createNameView();
+  await createFlattenLabelView();
+  await createPullsWitLabelView();
 })();
