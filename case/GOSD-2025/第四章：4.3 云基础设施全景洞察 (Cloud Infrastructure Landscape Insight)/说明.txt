@@ -1,4 +1,0 @@
-运行contribute_count.py，可得到“图 4.3.5 开源项目贡献者数量分布”；
-运行lisence_count.py，可得到“图 4.3.4 许可证分布画像”；
-运行trends.py，可得到“图 4.3.3 排名靠前项目的月度 OpenRank 影响力趋势”；
-运行count_subcategory.py，可得到“图 4.3.2 16 个技术子领域入选项目数量”；
