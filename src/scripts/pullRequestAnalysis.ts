@@ -97,7 +97,7 @@ Only return the results, do not return any other text.
 ## Hostile or Abuse Assessment
 
 - Hostile or Abuse: [Yes/No]
-(Determine if the PR is hostile or abusive based on the title, description, code changes, and commit log. If the PR is hostile or abusive, return Yes. Otherwise, return No.)
+(Determine if the PR is hostile or abusive based on the title, description, code changes, and commit log. If the PR is hostile or abusive, return Yes. Otherwise, return No. PLEASE NOTICE THAT simply show mood or emotions are not supposed to be treated as hostile or abusvie, ONLY strong hostile words or advertisement not related to the code base are included.)
 
 ## Return the detailed analysis results in the following format:
 
