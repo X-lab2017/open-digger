@@ -11,6 +11,7 @@ import { createClient } from '@clickhouse/client';
  */
 const task: Task = {
   cron: '*/1 * * * *',
+  singleInstance: true,
   callback: async () => {
     const config = await getConfig();
     const googleClient = createGoogleClient({ key: config.google.map.key, timeout: 30000 });

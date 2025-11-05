@@ -12,6 +12,7 @@ import { Octokit } from '@octokit/rest';
  */
 const task: Task = {
   cron: '*/10 * * * *',
+  singleInstance: true,
   callback: async () => {
 
     const logger = getLogger('UpdateGitHubRepoTask');

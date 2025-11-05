@@ -11,6 +11,7 @@ import { getLogger } from '../../utils';
  */
 const task: Task = {
   cron: '0 3 * * *',
+  singleInstance: true,
   callback: async () => {
     const logger = getLogger('IssueReactionImporterTask');
 

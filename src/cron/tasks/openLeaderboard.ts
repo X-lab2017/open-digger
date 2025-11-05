@@ -7,6 +7,7 @@ import { getPlatformData } from '../../labelDataUtils';
 
 const task: Task = {
   cron: '0 0 15 * *',    // runs on the 15th day of every month at 00:00
+  singleInstance: true,
   callback: async () => {
 
     const logger = getLogger('OpenLeaderboardTask');
