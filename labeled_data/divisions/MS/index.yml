@@ -9,4 +9,7 @@ meta:
     - '500'
     - 蒙特塞拉特
   name_full: Montserrat
-  developers: []
+  developers:
+    - year: 2025
+      quarter: 2
+      count: 228

@@ -74,6 +74,9 @@ meta:
     - year: 2025
       quarter: 1
       count: 1609020
+    - year: 2025
+      quarter: 2
+      count: 1712812
 data:
   labels:
     - PL-02

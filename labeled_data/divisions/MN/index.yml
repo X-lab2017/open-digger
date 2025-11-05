@@ -73,6 +73,9 @@ meta:
     - year: 2025
       quarter: 1
       count: 63542
+    - year: 2025
+      quarter: 2
+      count: 66663
 data:
   labels:
     - MN-035

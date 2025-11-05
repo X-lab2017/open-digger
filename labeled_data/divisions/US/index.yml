@@ -75,6 +75,9 @@ meta:
     - year: 2025
       quarter: 1
       count: 25853769
+    - year: 2025
+      quarter: 2
+      count: 27113067
 data:
   labels:
     - ':agencies/us_va'

@@ -71,6 +71,9 @@ meta:
     - year: 2025
       quarter: 1
       count: 825
+    - year: 2025
+      quarter: 2
+      count: 833
 data:
   labels:
     - GW-BS

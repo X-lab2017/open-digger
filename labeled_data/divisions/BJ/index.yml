@@ -75,6 +75,9 @@ meta:
     - year: 2025
       quarter: 1
       count: 42377
+    - year: 2025
+      quarter: 2
+      count: 47014
 data:
   labels:
     - BJ-AK

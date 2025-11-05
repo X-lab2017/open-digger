@@ -73,6 +73,9 @@ meta:
     - year: 2025
       quarter: 1
       count: 345782
+    - year: 2025
+      quarter: 2
+      count: 367938
 data:
   labels:
     - NP-P1

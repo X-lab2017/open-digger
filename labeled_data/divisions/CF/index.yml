@@ -68,6 +68,9 @@ meta:
     - year: 2025
       quarter: 1
       count: 524
+    - year: 2025
+      quarter: 2
+      count: 567
 data:
   labels:
     - CF-AC

@@ -74,6 +74,9 @@ meta:
     - year: 2025
       quarter: 1
       count: 9801
+    - year: 2025
+      quarter: 2
+      count: 10906
 data:
   labels:
     - MR-01

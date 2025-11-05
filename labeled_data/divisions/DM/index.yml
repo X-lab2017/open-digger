@@ -74,6 +74,9 @@ meta:
     - year: 2025
       quarter: 1
       count: 1359
+    - year: 2025
+      quarter: 2
+      count: 1478
 data:
   labels:
     - DM-02

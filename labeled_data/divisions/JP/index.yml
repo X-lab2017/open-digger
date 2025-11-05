@@ -73,6 +73,9 @@ meta:
     - year: 2025
       quarter: 1
       count: 3979812
+    - year: 2025
+      quarter: 2
+      count: 4281405
 data:
   labels:
     - ':foundations/ruby'

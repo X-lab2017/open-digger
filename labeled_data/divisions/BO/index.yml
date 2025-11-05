@@ -75,6 +75,9 @@ meta:
     - year: 2025
       quarter: 1
       count: 155263
+    - year: 2025
+      quarter: 2
+      count: 165478
 data:
   labels:
     - BO-B

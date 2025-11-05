@@ -74,6 +74,9 @@ meta:
     - year: 2025
       quarter: 1
       count: 6299
+    - year: 2025
+      quarter: 2
+      count: 6964
 data:
   labels:
     - BI-BB

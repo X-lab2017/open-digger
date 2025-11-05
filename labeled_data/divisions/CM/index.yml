@@ -74,6 +74,9 @@ meta:
     - year: 2025
       quarter: 1
       count: 87510
+    - year: 2025
+      quarter: 2
+      count: 97917
 data:
   labels:
     - CM-AD

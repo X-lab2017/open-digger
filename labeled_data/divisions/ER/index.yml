@@ -73,6 +73,9 @@ meta:
     - year: 2025
       quarter: 1
       count: 1677
+    - year: 2025
+      quarter: 2
+      count: 1676
 data:
   labels:
     - ER-AN

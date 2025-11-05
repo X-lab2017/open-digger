@@ -75,6 +75,9 @@ meta:
     - year: 2025
       quarter: 1
       count: 5940
+    - year: 2025
+      quarter: 2
+      count: 6351
 data:
   labels:
     - GM-B

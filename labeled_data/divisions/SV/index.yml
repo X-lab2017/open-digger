@@ -74,6 +74,9 @@ meta:
     - year: 2025
       quarter: 1
       count: 99197
+    - year: 2025
+      quarter: 2
+      count: 103908
 data:
   labels:
     - SV-AH

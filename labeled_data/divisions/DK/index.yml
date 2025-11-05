@@ -74,6 +74,9 @@ meta:
     - year: 2025
       quarter: 1
       count: 439537
+    - year: 2025
+      quarter: 2
+      count: 459292
 data:
   labels:
     - DK-81

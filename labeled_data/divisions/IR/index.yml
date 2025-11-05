@@ -75,6 +75,9 @@ meta:
     - year: 2025
       quarter: 1
       count: 750295
+    - year: 2025
+      quarter: 2
+      count: 781401
 data:
   labels:
     - IR-00

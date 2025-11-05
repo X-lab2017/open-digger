@@ -74,6 +74,9 @@ meta:
     - year: 2025
       quarter: 1
       count: 453949
+    - year: 2025
+      quarter: 2
+      count: 487478
 data:
   labels:
     - AE-AJ

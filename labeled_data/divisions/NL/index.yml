@@ -77,6 +77,9 @@ meta:
     - year: 2025
       quarter: 1
       count: 1598457
+    - year: 2025
+      quarter: 2
+      count: 1709343
 data:
   labels:
     - ':companies/polars'

@@ -75,6 +75,9 @@ meta:
     - year: 2025
       quarter: 1
       count: 244921
+    - year: 2025
+      quarter: 2
+      count: 257825
 data:
   labels:
     - VE-A

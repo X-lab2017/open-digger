@@ -73,6 +73,9 @@ meta:
     - year: 2025
       quarter: 1
       count: 1957
+    - year: 2025
+      quarter: 2
+      count: 2251
 data:
   labels:
     - AG-03

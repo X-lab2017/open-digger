@@ -75,6 +75,9 @@ meta:
     - year: 2025
       quarter: 1
       count: 18800
+    - year: 2025
+      quarter: 2
+      count: 20423
 data:
   labels:
     - HT-AR

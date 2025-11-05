@@ -73,6 +73,9 @@ meta:
     - year: 2025
       quarter: 1
       count: 1404
+    - year: 2025
+      quarter: 2
+      count: 1395
 data:
   labels:
     - GL-AV

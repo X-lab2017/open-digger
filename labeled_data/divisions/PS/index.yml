@@ -77,6 +77,9 @@ meta:
     - year: 2025
       quarter: 1
       count: 85493
+    - year: 2025
+      quarter: 2
+      count: 89136
 data:
   labels:
     - PS-BTH

@@ -73,6 +73,9 @@ meta:
     - year: 2025
       quarter: 1
       count: 19673
+    - year: 2025
+      quarter: 2
+      count: 21988
 data:
   labels:
     - BF-01
