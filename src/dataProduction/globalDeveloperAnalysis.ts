@@ -128,6 +128,7 @@ import { getLogger } from "../utils";
     const totalOssDeveloperCountRes = await query(
       `SELECT COUNT(DISTINCT actor_id) FROM global_openrank WHERE type='User' AND legacy=0 AND platform='GitHub'`);
     const totalOssDeveloperCount = totalOssDeveloperCountRes[0][0];
+    logger.info(`Total open source developers: ${totalOssDeveloperCount}`);
 
     // how many open source developers on Gitee GVP projects
     const totalOssDevelopersGiteeRes = await query(
@@ -135,32 +136,16 @@ import { getLogger } from "../utils";
     const totalOssDevelopersGitee = totalOssDevelopersGiteeRes[0][0];
     logger.info(`Gitee open source developers: ${totalOssDevelopersGitee}`);
 
-    // how many open source developers has valid country information
-    const ossDevelopersWithCountryRes = await query(`
-    SELECT COUNT(DISTINCT actor_id) FROM global_openrank
-    WHERE type='User' AND legacy=0 AND platform ='GitHub' AND actor_id IN
-    (SELECT id FROM
-      (SELECT DISTINCT(id) AS id, location FROM gh_user_info WHERE location != '') u,
-      (SELECT location, country FROM location_info WHERE status = 'normal' AND country != '') l
-      WHERE u.location=l.location
-    )`);
-    const ossDevelopersWithCountry = ossDevelopersWithCountryRes[0][0];
+    // how many open source developers in each country and total
+    const ossDeveloperCountryRes = await query<[[string, number], number]>(`SELECT arraySort(x -> -x.2, groupArray(tuple(country, cnt))), SUM(cnt) AS total FROM
+      (SELECT country, COUNT() AS cnt FROM user_info WHERE country != '' GROUP BY country)`);
 
-    const ossDeveloperCountryRes = await query<[string, number]>(`
-    SELECT country, COUNT() FROM
-    (SELECT u.id AS id, l.country AS country FROM
-      (SELECT DISTINCT(id) AS id, location FROM gh_user_info WHERE location != '') u,
-      (SELECT location, country FROM location_info WHERE status = 'normal' AND country != '') l
-      WHERE u.location=l.location)
-    GROUP BY country
-    ORDER BY COUNT() DESC`);
+    logger.info(`Top countries are: ${ossDeveloperCountryRes[0][0].map(i => i[0]).slice(0, 20).join(',')}`);
+    logger.info(`Top 3 countries are: ${ossDeveloperCountryRes[0][0].slice(0, 3).map(i => `${i[0]}:${i[1]}`).join(',')}`);
 
-    logger.info(`Top countries are: ${ossDeveloperCountryRes.map(i => i[0]).slice(0, 20).join(',')}`);
-    logger.info(`Top 3 countries are: ${ossDeveloperCountryRes.slice(0, 3).map(i => `${i[0]}:${i[1]}`).join(',')}`);
-
-    const estimateNumber = ossDeveloperCountryRes.map(i => ({
+    const estimateNumber = ossDeveloperCountryRes[0][0].map(i => ({
       name: i[0],
-      value: +(i[1] * totalOssDeveloperCount / (ossDevelopersWithCountry * 10000)).toFixed(2),
+      value: +(i[1] * totalOssDeveloperCount / (ossDeveloperCountryRes[0][1] * 10000)).toFixed(2),
     })).filter(i => i.value > 0);
 
     logger.info(JSON.stringify(estimateNumber));
@@ -460,10 +445,10 @@ import { getLogger } from "../utils";
     });
   };
 
-  await pullAndCodeStats();
-  await ossDeveloperOverview();
+  await pullAndCodeStats;
+  await ossDeveloperOverview;
   await ossDeveloperCountyStat();
-  await ossDeveloperTrending();
-  await ossDeveloperContribution();
-  await ossContributionToChinaAndUSAProjects();
+  await ossDeveloperTrending;
+  await ossDeveloperContribution;
+  await ossContributionToChinaAndUSAProjects;
 })();
