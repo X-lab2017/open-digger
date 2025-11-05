@@ -38,7 +38,7 @@ export interface Task {
       logger.error(`Task in ${taskFile} is invalid.`);
       return;
     }
-    const taskName = taskFile.slice(0, -3); // remove suffix
+    const taskName = taskFile.endsWith('.ts') ? taskFile.slice(0, -3) : taskFile; // remove suffix
     const runningTasksSet = new Set<string>();
     if (enableTasks.has(taskName)) {
       logger.info(`Enable task: ${taskName}`);
