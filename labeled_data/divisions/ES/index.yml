@@ -74,6 +74,9 @@ meta:
     - year: 2025
       quarter: 1
       count: 2116788
+    - year: 2025
+      quarter: 2
+      count: 2233283
 data:
   labels:
     - ':companies/artelnics'

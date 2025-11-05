@@ -74,6 +74,9 @@ meta:
     - year: 2025
       quarter: 1
       count: 400613
+    - year: 2025
+      quarter: 2
+      count: 418244
 data:
   labels:
     - ':companies/nordic_semiconductor'

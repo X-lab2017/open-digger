@@ -74,6 +74,9 @@ meta:
     - year: 2025
       quarter: 1
       count: 51949
+    - year: 2025
+      quarter: 2
+      count: 57315
 data:
   labels:
     - MG-A

@@ -74,6 +74,9 @@ meta:
     - year: 2025
       quarter: 1
       count: 1992946
+    - year: 2025
+      quarter: 2
+      count: 2114431
 data:
   labels:
     - PH-00

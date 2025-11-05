@@ -75,6 +75,9 @@ meta:
     - year: 2025
       quarter: 1
       count: 10127
+    - year: 2025
+      quarter: 2
+      count: 10518
 data:
   labels:
     - CG-11

@@ -75,6 +75,9 @@ meta:
     - year: 2025
       quarter: 1
       count: 3153280
+    - year: 2025
+      quarter: 2
+      count: 3327893
 data:
   labels:
     - ':companies/material_ui_sas'

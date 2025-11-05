@@ -74,6 +74,9 @@ meta:
     - year: 2025
       quarter: 1
       count: 86732
+    - year: 2025
+      quarter: 2
+      count: 90112
 data:
   labels:
     - KG-B

@@ -74,6 +74,9 @@ meta:
     - year: 2025
       quarter: 1
       count: 598724
+    - year: 2025
+      quarter: 2
+      count: 637541
 data:
   labels:
     - CL-AI

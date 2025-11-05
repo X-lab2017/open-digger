@@ -74,6 +74,9 @@ meta:
     - year: 2025
       quarter: 1
       count: 7637
+    - year: 2025
+      quarter: 2
+      count: 8096
 data:
   labels:
     - FJ-C

@@ -74,6 +74,9 @@ meta:
     - year: 2025
       quarter: 1
       count: 822949
+    - year: 2025
+      quarter: 2
+      count: 859715
 data:
   labels:
     - ':companies/spotify'

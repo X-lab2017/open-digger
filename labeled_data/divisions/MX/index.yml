@@ -74,6 +74,9 @@ meta:
     - year: 2025
       quarter: 1
       count: 2121070
+    - year: 2025
+      quarter: 2
+      count: 2237748
 data:
   labels:
     - MX-AGU

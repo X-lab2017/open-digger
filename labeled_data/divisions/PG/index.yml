@@ -73,6 +73,9 @@ meta:
     - year: 2025
       quarter: 1
       count: 10220
+    - year: 2025
+      quarter: 2
+      count: 11288
 data:
   labels:
     - PG-CPK

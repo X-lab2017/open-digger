@@ -74,6 +74,9 @@ meta:
     - year: 2025
       quarter: 1
       count: 1508146
+    - year: 2025
+      quarter: 2
+      count: 1595946
 data:
   labels:
     - IT-21

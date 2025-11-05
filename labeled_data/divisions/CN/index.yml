@@ -76,6 +76,9 @@ meta:
     - year: 2025
       quarter: 1
       count: 14392642
+    - year: 2025
+      quarter: 2
+      count: 14933687
 data:
   labels:
     - ':communities/kaiyuanshe'

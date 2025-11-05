@@ -75,6 +75,9 @@ meta:
     - year: 2025
       quarter: 1
       count: 81944
+    - year: 2025
+      quarter: 2
+      count: 83971
 data:
   labels:
     - BA-BIH

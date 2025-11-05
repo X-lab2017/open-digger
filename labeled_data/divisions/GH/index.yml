@@ -74,6 +74,9 @@ meta:
     - year: 2025
       quarter: 1
       count: 223235
+    - year: 2025
+      quarter: 2
+      count: 244370
 data:
   labels:
     - GH-AA

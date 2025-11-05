@@ -73,6 +73,9 @@ meta:
     - year: 2025
       quarter: 1
       count: 44013
+    - year: 2025
+      quarter: 2
+      count: 46028
 data:
   labels:
     - JM-01

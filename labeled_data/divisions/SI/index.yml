@@ -74,6 +74,9 @@ meta:
     - year: 2025
       quarter: 1
       count: 95306
+    - year: 2025
+      quarter: 2
+      count: 98155
 data:
   labels:
     - SI-001

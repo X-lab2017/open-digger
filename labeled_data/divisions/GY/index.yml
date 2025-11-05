@@ -74,6 +74,9 @@ meta:
     - year: 2025
       quarter: 1
       count: 8595
+    - year: 2025
+      quarter: 2
+      count: 8090
 data:
   labels:
     - GY-BA

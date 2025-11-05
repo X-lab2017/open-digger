@@ -76,6 +76,9 @@ meta:
     - year: 2025
       quarter: 1
       count: 35272
+    - year: 2025
+      quarter: 2
+      count: 40814
 data:
   labels:
     - CD-BC

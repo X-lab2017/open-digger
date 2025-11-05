@@ -74,6 +74,9 @@ meta:
     - year: 2025
       quarter: 1
       count: 91451
+    - year: 2025
+      quarter: 2
+      count: 100212
 data:
   labels:
     - UG-C

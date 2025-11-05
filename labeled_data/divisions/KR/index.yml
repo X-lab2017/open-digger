@@ -77,6 +77,9 @@ meta:
     - year: 2025
       quarter: 1
       count: 2434485
+    - year: 2025
+      quarter: 2
+      count: 2562056
 data:
   labels:
     - ':companies/samsung'

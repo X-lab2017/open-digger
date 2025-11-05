@@ -73,6 +73,9 @@ meta:
     - year: 2025
       quarter: 1
       count: 1430578
+    - year: 2025
+      quarter: 2
+      count: 1492408
 data:
   labels:
     - UA-05

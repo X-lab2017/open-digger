@@ -73,6 +73,9 @@ meta:
     - year: 2025
       quarter: 1
       count: 1870706
+    - year: 2025
+      quarter: 2
+      count: 1978084
 data:
   labels:
     - AU-ACT

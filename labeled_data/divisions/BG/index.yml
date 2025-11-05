@@ -74,6 +74,9 @@ meta:
     - year: 2025
       quarter: 1
       count: 283597
+    - year: 2025
+      quarter: 2
+      count: 295287
 data:
   labels:
     - ':companies/ggml.ai'

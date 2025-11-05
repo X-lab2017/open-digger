@@ -74,6 +74,9 @@ meta:
     - year: 2025
       quarter: 1
       count: 69171
+    - year: 2025
+      quarter: 2
+      count: 72784
 data:
   labels:
     - PA-1

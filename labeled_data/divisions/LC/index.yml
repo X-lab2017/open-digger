@@ -73,6 +73,9 @@ meta:
     - year: 2025
       quarter: 1
       count: 3303
+    - year: 2025
+      quarter: 2
+      count: 3652
 data:
   labels:
     - LC-01
