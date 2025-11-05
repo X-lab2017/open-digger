@@ -25,6 +25,7 @@ interface Options {
  */
 const task: Task = {
   cron: '0 0 1 * *',
+  singleInstance: true,
   callback: async () => {
     const logger = getLogger('UpdateFoundationsTask');
 

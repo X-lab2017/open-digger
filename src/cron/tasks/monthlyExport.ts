@@ -14,6 +14,7 @@ import { EOL } from 'os';
 
 const task: Task = {
   cron: '0 0 5 * *',
+  singleInstance: true,
   callback: async () => {
 
     const config = await getConfig();

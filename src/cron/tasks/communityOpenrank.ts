@@ -34,6 +34,7 @@ enum CalcStatus {
 
 const task: Task = {
   cron: '0 0 15 1 * *',
+  singleInstance: true,
   callback: async () => {
     const logger = getLogger('CommunityOpenRankTask');
     // const config = await getConfig();

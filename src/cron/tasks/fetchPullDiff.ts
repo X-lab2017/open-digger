@@ -14,6 +14,7 @@ let round = 0;
 const API_RATE_LIMIT_EXCEEDED = 'API RATE LIMIT EXCEEDED';
 const task: Task = {
   cron: '*/10 * * * *',
+  singleInstance: false,
   callback: async () => {
 
     const logger = getLogger('FetchPullDiffTask');
