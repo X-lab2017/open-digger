@@ -1,0 +1,67 @@
+name: Guardrails
+type: Company
+data:
+  platforms:
+  - name: GitHub
+    type: Code Hosting
+    repos:
+    - id: 594609262
+      name: guardrails-ai/guardrails
+    - id: 659316877
+      name: guardrails-ai/guardrails-api
+    - id: 668392642
+      name: guardrails-ai/guardrails-internal
+    - id: 671220773
+      name: guardrails-ai/guardrails-api-client
+    - id: 677574952
+      name: guardrails-ai/guardrails-prov-val
+    - id: 705898218
+      name: guardrails-ai/lazydocs
+    - id: 730917161
+      name: guardrails-ai/COMET
+    - id: 734009436
+      name: guardrails-ai/guardrails-js
+    - id: 738607878
+      name: guardrails-ai/validator-template
+    - id: 747440144
+      name: guardrails-ai/regex_match
+    - id: 748406256
+      name: guardrails-ai/reading_time
+    - id: 748416337
+      name: guardrails-ai/one_line
+    - id: 748436180
+      name: guardrails-ai/lowercase
+    - id: 748438614
+      name: guardrails-ai/two_words
+    - id: 748852563
+      name: guardrails-ai/valid_json
+    - id: 748881491
+      name: guardrails-ai/ends_with
+    - id: 749986287
+      name: guardrails-ai/valid_url
+    - id: 750061769
+      name: guardrails-ai/valid_range
+    - id: 750412631
+      name: guardrails-ai/valid_address
+    - id: 750546253
+      name: guardrails-ai/valid_choice
+    - id: 750574128
+      name: guardrails-ai/valid_length
+    - id: 750590806
+      name: guardrails-ai/uppercase
+    - id: 750693113
+      name: guardrails-ai/similar_to_document
+    - id: 750707868
+      name: guardrails-ai/secrets_present
+    - id: 751028347
+      name: guardrails-ai/detect_pii
+    - id: 751576296
+      name: guardrails-ai/toxic_language
+    - id: 751713325
+      name: guardrails-ai/endpoint_is_reachable
+    - id: 752943281
+      name: guardrails-ai/exclude_sql_predicates
+    - id: 752971953
+      name: guardrails-ai/profanity_free
+    - id: 752975176
+      name: guardrails-ai/saliency_check

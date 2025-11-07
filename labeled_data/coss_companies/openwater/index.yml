@@ -1,0 +1,53 @@
+name: Openwater
+type: Company
+data:
+  platforms:
+  - name: GitHub
+    type: Code Hosting
+    repos:
+    - id: 5900277
+      name: OpenWaterAnalytics/epanet-rtx
+    - id: 6322452
+      name: OpenWaterAnalytics/epanet-matlab
+    - id: 11662203
+      name: OpenWaterAnalytics/EPANET-Matlab-Toolkit
+    - id: 13444988
+      name: OpenWaterAnalytics/epanet-msx
+    - id: 19354023
+      name: OpenWaterAnalytics/epanet-tools
+    - id: 24166957
+      name: OpenWaterAnalytics/EPANET
+    - id: 33876610
+      name: OpenWaterAnalytics/epanet-python
+    - id: 36874170
+      name: OpenWaterAnalytics/R-EpanetReader
+    - id: 41748250
+      name: OpenWaterAnalytics/openwateranalytics.github.io
+    - id: 62908486
+      name: OpenWaterAnalytics/epanet-dev
+    - id: 63338225
+      name: OpenWaterAnalytics/epanet-example-networks
+    - id: 85227563
+      name: OpenWaterAnalytics/WNTR
+    - id: 87837345
+      name: OpenWaterAnalytics/SWMM-EPANET_User_Interface
+    - id: 94934909
+      name: OpenWaterAnalytics/epanet-btx
+    - id: 111725017
+      name: OpenWaterAnalytics/nrtest
+    - id: 125072561
+      name: OpenWaterAnalytics/EPANET-legacy-user-interface
+    - id: 190773997
+      name: OpenWaterAnalytics/WTP-Model
+    - id: 238497428
+      name: OpenWaterAnalytics/CANARY
+    - id: 405976422
+      name: OpenWaterAnalytics/epanet-msx-python
+    - id: 420744037
+      name: OpenWaterAnalytics/epanet-gui
+    - id: 497006956
+      name: OpenWaterAnalytics/EPyT
+    - id: 726166438
+      name: OpenWaterAnalytics/tsflib
+    - id: 884350462
+      name: OpenWaterAnalytics/Community
