@@ -36,6 +36,7 @@
     "@octokit/app": "^4.1.0",
     "@octokit/auth-app": "^4.0.9",
     "@octokit/core": "^3.6.0",
+    "@octokit/graphql": "^4.0.0",
     "ali-oss": "^6.17.1",
     "async": "^3.2.5",
     "csv-reader": "^1.0.12",
