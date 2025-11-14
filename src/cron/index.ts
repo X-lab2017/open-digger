@@ -27,7 +27,7 @@ export interface Task {
   taskFiles.forEach(async taskFile => {
     let path = join(taskDir, taskFile);
     if (statSync(path).isDirectory()) {
-      path = join(path, 'index.ts');
+      path = join(path, 'index.js');
     }
     if (!existsSync(path)) {
       logger.error(`Task not exists for ${path}`);
@@ -38,7 +38,7 @@ export interface Task {
       logger.error(`Task in ${taskFile} is invalid.`);
       return;
     }
-    const taskName = taskFile.endsWith('.ts') ? taskFile.slice(0, -3) : taskFile; // remove suffix
+    const taskName = taskFile.endsWith('.js') ? taskFile.slice(0, -3) : taskFile;
     const runningTasksSet = new Set<string>();
     if (enableTasks.has(taskName)) {
       logger.info(`Enable task: ${taskName}`);
