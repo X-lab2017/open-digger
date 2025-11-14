@@ -253,6 +253,7 @@ export const getPulls = async (repoId: number, installationId: number, owner: st
     }
     if (new Date(pullRequest.createdAt) >= sinceDate) {
       events.push({
+        platform: 'GitHub',
         repo_id: repoId,
         repo_name: `${owner}/${repo}`,
         org_id: orgId,
@@ -275,6 +276,7 @@ export const getPulls = async (repoId: number, installationId: number, owner: st
           continue;
         }
         events.push({
+          platform: 'GitHub',
           repo_id: repoId,
           repo_name: `${owner}/${repo}`,
           org_id: orgId,
@@ -300,6 +302,7 @@ export const getPulls = async (repoId: number, installationId: number, owner: st
           }
           const pullRequestAuthor = processActor(pullRequest.author);
           events.push({
+            platform: 'GitHub',
             repo_id: repoId,
             repo_name: `${owner}/${repo}`,
             org_id: orgId,
@@ -319,6 +322,7 @@ export const getPulls = async (repoId: number, installationId: number, owner: st
           }
           const pullRequestAuthor = processActor(pullRequest.author);
           events.push({
+            platform: 'GitHub',
             repo_id: repoId,
             repo_name: `${owner}/${repo}`,
             org_id: orgId,
@@ -339,6 +343,7 @@ export const getPulls = async (repoId: number, installationId: number, owner: st
               continue;
             }
             events.push({
+              platform: 'GitHub',
               repo_id: repoId,
               repo_name: `${owner}/${repo}`,
               org_id: orgId,
@@ -358,6 +363,7 @@ export const getPulls = async (repoId: number, installationId: number, owner: st
             continue;
           }
           events.push({
+            platform: 'GitHub',
             repo_id: repoId,
             repo_name: `${owner}/${repo}`,
             org_id: orgId,

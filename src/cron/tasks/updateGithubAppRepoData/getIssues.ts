@@ -216,6 +216,7 @@ export const getIssues = async (repoId: number, installationId: number, owner: s
     }
     if (new Date(issue.createdAt) >= sinceDate) {
       events.push({
+        platform: 'GitHub',
         repo_id: repoId,
         repo_name: `${owner}/${repo}`,
         org_id: orgId,
@@ -238,6 +239,7 @@ export const getIssues = async (repoId: number, installationId: number, owner: s
           continue;
         }
         events.push({
+          platform: 'GitHub',
           repo_id: repoId,
           repo_name: `${owner}/${repo}`,
           org_id: orgId,
@@ -263,6 +265,7 @@ export const getIssues = async (repoId: number, installationId: number, owner: s
           }
           const issueAuthor = processActor(issue.author);
           events.push({
+            platform: 'GitHub',
             repo_id: repoId,
             repo_name: `${owner}/${repo}`,
             org_id: orgId,
@@ -282,6 +285,7 @@ export const getIssues = async (repoId: number, installationId: number, owner: s
             continue;
           }
           events.push({
+            platform: 'GitHub',
             repo_id: repoId,
             repo_name: `${owner}/${repo}`,
             org_id: orgId,

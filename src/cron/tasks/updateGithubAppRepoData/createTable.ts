@@ -1,6 +1,7 @@
 import { query } from "../../../db/clickhouse";
 
 export interface InsertRecord {
+  platform: string;
   repo_id: number;
   repo_name: string;
   org_id: number;
@@ -25,6 +26,7 @@ export interface InsertRecord {
 export const createGithubAppRepoDataTable = async () => {
   const createTableQuery = `
     CREATE TABLE IF NOT EXISTS github_app_repo_data (
+      platform LowCardinality(String),
       repo_id UInt64,
       repo_name LowCardinality(String),
       org_id UInt64,
@@ -46,7 +48,7 @@ export const createGithubAppRepoDataTable = async () => {
       created_at DateTime
     )
     ENGINE = ReplacingMergeTree
-    ORDER BY (repo_id, issue_id, issue_comment_id, pull_review_comment_id, type, action)
+    ORDER BY (platform, repo_id, issue_id, issue_comment_id, pull_review_comment_id, type, action)
     SETTINGS index_granularity = 8192
   `;
   await query(createTableQuery);
