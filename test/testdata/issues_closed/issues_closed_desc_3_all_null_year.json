@@ -18,23 +18,23 @@
     {
       "id": "20818126",
       "name": "google/ExoPlayer",
-      "total_count": "1631",
+      "total_count": "1576",
       "count": [
-        "581",
-        "1050"
+        "558",
+        "1018"
       ],
       "ratio": [
-        "36%",
-        "64%"
+        "35%",
+        "65%"
       ]
     },
     {
       "id": "29268051",
       "name": "google/material-design-lite",
-      "total_count": "1409",
+      "total_count": "1383",
       "count": [
-        "681",
-        "728"
+        "662",
+        "721"
       ],
       "ratio": [
         "48%",
@@ -44,10 +44,10 @@
     {
       "id": "19249835",
       "name": "google/WebFundamentals",
-      "total_count": "1355",
+      "total_count": "1341",
       "count": [
-        "710",
-        "645"
+        "700",
+        "641"
       ],
       "ratio": [
         "52%",

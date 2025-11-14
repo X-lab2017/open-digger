@@ -226,7 +226,7 @@ export const getIssues = async (repoId: number, installationId: number, owner: s
         action: 'opened',
         issue_id: issue.databaseId,
         issue_number: issue.number,
-        title: issue.title,
+        issue_title: issue.title,
         body: issue.body,
         created_at: formatDate(issue.createdAt),
       });

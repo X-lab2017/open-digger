@@ -12,7 +12,8 @@ import {
   processQueryResult,
   getTopLevelPlatform,
   getInnerGroupBy,
-  getWithClause
+  getWithClause,
+  githubAppBaseTable
 } from "./basic";
 import * as clickhouse from '../db/clickhouse';
 
@@ -132,8 +133,7 @@ FROM
     ${getGroupTimeClause(config)},
     ${getGroupIdClause(config)},
     COUNT(DISTINCT actor_id) AS count
-  FROM events
-  WHERE ${whereClauses.join(' AND ')}
+  FROM ${githubAppBaseTable(whereClauses.join(' AND '))}
   ${getInnerGroupBy(config)}
   ${getInnerOrderAndLimit(config, 'count')}
 )

@@ -18,10 +18,10 @@
     {
       "id": "29268051",
       "name": "google/material-design-lite",
-      "total_count": "3376",
+      "total_count": "3342",
       "count": [
-        "1382",
-        "1994"
+        "1358",
+        "1984"
       ],
       "ratio": [
         "41%",
@@ -31,10 +31,10 @@
     {
       "id": "20818126",
       "name": "google/ExoPlayer",
-      "total_count": "1789",
+      "total_count": "1731",
       "count": [
-        "740",
-        "1049"
+        "715",
+        "1016"
       ],
       "ratio": [
         "41%",
@@ -44,10 +44,10 @@
     {
       "id": "23357588",
       "name": "google/protobuf",
-      "total_count": "1193",
+      "total_count": "1174",
       "count": [
-        "425",
-        "768"
+        "421",
+        "753"
       ],
       "ratio": [
         "36%",

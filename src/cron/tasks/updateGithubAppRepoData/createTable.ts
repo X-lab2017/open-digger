@@ -18,7 +18,7 @@ export interface InsertRecord {
   issue_comment_id?: number;
   pull_review_comment_id?: number;
   pull_merged?: number;
-  title?: string;
+  issue_title?: string;
   body?: string;
   created_at?: string;
 }
@@ -43,7 +43,7 @@ export const createGithubAppRepoDataTable = async () => {
       issue_comment_id UInt64,
       pull_review_comment_id UInt64,
       pull_merged UInt8,
-      title String,
+      issue_title String,
       body String,
       created_at DateTime
     )
