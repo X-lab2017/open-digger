@@ -17,9 +17,10 @@ const task: Task = {
     const logger = getLogger('UpdateGithubAppRepoDataTask');
 
     const updateRepoDataTask = async () => {
+      // repo updated_at means repo code or description changed, so update data when update or at least once a month
       const repos = await query<any>(`
 SELECT id, argMax(installation_id, inserted_at), argMax(repo_name, inserted_at), argMax(data_updated_at, inserted_at)
-FROM github_app_repo_list WHERE repo_updated_at > data_updated_at GROUP BY id`);
+FROM github_app_repo_list WHERE repo_updated_at > data_updated_at OR data_updated_at < toDateTime(now() - INTERVAL 1 MONTH) GROUP BY id`);
       logger.info(`Got ${repos.length} repos to update`);
 
       const updateRepoData = async (repo: { id: number, installation_id: number, repo_name: string, since: string }) => {
