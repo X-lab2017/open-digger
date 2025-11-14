@@ -1,0 +1,9 @@
+name: NeovateAI
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 224911977
+          name: neovateai

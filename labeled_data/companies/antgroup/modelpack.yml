@@ -1,0 +1,9 @@
+name: ModelPack
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 210873461
+          name: modelpack

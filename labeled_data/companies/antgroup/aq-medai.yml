@@ -1,0 +1,9 @@
+name: AQ-MedAI
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 227193459
+          name: AQ-MedAI

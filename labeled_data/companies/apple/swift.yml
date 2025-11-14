@@ -7,8 +7,6 @@ data:
       orgs:
         - id: 42816656
           name: swiftlang
-      # all the swift repos transfered from apple to swiftlang in 2024.6
-      # so need to label all the repos too
       repos:
         - id: 44838949
           name: swiftlang/swift

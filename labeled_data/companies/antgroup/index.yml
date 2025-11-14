@@ -7,15 +7,18 @@ data:
     - ':companies/alibaba/opensumi'
     - ':companies/alibaba/seata'
     - agent_universe
+    - aigw
     - ant_mini_program
     - antchain
     - antd
     - antv
+    - aq-medai
     - asterinas
     - ceresdb
     - cnpm
     - codefuse
     - couler
+    - dtvm
     - dva
     - egg
     - eosphoros
@@ -26,17 +29,23 @@ data:
     - hyper_enclave
     - inclusionai
     - intelligent_machine_learning
+    - jeandle
     - karas
     - kata_container
     - kcl_lang
+    - koupleless
     - kusion_stack
     - macaca
     - magic_quill
+    - modelpack
     - mosn
     - mpaas
+    - neovateai
     - ng_zorro
     - occlum
     - oceanbase
+    - openasce
+    - openderisk
     - openspg
     - petercat
     - react_component
@@ -47,7 +56,10 @@ data:
     - trass_stack
     - tugraph
     - umi
+    - unieo
+    - utoo
     - vsag
+    - weavefox
   platforms:
     - name: GitHub
       type: Code Hosting
