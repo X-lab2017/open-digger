@@ -263,7 +263,7 @@ export const getPulls = async (repoId: number, installationId: number, owner: st
         action: 'opened',
         issue_id: pullRequest.databaseId,
         issue_number: pullRequest.number,
-        title: pullRequest.title,
+        issue_title: pullRequest.title,
         body: pullRequest.body,
         created_at: formatDate(pullRequest.createdAt),
       });

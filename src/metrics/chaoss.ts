@@ -4,7 +4,7 @@ import {
   getGroupArrayInsertAtClause, getGroupTimeClause, getGroupIdClause,
   getInnerOrderAndLimit, getOutterOrderAndLimit,
   QueryConfig, TimeDurationOption, timeDurationConstants, processQueryResult, getTopLevelPlatform, getInnerGroupBy,
-  getWithClause,
+  getWithClause, githubAppBaseTable,
 } from "./basic";
 import * as clickhouse from '../db/clickhouse';
 import { basicActivitySqlComponent } from "./indices";
@@ -149,9 +149,8 @@ FROM
   SELECT
     ${getGroupTimeClause(config)},
     ${getGroupIdClause(config)},
-    COUNT() AS count
-  FROM events
-  WHERE ${whereClauses.join(' AND ')}
+    COUNT(DISTINCT issue_id) AS count
+  FROM ${githubAppBaseTable(whereClauses.join(' AND '))}
   GROUP BY id, platform, time
   ${getInnerOrderAndLimit(config, 'count')}
 )
@@ -166,7 +165,7 @@ ${getOutterOrderAndLimit(config, 'issues_new_count')}`;
 
 export const chaossIssuesAndChangeRequestActive = async (config: QueryConfig) => {
   config = getMergedConfig(config);
-  const whereClauses: string[] = ["type IN ('IssuesEvent', 'IssueCommentEvent', 'PullRequestEvent')"];
+  const whereClauses: string[] = ["type IN ('IssuesEvent', 'IssueCommentEvent', 'PullRequestEvent', 'PullRequestReviewCommentEvent')"];
   const repoWhereClause = await getRepoWhereClause(config);
   if (repoWhereClause) whereClauses.push(repoWhereClause);
   whereClauses.push(getTimeRangeWhereClause(config));
@@ -183,9 +182,8 @@ FROM
   SELECT
     ${getGroupTimeClause(config)},
     ${getGroupIdClause(config)},
-    COUNT(DISTINCT issue_number) AS count
-  FROM events
-  WHERE ${whereClauses.join(' AND ')}
+    COUNT(DISTINCT issue_id) AS count
+  FROM ${githubAppBaseTable(whereClauses.join(' AND '))}
   GROUP BY id, platform, time
   ${getInnerOrderAndLimit(config, 'count')}
 )
@@ -216,8 +214,8 @@ FROM
   SELECT
     ${getGroupTimeClause(config)},
     ${getGroupIdClause(config)},
-    COUNT() AS count
-  FROM events
+    COUNT(DISTINCT issue_id) AS count
+  FROM ${githubAppBaseTable(whereClauses.join(' AND '))}
   WHERE ${whereClauses.join(' AND ')}
   GROUP BY id, platform, time
   ${getInnerOrderAndLimit(config, 'count')}
@@ -458,9 +456,8 @@ FROM
   SELECT
     ${getGroupTimeClause(config)},
     ${getGroupIdClause(config)},
-    COUNT() AS count
-  FROM events
-  WHERE ${whereClauses.join(' AND ')}
+    COUNT(DISTINCT issue_id) AS count
+  FROM ${githubAppBaseTable(whereClauses.join(' AND '))}
   ${getInnerGroupBy(config)}
   ${getInnerOrderAndLimit(config, 'count')}
 )
@@ -631,9 +628,8 @@ FROM
   SELECT
     ${getGroupTimeClause(config)},
     ${getGroupIdClause(config)},
-    COUNT() AS count
-  FROM events
-  WHERE ${whereClauses.join(' AND ')}
+    COUNT(DISTINCT issue_id) AS count
+  FROM ${githubAppBaseTable(whereClauses.join(' AND '))}
   ${getInnerGroupBy(config)}
   ${getInnerOrderAndLimit(config, 'count')}
 )
@@ -663,9 +659,8 @@ FROM
   SELECT
     ${getGroupTimeClause(config)},
     ${getGroupIdClause(config)},
-    COUNT() AS count
-  FROM events
-  WHERE ${whereClauses.join(' AND ')}
+    COUNT(DISTINCT pull_review_comment_id) AS count
+  FROM ${githubAppBaseTable(whereClauses.join(' AND '))}
   ${getInnerGroupBy(config)}
   ${getInnerOrderAndLimit(config, 'count')}
 )
@@ -833,8 +828,7 @@ ${getWithClause(config)}
       }
     })()},
             created_at
-          FROM events
-          WHERE ${whereClauses.join(' AND ')}
+          FROM ${githubAppBaseTable(whereClauses.join(' AND '))}
           ${(config.options?.withBot && by !== 'commit') ? '' : "HAVING author NOT LIKE '%[bot]'"}
         )
       GROUP BY platform, repo_id, org_id, ${by === 'commit' ? 'author' : 'actor_id'}
@@ -872,8 +866,7 @@ FROM
     ${getGroupIdClause(config)},
     groupArray(DISTINCT(issue_author_login)) AS detail,
     COUNT(DISTINCT issue_author_id) AS count
-  FROM events
-  WHERE ${whereClauses.join(' AND ')}
+  FROM ${githubAppBaseTable(whereClauses.join(' AND '))}
   GROUP BY id, platform, time
   ${getInnerOrderAndLimit(config, 'count')}
 )

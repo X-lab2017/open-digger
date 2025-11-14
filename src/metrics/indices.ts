@@ -12,7 +12,8 @@ import {
   processQueryResult,
   getTopLevelPlatform,
   getInnerGroupBy,
-  getWithClause
+  getWithClause,
+  githubAppBaseTable
 } from './basic';
 import * as clickhouse from '../db/clickhouse';
 import { getPlatformData } from '../labelDataUtils';
@@ -325,8 +326,7 @@ FROM
       repo_id, argMax(repo_name, created_at) AS repo_name,
       org_id, argMax(org_login, created_at) AS org_login,
       ${basicActivitySqlComponent}
-    FROM events
-    WHERE ${whereClauses.join(' AND ')}
+    FROM ${githubAppBaseTable(whereClauses.join(' AND '))}
     GROUP BY platform, repo_id, org_id, actor_id, month
     HAVING activity > 0
   )
@@ -385,8 +385,7 @@ FROM
       repo_id,
       argMax(repo_name, created_at) AS repo_name,
       ${basicActivitySqlComponent}
-    FROM events
-    WHERE ${whereClauses.join(' AND ')}
+    FROM ${githubAppBaseTable(whereClauses.join(' AND '))}
     GROUP BY platform, repo_id, actor_id, month
     HAVING activity > 0 ${withBot ? '' : `AND actor_login NOT LIKE '%[bot]'`}
   )
