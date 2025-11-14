@@ -4,6 +4,9 @@ data:
   platforms:
     - name: GitHub
       type: Code Hosting
+      orgs:
+        - id: 197897744
+          name: agentuniverse-ai
       repos:
         - id: 790704526
           name: antgroup/agentUniverse

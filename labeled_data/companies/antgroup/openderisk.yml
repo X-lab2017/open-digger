@@ -1,0 +1,9 @@
+name: OpenDeRisk
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 205867301
+          name: derisk-ai
