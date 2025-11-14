@@ -165,6 +165,7 @@ GROUP BY actor_id, platform
     await query(`DROP TABLE IF EXISTS flatten_labels`);
     const createViewQuery = `
 CREATE MATERIALIZED VIEW IF NOT EXISTS flatten_labels
+REFRESH EVERY 1 DAY
 (
   id LowCardinality(String),
   type LowCardinality(String),

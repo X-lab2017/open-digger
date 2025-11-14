@@ -1,5 +1,5 @@
 import { getLabelData } from "../labelDataUtils";
-import { query, insertRecords } from "../db/clickhouse";
+import { query, insertRecords, getNewClient } from "../db/clickhouse";
 
 (async () => {
   const createLabelTable = async () => {
@@ -43,5 +43,6 @@ import { query, insertRecords } from "../db/clickhouse";
   console.log(`Total labels imported: ${count[0][0]}, total labels: ${labelData.length}`);
 
   // Manually refresh the flatten_labels view
-  await query('SYSTEM REFRESH VIEW flatten_labels;');
+  const client = await getNewClient();
+  await client.query({ query: 'SYSTEM REFRESH VIEW flatten_labels;' });
 })();
