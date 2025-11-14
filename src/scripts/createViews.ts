@@ -207,6 +207,7 @@ SELECT
   issue_id AS id,
   platform
 FROM events WHERE type = 'PullRequestEvent' AND action = 'opened' AND actor_login NOT LIKE '%[bot]%'
+AND toYear(created_at) >= 2025
 AND (((platform, repo_id) IN (SELECT platform, entity_id FROM flatten_labels WHERE entity_type = 'Repo'))
    OR ((platform, org_id) IN (SELECT platform, entity_id FROM flatten_labels WHERE entity_type = 'Org')))
 GROUP BY issue_id, platform
