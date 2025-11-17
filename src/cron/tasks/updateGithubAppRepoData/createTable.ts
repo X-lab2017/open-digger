@@ -47,7 +47,7 @@ export const createGithubAppRepoDataTable = async () => {
       body String,
       created_at DateTime
     )
-    ENGINE = ReplacingMergeTree
+    ENGINE = ReplacingMergeTree(pull_merged)
     ORDER BY (platform, repo_id, issue_id, issue_comment_id, pull_review_comment_id, type, action)
     SETTINGS index_granularity = 8192
   `;

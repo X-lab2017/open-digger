@@ -3,7 +3,7 @@ import { App } from '@octokit/app';
 import { formatDate, getLogger } from '../../utils';
 import { Task } from '../index';
 import getConfig from '../../config';
-import { insertRecords, query } from '../../db/clickhouse';
+import { getNewClient, insertRecords, query } from '../../db/clickhouse';
 
 /**
  * This task is used to update github app repo list
@@ -86,6 +86,9 @@ const task: Task = {
     await createGithubAppRepoListTable();
     const repos = await getInstalledRepos();
     await saveRepoList(repos);
+    const client = await getNewClient();
+    await client.command({ query: `OPTIMIZE TABLE github_app_repo_list DEDUPLICATE;` });
+    await client.close();
   },
 };
 
