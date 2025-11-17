@@ -3,25 +3,11 @@ import { InsertRecord } from "./createTable";
 import { getGraphqlClient } from "./getClient";
 import { processActor } from "./utils";
 
-const batchCount = 50;
+// since query will recursively get comments and events for every pull request
+// need to limit the number of pull requests to query at once to a small number to avoid rate limit error in a single query
+const batchCount = 30;
 
 const timelineItems = `
-... on MergedEvent {
-  __typename
-  createdAt
-  actor {
-    ... on User {
-      __typename
-      databaseId
-      login
-    }
-    ... on Bot {
-      __typename
-      databaseId
-      login
-    }
-  }
-}
 ... on ClosedEvent {
   __typename
   createdAt
@@ -115,7 +101,7 @@ const getMoreEvents = async (repoId: number, installationId: number, owner: stri
     query getMoreEvents($owner: String!, $repo: String!, $number: Int!, $count: Int!, $since: DateTime!, $after: String!) {
       repository(owner: $owner, name: $repo) {
         pullRequest(number: $number) {
-          timelineItems(itemTypes: [MERGED_EVENT, CLOSED_EVENT, ISSUE_COMMENT, PULL_REQUEST_REVIEW, PULL_REQUEST_REVIEW_THREAD], first: $count, since: $since, after: $after) {
+          timelineItems(itemTypes: [CLOSED_EVENT, ISSUE_COMMENT, PULL_REQUEST_REVIEW, PULL_REQUEST_REVIEW_THREAD], first: $count, since: $since, after: $after) {
             pageInfo {
               hasNextPage
               endCursor
@@ -198,6 +184,19 @@ export const getPulls = async (repoId: number, installationId: number, owner: st
             body
             createdAt
             updatedAt
+            mergedAt
+            mergedBy {
+              ... on User {
+                __typename
+                databaseId
+                login
+              }
+              ... on Bot {
+                __typename
+                databaseId
+                login
+              }
+            }
             author {
               ... on User {
                 __typename
@@ -225,7 +224,7 @@ export const getPulls = async (repoId: number, installationId: number, owner: st
                 }
               }
             }
-            timelineItems(itemTypes: [MERGED_EVENT, CLOSED_EVENT, ISSUE_COMMENT, PULL_REQUEST_REVIEW, PULL_REQUEST_REVIEW_THREAD], first: $count, since: $since) {
+            timelineItems(itemTypes: [CLOSED_EVENT, ISSUE_COMMENT, PULL_REQUEST_REVIEW, PULL_REQUEST_REVIEW_THREAD], first: $count, since: $since) {
               pageInfo {
                 hasNextPage
                 endCursor
@@ -251,6 +250,7 @@ export const getPulls = async (repoId: number, installationId: number, owner: st
     if (!pullRequest.author) {
       continue;
     }
+    const author = processActor(pullRequest.author);
     if (new Date(pullRequest.createdAt) >= sinceDate) {
       events.push({
         platform: 'GitHub',
@@ -258,7 +258,9 @@ export const getPulls = async (repoId: number, installationId: number, owner: st
         repo_name: `${owner}/${repo}`,
         org_id: orgId,
         org_login: orgLogin,
-        ...processActor(pullRequest.author),
+        ...author,
+        issue_author_id: author.actor_id,
+        issue_author_login: author.actor_login,
         type: 'PullRequestEvent',
         action: 'opened',
         issue_id: pullRequest.databaseId,
@@ -267,12 +269,58 @@ export const getPulls = async (repoId: number, installationId: number, owner: st
         body: pullRequest.body,
         created_at: formatDate(pullRequest.createdAt),
       });
-      const reactions = pullRequest.reactions.nodes;
-      if (pullRequest.reactions.pageInfo.hasNextPage) {
-        reactions.push(...await getMoreReactions(repoId, installationId, owner, repo, pullRequest.number, pullRequest.reactions.pageInfo.endCursor));
+    }
+    if (pullRequest.mergedAt && new Date(pullRequest.mergedAt) >= sinceDate) {
+      events.push({
+        platform: 'GitHub',
+        repo_id: repoId,
+        repo_name: `${owner}/${repo}`,
+        org_id: orgId,
+        org_login: orgLogin,
+        ...processActor(pullRequest.mergedBy),
+        issue_author_id: author.actor_id,
+        issue_author_login: author.actor_login,
+        type: 'PullRequestEvent',
+        action: 'closed',
+        pull_merged: 1,
+        issue_id: pullRequest.databaseId,
+        issue_number: pullRequest.number,
+        created_at: formatDate(pullRequest.mergedAt),
+      });
+    }
+    const reactions = pullRequest.reactions.nodes;
+    if (pullRequest.reactions.pageInfo.hasNextPage) {
+      reactions.push(...await getMoreReactions(repoId, installationId, owner, repo, pullRequest.number, pullRequest.reactions.pageInfo.endCursor));
+    }
+    for (const reaction of reactions) {
+      if (!reaction.user) {
+        continue;
       }
-      for (const reaction of reactions) {
-        if (!reaction.user) {
+      events.push({
+        platform: 'GitHub',
+        repo_id: repoId,
+        repo_name: `${owner}/${repo}`,
+        org_id: orgId,
+        org_login: orgLogin,
+        actor_login: reaction.user.login,
+        actor_id: reaction.user.databaseId,
+        issue_author_id: author.actor_id,
+        issue_author_login: author.actor_login,
+        type: 'IssuesReactionEvent',
+        action: 'created',
+        issue_id: pullRequest.databaseId,
+        issue_number: pullRequest.number,
+        body: reaction.content,
+        created_at: formatDate(reaction.createdAt),
+      });
+    }
+    const pullRequestEvents = pullRequest.timelineItems.nodes;
+    if (pullRequest.timelineItems.pageInfo.hasNextPage) {
+      pullRequestEvents.push(...await getMoreEvents(repoId, installationId, owner, repo, pullRequest.number, since, pullRequest.timelineItems.pageInfo.endCursor));
+    }
+    for (const event of pullRequestEvents) {
+      if (event.__typename === 'ClosedEvent') {
+        if (!event.actor) {
           continue;
         }
         events.push({
@@ -281,85 +329,18 @@ export const getPulls = async (repoId: number, installationId: number, owner: st
           repo_name: `${owner}/${repo}`,
           org_id: orgId,
           org_login: orgLogin,
-          actor_login: reaction.user.login,
-          actor_id: reaction.user.databaseId,
-          type: 'IssuesReactionEvent',
-          action: 'created',
+          ...processActor(event.actor),
+          issue_author_id: author.actor_id,
+          issue_author_login: author.actor_login,
+          type: 'PullRequestEvent',
+          action: 'closed',
           issue_id: pullRequest.databaseId,
           issue_number: pullRequest.number,
-          body: reaction.content,
-          created_at: formatDate(reaction.createdAt),
+          created_at: formatDate(event.createdAt),
         });
-      }
-      const pullRequestEvents = pullRequest.timelineItems.nodes;
-      if (pullRequest.timelineItems.pageInfo.hasNextPage) {
-        pullRequestEvents.push(...await getMoreEvents(repoId, installationId, owner, repo, pullRequest.number, since, pullRequest.timelineItems.pageInfo.endCursor));
-      }
-      for (const event of pullRequestEvents) {
-        if (event.__typename === 'ClosedEvent') {
-          if (!event.actor) {
-            continue;
-          }
-          const pullRequestAuthor = processActor(pullRequest.author);
-          events.push({
-            platform: 'GitHub',
-            repo_id: repoId,
-            repo_name: `${owner}/${repo}`,
-            org_id: orgId,
-            org_login: orgLogin,
-            ...processActor(event.actor),
-            issue_author_id: pullRequestAuthor.actor_id,
-            issue_author_login: pullRequestAuthor.actor_login,
-            type: 'PullRequestEvent',
-            action: 'closed',
-            issue_id: pullRequest.databaseId,
-            issue_number: pullRequest.number,
-            created_at: formatDate(event.createdAt),
-          });
-        } else if (event.__typename === 'MergedEvent') {
-          if (!event.actor) {
-            continue;
-          }
-          const pullRequestAuthor = processActor(pullRequest.author);
-          events.push({
-            platform: 'GitHub',
-            repo_id: repoId,
-            repo_name: `${owner}/${repo}`,
-            org_id: orgId,
-            org_login: orgLogin,
-            ...processActor(event.actor),
-            issue_author_id: pullRequestAuthor.actor_id,
-            issue_author_login: pullRequestAuthor.actor_login,
-            type: 'PullRequestEvent',
-            action: 'closed',
-            pull_merged: 1,
-            issue_id: pullRequest.databaseId,
-            issue_number: pullRequest.number,
-            created_at: formatDate(event.createdAt),
-          });
-        } else if (event.__typename === 'PullRequestReview' || event.__typename === 'PullRequestReviewThread') {
-          for (const comment of event.comments.nodes) {
-            if (!comment.author) {
-              continue;
-            }
-            events.push({
-              platform: 'GitHub',
-              repo_id: repoId,
-              repo_name: `${owner}/${repo}`,
-              org_id: orgId,
-              org_login: orgLogin,
-              ...processActor(comment.author),
-              type: 'PullRequestReviewCommentEvent',
-              action: 'created',
-              issue_id: pullRequest.databaseId,
-              issue_number: pullRequest.number,
-              pull_review_comment_id: comment.databaseId,
-              body: comment.body,
-              created_at: formatDate(comment.createdAt),
-            });
-          }
-        } else {
-          if (!event.author) {
+      } else if (event.__typename === 'PullRequestReview' || event.__typename === 'PullRequestReviewThread') {
+        for (const comment of event.comments.nodes) {
+          if (!comment.author) {
             continue;
           }
           events.push({
@@ -368,16 +349,39 @@ export const getPulls = async (repoId: number, installationId: number, owner: st
             repo_name: `${owner}/${repo}`,
             org_id: orgId,
             org_login: orgLogin,
-            ...processActor(event.author),
-            type: 'IssueCommentEvent',
+            ...processActor(comment.author),
+            issue_author_id: author.actor_id,
+            issue_author_login: author.actor_login,
+            type: 'PullRequestReviewCommentEvent',
             action: 'created',
             issue_id: pullRequest.databaseId,
             issue_number: pullRequest.number,
-            issue_comment_id: event.databaseId,
-            body: event.body,
-            created_at: formatDate(event.createdAt),
+            pull_review_comment_id: comment.databaseId,
+            body: comment.body,
+            created_at: formatDate(comment.createdAt),
           });
         }
+      } else {
+        if (!event.author) {
+          continue;
+        }
+        events.push({
+          platform: 'GitHub',
+          repo_id: repoId,
+          repo_name: `${owner}/${repo}`,
+          org_id: orgId,
+          org_login: orgLogin,
+          ...processActor(event.author),
+          issue_author_id: author.actor_id,
+          issue_author_login: author.actor_login,
+          type: 'IssueCommentEvent',
+          action: 'created',
+          issue_id: pullRequest.databaseId,
+          issue_number: pullRequest.number,
+          issue_comment_id: event.databaseId,
+          body: event.body,
+          created_at: formatDate(event.createdAt),
+        });
       }
     }
   }

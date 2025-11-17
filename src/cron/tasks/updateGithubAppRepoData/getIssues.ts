@@ -3,7 +3,10 @@ import { InsertRecord } from "./createTable";
 import { getGraphqlClient } from "./getClient";
 import { processActor } from "./utils";
 
-const batchCount = 100;
+// since query will recursively get comments and events for every issue
+// need to limit the number of issues to query at once to a small number to avoid rate limit error in a single query
+const batchCount = 30;
+
 const getMoreEvents = async (repoId: number, installationId: number, owner: string, repo: string, number: number, since: string, after?: string): Promise<any[]> => {
   if (!after) return [];
   const query = await getGraphqlClient(installationId, repoId);
