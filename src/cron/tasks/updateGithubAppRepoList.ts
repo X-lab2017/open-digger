@@ -29,7 +29,10 @@ const task: Task = {
           topics Array(String),
           stargazers_count UInt32,
           repo_updated_at DateTime,
-          data_updated_at DateTime,
+          issue_updated_at DateTime,
+          issue_end_cursor String,
+          pull_updated_at DateTime,
+          pull_end_cursor String,
           inserted_at UInt64
         )
         ENGINE = ReplacingMergeTree(inserted_at)
@@ -64,8 +67,8 @@ const task: Task = {
     };
 
     const saveRepoList = async (repos: any[]) => {
-      const currentData = await query<any>(`SELECT id, data_updated_at FROM github_app_repo_list`);
-      const currentDataMap = new Map(currentData.map(r => [+r[0], r[1]]));
+      const currentData = await query<any>(`SELECT id, issue_updated_at, issue_end_cursor, pull_updated_at, pull_end_cursor FROM github_app_repo_list`);
+      const currentDataMap = new Map(currentData.map(r => [+r[0], { issue_updated_at: r[1], issue_end_cursor: r[2], pull_updated_at: r[3], pull_end_cursor: r[4] }]));
       // Insert new data with updated inserted_at; ReplacingMergeTree will deduplicate automatically
       await insertRecords(repos.map(r => ({
         id: r.id,
@@ -78,7 +81,10 @@ const task: Task = {
         topics: r.topics ?? [],
         stargazers_count: r.stargazers_count,
         repo_updated_at: formatDate(r.updated_at),
-        data_updated_at: currentDataMap.get(r.id),
+        issue_updated_at: currentDataMap.get(r.id)?.issue_updated_at,
+        issue_end_cursor: currentDataMap.get(r.id)?.issue_end_cursor ?? '',
+        pull_updated_at: currentDataMap.get(r.id)?.pull_updated_at,
+        pull_end_cursor: currentDataMap.get(r.id)?.pull_end_cursor ?? '',
         inserted_at: Date.now(),
       })), 'github_app_repo_list');
     };

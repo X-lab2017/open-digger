@@ -1,4 +1,4 @@
-import { query } from "../db/clickhouse";
+import { getNewClient, query } from "../db/clickhouse";
 import { basicActivitySqlComponent } from "../metrics/indices";
 
 (async () => {
@@ -210,7 +210,41 @@ FROM events WHERE type = 'PullRequestEvent' AND action = 'opened' AND actor_logi
 AND toYear(created_at) >= 2025
 AND (((platform, repo_id) IN (SELECT platform, entity_id FROM flatten_labels WHERE entity_type = 'Repo'))
    OR ((platform, org_id) IN (SELECT platform, entity_id FROM flatten_labels WHERE entity_type = 'Org')))
-GROUP BY issue_id, platform
+GROUP BY id, platform
+`;
+    await query(createViewQuery);
+  };
+
+  const createIssuesWithLabelView = async () => {
+    // The issues_with_label view is used to store the issues with label info for the issues
+    // The issues_with_label view is refreshed every 1 hour
+    await query(`DROP TABLE IF EXISTS issues_with_label`);
+    const createViewQuery = `
+CREATE MATERIALIZED VIEW IF NOT EXISTS issues_with_label
+REFRESH EVERY 1 HOUR
+(
+  id UInt64,
+  platform LowCardinality(String),
+  repo_name LowCardinality(String),
+  issue_number UInt64,
+  issue_title String,
+  body String
+) ENGINE = MergeTree()
+ORDER BY (id, platform)
+POPULATE
+AS
+SELECT
+  issue_id AS id,
+  platform,
+  argMax(repo_name, created_at) AS repo_name,
+  argMax(issue_number, created_at) AS issue_number,
+  argMax(issue_title, created_at) AS issue_title,
+  argMax(body, created_at) AS body
+FROM events WHERE type = 'IssuesEvent' AND action = 'opened'
+AND toYear(created_at) >= 2025
+AND (((platform, repo_id) IN (SELECT platform, entity_id FROM flatten_labels WHERE entity_type = 'Repo'))
+   OR ((platform, org_id) IN (SELECT platform, entity_id FROM flatten_labels WHERE entity_type = 'Org')))
+GROUP BY id, platform
 `;
     await query(createViewQuery);
   };
@@ -220,9 +254,71 @@ GROUP BY issue_id, platform
     // The normalized_community_openrank view is refreshed every 1 day
     // The normalized_community_openrank is calculated by the community openrank and the global openrank
     // The normalized_community_openrank uses activity instead of community openrank if it is not calculated
-    await query(`DROP TABLE IF EXISTS normalized_community_openrank`);
-    const createViewQuery = `
-CREATE MATERIALIZED VIEW IF NOT EXISTS normalized_community_openrank
+    const client = await getNewClient();
+    await client.command({ query: `DROP TABLE IF EXISTS normalized_community_openrank` });
+    await client.command({
+      query: `
+    CREATE MATERIALIZED VIEW IF NOT EXISTS normalized_community_openrank
+    REFRESH EVERY 1 DAY
+    (
+       platform LowCardinality(String),
+       repo_id UInt64,
+       repo_name LowCardinality(String),
+       org_id UInt64,
+       org_login LowCardinality(String),
+       actor_id UInt64,
+       actor_login LowCardinality(String),
+       openrank Float,
+       yyyymm UInt32,
+       created_at DateTime
+    )
+    ENGINE = MergeTree()
+    ORDER BY (repo_id, platform)
+    POPULATE
+    AS
+    SELECT platform, repo_id, repo_name, org_id, org_login, actor_id, actor_login, openrank, yyyymm, created_at FROM
+    (
+      SELECT
+        g.platform,
+        g.repo_id,
+        g.repo_name,
+        g.org_id,
+        g.org_login,
+        g.created_at,
+        arrayJoin(arrayMap(x -> tuple(x.1, x.2, g.openrank * x.3 / gor), c.gor_details)) AS openrank_arr,
+        openrank_arr.1 AS actor_id,
+        openrank_arr.2 AS actor_login,
+        openrank_arr.3 AS openrank,
+        toYYYYMM(c.created_at) AS yyyymm
+      FROM
+      (SELECT platform, repo_id, repo_name, org_id, org_login, openrank, created_at
+        FROM global_openrank WHERE type = 'Repo' AND legacy = 0) g
+      INNER JOIN
+      ((SELECT repo_id, platform, SUM(openrank) AS gor, groupArray(tuple(actor_id, actor_login, openrank)) AS gor_details, created_at
+        FROM community_openrank WHERE actor_id > 0 AND actor_login NOT LIKE '%[bot]' AND
+        (platform, actor_id) NOT IN (SELECT platform, entity_id FROM flatten_labels WHERE id = ':bot' AND entity_type = 'User')
+        GROUP BY repo_id, platform, created_at)
+        UNION ALL
+        (SELECT repo_id, platform, SUM(activity) AS gor, groupArray(tuple(actor_id, actor_login, activity)) AS gor_details, m AS created_at
+        FROM (
+          SELECT repo_id, platform, ${basicActivitySqlComponent}, toStartOfMonth(created_at) AS m
+          FROM events WHERE
+          (platform, actor_id) NOT IN (SELECT platform, entity_id FROM flatten_labels WHERE id = ':bot' AND entity_type = 'User')
+          AND type IN ('IssuesEvent', 'IssueCommentEvent', 'PullRequestEvent', 'PullRequestReviewCommentEvent')
+          AND (repo_id, platform) NOT IN (SELECT id, platform FROM export_repo)
+          GROUP BY repo_id, platform, actor_id, m
+          HAVING actor_login NOT LIKE '%[bot]'
+        )
+        GROUP BY repo_id, platform, created_at)
+      ) c
+      ON g.repo_id = c.repo_id AND g.created_at = c.created_at AND g.platform = c.platform
+    )`,
+    });
+    console.log('Create normalized_community_openrank view done.');
+    await client.command({ query: `DROP TABLE IF EXISTS normalized_community_openrank_with_bot` });
+    await client.command({
+      query: `
+CREATE MATERIALIZED VIEW IF NOT EXISTS normalized_community_openrank_with_bot
 REFRESH EVERY 1 DAY
 (
    platform LowCardinality(String),
@@ -233,6 +329,7 @@ REFRESH EVERY 1 DAY
    actor_id UInt64,
    actor_login LowCardinality(String),
    openrank Float,
+   is_bot UInt8,
    yyyymm UInt32,
    created_at DateTime
 )
@@ -240,7 +337,9 @@ ENGINE = MergeTree()
 ORDER BY (repo_id, platform)
 POPULATE
 AS
-SELECT platform, repo_id, repo_name, org_id, org_login, actor_id, actor_login, openrank, yyyymm, created_at FROM
+SELECT platform, repo_id, repo_name, org_id, org_login, actor_id, actor_login, openrank, 
+if(actor_login LIKE '%[bot]' OR (platform, actor_id) IN (SELECT platform, entity_id FROM flatten_labels WHERE id = ':bot' AND entity_type = 'User'), 1, 0) AS is_bot,
+yyyymm, created_at FROM
 (
   SELECT
     g.platform,
@@ -258,32 +357,20 @@ SELECT platform, repo_id, repo_name, org_id, org_login, actor_id, actor_login, o
   (SELECT platform, repo_id, repo_name, org_id, org_login, openrank, created_at
     FROM global_openrank WHERE type = 'Repo' AND legacy = 0) g
   INNER JOIN
-  ((SELECT repo_id, platform, SUM(openrank) AS gor, groupArray(tuple(actor_id, actor_login, openrank)) AS gor_details, created_at
-    FROM community_openrank WHERE actor_id > 0 AND actor_login NOT LIKE '%[bot]' AND
-    (platform, actor_id) NOT IN (SELECT platform, entity_id FROM flatten_labels WHERE id = ':bot' AND entity_type = 'User')
-    GROUP BY repo_id, platform, created_at)
-    UNION ALL
-    (SELECT repo_id, platform, SUM(activity) AS gor, groupArray(tuple(actor_id, actor_login, activity)) AS gor_details, m AS created_at
-    FROM (
-      SELECT repo_id, platform, ${basicActivitySqlComponent}, toStartOfMonth(created_at) AS m
-      FROM events WHERE
-      (platform, actor_id) NOT IN (SELECT platform, entity_id FROM flatten_labels WHERE id = ':bot' AND entity_type = 'User')
-      AND type IN ('IssuesEvent', 'IssueCommentEvent', 'PullRequestEvent', 'PullRequestReviewCommentEvent')
-      AND (repo_id, platform) NOT IN (SELECT id, platform FROM export_repo)
-      GROUP BY repo_id, platform, actor_id, m
-      HAVING actor_login NOT LIKE '%[bot]'
-    )
-    GROUP BY repo_id, platform, created_at)
-  ) c
+  (SELECT repo_id, platform, SUM(openrank) AS gor, groupArray(tuple(actor_id, actor_login, openrank)) AS gor_details, created_at
+    FROM community_openrank WHERE actor_id > 0
+    GROUP BY repo_id, platform, created_at) c
   ON g.repo_id = c.repo_id AND g.created_at = c.created_at AND g.platform = c.platform
-)
-`;
-    await query(createViewQuery);
+)`,
+    });
+    console.log('Create normalized_community_openrank_with_bot view done.');
+    await client.close();
   };
 
   await createUserView();
   await createNameView();
   await createFlattenLabelView();
   await createPullsWitLabelView();
+  await createIssuesWithLabelView();
   await createNormalizedCommunityOpenRankView();
 })();
