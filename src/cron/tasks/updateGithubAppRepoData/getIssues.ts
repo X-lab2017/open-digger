@@ -6,15 +6,21 @@ import { processActor } from "./utils";
 // since query will recursively get comments and events for every issue
 // need to limit the number of issues to query at once to a small number to avoid rate limit error in a single query
 const batchCount = 30;
+// API rate limit cost for a single query
+let cost = 0;
+let MAX_COST = 1000;
 
-const getMoreEvents = async (repoId: number, installationId: number, owner: string, repo: string, number: number, since: string, after?: string): Promise<any[]> => {
+const getMoreEvents = async (repoId: number, installationId: number, owner: string, repo: string, number: number, after?: string): Promise<any[]> => {
   if (!after) return [];
   const query = await getGraphqlClient(installationId, repoId);
   const q = `
-    query getMoreEvents($owner: String!, $repo: String!, $number: Int!, $count: Int!, $since: DateTime!, $after: String!) {
+    query getMoreEvents($owner: String!, $repo: String!, $number: Int!, $count: Int!, $after: String!) {
+      rateLimit {
+        cost
+      }
       repository(owner: $owner, name: $repo) {
         issue(number: $number) {
-          timelineItems(itemTypes: [CLOSED_EVENT, ISSUE_COMMENT], first: $count, since: $since, after: $after) {
+          timelineItems(itemTypes: [CLOSED_EVENT, ISSUE_COMMENT], first: $count, after: $after) {
             pageInfo {
               hasNextPage
               endCursor
@@ -61,10 +67,11 @@ const getMoreEvents = async (repoId: number, installationId: number, owner: stri
     }
   `;
 
-  const result = await query(q, { owner, repo, since: new Date(since).toISOString(), after, number, count: batchCount });
+  const result = await query(q, { owner, repo, after, number, count: batchCount });
+  cost += result.rateLimit.cost;
   const events = result.repository.issue.timelineItems.nodes;
   if (result.repository.issue.timelineItems.pageInfo.hasNextPage) {
-    events.push(...await getMoreEvents(repoId, installationId, owner, repo, number, since, result.repository.issue.timelineItems.pageInfo.endCursor));
+    events.push(...await getMoreEvents(repoId, installationId, owner, repo, number, result.repository.issue.timelineItems.pageInfo.endCursor));
   }
   return events;
 };
@@ -75,6 +82,9 @@ const getMoreReactions = async (repoId: number, installationId: number, owner: s
   const query = await getGraphqlClient(installationId, repoId);
   const q = `
     query getMoreReactions($owner: String!, $repo: String!, $number: Int!, $count: Int!, $after: String!) {
+      rateLimit {
+        cost
+      }
       repository(owner: $owner, name: $repo) {
         issue(number: $number) {
           reactions(first: $count, after: $after) {
@@ -98,6 +108,7 @@ const getMoreReactions = async (repoId: number, installationId: number, owner: s
   `;
 
   const result = await query(q, { owner, repo, number, after, count: batchCount });
+  cost += result.rateLimit.cost;
   const events = result.repository.issue.reactions.nodes;
   if (result.repository.issue.reactions.pageInfo.hasNextPage) {
     events.push(...await getMoreReactions(repoId, installationId, owner, repo, number, result.repository.issue.reactions.pageInfo.endCursor));
@@ -105,11 +116,13 @@ const getMoreReactions = async (repoId: number, installationId: number, owner: s
   return events;
 };
 
-export const getIssues = async (repoId: number, installationId: number, owner: string, repo: string, since: string, after?: string): Promise<InsertRecord[]> => {
+const getIssuesBatch = async (repoId: number, installationId: number, owner: string, repo: string, after?: string): Promise<{ events: InsertRecord[], hasNextPage: boolean, endCursor?: string }> => {
   const query = await getGraphqlClient(installationId, repoId);
-  const sinceDate = new Date(since);
   const q = `
-    query getIssues($owner: String!, $repo: String!, $since: DateTime!, $after: String, $count: Int!) {
+    query getIssues($owner: String!, $repo: String!, $after: String, $count: Int!) {
+      rateLimit {
+        cost
+      }
       repository(owner: $owner, name: $repo) {
         owner {
           ... on Organization {
@@ -118,7 +131,7 @@ export const getIssues = async (repoId: number, installationId: number, owner: s
             login
           }
         }
-        issues(filterBy: { since: $since }, first: $count, after: $after, orderBy: { field: UPDATED_AT, direction: DESC }) {
+        issues(first: $count, after: $after, orderBy: { field: UPDATED_AT, direction: ASC }) {
           pageInfo {
             hasNextPage
             endCursor
@@ -161,7 +174,7 @@ export const getIssues = async (repoId: number, installationId: number, owner: s
                 }
               }
             }
-            timelineItems(itemTypes: [CLOSED_EVENT, ISSUE_COMMENT], first: $count, since: $since) {
+            timelineItems(itemTypes: [CLOSED_EVENT, ISSUE_COMMENT], first: $count) {
               pageInfo {
                 hasNextPage
                 endCursor
@@ -208,8 +221,9 @@ export const getIssues = async (repoId: number, installationId: number, owner: s
       }
     }
   `;
-  const result = await query(q, { owner, repo, since: sinceDate.toISOString(), after, count: batchCount });
+  const result = await query(q, { owner, repo, after, count: batchCount });
   const events: InsertRecord[] = [];
+  cost += result.rateLimit.cost;
 
   const orgId = result.repository.owner.__typename === 'Organization' ? result.repository.owner.databaseId : 0;
   const orgLogin = result.repository.owner.__typename === 'Organization' ? result.repository.owner.login : '';
@@ -217,28 +231,73 @@ export const getIssues = async (repoId: number, installationId: number, owner: s
     if (!issue.author) {
       continue;
     }
-    if (new Date(issue.createdAt) >= sinceDate) {
+    events.push({
+      platform: 'GitHub',
+      repo_id: repoId,
+      repo_name: `${owner}/${repo}`,
+      org_id: orgId,
+      org_login: orgLogin,
+      ...processActor(issue.author),
+      type: 'IssuesEvent',
+      action: 'opened',
+      issue_id: issue.databaseId,
+      issue_number: issue.number,
+      issue_title: issue.title,
+      body: issue.body,
+      created_at: formatDate(issue.createdAt),
+    });
+    const reactions = issue.reactions.nodes;
+    if (issue.reactions.pageInfo.hasNextPage) {
+      reactions.push(...await getMoreReactions(repoId, installationId, owner, repo, issue.number, issue.reactions.pageInfo.endCursor));
+    }
+    for (const reaction of reactions) {
+      if (!reaction.user) {
+        continue;
+      }
       events.push({
         platform: 'GitHub',
         repo_id: repoId,
         repo_name: `${owner}/${repo}`,
         org_id: orgId,
         org_login: orgLogin,
-        ...processActor(issue.author),
-        type: 'IssuesEvent',
-        action: 'opened',
+        actor_login: reaction.user.login,
+        actor_id: reaction.user.databaseId,
+        type: 'IssuesReactionEvent',
+        action: reaction.content,
         issue_id: issue.databaseId,
         issue_number: issue.number,
-        issue_title: issue.title,
-        body: issue.body,
-        created_at: formatDate(issue.createdAt),
+        body: reaction.content,
+        created_at: formatDate(reaction.createdAt),
       });
-      const reactions = issue.reactions.nodes;
-      if (issue.reactions.pageInfo.hasNextPage) {
-        reactions.push(...await getMoreReactions(repoId, installationId, owner, repo, issue.number, issue.reactions.pageInfo.endCursor));
-      }
-      for (const reaction of reactions) {
-        if (!reaction.user) {
+    }
+    const issueEvents = issue.timelineItems.nodes;
+    if (issue.timelineItems.pageInfo.hasNextPage) {
+      issueEvents.push(...await getMoreEvents(repoId, installationId, owner, repo, issue.number, issue.timelineItems.pageInfo.endCursor));
+    }
+    for (const event of issueEvents) {
+      if (event.__typename === 'ClosedEvent') {
+        if (!event.actor) {
+          continue;
+        }
+        const issueAuthor = processActor(issue.author);
+        events.push({
+          platform: 'GitHub',
+          repo_id: repoId,
+          repo_name: `${owner}/${repo}`,
+          org_id: orgId,
+          org_login: orgLogin,
+          ...processActor(event.actor),
+          issue_author_id: issueAuthor.actor_id,
+          issue_author_login: issueAuthor.actor_login,
+          type: 'IssuesEvent',
+          action: 'closed',
+          issue_id: issue.databaseId,
+          issue_number: issue.number,
+          issue_closed_by_pull_request_numbers: issue.closedByPullRequestsReferences.nodes.map(pr => pr.number),
+          created_at: formatDate(event.createdAt),
+        });
+      } else {
+        if (!event.author) {
           continue;
         }
         events.push({
@@ -247,69 +306,43 @@ export const getIssues = async (repoId: number, installationId: number, owner: s
           repo_name: `${owner}/${repo}`,
           org_id: orgId,
           org_login: orgLogin,
-          actor_login: reaction.user.login,
-          actor_id: reaction.user.databaseId,
-          type: 'IssuesReactionEvent',
+          ...processActor(event.author),
+          type: 'IssueCommentEvent',
           action: 'created',
           issue_id: issue.databaseId,
           issue_number: issue.number,
-          body: reaction.content,
-          created_at: formatDate(reaction.createdAt),
+          issue_comment_id: event.databaseId,
+          body: event.body,
+          created_at: formatDate(event.createdAt),
         });
-      }
-      const issueEvents = issue.timelineItems.nodes;
-      if (issue.timelineItems.pageInfo.hasNextPage) {
-        issueEvents.push(...await getMoreEvents(repoId, installationId, owner, repo, issue.number, since, issue.timelineItems.pageInfo.endCursor));
-      }
-      for (const event of issueEvents) {
-        if (event.__typename === 'ClosedEvent') {
-          if (!event.actor) {
-            continue;
-          }
-          const issueAuthor = processActor(issue.author);
-          events.push({
-            platform: 'GitHub',
-            repo_id: repoId,
-            repo_name: `${owner}/${repo}`,
-            org_id: orgId,
-            org_login: orgLogin,
-            ...processActor(event.actor),
-            issue_author_id: issueAuthor.actor_id,
-            issue_author_login: issueAuthor.actor_login,
-            type: 'IssuesEvent',
-            action: 'closed',
-            issue_id: issue.databaseId,
-            issue_number: issue.number,
-            issue_closed_by_pull_request_numbers: issue.closedByPullRequestsReferences.nodes.map(pr => pr.number),
-            created_at: formatDate(event.createdAt),
-          });
-        } else {
-          if (!event.author) {
-            continue;
-          }
-          events.push({
-            platform: 'GitHub',
-            repo_id: repoId,
-            repo_name: `${owner}/${repo}`,
-            org_id: orgId,
-            org_login: orgLogin,
-            ...processActor(event.author),
-            type: 'IssueCommentEvent',
-            action: 'created',
-            issue_id: issue.databaseId,
-            issue_number: issue.number,
-            issue_comment_id: event.databaseId,
-            body: event.body,
-            created_at: formatDate(event.createdAt),
-          });
-        }
       }
     }
   }
 
-  if (result.repository.issues.pageInfo.hasNextPage) {
-    events.push(...await getIssues(repoId, installationId, owner, repo, since, result.repository.issues.pageInfo.endCursor));
+  return {
+    events,
+    hasNextPage: result.repository.issues.pageInfo.hasNextPage,
+    endCursor: result.repository.issues.pageInfo.endCursor,
+  };
+};
+
+export const getIssues = async (repoId: number, installationId: number, owner: string, repo: string, after?: string): Promise<{ events: InsertRecord[], endCursor?: string, finished: boolean, cost: number }> => {
+  const allEvents: InsertRecord[] = [];
+  let currentAfter = after;
+  let hasNextPage = true;
+  let finished = true;
+  cost = 0;
+
+  while (hasNextPage) {
+    if (cost >= MAX_COST) {
+      finished = false;
+      break;
+    }
+    const batch = await getIssuesBatch(repoId, installationId, owner, repo, currentAfter);
+    allEvents.push(...batch.events);
+    hasNextPage = batch.hasNextPage;
+    currentAfter = batch.endCursor;
   }
 
-  return events;
+  return { events: allEvents, endCursor: currentAfter, finished, cost };
 };

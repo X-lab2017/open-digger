@@ -52,10 +52,11 @@ export interface Task {
           runningTasksSet.add(taskName);
           await task.callback(t);
           runningTasksSet.delete(taskName);
-          logger.info(`Task ${taskName} finished.`);
         } catch (e) {
           logger.error(`Error on running ${taskName}, e=${e}`);
+          runningTasksSet.delete(taskName);
         }
+        logger.info(`Task ${taskName} finished.`);
         resolve();
       }), { runOnInit: immediateTasks.has(taskName) });
     }

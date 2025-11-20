@@ -7,6 +7,9 @@ import { processActor } from "./utils";
 // need to limit the number of pull requests to query at once to a small number to avoid rate limit error in a single query
 const batchCount = 30;
 
+let cost = 0;
+let MAX_COST = 1000;
+
 const timelineItems = `
 ... on ClosedEvent {
   __typename
@@ -94,14 +97,17 @@ const timelineItems = `
 }
 `;
 
-const getMoreEvents = async (repoId: number, installationId: number, owner: string, repo: string, number: number, since: string, after?: string): Promise<any[]> => {
+const getMoreEvents = async (repoId: number, installationId: number, owner: string, repo: string, number: number, after?: string): Promise<any[]> => {
   if (!after) return [];
   const query = await getGraphqlClient(installationId, repoId);
   const q = `
-    query getMoreEvents($owner: String!, $repo: String!, $number: Int!, $count: Int!, $since: DateTime!, $after: String!) {
+    query getMoreEvents($owner: String!, $repo: String!, $number: Int!, $count: Int!, $after: String!) {
+      rateLimit {
+        cost
+      }
       repository(owner: $owner, name: $repo) {
         pullRequest(number: $number) {
-          timelineItems(itemTypes: [CLOSED_EVENT, ISSUE_COMMENT, PULL_REQUEST_REVIEW, PULL_REQUEST_REVIEW_THREAD], first: $count, since: $since, after: $after) {
+          timelineItems(itemTypes: [CLOSED_EVENT, ISSUE_COMMENT, PULL_REQUEST_REVIEW, PULL_REQUEST_REVIEW_THREAD], first: $count, after: $after) {
             pageInfo {
               hasNextPage
               endCursor
@@ -115,10 +121,11 @@ const getMoreEvents = async (repoId: number, installationId: number, owner: stri
     }
   `;
 
-  const result = await query(q, { owner, repo, since: new Date(since).toISOString(), after, number, count: batchCount });
+  const result = await query(q, { owner, repo, after, number, count: batchCount });
+  cost += result.rateLimit.cost;
   const events = result.repository.pullRequest.timelineItems.nodes;
   if (result.repository.pullRequest.timelineItems.pageInfo.hasNextPage) {
-    events.push(...await getMoreEvents(repoId, installationId, owner, repo, number, since, result.repository.pullRequest.timelineItems.pageInfo.endCursor));
+    events.push(...await getMoreEvents(repoId, installationId, owner, repo, number, result.repository.pullRequest.timelineItems.pageInfo.endCursor));
   }
   return events;
 };
@@ -129,6 +136,9 @@ const getMoreReactions = async (repoId: number, installationId: number, owner: s
   const query = await getGraphqlClient(installationId, repoId);
   const q = `
     query getMoreReactions($owner: String!, $repo: String!, $number: Int!, $count: Int!, $after: String!) {
+      rateLimit {
+        cost
+      }
       repository(owner: $owner, name: $repo) {
         pullRequest(number: $number) {
           reactions(first: $count, after: $after) {
@@ -152,6 +162,7 @@ const getMoreReactions = async (repoId: number, installationId: number, owner: s
   `;
 
   const result = await query(q, { owner, repo, number, after, count: batchCount });
+  cost += result.rateLimit.cost;
   const reactions = result.repository.pullRequest.reactions.nodes;
   if (result.repository.pullRequest.reactions.pageInfo.hasNextPage) {
     reactions.push(...await getMoreReactions(repoId, installationId, owner, repo, number, result.repository.pullRequest.reactions.pageInfo.endCursor));
@@ -159,11 +170,13 @@ const getMoreReactions = async (repoId: number, installationId: number, owner: s
   return reactions;
 };
 
-export const getPulls = async (repoId: number, installationId: number, owner: string, repo: string, since: string, after?: string): Promise<InsertRecord[]> => {
+const getPullsBatch = async (repoId: number, installationId: number, owner: string, repo: string, after?: string): Promise<{ events: InsertRecord[], hasNextPage: boolean, endCursor?: string }> => {
   const query = await getGraphqlClient(installationId, repoId);
-  const sinceDate = new Date(since);
   const q = `
-    query getPulls($owner: String!, $repo: String!, $since: DateTime!, $after: String, $count: Int!) {
+    query getPulls($owner: String!, $repo: String!, $after: String, $count: Int!) {
+      rateLimit {
+        cost
+      }
       repository(owner: $owner, name: $repo) {
         owner {
           ... on Organization {
@@ -172,7 +185,7 @@ export const getPulls = async (repoId: number, installationId: number, owner: st
             login
           }
         }
-        pullRequests(first: $count, orderBy: { field: UPDATED_AT, direction: DESC }, after: $after) {
+        pullRequests(first: $count, orderBy: { field: UPDATED_AT, direction: ASC }, after: $after) {
           pageInfo {
             hasNextPage
             endCursor
@@ -224,7 +237,7 @@ export const getPulls = async (repoId: number, installationId: number, owner: st
                 }
               }
             }
-            timelineItems(itemTypes: [CLOSED_EVENT, ISSUE_COMMENT, PULL_REQUEST_REVIEW, PULL_REQUEST_REVIEW_THREAD], first: $count, since: $since) {
+            timelineItems(itemTypes: [CLOSED_EVENT, ISSUE_COMMENT, PULL_REQUEST_REVIEW, PULL_REQUEST_REVIEW_THREAD], first: $count) {
               pageInfo {
                 hasNextPage
                 endCursor
@@ -238,55 +251,52 @@ export const getPulls = async (repoId: number, installationId: number, owner: st
       }
     }
   `;
-  const result = await query(q, { owner, repo, since: sinceDate.toISOString(), after, count: batchCount });
+  const result = await query(q, { owner, repo, after, count: batchCount });
   const events: InsertRecord[] = [];
-
+  cost += result.rateLimit.cost;
   const orgId = result.repository.owner.__typename === 'Organization' ? result.repository.owner.databaseId : 0;
   const orgLogin = result.repository.owner.__typename === 'Organization' ? result.repository.owner.login : '';
   for (const pullRequest of result.repository.pullRequests.nodes) {
-    if (new Date(pullRequest.updatedAt) < sinceDate) {
-      break;
-    }
     if (!pullRequest.author) {
       continue;
     }
     const author = processActor(pullRequest.author);
-    if (new Date(pullRequest.createdAt) >= sinceDate) {
-      events.push({
-        platform: 'GitHub',
-        repo_id: repoId,
-        repo_name: `${owner}/${repo}`,
-        org_id: orgId,
-        org_login: orgLogin,
-        ...author,
-        issue_author_id: author.actor_id,
-        issue_author_login: author.actor_login,
-        type: 'PullRequestEvent',
-        action: 'opened',
-        issue_id: pullRequest.databaseId,
-        issue_number: pullRequest.number,
-        issue_title: pullRequest.title,
-        body: pullRequest.body,
-        created_at: formatDate(pullRequest.createdAt),
-      });
-    }
-    if (pullRequest.mergedAt && new Date(pullRequest.mergedAt) >= sinceDate) {
-      events.push({
-        platform: 'GitHub',
-        repo_id: repoId,
-        repo_name: `${owner}/${repo}`,
-        org_id: orgId,
-        org_login: orgLogin,
-        ...processActor(pullRequest.mergedBy),
-        issue_author_id: author.actor_id,
-        issue_author_login: author.actor_login,
-        type: 'PullRequestEvent',
-        action: 'closed',
-        pull_merged: 1,
-        issue_id: pullRequest.databaseId,
-        issue_number: pullRequest.number,
-        created_at: formatDate(pullRequest.mergedAt),
-      });
+    events.push({
+      platform: 'GitHub',
+      repo_id: repoId,
+      repo_name: `${owner}/${repo}`,
+      org_id: orgId,
+      org_login: orgLogin,
+      ...author,
+      issue_author_id: author.actor_id,
+      issue_author_login: author.actor_login,
+      type: 'PullRequestEvent',
+      action: 'opened',
+      issue_id: pullRequest.databaseId,
+      issue_number: pullRequest.number,
+      issue_title: pullRequest.title,
+      body: pullRequest.body,
+      created_at: formatDate(pullRequest.createdAt),
+    });
+    if (pullRequest.mergedAt) {
+      if (pullRequest.mergedBy) {
+        events.push({
+          platform: 'GitHub',
+          repo_id: repoId,
+          repo_name: `${owner}/${repo}`,
+          org_id: orgId,
+          org_login: orgLogin,
+          ...processActor(pullRequest.mergedBy),
+          issue_author_id: author.actor_id,
+          issue_author_login: author.actor_login,
+          type: 'PullRequestEvent',
+          action: 'closed',
+          pull_merged: 1,
+          issue_id: pullRequest.databaseId,
+          issue_number: pullRequest.number,
+          created_at: formatDate(pullRequest.mergedAt),
+        });
+      }
     }
     const reactions = pullRequest.reactions.nodes;
     if (pullRequest.reactions.pageInfo.hasNextPage) {
@@ -307,7 +317,7 @@ export const getPulls = async (repoId: number, installationId: number, owner: st
         issue_author_id: author.actor_id,
         issue_author_login: author.actor_login,
         type: 'IssuesReactionEvent',
-        action: 'created',
+        action: reaction.content,
         issue_id: pullRequest.databaseId,
         issue_number: pullRequest.number,
         body: reaction.content,
@@ -316,7 +326,7 @@ export const getPulls = async (repoId: number, installationId: number, owner: st
     }
     const pullRequestEvents = pullRequest.timelineItems.nodes;
     if (pullRequest.timelineItems.pageInfo.hasNextPage) {
-      pullRequestEvents.push(...await getMoreEvents(repoId, installationId, owner, repo, pullRequest.number, since, pullRequest.timelineItems.pageInfo.endCursor));
+      pullRequestEvents.push(...await getMoreEvents(repoId, installationId, owner, repo, pullRequest.number, pullRequest.timelineItems.pageInfo.endCursor));
     }
     for (const event of pullRequestEvents) {
       if (event.__typename === 'ClosedEvent') {
@@ -386,9 +396,30 @@ export const getPulls = async (repoId: number, installationId: number, owner: st
     }
   }
 
-  if (result.repository.pullRequests.pageInfo.hasNextPage && new Date(result.repository.pullRequests.nodes[result.repository.pullRequests.nodes.length - 1].updatedAt) >= sinceDate) {
-    events.push(...await getPulls(repoId, installationId, owner, repo, since, result.repository.pullRequests.pageInfo.endCursor));
+  return {
+    events,
+    hasNextPage: result.repository.pullRequests.pageInfo.hasNextPage,
+    endCursor: result.repository.pullRequests.pageInfo.endCursor,
+  };
+};
+
+export const getPulls = async (repoId: number, installationId: number, owner: string, repo: string, after?: string): Promise<{ events: InsertRecord[], endCursor?: string, finished: boolean, cost: number }> => {
+  const allEvents: InsertRecord[] = [];
+  let currentAfter = after;
+  let hasNextPage = true;
+  let finished = true;
+  cost = 0;
+
+  while (hasNextPage) {
+    if (cost >= MAX_COST) {
+      finished = false;
+      break;
+    }
+    const batch = await getPullsBatch(repoId, installationId, owner, repo, currentAfter);
+    allEvents.push(...batch.events);
+    hasNextPage = batch.hasNextPage;
+    currentAfter = batch.endCursor;
   }
 
-  return events;
+  return { events: allEvents, endCursor: currentAfter, finished, cost };
 };
