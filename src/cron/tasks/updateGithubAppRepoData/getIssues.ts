@@ -7,10 +7,9 @@ import { processActor } from "./utils";
 // need to limit the number of issues to query at once to a small number to avoid rate limit error in a single query
 const batchCount = 30;
 // API rate limit cost for a single query
-let cost = 0;
 let MAX_COST = 1000;
 
-const getMoreEvents = async (repoId: number, installationId: number, owner: string, repo: string, number: number, after?: string): Promise<any[]> => {
+const getMoreEvents = async (cost: { value: number }, repoId: number, installationId: number, owner: string, repo: string, number: number, after?: string): Promise<any[]> => {
   if (!after) return [];
   const query = await getGraphqlClient(installationId, repoId);
   const q = `
@@ -68,16 +67,16 @@ const getMoreEvents = async (repoId: number, installationId: number, owner: stri
   `;
 
   const result = await query(q, { owner, repo, after, number, count: batchCount });
-  cost += result.rateLimit.cost;
+  cost.value += result.rateLimit.cost;
   const events = result.repository.issue.timelineItems.nodes;
   if (result.repository.issue.timelineItems.pageInfo.hasNextPage) {
-    events.push(...await getMoreEvents(repoId, installationId, owner, repo, number, result.repository.issue.timelineItems.pageInfo.endCursor));
+    events.push(...await getMoreEvents(cost, repoId, installationId, owner, repo, number, result.repository.issue.timelineItems.pageInfo.endCursor));
   }
   return events;
 };
 
 
-const getMoreReactions = async (repoId: number, installationId: number, owner: string, repo: string, number: number, after?: string): Promise<any[]> => {
+const getMoreReactions = async (cost: { value: number }, repoId: number, installationId: number, owner: string, repo: string, number: number, after?: string): Promise<any[]> => {
   if (!after) return [];
   const query = await getGraphqlClient(installationId, repoId);
   const q = `
@@ -108,15 +107,15 @@ const getMoreReactions = async (repoId: number, installationId: number, owner: s
   `;
 
   const result = await query(q, { owner, repo, number, after, count: batchCount });
-  cost += result.rateLimit.cost;
+  cost.value += result.rateLimit.cost;
   const events = result.repository.issue.reactions.nodes;
   if (result.repository.issue.reactions.pageInfo.hasNextPage) {
-    events.push(...await getMoreReactions(repoId, installationId, owner, repo, number, result.repository.issue.reactions.pageInfo.endCursor));
+    events.push(...await getMoreReactions(cost, repoId, installationId, owner, repo, number, result.repository.issue.reactions.pageInfo.endCursor));
   }
   return events;
 };
 
-const getIssuesBatch = async (repoId: number, installationId: number, owner: string, repo: string, after?: string): Promise<{ events: InsertRecord[], hasNextPage: boolean, endCursor?: string }> => {
+const getIssuesBatch = async (cost: { value: number }, repoId: number, installationId: number, owner: string, repo: string, after?: string): Promise<{ events: InsertRecord[], hasNextPage: boolean, endCursor?: string }> => {
   const query = await getGraphqlClient(installationId, repoId);
   const q = `
     query getIssues($owner: String!, $repo: String!, $after: String, $count: Int!) {
@@ -223,7 +222,7 @@ const getIssuesBatch = async (repoId: number, installationId: number, owner: str
   `;
   const result = await query(q, { owner, repo, after, count: batchCount });
   const events: InsertRecord[] = [];
-  cost += result.rateLimit.cost;
+  cost.value += result.rateLimit.cost;
 
   const orgId = result.repository.owner.__typename === 'Organization' ? result.repository.owner.databaseId : 0;
   const orgLogin = result.repository.owner.__typename === 'Organization' ? result.repository.owner.login : '';
@@ -248,7 +247,7 @@ const getIssuesBatch = async (repoId: number, installationId: number, owner: str
     });
     const reactions = issue.reactions.nodes;
     if (issue.reactions.pageInfo.hasNextPage) {
-      reactions.push(...await getMoreReactions(repoId, installationId, owner, repo, issue.number, issue.reactions.pageInfo.endCursor));
+      reactions.push(...await getMoreReactions(cost, repoId, installationId, owner, repo, issue.number, issue.reactions.pageInfo.endCursor));
     }
     for (const reaction of reactions) {
       if (!reaction.user) {
@@ -272,7 +271,7 @@ const getIssuesBatch = async (repoId: number, installationId: number, owner: str
     }
     const issueEvents = issue.timelineItems.nodes;
     if (issue.timelineItems.pageInfo.hasNextPage) {
-      issueEvents.push(...await getMoreEvents(repoId, installationId, owner, repo, issue.number, issue.timelineItems.pageInfo.endCursor));
+      issueEvents.push(...await getMoreEvents(cost, repoId, installationId, owner, repo, issue.number, issue.timelineItems.pageInfo.endCursor));
     }
     for (const event of issueEvents) {
       if (event.__typename === 'ClosedEvent') {
@@ -331,18 +330,18 @@ export const getIssues = async (repoId: number, installationId: number, owner: s
   let currentAfter = after;
   let hasNextPage = true;
   let finished = true;
-  cost = 0;
+  const cost = { value: 0 };
 
   while (hasNextPage) {
-    if (cost >= MAX_COST) {
+    if (cost.value >= MAX_COST) {
       finished = false;
       break;
     }
-    const batch = await getIssuesBatch(repoId, installationId, owner, repo, currentAfter);
+    const batch = await getIssuesBatch(cost, repoId, installationId, owner, repo, currentAfter);
     allEvents.push(...batch.events);
     hasNextPage = batch.hasNextPage;
     currentAfter = batch.endCursor;
   }
 
-  return { events: allEvents, endCursor: currentAfter, finished, cost };
+  return { events: allEvents, endCursor: currentAfter, finished, cost: cost.value };
 };

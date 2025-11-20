@@ -78,12 +78,13 @@ LIMIT ${INSTALLATION_UPDATE_BATCH_SIZE} BY installation_id;`);
         }
         const issueUpdateTime = issueFinished ? new Date() : new Date(repo.issueUpdatedAt);
         const pullUpdateTime = pullFinished ? new Date() : new Date(repo.pullUpdatedAt);
-        await query(`ALTER TABLE github_app_repo_list UPDATE
+        const q = `ALTER TABLE github_app_repo_list UPDATE
         issue_updated_at = '${formatDate(issueUpdateTime.toISOString())}',
         pull_updated_at = '${formatDate(pullUpdateTime.toISOString())}',
         issue_end_cursor = '${issueEndCursor}',
         pull_end_cursor = '${pullEndCursor}'
-        WHERE id = ${repo.id};`);
+        WHERE id = ${repo.id};`
+        await query(q);
       };
       await runTasks(repos.map(r => async () => {
         try {

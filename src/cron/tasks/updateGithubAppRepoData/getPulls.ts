@@ -6,8 +6,7 @@ import { processActor } from "./utils";
 // since query will recursively get comments and events for every pull request
 // need to limit the number of pull requests to query at once to a small number to avoid rate limit error in a single query
 const batchCount = 30;
-
-let cost = 0;
+// API rate limit cost for a single query
 let MAX_COST = 1000;
 
 const timelineItems = `
@@ -97,7 +96,7 @@ const timelineItems = `
 }
 `;
 
-const getMoreEvents = async (repoId: number, installationId: number, owner: string, repo: string, number: number, after?: string): Promise<any[]> => {
+const getMoreEvents = async (cost: { value: number }, repoId: number, installationId: number, owner: string, repo: string, number: number, after?: string): Promise<any[]> => {
   if (!after) return [];
   const query = await getGraphqlClient(installationId, repoId);
   const q = `
@@ -122,16 +121,16 @@ const getMoreEvents = async (repoId: number, installationId: number, owner: stri
   `;
 
   const result = await query(q, { owner, repo, after, number, count: batchCount });
-  cost += result.rateLimit.cost;
+  cost.value += result.rateLimit.cost;
   const events = result.repository.pullRequest.timelineItems.nodes;
   if (result.repository.pullRequest.timelineItems.pageInfo.hasNextPage) {
-    events.push(...await getMoreEvents(repoId, installationId, owner, repo, number, result.repository.pullRequest.timelineItems.pageInfo.endCursor));
+    events.push(...await getMoreEvents(cost, repoId, installationId, owner, repo, number, result.repository.pullRequest.timelineItems.pageInfo.endCursor));
   }
   return events;
 };
 
 
-const getMoreReactions = async (repoId: number, installationId: number, owner: string, repo: string, number: number, after?: string): Promise<any[]> => {
+const getMoreReactions = async (cost: { value: number }, repoId: number, installationId: number, owner: string, repo: string, number: number, after?: string): Promise<any[]> => {
   if (!after) return [];
   const query = await getGraphqlClient(installationId, repoId);
   const q = `
@@ -162,15 +161,15 @@ const getMoreReactions = async (repoId: number, installationId: number, owner: s
   `;
 
   const result = await query(q, { owner, repo, number, after, count: batchCount });
-  cost += result.rateLimit.cost;
+  cost.value += result.rateLimit.cost;
   const reactions = result.repository.pullRequest.reactions.nodes;
   if (result.repository.pullRequest.reactions.pageInfo.hasNextPage) {
-    reactions.push(...await getMoreReactions(repoId, installationId, owner, repo, number, result.repository.pullRequest.reactions.pageInfo.endCursor));
+    reactions.push(...await getMoreReactions(cost, repoId, installationId, owner, repo, number, result.repository.pullRequest.reactions.pageInfo.endCursor));
   }
   return reactions;
 };
 
-const getPullsBatch = async (repoId: number, installationId: number, owner: string, repo: string, after?: string): Promise<{ events: InsertRecord[], hasNextPage: boolean, endCursor?: string }> => {
+const getPullsBatch = async (cost: { value: number }, repoId: number, installationId: number, owner: string, repo: string, after?: string): Promise<{ events: InsertRecord[], hasNextPage: boolean, endCursor?: string }> => {
   const query = await getGraphqlClient(installationId, repoId);
   const q = `
     query getPulls($owner: String!, $repo: String!, $after: String, $count: Int!) {
@@ -253,7 +252,7 @@ const getPullsBatch = async (repoId: number, installationId: number, owner: stri
   `;
   const result = await query(q, { owner, repo, after, count: batchCount });
   const events: InsertRecord[] = [];
-  cost += result.rateLimit.cost;
+  cost.value += result.rateLimit.cost;
   const orgId = result.repository.owner.__typename === 'Organization' ? result.repository.owner.databaseId : 0;
   const orgLogin = result.repository.owner.__typename === 'Organization' ? result.repository.owner.login : '';
   for (const pullRequest of result.repository.pullRequests.nodes) {
@@ -300,7 +299,7 @@ const getPullsBatch = async (repoId: number, installationId: number, owner: stri
     }
     const reactions = pullRequest.reactions.nodes;
     if (pullRequest.reactions.pageInfo.hasNextPage) {
-      reactions.push(...await getMoreReactions(repoId, installationId, owner, repo, pullRequest.number, pullRequest.reactions.pageInfo.endCursor));
+      reactions.push(...await getMoreReactions(cost, repoId, installationId, owner, repo, pullRequest.number, pullRequest.reactions.pageInfo.endCursor));
     }
     for (const reaction of reactions) {
       if (!reaction.user) {
@@ -326,7 +325,7 @@ const getPullsBatch = async (repoId: number, installationId: number, owner: stri
     }
     const pullRequestEvents = pullRequest.timelineItems.nodes;
     if (pullRequest.timelineItems.pageInfo.hasNextPage) {
-      pullRequestEvents.push(...await getMoreEvents(repoId, installationId, owner, repo, pullRequest.number, pullRequest.timelineItems.pageInfo.endCursor));
+      pullRequestEvents.push(...await getMoreEvents(cost, repoId, installationId, owner, repo, pullRequest.number, pullRequest.timelineItems.pageInfo.endCursor));
     }
     for (const event of pullRequestEvents) {
       if (event.__typename === 'ClosedEvent') {
@@ -408,18 +407,18 @@ export const getPulls = async (repoId: number, installationId: number, owner: st
   let currentAfter = after;
   let hasNextPage = true;
   let finished = true;
-  cost = 0;
+  const cost = { value: 0 };
 
   while (hasNextPage) {
-    if (cost >= MAX_COST) {
+    if (cost.value >= MAX_COST) {
       finished = false;
       break;
     }
-    const batch = await getPullsBatch(repoId, installationId, owner, repo, currentAfter);
+    const batch = await getPullsBatch(cost, repoId, installationId, owner, repo, currentAfter);
     allEvents.push(...batch.events);
     hasNextPage = batch.hasNextPage;
     currentAfter = batch.endCursor;
   }
 
-  return { events: allEvents, endCursor: currentAfter, finished, cost };
+  return { events: allEvents, endCursor: currentAfter, finished, cost: cost.value };
 };
