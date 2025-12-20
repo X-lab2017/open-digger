@@ -1,0 +1,9 @@
+name: AgentScope
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 211762292
+          name: agentscope-ai
