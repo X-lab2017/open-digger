@@ -79,7 +79,8 @@ const task: Task = {
     \`actor_login\` LowCardinality(String),
     \`issue_number\` UInt32,
     \`created_at\` DateTime,
-    \`openrank\` Float
+    \`openrank\` Float,
+    \`refined\` UInt8
   )
   ENGINE = MergeTree
   ORDER BY (repo_id, created_at)
@@ -194,22 +195,24 @@ SELECT
   a.repo_id AS repo_id,
   argMax(go.repo_name, go.created_at) AS repo_name,
   sumIf(go.openrank, toYYYYMM(go.created_at) = ${yyyymm}) AS openrank,
-  any(a.rels) AS rels
+  any(a.rels) AS rels,
+  MAX(a.refined) AS refined
 FROM
-  (SELECT platform, repo_id, groupArray((actor_id, issue_number, activity, merged, is_pull)) AS rels FROM
+  (SELECT platform, repo_id, groupArray((actor_id, issue_number, activity, merged, is_pull)) AS rels, MAX(from_api) AS refined FROM
     (SELECT
       repo_id,
       platform,
       issue_number,
       actor_id,
-      ROUND(countIf(type='IssuesEvent' AND action='opened') * 22.235 +
-      countIf(type='IssueCommentEvent') * 5.252 +
-      countIf(type='IssuesEvent' AND action='closed') * 9.712 + 
-      countIf(type='PullRequestReviewCommentEvent') * 7.427 + 
-      countIf(type='PullRequestEvent' AND action='opened') * 40.679 + 
-      countIf(type='PullRequestEvent' AND action='closed') * 14.695, 3) AS activity,
+      ROUND(uniqIf(issue_id, type='IssuesEvent' AND action='opened') * 22.235 +
+      uniqIf(issue_comment_id, type='IssueCommentEvent') * 5.252 +
+      uniqIf(issue_id, type='IssuesEvent' AND action='closed') * 9.712 + 
+      uniqIf(pull_review_comment_id, type='PullRequestReviewCommentEvent') * 7.427 + 
+      uniqIf(issue_id, type='PullRequestEvent' AND action='opened') * 40.679 + 
+      uniqIf(issue_id, type='PullRequestEvent' AND action='closed') * 14.695, 3) AS activity,
       MAX(pull_merged) AS merged,
-      countIf(type IN ('PullRequestEvent', 'PullRequestReviewCommentEvent')) AS is_pull
+      countIf(type IN ('PullRequestEvent', 'PullRequestReviewCommentEvent')) AS is_pull,
+      MAX(from_api) AS from_api
     FROM
       events
     WHERE
@@ -257,6 +260,13 @@ GROUP BY
       return chunks;
     }
 
+    const removeUnrefinedRecords = async () => {
+      // remove unrefined records for GitHub repos that are in the github_app_repo_list
+      const q = `ALTER TABLE ${openrankTable} DELETE
+      WHERE platform='GitHub' AND repo_id IN (SELECT id FROM github_app_repo_list) AND refined=0`;
+      await queryClickhouse(q);
+    }
+
     const calculateForMonth = async (y: number, m: number): Promise<any> => {
       const start = new Date().getTime();
       const ctx = prepareContext(y, m);
@@ -281,7 +291,7 @@ GROUP BY
         read: () => { /* stub */ },
       });
 
-      const saveRecord = (platform: string, repoId: string, idStr: string, openrank: number) => {
+      const saveRecord = (platform: string, repoId: string, idStr: string, openrank: number, refined: number) => {
         const type = idStr.substring(0, 1);
         const id = parseInt(idStr.substring(1));
         const repoName = repoNameMap.get(`${platform}_${repoId}`);
@@ -298,6 +308,7 @@ GROUP BY
           platform,
           openrank,
           created_at: createdAt,
+          refined,
         };
         if (type === 'i') {
           record.issue_number = id;
@@ -372,10 +383,10 @@ GROUP BY
         }, -1).then(async res => {
           const results = res.results;
           for (const result of results) {
-            const { status, values, repoId, platform, exportData } = result;
+            const { status, values, repoId, platform, exportData, refined } = result;
             if (status === CalcStatus.Normal) {
               for (const [idStr, openrank] of values) {
-                saveRecord(platform, repoId, idStr, openrank);
+                saveRecord(platform, repoId, idStr, openrank, refined);
               }
               // saveExportData({ platform, exportData });
             } else {
@@ -388,7 +399,7 @@ GROUP BY
                   const { size, stat, list } = res;
                   const nodeOpenrankMap = new Map<string, number>();
                   for (const item of list) {
-                    saveRecord(platform, repoId, item.id, item.openrank);
+                    saveRecord(platform, repoId, item.id, item.openrank, refined);
                     nodeOpenrankMap.set(item.id, item.openrank);
                   }
                   exportData.nodes.forEach(n => n.v = +nodeOpenrankMap.get(n.id)!.toFixed(3));
@@ -429,6 +440,7 @@ GROUP BY
     }
 
     await createTable();
+    await removeUnrefinedRecords();
     await forEveryMonth(2015, 1, lastMonth.getFullYear(), lastMonth.getMonth() + 1, async (y, m) => {
       await calculateForMonth(y, m);
     });
@@ -582,9 +594,13 @@ const localCalcTask = (param: { data: any[], cor: any, ctx: any[], exportPath: s
   };
   const results: any[] = [];
   for (const row of data) {
-    const [platform, repoId] = row;
     const res = calculateForRepo(row);
-    results.push({ platform, repoId, ...res });
+    results.push({
+      platform: row[0],
+      repoId: row[1],
+      refined: row[5],
+      ...res
+    });
   }
   return {
     results,

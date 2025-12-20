@@ -259,7 +259,6 @@ GROUP BY id, platform
     await client.command({
       query: `
     CREATE MATERIALIZED VIEW IF NOT EXISTS normalized_community_openrank
-    REFRESH EVERY 1 DAY
     (
        platform LowCardinality(String),
        repo_id UInt64,
@@ -292,7 +291,7 @@ GROUP BY id, platform
         toYYYYMM(c.created_at) AS yyyymm
       FROM
       (SELECT platform, repo_id, repo_name, org_id, org_login, openrank, created_at
-        FROM global_openrank WHERE type = 'Repo' AND legacy = 0) g
+        FROM global_openrank WHERE type = 'Repo') g
       INNER JOIN
       ((SELECT repo_id, platform, SUM(openrank) AS gor, groupArray(tuple(actor_id, actor_login, openrank)) AS gor_details, created_at
         FROM community_openrank WHERE actor_id > 0 AND actor_login NOT LIKE '%[bot]' AND
@@ -312,6 +311,7 @@ GROUP BY id, platform
         GROUP BY repo_id, platform, created_at)
       ) c
       ON g.repo_id = c.repo_id AND g.created_at = c.created_at AND g.platform = c.platform
+      WHERE openrank > 0
     )`,
     });
     console.log('Create normalized_community_openrank view done.');
@@ -319,7 +319,6 @@ GROUP BY id, platform
     await client.command({
       query: `
 CREATE MATERIALIZED VIEW IF NOT EXISTS normalized_community_openrank_with_bot
-REFRESH EVERY 1 DAY
 (
    platform LowCardinality(String),
    repo_id UInt64,
@@ -355,12 +354,13 @@ yyyymm, created_at FROM
     toYYYYMM(c.created_at) AS yyyymm
   FROM
   (SELECT platform, repo_id, repo_name, org_id, org_login, openrank, created_at
-    FROM global_openrank WHERE type = 'Repo' AND legacy = 0) g
+    FROM global_openrank WHERE type = 'Repo') g
   INNER JOIN
   (SELECT repo_id, platform, SUM(openrank) AS gor, groupArray(tuple(actor_id, actor_login, openrank)) AS gor_details, created_at
     FROM community_openrank WHERE actor_id > 0
     GROUP BY repo_id, platform, created_at) c
   ON g.repo_id = c.repo_id AND g.created_at = c.created_at AND g.platform = c.platform
+  WHERE openrank > 0
 )`,
     });
     console.log('Create normalized_community_openrank_with_bot view done.');

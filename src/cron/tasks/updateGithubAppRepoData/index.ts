@@ -1,9 +1,9 @@
 import { formatDate, getLogger, runTasks } from '../../../utils';
 import { Task } from '../../index';
-import { getNewClient, insertRecords, query } from '../../../db/clickhouse';
-import { createGithubAppRepoDataTable, InsertRecord } from './createTable';
+import { insertRecords, query } from '../../../db/clickhouse';
 import { getPulls } from './getPulls';
 import { getIssues } from './getIssues';
+import { InsertRecord } from './utils';
 
 /**
  * This task is used to update github app repo data
@@ -72,9 +72,12 @@ LIMIT ${INSTALLATION_UPDATE_BATCH_SIZE} BY installation_id;`);
           pullCost = pullResult.cost;
         }
         logger.info(`Got ${issueEvents.length} issue(cost: ${issueCost}) events and ${pullEvents.length} pull(cost: ${pullCost}) events for ${repo.repoName}`);
-        const events = [...issueEvents, ...pullEvents];
+        const events = [
+          ...issueEvents.filter(e => new Date(e.created_at!) > new Date(repo.issueUpdatedAt)),
+          ...pullEvents.filter(e => new Date(e.created_at!) > new Date(repo.pullUpdatedAt)),
+        ];
         if (events.length > 0) {
-          await insertRecords(events, 'github_app_repo_data');
+          await insertRecords(events.map(e => ({ ...e, from_api: 1 })), 'events');
         }
         const issueUpdateTime = issueFinished ? new Date() : new Date(repo.issueUpdatedAt);
         const pullUpdateTime = pullFinished ? new Date() : new Date(repo.pullUpdatedAt);
@@ -95,13 +98,8 @@ LIMIT ${INSTALLATION_UPDATE_BATCH_SIZE} BY installation_id;`);
         }
       }), REPO_UPDATE_CONCURRENCY);
 
-      // optimize table after data update
-      const client = await getNewClient();
-      await client.command({ query: `OPTIMIZE TABLE github_app_repo_data DEDUPLICATE;` });
-      await client.close();
     };
 
-    await createGithubAppRepoDataTable();
     await updateRepoDataTask();
   }
 };
