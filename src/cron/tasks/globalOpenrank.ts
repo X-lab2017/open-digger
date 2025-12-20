@@ -1,8 +1,6 @@
-import { appendFileSync } from 'fs';
 import { Task } from '..';
 import * as clickhouse from '../../db/clickhouse';
 import * as neo4j from '../../db/neo4j';
-import { getPlatformData } from '../../labelDataUtils';
 import { forEveryMonth } from '../../metrics/basic';
 import { getLogger } from '../../utils';
 
@@ -17,7 +15,8 @@ const task: Task = {
     const repoRententionFactor = 0.3;
     const backgroundRententionFactor = 0.15;
     const openrankAttenuationFactor = 0.85;
-    const openrankMinValue = 1;
+    const openrankMinValue = 0.01;
+    const removeUserRelationshipCount = 300;
     const acitivityToOpenrank = activity => 1 / (1 + Math.exp(0.10425 * (-activity + 44.08)));
 
     const createTable = async () => {
@@ -31,7 +30,6 @@ const task: Task = {
           \`org_id\` UInt64,
           \`org_login\` LowCardinality(String),
           \`type\` Enum('Repo' = 1, 'User' = 2),
-          \`legacy\` UInt8,
           \`created_at\` DateTime,
           \`openrank\` Float
         )
@@ -57,11 +55,19 @@ const task: Task = {
         }
         logger.info(`Start to calculate the global_openrank table for ${yyyymm}.`);
 
-        // load last month openrank
+        // load last month openrank, load only repos and users that have activity in the current month
         const lastMonthOpenrank = new Map<string, { info: any; openrank: number; }>();
-        // const date = new Date(year, month - 1, 1);
-        const lastMonth = new Date(year, month - 2, 1);
-        const loadLastMonthSql = `SELECT actor_id, actor_login, repo_id, repo_name, org_id, org_login, platform, type, openrank FROM ${globalOpenrankTableName} WHERE toYYYYMM(created_at) = ${lastMonth.getFullYear()}${(lastMonth.getMonth() + 1).toString().padStart(2, '0')}`;
+        const loadLastMonthSql = `SELECT
+          actor_id, argMax(actor_login, created_at),
+          repo_id, argMax(repo_name, created_at),
+          argMax(org_id, created_at), argMax(org_login, created_at),
+          platform, type,
+          argMax(openrank, created_at) * pow(${openrankAttenuationFactor}, dateDiff('month', MAX(created_at), toDateTime('${year}-${month.toString().padStart(2, '0')}-01 00:00:00'))) AS openrank
+        FROM ${globalOpenrankTableName}
+        WHERE repo_id IN (SELECT repo_id FROM events WHERE toYYYYMM(created_at)=${yyyymm} AND type IN ('IssuesEvent', 'IssueCommentEvent', 'PullRequestEvent', 'PullRequestReviewCommentEvent', 'PushEvent'))
+        OR actor_id IN (SELECT actor_id FROM events WHERE toYYYYMM(created_at)=${yyyymm} AND type IN ('IssuesEvent', 'IssueCommentEvent', 'PullRequestEvent', 'PullRequestReviewCommentEvent', 'PushEvent'))
+        GROUP BY actor_id, repo_id, type, platform
+        HAVING openrank > ${openrankMinValue}`;
         const loadLastMonthResult = await clickhouse.query<string[]>(loadLastMonthSql);
         if (!Array.isArray(loadLastMonthResult)) {
           throw new Error(`Load last month openrank failed for ${yyyymm}, result=${loadLastMonthResult}`);
@@ -90,7 +96,6 @@ const task: Task = {
         logger.info(`Load ${lastMonthOpenrank.size} last month openrank.`);
 
         // load activity data
-        const botLabelData = getPlatformData([':bot']);
         const loadActivitySql = `
           SELECT
             platform,
@@ -100,18 +105,20 @@ const task: Task = {
             argMax(org_login, created_at) AS org_login,
             actor_id,
             argMax(actor_login, created_at) AS actor_login,
-            ROUND(countIf(type='IssuesEvent' AND action='opened') * 22.235 +
-              countIf(type='IssueCommentEvent') * 5.252 +
-              countIf(type='IssuesEvent' AND action='closed') * 9.712 + 
-              countIf(type='PullRequestReviewCommentEvent') * 7.427 + 
-              countIf(type='PullRequestEvent' AND action='opened') * 40.679 + 
-              countIf(type='PushEvent') * 14.695, 3) AS activity,
+            ROUND(uniqIf(issue_id, type='IssuesEvent' AND action='opened') * 22.235 +
+              uniqIf(issue_comment_id, type='IssueCommentEvent') * 5.252 +
+              uniqIf(issue_id, type='IssuesEvent' AND action='closed') * 9.712 + 
+              uniqIf(pull_review_comment_id, type='PullRequestReviewCommentEvent') * 7.427 + 
+              uniqIf(issue_id, type='PullRequestEvent' AND action='opened') * 40.679 + 
+              uniqIf(push_id, type='PushEvent') * 14.695, 3) AS activity,
             MAX(created_at) AS max_created_at,
-            (countIf(type='IssuesEvent' AND action='opened') + countIf(type='IssueCommentEvent') + countIf(type='PullRequestEvent' AND action='opened') + countIf(type='IssuesEvent' AND action='closed') + countIf(type='PullRequestReviewCommentEvent')) AS valid_count
+            countIf((type, action) IN (('IssuesEvent', 'opened'), ('IssueCommentEvent', 'created'),
+            ('IssuesEvent', 'closed'), ('PullRequestReviewCommentEvent', 'created'),
+            ('PullRequestEvent', 'opened'), ('PullRequestEvent', 'closed'))) AS valid_count
           FROM events
           WHERE
-            toYYYYMM(created_at)=${yyyymm}
-            AND type IN (
+            toYYYYMM(created_at)=${yyyymm} AND 
+            type IN (
               'IssuesEvent',
               'IssueCommentEvent',
               'PullRequestEvent',
@@ -119,10 +126,7 @@ const task: Task = {
               'PushEvent'
             )
             AND issue_title NOT ILIKE '[snyk]%'
-            AND ${botLabelData.map(p => {
-          if (!p.users || p.users.length === 0) return null;
-          return `(NOT (platform='${p.name}' AND actor_id IN (${p.users.map(u => u.id).join(',')})))`;
-        }).filter(p => p).join(' AND ')}
+            AND (actor_id, platform) NOT IN (SELECT entity_id, platform FROM flatten_labels WHERE id=':bot' AND entity_type='User')
           GROUP BY repo_id, actor_id, platform
           HAVING activity > 0 AND valid_count > 0 AND actor_login NOT LIKE '%[bot]'`;
         const nodeMap = new Map<string, { info: any, createdAt: Date }>();
@@ -161,28 +165,29 @@ const task: Task = {
           activityMap.set(uId, (activityMap.get(uId) ?? 0) + activity);
           rows.push({ rId, uId, activity });
         });
-        const maxUserRelationshipNodes = Array.from(userRelationshipCountMap.entries()).sort((a, b) => b[1] - a[1]).filter(i => i[1] > 300);
-        if (maxUserRelationshipNodes.length > 0) {
-          logger.info('Most relationship users with more than 300 repos:');
-          const items = maxUserRelationshipNodes.map(u => {
-            const id = u[0];
-            const [_type, platform, _id] = id.split('_');
-            const login = nodeMap.get(u[0])?.info.actor_login;
-            const url = `https://${platform.toLowerCase()}.com/${login}`;
-            return { url, login, id: _id, count: u[1] };
-          })
-          console.table(items);
-          for (const item of items) {
-            appendFileSync('./local_files/maybe_bot_users.txt', `${yyyymm}\t${item.url}\t${item.login}\t${item.id}\t${item.count}\n`);
-          }
-        }
+        // delete users with more than certain relationships count, mostly robots or automative
+        Array.from(userRelationshipCountMap.entries())
+          .filter(i => i[1] > removeUserRelationshipCount)
+          .forEach(u => {
+            nodeMap.delete(u[0]); // remove from node map
+            activityMap.delete(u[0]); // remove user activity
+            // remove activity from repo
+            rows.filter(r => r.uId === u[0]).forEach(r => {
+              activityMap.set(r.rId, activityMap.get(r.rId)! - r.activity)
+              if (activityMap.get(r.rId)! < 1) {
+                activityMap.delete(r.rId);
+                nodeMap.delete(r.rId);
+              }
+            });
+          });
+
         const bgId = 'Background_GitHub_0';
         nodeMap.set(bgId, { info: {}, createdAt: new Date() });
         const nodeIds = Array.from(nodeMap.keys());
         const nodeIndexMap = new Map(nodeIds.map((n, index) => [n, index]));
         const nodes = nodeIds.map((n, index) => ({
           id: index,
-          i: (lastMonthOpenrank.get(n)?.openrank ?? 0) * openrankAttenuationFactor +  // openrank from last month
+          i: (lastMonthOpenrank.get(n)?.openrank ?? 0) +  // openrank from last month
             (n.startsWith('User') ? acitivityToOpenrank(activityMap.get(n)!) : 0),  // user activity leads openrank
           r: n === bgId ? backgroundRententionFactor :
             (n.startsWith('Repo') ? repoRententionFactor :
@@ -194,7 +199,7 @@ const task: Task = {
           const rIndex = nodeIndexMap.get(rId);
           const uIndex = nodeIndexMap.get(uId);
           if (rIndex === undefined || uIndex === undefined) {
-            throw new Error(`Can not find node index for ${rId} or ${uId}`);
+            continue;
           }
           relationships.push({ s: rIndex, t: uIndex, w: 0.95 * activity / activityMap.get(rId)! });
           relationships.push({ s: uIndex, t: rIndex, w: 0.95 * activity / activityMap.get(uId)! });
@@ -263,35 +268,12 @@ const task: Task = {
             ...nodeMap.get(r[0])!.info,
             platform,
             type,
-            legacy: 0,
             created_at: `${year}-${month.toString().padStart(2, '0')}-01 00:00:00`,
             openrank: r[1] + additionalOpenrank,
           };
         }).filter(r => r), globalOpenrankTableName);
         logger.info(`Insert openrank result for ${yyyymm} done.`);
 
-        // openrank decrease for not active nodes
-        const insertLegacyNodes: any[] = [];
-        for (const [id, data] of lastMonthOpenrank) {
-          if (!openrankResult.has(id) && data.openrank > openrankMinValue) {
-            // not active in this month and openrank greater than min value
-            const [type, platform, _id] = id.split('_');
-            insertLegacyNodes.push({
-              repo_id: type === 'Repo' ? +_id : 0,
-              actor_id: type === 'User' ? +_id : 0,
-              ...data.info,
-              platform,
-              type,
-              legacy: 1,
-              created_at: `${year}-${month.toString().padStart(2, '0')}-01 00:00:00`,
-              openrank: data.openrank * openrankAttenuationFactor,
-            });
-          }
-        }
-        if (insertLegacyNodes.length > 0) {
-          logger.info(`Gonna insert ${insertLegacyNodes.length} legacy nodes for ${yyyymm}.`);
-          await clickhouse.insertRecords(insertLegacyNodes, globalOpenrankTableName);
-        }
         return true;
       } catch (e: any) {
         logger.error(`Error on calculating global openrank for ${yyyymm}, err=${e.message}`);

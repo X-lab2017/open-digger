@@ -1,6 +1,6 @@
 import { Octokit } from '@octokit/rest';
 import { App } from '@octokit/app';
-import { formatDate, getLogger } from '../../utils';
+import { formatDate, getLogger, runTasks } from '../../utils';
 import { Task } from '../index';
 import getConfig from '../../config';
 import { getNewClient, insertRecords, query } from '../../db/clickhouse';
@@ -54,14 +54,15 @@ const task: Task = {
       });
       const repos: any[] = [];
       const installations: any[] = await octokit.paginate('GET /app/installations');
-      for (const i of installations) {
+      logger.info(`Got ${installations.length} installations`);
+      await runTasks(installations.map(i => async () => {
         const oct = new Octokit({
           auth: `Bearer ${await githubApp.getInstallationAccessToken({ installationId: i.id })}`,
         });
         const installationRepos = await oct.paginate('GET /installation/repositories');
         logger.info(`Got ${installationRepos.length} repos for installation ${i?.account?.login}`);
         repos.push(...installationRepos.filter(r => !r.private).map(r => ({ ...r, installation_id: i.id })));
-      }
+      }), 5);
       logger.info(`Got ${repos.length} repos`);
       return repos;
     };

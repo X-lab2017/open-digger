@@ -1,5 +1,5 @@
 import { formatDate } from "../../../utils";
-import { InsertRecord } from "./createTable";
+import { InsertRecord } from "./utils";
 import { getGraphqlClient } from "./getClient";
 import { processActor } from "./utils";
 
@@ -141,6 +141,15 @@ const getIssuesBatch = async (cost: { value: number }, repoId: number, installat
             title
             body
             createdAt
+            closedAt
+            labels(first: 10) {
+              nodes {
+                name
+                color
+                isDefault
+                description
+              }
+            }
             author {
               ... on User {
                 __typename
@@ -230,19 +239,36 @@ const getIssuesBatch = async (cost: { value: number }, repoId: number, installat
     if (!issue.author) {
       continue;
     }
-    events.push({
+    const issueAuthor = processActor(issue.author);
+    const baseIssueItem: InsertRecord = {
       platform: 'GitHub',
       repo_id: repoId,
       repo_name: `${owner}/${repo}`,
       org_id: orgId,
       org_login: orgLogin,
-      ...processActor(issue.author),
-      type: 'IssuesEvent',
-      action: 'opened',
+      actor_id: 0,
+      actor_login: '',
+      type: '',
+      action: '',
       issue_id: issue.databaseId,
       issue_number: issue.number,
       issue_title: issue.title,
+      issue_author_id: issueAuthor.actor_id,
+      issue_author_login: issueAuthor.actor_login,
       body: issue.body,
+      issue_created_at: formatDate(issue.createdAt),
+      issue_closed_at: issue.closedAt ? formatDate(issue.closedAt) : undefined,
+      "issue_labels.name": issue.labels.nodes.map(l => l.name),
+      "issue_labels.color": issue.labels.nodes.map(l => l.color),
+      "issue_labels.default": issue.labels.nodes.map(l => l.isDefault ? 1 : 0),
+      "issue_labels.description": issue.labels.nodes.map(l => l.description),
+      issue_closed_by_pull_request_numbers: issue.closedByPullRequestsReferences.nodes.map(pr => pr.number),
+    };
+    events.push({
+      ...baseIssueItem,
+      ...processActor(issue.author),
+      type: 'IssuesEvent',
+      action: 'opened',
       created_at: formatDate(issue.createdAt),
     });
     const reactions = issue.reactions.nodes;
@@ -254,17 +280,11 @@ const getIssuesBatch = async (cost: { value: number }, repoId: number, installat
         continue;
       }
       events.push({
-        platform: 'GitHub',
-        repo_id: repoId,
-        repo_name: `${owner}/${repo}`,
-        org_id: orgId,
-        org_login: orgLogin,
+        ...baseIssueItem,
         actor_login: reaction.user.login,
         actor_id: reaction.user.databaseId,
         type: 'IssuesReactionEvent',
         action: reaction.content,
-        issue_id: issue.databaseId,
-        issue_number: issue.number,
         body: reaction.content,
         created_at: formatDate(reaction.createdAt),
       });
@@ -278,21 +298,11 @@ const getIssuesBatch = async (cost: { value: number }, repoId: number, installat
         if (!event.actor) {
           continue;
         }
-        const issueAuthor = processActor(issue.author);
         events.push({
-          platform: 'GitHub',
-          repo_id: repoId,
-          repo_name: `${owner}/${repo}`,
-          org_id: orgId,
-          org_login: orgLogin,
+          ...baseIssueItem,
           ...processActor(event.actor),
-          issue_author_id: issueAuthor.actor_id,
-          issue_author_login: issueAuthor.actor_login,
           type: 'IssuesEvent',
           action: 'closed',
-          issue_id: issue.databaseId,
-          issue_number: issue.number,
-          issue_closed_by_pull_request_numbers: issue.closedByPullRequestsReferences.nodes.map(pr => pr.number),
           created_at: formatDate(event.createdAt),
         });
       } else {
@@ -300,16 +310,10 @@ const getIssuesBatch = async (cost: { value: number }, repoId: number, installat
           continue;
         }
         events.push({
-          platform: 'GitHub',
-          repo_id: repoId,
-          repo_name: `${owner}/${repo}`,
-          org_id: orgId,
-          org_login: orgLogin,
+          ...baseIssueItem,
           ...processActor(event.author),
           type: 'IssueCommentEvent',
           action: 'created',
-          issue_id: issue.databaseId,
-          issue_number: issue.number,
           issue_comment_id: event.databaseId,
           body: event.body,
           created_at: formatDate(event.createdAt),
@@ -337,10 +341,17 @@ export const getIssues = async (repoId: number, installationId: number, owner: s
       finished = false;
       break;
     }
-    const batch = await getIssuesBatch(cost, repoId, installationId, owner, repo, currentAfter);
-    allEvents.push(...batch.events);
-    hasNextPage = batch.hasNextPage;
-    currentAfter = batch.endCursor;
+    try {
+      const batch = await getIssuesBatch(cost, repoId, installationId, owner, repo, currentAfter);
+      allEvents.push(...batch.events);
+      hasNextPage = batch.hasNextPage;
+      currentAfter = batch.endCursor;
+    }
+    catch (error) {
+      console.error(`Error getting issues: repoId=${repoId}, installationId=${installationId}, owner=${owner}, repo=${repo}, currentAfter=${currentAfter}, error=${error}`);
+      finished = false;
+      break;
+    }
   }
 
   return { events: allEvents, endCursor: currentAfter, finished, cost: cost.value };

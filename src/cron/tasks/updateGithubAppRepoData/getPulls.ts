@@ -1,5 +1,5 @@
 import { formatDate } from "../../../utils";
-import { InsertRecord } from "./createTable";
+import { InsertRecord } from "./utils";
 import { getGraphqlClient } from "./getClient";
 import { processActor } from "./utils";
 
@@ -194,8 +194,24 @@ const getPullsBatch = async (cost: { value: number }, repoId: number, installati
             number
             title
             body
+            additions
+            deletions
+            baseRefName
+            headRefName
+            headRepository {
+              databaseId
+            }
+            labels(first: 10) {
+              nodes {
+                name
+                color
+                isDefault
+                description
+              }
+            }
             createdAt
             updatedAt
+            closedAt
             mergedAt
             mergedBy {
               ... on User {
@@ -260,42 +276,51 @@ const getPullsBatch = async (cost: { value: number }, repoId: number, installati
       continue;
     }
     const author = processActor(pullRequest.author);
-    events.push({
+
+    const basePullItem: InsertRecord = {
       platform: 'GitHub',
       repo_id: repoId,
       repo_name: `${owner}/${repo}`,
       org_id: orgId,
       org_login: orgLogin,
-      ...author,
+      actor_id: 0,
+      actor_login: '',
+      type: '',
+      action: '',
       issue_author_id: author.actor_id,
       issue_author_login: author.actor_login,
-      type: 'PullRequestEvent',
-      action: 'opened',
       issue_id: pullRequest.databaseId,
       issue_number: pullRequest.number,
       issue_title: pullRequest.title,
+      issue_created_at: formatDate(pullRequest.createdAt),
+      issue_closed_at: pullRequest.closedAt ? formatDate(pullRequest.closedAt) : undefined,
       body: pullRequest.body,
+      pull_additions: pullRequest.additions,
+      pull_deletions: pullRequest.deletions,
+      pull_base_ref: pullRequest.baseRefName,
+      pull_head_ref: pullRequest.headRefName,
+      pull_head_repo_id: pullRequest.headRepository?.databaseId ?? 0,
+      "issue_labels.color": pullRequest.labels.nodes.map(l => l.color),
+      "issue_labels.name": pullRequest.labels.nodes.map(l => l.name),
+      "issue_labels.default": pullRequest.labels.nodes.map(l => l.isDefault ? 1 : 0),
+      "issue_labels.description": pullRequest.labels.nodes.map(l => l.description),
+    };
+    events.push({
+      ...basePullItem,
+      ...author,
+      type: 'PullRequestEvent',
+      action: 'opened',
       created_at: formatDate(pullRequest.createdAt),
     });
-    if (pullRequest.mergedAt) {
-      if (pullRequest.mergedBy) {
-        events.push({
-          platform: 'GitHub',
-          repo_id: repoId,
-          repo_name: `${owner}/${repo}`,
-          org_id: orgId,
-          org_login: orgLogin,
-          ...processActor(pullRequest.mergedBy),
-          issue_author_id: author.actor_id,
-          issue_author_login: author.actor_login,
-          type: 'PullRequestEvent',
-          action: 'closed',
-          pull_merged: 1,
-          issue_id: pullRequest.databaseId,
-          issue_number: pullRequest.number,
-          created_at: formatDate(pullRequest.mergedAt),
-        });
-      }
+    if (pullRequest.mergedAt && pullRequest.mergedBy) {
+      events.push({
+        ...basePullItem,
+        ...processActor(pullRequest.mergedBy),
+        type: 'PullRequestEvent',
+        action: 'closed',
+        pull_merged: 1,
+        created_at: formatDate(pullRequest.mergedAt),
+      });
     }
     const reactions = pullRequest.reactions.nodes;
     if (pullRequest.reactions.pageInfo.hasNextPage) {
@@ -306,20 +331,11 @@ const getPullsBatch = async (cost: { value: number }, repoId: number, installati
         continue;
       }
       events.push({
-        platform: 'GitHub',
-        repo_id: repoId,
-        repo_name: `${owner}/${repo}`,
-        org_id: orgId,
-        org_login: orgLogin,
+        ...basePullItem,
         actor_login: reaction.user.login,
         actor_id: reaction.user.databaseId,
-        issue_author_id: author.actor_id,
-        issue_author_login: author.actor_login,
         type: 'IssuesReactionEvent',
         action: reaction.content,
-        issue_id: pullRequest.databaseId,
-        issue_number: pullRequest.number,
-        body: reaction.content,
         created_at: formatDate(reaction.createdAt),
       });
     }
@@ -332,19 +348,14 @@ const getPullsBatch = async (cost: { value: number }, repoId: number, installati
         if (!event.actor) {
           continue;
         }
+        if (pullRequest.mergedAt && pullRequest.mergedBy) {
+          continue;
+        }
         events.push({
-          platform: 'GitHub',
-          repo_id: repoId,
-          repo_name: `${owner}/${repo}`,
-          org_id: orgId,
-          org_login: orgLogin,
+          ...basePullItem,
           ...processActor(event.actor),
-          issue_author_id: author.actor_id,
-          issue_author_login: author.actor_login,
           type: 'PullRequestEvent',
           action: 'closed',
-          issue_id: pullRequest.databaseId,
-          issue_number: pullRequest.number,
           created_at: formatDate(event.createdAt),
         });
       } else if (event.__typename === 'PullRequestReview' || event.__typename === 'PullRequestReviewThread') {
@@ -353,18 +364,10 @@ const getPullsBatch = async (cost: { value: number }, repoId: number, installati
             continue;
           }
           events.push({
-            platform: 'GitHub',
-            repo_id: repoId,
-            repo_name: `${owner}/${repo}`,
-            org_id: orgId,
-            org_login: orgLogin,
+            ...basePullItem,
             ...processActor(comment.author),
-            issue_author_id: author.actor_id,
-            issue_author_login: author.actor_login,
             type: 'PullRequestReviewCommentEvent',
             action: 'created',
-            issue_id: pullRequest.databaseId,
-            issue_number: pullRequest.number,
             pull_review_comment_id: comment.databaseId,
             body: comment.body,
             created_at: formatDate(comment.createdAt),
@@ -375,18 +378,10 @@ const getPullsBatch = async (cost: { value: number }, repoId: number, installati
           continue;
         }
         events.push({
-          platform: 'GitHub',
-          repo_id: repoId,
-          repo_name: `${owner}/${repo}`,
-          org_id: orgId,
-          org_login: orgLogin,
+          ...basePullItem,
           ...processActor(event.author),
-          issue_author_id: author.actor_id,
-          issue_author_login: author.actor_login,
           type: 'IssueCommentEvent',
           action: 'created',
-          issue_id: pullRequest.databaseId,
-          issue_number: pullRequest.number,
           issue_comment_id: event.databaseId,
           body: event.body,
           created_at: formatDate(event.createdAt),
@@ -414,10 +409,17 @@ export const getPulls = async (repoId: number, installationId: number, owner: st
       finished = false;
       break;
     }
-    const batch = await getPullsBatch(cost, repoId, installationId, owner, repo, currentAfter);
-    allEvents.push(...batch.events);
-    hasNextPage = batch.hasNextPage;
-    currentAfter = batch.endCursor;
+    try {
+      const batch = await getPullsBatch(cost, repoId, installationId, owner, repo, currentAfter);
+      allEvents.push(...batch.events);
+      hasNextPage = batch.hasNextPage;
+      currentAfter = batch.endCursor;
+    }
+    catch (error) {
+      console.error(`Error getting pulls: repoId=${repoId}, installationId=${installationId}, owner=${owner}, repo=${repo}, currentAfter=${currentAfter}, error=${error}`);
+      finished = false;
+      break;
+    }
   }
 
   return { events: allEvents, endCursor: currentAfter, finished, cost: cost.value };
