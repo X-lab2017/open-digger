@@ -1,0 +1,10 @@
+name: iFLYTEK
+name_zh: 科大讯飞
+type: Company
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 26786495
+          name: iflytek
