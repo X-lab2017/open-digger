@@ -1,4 +1,4 @@
-import { formatDate } from "../../../utils";
+import { formatDate, getLogger } from "../../../utils";
 import { InsertRecord } from "./utils";
 import { getGraphqlClient } from "./getClient";
 import { processActor } from "./utils";
@@ -8,6 +8,7 @@ import { processActor } from "./utils";
 const batchCount = 30;
 // API rate limit cost for a single query
 let MAX_COST = 1000;
+const logger = getLogger('UpdateGithubAppRepoDataTask[GetPulls]');
 
 const timelineItems = `
 ... on ClosedEvent {
@@ -416,7 +417,7 @@ export const getPulls = async (repoId: number, installationId: number, owner: st
       currentAfter = batch.endCursor;
     }
     catch (error) {
-      console.error(`Error getting pulls: repoId=${repoId}, installationId=${installationId}, owner=${owner}, repo=${repo}, currentAfter=${currentAfter}, error=${error}`);
+      logger.error(`Error getting pulls: repoId=${repoId}, installationId=${installationId}, owner=${owner}, repo=${repo}, currentAfter=${currentAfter}, error=${error}`);
       finished = false;
       break;
     }

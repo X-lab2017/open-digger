@@ -1,4 +1,4 @@
-import { formatDate } from "../../../utils";
+import { formatDate, getLogger } from "../../../utils";
 import { InsertRecord } from "./utils";
 import { getGraphqlClient } from "./getClient";
 import { processActor } from "./utils";
@@ -8,6 +8,7 @@ import { processActor } from "./utils";
 const batchCount = 30;
 // API rate limit cost for a single query
 let MAX_COST = 1000;
+const logger = getLogger('UpdateGithubAppRepoDataTask[GetIssues]');
 
 const getMoreEvents = async (cost: { value: number }, repoId: number, installationId: number, owner: string, repo: string, number: number, after?: string): Promise<any[]> => {
   if (!after) return [];
@@ -348,7 +349,7 @@ export const getIssues = async (repoId: number, installationId: number, owner: s
       currentAfter = batch.endCursor;
     }
     catch (error) {
-      console.error(`Error getting issues: repoId=${repoId}, installationId=${installationId}, owner=${owner}, repo=${repo}, currentAfter=${currentAfter}, error=${error}`);
+      logger.error(`Error getting issues: repoId=${repoId}, installationId=${installationId}, owner=${owner}, repo=${repo}, currentAfter=${currentAfter}, error=${error}`);
       finished = false;
       break;
     }

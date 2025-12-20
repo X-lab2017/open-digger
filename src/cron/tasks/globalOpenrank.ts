@@ -17,7 +17,7 @@ const task: Task = {
     const openrankAttenuationFactor = 0.85;
     const openrankMinValue = 0.01;
     const removeUserRelationshipCount = 300;
-    const acitivityToOpenrank = activity => 1 / (1 + Math.exp(0.10425 * (-activity + 44.08)));
+    const activityToOpenrank = activity => 1 / (1 + Math.exp(0.10425 * (-activity + 44.08)));
 
     const createTable = async () => {
       const sql = `CREATE TABLE IF NOT EXISTS ${globalOpenrankTableName}
@@ -64,8 +64,8 @@ const task: Task = {
           platform, type,
           argMax(openrank, created_at) * pow(${openrankAttenuationFactor}, dateDiff('month', MAX(created_at), toDateTime('${year}-${month.toString().padStart(2, '0')}-01 00:00:00'))) AS openrank
         FROM ${globalOpenrankTableName}
-        WHERE repo_id IN (SELECT repo_id FROM events WHERE toYYYYMM(created_at)=${yyyymm} AND type IN ('IssuesEvent', 'IssueCommentEvent', 'PullRequestEvent', 'PullRequestReviewCommentEvent', 'PushEvent'))
-        OR actor_id IN (SELECT actor_id FROM events WHERE toYYYYMM(created_at)=${yyyymm} AND type IN ('IssuesEvent', 'IssueCommentEvent', 'PullRequestEvent', 'PullRequestReviewCommentEvent', 'PushEvent'))
+        WHERE (type='Repo' AND repo_id IN (SELECT repo_id FROM events WHERE toYYYYMM(created_at)=${yyyymm} AND type IN ('IssuesEvent', 'IssueCommentEvent', 'PullRequestEvent', 'PullRequestReviewCommentEvent', 'PushEvent')))
+        OR (type='User' AND actor_id IN (SELECT actor_id FROM events WHERE toYYYYMM(created_at)=${yyyymm} AND type IN ('IssuesEvent', 'IssueCommentEvent', 'PullRequestEvent', 'PullRequestReviewCommentEvent', 'PushEvent')))
         GROUP BY actor_id, repo_id, type, platform
         HAVING openrank > ${openrankMinValue}`;
         const loadLastMonthResult = await clickhouse.query<string[]>(loadLastMonthSql);
@@ -165,7 +165,7 @@ const task: Task = {
           activityMap.set(uId, (activityMap.get(uId) ?? 0) + activity);
           rows.push({ rId, uId, activity });
         });
-        // delete users with more than certain relationships count, mostly robots or automative
+        // delete users with more than certain relationships count, mostly robots or automated accounts
         Array.from(userRelationshipCountMap.entries())
           .filter(i => i[1] > removeUserRelationshipCount)
           .forEach(u => {
@@ -188,7 +188,7 @@ const task: Task = {
         const nodes = nodeIds.map((n, index) => ({
           id: index,
           i: (lastMonthOpenrank.get(n)?.openrank ?? 0) +  // openrank from last month
-            (n.startsWith('User') ? acitivityToOpenrank(activityMap.get(n)!) : 0),  // user activity leads openrank
+            (n.startsWith('User') ? activityToOpenrank(activityMap.get(n)!) : 0),  // user activity leads openrank
           r: n === bgId ? backgroundRententionFactor :
             (n.startsWith('Repo') ? repoRententionFactor :
               userRententionFactor),
