@@ -79,7 +79,7 @@ meta:
       count: 4277766
 data:
   labels:
-    - ':companies/black-forest-labs'
+    - ':companies/black_forest_labs'
     - ':companies/camunda'
     - ':companies/explosionai'
     - ':companies/formbricks'

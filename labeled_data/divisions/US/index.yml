@@ -149,7 +149,7 @@ data:
     - ':companies/magento'
     - ':companies/mapbox'
     - ':companies/mattermost'
-    - ':companies/mermaid-js'
+    - ':companies/mermaid'
     - ':companies/meta'
     - ':companies/metabase'
     - ':companies/microsoft'
