@@ -1,0 +1,9 @@
+name: Namma Yatri
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 124682619
+          name: nammayatri

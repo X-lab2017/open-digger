@@ -1,0 +1,9 @@
+name: OpenVoice
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 725089041
+          name: myshell-ai/OpenVoice

@@ -1,0 +1,11 @@
+name: Black Forest Labs
+type: Company
+data:
+  labels:
+    - flux
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 164064024
+          name: black-forest-labs

@@ -1,0 +1,9 @@
+name: LanceDB
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 108903835
+          name: LanceDB

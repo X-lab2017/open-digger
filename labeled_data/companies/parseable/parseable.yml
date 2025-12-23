@@ -1,0 +1,9 @@
+name: Parseable
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 94332517
+          name: parseablehq

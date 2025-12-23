@@ -78,6 +78,7 @@ meta:
       count: 4281405
 data:
   labels:
+    - ':companies/tier4'
     - ':foundations/ruby'
     - JP-01
     - JP-02

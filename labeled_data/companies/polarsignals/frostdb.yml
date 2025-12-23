@@ -1,0 +1,9 @@
+name: FrostDB
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 473235285
+          name: polarsignals/frostdb

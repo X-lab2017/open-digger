@@ -1,0 +1,9 @@
+name: Lago
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 75492405
+          name: getlago

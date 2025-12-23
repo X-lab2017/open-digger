@@ -1,0 +1,11 @@
+name: FLUX models
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 836642963
+          name: black-forest-labs/flux
+        - id: 1103476826
+          name: black-forest-labs/flux2

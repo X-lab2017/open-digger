@@ -83,6 +83,7 @@ data:
     - ':companies/material_ui_sas'
     - ':companies/matra_datavision'
     - ':companies/sensiolabs'
+    - ':companies/zama'
     - FR-20R
     - FR-971
     - FR-972

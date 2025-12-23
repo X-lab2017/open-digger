@@ -1,0 +1,9 @@
+name: Mermaid JS
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 29172158
+          name: mermaidjs

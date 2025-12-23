@@ -1,0 +1,9 @@
+name: Defense Unicorns
+type: Company
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 87975021
+          name: defenseunicorns

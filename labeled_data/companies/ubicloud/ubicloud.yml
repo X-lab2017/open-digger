@@ -1,0 +1,9 @@
+name: Ubicloud
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 121406468
+          name: ubicloud

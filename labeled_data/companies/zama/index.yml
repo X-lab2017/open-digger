@@ -1,0 +1,13 @@
+name: Zama
+type: Company
+data:
+  labels:
+    - concrete
+    - fhevm
+    - tfhe_rs
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 57671822
+          name: zama-ai

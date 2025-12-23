@@ -79,12 +79,14 @@ meta:
       count: 4277766
 data:
   labels:
+    - ':companies/black-forest-labs'
     - ':companies/camunda'
     - ':companies/explosionai'
     - ':companies/formbricks'
     - ':companies/jina_ai'
     - ':companies/n8n'
     - ':companies/nextcloud'
+    - ':companies/restate'
     - ':companies/zalando'
     - DE-BB
     - DE-BE

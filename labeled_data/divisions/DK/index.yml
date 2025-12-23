@@ -79,6 +79,7 @@ meta:
       count: 459292
 data:
   labels:
+    - ':companies/nordcraft'
     - DK-81
     - DK-82
     - DK-83

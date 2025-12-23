@@ -1,0 +1,9 @@
+name: IoTeX Project
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 34317526
+          name: iotexproject

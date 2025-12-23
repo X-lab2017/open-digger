@@ -1,0 +1,9 @@
+name: TT-Lang
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 1080710972
+          name: tenstorrent/tt-lang

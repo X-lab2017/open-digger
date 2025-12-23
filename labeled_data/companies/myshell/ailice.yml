@@ -1,0 +1,9 @@
+name: AIlice
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 705433491
+          name: myshell-ai/AIlice

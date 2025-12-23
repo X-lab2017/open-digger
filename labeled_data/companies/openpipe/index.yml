@@ -1,0 +1,12 @@
+name: OpenPipe
+type: Company
+data:
+  labels:
+    - art
+    - openpipe
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 139012218
+          name: OpenPipe
