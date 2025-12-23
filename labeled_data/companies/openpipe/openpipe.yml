@@ -1,0 +1,9 @@
+name: OpenPipe
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 655949187
+          name: OpenPipe/OpenPipe

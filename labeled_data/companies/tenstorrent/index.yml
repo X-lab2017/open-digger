@@ -2,4 +2,13 @@ name: Tenstorrent
 type: Company
 data:
   labels:
-    - tenstorrent
+    - tt_forge
+    - tt_lang
+    - tt_llk
+    - tt_metal
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 64161552
+          name: tenstorrent

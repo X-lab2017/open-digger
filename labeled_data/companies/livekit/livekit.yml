@@ -1,9 +1,9 @@
-name: Tenstorrent
+name: LiveKit
 type: Project
 data:
   platforms:
     - name: GitHub
       type: Code Hosting
       orgs:
-        - id: 64161552
-          name: tenstorrent
+        - id: 69438833
+          name: livekit

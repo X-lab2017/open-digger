@@ -1,0 +1,13 @@
+name: MyShell
+type: Company
+data:
+  labels:
+    - ailice
+    - melotts
+    - openvoice
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 127754094
+          name: myshell-ai

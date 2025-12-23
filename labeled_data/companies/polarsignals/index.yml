@@ -1,0 +1,11 @@
+name: Polar Signals
+type: Company
+data:
+  labels:
+    - frostdb
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 71665167
+          name: polarsignals

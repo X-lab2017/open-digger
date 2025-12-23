@@ -1,0 +1,11 @@
+name: Concrete
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 300205799
+          name: zama-ai/concrete
+        - id: 473188634
+          name: zama-ai/concrete-ml

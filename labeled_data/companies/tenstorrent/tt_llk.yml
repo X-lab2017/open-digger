@@ -1,0 +1,9 @@
+name: TT-LLK
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 916376049
+          name: tenstorrent/tt-llk

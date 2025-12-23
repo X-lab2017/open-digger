@@ -1,0 +1,9 @@
+name: MeloTTS
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 760022246
+          name: myshell-ai/MeloTTS

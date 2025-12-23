@@ -1,0 +1,5 @@
+name: Kong
+type: Company
+data:
+  labels:
+    - kong

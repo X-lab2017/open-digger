@@ -1,0 +1,15 @@
+name: ART
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 946178371
+          name: OpenPipe/ART
+        - id: 1043607189
+          name: OpenPipe/art-notebooks
+        - id: 1017556799
+          name: OpenPipe/art-langgraph
+        - id: 1018065945
+          name: OpenPipe/art-star-count

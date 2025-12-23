@@ -1,0 +1,5 @@
+name: Parseable
+type: Company
+data:
+  labels:
+    - parseable

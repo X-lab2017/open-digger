@@ -1,0 +1,9 @@
+name: FHEVM
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 976568879
+          name: zama-ai/fhevm

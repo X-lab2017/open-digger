@@ -1,0 +1,9 @@
+name: TFHE-rs
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 550755640
+          name: zama-ai/tfhe-rs
