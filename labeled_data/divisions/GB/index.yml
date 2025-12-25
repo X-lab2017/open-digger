@@ -83,8 +83,10 @@ data:
     - ':agencies/moj_uk'
     - ':companies/deepmind'
     - ':companies/gaas'
+    - ':companies/improbable'
     - ':companies/rare'
     - ':companies/raycast'
+    - ':companies/weaveworks'
     - GB-ENG
     - GB-NIR
     - GB-SCT

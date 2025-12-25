@@ -1,9 +1,10 @@
-name: KubeEdge
+name: OpenFGA
 type: Project
 data:
   platforms:
     - name: GitHub
       type: Code Hosting
       orgs:
-        - id: 41812520
-          name: kubeedge
+        - name: openfga
+          id: 103602580
+      repos: []

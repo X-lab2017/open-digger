@@ -1,19 +1,18 @@
 name: Cloud Native - Observability and Analysis - Chaos Engineering
 type: Tech-2
 data:
+  labels:
+    - ':companies/harness/litmus'
+    - ':companies/pingcap/chaos_mesh'
   platforms:
     - name: GitHub
       type: Code Hosting
       repos:
-        - id: 206213815
-          name: chaos-mesh/chaos-mesh
         - id: 104656275
           name: chaostoolkit/chaostoolkit
         - id: 175192867
           name: chaosblade-io/chaosblade
         - id: 72786190
           name: linki/chaoskube
-        - id: 85039965
-          name: litmuschaos/litmus
         - id: 113219762
           name: powerfulseal/powerfulseal

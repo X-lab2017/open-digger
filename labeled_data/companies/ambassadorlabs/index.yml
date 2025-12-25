@@ -1,0 +1,11 @@
+name: Ambassador Labs
+type: Company
+data:
+  labels:
+    - emissary_ingress
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 65981750
+          name: ambassadorlabs

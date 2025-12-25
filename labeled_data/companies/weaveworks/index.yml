@@ -1,0 +1,11 @@
+name: Weaveworks
+type: Company
+data:
+  labels:
+    - flux
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 9976052
+          name: weaveworks

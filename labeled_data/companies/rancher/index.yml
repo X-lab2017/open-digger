@@ -2,4 +2,5 @@ name: Rancher Labs
 type: Company
 data:
   labels:
+    - longhorn
     - rancher

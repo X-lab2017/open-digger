@@ -3,10 +3,12 @@ type: Company
 data:
   labels:
     - azure
+    - dapr
     - dotnet
     - fluentui
     - fluid_framework
     - interpretml
+    - keda
     - onnxruntime
     - playwright
     - power_toys

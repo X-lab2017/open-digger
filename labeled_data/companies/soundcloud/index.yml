@@ -1,0 +1,11 @@
+name: SoundCloud
+type: Company
+data:
+  labels:
+    - prometheus
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 21021
+          name: soundcloud

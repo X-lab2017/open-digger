@@ -1,9 +1,9 @@
-name: Chaos Mesh
+name: Cloud Foundry
 type: Project
 data:
   platforms:
     - name: GitHub
       type: Code Hosting
       orgs:
-        - id: 59082378
-          name: chaos-mesh
+        - id: 621746
+          name: cloudfoundry

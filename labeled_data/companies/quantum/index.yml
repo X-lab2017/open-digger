@@ -1,0 +1,11 @@
+name: Quantum
+type: Company
+data:
+  labels:
+    - rook
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 10272393
+          name: quantum

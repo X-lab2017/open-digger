@@ -1,0 +1,11 @@
+name: Buoyant
+type: Company
+data:
+  labels:
+    - linkerd
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 10824329
+          name: buoyantio

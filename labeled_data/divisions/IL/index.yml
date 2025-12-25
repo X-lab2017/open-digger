@@ -79,6 +79,8 @@ meta:
       count: 758265
 data:
   labels:
+    - ':companies/armo'
+    - ':companies/cyberark'
     - IL-D
     - IL-HA
     - IL-JM

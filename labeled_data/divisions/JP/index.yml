@@ -79,6 +79,7 @@ meta:
 data:
   labels:
     - ':companies/tier4'
+    - ':companies/treasure_data'
     - ':foundations/ruby'
     - JP-01
     - JP-02

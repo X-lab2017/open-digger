@@ -1,18 +1,17 @@
 name: Cloud Native - Runtime - Cloud Native Network
 type: Tech-2
 data:
+  labels:
+    - ':companies/isovalent/cilium'
+    - ':companies/redhat/container_network_interface'
   platforms:
     - name: GitHub
       type: Code Hosting
       repos:
         - id: 217420145
           name: antrea-io/antrea
-        - id: 48109239
-          name: cilium/cilium
         - id: 86123872
           name: cni-genie/CNI-Genie
-        - id: 33429211
-          name: containernetworking/cni
         - id: 152550404
           name: nokia/danm
         - id: 386570418

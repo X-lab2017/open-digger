@@ -1,0 +1,11 @@
+name: Synadia
+type: Company
+data:
+  labels:
+    - nats
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 16080359
+          name: Synadia

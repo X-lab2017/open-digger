@@ -1,16 +1,15 @@
 name: Cloud Native - Provisioning - Container Registry
 type: Tech-2
 data:
+  labels:
+    - ':companies/alibaba/dragonfly'
+    - ':companies/vmware/harbor'
   platforms:
     - name: GitHub
       type: Code Hosting
       repos:
         - id: 28366058
           name: distribution/distribution
-        - id: 309874357
-          name: dragonflyoss/Dragonfly2
-        - id: 50613991
-          name: goharbor/harbor
         - id: 160626997
           name: uber/kraken
         - id: 33866783

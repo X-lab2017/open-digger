@@ -1,0 +1,11 @@
+name: Capital One
+type: Company
+data:
+  labels:
+    - cloud_custodian
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 8644615
+          name: capitalone

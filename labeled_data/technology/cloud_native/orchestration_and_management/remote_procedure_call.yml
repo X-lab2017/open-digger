@@ -1,6 +1,8 @@
 name: Cloud Native - Orchestration & Management - Remote Procedure Call
 type: Tech-2
 data:
+  labels:
+    - ':companies/google/grpc'
   platforms:
     - name: GitHub
       type: Code Hosting
@@ -15,8 +17,6 @@ data:
           name: apache/dubbo
         - id: 285864199
           name: zeromicro/go-zero
-        - id: 27729880
-          name: grpc/grpc
         - id: 165041732
           name: go-kratos/kratos
         - id: 128709824

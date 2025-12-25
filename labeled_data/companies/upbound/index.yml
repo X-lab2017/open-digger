@@ -1,0 +1,11 @@
+name: Upbound
+type: Company
+data:
+  labels:
+    - crossplane
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 31934484
+          name: upbound

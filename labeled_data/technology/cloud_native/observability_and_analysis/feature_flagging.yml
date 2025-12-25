@@ -1,0 +1,21 @@
+name: Cloud Native - Observability and Analysis - Feature Flagging
+type: Tech-2
+data:
+  labels:
+    - ':companies/dynatrace/openfeature'
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 258601325
+          name: featurehub-io/featurehub
+        - id: 542437174
+          name: bucketeer-io/bucketeer
+        - id: 136163130
+          name: Flagsmith/flagsmith
+        - id: 72894587
+          name: flipt-io/flipt
+        - id: 320579524
+          name: thomaspoignant/go-feature-flag
+        - id: 24594933
+          name: Unleash/unleash

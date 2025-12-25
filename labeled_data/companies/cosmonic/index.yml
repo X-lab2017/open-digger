@@ -1,0 +1,11 @@
+name: Cosmonic
+type: Company
+data:
+  labels:
+    - wasmcloud
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 80437882
+          name: cosmonic

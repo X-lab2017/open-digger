@@ -87,6 +87,7 @@ data:
     - ':companies/n8n'
     - ':companies/nextcloud'
     - ':companies/restate'
+    - ':companies/soundcloud'
     - ':companies/zalando'
     - DE-BB
     - DE-BE

@@ -1,6 +1,9 @@
 name: Cloud Native - App Definition and Development - Database
 type: Tech-2
 data:
+  labels:
+    - ':companies/google/vitess'
+    - ':companies/pingcap/tikv'
   platforms:
     - name: GitHub
       type: Code Hosting
@@ -81,10 +84,6 @@ data:
           name: taosdata/TDengine
         - id: 41986369
           name: pingcap/tidb
-        - id: 48833910
-          name: tikv/tikv
-        - id: 11008207
-          name: vitessio/vitess
         - id: 2445970
           name: voltdb/voltdb
         - id: 55072677

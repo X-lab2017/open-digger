@@ -1,9 +1,10 @@
-name: OpenKruise
+name: Lima
 type: Project
 data:
   platforms:
     - name: GitHub
       type: Code Hosting
       orgs:
-        - id: 49735278
-          name: openkruise
+        - name: lima-vm
+          id: 88128539
+      repos: []

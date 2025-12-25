@@ -1,14 +1,14 @@
 name: Cloud Native - Runtime - Container Runtime
 type: Tech-2
 data:
+  labels:
+    - ':companies/docker/containerd'
+    - ':companies/redhat/cri_o'
+    - ':projects/lima'
   platforms:
     - name: GitHub
       type: Code Hosting
       repos:
-        - id: 46089560
-          name: containerd/containerd
-        - id: 67828134
-          name: cri-o/cri-o
         - id: 107505869
           name: firecracker-microvm/firecracker
         - id: 131212638
@@ -17,8 +17,6 @@ data:
           name: inclavare-containers/inclavare-containers
         - id: 110539997
           name: kata-containers/runtime
-        - id: 367284699
-          name: lima-vm/lima
         - id: 26192117
           name: lxc/lxd
         - id: 26509369

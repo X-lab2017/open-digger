@@ -4,6 +4,6 @@ data:
   platforms:
     - name: GitHub
       type: Code Hosting
-      orgs:
-        - id: 19497462
-          name: spiffe
+      repos:
+        - id: 99618772
+          name: spiffe/spiffe

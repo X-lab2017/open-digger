@@ -1,0 +1,9 @@
+name: wasmCloud
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 52050279
+          name: wasmCloud

@@ -2,6 +2,7 @@ name: Grafana Labs
 type: Company
 data:
   labels:
+    - cortex
     - grafana
     - loki
     - mimir

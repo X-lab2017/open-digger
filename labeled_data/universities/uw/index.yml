@@ -1,0 +1,12 @@
+name: University of Washington
+name_zh: 华盛顿大学
+type: University-0
+data:
+  labels:
+    - the_update_framework
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 1557285
+          name: uw-edu

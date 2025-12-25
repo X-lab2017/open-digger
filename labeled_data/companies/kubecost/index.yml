@@ -1,0 +1,11 @@
+name: Kubecost
+type: Company
+data:
+  labels:
+    - opencost
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 45108136
+          name: kubecost

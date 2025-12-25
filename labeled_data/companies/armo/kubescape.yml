@@ -1,9 +1,9 @@
-name: KubeVela
+name: Kubescape
 type: Project
 data:
   platforms:
     - name: GitHub
       type: Code Hosting
       orgs:
-        - id: 74584788
-          name: kubevela
+        - id: 100554170
+          name: kubescape

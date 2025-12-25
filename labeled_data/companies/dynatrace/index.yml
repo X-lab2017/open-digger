@@ -1,0 +1,11 @@
+name: Dynatrace
+type: Company
+data:
+  labels:
+    - openfeature
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 6412311
+          name: dynatrace

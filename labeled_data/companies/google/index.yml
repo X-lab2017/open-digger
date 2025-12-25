@@ -5,12 +5,20 @@ data:
     - angular
     - bazel
     - beam
+    - coredns
     - dart
     - firebase
     - flutter
     - forseti_security
     - go
+    - grpc
+    - helm
+    - istio
+    - knative
+    - kubeflow
+    - opentelemetry
     - tensorflow
+    - vitess
   platforms:
     - name: GitHub
       type: Code Hosting

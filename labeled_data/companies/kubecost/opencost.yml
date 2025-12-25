@@ -1,9 +1,9 @@
-name: Backstage
+name: OpenCost
 type: Project
 data:
   platforms:
     - name: GitHub
       type: Code Hosting
       orgs:
-        - id: 72526453
-          name: backstage
+        - id: 105945214
+          name: opencost

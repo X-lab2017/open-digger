@@ -1,0 +1,9 @@
+name: Metal3
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 49879880
+          name: metal3-io

@@ -1,6 +1,11 @@
 name: Cloud Native - Provisioning - Automation & Configuration
 type: Tech-2
 data:
+  labels:
+    - ':companies/alibaba/openyurt'
+    - ':companies/capitalone/cloud_custodian'
+    - ':companies/huawei/kubeedge'
+    - ':companies/redhat/metal3'
   platforms:
     - name: GitHub
       type: Code Hosting
@@ -23,8 +28,6 @@ data:
           name: cfengine/core
         - id: 108278
           name: chef/chef
-        - id: 52837350
-          name: cloud-custodian/cloud-custodian
         - id: 18326574
           name: cloudify-cosmo/cloudify-manager
         - id: 288523518
@@ -41,8 +44,6 @@ data:
           name: loft-sh/kiosk
         - id: 227010082
           name: kubedl-io/kubedl
-        - id: 150713223
-          name: kubeedge/kubeedge
         - id: 332999480
           name: kubefirst/kubefirst
         - id: 516603039
@@ -59,8 +60,6 @@ data:
           name: mistio/mist-ce
         - id: 13839311
           name: openstack/openstack
-        - id: 265800635
-          name: openyurtio/openyurt
         - id: 72477752
           name: pulumi/pulumi
         - id: 910744

@@ -1,0 +1,11 @@
+name: Intuit
+type: Company
+data:
+  labels:
+    - argo
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 2495066
+          name: intuit
