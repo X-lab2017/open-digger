@@ -5,6 +5,5 @@ data:
     - name: GitHub
       type: Code Hosting
       orgs:
-        - name: StyraInc
-          id: 12768013
-      repos: []
+        - id: 12768013
+          name: StyraInc

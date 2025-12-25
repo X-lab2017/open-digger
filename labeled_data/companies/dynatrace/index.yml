@@ -7,6 +7,5 @@ data:
     - name: GitHub
       type: Code Hosting
       orgs:
-        - name: dynatrace
-          id: 6412311
-      repos: []
+        - id: 6412311
+          name: dynatrace

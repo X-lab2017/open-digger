@@ -5,6 +5,5 @@ data:
     - name: GitHub
       type: Code Hosting
       orgs:
-        - name: treasure-data
-          id: 747746
-      repos: []
+        - id: 747746
+          name: treasure-data

@@ -7,6 +7,5 @@ data:
     - name: GitHub
       type: Code Hosting
       orgs:
-        - name: cosmonic
-          id: 80437882
-      repos: []
+        - id: 80437882
+          name: cosmonic

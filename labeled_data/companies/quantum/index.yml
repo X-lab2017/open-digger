@@ -7,6 +7,5 @@ data:
     - name: GitHub
       type: Code Hosting
       orgs:
-        - name: quantum
-          id: 10272393
-      repos: []
+        - id: 10272393
+          name: quantum

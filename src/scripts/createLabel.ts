@@ -113,15 +113,26 @@ function buildLabelData(name: string, type: string, platformData: { platform: st
   if (platformData.orgName && !platformData.repoName) {
     // 只有组织
     data.data.platforms[0].orgs.push({
-      id: undefined,
+      id: '',
       name: platformData.orgName
     });
   } else if (platformData.repoName) {
     // 有仓库
     data.data.platforms[0].repos.push({
-      id: undefined,
+      id: '',
       name: platformData.repoName
     });
+  }
+
+  if (data.data.platforms.length > 0) {
+    for (const p of data.data.platforms) {
+      if (p.orgs.length === 0) {
+        delete p.orgs;
+      }
+      if (p.repos.length === 0) {
+        delete p.repos;
+      }
+    }
   }
 
   return data;
@@ -169,6 +180,13 @@ async function updateDivisionLabel(alpha2: string, companyId: string): Promise<v
     divisionData.data.labels.sort();
   }
 
+  // 重新构建 data 对象，确保 labels 在第一位
+  const { labels, ...restData } = divisionData.data;
+  divisionData.data = {
+    labels,
+    ...restData
+  };
+
   // 写回文件
   const yamlContent = dump(divisionData, { noRefs: true, lineWidth: -1 });
   writeFileSync(divisionFilePath, yamlContent, 'utf8');
@@ -207,6 +225,13 @@ async function updateCompanyIndexLabel(companyIndexPath: string, projectId: stri
     // 排序 labels 数组（可选，保持一致性）
     companyData.data.labels.sort();
   }
+
+  // 重新构建 data 对象，确保 labels 在第一位
+  const { labels, ...restData } = companyData.data;
+  companyData.data = {
+    labels,
+    ...restData
+  };
 
   // 写回文件
   const yamlContent = dump(companyData, { noRefs: true, lineWidth: -1 });

@@ -4,7 +4,6 @@ data:
   platforms:
     - name: GitHub
       type: Code Hosting
-      orgs: []
       repos:
-        - name: harness/harness
-          id: 16607898
+        - id: 16607898
+          name: harness/harness

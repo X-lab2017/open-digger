@@ -1,10 +1,11 @@
 name: CyberArk
 type: Company
 data:
+  labels:
+    - cert_manager
   platforms:
     - name: GitHub
       type: Code Hosting
       orgs:
-        - name: cyberark
-          id: 30869256
-      repos: []
+        - id: 30869256
+          name: cyberark

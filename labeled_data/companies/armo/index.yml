@@ -1,12 +1,11 @@
 name: ARMO
 type: Company
 data:
+  labels:
+    - kubescape
   platforms:
     - name: GitHub
       type: Code Hosting
       orgs:
-        - name: armosec
-          id: 78366646
-      repos: []
-  labels:
-    - kubescape
+        - id: 78366646
+          name: armosec

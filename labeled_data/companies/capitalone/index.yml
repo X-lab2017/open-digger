@@ -7,6 +7,5 @@ data:
     - name: GitHub
       type: Code Hosting
       orgs:
-        - name: capitalone
-          id: 8644615
-      repos: []
+        - id: 8644615
+          name: capitalone

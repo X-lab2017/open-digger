@@ -8,6 +8,5 @@ data:
     - name: GitHub
       type: Code Hosting
       orgs:
-        - name: harness
-          id: 34780278
-      repos: []
+        - id: 34780278
+          name: harness

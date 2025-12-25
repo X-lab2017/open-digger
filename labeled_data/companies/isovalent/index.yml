@@ -1,10 +1,11 @@
 name: Isovalent
 type: Company
 data:
+  labels:
+    - cilium
   platforms:
     - name: GitHub
       type: Code Hosting
       orgs:
-        - name: isovalent
-          id: 60987031
-      repos: []
+        - id: 60987031
+          name: isovalent

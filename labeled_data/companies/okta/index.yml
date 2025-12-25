@@ -1,12 +1,12 @@
 name: Okta
 type: Company
 data:
+  labels:
+    - openfga
   platforms:
     - name: GitHub
       type: Code Hosting
       orgs:
-        - name: okta
-          id: 362460
-      repos: []
-  labels:
-    - openfga
+        - id: 362460
+          name: okta
+  

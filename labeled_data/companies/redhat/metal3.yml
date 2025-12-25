@@ -5,6 +5,5 @@ data:
     - name: GitHub
       type: Code Hosting
       orgs:
-        - name: metal3-io
-          id: 49879880
-      repos: []
+        - id: 49879880
+          name: metal3-io

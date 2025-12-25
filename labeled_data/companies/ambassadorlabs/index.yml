@@ -7,6 +7,5 @@ data:
     - name: GitHub
       type: Code Hosting
       orgs:
-        - name: ambassadorlabs
-          id: 65981750
-      repos: []
+        - id: 65981750
+          name: ambassadorlabs

@@ -1,10 +1,11 @@
 name: Nirmata
 type: Company
 data:
+  labels:
+    - kyverno
   platforms:
     - name: GitHub
       type: Code Hosting
       orgs:
-        - name: nirmata
-          id: 7470644
-      repos: []
+        - id: 7470644
+          name: nirmata
