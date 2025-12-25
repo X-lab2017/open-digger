@@ -1,6 +1,8 @@
 name: Cloud Native - Wasm - Runtime
 type: Tech-2
 data:
+  labels:
+    - ':companies/cosmonic/wasmcloud'
   platforms:
     - name: GitHub
       type: Code Hosting

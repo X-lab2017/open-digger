@@ -1,0 +1,10 @@
+name: SoundCloud
+type: Company
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - name: soundcloud
+          id: 21021
+      repos: []

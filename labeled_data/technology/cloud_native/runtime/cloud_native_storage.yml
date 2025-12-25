@@ -1,6 +1,10 @@
 name: Cloud Native - Runtime - Cloud Native Storage
 type: Tech-2
 data:
+  labels:
+    - ':companies/jd/cubefs'
+    - ':companies/quantum/rook'
+    - ':companies/rancher/longhorn'
   platforms:
     - name: GitHub
       type: Code Hosting
@@ -13,8 +17,6 @@ data:
           name: ceph/ceph
         - id: 91765224
           name: container-storage-interface/spec
-        - id: 171396748
-          name: cubeFS/cubefs
         - id: 276365255
           name: opencurve/curve
         - id: 1377037
@@ -27,8 +29,6 @@ data:
           name: k8up-io/k8up
         - id: 117251051
           name: LINBIT/linstor-server
-        - id: 88298561
-          name: longhorn/longhorn
         - id: 29261473
           name: minio/minio
         - id: 50505775
@@ -41,8 +41,6 @@ data:
           name: oras-project/oras
         - id: 226072757
           name: piraeusdatastore/piraeus
-        - id: 62921553
-          name: rook/rook
         - id: 77096333
           name: sodafoundation/api
         - id: 790019

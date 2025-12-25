@@ -1,6 +1,9 @@
 name: VMWare
 type: Company
 data:
+  labels:
+    - contour
+    - harbor
   platforms:
     - name: GitHub
       type: Code Hosting

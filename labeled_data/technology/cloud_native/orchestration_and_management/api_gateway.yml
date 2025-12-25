@@ -1,6 +1,8 @@
 name: Cloud Native - Orchestration & Management - API Gateway
 type: Tech-2
 data:
+  labels:
+    - ':companies/ambassadorlabs/emissary_ingress'
   platforms:
     - name: GitHub
       type: Code Hosting

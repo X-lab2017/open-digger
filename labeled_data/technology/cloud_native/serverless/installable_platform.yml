@@ -1,6 +1,10 @@
 name: Cloud Native - Serverless - Installable Platform
 type: Tech-2
 data:
+  labels:
+    - ':companies/cosmonic/wasmcloud'
+    - ':companies/google/knative'
+    - ':companies/microsoft/keda'
   platforms:
     - name: GitHub
       type: Code Hosting
@@ -13,10 +17,6 @@ data:
           name: AppScale/gts
         - id: 66050533
           name: fission/fission
-        - id: 170411418
-          name: kedacore/keda
-        - id: 118828329
-          name: knative/serving
         - id: 232829717
           name: knix-microfunctions/knix
         - id: 226983227

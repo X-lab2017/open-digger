@@ -1,6 +1,9 @@
 name: Cloud Native - Provisioning - Key Management
 type: Tech-2
 data:
+  labels:
+    - ':foundations/linux_foundation/cncf/spiffe'
+    - ':foundations/linux_foundation/cncf/spire'
   platforms:
     - name: GitHub
       type: Code Hosting
@@ -21,10 +24,6 @@ data:
           name: vmware-tanzu/pinniped
         - id: 163722349
           name: pomerium/pomerium
-        - id: 99618772
-          name: spiffe/spiffe
-        - id: 100061496
-          name: spiffe/spire
         - id: 32866430
           name: square/keywhiz
         - id: 145011089

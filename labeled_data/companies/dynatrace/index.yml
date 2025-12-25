@@ -1,0 +1,12 @@
+name: Dynatrace
+type: Company
+data:
+  labels:
+    - openfeature
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - name: dynatrace
+          id: 6412311
+      repos: []

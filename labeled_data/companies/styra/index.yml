@@ -1,0 +1,10 @@
+name: Styra
+type: Company
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - name: StyraInc
+          id: 12768013
+      repos: []

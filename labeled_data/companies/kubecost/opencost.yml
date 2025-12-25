@@ -1,9 +1,10 @@
-name: OpenKruise
+name: OpenCost
 type: Project
 data:
   platforms:
     - name: GitHub
       type: Code Hosting
       orgs:
-        - id: 49735278
-          name: openkruise
+        - name: opencost
+          id: 105945214
+      repos: []

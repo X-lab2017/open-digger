@@ -1,16 +1,20 @@
 name: Cloud Native - App Definition and Development - Application Definition & Image Build
 type: Tech-2
 data:
+  labels:
+    - ':companies/alibaba/kubevela'
+    - ':companies/google/helm'
+    - ':companies/microsoft/dapr'
+    - ':companies/pivotal/buildpacks'
+    - ':companies/redhat/kubevirt'
+    - ':companies/redhat/operator_framework'
+    - ':companies/spotify/backstage'
   platforms:
     - name: GitHub
       type: Code Hosting
       repos:
         - id: 233809604
           name: artifacthub/hub
-        - id: 236095576
-          name: backstage/backstage
-        - id: 138544269
-          name: buildpacks/pack
         - id: 173207060
           name: vmware-tanzu/carvel-ytt
         - id: 36098429
@@ -29,8 +33,6 @@ data:
           name: gefyrahq/gefyra
         - id: 302322
           name: gradle/gradle
-        - id: 43723161
-          name: helm/helm
         - id: 119419195
           name: GoogleContainerTools/kaniko
         - id: 303758423
@@ -43,10 +45,6 @@ data:
           name: kubermatic/kubecarrier
         - id: 450404132
           name: teamcode-inc/kubeorbit
-        - id: 276822250
-          name: kubevela/kubevela
-        - id: 76686583
-          name: kubevirt/kubevirt
         - id: 158545617
           name: kudobuilder/kudo
         - id: 159242360
@@ -67,8 +65,6 @@ data:
           name: openservicebrokerapi/servicebroker
         - id: 17372733
           name: OAI/OpenAPI-Specification
-        - id: 120650407
-          name: operator-framework/operator-sdk
         - id: 8966356
           name: hashicorp/packer
         - id: 109145553

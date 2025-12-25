@@ -3,6 +3,7 @@ name_zh: 华为
 type: Company
 data:
   labels:
+    - karmada
     - kubeedge
     - kurator
     - liteos
@@ -12,6 +13,7 @@ data:
     - opengauss
     - openharmony
     - service_comb
+    - volcano
   platforms:
     - name: GitHub
       type: Code Hosting

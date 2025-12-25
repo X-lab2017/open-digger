@@ -1,0 +1,10 @@
+name: Sysdig
+type: Company
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - name: sysdig
+          id: 9823950
+      repos: []

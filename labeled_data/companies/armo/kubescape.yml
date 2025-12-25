@@ -1,0 +1,10 @@
+name: Kubescape
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - name: kubescape
+          id: 100554170
+      repos: []

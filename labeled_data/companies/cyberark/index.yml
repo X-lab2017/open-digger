@@ -1,0 +1,10 @@
+name: CyberArk
+type: Company
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - name: cyberark
+          id: 30869256
+      repos: []

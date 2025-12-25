@@ -1,0 +1,12 @@
+name: New York University
+name_zh: 纽约大学
+type: University-0
+data:
+  labels:
+    - in_toto
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 19893141
+          name: NYU

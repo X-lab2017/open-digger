@@ -1,6 +1,15 @@
 name: Cloud Native - Orchestration & Management - Scheduling & Orchestration
 type: Tech-2
 data:
+  labels:
+    - ':companies/cosmonic/wasmcloud'
+    - ':companies/google/knative'
+    - ':companies/google/kubeflow'
+    - ':companies/huawei/karmada'
+    - ':companies/huawei/volcano'
+    - ':companies/microsoft/keda'
+    - ':companies/upbound/crossplane'
+    - ':foundations/linux_foundation/cncf/kubernetes'
   platforms:
     - name: GitHub
       type: Code Hosting
@@ -15,22 +24,16 @@ data:
           name: clusternet/clusternet
         - id: 414827833
           name: clusterpedia-io/clusterpedia
-        - id: 147886080
-          name: crossplane/crossplane
         - id: 51556828
           name: moby/swarmkit
         - id: 278954673
           name: fluid-cloudnative/fluid
-        - id: 311639195
-          name: karmada-io/karmada
         - id: 470472185
           name: koordinator-sh/koordinator
         - id: 340965344
           name: kube-green/kube-green
         - id: 157133149
           name: kube-rs/kube-rs
-        - id: 20580498
-          name: kubernetes/kubernetes
         - id: 88608345
           name: kubereboot/kured
         - id: 36653430
@@ -41,7 +44,3 @@ data:
           name: OpenNebula/one
         - id: 139199684
           name: PrefectHQ/prefect
-        - id: 175592968
-          name: volcano-sh/volcano
-        - id: 304403692
-          name: wasmCloud/wasmCloud

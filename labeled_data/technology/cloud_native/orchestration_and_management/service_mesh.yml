@@ -1,6 +1,9 @@
 name: Cloud Native - Orchestration & Management - Service Mesh
 type: Tech-2
 data:
+  labels:
+    - ':companies/buoyant/linkerd'
+    - ':companies/google/istio'
   platforms:
     - name: GitHub
       type: Code Hosting
@@ -13,12 +16,8 @@ data:
           name: megaease/easemesh
         - id: 155558016
           name: solo-io/gloo-mesh
-        - id: 74175805
-          name: istio/istio
         - id: 175425051
           name: kumahq/kuma
-        - id: 113106184
-          name: linkerd/linkerd2
         - id: 447051452
           name: merbridge/merbridge
         - id: 157554479

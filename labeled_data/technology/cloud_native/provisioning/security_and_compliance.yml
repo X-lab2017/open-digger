@@ -1,6 +1,17 @@
 name: Cloud Native - Provisioning - Security & Compliance
 type: Tech-2
 data:
+  labels:
+    - ':companies/armo/kubescape'
+    - ':companies/cyberark/cert_manager'
+    - ':companies/docker/notary'
+    - ':companies/nirmata/kyverno'
+    - ':companies/okta/openfga'
+    - ':companies/redhat/keycloak'
+    - ':companies/styra/open_policy_agent'
+    - ':companies/sysdig/falco'
+    - ':universities/nyu/in_toto'
+    - ':universities/uw/the_update_framework'
   platforms:
     - name: GitHub
       type: Code Hosting
@@ -11,8 +22,6 @@ data:
           name: aserto-dev/runtime
         - id: 350005438
           name: cerbos/cerbos
-        - id: 92313258
-          name: cert-manager/cert-manager
         - id: 224386599
           name: bridgecrewio/checkov
         - id: 41571541
@@ -33,8 +42,6 @@ data:
           name: dexidp/dex
         - id: 313628863
           name: external-secrets/external-secrets
-        - id: 49986046
-          name: falcosecurity/falco
         - id: 116995448
           name: fossas/fossa-cli
         - id: 183510345
@@ -43,8 +50,6 @@ data:
           name: grafeas/grafeas
         - id: 444656703
           name: hexa-org/policy-orchestrator
-        - id: 59531400
-          name: in-toto/in-toto
         - id: 71359873
           name: keylime/keylime
         - id: 278200746
@@ -57,12 +62,8 @@ data:
           name: kubearmor/kubearmor
         - id: 318490971
           name: kubewarden/kubewarden-controller
-        - id: 169108858
-          name: kyverno/kyverno
         - id: 37743436
           name: notaryproject/notary
-        - id: 48714685
-          name: open-policy-agent/opa
         - id: 501372599
           name: openfga/openfga
         - id: 19279199
@@ -89,8 +90,6 @@ data:
           name: tenable/terrascan
         - id: 473137633
           name: cilium/tetragon
-        - id: 7942805
-          name: theupdateframework/python-tuf
         - id: 238662977
           name: deepfence/ThreatMapper
         - id: 556329104

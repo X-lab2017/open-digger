@@ -1,6 +1,8 @@
 name: Cloud Native - Observability and Analysis - Continuous Optimization
 type: Tech-2
 data:
+  labels:
+    - ':companies/kubecost/opencost'
   platforms:
     - name: GitHub
       type: Code Hosting
@@ -11,5 +13,3 @@ data:
           name: infracost/infracost
         - id: 178079595
           name: kubecost/cost-model
-        - id: 178079595
-          name: opencost/opencost

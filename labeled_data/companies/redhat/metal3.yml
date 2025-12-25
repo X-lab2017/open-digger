@@ -1,9 +1,10 @@
-name: Backstage
+name: Metal3
 type: Project
 data:
   platforms:
     - name: GitHub
       type: Code Hosting
       orgs:
-        - id: 72526453
-          name: backstage
+        - name: metal3-io
+          id: 49879880
+      repos: []

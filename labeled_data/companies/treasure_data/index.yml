@@ -5,5 +5,6 @@ data:
     - name: GitHub
       type: Code Hosting
       orgs:
-        - id: 859518
-          name: fluent
+        - name: treasure-data
+          id: 747746
+      repos: []

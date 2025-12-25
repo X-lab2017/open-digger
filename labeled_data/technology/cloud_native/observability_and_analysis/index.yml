@@ -4,6 +4,4 @@ data:
   labels:
     - chaos_engineering
     - continuous_optimization
-    - logging
-    - monitoring
-    - tracing
+    - observability

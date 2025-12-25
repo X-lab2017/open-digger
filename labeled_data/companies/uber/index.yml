@@ -2,6 +2,7 @@ name: Uber
 type: Company
 data:
   labels:
+    - jaeger
     - openmetadata
   platforms:
     - name: GitHub

@@ -1,0 +1,10 @@
+name: Buoyant
+type: Company
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - name: buoyantio
+          id: 10824329
+      repos: []

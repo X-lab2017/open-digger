@@ -1,6 +1,10 @@
 name: Cloud Native - App Definition and Development - Streaming & Messaging
 type: Tech-2
 data:
+  labels:
+    - ':companies/redhat/strimzi'
+    - ':companies/synadia/nats'
+    - ':foundations/linux_foundation/cncf/cloudevents'
   platforms:
     - name: GitHub
       type: Code Hosting
@@ -19,8 +23,6 @@ data:
           name: apache/beam
         - id: 419433905
           name: cdevents/spec
-        - id: 113701924
-          name: cloudevents/spec
         - id: 26390092
           name: deepstreamIO/deepstream.io
         - id: 7202769
@@ -35,8 +37,6 @@ data:
           name: kubemq-io/kubemq-community
         - id: 454372510
           name: memphisdev/memphis-broker
-        - id: 6443435
-          name: nats-io/nats-server
         - id: 86400116
           name: openmessaging/openmessaging-java
         - id: 63096822
@@ -49,7 +49,5 @@ data:
           name: apache/incubator-seatunnel
         - id: 18988631
           name: siddhi-io/siddhi
-        - id: 58194180
-          name: strimzi/strimzi-kafka-operator
         - id: 211798430
           name: tremor-rs/tremor-runtime

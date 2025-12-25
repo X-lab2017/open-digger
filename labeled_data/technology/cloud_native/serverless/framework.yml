@@ -1,6 +1,8 @@
 name: Cloud Native - Serverless - Framework
 type: Tech-2
 data:
+  labels:
+    - ':companies/microsoft/dapr'
   platforms:
     - name: GitHub
       type: Code Hosting
@@ -11,8 +13,6 @@ data:
           name: aws/serverless-application-model
         - id: 59868262
           name: aws/chalice
-        - id: 192632000
-          name: dapr/dapr
         - id: 208698479
           name: apache/incubator-eventmesh
         - id: 62978868

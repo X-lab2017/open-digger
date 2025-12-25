@@ -1,10 +1,48 @@
-name: Cloud Native - Observability and Analysis - Monitoring
+name: Cloud Native - Observability and Analysis - Observability
 type: Tech-2
 data:
+  labels:
+    - ':companies/google/opentelemetry'
+    - ':companies/grafana/cortex'
+    - ':companies/improbable/thanos'
+    - ':companies/soundcloud/prometheus'
+    - ':companies/treasure_data/fluentd'
+    - ':companies/uber/jaeger'
+    - ':foundations/linux_foundation/cncf/openmetrics'
   platforms:
     - name: GitHub
       type: Code Hosting
       repos:
+        - id: 76088862
+          name: megaease/easeagent
+        - id: 99251094
+          name: elastic/apm-server
+        - id: 236055696
+          name: grafana/tempo
+        - id: 46904685
+          name: opentracing/opentracing-go
+        - id: 25459400
+          name: pinpoint-apm/pinpoint
+        - id: 45721011
+          name: apache/skywalking
+        - id: 133340671
+          name: sofastack/sofa-tracer
+        - id: 31788540
+          name: spring-cloud/spring-cloud-sleuth
+        - id: 454341458
+          name: kubeshop/tracetest
+        - id: 4576305
+          name: openzipkin/zipkin
+        - id: 129717717
+          name: grafana/loki
+        - id: 430536935
+          name: loggie-io/loggie
+        - id: 1090311
+          name: elastic/logstash
+        - id: 334274271
+          name: opensearch-project/opensearch
+        - id: 520784735
+          name: parseablehq/parseable
         - id: 16554739
           name: elastic/beats
         - id: 161628176
@@ -13,8 +51,6 @@ data:
           name: centreon/centreon
         - id: 171669368
           name: tribe29/checkmk
-        - id: 67793333
-          name: cortexproject/cortex
         - id: 448599559
           name: deepflowys/deepflow
         - id: 55850689
@@ -59,8 +95,6 @@ data:
           name: opstrace/opstrace
         - id: 243394576
           name: pixie-io/pixie
-        - id: 6838921
-          name: prometheus/prometheus
         - id: 252745692
           name: timescale/promscale
         - id: 82981995
@@ -71,8 +105,6 @@ data:
           name: skooner-k8s/skooner
         - id: 15926180
           name: draios/sysdig
-        - id: 109162639
-          name: thanos-io/thanos
         - id: 127344362
           name: trickstercache/trickster
         - id: 146327667

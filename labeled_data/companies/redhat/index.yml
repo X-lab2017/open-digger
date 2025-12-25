@@ -2,9 +2,17 @@ name: RedHat
 type: Company
 data:
   labels:
+    - ':companies/microsoft/keda'
     - ceph
+    - container_network_interface
+    - cri_o
+    - etcd
+    - kubevirt
+    - metal3
     - openshift
+    - operator_framework
     - stackrox
+    - strimzi
   platforms:
     - name: GitHub
       type: Code Hosting

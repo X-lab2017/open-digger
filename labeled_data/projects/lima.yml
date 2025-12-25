@@ -1,9 +1,10 @@
-name: KubeVela
+name: Lima
 type: Project
 data:
   platforms:
     - name: GitHub
       type: Code Hosting
       orgs:
-        - id: 74584788
-          name: kubevela
+        - name: lima-vm
+          id: 88128539
+      repos: []

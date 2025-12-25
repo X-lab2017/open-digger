@@ -1,0 +1,13 @@
+name: Harness
+type: Company
+data:
+  labels:
+    - harness
+    - litmus
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - name: harness
+          id: 34780278
+      repos: []

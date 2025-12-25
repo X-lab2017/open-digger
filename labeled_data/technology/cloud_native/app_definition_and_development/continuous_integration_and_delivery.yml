@@ -1,16 +1,16 @@
 name: Cloud Native - App Definition and Development - Continuous Integration & Delivery
 type: Tech-2
 data:
+  labels:
+    - ':companies/alibaba/openkruise'
+    - ':companies/intuit/argo'
+    - ':companies/weaveworks/flux'
   platforms:
     - name: GitHub
       type: Code Hosting
       repos:
         - id: 188402099
           name: agola-io/agola
-        - id: 120896210
-          name: argoproj/argo-cd
-        - id: 100982449
-          name: argoproj/argo-workflows
         - id: 108049853
           name: brigadecore/brigade
         - id: 333303663
@@ -25,10 +25,6 @@ data:
           name: apache/dolphinscheduler
         - id: 16607898
           name: harness/drone
-        - id: 149515625
-          name: fluxcd/flagger
-        - id: 258469100
-          name: fluxcd/flux2
         - id: 2500088
           name: gitlabhq/gitlabhq
         - id: 15155534

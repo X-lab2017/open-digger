@@ -1,0 +1,12 @@
+name: Lyft
+type: Company
+data:
+  labels:
+    - envoy
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - name: lyft
+          id: 4269340
+      repos: []

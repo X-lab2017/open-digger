@@ -1,0 +1,10 @@
+name: Nirmata
+type: Company
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - name: nirmata
+          id: 7470644
+      repos: []

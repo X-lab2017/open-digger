@@ -1,9 +1,12 @@
 name: Pivotal
 type: Company
 data:
+  labels:
+    - buildpacks
+    - cloudfoundry
   platforms:
     - name: GitHub
       type: Code Hosting
       orgs:
-        - id: 621746
-          name: cloudfoundry
+        - id: 33104318
+          name: pivotal

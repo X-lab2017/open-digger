@@ -1,0 +1,12 @@
+name: Improbable
+type: Company
+data:
+  labels:
+    - thanos
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - name: improbable-eng
+          id: 26084283
+      repos: []

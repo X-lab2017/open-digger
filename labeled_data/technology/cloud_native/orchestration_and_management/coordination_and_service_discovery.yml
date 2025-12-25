@@ -1,16 +1,15 @@
 name: Cloud Native - Orchestration & Management - Coordination & Service Discovery
 type: Tech-2
 data:
+  labels:
+    - ':companies/google/coredns'
+    - ':companies/redhat/etcd'
   platforms:
     - name: GitHub
       type: Code Hosting
       repos:
         - id: 160999
           name: apache/zookeeper
-        - id: 54230994
-          name: coredns/coredns
-        - id: 11225014
-          name: etcd-io/etcd
         - id: 224421982
           name: k8gb-io/k8gb
         - id: 513743595

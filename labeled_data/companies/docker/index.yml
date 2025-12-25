@@ -1,6 +1,8 @@
 name: Docker
 type: Company
 data:
+  labels:
+    - containerd
   platforms:
     - name: GitHub
       type: Code Hosting
