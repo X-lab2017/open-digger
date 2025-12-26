@@ -1,0 +1,9 @@
+name: SpacetimeDB
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 48072542
+          name: clockworklabs

@@ -1,0 +1,23 @@
+name: Apache HBase
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 20089857
+          name: apache/hbase
+        - id: 164903474
+          name: apache/hbase-site
+        - id: 143078890
+          name: apache/hbase-operator-tools
+        - id: 94973335
+          name: apache/hbase-thirdparty
+        - id: 143078926
+          name: apache/hbase-connectors
+        - id: 652708450
+          name: apache/hbase-kustomize
+        - id: 184106986
+          name: apache/hbase-filesystem
+        - id: 180528387
+          name: apache/hbase-native-client

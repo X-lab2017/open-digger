@@ -80,7 +80,10 @@ meta:
 data:
   labels:
     - ':companies/armo'
+    - ':companies/dragonflydb'
     - ':companies/cyberark'
+    - ':companies/ravendb'
+    - ':companies/scylladb'
     - IL-D
     - IL-HA
     - IL-JM

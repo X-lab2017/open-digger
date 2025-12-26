@@ -1,6 +1,9 @@
 name: Database - Object Oriented
 type: Tech-1
 data:
+  labels:
+    - ':companies/databricks/neon'
+    - ':companies/naver/cubrid'
   platforms:
     - name: GitHub
       type: Code Hosting
@@ -11,8 +14,6 @@ data:
           name: Alachisoft/TayzGrid
         - id: 681142
           name: Bobris/BTDB
-        - id: 52080367
-          name: CUBRID/cubrid
         - id: 329729926
           name: CondensationDB/Condensation-java
         - id: 8799170
@@ -75,8 +76,6 @@ data:
           name: mateusfreira/nun-db
         - id: 273564373
           name: morecraf/Siaqodb
-        - id: 351806852
-          name: neondatabase/neon
         - id: 79901405
           name: objectbox/objectbox-java
         - id: 7083240

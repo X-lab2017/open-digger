@@ -1,0 +1,9 @@
+name: Tarantool
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 2344919
+          name: tarantool

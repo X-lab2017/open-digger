@@ -2,6 +2,8 @@ name: Artificial Intelligence - Generative Artificial Intelligence
 type: Tech-1
 data:
   labels:
+    - ':companies/qdrant/qdrant'
+    - ':companies/weaviate/weaviate'
     - application
     - infrastructure
     - model
@@ -34,8 +36,6 @@ data:
           name: openai/point-e
         - id: 525592995
           name: invoke-ai/invokeai
-        - id: 55072677
-          name: weaviate/weaviate
         - id: 574428530
           name: rawandahmad698/pychatgpt
         - id: 572971616
@@ -58,8 +58,6 @@ data:
           name: modelscope/modelscope
         - id: 588477692
           name: BlinkDL/ChatRWKV
-        - id: 268163609
-          name: qdrant/qdrant
         - id: 208728772
           name: milvus-io/milvus
         - id: 502482803

@@ -1,0 +1,5 @@
+name: ScyllaDB
+type: Company
+data:
+  labels:
+    - scylladb

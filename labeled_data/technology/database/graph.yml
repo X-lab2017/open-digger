@@ -1,6 +1,9 @@
 name: Database - Graph
 type: Tech-1
 data:
+  labels:
+    - ':companies/neo4j/neo4j'
+    - ':companies/surrealdb/surrealdb'
   platforms:
     - name: GitHub
       type: Code Hosting
@@ -75,8 +78,6 @@ data:
           name: memgraph/memgraph
         - id: 81411018
           name: microsoft/GraphEngine
-        - id: 6650539
-          name: neo4j/neo4j
         - id: 7083240
           name: orientechnologies/orientdb
         - id: 26917250
@@ -95,8 +96,6 @@ data:
           name: stellardb/StellarDB
         - id: 238509
           name: stevedekorte/vertexdb
-        - id: 436658287
-          name: surrealdb/surrealdb
         - id: 198466472
           name: terminusdb/terminusdb
         - id: 3548254

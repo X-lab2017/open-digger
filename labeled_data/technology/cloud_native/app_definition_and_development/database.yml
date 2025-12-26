@@ -2,8 +2,18 @@ name: Cloud Native - App Definition and Development - Database
 type: Tech-2
 data:
   labels:
+    - ':companies/apple/foundationdb'
+    - ':companies/cratedb/cratedb'
+    - ':companies/databend/databend'
     - ':companies/google/vitess'
+    - ':companies/imply/druid'
+    - ':companies/mariadb/mariadb'
+    - ':companies/meta/cassandra'
+    - ':companies/neo4j/neo4j'
     - ':companies/pingcap/tikv'
+    - ':companies/vk/tarantool'
+    - ':companies/weaviate/weaviate'
+    - ':companies/yandex/clickhouse'
   platforms:
     - name: GitHub
       type: Code Hosting
@@ -18,36 +28,20 @@ data:
           name: arangodb/arangodb
         - id: 51290852
           name: bigchaindb/bigchaindb
-        - id: 206424
-          name: apache/cassandra
-        - id: 60246359
-          name: ClickHouse/ClickHouse
         - id: 3180703
           name: couchbase/manifest
-        - id: 9342529
-          name: crate/crate
         - id: 83363132
           name: CrunchyData/postgres-operator
         - id: 125824259
           name: xtdb/xtdb
-        - id: 302827809
-          name: datafuselabs/databend
-        - id: 6358188
-          name: apache/druid
-        - id: 114187903
-          name: apple/foundationdb
         - id: 307894865
           name: alibaba/graphscope
         - id: 1050944
           name: infinispan/infinispan
-        - id: 19816070
-          name: MariaDB/server
         - id: 24494032
           name: mysql/mysql-server
         - id: 146459443
           name: vesoft-inc/nebula
-        - id: 6650539
-          name: neo4j/neo4j
         - id: 36778364
           name: attic-labs/noms
         - id: 7083240
@@ -78,15 +72,11 @@ data:
           name: authzed/spicedb
         - id: 43884372
           name: sorintlab/stolon
-        - id: 911980
-          name: tarantool/tarantool
         - id: 196353673
           name: taosdata/TDengine
         - id: 41986369
           name: pingcap/tidb
         - id: 2445970
           name: voltdb/voltdb
-        - id: 55072677
-          name: semi-technologies/weaviate
         - id: 105944401
           name: YugaByte/yugabyte-db

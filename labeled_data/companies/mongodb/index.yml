@@ -1,6 +1,8 @@
 name: MongoDB
 type: Company
 data:
+  labels:
+    - wiredtiger
   platforms:
     - name: GitHub
       type: Code Hosting

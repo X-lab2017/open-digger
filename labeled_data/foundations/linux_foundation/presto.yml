@@ -1,0 +1,5 @@
+name: Presto Foundation
+type: Foundation
+data:
+  labels:
+    - ':companies/meta/prestodb'

@@ -1,0 +1,9 @@
+name: ScyllaDB
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 14364730
+          name: scylladb

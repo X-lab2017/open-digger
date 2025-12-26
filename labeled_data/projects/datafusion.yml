@@ -1,0 +1,29 @@
+name: Apache DataFusion
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 358917318
+          name: apache/datafusion
+        - id: 120538653
+          name: apache/datafusion-sqlparser-rs
+        - id: 743651128
+          name: apache/datafusion-comet
+        - id: 515951203
+          name: apache/datafusion-python
+        - id: 494107715
+          name: apache/datafusion-ballista
+        - id: 1058926942
+          name: apache/datafusion-sandbox
+        - id: 801199055
+          name: apache/datafusion-site
+        - id: 800499469
+          name: apache/datafusion-benchmarks
+        - id: 907047868
+          name: apache/datafusion-testing
+        - id: 860089372
+          name: apache/datafusion-ray
+        - id: 595148158
+          name: apache/datafusion-ballista-python

@@ -1,0 +1,9 @@
+name: Qdrant
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 73504361
+          name: qdrant

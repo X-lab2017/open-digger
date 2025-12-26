@@ -1,0 +1,9 @@
+name: CUBRID
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 358322
+          name: CUBRID

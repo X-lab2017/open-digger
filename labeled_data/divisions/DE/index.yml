@@ -86,6 +86,7 @@ data:
     - ':companies/jina_ai'
     - ':companies/n8n'
     - ':companies/nextcloud'
+    - ':companies/qdrant'
     - ':companies/restate'
     - ':companies/soundcloud'
     - ':companies/zalando'

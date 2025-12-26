@@ -1,0 +1,9 @@
+name: MariaDB
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 4739304
+          name: MariaDB

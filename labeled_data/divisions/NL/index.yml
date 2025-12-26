@@ -82,7 +82,9 @@ meta:
       count: 1709343
 data:
   labels:
+    - ':companies/duckdb'
     - ':companies/polars'
+    - ':companies/weaviate'
     - ':foundations/godot'
     - ':foundations/nixos'
     - NL-AW

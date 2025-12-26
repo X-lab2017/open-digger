@@ -1,0 +1,9 @@
+name: DuckDB
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 82039556
+          name: duckdb

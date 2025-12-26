@@ -1,0 +1,9 @@
+name: RisingWave
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 77175557
+          name: risingwavelabs

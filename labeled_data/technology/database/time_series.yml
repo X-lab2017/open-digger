@@ -1,6 +1,12 @@
 name: Database - Time Series
 type: Tech-1
 data:
+  labels:
+    - ':companies/greptime/greptimedb'
+    - ':companies/influxdata/influxdb'
+    - ':companies/questdb/questdb'
+    - ':companies/tigerdata/timescaledb'
+    - ':companies/victoriametrics/victoriametrics'
   platforms:
     - name: GitHub
       type: Code Hosting
@@ -9,8 +15,6 @@ data:
           name: 4paradigm/OpenMLDB
         - id: 396867188
           name: ArcadeData/arcadedb
-        - id: 480217156
-          name: GreptimeTeam/greptimedb
         - id: 89848289
           name: KxSystems/kdb
         - id: 16189524
@@ -19,8 +23,6 @@ data:
           name: OpenTSDB/opentsdb
         - id: 55093657
           name: SiriDB/siridb-server
-        - id: 150954997
-          name: VictoriaMetrics/VictoriaMetrics
         - id: 158975124
           name: apache/iotdb
         - id: 420965027
@@ -31,8 +33,6 @@ data:
           name: griddb/griddb
         - id: 17705626
           name: hawkular/hawkular-metrics
-        - id: 13124802
-          name: influxdata/influxdb
         - id: 8039659
           name: kairosdb/kairosdb
         - id: 61153677
@@ -45,8 +45,6 @@ data:
           name: openGemini/openGemini
         - id: 6838921
           name: prometheus/prometheus
-        - id: 19257422
-          name: questdb/questdb
         - id: 10081109
           name: rackerlabs/blueflood
         - id: 135549948
@@ -61,5 +59,3 @@ data:
           name: spotify/heroic
         - id: 196353673
           name: taosdata/TDengine
-        - id: 84240850
-          name: timescale/timescaledb

@@ -1,0 +1,9 @@
+name: YugabyteDB
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 17074854
+          name: yugabyte

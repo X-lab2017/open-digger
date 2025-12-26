@@ -1,0 +1,5 @@
+name: Weaviate
+type: Company
+data:
+  labels:
+    - weaviate

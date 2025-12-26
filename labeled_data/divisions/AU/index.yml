@@ -78,6 +78,7 @@ meta:
       count: 1978084
 data:
   labels:
+    - ':companies/cratedb'
     - AU-ACT
     - AU-NSW
     - AU-NT

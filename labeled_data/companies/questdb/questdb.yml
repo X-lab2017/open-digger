@@ -1,0 +1,9 @@
+name: QuestDB
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 52297642
+          name: questdb

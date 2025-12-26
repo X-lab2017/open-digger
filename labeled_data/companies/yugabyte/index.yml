@@ -1,0 +1,5 @@
+name: Yugabyte
+type: Company
+data:
+  labels:
+    - yugabytedb

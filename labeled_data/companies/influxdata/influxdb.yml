@@ -1,0 +1,43 @@
+name: InfluxDB
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 13124802
+          name: influxdata/influxdb
+        - id: 14151539
+          name: influxdata/influxdb-python
+        - id: 19323986
+          name: influxdata/influxdb-java
+        - id: 53373718
+          name: influxdata/influxdb-relay
+        - id: 192689401
+          name: influxdata/influxdb-client-python
+        - id: 178956163
+          name: influxdata/influxdb-client-go
+        - id: 151233646
+          name: influxdata/influxdb-client-java
+        - id: 14237621
+          name: influxdata/influxdb-php
+        - id: 150225803
+          name: influxdata/influxdb-client-csharp
+        - id: 162643764
+          name: influxdata/influxdb-client-js
+        - id: 41903325
+          name: influxdata/influxdb-csharp
+        - id: 54745696
+          name: influxdata/influxdb-comparisons
+        - id: 169120987
+          name: influxdata/influxdb-client-php
+        - id: 67177538
+          name: influxdata/influx-stress
+        - id: 279622976
+          name: influxdata/ui
+        - id: 14152411
+          name: influxdata/influxdb-go
+        - id: 225798392
+          name: influxdata/influxdb-client-ruby
+        - id: 346896461
+          name: influxdata/influxdb-observability

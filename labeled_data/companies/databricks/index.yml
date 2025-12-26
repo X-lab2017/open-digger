@@ -1,6 +1,8 @@
 name: Databricks
 type: Company
 data:
+  labels:
+    - neon
   platforms:
     - name: GitHub
       type: Code Hosting

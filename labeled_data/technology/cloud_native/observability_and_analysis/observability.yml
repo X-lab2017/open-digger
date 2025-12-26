@@ -5,9 +5,11 @@ data:
     - ':companies/google/opentelemetry'
     - ':companies/grafana/cortex'
     - ':companies/improbable/thanos'
+    - ':companies/influxdata/influxdb'
     - ':companies/soundcloud/prometheus'
     - ':companies/treasure_data/fluentd'
     - ':companies/uber/jaeger'
+    - ':companies/victoriametrics/victoriametrics'
     - ':foundations/linux_foundation/cncf/openmetrics'
   platforms:
     - name: GitHub
@@ -67,8 +69,6 @@ data:
           name: cilium/hubble
         - id: 12440855
           name: Icinga/icinga2
-        - id: 13124802
-          name: influxdata/influxdb
         - id: 120181748
           name: kiali/kiali
         - id: 137922416
@@ -109,8 +109,6 @@ data:
           name: trickstercache/trickster
         - id: 146327667
           name: vectordotdev/vector
-        - id: 150954997
-          name: VictoriaMetrics/VictoriaMetrics
         - id: 34659664
           name: weaveworks/scope
         - id: 17253775
