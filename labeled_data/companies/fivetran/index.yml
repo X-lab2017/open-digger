@@ -1,11 +1,11 @@
-name: Cloudera
+name: Fivetran
 type: Company
 data:
   labels:
-    - hadoop
+    - dbt
   platforms:
     - name: GitHub
       type: Code Hosting
       orgs:
-        - id: 87383
-          name: cloudera
+        - id: 2722259
+          name: fivetran

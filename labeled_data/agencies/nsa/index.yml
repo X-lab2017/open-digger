@@ -1,0 +1,12 @@
+name: National Security Agency, US
+name_zh: 美国国家安全局
+type: Agency-0
+data:
+  labels:
+    - nifi
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 11298292
+          name: nationalsecurityagency

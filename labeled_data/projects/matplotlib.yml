@@ -1,0 +1,9 @@
+name: Matplotlib
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 215947
+          name: matplotlib

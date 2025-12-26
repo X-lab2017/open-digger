@@ -1,6 +1,8 @@
 name: Netflix
 type: Company
 data:
+  labels:
+    - iceberg
   platforms:
     - name: GitHub
       type: Code Hosting

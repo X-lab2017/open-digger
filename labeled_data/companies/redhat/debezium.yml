@@ -1,0 +1,9 @@
+name: Debezium
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 11964329
+          name: debezium

@@ -2,6 +2,7 @@ name: Big Data - Analysis Engine
 type: Tech-1
 data:
   labels:
+    - ':companies/cnet_networks/solr'
     - ':companies/cratedb/cratedb'
     - ':companies/duckdb/duckdb'
     - ':companies/imply/druid'
@@ -13,6 +14,7 @@ data:
     - ':companies/tigerdata/timescaledb'
     - ':companies/yandex/clickhouse'
     - ':foundations/apache/lucene'
+    - ':projects/datafusion'
   platforms:
     - name: GitHub
       type: Code Hosting
@@ -43,8 +45,6 @@ data:
           name: apache/drill
         - id: 202483348
           name: apache/incubator-kvrocks
-        - id: 358917318
-          name: apache/arrow-datafusion
         - id: 20473418
           name: apache/phoenix
         - id: 56128733
@@ -55,8 +55,6 @@ data:
           name: apache/hawq
         - id: 206357
           name: apache/pig
-        - id: 341374920
-          name: apache/solr
         - id: 9290699
           name: apache/tez
         - id: 507775

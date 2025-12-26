@@ -22,7 +22,10 @@ data:
     - ':companies/timecho/iotdb'
     - ':projects/skywalking'
     - ':projects/spark'
+    - arrow
+    - camel
     - lucene
+    - seatunnel
   platforms:
     - name: GitHub
       type: Code Hosting

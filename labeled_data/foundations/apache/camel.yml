@@ -1,0 +1,51 @@
+name: Apache Camel
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 206317
+          name: apache/camel
+        - id: 146865191
+          name: apache/camel-k
+        - id: 228330020
+          name: apache/camel-spring-boot
+        - id: 193065376
+          name: apache/camel-quarkus
+        - id: 456450536
+          name: apache/camel-website-pub
+        - id: 121096466
+          name: apache/camel-website
+        - id: 316177855
+          name: apache/camel-kamelets
+        - id: 413286655
+          name: apache/camel-karavan
+        - id: 294089725
+          name: apache/camel-quarkus-examples
+        - id: 247250286
+          name: apache/camel-karaf
+        - id: 823042916
+          name: apache/camel-upgrade-recipes
+        - id: 263834466
+          name: apache/camel-spring-boot-examples
+        - id: 888955332
+          name: apache/camel-jbang-examples
+        - id: 238404616
+          name: apache/camel-examples
+        - id: 225818900
+          name: apache/camel-kafka-connector
+        - id: 259671148
+          name: apache/camel-kafka-connector-examples
+        - id: 468675455
+          name: apache/camel-kamelets-examples
+        - id: 341578116
+          name: apache/camel-performance-tests
+        - id: 171643056
+          name: apache/camel-k-runtime
+        - id: 256466283
+          name: apache/camel-k-examples
+        - id: 384354433
+          name: apache/camel-kameleon
+        - id: 266103387
+          name: apache/camel-karaf-examples

@@ -1,0 +1,47 @@
+name: Apache Arrow
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 51905353
+          name: apache/arrow
+        - id: 358917250
+          name: apache/arrow-rs
+        - id: 498785517
+          name: apache/arrow-adbc
+        - id: 957727808
+          name: apache/arrow-dotnet
+        - id: 849127594
+          name: apache/arrow-go
+        - id: 983308061
+          name: apache/arrow-js
+        - id: 952097046
+          name: apache/arrow-rs-object-store
+        - id: 511532067
+          name: apache/arrow-nanoarrow
+        - id: 291046504
+          name: apache/arrow-julia
+        - id: 593066208
+          name: apache/arrow-flight-sql-postgresql
+        - id: 988870018
+          name: apache/arrow-swift
+        - id: 893682219
+          name: apache/arrow-java
+        - id: 51905338
+          name: apache/arrow-site
+        - id: 385596995
+          name: apache/arrow-cookbook
+        - id: 144751911
+          name: apache/arrow-testing
+        - id: 438006639
+          name: apache/arrow-experiments
+        - id: 1002798780
+          name: apache/arrow-skyhook
+        - id: 380657505
+          name: apache/arrow-experimental-rs-arrow2
+        - id: 378325202
+          name: apache/arrow-experimental-rs-parquet2
+        - id: 94900140
+          name: apache/arrow-dist

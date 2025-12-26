@@ -80,6 +80,7 @@ meta:
       count: 3327893
 data:
   labels:
+    - ':companies/kestra'
     - ':companies/material_ui_sas'
     - ':companies/matra_datavision'
     - ':companies/sensiolabs'

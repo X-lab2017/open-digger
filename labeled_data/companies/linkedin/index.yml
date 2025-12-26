@@ -2,6 +2,7 @@ name: LinkedIn
 type: Company
 data:
   labels:
+    - datahub
     - kafka
     - pinot
     - venice

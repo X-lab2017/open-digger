@@ -2,9 +2,5 @@ name: StreamNative
 name_zh: 原流数据
 type: Company
 data:
-  platforms:
-    - name: GitHub
-      type: Code Hosting
-      repos:
-        - id: 62117812
-          name: apache/pulsar
+  labels:
+    - ':companies/yahoo/pulsar'

@@ -1,0 +1,9 @@
+name: dbt
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 18339788
+          name: dbt-labs

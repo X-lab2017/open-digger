@@ -1,11 +1,11 @@
-name: Cloudera
+name: Yahoo
 type: Company
 data:
   labels:
-    - hadoop
+    - pulsar
   platforms:
     - name: GitHub
       type: Code Hosting
       orgs:
-        - id: 87383
-          name: cloudera
+        - id: 16574
+          name: yahoo

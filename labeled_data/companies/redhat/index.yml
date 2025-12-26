@@ -6,6 +6,7 @@ data:
     - ceph
     - container_network_interface
     - cri_o
+    - debezium
     - etcd
     - kubevirt
     - metal3
