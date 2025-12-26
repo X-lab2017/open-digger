@@ -1,0 +1,11 @@
+name: InfluxData
+type: Company
+data:
+  labels:
+    - influxdb
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 5713248
+          name: influxdata

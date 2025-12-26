@@ -1,0 +1,13 @@
+name: Neo4j
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 201120
+          name: neo4j
+        - id: 218965
+          name: neo4j-examples
+        - id: 916372
+          name: neo4j-contrib

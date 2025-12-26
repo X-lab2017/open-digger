@@ -1,0 +1,41 @@
+name: Apache Cassandra
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 206424
+          name: apache/cassandra
+        - id: 6765281
+          name: apache/cassandra-java-driver
+        - id: 162297452
+          name: apache/cassandra-sidecar
+        - id: 74950507
+          name: apache/cassandra-builds
+        - id: 14125991
+          name: apache/cassandra-cpp-driver
+        - id: 11262602
+          name: apache/cassandra-python-driver
+        - id: 1425437
+          name: apache/cassandra-ccm
+        - id: 637949608
+          name: apache/cassandra-analytics
+        - id: 5561238
+          name: apache/cassandra-gocql-driver
+        - id: 212459447
+          name: apache/cassandra-website
+        - id: 418276612
+          name: apache/cassandra-accord
+        - id: 250606150
+          name: apache/cassandra-easy-stress
+        - id: 95281387
+          name: apache/cassandra-dtest
+        - id: 242772303
+          name: apache/cassandra-in-jvm-dtest-api
+        - id: 21280887
+          name: apache/cassandra-spark-connector
+        - id: 292627306
+          name: apache/cassandra-harry
+        - id: 204657216
+          name: apache/cassandra-diff

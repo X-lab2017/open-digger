@@ -81,6 +81,7 @@ meta:
       count: 4097212
 data:
   labels:
+    - ':companies/vk'
     - ':companies/yandex'
     - RU-AD
     - RU-AL

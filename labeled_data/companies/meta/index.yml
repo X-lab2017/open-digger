@@ -2,8 +2,13 @@ name: Meta
 type: Company
 data:
   labels:
+    - cassandra
+    - hive
+    - prestodb
     - pytorch
     - react_native
+    - rocksdb
+    - velox
   platforms:
     - name: GitHub
       type: Code Hosting

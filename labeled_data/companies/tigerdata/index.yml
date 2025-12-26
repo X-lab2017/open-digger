@@ -1,0 +1,5 @@
+name: Tiger Data
+type: Company
+data:
+  labels:
+    - timescaledb

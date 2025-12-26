@@ -1,0 +1,15 @@
+name: Apache Lucene
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 341631350
+          name: apache/lucene
+        - id: 50229487
+          name: apache/lucene-solr
+        - id: 215638242
+          name: apache/lucene-site
+        - id: 508622790
+          name: apache/lucene-jira-archive

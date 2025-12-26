@@ -1,12 +1,13 @@
 name: Database - Search Engine
 type: Tech-1
 data:
+  labels:
+    - ':companies/vespa/vespa'
+    - ':foundations/apache/lucene'
   platforms:
     - name: GitHub
       type: Code Hosting
       repos:
-        - id: 50229487
-          name: apache/lucene-solr
         - id: 507775
           name: elastic/elasticsearch
         - id: 95614931
@@ -21,7 +22,5 @@ data:
           name: sphinxsearch/sphinx
         - id: 79317191
           name: typesense/typesense
-        - id: 60377070
-          name: vespa-engine/vespa
         - id: 735981
           name: xapian/xapian

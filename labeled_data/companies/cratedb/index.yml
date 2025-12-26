@@ -1,0 +1,5 @@
+name: CrateDB
+type: Company
+data:
+  labels:
+    - cratedb

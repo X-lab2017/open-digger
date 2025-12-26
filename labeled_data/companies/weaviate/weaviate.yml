@@ -1,0 +1,9 @@
+name: Weaviate
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 37794290
+          name: weaviate

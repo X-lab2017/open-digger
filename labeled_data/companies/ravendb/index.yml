@@ -1,0 +1,5 @@
+name: RavenDB
+type: Company
+data:
+  labels:
+    - ravendb

@@ -1,0 +1,5 @@
+name: MariaDB
+type: Company
+data:
+  labels:
+    - mariadb

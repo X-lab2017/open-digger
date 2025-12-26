@@ -3,6 +3,8 @@ type: Company
 data:
   labels:
     - kafka
+    - pinot
+    - venice
   platforms:
     - name: GitHub
       type: Code Hosting

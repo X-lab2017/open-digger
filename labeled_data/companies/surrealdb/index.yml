@@ -1,0 +1,5 @@
+name: SurrealDB
+type: Company
+data:
+  labels:
+    - surrealdb

@@ -1,0 +1,11 @@
+name: Naver
+type: Company
+data:
+  labels:
+    - cubrid
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 6589568
+          name: NAVER

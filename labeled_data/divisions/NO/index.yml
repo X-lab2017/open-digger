@@ -81,6 +81,7 @@ data:
   labels:
     - ':companies/nordic_semiconductor'
     - ':companies/opera'
+    - ':companies/vespa'
     - NO-03
     - NO-11
     - NO-15

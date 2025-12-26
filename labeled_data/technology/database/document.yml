@@ -1,6 +1,17 @@
 name: Database - Document
 type: Tech-1
 data:
+  labels:
+    - ':companies/apple/foundationdb'
+    - ':companies/chroma/chroma'
+    - ':companies/cratedb/cratedb'
+    - ':companies/linkedin/venice'
+    - ':companies/meta/prestodb'
+    - ':companies/ravendb/ravendb'
+    - ':companies/surrealdb/surrealdb'
+    - ':companies/vespa/vespa'
+    - ':companies/vk/tarantool'
+    - ':foundations/apache/lucene'
   platforms:
     - name: GitHub
       type: Code Hosting
@@ -59,12 +70,6 @@ data:
           name: apache/couchdb
         - id: 5683653
           name: apache/drill
-        - id: 341631350
-          name: apache/lucene
-        - id: 50229487
-          name: apache/lucene-solr
-        - id: 114187903
-          name: apple/foundationdb
         - id: 137869753
           name: appy-one/acebase
         - id: 2649214
@@ -91,14 +96,10 @@ data:
           name: capjamesg/jamesql
         - id: 639434928
           name: cfu288/SylvieJS
-        - id: 546206616
-          name: chroma-core/chroma
         - id: 13353426
           name: cinchapi/concourse
         - id: 66783145
           name: couchbase/couchbase-lite-core
-        - id: 9342529
-          name: crate/crate
         - id: 722117815
           name: cursusdb/cursusdb
         - id: 249981301
@@ -159,8 +160,6 @@ data:
           name: kimchy/compass
         - id: 607441698
           name: lancedb/lancedb
-        - id: 349172057
-          name: linkedin/venice
         - id: 376679845
           name: losfair/RefineDB
         - id: 9795883
@@ -207,8 +206,6 @@ data:
           name: polypheny/Polypheny-DB
         - id: 714074
           name: pouchdb/pouchdb
-        - id: 5349565
-          name: prestodb/presto
         - id: 10153163
           name: priitj/whitedb
         - id: 75425073
@@ -223,8 +220,6 @@ data:
           name: radare/sdb
         - id: 129436009
           name: rakibtg/SleekDB
-        - id: 542714
-          name: ravendb/ravendb
         - id: 1917262
           name: realm/realm-core
         - id: 223462217
@@ -247,12 +242,8 @@ data:
           name: small-tech/jsdb
         - id: 192631273
           name: sourcenetwork/defradb
-        - id: 436658287
-          name: surrealdb/surrealdb
         - id: 22761491
           name: symisc/unqlite
-        - id: 911980
-          name: tarantool/tarantool
         - id: 3920536
           name: teamdev/densodb
         - id: 11654790
@@ -277,8 +268,6 @@ data:
           name: vearch/vearch
         - id: 634656527
           name: vector5ai/vector5db
-        - id: 60377070
-          name: vespa-engine/vespa
         - id: 735981
           name: xapian/xapian
         - id: 125824259

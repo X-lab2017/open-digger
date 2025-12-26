@@ -1,0 +1,5 @@
+name: DuckDB Labs
+type: Company
+data:
+  labels:
+    - duckdb

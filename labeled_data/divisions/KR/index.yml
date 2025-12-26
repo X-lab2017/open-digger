@@ -82,6 +82,7 @@ meta:
       count: 2562056
 data:
   labels:
+    - ':companies/naver'
     - ':companies/samsung'
     - KR-11
     - KR-26

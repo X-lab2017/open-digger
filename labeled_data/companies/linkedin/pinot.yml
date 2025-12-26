@@ -1,0 +1,13 @@
+name: Apache Pinot
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 19961085
+          name: apache/pinot
+        - id: 250043917
+          name: apache/pinot-docs
+        - id: 154230024
+          name: apache/pinot-site

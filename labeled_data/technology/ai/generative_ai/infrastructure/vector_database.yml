@@ -1,6 +1,9 @@
 name: Artificial Intelligence - Generative Artificial Intelligence - Infrastructure - Vector Database
 type: Tech-3
 data:
+  labels:
+    - ':companies/qdrant/qdrant'
+    - ':companies/weaviate/weaviate'
   platforms:
     - name: GitHub
       type: Code Hosting
@@ -11,14 +14,10 @@ data:
           name: facebookresearch/faiss
         - id: 11309795
           name: nmslib/nmslib
-        - id: 55072677
-          name: weaviate/weaviate
         - id: 388946490
           name: facebookincubator/velox
         - id: 11627513
           name: guokr/simbase
-        - id: 268163609
-          name: qdrant/qdrant
         - id: 670778224
           name: Mintplex-Labs/vector-admin
         - id: 664872761

@@ -1,0 +1,9 @@
+name: TimescaleDB
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 8986001
+          name: timescale

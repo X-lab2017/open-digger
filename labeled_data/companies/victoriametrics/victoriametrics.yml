@@ -1,0 +1,9 @@
+name: VictoriaMetrics
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 43720803
+          name: VictoriaMetrics

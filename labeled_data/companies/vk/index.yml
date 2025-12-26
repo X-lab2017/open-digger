@@ -1,0 +1,11 @@
+name: VK
+type: Company
+data:
+  labels:
+    - tarantool
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 1478241
+          name: VKCOM

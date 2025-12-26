@@ -1,0 +1,13 @@
+name: Apache Druid
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 6358188
+          name: apache/druid
+        - id: 129137599
+          name: apache/druid-website
+        - id: 168870773
+          name: apache/druid-website-src

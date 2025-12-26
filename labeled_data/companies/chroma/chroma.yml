@@ -1,0 +1,9 @@
+name: Chroma
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 105881770
+          name: chroma-core

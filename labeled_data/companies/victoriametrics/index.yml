@@ -1,0 +1,5 @@
+name: VictoriaMetrics
+type: Company
+data:
+  labels:
+    - victoriametrics

@@ -2,4 +2,11 @@ name: Apple
 type: Company
 data:
   labels:
+    - foundationdb
     - swift
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 10639145
+          name: apple

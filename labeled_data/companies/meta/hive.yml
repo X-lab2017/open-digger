@@ -1,0 +1,13 @@
+name: Apache Hive
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 206444
+          name: apache/hive
+        - id: 450602159
+          name: apache/hive-site
+        - id: 747034394
+          name: apache/hive-dev-box

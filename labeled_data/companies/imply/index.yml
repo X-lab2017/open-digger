@@ -1,0 +1,11 @@
+name: Imply
+type: Company
+data:
+  labels:
+    - druid
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 11660206
+          name: implydata

@@ -84,8 +84,10 @@ data:
     - ':companies/deepmind'
     - ':companies/gaas'
     - ':companies/improbable'
+    - ':companies/questdb'
     - ':companies/rare'
     - ':companies/raycast'
+    - ':companies/surrealdb'
     - ':companies/weaveworks'
     - GB-ENG
     - GB-NIR

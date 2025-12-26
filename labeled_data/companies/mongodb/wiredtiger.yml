@@ -1,0 +1,9 @@
+name: WiredTiger
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 1251095
+          name: wiredtiger

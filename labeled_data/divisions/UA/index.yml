@@ -78,6 +78,7 @@ meta:
       count: 1492408
 data:
   labels:
+    - ':companies/victoriametrics'
     - UA-05
     - UA-07
     - UA-09

@@ -1,0 +1,5 @@
+name: Qdrant
+type: Company
+data:
+  labels:
+    - qdrant

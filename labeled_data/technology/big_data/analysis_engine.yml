@@ -1,38 +1,30 @@
 name: Big Data - Analysis Engine
 type: Tech-1
 data:
+  labels:
+    - ':companies/cratedb/cratedb'
+    - ':companies/duckdb/duckdb'
+    - ':companies/imply/druid'
+    - ':companies/linkedin/pinot'
+    - ':companies/meta/cassandra'
+    - ':companies/meta/hive'
+    - ':companies/meta/prestodb'
+    - ':companies/microsoft/hbase'
+    - ':companies/tigerdata/timescaledb'
+    - ':companies/yandex/clickhouse'
+    - ':foundations/apache/lucene'
   platforms:
     - name: GitHub
       type: Code Hosting
       repos:
         - id: 17165658
           name: apache/spark
-        - id: 60246359
-          name: ClickHouse/ClickHouse
-        - id: 5349565
-          name: prestodb/presto
-        - id: 84240850
-          name: timescale/timescaledb
-        - id: 6358188
-          name: apache/druid
-        - id: 206424
-          name: apache/cassandra
         - id: 166515022
           name: trinodb/trino
         - id: 334274271
           name: opensearch-project/OpenSearch
-        - id: 138754790
-          name: duckdb/duckdb
         - id: 99919302
           name: apache/doris
-        - id: 20089857
-          name: apache/hbase
-        - id: 206444
-          name: apache/hive
-        - id: 50229487
-          name: apache/lucene-solr
-        - id: 19961085
-          name: apache/pinot
         - id: 28738447
           name: apache/kylin
         - id: 206417
@@ -53,10 +45,6 @@ data:
           name: apache/incubator-kvrocks
         - id: 358917318
           name: apache/arrow-datafusion
-        - id: 9342529
-          name: crate/crate
-        - id: 341631350
-          name: apache/lucene
         - id: 20473418
           name: apache/phoenix
         - id: 56128733
