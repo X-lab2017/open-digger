@@ -1,11 +1,11 @@
-name: Cloudera
+name: Cube Dev
 type: Company
 data:
   labels:
-    - hadoop
+    - cube
   platforms:
     - name: GitHub
       type: Code Hosting
       orgs:
-        - id: 87383
-          name: cloudera
+        - id: 23642077
+          name: cubedevinc

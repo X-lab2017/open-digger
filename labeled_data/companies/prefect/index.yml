@@ -1,5 +1,5 @@
-name: JuiceData
+name: Prefect
 type: Company
 data:
   labels:
-    - juicefs
+    - prefect

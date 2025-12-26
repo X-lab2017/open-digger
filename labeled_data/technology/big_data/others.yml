@@ -1,18 +1,16 @@
 name: Big Data - Others
 type: Tech-1
 data:
+  labels:
+    - ':companies/cloudera/hadoop'
+    - ':companies/cube_dev/cube'
+    - ':companies/linkedin/datahub'
   platforms:
     - name: GitHub
       type: Code Hosting
       repos:
         - id: 49876476
           name: apache/shardingsphere
-        - id: 149026292
-          name: cube-js/cube.js
-        - id: 23418517
-          name: apache/hadoop
-        - id: 46398090
-          name: datahub-project/datahub
         - id: 21193524
           name: apache/calcite
         - id: 198368711

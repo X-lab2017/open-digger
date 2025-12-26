@@ -1,0 +1,9 @@
+name: Apache SeaTunnel
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 99412308
+          name: apache/seatunnel

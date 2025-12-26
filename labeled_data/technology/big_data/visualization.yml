@@ -1,6 +1,8 @@
 name: Big Data - Visualization
 type: Tech-1
 data:
+  labels:
+    - ':projects/matplotlib'
   platforms:
     - name: GitHub
       type: Code Hosting
@@ -17,8 +19,6 @@ data:
           name: metabase/metabase
         - id: 13926404
           name: getredash/redash
-        - id: 1385122
-          name: matplotlib/matplotlib
         - id: 85095608
           name: airbnb/visx
         - id: 45646037

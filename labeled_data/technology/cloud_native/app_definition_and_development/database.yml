@@ -3,6 +3,7 @@ type: Tech-2
 data:
   labels:
     - ':companies/apple/foundationdb'
+    - ':companies/cloudera/hadoop'
     - ':companies/cratedb/cratedb'
     - ':companies/databend/databend'
     - ':companies/google/vitess'
@@ -20,8 +21,6 @@ data:
       repos:
         - id: 62117818
           name: apache/carbondata
-        - id: 23418517
-          name: apache/hadoop
         - id: 31006158
           name: apache/ignite
         - id: 2649214

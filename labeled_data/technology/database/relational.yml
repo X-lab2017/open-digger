@@ -18,6 +18,7 @@ data:
     - ':companies/surrealdb/surrealdb'
     - ':companies/yandex/clickhouse'
     - ':companies/yugabyte/yugabytedb'
+    - ':projects/datafusion'
   platforms:
     - name: GitHub
       type: Code Hosting
@@ -94,8 +95,6 @@ data:
           name: amelielabs/amelie
         - id: 3927863
           name: antonmks/Alenka
-        - id: 358917318
-          name: apache/arrow-datafusion
         - id: 1918497
           name: apache/derby
         - id: 99919302

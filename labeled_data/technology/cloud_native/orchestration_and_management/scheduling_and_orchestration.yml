@@ -8,6 +8,7 @@ data:
     - ':companies/huawei/karmada'
     - ':companies/huawei/volcano'
     - ':companies/microsoft/keda'
+    - ':companies/prefect/prefect'
     - ':companies/upbound/crossplane'
     - ':foundations/linux_foundation/cncf/kubernetes'
   platforms:
@@ -42,5 +43,3 @@ data:
           name: open-cluster-management-io/ocm
         - id: 1464595
           name: OpenNebula/one
-        - id: 139199684
-          name: PrefectHQ/prefect

@@ -1,5 +1,5 @@
-name: JuiceData
+name: Kestra
 type: Company
 data:
   labels:
-    - juicefs
+    - kestra

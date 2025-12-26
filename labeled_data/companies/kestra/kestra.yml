@@ -1,0 +1,9 @@
+name: Kestra
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 59033362
+          name: kestra-io

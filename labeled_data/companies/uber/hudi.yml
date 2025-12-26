@@ -1,0 +1,11 @@
+name: Apache Hudi
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 76474200
+          name: apache/hudi
+        - id: 795242557
+          name: apache/hudi-rs

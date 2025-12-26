@@ -1,0 +1,25 @@
+name: Apache Hadoop
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 23418517
+          name: apache/hadoop
+        - id: 147407131
+          name: apache/hadoop-site
+        - id: 761252297
+          name: apache/hadoop-release-support
+        - id: 210419610
+          name: apache/hadoop-thirdparty
+        - id: 648734996
+          name: apache/hadoop-api-shim
+        - id: 25507370
+          name: apache/hadoop-common
+        - id: 25507372
+          name: apache/hadoop-mapreduce
+        - id: 25507371
+          name: apache/hadoop-hdfs
+        - id: 102179105
+          name: apache/hadoop-downstream-tests

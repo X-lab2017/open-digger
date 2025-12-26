@@ -3,6 +3,7 @@ type: Tech-2
 data:
   labels:
     - ':companies/jd/cubefs'
+    - ':companies/juicedata/juicefs'
     - ':companies/quantum/rook'
     - ':companies/rancher/longhorn'
   platforms:
@@ -23,8 +24,6 @@ data:
           name: gluster/glusterfs
         - id: 466948543
           name: hwameistor/hwameistor
-        - id: 327859577
-          name: juicedata/juicefs
         - id: 166203864
           name: k8up-io/k8up
         - id: 117251051

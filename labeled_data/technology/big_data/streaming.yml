@@ -1,6 +1,8 @@
 name: Big Data - Streaming
 type: Tech-1
 data:
+  labels:
+    - ':companies/yahoo/pulsar'
   platforms:
     - name: GitHub
       type: Code Hosting
@@ -9,8 +11,6 @@ data:
           name: apache/kafka
         - id: 20587599
           name: apache/flink
-        - id: 62117812
-          name: apache/pulsar
         - id: 50904245
           name: apache/beam
         - id: 14135470

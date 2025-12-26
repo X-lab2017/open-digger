@@ -1,0 +1,9 @@
+name: JuiceFS
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 27241737
+          name: juicedata

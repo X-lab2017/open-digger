@@ -1,0 +1,21 @@
+name: Apache Iceberg
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 158256479
+          name: apache/iceberg
+        - id: 892508157
+          name: apache/iceberg-cpp
+        - id: 669011066
+          name: apache/iceberg-rust
+        - id: 677260606
+          name: apache/iceberg-python
+        - id: 677260678
+          name: apache/iceberg-go
+        - id: 1102985952
+          name: apache/iceberg-terraform
+        - id: 431255738
+          name: apache/iceberg-docs

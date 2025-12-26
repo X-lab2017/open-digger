@@ -1,22 +1,19 @@
 name: Big Data - Data Integration
 type: Tech-1
 data:
+  labels:
+    - ':companies/fivetran/dbt'
+    - ':companies/redhat/debezium'
+    - ':foundations/apache/camel'
+    - ':foundations/apache/seatunnel'
   platforms:
     - name: GitHub
       type: Code Hosting
       repos:
         - id: 117965972
           name: alibaba/DataX
-        - id: 50205233
-          name: debezium/debezium
         - id: 283046497
           name: airbytehq/airbyte
-        - id: 53548867
-          name: dbt-labs/dbt-core
-        - id: 206317
-          name: apache/camel
-        - id: 99412308
-          name: apache/incubator-seatunnel
         - id: 282994686
           name: ververica/flink-cdc-connectors
         - id: 2153096

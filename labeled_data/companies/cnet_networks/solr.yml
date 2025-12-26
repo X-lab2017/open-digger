@@ -1,0 +1,19 @@
+name: Apache Solr
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 341374920
+          name: apache/solr
+        - id: 1077950478
+          name: apache/solr-mcp
+        - id: 340642806
+          name: apache/solr-site
+        - id: 191988685
+          name: apache/solr-operator
+        - id: 329694540
+          name: apache/solr-sandbox
+        - id: 440856396
+          name: apache/solr-docker

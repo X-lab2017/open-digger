@@ -2,8 +2,12 @@ name: Cloud Native - App Definition and Development - Streaming & Messaging
 type: Tech-2
 data:
   labels:
+    - ':agencies/nsa/nifi'
+    - ':companies/alibaba/rocketmq'
     - ':companies/redhat/strimzi'
     - ':companies/synadia/nats'
+    - ':companies/yahoo/pulsar'
+    - ':foundations/apache/seatunnel'
     - ':foundations/linux_foundation/cncf/cloudevents'
   platforms:
     - name: GitHub
@@ -11,10 +15,6 @@ data:
       repos:
         - id: 43158694
           name: apache/incubator-heron
-        - id: 27911088
-          name: apache/nifi
-        - id: 75164823
-          name: apache/rocketmq
         - id: 17165658
           name: apache/spark
         - id: 14135470
@@ -41,12 +41,8 @@ data:
           name: openmessaging/openmessaging-java
         - id: 63096822
           name: pravega/pravega
-        - id: 62117812
-          name: apache/pulsar
         - id: 924551
           name: rabbitmq/rabbitmq-server
-        - id: 99412308
-          name: apache/incubator-seatunnel
         - id: 18988631
           name: siddhi-io/siddhi
         - id: 211798430

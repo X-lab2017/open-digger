@@ -1,0 +1,45 @@
+name: Apache Pulsar
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 62117812
+          name: apache/pulsar
+        - id: 542858730
+          name: apache/pulsar-client-python
+        - id: 173299242
+          name: apache/pulsar-client-node
+        - id: 533870035
+          name: apache/pulsar-client-reactive
+        - id: 185278617
+          name: apache/pulsar-client-go
+        - id: 542858846
+          name: apache/pulsar-client-cpp
+        - id: 255516325
+          name: apache/pulsar-helm-chart
+        - id: 429229398
+          name: apache/pulsar-site
+        - id: 156590059
+          name: apache/pulsar-dotpulsar
+        - id: 845018247
+          name: apache/pulsar-java-contrib
+        - id: 238290996
+          name: apache/pulsar-test-infra
+        - id: 155603142
+          name: apache/pulsar-manager
+        - id: 255146602
+          name: apache/pulsar-adapters
+        - id: 874576419
+          name: apache/pulsar-sql
+        - id: 255146640
+          name: apache/pulsar-presto
+        - id: 255146527
+          name: apache/pulsar-connectors
+        - id: 198023969
+          name: apache/pulsar-translation
+        - id: 312204743
+          name: apache/pulsar-release
+        - id: 189467242
+          name: apache/pulsar-client-ruby

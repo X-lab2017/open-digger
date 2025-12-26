@@ -1,0 +1,29 @@
+name: Apache NiFi
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 27911088
+          name: apache/nifi
+        - id: 41239512
+          name: apache/nifi-site
+        - id: 56750161
+          name: apache/nifi-minifi-cpp
+        - id: 854783313
+          name: apache/nifi-api
+        - id: 41239511
+          name: apache/nifi-maven
+        - id: 819416574
+          name: apache/nifi-python-extensions
+        - id: 206811378
+          name: apache/nifi-standard-libraries
+        - id: 126293206
+          name: apache/nifi-fds
+        - id: 81920458
+          name: apache/nifi-registry
+        - id: 54252267
+          name: apache/nifi-minifi
+        - id: 111517552
+          name: apache/nifi-container
