@@ -3,7 +3,7 @@ type: Tech-1
 data:
   labels:
     - ':companies/apple/foundationdb'
-    - ':companies/attos/dragonflydb'
+    - ':companies/dragonflydb/dragonflydb'
     - ':companies/meta/cassandra'
     - ':companies/meta/prestodb'
     - ':companies/meta/rocksdb'
