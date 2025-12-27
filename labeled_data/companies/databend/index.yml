@@ -3,3 +3,4 @@ type: Company
 data:
   labels:
     - databend
+    - opendal

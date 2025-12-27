@@ -1,0 +1,9 @@
+name: Elixir
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 1481354
+          name: elixir-lang

@@ -1,0 +1,25 @@
+name: Apache Ignite
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 31006158
+          name: apache/ignite
+        - id: 218852626
+          name: apache/ignite-extensions
+        - id: 144731383
+          name: apache/ignite-teamcity-bot
+        - id: 162138091
+          name: apache/ignite-abbrev-plugin
+        - id: 314304931
+          name: apache/ignite-python-thin-client
+        - id: 314307926
+          name: apache/ignite-nodejs-thin-client
+        - id: 265384096
+          name: apache/ignite-web-console
+        - id: 121604136
+          name: apache/ignite-release
+        - id: 314308043
+          name: apache/ignite-php-thin-client

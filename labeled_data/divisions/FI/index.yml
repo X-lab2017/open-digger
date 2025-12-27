@@ -79,6 +79,7 @@ meta:
       count: 430829
 data:
   labels:
+    - ':companies/nokia'
     - FI-01
     - FI-02
     - FI-03

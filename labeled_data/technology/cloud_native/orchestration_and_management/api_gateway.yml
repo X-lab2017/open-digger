@@ -3,6 +3,7 @@ type: Tech-2
 data:
   labels:
     - ':companies/ambassadorlabs/emissary_ingress'
+    - ':companies/api7/apisix'
   platforms:
     - name: GitHub
       type: Code Hosting
@@ -11,8 +12,6 @@ data:
           name: 3scale/apicast
         - id: 218068847
           name: apioak/apioak
-        - id: 180481986
-          name: apache/apisix
         - id: 295485450
           name: azure/api-management
         - id: 371564104

@@ -1,0 +1,9 @@
+name: Julia
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 743164
+          name: JuliaLang

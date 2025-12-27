@@ -4,7 +4,9 @@ data:
   labels:
     - ':companies/cloudera/hadoop'
     - ':companies/cube_dev/cube'
+    - ':companies/datastrato/gravitino'
     - ':companies/linkedin/datahub'
+    - ':companies/snowflake/polaris'
   platforms:
     - name: GitHub
       type: Code Hosting

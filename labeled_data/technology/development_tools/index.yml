@@ -1,0 +1,10 @@
+name: Development Tools
+type: Tech-0
+data:
+  labels:
+    - build_tools
+    - code_quality
+    - debugging_tools
+    - ide
+    - testing_tools
+    - version_control

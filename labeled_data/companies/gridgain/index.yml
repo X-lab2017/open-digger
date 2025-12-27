@@ -1,0 +1,12 @@
+name: GridGain Systems
+type: Company
+data:
+  labels:
+    - ignite
+    - ignite3
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 803592
+          name: gridgain

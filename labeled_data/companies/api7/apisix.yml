@@ -1,0 +1,33 @@
+name: Apache APISIX
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 180481986
+          name: apache/apisix
+        - id: 194645908
+          name: apache/apisix-dashboard
+        - id: 221468226
+          name: apache/apisix-ingress-controller
+        - id: 180267768
+          name: apache/apisix-website
+        - id: 273382715
+          name: apache/apisix-helm-chart
+        - id: 190105197
+          name: apache/apisix-docker
+        - id: 366946376
+          name: apache/apisix-java-plugin-runner
+        - id: 391967603
+          name: apache/apisix-python-plugin-runner
+        - id: 372204776
+          name: apache/apisix-go-plugin-runner
+        - id: 521499451
+          name: apache/apisix-profiler
+        - id: 321521282
+          name: apache/apisix-ingress-docker
+        - id: 283392625
+          name: apache/apisix-control-plane
+        - id: 214945978
+          name: apache/apisix-dashboard-built

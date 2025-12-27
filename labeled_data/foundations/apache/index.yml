@@ -25,6 +25,7 @@ data:
     - arrow
     - camel
     - lucene
+    - nuttx
     - seatunnel
   platforms:
     - name: GitHub

@@ -1,0 +1,22 @@
+name: Programming Language
+type: Tech-0
+data:
+  labels:
+    - ':companies/apple/swift'
+    - ':companies/google/dart'
+    - ':companies/google/go'
+    - ':companies/jetbrains/kotlin'
+    - ':companies/microsoft/dotnet'
+    - ':companies/oracle/java'
+    - ':foundations/php/php'
+    - ':foundations/python/python'
+    - ':foundations/ruby/ruby'
+    - ':foundations/rust/rust'
+    - ':foundations/zig/zig'
+    - ':institutions/nokia_bell_labs/cpp'
+    - ':universities/mit/julia'
+    - ':universities/puc_rio/lua'
+    - elixir
+    - javascript
+    - nim
+    - scala

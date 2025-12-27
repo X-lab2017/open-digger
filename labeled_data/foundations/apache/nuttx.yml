@@ -1,0 +1,15 @@
+name: Apache Nuttx
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 228103273
+          name: apache/nuttx
+        - id: 228103139
+          name: apache/nuttx-apps
+        - id: 230303510
+          name: apache/nuttx-website
+        - id: 232810231
+          name: apache/nuttx-testing

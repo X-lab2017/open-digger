@@ -4,6 +4,8 @@ data:
   labels:
     - ':companies/apple/foundationdb'
     - ':companies/dragonflydb/dragonflydb'
+    - ':companies/gridgain/ignite'
+    - ':companies/gridgain/ignite3'
     - ':companies/meta/cassandra'
     - ':companies/meta/prestodb'
     - ':companies/meta/rocksdb'
@@ -86,8 +88,6 @@ data:
           name: alash3al/redix
         - id: 34839383
           name: apache/geode
-        - id: 31006158
-          name: apache/ignite
         - id: 28738447
           name: apache/kylin
         - id: 2649214

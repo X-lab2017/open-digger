@@ -1,14 +1,15 @@
 name: Oracle
 type: Company
 data:
+  labels:
+    - java
+    - netbeans
   platforms:
     - name: GitHub
       type: Code Hosting
       orgs:
         - id: 4430336
           name: oracle
-        - id: 41768318
-          name: openjdk
         - id: 2452804
           name: mysql
         - id: 30273834
@@ -17,8 +18,6 @@ data:
           name: apiaryio
         - id: 10176827
           name: graalvm
-        - id: 23086798
-          name: javaee
         - id: 1084880
           name: dyninc
         - id: 44307903

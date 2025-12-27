@@ -1,0 +1,11 @@
+name: Mifos Initiative
+type: Company
+data:
+  labels:
+    - fineract
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 3473607
+          name: openmf

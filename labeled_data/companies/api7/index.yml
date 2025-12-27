@@ -1,10 +1,5 @@
 name: API7
-name_zh: API7
 type: Company
 data:
-  platforms:
-    - name: GitHub
-      type: Code Hosting
-      repos:
-        - id: 180481986
-          name: apache/apisix
+  labels:
+    - apisix

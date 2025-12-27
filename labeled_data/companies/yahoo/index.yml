@@ -3,6 +3,7 @@ type: Company
 data:
   labels:
     - pulsar
+    - trafficserver
   platforms:
     - name: GitHub
       type: Code Hosting

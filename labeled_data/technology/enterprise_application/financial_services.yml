@@ -1,0 +1,5 @@
+name: Financial Services
+type: Tech-1
+data:
+  labels:
+    - ':companies/mifos/fineract'

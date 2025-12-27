@@ -1,0 +1,17 @@
+name: Apache OpenDAL
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 459025965
+          name: apache/opendal
+        - id: 469069490
+          name: apache/opendal-reqsign
+        - id: 1078096164
+          name: apache/opendal-oli
+        - id: 1076610239
+          name: apache/opendal-ofs
+        - id: 828128323
+          name: apache/opendal-go-services

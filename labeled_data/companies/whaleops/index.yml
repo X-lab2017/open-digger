@@ -1,0 +1,11 @@
+name: WhaleOps
+type: Company
+data:
+  labels:
+    - dolphinscheduler
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 97960592
+          name: WhaleOps

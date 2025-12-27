@@ -1,0 +1,25 @@
+name: Apache DolphinScheduler
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 173335706
+          name: apache/dolphinscheduler
+        - id: 206380457
+          name: apache/dolphinscheduler-website
+        - id: 562819934
+          name: apache/dolphinscheduler-sdk-python
+        - id: 510199196
+          name: apache/dolphinscheduler-operator
+        - id: 530045849
+          name: apache/dolphinscheduler-studio
+        - id: 279778933
+          name: apache/dolphinscheduler-maven-plugin
+        - id: 493066430
+          name: apache/dolphinscheduler-mlflow
+        - id: 430636966
+          name: apache/dolphinscheduler-ambari
+        - id: 577321903
+          name: apache/dolphinscheduler-datawarehouse

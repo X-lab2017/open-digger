@@ -6,6 +6,7 @@ data:
     - ':companies/cratedb/cratedb'
     - ':companies/duckdb/duckdb'
     - ':companies/imply/druid'
+    - ':companies/intel/gluten'
     - ':companies/linkedin/pinot'
     - ':companies/meta/cassandra'
     - ':companies/meta/hive'

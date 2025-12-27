@@ -1,0 +1,9 @@
+name: Apache Traffic Server
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 356066
+          name: apache/trafficserver

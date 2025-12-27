@@ -1,0 +1,11 @@
+name: Apache Ignite 3
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 315377678
+          name: apache/ignite-3
+        - id: 246405407
+          name: apache/ignite-website

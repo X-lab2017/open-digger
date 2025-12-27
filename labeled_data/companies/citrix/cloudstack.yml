@@ -1,0 +1,41 @@
+name: Apache CloudStack
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 9759448
+          name: apache/cloudstack
+        - id: 142472700
+          name: apache/cloudstack-documentation
+        - id: 910553870
+          name: apache/cloudstack-installer
+        - id: 196358567
+          name: apache/cloudstack-kubernetes-provider
+        - id: 35472259
+          name: apache/cloudstack-www
+        - id: 360431125
+          name: apache/cloudstack-terraform-provider
+        - id: 378986140
+          name: apache/cloudstack-go
+        - id: 13641478
+          name: apache/cloudstack-cloudmonkey
+        - id: 1062438554
+          name: apache/cloudstack-extensions
+        - id: 716009848
+          name: apache/cloudstack-csbench
+        - id: 16572422
+          name: apache/cloudstack-docs-rn
+        - id: 16572420
+          name: apache/cloudstack-docs-install
+        - id: 16572418
+          name: apache/cloudstack-docs-admin
+        - id: 13641479
+          name: apache/cloudstack-docs
+        - id: 35144190
+          name: apache/cloudstack-gcestack
+        - id: 35144189
+          name: apache/cloudstack-ec2stack
+        - id: 215211708
+          name: apache/cloudstack-primate

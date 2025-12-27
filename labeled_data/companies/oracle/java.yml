@@ -1,0 +1,16 @@
+name: Java
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 41768318
+          name: openjdk
+        - id: 23086798
+          name: javaee
+        - id: 46903915
+          name: eclipse-openj9
+      repos:
+        - id: 49662222
+          name: oracle/graal

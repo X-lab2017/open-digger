@@ -2,6 +2,7 @@ name: Intel
 type: Company
 data:
   labels:
+    - gluten
     - nwjs
     - openvino
   platforms:

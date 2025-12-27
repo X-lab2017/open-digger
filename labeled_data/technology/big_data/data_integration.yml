@@ -2,6 +2,7 @@ name: Big Data - Data Integration
 type: Tech-1
 data:
   labels:
+    - ':companies/databend/opendal'
     - ':companies/fivetran/dbt'
     - ':companies/redhat/debezium'
     - ':foundations/apache/camel'

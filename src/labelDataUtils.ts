@@ -268,7 +268,7 @@ export const LabelUtil = {
   not(item: OptionLabelItem): OptionLabelItem {
     return {
       tableName: `not_${item.tableName}`,
-      withParamClause: `(${item.withParamClause})`,
+      withParamClause: `${item.withParamClause}`,
       whereClause: `(NOT ${item.whereClause})`,
       whereClauseFunc: (params: { platformCol?: string, repoCol?: string, orgCol?: string, userCol?: string }) => {
         return `(NOT ${item.whereClauseFunc(params)})`;

@@ -1,0 +1,13 @@
+name: Apache Gravitino
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 631431061
+          name: apache/gravitino
+        - id: 822589505
+          name: apache/gravitino-site
+        - id: 729035162
+          name: apache/gravitino-playground

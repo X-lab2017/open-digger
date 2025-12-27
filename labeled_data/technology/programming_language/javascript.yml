@@ -1,0 +1,17 @@
+name: JavaScript/TypeScript
+type: Project
+data:
+  labels:
+    - ':foundations/linux_foundation/openjs/node.js'
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 42048915
+          name: denoland
+        - id: 113781
+          name: v8
+        - id: 43163769
+          name: mozilla-spidermonkey
+        - id: 3637556
+          name: DefinitelyTyped

@@ -1,0 +1,12 @@
+name: The Massachusetts Institute of Technology
+name_zh: 麻省理工学院
+type: University-0
+data:
+  labels:
+    - julia
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 7487334
+          name: MIT
