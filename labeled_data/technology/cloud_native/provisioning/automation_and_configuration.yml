@@ -4,6 +4,7 @@ data:
   labels:
     - ':companies/alibaba/openyurt'
     - ':companies/capitalone/cloud_custodian'
+    - ':companies/citrix/cloudstack'
     - ':companies/huawei/kubeedge'
     - ':companies/redhat/metal3'
   platforms:

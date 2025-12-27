@@ -1,0 +1,11 @@
+name: Datastrato
+type: Company
+data:
+  labels:
+    - gravitino
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 108318472
+          name: datastrato

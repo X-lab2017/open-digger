@@ -1,0 +1,93 @@
+name: Apache Fineract
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 48418599
+          name: apache/fineract
+        - id: 48418598
+          name: apache/fineract-site
+        - id: 393185056
+          name: apache/fineract-credit-scorecard
+        - id: 138570912
+          name: apache/fineract-cn-group-finance
+        - id: 113563854
+          name: apache/fineract-cn-fims-web-app
+        - id: 122860146
+          name: apache/fineract-cn-mobile
+        - id: 197979624
+          name: apache/fineract-cn-docker-compose
+        - id: 113571298
+          name: apache/fineract-cn-anubis
+        - id: 113565685
+          name: apache/fineract-cn-identity
+        - id: 158304247
+          name: apache/fineract-cn-postgresql
+        - id: 113564702
+          name: apache/fineract-cn-mariadb
+        - id: 113564340
+          name: apache/fineract-cn-payroll
+        - id: 113564180
+          name: apache/fineract-cn-demo-server
+        - id: 113564038
+          name: apache/fineract-cn-accounting
+        - id: 113571740
+          name: apache/fineract-cn-service-starter
+        - id: 113565842
+          name: apache/fineract-cn-default-setup
+        - id: 113564470
+          name: apache/fineract-cn-rhythm
+        - id: 113564429
+          name: apache/fineract-cn-office
+        - id: 113564089
+          name: apache/fineract-cn-customer
+        - id: 113571845
+          name: apache/fineract-cn-group
+        - id: 113563972
+          name: apache/fineract-cn-deposit-account-management
+        - id: 113563925
+          name: apache/fineract-cn-portfolio
+        - id: 113564233
+          name: apache/fineract-cn-teller
+        - id: 113564382
+          name: apache/fineract-cn-reporting
+        - id: 138088829
+          name: apache/fineract-cn-notifications
+        - id: 113564280
+          name: apache/fineract-cn-cheques
+        - id: 113564641
+          name: apache/fineract-cn-permitted-feign-client
+        - id: 113571428
+          name: apache/fineract-cn-test
+        - id: 113571792
+          name: apache/fineract-cn-crypto
+        - id: 113564765
+          name: apache/fineract-cn-api
+        - id: 113571579
+          name: apache/fineract-cn-command
+        - id: 113571902
+          name: apache/fineract-cn-data-jpa
+        - id: 113571674
+          name: apache/fineract-cn-async
+        - id: 113571479
+          name: apache/fineract-cn-cassandra
+        - id: 113565613
+          name: apache/fineract-cn-lang
+        - id: 113564534
+          name: apache/fineract-cn-provisioner
+        - id: 374695592
+          name: apache/fineract-cn-mobile-wallet
+        - id: 348108750
+          name: apache/fineract-open-banking-app
+        - id: 224393473
+          name: apache/fineract-cn-interoperation
+        - id: 141437506
+          name: apache/fineract-cn-stellar-bridge
+        - id: 138853293
+          name: apache/fineract-cn-docker-scripts
+        - id: 113557328
+          name: apache/fineract-cn-fims-e2e
+        - id: 113565891
+          name: apache/fineract-cn-integration-tests

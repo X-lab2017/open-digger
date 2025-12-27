@@ -156,6 +156,7 @@ data:
     - ':companies/vesoft'
     - ':companies/vipshop'
     - ':companies/webank'
+    - ':companies/whaleops'
     - ':companies/xiaomi'
     - ':companies/youzan'
     - ':companies/yunion'

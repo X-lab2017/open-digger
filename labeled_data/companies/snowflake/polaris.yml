@@ -1,0 +1,11 @@
+name: Apache Polaris
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 807776416
+          name: apache/polaris
+        - id: 938782414
+          name: apache/polaris-tools

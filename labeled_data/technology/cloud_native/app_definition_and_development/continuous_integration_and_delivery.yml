@@ -5,6 +5,7 @@ data:
     - ':companies/alibaba/openkruise'
     - ':companies/intuit/argo'
     - ':companies/weaveworks/flux'
+    - ':companies/whaleops/dolphinscheduler'
   platforms:
     - name: GitHub
       type: Code Hosting
@@ -21,8 +22,6 @@ data:
           name: concourse/concourse
         - id: 302922505
           name: devtron-labs/devtron
-        - id: 173335706
-          name: apache/dolphinscheduler
         - id: 16607898
           name: harness/drone
         - id: 2500088

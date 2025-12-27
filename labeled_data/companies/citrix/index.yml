@@ -1,0 +1,11 @@
+name: Citrix Systems
+type: Company
+data:
+  labels:
+    - cloudstack
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 1635391
+          name: citrix

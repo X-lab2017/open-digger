@@ -1,0 +1,31 @@
+name: Kotlin
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 3432266
+          name: JetBrains/kotlin
+        - id: 14397208
+          name: JetBrains/kotlin-web-site
+        - id: 95214873
+          name: JetBrains/kotlin-playground
+        - id: 93250841
+          name: JetBrains/kotlin-wrappers
+        - id: 58957623
+          name: JetBrains/kotlin-native
+        - id: 219478945
+          name: JetBrains/kotlin-compiler-server
+        - id: 3602279
+          name: JetBrains/kotlin-web-demo
+        - id: 656233900
+          name: JetBrains/kotlin-multiplatform-dev-docs
+        - id: 42360458
+          name: JetBrains/kotlin-netbeans
+        - id: 897927459
+          name: JetBrains/kotlin-desktop-toolkit
+        - id: 278369660
+          name: JetBrains/intellij-kotlin
+        - id: 235525911
+          name: JetBrains/kotlin-mobile-docs

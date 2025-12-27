@@ -1,6 +1,8 @@
 name: Operating System
 type: Tech-0
 data:
+  labels:
+    - ':foundations/apache/nuttx'
   platforms:
     - name: GitHub
       type: Code Hosting

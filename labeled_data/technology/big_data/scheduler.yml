@@ -3,19 +3,17 @@ type: Tech-1
 data:
   labels:
     - ':agencies/nsa/nifi'
+    - ':companies/airbnb/airflow'
     - ':companies/kestra/kestra'
     - ':companies/prefect/prefect'
+    - ':companies/whaleops/dolphinscheduler'
     - ':foundations/apache/arrow'
   platforms:
     - name: GitHub
       type: Code Hosting
       repos:
-        - id: 33884891
-          name: apache/airflow
         - id: 160999
           name: apache/zookeeper
-        - id: 173335706
-          name: apache/dolphinscheduler
         - id: 131619646
           name: dagster-io/dagster
         - id: 2442457

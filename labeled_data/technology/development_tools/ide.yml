@@ -1,0 +1,5 @@
+name: Development Tools - IDE
+type: Tech-1
+data:
+  labels:
+    - ':companies/oracle/netbeans'

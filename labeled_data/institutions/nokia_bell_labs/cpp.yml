@@ -1,0 +1,16 @@
+name: C++
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 59276
+          name: cplusplus
+        - id: 8382043
+          name: gcc-mirror
+        - id: 17149993
+          name: llvm
+      repos:
+        - id: 204593825
+          name: microsoft/STL

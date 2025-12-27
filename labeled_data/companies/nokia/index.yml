@@ -1,0 +1,9 @@
+name: Nokia
+type: Company
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 341053
+          name: nokia

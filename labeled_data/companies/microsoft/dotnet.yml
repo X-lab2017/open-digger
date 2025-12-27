@@ -1,4 +1,4 @@
-name: .Net
+name: C#/.Net
 type: Project
 data:
   platforms:
@@ -9,3 +9,5 @@ data:
           name: dotnet
         - id: 27453006
           name: dotnet-architecture
+        - id: 53395
+          name: mono

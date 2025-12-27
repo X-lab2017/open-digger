@@ -1,0 +1,53 @@
+name: Apache Netbeans
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 102083576
+          name: apache/netbeans
+        - id: 185792123
+          name: apache/netbeans-mavenutils-nbm-maven-plugin
+        - id: 185983893
+          name: apache/netbeans-jenkins-lib
+        - id: 74950515
+          name: apache/netbeans-website
+        - id: 700332647
+          name: apache/netbeans-antora-ui
+        - id: 572533564
+          name: apache/netbeans-nbpackage
+        - id: 1003481709
+          name: apache/netbeans-vscode
+        - id: 700379211
+          name: apache/netbeans-antora
+        - id: 102083575
+          name: apache/netbeans-jackpot30
+        - id: 700379699
+          name: apache/netbeans-antora-site
+        - id: 700367100
+          name: apache/netbeans-antora-tutorials
+        - id: 185792695
+          name: apache/netbeans-mavenutils-archetype-netbeans-platform-app-archetype
+        - id: 185792290
+          name: apache/netbeans-mavenutils-archetype-nbm-archetype
+        - id: 379983367
+          name: apache/netbeans-native-launchers
+        - id: 556736332
+          name: apache/netbeans-native-installers
+        - id: 700366075
+          name: apache/netbeans-antora-wiki
+        - id: 153253531
+          name: apache/netbeans-parent
+        - id: 102083574
+          name: apache/netbeans-html4j
+        - id: 104312953
+          name: apache/netbeans-tools
+        - id: 784229212
+          name: apache/netbeans-samples
+        - id: 185792574
+          name: apache/netbeans-mavenutils-archetype-nbm-suite-root
+        - id: 645701640
+          name: apache/netbeans-mavenutils-archetypes
+        - id: 185790907
+          name: apache/netbeans-webskin

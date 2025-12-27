@@ -1,0 +1,9 @@
+name: Nim
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 104954407
+          name: nimlang

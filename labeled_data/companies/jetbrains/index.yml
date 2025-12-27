@@ -1,6 +1,8 @@
 name: JetBrains
 type: Company
 data:
+  labels:
+    - kotlin
   platforms:
     - name: GitHub
       type: Code Hosting

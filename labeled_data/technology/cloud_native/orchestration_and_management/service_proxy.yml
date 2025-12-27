@@ -3,6 +3,7 @@ type: Tech-2
 data:
   labels:
     - ':companies/lyft/envoy'
+    - ':companies/yahoo/trafficserver'
   platforms:
     - name: GitHub
       type: Code Hosting

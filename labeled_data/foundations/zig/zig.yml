@@ -1,0 +1,9 @@
+name: Zig
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 27973237
+          name: ziglang
