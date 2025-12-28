@@ -8,6 +8,7 @@ data:
         - id: 45347303
           name: lfai
   labels:
+    - ':companies/databricks/delta_lake'
     - ':companies/zilliz/milvus'
     - adlik
     - adversarial_robustness_toolkit
@@ -18,7 +19,6 @@ data:
     - datapractices
     - datashim
     - delta
-    - delta_lake
     - docarrary
     - egeria
     - elastic_deep_learning

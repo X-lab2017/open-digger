@@ -1,14 +1,14 @@
-name: Artificial Intelligence - Generative Artificial IntellIgence - Tool - Deployment Tool
+name: Artificial Intelligence - Generative Artificial Intelligence - Tool - Deployment Tool
 type: Tech-3
 data:
+  labels:
+    - ':projects/vllm'
   platforms:
     - name: GitHub
       type: Code Hosting
       repos:
         - id: 674187265
           name: AmineDiro/cria
-        - id: 599547518
-          name: vllm-project/vllm
         - id: 634081686
           name: mlc-ai/mlc-llm
         - id: 630249429

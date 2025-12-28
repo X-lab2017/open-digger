@@ -2,6 +2,7 @@ name: Big Data - Data Storage
 type: Tech-1
 data:
   labels:
+    - ':companies/databricks/delta_lake'
     - ':companies/juicedata/juicefs'
     - ':companies/netflix/iceberg'
     - ':companies/uber/hudi'
@@ -13,8 +14,6 @@ data:
           name: Alluxio/alluxio
         - id: 206459
           name: apache/avro
-        - id: 182849188
-          name: delta-io/delta
         - id: 3786237
           name: hazelcast/hazelcast
         - id: 20675636

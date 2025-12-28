@@ -3,8 +3,10 @@ name_zh: Web 开发框架 - 前端
 type: Tech-1
 data:
   labels:
+    - ':companies/github/electron'
     - ':companies/google/angular'
     - ':companies/google/flutter'
+    - ':projects/svelte'
   platforms:
     - name: GitHub
       type: Code Hosting
@@ -49,8 +51,6 @@ data:
           name: jquery/jquery
         - id: 27193779
           name: nodejs/node
-        - id: 9384267
-          name: electron/electron
         - id: 7530570
           name: appium/appium
         - id: 10160528
@@ -99,10 +99,6 @@ data:
           name: jashkenas/backbone
         - id: 596892
           name: pallets/flask
-        - id: 74293321
-          name: sveltejs/svelte
-        - id: 1863329
-          name: laravel/laravel
         - id: 9309093
           name: Semantic-Org/Semantic-UI
         - id: 71995937
@@ -121,8 +117,6 @@ data:
           name: jgthms/bulma
         - id: 5532320
           name: Polymer/polymer
-        - id: 4164482
-          name: django/django
         - id: 576201
           name: mrdoob/three.js
         - id: 20904437

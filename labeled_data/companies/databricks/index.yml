@@ -2,6 +2,7 @@ name: Databricks
 type: Company
 data:
   labels:
+    - delta_lake
     - neon
   platforms:
     - name: GitHub
@@ -14,5 +15,3 @@ data:
       orgs:
         - id: 4998052
           name: databricks
-        - id: 49767398
-          name: delta-io

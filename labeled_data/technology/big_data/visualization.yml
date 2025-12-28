@@ -2,6 +2,7 @@ name: Big Data - Visualization
 type: Tech-1
 data:
   labels:
+    - ':companies/metabase/metabase'
     - ':projects/matplotlib'
   platforms:
     - name: GitHub
@@ -15,8 +16,6 @@ data:
           name: grafana/grafana
         - id: 39464018
           name: apache/superset
-        - id: 30203935
-          name: metabase/metabase
         - id: 13926404
           name: getredash/redash
         - id: 85095608
