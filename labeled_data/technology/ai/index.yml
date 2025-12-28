@@ -2,6 +2,8 @@ name: Artificial Intelligence
 type: Tech-0
 data:
   labels:
+    - ':companies/databricks/delta_lake'
+    - ':companies/intel/openvino'
     - generative_ai
     - large_language_model
   platforms:
@@ -162,8 +164,6 @@ data:
           name: ultralytics/yolov3
         - id: 134292654
           name: eriklindernoren/PyTorch-YOLOv3
-        - id: 153097643
-          name: openvinotoolkit/openvino
         - id: 59299524
           name: MycroftAI/mycroft-core
         - id: 5108051
@@ -274,8 +274,6 @@ data:
           name: seetaface/SeetaFaceEngine
         - id: 199149606
           name: didi/AoE
-        - id: 182849188
-          name: delta-io/delta
         - id: 115765590
           name: OAID/Tengine
         - id: 319193033

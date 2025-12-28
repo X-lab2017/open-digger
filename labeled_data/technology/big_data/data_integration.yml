@@ -2,6 +2,7 @@ name: Big Data - Data Integration
 type: Tech-1
 data:
   labels:
+    - ':companies/airbyte/airbyte'
     - ':companies/databend/opendal'
     - ':companies/fivetran/dbt'
     - ':companies/redhat/debezium'
@@ -13,8 +14,6 @@ data:
       repos:
         - id: 117965972
           name: alibaba/DataX
-        - id: 283046497
-          name: airbytehq/airbyte
         - id: 282994686
           name: ververica/flink-cdc-connectors
         - id: 2153096

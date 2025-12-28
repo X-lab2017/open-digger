@@ -2,6 +2,7 @@ name: Database - Wide Column
 type: Tech-1
 data:
   labels:
+    - ':companies/databricks/delta_lake'
     - ':companies/imply/druid'
     - ':companies/influxdata/influxdb'
     - ':companies/meta/cassandra'
@@ -24,8 +25,6 @@ data:
           name: apache/trafodion
         - id: 18129915
           name: baidu/tera
-        - id: 182849188
-          name: delta-io/delta
         - id: 191676087
           name: eleme/lindb
         - id: 1584552

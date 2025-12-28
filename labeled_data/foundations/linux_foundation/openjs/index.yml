@@ -8,12 +8,12 @@ data:
         - id: 48335322
           name: openjs-foundation
   labels:
+    - ':companies/github/electron'
     - amp
     - appium
     - architect
     - chassis
     - dojo
-    - electron
     - eslint
     - esprima
     - express

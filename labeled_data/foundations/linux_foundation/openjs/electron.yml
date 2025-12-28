@@ -1,9 +1,0 @@
-name: Electron
-type: Project
-data:
-  platforms:
-    - name: GitHub
-      type: Code Hosting
-      orgs:
-        - id: 13409222
-          name: electron

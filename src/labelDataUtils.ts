@@ -204,7 +204,7 @@ export interface OptionLabelItem {
 export const LabelUtil = {
   // get a label item by id or type
   get(idOrType: string): OptionLabelItem {
-    const tableName = 'label_' + idOrType.replaceAll(':', '_').replaceAll('/', '_');
+    const tableName = 'label_' + idOrType.replaceAll(':', '_').replaceAll('/', '_').replaceAll('-', '_');
     return {
       tableName,
       withParamClause: `${tableName} AS (SELECT p.name AS platform, p.repos AS repos, p.orgs AS orgs, p.users AS users
