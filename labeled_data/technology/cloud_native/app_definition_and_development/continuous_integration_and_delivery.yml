@@ -3,9 +3,11 @@ type: Tech-2
 data:
   labels:
     - ':companies/alibaba/openkruise'
+    - ':companies/flant/werf'
     - ':companies/intuit/argo'
     - ':companies/weaveworks/flux'
     - ':companies/whaleops/dolphinscheduler'
+    - ':foundations/linux_foundation/cncf/keptn'
   platforms:
     - name: GitHub
       type: Code Hosting
@@ -38,8 +40,6 @@ data:
           name: grafana/k6
         - id: 449649393
           name: keploy/keploy
-        - id: 166831098
-          name: keptn/keptn
         - id: 458214571
           name: open-feature/community
         - id: 384241097
@@ -62,7 +62,5 @@ data:
           name: kubeshop/testkube
         - id: 4693087
           name: travis-ci/travis-web
-        - id: 50365232
-          name: werf/werf
         - id: 179344069
           name: woodpecker-ci/woodpecker

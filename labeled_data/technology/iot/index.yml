@@ -1,12 +1,17 @@
 name: Internet of Things
+name_zh: 物联网
 type: Tech-0
 data:
+  labels:
+    - ':companies/alibaba/alios_things'
+    - ':companies/nabucasa/home_assistant'
+    - ':companies/rtthread/rtthread'
+    - ':foundations/linux_foundation/zephyr'
+    - ':projects/openwrt'
   platforms:
     - name: GitHub
       type: Code Hosting
       repos:
-        - id: 7408108
-          name: RT-Thread/rt-thread
         - id: 206121828
           name: FreeRTOS/FreeRTOS
         - id: 207354223
@@ -37,14 +42,10 @@ data:
           name: RIOT-OS/RIOT
         - id: 31526467
           name: Kinoma/kinomajs
-        - id: 45821540
-          name: openwrt/openwrt
         - id: 50994619
           name: openremote/openremote
         - id: 393740911
           name: ThingsPanel/ThingsPanel-Go
-        - id: 59771425
-          name: zephyrproject-rtos/zephyr
         - id: 6365284
           name: contiki-os/contiki
         - id: 15682781
@@ -63,8 +64,6 @@ data:
           name: taosdata/TDengine
         - id: 230403844
           name: openLuat/LuatOS
-        - id: 101866073
-          name: alibaba/AliOS-Things
         - id: 156054898
           name: FMSoftCN/hybridos
         - id: 92706019

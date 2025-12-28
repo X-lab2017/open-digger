@@ -1,10 +1,6 @@
 name: RT-Thread
-name_zh: RT-Thread
+name_zh: 上海睿赛德电子科技有限公司
 type: Company
 data:
-  platforms:
-    - name: GitHub
-      type: Code Hosting
-      orgs:
-        - id: 1783729
-          name: RT-Thread
+  labels:
+    - rtthread

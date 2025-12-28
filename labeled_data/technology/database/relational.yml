@@ -2,7 +2,9 @@ name: Database - Relational
 type: Tech-1
 data:
   labels:
+    - ':companies/amazon/babelfish_for_postgresql'
     - ':companies/clockwork/spacetimedb'
+    - ':companies/cockroachlabs/cockroachdb'
     - ':companies/databend/databend'
     - ':companies/databricks/neon'
     - ':companies/duckdb/duckdb'
@@ -18,6 +20,7 @@ data:
     - ':companies/surrealdb/surrealdb'
     - ':companies/yandex/clickhouse'
     - ':companies/yugabyte/yugabytedb'
+    - ':foundations/trino/trino'
     - ':projects/datafusion'
   platforms:
     - name: GitHub
@@ -157,8 +160,6 @@ data:
           name: cmu-db/noisepage
         - id: 420965027
           name: cnosdb/cnosdb
-        - id: 16563587
-          name: cockroachdb/cockroach
         - id: 296950535
           name: codemix/ts-sql
         - id: 254418044
@@ -359,8 +360,6 @@ data:
           name: tinyplex/tinybase
         - id: 22868877
           name: traildb/traildb
-        - id: 166515022
-          name: trinodb/trino
         - id: 697976
           name: twitter-archive/snowflake
         - id: 149626591

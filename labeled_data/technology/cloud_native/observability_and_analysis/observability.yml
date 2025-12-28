@@ -2,10 +2,13 @@ name: Cloud Native - Observability and Analysis - Observability
 type: Tech-2
 data:
   labels:
+    - ':companies/amazon/opensearch'
+    - ':companies/datadog/datadog'
     - ':companies/google/opentelemetry'
     - ':companies/grafana/cortex'
     - ':companies/improbable/thanos'
     - ':companies/influxdata/influxdb'
+    - ':companies/parseable/parseable'
     - ':companies/soundcloud/prometheus'
     - ':companies/treasure_data/fluentd'
     - ':companies/uber/jaeger'
@@ -41,10 +44,6 @@ data:
           name: loggie-io/loggie
         - id: 1090311
           name: elastic/logstash
-        - id: 334274271
-          name: opensearch-project/opensearch
-        - id: 520784735
-          name: parseablehq/parseable
         - id: 16554739
           name: elastic/beats
         - id: 161628176

@@ -1,5 +1,12 @@
 name: Development Tools - IDE
+name_zh: 集成开发环境
 type: Tech-1
 data:
   labels:
+    - ':companies/anysphere/cursor'
+    - ':companies/continue/continue'
+    - ':companies/microsoft/vscode'
+    - ':companies/myshell/ailice'
     - ':companies/oracle/netbeans'
+    - ':companies/zed/zed'
+    - ':projects/aider'

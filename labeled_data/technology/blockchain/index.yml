@@ -1,20 +1,33 @@
 name: Block Chain
+name_zh: 区块链
 type: Tech-0
 data:
+  labels:
+    - ':companies/consensys/metamask'
+    - ':companies/llama_corp/defillama'
+    - ':companies/mysten_labs/sui'
+    - ':companies/paradigm/foundry'
+    - ':companies/paradigm/reth'
+    - ':companies/paradigm/wevm'
+    - ':companies/zama/concrete'
+    - ':companies/zama/fhevm'
+    - ':companies/zama/tfhe_rs'
+    - ':foundations/anoma/namada'
+    - ':foundations/linux_foundation/hyperledger/hyperledger_anoncreds'
+    - ':foundations/linux_foundation/hyperledger/hyperledger_aries'
+    - ':foundations/linux_foundation/hyperledger/hyperledger_besu'
+    - ':foundations/linux_foundation/hyperledger/hyperledger_bevel'
+    - ':foundations/linux_foundation/hyperledger/hyperledger_cacti'
+    - ':foundations/linux_foundation/hyperledger/hyperledger_caliper'
+    - ':foundations/linux_foundation/hyperledger/hyperledger_firefly'
+    - ':foundations/linux_foundation/hyperledger/hyperledger_indy'
+    - ':foundations/linux_foundation/hyperledger/hyperledger_iroha'
+    - ':foundations/linux_foundation/hyperledger/hyperledger_web3j'
+    - ':projects/bitcoin'
   platforms:
     - name: GitHub
       type: Code Hosting
       repos:
-        - id: 45500099
-          name: hyperledger/hyperledger
-        - id: 66573241
-          name: hyperledger/fabric
-        - id: 57901437
-          name: hyperledger/sawtooth-core
-        - id: 1181927
-          name: bitcoin/bitcoin
-        - id: 14531737
-          name: bitcoin/bips
         - id: 15452919
           name: ethereum/go-ethereum
         - id: 40892817

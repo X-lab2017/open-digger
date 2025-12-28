@@ -1,6 +1,10 @@
-name: Frontend
-type: Tech-0
+name: Web Frameworks - Frontend
+name_zh: Web 开发框架 - 前端
+type: Tech-1
 data:
+  labels:
+    - ':companies/google/angular'
+    - ':companies/google/flutter'
   platforms:
     - name: GitHub
       type: Code Hosting
@@ -11,14 +15,8 @@ data:
           name: vitejs/vite
         - id: 381907715
           name: vuejs/petite-vue
-        - id: 24195339
-          name: angular/angular
-        - id: 21399598
-          name: angular/material
         - id: 24953448
           name: google/material-design-icons
-        - id: 31792824
-          name: flutter/flutter
         - id: 10270250
           name: facebook/react
         - id: 29028775

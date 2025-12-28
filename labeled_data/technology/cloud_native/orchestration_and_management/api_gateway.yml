@@ -4,6 +4,7 @@ data:
   labels:
     - ':companies/ambassadorlabs/emissary_ingress'
     - ':companies/api7/apisix'
+    - ':companies/kong/kong'
   platforms:
     - name: GitHub
       type: Code Hosting
@@ -28,8 +29,6 @@ data:
           name: hango-io/hango-gateway
         - id: 558188628
           name: alibaba/higress
-        - id: 26783295
-          name: Kong/kong
         - id: 72875399
           name: luraproject/lura
         - id: 408727871

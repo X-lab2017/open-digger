@@ -1,0 +1,10 @@
+name: Application Software
+name_zh: 应用软件
+type: Tech-0
+data:
+  labels:
+    - browser
+    - collaboration_and_storage
+    - erp
+    - financial_services
+    - social

@@ -2,6 +2,7 @@ name: Database - Search Engine
 type: Tech-1
 data:
   labels:
+    - ':companies/amazon/opensearch'
     - ':companies/vespa/vespa'
     - ':foundations/apache/lucene'
   platforms:
@@ -16,8 +17,6 @@ data:
           name: marqo-ai/marqo
         - id: 130688011
           name: meilisearch/meilisearch
-        - id: 334274271
-          name: opensearch-project/OpenSearch
         - id: 36992044
           name: sphinxsearch/sphinx
         - id: 79317191

@@ -15,6 +15,7 @@ data:
     - ':companies/vk/tarantool'
     - ':companies/weaviate/weaviate'
     - ':companies/yandex/clickhouse'
+    - ':foundations/trino/trino'
   platforms:
     - name: GitHub
       type: Code Hosting
@@ -51,8 +52,6 @@ data:
           name: pilosa/pilosa
         - id: 927442
           name: postgres/postgres
-        - id: 166515022
-          name: trinodb/trino
         - id: 156018
           name: redis/redis
         - id: 6452529

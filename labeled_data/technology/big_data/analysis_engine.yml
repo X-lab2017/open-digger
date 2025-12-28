@@ -2,6 +2,7 @@ name: Big Data - Analysis Engine
 type: Tech-1
 data:
   labels:
+    - ':companies/amazon/opensearch'
     - ':companies/cnet_networks/solr'
     - ':companies/cratedb/cratedb'
     - ':companies/duckdb/duckdb'
@@ -15,6 +16,7 @@ data:
     - ':companies/tigerdata/timescaledb'
     - ':companies/yandex/clickhouse'
     - ':foundations/apache/lucene'
+    - ':foundations/trino/trino'
     - ':projects/datafusion'
   platforms:
     - name: GitHub
@@ -22,10 +24,6 @@ data:
       repos:
         - id: 17165658
           name: apache/spark
-        - id: 166515022
-          name: trinodb/trino
-        - id: 334274271
-          name: opensearch-project/OpenSearch
         - id: 99919302
           name: apache/doris
         - id: 28738447

@@ -1,6 +1,8 @@
 name: Cloud Native - Platform - PaaS/Container Service
 type: Tech-2
 data:
+  labels:
+    - ':companies/rancher/rancher'
   platforms:
     - name: GitHub
       type: Code Hosting
@@ -21,8 +23,6 @@ data:
           name: Yelp/paasta
         - id: 59239347
           name: portainer/portainer
-        - id: 143456583
-          name: rancher/rio
         - id: 283410102
           name: sogou/workflow
         - id: 3631697
