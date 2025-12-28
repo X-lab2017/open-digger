@@ -1,6 +1,8 @@
 name: Cloud Native - Platform - Certified Kubernetes Installer
 type: Tech-2
 data:
+  labels:
+    - ':companies/rancher/rancher'
   platforms:
     - name: GitHub
       type: Code Hosting
@@ -37,8 +39,6 @@ data:
           name: kubernetes/minikube
         - id: 102576190
           name: puppetlabs/puppetlabs-kubernetes
-        - id: 108337180
-          name: rancher/rke
         - id: 109451092
           name: siderolabs/talos
         - id: 142926510

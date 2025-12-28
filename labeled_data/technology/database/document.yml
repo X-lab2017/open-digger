@@ -5,12 +5,14 @@ data:
     - ':companies/apple/foundationdb'
     - ':companies/chroma/chroma'
     - ':companies/cratedb/cratedb'
+    - ':companies/lancedb/lancedb'
     - ':companies/linkedin/venice'
     - ':companies/meta/prestodb'
     - ':companies/ravendb/ravendb'
     - ':companies/surrealdb/surrealdb'
     - ':companies/vespa/vespa'
     - ':companies/vk/tarantool'
+    - ':companies/yandex/ytsaurus'
     - ':foundations/apache/lucene'
   platforms:
     - name: GitHub
@@ -158,8 +160,6 @@ data:
           name: kagisearch/vectordb
         - id: 1776883
           name: kimchy/compass
-        - id: 607441698
-          name: lancedb/lancedb
         - id: 376679845
           name: losfair/RefineDB
         - id: 9795883
@@ -274,7 +274,5 @@ data:
           name: xtdb/xtdb
         - id: 456549280
           name: ydb-platform/ydb
-        - id: 574588439
-          name: ytsaurus/ytsaurus
         - id: 47479424
           name: zerodb/zerodb

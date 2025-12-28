@@ -6,6 +6,7 @@ data:
     - ':companies/juicedata/juicefs'
     - ':companies/quantum/rook'
     - ':companies/rancher/longhorn'
+    - ':companies/redhat/ceph'
   platforms:
     - name: GitHub
       type: Code Hosting
@@ -14,8 +15,6 @@ data:
           name: alluxio/alluxio
         - id: 397563881
           name: carina-io/carina
-        - id: 2310495
-          name: ceph/ceph
         - id: 91765224
           name: container-storage-interface/spec
         - id: 276365255

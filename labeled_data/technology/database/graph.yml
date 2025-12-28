@@ -4,6 +4,7 @@ data:
   labels:
     - ':companies/neo4j/neo4j'
     - ':companies/surrealdb/surrealdb'
+    - ':foundations/linux_foundation/lfai/janusgraph'
   platforms:
     - name: GitHub
       type: Code Hosting
@@ -16,8 +17,6 @@ data:
           name: DevrexLabs/OrigoDB
         - id: 893031915
           name: HelixDB/helix-db
-        - id: 77385607
-          name: JanusGraph/janusgraph
         - id: 92834468
           name: Pometry/Raphtory
         - id: 45098765

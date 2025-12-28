@@ -1,0 +1,6 @@
+name: Development Tools - Package Managers
+name_zh: 包管理器
+type: Tech-1
+data:
+  labels:
+    - ':projects/homebrew'

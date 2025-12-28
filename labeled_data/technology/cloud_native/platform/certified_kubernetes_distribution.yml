@@ -1,6 +1,10 @@
 name: Cloud Native - Platform - Certified Kubernetes Distribution
 type: Tech-2
 data:
+  labels:
+    - ':companies/flant/deckhouse'
+    - ':companies/rancher/rancher'
+    - ':companies/redhat/openshift'
   platforms:
     - name: GitHub
       type: Code Hosting
@@ -19,8 +23,6 @@ data:
           name: aceeric/desktop-kubernetes
         - id: 296643893
           name: elastisys/ck8s-cluster
-        - id: 215783734
-          name: deckhouse/deckhouse
         - id: 220698719
           name: flexkube/libflexkube
         - id: 235835211
@@ -51,12 +53,6 @@ data:
           name: PaaS-TA/paas-ta-container-platform
         - id: 541402612
           name: alexeadem/qbo-home
-        - id: 26337322
-          name: rancher/rancher
-        - id: 49904068
-          name: openshift/kubernetes
-        - id: 253887459
-          name: rancher/rke2
         - id: 99544448
           name: poseidon/typhoon
         - id: 355946670

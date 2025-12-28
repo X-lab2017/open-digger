@@ -8,6 +8,7 @@ data:
     - ':companies/nirmata/kyverno'
     - ':companies/okta/openfga'
     - ':companies/redhat/keycloak'
+    - ':companies/redhat/stackrox'
     - ':companies/styra/open_policy_agent'
     - ':companies/sysdig/falco'
     - ':universities/nyu/in_toto'

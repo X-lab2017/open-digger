@@ -1,6 +1,7 @@
 import { createReadStream, existsSync, readFileSync } from 'fs';
 import { load } from 'js-yaml';
 import pWaitFor from 'p-wait-for';
+import { createInterface } from 'readline';
 const dateformat = require('dateformat');
 const CsvReadableStream = require('csv-reader');
 
@@ -63,6 +64,28 @@ export async function readCsvArray(path: string, keys: Array<{ name: string, typ
       });
   });
   return res;
+}
+
+export function readline(filePath: string, onLine: (line: string, index: number) => Promise<void>): Promise<void> {
+  return new Promise(async resolve => {
+    if (!existsSync(filePath)) {
+      return resolve();
+    }
+    const fileStream = createReadStream(filePath);
+
+    const rl = createInterface({
+      input: fileStream,
+      crlfDelay: Infinity,
+    });
+
+    let lineCount = 0;
+    for await (const line of rl) {
+      lineCount++;
+      await onLine(line, lineCount);
+    }
+
+    resolve();
+  });
 }
 
 export async function waitFor(mill: number): Promise<void> {

@@ -1,0 +1,8 @@
+name: Application Software - Social
+type: Tech-1
+data:
+  labels:
+    - ':companies/livekit/livekit'
+    - ':companies/mattermost/mattermost'
+    - ':projects/mastodon'
+    - ':companies/bluesky/bluesky'

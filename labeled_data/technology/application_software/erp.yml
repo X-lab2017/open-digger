@@ -1,0 +1,5 @@
+name: Application Software - ERP
+type: Tech-1
+data:
+  labels:
+    - ':companies/odoo/odoo'

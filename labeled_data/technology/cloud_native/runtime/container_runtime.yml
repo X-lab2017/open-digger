@@ -2,6 +2,7 @@ name: Cloud Native - Runtime - Container Runtime
 type: Tech-2
 data:
   labels:
+    - ':companies/amazon/firecracker'
     - ':companies/docker/containerd'
     - ':companies/redhat/cri_o'
     - ':projects/lima'
@@ -9,8 +10,6 @@ data:
     - name: GitHub
       type: Code Hosting
       repos:
-        - id: 107505869
-          name: firecracker-microvm/firecracker
         - id: 131212638
           name: google/gvisor
         - id: 263214582

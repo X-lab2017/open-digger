@@ -12,8 +12,11 @@ data:
     - ':companies/mongodb/wiredtiger'
     - ':companies/ravendb/ravendb'
     - ':companies/redhat/etcd'
+    - ':companies/redis/redis'
     - ':companies/scylladb/scylladb'
     - ':companies/vk/tarantool'
+    - ':companies/yandex/ydb'
+    - ':foundations/linux_foundation/valkey'
   platforms:
     - name: GitHub
       type: Code Hosting
@@ -78,8 +81,6 @@ data:
           name: Treode/store
         - id: 180245584
           name: YosiSF/EinsteinDB
-        - id: 96138741
-          name: YottaDB/YDB
         - id: 124315604
           name: aerospike/aerospike-server
         - id: 116522453
@@ -270,8 +271,6 @@ data:
           name: prologic/bitcask
         - id: 6838921
           name: prometheus/prometheus
-        - id: 156018
-          name: redis/redis
         - id: 441299511
           name: reductstore/reductstore
         - id: 210997817
@@ -348,8 +347,6 @@ data:
           name: topling/toplingdb
         - id: 223895357
           name: tuxmonk/pupdb
-        - id: 775743011
-          name: valkey-io/valkey
         - id: 179588377
           name: vinniefalco/NuDB
         - id: 385356389

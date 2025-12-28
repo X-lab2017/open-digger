@@ -1,10 +1,14 @@
 name: Development Tools
+name_zh: 开发工具
 type: Tech-0
 data:
   labels:
     - build_tools
     - code_quality
     - debugging_tools
+    - deployment_tools
+    - game_engines
     - ide
+    - package_managers
     - testing_tools
     - version_control

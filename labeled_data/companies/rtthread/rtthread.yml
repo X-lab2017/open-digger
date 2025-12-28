@@ -1,0 +1,9 @@
+name: RT-Thread
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 1783729
+          name: RT-Thread
