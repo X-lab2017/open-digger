@@ -367,10 +367,71 @@ yyyymm, created_at FROM
     await client.close();
   };
 
+  const createLabelHierarchyView = async () => {
+    await query(`DROP TABLE IF EXISTS label_hierarchy`);
+    const createViewQuery = `
+CREATE MATERIALIZED VIEW IF NOT EXISTS label_hierarchy
+REFRESH EVERY 1 DAY
+(
+  id String,
+  type LowCardinality(String),
+  name String,
+  name_zh String,
+  parent_id LowCardinality(String),
+  parent_type LowCardinality(String),
+  parent_name String,
+  parent_name_zh String,
+  level UInt8
+)
+ENGINE = MergeTree()
+ORDER BY (id, type)
+POPULATE
+AS
+WITH RECURSIVE project_hierarchy AS (
+    SELECT 
+        id,
+        type,
+        name,
+        name_zh,
+        children,
+        CAST([], 'Array(String)') AS parent_ids,
+        0 AS level
+    FROM labels
+    UNION ALL
+    SELECT 
+        p.id,
+        p.type,
+        p.name,
+        p.name_zh,
+        p.children,
+        arrayConcat(ph.parent_ids, [ph.id]) AS parent_ids,
+        ph.level + 1 AS level
+    FROM labels p
+    JOIN project_hierarchy ph ON has(p.children, ph.id)
+)
+SELECT 
+    p.id AS id,
+    any(p.type) AS type,
+    any(p.name) AS name,
+    any(p.name_zh) AS name_zh,
+    h.id AS parent_id,
+    any(h.type) AS parent_type,
+    any(h.name) AS parent_name,
+    any(h.name_zh) AS parent_name_zh,
+    any(h.level) AS level
+FROM labels p
+JOIN project_hierarchy h ON has(h.parent_ids, p.id) OR h.id = p.id
+WHERE p.id != h.id
+GROUP BY id, parent_id
+`;
+    await query(createViewQuery);
+  };
+
   await createUserView();
   await createNameView();
   await createFlattenLabelView();
   await createPullsWitLabelView();
   await createIssuesWithLabelView();
   await createNormalizedCommunityOpenRankView();
+  await createLabelHierarchyView();
 })();
