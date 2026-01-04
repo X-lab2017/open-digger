@@ -105,12 +105,12 @@ const task: Task = {
             argMax(org_login, created_at) AS org_login,
             actor_id,
             argMax(actor_login, created_at) AS actor_login,
-            ROUND(uniqIf(issue_id, type='IssuesEvent' AND action='opened') * 22.235 +
-              uniqIf(issue_comment_id, type='IssueCommentEvent') * 5.252 +
-              uniqIf(issue_id, type='IssuesEvent' AND action='closed') * 9.712 + 
-              uniqIf(pull_review_comment_id, type='PullRequestReviewCommentEvent') * 7.427 + 
-              uniqIf(issue_id, type='PullRequestEvent' AND action='opened') * 40.679 + 
-              uniqIf(push_id, type='PushEvent') * 14.695, 3) AS activity,
+            ROUND(uniqExactIf(issue_id, type='IssuesEvent' AND action='opened') * 22.235 +
+              uniqExactIf(issue_comment_id, type='IssueCommentEvent') * 5.252 +
+              uniqExactIf(issue_id, type='IssuesEvent' AND action='closed') * 9.712 + 
+              uniqExactIf(pull_review_comment_id, type='PullRequestReviewCommentEvent') * 7.427 + 
+              uniqExactIf(issue_id, type='PullRequestEvent' AND action='opened') * 40.679 + 
+              uniqExactIf(push_id, type='PushEvent') * 14.695, 3) AS activity,
             MAX(created_at) AS max_created_at,
             countIf((type, action) IN (('IssuesEvent', 'opened'), ('IssueCommentEvent', 'created'),
             ('IssuesEvent', 'closed'), ('PullRequestReviewCommentEvent', 'created'),

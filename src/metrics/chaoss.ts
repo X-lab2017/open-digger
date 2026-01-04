@@ -4,7 +4,7 @@ import {
   getGroupArrayInsertAtClause, getGroupTimeClause, getGroupIdClause,
   getInnerOrderAndLimit, getOutterOrderAndLimit,
   QueryConfig, TimeDurationOption, timeDurationConstants, processQueryResult, getTopLevelPlatform, getInnerGroupBy,
-  getWithClause, githubAppBaseTable,
+  getWithClause,
 } from "./basic";
 import * as clickhouse from '../db/clickhouse';
 import { basicActivitySqlComponent } from "./indices";
@@ -150,7 +150,8 @@ FROM
     ${getGroupTimeClause(config)},
     ${getGroupIdClause(config)},
     COUNT(DISTINCT issue_id) AS count
-  FROM ${githubAppBaseTable(whereClauses.join(' AND '))}
+  FROM events
+  WHERE ${whereClauses.join(' AND ')}
   GROUP BY id, platform, time
   ${getInnerOrderAndLimit(config, 'count')}
 )
@@ -183,7 +184,8 @@ FROM
     ${getGroupTimeClause(config)},
     ${getGroupIdClause(config)},
     COUNT(DISTINCT issue_id) AS count
-  FROM ${githubAppBaseTable(whereClauses.join(' AND '))}
+  FROM events
+  WHERE ${whereClauses.join(' AND ')}
   GROUP BY id, platform, time
   ${getInnerOrderAndLimit(config, 'count')}
 )
@@ -215,7 +217,7 @@ FROM
     ${getGroupTimeClause(config)},
     ${getGroupIdClause(config)},
     COUNT(DISTINCT issue_id) AS count
-  FROM ${githubAppBaseTable(whereClauses.join(' AND '))}
+  FROM events
   WHERE ${whereClauses.join(' AND ')}
   GROUP BY id, platform, time
   ${getInnerOrderAndLimit(config, 'count')}
@@ -387,7 +389,7 @@ SELECT
   ${getTopLevelPlatform(config)},
   argMax(name, time),
   ${getGroupArrayInsertAtClause(config, { key: `avg`, defaultValue: 'NaN', positionByEndTime: true })},
-  ${getGroupArrayInsertAtClause(config, { key: 'levels', value: 'if(arrayAll(x -> x = 0, age_levels), [], age_levels)', defaultValue: `[]`, noPrecision: true, positionByEndTime: true })},
+  ${getGroupArrayInsertAtClause(config, { key: 'levels', value: 'if(arrayAll(x -> x = 0, age_levels), [], age_levels)', defaultValue: `[0,0,0,0]`, noPrecision: true, positionByEndTime: true })},
   ${timeDurationConstants.quantileArray.map(q => getGroupArrayInsertAtClause(config, { key: `quantile_${q}`, defaultValue: 'NaN', positionByEndTime: true })).join(',')}
 FROM
 (
@@ -457,7 +459,8 @@ FROM
     ${getGroupTimeClause(config)},
     ${getGroupIdClause(config)},
     COUNT(DISTINCT issue_id) AS count
-  FROM ${githubAppBaseTable(whereClauses.join(' AND '))}
+  FROM events
+  WHERE ${whereClauses.join(' AND ')}
   ${getInnerGroupBy(config)}
   ${getInnerOrderAndLimit(config, 'count')}
 )
@@ -629,7 +632,8 @@ FROM
     ${getGroupTimeClause(config)},
     ${getGroupIdClause(config)},
     COUNT(DISTINCT issue_id) AS count
-  FROM ${githubAppBaseTable(whereClauses.join(' AND '))}
+  FROM events
+  WHERE ${whereClauses.join(' AND ')}
   ${getInnerGroupBy(config)}
   ${getInnerOrderAndLimit(config, 'count')}
 )
@@ -660,7 +664,8 @@ FROM
     ${getGroupTimeClause(config)},
     ${getGroupIdClause(config)},
     COUNT(DISTINCT pull_review_comment_id) AS count
-  FROM ${githubAppBaseTable(whereClauses.join(' AND '))}
+  FROM events
+  WHERE ${whereClauses.join(' AND ')}
   ${getInnerGroupBy(config)}
   ${getInnerOrderAndLimit(config, 'count')}
 )
@@ -828,7 +833,8 @@ ${getWithClause(config)}
       }
     })()},
             created_at
-          FROM ${githubAppBaseTable(whereClauses.join(' AND '))}
+          FROM events
+          WHERE ${whereClauses.join(' AND ')}
           ${(config.options?.withBot && by !== 'commit') ? '' : "HAVING author NOT LIKE '%[bot]'"}
         )
       GROUP BY platform, repo_id, org_id, ${by === 'commit' ? 'author' : 'actor_id'}
@@ -866,7 +872,8 @@ FROM
     ${getGroupIdClause(config)},
     groupArray(DISTINCT(issue_author_login)) AS detail,
     COUNT(DISTINCT issue_author_id) AS count
-  FROM ${githubAppBaseTable(whereClauses.join(' AND '))}
+  FROM events
+  WHERE ${whereClauses.join(' AND ')}
   GROUP BY id, platform, time
   ${getInnerOrderAndLimit(config, 'count')}
 )
