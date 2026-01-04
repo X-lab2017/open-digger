@@ -377,16 +377,3 @@ export const processQueryResult = (result: any, customKeys: string[],
     return obj;
   });
 };
-
-export const githubAppBaseTable = (whereClause: string) => {
-  return `
-  (
-    (SELECT platform, repo_id, repo_name, org_id, org_login, actor_id, actor_login, toString(type) AS type, action, issue_number, issue_id, issue_author_id, issue_author_login, issue_comment_id, pull_review_comment_id, pull_merged, issue_title, body, created_at
-      FROM github_app_repo_data
-      WHERE ${whereClause})
-    UNION ALL
-    (SELECT toString(platform) AS platform, repo_id, repo_name, org_id, org_login, actor_id, actor_login, toString(type) AS type, toString(action) AS action, issue_number, issue_id, issue_author_id, issue_author_login, issue_comment_id, pull_review_comment_id, pull_merged, issue_title, body, created_at
-      FROM events
-      WHERE ${whereClause} AND (platform, repo_id) NOT IN (SELECT platform, repo_id FROM github_app_repo_data)) 
-  )`;
-};

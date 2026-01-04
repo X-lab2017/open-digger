@@ -12,8 +12,7 @@ import {
   processQueryResult,
   getTopLevelPlatform,
   getInnerGroupBy,
-  getWithClause,
-  githubAppBaseTable
+  getWithClause
 } from './basic';
 import * as clickhouse from '../db/clickhouse';
 import { getPlatformData } from '../labelDataUtils';
@@ -271,11 +270,11 @@ ${getOutterOrderAndLimit(config, 'openrank')}
 export const basicActivitySqlComponent = `
     if(type='PullRequestEvent' AND action='closed' AND pull_merged=1, issue_author_id, actor_id) AS actor_id,
     argMax(if(type='PullRequestEvent' AND action='closed' AND pull_merged=1, issue_author_login, actor_login), created_at) AS actor_login,
-    countIf(type='IssueCommentEvent' AND action='created') AS issue_comment,
-    countIf(type='IssuesEvent' AND action='opened')  AS open_issue,
-    countIf(type='PullRequestEvent' AND action='opened') AS open_pull,
-    countIf(type='PullRequestReviewCommentEvent' AND action IN ('created', 'added')) AS review_comment,
-    countIf(type='PullRequestEvent' AND action='closed' AND pull_merged=1) AS merged_pull,
+    uniqExactIf(issue_comment_id, type='IssueCommentEvent' AND action='created') AS issue_comment,
+    uniqExactIf(issue_id, type='IssuesEvent' AND action='opened')  AS open_issue,
+    uniqExactIf(issue_id, type='PullRequestEvent' AND action='opened') AS open_pull,
+    uniqExactIf(pull_review_comment_id, type='PullRequestReviewCommentEvent' AND action IN ('created', 'added')) AS review_comment,
+    uniqExactIf(issue_id, type='PullRequestEvent' AND action='closed' AND pull_merged=1) AS merged_pull,
     sqrt(${ISSUE_COMMENT_WEIGHT}*issue_comment + ${OPEN_ISSUE_WEIGHT}*open_issue + ${OPEN_PULL_WEIGHT}*open_pull + ${REVIEW_COMMENT_WEIGHT}*review_comment + ${PULL_MERGED_WEIGHT}*merged_pull) AS activity
 `;
 
@@ -326,7 +325,8 @@ FROM
       repo_id, argMax(repo_name, created_at) AS repo_name,
       org_id, argMax(org_login, created_at) AS org_login,
       ${basicActivitySqlComponent}
-    FROM ${githubAppBaseTable(whereClauses.join(' AND '))}
+    FROM events
+    WHERE ${whereClauses.join(' AND ')}
     GROUP BY platform, repo_id, org_id, actor_id, month
     HAVING activity > 0
   )
@@ -385,7 +385,8 @@ FROM
       repo_id,
       argMax(repo_name, created_at) AS repo_name,
       ${basicActivitySqlComponent}
-    FROM ${githubAppBaseTable(whereClauses.join(' AND '))}
+    FROM events
+    WHERE ${whereClauses.join(' AND ')}
     GROUP BY platform, repo_id, actor_id, month
     HAVING activity > 0 ${withBot ? '' : `AND actor_login NOT LIKE '%[bot]'`}
   )
