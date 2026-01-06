@@ -1,0 +1,12 @@
+name: Integration
+type: Tech-2
+data:
+  labels:
+    - ':companies/airbnb/airflow'
+    - ':companies/airbyte/airbyte'
+    - ':companies/dagster_labs/dagster'
+    - ':companies/data_chain/data_chain'
+    - ':companies/fivetran/dbt'
+    - ':companies/prefect/prefect'
+    - ':companies/unstructured/unstructured'
+    - ':companies/zipstack/unstract'

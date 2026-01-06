@@ -1,0 +1,9 @@
+name: tensorrt
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 679366051
+          name: NVIDIA/TensorRT-LLM

@@ -81,6 +81,7 @@ data:
   labels:
     - ':companies/cloudwise'
     - ':companies/databend'
+    - ':companies/hpc_ai'
     - SG-01
     - SG-02
     - SG-03

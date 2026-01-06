@@ -1,6 +1,8 @@
 name: Anaconda
 type: Company
 data:
+  labels:
+    - dask
   platforms:
     - name: GitHub
       type: Code Hosting

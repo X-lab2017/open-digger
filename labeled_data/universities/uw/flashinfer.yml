@@ -1,0 +1,9 @@
+name: FlashInfer
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 145061914
+          name: flashinfer-ai

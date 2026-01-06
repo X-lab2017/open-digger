@@ -1,0 +1,28 @@
+name: ChatBot & Knowledge Management
+type: Tech-2
+data:
+  labels: []
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 291438522
+          name: siyuan-note/siyuan
+        - id: 701547123
+          name: open-webui/open-webui
+        - id: 643445235
+          name: lobehub/lobe-chat
+        - id: 649170660
+          name: Mintplex-Labs/anything-llm
+        - id: 826168160
+          name: docling-project/docling
+        - id: 600596928
+          name: danny-avila/LibreChat
+        - id: 575865240
+          name: AstrBotDevs/AstrBot
+        - id: 805155266
+          name: CherryHQ/cherry-studio
+        - id: 612344730
+          name: ChatGPTNextWeb/NextChat
+        - id: 610260322
+          name: chatboxai/chatbox

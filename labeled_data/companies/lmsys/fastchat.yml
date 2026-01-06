@@ -1,0 +1,9 @@
+name: FastChat
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 615882673
+          name: lm-sys/FastChat

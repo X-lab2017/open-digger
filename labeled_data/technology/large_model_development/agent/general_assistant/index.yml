@@ -1,0 +1,14 @@
+name: General Assistant
+type: Tech-2
+data:
+  labels: []
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 949271792
+          name: mindverse/Second-Me
+        - id: 943934999
+          name: FoundationAgents/OpenManus
+        - id: 942114501
+          name: camel-ai/owl

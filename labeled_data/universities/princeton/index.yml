@@ -1,0 +1,12 @@
+name: Princeton University
+name_zh: 普林斯顿大学
+type: University-0
+data:
+  labels:
+    - dao_ai_lab
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 1919273
+          name: princetonuniversity

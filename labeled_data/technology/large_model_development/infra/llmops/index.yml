@@ -1,0 +1,15 @@
+name: LLMOps
+type: Tech-2
+data:
+  labels:
+    - ':companies/arize/phoenix'
+    - ':companies/comet_ml/opik'
+    - ':companies/coreweave/wandb'
+    - ':companies/dagger/dagger'
+    - ':companies/databricks/mlflow'
+    - ':companies/fit2cloud/1panel'
+    - ':companies/langfuse/langfuse'
+    - ':companies/lmsys/fastchat'
+    - ':companies/mckinsey/mlrun'
+    - ':companies/promptfoo/promptfoo'
+    - ':institutions/sh_ai_lab/opencompass'

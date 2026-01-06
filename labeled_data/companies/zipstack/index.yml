@@ -1,0 +1,11 @@
+name: Zipstack
+type: Company
+data:
+  labels:
+    - unstract
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 89070934
+          name: Zipstack

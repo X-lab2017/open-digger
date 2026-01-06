@@ -1,0 +1,9 @@
+name: DataChain
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 211070623
+          name: datachain-ai

@@ -1,0 +1,9 @@
+name: Mooncake
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 819733173
+          name: kvcache-ai/Mooncake

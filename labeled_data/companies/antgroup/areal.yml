@@ -1,0 +1,9 @@
+name: AReal
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 937952934
+          name: inclusionAI/AReaL

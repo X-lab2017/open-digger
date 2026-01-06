@@ -1,0 +1,9 @@
+name: ms-swift
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 673412924
+          name: modelscope/ms-swift

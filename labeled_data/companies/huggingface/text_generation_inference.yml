@@ -1,0 +1,9 @@
+name: Text Generation Inference
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 547806116
+          name: huggingface/text-generation-inference

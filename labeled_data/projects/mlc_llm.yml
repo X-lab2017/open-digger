@@ -1,0 +1,9 @@
+name: MLC LLM
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 634081686
+          name: mlc-ai/mlc-llm

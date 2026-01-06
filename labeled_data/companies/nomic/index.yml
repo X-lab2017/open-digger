@@ -1,0 +1,11 @@
+name: Nomic
+type: Company
+data:
+  labels:
+    - gpt4all
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 102670180
+          name: nomic-ai

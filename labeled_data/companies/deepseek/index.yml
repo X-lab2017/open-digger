@@ -2,6 +2,8 @@ name: DeepSeek
 name_zh: 深度求索
 type: Company
 data:
+  labels:
+    - deepep
   platforms:
     - name: GitHub
       type: Code Hosting

@@ -9,7 +9,13 @@ const labelInputPath = path.join(__dirname, labelInputDir);
 
 const checkKeysAndTypes = {
   labelTypes: new Set<string>([
-    'Division-0', 'Division-1', 'Region-0', 'Region-1', 'Company', 'Community', 'Project', 'Foundation', 'University-0', 'Agency-0', 'Institution', 'Tech-0', 'Tech-1', 'Tech-2', 'Tech-3', 'Domain-0', 'Bot'
+    'Division-0', 'Division-1',
+    'Company', 'Community', 'Project', 'Foundation',
+    'University-0', 'University-1',
+    'Agency-0', 'Agency-1',
+    'Institution-0', 'Institution-1',
+    'Tech-0', 'Tech-1', 'Tech-2', 'Tech-3', 'Domain-0',
+    'Bot'
   ]),
   labelKeys: new Set<string>([
     'labels', 'platforms'

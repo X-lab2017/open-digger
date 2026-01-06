@@ -1,0 +1,9 @@
+name: FlashAttention
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 494232964
+          name: Dao-AILab/flash-attention

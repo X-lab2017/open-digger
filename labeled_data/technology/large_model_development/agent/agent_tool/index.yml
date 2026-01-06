@@ -1,0 +1,32 @@
+name: Agent Tool
+type: Tech-2
+data:
+  labels: []
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 954873280
+          name: google/A2A
+        - id: 589831718
+          name: comfyanonymous/ComfyUI
+        - id: 214587193
+          name: supabase/supabase
+        - id: 890668799
+          name: modelcontextprotocol/servers
+        - id: 656099147
+          name: mem0ai/mem0
+        - id: 881458615
+          name: browser-use/browser-use
+        - id: 958830659
+          name: google/adk-python
+        - id: 644461337
+          name: vercel/ai
+        - id: 671269505
+          name: BerriAI/litellm
+        - id: 860252770
+          name: microsoft/OmniParser
+        - id: 762304524
+          name: ComposioHQ/composio
+        - id: 631254164
+          name: songquanpeng/one-api

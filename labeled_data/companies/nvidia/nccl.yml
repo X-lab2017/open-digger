@@ -1,0 +1,9 @@
+name: NCCL
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 46153892
+          name: NVIDIA/nccl

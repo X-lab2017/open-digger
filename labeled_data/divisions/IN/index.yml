@@ -84,6 +84,7 @@ data:
     - ':companies/moving_tech_innovations'
     - ':companies/nammayatri'
     - ':companies/parseable'
+    - ':companies/zipstack'
     - ':foundations/girlscript'
     - IN-AN
     - IN-AP

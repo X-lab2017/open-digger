@@ -1,0 +1,9 @@
+name: cuDF
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 90506918
+          name: rapidsai/cudf

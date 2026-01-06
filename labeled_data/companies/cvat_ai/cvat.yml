@@ -1,0 +1,9 @@
+name: CVAT
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 105363648
+          name: cvat-ai

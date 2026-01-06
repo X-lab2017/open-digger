@@ -1,0 +1,11 @@
+name: Comet ML
+type: Company
+data:
+  labels:
+    - opik
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 31487821
+          name: comet-ml

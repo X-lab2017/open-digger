@@ -1,0 +1,9 @@
+name: Triton
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 169110177
+          name: triton-lang

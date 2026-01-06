@@ -1,0 +1,9 @@
+name: GPT4All
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 619959033
+          name: nomic-ai/gpt4all

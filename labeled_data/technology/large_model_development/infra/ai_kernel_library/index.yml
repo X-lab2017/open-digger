@@ -1,0 +1,12 @@
+name: AI Kernel Library
+type: Tech-2
+data:
+  labels:
+    - ':companies/apple/mlx'
+    - ':companies/deepseek/deepep'
+    - ':companies/nvidia/cudf'
+    - ':companies/nvidia/cutlass'
+    - ':companies/nvidia/nccl'
+    - ':companies/nvidia/transformer_engine'
+    - ':universities/princeton/dao_ai_lab/flash_attention'
+    - ':universities/uw/flashinfer'

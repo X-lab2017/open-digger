@@ -8,6 +8,7 @@ data:
     - cloudwego
     - lark
     - oceanengine
+    - verl
     - volcengine
   platforms:
     - name: GitHub

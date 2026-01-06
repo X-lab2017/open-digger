@@ -1,0 +1,9 @@
+name: Streamlit
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 45109972
+          name: streamlit

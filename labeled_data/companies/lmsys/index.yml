@@ -1,0 +1,11 @@
+name: LMSYS
+type: Company
+data:
+  labels:
+    - fastchat
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 126381704
+          name: lm-sys

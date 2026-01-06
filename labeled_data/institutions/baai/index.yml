@@ -1,7 +1,7 @@
 name: Beijing Academy of Artificial Intelligence
-type: Institution
+name_zh: 智源研究院
+type: Institution-0
 meta:
-  name_zh: 智源研究院
   name_zh_full: 北京智源人工智能研究院
 data:
   platforms:

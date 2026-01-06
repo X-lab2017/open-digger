@@ -1,0 +1,9 @@
+name: GPUStack
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 169020824
+          name: gpustack

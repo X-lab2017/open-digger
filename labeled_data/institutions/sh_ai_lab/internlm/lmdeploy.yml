@@ -1,0 +1,9 @@
+name: LMDeploy
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 654122609
+          name: InternLM/lmdeploy

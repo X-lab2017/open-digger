@@ -99,7 +99,7 @@ LEFT JOIN
     province_matched.id AS province_id,
     COALESCE(province_matched.name, '') AS province,
     COALESCE(province_matched.name_zh, '') AS province_zh,
-    li.administrative_area_level_2 AS city
+    if(li.country IN ['Macao', 'Hong Kong', 'Taiwan', 'Hong Kong SAR', 'Macao SAR'], li.administrative_area_level_1, li.administrative_area_level_2) AS city
   FROM location_info li
   LEFT JOIN country_labels country_matched ON country_matched.includes_lower = lower(original_country)
   LEFT JOIN province_labels province_matched ON province_matched.parent_country_id = country_matched.id AND original_province !='' AND province_matched.includes_lower = lower(original_province)

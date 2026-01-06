@@ -1,0 +1,14 @@
+name: Client Interface
+type: Tech-2
+data:
+  labels: []
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 599524116
+          name: SillyTavern/SillyTavern
+        - id: 580642043
+          name: oobabooga/text-generation-webui
+        - id: 527591471
+          name: AUTOMATIC1111/stable-diffusion-webui

@@ -1,0 +1,11 @@
+name: farama
+type: Foundation
+data:
+  labels:
+    - gymnasium
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 62961550
+          name: Farama-Foundation

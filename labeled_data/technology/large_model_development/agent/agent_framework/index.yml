@@ -1,0 +1,42 @@
+name: Agent Framework
+type: Tech-2
+data:
+  labels: []
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 680120071
+          name: microsoft/autogen
+        - id: 710601088
+          name: crewAIInc/crewAI
+        - id: 946380199
+          name: openai/openai-agents-python
+        - id: 615510678
+          name: camel-ai/camel
+        - id: 488641606
+          name: agno-agi/agno
+        - id: 660551251
+          name: FoundationAgents/MetaGPT
+        - id: 826170402
+          name: elizaOS/eliza
+        - id: 552661142
+          name: langchain-ai/langchain
+        - id: 560704231
+          name: run-llama/llama_index
+        - id: 607289185
+          name: microsoft/semantic-kernel
+        - id: 676672661
+          name: langchain-ai/langgraph
+        - id: 736272311
+          name: pipecat-ai/pipecat
+        - id: 818331198
+          name: pydantic/pydantic-ai
+        - id: 659402878
+          name: spring-projects/spring-ai
+        - id: 707441527
+          name: livekit/agents
+        - id: 778431525
+          name: microsoft/graphrag
+        - id: 703411624
+          name: letta-ai/letta

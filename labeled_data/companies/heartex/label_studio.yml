@@ -1,0 +1,43 @@
+name: Label Studio
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 192640529
+          name: HumanSignal/label-studio
+        - id: 423601686
+          name: HumanSignal/label-studio-sdk
+        - id: 804340207
+          name: HumanSignal/label-studio-client-generator
+        - id: 252506212
+          name: HumanSignal/label-studio-ml-backend
+        - id: 678191678
+          name: HumanSignal/label-studio-examples
+        - id: 862493872
+          name: HumanSignal/label-studio-plugins
+        - id: 972738009
+          name: HumanSignal/label-studio-mcp-server
+        - id: 221198400
+          name: HumanSignal/label-studio-evalme
+        - id: 219014916
+          name: HumanSignal/label-studio-converter
+        - id: 516041205
+          name: HumanSignal/label-studio-terraform
+        - id: 232572945
+          name: HumanSignal/label-studio-frontend
+        - id: 227385228
+          name: HumanSignal/label-studio-transformers
+        - id: 644150943
+          name: HumanSignal/label-studio-ml-tutorial
+        - id: 221033869
+          name: HumanSignal/label-studio-addon-pdf
+        - id: 221006018
+          name: HumanSignal/label-studio-addon-dicom
+        - id: 1076457839
+          name: HumanSignal/awesome-label-studio-tutorials
+        - id: 917974760
+          name: HumanSignal/awesome-label-studio-configs
+        - id: 427356504
+          name: HumanSignal/label-studio-tools

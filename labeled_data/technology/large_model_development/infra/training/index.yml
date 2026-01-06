@@ -1,0 +1,20 @@
+name: Training
+type: Tech-2
+data:
+  labels:
+    - ':companies/alibaba/ms_swift'
+    - ':companies/antgroup/areal'
+    - ':companies/baidu/paddle'
+    - ':companies/bytedance/verl'
+    - ':companies/google/jax'
+    - ':companies/google/keras'
+    - ':companies/google/tensorflow'
+    - ':companies/hpc_ai/colossalai'
+    - ':companies/meta/pytorch'
+    - ':companies/microsoft/deepspeed'
+    - ':companies/nvidia/megatron'
+    - ':companies/nvidia/nemo'
+    - ':companies/unsloth_ai/unsloth'
+    - ':foundations/farama/gymnasium'
+    - ':projects/llama_factory'
+    - ':projects/openrlhf'

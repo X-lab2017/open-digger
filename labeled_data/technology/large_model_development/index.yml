@@ -1,0 +1,8 @@
+name: Large Model Development
+name_zh: 大模型开发
+type: Tech-0
+data:
+  labels:
+    - agent
+    - data
+    - infra

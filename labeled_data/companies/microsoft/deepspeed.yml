@@ -1,0 +1,9 @@
+name: DeepSpeed
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 74068820
+          name: deepspeedai

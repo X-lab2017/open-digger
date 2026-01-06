@@ -1,0 +1,10 @@
+name: OpenCompass
+name_zh: 思南评测体系
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 143521324
+          name: open-compass

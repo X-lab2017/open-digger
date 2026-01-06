@@ -3,7 +3,9 @@ type: Company
 data:
   labels:
     - delta_lake
+    - mlflow
     - neon
+    - unity_catalog
   platforms:
     - name: GitHub
       type: Code Hosting

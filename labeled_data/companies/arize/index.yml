@@ -1,0 +1,11 @@
+name: Arize AI
+type: Company
+data:
+  labels:
+    - phoenix
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 59858760
+          name: Arize-ai

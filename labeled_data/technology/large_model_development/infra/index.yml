@@ -1,0 +1,11 @@
+name: Large Model Development - Infra
+name_zh: 基础设施
+type: Tech-1
+data:
+  labels:
+    - ai_compiler
+    - ai_kernel_library
+    - distributed_compute
+    - llmops
+    - serving
+    - training

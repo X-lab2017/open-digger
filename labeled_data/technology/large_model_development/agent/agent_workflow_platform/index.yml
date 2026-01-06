@@ -1,0 +1,34 @@
+name: Agent Workflow Platform
+type: Tech-2
+data:
+  labels: []
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 599320067
+          name: langflow-ai/langflow
+        - id: 605673387
+          name: labring/FastGPT
+        - id: 621803253
+          name: FlowiseAI/Flowise
+        - id: 691347156
+          name: 1Panel-dev/MaxKB
+        - id: 573661753
+          name: activepieces/activepieces
+        - id: 626805178
+          name: langgenius/dify
+        - id: 730534580
+          name: infiniflow/ragflow
+        - id: 839037098
+          name: mastra-ai/mastra
+        - id: 193215554
+          name: n8n-io/n8n
+        - id: 627480054
+          name: eosphoros-ai/DB-GPT
+        - id: 621799276
+          name: chatchat-space/Langchain-Chatchat
+        - id: 614765452
+          name: Significant-Gravitas/AutoGPT
+        - id: 221654678
+          name: deepset-ai/haystack

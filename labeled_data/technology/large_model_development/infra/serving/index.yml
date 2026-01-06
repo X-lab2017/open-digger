@@ -1,0 +1,24 @@
+name: Serving
+type: Tech-2
+data:
+  labels:
+    - ':companies/bentoml/bentoml'
+    - ':companies/ggml.ai/llama.cpp'
+    - ':companies/gpustack/gpustack'
+    - ':companies/huggingface/text_generation_inference'
+    - ':companies/intel/openvino'
+    - ':companies/microsoft/onnxruntime'
+    - ':companies/nomic/gpt4all'
+    - ':companies/nvidia/dynamo'
+    - ':companies/nvidia/tensorrt'
+    - ':companies/nvidia/triton'
+    - ':companies/redhat/ramalama'
+    - ':companies/xorbits/xinference'
+    - ':foundations/linux_foundation/lfai/kserve'
+    - ':institutions/sh_ai_lab/internlm/lmdeploy'
+    - ':projects/mlc_llm'
+    - ':projects/ollama'
+    - ':projects/vllm'
+    - ':universities/thu/kvcache/ktransformers'
+    - ':universities/thu/kvcache/mooncake'
+    - ':universities/uc_berkeley/sglang'

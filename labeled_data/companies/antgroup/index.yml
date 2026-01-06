@@ -13,6 +13,7 @@ data:
     - antd
     - antv
     - aq-medai
+    - areal
     - asterinas
     - ceresdb
     - cnpm

@@ -1,0 +1,9 @@
+name: LLaMA-Factory
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 646410686
+          name: hiyouga/LLaMA-Factory
