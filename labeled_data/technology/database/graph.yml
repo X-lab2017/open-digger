@@ -17,6 +17,8 @@ data:
           name: DevrexLabs/OrigoDB
         - id: 893031915
           name: HelixDB/helix-db
+        - id: 1071734040
+          name: LadybugDB/ladybug
         - id: 92834468
           name: Pometry/Raphtory
         - id: 45098765
@@ -79,6 +81,8 @@ data:
           name: microsoft/GraphEngine
         - id: 7083240
           name: orientechnologies/orientdb
+        - id: 1075506724
+          name: orneryd/Mimir
         - id: 26917250
           name: pkumod/gStore
         - id: 166387176
