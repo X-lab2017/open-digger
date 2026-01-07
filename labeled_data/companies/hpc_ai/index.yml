@@ -1,0 +1,11 @@
+name: HPC-AI
+type: Company
+data:
+  labels:
+    - colossalai
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 88699314
+          name: hpcaitech

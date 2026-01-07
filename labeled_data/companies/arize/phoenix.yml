@@ -1,0 +1,9 @@
+name: Phoenix
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 564072810
+          name: Arize-ai/phoenix

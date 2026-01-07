@@ -1,0 +1,9 @@
+name: MLRun
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 54775696
+          name: mlrun

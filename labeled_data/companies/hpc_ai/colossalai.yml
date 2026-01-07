@@ -1,0 +1,9 @@
+name: Colossal-AI
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 422274596
+          name: hpcaitech/ColossalAI

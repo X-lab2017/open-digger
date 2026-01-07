@@ -1,0 +1,36 @@
+name: AI Coding
+type: Tech-2
+data:
+  labels: []
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 965415649
+          name: openai/codex
+        - id: 644686905
+          name: continuedev/continue
+        - id: 842586148
+          name: yetone/avante.nvim
+        - id: 771302083
+          name: All-Hands-AI/OpenHands
+        - id: 678526156
+          name: marimo-team/marimo
+        - id: 846698999
+          name: block/goose
+        - id: 824874689
+          name: cline/cline
+        - id: 975734319
+          name: sst/opencode
+        - id: 968197216
+          name: google-gemini/gemini-cli
+        - id: 862449441
+          name: stackblitz/bolt.new
+        - id: 664592117
+          name: sourcegraph/cody
+        - id: 662766482
+          name: qodo-ai/pr-agent
+        - id: 638629097
+          name: Aider-AI/aider
+        - id: 614764248
+          name: TabbyML/tabby

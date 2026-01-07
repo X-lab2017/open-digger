@@ -1,0 +1,5 @@
+name: CVAT.ai
+type: Company
+data:
+  labels:
+    - cvat

@@ -1,0 +1,11 @@
+name: McKinsey & Company
+type: Company
+data:
+  labels:
+    - mlrun
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 4265350
+          name: mckinsey

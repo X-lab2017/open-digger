@@ -1,0 +1,11 @@
+name: CoreWeave
+type: Company
+data:
+  labels:
+    - wandb
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 50837895
+          name: coreweave

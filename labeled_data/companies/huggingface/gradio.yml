@@ -1,0 +1,9 @@
+name: Gradio
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 51063788
+          name: gradio-app

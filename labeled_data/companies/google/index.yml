@@ -14,9 +14,12 @@ data:
     - grpc
     - helm
     - istio
+    - jax
+    - keras
     - knative
     - kubeflow
     - opentelemetry
+    - openxla
     - tensorflow
     - vitess
   platforms:

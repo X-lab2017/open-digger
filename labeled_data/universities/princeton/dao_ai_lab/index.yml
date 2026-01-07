@@ -1,0 +1,11 @@
+name: Prof. Tri Dao AI Lab
+type: University-1
+data:
+  labels:
+    - flash_attention
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 139507659
+          name: Dao-AILab

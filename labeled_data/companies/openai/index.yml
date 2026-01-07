@@ -1,6 +1,8 @@
 name: OpenAI
 type: Company
 data:
+  labels:
+    - triton
   platforms:
     - name: GitHub
       type: Code Hosting

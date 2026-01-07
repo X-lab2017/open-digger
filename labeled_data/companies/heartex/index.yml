@@ -1,0 +1,11 @@
+name: Heartex
+type: Company
+data:
+  labels:
+    - label_studio
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 48309720
+          name: HumanSignal

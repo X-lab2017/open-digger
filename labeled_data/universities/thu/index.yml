@@ -1,0 +1,12 @@
+name: Tsinghua University
+name_zh: 清华大学
+type: University-0
+data:
+  labels:
+    - kvcache
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 23359141
+          name: thuml

@@ -84,6 +84,7 @@ data:
     - ':companies/explosionai'
     - ':companies/formbricks'
     - ':companies/jina_ai'
+    - ':companies/langfuse'
     - ':companies/n8n'
     - ':companies/nextcloud'
     - ':companies/qdrant'

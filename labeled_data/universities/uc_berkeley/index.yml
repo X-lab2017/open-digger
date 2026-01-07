@@ -1,0 +1,12 @@
+name: University of California Berkeley
+name_zh: 加州大学伯克利分校
+type: University-0
+data:
+  labels:
+    - sglang
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 740287
+          name: ucberkeley

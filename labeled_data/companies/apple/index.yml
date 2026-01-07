@@ -3,6 +3,7 @@ type: Company
 data:
   labels:
     - foundationdb
+    - mlx
     - swift
   platforms:
     - name: GitHub

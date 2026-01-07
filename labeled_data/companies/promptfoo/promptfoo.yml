@@ -1,0 +1,9 @@
+name: Promptfoo
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 137907881
+          name: promptfoo

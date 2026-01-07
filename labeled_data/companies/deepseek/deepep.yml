@@ -1,0 +1,9 @@
+name: DeepEP
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 933928679
+          name: deepseek-ai/DeepEP

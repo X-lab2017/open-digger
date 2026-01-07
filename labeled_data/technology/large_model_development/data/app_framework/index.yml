@@ -1,0 +1,6 @@
+name: App Framework
+type: Tech-2
+data:
+  labels:
+    - ':companies/huggingface/gradio'
+    - ':companies/snowflake/streamlit'

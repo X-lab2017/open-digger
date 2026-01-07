@@ -1,0 +1,7 @@
+name: Shanghai Artificial Intelligence Laboratory
+name_zh: 上海人工智能实验室
+type: Institution-0
+data:
+  labels:
+    - internlm
+    - opencompass

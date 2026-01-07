@@ -1,0 +1,9 @@
+name: Xinference
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 653496050
+          name: xorbitsai/inference

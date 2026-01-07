@@ -1,0 +1,12 @@
+name: InternLM
+name_zh: 书生大模型
+type: Institution-1
+data:
+  labels:
+    - lmdeploy
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 135356492
+          name: InternLM

@@ -1,0 +1,5 @@
+name: Unstructured
+type: Company
+data:
+  labels:
+    - unstructured

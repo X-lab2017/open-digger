@@ -1,0 +1,11 @@
+name: Xorbits AI
+type: Company
+data:
+  labels:
+    - xinference
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 109655068
+          name: xorbitsai

@@ -12,6 +12,7 @@ data:
     - metal3
     - openshift
     - operator_framework
+    - ramalama
     - stackrox
     - strimzi
   platforms:
@@ -20,3 +21,5 @@ data:
       orgs:
         - id: 33972111
           name: RedHatOfficial
+        - id: 5874934
+          name: containers

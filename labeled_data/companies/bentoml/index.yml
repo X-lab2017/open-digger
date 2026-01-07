@@ -1,0 +1,5 @@
+name: BentoML
+type: Company
+data:
+  labels:
+    - bentoml

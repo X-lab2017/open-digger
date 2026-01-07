@@ -1,0 +1,9 @@
+name: Moonshot AI
+type: Company
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 129152888
+          name: moonshotai

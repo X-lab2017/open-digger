@@ -1,0 +1,12 @@
+name: Embodied Agent
+type: Tech-2
+data:
+  labels: []
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 712225112
+          name: Genesis-Embodied-AI/Genesis
+        - id: 850267588
+          name: 78/xiaozhi-esp32

@@ -12,3 +12,5 @@ meta:
     - shanghai
     - 上海市
   category: MUNICIPALITY
+  labels:
+    - ':institutions/sh_ai_lab'

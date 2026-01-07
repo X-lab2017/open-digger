@@ -3,6 +3,7 @@ name_zh: 华盛顿大学
 type: University-0
 data:
   labels:
+    - flashinfer
     - the_update_framework
   platforms:
     - name: GitHub

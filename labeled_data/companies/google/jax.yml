@@ -1,0 +1,9 @@
+name: JAX
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 58486408
+          name: jax-ml

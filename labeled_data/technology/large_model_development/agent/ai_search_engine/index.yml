@@ -1,0 +1,14 @@
+name: AI Search Engine
+type: Tech-2
+data:
+  labels: []
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 839372398
+          name: zaidmukaddam/scira
+        - id: 784181462
+          name: ItzCrazyKns/Perplexica
+        - id: 357241735
+          name: searxng/searxng

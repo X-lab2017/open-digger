@@ -1,0 +1,15 @@
+name: Opik
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 638951438
+          name: comet-ml/opik
+        - id: 1107049003
+          name: comet-ml/opik-springai-demo
+        - id: 946763772
+          name: comet-ml/opik-mcp
+        - id: 1095674064
+          name: comet-ml/opik-video-datasets

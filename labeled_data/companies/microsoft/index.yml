@@ -4,6 +4,7 @@ data:
   labels:
     - azure
     - dapr
+    - deepspeed
     - dotnet
     - fluentui
     - fluid_framework

@@ -1,0 +1,12 @@
+name: Governance
+type: Tech-2
+data:
+  labels:
+    - ':companies/alibaba/paimon'
+    - ':companies/databricks/delta_lake'
+    - ':companies/databricks/unity_catalog'
+    - ':companies/datastrato/gravitino'
+    - ':companies/linkedin/datahub'
+    - ':companies/netflix/iceberg'
+    - ':companies/uber/hudi'
+    - ':companies/uber/openmetadata'

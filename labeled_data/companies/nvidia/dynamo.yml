@@ -1,0 +1,9 @@
+name: Dynamo
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 201626793
+          name: ai-dynamo

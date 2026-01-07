@@ -1,0 +1,9 @@
+name: Weights & Biases
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 26401354
+          name: wandb

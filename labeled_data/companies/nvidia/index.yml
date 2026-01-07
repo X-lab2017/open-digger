@@ -2,7 +2,15 @@ name: NVIDIA
 type: Company
 data:
   labels:
+    - cudf
+    - cutlass
+    - dynamo
+    - megatron
+    - nccl
     - nemo
+    - tensorrt
+    - transformer_engine
+    - triton
   platforms:
     - name: GitHub
       type: Code Hosting
@@ -13,3 +21,5 @@ data:
           name: NVIDIAGameWorks
         - id: 2695301
           name: NVlabs
+        - id: 43887749
+          name: rapidsai

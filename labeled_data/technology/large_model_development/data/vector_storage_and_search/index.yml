@@ -1,0 +1,12 @@
+name: Vector Storage & Search
+type: Tech-2
+data:
+  labels:
+    - ':companies/amazon/opensearch'
+    - ':companies/chroma/chroma'
+    - ':companies/elastic/elasticsearch'
+    - ':companies/lancedb/lancedb'
+    - ':companies/qdrant/qdrant'
+    - ':companies/weaviate/weaviate'
+    - ':companies/zilliz/milvus'
+    - ':projects/pgvector'

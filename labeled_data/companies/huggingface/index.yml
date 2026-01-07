@@ -2,6 +2,8 @@ name: Hugging Face
 type: Company
 data:
   labels:
+    - gradio
+    - text_generation_inference
     - transformers
   platforms:
     - name: GitHub

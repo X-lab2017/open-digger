@@ -1,0 +1,10 @@
+name: Large Model Development - Data
+name_zh: 数据
+type: Tech-1
+data:
+  labels:
+    - app_framework
+    - governance
+    - integration
+    - labeling
+    - vector_storage_and_search

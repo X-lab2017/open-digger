@@ -3,6 +3,7 @@ type: Company
 data:
   labels:
     - polaris
+    - streamlit
   platforms:
     - name: GitHub
       type: Code Hosting

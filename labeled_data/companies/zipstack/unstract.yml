@@ -1,0 +1,19 @@
+name: Unstract
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 761150311
+          name: Zipstack/unstract
+        - id: 818240010
+          name: Zipstack/unstract-python-client
+        - id: 760448105
+          name: Zipstack/unstract-sdk
+        - id: 871259235
+          name: Zipstack/unstract-api-deployments-batch-run
+        - id: 758806157
+          name: Zipstack/unstract-adapters
+        - id: 758812304
+          name: Zipstack/unstract-connectors

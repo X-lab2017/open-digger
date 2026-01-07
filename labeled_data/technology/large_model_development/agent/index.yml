@@ -1,0 +1,14 @@
+name: Large Model Development - Agent
+name_zh: 智能体
+type: Tech-1
+data:
+  labels:
+    - agent_framework
+    - agent_tool
+    - agent_workflow_platform
+    - ai_coding
+    - ai_search_engine
+    - chatbot_knowledge_management
+    - client_interface
+    - embodied_agent
+    - general_assistant

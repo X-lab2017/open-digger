@@ -1,0 +1,7 @@
+name: AI Compiler
+type: Tech-2
+data:
+  labels:
+    - ':companies/google/openxla'
+    - ':companies/modular/modular'
+    - ':companies/openai/triton'
