@@ -79,6 +79,7 @@ meta:
       count: 6528548
 data:
   labels:
+    - ':universities/puc_rio'
     - BR-AC
     - BR-AL
     - BR-AM

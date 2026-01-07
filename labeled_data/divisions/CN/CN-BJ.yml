@@ -12,5 +12,6 @@ meta:
     - beijing
     - 北京市
   category: MUNICIPALITY
+data:
   labels:
     - ':universities/thu'
