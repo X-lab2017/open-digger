@@ -19,24 +19,24 @@
       "id": "29268051",
       "name": "google/material-design-lite",
       "attention": [
-        "23626",
-        "14254"
+        "23257",
+        "13974"
       ]
     },
     {
       "id": "23357588",
       "name": "google/protobuf",
       "attention": [
-        "9479",
-        "13401"
+        "9304",
+        "13129"
       ]
     },
     {
       "id": "20300177",
       "name": "google/guava",
       "attention": [
-        "8818",
-        "11971"
+        "8662",
+        "11741"
       ]
     }
   ]

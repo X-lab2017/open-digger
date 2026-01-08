@@ -45,5 +45,6 @@ import { query, insertRecords, getNewClient } from "../db/clickhouse";
   // Manually refresh the flatten_labels view
   const client = await getNewClient();
   await client.command({ query: 'SYSTEM REFRESH VIEW flatten_labels;' });
+  await client.command({ query: 'SYSTEM REFRESH VIEW label_hierarchy;' });
   await client.close();
 })();

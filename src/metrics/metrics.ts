@@ -12,13 +12,14 @@ import {
   processQueryResult,
   getTopLevelPlatform,
   getInnerGroupBy,
-  getWithClause
+  getWithClause,
+  getLabelJoinClause
 } from "./basic";
 import * as clickhouse from '../db/clickhouse';
 
 export const repoStars = async (config: QueryConfig) => {
   config = getMergedConfig(config);
-  const whereClauses: string[] = ["type = 'WatchEvent'"];
+  const whereClauses: string[] = ["events.type = 'WatchEvent'"];
   const repoWhereClause = await getRepoWhereClause(config);
   if (repoWhereClause) whereClauses.push(repoWhereClause);
   whereClauses.push(getTimeRangeWhereClause(config));
@@ -35,8 +36,9 @@ FROM
   SELECT
     ${getGroupTimeClause(config)},
     ${getGroupIdClause(config)},
-    COUNT() AS count
+    COUNT(DISTINCT events.actor_id) AS count
   FROM events
+  ${getLabelJoinClause(config)}
   WHERE ${whereClauses.join(' AND ')}
   ${getInnerGroupBy(config)}
   ${getInnerOrderAndLimit(config, 'count')}
@@ -50,7 +52,7 @@ ${getOutterOrderAndLimit(config, 'count')}`;
 
 export const repoIssueComments = async (config: QueryConfig) => {
   config = getMergedConfig(config);
-  const whereClauses: string[] = ["type = 'IssueCommentEvent' AND action = 'created'"];
+  const whereClauses: string[] = ["events.type = 'IssueCommentEvent' AND events.action = 'created'"];
   const repoWhereClause = await getRepoWhereClause(config);
   if (repoWhereClause) whereClauses.push(repoWhereClause);
   whereClauses.push(getTimeRangeWhereClause(config));
@@ -69,6 +71,7 @@ FROM
     ${getGroupIdClause(config)},
     COUNT() AS count
   FROM events
+  ${getLabelJoinClause(config)}
   WHERE ${whereClauses.join(' AND ')}
   ${getInnerGroupBy(config)}
   ${getInnerOrderAndLimit(config, 'count')}
@@ -99,8 +102,9 @@ FROM
   SELECT
     ${getGroupTimeClause(config)},
     ${getGroupIdClause(config)},
-    COUNT(DISTINCT repo_id) AS count
+    COUNT(DISTINCT events.repo_id) AS count
   FROM events
+  ${getLabelJoinClause(config)}
   WHERE ${whereClauses.join(' AND ')}
   ${getInnerGroupBy(config)}
   ${getInnerOrderAndLimit(config, 'count')}
@@ -114,7 +118,7 @@ ${getOutterOrderAndLimit(config, 'count')}`;
 
 export const repoParticipants = async (config: QueryConfig) => {
   config = getMergedConfig(config);
-  const whereClauses: string[] = ["type IN ('IssuesEvent', 'IssueCommentEvent', 'PullRequestEvent', 'PullRequestReviewCommentEvent')"];
+  const whereClauses: string[] = ["events.type IN ('IssuesEvent', 'IssueCommentEvent', 'PullRequestEvent', 'PullRequestReviewCommentEvent')"];
   const repoWhereClause = await getRepoWhereClause(config);
   if (repoWhereClause) whereClauses.push(repoWhereClause);
   whereClauses.push(getTimeRangeWhereClause(config));
@@ -131,8 +135,9 @@ FROM
   SELECT
     ${getGroupTimeClause(config)},
     ${getGroupIdClause(config)},
-    COUNT(DISTINCT actor_id) AS count
+    COUNT(DISTINCT events.actor_id) AS count
   FROM events
+  ${getLabelJoinClause(config)}
   WHERE ${whereClauses.join(' AND ')}
   ${getInnerGroupBy(config)}
   ${getInnerOrderAndLimit(config, 'count')}
@@ -188,9 +193,10 @@ FROM
     SELECT
       ${getGroupTimeClause(config)},
       ${getGroupIdClause(config, 'user')},
-      toHour(created_at) AS hour,
+      toHour(events.created_at) AS hour,
       COUNT() AS count
     FROM events
+    ${getLabelJoinClause(config)}
     WHERE ${whereClauses.join(' AND ')}
     GROUP BY id, platform, time, hour
     ORDER BY hour
@@ -205,7 +211,7 @@ GROUP BY id, platform`;
 
 export const contributorEmailSuffixes = async (config: QueryConfig) => {
   config = getMergedConfig(config);
-  const whereClauses: string[] = ["type='PushEvent'"];
+  const whereClauses: string[] = ["events.type='PushEvent'"];
   const repoWhereClause = await getRepoWhereClause(config);
   if (repoWhereClause) whereClauses.push(repoWhereClause);
   whereClauses.push(getTimeRangeWhereClause(config));
@@ -228,9 +234,10 @@ FROM
     SELECT
       ${getGroupTimeClause(config)},
       ${getGroupIdClause(config)},
-      anyHeavy(arrayJoin(arrayMap(x -> splitByChar('@', x)[2], push_commits.email))) AS suffix,
-      arrayJoin(push_commits.name) AS author
+      anyHeavy(arrayJoin(arrayMap(x -> splitByChar('@', x)[2], events.push_commits.email))) AS suffix,
+      arrayJoin(events.push_commits.name) AS author
     FROM events
+    ${getLabelJoinClause(config)}
     WHERE ${whereClauses.join(' AND ')}
     GROUP BY platform, repo_id, org_id, author, time
   )

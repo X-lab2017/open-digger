@@ -1,4 +1,5 @@
 name: Database - RDF
+name_zh: 资源描述框架数据库
 type: Tech-1
 data:
   platforms:

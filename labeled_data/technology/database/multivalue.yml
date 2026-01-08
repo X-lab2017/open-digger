@@ -1,4 +1,5 @@
 name: Database - Multivalue
+name_zh: 多值数据库
 type: Tech-1
 data:
   platforms:

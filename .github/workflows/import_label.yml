@@ -11,10 +11,10 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
-      - name: Use Node.js 15
+      - name: Use Node.js 20
         uses: actions/setup-node@v3
         with:
-          node-version: 15
+          node-version: 20
       - run: npm install
       - env:
           CLICKHOUSE_URL: ${{ secrets.CLICKHOUSE_URL }}

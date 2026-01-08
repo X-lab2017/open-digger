@@ -1,4 +1,5 @@
 name: Database - Hierarchical
+name_zh: 层次数据库
 type: Tech-1
 data:
   platforms:

@@ -18,23 +18,23 @@
     {
       "id": "18845024",
       "name": "google/closure-compiler",
-      "total_count": "292",
+      "total_count": "275",
       "count": [
         "61",
-        "231"
+        "214"
       ],
       "ratio": [
-        "21%",
-        "79%"
+        "22%",
+        "78%"
       ]
     },
     {
       "id": "9304637",
       "name": "google/ggrc-core",
-      "total_count": "243",
+      "total_count": "240",
       "count": [
-        "93",
-        "150"
+        "92",
+        "148"
       ],
       "ratio": [
         "38%",
@@ -44,10 +44,10 @@
     {
       "id": "23357588",
       "name": "google/protobuf",
-      "total_count": "208",
+      "total_count": "202",
       "count": [
-        "79",
-        "129"
+        "76",
+        "126"
       ],
       "ratio": [
         "38%",

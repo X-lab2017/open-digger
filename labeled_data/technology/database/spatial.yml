@@ -1,4 +1,5 @@
 name: Database - Spatial
+name_zh: 空间数据库
 type: Tech-1
 data:
   platforms:

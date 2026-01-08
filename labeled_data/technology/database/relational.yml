@@ -1,4 +1,5 @@
 name: Database - Relational
+name_zh: 关系型数据库
 type: Tech-1
 data:
   labels:
