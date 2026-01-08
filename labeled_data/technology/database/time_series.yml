@@ -1,4 +1,5 @@
 name: Database - Time Series
+name_zh: 时序数据库
 type: Tech-1
 data:
   labels:

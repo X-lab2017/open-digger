@@ -12,7 +12,8 @@ import {
   processQueryResult,
   getTopLevelPlatform,
   getInnerGroupBy,
-  getWithClause
+  getWithClause,
+  getLabelJoinClause
 } from './basic';
 import * as clickhouse from '../db/clickhouse';
 import { getPlatformData } from '../labelDataUtils';
@@ -30,7 +31,7 @@ export const getRepoOpenrank = async (config: QueryConfig) => {
   if (repoWhereClause) whereClause.push(repoWhereClause);
   const timeRangeClause = getTimeRangeWhereClause(config);
   if (timeRangeClause) whereClause.push(timeRangeClause);
-  whereClause.push("type='Repo'");
+  whereClause.push("events.type='Repo'");
 
   const sql = `
 ${getWithClause(config)}
@@ -45,7 +46,8 @@ FROM
     ${getGroupTimeClause(config)},
     ${getGroupIdClause(config, 'repo', 'created_at')},
     SUM(openrank) AS openrank
-  FROM global_openrank
+  FROM global_openrank AS events
+  ${getLabelJoinClause(config)}
   WHERE ${whereClause.join(' AND ')}
   ${getInnerGroupBy(config)}
   ${getInnerOrderAndLimit(config, 'openrank')}
@@ -63,7 +65,7 @@ export const getUserOpenrank = async (config: QueryConfig) => {
   if (userWhereClause) whereClause.push(userWhereClause);
   const timeRangeClause = getTimeRangeWhereClause(config);
   if (timeRangeClause) whereClause.push(timeRangeClause);
-  whereClause.push("type='User'");
+  whereClause.push("events.type='User'");
 
   const sql = `
 ${getWithClause(config)}
@@ -78,7 +80,8 @@ FROM
     ${getGroupTimeClause(config)},
     ${getGroupIdClause(config, 'user')},
     SUM(openrank) AS openrank
-  FROM global_openrank
+  FROM global_openrank AS events
+  ${getLabelJoinClause(config)}
   WHERE ${whereClause.join(' AND ')}
   ${getInnerGroupBy(config)}
   ${getInnerOrderAndLimit(config, 'openrank')}
@@ -164,7 +167,8 @@ FROM
         ) data
       GROUP BY id, actor_id, p, time
       ORDER BY openrank DESC
-    )
+    ) AS events
+    ${getLabelJoinClause(config)}
     GROUP BY id, time, platform
 )
 GROUP BY id, platform
@@ -255,7 +259,8 @@ FROM
         ) data
       GROUP BY id, repo_id, platform, time
       ${withoutDetail ? '' : 'ORDER BY openrank DESC'}
-    )
+    ) AS events
+    ${getLabelJoinClause(config)}
     GROUP BY id, platform, time
     ${userWhereClause ? `HAVING ${userWhereClause}` : ''}
     ${getInnerOrderAndLimit(config, 'openrankValue')}
@@ -329,7 +334,8 @@ FROM
     WHERE ${whereClauses.join(' AND ')}
     GROUP BY platform, repo_id, org_id, actor_id, month
     HAVING activity > 0
-  )
+  ) AS events
+  ${getLabelJoinClause(config)}
   ${getInnerGroupBy(config)}
   ${getInnerOrderAndLimit(config, 'agg_activity')}
 )
@@ -389,7 +395,8 @@ FROM
     WHERE ${whereClauses.join(' AND ')}
     GROUP BY platform, repo_id, actor_id, month
     HAVING activity > 0 ${withBot ? '' : `AND actor_login NOT LIKE '%[bot]'`}
-  )
+  ) AS events
+  ${getLabelJoinClause(config)}
   ${getInnerGroupBy(config)}
   ${getInnerOrderAndLimit(config, 'agg_activity')}
 )
@@ -402,7 +409,7 @@ ${getOutterOrderAndLimit(config, 'activity')}`;
 
 export const getAttention = async (config: QueryConfig) => {
   config = getMergedConfig(config);
-  const whereClauses: string[] = ["type IN ('WatchEvent', 'ForkEvent')"];
+  const whereClauses: string[] = ["events.type IN ('WatchEvent', 'ForkEvent')"];
   const repoWhereClause = await getRepoWhereClause(config);
   if (repoWhereClause) whereClauses.push(repoWhereClause);
   whereClauses.push(getTimeRangeWhereClause(config));
@@ -419,10 +426,11 @@ FROM
   SELECT
     ${getGroupTimeClause(config)},
     ${getGroupIdClause(config)},
-    countIf(type='WatchEvent') AS stars,
-    countIf(type='ForkEvent') AS forks,
+    uniqExactIf(events.actor_id, events.type='WatchEvent') AS stars,
+    uniqExactIf(events.actor_id, events.type='ForkEvent') AS forks,
     stars + 2 * forks AS attention
   FROM events
+  ${getLabelJoinClause(config)}
   WHERE ${whereClauses.join(' AND ')}
   ${getInnerGroupBy(config)}
   ${getInnerOrderAndLimit(config, 'attention')}

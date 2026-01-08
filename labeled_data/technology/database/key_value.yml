@@ -1,4 +1,5 @@
 name: Database - Key-value
+name_zh: 键值数据库
 type: Tech-1
 data:
   labels:

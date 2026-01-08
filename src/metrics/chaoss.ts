@@ -4,7 +4,7 @@ import {
   getGroupArrayInsertAtClause, getGroupTimeClause, getGroupIdClause,
   getInnerOrderAndLimit, getOutterOrderAndLimit,
   QueryConfig, TimeDurationOption, timeDurationConstants, processQueryResult, getTopLevelPlatform, getInnerGroupBy,
-  getWithClause,
+  getWithClause, getLabelJoinClause,
 } from "./basic";
 import * as clickhouse from '../db/clickhouse';
 import { basicActivitySqlComponent } from "./indices";
@@ -12,7 +12,7 @@ import { basicActivitySqlComponent } from "./indices";
 // Common - Contributions
 export const chaossTechnicalFork = async (config: QueryConfig) => {
   config = getMergedConfig(config);
-  const whereClauses: string[] = ["type = 'ForkEvent'"];
+  const whereClauses: string[] = ["events.type = 'ForkEvent'"];
   const repoWhereClause = await getRepoWhereClause(config);
   if (repoWhereClause) whereClauses.push(repoWhereClause);
   whereClauses.push(getTimeRangeWhereClause(config));
@@ -31,6 +31,7 @@ FROM
     ${getGroupIdClause(config)},
     COUNT() AS count
   FROM events
+  ${getLabelJoinClause(config)}
   WHERE ${whereClauses.join(' AND ')}
   ${getInnerGroupBy(config)}
   ${getInnerOrderAndLimit(config, 'count')}
@@ -49,7 +50,7 @@ interface CodeChangeCommitsOptions {
 }
 export const chaossCodeChangeCommits = async (config: QueryConfig<CodeChangeCommitsOptions>) => {
   config = getMergedConfig(config);
-  const whereClauses: string[] = ["type = 'PushEvent' "];
+  const whereClauses: string[] = ["events.type = 'PushEvent' "];
   const repoWhereClause = await getRepoWhereClause(config);
   if (repoWhereClause) whereClauses.push(repoWhereClause);
   whereClauses.push(getTimeRangeWhereClause(config));
@@ -66,8 +67,9 @@ FROM
   SELECT
     ${getGroupTimeClause(config)},
     ${getGroupIdClause(config)},
-    COUNT(arrayJoin(${config.options?.messageFilter ? `arrayFilter(x -> match(x, '${config.options.messageFilter}'), push_commits.message)` : 'push_commits.message'})) AS count
+    COUNT(arrayJoin(${config.options?.messageFilter ? `arrayFilter(x -> match(x, '${config.options.messageFilter}'), events.push_commits.message)` : 'events.push_commits.message'})) AS count
   FROM events
+  ${getLabelJoinClause(config)}
   WHERE ${whereClauses.join(' AND ')}
   ${getInnerGroupBy(config)}
   ${getInnerOrderAndLimit(config, 'count')}
@@ -85,7 +87,7 @@ interface CodeChangeLinesOptions {
 export const chaossCodeChangeLines = async (config: QueryConfig<CodeChangeLinesOptions>) => {
   config = getMergedConfig(config);
   const by = filterEnumType(config.options?.by, ['add', 'remove', 'sum'], 'add');
-  const whereClauses: string[] = ["type = 'PullRequestEvent' "];
+  const whereClauses: string[] = ["events.type = 'PullRequestEvent' "];
   const repoWhereClause = await getRepoWhereClause(config);
   if (repoWhereClause) whereClauses.push(repoWhereClause);
   whereClauses.push(getTimeRangeWhereClause(config));
@@ -105,18 +107,19 @@ FROM
     ${(() => {
       if (by === 'add') {
         return `
-          SUM(pull_additions) AS lines`
+          SUM(events.pull_additions) AS lines`
       } else if (by === 'remove') {
         return `
-          SUM(pull_deletions) AS lines`
+          SUM(events.pull_deletions) AS lines`
       } else if (by === 'sum') {
         return `
-          SUM(pull_additions) AS additions,
-          SUM(pull_deletions) AS deletions,
-          minus(additions,deletions) AS lines
+          SUM(events.pull_additions) AS additions,
+          SUM(events.pull_deletions) AS deletions,
+          minus(additions, deletions) AS lines
           ` }
     })()}
   FROM events
+  ${getLabelJoinClause(config)}
   WHERE ${whereClauses.join(' AND ')}
   ${getInnerGroupBy(config)}
   ${getInnerOrderAndLimit(config, 'lines')}
@@ -131,7 +134,7 @@ ${getOutterOrderAndLimit(config, 'code_change_lines')}`;
 // Evolution - Issue Resolution
 export const chaossIssuesNew = async (config: QueryConfig) => {
   config = getMergedConfig(config);
-  const whereClauses: string[] = ["type = 'IssuesEvent' AND action IN ('opened', 'reopened')"];
+  const whereClauses: string[] = ["events.type = 'IssuesEvent' AND events.action IN ('opened', 'reopened')"];
   const repoWhereClause = await getRepoWhereClause(config);
   if (repoWhereClause) whereClauses.push(repoWhereClause);
   whereClauses.push(getTimeRangeWhereClause(config));
@@ -149,8 +152,9 @@ FROM
   SELECT
     ${getGroupTimeClause(config)},
     ${getGroupIdClause(config)},
-    COUNT(DISTINCT issue_id) AS count
+    COUNT(DISTINCT events.issue_id) AS count
   FROM events
+  ${getLabelJoinClause(config)}
   WHERE ${whereClauses.join(' AND ')}
   GROUP BY id, platform, time
   ${getInnerOrderAndLimit(config, 'count')}
@@ -166,7 +170,7 @@ ${getOutterOrderAndLimit(config, 'issues_new_count')}`;
 
 export const chaossIssuesAndChangeRequestActive = async (config: QueryConfig) => {
   config = getMergedConfig(config);
-  const whereClauses: string[] = ["type IN ('IssuesEvent', 'IssueCommentEvent', 'PullRequestEvent', 'PullRequestReviewCommentEvent')"];
+  const whereClauses: string[] = ["events.type IN ('IssuesEvent', 'IssueCommentEvent', 'PullRequestEvent', 'PullRequestReviewCommentEvent')"];
   const repoWhereClause = await getRepoWhereClause(config);
   if (repoWhereClause) whereClauses.push(repoWhereClause);
   whereClauses.push(getTimeRangeWhereClause(config));
@@ -183,8 +187,9 @@ FROM
   SELECT
     ${getGroupTimeClause(config)},
     ${getGroupIdClause(config)},
-    COUNT(DISTINCT issue_id) AS count
+    COUNT(DISTINCT events.issue_id) AS count
   FROM events
+  ${getLabelJoinClause(config)}
   WHERE ${whereClauses.join(' AND ')}
   GROUP BY id, platform, time
   ${getInnerOrderAndLimit(config, 'count')}
@@ -198,7 +203,7 @@ ${getOutterOrderAndLimit(config, 'active_count')}`;
 
 export const chaossIssuesClosed = async (config: QueryConfig) => {
   config = getMergedConfig(config);
-  const whereClauses: string[] = ["type = 'IssuesEvent' AND action = 'closed'"];
+  const whereClauses: string[] = ["events.type = 'IssuesEvent' AND events.action = 'closed'"];
   const repoWhereClause = await getRepoWhereClause(config);
   if (repoWhereClause) whereClauses.push(repoWhereClause);
   whereClauses.push(getTimeRangeWhereClause(config));
@@ -216,8 +221,9 @@ FROM
   SELECT
     ${getGroupTimeClause(config)},
     ${getGroupIdClause(config)},
-    COUNT(DISTINCT issue_id) AS count
+    COUNT(DISTINCT events.issue_id) AS count
   FROM events
+  ${getLabelJoinClause(config)}
   WHERE ${whereClauses.join(' AND ')}
   GROUP BY id, platform, time
   ${getInnerOrderAndLimit(config, 'count')}
@@ -236,7 +242,7 @@ interface ResolutionDurationOptions extends TimeDurationOption {
 }
 const chaossResolutionDuration = async (config: QueryConfig<ResolutionDurationOptions>, type: 'issue' | 'change request') => {
   config = getMergedConfig(config);
-  const whereClauses: string[] = type === 'issue' ? ["type = 'IssuesEvent'"] : ["type = 'PullRequestEvent'"];
+  const whereClauses: string[] = type === 'issue' ? ["events.type = 'IssuesEvent'"] : ["events.type = 'PullRequestEvent'"];
   const repoWhereClause = await getRepoWhereClause(config);
   if (repoWhereClause) whereClauses.push(repoWhereClause);
 
@@ -270,23 +276,24 @@ FROM
   FROM
   (
     SELECT
-      platform,
-      repo_id,
-      argMax(repo_name, created_at) AS repo_name,
-      org_id,
-      argMax(org_login, created_at) AS org_login,
-      issue_number,
-      max(created_at) AS last_active,
-      argMaxIf(action, created_at, action IN ('opened', 'closed' , 'reopened')) AS last_action,
-      argMax(issue_created_at,created_at) AS opened_at,
-      maxIf(created_at, action = 'closed') AS closed_at,
+      events.platform,
+      events.repo_id,
+      argMax(events.repo_name, created_at) AS repo_name,
+      events.org_id,
+      argMax(events.org_login, created_at) AS org_login,
+      events.issue_number,
+      max(events.created_at) AS last_active,
+      argMaxIf(events.action, created_at, action IN ('opened', 'closed' , 'reopened')) AS last_action,
+      argMax(events.issue_created_at,events.created_at) AS opened_at,
+      maxIf(events.created_at, events.action = 'closed') AS closed_at,
       dateDiff('${unit}', opened_at, closed_at) AS resolution_duration,
       multiIf(${thresholds.map((t, i) => `resolution_duration <= ${t}, ${i}`)}, ${thresholds.length}) AS resolution_level
     FROM events
     WHERE ${whereClauses.join(' AND ')}
     GROUP BY repo_id, org_id, issue_number, platform
     HAVING ${byCol} >= toDate('${config.startYear}-${config.startMonth}-1') AND ${byCol} < toDate('${endDate.getFullYear()}-${endDate.getMonth() + 1}-1') AND last_action='closed'
-  )
+  ) AS events
+  ${getLabelJoinClause(config)}
   ${getInnerGroupBy(config)}
   ${getInnerOrderAndLimit(config, 'resolution_duration')}
 )
@@ -329,9 +336,9 @@ FROM
   SELECT
     ${getGroupTimeClause(config, 'issue_created_at')},
     ${getGroupIdClause(config, 'repo', 'last_active')},
-    avg(response_time) AS avg,
-    ${timeDurationConstants.quantileArray.map(q => `quantile(${q / 4})(response_time) AS quantile_${q}`).join(',')},
-    [${ranges.map((_t, i) => `countIf(response_level = ${i})`).join(',')}] AS response_levels
+    avg(events.response_time) AS avg,
+    ${timeDurationConstants.quantileArray.map(q => `quantile(${q / 4})(events.response_time) AS quantile_${q}`).join(',')},
+    [${ranges.map((_t, i) => `countIf(events.response_level = ${i})`).join(',')}] AS response_levels
   FROM
   (
     SELECT
@@ -352,7 +359,8 @@ FROM
     GROUP BY repo_id, org_id, issue_number, platform
     HAVING issue_created_at >= toDate('${config.startYear}-${config.startMonth}-1') 
              AND issue_created_at < toDate('${endDate.getFullYear()}-${endDate.getMonth() + 1}-1')
-  )
+  ) AS events
+  ${getLabelJoinClause(config)}
   ${getInnerGroupBy(config)}
   ${getInnerOrderAndLimit(config, 'response_time')}
 )
@@ -402,9 +410,9 @@ FROM
       }
     })()},
     ${getGroupIdClause(config, 'repo', 'last_active')},
-    avgIf(dateDiff('${unit}', opened_at, time), opened_at < time AND closed_at >= time) AS avg,
-    ${timeDurationConstants.quantileArray.map(q => `quantileIf(${q / 4})(dateDiff('${unit}', opened_at, time), opened_at < time AND closed_at >= time) AS quantile_${q}`).join(',')},
-    [${ranges.map((_t, i) => `countIf(multiIf(${thresholds.map((t, i) => `dateDiff('${unit}', opened_at, time) <= ${t}, ${i}`)}, ${thresholds.length}) = ${i} AND opened_at < time AND closed_at >= time)`).join(',')}] AS age_levels
+    avgIf(dateDiff('${unit}', events.opened_at, time), events.opened_at < time AND events.closed_at >= time) AS avg,
+    ${timeDurationConstants.quantileArray.map(q => `quantileIf(${q / 4})(dateDiff('${unit}', events.opened_at, time), events.opened_at < time AND events.closed_at >= time) AS quantile_${q}`).join(',')},
+    [${ranges.map((_t, i) => `countIf(multiIf(${thresholds.map((t, i) => `dateDiff('${unit}', events.opened_at, time) <= ${t}, ${i}`)}, ${thresholds.length}) = ${i} AND events.opened_at < time AND events.closed_at >= time)`).join(',')}] AS age_levels
   FROM
   (
     SELECT
@@ -422,7 +430,8 @@ FROM
     WHERE ${whereClauses.join(' AND ')}
     GROUP BY repo_id, org_id, issue_number, platform
     HAVING opened_at > toDate('1970-01-01')
-  )
+  ) AS events
+  ${getLabelJoinClause(config)}
   ${getInnerGroupBy(config)}
   ${getInnerOrderAndLimit(config, 'age')}
 )
@@ -440,7 +449,7 @@ export const chaossChangeRequestAge = (config: QueryConfig<TimeDurationOption>) 
 // Evolution - Code Development Efficiency
 export const chaossChangeRequestsAccepted = async (config: QueryConfig) => {
   config = getMergedConfig(config);
-  const whereClauses: string[] = ["type = 'PullRequestEvent' AND action = 'closed' AND pull_merged = 1"];
+  const whereClauses: string[] = ["events.type = 'PullRequestEvent' AND events.action = 'closed' AND events.pull_merged = 1"];
   const repoWhereClause = await getRepoWhereClause(config);
   if (repoWhereClause) whereClauses.push(repoWhereClause);
   whereClauses.push(getTimeRangeWhereClause(config));
@@ -458,8 +467,9 @@ FROM
   SELECT
     ${getGroupTimeClause(config)},
     ${getGroupIdClause(config)},
-    COUNT(DISTINCT issue_id) AS count
+    COUNT(DISTINCT events.issue_id) AS count
   FROM events
+  ${getLabelJoinClause(config)}
   WHERE ${whereClauses.join(' AND ')}
   ${getInnerGroupBy(config)}
   ${getInnerOrderAndLimit(config, 'count')}
@@ -475,7 +485,7 @@ ${getOutterOrderAndLimit(config, 'change_requests_accepted')}`;
 
 export const chaossChangeRequestsDeclined = async (config: QueryConfig) => {
   config = getMergedConfig(config);
-  const whereClauses: string[] = ["type = 'PullRequestEvent' AND action = 'closed' AND pull_merged = 0"];
+  const whereClauses: string[] = ["events.type = 'PullRequestEvent' AND events.action = 'closed' AND events.pull_merged = 0"];
   const repoWhereClause = await getRepoWhereClause(config);
   if (repoWhereClause) whereClauses.push(repoWhereClause);
   whereClauses.push(getTimeRangeWhereClause(config));
@@ -493,8 +503,9 @@ FROM
   SELECT
     ${getGroupTimeClause(config)},
     ${getGroupIdClause(config)},
-    COUNT() AS count
+    COUNT(DISTINCT events.issue_id) AS count
   FROM events
+  ${getLabelJoinClause(config)}
   WHERE ${whereClauses.join(' AND ')}
   ${getInnerGroupBy(config)}
   ${getInnerOrderAndLimit(config, 'count')}
@@ -513,7 +524,7 @@ interface ChangeRequestsDurationOptions extends TimeDurationOption {
 }
 export const chaossChangeRequestsDuration = async (config: QueryConfig<ChangeRequestsDurationOptions>) => {
   config = getMergedConfig(config);
-  const whereClauses: string[] = ["type = 'PullRequestEvent' AND pull_merged = 1"];
+  const whereClauses: string[] = ["events.type = 'PullRequestEvent' AND events.pull_merged = 1"];
   const repoWhereClause = await getRepoWhereClause(config);
   if (repoWhereClause) whereClauses.push(repoWhereClause);
 
@@ -541,9 +552,9 @@ FROM
   SELECT
     ${getGroupTimeClause(config, byCol)},
     ${getGroupIdClause(config, 'repo', 'last_active')},
-    avg(resolution_duration) AS avg,
-    ${timeDurationConstants.quantileArray.map(q => `quantile(${q / 4})(resolution_duration) AS quantile_${q}`).join(',')},
-    [${ranges.map((_t, i) => `countIf(resolution_level = ${i})`).join(',')}] AS resolution_levels
+    avg(events.resolution_duration) AS avg,
+    ${timeDurationConstants.quantileArray.map(q => `quantile(${q / 4})(events.resolution_duration) AS quantile_${q}`).join(',')},
+    [${ranges.map((_t, i) => `countIf(events.resolution_level = ${i})`).join(',')}] AS resolution_levels
   FROM
   (
     SELECT
@@ -560,10 +571,12 @@ FROM
       dateDiff('${unit}', opened_at, closed_at) AS resolution_duration,
       multiIf(${thresholds.map((t, i) => `resolution_duration <= ${t}, ${i}`)}, ${thresholds.length}) AS resolution_level
     FROM events
+    ${getLabelJoinClause(config)}
     WHERE ${whereClauses.join(' AND ')}
     GROUP BY repo_id, org_id, issue_number, platform
     HAVING ${byCol} >= toDate('${config.startYear}-${config.startMonth}-1') AND ${byCol} < toDate('${endDate.getFullYear()}-${endDate.getMonth() + 1}-1') AND last_action='closed'
-  )
+  ) AS events
+  ${getLabelJoinClause(config)}
   ${getInnerGroupBy(config)}
   ${getInnerOrderAndLimit(config, 'resolution_duration')}
 )
@@ -576,7 +589,7 @@ ${getOutterOrderAndLimit(config, sortBy, sortBy === 'levels' ? 1 : undefined)}`;
 
 export const chaossChangeRequestsAcceptanceRatio = async (config: QueryConfig) => {
   config = getMergedConfig(config);
-  const whereClauses: string[] = ["type = 'PullRequestEvent' AND action = 'closed' "];
+  const whereClauses: string[] = ["events.type = 'PullRequestEvent' AND events.action = 'closed' "];
   const repoWhereClause = await getRepoWhereClause(config);
   if (repoWhereClause) whereClauses.push(repoWhereClause);
   whereClauses.push(getTimeRangeWhereClause(config));
@@ -595,11 +608,12 @@ FROM
   SELECT
     ${getGroupTimeClause(config)},
     ${getGroupIdClause(config)},
-    COUNT() AS count,
-    countIf(pull_merged = 1) AS accepted_count,
-    countIf(pull_merged = 0) AS declined_count,
+    COUNT(DISTINCT events.issue_id) AS count,
+    countIf(events.pull_merged = 1) AS accepted_count,
+    countIf(events.pull_merged = 0) AS declined_count,
     accepted_count/count AS ratio
   FROM events
+  ${getLabelJoinClause(config)}
   WHERE ${whereClauses.join(' AND ')}
   ${getInnerGroupBy(config)}
   ${getInnerOrderAndLimit(config, 'ratio')}
@@ -614,7 +628,7 @@ ${getOutterOrderAndLimit(config, 'change_requests_accepted_ratio')}`;
 // Evolution - Code Development Process Quality
 export const chaossChangeRequests = async (config: QueryConfig) => {
   config = getMergedConfig(config);
-  const whereClauses: string[] = ["type = 'PullRequestEvent' AND action = 'opened'"];
+  const whereClauses: string[] = ["events.type = 'PullRequestEvent' AND events.action = 'opened'"];
   const repoWhereClause = await getRepoWhereClause(config);
   if (repoWhereClause) whereClauses.push(repoWhereClause);
   whereClauses.push(getTimeRangeWhereClause(config));
@@ -633,6 +647,7 @@ FROM
     ${getGroupIdClause(config)},
     COUNT(DISTINCT issue_id) AS count
   FROM events
+  ${getLabelJoinClause(config)}
   WHERE ${whereClauses.join(' AND ')}
   ${getInnerGroupBy(config)}
   ${getInnerOrderAndLimit(config, 'count')}
@@ -646,7 +661,7 @@ ${getOutterOrderAndLimit(config, 'count')}`;
 
 export const chaossChangeRequestReviews = async (config: QueryConfig) => {
   config = getMergedConfig(config);
-  const whereClauses: string[] = ["type = 'PullRequestReviewCommentEvent'"];
+  const whereClauses: string[] = ["events.type = 'PullRequestReviewCommentEvent'"];
   const repoWhereClause = await getRepoWhereClause(config);
   if (repoWhereClause) whereClauses.push(repoWhereClause);
   whereClauses.push(getTimeRangeWhereClause(config));
@@ -665,6 +680,7 @@ FROM
     ${getGroupIdClause(config)},
     COUNT(DISTINCT pull_review_comment_id) AS count
   FROM events
+  ${getLabelJoinClause(config)}
   WHERE ${whereClauses.join(' AND ')}
   ${getInnerGroupBy(config)}
   ${getInnerOrderAndLimit(config, 'count')}
@@ -690,11 +706,11 @@ export const chaossBusFactor = async (config: QueryConfig<BusFactorOptions>) => 
   const by = filterEnumType(config.options?.by, ['commit', 'change request', 'activity'], 'activity');
   const whereClauses: string[] = [];
   if (by === 'commit') {
-    whereClauses.push("type = 'PushEvent'")
+    whereClauses.push("events.type = 'PushEvent'")
   } else if (by === 'change request') {
-    whereClauses.push("type = 'PullRequestEvent' AND action = 'closed' AND pull_merged = 1");
+    whereClauses.push("events.type = 'PullRequestEvent' AND events.action = 'closed' AND events.pull_merged = 1");
   } else if (by === 'activity') {
-    whereClauses.push("type IN ('IssuesEvent', 'IssueCommentEvent', 'PullRequestEvent', 'PullRequestReviewCommentEvent')");
+    whereClauses.push("events.type IN ('IssuesEvent', 'IssueCommentEvent', 'PullRequestEvent', 'PullRequestReviewCommentEvent')");
   }
   const repoWhereClause = await getRepoWhereClause(config);
   if (repoWhereClause) whereClauses.push(repoWhereClause);
@@ -742,6 +758,7 @@ FROM
       }
     })()}
     FROM events
+    ${getLabelJoinClause(config)}
     WHERE ${whereClauses.join(' AND ')}
     ${getInnerGroupBy(config)}, ${by === 'commit' ? 'author' : 'actor_id'}
     ${(config.options?.withBot && by !== 'commit') ? '' : "HAVING " + (by === 'activity' ? 'actor_login' : 'author') + " NOT LIKE '%[bot]'"}
@@ -839,7 +856,8 @@ ${getWithClause(config)}
         )
       GROUP BY platform, repo_id, org_id, ${by === 'commit' ? 'author' : 'actor_id'}
       HAVING first_time >= toDate('${config.startYear}-${config.startMonth}-1') AND first_time < toDate('${endDate.getFullYear()}-${endDate.getMonth() + 1}-1')
-    )
+    ) AS events
+    ${getLabelJoinClause(config)}
     ${getInnerGroupBy(config)}
     ${getInnerOrderAndLimit(config, 'new_contributor')}
   )
@@ -852,7 +870,7 @@ ${getWithClause(config)}
 
 export const chaossContributors = async (config: QueryConfig) => {
   config = getMergedConfig(config);
-  const whereClauses: string[] = ["type = 'PullRequestEvent' AND action = 'closed' AND pull_merged = 1"];
+  const whereClauses: string[] = ["events.type = 'PullRequestEvent' AND events.action = 'closed' AND events.pull_merged = 1"];
   const repoWhereClause = await getRepoWhereClause(config);
   if (repoWhereClause) whereClauses.push(repoWhereClause);
   whereClauses.push(getTimeRangeWhereClause(config));
@@ -873,6 +891,7 @@ FROM
     groupArray(DISTINCT(issue_author_login)) AS detail,
     COUNT(DISTINCT issue_author_id) AS count
   FROM events
+  ${getLabelJoinClause(config)}
   WHERE ${whereClauses.join(' AND ')}
   GROUP BY id, platform, time
   ${getInnerOrderAndLimit(config, 'count')}
@@ -907,9 +926,9 @@ export const chaossInactiveContributors = async (config: QueryConfig<InactiveCon
   endDate.setMonth(config.endMonth);  // find next month
   const endTimeClause = `toDate('${endDate.getFullYear()}-${endDate.getMonth() + 1}-1')`;
   if (by === 'commit') {
-    whereClauses.push("type = 'PushEvent'")
+    whereClauses.push("events.type = 'PushEvent'")
   } else if (by === 'change request') {
-    whereClauses.push("type = 'PullRequestEvent' AND action = 'closed' AND pull_merged = 1");
+    whereClauses.push("events.type = 'PullRequestEvent' AND events.action = 'closed' AND events.pull_merged = 1");
   }
   const repoWhereClause = await getRepoWhereClause(config);
   if (repoWhereClause) whereClauses.push(repoWhereClause);
@@ -960,7 +979,8 @@ FROM
       FROM events
       WHERE ${whereClauses.join(' AND ')}
       ${(config.options?.withBot && by !== 'commit') ? '' : "HAVING author NOT LIKE '%[bot]'"}
-    )
+    ) AS events
+    ${getLabelJoinClause(config)}
     GROUP BY id, platform, ${by === 'commit' ? 'author' : 'actor_id'}, time
   )
   ${getInnerGroupBy(config)}
@@ -1009,6 +1029,7 @@ FROM
       toDayOfWeek(created_at) AS day,
       COUNT() AS count
     FROM events
+    ${getLabelJoinClause(config)}
     WHERE ${whereClauses.join(' AND ')}
     GROUP BY id, platform, time, hour, day
     ORDER BY day, hour

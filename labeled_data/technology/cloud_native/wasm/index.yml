@@ -1,4 +1,5 @@
 name: Cloud Native - Wasm
+name_zh: WebAssembly
 type: Tech-1
 data:
   labels:

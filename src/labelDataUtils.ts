@@ -216,9 +216,9 @@ export const LabelUtil = {
       withParamClause: `${tableName} AS (SELECT p.name AS platform, p.repos AS repos, p.orgs AS orgs, p.users AS users
         FROM labels ARRAY JOIN platforms AS p WHERE id = '${idOrType}' OR type = '${idOrType}')`,
       whereClause: `(
-        (platform, repo_id) IN (SELECT platform, arrayJoin(repos) FROM ${tableName}) OR
-        (platform, org_id) IN (SELECT platform, arrayJoin(orgs) FROM ${tableName}) OR
-        (platform, actor_id) IN (SELECT platform, arrayJoin(users) FROM ${tableName})
+        (events.platform, events.repo_id) IN (SELECT platform, arrayJoin(repos) FROM ${tableName}) OR
+        (events.platform, events.org_id) IN (SELECT platform, arrayJoin(orgs) FROM ${tableName}) OR
+        (events.platform, events.actor_id) IN (SELECT platform, arrayJoin(users) FROM ${tableName})
       )`,
       whereClauseFunc: (params: { platformCol?: string, repoCol?: string, orgCol?: string, userCol?: string }) => {
         const platformCol = params.platformCol ?? 'platform';

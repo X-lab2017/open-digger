@@ -1,4 +1,5 @@
 name: Database - Columnar
+name_zh: 列式数据库
 type: Tech-1
 data:
   platforms:

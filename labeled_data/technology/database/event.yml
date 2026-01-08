@@ -1,4 +1,5 @@
 name: Database - Event
+name_zh: 事件数据库
 type: Tech-1
 data:
   platforms:
