@@ -571,7 +571,6 @@ FROM
       dateDiff('${unit}', opened_at, closed_at) AS resolution_duration,
       multiIf(${thresholds.map((t, i) => `resolution_duration <= ${t}, ${i}`)}, ${thresholds.length}) AS resolution_level
     FROM events
-    ${getLabelJoinClause(config)}
     WHERE ${whereClauses.join(' AND ')}
     GROUP BY repo_id, org_id, issue_number, platform
     HAVING ${byCol} >= toDate('${config.startYear}-${config.startMonth}-1') AND ${byCol} < toDate('${endDate.getFullYear()}-${endDate.getMonth() + 1}-1') AND last_action='closed'
@@ -706,7 +705,7 @@ export const chaossBusFactor = async (config: QueryConfig<BusFactorOptions>) => 
   const by = filterEnumType(config.options?.by, ['commit', 'change request', 'activity'], 'activity');
   const whereClauses: string[] = [];
   if (by === 'commit') {
-    whereClauses.push("events.type = 'PushEvent'")
+    whereClauses.push("events.type = 'PushEvent'");
   } else if (by === 'change request') {
     whereClauses.push("events.type = 'PullRequestEvent' AND events.action = 'closed' AND events.pull_merged = 1");
   } else if (by === 'activity') {
@@ -926,7 +925,7 @@ export const chaossInactiveContributors = async (config: QueryConfig<InactiveCon
   endDate.setMonth(config.endMonth);  // find next month
   const endTimeClause = `toDate('${endDate.getFullYear()}-${endDate.getMonth() + 1}-1')`;
   if (by === 'commit') {
-    whereClauses.push("events.type = 'PushEvent'")
+    whereClauses.push("events.type = 'PushEvent'");
   } else if (by === 'change request') {
     whereClauses.push("events.type = 'PullRequestEvent' AND events.action = 'closed' AND events.pull_merged = 1");
   }
