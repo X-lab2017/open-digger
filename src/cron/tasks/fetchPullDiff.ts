@@ -53,14 +53,6 @@ const task: Task = {
         return pullRequests;
       }
       return [];
-      // ** Do not get export data right now, too many prs to analyze **
-      // q = `SELECT argMax(repo_name, created_at), argMax(platform, created_at), argMax(issue_number, created_at), argMax(issue_id, created_at)
-      //   FROM events WHERE type='PullRequestEvent' AND platform='GitHub' AND repo_id IN (SELECT id FROM export_repo)
-      //   AND toYear(created_at) >= 2025
-      //   AND (issue_id, platform) NOT IN (SELECT id, platform FROM pull_diff) GROUP BY issue_id LIMIT ${totalCount}`;
-      // pullRequests = await query(q);
-      // logger.info(`Get ${pullRequests.length} pull requests to update from export repo data`);
-      // return pullRequests;
     };
 
     const getDiff = async (repo: string, platform: string, number: number): Promise<any> => {
@@ -98,6 +90,7 @@ const task: Task = {
       const diff = await getDiff(repo, platform, number);
       const item: any = {
         id: +id,
+        platform,
         updated_at: new Date().toISOString().replace('T', ' ').replace('Z', '').split('.')[0]
       };
       if (!diff) {

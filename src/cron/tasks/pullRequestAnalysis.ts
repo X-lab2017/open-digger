@@ -251,7 +251,7 @@ ${pullRequest.diff}
             codeQuality: 1,
             titleDescQuality: 1,
             prType: 'Other',
-            valueLevel: 5,
+            valueLevel: 1,
             isAutomaticallyGenerated: 'Uncertain',
             hostileOrAbuse: 'Yes',
             reasoning: '',
