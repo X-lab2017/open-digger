@@ -203,8 +203,10 @@ export function getPlatformData(typeOrIds: string[], injectLabelData?: any[]): C
 export interface OptionLabelItem {
   withParamClause: string;
   tableName: string;
-  whereClause: string;
-  whereClauseFunc: (params: { platformCol?: string, repoCol?: string, orgCol?: string, userCol?: string }) => string;
+  repoWhereClause: string;
+  repoWhereClauseFunc: (params: { platformCol?: string, repoCol?: string, orgCol?: string, userCol?: string }) => string;
+  userWhereClause: string;
+  userWhereClauseFunc: (params: { platformCol?: string, repoCol?: string, orgCol?: string, userCol?: string }) => string;
 };
 
 export const LabelUtil = {
@@ -213,22 +215,28 @@ export const LabelUtil = {
     const tableName = 'label_' + idOrType.replaceAll(':', '_').replaceAll('/', '_').replaceAll('-', '_');
     return {
       tableName,
-      withParamClause: `${tableName} AS (SELECT p.name AS platform, p.repos AS repos, p.orgs AS orgs, p.users AS users
-        FROM labels ARRAY JOIN platforms AS p WHERE id = '${idOrType}' OR type = '${idOrType}')`,
-      whereClause: `(
-        (events.platform, events.repo_id) IN (SELECT platform, arrayJoin(repos) FROM ${tableName}) OR
-        (events.platform, events.org_id) IN (SELECT platform, arrayJoin(orgs) FROM ${tableName}) OR
-        (events.platform, events.actor_id) IN (SELECT platform, arrayJoin(users) FROM ${tableName})
+      withParamClause: `${tableName} AS (SELECT * FROM flatten_labels WHERE id = '${idOrType}' OR type = '${idOrType}')`,
+      repoWhereClause: `(
+        (events.platform, events.repo_id) IN (SELECT platform, entity_id FROM ${tableName} WHERE entity_type = 'Repo') OR
+        (events.platform, events.org_id) IN (SELECT platform, entity_id FROM ${tableName} WHERE entity_type = 'Org')
       )`,
-      whereClauseFunc: (params: { platformCol?: string, repoCol?: string, orgCol?: string, userCol?: string }) => {
+      repoWhereClauseFunc: (params: { platformCol?: string, repoCol?: string, orgCol?: string, userCol?: string }) => {
         const platformCol = params.platformCol ?? 'platform';
         const repoCol = params.repoCol ?? 'repo_id';
         const orgCol = params.orgCol ?? 'org_id';
+        return `(
+          (${platformCol}, ${repoCol}) IN (SELECT platform, entity_id FROM ${tableName} WHERE entity_type = 'Repo') OR
+          (${platformCol}, ${orgCol}) IN (SELECT platform, entity_id FROM ${tableName} WHERE entity_type = 'Org')
+        )`;
+      },
+      userWhereClause: `(
+        (events.platform, events.actor_id) IN (SELECT platform, entity_id FROM ${tableName} WHERE entity_type = 'User')
+      )`,
+      userWhereClauseFunc: (params: { platformCol?: string, repoCol?: string, orgCol?: string, userCol?: string }) => {
+        const platformCol = params.platformCol ?? 'platform';
         const userCol = params.userCol ?? 'actor_id';
         return `(
-          (${platformCol}, ${repoCol}) IN (SELECT platform, arrayJoin(repos) FROM ${tableName}) OR
-          (${platformCol}, ${orgCol}) IN (SELECT platform, arrayJoin(orgs) FROM ${tableName}) OR
-          (${platformCol}, ${userCol}) IN (SELECT platform, arrayJoin(users) FROM ${tableName})
+          (${platformCol}, ${userCol}) IN (SELECT platform, entity_id FROM ${tableName} WHERE entity_type = 'User')
         )`;
       },
     };
@@ -239,9 +247,13 @@ export const LabelUtil = {
     return {
       tableName: labelItems.map(l => l.tableName).join('_union_'),
       withParamClause: `${labelItems.map(l => l.withParamClause).join(' , ')}`,
-      whereClause: `(${labelItems.map(l => l.whereClause).join(' OR ')})`,
-      whereClauseFunc: (params: { platformCol?: string, repoCol?: string, orgCol?: string, userCol?: string }) => {
-        return `(${labelItems.map(l => l.whereClauseFunc(params)).join(' OR ')})`;
+      repoWhereClause: `(${labelItems.map(l => l.repoWhereClause).join(' OR ')})`,
+      repoWhereClauseFunc: (params: { platformCol?: string, repoCol?: string, orgCol?: string, userCol?: string }) => {
+        return `(${labelItems.map(l => l.repoWhereClauseFunc(params)).join(' OR ')})`;
+      },
+      userWhereClause: `(${labelItems.map(l => l.userWhereClause).join(' OR ')})`,
+      userWhereClauseFunc: (params: { platformCol?: string, repoCol?: string, orgCol?: string, userCol?: string }) => {
+        return `(${labelItems.map(l => l.userWhereClauseFunc(params)).join(' OR ')})`;
       },
     };
   },
@@ -251,9 +263,13 @@ export const LabelUtil = {
     return {
       tableName: labelItems.map(l => l.tableName).join('_intersect_'),
       withParamClause: `${labelItems.map(l => l.withParamClause).join(' , ')}`,
-      whereClause: `(${labelItems.map(l => l.whereClause).join(' AND ')})`,
-      whereClauseFunc: (params: { platformCol?: string, repoCol?: string, orgCol?: string, userCol?: string }) => {
-        return `(${labelItems.map(l => l.whereClauseFunc(params)).join(' AND ')})`;
+      repoWhereClause: `(${labelItems.map(l => l.repoWhereClause).join(' AND ')})`,
+      repoWhereClauseFunc: (params: { platformCol?: string, repoCol?: string, orgCol?: string, userCol?: string }) => {
+        return `(${labelItems.map(l => l.repoWhereClauseFunc(params)).join(' AND ')})`;
+      },
+      userWhereClause: `(${labelItems.map(l => l.userWhereClause).join(' AND ')})`,
+      userWhereClauseFunc: (params: { platformCol?: string, repoCol?: string, orgCol?: string, userCol?: string }) => {
+        return `(${labelItems.map(l => l.userWhereClauseFunc(params)).join(' AND ')})`;
       },
     };
   },
@@ -263,9 +279,13 @@ export const LabelUtil = {
     return {
       tableName: `${item1.tableName}_difference_${item2.tableName}`,
       withParamClause: `${item1.withParamClause} , ${item2.withParamClause}`,
-      whereClause: `(${item1.whereClause} AND NOT ${item2.whereClause})`,
-      whereClauseFunc: (params: { platformCol?: string, repoCol?: string, orgCol?: string, userCol?: string }) => {
-        return `(${item1.whereClauseFunc(params)} AND NOT ${item2.whereClauseFunc(params)})`;
+      repoWhereClause: `(${item1.repoWhereClause} AND NOT ${item2.repoWhereClause})`,
+      repoWhereClauseFunc: (params: { platformCol?: string, repoCol?: string, orgCol?: string, userCol?: string }) => {
+        return `(${item1.repoWhereClauseFunc(params)} AND NOT ${item2.repoWhereClauseFunc(params)})`;
+      },
+      userWhereClause: `(${item1.userWhereClause} AND NOT ${item2.userWhereClause})`,
+      userWhereClauseFunc: (params: { platformCol?: string, repoCol?: string, orgCol?: string, userCol?: string }) => {
+        return `(${item1.userWhereClauseFunc(params)} AND NOT ${item2.userWhereClauseFunc(params)})`;
       },
     };
   },
@@ -275,9 +295,13 @@ export const LabelUtil = {
     return {
       tableName: `not_${item.tableName}`,
       withParamClause: `${item.withParamClause}`,
-      whereClause: `(NOT ${item.whereClause})`,
-      whereClauseFunc: (params: { platformCol?: string, repoCol?: string, orgCol?: string, userCol?: string }) => {
-        return `(NOT ${item.whereClauseFunc(params)})`;
+      repoWhereClause: `(NOT ${item.repoWhereClause})`,
+      repoWhereClauseFunc: (params: { platformCol?: string, repoCol?: string, orgCol?: string, userCol?: string }) => {
+        return `(NOT ${item.repoWhereClauseFunc(params)})`;
+      },
+      userWhereClause: `(NOT ${item.userWhereClause})`,
+      userWhereClauseFunc: (params: { platformCol?: string, repoCol?: string, orgCol?: string, userCol?: string }) => {
+        return `(NOT ${item.userWhereClauseFunc(params)})`;
       },
     };
   },

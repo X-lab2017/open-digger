@@ -43,6 +43,8 @@
     "csv-reader": "^1.0.12",
     "dateformat": "^4.5.1",
     "github-graphql-v4-client": "0.1.4",
+    "http-proxy-agent": "^7.0.2",
+    "https-proxy-agent": "^7.0.6",
     "ijavascript-plotly": "0.0.1",
     "js-yaml": "^4.1.0",
     "lodash": "^4.17.21",

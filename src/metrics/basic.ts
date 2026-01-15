@@ -160,7 +160,7 @@ export const getRepoWhereClause = async (config: QueryConfig): Promise<string | 
   }
 
   if (config.label) {
-    repoWhereClauseArray.push(config.label.whereClause);
+    repoWhereClauseArray.push(config.label.repoWhereClause);
   }
 
   // where clause
@@ -213,7 +213,7 @@ export const getUserWhereClause = async (config: QueryConfig, idCol: string = 'a
   }
 
   if (config.label) {
-    userWhereClauseArray.push(config.label.whereClause);
+    userWhereClauseArray.push(config.label.userWhereClause);
   }
 
   // where clause

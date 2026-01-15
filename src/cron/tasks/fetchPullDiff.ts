@@ -1,9 +1,7 @@
 import { Task } from '..';
 import getConfig from '../../config';
-import { query } from '../../db/clickhouse';
-import { Readable } from 'stream';
-import { createClient } from '@clickhouse/client';
-import { getLogger } from '../../utils';
+import { insertRecords, query } from '../../db/clickhouse';
+import { getLogger, runTasks } from '../../utils';
 import { Octokit } from '@octokit/rest';
 
 /**
@@ -13,14 +11,13 @@ import { Octokit } from '@octokit/rest';
 let round = 0;
 const API_RATE_LIMIT_EXCEEDED = 'API RATE LIMIT EXCEEDED';
 const task: Task = {
-  cron: '*/10 * * * *',
+  cron: '*/12 * * * *',
   singleInstance: false,
   callback: async () => {
 
     const logger = getLogger('FetchPullDiffTask');
 
     const config = await getConfig();
-
     const token = config.task.configs.fetchPullDiff.tokens[
       round++ % config.task.configs.fetchPullDiff.tokens.length
     ];
@@ -55,13 +52,7 @@ const task: Task = {
         logger.info(`Get ${pullRequests.length} pull requests to update from label data`);
         return pullRequests;
       }
-      q = `SELECT argMax(repo_name, created_at), argMax(platform, created_at), argMax(issue_number, created_at), argMax(issue_id, created_at)
-        FROM events WHERE type='PullRequestEvent' AND platform='GitHub' AND repo_id IN (SELECT id FROM export_repo)
-        AND toYear(created_at) >= 2025
-        AND (issue_id, platform) NOT IN (SELECT id, platform FROM pull_diff) GROUP BY issue_id LIMIT ${totalCount}`;
-      pullRequests = await query(q);
-      logger.info(`Get ${pullRequests.length} pull requests to update from export repo data`);
-      return pullRequests;
+      return [];
     };
 
     const getDiff = async (repo: string, platform: string, number: number): Promise<any> => {
@@ -94,79 +85,27 @@ const task: Task = {
       return;
     }
 
-    let processedCount = 0;
-    const stream = new Readable({
-      objectMode: true,
-      read: () => { },
-    });
-    const client = createClient(config.db.clickhouse);
-
-    // Split pullRequests into batches
-    const batchSize = config.task.configs.fetchPullDiff.fetchBatchSize;
-    const batches: any[][] = [];
-    for (let i = 0; i < pullRequests.length; i += batchSize) {
-      batches.push(pullRequests.slice(i, i + batchSize));
-    }
-
-    logger.info(`Processing ${pullRequests.length} pull requests in ${batches.length} batches of ${batchSize}`);
-
-    // Process each batch concurrently
-    for (let batchIndex = 0; batchIndex < batches.length; batchIndex++) {
-      const batch = batches[batchIndex];
-
-      // Execute all requests in current batch concurrently
-      const batchPromises = batch.map(async ([repo, platform, number, id]) => {
-        const diff: any = await getDiff(repo, platform, number);
-        const item: any = {
-          id: +id,
-          updated_at: new Date().toISOString().replace('T', ' ').replace('Z', '').split('.')[0]
-        };
-
-        if (!diff) {
-          item.status = 'not_found';
-          item.diff = '';
-        } else if (diff === API_RATE_LIMIT_EXCEEDED) {
-          return null;
-        } else {
-          item.status = 'normal';
-          item.diff = diff;
-        }
-        item.platform = platform;
-
-        return item;
-      });
-
-      // Wait for current batch to complete
-      const batchResults = await Promise.all(batchPromises);
-
-      // Push results to stream
-      for (const item of batchResults) {
-        if (item) {
-          stream.push(item);
-          processedCount++;
-        }
+    const diffs = await runTasks(pullRequests.map(pull => async () => {
+      const [repo, platform, number, id] = pull;
+      const diff = await getDiff(repo, platform, number);
+      const item: any = {
+        id: +id,
+        platform,
+        updated_at: new Date().toISOString().replace('T', ' ').replace('Z', '').split('.')[0]
+      };
+      if (!diff) {
+        item.status = 'not_found';
+        item.diff = '';
+      } else if (diff === API_RATE_LIMIT_EXCEEDED) {
+        return null;
+      } else {
+        item.status = 'normal';
+        item.diff = diff;
       }
+      return item;
+    }), config.task.configs.fetchPullDiff.concurrentRequestNumber);
 
-      // Record progress every 100 requests
-      if (processedCount % 100 === 0) {
-        logger.info(`${processedCount} pull requests has been processed.`);
-      }
-
-      // Add small delay between batches to avoid too frequent requests
-      if (batchIndex < batches.length - 1) {
-        await new Promise(resolve => setTimeout(resolve, 10));
-      }
-    }
-
-    stream.push(null);
-    await client.insert({
-      table: 'pull_diff',
-      values: stream,
-      format: 'JSONEachRow',
-    });
-    await client.close();
-
-    logger.info(`Task completed. Processed ${processedCount} pull requests in ${batches.length} batches.`);
+    await insertRecords(diffs, 'pull_diff');
   }
 };
 
