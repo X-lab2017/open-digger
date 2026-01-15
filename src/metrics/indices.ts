@@ -276,7 +276,7 @@ export const basicActivitySqlComponent = `
     if(type='PullRequestEvent' AND action='closed' AND pull_merged=1, issue_author_id, actor_id) AS actor_id,
     argMax(if(type='PullRequestEvent' AND action='closed' AND pull_merged=1, issue_author_login, actor_login), created_at) AS actor_login,
     uniqExactIf(issue_comment_id, type='IssueCommentEvent' AND action='created') AS issue_comment,
-    uniqExactIf(issue_id, type='IssuesEvent' AND action='opened')  AS open_issue,
+    uniqExactIf(issue_id, type='IssuesEvent' AND action='opened') AS open_issue,
     uniqExactIf(issue_id, type='PullRequestEvent' AND action='opened') AS open_pull,
     uniqExactIf(pull_review_comment_id, type='PullRequestReviewCommentEvent' AND action IN ('created', 'added')) AS review_comment,
     uniqExactIf(issue_id, type='PullRequestEvent' AND action='closed' AND pull_merged=1) AS merged_pull,

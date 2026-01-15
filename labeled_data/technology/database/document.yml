@@ -15,6 +15,7 @@ data:
     - ':companies/vk/tarantool'
     - ':companies/yandex/ytsaurus'
     - ':foundations/apache/lucene'
+    - ':companies/elastic/elasticsearch'
   platforms:
     - name: GitHub
       type: Code Hosting
@@ -117,8 +118,6 @@ data:
           name: eXist-db/exist
         - id: 266444815
           name: earthstar-project/earthstar
-        - id: 507775
-          name: elastic/elasticsearch
         - id: 411979983
           name: elmarti/camadb
         - id: 587246478

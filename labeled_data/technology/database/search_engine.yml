@@ -6,12 +6,11 @@ data:
     - ':companies/amazon/opensearch'
     - ':companies/vespa/vespa'
     - ':foundations/apache/lucene'
+    - ':companies/elastic/elasticsearch'
   platforms:
     - name: GitHub
       type: Code Hosting
       repos:
-        - id: 507775
-          name: elastic/elasticsearch
         - id: 95614931
           name: manticoresoftware/manticoresearch
         - id: 520096046

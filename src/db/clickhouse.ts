@@ -42,7 +42,7 @@ export async function insertRecords(records: any[], table: string) {
       //
     },
   });
-  for (const e of records) stream.push(e);
+  for (const e of records) if (e) stream.push(e);
   stream.push(null);
   const client = createClient((await getConfig()).db.clickhouse);
   await client.insert({
