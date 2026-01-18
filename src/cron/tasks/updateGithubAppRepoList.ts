@@ -10,7 +10,7 @@ import { getNewClient, insertRecords, query } from '../../db/clickhouse';
  */
 
 const task: Task = {
-  cron: '0 * * * *',
+  cron: '0 0 * * *',
   singleInstance: true,
   callback: async () => {
     const logger = getLogger('UpdateGithubAppRepoListTask');
