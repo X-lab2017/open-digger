@@ -147,7 +147,7 @@ const task: Task = {
       }
       items.push(item);
       if (items.length % 500 === 0) {
-        logger.info(`${items.length} repos has been processed.`);
+        logger.info(`${items.length} repos have been processed.`);
       }
     }
     await insertRecords(items, 'gh_repo_info');
