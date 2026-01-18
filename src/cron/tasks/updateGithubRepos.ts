@@ -1,8 +1,6 @@
 import { Task } from '..';
 import getConfig from '../../config';
-import { query } from '../../db/clickhouse';
-import { Readable } from 'stream';
-import { createClient } from '@clickhouse/client';
+import { insertRecords, query } from '../../db/clickhouse';
 import { GitHubClient } from 'github-graphql-v4-client';
 import { getLogger } from '../../utils';
 import { Octokit } from '@octokit/rest';
@@ -11,17 +9,16 @@ import { Octokit } from '@octokit/rest';
  * This task is used to update github repos basic info
  */
 const task: Task = {
-  cron: '*/10 * * * *',
+  cron: '10 * * * *',
   singleInstance: true,
   callback: async () => {
 
     const logger = getLogger('UpdateGitHubRepoTask');
 
-    const updateBatchSize = 700;
     const config = await getConfig();
-    const tokens = config.github.tokens;
-    const token = tokens[0];
-    const oct = new Octokit({ auth: token });
+    const updateBatchSize = config.task.configs.updateGithubRepos.updateBatchSize;
+    const tokens: string[] = config.task.configs.updateGithubRepos.tokens;
+    const oct = new Octokit({ auth: tokens[0] });
     const graphqlClient = new GitHubClient({
       tokens: tokens.slice(1),
       maxConcurrentReqNumber: 40,
@@ -117,7 +114,7 @@ const task: Task = {
     const date = `${now.getFullYear()}-${(now.getMonth() + 1).toString().padStart(2, '0')}-01 00:00:00`;
     const getRepossList = async (totalCount: number): Promise<any[]> => {
       let q = `SELECT id, repo_name FROM export_repo
-      WHERE platform='GitHub' AND id NOT IN (SELECT id FROM gh_repo_info WHERE updated_at > subtractMonths(now(), 6))
+      WHERE platform='GitHub' AND id NOT IN (SELECT id FROM gh_repo_info WHERE updated_at > subtractMonths(now(), 6) OR status = 'not_found')
       LIMIT ${totalCount}`;
       let reposList = await query(q);
       return reposList;
@@ -127,13 +124,7 @@ const task: Task = {
     if (reposList.length === 0) return;
     logger.info(`Get ${reposList.length} repos to update`);
 
-    let processedCount = 0;
-    const stream = new Readable({
-      objectMode: true,
-      read: () => { },
-    });
-    const client = createClient(config.db.clickhouse);
-
+    const items: any[] = [];
     for (const [id, repoName] of reposList) {
       const [owner, name] = repoName.split('/');
       const repo: any = await queryRepoInfo(owner, name);
@@ -154,19 +145,12 @@ const task: Task = {
         item.readme_text = repo.readmeText ?? '';
         item.created_at = repo.createdAt.replace('T', ' ').replace('Z', '');
       }
-      stream.push(item);
-      processedCount++;
-      if (processedCount % 100 === 0) {
-        logger.info(`${processedCount} accounts has been processed.`);
+      items.push(item);
+      if (items.length % 500 === 0) {
+        logger.info(`${items.length} repos have been processed.`);
       }
     }
-    stream.push(null);
-    await client.insert({
-      table: 'gh_repo_info',
-      values: stream,
-      format: 'JSONEachRow',
-    });
-    await client.close();
+    await insertRecords(items, 'gh_repo_info');
   }
 };
 

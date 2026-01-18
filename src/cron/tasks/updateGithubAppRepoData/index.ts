@@ -15,7 +15,7 @@ const REPO_UPDATE_CONCURRENCY = 20;
 // reference: https://docs.github.com/en/rest/using-the-rest-api/rate-limits-for-the-rest-api?apiVersion=2022-11-28#primary-rate-limit-for-github-app-installations
 const INSTALLATION_UPDATE_BATCH_SIZE = 100;
 const task: Task = {
-  cron: '30 * * * *',
+  cron: '0 1 * * *',
   singleInstance: true,
   callback: async () => {
     const logger = getLogger('UpdateGithubAppRepoDataTask');

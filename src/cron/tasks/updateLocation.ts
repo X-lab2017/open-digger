@@ -1,21 +1,18 @@
 import { inspect } from 'util';
 import { Task } from '..';
 import getConfig from '../../config';
-import { query } from '../../db/clickhouse';
-import { Readable } from 'stream';
+import { insertRecords, query } from '../../db/clickhouse';
 import { createClient as createGoogleClient } from '@google/maps';
-import { createClient } from '@clickhouse/client';
 
 /**
  * This task is used to update user location to standard address
  */
 const task: Task = {
-  cron: '*/1 * * * *',
+  cron: '*/2 * * * *',
   singleInstance: true,
   callback: async () => {
     const config = await getConfig();
     const googleClient = createGoogleClient({ key: config.google.map.key, timeout: 30000 });
-    const clickhouseClient = createClient(config.db.clickhouse);
 
     // create info table
     const createTableQuery = `
@@ -75,31 +72,18 @@ const task: Task = {
     };
 
     const locationQuery = `SELECT DISTINCT(location) FROM gh_user_info
-      WHERE location != '' AND location NOT IN (SELECT location FROM location_info) LIMIT 15`;
+      WHERE location != '' AND location NOT IN (SELECT location FROM location_info) LIMIT 10`;
     const results = await query<string[]>(locationQuery);
 
-    const stream = new Readable({
-      objectMode: true,
-      read: () => { },
-    });
-
-    (async () => {
-      for (const loc of results) {
-        const location = loc[0];
-        const parsedLocation = await getParsedLocation(location);
-        if (parsedLocation) {
-          stream.push({ location, ...parsedLocation });
-        }
+    const items: any[] = [];
+    for (const loc of results) {
+      const location = loc[0];
+      const parsedLocation = await getParsedLocation(location);
+      if (parsedLocation) {
+        items.push({ location, ...parsedLocation });
       }
-      stream.push(null);
-    })();
-
-    await clickhouseClient.insert({
-      table: 'location_info',
-      values: stream,
-      format: 'JSONEachRow',
-    });
-    await clickhouseClient.close();
+    }
+    await insertRecords(items, 'location_info');
   }
 };
 

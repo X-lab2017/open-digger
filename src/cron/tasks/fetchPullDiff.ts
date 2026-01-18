@@ -11,7 +11,7 @@ import { Octokit } from '@octokit/rest';
 let round = 0;
 const API_RATE_LIMIT_EXCEEDED = 'API RATE LIMIT EXCEEDED';
 const task: Task = {
-  cron: '*/12 * * * *',
+  cron: '*/20 * * * *',
   singleInstance: false,
   callback: async () => {
 

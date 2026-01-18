@@ -1,8 +1,6 @@
 import { Task } from '..';
 import getConfig from '../../config';
-import { query } from '../../db/clickhouse';
-import { Readable } from 'stream';
-import { createClient } from '@clickhouse/client';
+import { insertRecords, query } from '../../db/clickhouse';
 import { GitHubClient } from 'github-graphql-v4-client';
 import { getLogger } from '../../utils';
 
@@ -10,7 +8,7 @@ import { getLogger } from '../../utils';
  * This task is used to update github users basic info
  */
 const task: Task = {
-  cron: '*/10 * * * *',
+  cron: '40 * * * *',
   singleInstance: false,
   callback: async () => {
 
@@ -119,13 +117,7 @@ const task: Task = {
     if (usersList.length === 0) return;
     logger.info(`Get ${usersList.length} users to update`);
 
-    let processedCount = 0;
-    const stream = new Readable({
-      objectMode: true,
-      read: () => { },
-    });
-    const client = createClient(config.db.clickhouse);
-
+    const items: any[] = [];
     for (const [id, login] of usersList) {
       const user: any = await queryUserInfo(login);
       const item: any = { id: parseInt(id), updated_at: date };
@@ -143,19 +135,12 @@ const task: Task = {
         item['social_accounts.provider'] = (user.socialAccounts ?? []).map(i => i.provider);
         item.created_at = user.createdAt.replace('T', ' ').replace('Z', '');
       }
-      stream.push(item);
-      processedCount++;
-      if (processedCount % 100 === 0) {
-        logger.info(`${processedCount} accounts has been processed.`);
+      items.push(item);
+      if (items.length % 500 === 0) {
+        logger.info(`${items.length} users have been processed.`);
       }
     }
-    stream.push(null);
-    await client.insert({
-      table: 'gh_user_info',
-      values: stream,
-      format: 'JSONEachRow',
-    });
-    await client.close();
+    await insertRecords(items, 'gh_user_info');
   }
 };
 
