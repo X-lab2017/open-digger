@@ -25,7 +25,7 @@ export interface QueryConfig<T = any> {
   limit: number;
   limitOption: 'each' | 'all';
   precision: number;
-  groupBy?: 'org' | string;
+  groupBy?: 'org' | string | string[];
   groupTimeRange?: 'month' | 'quarter' | 'year';
   injectLabelData?: any[];
   options?: T;
@@ -270,7 +270,7 @@ export const getGroupTimeClause = (config: QueryConfig, timeCol: string = 'creat
 export const getGroupIdClause = (config: QueryConfig, type: string = 'repo', timeCol?: string) => {
   return `${(() => {
     const timeColumn = timeCol ?? (config.groupTimeRange ? 'time' : 'events.created_at');
-    if (!config.groupBy) {  // group by repo'
+    if (!config.groupBy) {  // group by repo
       if (type === 'repo')
         return `events.repo_id AS id, events.platform, argMax(events.repo_name, ${timeColumn}) AS name`;
       else
@@ -307,7 +307,11 @@ export const getTopLevelPlatform = (config: QueryConfig, noCount = false) => {
 
 export const getLabelJoinClause = (config: QueryConfig, tableName: string = 'events') => {
   if (config.groupBy && config.groupBy !== 'org' && config.groupBy !== 'repo') {
-    return `INNER JOIN (SELECT id, platform, name, entity_id, entity_type FROM flatten_labels WHERE type='${config.groupBy}') AS l
+    let groupBy: string | string[] = config.groupBy;
+    if (!Array.isArray(groupBy)) {
+      groupBy = [groupBy];
+    }
+    return `INNER JOIN (SELECT id, platform, name, entity_id, entity_type FROM flatten_labels WHERE type IN ('${groupBy.join("','")}')) AS l
     ON (l.entity_id = ${tableName}.repo_id AND l.entity_type = 'Repo' AND l.platform = ${tableName}.platform)
     OR (l.entity_id = ${tableName}.org_id AND l.entity_type = 'Org' AND l.platform = ${tableName}.platform)
     OR (l.entity_id = ${tableName}.actor_id AND l.entity_type = 'User' AND l.platform = ${tableName}.platform)`;

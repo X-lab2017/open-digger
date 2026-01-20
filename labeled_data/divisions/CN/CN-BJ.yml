@@ -14,4 +14,5 @@ meta:
   category: MUNICIPALITY
 data:
   labels:
+    - ':institutions/baai'
     - ':universities/thu'
