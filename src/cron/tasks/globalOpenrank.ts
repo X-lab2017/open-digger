@@ -1,8 +1,9 @@
 import { Task } from '..';
 import * as clickhouse from '../../db/clickhouse';
+import { query } from '../../db/clickhouse';
 import * as neo4j from '../../db/neo4j';
 import { forEveryMonth } from '../../metrics/basic';
-import { getLogger } from '../../utils';
+import { getLogger, waitFor } from '../../utils';
 
 const task: Task = {
   cron: '0 0 12 1 * *',
@@ -17,6 +18,7 @@ const task: Task = {
     const openrankAttenuationFactor = 0.85;
     const openrankMinValue = 0.01;
     const removeUserRelationshipCount = 300;
+    const exportMinOpenrank = 5;
     const activityToOpenrank = activity => 1 / (1 + Math.exp(0.10425 * (-activity + 44.08)));
 
     const createTable = async () => {
@@ -281,6 +283,65 @@ const task: Task = {
       }
     };
 
+    const refreshExportTable = async () => {
+      const exportRepoTableName = 'export_repo';
+      const exportUserTableName = 'export_user';
+      const exportTableQueries: string[] = [
+        `CREATE TABLE IF NOT EXISTS ${exportRepoTableName}
+  (\`id\` UInt64,
+  \`platform\` LowCardinality(String),
+  \`repo_name\` LowCardinality(String),
+  \`org_id\` UInt64
+  )
+  ENGINE = ReplacingMergeTree
+  ORDER BY (id, platform)
+  SETTINGS index_granularity = 8192`,
+        `CREATE TABLE IF NOT EXISTS ${exportUserTableName}
+  (\`id\` UInt64,
+  \`platform\` LowCardinality(String),
+  \`actor_login\` LowCardinality(String)
+  )
+  ENGINE = ReplacingMergeTree
+  ORDER BY (id, platform)
+  SETTINGS index_granularity = 8192`,
+        `ALTER TABLE ${exportRepoTableName} DELETE WHERE id > 0`,
+        `ALTER TABLE ${exportUserTableName} DELETE WHERE id > 0`,
+        `INSERT INTO ${exportRepoTableName}
+  SELECT
+    argMax(repo_id, time) AS id, platform, repo_name, any(orgid) AS org_id
+  FROM
+  (
+    SELECT
+      repo_id, platform, argMax(repo_name, created_at) AS repo_name, MAX(created_at) AS time, any(org_id) AS orgid 
+    FROM global_openrank
+    WHERE type='Repo'
+      AND ((platform, repo_id) IN (SELECT platform, entity_id FROM flatten_labels WHERE entity_type='Repo')
+      OR (platform, org_id) IN (SELECT platform, entity_id FROM flatten_labels WHERE entity_type='Org')
+      OR (platform, repo_id) IN (SELECT platform, repo_id FROM global_openrank WHERE openrank > ${exportMinOpenrank}))
+    GROUP BY repo_id, platform
+  )
+  GROUP BY repo_name, platform`,
+        `INSERT INTO ${exportUserTableName}
+  SELECT
+    argMax(actor_id, time) AS id, platform, actor_login
+  FROM
+  (
+    SELECT
+      actor_id, platform, argMax(actor_login, created_at) AS actor_login, MAX(created_at) AS time
+    FROM global_openrank
+    WHERE type='User'
+      AND ((platform, actor_id) IN (SELECT platform, entity_id FROM flatten_labels WHERE entity_type='User')
+      OR (platform, actor_id) IN (SELECT platform, actor_id FROM global_openrank WHERE openrank > ${exportMinOpenrank}))
+    GROUP BY actor_id, platform
+  )
+  GROUP BY actor_login, platform`,
+      ];
+      for (const q of exportTableQueries) {
+        await query(q);
+        await waitFor(2000);
+      }
+    };
+
     // start process
     await createTable();
     const now = new Date();
@@ -292,6 +353,7 @@ const task: Task = {
         }
       }
     });
+    await refreshExportTable();
   },
 };
 
