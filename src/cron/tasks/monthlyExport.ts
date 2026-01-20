@@ -3,13 +3,18 @@ import { appendFileSync, existsSync, mkdirSync, readFileSync, writeFileSync } fr
 import { join } from 'path';
 import { Task } from '..';
 import { query, queryStream } from '../../db/clickhouse';
-import { getRepoActivity, getRepoOpenrank, getUserActivity, getUserOpenrank, getAttention } from '../../metrics/indices';
 import { forEveryMonthByConfig, forEveryQuarterByConfig, forEveryYearByConfig, timeDurationConstants } from '../../metrics/basic';
+import {
+  chaossActiveDatesAndTimes, chaossBusFactor, chaossChangeRequestAge, chaossChangeRequestResolutionDuration,
+  chaossChangeRequestResponseTime, chaossChangeRequestReviews, chaossChangeRequests, chaossChangeRequestsAccepted,
+  chaossCodeChangeLines, chaossContributors, chaossInactiveContributors, chaossIssueAge, chaossIssueResolutionDuration,
+  chaossIssueResponseTime, chaossIssuesAndChangeRequestActive, chaossIssuesClosed, chaossIssuesNew,
+  chaossNewContributors, chaossTechnicalFork
+} from '../../metrics/chaoss';
+import { contributorEmailSuffixes, repoIssueComments, repoParticipants, repoStars } from '../../metrics/metrics';
+import { getRepoActivity, getRepoOpenrank, getUserActivity, getUserOpenrank, getAttention } from '../../metrics/indices';
 import { getLogger, waitFor } from '../../utils';
 import getConfig from '../../config';
-import { chaossActiveDatesAndTimes, chaossBusFactor, chaossChangeRequestAge, chaossChangeRequestResolutionDuration, chaossChangeRequestResponseTime, chaossChangeRequestReviews, chaossChangeRequests, chaossChangeRequestsAccepted, chaossCodeChangeLines, chaossContributors, chaossInactiveContributors, chaossIssueAge, chaossIssueResolutionDuration, chaossIssueResponseTime, chaossIssuesAndChangeRequestActive, chaossIssuesClosed, chaossIssuesNew, chaossNewContributors, chaossTechnicalFork } from '../../metrics/chaoss';
-import { contributorEmailSuffixes, repoIssueComments, repoParticipants, repoStars } from '../../metrics/metrics';
-import { getLabelData } from '../../labelDataUtils';
 import { EOL } from 'os';
 
 const task: Task = {
@@ -18,90 +23,10 @@ const task: Task = {
   callback: async () => {
 
     const config = await getConfig();
-    const exportRepoTableName = 'export_repo';
-    const exportUserTableName = 'export_user';
-
     const logger = getLogger('MonthlyExportTask');
 
-    const needInitExportTable = config.export.needInit;
-    const initExportTable = async () => {
-      // export all labeled repos/orgs/users anyway
-      const platform = new Map<string, {
-        repos: Set<number>;
-        orgs: Set<number>,
-        users: Set<number>,
-      }>();
-      const labelData = getLabelData();
-      labelData.forEach(l => {
-        l.platforms.filter(p => p.type === 'Code Hosting').forEach(p => {
-          if (!platform.has(p.name)) {
-            platform.set(p.name, {
-              repos: new Set<number>(),
-              orgs: new Set<number>(),
-              users: new Set<number>(),
-            });
-          }
-          p.orgs.forEach(o => platform.get(p.name)!.orgs.add(o.id));
-          p.repos.forEach(r => platform.get(p.name)!.repos.add(r.id));
-          p.users.forEach(u => platform.get(p.name)!.users.add(u.id));
-        });
-      });
-      // handle export table first
-      // - create the table if not exist
-      // - insert repo and user with openrank > e in any month in history or in label data
-      const exportTableQueries: string[] = [
-        `CREATE TABLE IF NOT EXISTS ${exportRepoTableName}
-  (\`id\` UInt64,
-  \`platform\` LowCardinality(String),
-  \`repo_name\` LowCardinality(String),
-  \`org_id\` UInt64
-  )
-  ENGINE = ReplacingMergeTree
-  ORDER BY (id, platform)
-  SETTINGS index_granularity = 8192`,
-        `CREATE TABLE IF NOT EXISTS ${exportUserTableName}
-  (\`id\` UInt64,
-  \`platform\` LowCardinality(String),
-  \`actor_login\` LowCardinality(String)
-  )
-  ENGINE = ReplacingMergeTree
-  ORDER BY (id, platform)
-  SETTINGS index_granularity = 8192`,
-        `ALTER TABLE ${exportRepoTableName} DELETE WHERE id > 0`,
-        `ALTER TABLE ${exportUserTableName} DELETE WHERE id > 0`,
-        `INSERT INTO ${exportRepoTableName}
-  SELECT argMax(repo_id, time) AS id, platform, repo_name, any(orgid) AS org_id FROM
-  (SELECT repo_id, platform, argMax(repo_name, created_at) AS repo_name, MAX(created_at) AS time, any(org_id) AS orgid 
-  FROM global_openrank WHERE type='Repo' AND (repo_id IN (SELECT repo_id FROM global_openrank WHERE openrank > 5 AND type='Repo') OR ${(() => {
-          const arr: string[] = [];
-          for (const [name, p] of platform.entries()) {
-            if (p.repos.size > 0) arr.push(`(platform = '${name}' AND repo_id IN (${Array.from(p.repos).join(',')}))`);
-            if (p.orgs.size > 0) arr.push(`(platform = '${name}' AND org_id IN (${Array.from(p.orgs).join(',')}))`);
-          }
-          return arr.join(' OR ');
-        })()}) GROUP BY repo_id, platform)
-  GROUP BY repo_name, platform`,
-        `INSERT INTO ${exportUserTableName}
-  SELECT argMax(actor_id, time) AS id, platform, actor_login FROM
-  (SELECT actor_id, platform, argMax(actor_login, created_at) AS actor_login, MAX(created_at) AS time
-  FROM global_openrank WHERE type='User' AND (actor_id IN (SELECT actor_id FROM global_openrank WHERE openrank > 5 AND type='User') OR ${(() => {
-          const arr: string[] = [];
-          for (const [name, p] of platform.entries()) {
-            if (p.users.size > 0) arr.push(`(platform = '${name}' AND actor_id IN (${Array.from(p.users).join(',')}))`);
-          }
-          return arr.join(' OR ');
-        })()}) GROUP BY actor_id, platform)
-  GROUP BY actor_login, platform`,
-      ];
-      for (const q of exportTableQueries) {
-        await query(q);
-        await waitFor(2000); // wait for 2s to make sure the preceeding query finished
-      }
-    };
-    if (needInitExportTable) {
-      await initExportTable();
-      logger.info('Init export table done.');
-    }
+    const exportRepoTableName = 'export_repo';
+    const exportUserTableName = 'export_user';
 
     const date = new Date();
     date.setMonth(date.getMonth() - 1);
@@ -205,11 +130,14 @@ const task: Task = {
             if (!existsSync(path)) {
               mkdirSync(path, { recursive: true });
             }
-            writeFileSync(join(path, 'meta.json'), JSON.stringify({
-              updatedAt: new Date().getTime(),
-              type: option.type ?? undefined,
-              id: parseInt(id),
-            }));
+            if (['getRepoActivity', 'getUserActivity', 'repoStars'].includes(func.name)) {
+              // write meta data in activity calculation
+              writeFileSync(join(path, 'meta.json'), JSON.stringify({
+                updatedAt: new Date().getTime(),
+                type: option.type ?? undefined,
+                id: parseInt(id),
+              }));
+            }
           }
 
           for (const [path, content] of exportData.entries()) {
@@ -257,7 +185,9 @@ const task: Task = {
       const repoPartitions = await getPartition('Repo');
       for (let i = 0; i < repoPartitions.length; i++) {
         const { min, max } = repoPartitions[i];
-        option.whereClause = `repo_id BETWEEN ${min} AND ${max} AND repo_id IN (SELECT id FROM ${exportRepoTableName})`;
+        option.whereClause = `repo_id BETWEEN ${min} AND ${max} AND
+          (platform, repo_id) IN (SELECT platform, id FROM ${exportRepoTableName}) AND
+          (platform, repo_id) NOT IN (SELECT 'GitHub', id FROM gh_repo_info WHERE status='not_found')`;
         option.type = 'repo';
         // [X-lab index] repo activity
         await processMetric(getRepoActivity, { ...option, options: { developerDetail: true } },
@@ -321,31 +251,12 @@ const task: Task = {
       }
       logger.info('Process repo export task done.');
 
-      logger.info('Start to process repo brief export task.');
-      const repoBriefPartitions = await getPartition('Repo', 200);
-      for (let i = 0; i < repoBriefPartitions.length; i++) {
-        const { min, max } = repoBriefPartitions[i];
-        option.whereClause = `repo_id BETWEEN ${min} AND ${max}
-          AND (platform, repo_id) IN (SELECT platform, repo_id FROM global_openrank WHERE type='Repo' AND openrank > 3)`;
-        option.type = 'repo';
-        // [X-lab index] repo activity
-        await processMetric(getRepoActivity, { ...option, options: { developerDetail: false } }, getField('activity'));
-        // [X-lab index] repo openrank
-        await processMetric(getRepoOpenrank, option, getField('openrank'));
-        // [X-lab metric] repo participants
-        await processMetric(repoParticipants, option, getField('count', { targetKey: 'participants' }));
-        // [CHAOSS] contributors
-        await processMetric(chaossContributors, option, getField('count', { targetKey: 'contributors' }));
-        // [X-lab metric] repo stars
-        await processMetric(repoStars, option, getField('count', { targetKey: 'stars' }));
-        logger.info(`Process repo brief for round ${i} done.`);
-      }
-
       logger.info('Start to process user export task.');
       const userPartitions = await getPartition('User');
       for (let i = 0; i < userPartitions.length; i++) {
         const { min, max } = userPartitions[i];
-        option.whereClause = `actor_id BETWEEN ${min} AND ${max} AND actor_id IN (SELECT id FROM ${exportUserTableName})`;
+        option.whereClause = `actor_id BETWEEN ${min} AND ${max} AND actor_id IN (SELECT id FROM ${exportUserTableName}) AND
+          (platform, actor_id) NOT IN (SELECT 'GitHub', id FROM gh_user_info WHERE status='not_found')`;
         option.type = 'user';
         // user activity
         await processMetric(getUserActivity, { ...option, options: { repoDetail: false } },
@@ -372,143 +283,45 @@ const task: Task = {
       }
     };
 
-    // export owner meta data
-    const exportOwnerMeta = async () => {
-      const sql = `SELECT platform, splitByChar('/', repo_name)[1] AS owner, groupArray(repo_name), groupArray(id), any(org_id) FROM ${exportRepoTableName} GROUP BY owner, platform`;
-      await queryStream(sql, row => {
-        const [platform, owner, repos, ids, orgId] = row;
-        updateMetaData(join(exportBasePath, platform.toLowerCase(), owner, 'meta.json'), {
-          updatedAt: new Date().getTime(),
-          id: orgId === '0' ? undefined : parseInt(orgId),
-          type: orgId === '0' ? 'user' : 'org',
-          repos: repos.map((name, index) => {
-            return {
-              name,
-              id: parseInt(ids[index]),
-            };
-          }),
-        });
-      });
-      logger.info('Export owner meta data done.');
-    };
-
     // export label data
     const exportLabelData = async () => {
-      const labelData = getLabelData();
-      const labelMap = new Map<string, any[]>();
-      const labelDetailMap = new Map<string, { label: any, platforms: { name: string, type: string, orgs: Map<string, number>; repos: Map<string, number>; users: Map<string, number> }[] }>();
-      for (const l of labelData) {
-        const update = (name: any) => {
-          if (!labelMap.has(name)) labelMap.set(name, []);
-          // avoid duplicate label
-          if (labelMap.get(name)!.findIndex(i => i.id === l.identifier) < 0) {
-            labelMap.get(name)!.push({
-              id: l.identifier,
-              name: l.name,
-              type: l.type,
-            });
-          }
-        };
-        labelDetailMap.set(l.identifier, {
-          label: {
-            id: l.identifier,
-            name: l.name,
-            type: l.type,
-          },
-          platforms: [],
-        });
-        const labelDetail = labelDetailMap.get(l.identifier)!;
-        for (const p of l.platforms) {
-          const { name, type, orgs, repos, users } = p;
-          const item = {
-            name,
-            type,
-            orgs: new Map<string, number>(),
-            repos: new Map<string, number>(),
-            users: new Map<string, number>(),
-          };
-          await Promise.all([
-            (async () => {
-              if (!orgs || orgs.length <= 0) return;
-              const sql = `SELECT org_login, ROUND(SUM(repo_openrank), 2) AS openrank FROM
-    (SELECT org_id, argMax(org_login, created_at) AS org_login, repo_id, argMax(openrank, created_at) AS repo_openrank FROM global_openrank
-    WHERE org_id IN (${orgs.map(o => o.id).join(',')}) AND platform = '${name}' AND type='Repo'
-    GROUP BY org_id, repo_id)
-    GROUP BY org_login
-    ORDER BY openrank DESC`;
-              await queryStream(sql, row => {
-                const [orgLogin, openrank] = row;
-                item.orgs.set(orgLogin, openrank);
-                update(`${name.toLowerCase()}/${orgLogin}`);
-              });
-            })(),
-            (async () => {
-              if (!orgs || orgs.length <= 0) return;
-              // add the label to repos under the org too.
-              const sql = `SELECT argMax(repo_name, created_at), ROUND(argMax(openrank, created_at), 2) AS openrank FROM global_openrank WHERE org_id IN (${orgs.map(o => o.id).join(',')}) AND platform = '${name}' AND type='Repo' GROUP BY repo_id ORDER BY openrank DESC`
-              await queryStream(sql, row => {
-                const [repoName] = row;
-                update(`${name.toLowerCase()}/${repoName}`);
-              });
-            })(),
-            (async () => {
-              if (!repos || repos.length <= 0) return;
-              const sql = `SELECT argMax(repo_name, created_at), ROUND(argMax(openrank, created_at), 2) AS openrank FROM global_openrank WHERE repo_id IN (${repos.map(r => r.id).join(',')}) AND platform='${name}' AND type='Repo' GROUP BY repo_id ORDER BY openrank DESC`;
-              await queryStream(sql, row => {
-                const [repoName, openrank] = row;
-                item.repos.set(repoName, openrank);
-                update(`${name.toLowerCase()}/${repoName}`);
-              });
-            })(),
-            (async () => {
-              if (!users || users.length <= 0) return;
-              const sql = `SELECT argMax(actor_login, created_at), ROUND(argMax(openrank, created_at), 2) AS openrank FROM global_openrank WHERE actor_id IN (${users.map(u => u.id).join(',')}) AND platform='${name}' AND type='User' GROUP BY actor_id ORDER BY openrank DESC`;
-              await queryStream(sql, row => {
-                const [actorLogin, openrank] = row;
-                item.users.set(actorLogin, openrank);
-                update(`${name.toLowerCase()}/${actorLogin}`);
-              });
-            })(),
-          ]);
-          labelDetail.platforms.push(item);
-        }
-        logger.info(`Process ${l.identifier} done.`);
-      }
-
-      for (const [name, labels] of labelMap.entries()) {
-        updateMetaData(join(exportBasePath, name, 'meta.json'), {
-          labels,
+      logger.info('Start to export repo label data.');
+      const labelPriority = new Map<string, number>([
+        ['Project', 1],
+        ['Tech-0', 2],
+        ['Community', 3],
+        ['University-0', 4],
+        ['Institution-0', 5],
+        ['Company', 6],
+        ['Foundation', 7],
+        ['Division-0', 8],
+      ]);
+      const repoLabels = await query(`SELECT p, n, arrayDistinct(groupArray(tuple(li, ln, lt))) FROM
+(SELECT o.platform AS p, o.repo_name AS n, l.id AS li, l.name ln, l.type AS lt FROM
+  (SELECT platform, repo_id, any(org_id) AS org_id, argMax(repo_name, created_at) AS repo_name FROM
+  global_openrank WHERE type = 'Repo' AND (platform, repo_id) IN (SELECT platform, id FROM export_repo)
+  AND (platform, repo_id) NOT IN (SELECT 'GitHub', id FROM gh_repo_info WHERE status='not_found')
+  GROUP BY platform, repo_id) o,
+  (SELECT * FROM flatten_labels WHERE type IN ('Project', 'Community', 'Foundation', 'Company', 'Tech-0', 'University-0', 'Institution-0', 'Division-0')) l
+WHERE o.platform=l.platform AND ((o.repo_id=l.entity_id AND l.entity_type='Repo') OR (o.org_id=l.entity_id AND l.entity_type='Org')))
+GROUP BY p, n`);
+      for (const [platform, repoName, labels] of repoLabels) {
+        updateMetaData(join(exportBasePath, platform.toLowerCase(), repoName, 'meta.json'), {
+          labels: labels.map(([labelId, labelName, labelType]) => ({
+            id: labelId,
+            name: labelName,
+            type: labelType,
+          })).sort((a, b) => labelPriority.get(b.type)! - labelPriority.get(a.type)!),
         });
       }
-      const convertMap = (map: Map<string, number>) => {
-        if (map.size === 0) return undefined;
-        return Array.from(map.entries()).sort((a, b) => b[1] - a[1]).map(i => { return { name: i[0], openrank: i[1] } });
-      };
-      for (const [labelId, detail] of labelDetailMap.entries()) {
-        const labelPath = join(config.export.path, 'label_data', labelId);
-        mkdirSync(labelPath, { recursive: true });
-        writeFileSync(join(labelPath, 'data.json'), JSON.stringify({
-          ...detail.label,
-          platforms: detail.platforms.map(p => ({
-            name: p.name,
-            type: p.type,
-            orgs: convertMap(p.orgs),
-            repos: convertMap(p.repos),
-            users: convertMap(p.users),
-          })),
-        }));
-      }
-      logger.info('Export label data done.');
+      logger.info('Export repo label data done.');
     };
 
     const exportUserInfo = async () => {
-      let processedCount = 0;
-      const userInfoQuery = `SELECT platform, b.actor_login, a.location, a.bio, a.name, a.company FROM
-    (SELECT 'GitHub' AS platform, id, location, bio, name, company FROM gh_user_info WHERE status='normal' AND id IN (SELECT id FROM ${exportUserTableName} WHERE platform='GitHub'))a
-    LEFT JOIN
-    (SELECT id, platform, actor_login FROM ${exportUserTableName})b
-    ON a.id = b.id AND a.platform = b.platform
-    LIMIT 1 BY b.id`;
+      logger.info('Start to export user info.');
+      const userInfoQuery = `SELECT platform, login, location, bio, name, company
+      FROM user_info WHERE (platform, id) IN (SELECT platform, id FROM ${exportUserTableName}) AND 
+      (platform, id) NOT IN (SELECT 'GitHub', id FROM gh_user_info WHERE status='not_found')`;
       await queryStream(userInfoQuery, row => {
         const [platform, login, location, bio, name, company] = row;
         updateMetaData(join(exportBasePath, platform.toLowerCase(), login, 'meta.json'), {
@@ -519,10 +332,6 @@ const task: Task = {
             company: company ?? undefined,
           }
         });
-        processedCount++;
-        if (processedCount % 10000 === 0) {
-          logger.info(`${processedCount} user info has been exported.`);
-        }
       });
       logger.info('Export user info done');
     }
@@ -578,7 +387,6 @@ ORDER BY
     };
 
     await exportMetrics();
-    await exportOwnerMeta();
     await exportLabelData();
     await exportUserInfo();
     await exportAllRepoList();
