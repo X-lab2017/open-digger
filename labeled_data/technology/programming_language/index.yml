@@ -14,7 +14,7 @@ data:
     - ':foundations/ruby/ruby'
     - ':foundations/rust/rust'
     - ':foundations/zig/zig'
-    - ':institutions/nokia_bell_labs/cpp'
+    - ':institutions/bell_labs/cpp'
     - ':universities/mit/julia'
     - ':universities/puc_rio/lua'
     - elixir

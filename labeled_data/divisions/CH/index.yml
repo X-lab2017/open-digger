@@ -80,6 +80,7 @@ meta:
 data:
   labels:
     - ':foundations/anoma'
+    - ':institutions/cern'
     - CH-AG
     - CH-AI
     - CH-AR

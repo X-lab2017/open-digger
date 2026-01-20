@@ -283,6 +283,7 @@ data:
     - ':foundations/rust'
     - ':foundations/trino'
     - ':foundations/zig'
+    - ':institutions/bell_labs'
     - ':universities/illinois'
     - ':universities/mit'
     - ':universities/nyu'
