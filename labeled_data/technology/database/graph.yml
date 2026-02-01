@@ -18,6 +18,8 @@ data:
           name: DevrexLabs/OrigoDB
         - id: 893031915
           name: HelixDB/helix-db
+        - id: 77385607
+          name: JanusGraph/janusgraph
         - id: 1071734040
           name: LadybugDB/ladybug
         - id: 92834468
@@ -26,6 +28,8 @@ data:
           name: PureSolTechnologies/DuctileDB
         - id: 84458512
           name: RedisGraph/RedisGraph
+        - id: 1040715058
+          name: Relatude/Relatude.DB
         - id: 43494700
           name: SparsityTechnologies/sparksee-server
         - id: 528766495
@@ -80,10 +84,12 @@ data:
           name: memgraph/memgraph
         - id: 81411018
           name: microsoft/GraphEngine
+        - id: 6650539
+          name: neo4j/neo4j
         - id: 7083240
           name: orientechnologies/orientdb
-        - id: 1075506724
-          name: orneryd/Mimir
+        - id: 1111263109
+          name: orneryd/NornicDB
         - id: 26917250
           name: pkumod/gStore
         - id: 166387176
@@ -94,12 +100,16 @@ data:
           name: ragedb/ragedb
         - id: 73235061
           name: rayokota/hgraphdb
+        - id: 1051002990
+          name: sanonone/kektordb
         - id: 743502
           name: sones/sones
         - id: 55578752
           name: stellardb/StellarDB
         - id: 238509
           name: stevedekorte/vertexdb
+        - id: 436658287
+          name: surrealdb/surrealdb
         - id: 198466472
           name: terminusdb/terminusdb
         - id: 3548254

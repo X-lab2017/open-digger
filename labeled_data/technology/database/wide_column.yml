@@ -18,22 +18,36 @@ data:
           name: MonetDB/MonetDB
         - id: 402945349
           name: StarRocks/StarRocks
+        - id: 150954997
+          name: VictoriaMetrics/VictoriaMetrics
         - id: 2524488
           name: apache/accumulo
+        - id: 206424
+          name: apache/cassandra
         - id: 5683653
           name: apache/drill
+        - id: 6358188
+          name: apache/druid
+        - id: 20089857
+          name: apache/hbase
         - id: 36349344
           name: apache/trafodion
         - id: 18129915
           name: baidu/tera
+        - id: 182849188
+          name: delta-io/delta
         - id: 191676087
           name: eleme/lindb
         - id: 1584552
           name: hypertable/hypertable
+        - id: 13124802
+          name: influxdata/influxdb
         - id: 191442206
           name: kashirin-alex/swc-db
         - id: 473235285
           name: polarsignals/frostdb
+        - id: 5349565
+          name: prestodb/presto
         - id: 28449431
           name: scylladb/scylla
         - id: 41209174

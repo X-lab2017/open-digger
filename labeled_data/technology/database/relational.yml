@@ -39,12 +39,20 @@ data:
           name: BTrDB/btrdb-server
         - id: 581145740
           name: ByConity/ByConity
+        - id: 52080367
+          name: CUBRID/cubrid
+        - id: 60246359
+          name: ClickHouse/ClickHouse
+        - id: 654870350
+          name: ClockworkLabs/SpacetimeDB
         - id: 129072319
           name: CovenantSQL/CovenantSQL
         - id: 151762200
           name: CptTZ/SmallSQL
         - id: 25871447
           name: DaveVoorhis/Rel
+        - id: 1056702615
+          name: DavidLiedle/DriftDB
         - id: 93621710
           name: DeepFound/deep_engine
         - id: 8799170
@@ -53,6 +61,8 @@ data:
           name: Expensify/Bedrock
         - id: 54005538
           name: FirebirdSQL/firebird
+        - id: 1034164151
+          name: Frigatebird-db/frigatebird
         - id: 496817075
           name: GlareDB/glaredb
         - id: 345982729
@@ -67,6 +77,8 @@ data:
           name: JuliaData/JuliaDB.jl
         - id: 533032
           name: LinkedInAttic/sensei
+        - id: 19816070
+          name: MariaDB/server
         - id: 135423959
           name: Mckoi/origsqldb
         - id: 316690542
@@ -101,14 +113,20 @@ data:
           name: amelielabs/amelie
         - id: 3927863
           name: antonmks/Alenka
+        - id: 358917318
+          name: apache/arrow-datafusion
         - id: 1918497
           name: apache/derby
         - id: 99919302
           name: apache/doris
+        - id: 6358188
+          name: apache/druid
         - id: 20587599
           name: apache/flink
         - id: 41952293
           name: apache/hawq
+        - id: 206444
+          name: apache/hive
         - id: 56128733
           name: apache/impala
         - id: 496505424
@@ -123,6 +141,8 @@ data:
           name: apache/kyuubi
         - id: 20473418
           name: apache/phoenix
+        - id: 19961085
+          name: apache/pinot
         - id: 49876476
           name: apache/shardingsphere
         - id: 17165658
@@ -163,6 +183,8 @@ data:
           name: cmu-db/noisepage
         - id: 420965027
           name: cnosdb/cnosdb
+        - id: 16563587
+          name: cockroachdb/cockroach
         - id: 296950535
           name: codemix/ts-sql
         - id: 254418044
@@ -177,6 +199,8 @@ data:
           name: cznic/ql
         - id: 824462634
           name: darshan117/BroDB
+        - id: 302827809
+          name: datafuselabs/databend
         - id: 2894420
           name: deveel/deveeldb
         - id: 52507351
@@ -187,6 +211,8 @@ data:
           name: dreamdbvilas/wonderdb
         - id: 97518356
           name: dremio/dremio-oss
+        - id: 138754790
+          name: duckdb/duckdb
         - id: 341208515
           name: edgelesssys/edgelessdb
         - id: 61373806
@@ -203,6 +229,8 @@ data:
           name: eyalroz/c-store
         - id: 172208960
           name: eztools-software/FileDb
+        - id: 388946490
+          name: facebookincubator/velox
         - id: 40127179
           name: featurebasedb/featurebase
         - id: 392839612
@@ -283,6 +311,8 @@ data:
           name: myscale/MyScaleDB
         - id: 24494032
           name: mysql/mysql-server
+        - id: 351806852
+          name: neondatabase/neon
         - id: 147880351
           name: njaard/sonnerie
         - id: 372536760
@@ -317,10 +347,14 @@ data:
           name: postgres/postgres
         - id: 258454329
           name: ppml38/icecoal
+        - id: 5349565
+          name: prestodb/presto
         - id: 26774602
           name: proullon/ramsql
         - id: 275838748
           name: qikkDB/qikkdb
+        - id: 19257422
+          name: questdb/questdb
         - id: 5665061
           name: radare/sdb
         - id: 117920609
@@ -329,6 +363,8 @@ data:
           name: rayokota/kareldb
         - id: 393235957
           name: risinglightdb/risinglight
+        - id: 453068084
+          name: risingwavelabs/risingwave
         - id: 23247808
           name: rqlite/rqlite
         - id: 101723057
@@ -351,6 +387,8 @@ data:
           name: stewartsmith/drizzle
         - id: 975891605
           name: stoolap/stoolap
+        - id: 436658287
+          name: surrealdb/surrealdb
         - id: 591304097
           name: sutoiku/puffin
         - id: 196353673
@@ -363,6 +401,8 @@ data:
           name: tinyplex/tinybase
         - id: 22868877
           name: traildb/traildb
+        - id: 166515022
+          name: trinodb/trino
         - id: 697976
           name: twitter-archive/snowflake
         - id: 149626591
@@ -377,6 +417,8 @@ data:
           name: yaledb/calvin
         - id: 456549280
           name: ydb-platform/ydb
+        - id: 105944401
+          name: yugabyte/yugabyte-db
         - id: 23452009
           name: yxymit/DBx1000
         - id: 334353425
