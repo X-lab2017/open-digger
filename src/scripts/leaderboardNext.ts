@@ -73,7 +73,7 @@ import { existsSync, mkdirSync, writeFileSync } from "fs";
           precision: 2,
           groupBy: groupType,
           groupTimeRange: groupByTimeType,
-          label: scopeLabel ? LabelUtil.get(scopeLabel) : undefined,
+          repoLabel: scopeLabel ? LabelUtil.get(scopeLabel) : undefined,
         };
         const openrankData = await getRepoOpenrank(options);
         let idOrNames: any = undefined;
