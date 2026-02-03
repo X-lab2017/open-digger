@@ -16,7 +16,6 @@ import {
   getLabelJoinClause
 } from './basic';
 import * as clickhouse from '../db/clickhouse';
-import { getPlatformData } from '../labelDataUtils';
 
 export const ISSUE_COMMENT_WEIGHT = 0.5252;
 export const OPEN_ISSUE_WEIGHT = 2.2235;
@@ -94,115 +93,22 @@ ${getOutterOrderAndLimit(config, 'openrank')}`;
 }
 
 interface RepoCommunityOpenRankConfig {
-  limit: number;
-  withBot: boolean;
-};
-export const getRepoCommunityOpenrank = async (config: QueryConfig<RepoCommunityOpenRankConfig>) => {
-  config = getMergedConfig(config);
-  const whereClause: string[] = [];
-  const repoWhereClause = await getRepoWhereClause(config);
-  if (repoWhereClause) whereClause.push(repoWhereClause);
-  const timeRangeClause = getTimeRangeWhereClause(config);
-  if (timeRangeClause) whereClause.push(timeRangeClause);
-  const limit = (config.options?.limit == undefined) ? 30 : config.options.limit;
-  if (config.options?.withBot === false) {
-    const botLabelData = getPlatformData([':bot']);
-    for (const b of botLabelData) {
-      whereClause.push(`(NOT (platform='${b.name}' AND actor_id IN [${b.users.map(u => u.id).join(',')}]))`);
-    }
-    whereClause.push(`(actor_login NOT LIKE '%[bot]')`);
-  }
-
-  const sql = `
-${getWithClause(config)}
-SELECT
-  id,
-  ${getTopLevelPlatform(config, true)},
-  argMax(name, time) AS name,
-  ${getGroupArrayInsertAtClause(config, { key: 'openrank', noPrecision: true, defaultValue: '[]' })}
-FROM
-(
-  SELECT
-    id, argMax(name, time) AS name,
-    ${(config.groupBy && config.groupBy !== 'org' && config.groupBy !== 'repo') ? "'All'" : 'p'} AS platform,
-    time,
-    ${limit > 0 ?
-      `arraySlice(groupArray((p, actor_id, actor_login, openrank)), 1, ${limit}) AS openrank` :
-      `groupArray((p, actor_id, actor_login, openrank)) AS openrank`}
-  FROM
-    (
-      SELECT
-        ${getGroupIdClause(config, 'repo', 'time')},
-        time,
-        platform AS p,
-        actor_id,
-        argMax(actor_login, time) AS actor_login,
-        SUM(openrank) AS openrank
-      FROM
-        (
-          SELECT
-            ${getGroupTimeClause(config, 'g.created_at')},
-            g.platform AS platform,
-            g.repo_id AS repo_id,
-            argMax(g.repo_name, time) AS repo_name,
-            argMax(g.org_id, time) AS org_id,
-            argMax(g.org_login, time) AS org_login,
-            c.actor_id AS actor_id,
-            argMax(c.actor_login, time) AS actor_login,
-            SUM(c.openrank * g.openrank / r.openrank) AS openrank
-          FROM
-            (SELECT * FROM community_openrank WHERE ${whereClause.join(' AND ')}) c,
-            (SELECT * FROM global_openrank WHERE ${whereClause.join(' AND ')}) g,
-            (SELECT repo_id, platform, created_at, SUM(openrank) AS openrank FROM community_openrank WHERE actor_id > 0 AND ${whereClause.join(' AND ')} GROUP BY repo_id, platform, created_at) r
-          WHERE
-            c.actor_id > 0
-            AND c.repo_id = g.repo_id
-            AND c.platform = g.platform
-            AND c.created_at = g.created_at
-            AND g.repo_id = r.repo_id
-            AND g.platform = r.platform
-            AND g.created_at = r.created_at
-          GROUP BY
-            platform, repo_id, actor_id, time
-        ) data
-      GROUP BY id, actor_id, p, time
-      ORDER BY openrank DESC
-    ) AS events
-    ${getLabelJoinClause(config)}
-    GROUP BY id, time, platform
-)
-GROUP BY id, platform
-${getOutterOrderAndLimit({ ...config, order: undefined }, 'openrank')}
-`;
-  const result = await clickhouse.query(sql);
-  return processQueryResult(result, ['openrank']);
-};
-
-interface UserCommunityOpenRankConfig {
-  withoutDetail?: boolean;
   limit?: number;
   withBot?: boolean;
 };
-export const getUserCommunityOpenrank = async (config: QueryConfig<UserCommunityOpenRankConfig>) => {
+export const getRepoCommunityOpenrank = async (config: QueryConfig<RepoCommunityOpenRankConfig>) => {
   config = getMergedConfig(config);
-  const whereClause: string[] = [];
+  const whereClauses: string[] = [];
   const repoWhereClause = await getRepoWhereClause(config);
-  if (repoWhereClause) whereClause.push(repoWhereClause);
-  const userWhereClause = await getUserWhereClause(config, 'id');
-  const innerUserWhereClause = await getUserWhereClause(config);
-  if (innerUserWhereClause) {
-    whereClause.push(`repo_id IN (SELECT repo_id FROM community_openrank WHERE ${innerUserWhereClause})`);
-  }
+  if (repoWhereClause) whereClauses.push(repoWhereClause);
+  const userWhereClause = await getUserWhereClause(config);
+  if (userWhereClause) whereClauses.push(userWhereClause);
   const timeRangeClause = getTimeRangeWhereClause(config);
-  if (timeRangeClause) whereClause.push(timeRangeClause);
+  if (timeRangeClause) whereClauses.push(timeRangeClause);
   const limit = (config.options?.limit == undefined) ? 30 : config.options.limit;
-  const withoutDetail = config.options?.withoutDetail;
-  if (config.options?.withBot === false) {
-    const botLabelData = getPlatformData([':bot']);
-    for (const b of botLabelData) {
-      whereClause.push(`(NOT (platform='${b.name}' AND actor_id IN [${b.users.map(u => u.id).join(',')}]))`);
-    }
-    whereClause.push(`(actor_login NOT LIKE '%[bot]')`);
+  let baseTable = 'normalized_community_openrank';
+  if (config.options?.withBot === true) {
+    baseTable = 'normalized_community_openrank_with_bot';
   }
 
   const sql = `
@@ -211,65 +117,99 @@ SELECT
   id,
   ${getTopLevelPlatform(config)},
   argMax(name, time) AS name,
-  ${getGroupArrayInsertAtClause(config, { value: 'openrankValue', key: 'openrank' })},
-  ${withoutDetail ? '[] as openrankDetails' : getGroupArrayInsertAtClause(config, { key: 'openrankDetails', noPrecision: true, defaultValue: '[]' })}
+  ${getGroupArrayInsertAtClause(config, { key: 'openrank' })},
+  ${getGroupArrayInsertAtClause(config, { key: 'details', noPrecision: true, defaultValue: '[]' })}
 FROM
 (
   SELECT
-    id, argMax(name, time) AS name, platform, time,
-    ${withoutDetail ? '' : (limit > 0 ?
-      `arraySlice(groupArray((platform, repo_id, repo_name, openrank)), 1, ${limit}) AS openrankDetails` :
-      `groupArray((platform, repo_id, repo_name, openrank)) AS openrankDetails`) + ','}
-    SUM(openrank) AS openrankValue
+    time, id, argMax(name, time) AS name,
+    SUM(or) AS openrank,
+    ${limit > 0
+      ? `arraySlice(arraySort(x -> -x.4, groupArray(tuple(events.actor_platform, actor_id, actor_login, or))), 1, ${limit}) AS details`
+      : `arraySort(x -> -x.4, groupArray(tuple(events.actor_platform, actor_id, actor_login, or))) AS details`}
   FROM
-    (
-      SELECT
-        ${getGroupIdClause(config, 'user', 'time')},
-        time,
-        platform,
-        repo_id,
-        argMax(repo_name, time) AS repo_name,
-        SUM(openrank) AS openrank
-      FROM
-        (
-          SELECT
-            ${getGroupTimeClause(config, 'g.created_at')},
-            g.platform AS platform,
-            g.repo_id AS repo_id,
-            argMax(g.repo_name, g.created_at) AS repo_name,
-            argMax(g.org_id, g.created_at) AS org_id,
-            argMax(g.org_login, g.created_at) AS org_login,
-            c.actor_id AS actor_id,
-            argMax(c.actor_login, c.created_at) AS actor_login,
-            SUM(c.openrank * g.openrank / r.openrank) AS openrank
-          FROM
-            (SELECT * FROM community_openrank WHERE ${whereClause.join(' AND ')}) c,
-            (SELECT * FROM global_openrank WHERE ${whereClause.join(' AND ')}) g,
-            (SELECT repo_id, platform, created_at, SUM(openrank) AS openrank FROM community_openrank WHERE actor_id > 0 AND ${whereClause.join(' AND ')} GROUP BY repo_id, platform, created_at) r
-          WHERE
-            c.actor_id > 0
-            AND c.repo_id = g.repo_id
-            AND c.platform = g.platform
-            AND c.created_at = g.created_at
-            AND g.repo_id = r.repo_id
-            AND g.platform = r.platform
-            AND g.created_at = r.created_at
-          GROUP BY
-            platform, repo_id, actor_id, time
-        ) data
-      GROUP BY id, repo_id, platform, time
-      ${withoutDetail ? '' : 'ORDER BY openrank DESC'}
-    ) AS events
+  (
+    SELECT
+      ${getGroupTimeClause(config)},
+      ${getGroupIdClause(config, 'repo', 'time')},
+      any(events.platform) AS actor_platform,
+      actor_id, argMax(actor_login, created_at) AS actor_login,
+      SUM(openrank) AS or
+    FROM ${baseTable} events
     ${getLabelJoinClause(config)}
-    GROUP BY id, platform, time
-    ${userWhereClause ? `HAVING ${userWhereClause}` : ''}
-    ${getInnerOrderAndLimit(config, 'openrankValue')}
+    WHERE ${whereClauses.join(' AND ')}
+    ${getInnerGroupBy(config)}, actor_id
+    HAVING or > 0
+  ) events
+  ${getInnerGroupBy(config)}
+  ${getInnerOrderAndLimit(config, 'total_openrank')}
+)
+GROUP BY id, platform
+${getOutterOrderAndLimit(config, 'openrank')}
+`;
+
+  const result = await clickhouse.query(sql);
+  return processQueryResult(result, ['openrank', 'details']);
+};
+
+interface UserCommunityOpenRankConfig {
+  limit?: number;
+  withBot?: boolean;
+  withoutDetail?: boolean;
+};
+export const getUserCommunityOpenrank = async (config: QueryConfig<UserCommunityOpenRankConfig>) => {
+  config = getMergedConfig(config);
+  const whereClauses: string[] = [];
+  const repoWhereClause = await getRepoWhereClause(config);
+  if (repoWhereClause) whereClauses.push(repoWhereClause);
+  const userWhereClause = await getUserWhereClause(config);
+  if (userWhereClause) whereClauses.push(userWhereClause);
+  const timeRangeClause = getTimeRangeWhereClause(config);
+  if (timeRangeClause) whereClauses.push(timeRangeClause);
+  const limit = (config.options?.limit == undefined) ? 30 : config.options.limit;
+  let baseTable = 'normalized_community_openrank';
+  if (config.options?.withBot === true) {
+    baseTable = 'normalized_community_openrank_with_bot';
+  }
+
+  const sql = `
+${getWithClause(config)}
+SELECT
+  id,
+  ${getTopLevelPlatform(config)},
+  argMax(name, time) AS name,
+  ${getGroupArrayInsertAtClause(config, { key: 'openrank', value: 'total_openrank' })},
+  ${getGroupArrayInsertAtClause(config, { key: 'details', noPrecision: true, defaultValue: '[]' })}
+FROM
+(
+  SELECT
+    time,
+    ${getGroupIdClause(config, 'user', 'time')},
+    SUM(or) AS total_openrank,
+    ${limit > 0 ? `arraySlice(groupArray(tuple(events.platform, repo_id, repo_name, or)), 1, ${limit}) AS details` : `groupArray(tuple(events.platform, repo_id, repo_name, or)) AS details`}
+  FROM
+  (
+    SELECT
+      ${getGroupTimeClause(config)},
+      platform,
+      repo_id, argMax(repo_name, created_at) AS repo_name,
+      org_id, argMax(org_login, created_at) AS org_login,
+      actor_id, argMax(actor_login, created_at) AS actor_login,
+      SUM(openrank) AS or
+    FROM ${baseTable} events
+    WHERE ${whereClauses.join(' AND ')}
+    GROUP BY platform, repo_id, org_id, actor_id, time
+    HAVING or > 0
+  ) events
+  ${getLabelJoinClause(config)}
+  ${getInnerGroupBy(config)}
+  ${getInnerOrderAndLimit(config, 'total_openrank')}
 )
 GROUP BY id, platform
 ${getOutterOrderAndLimit(config, 'openrank')}
 `;
   const result = await clickhouse.query(sql);
-  return processQueryResult(result, ['openrank', 'openrankDetails']);
+  return processQueryResult(result, ['openrank', 'details']);
 };
 
 export const basicActivitySqlComponent = `

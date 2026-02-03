@@ -4,7 +4,7 @@ import { forEveryMonthByConfig, getMergedConfig } from "../../metrics/basic";
 import { getRepoCommunityOpenrank } from "../../metrics/indices";
 import { join } from "path";
 import { query } from "../../db/clickhouse";
-import { getLabelData } from "../../labelDataUtils";
+import { getLabelData, LabelUtil } from "../../labelDataUtils";
 import { getLogger } from "../../utils";
 
 export interface ProjectDetail {
@@ -80,10 +80,11 @@ export const run = async (baseDir: string, memberOrg: string, labels: string[], 
   });
 
   const configs: any = getMergedConfig({
-    labelUnion: labels,
+    repoLabel: LabelUtil.union(...labels.map(l => LabelUtil.get(l))),
     groupBy: 'Project',
     options: {
       limit: -1,
+      withBot: true,
     },
     limit: -1,
   });
@@ -99,8 +100,9 @@ export const run = async (baseDir: string, memberOrg: string, labels: string[], 
     const writeData = (keys: string[], openrankArr: any[], filename: (key: string) => string) => {
       let lastOpenrankDetail = [];
       for (let i = 0; i < keys.length; i++) {
-        const openrankDetail = openrankArr[i];
+        let openrankDetail = openrankArr[i];
         if (openrankDetail.length === 0) continue;
+        openrankDetail = openrankDetail.sort((a, b) => b[3] - a[3]);
         const data: DataItem[] = openrankDetail.map((u, index) => {
           const [platform, id, login, openrank] = u;
           const key = `${platform}_${id}`;
@@ -135,13 +137,13 @@ export const run = async (baseDir: string, memberOrg: string, labels: string[], 
       console.table(communityOpenrankMonthData);
       console.log(`Can not find data for ${projectDetail.text}`);
     }
-    writeData(monthes, openrankMonthDataRow.openrank, key => key.split('-').map(parseFloat).join('/'));
+    writeData(monthes, openrankMonthDataRow.details, key => key.split('-').map(parseFloat).join('/'));
     const openrankYearDataRow = communityOpenrankYearData.find(row => row.name === projectDetail.text || row.name === projectDetail.key);
     if (!openrankYearDataRow) {
       console.table(communityOpenrankYearData);
       console.log(`Can not find data for ${projectDetail.text}`);
     }
-    writeData(years, openrankYearDataRow.openrank, key => key);
+    writeData(years, openrankYearDataRow.details, key => key);
 
     projectDetail.logo = `${logoUrl}/${openrankMonthDataRow.id.substring(1)}.png`;
 

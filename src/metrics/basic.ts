@@ -5,7 +5,8 @@ import { PlatformNames, OptionLabelItem, getPlatformData } from '../labelDataUti
 export interface QueryConfig<T = any> {
   labelUnion?: string[];
   labelIntersect?: string[];
-  label?: OptionLabelItem;
+  repoLabel?: OptionLabelItem;
+  userLabel?: OptionLabelItem;
   idOrNames?: {
     platform: PlatformNames;
     repoIds?: number[];
@@ -102,8 +103,8 @@ export const forEveryYearByConfig = async (config: QueryConfig, func: (y: number
 };
 
 export const getWithClause = (config: QueryConfig): string => {
-  if (config.label) {
-    return `WITH ${config.label.withParamClause}`;
+  if (config.repoLabel) {
+    return `WITH ${config.repoLabel.withParamClause}`;
   }
   return '';
 }
@@ -159,8 +160,8 @@ export const getRepoWhereClause = async (config: QueryConfig): Promise<string | 
     }
   }
 
-  if (config.label) {
-    repoWhereClauseArray.push(config.label.repoWhereClause);
+  if (config.repoLabel) {
+    repoWhereClauseArray.push(config.repoLabel.repoWhereClause);
   }
 
   // where clause
@@ -212,8 +213,8 @@ export const getUserWhereClause = async (config: QueryConfig, idCol: string = 'a
     }
   }
 
-  if (config.label) {
-    userWhereClauseArray.push(config.label.userWhereClause);
+  if (config.userLabel) {
+    userWhereClauseArray.push(config.userLabel.userWhereClause);
   }
 
   // where clause
@@ -299,9 +300,9 @@ export const getOutterOrderAndLimit = (config: QueryConfig, col: string, index?:
 
 export const getTopLevelPlatform = (config: QueryConfig, noCount = false) => {
   if (!noCount && (config.groupBy && config.groupBy !== 'org' && config.groupBy !== 'repo')) {
-    return `'All' AS platform, ${getGroupArrayInsertAtClause(config, { key: 'repos' })}, ${getGroupArrayInsertAtClause(config, { key: 'orgs' })}, ${getGroupArrayInsertAtClause(config, { key: 'developers' })}`;
+    return `'All' AS platform`;
   } else {
-    return 'platform, 1 AS repos, 1 AS orgs, 1 AS developers';
+    return 'platform';
   }
 };
 
@@ -334,7 +335,7 @@ export const filterEnumType = (value: any, types: string[], defautlValue: string
 
 export const processQueryResult = (result: any, customKeys: string[],
   postProcessor?: { [key: string]: (value: any) => any }): any[] => {
-  const keys = ['id', 'platform', 'repos', 'orgs', 'developers', 'name', ...customKeys];
+  const keys = ['id', 'platform', 'name', ...customKeys];
   return result.map((r: any) => {
     const obj: any = {};
     keys.forEach((k, i) => {
