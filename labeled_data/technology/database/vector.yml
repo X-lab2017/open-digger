@@ -26,6 +26,8 @@ data:
           name: awa-ai/awadb
         - id: 793209340
           name: carsonpo/haystackdb
+        - id: 546206616
+          name: chroma-core/chroma
         - id: 304530333
           name: featureform/embeddinghub
         - id: 628503457
@@ -48,6 +50,10 @@ data:
           name: philippgille/chromem-go
         - id: 40127179
           name: pilosa/pilosa
+        - id: 268163609
+          name: qdrant/qdrant
+        - id: 55072677
+          name: semi-technologies/weaviate
         - id: 195619075
           name: vdaas/vald
         - id: 186332888
