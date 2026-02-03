@@ -3,4 +3,4 @@ name_zh: Rust 基金会
 type: Foundation
 data:
   labels:
-    - rust
+    - ':companies/mozilla/rust'

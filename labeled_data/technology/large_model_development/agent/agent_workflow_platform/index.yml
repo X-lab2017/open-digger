@@ -1,7 +1,8 @@
 name: Agent Workflow Platform
 type: Tech-2
 data:
-  labels: []
+  labels:
+    - ':companies/iflytek/astron'
   platforms:
     - name: GitHub
       type: Code Hosting

@@ -6,6 +6,7 @@ data:
     - ':companies/apple/foundationdb'
     - ':companies/chroma/chroma'
     - ':companies/cratedb/cratedb'
+    - ':companies/elastic/elasticsearch'
     - ':companies/lancedb/lancedb'
     - ':companies/linkedin/venice'
     - ':companies/meta/prestodb'
@@ -15,7 +16,6 @@ data:
     - ':companies/vk/tarantool'
     - ':companies/yandex/ytsaurus'
     - ':foundations/apache/lucene'
-    - ':companies/elastic/elasticsearch'
   platforms:
     - name: GitHub
       type: Code Hosting

@@ -1,0 +1,11 @@
+name: Astron
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 1060001762
+          name: iflytek/astron-agent
+        - id: 1060619404
+          name: iflytek/astron-rpa

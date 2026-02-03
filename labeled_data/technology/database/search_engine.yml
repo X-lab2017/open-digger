@@ -4,9 +4,9 @@ type: Tech-1
 data:
   labels:
     - ':companies/amazon/opensearch'
+    - ':companies/elastic/elasticsearch'
     - ':companies/vespa/vespa'
     - ':foundations/apache/lucene'
-    - ':companies/elastic/elasticsearch'
   platforms:
     - name: GitHub
       type: Code Hosting
