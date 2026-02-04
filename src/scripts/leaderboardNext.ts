@@ -59,7 +59,7 @@ import { existsSync, mkdirSync, writeFileSync } from "fs";
 
   const now = new Date();
   now.setMonth(now.getMonth() - 1);
-  const startYear = now.getFullYear() - 10, startMonth = now.getMonth() + 1;
+  const startYear = 2015, startMonth = 1;
   const endYear = now.getFullYear(), endMonth = now.getMonth() + 1;
   const limit = 300;
   for (const scopeLabel of scopeLabels) {
