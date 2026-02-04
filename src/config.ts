@@ -39,6 +39,10 @@ let config = {
     appPrivateKeyPath: '',
     appId: 0,
   },
+  gitlab: {
+    token: '',
+    apiUrl: '',
+  },
   google: {
     map: {
       key: '',
