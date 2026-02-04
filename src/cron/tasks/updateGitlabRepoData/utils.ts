@@ -55,7 +55,7 @@ export const processActor = (actor: any) => {
   }
 
   // GitLab user has id (gid) and username
-  const actorId = actor.id ? parseInt(actor.id.replace('gid://gitlab/User/', '')) : 0;
+  const actorId = extractIdFromGid(actor.id);
   const actorLogin = actor.username || actor.name || '';
 
   return {

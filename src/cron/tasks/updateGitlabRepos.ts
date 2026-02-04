@@ -114,8 +114,14 @@ const task: Task = {
 
     const saveProjects = async (projects: ProjectItem[]) => {
       // Get existing data to preserve issue/mr cursor and update times
-      const currentData = await query<any>(`SELECT id, issue_updated_at, issue_end_cursor, mr_updated_at, mr_end_cursor FROM ${tableName}
-        WHERE id IN (${projects.map(p => p.id).join(',')})`);
+      let currentData: any[];
+      try {
+        currentData = await query<any>(`SELECT id, issue_updated_at, issue_end_cursor, mr_updated_at, mr_end_cursor FROM ${tableName}
+          WHERE id IN (${projects.map(p => p.id).join(',')})`);
+      } catch (err: any) {
+        logger.error(`Error fetching existing project data, aborting update to avoid overwriting progress: ${err.message}`);
+        throw new Error(`Aborting project update due to failure in fetching historical progress data`);
+      }
       const currentDataMap = new Map(currentData.map((r: any) => [+r[0], {
         issue_updated_at: r[1],
         issue_end_cursor: r[2] || '',

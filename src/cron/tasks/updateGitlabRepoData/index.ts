@@ -18,8 +18,19 @@ const task: Task = {
     const logger = getLogger('UpdateGitlabRepoDataTask');
 
     const config = await getConfig();
-    const repoUpdateBatchSize = config.task.configs.updateGitlabRepoData.repoUpdateBatchSize;
-    const repoUpdateConcurrency = config.task.configs.updateGitlabRepoData.repoUpdateConcurrency;
+    const repoUpdateBatchSize = config.task.configs?.updateGitlabRepoData?.repoUpdateBatchSize;
+    const repoUpdateConcurrency = config.task.configs?.updateGitlabRepoData?.repoUpdateConcurrency;
+
+    if (!repoUpdateBatchSize || !repoUpdateConcurrency || repoUpdateBatchSize <= 0 || repoUpdateConcurrency <= 0) {
+      logger.error('Repo update batch size or concurrency is not set');
+      return;
+    }
+
+    if (!config.task.configs?.updateGitlabRepoData?.tokens || config.task.configs.updateGitlabRepoData.tokens.length === 0) {
+      logger.error('GitLab tokens are not set');
+      return;
+    }
+
     const token = config.task.configs.updateGitlabRepoData.tokens[taskCount++ % config.task.configs.updateGitlabRepoData.tokens.length];
     const gitlabClient = await getGraphqlClient(token);
 
@@ -98,7 +109,7 @@ LIMIT ${repoUpdateBatchSize};`);
         mr_updated_at = '${formatDate(mrUpdateTime.toISOString())}',
         issue_end_cursor = '${issueEndCursor || ''}',
         mr_end_cursor = '${mrEndCursor || ''}'
-        WHERE id = ${repo.id};`
+        WHERE id = ${repo.id};`;
         await query(q);
       };
 

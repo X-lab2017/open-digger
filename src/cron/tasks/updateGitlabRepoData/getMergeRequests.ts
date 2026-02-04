@@ -42,36 +42,6 @@ const getMoreNotes = async (client: GraphqlClient, projectPath: string, mrIid: s
   return notes;
 };
 
-const getMoreReviewers = async (client: GraphqlClient, projectPath: string, mrIid: string, after?: string): Promise<any[]> => {
-  if (!after) return [];
-  const q = `
-    query getMoreReviewers($projectPath: ID!, $mrIid: String!, $count: Int!, $after: String!) {
-      project(fullPath: $projectPath) {
-        mergeRequest(iid: $mrIid) {
-          reviewers(first: $count, after: $after) {
-            pageInfo {
-              hasNextPage
-              endCursor
-            }
-            nodes {
-              id
-              username
-              name
-            }
-          }
-        }
-      }
-    }
-  `;
-
-  const result = await client(q, { projectPath, mrIid, after, count: batchCount });
-  const reviewers = result.project?.mergeRequest?.reviewers?.nodes || [];
-  if (result.project?.mergeRequest?.reviewers?.pageInfo?.hasNextPage) {
-    reviewers.push(...await getMoreReviewers(client, projectPath, mrIid, result.project.mergeRequest.reviewers.pageInfo.endCursor));
-  }
-  return reviewers;
-};
-
 const getMergeRequestsBatch = async (client: GraphqlClient, projectPath: string, projectId: number, namespaceId: number, namespaceName: string, after?: string): Promise<{ events: InsertRecord[], hasNextPage: boolean, endCursor?: string }> => {
   const q = `
     query getMergeRequests($projectPath: ID!, $after: String, $count: Int!) {
@@ -133,17 +103,6 @@ const getMergeRequestsBatch = async (client: GraphqlClient, projectPath: string,
                   username
                   name
                 }
-              }
-            }
-            reviewers(first: $count) {
-              pageInfo {
-                hasNextPage
-                endCursor
-              }
-              nodes {
-                id
-                username
-                name
               }
             }
           }
@@ -211,14 +170,17 @@ const getMergeRequestsBatch = async (client: GraphqlClient, projectPath: string,
 
     // MR merged event
     if (mr.state === 'merged' && mr.mergedAt && mr.mergeUser) {
-      events.push({
-        ...baseMrItem,
-        ...processActor(mr.mergeUser),
-        type: 'PullRequestEvent',
-        action: 'closed',
-        pull_merged: 1,
-        created_at: formatDate(mr.mergedAt),
-      });
+      const mergeUser = processActor(mr.mergeUser);
+      if (mergeUser && mergeUser.actor_id !== 0) {
+        events.push({
+          ...baseMrItem,
+          ...mergeUser,
+          type: 'PullRequestEvent',
+          action: 'closed',
+          pull_merged: 1,
+          created_at: formatDate(mr.mergedAt),
+        });
+      }
     }
     // MR closed event (not merged)
     else if (mr.state === 'closed' && mr.closedAt) {
@@ -231,7 +193,7 @@ const getMergeRequestsBatch = async (client: GraphqlClient, projectPath: string,
       });
     }
 
-    // MR notes (comments)
+    // MR notes (treated as review comment events)
     let notes = mr.notes?.nodes || [];
     if (mr.notes?.pageInfo?.hasNextPage) {
       notes.push(...await getMoreNotes(client, projectPath, mr.iid, mr.notes.pageInfo.endCursor));
@@ -241,31 +203,19 @@ const getMergeRequestsBatch = async (client: GraphqlClient, projectPath: string,
       if (!note.author) {
         continue;
       }
-      events.push({
-        ...baseMrItem,
-        ...processActor(note.author),
-        type: 'IssueCommentEvent',
-        action: 'created',
-        issue_comment_id: extractIdFromGid(note.id),
-        body: note.body,
-        created_at: formatDate(note.createdAt),
-      });
-    }
-
-    // MR reviewers (can be treated as review events)
-    let reviewers = mr.reviewers?.nodes || [];
-    if (mr.reviewers?.pageInfo?.hasNextPage) {
-      reviewers.push(...await getMoreReviewers(client, projectPath, mr.iid, mr.reviewers.pageInfo.endCursor));
-    }
-
-    for (const reviewer of reviewers) {
-      events.push({
-        ...baseMrItem,
-        ...processActor(reviewer),
-        type: 'PullRequestReviewCommentEvent',
-        action: 'created',
-        created_at: formatDate(mr.updatedAt), // Use MR updated time as review time
-      });
+      const noteAuthor = processActor(note.author);
+      if (noteAuthor && noteAuthor.actor_id !== 0) {
+        events.push({
+          ...baseMrItem,
+          ...noteAuthor,
+          type: 'PullRequestReviewCommentEvent',
+          action: 'created',
+          issue_comment_id: extractIdFromGid(note.id),
+          pull_review_comment_id: extractIdFromGid(note.id),
+          body: note.body,
+          created_at: formatDate(note.createdAt),
+        });
+      }
     }
   }
 
