@@ -92,6 +92,13 @@ const task: Task = {
           }
         };
         get(options, (res) => {
+          if (res.statusCode && res.statusCode >= 500) {
+            // server error, retry after 1 second
+            setTimeout(() => {
+              getProjects(lastActivityAfter, limit).then(resolve).catch(reject);
+            }, 1000);
+            return;
+          }
           if (res.statusCode !== 200) {
             logger.error(`Error getting projects: ${res.statusCode} ${res.statusMessage}`);
             reject(new Error(`Error getting projects: ${res.statusCode} ${res.statusMessage}`));
