@@ -16,6 +16,11 @@ const task: Task = {
     const gitlabToken = config.gitlab.token;
     const gitlabApiUrl = config.gitlab.apiUrl;
 
+    if (!gitlabToken || !gitlabApiUrl || gitlabToken === '' || gitlabApiUrl === '') {
+      logger.error('GitLab token or API URL is not set');
+      return;
+    }
+
     const tableName = 'gitlab_repo_list';
 
     const createGitlabRepoListTable = async () => {
@@ -49,10 +54,10 @@ const task: Task = {
       return {
         id: project.id,
         namespace_id: project.namespace.id,
-        namespace_name: project.namespace.path,
+        namespace_name: project.namespace.full_path,
         name: project.path_with_namespace,
         description: project.description ?? '',
-        default_branch: project.default_branch,
+        default_branch: project.default_branch ?? '',
         archived: project.archived ? 1 : 0,
         topics: project.topics,
         tag_list: project.tag_list,
@@ -61,13 +66,19 @@ const task: Task = {
         forks_count: project.forks_count,
         last_activity_at: formatDate(project.last_activity_at),
         updated_at: formatDate(project.updated_at),
-        inserted_at: new Date().getTime(),
+        inserted_at: 0, // will be set when saving
       };
     };
 
     const getProjects = async (lastActivityAfter: string, limit: number): Promise<ProjectRaw[]> => {
       const projects = await new Promise<ProjectRaw[]>((resolve, reject) => {
-        const url = new URL(`${gitlabApiUrl}/projects?last_activity_after=${lastActivityAfter}&per_page=${limit}&sort=asc&order_by=last_activity_at`);
+        const params = new URLSearchParams({
+          last_activity_after: lastActivityAfter,
+          per_page: limit.toString(),
+          sort: 'asc',
+          order_by: 'last_activity_at',
+        });
+        const url = new URL(`${gitlabApiUrl}/projects?${params.toString()}`);
         const options = {
           hostname: url.hostname,
           path: url.pathname + url.search,
@@ -103,18 +114,20 @@ const task: Task = {
     let lastActivityAt = new Date(maxLastActivityAt[0][0]).toISOString();
     let projects: ProjectRaw[] = [];
     logger.info(`Max last activity at in database: ${lastActivityAt}`);
-
+    let totalCount = 0;
     do {
       try {
         projects = await getProjects(lastActivityAt, 100);
         await saveProjects(projects.map(parseProject));
         lastActivityAt = projects[projects.length - 1].last_activity_at;
-        logger.info(`Saved ${projects.length} projects, starting from ${lastActivityAt}`);
+        totalCount += projects.length;
+        logger.info(`Saved ${projects.length} projects, starting from ${lastActivityAt}, total count: ${totalCount}`);
       } catch (error: any) {
-        logger.error(`Error getting projects: ${error.message}\n${error.stack}`);
+        logger.error(`Error getting projects starting from ${lastActivityAt}: ${error.message}\n${error.stack}`);
         break;
       }
     } while (projects.length > 0);
+    logger.info(`Task done, total count: ${totalCount}`);
   }
 };
 
@@ -133,8 +146,7 @@ interface ProjectRaw {
   updated_at: string;
   namespace: {
     id: number;
-    path: string;
-    pull_path: string;
+    full_path: string;
   }
 };
 
