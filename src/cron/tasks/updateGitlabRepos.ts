@@ -8,7 +8,7 @@ import { get } from 'https';
  * This task is used to update GitLab repos basic info
  */
 const task: Task = {
-  cron: '0 10 * * *',
+  cron: '0 * * * *',
   singleInstance: true,
   callback: async () => {
     const logger = getLogger('UpdateGitlabRepoTask');
@@ -40,6 +40,10 @@ const task: Task = {
           forks_count UInt32,
           last_activity_at DateTime,
           updated_at DateTime,
+          issue_updated_at DateTime,
+          issue_end_cursor String,
+          mr_updated_at DateTime,
+          mr_end_cursor String,
           inserted_at UInt64
         )
         ENGINE = ReplacingMergeTree(inserted_at)
@@ -88,6 +92,11 @@ const task: Task = {
           }
         };
         get(options, (res) => {
+          if (res.statusCode !== 200) {
+            logger.error(`Error getting projects: ${res.statusCode} ${res.statusMessage}`);
+            reject(new Error(`Error getting projects: ${res.statusCode} ${res.statusMessage}`));
+            return;
+          }
           let data = '';
           res.on('data', (chunk) => data += chunk);
           res.on('end', () => {
@@ -104,10 +113,33 @@ const task: Task = {
     };
 
     const saveProjects = async (projects: ProjectItem[]) => {
-      await insertRecords(projects.map(project => ({
-        ...project,
-        inserted_at: new Date().getTime(),
-      })), tableName);
+      // Get existing data to preserve issue/mr cursor and update times
+      let currentData: any[];
+      try {
+        currentData = await query<any>(`SELECT id, issue_updated_at, issue_end_cursor, mr_updated_at, mr_end_cursor FROM ${tableName}
+          WHERE id IN (${projects.map(p => p.id).join(',')})`);
+      } catch (err: any) {
+        logger.error(`Error fetching existing project data, aborting update to avoid overwriting progress: ${err.message}`);
+        throw new Error(`Aborting project update due to failure in fetching historical progress data`);
+      }
+      const currentDataMap = new Map(currentData.map((r: any) => [+r[0], {
+        issue_updated_at: r[1],
+        issue_end_cursor: r[2] || '',
+        mr_updated_at: r[3],
+        mr_end_cursor: r[4] || ''
+      }]));
+
+      await insertRecords(projects.map(project => {
+        const existing = currentDataMap.get(+project.id);
+        return {
+          ...project,
+          issue_updated_at: existing?.issue_updated_at || formatDate(new Date(0).toISOString()),
+          issue_end_cursor: existing?.issue_end_cursor || '',
+          mr_updated_at: existing?.mr_updated_at || formatDate(new Date(0).toISOString()),
+          mr_end_cursor: existing?.mr_end_cursor || '',
+          inserted_at: new Date().getTime(),
+        };
+      }), tableName);
     };
 
     const maxLastActivityAt = await query<any[]>(`SELECT MAX(last_activity_at) AS max_last_activity_at FROM ${tableName}`);
@@ -118,6 +150,10 @@ const task: Task = {
     do {
       try {
         projects = await getProjects(lastActivityAt, 100);
+        if (projects.length === 0) {
+          logger.info(`No projects found starting from ${lastActivityAt}, task done.`);
+          break;
+        }
         await saveProjects(projects.map(parseProject));
         lastActivityAt = projects[projects.length - 1].last_activity_at;
         totalCount += projects.length;
@@ -165,6 +201,10 @@ interface ProjectItem {
   forks_count: number;
   last_activity_at: string;
   updated_at: string;
+  issue_updated_at?: string | null;
+  issue_end_cursor?: string;
+  mr_updated_at?: string | null;
+  mr_end_cursor?: string;
   inserted_at: number;
 }
 

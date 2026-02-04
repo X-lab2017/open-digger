@@ -42,6 +42,7 @@ let config = {
   gitlab: {
     token: '',
     apiUrl: '',
+    graphqlApiUrl: '',
   },
   google: {
     map: {
