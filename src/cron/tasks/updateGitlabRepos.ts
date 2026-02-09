@@ -9,7 +9,7 @@ import { get } from 'https';
  */
 const task: Task = {
   cron: '0 * * * *',
-  singleInstance: true,
+  singleInstance: false,
   callback: async () => {
     const logger = getLogger('UpdateGitlabRepoTask');
     const config = await getConfig();
