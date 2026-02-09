@@ -116,7 +116,7 @@ Body: ${issue.body}
 
         return (outputIssue as OutputIssue);
       } catch (e) {
-        if (e instanceof Error && e.message.includes('Input data may contain inappropriate content.')) {
+        if (e instanceof Error && e.message.includes('data may contain inappropriate content.')) {
           // inappropriate content, return default values
           return {
             id: issue.id,
