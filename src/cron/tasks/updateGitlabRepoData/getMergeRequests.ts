@@ -232,7 +232,7 @@ export const getMergeRequests = async (client: GraphqlClient, projectPath: strin
   let hasNextPage = true;
   let finished = true;
 
-  while (hasNextPage) {
+  while (hasNextPage && allEvents.length < batchCount * 100) {
     try {
       const batch = await getMergeRequestsBatch(client, projectPath, projectId, namespaceId, namespaceName, currentAfter);
       allEvents.push(...batch.events);

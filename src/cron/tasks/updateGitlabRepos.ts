@@ -169,7 +169,7 @@ const task: Task = {
         logger.error(`Error getting projects starting from ${lastActivityAt}: ${error.message}\n${error.stack}`);
         break;
       }
-    } while (projects.length > 0);
+    } while (projects.length > 0 && totalCount < 20000);
     logger.info(`Task done, total count: ${totalCount}`);
   }
 };

@@ -192,7 +192,7 @@ export const getIssues = async (client: GraphqlClient, projectPath: string, proj
   let hasNextPage = true;
   let finished = true;
 
-  while (hasNextPage) {
+  while (hasNextPage && allEvents.length < batchCount * 100) {
     try {
       const batch = await getIssuesBatch(client, projectPath, projectId, namespaceId, namespaceName, currentAfter);
       allEvents.push(...batch.events);
