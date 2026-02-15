@@ -150,7 +150,7 @@ const task: Task = {
     };
 
     const maxLastActivityAt = await query<any[]>(`SELECT MAX(last_activity_at) AS max_last_activity_at FROM ${tableName}`);
-    let lastActivityAt = new Date(maxLastActivityAt[0][0]).toISOString();
+    let lastActivityAt = maxLastActivityAt[0][0].replace(' ', 'T') + '.000Z';
     let projects: ProjectRaw[] = [];
     logger.info(`Max last activity at in database: ${lastActivityAt}`);
     let totalCount = 0;
