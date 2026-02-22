@@ -22,6 +22,7 @@ const task: Task = {
     }
 
     const tableName = 'gitlab_repo_list';
+    const perPage = 100;
 
     const createGitlabRepoListTable = async () => {
       const createTableQuery = `
@@ -156,7 +157,7 @@ const task: Task = {
     let totalCount = 0;
     do {
       try {
-        projects = await getProjects(lastActivityAt, 100);
+        projects = await getProjects(lastActivityAt, perPage);
         if (projects.length === 0) {
           logger.info(`No projects found starting from ${lastActivityAt}, task done.`);
           break;
@@ -169,7 +170,7 @@ const task: Task = {
         logger.error(`Error getting projects starting from ${lastActivityAt}: ${error.message}\n${error.stack}`);
         break;
       }
-    } while (projects.length > 0 && totalCount < 20000);
+    } while (projects.length === perPage && totalCount < 10000);
     logger.info(`Task done, total count: ${totalCount}`);
   }
 };

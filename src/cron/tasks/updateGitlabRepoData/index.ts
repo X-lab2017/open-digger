@@ -47,6 +47,7 @@ SELECT
   (dateDiff('hour', issue_updated_at, last_activity_at) >= 1) AS should_update_issue,
   (dateDiff('hour', mr_updated_at, last_activity_at) >= 1) AS should_update_mr
 FROM gitlab_repo_list WHERE should_update_issue OR should_update_mr
+ORDER BY RAND()
 LIMIT ${repoUpdateBatchSize};`);
       logger.info(`Got ${repos.length} repos to update`);
 
