@@ -294,7 +294,7 @@ export const getOutterOrderAndLimit = (config: QueryConfig, col: string, index?:
   return `${config.order ? `ORDER BY ${config.orderOption === 'latest'
     ? `${col}[-1]${index !== undefined ? `[${index}]` : ''}`
     : `arraySum(${index !== undefined ? `x -> x[${index}],` : ''}${col})`
-    } ${config.order}` : ''}
+    } ${config.order}, id ASC` : ''}
     ${config.limitOption === 'all' && config.limit > 0 ? `LIMIT ${config.limit}` : ''}`;
 };
 
