@@ -1,7 +1,9 @@
 name: AI Coding
 type: Tech-2
 data:
-  labels: []
+  labels:
+    - :companies/anthropic/claude_code
+    - :companies/anomaly/opencode
   platforms:
     - name: GitHub
       type: Code Hosting

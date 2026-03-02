@@ -16,12 +16,12 @@
   },
   "change_request_resolution_duration_desc_3_all_null_quarter": [
     {
-      "id": "40198544",
-      "name": "google/capirca"
-    },
-    {
       "id": "24993103",
       "name": "google/woff2"
+    },
+    {
+      "id": "40198544",
+      "name": "google/capirca"
     },
     {
       "id": "33881870",

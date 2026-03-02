@@ -1,0 +1,13 @@
+name: Anthropic
+type: Company
+data:
+  labels:
+    - claude_code
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 76263028
+          name: anthropics
+        - id: 167155430
+          name: anthropic-experimental

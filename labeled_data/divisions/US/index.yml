@@ -93,6 +93,8 @@ data:
     - ':companies/amazon'
     - ':companies/ambassadorlabs'
     - ':companies/anaconda'
+    - ':companies/anomaly'
+    - ':companies/anthropic'
     - ':companies/anysphere'
     - ':companies/apple'
     - ':companies/appsmith'

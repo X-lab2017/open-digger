@@ -1,0 +1,9 @@
+name: OpenClaw
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 252820863
+          name: openclaw
