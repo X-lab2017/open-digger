@@ -192,12 +192,13 @@ export const getIssues = async (client: GraphqlClient, projectPath: string, proj
   let hasNextPage = true;
   let finished = true;
 
-  while (hasNextPage && allEvents.length < batchCount * 100) {
+  while (hasNextPage && allEvents.length < batchCount * 5) {
     try {
       const batch = await getIssuesBatch(client, projectPath, projectId, namespaceId, namespaceName, currentAfter);
       allEvents.push(...batch.events);
       hasNextPage = batch.hasNextPage;
       currentAfter = batch.endCursor;
+      finished = !hasNextPage;
     }
     catch (error: any) {
       logger.error(`Error getting issues: projectPath=${projectPath}, projectId=${projectId}, currentAfter=${currentAfter}, error=${error.message || error}`);

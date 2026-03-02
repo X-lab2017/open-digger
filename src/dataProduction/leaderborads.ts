@@ -1,7 +1,7 @@
 import { writeFileSync } from 'fs';
 import { getLabelData } from '../labelDataUtils';
 import { QueryConfig } from '../metrics/basic';
-import { getRepoActivity, getRepoOpenrank } from '../metrics/indices';
+import { getBasicRepoStats, getRepoOpenrank } from '../metrics/indices';
 import { countryInfo, countryFlagMap } from '../static/countries';
 import { query } from '../db/clickhouse';
 import { repoParticipants } from '../metrics/metrics';
@@ -9,7 +9,7 @@ import { repoParticipants } from '../metrics/metrics';
 (async () => {
   const openDiggerOssUrl = 'https://oss.open-digger.cn/';
   const labels = getLabelData();
-  const startYear = 2024, startMonth = 7, endYear = 2025, endMonth = 6;
+  const startYear = 2025, startMonth = 1, endYear = 2025, endMonth = 12;
   const defaultOption: QueryConfig = {
     startYear, startMonth, endYear, endMonth,
     order: 'DESC', limit: 101, limitOption: 'all', precision: 2,
@@ -64,7 +64,7 @@ FROM
     LEFT JOIN
         global_openrank g
     ON
-        u.id = g.actor_id AND u.platform = g.platform AND g.type = 'User' AND g.legacy = 0
+        u.id = g.actor_id AND u.platform = g.platform AND g.type = 'User'
         AND toYYYYMM(g.created_at) >= ${startYear}${startMonth.toString().padStart(2, '0')} AND
         toYYYYMM(g.created_at) <= ${endYear}${endMonth.toString().padStart(2, '0')}
     WHERE
@@ -164,6 +164,9 @@ ORDER BY
         const countryLabelId = label.parents.find(p => p.startsWith(':divisions'));
         if (countryLabelId) {
           const countryLabel = labels.find(l => l.identifier === countryLabelId)!;
+          if (countryLabel.type !== 'Division-0') {
+            return findCountry(countryLabel.parents[0]);
+          }
           if (!countryFlagMap.has(countryLabel.name)) {
             throw new Error(`Country flag not found: ${countryLabel.name}`);
           }
@@ -240,7 +243,7 @@ ORDER BY
       labelIntersect: isChinese ? [':divisions/CN'] : undefined,
       groupBy: 'Company',
     })).filter(i => i.id !== 'Others');
-    const activityData = (await getRepoActivity({
+    const basicStatsData = (await getBasicRepoStats({
       ...defaultOption,
       labelIntersect: isChinese ? [':divisions/CN'] : undefined,
       limit: -1, groupBy: 'Company',
@@ -273,16 +276,16 @@ ORDER BY
         return null;
       };
       const country = findCountry(label.identifier) ?? '';
-      const activityItem = activityData.find(row => row.id === id)!;
+      const basicStatsItem = basicStatsData.find(row => row.id === id)!;
       ret.push({
         rank: i + 1,
         id,
         name: label.name,
         logo: getLogoUrl(id),
         openrank,
-        repoCount: +activityItem.repos[0],
-        orgCount: +activityItem.orgs[0],
-        developerCount: +activityItem.participants[0],
+        repoCount: +basicStatsItem.repo_count[0],
+        orgCount: +basicStatsItem.org_count[0],
+        developerCount: +basicStatsItem.participants[0],
         platforms: label.platforms.map(p => p.name),
         ...country,
       });
