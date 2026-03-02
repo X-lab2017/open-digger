@@ -71,23 +71,28 @@ LIMIT ${repoUpdateBatchSize};`);
         let issueFinished = true, mrFinished = true;
         let issueEndCursor = repo.issueEndCursor, mrEndCursor = repo.mrEndCursor;
 
-        if (repo.shouldUpdateIssue) {
-          const issueResult = await getIssues(gitlabClient, projectPath, repo.id, repo.namespaceId, repo.namespaceName, repo.issueEndCursor);
-          issueEvents = issueResult.events;
-          issueFinished = issueResult.finished;
-          if (issueResult.endCursor) {
-            issueEndCursor = issueResult.endCursor;
-          }
-        }
-
-        if (repo.shouldUpdateMr) {
-          const mrResult = await getMergeRequests(gitlabClient, projectPath, repo.id, repo.namespaceId, repo.namespaceName, repo.mrEndCursor);
-          mrEvents = mrResult.events;
-          mrFinished = mrResult.finished;
-          if (mrResult.endCursor) {
-            mrEndCursor = mrResult.endCursor;
-          }
-        }
+        await Promise.all([
+          (async () => {
+            if (repo.shouldUpdateIssue) {
+              const issueResult = await getIssues(gitlabClient, projectPath, repo.id, repo.namespaceId, repo.namespaceName, repo.issueEndCursor);
+              issueEvents = issueResult.events;
+              issueFinished = issueResult.finished;
+              if (issueResult.endCursor) {
+                issueEndCursor = issueResult.endCursor;
+              }
+            }
+          })(),
+          (async () => {
+            if (repo.shouldUpdateMr) {
+              const mrResult = await getMergeRequests(gitlabClient, projectPath, repo.id, repo.namespaceId, repo.namespaceName, repo.mrEndCursor);
+              mrEvents = mrResult.events;
+              mrFinished = mrResult.finished;
+              if (mrResult.endCursor) {
+                mrEndCursor = mrResult.endCursor;
+              }
+            }
+          })(),
+        ]);
 
         logger.info(`Got ${issueEvents.length} issue events and ${mrEvents.length} mr events for ${repo.name}`);
 

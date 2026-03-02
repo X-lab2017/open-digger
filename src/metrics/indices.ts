@@ -381,3 +381,41 @@ ${getOutterOrderAndLimit(config, 'attention')}`;
   const result: any = await clickhouse.query(sql);
   return processQueryResult(result, ['attention']);
 };
+
+
+export const getBasicRepoStats = async (config: QueryConfig) => {
+  config = getMergedConfig(config);
+  const whereClauses: string[] = ["events.type IN ('IssuesEvent', 'IssueCommentEvent', 'PullRequestEvent', 'PullRequestReviewCommentEvent')"];
+  const repoWhereClause = await getRepoWhereClause(config);
+  if (repoWhereClause) whereClauses.push(repoWhereClause);
+  whereClauses.push(getTimeRangeWhereClause(config));
+
+  const sql = `
+${getWithClause(config)}
+SELECT
+  id,
+  ${getTopLevelPlatform(config)},
+  argMax(name, time) AS name,
+  ${getGroupArrayInsertAtClause(config, { key: 'repo_count' })},
+  ${getGroupArrayInsertAtClause(config, { key: 'org_count' })},
+  ${getGroupArrayInsertAtClause(config, { key: 'participants' })}
+FROM
+(
+  SELECT
+    ${getGroupTimeClause(config)},
+    ${getGroupIdClause(config)},
+    COUNT(DISTINCT events.repo_id) AS repo_count,
+    COUNT(DISTINCT events.org_id) AS org_count,
+    COUNT(DISTINCT events.actor_id) AS participants
+  FROM events
+  ${getLabelJoinClause(config)}
+  WHERE ${whereClauses.join(' AND ')}
+  ${getInnerGroupBy(config)}
+  ${getInnerOrderAndLimit(config, 'repo_count')}
+)
+GROUP BY id, platform
+${getOutterOrderAndLimit(config, 'repo_count')}`;
+
+  const result: any = await clickhouse.query(sql);
+  return processQueryResult(result, ['repo_count', 'org_count', 'participants']);
+};
