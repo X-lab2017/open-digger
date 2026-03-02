@@ -1,0 +1,9 @@
+name: Claude Code
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 937253475
+          name: anthropics/claude-code

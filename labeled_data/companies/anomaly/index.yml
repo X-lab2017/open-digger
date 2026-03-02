@@ -1,0 +1,11 @@
+name: Anomaly
+type: Company
+data:
+  labels:
+    - opencode
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 66570915
+          name: anomalyco
