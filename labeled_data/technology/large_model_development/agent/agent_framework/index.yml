@@ -1,7 +1,8 @@
 name: Agent Framework
 type: Tech-2
 data:
-  labels: []
+  labels:
+    - :projects/openclaw
   platforms:
     - name: GitHub
       type: Code Hosting
