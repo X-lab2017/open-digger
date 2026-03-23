@@ -1,4 +1,6 @@
 name: cuDF
+description: cuDF is a GPU DataFrame library for high-performance data manipulation.
+description_zh: cuDF 是一个用于高性能数据操作的 GPU 数据框库。
 type: Project
 data:
   platforms:

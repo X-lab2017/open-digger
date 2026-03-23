@@ -1,4 +1,6 @@
 name: FoundationDB
+description: FoundationDB - the open source, distributed, transactional key-value store
+description_zh: FoundationDB - 开源的分布式事务键值存储
 type: Project
 data:
   platforms:

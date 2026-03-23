@@ -1,4 +1,6 @@
 name: Apache Dubbo
+description: Apache Dubbo is a Java-based RPC and microservice framework.
+description_zh: Apache Dubbo 是一个基于 Java 的 RPC 和微服务框架。
 type: Project
 data:
   platforms:

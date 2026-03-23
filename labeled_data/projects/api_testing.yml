@@ -1,4 +1,6 @@
 name: API Testing
+description: Open source API testing tool with mock server and multi-format reporting.
+description_zh: 开源API测试工具，支持Mock Server和多格式报告。
 type: Project
 data:
   platforms:

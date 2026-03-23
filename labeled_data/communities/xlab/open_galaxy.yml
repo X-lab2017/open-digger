@@ -1,4 +1,6 @@
 name: OpenGalaxy
+description: OpenGalaxy - Explore the open source world free.
+description_zh: OpenGalaxy - 自由探索开源世界。
 type: Project
 data:
   platforms:

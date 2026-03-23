@@ -1,4 +1,6 @@
 name: EKS Distro
+description: Amazon EKS Distro is a Kubernetes distribution used by Amazon EKS for secure and reliable clusters.
+description_zh: Amazon EKS Distro 是由 Amazon EKS 使用的 Kubernetes 发行版，用于构建安全可靠的集群。
 type: Project
 data:
   platforms:

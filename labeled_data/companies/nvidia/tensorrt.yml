@@ -1,4 +1,6 @@
-name: tensorrt
+name: TensorRT
+description: TensorRT LLM provides an optimized Python API for efficient large language model inference on NVIDIA GPUs.
+description_zh: TensorRT LLM 提供优化的 Python API，用于在 NVIDIA GPU 上高效执行大语言模型推理。
 type: Project
 data:
   platforms:

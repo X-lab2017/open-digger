@@ -1,4 +1,6 @@
 name: Apache Lucene
+description: Apache Lucene and Solr open-source search software
+description_zh: Apache Lucene 和 Solr 开源搜索软件
 type: Project
 data:
   platforms:

@@ -1,4 +1,6 @@
 name: Apache Gravitino
+description: High-performance, geo-distributed, and federated metadata lake for unified metadata management.
+description_zh: 高性能、地理分布式和联邦式元数据湖，实现统一元数据管理。
 type: Project
 data:
   platforms:

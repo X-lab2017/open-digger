@@ -1,4 +1,6 @@
 name: Grafana Tempo
+description: Grafana Tempo is a high-volume, low-dependency distributed tracing backend.
+description_zh: Grafana Tempo 是一个高吞吐、低依赖的分布式追踪后端。
 type: Project
 data:
   platforms:

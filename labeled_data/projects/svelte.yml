@@ -1,4 +1,6 @@
 name: Svelte
+description: Svelte - web development for the rest of us
+description_zh: Svelte - 让我们更轻松地进行网页开发
 type: Project
 data:
   platforms:

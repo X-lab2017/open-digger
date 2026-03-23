@@ -1,4 +1,6 @@
 name: Operator Framework
+description: SDK for building Kubernetes applications with high-level APIs and project scaffolding.
+description_zh: 用于通过高级 API 和项目脚手架构建 Kubernetes 应用的 SDK。
 type: Project
 data:
   platforms:

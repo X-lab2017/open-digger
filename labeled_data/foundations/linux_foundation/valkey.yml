@@ -1,4 +1,6 @@
 name: Valkey
+description: A high-performance key-value store optimized for real-time and caching workloads.
+description_zh: 高性能实时键值存储系统，适用于缓存和其他实时工作负载。
 type: Project
 data:
   platforms:

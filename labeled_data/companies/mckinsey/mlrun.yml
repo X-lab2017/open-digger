@@ -1,4 +1,6 @@
 name: MLRun
+description: MLRun is an open source MLOps platform for building and managing ML/AI applications across their lifecycle.
+description_zh: MLRun 是一个开源的 MLOps 平台，用于构建和管理机器学习/人工智能应用的全生命周期。
 type: Project
 data:
   platforms:

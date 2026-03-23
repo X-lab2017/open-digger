@@ -1,4 +1,6 @@
 name: Apache Kafka
+description: Mirror of Apache Kafka, a distributed event streaming platform.
+description_zh: Apache Kafka 镜像，一个分布式事件流平台。
 type: Project
 data:
   platforms:

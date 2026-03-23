@@ -1,4 +1,6 @@
 name: TKEStack
+description: Native Kubernetes container management platform supporting multi-tenant and multi-cluster
+description_zh: 原生Kubernetes容器管理平台，支持多租户和多集群
 type: Project
 data:
   platforms:

@@ -1,4 +1,6 @@
 name: MesaLock Linux
+description: An OpenSSL compatibility layer for the Rust SSL/TLS stack.
+description_zh: 为 Rust SSL/TLS 堆栈提供的 OpenSSL 兼容层。
 type: Project
 data:
   platforms:

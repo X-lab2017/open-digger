@@ -1,4 +1,6 @@
 name: Azure
+description: APIs, SDKs and open source projects from Microsoft Azure.
+description_zh: 微软 Azure 的 API、SDK 和开源项目。
 type: Project
 data:
   platforms:

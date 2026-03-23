@@ -1,4 +1,6 @@
 name: Couler
+description: Unified interface for building and managing workflows across Argo, Tekton, and Airflow.
+description_zh: 跨 Argo、Tekton 和 Airflow 的统一工作流构建与管理接口。
 type: Project
 data:
   platforms:

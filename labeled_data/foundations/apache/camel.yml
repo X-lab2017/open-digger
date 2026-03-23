@@ -1,4 +1,6 @@
 name: Apache Camel
+description: Apache Camel is an open-source integration framework for connecting systems and data.
+description_zh: Apache Camel 是一个开源集成框架，用于连接系统与数据。
 type: Project
 data:
   platforms:

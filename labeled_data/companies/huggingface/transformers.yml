@@ -1,4 +1,6 @@
 name: Transformers
+description: State-of-the-art machine learning for PyTorch, TensorFlow, and JAX with thousands of pretrained models.
+description_zh: 支持PyTorch、TensorFlow和JAX的前沿机器学习库，包含数千个预训练模型。
 type: Project
 data:
   platforms:

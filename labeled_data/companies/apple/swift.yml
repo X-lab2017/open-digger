@@ -1,4 +1,6 @@
 name: Swift
+description: A high-performance, modern programming language for building safe and efficient applications.
+description_zh: 一种高性能、现代化的编程语言，用于构建安全高效的应用程序。
 type: Project
 data:
   platforms:

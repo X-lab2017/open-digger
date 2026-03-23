@@ -1,4 +1,6 @@
 name: Open Horizon
+description: Horizon agent control system
+description_zh: Horizon 代理控制系统
 type: Project
 data:
   platforms:

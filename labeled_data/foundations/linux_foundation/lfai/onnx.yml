@@ -1,4 +1,6 @@
 name: ONNX
+description: Open standard for machine learning interoperability
+description_zh: 机器学习互操作性的开放标准
 type: Project
 data:
   platforms:

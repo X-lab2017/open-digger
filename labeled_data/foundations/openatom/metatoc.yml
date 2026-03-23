@@ -1,4 +1,6 @@
 name: MetaToC
+description: MetaTOC is an open-source data collection and model project based on edge computing and blockchain.
+description_zh: MetaTOC 是基于边缘计算与区块链的数据采集与模型开源项目。
 type: Project
 data:
   platforms:

@@ -1,4 +1,6 @@
 name: Globalize
+description: A JavaScript library for internationalization and localization using Unicode CLDR data.
+description_zh: 基于 Unicode CLDR 数据的国际化和本地化 JavaScript 库。
 type: Project
 data:
   platforms:

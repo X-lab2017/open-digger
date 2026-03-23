@@ -1,4 +1,6 @@
 name: amis
+description: A low-code front-end framework that generates pages via JSON configuration.
+description_zh: 一个通过 JSON 配置生成页面的前端低代码框架。
 type: Project
 data:
   platforms:

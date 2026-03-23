@@ -1,4 +1,6 @@
 name: WeaveFox
+description: A flexible and customizable notebook with seamless integration and AI capabilities.
+description_zh: 灵活定制、轻松集成的 Notebook，支持 AI 能力。
 type: Project
 data:
   platforms:

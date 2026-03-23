@@ -1,4 +1,6 @@
 name: Guardrails
+description: A Python framework for adding guardrails to large language models to ensure safe and structured outputs.
+description_zh: 一个用于为大语言模型添加防护措施的 Python 框架，以确保输出的安全与结构化。
 type: Project
 data:
   platforms:

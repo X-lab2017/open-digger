@@ -1,4 +1,6 @@
 name: Brave
+description: The Brave browser is a fast, free, open-source web browser that prioritizes user privacy.
+description_zh: Brave 浏览器是一个快速、免费、开源、优先考虑用户隐私的网络浏览器。
 type: Project
 data:
   platforms:

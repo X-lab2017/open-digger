@@ -1,4 +1,6 @@
 name: KubeVirt
+description: KubeVirt provides Kubernetes API and runtime to manage virtual machines.
+description_zh: KubeVirt 提供 Kubernetes API 和运行时以管理虚拟机。
 type: Project
 data:
   platforms:

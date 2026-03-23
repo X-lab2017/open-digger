@@ -1,4 +1,6 @@
 name: Marquez
+description: Collect, aggregate, and visualize metadata in a data ecosystem.
+description_zh: 收集、聚合并可视化数据生态系统的元数据。
 type: Project
 data:
   platforms:

@@ -1,4 +1,6 @@
 name: OpenDS4All
+description: Egeria core provides open metadata and governance frameworks for data tools and platforms.
+description_zh: Egeria 核心为数据工具和平台提供开源元数据与治理框架。
 type: Project
 data:
   platforms:

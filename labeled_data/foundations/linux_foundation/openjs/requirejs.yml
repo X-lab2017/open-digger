@@ -1,4 +1,6 @@
 name: RequireJS
+description: A JavaScript file and module loader optimized for browsers.
+description_zh: 一个为浏览器优化的 JavaScript 文件和模块加载器。
 type: Project
 data:
   platforms:

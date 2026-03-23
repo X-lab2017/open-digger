@@ -1,4 +1,6 @@
 name: Unsloth
+description: Finetune Llama 3.3, DeepSeek-R1 & Reasoning LLMs 2x faster with 70% less memory.
+description_zh: 以更低内存（减少70%）将Llama 3.3、DeepSeek-R1及推理模型微调速度提升2倍。
 type: Project
 data:
   platforms:

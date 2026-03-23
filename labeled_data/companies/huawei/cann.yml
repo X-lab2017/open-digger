@@ -1,0 +1,11 @@
+name: CANN
+type: Project
+description: CANN (Compute Architecture for Neural Networks) is a heterogeneous computing architecture for AI scenarios developed by Huawei.
+description_zh: CANN（Compute Architecture for Neural Networks）是华为针对 AI 场景推出的异构计算架构
+data:
+  platforms:
+    - name: AtomGit
+      type: Code Hosting
+      orgs:
+        - id: 5162848
+          name: cann

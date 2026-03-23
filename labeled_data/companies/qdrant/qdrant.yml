@@ -1,4 +1,6 @@
 name: Qdrant
+description: Qdrant - High-performance vector database and search engine for AI applications.
+description_zh: Qdrant - 高性能的AI应用向量数据库和搜索引擎。
 type: Project
 data:
   platforms:

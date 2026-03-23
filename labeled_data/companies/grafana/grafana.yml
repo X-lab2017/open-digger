@@ -1,4 +1,6 @@
 name: Grafana
+description: An open-source observability platform for visualizing metrics, logs, and traces.
+description_zh: 开源的可观测性平台，用于可视化指标、日志和追踪。
 type: Project
 data:
   platforms:

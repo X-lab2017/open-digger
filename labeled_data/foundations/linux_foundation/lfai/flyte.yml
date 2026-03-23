@@ -1,4 +1,6 @@
 name: Flyte
+description: Scalable and flexible workflow orchestration platform for data, ML, and analytics stacks.
+description_zh: 用于数据、机器学习和分析堆栈的可扩展且灵活的工作流编排平台。
 type: Project
 data:
   platforms:

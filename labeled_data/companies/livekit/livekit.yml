@@ -1,4 +1,6 @@
 name: LiveKit
+description: Open source WebRTC and realtime AI infrastructure.
+description_zh: 开源的 WebRTC 和实时 AI 基础设施。
 type: Project
 data:
   platforms:

@@ -1,4 +1,6 @@
 name: Jerryscript
+description: Ultra-lightweight JavaScript engine for IoT devices with minimal resource usage.
+description_zh: 专为物联网设备设计的超轻量JavaScript引擎，资源占用极低。
 type: Project
 data:
   platforms:

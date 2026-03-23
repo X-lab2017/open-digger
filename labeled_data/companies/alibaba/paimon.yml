@@ -1,4 +1,6 @@
 name: Apache Paimon
+description: Apache Paimon is a lake format for real-time lakehouse architecture with Flink and Spark.
+description_zh: Apache Paimon 是一个支持 Flink 和 Spark 实时湖仓架构的湖格式。
 type: Project
 data:
   platforms:

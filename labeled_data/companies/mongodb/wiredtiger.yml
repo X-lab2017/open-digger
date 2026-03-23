@@ -1,4 +1,6 @@
 name: WiredTiger
+description: WiredTiger's source tree for version 12.0.0.
+description_zh: WiredTiger 12.0.0版本的源代码。
 type: Project
 data:
   platforms:

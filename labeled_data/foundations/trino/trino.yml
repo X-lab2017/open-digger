@@ -1,4 +1,6 @@
 name: TrinoDB
+description: Trino is a fast distributed SQL query engine for big data analytics.
+description_zh: Trino 是一个用于大数据分析的快速分布式 SQL 查询引擎。
 type: Project
 data:
   platforms:

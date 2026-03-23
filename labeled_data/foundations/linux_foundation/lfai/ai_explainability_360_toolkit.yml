@@ -1,4 +1,6 @@
 name: AI Explainability 360 Toolkit
+description: AI Explainability 360 is an open-source toolkit for interpretable machine learning and data explanations.
+description_zh: AI Explainability 360 是一个用于可解释机器学习和数据解释的开源工具包。
 type: Project
 data:
   platforms:

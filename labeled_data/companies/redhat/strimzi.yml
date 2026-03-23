@@ -1,4 +1,6 @@
 name: Strimzi
+description: Run Apache Kafka on Kubernetes and OpenShift with Strimzi.
+description_zh: 使用 Strimzi 在 Kubernetes 和 OpenShift 上运行 Apache Kafka。
 type: Project
 data:
   platforms:

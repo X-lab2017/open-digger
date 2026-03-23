@@ -1,4 +1,6 @@
 name: Kubeflow
+description: 'Kubeflow Pipelines: End-to-end ML workflows for Kubernetes.'
+description_zh: Kubeflow 管道：用于 Kubernetes 的端到端机器学习工作流。
 type: Project
 data:
   platforms:

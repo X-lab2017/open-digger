@@ -1,4 +1,6 @@
 name: Wolfi OS
+description: Main package repository for the Wolfi project, a minimal GNU/Linux distribution for containers.
+description_zh: Wolfi项目的主要软件包仓库，一个适用于容器的极简GNU/Linux发行版。
 type: Project
 data:
   platforms:

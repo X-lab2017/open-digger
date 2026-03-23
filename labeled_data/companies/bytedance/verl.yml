@@ -1,4 +1,6 @@
 name: verl
+description: 'verl: A flexible and efficient RL training library for large language models.'
+description_zh: verl：一个灵活高效的大型语言模型强化学习训练库。
 type: Project
 data:
   platforms:

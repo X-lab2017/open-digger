@@ -1,5 +1,7 @@
 name: OpenCompass
 name_zh: 思南评测体系
+description: OpenCompass is an LLM evaluation platform supporting over 100+ datasets and a wide range of models.
+description_zh: OpenCompass 是一个支持多种模型和 100+ 数据集的 LLM 评估平台。
 type: Project
 data:
   platforms:

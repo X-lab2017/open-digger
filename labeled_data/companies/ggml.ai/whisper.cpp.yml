@@ -1,4 +1,6 @@
 name: whisper.cpp
+description: C/C++ port of OpenAI's Whisper model for high-performance speech recognition.
+description_zh: OpenAI Whisper 模型的 C/C++ 移植版，用于高性能语音识别。
 type: Project
 data:
   platforms:

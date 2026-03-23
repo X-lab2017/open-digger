@@ -1,4 +1,6 @@
 name: Unkey
+description: Open source API authentication and authorization platform
+description_zh: 开源的 API 认证与授权平台
 type: Project
 data:
   platforms:

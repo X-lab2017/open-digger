@@ -1,4 +1,6 @@
 name: Grafana Mimir
+description: Grafana Mimir is a scalable, highly available, multi-tenant long-term storage for Prometheus metrics.
+description_zh: Grafana Mimir 是一个可扩展、高可用的多租户 Prometheus 指标长期存储解决方案。
 type: Project
 data:
   platforms:

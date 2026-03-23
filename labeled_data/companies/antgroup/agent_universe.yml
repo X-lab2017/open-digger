@@ -1,4 +1,6 @@
 name: agentUniverse
+description: agentUniverse is a flexible and extensible LLM multi-agent framework for building expert-level agent applications.
+description_zh: agentUniverse 是一个灵活可扩展的大型语言模型多智能体框架，用于构建专家级智能体应用。
 type: Project
 data:
   platforms:

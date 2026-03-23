@@ -1,4 +1,6 @@
 name: DeepSpeed
+description: DeepSpeed is a deep learning optimization library for efficient distributed training and inference.
+description_zh: DeepSpeed 是一个用于高效分布式训练和推理的深度学习优化库。
 type: Project
 data:
   platforms:

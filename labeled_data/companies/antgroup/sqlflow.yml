@@ -1,4 +1,6 @@
 name: SQLFlow
+description: SQLFlow brings SQL and AI together, enabling ML workflows on Kubernetes.
+description_zh: SQLFlow 将 SQL 与 AI 结合，在 Kubernetes 上实现机器学习工作流。
 type: Project
 data:
   platforms:

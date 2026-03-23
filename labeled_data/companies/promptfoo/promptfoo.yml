@@ -1,4 +1,6 @@
 name: Promptfoo
+description: 'Promptfoo: Test and secure LLM apps with red teaming, evaluations, and model comparisons.'
+description_zh: Promptfoo：通过红队测试、评估和模型比较，测试并保障LLM应用的安全性。
 type: Project
 data:
   platforms:

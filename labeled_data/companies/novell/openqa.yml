@@ -1,4 +1,6 @@
 name: openQA for SUSE
+description: os-autoinst test cases for openSUSE and SLE distributions.
+description_zh: openSUSE 和 SLE 发行版的 os-autoinst 测试用例。
 type: Project
 data:
   platforms:

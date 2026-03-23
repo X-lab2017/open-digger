@@ -1,4 +1,6 @@
 name: Apache Nuttx
+description: Apache NuttX is a mature, standards-compliant real-time embedded OS.
+description_zh: Apache NuttX 是一个成熟且符合标准的实时嵌入式操作系统。
 type: Project
 data:
   platforms:

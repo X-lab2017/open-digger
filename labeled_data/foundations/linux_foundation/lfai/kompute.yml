@@ -1,4 +1,6 @@
 name: Kompute
+description: Kompute is a cross-vendor GPU compute framework built on Vulkan for fast and mobile-enabled data processing.
+description_zh: Kompute 是基于 Vulkan 的跨厂商 GPU 计算框架，支持快速移动数据处理。
 type: Project
 data:
   platforms:

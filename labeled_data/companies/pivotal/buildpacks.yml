@@ -1,4 +1,6 @@
 name: Buildpacks
+description: A CLI for building apps with Cloud Native Buildpacks.
+description_zh: 用于使用云原生构建包构建应用的命令行工具。
 type: Project
 data:
   platforms:

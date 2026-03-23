@@ -1,4 +1,6 @@
 name: Apache Pulsar
+description: Apache Pulsar - distributed pub-sub messaging system
+description_zh: Apache Pulsar 是一个分布式发布-订阅消息系统
 type: Project
 data:
   platforms:

@@ -1,4 +1,6 @@
 name: Cursor
+description: Cursor is an AI-powered code editor designed for efficient programming.
+description_zh: Cursor 是一个为高效编程而设计的 AI 代码编辑器。
 type: Project
 data:
   platforms:

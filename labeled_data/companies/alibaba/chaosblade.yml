@@ -1,4 +1,6 @@
 name: ChaosBlade
+description: A powerful chaos engineering toolkit by Alibaba for fault injection and system resilience testing.
+description_zh: 阿里巴巴开源的混沌工程工具，用于故障注入和系统容错测试。
 type: Project
 data:
   platforms:

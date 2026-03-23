@@ -1,4 +1,6 @@
 name: Opik
+description: Debug, evaluate, and monitor LLM applications with observability, evaluations, and dashboards.
+description_zh: 通过可观测性、评估和仪表板调试、评估和监控您的LLM应用。
 type: Project
 data:
   platforms:

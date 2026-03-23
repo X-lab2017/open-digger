@@ -1,4 +1,6 @@
 name: LMDeploy
+description: LMDeploy is a toolkit for compressing, deploying, and serving large language models (LLMs) with high performance.
+description_zh: LMDeploy 是一个用于压缩、部署和高效服务大语言模型的工具包。
 type: Project
 data:
   platforms:

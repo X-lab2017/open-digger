@@ -1,4 +1,6 @@
 name: Cloud Foundry
+description: Cloud Foundry Cloud Controller provides REST APIs for managing apps, services, and user roles.
+description_zh: Cloud Foundry 云控制器提供用于管理应用、服务和用户角色的 REST API。
 type: Project
 data:
   platforms:

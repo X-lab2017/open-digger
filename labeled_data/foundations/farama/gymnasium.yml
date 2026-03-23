@@ -1,4 +1,6 @@
 name: Gymnasium
+description: A standard API for single-agent reinforcement learning environments, with popular environments and utilities.
+description_zh: 单智能体强化学习环境的标准API，包含流行环境及相关工具。
 type: Project
 data:
   platforms:

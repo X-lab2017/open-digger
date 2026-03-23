@@ -1,4 +1,6 @@
 name: Reth
+description: A modular, contributor-friendly, and fast Ethereum implementation in Rust
+description_zh: 基于Rust的模块化、开发者友好且高性能的以太坊协议实现
 type: Project
 data:
   platforms:

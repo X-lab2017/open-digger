@@ -1,4 +1,6 @@
 name: PolarDB-X
+description: PolarDB-X is a cloud-native distributed SQL database for high concurrency, massive storage, and complex queries.
+description_zh: PolarDB-X 是一个面向高并发、海量存储和复杂查询的云原生分布式 SQL 数据库。
 type: Project
 data:
   platforms:

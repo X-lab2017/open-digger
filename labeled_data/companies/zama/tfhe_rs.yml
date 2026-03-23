@@ -1,4 +1,6 @@
 name: TFHE-rs
+description: 'TFHE-rs: A Pure Rust implementation of the TFHE Scheme for Boolean and Integer Arithmetics Over Encrypted Data.'
+description_zh: TFHE-rs：一个纯Rust实现的TFHE方案，支持加密数据上的布尔和整数运算。
 type: Project
 data:
   platforms:

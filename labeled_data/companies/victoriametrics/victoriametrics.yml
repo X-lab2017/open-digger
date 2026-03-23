@@ -1,4 +1,6 @@
 name: VictoriaMetrics
+description: 'VictoriaMetrics: fast, cost-effective monitoring solution and time series database'
+description_zh: VictoriaMetrics：快速、节省成本的监控解决方案与时间序列数据库
 type: Project
 data:
   platforms:

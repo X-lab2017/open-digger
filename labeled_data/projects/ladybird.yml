@@ -1,4 +1,6 @@
 name: Ladybird
+description: Truly independent web browser with a novel engine based on web standards.
+description_zh: 基于网页标准的真正独立浏览器，采用创新引擎。
 type: Project
 data:
   platforms:

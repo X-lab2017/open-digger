@@ -6,6 +6,7 @@ data:
     - ':companies/apple/swift'
     - ':companies/google/dart'
     - ':companies/google/go'
+    - ':companies/huawei/cangjie'
     - ':companies/jetbrains/kotlin'
     - ':companies/microsoft/dotnet'
     - ':companies/mozilla/rust'

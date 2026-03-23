@@ -1,4 +1,6 @@
 name: KubeVela
+description: KubeVela is a modern application delivery platform for hybrid and multi-cloud environments.
+description_zh: KubeVela 是一个面向混合云和多云环境的现代化应用交付平台。
 type: Project
 data:
   platforms:

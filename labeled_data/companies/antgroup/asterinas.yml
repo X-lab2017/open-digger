@@ -1,4 +1,6 @@
 name: Asterinas
+description: A secure, fast, and general-purpose OS kernel in Rust with Linux-compatible ABI.
+description_zh: 一个安全、快速且通用的 Rust 编写操作系统内核，兼容 Linux 接口。
 type: Project
 data:
   platforms:

@@ -1,4 +1,6 @@
 name: Hyperledger Cacti
+description: Hyperledger Cacti is a pluggable framework for blockchain interoperability.
+description_zh: Hyperledger Cacti 是一个用于区块链互操作性的可插拔框架。
 type: Project
 data:
   platforms:

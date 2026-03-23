@@ -1,4 +1,6 @@
 name: JavaScript/TypeScript
+description: The foundational, dynamic, and interpreted programming language of the web.
+description_zh: 网络编程基础，动态解释执行的脚本语言。
 type: Project
 data:
   labels:

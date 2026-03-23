@@ -1,4 +1,6 @@
 name: Rye
+description: 'Rye: a Hassle-Free Python Experience'
+description_zh: Rye：开箱即用的 Python 开发体验
 type: Project
 data:
   platforms:

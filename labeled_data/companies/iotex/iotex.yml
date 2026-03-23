@@ -1,4 +1,6 @@
 name: IoTeX Project
+description: An ultra-efficient EVM blockchain protocol for DePIN and Web3 composability.
+description_zh: 一个超高效率的EVM区块链协议，适用于DePIN和Web3组合应用。
 type: Project
 data:
   platforms:

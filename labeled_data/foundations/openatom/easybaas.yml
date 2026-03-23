@@ -1,4 +1,6 @@
 name: EasyBaaS
+description: EasyBaaS is a blockchain node management tool for Linux, simplifying deployment and operations.
+description_zh: EasyBaaS 是一个简化区块链节点部署与运维的 Linux 工具。
 type: Project
 data:
   platforms:

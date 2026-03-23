@@ -1,4 +1,6 @@
 name: Megatron
+description: GPU-optimized library for training transformer models at scale
+description_zh: 用于大规模训练Transformer模型的GPU优化库
 type: Project
 data:
   platforms:

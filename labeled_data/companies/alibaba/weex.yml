@@ -1,4 +1,6 @@
 name: Weex
+description: Apache Weex is a framework for building cross-platform mobile UI.
+description_zh: Apache Weex 是一个用于构建跨平台移动 UI 的框架。
 type: Project
 data:
   platforms:

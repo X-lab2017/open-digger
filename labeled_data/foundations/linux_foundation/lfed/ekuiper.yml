@@ -1,4 +1,6 @@
 name: eKuiper
+description: Lightweight IoT edge data stream processing engine with SQL and graph-based rule support.
+description_zh: 支持SQL和图形化规则的轻量级物联网边缘流数据处理引擎。
 type: Project
 data:
   platforms:

@@ -1,4 +1,6 @@
 name: Ludwig
+description: Low-code framework for building custom LLMs, neural networks, and AI models
+description_zh: 低代码框架，用于构建自定义大语言模型、神经网络和其他AI模型
 type: Project
 data:
   platforms:

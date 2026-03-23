@@ -1,4 +1,6 @@
 name: Apache RocketMQ
+description: Apache RocketMQ is a distributed messaging and streaming platform with low latency, high performance, and reliability.
+description_zh: Apache RocketMQ 是一个低延迟、高性能、可靠的消息与流式处理平台。
 type: Project
 data:
   platforms:

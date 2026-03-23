@@ -3,6 +3,10 @@ name_zh: 华为
 type: Company
 data:
   labels:
+    - ascend
+    - cann
+    - cangjie
+    - openfuyao
     - karmada
     - kubeedge
     - kurator

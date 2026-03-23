@@ -1,4 +1,6 @@
 name: bRPC
+description: brpc is an industrial-grade C++ RPC framework for high-performance systems.
+description_zh: brpc 是一个用于高性能系统的工业级 C++ RPC 框架。
 type: Project
 data:
   platforms:

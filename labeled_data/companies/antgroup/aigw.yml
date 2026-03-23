@@ -1,4 +1,6 @@
 name: AIGW
+description: An intelligent inference scheduler for large-scale services with QoS and load-aware routing.
+description_zh: 面向大规模推理服务的智能调度器，支持QoS和负载感知路由。
 type: Project
 data:
   platforms:

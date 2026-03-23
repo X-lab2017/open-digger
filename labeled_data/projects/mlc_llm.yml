@@ -1,4 +1,6 @@
 name: MLC LLM
+description: Universal LLM Deployment Engine with ML Compilation
+description_zh: 支持机器学习编译的通用大语言模型部署引擎
 type: Project
 data:
   platforms:

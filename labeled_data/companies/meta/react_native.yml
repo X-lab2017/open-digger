@@ -1,4 +1,6 @@
 name: React Native
+description: A framework for building native mobile apps using React
+description_zh: 使用 React 构建原生移动应用的框架
 type: Project
 data:
   platforms:

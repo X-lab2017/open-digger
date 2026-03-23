@@ -1,4 +1,6 @@
 name: BentoML
+description: 'BentoML: Unified Model Serving Framework for AI apps and models.'
+description_zh: BentoML：统一的AI应用与模型服务框架。
 type: Project
 data:
   platforms:

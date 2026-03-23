@@ -1,4 +1,6 @@
 name: Keptn
+description: Cloud-native application life-cycle orchestration with automated delivery and operations.
+description_zh: 面向云原生应用的生命周期编排，支持自动化交付与运维。
 type: Project
 data:
   platforms:

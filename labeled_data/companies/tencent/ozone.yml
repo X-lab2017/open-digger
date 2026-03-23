@@ -1,4 +1,6 @@
 name: Apache Ozone
+description: Scalable, reliable, distributed storage for data analytics and object store workloads.
+description_zh: 可扩展、可靠的数据分析和对象存储分布式存储系统。
 type: Project
 data:
   platforms:

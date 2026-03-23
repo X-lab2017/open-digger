@@ -1,4 +1,6 @@
 name: PaddlePaddle
+description: 'PaddlePaddle: An industrial-grade deep learning framework for high-performance training and deployment.'
+description_zh: PaddlePaddle：面向工业实践的高性能深度学习训练与部署框架。
 type: Project
 data:
   platforms:

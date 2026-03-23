@@ -1,4 +1,6 @@
 name: RamaLama
+description: RamaLama simplifies AI model management using OCI containers.
+description_zh: RamaLama 通过 OCI 容器简化 AI 模型管理。
 type: Project
 data:
   platforms:

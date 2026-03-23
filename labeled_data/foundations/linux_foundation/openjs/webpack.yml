@@ -1,4 +1,6 @@
 name: webpack
+description: Webpack is a powerful module bundler for JavaScript and other assets, supporting code splitting and various module formats.
+description_zh: Webpack 是一个功能强大的 JavaScript 及资源模块打包工具，支持代码分割和多种模块格式。
 type: Project
 data:
   platforms:

@@ -1,4 +1,6 @@
 name: MiniBlink
+description: A lightweight Blink-based browser kernel for embedding HTML UI in apps.
+description_zh: 一个轻量级的Blink浏览器内核，用于在应用中集成HTML界面。
 type: Project
 data:
   platforms:

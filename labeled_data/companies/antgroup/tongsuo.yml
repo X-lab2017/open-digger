@@ -1,4 +1,6 @@
 name: Tongsuo
+description: Tongsuo is a modern cryptographic library providing secure communication protocols and algorithms.
+description_zh: 铜锁是一个提供现代密码算法和安全通信协议的密码库。
 type: Project
 data:
   platforms:

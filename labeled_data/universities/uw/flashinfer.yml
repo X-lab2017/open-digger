@@ -1,4 +1,6 @@
 name: FlashInfer
+description: FlashInfer is a high-performance kernel library for LLM serving with efficient attention and sampling operators.
+description_zh: FlashInfer 是一个面向大语言模型服务的高性能内核库，提供高效的注意力与采样算子。
 type: Project
 data:
   platforms:

@@ -1,4 +1,6 @@
 name: OpenSergo
+description: Universal cloud-native microservice governance control plane
+description_zh: 通用云原生微服务治理控制面
 type: Project
 data:
   platforms:

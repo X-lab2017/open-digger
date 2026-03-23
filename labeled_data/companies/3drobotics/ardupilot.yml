@@ -1,4 +1,6 @@
 name: ArduPilot
+description: ArduPilot is a full-featured open-source autopilot for drones, planes, rovers, and submarines.
+description_zh: ArduPilot 是一个功能齐全的开源自动驾驶仪，支持无人机、飞机、车和潜艇。
 type: Project
 data:
   platforms:

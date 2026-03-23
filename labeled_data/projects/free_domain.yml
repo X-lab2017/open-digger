@@ -1,4 +1,6 @@
 name: FreeDomain
+description: DigitalPlat FreeDomain provides free domain names for everyone to build their digital identity.
+description_zh: DigitalPlat FreeDomain 为每个人提供免费域名，助力打造数字身份。
 type: Project
 data:
   platforms:

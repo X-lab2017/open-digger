@@ -1,4 +1,6 @@
 name: Stable Diffusion WebUI Forge
+description: Stable Diffusion WebUI Forge enhances SD WebUI with optimized features and resource management.
+description_zh: Stable Diffusion WebUI Forge 增强版，优化功能与资源管理。
 type: Project
 data:
   platforms:

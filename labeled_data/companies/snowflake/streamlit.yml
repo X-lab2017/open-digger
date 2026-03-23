@@ -1,4 +1,6 @@
 name: Streamlit
+description: Streamlit — A faster way to build and share data apps.
+description_zh: Streamlit — 快速构建和分享数据应用的工具。
 type: Project
 data:
   platforms:

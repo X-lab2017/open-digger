@@ -1,4 +1,6 @@
 name: Marko
+description: A declarative, HTML-based language for building dynamic web apps.
+description_zh: 一种声明式、基于HTML的语言，用于构建动态网页应用。
 type: Project
 data:
   platforms:

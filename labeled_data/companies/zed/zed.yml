@@ -1,4 +1,6 @@
 name: Zed
+description: Zed is a high-performance, multiplayer code editor by the creators of Atom and Tree-sitter.
+description_zh: Zed 是由 Atom 和 Tree-sitter 创造者开发的高性能多人协作代码编辑器。
 type: Project
 data:
   platforms:

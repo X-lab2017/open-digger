@@ -1,4 +1,6 @@
 name: AWS Amplify
+description: A declarative JavaScript library for building cloud-powered apps with AWS services.
+description_zh: 一个声明式JavaScript库，用于结合AWS服务构建云端应用。
 type: Project
 data:
   platforms:

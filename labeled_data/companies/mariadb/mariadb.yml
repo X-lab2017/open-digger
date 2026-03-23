@@ -1,4 +1,6 @@
 name: MariaDB
+description: MariaDB is a community-developed, open-source relational database forked from MySQL.
+description_zh: MariaDB 是一个由社区开发的开源关系型数据库，源自 MySQL。
 type: Project
 data:
   platforms:

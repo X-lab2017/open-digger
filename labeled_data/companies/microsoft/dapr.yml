@@ -1,4 +1,6 @@
 name: Dapr
+description: Dapr is a portable runtime for building distributed applications with event-driven and workflow orchestration capabilities.
+description_zh: Dapr 是一个可移植的运行时，用于构建支持事件驱动和工作流编排的分布式应用。
 type: Project
 data:
   platforms:

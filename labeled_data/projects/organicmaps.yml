@@ -1,4 +1,6 @@
 name: Organic Maps
+description: Organic Maps is a privacy-first offline map app using OpenStreetMap data, with no ads or tracking.
+description_zh: Organic Maps 是一款注重隐私的离线地图应用，基于 OpenStreetMap 数据，无广告、无追踪。
 type: Project
 data:
   platforms:

@@ -1,4 +1,6 @@
 name: sparklyr
+description: R interface for Apache Spark
+description_zh: Apache Spark 的 R 接口
 type: Project
 data:
   platforms:

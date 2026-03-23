@@ -1,4 +1,6 @@
 name: Astron
+description: Enterprise-grade agentic workflow platform for building scalable, production-ready AI agent applications.
+description_zh: 企业级智能代理工作流平台，用于构建可扩展、生产就绪的AI代理应用。
 type: Project
 data:
   platforms:

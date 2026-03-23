@@ -1,4 +1,6 @@
 name: Free Programming Books
+description: A collection of freely available programming books in multiple languages.
+description_zh: 多语言免费编程书籍合集。
 type: Project
 data:
   platforms:

@@ -1,4 +1,6 @@
 name: OpenV2X
+description: OpenV2X Device Management - APIServer (Manage wherever the wind goes)
+description_zh: OpenV2X 设备管理 API 服务器（随风而行的管理）
 type: Project
 data:
   platforms:

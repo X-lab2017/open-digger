@@ -1,4 +1,6 @@
 name: Ceph
+description: Ceph is a distributed object, block, and file storage system.
+description_zh: Ceph 是一个分布式对象、块和文件存储系统。
 type: Project
 data:
   platforms:

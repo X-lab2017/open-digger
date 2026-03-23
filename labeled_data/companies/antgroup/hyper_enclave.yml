@@ -1,4 +1,6 @@
 name: HyperEnclave
+description: HyperEnclave is an open and cross-platform Trusted Execution Environment (TEE).
+description_zh: HyperEnclave 是一个开源且跨平台的可信执行环境（TEE）。
 type: Project
 data:
   platforms:

@@ -1,4 +1,6 @@
 name: Enzyme
+description: JavaScript Testing utilities for React
+description_zh: 用于 React 的 JavaScript 测试工具
 type: Project
 data:
   platforms:

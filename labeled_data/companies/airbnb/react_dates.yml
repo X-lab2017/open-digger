@@ -1,4 +1,6 @@
 name: React Dates
+description: An easily internationalizable, mobile-friendly datepicker library for the web
+description_zh: 一个易于国际化、支持移动端的网页日期选择器库
 type: Project
 data:
   platforms:

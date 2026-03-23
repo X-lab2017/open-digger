@@ -1,4 +1,6 @@
 name: OpenDeRisk
+description: OpenDeRisk is an AI-native risk intelligence system offering 24/7 application risk management and deep root cause analysis.
+description_zh: OpenDeRisk 是一个AI原生风险智能系统，提供全天候应用风险管理与深度根因分析。
 type: Project
 data:
   platforms:

@@ -1,4 +1,6 @@
 name: Baetyl
+description: Remote management system of Baetyl instances
+description_zh: Baetyl 实例的远程管理系统
 type: Project
 data:
   platforms:

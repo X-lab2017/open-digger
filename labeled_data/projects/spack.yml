@@ -1,4 +1,6 @@
 name: Spack
+description: A flexible package manager for multiple versions, configurations, platforms, and compilers.
+description_zh: 一个支持多版本、多配置、多平台和多编译器的灵活包管理工具。
 type: Project
 data:
   platforms:

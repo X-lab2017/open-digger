@@ -1,4 +1,6 @@
 name: vLLM
+description: A high-throughput and memory-efficient inference and serving engine for LLMs
+description_zh: 一个高吞吐、内存高效的 LLM 推理与服务引擎
 type: Project
 data:
   platforms:

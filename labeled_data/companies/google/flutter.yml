@@ -1,4 +1,6 @@
 name: Flutter
+description: Flutter is Google's UI toolkit for building beautiful, fast apps across mobile, web, and desktop applications.
+description_zh: Flutter 是谷歌用于构建美观、快速的移动端、网页和桌面应用的 UI 工具包。
 type: Project
 data:
   platforms:

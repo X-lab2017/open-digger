@@ -1,4 +1,6 @@
 name: DvaJS
+description: A lightweight React/Redux framework inspired by Elm and Choo.
+description_zh: 基于React和Redux的轻量级框架，灵感来自Elm和Choo。
 type: Project
 data:
   platforms:

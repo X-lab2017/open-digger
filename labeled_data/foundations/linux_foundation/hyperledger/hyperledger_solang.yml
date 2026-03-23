@@ -1,4 +1,6 @@
 name: Hyperledger Solang
+description: A Solidity compiler for Solana, Polkadot, and Stellar blockchains.
+description_zh: 适用于Solana、Polkadot和Stellar的Solidity编译器。
 type: Project
 data:
   platforms:

@@ -1,4 +1,6 @@
 name: MetaMask
+description: MetaMask is a browser extension that enables Ethereum blockchain interaction for web browsing.
+description_zh: MetaMask 是一个浏览器扩展，支持浏览以太坊区块链网站。
 type: Project
 data:
   platforms:

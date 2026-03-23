@@ -1,4 +1,6 @@
 name: OrcaSlicer
+description: Open source G-code generator for FDM 3D printers with advanced slicing features.
+description_zh: 面向FDM 3D打印机的开源G代码生成器，具备高级切片功能。
 type: Project
 data:
   platforms:

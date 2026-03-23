@@ -1,4 +1,6 @@
 name: Hyperledger Indy
+description: Deprecated SDK for Hyperledger Indy, replaced by indy-vdr and aries-askar.
+description_zh: 已弃用的Hyperledger Indy SDK，已被indy-vdr和aries-askar替代。
 type: Project
 data:
   platforms:

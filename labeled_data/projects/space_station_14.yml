@@ -1,4 +1,6 @@
 name: Space Station 14
+description: A remake of the cult-classic Space Station 13, featuring paranoia and chaos in a multiplayer space setting.
+description_zh: 一款经典太空站13的复刻版多人游戏，充满猜疑与混乱。
 type: Project
 data:
   platforms:

@@ -1,4 +1,6 @@
 name: Fluent UI
+description: Fluent UI Web provides utilities, React components, and web components for building modern web applications.
+description_zh: Fluent UI Web 提供工具、React 组件和 Web 组件，用于构建现代网页应用。
 type: Project
 data:
   platforms:

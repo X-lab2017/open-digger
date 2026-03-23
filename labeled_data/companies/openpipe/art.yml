@@ -1,4 +1,6 @@
 name: ART
+description: 'Agent Reinforcement Trainer: train multi-step agents for real-world tasks using GRPO.'
+description_zh: 代理强化训练器：使用GRPO训练用于现实任务的多步骤智能体。
 type: Project
 data:
   platforms:

@@ -1,4 +1,6 @@
 name: ClickHouse
+description: ClickHouse® is a real-time analytics database management system
+description_zh: ClickHouse® 是一个实时分析数据库管理系统
 type: Project
 data:
   platforms:

@@ -1,4 +1,6 @@
 name: GGML
+description: A tensor library for machine learning with cross-platform support and quantization.
+description_zh: 一个支持跨平台和量化技术的机器学习张量库。
 type: Project
 data:
   platforms:

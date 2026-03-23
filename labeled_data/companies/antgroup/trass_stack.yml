@@ -1,4 +1,6 @@
 name: Traas Stack
+description: HoloInsight is a cloud-native observability platform focused on real-time log analysis and AI integration.
+description_zh: HoloInsight 是一个专注于实时日志分析与人工智能集成的云原生可观测性平台。
 type: Project
 data:
   platforms:

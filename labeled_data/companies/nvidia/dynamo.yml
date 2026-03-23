@@ -1,4 +1,6 @@
 name: Dynamo
+description: A high-throughput, low-latency distributed inference framework for generative AI models.
+description_zh: 面向生成式AI模型的高吞吐、低延迟分布式推理框架。
 type: Project
 data:
   platforms:

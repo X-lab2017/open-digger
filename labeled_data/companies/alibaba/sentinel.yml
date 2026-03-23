@@ -1,4 +1,6 @@
 name: Sentinel
+description: A powerful flow control component for microservices reliability and resilience.
+description_zh: 面向微服务的高可用流控与容错组件。
 type: Project
 data:
   platforms:

@@ -1,4 +1,6 @@
 name: Babelfish for PostgreSQL
+description: Babelfish enables PostgreSQL to work with SQL Server applications using T-SQL and wire-protocol.
+description_zh: Babelfish使PostgreSQL能够通过T-SQL和通信协议支持SQL Server应用。
 type: Project
 data:
   platforms:

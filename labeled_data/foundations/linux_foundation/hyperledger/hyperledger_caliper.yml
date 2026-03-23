@@ -1,4 +1,6 @@
 name: Hyperledger Caliper
+description: A blockchain performance benchmark framework for testing multiple solutions.
+description_zh: 一个用于测试多种区块链解决方案性能的基准框架。
 type: Project
 data:
   platforms:

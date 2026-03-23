@@ -1,4 +1,6 @@
 name: Werf
+description: werf is a CNCF CLI tool for full-cycle CI/CD to Kubernetes with Git, Dockerfile, and Helm integration.
+description_zh: werf 是一个支持 Git、Dockerfile 和 Helm 的 CNCF 命令行工具，用于实现面向 Kubernetes 的完整 CI/CD 流程。
 type: Project
 data:
   platforms:

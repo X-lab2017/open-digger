@@ -1,4 +1,6 @@
 name: Jeandle
+description: Jeandle is a high-performance JIT compiler for Java built on OpenJDK and LLVM.
+description_zh: Jeandle 是基于 OpenJDK 和 LLVM 的高性能 Java 即时编译器。
 type: Project
 data:
   platforms:

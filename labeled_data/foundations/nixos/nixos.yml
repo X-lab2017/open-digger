@@ -1,4 +1,6 @@
 name: NixOS
+description: Nix Packages collection & NixOS, a purely-functional Linux distribution.
+description_zh: Nix 软件包集合与纯函数式 Linux 发行版 NixOS。
 type: Project
 data:
   platforms:

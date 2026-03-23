@@ -1,4 +1,6 @@
 name: Intelligent Machine Learning
+description: 'DLRover: An Automatic Distributed Deep Learning System'
+description_zh: DLRover：一个自动化的分布式深度学习系统
 type: Project
 data:
   platforms:

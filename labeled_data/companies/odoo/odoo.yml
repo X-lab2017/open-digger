@@ -1,4 +1,6 @@
 name: Odoo
+description: Odoo is a suite of open source business apps to grow your business.
+description_zh: Odoo 是一套开源商业应用，助力企业成长。
 type: Project
 data:
   platforms:

@@ -1,4 +1,6 @@
 name: Firebase
+description: Open source resources for Firebase, a comprehensive backend-as-a-service (BaaS) platform.
+description_zh: Firebase（一个全面的后端即服务（BaaS）平台）的开源资源。
 type: Project
 data:
   platforms:

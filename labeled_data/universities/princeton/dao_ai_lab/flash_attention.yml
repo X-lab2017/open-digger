@@ -1,4 +1,6 @@
 name: FlashAttention
+description: Fast and memory-efficient exact attention with IO-awareness
+description_zh: 具有IO感知的快速且内存高效的精确注意力机制
 type: Project
 data:
   platforms:

@@ -1,4 +1,6 @@
 name: OpenPipe
+description: 'OpenPipe: Open-source platform for fine-tuning and hosting cost-effective models from expensive prompts.'
+description_zh: OpenPipe：将昂贵提示训练为低成本模型的开源平台。
 type: Project
 data:
   platforms:

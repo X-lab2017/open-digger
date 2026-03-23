@@ -1,4 +1,6 @@
 name: DataEase
+description: An open-source BI tool for data visualization and business intelligence.
+description_zh: 开源 BI 工具，实现数据可视化与业务智能分析。
 type: Project
 data:
   platforms:

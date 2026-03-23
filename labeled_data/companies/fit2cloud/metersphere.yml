@@ -1,4 +1,6 @@
 name: MeterSphere
+description: MeterSphere is a next-gen open-source continuous testing tool with built-in AI assistant.
+description_zh: MeterSphere 是新一代内置 AI 助手的开源持续测试工具。
 type: Project
 data:
   platforms:

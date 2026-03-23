@@ -1,4 +1,6 @@
 name: Expensify
+description: 'New Expensify: A chat-based financial collaboration platform.'
+description_zh: New Expensify：一个基于聊天的财务协作平台。
 type: Project
 data:
   platforms:

@@ -1,4 +1,6 @@
 name: OpenTenBase
+description: TBase is an enterprise-level distributed HTAP database offering integrated solutions for transactional and analytical workloads.
+description_zh: TBase 是一个企业级分布式 HTAP 数据库，提供事务和分析一体化解决方案。
 type: Project
 data:
   platforms:

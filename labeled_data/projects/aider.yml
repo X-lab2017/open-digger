@@ -1,4 +1,6 @@
 name: Aider
+description: Aider is AI pair programming in your terminal
+description_zh: Aider 是终端中的 AI 协同编程工具
 type: Project
 data:
   platforms:

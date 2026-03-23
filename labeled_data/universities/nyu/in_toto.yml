@@ -1,4 +1,6 @@
 name: in-toto
+description: in-toto is a framework to protect software supply chain integrity.
+description_zh: in-toto 是一个保护软件供应链完整性的框架。
 type: Project
 data:
   platforms:

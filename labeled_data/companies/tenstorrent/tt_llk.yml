@@ -1,4 +1,6 @@
 name: TT-LLK
+description: TT-LLK is Tenstorrent's low-level kernel library for AI chip compute operations.
+description_zh: TT-LLK 是 Tenstorrent 的 AI 芯片底层内核库。
 type: Project
 data:
   platforms:

@@ -1,4 +1,6 @@
 name: SPIRE
+description: SPIRE is a toolchain for establishing trust between software systems using SPIFFE standards.
+description_zh: SPIRE 是基于 SPIFFE 标准建立软件系统间信任的工具链。
 type: Project
 data:
   platforms:

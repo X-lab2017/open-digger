@@ -12,3 +12,10 @@ data:
       orgs:
         - id: 54143604
           name: mindspore-ai
+    - name: AtomGit
+      type: Code Hosting
+      orgs:
+        - id: 14648
+          name: mindspore
+        - id: 6962687
+          name: mindspore-lab

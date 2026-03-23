@@ -1,4 +1,6 @@
 name: Hyperledger AnonCreds
+description: Rust implementation of the AnonCreds V1.0 specification for verifiable credentials.
+description_zh: 基于AnonCreds V1.0规范的可验证凭证Rust实现。
 type: Project
 data:
   platforms:

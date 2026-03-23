@@ -1,4 +1,6 @@
 name: Substra
+description: Backend of the Substra open-source federated learning platform.
+description_zh: Substra 开源联邦学习平台的后端。
 type: Project
 data:
   platforms:

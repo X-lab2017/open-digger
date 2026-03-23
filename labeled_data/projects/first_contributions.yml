@@ -1,4 +1,6 @@
 name: First Contributions
+description: Guide beginners to make their first open source contribution.
+description_zh: 指导初学者完成第一次开源贡献。
 type: Project
 data:
   platforms:

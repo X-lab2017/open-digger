@@ -1,4 +1,6 @@
 name: CRI-O
+description: CRI-O is an OCI-based Kubernetes Container Runtime Interface implementation.
+description_zh: CRI-O 是基于 OCI 的 Kubernetes 容器运行时接口实现。
 type: Project
 data:
   platforms:

@@ -29,14 +29,13 @@ import { existsSync, mkdirSync, writeFileSync } from "fs";
     [undefined, { name: 'Repo', name_zh: '仓库' }],
     [['Company', 'University-0', 'Institution-0'], { name: 'Initiator', name_zh: '发起方' }],
     ['Foundation', { name: 'Foundation', name_zh: '基金会' }],
-    ['Division-0', { name: 'Country', name_zh: '国家/地区' }],
   ];
   const groupByTimeTypes: Array<'year' | 'month'> = ['year', 'month'];
 
-  const labelData = new Map<string, { name: string, name_zh: string }>();
-  const labels = await query(`SELECT id, name, name_zh FROM labels`);
-  for (const [id, name, name_zh] of labels) {
-    labelData.set(id, { name, name_zh });
+  const labelData = new Map<string, { name: string, name_zh: string, description: string, description_zh: string }>();
+  const labels = await query(`SELECT id, name, name_zh, description, description_zh FROM labels`);
+  for (const [id, name, name_zh, description, description_zh] of labels) {
+    labelData.set(id, { name, name_zh, description, description_zh });
   }
 
   const meta = {
@@ -123,6 +122,8 @@ import { existsSync, mkdirSync, writeFileSync } from "fs";
                 row.platform === 'Gitee' ? `https://gitee.com/${row.name.split('/')[0]}.png` : '',
             name: row.name,
             name_zh: !labelData.has(row.id) || labelData.get(row.id)?.name_zh === '' ? row.name : labelData.get(row.id)!.name_zh,
+            description: !labelData.has(row.id) || labelData.get(row.id)?.description === '' ? row.name : labelData.get(row.id)!.description,
+            description_zh: !labelData.has(row.id) || labelData.get(row.id)?.description_zh === '' ? row.name : labelData.get(row.id)!.description_zh,
             openrank: +row.openrank[index],
             openrankDelta: 0,
             participants: +row.participants[index],

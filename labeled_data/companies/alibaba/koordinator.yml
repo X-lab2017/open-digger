@@ -1,4 +1,6 @@
 name: Koordinator
+description: Koordinator optimizes QoS scheduling for diverse Kubernetes workloads.
+description_zh: Koordinator 优化 Kubernetes 多样化工作负载的 QoS 调度。
 type: Project
 data:
   platforms:

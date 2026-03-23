@@ -1,4 +1,6 @@
 name: Dragonwell
+description: Alibaba Dragonwell11 JDK is an optimized OpenJDK implementation for large-scale Java applications.
+description_zh: 阿里龙井11 JDK 是针对大规模 Java 应用优化的 OpenJDK 实现。
 type: Project
 data:
   platforms:

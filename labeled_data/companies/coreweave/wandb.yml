@@ -1,4 +1,6 @@
 name: Weights & Biases
+description: Weights & Biases is an AI developer platform for training, fine-tuning, and managing machine learning models.
+description_zh: Weights & Biases 是一个用于训练、微调和管理机器学习模型的人工智能开发平台。
 type: Project
 data:
   platforms:

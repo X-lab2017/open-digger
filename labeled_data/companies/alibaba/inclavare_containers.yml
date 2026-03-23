@@ -1,4 +1,6 @@
 name: Inclavare Containers
+description: RATS TLS is a TLS implementation based on RATS architecture using librats.
+description_zh: RATS TLS 是基于 RATS 架构并使用 librats 的 TLS 实现。
 type: Project
 data:
   platforms:

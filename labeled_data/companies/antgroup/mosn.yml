@@ -1,4 +1,6 @@
 name: MOSN
+description: MOSN is a cloud-native network proxy platform built by Ant Group, supporting multiple protocols and integrations.
+description_zh: MOSN 是由蚂蚁集团打造的云原生网络代理平台，支持多协议与多种集成。
 type: Project
 data:
   platforms:

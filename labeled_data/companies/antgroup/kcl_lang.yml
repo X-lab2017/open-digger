@@ -1,4 +1,6 @@
 name: KCL Lang
+description: KCL is a constraint-based record and functional language for cloud-native configuration.
+description_zh: KCL 是一种面向云原生配置的约束式记录与函数式编程语言。
 type: Project
 data:
   platforms:

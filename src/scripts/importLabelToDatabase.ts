@@ -9,6 +9,8 @@ import { query, insertRecords, getNewClient } from "../db/clickhouse";
       type LowCardinality(String),
       name String,
       name_zh String,
+      description String,
+      description_zh String,
       children Array(String),
       platforms Nested(
         name LowCardinality(String),
@@ -28,6 +30,8 @@ import { query, insertRecords, getNewClient } from "../db/clickhouse";
     type: label.type,
     name: label.name,
     name_zh: label.name_zh ?? '',
+    description: label.description ?? '',
+    description_zh: label.description_zh ?? '',
     children: label.children,
     'platforms.name': label.platforms.map(platform => platform.name),
     'platforms.type': label.platforms.map(platform => platform.type),

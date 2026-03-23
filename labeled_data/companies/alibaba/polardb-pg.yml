@@ -1,4 +1,6 @@
 name: PolarDB-for-PostgreSQL
+description: A cloud-native PostgreSQL-compatible database by Alibaba Cloud.
+description_zh: 阿里云推出的云原生PostgreSQL兼容数据库。
 type: Project
 data:
   platforms:

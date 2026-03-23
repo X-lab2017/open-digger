@@ -1,4 +1,6 @@
 name: Apache NiFi
+description: Apache NiFi is a powerful system for processing and distributing data securely.
+description_zh: Apache NiFi 是一个功能强大的数据处理与分发系统，支持安全传输。
 type: Project
 data:
   platforms:

@@ -1,4 +1,6 @@
 name: Symfony
+description: Symfony is a PHP framework for building web and console applications with reusable components.
+description_zh: Symfony 是一个用于构建 Web 和控制台应用的 PHP 框架，提供可复用组件。
 type: Project
 data:
   platforms:

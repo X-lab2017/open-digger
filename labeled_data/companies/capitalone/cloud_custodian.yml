@@ -1,4 +1,6 @@
 name: Cloud Custodian
+description: A rules engine for cloud governance, security, and cost optimization using YAML-based policies.
+description_zh: 基于YAML策略的云治理、安全与成本优化规则引擎。
 type: Project
 data:
   platforms:

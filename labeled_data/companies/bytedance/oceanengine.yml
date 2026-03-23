@@ -1,4 +1,6 @@
 name: Ocean Engine
+description: Go SDK for the OceanEngine Marketing API, providing token acquisition, request handling, and response parsing.
+description_zh: 巨量引擎营销API的Go语言SDK，提供Token获取、请求封装与响应解析功能。
 type: Project
 data:
   platforms:

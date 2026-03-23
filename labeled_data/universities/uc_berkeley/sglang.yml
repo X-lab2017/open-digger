@@ -1,4 +1,6 @@
 name: SGLang
+description: SGLang is a fast serving framework for large and vision language models.
+description_zh: SGLang 是一个高效的大语言模型和视觉语言模型服务框架。
 type: Project
 data:
   platforms:

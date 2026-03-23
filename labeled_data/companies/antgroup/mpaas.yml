@@ -1,4 +1,6 @@
 name: mPaaS
+description: mPaaS is a mobile development platform from Alipay, offering high-performance and secure app solutions.
+description_zh: mPaaS 是支付宝推出的移动开发平台，助力开发者构建高性能、安全的 App。
 type: Project
 data:
   platforms:

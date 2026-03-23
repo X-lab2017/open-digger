@@ -1,4 +1,6 @@
 name: MagicQuill
+description: 'MagicQuill: An intelligent interactive image editing system with AI-powered tools.'
+description_zh: MagicQuill：一个智能交互式图像编辑系统，配备AI驱动工具。
 type: Project
 data:
   platforms:

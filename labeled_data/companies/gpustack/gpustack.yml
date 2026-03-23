@@ -1,4 +1,6 @@
 name: GPUStack
+description: GPUStack is an open-source GPU cluster manager for running AI models.
+description_zh: GPUStack 是一个开源的 GPU 集群管理工具，用于运行 AI 模型。
 type: Project
 data:
   platforms:

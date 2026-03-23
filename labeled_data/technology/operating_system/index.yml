@@ -5,6 +5,8 @@ data:
   labels:
     - ':companies/amazon/bottlerocket'
     - ':companies/amazon/freertos'
+    - ':companies/huawei/openharmony'
+    - ':companies/huawei/openeuler'
     - ':foundations/apache/nuttx'
     - ':foundations/gentoo/gentoo'
     - ':foundations/nixos/nixos'

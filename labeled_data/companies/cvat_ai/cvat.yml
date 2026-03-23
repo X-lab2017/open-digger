@@ -1,4 +1,6 @@
 name: CVAT
+description: 'CVAT: Industry-leading computer vision annotation tool for images and videos.'
+description_zh: CVAT：领先的计算机视觉图像和视频标注工具。
 type: Project
 data:
   platforms:

@@ -1,4 +1,6 @@
 name: CodeFuse
+description: A curated list of language modeling research for code and software engineering, with related datasets.
+description_zh: 代码和软件工程语言模型研究精选列表，包含相关数据集。
 type: Project
 data:
   platforms:

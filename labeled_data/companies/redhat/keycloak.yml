@@ -1,4 +1,6 @@
 name: Keycloak
+description: Open source identity and access management for modern apps and services.
+description_zh: 为现代应用程序和服务提供开源的身份和访问管理。
 type: Project
 data:
   platforms:

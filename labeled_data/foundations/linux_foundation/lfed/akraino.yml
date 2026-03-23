@@ -1,4 +1,6 @@
 name: Akraino
+description: Akraino ICN SD-EWAN provides edge-optimized SD-WAN capabilities with K8s integration.
+description_zh: Akraino ICN SD-EWAN 提供面向边缘计算的优化 SD-WAN 功能并支持 K8s 集成。
 type: Project
 data:
   platforms:

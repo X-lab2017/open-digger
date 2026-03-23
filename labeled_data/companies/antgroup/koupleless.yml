@@ -1,4 +1,6 @@
 name: Koupleless
+description: Koupleless is a modular development framework and serving platform for efficient, low-cost application evolution to microservices and serverless.
+description_zh: Koupleless 是一个模块化研发框架与运维调度系统，助力应用高效低成本演进至微服务和 Serverless。
 type: Project
 data:
   platforms:

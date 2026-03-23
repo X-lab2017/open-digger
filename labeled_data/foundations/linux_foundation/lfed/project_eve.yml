@@ -1,4 +1,6 @@
 name: Project EVE
+description: EVE is an open, agnostic edge virtualization engine for cloud-native applications.
+description_zh: EVE 是一个面向云原生应用的开放、中立边缘虚拟化引擎。
 type: Project
 data:
   platforms:

@@ -1,4 +1,6 @@
 name: DaoCloud Public Image Mirror
+description: A public image mirror for accelerating container image downloads in China.
+description_zh: 一个用于加速国内容器镜像下载的公共镜像仓库。
 type: Project
 data:
   platforms:

@@ -1,4 +1,6 @@
 name: OpenFeature
+description: A Unix-style feature flag daemon with OpenFeature compliance and real-time updates.
+description_zh: 一个符合 Unix 风格、支持 OpenFeature 并具备实时更新功能的特性标志守护进程。
 type: Project
 data:
   platforms:

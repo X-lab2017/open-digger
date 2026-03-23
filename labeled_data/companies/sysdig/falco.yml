@@ -1,4 +1,6 @@
 name: Falco
+description: Falco is a cloud native runtime security tool for Linux that detects abnormal behavior in real-time.
+description_zh: Falco 是一款用于 Linux 的云原生运行时安全工具，可实时检测异常行为。
 type: Project
 data:
   platforms:

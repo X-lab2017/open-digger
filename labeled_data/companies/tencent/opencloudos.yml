@@ -1,4 +1,6 @@
 name: OpenCloudOS
+description: nettrace is an eBPF-based tool for tracing network packets and diagnosing network issues.
+description_zh: nettrace 是一个基于 eBPF 的网络包追踪与诊断工具。
 type: Project
 data:
   platforms:

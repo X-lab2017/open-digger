@@ -1,4 +1,6 @@
 name: VSCode
+description: Visual Studio Code is a lightweight, extensible open-source code editor.
+description_zh: Visual Studio Code 是一个轻量、可扩展的开源代码编辑器。
 type: Project
 data:
   platforms:

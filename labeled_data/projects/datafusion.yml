@@ -1,4 +1,6 @@
 name: Apache DataFusion
+description: Apache DataFusion is a high-performance, extensible SQL query engine built with Rust and Apache Arrow.
+description_zh: Apache DataFusion 是一个基于 Rust 和 Apache Arrow 构建的高性能、可扩展 SQL 查询引擎。
 type: Project
 data:
   platforms:

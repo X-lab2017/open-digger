@@ -1,4 +1,6 @@
 name: Apache Hudi
+description: Apache Hudi is a data lakehouse platform for upserts, deletes, and incremental processing on big data.
+description_zh: Apache Hudi 是一个支持大数据上更新、删除和增量处理的数据湖平台。
 type: Project
 data:
   platforms:

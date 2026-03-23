@@ -1,4 +1,6 @@
 name: Laravel
+description: Laravel is a robust PHP web application framework with elegant syntax and powerful tools.
+description_zh: Laravel 是一个功能强大的 PHP Web 应用框架，语法优雅且工具丰富。
 type: Project
 data:
   platforms:

@@ -1,4 +1,6 @@
 name: Fledge
+description: An open-source edge gateway for IoT sensor data to cloud systems.
+description_zh: 一个用于物联网传感器数据到云系统的开源边缘网关。
 type: Project
 data:
   platforms:

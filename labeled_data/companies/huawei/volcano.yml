@@ -1,4 +1,6 @@
 name: Volcano
+description: A Kubernetes-native batch scheduling system for AI, Big Data, and HPC workloads.
+description_zh: 基于Kubernetes的云原生批处理调度系统，适用于AI、大数据和高性能计算。
 type: Project
 data:
   platforms:

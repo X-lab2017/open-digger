@@ -1,4 +1,6 @@
 name: ZTDBP
+description: ZAManager is the controller for ZASentinel, managing resources and certificates.
+description_zh: ZAManager 是 ZASentinel 的控制器，用于管理资源和证书。
 type: Project
 data:
   platforms:

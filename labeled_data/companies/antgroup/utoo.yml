@@ -1,4 +1,6 @@
 name: Utoo
+description: A unified and high-performance toolchain for modern web development.
+description_zh: 一个统一且高性能的现代前端开发工具链。
 type: Project
 data:
   platforms:

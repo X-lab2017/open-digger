@@ -1,4 +1,6 @@
 name: Namma Yatri
+description: Namma Yatri is an open, driver-centric mobility platform for next-gen transportation in India.
+description_zh: Namma Yatri 是一个面向印度的开放、以司机为中心的新型出行平台。
 type: Project
 data:
   platforms:

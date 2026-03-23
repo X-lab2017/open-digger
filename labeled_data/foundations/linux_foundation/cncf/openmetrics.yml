@@ -1,4 +1,6 @@
 name: OpenMetrics
+description: OpenMetrics is a specification extending Prometheus exposition format into a standardized metrics format.
+description_zh: OpenMetrics 是将 Prometheus 暴露格式扩展为标准化指标格式的规范。
 type: Project
 data:
   platforms:

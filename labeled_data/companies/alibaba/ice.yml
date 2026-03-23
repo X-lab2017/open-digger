@@ -1,4 +1,6 @@
 name: Ice
+description: 'ice.js: A progressive React-based framework for building universal applications.'
+description_zh: ice.js：基于 React 的渐进式框架，用于构建通用型应用。
 type: Project
 data:
   platforms:

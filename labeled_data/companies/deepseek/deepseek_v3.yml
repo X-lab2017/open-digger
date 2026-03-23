@@ -1,4 +1,6 @@
 name: DeepSeek-V3
+description: DeepSeek-V3 is a 671B MoE language model with advanced training techniques and strong performance in multiple benchmarks.
+description_zh: DeepSeek-V3 是一个拥有 6710 亿参数的 MoE 大语言模型，在多个基准测试中表现出色。
 type: Project
 data:
   platforms:

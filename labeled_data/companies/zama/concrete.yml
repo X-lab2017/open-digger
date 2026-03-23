@@ -1,4 +1,6 @@
 name: Concrete
+description: 'Concrete: TFHE compiler converting Python to FHE for encrypted computation'
+description_zh: Concrete：将Python程序转换为FHE的TFHE编译器，用于加密计算
 type: Project
 data:
   platforms:

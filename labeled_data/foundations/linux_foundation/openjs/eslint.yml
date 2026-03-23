@@ -1,4 +1,6 @@
 name: ESLint
+description: Find and fix problems in JavaScript code with ESLint.
+description_zh: 使用 ESLint 查找并修复 JavaScript 代码中的问题。
 type: Project
 data:
   platforms:

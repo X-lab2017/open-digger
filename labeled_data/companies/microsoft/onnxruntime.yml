@@ -1,4 +1,6 @@
 name: ONNX Runtime
+description: 'ONNX Runtime: cross-platform ML inference and training accelerator with high performance.'
+description_zh: ONNX 运行时：跨平台高性能机器学习推理与训练加速器。
 type: Project
 data:
   platforms:

@@ -1,4 +1,6 @@
 name: gRPC
+description: A high-performance RPC framework supporting multiple languages.
+description_zh: 一个高性能的多语言支持的远程过程调用框架。
 type: Project
 data:
   platforms:

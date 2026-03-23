@@ -1,4 +1,6 @@
 name: Fluentd
+description: Fluent Bit is a fast and lightweight telemetry agent for logs, metrics, and traces.
+description_zh: Fluent Bit 是一个快速轻量的日志、指标和追踪处理工具。
 type: Project
 data:
   platforms:

@@ -1,4 +1,6 @@
 name: libuv
+description: Cross-platform asynchronous I/O library for Node.js and others
+description_zh: 为Node.js及其他项目提供跨平台异步I/O支持的库
 type: Project
 data:
   platforms:

@@ -1,4 +1,6 @@
 name: OpenClaw
+description: Your personal AI assistant for any OS and platform.
+description_zh: 适用于任何操作系统和平台的个人 AI 助手。
 type: Project
 data:
   platforms:

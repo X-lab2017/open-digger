@@ -1,4 +1,6 @@
 name: nvm
+description: Node Version Manager - POSIX-compliant bash script to manage multiple active node.js versions
+description_zh: Node版本管理器，用于通过POSIX兼容的bash脚本管理多个活动的node.js版本
 type: Project
 data:
   platforms:

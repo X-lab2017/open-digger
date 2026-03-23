@@ -1,4 +1,6 @@
 name: Claude Code
+description: Claude Code is an AI-powered coding tool for terminal-based code understanding and automation.
+description_zh: Claude Code 是一个基于终端的 AI 编程工具，支持代码理解与自动化操作。
 type: Project
 data:
   platforms:

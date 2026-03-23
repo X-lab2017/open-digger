@@ -1,4 +1,6 @@
 name: KubeOperator
+description: KubeOperator is a lightweight Kubernetes distribution for deploying and managing production-grade clusters.
+description_zh: KubeOperator 是一个轻量级 Kubernetes 发行版，用于部署和管理生产级别集群。
 type: Project
 data:
   platforms:

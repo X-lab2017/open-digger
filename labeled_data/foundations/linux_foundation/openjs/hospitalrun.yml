@@ -1,4 +1,6 @@
 name: HospitalRun
+description: 'React frontend for HospitalRun: free hospital management software.'
+description_zh: HospitalRun 的 React 前端：面向发展中国家医院的免费管理软件。
 type: Project
 data:
   platforms:

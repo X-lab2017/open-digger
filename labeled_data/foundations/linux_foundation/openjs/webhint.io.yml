@@ -1,4 +1,6 @@
 name: Webhint.io
+description: A customizable linting tool for improving web accessibility, performance, and compatibility.
+description_zh: 一个可定制的代码检查工具，用于提升网页的可访问性、性能和兼容性。
 type: Project
 data:
   platforms:

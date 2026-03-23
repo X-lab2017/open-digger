@@ -1,4 +1,6 @@
 name: Sealer
+description: Sealer builds, shares, and runs Kubernetes clusters and distributed applications as ClusterImages.
+description_zh: Sealer 通过 ClusterImage 构建、共享和运行 Kubernetes 集群与分布式应用。
 type: Project
 data:
   platforms:

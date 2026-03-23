@@ -1,4 +1,6 @@
 name: Apache Polaris
+description: Apache Polaris is an interoperable, open-source catalog for Apache Iceberg.
+description_zh: Apache Polaris 是面向 Apache Iceberg 的开源、可互操作的目录服务。
 type: Project
 data:
   platforms:

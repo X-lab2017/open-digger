@@ -1,4 +1,6 @@
 name: OpenCode
+description: The open source AI coding agent.
+description_zh: 开源的AI编程代理。
 type: Project
 data:
   platforms:

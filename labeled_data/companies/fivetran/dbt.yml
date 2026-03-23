@@ -1,4 +1,6 @@
 name: dbt
+description: dbt enables data transformation using software engineering best practices.
+description_zh: dbt 使用软件工程最佳实践实现数据转换。
 type: Project
 data:
   platforms:

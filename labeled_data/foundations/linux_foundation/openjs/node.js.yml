@@ -1,4 +1,6 @@
 name: Node.js
+description: Node.js is an open-source, cross-platform JavaScript runtime environment.
+description_zh: Node.js 是一个开源的跨平台 JavaScript 运行时环境。
 type: Project
 data:
   platforms:

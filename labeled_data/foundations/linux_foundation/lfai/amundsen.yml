@@ -1,4 +1,6 @@
 name: Amundsen
+description: Amundsen is a metadata-driven data discovery and search platform for data professionals.
+description_zh: Amundsen 是一个面向数据专业人士的元数据驱动型数据发现与搜索平台。
 type: Project
 data:
   platforms:

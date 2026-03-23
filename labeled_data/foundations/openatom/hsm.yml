@@ -1,4 +1,6 @@
 name: HSMConn
+description: HSMConn provides a unified interface for accessing heterogeneous cryptographic hardware devices.
+description_zh: HSMConn 提供统一接口，用于访问异构密码硬件设备。
 type: Project
 data:
   platforms:

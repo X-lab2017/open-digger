@@ -1,4 +1,6 @@
 name: OpenKraken
+description: A high-performance, web standards-compliant rendering engine based on Flutter.
+description_zh: 基于 Flutter 的高性能、符合网页标准的渲染引擎。
 type: Project
 data:
   platforms:

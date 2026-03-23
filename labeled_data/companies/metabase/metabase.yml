@@ -1,4 +1,6 @@
 name: Metabase
+description: Metabase is an easy-to-use open-source Business Intelligence and Embedded Analytics tool for everyone to work with data.
+description_zh: Metabase 是一款易于使用的开源商业智能与嵌入式分析工具，让每个人都能轻松处理数据。
 type: Project
 data:
   platforms:

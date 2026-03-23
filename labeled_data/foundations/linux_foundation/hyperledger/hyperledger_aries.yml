@@ -1,4 +1,6 @@
 name: Hyperledger Aries
+description: ACA-Py is a production-ready, open-source self-sovereign identity agent for building non-mobile decentralized trust services.
+description_zh: ACA-Py 是一个用于构建非移动端去中心化信任服务的开源、生产就绪的自主身份代理。
 type: Project
 data:
   platforms:

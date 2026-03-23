@@ -1,4 +1,6 @@
 name: Julia
+description: Julia is a high-level, high-performance programming language for technical computing.
+description_zh: Julia 是一种用于科学计算的高性能高级编程语言。
 type: Project
 data:
   platforms:

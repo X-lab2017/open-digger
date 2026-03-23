@@ -1,4 +1,6 @@
 name: Raycast
+description: Everything you need to extend Raycast with React and other tools.
+description_zh: 使用 React 和其他工具扩展 Raycast 所需的一切。
 type: Project
 data:
   platforms:

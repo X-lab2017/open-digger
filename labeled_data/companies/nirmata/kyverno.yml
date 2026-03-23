@@ -1,4 +1,6 @@
 name: Kyverno
+description: Kyverno is a Kubernetes-native policy engine for security, compliance, and automation.
+description_zh: Kyverno 是一个原生 Kubernetes 策略引擎，用于安全、合规与自动化。
 type: Project
 data:
   platforms:

@@ -1,4 +1,6 @@
 name: HStreamDB
+description: HStreamDB is an open-source, cloud-native streaming database for real-time applications.
+description_zh: HStreamDB 是一个开源的云原生流数据库，适用于实时应用。
 type: Project
 data:
   platforms:

@@ -1,4 +1,6 @@
 name: Helm
+description: 'Deprecated: Curated Helm charts for Kubernetes (stable and incubator).'
+description_zh: 已弃用：Kubernetes 的精选 Helm 应用模板（stable 和 incubator）。
 type: Project
 data:
   platforms:

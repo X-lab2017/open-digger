@@ -1,4 +1,6 @@
 name: Mattermost
+description: Mattermost is an open source platform for secure collaboration in software development.
+description_zh: Mattermost 是一个用于软件开发安全协作的开源平台。
 type: Project
 data:
   platforms:

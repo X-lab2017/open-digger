@@ -1,4 +1,6 @@
 name: LlamaNodes
+description: A fast caching and load-balancing proxy for Ethereum or similar JSON-RPC chains.
+description_zh: 一个快速缓存和负载均衡代理，适用于以太坊或类似JSON-RPC链。
 type: Project
 data:
   platforms:

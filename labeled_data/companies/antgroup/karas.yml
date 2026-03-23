@@ -1,4 +1,6 @@
 name: KarasJS
+description: A declarative JavaScript framework for RIA on Canvas/Svg/Webgl.
+description_zh: 基于Canvas/Svg/Webgl的声明式JavaScript RIA框架。
 type: Project
 data:
   platforms:

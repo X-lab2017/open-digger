@@ -1,4 +1,6 @@
 name: Sofastack
+description: SOFARPC is a high-performance, production-level Java RPC framework with rich features.
+description_zh: SOFARPC 是一个高性能、生产级的 Java RPC 框架，功能丰富。
 type: Project
 data:
   platforms:

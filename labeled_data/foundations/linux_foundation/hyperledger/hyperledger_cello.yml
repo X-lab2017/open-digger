@@ -1,4 +1,6 @@
 name: Hyperledger Cello
+description: Hyperledger Cello is a blockchain provisioning and operation system for enterprise use.
+description_zh: Hyperledger Cello 是一个面向企业的区块链部署与运维系统。
 type: Project
 data:
   platforms:

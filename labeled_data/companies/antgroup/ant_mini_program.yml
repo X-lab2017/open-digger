@@ -1,4 +1,6 @@
 name: Ant Mini Program
+description: mini-antui is no longer maintained. Use ant-design-mini instead for enhanced features.
+description_zh: mini-antui 已停止维护，推荐使用功能更强的 ant-design-mini。
 type: Project
 data:
   platforms:

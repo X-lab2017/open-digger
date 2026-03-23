@@ -1,4 +1,6 @@
 name: StackRox
+description: StackRox Kubernetes Security Platform provides container environment risk analysis, visibility, and proactive security recommendations.
+description_zh: StackRox Kubernetes 安全平台提供容器环境风险分析、可视化和主动安全建议。
 type: Project
 data:
   platforms:

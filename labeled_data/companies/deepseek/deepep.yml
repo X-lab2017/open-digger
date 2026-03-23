@@ -1,4 +1,6 @@
 name: DeepEP
+description: 'DeepEP: an efficient expert-parallel communication library for MoE systems'
+description_zh: DeepEP：面向MoE系统的高效专家并行通信库
 type: Project
 data:
   platforms:

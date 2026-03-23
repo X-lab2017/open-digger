@@ -1,4 +1,6 @@
 name: jQuery Mobile
+description: jQuery JavaScript Library
+description_zh: jQuery JavaScript 库
 type: Project
 data:
   platforms:

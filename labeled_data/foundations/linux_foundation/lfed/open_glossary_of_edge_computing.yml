@@ -1,4 +1,6 @@
 name: Open Glossary of Edge Computing
+description: A community-driven open glossary of edge computing terms and definitions.
+description_zh: 一个由社区驱动的边缘计算术语和定义开放词典。
 type: Project
 data:
   platforms:

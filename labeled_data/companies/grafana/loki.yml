@@ -1,4 +1,6 @@
 name: Grafana Loki
+description: 'Loki: like Prometheus, but for logs. A cost-effective and scalable log aggregation system.'
+description_zh: Loki：如 Prometheus 一般的日志系统，高效、可扩展且低成本。
 type: Project
 data:
   platforms:

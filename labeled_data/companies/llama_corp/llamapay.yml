@@ -1,4 +1,6 @@
 name: LlamaPay
+description: LlamaPay Interface provides an intuitive interface for interacting with payment systems.
+description_zh: LlamaPay Interface 提供了一个与支付系统交互的直观界面。
 type: Project
 data:
   platforms:

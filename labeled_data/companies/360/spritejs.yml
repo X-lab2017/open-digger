@@ -1,4 +1,6 @@
 name: SpriteJS
+description: A cross-platform high-performance graphics system for web, desktop, and mini-programs.
+description_zh: 跨平台高性能图形系统，支持网页、桌面和小程序。
 type: Project
 data:
   platforms:

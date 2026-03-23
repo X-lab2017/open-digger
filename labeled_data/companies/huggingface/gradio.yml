@@ -1,4 +1,6 @@
 name: Gradio
+description: Build and share ML apps with Python, no JavaScript or hosting required.
+description_zh: 使用 Python 构建和分享机器学习应用，无需 JavaScript 或托管。
 type: Project
 data:
   platforms:

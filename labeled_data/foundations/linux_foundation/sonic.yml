@@ -1,4 +1,6 @@
 name: SONiC
+description: Management and automation examples for SONiC testbed deployment.
+description_zh: SONiC测试床部署的管理与自动化示例。
 type: Project
 data:
   platforms:

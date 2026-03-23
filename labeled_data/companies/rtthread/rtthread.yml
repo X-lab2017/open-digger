@@ -1,4 +1,6 @@
 name: RT-Thread
+description: RT-Thread is an open-source, real-time operating system for IoT devices.
+description_zh: RT-Thread 是一个开源的物联网实时操作系统。
 type: Project
 data:
   platforms:

@@ -1,4 +1,6 @@
 name: Lodash
+description: A modern JavaScript utility library delivering modularity, performance, & extras.
+description_zh: 一个现代的 JavaScript 工具库，提供模块化、高性能和实用功能。
 type: Project
 data:
   platforms:

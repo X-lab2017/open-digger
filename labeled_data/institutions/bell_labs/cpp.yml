@@ -1,4 +1,6 @@
 name: C++
+description: Sources for generating drafts of the C++ standard.
+description_zh: 用于生成 C++ 标准草案的源文件。
 type: Project
 data:
   platforms:

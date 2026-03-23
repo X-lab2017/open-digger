@@ -1,4 +1,6 @@
 name: Milvus
+description: Milvus is a high-performance, cloud-native vector database for scalable vector ANN search.
+description_zh: Milvus 是一个高性能、云原生的向量数据库，支持可扩展的近似最近邻搜索。
 type: Project
 data:
   platforms:

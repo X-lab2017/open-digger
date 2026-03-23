@@ -1,4 +1,6 @@
 name: StoneDB
+description: StoneDB is a MySQL-compatible HTAP database for real-time analytics and OLTP.
+description_zh: StoneDB 是一个兼容 MySQL 的 HTAP 数据库，支持实时分析与在线事务处理。
 type: Project
 data:
   platforms:

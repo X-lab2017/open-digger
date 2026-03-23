@@ -1,4 +1,6 @@
 name: Tarantool
+description: Tarantool is an in-memory computing platform combining a database and application server for high performance.
+description_zh: Tarantool 是一个结合数据库和应用服务器的内存计算平台，性能卓越。
 type: Project
 data:
   platforms:

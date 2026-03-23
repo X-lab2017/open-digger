@@ -1,4 +1,6 @@
 name: Apache SeaTunnel
+description: SeaTunnel is a high-performance, distributed data integration tool for multimodal data.
+description_zh: SeaTunnel 是一个高性能、分布式多模态数据集成工具。
 type: Project
 data:
   platforms:

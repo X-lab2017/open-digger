@@ -1,4 +1,6 @@
 name: Apache HBase
+description: Apache HBase is a distributed, column-oriented database built on Apache Hadoop.
+description_zh: Apache HBase 是基于 Apache Hadoop 的分布式列式数据库。
 type: Project
 data:
   platforms:

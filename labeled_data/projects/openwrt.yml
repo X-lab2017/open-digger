@@ -1,4 +1,6 @@
 name: OpenWrt
+description: The OpenWrt Project is a Linux operating system targeting embedded devices.
+description_zh: OpenWrt 是一个针对嵌入式设备的 Linux 操作系统。
 type: Project
 data:
   platforms:

@@ -1,4 +1,6 @@
 name: UmiJS
+description: A framework in the React community.
+description_zh: 一个 React 社区框架。
 type: Project
 data:
   platforms:

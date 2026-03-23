@@ -1,4 +1,6 @@
 name: OpenSearch
+description: OpenSearch is an open-source distributed and RESTful search engine.
+description_zh: OpenSearch 是一个开源分布式且支持 RESTful 的搜索引擎。
 type: Project
 data:
   platforms:

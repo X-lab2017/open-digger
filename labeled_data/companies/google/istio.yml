@@ -1,4 +1,6 @@
 name: Istio
+description: Istio is an open source service mesh for connecting, securing, and monitoring services.
+description_zh: Istio 是一个用于连接、保护和监控服务的开源服务网格。
 type: Project
 data:
   platforms:

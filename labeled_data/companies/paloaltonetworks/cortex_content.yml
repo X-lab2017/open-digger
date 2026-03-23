@@ -1,4 +1,6 @@
 name: Cortex XSOAR
+description: Cortex XSOAR Content Repository for automating and orchestrating security operations.
+description_zh: Cortex XSOAR 内容库，用于自动化和编排安全运营。
 type: Project
 data:
   platforms:

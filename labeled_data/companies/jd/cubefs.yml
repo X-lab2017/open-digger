@@ -1,4 +1,6 @@
 name: CubeFS
+description: CubeFS is a cloud-native distributed file & object storage system.
+description_zh: CubeFS 是一个云原生分布式文件与对象存储系统。
 type: Project
 data:
   platforms:

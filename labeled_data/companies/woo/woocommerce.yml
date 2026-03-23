@@ -1,4 +1,6 @@
 name: WooCommerce
+description: A customizable, open-source ecommerce platform built on WordPress.
+description_zh: 基于 WordPress 的可定制开源电商平台。
 type: Project
 data:
   platforms:

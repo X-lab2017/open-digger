@@ -1,4 +1,6 @@
 name: Tensorflow
+description: An open source machine learning framework for building and deploying ML applications.
+description_zh: 一个开源机器学习框架，用于构建和部署机器学习应用。
 type: Project
 data:
   platforms:

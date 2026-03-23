@@ -1,4 +1,6 @@
 name: Fluid
+description: Fluid is a Kubernetes-native distributed dataset orchestrator and accelerator for cloud-native big data and AI applications.
+description_zh: Fluid 是面向云原生大数据与 AI 应用的 Kubernetes 原生数据集编排与加速工具。
 type: Project
 data:
   platforms:

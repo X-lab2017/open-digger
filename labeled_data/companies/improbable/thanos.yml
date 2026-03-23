@@ -1,4 +1,6 @@
 name: Thanos
+description: Highly available Prometheus setup with long-term storage. A CNCF Incubating project.
+description_zh: 高可用的 Prometheus 部署方案，支持长期存储。CNCF 孵化项目。
 type: Project
 data:
   platforms:

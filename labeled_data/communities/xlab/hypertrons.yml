@@ -1,4 +1,6 @@
 name: Hypertrons
+description: A browser extension providing insights into GitHub and Gitee projects and developers.
+description_zh: 一款提供 GitHub 和 Gitee 项目及开发者洞察的浏览器扩展。
 type: Project
 data:
   platforms:

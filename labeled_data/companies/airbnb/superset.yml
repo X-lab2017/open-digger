@@ -1,4 +1,6 @@
 name: Apache Superset
+description: Apache Superset is a modern data visualization and exploration platform.
+description_zh: Apache Superset 是一个现代化的数据可视化与探索平台。
 type: Project
 data:
   platforms:

@@ -1,4 +1,6 @@
 name: RocksDB
+description: An embeddable, persistent key-value store optimized for flash and RAM storage.
+description_zh: 适用于闪存和内存存储的嵌入式持久化键值存储库。
 type: Project
 data:
   platforms:

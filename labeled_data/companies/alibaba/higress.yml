@@ -1,4 +1,6 @@
 name: Higress
+description: AI Native API Gateway with Wasm plugin support
+description_zh: 支持 Wasm 插件的 AI 原生 API 网关
 type: Project
 data:
   platforms:

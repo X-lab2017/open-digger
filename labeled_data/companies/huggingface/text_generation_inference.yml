@@ -1,4 +1,6 @@
 name: Text Generation Inference
+description: High-performance text generation inference for large language models.
+description_zh: 面向大语言模型的高性能文本生成推理工具。
 type: Project
 data:
   platforms:

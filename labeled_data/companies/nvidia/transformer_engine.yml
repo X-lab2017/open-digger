@@ -1,4 +1,6 @@
 name: Transformer Engine
+description: A library for accelerating Transformer models on NVIDIA GPUs using FP8 and FP4 precision.
+description_zh: 用于在NVIDIA GPU上加速Transformer模型的库，支持FP8和FP4精度。
 type: Project
 data:
   platforms:

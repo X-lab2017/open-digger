@@ -1,4 +1,6 @@
 name: Scala
+description: Scala 2 compiler, standard library, and language specification.
+description_zh: Scala 2 编译器、标准库和语言规范。
 type: Project
 data:
   platforms:

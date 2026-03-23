@@ -1,4 +1,6 @@
 name: nRF Connect
+description: nRF Connect SDK core with libraries, samples, and applications.
+description_zh: 包含库、示例和应用程序的nRF Connect SDK核心。
 type: Project
 data:
   platforms:

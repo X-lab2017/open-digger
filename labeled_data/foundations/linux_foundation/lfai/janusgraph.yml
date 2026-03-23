@@ -1,4 +1,6 @@
 name: JanusGraph
+description: 'JanusGraph: an open-source, distributed graph database for large-scale graphs.'
+description_zh: JanusGraph：一个开源的分布式图数据库，适用于大规模图数据存储和查询。
 type: Project
 data:
   platforms:

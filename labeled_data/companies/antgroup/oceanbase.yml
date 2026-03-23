@@ -1,4 +1,6 @@
 name: OceanBase
+description: OceanBase is a high-performance, scalable, and MySQL-compatible distributed relational database.
+description_zh: OceanBase 是一个高性能、可扩展且兼容 MySQL 的分布式关系型数据库。
 type: Project
 data:
   platforms:

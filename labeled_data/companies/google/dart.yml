@@ -1,4 +1,6 @@
 name: Dart
+description: The Dart SDK for building apps across mobile, web, and desktop platforms.
+description_zh: 跨移动端、网页和桌面平台构建应用的 Dart SDK。
 type: Project
 data:
   platforms:

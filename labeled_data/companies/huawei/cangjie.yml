@@ -1,0 +1,17 @@
+name: Cangjie
+type: Project
+description: Cangjie is a programming language for intelligent full-scenario applications.
+description_zh: 仓颉编程语言是一款面向全场景智能的新一代编程语言，主打智能化、全场景、高性能、强安全
+data:
+  platforms:
+    - name: AtomGit
+      type: Code Hosting
+      orgs:
+        - id: 1591596
+          name: Cangjie
+        - id: 2139363
+          name: Cangjie-TPC
+        - id: 2317566
+          name: Cangjie-SIG
+        - id: 2164893
+          name: OpenCangjieCommunity

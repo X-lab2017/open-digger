@@ -1,4 +1,6 @@
 name: Hyperledger Besu
+description: An Apache 2.0 licensed Java-based Ethereum client for enterprise use.
+description_zh: 一个面向企业级的、基于 Java 的 Apache 2.0 许可以太坊客户端。
 type: Project
 data:
   platforms:

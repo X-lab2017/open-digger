@@ -1,4 +1,6 @@
 name: CUBRID
+description: CUBRID is an open-source relational database optimized for web applications.
+description_zh: CUBRID 是一个为 Web 应用优化的开源关系型数据库。
 type: Project
 data:
   platforms:

@@ -1,4 +1,6 @@
 name: Xinference
+description: Xinference simplifies deploying and serving LLMs, speech, and multimodal models with one command.
+description_zh: Xinference 通过一条命令即可轻松部署和运行大语言模型、语音及多模态模型。
 type: Project
 data:
   platforms:

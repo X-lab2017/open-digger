@@ -1,4 +1,6 @@
 name: Teleport
+description: Secure access and audit for infrastructure with SSO, RBAC, and session recording.
+description_zh: 通过 SSO、RBAC 和会话记录实现基础设施的安全访问与审计。
 type: Project
 data:
   platforms:

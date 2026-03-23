@@ -1,4 +1,6 @@
 name: Apache DolphinScheduler
+description: Apache DolphinScheduler is a modern, low-code data orchestration platform for high-performance workflows.
+description_zh: Apache DolphinScheduler 是一个现代化、低代码的数据编排平台，用于高性能工作流。
 type: Project
 data:
   platforms:

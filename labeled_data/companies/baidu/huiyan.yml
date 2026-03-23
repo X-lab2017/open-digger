@@ -1,4 +1,6 @@
 name: Biadu Map Huiyan
+description: Mapv - A geographic information visualization open-source library
+description_zh: Mapv - 地理信息可视化开源库
 type: Project
 data:
   platforms:

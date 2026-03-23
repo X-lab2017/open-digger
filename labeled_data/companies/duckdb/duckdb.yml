@@ -1,4 +1,6 @@
 name: DuckDB
+description: DuckDB is a high-performance analytical in-process SQL database system.
+description_zh: DuckDB 是一个高性能的分析型进程内 SQL 数据库系统。
 type: Project
 data:
   platforms:

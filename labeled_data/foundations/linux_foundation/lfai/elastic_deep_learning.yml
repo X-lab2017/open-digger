@@ -1,4 +1,6 @@
 name: Elastic Deep Learning (EDL)
+description: Elastic Deep Learning (EDL) is a deep learning framework on Kubernetes for efficient training and inference.
+description_zh: Elastic Deep Learning（EDL）是一个在 Kubernetes 上的深度学习框架，用于高效训练和推理。
 type: Project
 data:
   platforms:

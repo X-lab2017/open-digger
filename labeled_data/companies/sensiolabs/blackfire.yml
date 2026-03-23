@@ -1,4 +1,6 @@
 name: Blackfire
+description: The Blackfire PHP SDK provides tools for profiling and analyzing PHP applications.
+description_zh: Blackfire PHP SDK 提供用于分析和性能剖析 PHP 应用的工具。
 type: Project
 data:
   platforms:

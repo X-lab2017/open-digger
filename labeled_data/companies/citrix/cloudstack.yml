@@ -1,4 +1,6 @@
 name: Apache CloudStack
+description: Apache CloudStack is an open-source IaaS cloud computing platform for managing virtualized infrastructure.
+description_zh: Apache CloudStack 是一个开源的 IaaS 云计算平台，用于管理虚拟化基础设施。
 type: Project
 data:
   platforms:

@@ -1,4 +1,6 @@
 name: Ruby on Rails
+description: Ruby on Rails is a web framework for building database-driven applications using the MVC pattern.
+description_zh: Ruby on Rails 是一个基于 MVC 模式的数据库驱动型 Web 应用框架。
 type: Project
 data:
   platforms:

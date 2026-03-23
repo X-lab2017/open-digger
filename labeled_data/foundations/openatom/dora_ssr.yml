@@ -1,4 +1,6 @@
 name: Dora SSR
+description: A cross-platform game engine with a built-in Web IDE for rapid development.
+description_zh: 跨平台游戏引擎，内置网页IDE实现快速开发。
 type: Project
 data:
   platforms:

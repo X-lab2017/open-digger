@@ -1,4 +1,6 @@
 name: Kestra
+description: Event-driven orchestration & scheduling platform for mission-critical applications.
+description_zh: 面向关键任务应用的事件驱动编排与调度平台。
 type: Project
 data:
   platforms:

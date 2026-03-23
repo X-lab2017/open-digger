@@ -1,4 +1,6 @@
 name: Fury
+description: A high-performance multi-language serialization framework using JIT and zero-copy.
+description_zh: 基于JIT和零拷贝的高性能多语言序列化框架。
 type: Project
 data:
   platforms:

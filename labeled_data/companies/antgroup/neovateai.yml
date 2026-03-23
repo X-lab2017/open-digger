@@ -1,4 +1,6 @@
 name: NeovateAI
+description: Neovate Code is a coding agent to enhance your development workflow with code generation, bug fixing, and more.
+description_zh: Neovate Code 是一个增强开发流程的代码代理，支持代码生成、修复错误等功能。
 type: Project
 data:
   platforms:

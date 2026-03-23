@@ -1,4 +1,6 @@
 name: DTVM
+description: DTVM is a high-performance deterministic blockchain virtual machine compatible with EVM and Wasm.
+description_zh: DTVM 是一个高性能、确定性的区块链虚拟机，兼容 EVM 和 Wasm。
 type: Project
 data:
   platforms:

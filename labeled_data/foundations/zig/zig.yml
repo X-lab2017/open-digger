@@ -1,4 +1,6 @@
 name: Zig
+description: A general-purpose programming language and toolchain for robust, optimal, and reusable software.
+description_zh: 一种通用编程语言和工具链，用于构建健壮、高效且可复用的软件。
 type: Project
 data:
   platforms:

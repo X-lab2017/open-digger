@@ -1,4 +1,6 @@
 name: PHP
+description: PHP is a popular general-purpose scripting language for web development.
+description_zh: PHP 是一种流行的通用脚本语言，特别适用于网页开发。
 type: Project
 data:
   platforms:

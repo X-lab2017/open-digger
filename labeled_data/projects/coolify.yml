@@ -1,4 +1,6 @@
 name: Coolify
+description: An open-source & self-hostable Heroku / Netlify / Vercel alternative.
+description_zh: 一个开源且可自托管的 Heroku / Netlify / Vercel 替代方案。
 type: Project
 data:
   platforms:

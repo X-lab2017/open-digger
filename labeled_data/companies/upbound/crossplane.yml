@@ -1,4 +1,6 @@
 name: Crossplane
+description: Crossplane is a framework for building cloud native control planes without writing code.
+description_zh: Crossplane 是一个无需编写代码即可构建云原生控制平面的框架。
 type: Project
 data:
   platforms:

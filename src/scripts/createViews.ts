@@ -170,6 +170,8 @@ REFRESH EVERY 1 DAY
   type LowCardinality(String),
   name LowCardinality(String),
   name_zh LowCardinality(String),
+  description String,
+  description_zh String,
   platform LowCardinality(String),
   entity_id UInt64,
   entity_type Enum8('Repo'=1, 'Org'=2, 'User'=3)
@@ -178,12 +180,12 @@ ENGINE = MergeTree()
 ORDER BY (id, platform)
 POPULATE
 AS
-WITH l AS (SELECT id, type, name, name_zh, p.name AS platform, p.repos AS repos, p.orgs AS orgs, p.users AS users FROM labels ARRAY JOIN platforms AS p)
-SELECT id, type, name, name_zh, platform, arrayJoin(repos) AS entity_id, 'Repo' AS entity_type FROM l
+WITH l AS (SELECT id, type, name, name_zh, description, description_zh, p.name AS platform, p.repos AS repos, p.orgs AS orgs, p.users AS users FROM labels ARRAY JOIN platforms AS p)
+SELECT id, type, name, name_zh, description, description_zh, platform, arrayJoin(repos) AS entity_id, 'Repo' AS entity_type FROM l
 UNION ALL
-SELECT id, type, name, name_zh, platform, arrayJoin(orgs) AS entity_id, 'Org' AS entity_type FROM l
+SELECT id, type, name, name_zh, description, description_zh, platform, arrayJoin(orgs) AS entity_id, 'Org' AS entity_type FROM l
 UNION ALL
-SELECT id, type, name, name_zh, platform, arrayJoin(users) AS entity_id, 'User' AS entity_type FROM l
+SELECT id, type, name, name_zh, description, description_zh, platform, arrayJoin(users) AS entity_id, 'User' AS entity_type FROM l
 `;
     await query(createViewQuery);
   };
@@ -259,6 +261,8 @@ REFRESH EVERY 1 DAY
   type LowCardinality(String),
   name String,
   name_zh String,
+  description String,
+  description_zh String,
   parent_id LowCardinality(String),
   parent_type LowCardinality(String),
   parent_name String,
@@ -296,6 +300,8 @@ SELECT
     any(p.type) AS type,
     any(p.name) AS name,
     any(p.name_zh) AS name_zh,
+    any(p.description) AS description,
+    any(p.description_zh) AS description_zh,
     h.id AS parent_id,
     any(h.type) AS parent_type,
     any(h.name) AS parent_name,

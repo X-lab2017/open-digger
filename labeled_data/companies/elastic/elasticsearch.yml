@@ -1,4 +1,6 @@
 name: Elasticsearch
+description: Distributed, RESTful search engine optimized for speed and relevance.
+description_zh: 分布式、RESTful 搜索引擎，专为速度和相关性优化。
 type: Project
 data:
   platforms:

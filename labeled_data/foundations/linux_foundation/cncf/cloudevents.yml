@@ -1,4 +1,6 @@
 name: CloudEvents
+description: CloudEvents is a specification for describing event data in common formats to enable interoperability.
+description_zh: CloudEvents 是一种用于以通用格式描述事件数据的规范，旨在实现跨系统的互操作性。
 type: Project
 data:
   platforms:

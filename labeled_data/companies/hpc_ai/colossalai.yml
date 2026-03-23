@@ -1,4 +1,6 @@
 name: Colossal-AI
+description: Making large AI models cheaper, faster, and more accessible with Colossal-AI.
+description_zh: 通过 Colossal-AI 让大模型训练更便宜、更快且更容易访问。
 type: Project
 data:
   platforms:

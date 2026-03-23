@@ -1,4 +1,6 @@
 name: MatrixOne
+description: MySQL-compatible HTAP database with Git for Data, vector search, and fulltext search. Cloud-native, AI-ready.
+description_zh: 兼容 MySQL 的 HTAP 数据库，支持数据版本控制、向量搜索和全文搜索。云原生，AI 就绪。
 type: Project
 data:
   platforms:

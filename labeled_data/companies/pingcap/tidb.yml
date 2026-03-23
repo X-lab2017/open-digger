@@ -1,4 +1,6 @@
 name: TiDB
+description: TiDB - the open-source, cloud-native, distributed SQL database for modern applications.
+description_zh: TiDB 是一个开源、云原生、面向现代应用的分布式 SQL 数据库。
 type: Project
 data:
   platforms:

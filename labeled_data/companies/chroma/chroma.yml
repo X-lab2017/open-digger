@@ -1,4 +1,6 @@
 name: Chroma
+description: Chroma is an open-source embedding database for AI applications with Python and JavaScript support.
+description_zh: Chroma 是一个支持 Python 和 JavaScript 的 AI 应用开源嵌入数据库。
 type: Project
 data:
   platforms:

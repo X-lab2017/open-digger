@@ -1,4 +1,6 @@
 name: Ruby
+description: Ruby is a simple, extensible, object-oriented programming language.
+description_zh: Ruby 是一种简单、可扩展的面向对象编程语言。
 type: Project
 data:
   platforms:

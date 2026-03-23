@@ -1,4 +1,6 @@
 name: Mocha
+description: ☕️ Simple, flexible, fun JavaScript test framework for Node.js & the browser
+description_zh: ☕️ 简单、灵活、有趣的 JavaScript 测试框架，适用于 Node.js 与浏览器
 type: Project
 data:
   platforms:

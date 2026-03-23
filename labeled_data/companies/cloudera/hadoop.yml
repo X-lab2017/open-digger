@@ -1,4 +1,6 @@
 name: Apache Hadoop
+description: Apache Hadoop is an open-source framework for distributed storage and processing of large datasets.
+description_zh: Apache Hadoop 是一个用于分布式存储和处理大数据集的开源框架。
 type: Project
 data:
   platforms:

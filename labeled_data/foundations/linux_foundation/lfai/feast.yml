@@ -1,4 +1,6 @@
 name: Feast
+description: The Open Source Feature Store for AI/ML
+description_zh: 用于人工智能和机器学习的开源特征存储
 type: Project
 data:
   platforms:

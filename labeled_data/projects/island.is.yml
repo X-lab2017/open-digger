@@ -1,4 +1,6 @@
 name: island.is
+description: Monorepo for Iceland's digital government services.
+description_zh: 冰岛数字政府服务的单一仓库。
 type: Project
 data:
   platforms:

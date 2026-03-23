@@ -1,4 +1,6 @@
 name: Godot Engine
+description: Godot Engine – A multi-platform 2D and 3D game engine.
+description_zh: Godot 引擎 —— 一个跨平台的 2D 和 3D 游戏引擎。
 type: Project
 data:
   platforms:

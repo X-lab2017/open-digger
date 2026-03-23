@@ -1,4 +1,6 @@
 name: AliOS Things
+description: A highly scalable IoT operating system for the Internet of Things domain.
+description_zh: 面向物联网领域的高可伸缩物联网操作系统。
 type: Project
 data:
   platforms:

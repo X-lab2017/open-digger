@@ -1,4 +1,6 @@
 name: Supabase
+description: Supabase is the Postgres development platform for building web, mobile, and AI applications.
+description_zh: Supabase 是用于构建 Web、移动和 AI 应用的 Postgres 开发平台。
 type: Project
 data:
   platforms:

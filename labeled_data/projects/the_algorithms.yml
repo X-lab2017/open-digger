@@ -1,4 +1,6 @@
 name: The Algorithms
+description: A collection of educational algorithm implementations in Python.
+description_zh: Python实现的教育用途算法集合。
 type: Project
 data:
   platforms:

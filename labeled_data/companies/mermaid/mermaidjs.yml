@@ -1,4 +1,6 @@
 name: Mermaid JS
+description: A CLI tool for generating SVG/PNG/PDF from Mermaid diagrams (development moved to @mermaid-js/mermaid-cli).
+description_zh: 从 Mermaid 图表生成 SVG/PNG/PDF 的命令行工具（开发已迁移至 @mermaid-js/mermaid-cli）。
 type: Project
 data:
   platforms:

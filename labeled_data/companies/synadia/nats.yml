@@ -1,4 +1,6 @@
 name: NATS
+description: High-performance NATS.io server for cloud and edge messaging.
+description_zh: 高性能的NATS.io服务器，适用于云端和边缘消息传递。
 type: Project
 data:
   platforms:

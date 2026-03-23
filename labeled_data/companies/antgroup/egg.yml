@@ -1,4 +1,6 @@
 name: EggJS
+description: A framework for building enterprise apps with Node.js & Koa.
+description_zh: 基于 Node.js 和 Koa 构建企业级应用的框架。
 type: Project
 data:
   platforms:

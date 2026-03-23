@@ -1,4 +1,6 @@
 name: Is-a.dev
+description: Get a sweet-looking '.is-a.dev' subdomain for your personal website.
+description_zh: 为你的个人网站获取一个漂亮的 '.is-a.dev' 子域名。
 type: Project
 data:
   platforms:

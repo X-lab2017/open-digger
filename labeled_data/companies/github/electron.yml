@@ -1,4 +1,6 @@
 name: Electron
+description: Build cross-platform desktop apps with JavaScript, HTML, and CSS using Electron.
+description_zh: 使用 Electron，通过 JavaScript、HTML 和 CSS 构建跨平台桌面应用。
 type: Project
 data:
   platforms:

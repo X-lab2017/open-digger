@@ -1,4 +1,6 @@
 name: KTransformers
+description: A flexible framework for experimenting with advanced LLM inference optimizations.
+description_zh: 一个用于体验先进大语言模型推理优化的灵活框架。
 type: Project
 data:
   platforms:

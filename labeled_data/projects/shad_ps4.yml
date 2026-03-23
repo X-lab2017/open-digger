@@ -1,4 +1,6 @@
 name: shadPS4
+description: An early PlayStation 4 emulator for Windows, Linux and macOS written in C++.
+description_zh: 一个基于 C++ 的早期 PlayStation 4 模拟器，支持 Windows、Linux 和 macOS。
 type: Project
 data:
   platforms:

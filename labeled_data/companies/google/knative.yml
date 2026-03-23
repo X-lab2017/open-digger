@@ -1,4 +1,6 @@
 name: Knative
+description: Knative Serving provides serverless container deployment with auto-scaling and routing on Kubernetes.
+description_zh: Knative Serving 基于 Kubernetes 提供无服务器容器部署，支持自动扩缩容和路由。
 type: Project
 data:
   platforms:

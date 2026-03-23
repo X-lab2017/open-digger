@@ -1,4 +1,6 @@
 name: SDL
+description: Simple DirectMedia Layer (SDL) is a cross-platform library for multimedia software development.
+description_zh: Simple DirectMedia Layer（SDL）是一个用于多媒体软件开发的跨平台库。
 type: Project
 data:
   platforms:

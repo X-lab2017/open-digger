@@ -1,4 +1,6 @@
 name: Appium
+description: Cross-platform automation framework for apps using W3C WebDriver protocol
+description_zh: 基于W3C WebDriver协议的跨平台应用自动化框架
 type: Project
 data:
   platforms:

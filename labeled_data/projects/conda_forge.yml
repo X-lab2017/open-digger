@@ -1,4 +1,6 @@
 name: Conda Forge
+description: A staging area for conda recipes to become conda-forge feedstocks
+description_zh: conda 包的暂存区，用于成为 conda-forge 饲料库
 type: Project
 data:
   platforms:

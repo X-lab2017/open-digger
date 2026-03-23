@@ -1,4 +1,6 @@
 name: Zephyr
+description: Zephyr is a scalable, secure RTOS for resource-constrained devices and multiple hardware architectures.
+description_zh: Zephyr 是一个可扩展、安全的实时操作系统，适用于资源受限设备和多种硬件架构。
 type: Project
 data:
   platforms:

@@ -1,4 +1,6 @@
 name: UV
+description: An extremely fast Python package and project manager, written in Rust.
+description_zh: 一个用 Rust 编写的极快的 Python 包和项目管理工具。
 type: Project
 data:
   platforms:

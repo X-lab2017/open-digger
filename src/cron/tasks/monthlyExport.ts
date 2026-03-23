@@ -1,21 +1,19 @@
-// @ts-nocheck
 import { appendFileSync, existsSync, mkdirSync, readFileSync, writeFileSync } from 'fs';
 import { join } from 'path';
 import { Task } from '..';
 import { query, queryStream } from '../../db/clickhouse';
-import { forEveryMonthByConfig, forEveryQuarterByConfig, forEveryYearByConfig, timeDurationConstants } from '../../metrics/basic';
+import { forEveryMonthByConfig, forEveryQuarterByConfig, forEveryYearByConfig } from '../../metrics/basic';
 import {
-  chaossActiveDatesAndTimes, chaossBusFactor, chaossChangeRequestAge, chaossChangeRequestResolutionDuration,
-  chaossChangeRequestResponseTime, chaossChangeRequestReviews, chaossChangeRequests, chaossChangeRequestsAccepted,
-  chaossCodeChangeLines, chaossContributors, chaossInactiveContributors, chaossIssueAge, chaossIssueResolutionDuration,
-  chaossIssueResponseTime, chaossIssuesAndChangeRequestActive, chaossIssuesClosed, chaossIssuesNew,
+  chaossActiveDatesAndTimes, chaossBusFactor, chaossChangeRequestReviews, chaossChangeRequests, chaossChangeRequestsAccepted,
+  chaossCodeChangeLines, chaossContributors, chaossInactiveContributors, chaossIssuesAndChangeRequestActive, chaossIssuesClosed, chaossIssuesNew,
   chaossNewContributors, chaossTechnicalFork
 } from '../../metrics/chaoss';
 import { contributorEmailSuffixes, repoIssueComments, repoParticipants, repoStars } from '../../metrics/metrics';
 import { getRepoActivity, getRepoOpenrank, getUserActivity, getUserOpenrank, getAttention } from '../../metrics/indices';
-import { getLogger, waitFor } from '../../utils';
+import { getLogger } from '../../utils';
 import getConfig from '../../config';
 import { EOL } from 'os';
+import { LabelUtil } from '../../labelDataUtils';
 
 const task: Task = {
   cron: '0 0 5 * *',
@@ -67,9 +65,10 @@ const task: Task = {
             for (const row of result) {
               const name: string = row.name;
               const platform: string = row.platform;
-              exportDir.set(join(exportBasePath, platform.toLowerCase(), name), row.id);
+              const path = option.type === 'label' ? join(exportBasePath, row.id.substring(1)) : join(exportBasePath, platform.toLowerCase(), name);
+              exportDir.set(path, row.id);
               if (!Array.isArray(fields)) fields = [fields];
-              const aggExportPath = join(exportBasePath, platform.toLowerCase(), name, fields[0].targetKey + '.json');
+              const aggExportPath = option.type === 'label' ? join(exportBasePath, row.id.substring(1), fields[0].targetKey + '.json') : join(exportBasePath, platform.toLowerCase(), name, fields[0].targetKey + '.json');
               const aggContent: any = exportData.get(aggExportPath) ?? {};
               for (let field of fields) {
                 const dataArr = row[field.sourceKey];
@@ -77,7 +76,7 @@ const task: Task = {
                   logger.error(`Can not find field ${field}`);
                   continue;
                 }
-                const exportPath = join(exportBasePath, platform.toLowerCase(), name, field.targetKey + '.json');
+                const exportPath = option.type === 'label' ? join(exportBasePath, row.id.substring(1), field.targetKey + '.json') : join(exportBasePath, platform.toLowerCase(), name, field.targetKey + '.json');
                 let content: any = exportData.get(exportPath) ?? {};
                 if (agg) {
                   content = aggContent[field.sourceKey] ?? {};
@@ -168,104 +167,116 @@ const task: Task = {
         disableDataLoss: true,
         parser: i => i,
       };
-      const getDurationFields = (targetKey: string): Field[] => timeDurationConstants.sortByArray.map(k => {
-        return getField(k, {
-          targetKey,
-          ...(k === 'levels' ? {
-            ...arrayFieldOption,
-            parser: i => i.map(v => parseFloat(v)),
-          } : {
-            isDefaultValue: i => Number.isNaN(i),
-            disableDataLoss: true,
-          }),
-        });
-      });
 
-      logger.info('Start to process repo export task.');
-      const repoPartitions = await getPartition('Repo');
-      for (let i = 0; i < repoPartitions.length; i++) {
-        const { min, max } = repoPartitions[i];
-        option.whereClause = `repo_id BETWEEN ${min} AND ${max} AND
+      const exportRepoMetrics = async () => {
+        logger.info('Start to process repo export task.');
+        const repoPartitions = await getPartition('Repo');
+        for (let i = 0; i < repoPartitions.length; i++) {
+          const { min, max } = repoPartitions[i];
+          option.whereClause = `repo_id BETWEEN ${min} AND ${max} AND
           (platform, repo_id) IN (SELECT platform, id FROM ${exportRepoTableName}) AND
           (platform, repo_id) NOT IN (SELECT 'GitHub', id FROM gh_repo_info WHERE status='not_found')`;
-        option.type = 'repo';
-        // [X-lab index] repo activity
-        await processMetric(getRepoActivity, { ...option, options: { developerDetail: true } },
-          [getField('activity'), getField('details', { targetKey: 'activity_details', ...arrayFieldOption, parser: arr => arr.length <= 100 ? arr : arr.filter(i => i[1] >= 2) })]);
-        // [X-lab index] repo openrank
-        await processMetric(getRepoOpenrank, option, getField('openrank'));
-        // [X-lab index] repo attention
-        await processMetric(getAttention, option, getField('attention'));
-        // [CHAOSS metric] repo technical fork
-        await processMetric(chaossTechnicalFork, option, getField('count', { targetKey: 'technical_fork' }));
-        // [X-lab metric] repo stars
-        await processMetric(repoStars, option, getField('count', { targetKey: 'stars' }));
-        // [CHAOSS metric] repo issues new
-        await processMetric(chaossIssuesNew, option, getField('count', { targetKey: 'issues_new' }));
-        // [CHAOSS metric] repo issues closed
-        await processMetric(chaossIssuesClosed, option, getField('count', { targetKey: 'issues_closed' }));
-        // [CHAOSS metric] repo code changes lines
-        await processMetric(chaossCodeChangeLines, { ...option, options: { by: 'add' } }, getField('lines',
-          { targetKey: 'code_change_lines_add', disableDataLoss: true, }));
-        await processMetric(chaossCodeChangeLines, { ...option, options: { by: 'remove' } }, getField('lines',
-          { targetKey: 'code_change_lines_remove', disableDataLoss: true, }));
-        await processMetric(chaossCodeChangeLines, { ...option, options: { by: 'sum' } }, getField('lines',
-          { targetKey: 'code_change_lines_sum', disableDataLoss: true, }));
-        // [CHAOSS metric] repo change requests
-        await processMetric(chaossChangeRequests, option, getField('count', { targetKey: 'change_requests' }));
-        // [CHAOSS metric] repo change requests accepted
-        await processMetric(chaossChangeRequestsAccepted, option, getField('count', { targetKey: 'change_requests_accepted' }));
-        // [X-lab metric] repo issue comments
-        await processMetric(repoIssueComments, option, getField('count', { targetKey: 'issue_comments' }));
-        // [CHAOSS metric] repo chagne request reviews
-        await processMetric(chaossChangeRequestReviews, option, getField('count', { targetKey: 'change_requests_reviews' }));
-        // [X-lab metric] repo participants
-        await processMetric(repoParticipants, option, getField('count', { targetKey: 'participants' }));
-        // [CHAOSS] bus factor
-        await processMetric(chaossBusFactor, option, [getField('bus_factor'), getField('detail',
-          { targetKey: 'bus_factor_detail', ...arrayFieldOption })]);
-        // [CHAOSS] issues active
-        await processMetric(chaossIssuesAndChangeRequestActive, option, getField('count', { targetKey: 'issues_and_change_request_active' }));
-        // [CHAOSS] contributors
-        await processMetric(chaossContributors, option, [getField('count', { targetKey: 'contributors' }), getField('detail', { targetKey: 'contributors_detail', ...arrayFieldOption })]);
-        // [CHAOSS] new contributors
-        await processMetric(chaossNewContributors, option, [getField('new_contributors'), getField('detail', { targetKey: 'new_contributors_detail', ...arrayFieldOption })]);
-        // [CHAOSS] inactive contributors
-        await processMetric(chaossInactiveContributors, option, getField('inactive_contributors'));
-        // [CHAOSS] active dates and times
-        await processMetric(c => chaossActiveDatesAndTimes(c, 'repo'), { ...option, options: { normalize: 10 } },
-          getField('count', { targetKey: 'active_dates_and_times', ...arrayFieldOption }));
-        // [X-lab] contributor email suffixes
-        await processMetric(contributorEmailSuffixes, option, getField('suffixes', { targetKey: 'contributor_email_suffixes', ...arrayFieldOption }));
-        // time duration related
-        // [CHAOSS] resolution duration / close time
-        await processMetric(chaossIssueResolutionDuration, option, getDurationFields('issue_resolution_duration'), true);
-        await processMetric(chaossChangeRequestResolutionDuration, option, getDurationFields('change_request_resolution_duration'), true);
-        // [CHAOSS] first response time
-        await processMetric(chaossIssueResponseTime, option, getDurationFields('issue_response_time'), true);
-        await processMetric(chaossChangeRequestResponseTime, option, getDurationFields('change_request_response_time'), true);
-        // [CHAOSS] age
-        await processMetric(chaossIssueAge, option, getDurationFields('issue_age'), true);
-        await processMetric(chaossChangeRequestAge, option, getDurationFields('change_request_age'), true);
-        logger.info(`Process repo for round ${i} done.`);
-      }
-      logger.info('Process repo export task done.');
+          option.type = 'repo';
+          // [X-lab index] repo activity
+          await processMetric(getRepoActivity, { ...option, options: { developerDetail: true } },
+            [getField('activity'), getField('details', { targetKey: 'activity_details', ...arrayFieldOption, parser: arr => arr.length <= 100 ? arr : arr.filter(i => i[1] >= 2) })]);
+          // [X-lab index] repo openrank
+          await processMetric(getRepoOpenrank, option, getField('openrank'));
+          // [X-lab index] repo attention
+          await processMetric(getAttention, option, getField('attention'));
+          // [CHAOSS metric] repo technical fork
+          await processMetric(chaossTechnicalFork, option, getField('count', { targetKey: 'technical_fork' }));
+          // [X-lab metric] repo stars
+          // [CHAOSS metric] repo issues new
+          await processMetric(chaossIssuesNew, option, getField('count', { targetKey: 'issues_new' }));
+          // [CHAOSS metric] repo issues closed
+          await processMetric(chaossIssuesClosed, option, getField('count', { targetKey: 'issues_closed' }));
+          // [CHAOSS metric] repo code changes lines
+          await processMetric(chaossCodeChangeLines, { ...option, options: { by: 'add' } }, getField('lines',
+            { targetKey: 'code_change_lines_add', disableDataLoss: true, }));
+          await processMetric(chaossCodeChangeLines, { ...option, options: { by: 'remove' } }, getField('lines',
+            { targetKey: 'code_change_lines_remove', disableDataLoss: true, }));
+          await processMetric(chaossCodeChangeLines, { ...option, options: { by: 'sum' } }, getField('lines',
+            { targetKey: 'code_change_lines_sum', disableDataLoss: true, }));
+          // [CHAOSS metric] repo change requests
+          await processMetric(chaossChangeRequests, option, getField('count', { targetKey: 'change_requests' }));
+          // [CHAOSS metric] repo change requests accepted
+          await processMetric(chaossChangeRequestsAccepted, option, getField('count', { targetKey: 'change_requests_accepted' }));
+          // [X-lab metric] repo issue comments
+          await processMetric(repoIssueComments, option, getField('count', { targetKey: 'issue_comments' }));
+          // [CHAOSS metric] repo chagne request reviews
+          await processMetric(chaossChangeRequestReviews, option, getField('count', { targetKey: 'change_requests_reviews' }));
+          // [X-lab metric] repo participants
+          await processMetric(repoParticipants, option, getField('count', { targetKey: 'participants' }));
+          // [CHAOSS] bus factor
+          await processMetric(chaossBusFactor, option, [getField('bus_factor'), getField('detail',
+            { targetKey: 'bus_factor_detail', ...arrayFieldOption })]);
+          // [CHAOSS] issues active
+          await processMetric(chaossIssuesAndChangeRequestActive, option, getField('count', { targetKey: 'issues_and_change_request_active' }));
+          // [CHAOSS] contributors
+          await processMetric(chaossContributors, option, [getField('count', { targetKey: 'contributors' }), getField('detail', { targetKey: 'contributors_detail', ...arrayFieldOption })]);
+          // [CHAOSS] new contributors
+          await processMetric(chaossNewContributors, option, [getField('new_contributors'), getField('detail', { targetKey: 'new_contributors_detail', ...arrayFieldOption })]);
+          // [CHAOSS] inactive contributors
+          await processMetric(chaossInactiveContributors, option, getField('inactive_contributors'));
+          // [CHAOSS] active dates and times
+          await processMetric(c => chaossActiveDatesAndTimes(c, 'repo'), { ...option, options: { normalize: 10 } },
+            getField('count', { targetKey: 'active_dates_and_times', ...arrayFieldOption }));
+          // [X-lab] contributor email suffixes
+          await processMetric(contributorEmailSuffixes, option, getField('suffixes', { targetKey: 'contributor_email_suffixes', ...arrayFieldOption }));
+          logger.info(`Process repo for round ${i} done.`);
+        }
+        logger.info('Process repo export task done.');
+      };
 
-      logger.info('Start to process user export task.');
-      const userPartitions = await getPartition('User');
-      for (let i = 0; i < userPartitions.length; i++) {
-        const { min, max } = userPartitions[i];
-        option.whereClause = `actor_id BETWEEN ${min} AND ${max} AND actor_id IN (SELECT id FROM ${exportUserTableName}) AND
+      const exportUserMetrics = async () => {
+        logger.info('Start to process user export task.');
+        const userPartitions = await getPartition('User');
+        for (let i = 0; i < userPartitions.length; i++) {
+          const { min, max } = userPartitions[i];
+          option.whereClause = `actor_id BETWEEN ${min} AND ${max} AND
+          actor_id IN (SELECT id FROM ${exportUserTableName}) AND
           (platform, actor_id) NOT IN (SELECT 'GitHub', id FROM gh_user_info WHERE status='not_found')`;
-        option.type = 'user';
-        // user activity
-        await processMetric(getUserActivity, { ...option, options: { repoDetail: false } },
-          [...['activity', 'open_issue', 'issue_comment', 'open_pull', 'merged_pull', 'review_comment'].map(f => getField(f))]);
-        // user openrank
-        await processMetric(getUserOpenrank, option, getField('openrank'));
-        logger.info(`Process user for round ${i} done.`);
-      }
-      logger.info('Process user export task done.');
+          option.type = 'user';
+          // user activity
+          await processMetric(getUserActivity, { ...option, options: { repoDetail: false } },
+            [...['activity', 'open_issue', 'issue_comment', 'open_pull', 'merged_pull', 'review_comment'].map(f => getField(f))]);
+          // user openrank
+          await processMetric(getUserOpenrank, option, getField('openrank'));
+          logger.info(`Process user for round ${i} done.`);
+        }
+        logger.info('Process user export task done.');
+      };
+
+      const exportLabelMetrics = async () => {
+        logger.info('Start to export label metrics.');
+        const option: any = { startYear, startMonth, endYear, endMonth, limit: -1, type: 'label' };
+        const labels = [
+          'Project', 'Company', 'University-0', 'Institution-0', 'Foundation', 'Agency-0', 'Tech-0', 'Division-0'
+        ];
+        for (const label of labels) {
+          option.repoLabel = LabelUtil.get(label);
+          option.groupBy = label;
+          await processMetric(getRepoOpenrank, option, getField('openrank'));
+          await processMetric(getRepoActivity, { ...option, options: { developerDetail: true } },
+            [getField('activity'), getField('details', { targetKey: 'activity_details', ...arrayFieldOption, parser: arr => arr.length <= 100 ? arr : arr.filter(i => i[1] >= 2) })]);
+          await processMetric(repoParticipants, option, getField('count', { targetKey: 'participants' }));
+          await processMetric(chaossIssuesNew, option, getField('count', { targetKey: 'issues_new' }));
+          await processMetric(chaossIssuesClosed, option, getField('count', { targetKey: 'issues_closed' }));
+          await processMetric(chaossIssuesAndChangeRequestActive, option, getField('count', { targetKey: 'issues_and_change_request_active' }));
+          await processMetric(chaossChangeRequests, option, getField('count', { targetKey: 'change_requests' }));
+          await processMetric(chaossChangeRequestsAccepted, option, getField('count', { targetKey: 'change_requests_accepted' }));
+          await processMetric(repoIssueComments, option, getField('count', { targetKey: 'issue_comments' }));
+          await processMetric(chaossChangeRequestReviews, option, getField('count', { targetKey: 'change_requests_reviews' }));
+          await processMetric(chaossContributors, option, [getField('count', { targetKey: 'contributors' }), getField('detail', { targetKey: 'contributors_detail', ...arrayFieldOption })]);
+          await processMetric(repoStars, option, getField('count', { targetKey: 'stars' }));
+        }
+        logger.info('Export label metrics done.');
+      };
+
+      await exportRepoMetrics();
+      await exportUserMetrics();
+      await exportLabelMetrics();
     };
 
     const updateMetaData = (path: string, data: any) => {
@@ -281,6 +292,113 @@ const task: Task = {
       } catch (e: any) {
         logger.error(`Exception on updating meta data, path=${path}, data=${data}, e=${e.message}`);
       }
+    };
+
+    // export meta data for labels
+    const exportLabelMeta = async () => {
+      logger.info('Start to export label meta.');
+      const labels = [
+        'Project', 'Company', 'University-0', 'Institution-0', 'Foundation', 'Agency-0', 'Tech-0', 'Division-0'
+      ];
+
+      const labelDataSql = `SELECT id, name, name_zh, description, description_zh, type FROM labels
+       WHERE type IN (${labels.map(label => `'${label}'`).join(',')})`;
+      await queryStream(labelDataSql, row => {
+        const [id, name, name_zh, description, description_zh, type] = row;
+        updateMetaData(join(exportBasePath, id.substring(1), 'meta.json'), {
+          id, name, name_zh, description, description_zh, label_type: type,
+        });
+      });
+
+      const parentLablSql = `SELECT id, groupArray([parent_id,parent_name, parent_name_zh, parent_type])
+  FROM label_hierarchy WHERE type IN (${labels.map(label => `'${label}'`).join(',')})
+  AND parent_type IN (${[...labels, 'Division-0'].map(label => `'${label}'`).join(',')})
+  GROUP BY id, name, name_zh, description, description_zh, type`;
+      await queryStream(parentLablSql, row => {
+        const [id, parents] = row;
+        const parentsData = parents.map(([parent_id, parentName, parentName_zh, parent_type]) => ({
+          id: parent_id,
+          name: parentName,
+          name_zh: parentName_zh,
+          type: parent_type,
+        }));
+        updateMetaData(join(exportBasePath, id.substring(1), 'meta.json'), {
+          id, labels: parentsData,
+        });
+      });
+
+      const topReposSql = `SELECT lid, groupArray([p, name]) FROM
+(
+  SELECT lid, p, name, o FROM
+  (
+    SELECT l.id AS lid, g.platform AS p, g.org_login AS name, g.openrank AS o
+    FROM
+      (SELECT platform, org_id, argMax(org_login, created_at) AS org_login, SUM(openrank) AS openrank
+      FROM global_openrank WHERE type='Repo' AND (org_id IN (SELECT entity_id FROM flatten_labels WHERE entity_type='Org'))
+      AND toYear(created_at) >= toYear(now()) - 1
+      GROUP BY platform, org_id) g,
+      (SELECT * FROM flatten_labels WHERE type IN (${labels.map(label => `'${label}'`).join(',')})) l
+    WHERE
+     (g.platform = l.platform AND g.org_id = l.entity_id AND l.entity_type='Org')
+    UNION ALL
+    SELECT l.id AS lid, g.platform AS p, g.repo_name AS name, g.openrank AS o
+    FROM
+      (SELECT platform, repo_id, argMax(repo_name, created_at) AS repo_name, SUM(openrank) AS openrank
+      FROM global_openrank WHERE type='Repo' AND (repo_id IN (SELECT entity_id FROM flatten_labels WHERE entity_type='Repo'))
+      AND toYear(created_at) >= toYear(now()) - 1
+      GROUP BY platform, repo_id) g,
+      (SELECT * FROM flatten_labels WHERE type IN (${labels.map(label => `'${label}'`).join(',')})) l
+    WHERE
+     (g.platform = l.platform AND g.repo_id = l.entity_id AND l.entity_type='Repo')
+    )
+  ORDER BY o DESC
+)
+GROUP BY lid`;
+      await queryStream(topReposSql, row => {
+        const [lid, repos] = row;
+        updateMetaData(join(exportBasePath, lid.substring(1), 'meta.json'), {
+          repos: ((() => {
+            const result: { platform: string, name: string }[] = [];
+            for (let i = 0; i < repos.length; i++) {
+              const [platform, repoName] = repos[i];
+              result.push({ platform, name: repoName });
+              if (!repoName.includes('/')) {
+                // Remove all subsequent items that contain this repoName + "/"
+                const prefix = repoName + '/';
+                for (let j = i + 1; j < repos.length;) {
+                  const [, nextRepoName] = repos[j];
+                  if (nextRepoName.startsWith(prefix)) {
+                    repos.splice(j, 1);
+                  } else {
+                    j++;
+                  }
+                }
+              }
+            }
+            return result;
+          })()).slice(0, 5),
+        });
+      });
+
+      const labelContributionDistributionSql = `SELECT label, groupArray(tuple(country, country_zh, developer_count, ROUND(openrank, 2))) FROM
+(SELECT l.id AS label, c.country AS country, c.country_zh, COUNT(DISTINCT o.actor_id) AS developer_count, SUM(o.openrank) AS openrank FROM 
+  (SELECT actor_id, repo_id, org_id, openrank FROM normalized_community_openrank WHERE created_at >= now() - INTERVAL 1 YEAR AND platform='GitHub'
+  AND (repo_id IN (SELECT entity_id FROM flatten_labels WHERE type IN (${labels.map(label => `'${label}'`).join(',')}) AND entity_type='Repo' AND platform='GitHub') OR
+  org_id IN (SELECT entity_id FROM flatten_labels WHERE type IN (${labels.map(label => `'${label}'`).join(',')}) AND entity_type='Org' AND platform='GitHub'))) o,
+  (SELECT id, entity_type, entity_id FROM flatten_labels WHERE type IN (${labels.map(label => `'${label}'`).join(',')}) AND platform='GitHub') l,
+  (SELECT id, country, country_zh FROM user_info WHERE country != '') c
+WHERE ((o.repo_id=l.entity_id AND l.entity_type='Repo') OR (o.org_id=l.entity_id AND l.entity_type='Org'))
+  AND o.actor_id=c.id
+GROUP BY label, country, country_zh
+ORDER BY openrank DESC)
+GROUP BY label`;
+      await queryStream(labelContributionDistributionSql, row => {
+        const [label, contributions] = row;
+        updateMetaData(join(exportBasePath, label.substring(1), 'meta.json'), {
+          contributions: contributions.map(([country, country_zh, developers, openrank]) =>
+            ({ country, country_zh, developers: +developers, openrank: +openrank })),
+        });
+      });
     };
 
     // export label data
@@ -391,6 +509,7 @@ ORDER BY
     await exportUserInfo();
     await exportAllRepoList();
     await exportAllUserList();
+    await exportLabelMeta();
 
     logger.info(`Task monthly export done.`);
   }

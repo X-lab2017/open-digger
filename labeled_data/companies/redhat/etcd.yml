@@ -1,4 +1,6 @@
 name: etcd
+description: Distributed reliable key-value store for critical distributed system data
+description_zh: 面向分布式系统关键数据的可靠分布式键值存储
 type: Project
 data:
   platforms:

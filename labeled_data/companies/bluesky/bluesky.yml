@@ -1,4 +1,6 @@
 name: Bluesky
+description: The Bluesky Social app for Web, iOS, and Android, built with React Native and TypeScript.
+description_zh: 基于React Native和TypeScript构建的Bluesky社交应用，支持Web、iOS和Android平台。
 type: Project
 data:
   platforms:

@@ -1,4 +1,6 @@
 name: Prometheus
+description: Prometheus is a monitoring system and time series database for cloud-native environments.
+description_zh: Prometheus 是一个用于云原生环境的监控系统和时间序列数据库。
 type: Project
 data:
   platforms:

@@ -1,4 +1,6 @@
 name: Unity Catalog
+description: Unity Catalog is an open, multimodal catalog for data and AI with support for multiple formats, engines, and assets.
+description_zh: Unity Catalog 是一个开源、多模态的数据与 AI 目录，支持多种格式、引擎和资产。
 type: Project
 data:
   platforms:

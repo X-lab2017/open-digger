@@ -1,4 +1,6 @@
 name: ms-swift
+description: 'SWIFT: A scalable lightweight framework for fine-tuning and deploying 600+ LLMs and 300+ MLLMs (AAAI 2025).'
+description_zh: SWIFT：用于微调和部署600+大模型和300+多模态模型的轻量级框架（AAAI 2025）。
 type: Project
 data:
   platforms:

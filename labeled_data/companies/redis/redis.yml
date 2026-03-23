@@ -1,4 +1,6 @@
 name: Redis
+description: Redis is an in-memory key-value database with disk persistence and advanced data structures.
+description_zh: Redis 是一个支持磁盘持久化的内存键值数据库，提供丰富的数据结构。
 type: Project
 data:
   platforms:

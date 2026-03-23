@@ -1,4 +1,6 @@
 name: Node-RED
+description: Low-code programming for event-driven applications
+description_zh: 面向事件驱动应用的低代码编程工具
 type: Project
 data:
   platforms:

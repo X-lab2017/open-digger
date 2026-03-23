@@ -1,4 +1,6 @@
 name: Bottlerocket
+description: A Linux-based OS designed for secure and reliable container hosting.
+description_zh: 基于Linux的容器托管操作系统，专注于安全与可靠性。
 type: Project
 data:
   platforms:

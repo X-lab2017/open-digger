@@ -1,4 +1,6 @@
 name: FreeCAD
+description: FreeCAD is a free, open-source, cross-platform 3D parametric modeler.
+description_zh: FreeCAD 是一款免费、开源的跨平台三维参数化建模软件。
 type: Project
 data:
   platforms:

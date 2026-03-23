@@ -1,4 +1,6 @@
 name: SpacetimeDB
+description: 'SpacetimeDB: A fast, real-time database for multiplayer applications and games.'
+description_zh: SpacetimeDB：专为多人游戏和实时应用设计的高速数据库。
 type: Project
 data:
   platforms:

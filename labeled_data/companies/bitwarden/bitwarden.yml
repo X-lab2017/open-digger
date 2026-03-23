@@ -1,4 +1,6 @@
 name: Bitwarden
+description: Open source security solutions for individuals, teams, and business organizations.
+description_zh: 适用于个人、团队和商业组织的开源安全解决方案。
 type: Project
 data:
   platforms:

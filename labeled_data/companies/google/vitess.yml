@@ -1,4 +1,6 @@
 name: Vitess
+description: Vitess is a horizontally scalable distributed MySQL database system.
+description_zh: Vitess 是一个可水平扩展的分布式 MySQL 数据库系统。
 type: Project
 data:
   platforms:

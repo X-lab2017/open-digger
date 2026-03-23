@@ -1,4 +1,6 @@
 name: wasmCloud
+description: wasmCloud is a CNCF project for building and scaling polyglot WebAssembly apps across any cloud or edge.
+description_zh: wasmCloud 是一个 CNCF 项目，用于在任意云或边缘环境中构建和扩展多语言 WebAssembly 应用。
 type: Project
 data:
   platforms:

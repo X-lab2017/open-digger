@@ -1,4 +1,6 @@
 name: Apache SkyWalking
+description: 'Apache SkyWalking: An APM system for monitoring and tracing distributed systems.'
+description_zh: Apache SkyWalking：用于分布式系统监控与追踪的APM系统。
 type: Project
 data:
   platforms:

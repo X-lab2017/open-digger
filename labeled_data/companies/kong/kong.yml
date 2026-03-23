@@ -1,4 +1,6 @@
 name: Kong
+description: A high-performance, cloud-native API and AI gateway with extensible plugin architecture.
+description_zh: 高性能、云原生的API与AI网关，具备可扩展的插件架构。
 type: Project
 data:
   platforms:

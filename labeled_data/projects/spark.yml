@@ -1,4 +1,6 @@
 name: Apache Spark
+description: Apache Spark is a unified analytics engine for large-scale data processing.
+description_zh: Apache Spark 是一个用于大规模数据处理的统一分析引擎。
 type: Project
 data:
   platforms:

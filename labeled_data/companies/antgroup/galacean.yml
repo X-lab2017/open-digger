@@ -1,4 +1,6 @@
 name: Galacean
+description: A lightweight, real-time interactive engine for web and mobile with 2D/3D support.
+description_zh: 轻量级实时交互引擎，支持网页和移动端的 2D/3D 图形。
 type: Project
 data:
   platforms:

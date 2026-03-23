@@ -1,4 +1,6 @@
 name: ByConity
+description: ByConity is an open-source cloud data warehouse with compute-storage separation and high-performance querying.
+description_zh: ByConity 是一个开源云数据仓库，支持计算存储分离和高性能查询。
 type: Project
 data:
   platforms:

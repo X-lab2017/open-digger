@@ -1,4 +1,6 @@
 name: Foundry
+description: Foundry is a fast, modular Ethereum development toolkit written in Rust.
+description_zh: Foundry 是一个快速、模块化的以太坊开发工具包，使用 Rust 编写。
 type: Project
 data:
   platforms:

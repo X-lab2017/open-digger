@@ -1,4 +1,6 @@
 name: TiKV
+description: Distributed transactional key-value database, originally created to complement TiDB
+description_zh: 分布式事务型键值数据库，最初为配合 TiDB 而开发
 type: Project
 data:
   platforms:

@@ -1,4 +1,6 @@
 name: Ubicloud
+description: Open source cloud alternative to AWS with IaaS, K8s, IAM, and AI services.
+description_zh: 开源云平台，提供类AWS的IaaS、K8s、IAM和AI服务。
 type: Project
 data:
   platforms:

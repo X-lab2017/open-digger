@@ -1,4 +1,6 @@
 name: KServe
+description: KServe is a standardized distributed AI inference platform for scalable, multi-framework deployment on Kubernetes.
+description_zh: KServe 是一个标准化的分布式 AI 推理平台，支持在 Kubernetes 上进行可扩展、多框架部署。
 type: Project
 data:
   platforms:

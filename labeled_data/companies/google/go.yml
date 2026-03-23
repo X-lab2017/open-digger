@@ -1,4 +1,6 @@
 name: Go
+description: Go is an open source programming language for building simple, reliable, and efficient software.
+description_zh: Go 是一种开源编程语言，用于构建简洁、可靠且高效的软件。
 type: Project
 data:
   platforms:

@@ -1,4 +1,6 @@
 name: VSAG
+description: vsag is a high-performance vector indexing library for similarity search.
+description_zh: vsag 是一个高性能的向量索引库，用于相似性搜索。
 type: Project
 data:
   platforms:

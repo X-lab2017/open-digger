@@ -1,4 +1,6 @@
 name: EMQX
+description: The most scalable open-source MQTT broker for IoT, IIoT, and connected vehicles
+description_zh: 适用于物联网、工业物联网和联网汽车的最可扩展开源MQTT代理
 type: Project
 data:
   platforms:

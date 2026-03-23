@@ -1,4 +1,6 @@
 name: Apache Solr
+description: Apache Solr is a fast, open-source search platform built on Apache Lucene.
+description_zh: Apache Solr 是基于 Apache Lucene 构建的快速开源搜索平台。
 type: Project
 data:
   platforms:

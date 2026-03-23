@@ -1,5 +1,7 @@
 name: openGauss
 type: Project
+description: openGauss is a high-performance, high-security, and high-reliability enterprise-class open source relational database.
+description_zh: openGauss 是一款高性能、高安全、高可靠的企业级开源关系型数据库系统
 data:
   platforms:
     - name: Gitee
@@ -7,3 +9,10 @@ data:
       orgs:
         - id: 5549555
           name: opengauss
+    - name: AtomGit
+      type: Code Hosting
+      orgs:
+        - id: 4014443
+          name: opengauss
+        - id: 4438453
+          name: opengaussmirror

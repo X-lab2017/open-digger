@@ -1,4 +1,6 @@
 name: Open Cluster Management
+description: Core components for end-to-end Kubernetes cluster management in the OCM project.
+description_zh: OCM项目的端到端Kubernetes集群管理核心组件。
 type: Project
 data:
   platforms:

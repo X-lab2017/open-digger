@@ -1,4 +1,6 @@
 name: LLaMA-Factory
+description: Unified Efficient Fine-Tuning of 100+ LLMs & VLMs (ACL 2024)
+description_zh: 统一高效微调100+大语言模型和视觉语言模型（ACL 2024）
 type: Project
 data:
   platforms:

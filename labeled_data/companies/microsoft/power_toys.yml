@@ -1,4 +1,6 @@
 name: PowerToys
+description: Microsoft PowerToys is a collection of productivity-enhancing utilities for Windows.
+description_zh: Microsoft PowerToys 是一组提升 Windows 生产力的实用工具。
 type: Project
 data:
   platforms:

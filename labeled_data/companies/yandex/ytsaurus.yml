@@ -1,4 +1,6 @@
 name: YTsaurus
+description: YTsaurus is a scalable and fault-tolerant open-source big data platform.
+description_zh: YTsaurus 是一个可扩展且容错的开源大数据平台。
 type: Project
 data:
   platforms:

@@ -1,4 +1,6 @@
 name: Lobe Chat
+description: LobeHub - Open-source AI Agent workspace with multi-provider support, RAG, and one-click deployment.
+description_zh: LobeHub - 开源AI智能体工作区，支持多平台、RAG和一键部署。
 type: Project
 data:
   platforms:

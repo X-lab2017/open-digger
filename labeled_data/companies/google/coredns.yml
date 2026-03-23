@@ -1,4 +1,6 @@
 name: CoreDNS
+description: CoreDNS is a fast and flexible DNS server that chains plugins.
+description_zh: CoreDNS 是一个快速灵活的 DNS 服务器，通过插件链实现功能扩展。
 type: Project
 data:
   platforms:

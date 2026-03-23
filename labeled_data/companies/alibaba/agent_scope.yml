@@ -1,4 +1,6 @@
 name: AgentScope
+description: Build LLM-powered multi-agent applications easily with AgentScope.
+description_zh: 使用 AgentScope 轻松构建基于大语言模型的多智能体应用。
 type: Project
 data:
   platforms:

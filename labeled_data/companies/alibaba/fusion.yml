@@ -1,4 +1,6 @@
 name: Fusion Design
+description: A configurable React component library for enterprise backend systems.
+description_zh: 面向企业后台系统的可配置React组件库。
 type: Project
 data:
   platforms:

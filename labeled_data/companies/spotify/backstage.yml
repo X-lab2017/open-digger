@@ -1,4 +1,6 @@
 name: Backstage
+description: Backstage is an open framework for building developer portals
+description_zh: Backstage 是一个用于构建开发者门户的开源框架
 type: Project
 data:
   platforms:

@@ -1,4 +1,6 @@
 name: Hyperledger Iroha
+description: 'Iroha: A cutting-edge, enterprise-grade decentralized ledger'
+description_zh: Iroha：一个前沿的企业级分布式账本
 type: Project
 data:
   platforms:

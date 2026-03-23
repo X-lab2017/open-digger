@@ -1,4 +1,6 @@
 name: pgvector
+description: Open-source vector similarity search for Postgres
+description_zh: 开源的 PostgreSQL 向量相似性搜索
 type: Project
 data:
   platforms:

@@ -1,4 +1,6 @@
 name: Kata Containers
+description: Kata Containers provides lightweight VMs that perform like containers with VM-level isolation and security.
+description_zh: Kata Containers 提供轻量级虚拟机，性能如容器，具备虚拟机级别的隔离与安全性。
 type: Project
 data:
   platforms:

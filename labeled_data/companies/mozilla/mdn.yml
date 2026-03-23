@@ -1,4 +1,6 @@
 name: MDN Web Docs
+description: MDN Web Docs is an open-source project providing comprehensive web technology documentation and learning resources.
+description_zh: MDN Web Docs 是一个开源项目，提供全面的网络技术文档和学习资源。
 type: Project
 data:
   platforms:

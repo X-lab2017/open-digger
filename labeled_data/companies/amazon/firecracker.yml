@@ -1,4 +1,6 @@
 name: Firecracker
+description: Secure and fast microVMs for serverless computing.
+description_zh: 用于无服务器计算的安全快速微虚拟机。
 type: Project
 data:
   platforms:

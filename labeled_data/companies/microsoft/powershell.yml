@@ -1,4 +1,6 @@
 name: PowerShell
+description: PowerShell is a cross-platform automation and configuration tool optimized for structured data and system management.
+description_zh: PowerShell 是一个跨平台的自动化与配置工具，专为结构化数据和系统管理优化。
 type: Project
 data:
   platforms:

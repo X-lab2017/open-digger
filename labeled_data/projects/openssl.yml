@@ -1,4 +1,6 @@
 name: OpenSSL
+description: OpenSSL is a robust, full-featured TLS/SSL and crypto library.
+description_zh: OpenSSL 是一个功能强大的 TLS/SSL 和加密库。
 type: Project
 data:
   platforms:

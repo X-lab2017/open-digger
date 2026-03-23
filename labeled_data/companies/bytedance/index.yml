@@ -9,7 +9,6 @@ data:
     - lark
     - oceanengine
     - verl
-    - volcengine
   platforms:
     - name: GitHub
       type: Code Hosting

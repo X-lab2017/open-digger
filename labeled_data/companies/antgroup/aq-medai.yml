@@ -1,4 +1,6 @@
 name: AQ-MedAI
+description: 'DIVER: A multi-stage reasoning-intensive information retrieval system with LLM-driven query expansion and reranking.'
+description_zh: DIVER：一个包含LLM驱动查询扩展和重排序的多阶段复杂检索系统。
 type: Project
 data:
   platforms:

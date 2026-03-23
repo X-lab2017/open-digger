@@ -1,4 +1,6 @@
 name: hapjs
+description: A standard framework for fast app development, supporting loading, running, and rendering with essential APIs.
+description_zh: 快应用标准框架，支持加载、运行和渲染，并提供必要API。
 type: Project
 data:
   platforms:

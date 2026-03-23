@@ -1,4 +1,6 @@
 name: Kedro
+description: Kedro is a production-ready data science framework for building modular and maintainable pipelines.
+description_zh: Kedro 是一个用于构建模块化和可维护数据科学流水线的生产就绪框架。
 type: Project
 data:
   platforms:

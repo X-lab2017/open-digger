@@ -1,4 +1,6 @@
 name: SOAJS
+description: SOAJS dashboard provides APIs and GUI for managing environments, tenants, and products.
+description_zh: SOAJS仪表板提供用于管理环境、租户和产品的API与图形界面。
 type: Project
 data:
   platforms:

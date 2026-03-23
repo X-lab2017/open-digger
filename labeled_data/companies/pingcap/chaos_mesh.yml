@@ -1,4 +1,6 @@
 name: Chaos Mesh
+description: A Chaos Engineering Platform for Kubernetes.
+description_zh: 专为 Kubernetes 设计的混沌工程平台。
 type: Project
 data:
   platforms:

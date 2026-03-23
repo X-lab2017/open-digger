@@ -3,6 +3,7 @@ type: Tech-2
 data:
   labels:
     - ':companies/anaconda/dask'
+    - ':companies/huawei/cann'
     - ':companies/huawei/volcano'
     - ':projects/ray'
     - ':projects/spark'

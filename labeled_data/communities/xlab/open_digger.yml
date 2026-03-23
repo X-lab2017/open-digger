@@ -1,4 +1,6 @@
 name: OpenDigger
+description: OpenDigger is an open source analysis platform for open source data.
+description_zh: OpenDigger 是一个开源数据分析平台。
 type: Project
 data:
   platforms:

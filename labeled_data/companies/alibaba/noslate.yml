@@ -1,4 +1,6 @@
 name: Noslate
+description: Noslate container daemon for managing containerized applications.
+description_zh: 用于管理容器化应用的 Noslate 容器守护进程。
 type: Project
 data:
   platforms:

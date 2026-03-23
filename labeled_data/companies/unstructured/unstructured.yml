@@ -1,4 +1,6 @@
 name: Unstructured
+description: Unstructured is an open-source ETL solution for transforming complex documents into structured data for language models.
+description_zh: Unstructured 是一个开源的 ETL 解决方案，用于将复杂文档转换为语言模型可用的结构化数据。
 type: Project
 data:
   platforms:

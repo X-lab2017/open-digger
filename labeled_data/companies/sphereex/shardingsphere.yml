@@ -1,4 +1,6 @@
 name: Apache ShardingSphere
+description: Apache ShardingSphere is a distributed SQL ecosystem for scalable, secure, and sharded database solutions.
+description_zh: Apache ShardingSphere 是一个支持分库分表、安全与扩展的分布式 SQL 数据库生态系统。
 type: Project
 data:
   platforms:

@@ -1,4 +1,6 @@
 name: TonY
+description: TonY is a framework to natively run deep learning jobs on Apache Hadoop.
+description_zh: TonY 是一个在 Apache Hadoop 上原生运行深度学习任务的框架。
 type: Project
 data:
   platforms:

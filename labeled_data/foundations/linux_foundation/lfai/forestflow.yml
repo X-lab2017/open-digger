@@ -1,4 +1,6 @@
 name: ForestFlow
+description: ForestFlow is a policy-driven, scalable ML model server for cloud-native deployments.
+description_zh: ForestFlow 是一个基于策略的、可扩展的机器学习模型服务器，适用于云原生部署。
 type: Project
 data:
   platforms:

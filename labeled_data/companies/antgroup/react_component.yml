@@ -1,4 +1,6 @@
 name: React Component
+description: A React slider component with support for tooltips, range selection, and customization.
+description_zh: 一个支持提示框、范围选择和自定义的React滑块组件。
 type: Project
 data:
   platforms:

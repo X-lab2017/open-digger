@@ -1,4 +1,6 @@
 name: WebContainers
+description: WebContainers brings dev environments to your web app.
+description_zh: WebContainers 将开发环境集成到您的网页应用中。
 type: Project
 data:
   platforms:

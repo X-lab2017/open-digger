@@ -1,4 +1,6 @@
 name: Vineyard
+description: Vineyard is an in-memory immutable data manager for efficient distributed data sharing.
+description_zh: Vineyard 是一个用于高效分布式数据共享的内存不可变数据管理器。
 type: Project
 data:
   platforms:

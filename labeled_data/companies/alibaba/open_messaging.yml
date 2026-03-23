@@ -1,4 +1,6 @@
 name: OpenMessaging
+description: A raft-based Java library for high-available, durable, and consistent commitlog.
+description_zh: 基于 Raft 的 Java 高可用、高持久、强一致性提交日志库。
 type: Project
 data:
   platforms:

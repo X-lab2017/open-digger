@@ -1,0 +1,19 @@
+name: Ascend
+type: Project
+description: Ascend is a full-stack open-source software for developers to enable applications, accelerate training and inference, manage clusters, and provide toolchains based on Huawei's Ascend AI processors.
+description_zh: 面向开发者提供基于华为昇腾 Ascend AI 处理器的应用使能、训推加速、集群管理、工具链等全栈开源软件
+data:
+  platforms:
+    - name: AtomGit
+      type: Code Hosting
+      orgs:
+        - id: 808231
+          name: Ascend
+        - id: 11685673
+          name: Ascend-Kunpeng_Tech_Ecosystem
+        - id: 7303010
+          name: ascend-tribe
+        - id: 9533684
+          name: Ascend-SACT
+        - id: 6979241
+          name: ascend-archive

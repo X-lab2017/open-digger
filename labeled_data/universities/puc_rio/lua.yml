@@ -1,4 +1,6 @@
 name: Lua
+description: A mirrored Lua development repository. Communication via the Lua mailing list only.
+description_zh: 镜像的Lua开发仓库，仅通过Lua邮件列表进行交流。
 type: Project
 data:
   platforms:

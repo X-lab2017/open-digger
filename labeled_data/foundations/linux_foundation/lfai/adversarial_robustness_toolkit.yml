@@ -1,4 +1,6 @@
 name: Adversarial Robustness Toolkit
+description: Adversarial Robustness Toolbox (ART) - Python library for defending ML models against adversarial threats.
+description_zh: 对抗鲁棒性工具箱（ART）- 防御机器学习模型对抗威胁的 Python 库。
 type: Project
 data:
   platforms:

@@ -1,4 +1,6 @@
 name: Apache IoTDB
+description: Apache IoTDB is a time series database for efficient data collection, storage, and analysis in the IoT field.
+description_zh: Apache IoTDB 是面向物联网领域的时序数据库，提供高效的数据采集、存储与分析能力。
 type: Project
 data:
   platforms:

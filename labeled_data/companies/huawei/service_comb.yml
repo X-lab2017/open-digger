@@ -1,4 +1,6 @@
 name: Apache ServiceComb
+description: ServiceComb Java Chassis is a Java SDK for microservices with service registration, discovery, and management.
+description_zh: ServiceComb Java Chassis 是一个用于微服务开发的 Java SDK，支持服务注册、发现与管理。
 type: Project
 data:
   platforms:

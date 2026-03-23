@@ -1,4 +1,6 @@
 name: CeresDB
+description: Apache HoraeDB (incubating) is a high-performance, distributed, cloud-native time-series database.
+description_zh: Apache HoraeDB（孵化中）是一个高性能、分布式、云原生的时间序列数据库。
 type: Project
 data:
   platforms:

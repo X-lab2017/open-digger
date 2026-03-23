@@ -1,4 +1,6 @@
 name: Dagger
+description: Automation engine to build, test and ship code anywhere.
+description_zh: 自动化构建、测试和部署代码的引擎，支持本地、CI 和云环境。
 type: Project
 data:
   platforms:

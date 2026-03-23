@@ -1,4 +1,6 @@
 name: QUnit
+description: 🔮 An easy-to-use JavaScript unit testing framework.
+description_zh: 🔮 一个易于使用的 JavaScript 单元测试框架。
 type: Project
 data:
   platforms:

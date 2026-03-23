@@ -1,4 +1,6 @@
 name: Prefect
+description: Prefect is a Python workflow orchestration framework for building resilient data pipelines.
+description_zh: Prefect 是一个用于构建弹性数据流水线的 Python 工作流编排框架。
 type: Project
 data:
   platforms:

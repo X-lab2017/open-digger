@@ -1,4 +1,6 @@
 name: OpenVINO
+description: OpenVINO™ is an open source toolkit for optimizing and deploying AI inference.
+description_zh: OpenVINO™ 是一个用于优化和部署人工智能推理的开源工具包。
 type: Project
 data:
   platforms:

@@ -1,4 +1,6 @@
 name: Hyperledger Firefly
+description: Hyperledger FireFly is an open-source Supernode for building secure, scalable Web3 apps.
+description_zh: Hyperledger FireFly 是一个开源的超节点，用于构建安全、可扩展的 Web3 应用。
 type: Project
 data:
   platforms:

@@ -1,4 +1,6 @@
 name: TuGraph
+description: 'TuGraph: A high-performance graph database with ACID support and fast analytics.'
+description_zh: TuGraph：支持ACID且具备快速图分析能力的高性能图数据库。
 type: Project
 data:
   platforms:

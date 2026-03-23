@@ -1,4 +1,6 @@
 name: AliceO2
+description: ALICE O2 Analysis repository for physics frameworks and tools.
+description_zh: ALICE O2 分析仓库，包含物理框架和工具。
 type: Project
 data:
   platforms:

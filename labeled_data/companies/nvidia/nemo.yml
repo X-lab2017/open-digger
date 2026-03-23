@@ -1,4 +1,6 @@
 name: NeMo
+description: A scalable generative AI framework for LLMs, multimodal, and speech AI.
+description_zh: 一个用于大语言模型、多模态和语音AI的可扩展生成式AI框架。
 type: Project
 data:
   platforms:

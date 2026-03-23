@@ -1,4 +1,6 @@
 name: Cloudflare
+description: Cloudflare's open-source documentation platform for developers.
+description_zh: Cloudflare 开源的开发者文档平台。
 type: Project
 data:
   platforms:

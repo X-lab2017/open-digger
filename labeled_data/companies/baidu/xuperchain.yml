@@ -1,4 +1,6 @@
 name: XuperCore
+description: A high-performance, flexible blockchain framework with dynamic kernel and modular design.
+description_zh: 一个高性能、灵活的区块链框架，具备动态内核和模块化设计。
 type: Project
 data:
   platforms:

@@ -1,4 +1,6 @@
 name: Open Policy Agent (OPA)
+description: Open Policy Agent (OPA) is an open source, general-purpose policy engine for unified policy enforcement.
+description_zh: Open Policy Agent（OPA）是一个开源通用策略引擎，用于统一策略执行。
 type: Project
 data:
   platforms:

@@ -1,4 +1,6 @@
 name: Intern
+description: A next-generation code testing stack for JavaScript.
+description_zh: 一个用于 JavaScript 的新一代代码测试框架。
 type: Project
 data:
   platforms:

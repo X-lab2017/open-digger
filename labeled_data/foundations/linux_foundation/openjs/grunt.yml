@@ -1,4 +1,6 @@
 name: Grunt
+description: 'Grunt: The JavaScript Task Runner'
+description_zh: Grunt：JavaScript 任务运行器
 type: Project
 data:
   platforms:

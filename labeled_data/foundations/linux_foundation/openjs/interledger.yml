@@ -1,4 +1,6 @@
 name: Interledger
+description: Rafiki is an open-source Interledger service for wallet providers to enable payment functionality.
+description_zh: Rafiki 是一个开源的 Interledger 服务，帮助钱包提供商为其用户启用支付功能。
 type: Project
 data:
   platforms:

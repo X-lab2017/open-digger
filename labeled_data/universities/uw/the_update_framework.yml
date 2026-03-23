@@ -1,4 +1,6 @@
 name: The Update Framework (TUF)
+description: Python reference implementation of The Update Framework (TUF) for secure software updates.
+description_zh: Python实现的The Update Framework（TUF）参考版本，用于安全软件更新。
 type: Project
 data:
   platforms:

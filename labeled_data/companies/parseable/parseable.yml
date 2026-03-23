@@ -1,4 +1,6 @@
 name: Parseable
+description: Parseable is a disk-less, cloud-native database for logs and observability with a focus on simplicity and efficiency.
+description_zh: Parseable 是一个无需磁盘、云原生的日志与可观测性数据库，专注于简洁与高效。
 type: Project
 data:
   platforms:

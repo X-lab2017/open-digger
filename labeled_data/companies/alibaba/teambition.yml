@@ -1,4 +1,6 @@
 name: Teambition
+description: Isomorphic JavaScript SDK for Teambition APIs
+description_zh: 面向 Teambition API 的同构 JavaScript SDK
 type: Project
 data:
   platforms:

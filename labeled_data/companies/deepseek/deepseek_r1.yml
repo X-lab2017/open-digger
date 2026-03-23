@@ -1,4 +1,6 @@
 name: DeepSeek-R1
+description: 'DeepSeek-R1: A reasoning model series trained via reinforcement learning, achieving state-of-the-art performance on math, code, and reasoning tasks.'
+description_zh: DeepSeek-R1：通过强化学习训练的推理模型系列，在数学、代码和推理任务上达到领先水平。
 type: Project
 data:
   platforms:

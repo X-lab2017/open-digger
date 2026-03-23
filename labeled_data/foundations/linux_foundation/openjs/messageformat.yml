@@ -1,4 +1,6 @@
 name: Messageformat
+description: JavaScript ICU and Unicode MessageFormat implementations for localization.
+description_zh: JavaScript 的 ICU 和 Unicode 消息格式实现，用于本地化。
 type: Project
 data:
   platforms:

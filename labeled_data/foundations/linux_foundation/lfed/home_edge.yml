@@ -1,4 +1,6 @@
 name: Home Edge
+description: Edge Orchestration for home edge devices to enable smart home use cases.
+description_zh: 面向家庭边缘设备的边缘编排，支持智能家居应用场景。
 type: Project
 data:
   platforms:

@@ -1,4 +1,6 @@
 name: Homebrew
+description: Core formulae for the Homebrew package manager on macOS or Linux.
+description_zh: 适用于 macOS 或 Linux 的 Homebrew 包管理器。
 type: Project
 data:
   platforms:

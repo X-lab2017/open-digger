@@ -1,4 +1,6 @@
 name: Java
+description: JDK main-line development source
+description_zh: JDK 主线开发源代码
 type: Project
 data:
   platforms:

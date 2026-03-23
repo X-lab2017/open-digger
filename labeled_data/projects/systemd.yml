@@ -1,4 +1,6 @@
 name: systemd
+description: A system and service manager for Linux systems.
+description_zh: 一个用于 Linux 系统的系统和服务管理器。
 type: Project
 data:
   platforms:

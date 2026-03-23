@@ -1,4 +1,6 @@
 name: DataChain
+description: DataChain is a Python-based AI-data warehouse for ETL, analytics, and versioning of unstructured data.
+description_zh: DataChain 是一个基于 Python 的人工智能数据仓库，用于非结构化数据的 ETL、分析和版本管理。
 type: Project
 data:
   platforms:

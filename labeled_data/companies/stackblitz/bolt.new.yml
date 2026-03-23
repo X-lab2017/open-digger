@@ -1,4 +1,6 @@
 name: Blot.New
+description: AI-powered full-stack web development in the browser with no setup required.
+description_zh: 无需本地配置，通过浏览器进行全栈Web开发的AI工具。
 type: Project
 data:
   platforms:

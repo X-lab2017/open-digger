@@ -1,4 +1,6 @@
 name: EdgeX Foundry
+description: EdgeX Golang microservices for IoT edge computing.
+description_zh: 用于物联网边缘计算的 EdgeX Golang 微服务。
 type: Project
 data:
   platforms:

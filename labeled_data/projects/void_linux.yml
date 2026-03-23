@@ -1,4 +1,6 @@
 name: Void Linux
+description: The Void source packages collection for building binary packages with XBPS.
+description_zh: Void 源代码包集合，用于通过 XBPS 构建二进制包。
 type: Project
 data:
   platforms:

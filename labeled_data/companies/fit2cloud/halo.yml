@@ -1,4 +1,6 @@
 name: Halo
+description: Halo - A powerful and easy-to-use open-source website building tool.
+description_zh: Halo - 强大易用的开源建站工具。
 type: Project
 data:
   platforms:

@@ -1,4 +1,6 @@
 name: Daily CodeForce Problems
+description: A daily practice project for solving and sharing Codeforces problems.
+description_zh: 一个日常练习并分享Codeforces题目的开源项目。
 type: Project
 data:
   platforms:

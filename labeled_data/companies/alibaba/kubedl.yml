@@ -1,4 +1,6 @@
 name: KubeDL
+description: Run deep learning workloads on Kubernetes efficiently.
+description_zh: 高效地在 Kubernetes 上运行深度学习任务。
 type: Project
 data:
   platforms:

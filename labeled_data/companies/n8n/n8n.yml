@@ -1,4 +1,6 @@
 name: n8n
+description: n8n is a fair-code workflow automation platform with native AI capabilities and 400+ integrations.
+description_zh: n8n 是一个具有原生 AI 功能和 400+ 集成的公平代码工作流自动化平台。
 type: Project
 data:
   platforms:

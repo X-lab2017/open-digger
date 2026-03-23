@@ -1,4 +1,6 @@
 name: Apache Beam
+description: Apache Beam is a unified programming model for batch and streaming data processing.
+description_zh: Apache Beam 是一个统一的批处理和流数据处理编程模型。
 type: Project
 data:
   platforms:

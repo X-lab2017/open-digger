@@ -1,4 +1,6 @@
 name: OpenASCE
+description: OpenASCE is an end-to-end Python package for large-scale causal learning with discovery, effect estimation, and attribution.
+description_zh: OpenASCE 是一个用于大规模因果学习的端到端 Python 包，支持因果发现、效应估计和归因分析。
 type: Project
 data:
   platforms:

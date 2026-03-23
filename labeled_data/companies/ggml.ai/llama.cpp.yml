@@ -1,4 +1,6 @@
 name: llama.cpp
+description: LLM inference in C/C++ with support for multiple hardware and quantization.
+description_zh: 使用 C/C++ 实现的 LLM 推理，支持多种硬件和量化。
 type: Project
 data:
   platforms:

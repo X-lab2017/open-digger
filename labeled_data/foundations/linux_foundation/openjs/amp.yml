@@ -1,4 +1,6 @@
 name: AMP
+description: AMP is a web component framework for building user-first websites, stories, ads, and emails.
+description_zh: AMP 是一个用于构建以用户为中心的网站、故事、广告和电子邮件的网页组件框架。
 type: Project
 data:
   platforms:

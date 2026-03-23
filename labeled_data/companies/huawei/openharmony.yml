@@ -1,5 +1,7 @@
 name: OpenHarmony
 type: Project
+description: OpenHarmony is an open source project aiming to build a framework and platform for the operating system of smart terminal devices in the era of full-scenario, full-connection, and full-intelligence.
+description_zh: OpenHarmony 的目标是面向全场景、全连接、全智能时代，搭建一个智能终端设备操作系统的框架和平台
 data:
   platforms:
     - name: Gitee
@@ -11,3 +13,24 @@ data:
           name: openharmony-sig
         - id: 8739348
           name: HarmonyOS-tpc
+    - name: AtomGit
+      type: Code Hosting
+      orgs:
+        - id: 3542547
+          name: openharmony
+        - id: 3542784
+          name: openharmony-sig
+        - id: 4810569
+          name: openharmony-tpc
+        - id: 8932792
+          name: OpenHarmony-Flutter
+        - id: 2183156
+          name: openharmony-test
+        - id: 8177219
+          name: openharmony-robot
+        - id: 8832096
+          name: harmony_ecosystem_services
+        - id: 7358014
+          name: OpenHarmonyPCDeveloper
+        - id: 8932400
+          name: OpenHarmony-Cordova

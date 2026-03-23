@@ -1,4 +1,6 @@
 name: RWKV
+description: RWKV infctx trainer for arbitrary context lengths beyond 10k tokens.
+description_zh: 支持训练超过10k长度上下文的RWKV无限上下文训练器。
 type: Project
 data:
   platforms:

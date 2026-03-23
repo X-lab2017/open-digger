@@ -1,4 +1,6 @@
 name: AWS CDK
+description: AWS CDK is a framework for defining and provisioning cloud infrastructure as code using modern programming languages.
+description_zh: AWS CDK 是一个使用现代编程语言定义和部署云基础设施的框架。
 type: Project
 data:
   platforms:

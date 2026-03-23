@@ -1,4 +1,6 @@
 name: Elixir
+description: Elixir is a dynamic, functional language for building scalable and maintainable applications.
+description_zh: Elixir 是一种动态函数式语言，用于构建可扩展且易于维护的应用程序。
 type: Project
 data:
   platforms:

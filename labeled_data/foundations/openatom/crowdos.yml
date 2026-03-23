@@ -1,4 +1,6 @@
 name: CrowdOS
+description: CrowdOS is a ubiquitous operating system for crowdsourcing and mobile crowdsensing.
+description_zh: CrowdOS 是一个面向众包与移动群智感知的通用操作系统平台。
 type: Project
 data:
   platforms:

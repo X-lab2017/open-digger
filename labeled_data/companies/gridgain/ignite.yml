@@ -1,4 +1,6 @@
 name: Apache Ignite
+description: Apache Ignite is a high-performance distributed database and computing platform.
+description_zh: Apache Ignite 是一个高性能的分布式数据库与计算平台。
 type: Project
 data:
   platforms:

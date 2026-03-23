@@ -1,4 +1,6 @@
 name: Rancher
+description: A complete container management platform for Kubernetes and DevOps.
+description_zh: 一个完整的容器管理平台，支持 Kubernetes 和 DevOps。
 type: Project
 data:
   platforms:

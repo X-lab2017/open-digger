@@ -1,4 +1,6 @@
 name: ToolJet
+description: Low-code platform for building apps with drag-and-drop UI and data source integrations.
+description_zh: 低代码平台，通过拖放界面和数据源集成快速构建应用。
 type: Project
 data:
   platforms:

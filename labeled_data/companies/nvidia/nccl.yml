@@ -1,4 +1,6 @@
 name: NCCL
+description: Optimized primitives for collective multi-GPU communication
+description_zh: 用于多GPU通信的优化原语
 type: Project
 data:
   platforms:

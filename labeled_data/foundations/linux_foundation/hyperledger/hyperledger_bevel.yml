@@ -1,4 +1,6 @@
 name: Hyperledger Bevel
+description: An automation framework for deploying production-ready DLT platforms.
+description_zh: 用于部署生产就绪分布式账本平台的自动化框架。
 type: Project
 data:
   platforms:

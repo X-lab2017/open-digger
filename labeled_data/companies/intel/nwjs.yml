@@ -1,4 +1,6 @@
 name: NW.js
+description: NW.js enables writing native apps with HTML/JS and Node.js modules.
+description_zh: NW.js 可使用 HTML/JS 和 Node.js 模块编写原生应用。
 type: Project
 data:
   platforms:

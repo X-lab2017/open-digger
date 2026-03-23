@@ -1,4 +1,6 @@
 name: C#/.Net
+description: .NET is a cross-platform runtime for building cloud, mobile, desktop, and IoT applications.
+description_zh: .NET 是一个用于构建云、移动、桌面和物联网应用的跨平台运行时。
 type: Project
 data:
   platforms:

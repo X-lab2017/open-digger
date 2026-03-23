@@ -1,4 +1,6 @@
 name: OpenTelemetry
+description: OpenTelemetry makes robust, portable telemetry a built-in feature of cloud-native software.
+description_zh: OpenTelemetry 让强大的、可移植的遥测成为云原生软件的内置功能。
 type: Project
 data:
   platforms:

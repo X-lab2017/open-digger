@@ -1,4 +1,6 @@
 name: qBittorrent
+description: qBittorrent - A fast and stable BitTorrent client built with Qt.
+description_zh: qBittorrent - 一个基于Qt的快速且稳定的BitTorrent客户端。
 type: Project
 data:
   platforms:

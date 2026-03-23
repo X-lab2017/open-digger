@@ -1,4 +1,6 @@
 name: containerd
+description: An open and reliable container runtime
+description_zh: 一个开放且可靠的容器运行时
 type: Project
 data:
   platforms:

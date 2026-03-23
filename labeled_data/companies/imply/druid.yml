@@ -1,4 +1,6 @@
 name: Apache Druid
+description: 'Apache Druid: a high performance real-time analytics database.'
+description_zh: Apache Druid：高性能实时分析数据库。
 type: Project
 data:
   platforms:

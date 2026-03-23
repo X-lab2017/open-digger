@@ -19,6 +19,8 @@ export const getGraphqlClient = async (token: string): Promise<GraphqlClient> =>
     throw new Error('GitLab token or API URL is not set');
   }
 
+  const timeout = config.gitlab.graphqlTimeout ?? 120000;
+
   return async (query: string, variables?: any) => {
     return new Promise((resolve, reject) => {
       const url = new URL(graphqlUrl);
@@ -40,6 +42,7 @@ export const getGraphqlClient = async (token: string): Promise<GraphqlClient> =>
           'Content-Length': Buffer.byteLength(postData),
           'User-Agent': 'opendigger-bot',
         },
+        timeout,
       };
 
       const req = request(options, (res) => {
@@ -67,6 +70,10 @@ export const getGraphqlClient = async (token: string): Promise<GraphqlClient> =>
 
       req.on('error', (e) => {
         reject(new Error(`GitLab GraphQL API request error: ${e.message}`));
+      });
+
+      req.on('timeout', () => {
+        req.destroy(new Error(`GitLab GraphQL API request timeout (${timeout}ms)`));
       });
 
       req.write(postData);

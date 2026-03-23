@@ -4,7 +4,7 @@ import { GraphqlClient } from "./getClient";
 
 // since query will recursively get comments and events for every merge request
 // need to limit the number of merge requests to query at once to a small number to avoid rate limit error in a single query
-const batchCount = 30;
+const batchCount = 3;
 const logger = getLogger('UpdateGitlabRepoDataTask[GetMergeRequests]');
 
 const getMoreNotes = async (client: GraphqlClient, projectPath: string, mrIid: string, after?: string): Promise<any[]> => {

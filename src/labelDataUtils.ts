@@ -49,6 +49,8 @@ interface LabelItem {
   content: {
     name: string;
     name_zh?: string;
+    description?: string;
+    description_zh?: string;
     type: string;
     meta?: any;
     data: any;
@@ -65,6 +67,8 @@ interface ParsedLabelItem {
   type: string;
   name: string;
   name_zh?: string;
+  description?: string;
+  description_zh?: string;
   parents: string[];
   children: string[];
   platforms: CodeHostingPlatformData[];
@@ -117,6 +121,8 @@ function processLabelItems(map: Map<string, LabelItem>): ParsedLabelItem[] {
       type: item.content.type,
       name: item.content.name,
       name_zh: item.content.name_zh,
+      description: item.content.description,
+      description_zh: item.content.description_zh,
       platforms: item.platforms,
       parents: item.parents,
       children: item.children,

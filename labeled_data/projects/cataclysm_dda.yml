@@ -1,4 +1,6 @@
 name: Cataclysm - Dark Days Ahead
+description: A turn-based survival game in a post-apocalyptic world.
+description_zh: 一款后末日世界的回合制生存游戏。
 type: Project
 data:
   platforms:

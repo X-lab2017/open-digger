@@ -1,4 +1,6 @@
 name: DELTA
+description: DELTA is a deep learning platform for natural language and speech processing.
+description_zh: DELTA 是一个基于深度学习的自然语言与语音处理平台。
 type: Project
 data:
   platforms:

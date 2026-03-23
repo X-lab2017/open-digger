@@ -1,4 +1,6 @@
 name: FastChat
+description: An open platform for training, serving, and evaluating large language models.
+description_zh: 一个用于训练、部署和评估大语言模型的开源平台。
 type: Project
 data:
   platforms:

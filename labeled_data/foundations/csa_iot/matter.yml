@@ -1,4 +1,6 @@
 name: Matter
+description: Matter (formerly Project CHIP) is an open-source connectivity standard for smart home devices.
+description_zh: Matter（原Project CHIP）是一个智能家居设备的开源连接标准。
 type: Project
 data:
   platforms:

@@ -1,4 +1,6 @@
 name: Arthas
+description: Arthas is a Java diagnostic tool for troubleshooting production issues without code changes or restarts.
+description_zh: Arthas 是一个无需修改代码或重启即可诊断 Java 生产问题的工具。
 type: Project
 data:
   platforms:

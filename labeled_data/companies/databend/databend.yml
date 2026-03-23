@@ -1,4 +1,6 @@
 name: Databend
+description: 'Databend: Modern, open-source cloud data warehouse alternative to Snowflake with AI analytics.'
+description_zh: Databend：现代开源云数据仓库，Snowflake 替代方案，支持 AI 分析。
 type: Project
 data:
   platforms:

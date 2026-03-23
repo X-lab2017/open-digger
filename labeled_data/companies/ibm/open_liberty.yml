@@ -1,4 +1,6 @@
 name: Open Liberty
+description: Open Liberty is a lightweight, fast, and flexible runtime for cloud-native Java microservices.
+description_zh: Open Liberty 是一个轻量、快速且灵活的云原生 Java 微服务运行时。
 type: Project
 data:
   platforms:

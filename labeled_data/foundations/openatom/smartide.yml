@@ -1,4 +1,6 @@
 name: SmartIDE
+description: SmartIDE - A CloudNative IDE empowering developers with one-click environment setup and flexible development modes.
+description_zh: SmartIDE - 云原生开发环境，一键搭建，支持多种模式，赋能开发者高效编码。
 type: Project
 data:
   platforms:

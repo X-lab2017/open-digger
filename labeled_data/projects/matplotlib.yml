@@ -1,4 +1,6 @@
 name: Matplotlib
+description: Matplotlib is a comprehensive library for creating visualizations in Python.
+description_zh: Matplotlib 是一个用于在 Python 中创建可视化图形的综合库。
 type: Project
 data:
   platforms:

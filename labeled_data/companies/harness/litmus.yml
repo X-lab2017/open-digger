@@ -1,4 +1,6 @@
 name: Litmus
+description: LitmusChaos is an open-source chaos engineering platform for cloud-native resilience testing.
+description_zh: LitmusChaos 是一个开源的云原生混沌工程平台，用于增强系统弹性。
 type: Project
 data:
   platforms:

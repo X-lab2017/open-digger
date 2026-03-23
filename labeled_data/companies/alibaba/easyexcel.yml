@@ -1,4 +1,6 @@
 name: EasyExcel
+description: A fast and memory-efficient Java library for handling large Excel files.
+description_zh: 快速、低内存的Java处理大Excel文件工具。
 type: Project
 data:
   platforms:

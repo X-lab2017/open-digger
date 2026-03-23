@@ -1,4 +1,6 @@
 name: TDengine
+description: High-performance, scalable time-series database for Industrial IoT
+description_zh: 面向工业物联网的高性能、可扩展时序数据库
 type: Project
 data:
   platforms:

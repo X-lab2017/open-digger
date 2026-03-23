@@ -1,4 +1,6 @@
 name: Appsmith
+description: Open-source platform for building admin panels, internal tools, and dashboards with support for 25+ databases and any API.
+description_zh: 开源平台，用于构建管理面板、内部工具和仪表板，支持 25+ 数据库和任何 API。
 type: Project
 data:
   platforms:

@@ -1,4 +1,6 @@
 name: uBlock Origin
+description: Filter lists for uBlock Origin and uBlock Origin Lite.
+description_zh: uBlock Origin 和 uBlock Origin Lite 的过滤列表。
 type: Project
 data:
   platforms:

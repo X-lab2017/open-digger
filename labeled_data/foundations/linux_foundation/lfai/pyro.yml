@@ -1,4 +1,6 @@
 name: Pyro
+description: Probabilistic programming with NumPy powered by JAX for autograd and JIT compilation.
+description_zh: 基于JAX的NumPy概率编程，支持自动微分和JIT编译。
 type: Project
 data:
   platforms:

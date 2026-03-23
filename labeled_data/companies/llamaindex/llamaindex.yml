@@ -1,4 +1,6 @@
 name: LlamaIndex
+description: LlamaIndex is the leading framework for building LLM-powered agents over your data.
+description_zh: LlamaIndex 是构建基于大语言模型（LLM）代理的领先框架。
 type: Project
 data:
   platforms:

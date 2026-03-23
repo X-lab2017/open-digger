@@ -1,4 +1,6 @@
 name: Unieo
+description: A schema-driven routing engine for edge computing environments.
+description_zh: 面向边缘计算环境的模式驱动路由引擎。
 type: Project
 data:
   platforms:

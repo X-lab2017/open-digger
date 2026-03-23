@@ -1,4 +1,6 @@
 name: Velox
+description: A composable and extensible C++ execution engine for data management systems.
+description_zh: 一个可组合且可扩展的C++执行引擎，用于数据管理系统。
 type: Project
 data:
   platforms:

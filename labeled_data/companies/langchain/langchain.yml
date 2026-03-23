@@ -1,4 +1,6 @@
 name: LangChain
+description: LangChain is a platform for building reliable agents and LLM-powered applications.
+description_zh: LangChain 是一个用于构建可靠代理和大语言模型应用的平台。
 type: Project
 data:
   platforms:

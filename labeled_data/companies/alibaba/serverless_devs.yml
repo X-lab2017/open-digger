@@ -1,4 +1,6 @@
 name: Serverless Devs
+description: 'Serverless Devs: A full lifecycle management tool for Serverless applications.'
+description_zh: Serverless Devs：Serverless 应用全生命周期管理工具。
 type: Project
 data:
   platforms:

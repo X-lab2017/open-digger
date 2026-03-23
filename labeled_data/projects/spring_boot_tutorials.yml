@@ -1,4 +1,6 @@
 name: Spring Boot 3 Tutorials
+description: A collection of focused Java and Spring tutorials with multiple build profiles.
+description_zh: 包含多个Java和Spring教程，支持多种构建配置的项目集合。
 type: Project
 data:
   platforms:

@@ -1,4 +1,6 @@
 name: PrestoDB
+description: Presto is a distributed SQL query engine for big data.
+description_zh: Presto 是一个用于大数据的分布式 SQL 查询引擎。
 type: Project
 data:
   platforms:

@@ -1,4 +1,6 @@
 name: Langfuse
+description: Open source LLM engineering platform for observability, evaluation, and prompt management.
+description_zh: 开源LLM工程平台，支持可观测性、评估和提示管理。
 type: Project
 data:
   platforms:

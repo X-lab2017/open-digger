@@ -1,4 +1,6 @@
 name: Delta Lake
+description: An open-source storage framework for building Lakehouse architectures with compute engines and APIs.
+description_zh: 一个开源存储框架，支持使用计算引擎和API构建湖仓一体架构。
 type: Project
 data:
   platforms:

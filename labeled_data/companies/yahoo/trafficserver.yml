@@ -1,4 +1,6 @@
 name: Apache Traffic Server
+description: A high-performance HTTP/1.1 and HTTP/2 caching proxy server with plugin support.
+description_zh: 高性能支持 HTTP/1.1 和 HTTP/2 的缓存代理服务器，具备插件扩展功能。
 type: Project
 data:
   platforms:

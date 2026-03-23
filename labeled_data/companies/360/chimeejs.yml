@@ -1,4 +1,6 @@
 name: Chimeejs
+description: A video player framework bringing a great browsing experience with plugin support.
+description_zh: 一个支持插件的视频播放框架，带来卓越的浏览器体验。
 type: Project
 data:
   platforms:

@@ -1,4 +1,6 @@
 name: Apache Netbeans
+description: Apache NetBeans is an open source IDE and application framework.
+description_zh: Apache NetBeans 是一个开源的集成开发环境和应用框架。
 type: Project
 data:
   platforms:

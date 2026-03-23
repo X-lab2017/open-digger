@@ -1,4 +1,6 @@
 name: Airbyte
+description: Airbyte is an open-source data integration platform for ETL/ELT pipelines from APIs, databases, and files to warehouses and lakes.
+description_zh: Airbyte 是一个开源的数据集成平台，用于从 API、数据库和文件到数据仓库和湖的 ETL/ELT 管道。
 type: Project
 data:
   platforms:

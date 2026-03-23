@@ -1,4 +1,6 @@
 name: Hyprland
+description: Hyprland is a dynamic tiling Wayland compositor with great looks and high customizability.
+description_zh: Hyprland 是一个外观精美且高度可定制的动态平铺 Wayland 合成器。
 type: Project
 data:
   platforms:

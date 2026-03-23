@@ -1,4 +1,6 @@
 name: Vault
+description: A tool for secrets management, encryption as a service, and privileged access management
+description_zh: 用于机密管理、加密即服务和特权访问管理的工具
 type: Project
 data:
   platforms:

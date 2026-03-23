@@ -1,4 +1,6 @@
 name: Rust
+description: A language empowering everyone to build reliable and efficient software.
+description_zh: 一门赋能每个人构建可靠且高效软件的编程语言。
 type: Project
 data:
   platforms:

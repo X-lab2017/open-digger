@@ -1,4 +1,6 @@
 name: Ant Chain
+description: AntChain Bridge enables trusted cross-chain communication between heterogeneous blockchains.
+description_zh: AntChain Bridge 提供异构链之间的可信跨链通信。
 type: Project
 data:
   platforms:

@@ -1,4 +1,6 @@
 name: Kurator
+description: Kurator is a distributed cloud-native platform for unified resource orchestration, scheduling, traffic management, and telemetry.
+description_zh: Kurator 是一个分布式云原生平台，提供统一资源编排、调度、流量管理与遥测。
 type: Project
 data:
   platforms:

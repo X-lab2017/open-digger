@@ -4,7 +4,7 @@ import { GraphqlClient } from "./getClient";
 
 // since query will recursively get comments and events for every issue
 // need to limit the number of issues to query at once to a small number to avoid rate limit error in a single query
-const batchCount = 30;
+const batchCount = 3;
 const logger = getLogger('UpdateGitlabRepoDataTask[GetIssues]');
 
 const getMoreNotes = async (client: GraphqlClient, projectPath: string, issueIid: string, after?: string): Promise<any[]> => {

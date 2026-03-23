@@ -1,4 +1,6 @@
 name: OpenSumi
+description: A framework to quickly build AI Native IDE products.
+description_zh: 一个用于快速构建AI原生IDE产品的框架。
 type: Project
 data:
   platforms:

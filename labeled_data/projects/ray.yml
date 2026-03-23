@@ -1,4 +1,6 @@
 name: Ray
+description: Ray is a unified framework for scaling AI and Python applications with distributed runtime and ML libraries.
+description_zh: Ray 是一个用于扩展 AI 和 Python 应用的统一框架，包含分布式运行时和机器学习库。
 type: Project
 data:
   platforms:

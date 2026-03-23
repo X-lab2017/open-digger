@@ -1,4 +1,6 @@
 name: DefiLlama
+description: Defillama Adapters provides tools to fetch blockchain data for TVL and volume tracking.
+description_zh: Defillama Adapters 提供用于获取区块链数据以跟踪 TVL 和交易量的工具。
 type: Project
 data:
   platforms:

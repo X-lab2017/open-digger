@@ -1,4 +1,6 @@
 name: Harness
+description: Harness Open Source is an end-to-end open source DevOps platform with code hosting, CI/CD pipelines, and developer environments.
+description_zh: Harness 开源是一个集代码托管、CI/CD 流水线和开发环境于一体的端到端开源 DevOps 平台。
 type: Project
 data:
   platforms:

@@ -1,4 +1,6 @@
 name: Kubernetes
+description: Production-Grade Container Scheduling and Management
+description_zh: 生产级容器调度与管理平台
 type: Project
 data:
   platforms:

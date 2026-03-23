@@ -1,4 +1,6 @@
 name: Kibana
+description: Kibana is a browser-based analytics and search dashboard for Elasticsearch.
+description_zh: Kibana 是面向 Elasticsearch 的浏览器分析和搜索仪表板。
 type: Project
 data:
   platforms:

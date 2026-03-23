@@ -1,4 +1,6 @@
 name: OpenXLA
+description: XLA is an open-source ML compiler for GPUs, CPUs, and ML accelerators.
+description_zh: XLA 是一个面向 GPU、CPU 和 ML 加速器的开源机器学习编译器。
 type: Project
 data:
   platforms:

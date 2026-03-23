@@ -1,4 +1,6 @@
 name: TT-Metal
+description: TT-NN operator library and TT-Metalium low-level kernel programming model for Tenstorrent hardware.
+description_zh: 面向 Tenstorrent 硬件的 TT-NN 算子库和 TT-Metalium 底层内核编程模型。
 type: Project
 data:
   platforms:

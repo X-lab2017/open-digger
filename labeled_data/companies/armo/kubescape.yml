@@ -1,4 +1,6 @@
 name: Kubescape
+description: Kubescape is an open-source Kubernetes security platform for IDEs, CI/CD pipelines, and clusters.
+description_zh: Kubescape 是一个用于 IDE、CI/CD 管道和集群的开源 Kubernetes 安全平台。
 type: Project
 data:
   platforms:

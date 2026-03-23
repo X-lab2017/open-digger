@@ -1,4 +1,6 @@
 name: Modular
+description: A unified platform for AI development and deployment, including MAX and Mojo.
+description_zh: 一个统一的AI开发与部署平台，包含MAX和Mojo。
 type: Project
 data:
   platforms:

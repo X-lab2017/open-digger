@@ -1,4 +1,6 @@
 name: Datashim
+description: A Kubernetes framework for easy access to S3 and NFS datasets.
+description_zh: 基于 Kubernetes 的框架，简化对 S3 和 NFS 数据集的访问。
 type: Project
 data:
   platforms:

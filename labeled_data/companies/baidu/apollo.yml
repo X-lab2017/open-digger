@@ -1,4 +1,6 @@
 name: Apollo Auto
+description: An open autonomous driving platform for development and deployment of self-driving vehicles.
+description_zh: 一个用于自动驾驶开发与部署的开源平台。
 type: Project
 data:
   platforms:

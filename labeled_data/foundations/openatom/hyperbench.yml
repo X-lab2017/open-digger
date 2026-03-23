@@ -1,4 +1,6 @@
 name: HyperBench
+description: hyperbench is a distributed stress testing tool for blockchain platforms.
+description_zh: hyperbench 是一个用于区块链平台的分布式压力测试工具。
 type: Project
 data:
   platforms:

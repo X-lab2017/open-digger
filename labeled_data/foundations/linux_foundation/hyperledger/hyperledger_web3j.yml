@@ -1,4 +1,6 @@
 name: Hyperledger Web3J
+description: Lightweight Java and Android library for Ethereum integration
+description_zh: 轻量级 Java 和 Android 以太坊集成库
 type: Project
 data:
   platforms:

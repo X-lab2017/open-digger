@@ -1,4 +1,6 @@
 name: GraphScope
+description: A web-based management tool for GraphScope with data modeling, importing, and querying features.
+description_zh: GraphScope 的基于网页的管理工具，支持图数据建模、导入和查询。
 type: Project
 data:
   platforms:

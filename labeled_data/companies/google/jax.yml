@@ -1,4 +1,6 @@
 name: JAX
+description: 'Composable transformations for Python+NumPy programs: differentiate, JIT compile, vectorize, and run on GPUs/TPUs.'
+description_zh: 用于 Python+NumPy 程序的可组合变换：自动微分、JIT 编译、向量化，并可在 GPU/TPU 上运行。
 type: Project
 data:
   platforms:

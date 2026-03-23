@@ -1,4 +1,6 @@
 name: Travel Mapping
+description: Repository for storing and updating user list files for TravelMapping.
+description_zh: 用于存储和更新TravelMapping用户列表文件的仓库。
 type: Project
 data:
   platforms:

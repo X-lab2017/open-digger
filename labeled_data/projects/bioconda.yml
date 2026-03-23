@@ -1,4 +1,6 @@
 name: Bioconda
+description: Conda recipes for the bioconda channel providing bioinformatics packages.
+description_zh: 为Bioconda频道提供生物信息学软件包的Conda配方。
 type: Project
 data:
   platforms:

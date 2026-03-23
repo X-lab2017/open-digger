@@ -1,4 +1,6 @@
 name: CrateDB
+description: CrateDB is a distributed, PostgreSQL-compatible SQL database built on Lucene for real-time data analysis at scale.
+description_zh: CrateDB 是基于 Lucene 构建的分布式、兼容 PostgreSQL 的 SQL 数据库，适用于实时大规模数据分析。
 type: Project
 data:
   platforms:

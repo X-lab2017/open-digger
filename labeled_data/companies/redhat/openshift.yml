@@ -1,4 +1,6 @@
 name: OpenShift
+description: The developer and operations friendly Kubernetes distro.
+description_zh: 开发者与运维友好的 Kubernetes 发行版。
 type: Project
 data:
   platforms:

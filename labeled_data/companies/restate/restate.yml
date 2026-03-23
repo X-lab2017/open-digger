@@ -1,4 +1,6 @@
 name: Restate
+description: Restate simplifies building resilient applications that handle infrastructure faults effortlessly.
+description_zh: Restate 简化构建可容忍基础设施故障的弹性应用程序。
 type: Project
 data:
   platforms:

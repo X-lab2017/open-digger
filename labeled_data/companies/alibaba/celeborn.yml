@@ -1,4 +1,6 @@
 name: Apache Celeborn
+description: Apache Celeborn is an elastic and high-performance service for shuffle and spilled data.
+description_zh: Apache Celeborn 是一个弹性且高性能的 shuffle 和溢出数据管理服务。
 type: Project
 data:
   platforms:

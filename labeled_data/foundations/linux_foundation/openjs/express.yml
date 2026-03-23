@@ -1,4 +1,6 @@
 name: Express
+description: Fast, unopinionated, minimalist web framework for Node.js.
+description_zh: 快速、无框架偏好、极简的 Node.js Web 框架。
 type: Project
 data:
   platforms:

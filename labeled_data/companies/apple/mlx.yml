@@ -1,4 +1,6 @@
 name: MLX
+description: 'MLX: An array framework for machine learning on Apple silicon.'
+description_zh: MLX：面向苹果芯片的机器学习数组框架。
 type: Project
 data:
   platforms:

@@ -1,4 +1,6 @@
 name: ThinkJS
+description: Use full ES2015+ features to develop Node.js applications, Support TypeScript.
+description_zh: 使用完整的 ES2015+ 特性开发 Node.js 应用，支持 TypeScript。
 type: Project
 data:
   platforms:

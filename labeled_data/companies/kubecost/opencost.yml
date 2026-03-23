@@ -1,4 +1,6 @@
 name: OpenCost
+description: OpenCost is an open source cost monitoring tool for Kubernetes and cloud environments.
+description_zh: OpenCost 是一个用于 Kubernetes 和云环境的成本监控开源工具。
 type: Project
 data:
   platforms:

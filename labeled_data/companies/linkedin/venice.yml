@@ -1,4 +1,6 @@
 name: Venice
+description: Venice is a derived data platform for planet-scale workloads.
+description_zh: Venice 是一个面向大规模工作负载的派生数据平台。
 type: Project
 data:
   platforms:

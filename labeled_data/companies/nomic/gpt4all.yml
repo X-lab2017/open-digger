@@ -1,4 +1,6 @@
 name: GPT4All
+description: 'GPT4All: Run open-source LLMs locally on any device without APIs or GPUs.'
+description_zh: GPT4All：无需 API 或 GPU，可在任何设备上本地运行开源大语言模型。
 type: Project
 data:
   platforms:

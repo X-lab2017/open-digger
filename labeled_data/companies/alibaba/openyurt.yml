@@ -1,4 +1,6 @@
 name: OpenYurt
+description: OpenYurt extends Kubernetes for edge computing, managed by CNCF.
+description_zh: OpenYurt 将原生 Kubernetes 扩展至边缘计算，由 CNCF 管理。
 type: Project
 data:
   platforms:

@@ -1,4 +1,6 @@
 name: Material-UI
+description: A Material Design UI implementation based on AngularJS.
+description_zh: 基于AngularJS实现的Material设计风格用户界面。
 type: Project
 data:
   platforms:

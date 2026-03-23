@@ -1,4 +1,6 @@
 name: DeepSeek-VL2
+description: 'DeepSeek-VL2: Mixture-of-Experts Vision-Language Models for advanced multimodal understanding.'
+description_zh: DeepSeek-VL2：用于先进多模态理解的混合专家视觉语言模型。
 type: Project
 data:
   platforms:

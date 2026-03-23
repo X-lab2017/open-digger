@@ -1,4 +1,6 @@
 name: Docarrary
+description: DocArray is a Python library for representing, sending, storing, and searching multimodal data.
+description_zh: DocArray 是一个用于表示、传输、存储和搜索多模态数据的 Python 库。
 type: Project
 data:
   platforms:

@@ -1,4 +1,6 @@
 name: Geaflow
+description: 'GeaFlow: A distributed streaming graph compute engine by Ant Group.'
+description_zh: GeaFlow：蚂蚁集团开发的分布式流图计算引擎。
 type: Project
 data:
   platforms:

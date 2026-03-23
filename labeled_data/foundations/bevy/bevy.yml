@@ -1,4 +1,6 @@
 name: Bevy
+description: A refreshingly simple data-driven game engine built in Rust
+description_zh: 一个用 Rust 编写的简洁数据驱动游戏引擎
 type: Project
 data:
   platforms:

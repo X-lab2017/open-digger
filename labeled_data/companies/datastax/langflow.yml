@@ -1,4 +1,6 @@
 name: Langflow
+description: Langflow is a powerful platform for building and deploying AI agents and workflows.
+description_zh: Langflow 是一个强大的平台，用于构建和部署人工智能代理和工作流。
 type: Project
 data:
   platforms:

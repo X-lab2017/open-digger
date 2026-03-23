@@ -1,4 +1,6 @@
 name: Macaca
+description: A multi-platform automation solution for testing and performance.
+description_zh: 多端自动化测试与性能解决方案。
 type: Project
 data:
   platforms:

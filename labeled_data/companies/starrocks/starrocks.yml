@@ -1,4 +1,6 @@
 name: StarRocks
+description: StarRocks is the world's fastest open query engine for sub-second analytics on and off data lakehouses.
+description_zh: StarRocks 是用于数据湖仓内外亚秒级分析的全球最快开源查询引擎。
 type: Project
 data:
   platforms:

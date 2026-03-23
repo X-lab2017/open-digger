@@ -1,4 +1,6 @@
 name: InfluxDB
+description: Scalable time-series database for real-time analytics and monitoring
+description_zh: 用于实时分析和监控的可扩展时序数据库
 type: Project
 data:
   platforms:

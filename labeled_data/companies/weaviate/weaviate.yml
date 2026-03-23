@@ -1,4 +1,6 @@
 name: Weaviate
+description: Weaviate is a cloud-native open-source vector database enabling semantic search and hybrid filtering.
+description_zh: Weaviate 是一个支持语义搜索和混合过滤的云原生开源向量数据库。
 type: Project
 data:
   platforms:

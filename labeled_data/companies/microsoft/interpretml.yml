@@ -1,4 +1,6 @@
 name: InterpretML
+description: InterpretML provides interpretable models and tools to explain blackbox machine learning systems.
+description_zh: InterpretML 提供可解释模型和工具，用于解释黑盒机器学习系统。
 type: Project
 data:
   platforms:

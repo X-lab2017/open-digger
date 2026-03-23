@@ -1,4 +1,6 @@
 name: Cilium
+description: Cilium is an eBPF-based networking, security, and observability solution for Kubernetes.
+description_zh: Cilium 是基于 eBPF 的 Kubernetes 网络、安全与可观测性解决方案。
 type: Project
 data:
   platforms:

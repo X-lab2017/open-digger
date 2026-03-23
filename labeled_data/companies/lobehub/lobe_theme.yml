@@ -1,4 +1,6 @@
 name: Lobe Theme
+description: A modern, customizable theme for Stable Diffusion WebUI with efficiency-boosting features.
+description_zh: 为 Stable Diffusion WebUI 设计的现代可定制主题，具备效率提升功能。
 type: Project
 data:
   platforms:

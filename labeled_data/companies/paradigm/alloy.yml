@@ -1,4 +1,6 @@
 name: Alloy
+description: Transports, Middleware, and Networks for the Alloy project
+description_zh: Alloy 项目的传输、中间件和网络支持
 type: Project
 data:
   platforms:

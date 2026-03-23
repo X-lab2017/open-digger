@@ -1,4 +1,6 @@
 name: Namada
+description: Testnet configurations and coordination for the Namada network.
+description_zh: Namada 网络的测试网配置与协调。
 type: Project
 data:
   platforms:

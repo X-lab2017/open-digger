@@ -1,4 +1,6 @@
 name: Apache Flink
+description: Apache Flink is a powerful open-source stream and batch processing framework.
+description_zh: Apache Flink 是一个功能强大的开源流处理与批处理框架。
 type: Project
 data:
   platforms:

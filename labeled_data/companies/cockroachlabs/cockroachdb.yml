@@ -1,4 +1,6 @@
 name: CockroachDB
+description: CockroachDB is a cloud-native, distributed SQL database built for scalability and resilience.
+description_zh: CockroachDB 是一款面向云原生、支持水平扩展和高可用性的分布式 SQL 数据库。
 type: Project
 data:
   platforms:

@@ -1,4 +1,6 @@
 name: AntV
+description: 'G6: A Graph Visualization Framework in TypeScript'
+description_zh: G6：一个基于 TypeScript 的图可视化框架
 type: Project
 data:
   platforms:

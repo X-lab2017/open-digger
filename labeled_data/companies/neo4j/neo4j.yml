@@ -1,4 +1,6 @@
 name: Neo4j
+description: Neo4j is the world's leading graph database, offering high performance and ACID transactions.
+description_zh: Neo4j 是全球领先的图数据库，提供高性能和 ACID 事务。
 type: Project
 data:
   platforms:

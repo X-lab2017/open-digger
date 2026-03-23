@@ -1,4 +1,6 @@
 name: Metal3
+description: Bare Metal Operator for provisioning and managing bare metal hosts in Kubernetes.
+description_zh: 用于在 Kubernetes 中配置和管理裸金属主机的 Bare Metal Operator。
 type: Project
 data:
   platforms:

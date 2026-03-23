@@ -1,4 +1,6 @@
 name: Dojo
+description: A collection of pre-built UI widgets for Dojo framework.
+description_zh: 为 Dojo 框架提供的预构建 UI 组件集合。
 type: Project
 data:
   platforms:

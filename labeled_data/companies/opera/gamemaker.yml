@@ -1,4 +1,6 @@
 name: GameMaker
+description: Public bug tracking and feature requests for GameMaker.
+description_zh: GameMaker 的公共漏洞追踪与功能请求。
 type: Project
 data:
   platforms:

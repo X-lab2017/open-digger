@@ -1,0 +1,5 @@
+name: DuckDB Foundation
+type: Foundation
+data:
+  labels:
+    - ':companies/duckdb/duckdb'

@@ -1,4 +1,6 @@
 name: TT-Lang
+description: A Python-based DSL for writing high-performance kernels on Tenstorrent hardware.
+description_zh: 基于Python的DSL，用于在Tenstorrent硬件上编写高性能内核。
 type: Project
 data:
   platforms:

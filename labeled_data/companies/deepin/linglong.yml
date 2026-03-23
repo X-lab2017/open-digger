@@ -1,4 +1,6 @@
 name: 玲珑
+description: Linyaps is a cross-distribution Linux package manager with sandboxed, secure, and efficient application management.
+description_zh: Linyaps 是一个跨发行版的 Linux 软件包管理器，提供沙箱化、安全且高效的应用管理。
 type: Project
 data:
   platforms:

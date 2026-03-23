@@ -1,4 +1,6 @@
 name: Home Assistant
+description: Open source home automation with local control and privacy first.
+description_zh: 注重本地控制与隐私的开源家庭自动化平台。
 type: Project
 data:
   platforms:

@@ -1,4 +1,6 @@
 name: Apache OpenDAL
+description: 'Apache OpenDAL: One Layer, All Storage.'
+description_zh: Apache OpenDAL：统一数据访问层，兼容所有存储。
 type: Project
 data:
   platforms:

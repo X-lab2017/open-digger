@@ -1,4 +1,6 @@
 name: JumpServer
+description: JumpServer is an open-source PAM platform for secure access to SSH, RDP, Kubernetes, and more.
+description_zh: JumpServer 是一个开源的特权访问管理平台，支持通过浏览器安全访问 SSH、RDP、Kubernetes 等资源。
 type: Project
 data:
   platforms:

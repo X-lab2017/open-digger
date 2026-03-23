@@ -1,4 +1,6 @@
 name: Spring Cloud Alibaba
+description: Spring Cloud Alibaba provides a one-stop solution for distributed application development with Alibaba middleware.
+description_zh: Spring Cloud Alibaba 提供基于阿里中间件的分布式应用一站式解决方案。
 type: Project
 data:
   platforms:

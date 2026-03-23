@@ -1,4 +1,6 @@
 name: Contour
+description: Contour is a Kubernetes ingress controller using Envoy proxy.
+description_zh: Contour 是一个使用 Envoy 代理的 Kubernetes 入口控制器。
 type: Project
 data:
   platforms:

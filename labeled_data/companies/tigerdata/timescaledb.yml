@@ -1,4 +1,6 @@
 name: TimescaleDB
+description: TimescaleDB is a PostgreSQL extension for high-performance real-time analytics on time-series data.
+description_zh: TimescaleDB 是一个用于实时高性能时序数据分析的 PostgreSQL 扩展。
 type: Project
 data:
   platforms:

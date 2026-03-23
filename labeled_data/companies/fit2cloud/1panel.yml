@@ -1,4 +1,6 @@
 name: 1Panel
+description: 1Panel is a modern web-based control panel for managing Linux servers with ease.
+description_zh: 1Panel 是一款现代化的 Linux 服务器管理控制面板。
 type: Project
 data:
   platforms:

@@ -1,4 +1,6 @@
 name: Neon
+description: Neon is a serverless, open-source Postgres alternative with compute-storage separation and autoscaling.
+description_zh: Neon 是一个开源的无服务器 PostgreSQL 替代方案，支持计算与存储分离和自动扩展。
 type: Project
 data:
   platforms:

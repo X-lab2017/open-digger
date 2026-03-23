@@ -1,4 +1,6 @@
 name: Dragonfly
+description: Dragonfly is a P2P-based file distribution and image acceleration system for cloud native architectures.
+description_zh: Dragonfly 是一个基于 P2P 的文件分发和镜像加速系统，适用于云原生架构。
 type: Project
 data:
   platforms:

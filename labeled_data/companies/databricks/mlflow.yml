@@ -1,4 +1,6 @@
 name: MLflow
+description: Open source platform for the machine learning lifecycle
+description_zh: 面向机器学习生命周期的开源平台
 type: Project
 data:
   platforms:

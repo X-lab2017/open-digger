@@ -1,4 +1,6 @@
 name: OpenMetadata
+description: OpenMetadata is a unified metadata platform for data discovery, governance, and collaboration.
+description_zh: OpenMetadata 是一个统一的元数据平台，支持数据发现、治理与协作。
 type: Project
 data:
   platforms:

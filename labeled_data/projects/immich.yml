@@ -1,4 +1,6 @@
 name: Immich
+description: High performance self-hosted photo and video management solution.
+description_zh: 高性能自托管的照片和视频管理解决方案。
 type: Project
 data:
   platforms:

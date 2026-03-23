@@ -1,4 +1,6 @@
 name: LLVM
+description: LLVM is a modular compiler and toolchain infrastructure for building optimized compilers and runtimes.
+description_zh: LLVM 是一个模块化的编译器和工具链基础设施，用于构建优化的编译器和运行时环境。
 type: Project
 data:
   platforms:

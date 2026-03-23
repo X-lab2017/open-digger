@@ -1,4 +1,6 @@
 name: Fastify
+description: Fast and low overhead web framework for Node.js
+description_zh: 适用于 Node.js 的高性能、低开销 Web 框架
 type: Project
 data:
   platforms:

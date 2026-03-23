@@ -1,4 +1,6 @@
 name: TencentOS Tiny
+description: TobudOS is an open-source IoT real-time operating system, originally based on Tencent's TencentOS Tiny.
+description_zh: TobudOS 是一个开源物联网实时操作系统，最初基于腾讯的 TencentOS Tiny。
 type: Project
 data:
   platforms:

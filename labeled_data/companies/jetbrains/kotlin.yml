@@ -1,4 +1,6 @@
 name: Kotlin
+description: The Kotlin Programming Language — a concise, multiplatform language by JetBrains.
+description_zh: Kotlin 编程语言——JetBrains 推出的简洁多平台语言。
 type: Project
 data:
   platforms:

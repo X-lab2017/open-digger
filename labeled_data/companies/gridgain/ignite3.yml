@@ -1,4 +1,6 @@
 name: Apache Ignite 3
+description: Apache Ignite 3 is a high-performance distributed database with ACID transactions and SQL support.
+description_zh: Apache Ignite 3 是一个支持 ACID 事务和分布式 SQL 的高性能数据库。
 type: Project
 data:
   platforms:

@@ -1,4 +1,6 @@
 name: Camunda
+description: Camunda is a process orchestration framework for scalable automation of business processes.
+description_zh: Camunda 是一个用于业务流程可扩展自动化的流程编排框架
 type: Project
 data:
   platforms:

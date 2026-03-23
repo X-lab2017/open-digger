@@ -1,4 +1,6 @@
 name: AI Fairness 360 Toolkit
+description: 'AIF360: A toolkit for detecting and mitigating bias in machine learning.'
+description_zh: AIF360：用于检测和缓解机器学习中偏见的工具包。
 type: Project
 data:
   platforms:

@@ -1,4 +1,6 @@
 name: QuestDB
+description: QuestDB is a high-performance, open-source time-series database.
+description_zh: QuestDB 是一个高性能、开源的时间序列数据库。
 type: Project
 data:
   platforms:

@@ -1,4 +1,6 @@
 name: TT-Forge
+description: An open-source MLIR-based compiler for running AI models on Tenstorrent hardware.
+description_zh: 基于MLIR的开源编译器，用于在Tenstorrent硬件上运行AI模型。
 type: Project
 data:
   platforms:

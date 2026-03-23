@@ -1,4 +1,6 @@
 name: cnpm
+description: Deprecated, use cnpmcore instead. Private npm registry for enterprise.
+description_zh: 已弃用，请使用 cnpmcore。企业级私有 npm 仓库。
 type: Project
 data:
   platforms:

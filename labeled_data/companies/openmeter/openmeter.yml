@@ -1,4 +1,6 @@
 name: OpenMeter
+description: OpenMeter provides real-time metering and usage-based billing for AI, APIs, and DevOps.
+description_zh: OpenMeter 提供 AI、API 和 DevOps 的实时计量与按使用计费。
 type: Project
 data:
   platforms:

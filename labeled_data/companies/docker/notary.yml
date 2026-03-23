@@ -1,4 +1,6 @@
 name: Notary
+description: A CLI tool to sign and verify artifacts in the OCI registry ecosystem.
+description_zh: 一个用于在OCI注册表生态系统中对工件进行签名和验证的命令行工具。
 type: Project
 data:
   platforms:

@@ -1,4 +1,6 @@
 name: Cortex
+description: A horizontally scalable, highly available, multi-tenant long-term Prometheus storage.
+description_zh: 水平扩展、高可用、多租户的长期 Prometheus 存储系统。
 type: Project
 data:
   platforms:

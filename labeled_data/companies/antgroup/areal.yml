@@ -1,4 +1,6 @@
 name: AReal
+description: Lightning-Fast RL for LLM Reasoning and Agents. Made Simple & Flexible.
+description_zh: 为大语言模型推理和智能体打造的快速、简单且灵活的强化学习系统。
 type: Project
 data:
   platforms:

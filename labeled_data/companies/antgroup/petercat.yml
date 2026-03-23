@@ -1,4 +1,6 @@
 name: Peter Cat
+description: A Q&A bot system for GitHub repositories with self-hosted deployment and SDK integration.
+description_zh: 为 GitHub 仓库提供智能问答机器人系统，支持自托管部署与 SDK 集成。
 type: Project
 data:
   platforms:

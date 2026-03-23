@@ -1,4 +1,6 @@
 name: Havenask
+description: Havenask is a high-performance distributed search engine developed by Alibaba Group.
+description_zh: Havenask 是阿里巴巴集团开发的高性能分布式搜索引擎。
 type: Project
 data:
   platforms:

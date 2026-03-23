@@ -1,4 +1,6 @@
 name: KEDA
+description: KEDA enables event-driven autoscaling for Kubernetes workloads.
+description_zh: KEDA 为 Kubernetes 工作负载提供事件驱动的自动扩展。
 type: Project
 data:
   platforms:

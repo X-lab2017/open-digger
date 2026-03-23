@@ -1,4 +1,6 @@
 name: JuiceFS
+description: JuiceFS is a high-performance distributed POSIX file system built on Redis and S3.
+description_zh: JuiceFS 是基于 Redis 和 S3 构建的高性能分布式 POSIX 文件系统。
 type: Project
 data:
   platforms:

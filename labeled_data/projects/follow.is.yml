@@ -1,4 +1,6 @@
 name: Follow
+description: Follow organizes content into one noise-free timeline for effortless browsing and sharing.
+description_zh: Follow 将内容整合到一个无干扰的时间线中，便于浏览和分享。
 type: Project
 data:
   platforms:

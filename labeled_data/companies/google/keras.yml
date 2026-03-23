@@ -1,4 +1,6 @@
 name: Keras
+description: Keras 3 is a multi-backend deep learning framework for humans, supporting JAX, TensorFlow, PyTorch, and OpenVINO.
+description_zh: Keras 3 是一个面向人类的多后端深度学习框架，支持 JAX、TensorFlow、PyTorch 和 OpenVINO。
 type: Project
 data:
   platforms:

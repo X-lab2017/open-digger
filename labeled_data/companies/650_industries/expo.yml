@@ -1,4 +1,6 @@
 name: Expo
+description: An open-source framework for building native apps with React on Android, iOS, and the web.
+description_zh: 一个开源框架，使用 React 构建可在安卓、iOS 和网页上运行的原生应用。
 type: Project
 data:
   platforms:

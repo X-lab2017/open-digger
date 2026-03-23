@@ -1,4 +1,6 @@
 name: Secure Device Onboard
+description: Secure Device Onboard (SDO) protocol implementation and tools.
+description_zh: 安全设备上板（SDO）协议的实现与工具。
 type: Project
 data:
   platforms:

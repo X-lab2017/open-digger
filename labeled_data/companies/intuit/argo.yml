@@ -1,4 +1,6 @@
 name: Argo
+description: Declarative Continuous Delivery for Kubernetes
+description_zh: 面向 Kubernetes 的声明式持续交付工具
 type: Project
 data:
   platforms:

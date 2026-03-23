@@ -1,4 +1,6 @@
 name: Apache Hive
+description: Apache Hive is a data warehouse system for querying and managing large datasets stored in Hadoop using SQL.
+description_zh: Apache Hive 是一个基于 Hadoop 的数据仓库系统，支持使用 SQL 查询和管理大规模数据集。
 type: Project
 data:
   platforms:

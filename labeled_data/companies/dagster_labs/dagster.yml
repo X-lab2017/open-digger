@@ -1,4 +1,6 @@
 name: Dagster
+description: Dagster is a cloud-native data pipeline orchestrator for developing, producing, and observing data assets.
+description_zh: Dagster 是一个用于数据资产开发、生产与观测的云原生数据流水线编排平台。
 type: Project
 data:
   platforms:

@@ -1,4 +1,6 @@
 name: Angular
+description: Angular - The modern web developer's platform for building mobile and desktop applications.
+description_zh: Angular - 现代网页开发平台，用于构建移动和桌面应用。
 type: Project
 data:
   platforms:

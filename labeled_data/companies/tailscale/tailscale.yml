@@ -1,4 +1,6 @@
 name: Tailscale
+description: 'Tailscale: Easy and secure private networks using WireGuard and 2FA.'
+description_zh: Tailscale：使用 WireGuard 和 2FA 构建安全私有网络。
 type: Project
 data:
   platforms:

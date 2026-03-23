@@ -1,4 +1,6 @@
 name: NG-ZORRO
+description: An enterprise-class Angular UI component library based on Ant Design.
+description_zh: 基于 Ant Design 的企业级 Angular UI 组件库。
 type: Project
 data:
   platforms:

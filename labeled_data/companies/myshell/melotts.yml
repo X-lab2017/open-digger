@@ -1,4 +1,6 @@
 name: MeloTTS
+description: High-quality multi-lingual text-to-speech library by MyShell.ai and MIT.
+description_zh: MyShell.ai与MIT联合开发的高质量多语言文本转语音库。
 type: Project
 data:
   platforms:

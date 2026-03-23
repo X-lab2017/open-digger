@@ -1,4 +1,6 @@
 name: Horovod
+description: Horovod is a distributed training framework for TensorFlow, Keras, PyTorch, and Apache MXNet.
+description_zh: Horovod 是一个支持 TensorFlow、Keras、PyTorch 和 MXNet 的分布式训练框架。
 type: Project
 data:
   platforms:

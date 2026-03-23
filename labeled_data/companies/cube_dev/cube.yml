@@ -1,4 +1,6 @@
 name: Cube
+description: Cube is a universal semantic layer platform for building data applications with AI, BI, and embedded analytics.
+description_zh: Cube 是一个用于构建数据应用的通用语义层平台，支持 AI、BI 和嵌入式分析。
 type: Project
 data:
   platforms:

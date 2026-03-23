@@ -1,4 +1,6 @@
 name: Debezium
+description: Low-latency change data capture platform for databases.
+description_zh: 面向数据库的低延迟变更数据捕获平台。
 type: Project
 data:
   platforms:

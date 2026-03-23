@@ -1,4 +1,6 @@
 name: Open Voice Interoperability
+description: Specifications and JSON schemas for the Open Floor Protocol to enable voice agent interoperability.
+description_zh: 开放楼层协议的规范和JSON架构，用于实现语音代理互操作性。
 type: Project
 data:
   platforms:

@@ -1,4 +1,6 @@
 name: NNStreamer
+description: NNTrainer is a lightweight framework for on-device neural network training and personalization.
+description_zh: NNTrainer 是一个用于设备端神经网络训练和个性化的轻量级框架。
 type: Project
 data:
   platforms:

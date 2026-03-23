@@ -1,4 +1,6 @@
 name: PikiwiDB
+description: Pikiwidb is a Redis-compatible, high-performance, persistent KV storage system.
+description_zh: Pikiwidb 是一个兼容 Redis 的高性能持久化 KV 存储系统。
 type: Project
 data:
   platforms:

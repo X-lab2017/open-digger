@@ -1,4 +1,6 @@
 name: OpenKona
+description: Tencent Kona is a production-ready OpenJDK distribution with LTS and China crypto support.
+description_zh: 腾讯Kona是支持LTS和中国加密算法的生产就绪型OpenJDK发行版。
 type: Project
 data:
   platforms:

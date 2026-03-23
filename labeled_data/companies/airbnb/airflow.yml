@@ -1,4 +1,6 @@
 name: Apache Airflow
+description: Apache Airflow - A platform to programmatically author, schedule, and monitor workflows
+description_zh: Apache Airflow - 用于以编程方式创建、调度和监控工作流的平台
 type: Project
 data:
   platforms:

@@ -1,4 +1,6 @@
 name: FLUX models
+description: Official inference repository for FLUX models with support for image generation and editing.
+description_zh: FLUX 模型的官方推理仓库，支持图像生成与编辑。
 type: Project
 data:
   platforms:

@@ -1,4 +1,6 @@
 name: Codeya IDE
+description: A lightweight cross-platform IDE supporting multiple languages.
+description_zh: 一款支持多语言的跨平台轻量级集成开发环境。
 type: Project
 data:
   platforms:

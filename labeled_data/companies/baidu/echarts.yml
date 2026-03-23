@@ -1,4 +1,6 @@
 name: Apache ECharts
+description: Apache ECharts is a powerful, interactive charting and data visualization library for browsers.
+description_zh: Apache ECharts 是一个功能强大、交互式的浏览器数据可视化图表库。
 type: Project
 data:
   platforms:

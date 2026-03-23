@@ -1,4 +1,6 @@
 name: AWS Distro for OpenTelemetry
+description: AWS Distro for OpenTelemetry Collector is an AWS-supported version of the upstream OpenTelemetry Collector.
+description_zh: AWS Distro for OpenTelemetry Collector 是由 AWS 支持的上游 OpenTelemetry Collector 版本。
 type: Project
 data:
   platforms:

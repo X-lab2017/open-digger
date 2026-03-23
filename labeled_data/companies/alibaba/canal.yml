@@ -1,4 +1,6 @@
 name: Canal
+description: Alibaba's MySQL binlog incremental subscription and consumption component.
+description_zh: 阿里巴巴 MySQL binlog 增量订阅与消费组件。
 type: Project
 data:
   platforms:

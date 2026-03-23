@@ -1,4 +1,6 @@
 name: Lark
+description: An SDK for Feishu (Lark) Open Platform to simplify API interactions in Node.js.
+description_zh: 面向飞书开放平台的 Node.js SDK，简化 API 交互。
 type: Project
 data:
   platforms:

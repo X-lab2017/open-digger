@@ -1,4 +1,6 @@
 name: Mars
+description: Mars is a tensor-based framework for large-scale data computation, scaling numpy, pandas, and scikit-learn.
+description_zh: Mars 是一个基于张量的大规模数据计算框架，可扩展 numpy、pandas 和 scikit-learn。
 type: Project
 data:
   platforms:

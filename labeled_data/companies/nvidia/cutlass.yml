@@ -1,4 +1,6 @@
 name: CUTLASS
+description: CUDA Templates and Python DSLs for High-Performance Linear Algebra
+description_zh: 用于高性能线性代数的 CUDA 模板和 Python DSL
 type: Project
 data:
   platforms:

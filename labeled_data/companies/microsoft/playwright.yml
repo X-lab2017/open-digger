@@ -1,4 +1,6 @@
 name: Playwright
+description: Playwright is a cross-browser automation framework for Web Testing and Automation.
+description_zh: Playwright 是一个用于跨浏览器网页测试和自动化的框架。
 type: Project
 data:
   platforms:

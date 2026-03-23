@@ -1,4 +1,6 @@
 name: Dask
+description: Dask is a flexible parallel computing library for analytics.
+description_zh: Dask 是一个灵活的并行计算分析库。
 type: Project
 data:
   platforms:

@@ -1,4 +1,6 @@
 name: SPIFFE
+description: SPIFFE defines standards for securely identifying and communicating between services.
+description_zh: SPIFFE 定义了用于安全识别和通信的服务标准。
 type: Project
 data:
   platforms:

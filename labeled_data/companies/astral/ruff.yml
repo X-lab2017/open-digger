@@ -1,4 +1,6 @@
 name: Ruff
+description: An extremely fast Python linter and code formatter, written in Rust.
+description_zh: 一个用 Rust 编写的超快速 Python 代码检查和格式化工具。
 type: Project
 data:
   platforms:

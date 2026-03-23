@@ -1,4 +1,6 @@
 name: FATE
+description: An industrial-grade federated learning framework for secure collaborative AI.
+description_zh: 面向工业级联邦学习的安全协作AI框架。
 type: Project
 data:
   platforms:

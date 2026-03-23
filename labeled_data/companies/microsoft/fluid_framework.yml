@@ -1,4 +1,6 @@
 name: Fluid Framework
+description: Library for building distributed, real-time collaborative web applications
+description_zh: 用于构建分布式实时协作网络应用的库
 type: Project
 data:
   platforms:

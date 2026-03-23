@@ -1,4 +1,6 @@
 name: Triton Inference
+description: Triton Inference Server is an optimized AI inference serving solution for cloud and edge.
+description_zh: Triton 推理服务器是面向云端和边缘的优化 AI 推理服务解决方案。
 type: Project
 data:
   platforms:

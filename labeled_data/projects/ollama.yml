@@ -1,4 +1,6 @@
 name: Ollama
+description: Run large language models like Llama, DeepSeek, and Gemma locally with Ollama.
+description_zh: 使用 Ollama 在本地运行 Llama、DeepSeek 和 Gemma 等大语言模型。
 type: Project
 data:
   platforms:

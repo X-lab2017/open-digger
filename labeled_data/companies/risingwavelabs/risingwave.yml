@@ -1,4 +1,6 @@
 name: RisingWave
+description: Advanced event stream processing platform for real-time data.
+description_zh: 实时数据的先进事件流处理平台。
 type: Project
 data:
   platforms:

@@ -1,4 +1,6 @@
 name: Formbricks
+description: Open source survey platform for gathering user insights with in-app, website, and email surveys.
+description_zh: 开源调查平台，支持应用内、网站和邮件调研，收集用户洞察。
 type: Project
 data:
   platforms:

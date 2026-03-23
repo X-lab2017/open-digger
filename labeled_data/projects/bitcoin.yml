@@ -1,4 +1,6 @@
 name: Bitcoin
+description: Bitcoin Core integration/staging tree for development and testing.
+description_zh: 比特币核心集成/测试树，用于开发和测试。
 type: Project
 data:
   platforms:

@@ -1,4 +1,6 @@
 name: ScyllaDB
+description: A high-performance NoSQL database compatible with Cassandra and DynamoDB, built on Seastar.
+description_zh: 基于 Seastar 构建的高性能NoSQL数据库，兼容 Cassandra 和 DynamoDB。
 type: Project
 data:
   platforms:

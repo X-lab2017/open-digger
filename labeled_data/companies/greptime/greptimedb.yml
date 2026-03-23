@@ -1,4 +1,6 @@
 name: GreptimeDB
+description: A cloud-native, unified time series database for metrics, logs, and events with SQL/PromQL support.
+description_zh: 一个支持指标、日志和事件的统一云原生时序数据库，支持SQL/PromQL。
 type: Project
 data:
   platforms:

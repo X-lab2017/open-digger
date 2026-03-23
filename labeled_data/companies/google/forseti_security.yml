@@ -1,4 +1,6 @@
 name: Forseti Security
+description: Forseti Security is an open-source toolset for improving Google Cloud Platform security.
+description_zh: Forseti Security 是一套用于提升 Google Cloud 平台安全性的开源工具集。
 type: Project
 data:
   platforms:

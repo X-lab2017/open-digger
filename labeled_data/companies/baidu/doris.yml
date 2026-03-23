@@ -1,4 +1,6 @@
 name: Apache Doris
+description: Apache Doris is an easy-to-use, high-performance real-time analytical database.
+description_zh: Apache Doris 是一个易用、高性能的实时分析型数据库。
 type: Project
 data:
   platforms:

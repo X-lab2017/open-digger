@@ -1,4 +1,6 @@
 name: HyperCRX
+description: A browser extension providing insights into GitHub, Gitee projects and developers.
+description_zh: 一款浏览器扩展，提供对 GitHub 和 Gitee 项目及开发者的洞察分析。
 type: Project
 data:
   platforms:

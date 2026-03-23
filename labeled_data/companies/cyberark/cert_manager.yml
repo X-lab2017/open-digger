@@ -1,4 +1,6 @@
 name: cert-manager
+description: Automate TLS certificate management in Kubernetes.
+description_zh: 在 Kubernetes 中自动管理 TLS 证书。
 type: Project
 data:
   platforms:

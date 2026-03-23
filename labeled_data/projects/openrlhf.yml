@@ -1,4 +1,6 @@
 name: OpenRLHF
+description: An easy-to-use, scalable, and high-performance RLHF framework with support for 70B+ models and advanced training techniques.
+description_zh: 一个易用、可扩展且高性能的RLHF框架，支持70B+模型及多种先进训练技术。
 type: Project
 data:
   platforms:

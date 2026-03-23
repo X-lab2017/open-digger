@@ -1,4 +1,6 @@
 name: Label Studio
+description: Label Studio is a multi-type data labeling tool with customizable interfaces and model integration.
+description_zh: Label Studio 是一个支持多种数据类型的标注工具，具备可定制界面和模型集成功能。
 type: Project
 data:
   platforms:

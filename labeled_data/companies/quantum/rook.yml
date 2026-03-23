@@ -1,4 +1,6 @@
 name: Rook
+description: Rook is a cloud-native storage orchestrator for Kubernetes, simplifying Ceph deployment and management.
+description_zh: Rook 是 Kubernetes 的云原生存储编排器，简化 Ceph 的部署与管理。
 type: Project
 data:
   platforms:

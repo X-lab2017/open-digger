@@ -1,4 +1,6 @@
 name: Zigbee2MQTT
+description: Zigbee to MQTT bridge, eliminating the need for proprietary Zigbee bridges.
+description_zh: Zigbee 至 MQTT 桥接器，无需依赖厂商专有桥接设备。
 type: Project
 data:
   platforms:

@@ -1,4 +1,6 @@
 name: FreeRTOS
+description: FreeRTOS kernel source and headers, used as a submodule in other repositories.
+description_zh: FreeRTOS 内核源码和头文件，作为子模块用于其他仓库。
 type: Project
 data:
   platforms:

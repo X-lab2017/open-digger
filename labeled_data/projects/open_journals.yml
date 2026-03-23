@@ -1,4 +1,6 @@
 name: Open Journals
+description: Open Journals is a collection of open source, open access journals.
+description_zh: Open Journals 是一个开源、开放获取的期刊集合。
 type: Project
 data:
   platforms:

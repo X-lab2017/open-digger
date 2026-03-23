@@ -1,4 +1,6 @@
 name: Lowcode Engine
+description: An enterprise-class low-code technology stack with scale-out design
+description_zh: 一套面向扩展设计的企业级低代码技术体系
 type: Project
 data:
   platforms:

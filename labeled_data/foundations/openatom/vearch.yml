@@ -1,4 +1,6 @@
 name: Vearch
+description: Vearch is a cloud-native distributed vector database for AI applications.
+description_zh: Vearch 是一个面向 AI 应用的云原生分布式向量数据库。
 type: Project
 data:
   platforms:

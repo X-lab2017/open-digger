@@ -1,5 +1,7 @@
 name: openEuler
 type: Project
+description: openEuler is a Linux distribution built by community cooperation, creating a platform for innovation, and building an operating system that supports multiple processor architectures, unified, and open.
+description_zh: openEuler 是通过社区合作，打造创新平台，构建支持多处理器架构、统一和开放的操作系统
 data:
   platforms:
     - name: Gitee
@@ -9,3 +11,14 @@ data:
           name: openeuler
         - id: 5460189
           name: src-openeuler
+    - name: AtomGit
+      type: Code Hosting
+      orgs:
+        - id: 9061542
+          name: openeuler
+        - id: 4094393
+          name: src-openeuler
+        - id: 8787429
+          name: openeuler-risc-v
+        - id: 9061358
+          name: openeuler-test

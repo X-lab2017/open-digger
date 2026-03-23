@@ -1,4 +1,6 @@
 name: Sui
+description: Sui is a high-throughput, low-latency smart contract platform using the Move language for asset-oriented programming.
+description_zh: Sui 是一个基于 Move 语言的高吞吐、低延迟智能合约平台，支持面向资产的编程模型。
 type: Project
 data:
   platforms:

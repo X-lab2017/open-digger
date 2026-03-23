@@ -1,4 +1,6 @@
 name: Apache Iceberg
+description: Apache Iceberg is a high-performance format for huge analytic tables with multi-engine support.
+description_zh: Apache Iceberg 是一个高性能的大规模分析表格式，支持多计算引擎协作。
 type: Project
 data:
   platforms:

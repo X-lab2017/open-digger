@@ -1,4 +1,6 @@
 name: Ant Design
+description: An enterprise-class UI design language and React UI library
+description_zh: 企业级 UI 设计语言与 React 组件库
 type: Project
 data:
   platforms:

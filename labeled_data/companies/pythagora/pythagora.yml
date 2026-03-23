@@ -1,4 +1,6 @@
 name: Pythagora
+description: GPT Pilot is the first real AI developer companion that builds full apps with you.
+description_zh: GPT Pilot 是首个能与你协作构建完整应用的真实 AI 开发者助手。
 type: Project
 data:
   platforms:

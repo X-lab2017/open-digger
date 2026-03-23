@@ -1,4 +1,6 @@
 name: Deckhouse
+description: Deckhouse is an open-source Kubernetes platform for fully automated cluster management.
+description_zh: Deckhouse 是一个开源的 Kubernetes 平台，实现集群的全自动管理。
 type: Project
 data:
   platforms:

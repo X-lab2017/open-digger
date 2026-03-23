@@ -1,4 +1,6 @@
 name: Vespa
+description: Vespa is a platform for search, inference, and organizing data at scale.
+description_zh: Vespa 是一个用于大规模搜索、推理和组织数据的平台。
 type: Project
 data:
   platforms:

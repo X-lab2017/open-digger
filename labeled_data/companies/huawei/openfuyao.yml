@@ -1,0 +1,11 @@
+name: openFuyao
+type: Project
+description: openFuyao is an open source community for software innovation on cluster computing.
+description_zh: openFuyao 是面向通算和智算集群软件技术创新的开源社区
+data:
+  platforms:
+    - name: AtomGit
+      type: Code Hosting
+      orgs:
+        - id: 348490
+          name: openFuyao

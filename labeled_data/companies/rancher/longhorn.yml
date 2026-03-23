@@ -1,4 +1,6 @@
 name: Longhorn
+description: Cloud-Native distributed storage built on and for Kubernetes
+description_zh: 基于Kubernetes构建的云原生分布式存储
 type: Project
 data:
   platforms:

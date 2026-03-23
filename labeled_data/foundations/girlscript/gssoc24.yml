@@ -1,4 +1,6 @@
 name: GirlScript Summer of Code 24
+description: All-in-one documentation hub for the Postman Challenge.
+description_zh: Postman挑战赛的一站式文档中心。
 type: Project
 data:
   platforms:

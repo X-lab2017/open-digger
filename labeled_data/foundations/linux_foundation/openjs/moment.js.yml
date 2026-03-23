@@ -1,4 +1,6 @@
 name: Moment.js
+description: A JavaScript date library for parsing, validating, manipulating, and formatting dates.
+description_zh: 一个用于解析、验证、操作和格式化日期的 JavaScript 日期库。
 type: Project
 data:
   platforms:

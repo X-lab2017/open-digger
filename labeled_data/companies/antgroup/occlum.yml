@@ -1,4 +1,6 @@
 name: Occlum
+description: Occlum is a memory-safe, multi-process library OS for Intel SGX.
+description_zh: Occlum 是一个面向 Intel SGX 的内存安全多进程库操作系统。
 type: Project
 data:
   platforms:

@@ -1,4 +1,6 @@
 name: Unstract
+description: No-code LLM platform to structure unstructured documents with APIs and ETL pipelines.
+description_zh: 无需编码的LLM平台，通过API和ETL流水线结构化非结构化文档。
 type: Project
 data:
   platforms:

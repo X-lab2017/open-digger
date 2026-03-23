@@ -1,4 +1,6 @@
 name: Next.js
+description: Next.js - The React Framework for production
+description_zh: Next.js - 适用于生产的 React 框架
 type: Project
 data:
   platforms:

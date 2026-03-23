@@ -1,4 +1,6 @@
 name: wevm
+description: TypeScript Interface for Ethereum
+description_zh: 以太坊的 TypeScript 接口
 type: Project
 data:
   platforms:

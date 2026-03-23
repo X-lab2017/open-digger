@@ -1,4 +1,6 @@
 name: Apache Arrow
+description: Apache Arrow is a universal columnar format for fast in-memory data processing and analytics.
+description_zh: Apache Arrow 是一种通用列式格式，用于快速内存数据分析和处理。
 type: Project
 data:
   platforms:

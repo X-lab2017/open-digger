@@ -1,4 +1,6 @@
 name: NextCloud
+description: Nextcloud server, a safe home for all your data
+description_zh: Nextcloud 服务器，您所有数据的安全之家
 type: Project
 data:
   platforms:

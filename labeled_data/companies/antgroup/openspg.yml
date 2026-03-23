@@ -1,4 +1,6 @@
 name: OpenSPG
+description: KAG is a knowledge-augmented generation framework for logical reasoning and factual Q&A in professional domains.
+description_zh: KAG 是一个面向专业领域的知识增强生成框架，支持逻辑推理和事实问答。
 type: Project
 data:
   platforms:

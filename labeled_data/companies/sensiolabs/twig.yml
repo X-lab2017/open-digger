@@ -1,4 +1,6 @@
 name: Twig
+description: Twig is a flexible, fast, and secure template language for PHP.
+description_zh: Twig 是一个灵活、快速且安全的 PHP 模板语言。
 type: Project
 data:
   platforms:

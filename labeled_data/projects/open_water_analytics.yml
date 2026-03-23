@@ -1,4 +1,6 @@
 name: Open Water Analytics
+description: EPANET is a toolkit for hydraulic and water quality analysis of water distribution systems.
+description_zh: EPANET 是用于输水管网水力及水质分析的工具包。
 type: Project
 data:
   platforms:

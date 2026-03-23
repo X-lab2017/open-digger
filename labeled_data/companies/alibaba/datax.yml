@@ -1,4 +1,6 @@
 name: DataX
+description: DataX is the open-source version of Alibaba Cloud DataWorks Data Integration, supporting efficient data synchronization between multiple heterogeneous data sources.
+description_zh: DataX 是阿里云 DataWorks 数据集成的开源版本，支持多种异构数据源之间的高效数据同步。
 type: Project
 data:
   platforms:

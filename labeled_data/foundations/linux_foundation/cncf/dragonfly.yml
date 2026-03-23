@@ -1,4 +1,6 @@
 name: Dragonfly
+description: Dragonfly is a P2P-based file distribution and image acceleration system hosted by CNCF.
+description_zh: Dragonfly 是由 CNCF 主持的基于 P2P 的文件分发和镜像加速系统。
 type: Project
 data:
   platforms:

@@ -1,4 +1,6 @@
 name: Apache Answer
+description: A Q&A platform for teams of any size, built by Apache.
+description_zh: 适用于任何规模团队的问答平台，由 Apache 开发。
 type: Project
 data:
   platforms:

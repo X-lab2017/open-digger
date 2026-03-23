@@ -1,4 +1,6 @@
 name: Emissary-Ingress
+description: Kubernetes-native API gateway built on Envoy Proxy for microservices.
+description_zh: 基于Envoy Proxy的Kubernetes原生API网关，适用于微服务。
 type: Project
 data:
   platforms:

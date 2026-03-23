@@ -1,4 +1,6 @@
 name: DragonflyDB
+description: A modern, high-performance in-memory data store compatible with Redis and Memcached APIs.
+description_zh: 现代高性能内存数据存储，兼容 Redis 和 Memcached 接口。
 type: Project
 data:
   platforms:

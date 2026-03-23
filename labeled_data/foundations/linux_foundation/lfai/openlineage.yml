@@ -1,4 +1,6 @@
 name: OpenLineage
+description: An open standard for collecting metadata and data lineage across systems.
+description_zh: 跨系统收集元数据和数据血缘的开放标准。
 type: Project
 data:
   platforms:

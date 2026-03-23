@@ -1,4 +1,6 @@
 name: Apache Pinot
+description: Apache Pinot is a real-time distributed OLAP datastore for low-latency analytics.
+description_zh: Apache Pinot 是一个用于实时低延迟分析的分布式 OLAP 数据存储。
 type: Project
 data:
   platforms:

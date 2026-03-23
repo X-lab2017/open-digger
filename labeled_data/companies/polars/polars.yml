@@ -1,4 +1,6 @@
 name: Polars
+description: A multithreaded, vectorized DataFrame library in Rust for fast data processing.
+description_zh: 基于Rust的多线程、向量化DataFrame库，用于快速数据处理。
 type: Project
 data:
   platforms:

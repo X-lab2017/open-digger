@@ -1,4 +1,6 @@
 name: Continue
+description: Continue is the leading open-source AI code assistant for VS Code and JetBrains.
+description_zh: Continue 是适用于 VS Code 和 JetBrains 的领先开源 AI 代码助手。
 type: Project
 data:
   platforms:

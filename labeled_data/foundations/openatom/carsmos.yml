@@ -1,4 +1,6 @@
 name: Carsmos
+description: CARSMOS.AI is a website project built with Jekyll, supporting both English and Chinese content deployment.
+description_zh: CARSMOS.AI 是一个使用 Jekyll 构建的网站项目，支持英文和中文内容部署。
 type: Project
 data:
   platforms:

@@ -1,4 +1,6 @@
 name: OpenVR SDK
+description: OpenVR SDK provides an API for VR hardware access across multiple vendors.
+description_zh: OpenVR SDK 提供了一个跨多厂商的 VR 硬件访问 API。
 type: Project
 data:
   platforms:

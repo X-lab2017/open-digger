@@ -1,4 +1,6 @@
 name: Adlik
+description: 'Adlik: Toolkit for accelerating deep learning inference on cloud and edge.'
+description_zh: Adlik：用于加速云与边缘环境深度学习推理的工具包。
 type: Project
 data:
   platforms:

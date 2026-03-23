@@ -1,4 +1,6 @@
 name: DataHub
+description: 'DataHub: The metadata platform for your data and AI stack.'
+description_zh: DataHub：您的数据与AI堆栈的元数据平台。
 type: Project
 data:
   platforms:

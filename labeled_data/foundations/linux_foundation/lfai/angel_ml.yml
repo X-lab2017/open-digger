@@ -1,4 +1,6 @@
 name: Angel-ML
+description: A high-performance distributed machine learning platform based on Parameter Server.
+description_zh: 基于参数服务器的高性能分布式机器学习平台。
 type: Project
 data:
   platforms:

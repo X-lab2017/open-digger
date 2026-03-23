@@ -1,4 +1,6 @@
 name: Apache Fineract
+description: Apache Fineract is an open-source core banking platform for financial services innovation.
+description_zh: Apache Fineract 是一个开源核心银行平台，助力金融创新。
 type: Project
 data:
   platforms:

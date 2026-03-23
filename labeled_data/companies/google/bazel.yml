@@ -1,4 +1,6 @@
 name: Bazel
+description: A fast, scalable, multi-language build system.
+description_zh: 一个快速、可扩展的多语言构建系统。
 type: Project
 data:
   platforms:

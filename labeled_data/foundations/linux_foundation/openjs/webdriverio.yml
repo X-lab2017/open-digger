@@ -1,4 +1,6 @@
 name: WebdriverIO
+description: Next-gen browser and mobile automation test framework for Node.js
+description_zh: 基于 Node.js 的新一代浏览器和移动端自动化测试框架
 type: Project
 data:
   platforms:

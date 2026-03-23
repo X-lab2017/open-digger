@@ -1,4 +1,6 @@
 name: Lima
+description: Lima launches Linux VMs for containers and more on macOS and other platforms.
+description_zh: Lima 在 macOS 及其他平台上启动 Linux 虚拟机，支持容器及其他应用。
 type: Project
 data:
   platforms:

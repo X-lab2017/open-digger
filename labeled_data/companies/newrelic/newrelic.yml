@@ -1,4 +1,6 @@
 name: New Relic
+description: New Relic is a comprehensive, cloud-based observability platform.
+description_zh: New Relic 是一个全面的、基于云的观测性平台。
 type: Project
 data:
   platforms:

@@ -1,4 +1,6 @@
 name: CloudWeGo
+description: High-performance and extensible Go RPC framework for microservices.
+description_zh: 高性能且可扩展的Go语言RPC框架，适用于微服务开发。
 type: Project
 data:
   platforms:

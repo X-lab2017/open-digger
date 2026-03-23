@@ -1,4 +1,6 @@
 name: KusionStack
+description: A declarative intent-driven platform orchestrator for Internal Developer Platform (IDP).
+description_zh: 面向内部开发者平台的声明式意图驱动平台编排器。
 type: Project
 data:
   platforms:

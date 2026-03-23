@@ -1,4 +1,6 @@
 name: Mooncake
+description: Mooncake is a KVCache-centric disaggregated architecture for efficient LLM serving.
+description_zh: Mooncake 是一种面向高效大模型服务的键值缓存中心化解耦架构。
 type: Project
 data:
   platforms:

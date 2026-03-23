@@ -1,4 +1,6 @@
 name: MidwayJS
+description: A Node.js Serverless Framework for building modern cloud-native applications with React and Vue integration.
+description_zh: 一个面向现代云原生应用的 Node.js 无服务器框架，支持与 React 和 Vue 集成。
 type: Project
 data:
   platforms:

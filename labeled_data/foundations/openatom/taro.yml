@@ -1,4 +1,6 @@
 name: Taro
+description: An open cross-platform and cross-framework solution for building apps with React/Vue.
+description_zh: 开放式跨端跨框架解决方案，支持使用 React/Vue 开发多端应用。
 type: Project
 data:
   platforms:

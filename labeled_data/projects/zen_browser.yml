@@ -1,4 +1,6 @@
 name: Zen Browser
+description: A privacy-focused browser offering a calm and tracker-free browsing experience.
+description_zh: 注重隐私的浏览器，提供无追踪的宁静上网体验。
 type: Project
 data:
   platforms:

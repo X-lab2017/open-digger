@@ -9,6 +9,7 @@ data:
     - ':companies/databend/databend'
     - ':companies/databricks/neon'
     - ':companies/duckdb/duckdb'
+    - ':companies/huawei/opengauss'
     - ':companies/imply/druid'
     - ':companies/linkedin/pinot'
     - ':companies/mariadb/mariadb'

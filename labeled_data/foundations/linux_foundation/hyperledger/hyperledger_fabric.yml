@@ -1,4 +1,6 @@
 name: Hyperledger Fabric
+description: Hyperledger Fabric is a modular, enterprise-grade permissioned blockchain framework.
+description_zh: Hyperledger Fabric 是一个模块化的企业级许可区块链框架。
 type: Project
 data:
   platforms:

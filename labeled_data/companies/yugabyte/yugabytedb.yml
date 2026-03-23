@@ -1,4 +1,6 @@
 name: YugabyteDB
+description: YugabyteDB is a cloud-native distributed SQL database compatible with PostgreSQL, designed for scalable and mission-critical applications.
+description_zh: YugabyteDB 是一个兼容 PostgreSQL 的云原生分布式 SQL 数据库，专为可扩展的关键业务应用设计。
 type: Project
 data:
   platforms:

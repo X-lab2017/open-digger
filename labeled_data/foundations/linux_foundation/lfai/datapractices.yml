@@ -1,4 +1,6 @@
 name: DataPractices
+description: A site for data practices values and courseware.
+description_zh: 一个关于数据实践理念和课程资料的网站。
 type: Project
 data:
   platforms:

@@ -1,4 +1,6 @@
 name: YDB
+description: YDB is a distributed SQL database offering high availability, scalability, and ACID transactions.
+description_zh: YDB 是一个提供高可用性、可扩展性和 ACID 事务的分布式 SQL 数据库。
 type: Project
 data:
   platforms:

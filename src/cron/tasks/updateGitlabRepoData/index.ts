@@ -12,8 +12,8 @@ import { getGraphqlClient } from './getClient';
  */
 let taskCount = 0;
 const task: Task = {
-  cron: '*/20 * * * *',
-  singleInstance: false,
+  cron: '*/5 * * * *',
+  singleInstance: true,
   callback: async () => {
     const logger = getLogger('UpdateGitlabRepoDataTask');
 
@@ -68,27 +68,54 @@ LIMIT ${repoUpdateBatchSize};`);
         const projectPath = repo.name; // GitLab project path is already in format: namespace/project
 
         let issueEvents: InsertRecord[] = [], mrEvents: InsertRecord[] = [];
-        let issueFinished = true, mrFinished = true;
+        let issueFinished = false, mrFinished = false;
         let issueEndCursor = repo.issueEndCursor, mrEndCursor = repo.mrEndCursor;
+
+        const FETCH_TIMEOUT_MS = 4 * 60 * 1000; // 5 minutes
+
+        const withTimeout = <T>(promise: Promise<T>, timeoutMs: number, label: string): Promise<T> => {
+          return Promise.race([
+            promise,
+            new Promise<T>((_, reject) =>
+              setTimeout(() => reject(new Error(`${label} timed out after ${timeoutMs / 1000}s`)), timeoutMs)
+            ),
+          ]);
+        };
 
         await Promise.all([
           (async () => {
             if (repo.shouldUpdateIssue) {
-              const issueResult = await getIssues(gitlabClient, projectPath, repo.id, repo.namespaceId, repo.namespaceName, repo.issueEndCursor);
-              issueEvents = issueResult.events;
-              issueFinished = issueResult.finished;
-              if (issueResult.endCursor) {
-                issueEndCursor = issueResult.endCursor;
+              try {
+                const issueResult = await withTimeout(
+                  getIssues(gitlabClient, projectPath, repo.id, repo.namespaceId, repo.namespaceName, repo.issueEndCursor),
+                  FETCH_TIMEOUT_MS,
+                  'getIssues'
+                );
+                issueEvents = issueResult.events;
+                issueFinished = issueResult.finished;
+                if (issueResult.endCursor) {
+                  issueEndCursor = issueResult.endCursor;
+                }
+              } catch (e: any) {
+                logger.warn(`${repo.name} getIssues timeout or error: ${e.message}`);
               }
             }
           })(),
           (async () => {
             if (repo.shouldUpdateMr) {
-              const mrResult = await getMergeRequests(gitlabClient, projectPath, repo.id, repo.namespaceId, repo.namespaceName, repo.mrEndCursor);
-              mrEvents = mrResult.events;
-              mrFinished = mrResult.finished;
-              if (mrResult.endCursor) {
-                mrEndCursor = mrResult.endCursor;
+              try {
+                const mrResult = await withTimeout(
+                  getMergeRequests(gitlabClient, projectPath, repo.id, repo.namespaceId, repo.namespaceName, repo.mrEndCursor),
+                  FETCH_TIMEOUT_MS,
+                  'getMergeRequests'
+                );
+                mrEvents = mrResult.events;
+                mrFinished = mrResult.finished;
+                if (mrResult.endCursor) {
+                  mrEndCursor = mrResult.endCursor;
+                }
+              } catch (e: any) {
+                logger.warn(`${repo.name} getMergeRequests timeout or error: ${e.message}`);
               }
             }
           })(),

@@ -1,4 +1,6 @@
 name: Mastodon
+description: A free, open-source social network server based on ActivityPub.
+description_zh: 基于ActivityPub协议的免费开源社交网络服务器。
 type: Project
 data:
   platforms:

@@ -1,4 +1,6 @@
 name: Architect
+description: A powerful tool for building functional web apps on AWS serverless infrastructure.
+description_zh: 一个用于在AWS无服务器架构上构建功能型Web应用的强大工具。
 type: Project
 data:
   platforms:

@@ -1,4 +1,6 @@
 name: Apache APISIX
+description: Cloud-Native API Gateway and AI Gateway with dynamic traffic management and rich plugin system.
+description_zh: 云原生API网关和AI网关，具备动态流量管理与丰富插件系统。
 type: Project
 data:
   platforms:
