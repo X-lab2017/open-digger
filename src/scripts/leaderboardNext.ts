@@ -15,11 +15,11 @@ import { existsSync, mkdirSync, writeFileSync } from "fs";
 
   const scopeLabels = [
     undefined,
+    ':technology/agentic_ai',
     ':technology/database',
     ':technology/big_data',
     ':technology/cloud_native',
     ':technology/development_tools',
-    ':technology/large_model_development',
     ':technology/operating_system',
     ':technology/web_frameworks',
     ':divisions/CN'
@@ -42,7 +42,7 @@ import { existsSync, mkdirSync, writeFileSync } from "fs";
     updatedAt: new Date().getTime(),
     scopes: scopeLabels.map(scopeLabel => ({
       name: scopeLabel ? (labelData.get(scopeLabel)?.name ?? '') : 'Global',
-      name_zh: scopeLabel ? (labelData.get(scopeLabel)?.name_zh + (scopeLabel.startsWith(':technology/') ? '技术领域' : '')) : '全域',
+      name_zh: scopeLabel ? (labelData.get(scopeLabel)?.name_zh ?? labelData.get(scopeLabel)?.name) : '全域',
     })),
     groupTypes: groupTypes.map(([_, groupTypeName]) => ({
       name: groupTypeName.name,
@@ -119,7 +119,9 @@ import { existsSync, mkdirSync, writeFileSync } from "fs";
             platform: row.platform,
             avatar: groupType ? `https://oss.open-digger.cn/logos/${row.id.split(':')[1]}.png` :
               row.platform === 'GitHub' ? `https://github.com/${row.name.split('/')[0]}.png` :
-                row.platform === 'Gitee' ? `https://gitee.com/${row.name.split('/')[0]}.png` : '',
+                row.platform === 'Gitee' ? `https://gitee.com/${row.name.split('/')[0]}.png` :
+                  row.platform === 'GitLab' ? `https://gitlab.com/uploads/-/system/user/avatar/${row.id}/avatar.png` :
+                    row.platform === 'AtomGit' ? `https://atomgit.com/${row.name.split('/')[0]}.png` : '',
             name: row.name,
             name_zh: !labelData.has(row.id) || labelData.get(row.id)?.name_zh === '' ? row.name : labelData.get(row.id)!.name_zh,
             description: !labelData.has(row.id) || labelData.get(row.id)?.description === '' ? row.name : labelData.get(row.id)!.description,

@@ -29,8 +29,8 @@ export async function queryStream<T = any>(q: string, onRow: (row: T) => void, o
       stream.on('error', (err: any) => console.error(`Query for ${q} error: ${err}`));
     } catch (e) {
       console.error(`Caught error ${e} while query: ${q}`);
+      resolve();
     }
-
   });
 }
 

@@ -42,7 +42,7 @@ const importNormalizedCommunityOpenrank = async () => {
     ENGINE = MergeTree()
     ORDER BY (repo_id, platform)`);
   const maxYyyymm = await query(`SELECT MAX(yyyymm) FROM normalized_community_openrank`);
-  let maxYyyymmValue: number = 201012;
+  let maxYyyymmValue: number = 201412;
   if (maxYyyymm.length > 0 && maxYyyymm[0] !== null && maxYyyymm[0][0] !== null && maxYyyymm[0][0] !== 0) {
     maxYyyymmValue = +maxYyyymm[0][0];
   }

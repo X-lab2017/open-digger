@@ -5,6 +5,7 @@ data:
   labels:
     - ':companies/greptime/greptimedb'
     - ':companies/influxdata/influxdb'
+    - ':companies/inspur/kwdb'
     - ':companies/parseable/parseable'
     - ':companies/questdb/questdb'
     - ':companies/tigerdata/timescaledb'

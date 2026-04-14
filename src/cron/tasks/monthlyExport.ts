@@ -9,7 +9,7 @@ import {
   chaossNewContributors, chaossTechnicalFork
 } from '../../metrics/chaoss';
 import { contributorEmailSuffixes, repoIssueComments, repoParticipants, repoStars } from '../../metrics/metrics';
-import { getRepoActivity, getRepoOpenrank, getUserActivity, getUserOpenrank, getAttention } from '../../metrics/indices';
+import { getRepoActivity, getRepoOpenrank, getUserActivity, getUserOpenrank, getAttention, getRepoCommunityOpenrank } from '../../metrics/indices';
 import { getLogger } from '../../utils';
 import getConfig from '../../config';
 import { EOL } from 'os';
@@ -187,6 +187,7 @@ const task: Task = {
           // [CHAOSS metric] repo technical fork
           await processMetric(chaossTechnicalFork, option, getField('count', { targetKey: 'technical_fork' }));
           // [X-lab metric] repo stars
+          await processMetric(repoStars, option, getField('count', { targetKey: 'stars' }));
           // [CHAOSS metric] repo issues new
           await processMetric(chaossIssuesNew, option, getField('count', { targetKey: 'issues_new' }));
           // [CHAOSS metric] repo issues closed
@@ -270,6 +271,7 @@ const task: Task = {
           await processMetric(chaossChangeRequestReviews, option, getField('count', { targetKey: 'change_requests_reviews' }));
           await processMetric(chaossContributors, option, [getField('count', { targetKey: 'contributors' }), getField('detail', { targetKey: 'contributors_detail', ...arrayFieldOption })]);
           await processMetric(repoStars, option, getField('count', { targetKey: 'stars' }));
+          await processMetric(getRepoCommunityOpenrank, { ...option, options: { limit: 100 } }, getField('details', { targetKey: 'community_openrank_details', ...arrayFieldOption }));
         }
         logger.info('Export label metrics done.');
       };

@@ -1711,6 +1711,8 @@ data:
           name: NielsRogge
         - id: 22970955
           name: jinqi7
+        - id: 49986348
+          name: volcano-sh-bot
     - name: Gitee
       type: Code Hosting
       users:
@@ -1764,3 +1766,36 @@ data:
           name: osc-bot
         - id: 16228528
           name: wenyuzifangtest001
+    - name: AtomGit
+      type: Code Hosting
+      users:
+        - id: 21529
+          name: openharmony_ci
+        - id: 490015
+          name: openharmony_dcp
+        - id: 5689722
+          name: arkui-feature-manager
+        - id: 6764087
+          name: openharmony-docs-bot
+        - id: 2596302
+          name: cann-robot
+        - id: 5355243
+          name: ascend-robot
+        - id: 5580022
+          name: pta-robot
+        - id: 746087
+          name: AtlasAccount
+        - id: 3762624
+          name: openeuler-ci-bot
+        - id: 7782725
+          name: openeuler-infra-bot
+        - id: 9216614
+          name: devstation-robot
+        - id: 6860522
+          name: MindSpore-Bot
+        - id: 498909
+          name: CangjiePL
+        - id: 3096086
+          name: opengauss_bot
+        - id: 4568139
+          name: openFuyao-bot

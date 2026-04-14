@@ -1,4 +1,6 @@
 name: KWDB
+description: KWDB is a distributed multi-model database for AIoT scenarios.
+description_zh: KWDB 是一款面向 AIoT 场景的分布式多模数据库
 type: Project
 data:
   platforms:
@@ -7,3 +9,13 @@ data:
       orgs:
         - id: 13578710
           name: kwdb
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 187484914
+          name: kwdb
+    - name: AtomGit
+      type: Code Hosting
+      orgs:
+        - id: 8508621
+          name: KWDB
