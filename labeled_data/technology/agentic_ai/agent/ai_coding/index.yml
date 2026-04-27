@@ -4,6 +4,9 @@ data:
   labels:
     - :companies/anthropic/claude_code
     - :companies/anomaly/opencode
+    - :companies/coder/coder
+    - :projects/zeroclaw
+    - :projects/kilocode
   platforms:
     - name: GitHub
       type: Code Hosting
@@ -36,3 +39,7 @@ data:
           name: Aider-AI/aider
         - id: 614764248
           name: TabbyML/tabby
+        - id: 1031912724
+          name: farion1231/cc-switch
+        - id: 1002125012
+          name: BloopAI/vibe-kanban

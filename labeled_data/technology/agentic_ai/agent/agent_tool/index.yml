@@ -1,7 +1,9 @@
 name: Agent Tool
 type: Tech-2
 data:
-  labels: []
+  labels:
+    - :companies/daytona/daytona
+    - :projects/cli_proxy_api
   platforms:
     - name: GitHub
       type: Code Hosting
@@ -30,3 +32,5 @@ data:
           name: ComposioHQ/composio
         - id: 631254164
           name: songquanpeng/one-api
+        - id: 717197250
+          name: QuantumNous/new-api
