@@ -3,71 +3,71 @@ name_zh: 蚂蚁集团
 type: Company
 data:
   labels:
-    - ':companies/alibaba/dragonfly'
-    - ':companies/alibaba/opensumi'
-    - ':companies/alibaba/seata'
-    - agent_universe
-    - aigw
-    - ant_mini_program
-    - antchain
-    - antd
-    - antv
-    - aq-medai
-    - areal
-    - asterinas
-    - ceresdb
-    - cnpm
-    - codefuse
-    - couler
-    - dtvm
-    - dva
-    - egg
-    - eosphoros
-    - fury
-    - galacean
-    - geaflow
-    - horaedb
-    - hyper_enclave
-    - inclusionai
-    - intelligent_machine_learning
-    - jeandle
-    - karas
-    - kata_container
-    - kcl_lang
-    - koupleless
-    - kusion_stack
-    - macaca
-    - magic_quill
-    - modelpack
-    - mosn
-    - mpaas
-    - neovateai
-    - ng_zorro
-    - occlum
-    - oceanbase
-    - openasce
-    - openderisk
-    - openspg
-    - petercat
-    - react_component
-    - secretflow
-    - sofastack
-    - sqlflow
-    - tongsuo
-    - trass_stack
-    - tugraph
-    - umi
-    - unieo
-    - utoo
-    - vsag
-    - weavefox
+  - :companies/alibaba/dragonfly
+  - :companies/alibaba/opensumi
+  - :companies/alibaba/seata
+  - agent_universe
+  - aigw
+  - ant_mini_program
+  - antchain
+  - antd
+  - antv
+  - aq-medai
+  - areal
+  - asterinas
+  - ceresdb
+  - cnpm
+  - codefuse
+  - couler
+  - dtvm
+  - dva
+  - egg
+  - fury
+  - galacean
+  - geaflow
+  - horaedb
+  - hyper_enclave
+  - inclusionai
+  - intelligent_machine_learning
+  - jeandle
+  - karas
+  - kata_container
+  - kcl_lang
+  - koupleless
+  - kusion_stack
+  - macaca
+  - magic_quill
+  - modelpack
+  - mosn
+  - mpaas
+  - neovateai
+  - ng_zorro
+  - occlum
+  - oceanbase
+  - openasce
+  - openderisk
+  - openspg
+  - petercat
+  - react_component
+  - secretflow
+  - sofastack
+  - sqlflow
+  - tongsuo
+  - trass_stack
+  - tugraph
+  - umi
+  - unieo
+  - utoo
+  - vsag
+  - weavefox
+  - dbgpt
   platforms:
-    - name: GitHub
-      type: Code Hosting
-      orgs:
-        - id: 1299356
-          name: alipay
-        - id: 37703784
-          name: antgroup
-        - id: 120770412
-          name: ant-research
+  - name: GitHub
+    type: Code Hosting
+    orgs:
+    - id: 1299356
+      name: alipay
+    - id: 37703784
+      name: antgroup
+    - id: 120770412
+      name: ant-research

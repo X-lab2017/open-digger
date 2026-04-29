@@ -1,0 +1,12 @@
+name: AstrBot AI
+type: Project
+description: AI Agent Assistant that integrates lots of IM platforms, LLMs, plugins
+  and AI feature, and can be your openclaw alternative. ✨
+description_zh: AstrBot AI 的 GitHub 组织。
+data:
+  platforms:
+  - name: GitHub
+    type: Code Hosting
+    orgs:
+    - id: 197911947
+      name: AstrBotDevs

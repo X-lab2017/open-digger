@@ -1,0 +1,12 @@
+name: MaxKB
+name_zh: MaxKB
+type: Company-1
+description: Enterprise AI agent platform from Fit2Cloud / 1Panel ecosystem.
+description_zh: 飞致云 / 1Panel 生态下的企业级智能体平台。
+data:
+  platforms:
+  - name: GitHub
+    type: Code Hosting
+    repos:
+    - name: 1Panel-dev/MaxKB
+      id: 691347156

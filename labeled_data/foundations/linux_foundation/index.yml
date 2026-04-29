@@ -3,111 +3,113 @@ name_zh: Linux 基金会
 type: Foundation
 data:
   labels:
-    - sonic
-    - valkey
-    - zephyr
+  - sonic
+  - valkey
+  - zephyr
+  - :companies/google/a2aproject
+  - :companies/meta/spring_projects
   platforms:
-    - name: GitHub
-      type: Code Hosting
-      repos:
-        - id: 89322848
-          name: Angel-ML/angel
-        - id: 214001313
-          name: ForestFlow/ForestFlow
-        - id: 148223447
-          name: linkedin/TonY
-        - id: 176202753
-          name: datapractices/data-practices-site
-        - id: 201327718
-          name: odpi/OpenDS4All
-        - id: 418444440
-          name: Project-OpenBytes/OpenBytes
-        - id: 306977038
-          name: OpenLineage/OpenLineage
-        - id: 77385607
-          name: JanusGraph/janusgraph
-        - id: 208728772
-          name: milvus-io/milvus
-        - id: 186647681
-          name: amundsen-io/amundsen
-        - id: 211152022
-          name: datashim-io/datashim
-        - id: 139907613
-          name: MarquezProject/marquez
-        - id: 161133770
-          name: feast-dev/feast
-        - id: 141988388
-          name: nnstreamer/nnstreamer
-        - id: 135579677
-          name: odpi/egeria
-        - id: 189184276
-          name: Delta-ML/delta
-        - id: 307465447
-          name: RosaeNLG/rosaenlg
-        - id: 210452618
-          name: Adlik/Adlik
-        - id: 178075572
-          name: kserve/kserve
-        - id: 217498546
-          name: Substra/substra
-        - id: 99846383
-          name: horovod/horovod
-        - id: 163346054
-          name: ludwig-ai/ludwig
-        - id: 102692863
-          name: onnx/onnx
-        - id: 129280238
-          name: acumos/documentation
-        - id: 356066412
-          name: machine-learning-exchange/mlx
-        - id: 216628419
-          name: flyteorg/flyte
-        - id: 182067506
-          name: quantumblacklabs/kedro
-        - id: 283406173
-          name: KomputeProject/kompute
-        - id: 94506832
-          name: pyro-ppl/pyro
-        - id: 123634214
-          name: elasticdeeplearning/edl
-        - id: 31730643
-          name: soajs/soajs
-        - id: 59305491
-          name: sparklyr/sparklyr
-        - id: 196340907
-          name: Trusted-AI/AIX360
-        - id: 125381318
-          name: Trusted-AI/adversarial-robustness-toolbox
-        - id: 145761123
-          name: Trusted-AI/AIF360
-        - id: 125944747
-          name: hyperledger/caliper
-        - id: 78610786
-          name: hyperledger/cello
-        - id: 195003588
-          name: lf-edge/ekuiper
-        - id: 94065005
-          name: journeymidnight/yig
-      orgs:
-        - id: 36865262
-          name: projectacrn
-        - id: 45012756
-          name: occlum
-        - id: 50487650
-          name: cloud-hypervisor
-        - id: 54415384
-          name: baetyl
-        - id: 25933741
-          name: onap
-        - id: 64113964
-          name: XGVela
-        - id: 64147991
-          name: ifeilong
-        - id: 26734561
-          name: openmessaging
-        - id: 92902569
-          name: nextarchfoundation
-        - id: 56990927
-          name: sodafoundation
-        - id: 42138346
-          name: TarsCloud
+  - name: GitHub
+    type: Code Hosting
+    repos:
+    - id: 89322848
+      name: Angel-ML/angel
+    - id: 214001313
+      name: ForestFlow/ForestFlow
+    - id: 148223447
+      name: linkedin/TonY
+    - id: 176202753
+      name: datapractices/data-practices-site
+    - id: 201327718
+      name: odpi/OpenDS4All
+    - id: 418444440
+      name: Project-OpenBytes/OpenBytes
+    - id: 306977038
+      name: OpenLineage/OpenLineage
+    - id: 77385607
+      name: JanusGraph/janusgraph
+    - id: 208728772
+      name: milvus-io/milvus
+    - id: 186647681
+      name: amundsen-io/amundsen
+    - id: 211152022
+      name: datashim-io/datashim
+    - id: 139907613
+      name: MarquezProject/marquez
+    - id: 161133770
+      name: feast-dev/feast
+    - id: 141988388
+      name: nnstreamer/nnstreamer
+    - id: 135579677
+      name: odpi/egeria
+    - id: 189184276
+      name: Delta-ML/delta
+    - id: 307465447
+      name: RosaeNLG/rosaenlg
+    - id: 210452618
+      name: Adlik/Adlik
+    - id: 178075572
+      name: kserve/kserve
+    - id: 217498546
+      name: Substra/substra
+    - id: 99846383
+      name: horovod/horovod
+    - id: 163346054
+      name: ludwig-ai/ludwig
+    - id: 102692863
+      name: onnx/onnx
+    - id: 129280238
+      name: acumos/documentation
+    - id: 356066412
+      name: machine-learning-exchange/mlx
+    - id: 216628419
+      name: flyteorg/flyte
+    - id: 182067506
+      name: quantumblacklabs/kedro
+    - id: 283406173
+      name: KomputeProject/kompute
+    - id: 94506832
+      name: pyro-ppl/pyro
+    - id: 123634214
+      name: elasticdeeplearning/edl
+    - id: 31730643
+      name: soajs/soajs
+    - id: 59305491
+      name: sparklyr/sparklyr
+    - id: 196340907
+      name: Trusted-AI/AIX360
+    - id: 125381318
+      name: Trusted-AI/adversarial-robustness-toolbox
+    - id: 145761123
+      name: Trusted-AI/AIF360
+    - id: 125944747
+      name: hyperledger/caliper
+    - id: 78610786
+      name: hyperledger/cello
+    - id: 195003588
+      name: lf-edge/ekuiper
+    - id: 94065005
+      name: journeymidnight/yig
+    orgs:
+    - id: 36865262
+      name: projectacrn
+    - id: 45012756
+      name: occlum
+    - id: 50487650
+      name: cloud-hypervisor
+    - id: 54415384
+      name: baetyl
+    - id: 25933741
+      name: onap
+    - id: 64113964
+      name: XGVela
+    - id: 64147991
+      name: ifeilong
+    - id: 26734561
+      name: openmessaging
+    - id: 92902569
+      name: nextarchfoundation
+    - id: 56990927
+      name: sodafoundation
+    - id: 42138346
+      name: TarsCloud

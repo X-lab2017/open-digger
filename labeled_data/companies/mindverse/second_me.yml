@@ -1,0 +1,11 @@
+name: Second Me
+type: Company-1
+description: Digital clone / personal AI agent project from Mindverse.
+description_zh: Mindverse 推出的数字分身 / 个人智能体项目。
+data:
+  platforms:
+  - name: GitHub
+    type: Code Hosting
+    repos:
+    - name: mindverse/Second-Me
+      id: 949271792

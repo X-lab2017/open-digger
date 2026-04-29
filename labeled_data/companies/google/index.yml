@@ -3,42 +3,45 @@ name_zh: 谷歌
 type: Company
 data:
   labels:
-    - angular
-    - bazel
-    - beam
-    - coredns
-    - dart
-    - firebase
-    - flutter
-    - forseti_security
-    - go
-    - grpc
-    - helm
-    - istio
-    - jax
-    - keras
-    - knative
-    - kubeflow
-    - opentelemetry
-    - openxla
-    - tensorflow
-    - vitess
+  - angular
+  - bazel
+  - beam
+  - coredns
+  - dart
+  - firebase
+  - flutter
+  - forseti_security
+  - go
+  - grpc
+  - helm
+  - istio
+  - jax
+  - keras
+  - knative
+  - kubeflow
+  - opentelemetry
+  - openxla
+  - tensorflow
+  - vitess
+  - adk_python
+  - gemini_cli
+  - a2aproject
   platforms:
-    - name: GitHub
-      type: Code Hosting
-      repos:
-        - id: 20580498
-          name: kubernetes/kubernetes
-        - id: 118828329
-          name: knative/serving
-        - id: 124951822
-          name: knative/eventing
-      orgs:
-        - id: 1342004
-          name: google
-        - id: 43830688
-          name: google-research
-        - id: 23534644
-          name: istio
-        - id: 33164907
-          name: kubeflow
+  - name: GitHub
+    type: Code Hosting
+    repos:
+    - id: 20580498
+      name: kubernetes/kubernetes
+    - id: 118828329
+      name: knative/serving
+    - id: 124951822
+      name: knative/eventing
+    orgs:
+    - id: 1342004
+      name: google
+    - id: 43830688
+      name: google-research
+    - id: 23534644
+      name: istio
+    - id: 33164907
+      name: kubeflow

@@ -1,0 +1,11 @@
+name: LobeHub
+type: Project
+description: Open-source AI chat application and knowledge assistant.
+description_zh: 开源 AI 对话应用与知识助手。
+data:
+  platforms:
+  - name: GitHub
+    type: Code Hosting
+    orgs:
+    - id: 131470832
+      name: lobehub

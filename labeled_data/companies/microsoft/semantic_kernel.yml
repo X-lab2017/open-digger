@@ -1,0 +1,11 @@
+name: Semantic Kernel
+type: Company-1
+description: SDK for building AI applications and agents from Microsoft.
+description_zh: 微软推出的 AI 应用与智能体开发 SDK。
+data:
+  platforms:
+  - name: GitHub
+    type: Code Hosting
+    repos:
+    - name: microsoft/semantic-kernel
+      id: 607289185

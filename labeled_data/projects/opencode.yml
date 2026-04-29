@@ -1,0 +1,11 @@
+name: OpenCode
+type: Project
+description: Open source coding agent.
+description_zh: 开源编码智能体。
+data:
+  platforms:
+  - name: GitHub
+    type: Code Hosting
+    repos:
+    - name: sst/opencode
+      id: 975734319

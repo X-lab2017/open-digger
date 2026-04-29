@@ -1,11 +1,11 @@
 name: LiveKit
-description: Open source WebRTC and realtime AI infrastructure.
-description_zh: 开源的 WebRTC 和实时 AI 基础设施。
-type: Project
+type: Company-1
+description: Voice and multimodal agent framework from LiveKit.
+description_zh: LiveKit 推出的语音与多模态智能体框架。
 data:
   platforms:
-    - name: GitHub
-      type: Code Hosting
-      orgs:
-        - id: 69438833
-          name: livekit
+  - name: GitHub
+    type: Code Hosting
+    orgs:
+    - id: 69438833
+      name: livekit

@@ -1,7 +1,0 @@
-name: Labeling
-type: Tech-2
-data:
-  labels:
-    - ':companies/cvat_ai/cvat'
-    - ':companies/heartex/label_studio'
-    - ':companies/vespa/vespa'

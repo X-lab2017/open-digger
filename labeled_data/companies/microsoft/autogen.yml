@@ -1,0 +1,11 @@
+name: AutoGen
+type: Company-1
+description: Programming framework for agentic AI from Microsoft.
+description_zh: 微软推出的智能体 AI 编程框架。
+data:
+  platforms:
+  - name: GitHub
+    type: Code Hosting
+    repos:
+    - name: microsoft/autogen
+      id: 680120071

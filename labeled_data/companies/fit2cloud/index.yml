@@ -3,9 +3,10 @@ name_zh: 飞致云
 type: Company
 data:
   labels:
-    - 1panel
-    - dataease
-    - halo
-    - jumpserver
-    - kubeoperator
-    - metersphere
+  - 1panel
+  - dataease
+  - halo
+  - jumpserver
+  - kubeoperator
+  - metersphere
+  - maxkb

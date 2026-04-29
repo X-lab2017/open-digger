@@ -1,0 +1,11 @@
+name: Open WebUI
+type: Project
+description: User-friendly AI Interface (Supports Ollama, OpenAI API, ...)
+description_zh: 开源 AI 用户界面与助手平台。
+data:
+  platforms:
+  - name: GitHub
+    type: Code Hosting
+    orgs:
+    - id: 158137808
+      name: open-webui

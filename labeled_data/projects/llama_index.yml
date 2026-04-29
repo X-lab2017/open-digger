@@ -1,0 +1,11 @@
+name: LlamaIndex
+type: Project
+description: Framework for building LLM and RAG applications over private data.
+description_zh: 用于基于私有数据构建 LLM 与 RAG 应用的框架。
+data:
+  platforms:
+  - name: GitHub
+    type: Code Hosting
+    orgs:
+    - id: 130722866
+      name: run-llama

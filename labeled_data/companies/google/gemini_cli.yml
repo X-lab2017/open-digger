@@ -1,0 +1,11 @@
+name: Gemini CLI
+type: Company-1
+description: Command-line AI assistant tooling in the Google Gemini ecosystem.
+description_zh: Google Gemini 生态中的命令行 AI 助手工具。
+data:
+  platforms:
+  - name: GitHub
+    type: Code Hosting
+    repos:
+    - name: google-gemini/gemini-cli
+      id: 968197216
