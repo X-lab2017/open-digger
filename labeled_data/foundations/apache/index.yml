@@ -22,7 +22,7 @@ data:
     - ':companies/tencent/ozone'
     - ':companies/timecho/iotdb'
     - ':projects/skywalking'
-    - ':projects/spark'
+    - ':companies/databricks/spark'
     - arrow
     - camel
     - lucene
