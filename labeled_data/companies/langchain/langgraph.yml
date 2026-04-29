@@ -1,5 +1,5 @@
 name: LangGraph
-type: Company-1
+type: Project
 description: Agent workflow orchestration framework from LangChain.
 description_zh: LangChain 推出的智能体工作流编排框架。
 data:

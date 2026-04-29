@@ -1,5 +1,5 @@
 name: Gemini CLI
-type: Company-1
+type: Project
 description: Command-line AI assistant tooling in the Google Gemini ecosystem.
 description_zh: Google Gemini 生态中的命令行 AI 助手工具。
 data:

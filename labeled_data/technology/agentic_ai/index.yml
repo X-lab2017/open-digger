@@ -23,8 +23,6 @@ data:
   - :projects/langchain_chatchat
   - :projects/letta_ai
   - :projects/llama_factory
-  - :projects/llama_index
-  - :projects/lobehub
   - :projects/mastra_ai
   - :projects/marimo
   - :projects/mem0ai
@@ -35,7 +33,6 @@ data:
   - :projects/one_api
   - :projects/open_webui
   - :projects/openclaw
-  - :projects/opencode
   - :projects/openrlhf
   - :projects/pgvector
   - :projects/pipecat_ai
@@ -43,7 +40,6 @@ data:
   - :projects/ray
   - :projects/scira
   - :projects/sillytavern
-  - :projects/spark
   - :projects/stable_diffusion_webui
   - :projects/the_pr_agent
   - :projects/vllm
@@ -57,6 +53,7 @@ data:
   - :companies/all_hands_ai/openhands
   - :companies/amazon/opensearch
   - :companies/anaconda/dask
+  - :companies/anomaly/opencode
   - :companies/antgroup/dbgpt
   - :companies/anthropic/claude_code
   - :companies/anthropic/modelcontextprotocol
@@ -76,6 +73,7 @@ data:
   - :companies/data_chain/data_chain
   - :companies/databricks/delta_lake
   - :companies/databricks/mlflow
+  - :companies/databricks/spark
   - :companies/databricks/unity_catalog
   - :companies/datastrato/gravitino
   - :companies/deepseek/deepep
@@ -107,7 +105,9 @@ data:
   - :companies/langfuse/langfuse
   - :companies/linkedin/datahub
   - :companies/livekit/livekit
+  - :companies/llamaindex/llamaindex
   - :companies/lmsys/fastchat
+  - :companies/lobehub/lobe_chat
   - :companies/mckinsey/mlrun
   - :companies/meta/pytorch
   - :companies/meta/spring_projects

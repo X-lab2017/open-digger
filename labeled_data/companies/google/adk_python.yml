@@ -1,5 +1,5 @@
 name: ADK Python
-type: Company-1
+type: Project
 description: Python SDK for Google Agent Development Kit.
 description_zh: Google Agent Development Kit 的 Python SDK。
 data:

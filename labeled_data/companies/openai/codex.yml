@@ -1,5 +1,5 @@
 name: Codex
-type: Company-1
+type: Project
 description: Lightweight coding agent that runs in the terminal.
 description_zh: 运行在终端中的轻量级编码智能体。
 data:

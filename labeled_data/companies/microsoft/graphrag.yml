@@ -1,5 +1,5 @@
 name: GraphRAG
-type: Company-1
+type: Project
 description: Graph-based retrieval-augmented generation framework from Microsoft.
 description_zh: 微软推出的基于图结构的检索增强生成框架。
 data:
