@@ -1,0 +1,11 @@
+name: Agent2Agent (A2A) Project
+type: Project
+description: Agent2Agent open protocol project initiated in the Google ecosystem.
+description_zh: Google 生态发起的 Agent2Agent 开放协议项目。
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 217270365
+          name: a2aproject

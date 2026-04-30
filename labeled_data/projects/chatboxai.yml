@@ -1,0 +1,11 @@
+name: Chatbox AI
+type: Project
+description: Desktop AI chat client for multiple model providers.
+description_zh: 支持多模型服务商的桌面 AI 对话客户端。
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 199570308
+          name: chatboxai

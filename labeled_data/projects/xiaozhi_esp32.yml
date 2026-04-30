@@ -1,0 +1,11 @@
+name: xiaozhi-esp32
+type: Project
+description: An MCP-based chatbot | 一个基于MCP的聊天机器人
+description_zh: 项目仓库 78/xiaozhi-esp32。
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 850267588
+          name: 78/xiaozhi-esp32

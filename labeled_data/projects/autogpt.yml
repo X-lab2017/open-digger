@@ -1,0 +1,12 @@
+name: AutoGPT
+type: Project
+description: AutoGPT is the vision of accessible AI for everyone, to use and to build
+  on. Our mission is to provide the tools, so that you can focus on what matters.
+description_zh: AutoGPT 的 GitHub 组织。
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 130738209
+          name: Significant-Gravitas

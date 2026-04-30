@@ -1,0 +1,11 @@
+name: SillyTavern
+type: Project
+description: LLM Frontend for Power Users.
+description_zh: SillyTavern 的 GitHub 组织。
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 134869877
+          name: SillyTavern

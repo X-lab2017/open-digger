@@ -1,0 +1,11 @@
+name: Browser Use
+type: Project
+description: Browser automation framework for AI agents.
+description_zh: 面向 AI 智能体的浏览器自动化框架。
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 192012301
+          name: browser-use

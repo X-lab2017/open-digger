@@ -3,3 +3,4 @@ type: Company
 data:
   labels:
     - langchain
+    - langgraph

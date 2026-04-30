@@ -1,0 +1,12 @@
+name: FastGPT
+type: Project
+description: Knowledge-based platform built on LLMs with data processing, RAG retrieval,
+  and visual AI workflow orchestration.
+description_zh: 基于大模型构建的知识库平台，提供数据处理、RAG 检索和可视化 AI 工作流编排能力。
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - name: labring/FastGPT
+          id: 605673387

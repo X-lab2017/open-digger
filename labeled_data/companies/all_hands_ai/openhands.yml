@@ -1,0 +1,11 @@
+name: OpenHands
+type: Project
+description: General software engineering agent from All Hands AI.
+description_zh: All Hands AI 推出的通用软件工程智能体。
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 225919603
+          name: OpenHands

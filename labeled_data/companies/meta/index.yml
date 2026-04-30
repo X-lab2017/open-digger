@@ -9,6 +9,7 @@ data:
     - react_native
     - rocksdb
     - velox
+    - spring_projects
   platforms:
     - name: GitHub
       type: Code Hosting

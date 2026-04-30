@@ -1,0 +1,11 @@
+name: Activepieces
+type: Project
+description: Open-source workflow automation platform.
+description_zh: 开源自动化工作流平台。
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 99494700
+          name: activepieces

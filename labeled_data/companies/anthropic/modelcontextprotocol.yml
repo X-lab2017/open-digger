@@ -1,0 +1,11 @@
+name: Model Context Protocol
+type: Project
+description: Reference server implementations for the Model Context Protocol ecosystem.
+description_zh: Model Context Protocol 生态的参考服务器实现集合。
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 182288589
+          name: modelcontextprotocol

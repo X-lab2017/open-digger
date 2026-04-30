@@ -1,0 +1,11 @@
+name: Dify
+type: Project
+description: Platform for building LLM applications and agent workflows.
+description_zh: 用于构建 LLM 应用与智能体工作流的平台。
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 127165244
+          name: langgenius

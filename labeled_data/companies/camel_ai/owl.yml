@@ -1,0 +1,11 @@
+name: OWL
+type: Project
+description: Agent project in the CAMEL-AI ecosystem.
+description_zh: CAMEL-AI 生态中的智能体项目。
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - name: camel-ai/owl
+          id: 942114501

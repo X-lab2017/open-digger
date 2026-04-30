@@ -23,6 +23,9 @@ data:
     - openxla
     - tensorflow
     - vitess
+    - adk_python
+    - gemini_cli
+    - a2aproject
   platforms:
     - name: GitHub
       type: Code Hosting

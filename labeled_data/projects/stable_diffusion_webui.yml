@@ -1,0 +1,11 @@
+name: stable-diffusion-webui
+type: Project
+description: Stable Diffusion web UI
+description_zh: 项目仓库 AUTOMATIC1111/stable-diffusion-webui。
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 527591471
+          name: AUTOMATIC1111/stable-diffusion-webui

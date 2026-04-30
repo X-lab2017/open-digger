@@ -6,6 +6,8 @@ data:
     - sonic
     - valkey
     - zephyr
+    - :companies/google/a2aproject
+    - :companies/meta/spring_projects
   platforms:
     - name: GitHub
       type: Code Hosting

@@ -3,6 +3,8 @@ type: Company
 data:
   labels:
     - triton
+    - codex
+    - openai_agents_python
   platforms:
     - name: GitHub
       type: Code Hosting

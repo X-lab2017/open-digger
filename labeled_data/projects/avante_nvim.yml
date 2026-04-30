@@ -1,0 +1,11 @@
+name: avante.nvim
+type: Project
+description: Use your Neovim like using Cursor AI IDE!
+description_zh: 项目仓库 yetone/avante.nvim。
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 842586148
+          name: yetone/avante.nvim

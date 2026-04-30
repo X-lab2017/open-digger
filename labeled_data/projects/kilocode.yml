@@ -1,0 +1,11 @@
+name: Kilocode
+description: The all-in-one agentic engineering platform.
+description_zh: 一站式智能体工程平台。
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 201822503
+          name: Kilo-Org

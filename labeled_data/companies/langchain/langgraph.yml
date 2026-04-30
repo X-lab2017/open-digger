@@ -1,0 +1,11 @@
+name: LangGraph
+type: Project
+description: Agent workflow orchestration framework from LangChain.
+description_zh: LangChain 推出的智能体工作流编排框架。
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - name: langchain-ai/langgraph
+          id: 676672661

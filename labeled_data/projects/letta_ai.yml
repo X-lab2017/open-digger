@@ -1,0 +1,11 @@
+name: Letta
+type: Project
+description: Framework for building stateful AI agents with memory.
+description_zh: 用于构建具备记忆能力的有状态 AI 智能体框架。
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 177780362
+          name: letta-ai

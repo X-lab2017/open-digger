@@ -1,0 +1,11 @@
+name: marimo
+type: Project
+description: Reactive Python notebook for AI and data workflows.
+description_zh: 面向 AI 与数据工作流的响应式 Python Notebook。
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 98563464
+          name: marimo-team

@@ -1,0 +1,11 @@
+name: Docling Project
+type: Project
+description: Toolchain for document parsing, understanding, and conversion.
+description_zh: 用于文档解析、理解与转换的工具链。
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 188446108
+          name: docling-project

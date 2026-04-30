@@ -22,7 +22,6 @@ data:
     - dtvm
     - dva
     - egg
-    - eosphoros
     - fury
     - galacean
     - geaflow
@@ -61,6 +60,7 @@ data:
     - utoo
     - vsag
     - weavefox
+    - dbgpt
   platforms:
     - name: GitHub
       type: Code Hosting

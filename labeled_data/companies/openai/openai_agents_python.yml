@@ -1,0 +1,11 @@
+name: OpenAI Agents Python
+type: Project
+description: Python SDK for building agents with OpenAI tools and models.
+description_zh: 用于构建 OpenAI 智能体的 Python SDK。
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - name: openai/openai-agents-python
+          id: 946380199

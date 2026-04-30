@@ -1,0 +1,11 @@
+name: Mem0
+type: Project
+description: Memory layer for AI assistants and agents.
+description_zh: 面向 AI 助手与智能体的记忆层。
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 137054526
+          name: mem0ai

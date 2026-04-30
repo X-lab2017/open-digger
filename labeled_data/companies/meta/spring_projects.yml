@@ -1,0 +1,11 @@
+name: Spring
+type: Project
+description: AI application development framework in the Spring ecosystem.
+description_zh: Spring 生态中的 AI 应用开发框架。
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 317776
+          name: spring-projects

@@ -1,0 +1,11 @@
+name: Daytona
+description: Secure and Elastic Infrastructure for Running AI-Generated Code
+description_zh: 用于运行 AI 生成代码的安全弹性基础设施
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 130513197
+          name: daytonaio

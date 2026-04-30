@@ -1,0 +1,11 @@
+name: deepset
+type: Project
+description: Framework for building search, QA, and RAG applications.
+description_zh: 用于构建搜索、问答与 RAG 应用的框架。
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 51827949
+          name: deepset-ai

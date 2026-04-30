@@ -1,0 +1,11 @@
+name: ZeroClaw
+description: Fast, small, and fully autonomous AI personal assistant infrastructure.
+description_zh: 快速、轻量且完全自主的 AI 个人助手基础设施。
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 261820148
+          name: zeroclaw-labs

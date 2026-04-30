@@ -1,0 +1,6 @@
+name: FoundationAgents
+type: Company
+data:
+  labels:
+    - metagpt
+    - openmanus

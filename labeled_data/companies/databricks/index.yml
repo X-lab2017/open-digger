@@ -6,12 +6,11 @@ data:
     - mlflow
     - neon
     - unity_catalog
+    - spark
   platforms:
     - name: GitHub
       type: Code Hosting
       repos:
-        - id: 17165658
-          name: apache/spark
         - id: 13926404
           name: getredash/redash
       orgs:

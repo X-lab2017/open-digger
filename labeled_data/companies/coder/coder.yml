@@ -1,0 +1,11 @@
+name: Coder
+description: Secure environments for developers and their agents
+description_zh: 为开发者及其智能体提供安全环境
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 95932066
+          name: coder

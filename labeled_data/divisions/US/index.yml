@@ -207,7 +207,7 @@ data:
     - ':companies/nrwl'
     - ':companies/nvidia'
     - ':companies/okta'
-    - ':companies/open_webui'
+    - ':projects/open_webui'
     - ':companies/openai'
     - ':companies/openmeter'
     - ':companies/openpipe'

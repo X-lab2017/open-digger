@@ -1,0 +1,11 @@
+name: MetaGPT
+type: Project
+description: Multi-agent framework from FoundationAgents.
+description_zh: FoundationAgents 推出的多智能体框架。
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - name: FoundationAgents/MetaGPT
+          id: 660551251

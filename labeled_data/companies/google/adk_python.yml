@@ -1,0 +1,11 @@
+name: ADK Python
+type: Project
+description: Python SDK for Google Agent Development Kit.
+description_zh: Google Agent Development Kit 的 Python SDK。
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - name: google/adk-python
+          id: 958830659

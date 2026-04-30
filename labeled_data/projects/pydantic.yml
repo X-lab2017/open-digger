@@ -1,0 +1,11 @@
+name: Pydantic
+type: Project
+description: Agent framework for Python built around Pydantic.
+description_zh: 围绕 Pydantic 构建的 Python 智能体框架。
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 110818415
+          name: pydantic

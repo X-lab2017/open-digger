@@ -18,6 +18,10 @@ data:
     - powershell
     - vcpkg
     - vscode
+    - autogen
+    - graphrag
+    - omniparser
+    - semantic_kernel
   platforms:
     - name: GitHub
       type: Code Hosting

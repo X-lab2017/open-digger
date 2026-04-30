@@ -1,0 +1,11 @@
+name: Mastra
+type: Project
+description: Framework and toolkit for building agent applications.
+description_zh: 用于构建智能体应用的框架与工具集。
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 149120496
+          name: mastra-ai

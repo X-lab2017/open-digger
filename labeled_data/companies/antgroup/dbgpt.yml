@@ -1,0 +1,11 @@
+name: dbgpt
+type: Project
+description: Open-source AI-native data application development framework.
+description_zh: 开源的 AI Native 数据应用开发框架。
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 140580304
+          name: eosphoros-ai

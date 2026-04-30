@@ -1,0 +1,11 @@
+name: CAMEL
+type: Project
+description: Multi-agent framework from CAMEL-AI.
+description_zh: CAMEL-AI 推出的多智能体框架。
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - name: camel-ai/camel
+          id: 615510678

@@ -1,0 +1,11 @@
+name: CLIProxyAPI
+description: Wrap Gemini CLI, Antigravity, ChatGPT Codex, Claude Code as an OpenAI/Gemini/Claude/Codex compatible API service
+description_zh: 将 Gemini CLI、Antigravity、ChatGPT Codex、Claude Code 封装为兼容 OpenAI/Gemini/Claude/Codex 的 API 服务
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 233033915
+          name: router-for-me

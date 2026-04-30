@@ -1,0 +1,11 @@
+name: FlowiseAI
+type: Project
+description: LLM and agent workflow building platform.
+description_zh: 用于构建 LLM 与智能体工作流的平台。
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 128289781
+          name: FlowiseAI

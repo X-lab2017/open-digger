@@ -1,0 +1,11 @@
+name: crewAI
+type: Project
+description: Framework for orchestrating collaborative AI agents.
+description_zh: 用于编排协作式 AI 智能体的框架。
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 170677839
+          name: crewAIInc
