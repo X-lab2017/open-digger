@@ -6,8 +6,8 @@ description: 'Langchain-Chatchat（原Langchain-ChatGLM）基于 Langchain 与 C
 description_zh: Chatchat-Space 的 GitHub 组织。
 data:
   platforms:
-  - name: GitHub
-    type: Code Hosting
-    orgs:
-    - id: 139558948
-      name: chatchat-space
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 139558948
+          name: chatchat-space

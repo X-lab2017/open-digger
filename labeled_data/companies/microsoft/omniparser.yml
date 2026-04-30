@@ -4,8 +4,8 @@ description: GUI parsing and understanding project from Microsoft.
 description_zh: 微软推出的 GUI 解析与理解项目。
 data:
   platforms:
-  - name: GitHub
-    type: Code Hosting
-    repos:
-    - name: microsoft/OmniParser
-      id: 860252770
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - name: microsoft/OmniParser
+          id: 860252770

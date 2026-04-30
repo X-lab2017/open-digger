@@ -5,8 +5,8 @@ description: '✨ Light and Fast AI Assistant. Support: Web | iOS | MacOS | Andr
 description_zh: NextChat 的 GitHub 组织。
 data:
   platforms:
-  - name: GitHub
-    type: Code Hosting
-    orgs:
-    - id: 153288546
-      name: ChatGPTNextWeb
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 153288546
+          name: ChatGPTNextWeb

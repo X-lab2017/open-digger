@@ -4,8 +4,8 @@ description: Open-source framework for real-time voice and multimodal AI agents.
 description_zh: 用于实时语音与多模态 AI 智能体的开源框架。
 data:
   platforms:
-  - name: GitHub
-    type: Code Hosting
-    orgs:
-    - id: 169612734
-      name: pipecat-ai
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 169612734
+          name: pipecat-ai

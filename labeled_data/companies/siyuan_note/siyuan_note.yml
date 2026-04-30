@@ -5,8 +5,8 @@ description: Knowledge management and AI-assisted note-taking application from S
 description_zh: 思源笔记团队推出的知识管理与 AI 辅助笔记应用。
 data:
   platforms:
-  - name: GitHub
-    type: Code Hosting
-    orgs:
-    - id: 70468694
-      name: siyuan-note
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 70468694
+          name: siyuan-note

@@ -6,8 +6,8 @@ description: A unified AI model hub for aggregation & distribution. It supports 
 description_zh: QuantumNous 的 GitHub 组织。
 data:
   platforms:
-  - name: GitHub
-    type: Code Hosting
-    orgs:
-    - id: 205075698
-      name: QuantumNous
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 205075698
+          name: QuantumNous

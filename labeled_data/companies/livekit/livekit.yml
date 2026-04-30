@@ -4,8 +4,8 @@ description: Voice and multimodal agent framework from LiveKit.
 description_zh: LiveKit 推出的语音与多模态智能体框架。
 data:
   platforms:
-  - name: GitHub
-    type: Code Hosting
-    orgs:
-    - id: 69438833
-      name: livekit
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 69438833
+          name: livekit

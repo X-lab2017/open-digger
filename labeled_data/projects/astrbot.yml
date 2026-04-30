@@ -5,8 +5,8 @@ description: AI Agent Assistant that integrates lots of IM platforms, LLMs, plug
 description_zh: AstrBot AI 的 GitHub 组织。
 data:
   platforms:
-  - name: GitHub
-    type: Code Hosting
-    orgs:
-    - id: 197911947
-      name: AstrBotDevs
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 197911947
+          name: AstrBotDevs

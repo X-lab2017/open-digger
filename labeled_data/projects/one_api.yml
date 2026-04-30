@@ -7,8 +7,8 @@ description: LLM API 管理 & 分发系统，支持 OpenAI、Azure、Anthropic C
 description_zh: 项目仓库 songquanpeng/one-api。
 data:
   platforms:
-  - name: GitHub
-    type: Code Hosting
-    repos:
-    - id: 631254164
-      name: songquanpeng/one-api
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 631254164
+          name: songquanpeng/one-api

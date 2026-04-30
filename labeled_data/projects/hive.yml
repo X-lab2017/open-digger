@@ -4,8 +4,8 @@ description_zh: 面向生产级 AI 的多智能体框架。
 type: Project
 data:
   platforms:
-  - name: GitHub
-    type: Code Hosting
-    orgs:
-    - id: 262650699
-      name: aden-hive
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 262650699
+          name: aden-hive

@@ -2,29 +2,29 @@ name: Meta
 type: Company
 data:
   labels:
-  - cassandra
-  - hive
-  - prestodb
-  - pytorch
-  - react_native
-  - rocksdb
-  - velox
-  - spring_projects
+    - cassandra
+    - hive
+    - prestodb
+    - pytorch
+    - react_native
+    - rocksdb
+    - velox
+    - spring_projects
   platforms:
-  - name: GitHub
-    type: Code Hosting
-    orgs:
-    - id: 69631
-      name: facebook
-    - id: 16943930
-      name: facebookresearch
-    - id: 21003710
-      name: pytorch
-    - id: 12853545
-      name: facebookexperimental
-    - id: 1541324
-      name: fbsamples
-    - id: 549085
-      name: Instagram
-    - id: 19538647
-      name: facebookincubator
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 69631
+          name: facebook
+        - id: 16943930
+          name: facebookresearch
+        - id: 21003710
+          name: pytorch
+        - id: 12853545
+          name: facebookexperimental
+        - id: 1541324
+          name: fbsamples
+        - id: 549085
+          name: Instagram
+        - id: 19538647
+          name: facebookincubator

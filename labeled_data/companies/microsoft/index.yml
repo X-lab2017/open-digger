@@ -3,28 +3,28 @@ name_zh: 微软
 type: Company
 data:
   labels:
-  - azure
-  - dapr
-  - deepspeed
-  - dotnet
-  - fluentui
-  - fluid_framework
-  - hbase
-  - interpretml
-  - keda
-  - onnxruntime
-  - playwright
-  - power_toys
-  - powershell
-  - vcpkg
-  - vscode
-  - autogen
-  - graphrag
-  - omniparser
-  - semantic_kernel
+    - azure
+    - dapr
+    - deepspeed
+    - dotnet
+    - fluentui
+    - fluid_framework
+    - hbase
+    - interpretml
+    - keda
+    - onnxruntime
+    - playwright
+    - power_toys
+    - powershell
+    - vcpkg
+    - vscode
+    - autogen
+    - graphrag
+    - omniparser
+    - semantic_kernel
   platforms:
-  - name: GitHub
-    type: Code Hosting
-    orgs:
-    - id: 6154722
-      name: microsoft
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 6154722
+          name: microsoft
