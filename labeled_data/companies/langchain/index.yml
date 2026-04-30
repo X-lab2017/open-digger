@@ -2,5 +2,5 @@ name: LangChain
 type: Company
 data:
   labels:
-  - langchain
-  - langgraph
+    - langchain
+    - langgraph

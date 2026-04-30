@@ -4,8 +4,8 @@ description: General-purpose agent execution framework from FoundationAgents.
 description_zh: FoundationAgents 推出的通用智能体执行框架。
 data:
   platforms:
-  - name: GitHub
-    type: Code Hosting
-    repos:
-    - name: FoundationAgents/OpenManus
-      id: 943934999
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - name: FoundationAgents/OpenManus
+          id: 943934999

@@ -2,5 +2,5 @@ name: CAMEL-AI
 type: Company
 data:
   labels:
-  - camel
-  - owl
+    - camel
+    - owl
