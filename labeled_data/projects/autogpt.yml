@@ -1,8 +1,7 @@
 name: AutoGPT
 type: Project
-description: AutoGPT is the vision of accessible AI for everyone, to use and to build
-  on. Our mission is to provide the tools, so that you can focus on what matters.
-description_zh: AutoGPT 的 GitHub 组织。
+description: AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.
+description_zh: AutoGPT 的愿景是让每个人都能够使用和构建 AI。我们的使命是提供工具，让您专注于最重要的事情。
 data:
   platforms:
     - name: GitHub

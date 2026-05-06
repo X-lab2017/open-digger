@@ -3,11 +3,11 @@ name_zh: Linux 基金会
 type: Foundation
 data:
   labels:
+    - ':companies/google/a2aproject'
+    - ':companies/meta/spring_projects'
     - sonic
     - valkey
     - zephyr
-    - :companies/google/a2aproject
-    - :companies/meta/spring_projects
   platforms:
     - name: GitHub
       type: Code Hosting

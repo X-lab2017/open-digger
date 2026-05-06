@@ -4,9 +4,8 @@ type: Company
 data:
   labels:
     - ascend
-    - cann
     - cangjie
-    - openfuyao
+    - cann
     - karmada
     - kubeedge
     - kurator
@@ -14,6 +13,7 @@ data:
     - mindspore
     - open_inula
     - openeuler
+    - openfuyao
     - opengauss
     - openharmony
     - service_comb

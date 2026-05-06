@@ -3,6 +3,8 @@ name_zh: 谷歌
 type: Company
 data:
   labels:
+    - a2aproject
+    - adk_python
     - angular
     - bazel
     - beam
@@ -11,6 +13,7 @@ data:
     - firebase
     - flutter
     - forseti_security
+    - gemini_cli
     - go
     - grpc
     - helm
@@ -23,9 +26,6 @@ data:
     - openxla
     - tensorflow
     - vitess
-    - adk_python
-    - gemini_cli
-    - a2aproject
   platforms:
     - name: GitHub
       type: Code Hosting

@@ -14,6 +14,7 @@ data:
     - ':companies/antgroup/horaedb'
     - ':companies/baidu/doris'
     - ':companies/baidu/echarts'
+    - ':companies/databricks/spark'
     - ':companies/google/beam'
     - ':companies/huawei/service_comb'
     - ':companies/linkedin/kafka'
@@ -22,7 +23,6 @@ data:
     - ':companies/tencent/ozone'
     - ':companies/timecho/iotdb'
     - ':projects/skywalking'
-    - ':companies/databricks/spark'
     - arrow
     - camel
     - lucene

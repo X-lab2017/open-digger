@@ -8,5 +8,5 @@ data:
     - name: GitHub
       type: Code Hosting
       repos:
-        - name: 1Panel-dev/MaxKB
-          id: 691347156
+        - id: 691347156
+          name: 1Panel-dev/MaxKB

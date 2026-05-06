@@ -8,8 +8,8 @@ data:
     - pytorch
     - react_native
     - rocksdb
-    - velox
     - spring_projects
+    - velox
   platforms:
     - name: GitHub
       type: Code Hosting

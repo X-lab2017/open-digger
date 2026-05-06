@@ -7,5 +7,5 @@ data:
     - name: GitHub
       type: Code Hosting
       repos:
-        - name: camel-ai/owl
-          id: 942114501
+        - id: 942114501
+          name: camel-ai/owl

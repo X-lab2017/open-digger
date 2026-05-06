@@ -7,5 +7,5 @@ data:
     - name: GitHub
       type: Code Hosting
       repos:
-        - name: openai/codex
-          id: 965415649
+        - id: 965415649
+          name: openai/codex

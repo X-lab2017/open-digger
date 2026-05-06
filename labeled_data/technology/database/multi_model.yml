@@ -3,5 +3,5 @@ name_zh: 多模数据库
 type: Tech-1
 data:
   labels:
-    - ':companies/inspur/kwdb'
     - ':companies/cockroachlabs/cockroachdb'
+    - ':companies/inspur/kwdb'

@@ -1,12 +1,12 @@
 name: OpenFGA
 description: A high-performance authorization engine inspired by Google Zanzibar.
-description_zh: 受Google Zanzibar启发的高性能权限引擎。
+description_zh: 受 Google Zanzibar 启发的高性能权限引擎。
 type: Project
 data:
   platforms:
     - name: GitHub
       type: Code Hosting
       orgs:
-        - name: openfga
-          id: 103602580
+        - id: 103602580
+          name: openfga
       repos: []

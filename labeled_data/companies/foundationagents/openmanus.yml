@@ -7,5 +7,5 @@ data:
     - name: GitHub
       type: Code Hosting
       repos:
-        - name: FoundationAgents/OpenManus
-          id: 943934999
+        - id: 943934999
+          name: FoundationAgents/OpenManus

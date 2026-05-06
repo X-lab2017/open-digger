@@ -7,5 +7,5 @@ data:
     - name: GitHub
       type: Code Hosting
       repos:
-        - name: mindverse/Second-Me
-          id: 949271792
+        - id: 949271792
+          name: mindverse/Second-Me

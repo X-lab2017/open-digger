@@ -2,9 +2,9 @@ name: OpenAI
 type: Company
 data:
   labels:
-    - triton
     - codex
     - openai_agents_python
+    - triton
   platforms:
     - name: GitHub
       type: Code Hosting

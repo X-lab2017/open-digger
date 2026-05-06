@@ -3,25 +3,25 @@ name_zh: 微软
 type: Company
 data:
   labels:
+    - autogen
     - azure
     - dapr
     - deepspeed
     - dotnet
     - fluentui
     - fluid_framework
+    - graphrag
     - hbase
     - interpretml
     - keda
+    - omniparser
     - onnxruntime
     - playwright
     - power_toys
     - powershell
+    - semantic_kernel
     - vcpkg
     - vscode
-    - autogen
-    - graphrag
-    - omniparser
-    - semantic_kernel
   platforms:
     - name: GitHub
       type: Code Hosting

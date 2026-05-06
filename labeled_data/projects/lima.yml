@@ -7,6 +7,6 @@ data:
     - name: GitHub
       type: Code Hosting
       orgs:
-        - name: lima-vm
-          id: 88128539
+        - id: 88128539
+          name: lima-vm
       repos: []

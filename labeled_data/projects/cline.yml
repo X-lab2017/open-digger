@@ -1,9 +1,7 @@
 name: Cline
 type: Project
-description: Autonomous coding agent right in your IDE, capable of creating/editing
-  files, executing commands, using the browser, and more with your permission every
-  step of the way.
-description_zh: Cline 的 GitHub 组织。
+description: Autonomous coding agent right in your IDE, capable of creating/editing files, executing commands, using the browser, and more with your permission every step of the way.
+description_zh: 在您的 IDE 中创建/编辑文件、执行命令、使用浏览器等，每一步都需您的许可。
 data:
   platforms:
     - name: GitHub

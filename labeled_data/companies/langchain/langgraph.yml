@@ -7,5 +7,5 @@ data:
     - name: GitHub
       type: Code Hosting
       repos:
-        - name: langchain-ai/langgraph
-          id: 676672661
+        - id: 676672661
+          name: langchain-ai/langgraph

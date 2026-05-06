@@ -7,5 +7,5 @@ data:
     - name: GitHub
       type: Code Hosting
       repos:
-        - name: google/adk-python
-          id: 958830659
+        - id: 958830659
+          name: google/adk-python

@@ -1,9 +1,7 @@
 name: Chatchat-Space
 type: Project
-description: 'Langchain-Chatchat（原Langchain-ChatGLM）基于 Langchain 与 ChatGLM, Qwen 与
-  Llama 等语言模型的 RAG 与 Agent 应用 | Langchain-Chatchat (formerly langchain-ChatGLM), local
-  knowledge based LLM (like ChatGLM, Qwen and Llama) RAG and Agent app with langchain '
-description_zh: Chatchat-Space 的 GitHub 组织。
+description: 'Langchain-Chatchat（原Langchain-ChatGLM）基于 Langchain 与 ChatGLM, Qwen 与 Llama 等语言模型的 RAG 与 Agent 应用 | Langchain-Chatchat (formerly langchain-ChatGLM), local knowledge based LLM (like ChatGLM, Qwen and Llama) RAG and Agent app with langchain '
+description_zh: 基于 Langchain 和 ChatGLM、Qwen 与 Llama 等语言模型的 RAG 与 Agent 应用。
 data:
   platforms:
     - name: GitHub

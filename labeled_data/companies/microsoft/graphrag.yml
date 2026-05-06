@@ -7,5 +7,5 @@ data:
     - name: GitHub
       type: Code Hosting
       repos:
-        - name: microsoft/graphrag
-          id: 778431525
+        - id: 778431525
+          name: microsoft/graphrag

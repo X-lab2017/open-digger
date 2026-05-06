@@ -5,8 +5,8 @@ data:
     - delta_lake
     - mlflow
     - neon
-    - unity_catalog
     - spark
+    - unity_catalog
   platforms:
     - name: GitHub
       type: Code Hosting

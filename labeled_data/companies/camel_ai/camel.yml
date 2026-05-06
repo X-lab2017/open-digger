@@ -7,5 +7,5 @@ data:
     - name: GitHub
       type: Code Hosting
       repos:
-        - name: camel-ai/camel
-          id: 615510678
+        - id: 615510678
+          name: camel-ai/camel

@@ -1,8 +1,7 @@
 name: NextChat
 type: Project
-description: '✨ Light and Fast AI Assistant. Support: Web | iOS | MacOS | Android
-  |  Linux | Windows'
-description_zh: NextChat 的 GitHub 组织。
+description: '✨ Light and Fast AI Assistant. Support: Web | iOS | MacOS | Android |  Linux | Windows'
+description_zh: 轻量级且快速的 AI 助手，支持 Web、iOS、MacOS、Android、Linux 和 Windows。
 data:
   platforms:
     - name: GitHub

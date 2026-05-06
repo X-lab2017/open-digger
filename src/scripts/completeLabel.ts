@@ -5,6 +5,23 @@ import { Octokit } from '@octokit/rest';
 import getConfig from '../config';
 import { dump } from 'js-yaml';
 
+/** Ensure YAML serialization order: id, then name, then other keys (js-yaml follows insertion order). */
+function orderIdNameKeys(obj: Record<string, unknown>): Record<string, unknown> {
+  const { id, name, ...rest } = obj;
+  const out: Record<string, unknown> = {};
+  if (id !== undefined) out.id = id;
+  if (name !== undefined) out.name = name;
+  Object.assign(out, rest);
+  return out;
+}
+
+function normalizePlatformEntities(items: Record<string, unknown>[] | undefined) {
+  if (!items?.length) return;
+  for (let i = 0; i < items.length; i++) {
+    items[i] = orderIdNameKeys(items[i]);
+  }
+}
+
 async function readPath(p: string, base: string, fileProcessor: (f: string) => Promise<void>) {
   if (!statSync(p).isDirectory()) {
     await fileProcessor(base);
@@ -65,6 +82,9 @@ async function readPath(p: string, base: string, fileProcessor: (f: string) => P
             }
           }
         }
+        normalizePlatformEntities(p.repos);
+        normalizePlatformEntities(p.orgs);
+        normalizePlatformEntities(p.users);
       }
       if (label.data && label.data.labels) {
         label.data.labels = label.data.labels.sort();

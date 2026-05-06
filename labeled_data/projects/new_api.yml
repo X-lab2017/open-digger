@@ -1,9 +1,7 @@
 name: QuantumNous
 type: Project
-description: A unified AI model hub for aggregation & distribution. It supports cross-converting
-  various LLMs into OpenAI-compatible, Claude-compatible, or Gemini-compatible formats.
-  A centralized gateway for personal and enterprise model management. 🍥
-description_zh: QuantumNous 的 GitHub 组织。
+description: A unified AI model hub for aggregation & distribution. It supports cross-converting various LLMs into OpenAI-compatible, Claude-compatible, or Gemini-compatible formats. A centralized gateway for personal and enterprise model management. 🍥
+description_zh: 一个统一的大模型 Hub，支持将各种 LLM 转换为 OpenAI、Claude 或 Gemini 兼容的格式，并提供个人和企业模型管理的中枢。
 data:
   platforms:
     - name: GitHub
