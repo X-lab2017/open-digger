@@ -1,0 +1,11 @@
+name: Hermes Agent
+type: Project
+description: Open-source AI agent with persistent memory and task automation.
+description_zh: 具备持久记忆和任务自动化能力的开源 AI Agent。
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - name: NousResearch/hermes-agent
+          id: 1024554267
