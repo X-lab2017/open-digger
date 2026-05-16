@@ -1,0 +1,11 @@
+name: Ant Design X
+description: AI-driven interface components for building conversational and agentic applications with Ant Design.
+description_zh: 基于 Ant Design 构建对话式与智能体应用的 AI 驱动界面组件。
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 798235565
+          name: ant-design/x

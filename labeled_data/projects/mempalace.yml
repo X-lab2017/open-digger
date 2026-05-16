@@ -1,0 +1,11 @@
+name: MemPalace
+description: Open-source AI memory system for agentic applications.
+description_zh: 面向智能体应用的开源 AI 记忆系统。
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 275135684
+          name: MemPalace

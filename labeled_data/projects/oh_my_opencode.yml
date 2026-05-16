@@ -1,0 +1,11 @@
+name: Oh My OpenCode
+description: Agent harness for OpenCode workflows.
+description_zh: 用于 OpenCode 工作流的智能体编排工具。
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 1108837393
+          name: code-yeongyu/oh-my-openagent

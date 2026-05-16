@@ -1,0 +1,11 @@
+name: Multica
+description: Managed agents platform for assigning tasks, tracking progress, and compounding skills.
+description_zh: 用于分配任务、跟踪进度和沉淀技能的托管智能体平台。
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 254743058
+          name: multica-ai

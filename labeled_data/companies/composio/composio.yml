@@ -1,0 +1,11 @@
+name: Composio
+description: Platform for toolkits, tool search, context management, authentication, and integrations for agents.
+description_zh: 面向智能体的工具集、工具搜索、上下文管理、认证和集成平台。
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 128464815
+          name: ComposioHQ

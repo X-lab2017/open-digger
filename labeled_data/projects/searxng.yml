@@ -1,0 +1,11 @@
+name: SearXNG
+description: Free internet metasearch engine aggregating results from multiple search services.
+description_zh: 聚合多个搜索服务结果的免费互联网元搜索引擎。
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 80454229
+          name: searxng

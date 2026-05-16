@@ -1,0 +1,11 @@
+name: OpenSpec
+description: Spec-driven development toolkit for AI coding assistants.
+description_zh: 面向 AI 编程助手的规格驱动开发工具。
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 1032459340
+          name: Fission-AI/OpenSpec

@@ -1,0 +1,11 @@
+name: Context7
+description: Platform providing up-to-date code documentation for LLMs and AI code editors.
+description_zh: 为大模型和 AI 代码编辑器提供最新代码文档的平台。
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 955620917
+          name: upstash/context7

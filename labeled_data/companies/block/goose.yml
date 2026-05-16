@@ -1,0 +1,11 @@
+name: Goose
+description: Open source, extensible AI agent that goes beyond code suggestions.
+description_zh: 开源且可扩展的 AI 智能体，不止提供代码建议。
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 846698999
+          name: aaif-goose/goose

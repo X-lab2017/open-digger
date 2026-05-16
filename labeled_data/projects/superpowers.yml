@@ -1,0 +1,11 @@
+name: Superpowers
+description: Agentic skills framework and software development methodology.
+description_zh: 智能体技能框架和软件开发方法论。
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 1073224795
+          name: obra/superpowers

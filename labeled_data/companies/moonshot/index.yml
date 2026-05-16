@@ -1,6 +1,8 @@
 name: Moonshot AI
 type: Company
 data:
+  labels:
+    - kimi_cli
   platforms:
     - name: GitHub
       type: Code Hosting

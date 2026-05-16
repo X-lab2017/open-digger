@@ -1,0 +1,11 @@
+name: Page Agent
+description: JavaScript in-page GUI agent controlled with natural language.
+description_zh: 可用自然语言控制网页界面的 JavaScript 页面智能体。
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 1062458369
+          name: alibaba/page-agent

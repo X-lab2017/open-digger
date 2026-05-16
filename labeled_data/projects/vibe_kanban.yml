@@ -1,0 +1,11 @@
+name: Vibe Kanban
+description: Kanban-style workflow tool for coordinating coding agents.
+description_zh: 用于协调编程智能体的看板式工作流工具。
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 75376775
+          name: BloopAI

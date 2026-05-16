@@ -1,0 +1,11 @@
+name: Vane
+description: AI-powered answering and search engine.
+description_zh: AI 驱动的问答与搜索引擎。
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 784181462
+          name: ItzCrazyKns/Vane

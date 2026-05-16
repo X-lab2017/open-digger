@@ -1,0 +1,11 @@
+name: Vectorize
+type: Company
+data:
+  labels:
+    - hindsight
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 81837244
+          name: vectorize-io

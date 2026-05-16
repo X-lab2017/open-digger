@@ -4,6 +4,7 @@ data:
   labels:
     - codex
     - openai_agents_python
+    - parameter_golf
     - triton
   platforms:
     - name: GitHub

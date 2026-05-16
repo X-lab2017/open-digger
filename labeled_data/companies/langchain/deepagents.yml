@@ -1,0 +1,11 @@
+name: DeepAgents
+description: Agent harness built with LangChain and LangGraph for long-running agentic tasks.
+description_zh: 基于 LangChain 与 LangGraph 构建的智能体框架，用于处理长周期智能体任务。
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 1027384981
+          name: langchain-ai/deepagents

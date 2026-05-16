@@ -1,0 +1,11 @@
+name: LeRobot
+description: Toolkit for making AI for robotics more accessible with end-to-end learning.
+description_zh: 通过端到端学习降低机器人 AI 使用门槛的工具集。
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 748713144
+          name: huggingface/lerobot

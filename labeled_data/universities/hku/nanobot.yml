@@ -1,0 +1,11 @@
+name: Nanobot
+description: Ultra-lightweight personal AI agent from HKUDS.
+description_zh: HKUDS 推出的超轻量级个人 AI 智能体。
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 1147094660
+          name: HKUDS/nanobot

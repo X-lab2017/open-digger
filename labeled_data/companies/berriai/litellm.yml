@@ -1,0 +1,11 @@
+name: LiteLLM
+description: Python SDK and proxy server for calling 100+ LLM APIs with cost tracking and guardrails.
+description_zh: 用于调用 100+ 大模型 API 的 Python SDK 与代理服务，支持成本跟踪和防护能力。
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 121462774
+          name: BerriAI

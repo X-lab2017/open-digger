@@ -1,0 +1,11 @@
+name: Eigent
+description: Open-source cowork desktop for AI-assisted productivity.
+description_zh: 面向 AI 协作生产力的开源桌面协同工具。
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 163795819
+          name: eigent-ai

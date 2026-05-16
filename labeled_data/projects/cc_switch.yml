@@ -1,0 +1,11 @@
+name: CC Switch
+description: Cross-platform assistant tool for Claude Code, Codex, OpenCode, and related coding agents.
+description_zh: 面向 Claude Code、Codex、OpenCode 等编程智能体的跨平台助手工具。
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 1031912724
+          name: farion1231/cc-switch

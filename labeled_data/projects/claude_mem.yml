@@ -1,0 +1,11 @@
+name: Claude Mem
+description: Claude Code plugin for capturing and organizing agent memory.
+description_zh: 用于捕获和组织智能体记忆的 Claude Code 插件。
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 1048065319
+          name: thedotmack/claude-mem

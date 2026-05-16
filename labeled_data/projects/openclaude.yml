@@ -1,0 +1,11 @@
+name: OpenClaude
+description: Open-source coding agent that runs anywhere and uses multiple tools.
+description_zh: 可在多环境运行并使用多种工具的开源编程智能体。
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 1197990888
+          name: Gitlawb/openclaude

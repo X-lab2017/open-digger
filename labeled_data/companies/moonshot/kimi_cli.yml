@@ -1,0 +1,11 @@
+name: Kimi CLI
+description: Command-line AI agent for Kimi.
+description_zh: 面向 Kimi 的命令行 AI 智能体。
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 1076863218
+          name: MoonshotAI/kimi-cli

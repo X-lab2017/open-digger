@@ -1,0 +1,11 @@
+name: Warp
+description: Agentic development environment built around the terminal.
+description_zh: 围绕终端构建的智能体开发环境。
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 71840468
+          name: warpdotdev

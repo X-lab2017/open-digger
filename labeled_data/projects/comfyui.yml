@@ -1,11 +1,11 @@
-name: Comfy Org
+name: Comfy UI
 type: Project
 description: The most powerful and modular diffusion model GUI, api and backend with a graph/nodes interface.
-description_zh: 最强大且模块化的扩散模型 GUI、API 和后端，具有图形/节点接口。
+description_zh: Comfy UI 的 GitHub 组织，Comfy UI 是一个功能强大且模块化的扩散模型 GUI、API 和后端，具有图形/节点界面。
 data:
   platforms:
     - name: GitHub
       type: Code Hosting
       orgs:
         - id: 166579949
-          name: Comfy-Org
+          name: comfy-org

@@ -1,0 +1,11 @@
+name: Mintplex Labs
+type: Company
+data:
+  labels:
+    - anything_llm
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 134426827
+          name: Mintplex-Labs

@@ -1,0 +1,11 @@
+name: Vercel AI SDK
+description: TypeScript toolkit for building AI applications.
+description_zh: 用于构建 AI 应用的 TypeScript 工具包。
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 644461337
+          name: vercel/ai

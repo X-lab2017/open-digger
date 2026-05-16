@@ -1,0 +1,11 @@
+name: Beads
+description: Memory upgrade for coding agents.
+description_zh: 面向编程智能体的记忆增强工具。
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 1074561042
+          name: gastownhall/beads

@@ -1,0 +1,11 @@
+name: Upstash
+type: Company
+data:
+  labels:
+    - context7
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 74989412
+          name: upstash

@@ -1,0 +1,11 @@
+name: GitHub Copilot CLI
+description: Command-line interface for using GitHub Copilot coding agent capabilities.
+description_zh: 用于使用 GitHub Copilot 编程智能体能力的命令行界面。
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 585860664
+          name: github/copilot-cli

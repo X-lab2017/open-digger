@@ -1,0 +1,11 @@
+name: Hindsight
+description: Agent memory system that learns from previous work.
+description_zh: 能够从过往工作中学习的智能体记忆系统。
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 1086419061
+          name: vectorize-io/hindsight

@@ -1,0 +1,11 @@
+name: Parameter Golf
+description: Challenge repository for training the smallest language model that fits in 16MB.
+description_zh: 训练可放入 16MB 的最小语言模型的挑战项目。
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 1153302402
+          name: openai/parameter-golf

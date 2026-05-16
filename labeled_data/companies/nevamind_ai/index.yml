@@ -1,0 +1,11 @@
+name: NevaMind AI
+type: Company
+data:
+  labels:
+    - memu
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 217726889
+          name: NevaMind-AI

@@ -1,0 +1,11 @@
+name: Paperclip
+description: Open-source orchestration for zero-human companies.
+description_zh: 面向无人化公司的开源编排系统。
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 264498616
+          name: paperclipai

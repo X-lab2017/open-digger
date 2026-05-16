@@ -4,6 +4,7 @@ data:
   labels:
     - claude_code
     - modelcontextprotocol
+    - skills
   platforms:
     - name: GitHub
       type: Code Hosting

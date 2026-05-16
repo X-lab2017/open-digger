@@ -1,0 +1,11 @@
+name: LibreChat
+description: Open-source AI chat platform with agents, MCP, and multiple model providers.
+description_zh: 支持智能体、MCP 和多模型供应商的开源 AI 聊天平台。
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 600596928
+          name: danny-avila/LibreChat

@@ -1,0 +1,5 @@
+name: Block
+type: Company
+data:
+  labels:
+    - goose

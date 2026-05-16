@@ -1,0 +1,11 @@
+name: Voicebox
+description: Open-source AI voice studio for cloning, dictation, and creation.
+description_zh: 用于声音克隆、听写和创作的开源 AI 语音工作室。
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 1141782198
+          name: jamiepine/voicebox

@@ -1,0 +1,11 @@
+name: Agent Browser
+description: Browser automation CLI for AI agents.
+description_zh: 面向 AI 智能体的浏览器自动化 CLI。
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 1132001614
+          name: vercel-labs/agent-browser

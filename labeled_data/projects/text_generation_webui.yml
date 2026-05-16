@@ -1,0 +1,11 @@
+name: TextGen
+description: Open-source desktop app for local LLMs with text, vision, tool-calling, and API support.
+description_zh: 支持文本、视觉、工具调用和 API 的本地大语言模型开源桌面应用。
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 580642043
+          name: oobabooga/textgen

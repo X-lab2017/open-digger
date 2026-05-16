@@ -1,0 +1,11 @@
+name: mistral.rs
+description: Fast and flexible LLM inference engine.
+description_zh: 快速灵活的大模型推理引擎。
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 763774926
+          name: EricLBuehler/mistral.rs

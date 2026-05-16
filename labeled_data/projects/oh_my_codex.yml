@@ -1,0 +1,11 @@
+name: Oh My Codex
+description: Hooks, agent teams, and workflow tools for Codex.
+description_zh: 面向 Codex 的 hooks、智能体团队和工作流工具。
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 1148052330
+          name: Yeachan-Heo/oh-my-codex

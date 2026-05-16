@@ -1,0 +1,5 @@
+name: TabbyML
+type: Company
+data:
+  labels:
+    - tabby

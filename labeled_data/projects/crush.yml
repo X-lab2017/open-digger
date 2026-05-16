@@ -1,0 +1,11 @@
+name: Crush
+description: Agentic coding tool for terminal workflows.
+description_zh: 面向终端工作流的智能体编程工具。
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 987670088
+          name: charmbracelet/crush

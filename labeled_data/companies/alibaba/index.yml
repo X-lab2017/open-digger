@@ -37,12 +37,15 @@ data:
     - open_messaging
     - openkraken
     - openkruise
+    - opensandbox
     - opensergo
     - opensumi
     - openyurt
+    - page_agent
     - paimon
     - polardb-pg
     - polardb-x
+    - qwen_code
     - rocketmq
     - sca
     - sealer

@@ -1,0 +1,11 @@
+name: OM1
+description: Modular AI runtime for robots.
+description_zh: 面向机器人的模块化 AI 运行时。
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 468194
+          name: OpenMind

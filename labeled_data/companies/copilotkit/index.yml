@@ -1,0 +1,11 @@
+name: CopilotKit
+type: Company
+data:
+  labels:
+    - copilotkit
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 131273140
+          name: CopilotKit

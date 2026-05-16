@@ -1,0 +1,5 @@
+name: Qodo
+type: Company
+data:
+  labels:
+    - pr_agent

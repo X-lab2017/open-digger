@@ -1,0 +1,11 @@
+name: PR Agent
+description: AI pull request assistant for code review and development workflows.
+description_zh: 面向代码审查与研发流程的 AI Pull Request 助手。
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 662766482
+          name: The-PR-Agent/pr-agent

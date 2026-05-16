@@ -2,6 +2,7 @@ name: GitHub
 type: Company
 data:
   labels:
+    - copilot_cli
     - electron
   platforms:
     - name: GitHub

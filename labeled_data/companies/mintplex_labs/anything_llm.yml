@@ -1,0 +1,11 @@
+name: AnythingLLM
+description: All-in-one AI productivity platform with private, on-device and self-hosted workflows.
+description_zh: 一体化 AI 生产力平台，支持本地优先和自托管工作流。
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 649170660
+          name: Mintplex-Labs/anything-llm

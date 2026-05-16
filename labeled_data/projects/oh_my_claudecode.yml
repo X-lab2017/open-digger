@@ -1,0 +1,11 @@
+name: Oh My ClaudeCode
+description: Multi-agent orchestration for Claude Code.
+description_zh: 面向 Claude Code 的多智能体编排工具。
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 1130809465
+          name: Yeachan-Heo/oh-my-claudecode

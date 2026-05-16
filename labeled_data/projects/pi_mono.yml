@@ -1,0 +1,11 @@
+name: Pi Mono
+description: AI agent toolkit with coding agent CLI, LLM API, UI libraries, and integrations.
+description_zh: AI 智能体工具包，包含编程智能体 CLI、大模型 API、UI 库和集成。
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 1035029907
+          name: earendil-works/pi

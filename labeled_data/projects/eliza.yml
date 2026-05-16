@@ -1,0 +1,11 @@
+name: Eliza
+description: Autonomous agent framework for building AI agents.
+description_zh: 用于构建 AI 智能体的自主智能体框架。
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 186240462
+          name: elizaOS

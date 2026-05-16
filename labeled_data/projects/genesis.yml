@@ -1,0 +1,11 @@
+name: Genesis
+description: Generative world for general-purpose robotics and embodied AI learning.
+description_zh: 面向通用机器人和具身智能学习的生成式世界。
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 149333263
+          name: Genesis-Embodied-AI

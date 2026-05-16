@@ -1,0 +1,11 @@
+name: OpenFang
+description: Open-source agent operating system.
+description_zh: 开源智能体操作系统。
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 1166139870
+          name: RightNow-AI/openfang

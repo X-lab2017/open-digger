@@ -1,0 +1,11 @@
+name: Qwen Code
+description: Open-source terminal AI coding agent from the Qwen ecosystem.
+description_zh: Qwen 生态中的开源终端 AI 编程智能体。
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 1008713177
+          name: QwenLM/qwen-code

@@ -1,0 +1,11 @@
+name: RTK
+description: CLI proxy that reduces LLM token consumption for common development commands.
+description_zh: 为常见开发命令降低大模型 token 消耗的 CLI 代理。
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 258253854
+          name: rtk-ai

@@ -1,0 +1,11 @@
+name: memU
+description: Memory system for proactive agents and agentic workflows.
+description_zh: 面向主动式智能体和智能体工作流的记忆系统。
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 1028070615
+          name: NevaMind-AI/memU

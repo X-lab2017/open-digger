@@ -1,0 +1,11 @@
+name: Agno
+description: Platform for building, running, and managing agents.
+description_zh: 用于构建、运行和管理智能体的平台。
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 104874993
+          name: agno-agi

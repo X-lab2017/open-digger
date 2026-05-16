@@ -1,0 +1,11 @@
+name: Everything Claude Code
+description: Agent harness optimization system for Claude Code, Codex, OpenCode, Cursor, and related tools.
+description_zh: 面向 Claude Code、Codex、OpenCode、Cursor 等工具的智能体编排优化系统。
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 1136590548
+          name: affaan-m/everything-claude-code

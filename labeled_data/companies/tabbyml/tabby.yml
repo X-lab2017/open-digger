@@ -1,0 +1,11 @@
+name: Tabby
+description: Self-hosted AI coding assistant.
+description_zh: 自托管 AI 编程助手。
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 125617854
+          name: TabbyML

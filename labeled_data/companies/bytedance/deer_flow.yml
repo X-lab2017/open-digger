@@ -1,0 +1,11 @@
+name: DeerFlow
+description: Long-horizon super-agent harness for research, coding, and content creation.
+description_zh: 用于研究、编程和内容创作的长周期超级智能体框架。
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 979115477
+          name: bytedance/deer-flow

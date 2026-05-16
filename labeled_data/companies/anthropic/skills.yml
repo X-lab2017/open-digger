@@ -1,0 +1,11 @@
+name: Agent Skills
+description: Public repository for Agent Skills.
+description_zh: Agent Skills 的公开仓库。
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 1061953414
+          name: anthropics/skills

@@ -1,0 +1,11 @@
+name: RAGFlow
+description: Open-source retrieval-augmented generation engine for building RAG workflows.
+description_zh: 用于构建 RAG 工作流的开源检索增强生成引擎。
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 730534580
+          name: infiniflow/ragflow

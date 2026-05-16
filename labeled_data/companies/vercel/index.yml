@@ -2,6 +2,8 @@ name: Vercel
 type: Company
 data:
   labels:
+    - agent_browser
+    - ai
     - next
   platforms:
     - name: GitHub

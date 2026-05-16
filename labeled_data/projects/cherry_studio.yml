@@ -1,0 +1,11 @@
+name: Cherry Studio
+description: AI productivity studio with chat, autonomous agents, and assistants.
+description_zh: 集成聊天、自主智能体和助手的 AI 生产力工作室。
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 187777663
+          name: CherryHQ

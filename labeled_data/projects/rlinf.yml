@@ -1,0 +1,11 @@
+name: RLinf
+description: Reinforcement learning infrastructure for embodied and agentic AI.
+description_zh: 面向具身智能和智能体 AI 的强化学习基础设施。
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 226440105
+          name: RLinf

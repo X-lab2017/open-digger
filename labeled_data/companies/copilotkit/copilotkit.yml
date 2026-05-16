@@ -1,0 +1,11 @@
+name: CopilotKit
+description: Frontend stack for agents and generative UI.
+description_zh: 面向智能体与生成式 UI 的前端技术栈。
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 655515393
+          name: CopilotKit/CopilotKit

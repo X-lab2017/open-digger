@@ -8,6 +8,7 @@ data:
     - ':companies/alibaba/seata'
     - agent_universe
     - aigw
+    - ant_design_x
     - ant_mini_program
     - antchain
     - antd
@@ -51,6 +52,7 @@ data:
     - petercat
     - react_component
     - secretflow
+    - seekdb
     - sofastack
     - sqlflow
     - tongsuo

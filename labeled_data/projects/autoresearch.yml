@@ -1,0 +1,11 @@
+name: AutoResearch
+description: AI agents for automatically running nanochat training research.
+description_zh: 用于自动运行 nanochat 训练研究的 AI 智能体。
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 1174820787
+          name: karpathy/autoresearch

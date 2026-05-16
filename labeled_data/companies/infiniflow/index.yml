@@ -1,0 +1,11 @@
+name: Infinity Flow
+type: Company
+data:
+  labels:
+    - ragflow
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 69962740
+          name: infiniflow

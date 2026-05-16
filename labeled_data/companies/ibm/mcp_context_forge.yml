@@ -1,0 +1,11 @@
+name: MCP Context Forge
+description: AI gateway, registry, and proxy for MCP, A2A, and REST/gRPC APIs.
+description_zh: 面向 MCP、A2A 和 REST/gRPC API 的 AI 网关、注册中心和代理。
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 979886407
+          name: IBM/mcp-context-forge

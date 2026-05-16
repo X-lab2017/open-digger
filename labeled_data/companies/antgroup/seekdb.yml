@@ -1,0 +1,11 @@
+name: SeekDB
+description: AI-native search database that unifies vector, text, structured, and semi-structured data.
+description_zh: AI 原生搜索数据库，统一支持向量、文本、结构化与半结构化数据。
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 1080442728
+          name: oceanbase/seekdb
