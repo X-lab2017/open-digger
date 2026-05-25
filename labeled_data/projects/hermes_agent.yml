@@ -7,5 +7,5 @@ data:
     - name: GitHub
       type: Code Hosting
       repos:
-        - name: NousResearch/hermes-agent
-          id: 1024554267
+        - id: 1024554267
+          name: NousResearch/hermes-agent

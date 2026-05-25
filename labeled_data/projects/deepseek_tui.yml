@@ -1,0 +1,11 @@
+name: DeepSeek TUI
+type: Project
+description: Coding agent for DeepSeek models that runs in your terminal.
+description_zh: 在终端中运行的 DeepSeek 模型编程助手。
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 1137711311
+          name: Hmbown/DeepSeek-TUI

@@ -77,6 +77,12 @@ meta:
     - year: 2025
       quarter: 2
       count: 758265
+    - year: 2025
+      quarter: 3
+      count: 809104
+    - year: 2025
+      quarter: 4
+      count: 861265
 data:
   labels:
     - ':companies/armo'

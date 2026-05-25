@@ -77,6 +77,12 @@ meta:
     - year: 2025
       quarter: 2
       count: 9739
+    - year: 2025
+      quarter: 3
+      count: 15249
+    - year: 2025
+      quarter: 4
+      count: 21288
 data:
   labels:
     - SC-01

@@ -80,6 +80,12 @@ meta:
     - year: 2025
       quarter: 2
       count: 1709343
+    - year: 2025
+      quarter: 3
+      count: 1848978
+    - year: 2025
+      quarter: 4
+      count: 2004425
 data:
   labels:
     - ':companies/duckdb'

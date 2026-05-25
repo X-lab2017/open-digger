@@ -5,7 +5,6 @@ data:
   labels:
     - hudi
     - jaeger
-    - openmetadata
   platforms:
     - name: GitHub
       type: Code Hosting

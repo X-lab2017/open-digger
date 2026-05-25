@@ -76,6 +76,12 @@ meta:
     - year: 2025
       quarter: 2
       count: 4281405
+    - year: 2025
+      quarter: 3
+      count: 4593480
+    - year: 2025
+      quarter: 4
+      count: 4973908
 data:
   labels:
     - ':companies/tier4'

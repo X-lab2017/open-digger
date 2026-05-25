@@ -77,6 +77,12 @@ meta:
     - year: 2025
       quarter: 2
       count: 10136
+    - year: 2025
+      quarter: 3
+      count: 11925
+    - year: 2025
+      quarter: 4
+      count: 13611
 data:
   labels:
     - GN-B

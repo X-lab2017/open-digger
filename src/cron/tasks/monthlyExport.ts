@@ -131,11 +131,11 @@ const task: Task = {
             }
             if (['getRepoActivity', 'getUserActivity', 'repoStars'].includes(func.name)) {
               // write meta data in activity calculation
-              writeFileSync(join(path, 'meta.json'), JSON.stringify({
+              updateMetaData(join(path, 'meta.json'), {
                 updatedAt: new Date().getTime(),
                 type: option.type ?? undefined,
-                id: parseInt(id),
-              }));
+                id: String(id).startsWith(':') ? id : parseInt(id),
+              }, true);
             }
           }
 
@@ -281,11 +281,14 @@ const task: Task = {
       await exportLabelMetrics();
     };
 
-    const updateMetaData = (path: string, data: any) => {
+    const updateMetaData = (path: string, data: any, write: boolean = false) => {
       try {
         let outputData = data;
-        if (!existsSync(path)) return;
-        const originalData = JSON.parse(readFileSync(path).toString());
+        if (!write && !existsSync(path)) return;
+        let originalData = {};
+        if (existsSync(path)) {
+          originalData = JSON.parse(readFileSync(path).toString());
+        }
         outputData = {
           ...originalData,
           ...data,

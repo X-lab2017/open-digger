@@ -77,6 +77,12 @@ meta:
     - year: 2025
       quarter: 2
       count: 23826
+    - year: 2025
+      quarter: 3
+      count: 27549
+    - year: 2025
+      quarter: 4
+      count: 31019
 data:
   labels:
     - MW-C

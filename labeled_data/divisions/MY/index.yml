@@ -76,6 +76,12 @@ meta:
     - year: 2025
       quarter: 2
       count: 913274
+    - year: 2025
+      quarter: 3
+      count: 977950
+    - year: 2025
+      quarter: 4
+      count: 1058378
 data:
   labels:
     - MY-01

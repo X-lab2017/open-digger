@@ -79,6 +79,12 @@ meta:
     - year: 2025
       quarter: 2
       count: 4097212
+    - year: 2025
+      quarter: 3
+      count: 4273520
+    - year: 2025
+      quarter: 4
+      count: 4490870
 data:
   labels:
     - ':companies/vk'

@@ -77,6 +77,12 @@ meta:
     - year: 2025
       quarter: 2
       count: 11359
+    - year: 2025
+      quarter: 3
+      count: 13328
+    - year: 2025
+      quarter: 4
+      count: 15066
 data:
   labels:
     - SL-E

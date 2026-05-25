@@ -76,3 +76,9 @@ meta:
     - year: 2025
       quarter: 2
       count: 4690
+    - year: 2025
+      quarter: 3
+      count: 4921
+    - year: 2025
+      quarter: 4
+      count: 5180

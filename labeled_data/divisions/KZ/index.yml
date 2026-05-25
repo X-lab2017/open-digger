@@ -77,6 +77,12 @@ meta:
     - year: 2025
       quarter: 2
       count: 338631
+    - year: 2025
+      quarter: 3
+      count: 368641
+    - year: 2025
+      quarter: 4
+      count: 413225
 data:
   labels:
     - KZ-10

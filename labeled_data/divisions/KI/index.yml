@@ -62,6 +62,12 @@ meta:
     - year: 2025
       quarter: 2
       count: 252
+    - year: 2025
+      quarter: 3
+      count: 324
+    - year: 2025
+      quarter: 4
+      count: 433
 data:
   labels:
     - KI-G

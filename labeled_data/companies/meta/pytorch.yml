@@ -1,5 +1,7 @@
 name: PyTorch
 type: Project
+description: Tensors and Dynamic neural networks in Python with strong GPU acceleration.
+description_zh: 张量和动态神经网络的 Python 实现，具有强大的 GPU 加速能力。
 data:
   platforms:
     - name: GitHub

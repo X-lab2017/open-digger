@@ -74,6 +74,12 @@ meta:
     - year: 2025
       quarter: 2
       count: 4227
+    - year: 2025
+      quarter: 3
+      count: 5317
+    - year: 2025
+      quarter: 4
+      count: 6142
 data:
   labels:
     - SS-BN

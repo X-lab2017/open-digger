@@ -77,6 +77,12 @@ meta:
     - year: 2025
       quarter: 2
       count: 161726
+    - year: 2025
+      quarter: 3
+      count: 169981
+    - year: 2025
+      quarter: 4
+      count: 179941
 data:
   labels:
     - HR-01

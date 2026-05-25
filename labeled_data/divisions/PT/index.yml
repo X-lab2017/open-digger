@@ -77,6 +77,12 @@ meta:
     - year: 2025
       quarter: 2
       count: 590499
+    - year: 2025
+      quarter: 3
+      count: 629537
+    - year: 2025
+      quarter: 4
+      count: 680323
 data:
   labels:
     - ':companies/dio'

@@ -77,6 +77,12 @@ meta:
     - year: 2025
       quarter: 2
       count: 6335
+    - year: 2025
+      quarter: 3
+      count: 7195
+    - year: 2025
+      quarter: 4
+      count: 8341
 data:
   labels:
     - NE-1

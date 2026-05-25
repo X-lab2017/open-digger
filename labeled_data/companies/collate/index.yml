@@ -1,0 +1,5 @@
+name: Collate
+type: Company
+data:
+  labels:
+    - openmetadata
