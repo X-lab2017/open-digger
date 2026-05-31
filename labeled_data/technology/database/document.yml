@@ -56,6 +56,8 @@ data:
           name: Lona-Development/Server
         - id: 50098469
           name: Nexedi/neoppod
+        - id: 1183612568
+          name: NodeDB-Lab/nodedb
         - id: 284225188
           name: PoloDB/PoloDB
         - id: 188354257
