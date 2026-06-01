@@ -3,6 +3,7 @@ import { Task } from '..';
 import getConfig from '../../config';
 import { insertRecords, query } from '../../db/clickhouse';
 import { createClient as createGoogleClient } from '@google/maps';
+import { getLogger } from '../../utils';
 
 /**
  * This task is used to update user location to standard address
@@ -13,6 +14,7 @@ const task: Task = {
   callback: async () => {
     const config = await getConfig();
     const googleClient = createGoogleClient({ key: config.google.map.key, timeout: 30000 });
+    const logger = getLogger('updateLocation');
 
     // create info table
     const createTableQuery = `
@@ -83,7 +85,11 @@ const task: Task = {
         items.push({ location, ...parsedLocation });
       }
     }
-    await insertRecords(items, 'location_info');
+
+    if (items.length > 0) {
+      logger.info(`Inserting ${items.length} location info`);
+      await insertRecords(items, 'location_info');
+    }
   }
 };
 

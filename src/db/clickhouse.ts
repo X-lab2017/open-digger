@@ -20,16 +20,30 @@ export async function query<T = any[]>(q: string, options: any = {}): Promise<T[
 }
 
 export async function queryStream<T = any>(q: string, onRow: (row: T) => void, options: any = {}): Promise<void> {
-  return new Promise(async resolve => {
+  return new Promise(async (resolve, reject) => {
+    let settled = false;
+    const settle = (fn: () => void) => {
+      if (!settled) { settled = true; fn(); }
+    };
     try {
       const resultSet = await (await getClient()).query({ query: q, format: 'JSONCompactEachRow', ...options });
       const stream: any = resultSet.stream();
-      stream.on('data', (rows: Row[]) => rows.forEach(row => onRow(row.json())));
-      stream.on('end', () => resolve());
-      stream.on('error', (err: any) => console.error(`Query for ${q} error: ${err}`));
+      stream.on('data', (rows: Row[]) => {
+        try {
+          rows.forEach(row => onRow(row.json()));
+        } catch (e) {
+          stream.destroy();
+          settle(() => reject(e));
+        }
+      });
+      stream.on('end', () => settle(() => resolve()));
+      stream.on('error', (err: any) => {
+        console.error(`Query stream error: ${err}`);
+        settle(() => reject(err));
+      });
     } catch (e) {
       console.error(`Caught error ${e} while query: ${q}`);
-      resolve();
+      settle(() => reject(e));
     }
   });
 }

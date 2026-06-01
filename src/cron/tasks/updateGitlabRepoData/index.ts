@@ -121,7 +121,7 @@ LIMIT ${repoUpdateBatchSize};`);
           })(),
         ]);
 
-        logger.info(`Got ${issueEvents.length} issue events and ${mrEvents.length} mr events for ${repo.name}`);
+        // logger.info(`Got ${issueEvents.length} issue events and ${mrEvents.length} mr events for ${repo.name}`);
 
         const issueUpdatedAtDate = repo.issueUpdatedAt ? new Date(repo.issueUpdatedAt) : new Date(0);
         const mrUpdatedAtDate = repo.mrUpdatedAt ? new Date(repo.mrUpdatedAt) : new Date(0);

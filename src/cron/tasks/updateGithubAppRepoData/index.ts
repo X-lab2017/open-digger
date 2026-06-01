@@ -13,9 +13,9 @@ const REPO_UPDATE_CONCURRENCY = 20;
 // update repos by installation id in batch, so that we can avoid rate limit error
 // since github also has rate limit for installation access
 // reference: https://docs.github.com/en/rest/using-the-rest-api/rate-limits-for-the-rest-api?apiVersion=2022-11-28#primary-rate-limit-for-github-app-installations
-const INSTALLATION_UPDATE_BATCH_SIZE = 100;
+const INSTALLATION_UPDATE_BATCH_SIZE = 200;
 const task: Task = {
-  cron: '0 1 * * *',
+  cron: '0 * * * *',
   singleInstance: true,
   callback: async () => {
     const logger = getLogger('UpdateGithubAppRepoDataTask');

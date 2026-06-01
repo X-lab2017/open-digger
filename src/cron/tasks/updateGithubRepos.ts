@@ -30,10 +30,9 @@ const task: Task = {
     })
     await graphqlClient.init();
 
-    const queryRepoInfo = async (owner: string, name: string) => {
+    const queryRepoInfo = async (owner: string, name: string): Promise<{ status: 'normal' | 'not_found' | 'error', repo?: any }> => {
       try {
-        const [result, readme]: any[] = await Promise.all([
-          graphqlClient.query(`query getRepo($owner: String!, $name: String!){ 
+        const result: any = await graphqlClient.query(`query getRepo($owner: String!, $name: String!){ 
             repository(owner: $owner, name: $name) {
               createdAt
               description
@@ -63,32 +62,39 @@ const task: Task = {
                 spdxId
               }
             }
-          }`, { owner, name }),
-          oct.repos.getReadme({ owner, repo: name }),
-        ]);
-        if (!result) return null;
+          }`, { owner, name });
+        if (!result || !result.repository) return { status: 'not_found' };
         const repo = result.repository;
         repo.repositoryTopics = repo.repositoryTopics.nodes;
         repo.languages = repo.languages.nodes;
-        if (readme && readme.data && readme.data.content) {
-          if (readme.data.encoding !== 'base64') {
-          } else {
-            repo.readmeText = Buffer.from(readme.data.content, 'base64').toString('utf-8');
+        // Fetch README separately to avoid failing the entire request
+        try {
+          const readme = await oct.repos.getReadme({ owner, repo: name });
+          if (readme && readme.data && readme.data.content) {
+            if (readme.data.encoding === 'base64') {
+              repo.readmeText = Buffer.from(readme.data.content, 'base64').toString('utf-8');
+            }
           }
-        } else {
-          logger.warn(`Can not find README for ${owner}/${name}`);
+        } catch (readmeErr) {
+          logger.warn(`Can not find README for ${owner}/${name}, e=${readmeErr}`);
         }
-        return repo;
-      } catch (e) {
+        return { status: 'normal', repo };
+      } catch (e: any) {
+        // Only mark as not_found when GitHub explicitly returns 404 or repository not resolved
+        const msg = e?.message ?? '';
+        if (e?.status === 404 || msg.includes('Could not resolve to a Repository')) {
+          return { status: 'not_found' };
+        }
         logger.error(`Error on fetch ${owner}/${name}, e=${e}`);
-        return null;
+        return { status: 'error' };
       }
     };
 
     // create info table
     const createTableQuery = `
-    CREATE TABLE IF NOT EXISTS gh_repo_info
+    CREATE TABLE IF NOT EXISTS repo_info
     (
+      \`platform\` LowCardinality(String),
       \`id\` UInt64,
       \`status\` Enum('normal' = 1, 'not_found' = 2),
       \`updated_at\` DateTime,
@@ -105,7 +111,7 @@ const task: Task = {
       \`created_at\` DateTime
     )
     ENGINE = ReplacingMergeTree
-    ORDER BY (id, updated_at)
+    ORDER BY (platform, id, updated_at)
     SETTINGS index_granularity = 8192`;
     await query(createTableQuery);
 
@@ -114,7 +120,7 @@ const task: Task = {
     const date = `${now.getFullYear()}-${(now.getMonth() + 1).toString().padStart(2, '0')}-01 00:00:00`;
     const getRepossList = async (totalCount: number): Promise<any[]> => {
       let q = `SELECT id, repo_name FROM export_repo
-      WHERE platform='GitHub' AND id NOT IN (SELECT id FROM gh_repo_info WHERE updated_at > subtractMonths(now(), 6) OR status = 'not_found')
+      WHERE platform='GitHub' AND id NOT IN (SELECT id FROM repo_info WHERE updated_at > subtractMonths(now(), 6) OR status = 'not_found')
       LIMIT ${totalCount}`;
       let reposList = await query(q);
       return reposList;
@@ -127,11 +133,18 @@ const task: Task = {
     const items: any[] = [];
     for (const [id, repoName] of reposList) {
       const [owner, name] = repoName.split('/');
-      const repo: any = await queryRepoInfo(owner, name);
+      const result = await queryRepoInfo(owner, name);
+      if (result.status === 'error') {
+        // Skip repos with transient errors, do not mark as not_found
+        logger.warn(`Skipping ${owner}/${name} due to transient error`);
+        continue;
+      }
       const item: any = { id: parseInt(id), updated_at: date };
-      if (!repo) {
+      if (result.status === 'not_found') {
         item.status = 'not_found';
       } else {
+        const repo = result.repo;
+        item.platform = 'GitHub';
         item.status = 'normal';
         item.description = repo.description ?? '';
         item.topics = repo.repositoryTopics.map(i => i.topic.name);
@@ -150,7 +163,7 @@ const task: Task = {
         logger.info(`${items.length} repos have been processed.`);
       }
     }
-    await insertRecords(items, 'gh_repo_info');
+    await insertRecords(items, 'repo_info');
   }
 };
 

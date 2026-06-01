@@ -77,8 +77,8 @@ function writeDescriptionToYml(
 GROUP BY repo_id, platform
 ORDER BY o DESC
 LIMIT 1) r,
-gh_repo_info i
-WHERE r.platform = 'GitHub' AND r.repo_id=i.id
+repo_info i
+WHERE r.platform = i.platform AND r.repo_id=i.id
 GROUP BY r.repo_id`);
       if (descAndReadme.length > 0) {
         const [_repoId, description, readme] = descAndReadme[0];

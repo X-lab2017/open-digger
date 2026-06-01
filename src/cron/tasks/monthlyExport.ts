@@ -175,7 +175,7 @@ const task: Task = {
           const { min, max } = repoPartitions[i];
           option.whereClause = `repo_id BETWEEN ${min} AND ${max} AND
           (platform, repo_id) IN (SELECT platform, id FROM ${exportRepoTableName}) AND
-          (platform, repo_id) NOT IN (SELECT 'GitHub', id FROM gh_repo_info WHERE status='not_found')`;
+          (platform, repo_id) NOT IN (SELECT platform, id FROM repo_info WHERE status='not_found')`;
           option.type = 'repo';
           // [X-lab index] repo activity
           await processMetric(getRepoActivity, { ...option, options: { developerDetail: true } },
@@ -423,7 +423,7 @@ GROUP BY label`;
 (SELECT o.platform AS p, o.repo_name AS n, l.id AS li, l.name ln, l.type AS lt FROM
   (SELECT platform, repo_id, any(org_id) AS org_id, argMax(repo_name, created_at) AS repo_name FROM
   global_openrank WHERE type = 'Repo' AND (platform, repo_id) IN (SELECT platform, id FROM export_repo)
-  AND (platform, repo_id) NOT IN (SELECT 'GitHub', id FROM gh_repo_info WHERE status='not_found')
+  AND (platform, repo_id) NOT IN (SELECT platform, id FROM repo_info WHERE status='not_found')
   GROUP BY platform, repo_id) o,
   (SELECT * FROM flatten_labels WHERE type IN ('Project', 'Community', 'Foundation', 'Company', 'Tech-0', 'University-0', 'Institution-0', 'Division-0')) l
 WHERE o.platform=l.platform AND ((o.repo_id=l.entity_id AND l.entity_type='Repo') OR (o.org_id=l.entity_id AND l.entity_type='Org')))
