@@ -1713,6 +1713,134 @@ data:
           name: jinqi7
         - id: 49986348
           name: volcano-sh-bot
+        - id: 90828364
+          name: tensorrt-cicd
+        - id: 172744619
+          name: comfy-pr-bot
+        - id: 182006032
+          name: all-hands-bot
+        - id: 21957446
+          name: pytorchbot
+        - id: 126667691
+          name: CometActions
+        - id: 240547403
+          name: pr-validator-bot
+        - id: 270284398
+          name: PaddlePaddle-bot
+        - id: 87703623
+          name: robot-ci-heartex
+        - id: 121576822
+          name: gradio-pr-bot
+        - id: 236526959
+          name: flashinfer-bot
+        - id: 245956830
+          name: svcnvidia-nemo-ci
+        - id: 236850375
+          name: ammar-agent
+        - id: 234946041
+          name: rubimoutlook740-bot
+        - id: 223368873
+          name: adk-bot
+        - id: 85128059
+          name: searxng-bot
+        - id: 76678816
+          name: karmada-bot
+        - id: 48982446
+          name: kubeedge-bot
+        - id: 162969726
+          name: scylladbbot
+        - id: 163313767
+          name: ocpdocs-vale-bot
+        - id: 74306126
+          name: backstage-service
+        - id: 107444360
+          name: ocpdocs-previewbot
+        - id: 5429108
+          name: ceph-jenkins
+        - id: 148914812
+          name: rhacs-bot
+        - id: 55852648
+          name: metal3-io-bot
+        - id: 95302551
+          name: kongponents-bot
+        - id: 80706817
+          name: foundationdb-ci
+        - id: 205926666
+          name: neo4j-docops-agent
+        - id: 53030124
+          name: istio-policy-bot
+        - id: 52562448
+          name: kubevirt-commenter-bot
+        - id: 20374350
+          name: minikube-bot
+        - id: 174728082
+          name: svcAPLBot
+        - id: 229726533
+          name: ocp-sustaining-admins
+        - id: 86465892
+          name: kruise-bot
+        - id: 69307580
+          name: robot-ch-test-poll3
+        - id: 47390204
+          name: robot-ch-test-poll1
+        - id: 102140541
+          name: openshift-ota-bot
+        - id: 65280152
+          name: ceph-csi-bot
+        - id: 71450783
+          name: hco-bot
+        - id: 69306974
+          name: robot-ch-test-poll4
+        - id: 74887181
+          name: eks-distro-bot
+        - id: 63349887
+          name: robot-ch-test-poll2
+        - id: 110385897
+          name: k0s-bot
+        - id: 118811860
+          name: robot-clickhouse-ci-2
+        - id: 56698301
+          name: dapr-bot
+        - id: 45356221
+          name: robot-ch-test-poll
+        - id: 199975426
+          name: ydbot
+        - id: 49303554
+          name: Apache-HBase
+        - id: 257724643
+          name: CelerData-Reviewer
+        - id: 140790392
+          name: duckdblabs-bot
+        - id: 113648949
+          name: risingwave-ci
+        - id: 57942646
+          name: vdaas-ci
+        - id: 228744952
+          name: paradedb-bot
+        - id: 254631370
+          name: StarRocks-Reviewer
+        - id: 37936598
+          name: TarantoolBot
+        - id: 36883350
+          name: scylladb-promoter
+        - id: 123763385
+          name: timescale-automation
+        - id: 247838182
+          name: alamb-ghbot
+        - id: 234975836
+          name: clockwork-labs-bot
+        - id: 77737458
+          name: FishtownBuildBot
+        - id: 267740845
+          name: adriangbot
+        - id: 175387142
+          name: spectopo
+        - id: 79238446
+          name: mssonicbld
+        - id: 114952565
+          name: stephengillie
+        - id: 194854876
+          name: nextjs-bot
     - name: Gitee
       type: Code Hosting
       users:
@@ -1799,3 +1927,15 @@ data:
           name: opengauss_bot
         - id: 4568139
           name: openFuyao-bot
+        - id: 1893501
+          name: openharmony_devops
+        - id: 9459213
+          name: infra_team
+        - id: 2323141
+          name: gitcode-bot
+        - id: 10671088
+          name: agentic-workflow
+        - id: 5275533
+          name: openLiBingCI
+        - id: 9516837
+          name: hulk-ci-bot
