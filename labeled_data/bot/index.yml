@@ -1841,6 +1841,54 @@ data:
           name: stephengillie
         - id: 194854876
           name: nextjs-bot
+        - id: 123498312
+          name: tenstorrent-github-bot
+        - id: 70344339
+          name: va-vsp-bot
+        - id: 65035528
+          name: bitwarden-bot
+        - id: 68648060
+          name: rust-log-analyzer
+        - id: 15028808
+          name: bazel-io
+        - id: 46540222
+          name: va-cms-bot
+        - id: 253674004
+          name: marketplace-ai-reviewer
+        - id: 134544507
+          name: prodsecmachine
+        - id: 12471139
+          name: rust-timer
+        - id: 60776566
+          name: jenkins-infra-bot
+        - id: 8039454
+          name: alfresco-build
+        - id: 178941316
+          name: tradebot-elastic
+        - id: 153242045
+          name: svc-docs-eng-opensource-bot
+        - id: 3605123
+          name: google-admin
+        - id: 151284481
+          name: grader-cogs108
+        - id: 184441617
+          name: prestodb-ci
+        - id: 120689390
+          name: UnownBot
+        - id: 143536629
+          name: damn-good-b0t
+        - id: 258099709
+          name: netzenbot
+        - id: 127956735
+          name: mobiletest-ci-bot
+        - id: 75336432
+          name: eks-distro-pr-bot
+        - id: 93915689
+          name: tdesign-bot
+        - id: 110475461
+          name: eng-dev-ecosystem-bot
+        - id: 88769842
+          name: vercel-release-bot
     - name: Gitee
       type: Code Hosting
       users:
@@ -1939,3 +1987,5 @@ data:
           name: openLiBingCI
         - id: 9516837
           name: hulk-ci-bot
+        - id: 7174008
+          name: afwk_helper
