@@ -1903,6 +1903,16 @@ data:
           name: spring-builds
         - id: 125606113
           name: solrbot
+        - id: 107717825
+          name: opentelemetrybot
+        - id: 46524234
+          name: hadoop-yetus
+        - id: 99696057
+          name: openwrt-bot
+        - id: 199298453
+          name: vllm-bot
+        - id: 82989552
+          name: hc-github-team-nomad-core
     - name: Gitee
       type: Code Hosting
       users:
@@ -1956,6 +1966,18 @@ data:
           name: osc-bot
         - id: 16228528
           name: wenyuzifangtest001
+        - id: 12516224
+          name: openharmony_dcp
+        - id: 10379977
+          name: arkci
+        - id: 14563568
+          name: ohci
+        - id: 15847047
+          name: arkui-feature-manager
+        - id: 14506044
+          name: infrastructure-teams
+        - id: 9575379
+          name: openLiBing-bot
     - name: AtomGit
       type: Code Hosting
       users:
@@ -2003,3 +2025,9 @@ data:
           name: hulk-ci-bot
         - id: 7174008
           name: afwk_helper
+        - id: 5293293
+          name: openeuler-sync-bot
+        - id: 3227037
+          name: ohci1
+        - id: 1893530
+          name: openharmony_ops
