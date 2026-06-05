@@ -1889,6 +1889,20 @@ data:
           name: eng-dev-ecosystem-bot
         - id: 88769842
           name: vercel-release-bot
+        - id: 97796249
+          name: backport-action
+        - id: 18470668
+          name: prombot
+        - id: 81847
+          name: Claude
+        - id: 111755117
+          name: qdrant-cloud-bot
+        - id: 182743316
+          name: langfuse-bot
+        - id: 1134463
+          name: spring-builds
+        - id: 125606113
+          name: solrbot
     - name: Gitee
       type: Code Hosting
       users:
