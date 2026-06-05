@@ -22,6 +22,8 @@ data:
           name: JanusGraph/janusgraph
         - id: 1071734040
           name: LadybugDB/ladybug
+        - id: 1183612568
+          name: NodeDB-Lab/nodedb
         - id: 92834468
           name: Pometry/Raphtory
         - id: 45098765

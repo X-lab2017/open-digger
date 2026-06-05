@@ -8,6 +8,8 @@ data:
       repos:
         - id: 534109388
           name: EuclidOLAP/EuclidOLAP
+        - id: 1183612568
+          name: NodeDB-Lab/nodedb
         - id: 86868560
           name: TileDB-Inc/TileDB
         - id: 31373521

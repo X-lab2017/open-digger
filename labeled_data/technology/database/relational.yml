@@ -84,6 +84,8 @@ data:
           name: Mckoi/origsqldb
         - id: 316690542
           name: MonetDB/MonetDB
+        - id: 1183612568
+          name: NodeDB-Lab/nodedb
         - id: 684046299
           name: OpenTenBase/OpenTenBase
         - id: 41443810
@@ -240,6 +242,8 @@ data:
           name: fluree/db
         - id: 600860
           name: fosslc/Ingres
+        - id: 1127534604
+          name: garden-co/jazz
         - id: 29210020
           name: gavioto/fastdb
         - id: 95817032
@@ -362,6 +366,8 @@ data:
           name: radondb/radon
         - id: 206686299
           name: rayokota/kareldb
+        - id: 975773453
+          name: reifydb/reifydb
         - id: 393235957
           name: risinglightdb/risinglight
         - id: 453068084
