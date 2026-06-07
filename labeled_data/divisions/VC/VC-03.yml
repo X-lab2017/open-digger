@@ -1,5 +1,5 @@
 name: Saint David
-name_zh: 圣大卫
+name_zh: 圣大卫区
 type: Division-1
 meta:
   alpha2: VC-03
@@ -8,4 +8,5 @@ meta:
     - vc-03
     - '03'
     - saint david parish
+    - 圣大卫
   category: PARISH

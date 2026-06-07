@@ -1,0 +1,11 @@
+name: Phalombe
+name_zh: 法隆贝县
+type: Division-1
+meta:
+  alpha2: MW-PH
+  includes:
+    - phalombe
+    - mw-ph
+    - ph
+    - phalombe district
+  category: PROVINCE

@@ -1,0 +1,11 @@
+name: Limburg
+name_zh: 林堡省
+type: Division-1
+meta:
+  alpha2: BE-VLI
+  includes:
+    - limburg
+    - be-vli
+    - vli
+    - limburg province
+  category: PROVINCE

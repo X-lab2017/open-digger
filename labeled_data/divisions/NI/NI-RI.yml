@@ -1,5 +1,5 @@
 name: Rivas
-name_zh: 里瓦斯
+name_zh: 里瓦斯省
 type: Division-1
 meta:
   alpha2: NI-RI
@@ -8,4 +8,5 @@ meta:
     - ni-ri
     - ri
     - rivas department
+    - 里瓦斯
   category: DEPARTMENT

@@ -1,5 +1,5 @@
 name: Rôtânôkiri
-name_zh: 拉达那基里省
+name_zh: 腊塔纳基里省
 type: Division-1
 meta:
   alpha2: KH-16
@@ -13,4 +13,5 @@ meta:
     - rôtânôkiri
     - rôtânôkiri province
     - rôtkiri
+    - 拉达那基里省
   category: PROVINCE

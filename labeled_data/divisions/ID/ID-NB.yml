@@ -1,0 +1,11 @@
+name: Nusa Tenggara Barat
+name_zh: 西努沙登加拉省
+type: Division-1
+meta:
+  alpha2: ID-NB
+  includes:
+    - nusa tenggara barat
+    - id-nb
+    - nb
+    - nusa tenggara barat province
+  category: PROVINCE

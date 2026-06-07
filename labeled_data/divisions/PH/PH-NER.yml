@@ -1,0 +1,11 @@
+name: Negros Oriental
+name_zh: 东内格罗省
+type: Division-1
+meta:
+  alpha2: PH-NER
+  includes:
+    - negros oriental
+    - ph-ner
+    - ner
+    - negros oriental province
+  category: PROVINCE

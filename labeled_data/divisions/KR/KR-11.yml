@@ -1,5 +1,5 @@
-name: Seoul-teukbyeolsi
-name_zh: 首尔特别市
+name: Seoul
+name_zh: 首尔
 type: Division-1
 meta:
   alpha2: KR-11
@@ -11,4 +11,5 @@ meta:
     - seoul
     - seoul special city
     - 서울특별시
+    - 首尔特别市
   category: SPECIAL CITY

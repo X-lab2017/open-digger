@@ -1,5 +1,5 @@
 name: Pichincha
-name_zh: 皮钦查
+name_zh: 皮钦查省
 type: Division-1
 meta:
   alpha2: EC-P
@@ -8,4 +8,5 @@ meta:
     - ec-p
     - p
     - pichincha province
+    - 皮钦查
   category: PROVINCE

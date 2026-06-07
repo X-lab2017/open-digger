@@ -1,0 +1,11 @@
+name: Chieti
+name_zh: 基耶蒂省
+type: Division-1
+meta:
+  alpha2: IT-CH
+  includes:
+    - chieti
+    - it-ch
+    - ch
+    - chieti province
+  category: PROVINCE

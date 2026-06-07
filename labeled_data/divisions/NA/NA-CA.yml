@@ -1,4 +1,4 @@
-name: Zambezi
+name: Caprivi
 type: Division-1
 meta:
   alpha2: NA-CA
@@ -8,3 +8,4 @@ meta:
     - ca
     - zambezi region
   category: REGION
+name_zh: 卡普里维区

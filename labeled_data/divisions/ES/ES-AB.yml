@@ -1,0 +1,11 @@
+name: Albacete
+name_zh: 阿尔瓦塞特省
+type: Division-1
+meta:
+  alpha2: ES-AB
+  includes:
+    - albacete
+    - es-ab
+    - ab
+    - albacete province
+  category: PROVINCE

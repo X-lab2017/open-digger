@@ -1,5 +1,5 @@
 name: Tolima
-name_zh: 托利马
+name_zh: 托利马省
 type: Division-1
 meta:
   alpha2: CO-TOL
@@ -8,4 +8,5 @@ meta:
     - co-tol
     - tol
     - tolima department
+    - 托利马
   category: DEPARTMENT

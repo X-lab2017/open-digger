@@ -1,5 +1,5 @@
 name: Granma
-name_zh: 格拉玛
+name_zh: 格拉玛省
 type: Division-1
 meta:
   alpha2: CU-12
@@ -8,4 +8,5 @@ meta:
     - cu-12
     - '12'
     - granma province
+    - 格拉玛
   category: PROVINCE

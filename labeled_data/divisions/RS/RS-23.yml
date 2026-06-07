@@ -1,5 +1,5 @@
-name: Jablanički okrug
-name_zh: 雅布拉尼察尼克
+name: Jablanicki
+name_zh: 雅布兰尼卡州
 type: Division-1
 meta:
   alpha2: RS-23
@@ -8,4 +8,5 @@ meta:
     - rs-23
     - '23'
     - jablanički okrug district
+    - 雅布拉尼察尼克
   category: DISTRICT

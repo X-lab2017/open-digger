@@ -1,5 +1,5 @@
 name: Mecklenburg-Vorpommern
-name_zh: 梅克伦堡-前波莫瑞州
+name_zh: 梅克伦堡－前波美拉尼亚
 type: Division-1
 meta:
   alpha2: DE-MV
@@ -9,4 +9,5 @@ meta:
     - mv
     - mecklenburg-vorpommern land
     - mecklenburg-west pomerania
+    - 梅克伦堡-前波莫瑞州
   category: LAND

@@ -1,5 +1,5 @@
 name: Mae Hong Son
-name_zh: 湄宏森府
+name_zh: 夜丰颂府
 type: Division-1
 meta:
   alpha2: TH-58
@@ -8,4 +8,5 @@ meta:
     - th-58
     - '58'
     - mae hong son province
+    - 湄宏森府
   category: PROVINCE

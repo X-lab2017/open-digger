@@ -1,5 +1,5 @@
-name: Sucumbíos
-name_zh: 阿苏艾
+name: Sucumbios
+name_zh: 苏昆比奥斯省
 type: Division-1
 meta:
   alpha2: EC-U
@@ -9,4 +9,5 @@ meta:
     - u
     - sucumbíos province
     - sucumbios
+    - 阿苏艾
   category: PROVINCE

@@ -1,4 +1,4 @@
-name: Gedaref
+name: Gedarif
 type: Division-1
 meta:
   alpha2: SD-GD
@@ -10,3 +10,4 @@ meta:
     - gedaref
     - gedaref state
   category: STATE
+name_zh: 加达里夫省

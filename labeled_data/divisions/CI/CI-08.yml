@@ -1,0 +1,11 @@
+name: Zanzan
+name_zh: 赞赞区
+type: Division-1
+meta:
+  alpha2: CI-08
+  includes:
+    - zanzan
+    - ci-zz
+    - zz
+    - zanzan district
+  category: DISTRICT

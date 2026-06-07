@@ -1,5 +1,5 @@
 name: Surt
-name_zh: 米苏拉塔区
+name_zh: 蘇爾特省
 type: Division-1
 meta:
   alpha2: LY-SR
@@ -8,4 +8,5 @@ meta:
     - ly-sr
     - sr
     - surt popularate
+    - 米苏拉塔区
   category: POPULARATE

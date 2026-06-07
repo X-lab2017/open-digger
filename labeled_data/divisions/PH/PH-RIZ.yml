@@ -1,0 +1,11 @@
+name: Rizal
+name_zh: 黎刹省
+type: Division-1
+meta:
+  alpha2: PH-RIZ
+  includes:
+    - risal
+    - ph-riz
+    - riz
+    - risal province
+  category: PROVINCE

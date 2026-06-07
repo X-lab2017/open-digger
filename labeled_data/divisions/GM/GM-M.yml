@@ -1,5 +1,5 @@
 name: Central River
-name_zh: 布里卡玛
+name_zh: 中河区
 type: Division-1
 meta:
   alpha2: GM-M
@@ -8,4 +8,5 @@ meta:
     - gm-m
     - m
     - central river division
+    - 布里卡玛
   category: DIVISION

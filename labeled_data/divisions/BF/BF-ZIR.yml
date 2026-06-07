@@ -1,0 +1,11 @@
+name: Ziro
+name_zh: 济罗省
+type: Division-1
+meta:
+  alpha2: BF-ZIR
+  includes:
+    - ziro
+    - bf-zir
+    - zir
+    - ziro province
+  category: PROVINCE

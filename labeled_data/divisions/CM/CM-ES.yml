@@ -1,5 +1,5 @@
 name: Est
-name_zh: 西北大区
+name_zh: 东部区
 type: Division-1
 meta:
   alpha2: CM-ES
@@ -10,4 +10,5 @@ meta:
     - east region
     - est
     - est region
+    - 西北大区
   category: REGION

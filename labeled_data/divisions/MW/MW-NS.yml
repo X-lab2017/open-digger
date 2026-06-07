@@ -1,0 +1,11 @@
+name: Nsanje
+name_zh: 恩桑杰县
+type: Division-1
+meta:
+  alpha2: MW-NS
+  includes:
+    - nsanje
+    - mw-ns
+    - ns
+    - nsanje district
+  category: PROVINCE

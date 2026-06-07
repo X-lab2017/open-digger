@@ -1,4 +1,4 @@
-name: Podčetrtek
+name: Podcetrtek
 type: Division-1
 meta:
   alpha2: SI-092
@@ -8,3 +8,4 @@ meta:
     - '092'
     - podčetrtek municipality
   category: MUNICIPALITY
+name_zh: 波德切特泰克

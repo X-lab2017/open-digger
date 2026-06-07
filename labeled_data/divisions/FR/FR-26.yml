@@ -1,0 +1,11 @@
+name: Drôme
+name_zh: 德龙省
+type: Division-1
+meta:
+  alpha2: FR-26
+  includes:
+    - drôme
+    - fr-26
+    - '26'
+    - drôme metropolitan department
+  category: PROVINCE

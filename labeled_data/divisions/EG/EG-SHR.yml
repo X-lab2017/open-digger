@@ -1,5 +1,5 @@
-name: Ash Sharqīyah
-name_zh: 沙尔基亚省
+name: Ash Sharqiyah
+name_zh: 东部省
 type: Division-1
 meta:
   alpha2: EG-SHR
@@ -11,4 +11,5 @@ meta:
     - ash sharqia governorate
     - al-sharqia governorate
     - sharkia
+    - 沙尔基亚省
   category: GOVERNORATE

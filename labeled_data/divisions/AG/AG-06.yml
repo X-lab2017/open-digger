@@ -1,5 +1,5 @@
 name: Saint Paul
-name_zh: 圣保罗
+name_zh: 圣保罗区
 type: Division-1
 meta:
   alpha2: AG-06
@@ -8,4 +8,5 @@ meta:
     - ag-06
     - '06'
     - saint paul parish
+    - 圣保罗
   category: PARISH

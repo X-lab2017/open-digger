@@ -1,0 +1,11 @@
+name: Wele-Nzás
+name_zh: 韦莱恩萨斯省
+type: Division-1
+meta:
+  alpha2: GQ-WN
+  includes:
+    - wele-nzas
+    - gq-wn
+    - wn
+    - wele-nzas province
+  category: PROVINCE

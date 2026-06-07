@@ -1,5 +1,5 @@
 name: Huila
-name_zh: 休伊拉
+name_zh: 乌伊拉省
 type: Division-1
 meta:
   alpha2: CO-HUI
@@ -8,4 +8,5 @@ meta:
     - co-hui
     - hui
     - huila department
+    - 休伊拉
   category: DEPARTMENT

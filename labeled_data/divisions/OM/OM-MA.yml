@@ -1,5 +1,5 @@
-name: Masqaţ
-name_zh: 马斯喀特
+name: Muscat
+name_zh: 馬斯喀特省
 type: Division-1
 meta:
   alpha2: OM-MA
@@ -11,4 +11,5 @@ meta:
     - muscat
     - muscat governorate
     - محافظة مسقط
+    - 马斯喀特
   category: GOVERNORATE

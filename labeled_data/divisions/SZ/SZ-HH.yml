@@ -1,5 +1,5 @@
 name: Hhohho
-name_zh: 霍霍区
+name_zh: 霍霍
 type: Division-1
 meta:
   alpha2: SZ-HH
@@ -8,4 +8,5 @@ meta:
     - sz-hh
     - hh
     - hhohho region
+    - 霍霍区
   category: REGION

@@ -1,0 +1,11 @@
+name: Peravia
+name_zh: 佩拉维亚省
+type: Division-1
+meta:
+  alpha2: DO-17
+  includes:
+    - peravia
+    - do-17
+    - '17'
+    - peravia province
+  category: PROVINCE

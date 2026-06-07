@@ -1,5 +1,5 @@
 name: Mahdia
-name_zh: 马希迪亚区
+name_zh: 马赫迪耶省
 type: Division-1
 meta:
   alpha2: TN-53
@@ -9,4 +9,5 @@ meta:
     - '53'
     - mahdia governorate
     - gouvernorat de mahdia
+    - 马希迪亚区
   category: GOVERNORATE

@@ -1,0 +1,11 @@
+name: Longford
+name_zh: 朗福德郡
+type: Division-1
+meta:
+  alpha2: IE-LD
+  includes:
+    - an longfort
+    - ie-ld
+    - ld
+    - an longfort county
+  category: PROVINCE

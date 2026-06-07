@@ -1,5 +1,5 @@
 name: District of Columbia
-name_zh: 哥伦比亚特区州
+name_zh: 华盛顿哥伦比亚特区
 type: Division-1
 meta:
   alpha2: US-DC
@@ -8,4 +8,5 @@ meta:
     - us-dc
     - dc
     - district of columbia district
+    - 哥伦比亚特区州
   category: DISTRICT

@@ -1,5 +1,5 @@
-name: Talsu novads
-name_zh: 塔尔西市镇
+name: Talsi
+name_zh: 塔尔西自治市
 type: Division-1
 meta:
   alpha2: LV-097
@@ -10,4 +10,5 @@ meta:
     - talsu novads municipality
     - talsi
     - talsi municipality
+    - 塔尔西市镇
   category: MUNICIPALITY

@@ -1,0 +1,11 @@
+name: Agrigento
+name_zh: 阿格里真托省
+type: Division-1
+meta:
+  alpha2: IT-AG
+  includes:
+    - agrigento
+    - it-ag
+    - ag
+    - agrigento free municipal consortium
+  category: PROVINCE

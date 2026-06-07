@@ -1,5 +1,5 @@
 name: Northern Cape
-name_zh: 北开普
+name_zh: 北开普省
 type: Division-1
 meta:
   alpha2: ZA-NC
@@ -28,4 +28,5 @@ meta:
     - nyakatho-koloni province
     - itlhagwini-kapa
     - itlhagwini-kapa province
+    - 北开普
   category: PROVINCE

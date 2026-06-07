@@ -1,5 +1,5 @@
-name: Bovalon
-name_zh: 贝尔沃隆
+name: Beau Vallon
+name_zh: 博瓦隆区
 type: Division-1
 meta:
   alpha2: SC-08
@@ -10,4 +10,5 @@ meta:
     - beau vallon district
     - bovalon
     - bovalon district
+    - 贝尔沃隆
   category: DISTRICT

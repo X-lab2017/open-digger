@@ -1,5 +1,5 @@
 name: North Abaco
-name_zh: 北阿巴科
+name_zh: 北阿巴科区
 type: Division-1
 meta:
   alpha2: BS-NO
@@ -8,4 +8,5 @@ meta:
     - bs-no
     - 'no'
     - north abaco district
+    - 北阿巴科
   category: DISTRICT

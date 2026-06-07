@@ -1,0 +1,11 @@
+name: Ganzourgou
+name_zh: 冈祖尔古省
+type: Division-1
+meta:
+  alpha2: BF-GAN
+  includes:
+    - ganzourgou
+    - bf-gan
+    - gan
+    - ganzourgou province
+  category: PROVINCE

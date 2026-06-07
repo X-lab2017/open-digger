@@ -1,5 +1,5 @@
 name: Bình Thuận
-name_zh: 平顺
+name_zh: 平顺省
 type: Division-1
 meta:
   alpha2: VN-40
@@ -9,4 +9,5 @@ meta:
     - '40'
     - bình thuận province
     - binh thuan
+    - 平顺
   category: PROVINCE

@@ -1,5 +1,5 @@
-name: Kohgīlūyeh va Bowyer Aḩmad
-name_zh: 科吉卢耶-博耶尔艾哈迈德省
+name: Kermanshah
+name_zh: 克尔曼沙汗省
 type: Division-1
 meta:
   alpha2: IR-17
@@ -9,4 +9,5 @@ meta:
     - '17'
     - kohgīlūyeh va bowyer aḩmad province
     - kohgiluyeh and boyer-ahmad province
+    - 科吉卢耶-博耶尔艾哈迈德省
   category: PROVINCE

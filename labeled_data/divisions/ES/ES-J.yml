@@ -1,0 +1,11 @@
+name: Jaén
+name_zh: 哈恩省
+type: Division-1
+meta:
+  alpha2: ES-J
+  includes:
+    - jaén
+    - es-j
+    - j
+    - jaén province
+  category: PROVINCE

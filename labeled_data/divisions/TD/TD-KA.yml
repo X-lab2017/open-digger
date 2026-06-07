@@ -1,4 +1,4 @@
-name: Kānim
+name: Kanem
 type: Division-1
 meta:
   alpha2: TD-KA
@@ -10,3 +10,4 @@ meta:
     - kānim
     - kānim province
   category: PROVINCE
+name_zh: 加奈姆区

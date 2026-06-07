@@ -1,4 +1,4 @@
-name: Fontana
+name: Fontana, Gozo
 type: Division-1
 meta:
   alpha2: MT-10
@@ -8,3 +8,4 @@ meta:
     - '10'
     - fontana local council
   category: LOCAL COUNCIL
+name_zh: 丰塔纳

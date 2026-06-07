@@ -1,5 +1,5 @@
 name: Aguascalientes
-name_zh: 阿瓜斯卡连特斯
+name_zh: 阿瓜斯卡连特斯州
 type: Division-1
 meta:
   alpha2: MX-AGU
@@ -9,4 +9,5 @@ meta:
     - agu
     - aguascalientes state
     - ags
+    - 阿瓜斯卡连特斯
   category: STATE

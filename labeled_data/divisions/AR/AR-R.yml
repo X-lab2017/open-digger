@@ -1,5 +1,5 @@
 name: Río Negro
-name_zh: 里奥内格罗省
+name_zh: 内格罗河省
 type: Division-1
 meta:
   alpha2: AR-R
@@ -10,4 +10,5 @@ meta:
     - río negro province
     - rio negro
     - rn
+    - 里奥内格罗省
   category: PROVINCE

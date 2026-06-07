@@ -1,0 +1,11 @@
+name: Monseñor Nouel
+name_zh: 主教·瑙黎省
+type: Division-1
+meta:
+  alpha2: DO-28
+  includes:
+    - monseñor nouel
+    - do-28
+    - '28'
+    - monseñor nouel province
+  category: PROVINCE

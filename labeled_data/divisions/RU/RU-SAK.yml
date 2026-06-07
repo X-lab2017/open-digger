@@ -1,5 +1,5 @@
-name: Sakhalinskaya oblast'
-name_zh: 萨哈共和国（雅库特）
+name: Sakhalin
+name_zh: 萨哈林州
 type: Division-1
 meta:
   alpha2: RU-SAK
@@ -12,4 +12,5 @@ meta:
     - sakhalinskaya oblast' administrative region
     - sakhalin oblast
     - sakhalin
+    - 萨哈共和国（雅库特）
   category: ADMINISTRATIVE REGION

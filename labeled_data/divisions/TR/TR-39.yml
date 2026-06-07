@@ -1,5 +1,5 @@
-name: Kırklareli
-name_zh: 阿格里
+name: Kirklareli
+name_zh: 克尔克拉雷利省
 type: Division-1
 meta:
   alpha2: TR-39
@@ -8,4 +8,5 @@ meta:
     - tr-39
     - '39'
     - kırklareli province
+    - 阿格里
   category: PROVINCE

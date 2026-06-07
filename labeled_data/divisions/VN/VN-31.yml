@@ -1,5 +1,5 @@
 name: Bình Định
-name_zh: 平定
+name_zh: 平定省
 type: Division-1
 meta:
   alpha2: VN-31
@@ -9,4 +9,5 @@ meta:
     - '31'
     - bình định province
     - binh dinh
+    - 平定
   category: PROVINCE

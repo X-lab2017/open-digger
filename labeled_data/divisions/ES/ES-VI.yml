@@ -1,0 +1,11 @@
+name: Álava
+name_zh: 阿拉瓦省
+type: Division-1
+meta:
+  alpha2: ES-VI
+  includes:
+    - araba
+    - es-vi
+    - vi
+    - araba province
+  category: PROVINCE

@@ -1,0 +1,11 @@
+name: Studeničani
+type: Division-1
+meta:
+  alpha2: MK-74
+  includes:
+    - studeničani
+    - mk-813
+    - '813'
+    - studeničani municipality
+  category: MUNICIPALITY
+name_zh: 斯图登尼查尼区

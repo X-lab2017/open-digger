@@ -1,5 +1,5 @@
 name: Vaupés
-name_zh: 瓦乌贝斯省
+name_zh: 沃佩斯省
 type: Division-1
 meta:
   alpha2: CO-VAU
@@ -8,4 +8,5 @@ meta:
     - co-vau
     - vau
     - vaupés department
+    - 瓦乌贝斯省
   category: DEPARTMENT

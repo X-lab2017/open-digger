@@ -1,0 +1,11 @@
+name: Cagayan
+name_zh: 卡加延省
+type: Division-1
+meta:
+  alpha2: PH-CAG
+  includes:
+    - cagayan
+    - ph-cag
+    - cag
+    - cagayan province
+  category: PROVINCE

@@ -1,5 +1,5 @@
 name: Westmoreland
-name_zh: 西摩兰教区
+name_zh: 西摩兰区
 type: Division-1
 meta:
   alpha2: JM-10
@@ -8,4 +8,5 @@ meta:
     - jm-10
     - '10'
     - westmoreland parish
+    - 西摩兰教区
   category: PARISH

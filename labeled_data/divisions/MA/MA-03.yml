@@ -1,5 +1,5 @@
-name: Fès-Meknès
-name_zh: 非斯-梅克内斯
+name: Taza - Al Hoceima - Taounate
+name_zh: 塔扎-胡塞马-陶纳特大区
 type: Division-1
 meta:
   alpha2: MA-03
@@ -45,4 +45,5 @@ meta:
     - taz
     - taza province
     - fez-meknès
+    - 非斯-梅克内斯
   category: REGION

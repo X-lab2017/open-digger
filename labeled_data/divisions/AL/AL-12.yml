@@ -1,5 +1,5 @@
 name: Vlorë
-name_zh: 发罗拉县
+name_zh: 发罗拉州
 type: Division-1
 meta:
   alpha2: AL-12
@@ -8,4 +8,5 @@ meta:
     - al-12
     - '12'
     - vlorë county
+    - 发罗拉县
   category: COUNTY

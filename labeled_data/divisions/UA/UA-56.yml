@@ -1,5 +1,5 @@
-name: Rivnenska oblast
-name_zh: 里夫内
+name: Rivne
+name_zh: 罗夫诺州
 type: Division-1
 meta:
   alpha2: UA-56
@@ -11,4 +11,5 @@ meta:
     - rivne oblast
     - rivnens'ka oblast
     - rivne
+    - 里夫内
   category: REGION

@@ -1,0 +1,11 @@
+name: Hermanas
+name_zh: 米拉贝姐妹省
+type: Division-1
+meta:
+  alpha2: DO-19
+  includes:
+    - hermanas mirabal
+    - do-19
+    - '19'
+    - hermanas mirabal province
+  category: PROVINCE

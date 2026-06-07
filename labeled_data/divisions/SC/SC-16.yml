@@ -1,5 +1,5 @@
-name: Larivyer Anglez
-name_zh: 拉里维耶尔安格拉伊斯
+name: English River
+name_zh: 英吉利河
 type: Division-1
 meta:
   alpha2: SC-16
@@ -13,4 +13,5 @@ meta:
     - larivyer anglez
     - larivyer anglez district
     - la riviere anglaise
+    - 拉里维耶尔安格拉伊斯
   category: DISTRICT

@@ -1,5 +1,5 @@
 name: Bujumbura Rural
-name_zh: 布琼布拉乡村省
+name_zh: 布松布拉乡村省
 type: Division-1
 meta:
   alpha2: BI-BL
@@ -8,4 +8,5 @@ meta:
     - bi-bl
     - bl
     - bujumbura rural province
+    - 布琼布拉乡村省
   category: PROVINCE

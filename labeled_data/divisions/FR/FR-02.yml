@@ -1,0 +1,11 @@
+name: Aisne
+name_zh: 埃纳省
+type: Division-1
+meta:
+  alpha2: FR-02
+  includes:
+    - aisne
+    - fr-02
+    - '02'
+    - aisne metropolitan department
+  category: PROVINCE

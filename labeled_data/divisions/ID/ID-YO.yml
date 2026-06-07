@@ -1,0 +1,11 @@
+name: Yogyakarta
+name_zh: 日惹特区
+type: Division-1
+meta:
+  alpha2: ID-YO
+  includes:
+    - yogyakarta
+    - id-yo
+    - yo
+    - yogyakarta special region
+  category: PROVINCE

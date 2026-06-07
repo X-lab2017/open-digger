@@ -1,0 +1,11 @@
+name: Yagha
+name_zh: 亚加省
+type: Division-1
+meta:
+  alpha2: BF-YAG
+  includes:
+    - yagha
+    - bf-yag
+    - yag
+    - yagha province
+  category: PROVINCE

@@ -1,5 +1,5 @@
 name: Tissemsilt
-name_zh: 蒂泽姆森省
+name_zh: 提塞姆西勒特省
 type: Division-1
 meta:
   alpha2: DZ-38
@@ -8,4 +8,5 @@ meta:
     - dz-38
     - '38'
     - tissemsilt province
+    - 蒂泽姆森省
   category: PROVINCE

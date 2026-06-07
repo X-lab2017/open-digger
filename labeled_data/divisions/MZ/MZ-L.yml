@@ -1,5 +1,5 @@
 name: Maputo
-name_zh: 马普托市
+name_zh: 马普托省
 type: Division-1
 meta:
   alpha2: MZ-L
@@ -8,4 +8,5 @@ meta:
     - mz-l
     - l
     - maputo province
+    - 马普托市
   category: PROVINCE

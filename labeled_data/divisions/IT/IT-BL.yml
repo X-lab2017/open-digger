@@ -1,0 +1,11 @@
+name: Belluno
+name_zh: 贝卢诺省
+type: Division-1
+meta:
+  alpha2: IT-BL
+  includes:
+    - belluno
+    - it-bl
+    - bl
+    - belluno province
+  category: PROVINCE

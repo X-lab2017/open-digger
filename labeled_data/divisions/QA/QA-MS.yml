@@ -1,4 +1,4 @@
-name: Ash Shamāl
+name: Madinat ach Shamal
 type: Division-1
 meta:
   alpha2: QA-MS
@@ -8,3 +8,4 @@ meta:
     - ms
     - ash shamāl municipality
   category: MUNICIPALITY
+name_zh: 北部区

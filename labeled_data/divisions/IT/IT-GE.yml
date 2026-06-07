@@ -1,0 +1,11 @@
+name: Genova
+name_zh: 利古里亞
+type: Division-1
+meta:
+  alpha2: IT-GE
+  includes:
+    - genova
+    - it-ge
+    - ge
+    - genova metropolitan city
+  category: PROVINCE

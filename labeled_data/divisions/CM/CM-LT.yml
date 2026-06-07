@@ -1,5 +1,5 @@
 name: Littoral
-name_zh: 滨海大区
+name_zh: 滨海区
 type: Division-1
 meta:
   alpha2: CM-LT
@@ -9,4 +9,5 @@ meta:
     - lt
     - littoral region
     - région du littoral
+    - 滨海大区
   category: REGION

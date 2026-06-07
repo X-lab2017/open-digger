@@ -1,5 +1,5 @@
-name: Ad Dākhilīyah
-name_zh: 达希利耶省
+name: Ad Dakhliyah
+name_zh: 内地省
 type: Division-1
 meta:
   alpha2: OM-DA
@@ -10,4 +10,5 @@ meta:
     - ad dākhilīyah governorate
     - ad dakhiliyah governorate
     - ad dakhiliyah ‍governorate
+    - 达希利耶省
   category: GOVERNORATE

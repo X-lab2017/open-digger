@@ -1,0 +1,11 @@
+name: Sassari
+name_zh: 萨萨里省
+type: Division-1
+meta:
+  alpha2: IT-SS
+  includes:
+    - sassari
+    - it-ss
+    - ss
+    - sassari province
+  category: PROVINCE

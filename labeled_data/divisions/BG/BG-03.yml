@@ -1,5 +1,5 @@
 name: Varna
-name_zh: 瓦尔纳
+name_zh: 瓦尔纳州
 type: Division-1
 meta:
   alpha2: BG-03
@@ -9,4 +9,5 @@ meta:
     - '03'
     - varna district
     - varna province
+    - 瓦尔纳
   category: DISTRICT

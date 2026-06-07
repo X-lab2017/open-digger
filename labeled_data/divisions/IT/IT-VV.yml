@@ -1,0 +1,11 @@
+name: Vibo Valentia
+name_zh: 维博瓦伦蒂亚省
+type: Division-1
+meta:
+  alpha2: IT-VV
+  includes:
+    - vibo valentia
+    - it-vv
+    - vv
+    - vibo valentia province
+  category: PROVINCE

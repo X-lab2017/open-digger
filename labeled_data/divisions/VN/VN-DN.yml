@@ -1,5 +1,5 @@
 name: Đà Nẵng
-name_zh: 岘港
+name_zh: 岘港市
 type: Division-1
 meta:
   alpha2: VN-DN
@@ -10,4 +10,5 @@ meta:
     - đà nẵng municipality
     - da nang
     - da nang city
+    - 岘港
   category: MUNICIPALITY

@@ -1,5 +1,5 @@
 name: Piauí
-name_zh: 皮奥伊
+name_zh: 皮奥伊州
 type: Division-1
 meta:
   alpha2: BR-PI
@@ -9,4 +9,5 @@ meta:
     - pi
     - piauí state
     - state of piauí
+    - 皮奥伊
   category: STATE

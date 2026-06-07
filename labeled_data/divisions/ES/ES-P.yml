@@ -1,0 +1,11 @@
+name: Palencia
+name_zh: 帕伦西亚省
+type: Division-1
+meta:
+  alpha2: ES-P
+  includes:
+    - palencia
+    - es-p
+    - p
+    - palencia province
+  category: PROVINCE

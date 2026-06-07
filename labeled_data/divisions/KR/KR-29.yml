@@ -1,5 +1,5 @@
-name: Gwangju-gwangyeoksi
-name_zh: 光州市
+name: Gwangju
+name_zh: 光州广域市
 type: Division-1
 meta:
   alpha2: KR-29
@@ -11,4 +11,5 @@ meta:
     - gwangju
     - gwangju metropolitan city
     - 광주광역시
+    - 光州市
   category: METROPOLITAN CITY

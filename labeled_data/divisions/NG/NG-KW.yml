@@ -1,5 +1,5 @@
 name: Kwara
-name_zh: 科瓦拉州
+name_zh: 夸拉州
 type: Division-1
 meta:
   alpha2: NG-KW
@@ -8,4 +8,5 @@ meta:
     - ng-kw
     - kw
     - kwara state
+    - 科瓦拉州
   category: STATE

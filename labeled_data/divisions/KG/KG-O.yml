@@ -1,5 +1,5 @@
-name: Ošskaja oblast'
-name_zh: 奥什州
+name: Osh
+name_zh: 奥什
 type: Division-1
 meta:
   alpha2: KG-O
@@ -12,4 +12,5 @@ meta:
     - oshskaya oblast' region
     - ošskaja oblast'
     - ošskaja oblast' region
+    - 奥什州
   category: REGION

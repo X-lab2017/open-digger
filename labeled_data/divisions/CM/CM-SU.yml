@@ -1,5 +1,5 @@
 name: Sud
-name_zh: 南大区
+name_zh: 南部区
 type: Division-1
 meta:
   alpha2: CM-SU
@@ -10,4 +10,5 @@ meta:
     - south region
     - sud
     - sud region
+    - 南大区
   category: REGION

@@ -1,0 +1,11 @@
+name: Sanguié
+name_zh: 桑吉省
+type: Division-1
+meta:
+  alpha2: BF-SNG
+  includes:
+    - sanguié
+    - bf-sng
+    - sng
+    - sanguié province
+  category: PROVINCE

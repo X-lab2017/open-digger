@@ -1,0 +1,11 @@
+name: Mchinji
+name_zh: 姆钦吉县
+type: Division-1
+meta:
+  alpha2: MW-MC
+  includes:
+    - mchinji
+    - mw-mc
+    - mc
+    - mchinji district
+  category: PROVINCE

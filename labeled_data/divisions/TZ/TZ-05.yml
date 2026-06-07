@@ -1,5 +1,5 @@
 name: Kagera
-name_zh: 卡盖拉
+name_zh: 卡盖拉区
 type: Division-1
 meta:
   alpha2: TZ-05
@@ -8,4 +8,5 @@ meta:
     - tz-05
     - '05'
     - kagera region
+    - 卡盖拉
   category: REGION

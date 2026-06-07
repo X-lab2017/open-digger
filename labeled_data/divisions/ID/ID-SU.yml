@@ -1,0 +1,11 @@
+name: Sumatera Utara
+name_zh: 北苏门答腊省
+type: Division-1
+meta:
+  alpha2: ID-SU
+  includes:
+    - sumatera utara
+    - id-su
+    - su
+    - sumatera utara province
+  category: PROVINCE

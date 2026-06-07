@@ -1,0 +1,11 @@
+name: Santa Cruz de Tenerife
+name_zh: 圣克鲁斯-德特内里费省
+type: Division-1
+meta:
+  alpha2: ES-TF
+  includes:
+    - santa cruz de tenerife
+    - es-tf
+    - tf
+    - santa cruz de tenerife province
+  category: PROVINCE

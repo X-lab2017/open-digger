@@ -1,5 +1,5 @@
 name: Guaviare
-name_zh: 瓜维亚雷
+name_zh: 瓜维亚雷省
 type: Division-1
 meta:
   alpha2: CO-GUV
@@ -8,4 +8,5 @@ meta:
     - co-guv
     - guv
     - guaviare department
+    - 瓜维亚雷
   category: DEPARTMENT

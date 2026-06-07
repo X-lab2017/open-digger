@@ -1,0 +1,16 @@
+name: Baleares
+name_zh: 巴利阿里群岛
+type: Division-1
+meta:
+  alpha2: ES-PM
+  includes:
+    - illes balears
+    - es-ib
+    - ib
+    - illes balears autonomous community
+    - es-pm
+    - pm
+    - illes balears province
+    - islas baleares
+    - balearic islands
+  category: AUTONOMOUS COMMUNITY

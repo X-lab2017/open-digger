@@ -1,4 +1,4 @@
-name: Saint Kitts and Nevis
+name: St. Kitts and Nevis
 name_zh: 圣基茨和尼维斯
 type: Division-0
 meta:
@@ -84,5 +84,17 @@ meta:
       count: 1633
 data:
   labels:
-    - KN-K
-    - KN-N
+    - KN-01
+    - KN-02
+    - KN-03
+    - KN-04
+    - KN-05
+    - KN-06
+    - KN-07
+    - KN-08
+    - KN-09
+    - KN-10
+    - KN-11
+    - KN-12
+    - KN-13
+    - KN-15

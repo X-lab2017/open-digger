@@ -1,0 +1,11 @@
+name: Cebu
+name_zh: 宿霧
+type: Division-1
+meta:
+  alpha2: PH-CEB
+  includes:
+    - cebu
+    - ph-ceb
+    - ceb
+    - cebu province
+  category: PROVINCE

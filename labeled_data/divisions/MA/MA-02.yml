@@ -1,5 +1,5 @@
-name: L'Oriental
-name_zh: 东方大区
+name: Gharb - Chrarda - Béni Hssen
+name_zh: 西部-舍拉拉德-贝尼赫森大区
 type: Division-1
 meta:
   alpha2: MA-02
@@ -41,4 +41,5 @@ meta:
     - tai
     - taourirt province
     - oriental
+    - 东方大区
   category: REGION

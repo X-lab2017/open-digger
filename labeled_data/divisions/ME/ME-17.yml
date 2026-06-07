@@ -1,5 +1,5 @@
 name: Rožaje
-name_zh: 罗扎耶市
+name_zh: 羅扎耶區
 type: Division-1
 meta:
   alpha2: ME-17
@@ -8,4 +8,5 @@ meta:
     - me-17
     - '17'
     - rožaje municipality
+    - 罗扎耶市
   category: MUNICIPALITY

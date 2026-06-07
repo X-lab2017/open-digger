@@ -1,5 +1,5 @@
 name: Distrito Capital
-name_zh: 首都区
+name_zh: 联邦区
 type: Division-1
 meta:
   alpha2: VE-A
@@ -10,4 +10,5 @@ meta:
     - distrito capital capital district
     - capital district
     - va
+    - 首都区
   category: CAPITAL DISTRICT

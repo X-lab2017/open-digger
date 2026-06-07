@@ -1,0 +1,11 @@
+name: Latina
+name_zh: 拉蒂纳省
+type: Division-1
+meta:
+  alpha2: IT-LT
+  includes:
+    - latina
+    - it-lt
+    - lt
+    - latina province
+  category: PROVINCE

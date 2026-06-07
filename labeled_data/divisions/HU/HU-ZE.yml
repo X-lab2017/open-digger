@@ -1,5 +1,5 @@
 name: Zalaegerszeg
-name_zh: 埃格尔
+name_zh: 佐洛埃格塞格
 type: Division-1
 meta:
   alpha2: HU-ZE
@@ -8,4 +8,5 @@ meta:
     - hu-ze
     - ze
     - zalaegerszeg city with county rights
+    - 埃格尔
   category: CITY WITH COUNTY RIGHTS

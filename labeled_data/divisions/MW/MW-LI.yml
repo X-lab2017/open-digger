@@ -1,0 +1,11 @@
+name: Lilongwe
+name_zh: 利隆圭县
+type: Division-1
+meta:
+  alpha2: MW-LI
+  includes:
+    - lilongwe
+    - mw-li
+    - li
+    - lilongwe district
+  category: PROVINCE

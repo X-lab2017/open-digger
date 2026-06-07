@@ -1,0 +1,11 @@
+name: Tarragona
+name_zh: 塔拉戈纳省
+type: Division-1
+meta:
+  alpha2: ES-T
+  includes:
+    - tarragona
+    - es-t
+    - t
+    - tarragona province
+  category: PROVINCE

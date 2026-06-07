@@ -1,5 +1,5 @@
 name: Western Cape
-name_zh: 西开普
+name_zh: 西开普省
 type: Division-1
 meta:
   alpha2: ZA-WC
@@ -28,4 +28,5 @@ meta:
     - western cape province
     - itjhingalanga-kapa
     - itjhingalanga-kapa province
+    - 西开普
   category: PROVINCE

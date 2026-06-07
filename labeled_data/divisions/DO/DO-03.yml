@@ -1,0 +1,11 @@
+name: Bahoruco
+name_zh: 巴奥鲁可省
+type: Division-1
+meta:
+  alpha2: DO-03
+  includes:
+    - baoruco
+    - do-03
+    - '03'
+    - baoruco province
+  category: PROVINCE

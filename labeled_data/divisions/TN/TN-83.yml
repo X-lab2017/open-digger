@@ -1,5 +1,5 @@
 name: Tataouine
-name_zh: 塔塔乌恩区
+name_zh: 泰塔温省
 type: Division-1
 meta:
   alpha2: TN-83
@@ -8,4 +8,5 @@ meta:
     - tn-83
     - '83'
     - tataouine governorate
+    - 塔塔乌恩区
   category: GOVERNORATE

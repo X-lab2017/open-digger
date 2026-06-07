@@ -1,0 +1,11 @@
+name: León
+name_zh: 莱昂省
+type: Division-1
+meta:
+  alpha2: ES-LE
+  includes:
+    - león
+    - es-le
+    - le
+    - león province
+  category: PROVINCE

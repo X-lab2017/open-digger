@@ -1,0 +1,11 @@
+name: Sevilla
+name_zh: 塞维利亚省
+type: Division-1
+meta:
+  alpha2: ES-SE
+  includes:
+    - sevilla
+    - es-se
+    - se
+    - sevilla province
+  category: PROVINCE

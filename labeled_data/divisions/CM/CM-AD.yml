@@ -1,5 +1,5 @@
 name: Adamaoua
-name_zh: 阿达马瓦大区
+name_zh: 阿达马瓦区
 type: Division-1
 meta:
   alpha2: CM-AD
@@ -11,4 +11,5 @@ meta:
     - adamawa region
     - région de l'adamaoua
     - adamawa
+    - 阿达马瓦大区
   category: REGION

@@ -1,5 +1,5 @@
 name: Campeche
-name_zh: 坎佩切
+name_zh: 坎佩切州
 type: Division-1
 meta:
   alpha2: MX-CAM
@@ -8,4 +8,5 @@ meta:
     - mx-cam
     - cam
     - campeche state
+    - 坎佩切
   category: STATE

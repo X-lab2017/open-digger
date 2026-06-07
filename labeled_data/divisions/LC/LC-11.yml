@@ -1,5 +1,5 @@
 name: Vieux Fort
-name_zh: 维奥福
+name_zh: 伯堡区
 type: Division-1
 meta:
   alpha2: LC-11
@@ -8,4 +8,5 @@ meta:
     - lc-11
     - '11'
     - vieux fort district
+    - 维奥福
   category: DISTRICT

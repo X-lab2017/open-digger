@@ -1,5 +1,5 @@
 name: Guainía
-name_zh: 瓜维亚雷
+name_zh: 瓜伊尼亚省
 type: Division-1
 meta:
   alpha2: CO-GUA
@@ -9,4 +9,5 @@ meta:
     - gua
     - guainía department
     - guainia
+    - 瓜维亚雷
   category: DEPARTMENT

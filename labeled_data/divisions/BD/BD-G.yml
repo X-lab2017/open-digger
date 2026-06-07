@@ -1,5 +1,5 @@
 name: Sylhet
-name_zh: 锡莱特
+name_zh: 锡尔赫特专区
 type: Division-1
 meta:
   alpha2: BD-G
@@ -24,4 +24,5 @@ meta:
     - '60'
     - sylhet district
     - সিলেট বিভাগ
+    - 锡莱特
   category: DIVISION

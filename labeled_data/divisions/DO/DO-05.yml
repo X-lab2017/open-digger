@@ -1,0 +1,11 @@
+name: Dajabón
+name_zh: 达哈翁省
+type: Division-1
+meta:
+  alpha2: DO-05
+  includes:
+    - dajabón
+    - do-05
+    - '05'
+    - dajabón province
+  category: PROVINCE

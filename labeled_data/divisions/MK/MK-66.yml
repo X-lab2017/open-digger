@@ -1,0 +1,13 @@
+name: Resen
+name_zh: 里森区
+type: Division-1
+meta:
+  alpha2: MK-66
+  includes:
+    - resen
+    - mk-509
+    - '509'
+    - resen municipality
+    - municipality of resen
+    - 雷森
+  category: MUNICIPALITY

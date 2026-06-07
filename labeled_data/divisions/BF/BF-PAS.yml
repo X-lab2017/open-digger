@@ -1,0 +1,11 @@
+name: Passoré
+name_zh: 帕索雷省
+type: Division-1
+meta:
+  alpha2: BF-PAS
+  includes:
+    - passoré
+    - bf-pas
+    - pas
+    - passoré province
+  category: PROVINCE

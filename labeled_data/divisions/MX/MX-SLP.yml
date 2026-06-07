@@ -1,5 +1,5 @@
 name: San Luis Potosí
-name_zh: 圣路易斯波托西
+name_zh: 圣路易斯波托西州
 type: Division-1
 meta:
   alpha2: MX-SLP
@@ -9,4 +9,5 @@ meta:
     - slp
     - san luis potosí state
     - san luis potosi
+    - 圣路易斯波托西
   category: STATE

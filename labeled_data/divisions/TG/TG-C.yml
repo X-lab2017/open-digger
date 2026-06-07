@@ -1,5 +1,5 @@
-name: Centrale
-name_zh: 中央区
+name: Centre
+name_zh: 中央大區
 type: Division-1
 meta:
   alpha2: TG-C
@@ -8,4 +8,5 @@ meta:
     - tg-c
     - c
     - centrale region
+    - 中央区
   category: REGION

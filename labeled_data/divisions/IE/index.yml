@@ -84,7 +84,29 @@ meta:
       count: 455142
 data:
   labels:
-    - IE-C
-    - IE-L
-    - IE-M
-    - IE-U
+    - IE-CE
+    - IE-CN
+    - IE-CO
+    - IE-CW
+    - IE-D
+    - IE-DL
+    - IE-G
+    - IE-KE
+    - IE-KK
+    - IE-KY
+    - IE-LD
+    - IE-LH
+    - IE-LK
+    - IE-LM
+    - IE-LS
+    - IE-MH
+    - IE-MN
+    - IE-MO
+    - IE-OY
+    - IE-RN
+    - IE-SO
+    - IE-TA
+    - IE-WD
+    - IE-WH
+    - IE-WW
+    - IE-WX

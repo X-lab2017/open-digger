@@ -1,5 +1,5 @@
-name: Louangphabang
-name_zh: 沙湾拿吉省
+name: Louangphrabang
+name_zh: 琅勃拉邦省
 type: Division-1
 meta:
   alpha2: LA-LP
@@ -13,4 +13,5 @@ meta:
     - ຫຼວງພະບາງ
     - ແຂວງຫຼວງພະບາງ
     - luang prabang province
+    - 沙湾拿吉省
   category: PROVINCE

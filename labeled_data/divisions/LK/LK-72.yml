@@ -1,0 +1,11 @@
+name: Pŏḷŏnnaruva
+name_zh: 波隆纳鲁沃区
+type: Division-1
+meta:
+  alpha2: LK-72
+  includes:
+    - polonnaruwa
+    - lk-72
+    - '72'
+    - polonnaruwa district
+  category: PROVINCE

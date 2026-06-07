@@ -1,0 +1,11 @@
+name: Cádiz
+name_zh: 加的斯省
+type: Division-1
+meta:
+  alpha2: ES-CA
+  includes:
+    - cádiz
+    - es-ca
+    - ca
+    - cádiz province
+  category: PROVINCE

@@ -1,0 +1,11 @@
+name: Granada
+name_zh: 格拉纳达省
+type: Division-1
+meta:
+  alpha2: ES-GR
+  includes:
+    - granada
+    - es-gr
+    - gr
+    - granada province
+  category: PROVINCE

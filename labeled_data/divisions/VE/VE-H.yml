@@ -1,5 +1,5 @@
 name: Cojedes
-name_zh: 科赫德斯
+name_zh: 科赫德斯州
 type: Division-1
 meta:
   alpha2: VE-H
@@ -9,4 +9,5 @@ meta:
     - h
     - cojedes state
     - co
+    - 科赫德斯
   category: STATE

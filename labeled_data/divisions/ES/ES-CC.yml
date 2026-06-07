@@ -1,0 +1,11 @@
+name: Cáceres
+name_zh: 卡塞雷斯省
+type: Division-1
+meta:
+  alpha2: ES-CC
+  includes:
+    - cáceres
+    - es-cc
+    - cc
+    - cáceres province
+  category: PROVINCE

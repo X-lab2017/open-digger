@@ -1,0 +1,11 @@
+name: Masbate
+name_zh: 马斯巴特省
+type: Division-1
+meta:
+  alpha2: PH-MAS
+  includes:
+    - masbate
+    - ph-mas
+    - mas
+    - masbate province
+  category: PROVINCE

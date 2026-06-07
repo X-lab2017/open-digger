@@ -1,5 +1,5 @@
 name: Shumen
-name_zh: 舒门省
+name_zh: 舒门州
 type: Division-1
 meta:
   alpha2: BG-27
@@ -9,4 +9,5 @@ meta:
     - '27'
     - shumen district
     - shumen province
+    - 舒门省
   category: DISTRICT

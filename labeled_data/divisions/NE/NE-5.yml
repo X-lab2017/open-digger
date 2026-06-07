@@ -1,5 +1,5 @@
 name: Tahoua
-name_zh: 塔瓦区
+name_zh: 塔瓦大区
 type: Division-1
 meta:
   alpha2: NE-5
@@ -8,4 +8,5 @@ meta:
     - ne-5
     - '5'
     - tahoua region
+    - 塔瓦区
   category: REGION

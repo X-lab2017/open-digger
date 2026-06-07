@@ -1,0 +1,11 @@
+name: Napoli
+name_zh: 那不勒斯省
+type: Division-1
+meta:
+  alpha2: IT-NA
+  includes:
+    - napoli
+    - it-na
+    - na
+    - napoli metropolitan city
+  category: PROVINCE

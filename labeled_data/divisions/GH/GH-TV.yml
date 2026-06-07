@@ -1,5 +1,5 @@
 name: Volta
-name_zh: 沃尔特区
+name_zh: 沃尔特地区
 type: Division-1
 meta:
   alpha2: GH-TV
@@ -8,4 +8,5 @@ meta:
     - gh-tv
     - tv
     - volta region
+    - 沃尔特区
   category: REGION

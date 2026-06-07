@@ -1,0 +1,11 @@
+name: Charente-Maritime
+name_zh: 滨海夏朗德省
+type: Division-1
+meta:
+  alpha2: FR-17
+  includes:
+    - charente-maritime
+    - fr-17
+    - '17'
+    - charente-maritime metropolitan department
+  category: PROVINCE

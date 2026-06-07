@@ -1,5 +1,5 @@
 name: El Beni
-name_zh: 圣克鲁斯省
+name_zh: 贝尼省
 type: Division-1
 meta:
   alpha2: BO-B
@@ -9,4 +9,5 @@ meta:
     - b
     - el beni department
     - beni department
+    - 圣克鲁斯省
   category: DEPARTMENT

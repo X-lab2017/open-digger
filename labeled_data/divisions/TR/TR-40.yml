@@ -1,5 +1,5 @@
-name: Kırşehir
-name_zh: 屈舍希尔
+name: Kirsehir
+name_zh: 克尔谢希尔省
 type: Division-1
 meta:
   alpha2: TR-40
@@ -8,4 +8,5 @@ meta:
     - tr-40
     - '40'
     - kırşehir province
+    - 屈舍希尔
   category: PROVINCE

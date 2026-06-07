@@ -1,0 +1,11 @@
+name: Ntcheu
+name_zh: 恩彻乌县
+type: Division-1
+meta:
+  alpha2: MW-NU
+  includes:
+    - ntcheu
+    - mw-nu
+    - nu
+    - ntcheu district
+  category: PROVINCE

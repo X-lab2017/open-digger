@@ -1,0 +1,11 @@
+name: Biombo
+name_zh: 比翁博区
+type: Division-1
+meta:
+  alpha2: GW-BM
+  includes:
+    - biombo
+    - gw-bm
+    - bm
+    - biombo region
+  category: PROVINCE

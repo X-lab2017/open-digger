@@ -1,4 +1,4 @@
-name: Braničevski okrug
+name: Branicevski
 type: Division-1
 meta:
   alpha2: RS-11
@@ -8,3 +8,4 @@ meta:
     - '11'
     - braničevski okrug district
   category: DISTRICT
+name_zh: 布兰尼切夫州

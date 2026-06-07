@@ -1,5 +1,5 @@
 name: Chocó
-name_zh: 乔科
+name_zh: 乔科省
 type: Division-1
 meta:
   alpha2: CO-CHO
@@ -9,4 +9,5 @@ meta:
     - cho
     - chocó department
     - choco
+    - 乔科
   category: DEPARTMENT

@@ -1,0 +1,11 @@
+name: Saint Thomas Lowland
+name_zh: 圣托马斯低地区
+type: Division-1
+meta:
+  alpha2: KN-12
+  includes:
+    - saint thomas lowland
+    - kn-12
+    - '12'
+    - saint thomas lowland parish
+  category: PROVINCE

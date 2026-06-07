@@ -1,5 +1,5 @@
-name: Valkas novads
-name_zh: 瓦尔卡斯市镇
+name: Valkas
+name_zh: 瓦尔卡斯
 type: Division-1
 meta:
   alpha2: LV-101
@@ -10,4 +10,5 @@ meta:
     - valkas novads municipality
     - valka
     - valka municipality
+    - 瓦尔卡斯市镇
   category: MUNICIPALITY

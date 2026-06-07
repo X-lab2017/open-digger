@@ -1,5 +1,5 @@
-name: M'sila
-name_zh: 梅西拉省
+name: M'Sila
+name_zh: 姆西拉省
 type: Division-1
 meta:
   alpha2: DZ-28
@@ -8,4 +8,5 @@ meta:
     - dz-28
     - '28'
     - m'sila province
+    - 梅西拉省
   category: PROVINCE

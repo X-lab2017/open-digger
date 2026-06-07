@@ -1,5 +1,5 @@
 name: Tây Ninh
-name_zh: 西宁
+name_zh: 西宁省
 type: Division-1
 meta:
   alpha2: VN-37
@@ -9,4 +9,5 @@ meta:
     - '37'
     - tây ninh province
     - tay ninh
+    - 西宁
   category: PROVINCE

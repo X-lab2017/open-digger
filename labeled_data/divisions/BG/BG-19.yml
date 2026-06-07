@@ -1,5 +1,5 @@
 name: Silistra
-name_zh: 西利斯特拉
+name_zh: 锡利斯特拉州
 type: Division-1
 meta:
   alpha2: BG-19
@@ -9,4 +9,5 @@ meta:
     - '19'
     - silistra district
     - silistra province
+    - 西利斯特拉
   category: DISTRICT

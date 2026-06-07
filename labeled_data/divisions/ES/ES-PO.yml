@@ -1,0 +1,11 @@
+name: Pontevedra
+name_zh: 蓬特韦德拉省
+type: Division-1
+meta:
+  alpha2: ES-PO
+  includes:
+    - pontevedra
+    - es-po
+    - po
+    - pontevedra province
+  category: PROVINCE

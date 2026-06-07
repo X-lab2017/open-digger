@@ -1,5 +1,5 @@
 name: Nyíregyháza
-name_zh: 尼亚伊日哈扎
+name_zh: 尼赖吉哈佐
 type: Division-1
 meta:
   alpha2: HU-NY
@@ -8,4 +8,5 @@ meta:
     - hu-ny
     - ny
     - nyíregyháza city with county rights
+    - 尼亚伊日哈扎
   category: CITY WITH COUNTY RIGHTS

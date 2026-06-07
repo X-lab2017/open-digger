@@ -1,5 +1,5 @@
 name: Chaguanas
-name_zh: 查瓜纳斯市镇公司
+name_zh: 查瓜纳斯
 type: Division-1
 meta:
   alpha2: TT-CHA
@@ -9,4 +9,5 @@ meta:
     - cha
     - chaguanas borough
     - chaguanas borough corporation
+    - 查瓜纳斯市镇公司
   category: BOROUGH

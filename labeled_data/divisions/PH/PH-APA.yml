@@ -1,0 +1,11 @@
+name: Apayao
+name_zh: 阿巴尧省
+type: Division-1
+meta:
+  alpha2: PH-APA
+  includes:
+    - apayao
+    - ph-apa
+    - apa
+    - apayao province
+  category: PROVINCE

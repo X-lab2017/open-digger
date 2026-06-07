@@ -1,4 +1,4 @@
-name: Grande’Anse
+name: Grand'Anse
 type: Division-1
 meta:
   alpha2: HT-GA
@@ -10,3 +10,4 @@ meta:
     - grande’anse
     - grande’anse department
   category: DEPARTMENT
+name_zh: 大湾省

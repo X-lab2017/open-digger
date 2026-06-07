@@ -1,5 +1,5 @@
 name: Estuaire
-name_zh: 埃斯特瓦里省
+name_zh: 河口省
 type: Division-1
 meta:
   alpha2: GA-1
@@ -8,4 +8,5 @@ meta:
     - ga-1
     - '1'
     - estuaire province
+    - 埃斯特瓦里省
   category: PROVINCE

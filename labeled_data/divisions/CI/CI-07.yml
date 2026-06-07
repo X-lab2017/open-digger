@@ -1,0 +1,11 @@
+name: Lacs
+name_zh: 湖泊区
+type: Division-1
+meta:
+  alpha2: CI-07
+  includes:
+    - lacs
+    - ci-lc
+    - lc
+    - lacs district
+  category: DISTRICT

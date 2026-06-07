@@ -1,5 +1,5 @@
-name: Pemba North
-name_zh: 昂古贾南区
+name: Kaskazini-Pemba
+name_zh: 北奔巴区
 type: Division-1
 meta:
   alpha2: TZ-06
@@ -11,4 +11,5 @@ meta:
     - pemba north
     - pemba north region
     - unguja south region
+    - 昂古贾南区
   category: REGION

@@ -1,0 +1,11 @@
+name: Huesca
+name_zh: 韋斯卡省
+type: Division-1
+meta:
+  alpha2: ES-HU
+  includes:
+    - huesca
+    - es-hu
+    - hu
+    - huesca province
+  category: PROVINCE

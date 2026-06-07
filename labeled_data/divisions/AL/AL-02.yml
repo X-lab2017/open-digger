@@ -1,5 +1,5 @@
 name: Durrës
-name_zh: 都拉斯县
+name_zh: 都拉斯州
 type: Division-1
 meta:
   alpha2: AL-02
@@ -9,4 +9,5 @@ meta:
     - '02'
     - durrës county
     - durres
+    - 都拉斯县
   category: COUNTY

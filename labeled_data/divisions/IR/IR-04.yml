@@ -1,5 +1,5 @@
-name: Āz̄ārbāyjān-e Ghārbī
-name_zh: 西阿塞拜疆省
+name: Esfahan
+name_zh: 伊斯法罕省
 type: Division-1
 meta:
   alpha2: IR-04
@@ -9,4 +9,5 @@ meta:
     - '04'
     - āz̄ārbāyjān-e ghārbī province
     - west azerbaijan province
+    - 西阿塞拜疆省
   category: PROVINCE

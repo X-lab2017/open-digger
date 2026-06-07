@@ -1,5 +1,5 @@
-name: Primorsko-goranska županija
-name_zh: 普利莫尔耶-戈尔斯基科塔尔县
+name: Primorsko-Goranska
+name_zh: 滨海和山区县
 type: Division-1
 meta:
   alpha2: HR-08
@@ -10,4 +10,5 @@ meta:
     - primorsko-goranska županija county
     - primorje-gorski
     - primorje-gorski kotar county
+    - 普利莫尔耶-戈尔斯基科塔尔县
   category: COUNTY

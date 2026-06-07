@@ -1,0 +1,11 @@
+name: Huelva
+name_zh: 韦尔瓦省
+type: Division-1
+meta:
+  alpha2: ES-H
+  includes:
+    - huelva
+    - es-h
+    - h
+    - huelva province
+  category: PROVINCE

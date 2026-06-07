@@ -1,0 +1,11 @@
+name: Barcelona
+name_zh: 巴塞罗那省
+type: Division-1
+meta:
+  alpha2: ES-B
+  includes:
+    - barcelona
+    - es-b
+    - b
+    - barcelona province
+  category: PROVINCE

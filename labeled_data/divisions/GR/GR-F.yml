@@ -1,5 +1,5 @@
-name: Ionía Nísia
-name_zh: 爱奥尼亚群岛
+name: Ionioi Nisoi
+name_zh: 伊奧尼亞群島區
 type: Division-1
 meta:
   alpha2: GR-F
@@ -9,4 +9,5 @@ meta:
     - f
     - ionía nísia administrative region
     - ionian islands
+    - 爱奥尼亚群岛
   category: ADMINISTRATIVE REGION

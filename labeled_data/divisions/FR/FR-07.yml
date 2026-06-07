@@ -1,0 +1,11 @@
+name: Ardèche
+name_zh: 阿尔代什省
+type: Division-1
+meta:
+  alpha2: FR-07
+  includes:
+    - ardèche
+    - fr-07
+    - '07'
+    - ardèche metropolitan department
+  category: PROVINCE

@@ -1,5 +1,5 @@
 name: Škofja Loka
-name_zh: 什科菲亚洛卡
+name_zh: 斯科菲亞洛卡
 type: Division-1
 meta:
   alpha2: SI-122
@@ -8,4 +8,5 @@ meta:
     - si-122
     - '122'
     - škofja loka municipality
+    - 什科菲亚洛卡
   category: MUNICIPALITY

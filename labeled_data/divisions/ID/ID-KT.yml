@@ -1,0 +1,11 @@
+name: Kalimantan Tengah
+name_zh: 中加里曼丹省
+type: Division-1
+meta:
+  alpha2: ID-KT
+  includes:
+    - kalimantan tengah
+    - id-kt
+    - kt
+    - kalimantan tengah province
+  category: PROVINCE

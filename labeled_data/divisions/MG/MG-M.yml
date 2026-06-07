@@ -1,5 +1,5 @@
-name: Mahajanga
-name_zh: 阿莫罗尼马尼亚
+name: Boeny
+name_zh: 博爱尼
 type: Division-1
 meta:
   alpha2: MG-M
@@ -10,4 +10,5 @@ meta:
     - mahajanga province
     - boeny
     - menabe
+    - 阿莫罗尼马尼亚
   category: PROVINCE

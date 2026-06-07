@@ -1,0 +1,11 @@
+name: Ifugao
+name_zh: 伊富高省
+type: Division-1
+meta:
+  alpha2: PH-IFU
+  includes:
+    - ifugao
+    - ph-ifu
+    - ifu
+    - ifugao province
+  category: PROVINCE

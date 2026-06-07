@@ -1,5 +1,5 @@
-name: Anatolikí Makedonía kai Thráki
-name_zh: 阿提卡
+name: Anatoliki Makedonia kai Thraki
+name_zh: 东马其顿-色雷斯
 type: Division-1
 meta:
   alpha2: GR-A
@@ -9,4 +9,5 @@ meta:
     - a
     - anatolikí makedonía kai thráki administrative region
     - eastern macedonia and thrace
+    - 阿提卡
   category: ADMINISTRATIVE REGION

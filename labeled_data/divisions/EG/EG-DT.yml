@@ -1,5 +1,5 @@
-name: Dumyāţ
-name_zh: 达米埃塔省
+name: Dumyat
+name_zh: 杜姆亚特省
 type: Division-1
 meta:
   alpha2: EG-DT
@@ -11,4 +11,5 @@ meta:
     - damietta
     - damietta governorate
     - dumyat
+    - 达米埃塔省
   category: GOVERNORATE

@@ -1,5 +1,5 @@
-name: North-West
-name_zh: 北部大区
+name: Nord-Ouest
+name_zh: 西北区
 type: Division-1
 meta:
   alpha2: CM-NW
@@ -13,4 +13,5 @@ meta:
     - région du nord-ouest
     - northwest
     - northwest region
+    - 北部大区
   category: REGION

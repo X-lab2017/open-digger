@@ -1,5 +1,5 @@
-name: Nišavski okrug
-name_zh: 尼什瓦尼克
+name: Nišavski
+name_zh: 尼沙瓦州
 type: Division-1
 meta:
   alpha2: RS-20
@@ -8,4 +8,5 @@ meta:
     - rs-20
     - '20'
     - nišavski okrug district
+    - 尼什瓦尼克
   category: DISTRICT

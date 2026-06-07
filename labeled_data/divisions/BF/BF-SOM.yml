@@ -1,0 +1,11 @@
+name: Soum
+name_zh: 蘇姆省
+type: Division-1
+meta:
+  alpha2: BF-SOM
+  includes:
+    - soum
+    - bf-som
+    - som
+    - soum province
+  category: PROVINCE

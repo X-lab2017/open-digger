@@ -1,5 +1,5 @@
-name: Bauskas novads
-name_zh: 包斯卡市镇
+name: Bauska
+name_zh: 包斯卡自治市
 type: Division-1
 meta:
   alpha2: LV-016
@@ -10,4 +10,5 @@ meta:
     - bauskas novads municipality
     - bauska
     - bauska municipality
+    - 包斯卡市镇
   category: MUNICIPALITY

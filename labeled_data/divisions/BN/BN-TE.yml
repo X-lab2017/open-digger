@@ -1,5 +1,5 @@
 name: Temburong
-name_zh: 淡武隆县
+name_zh: 淡布隆县
 type: Division-1
 meta:
   alpha2: BN-TE
@@ -8,4 +8,5 @@ meta:
     - bn-te
     - te
     - temburong district
+    - 淡武隆县
   category: DISTRICT

@@ -1,0 +1,11 @@
+name: Jakarta Raya
+name_zh: 雅加达
+type: Division-1
+meta:
+  alpha2: ID-JK
+  includes:
+    - jakarta raya
+    - id-jk
+    - jk
+    - jakarta raya capital district
+  category: PROVINCE

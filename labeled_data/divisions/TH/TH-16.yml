@@ -1,5 +1,5 @@
 name: Lop Buri
-name_zh: 罗勇府
+name_zh: 华富里府
 type: Division-1
 meta:
   alpha2: TH-16
@@ -10,4 +10,5 @@ meta:
     - lop buri province
     - lopburi
     - chang wat lopburi
+    - 罗勇府
   category: PROVINCE

@@ -1,0 +1,11 @@
+name: Samaná
+name_zh: 山美纳省
+type: Division-1
+meta:
+  alpha2: DO-20
+  includes:
+    - samaná
+    - do-20
+    - '20'
+    - samaná province
+  category: PROVINCE

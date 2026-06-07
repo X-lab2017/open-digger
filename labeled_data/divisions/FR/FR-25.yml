@@ -1,0 +1,11 @@
+name: Doubs
+name_zh: 杜省
+type: Division-1
+meta:
+  alpha2: FR-25
+  includes:
+    - doubs
+    - fr-25
+    - '25'
+    - doubs metropolitan department
+  category: PROVINCE

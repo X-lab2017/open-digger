@@ -1,4 +1,4 @@
-name: Ladig
+name: La Digue and Inner Islands
 type: Division-1
 meta:
   alpha2: SC-15
@@ -10,3 +10,4 @@ meta:
     - ladig
     - ladig district
   category: DISTRICT
+name_zh: 拉迪格岛

@@ -1,5 +1,5 @@
 name: Maribor
-name_zh: 马里博尔
+name_zh: 馬里博爾市
 type: Division-1
 meta:
   alpha2: SI-070
@@ -10,4 +10,5 @@ meta:
     - maribor urban municipality
     - upravna enota maribor
     - administrative unit maribor
+    - 马里博尔
   category: URBAN MUNICIPALITY

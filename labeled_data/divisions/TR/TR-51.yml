@@ -1,5 +1,5 @@
-name: Niğde
-name_zh: 尼德
+name: Nigde
+name_zh: 尼代省
 type: Division-1
 meta:
   alpha2: TR-51
@@ -8,4 +8,5 @@ meta:
     - tr-51
     - '51'
     - niğde province
+    - 尼德
   category: PROVINCE

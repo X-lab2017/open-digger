@@ -1,5 +1,5 @@
 name: Southland
-name_zh: 南地
+name_zh: 南地大区
 type: Division-1
 meta:
   alpha2: NZ-STL
@@ -11,4 +11,5 @@ meta:
     - te taiao tonga
     - te taiao tonga region
     - south island
+    - 南地
   category: REGION

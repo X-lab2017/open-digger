@@ -1,5 +1,5 @@
 name: Amazonas
-name_zh: 亚马孙
+name_zh: 亚马孙省
 type: Division-1
 meta:
   alpha2: CO-AMA
@@ -8,4 +8,5 @@ meta:
     - co-ama
     - ama
     - amazonas department
+    - 亚马孙
   category: DEPARTMENT

@@ -1,5 +1,5 @@
 name: Cesar
-name_zh: 塞萨尔
+name_zh: 塞萨尔省
 type: Division-1
 meta:
   alpha2: CO-CES
@@ -8,4 +8,5 @@ meta:
     - co-ces
     - ces
     - cesar department
+    - 塞萨尔
   category: DEPARTMENT

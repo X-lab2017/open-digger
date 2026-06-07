@@ -1,0 +1,11 @@
+name: Bergamo
+name_zh: 貝加莫省
+type: Division-1
+meta:
+  alpha2: IT-BG
+  includes:
+    - bergamo
+    - it-bg
+    - bg
+    - bergamo province
+  category: PROVINCE

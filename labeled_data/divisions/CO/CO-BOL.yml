@@ -1,5 +1,5 @@
 name: Bolívar
-name_zh: 玻利瓦尔
+name_zh: 玻利瓦尔省
 type: Division-1
 meta:
   alpha2: CO-BOL
@@ -9,4 +9,5 @@ meta:
     - bol
     - bolívar department
     - bolivar
+    - 玻利瓦尔
   category: DEPARTMENT

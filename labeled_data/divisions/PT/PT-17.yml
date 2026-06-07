@@ -1,5 +1,5 @@
 name: Vila Real
-name_zh: 维拉雷阿尔
+name_zh: 雷亚尔城区
 type: Division-1
 meta:
   alpha2: PT-17
@@ -8,4 +8,5 @@ meta:
     - pt-17
     - '17'
     - vila real district
+    - 维拉雷阿尔
   category: DISTRICT

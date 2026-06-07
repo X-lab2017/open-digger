@@ -1,5 +1,5 @@
-name: Volynska oblast
-name_zh: 沃伦
+name: Volyn
+name_zh: 沃伦州
 type: Division-1
 meta:
   alpha2: UA-07
@@ -11,4 +11,5 @@ meta:
     - volyn oblast
     - volyns'ka oblast
     - volyn
+    - 沃伦
   category: REGION

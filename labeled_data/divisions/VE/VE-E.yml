@@ -1,5 +1,5 @@
 name: Barinas
-name_zh: 巴里纳斯
+name_zh: 巴里纳斯州
 type: Division-1
 meta:
   alpha2: VE-E
@@ -9,4 +9,5 @@ meta:
     - e
     - barinas state
     - ba
+    - 巴里纳斯
   category: STATE

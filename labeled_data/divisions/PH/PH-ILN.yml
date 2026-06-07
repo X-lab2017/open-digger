@@ -1,0 +1,11 @@
+name: Ilocos Norte
+name_zh: 北伊罗戈
+type: Division-1
+meta:
+  alpha2: PH-ILN
+  includes:
+    - hilagang iloko
+    - ph-iln
+    - iln
+    - hilagang iloko province
+  category: PROVINCE

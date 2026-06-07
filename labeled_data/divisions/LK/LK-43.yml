@@ -1,0 +1,11 @@
+name: Mannārama
+name_zh: 马纳尔区
+type: Division-1
+meta:
+  alpha2: LK-43
+  includes:
+    - mannar
+    - lk-43
+    - '43'
+    - mannar district
+  category: PROVINCE

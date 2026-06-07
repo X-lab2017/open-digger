@@ -1,5 +1,5 @@
 name: Puno
-name_zh: 普诺
+name_zh: 普诺大区
 type: Division-1
 meta:
   alpha2: PE-PUN
@@ -10,4 +10,5 @@ meta:
     - puno region
     - punu
     - punu region
+    - 普诺
   category: REGION

@@ -1,5 +1,5 @@
-name: Ípeiros
-name_zh: 中马其顿
+name: Ipeiros
+name_zh: 伊庇鲁斯
 type: Division-1
 meta:
   alpha2: GR-D
@@ -9,4 +9,5 @@ meta:
     - d
     - ípeiros administrative region
     - epirus
+    - 中马其顿
   category: ADMINISTRATIVE REGION

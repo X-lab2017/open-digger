@@ -1,5 +1,5 @@
 name: Bạc Liêu
-name_zh: 薄辽
+name_zh: 薄寮省
 type: Division-1
 meta:
   alpha2: VN-55
@@ -9,4 +9,5 @@ meta:
     - '55'
     - bạc liêu province
     - bac lieu
+    - 薄辽
   category: PROVINCE

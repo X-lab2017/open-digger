@@ -1,0 +1,29 @@
+name: Pardubický
+name_zh: 帕尔杜比采州
+type: Division-1
+meta:
+  alpha2: CZ-PA
+  includes:
+    - chrudim
+    - cz-531
+    - '531'
+    - chrudim district
+    - pardubice
+    - cz-532
+    - '532'
+    - pardubice district
+    - pardubický kraj
+    - cz-53
+    - '53'
+    - pardubický kraj region
+    - svitavy
+    - cz-533
+    - '533'
+    - svitavy district
+    - ústí nad orlicí
+    - cz-534
+    - '534'
+    - ústí nad orlicí district
+    - pardubice region
+    - 帕尔杜比采
+  category: REGION

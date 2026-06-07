@@ -1,5 +1,5 @@
-name: Az̧ Z̧āhirah
-name_zh: 佐法尔省
+name: Al Dhahira
+name_zh: 扎希拉省
 type: Division-1
 meta:
   alpha2: OM-ZA
@@ -9,4 +9,5 @@ meta:
     - za
     - az̧ z̧āhirah governorate
     - ad dhahirah governorate
+    - 佐法尔省
   category: GOVERNORATE

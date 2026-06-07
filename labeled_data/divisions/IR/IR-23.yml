@@ -1,5 +1,5 @@
-name: Tehrān
-name_zh: 德黑兰省
+name: Hormozgan
+name_zh: 霍爾木茲甘省
 type: Division-1
 meta:
   alpha2: IR-23
@@ -9,4 +9,5 @@ meta:
     - '23'
     - tehrān province
     - tehran province
+    - 德黑兰省
   category: PROVINCE

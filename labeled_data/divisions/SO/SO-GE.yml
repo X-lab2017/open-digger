@@ -1,5 +1,5 @@
 name: Gedo
-name_zh: 盖多
+name_zh: 盖多州
 type: Division-1
 meta:
   alpha2: SO-GE
@@ -8,4 +8,5 @@ meta:
     - so-ge
     - ge
     - gedo region
+    - 盖多
   category: REGION

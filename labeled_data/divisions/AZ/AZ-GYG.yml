@@ -1,5 +1,5 @@
-name: Göygöl
-name_zh: 盖戈里区
+name: Xanlar
+name_zh: 汉拉尔区
 type: Division-1
 meta:
   alpha2: AZ-GYG
@@ -8,4 +8,5 @@ meta:
     - az-gyg
     - gyg
     - göygöl rayon
+    - 盖戈里区
   category: RAYON

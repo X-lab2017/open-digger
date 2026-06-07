@@ -1,0 +1,11 @@
+name: Rankovce
+type: Division-1
+meta:
+  alpha2: MK-65
+  includes:
+    - rankovce
+    - mk-705
+    - '705'
+    - rankovce municipality
+  category: MUNICIPALITY
+name_zh: 兰科夫塞区

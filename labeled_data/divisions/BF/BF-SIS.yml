@@ -1,0 +1,11 @@
+name: Sissili
+name_zh: 锡西里省
+type: Division-1
+meta:
+  alpha2: BF-SIS
+  includes:
+    - sissili
+    - bf-sis
+    - sis
+    - sissili province
+  category: PROVINCE

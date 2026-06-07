@@ -1,4 +1,4 @@
-name: Kidričevo
+name: Kidricevo
 type: Division-1
 meta:
   alpha2: SI-045
@@ -8,3 +8,4 @@ meta:
     - '045'
     - kidričevo municipality
   category: MUNICIPALITY
+name_zh: 基德里切沃

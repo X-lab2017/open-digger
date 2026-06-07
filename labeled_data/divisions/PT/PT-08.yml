@@ -1,5 +1,5 @@
 name: Faro
-name_zh: 法罗
+name_zh: 法鲁区
 type: Division-1
 meta:
   alpha2: PT-08
@@ -8,4 +8,5 @@ meta:
     - pt-08
     - '08'
     - faro district
+    - 法罗
   category: DISTRICT

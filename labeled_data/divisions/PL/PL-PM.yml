@@ -1,0 +1,14 @@
+name: Pomeranian
+name_zh: 滨海省
+type: Division-1
+meta:
+  alpha2: PL-PM
+  includes:
+    - pomorskie
+    - pl-22
+    - '22'
+    - pomorskie voivodship
+    - pomeranian voivodeship
+    - województwo pomorskie
+    - pm
+  category: VOIVODSHIP

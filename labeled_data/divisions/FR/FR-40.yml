@@ -1,0 +1,11 @@
+name: Landes
+name_zh: 朗德省
+type: Division-1
+meta:
+  alpha2: FR-40
+  includes:
+    - landes
+    - fr-40
+    - '40'
+    - landes metropolitan department
+  category: PROVINCE

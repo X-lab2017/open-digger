@@ -1,0 +1,11 @@
+name: Mwanza
+name_zh: 姆万扎县
+type: Division-1
+meta:
+  alpha2: MW-MW
+  includes:
+    - mwanza
+    - mw-mw
+    - mw
+    - mwanza district
+  category: PROVINCE

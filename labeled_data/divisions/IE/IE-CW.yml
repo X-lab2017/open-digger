@@ -1,0 +1,11 @@
+name: Carlow
+name_zh: 卡洛郡
+type: Division-1
+meta:
+  alpha2: IE-CW
+  includes:
+    - carlow
+    - ie-cw
+    - cw
+    - carlow county
+  category: PROVINCE

@@ -1,0 +1,11 @@
+name: Málaga
+name_zh: 馬拉加省
+type: Division-1
+meta:
+  alpha2: ES-MA
+  includes:
+    - málaga
+    - es-ma
+    - ma
+    - málaga province
+  category: PROVINCE

@@ -1,0 +1,12 @@
+name: Dojran
+type: Division-1
+meta:
+  alpha2: MK-26
+  includes:
+    - dojran
+    - mk-406
+    - '406'
+    - dojran municipality
+    - municipality of dojran
+  category: MUNICIPALITY
+name_zh: 多伊兰区

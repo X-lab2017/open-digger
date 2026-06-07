@@ -1,5 +1,5 @@
-name: Ādažu novads
-name_zh: 阿达日市镇
+name: Ādaži
+name_zh: 阿達日自治市
 type: Division-1
 meta:
   alpha2: LV-011
@@ -10,4 +10,5 @@ meta:
     - ādažu novads municipality
     - ādaži
     - ādaži municipality
+    - 阿达日市镇
   category: MUNICIPALITY

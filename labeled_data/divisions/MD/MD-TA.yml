@@ -1,5 +1,5 @@
 name: Taraclia
-name_zh: 塔拉克拉区
+name_zh: 塔拉克利亚区
 type: Division-1
 meta:
   alpha2: MD-TA
@@ -8,4 +8,5 @@ meta:
     - md-ta
     - ta
     - taraclia district
+    - 塔拉克拉区
   category: DISTRICT

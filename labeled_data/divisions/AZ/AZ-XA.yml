@@ -1,5 +1,5 @@
-name: Xankəndi
-name_zh: 汉肯德
+name: Stepanakert
+name_zh: 斯捷潘纳克特
 type: Division-1
 meta:
   alpha2: AZ-XA
@@ -8,4 +8,5 @@ meta:
     - az-xa
     - xa
     - xankəndi municipality
+    - 汉肯德
   category: MUNICIPALITY

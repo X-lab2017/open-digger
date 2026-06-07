@@ -1,0 +1,11 @@
+name: Sulawesi Tengah
+name_zh: 中苏拉威西省
+type: Division-1
+meta:
+  alpha2: ID-ST
+  includes:
+    - sulawesi tengah
+    - id-st
+    - st
+    - sulawesi tengah province
+  category: PROVINCE

@@ -1,5 +1,5 @@
-name: Sofia
-name_zh: 索非亚市
+name: Grad Sofiya
+name_zh: 索菲亞市州
 type: Division-1
 meta:
   alpha2: BG-22
@@ -11,4 +11,5 @@ meta:
     - sofia city
     - sofia city province
     - sofia-grad
+    - 索非亚市
   category: DISTRICT

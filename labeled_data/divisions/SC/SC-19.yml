@@ -1,4 +1,4 @@
-name: Plezans
+name: Plaisance
 type: Division-1
 meta:
   alpha2: SC-19
@@ -10,3 +10,4 @@ meta:
     - plezans
     - plezans district
   category: DISTRICT
+name_zh: 普莱桑斯区

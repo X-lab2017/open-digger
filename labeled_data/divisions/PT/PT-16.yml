@@ -1,5 +1,5 @@
 name: Viana do Castelo
-name_zh: 维亚纳杜卡斯泰洛区
+name_zh: 维亚纳堡区
 type: Division-1
 meta:
   alpha2: PT-16
@@ -8,4 +8,5 @@ meta:
     - pt-16
     - '16'
     - viana do castelo district
+    - 维亚纳杜卡斯泰洛区
   category: DISTRICT

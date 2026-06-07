@@ -1,0 +1,12 @@
+name: Pehčevo
+type: Division-1
+meta:
+  alpha2: MK-60
+  includes:
+    - pehčevo
+    - mk-208
+    - '208'
+    - pehčevo municipality
+    - municipality of pehčevo
+  category: MUNICIPALITY
+name_zh: 佩赫塞沃区

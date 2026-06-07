@@ -1,5 +1,5 @@
 name: Baden-Württemberg
-name_zh: 巴登-符腾堡州
+name_zh: 巴登－符腾堡
 type: Division-1
 meta:
   alpha2: DE-BW
@@ -8,4 +8,5 @@ meta:
     - de-bw
     - bw
     - baden-württemberg land
+    - 巴登-符腾堡州
   category: LAND

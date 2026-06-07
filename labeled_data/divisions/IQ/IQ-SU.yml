@@ -1,0 +1,11 @@
+name: As-Sulaymaniyah
+name_zh: 苏莱曼尼亚省
+type: Division-1
+meta:
+  alpha2: IQ-SU
+  includes:
+    - as sulaymānīyah
+    - iq-su
+    - su
+    - as sulaymānīyah governorate
+  category: PROVINCE

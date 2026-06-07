@@ -1,0 +1,13 @@
+name: Radoviš
+name_zh: 拉多维什区
+type: Division-1
+meta:
+  alpha2: MK-64
+  includes:
+    - radoviš
+    - mk-409
+    - '409'
+    - radoviš municipality
+    - municipality of radoviš
+    - 拉多维什
+  category: MUNICIPALITY

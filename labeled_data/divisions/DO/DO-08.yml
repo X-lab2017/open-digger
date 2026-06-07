@@ -1,0 +1,11 @@
+name: El Seybo
+name_zh: 赛堡省
+type: Division-1
+meta:
+  alpha2: DO-08
+  includes:
+    - el seibo
+    - do-08
+    - '08'
+    - el seibo province
+  category: PROVINCE

@@ -1,5 +1,5 @@
 name: Pamplemousses
-name_zh: 潘普勒穆斯区
+name_zh: 庞波慕斯区
 type: Division-1
 meta:
   alpha2: MU-PA
@@ -8,4 +8,5 @@ meta:
     - mu-pa
     - pa
     - pamplemousses district
+    - 潘普勒穆斯区
   category: DISTRICT

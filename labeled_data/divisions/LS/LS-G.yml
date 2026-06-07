@@ -1,5 +1,5 @@
 name: Quthing
-name_zh: 马费滕区
+name_zh: 古廷区
 type: Division-1
 meta:
   alpha2: LS-G
@@ -8,4 +8,5 @@ meta:
     - ls-g
     - g
     - quthing district
+    - 马费滕区
   category: DISTRICT

@@ -1,0 +1,11 @@
+name: Haute-Vienne
+name_zh: 上维埃纳省
+type: Division-1
+meta:
+  alpha2: FR-87
+  includes:
+    - haute-vienne
+    - fr-87
+    - '87'
+    - haute-vienne metropolitan department
+  category: PROVINCE

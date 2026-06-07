@@ -1,5 +1,5 @@
 name: Anzoátegui
-name_zh: 巴里纳斯
+name_zh: 安索阿特吉州
 type: Division-1
 meta:
   alpha2: VE-B
@@ -10,4 +10,5 @@ meta:
     - anzoátegui state
     - anzoategui
     - an
+    - 巴里纳斯
   category: STATE

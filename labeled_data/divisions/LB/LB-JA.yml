@@ -1,5 +1,5 @@
-name: Liban-Sud
-name_zh: Jabal Lubnan
+name: South Lebanon
+name_zh: 南部省
 type: Division-1
 meta:
   alpha2: LB-JA
@@ -11,4 +11,5 @@ meta:
     - liban-sud
     - liban-sud governorate
     - south governorate
+    - Jabal Lubnan
   category: GOVERNORATE

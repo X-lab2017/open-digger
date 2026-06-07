@@ -1,0 +1,11 @@
+name: Ardennes
+name_zh: 阿登省
+type: Division-1
+meta:
+  alpha2: FR-08
+  includes:
+    - ardennes
+    - fr-08
+    - '08'
+    - ardennes metropolitan department
+  category: PROVINCE

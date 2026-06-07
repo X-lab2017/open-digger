@@ -1,5 +1,5 @@
 name: Kon Tum
-name_zh: 昆嵩
+name_zh: 昆嵩省
 type: Division-1
 meta:
   alpha2: VN-28
@@ -8,4 +8,5 @@ meta:
     - vn-28
     - '28'
     - kon tum province
+    - 昆嵩
   category: PROVINCE

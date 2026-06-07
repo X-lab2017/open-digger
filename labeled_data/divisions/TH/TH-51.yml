@@ -1,5 +1,5 @@
 name: Lamphun
-name_zh: 兰邦府
+name_zh: 南奔府
 type: Division-1
 meta:
   alpha2: TH-51
@@ -10,4 +10,5 @@ meta:
     - lamphun province
     - chang wat lamphun
     - ลำพูน
+    - 兰邦府
   category: PROVINCE

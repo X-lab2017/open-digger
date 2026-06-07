@@ -1,0 +1,12 @@
+name: Lagunes
+name_zh: 泻湖
+type: Division-1
+meta:
+  alpha2: CI-01
+  includes:
+    - lagunes
+    - ci-lg
+    - lg
+    - lagunes district
+    - 泻湖区
+  category: DISTRICT

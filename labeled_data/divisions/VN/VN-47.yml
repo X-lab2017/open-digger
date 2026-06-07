@@ -1,5 +1,5 @@
-name: Kiến Giang
-name_zh: 坚江
+name: Kiên Giang
+name_zh: 坚江省
 type: Division-1
 meta:
   alpha2: VN-47
@@ -10,4 +10,5 @@ meta:
     - kiến giang province
     - kiên giang
     - kien giang
+    - 坚江
   category: PROVINCE

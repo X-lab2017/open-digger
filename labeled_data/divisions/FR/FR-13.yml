@@ -1,0 +1,11 @@
+name: Bouches-du-Rhône
+name_zh: 罗讷河口省
+type: Division-1
+meta:
+  alpha2: FR-13
+  includes:
+    - bouches-du-rhône
+    - fr-13
+    - '13'
+    - bouches-du-rhône metropolitan department
+  category: PROVINCE

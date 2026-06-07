@@ -1,5 +1,5 @@
-name: Vinnytska oblast
-name_zh: 文尼察
+name: Vinnytsya
+name_zh: 文尼察州
 type: Division-1
 meta:
   alpha2: UA-05
@@ -11,4 +11,5 @@ meta:
     - vinnytsia oblast
     - vinnyts'ka oblast
     - vinnytsya
+    - 文尼察
   category: REGION

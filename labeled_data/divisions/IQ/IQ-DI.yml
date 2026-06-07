@@ -1,5 +1,5 @@
-name: Diyālá
-name_zh: 卡尔巴拉省
+name: Diyala
+name_zh: 迪亚拉省
 type: Division-1
 meta:
   alpha2: IQ-DI
@@ -9,4 +9,5 @@ meta:
     - di
     - diyālá governorate
     - diyala governorate
+    - 卡尔巴拉省
   category: GOVERNORATE

@@ -1,5 +1,5 @@
 name: Alabama
-name_zh: 阿拉巴马州
+name_zh: 亚拉巴马州
 type: Division-1
 meta:
   alpha2: US-AL
@@ -8,4 +8,5 @@ meta:
     - us-al
     - al
     - alabama state
+    - 阿拉巴马州
   category: STATE

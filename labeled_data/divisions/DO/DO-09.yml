@@ -1,0 +1,11 @@
+name: Espaillat
+name_zh: 艾斯派亚省
+type: Division-1
+meta:
+  alpha2: DO-09
+  includes:
+    - espaillat
+    - do-09
+    - '09'
+    - espaillat province
+  category: PROVINCE

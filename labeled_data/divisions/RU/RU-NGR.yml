@@ -1,5 +1,5 @@
-name: Novgorodskaya oblast'
-name_zh: 加里宁格勒州
+name: Novgorod
+name_zh: 诺夫哥罗德州
 type: Division-1
 meta:
   alpha2: RU-NGR
@@ -12,4 +12,5 @@ meta:
     - novgorodskaya oblast' administrative region
     - novgorod oblast
     - novgorod
+    - 加里宁格勒州
   category: ADMINISTRATIVE REGION

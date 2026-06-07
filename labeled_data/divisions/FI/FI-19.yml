@@ -1,5 +1,5 @@
-name: Egentliga Finland
-name_zh: 西南芬兰
+name: Finland Proper
+name_zh: 西南芬蘭區
 type: Division-1
 meta:
   alpha2: FI-19
@@ -16,4 +16,5 @@ meta:
     - fi195
     - fi196
     - fi197
+    - 西南芬兰
   category: REGION

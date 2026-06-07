@@ -1,5 +1,5 @@
 name: Junín
-name_zh: 胡宁
+name_zh: 胡宁大区
 type: Division-1
 meta:
   alpha2: PE-JUN
@@ -12,4 +12,5 @@ meta:
     - junin region
     - junín
     - junín region
+    - 胡宁
   category: REGION

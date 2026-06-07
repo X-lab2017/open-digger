@@ -1,5 +1,5 @@
-name: Rabat-Salé-Kénitra
-name_zh: 拉巴特-萨累-肯尼塔拉
+name: Oriental
+name_zh: 东部大区
 type: Division-1
 meta:
   alpha2: MA-04
@@ -42,4 +42,5 @@ meta:
     - skhirate-témara prefecture
     - rabat-salé-kenitra
     - جهة بني ملال خنيفرة
+    - 拉巴特-萨累-肯尼塔拉
   category: REGION

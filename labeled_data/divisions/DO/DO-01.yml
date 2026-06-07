@@ -1,0 +1,11 @@
+name: Distrito Nacional
+name_zh: 國家特區
+type: Division-1
+meta:
+  alpha2: DO-01
+  includes:
+    - distrito nacional
+    - do-01
+    - '01'
+    - distrito nacional district
+  category: PROVINCE

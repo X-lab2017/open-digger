@@ -1,0 +1,11 @@
+name: Sopište
+type: Division-1
+meta:
+  alpha2: MK-70
+  includes:
+    - sopište
+    - mk-812
+    - '812'
+    - sopište municipality
+  category: MUNICIPALITY
+name_zh: 苏皮什特区

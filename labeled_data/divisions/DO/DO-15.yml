@@ -1,0 +1,11 @@
+name: Monte Cristi
+name_zh: 基度山省
+type: Division-1
+meta:
+  alpha2: DO-15
+  includes:
+    - monte cristi
+    - do-15
+    - '15'
+    - monte cristi province
+  category: PROVINCE

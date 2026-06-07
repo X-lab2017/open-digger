@@ -1,5 +1,5 @@
-name: Călărași
-name_zh: 克卢日县
+name: Calarasi
+name_zh: 克勒拉希县
 type: Division-1
 meta:
   alpha2: RO-CL
@@ -10,4 +10,5 @@ meta:
     - călărași department
     - călăraşi
     - călărași county
+    - 克卢日县
   category: DEPARTMENT

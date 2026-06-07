@@ -1,5 +1,5 @@
 name: Ialoveni
-name_zh: 亚洛文尼区
+name_zh: 亚洛韦尼区
 type: Division-1
 meta:
   alpha2: MD-IA
@@ -8,4 +8,5 @@ meta:
     - md-ia
     - ia
     - ialoveni district
+    - 亚洛文尼区
   category: DISTRICT

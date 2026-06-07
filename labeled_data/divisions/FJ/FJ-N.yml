@@ -1,5 +1,5 @@
 name: Northern
-name_zh: 中央区
+name_zh: 北部大区
 type: Division-1
 meta:
   alpha2: FJ-N
@@ -20,4 +20,5 @@ meta:
     - fj-n
     - 'n'
     - northern division
+    - 中央区
   category: DIVISION

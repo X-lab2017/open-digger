@@ -1,5 +1,5 @@
-name: Ngazidja
-name_zh: 恩加兹贾
+name: Andjazîdja
+name_zh: 大葛摩岛
 type: Division-1
 meta:
   alpha2: KM-G
@@ -14,4 +14,5 @@ meta:
     - grande comore island
     - ngazidja
     - ngazidja island
+    - 恩加兹贾
   category: ISLAND

@@ -1,5 +1,5 @@
 name: Quindío
-name_zh: 金迪奥
+name_zh: 金迪奥省
 type: Division-1
 meta:
   alpha2: CO-QUI
@@ -9,4 +9,5 @@ meta:
     - qui
     - quindío department
     - quindio
+    - 金迪奥
   category: DEPARTMENT

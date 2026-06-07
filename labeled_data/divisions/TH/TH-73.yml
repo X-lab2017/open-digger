@@ -1,5 +1,5 @@
 name: Nakhon Pathom
-name_zh: 暖武里府
+name_zh: 佛统府
 type: Division-1
 meta:
   alpha2: TH-73
@@ -9,4 +9,5 @@ meta:
     - '73'
     - nakhon pathom province
     - chang wat nakhon pathom
+    - 暖武里府
   category: PROVINCE

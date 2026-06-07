@@ -1,0 +1,11 @@
+name: Val-d'Oise
+name_zh: 瓦勒德瓦兹省
+type: Division-1
+meta:
+  alpha2: FR-95
+  includes:
+    - val-d'oise
+    - fr-95
+    - '95'
+    - val-d'oise metropolitan department
+  category: PROVINCE

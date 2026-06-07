@@ -1,0 +1,13 @@
+name: Valandovo
+name_zh: 瓦兰多沃区
+type: Division-1
+meta:
+  alpha2: MK-10
+  includes:
+    - valandovo
+    - mk-403
+    - '403'
+    - valandovo municipality
+    - municipality of valandovo
+    - 瓦兰多沃
+  category: MUNICIPALITY

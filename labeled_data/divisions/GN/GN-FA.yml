@@ -1,0 +1,28 @@
+name: Faranah
+name_zh: 法拉纳大区
+type: Division-1
+meta:
+  alpha2: GN-FA
+  includes:
+    - dabola
+    - gn-db
+    - db
+    - dabola prefecture
+    - dinguiraye
+    - gn-di
+    - di
+    - dinguiraye prefecture
+    - faranah
+    - gn-f
+    - f
+    - faranah administrative region
+    - gn-fa
+    - fa
+    - faranah prefecture
+    - kissidougou
+    - gn-ks
+    - ks
+    - kissidougou prefecture
+    - faranah region
+    - 法拉纳区
+  category: ADMINISTRATIVE REGION

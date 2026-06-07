@@ -1,0 +1,11 @@
+name: Azua
+name_zh: 阿苏阿省
+type: Division-1
+meta:
+  alpha2: DO-02
+  includes:
+    - azua
+    - do-02
+    - '02'
+    - azua province
+  category: PROVINCE

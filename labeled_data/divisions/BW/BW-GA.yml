@@ -1,5 +1,5 @@
 name: Gaborone
-name_zh: 哈博罗内市
+name_zh: 嘉柏隆里
 type: Division-1
 meta:
   alpha2: BW-GA
@@ -8,4 +8,5 @@ meta:
     - bw-ga
     - ga
     - gaborone city
+    - 哈博罗内市
   category: CITY

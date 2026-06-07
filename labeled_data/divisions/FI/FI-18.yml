@@ -1,5 +1,5 @@
-name: Nyland
-name_zh: 乌西马
+name: Uusimaa
+name_zh: 新地区
 type: Division-1
 meta:
   alpha2: FI-18
@@ -18,4 +18,5 @@ meta:
     - fi185
     - fi186
     - fi187
+    - 乌西马
   category: REGION

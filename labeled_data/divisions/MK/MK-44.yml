@@ -1,0 +1,11 @@
+name: Kriva Palanka
+type: Division-1
+meta:
+  alpha2: MK-44
+  includes:
+    - kriva palanka
+    - mk-702
+    - '702'
+    - kriva palanka municipality
+  category: MUNICIPALITY
+name_zh: 克里瓦帕兰卡区

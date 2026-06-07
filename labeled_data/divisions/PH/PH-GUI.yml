@@ -1,0 +1,11 @@
+name: Guimaras
+name_zh: 吉马拉斯省
+type: Division-1
+meta:
+  alpha2: PH-GUI
+  includes:
+    - gimaras
+    - ph-gui
+    - gui
+    - gimaras province
+  category: PROVINCE

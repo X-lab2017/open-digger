@@ -1,4 +1,4 @@
-name: Ivančna Gorica
+name: Ivancna Gorica
 type: Division-1
 meta:
   alpha2: SI-039
@@ -8,3 +8,4 @@ meta:
     - '039'
     - ivančna gorica municipality
   category: MUNICIPALITY
+name_zh: 伊万奇纳戈里察

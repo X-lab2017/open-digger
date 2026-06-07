@@ -1,0 +1,15 @@
+name: Warmian-Masurian
+name_zh: 瓦尔米亚-马祖里省
+type: Division-1
+meta:
+  alpha2: PL-WN
+  includes:
+    - warmińsko-mazurskie
+    - pl-28
+    - '28'
+    - warmińsko-mazurskie voivodship
+    - warmian-masurian voivodeship
+    - województwo warmińsko-mazurskie
+    - wn
+    - wm
+  category: VOIVODSHIP

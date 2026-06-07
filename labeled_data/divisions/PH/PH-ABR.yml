@@ -1,0 +1,11 @@
+name: Abra
+name_zh: 阿布拉省
+type: Division-1
+meta:
+  alpha2: PH-ABR
+  includes:
+    - abra
+    - ph-abr
+    - abr
+    - abra province
+  category: PROVINCE

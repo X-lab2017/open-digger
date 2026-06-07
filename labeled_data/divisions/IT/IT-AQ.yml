@@ -1,0 +1,11 @@
+name: L'Aquila
+name_zh: 阿奎拉省
+type: Division-1
+meta:
+  alpha2: IT-AQ
+  includes:
+    - l'aquila
+    - it-aq
+    - aq
+    - l'aquila province
+  category: PROVINCE

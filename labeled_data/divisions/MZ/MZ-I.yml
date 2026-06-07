@@ -1,5 +1,5 @@
 name: Inhambane
-name_zh: 因汉巴内省
+name_zh: 伊尼扬巴内省
 type: Division-1
 meta:
   alpha2: MZ-I
@@ -8,4 +8,5 @@ meta:
     - mz-i
     - i
     - inhambane province
+    - 因汉巴内省
   category: PROVINCE

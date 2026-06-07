@@ -1,5 +1,5 @@
 name: Lambayeque
-name_zh: 兰巴耶克
+name_zh: 兰巴耶克大区
 type: Division-1
 meta:
   alpha2: PE-LAM
@@ -10,4 +10,5 @@ meta:
     - lambayeque region
     - lampalliqi
     - lampalliqi region
+    - 兰巴耶克
   category: REGION

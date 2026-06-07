@@ -1,0 +1,11 @@
+name: Marinduque
+name_zh: 马林杜克省
+type: Division-1
+meta:
+  alpha2: PH-MAD
+  includes:
+    - marinduke
+    - ph-mad
+    - mad
+    - marinduke province
+  category: PROVINCE

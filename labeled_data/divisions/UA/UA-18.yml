@@ -1,5 +1,5 @@
-name: Zhytomyrska oblast
-name_zh: 日托米尔
+name: Zhytomyr
+name_zh: 日托米尔州
 type: Division-1
 meta:
   alpha2: UA-18
@@ -11,4 +11,5 @@ meta:
     - zhytomyr oblast
     - zhytomyrs'ka oblast
     - zhytomyr
+    - 日托米尔
   category: REGION

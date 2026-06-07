@@ -1,5 +1,5 @@
 name: Sežana
-name_zh: 塞扎纳
+name_zh: 塞扎納鎮
 type: Division-1
 meta:
   alpha2: SI-111
@@ -8,4 +8,5 @@ meta:
     - si-111
     - '111'
     - sežana municipality
+    - 塞扎纳
   category: MUNICIPALITY

@@ -1,5 +1,5 @@
 name: Mostaganem
-name_zh: 穆斯塔加内姆省
+name_zh: 穆斯塔加奈姆省
 type: Division-1
 meta:
   alpha2: DZ-27
@@ -8,4 +8,5 @@ meta:
     - dz-27
     - '27'
     - mostaganem province
+    - 穆斯塔加内姆省
   category: PROVINCE

@@ -1,0 +1,11 @@
+name: Hérault
+name_zh: 埃罗省
+type: Division-1
+meta:
+  alpha2: FR-34
+  includes:
+    - hérault
+    - fr-34
+    - '34'
+    - hérault metropolitan department
+  category: PROVINCE

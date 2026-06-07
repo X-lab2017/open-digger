@@ -1,5 +1,5 @@
 name: Aksaray
-name_zh: 阿格里
+name_zh: 阿克萨赖省
 type: Division-1
 meta:
   alpha2: TR-68
@@ -8,4 +8,5 @@ meta:
     - tr-68
     - '68'
     - aksaray province
+    - 阿格里
   category: PROVINCE

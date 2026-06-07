@@ -1,5 +1,5 @@
-name: Cherkaska oblast
-name_zh: 切尔卡瑟
+name: Cherkasy
+name_zh: 切尔卡瑟州
 type: Division-1
 meta:
   alpha2: UA-71
@@ -11,4 +11,5 @@ meta:
     - cherkasy oblast
     - cherkas'ka oblast
     - cherkasy
+    - 切尔卡瑟
   category: REGION

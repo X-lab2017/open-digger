@@ -1,5 +1,5 @@
-name: Mykolaivska oblast
-name_zh: 尼古拉耶夫
+name: Mykolayiv
+name_zh: 尼古拉耶夫州
 type: Division-1
 meta:
   alpha2: UA-48
@@ -11,4 +11,5 @@ meta:
     - mykolaivs'ka oblast
     - mykolayiv
     - mykolaiv oblast
+    - 尼古拉耶夫
   category: REGION

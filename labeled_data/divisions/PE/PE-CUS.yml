@@ -1,5 +1,5 @@
 name: Cusco
-name_zh: 库斯科
+name_zh: 库斯科大区
 type: Division-1
 meta:
   alpha2: PE-CUS
@@ -14,4 +14,5 @@ meta:
     - kusku region
     - qusqu
     - qusqu region
+    - 库斯科
   category: REGION

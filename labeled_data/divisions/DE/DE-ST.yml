@@ -1,5 +1,5 @@
 name: Sachsen-Anhalt
-name_zh: 萨克森-安哈尔特州
+name_zh: 萨克森－安哈尔特
 type: Division-1
 meta:
   alpha2: DE-ST
@@ -9,4 +9,5 @@ meta:
     - st
     - sachsen-anhalt land
     - saxony-anhalt
+    - 萨克森-安哈尔特州
   category: LAND

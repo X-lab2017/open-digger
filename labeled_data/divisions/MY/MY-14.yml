@@ -1,5 +1,5 @@
-name: Wilayah Persekutuan Kuala Lumpur
-name_zh: 吉隆坡联邦直辖区
+name: Kuala Lumpur
+name_zh: 吉隆坡
 type: Division-1
 meta:
   alpha2: MY-14
@@ -10,4 +10,5 @@ meta:
     - wilayah persekutuan kuala lumpur federal territory
     - federal territory of kuala lumpur
     - wilayah persekutuan
+    - 吉隆坡联邦直辖区
   category: FEDERAL TERRITORY

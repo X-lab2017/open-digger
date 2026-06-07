@@ -1,5 +1,5 @@
-name: Uppsala län
-name_zh: 乌普萨拉县
+name: Uppsala
+name_zh: 乌普萨拉省
 type: Division-1
 meta:
   alpha2: SE-C
@@ -9,4 +9,5 @@ meta:
     - c
     - uppsala län county
     - uppsala county
+    - 乌普萨拉县
   category: COUNTY

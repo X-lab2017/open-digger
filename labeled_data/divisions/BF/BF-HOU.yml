@@ -1,0 +1,11 @@
+name: Houet
+name_zh: 乌埃省
+type: Division-1
+meta:
+  alpha2: BF-HOU
+  includes:
+    - houet
+    - bf-hou
+    - hou
+    - houet province
+  category: PROVINCE

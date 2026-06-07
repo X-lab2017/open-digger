@@ -1,4 +1,4 @@
-name: Wake Island
+name: Wake Atoll
 type: Division-1
 meta:
   alpha2: UM-79
@@ -8,3 +8,4 @@ meta:
     - '79'
     - wake island islands, groups of islands
   category: ISLANDS, GROUPS OF ISLANDS
+name_zh: 威克岛

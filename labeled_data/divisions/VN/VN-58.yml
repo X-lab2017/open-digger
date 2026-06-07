@@ -1,5 +1,5 @@
 name: Bình Phước
-name_zh: 平福
+name_zh: 平福省
 type: Division-1
 meta:
   alpha2: VN-58
@@ -9,4 +9,5 @@ meta:
     - '58'
     - bình phước province
     - binh phuoc
+    - 平福
   category: PROVINCE

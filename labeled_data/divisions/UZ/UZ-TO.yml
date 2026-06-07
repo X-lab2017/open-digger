@@ -1,5 +1,5 @@
-name: Toshkent
-name_zh: 塔什干市
+name: Tashkent
+name_zh: 塔什干州
 type: Division-1
 meta:
   alpha2: UZ-TO
@@ -11,4 +11,5 @@ meta:
     - tashkent
     - toshkent viloyati
     - tashkent region
+    - 塔什干市
   category: REGION

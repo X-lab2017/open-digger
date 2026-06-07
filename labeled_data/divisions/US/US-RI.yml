@@ -1,5 +1,5 @@
 name: Rhode Island
-name_zh: 罗德岛州
+name_zh: 罗得岛州
 type: Division-1
 meta:
   alpha2: US-RI
@@ -8,4 +8,5 @@ meta:
     - us-ri
     - ri
     - rhode island state
+    - 罗德岛州
   category: STATE

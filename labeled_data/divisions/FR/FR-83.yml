@@ -1,0 +1,11 @@
+name: Var
+name_zh: 瓦尔省
+type: Division-1
+meta:
+  alpha2: FR-83
+  includes:
+    - var
+    - fr-83
+    - '83'
+    - var metropolitan department
+  category: PROVINCE

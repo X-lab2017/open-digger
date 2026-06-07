@@ -1,5 +1,5 @@
-name: Terre-Neuve-et-Labrador
-name_zh: 纽芬兰与拉布拉多省
+name: Newfoundland and Labrador
+name_zh: 纽芬兰-拉布拉多
 type: Division-1
 meta:
   alpha2: CA-NL
@@ -10,4 +10,5 @@ meta:
     - newfoundland and labrador province
     - terre-neuve-et-labrador
     - terre-neuve-et-labrador province
+    - 纽芬兰与拉布拉多省
   category: PROVINCE

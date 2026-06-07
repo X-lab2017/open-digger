@@ -1,5 +1,5 @@
-name: Nótio Aigaío
-name_zh: 中马其顿
+name: Notio Aigaio
+name_zh: 南爱琴
 type: Division-1
 meta:
   alpha2: GR-L
@@ -9,4 +9,5 @@ meta:
     - l
     - nótio aigaío administrative region
     - southern aegean
+    - 中马其顿
   category: ADMINISTRATIVE REGION

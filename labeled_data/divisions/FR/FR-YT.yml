@@ -1,0 +1,12 @@
+name: Mayotte
+name_zh: 马约特
+type: Division-1
+meta:
+  alpha2: FR-YT
+  includes:
+    - mayotte
+    - fr-976
+    - '976'
+    - mayotte overseas departmental collectivity
+    - 马约特省
+  category: OVERSEAS DEPARTMENTAL COLLECTIVITY

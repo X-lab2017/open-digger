@@ -1,5 +1,5 @@
-name: Al Buḩayrah
-name_zh: 贝海拉省
+name: Al Buhayrah
+name_zh: 布海拉省
 type: Division-1
 meta:
   alpha2: EG-BH
@@ -10,4 +10,5 @@ meta:
     - al buḩayrah governorate
     - beheira governorate
     - al buhayrah
+    - 贝海拉省
   category: GOVERNORATE

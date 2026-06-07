@@ -1,5 +1,5 @@
 name: Anenii Noi
-name_zh: 德涅斯特河左岸行政区单位
+name_zh: 新阿内尼区
 type: Division-1
 meta:
   alpha2: MD-AN
@@ -8,4 +8,5 @@ meta:
     - md-an
     - an
     - anenii noi district
+    - 德涅斯特河左岸行政区单位
   category: DISTRICT

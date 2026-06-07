@@ -1,5 +1,5 @@
 name: Bremen
-name_zh: 不来梅市
+name_zh: 不来梅
 type: Division-1
 meta:
   alpha2: DE-HB
@@ -8,4 +8,5 @@ meta:
     - de-hb
     - hb
     - bremen land
+    - 不来梅市
   category: LAND

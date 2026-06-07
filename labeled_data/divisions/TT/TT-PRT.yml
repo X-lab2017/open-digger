@@ -1,5 +1,5 @@
 name: Princes Town
-name_zh: 公主城地区公司
+name_zh: 王子镇地区
 type: Division-1
 meta:
   alpha2: TT-PRT
@@ -9,4 +9,5 @@ meta:
     - prt
     - princes town region
     - princes town regional corporation
+    - 公主城地区公司
   category: REGION

@@ -1,0 +1,11 @@
+name: San Juan
+name_zh: 圣胡安省
+type: Division-1
+meta:
+  alpha2: DO-22
+  includes:
+    - san juan
+    - do-22
+    - '22'
+    - san juan province
+  category: PROVINCE

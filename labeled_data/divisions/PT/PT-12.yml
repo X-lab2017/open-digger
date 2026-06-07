@@ -1,5 +1,5 @@
 name: Portalegre
-name_zh: 波特莱格雷区
+name_zh: 波塔萊格雷區
 type: Division-1
 meta:
   alpha2: PT-12
@@ -8,4 +8,5 @@ meta:
     - pt-12
     - '12'
     - portalegre district
+    - 波特莱格雷区
   category: DISTRICT

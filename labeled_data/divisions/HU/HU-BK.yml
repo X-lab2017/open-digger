@@ -1,5 +1,5 @@
 name: Bács-Kiskun
-name_zh: 巴奇-基什孔
+name_zh: 巴奇-基什孔州
 type: Division-1
 meta:
   alpha2: HU-BK
@@ -8,4 +8,5 @@ meta:
     - hu-bk
     - bk
     - bács-kiskun county
+    - 巴奇-基什孔
   category: COUNTY

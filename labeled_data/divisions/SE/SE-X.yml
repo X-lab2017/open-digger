@@ -1,5 +1,5 @@
-name: Gävleborgs län
-name_zh: 盖夫勒县
+name: Gävleborg
+name_zh: 耶夫勒堡省
 type: Division-1
 meta:
   alpha2: SE-X
@@ -10,4 +10,5 @@ meta:
     - gävleborgs län county
     - gävleborg county
     - gavleborg county
+    - 盖夫勒县
   category: COUNTY

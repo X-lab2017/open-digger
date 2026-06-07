@@ -1,0 +1,16 @@
+name: Aerodrom
+name_zh: 艾罗德隆区
+type: Division-1
+meta:
+  alpha2: MK-01
+  includes:
+    - aerodrom †
+    - mk-801
+    - '801'
+    - aerodrom † municipality
+    - aerodrom
+    - vardar
+    - greater skopje
+    - skopje statistical region
+    - 瓦尔达尔
+  category: MUNICIPALITY

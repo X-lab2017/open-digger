@@ -1,0 +1,11 @@
+name: Boa Vista
+name_zh: 博阿维斯塔岛县
+type: Division-1
+meta:
+  alpha2: CV-BV
+  includes:
+    - boa vista
+    - cv-bv
+    - bv
+    - boa vista municipality
+  category: PROVINCE

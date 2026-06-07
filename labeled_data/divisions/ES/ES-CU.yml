@@ -1,0 +1,11 @@
+name: Cuenca
+name_zh: 昆卡省
+type: Division-1
+meta:
+  alpha2: ES-CU
+  includes:
+    - cuenca
+    - es-cu
+    - cu
+    - cuenca province
+  category: PROVINCE

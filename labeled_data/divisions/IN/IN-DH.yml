@@ -1,5 +1,5 @@
-name: Dādra and Nagar Haveli and Damān and Diu
-name_zh: 达德拉-纳加尔哈维利和达曼-第乌
+name: Dadra and Nagar Haveli and Daman and Diu
+name_zh: 達德拉-納加爾哈維利和達曼-第烏
 type: Division-1
 meta:
   alpha2: IN-DH
@@ -8,4 +8,5 @@ meta:
     - in-dh
     - dh
     - dādra and nagar haveli and damān and diu union territory
+    - 达德拉-纳加尔哈维利和达曼-第乌
   category: UNION TERRITORY

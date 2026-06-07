@@ -1,0 +1,13 @@
+name: Sveti Nikole
+name_zh: 斯维蒂尼科列区
+type: Division-1
+meta:
+  alpha2: MK-69
+  includes:
+    - sveti nikole
+    - mk-108
+    - '108'
+    - sveti nikole municipality
+    - municipality of sveti nikole
+    - 圣尼古拉
+  category: MUNICIPALITY

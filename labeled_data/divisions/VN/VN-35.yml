@@ -1,5 +1,5 @@
 name: Lâm Đồng
-name_zh: 林同
+name_zh: 林同省
 type: Division-1
 meta:
   alpha2: VN-35
@@ -9,4 +9,5 @@ meta:
     - '35'
     - lâm đồng province
     - lam dong
+    - 林同
   category: PROVINCE

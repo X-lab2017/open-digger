@@ -1,5 +1,5 @@
-name: Capital Territory
-name_zh: 首都区
+name: Capital Territory (Honiara)
+name_zh: 霍尼亚拉
 type: Division-1
 meta:
   alpha2: SB-CT
@@ -8,4 +8,5 @@ meta:
     - sb-ct
     - ct
     - capital territory capital territory
+    - 首都区
   category: CAPITAL TERRITORY

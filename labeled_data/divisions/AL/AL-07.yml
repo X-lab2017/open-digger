@@ -1,5 +1,5 @@
 name: Kukës
-name_zh: 库克斯县
+name_zh: 库克斯州
 type: Division-1
 meta:
   alpha2: AL-07
@@ -8,4 +8,5 @@ meta:
     - al-07
     - '07'
     - kukës county
+    - 库克斯县
   category: COUNTY

@@ -1,5 +1,5 @@
-name: Kharkivska oblast
-name_zh: 哈尔科夫
+name: Kharkiv
+name_zh: 哈尔科夫州
 type: Division-1
 meta:
   alpha2: UA-63
@@ -11,4 +11,5 @@ meta:
     - kharkiv oblast
     - kharkivs'ka oblast
     - kharkiv
+    - 哈尔科夫
   category: REGION

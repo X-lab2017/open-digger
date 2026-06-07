@@ -1,5 +1,5 @@
-name: Nouveau-Brunswick
-name_zh: 新不伦瑞克省
+name: New Brunswick
+name_zh: 新不伦瑞克
 type: Division-1
 meta:
   alpha2: CA-NB
@@ -10,4 +10,5 @@ meta:
     - new brunswick province
     - nouveau-brunswick
     - nouveau-brunswick province
+    - 新不伦瑞克省
   category: PROVINCE

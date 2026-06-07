@@ -1,5 +1,5 @@
-name: Al Minūfīyah
-name_zh: 蒙努菲亚省
+name: Al Minufiyah
+name_zh: 米努夫省
 type: Division-1
 meta:
   alpha2: EG-MNF
@@ -10,4 +10,5 @@ meta:
     - al minūfīyah governorate
     - menofia governorate
     - al minufiyah
+    - 蒙努菲亚省
   category: GOVERNORATE

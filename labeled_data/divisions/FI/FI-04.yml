@@ -1,5 +1,5 @@
-name: Södra Savolax
-name_zh: 南萨沃
+name: Southern Savonia
+name_zh: 南萨沃尼亚区
 type: Division-1
 meta:
   alpha2: FI-04
@@ -11,4 +11,5 @@ meta:
     - södra savolax
     - södra savolax region
     - south savo
+    - 南萨沃
   category: REGION

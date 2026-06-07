@@ -1,5 +1,5 @@
 name: Lempira
-name_zh: 瓦莱省
+name_zh: 伦皮拉省
 type: Division-1
 meta:
   alpha2: HN-LE
@@ -8,4 +8,5 @@ meta:
     - hn-le
     - le
     - lempira department
+    - 瓦莱省
   category: DEPARTMENT

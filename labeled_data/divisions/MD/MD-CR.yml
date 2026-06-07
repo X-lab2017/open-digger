@@ -1,5 +1,5 @@
 name: Criuleni
-name_zh: 克里乌利尼区
+name_zh: 克留莱尼区
 type: Division-1
 meta:
   alpha2: MD-CR
@@ -8,4 +8,5 @@ meta:
     - md-cr
     - cr
     - criuleni district
+    - 克里乌利尼区
   category: DISTRICT

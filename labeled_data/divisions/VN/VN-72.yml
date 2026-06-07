@@ -1,5 +1,5 @@
 name: Đắk Nông
-name_zh: 得农
+name_zh: 得农省
 type: Division-1
 meta:
   alpha2: VN-72
@@ -9,4 +9,5 @@ meta:
     - '72'
     - đắk nông province
     - dak nong
+    - 得农
   category: PROVINCE

@@ -1,5 +1,5 @@
 name: Lampang
-name_zh: 南邦
+name_zh: 南邦府
 type: Division-1
 meta:
   alpha2: TH-52
@@ -9,4 +9,5 @@ meta:
     - '52'
     - lampang province
     - ลำปาง
+    - 南邦
   category: PROVINCE

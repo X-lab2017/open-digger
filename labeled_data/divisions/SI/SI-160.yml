@@ -1,4 +1,4 @@
-name: Hoče-Slivnica
+name: Hoce-Slivnica
 type: Division-1
 meta:
   alpha2: SI-160
@@ -8,3 +8,4 @@ meta:
     - '160'
     - hoče-slivnica municipality
   category: MUNICIPALITY
+name_zh: 霍采-斯利夫尼察

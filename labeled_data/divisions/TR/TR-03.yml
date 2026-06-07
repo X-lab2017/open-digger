@@ -1,5 +1,5 @@
 name: Afyonkarahisar
-name_zh: 阿菲永
+name_zh: 阿菲永卡拉希萨尔省
 type: Division-1
 meta:
   alpha2: TR-03
@@ -9,4 +9,5 @@ meta:
     - '03'
     - afyonkarahisar province
     - afyon
+    - 阿菲永
   category: PROVINCE

@@ -1,5 +1,5 @@
-name: Österbotten
-name_zh: 奥斯特博滕
+name: Ostrobothnia
+name_zh: 博滕區
 type: Division-1
 meta:
   alpha2: FI-12
@@ -11,4 +11,5 @@ meta:
     - österbotten
     - österbotten region
     - ostrobothnia
+    - 奥斯特博滕
   category: REGION

@@ -1,5 +1,5 @@
-name: Abuja Federal Capital Territory
-name_zh: 联邦首都区
+name: Federal Capital Territory
+name_zh: 联邦首都特区
 type: Division-1
 meta:
   alpha2: NG-FC
@@ -9,4 +9,5 @@ meta:
     - fc
     - abuja federal capital territory capital territory
     - federal capital territory
+    - 联邦首都区
   category: CAPITAL TERRITORY

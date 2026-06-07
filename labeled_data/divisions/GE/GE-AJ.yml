@@ -1,5 +1,5 @@
 name: Ajaria
-name_zh: 阿贾里亚自治共和国
+name_zh: 阿扎尔
 type: Division-1
 meta:
   alpha2: GE-AJ
@@ -11,4 +11,5 @@ meta:
     - ach'ara
     - ach'ara autonomous republic
     - adjara
+    - 阿贾里亚自治共和国
   category: AUTONOMOUS REPUBLIC

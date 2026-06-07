@@ -1,5 +1,5 @@
 name: Niedersachsen
-name_zh: 下萨克森州
+name_zh: 下萨克森
 type: Division-1
 meta:
   alpha2: DE-NI
@@ -9,4 +9,5 @@ meta:
     - ni
     - niedersachsen land
     - lower saxony
+    - 下萨克森州
   category: LAND

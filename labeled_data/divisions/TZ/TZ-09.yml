@@ -1,5 +1,5 @@
 name: Kilimanjaro
-name_zh: 乞力马扎罗
+name_zh: 乞力马扎罗区
 type: Division-1
 meta:
   alpha2: TZ-09
@@ -8,4 +8,5 @@ meta:
     - tz-09
     - '09'
     - kilimanjaro region
+    - 乞力马扎罗
   category: REGION

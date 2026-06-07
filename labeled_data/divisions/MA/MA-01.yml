@@ -1,5 +1,5 @@
-name: Tanger-Tétouan-Al Hoceïma
-name_zh: 丹吉尔-特陶安-胡塞马
+name: Tanger - Tétouan
+name_zh: 丹吉尔-得土安大区
 type: Division-1
 meta:
   alpha2: MA-01
@@ -44,4 +44,5 @@ meta:
     - tanger-tetouan-al hoceima
     - tanger-tétouan-al hoceima
     - فاس ـ بولمان
+    - 丹吉尔-特陶安-胡塞马
   category: REGION

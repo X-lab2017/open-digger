@@ -1,5 +1,5 @@
 name: Yaracuy
-name_zh: 亚拉库伊
+name_zh: 亚拉奎州
 type: Division-1
 meta:
   alpha2: VE-U
@@ -9,4 +9,5 @@ meta:
     - u
     - yaracuy state
     - ya
+    - 亚拉库伊
   category: STATE

@@ -1,0 +1,11 @@
+name: Sourou
+name_zh: 苏鲁省
+type: Division-1
+meta:
+  alpha2: BF-SOR
+  includes:
+    - sourou
+    - bf-sor
+    - sor
+    - sourou province
+  category: PROVINCE

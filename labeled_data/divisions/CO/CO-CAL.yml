@@ -1,5 +1,5 @@
 name: Caldas
-name_zh: 卡尔达斯
+name_zh: 卡尔达斯省
 type: Division-1
 meta:
   alpha2: CO-CAL
@@ -8,4 +8,5 @@ meta:
     - co-cal
     - cal
     - caldas department
+    - 卡尔达斯
   category: DEPARTMENT

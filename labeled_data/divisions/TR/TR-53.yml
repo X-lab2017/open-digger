@@ -1,5 +1,5 @@
 name: Rize
-name_zh: 里泽
+name_zh: 里泽省
 type: Division-1
 meta:
   alpha2: TR-53
@@ -8,4 +8,5 @@ meta:
     - tr-53
     - '53'
     - rize province
+    - 里泽
   category: PROVINCE

@@ -1,5 +1,5 @@
-name: Sakha
-name_zh: 萨哈共和国（雅库特）
+name: Sakha (Yakutia)
+name_zh: 萨哈共和国
 type: Division-1
 meta:
   alpha2: RU-SA
@@ -15,4 +15,5 @@ meta:
     - yakutiya
     - yakutiya republic
     - respublika sakha (yakutiya)
+    - 萨哈共和国（雅库特）
   category: REPUBLIC

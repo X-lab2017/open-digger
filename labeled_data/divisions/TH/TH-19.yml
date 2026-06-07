@@ -1,5 +1,5 @@
 name: Saraburi
-name_zh: 沙拉武里府
+name_zh: 北标府
 type: Division-1
 meta:
   alpha2: TH-19
@@ -9,4 +9,5 @@ meta:
     - '19'
     - saraburi province
     - sara buri
+    - 沙拉武里府
   category: PROVINCE

@@ -1,0 +1,11 @@
+name: Dinagat islands
+name_zh: ''
+type: Division-1
+meta:
+  alpha2: PH-DIN
+  includes:
+    - dinagat islands
+    - ph-din
+    - din
+    - dinagat islands province
+  category: PROVINCE

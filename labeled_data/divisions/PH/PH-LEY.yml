@@ -1,0 +1,11 @@
+name: Leyte
+name_zh: 雷伊泰
+type: Division-1
+meta:
+  alpha2: PH-LEY
+  includes:
+    - leyte
+    - ph-ley
+    - ley
+    - leyte province
+  category: PROVINCE

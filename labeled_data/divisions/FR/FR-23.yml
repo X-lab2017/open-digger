@@ -1,0 +1,11 @@
+name: Creuse
+name_zh: 克勒兹省
+type: Division-1
+meta:
+  alpha2: FR-23
+  includes:
+    - creuse
+    - fr-23
+    - '23'
+    - creuse metropolitan department
+  category: PROVINCE

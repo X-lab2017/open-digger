@@ -1,5 +1,5 @@
 name: Mersin
-name_zh: 梅尔辛
+name_zh: 梅尔辛省
 type: Division-1
 meta:
   alpha2: TR-33
@@ -9,4 +9,5 @@ meta:
     - '33'
     - mersin province
     - i̇çel
+    - 梅尔辛
   category: PROVINCE

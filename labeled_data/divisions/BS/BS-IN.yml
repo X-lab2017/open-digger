@@ -1,5 +1,5 @@
 name: Inagua
-name_zh: 伊纳瓜
+name_zh: 那瓜岛
 type: Division-1
 meta:
   alpha2: BS-IN
@@ -8,4 +8,5 @@ meta:
     - bs-in
     - in
     - inagua district
+    - 伊纳瓜
   category: DISTRICT

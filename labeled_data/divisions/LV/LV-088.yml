@@ -1,5 +1,5 @@
-name: Saldus novads
-name_zh: 萨尔杜斯市镇
+name: Saldus
+name_zh: 薩爾杜斯自治市
 type: Division-1
 meta:
   alpha2: LV-088
@@ -10,4 +10,5 @@ meta:
     - saldus novads municipality
     - saldus
     - saldus municipality
+    - 萨尔杜斯市镇
   category: MUNICIPALITY

@@ -1,5 +1,5 @@
 name: Paraguarí
-name_zh: 帕拉瓜里省
+name_zh: 巴拉瓜里省
 type: Division-1
 meta:
   alpha2: PY-9
@@ -8,4 +8,5 @@ meta:
     - py-9
     - '9'
     - paraguarí department
+    - 帕拉瓜里省
   category: DEPARTMENT

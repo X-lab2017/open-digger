@@ -1,0 +1,11 @@
+name: Westmeath
+name_zh: 韦斯特米斯郡
+type: Division-1
+meta:
+  alpha2: IE-WH
+  includes:
+    - an iarmhí
+    - ie-wh
+    - wh
+    - an iarmhí county
+  category: PROVINCE

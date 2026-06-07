@@ -1,5 +1,5 @@
-name: Incheon-gwangyeoksi
-name_zh: 仁川市
+name: Incheon
+name_zh: 仁川廣域市
 type: Division-1
 meta:
   alpha2: KR-28
@@ -10,4 +10,5 @@ meta:
     - incheon-gwangyeoksi metropolitan city
     - incheon
     - incheon metropolitan city
+    - 仁川市
   category: METROPOLITAN CITY

@@ -1,5 +1,5 @@
 name: Yaren
-name_zh: 亚伦
+name_zh: 亚伦区
 type: Division-1
 meta:
   alpha2: NR-14
@@ -8,4 +8,5 @@ meta:
     - nr-14
     - '14'
     - yaren district
+    - 亚伦
   category: DISTRICT

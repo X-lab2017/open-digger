@@ -1,5 +1,5 @@
 name: Hidalgo
-name_zh: 伊达尔戈
+name_zh: 伊达尔戈州
 type: Division-1
 meta:
   alpha2: MX-HID
@@ -9,4 +9,5 @@ meta:
     - hid
     - hidalgo state
     - hgo
+    - 伊达尔戈
   category: STATE

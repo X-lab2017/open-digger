@@ -1,0 +1,11 @@
+name: Bizkaia
+name_zh: 比斯开省
+type: Division-1
+meta:
+  alpha2: ES-BI
+  includes:
+    - bizkaia
+    - es-bi
+    - bi
+    - bizkaia province
+  category: PROVINCE

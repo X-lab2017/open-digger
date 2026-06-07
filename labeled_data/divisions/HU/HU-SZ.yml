@@ -1,5 +1,5 @@
 name: Szabolcs-Szatmár-Bereg
-name_zh: 韦谢普雷姆
+name_zh: 索博尔奇-索特马尔-贝拉格州
 type: Division-1
 meta:
   alpha2: HU-SZ
@@ -8,4 +8,5 @@ meta:
     - hu-sz
     - sz
     - szabolcs-szatmár-bereg county
+    - 韦谢普雷姆
   category: COUNTY

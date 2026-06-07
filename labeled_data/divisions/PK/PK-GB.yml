@@ -1,5 +1,5 @@
-name: Gilgit-Baltistan
-name_zh: 吉尔吉特-巴尔蒂斯坦
+name: Northern Areas
+name_zh: 吉尔吉特－巴尔蒂斯坦
 type: Division-1
 meta:
   alpha2: PK-GB
@@ -10,4 +10,5 @@ meta:
     - gilgit-baltistan pakistan administered area
     - gilgit-baltistān
     - gilgit-baltistān pakistan administered area
+    - 吉尔吉特-巴尔蒂斯坦
   category: PAKISTAN ADMINISTERED AREA

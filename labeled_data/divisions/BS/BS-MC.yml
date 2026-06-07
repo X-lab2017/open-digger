@@ -1,5 +1,5 @@
 name: Mangrove Cay
-name_zh: 曼格罗夫凯
+name_zh: 曼格罗夫岛
 type: Division-1
 meta:
   alpha2: BS-MC
@@ -8,4 +8,5 @@ meta:
     - bs-mc
     - mc
     - mangrove cay district
+    - 曼格罗夫凯
   category: DISTRICT

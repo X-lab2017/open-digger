@@ -1,0 +1,11 @@
+name: Castellón
+name_zh: 卡斯特利翁
+type: Division-1
+meta:
+  alpha2: ES-CS
+  includes:
+    - castelló
+    - es-cs
+    - cs
+    - castelló province
+  category: PROVINCE

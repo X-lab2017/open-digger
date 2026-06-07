@@ -1,4 +1,4 @@
-name: Dornogovĭ
+name: Dornogovi
 type: Division-1
 meta:
   alpha2: MN-063
@@ -8,3 +8,4 @@ meta:
     - '063'
     - dornogovĭ province
   category: PROVINCE
+name_zh: 东戈壁省

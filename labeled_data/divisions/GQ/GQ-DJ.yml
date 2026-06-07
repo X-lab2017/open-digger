@@ -1,0 +1,11 @@
+name: Djibloho
+name_zh: ''
+type: Division-1
+meta:
+  alpha2: GQ-DJ
+  includes:
+    - djibloho
+    - gq-dj
+    - dj
+    - djibloho province
+  category: PROVINCE

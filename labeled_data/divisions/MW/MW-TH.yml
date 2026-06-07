@@ -1,0 +1,11 @@
+name: Thyolo
+name_zh: 蒂约罗县
+type: Division-1
+meta:
+  alpha2: MW-TH
+  includes:
+    - thyolo
+    - mw-th
+    - th
+    - thyolo district
+  category: PROVINCE

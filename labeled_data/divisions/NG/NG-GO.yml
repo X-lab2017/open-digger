@@ -1,5 +1,5 @@
 name: Gombe
-name_zh: 戈梅比州
+name_zh: 贡贝州
 type: Division-1
 meta:
   alpha2: NG-GO
@@ -8,4 +8,5 @@ meta:
     - ng-go
     - go
     - gombe state
+    - 戈梅比州
   category: STATE

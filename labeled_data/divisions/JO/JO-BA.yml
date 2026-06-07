@@ -1,5 +1,5 @@
-name: Al Balqā’
-name_zh: 亚喀巴省
+name: Balqa
+name_zh: 拜勒加省
 type: Division-1
 meta:
   alpha2: JO-BA
@@ -10,4 +10,5 @@ meta:
     - al balqā’ governorate
     - balqa
     - balqa governorate
+    - 亚喀巴省
   category: GOVERNORATE

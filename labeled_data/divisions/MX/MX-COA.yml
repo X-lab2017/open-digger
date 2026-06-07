@@ -1,5 +1,5 @@
-name: Coahuila de Zaragoza
-name_zh: 科阿韦拉
+name: Coahuila
+name_zh: 科阿韦拉州
 type: Division-1
 meta:
   alpha2: MX-COA
@@ -11,4 +11,5 @@ meta:
     - coahuila
     - coahuila state
     - coah
+    - 科阿韦拉
   category: STATE

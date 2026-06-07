@@ -1,5 +1,5 @@
 name: Sergipe
-name_zh: 塞尔希培
+name_zh: 塞尔希培州
 type: Division-1
 meta:
   alpha2: BR-SE
@@ -9,4 +9,5 @@ meta:
     - se
     - sergipe state
     - state of sergipe
+    - 塞尔希培
   category: STATE

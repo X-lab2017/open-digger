@@ -1,0 +1,11 @@
+name: Izabal
+name_zh: 伊萨瓦尔省
+type: Division-1
+meta:
+  alpha2: GT-IZ
+  includes:
+    - izabal
+    - gt-18
+    - '18'
+    - izabal department
+  category: DEPARTMENT

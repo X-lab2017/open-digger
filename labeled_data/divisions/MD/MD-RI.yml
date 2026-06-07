@@ -1,5 +1,5 @@
-name: Rîșcani
-name_zh: 德涅斯特河左岸行政区单位
+name: Rîşcani
+name_zh: 雷什卡内区
 type: Division-1
 meta:
   alpha2: MD-RI
@@ -8,4 +8,5 @@ meta:
     - md-ri
     - ri
     - rîșcani district
+    - 德涅斯特河左岸行政区单位
   category: DISTRICT

@@ -1,5 +1,5 @@
 name: Amasya
-name_zh: 阿马西亚
+name_zh: 阿马西亚省
 type: Division-1
 meta:
   alpha2: TR-05
@@ -8,4 +8,5 @@ meta:
     - tr-05
     - '05'
     - amasya province
+    - 阿马西亚
   category: PROVINCE

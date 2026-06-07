@@ -1,4 +1,4 @@
-name: Solčava
+name: Solcava
 type: Division-1
 meta:
   alpha2: SI-180
@@ -8,3 +8,4 @@ meta:
     - '180'
     - solčava municipality
   category: MUNICIPALITY
+name_zh: 索尔卡瓦

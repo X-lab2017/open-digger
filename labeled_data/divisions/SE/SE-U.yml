@@ -1,5 +1,5 @@
-name: Västmanlands län
-name_zh: 韦斯特曼兰县
+name: Västmanland
+name_zh: 西曼兰省
 type: Division-1
 meta:
   alpha2: SE-U
@@ -9,4 +9,5 @@ meta:
     - u
     - västmanlands län county
     - västmanland county
+    - 韦斯特曼兰县
   category: COUNTY

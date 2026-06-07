@@ -1,5 +1,5 @@
 name: Kotor
-name_zh: 科托尔市
+name_zh: 科托尔区
 type: Division-1
 meta:
   alpha2: ME-10
@@ -8,4 +8,5 @@ meta:
     - me-10
     - '10'
     - kotor municipality
+    - 科托尔市
   category: MUNICIPALITY

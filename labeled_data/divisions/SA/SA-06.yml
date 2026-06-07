@@ -1,5 +1,5 @@
-name: Ḩā'il
-name_zh: 海勒省
+name: Ha'il
+name_zh: 哈伊勒省
 type: Division-1
 meta:
   alpha2: SA-06
@@ -11,4 +11,5 @@ meta:
     - hai
     - hail province
     - ⚗ā'il
+    - 海勒省
   category: REGION

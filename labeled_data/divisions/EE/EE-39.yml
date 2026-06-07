@@ -1,5 +1,5 @@
-name: Hiiumaa
-name_zh: 希乌马岛
+name: Hiiu
+name_zh: 希乌县
 type: Division-1
 meta:
   alpha2: EE-39
@@ -11,4 +11,5 @@ meta:
     - ee-205
     - '205'
     - hiiumaa rural municipality
+    - 希乌马岛
   category: COUNTY

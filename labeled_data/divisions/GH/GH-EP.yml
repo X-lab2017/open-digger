@@ -1,5 +1,5 @@
 name: Eastern
-name_zh: 东部区
+name_zh: 东部地区
 type: Division-1
 meta:
   alpha2: GH-EP
@@ -8,4 +8,5 @@ meta:
     - gh-ep
     - ep
     - eastern region
+    - 东部区
   category: REGION

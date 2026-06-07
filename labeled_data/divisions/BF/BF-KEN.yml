@@ -1,0 +1,11 @@
+name: Kénédougou
+name_zh: 凯内杜古省
+type: Division-1
+meta:
+  alpha2: BF-KEN
+  includes:
+    - kénédougou
+    - bf-ken
+    - ken
+    - kénédougou province
+  category: PROVINCE

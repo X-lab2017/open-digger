@@ -1,0 +1,12 @@
+name: Probištip
+name_zh: 普罗比什提普区
+type: Division-1
+meta:
+  alpha2: MK-63
+  includes:
+    - probištip
+    - mk-209
+    - '209'
+    - probištip municipality
+    - 普罗比什蒂普
+  category: MUNICIPALITY

@@ -1,0 +1,11 @@
+name: Seine-Maritime
+name_zh: 滨海塞纳省
+type: Division-1
+meta:
+  alpha2: FR-76
+  includes:
+    - seine-maritime
+    - fr-76
+    - '76'
+    - seine-maritime metropolitan department
+  category: PROVINCE

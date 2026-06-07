@@ -1,0 +1,11 @@
+name: Burgos
+name_zh: 布尔戈斯省
+type: Division-1
+meta:
+  alpha2: ES-BU
+  includes:
+    - burgos
+    - es-bu
+    - bu
+    - burgos province
+  category: PROVINCE

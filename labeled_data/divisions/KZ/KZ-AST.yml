@@ -1,0 +1,12 @@
+name: Astana
+name_zh: 努尔苏丹
+type: Division-1
+meta:
+  alpha2: KZ-AST
+  includes:
+    - astana
+    - kz-71
+    - '71'
+    - astana city
+    - 阿斯塔纳
+  category: CITY

@@ -1,0 +1,11 @@
+name: Centar župa
+type: Division-1
+meta:
+  alpha2: MK-78
+  includes:
+    - centar župa
+    - mk-313
+    - '313'
+    - centar župa municipality
+  category: MUNICIPALITY
+name_zh: 辛塔尔祖帕区

@@ -85,25 +85,25 @@ meta:
       count: 178072
 data:
   labels:
-    - GT-01
-    - GT-02
-    - GT-03
-    - GT-04
-    - GT-05
-    - GT-06
-    - GT-07
-    - GT-08
-    - GT-09
-    - GT-10
-    - GT-11
-    - GT-12
-    - GT-13
-    - GT-14
-    - GT-15
-    - GT-16
-    - GT-17
-    - GT-18
-    - GT-19
-    - GT-20
-    - GT-21
-    - GT-22
+    - GT-GU
+    - GT-PR
+    - GT-SA
+    - GT-CM
+    - GT-ES
+    - GT-SR
+    - GT-SO
+    - GT-TO
+    - GT-QZ
+    - GT-SU
+    - GT-RE
+    - GT-SM
+    - GT-HU
+    - GT-QC
+    - GT-BV
+    - GT-AV
+    - GT-PE
+    - GT-IZ
+    - GT-ZA
+    - GT-CQ
+    - GT-JA
+    - GT-JU

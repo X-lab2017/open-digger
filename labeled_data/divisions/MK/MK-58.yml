@@ -1,0 +1,13 @@
+name: Ohrid
+name_zh: 奥赫里德区
+type: Division-1
+meta:
+  alpha2: MK-58
+  includes:
+    - ohrid
+    - mk-310
+    - '310'
+    - ohrid municipality
+    - municipality of ohrid
+    - 奥赫里德
+  category: MUNICIPALITY

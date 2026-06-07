@@ -1,0 +1,11 @@
+name: Rumphi
+name_zh: 伦比县
+type: Division-1
+meta:
+  alpha2: MW-RU
+  includes:
+    - rumphi
+    - mw-ru
+    - ru
+    - rumphi district
+  category: PROVINCE

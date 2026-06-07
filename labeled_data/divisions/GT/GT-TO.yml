@@ -1,0 +1,11 @@
+name: Totonicapán
+name_zh: 托托尼卡潘省
+type: Division-1
+meta:
+  alpha2: GT-TO
+  includes:
+    - totonicapán
+    - gt-08
+    - '08'
+    - totonicapán department
+  category: DEPARTMENT

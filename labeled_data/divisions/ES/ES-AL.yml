@@ -1,0 +1,11 @@
+name: Almería
+name_zh: 阿尔梅里亚省
+type: Division-1
+meta:
+  alpha2: ES-AL
+  includes:
+    - almería
+    - es-al
+    - al
+    - almería province
+  category: PROVINCE

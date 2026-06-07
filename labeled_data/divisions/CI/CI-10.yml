@@ -1,0 +1,11 @@
+name: Denguélé
+name_zh: 登盖莱区
+type: Division-1
+meta:
+  alpha2: CI-10
+  includes:
+    - denguélé
+    - ci-dn
+    - dn
+    - denguélé district
+  category: DISTRICT

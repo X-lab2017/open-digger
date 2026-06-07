@@ -1,0 +1,11 @@
+name: Sulawesi Utara
+name_zh: 北苏拉威西省
+type: Division-1
+meta:
+  alpha2: ID-SA
+  includes:
+    - sulawesi utara
+    - id-sa
+    - sa
+    - sulawesi utara province
+  category: PROVINCE

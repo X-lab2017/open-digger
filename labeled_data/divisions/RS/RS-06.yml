@@ -1,0 +1,11 @@
+name: Južno-Backi
+name_zh: 南巴奇卡州
+type: Division-1
+meta:
+  alpha2: RS-06
+  includes:
+    - južnobački okrug
+    - rs-06
+    - '06'
+    - južnobački okrug district
+  category: PROVINCE

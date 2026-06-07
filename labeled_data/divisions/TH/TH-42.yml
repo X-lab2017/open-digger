@@ -1,5 +1,5 @@
 name: Loei
-name_zh: 黎逸府
+name_zh: 黎府
 type: Division-1
 meta:
   alpha2: TH-42
@@ -8,4 +8,5 @@ meta:
     - th-42
     - '42'
     - loei province
+    - 黎逸府
   category: PROVINCE

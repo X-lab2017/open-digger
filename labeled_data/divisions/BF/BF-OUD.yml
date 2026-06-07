@@ -1,0 +1,11 @@
+name: Oudalan
+name_zh: 乌达兰省
+type: Division-1
+meta:
+  alpha2: BF-OUD
+  includes:
+    - oudalan
+    - bf-oud
+    - oud
+    - oudalan province
+  category: PROVINCE

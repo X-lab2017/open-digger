@@ -1,0 +1,11 @@
+name: Zrnovci
+type: Division-1
+meta:
+  alpha2: MK-33
+  includes:
+    - zrnovci
+    - mk-204
+    - '204'
+    - zrnovci municipality
+  category: MUNICIPALITY
+name_zh: 日尔诺维奇区

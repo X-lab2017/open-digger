@@ -1,5 +1,5 @@
 name: Zug
-name_zh: 楚格
+name_zh: 楚格州
 type: Division-1
 meta:
   alpha2: CH-ZG
@@ -9,4 +9,5 @@ meta:
     - zg
     - zug canton
     - canton of zug
+    - 楚格
   category: CANTON

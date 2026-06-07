@@ -1,0 +1,11 @@
+name: Pampanga
+name_zh: 邦板牙
+type: Division-1
+meta:
+  alpha2: PH-PAM
+  includes:
+    - pampanga
+    - ph-pam
+    - pam
+    - pampanga province
+  category: PROVINCE

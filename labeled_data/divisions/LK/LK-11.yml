@@ -1,0 +1,11 @@
+name: Kŏḷamba
+name_zh: 可倫坡區
+type: Division-1
+meta:
+  alpha2: LK-11
+  includes:
+    - colombo
+    - lk-11
+    - '11'
+    - colombo district
+  category: PROVINCE

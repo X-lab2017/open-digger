@@ -1,5 +1,5 @@
 name: Burgenland
-name_zh: 布尔根兰
+name_zh: 布尔根兰州
 type: Division-1
 meta:
   alpha2: AT-1
@@ -8,4 +8,5 @@ meta:
     - at-1
     - '1'
     - burgenland state
+    - 布尔根兰
   category: STATE

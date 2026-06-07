@@ -1,0 +1,11 @@
+name: Yatenga
+name_zh: 雅滕加省
+type: Division-1
+meta:
+  alpha2: BF-YAT
+  includes:
+    - yatenga
+    - bf-yat
+    - yat
+    - yatenga province
+  category: PROVINCE

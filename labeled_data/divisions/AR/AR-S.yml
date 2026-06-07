@@ -1,5 +1,5 @@
 name: Santa Fe
-name_zh: 圣菲省
+name_zh: 圣大非省
 type: Division-1
 meta:
   alpha2: AR-S
@@ -9,4 +9,5 @@ meta:
     - s
     - santa fe province
     - sf
+    - 圣菲省
   category: PROVINCE

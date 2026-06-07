@@ -1,5 +1,5 @@
-name: Mādabā
-name_zh: 马达巴省
+name: Madaba
+name_zh: 马代巴省
 type: Division-1
 meta:
   alpha2: JO-MD
@@ -10,4 +10,5 @@ meta:
     - mādabā governorate
     - madaba
     - madaba governorate
+    - 马达巴省
   category: GOVERNORATE

@@ -1,5 +1,5 @@
-name: Bistrița-Năsăud
-name_zh: 比斯特里察-纳索德县
+name: Bistrita-Nasaud
+name_zh: 比斯特里察-讷瑟乌德县
 type: Division-1
 meta:
   alpha2: RO-BN
@@ -11,4 +11,5 @@ meta:
     - bistriţa-năsăud
     - bistrița-năsăud county
     - județul bistrița-năsăud
+    - 比斯特里察-纳索德县
   category: DEPARTMENT

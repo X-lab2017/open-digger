@@ -1,5 +1,5 @@
-name: Hallands län
-name_zh: 哈尔兰县
+name: Halland
+name_zh: 哈兰省
 type: Division-1
 meta:
   alpha2: SE-N
@@ -9,4 +9,5 @@ meta:
     - 'n'
     - hallands län county
     - halland county
+    - 哈尔兰县
   category: COUNTY

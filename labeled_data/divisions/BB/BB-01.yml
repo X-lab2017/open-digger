@@ -1,5 +1,5 @@
 name: Christ Church
-name_zh: 基督堂区
+name_zh: 基督城教区
 type: Division-1
 meta:
   alpha2: BB-01
@@ -8,4 +8,5 @@ meta:
     - bb-01
     - '01'
     - christ church parish
+    - 基督堂区
   category: PARISH

@@ -1,5 +1,5 @@
-name: Södra Österbotten
-name_zh: 奥斯特博滕
+name: Southern Ostrobothnia
+name_zh: 南博滕区
 type: Division-1
 meta:
   alpha2: FI-03
@@ -15,4 +15,5 @@ meta:
     - fi132
     - fi133
     - fi134
+    - 奥斯特博滕
   category: REGION

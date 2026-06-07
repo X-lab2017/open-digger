@@ -1,5 +1,5 @@
 name: Bartın
-name_zh: 阿格里
+name_zh: 巴尔滕省
 type: Division-1
 meta:
   alpha2: TR-74
@@ -8,4 +8,5 @@ meta:
     - tr-74
     - '74'
     - bartın province
+    - 阿格里
   category: PROVINCE

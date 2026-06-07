@@ -1,5 +1,5 @@
 name: Manzini
-name_zh: 马赞尼区
+name_zh: 曼齐尼区
 type: Division-1
 meta:
   alpha2: SZ-MA
@@ -8,4 +8,5 @@ meta:
     - sz-ma
     - ma
     - manzini region
+    - 马赞尼区
   category: REGION

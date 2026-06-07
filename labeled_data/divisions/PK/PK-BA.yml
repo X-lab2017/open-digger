@@ -1,5 +1,5 @@
-name: Balochistan
-name_zh: 俾路支斯坦省
+name: Baluchistan
+name_zh: 俾路支省
 type: Division-1
 meta:
   alpha2: PK-BA
@@ -11,4 +11,5 @@ meta:
     - balōchistān
     - balōchistān province
     - baluchistan
+    - 俾路支斯坦省
   category: PROVINCE

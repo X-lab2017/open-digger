@@ -1,0 +1,14 @@
+name: Kumanovo
+name_zh: 库马诺沃区
+type: Division-1
+meta:
+  alpha2: MK-47
+  includes:
+    - kumanovo
+    - mk-703
+    - '703'
+    - kumanovo municipality
+    - municipality of kumanovo
+    - northeastern
+    - 库曼诺沃
+  category: MUNICIPALITY

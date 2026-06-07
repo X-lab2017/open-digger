@@ -1,5 +1,5 @@
-name: El Callao
-name_zh: 卡亚俄
+name: Callao
+name_zh: 卡亞俄憲法省
 type: Division-1
 meta:
   alpha2: PE-CAL
@@ -15,4 +15,5 @@ meta:
     - callao
     - constitutional province of callao
     - callao region
+    - 卡亚俄
   category: REGION

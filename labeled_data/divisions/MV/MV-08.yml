@@ -1,5 +1,5 @@
-name: Kolhumadulu
-name_zh: 塔阿环礁
+name: Thaa
+name_zh: 塔环礁
 type: Division-1
 meta:
   alpha2: MV-08
@@ -11,4 +11,5 @@ meta:
     - thaa
     - thaa administrative atoll
     - thaa atoll
+    - 塔阿环礁
   category: ADMINISTRATIVE ATOLL

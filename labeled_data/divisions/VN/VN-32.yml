@@ -1,5 +1,5 @@
 name: Phú Yên
-name_zh: 富安
+name_zh: 富安省
 type: Division-1
 meta:
   alpha2: VN-32
@@ -9,4 +9,5 @@ meta:
     - '32'
     - phú yên province
     - phu yen
+    - 富安
   category: PROVINCE

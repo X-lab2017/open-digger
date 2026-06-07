@@ -1,5 +1,5 @@
-name: Minskaya oblast'
-name_zh: 明斯克市
+name: Minsk
+name_zh: 明斯克州
 type: Division-1
 meta:
   alpha2: BY-MI
@@ -15,4 +15,5 @@ meta:
     - minskaya voblasts'
     - minskaya voblasts' oblast
     - minsk region
+    - 明斯克市
   category: OBLAST

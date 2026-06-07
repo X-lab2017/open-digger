@@ -1,0 +1,11 @@
+name: Como
+name_zh: 科莫省
+type: Division-1
+meta:
+  alpha2: IT-CO
+  includes:
+    - como
+    - it-co
+    - co
+    - como province
+  category: PROVINCE

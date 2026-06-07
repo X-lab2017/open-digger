@@ -1,0 +1,11 @@
+name: Savoie
+name_zh: 萨瓦省
+type: Division-1
+meta:
+  alpha2: FR-73
+  includes:
+    - savoie
+    - fr-73
+    - '73'
+    - savoie metropolitan department
+  category: PROVINCE

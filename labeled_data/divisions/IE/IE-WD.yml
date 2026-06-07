@@ -1,0 +1,11 @@
+name: Waterford
+name_zh: 沃特福德郡
+type: Division-1
+meta:
+  alpha2: IE-WD
+  includes:
+    - port láirge
+    - ie-wd
+    - wd
+    - port láirge county
+  category: PROVINCE

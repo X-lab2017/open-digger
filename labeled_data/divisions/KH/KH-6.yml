@@ -1,5 +1,5 @@
 name: Kâmpóng Thum
-name_zh: 磅通省
+name_zh: 磅同省
 type: Division-1
 meta:
   alpha2: KH-6
@@ -12,4 +12,5 @@ meta:
     - kampong thom province
     - kâmpóng thum
     - kâmpóng thum province
+    - 磅通省
   category: PROVINCE

@@ -1,0 +1,11 @@
+name: Saint Paul Capesterre
+name_zh: 圣保罗卡皮斯特莱区
+type: Division-1
+meta:
+  alpha2: KN-09
+  includes:
+    - saint paul capisterre
+    - kn-09
+    - '09'
+    - saint paul capisterre parish
+  category: PROVINCE

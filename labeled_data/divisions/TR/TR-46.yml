@@ -1,5 +1,5 @@
-name: Kahramanmaraş
-name_zh: 阿格里
+name: K. Maras
+name_zh: 卡赫拉曼马拉什省
 type: Division-1
 meta:
   alpha2: TR-46
@@ -9,4 +9,5 @@ meta:
     - '46'
     - kahramanmaraş province
     - kahraman maras
+    - 阿格里
   category: PROVINCE

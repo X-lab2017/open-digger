@@ -1,5 +1,5 @@
 name: North West
-name_zh: 新加坡西北区
+name_zh: 西北
 type: Division-1
 meta:
   alpha2: SG-03
@@ -9,4 +9,5 @@ meta:
     - '03'
     - north west district
     - north west community development council
+    - 新加坡西北区
   category: DISTRICT

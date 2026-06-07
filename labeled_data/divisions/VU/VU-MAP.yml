@@ -1,5 +1,5 @@
 name: Malampa
-name_zh: 马朗帕省
+name_zh: 马朗巴省
 type: Division-1
 meta:
   alpha2: VU-MAP
@@ -8,4 +8,5 @@ meta:
     - vu-map
     - map
     - malampa province
+    - 马朗帕省
   category: PROVINCE

@@ -1,0 +1,11 @@
+name: Dordogne
+name_zh: 多尔多涅省
+type: Division-1
+meta:
+  alpha2: FR-24
+  includes:
+    - dordogne
+    - fr-24
+    - '24'
+    - dordogne metropolitan department
+  category: PROVINCE

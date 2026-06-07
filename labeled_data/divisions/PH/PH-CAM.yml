@@ -1,0 +1,11 @@
+name: Camiguin
+name_zh: 卡米金
+type: Division-1
+meta:
+  alpha2: PH-CAM
+  includes:
+    - camiguin
+    - ph-cam
+    - cam
+    - camiguin province
+  category: PROVINCE

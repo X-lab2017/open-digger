@@ -1,0 +1,11 @@
+name: Caserta
+name_zh: 卡塞塔省
+type: Division-1
+meta:
+  alpha2: IT-CE
+  includes:
+    - caserta
+    - it-ce
+    - ce
+    - caserta province
+  category: PROVINCE

@@ -1,4 +1,4 @@
-name: Lūghūn al Gharbī
+name: Logone Occidental
 type: Division-1
 meta:
   alpha2: TD-LO
@@ -10,3 +10,4 @@ meta:
     - lūghūn al gharbī
     - lūghūn al gharbī province
   category: PROVINCE
+name_zh: 西洛贡区

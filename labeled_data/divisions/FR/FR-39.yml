@@ -1,0 +1,11 @@
+name: Jura
+name_zh: 汝拉省
+type: Division-1
+meta:
+  alpha2: FR-39
+  includes:
+    - jura
+    - fr-39
+    - '39'
+    - jura metropolitan department
+  category: PROVINCE

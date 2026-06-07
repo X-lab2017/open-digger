@@ -1,5 +1,5 @@
 name: Zürich
-name_zh: 苏黎世
+name_zh: 苏黎世州
 type: Division-1
 meta:
   alpha2: CH-ZH
@@ -9,4 +9,5 @@ meta:
     - zh
     - zürich canton
     - zurich
+    - 苏黎世
   category: CANTON

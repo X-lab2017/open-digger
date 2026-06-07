@@ -1,5 +1,5 @@
-name: Īlām
-name_zh: 伊拉姆省
+name: Kordestan
+name_zh: 库尔德斯坦省
 type: Division-1
 meta:
   alpha2: IR-16
@@ -9,4 +9,5 @@ meta:
     - '16'
     - īlām province
     - ilam province
+    - 伊拉姆省
   category: PROVINCE

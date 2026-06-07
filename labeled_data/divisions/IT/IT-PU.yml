@@ -1,0 +1,11 @@
+name: Pesaro e Urbino
+name_zh: 佩萨罗-乌尔比诺省
+type: Division-1
+meta:
+  alpha2: IT-PU
+  includes:
+    - pesaro e urbino
+    - it-pu
+    - pu
+    - pesaro e urbino province
+  category: PROVINCE

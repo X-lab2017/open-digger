@@ -1,0 +1,11 @@
+name: Haute-Loire
+name_zh: 上卢瓦尔省
+type: Division-1
+meta:
+  alpha2: FR-43
+  includes:
+    - haute-loire
+    - fr-43
+    - '43'
+    - haute-loire metropolitan department
+  category: PROVINCE

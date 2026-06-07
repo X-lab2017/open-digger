@@ -1,5 +1,5 @@
 name: Médenine
-name_zh: 梅德宁市
+name_zh: 梅德宁省
 type: Division-1
 meta:
   alpha2: TN-82
@@ -8,4 +8,5 @@ meta:
     - tn-82
     - '82'
     - médenine governorate
+    - 梅德宁市
   category: GOVERNORATE

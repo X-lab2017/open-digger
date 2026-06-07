@@ -1,5 +1,5 @@
 name: Velenje
-name_zh: 韦莱涅
+name_zh: 韋萊涅市
 type: Division-1
 meta:
   alpha2: SI-133
@@ -8,4 +8,5 @@ meta:
     - si-133
     - '133'
     - velenje urban municipality
+    - 韦莱涅
   category: URBAN MUNICIPALITY

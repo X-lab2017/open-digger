@@ -1,0 +1,11 @@
+name: Staro Nagoričane
+type: Division-1
+meta:
+  alpha2: MK-71
+  includes:
+    - staro nagoričane
+    - mk-706
+    - '706'
+    - staro nagoričane municipality
+  category: MUNICIPALITY
+name_zh: 斯塔羅納戈里查內區

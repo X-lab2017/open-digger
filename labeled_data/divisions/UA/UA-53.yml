@@ -1,5 +1,5 @@
-name: Poltavska oblast
-name_zh: 波尔塔瓦
+name: Poltava
+name_zh: 波尔塔瓦州
 type: Division-1
 meta:
   alpha2: UA-53
@@ -11,4 +11,5 @@ meta:
     - poltavs'ka oblast
     - poltava oblast
     - poltava
+    - 波尔塔瓦
   category: REGION

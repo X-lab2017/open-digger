@@ -1,0 +1,11 @@
+name: Isabela
+name_zh: 伊莎贝拉省
+type: Division-1
+meta:
+  alpha2: PH-ISA
+  includes:
+    - isabela
+    - ph-isa
+    - isa
+    - isabela province
+  category: PROVINCE

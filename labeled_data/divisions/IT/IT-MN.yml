@@ -1,0 +1,11 @@
+name: Mantova
+name_zh: 曼托瓦省
+type: Division-1
+meta:
+  alpha2: IT-MN
+  includes:
+    - mantova
+    - it-mn
+    - mn
+    - mantova province
+  category: PROVINCE

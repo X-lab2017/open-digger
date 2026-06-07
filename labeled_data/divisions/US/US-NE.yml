@@ -1,5 +1,5 @@
 name: Nebraska
-name_zh: 内布拉斯加州
+name_zh: 內布拉斯加州
 type: Division-1
 meta:
   alpha2: US-NE
@@ -8,4 +8,5 @@ meta:
     - us-ne
     - ne
     - nebraska state
+    - 内布拉斯加州
   category: STATE

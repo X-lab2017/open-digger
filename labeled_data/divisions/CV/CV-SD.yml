@@ -1,0 +1,11 @@
+name: São Domingos
+name_zh: 圣多明戈斯县
+type: Division-1
+meta:
+  alpha2: CV-SD
+  includes:
+    - são domingos
+    - cv-sd
+    - sd
+    - são domingos municipality
+  category: PROVINCE

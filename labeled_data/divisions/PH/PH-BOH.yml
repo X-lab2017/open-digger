@@ -1,0 +1,11 @@
+name: Bohol
+name_zh: 保和省
+type: Division-1
+meta:
+  alpha2: PH-BOH
+  includes:
+    - bohol
+    - ph-boh
+    - boh
+    - bohol province
+  category: PROVINCE

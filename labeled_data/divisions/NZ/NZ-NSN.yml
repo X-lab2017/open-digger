@@ -1,5 +1,5 @@
-name: Nelson
-name_zh: 尼尔森
+name: Nelson City
+name_zh: 尼尔逊
 type: Division-1
 meta:
   alpha2: NZ-NSN
@@ -10,4 +10,5 @@ meta:
     - nelson region
     - whakatū
     - whakatū region
+    - 尼尔森
   category: REGION

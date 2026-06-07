@@ -1,5 +1,5 @@
 name: El Oro
-name_zh: 埃洛罗
+name_zh: 埃尔奥罗省
 type: Division-1
 meta:
   alpha2: EC-O
@@ -8,4 +8,5 @@ meta:
     - ec-o
     - o
     - el oro province
+    - 埃洛罗
   category: PROVINCE

@@ -1,5 +1,5 @@
-name: Al Fujayrah
-name_zh: 富查伊拉酋长国
+name: Fujayrah
+name_zh: 富查伊拉市
 type: Division-1
 meta:
   alpha2: AE-FU
@@ -10,4 +10,5 @@ meta:
     - al fujayrah emirate
     - fujairah
     - fujairah emirate
+    - 富查伊拉酋长国
   category: EMIRATE

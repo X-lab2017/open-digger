@@ -1,5 +1,5 @@
 name: Steiermark
-name_zh: 施泰尔马克
+name_zh: 施蒂利亚州
 type: Division-1
 meta:
   alpha2: AT-6
@@ -9,4 +9,5 @@ meta:
     - '6'
     - steiermark state
     - styria
+    - 施泰尔马克
   category: STATE

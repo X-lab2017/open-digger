@@ -1,5 +1,5 @@
 name: Ashanti
-name_zh: 阿散蒂区
+name_zh: 阿散蒂地区
 type: Division-1
 meta:
   alpha2: GH-AH
@@ -8,4 +8,5 @@ meta:
     - gh-ah
     - ah
     - ashanti region
+    - 阿散蒂区
   category: REGION

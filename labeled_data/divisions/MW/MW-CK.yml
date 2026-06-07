@@ -1,0 +1,11 @@
+name: Chikwawa
+name_zh: 奇克瓦瓦县
+type: Division-1
+meta:
+  alpha2: MW-CK
+  includes:
+    - chikwawa
+    - mw-ck
+    - ck
+    - chikwawa district
+  category: PROVINCE

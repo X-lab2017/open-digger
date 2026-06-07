@@ -1,0 +1,11 @@
+name: Bangka-Belitung
+name_zh: 邦加-勿里洞省
+type: Division-1
+meta:
+  alpha2: ID-BB
+  includes:
+    - kepulauan bangka belitung
+    - id-bb
+    - bb
+    - kepulauan bangka belitung province
+  category: PROVINCE

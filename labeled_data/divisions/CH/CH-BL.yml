@@ -1,5 +1,5 @@
 name: Basel-Landschaft
-name_zh: 巴塞尔乡村
+name_zh: 巴塞尔乡村州
 type: Division-1
 meta:
   alpha2: CH-BL
@@ -8,4 +8,5 @@ meta:
     - ch-bl
     - bl
     - basel-landschaft canton
+    - 巴塞尔乡村
   category: CANTON

@@ -1,0 +1,11 @@
+name: Gerona
+name_zh: 赫罗纳省
+type: Division-1
+meta:
+  alpha2: ES-GI
+  includes:
+    - girona
+    - es-gi
+    - gi
+    - girona province
+  category: PROVINCE

@@ -1,0 +1,11 @@
+name: Rieti
+name_zh: 列蒂省
+type: Division-1
+meta:
+  alpha2: IT-RI
+  includes:
+    - rieti
+    - it-ri
+    - ri
+    - rieti province
+  category: PROVINCE

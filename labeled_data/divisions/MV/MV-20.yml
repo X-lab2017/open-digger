@@ -1,5 +1,5 @@
-name: South Maalhosmadulu
-name_zh: 巴阿环礁
+name: Baa
+name_zh: 巴阿
 type: Division-1
 meta:
   alpha2: MV-20
@@ -13,4 +13,5 @@ meta:
     - south maalhosmadulu
     - south maalhosmadulu administrative atoll
     - baa atoll
+    - 巴阿环礁
   category: ADMINISTRATIVE ATOLL

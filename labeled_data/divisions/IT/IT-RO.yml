@@ -1,0 +1,11 @@
+name: Rovigo
+name_zh: 罗维戈省
+type: Division-1
+meta:
+  alpha2: IT-RO
+  includes:
+    - rovigo
+    - it-ro
+    - ro
+    - rovigo province
+  category: PROVINCE

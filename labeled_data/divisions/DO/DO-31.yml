@@ -1,0 +1,11 @@
+name: San José de Ocoa
+name_zh: 圣荷西省
+type: Division-1
+meta:
+  alpha2: DO-31
+  includes:
+    - san josé de ocoa
+    - do-31
+    - '31'
+    - san josé de ocoa province
+  category: PROVINCE

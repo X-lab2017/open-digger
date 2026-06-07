@@ -1,5 +1,5 @@
 name: Szekszárd
-name_zh: 塞克斯扎德
+name_zh: 塞克萨德
 type: Division-1
 meta:
   alpha2: HU-SS
@@ -8,4 +8,5 @@ meta:
     - hu-ss
     - ss
     - szekszárd city with county rights
+    - 塞克斯扎德
   category: CITY WITH COUNTY RIGHTS

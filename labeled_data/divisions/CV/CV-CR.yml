@@ -1,0 +1,11 @@
+name: Santa Cruz
+name_zh: 圣克鲁斯县
+type: Division-1
+meta:
+  alpha2: CV-CR
+  includes:
+    - santa cruz
+    - cv-cr
+    - cr
+    - santa cruz municipality
+  category: PROVINCE

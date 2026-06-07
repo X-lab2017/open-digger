@@ -1,0 +1,12 @@
+name: El Progreso
+name_zh: 普罗格雷索省
+type: Division-1
+meta:
+  alpha2: GT-PR
+  includes:
+    - el progreso
+    - gt-02
+    - '02'
+    - el progreso department
+    - 埃尔普罗格雷索省
+  category: DEPARTMENT

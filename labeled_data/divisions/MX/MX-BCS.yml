@@ -1,5 +1,5 @@
 name: Baja California Sur
-name_zh: 下加利福尼亚
+name_zh: 南下加利福尼亚州
 type: Division-1
 meta:
   alpha2: MX-BCS
@@ -8,4 +8,5 @@ meta:
     - mx-bcs
     - bcs
     - baja california sur state
+    - 下加利福尼亚
   category: STATE

@@ -1,5 +1,5 @@
-name: Luhanska oblast
-name_zh: 卢甘斯克
+name: Luhans'k
+name_zh: 卢甘斯克州
 type: Division-1
 meta:
   alpha2: UA-09
@@ -11,4 +11,5 @@ meta:
     - luhans'ka oblast
     - luhansk oblast
     - luhansk
+    - 卢甘斯克
   category: REGION

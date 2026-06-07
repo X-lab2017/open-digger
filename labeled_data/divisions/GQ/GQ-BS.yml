@@ -1,0 +1,11 @@
+name: Bioko Sur
+name_zh: 南比奥科省
+type: Division-1
+meta:
+  alpha2: GQ-BS
+  includes:
+    - bioko sud
+    - gq-bs
+    - bs
+    - bioko sud province
+  category: PROVINCE

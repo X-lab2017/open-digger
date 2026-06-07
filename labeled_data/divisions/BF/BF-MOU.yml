@@ -1,0 +1,11 @@
+name: Mou Houn
+name_zh: 穆翁省
+type: Division-1
+meta:
+  alpha2: BF-MOU
+  includes:
+    - mouhoun
+    - bf-mou
+    - mou
+    - mouhoun province
+  category: PROVINCE

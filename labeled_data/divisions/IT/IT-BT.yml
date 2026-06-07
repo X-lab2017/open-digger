@@ -1,0 +1,11 @@
+name: Barletta-Andria Trani
+name_zh: 巴尔莱塔-安德里亚-特兰尼省
+type: Division-1
+meta:
+  alpha2: IT-BT
+  includes:
+    - barletta-andria-trani
+    - it-bt
+    - bt
+    - barletta-andria-trani province
+  category: PROVINCE

@@ -1,5 +1,5 @@
 name: Çanakkale
-name_zh: 恰纳卡莱
+name_zh: 恰纳卡莱省
 type: Division-1
 meta:
   alpha2: TR-17
@@ -8,4 +8,5 @@ meta:
     - tr-17
     - '17'
     - çanakkale province
+    - 恰纳卡莱
   category: PROVINCE

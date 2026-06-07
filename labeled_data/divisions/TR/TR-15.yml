@@ -1,5 +1,5 @@
 name: Burdur
-name_zh: 布尔杜尔
+name_zh: 布尔杜尔省
 type: Division-1
 meta:
   alpha2: TR-15
@@ -8,4 +8,5 @@ meta:
     - tr-15
     - '15'
     - burdur province
+    - 布尔杜尔
   category: PROVINCE

@@ -1,5 +1,5 @@
-name: Orlovskaya oblast'
-name_zh: 奥廖尔
+name: Orel
+name_zh: 奥廖尔州
 type: Division-1
 meta:
   alpha2: RU-ORL
@@ -12,4 +12,5 @@ meta:
     - orlovskaya oblast' administrative region
     - oryol oblast
     - orel
+    - 奥廖尔
   category: ADMINISTRATIVE REGION

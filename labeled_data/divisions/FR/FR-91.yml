@@ -1,0 +1,11 @@
+name: Essonne
+name_zh: 埃松省
+type: Division-1
+meta:
+  alpha2: FR-91
+  includes:
+    - essonne
+    - fr-91
+    - '91'
+    - essonne metropolitan department
+  category: PROVINCE

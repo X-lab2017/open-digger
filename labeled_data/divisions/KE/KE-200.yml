@@ -1,0 +1,36 @@
+name: Central
+name_zh: 中部省
+type: Division-1
+meta:
+  alpha2: KE-200
+  includes:
+    - kiambu
+    - ke-13
+    - '13'
+    - kiambu county
+    - eastern
+    - 基班古县
+    - kirinyaga
+    - ke-15
+    - '15'
+    - kirinyaga county
+    - 基林加县
+    - murang'a
+    - ke-29
+    - '29'
+    - murang'a county
+    - muranga county
+    - 穆兰加县
+    - nyandarua
+    - ke-35
+    - '35'
+    - nyandarua county
+    - 南达尔瓜县
+    - nyeri
+    - ke-36
+    - '36'
+    - nyeri county
+    - 涅里县
+    - KE-200
+    - '200'
+  category: PROVINCE

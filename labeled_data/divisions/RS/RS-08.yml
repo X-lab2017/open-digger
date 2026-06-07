@@ -1,5 +1,5 @@
-name: Mačvanski okrug
-name_zh: 马奇瓦尼克
+name: Macvanski
+name_zh: 马切万州
 type: Division-1
 meta:
   alpha2: RS-08
@@ -8,4 +8,5 @@ meta:
     - rs-08
     - '08'
     - mačvanski okrug district
+    - 马奇瓦尼克
   category: DISTRICT

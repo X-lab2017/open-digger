@@ -1,0 +1,11 @@
+name: Mindoro Occidental
+name_zh: 西民都洛
+type: Division-1
+meta:
+  alpha2: PH-MDC
+  includes:
+    - kanlurang mindoro
+    - ph-mdc
+    - mdc
+    - kanlurang mindoro province
+  category: PROVINCE

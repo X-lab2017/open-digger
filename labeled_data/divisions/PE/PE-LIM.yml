@@ -1,5 +1,5 @@
 name: Lima
-name_zh: 利马
+name_zh: 利马省
 type: Division-1
 meta:
   alpha2: PE-LIM
@@ -11,4 +11,5 @@ meta:
     - gobierno regional de lima
     - lima province
     - provincia de lima
+    - 利马
   category: REGION

@@ -1,0 +1,11 @@
+name: Loire
+name_zh: 卢瓦尔省
+type: Division-1
+meta:
+  alpha2: FR-42
+  includes:
+    - loire
+    - fr-42
+    - '42'
+    - loire metropolitan department
+  category: PROVINCE

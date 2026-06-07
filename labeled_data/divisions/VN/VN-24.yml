@@ -1,5 +1,5 @@
 name: Quảng Bình
-name_zh: 广平
+name_zh: 广平省
 type: Division-1
 meta:
   alpha2: VN-24
@@ -10,4 +10,5 @@ meta:
     - quảng bình province
     - quang binh
     - quang binh province
+    - 广平
   category: PROVINCE

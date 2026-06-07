@@ -1,5 +1,5 @@
 name: San Luis
-name_zh: 圣路易斯省
+name_zh: 圣路易省
 type: Division-1
 meta:
   alpha2: AR-D
@@ -9,4 +9,5 @@ meta:
     - d
     - san luis province
     - sl
+    - 圣路易斯省
   category: PROVINCE

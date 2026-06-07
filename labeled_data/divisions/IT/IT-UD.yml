@@ -1,0 +1,11 @@
+name: Udine
+name_zh: 乌迪内省
+type: Division-1
+meta:
+  alpha2: IT-UD
+  includes:
+    - udine
+    - it-ud
+    - ud
+    - udine decentralized regional entity
+  category: PROVINCE

@@ -1,5 +1,5 @@
 name: Simiyu
-name_zh: 辛巴尤
+name_zh: 锡米尤区
 type: Division-1
 meta:
   alpha2: TZ-30
@@ -8,4 +8,5 @@ meta:
     - tz-30
     - '30'
     - simiyu region
+    - 辛巴尤
   category: REGION

@@ -1,5 +1,5 @@
 name: Pasco
-name_zh: 帕斯科
+name_zh: 帕斯科大区
 type: Division-1
 meta:
   alpha2: PE-PAS
@@ -10,4 +10,5 @@ meta:
     - pasco region
     - pasqu
     - pasqu region
+    - 帕斯科
   category: REGION

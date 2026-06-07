@@ -1,5 +1,5 @@
 name: Cao Bằng
-name_zh: 高邦
+name_zh: 高平省
 type: Division-1
 meta:
   alpha2: VN-04
@@ -9,4 +9,5 @@ meta:
     - '04'
     - cao bằng province
     - cao bang
+    - 高邦
   category: PROVINCE

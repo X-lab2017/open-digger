@@ -1,5 +1,5 @@
 name: Guelma
-name_zh: 古尔马省
+name_zh: 盖勒马省
 type: Division-1
 meta:
   alpha2: DZ-24
@@ -8,4 +8,5 @@ meta:
     - dz-24
     - '24'
     - guelma province
+    - 古尔马省
   category: PROVINCE

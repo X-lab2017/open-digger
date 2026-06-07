@@ -1,0 +1,11 @@
+name: Kildare
+name_zh: 基尔代尔郡
+type: Division-1
+meta:
+  alpha2: IE-KE
+  includes:
+    - cill dara
+    - ie-ke
+    - ke
+    - cill dara county
+  category: PROVINCE

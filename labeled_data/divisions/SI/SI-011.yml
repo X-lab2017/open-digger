@@ -1,5 +1,5 @@
 name: Celje
-name_zh: 采列
+name_zh: 采列市
 type: Division-1
 meta:
   alpha2: SI-011
@@ -8,4 +8,5 @@ meta:
     - si-011
     - '011'
     - celje urban municipality
+    - 采列
   category: URBAN MUNICIPALITY

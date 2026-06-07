@@ -1,5 +1,5 @@
-name: Skåne län
-name_zh: 斯科讷县
+name: Skåne
+name_zh: 斯科讷省
 type: Division-1
 meta:
   alpha2: SE-M
@@ -9,4 +9,5 @@ meta:
     - m
     - skåne län county
     - skåne county
+    - 斯科讷县
   category: COUNTY

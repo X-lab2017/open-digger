@@ -1,5 +1,5 @@
 name: Cà Mau
-name_zh: 金瓯
+name_zh: 金瓯省
 type: Division-1
 meta:
   alpha2: VN-59
@@ -9,4 +9,5 @@ meta:
     - '59'
     - cà mau province
     - ca mau
+    - 金瓯
   category: PROVINCE

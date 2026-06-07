@@ -1,5 +1,5 @@
 name: Yalova
-name_zh: 亚洛瓦
+name_zh: 亚洛瓦省
 type: Division-1
 meta:
   alpha2: TR-77
@@ -8,4 +8,5 @@ meta:
     - tr-77
     - '77'
     - yalova province
+    - 亚洛瓦
   category: PROVINCE

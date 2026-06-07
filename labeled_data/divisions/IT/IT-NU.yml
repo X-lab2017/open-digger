@@ -1,0 +1,11 @@
+name: Nuoro
+name_zh: 努奥罗省
+type: Division-1
+meta:
+  alpha2: IT-NU
+  includes:
+    - nuoro
+    - it-nu
+    - nu
+    - nuoro province
+  category: PROVINCE

@@ -1,5 +1,5 @@
 name: Sucre
-name_zh: 苏克雷
+name_zh: 苏克雷州
 type: Division-1
 meta:
   alpha2: VE-R
@@ -9,4 +9,5 @@ meta:
     - r
     - sucre state
     - su
+    - 苏克雷
   category: STATE

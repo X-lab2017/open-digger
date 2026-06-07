@@ -1,5 +1,5 @@
 name: Orhei
-name_zh: 奥尔赫伊区
+name_zh: 奥尔海伊区
 type: Division-1
 meta:
   alpha2: MD-OR
@@ -9,4 +9,5 @@ meta:
     - or
     - orhei district
     - raionul orhei
+    - 奥尔赫伊区
   category: DISTRICT

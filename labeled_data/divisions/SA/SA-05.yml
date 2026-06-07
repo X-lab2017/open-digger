@@ -1,5 +1,5 @@
-name: Al Qaşīm
-name_zh: 朱夫省
+name: Al Quassim
+name_zh: 盖西姆省
 type: Division-1
 meta:
   alpha2: SA-05
@@ -11,4 +11,5 @@ meta:
     - alt
     - al qassim province
     - qas
+    - 朱夫省
   category: REGION

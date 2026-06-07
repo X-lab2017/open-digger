@@ -1,5 +1,5 @@
 name: Glarus
-name_zh: 格拉鲁斯
+name_zh: 格拉魯斯州
 type: Division-1
 meta:
   alpha2: CH-GL
@@ -8,4 +8,5 @@ meta:
     - ch-gl
     - gl
     - glarus canton
+    - 格拉鲁斯
   category: CANTON

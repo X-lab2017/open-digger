@@ -1,5 +1,5 @@
-name: Bacău
-name_zh: 巴库县
+name: Bacau
+name_zh: 巴克乌县
 type: Division-1
 meta:
   alpha2: RO-BC
@@ -9,4 +9,5 @@ meta:
     - bc
     - bacău department
     - bacău county
+    - 巴库县
   category: DEPARTMENT

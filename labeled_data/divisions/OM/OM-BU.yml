@@ -1,5 +1,5 @@
-name: Al Buraymī
-name_zh: 布尔米省
+name: Al Buraymi
+name_zh: 布赖米省
 type: Division-1
 meta:
   alpha2: OM-BU
@@ -9,4 +9,5 @@ meta:
     - bu
     - al buraymī governorate
     - al buraymi governorate
+    - 布尔米省
   category: GOVERNORATE

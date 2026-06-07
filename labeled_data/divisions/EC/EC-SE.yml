@@ -1,5 +1,5 @@
 name: Santa Elena
-name_zh: 圣埃莱娜
+name_zh: 圣埃伦娜省
 type: Division-1
 meta:
   alpha2: EC-SE
@@ -8,4 +8,5 @@ meta:
     - ec-se
     - se
     - santa elena province
+    - 圣埃莱娜
   category: PROVINCE

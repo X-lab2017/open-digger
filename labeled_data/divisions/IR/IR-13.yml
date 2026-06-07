@@ -1,5 +1,5 @@
-name: Hamadān
-name_zh: 哈马丹省
+name: Sistan and Baluchestan
+name_zh: 锡斯坦－俾路支斯坦省
 type: Division-1
 meta:
   alpha2: IR-13
@@ -9,4 +9,5 @@ meta:
     - '13'
     - hamadān province
     - hamadan province
+    - 哈马丹省
   category: PROVINCE

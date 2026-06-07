@@ -1,5 +1,5 @@
 name: Temotu
-name_zh: 首都区
+name_zh: 泰莫图省
 type: Division-1
 meta:
   alpha2: SB-TE
@@ -8,4 +8,5 @@ meta:
     - sb-te
     - te
     - temotu province
+    - 首都区
   category: PROVINCE

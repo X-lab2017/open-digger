@@ -1,5 +1,5 @@
 name: Dhaka
-name_zh: 达卡
+name_zh: 达卡专区
 type: Division-1
 meta:
   alpha2: BD-C
@@ -60,4 +60,5 @@ meta:
     - '63'
     - tangail district
     - ঢাকা বিভাগ
+    - 达卡
   category: DIVISION

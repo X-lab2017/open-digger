@@ -1,4 +1,4 @@
-name: Black River
+name: Rivière Noire
 type: Division-1
 meta:
   alpha2: MU-BL
@@ -8,3 +8,4 @@ meta:
     - bl
     - black river district
   category: DISTRICT
+name_zh: 黑河区

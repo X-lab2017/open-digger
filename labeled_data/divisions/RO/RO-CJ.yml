@@ -1,5 +1,5 @@
 name: Cluj
-name_zh: 克卢日县
+name_zh: 克鲁日县
 type: Division-1
 meta:
   alpha2: RO-CJ
@@ -10,4 +10,5 @@ meta:
     - cluj department
     - județul cluj
     - cluj county
+    - 克卢日县
   category: DEPARTMENT

@@ -1,5 +1,5 @@
 name: Vĩnh Phúc
-name_zh: 永福
+name_zh: 永福省
 type: Division-1
 meta:
   alpha2: VN-70
@@ -9,4 +9,5 @@ meta:
     - '70'
     - vĩnh phúc province
     - vinh phuc
+    - 永福
   category: PROVINCE

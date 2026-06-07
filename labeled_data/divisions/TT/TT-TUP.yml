@@ -1,5 +1,5 @@
-name: Tunapuna-Piarco
-name_zh: 图纳普纳-皮亚尔科地区公司
+name: Tunapuna/Piarco
+name_zh: 麦高耶
 type: Division-1
 meta:
   alpha2: TT-TUP
@@ -9,4 +9,5 @@ meta:
     - tup
     - tunapuna-piarco region
     - tunapuna/piarco regional corporation
+    - 图纳普纳-皮亚尔科地区公司
   category: REGION

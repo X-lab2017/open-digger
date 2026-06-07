@@ -1,5 +1,5 @@
 name: Mahaica-Berbice
-name_zh: 德梅拉拉-马哈伊卡
+name_zh: 马海卡-伯比斯区
 type: Division-1
 meta:
   alpha2: GY-MA
@@ -8,4 +8,5 @@ meta:
     - gy-ma
     - ma
     - mahaica-berbice region
+    - 德梅拉拉-马哈伊卡
   category: REGION

@@ -1,5 +1,5 @@
 name: Margibi
-name_zh: 马吉比县
+name_zh: 马及比县
 type: Division-1
 meta:
   alpha2: LR-MG
@@ -8,4 +8,5 @@ meta:
     - lr-mg
     - mg
     - margibi county
+    - 马吉比县
   category: COUNTY

@@ -1,5 +1,5 @@
 name: Santiago del Estero
-name_zh: 圣地亚哥-德尔埃斯特罗省
+name_zh: 圣地亚哥－德尔埃斯特罗省
 type: Division-1
 meta:
   alpha2: AR-G
@@ -9,4 +9,5 @@ meta:
     - g
     - santiago del estero province
     - sde
+    - 圣地亚哥-德尔埃斯特罗省
   category: PROVINCE

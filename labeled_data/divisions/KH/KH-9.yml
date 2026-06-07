@@ -1,5 +1,5 @@
-name: Kaôh Kŏng
-name_zh: 高棉省
+name: Kaôh Kong
+name_zh: 戈公省
 type: Division-1
 meta:
   alpha2: KH-9
@@ -12,4 +12,5 @@ meta:
     - koh kong province
     - kaôh kŏng
     - kaôh kŏng province
+    - 高棉省
   category: PROVINCE

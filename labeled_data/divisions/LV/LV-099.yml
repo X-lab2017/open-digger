@@ -1,5 +1,5 @@
-name: Tukuma novads
-name_zh: 图库姆斯市镇
+name: Tukums
+name_zh: 相簿姆斯自治市
 type: Division-1
 meta:
   alpha2: LV-099
@@ -10,4 +10,5 @@ meta:
     - tukuma novads municipality
     - tukums
     - tukums municipality
+    - 图库姆斯市镇
   category: MUNICIPALITY

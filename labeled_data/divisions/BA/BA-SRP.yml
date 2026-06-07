@@ -1,5 +1,5 @@
-name: Republika Srpska
-name_zh: 塞尔维亚共和国
+name: Posavina
+name_zh: 波萨维纳州
 type: Division-1
 meta:
   alpha2: BA-SRP
@@ -11,4 +11,5 @@ meta:
     - serb republic
     - sr
     - republica srpska
+    - 塞尔维亚共和国
   category: ENTITY

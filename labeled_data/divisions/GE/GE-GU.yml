@@ -1,5 +1,5 @@
 name: Guria
-name_zh: 古里亚区
+name_zh: 古利亚州
 type: Division-1
 meta:
   alpha2: GE-GU
@@ -8,4 +8,5 @@ meta:
     - ge-gu
     - gu
     - guria region
+    - 古里亚区
   category: REGION

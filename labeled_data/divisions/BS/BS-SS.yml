@@ -1,5 +1,5 @@
 name: San Salvador
-name_zh: 圣萨尔瓦多
+name_zh: 圣萨尔瓦多岛
 type: Division-1
 meta:
   alpha2: BS-SS
@@ -8,4 +8,5 @@ meta:
     - bs-ss
     - ss
     - san salvador district
+    - 圣萨尔瓦多
   category: DISTRICT

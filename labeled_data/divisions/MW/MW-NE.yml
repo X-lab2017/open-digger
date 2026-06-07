@@ -1,0 +1,11 @@
+name: Neno
+name_zh: 尼诺
+type: Division-1
+meta:
+  alpha2: MW-NE
+  includes:
+    - neno
+    - mw-ne
+    - ne
+    - neno district
+  category: PROVINCE

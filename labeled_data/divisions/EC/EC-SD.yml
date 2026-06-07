@@ -1,5 +1,5 @@
 name: Santo Domingo de los Tsáchilas
-name_zh: 圣多明各德洛斯察奇拉斯
+name_zh: 圣多明各-德洛斯查奇拉斯省
 type: Division-1
 meta:
   alpha2: EC-SD
@@ -9,4 +9,5 @@ meta:
     - sd
     - santo domingo de los tsáchilas province
     - santo domingo de los tsachilas
+    - 圣多明各德洛斯察奇拉斯
   category: PROVINCE

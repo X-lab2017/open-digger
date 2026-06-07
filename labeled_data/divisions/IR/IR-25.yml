@@ -1,5 +1,5 @@
-name: Qom
-name_zh: 库姆省
+name: Yazd
+name_zh: 亚兹德省
 type: Division-1
 meta:
   alpha2: IR-25
@@ -8,4 +8,5 @@ meta:
     - ir-25
     - '25'
     - qom province
+    - 库姆省
   category: PROVINCE

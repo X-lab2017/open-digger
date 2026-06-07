@@ -1,5 +1,5 @@
 name: Yambol
-name_zh: 扬博尔
+name_zh: 扬博尔州
 type: Division-1
 meta:
   alpha2: BG-28
@@ -10,4 +10,5 @@ meta:
     - yambol district
     - yambol province
     - jambol
+    - 扬博尔
   category: DISTRICT

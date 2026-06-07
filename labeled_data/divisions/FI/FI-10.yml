@@ -1,5 +1,5 @@
-name: Lappland
-name_zh: 拉普兰
+name: Lapland
+name_zh: 拉普蘭區
 type: Division-1
 meta:
   alpha2: FI-10
@@ -12,4 +12,5 @@ meta:
     - lappland region
     - lapland
     - fi1a3
+    - 拉普兰
   category: REGION

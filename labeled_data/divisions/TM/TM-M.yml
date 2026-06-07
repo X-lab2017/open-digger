@@ -1,5 +1,5 @@
 name: Mary
-name_zh: 马雷
+name_zh: 马雷州
 type: Division-1
 meta:
   alpha2: TM-M
@@ -8,4 +8,5 @@ meta:
     - tm-m
     - m
     - mary region
+    - 马雷
   category: REGION

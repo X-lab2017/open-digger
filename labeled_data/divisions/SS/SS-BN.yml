@@ -1,5 +1,5 @@
 name: Northern Bahr el Ghazal
-name_zh: 北巴尔加扎尔
+name_zh: 北加扎勒河省
 type: Division-1
 meta:
   alpha2: SS-BN
@@ -8,4 +8,5 @@ meta:
     - ss-bn
     - bn
     - northern bahr el ghazal state
+    - 北巴尔加扎尔
   category: STATE

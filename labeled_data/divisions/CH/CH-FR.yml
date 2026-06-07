@@ -1,5 +1,5 @@
 name: Fribourg
-name_zh: 弗里堡
+name_zh: 弗里堡州
 type: Division-1
 meta:
   alpha2: CH-FR
@@ -10,4 +10,5 @@ meta:
     - freiburg canton
     - fribourg
     - fribourg canton
+    - 弗里堡
   category: CANTON

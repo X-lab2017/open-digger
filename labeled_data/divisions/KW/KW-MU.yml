@@ -1,5 +1,5 @@
-name: Mubārak al Kabīr
-name_zh: 穆巴拉克省
+name: Mubarak Al-Kabeer
+name_zh: 大穆巴拉克省
 type: Division-1
 meta:
   alpha2: KW-MU
@@ -9,4 +9,5 @@ meta:
     - mu
     - mubārak al kabīr governorate
     - mubarak al-kabeer governorate
+    - 穆巴拉克省
   category: GOVERNORATE

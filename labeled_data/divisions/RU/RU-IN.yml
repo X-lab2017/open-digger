@@ -1,5 +1,5 @@
-name: Ingušetija
-name_zh: 车里雅宾斯克州
+name: Ingush
+name_zh: 印古什共和国
 type: Division-1
 meta:
   alpha2: RU-IN
@@ -11,4 +11,5 @@ meta:
     - ingušetija
     - ingušetija republic
     - ingushetia
+    - 车里雅宾斯克州
   category: REPUBLIC

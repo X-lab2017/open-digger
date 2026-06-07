@@ -1,0 +1,11 @@
+name: Côte-d'Or
+name_zh: 科多尔省
+type: Division-1
+meta:
+  alpha2: FR-21
+  includes:
+    - côte-d'or
+    - fr-21
+    - '21'
+    - côte-d'or metropolitan department
+  category: PROVINCE

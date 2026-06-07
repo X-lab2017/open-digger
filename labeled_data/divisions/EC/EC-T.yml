@@ -1,5 +1,5 @@
 name: Tungurahua
-name_zh: 通古拉瓦
+name_zh: 通古拉瓦省
 type: Division-1
 meta:
   alpha2: EC-T
@@ -8,4 +8,5 @@ meta:
     - ec-t
     - t
     - tungurahua province
+    - 通古拉瓦
   category: PROVINCE

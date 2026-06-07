@@ -1,5 +1,5 @@
-name: An Najaf
-name_zh: 穆萨纳省
+name: An-Najaf
+name_zh: 纳杰夫省
 type: Division-1
 meta:
   alpha2: IQ-NA
@@ -10,4 +10,5 @@ meta:
     - an najaf governorate
     - al-najaf governorate
     - najaf governorate
+    - 穆萨纳省
   category: GOVERNORATE

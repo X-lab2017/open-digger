@@ -1,5 +1,5 @@
 name: Nugaal
-name_zh: 努加尔
+name_zh: 努加尔州
 type: Division-1
 meta:
   alpha2: SO-NU
@@ -9,4 +9,5 @@ meta:
     - nu
     - nugaal region
     - nugal
+    - 努加尔
   category: REGION

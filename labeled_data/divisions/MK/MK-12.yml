@@ -1,0 +1,12 @@
+name: Vevčani
+name_zh: 維夫查尼區
+type: Division-1
+meta:
+  alpha2: MK-12
+  includes:
+    - vevčani
+    - mk-301
+    - '301'
+    - vevčani municipality
+    - 韦夫恰尼
+  category: MUNICIPALITY

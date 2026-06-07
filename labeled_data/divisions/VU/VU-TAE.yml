@@ -1,5 +1,5 @@
-name: Taféa
-name_zh: 塔法省
+name: Tafea
+name_zh: 塔菲亚省
 type: Division-1
 meta:
   alpha2: VU-TAE
@@ -10,4 +10,5 @@ meta:
     - taféa province
     - tafea province
     - tafea
+    - 塔法省
   category: PROVINCE

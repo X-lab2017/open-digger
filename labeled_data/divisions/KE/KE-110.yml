@@ -1,0 +1,14 @@
+name: Nairobi
+name_zh: 内罗毕
+type: Division-1
+meta:
+  alpha2: KE-110
+  includes:
+    - nairobi city
+    - ke-30
+    - '30'
+    - nairobi city county
+    - nairobi county
+    - nairobi
+    - 内罗毕市
+  category: COUNTY

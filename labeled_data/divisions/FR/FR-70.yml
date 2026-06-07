@@ -1,0 +1,11 @@
+name: Haute-Saône
+name_zh: 上索恩省
+type: Division-1
+meta:
+  alpha2: FR-70
+  includes:
+    - haute-saône
+    - fr-70
+    - '70'
+    - haute-saône metropolitan department
+  category: PROVINCE

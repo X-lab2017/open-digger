@@ -1,5 +1,5 @@
 name: Mashonaland West
-name_zh: 马绍纳兰西省
+name_zh: 西马绍纳兰省
 type: Division-1
 meta:
   alpha2: ZW-MW
@@ -8,4 +8,5 @@ meta:
     - zw-mw
     - mw
     - mashonaland west province
+    - 马绍纳兰西省
   category: PROVINCE

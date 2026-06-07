@@ -1,0 +1,40 @@
+name: Nyanza
+name_zh: 尼扬扎省
+type: Division-1
+meta:
+  alpha2: KE-600
+  includes:
+    - homa bay
+    - ke-08
+    - '08'
+    - homa bay county
+    - rift valley
+    - 霍马湾县
+    - kisii
+    - ke-16
+    - '16'
+    - kisii county
+    - 基西县
+    - kisumu
+    - ke-17
+    - '17'
+    - kisumu county
+    - 基苏木县
+    - migori
+    - ke-27
+    - '27'
+    - migori county
+    - 米戈利县
+    - nyamira
+    - ke-34
+    - '34'
+    - nyamira county
+    - 尼亚米拉县
+    - siaya
+    - ke-38
+    - '38'
+    - siaya county
+    - 西亚县
+    - KE-600
+    - '600'
+  category: PROVINCE

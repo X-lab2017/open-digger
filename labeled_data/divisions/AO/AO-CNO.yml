@@ -1,5 +1,5 @@
-name: Cuanza-Norte
-name_zh: 宽扎北省
+name: Cuanza Norte
+name_zh: 北宽扎省
 type: Division-1
 meta:
   alpha2: AO-CNO
@@ -10,4 +10,5 @@ meta:
     - cuanza-norte province
     - kwanza norte
     - kwanza norte province
+    - 宽扎北省
   category: PROVINCE

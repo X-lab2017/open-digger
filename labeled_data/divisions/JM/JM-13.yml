@@ -1,5 +1,5 @@
 name: Clarendon
-name_zh: 克拉伦登教区
+name_zh: 克拉伦登区
 type: Division-1
 meta:
   alpha2: JM-13
@@ -8,4 +8,5 @@ meta:
     - jm-13
     - '13'
     - clarendon parish
+    - 克拉伦登教区
   category: PARISH

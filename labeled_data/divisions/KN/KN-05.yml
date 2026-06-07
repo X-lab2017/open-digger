@@ -1,0 +1,11 @@
+name: Saint James Windward
+name_zh: 圣詹姆斯温沃德区
+type: Division-1
+meta:
+  alpha2: KN-05
+  includes:
+    - saint james windward
+    - kn-05
+    - '05'
+    - saint james windward parish
+  category: PROVINCE

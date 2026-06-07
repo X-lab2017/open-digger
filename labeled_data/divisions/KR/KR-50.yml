@@ -1,5 +1,5 @@
 name: Sejong
-name_zh: 世宗市
+name_zh: 世宗特別自治市
 type: Division-1
 meta:
   alpha2: KR-50
@@ -10,4 +10,5 @@ meta:
     - sejong special self-governing city
     - sejong city
     - sejong-si
+    - 世宗市
   category: SPECIAL SELF-GOVERNING CITY

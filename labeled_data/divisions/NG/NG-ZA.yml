@@ -1,5 +1,5 @@
 name: Zamfara
-name_zh: 赞法拉州
+name_zh: 扎姆法拉州
 type: Division-1
 meta:
   alpha2: NG-ZA
@@ -8,4 +8,5 @@ meta:
     - ng-za
     - za
     - zamfara state
+    - 赞法拉州
   category: STATE

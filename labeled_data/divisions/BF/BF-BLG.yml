@@ -1,0 +1,11 @@
+name: Boulgou
+name_zh: 布尔古省
+type: Division-1
+meta:
+  alpha2: BF-BLG
+  includes:
+    - boulgou
+    - bf-blg
+    - blg
+    - boulgou province
+  category: PROVINCE

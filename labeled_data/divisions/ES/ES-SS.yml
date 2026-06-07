@@ -1,0 +1,11 @@
+name: Gipuzkoa
+name_zh: 吉普斯夸省
+type: Division-1
+meta:
+  alpha2: ES-SS
+  includes:
+    - gipuzkoa
+    - es-ss
+    - ss
+    - gipuzkoa province
+  category: PROVINCE

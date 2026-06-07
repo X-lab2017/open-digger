@@ -1,0 +1,81 @@
+name: Rift Valley
+name_zh: 裂谷省
+type: Division-1
+meta:
+  alpha2: KE-700
+  includes:
+    - baringo
+    - ke-01
+    - '01'
+    - baringo county
+    - 巴林戈县
+    - bomet
+    - ke-02
+    - '02'
+    - bomet county
+    - 博梅特县
+    - elgeyo/marakwet
+    - ke-05
+    - '05'
+    - elgeyo/marakwet county
+    - elgeyo-marakwet county
+    - 埃尔格约-马拉奎特县
+    - kajiado
+    - ke-10
+    - '10'
+    - kajiado county
+    - 卡贾多县
+    - kericho
+    - ke-12
+    - '12'
+    - kericho county
+    - 基里奥科县
+    - laikipia
+    - ke-20
+    - '20'
+    - laikipia county
+    - 莱基皮亚县
+    - nakuru
+    - ke-31
+    - '31'
+    - nakuru county
+    - 纳库鲁县
+    - nandi
+    - ke-32
+    - '32'
+    - nandi county
+    - 南迪县
+    - narok
+    - ke-33
+    - '33'
+    - narok county
+    - 纳罗克县
+    - samburu
+    - ke-37
+    - '37'
+    - samburu county
+    - 桑布卢县
+    - trans nzoia
+    - ke-42
+    - '42'
+    - trans nzoia county
+    - trans-nzoia county
+    - 特伦斯诺亚县
+    - turkana
+    - ke-43
+    - '43'
+    - turkana county
+    - 图尔卡纳县
+    - uasin gishu
+    - ke-44
+    - '44'
+    - uasin gishu county
+    - 乌阿苏吉县
+    - west pokot
+    - ke-47
+    - '47'
+    - west pokot county
+    - 西波克特县
+    - KE-700
+    - '700'
+  category: PROVINCE

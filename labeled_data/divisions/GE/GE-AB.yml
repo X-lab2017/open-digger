@@ -1,5 +1,5 @@
 name: Abkhazia
-name_zh: 阿布哈兹自治共和国
+name_zh: 阿布哈兹
 type: Division-1
 meta:
   alpha2: GE-AB
@@ -10,4 +10,5 @@ meta:
     - abkhazia autonomous republic
     - apkhazeti
     - apkhazeti autonomous republic
+    - 阿布哈兹自治共和国
   category: AUTONOMOUS REPUBLIC

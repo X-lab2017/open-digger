@@ -1,4 +1,4 @@
-name: Cimișlia
+name: Cimişlia
 type: Division-1
 meta:
   alpha2: MD-CM
@@ -8,3 +8,4 @@ meta:
     - cm
     - cimișlia district
   category: DISTRICT
+name_zh: 奇米什利亚区

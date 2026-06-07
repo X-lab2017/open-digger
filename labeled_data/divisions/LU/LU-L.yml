@@ -1,0 +1,42 @@
+name: Luxembourg
+name_zh: 卢森堡
+type: Division-1
+meta:
+  alpha2: LU-L
+  includes:
+    - luxembourg
+    - lu-lu
+    - lu
+    - luxembourg canton
+    - luxemburg
+    - luxemburg canton
+    - lëtzebuerg
+    - lëtzebuerg canton
+    - 卢森堡区
+    - capellen
+    - lu-ca
+    - ca
+    - capellen canton
+    - kapellen
+    - kapellen canton
+    - 卡佩伦县
+    - esch an der alzette
+    - lu-es
+    - es
+    - esch an der alzette canton
+    - esch-uelzecht
+    - esch-uelzecht canton
+    - esch-sur-alzette
+    - esch-sur-alzette canton
+    - 阿尔泽特河畔埃施县
+    - mersch
+    - lu-me
+    - me
+    - mersch canton
+    - miersch
+    - miersch canton
+    - canton of mersch
+    - 梅尔施县
+    - LU-L
+    - L
+  category: DISTRICT

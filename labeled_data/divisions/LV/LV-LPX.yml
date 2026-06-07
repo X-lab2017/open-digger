@@ -1,5 +1,5 @@
 name: Liepāja
-name_zh: 利耶帕亚市
+name_zh: 利耶帕亚
 type: Division-1
 meta:
   alpha2: LV-LPX
@@ -9,4 +9,5 @@ meta:
     - lpx
     - liepāja state city
     - liepaja
+    - 利耶帕亚市
   category: STATE CITY

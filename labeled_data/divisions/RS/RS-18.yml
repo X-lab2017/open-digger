@@ -1,5 +1,5 @@
-name: Raški okrug
-name_zh: 拉什尼克
+name: Raški
+name_zh: 拉什卡州
 type: Division-1
 meta:
   alpha2: RS-18
@@ -8,4 +8,5 @@ meta:
     - rs-18
     - '18'
     - raški okrug district
+    - 拉什尼克
   category: DISTRICT

@@ -1,5 +1,5 @@
 name: Durango
-name_zh: 杜兰戈
+name_zh: 杜兰戈州
 type: Division-1
 meta:
   alpha2: MX-DUR
@@ -9,4 +9,5 @@ meta:
     - dur
     - durango state
     - dgo
+    - 杜兰戈
   category: STATE

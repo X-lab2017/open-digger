@@ -1,4 +1,4 @@
-name: Radeče
+name: Radece
 type: Division-1
 meta:
   alpha2: SI-099
@@ -8,3 +8,4 @@ meta:
     - '099'
     - radeče municipality
   category: MUNICIPALITY
+name_zh: 拉代切

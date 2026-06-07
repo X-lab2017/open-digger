@@ -1,5 +1,5 @@
 name: Dunaújváros
-name_zh: 杜纳乌约沃尔斯
+name_zh: 多瑙新城
 type: Division-1
 meta:
   alpha2: HU-DU
@@ -8,4 +8,5 @@ meta:
     - hu-du
     - du
     - dunaújváros city with county rights
+    - 杜纳乌约沃尔斯
   category: CITY WITH COUNTY RIGHTS

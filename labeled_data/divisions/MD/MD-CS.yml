@@ -1,5 +1,5 @@
-name: Căușeni
-name_zh: 卡乌塞尼区
+name: Causeni
+name_zh: 克乌谢尼区
 type: Division-1
 meta:
   alpha2: MD-CS
@@ -8,4 +8,5 @@ meta:
     - md-cs
     - cs
     - căușeni district
+    - 卡乌塞尼区
   category: DISTRICT

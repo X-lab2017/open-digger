@@ -1,5 +1,5 @@
 name: Alagoas
-name_zh: 阿拉戈斯
+name_zh: 阿拉戈斯州
 type: Division-1
 meta:
   alpha2: BR-AL
@@ -9,4 +9,5 @@ meta:
     - al
     - alagoas state
     - state of alagoas
+    - 阿拉戈斯
   category: STATE

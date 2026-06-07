@@ -1,5 +1,5 @@
 name: Coquimbo
-name_zh: 科金博
+name_zh: 科金博大区
 type: Division-1
 meta:
   alpha2: CL-CO
@@ -9,4 +9,5 @@ meta:
     - co
     - coquimbo region
     - iv
+    - 科金博
   category: REGION

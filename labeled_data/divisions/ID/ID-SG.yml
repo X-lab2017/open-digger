@@ -1,0 +1,11 @@
+name: Sulawesi Tenggara
+name_zh: 东南苏拉威西省
+type: Division-1
+meta:
+  alpha2: ID-SG
+  includes:
+    - sulawesi tenggara
+    - id-sg
+    - sg
+    - sulawesi tenggara province
+  category: PROVINCE

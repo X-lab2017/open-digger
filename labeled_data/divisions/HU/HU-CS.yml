@@ -1,5 +1,5 @@
-name: Csongrád-Csanád
-name_zh: 琼格拉德
+name: Csongrád
+name_zh: 琼格拉德州
 type: Division-1
 meta:
   alpha2: HU-CS
@@ -9,4 +9,5 @@ meta:
     - cs
     - csongrád-csanád county
     - csongrád
+    - 琼格拉德
   category: COUNTY

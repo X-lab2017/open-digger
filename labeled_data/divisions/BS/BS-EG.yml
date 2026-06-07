@@ -1,5 +1,5 @@
 name: East Grand Bahama
-name_zh: 东大巴哈马
+name_zh: 东大巴哈马区
 type: Division-1
 meta:
   alpha2: BS-EG
@@ -8,4 +8,5 @@ meta:
     - bs-eg
     - eg
     - east grand bahama district
+    - 东大巴哈马
   category: DISTRICT

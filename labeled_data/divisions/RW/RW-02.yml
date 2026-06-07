@@ -1,5 +1,5 @@
-name: Est
-name_zh: 西部省
+name: Eastern
+name_zh: 东部省
 type: Division-1
 meta:
   alpha2: RW-02
@@ -12,4 +12,5 @@ meta:
     - est province
     - iburasirazuba
     - iburasirazuba province
+    - 西部省
   category: PROVINCE

@@ -1,5 +1,5 @@
-name: Kočevje
-name_zh: 科切夫耶
+name: Kocevje
+name_zh: 科切维
 type: Division-1
 meta:
   alpha2: SI-048
@@ -8,4 +8,5 @@ meta:
     - si-048
     - '048'
     - kočevje municipality
+    - 科切夫耶
   category: MUNICIPALITY

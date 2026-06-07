@@ -1,5 +1,5 @@
 name: Falcón
-name_zh: 法尔孔
+name_zh: 法尔孔州
 type: Division-1
 meta:
   alpha2: VE-I
@@ -9,4 +9,5 @@ meta:
     - i
     - falcón state
     - fa
+    - 法尔孔
   category: STATE

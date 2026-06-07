@@ -1,5 +1,5 @@
 name: Zaire
-name_zh: 扎伊尔省
+name_zh: 萨伊省
 type: Division-1
 meta:
   alpha2: AO-ZAI
@@ -8,4 +8,5 @@ meta:
     - ao-zai
     - zai
     - zaire province
+    - 扎伊尔省
   category: PROVINCE

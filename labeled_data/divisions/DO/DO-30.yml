@@ -1,0 +1,11 @@
+name: Hato Mayor
+name_zh: 阿托马约省
+type: Division-1
+meta:
+  alpha2: DO-30
+  includes:
+    - hato mayor
+    - do-30
+    - '30'
+    - hato mayor province
+  category: PROVINCE

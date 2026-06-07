@@ -1,0 +1,11 @@
+name: Siracusa
+name_zh: 锡拉库萨省
+type: Division-1
+meta:
+  alpha2: IT-SR
+  includes:
+    - siracusa
+    - it-sr
+    - sr
+    - siracusa free municipal consortium
+  category: PROVINCE

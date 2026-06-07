@@ -1,5 +1,5 @@
 name: Iringa
-name_zh: 伊林加
+name_zh: 伊林加区
 type: Division-1
 meta:
   alpha2: TZ-04
@@ -9,4 +9,5 @@ meta:
     - '04'
     - iringa region
     - mkoa wa iringa
+    - 伊林加
   category: REGION

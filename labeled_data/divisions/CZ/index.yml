@@ -87,16 +87,16 @@ data:
   labels:
     - ':companies/jetbrains'
     - CZ-10
-    - CZ-20
-    - CZ-31
-    - CZ-32
-    - CZ-41
-    - CZ-42
-    - CZ-51
-    - CZ-52
-    - CZ-53
-    - CZ-63
-    - CZ-64
-    - CZ-71
-    - CZ-72
-    - CZ-80
+    - CZ-ST
+    - CZ-JC
+    - CZ-PL
+    - CZ-KA
+    - CZ-US
+    - CZ-LI
+    - CZ-KR
+    - CZ-PA
+    - CZ-VY
+    - CZ-JM
+    - CZ-OL
+    - CZ-ZL
+    - CZ-MO

@@ -1,5 +1,5 @@
-name: West
-name_zh: 西北大区
+name: Ouest
+name_zh: 西部区
 type: Division-1
 meta:
   alpha2: CM-OU
@@ -11,4 +11,5 @@ meta:
     - west
     - west region
     - région de l'ouest
+    - 西北大区
   category: REGION

@@ -1,5 +1,5 @@
 name: Ar Raqqah
-name_zh: 哈塞克省
+name_zh: 拉卡省
 type: Division-1
 meta:
   alpha2: SY-RA
@@ -9,4 +9,5 @@ meta:
     - ra
     - ar raqqah province
     - raqqa governorate
+    - 哈塞克省
   category: PROVINCE

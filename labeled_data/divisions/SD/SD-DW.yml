@@ -1,4 +1,4 @@
-name: West Darfur
+name: Western Darfur
 type: Division-1
 meta:
   alpha2: SD-DW
@@ -10,3 +10,4 @@ meta:
     - west darfur
     - west darfur state
   category: STATE
+name_zh: 西达尔富尔省

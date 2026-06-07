@@ -1,0 +1,11 @@
+name: Demir Kapija
+type: Division-1
+meta:
+  alpha2: MK-24
+  includes:
+    - demir kapija
+    - mk-103
+    - '103'
+    - demir kapija municipality
+  category: MUNICIPALITY
+name_zh: 德米尔卡皮雅区

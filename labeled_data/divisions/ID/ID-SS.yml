@@ -1,0 +1,11 @@
+name: Sumatera Selatan
+name_zh: 南苏门答腊省
+type: Division-1
+meta:
+  alpha2: ID-SS
+  includes:
+    - sumatera selatan
+    - id-ss
+    - ss
+    - sumatera selatan province
+  category: PROVINCE

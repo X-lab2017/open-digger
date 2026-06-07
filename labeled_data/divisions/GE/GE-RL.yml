@@ -1,5 +1,5 @@
-name: Rach'a-Lechkhumi-Kvemo Svaneti
-name_zh: 拉恰-莱赫基米和下斯瓦涅提区
+name: Racha-Lechkhumi-Kvemo Svaneti
+name_zh: 拉恰-列其呼米-下斯瓦涅季亚州
 type: Division-1
 meta:
   alpha2: GE-RL
@@ -9,4 +9,5 @@ meta:
     - rl
     - rach'a-lechkhumi-kvemo svaneti region
     - racha-lechkhumi and lower svaneti
+    - 拉恰-莱赫基米和下斯瓦涅提区
   category: REGION

@@ -1,5 +1,5 @@
 name: Vestfirðir
-name_zh: 东朗格区
+name_zh: 西峡湾区
 type: Division-1
 meta:
   alpha2: IS-4
@@ -44,4 +44,5 @@ meta:
     - is-isa
     - isa
     - ísafjarðarbær municipality
+    - 东朗格区
   category: REGION

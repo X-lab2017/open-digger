@@ -1,0 +1,23 @@
+name: Mamou
+name_zh: 马木省
+type: Division-1
+meta:
+  alpha2: GN-MM
+  includes:
+    - dalaba
+    - gn-dl
+    - dl
+    - dalaba prefecture
+    - mamou
+    - gn-m
+    - m
+    - mamou administrative region
+    - gn-mm
+    - mm
+    - mamou prefecture
+    - pita
+    - gn-pi
+    - pi
+    - pita prefecture
+    - 马穆区
+  category: ADMINISTRATIVE REGION

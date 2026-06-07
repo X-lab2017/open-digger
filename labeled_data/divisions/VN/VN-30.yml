@@ -1,5 +1,5 @@
 name: Gia Lai
-name_zh: 嘉莱
+name_zh: 嘉莱省
 type: Division-1
 meta:
   alpha2: VN-30
@@ -8,4 +8,5 @@ meta:
     - vn-30
     - '30'
     - gia lai province
+    - 嘉莱
   category: PROVINCE

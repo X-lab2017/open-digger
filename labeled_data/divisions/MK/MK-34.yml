@@ -1,0 +1,11 @@
+name: Ilinden
+type: Division-1
+meta:
+  alpha2: MK-34
+  includes:
+    - ilinden
+    - mk-807
+    - '807'
+    - ilinden municipality
+  category: MUNICIPALITY
+name_zh: 伊林登区

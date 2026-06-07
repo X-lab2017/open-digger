@@ -1,0 +1,11 @@
+name: Severno-Banatski
+name_zh: 北巴纳特州
+type: Division-1
+meta:
+  alpha2: RS-03
+  includes:
+    - severnobanatski okrug
+    - rs-03
+    - '03'
+    - severnobanatski okrug district
+  category: PROVINCE

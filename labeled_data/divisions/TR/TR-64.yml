@@ -1,5 +1,5 @@
-name: Uşak
-name_zh: 乌沙克
+name: Usak
+name_zh: 乌沙克省
 type: Division-1
 meta:
   alpha2: TR-64
@@ -8,4 +8,5 @@ meta:
     - tr-64
     - '64'
     - uşak province
+    - 乌沙克
   category: PROVINCE

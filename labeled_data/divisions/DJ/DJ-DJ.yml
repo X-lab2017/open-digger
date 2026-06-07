@@ -1,5 +1,5 @@
-name: Jībūtī
-name_zh: 吉布提
+name: Djibouti
+name_zh: 吉布地市
 type: Division-1
 meta:
   alpha2: DJ-DJ
@@ -10,4 +10,5 @@ meta:
     - djibouti city
     - jībūtī
     - jībūtī city
+    - 吉布提
   category: CITY

@@ -1,0 +1,11 @@
+name: Alsace
+name_zh: ''
+type: Division-1
+meta:
+  alpha2: FR-6AE
+  includes:
+    - alsace
+    - fr-6ae
+    - 6ae
+    - alsace european collectivity
+  category: PROVINCE

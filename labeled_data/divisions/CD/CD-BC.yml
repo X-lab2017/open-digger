@@ -1,5 +1,5 @@
-name: Kongo Central
-name_zh: 中刚果
+name: Bas-Congo
+name_zh: 中刚果省
 type: Division-1
 meta:
   alpha2: CD-BC
@@ -8,4 +8,5 @@ meta:
     - cd-bc
     - bc
     - kongo central province
+    - 中刚果
   category: PROVINCE

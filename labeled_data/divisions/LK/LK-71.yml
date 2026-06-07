@@ -1,0 +1,11 @@
+name: Anurādhapura
+name_zh: 阿努拉德普勒區
+type: Division-1
+meta:
+  alpha2: LK-71
+  includes:
+    - anuradhapura
+    - lk-71
+    - '71'
+    - anuradhapura district
+  category: PROVINCE

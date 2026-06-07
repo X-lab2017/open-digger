@@ -1,5 +1,5 @@
-name: Mişrātah
-name_zh: 米苏拉塔区
+name: Misratah
+name_zh: 米苏拉塔省
 type: Division-1
 meta:
   alpha2: LY-MI
@@ -9,4 +9,5 @@ meta:
     - mi
     - mişrātah popularate
     - misrata district
+    - 米苏拉塔区
   category: POPULARATE

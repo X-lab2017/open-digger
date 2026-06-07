@@ -1,5 +1,5 @@
-name: Smiltenes novads
-name_zh: 斯米尔特内市镇
+name: Smiltenes
+name_zh: 瓦尔米耶拉
 type: Division-1
 meta:
   alpha2: LV-094
@@ -10,4 +10,5 @@ meta:
     - smiltenes novads municipality
     - smiltene
     - smiltene municipality
+    - 斯米尔特内市镇
   category: MUNICIPALITY

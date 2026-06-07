@@ -1,5 +1,5 @@
 name: Nueva Esparta
-name_zh: 新埃斯帕塔
+name_zh: 新埃斯帕塔州
 type: Division-1
 meta:
   alpha2: VE-O
@@ -9,4 +9,5 @@ meta:
     - o
     - nueva esparta state
     - ne
+    - 新埃斯帕塔
   category: STATE

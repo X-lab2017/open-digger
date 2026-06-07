@@ -1,0 +1,11 @@
+name: Loire-Atlantique
+name_zh: 大西洋卢瓦尔省
+type: Division-1
+meta:
+  alpha2: FR-44
+  includes:
+    - loire-atlantique
+    - fr-44
+    - '44'
+    - loire-atlantique metropolitan department
+  category: PROVINCE

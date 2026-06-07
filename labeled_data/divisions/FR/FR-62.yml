@@ -1,0 +1,11 @@
+name: Pas-de-Calais
+name_zh: 加来海峡省
+type: Division-1
+meta:
+  alpha2: FR-62
+  includes:
+    - pas-de-calais
+    - fr-62
+    - '62'
+    - pas-de-calais metropolitan department
+  category: PROVINCE

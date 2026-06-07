@@ -1,0 +1,11 @@
+name: Métropole de lyon
+name_zh: ''
+type: Division-1
+meta:
+  alpha2: FR-69M
+  includes:
+    - métropole de lyon
+    - fr-69m
+    - 69m
+    - métropole de lyon metropolitan collectivity with special status
+  category: PROVINCE

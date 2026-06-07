@@ -1,0 +1,11 @@
+name: Lanao del Sur
+name_zh: 南拉瑙省
+type: Division-1
+meta:
+  alpha2: PH-LAS
+  includes:
+    - lanao del sur
+    - ph-las
+    - las
+    - lanao del sur province
+  category: PROVINCE

@@ -1,5 +1,5 @@
-name: La Guaira
-name_zh: 拉瓜伊拉
+name: Vargas
+name_zh: 瓦尔加斯州
 type: Division-1
 meta:
   alpha2: VE-X
@@ -10,4 +10,5 @@ meta:
     - la guaira state
     - la
     - vargas
+    - 拉瓜伊拉
   category: STATE

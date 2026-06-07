@@ -1,5 +1,5 @@
-name: Dalarnas län
-name_zh: 达拉纳县
+name: Dalarna
+name_zh: 达拉纳省
 type: Division-1
 meta:
   alpha2: SE-W
@@ -9,4 +9,5 @@ meta:
     - w
     - dalarnas län county
     - dalarna county
+    - 达拉纳县
   category: COUNTY

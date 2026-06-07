@@ -1,0 +1,11 @@
+name: Southern Leyte
+name_zh: 南莱特省
+type: Division-1
+meta:
+  alpha2: PH-SLE
+  includes:
+    - katimogang leyte
+    - ph-sle
+    - sle
+    - katimogang leyte province
+  category: PROVINCE

@@ -1,5 +1,5 @@
 name: Pohnpei
-name_zh: 波恩佩州
+name_zh: 波纳佩州
 type: Division-1
 meta:
   alpha2: FM-PNI
@@ -8,4 +8,5 @@ meta:
     - fm-pni
     - pni
     - pohnpei state
+    - 波恩佩州
   category: STATE

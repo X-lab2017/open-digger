@@ -1,5 +1,5 @@
 name: Masaya
-name_zh: 马萨亚
+name_zh: 马萨亚省
 type: Division-1
 meta:
   alpha2: NI-MS
@@ -8,4 +8,5 @@ meta:
     - ni-ms
     - ms
     - masaya department
+    - 马萨亚
   category: DEPARTMENT

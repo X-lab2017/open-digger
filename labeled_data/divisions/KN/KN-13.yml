@@ -1,0 +1,11 @@
+name: Saint Thomas Middle Island
+name_zh: 圣托马斯米德艾兰区
+type: Division-1
+meta:
+  alpha2: KN-13
+  includes:
+    - saint thomas middle island
+    - kn-13
+    - '13'
+    - saint thomas middle island parish
+  category: PROVINCE

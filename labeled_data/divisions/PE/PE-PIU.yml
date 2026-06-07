@@ -1,5 +1,5 @@
 name: Piura
-name_zh: 皮乌拉
+name_zh: 皮乌拉地区
 type: Division-1
 meta:
   alpha2: PE-PIU
@@ -10,4 +10,5 @@ meta:
     - piura region
     - piwra
     - piwra region
+    - 皮乌拉
   category: REGION

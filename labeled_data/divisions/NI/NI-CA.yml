@@ -1,5 +1,5 @@
 name: Carazo
-name_zh: 卡拉索
+name_zh: 卡拉索省
 type: Division-1
 meta:
   alpha2: NI-CA
@@ -8,4 +8,5 @@ meta:
     - ni-ca
     - ca
     - carazo department
+    - 卡拉索
   category: DEPARTMENT

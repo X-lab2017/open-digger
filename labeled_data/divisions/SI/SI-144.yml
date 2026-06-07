@@ -1,4 +1,4 @@
-name: Zreče
+name: Zrece
 type: Division-1
 meta:
   alpha2: SI-144
@@ -8,3 +8,4 @@ meta:
     - '144'
     - zreče municipality
   category: MUNICIPALITY
+name_zh: 茲雷切

@@ -1,5 +1,5 @@
-name: Mureș
-name_zh: 马拉穆列什县
+name: Mures
+name_zh: 穆列什县
 type: Division-1
 meta:
   alpha2: RO-MS
@@ -9,4 +9,5 @@ meta:
     - ms
     - mureș department
     - mureş
+    - 马拉穆列什县
   category: DEPARTMENT

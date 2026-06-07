@@ -1,0 +1,11 @@
+name: Haute-Garonne
+name_zh: 上加龙省
+type: Division-1
+meta:
+  alpha2: FR-31
+  includes:
+    - haute-garonne
+    - fr-31
+    - '31'
+    - haute-garonne metropolitan department
+  category: PROVINCE

@@ -1,5 +1,5 @@
 name: Blida
-name_zh: 布利达省
+name_zh: 卜利达省
 type: Division-1
 meta:
   alpha2: DZ-09
@@ -8,4 +8,5 @@ meta:
     - dz-09
     - '09'
     - blida province
+    - 布利达省
   category: PROVINCE

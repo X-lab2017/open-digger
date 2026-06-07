@@ -1,0 +1,11 @@
+name: Bengkulu
+name_zh: 明古鲁省
+type: Division-1
+meta:
+  alpha2: ID-BE
+  includes:
+    - bengkulu
+    - id-be
+    - be
+    - bengkulu province
+  category: PROVINCE

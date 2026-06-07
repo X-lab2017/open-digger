@@ -1,0 +1,11 @@
+name: Orne
+name_zh: 奥恩省
+type: Division-1
+meta:
+  alpha2: FR-61
+  includes:
+    - orne
+    - fr-61
+    - '61'
+    - orne metropolitan department
+  category: PROVINCE

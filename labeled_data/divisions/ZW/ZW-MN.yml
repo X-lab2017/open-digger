@@ -1,5 +1,5 @@
 name: Matabeleland North
-name_zh: 马塔贝莱兰北省
+name_zh: 北马塔贝莱兰省
 type: Division-1
 meta:
   alpha2: ZW-MN
@@ -8,4 +8,5 @@ meta:
     - zw-mn
     - mn
     - matabeleland north province
+    - 马塔贝莱兰北省
   category: PROVINCE

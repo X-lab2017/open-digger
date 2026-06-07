@@ -1,0 +1,11 @@
+name: West Flanders
+name_zh: 西弗兰德省
+type: Division-1
+meta:
+  alpha2: BE-VWV
+  includes:
+    - west-vlaanderen
+    - be-vwv
+    - vwv
+    - west-vlaanderen province
+  category: PROVINCE

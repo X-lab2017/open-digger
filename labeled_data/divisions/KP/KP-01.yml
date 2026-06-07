@@ -1,5 +1,5 @@
-name: Phyeongyang
-name_zh: 平壤市
+name: P'yŏngyang
+name_zh: 平壤
 type: Division-1
 meta:
   alpha2: KP-01
@@ -12,4 +12,5 @@ meta:
     - phyeongyang capital city
     - pyongyang
     - p’yŏngyang
+    - 平壤市
   category: CAPITAL CITY

@@ -1,5 +1,5 @@
 name: Jura
-name_zh: 汝拉
+name_zh: 汝拉州
 type: Division-1
 meta:
   alpha2: CH-JU
@@ -8,4 +8,5 @@ meta:
     - ch-ju
     - ju
     - jura canton
+    - 汝拉
   category: CANTON

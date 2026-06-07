@@ -1,5 +1,5 @@
 name: Appenzell Ausserrhoden
-name_zh: 外阿彭策尔
+name_zh: 外阿彭策尔州
 type: Division-1
 meta:
   alpha2: CH-AR
@@ -8,4 +8,5 @@ meta:
     - ch-ar
     - ar
     - appenzell ausserrhoden canton
+    - 外阿彭策尔
   category: CANTON

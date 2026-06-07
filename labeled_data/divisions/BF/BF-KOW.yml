@@ -1,0 +1,11 @@
+name: Kourwéogo
+name_zh: 库尔维奥戈省
+type: Division-1
+meta:
+  alpha2: BF-KOW
+  includes:
+    - kourwéogo
+    - bf-kow
+    - kow
+    - kourwéogo province
+  category: PROVINCE

@@ -1,0 +1,11 @@
+name: Campobasso
+name_zh: 坎波巴索省
+type: Division-1
+meta:
+  alpha2: IT-CB
+  includes:
+    - campobasso
+    - it-cb
+    - cb
+    - campobasso province
+  category: PROVINCE

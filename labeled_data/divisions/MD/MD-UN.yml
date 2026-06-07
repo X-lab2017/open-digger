@@ -1,5 +1,5 @@
 name: Ungheni
-name_zh: 昂格尼区
+name_zh: 温格内区
 type: Division-1
 meta:
   alpha2: MD-UN
@@ -8,4 +8,5 @@ meta:
     - md-un
     - un
     - ungheni district
+    - 昂格尼区
   category: DISTRICT

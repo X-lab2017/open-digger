@@ -1,5 +1,5 @@
-name: ‘Ajmān
-name_zh: 阿治曼酋长国
+name: Ajman
+name_zh: 阿治曼
 type: Division-1
 meta:
   alpha2: AE-AJ
@@ -10,4 +10,5 @@ meta:
     - ‘ajmān emirate
     - ajman
     - ajman emirate
+    - 阿治曼酋长国
   category: EMIRATE

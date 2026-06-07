@@ -1,5 +1,5 @@
-name: Al Jabal al Akhḑar
-name_zh: 贾勒阿尔阿克达区
+name: Al Jabal al Akhdar
+name_zh: 绿山省
 type: Division-1
 meta:
   alpha2: LY-JA
@@ -9,4 +9,5 @@ meta:
     - ja
     - al jabal al akhḑar popularate
     - jabal al akhdar district
+    - 贾勒阿尔阿克达区
   category: POPULARATE

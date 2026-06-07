@@ -1,0 +1,11 @@
+name: Lampung
+name_zh: 楠榜省
+type: Division-1
+meta:
+  alpha2: ID-LA
+  includes:
+    - lampung
+    - id-la
+    - la
+    - lampung province
+  category: PROVINCE

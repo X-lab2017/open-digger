@@ -1,5 +1,5 @@
 name: Çorum
-name_zh: 乔鲁姆
+name_zh: 乔鲁姆省
 type: Division-1
 meta:
   alpha2: TR-19
@@ -8,4 +8,5 @@ meta:
     - tr-19
     - '19'
     - çorum province
+    - 乔鲁姆
   category: PROVINCE

@@ -1,0 +1,11 @@
+name: Pavia
+name_zh: 帕维亚省
+type: Division-1
+meta:
+  alpha2: IT-PV
+  includes:
+    - pavia
+    - it-pv
+    - pv
+    - pavia province
+  category: PROVINCE

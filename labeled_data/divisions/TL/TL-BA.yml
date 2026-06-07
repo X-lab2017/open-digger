@@ -1,5 +1,5 @@
-name: Baukau
-name_zh: 包考
+name: Baucau
+name_zh: 包考县
 type: Division-1
 meta:
   alpha2: TL-BA
@@ -10,4 +10,5 @@ meta:
     - baucau municipality
     - baukau
     - baukau municipality
+    - 包考
   category: MUNICIPALITY

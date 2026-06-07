@@ -1,5 +1,5 @@
-name: Birkaland
-name_zh: 皮尔坎马
+name: Pirkanmaa
+name_zh: 皮尔卡区
 type: Division-1
 meta:
   alpha2: FI-11
@@ -10,4 +10,5 @@ meta:
     - birkaland region
     - pirkanmaa
     - pirkanmaa region
+    - 皮尔坎马
   category: REGION

@@ -1,5 +1,5 @@
 name: Arequipa
-name_zh: 阿雷基帕
+name_zh: 阿雷基帕大区
 type: Division-1
 meta:
   alpha2: PE-ARE
@@ -12,4 +12,5 @@ meta:
     - arikipa region
     - ariqipa
     - ariqipa region
+    - 阿雷基帕
   category: REGION

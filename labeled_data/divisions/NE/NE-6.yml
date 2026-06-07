@@ -1,5 +1,5 @@
 name: Tillabéri
-name_zh: 蒂拉贝里区
+name_zh: 蒂拉贝里大区
 type: Division-1
 meta:
   alpha2: NE-6
@@ -8,4 +8,5 @@ meta:
     - ne-6
     - '6'
     - tillabéri region
+    - 蒂拉贝里区
   category: REGION

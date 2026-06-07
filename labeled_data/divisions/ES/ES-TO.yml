@@ -1,0 +1,11 @@
+name: Toledo
+name_zh: 托萊多省
+type: Division-1
+meta:
+  alpha2: ES-TO
+  includes:
+    - toledo
+    - es-to
+    - to
+    - toledo province
+  category: PROVINCE

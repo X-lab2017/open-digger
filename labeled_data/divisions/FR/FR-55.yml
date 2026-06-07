@@ -1,0 +1,11 @@
+name: Meuse
+name_zh: 默兹省
+type: Division-1
+meta:
+  alpha2: FR-55
+  includes:
+    - meuse
+    - fr-55
+    - '55'
+    - meuse metropolitan department
+  category: PROVINCE

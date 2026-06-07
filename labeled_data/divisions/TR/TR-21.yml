@@ -1,5 +1,5 @@
-name: Diyarbakır
-name_zh: 阿格里
+name: Diyarbakir
+name_zh: 迪亚巴克尔省
 type: Division-1
 meta:
   alpha2: TR-21
@@ -8,4 +8,5 @@ meta:
     - tr-21
     - '21'
     - diyarbakır province
+    - 阿格里
   category: PROVINCE

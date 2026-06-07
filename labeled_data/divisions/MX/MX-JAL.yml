@@ -1,5 +1,5 @@
 name: Jalisco
-name_zh: 哈利斯科
+name_zh: 哈利斯科州
 type: Division-1
 meta:
   alpha2: MX-JAL
@@ -8,4 +8,5 @@ meta:
     - mx-jal
     - jal
     - jalisco state
+    - 哈利斯科
   category: STATE

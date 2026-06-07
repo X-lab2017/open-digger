@@ -1,5 +1,5 @@
 name: Danilovgrad
-name_zh: 丹尼洛格拉德市
+name_zh: 達尼洛夫格勒區
 type: Division-1
 meta:
   alpha2: ME-07
@@ -8,4 +8,5 @@ meta:
     - me-07
     - '07'
     - danilovgrad municipality
+    - 丹尼洛格拉德市
   category: MUNICIPALITY

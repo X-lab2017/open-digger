@@ -1,0 +1,11 @@
+name: Orense
+name_zh: 奥伦塞省
+type: Division-1
+meta:
+  alpha2: ES-OR
+  includes:
+    - ourense
+    - es-or
+    - or
+    - ourense province
+  category: PROVINCE

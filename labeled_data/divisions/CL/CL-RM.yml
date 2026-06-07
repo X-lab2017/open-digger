@@ -1,5 +1,5 @@
 name: Región Metropolitana de Santiago
-name_zh: 首都大区
+name_zh: 圣地亚哥首都大区
 type: Division-1
 meta:
   alpha2: CL-RM
@@ -11,4 +11,5 @@ meta:
     - santiago metropolitan region
     - región metropolitana
     - xvi
+    - 首都大区
   category: REGION

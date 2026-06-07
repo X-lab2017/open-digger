@@ -1,5 +1,5 @@
 name: Rheinland-Pfalz
-name_zh: 莱茵兰-普法尔茨州
+name_zh: 莱茵兰－普法尔茨
 type: Division-1
 meta:
   alpha2: DE-RP
@@ -9,4 +9,5 @@ meta:
     - rp
     - rheinland-pfalz land
     - rhineland-palatinate
+    - 莱茵兰-普法尔茨州
   category: LAND

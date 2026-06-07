@@ -1,5 +1,5 @@
-name: Chernivetska oblast
-name_zh: 切尔诺夫策
+name: Chernivtsi
+name_zh: 切尔诺夫策州
 type: Division-1
 meta:
   alpha2: UA-77
@@ -11,4 +11,5 @@ meta:
     - chernivets'ka oblast
     - chernivtsi oblast
     - chernivtsi
+    - 切尔诺夫策
   category: REGION

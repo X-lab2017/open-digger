@@ -1,0 +1,11 @@
+name: Sal
+name_zh: 萨尔县
+type: Division-1
+meta:
+  alpha2: CV-SL
+  includes:
+    - sal
+    - cv-sl
+    - sl
+    - sal municipality
+  category: PROVINCE

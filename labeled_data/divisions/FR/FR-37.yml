@@ -1,0 +1,11 @@
+name: Indre-et-Loire
+name_zh: 安德尔-卢瓦尔省
+type: Division-1
+meta:
+  alpha2: FR-37
+  includes:
+    - indre-et-loire
+    - fr-37
+    - '37'
+    - indre-et-loire metropolitan department
+  category: PROVINCE

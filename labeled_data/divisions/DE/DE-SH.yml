@@ -1,5 +1,5 @@
 name: Schleswig-Holstein
-name_zh: 石勒苏益格-荷尔斯泰因州
+name_zh: 石勒苏益格-荷尔斯泰因
 type: Division-1
 meta:
   alpha2: DE-SH
@@ -8,4 +8,5 @@ meta:
     - de-sh
     - sh
     - schleswig-holstein land
+    - 石勒苏益格-荷尔斯泰因州
   category: LAND

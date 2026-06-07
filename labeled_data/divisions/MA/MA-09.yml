@@ -1,5 +1,5 @@
-name: Souss-Massa
-name_zh: 苏斯-马萨
+name: Chaouia - Ouardigha
+name_zh: 沙维雅-瓦拉迪格大区
 type: Division-1
 meta:
   alpha2: MA-09
@@ -29,4 +29,5 @@ meta:
     - tiz
     - tiznit province
     - souss massa
+    - 苏斯-马萨
   category: REGION

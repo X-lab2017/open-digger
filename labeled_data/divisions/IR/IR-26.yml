@@ -1,5 +1,5 @@
-name: Qazvīn
-name_zh: 加兹温省
+name: Qom
+name_zh: 库姆省
 type: Division-1
 meta:
   alpha2: IR-26
@@ -9,4 +9,5 @@ meta:
     - '26'
     - qazvīn province
     - qazvin province
+    - 加兹温省
   category: PROVINCE

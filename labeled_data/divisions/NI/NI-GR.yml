@@ -1,5 +1,5 @@
 name: Granada
-name_zh: 格拉纳达
+name_zh: 格拉納達省
 type: Division-1
 meta:
   alpha2: NI-GR
@@ -8,4 +8,5 @@ meta:
     - ni-gr
     - gr
     - granada department
+    - 格拉纳达
   category: DEPARTMENT

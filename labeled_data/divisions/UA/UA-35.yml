@@ -1,5 +1,5 @@
-name: Kirovohradska oblast
-name_zh: 基洛夫格勒
+name: Kirovohrad
+name_zh: 基洛夫格勒州
 type: Division-1
 meta:
   alpha2: UA-35
@@ -10,4 +10,5 @@ meta:
     - kirovohradska oblast region
     - kirovohrad oblast
     - kirovohrad
+    - 基洛夫格勒
   category: REGION

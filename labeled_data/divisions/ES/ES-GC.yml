@@ -1,0 +1,11 @@
+name: Las Palmas
+name_zh: 拉斯帕尔马斯省
+type: Division-1
+meta:
+  alpha2: ES-GC
+  includes:
+    - las palmas
+    - es-gc
+    - gc
+    - las palmas province
+  category: PROVINCE

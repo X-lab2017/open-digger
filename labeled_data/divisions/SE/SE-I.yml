@@ -1,5 +1,5 @@
-name: Gotlands län
-name_zh: 哥特兰县
+name: Gotland
+name_zh: 哥得兰省
 type: Division-1
 meta:
   alpha2: SE-I
@@ -9,4 +9,5 @@ meta:
     - i
     - gotlands län county
     - gotland county
+    - 哥特兰县
   category: COUNTY

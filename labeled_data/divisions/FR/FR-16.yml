@@ -1,0 +1,11 @@
+name: Charente
+name_zh: 夏朗德省
+type: Division-1
+meta:
+  alpha2: FR-16
+  includes:
+    - charente
+    - fr-16
+    - '16'
+    - charente metropolitan department
+  category: PROVINCE

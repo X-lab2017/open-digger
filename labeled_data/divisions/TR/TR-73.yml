@@ -1,5 +1,5 @@
-name: Şırnak
-name_zh: 希拉克
+name: Sirnak
+name_zh: 舍尔纳克省
 type: Division-1
 meta:
   alpha2: TR-73
@@ -9,4 +9,5 @@ meta:
     - '73'
     - şırnak province
     - sirnak
+    - 希拉克
   category: PROVINCE

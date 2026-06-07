@@ -1,5 +1,5 @@
-name: Gorod Biškek
-name_zh: 比什凯克市
+name: Bishkek
+name_zh: 比什凯克
 type: Division-1
 meta:
   alpha2: KG-GB
@@ -12,4 +12,5 @@ meta:
     - gorod bishkek city
     - gorod biškek
     - gorod biškek city
+    - 比什凯克市
   category: CITY

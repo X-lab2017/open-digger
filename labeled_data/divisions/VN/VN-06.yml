@@ -1,5 +1,5 @@
 name: Yên Bái
-name_zh: 宣光
+name_zh: 安沛省
 type: Division-1
 meta:
   alpha2: VN-06
@@ -8,4 +8,5 @@ meta:
     - vn-06
     - '06'
     - yên bái province
+    - 宣光
   category: PROVINCE

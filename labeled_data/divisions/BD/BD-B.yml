@@ -1,5 +1,5 @@
-name: Chattogram
-name_zh: 吉大港
+name: Chittagong
+name_zh: 吉大港专区
 type: Division-1
 meta:
   alpha2: BD-B
@@ -55,4 +55,5 @@ meta:
     - '56'
     - rangamati district
     - চট্টগ্রাম বিভাগ
+    - 吉大港
   category: DIVISION

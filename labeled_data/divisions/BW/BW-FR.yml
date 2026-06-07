@@ -1,5 +1,5 @@
 name: Francistown
-name_zh: 弗朗斯敦市
+name_zh: 弗朗西斯敦
 type: Division-1
 meta:
   alpha2: BW-FR
@@ -8,4 +8,5 @@ meta:
     - bw-fr
     - fr
     - francistown city
+    - 弗朗斯敦市
   category: CITY

@@ -1,5 +1,5 @@
 name: Schwyz
-name_zh: 施维茨
+name_zh: 施维茨州
 type: Division-1
 meta:
   alpha2: CH-SZ
@@ -8,4 +8,5 @@ meta:
     - ch-sz
     - sz
     - schwyz canton
+    - 施维茨
   category: CANTON

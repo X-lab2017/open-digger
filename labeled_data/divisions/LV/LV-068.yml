@@ -1,5 +1,5 @@
-name: Olaines novads
-name_zh: 奥莱内市镇
+name: Olaines
+name_zh: 奧萊內自治市
 type: Division-1
 meta:
   alpha2: LV-068
@@ -10,4 +10,5 @@ meta:
     - olaines novads municipality
     - olaine
     - olaine municipality
+    - 奥莱内市镇
   category: MUNICIPALITY

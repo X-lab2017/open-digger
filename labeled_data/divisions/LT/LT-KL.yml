@@ -1,5 +1,5 @@
-name: Klaipėdos apskritis
-name_zh: 克莱佩达县
+name: Klaipedos
+name_zh: 克萊佩達縣
 type: Division-1
 meta:
   alpha2: LT-KL
@@ -38,4 +38,5 @@ meta:
     - šilutė district municipality
     - klaipėdos
     - klaipėda county
+    - 克莱佩达县
   category: COUNTY

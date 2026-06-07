@@ -1,0 +1,11 @@
+name: Mŏṇarāgala
+name_zh: 莫訥勒格勒區
+type: Division-1
+meta:
+  alpha2: LK-82
+  includes:
+    - monaragala
+    - lk-82
+    - '82'
+    - monaragala district
+  category: PROVINCE

@@ -1,5 +1,5 @@
 name: Dibër
-name_zh: 迪伯县
+name_zh: 迪勃拉州
 type: Division-1
 meta:
   alpha2: AL-09
@@ -8,4 +8,5 @@ meta:
     - al-09
     - '09'
     - dibër county
+    - 迪伯县
   category: COUNTY

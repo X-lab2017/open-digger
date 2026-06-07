@@ -1,5 +1,5 @@
 name: Camagüey
-name_zh: 卡马圭
+name_zh: 卡马圭省
 type: Division-1
 meta:
   alpha2: CU-09
@@ -9,4 +9,5 @@ meta:
     - '09'
     - camagüey province
     - camaguey
+    - 卡马圭
   category: PROVINCE

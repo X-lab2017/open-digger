@@ -1,0 +1,11 @@
+name: Gālla
+name_zh: 加勒区
+type: Division-1
+meta:
+  alpha2: LK-31
+  includes:
+    - galle
+    - lk-31
+    - '31'
+    - galle district
+  category: PROVINCE

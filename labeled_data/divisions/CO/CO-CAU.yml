@@ -1,5 +1,5 @@
 name: Cauca
-name_zh: 考卡
+name_zh: 考卡省
 type: Division-1
 meta:
   alpha2: CO-CAU
@@ -8,4 +8,5 @@ meta:
     - co-cau
     - cau
     - cauca department
+    - 考卡
   category: DEPARTMENT

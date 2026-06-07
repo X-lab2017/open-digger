@@ -1,5 +1,5 @@
-name: Daegu-gwangyeoksi
-name_zh: 大邱市
+name: Daegu
+name_zh: 大邱
 type: Division-1
 meta:
   alpha2: KR-27
@@ -11,4 +11,5 @@ meta:
     - daegu
     - daegu metropolitan city
     - 대구광역시
+    - 大邱市
   category: METROPOLITAN CITY

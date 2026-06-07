@@ -1,5 +1,5 @@
-name: Costa Caribe Sur
-name_zh: 马萨亚
+name: Atlántico Sur
+name_zh: 南加勒比海岸自治区
 type: Division-1
 meta:
   alpha2: NI-AS
@@ -9,4 +9,5 @@ meta:
     - as
     - costa caribe sur autonomous region
     - south caribbean coast autonomous region
+    - 马萨亚
   category: AUTONOMOUS REGION

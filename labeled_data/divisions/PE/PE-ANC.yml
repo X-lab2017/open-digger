@@ -1,5 +1,5 @@
-name: Ancash
-name_zh: 安卡什
+name: Áncash
+name_zh: 安卡什大区
 type: Division-1
 meta:
   alpha2: PE-ANC
@@ -12,4 +12,5 @@ meta:
     - ankashu region
     - anqash
     - anqash region
+    - 安卡什
   category: REGION

@@ -1,5 +1,5 @@
-name: Al Ḩudūd ash Shamālīyah
-name_zh: 北部边境省
+name: Al Hudud ash Shamaliyah
+name_zh: 北部边疆省
 type: Division-1
 meta:
   alpha2: SA-08
@@ -10,4 +10,5 @@ meta:
     - al ḩudūd ash shamālīyah region
     - nar
     - northern borders province
+    - 北部边境省
   category: REGION

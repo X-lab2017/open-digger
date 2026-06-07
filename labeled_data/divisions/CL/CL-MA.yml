@@ -1,5 +1,5 @@
-name: Magallanes
-name_zh: 麦哲伦-智利南极
+name: Magallanes y Antártica Chilena
+name_zh: 麦哲伦-智利南极大区
 type: Division-1
 meta:
   alpha2: CL-MA
@@ -11,4 +11,5 @@ meta:
     - magallanes y la antártica chilena
     - magallanes and chilean antarctica
     - i
+    - 麦哲伦-智利南极
   category: REGION

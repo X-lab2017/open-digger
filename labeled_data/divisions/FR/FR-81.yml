@@ -1,0 +1,11 @@
+name: Tarn
+name_zh: 塔恩省
+type: Division-1
+meta:
+  alpha2: FR-81
+  includes:
+    - tarn
+    - fr-81
+    - '81'
+    - tarn metropolitan department
+  category: PROVINCE

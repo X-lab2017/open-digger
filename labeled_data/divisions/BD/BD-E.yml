@@ -1,5 +1,5 @@
 name: Rajshahi
-name_zh: 拉杰沙希
+name_zh: 拉杰沙希县
 type: Division-1
 meta:
   alpha2: BD-E
@@ -40,4 +40,5 @@ meta:
     - '59'
     - sirajganj district
     - রাজশাহী বিভাগ
+    - 拉杰沙希
   category: DIVISION

@@ -1,5 +1,5 @@
 name: São Paulo
-name_zh: 圣保罗
+name_zh: 圣保罗州
 type: Division-1
 meta:
   alpha2: BR-SP
@@ -9,4 +9,5 @@ meta:
     - sp
     - são paulo state
     - state of são paulo
+    - 圣保罗
   category: STATE

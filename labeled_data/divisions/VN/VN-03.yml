@@ -1,5 +1,5 @@
 name: Hà Giang
-name_zh: 河江
+name_zh: 河江省
 type: Division-1
 meta:
   alpha2: VN-03
@@ -9,4 +9,5 @@ meta:
     - '03'
     - hà giang province
     - ha giang
+    - 河江
   category: PROVINCE

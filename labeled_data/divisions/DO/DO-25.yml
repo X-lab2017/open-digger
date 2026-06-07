@@ -1,0 +1,11 @@
+name: Santiago
+name_zh: 圣地牙哥省
+type: Division-1
+meta:
+  alpha2: DO-25
+  includes:
+    - santiago
+    - do-25
+    - '25'
+    - santiago province
+  category: PROVINCE

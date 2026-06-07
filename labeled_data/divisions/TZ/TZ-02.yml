@@ -1,5 +1,5 @@
-name: Dar es Salaam
-name_zh: 达累斯萨拉姆
+name: Dar-Es-Salaam
+name_zh: 达累斯萨拉姆区
 type: Division-1
 meta:
   alpha2: TZ-02
@@ -10,4 +10,5 @@ meta:
     - dar es salaam region
     - dar es salam
     - salaam
+    - 达累斯萨拉姆
   category: REGION

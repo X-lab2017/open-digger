@@ -1,0 +1,11 @@
+name: Batanes
+name_zh: 巴丹群岛省
+type: Division-1
+meta:
+  alpha2: PH-BTN
+  includes:
+    - batanes
+    - ph-btn
+    - btn
+    - batanes province
+  category: PROVINCE

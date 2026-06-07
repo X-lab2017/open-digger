@@ -1,5 +1,5 @@
-name: Male Atoll
-name_zh: 马累
+name: Kaafu
+name_zh: 卡夫环礁
 type: Division-1
 meta:
   alpha2: MV-26
@@ -13,4 +13,5 @@ meta:
     - male atoll
     - male atoll administrative atoll
     - kaafu atoll
+    - 马累
   category: ADMINISTRATIVE ATOLL

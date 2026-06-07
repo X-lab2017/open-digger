@@ -1,5 +1,5 @@
-name: Tyva
-name_zh: 汉特-曼西自治区
+name: Tuva
+name_zh: 图瓦共和国
 type: Division-1
 meta:
   alpha2: RU-TY
@@ -11,4 +11,5 @@ meta:
     - tuva
     - tuva republic
     - republic of tyva
+    - 汉特-曼西自治区
   category: REPUBLIC

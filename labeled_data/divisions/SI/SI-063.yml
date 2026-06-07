@@ -1,5 +1,5 @@
 name: Ljutomer
-name_zh: 柳托默尔
+name_zh: 柳托梅爾
 type: Division-1
 meta:
   alpha2: SI-063
@@ -8,4 +8,5 @@ meta:
     - si-063
     - '063'
     - ljutomer municipality
+    - 柳托默尔
   category: MUNICIPALITY

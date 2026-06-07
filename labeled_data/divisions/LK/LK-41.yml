@@ -1,0 +1,11 @@
+name: Yāpanaya
+name_zh: 贾夫纳区
+type: Division-1
+meta:
+  alpha2: LK-41
+  includes:
+    - jaffna
+    - lk-41
+    - '41'
+    - jaffna district
+  category: PROVINCE

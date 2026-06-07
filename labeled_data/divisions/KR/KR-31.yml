@@ -1,5 +1,5 @@
-name: Ulsan-gwangyeoksi
-name_zh: 蔚山市
+name: Ulsan
+name_zh: 蔚山广域市
 type: Division-1
 meta:
   alpha2: KR-31
@@ -10,4 +10,5 @@ meta:
     - ulsan-gwangyeoksi metropolitan city
     - ulsan
     - ulsan metropolitan city
+    - 蔚山市
   category: METROPOLITAN CITY

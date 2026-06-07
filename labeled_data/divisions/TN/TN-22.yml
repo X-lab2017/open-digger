@@ -1,5 +1,5 @@
 name: Zaghouan
-name_zh: 扎格万区
+name_zh: 宰格万省
 type: Division-1
 meta:
   alpha2: TN-22
@@ -8,4 +8,5 @@ meta:
     - tn-22
     - '22'
     - zaghouan governorate
+    - 扎格万区
   category: GOVERNORATE

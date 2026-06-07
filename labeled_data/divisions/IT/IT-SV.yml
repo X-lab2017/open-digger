@@ -1,0 +1,11 @@
+name: Savona
+name_zh: 萨沃纳省
+type: Division-1
+meta:
+  alpha2: IT-SV
+  includes:
+    - savona
+    - it-sv
+    - sv
+    - savona province
+  category: PROVINCE

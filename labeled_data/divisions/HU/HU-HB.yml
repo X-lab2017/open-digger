@@ -1,5 +1,5 @@
 name: Hajdú-Bihar
-name_zh: 哈伊杜-比豪尔
+name_zh: 豪伊杜-比豪尔州
 type: Division-1
 meta:
   alpha2: HU-HB
@@ -8,4 +8,5 @@ meta:
     - hu-hb
     - hb
     - hajdú-bihar county
+    - 哈伊杜-比豪尔
   category: COUNTY

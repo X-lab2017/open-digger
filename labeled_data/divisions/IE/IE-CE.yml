@@ -1,0 +1,11 @@
+name: Clare
+name_zh: 克莱尔郡
+type: Division-1
+meta:
+  alpha2: IE-CE
+  includes:
+    - an clár
+    - ie-ce
+    - ce
+    - an clár county
+  category: PROVINCE

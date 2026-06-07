@@ -1,5 +1,5 @@
 name: Morobe
-name_zh: 莫罗贝省
+name_zh: 莫雷贝省
 type: Division-1
 meta:
   alpha2: PG-MPL
@@ -8,4 +8,5 @@ meta:
     - pg-mpl
     - mpl
     - morobe province
+    - 莫罗贝省
   category: PROVINCE

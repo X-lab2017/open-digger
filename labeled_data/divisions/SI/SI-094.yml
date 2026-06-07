@@ -1,5 +1,5 @@
 name: Postojna
-name_zh: 波斯托伊纳
+name_zh: 波斯托伊納鎮
 type: Division-1
 meta:
   alpha2: SI-094
@@ -8,4 +8,5 @@ meta:
     - si-094
     - '094'
     - postojna municipality
+    - 波斯托伊纳
   category: MUNICIPALITY

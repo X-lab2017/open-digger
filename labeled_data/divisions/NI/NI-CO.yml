@@ -1,5 +1,5 @@
 name: Chontales
-name_zh: 孔特阿莱斯
+name_zh: 琼塔莱斯省
 type: Division-1
 meta:
   alpha2: NI-CO
@@ -8,4 +8,5 @@ meta:
     - ni-co
     - co
     - chontales department
+    - 孔特阿莱斯
   category: DEPARTMENT

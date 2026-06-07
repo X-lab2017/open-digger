@@ -1,5 +1,5 @@
-name: Khmelnytska oblast
-name_zh: 赫梅利尼茨基
+name: Khmel'nyts'kyy
+name_zh: 赫梅利尼茨基州
 type: Division-1
 meta:
   alpha2: UA-68
@@ -10,4 +10,5 @@ meta:
     - khmelnytska oblast region
     - khmelnytskyi oblast
     - khmelnytsky
+    - 赫梅利尼茨基
   category: REGION

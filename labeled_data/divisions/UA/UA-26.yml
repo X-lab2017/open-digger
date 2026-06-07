@@ -1,5 +1,5 @@
-name: Ivano-Frankivska oblast
-name_zh: 伊万诺-弗兰科夫斯克
+name: Ivano-Frankivs'k
+name_zh: 伊万诺-弗兰科夫斯克州
 type: Division-1
 meta:
   alpha2: UA-26
@@ -11,4 +11,5 @@ meta:
     - ivano-frankivs'ka oblast
     - ivano-frankivsk oblast
     - ivano-frankivsk
+    - 伊万诺-弗兰科夫斯克
   category: REGION

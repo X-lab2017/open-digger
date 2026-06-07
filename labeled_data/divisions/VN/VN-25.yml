@@ -1,5 +1,5 @@
 name: Quảng Trị
-name_zh: 广治
+name_zh: 广治省
 type: Division-1
 meta:
   alpha2: VN-25
@@ -9,4 +9,5 @@ meta:
     - '25'
     - quảng trị province
     - quang tri
+    - 广治
   category: PROVINCE

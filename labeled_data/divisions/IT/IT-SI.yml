@@ -1,0 +1,11 @@
+name: Siena
+name_zh: 锡耶纳省
+type: Division-1
+meta:
+  alpha2: IT-SI
+  includes:
+    - siena
+    - it-si
+    - si
+    - siena province
+  category: PROVINCE

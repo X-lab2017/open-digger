@@ -1,0 +1,11 @@
+name: Mātale
+name_zh: 马特莱区
+type: Division-1
+meta:
+  alpha2: LK-22
+  includes:
+    - matale
+    - lk-22
+    - '22'
+    - matale district
+  category: PROVINCE

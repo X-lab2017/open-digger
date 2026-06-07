@@ -1,5 +1,5 @@
-name: Zanjān
-name_zh: 赞詹省
+name: Gilan
+name_zh: 吉兰省
 type: Division-1
 meta:
   alpha2: IR-19
@@ -9,4 +9,5 @@ meta:
     - '19'
     - zanjān province
     - zanjan province
+    - 赞詹省
   category: PROVINCE

@@ -1,0 +1,12 @@
+name: Savanes
+name_zh: 萨瓦纳区
+type: Division-1
+meta:
+  alpha2: CI-03
+  includes:
+    - savanes
+    - ci-sv
+    - sv
+    - savanes district
+    - 萨瓦内区
+  category: DISTRICT

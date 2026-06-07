@@ -1,0 +1,11 @@
+name: La Union
+name_zh: 拉乌尼翁省
+type: Division-1
+meta:
+  alpha2: PH-LUN
+  includes:
+    - la union
+    - ph-lun
+    - lun
+    - la union province
+  category: PROVINCE

@@ -1,0 +1,11 @@
+name: São Lourenço dos Órgãos
+name_zh: 圣洛伦索县
+type: Division-1
+meta:
+  alpha2: CV-SO
+  includes:
+    - são lourenço dos órgãos
+    - cv-so
+    - so
+    - são lourenço dos órgãos municipality
+  category: PROVINCE

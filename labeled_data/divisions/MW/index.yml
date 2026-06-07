@@ -85,6 +85,31 @@ meta:
       count: 31019
 data:
   labels:
-    - MW-C
-    - MW-N
-    - MW-S
+    - MW-BA
+    - MW-BL
+    - MW-CK
+    - MW-CR
+    - MW-CT
+    - MW-DE
+    - MW-DO
+    - MW-KR
+    - MW-KS
+    - MW-LI
+    - MW-LK
+    - MW-MC
+    - MW-MG
+    - MW-MH
+    - MW-MU
+    - MW-MW
+    - MW-MZ
+    - MW-NB
+    - MW-NE
+    - MW-NI
+    - MW-NK
+    - MW-NS
+    - MW-NU
+    - MW-PH
+    - MW-RU
+    - MW-SA
+    - MW-TH
+    - MW-ZO

@@ -1,0 +1,11 @@
+name: Badulla
+name_zh: 巴杜勒区
+type: Division-1
+meta:
+  alpha2: LK-81
+  includes:
+    - badulla
+    - lk-81
+    - '81'
+    - badulla district
+  category: PROVINCE

@@ -1,5 +1,5 @@
 name: Ilirska Bistrica
-name_zh: 特日契
+name_zh: 伊利爾斯卡比斯特里察鎮
 type: Division-1
 meta:
   alpha2: SI-038
@@ -8,4 +8,5 @@ meta:
     - si-038
     - '038'
     - ilirska bistrica municipality
+    - 特日契
   category: MUNICIPALITY

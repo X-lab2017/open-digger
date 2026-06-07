@@ -1,5 +1,5 @@
 name: Plateau
-name_zh: 普拉特奥州
+name_zh: 高原州
 type: Division-1
 meta:
   alpha2: NG-PL
@@ -8,4 +8,5 @@ meta:
     - ng-pl
     - pl
     - plateau state
+    - 普拉特奥州
   category: STATE

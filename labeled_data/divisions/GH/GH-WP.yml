@@ -1,5 +1,5 @@
 name: Western
-name_zh: 西北方区
+name_zh: 西部地区
 type: Division-1
 meta:
   alpha2: GH-WP
@@ -8,4 +8,5 @@ meta:
     - gh-wp
     - wp
     - western region
+    - 西北方区
   category: REGION

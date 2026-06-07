@@ -1,5 +1,5 @@
 name: Murzuq
-name_zh: 穆尔祖格区
+name_zh: 迈尔祖格省
 type: Division-1
 meta:
   alpha2: LY-MQ
@@ -9,4 +9,5 @@ meta:
     - mq
     - murzuq popularate
     - murzuq district
+    - 穆尔祖格区
   category: POPULARATE

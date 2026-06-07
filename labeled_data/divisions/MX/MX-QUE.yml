@@ -1,5 +1,5 @@
 name: Querétaro
-name_zh: 克雷塔罗
+name_zh: 克雷塔罗州
 type: Division-1
 meta:
   alpha2: MX-QUE
@@ -9,4 +9,5 @@ meta:
     - que
     - querétaro state
     - qro
+    - 克雷塔罗
   category: STATE

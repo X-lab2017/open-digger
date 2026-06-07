@@ -1,5 +1,5 @@
 name: Hamburg
-name_zh: 汉堡市
+name_zh: 汉堡
 type: Division-1
 meta:
   alpha2: DE-HH
@@ -8,4 +8,5 @@ meta:
     - de-hh
     - hh
     - hamburg land
+    - 汉堡市
   category: LAND

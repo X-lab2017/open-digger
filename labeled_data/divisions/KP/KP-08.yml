@@ -1,4 +1,4 @@
-name: Hamkyeongnamto
+name: Hamgyŏng-namdo
 type: Division-1
 meta:
   alpha2: KP-08
@@ -10,3 +10,4 @@ meta:
     - hamkyeongnamto
     - hamkyeongnamto province
   category: PROVINCE
+name_zh: 咸镜南道

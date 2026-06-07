@@ -1,5 +1,5 @@
-name: Norrbottens län
-name_zh: 北博滕县
+name: Norrbotten
+name_zh: 北博滕省
 type: Division-1
 meta:
   alpha2: SE-BD
@@ -9,4 +9,5 @@ meta:
     - bd
     - norrbottens län county
     - norrbotten county
+    - 北博滕县
   category: COUNTY

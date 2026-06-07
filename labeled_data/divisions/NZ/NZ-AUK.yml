@@ -1,5 +1,5 @@
 name: Auckland
-name_zh: 奥克兰
+name_zh: 奥克兰大区
 type: Division-1
 meta:
   alpha2: NZ-AUK
@@ -10,4 +10,5 @@ meta:
     - auckland region
     - tāmaki-makaurau
     - tāmaki-makaurau region
+    - 奥克兰
   category: REGION

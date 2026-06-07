@@ -1,0 +1,11 @@
+name: Machinga
+name_zh: 马钦加县
+type: Division-1
+meta:
+  alpha2: MW-MH
+  includes:
+    - machinga
+    - mw-mh
+    - mh
+    - machinga district
+  category: PROVINCE

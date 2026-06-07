@@ -1,5 +1,5 @@
-name: Guelmim-Oued Noun
-name_zh: 盖勒敏-瓦德农
+name: Doukkala - Abda
+name_zh: 杜卡拉-阿卜达大区
 type: Division-1
 meta:
   alpha2: MA-10
@@ -24,4 +24,5 @@ meta:
     - ma-tnt
     - tnt
     - tan-tan province
+    - 盖勒敏-瓦德农
   category: REGION

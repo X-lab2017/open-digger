@@ -1,0 +1,11 @@
+name: Retalhuleu
+name_zh: 雷塔卢莱乌省
+type: Division-1
+meta:
+  alpha2: GT-RE
+  includes:
+    - retalhuleu
+    - gt-11
+    - '11'
+    - retalhuleu department
+  category: DEPARTMENT

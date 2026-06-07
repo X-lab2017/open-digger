@@ -1,0 +1,11 @@
+name: Piacenza
+name_zh: 皮亚琴察省
+type: Division-1
+meta:
+  alpha2: IT-PC
+  includes:
+    - piacenza
+    - it-pc
+    - pc
+    - piacenza province
+  category: PROVINCE

@@ -1,5 +1,5 @@
 name: Durazno
-name_zh: 杜兰萨诺省
+name_zh: 杜拉斯诺省
 type: Division-1
 meta:
   alpha2: UY-DU
@@ -8,4 +8,5 @@ meta:
     - uy-du
     - du
     - durazno department
+    - 杜兰萨诺省
   category: DEPARTMENT

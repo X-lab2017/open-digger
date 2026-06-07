@@ -1,5 +1,5 @@
 name: Hải Phòng
-name_zh: 海防
+name_zh: 海防市
 type: Division-1
 meta:
   alpha2: VN-HP
@@ -11,4 +11,5 @@ meta:
     - haiphong
     - hai phong
     - hai phong city
+    - 海防
   category: MUNICIPALITY

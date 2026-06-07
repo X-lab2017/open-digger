@@ -1,5 +1,5 @@
 name: Phôngsali
-name_zh: 华潘省
+name_zh: 丰沙里省
 type: Division-1
 meta:
   alpha2: LA-PH
@@ -11,4 +11,5 @@ meta:
     - phongsaly
     - phongsaly province
     - sk
+    - 华潘省
   category: PROVINCE

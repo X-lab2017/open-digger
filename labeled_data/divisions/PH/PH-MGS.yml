@@ -1,0 +1,11 @@
+name: Maguindanao del sur
+name_zh: ''
+type: Division-1
+meta:
+  alpha2: PH-MGS
+  includes:
+    - maguindanao del sur
+    - ph-mgs
+    - mgs
+    - maguindanao del sur province
+  category: PROVINCE

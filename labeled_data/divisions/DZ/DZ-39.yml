@@ -1,5 +1,5 @@
 name: El Oued
-name_zh: 瓦德省
+name_zh: 瓦迪省
 type: Division-1
 meta:
   alpha2: DZ-39
@@ -8,4 +8,5 @@ meta:
     - dz-39
     - '39'
     - el oued province
+    - 瓦德省
   category: PROVINCE

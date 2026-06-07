@@ -1,0 +1,11 @@
+name: Oio
+name_zh: 奥约区
+type: Division-1
+meta:
+  alpha2: GW-OI
+  includes:
+    - oio
+    - gw-oi
+    - oi
+    - oio region
+  category: PROVINCE

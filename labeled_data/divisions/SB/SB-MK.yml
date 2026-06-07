@@ -1,4 +1,4 @@
-name: Makira-Ulawa
+name: Makira
 type: Division-1
 meta:
   alpha2: SB-MK
@@ -8,3 +8,4 @@ meta:
     - mk
     - makira-ulawa province
   category: PROVINCE
+name_zh: 馬基拉-烏拉瓦省

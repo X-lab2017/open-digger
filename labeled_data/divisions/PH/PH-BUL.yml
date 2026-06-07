@@ -1,0 +1,11 @@
+name: Bulacan
+name_zh: 布拉干省
+type: Division-1
+meta:
+  alpha2: PH-BUL
+  includes:
+    - bulacan
+    - ph-bul
+    - bul
+    - bulacan province
+  category: PROVINCE

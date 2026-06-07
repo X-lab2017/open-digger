@@ -1,5 +1,5 @@
 name: Sinaloa
-name_zh: 锡那罗亚
+name_zh: 锡那罗亚州
 type: Division-1
 meta:
   alpha2: MX-SIN
@@ -8,4 +8,5 @@ meta:
     - mx-sin
     - sin
     - sinaloa state
+    - 锡那罗亚
   category: STATE

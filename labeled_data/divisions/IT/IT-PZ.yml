@@ -1,0 +1,11 @@
+name: Potenza
+name_zh: 波坦察省
+type: Division-1
+meta:
+  alpha2: IT-PZ
+  includes:
+    - potenza
+    - it-pz
+    - pz
+    - potenza province
+  category: PROVINCE

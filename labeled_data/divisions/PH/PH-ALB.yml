@@ -1,0 +1,11 @@
+name: Albay
+name_zh: 阿尔拜省
+type: Division-1
+meta:
+  alpha2: PH-ALB
+  includes:
+    - albay
+    - ph-alb
+    - alb
+    - albay province
+  category: PROVINCE

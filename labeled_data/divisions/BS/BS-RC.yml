@@ -1,5 +1,5 @@
 name: Rum Cay
-name_zh: 拉姆凯
+name_zh: 拉姆岛
 type: Division-1
 meta:
   alpha2: BS-RC
@@ -8,4 +8,5 @@ meta:
     - bs-rc
     - rc
     - rum cay district
+    - 拉姆凯
   category: DISTRICT

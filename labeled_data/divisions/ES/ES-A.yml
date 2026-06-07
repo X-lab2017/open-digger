@@ -1,0 +1,11 @@
+name: Alicante
+name_zh: 阿利坎特省
+type: Division-1
+meta:
+  alpha2: ES-A
+  includes:
+    - alacant
+    - es-a
+    - a
+    - alacant province
+  category: PROVINCE

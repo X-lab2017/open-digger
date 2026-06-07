@@ -1,5 +1,5 @@
 name: Ayacucho
-name_zh: 阿亚库乔
+name_zh: 阿亚库乔大区
 type: Division-1
 meta:
   alpha2: PE-AYA
@@ -12,4 +12,5 @@ meta:
     - ayakuchu region
     - ayaquchu
     - ayaquchu region
+    - 阿亚库乔
   category: REGION

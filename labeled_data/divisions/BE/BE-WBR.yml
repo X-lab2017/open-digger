@@ -1,0 +1,11 @@
+name: Walloon Brabant
+name_zh: 瓦隆-布拉班特省
+type: Division-1
+meta:
+  alpha2: BE-WBR
+  includes:
+    - brabant wallon
+    - be-wbr
+    - wbr
+    - brabant wallon province
+  category: PROVINCE

@@ -1,5 +1,5 @@
-name: Norra Österbotten
-name_zh: 奥斯特博滕
+name: Northern Ostrobothnia
+name_zh: 北博滕区
 type: Division-1
 meta:
   alpha2: FI-14
@@ -13,4 +13,5 @@ meta:
     - north ostrobothnia
     - northern ostrobothnia
     - fi1a2
+    - 奥斯特博滕
   category: REGION

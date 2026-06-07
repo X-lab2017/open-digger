@@ -1,5 +1,5 @@
 name: Sonora
-name_zh: 索诺拉
+name_zh: 索诺拉州
 type: Division-1
 meta:
   alpha2: MX-SON
@@ -8,4 +8,5 @@ meta:
     - mx-son
     - son
     - sonora state
+    - 索诺拉
   category: STATE

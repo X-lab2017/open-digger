@@ -1,0 +1,11 @@
+name: Kompienga
+name_zh: 孔皮恩加省
+type: Division-1
+meta:
+  alpha2: BF-KMP
+  includes:
+    - kompienga
+    - bf-kmp
+    - kmp
+    - kompienga province
+  category: PROVINCE

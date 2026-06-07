@@ -1,0 +1,15 @@
+name: Tetovo
+name_zh: 特托沃区
+type: Division-1
+meta:
+  alpha2: MK-76
+  includes:
+    - tetovo
+    - mk-609
+    - '609'
+    - tetovo municipality
+    - municipality of tetovo
+    - polog
+    - општина тетово
+    - 特托沃
+  category: MUNICIPALITY

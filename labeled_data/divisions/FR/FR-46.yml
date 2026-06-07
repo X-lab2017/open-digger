@@ -1,0 +1,11 @@
+name: Lot
+name_zh: 洛特省
+type: Division-1
+meta:
+  alpha2: FR-46
+  includes:
+    - lot
+    - fr-46
+    - '46'
+    - lot metropolitan department
+  category: PROVINCE

@@ -1,4 +1,4 @@
-name: Luče
+name: Luce
 type: Division-1
 meta:
   alpha2: SI-067
@@ -8,3 +8,4 @@ meta:
     - '067'
     - luče municipality
   category: MUNICIPALITY
+name_zh: 卢切

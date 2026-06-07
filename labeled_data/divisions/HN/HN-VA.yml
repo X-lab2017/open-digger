@@ -1,5 +1,5 @@
 name: Valle
-name_zh: 瓦莱省
+name_zh: 山谷省
 type: Division-1
 meta:
   alpha2: HN-VA
@@ -8,4 +8,5 @@ meta:
     - hn-va
     - va
     - valle department
+    - 瓦莱省
   category: DEPARTMENT

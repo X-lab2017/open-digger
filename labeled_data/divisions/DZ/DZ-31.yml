@@ -1,5 +1,5 @@
 name: Oran
-name_zh: 瓦尔省
+name_zh: 奥兰省
 type: Division-1
 meta:
   alpha2: DZ-31
@@ -9,4 +9,5 @@ meta:
     - '31'
     - oran province
     - ولاية وهران
+    - 瓦尔省
   category: PROVINCE

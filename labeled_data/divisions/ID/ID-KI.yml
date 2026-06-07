@@ -1,0 +1,11 @@
+name: Kalimantan Timur
+name_zh: 东加里曼丹省
+type: Division-1
+meta:
+  alpha2: ID-KI
+  includes:
+    - kalimantan timur
+    - id-ki
+    - ki
+    - kalimantan timur province
+  category: PROVINCE

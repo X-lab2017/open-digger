@@ -1,0 +1,11 @@
+name: Chimaltenango
+name_zh: 奇马尔特南戈省
+type: Division-1
+meta:
+  alpha2: GT-CM
+  includes:
+    - chimaltenango
+    - gt-04
+    - '04'
+    - chimaltenango department
+  category: DEPARTMENT

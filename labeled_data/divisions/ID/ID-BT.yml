@@ -1,0 +1,11 @@
+name: Banten
+name_zh: 万丹省
+type: Division-1
+meta:
+  alpha2: ID-BT
+  includes:
+    - banten
+    - id-bt
+    - bt
+    - banten province
+  category: PROVINCE

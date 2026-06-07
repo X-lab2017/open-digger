@@ -1,0 +1,11 @@
+name: San Cristóbal
+name_zh: 圣克里斯多堡省
+type: Division-1
+meta:
+  alpha2: DO-21
+  includes:
+    - san cristóbal
+    - do-21
+    - '21'
+    - san cristóbal province
+  category: PROVINCE

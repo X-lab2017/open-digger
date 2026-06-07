@@ -1,0 +1,11 @@
+name: Puttalama
+name_zh: 普塔勒姆区
+type: Division-1
+meta:
+  alpha2: LK-62
+  includes:
+    - puttalam
+    - lk-62
+    - '62'
+    - puttalam district
+  category: PROVINCE

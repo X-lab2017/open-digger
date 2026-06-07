@@ -1,5 +1,5 @@
 name: Imereti
-name_zh: 伊梅列蒂区
+name_zh: 伊梅列季亚州
 type: Division-1
 meta:
   alpha2: GE-IM
@@ -8,4 +8,5 @@ meta:
     - ge-im
     - im
     - imereti region
+    - 伊梅列蒂区
   category: REGION

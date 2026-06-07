@@ -1,5 +1,5 @@
 name: Amazonas
-name_zh: 亚马逊
+name_zh: 亚马逊州
 type: Division-1
 meta:
   alpha2: VE-Z
@@ -8,4 +8,5 @@ meta:
     - ve-z
     - z
     - amazonas state
+    - 亚马逊
   category: STATE

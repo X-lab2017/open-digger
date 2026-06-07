@@ -1,0 +1,11 @@
+name: Ariège
+name_zh: 阿列日省
+type: Division-1
+meta:
+  alpha2: FR-09
+  includes:
+    - ariège
+    - fr-09
+    - '09'
+    - ariège metropolitan department
+  category: PROVINCE

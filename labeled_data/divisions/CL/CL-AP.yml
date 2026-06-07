@@ -1,5 +1,5 @@
 name: Arica y Parinacota
-name_zh: 阿里卡和帕里纳科塔
+name_zh: 阿里卡和帕里纳科塔大区
 type: Division-1
 meta:
   alpha2: CL-AP
@@ -9,4 +9,5 @@ meta:
     - ap
     - arica y parinacota region
     - xv
+    - 阿里卡和帕里纳科塔
   category: REGION

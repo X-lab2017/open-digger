@@ -1,5 +1,5 @@
 name: Tlaxcala
-name_zh: 特拉斯卡拉
+name_zh: 特拉斯卡拉州
 type: Division-1
 meta:
   alpha2: MX-TLA
@@ -9,4 +9,5 @@ meta:
     - tla
     - tlaxcala state
     - tlax
+    - 特拉斯卡拉
   category: STATE

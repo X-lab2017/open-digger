@@ -1,5 +1,5 @@
 name: Formosa
-name_zh: 福莫萨省
+name_zh: 福尔摩沙省
 type: Division-1
 meta:
   alpha2: AR-P
@@ -9,4 +9,5 @@ meta:
     - p
     - formosa province
     - fsa
+    - 福莫萨省
   category: PROVINCE

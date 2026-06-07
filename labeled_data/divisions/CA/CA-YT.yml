@@ -1,5 +1,5 @@
 name: Yukon
-name_zh: 育空地区
+name_zh: 育空
 type: Division-1
 meta:
   alpha2: CA-YT
@@ -8,4 +8,5 @@ meta:
     - ca-yt
     - yt
     - yukon territory
+    - 育空地区
   category: TERRITORY

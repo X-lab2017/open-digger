@@ -1,0 +1,11 @@
+name: Ille-et-Vilaine
+name_zh: 伊勒-维莱讷省
+type: Division-1
+meta:
+  alpha2: FR-35
+  includes:
+    - ille-et-vilaine
+    - fr-35
+    - '35'
+    - ille-et-vilaine metropolitan department
+  category: PROVINCE

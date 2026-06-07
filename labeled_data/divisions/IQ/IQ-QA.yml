@@ -1,5 +1,5 @@
-name: Al Qādisīyah
-name_zh: 济加尔省
+name: Al-Qādisiyyah
+name_zh: 卡迪西亚省
 type: Division-1
 meta:
   alpha2: IQ-QA
@@ -9,4 +9,5 @@ meta:
     - qa
     - al qādisīyah governorate
     - al-qādisiyyah governorate
+    - 济加尔省
   category: GOVERNORATE

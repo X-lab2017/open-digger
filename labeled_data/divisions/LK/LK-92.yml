@@ -1,0 +1,11 @@
+name: Kægalla
+name_zh: 凯格勒区
+type: Division-1
+meta:
+  alpha2: LK-92
+  includes:
+    - kegalla
+    - lk-92
+    - '92'
+    - kegalla district
+  category: PROVINCE

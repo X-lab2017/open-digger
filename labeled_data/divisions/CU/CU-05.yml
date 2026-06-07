@@ -1,5 +1,5 @@
 name: Villa Clara
-name_zh: 维拉克拉拉
+name_zh: 比亚克拉拉省
 type: Division-1
 meta:
   alpha2: CU-05
@@ -8,4 +8,5 @@ meta:
     - cu-05
     - '05'
     - villa clara province
+    - 维拉克拉拉
   category: PROVINCE

@@ -1,0 +1,11 @@
+name: Turin
+name_zh: 都灵省
+type: Division-1
+meta:
+  alpha2: IT-TO
+  includes:
+    - torino
+    - it-to
+    - to
+    - torino metropolitan city
+  category: PROVINCE

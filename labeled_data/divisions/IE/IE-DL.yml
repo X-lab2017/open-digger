@@ -1,0 +1,11 @@
+name: Donegal
+name_zh: 多尼戈尔郡
+type: Division-1
+meta:
+  alpha2: IE-DL
+  includes:
+    - donegal
+    - ie-dl
+    - dl
+    - donegal county
+  category: PROVINCE

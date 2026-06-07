@@ -1,0 +1,11 @@
+name: Batangas
+name_zh: 八打雁省
+type: Division-1
+meta:
+  alpha2: PH-BTG
+  includes:
+    - batangas
+    - ph-btg
+    - btg
+    - batangas province
+  category: PROVINCE

@@ -1,5 +1,5 @@
 name: Bến Tre
-name_zh: 槟椥
+name_zh: 槟椥省
 type: Division-1
 meta:
   alpha2: VN-50
@@ -9,4 +9,5 @@ meta:
     - '50'
     - bến tre province
     - ben tre
+    - 槟椥
   category: PROVINCE

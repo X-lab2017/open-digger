@@ -1,5 +1,5 @@
 name: Quintana Roo
-name_zh: 金塔纳罗奥
+name_zh: 金塔纳罗奥州
 type: Division-1
 meta:
   alpha2: MX-ROO
@@ -9,4 +9,5 @@ meta:
     - roo
     - quintana roo state
     - qr
+    - 金塔纳罗奥
   category: STATE

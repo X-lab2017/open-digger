@@ -1,5 +1,5 @@
 name: Samtskhe-Javakheti
-name_zh: 萨姆茨赫-贾瓦赫提区
+name_zh: 萨姆茨赫-扎瓦赫季州
 type: Division-1
 meta:
   alpha2: GE-SJ
@@ -8,4 +8,5 @@ meta:
     - ge-sj
     - sj
     - samtskhe-javakheti region
+    - 萨姆茨赫-贾瓦赫提区
   category: REGION

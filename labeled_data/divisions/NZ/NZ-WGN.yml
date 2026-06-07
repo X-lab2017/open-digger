@@ -1,5 +1,5 @@
-name: Greater Wellington
-name_zh: 惠灵顿
+name: Wellington
+name_zh: 惠灵顿大区
 type: Division-1
 meta:
   alpha2: NZ-WGN
@@ -11,4 +11,5 @@ meta:
     - te pane matua taiao
     - te pane matua taiao region
     - wellington
+    - 惠灵顿
   category: REGION

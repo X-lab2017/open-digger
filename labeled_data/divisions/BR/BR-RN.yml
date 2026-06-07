@@ -1,5 +1,5 @@
 name: Rio Grande do Norte
-name_zh: 北里奥格兰德
+name_zh: 北里约格朗德
 type: Division-1
 meta:
   alpha2: BR-RN
@@ -9,4 +9,5 @@ meta:
     - rn
     - rio grande do norte state
     - state of rio grande do norte
+    - 北里奥格兰德
   category: STATE

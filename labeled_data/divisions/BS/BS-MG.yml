@@ -1,5 +1,5 @@
 name: Mayaguana
-name_zh: 马亚瓜纳
+name_zh: 马亚瓜纳岛
 type: Division-1
 meta:
   alpha2: BS-MG
@@ -8,4 +8,5 @@ meta:
     - bs-mg
     - mg
     - mayaguana district
+    - 马亚瓜纳
   category: DISTRICT

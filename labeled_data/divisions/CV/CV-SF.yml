@@ -1,0 +1,11 @@
+name: São Filipe
+name_zh: 圣菲利佩县
+type: Division-1
+meta:
+  alpha2: CV-SF
+  includes:
+    - são filipe
+    - cv-sf
+    - sf
+    - são filipe municipality
+  category: PROVINCE

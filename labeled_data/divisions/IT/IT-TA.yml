@@ -1,0 +1,11 @@
+name: Taranto
+name_zh: 塔兰托省
+type: Division-1
+meta:
+  alpha2: IT-TA
+  includes:
+    - taranto
+    - it-ta
+    - ta
+    - taranto province
+  category: PROVINCE

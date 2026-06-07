@@ -1,0 +1,11 @@
+name: Segovia
+name_zh: 塞哥維亞省
+type: Division-1
+meta:
+  alpha2: ES-SG
+  includes:
+    - segovia
+    - es-sg
+    - sg
+    - segovia province
+  category: PROVINCE

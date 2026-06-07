@@ -1,5 +1,5 @@
 name: Chimborazo
-name_zh: 钦博拉索
+name_zh: 钦博拉索省
 type: Division-1
 meta:
   alpha2: EC-H
@@ -8,4 +8,5 @@ meta:
     - ec-h
     - h
     - chimborazo province
+    - 钦博拉索
   category: PROVINCE

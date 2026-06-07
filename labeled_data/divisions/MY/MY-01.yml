@@ -1,5 +1,5 @@
 name: Johor
-name_zh: 柔佛
+name_zh: 柔佛州
 type: Division-1
 meta:
   alpha2: MY-01
@@ -10,4 +10,5 @@ meta:
     - johor state
     - johore
     - johor darul ta'zim
+    - 柔佛
   category: STATE

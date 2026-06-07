@@ -1,0 +1,11 @@
+name: Sud sardegna
+name_zh: ''
+type: Division-1
+meta:
+  alpha2: IT-SU
+  includes:
+    - sud sardegna
+    - it-su
+    - su
+    - sud sardegna province
+  category: PROVINCE

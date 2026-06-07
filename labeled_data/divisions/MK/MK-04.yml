@@ -1,0 +1,14 @@
+name: Bitola
+name_zh: 比托拉区
+type: Division-1
+meta:
+  alpha2: MK-04
+  includes:
+    - bitola
+    - mk-501
+    - '501'
+    - bitola municipality
+    - municipality of bitola
+    - pelagonia
+    - 比托拉
+  category: MUNICIPALITY

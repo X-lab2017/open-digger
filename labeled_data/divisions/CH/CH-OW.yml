@@ -1,5 +1,5 @@
 name: Obwalden
-name_zh: 上瓦尔登
+name_zh: 上瓦尔登州
 type: Division-1
 meta:
   alpha2: CH-OW
@@ -8,4 +8,5 @@ meta:
     - ch-ow
     - ow
     - obwalden canton
+    - 上瓦尔登
   category: CANTON

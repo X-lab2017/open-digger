@@ -1,5 +1,5 @@
 name: Berat
-name_zh: 贝拉特县
+name_zh: 培拉特州
 type: Division-1
 meta:
   alpha2: AL-01
@@ -8,4 +8,5 @@ meta:
     - al-01
     - '01'
     - berat county
+    - 贝拉特县
   category: COUNTY

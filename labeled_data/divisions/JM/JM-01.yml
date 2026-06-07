@@ -1,5 +1,5 @@
 name: Kingston
-name_zh: 金斯敦
+name_zh: 金斯敦区
 type: Division-1
 meta:
   alpha2: JM-01
@@ -8,4 +8,5 @@ meta:
     - jm-01
     - '01'
     - kingston parish
+    - 金斯敦
   category: PARISH

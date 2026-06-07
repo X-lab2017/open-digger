@@ -1,5 +1,5 @@
 name: Bordj Bou Arréridj
-name_zh: 布尔吉布阿雷里季省
+name_zh: 布阿拉里季堡省
 type: Division-1
 meta:
   alpha2: DZ-34
@@ -9,4 +9,5 @@ meta:
     - '34'
     - bordj bou arréridj province
     - bordj bou arreridj
+    - 布尔吉布阿雷里季省
   category: PROVINCE

@@ -1,5 +1,5 @@
 name: Monagas
-name_zh: 莫纳加斯
+name_zh: 莫纳加斯州
 type: Division-1
 meta:
   alpha2: VE-N
@@ -9,4 +9,5 @@ meta:
     - 'n'
     - monagas state
     - mo
+    - 莫纳加斯
   category: STATE

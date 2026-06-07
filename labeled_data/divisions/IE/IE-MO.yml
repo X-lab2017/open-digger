@@ -1,0 +1,11 @@
+name: Mayo
+name_zh: 梅奥郡
+type: Division-1
+meta:
+  alpha2: IE-MO
+  includes:
+    - maigh eo
+    - ie-mo
+    - mo
+    - maigh eo county
+  category: PROVINCE

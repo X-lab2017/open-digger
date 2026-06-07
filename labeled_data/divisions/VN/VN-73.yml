@@ -1,5 +1,5 @@
-name: Hậu Giang
-name_zh: 后江
+name: Hau Giang
+name_zh: 后江省
 type: Division-1
 meta:
   alpha2: VN-73
@@ -9,4 +9,5 @@ meta:
     - '73'
     - hậu giang province
     - hau giang
+    - 后江
   category: PROVINCE

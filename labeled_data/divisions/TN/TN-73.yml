@@ -1,5 +1,5 @@
-name: Kébili
-name_zh: 克比尔区
+name: Kebili
+name_zh: 吉比利省
 type: Division-1
 meta:
   alpha2: TN-73
@@ -9,4 +9,5 @@ meta:
     - '73'
     - kébili governorate
     - kebili governorate
+    - 克比尔区
   category: GOVERNORATE

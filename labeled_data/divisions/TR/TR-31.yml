@@ -1,5 +1,5 @@
 name: Hatay
-name_zh: 哈塔伊
+name_zh: 哈塔伊省
 type: Division-1
 meta:
   alpha2: TR-31
@@ -8,4 +8,5 @@ meta:
     - tr-31
     - '31'
     - hatay province
+    - 哈塔伊
   category: PROVINCE

@@ -1,5 +1,5 @@
-name: Zakarpatska oblast
-name_zh: 外喀尔巴阡
+name: Transcarpathia
+name_zh: 外喀尔巴阡州
 type: Division-1
 meta:
   alpha2: UA-21
@@ -11,4 +11,5 @@ meta:
     - zakarpattia oblast
     - zakarpats'ka oblast
     - zakarpattya
+    - 外喀尔巴阡
   category: REGION

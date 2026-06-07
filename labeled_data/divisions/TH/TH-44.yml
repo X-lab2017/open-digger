@@ -1,5 +1,5 @@
 name: Maha Sarakham
-name_zh: 玛哈沙拉坎府
+name_zh: 马哈沙拉堪府
 type: Division-1
 meta:
   alpha2: TH-44
@@ -9,4 +9,5 @@ meta:
     - '44'
     - maha sarakham province
     - chang wat maha sarakham
+    - 玛哈沙拉坎府
   category: PROVINCE

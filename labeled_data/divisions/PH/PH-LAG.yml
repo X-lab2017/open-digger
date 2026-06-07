@@ -1,0 +1,11 @@
+name: Laguna
+name_zh: 内湖省
+type: Division-1
+meta:
+  alpha2: PH-LAG
+  includes:
+    - laguna
+    - ph-lag
+    - lag
+    - laguna province
+  category: PROVINCE

@@ -1,5 +1,5 @@
 name: Surat Thani
-name_zh: 素叻他尼府
+name_zh: 素叻府
 type: Division-1
 meta:
   alpha2: TH-84
@@ -8,4 +8,5 @@ meta:
     - th-84
     - '84'
     - surat thani province
+    - 素叻他尼府
   category: PROVINCE

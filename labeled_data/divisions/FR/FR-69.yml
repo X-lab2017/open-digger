@@ -1,0 +1,11 @@
+name: Rhône
+name_zh: 罗讷省
+type: Division-1
+meta:
+  alpha2: FR-69
+  includes:
+    - rhône
+    - fr-69
+    - '69'
+    - rhône metropolitan department
+  category: PROVINCE

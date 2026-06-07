@@ -1,0 +1,11 @@
+name: Kilinŏchchi
+name_zh: 基利诺奇区
+type: Division-1
+meta:
+  alpha2: LK-42
+  includes:
+    - kilinochchi
+    - lk-42
+    - '42'
+    - kilinochchi district
+  category: PROVINCE

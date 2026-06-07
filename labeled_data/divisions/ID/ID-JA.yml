@@ -1,0 +1,11 @@
+name: Jambi
+name_zh: 占碑省
+type: Division-1
+meta:
+  alpha2: ID-JA
+  includes:
+    - jambi
+    - id-ja
+    - ja
+    - jambi province
+  category: PROVINCE

@@ -1,5 +1,5 @@
 name: Centre
-name_zh: 中部大区
+name_zh: 中部区
 type: Division-1
 meta:
   alpha2: CM-CE
@@ -9,4 +9,5 @@ meta:
     - ce
     - centre region
     - région du centre
+    - 中部大区
   category: REGION

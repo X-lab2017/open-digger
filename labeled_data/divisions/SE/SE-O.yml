@@ -1,5 +1,5 @@
-name: Västra Götalands län
-name_zh: 西约特兰县
+name: Västra Götaland
+name_zh: 西约塔兰省
 type: Division-1
 meta:
   alpha2: SE-O
@@ -9,4 +9,5 @@ meta:
     - o
     - västra götalands län county
     - västra götaland county
+    - 西约特兰县
   category: COUNTY

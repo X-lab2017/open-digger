@@ -1,5 +1,5 @@
-name: Värmlands län
-name_zh: 瓦尔姆兰县
+name: Värmland
+name_zh: 韦姆兰省
 type: Division-1
 meta:
   alpha2: SE-S
@@ -9,4 +9,5 @@ meta:
     - s
     - värmlands län county
     - varmland county
+    - 瓦尔姆兰县
   category: COUNTY

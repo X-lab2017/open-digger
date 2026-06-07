@@ -1,0 +1,11 @@
+name: Bologna
+name_zh: 博洛尼亚省
+type: Division-1
+meta:
+  alpha2: IT-BO
+  includes:
+    - bologna
+    - it-bo
+    - bo
+    - bologna metropolitan city
+  category: PROVINCE

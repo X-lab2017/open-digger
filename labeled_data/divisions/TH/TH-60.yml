@@ -1,5 +1,5 @@
 name: Nakhon Sawan
-name_zh: 纳空沙旺府
+name_zh: 那空沙旺府
 type: Division-1
 meta:
   alpha2: TH-60
@@ -8,4 +8,5 @@ meta:
     - th-60
     - '60'
     - nakhon sawan province
+    - 纳空沙旺府
   category: PROVINCE

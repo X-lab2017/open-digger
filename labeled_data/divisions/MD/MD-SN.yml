@@ -1,5 +1,5 @@
-name: Stînga Nistrului
-name_zh: 德涅斯特河沿岸自治领土单位
+name: Stîngă Nistrului
+name_zh: 德涅斯特左岸
 type: Division-1
 meta:
   alpha2: MD-SN
@@ -10,4 +10,5 @@ meta:
     - stînga nistrului territorial unit
     - administrative-territorial units of the left bank of the dniester
     - transnistria autonomous territorial unit
+    - 德涅斯特河沿岸自治领土单位
   category: TERRITORIAL UNIT

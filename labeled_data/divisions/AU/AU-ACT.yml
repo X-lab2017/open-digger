@@ -1,5 +1,5 @@
 name: Australian Capital Territory
-name_zh: 澳大利亚首都领地
+name_zh: 澳大利亚首都特区
 type: Division-1
 meta:
   alpha2: AU-ACT
@@ -8,4 +8,5 @@ meta:
     - au-act
     - act
     - australian capital territory territory
+    - 澳大利亚首都领地
   category: TERRITORY

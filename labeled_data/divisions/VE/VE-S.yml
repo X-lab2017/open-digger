@@ -1,5 +1,5 @@
 name: Táchira
-name_zh: 塔奇拉
+name_zh: 塔奇拉州
 type: Division-1
 meta:
   alpha2: VE-S
@@ -9,4 +9,5 @@ meta:
     - s
     - táchira state
     - tachira state
+    - 塔奇拉
   category: STATE

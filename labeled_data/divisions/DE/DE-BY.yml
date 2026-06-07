@@ -1,5 +1,5 @@
 name: Bayern
-name_zh: 巴伐利亚州
+name_zh: 巴伐利亚
 type: Division-1
 meta:
   alpha2: DE-BY
@@ -9,4 +9,5 @@ meta:
     - by
     - bayern land
     - bavaria
+    - 巴伐利亚州
   category: LAND

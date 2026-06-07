@@ -1,0 +1,11 @@
+name: Sligo
+name_zh: 斯莱戈郡
+type: Division-1
+meta:
+  alpha2: IE-SO
+  includes:
+    - sligeach
+    - ie-so
+    - so
+    - sligeach county
+  category: PROVINCE

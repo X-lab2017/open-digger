@@ -1,5 +1,5 @@
 name: Ranong
-name_zh: 拉农府
+name_zh: 拉廊府
 type: Division-1
 meta:
   alpha2: TH-85
@@ -8,4 +8,5 @@ meta:
     - th-85
     - '85'
     - ranong province
+    - 拉农府
   category: PROVINCE

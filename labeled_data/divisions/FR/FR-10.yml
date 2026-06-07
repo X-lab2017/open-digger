@@ -1,0 +1,11 @@
+name: Aube
+name_zh: 奥布省
+type: Division-1
+meta:
+  alpha2: FR-10
+  includes:
+    - aube
+    - fr-10
+    - '10'
+    - aube metropolitan department
+  category: PROVINCE

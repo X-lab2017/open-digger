@@ -1,5 +1,5 @@
 name: Pastaza
-name_zh: 帕斯塔萨
+name_zh: 帕斯塔萨省
 type: Division-1
 meta:
   alpha2: EC-Y
@@ -8,4 +8,5 @@ meta:
     - ec-y
     - 'y'
     - pastaza province
+    - 帕斯塔萨
   category: PROVINCE

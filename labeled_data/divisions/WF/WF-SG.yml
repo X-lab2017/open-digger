@@ -1,5 +1,5 @@
 name: Sigave
-name_zh: 锡盖
+name_zh: 锡加韦
 type: Division-1
 meta:
   alpha2: WF-SG
@@ -8,4 +8,5 @@ meta:
     - wf-sg
     - sg
     - sigave administrative precinct
+    - 锡盖
   category: ADMINISTRATIVE PRECINCT

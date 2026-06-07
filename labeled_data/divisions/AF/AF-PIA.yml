@@ -1,5 +1,5 @@
-name: Paktiyā
-name_zh: 帕提亚省
+name: Paktika
+name_zh: 帕克蒂卡省
 type: Division-1
 meta:
   alpha2: AF-PIA
@@ -8,4 +8,5 @@ meta:
     - af-pia
     - pia
     - paktiyā province
+    - 帕提亚省
   category: PROVINCE

@@ -1,5 +1,5 @@
-name: Khyber Pakhtunkhwa
-name_zh: 开伯尔-普赫图赫瓦省
+name: K.P.
+name_zh: 开伯尔-普什图省
 type: Division-1
 meta:
   alpha2: PK-KP
@@ -10,4 +10,5 @@ meta:
     - khaībar pakhtūnkhwā province
     - khyber pakhtunkhwa
     - khyber pakhtunkhwa province
+    - 开伯尔-普赫图赫瓦省
   category: PROVINCE

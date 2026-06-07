@@ -1,5 +1,5 @@
-name: Ad Daqahlīyah
-name_zh: 达卡利亚省
+name: Ad Daqahliyah
+name_zh: 代盖赫利耶省
 type: Division-1
 meta:
   alpha2: EG-DK
@@ -11,4 +11,5 @@ meta:
     - dakahlia governorate
     - el daqahlia
     - ad daqahliyah
+    - 达卡利亚省
   category: GOVERNORATE

@@ -1,5 +1,5 @@
 name: Pernik
-name_zh: 佩尔尼克
+name_zh: 佩尔尼克州
 type: Division-1
 meta:
   alpha2: BG-14
@@ -9,4 +9,5 @@ meta:
     - '14'
     - pernik district
     - pernik province
+    - 佩尔尼克
   category: DISTRICT

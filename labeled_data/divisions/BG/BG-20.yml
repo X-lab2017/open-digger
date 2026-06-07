@@ -1,5 +1,5 @@
 name: Sliven
-name_zh: 斯利文省
+name_zh: 斯利文州
 type: Division-1
 meta:
   alpha2: BG-20
@@ -9,4 +9,5 @@ meta:
     - '20'
     - sliven district
     - sliven province
+    - 斯利文省
   category: DISTRICT

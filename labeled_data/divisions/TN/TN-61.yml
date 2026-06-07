@@ -1,5 +1,5 @@
 name: Sfax
-name_zh: 斯法克斯市
+name_zh: 斯法克斯省
 type: Division-1
 meta:
   alpha2: TN-61
@@ -8,4 +8,5 @@ meta:
     - tn-61
     - '61'
     - sfax governorate
+    - 斯法克斯市
   category: GOVERNORATE

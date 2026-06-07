@@ -1,5 +1,5 @@
 name: Hawke's Bay
-name_zh: 霍克斯湾
+name_zh: 霍克湾大区
 type: Division-1
 meta:
   alpha2: NZ-HKB
@@ -10,4 +10,5 @@ meta:
     - hawke's bay region
     - te matau-a-māui
     - te matau-a-māui region
+    - 霍克斯湾
   category: REGION

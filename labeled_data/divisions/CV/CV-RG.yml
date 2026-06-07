@@ -1,0 +1,11 @@
+name: Ribeira Grande
+name_zh: 大里贝拉县
+type: Division-1
+meta:
+  alpha2: CV-RG
+  includes:
+    - ribeira grande
+    - cv-rg
+    - rg
+    - ribeira grande municipality
+  category: PROVINCE

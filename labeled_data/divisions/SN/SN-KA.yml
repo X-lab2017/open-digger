@@ -1,5 +1,5 @@
 name: Kaffrine
-name_zh: 达喀尔区
+name_zh: 卡夫林区
 type: Division-1
 meta:
   alpha2: SN-KA
@@ -8,4 +8,5 @@ meta:
     - sn-ka
     - ka
     - kaffrine region
+    - 达喀尔区
   category: REGION

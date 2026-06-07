@@ -1,5 +1,5 @@
-name: Gribingui
-name_zh: 加涅姆-博桑戈经济特区
+name: Nana-Grébizi
+name_zh: 纳纳-格里比齐省
 type: Division-1
 meta:
   alpha2: CF-KB
@@ -10,4 +10,5 @@ meta:
     - gribingui economic prefecture
     - gïrïbïngï
     - gïrïbïngï economic prefecture
+    - 加涅姆-博桑戈经济特区
   category: ECONOMIC PREFECTURE

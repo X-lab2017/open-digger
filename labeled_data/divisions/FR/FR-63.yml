@@ -1,0 +1,11 @@
+name: Puy-de-Dôme
+name_zh: 多姆山省
+type: Division-1
+meta:
+  alpha2: FR-63
+  includes:
+    - puy-de-dôme
+    - fr-63
+    - '63'
+    - puy-de-dôme metropolitan department
+  category: PROVINCE

@@ -1,0 +1,9 @@
+name: Franche-comté
+name_zh: ''
+type: Division-1
+meta:
+  alpha2: FR-B9
+  includes:
+    - franche-comté
+    - fr-b9
+  category: PROVINCE

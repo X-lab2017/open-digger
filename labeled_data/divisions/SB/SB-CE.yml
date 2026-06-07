@@ -1,5 +1,5 @@
 name: Central
-name_zh: 瓜达尔卡纳尔省
+name_zh: 中部群岛省
 type: Division-1
 meta:
   alpha2: SB-CE
@@ -8,4 +8,5 @@ meta:
     - sb-ce
     - ce
     - central province
+    - 瓜达尔卡纳尔省
   category: PROVINCE

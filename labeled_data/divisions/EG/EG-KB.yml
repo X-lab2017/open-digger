@@ -1,5 +1,5 @@
-name: Al Qalyūbīyah
-name_zh: 卡利乌比省
+name: Al Qalyubiyah
+name_zh: 盖卢比尤省
 type: Division-1
 meta:
   alpha2: EG-KB
@@ -11,4 +11,5 @@ meta:
     - al qalyubia governorate
     - al qalyubiyah
     - al-qalyubia governorate
+    - 卡利乌比省
   category: GOVERNORATE

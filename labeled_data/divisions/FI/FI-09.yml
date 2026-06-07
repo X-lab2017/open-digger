@@ -1,5 +1,5 @@
-name: Kymmenedalen
-name_zh: 基米能拉克索
+name: Kymenlaakso
+name_zh: 屈米河谷区
 type: Division-1
 meta:
   alpha2: FI-09
@@ -10,4 +10,5 @@ meta:
     - kymenlaakso region
     - kymmenedalen
     - kymmenedalen region
+    - 基米能拉克索
   category: REGION

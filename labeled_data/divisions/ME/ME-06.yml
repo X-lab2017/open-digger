@@ -1,5 +1,5 @@
 name: Cetinje
-name_zh: 采蒂涅市
+name_zh: 采蒂涅區
 type: Division-1
 meta:
   alpha2: ME-06
@@ -8,4 +8,5 @@ meta:
     - me-06
     - '06'
     - cetinje municipality
+    - 采蒂涅市
   category: MUNICIPALITY

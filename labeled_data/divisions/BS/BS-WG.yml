@@ -1,5 +1,5 @@
 name: West Grand Bahama
-name_zh: 西大巴哈马
+name_zh: 西大巴哈馬島區
 type: Division-1
 meta:
   alpha2: BS-WG
@@ -8,4 +8,5 @@ meta:
     - bs-wg
     - wg
     - west grand bahama district
+    - 西大巴哈马
   category: DISTRICT

@@ -1,5 +1,5 @@
 name: Portuguesa
-name_zh: 波尔图格萨
+name_zh: 波图格萨州
 type: Division-1
 meta:
   alpha2: VE-P
@@ -9,4 +9,5 @@ meta:
     - p
     - portuguesa state
     - po
+    - 波尔图格萨
   category: STATE

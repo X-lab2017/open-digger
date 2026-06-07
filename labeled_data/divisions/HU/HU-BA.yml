@@ -1,5 +1,5 @@
 name: Baranya
-name_zh: 巴拉尼亚
+name_zh: 巴兰尼亚州
 type: Division-1
 meta:
   alpha2: HU-BA
@@ -8,4 +8,5 @@ meta:
     - hu-ba
     - ba
     - baranya county
+    - 巴拉尼亚
   category: COUNTY

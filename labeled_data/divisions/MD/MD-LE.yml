@@ -1,5 +1,5 @@
 name: Leova
-name_zh: 列奥瓦区
+name_zh: 莱奥瓦区
 type: Division-1
 meta:
   alpha2: MD-LE
@@ -8,4 +8,5 @@ meta:
     - md-le
     - le
     - leova district
+    - 列奥瓦区
   category: DISTRICT

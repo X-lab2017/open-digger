@@ -1,0 +1,11 @@
+name: Dihok
+name_zh: 杜胡克省
+type: Division-1
+meta:
+  alpha2: IQ-DA
+  includes:
+    - dahūk
+    - iq-da
+    - da
+    - dahūk governorate
+  category: PROVINCE

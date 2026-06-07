@@ -1,5 +1,5 @@
 name: Trbovlje
-name_zh: 特尔博夫列
+name_zh: 特尔伯夫列
 type: Division-1
 meta:
   alpha2: SI-129
@@ -8,4 +8,5 @@ meta:
     - si-129
     - '129'
     - trbovlje municipality
+    - 特尔博夫列
   category: MUNICIPALITY

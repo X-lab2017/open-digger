@@ -1,5 +1,5 @@
-name: Pirotski okrug
-name_zh: 皮罗特尼克
+name: Pirotski
+name_zh: 皮罗特州
 type: Division-1
 meta:
   alpha2: RS-22
@@ -8,4 +8,5 @@ meta:
     - rs-22
     - '22'
     - pirotski okrug district
+    - 皮罗特尼克
   category: DISTRICT

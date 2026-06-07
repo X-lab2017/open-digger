@@ -1,5 +1,5 @@
-name: Māndūl
-name_zh: 曼杜勒
+name: Mandoul
+name_zh: 芒杜尔区
 type: Division-1
 meta:
   alpha2: TD-MA
@@ -10,4 +10,5 @@ meta:
     - mandoul province
     - māndūl
     - māndūl province
+    - 曼杜勒
   category: PROVINCE

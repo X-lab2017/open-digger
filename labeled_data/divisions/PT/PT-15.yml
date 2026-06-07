@@ -1,5 +1,5 @@
 name: Setúbal
-name_zh: 塞图巴尔
+name_zh: 塞图巴尔区
 type: Division-1
 meta:
   alpha2: PT-15
@@ -9,4 +9,5 @@ meta:
     - '15'
     - setúbal district
     - setubal
+    - 塞图巴尔
   category: DISTRICT

@@ -1,5 +1,5 @@
-name: Toplički okrug
-name_zh: 托普利察尼克
+name: Toplicki
+name_zh: 托普利卡州
 type: Division-1
 meta:
   alpha2: RS-21
@@ -8,4 +8,5 @@ meta:
     - rs-21
     - '21'
     - toplički okrug district
+    - 托普利察尼克
   category: DISTRICT

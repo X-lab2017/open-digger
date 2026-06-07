@@ -1,0 +1,11 @@
+name: Macerata
+name_zh: 马切拉塔省
+type: Division-1
+meta:
+  alpha2: IT-MC
+  includes:
+    - macerata
+    - it-mc
+    - mc
+    - macerata province
+  category: PROVINCE

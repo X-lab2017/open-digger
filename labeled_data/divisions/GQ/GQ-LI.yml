@@ -1,0 +1,11 @@
+name: Litoral
+name_zh: 海岸省
+type: Division-1
+meta:
+  alpha2: GQ-LI
+  includes:
+    - litoral
+    - gq-li
+    - li
+    - litoral province
+  category: PROVINCE

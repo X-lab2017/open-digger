@@ -1,5 +1,5 @@
 name: Udon Thani
-name_zh: 乌隆他尼府
+name_zh: 乌隆府
 type: Division-1
 meta:
   alpha2: TH-41
@@ -9,4 +9,5 @@ meta:
     - '41'
     - udon thani province
     - chang wat udon thani
+    - 乌隆他尼府
   category: PROVINCE

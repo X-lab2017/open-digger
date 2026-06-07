@@ -1,5 +1,5 @@
 name: Saarland
-name_zh: 萨尔州
+name_zh: 萨尔
 type: Division-1
 meta:
   alpha2: DE-SL
@@ -8,4 +8,5 @@ meta:
     - de-sl
     - sl
     - saarland land
+    - 萨尔州
   category: LAND

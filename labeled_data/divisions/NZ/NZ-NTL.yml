@@ -1,5 +1,5 @@
 name: Northland
-name_zh: 北地
+name_zh: 北地大区
 type: Division-1
 meta:
   alpha2: NZ-NTL
@@ -11,4 +11,5 @@ meta:
     - te taitokerau
     - te taitokerau region
     - north island
+    - 北地
   category: REGION

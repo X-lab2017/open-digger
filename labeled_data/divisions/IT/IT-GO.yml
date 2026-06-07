@@ -1,0 +1,11 @@
+name: Gorizia
+name_zh: 戈里齊亞省
+type: Division-1
+meta:
+  alpha2: IT-GO
+  includes:
+    - gorizia
+    - it-go
+    - go
+    - gorizia decentralized regional entity
+  category: PROVINCE

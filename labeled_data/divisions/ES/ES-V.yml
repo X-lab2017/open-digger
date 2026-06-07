@@ -1,0 +1,11 @@
+name: Valencia
+name_zh: 巴伦西亚省
+type: Division-1
+meta:
+  alpha2: ES-V
+  includes:
+    - valencia
+    - es-v
+    - v
+    - valencia province
+  category: PROVINCE

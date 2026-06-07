@@ -1,0 +1,11 @@
+name: Pistoia
+name_zh: 皮斯托亚省
+type: Division-1
+meta:
+  alpha2: IT-PT
+  includes:
+    - pistoia
+    - it-pt
+    - pt
+    - pistoia province
+  category: PROVINCE

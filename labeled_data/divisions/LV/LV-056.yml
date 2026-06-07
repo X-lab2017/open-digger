@@ -1,5 +1,5 @@
-name: Līvānu novads
-name_zh: 利瓦努市镇
+name: Livanu
+name_zh: 利瓦尼自治市
 type: Division-1
 meta:
   alpha2: LV-056
@@ -10,4 +10,5 @@ meta:
     - līvānu novads municipality
     - līvāni
     - līvāni municipality
+    - 利瓦努市镇
   category: MUNICIPALITY

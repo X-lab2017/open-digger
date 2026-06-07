@@ -1,0 +1,11 @@
+name: Hambantŏṭa
+name_zh: 汉班托特区
+type: Division-1
+meta:
+  alpha2: LK-33
+  includes:
+    - ampāntōṭṭai
+    - lk-33
+    - '33'
+    - ampāntōṭṭai district
+  category: PROVINCE

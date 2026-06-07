@@ -1,5 +1,5 @@
-name: Hakkâri
-name_zh: 阿格里
+name: Hakkari
+name_zh: 哈卡里省
 type: Division-1
 meta:
   alpha2: TR-30
@@ -9,4 +9,5 @@ meta:
     - '30'
     - hakkâri province
     - hakkari
+    - 阿格里
   category: PROVINCE

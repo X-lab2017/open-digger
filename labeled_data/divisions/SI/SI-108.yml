@@ -1,5 +1,5 @@
 name: Ruše
-name_zh: 鲁舍
+name_zh: 魯舍鎮
 type: Division-1
 meta:
   alpha2: SI-108
@@ -8,4 +8,5 @@ meta:
     - si-108
     - '108'
     - ruše municipality
+    - 鲁舍
   category: MUNICIPALITY

@@ -1,0 +1,11 @@
+name: Vasilevo
+type: Division-1
+meta:
+  alpha2: MK-11
+  includes:
+    - vasilevo
+    - mk-404
+    - '404'
+    - vasilevo municipality
+  category: MUNICIPALITY
+name_zh: 瓦西列沃区

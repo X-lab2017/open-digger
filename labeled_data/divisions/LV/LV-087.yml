@@ -1,5 +1,5 @@
-name: Salaspils novads
-name_zh: 萨拉斯皮尔斯市镇
+name: Salaspils
+name_zh: 薩拉斯皮爾斯自治市
 type: Division-1
 meta:
   alpha2: LV-087
@@ -10,4 +10,5 @@ meta:
     - salaspils novads municipality
     - salaspils
     - salaspils municipality
+    - 萨拉斯皮尔斯市镇
   category: MUNICIPALITY

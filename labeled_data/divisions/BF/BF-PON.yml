@@ -1,0 +1,11 @@
+name: Poni
+name_zh: 波尼省
+type: Division-1
+meta:
+  alpha2: BF-PON
+  includes:
+    - poni
+    - bf-pon
+    - pon
+    - poni province
+  category: PROVINCE

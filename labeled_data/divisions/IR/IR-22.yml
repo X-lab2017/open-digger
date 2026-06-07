@@ -1,5 +1,5 @@
-name: Hormozgān
-name_zh: 霍尔木兹甘省
+name: Markazi
+name_zh: 中央省
 type: Division-1
 meta:
   alpha2: IR-22
@@ -9,4 +9,5 @@ meta:
     - '22'
     - hormozgān province
     - hormozgan province
+    - 霍尔木兹甘省
   category: PROVINCE

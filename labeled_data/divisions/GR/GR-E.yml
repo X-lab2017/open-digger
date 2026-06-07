@@ -1,5 +1,5 @@
-name: Thessalía
-name_zh: 西希腊
+name: Thessalia
+name_zh: 色萨利
 type: Division-1
 meta:
   alpha2: GR-E
@@ -9,4 +9,5 @@ meta:
     - e
     - thessalía administrative region
     - thessaly
+    - 西希腊
   category: ADMINISTRATIVE REGION

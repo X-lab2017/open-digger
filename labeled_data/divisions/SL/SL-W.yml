@@ -1,5 +1,5 @@
-name: Western Area
-name_zh: 西部地区
+name: Western
+name_zh: 西部区
 type: Division-1
 meta:
   alpha2: SL-W
@@ -8,4 +8,5 @@ meta:
     - sl-w
     - w
     - western area area
+    - 西部地区
   category: AREA

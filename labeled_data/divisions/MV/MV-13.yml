@@ -1,4 +1,4 @@
-name: North Maalhosmadulu
+name: Raa
 type: Division-1
 meta:
   alpha2: MV-13
@@ -12,3 +12,4 @@ meta:
     - north maalhosmadulu
     - north maalhosmadulu administrative atoll
   category: ADMINISTRATIVE ATOLL
+name_zh: 拉环礁

@@ -1,5 +1,5 @@
 name: La Araucanía
-name_zh: 阿劳卡尼亚
+name_zh: 阿劳卡尼亚大区
 type: Division-1
 meta:
   alpha2: CL-AR
@@ -11,4 +11,5 @@ meta:
     - ix
     - araucania
     - araucanía
+    - 阿劳卡尼亚
   category: REGION

@@ -1,0 +1,11 @@
+name: Kalimantan utara
+name_zh: ''
+type: Division-1
+meta:
+  alpha2: ID-KU
+  includes:
+    - kalimantan utara
+    - id-ku
+    - ku
+    - kalimantan utara province
+  category: PROVINCE

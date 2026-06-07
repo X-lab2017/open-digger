@@ -1,0 +1,14 @@
+name: Kočani
+name_zh: 科查尼区
+type: Division-1
+meta:
+  alpha2: MK-42
+  includes:
+    - kočani
+    - mk-206
+    - '206'
+    - kočani municipality
+    - municipality of kočani
+    - eastern
+    - 科查尼
+  category: MUNICIPALITY

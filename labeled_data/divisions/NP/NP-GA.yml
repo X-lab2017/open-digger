@@ -1,0 +1,19 @@
+name: Gandaki
+name_zh: 甘达基专区
+type: Division-1
+meta:
+  alpha2: NP-GA
+  includes:
+    - gandaki
+    - np-p4
+    - p4
+    - gandaki province
+    - province 4
+    - province 4 province
+    - gaṇḍakī
+    - gaṇḍakī province
+    - pradesh 4
+    - pradesh 4 province
+    - गण्डकी प्रदेश
+    - gandakī
+  category: PROVINCE

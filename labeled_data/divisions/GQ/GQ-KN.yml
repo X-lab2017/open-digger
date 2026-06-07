@@ -1,0 +1,11 @@
+name: Kié-Ntem
+name_zh: 基埃恩特姆省
+type: Division-1
+meta:
+  alpha2: GQ-KN
+  includes:
+    - kié-ntem
+    - gq-kn
+    - kn
+    - kié-ntem province
+  category: PROVINCE

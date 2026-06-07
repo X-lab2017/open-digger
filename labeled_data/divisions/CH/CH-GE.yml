@@ -1,5 +1,5 @@
 name: Genève
-name_zh: 日内瓦
+name_zh: 日內瓦州
 type: Division-1
 meta:
   alpha2: CH-GE
@@ -9,4 +9,5 @@ meta:
     - ge
     - genève canton
     - geneva
+    - 日内瓦
   category: CANTON

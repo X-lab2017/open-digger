@@ -1,5 +1,5 @@
 name: Elbasan
-name_zh: 埃尔巴桑县
+name_zh: 爱尔巴桑州
 type: Division-1
 meta:
   alpha2: AL-03
@@ -8,4 +8,5 @@ meta:
     - al-03
     - '03'
     - elbasan county
+    - 埃尔巴桑县
   category: COUNTY

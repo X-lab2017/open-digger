@@ -1,0 +1,11 @@
+name: Mogila
+type: Division-1
+meta:
+  alpha2: MK-53
+  includes:
+    - mogila
+    - mk-506
+    - '506'
+    - mogila municipality
+  category: MUNICIPALITY
+name_zh: 莫吉拉區

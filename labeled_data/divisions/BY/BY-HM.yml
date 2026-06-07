@@ -1,5 +1,5 @@
-name: Gorod Minsk
-name_zh: 明斯克市
+name: City of Minsk
+name_zh: 明斯克
 type: Division-1
 meta:
   alpha2: BY-HM
@@ -12,4 +12,5 @@ meta:
     - horad minsk city
     - minsk
     - minsk province
+    - 明斯克市
   category: CITY

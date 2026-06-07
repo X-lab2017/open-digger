@@ -1,0 +1,11 @@
+name: Mzimba
+name_zh: 姆津巴县
+type: Division-1
+meta:
+  alpha2: MW-MZ
+  includes:
+    - mzimba
+    - mw-mz
+    - mz
+    - mzimba district
+  category: PROVINCE

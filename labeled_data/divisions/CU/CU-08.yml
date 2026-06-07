@@ -1,5 +1,5 @@
 name: Ciego de Ávila
-name_zh: 谢戈德阿维拉
+name_zh: 谢戈德阿维拉省
 type: Division-1
 meta:
   alpha2: CU-08
@@ -9,4 +9,5 @@ meta:
     - '08'
     - ciego de ávila province
     - ciego de avila
+    - 谢戈德阿维拉
   category: PROVINCE

@@ -1,0 +1,11 @@
+name: Lozère
+name_zh: 洛泽尔省
+type: Division-1
+meta:
+  alpha2: FR-48
+  includes:
+    - lozère
+    - fr-48
+    - '48'
+    - lozère metropolitan department
+  category: PROVINCE

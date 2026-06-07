@@ -1,5 +1,5 @@
 name: Ñuble
-name_zh: 纽布莱
+name_zh: 纽布莱大区
 type: Division-1
 meta:
   alpha2: CL-NB
@@ -9,4 +9,5 @@ meta:
     - nb
     - ñuble region
     - xvi
+    - 纽布莱
   category: REGION

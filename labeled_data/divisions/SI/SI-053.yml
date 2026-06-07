@@ -1,5 +1,5 @@
 name: Kranjska Gora
-name_zh: 克拉尼
+name_zh: 克拉尼斯卡戈拉
 type: Division-1
 meta:
   alpha2: SI-053
@@ -8,4 +8,5 @@ meta:
     - si-053
     - '053'
     - kranjska gora municipality
+    - 克拉尼
   category: MUNICIPALITY

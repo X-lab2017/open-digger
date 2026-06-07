@@ -1,5 +1,5 @@
-name: Ratak chain
-name_zh: 马朱罗环礁
+name: Ratak Chain
+name_zh: 拉塔克礁链
 type: Division-1
 meta:
   alpha2: MH-T
@@ -64,4 +64,5 @@ meta:
     - ṃaḷoeḷap
     - ṃaḷoeḷap municipality
     - majuro atoll
+    - 马朱罗环礁
   category: CHAIN (OF ISLANDS)

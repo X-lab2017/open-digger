@@ -1,0 +1,11 @@
+name: Nahouri
+name_zh: 纳乌里省
+type: Division-1
+meta:
+  alpha2: BF-NAO
+  includes:
+    - nahouri
+    - bf-nao
+    - nao
+    - nahouri province
+  category: PROVINCE

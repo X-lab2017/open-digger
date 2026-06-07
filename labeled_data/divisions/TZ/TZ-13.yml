@@ -1,5 +1,5 @@
 name: Mara
-name_zh: 马拉
+name_zh: 马拉区
 type: Division-1
 meta:
   alpha2: TZ-13
@@ -8,4 +8,5 @@ meta:
     - tz-13
     - '13'
     - mara region
+    - 马拉
   category: REGION

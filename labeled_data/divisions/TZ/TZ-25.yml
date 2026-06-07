@@ -1,5 +1,5 @@
 name: Tanga
-name_zh: 坦噶
+name_zh: 坦噶区
 type: Division-1
 meta:
   alpha2: TZ-25
@@ -8,4 +8,5 @@ meta:
     - tz-25
     - '25'
     - tanga region
+    - 坦噶
   category: REGION

@@ -1,5 +1,5 @@
 name: Laghouat
-name_zh: 拉格瓦特省
+name_zh: 艾格瓦特省
 type: Division-1
 meta:
   alpha2: DZ-03
@@ -8,4 +8,5 @@ meta:
     - dz-03
     - '03'
     - laghouat province
+    - 拉格瓦特省
   category: PROVINCE

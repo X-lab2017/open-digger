@@ -1,5 +1,5 @@
-name: Syunik'
-name_zh: 苏尼克省
+name: Syunik
+name_zh: 休尼克省
 type: Division-1
 meta:
   alpha2: AM-SU
@@ -9,4 +9,5 @@ meta:
     - su
     - syunik' region
     - syunik province
+    - 苏尼克省
   category: REGION

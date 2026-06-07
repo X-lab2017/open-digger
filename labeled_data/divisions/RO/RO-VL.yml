@@ -1,5 +1,5 @@
 name: Vâlcea
-name_zh: 瓦尔切亚县
+name_zh: 沃尔恰县
 type: Division-1
 meta:
   alpha2: RO-VL
@@ -9,4 +9,5 @@ meta:
     - vl
     - vâlcea department
     - vâlcea county
+    - 瓦尔切亚县
   category: DEPARTMENT

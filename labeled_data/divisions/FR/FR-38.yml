@@ -1,0 +1,11 @@
+name: Isère
+name_zh: 伊泽尔省
+type: Division-1
+meta:
+  alpha2: FR-38
+  includes:
+    - isère
+    - fr-38
+    - '38'
+    - isère metropolitan department
+  category: PROVINCE

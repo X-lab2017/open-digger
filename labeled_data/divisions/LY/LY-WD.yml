@@ -1,5 +1,5 @@
-name: Wādī al Ḩayāt
-name_zh: 生命谷区
+name: Wadi al Hayaa
+name_zh: 瓦迪哈耶特省
 type: Division-1
 meta:
   alpha2: LY-WD
@@ -9,4 +9,5 @@ meta:
     - wd
     - wādī al ḩayāt popularate
     - wadi al hayaa district
+    - 生命谷区
   category: POPULARATE

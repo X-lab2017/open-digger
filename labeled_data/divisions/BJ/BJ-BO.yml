@@ -1,5 +1,5 @@
 name: Borgou
-name_zh: 博尔古省
+name_zh: 博爾古省
 type: Division-1
 meta:
   alpha2: BJ-BO
@@ -8,4 +8,5 @@ meta:
     - bj-bo
     - bo
     - borgou department
+    - 博尔古省
   category: DEPARTMENT

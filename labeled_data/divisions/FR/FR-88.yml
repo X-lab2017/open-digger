@@ -1,0 +1,11 @@
+name: Vosges
+name_zh: 孚日省
+type: Division-1
+meta:
+  alpha2: FR-88
+  includes:
+    - vosges
+    - fr-88
+    - '88'
+    - vosges metropolitan department
+  category: PROVINCE

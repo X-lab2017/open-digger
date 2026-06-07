@@ -1,5 +1,5 @@
 name: Saint Patrick
-name_zh: 圣帕特里克
+name_zh: 圣派屈克区
 type: Division-1
 meta:
   alpha2: VC-05
@@ -8,4 +8,5 @@ meta:
     - vc-05
     - '05'
     - saint patrick parish
+    - 圣帕特里克
   category: PARISH

@@ -1,5 +1,5 @@
-name: Daşoguz
-name_zh: 达绍古兹
+name: Tashauz
+name_zh: 达沙古兹
 type: Division-1
 meta:
   alpha2: TM-D
@@ -8,4 +8,5 @@ meta:
     - tm-d
     - d
     - daşoguz region
+    - 达绍古兹
   category: REGION

@@ -1,5 +1,5 @@
 name: Boyacá
-name_zh: 博亚卡
+name_zh: 博亚卡省
 type: Division-1
 meta:
   alpha2: CO-BOY
@@ -9,4 +9,5 @@ meta:
     - boy
     - boyacá department
     - boyaca
+    - 博亚卡
   category: DEPARTMENT

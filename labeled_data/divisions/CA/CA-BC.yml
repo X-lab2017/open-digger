@@ -1,5 +1,5 @@
-name: Colombie-Britannique
-name_zh: 不列颠哥伦比亚省
+name: British Columbia
+name_zh: 不列颠哥伦比亚
 type: Division-1
 meta:
   alpha2: CA-BC
@@ -10,4 +10,5 @@ meta:
     - british columbia province
     - colombie-britannique
     - colombie-britannique province
+    - 不列颠哥伦比亚省
   category: PROVINCE

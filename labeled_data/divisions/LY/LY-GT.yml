@@ -1,5 +1,5 @@
-name: Ghāt
-name_zh: 加里扬区
+name: Ghat
+name_zh: 加特省
 type: Division-1
 meta:
   alpha2: LY-GT
@@ -9,4 +9,5 @@ meta:
     - gt
     - ghāt popularate
     - gharyan
+    - 加里扬区
   category: POPULARATE

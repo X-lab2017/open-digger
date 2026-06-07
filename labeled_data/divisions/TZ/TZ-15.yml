@@ -1,5 +1,5 @@
 name: Zanzibar West
-name_zh: 姆吉尼马加里比区
+name_zh: 尚西巴西区
 type: Division-1
 meta:
   alpha2: TZ-15
@@ -11,4 +11,5 @@ meta:
     - zanzibar west
     - zanzibar west region
     - zanzibar urban/west
+    - 姆吉尼马加里比区
   category: REGION

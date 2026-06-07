@@ -1,0 +1,11 @@
+name: Arezzo
+name_zh: 阿雷佐省
+type: Division-1
+meta:
+  alpha2: IT-AR
+  includes:
+    - arezzo
+    - it-ar
+    - ar
+    - arezzo province
+  category: PROVINCE

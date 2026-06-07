@@ -1,0 +1,11 @@
+name: Mountain Province
+name_zh: 高山省
+type: Division-1
+meta:
+  alpha2: PH-MOU
+  includes:
+    - lalawigang bulubundukin
+    - ph-mou
+    - mou
+    - lalawigang bulubundukin province
+  category: PROVINCE

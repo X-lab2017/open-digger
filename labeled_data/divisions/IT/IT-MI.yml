@@ -1,0 +1,11 @@
+name: Milano
+name_zh: 米兰省
+type: Division-1
+meta:
+  alpha2: IT-MI
+  includes:
+    - milano
+    - it-mi
+    - mi
+    - milano metropolitan city
+  category: PROVINCE

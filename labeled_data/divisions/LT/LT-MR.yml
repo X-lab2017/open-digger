@@ -1,5 +1,5 @@
-name: Marijampolės apskritis
-name_zh: 玛丽亚姆波莱县
+name: Marijampoles
+name_zh: 马里扬波莱县
 type: Division-1
 meta:
   alpha2: LT-MR
@@ -29,4 +29,5 @@ meta:
     - '41'
     - šakiai district municipality
     - marijampolė county
+    - 玛丽亚姆波莱县
   category: COUNTY

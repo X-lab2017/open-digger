@@ -1,5 +1,5 @@
-name: Al Buţnān
-name_zh: 布特南区
+name: Al Butnan
+name_zh: 布特南省
 type: Division-1
 meta:
   alpha2: LY-BU
@@ -9,4 +9,5 @@ meta:
     - bu
     - al buţnān popularate
     - butnan district
+    - 布特南区
   category: POPULARATE

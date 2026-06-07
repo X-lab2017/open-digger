@@ -1,5 +1,5 @@
-name: Liquiça
-name_zh: 帝力
+name: Liquica
+name_zh: 利逵萨县
 type: Division-1
 meta:
   alpha2: TL-LI
@@ -11,4 +11,5 @@ meta:
     - liquiça
     - liquiça municipality
     - liquica
+    - 帝力
   category: MUNICIPALITY

@@ -1,5 +1,5 @@
-name: Kapa Bohlabela
-name_zh: 东开普
+name: Eastern Cape
+name_zh: 东开普省
 type: Division-1
 meta:
   alpha2: ZA-EC
@@ -28,4 +28,5 @@ meta:
     - oos-kaap province
     - ipumalanga-kapa
     - ipumalanga-kapa province
+    - 东开普
   category: PROVINCE

@@ -1,0 +1,11 @@
+name: Cavan
+name_zh: 卡文郡
+type: Division-1
+meta:
+  alpha2: IE-CN
+  includes:
+    - an cabhán
+    - ie-cn
+    - cn
+    - an cabhán county
+  category: PROVINCE

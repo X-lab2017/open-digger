@@ -1,5 +1,5 @@
-name: Darhan uul
-name_zh: 达尔汗乌拉
+name: Darhan-Uul
+name_zh: 达尔汗乌勒省
 type: Division-1
 meta:
   alpha2: MN-037
@@ -9,4 +9,5 @@ meta:
     - '037'
     - darhan uul province
     - darkhan-uul
+    - 达尔汗乌拉
   category: PROVINCE

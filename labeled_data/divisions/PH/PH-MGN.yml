@@ -1,0 +1,11 @@
+name: Hilagang magindanaw
+name_zh: ''
+type: Division-1
+meta:
+  alpha2: PH-MGN
+  includes:
+    - hilagang magindanaw
+    - ph-mgn
+    - mgn
+    - hilagang magindanaw province
+  category: PROVINCE

@@ -1,5 +1,5 @@
 name: Călărași
-name_zh: 卡拉拉希区
+name_zh: 克勒拉希县
 type: Division-1
 meta:
   alpha2: MD-CL
@@ -9,4 +9,5 @@ meta:
     - cl
     - călărași district
     - raionul călărași
+    - 卡拉拉希区
   category: DISTRICT

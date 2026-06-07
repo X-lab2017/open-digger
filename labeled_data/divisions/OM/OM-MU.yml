@@ -1,5 +1,5 @@
 name: Musandam
-name_zh: 穆桑达姆省
+name_zh: 穆桑代姆省
 type: Division-1
 meta:
   alpha2: OM-MU
@@ -8,4 +8,5 @@ meta:
     - om-mu
     - mu
     - musandam governorate
+    - 穆桑达姆省
   category: GOVERNORATE

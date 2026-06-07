@@ -1,5 +1,5 @@
 name: Bắc Giang
-name_zh: 北江
+name_zh: 北江省
 type: Division-1
 meta:
   alpha2: VN-54
@@ -9,4 +9,5 @@ meta:
     - '54'
     - bắc giang province
     - bac giang
+    - 北江
   category: PROVINCE

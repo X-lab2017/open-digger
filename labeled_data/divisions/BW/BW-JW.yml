@@ -1,5 +1,5 @@
 name: Jwaneng
-name_zh: 乔万恩
+name_zh: 朱瓦能
 type: Division-1
 meta:
   alpha2: BW-JW
@@ -8,4 +8,5 @@ meta:
     - bw-jw
     - jw
     - jwaneng town
+    - 乔万恩
   category: TOWN

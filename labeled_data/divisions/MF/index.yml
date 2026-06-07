@@ -1,5 +1,5 @@
-name: Saint Martin (French part)
-name_zh: 圣马丁岛
+name: St-Martin
+name_zh: 法属圣马丁
 type: Division-0
 meta:
   alpha2: MF
@@ -7,6 +7,7 @@ meta:
     - Saint Martin (French part)
     - MF
     - '663'
+    - 圣马丁岛
   developers:
     - year: 2022
       quarter: 1

@@ -1,5 +1,5 @@
-name: Jönköpings län
-name_zh: 约恩köping县
+name: Jönköping
+name_zh: 延雪平省
 type: Division-1
 meta:
   alpha2: SE-F
@@ -9,4 +9,5 @@ meta:
     - f
     - jönköpings län county
     - jonkoping county
+    - 约恩köping县
   category: COUNTY

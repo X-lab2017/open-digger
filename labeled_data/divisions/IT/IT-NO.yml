@@ -1,0 +1,11 @@
+name: Novara
+name_zh: 诺瓦拉省
+type: Division-1
+meta:
+  alpha2: IT-NO
+  includes:
+    - novara
+    - it-no
+    - 'no'
+    - novara province
+  category: PROVINCE

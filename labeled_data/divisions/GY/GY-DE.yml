@@ -1,5 +1,5 @@
 name: Demerara-Mahaica
-name_zh: 德梅拉拉-马哈伊卡
+name_zh: 德梅拉拉-马海卡区
 type: Division-1
 meta:
   alpha2: GY-DE
@@ -8,4 +8,5 @@ meta:
     - gy-de
     - de
     - demerara-mahaica region
+    - 德梅拉拉-马哈伊卡
   category: REGION

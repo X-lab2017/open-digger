@@ -1,0 +1,11 @@
+name: Catanduanes
+name_zh: 卡坦端内斯省
+type: Division-1
+meta:
+  alpha2: PH-CAT
+  includes:
+    - catanduanes
+    - ph-cat
+    - cat
+    - catanduanes province
+  category: PROVINCE

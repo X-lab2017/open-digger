@@ -1,5 +1,5 @@
-name: Grischun
-name_zh: 格劳宾登
+name: Graubünden
+name_zh: 格劳宾登州
 type: Division-1
 meta:
   alpha2: CH-GR
@@ -13,4 +13,5 @@ meta:
     - grischun
     - grischun canton
     - grisons
+    - 格劳宾登
   category: CANTON

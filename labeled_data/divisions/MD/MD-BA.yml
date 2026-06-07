@@ -1,5 +1,5 @@
-name: Bălți
-name_zh: 德涅斯特河左岸行政区单位
+name: Bălţi
+name_zh: 伯尔兹
 type: Division-1
 meta:
   alpha2: MD-BA
@@ -9,4 +9,5 @@ meta:
     - ba
     - bălți city
     - balti
+    - 德涅斯特河左岸行政区单位
   category: CITY

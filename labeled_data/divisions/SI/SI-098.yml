@@ -1,4 +1,4 @@
-name: Rače-Fram
+name: Race-Fram
 type: Division-1
 meta:
   alpha2: SI-098
@@ -8,3 +8,4 @@ meta:
     - '098'
     - rače-fram municipality
   category: MUNICIPALITY
+name_zh: 拉切-弗拉姆

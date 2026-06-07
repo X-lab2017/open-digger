@@ -1,0 +1,14 @@
+name: Struga
+name_zh: 斯特鲁加区
+type: Division-1
+meta:
+  alpha2: MK-72
+  includes:
+    - struga
+    - mk-312
+    - '312'
+    - struga municipality
+    - municipality of struga
+    - southwestern
+    - 斯特鲁加
+  category: MUNICIPALITY

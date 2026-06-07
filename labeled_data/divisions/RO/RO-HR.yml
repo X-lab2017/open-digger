@@ -1,5 +1,5 @@
 name: Harghita
-name_zh: 哈戈什蒂县
+name_zh: 哈尔吉塔县
 type: Division-1
 meta:
   alpha2: RO-HR
@@ -10,4 +10,5 @@ meta:
     - harghita department
     - harghita county
     - județul harghita
+    - 哈戈什蒂县
   category: DEPARTMENT

@@ -1,0 +1,11 @@
+name: Aveyron
+name_zh: 阿韦龙省
+type: Division-1
+meta:
+  alpha2: FR-12
+  includes:
+    - aveyron
+    - fr-12
+    - '12'
+    - aveyron metropolitan department
+  category: PROVINCE

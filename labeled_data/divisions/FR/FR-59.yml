@@ -1,0 +1,11 @@
+name: Nord
+name_zh: 诺尔省
+type: Division-1
+meta:
+  alpha2: FR-59
+  includes:
+    - nord
+    - fr-59
+    - '59'
+    - nord metropolitan department
+  category: PROVINCE

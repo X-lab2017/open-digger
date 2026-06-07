@@ -1,5 +1,5 @@
 name: Tarapacá
-name_zh: 塔拉帕卡
+name_zh: 塔拉帕卡大区
 type: Division-1
 meta:
   alpha2: CL-TA
@@ -9,4 +9,5 @@ meta:
     - ta
     - tarapacá region
     - i
+    - 塔拉帕卡
   category: REGION

@@ -1,5 +1,5 @@
 name: Saïda
-name_zh: 塞伊达省
+name_zh: 赛伊达省
 type: Division-1
 meta:
   alpha2: DZ-20
@@ -8,4 +8,5 @@ meta:
     - dz-20
     - '20'
     - saïda province
+    - 塞伊达省
   category: PROVINCE

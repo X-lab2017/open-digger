@@ -1,0 +1,11 @@
+name: Vercelli
+name_zh: 韦尔切利省
+type: Division-1
+meta:
+  alpha2: IT-VC
+  includes:
+    - vercelli
+    - it-vc
+    - vc
+    - vercelli province
+  category: PROVINCE

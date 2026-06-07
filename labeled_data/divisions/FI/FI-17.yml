@@ -1,5 +1,5 @@
 name: Satakunta
-name_zh: 萨塔昆塔
+name_zh: 萨塔昆塔区
 type: Division-1
 meta:
   alpha2: FI-17
@@ -8,4 +8,5 @@ meta:
     - fi-17
     - '17'
     - satakunta region
+    - 萨塔昆塔
   category: REGION

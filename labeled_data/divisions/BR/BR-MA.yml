@@ -1,5 +1,5 @@
 name: Maranhão
-name_zh: 马拉尼昂
+name_zh: 马拉尼昂州
 type: Division-1
 meta:
   alpha2: BR-MA
@@ -9,4 +9,5 @@ meta:
     - ma
     - maranhão state
     - state of maranhão
+    - 马拉尼昂
   category: STATE

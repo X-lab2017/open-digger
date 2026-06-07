@@ -1,0 +1,13 @@
+name: Vinica
+name_zh: 维尼查区
+type: Division-1
+meta:
+  alpha2: MK-14
+  includes:
+    - vinica
+    - mk-202
+    - '202'
+    - vinica municipality
+    - municipality of vinica
+    - 维尼察
+  category: MUNICIPALITY

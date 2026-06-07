@@ -1,5 +1,5 @@
 name: Santander
-name_zh: 北桑坦德
+name_zh: 桑坦德省
 type: Division-1
 meta:
   alpha2: CO-SAN
@@ -8,4 +8,5 @@ meta:
     - co-san
     - san
     - santander department
+    - 北桑坦德
   category: DEPARTMENT

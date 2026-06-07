@@ -1,5 +1,5 @@
 name: Nueva Segovia
-name_zh: 新塞戈维亚
+name_zh: 新塞哥维亚省
 type: Division-1
 meta:
   alpha2: NI-NS
@@ -8,4 +8,5 @@ meta:
     - ni-ns
     - ns
     - nueva segovia department
+    - 新塞戈维亚
   category: DEPARTMENT

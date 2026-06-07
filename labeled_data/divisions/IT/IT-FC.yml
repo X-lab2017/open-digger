@@ -1,0 +1,11 @@
+name: Forlì-Cesena
+name_zh: 费利-切塞纳省
+type: Division-1
+meta:
+  alpha2: IT-FC
+  includes:
+    - forlì-cesena
+    - it-fc
+    - fc
+    - forlì-cesena province
+  category: PROVINCE

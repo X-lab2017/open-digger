@@ -1,0 +1,11 @@
+name: Trikuṇāmalaya
+name_zh: 亭可馬里區
+type: Division-1
+meta:
+  alpha2: LK-53
+  includes:
+    - tirukŏṇamalai
+    - lk-53
+    - '53'
+    - tirukŏṇamalai district
+  category: PROVINCE

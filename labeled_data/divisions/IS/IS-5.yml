@@ -1,5 +1,5 @@
 name: Norðurland vestra
-name_zh: 斯卡加菲厄泽
+name_zh: 西北区
 type: Division-1
 meta:
   alpha2: IS-5
@@ -28,4 +28,5 @@ meta:
     - is-sss
     - sss
     - sveitarfélagið skagaströnd municipality
+    - 斯卡加菲厄泽
   category: REGION

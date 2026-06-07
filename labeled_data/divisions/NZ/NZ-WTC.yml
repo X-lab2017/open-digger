@@ -1,5 +1,5 @@
 name: West Coast
-name_zh: 西海岸
+name_zh: 西岸大区
 type: Division-1
 meta:
   alpha2: NZ-WTC
@@ -10,4 +10,5 @@ meta:
     - te tai o poutini region
     - west coast
     - west coast region
+    - 西海岸
   category: REGION

@@ -1,5 +1,5 @@
-name: Āz̄ārbāyjān-e Shārqī
-name_zh: 东阿塞拜疆省
+name: Ardebil
+name_zh: 阿尔达比勒省
 type: Division-1
 meta:
   alpha2: IR-03
@@ -9,4 +9,5 @@ meta:
     - '03'
     - āz̄ārbāyjān-e shārqī province
     - east azerbaijan province
+    - 东阿塞拜疆省
   category: PROVINCE

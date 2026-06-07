@@ -1,0 +1,11 @@
+name: Perugia
+name_zh: 佩魯賈省
+type: Division-1
+meta:
+  alpha2: IT-PG
+  includes:
+    - perugia
+    - it-pg
+    - pg
+    - perugia province
+  category: PROVINCE

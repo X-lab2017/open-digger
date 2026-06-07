@@ -1,5 +1,5 @@
-name: Ţarţūs
-name_zh: 拉塔基亚省
+name: Tartus
+name_zh: 塔尔图斯省
 type: Division-1
 meta:
   alpha2: SY-TA
@@ -9,4 +9,5 @@ meta:
     - ta
     - ţarţūs province
     - tartus governorate
+    - 拉塔基亚省
   category: PROVINCE

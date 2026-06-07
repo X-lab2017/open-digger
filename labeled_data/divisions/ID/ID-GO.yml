@@ -1,0 +1,11 @@
+name: Gorontalo
+name_zh: 哥伦打洛省
+type: Division-1
+meta:
+  alpha2: ID-GO
+  includes:
+    - gorontalo
+    - id-go
+    - go
+    - gorontalo province
+  category: PROVINCE

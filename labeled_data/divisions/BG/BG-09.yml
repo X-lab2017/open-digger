@@ -1,5 +1,5 @@
 name: Kardzhali
-name_zh: 卡赞利克省
+name_zh: 克尔贾利州
 type: Division-1
 meta:
   alpha2: BG-09
@@ -9,4 +9,5 @@ meta:
     - '09'
     - kardzhali district
     - kardzhali province
+    - 卡赞利克省
   category: DISTRICT

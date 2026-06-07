@@ -1,5 +1,5 @@
 name: Banaadir
-name_zh: 班纳迪尔
+name_zh: 巴纳迪尔州
 type: Division-1
 meta:
   alpha2: SO-BN
@@ -8,4 +8,5 @@ meta:
     - so-bn
     - bn
     - banaadir region
+    - 班纳迪尔
   category: REGION

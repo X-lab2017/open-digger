@@ -1,0 +1,11 @@
+name: Saône-et-Loire
+name_zh: 索恩-卢瓦尔省
+type: Division-1
+meta:
+  alpha2: FR-71
+  includes:
+    - saône-et-loire
+    - fr-71
+    - '71'
+    - saône-et-loire metropolitan department
+  category: PROVINCE

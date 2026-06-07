@@ -1,5 +1,5 @@
 name: Shiselweni
-name_zh: 希塞伦尼区
+name_zh: 希塞卢韦尼
 type: Division-1
 meta:
   alpha2: SZ-SH
@@ -8,4 +8,5 @@ meta:
     - sz-sh
     - sh
     - shiselweni region
+    - 希塞伦尼区
   category: REGION

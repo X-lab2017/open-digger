@@ -1,5 +1,5 @@
-name: Yazd
-name_zh: 亚兹德省
+name: Mazandaran
+name_zh: 马赞德兰省
 type: Division-1
 meta:
   alpha2: IR-21
@@ -9,4 +9,5 @@ meta:
     - '21'
     - yazd province
     - استان یزد
+    - 亚兹德省
   category: PROVINCE

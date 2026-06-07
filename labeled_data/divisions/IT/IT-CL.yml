@@ -1,0 +1,11 @@
+name: Caltanissetta
+name_zh: 卡尔塔尼塞塔省
+type: Division-1
+meta:
+  alpha2: IT-CL
+  includes:
+    - caltanissetta
+    - it-cl
+    - cl
+    - caltanissetta free municipal consortium
+  category: PROVINCE

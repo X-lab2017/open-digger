@@ -1,5 +1,5 @@
 name: Carabobo
-name_zh: 卡拉沃博
+name_zh: 卡拉沃沃州
 type: Division-1
 meta:
   alpha2: VE-G
@@ -9,4 +9,5 @@ meta:
     - g
     - carabobo state
     - ca
+    - 卡拉沃博
   category: STATE

@@ -1,5 +1,5 @@
-name: Jūrmala
-name_zh: 尤尔马拉市
+name: Jurmala
+name_zh: 尤尔马拉
 type: Division-1
 meta:
   alpha2: LV-JUR
@@ -9,4 +9,5 @@ meta:
     - jur
     - jūrmala state city
     - jurmala
+    - 尤尔马拉市
   category: STATE CITY

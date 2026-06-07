@@ -1,0 +1,13 @@
+name: Želino
+name_zh: 泽林诺区
+type: Division-1
+meta:
+  alpha2: MK-30
+  includes:
+    - želino
+    - mk-605
+    - '605'
+    - želino municipality
+    - municipality of želino
+    - 泽利诺
+  category: MUNICIPALITY

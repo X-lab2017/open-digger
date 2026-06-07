@@ -1,5 +1,5 @@
 name: Thái Nguyên
-name_zh: 太原
+name_zh: 太原省
 type: Division-1
 meta:
   alpha2: VN-69
@@ -9,4 +9,5 @@ meta:
     - '69'
     - thái nguyên province
     - thai nguyen
+    - 太原
   category: PROVINCE

@@ -86,16 +86,16 @@ meta:
 data:
   labels:
     - CI-AB
-    - CI-BS
-    - CI-CM
-    - CI-DN
+    - CI-09
+    - CI-05
+    - CI-10
     - CI-GD
-    - CI-LC
-    - CI-LG
+    - CI-07
+    - CI-01
     - CI-MG
     - CI-SM
-    - CI-SV
-    - CI-VB
+    - CI-03
+    - CI-04
     - CI-WR
     - CI-YM
-    - CI-ZZ
+    - CI-08

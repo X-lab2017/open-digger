@@ -1,0 +1,11 @@
+name: Centro Sur
+name_zh: 中南省
+type: Division-1
+meta:
+  alpha2: GQ-CS
+  includes:
+    - centro sud
+    - gq-cs
+    - cs
+    - centro sud province
+  category: PROVINCE

@@ -1,4 +1,4 @@
-name: Sīlā
+name: Sila
 type: Division-1
 meta:
   alpha2: TD-SI
@@ -10,3 +10,4 @@ meta:
     - sīlā
     - sīlā province
   category: PROVINCE
+name_zh: 西拉区

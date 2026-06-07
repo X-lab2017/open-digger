@@ -1,0 +1,18 @@
+name: Bagmati
+name_zh: 巴格马蒂专区
+type: Division-1
+meta:
+  alpha2: NP-BA
+  includes:
+    - bagmati
+    - np-p3
+    - p3
+    - bagmati province
+    - province 3
+    - province 3 province
+    - bāgmatī
+    - bāgmatī province
+    - pradesh 3
+    - pradesh 3 province
+    - बागमती प्रदेश
+  category: PROVINCE

@@ -1,5 +1,5 @@
-name: Rasǒn
-name_zh: 罗先特别市
+name: Rasŏn
+name_zh: 罗先市
 type: Division-1
 meta:
   alpha2: KP-13
@@ -13,4 +13,5 @@ meta:
     - najin sǒnbong
     - najin sǒnbong special city
     - rason
+    - 罗先特别市
   category: SPECIAL CITY

@@ -1,0 +1,11 @@
+name: Tarrafal de São Nicolau
+name_zh: 圣尼古劳塔拉法尔县
+type: Division-1
+meta:
+  alpha2: CV-TS
+  includes:
+    - tarrafal de são nicolau
+    - cv-ts
+    - ts
+    - tarrafal de são nicolau municipality
+  category: PROVINCE

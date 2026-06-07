@@ -1,5 +1,5 @@
-name: Harjumaa
-name_zh: 哈茹县
+name: Harju
+name_zh: 哈尔尤县
 type: Division-1
 meta:
   alpha2: EE-37
@@ -75,4 +75,5 @@ meta:
     - harju
     - harju county
     - harju maakond
+    - 哈茹县
   category: COUNTY

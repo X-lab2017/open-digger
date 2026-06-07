@@ -1,5 +1,5 @@
 name: Vichada
-name_zh: 比查达
+name_zh: 比查达省
 type: Division-1
 meta:
   alpha2: CO-VID
@@ -8,4 +8,5 @@ meta:
     - co-vid
     - vid
     - vichada department
+    - 比查达
   category: DEPARTMENT

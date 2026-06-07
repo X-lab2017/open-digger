@@ -1,5 +1,5 @@
 name: Niigata
-name_zh: 新泻县
+name_zh: 新潟县
 type: Division-1
 meta:
   alpha2: JP-15
@@ -8,4 +8,5 @@ meta:
     - jp-15
     - '15'
     - niigata prefecture
+    - 新泻县
   category: PREFECTURE

@@ -1,5 +1,5 @@
 name: Guanajuato
-name_zh: 瓜纳华托
+name_zh: 瓜纳华托州
 type: Division-1
 meta:
   alpha2: MX-GUA
@@ -9,4 +9,5 @@ meta:
     - gua
     - guanajuato state
     - gto
+    - 瓜纳华托
   category: STATE

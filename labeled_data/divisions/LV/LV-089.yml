@@ -1,5 +1,5 @@
-name: Saulkrastu novads
-name_zh: 萨尔克拉斯图市镇
+name: Saulkrastu
+name_zh: 薩烏爾克拉斯蒂自治市
 type: Division-1
 meta:
   alpha2: LV-089
@@ -10,4 +10,5 @@ meta:
     - saulkrastu novads municipality
     - saulkrasti
     - saulkrasti municipality
+    - 萨尔克拉斯图市镇
   category: MUNICIPALITY

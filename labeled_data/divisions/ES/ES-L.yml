@@ -1,0 +1,11 @@
+name: Lérida
+name_zh: 莱里达省
+type: Division-1
+meta:
+  alpha2: ES-L
+  includes:
+    - lleida
+    - es-l
+    - l
+    - lleida province
+  category: PROVINCE

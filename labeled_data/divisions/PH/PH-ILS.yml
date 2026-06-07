@@ -1,0 +1,11 @@
+name: Ilocos Sur
+name_zh: 南伊罗戈省
+type: Division-1
+meta:
+  alpha2: PH-ILS
+  includes:
+    - ilocos sur
+    - ph-ils
+    - ils
+    - ilocos sur province
+  category: PROVINCE

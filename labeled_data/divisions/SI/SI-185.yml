@@ -1,4 +1,4 @@
-name: Trnovska Vas
+name: Trnovska vas
 type: Division-1
 meta:
   alpha2: SI-185
@@ -8,3 +8,4 @@ meta:
     - '185'
     - trnovska vas municipality
   category: MUNICIPALITY
+name_zh: 特尔诺沃村

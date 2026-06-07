@@ -1,0 +1,11 @@
+name: Tawi-Tawi
+name_zh: 塔威塔威省
+type: Division-1
+meta:
+  alpha2: PH-TAW
+  includes:
+    - tawi-tawi
+    - ph-taw
+    - taw
+    - tawi-tawi province
+  category: PROVINCE

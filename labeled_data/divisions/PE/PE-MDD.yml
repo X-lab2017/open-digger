@@ -1,5 +1,5 @@
 name: Madre de Dios
-name_zh: 马德雷德迪奥斯
+name_zh: 马德雷德迪奥斯大区
 type: Division-1
 meta:
   alpha2: PE-MDD
@@ -10,4 +10,5 @@ meta:
     - madre de dios region
     - mayutata
     - mayutata region
+    - 马德雷德迪奥斯
   category: REGION

@@ -1,5 +1,5 @@
 name: Montevideo
-name_zh: 蒙得维的亚省
+name_zh: 蒙得维的亚
 type: Division-1
 meta:
   alpha2: UY-MO
@@ -9,4 +9,5 @@ meta:
     - mo
     - montevideo department
     - departamento de montevideo
+    - 蒙得维的亚省
   category: DEPARTMENT

@@ -1,5 +1,5 @@
-name: Ash Shāriqah
-name_zh: 沙迦酋长国
+name: Sharjah
+name_zh: 夏尔迦
 type: Division-1
 meta:
   alpha2: AE-SH
@@ -10,4 +10,5 @@ meta:
     - ash shāriqah emirate
     - sharjah
     - sharjah emirate
+    - 沙迦酋长国
   category: EMIRATE

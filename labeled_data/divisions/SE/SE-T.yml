@@ -1,5 +1,5 @@
-name: Örebro län
-name_zh: 厄勒布鲁县
+name: Orebro
+name_zh: 厄勒布鲁省
 type: Division-1
 meta:
   alpha2: SE-T
@@ -9,4 +9,5 @@ meta:
     - t
     - örebro län county
     - örebro county
+    - 厄勒布鲁县
   category: COUNTY

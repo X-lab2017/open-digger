@@ -1,5 +1,5 @@
 name: Mauren
-name_zh: 莫伦
+name_zh: 毛伦
 type: Division-1
 meta:
   alpha2: LI-04
@@ -8,4 +8,5 @@ meta:
     - li-04
     - '04'
     - mauren commune
+    - 莫伦
   category: COMMUNE

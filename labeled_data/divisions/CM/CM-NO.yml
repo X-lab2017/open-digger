@@ -1,5 +1,5 @@
-name: North
-name_zh: 极北大区
+name: Nord
+name_zh: 北部区
 type: Division-1
 meta:
   alpha2: CM-NO
@@ -10,4 +10,5 @@ meta:
     - nord region
     - north
     - north region
+    - 极北大区
   category: REGION

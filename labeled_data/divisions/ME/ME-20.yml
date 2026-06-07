@@ -1,5 +1,5 @@
 name: Ulcinj
-name_zh: 乌尔奇尼市
+name_zh: 乌尔齐尼市
 type: Division-1
 meta:
   alpha2: ME-20
@@ -9,4 +9,5 @@ meta:
     - '20'
     - ulcinj municipality
     - opština ulcinj
+    - 乌尔奇尼市
   category: MUNICIPALITY

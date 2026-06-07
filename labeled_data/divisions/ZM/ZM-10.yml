@@ -1,5 +1,5 @@
 name: Muchinga
-name_zh: 穆钦加省
+name_zh: 穆欽加省
 type: Division-1
 meta:
   alpha2: ZM-10
@@ -8,4 +8,5 @@ meta:
     - zm-10
     - '10'
     - muchinga province
+    - 穆钦加省
   category: PROVINCE

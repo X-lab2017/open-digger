@@ -1,5 +1,5 @@
 name: Nova Scotia
-name_zh: 新斯科舍省
+name_zh: 新斯科舍
 type: Division-1
 meta:
   alpha2: CA-NS
@@ -10,4 +10,5 @@ meta:
     - nouvelle-écosse province
     - nova scotia
     - nova scotia province
+    - 新斯科舍省
   category: PROVINCE

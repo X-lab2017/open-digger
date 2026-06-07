@@ -1,5 +1,5 @@
 name: Amnat Charoen
-name_zh: 阿銮乍伦府
+name_zh: 安纳乍伦府
 type: Division-1
 meta:
   alpha2: TH-37
@@ -8,4 +8,5 @@ meta:
     - th-37
     - '37'
     - amnat charoen province
+    - 阿銮乍伦府
   category: PROVINCE

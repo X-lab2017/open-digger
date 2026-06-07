@@ -1,5 +1,5 @@
 name: Teleorman
-name_zh: 特莱奥尔曼县
+name_zh: 特列奥尔曼县
 type: Division-1
 meta:
   alpha2: RO-TR
@@ -8,4 +8,5 @@ meta:
     - ro-tr
     - tr
     - teleorman department
+    - 特莱奥尔曼县
   category: DEPARTMENT

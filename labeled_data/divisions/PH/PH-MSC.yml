@@ -1,0 +1,11 @@
+name: Misamis Occidental
+name_zh: 西米萨米斯省
+type: Division-1
+meta:
+  alpha2: PH-MSC
+  includes:
+    - kanlurang misamis
+    - ph-msc
+    - msc
+    - kanlurang misamis province
+  category: PROVINCE

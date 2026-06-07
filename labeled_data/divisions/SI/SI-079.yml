@@ -1,5 +1,5 @@
 name: Mozirje
-name_zh: 莫济尔耶
+name_zh: 莫济列
 type: Division-1
 meta:
   alpha2: SI-079
@@ -8,4 +8,5 @@ meta:
     - si-079
     - '079'
     - mozirje municipality
+    - 莫济尔耶
   category: MUNICIPALITY

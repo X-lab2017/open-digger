@@ -1,5 +1,5 @@
 name: Amazonas
-name_zh: 亚马逊
+name_zh: 亚马孙州
 type: Division-1
 meta:
   alpha2: BR-AM
@@ -9,4 +9,5 @@ meta:
     - am
     - amazonas state
     - state of amazonas
+    - 亚马逊
   category: STATE

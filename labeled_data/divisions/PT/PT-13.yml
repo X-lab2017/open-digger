@@ -1,5 +1,5 @@
 name: Porto
-name_zh: 波尔图
+name_zh: 波尔图区
 type: Division-1
 meta:
   alpha2: PT-13
@@ -8,4 +8,5 @@ meta:
     - pt-13
     - '13'
     - porto district
+    - 波尔图
   category: DISTRICT

@@ -1,5 +1,5 @@
 name: Stereá Elláda
-name_zh: 阿索斯山
+name_zh: 中希腊
 type: Division-1
 meta:
   alpha2: GR-H
@@ -9,4 +9,5 @@ meta:
     - h
     - stereá elláda administrative region
     - central greece
+    - 阿索斯山
   category: ADMINISTRATIVE REGION

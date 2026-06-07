@@ -1,0 +1,11 @@
+name: Livorno
+name_zh: 利佛诺省
+type: Division-1
+meta:
+  alpha2: IT-LI
+  includes:
+    - livorno
+    - it-li
+    - li
+    - livorno province
+  category: PROVINCE

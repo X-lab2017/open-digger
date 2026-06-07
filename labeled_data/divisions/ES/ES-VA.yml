@@ -1,0 +1,11 @@
+name: Valladolid
+name_zh: 巴利亚多利德省
+type: Division-1
+meta:
+  alpha2: ES-VA
+  includes:
+    - valladolid
+    - es-va
+    - va
+    - valladolid province
+  category: PROVINCE

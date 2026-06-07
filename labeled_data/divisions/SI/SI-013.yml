@@ -1,5 +1,5 @@
 name: Cerknica
-name_zh: 策尔克尼察
+name_zh: 采爾克尼察鎮
 type: Division-1
 meta:
   alpha2: SI-013
@@ -8,4 +8,5 @@ meta:
     - si-013
     - '013'
     - cerknica municipality
+    - 策尔克尼察
   category: MUNICIPALITY

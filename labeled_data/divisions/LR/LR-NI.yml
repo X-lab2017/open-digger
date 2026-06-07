@@ -1,5 +1,5 @@
 name: Nimba
-name_zh: 蒙特塞拉多县
+name_zh: 宁巴县
 type: Division-1
 meta:
   alpha2: LR-NI
@@ -8,4 +8,5 @@ meta:
     - lr-ni
     - ni
     - nimba county
+    - 蒙特塞拉多县
   category: COUNTY

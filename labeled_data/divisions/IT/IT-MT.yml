@@ -1,0 +1,11 @@
+name: Matera
+name_zh: 馬泰拉省
+type: Division-1
+meta:
+  alpha2: IT-MT
+  includes:
+    - matera
+    - it-mt
+    - mt
+    - matera province
+  category: PROVINCE

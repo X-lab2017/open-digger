@@ -1,5 +1,5 @@
 name: Jinotega
-name_zh: 希诺特加
+name_zh: 希诺特加省
 type: Division-1
 meta:
   alpha2: NI-JI
@@ -8,4 +8,5 @@ meta:
     - ni-ji
     - ji
     - jinotega department
+    - 希诺特加
   category: DEPARTMENT

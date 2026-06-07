@@ -1,4 +1,4 @@
-name: Shārī al Awsaţ
+name: Moyen-Chari
 type: Division-1
 meta:
   alpha2: TD-MC
@@ -10,3 +10,4 @@ meta:
     - shārī al awsaţ
     - shārī al awsaţ province
   category: PROVINCE
+name_zh: 中沙里区

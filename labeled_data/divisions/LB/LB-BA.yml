@@ -1,5 +1,5 @@
-name: Beyrouth
-name_zh: Baalbek-Hermel Governorate
+name: Beirut
+name_zh: 贝鲁特省
 type: Division-1
 meta:
   alpha2: LB-BA
@@ -12,4 +12,5 @@ meta:
     - beyrouth governorate
     - beirut
     - beirut governorate
+    - Baalbek-Hermel Governorate
   category: GOVERNORATE

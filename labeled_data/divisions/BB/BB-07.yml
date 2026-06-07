@@ -1,5 +1,5 @@
 name: Saint Lucy
-name_zh: 圣露西区
+name_zh: 圣露西教区
 type: Division-1
 meta:
   alpha2: BB-07
@@ -8,4 +8,5 @@ meta:
     - bb-07
     - '07'
     - saint lucy parish
+    - 圣露西区
   category: PARISH

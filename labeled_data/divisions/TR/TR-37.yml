@@ -1,5 +1,5 @@
 name: Kastamonu
-name_zh: 卡斯塔莫努
+name_zh: 卡斯塔莫努省
 type: Division-1
 meta:
   alpha2: TR-37
@@ -8,4 +8,5 @@ meta:
     - tr-37
     - '37'
     - kastamonu province
+    - 卡斯塔莫努
   category: PROVINCE

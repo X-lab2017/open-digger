@@ -1,0 +1,11 @@
+name: La Coruña
+name_zh: 拉科鲁尼亚省
+type: Division-1
+meta:
+  alpha2: ES-C
+  includes:
+    - a coruña
+    - es-c
+    - c
+    - a coruña province
+  category: PROVINCE

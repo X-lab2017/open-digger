@@ -1,0 +1,11 @@
+name: Zapadno-Backi
+name_zh: 西巴奇卡州
+type: Division-1
+meta:
+  alpha2: RS-05
+  includes:
+    - zapadnobački okrug
+    - rs-05
+    - '05'
+    - zapadnobački okrug district
+  category: PROVINCE

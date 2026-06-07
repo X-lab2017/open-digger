@@ -1,5 +1,5 @@
-name: Moravički okrug
-name_zh: 莫拉维奇尼克
+name: Moravicki
+name_zh: 莫拉瓦州
 type: Division-1
 meta:
   alpha2: RS-17
@@ -8,4 +8,5 @@ meta:
     - rs-17
     - '17'
     - moravički okrug district
+    - 莫拉维奇尼克
   category: DISTRICT

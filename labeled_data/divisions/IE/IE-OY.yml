@@ -1,0 +1,11 @@
+name: Offaly
+name_zh: 奥法利郡
+type: Division-1
+meta:
+  alpha2: IE-OY
+  includes:
+    - offaly
+    - ie-oy
+    - oy
+    - offaly county
+  category: PROVINCE

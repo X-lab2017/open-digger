@@ -1,5 +1,5 @@
-name: Al Janūbī
-name_zh: 南方红海
+name: Debub
+name_zh: 南部区
 type: Division-1
 meta:
   alpha2: ER-DU
@@ -11,4 +11,5 @@ meta:
     - debub
     - debub region
     - southern red sea
+    - 南方红海
   category: REGION

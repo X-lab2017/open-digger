@@ -1,5 +1,5 @@
-name: Ludzas novads
-name_zh: 卢德扎市镇
+name: Ludzas
+name_zh: 盧扎自治市
 type: Division-1
 meta:
   alpha2: LV-058
@@ -10,4 +10,5 @@ meta:
     - ludzas novads municipality
     - ludza
     - ludza municipality
+    - 卢德扎市镇
   category: MUNICIPALITY

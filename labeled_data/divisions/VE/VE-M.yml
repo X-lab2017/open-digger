@@ -1,5 +1,5 @@
 name: Miranda
-name_zh: 米兰达
+name_zh: 米兰达州
 type: Division-1
 meta:
   alpha2: VE-M
@@ -9,4 +9,5 @@ meta:
     - m
     - miranda state
     - mi
+    - 米兰达
   category: STATE

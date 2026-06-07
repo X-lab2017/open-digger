@@ -1,0 +1,11 @@
+name: Zaragoza
+name_zh: 萨拉戈萨省
+type: Division-1
+meta:
+  alpha2: ES-Z
+  includes:
+    - zaragoza
+    - es-z
+    - z
+    - zaragoza province
+  category: PROVINCE

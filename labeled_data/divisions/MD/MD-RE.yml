@@ -1,5 +1,5 @@
 name: Rezina
-name_zh: 雷济纳区
+name_zh: 雷济纳
 type: Division-1
 meta:
   alpha2: MD-RE
@@ -8,4 +8,5 @@ meta:
     - md-re
     - re
     - rezina district
+    - 雷济纳区
   category: DISTRICT

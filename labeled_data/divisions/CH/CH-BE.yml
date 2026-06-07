@@ -1,5 +1,5 @@
-name: Berne
-name_zh: 伯尔尼
+name: Bern
+name_zh: 伯恩州
 type: Division-1
 meta:
   alpha2: CH-BE
@@ -11,4 +11,5 @@ meta:
     - berne
     - berne canton
     - canton of bern
+    - 伯尔尼
   category: CANTON

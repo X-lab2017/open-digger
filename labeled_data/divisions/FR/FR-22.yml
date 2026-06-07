@@ -1,0 +1,11 @@
+name: Côtes-d'Armor
+name_zh: 阿摩尔滨海省
+type: Division-1
+meta:
+  alpha2: FR-22
+  includes:
+    - côtes-d'armor
+    - fr-22
+    - '22'
+    - côtes-d'armor metropolitan department
+  category: PROVINCE

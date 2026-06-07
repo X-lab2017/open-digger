@@ -1,5 +1,5 @@
 name: Saint Catherine
-name_zh: 圣凯瑟琳教区
+name_zh: 圣凯瑟琳区
 type: Division-1
 meta:
   alpha2: JM-14
@@ -9,4 +9,5 @@ meta:
     - '14'
     - saint catherine parish
     - st. catherine parish
+    - 圣凯瑟琳教区
   category: PARISH

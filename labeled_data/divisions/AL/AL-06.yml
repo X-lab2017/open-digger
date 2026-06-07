@@ -1,5 +1,5 @@
 name: Korçë
-name_zh: 科尔察县
+name_zh: 科尔察
 type: Division-1
 meta:
   alpha2: AL-06
@@ -8,4 +8,5 @@ meta:
     - al-06
     - '06'
     - korçë county
+    - 科尔察县
   category: COUNTY

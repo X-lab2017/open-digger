@@ -1,5 +1,5 @@
-name: Addu City
-name_zh: 阿杜市
+name: Addu
+name_zh: 阿杜环礁
 type: Division-1
 meta:
   alpha2: MV-01
@@ -11,4 +11,5 @@ meta:
     - seenu
     - seenu city
     - addu city city
+    - 阿杜市
   category: CITY

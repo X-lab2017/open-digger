@@ -1,0 +1,11 @@
+name: Meurthe-et-Moselle
+name_zh: 默尔特-摩泽尔省
+type: Division-1
+meta:
+  alpha2: FR-54
+  includes:
+    - meurthe-et-moselle
+    - fr-54
+    - '54'
+    - meurthe-et-moselle metropolitan department
+  category: PROVINCE

@@ -1,0 +1,11 @@
+name: Gabú
+name_zh: 加布区
+type: Division-1
+meta:
+  alpha2: GW-GA
+  includes:
+    - gabú
+    - gw-ga
+    - ga
+    - gabú region
+  category: PROVINCE

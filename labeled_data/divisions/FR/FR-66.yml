@@ -1,0 +1,11 @@
+name: Pyrénées-Orientales
+name_zh: 东比利牛斯省
+type: Division-1
+meta:
+  alpha2: FR-66
+  includes:
+    - pyrénées-orientales
+    - fr-66
+    - '66'
+    - pyrénées-orientales metropolitan department
+  category: PROVINCE

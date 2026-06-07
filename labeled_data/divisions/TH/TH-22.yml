@@ -1,5 +1,5 @@
 name: Chanthaburi
-name_zh: 尖竹汶府
+name_zh: 庄他武里府
 type: Division-1
 meta:
   alpha2: TH-22
@@ -8,4 +8,5 @@ meta:
     - th-22
     - '22'
     - chanthaburi province
+    - 尖竹汶府
   category: PROVINCE

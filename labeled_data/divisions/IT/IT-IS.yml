@@ -1,0 +1,11 @@
+name: Isernia
+name_zh: 伊塞尔尼亚省
+type: Division-1
+meta:
+  alpha2: IT-IS
+  includes:
+    - isernia
+    - it-is
+    - is
+    - isernia province
+  category: PROVINCE

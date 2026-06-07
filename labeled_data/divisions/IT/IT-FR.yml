@@ -1,0 +1,11 @@
+name: Frosinone
+name_zh: 弗罗西诺内省
+type: Division-1
+meta:
+  alpha2: IT-FR
+  includes:
+    - frosinone
+    - it-fr
+    - fr
+    - frosinone province
+  category: PROVINCE

@@ -1,4 +1,4 @@
-name: Kanal ob Soči
+name: Kanal
 type: Division-1
 meta:
   alpha2: SI-044
@@ -8,3 +8,4 @@ meta:
     - '044'
     - kanal ob soči municipality
   category: MUNICIPALITY
+name_zh: 卡那尔

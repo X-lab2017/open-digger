@@ -1,5 +1,5 @@
 name: Budva
-name_zh: 布德瓦市
+name_zh: 布德瓦區
 type: Division-1
 meta:
   alpha2: ME-05
@@ -9,4 +9,5 @@ meta:
     - '05'
     - budva municipality
     - opština budva
+    - 布德瓦市
   category: MUNICIPALITY

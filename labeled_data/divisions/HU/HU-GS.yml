@@ -1,5 +1,5 @@
-name: Győr-Moson-Sopron
-name_zh: 乔包罗-莫松-索普隆
+name: Gyor-Moson-Sopron
+name_zh: 杰尔-莫雄-肖普朗州
 type: Division-1
 meta:
   alpha2: HU-GS
@@ -8,4 +8,5 @@ meta:
     - hu-gs
     - gs
     - győr-moson-sopron county
+    - 乔包罗-莫松-索普隆
   category: COUNTY

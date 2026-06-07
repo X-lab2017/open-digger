@@ -1,5 +1,5 @@
 name: Manyara
-name_zh: 曼亚拉
+name_zh: 曼亚拉区
 type: Division-1
 meta:
   alpha2: TZ-26
@@ -9,4 +9,5 @@ meta:
     - '26'
     - manyara region
     - mkoa wa simiyu
+    - 曼亚拉
   category: REGION

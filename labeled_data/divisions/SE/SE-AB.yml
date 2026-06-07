@@ -1,5 +1,5 @@
-name: Stockholms län
-name_zh: 斯德哥尔摩县
+name: Stockholm
+name_zh: 斯德哥尔摩省
 type: Division-1
 meta:
   alpha2: SE-AB
@@ -9,4 +9,5 @@ meta:
     - ab
     - stockholms län county
     - stockholm county
+    - 斯德哥尔摩县
   category: COUNTY

@@ -1,0 +1,11 @@
+name: Annobón
+name_zh: 安诺本省
+type: Division-1
+meta:
+  alpha2: GQ-AN
+  includes:
+    - annobon
+    - gq-an
+    - an
+    - annobon province
+  category: PROVINCE

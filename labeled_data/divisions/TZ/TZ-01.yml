@@ -1,5 +1,5 @@
 name: Arusha
-name_zh: 阿鲁沙
+name_zh: 阿鲁沙区
 type: Division-1
 meta:
   alpha2: TZ-01
@@ -8,4 +8,5 @@ meta:
     - tz-01
     - '01'
     - arusha region
+    - 阿鲁沙
   category: REGION

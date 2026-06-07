@@ -1,0 +1,11 @@
+name: Territoire de Belfort
+name_zh: 贝尔福地区
+type: Division-1
+meta:
+  alpha2: FR-90
+  includes:
+    - territoire de belfort
+    - fr-90
+    - '90'
+    - territoire de belfort metropolitan department
+  category: PROVINCE

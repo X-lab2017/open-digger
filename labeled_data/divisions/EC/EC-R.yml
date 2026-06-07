@@ -1,5 +1,5 @@
-name: Los Ríos
-name_zh: 玻利瓦尔
+name: Los Rios
+name_zh: 洛斯里奥斯省
 type: Division-1
 meta:
   alpha2: EC-R
@@ -9,4 +9,5 @@ meta:
     - r
     - los ríos province
     - los rios
+    - 玻利瓦尔
   category: PROVINCE

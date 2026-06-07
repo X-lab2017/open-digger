@@ -1,5 +1,5 @@
 name: Zulia
-name_zh: 苏利亚
+name_zh: 苏利亚州
 type: Division-1
 meta:
   alpha2: VE-V
@@ -9,4 +9,5 @@ meta:
     - v
     - zulia state
     - zu
+    - 苏利亚
   category: STATE

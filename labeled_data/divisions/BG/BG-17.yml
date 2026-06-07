@@ -1,5 +1,5 @@
 name: Razgrad
-name_zh: 拉兹格勒
+name_zh: 拉兹格勒州
 type: Division-1
 meta:
   alpha2: BG-17
@@ -9,4 +9,5 @@ meta:
     - '17'
     - razgrad district
     - razgrad province
+    - 拉兹格勒
   category: DISTRICT

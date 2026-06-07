@@ -1,5 +1,5 @@
 name: Boumerdès
-name_zh: 布迈尔代斯省
+name_zh: 布米尔达斯省
 type: Division-1
 meta:
   alpha2: DZ-35
@@ -9,4 +9,5 @@ meta:
     - '35'
     - boumerdès province
     - boumerdes
+    - 布迈尔代斯省
   category: PROVINCE

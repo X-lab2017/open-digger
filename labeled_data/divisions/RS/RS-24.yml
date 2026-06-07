@@ -1,5 +1,5 @@
-name: Pčinjski okrug
-name_zh: 皮尼察尼克
+name: Pcinjski
+name_zh: 普奇尼亚州
 type: Division-1
 meta:
   alpha2: RS-24
@@ -8,4 +8,5 @@ meta:
     - rs-24
     - '24'
     - pčinjski okrug district
+    - 皮尼察尼克
   category: DISTRICT

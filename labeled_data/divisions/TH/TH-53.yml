@@ -1,5 +1,5 @@
 name: Uttaradit
-name_zh: 乌隆他尼府
+name_zh: 程逸府
 type: Division-1
 meta:
   alpha2: TH-53
@@ -8,4 +8,5 @@ meta:
     - th-53
     - '53'
     - uttaradit province
+    - 乌隆他尼府
   category: PROVINCE

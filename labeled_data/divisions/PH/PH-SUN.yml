@@ -1,0 +1,11 @@
+name: Surigao del Norte
+name_zh: 迪纳加特群岛
+type: Division-1
+meta:
+  alpha2: PH-SUN
+  includes:
+    - hilagang surigaw
+    - ph-sun
+    - sun
+    - hilagang surigaw province
+  category: PROVINCE

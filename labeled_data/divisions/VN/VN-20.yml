@@ -1,5 +1,5 @@
 name: Thái Bình
-name_zh: 太平
+name_zh: 太平省
 type: Division-1
 meta:
   alpha2: VN-20
@@ -9,4 +9,5 @@ meta:
     - '20'
     - thái bình province
     - thai binh
+    - 太平
   category: PROVINCE

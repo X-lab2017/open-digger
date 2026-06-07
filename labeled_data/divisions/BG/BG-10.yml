@@ -1,5 +1,5 @@
 name: Kyustendil
-name_zh: 库斯滕迪尔省
+name_zh: 丘斯滕迪尔州
 type: Division-1
 meta:
   alpha2: BG-10
@@ -9,4 +9,5 @@ meta:
     - '10'
     - kyustendil district
     - kyustendil province
+    - 库斯滕迪尔省
   category: DISTRICT

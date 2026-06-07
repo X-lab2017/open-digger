@@ -1,5 +1,5 @@
 name: Apurímac
-name_zh: 阿普里马克
+name_zh: 阿普里马克大区
 type: Division-1
 meta:
   alpha2: PE-APU
@@ -11,4 +11,5 @@ meta:
     - apurímac
     - apurímac region
     - apurimac
+    - 阿普里马克
   category: REGION

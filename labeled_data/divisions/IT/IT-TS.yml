@@ -1,0 +1,11 @@
+name: Trieste
+name_zh: 的里雅斯特省
+type: Division-1
+meta:
+  alpha2: IT-TS
+  includes:
+    - trieste
+    - it-ts
+    - ts
+    - trieste decentralized regional entity
+  category: PROVINCE

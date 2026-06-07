@@ -1,4 +1,4 @@
-name: Grand'Anse Mahé
+name: Grand'Anse
 type: Division-1
 meta:
   alpha2: SC-13
@@ -12,3 +12,4 @@ meta:
     - grand'anse mahé
     - grand'anse mahé district
   category: DISTRICT
+name_zh: 普拉兰大安塞区

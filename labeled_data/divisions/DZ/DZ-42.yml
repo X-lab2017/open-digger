@@ -1,5 +1,5 @@
 name: Tipaza
-name_zh: 提帕扎省
+name_zh: 提帕萨省
 type: Division-1
 meta:
   alpha2: DZ-42
@@ -8,4 +8,5 @@ meta:
     - dz-42
     - '42'
     - tipaza province
+    - 提帕扎省
   category: PROVINCE

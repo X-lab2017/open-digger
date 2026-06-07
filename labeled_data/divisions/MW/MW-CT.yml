@@ -1,0 +1,11 @@
+name: Chitipa
+name_zh: 奇蒂帕县
+type: Division-1
+meta:
+  alpha2: MW-CT
+  includes:
+    - chitipa
+    - mw-ct
+    - ct
+    - chitipa district
+  category: PROVINCE

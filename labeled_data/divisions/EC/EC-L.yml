@@ -1,5 +1,5 @@
 name: Loja
-name_zh: 洛哈
+name_zh: 洛哈省
 type: Division-1
 meta:
   alpha2: EC-L
@@ -8,4 +8,5 @@ meta:
     - ec-l
     - l
     - loja province
+    - 洛哈
   category: PROVINCE

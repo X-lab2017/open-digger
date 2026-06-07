@@ -86,8 +86,8 @@ data:
   labels:
     - NP-P1
     - NP-P2
-    - NP-P3
-    - NP-P4
-    - NP-P5
-    - NP-P6
+    - NP-BA
+    - NP-GA
+    - NP-LU
+    - NP-KA
     - NP-P7

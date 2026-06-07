@@ -1,0 +1,11 @@
+name: Varese
+name_zh: 瓦雷泽省
+type: Division-1
+meta:
+  alpha2: IT-VA
+  includes:
+    - varese
+    - it-va
+    - va
+    - varese province
+  category: PROVINCE

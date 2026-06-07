@@ -1,5 +1,5 @@
-name: Fāryāb
-name_zh: 法里亚布省
+name: Faryab
+name_zh: 法利亚布省
 type: Division-1
 meta:
   alpha2: AF-FYB
@@ -8,4 +8,5 @@ meta:
     - af-fyb
     - fyb
     - fāryāb province
+    - 法里亚布省
   category: PROVINCE

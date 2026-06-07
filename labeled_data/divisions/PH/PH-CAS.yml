@@ -1,0 +1,11 @@
+name: Camarines Sur
+name_zh: 南甘马粦省
+type: Division-1
+meta:
+  alpha2: PH-CAS
+  includes:
+    - camarines sur
+    - ph-cas
+    - cas
+    - camarines sur province
+  category: PROVINCE

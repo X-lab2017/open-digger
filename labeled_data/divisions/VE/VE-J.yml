@@ -1,5 +1,5 @@
 name: Guárico
-name_zh: 瓜里科
+name_zh: 瓜里科州
 type: Division-1
 meta:
   alpha2: VE-J
@@ -9,4 +9,5 @@ meta:
     - j
     - guárico state
     - gu
+    - 瓜里科
   category: STATE

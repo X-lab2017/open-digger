@@ -1,0 +1,11 @@
+name: Limerick
+name_zh: 利默里克郡
+type: Division-1
+meta:
+  alpha2: IE-LK
+  includes:
+    - limerick
+    - ie-lk
+    - lk
+    - limerick county
+  category: PROVINCE

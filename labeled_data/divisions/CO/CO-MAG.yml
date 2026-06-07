@@ -1,5 +1,5 @@
 name: Magdalena
-name_zh: 马格达莱纳
+name_zh: 马格达莱纳省
 type: Division-1
 meta:
   alpha2: CO-MAG
@@ -8,4 +8,5 @@ meta:
     - co-mag
     - mag
     - magdalena department
+    - 马格达莱纳
   category: DEPARTMENT

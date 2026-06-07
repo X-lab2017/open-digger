@@ -1,5 +1,5 @@
 name: Hövsgöl
-name_zh: 库苏古尔
+name_zh: 库苏古尔省
 type: Division-1
 meta:
   alpha2: MN-041
@@ -9,4 +9,5 @@ meta:
     - '041'
     - hövsgöl province
     - khovsgol
+    - 库苏古尔
   category: PROVINCE

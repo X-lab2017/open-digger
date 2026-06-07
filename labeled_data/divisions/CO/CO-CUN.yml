@@ -1,5 +1,5 @@
-name: Cundinamarca
-name_zh: 昆迪纳马卡
+name: Bogota
+name_zh: 波哥大
 type: Division-1
 meta:
   alpha2: CO-CUN
@@ -8,4 +8,5 @@ meta:
     - co-cun
     - cun
     - cundinamarca department
+    - 昆迪纳马卡
   category: DEPARTMENT

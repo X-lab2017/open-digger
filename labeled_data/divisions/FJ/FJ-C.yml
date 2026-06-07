@@ -1,5 +1,5 @@
 name: Central
-name_zh: 中央区
+name_zh: 中央大区
 type: Division-1
 meta:
   alpha2: FJ-C
@@ -28,4 +28,5 @@ meta:
     - fj-14
     - '14'
     - tailevu province
+    - 中央区
   category: DIVISION

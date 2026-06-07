@@ -1,5 +1,5 @@
-name: Limbažu novads
-name_zh: 利姆巴济市镇
+name: Limbaži
+name_zh: 林巴濟自治市
 type: Division-1
 meta:
   alpha2: LV-054
@@ -10,4 +10,5 @@ meta:
     - limbažu novads municipality
     - limbaži
     - limbaži municipality
+    - 利姆巴济市镇
   category: MUNICIPALITY

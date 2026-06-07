@@ -1,5 +1,5 @@
-name: Al Janūbī
-name_zh: 中心区
+name: HaDarom
+name_zh: 南部区
 type: Division-1
 meta:
   alpha2: IL-D
@@ -15,4 +15,5 @@ meta:
     - southern
     - southern district
     - south district
+    - 中心区
   category: DISTRICT

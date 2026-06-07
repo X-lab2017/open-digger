@@ -1,0 +1,11 @@
+name: Jawa Timur
+name_zh: 东爪哇省
+type: Division-1
+meta:
+  alpha2: ID-JI
+  includes:
+    - jawa timur
+    - id-ji
+    - ji
+    - jawa timur province
+  category: PROVINCE

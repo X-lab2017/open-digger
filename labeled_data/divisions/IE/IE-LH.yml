@@ -1,0 +1,11 @@
+name: Louth
+name_zh: 劳斯郡
+type: Division-1
+meta:
+  alpha2: IE-LH
+  includes:
+    - louth
+    - ie-lh
+    - lh
+    - louth county
+  category: PROVINCE

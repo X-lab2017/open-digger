@@ -1,0 +1,11 @@
+name: Namur
+name_zh: 那慕尔省
+type: Division-1
+meta:
+  alpha2: BE-WNA
+  includes:
+    - namur
+    - be-wna
+    - wna
+    - namur province
+  category: PROVINCE

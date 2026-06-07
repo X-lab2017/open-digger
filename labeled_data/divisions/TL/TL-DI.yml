@@ -1,5 +1,5 @@
-name: Díli
-name_zh: 帝力
+name: Dili
+name_zh: 帝力县
 type: Division-1
 meta:
   alpha2: TL-DI
@@ -9,4 +9,5 @@ meta:
     - di
     - díli municipality
     - dili
+    - 帝力
   category: MUNICIPALITY

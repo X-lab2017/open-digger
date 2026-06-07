@@ -1,5 +1,5 @@
 name: Prachuap Khiri Khan
-name_zh: 华欣府
+name_zh: 巴蜀府
 type: Division-1
 meta:
   alpha2: TH-77
@@ -8,4 +8,5 @@ meta:
     - th-77
     - '77'
     - prachuap khiri khan province
+    - 华欣府
   category: PROVINCE

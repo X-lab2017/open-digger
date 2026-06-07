@@ -1,5 +1,5 @@
-name: Norra Savolax
-name_zh: 北萨沃
+name: Northern Savonia
+name_zh: 北萨沃尼亚区
 type: Division-1
 meta:
   alpha2: FI-15
@@ -11,4 +11,5 @@ meta:
     - pohjois-savo
     - pohjois-savo region
     - north savo
+    - 北萨沃
   category: REGION

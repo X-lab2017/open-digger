@@ -1,5 +1,5 @@
 name: Gabès
-name_zh: 加贝斯区
+name_zh: 加贝斯省
 type: Division-1
 meta:
   alpha2: TN-81
@@ -8,4 +8,5 @@ meta:
     - tn-81
     - '81'
     - gabès governorate
+    - 加贝斯区
   category: GOVERNORATE

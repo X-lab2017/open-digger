@@ -1,0 +1,11 @@
+name: Novaci
+type: Division-1
+meta:
+  alpha2: MK-55
+  includes:
+    - novaci
+    - mk-507
+    - '507'
+    - novaci municipality
+  category: MUNICIPALITY
+name_zh: 诺瓦济区

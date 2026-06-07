@@ -1,0 +1,11 @@
+name: Oubritenga
+name_zh: 乌布里滕加省
+type: Division-1
+meta:
+  alpha2: BF-OUB
+  includes:
+    - oubritenga
+    - bf-oub
+    - oub
+    - oubritenga province
+  category: PROVINCE

@@ -1,5 +1,5 @@
 name: Central Singapore
-name_zh: 新加坡中区
+name_zh: 中区社区发展理事会
 type: Division-1
 meta:
   alpha2: SG-01
@@ -8,4 +8,5 @@ meta:
     - sg-01
     - '01'
     - central singapore district
+    - 新加坡中区
   category: DISTRICT

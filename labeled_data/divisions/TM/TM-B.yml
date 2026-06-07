@@ -1,5 +1,5 @@
 name: Balkan
-name_zh: 巴尔坎
+name_zh: 巴尔坎州
 type: Division-1
 meta:
   alpha2: TM-B
@@ -8,4 +8,5 @@ meta:
     - tm-b
     - b
     - balkan region
+    - 巴尔坎
   category: REGION

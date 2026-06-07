@@ -83,6 +83,11 @@ meta:
 data:
   labels:
     - GW-BS
-    - GW-L
-    - GW-N
-    - GW-S
+    - GW-BA
+    - GW-BL
+    - GW-BM
+    - GW-CA
+    - GW-GA
+    - GW-OI
+    - GW-QU
+    - GW-TO

@@ -1,0 +1,11 @@
+name: Dublin
+name_zh: 都柏林地区
+type: Division-1
+meta:
+  alpha2: IE-D
+  includes:
+    - baile átha cliath
+    - ie-d
+    - d
+    - baile átha cliath county
+  category: PROVINCE

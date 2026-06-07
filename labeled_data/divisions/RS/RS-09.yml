@@ -1,4 +1,4 @@
-name: Kolubarski okrug
+name: Kolubarski
 type: Division-1
 meta:
   alpha2: RS-09
@@ -8,3 +8,4 @@ meta:
     - '09'
     - kolubarski okrug district
   category: DISTRICT
+name_zh: 科卢巴拉州

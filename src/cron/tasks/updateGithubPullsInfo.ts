@@ -18,6 +18,9 @@ import { InsertRecord } from './updateGithubAppRepoData/utils';
 let round = 0;
 const API_RATE_LIMIT_EXCEEDED = 'API_RATE_LIMIT_EXCEEDED';
 const MISSING_DATA_START = '2025-05-01 00:00:00';
+// 单个 PR 的获取冷却天数：本轮获取过（无论仍 open 还是已 closed）的 PR，
+// 在此天数内不再重复获取，避免仍未关闭的 PR 每 10 分钟被反复抓取。
+const FETCH_COOLDOWN_DAYS = 1;
 
 const task: Task = {
   cron: '*/10 * * * *',
@@ -37,6 +40,20 @@ const task: Task = {
     const token = tokens[round++ % tokens.length];
     const oct = new Octokit({ auth: `Bearer ${token}` });
 
+    // 冷却表：记录每个 PR 最近一次被获取的时间，用于在选取阶段跳过冷却期内的 PR。
+    const createCooldownTable = async () => {
+      await query(`
+        CREATE TABLE IF NOT EXISTS github_pull_fetch_cooldown (
+          platform LowCardinality(String),
+          issue_id UInt64,
+          last_fetch_at DateTime
+        )
+        ENGINE = ReplacingMergeTree(last_fetch_at)
+        ORDER BY (platform, issue_id)
+        SETTINGS index_granularity = 8192
+      `);
+    };
+
     // Find PRs that have an 'opened' event but no 'closed' event in the
     // missing-data window, excluding PRs already backfilled by this task.
     const getMissingClosedPulls = async (limit: number): Promise<any[]> => {
@@ -54,6 +71,12 @@ const task: Task = {
           AND (((platform, events.repo_id) IN (SELECT platform, entity_id FROM flatten_labels WHERE entity_type = 'Repo'))
             OR ((platform, events.org_id) IN (SELECT platform, entity_id FROM flatten_labels WHERE entity_type = 'Org')))
           AND (platform, events.repo_id) NOT IN (SELECT platform, id FROM repo_info WHERE status='not_found')
+          AND issue_id NOT IN (
+            SELECT issue_id FROM github_pull_fetch_cooldown
+            WHERE platform = 'GitHub'
+            GROUP BY issue_id
+            HAVING max(last_fetch_at) >= subtractDays(now(), ${FETCH_COOLDOWN_DAYS})
+          )
         GROUP BY issue_id
         HAVING countIf(action = 'opened') > 0
            AND countIf(action = 'closed') = 0
@@ -144,11 +167,15 @@ const task: Task = {
         if (msg.includes('API rate limit exceeded')) {
           return API_RATE_LIMIT_EXCEEDED;
         }
-        if (e?.status === 404) {
-          // PR 在 GitHub 已不可访问（被删除/转为 private/repo 迁移等）。
+        // 451 Repository access blocked：仓库被封禁/转为 private，已不可访问，
+        // 与 404 一并按 closed 占位处理，避免重复消耗 API 配额。
+        const repoBlocked = e?.status === 451 || msg.includes('Repository access blocked');
+        if (e?.status === 404 || repoBlocked) {
+          // PR 在 GitHub 已不可访问（被删除/转为 private/仓库被封禁/repo 迁移等）。
           // 写一条 from_api=1 的 closed 占位事件（pull_merged=0），
           // 让子查询 NOT IN 识别、下次不再重复调 API。
-          logger.warn(`PR not found, mark closed via 404: ${repoName}#${issueNumber}`);
+          const reason = repoBlocked ? 'repo blocked/private' : 'not found (404)';
+          logger.warn(`PR unavailable (${reason}), mark closed: ${repoName}#${issueNumber}`);
           const nowStr = formatDate(new Date().toISOString());
           const placeholder: InsertRecord = {
             platform: 'GitHub',
@@ -173,6 +200,8 @@ const task: Task = {
       }
     };
 
+    await createCooldownTable();
+
     const pulls = await getMissingClosedPulls(updateCount);
     if (pulls.length === 0) {
       logger.info('No pulls to backfill.');
@@ -185,6 +214,8 @@ const task: Task = {
     let okCount = 0;
     let skipCount = 0;
     const allEvents: InsertRecord[] = [];
+    const cooldownRecords: any[] = [];
+    const cooldownAt = formatDate(new Date().toISOString());
 
     await runTasks(pulls.map(p => async () => {
       if (rateLimitHit) return;
@@ -197,6 +228,13 @@ const task: Task = {
         }
         return;
       }
+      // 只要不是被限流（确实发起了一次 API 获取），就记录冷却时间，
+      // 这样仍处于 open 的 PR 不会在冷却天数内被反复抓取。
+      cooldownRecords.push({
+        platform: 'GitHub',
+        issue_id: +issueId,
+        last_fetch_at: cooldownAt,
+      });
       if (!result) {
         skipCount++;
         return;
@@ -207,6 +245,9 @@ const task: Task = {
 
     if (allEvents.length > 0) {
       await insertRecords(allEvents, 'events');
+    }
+    if (cooldownRecords.length > 0) {
+      await insertRecords(cooldownRecords, 'github_pull_fetch_cooldown');
     }
     logger.info(`Inserted ${allEvents.length} events for ${okCount} pulls, skipped ${skipCount}.`);
     logger.info('UpdateGithubPullsInfoTask done.');

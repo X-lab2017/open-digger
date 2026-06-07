@@ -1,0 +1,11 @@
+name: Tarn-et-Garonne
+name_zh: 塔恩-加龙省
+type: Division-1
+meta:
+  alpha2: FR-82
+  includes:
+    - tarn-et-garonne
+    - fr-82
+    - '82'
+    - tarn-et-garonne metropolitan department
+  category: PROVINCE

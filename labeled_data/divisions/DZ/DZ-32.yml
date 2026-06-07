@@ -1,5 +1,5 @@
 name: El Bayadh
-name_zh: 埃尔巴亚德省
+name_zh: 巴亚兹省
 type: Division-1
 meta:
   alpha2: DZ-32
@@ -8,4 +8,5 @@ meta:
     - dz-32
     - '32'
     - el bayadh province
+    - 埃尔巴亚德省
   category: PROVINCE

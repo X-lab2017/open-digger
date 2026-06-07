@@ -1,5 +1,5 @@
 name: Niederösterreich
-name_zh: 下奥地利
+name_zh: 下奥地利州
 type: Division-1
 meta:
   alpha2: AT-3
@@ -9,4 +9,5 @@ meta:
     - '3'
     - niederösterreich state
     - lower austria
+    - 下奥地利
   category: STATE

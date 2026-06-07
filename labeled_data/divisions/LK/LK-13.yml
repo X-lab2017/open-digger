@@ -1,0 +1,11 @@
+name: Kaḷutara
+name_zh: 卡卢特勒区
+type: Division-1
+meta:
+  alpha2: LK-13
+  includes:
+    - kalutara
+    - lk-13
+    - '13'
+    - kalutara district
+  category: PROVINCE

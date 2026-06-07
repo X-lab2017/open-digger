@@ -1,5 +1,5 @@
 name: Koper
-name_zh: 科佩尔
+name_zh: 科佩爾市
 type: Division-1
 meta:
   alpha2: SI-050
@@ -10,4 +10,5 @@ meta:
     - koper urban municipality
     - capodistria
     - capodistria urban municipality
+    - 科佩尔
   category: URBAN MUNICIPALITY

@@ -1,5 +1,5 @@
 name: Cayo
-name_zh: 凯尤区
+name_zh: 卡约区
 type: Division-1
 meta:
   alpha2: BZ-CY
@@ -8,4 +8,5 @@ meta:
     - bz-cy
     - cy
     - cayo district
+    - 凯尤区
   category: DISTRICT

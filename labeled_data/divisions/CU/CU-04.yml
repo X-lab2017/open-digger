@@ -1,5 +1,5 @@
 name: Matanzas
-name_zh: 马坦萨斯
+name_zh: 马坦萨斯省
 type: Division-1
 meta:
   alpha2: CU-04
@@ -8,4 +8,5 @@ meta:
     - cu-04
     - '04'
     - matanzas province
+    - 马坦萨斯
   category: PROVINCE

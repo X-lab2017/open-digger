@@ -1,0 +1,13 @@
+name: Gostivar
+name_zh: 戈斯蒂瓦区
+type: Division-1
+meta:
+  alpha2: MK-19
+  includes:
+    - gostivar
+    - mk-604
+    - '604'
+    - gostivar municipality
+    - municipality of gostivar
+    - 戈斯蒂瓦尔
+  category: MUNICIPALITY

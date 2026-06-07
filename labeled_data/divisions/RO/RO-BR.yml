@@ -1,5 +1,5 @@
-name: Brăila
-name_zh: 布雷伊拉县
+name: Braila
+name_zh: 布勒伊拉县
 type: Division-1
 meta:
   alpha2: RO-BR
@@ -8,4 +8,5 @@ meta:
     - ro-br
     - br
     - brăila department
+    - 布雷伊拉县
   category: DEPARTMENT

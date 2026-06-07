@@ -1,5 +1,5 @@
-name: Lai Châu
-name_zh: 莱州
+name: Lai Chau
+name_zh: 莱州省
 type: Division-1
 meta:
   alpha2: VN-01
@@ -9,4 +9,5 @@ meta:
     - '01'
     - lai châu province
     - lai chau
+    - 莱州
   category: PROVINCE

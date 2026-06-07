@@ -1,4 +1,4 @@
-name: Salāmāt
+name: Salamat
 type: Division-1
 meta:
   alpha2: TD-SA
@@ -10,3 +10,4 @@ meta:
     - salāmāt
     - salāmāt province
   category: PROVINCE
+name_zh: 萨拉马特区

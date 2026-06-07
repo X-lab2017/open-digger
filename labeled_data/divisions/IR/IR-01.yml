@@ -1,5 +1,5 @@
-name: Gīlān
-name_zh: 吉兰省
+name: East Azarbaijan
+name_zh: 东阿塞拜疆省
 type: Division-1
 meta:
   alpha2: IR-01
@@ -9,4 +9,5 @@ meta:
     - '01'
     - gīlān province
     - gilan province
+    - 吉兰省
   category: PROVINCE

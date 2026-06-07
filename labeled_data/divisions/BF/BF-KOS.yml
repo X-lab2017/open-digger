@@ -1,0 +1,11 @@
+name: Kossi
+name_zh: 孔西省
+type: Division-1
+meta:
+  alpha2: BF-KOS
+  includes:
+    - kossi
+    - bf-kos
+    - kos
+    - kossi province
+  category: PROVINCE

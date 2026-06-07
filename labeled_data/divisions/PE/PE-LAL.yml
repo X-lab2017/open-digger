@@ -1,5 +1,5 @@
 name: La Libertad
-name_zh: 拉利伯塔德
+name_zh: 拉利伯塔德大区
 type: Division-1
 meta:
   alpha2: PE-LAL
@@ -10,4 +10,5 @@ meta:
     - la libertad region
     - qispi kay
     - qispi kay region
+    - 拉利伯塔德
   category: REGION

@@ -1,4 +1,4 @@
-name: Zavrč
+name: Zavrc
 type: Division-1
 meta:
   alpha2: SI-143
@@ -8,3 +8,4 @@ meta:
     - '143'
     - zavrč municipality
   category: MUNICIPALITY
+name_zh: 薩弗爾奇

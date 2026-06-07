@@ -1,0 +1,11 @@
+name: Sulawesi Barat
+name_zh: 西苏拉威西省
+type: Division-1
+meta:
+  alpha2: ID-SR
+  includes:
+    - sulawesi barat
+    - id-sr
+    - sr
+    - sulawesi barat province
+  category: PROVINCE

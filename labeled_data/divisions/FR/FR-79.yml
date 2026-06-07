@@ -1,0 +1,11 @@
+name: Deux-Sèvres
+name_zh: 德塞夫勒省
+type: Division-1
+meta:
+  alpha2: FR-79
+  includes:
+    - deux-sèvres
+    - fr-79
+    - '79'
+    - deux-sèvres metropolitan department
+  category: PROVINCE

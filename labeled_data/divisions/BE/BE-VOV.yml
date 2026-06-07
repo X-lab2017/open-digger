@@ -1,0 +1,11 @@
+name: East Flanders
+name_zh: 东佛兰德省
+type: Division-1
+meta:
+  alpha2: BE-VOV
+  includes:
+    - oost-vlaanderen
+    - be-vov
+    - vov
+    - oost-vlaanderen province
+  category: PROVINCE

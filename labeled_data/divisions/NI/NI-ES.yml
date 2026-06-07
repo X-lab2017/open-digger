@@ -1,5 +1,5 @@
 name: Estelí
-name_zh: 埃斯特利
+name_zh: 埃斯特利省
 type: Division-1
 meta:
   alpha2: NI-ES
@@ -9,4 +9,5 @@ meta:
     - es
     - estelí department
     - esteli
+    - 埃斯特利
   category: DEPARTMENT

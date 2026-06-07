@@ -1,0 +1,11 @@
+name: Paul
+name_zh: 保尔县
+type: Division-1
+meta:
+  alpha2: CV-PA
+  includes:
+    - paul
+    - cv-pa
+    - pa
+    - paul municipality
+  category: PROVINCE

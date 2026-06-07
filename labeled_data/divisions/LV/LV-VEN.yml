@@ -1,5 +1,5 @@
 name: Ventspils
-name_zh: 文茨皮尔斯市
+name_zh: 文茨皮尔斯
 type: Division-1
 meta:
   alpha2: LV-VEN
@@ -8,4 +8,5 @@ meta:
     - lv-ven
     - ven
     - ventspils state city
+    - 文茨皮尔斯市
   category: STATE CITY

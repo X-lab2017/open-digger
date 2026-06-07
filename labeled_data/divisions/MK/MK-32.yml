@@ -1,0 +1,11 @@
+name: Zelenikovo
+type: Division-1
+meta:
+  alpha2: MK-32
+  includes:
+    - zelenikovo
+    - mk-806
+    - '806'
+    - zelenikovo municipality
+  category: MUNICIPALITY
+name_zh: 泽伦尼科沃区

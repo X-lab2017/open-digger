@@ -1,0 +1,11 @@
+name: Biella
+name_zh: 比耶拉省
+type: Division-1
+meta:
+  alpha2: IT-BI
+  includes:
+    - biella
+    - it-bi
+    - bi
+    - biella province
+  category: PROVINCE

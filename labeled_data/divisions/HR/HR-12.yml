@@ -1,5 +1,5 @@
-name: Brodsko-posavska županija
-name_zh: 布罗德-波萨夫县
+name: Brodsko-Posavska
+name_zh: 布罗德-波萨维纳县
 type: Division-1
 meta:
   alpha2: HR-12
@@ -10,4 +10,5 @@ meta:
     - brodsko-posavska županija county
     - brod-posavina county
     - brod-posavina
+    - 布罗德-波萨夫县
   category: COUNTY

@@ -1,5 +1,5 @@
-name: Muğla
-name_zh: 穆格拉
+name: Mugla
+name_zh: 穆拉省
 type: Division-1
 meta:
   alpha2: TR-48
@@ -8,4 +8,5 @@ meta:
     - tr-48
     - '48'
     - muğla province
+    - 穆格拉
   category: PROVINCE

@@ -1,0 +1,11 @@
+name: Nuvara Ĕliya
+name_zh: 努沃勒埃利耶区
+type: Division-1
+meta:
+  alpha2: LK-23
+  includes:
+    - nuvara ĕliya
+    - lk-23
+    - '23'
+    - nuvara ĕliya district
+  category: PROVINCE

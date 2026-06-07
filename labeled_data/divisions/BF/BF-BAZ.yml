@@ -1,0 +1,11 @@
+name: Bazéga
+name_zh: 巴泽加省
+type: Division-1
+meta:
+  alpha2: BF-BAZ
+  includes:
+    - bazèga
+    - bf-baz
+    - baz
+    - bazèga province
+  category: PROVINCE

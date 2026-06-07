@@ -1,0 +1,11 @@
+name: Messina
+name_zh: 墨西拿省
+type: Division-1
+meta:
+  alpha2: IT-ME
+  includes:
+    - messina
+    - it-me
+    - me
+    - messina metropolitan city
+  category: PROVINCE

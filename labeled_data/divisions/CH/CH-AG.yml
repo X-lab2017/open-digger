@@ -1,5 +1,5 @@
 name: Aargau
-name_zh: 阿尔高
+name_zh: 阿尔高州
 type: Division-1
 meta:
   alpha2: CH-AG
@@ -8,4 +8,5 @@ meta:
     - ch-ag
     - ag
     - aargau canton
+    - 阿尔高
   category: CANTON

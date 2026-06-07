@@ -1,0 +1,11 @@
+name: Valverde
+name_zh: 巴韦德省
+type: Division-1
+meta:
+  alpha2: DO-27
+  includes:
+    - valverde
+    - do-27
+    - '27'
+    - valverde province
+  category: PROVINCE

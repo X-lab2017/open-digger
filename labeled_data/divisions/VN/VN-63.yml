@@ -1,5 +1,5 @@
 name: Hà Nam
-name_zh: 河南
+name_zh: 河南省
 type: Division-1
 meta:
   alpha2: VN-63
@@ -9,4 +9,5 @@ meta:
     - '63'
     - hà nam province
     - ha nam
+    - 河南
   category: PROVINCE

@@ -1,5 +1,5 @@
-name: Xaignabouli
-name_zh: 乌多姆赛省
+name: Xaignabouri
+name_zh: 沙耶武里省
 type: Division-1
 meta:
   alpha2: LA-XA
@@ -11,4 +11,5 @@ meta:
     - xayabury
     - xayabury province
     - sainyabuli province
+    - 乌多姆赛省
   category: PROVINCE

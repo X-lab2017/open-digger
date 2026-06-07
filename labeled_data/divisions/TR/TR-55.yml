@@ -1,5 +1,5 @@
 name: Samsun
-name_zh: 萨姆松
+name_zh: 萨姆松省
 type: Division-1
 meta:
   alpha2: TR-55
@@ -8,4 +8,5 @@ meta:
     - tr-55
     - '55'
     - samsun province
+    - 萨姆松
   category: PROVINCE

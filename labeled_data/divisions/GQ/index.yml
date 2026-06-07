@@ -1,4 +1,4 @@
-name: Equatorial Guinea
+name: Eq. Guinea
 name_zh: 赤道几内亚
 type: Division-0
 meta:
@@ -85,5 +85,11 @@ meta:
       count: 1966
 data:
   labels:
-    - GQ-C
-    - GQ-I
+    - GQ-AN
+    - GQ-BN
+    - GQ-BS
+    - GQ-CS
+    - GQ-DJ
+    - GQ-KN
+    - GQ-LI
+    - GQ-WN

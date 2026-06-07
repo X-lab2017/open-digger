@@ -1,0 +1,11 @@
+name: Padova
+name_zh: 帕多瓦省
+type: Division-1
+meta:
+  alpha2: IT-PD
+  includes:
+    - padova
+    - it-pd
+    - pd
+    - padova province
+  category: PROVINCE

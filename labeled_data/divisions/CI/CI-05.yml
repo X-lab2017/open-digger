@@ -1,0 +1,11 @@
+name: Comoe
+name_zh: 科莫埃省
+type: Division-1
+meta:
+  alpha2: CI-05
+  includes:
+    - comoé
+    - ci-cm
+    - cm
+    - comoé district
+  category: DISTRICT

@@ -1,0 +1,11 @@
+name: Córdoba
+name_zh: 科尔多瓦省
+type: Division-1
+meta:
+  alpha2: ES-CO
+  includes:
+    - córdoba
+    - es-co
+    - co
+    - córdoba province
+  category: PROVINCE

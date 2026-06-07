@@ -1,0 +1,32 @@
+name: Boke
+name_zh: 博凯大区
+type: Division-1
+meta:
+  alpha2: GN-BK
+  includes:
+    - boffa
+    - gn-bf
+    - bf
+    - boffa prefecture
+    - boké
+    - gn-b
+    - b
+    - boké administrative region
+    - gn-bk
+    - bk
+    - boké prefecture
+    - fria
+    - gn-fr
+    - fr
+    - fria prefecture
+    - gaoual
+    - gn-ga
+    - ga
+    - gaoual prefecture
+    - koundara
+    - gn-kn
+    - kn
+    - koundara prefecture
+    - boké region
+    - 博凯区
+  category: ADMINISTRATIVE REGION

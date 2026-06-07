@@ -1,0 +1,11 @@
+name: Ferrara
+name_zh: 费拉拉省
+type: Division-1
+meta:
+  alpha2: IT-FE
+  includes:
+    - ferrara
+    - it-fe
+    - fe
+    - ferrara province
+  category: PROVINCE

@@ -1,5 +1,5 @@
 name: Naxçıvan
-name_zh: 纳希切万自治共和国
+name_zh: 纳希切万
 type: Division-1
 meta:
   alpha2: AZ-NX
@@ -41,4 +41,5 @@ meta:
     - şərur rayon
     - nakhichevan autonomous republic
     - nakhchivan autonomous republic
+    - 纳希切万自治共和国
   category: AUTONOMOUS REPUBLIC

@@ -1,5 +1,5 @@
 name: Matabeleland South
-name_zh: 马塔贝莱兰南省
+name_zh: 南马塔贝莱兰省
 type: Division-1
 meta:
   alpha2: ZW-MS
@@ -8,4 +8,5 @@ meta:
     - zw-ms
     - ms
     - matabeleland south province
+    - 马塔贝莱兰南省
   category: PROVINCE

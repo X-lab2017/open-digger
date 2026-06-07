@@ -1,5 +1,5 @@
-name: Voronežskaja oblast'
-name_zh: 沃罗涅什
+name: Voronezh
+name_zh: 沃罗涅日州
 type: Division-1
 meta:
   alpha2: RU-VOR
@@ -12,4 +12,5 @@ meta:
     - voronežskaja oblast' administrative region
     - voronezh oblast
     - voronezh
+    - 沃罗涅什
   category: ADMINISTRATIVE REGION

@@ -1,0 +1,11 @@
+name: Corse-du-Sud
+name_zh: 南科西嘉
+type: Division-1
+meta:
+  alpha2: FR-2A
+  includes:
+    - corse-du-sud
+    - fr-2a
+    - 2a
+    - corse-du-sud metropolitan department
+  category: PROVINCE

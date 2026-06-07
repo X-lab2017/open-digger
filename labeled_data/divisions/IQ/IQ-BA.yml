@@ -1,5 +1,5 @@
-name: Al Başrah
-name_zh: 安巴尔省
+name: Al-Basrah
+name_zh: 巴士拉省
 type: Division-1
 meta:
   alpha2: IQ-BA
@@ -10,4 +10,5 @@ meta:
     - al başrah governorate
     - basra governorate
     - al-basra governorate
+    - 安巴尔省
   category: GOVERNORATE

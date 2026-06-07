@@ -1,0 +1,11 @@
+name: Saint Anne Sandy Point
+name_zh: 圣安娜沙角区
+type: Division-1
+meta:
+  alpha2: KN-02
+  includes:
+    - saint anne sandy point
+    - kn-02
+    - '02'
+    - saint anne sandy point parish
+  category: PROVINCE

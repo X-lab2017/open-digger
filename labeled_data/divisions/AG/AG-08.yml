@@ -1,5 +1,5 @@
 name: Saint Philip
-name_zh: 圣菲利普
+name_zh: 圣菲利普区
 type: Division-1
 meta:
   alpha2: AG-08
@@ -8,4 +8,5 @@ meta:
     - ag-08
     - '08'
     - saint philip parish
+    - 圣菲利普
   category: PARISH

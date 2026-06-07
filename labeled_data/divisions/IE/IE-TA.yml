@@ -1,0 +1,11 @@
+name: North Tipperary
+name_zh: 蒂珀雷里郡
+type: Division-1
+meta:
+  alpha2: IE-TA
+  includes:
+    - tiobraid árann
+    - ie-ta
+    - ta
+    - tiobraid árann county
+  category: PROVINCE

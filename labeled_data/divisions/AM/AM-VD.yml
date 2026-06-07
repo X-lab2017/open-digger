@@ -1,5 +1,5 @@
-name: Vayoć Jor
-name_zh: 沃伊茨佐尔省
+name: Vayots Dzor
+name_zh: 瓦约茨佐尔省
 type: Division-1
 meta:
   alpha2: AM-VD
@@ -9,4 +9,5 @@ meta:
     - vd
     - vayoć jor region
     - vayots dzor province
+    - 沃伊茨佐尔省
   category: REGION

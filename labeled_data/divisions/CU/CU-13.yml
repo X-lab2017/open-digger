@@ -1,5 +1,5 @@
 name: Santiago de Cuba
-name_zh: 圣地亚哥德古巴
+name_zh: 圣地亚哥省
 type: Division-1
 meta:
   alpha2: CU-13
@@ -8,4 +8,5 @@ meta:
     - cu-13
     - '13'
     - santiago de cuba province
+    - 圣地亚哥德古巴
   category: PROVINCE

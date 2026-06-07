@@ -1,5 +1,5 @@
-name: Odeska oblast
-name_zh: 敖德萨
+name: Odessa
+name_zh: 敖德萨州
 type: Division-1
 meta:
   alpha2: UA-51
@@ -11,4 +11,5 @@ meta:
     - odesa oblast
     - odes'ka oblast
     - odessa
+    - 敖德萨
   category: REGION

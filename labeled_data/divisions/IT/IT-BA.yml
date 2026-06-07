@@ -1,0 +1,11 @@
+name: Bari
+name_zh: 巴里省
+type: Division-1
+meta:
+  alpha2: IT-BA
+  includes:
+    - bari
+    - it-ba
+    - ba
+    - bari metropolitan city
+  category: PROVINCE

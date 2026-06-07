@@ -1,0 +1,11 @@
+name: Yonne
+name_zh: 约讷省
+type: Division-1
+meta:
+  alpha2: FR-89
+  includes:
+    - yonne
+    - fr-89
+    - '89'
+    - yonne metropolitan department
+  category: PROVINCE

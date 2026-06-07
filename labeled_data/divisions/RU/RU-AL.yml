@@ -1,5 +1,5 @@
-name: Altay
-name_zh: 阿尔泰边疆区
+name: Gorno-Altay
+name_zh: 阿尔泰共和国
 type: Division-1
 meta:
   alpha2: RU-AL
@@ -11,4 +11,5 @@ meta:
     - altay
     - altay republic
     - altai republic
+    - 阿尔泰边疆区
   category: REPUBLIC

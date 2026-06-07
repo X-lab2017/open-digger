@@ -1,0 +1,11 @@
+name: Saint Mary Cayon
+name_zh: 圣玛丽卡永区
+type: Division-1
+meta:
+  alpha2: KN-08
+  includes:
+    - saint mary cayon
+    - kn-08
+    - '08'
+    - saint mary cayon parish
+  category: PROVINCE

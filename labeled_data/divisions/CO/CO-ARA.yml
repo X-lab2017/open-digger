@@ -1,5 +1,5 @@
 name: Arauca
-name_zh: 阿劳卡
+name_zh: 阿劳卡省
 type: Division-1
 meta:
   alpha2: CO-ARA
@@ -8,4 +8,5 @@ meta:
     - co-ara
     - ara
     - arauca department
+    - 阿劳卡
   category: DEPARTMENT

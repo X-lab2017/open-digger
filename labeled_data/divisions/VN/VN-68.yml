@@ -1,5 +1,5 @@
 name: Phú Thọ
-name_zh: 富寿
+name_zh: 富寿省
 type: Division-1
 meta:
   alpha2: VN-68
@@ -10,4 +10,5 @@ meta:
     - phú thọ province
     - phu tho
     - phu tho province
+    - 富寿
   category: PROVINCE

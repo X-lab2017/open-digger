@@ -1,5 +1,5 @@
 name: Sancti Spíritus
-name_zh: 圣斯皮里图斯
+name_zh: 圣斯皮里图斯省
 type: Division-1
 meta:
   alpha2: CU-07
@@ -9,4 +9,5 @@ meta:
     - '07'
     - sancti spíritus province
     - sancti spiritus
+    - 圣斯皮里图斯
   category: PROVINCE

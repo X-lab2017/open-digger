@@ -1,0 +1,11 @@
+name: Alpes-Maritimes
+name_zh: 滨海阿尔卑斯省
+type: Division-1
+meta:
+  alpha2: FR-06
+  includes:
+    - alpes-maritimes
+    - fr-06
+    - '06'
+    - alpes-maritimes metropolitan department
+  category: PROVINCE

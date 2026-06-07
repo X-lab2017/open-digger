@@ -1,0 +1,11 @@
+name: Imperia
+name_zh: 因佩里亚省
+type: Division-1
+meta:
+  alpha2: IT-IM
+  includes:
+    - imperia
+    - it-im
+    - im
+    - imperia province
+  category: PROVINCE

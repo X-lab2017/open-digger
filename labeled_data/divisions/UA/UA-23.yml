@@ -1,5 +1,5 @@
-name: Zaporizka oblast
-name_zh: 扎波罗热
+name: Zaporizhzhya
+name_zh: 扎波罗热州
 type: Division-1
 meta:
   alpha2: UA-23
@@ -11,4 +11,5 @@ meta:
     - zaporizhia oblast
     - zaporiz'ka oblast
     - zaporizhzhya
+    - 扎波罗热
   category: REGION

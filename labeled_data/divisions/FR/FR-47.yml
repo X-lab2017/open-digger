@@ -1,0 +1,11 @@
+name: Lot-et-Garonne
+name_zh: 洛特-加龙省
+type: Division-1
+meta:
+  alpha2: FR-47
+  includes:
+    - lot-et-garonne
+    - fr-47
+    - '47'
+    - lot-et-garonne metropolitan department
+  category: PROVINCE

@@ -1,0 +1,11 @@
+name: Indre
+name_zh: 安德尔省
+type: Division-1
+meta:
+  alpha2: FR-36
+  includes:
+    - indre
+    - fr-36
+    - '36'
+    - indre metropolitan department
+  category: PROVINCE

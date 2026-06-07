@@ -1,5 +1,5 @@
-name: Međimurska županija
-name_zh: 梅久穆尔耶县
+name: Medimurska
+name_zh: 梅吉穆列县
 type: Division-1
 meta:
   alpha2: HR-20
@@ -10,4 +10,5 @@ meta:
     - međimurska županija county
     - međimurje
     - međimurje county
+    - 梅久穆尔耶县
   category: COUNTY

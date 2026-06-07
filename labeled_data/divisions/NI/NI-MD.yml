@@ -1,5 +1,5 @@
 name: Madriz
-name_zh: 马德里斯
+name_zh: 马德里斯省
 type: Division-1
 meta:
   alpha2: NI-MD
@@ -9,4 +9,5 @@ meta:
     - md
     - madriz department
     - mg
+    - 马德里斯
   category: DEPARTMENT

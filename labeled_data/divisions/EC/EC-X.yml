@@ -1,5 +1,5 @@
 name: Cotopaxi
-name_zh: 科托帕希
+name_zh: 科托帕希省
 type: Division-1
 meta:
   alpha2: EC-X
@@ -8,4 +8,5 @@ meta:
     - ec-x
     - x
     - cotopaxi province
+    - 科托帕希
   category: PROVINCE

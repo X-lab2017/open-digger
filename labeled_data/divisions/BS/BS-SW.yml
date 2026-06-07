@@ -1,5 +1,5 @@
 name: Spanish Wells
-name_zh: 斯帕尼什韦尔斯
+name_zh: 西班牙韦尔斯
 type: Division-1
 meta:
   alpha2: BS-SW
@@ -8,4 +8,5 @@ meta:
     - bs-sw
     - sw
     - spanish wells district
+    - 斯帕尼什韦尔斯
   category: DISTRICT

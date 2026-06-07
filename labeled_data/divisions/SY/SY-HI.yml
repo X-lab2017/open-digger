@@ -1,5 +1,5 @@
-name: Ḩimş
-name_zh: 大马士革乡村省
+name: Homs (Hims)
+name_zh: 霍姆斯省
 type: Division-1
 meta:
   alpha2: SY-HI
@@ -9,4 +9,5 @@ meta:
     - hi
     - ḩimş province
     - homs governorate
+    - 大马士革乡村省
   category: PROVINCE

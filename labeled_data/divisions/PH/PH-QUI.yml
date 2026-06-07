@@ -1,0 +1,11 @@
+name: Quirino
+name_zh: 季里诺省
+type: Division-1
+meta:
+  alpha2: PH-QUI
+  includes:
+    - kirino
+    - ph-qui
+    - qui
+    - kirino province
+  category: PROVINCE

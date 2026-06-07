@@ -1,5 +1,5 @@
-name: Jammu and Kashmīr
-name_zh: 查谟和克什米尔
+name: Jammu and Kashmir
+name_zh: 查谟-克什米尔邦
 type: Division-1
 meta:
   alpha2: IN-JK
@@ -8,4 +8,5 @@ meta:
     - in-jk
     - jk
     - jammu and kashmīr union territory
+    - 查谟和克什米尔
   category: UNION TERRITORY

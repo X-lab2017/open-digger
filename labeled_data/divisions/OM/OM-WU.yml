@@ -1,5 +1,5 @@
-name: Al Wusţá
-name_zh: 瓦西特省
+name: Al Wusta
+name_zh: 中部省
 type: Division-1
 meta:
   alpha2: OM-WU
@@ -9,4 +9,5 @@ meta:
     - wu
     - al wusţá governorate
     - al wusta governorate
+    - 瓦西特省
   category: GOVERNORATE

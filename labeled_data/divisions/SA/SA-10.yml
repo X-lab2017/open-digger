@@ -1,5 +1,5 @@
-name: Najrān
-name_zh: 纳季兰省
+name: Najran
+name_zh: 奈季兰省
 type: Division-1
 meta:
   alpha2: SA-10
@@ -10,4 +10,5 @@ meta:
     - najrān region
     - nar
     - najran province
+    - 纳季兰省
   category: REGION

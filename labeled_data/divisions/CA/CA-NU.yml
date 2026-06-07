@@ -1,5 +1,5 @@
 name: Nunavut
-name_zh: 努纳武特地区
+name_zh: 努纳武特
 type: Division-1
 meta:
   alpha2: CA-NU
@@ -8,4 +8,5 @@ meta:
     - ca-nu
     - nu
     - nunavut territory
+    - 努纳武特地区
   category: TERRITORY

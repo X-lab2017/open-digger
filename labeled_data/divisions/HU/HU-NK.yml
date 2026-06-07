@@ -1,5 +1,5 @@
 name: Nagykanizsa
-name_zh: 大卡尼察
+name_zh: 瑙吉考尼饶
 type: Division-1
 meta:
   alpha2: HU-NK
@@ -8,4 +8,5 @@ meta:
     - hu-nk
     - nk
     - nagykanizsa city with county rights
+    - 大卡尼察
   category: CITY WITH COUNTY RIGHTS

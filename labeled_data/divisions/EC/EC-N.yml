@@ -1,5 +1,5 @@
 name: Napo
-name_zh: 纳波
+name_zh: 纳波省
 type: Division-1
 meta:
   alpha2: EC-N
@@ -8,4 +8,5 @@ meta:
     - ec-n
     - 'n'
     - napo province
+    - 纳波
   category: PROVINCE

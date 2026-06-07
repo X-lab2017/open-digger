@@ -1,5 +1,5 @@
 name: Orhon
-name_zh: 鄂尔浑
+name_zh: 鄂尔浑省
 type: Division-1
 meta:
   alpha2: MN-035
@@ -10,4 +10,5 @@ meta:
     - orhon province
     - orkhon
     - orkhon province
+    - 鄂尔浑
   category: PROVINCE

@@ -1,0 +1,11 @@
+name: Sulu
+name_zh: 苏禄省
+type: Division-1
+meta:
+  alpha2: PH-SLU
+  includes:
+    - sulu
+    - ph-slu
+    - slu
+    - sulu province
+  category: PROVINCE

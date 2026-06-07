@@ -1,5 +1,5 @@
 name: Zamora Chinchipe
-name_zh: 萨莫拉钦奇佩
+name_zh: 萨莫拉-钦奇佩省
 type: Division-1
 meta:
   alpha2: EC-Z
@@ -8,4 +8,5 @@ meta:
     - ec-z
     - z
     - zamora chinchipe province
+    - 萨莫拉钦奇佩
   category: PROVINCE

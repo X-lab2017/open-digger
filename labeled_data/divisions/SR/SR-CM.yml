@@ -1,5 +1,5 @@
 name: Commewijne
-name_zh: 科梅维纳区
+name_zh: 科默韦讷区
 type: Division-1
 meta:
   alpha2: SR-CM
@@ -8,4 +8,5 @@ meta:
     - sr-cm
     - cm
     - commewijne district
+    - 科梅维纳区
   category: DISTRICT

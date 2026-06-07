@@ -1,5 +1,5 @@
-name: Antsiranana
-name_zh: 安德罗伊
+name: Diana
+name_zh: 黛安娜
 type: Division-1
 meta:
   alpha2: MG-D
@@ -11,4 +11,5 @@ meta:
     - diana
     - sava
     - sofia
+    - 安德罗伊
   category: PROVINCE

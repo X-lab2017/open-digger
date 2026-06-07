@@ -1,5 +1,5 @@
-name: Astrakhanskaya oblast'
-name_zh: 阿穆尔州
+name: Astrakhan'
+name_zh: 阿斯特拉罕州
 type: Division-1
 meta:
   alpha2: RU-AST
@@ -13,4 +13,5 @@ meta:
     - astrakhan oblast
     - astrakhan
     - astrakhan’
+    - 阿穆尔州
   category: ADMINISTRATIVE REGION

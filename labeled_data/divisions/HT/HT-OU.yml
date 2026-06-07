@@ -1,5 +1,5 @@
 name: Ouest
-name_zh: Nord-Ouest Department
+name_zh: 西部省
 type: Division-1
 meta:
   alpha2: HT-OU
@@ -11,4 +11,5 @@ meta:
     - ouest
     - ouest department
     - département de l'ouest
+    - Nord-Ouest Department
   category: DEPARTMENT

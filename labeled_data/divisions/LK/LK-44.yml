@@ -1,0 +1,11 @@
+name: Vavuniyāva
+name_zh: 瓦武尼亞區
+type: Division-1
+meta:
+  alpha2: LK-44
+  includes:
+    - vavuniya
+    - lk-44
+    - '44'
+    - vavuniya district
+  category: PROVINCE

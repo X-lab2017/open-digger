@@ -1,5 +1,5 @@
 name: Rivière du Rempart
-name_zh: 里维耶尔-杜-雷姆帕特区
+name_zh: 朗帕河区
 type: Division-1
 meta:
   alpha2: MU-RR
@@ -9,4 +9,5 @@ meta:
     - rr
     - rivière du rempart district
     - rivière noire district
+    - 里维耶尔-杜-雷姆帕特区
   category: DISTRICT

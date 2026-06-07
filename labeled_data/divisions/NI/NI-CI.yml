@@ -1,5 +1,5 @@
 name: Chinandega
-name_zh: 奇南德加
+name_zh: 奇南德加省
 type: Division-1
 meta:
   alpha2: NI-CI
@@ -9,4 +9,5 @@ meta:
     - ci
     - chinandega department
     - cn
+    - 奇南德加
   category: DEPARTMENT

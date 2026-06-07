@@ -1,5 +1,5 @@
 name: La Guajira
-name_zh: 拉瓜希拉
+name_zh: 瓜希拉省
 type: Division-1
 meta:
   alpha2: CO-LAG
@@ -9,4 +9,5 @@ meta:
     - lag
     - la guajira department
     - louisiana
+    - 拉瓜希拉
   category: DEPARTMENT

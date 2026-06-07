@@ -1,5 +1,5 @@
 name: Imbabura
-name_zh: 因巴布拉
+name_zh: 因巴布拉省
 type: Division-1
 meta:
   alpha2: EC-I
@@ -8,4 +8,5 @@ meta:
     - ec-i
     - i
     - imbabura province
+    - 因巴布拉
   category: PROVINCE

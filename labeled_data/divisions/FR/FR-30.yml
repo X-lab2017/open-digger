@@ -1,0 +1,11 @@
+name: Gard
+name_zh: 加尔省
+type: Division-1
+meta:
+  alpha2: FR-30
+  includes:
+    - gard
+    - fr-30
+    - '30'
+    - gard metropolitan department
+  category: PROVINCE

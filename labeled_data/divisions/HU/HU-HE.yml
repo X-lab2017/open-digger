@@ -1,5 +1,5 @@
 name: Heves
-name_zh: 赫维什
+name_zh: 赫维什州
 type: Division-1
 meta:
   alpha2: HU-HE
@@ -8,4 +8,5 @@ meta:
     - hu-he
     - he
     - heves county
+    - 赫维什
   category: COUNTY

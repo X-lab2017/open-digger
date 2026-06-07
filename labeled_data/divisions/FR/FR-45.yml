@@ -1,0 +1,11 @@
+name: Loiret
+name_zh: 卢瓦雷省
+type: Division-1
+meta:
+  alpha2: FR-45
+  includes:
+    - loiret
+    - fr-45
+    - '45'
+    - loiret metropolitan department
+  category: PROVINCE

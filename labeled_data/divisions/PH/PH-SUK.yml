@@ -1,0 +1,11 @@
+name: Sultan Kudarat
+name_zh: 苏丹库达拉省
+type: Division-1
+meta:
+  alpha2: PH-SUK
+  includes:
+    - sultan kudarat
+    - ph-suk
+    - suk
+    - sultan kudarat province
+  category: PROVINCE

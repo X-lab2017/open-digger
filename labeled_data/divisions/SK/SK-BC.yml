@@ -1,5 +1,5 @@
-name: Banskobystrický kraj
-name_zh: 班斯卡比斯特里察州
+name: Banskobystrický
+name_zh: 班斯卡·比斯特理察州
 type: Division-1
 meta:
   alpha2: SK-BC
@@ -10,4 +10,5 @@ meta:
     - banskobystrický kraj region
     - banská bystrica region
     - banska bystrica
+    - 班斯卡比斯特里察州
   category: REGION

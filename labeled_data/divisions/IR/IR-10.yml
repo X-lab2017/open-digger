@@ -1,5 +1,5 @@
-name: Eşfahān
-name_zh: 伊斯法罕省
+name: Khuzestan
+name_zh: 胡齐斯坦省
 type: Division-1
 meta:
   alpha2: IR-10
@@ -9,4 +9,5 @@ meta:
     - '10'
     - eşfahān province
     - isfahan province
+    - 伊斯法罕省
   category: PROVINCE

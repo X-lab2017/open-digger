@@ -1,0 +1,12 @@
+name: Konče
+type: Division-1
+meta:
+  alpha2: MK-41
+  includes:
+    - konče
+    - mk-407
+    - '407'
+    - konče municipality
+    - municipality of konče
+  category: MUNICIPALITY
+name_zh: 孔塞区

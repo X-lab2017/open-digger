@@ -1,0 +1,11 @@
+name: Salerno
+name_zh: 萨莱诺省
+type: Division-1
+meta:
+  alpha2: IT-SA
+  includes:
+    - salerno
+    - it-sa
+    - sa
+    - salerno province
+  category: PROVINCE

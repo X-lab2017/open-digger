@@ -1,0 +1,11 @@
+name: Terni
+name_zh: 特爾尼省
+type: Division-1
+meta:
+  alpha2: IT-TR
+  includes:
+    - terni
+    - it-tr
+    - tr
+    - terni province
+  category: PROVINCE

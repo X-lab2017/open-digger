@@ -1,5 +1,5 @@
 name: Mudug
-name_zh: 穆杜格
+name_zh: 穆杜格州
 type: Division-1
 meta:
   alpha2: SO-MU
@@ -8,4 +8,5 @@ meta:
     - so-mu
     - mu
     - mudug region
+    - 穆杜格
   category: REGION

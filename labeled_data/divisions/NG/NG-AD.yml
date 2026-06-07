@@ -1,5 +1,5 @@
 name: Adamawa
-name_zh: 阿达马瓦州
+name_zh: 阿达马瓦
 type: Division-1
 meta:
   alpha2: NG-AD
@@ -8,4 +8,5 @@ meta:
     - ng-ad
     - ad
     - adamawa state
+    - 阿达马瓦州
   category: STATE

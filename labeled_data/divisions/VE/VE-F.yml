@@ -1,5 +1,5 @@
 name: Bolívar
-name_zh: 玻利瓦尔
+name_zh: 玻利瓦尔州
 type: Division-1
 meta:
   alpha2: VE-F
@@ -9,4 +9,5 @@ meta:
     - f
     - bolívar state
     - bo
+    - 玻利瓦尔
   category: STATE

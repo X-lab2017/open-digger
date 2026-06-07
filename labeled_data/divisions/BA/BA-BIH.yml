@@ -1,5 +1,5 @@
-name: Federacija Bosne i Hercegovine
-name_zh: 波斯尼亚和黑塞哥维那联邦
+name: Herzegovina-Neretva
+name_zh: 黑塞哥维那-涅雷特瓦州
 type: Division-1
 meta:
   alpha2: BA-BIH
@@ -12,4 +12,5 @@ meta:
     - bh
     - br
     - federation of bosnia & herzegovina
+    - 波斯尼亚和黑塞哥维那联邦
   category: ENTITY

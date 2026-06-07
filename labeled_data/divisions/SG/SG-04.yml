@@ -1,5 +1,5 @@
 name: South East
-name_zh: 新加坡东南区
+name_zh: 东南社区发展理事会
 type: Division-1
 meta:
   alpha2: SG-04
@@ -8,4 +8,5 @@ meta:
     - sg-04
     - '04'
     - south east district
+    - 新加坡东南区
   category: DISTRICT

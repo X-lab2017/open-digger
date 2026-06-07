@@ -1,0 +1,11 @@
+name: Sarthe
+name_zh: 萨尔特省
+type: Division-1
+meta:
+  alpha2: FR-72
+  includes:
+    - sarthe
+    - fr-72
+    - '72'
+    - sarthe metropolitan department
+  category: PROVINCE

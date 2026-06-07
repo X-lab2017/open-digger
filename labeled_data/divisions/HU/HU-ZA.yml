@@ -1,5 +1,5 @@
 name: Zala
-name_zh: 扎拉县
+name_zh: 佐洛州
 type: Division-1
 meta:
   alpha2: HU-ZA
@@ -8,4 +8,5 @@ meta:
     - hu-za
     - za
     - zala county
+    - 扎拉县
   category: COUNTY

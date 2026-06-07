@@ -1,5 +1,5 @@
-name: Hacıqabul
-name_zh: 哈吉加布尔区
+name: Hajigabul
+name_zh: 卡齐穆罕默德区
 type: Division-1
 meta:
   alpha2: AZ-HAC
@@ -8,4 +8,5 @@ meta:
     - az-hac
     - hac
     - hacıqabul rayon
+    - 哈吉加布尔区
   category: RAYON

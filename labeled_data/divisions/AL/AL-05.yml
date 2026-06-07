@@ -1,5 +1,5 @@
 name: Gjirokastër
-name_zh: 吉罗卡斯特县
+name_zh: 吉诺卡斯特州
 type: Division-1
 meta:
   alpha2: AL-05
@@ -8,4 +8,5 @@ meta:
     - al-05
     - '05'
     - gjirokastër county
+    - 吉罗卡斯特县
   category: COUNTY

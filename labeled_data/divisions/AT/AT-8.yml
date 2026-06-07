@@ -1,5 +1,5 @@
 name: Vorarlberg
-name_zh: 福拉尔贝格
+name_zh: 福拉尔贝格州
 type: Division-1
 meta:
   alpha2: AT-8
@@ -8,4 +8,5 @@ meta:
     - at-8
     - '8'
     - vorarlberg state
+    - 福拉尔贝格
   category: STATE

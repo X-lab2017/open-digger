@@ -1,0 +1,11 @@
+name: Bataan
+name_zh: 巴丹省
+type: Division-1
+meta:
+  alpha2: PH-BAN
+  includes:
+    - bataan
+    - ph-ban
+    - ban
+    - bataan province
+  category: PROVINCE

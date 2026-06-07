@@ -1,0 +1,11 @@
+name: Balaka
+name_zh: 巴拉卡县
+type: Division-1
+meta:
+  alpha2: MW-BA
+  includes:
+    - balaka
+    - mw-ba
+    - ba
+    - balaka district
+  category: PROVINCE

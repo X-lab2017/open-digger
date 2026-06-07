@@ -1,5 +1,5 @@
-name: Şanʻā’
-name_zh: 萨那省
+name: Sana'a
+name_zh: 萨那
 type: Division-1
 meta:
   alpha2: YE-SN
@@ -11,4 +11,5 @@ meta:
     - sana'a city
     - sana'a governorate
     - sana'a
+    - 萨那省
   category: GOVERNORATE

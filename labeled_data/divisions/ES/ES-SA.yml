@@ -1,0 +1,11 @@
+name: Salamanca
+name_zh: 萨拉曼卡省
+type: Division-1
+meta:
+  alpha2: ES-SA
+  includes:
+    - salamanca
+    - es-sa
+    - sa
+    - salamanca province
+  category: PROVINCE

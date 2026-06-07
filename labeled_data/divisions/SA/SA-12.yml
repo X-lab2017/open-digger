@@ -1,5 +1,5 @@
 name: Al Jawf
-name_zh: 朱夫省
+name_zh: 焦夫省
 type: Division-1
 meta:
   alpha2: SA-12
@@ -11,4 +11,5 @@ meta:
     - jof
     - al jowf province
     - al jawf province
+    - 朱夫省
   category: REGION

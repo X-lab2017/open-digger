@@ -1,5 +1,5 @@
 name: Domžale
-name_zh: 多姆日莱
+name_zh: 多姆扎萊鎮
 type: Division-1
 meta:
   alpha2: SI-023
@@ -8,4 +8,5 @@ meta:
     - si-023
     - '023'
     - domžale municipality
+    - 多姆日莱
   category: MUNICIPALITY

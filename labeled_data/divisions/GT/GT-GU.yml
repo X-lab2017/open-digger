@@ -1,0 +1,12 @@
+name: Guatemala
+name_zh: 瓜地马拉省
+type: Division-1
+meta:
+  alpha2: GT-GU
+  includes:
+    - guatemala
+    - gt-01
+    - '01'
+    - guatemala department
+    - 危地马拉省
+  category: DEPARTMENT

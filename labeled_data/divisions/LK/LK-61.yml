@@ -1,0 +1,11 @@
+name: Kuruṇægala
+name_zh: 库鲁内格勒区
+type: Division-1
+meta:
+  alpha2: LK-61
+  includes:
+    - kurunegala
+    - lk-61
+    - '61'
+    - kurunegala district
+  category: PROVINCE

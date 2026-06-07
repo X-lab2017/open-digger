@@ -1,5 +1,5 @@
 name: Bayan-Ölgiy
-name_zh: 巴彦乌列盖
+name_zh: 巴彦乌列盖省
 type: Division-1
 meta:
   alpha2: MN-071
@@ -9,4 +9,5 @@ meta:
     - '071'
     - bayan-ölgiy province
     - bayan-ölgii
+    - 巴彦乌列盖
   category: PROVINCE

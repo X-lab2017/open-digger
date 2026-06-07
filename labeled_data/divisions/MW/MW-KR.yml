@@ -1,0 +1,11 @@
+name: Karonga
+name_zh: ''
+type: Division-1
+meta:
+  alpha2: MW-KR
+  includes:
+    - karonga
+    - mw-kr
+    - kr
+    - karonga district
+  category: PROVINCE

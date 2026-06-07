@@ -1,0 +1,11 @@
+name: Teruel
+name_zh: 特魯埃爾省
+type: Division-1
+meta:
+  alpha2: ES-TE
+  includes:
+    - teruel
+    - es-te
+    - te
+    - teruel province
+  category: PROVINCE

@@ -1,5 +1,5 @@
 name: Ninh Thuận
-name_zh: 宁顺
+name_zh: 宁顺省
 type: Division-1
 meta:
   alpha2: VN-36
@@ -9,4 +9,5 @@ meta:
     - '36'
     - ninh thuận province
     - ninh thuan
+    - 宁顺
   category: PROVINCE

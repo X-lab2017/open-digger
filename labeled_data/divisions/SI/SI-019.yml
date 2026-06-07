@@ -1,4 +1,4 @@
-name: Divača
+name: Divaca
 type: Division-1
 meta:
   alpha2: SI-019
@@ -8,3 +8,4 @@ meta:
     - '019'
     - divača municipality
   category: MUNICIPALITY
+name_zh: 迪瓦查

@@ -1,5 +1,5 @@
-name: Östergötlands län
-name_zh: 东约特兰县
+name: Östergötland
+name_zh: 东约特兰省
 type: Division-1
 meta:
   alpha2: SE-E
@@ -9,4 +9,5 @@ meta:
     - e
     - östergötlands län county
     - östergötland county
+    - 东约特兰县
   category: COUNTY

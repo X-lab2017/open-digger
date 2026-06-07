@@ -1,5 +1,5 @@
-name: Al Awsaţ
-name_zh: 耶路撒冷区
+name: HaMerkaz
+name_zh: 中央区
 type: Division-1
 meta:
   alpha2: IL-M
@@ -16,4 +16,5 @@ meta:
     - central district
     - center district
     - מחוז המרכז
+    - 耶路撒冷区
   category: DISTRICT

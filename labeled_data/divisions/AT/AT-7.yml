@@ -1,5 +1,5 @@
 name: Tirol
-name_zh: 蒂罗尔
+name_zh: 蒂罗尔州
 type: Division-1
 meta:
   alpha2: AT-7
@@ -9,4 +9,5 @@ meta:
     - '7'
     - tirol state
     - tyrol
+    - 蒂罗尔
   category: STATE

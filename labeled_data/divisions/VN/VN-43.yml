@@ -1,5 +1,5 @@
 name: Bà Rịa - Vũng Tàu
-name_zh: 巴地头顿
+name_zh: 巴地头顿省
 type: Division-1
 meta:
   alpha2: VN-43
@@ -10,4 +10,5 @@ meta:
     - bà rịa - vũng tàu province
     - ba ria - vung tau
     - ba ria-vung tau
+    - 巴地头顿
   category: PROVINCE

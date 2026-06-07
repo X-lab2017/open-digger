@@ -1,0 +1,11 @@
+name: María Trinidad Sánchez
+name_zh: 玛丽亚·桑其斯省
+type: Division-1
+meta:
+  alpha2: DO-14
+  includes:
+    - maría trinidad sánchez
+    - do-14
+    - '14'
+    - maría trinidad sánchez province
+  category: PROVINCE

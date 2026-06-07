@@ -1,4 +1,4 @@
-name: ‘Artā
+name: Arta
 type: Division-1
 meta:
   alpha2: DJ-AR
@@ -10,3 +10,4 @@ meta:
     - ‘artā
     - ‘artā region
   category: REGION
+name_zh: 阿尔塔州

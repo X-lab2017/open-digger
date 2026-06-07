@@ -1,0 +1,11 @@
+name: Trento
+name_zh: 特倫托自治省
+type: Division-1
+meta:
+  alpha2: IT-TN
+  includes:
+    - trento
+    - it-tn
+    - tn
+    - trento autonomous province
+  category: PROVINCE

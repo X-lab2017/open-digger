@@ -1,5 +1,5 @@
-name: Rīga
-name_zh: 里加市
+name: Riga
+name_zh: 里加
 type: Division-1
 meta:
   alpha2: LV-RIX
@@ -9,4 +9,5 @@ meta:
     - rix
     - rīga state city
     - riga
+    - 里加市
   category: STATE CITY

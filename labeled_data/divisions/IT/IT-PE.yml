@@ -1,0 +1,11 @@
+name: Pescara
+name_zh: 佩斯卡拉省
+type: Division-1
+meta:
+  alpha2: IT-PE
+  includes:
+    - pescara
+    - it-pe
+    - pe
+    - pescara province
+  category: PROVINCE

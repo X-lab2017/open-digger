@@ -1,0 +1,11 @@
+name: Roscommon
+name_zh: 罗斯康芒郡
+type: Division-1
+meta:
+  alpha2: IE-RN
+  includes:
+    - ros comáin
+    - ie-rn
+    - rn
+    - ros comáin county
+  category: PROVINCE

@@ -1,5 +1,5 @@
-name: Lənkəran
-name_zh: 连科兰区
+name: Lankaran
+name_zh: 连科兰
 type: Division-1
 meta:
   alpha2: AZ-LAN
@@ -8,4 +8,5 @@ meta:
     - az-lan
     - lan
     - lənkəran rayon
+    - 连科兰区
   category: RAYON

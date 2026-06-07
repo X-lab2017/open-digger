@@ -1,0 +1,11 @@
+name: Oise
+name_zh: 瓦兹省
+type: Division-1
+meta:
+  alpha2: FR-60
+  includes:
+    - oise
+    - fr-60
+    - '60'
+    - oise metropolitan department
+  category: PROVINCE

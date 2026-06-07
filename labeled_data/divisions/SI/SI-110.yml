@@ -1,5 +1,5 @@
 name: Sevnica
-name_zh: 塞夫尼察
+name_zh: 塞夫尼察鎮
 type: Division-1
 meta:
   alpha2: SI-110
@@ -8,4 +8,5 @@ meta:
     - si-110
     - '110'
     - sevnica municipality
+    - 塞夫尼察
   category: MUNICIPALITY

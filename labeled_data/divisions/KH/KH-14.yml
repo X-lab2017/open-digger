@@ -1,5 +1,5 @@
 name: Prey Vêng
-name_zh: 磅湛省
+name_zh: 波萝勉省
 type: Division-1
 meta:
   alpha2: KH-14
@@ -13,4 +13,5 @@ meta:
     - prey veng
     - prey veng province
     - py
+    - 磅湛省
   category: PROVINCE

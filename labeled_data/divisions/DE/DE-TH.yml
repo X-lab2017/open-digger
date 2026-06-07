@@ -1,5 +1,5 @@
 name: Thüringen
-name_zh: 图林根州
+name_zh: 图林根
 type: Division-1
 meta:
   alpha2: DE-TH
@@ -9,4 +9,5 @@ meta:
     - th
     - thüringen land
     - thuringia
+    - 图林根州
   category: LAND

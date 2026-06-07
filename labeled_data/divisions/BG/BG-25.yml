@@ -1,5 +1,5 @@
 name: Targovishte
-name_zh: 塔尔戈维舍省
+name_zh: 特尔戈维什特州
 type: Division-1
 meta:
   alpha2: BG-25
@@ -10,4 +10,5 @@ meta:
     - targovishte district
     - targovishte province
     - turgovishte
+    - 塔尔戈维舍省
   category: DISTRICT

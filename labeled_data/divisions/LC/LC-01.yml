@@ -1,4 +1,4 @@
-name: Anse la Raye
+name: Anse-la-Raye
 type: Division-1
 meta:
   alpha2: LC-01
@@ -8,3 +8,4 @@ meta:
     - '01'
     - anse la raye district
   category: DISTRICT
+name_zh: 昂斯拉雷区

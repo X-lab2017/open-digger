@@ -1,5 +1,5 @@
 name: Mascara
-name_zh: 马斯卡拉省
+name_zh: 穆阿斯凯尔省
 type: Division-1
 meta:
   alpha2: DZ-29
@@ -8,4 +8,5 @@ meta:
     - dz-29
     - '29'
     - mascara province
+    - 马斯卡拉省
   category: PROVINCE

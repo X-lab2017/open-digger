@@ -1,0 +1,11 @@
+name: Sumatera Barat
+name_zh: 西苏门答腊省
+type: Division-1
+meta:
+  alpha2: ID-SB
+  includes:
+    - sumatera barat
+    - id-sb
+    - sb
+    - sumatera barat province
+  category: PROVINCE

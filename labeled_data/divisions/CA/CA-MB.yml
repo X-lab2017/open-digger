@@ -1,5 +1,5 @@
 name: Manitoba
-name_zh: 马尼托巴省
+name_zh: 曼尼托巴
 type: Division-1
 meta:
   alpha2: CA-MB
@@ -8,4 +8,5 @@ meta:
     - ca-mb
     - mb
     - manitoba province
+    - 马尼托巴省
   category: PROVINCE

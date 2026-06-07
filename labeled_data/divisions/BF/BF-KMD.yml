@@ -1,0 +1,11 @@
+name: Komondjari
+name_zh: 科蒙加里省
+type: Division-1
+meta:
+  alpha2: BF-KMD
+  includes:
+    - komondjari
+    - bf-kmd
+    - kmd
+    - komondjari province
+  category: PROVINCE

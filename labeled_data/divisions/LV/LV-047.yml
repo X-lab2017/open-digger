@@ -1,5 +1,5 @@
-name: Krāslavas novads
-name_zh: 克拉斯拉瓦市镇
+name: Kraslavas
+name_zh: 克拉斯拉瓦自治市
 type: Division-1
 meta:
   alpha2: LV-047
@@ -10,4 +10,5 @@ meta:
     - krāslavas novads municipality
     - krāslava
     - krāslava municipality
+    - 克拉斯拉瓦市镇
   category: MUNICIPALITY

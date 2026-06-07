@@ -1,5 +1,5 @@
 name: Couva-Tabaquite-Talparo
-name_zh: 库瓦-塔巴奎特-塔尔帕罗地区公司
+name_zh: 库瓦-塔瓦基特-塔尔帕罗地区
 type: Division-1
 meta:
   alpha2: TT-CTT
@@ -9,4 +9,5 @@ meta:
     - ctt
     - couva-tabaquite-talparo region
     - couva-tabaquite-talparo regional corporation
+    - 库瓦-塔巴奎特-塔尔帕罗地区公司
   category: REGION

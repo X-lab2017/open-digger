@@ -1,5 +1,5 @@
 name: Montana
-name_zh: 蒙塔纳省
+name_zh: 蒙塔納州
 type: Division-1
 meta:
   alpha2: BG-12
@@ -9,4 +9,5 @@ meta:
     - '12'
     - montana district
     - montana province
+    - 蒙塔纳省
   category: DISTRICT

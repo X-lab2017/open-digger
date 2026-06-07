@@ -1,0 +1,11 @@
+name: Venezia
+name_zh: 威尼斯省
+type: Division-1
+meta:
+  alpha2: IT-VE
+  includes:
+    - venezia
+    - it-ve
+    - ve
+    - venezia metropolitan city
+  category: PROVINCE

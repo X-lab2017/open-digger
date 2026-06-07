@@ -1,5 +1,5 @@
-name: Alūksnes novads
-name_zh: 阿卢克斯内市镇
+name: Aluksne
+name_zh: 阿盧克斯內自治市
 type: Division-1
 meta:
   alpha2: LV-007
@@ -10,4 +10,5 @@ meta:
     - alūksnes novads municipality
     - alūksne
     - alūksne municipality
+    - 阿卢克斯内市镇
   category: MUNICIPALITY

@@ -1,0 +1,11 @@
+name: Yvelines
+name_zh: 伊夫林省
+type: Division-1
+meta:
+  alpha2: FR-78
+  includes:
+    - yvelines
+    - fr-78
+    - '78'
+    - yvelines metropolitan department
+  category: PROVINCE

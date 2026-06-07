@@ -1,5 +1,5 @@
-name: Asyūţ
-name_zh: 阿西尤特省
+name: Asyut
+name_zh: 艾斯尤特省
 type: Division-1
 meta:
   alpha2: EG-AST
@@ -10,4 +10,5 @@ meta:
     - asyūţ governorate
     - assiut governorate
     - asyut
+    - 阿西尤特省
   category: GOVERNORATE

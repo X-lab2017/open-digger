@@ -1,5 +1,5 @@
 name: Guayas
-name_zh: 瓜亚斯
+name_zh: 瓜亚斯省
 type: Division-1
 meta:
   alpha2: EC-G
@@ -8,4 +8,5 @@ meta:
     - ec-g
     - g
     - guayas province
+    - 瓜亚斯
   category: PROVINCE

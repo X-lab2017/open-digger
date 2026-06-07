@@ -1,5 +1,5 @@
-name: Thừa Thiên-Huế
-name_zh: 承天顺化
+name: Thừa Thiên - Huế
+name_zh: 承天顺化省
 type: Division-1
 meta:
   alpha2: VN-26
@@ -10,4 +10,5 @@ meta:
     - thừa thiên-huế province
     - thừa thiên huế
     - thua thien hue
+    - 承天顺化
   category: PROVINCE

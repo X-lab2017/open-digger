@@ -1,5 +1,5 @@
-name: Hưng Yên
-name_zh: 兴安
+name: Đồng Bằng Sông Hồng
+name_zh: 红河三角洲
 type: Division-1
 meta:
   alpha2: VN-66
@@ -9,4 +9,5 @@ meta:
     - '66'
     - hưng yên province
     - hung yen
+    - 兴安
   category: PROVINCE

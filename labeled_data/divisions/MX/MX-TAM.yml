@@ -1,5 +1,5 @@
 name: Tamaulipas
-name_zh: 塔毛利帕斯
+name_zh: 塔毛利帕斯州
 type: Division-1
 meta:
   alpha2: MX-TAM
@@ -9,4 +9,5 @@ meta:
     - tam
     - tamaulipas state
     - tamps
+    - 塔毛利帕斯
   category: STATE

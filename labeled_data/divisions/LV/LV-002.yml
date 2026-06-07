@@ -1,5 +1,5 @@
-name: Aizkraukles novads
-name_zh: 艾兹克劳克勒市镇
+name: Aizkraukles
+name_zh: 艾茲克勞克萊自治市
 type: Division-1
 meta:
   alpha2: LV-002
@@ -10,4 +10,5 @@ meta:
     - aizkraukles novads municipality
     - aizkraukle
     - aizkraukle municipality
+    - 艾兹克劳克勒市镇
   category: MUNICIPALITY

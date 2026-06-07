@@ -1,0 +1,11 @@
+name: Rimini
+name_zh: 里米尼省
+type: Division-1
+meta:
+  alpha2: IT-RN
+  includes:
+    - rimini
+    - it-rn
+    - rn
+    - rimini province
+  category: PROVINCE

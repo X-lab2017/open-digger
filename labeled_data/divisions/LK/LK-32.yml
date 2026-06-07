@@ -1,0 +1,11 @@
+name: Mātara
+name_zh: 马特勒区
+type: Division-1
+meta:
+  alpha2: LK-32
+  includes:
+    - matara
+    - lk-32
+    - '32'
+    - matara district
+  category: PROVINCE

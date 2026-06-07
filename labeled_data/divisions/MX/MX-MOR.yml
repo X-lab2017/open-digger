@@ -1,5 +1,5 @@
 name: Morelos
-name_zh: 莫雷洛斯
+name_zh: 莫雷洛斯州
 type: Division-1
 meta:
   alpha2: MX-MOR
@@ -8,4 +8,5 @@ meta:
     - mx-mor
     - mor
     - morelos state
+    - 莫雷洛斯
   category: STATE

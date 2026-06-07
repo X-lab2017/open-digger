@@ -1,4 +1,4 @@
-name: Pemba South
+name: Kusini-Pemba
 type: Division-1
 meta:
   alpha2: TZ-10
@@ -10,3 +10,4 @@ meta:
     - pemba south
     - pemba south region
   category: REGION
+name_zh: 南奔巴区

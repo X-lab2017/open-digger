@@ -1,5 +1,5 @@
 name: Kvemo Kartli
-name_zh: 卡尔特利大区
+name_zh: 克维莫-卡特利州
 type: Division-1
 meta:
   alpha2: GE-KK
@@ -8,4 +8,5 @@ meta:
     - ge-kk
     - kk
     - kvemo kartli region
+    - 卡尔特利大区
   category: REGION

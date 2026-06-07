@@ -1,5 +1,5 @@
-name: İstanbul
-name_zh: 伊斯坦布尔
+name: Istanbul
+name_zh: 伊斯坦堡省
 type: Division-1
 meta:
   alpha2: TR-34
@@ -9,4 +9,5 @@ meta:
     - '34'
     - i̇stanbul province
     - istanbul
+    - 伊斯坦布尔
   category: PROVINCE

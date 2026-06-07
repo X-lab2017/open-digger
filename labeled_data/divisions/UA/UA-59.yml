@@ -1,5 +1,5 @@
-name: Sumska oblast
-name_zh: 苏梅
+name: Sumy
+name_zh: 苏梅州
 type: Division-1
 meta:
   alpha2: UA-59
@@ -11,4 +11,5 @@ meta:
     - sumy oblast
     - sums'ka oblast
     - sumy
+    - 苏梅
   category: REGION

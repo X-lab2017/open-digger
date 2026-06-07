@@ -1,5 +1,5 @@
-name: La Manouba
-name_zh: 马努巴区
+name: Manubah
+name_zh: 马努巴省
 type: Division-1
 meta:
   alpha2: TN-14
@@ -10,4 +10,5 @@ meta:
     - la manouba governorate
     - manubah governorate
     - manouba
+    - 马努巴区
   category: GOVERNORATE

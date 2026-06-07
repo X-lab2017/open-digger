@@ -1,5 +1,5 @@
-name: Amānat al ‘Āşimah
-name_zh: 萨那市
+name: Amanat Al Asimah
+name_zh: 萨那
 type: Division-1
 meta:
   alpha2: YE-SA
@@ -8,4 +8,5 @@ meta:
     - ye-sa
     - sa
     - amānat al ‘āşimah municipality
+    - 萨那市
   category: MUNICIPALITY

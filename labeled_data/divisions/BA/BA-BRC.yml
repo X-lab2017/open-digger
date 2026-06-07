@@ -1,5 +1,5 @@
-name: Brčko distrikt
-name_zh: 布热格诺区
+name: Brčko Distrikt
+name_zh: 布尔奇科特区
 type: Division-1
 meta:
   alpha2: BA-BRC
@@ -9,4 +9,5 @@ meta:
     - brc
     - brčko distrikt district with special status
     - brčko district
+    - 布热格诺区
   category: DISTRICT WITH SPECIAL STATUS

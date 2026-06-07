@@ -1,5 +1,5 @@
-name: Bruxelles-Capitale
-name_zh: 布鲁塞尔
+name: Brussels
+name_zh: 布鲁塞尔-首都大区
 type: Division-1
 meta:
   alpha2: BE-BRU
@@ -14,4 +14,5 @@ meta:
     - brussel
     - brussels region
     - bruxelles
+    - 布鲁塞尔
   category: REGION

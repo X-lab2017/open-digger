@@ -1,0 +1,11 @@
+name: Laoighis
+name_zh: 萊伊什郡
+type: Division-1
+meta:
+  alpha2: IE-LS
+  includes:
+    - laois
+    - ie-ls
+    - ls
+    - laois county
+  category: PROVINCE

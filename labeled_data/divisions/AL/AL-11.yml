@@ -1,5 +1,5 @@
 name: Tiranë
-name_zh: 地拉那县
+name_zh: 地拉那州
 type: Division-1
 meta:
   alpha2: AL-11
@@ -11,4 +11,5 @@ meta:
     - tirana county
     - tirana
     - qarku i tiranës
+    - 地拉那县
   category: COUNTY

@@ -1,5 +1,5 @@
-name: San Andrés
-name_zh: 圣安德烈斯和普罗维登西亚
+name: San Andrés y Providencia
+name_zh: 聖安德列斯-普羅維登西亞和聖卡塔利娜群島省
 type: Division-1
 meta:
   alpha2: CO-SAP
@@ -10,4 +10,5 @@ meta:
     - san andrés department
     - san andrés and providencia
     - san andres and providencia
+    - 圣安德烈斯和普罗维登西亚
   category: DEPARTMENT

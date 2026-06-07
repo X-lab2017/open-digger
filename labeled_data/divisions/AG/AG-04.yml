@@ -1,5 +1,5 @@
 name: Saint John
-name_zh: 圣约翰
+name_zh: 圣约翰区
 type: Division-1
 meta:
   alpha2: AG-04
@@ -9,4 +9,5 @@ meta:
     - '04'
     - saint john parish
     - antigua
+    - 圣约翰
   category: PARISH

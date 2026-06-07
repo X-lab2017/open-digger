@@ -1,5 +1,5 @@
 name: National Capital District
-name_zh: 国家首都区
+name_zh: 莫尔兹比港
 type: Division-1
 meta:
   alpha2: PG-NCD
@@ -8,4 +8,5 @@ meta:
     - pg-ncd
     - ncd
     - national capital district district
+    - 国家首都区
   category: DISTRICT

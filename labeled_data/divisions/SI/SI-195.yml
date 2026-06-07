@@ -1,4 +1,4 @@
-name: Apače
+name: Apace
 type: Division-1
 meta:
   alpha2: SI-195
@@ -8,3 +8,4 @@ meta:
     - '195'
     - apače municipality
   category: MUNICIPALITY
+name_zh: 阿帕切鎮

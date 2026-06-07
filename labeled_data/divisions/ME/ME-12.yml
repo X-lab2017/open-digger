@@ -1,5 +1,5 @@
-name: Nikšić
-name_zh: 尼克希奇市
+name: Nikšic
+name_zh: 尼克希奇區
 type: Division-1
 meta:
   alpha2: ME-12
@@ -8,4 +8,5 @@ meta:
     - me-12
     - '12'
     - nikšić municipality
+    - 尼克希奇市
   category: MUNICIPALITY

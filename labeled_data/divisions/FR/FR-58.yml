@@ -1,0 +1,11 @@
+name: Nièvre
+name_zh: 涅夫勒省
+type: Division-1
+meta:
+  alpha2: FR-58
+  includes:
+    - nièvre
+    - fr-58
+    - '58'
+    - nièvre metropolitan department
+  category: PROVINCE

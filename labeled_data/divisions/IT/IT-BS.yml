@@ -1,0 +1,11 @@
+name: Brescia
+name_zh: 布雷西亚省
+type: Division-1
+meta:
+  alpha2: IT-BS
+  includes:
+    - brescia
+    - it-bs
+    - bs
+    - brescia province
+  category: PROVINCE

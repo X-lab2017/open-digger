@@ -1,5 +1,5 @@
 name: Nuevo León
-name_zh: 新莱昂
+name_zh: 新莱昂州
 type: Division-1
 meta:
   alpha2: MX-NLE
@@ -10,4 +10,5 @@ meta:
     - nuevo león state
     - nuevo leon
     - nl
+    - 新莱昂
   category: STATE

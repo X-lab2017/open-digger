@@ -1,0 +1,11 @@
+name: Koulpélogo
+name_zh: 库尔佩罗戈省
+type: Division-1
+meta:
+  alpha2: BF-KOP
+  includes:
+    - koulpélogo
+    - bf-kop
+    - kop
+    - koulpélogo province
+  category: PROVINCE

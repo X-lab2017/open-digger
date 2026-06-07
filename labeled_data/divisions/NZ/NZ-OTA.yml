@@ -1,5 +1,5 @@
 name: Otago
-name_zh: 奥塔哥
+name_zh: 奥塔哥大区
 type: Division-1
 meta:
   alpha2: NZ-OTA
@@ -10,4 +10,5 @@ meta:
     - otago region
     - ō tākou
     - ō tākou region
+    - 奥塔哥
   category: REGION

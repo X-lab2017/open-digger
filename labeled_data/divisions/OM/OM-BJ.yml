@@ -1,5 +1,5 @@
-name: Janūb al Bāţinah
-name_zh: 巴提奈南省
+name: Al Batnah South
+name_zh: 南巴特纳
 type: Division-1
 meta:
   alpha2: OM-BJ
@@ -9,4 +9,5 @@ meta:
     - bj
     - janūb al bāţinah governorate
     - al batinah south governorate
+    - 巴提奈南省
   category: GOVERNORATE

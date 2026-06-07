@@ -1,0 +1,11 @@
+name: Eure-et-Loir
+name_zh: 厄尔-卢瓦省
+type: Division-1
+meta:
+  alpha2: FR-28
+  includes:
+    - eure-et-loir
+    - fr-28
+    - '28'
+    - eure-et-loir metropolitan department
+  category: PROVINCE

@@ -1,5 +1,5 @@
 name: Sagaing
-name_zh: ' Sagaing 省'
+name_zh: 实皆省
 type: Division-1
 meta:
   alpha2: MM-01
@@ -8,4 +8,5 @@ meta:
     - mm-01
     - '01'
     - sagaing region
+    - ' Sagaing 省'
   category: REGION

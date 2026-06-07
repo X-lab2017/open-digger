@@ -1,5 +1,5 @@
 name: Jubbada Hoose
-name_zh: 下朱巴
+name_zh: 下朱巴州
 type: Division-1
 meta:
   alpha2: SO-JH
@@ -9,4 +9,5 @@ meta:
     - jh
     - jubbada hoose region
     - lower juba
+    - 下朱巴
   category: REGION

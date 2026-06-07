@@ -1,5 +1,5 @@
 name: Central Equatoria
-name_zh: 中赤道州
+name_zh: 中赤道省
 type: Division-1
 meta:
   alpha2: SS-EC
@@ -8,4 +8,5 @@ meta:
     - ss-ec
     - ec
     - central equatoria state
+    - 中赤道州
   category: STATE

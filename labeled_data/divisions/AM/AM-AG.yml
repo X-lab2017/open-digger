@@ -1,5 +1,5 @@
-name: Aragac̣otn
-name_zh: 阿拉加茨奥特省
+name: Aragatsotn
+name_zh: 阿拉加措特恩省
 type: Division-1
 meta:
   alpha2: AM-AG
@@ -9,4 +9,5 @@ meta:
     - ag
     - aragac̣otn region
     - aragatsotn province
+    - 阿拉加茨奥特省
   category: REGION

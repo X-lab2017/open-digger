@@ -1,5 +1,5 @@
 name: Điện Biên
-name_zh: 奠边
+name_zh: 奠边省
 type: Division-1
 meta:
   alpha2: VN-71
@@ -9,4 +9,5 @@ meta:
     - '71'
     - điện biên province
     - dien bien
+    - 奠边
   category: PROVINCE

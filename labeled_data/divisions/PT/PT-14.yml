@@ -1,5 +1,5 @@
 name: Santarém
-name_zh: 桑塔雷姆区
+name_zh: 圣塔伦区
 type: Division-1
 meta:
   alpha2: PT-14
@@ -8,4 +8,5 @@ meta:
     - pt-14
     - '14'
     - santarém district
+    - 桑塔雷姆区
   category: DISTRICT

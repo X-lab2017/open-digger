@@ -1,5 +1,5 @@
-name: Sidi Bouzid
-name_zh: 西迪布祖德区
+name: Sidi Bou Zid
+name_zh: 西迪布济德省
 type: Division-1
 meta:
   alpha2: TN-43
@@ -9,4 +9,5 @@ meta:
     - '43'
     - sidi bouzid governorate
     - sidi bou zid governorate
+    - 西迪布祖德区
   category: GOVERNORATE

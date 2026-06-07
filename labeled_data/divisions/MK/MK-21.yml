@@ -1,0 +1,13 @@
+name: Debar
+name_zh: 德巴尔区
+type: Division-1
+meta:
+  alpha2: MK-21
+  includes:
+    - debar
+    - mk-303
+    - '303'
+    - debar municipality
+    - municipality of debar
+    - 德巴尔
+  category: MUNICIPALITY

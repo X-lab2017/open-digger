@@ -1,0 +1,11 @@
+name: Grosseto
+name_zh: 格羅塞托省
+type: Division-1
+meta:
+  alpha2: IT-GR
+  includes:
+    - grosseto
+    - it-gr
+    - gr
+    - grosseto province
+  category: PROVINCE

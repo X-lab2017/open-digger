@@ -1,0 +1,13 @@
+name: Štip
+name_zh: 什提普区
+type: Division-1
+meta:
+  alpha2: MK-83
+  includes:
+    - štip
+    - mk-211
+    - '211'
+    - štip municipality
+    - municipality of štip
+    - 普罗比什蒂普
+  category: MUNICIPALITY

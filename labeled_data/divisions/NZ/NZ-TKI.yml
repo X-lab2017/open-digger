@@ -1,5 +1,5 @@
 name: Taranaki
-name_zh: 塔拉纳基
+name_zh: 塔拉纳基大区
 type: Division-1
 meta:
   alpha2: NZ-TKI
@@ -8,4 +8,5 @@ meta:
     - nz-tki
     - tki
     - taranaki region
+    - 塔拉纳基
   category: REGION

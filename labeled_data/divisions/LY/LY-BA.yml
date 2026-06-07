@@ -1,5 +1,5 @@
-name: Banghāzī
-name_zh: 贾勒阿尔阿克达区
+name: Benghazi
+name_zh: 班加西
 type: Division-1
 meta:
   alpha2: LY-BA
@@ -10,4 +10,5 @@ meta:
     - banghāzī popularate
     - benghazi
     - benghazi district
+    - 贾勒阿尔阿克达区
   category: POPULARATE

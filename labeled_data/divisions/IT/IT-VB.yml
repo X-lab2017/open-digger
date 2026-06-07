@@ -1,0 +1,11 @@
+name: Verbano-Cusio-Ossola
+name_zh: 韦尔巴诺-库西亚-奥索拉省
+type: Division-1
+meta:
+  alpha2: IT-VB
+  includes:
+    - verbano-cusio-ossola
+    - it-vb
+    - vb
+    - verbano-cusio-ossola province
+  category: PROVINCE

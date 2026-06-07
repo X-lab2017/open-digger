@@ -1,0 +1,11 @@
+name: Saint Paul Charlestown
+name_zh: 圣保罗查尔斯敦区
+type: Division-1
+meta:
+  alpha2: KN-10
+  includes:
+    - saint paul charlestown
+    - kn-10
+    - '10'
+    - saint paul charlestown parish
+  category: PROVINCE

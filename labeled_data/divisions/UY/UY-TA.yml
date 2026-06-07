@@ -1,5 +1,5 @@
 name: Tacuarembó
-name_zh: 塔库阿伦博省
+name_zh: 塔夸伦博省
 type: Division-1
 meta:
   alpha2: UY-TA
@@ -8,4 +8,5 @@ meta:
     - uy-ta
     - ta
     - tacuarembó department
+    - 塔库阿伦博省
   category: DEPARTMENT

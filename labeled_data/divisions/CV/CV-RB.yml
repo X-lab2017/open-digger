@@ -1,0 +1,11 @@
+name: Ribeira Brava
+name_zh: 里贝拉布拉瓦县
+type: Division-1
+meta:
+  alpha2: CV-RB
+  includes:
+    - ribeira brava
+    - cv-rb
+    - rb
+    - ribeira brava municipality
+  category: PROVINCE

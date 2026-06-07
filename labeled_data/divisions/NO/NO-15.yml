@@ -1,5 +1,5 @@
 name: Møre og Romsdal
-name_zh: 莫雷-罗姆萨尔郡
+name_zh: 默勒-鲁姆斯达尔郡
 type: Division-1
 meta:
   alpha2: NO-15
@@ -8,4 +8,5 @@ meta:
     - no-15
     - '15'
     - møre og romsdal county
+    - 莫雷-罗姆萨尔郡
   category: COUNTY

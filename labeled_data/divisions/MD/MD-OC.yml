@@ -1,5 +1,5 @@
-name: Ocnița
-name_zh: 奥奇尼察区
+name: Ocniţa
+name_zh: 奥克尼察区
 type: Division-1
 meta:
   alpha2: MD-OC
@@ -8,4 +8,5 @@ meta:
     - md-oc
     - oc
     - ocnița district
+    - 奥奇尼察区
   category: DISTRICT

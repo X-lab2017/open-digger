@@ -1,4 +1,4 @@
-name: Hatohobei
+name: Hatobohei
 type: Division-1
 meta:
   alpha2: PW-050
@@ -8,3 +8,4 @@ meta:
     - '050'
     - hatohobei state
   category: STATE
+name_zh: 哈托博海伊州

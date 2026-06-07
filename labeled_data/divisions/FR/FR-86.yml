@@ -1,0 +1,11 @@
+name: Vienne
+name_zh: 維埃納省
+type: Division-1
+meta:
+  alpha2: FR-86
+  includes:
+    - vienne
+    - fr-86
+    - '86'
+    - vienne metropolitan department
+  category: PROVINCE

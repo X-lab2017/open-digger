@@ -1,5 +1,5 @@
 name: Pleven
-name_zh: 普列文省
+name_zh: 普列文州
 type: Division-1
 meta:
   alpha2: BG-15
@@ -9,4 +9,5 @@ meta:
     - '15'
     - pleven district
     - pleven province
+    - 普列文省
   category: DISTRICT

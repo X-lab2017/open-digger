@@ -1,5 +1,5 @@
-name: Cuanza-Sul
-name_zh: 宽扎南省
+name: Cuanza Sul
+name_zh: 南宽扎省
 type: Division-1
 meta:
   alpha2: AO-CUS
@@ -10,4 +10,5 @@ meta:
     - cuanza-sul province
     - kwanza sul
     - kwanza sul province
+    - 宽扎南省
   category: PROVINCE

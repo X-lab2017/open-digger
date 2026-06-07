@@ -1,0 +1,11 @@
+name: Iloilo
+name_zh: 怡朗
+type: Division-1
+meta:
+  alpha2: PH-ILI
+  includes:
+    - iloilo
+    - ph-ili
+    - ili
+    - iloilo province
+  category: PROVINCE

@@ -1,0 +1,11 @@
+name: Bukidnon
+name_zh: 布基农省
+type: Division-1
+meta:
+  alpha2: PH-BUK
+  includes:
+    - bukidnon
+    - ph-buk
+    - buk
+    - bukidnon province
+  category: PROVINCE

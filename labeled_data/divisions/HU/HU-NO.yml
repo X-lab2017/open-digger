@@ -1,5 +1,5 @@
 name: Nógrád
-name_zh: 琼格拉德
+name_zh: 诺格拉德州
 type: Division-1
 meta:
   alpha2: HU-NO
@@ -8,4 +8,5 @@ meta:
     - hu-no
     - 'no'
     - nógrád county
+    - 琼格拉德
   category: COUNTY

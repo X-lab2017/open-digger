@@ -1,5 +1,5 @@
 name: Attapu
-name_zh: 华潘省
+name_zh: 阿速坡省
 type: Division-1
 meta:
   alpha2: LA-AT
@@ -11,4 +11,5 @@ meta:
     - attapeu
     - attapeu province
     - ap
+    - 华潘省
   category: PROVINCE

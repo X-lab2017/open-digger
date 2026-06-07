@@ -1,5 +1,5 @@
 name: Managua
-name_zh: 马那瓜
+name_zh: 马拿瓜省
 type: Division-1
 meta:
   alpha2: NI-MN
@@ -9,4 +9,5 @@ meta:
     - mn
     - managua department
     - cd
+    - 马那瓜
   category: DEPARTMENT

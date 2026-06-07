@@ -1,5 +1,5 @@
-name: Qoraqalpog‘iston Respublikasi
-name_zh: 卡拉卡尔帕克斯坦共和国
+name: Karakalpakstan
+name_zh: 卡拉卡尔帕克斯坦自治共和国
 type: Division-1
 meta:
   alpha2: UZ-QR
@@ -10,4 +10,5 @@ meta:
     - qoraqalpog‘iston respublikasi republic
     - republic of karakalpakstan
     - qoraqalpoghiston
+    - 卡拉卡尔帕克斯坦共和国
   category: REPUBLIC

@@ -1,5 +1,5 @@
 name: Khammouan
-name_zh: 博利坎赛省
+name_zh: 甘蒙省
 type: Division-1
 meta:
   alpha2: LA-KH
@@ -11,4 +11,5 @@ meta:
     - khammuane
     - khammuane province
     - km
+    - 博利坎赛省
   category: PROVINCE

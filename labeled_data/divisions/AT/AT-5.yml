@@ -1,5 +1,5 @@
 name: Salzburg
-name_zh: 萨尔茨堡
+name_zh: 萨尔茨堡州
 type: Division-1
 meta:
   alpha2: AT-5
@@ -8,4 +8,5 @@ meta:
     - at-5
     - '5'
     - salzburg state
+    - 萨尔茨堡
   category: STATE

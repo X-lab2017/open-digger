@@ -1,5 +1,5 @@
-name: Sankt-Peterburg
-name_zh: 圣彼得堡市
+name: City of St. Petersburg
+name_zh: 圣彼得堡
 type: Division-1
 meta:
   alpha2: RU-SPE
@@ -12,4 +12,5 @@ meta:
     - saint petersburg
     - санкт-петербург
     - st. petersburg city
+    - 圣彼得堡市
   category: AUTONOMOUS CITY

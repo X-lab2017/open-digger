@@ -1,5 +1,5 @@
 name: Austurland
-name_zh: 菲亚扎比格德
+name_zh: 东部区
 type: Division-1
 meta:
   alpha2: IS-7
@@ -29,4 +29,5 @@ meta:
     - vop
     - vopnafjarðarhreppur municipality
     - sveitarf��lagið hornafjörður
+    - 菲亚扎比格德
   category: REGION

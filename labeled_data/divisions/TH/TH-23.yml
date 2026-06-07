@@ -1,5 +1,5 @@
 name: Trat
-name_zh: 陶公府
+name_zh: 达叻府
 type: Division-1
 meta:
   alpha2: TH-23
@@ -8,4 +8,5 @@ meta:
     - th-23
     - '23'
     - trat province
+    - 陶公府
   category: PROVINCE

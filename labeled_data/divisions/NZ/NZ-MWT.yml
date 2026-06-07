@@ -1,5 +1,5 @@
-name: Manawatū-Whanganui
-name_zh: 马纳瓦图-惠灵顿
+name: Manawatu-Wanganui
+name_zh: 马纳瓦图－旺加努伊
 type: Division-1
 meta:
   alpha2: NZ-MWT
@@ -11,4 +11,5 @@ meta:
     - manawatū-whanganui
     - manawatū-whanganui region
     - manawatu-wanganui
+    - 马纳瓦图-惠灵顿
   category: REGION

@@ -1,0 +1,11 @@
+name: Kalimantan Barat
+name_zh: 西加里曼丹省
+type: Division-1
+meta:
+  alpha2: ID-KB
+  includes:
+    - kalimantan barat
+    - id-kb
+    - kb
+    - kalimantan barat province
+  category: PROVINCE

@@ -97,7 +97,7 @@ data:
     - IN-AR
     - IN-AS
     - IN-BR
-    - IN-CG
+    - IN-CT
     - IN-CH
     - IN-DH
     - IN-DL
@@ -117,14 +117,14 @@ data:
     - IN-MP
     - IN-MZ
     - IN-NL
-    - IN-OD
+    - IN-OR
     - IN-PB
     - IN-PY
     - IN-RJ
     - IN-SK
     - IN-TN
     - IN-TR
-    - IN-TS
-    - IN-UK
+    - IN-TG
+    - IN-UT
     - IN-UP
     - IN-WB

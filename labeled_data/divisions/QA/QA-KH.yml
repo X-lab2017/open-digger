@@ -1,5 +1,5 @@
-name: Al Khawr wa adh Dhakhīrah
-name_zh: 阿尔科尔和阿尔赛义德市
+name: Al Khawr
+name_zh: 艾科尔
 type: Division-1
 meta:
   alpha2: QA-KH
@@ -10,4 +10,5 @@ meta:
     - al khawr wa adh dhakhīrah municipality
     - al khor and al thakhira municipality
     - al khor and al thakhira
+    - 阿尔科尔和阿尔赛义德市
   category: MUNICIPALITY

@@ -1,5 +1,5 @@
-name: Ömnögovĭ
-name_zh: 南戈壁
+name: Ömnögovi
+name_zh: 南戈壁省
 type: Division-1
 meta:
   alpha2: MN-053
@@ -9,4 +9,5 @@ meta:
     - '053'
     - ömnögovĭ province
     - ömnögovi
+    - 南戈壁
   category: PROVINCE

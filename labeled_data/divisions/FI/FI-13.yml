@@ -1,5 +1,5 @@
-name: Norra Karelen
-name_zh: 北卡累利阿
+name: North Karelia
+name_zh: 北卡累利阿区
 type: Division-1
 meta:
   alpha2: FI-13
@@ -11,4 +11,5 @@ meta:
     - pohjois-karjala
     - pohjois-karjala region
     - north karelia
+    - 北卡累利阿
   category: REGION

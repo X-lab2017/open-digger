@@ -1,5 +1,5 @@
-name: Şanlıurfa
-name_zh: 尚勒乌尔法
+name: Sanliurfa
+name_zh: 尚勒乌尔法省
 type: Division-1
 meta:
   alpha2: TR-63
@@ -9,4 +9,5 @@ meta:
     - '63'
     - şanlıurfa province
     - şanliurfa
+    - 尚勒乌尔法
   category: PROVINCE

@@ -1,5 +1,5 @@
 name: Ogooué-Maritime
-name_zh: 奥果韦-马里蒂姆省
+name_zh: 滨海奥果韦省
 type: Division-1
 meta:
   alpha2: GA-8
@@ -9,4 +9,5 @@ meta:
     - '8'
     - ogooué-maritime province
     - ogooue-maritime
+    - 奥果韦-马里蒂姆省
   category: PROVINCE

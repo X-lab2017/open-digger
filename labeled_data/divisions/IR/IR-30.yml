@@ -1,5 +1,5 @@
-name: Alborz
-name_zh: 阿尔博兹省
+name: Razavi Khorasan
+name_zh: 礼萨呼罗珊省
 type: Division-1
 meta:
   alpha2: IR-30
@@ -8,4 +8,5 @@ meta:
     - ir-30
     - '30'
     - alborz province
+    - 阿尔博兹省
   category: PROVINCE

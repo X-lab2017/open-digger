@@ -1,5 +1,5 @@
-name: Freistata
-name_zh: 自由州
+name: Free State
+name_zh: 自由邦省
 type: Division-1
 meta:
   alpha2: ZA-FS
@@ -24,4 +24,5 @@ meta:
     - vrystaat province
     - ifreyistata
     - ifreyistata province
+    - 自由州
   category: PROVINCE

@@ -1,5 +1,5 @@
-name: Kŭhistoni Badakhshon
-name_zh: 戈尔诺-巴达赫尚自治省
+name: Gorno-Badakhshan
+name_zh: 山地巴达赫尚自治州
 type: Division-1
 meta:
   alpha2: TJ-GB
@@ -10,4 +10,5 @@ meta:
     - kŭhistoni badakhshon autonomous region
     - gorno-badakhshan autonomous province
     - gorno-badakhshan autonomous region
+    - 戈尔诺-巴达赫尚自治省
   category: AUTONOMOUS REGION

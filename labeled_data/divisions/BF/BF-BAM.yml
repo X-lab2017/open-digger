@@ -1,0 +1,11 @@
+name: Bam
+name_zh: 巴姆省
+type: Division-1
+meta:
+  alpha2: BF-BAM
+  includes:
+    - bam
+    - bf-bam
+    - bam province
+    - centre-nord
+  category: PROVINCE

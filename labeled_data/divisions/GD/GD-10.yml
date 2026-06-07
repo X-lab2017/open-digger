@@ -1,4 +1,4 @@
-name: Southern Grenadine Islands
+name: Carriacou and Petite Martinique
 type: Division-1
 meta:
   alpha2: GD-10
@@ -10,3 +10,4 @@ meta:
     - carriacou
     - carriacou dependency
   category: DEPENDENCY
+name_zh: 卡里亚库和小马提尼克

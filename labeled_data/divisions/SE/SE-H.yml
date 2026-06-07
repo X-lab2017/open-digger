@@ -1,5 +1,5 @@
-name: Kalmar län
-name_zh: 卡尔马县
+name: Kalmar
+name_zh: 卡尔马省
 type: Division-1
 meta:
   alpha2: SE-H
@@ -9,4 +9,5 @@ meta:
     - h
     - kalmar län county
     - kalmar county
+    - 卡尔马县
   category: COUNTY

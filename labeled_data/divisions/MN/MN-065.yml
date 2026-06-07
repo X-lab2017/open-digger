@@ -1,5 +1,5 @@
-name: Govĭ-Altay
-name_zh: 戈壁阿尔泰
+name: Govi-Altay
+name_zh: 戈壁阿尔泰省
 type: Division-1
 meta:
   alpha2: MN-065
@@ -9,4 +9,5 @@ meta:
     - '065'
     - govĭ-altay province
     - govi-altai
+    - 戈壁阿尔泰
   category: PROVINCE

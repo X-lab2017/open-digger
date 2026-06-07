@@ -1,4 +1,4 @@
-name: Bougainville
+name: North Solomons
 type: Division-1
 meta:
   alpha2: PG-NSB
@@ -9,3 +9,4 @@ meta:
     - bougainville autonomous region
     - autonomous region of bougainville
   category: AUTONOMOUS REGION
+name_zh: 布干维尔自治区

@@ -1,5 +1,5 @@
-name: Busan-gwangyeoksi
-name_zh: 釜山市
+name: Busan
+name_zh: 釜山
 type: Division-1
 meta:
   alpha2: KR-26
@@ -10,4 +10,5 @@ meta:
     - busan-gwangyeoksi metropolitan city
     - busan
     - busan metropolitan city
+    - 釜山市
   category: METROPOLITAN CITY

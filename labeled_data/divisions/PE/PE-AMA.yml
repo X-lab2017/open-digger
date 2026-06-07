@@ -1,5 +1,5 @@
 name: Amazonas
-name_zh: 亚马孙
+name_zh: 亚马孙大区
 type: Division-1
 meta:
   alpha2: PE-AMA
@@ -12,4 +12,5 @@ meta:
     - amasunu region
     - amazonas
     - amazonas region
+    - 亚马孙
   category: REGION

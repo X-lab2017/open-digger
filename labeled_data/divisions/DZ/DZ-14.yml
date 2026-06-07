@@ -1,5 +1,5 @@
 name: Tiaret
-name_zh: 蒂亚雷特省
+name_zh: 提亚雷特省
 type: Division-1
 meta:
   alpha2: DZ-14
@@ -8,4 +8,5 @@ meta:
     - dz-14
     - '14'
     - tiaret province
+    - 蒂亚雷特省
   category: PROVINCE

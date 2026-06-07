@@ -1,0 +1,11 @@
+name: Boulkiemdé
+name_zh: 布尔基恩德省
+type: Division-1
+meta:
+  alpha2: BF-BLK
+  includes:
+    - boulkiemdé
+    - bf-blk
+    - blk
+    - boulkiemdé province
+  category: PROVINCE

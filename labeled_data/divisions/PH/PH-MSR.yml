@@ -1,0 +1,11 @@
+name: Misamis Oriental
+name_zh: 东米萨米斯省
+type: Division-1
+meta:
+  alpha2: PH-MSR
+  includes:
+    - misamis oriental
+    - ph-msr
+    - msr
+    - misamis oriental province
+  category: PROVINCE

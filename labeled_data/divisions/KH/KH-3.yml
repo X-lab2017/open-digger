@@ -1,5 +1,5 @@
 name: Kâmpóng Cham
-name_zh: 桔井省
+name_zh: 磅湛省
 type: Division-1
 meta:
   alpha2: KH-3
@@ -12,4 +12,5 @@ meta:
     - kampong cham province
     - kâmpóng cham
     - kâmpóng cham province
+    - 桔井省
   category: PROVINCE

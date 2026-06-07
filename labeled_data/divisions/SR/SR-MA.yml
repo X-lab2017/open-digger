@@ -1,5 +1,5 @@
 name: Marowijne
-name_zh: 帕拉马里博区
+name_zh: 马罗韦讷区
 type: Division-1
 meta:
   alpha2: SR-MA
@@ -8,4 +8,5 @@ meta:
     - sr-ma
     - ma
     - marowijne district
+    - 帕拉马里博区
   category: DISTRICT

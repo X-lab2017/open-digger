@@ -1,5 +1,5 @@
-name: Parwān
-name_zh: 帕尔万省
+name: Parwan
+name_zh: 帕尔旺省
 type: Division-1
 meta:
   alpha2: AF-PAR
@@ -9,4 +9,5 @@ meta:
     - par
     - parwān province
     - parwan
+    - 帕尔万省
   category: PROVINCE

@@ -1,5 +1,5 @@
 name: Murska Sobota
-name_zh: 穆尔斯卡索波特
+name_zh: 穆爾斯卡索博塔市
 type: Division-1
 meta:
   alpha2: SI-080
@@ -8,4 +8,5 @@ meta:
     - si-080
     - '080'
     - murska sobota urban municipality
+    - 穆尔斯卡索波特
   category: URBAN MUNICIPALITY

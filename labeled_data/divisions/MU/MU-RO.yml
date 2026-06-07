@@ -1,5 +1,5 @@
-name: Rodrigues Island
-name_zh: 罗德里格斯区
+name: Rodrigues
+name_zh: 罗德里格斯岛
 type: Division-1
 meta:
   alpha2: MU-RO
@@ -9,4 +9,5 @@ meta:
     - ro
     - rodrigues island dependency
     - rodrigues
+    - 罗德里格斯区
   category: DEPENDENCY

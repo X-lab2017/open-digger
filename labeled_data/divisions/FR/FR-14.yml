@@ -1,0 +1,11 @@
+name: Calvados
+name_zh: 卡尔瓦多斯省
+type: Division-1
+meta:
+  alpha2: FR-14
+  includes:
+    - calvados
+    - fr-14
+    - '14'
+    - calvados metropolitan department
+  category: PROVINCE

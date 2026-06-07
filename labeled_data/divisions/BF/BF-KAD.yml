@@ -1,0 +1,11 @@
+name: Kadiogo
+name_zh: 卡焦戈省
+type: Division-1
+meta:
+  alpha2: BF-KAD
+  includes:
+    - kadiogo
+    - bf-kad
+    - kad
+    - kadiogo province
+  category: PROVINCE

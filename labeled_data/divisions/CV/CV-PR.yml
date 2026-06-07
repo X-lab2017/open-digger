@@ -1,0 +1,11 @@
+name: Praia
+name_zh: 普拉亚县
+type: Division-1
+meta:
+  alpha2: CV-PR
+  includes:
+    - praia
+    - cv-pr
+    - pr
+    - praia municipality
+  category: PROVINCE

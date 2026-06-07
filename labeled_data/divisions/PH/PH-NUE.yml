@@ -1,0 +1,11 @@
+name: Nueva Ecija
+name_zh: 新怡诗夏省
+type: Division-1
+meta:
+  alpha2: PH-NUE
+  includes:
+    - nueva ecija
+    - ph-nue
+    - nue
+    - nueva ecija province
+  category: PROVINCE

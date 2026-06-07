@@ -1,5 +1,5 @@
 name: Atlántico
-name_zh: 大西洋
+name_zh: 大西洋省
 type: Division-1
 meta:
   alpha2: CO-ATL
@@ -9,4 +9,5 @@ meta:
     - atl
     - atlántico department
     - atlantico
+    - 大西洋
   category: DEPARTMENT

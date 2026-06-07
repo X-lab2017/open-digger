@@ -1,5 +1,5 @@
 name: Eastern
-name_zh: 北方省
+name_zh: 东方省
 type: Division-1
 meta:
   alpha2: SL-E
@@ -8,4 +8,5 @@ meta:
     - sl-e
     - e
     - eastern province
+    - 北方省
   category: PROVINCE

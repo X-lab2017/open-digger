@@ -1,5 +1,5 @@
 name: Dependencias Federales
-name_zh: 首都区
+name_zh: 联邦属地
 type: Division-1
 meta:
   alpha2: VE-W
@@ -10,4 +10,5 @@ meta:
     - dependencias federales federal dependency
     - federal district
     - dc
+    - 首都区
   category: FEDERAL DEPENDENCY

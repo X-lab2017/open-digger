@@ -1,4 +1,4 @@
-name: Città di San Marino
+name: San Marino
 type: Division-1
 meta:
   alpha2: SM-07
@@ -10,3 +10,4 @@ meta:
     - san marino
     - san marino municipality
   category: MUNICIPALITY
+name_zh: 圣马力诺

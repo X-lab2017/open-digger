@@ -1,5 +1,5 @@
 name: Bar
-name_zh: 巴尔市
+name_zh: 巴爾區
 type: Division-1
 meta:
   alpha2: ME-02
@@ -8,4 +8,5 @@ meta:
     - me-02
     - '02'
     - bar municipality
+    - 巴尔市
   category: MUNICIPALITY

@@ -1,5 +1,5 @@
-name: Västerbottens län
-name_zh: 西博滕县
+name: Västerbotten
+name_zh: 西博滕省
 type: Division-1
 meta:
   alpha2: SE-AC
@@ -9,4 +9,5 @@ meta:
     - ac
     - västerbottens län county
     - västerbotten county
+    - 西博滕县
   category: COUNTY

@@ -1,5 +1,5 @@
 name: Rio de Janeiro
-name_zh: 里约热内卢
+name_zh: 里约热内卢州
 type: Division-1
 meta:
   alpha2: BR-RJ
@@ -9,4 +9,5 @@ meta:
     - rj
     - rio de janeiro state
     - state of rio de janeiro
+    - 里约热内卢
   category: STATE

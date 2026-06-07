@@ -1,0 +1,11 @@
+name: Mangochi
+name_zh: 曼戈切县
+type: Division-1
+meta:
+  alpha2: MW-MG
+  includes:
+    - mangochi
+    - mw-mg
+    - mg
+    - mangochi district
+  category: PROVINCE

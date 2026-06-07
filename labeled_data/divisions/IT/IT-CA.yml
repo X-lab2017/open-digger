@@ -1,0 +1,11 @@
+name: Cagliari
+name_zh: 卡利亚里省
+type: Division-1
+meta:
+  alpha2: IT-CA
+  includes:
+    - cagliari
+    - it-ca
+    - ca
+    - cagliari metropolitan city
+  category: PROVINCE

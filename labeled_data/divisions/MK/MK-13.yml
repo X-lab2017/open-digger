@@ -1,0 +1,13 @@
+name: Veles
+name_zh: 维勒斯区
+type: Division-1
+meta:
+  alpha2: MK-13
+  includes:
+    - veles
+    - mk-101
+    - '101'
+    - veles municipality
+    - municipality of veles
+    - 韦莱斯
+  category: MUNICIPALITY

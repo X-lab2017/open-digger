@@ -1,5 +1,5 @@
 name: Ceará
-name_zh: 塞阿拉
+name_zh: 塞阿腊
 type: Division-1
 meta:
   alpha2: BR-CE
@@ -9,4 +9,5 @@ meta:
     - ce
     - ceará state
     - state of ceará
+    - 塞阿拉
   category: STATE

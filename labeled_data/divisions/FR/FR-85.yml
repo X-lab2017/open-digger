@@ -1,0 +1,11 @@
+name: Vendée
+name_zh: 旺代省
+type: Division-1
+meta:
+  alpha2: FR-85
+  includes:
+    - vendée
+    - fr-85
+    - '85'
+    - vendée metropolitan department
+  category: PROVINCE

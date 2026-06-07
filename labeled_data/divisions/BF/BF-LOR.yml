@@ -1,0 +1,11 @@
+name: Loroum
+name_zh: 罗卢姆省
+type: Division-1
+meta:
+  alpha2: BF-LOR
+  includes:
+    - loroum
+    - bf-lor
+    - lor
+    - loroum province
+  category: PROVINCE

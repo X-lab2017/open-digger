@@ -1,5 +1,5 @@
 name: Zinder
-name_zh: 津德尔区
+name_zh: 津德尔大区
 type: Division-1
 meta:
   alpha2: NE-7
@@ -8,4 +8,5 @@ meta:
     - ne-7
     - '7'
     - zinder region
+    - 津德尔区
   category: REGION

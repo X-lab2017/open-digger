@@ -1,5 +1,5 @@
 name: Chiapas
-name_zh: 恰帕斯
+name_zh: 恰帕斯州
 type: Division-1
 meta:
   alpha2: MX-CHP
@@ -9,4 +9,5 @@ meta:
     - chp
     - chiapas state
     - chis
+    - 恰帕斯
   category: STATE

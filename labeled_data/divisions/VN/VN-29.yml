@@ -1,5 +1,5 @@
 name: Quảng Ngãi
-name_zh: 广义
+name_zh: 广义省
 type: Division-1
 meta:
   alpha2: VN-29
@@ -9,4 +9,5 @@ meta:
     - '29'
     - quảng ngãi province
     - quang ngai
+    - 广义
   category: PROVINCE

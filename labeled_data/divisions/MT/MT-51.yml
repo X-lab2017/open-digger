@@ -1,5 +1,5 @@
-name: Saint Paul's Bay
-name_zh: 圣保罗湾
+name: San Pawl il-Bahar
+name_zh: 圣保罗湾城
 type: Division-1
 meta:
   alpha2: MT-51
@@ -10,4 +10,5 @@ meta:
     - saint paul's bay local council
     - san pawl il-baħar
     - san pawl il-baħar local council
+    - 圣保罗湾
   category: LOCAL COUNCIL

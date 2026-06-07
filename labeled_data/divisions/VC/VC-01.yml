@@ -1,5 +1,5 @@
 name: Charlotte
-name_zh: 夏洛特
+name_zh: 夏洛特区
 type: Division-1
 meta:
   alpha2: VC-01
@@ -8,4 +8,5 @@ meta:
     - vc-01
     - '01'
     - charlotte parish
+    - 夏洛特
   category: PARISH

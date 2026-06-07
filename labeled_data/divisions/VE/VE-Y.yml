@@ -1,5 +1,5 @@
 name: Delta Amacuro
-name_zh: 德尔塔阿马库罗
+name_zh: 阿马库罗三角洲州
 type: Division-1
 meta:
   alpha2: VE-Y
@@ -8,4 +8,5 @@ meta:
     - ve-y
     - 'y'
     - delta amacuro state
+    - 德尔塔阿马库罗
   category: STATE

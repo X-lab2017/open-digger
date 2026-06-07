@@ -1,5 +1,5 @@
-name: Ôita
-name_zh: 秋田县
+name: Ōita
+name_zh: 大分县
 type: Division-1
 meta:
   alpha2: JP-44
@@ -10,4 +10,5 @@ meta:
     - oita prefecture
     - ôita
     - ôita prefecture
+    - 秋田县
   category: PREFECTURE

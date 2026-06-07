@@ -1,0 +1,29 @@
+name: Western
+name_zh: 西部省
+type: Division-1
+meta:
+  alpha2: KE-800
+  includes:
+    - bungoma
+    - ke-03
+    - '03'
+    - bungoma county
+    - 邦戈马县
+    - busia
+    - ke-04
+    - '04'
+    - busia county
+    - 布希亚县
+    - kakamega
+    - ke-11
+    - '11'
+    - kakamega county
+    - 卡卡梅加县
+    - vihiga
+    - ke-45
+    - '45'
+    - vihiga county
+    - 维希加县
+    - KE-800
+    - '800'
+  category: PROVINCE

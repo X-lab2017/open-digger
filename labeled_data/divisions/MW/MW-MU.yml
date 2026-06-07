@@ -1,0 +1,11 @@
+name: Mulanje
+name_zh: 姆兰杰县
+type: Division-1
+meta:
+  alpha2: MW-MU
+  includes:
+    - mulanje
+    - mw-mu
+    - mu
+    - mulanje district
+  category: PROVINCE

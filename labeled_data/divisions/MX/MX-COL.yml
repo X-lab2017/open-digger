@@ -1,5 +1,5 @@
 name: Colima
-name_zh: 科利马
+name_zh: 科利马州
 type: Division-1
 meta:
   alpha2: MX-COL
@@ -8,4 +8,5 @@ meta:
     - mx-col
     - col
     - colima state
+    - 科利马
   category: STATE

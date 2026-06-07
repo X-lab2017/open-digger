@@ -1,5 +1,5 @@
-name: Jämtlands län
-name_zh: 斯德哥尔摩县
+name: Jämtland
+name_zh: 耶姆特兰省
 type: Division-1
 meta:
   alpha2: SE-Z
@@ -9,4 +9,5 @@ meta:
     - z
     - jämtlands län county
     - jamtland county
+    - 斯德哥尔摩县
   category: COUNTY

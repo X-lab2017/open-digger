@@ -1,5 +1,5 @@
 name: Mpumalanga
-name_zh: 姆普马兰加
+name_zh: 普马兰加省
 type: Division-1
 meta:
   alpha2: ZA-MP
@@ -10,4 +10,5 @@ meta:
     - mpumalanga province
     - impumalanga
     - impumalanga province
+    - 姆普马兰加
   category: PROVINCE

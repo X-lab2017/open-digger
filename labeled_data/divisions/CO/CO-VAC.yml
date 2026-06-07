@@ -1,5 +1,5 @@
 name: Valle del Cauca
-name_zh: 考卡
+name_zh: 考卡山谷省
 type: Division-1
 meta:
   alpha2: CO-VAC
@@ -10,4 +10,5 @@ meta:
     - valle del cauca department
     - valle
     - valle department
+    - 考卡
   category: DEPARTMENT

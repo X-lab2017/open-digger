@@ -1,0 +1,12 @@
+name: Petén
+name_zh: 贝登省
+type: Division-1
+meta:
+  alpha2: GT-PE
+  includes:
+    - petén
+    - gt-17
+    - '17'
+    - petén department
+    - 佩滕省
+  category: DEPARTMENT

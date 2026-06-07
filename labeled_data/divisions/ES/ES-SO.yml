@@ -1,0 +1,11 @@
+name: Soria
+name_zh: 索里亚省
+type: Division-1
+meta:
+  alpha2: ES-SO
+  includes:
+    - soria
+    - es-so
+    - so
+    - soria province
+  category: PROVINCE

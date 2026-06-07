@@ -1,0 +1,11 @@
+name: Kalimantan Selatan
+name_zh: 南加里曼丹省
+type: Division-1
+meta:
+  alpha2: ID-KS
+  includes:
+    - kalimantan selatan
+    - id-ks
+    - ks
+    - kalimantan selatan province
+  category: PROVINCE

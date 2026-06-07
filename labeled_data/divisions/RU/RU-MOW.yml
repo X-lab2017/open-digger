@@ -1,5 +1,5 @@
-name: Moskva
-name_zh: 莫斯科市
+name: Moskovskaya
+name_zh: 莫斯科州
 type: Division-1
 meta:
   alpha2: RU-MOW
@@ -10,4 +10,5 @@ meta:
     - moskva autonomous city
     - moscow city
     - москва
+    - 莫斯科市
   category: AUTONOMOUS CITY

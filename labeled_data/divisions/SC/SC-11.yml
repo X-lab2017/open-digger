@@ -1,4 +1,4 @@
-name: Kaskad
+name: Cascade
 type: Division-1
 meta:
   alpha2: SC-11
@@ -10,3 +10,4 @@ meta:
     - kaskad
     - kaskad district
   category: DISTRICT
+name_zh: 卡斯喀得区

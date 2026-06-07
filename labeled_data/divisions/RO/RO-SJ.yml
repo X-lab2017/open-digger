@@ -1,5 +1,5 @@
-name: Sălaj
-name_zh: 萨拉日县
+name: Salaj
+name_zh: 瑟拉日县
 type: Division-1
 meta:
   alpha2: RO-SJ
@@ -8,4 +8,5 @@ meta:
     - ro-sj
     - sj
     - sălaj department
+    - 萨拉日县
   category: DEPARTMENT

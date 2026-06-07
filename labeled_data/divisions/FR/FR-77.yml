@@ -1,0 +1,11 @@
+name: Seien-et-Marne
+name_zh: 塞纳-马恩省
+type: Division-1
+meta:
+  alpha2: FR-77
+  includes:
+    - seine-et-marne
+    - fr-77
+    - '77'
+    - seine-et-marne metropolitan department
+  category: PROVINCE

@@ -1,0 +1,11 @@
+name: Olongapo
+name_zh: 奥隆阿波
+type: Division-1
+meta:
+  alpha2: PH-ZMB
+  includes:
+    - sambales
+    - ph-zmb
+    - zmb
+    - sambales province
+  category: PROVINCE

@@ -1,5 +1,5 @@
-name: North-West
-name_zh: 西北
+name: North West
+name_zh: 西北省
 type: Division-1
 meta:
   alpha2: ZA-NW
@@ -25,4 +25,5 @@ meta:
     - itlhagwini-tjhingalanga
     - itlhagwini-tjhingalanga province
     - north west
+    - 西北
   category: PROVINCE

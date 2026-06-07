@@ -1,0 +1,11 @@
+name: Aceh
+name_zh: 亚齐
+type: Division-1
+meta:
+  alpha2: ID-AC
+  includes:
+    - aceh
+    - id-ac
+    - ac
+    - aceh province
+  category: PROVINCE

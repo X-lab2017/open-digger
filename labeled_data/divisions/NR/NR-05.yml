@@ -1,4 +1,4 @@
-name: Baitsi
+name: Baiti
 type: Division-1
 meta:
   alpha2: NR-05
@@ -10,3 +10,4 @@ meta:
     - baiti
     - baiti district
   category: DISTRICT
+name_zh: 白帝区

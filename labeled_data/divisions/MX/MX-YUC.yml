@@ -1,5 +1,5 @@
 name: Yucatán
-name_zh: 尤卡坦
+name_zh: 尤卡坦州
 type: Division-1
 meta:
   alpha2: MX-YUC
@@ -9,4 +9,5 @@ meta:
     - yuc
     - yucatán state
     - yucatan
+    - 尤卡坦
   category: STATE

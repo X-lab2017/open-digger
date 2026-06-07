@@ -1,5 +1,5 @@
-name: Kajanaland
-name_zh: 凯努
+name: Kainuu
+name_zh: 凯努区
 type: Division-1
 meta:
   alpha2: FI-05
@@ -10,4 +10,5 @@ meta:
     - kainuu region
     - kajanaland
     - kajanaland region
+    - 凯努
   category: REGION

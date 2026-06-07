@@ -1,5 +1,5 @@
 name: Rotuma
-name_zh: 中央区
+name_zh: 罗图马岛
 type: Division-1
 meta:
   alpha2: FJ-R
@@ -8,4 +8,5 @@ meta:
     - fj-r
     - r
     - rotuma dependency
+    - 中央区
   category: DEPENDENCY

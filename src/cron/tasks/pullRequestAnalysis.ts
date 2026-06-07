@@ -274,7 +274,7 @@ ${pullRequest.diff}
       }
       const diffsObj = diffs.map(item => ({ id: +item[0], platform: item[1], diff: item[2] }));
       const pullInfo = await query(`SELECT issue_id, platform, any(repo_name), any(issue_number), argMax(issue_title, created_at), argMax(body, created_at)
-    FROM events WHERE type = 'PullRequestEvent' AND (platform, issue_id) IN (${diffsObj.map(item => `('${item.platform}', ${item.id})`).join(',')})
+    FROM events WHERE type = 'PullRequestEvent' AND (issue_title != '' OR body != '') AND (platform, issue_id) IN (${diffsObj.map(item => `('${item.platform}', ${item.id})`).join(',')})
     GROUP BY issue_id, platform
     `);
       const pullInfoObj = pullInfo.map(item => ({ id: +item[0], platform: item[1], repoName: item[2], number: item[3], title: item[4], body: item[5] }));

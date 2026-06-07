@@ -1,0 +1,11 @@
+name: Trinity palmetto point
+name_zh: ''
+type: Division-1
+meta:
+  alpha2: KN-15
+  includes:
+    - trinity palmetto point
+    - kn-15
+    - '15'
+    - trinity palmetto point parish
+  category: PROVINCE

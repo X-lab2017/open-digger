@@ -1,0 +1,29 @@
+name: Nouakchott
+name_zh: 努瓦克肖特
+type: Division-1
+meta:
+  alpha2: MR-NKC
+  includes:
+    - nouakchott ouest
+    - mr-13
+    - '13'
+    - nouakchott ouest region
+    - nuwākshūţ al gharbīyah
+    - nuwākshūţ al gharbīyah region
+    - 努瓦克肖特
+    - nouakchott nord
+    - mr-14
+    - '14'
+    - nouakchott nord region
+    - nuwākshūţ ash shamālīyah
+    - nuwākshūţ ash shamālīyah region
+    - nouakchott
+    - nouakchott sud
+    - mr-15
+    - '15'
+    - nouakchott sud region
+    - nuwākshūţ al janūbīyah
+    - nuwākshūţ al janūbīyah region
+    - MR-NKC
+    - NKC
+  category: DISTRICT

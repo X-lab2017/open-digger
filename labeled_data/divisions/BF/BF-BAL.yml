@@ -1,0 +1,11 @@
+name: Balé
+name_zh: 巴雷省
+type: Division-1
+meta:
+  alpha2: BF-BAL
+  includes:
+    - balé
+    - bf-bal
+    - bal
+    - balé province
+  category: PROVINCE

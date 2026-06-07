@@ -1,5 +1,5 @@
-name: Michoacán de Ocampo
-name_zh: 米却肯
+name: Michoacán
+name_zh: 米却肯州
 type: Division-1
 meta:
   alpha2: MX-MIC
@@ -11,4 +11,5 @@ meta:
     - michoacán
     - michoacán state
     - mich
+    - 米却肯
   category: STATE

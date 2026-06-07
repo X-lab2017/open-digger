@@ -1,0 +1,11 @@
+name: Reggio Calabria
+name_zh: 雷焦卡拉布里亚省
+type: Division-1
+meta:
+  alpha2: IT-RC
+  includes:
+    - reggio calabria
+    - it-rc
+    - rc
+    - reggio calabria metropolitan city
+  category: PROVINCE

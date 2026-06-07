@@ -1,5 +1,5 @@
-name: Khersonska oblast
-name_zh: 赫尔松
+name: Kherson
+name_zh: 赫尔松州
 type: Division-1
 meta:
   alpha2: UA-65
@@ -11,4 +11,5 @@ meta:
     - khersons'ka oblast
     - kherson oblast
     - kherson
+    - 赫尔松
   category: REGION

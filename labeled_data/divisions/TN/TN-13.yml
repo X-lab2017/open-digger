@@ -1,5 +1,5 @@
-name: Ben Arous
-name_zh: 本阿鲁斯区
+name: Ben Arous (Tunis Sud)
+name_zh: 本阿鲁斯省
 type: Division-1
 meta:
   alpha2: TN-13
@@ -8,4 +8,5 @@ meta:
     - tn-13
     - '13'
     - ben arous governorate
+    - 本阿鲁斯区
   category: GOVERNORATE

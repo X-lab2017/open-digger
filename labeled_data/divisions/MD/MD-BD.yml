@@ -1,5 +1,5 @@
 name: Bender
-name_zh: 本德
+name_zh: 宾杰里
 type: Division-1
 meta:
   alpha2: MD-BD
@@ -8,4 +8,5 @@ meta:
     - md-bd
     - bd
     - bender city
+    - 本德
   category: CITY

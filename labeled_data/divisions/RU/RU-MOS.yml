@@ -1,5 +1,5 @@
-name: Moskovskaya oblast'
-name_zh: 莫斯科州
+name: Moskva
+name_zh: 莫斯科
 type: Division-1
 meta:
   alpha2: RU-MOS
@@ -12,4 +12,5 @@ meta:
     - moskovskaya oblast' administrative region
     - moscow oblast
     - moscow
+    - 莫斯科州
   category: ADMINISTRATIVE REGION

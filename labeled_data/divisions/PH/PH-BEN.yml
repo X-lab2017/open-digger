@@ -1,0 +1,11 @@
+name: Benguet
+name_zh: 本格特省
+type: Division-1
+meta:
+  alpha2: PH-BEN
+  includes:
+    - benget
+    - ph-ben
+    - ben
+    - benget province
+  category: PROVINCE

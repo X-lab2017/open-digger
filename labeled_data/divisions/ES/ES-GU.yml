@@ -1,0 +1,11 @@
+name: Guadalajara
+name_zh: 瓜达拉哈拉省
+type: Division-1
+meta:
+  alpha2: ES-GU
+  includes:
+    - guadalajara
+    - es-gu
+    - gu
+    - guadalajara province
+  category: PROVINCE

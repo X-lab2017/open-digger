@@ -1,0 +1,11 @@
+name: La Romana
+name_zh: 罗马纳省
+type: Division-1
+meta:
+  alpha2: DO-12
+  includes:
+    - la romana
+    - do-12
+    - '12'
+    - la romana province
+  category: PROVINCE

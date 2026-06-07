@@ -1,5 +1,5 @@
-name: Az Zāwiyah
-name_zh: 扎维耶区
+name: Az Zawiyah
+name_zh: 扎维耶省
 type: Division-1
 meta:
   alpha2: LY-ZA
@@ -11,4 +11,5 @@ meta:
     - az zawiya district
     - zawiya district
     - sabratha wa surman
+    - 扎维耶区
   category: POPULARATE

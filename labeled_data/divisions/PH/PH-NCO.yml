@@ -1,0 +1,11 @@
+name: Cotabato
+name_zh: 哥打巴托省
+type: Division-1
+meta:
+  alpha2: PH-NCO
+  includes:
+    - cotabato
+    - ph-nco
+    - nco
+    - cotabato province
+  category: PROVINCE

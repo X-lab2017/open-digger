@@ -1,0 +1,11 @@
+name: Samar
+name_zh: 萨马
+type: Division-1
+meta:
+  alpha2: PH-WSA
+  includes:
+    - samar
+    - ph-wsa
+    - wsa
+    - samar province
+  category: PROVINCE

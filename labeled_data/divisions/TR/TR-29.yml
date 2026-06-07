@@ -1,5 +1,5 @@
-name: Gümüşhane
-name_zh: 居姆什汉
+name: Gümüshane
+name_zh: 居米什哈内省
 type: Division-1
 meta:
   alpha2: TR-29
@@ -8,4 +8,5 @@ meta:
     - tr-29
     - '29'
     - gümüşhane province
+    - 居姆什汉
   category: PROVINCE

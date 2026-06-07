@@ -1,0 +1,11 @@
+name: Ascoli Piceno
+name_zh: 阿斯科利皮切诺省
+type: Division-1
+meta:
+  alpha2: IT-AP
+  includes:
+    - ascoli piceno
+    - it-ap
+    - ap
+    - ascoli piceno province
+  category: PROVINCE

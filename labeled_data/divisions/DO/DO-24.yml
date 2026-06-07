@@ -1,0 +1,11 @@
+name: Sánchez Ramírez
+name_zh: 桑切斯·拉米斯省
+type: Division-1
+meta:
+  alpha2: DO-24
+  includes:
+    - sánchez ramírez
+    - do-24
+    - '24'
+    - sánchez ramírez province
+  category: PROVINCE

@@ -1,5 +1,5 @@
 name: Vaduz
-name_zh: 瓦杜兹
+name_zh: 瓦都兹
 type: Division-1
 meta:
   alpha2: LI-11
@@ -8,4 +8,5 @@ meta:
     - li-11
     - '11'
     - vaduz commune
+    - 瓦杜兹
   category: COMMUNE

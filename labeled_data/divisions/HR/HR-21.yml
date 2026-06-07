@@ -1,5 +1,5 @@
 name: Grad Zagreb
-name_zh: 萨格勒布市
+name_zh: 萨格勒布
 type: Division-1
 meta:
   alpha2: HR-21
@@ -10,4 +10,5 @@ meta:
     - grad zagreb city
     - city of zagreb
     - zagreb
+    - 萨格勒布市
   category: CITY

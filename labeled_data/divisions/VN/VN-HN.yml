@@ -1,5 +1,5 @@
-name: Hà Nội
-name_zh: 河内
+name: Ha Noi
+name_zh: 河内市
 type: Division-1
 meta:
   alpha2: VN-HN
@@ -9,4 +9,5 @@ meta:
     - hn
     - hà nội municipality
     - hanoi
+    - 河内
   category: MUNICIPALITY

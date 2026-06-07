@@ -1,5 +1,5 @@
 name: Glodeni
-name_zh: 格洛德尼区
+name_zh: 格洛代尼区
 type: Division-1
 meta:
   alpha2: MD-GL
@@ -8,4 +8,5 @@ meta:
     - md-gl
     - gl
     - glodeni district
+    - 格洛德尼区
   category: DISTRICT

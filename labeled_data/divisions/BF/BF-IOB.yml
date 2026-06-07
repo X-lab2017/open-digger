@@ -1,0 +1,11 @@
+name: Ioba
+name_zh: 伊奥巴省
+type: Division-1
+meta:
+  alpha2: BF-IOB
+  includes:
+    - ioba
+    - bf-iob
+    - iob
+    - ioba province
+  category: PROVINCE

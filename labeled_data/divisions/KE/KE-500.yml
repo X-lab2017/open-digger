@@ -1,0 +1,24 @@
+name: North-Eastern
+name_zh: 东北省
+type: Division-1
+meta:
+  alpha2: KE-500
+  includes:
+    - garissa
+    - ke-07
+    - '07'
+    - garissa county
+    - 加里萨县
+    - mandera
+    - ke-24
+    - '24'
+    - mandera county
+    - 曼德拉县
+    - wajir
+    - ke-46
+    - '46'
+    - wajir county
+    - 瓦吉尔县
+    - KE-500
+    - '500'
+  category: PROVINCE

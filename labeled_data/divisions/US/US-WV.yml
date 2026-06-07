@@ -1,5 +1,5 @@
 name: West Virginia
-name_zh: 弗吉尼亚州
+name_zh: 西維吉尼亞州
 type: Division-1
 meta:
   alpha2: US-WV
@@ -8,4 +8,5 @@ meta:
     - us-wv
     - wv
     - west virginia state
+    - 弗吉尼亚州
   category: STATE

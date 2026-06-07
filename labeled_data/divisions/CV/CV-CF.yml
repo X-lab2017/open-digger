@@ -1,0 +1,11 @@
+name: Santa Catarina do Fogo
+name_zh: 福古圣卡塔琳娜县
+type: Division-1
+meta:
+  alpha2: CV-CF
+  includes:
+    - santa catarina do fogo
+    - cv-cf
+    - cf
+    - santa catarina do fogo municipality
+  category: PROVINCE

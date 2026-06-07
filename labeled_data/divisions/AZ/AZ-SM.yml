@@ -1,5 +1,5 @@
 name: Sumqayıt
-name_zh: 苏姆盖特区
+name_zh: 苏姆盖特
 type: Division-1
 meta:
   alpha2: AZ-SM
@@ -8,4 +8,5 @@ meta:
     - az-sm
     - sm
     - sumqayıt municipality
+    - 苏姆盖特区
   category: MUNICIPALITY

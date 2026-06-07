@@ -1,0 +1,11 @@
+name: Maine-et-Loire
+name_zh: 曼恩-卢瓦尔省
+type: Division-1
+meta:
+  alpha2: FR-49
+  includes:
+    - maine-et-loire
+    - fr-49
+    - '49'
+    - maine-et-loire metropolitan department
+  category: PROVINCE

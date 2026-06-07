@@ -1,0 +1,11 @@
+name: Dolneni
+type: Division-1
+meta:
+  alpha2: MK-27
+  includes:
+    - dolneni
+    - mk-503
+    - '503'
+    - dolneni municipality
+  category: MUNICIPALITY
+name_zh: 多尔涅尼区

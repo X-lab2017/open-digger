@@ -1,0 +1,11 @@
+name: Haute-Savoie
+name_zh: 上萨瓦省
+type: Division-1
+meta:
+  alpha2: FR-74
+  includes:
+    - haute-savoie
+    - fr-74
+    - '74'
+    - haute-savoie metropolitan department
+  category: PROVINCE

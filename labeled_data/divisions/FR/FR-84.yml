@@ -1,0 +1,11 @@
+name: Vaucluse
+name_zh: 沃克吕兹省
+type: Division-1
+meta:
+  alpha2: FR-84
+  includes:
+    - vaucluse
+    - fr-84
+    - '84'
+    - vaucluse metropolitan department
+  category: PROVINCE

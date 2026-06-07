@@ -1,5 +1,5 @@
 name: Western
-name_zh: 西部区
+name_zh: 西部大区
 type: Division-1
 meta:
   alpha2: FJ-W
@@ -20,4 +20,5 @@ meta:
     - fj-w
     - w
     - western division
+    - 西部区
   category: DIVISION

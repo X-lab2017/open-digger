@@ -1,5 +1,5 @@
-name: Kuldīgas novads
-name_zh: 库尔迪加市镇
+name: Kuldigas
+name_zh: 庫爾迪加自治市
 type: Division-1
 meta:
   alpha2: LV-050
@@ -11,4 +11,5 @@ meta:
     - kuldīga
     - kuldīga municipality
     - kuldiga
+    - 库尔迪加市镇
   category: MUNICIPALITY

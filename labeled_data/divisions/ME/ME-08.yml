@@ -1,5 +1,5 @@
-name: Herceg-Novi
-name_zh: 赫尔采格诺维市
+name: Herceg Novi
+name_zh: 赫尔采格诺维区
 type: Division-1
 meta:
   alpha2: ME-08
@@ -9,4 +9,5 @@ meta:
     - '08'
     - herceg-novi municipality
     - herceg novi municipality
+    - 赫尔采格诺维市
   category: MUNICIPALITY

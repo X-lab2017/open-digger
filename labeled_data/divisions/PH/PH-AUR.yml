@@ -1,0 +1,11 @@
+name: Aurora
+name_zh: 奥罗拉省
+type: Division-1
+meta:
+  alpha2: PH-AUR
+  includes:
+    - aurora
+    - ph-aur
+    - aur
+    - aurora province
+  category: PROVINCE

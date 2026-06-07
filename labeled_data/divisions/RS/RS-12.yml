@@ -1,5 +1,5 @@
-name: Šumadijski okrug
-name_zh: 苏马迪尼克
+name: Šumadijski
+name_zh: 舒马迪亚州
 type: Division-1
 meta:
   alpha2: RS-12
@@ -8,4 +8,5 @@ meta:
     - rs-12
     - '12'
     - šumadijski okrug district
+    - 苏马迪尼克
   category: DISTRICT

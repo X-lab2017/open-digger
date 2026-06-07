@@ -1,0 +1,11 @@
+name: Ampāra
+name_zh: 安帕赖区
+type: Division-1
+meta:
+  alpha2: LK-52
+  includes:
+    - ampara
+    - lk-52
+    - '52'
+    - ampara district
+  category: PROVINCE

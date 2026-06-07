@@ -1,5 +1,5 @@
 name: Coimbra
-name_zh: 科英布拉
+name_zh: 科英布拉区
 type: Division-1
 meta:
   alpha2: PT-06
@@ -8,4 +8,5 @@ meta:
     - pt-06
     - '06'
     - coimbra district
+    - 科英布拉
   category: DISTRICT

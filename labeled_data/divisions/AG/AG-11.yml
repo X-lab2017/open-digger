@@ -1,5 +1,5 @@
 name: Redonda
-name_zh: 雷东达
+name_zh: 雷东达岛
 type: Division-1
 meta:
   alpha2: AG-11
@@ -8,4 +8,5 @@ meta:
     - ag-11
     - '11'
     - redonda dependency
+    - 雷东达
   category: DEPENDENCY

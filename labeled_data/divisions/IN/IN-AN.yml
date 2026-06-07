@@ -1,5 +1,5 @@
-name: Andaman and Nicobar Islands
-name_zh: 安达曼和尼科巴群岛
+name: Andaman and Nicobar
+name_zh: 安达曼-尼科巴群岛
 type: Division-1
 meta:
   alpha2: IN-AN
@@ -8,4 +8,5 @@ meta:
     - in-an
     - an
     - andaman and nicobar islands union territory
+    - 安达曼和尼科巴群岛
   category: UNION TERRITORY

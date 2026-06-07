@@ -1,5 +1,5 @@
-name: Île-du-Prince-Édouard
-name_zh: 爱德华王子岛省
+name: Prince Edward Island
+name_zh: 爱德华王子岛
 type: Division-1
 meta:
   alpha2: CA-PE
@@ -10,4 +10,5 @@ meta:
     - prince edward island province
     - île-du-prince-édouard
     - île-du-prince-édouard province
+    - 爱德华王子岛省
   category: PROVINCE

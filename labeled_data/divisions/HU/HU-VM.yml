@@ -1,5 +1,5 @@
 name: Veszprém
-name_zh: 韦谢普雷姆
+name_zh: 维斯普雷姆
 type: Division-1
 meta:
   alpha2: HU-VM
@@ -8,4 +8,5 @@ meta:
     - hu-vm
     - vm
     - veszprém city with county rights
+    - 韦谢普雷姆
   category: CITY WITH COUNTY RIGHTS

@@ -1,0 +1,11 @@
+name: Trapani
+name_zh: 特拉帕尼省
+type: Division-1
+meta:
+  alpha2: IT-TP
+  includes:
+    - trapani
+    - it-tp
+    - tp
+    - trapani free municipal consortium
+  category: PROVINCE

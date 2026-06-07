@@ -1,0 +1,11 @@
+name: Kouritenga
+name_zh: 库里滕加省
+type: Division-1
+meta:
+  alpha2: BF-KOT
+  includes:
+    - kouritenga
+    - bf-kot
+    - kot
+    - kouritenga province
+  category: PROVINCE

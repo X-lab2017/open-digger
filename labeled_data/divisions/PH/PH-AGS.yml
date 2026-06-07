@@ -1,0 +1,11 @@
+name: Agusan del Sur
+name_zh: 南阿古桑省
+type: Division-1
+meta:
+  alpha2: PH-AGS
+  includes:
+    - agusan del sur
+    - ph-ags
+    - ags
+    - agusan del sur province
+  category: PROVINCE

@@ -1,5 +1,5 @@
 name: Roraima
-name_zh: 罗赖马
+name_zh: 罗赖马州
 type: Division-1
 meta:
   alpha2: BR-RR
@@ -9,4 +9,5 @@ meta:
     - rr
     - roraima state
     - state of roraima
+    - 罗赖马
   category: STATE

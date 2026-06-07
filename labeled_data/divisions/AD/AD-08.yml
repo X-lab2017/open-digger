@@ -1,5 +1,5 @@
 name: Escaldes-Engordany
-name_zh: 埃斯卡尔斯-恩戈尔达尼
+name_zh: 莱塞斯卡尔德-恩戈尔达
 type: Division-1
 meta:
   alpha2: AD-08
@@ -8,4 +8,5 @@ meta:
     - ad-08
     - '08'
     - escaldes-engordany parish
+    - 埃斯卡尔斯-恩戈尔达尼
   category: PARISH

@@ -1,5 +1,5 @@
-name: Casablanca-Settat
-name_zh: 卡萨布兰卡-塞达特
+name: Meknès - Tafilalet
+name_zh: 梅克内斯-塔菲拉勒特大区
 type: Division-1
 meta:
   alpha2: MA-06
@@ -47,4 +47,5 @@ meta:
     - sib
     - sidi bennour province
     - grand casablanca
+    - 卡萨布兰卡-塞达特
   category: REGION

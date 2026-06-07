@@ -1,0 +1,11 @@
+name: Saint George Basseterre
+name_zh: 圣乔治巴塞特莱区
+type: Division-1
+meta:
+  alpha2: KN-03
+  includes:
+    - saint george basseterre
+    - kn-03
+    - '03'
+    - saint george basseterre parish
+  category: PROVINCE

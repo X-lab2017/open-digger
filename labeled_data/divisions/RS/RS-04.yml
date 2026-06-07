@@ -1,0 +1,11 @@
+name: Južno-Banatski
+name_zh: 南巴纳特州
+type: Division-1
+meta:
+  alpha2: RS-04
+  includes:
+    - južnobanatski okrug
+    - rs-04
+    - '04'
+    - južnobanatski okrug district
+  category: PROVINCE

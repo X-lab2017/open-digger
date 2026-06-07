@@ -1,5 +1,5 @@
 name: Trujillo
-name_zh: 特鲁希略
+name_zh: 特鲁希略州
 type: Division-1
 meta:
   alpha2: VE-T
@@ -9,4 +9,5 @@ meta:
     - t
     - trujillo state
     - tr
+    - 特鲁希略
   category: STATE

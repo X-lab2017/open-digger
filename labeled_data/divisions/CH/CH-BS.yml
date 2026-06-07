@@ -1,5 +1,5 @@
 name: Basel-Stadt
-name_zh: 巴塞尔城市
+name_zh: 巴塞尔城市州
 type: Division-1
 meta:
   alpha2: CH-BS
@@ -9,4 +9,5 @@ meta:
     - bs
     - basel-stadt canton
     - basel city
+    - 巴塞尔城市
   category: CANTON

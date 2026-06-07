@@ -1,0 +1,11 @@
+name: Aklan
+name_zh: 阿克兰省
+type: Division-1
+meta:
+  alpha2: PH-AKL
+  includes:
+    - aklan
+    - ph-akl
+    - akl
+    - aklan province
+  category: PROVINCE

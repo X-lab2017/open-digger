@@ -1,5 +1,5 @@
-name: Ķekavas novads
-name_zh: 凯卡瓦市镇
+name: Kekavas
+name_zh: 科卡瓦斯自治市
 type: Division-1
 meta:
   alpha2: LV-052
@@ -10,4 +10,5 @@ meta:
     - ķekavas novads municipality
     - ķekava
     - ķekava municipality
+    - 凯卡瓦市镇
   category: MUNICIPALITY

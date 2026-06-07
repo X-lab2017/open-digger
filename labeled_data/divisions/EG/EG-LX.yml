@@ -1,5 +1,5 @@
-name: Al Uqşur
-name_zh: 卢克索省
+name: Luxor
+name_zh: 盧克索省
 type: Division-1
 meta:
   alpha2: EG-LX
@@ -10,4 +10,5 @@ meta:
     - al uqşur governorate
     - luxor
     - luxor governorate
+    - 卢克索省
   category: GOVERNORATE

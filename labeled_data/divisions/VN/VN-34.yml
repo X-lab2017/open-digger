@@ -1,5 +1,5 @@
 name: Khánh Hòa
-name_zh: 庆和
+name_zh: 庆和省
 type: Division-1
 meta:
   alpha2: VN-34
@@ -9,4 +9,5 @@ meta:
     - '34'
     - khánh hòa province
     - khanh hoa
+    - 庆和
   category: PROVINCE

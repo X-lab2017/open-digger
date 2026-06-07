@@ -1,5 +1,5 @@
 name: Delta
-name_zh: 三角洲州
+name_zh: 三角州
 type: Division-1
 meta:
   alpha2: NG-DE
@@ -8,4 +8,5 @@ meta:
     - ng-de
     - de
     - delta state
+    - 三角洲州
   category: STATE

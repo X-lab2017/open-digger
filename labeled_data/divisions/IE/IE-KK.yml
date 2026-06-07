@@ -1,0 +1,11 @@
+name: Kilkenny
+name_zh: 基尔肯尼郡
+type: Division-1
+meta:
+  alpha2: IE-KK
+  includes:
+    - cill chainnigh
+    - ie-kk
+    - kk
+    - cill chainnigh county
+  category: PROVINCE

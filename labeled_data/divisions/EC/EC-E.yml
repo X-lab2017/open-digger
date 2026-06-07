@@ -1,5 +1,5 @@
 name: Esmeraldas
-name_zh: 埃斯梅拉达斯
+name_zh: 埃斯梅拉达斯省
 type: Division-1
 meta:
   alpha2: EC-E
@@ -8,4 +8,5 @@ meta:
     - ec-e
     - e
     - esmeraldas province
+    - 埃斯梅拉达斯
   category: PROVINCE

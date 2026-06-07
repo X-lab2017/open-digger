@@ -1,5 +1,5 @@
 name: Paraíba
-name_zh: 帕拉
+name_zh: 帕拉伊巴
 type: Division-1
 meta:
   alpha2: BR-PB
@@ -9,4 +9,5 @@ meta:
     - pb
     - paraíba state
     - state of paraíba
+    - 帕拉
   category: STATE

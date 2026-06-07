@@ -85,10 +85,35 @@ meta:
       count: 4896524
 data:
   labels:
-    - ID-JW
-    - ID-KA
-    - ID-ML
-    - ID-NU
-    - ID-PP
-    - ID-SL
-    - ID-SM
+    - ID-AC
+    - ID-BA
+    - ID-BB
+    - ID-BE
+    - ID-BT
+    - ID-GO
+    - ID-JA
+    - ID-JB
+    - ID-JI
+    - ID-JK
+    - ID-JT
+    - ID-KB
+    - ID-KI
+    - ID-KR
+    - ID-KS
+    - ID-KT
+    - ID-KU
+    - ID-LA
+    - ID-NB
+    - ID-NT
+    - ID-RI
+    - ID-SA
+    - ID-SB
+    - ID-SG
+    - ID-SN
+    - ID-SR
+    - ID-SS
+    - ID-ST
+    - ID-SU
+    - ID-YO
+    - ID-MA
+    - ID-PA

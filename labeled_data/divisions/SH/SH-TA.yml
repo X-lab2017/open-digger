@@ -1,5 +1,5 @@
 name: Tristan da Cunha
-name_zh: 特里斯坦-达库尼亚岛
+name_zh: 特里斯坦-达库尼亚
 type: Division-1
 meta:
   alpha2: SH-TA
@@ -8,4 +8,5 @@ meta:
     - sh-ta
     - ta
     - tristan da cunha geographical entity
+    - 特里斯坦-达库尼亚岛
   category: GEOGRAPHICAL ENTITY

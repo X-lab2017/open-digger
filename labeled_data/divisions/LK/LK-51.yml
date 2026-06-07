@@ -1,0 +1,11 @@
+name: Maḍakalapuva
+name_zh: 拜蒂克洛區
+type: Division-1
+meta:
+  alpha2: LK-51
+  includes:
+    - batticaloa
+    - lk-51
+    - '51'
+    - batticaloa district
+  category: PROVINCE

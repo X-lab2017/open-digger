@@ -1,5 +1,5 @@
 name: Sopron
-name_zh: 索普隆
+name_zh: 肖普朗
 type: Division-1
 meta:
   alpha2: HU-SN
@@ -8,4 +8,5 @@ meta:
     - hu-sn
     - sn
     - sopron city with county rights
+    - 索普隆
   category: CITY WITH COUNTY RIGHTS

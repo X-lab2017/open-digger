@@ -1,5 +1,5 @@
 name: Borsod-Abaúj-Zemplén
-name_zh: 博尔绍德-阿巴乌伊-曾普伦
+name_zh: 包尔绍德-奥包乌伊-曾普伦州
 type: Division-1
 meta:
   alpha2: HU-BZ
@@ -8,4 +8,5 @@ meta:
     - hu-bz
     - bz
     - borsod-abaúj-zemplén county
+    - 博尔绍德-阿巴乌伊-曾普伦
   category: COUNTY

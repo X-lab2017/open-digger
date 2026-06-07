@@ -1,5 +1,5 @@
-name: Mārupes novads
-name_zh: 马鲁佩市镇
+name: Marupes
+name_zh: 馬魯皮斯自治市
 type: Division-1
 meta:
   alpha2: LV-062
@@ -10,4 +10,5 @@ meta:
     - mārupes novads municipality
     - mārupe
     - mārupe municipality
+    - 马鲁佩市镇
   category: MUNICIPALITY

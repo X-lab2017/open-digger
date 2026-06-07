@@ -1,0 +1,11 @@
+name: Zoundwéogo
+name_zh: 宗德韦奥戈省
+type: Division-1
+meta:
+  alpha2: BF-ZOU
+  includes:
+    - zoundwéogo
+    - bf-zou
+    - zou
+    - zoundwéogo province
+  category: PROVINCE

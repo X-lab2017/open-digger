@@ -1,5 +1,5 @@
 name: Antofagasta
-name_zh: 安托法加斯塔
+name_zh: 安托法加斯塔大区
 type: Division-1
 meta:
   alpha2: CL-AN
@@ -9,4 +9,5 @@ meta:
     - an
     - antofagasta region
     - ii
+    - 安托法加斯塔
   category: REGION

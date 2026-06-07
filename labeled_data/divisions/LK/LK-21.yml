@@ -1,0 +1,11 @@
+name: Mahanuvara
+name_zh: 马哈努沃勒
+type: Division-1
+meta:
+  alpha2: LK-21
+  includes:
+    - kandy
+    - lk-21
+    - '21'
+    - kandy district
+  category: PROVINCE

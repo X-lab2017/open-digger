@@ -1,5 +1,5 @@
-name: Ternopilska oblast
-name_zh: 捷尔诺波尔
+name: Ternopil'
+name_zh: 捷尔诺波尔州
 type: Division-1
 meta:
   alpha2: UA-61
@@ -11,4 +11,5 @@ meta:
     - ternopil oblast
     - ternopil's'ka oblast
     - ternopil
+    - 捷尔诺波尔
   category: REGION

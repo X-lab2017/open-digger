@@ -1,5 +1,5 @@
 name: Lac
-name_zh: 拉克
+name_zh: 湖区
 type: Division-1
 meta:
   alpha2: TD-LC
@@ -10,4 +10,5 @@ meta:
     - al buḩayrah province
     - lac
     - lac province
+    - 拉克
   category: PROVINCE

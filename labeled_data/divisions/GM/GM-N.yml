@@ -1,5 +1,5 @@
 name: North Bank
-name_zh: 班珠尔市议会
+name_zh: 北岸区
 type: Division-1
 meta:
   alpha2: GM-N
@@ -8,4 +8,5 @@ meta:
     - gm-n
     - 'n'
     - north bank division
+    - 班珠尔市议会
   category: DIVISION

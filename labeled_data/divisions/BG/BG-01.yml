@@ -1,5 +1,5 @@
 name: Blagoevgrad
-name_zh: 布拉戈耶夫格勒
+name_zh: 布拉格耶夫格勒州
 type: Division-1
 meta:
   alpha2: BG-01
@@ -9,4 +9,5 @@ meta:
     - '01'
     - blagoevgrad district
     - blagoevgrad province
+    - 布拉戈耶夫格勒
   category: DISTRICT

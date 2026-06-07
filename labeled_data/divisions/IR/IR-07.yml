@@ -1,5 +1,5 @@
-name: Fārs
-name_zh: 法尔斯省
+name: Tehran
+name_zh: 德黑兰省
 type: Division-1
 meta:
   alpha2: IR-07
@@ -9,4 +9,5 @@ meta:
     - '07'
     - fārs province
     - fars province
+    - 法尔斯省
   category: PROVINCE

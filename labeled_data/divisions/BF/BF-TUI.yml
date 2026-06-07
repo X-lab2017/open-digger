@@ -1,0 +1,11 @@
+name: Tuy
+name_zh: 图伊省
+type: Division-1
+meta:
+  alpha2: BF-TUI
+  includes:
+    - tuy
+    - bf-tui
+    - tui
+    - tuy province
+  category: PROVINCE

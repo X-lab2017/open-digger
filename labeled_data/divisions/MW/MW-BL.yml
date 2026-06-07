@@ -1,0 +1,11 @@
+name: Blantyre
+name_zh: 布兰太尔县
+type: Division-1
+meta:
+  alpha2: MW-BL
+  includes:
+    - blantyre
+    - mw-bl
+    - bl
+    - blantyre district
+  category: PROVINCE

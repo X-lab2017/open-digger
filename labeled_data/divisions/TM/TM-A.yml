@@ -1,5 +1,5 @@
 name: Ahal
-name_zh: 阿哈尔
+name_zh: 阿哈尔州
 type: Division-1
 meta:
   alpha2: TM-A
@@ -8,4 +8,5 @@ meta:
     - tm-a
     - a
     - ahal region
+    - 阿哈尔
   category: REGION

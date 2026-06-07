@@ -1,5 +1,5 @@
 name: Ghanzi
-name_zh: 甘茨区
+name_zh: 杭济区
 type: Division-1
 meta:
   alpha2: BW-GH
@@ -8,4 +8,5 @@ meta:
     - bw-gh
     - gh
     - ghanzi district
+    - 甘茨区
   category: DISTRICT

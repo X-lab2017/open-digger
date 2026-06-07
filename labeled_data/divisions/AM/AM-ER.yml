@@ -1,5 +1,5 @@
 name: Erevan
-name_zh: 埃里温市
+name_zh: 埃里温
 type: Division-1
 meta:
   alpha2: AM-ER
@@ -9,4 +9,5 @@ meta:
     - er
     - erevan city
     - yerevan
+    - 埃里温市
   category: CITY

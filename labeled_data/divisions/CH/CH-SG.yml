@@ -1,5 +1,5 @@
 name: Sankt Gallen
-name_zh: 圣加仑
+name_zh: 圣加仑州
 type: Division-1
 meta:
   alpha2: CH-SG
@@ -10,4 +10,5 @@ meta:
     - sankt gallen canton
     - st gallen
     - st. gallen
+    - 圣加仑
   category: CANTON

@@ -1,5 +1,5 @@
 name: Shkodër
-name_zh: 斯库台县
+name_zh: 斯库台州
 type: Division-1
 meta:
   alpha2: AL-10
@@ -8,4 +8,5 @@ meta:
     - al-10
     - '10'
     - shkodër county
+    - 斯库台县
   category: COUNTY

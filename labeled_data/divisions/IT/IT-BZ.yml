@@ -1,0 +1,11 @@
+name: Bozen
+name_zh: 特伦蒂诺-上阿迪杰
+type: Division-1
+meta:
+  alpha2: IT-BZ
+  includes:
+    - bolzano
+    - it-bz
+    - bz
+    - bolzano autonomous province
+  category: PROVINCE

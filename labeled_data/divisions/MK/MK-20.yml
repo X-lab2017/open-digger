@@ -1,0 +1,12 @@
+name: Gradsko
+type: Division-1
+meta:
+  alpha2: MK-20
+  includes:
+    - gradsko
+    - mk-102
+    - '102'
+    - gradsko municipality
+    - municipality of gradsko
+  category: MUNICIPALITY
+name_zh: 格拉兹科区

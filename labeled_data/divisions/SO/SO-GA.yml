@@ -1,5 +1,5 @@
 name: Galguduud
-name_zh: 加尔古杜德
+name_zh: 加勒古杜德州
 type: Division-1
 meta:
   alpha2: SO-GA
@@ -8,4 +8,5 @@ meta:
     - so-ga
     - ga
     - galguduud region
+    - 加尔古杜德
   category: REGION

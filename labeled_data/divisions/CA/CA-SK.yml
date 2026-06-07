@@ -1,5 +1,5 @@
 name: Saskatchewan
-name_zh: 萨斯喀彻温省
+name_zh: 萨斯喀彻温
 type: Division-1
 meta:
   alpha2: CA-SK
@@ -8,4 +8,5 @@ meta:
     - ca-sk
     - sk
     - saskatchewan province
+    - 萨斯喀彻温省
   category: PROVINCE

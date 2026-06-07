@@ -1,5 +1,5 @@
-name: Māyū Kībbī al Gharbī
-name_zh: 马约-凯比西
+name: Mayo-Kebbi Ouest
+name_zh: 西凯比河区
 type: Division-1
 meta:
   alpha2: TD-MO
@@ -11,4 +11,5 @@ meta:
     - māyū kībbī al gharbī
     - māyū kībbī al gharbī province
     - mayo-kebbi ouest
+    - 马约-凯比西
   category: PROVINCE

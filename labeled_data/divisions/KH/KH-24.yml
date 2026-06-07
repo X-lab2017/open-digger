@@ -1,5 +1,5 @@
-name: Pailĭn
-name_zh: 柏威夏省
+name: Krong Pailin
+name_zh: 拜林市
 type: Division-1
 meta:
   alpha2: KH-24
@@ -10,4 +10,5 @@ meta:
     - pailin province
     - pailĭn
     - pailĭn province
+    - 柏威夏省
   category: PROVINCE

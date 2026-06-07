@@ -1,5 +1,5 @@
-name: Đồng Nai
-name_zh: 同奈
+name: Đông Nam Bộ
+name_zh: 越南东南部
 type: Division-1
 meta:
   alpha2: VN-39
@@ -9,4 +9,5 @@ meta:
     - '39'
     - đồng nai province
     - dong nai
+    - 同奈
   category: PROVINCE

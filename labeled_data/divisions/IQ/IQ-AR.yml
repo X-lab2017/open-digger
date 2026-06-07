@@ -1,0 +1,11 @@
+name: Arbil
+name_zh: 埃尔比勒省
+type: Division-1
+meta:
+  alpha2: IQ-AR
+  includes:
+    - arbīl
+    - iq-ar
+    - ar
+    - arbīl governorate
+  category: PROVINCE

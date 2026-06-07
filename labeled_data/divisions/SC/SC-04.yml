@@ -1,4 +1,4 @@
-name: O Kap
+name: Au Cap
 type: Division-1
 meta:
   alpha2: SC-04
@@ -10,3 +10,4 @@ meta:
     - o kap
     - o kap district
   category: DISTRICT
+name_zh: 奥凯普区

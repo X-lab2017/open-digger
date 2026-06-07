@@ -1,5 +1,5 @@
-name: Al Jahrā’
-name_zh: 贾赫拉省
+name: Al Jahrah
+name_zh: 杰赫拉省
 type: Division-1
 meta:
   alpha2: KW-JA
@@ -9,4 +9,5 @@ meta:
     - ja
     - al jahrā’ governorate
     - al jahra governorate
+    - 贾赫拉省
   category: GOVERNORATE

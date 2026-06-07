@@ -1,0 +1,11 @@
+name: Crotene
+name_zh: 克罗托内省
+type: Division-1
+meta:
+  alpha2: IT-KR
+  includes:
+    - crotone
+    - it-kr
+    - kr
+    - crotone province
+  category: PROVINCE

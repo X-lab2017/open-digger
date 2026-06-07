@@ -1,5 +1,5 @@
 name: Rangpur
-name_zh: 朗普尔
+name_zh: 朗布尔县
 type: Division-1
 meta:
   alpha2: BD-F
@@ -39,4 +39,5 @@ meta:
     - bd-64
     - '64'
     - thakurgaon district
+    - 朗普尔
   category: DIVISION

@@ -1,5 +1,5 @@
 name: Central
-name_zh: 中央区
+name_zh: 中部地区
 type: Division-1
 meta:
   alpha2: GH-CP
@@ -8,4 +8,5 @@ meta:
     - gh-cp
     - cp
     - central region
+    - 中央区
   category: REGION

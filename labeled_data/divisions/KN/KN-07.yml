@@ -1,0 +1,11 @@
+name: Saint John Figtree
+name_zh: 圣约翰费格特里区
+type: Division-1
+meta:
+  alpha2: KN-07
+  includes:
+    - saint john figtree
+    - kn-07
+    - '07'
+    - saint john figtree parish
+  category: PROVINCE

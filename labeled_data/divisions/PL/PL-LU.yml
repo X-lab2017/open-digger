@@ -1,0 +1,14 @@
+name: Lublin
+name_zh: 卢布林省
+type: Division-1
+meta:
+  alpha2: PL-LU
+  includes:
+    - lubelskie
+    - pl-06
+    - '06'
+    - lubelskie voivodship
+    - lublin voivodeship
+    - województwo lubelskie
+    - lu
+  category: VOIVODSHIP

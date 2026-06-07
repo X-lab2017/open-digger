@@ -1,0 +1,11 @@
+name: Val-de-Marne
+name_zh: 马恩河谷省
+type: Division-1
+meta:
+  alpha2: FR-94
+  includes:
+    - val-de-marne
+    - fr-94
+    - '94'
+    - val-de-marne metropolitan department
+  category: PROVINCE

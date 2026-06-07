@@ -1,0 +1,11 @@
+name: Nayala
+name_zh: 纳亚拉省
+type: Division-1
+meta:
+  alpha2: BF-NAY
+  includes:
+    - nayala
+    - bf-nay
+    - nay
+    - nayala province
+  category: PROVINCE

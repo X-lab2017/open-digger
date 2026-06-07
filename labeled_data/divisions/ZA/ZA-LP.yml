@@ -1,5 +1,5 @@
 name: Limpopo
-name_zh: 林波波
+name_zh: 林波波省
 type: Division-1
 meta:
   alpha2: ZA-LP
@@ -10,4 +10,5 @@ meta:
     - limpopo province
     - vhembe
     - vhembe province
+    - 林波波
   category: PROVINCE

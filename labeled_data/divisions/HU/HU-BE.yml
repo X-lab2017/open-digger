@@ -1,5 +1,5 @@
 name: Békés
-name_zh: 贝凯什
+name_zh: 贝凯什州
 type: Division-1
 meta:
   alpha2: HU-BE
@@ -8,4 +8,5 @@ meta:
     - hu-be
     - be
     - békés county
+    - 贝凯什
   category: COUNTY

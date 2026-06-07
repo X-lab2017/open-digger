@@ -1,4 +1,4 @@
-name: Woleu-Ntem
+name: Wouleu-Ntem
 type: Division-1
 meta:
   alpha2: GA-9
@@ -8,3 +8,4 @@ meta:
     - '9'
     - woleu-ntem province
   category: PROVINCE
+name_zh: 沃勒-恩特姆省

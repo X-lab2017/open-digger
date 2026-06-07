@@ -1,5 +1,5 @@
 name: Khatlon
-name_zh: 哈特隆省
+name_zh: 哈特隆州
 type: Division-1
 meta:
   alpha2: TJ-KT
@@ -9,4 +9,5 @@ meta:
     - kt
     - khatlon region
     - khatlon province
+    - 哈特隆省
   category: REGION

@@ -1,5 +1,5 @@
 name: Đắk Lắk
-name_zh: 得乐
+name_zh: 多乐省
 type: Division-1
 meta:
   alpha2: VN-33
@@ -9,4 +9,5 @@ meta:
     - '33'
     - đắk lắk province
     - dak lak
+    - 得乐
   category: PROVINCE

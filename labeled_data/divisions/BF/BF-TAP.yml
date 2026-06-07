@@ -1,0 +1,11 @@
+name: Tapoa
+name_zh: 塔波阿省
+type: Division-1
+meta:
+  alpha2: BF-TAP
+  includes:
+    - tapoa
+    - bf-tap
+    - tap
+    - tapoa province
+  category: PROVINCE

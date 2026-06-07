@@ -1,0 +1,11 @@
+name: Benevento
+name_zh: 贝内文托省
+type: Division-1
+meta:
+  alpha2: IT-BN
+  includes:
+    - benevento
+    - it-bn
+    - bn
+    - benevento province
+  category: PROVINCE

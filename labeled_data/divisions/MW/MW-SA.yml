@@ -1,0 +1,11 @@
+name: Salima
+name_zh: 萨利马县
+type: Division-1
+meta:
+  alpha2: MW-SA
+  includes:
+    - salima
+    - mw-sa
+    - sa
+    - salima district
+  category: PROVINCE

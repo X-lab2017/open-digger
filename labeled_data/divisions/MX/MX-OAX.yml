@@ -1,5 +1,5 @@
 name: Oaxaca
-name_zh: 瓦哈卡
+name_zh: 瓦哈卡州
 type: Division-1
 meta:
   alpha2: MX-OAX
@@ -8,4 +8,5 @@ meta:
     - mx-oax
     - oax
     - oaxaca state
+    - 瓦哈卡
   category: STATE

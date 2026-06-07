@@ -1,5 +1,5 @@
 name: Ninh Bình
-name_zh: 宁平
+name_zh: 宁平省
 type: Division-1
 meta:
   alpha2: VN-18
@@ -9,4 +9,5 @@ meta:
     - '18'
     - ninh bình province
     - ninh binh
+    - 宁平
   category: PROVINCE

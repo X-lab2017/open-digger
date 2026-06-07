@@ -1,5 +1,5 @@
 name: Stann Creek
-name_zh: 斯坦溪区
+name_zh: 斯坦克里克区
 type: Division-1
 meta:
   alpha2: BZ-SC
@@ -8,4 +8,5 @@ meta:
     - bz-sc
     - sc
     - stann creek district
+    - 斯坦溪区
   category: DISTRICT

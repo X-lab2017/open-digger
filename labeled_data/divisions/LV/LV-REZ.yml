@@ -1,5 +1,5 @@
-name: Rēzekne
-name_zh: 雷泽克内市
+name: Rezeknes
+name_zh: 雷泽克内
 type: Division-1
 meta:
   alpha2: LV-REZ
@@ -9,4 +9,5 @@ meta:
     - rez
     - rēzekne state city
     - rezekne
+    - 雷泽克内市
   category: STATE CITY

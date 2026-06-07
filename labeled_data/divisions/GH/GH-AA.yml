@@ -1,5 +1,5 @@
 name: Greater Accra
-name_zh: 大阿克拉区
+name_zh: 大阿克拉地区
 type: Division-1
 meta:
   alpha2: GH-AA
@@ -8,4 +8,5 @@ meta:
     - gh-aa
     - aa
     - greater accra region
+    - 大阿克拉区
   category: REGION

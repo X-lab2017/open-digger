@@ -1,5 +1,5 @@
-name: Västernorrlands län
-name_zh: 布莱金厄县
+name: Västernorrland
+name_zh: 西诺尔兰省
 type: Division-1
 meta:
   alpha2: SE-Y
@@ -9,4 +9,5 @@ meta:
     - 'y'
     - västernorrlands län county
     - västernorrland county
+    - 布莱金厄县
   category: COUNTY

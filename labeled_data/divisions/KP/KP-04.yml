@@ -1,4 +1,4 @@
-name: Jakangto
+name: Chagang-do
 type: Division-1
 meta:
   alpha2: KP-04
@@ -10,3 +10,4 @@ meta:
     - jakangto
     - jakangto province
   category: PROVINCE
+name_zh: 慈江道

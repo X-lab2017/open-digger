@@ -1,0 +1,11 @@
+name: São Salvador do Mundo
+name_zh: 圣萨尔瓦多蒙多县
+type: Division-1
+meta:
+  alpha2: CV-SS
+  includes:
+    - são salvador do mundo
+    - cv-ss
+    - ss
+    - são salvador do mundo municipality
+  category: PROVINCE

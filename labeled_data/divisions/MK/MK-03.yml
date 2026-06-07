@@ -1,0 +1,13 @@
+name: Berovo
+name_zh: 贝罗沃区
+type: Division-1
+meta:
+  alpha2: MK-03
+  includes:
+    - berovo
+    - mk-201
+    - '201'
+    - berovo municipality
+    - municipality of berovo
+    - 贝罗沃
+  category: MUNICIPALITY

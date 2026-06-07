@@ -1,5 +1,5 @@
 name: Stara Zagora
-name_zh: 斯塔拉扎戈拉
+name_zh: 旧扎戈拉州
 type: Division-1
 meta:
   alpha2: BG-24
@@ -9,4 +9,5 @@ meta:
     - '24'
     - stara zagora district
     - stara zagora province
+    - 斯塔拉扎戈拉
   category: DISTRICT

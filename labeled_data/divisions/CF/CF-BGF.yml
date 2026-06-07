@@ -1,5 +1,5 @@
 name: Bangui
-name_zh: 班吉市
+name_zh: 班吉
 type: Division-1
 meta:
   alpha2: CF-BGF
@@ -10,4 +10,5 @@ meta:
     - bangui commune
     - bangî
     - bangî commune
+    - 班吉市
   category: COMMUNE

@@ -1,5 +1,5 @@
 name: Huánuco
-name_zh: 瓦努科
+name_zh: 瓦努科大区
 type: Division-1
 meta:
   alpha2: PE-HUC
@@ -11,4 +11,5 @@ meta:
     - wanuku
     - wanuku region
     - huanuco
+    - 瓦努科
   category: REGION

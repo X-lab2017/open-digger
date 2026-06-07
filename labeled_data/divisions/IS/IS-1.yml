@@ -1,5 +1,5 @@
 name: Höfuðborgarsvæði
-name_zh: 加尔达拜尔
+name_zh: 首都区
 type: Division-1
 meta:
   alpha2: IS-1
@@ -37,4 +37,5 @@ meta:
     - sel
     - seltjarnarnesbær municipality
     - capital region
+    - 加尔达拜尔
   category: REGION

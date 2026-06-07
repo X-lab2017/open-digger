@@ -1,5 +1,5 @@
 name: Grad
-name_zh: 斯洛文杰格拉德茨
+name_zh: 格拉德
 type: Division-1
 meta:
   alpha2: SI-158
@@ -8,4 +8,5 @@ meta:
     - si-158
     - '158'
     - grad municipality
+    - 斯洛文杰格拉德茨
   category: MUNICIPALITY

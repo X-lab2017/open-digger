@@ -1,5 +1,5 @@
 name: Khenchela
-name_zh: 赫恩谢莱省
+name_zh: 汉舍莱省
 type: Division-1
 meta:
   alpha2: DZ-40
@@ -8,4 +8,5 @@ meta:
     - dz-40
     - '40'
     - khenchela province
+    - 赫恩谢莱省
   category: PROVINCE

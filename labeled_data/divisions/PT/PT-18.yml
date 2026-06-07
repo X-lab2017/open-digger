@@ -1,5 +1,5 @@
 name: Viseu
-name_zh: 维塞乌
+name_zh: 维塞乌区
 type: Division-1
 meta:
   alpha2: PT-18
@@ -8,4 +8,5 @@ meta:
     - pt-18
     - '18'
     - viseu district
+    - 维塞乌
   category: DISTRICT

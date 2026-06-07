@@ -1,5 +1,5 @@
-name: Panamá
-name_zh: 巴拿马西省
+name: Panama
+name_zh: 巴拿马省
 type: Division-1
 meta:
   alpha2: PA-8
@@ -10,4 +10,5 @@ meta:
     - panamá province
     - provincia de panamá
     - pn
+    - 巴拿马西省
   category: PROVINCE

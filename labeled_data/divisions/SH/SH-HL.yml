@@ -1,5 +1,5 @@
 name: Saint Helena
-name_zh: 圣赫勒拿岛
+name_zh: 圣赫勒拿
 type: Division-1
 meta:
   alpha2: SH-HL
@@ -8,4 +8,5 @@ meta:
     - sh-hl
     - hl
     - saint helena geographical entity
+    - 圣赫勒拿岛
   category: GEOGRAPHICAL ENTITY

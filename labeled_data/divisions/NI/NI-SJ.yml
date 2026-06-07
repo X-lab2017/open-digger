@@ -1,5 +1,5 @@
-name: Río San Juan
-name_zh: 圣胡安河
+name: Rio San Juan
+name_zh: 圣胡安河省
 type: Division-1
 meta:
   alpha2: NI-SJ
@@ -10,4 +10,5 @@ meta:
     - río san juan department
     - rio san juan
     - rs
+    - 圣胡安河
   category: DEPARTMENT

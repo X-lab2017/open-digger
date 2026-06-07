@@ -1,5 +1,5 @@
 name: Geita
-name_zh: 盖塔
+name_zh: 盖塔区
 type: Division-1
 meta:
   alpha2: TZ-27
@@ -8,4 +8,5 @@ meta:
     - tz-27
     - '27'
     - geita region
+    - 盖塔
   category: REGION

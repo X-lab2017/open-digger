@@ -1,0 +1,11 @@
+name: Maio
+name_zh: 马约岛县
+type: Division-1
+meta:
+  alpha2: CV-MA
+  includes:
+    - maio
+    - cv-ma
+    - ma
+    - maio municipality
+  category: PROVINCE

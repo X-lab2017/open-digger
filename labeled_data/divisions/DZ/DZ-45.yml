@@ -1,5 +1,5 @@
-name: Naama
-name_zh: 奈阿玛省
+name: Naâma
+name_zh: 纳马省
 type: Division-1
 meta:
   alpha2: DZ-45
@@ -9,4 +9,5 @@ meta:
     - '45'
     - naama province
     - naâma province
+    - 奈阿玛省
   category: PROVINCE

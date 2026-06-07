@@ -1,5 +1,5 @@
-name: Buzău
-name_zh: 布扎乌县
+name: Buzau
+name_zh: 布泽乌县
 type: Division-1
 meta:
   alpha2: RO-BZ
@@ -9,4 +9,5 @@ meta:
     - bz
     - buzău department
     - buzău county
+    - 布扎乌县
   category: DEPARTMENT

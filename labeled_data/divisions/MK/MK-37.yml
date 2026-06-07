@@ -1,0 +1,11 @@
+name: Karbinci
+type: Division-1
+meta:
+  alpha2: MK-37
+  includes:
+    - karbinci
+    - mk-205
+    - '205'
+    - karbinci municipality
+  category: MUNICIPALITY
+name_zh: 卡尔宾奇区

@@ -1,0 +1,13 @@
+name: Gevgelija
+name_zh: 杰夫格里雅区
+type: Division-1
+meta:
+  alpha2: MK-18
+  includes:
+    - gevgelija
+    - mk-405
+    - '405'
+    - gevgelija municipality
+    - municipality of gevgelija
+    - 盖夫盖利亚
+  category: MUNICIPALITY

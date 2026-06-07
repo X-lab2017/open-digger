@@ -1,0 +1,11 @@
+name: Palawan
+name_zh: 巴拉望省
+type: Division-1
+meta:
+  alpha2: PH-PLW
+  includes:
+    - palawan
+    - ph-plw
+    - plw
+    - palawan province
+  category: PROVINCE

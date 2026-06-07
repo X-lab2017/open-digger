@@ -1,5 +1,5 @@
-name: Cần Thơ
-name_zh: 芹苴
+name: Can Tho
+name_zh: 芹苴市
 type: Division-1
 meta:
   alpha2: VN-CT
@@ -9,4 +9,5 @@ meta:
     - ct
     - cần thơ municipality
     - can tho
+    - 芹苴
   category: MUNICIPALITY

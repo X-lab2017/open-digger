@@ -1,0 +1,13 @@
+name: Bosilovo
+name_zh: 博西洛沃区
+type: Division-1
+meta:
+  alpha2: MK-07
+  includes:
+    - bosilovo
+    - mk-402
+    - '402'
+    - bosilovo municipality
+    - municipality of bosilovo
+    - 博西洛沃
+  category: MUNICIPALITY

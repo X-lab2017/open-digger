@@ -1,5 +1,5 @@
 name: Jelgava
-name_zh: 杰尔加瓦市
+name_zh: 叶尔加瓦
 type: Division-1
 meta:
   alpha2: LV-JEL
@@ -8,4 +8,5 @@ meta:
     - lv-jel
     - jel
     - jelgava state city
+    - 杰尔加瓦市
   category: STATE CITY

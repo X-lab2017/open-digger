@@ -1,5 +1,5 @@
 name: Sant Julià de Lòria
-name_zh: 圣朱利娅德洛里亚
+name_zh: 圣胡利娅-德洛里亚
 type: Division-1
 meta:
   alpha2: AD-06
@@ -8,4 +8,5 @@ meta:
     - ad-06
     - '06'
     - sant julià de lòria parish
+    - 圣朱利娅德洛里亚
   category: PARISH

@@ -1,5 +1,5 @@
-name: Dytikí Makedonía
-name_zh: 阿提卡
+name: Dytiki Makedonia
+name_zh: 西马其顿
 type: Division-1
 meta:
   alpha2: GR-C
@@ -9,4 +9,5 @@ meta:
     - c
     - dytikí makedonía administrative region
     - western macedonia
+    - 阿提卡
   category: ADMINISTRATIVE REGION

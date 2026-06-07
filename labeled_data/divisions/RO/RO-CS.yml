@@ -1,5 +1,5 @@
-name: Caraș-Severin
-name_zh: 卡拉什-塞韦林县
+name: Caras-Severin
+name_zh: 卡拉什-塞维林县
 type: Division-1
 meta:
   alpha2: RO-CS
@@ -9,4 +9,5 @@ meta:
     - cs
     - caraș-severin department
     - caraș-severin county
+    - 卡拉什-塞韦林县
   category: DEPARTMENT

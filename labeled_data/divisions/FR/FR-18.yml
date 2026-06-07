@@ -1,0 +1,11 @@
+name: Cher
+name_zh: 谢尔省
+type: Division-1
+meta:
+  alpha2: FR-18
+  includes:
+    - cher
+    - fr-18
+    - '18'
+    - cher metropolitan department
+  category: PROVINCE

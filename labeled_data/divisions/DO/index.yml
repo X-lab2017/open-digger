@@ -1,5 +1,5 @@
-name: Dominican Republic
-name_zh: 多米尼加共和国
+name: Dominican Rep.
+name_zh: 多米尼加
 type: Division-0
 meta:
   alpha2: DO
@@ -9,6 +9,7 @@ meta:
     - '214'
     - the Dominican Republic
     - 多米尼加
+    - 多米尼加共和国
   name_full: the Dominican Republic
   developers:
     - year: 2020
@@ -85,13 +86,35 @@ meta:
       count: 196190
 data:
   labels:
-    - DO-33
-    - DO-34
-    - DO-35
-    - DO-36
-    - DO-37
-    - DO-38
-    - DO-39
-    - DO-40
-    - DO-41
-    - DO-42
+    - DO-01
+    - DO-02
+    - DO-03
+    - DO-04
+    - DO-05
+    - DO-06
+    - DO-07
+    - DO-08
+    - DO-09
+    - DO-10
+    - DO-11
+    - DO-12
+    - DO-13
+    - DO-14
+    - DO-15
+    - DO-16
+    - DO-17
+    - DO-18
+    - DO-19
+    - DO-20
+    - DO-21
+    - DO-22
+    - DO-23
+    - DO-24
+    - DO-25
+    - DO-26
+    - DO-27
+    - DO-28
+    - DO-29
+    - DO-30
+    - DO-31
+    - DO-32

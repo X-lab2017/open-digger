@@ -1,5 +1,5 @@
-name: Södermanlands län
-name_zh: 达拉纳县
+name: Södermanland
+name_zh: 南曼兰省
 type: Division-1
 meta:
   alpha2: SE-D
@@ -9,4 +9,5 @@ meta:
     - d
     - södermanlands län county
     - södermanland county
+    - 达拉纳县
   category: COUNTY

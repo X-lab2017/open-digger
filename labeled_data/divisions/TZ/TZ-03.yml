@@ -1,5 +1,5 @@
 name: Dodoma
-name_zh: 多多马
+name_zh: 多多马區
 type: Division-1
 meta:
   alpha2: TZ-03
@@ -9,4 +9,5 @@ meta:
     - '03'
     - dodoma region
     - mkoa wa dodoma
+    - 多多马
   category: REGION

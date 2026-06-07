@@ -1,5 +1,5 @@
 name: Atacama
-name_zh: 阿塔卡马
+name_zh: 阿塔卡马大区
 type: Division-1
 meta:
   alpha2: CL-AT
@@ -9,4 +9,5 @@ meta:
     - at
     - atacama region
     - iii
+    - 阿塔卡马
   category: REGION

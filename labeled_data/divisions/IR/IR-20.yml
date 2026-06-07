@@ -1,5 +1,5 @@
-name: Semnān
-name_zh: 塞姆南省
+name: Lorestan
+name_zh: 洛雷斯坦省
 type: Division-1
 meta:
   alpha2: IR-20
@@ -9,4 +9,5 @@ meta:
     - '20'
     - semnān province
     - semnan province
+    - 塞姆南省
   category: PROVINCE

@@ -1,5 +1,5 @@
-name: Gulbenes novads
-name_zh: 古尔贝内斯市镇
+name: Gulbene
+name_zh: 古爾貝內自治市
 type: Division-1
 meta:
   alpha2: LV-033
@@ -10,4 +10,5 @@ meta:
     - gulbenes novads municipality
     - gulbene
     - gulbene municipality
+    - 古尔贝内斯市镇
   category: MUNICIPALITY

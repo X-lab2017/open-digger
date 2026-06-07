@@ -1,0 +1,14 @@
+name: Łódź
+name_zh: 罗兹省
+type: Division-1
+meta:
+  alpha2: PL-LD
+  includes:
+    - łódzkie
+    - pl-10
+    - '10'
+    - łódzkie voivodship
+    - łódź voivodeship
+    - województwo łódzkie
+    - ld
+  category: VOIVODSHIP

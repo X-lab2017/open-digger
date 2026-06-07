@@ -1,5 +1,5 @@
 name: Sinop
-name_zh: 锡诺普
+name_zh: 锡诺普省
 type: Division-1
 meta:
   alpha2: TR-57
@@ -8,4 +8,5 @@ meta:
     - tr-57
     - '57'
     - sinop province
+    - 锡诺普
   category: PROVINCE

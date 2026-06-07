@@ -1,0 +1,11 @@
+name: Somme
+name_zh: 索姆省
+type: Division-1
+meta:
+  alpha2: FR-80
+  includes:
+    - somme
+    - fr-80
+    - '80'
+    - somme metropolitan department
+  category: PROVINCE

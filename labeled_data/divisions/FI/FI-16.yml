@@ -1,5 +1,5 @@
-name: Päijänne-Tavastland
-name_zh: 派亚特海梅
+name: Päijät-Häme
+name_zh: 派耶特海梅区
 type: Division-1
 meta:
   alpha2: FI-16
@@ -11,4 +11,5 @@ meta:
     - päijät-häme
     - päijät-häme region
     - päijänne tavastia
+    - 派亚特海梅
   category: REGION

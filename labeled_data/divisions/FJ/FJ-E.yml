@@ -1,5 +1,5 @@
 name: Eastern
-name_zh: 中央区
+name_zh: 东部大区
 type: Division-1
 meta:
   alpha2: FJ-E
@@ -20,4 +20,5 @@ meta:
     - fj-06
     - '06'
     - lomaiviti province
+    - 中央区
   category: DIVISION

@@ -1,5 +1,5 @@
 name: Puebla
-name_zh: 普埃布拉
+name_zh: 普埃布拉州
 type: Division-1
 meta:
   alpha2: MX-PUE
@@ -8,4 +8,5 @@ meta:
     - mx-pue
     - pue
     - puebla state
+    - 普埃布拉
   category: STATE

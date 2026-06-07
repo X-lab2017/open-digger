@@ -1,0 +1,12 @@
+name: Santa Rosa
+name_zh: 圣罗萨省
+type: Division-1
+meta:
+  alpha2: GT-SR
+  includes:
+    - santa rosa
+    - gt-06
+    - '06'
+    - santa rosa department
+    - 圣塔罗莎省
+  category: DEPARTMENT

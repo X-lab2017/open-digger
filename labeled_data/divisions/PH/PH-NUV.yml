@@ -1,0 +1,11 @@
+name: Nueva Vizcaya
+name_zh: 新比斯开省
+type: Division-1
+meta:
+  alpha2: PH-NUV
+  includes:
+    - nueva vizcaya
+    - ph-nuv
+    - nuv
+    - nueva vizcaya province
+  category: PROVINCE

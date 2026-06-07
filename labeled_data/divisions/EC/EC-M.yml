@@ -1,5 +1,5 @@
-name: Manabí
-name_zh: 马纳比
+name: Manabi
+name_zh: 马纳比省
 type: Division-1
 meta:
   alpha2: EC-M
@@ -8,4 +8,5 @@ meta:
     - ec-m
     - m
     - manabí province
+    - 马纳比
   category: PROVINCE

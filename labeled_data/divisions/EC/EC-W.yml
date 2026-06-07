@@ -1,5 +1,5 @@
 name: Galápagos
-name_zh: 加拉帕戈斯群岛
+name_zh: 加拉帕戈斯省
 type: Division-1
 meta:
   alpha2: EC-W
@@ -10,4 +10,5 @@ meta:
     - galápagos province
     - islas galápagos
     - galápagos islands
+    - 加拉帕戈斯群岛
   category: PROVINCE

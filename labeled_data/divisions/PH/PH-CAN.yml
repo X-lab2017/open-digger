@@ -1,0 +1,11 @@
+name: Camarines Norte
+name_zh: 北甘马粦
+type: Division-1
+meta:
+  alpha2: PH-CAN
+  includes:
+    - camarines norte
+    - ph-can
+    - can
+    - camarines norte province
+  category: PROVINCE

@@ -1,5 +1,5 @@
-name: Sughd
-name_zh: 索格特省
+name: Leninabad
+name_zh: 苦盏
 type: Division-1
 meta:
   alpha2: TJ-SU
@@ -10,4 +10,5 @@ meta:
     - sughd region
     - vilojati suƣd
     - sughd province
+    - 索格特省
   category: REGION

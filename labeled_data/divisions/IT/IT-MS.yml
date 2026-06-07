@@ -1,0 +1,11 @@
+name: Massa-Carrara
+name_zh: 马萨-卡拉拉省
+type: Division-1
+meta:
+  alpha2: IT-MS
+  includes:
+    - massa-carrara
+    - it-ms
+    - ms
+    - massa-carrara province
+  category: PROVINCE

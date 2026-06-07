@@ -1,5 +1,5 @@
 name: Risaralda
-name_zh: 里萨拉尔达
+name_zh: 里萨拉尔达省
 type: Division-1
 meta:
   alpha2: CO-RIS
@@ -8,4 +8,5 @@ meta:
     - co-ris
     - ris
     - risaralda department
+    - 里萨拉尔达
   category: DEPARTMENT

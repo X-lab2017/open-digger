@@ -1,5 +1,5 @@
 name: Agadez
-name_zh: 阿加德兹区
+name_zh: 阿加德兹大区
 type: Division-1
 meta:
   alpha2: NE-1
@@ -8,4 +8,5 @@ meta:
     - ne-1
     - '1'
     - agadez region
+    - 阿加德兹区
   category: REGION

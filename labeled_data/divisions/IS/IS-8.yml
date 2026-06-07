@@ -1,5 +1,5 @@
 name: Suðurland
-name_zh: 米尔达尔什雷普
+name_zh: 南部区
 type: Division-1
 meta:
   alpha2: IS-8
@@ -64,4 +64,5 @@ meta:
     - is-asa
     - asa
     - ásahreppur municipality
+    - 米尔达尔什雷普
   category: REGION

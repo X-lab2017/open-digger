@@ -1,4 +1,4 @@
-name: Western
+name: West Coast
 type: Division-1
 meta:
   alpha2: GM-W
@@ -8,3 +8,4 @@ meta:
     - w
     - western division
   category: DIVISION
+name_zh: 西部区

@@ -1,5 +1,5 @@
 name: Tuyên Quang
-name_zh: 宣光
+name_zh: 宣光省
 type: Division-1
 meta:
   alpha2: VN-07
@@ -8,4 +8,5 @@ meta:
     - vn-07
     - '07'
     - tuyên quang province
+    - 宣光
   category: PROVINCE

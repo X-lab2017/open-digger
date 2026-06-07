@@ -1,0 +1,11 @@
+name: Chhattisgarh
+name_zh: 恰蒂斯加尔邦
+type: Division-1
+meta:
+  alpha2: IN-CT
+  includes:
+    - chhattīsgarh
+    - in-cg
+    - cg
+    - chhattīsgarh state
+  category: STATE

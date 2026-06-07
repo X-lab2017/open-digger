@@ -1,5 +1,5 @@
-name: Kurskaya oblast'
-name_zh: 库尔斯克
+name: Kursk
+name_zh: 库尔斯克州
 type: Division-1
 meta:
   alpha2: RU-KRS
@@ -12,4 +12,5 @@ meta:
     - kurskaya oblast' administrative region
     - kursk oblast
     - kursk
+    - 库尔斯克
   category: ADMINISTRATIVE REGION

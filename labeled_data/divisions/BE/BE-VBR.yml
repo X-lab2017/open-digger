@@ -1,0 +1,11 @@
+name: Flemish Brabant
+name_zh: 弗拉芒-布拉班特省
+type: Division-1
+meta:
+  alpha2: BE-VBR
+  includes:
+    - vlaams-brabant
+    - be-vbr
+    - vbr
+    - vlaams-brabant province
+  category: PROVINCE

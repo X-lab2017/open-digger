@@ -1,4 +1,4 @@
-name: Bormla
+name: Cospicua
 type: Division-1
 meta:
   alpha2: MT-06
@@ -8,3 +8,4 @@ meta:
     - '06'
     - bormla local council
   category: LOCAL COUNCIL
+name_zh: 科斯皮夸

@@ -1,0 +1,11 @@
+name: Likoma
+name_zh: 利科马县
+type: Division-1
+meta:
+  alpha2: MW-LK
+  includes:
+    - likoma
+    - mw-lk
+    - lk
+    - likoma district
+  category: PROVINCE

@@ -1,0 +1,11 @@
+name: Cacheu
+name_zh: 卡谢乌区
+type: Division-1
+meta:
+  alpha2: GW-CA
+  includes:
+    - cacheu
+    - gw-ca
+    - ca
+    - cacheu region
+  category: PROVINCE

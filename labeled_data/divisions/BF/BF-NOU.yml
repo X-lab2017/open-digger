@@ -1,0 +1,11 @@
+name: Noumbiel
+name_zh: 努姆比埃尔省
+type: Division-1
+meta:
+  alpha2: BF-NOU
+  includes:
+    - noumbiel
+    - bf-nou
+    - nou
+    - noumbiel province
+  category: PROVINCE

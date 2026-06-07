@@ -86,5 +86,25 @@ meta:
       count: 6832
 data:
   labels:
-    - CV-B
-    - CV-S
+    - CV-BR
+    - CV-BV
+    - CV-CA
+    - CV-CF
+    - CV-CR
+    - CV-MA
+    - CV-MO
+    - CV-PA
+    - CV-PN
+    - CV-PR
+    - CV-RB
+    - CV-RG
+    - CV-RS
+    - CV-SD
+    - CV-SF
+    - CV-SL
+    - CV-SM
+    - CV-SO
+    - CV-SS
+    - CV-SV
+    - CV-TA
+    - CV-TS

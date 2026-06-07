@@ -1,0 +1,11 @@
+name: Cork
+name_zh: 科克郡
+type: Division-1
+meta:
+  alpha2: IE-CO
+  includes:
+    - corcaigh
+    - ie-co
+    - co
+    - corcaigh county
+  category: PROVINCE

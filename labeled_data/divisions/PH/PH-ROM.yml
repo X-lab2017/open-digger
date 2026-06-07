@@ -1,0 +1,11 @@
+name: Romblon
+name_zh: 朗布隆省
+type: Division-1
+meta:
+  alpha2: PH-ROM
+  includes:
+    - romblon
+    - ph-rom
+    - rom
+    - romblon province
+  category: PROVINCE

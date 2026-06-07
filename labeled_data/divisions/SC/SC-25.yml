@@ -1,4 +1,4 @@
-name: Ros Kaiman
+name: Roche Caïman
 type: Division-1
 meta:
   alpha2: SC-25
@@ -12,3 +12,4 @@ meta:
     - ros kaiman
     - ros kaiman district
   category: DISTRICT
+name_zh: 罗切凯曼区

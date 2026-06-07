@@ -1,5 +1,5 @@
-name: Mellersta Finland
-name_zh: 中芬兰
+name: Central Finland
+name_zh: 中芬蘭區
 type: Division-1
 meta:
   alpha2: FI-08
@@ -11,4 +11,5 @@ meta:
     - mellersta finland
     - mellersta finland region
     - central finland
+    - 中芬兰
   category: REGION

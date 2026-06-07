@@ -1,0 +1,11 @@
+name: Corrèze
+name_zh: 科雷兹省
+type: Division-1
+meta:
+  alpha2: FR-19
+  includes:
+    - corrèze
+    - fr-19
+    - '19'
+    - corrèze metropolitan department
+  category: PROVINCE

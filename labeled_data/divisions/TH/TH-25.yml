@@ -1,5 +1,5 @@
 name: Prachin Buri
-name_zh: 巴真武里府
+name_zh: 巴真府
 type: Division-1
 meta:
   alpha2: TH-25
@@ -9,4 +9,5 @@ meta:
     - '25'
     - prachin buri province
     - chang wat prachin buri
+    - 巴真武里府
   category: PROVINCE

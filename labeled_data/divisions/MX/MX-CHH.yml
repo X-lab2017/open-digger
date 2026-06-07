@@ -1,5 +1,5 @@
 name: Chihuahua
-name_zh: 奇瓦瓦
+name_zh: 奇瓦瓦州
 type: Division-1
 meta:
   alpha2: MX-CHH
@@ -9,4 +9,5 @@ meta:
     - chh
     - chihuahua state
     - chih
+    - 奇瓦瓦
   category: STATE

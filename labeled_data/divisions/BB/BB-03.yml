@@ -1,5 +1,5 @@
 name: Saint George
-name_zh: 圣乔治区
+name_zh: 圣乔治教区
 type: Division-1
 meta:
   alpha2: BB-03
@@ -8,4 +8,5 @@ meta:
     - bb-03
     - '03'
     - saint george parish
+    - 圣乔治区
   category: PARISH

@@ -1,5 +1,5 @@
 name: Bay of Plenty
-name_zh: 丰盛湾
+name_zh: 普伦蒂湾大区
 type: Division-1
 meta:
   alpha2: NZ-BOP
@@ -10,4 +10,5 @@ meta:
     - bay of plenty region
     - toi moana
     - toi moana region
+    - 丰盛湾
   category: REGION

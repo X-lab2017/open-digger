@@ -1,5 +1,5 @@
 name: Ica
-name_zh: 万卡韦利卡
+name_zh: 伊卡大区
 type: Division-1
 meta:
   alpha2: PE-ICA
@@ -9,4 +9,5 @@ meta:
     - ica region
     - ika
     - ika region
+    - 万卡韦利卡
   category: REGION

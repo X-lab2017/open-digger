@@ -1,5 +1,5 @@
-name: Viangchan
-name_zh: 博利坎赛省
+name: Vientiane [prefecture]
+name_zh: 永珍地区
 type: Division-1
 meta:
   alpha2: LA-VI
@@ -10,4 +10,5 @@ meta:
     - viangchan province
     - vientiane
     - vientiane province
+    - 博利坎赛省
   category: PROVINCE

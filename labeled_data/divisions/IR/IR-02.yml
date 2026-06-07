@@ -1,5 +1,5 @@
-name: Māzandarān
-name_zh: 马赞德兰省
+name: West Azarbaijan
+name_zh: 西亚塞拜然省
 type: Division-1
 meta:
   alpha2: IR-02
@@ -9,4 +9,5 @@ meta:
     - '02'
     - māzandarān province
     - mazandaran province
+    - 马赞德兰省
   category: PROVINCE

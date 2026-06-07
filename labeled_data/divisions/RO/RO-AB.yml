@@ -1,5 +1,5 @@
 name: Alba
-name_zh: 阿尔巴县
+name_zh: 阿爾巴縣
 type: Division-1
 meta:
   alpha2: RO-AB
@@ -10,4 +10,5 @@ meta:
     - alba department
     - alba county
     - județul alba
+    - 阿尔巴县
   category: DEPARTMENT

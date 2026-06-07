@@ -1,0 +1,11 @@
+name: Chiradzulu
+name_zh: 奇拉朱卢县
+type: Division-1
+meta:
+  alpha2: MW-CR
+  includes:
+    - chiradzulu
+    - mw-cr
+    - cr
+    - chiradzulu district
+  category: PROVINCE

@@ -1,0 +1,11 @@
+name: Biliran
+name_zh: 比利兰
+type: Division-1
+meta:
+  alpha2: PH-BIL
+  includes:
+    - biliran
+    - ph-bil
+    - bil
+    - biliran province
+  category: PROVINCE

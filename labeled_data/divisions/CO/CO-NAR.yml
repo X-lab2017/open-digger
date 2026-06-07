@@ -1,5 +1,5 @@
 name: Nariño
-name_zh: 纳里尼奥
+name_zh: 纳里尼奥省
 type: Division-1
 meta:
   alpha2: CO-NAR
@@ -9,4 +9,5 @@ meta:
     - nar
     - nariño department
     - narino
+    - 纳里尼奥
   category: DEPARTMENT

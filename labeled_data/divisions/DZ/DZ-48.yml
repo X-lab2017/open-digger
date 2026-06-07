@@ -1,5 +1,5 @@
 name: Relizane
-name_zh: 赖利赞省
+name_zh: 埃利赞省
 type: Division-1
 meta:
   alpha2: DZ-48
@@ -8,4 +8,5 @@ meta:
     - dz-48
     - '48'
     - relizane province
+    - 赖利赞省
   category: PROVINCE

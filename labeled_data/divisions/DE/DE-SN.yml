@@ -1,5 +1,5 @@
 name: Sachsen
-name_zh: 萨克森州
+name_zh: 萨克森
 type: Division-1
 meta:
   alpha2: DE-SN
@@ -9,4 +9,5 @@ meta:
     - sn
     - sachsen land
     - saxony
+    - 萨克森州
   category: LAND

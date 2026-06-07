@@ -1,0 +1,13 @@
+name: Delčevo
+name_zh: 德尔塞沃区
+type: Division-1
+meta:
+  alpha2: MK-23
+  includes:
+    - delčevo
+    - mk-203
+    - '203'
+    - delčevo municipality
+    - municipality of delcevo
+    - 德尔切沃
+  category: MUNICIPALITY

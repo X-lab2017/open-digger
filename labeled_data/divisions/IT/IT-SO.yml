@@ -1,0 +1,11 @@
+name: Sondrio
+name_zh: 松德里奥省
+type: Division-1
+meta:
+  alpha2: IT-SO
+  includes:
+    - sondrio
+    - it-so
+    - so
+    - sondrio province
+  category: PROVINCE

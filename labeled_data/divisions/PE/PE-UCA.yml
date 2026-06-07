@@ -1,5 +1,5 @@
 name: Ucayali
-name_zh: 乌卡亚利
+name_zh: 乌卡亚利大区
 type: Division-1
 meta:
   alpha2: PE-UCA
@@ -10,4 +10,5 @@ meta:
     - ucayali region
     - ukayali
     - ukayali region
+    - 乌卡亚利
   category: REGION

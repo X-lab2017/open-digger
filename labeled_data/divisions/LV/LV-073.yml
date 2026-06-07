@@ -1,5 +1,5 @@
-name: Preiļu novads
-name_zh: 普里利市镇
+name: Preilu
+name_zh: 普雷利自治市
 type: Division-1
 meta:
   alpha2: LV-073
@@ -10,4 +10,5 @@ meta:
     - preiļu novads municipality
     - preiļi
     - preiļi municipality
+    - 普里利市镇
   category: MUNICIPALITY

@@ -1,5 +1,5 @@
 name: Tiền Giang
-name_zh: 前江
+name_zh: 前江省
 type: Division-1
 meta:
   alpha2: VN-46
@@ -9,4 +9,5 @@ meta:
     - '46'
     - tiền giang province
     - tien giang
+    - 前江
   category: PROVINCE

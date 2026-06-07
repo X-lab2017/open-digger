@@ -1,5 +1,5 @@
-name: Kermānshāh
-name_zh: 克尔曼沙赫省
+name: Ilam
+name_zh: 伊拉姆省
 type: Division-1
 meta:
   alpha2: IR-05
@@ -9,4 +9,5 @@ meta:
     - '05'
     - kermānshāh province
     - kermanshah province
+    - 克尔曼沙赫省
   category: PROVINCE

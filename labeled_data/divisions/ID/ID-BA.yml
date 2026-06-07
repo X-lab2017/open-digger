@@ -1,0 +1,11 @@
+name: Bali
+name_zh: 巴厘岛
+type: Division-1
+meta:
+  alpha2: ID-BA
+  includes:
+    - bali
+    - id-ba
+    - ba
+    - bali province
+  category: PROVINCE

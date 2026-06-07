@@ -1,0 +1,11 @@
+name: Bioko Norte
+name_zh: 北比奥科省
+type: Division-1
+meta:
+  alpha2: GQ-BN
+  includes:
+    - bioko nord
+    - gq-bn
+    - bn
+    - bioko nord province
+  category: PROVINCE

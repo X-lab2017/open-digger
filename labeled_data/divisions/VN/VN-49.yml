@@ -1,5 +1,5 @@
 name: Vĩnh Long
-name_zh: 永隆
+name_zh: 永隆省
 type: Division-1
 meta:
   alpha2: VN-49
@@ -9,4 +9,5 @@ meta:
     - '49'
     - vĩnh long province
     - vinh long
+    - 永隆
   category: PROVINCE

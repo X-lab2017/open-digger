@@ -1,5 +1,5 @@
 name: Cajamarca
-name_zh: 卡哈马卡
+name_zh: 卡哈马卡大区
 type: Division-1
 meta:
   alpha2: PE-CAJ
@@ -12,4 +12,5 @@ meta:
     - kashamarka region
     - qajamarka
     - qajamarka region
+    - 卡哈马卡
   category: REGION

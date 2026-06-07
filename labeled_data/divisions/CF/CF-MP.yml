@@ -1,5 +1,5 @@
-name: Ombella-Mpoko
-name_zh: 翁贝拉-姆波科省
+name: Ombella-M'Poko
+name_zh: 翁贝拉－姆波科省
 type: Division-1
 meta:
   alpha2: CF-MP
@@ -10,4 +10,5 @@ meta:
     - ombella-mpoko prefecture
     - ömbëlä-pökö
     - ömbëlä-pökö prefecture
+    - 翁贝拉-姆波科省
   category: PREFECTURE

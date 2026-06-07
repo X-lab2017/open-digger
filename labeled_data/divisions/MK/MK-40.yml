@@ -1,0 +1,12 @@
+name: Kičevo
+name_zh: 基塞沃区
+type: Division-1
+meta:
+  alpha2: MK-40
+  includes:
+    - kičevo
+    - mk-307
+    - '307'
+    - kičevo municipality
+    - 基切沃
+  category: MUNICIPALITY

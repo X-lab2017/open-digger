@@ -1,5 +1,5 @@
-name: Adıyaman
-name_zh: 阿迪亚曼
+name: Adiyaman
+name_zh: 阿德亚曼省
 type: Division-1
 meta:
   alpha2: TR-02
@@ -8,4 +8,5 @@ meta:
     - tr-02
     - '02'
     - adıyaman province
+    - 阿迪亚曼
   category: PROVINCE

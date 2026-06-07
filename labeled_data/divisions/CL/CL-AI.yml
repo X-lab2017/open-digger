@@ -1,5 +1,5 @@
-name: Aisén del General Carlos Ibañez del Campo
-name_zh: 艾森
+name: Aisén del General Carlos Ibáñez del Campo
+name_zh: 伊瓦涅斯将军艾森大区
 type: Division-1
 meta:
   alpha2: CL-AI
@@ -13,4 +13,5 @@ meta:
     - aysén
     - xii
     - xi
+    - 艾森
   category: REGION

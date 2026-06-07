@@ -1,5 +1,5 @@
-name: Kyôto
-name_zh: 京都市
+name: Kyōto
+name_zh: 京都府
 type: Division-1
 meta:
   alpha2: JP-26
@@ -11,4 +11,5 @@ meta:
     - kyôto
     - kyôto prefecture
     - 京都府
+    - 京都市
   category: PREFECTURE

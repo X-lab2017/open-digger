@@ -1,5 +1,5 @@
-name: Kāpīsā
-name_zh: 卡皮萨省
+name: Kapisa
+name_zh: 卡比萨省
 type: Division-1
 meta:
   alpha2: AF-KAP
@@ -8,4 +8,5 @@ meta:
     - af-kap
     - kap
     - kāpīsā province
+    - 卡皮萨省
   category: PROVINCE

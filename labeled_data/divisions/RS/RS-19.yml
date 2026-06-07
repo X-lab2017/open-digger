@@ -1,5 +1,5 @@
-name: Rasinski okrug
-name_zh: 拉斯尼克
+name: Pomoravski
+name_zh: 拉辛那州
 type: Division-1
 meta:
   alpha2: RS-19
@@ -8,4 +8,5 @@ meta:
     - rs-19
     - '19'
     - rasinski okrug district
+    - 拉斯尼克
   category: DISTRICT

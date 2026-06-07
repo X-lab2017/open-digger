@@ -1,5 +1,5 @@
 name: Ticino
-name_zh: 提契诺
+name_zh: 提契诺州
 type: Division-1
 meta:
   alpha2: CH-TI
@@ -8,4 +8,5 @@ meta:
     - ch-ti
     - ti
     - ticino canton
+    - 提契诺
   category: CANTON

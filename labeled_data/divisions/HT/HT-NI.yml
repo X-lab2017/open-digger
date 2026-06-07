@@ -1,5 +1,5 @@
 name: Nippes
-name_zh: Artibonite Department
+name_zh: 尼普斯省
 type: Division-1
 meta:
   alpha2: HT-NI
@@ -11,4 +11,5 @@ meta:
     - nippes
     - nippes department
     - département des nippes
+    - Artibonite Department
   category: DEPARTMENT

@@ -1,5 +1,5 @@
 name: Bragança
-name_zh: 布拉加
+name_zh: 布拉干萨区
 type: Division-1
 meta:
   alpha2: PT-04
@@ -8,4 +8,5 @@ meta:
     - pt-04
     - '04'
     - bragança district
+    - 布拉加
   category: DISTRICT

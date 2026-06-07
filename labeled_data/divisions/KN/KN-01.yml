@@ -1,0 +1,11 @@
+name: Christ Church Nichola Town
+name_zh: 基督教会尼古拉镇区
+type: Division-1
+meta:
+  alpha2: KN-01
+  includes:
+    - christ church nichola town
+    - kn-01
+    - '01'
+    - christ church nichola town parish
+  category: PROVINCE

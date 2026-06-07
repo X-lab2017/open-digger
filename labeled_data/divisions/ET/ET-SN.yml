@@ -1,5 +1,5 @@
-name: Southern Nations
-name_zh: 南方人民、民族和族裔州
+name: Southern Nations, Nationalities and Peoples
+name_zh: 南方各族州
 type: Division-1
 meta:
   alpha2: ET-SN
@@ -13,4 +13,5 @@ meta:
     - southern nations, nationalities, and peoples
     - ደቡብ ብሔሮች ብሔረሰቦችና ሕዝቦች ክልል
     - southern nations, nationalities and peoples
+    - 南方人民、民族和族裔州
   category: REGIONAL STATE

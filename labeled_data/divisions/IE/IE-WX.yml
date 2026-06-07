@@ -1,0 +1,11 @@
+name: Wexford
+name_zh: 韦克斯福德郡
+type: Division-1
+meta:
+  alpha2: IE-WX
+  includes:
+    - loch garman
+    - ie-wx
+    - wx
+    - loch garman county
+  category: PROVINCE

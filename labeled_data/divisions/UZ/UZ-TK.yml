@@ -1,5 +1,5 @@
-name: Toshkent
-name_zh: 塔什干市
+name: Tashkent
+name_zh: 塔什干
 type: Division-1
 meta:
   alpha2: UZ-TK
@@ -9,4 +9,5 @@ meta:
     - tk
     - toshkent city
     - toshkent shahri
+    - 塔什干市
   category: CITY

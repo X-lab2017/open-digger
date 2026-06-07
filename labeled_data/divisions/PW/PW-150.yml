@@ -1,5 +1,5 @@
 name: Koror
-name_zh: 科罗尔
+name_zh: 科罗尔州
 type: Division-1
 meta:
   alpha2: PW-150
@@ -8,4 +8,5 @@ meta:
     - pw-150
     - '150'
     - koror state
+    - 科罗尔
   category: STATE

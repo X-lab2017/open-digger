@@ -1,0 +1,11 @@
+name: Léraba
+name_zh: 雷拉巴省
+type: Division-1
+meta:
+  alpha2: BF-LER
+  includes:
+    - léraba
+    - bf-ler
+    - ler
+    - léraba province
+  category: PROVINCE

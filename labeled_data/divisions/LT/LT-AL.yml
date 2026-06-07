@@ -1,5 +1,5 @@
-name: Alytaus apskritis
-name_zh: 阿利图斯县
+name: Alytaus
+name_zh: 阿利圖斯區
 type: Division-1
 meta:
   alpha2: LT-AL
@@ -30,4 +30,5 @@ meta:
     - varėna district municipality
     - alytus county
     - alytaus
+    - 阿利图斯县
   category: COUNTY

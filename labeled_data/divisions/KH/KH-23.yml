@@ -1,4 +1,4 @@
-name: Kêb
+name: Kep
 type: Division-1
 meta:
   alpha2: KH-23
@@ -13,3 +13,4 @@ meta:
     - kêb province
     - kb
   category: PROVINCE
+name_zh: 白马市

@@ -1,0 +1,13 @@
+name: Kratovo
+name_zh: 克拉托沃区
+type: Division-1
+meta:
+  alpha2: MK-43
+  includes:
+    - kratovo
+    - mk-701
+    - '701'
+    - kratovo municipality
+    - municipality of kratovo
+    - 克拉托沃
+  category: MUNICIPALITY

@@ -1,5 +1,5 @@
 name: Tanintharyi
-name_zh: 丹那沙林省
+name_zh: 德林达依
 type: Division-1
 meta:
   alpha2: MM-05
@@ -8,4 +8,5 @@ meta:
     - mm-05
     - '05'
     - tanintharyi region
+    - 丹那沙林省
   category: REGION

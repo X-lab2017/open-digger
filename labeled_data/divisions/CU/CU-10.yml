@@ -1,5 +1,5 @@
 name: Las Tunas
-name_zh: 拉斯图纳斯
+name_zh: 拉斯图纳斯省
 type: Division-1
 meta:
   alpha2: CU-10
@@ -8,4 +8,5 @@ meta:
     - cu-10
     - '10'
     - las tunas province
+    - 拉斯图纳斯
   category: PROVINCE

@@ -1,0 +1,12 @@
+name: Odisha
+name_zh: 奥里萨邦
+type: Division-1
+meta:
+  alpha2: IN-OR
+  includes:
+    - odisha
+    - in-od
+    - od
+    - odisha state
+    - 奥迪沙邦
+  category: STATE

@@ -1,5 +1,5 @@
-name: Biobío
-name_zh: 比奥比奥
+name: Bío-Bío
+name_zh: 比奥比奥大区
 type: Division-1
 meta:
   alpha2: CL-BI
@@ -11,4 +11,5 @@ meta:
     - bío bío
     - viii
     - bio bio
+    - 比奥比奥
   category: REGION

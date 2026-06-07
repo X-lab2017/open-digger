@@ -1,5 +1,5 @@
 name: Plaines Wilhems
-name_zh: 普莱恩斯·威尔海姆区
+name_zh: 威廉平原区
 type: Division-1
 meta:
   alpha2: MU-PW
@@ -9,4 +9,5 @@ meta:
     - pw
     - plaines wilhems district
     - quatre bornes
+    - 普莱恩斯·威尔海姆区
   category: DISTRICT

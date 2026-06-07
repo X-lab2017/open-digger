@@ -1,0 +1,11 @@
+name: Galway
+name_zh: 戈尔韦郡
+type: Division-1
+meta:
+  alpha2: IE-G
+  includes:
+    - gaillimh
+    - ie-g
+    - g
+    - gaillimh county
+  category: PROVINCE

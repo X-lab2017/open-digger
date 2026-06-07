@@ -1,5 +1,5 @@
-name: Ra’s al Khaymah
-name_zh: 拉斯海马酋长国
+name: Ras Al Khaymah
+name_zh: 拉斯海玛
 type: Division-1
 meta:
   alpha2: AE-RK
@@ -11,4 +11,5 @@ meta:
     - ras al khaimah
     - ras al khaimah emirate
     - ras al-khaimah
+    - 拉斯海马酋长国
   category: EMIRATE

@@ -1,5 +1,5 @@
-name: Tigrai
-name_zh: 南方人民、民族和族裔州
+name: Tigray
+name_zh: 提格里州
 type: Division-1
 meta:
   alpha2: ET-TI
@@ -10,4 +10,5 @@ meta:
     - tigrai regional state
     - tigray
     - tigray regional state
+    - 南方人民、民族和族裔州
   category: REGIONAL STATE

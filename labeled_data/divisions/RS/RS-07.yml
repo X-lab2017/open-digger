@@ -1,0 +1,11 @@
+name: Sremski
+name_zh: 斯雷姆州
+type: Division-1
+meta:
+  alpha2: RS-07
+  includes:
+    - sremski okrug
+    - rs-07
+    - '07'
+    - sremski okrug district
+  category: PROVINCE

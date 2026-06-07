@@ -1,0 +1,11 @@
+name: Eure
+name_zh: 厄尔省
+type: Division-1
+meta:
+  alpha2: FR-27
+  includes:
+    - eure
+    - fr-27
+    - '27'
+    - eure metropolitan department
+  category: PROVINCE

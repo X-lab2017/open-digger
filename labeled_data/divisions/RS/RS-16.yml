@@ -1,5 +1,5 @@
-name: Zlatiborski okrug
-name_zh: 扎莱茨尼克
+name: Zlatiborski
+name_zh: 茲拉蒂博爾州
 type: Division-1
 meta:
   alpha2: RS-16
@@ -8,4 +8,5 @@ meta:
     - rs-16
     - '16'
     - zlatiborski okrug district
+    - 扎莱茨尼克
   category: DISTRICT

@@ -1,5 +1,5 @@
 name: San Martín
-name_zh: 圣马丁
+name_zh: 圣马丁大区
 type: Division-1
 meta:
   alpha2: PE-SAM
@@ -10,4 +10,5 @@ meta:
     - san martin region
     - san martín
     - san martín region
+    - 圣马丁
   category: REGION

@@ -1,5 +1,5 @@
-name: Uvea
-name_zh: 乌维埃
+name: '`Uvea'
+name_zh: 乌韦阿
 type: Division-1
 meta:
   alpha2: WF-UV
@@ -8,4 +8,5 @@ meta:
     - wf-uv
     - uv
     - uvea administrative precinct
+    - 乌维埃
   category: ADMINISTRATIVE PRECINCT

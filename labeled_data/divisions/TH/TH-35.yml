@@ -1,5 +1,5 @@
 name: Yasothon
-name_zh: 亚索通
+name_zh: 益梭通府
 type: Division-1
 meta:
   alpha2: TH-35
@@ -8,4 +8,5 @@ meta:
     - th-35
     - '35'
     - yasothon province
+    - 亚索通
   category: PROVINCE

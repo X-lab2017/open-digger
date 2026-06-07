@@ -1,0 +1,49 @@
+name: Diekirch
+name_zh: 迪基希区
+type: Division-1
+meta:
+  alpha2: LU-D
+  includes:
+    - diekirch
+    - lu-di
+    - di
+    - diekirch canton
+    - diekrech
+    - diekrech canton
+    - 迪基希县
+    - 迪基希区
+    - clerf
+    - lu-cl
+    - cl
+    - clerf canton
+    - clervaux
+    - clervaux canton
+    - klierf
+    - klierf canton
+    - 克莱沃县
+    - redange
+    - lu-rd
+    - rd
+    - redange canton
+    - redingen
+    - redingen canton
+    - réiden-atert
+    - réiden-atert canton
+    - 雷当日县
+    - veianen
+    - lu-vd
+    - vd
+    - veianen canton
+    - vianden
+    - vianden canton
+    - 菲安登县
+    - wiltz
+    - lu-wi
+    - wi
+    - wiltz canton
+    - wolz
+    - wolz canton
+    - 维尔茨县
+    - LU-D
+    - D
+  category: DISTRICT

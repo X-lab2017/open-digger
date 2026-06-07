@@ -1,5 +1,5 @@
-name: Södra Karelen
-name_zh: 南卡累利阿
+name: South Karelia
+name_zh: 南卡累利阿区
 type: Division-1
 meta:
   alpha2: FI-02
@@ -11,4 +11,5 @@ meta:
     - södra karelen
     - södra karelen region
     - south karelia
+    - 南卡累利阿
   category: REGION

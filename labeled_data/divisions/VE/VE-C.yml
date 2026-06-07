@@ -1,5 +1,5 @@
 name: Apure
-name_zh: 阿普雷
+name_zh: 阿普雷州
 type: Division-1
 meta:
   alpha2: VE-C
@@ -9,4 +9,5 @@ meta:
     - c
     - apure state
     - ap
+    - 阿普雷
   category: STATE

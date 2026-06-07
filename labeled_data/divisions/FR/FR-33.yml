@@ -1,0 +1,11 @@
+name: Gironde
+name_zh: 吉伦特省
+type: Division-1
+meta:
+  alpha2: FR-33
+  includes:
+    - gironde
+    - fr-33
+    - '33'
+    - gironde metropolitan department
+  category: PROVINCE

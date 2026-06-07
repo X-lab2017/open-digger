@@ -1,0 +1,11 @@
+name: Palermo
+name_zh: 巴勒莫省
+type: Division-1
+meta:
+  alpha2: IT-PA
+  includes:
+    - palermo
+    - it-pa
+    - pa
+    - palermo metropolitan city
+  category: PROVINCE

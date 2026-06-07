@@ -1,5 +1,5 @@
 name: Cross River
-name_zh: 十字河州
+name_zh: 克里斯河州
 type: Division-1
 meta:
   alpha2: NG-CR
@@ -8,4 +8,5 @@ meta:
     - ng-cr
     - cr
     - cross river state
+    - 十字河州
   category: STATE

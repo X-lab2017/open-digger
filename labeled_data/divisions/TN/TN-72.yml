@@ -1,5 +1,5 @@
 name: Tozeur
-name_zh: 托泽尔市
+name_zh: 托泽尔省
 type: Division-1
 meta:
   alpha2: TN-72
@@ -8,4 +8,5 @@ meta:
     - tn-72
     - '72'
     - tozeur governorate
+    - 托泽尔市
   category: GOVERNORATE

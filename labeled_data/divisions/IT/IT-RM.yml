@@ -1,0 +1,11 @@
+name: Roma
+name_zh: 罗马省
+type: Division-1
+meta:
+  alpha2: IT-RM
+  includes:
+    - roma
+    - it-rm
+    - rm
+    - roma metropolitan city
+  category: PROVINCE

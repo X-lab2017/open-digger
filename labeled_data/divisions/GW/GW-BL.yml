@@ -1,0 +1,11 @@
+name: Bolama
+name_zh: 博拉马区
+type: Division-1
+meta:
+  alpha2: GW-BL
+  includes:
+    - bolama / bijagós
+    - gw-bl
+    - bl
+    - bolama / bijagós region
+  category: PROVINCE

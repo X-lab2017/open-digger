@@ -1,5 +1,5 @@
 name: Kankan
-name_zh: 坎坎区
+name_zh: 康康大区
 type: Division-1
 meta:
   alpha2: GN-K
@@ -28,4 +28,5 @@ meta:
     - si
     - siguiri prefecture
     - kindia region
+    - 坎坎区
   category: ADMINISTRATIVE REGION

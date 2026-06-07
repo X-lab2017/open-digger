@@ -1,5 +1,5 @@
 name: Nordrhein-Westfalen
-name_zh: 北莱茵-威斯特法伦州
+name_zh: 北莱茵－威斯特法伦
 type: Division-1
 meta:
   alpha2: DE-NW
@@ -9,4 +9,5 @@ meta:
     - nw
     - nordrhein-westfalen land
     - north rhine-westphalia
+    - 北莱茵-威斯特法伦州
   category: LAND

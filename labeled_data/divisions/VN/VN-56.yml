@@ -1,5 +1,5 @@
 name: Bắc Ninh
-name_zh: 北宁
+name_zh: 北宁省
 type: Division-1
 meta:
   alpha2: VN-56
@@ -10,4 +10,5 @@ meta:
     - bắc ninh province
     - bac ninh
     - bac ninh province
+    - 北宁
   category: PROVINCE

@@ -1,0 +1,11 @@
+name: Monte Plata
+name_zh: 银山省
+type: Division-1
+meta:
+  alpha2: DO-29
+  includes:
+    - monte plata
+    - do-29
+    - '29'
+    - monte plata province
+  category: PROVINCE

@@ -1,5 +1,5 @@
 name: Orellana
-name_zh: 奥雷亚纳
+name_zh: 奥雷亚纳省
 type: Division-1
 meta:
   alpha2: EC-D
@@ -8,4 +8,5 @@ meta:
     - ec-d
     - d
     - orellana province
+    - 奥雷亚纳
   category: PROVINCE

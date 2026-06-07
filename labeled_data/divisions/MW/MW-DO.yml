@@ -1,0 +1,11 @@
+name: Dowa
+name_zh: 多瓦县
+type: Division-1
+meta:
+  alpha2: MW-DO
+  includes:
+    - dowa
+    - mw-do
+    - do
+    - dowa district
+  category: PROVINCE

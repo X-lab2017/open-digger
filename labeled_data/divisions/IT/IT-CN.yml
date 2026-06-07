@@ -1,0 +1,11 @@
+name: Cuneo
+name_zh: 库内奥省
+type: Division-1
+meta:
+  alpha2: IT-CN
+  includes:
+    - cuneo
+    - it-cn
+    - cn
+    - cuneo province
+  category: PROVINCE

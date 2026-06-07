@@ -1,5 +1,5 @@
 name: Ratchaburi
-name_zh: 叻丕府
+name_zh: 叻武里府
 type: Division-1
 meta:
   alpha2: TH-70
@@ -8,4 +8,5 @@ meta:
     - th-70
     - '70'
     - ratchaburi province
+    - 叻丕府
   category: PROVINCE

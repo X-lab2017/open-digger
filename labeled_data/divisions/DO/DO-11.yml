@@ -1,0 +1,11 @@
+name: La Altagracia
+name_zh: 圣母省
+type: Division-1
+meta:
+  alpha2: DO-11
+  includes:
+    - la altagracia
+    - do-11
+    - '11'
+    - la altagracia province
+  category: PROVINCE

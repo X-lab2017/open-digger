@@ -1,0 +1,11 @@
+name: Puerto Plata
+name_zh: 银港省
+type: Division-1
+meta:
+  alpha2: DO-18
+  includes:
+    - puerto plata
+    - do-18
+    - '18'
+    - puerto plata province
+  category: PROVINCE

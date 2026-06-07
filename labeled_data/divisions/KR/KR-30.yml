@@ -1,5 +1,5 @@
-name: Daejeon-gwangyeoksi
-name_zh: 大田市
+name: Daejeon
+name_zh: 大田广域市
 type: Division-1
 meta:
   alpha2: KR-30
@@ -10,4 +10,5 @@ meta:
     - daejeon-gwangyeoksi metropolitan city
     - daejeon
     - daejeon metropolitan city
+    - 大田市
   category: METROPOLITAN CITY

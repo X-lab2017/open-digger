@@ -1,5 +1,5 @@
-name: Sơn La
-name_zh: 山罗
+name: Son La
+name_zh: 山罗省
 type: Division-1
 meta:
   alpha2: VN-05
@@ -9,4 +9,5 @@ meta:
     - '05'
     - sơn la province
     - son la
+    - 山罗
   category: PROVINCE

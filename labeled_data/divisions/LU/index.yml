@@ -85,15 +85,6 @@ meta:
       count: 57359
 data:
   labels:
-    - LU-CA
-    - LU-CL
-    - LU-DI
-    - LU-EC
-    - LU-ES
-    - LU-GR
-    - LU-LU
-    - LU-ME
-    - LU-RD
-    - LU-RM
-    - LU-VD
-    - LU-WI
+    - LU-D
+    - LU-G
+    - LU-L

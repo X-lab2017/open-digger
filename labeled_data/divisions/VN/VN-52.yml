@@ -1,5 +1,5 @@
 name: Sóc Trăng
-name_zh: 朔庄
+name_zh: 朔庄省
 type: Division-1
 meta:
   alpha2: VN-52
@@ -9,4 +9,5 @@ meta:
     - '52'
     - sóc trăng province
     - soc trang
+    - 朔庄
   category: PROVINCE

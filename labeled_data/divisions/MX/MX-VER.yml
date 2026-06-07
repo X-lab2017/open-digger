@@ -1,5 +1,5 @@
-name: Veracruz de Ignacio de la Llave
-name_zh: 韦拉克鲁斯
+name: Veracruz
+name_zh: 韦拉克鲁斯州
 type: Division-1
 meta:
   alpha2: MX-VER
@@ -10,4 +10,5 @@ meta:
     - veracruz de ignacio de la llave state
     - veracruz
     - veracruz state
+    - 韦拉克鲁斯
   category: STATE

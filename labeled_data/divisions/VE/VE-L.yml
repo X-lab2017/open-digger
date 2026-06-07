@@ -1,5 +1,5 @@
 name: Mérida
-name_zh: 梅里达
+name_zh: 梅里达州
 type: Division-1
 meta:
   alpha2: VE-L
@@ -9,4 +9,5 @@ meta:
     - l
     - mérida state
     - me
+    - 梅里达
   category: STATE

@@ -1,5 +1,5 @@
 name: Banjul
-name_zh: 班珠尔市议会
+name_zh: 班竹
 type: Division-1
 meta:
   alpha2: GM-B
@@ -12,4 +12,5 @@ meta:
     - kanifing
     - kanifing municipal council
     - brikama
+    - 班珠尔市议会
   category: CITY

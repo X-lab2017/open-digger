@@ -1,5 +1,5 @@
 name: Gabrovo
-name_zh: 加布罗沃
+name_zh: 加布罗沃州
 type: Division-1
 meta:
   alpha2: BG-07
@@ -9,4 +9,5 @@ meta:
     - '07'
     - gabrovo district
     - gabrovo province
+    - 加布罗沃
   category: DISTRICT

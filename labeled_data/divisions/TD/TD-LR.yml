@@ -1,4 +1,4 @@
-name: Lūghūn ash Sharqī
+name: Logone Oriental
 type: Division-1
 meta:
   alpha2: TD-LR
@@ -11,3 +11,4 @@ meta:
     - lūghūn ash sharqī province
     - logone oriental
   category: PROVINCE
+name_zh: 东洛贡区

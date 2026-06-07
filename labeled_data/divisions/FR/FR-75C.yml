@@ -1,0 +1,11 @@
+name: Paris
+name_zh: ''
+type: Division-1
+meta:
+  alpha2: FR-75C
+  includes:
+    - paris
+    - fr-75c
+    - 75c
+    - paris metropolitan collectivity with special status
+  category: PROVINCE

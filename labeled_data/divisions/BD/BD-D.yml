@@ -1,5 +1,5 @@
 name: Khulna
-name_zh: 库尔纳
+name_zh: 库尔纳县
 type: Division-1
 meta:
   alpha2: BD-D
@@ -48,4 +48,5 @@ meta:
     - '58'
     - satkhira district
     - খুলনা বিভাগ
+    - 库尔纳
   category: DIVISION

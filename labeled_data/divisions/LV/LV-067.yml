@@ -1,5 +1,5 @@
-name: Ogres novads
-name_zh: 奥格雷市镇
+name: Ogre
+name_zh: 奧格雷自治市
 type: Division-1
 meta:
   alpha2: LV-067
@@ -10,4 +10,5 @@ meta:
     - ogres novads municipality
     - ogre
     - ogre municipality
+    - 奥格雷市镇
   category: MUNICIPALITY

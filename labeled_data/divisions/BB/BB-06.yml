@@ -1,5 +1,5 @@
 name: Saint Joseph
-name_zh: 圣约瑟夫区
+name_zh: 聖約瑟夫區
 type: Division-1
 meta:
   alpha2: BB-06
@@ -8,4 +8,5 @@ meta:
     - bb-06
     - '06'
     - saint joseph parish
+    - 圣约瑟夫区
   category: PARISH

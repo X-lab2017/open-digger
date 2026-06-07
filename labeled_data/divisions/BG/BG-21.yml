@@ -1,5 +1,5 @@
 name: Smolyan
-name_zh: 斯莫梁
+name_zh: 斯莫梁州
 type: Division-1
 meta:
   alpha2: BG-21
@@ -10,4 +10,5 @@ meta:
     - smolyan district
     - smolyan province
     - smoljan
+    - 斯莫梁
   category: DISTRICT

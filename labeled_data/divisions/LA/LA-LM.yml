@@ -1,5 +1,5 @@
 name: Louang Namtha
-name_zh: 万象省
+name_zh: 琅南塔省
 type: Division-1
 meta:
   alpha2: LA-LM
@@ -11,4 +11,5 @@ meta:
     - luangnamtha
     - luangnamtha province
     - pl
+    - 万象省
   category: PROVINCE

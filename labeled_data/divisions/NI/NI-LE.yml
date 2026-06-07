@@ -1,5 +1,5 @@
 name: León
-name_zh: 孔特阿莱斯
+name_zh: 萊昂省
 type: Division-1
 meta:
   alpha2: NI-LE
@@ -9,4 +9,5 @@ meta:
     - le
     - león department
     - leon
+    - 孔特阿莱斯
   category: DEPARTMENT

@@ -1,0 +1,11 @@
+name: Dedza
+name_zh: 代扎县
+type: Division-1
+meta:
+  alpha2: MW-DE
+  includes:
+    - dedza
+    - mw-de
+    - de
+    - dedza district
+  category: PROVINCE

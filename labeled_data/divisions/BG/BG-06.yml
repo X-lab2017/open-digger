@@ -1,5 +1,5 @@
 name: Vratsa
-name_zh: 弗拉察
+name_zh: 弗拉察州
 type: Division-1
 meta:
   alpha2: BG-06
@@ -9,4 +9,5 @@ meta:
     - '06'
     - vratsa district
     - vratsa province
+    - 弗拉察
   category: DISTRICT

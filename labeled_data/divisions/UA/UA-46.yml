@@ -1,5 +1,5 @@
-name: Lvivska oblast
-name_zh: 利沃夫
+name: L'viv
+name_zh: 利沃夫州
 type: Division-1
 meta:
   alpha2: UA-46
@@ -11,4 +11,5 @@ meta:
     - lviv oblast
     - l'vivs'ka oblast
     - lviv
+    - 利沃夫
   category: REGION

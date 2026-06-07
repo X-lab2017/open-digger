@@ -1,5 +1,5 @@
 name: Tivat
-name_zh: 蒂瓦特市
+name_zh: 蒂瓦特區
 type: Division-1
 meta:
   alpha2: ME-19
@@ -8,4 +8,5 @@ meta:
     - me-19
     - '19'
     - tivat municipality
+    - 蒂瓦特市
   category: MUNICIPALITY

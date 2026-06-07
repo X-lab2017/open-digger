@@ -1,0 +1,11 @@
+name: São Vicente
+name_zh: 圣维森特县
+type: Division-1
+meta:
+  alpha2: CV-SV
+  includes:
+    - são vicente
+    - cv-sv
+    - sv
+    - são vicente municipality
+  category: PROVINCE

@@ -1,5 +1,5 @@
 name: Lovech
-name_zh: 洛维奇
+name_zh: 洛维奇州
 type: Division-1
 meta:
   alpha2: BG-11
@@ -10,4 +10,5 @@ meta:
     - lovech district
     - lovech province
     - lovec
+    - 洛维奇
   category: DISTRICT

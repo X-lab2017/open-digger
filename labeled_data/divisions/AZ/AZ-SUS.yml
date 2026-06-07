@@ -1,5 +1,5 @@
 name: Şuşa
-name_zh: 舒沙区
+name_zh: 舒沙
 type: Division-1
 meta:
   alpha2: AZ-SUS
@@ -8,4 +8,5 @@ meta:
     - az-sus
     - sus
     - şuşa rayon
+    - 舒沙区
   category: RAYON

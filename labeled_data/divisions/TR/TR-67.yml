@@ -1,5 +1,5 @@
-name: Zonguldak
-name_zh: 宗古尔达克
+name: Zinguldak
+name_zh: 宗古尔达克省
 type: Division-1
 meta:
   alpha2: TR-67
@@ -8,4 +8,5 @@ meta:
     - tr-67
     - '67'
     - zonguldak province
+    - 宗古尔达克
   category: PROVINCE

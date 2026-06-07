@@ -1,0 +1,11 @@
+name: Prato
+name_zh: 普拉托省
+type: Division-1
+meta:
+  alpha2: IT-PO
+  includes:
+    - prato
+    - it-po
+    - po
+    - prato province
+  category: PROVINCE

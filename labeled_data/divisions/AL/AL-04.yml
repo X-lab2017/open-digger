@@ -1,5 +1,5 @@
 name: Fier
-name_zh: 菲耶尔县
+name_zh: 费里州
 type: Division-1
 meta:
   alpha2: AL-04
@@ -8,4 +8,5 @@ meta:
     - al-04
     - '04'
     - fier county
+    - 菲耶尔县
   category: COUNTY

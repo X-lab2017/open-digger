@@ -1,0 +1,11 @@
+name: Sorsogon
+name_zh: 索索贡省
+type: Division-1
+meta:
+  alpha2: PH-SOR
+  includes:
+    - sorsogon
+    - ph-sor
+    - sor
+    - sorsogon province
+  category: PROVINCE

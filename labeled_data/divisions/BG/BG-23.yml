@@ -1,5 +1,5 @@
 name: Sofia
-name_zh: 索非亚市
+name_zh: 索菲亚州
 type: Division-1
 meta:
   alpha2: BG-23
@@ -10,4 +10,5 @@ meta:
     - sofia district
     - sofia province
     - sofiyska oblast
+    - 索非亚市
   category: DISTRICT

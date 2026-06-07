@@ -1,5 +1,5 @@
 name: Savanes
-name_zh: 萨瓦纳斯区
+name_zh: 草原区
 type: Division-1
 meta:
   alpha2: TG-S
@@ -8,4 +8,5 @@ meta:
     - tg-s
     - s
     - savanes region
+    - 萨瓦纳斯区
   category: REGION

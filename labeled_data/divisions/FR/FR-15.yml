@@ -1,0 +1,11 @@
+name: Cantal
+name_zh: 康塔尔省
+type: Division-1
+meta:
+  alpha2: FR-15
+  includes:
+    - cantal
+    - fr-15
+    - '15'
+    - cantal metropolitan department
+  category: PROVINCE

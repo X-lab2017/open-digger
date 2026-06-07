@@ -1,0 +1,11 @@
+name: Lecce
+name_zh: 莱切省
+type: Division-1
+meta:
+  alpha2: IT-LE
+  includes:
+    - lecce
+    - it-le
+    - le
+    - lecce province
+  category: PROVINCE

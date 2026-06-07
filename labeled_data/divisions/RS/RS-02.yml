@@ -1,0 +1,11 @@
+name: Srednje-Banatski
+name_zh: 中巴纳特州
+type: Division-1
+meta:
+  alpha2: RS-02
+  includes:
+    - srednjebanatski okrug
+    - rs-02
+    - '02'
+    - srednjebanatski okrug district
+  category: PROVINCE

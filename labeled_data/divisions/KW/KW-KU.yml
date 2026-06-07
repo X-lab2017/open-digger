@@ -1,5 +1,5 @@
-name: Al ‘Āşimah
-name_zh: 首都省
+name: Al Asimah
+name_zh: 科威特省
 type: Division-1
 meta:
   alpha2: KW-KU
@@ -12,4 +12,5 @@ meta:
     - al kuwayt governorate
     - al asimah governate
     - al asimah
+    - 首都省
   category: GOVERNORATE

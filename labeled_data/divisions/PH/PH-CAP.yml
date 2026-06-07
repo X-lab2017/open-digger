@@ -1,0 +1,11 @@
+name: Capiz
+name_zh: 卡皮兹省
+type: Division-1
+meta:
+  alpha2: PH-CAP
+  includes:
+    - capiz
+    - ph-cap
+    - cap
+    - capiz province
+  category: PROVINCE

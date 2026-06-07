@@ -1,0 +1,11 @@
+name: Foggia
+name_zh: 福贾省
+type: Division-1
+meta:
+  alpha2: IT-FG
+  includes:
+    - foggia
+    - it-fg
+    - fg
+    - foggia province
+  category: PROVINCE

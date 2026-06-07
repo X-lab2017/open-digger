@@ -1,5 +1,5 @@
 name: Nam Định
-name_zh: 南定
+name_zh: 南定省
 type: Division-1
 meta:
   alpha2: VN-67
@@ -9,4 +9,5 @@ meta:
     - '67'
     - nam định province
     - nam dinh
+    - 南定
   category: PROVINCE

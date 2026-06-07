@@ -1,5 +1,5 @@
 name: Lower River
-name_zh: 班珠尔市议会
+name_zh: 下河区
 type: Division-1
 meta:
   alpha2: GM-L
@@ -8,4 +8,5 @@ meta:
     - gm-l
     - l
     - lower river division
+    - 班珠尔市议会
   category: DIVISION

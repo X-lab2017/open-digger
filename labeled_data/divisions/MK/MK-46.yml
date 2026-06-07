@@ -1,0 +1,13 @@
+name: Kruševo
+name_zh: 克鲁塞沃区
+type: Division-1
+meta:
+  alpha2: MK-46
+  includes:
+    - kruševo
+    - mk-505
+    - '505'
+    - kruševo municipality
+    - municipality of kruševo
+    - 克鲁舍沃
+  category: MUNICIPALITY

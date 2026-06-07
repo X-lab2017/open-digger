@@ -1,0 +1,13 @@
+name: Almaty
+name_zh: 阿拉木图州
+type: Division-1
+meta:
+  alpha2: KZ-ALA
+  includes:
+    - almaty
+    - kz-75
+    - '75'
+    - almaty city
+    - алматы
+    - 阿勒泰
+  category: CITY

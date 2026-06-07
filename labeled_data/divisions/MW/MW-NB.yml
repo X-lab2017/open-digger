@@ -1,0 +1,11 @@
+name: Nkhata Bay
+name_zh: 恩卡塔湾县
+type: Division-1
+meta:
+  alpha2: MW-NB
+  includes:
+    - nkhata bay
+    - mw-nb
+    - nb
+    - nkhata bay district
+  category: PROVINCE

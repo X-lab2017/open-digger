@@ -1,5 +1,5 @@
-name: Hódmezővásárhely
-name_zh: 霍德梅什梅赫利
+name: Hódmezôvásárhely
+name_zh: 霍德梅澤瓦
 type: Division-1
 meta:
   alpha2: HU-HV
@@ -8,4 +8,5 @@ meta:
     - hu-hv
     - hv
     - hódmezővásárhely city with county rights
+    - 霍德梅什梅赫利
   category: CITY WITH COUNTY RIGHTS

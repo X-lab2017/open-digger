@@ -1,0 +1,12 @@
+name: Centar
+type: Division-1
+meta:
+  alpha2: MK-77
+  includes:
+    - centar †
+    - mk-814
+    - '814'
+    - centar † municipality
+    - centar
+  category: MUNICIPALITY
+name_zh: 辛塔尔区

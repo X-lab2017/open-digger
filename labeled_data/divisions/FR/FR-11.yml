@@ -1,0 +1,11 @@
+name: Aude
+name_zh: 奥德省
+type: Division-1
+meta:
+  alpha2: FR-11
+  includes:
+    - aude
+    - fr-11
+    - '11'
+    - aude metropolitan department
+  category: PROVINCE

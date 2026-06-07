@@ -1,5 +1,5 @@
-name: Ardabīl
-name_zh: 阿尔达比勒省
+name: Hamadan
+name_zh: 哈马丹省
 type: Division-1
 meta:
   alpha2: IR-24
@@ -10,4 +10,5 @@ meta:
     - ardabīl province
     - ardabil province
     - استان اردبیل
+    - 阿尔达比勒省
   category: PROVINCE

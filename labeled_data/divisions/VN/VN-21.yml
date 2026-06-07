@@ -1,5 +1,5 @@
 name: Thanh Hóa
-name_zh: 清化
+name_zh: 清化省
 type: Division-1
 meta:
   alpha2: VN-21
@@ -10,4 +10,5 @@ meta:
     - thanh hóa province
     - thanh hoá
     - thanh hoa
+    - 清化
   category: PROVINCE

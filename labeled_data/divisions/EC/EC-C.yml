@@ -1,5 +1,5 @@
 name: Carchi
-name_zh: 卡尔奇
+name_zh: 卡尔奇省
 type: Division-1
 meta:
   alpha2: EC-C
@@ -8,4 +8,5 @@ meta:
     - ec-c
     - c
     - carchi province
+    - 卡尔奇
   category: PROVINCE

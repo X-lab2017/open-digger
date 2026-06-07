@@ -1,0 +1,11 @@
+name: Ávila
+name_zh: 阿维拉省
+type: Division-1
+meta:
+  alpha2: ES-AV
+  includes:
+    - ávila
+    - es-av
+    - av
+    - ávila province
+  category: PROVINCE

@@ -1,0 +1,11 @@
+name: Ribeira Grande de Santiago
+name_zh: 圣地亚哥大里贝拉县
+type: Division-1
+meta:
+  alpha2: CV-RS
+  includes:
+    - ribeira grande de santiago
+    - cv-rs
+    - rs
+    - ribeira grande de santiago municipality
+  category: PROVINCE

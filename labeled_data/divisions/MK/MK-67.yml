@@ -1,0 +1,11 @@
+name: Rosoman
+type: Division-1
+meta:
+  alpha2: MK-67
+  includes:
+    - rosoman
+    - mk-107
+    - '107'
+    - rosoman municipality
+  category: MUNICIPALITY
+name_zh: 罗索曼区

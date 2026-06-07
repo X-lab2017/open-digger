@@ -1,5 +1,5 @@
 name: Hòa Bình
-name_zh: 和平
+name_zh: 和平省
 type: Division-1
 meta:
   alpha2: VN-14
@@ -9,4 +9,5 @@ meta:
     - '14'
     - hòa bình province
     - hoa binh
+    - 和平
   category: PROVINCE

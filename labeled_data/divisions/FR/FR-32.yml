@@ -1,0 +1,11 @@
+name: Gers
+name_zh: 热尔省
+type: Division-1
+meta:
+  alpha2: FR-32
+  includes:
+    - gers
+    - fr-32
+    - '32'
+    - gers metropolitan department
+  category: PROVINCE

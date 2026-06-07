@@ -1,5 +1,5 @@
-name: Lebap
-name_zh: 列巴普
+name: Chardzhou
+name_zh: 列巴普州
 type: Division-1
 meta:
   alpha2: TM-L
@@ -8,4 +8,5 @@ meta:
     - tm-l
     - l
     - lebap region
+    - 列巴普
   category: REGION

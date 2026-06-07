@@ -1,5 +1,5 @@
-name: Toliara
-name_zh: 高原马希阿特拉
+name: Anosy
+name_zh: 阿诺西
 type: Division-1
 meta:
   alpha2: MG-U
@@ -12,4 +12,5 @@ meta:
     - anosy
     - androy
     - atsimo-andrefana
+    - 高原马希阿特拉
   category: PROVINCE

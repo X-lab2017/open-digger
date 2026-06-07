@@ -1,0 +1,11 @@
+name: Gampaha
+name_zh: 加姆珀哈区
+type: Division-1
+meta:
+  alpha2: LK-12
+  includes:
+    - gampaha
+    - lk-12
+    - '12'
+    - gampaha district
+  category: PROVINCE

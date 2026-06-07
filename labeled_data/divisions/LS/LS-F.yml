@@ -1,5 +1,5 @@
 name: Mohale's Hoek
-name_zh: 马费滕区
+name_zh: 莫哈莱斯胡克区
 type: Division-1
 meta:
   alpha2: LS-F
@@ -8,4 +8,5 @@ meta:
     - ls-f
     - f
     - mohale's hoek district
+    - 马费滕区
   category: DISTRICT

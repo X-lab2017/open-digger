@@ -1,0 +1,11 @@
+name: Komoé
+name_zh: 科莫埃省
+type: Division-1
+meta:
+  alpha2: BF-COM
+  includes:
+    - comoé
+    - bf-com
+    - com
+    - comoé province
+  category: PROVINCE

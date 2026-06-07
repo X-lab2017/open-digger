@@ -1,0 +1,11 @@
+name: Jawa Tengah
+name_zh: 中爪哇省
+type: Division-1
+meta:
+  alpha2: ID-JT
+  includes:
+    - jawa tengah
+    - id-jt
+    - jt
+    - jawa tengah province
+  category: PROVINCE

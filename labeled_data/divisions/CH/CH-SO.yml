@@ -1,5 +1,5 @@
 name: Solothurn
-name_zh: 索洛图恩
+name_zh: 索洛图恩州
 type: Division-1
 meta:
   alpha2: CH-SO
@@ -8,4 +8,5 @@ meta:
     - ch-so
     - so
     - solothurn canton
+    - 索洛图恩
   category: CANTON

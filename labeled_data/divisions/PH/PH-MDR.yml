@@ -1,0 +1,11 @@
+name: Mindoro Oriental
+name_zh: 东民都洛省
+type: Division-1
+meta:
+  alpha2: PH-MDR
+  includes:
+    - mindoro oriental
+    - ph-mdr
+    - mdr
+    - mindoro oriental province
+  category: PROVINCE

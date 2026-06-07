@@ -1,5 +1,5 @@
 name: Berlin
-name_zh: 柏林市
+name_zh: 柏林
 type: Division-1
 meta:
   alpha2: DE-BE
@@ -8,4 +8,5 @@ meta:
     - de-be
     - be
     - berlin land
+    - 柏林市
   category: LAND

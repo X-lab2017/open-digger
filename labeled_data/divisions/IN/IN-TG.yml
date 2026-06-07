@@ -1,0 +1,12 @@
+name: Telangana
+name_zh: 特伦甘纳邦
+type: Division-1
+meta:
+  alpha2: IN-TG
+  includes:
+    - telangāna
+    - in-ts
+    - ts
+    - telangāna state
+    - 泰伦加纳邦
+  category: STATE

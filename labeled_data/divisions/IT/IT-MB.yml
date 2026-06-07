@@ -1,0 +1,11 @@
+name: Monza e Brianza
+name_zh: 蒙萨和布里安萨省
+type: Division-1
+meta:
+  alpha2: IT-MB
+  includes:
+    - monza e brianza
+    - it-mb
+    - mb
+    - monza e brianza province
+  category: PROVINCE

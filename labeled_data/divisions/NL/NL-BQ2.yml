@@ -1,5 +1,5 @@
 name: Saba
-name_zh: 萨巴
+name_zh: 薩巴
 type: Division-1
 meta:
   alpha2: NL-BQ2
@@ -8,4 +8,5 @@ meta:
     - nl-bq2
     - bq2
     - saba special municipality
+    - 萨巴
   category: SPECIAL MUNICIPALITY

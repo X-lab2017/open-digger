@@ -1,0 +1,11 @@
+name: Avellino
+name_zh: 阿韦利诺省
+type: Division-1
+meta:
+  alpha2: IT-AV
+  includes:
+    - avellino
+    - it-av
+    - av
+    - avellino province
+  category: PROVINCE

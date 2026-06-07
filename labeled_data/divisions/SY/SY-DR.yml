@@ -1,4 +1,4 @@
-name: Dar'ā
+name: Dar`a
 type: Division-1
 meta:
   alpha2: SY-DR
@@ -8,3 +8,4 @@ meta:
     - dr
     - dar'ā province
   category: PROVINCE
+name_zh: 德拉省

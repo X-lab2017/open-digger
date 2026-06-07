@@ -1,5 +1,5 @@
 name: Namibe
-name_zh: 纳米贝省
+name_zh: 纳米贝
 type: Division-1
 meta:
   alpha2: AO-NAM
@@ -8,4 +8,5 @@ meta:
     - ao-nam
     - nam
     - namibe province
+    - 纳米贝省
   category: PROVINCE

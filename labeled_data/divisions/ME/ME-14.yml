@@ -1,5 +1,5 @@
 name: Pljevlja
-name_zh: 普列夫利亚市
+name_zh: 普列夫利亞區
 type: Division-1
 meta:
   alpha2: ME-14
@@ -8,4 +8,5 @@ meta:
     - me-14
     - '14'
     - pljevlja municipality
+    - 普列夫利亚市
   category: MUNICIPALITY

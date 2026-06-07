@@ -1,0 +1,11 @@
+name: Mosteiros
+name_zh: 莫什泰鲁什县
+type: Division-1
+meta:
+  alpha2: CV-MO
+  includes:
+    - mosteiros
+    - cv-mo
+    - mo
+    - mosteiros municipality
+  category: PROVINCE

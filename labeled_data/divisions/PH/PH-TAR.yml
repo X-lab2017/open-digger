@@ -1,0 +1,11 @@
+name: Tarlac
+name_zh: 丹辘省
+type: Division-1
+meta:
+  alpha2: PH-TAR
+  includes:
+    - tarlac
+    - ph-tar
+    - tar
+    - tarlac province
+  category: PROVINCE

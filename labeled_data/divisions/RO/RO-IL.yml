@@ -1,5 +1,5 @@
-name: Ialomița
-name_zh: 布雷伊拉县
+name: Ialomita
+name_zh: 雅洛米察县
 type: Division-1
 meta:
   alpha2: RO-IL
@@ -10,4 +10,5 @@ meta:
     - ialomița department
     - ialomița county
     - ialomiţa
+    - 布雷伊拉县
   category: DEPARTMENT

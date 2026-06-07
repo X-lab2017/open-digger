@@ -1,5 +1,5 @@
-name: Kemerovskaya oblast'
-name_zh: 克麦罗沃州
+name: Kemerovo
+name_zh: 科麦罗沃州
 type: Division-1
 meta:
   alpha2: RU-KEM
@@ -12,4 +12,5 @@ meta:
     - kemerovskaya oblast' administrative region
     - kemerovo oblast
     - kemerovo
+    - 克麦罗沃州
   category: ADMINISTRATIVE REGION

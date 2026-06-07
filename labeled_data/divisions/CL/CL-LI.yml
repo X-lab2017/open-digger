@@ -1,5 +1,5 @@
 name: Libertador General Bernardo O'Higgins
-name_zh: 奥伊金斯
+name_zh: 奥伊金斯将军解放者大区
 type: Division-1
 meta:
   alpha2: CL-LI
@@ -11,4 +11,5 @@ meta:
     - o'higgins
     - o'higgins region
     - vi
+    - 奥伊金斯
   category: REGION

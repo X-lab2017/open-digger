@@ -1,5 +1,5 @@
-name: Antananarivo
-name_zh: 阿齐莫-安德雷法纳
+name: Analamanga
+name_zh: 塔那那利佛省
 type: Division-1
 meta:
   alpha2: MG-T
@@ -11,4 +11,5 @@ meta:
     - analamanga
     - itasy region
     - vakinankaratra
+    - 阿齐莫-安德雷法纳
   category: PROVINCE

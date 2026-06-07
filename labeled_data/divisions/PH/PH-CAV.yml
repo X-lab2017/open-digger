@@ -1,0 +1,11 @@
+name: Cavite
+name_zh: 甲米地省
+type: Division-1
+meta:
+  alpha2: PH-CAV
+  includes:
+    - cavite
+    - ph-cav
+    - cav
+    - cavite province
+  category: PROVINCE

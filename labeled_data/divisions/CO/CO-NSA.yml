@@ -1,5 +1,5 @@
 name: Norte de Santander
-name_zh: 北桑坦德
+name_zh: 北桑坦德省
 type: Division-1
 meta:
   alpha2: CO-NSA
@@ -9,4 +9,5 @@ meta:
     - nsa
     - norte de santander department
     - north santander
+    - 北桑坦德
   category: DEPARTMENT

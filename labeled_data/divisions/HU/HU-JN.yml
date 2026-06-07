@@ -1,5 +1,5 @@
 name: Jász-Nagykun-Szolnok
-name_zh: 雅西-奈格豪尔-索尔诺克
+name_zh: 亚斯-瑙吉孔-索尔诺克州
 type: Division-1
 meta:
   alpha2: HU-JN
@@ -8,4 +8,5 @@ meta:
     - hu-jn
     - jn
     - jász-nagykun-szolnok county
+    - 雅西-奈格豪尔-索尔诺克
   category: COUNTY

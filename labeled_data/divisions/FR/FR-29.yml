@@ -1,0 +1,11 @@
+name: Finistère
+name_zh: 菲尼斯泰尔省
+type: Division-1
+meta:
+  alpha2: FR-29
+  includes:
+    - finistère
+    - fr-29
+    - '29'
+    - finistère metropolitan department
+  category: PROVINCE

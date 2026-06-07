@@ -1,0 +1,11 @@
+name: Čaška
+type: Division-1
+meta:
+  alpha2: MK-80
+  includes:
+    - čaška
+    - mk-109
+    - '109'
+    - čaška municipality
+  category: MUNICIPALITY
+name_zh: 查什卡区

@@ -1,5 +1,5 @@
 name: Bistrica ob Sotli
-name_zh: 特日契
+name_zh: 索特拉河畔比斯特里察
 type: Division-1
 meta:
   alpha2: SI-149
@@ -8,4 +8,5 @@ meta:
     - si-149
     - '149'
     - bistrica ob sotli municipality
+    - 特日契
   category: MUNICIPALITY

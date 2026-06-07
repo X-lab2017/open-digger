@@ -1,0 +1,11 @@
+name: Lugo
+name_zh: 卢戈省
+type: Division-1
+meta:
+  alpha2: ES-LU
+  includes:
+    - lugo
+    - es-lu
+    - lu
+    - lugo province
+  category: PROVINCE

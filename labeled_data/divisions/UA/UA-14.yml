@@ -1,5 +1,5 @@
-name: Donetska oblast
-name_zh: 顿涅茨克
+name: Donets'k
+name_zh: 顿涅茨克州
 type: Division-1
 meta:
   alpha2: UA-14
@@ -11,4 +11,5 @@ meta:
     - donets'ka oblast
     - donetsk oblast
     - donetsk
+    - 顿涅茨克
   category: REGION

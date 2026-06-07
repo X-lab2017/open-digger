@@ -1,5 +1,5 @@
 name: Espírito Santo
-name_zh: 埃斯皮里图桑托
+name_zh: 聖埃斯皮里圖州
 type: Division-1
 meta:
   alpha2: BR-ES
@@ -9,4 +9,5 @@ meta:
     - es
     - espírito santo state
     - state of espírito santo
+    - 埃斯皮里图桑托
   category: STATE

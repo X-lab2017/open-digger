@@ -1,5 +1,5 @@
 name: Phetchaburi
-name_zh: 碧差汶府
+name_zh: 佛丕府
 type: Division-1
 meta:
   alpha2: TH-76
@@ -8,4 +8,5 @@ meta:
     - th-76
     - '76'
     - phetchaburi province
+    - 碧差汶府
   category: PROVINCE

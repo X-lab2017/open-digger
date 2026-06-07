@@ -1,5 +1,5 @@
 name: Bijelo Polje
-name_zh: 比耶洛波列市
+name_zh: 比耶洛波列區
 type: Division-1
 meta:
   alpha2: ME-04
@@ -8,4 +8,5 @@ meta:
     - me-04
     - '04'
     - bijelo polje municipality
+    - 比耶洛波列市
   category: MUNICIPALITY

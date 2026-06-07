@@ -1,0 +1,11 @@
+name: Iligan
+name_zh: 伊利甘
+type: Division-1
+meta:
+  alpha2: PH-LAN
+  includes:
+    - hilagang lanaw
+    - ph-lan
+    - lan
+    - hilagang lanaw province
+  category: PROVINCE

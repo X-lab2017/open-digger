@@ -1,0 +1,11 @@
+name: Vrapcište
+type: Division-1
+meta:
+  alpha2: MK-16
+  includes:
+    - vrapčište
+    - mk-603
+    - '603'
+    - vrapčište municipality
+  category: MUNICIPALITY
+name_zh: 弗拉普切斯特区

@@ -1,0 +1,11 @@
+name: Pyrénées-Atlantiques
+name_zh: 大西洋比利牛斯省
+type: Division-1
+meta:
+  alpha2: FR-64
+  includes:
+    - pyrénées-atlantiques
+    - fr-64
+    - '64'
+    - pyrénées-atlantiques metropolitan department
+  category: PROVINCE

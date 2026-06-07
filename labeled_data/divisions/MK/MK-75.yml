@@ -1,0 +1,11 @@
+name: Tearce
+type: Division-1
+meta:
+  alpha2: MK-75
+  includes:
+    - tearce
+    - mk-608
+    - '608'
+    - tearce municipality
+  category: MUNICIPALITY
+name_zh: 特阿尔塞区

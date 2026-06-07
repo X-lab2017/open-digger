@@ -1,0 +1,49 @@
+name: Eastern
+name_zh: 东部省
+type: Division-1
+meta:
+  alpha2: KE-400
+  includes:
+    - embu
+    - ke-06
+    - '06'
+    - embu county
+    - 恩布县
+    - isiolo
+    - ke-09
+    - '09'
+    - isiolo county
+    - 伊希奥洛县
+    - kitui
+    - ke-18
+    - '18'
+    - kitui county
+    - 基图伊县
+    - machakos
+    - ke-22
+    - '22'
+    - machakos county
+    - 马查科斯县
+    - makueni
+    - ke-23
+    - '23'
+    - makueni county
+    - 马库恩伊县
+    - marsabit
+    - ke-25
+    - '25'
+    - marsabit county
+    - 马塞布特县
+    - meru
+    - ke-26
+    - '26'
+    - meru county
+    - 梅鲁县
+    - tharaka-nithi
+    - ke-41
+    - '41'
+    - tharaka-nithi county
+    - 泰拉卡-尼提县
+    - KE-400
+    - '400'
+  category: PROVINCE

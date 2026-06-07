@@ -1,5 +1,5 @@
 name: Hải Dương
-name_zh: 海阳
+name_zh: 海阳省
 type: Division-1
 meta:
   alpha2: VN-61
@@ -9,4 +9,5 @@ meta:
     - '61'
     - hải dương province
     - hai duong
+    - 海阳
   category: PROVINCE

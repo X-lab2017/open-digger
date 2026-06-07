@@ -1,5 +1,5 @@
-name: Béni Mellal-Khénifra
-name_zh: 贝尼-梅拉勒-赫尼夫拉
+name: Fès - Boulemane
+name_zh: 非斯-布勒曼大区
 type: Division-1
 meta:
   alpha2: MA-05
@@ -29,4 +29,5 @@ meta:
     - khn
     - khénifra province
     - béni mellal-khenifra
+    - 贝尼-梅拉勒-赫尼夫拉
   category: REGION

@@ -1,5 +1,5 @@
 name: Neuchâtel
-name_zh: 纳沙泰尔
+name_zh: 纳沙泰尔州
 type: Division-1
 meta:
   alpha2: CH-NE
@@ -8,4 +8,5 @@ meta:
     - ch-ne
     - ne
     - neuchâtel canton
+    - 纳沙泰尔
   category: CANTON

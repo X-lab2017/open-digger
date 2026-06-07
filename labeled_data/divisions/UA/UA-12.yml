@@ -1,5 +1,5 @@
-name: Dnipropetrovska oblast
-name_zh: 第聂伯彼得罗夫斯克
+name: Dnipropetrovs'k
+name_zh: 第聂伯罗彼得罗夫斯克州
 type: Division-1
 meta:
   alpha2: UA-12
@@ -11,4 +11,5 @@ meta:
     - dnipropetrovs'ka oblast
     - dnipropetrovsk oblast
     - dnipropetrovsk
+    - 第聂伯彼得罗夫斯克
   category: REGION

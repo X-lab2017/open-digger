@@ -1,0 +1,12 @@
+name: Attiki
+name_zh: 阿提卡
+type: Division-1
+meta:
+  alpha2: GR-A1
+  includes:
+    - attikí
+    - gr-i
+    - i
+    - attikí administrative region
+    - attica
+  category: ADMINISTRATIVE REGION

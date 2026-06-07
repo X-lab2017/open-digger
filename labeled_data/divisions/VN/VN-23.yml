@@ -1,5 +1,5 @@
-name: Hà Tĩnh
-name_zh: 河静
+name: Ha Tinh
+name_zh: 河静省
 type: Division-1
 meta:
   alpha2: VN-23
@@ -9,4 +9,5 @@ meta:
     - '23'
     - hà tĩnh province
     - ha tinh
+    - 河静
   category: PROVINCE

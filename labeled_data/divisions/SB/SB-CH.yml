@@ -1,4 +1,4 @@
-name: Choiseul
+name: Western
 type: Division-1
 meta:
   alpha2: SB-CH
@@ -8,3 +8,4 @@ meta:
     - ch
     - choiseul province
   category: PROVINCE
+name_zh: 西部省

@@ -1,0 +1,11 @@
+name: Huehuetenango
+name_zh: 韦韦特南戈省
+type: Division-1
+meta:
+  alpha2: GT-HU
+  includes:
+    - huehuetenango
+    - gt-13
+    - '13'
+    - huehuetenango department
+  category: DEPARTMENT

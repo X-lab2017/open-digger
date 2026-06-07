@@ -1,5 +1,5 @@
 name: Putumayo
-name_zh: 普图马约
+name_zh: 普图马约省
 type: Division-1
 meta:
   alpha2: CO-PUT
@@ -8,4 +8,5 @@ meta:
     - co-put
     - put
     - putumayo department
+    - 普图马约
   category: DEPARTMENT

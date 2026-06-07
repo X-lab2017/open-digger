@@ -1,5 +1,5 @@
 name: Isparta
-name_zh: 阿格里
+name_zh: 厄斯帕尔塔省
 type: Division-1
 meta:
   alpha2: TR-32
@@ -8,4 +8,5 @@ meta:
     - tr-32
     - '32'
     - isparta province
+    - 阿格里
   category: PROVINCE

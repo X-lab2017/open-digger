@@ -1,5 +1,5 @@
 name: Paraná
-name_zh: 帕拉
+name_zh: 巴拉那州
 type: Division-1
 meta:
   alpha2: BR-PR
@@ -9,4 +9,5 @@ meta:
     - pr
     - paraná state
     - state of paraná
+    - 帕拉
   category: STATE

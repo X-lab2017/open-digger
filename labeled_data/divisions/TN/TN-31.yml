@@ -1,5 +1,5 @@
 name: Béja
-name_zh: 比贾区
+name_zh: 巴杰省
 type: Division-1
 meta:
   alpha2: TN-31
@@ -8,4 +8,5 @@ meta:
     - tn-31
     - '31'
     - béja governorate
+    - 比贾区
   category: GOVERNORATE

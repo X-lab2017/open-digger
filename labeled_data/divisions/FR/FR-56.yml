@@ -1,0 +1,11 @@
+name: Morbihan
+name_zh: 莫尔比昂省
+type: Division-1
+meta:
+  alpha2: FR-56
+  includes:
+    - morbihan
+    - fr-56
+    - '56'
+    - morbihan metropolitan department
+  category: PROVINCE

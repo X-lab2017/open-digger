@@ -1,4 +1,4 @@
-name: '''Eua'
+name: Eua
 type: Division-1
 meta:
   alpha2: TO-01
@@ -8,3 +8,4 @@ meta:
     - '01'
     - '''eua division'
   category: DIVISION
+name_zh: 埃瓦岛

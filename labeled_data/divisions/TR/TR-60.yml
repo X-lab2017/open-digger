@@ -1,5 +1,5 @@
 name: Tokat
-name_zh: 托卡特
+name_zh: 托卡特省
 type: Division-1
 meta:
   alpha2: TR-60
@@ -8,4 +8,5 @@ meta:
     - tr-60
     - '60'
     - tokat province
+    - 托卡特
   category: PROVINCE

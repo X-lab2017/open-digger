@@ -1,5 +1,5 @@
 name: Grand Gedeh
-name_zh: 大吉德县
+name_zh: 大各德县
 type: Division-1
 meta:
   alpha2: LR-GG
@@ -8,4 +8,5 @@ meta:
     - lr-gg
     - gg
     - grand gedeh county
+    - 大吉德县
   category: COUNTY

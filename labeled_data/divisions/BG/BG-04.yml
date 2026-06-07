@@ -1,5 +1,5 @@
 name: Veliko Tarnovo
-name_zh: 大特尔诺沃省
+name_zh: 大特尔诺沃州
 type: Division-1
 meta:
   alpha2: BG-04
@@ -10,4 +10,5 @@ meta:
     - veliko tarnovo district
     - veliko tarnovo province
     - veliko turnovo
+    - 大特尔诺沃省
   category: DISTRICT

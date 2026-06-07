@@ -1,0 +1,11 @@
+name: Kepulauan Riau
+name_zh: 廖内群岛省
+type: Division-1
+meta:
+  alpha2: ID-KR
+  includes:
+    - kepulauan riau
+    - id-kr
+    - kr
+    - kepulauan riau province
+  category: PROVINCE

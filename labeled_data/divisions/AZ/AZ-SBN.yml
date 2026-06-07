@@ -1,5 +1,5 @@
-name: Şabran
-name_zh: 沙班区
+name: Dəvəçi
+name_zh: 迪维奇区
 type: Division-1
 meta:
   alpha2: AZ-SBN
@@ -8,4 +8,5 @@ meta:
     - az-sbn
     - sbn
     - şabran rayon
+    - 沙班区
   category: RAYON

@@ -1,0 +1,11 @@
+name: Modena
+name_zh: 摩德纳省
+type: Division-1
+meta:
+  alpha2: IT-MO
+  includes:
+    - modena
+    - it-mo
+    - mo
+    - modena province
+  category: PROVINCE

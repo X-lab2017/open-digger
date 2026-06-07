@@ -1,4 +1,4 @@
-name: Zanzibar North
+name: Kaskazini-Unguja
 type: Division-1
 meta:
   alpha2: TZ-07
@@ -10,3 +10,4 @@ meta:
     - zanzibar north
     - zanzibar north region
   category: REGION
+name_zh: 尚西巴北区

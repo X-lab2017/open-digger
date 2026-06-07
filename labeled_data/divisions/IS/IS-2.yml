@@ -1,5 +1,5 @@
 name: Suðurnes
-name_zh: 格林达维克
+name_zh: 南半岛区
 type: Division-1
 meta:
   alpha2: IS-2
@@ -25,4 +25,5 @@ meta:
     - svg
     - sveitarfélagið vogar municipality
     - southern peninsula
+    - 格林达维克
   category: REGION

@@ -1,4 +1,4 @@
-name: Sharq Dārfūr
+name: Central Darfur
 type: Division-1
 meta:
   alpha2: SD-DE
@@ -10,3 +10,4 @@ meta:
     - sharq dārfūr
     - sharq dārfūr state
   category: STATE
+name_zh: 中达尔富尔

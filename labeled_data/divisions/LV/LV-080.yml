@@ -1,5 +1,5 @@
-name: Ropažu novads
-name_zh: 罗帕日市镇
+name: Ropazu
+name_zh: 羅帕日自治市
 type: Division-1
 meta:
   alpha2: LV-080
@@ -10,4 +10,5 @@ meta:
     - ropažu novads municipality
     - ropaži
     - ropaži municipality
+    - 罗帕日市镇
   category: MUNICIPALITY

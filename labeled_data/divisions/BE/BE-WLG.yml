@@ -1,0 +1,11 @@
+name: Liege
+name_zh: 列日省
+type: Division-1
+meta:
+  alpha2: BE-WLG
+  includes:
+    - liège
+    - be-wlg
+    - wlg
+    - liège province
+  category: PROVINCE

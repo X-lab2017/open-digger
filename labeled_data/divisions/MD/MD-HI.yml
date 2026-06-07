@@ -1,5 +1,5 @@
-name: Hîncești
-name_zh: 欣切什蒂区
+name: Hîncesti
+name_zh: 亨切什蒂区
 type: Division-1
 meta:
   alpha2: MD-HI
@@ -8,4 +8,5 @@ meta:
     - md-hi
     - hi
     - hîncești district
+    - 欣切什蒂区
   category: DISTRICT

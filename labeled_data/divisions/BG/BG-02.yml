@@ -1,5 +1,5 @@
 name: Burgas
-name_zh: 布尔加斯
+name_zh: 布尔加斯州
 type: Division-1
 meta:
   alpha2: BG-02
@@ -8,4 +8,5 @@ meta:
     - bg-02
     - '02'
     - burgas district
+    - 布尔加斯
   category: DISTRICT

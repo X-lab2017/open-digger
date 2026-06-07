@@ -1,5 +1,5 @@
-name: Toamasina
-name_zh: 阿莫罗尼马尼亚
+name: Analanjirofo
+name_zh: 图阿马西纳省
 type: Division-1
 meta:
   alpha2: MG-A
@@ -10,4 +10,5 @@ meta:
     - toamasina province
     - atsinanana
     - bongolava
+    - 阿莫罗尼马尼亚
   category: PROVINCE

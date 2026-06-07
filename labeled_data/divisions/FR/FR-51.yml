@@ -1,0 +1,11 @@
+name: Marne
+name_zh: 马恩省
+type: Division-1
+meta:
+  alpha2: FR-51
+  includes:
+    - marne
+    - fr-51
+    - '51'
+    - marne metropolitan department
+  category: PROVINCE

@@ -1,5 +1,5 @@
-name: Wilayah Persekutuan Labuan
-name_zh: 纳闽联邦直辖区
+name: Labuan
+name_zh: 纳闽
 type: Division-1
 meta:
   alpha2: MY-15
@@ -10,4 +10,5 @@ meta:
     - wilayah persekutuan labuan federal territory
     - labuan
     - labuan federal territory
+    - 纳闽联邦直辖区
   category: FEDERAL TERRITORY

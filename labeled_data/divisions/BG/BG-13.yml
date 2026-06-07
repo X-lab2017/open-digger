@@ -1,5 +1,5 @@
 name: Pazardzhik
-name_zh: 帕扎尔吉克
+name_zh: 帕扎尔吉克州
 type: Division-1
 meta:
   alpha2: BG-13
@@ -9,4 +9,5 @@ meta:
     - '13'
     - pazardzhik district
     - pazardzhik province
+    - 帕扎尔吉克
   category: DISTRICT

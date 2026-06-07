@@ -1,0 +1,11 @@
+name: Zamora
+name_zh: 萨莫拉省
+type: Division-1
+meta:
+  alpha2: ES-ZA
+  includes:
+    - zamora
+    - es-za
+    - za
+    - zamora province
+  category: PROVINCE

@@ -1,5 +1,5 @@
-name: Dubayy
-name_zh: 迪拜酋长国
+name: Dubay
+name_zh: 迪拜
 type: Division-1
 meta:
   alpha2: AE-DU
@@ -11,4 +11,5 @@ meta:
     - dubai
     - dubai emirate
     - دبي
+    - 迪拜酋长国
   category: EMIRATE

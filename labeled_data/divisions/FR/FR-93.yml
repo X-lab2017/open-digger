@@ -1,0 +1,11 @@
+name: Seine-Saint-Denis
+name_zh: 塞纳-圣但尼省
+type: Division-1
+meta:
+  alpha2: FR-93
+  includes:
+    - seine-saint-denis
+    - fr-93
+    - '93'
+    - seine-saint-denis metropolitan department
+  category: PROVINCE

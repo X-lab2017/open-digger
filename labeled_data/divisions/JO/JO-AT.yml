@@ -1,5 +1,5 @@
-name: Aţ Ţafīlah
-name_zh: 阿杰隆省
+name: Tafilah
+name_zh: 塔菲拉省
 type: Division-1
 meta:
   alpha2: JO-AT
@@ -9,4 +9,5 @@ meta:
     - at
     - aţ ţafīlah governorate
     - tafilah governorate
+    - 阿杰隆省
   category: GOVERNORATE

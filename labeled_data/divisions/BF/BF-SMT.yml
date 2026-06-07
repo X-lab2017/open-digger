@@ -1,0 +1,11 @@
+name: Sanmatenga
+name_zh: 桑马滕加省
+type: Division-1
+meta:
+  alpha2: BF-SMT
+  includes:
+    - sanmatenga
+    - bf-smt
+    - smt
+    - sanmatenga province
+  category: PROVINCE

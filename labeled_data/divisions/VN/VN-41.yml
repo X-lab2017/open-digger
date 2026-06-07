@@ -1,5 +1,5 @@
 name: Long An
-name_zh: 隆安
+name_zh: 隆安省
 type: Division-1
 meta:
   alpha2: VN-41
@@ -8,4 +8,5 @@ meta:
     - vn-41
     - '41'
     - long an province
+    - 隆安
   category: PROVINCE

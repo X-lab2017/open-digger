@@ -1,5 +1,5 @@
-name: Al Gharbīyah
-name_zh: 盖勒尤卜省
+name: Al Gharbiyah
+name_zh: 西部省
 type: Division-1
 meta:
   alpha2: EG-GH
@@ -11,4 +11,5 @@ meta:
     - gharbia governorate
     - al gharbiyah
     - محافظة الغربية
+    - 盖勒尤卜省
   category: GOVERNORATE

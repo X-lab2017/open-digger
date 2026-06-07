@@ -1,5 +1,5 @@
-name: Sīstān va Balūchestān
-name_zh: 锡斯坦-俾路支斯坦省
+name: Zanjan
+name_zh: 贊詹省
 type: Division-1
 meta:
   alpha2: IR-11
@@ -9,4 +9,5 @@ meta:
     - '11'
     - sīstān va balūchestān province
     - sistan and baluchestan province
+    - 锡斯坦-俾路支斯坦省
   category: PROVINCE

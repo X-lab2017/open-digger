@@ -1,0 +1,11 @@
+name: Kalinga
+name_zh: 卡林阿省
+type: Division-1
+meta:
+  alpha2: PH-KAL
+  includes:
+    - kalinga
+    - ph-kal
+    - kal
+    - kalinga province
+  category: PROVINCE

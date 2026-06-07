@@ -1,5 +1,5 @@
 name: Black Point
-name_zh: 布莱克波因特
+name_zh: 布莱克角
 type: Division-1
 meta:
   alpha2: BS-BP
@@ -8,4 +8,5 @@ meta:
     - bs-bp
     - bp
     - black point district
+    - 布莱克波因特
   category: DISTRICT

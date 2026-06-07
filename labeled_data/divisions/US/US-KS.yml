@@ -1,5 +1,5 @@
 name: Kansas
-name_zh: 阿肯色州
+name_zh: 堪萨斯州
 type: Division-1
 meta:
   alpha2: US-KS
@@ -8,4 +8,5 @@ meta:
     - us-ks
     - ks
     - kansas state
+    - 阿肯色州
   category: STATE

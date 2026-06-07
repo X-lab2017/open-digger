@@ -1,5 +1,5 @@
 name: Mashonaland Central
-name_zh: 马绍纳兰中央省
+name_zh: 中马绍纳兰省
 type: Division-1
 meta:
   alpha2: ZW-MC
@@ -8,4 +8,5 @@ meta:
     - zw-mc
     - mc
     - mashonaland central province
+    - 马绍纳兰中央省
   category: PROVINCE

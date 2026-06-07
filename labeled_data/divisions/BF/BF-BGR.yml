@@ -1,0 +1,11 @@
+name: Bougouriba
+name_zh: 布古里巴省
+type: Division-1
+meta:
+  alpha2: BF-BGR
+  includes:
+    - bougouriba
+    - bf-bgr
+    - bgr
+    - bougouriba province
+  category: PROVINCE

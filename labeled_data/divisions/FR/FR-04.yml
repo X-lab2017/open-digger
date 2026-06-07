@@ -1,0 +1,11 @@
+name: Alpes-de-Haute-Provence
+name_zh: 上普罗旺斯阿尔卑斯省
+type: Division-1
+meta:
+  alpha2: FR-04
+  includes:
+    - alpes-de-haute-provence
+    - fr-04
+    - '04'
+    - alpes-de-haute-provence metropolitan department
+  category: PROVINCE

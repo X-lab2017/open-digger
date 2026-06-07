@@ -1,5 +1,5 @@
-name: Quảng Nam
-name_zh: 广南
+name: Quàng Nam
+name_zh: 广南省
 type: Division-1
 meta:
   alpha2: VN-27
@@ -9,4 +9,5 @@ meta:
     - '27'
     - quảng nam province
     - quang nam
+    - 广南
   category: PROVINCE

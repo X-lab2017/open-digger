@@ -1,5 +1,5 @@
 name: Le Kef
-name_zh: 卡夫市
+name_zh: 卡夫省
 type: Division-1
 meta:
   alpha2: TN-33
@@ -8,4 +8,5 @@ meta:
     - tn-33
     - '33'
     - le kef governorate
+    - 卡夫市
   category: GOVERNORATE

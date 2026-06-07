@@ -1,5 +1,5 @@
-name: Lorestān
-name_zh: 洛雷斯坦省
+name: Kerman
+name_zh: 克尔曼省
 type: Division-1
 meta:
   alpha2: IR-15
@@ -9,4 +9,5 @@ meta:
     - '15'
     - lorestān province
     - lorestan province
+    - 洛雷斯坦省
   category: PROVINCE

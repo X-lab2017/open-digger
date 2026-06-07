@@ -1,5 +1,5 @@
 name: Braga
-name_zh: 布拉加
+name_zh: 布拉加区
 type: Division-1
 meta:
   alpha2: PT-03
@@ -8,4 +8,5 @@ meta:
     - pt-03
     - '03'
     - braga district
+    - 布拉加
   category: DISTRICT

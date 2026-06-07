@@ -1,5 +1,5 @@
 name: Fejér
-name_zh: 费耶尔
+name_zh: 费耶尔州
 type: Division-1
 meta:
   alpha2: HU-FE
@@ -8,4 +8,5 @@ meta:
     - hu-fe
     - fe
     - fejér county
+    - 费耶尔
   category: COUNTY

@@ -1,0 +1,11 @@
+name: Eastern Samar
+name_zh: 东萨马省
+type: Division-1
+meta:
+  alpha2: PH-EAS
+  includes:
+    - eastern samar
+    - ph-eas
+    - eas
+    - eastern samar province
+  category: PROVINCE

@@ -1,0 +1,11 @@
+name: Santa Catarina
+name_zh: 圣卡塔琳娜县
+type: Division-1
+meta:
+  alpha2: CV-CA
+  includes:
+    - santa catarina
+    - cv-ca
+    - ca
+    - santa catarina municipality
+  category: PROVINCE

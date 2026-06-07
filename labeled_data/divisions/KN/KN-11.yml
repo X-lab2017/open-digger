@@ -1,0 +1,11 @@
+name: Saint Peter Basseterre
+name_zh: 圣彼得巴塞特莱区
+type: Division-1
+meta:
+  alpha2: KN-11
+  includes:
+    - saint peter basseterre
+    - kn-11
+    - '11'
+    - saint peter basseterre parish
+  category: PROVINCE

@@ -87,5 +87,13 @@ data:
   labels:
     - ':companies/odoo'
     - BE-BRU
-    - BE-VLG
-    - BE-WAL
+    - BE-VAN
+    - BE-VBR
+    - BE-VLI
+    - BE-VOV
+    - BE-VWV
+    - BE-WBR
+    - BE-WHT
+    - BE-WLG
+    - BE-WLX
+    - BE-WNA

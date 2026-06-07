@@ -1,0 +1,11 @@
+name: Séno
+name_zh: 塞诺省
+type: Division-1
+meta:
+  alpha2: BF-SEN
+  includes:
+    - séno
+    - bf-sen
+    - sen
+    - séno province
+  category: PROVINCE

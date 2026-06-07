@@ -1,5 +1,5 @@
 name: Asunción
-name_zh: 亚松森省
+name_zh: 亚松森
 type: Division-1
 meta:
   alpha2: PY-ASU
@@ -8,4 +8,5 @@ meta:
     - py-asu
     - asu
     - asunción capital
+    - 亚松森省
   category: CAPITAL

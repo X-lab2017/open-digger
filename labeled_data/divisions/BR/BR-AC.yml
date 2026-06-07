@@ -1,5 +1,5 @@
 name: Acre
-name_zh: 阿克雷
+name_zh: 阿克里州
 type: Division-1
 meta:
   alpha2: BR-AC
@@ -9,4 +9,5 @@ meta:
     - ac
     - acre state
     - state of acre
+    - 阿克雷
   category: STATE

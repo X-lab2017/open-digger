@@ -1,0 +1,11 @@
+name: Saint John Capesterre
+name_zh: 圣约翰卡皮斯特莱区
+type: Division-1
+meta:
+  alpha2: KN-06
+  includes:
+    - saint john capisterre
+    - kn-06
+    - '06'
+    - saint john capisterre parish
+  category: PROVINCE

@@ -1,5 +1,5 @@
 name: Mtskheta-Mtianeti
-name_zh: 姆茨赫塔-姆季阿尼区
+name_zh: 姆茨赫塔-姆季阿涅季州
 type: Division-1
 meta:
   alpha2: GE-MM
@@ -8,4 +8,5 @@ meta:
     - ge-mm
     - mm
     - mtskheta-mtianeti region
+    - 姆茨赫塔-姆季阿尼区
   category: REGION

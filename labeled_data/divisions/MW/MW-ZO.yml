@@ -1,0 +1,11 @@
+name: Zomba
+name_zh: 松巴县
+type: Division-1
+meta:
+  alpha2: MW-ZO
+  includes:
+    - zomba
+    - mw-zo
+    - zo
+    - zomba district
+  category: PROVINCE

@@ -1,0 +1,11 @@
+name: Catania
+name_zh: 卡塔尼亚省
+type: Division-1
+meta:
+  alpha2: IT-CT
+  includes:
+    - catania
+    - it-ct
+    - ct
+    - catania metropolitan city
+  category: PROVINCE

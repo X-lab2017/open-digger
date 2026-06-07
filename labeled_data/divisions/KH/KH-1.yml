@@ -1,5 +1,5 @@
-name: Bântéay Méan Choăy
-name_zh: 拜林省
+name: Bântéay Méanchey
+name_zh: 班迭棉吉省
 type: Division-1
 meta:
   alpha2: KH-1
@@ -13,4 +13,5 @@ meta:
     - bântéay méan choăy
     - bântéay méan choăy province
     - bb
+    - 拜林省
   category: PROVINCE

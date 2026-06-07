@@ -1,5 +1,5 @@
 name: Rondônia
-name_zh: 朗多尼亚
+name_zh: 朗多尼亚州
 type: Division-1
 meta:
   alpha2: BR-RO
@@ -9,4 +9,5 @@ meta:
     - ro
     - rondônia state
     - state of rondônia
+    - 朗多尼亚
   category: STATE

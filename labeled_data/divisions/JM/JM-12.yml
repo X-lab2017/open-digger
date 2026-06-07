@@ -1,5 +1,5 @@
 name: Manchester
-name_zh: 曼彻斯特教区
+name_zh: 曼彻斯特区
 type: Division-1
 meta:
   alpha2: JM-12
@@ -8,4 +8,5 @@ meta:
     - jm-12
     - '12'
     - manchester parish
+    - 曼彻斯特教区
   category: PARISH

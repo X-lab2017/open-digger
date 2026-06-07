@@ -1,4 +1,4 @@
-name: Šentjur
+name: Šentjur pri Celju
 type: Division-1
 meta:
   alpha2: SI-120
@@ -8,3 +8,4 @@ meta:
     - '120'
     - šentjur municipality
   category: MUNICIPALITY
+name_zh: 申特尤爾鎮

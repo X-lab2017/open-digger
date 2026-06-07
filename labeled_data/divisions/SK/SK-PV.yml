@@ -1,5 +1,5 @@
-name: Prešovský kraj
-name_zh: 普雷绍夫州
+name: Prešov
+name_zh: 普列索夫州
 type: Division-1
 meta:
   alpha2: SK-PV
@@ -10,4 +10,5 @@ meta:
     - prešovský kraj region
     - prešov region
     - presov
+    - 普雷绍夫州
   category: REGION

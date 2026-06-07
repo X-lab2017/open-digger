@@ -1,5 +1,5 @@
-name: Samtse
-name_zh: 萨姆奇宗
+name: Samchi
+name_zh: 萨姆宗
 type: Division-1
 meta:
   alpha2: BT-14
@@ -8,4 +8,5 @@ meta:
     - bt-14
     - '14'
     - samtse district
+    - 萨姆奇宗
   category: DISTRICT

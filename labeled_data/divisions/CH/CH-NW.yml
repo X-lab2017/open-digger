@@ -1,5 +1,5 @@
 name: Nidwalden
-name_zh: 下瓦尔登
+name_zh: 下瓦尔登州
 type: Division-1
 meta:
   alpha2: CH-NW
@@ -8,4 +8,5 @@ meta:
     - ch-nw
     - nw
     - nidwalden canton
+    - 下瓦尔登
   category: CANTON

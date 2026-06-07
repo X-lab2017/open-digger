@@ -1,5 +1,5 @@
-name: Islamabad
-name_zh: 伊斯兰堡
+name: F.C.T.
+name_zh: 伊斯兰堡首都区
 type: Division-1
 meta:
   alpha2: PK-IS
@@ -12,4 +12,5 @@ meta:
     - islāmābād federal capital territory
     - islamabad capital territory
     - federally administered tribal areas
+    - 伊斯兰堡
   category: FEDERAL CAPITAL TERRITORY

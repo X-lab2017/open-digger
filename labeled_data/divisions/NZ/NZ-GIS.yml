@@ -1,5 +1,5 @@
-name: Gisborne
-name_zh: 吉斯伯恩
+name: Gisborne District
+name_zh: 吉斯伯恩大区
 type: Division-1
 meta:
   alpha2: NZ-GIS
@@ -10,4 +10,5 @@ meta:
     - gisborne region
     - te tairāwhiti
     - te tairāwhiti region
+    - 吉斯伯恩
   category: REGION

@@ -1,5 +1,5 @@
 name: Mont Fleuri
-name_zh: 蒙弗莱里
+name_zh: 蒙弗勒利区
 type: Division-1
 meta:
   alpha2: SC-18
@@ -10,4 +10,5 @@ meta:
     - mon fleri district
     - mont fleuri
     - mont fleuri district
+    - 蒙弗莱里
   category: DISTRICT

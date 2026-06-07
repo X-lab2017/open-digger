@@ -1,5 +1,5 @@
 name: Souk Ahras
-name_zh: 苏克阿赫拉斯省
+name_zh: 苏格艾赫拉斯省
 type: Division-1
 meta:
   alpha2: DZ-41
@@ -8,4 +8,5 @@ meta:
     - dz-41
     - '41'
     - souk ahras province
+    - 苏克阿赫拉斯省
   category: PROVINCE

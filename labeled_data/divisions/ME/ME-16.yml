@@ -1,5 +1,5 @@
 name: Podgorica
-name_zh: 波德戈里察市
+name_zh: 波德里查區
 type: Division-1
 meta:
   alpha2: ME-16
@@ -8,4 +8,5 @@ meta:
     - me-16
     - '16'
     - podgorica municipality
+    - 波德戈里察市
   category: MUNICIPALITY

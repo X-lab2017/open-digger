@@ -1,5 +1,5 @@
 name: Lavalleja
-name_zh: 拉瓦列哈省
+name_zh: 拉瓦耶哈省
 type: Division-1
 meta:
   alpha2: UY-LA
@@ -8,4 +8,5 @@ meta:
     - uy-la
     - la
     - lavalleja department
+    - 拉瓦列哈省
   category: DEPARTMENT

@@ -1,5 +1,5 @@
-name: Bokèo
-name_zh: 川圹省
+name: Bokeo
+name_zh: 博胶省
 type: Division-1
 meta:
   alpha2: LA-BK
@@ -8,4 +8,5 @@ meta:
     - la-bk
     - bk
     - bokèo province
+    - 川圹省
   category: PROVINCE

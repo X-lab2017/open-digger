@@ -1,0 +1,11 @@
+name: Meath
+name_zh: 米斯郡
+type: Division-1
+meta:
+  alpha2: IE-MH
+  includes:
+    - an mhí
+    - ie-mh
+    - mh
+    - an mhí county
+  category: PROVINCE

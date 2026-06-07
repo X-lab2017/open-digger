@@ -1,0 +1,11 @@
+name: Kasungu
+name_zh: 卡松古县
+type: Division-1
+meta:
+  alpha2: MW-KS
+  includes:
+    - kasungu
+    - mw-ks
+    - ks
+    - kasungu district
+  category: PROVINCE

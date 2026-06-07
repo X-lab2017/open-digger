@@ -1,0 +1,11 @@
+name: Luxembourg
+name_zh: 卢森堡区
+type: Division-1
+meta:
+  alpha2: BE-WLX
+  includes:
+    - luxembourg
+    - be-wlx
+    - wlx
+    - luxembourg province
+  category: PROVINCE

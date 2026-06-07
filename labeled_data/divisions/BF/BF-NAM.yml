@@ -1,0 +1,11 @@
+name: Namentenga
+name_zh: 纳门滕加省
+type: Division-1
+meta:
+  alpha2: BF-NAM
+  includes:
+    - namentenga
+    - bf-nam
+    - nam
+    - namentenga province
+  category: PROVINCE

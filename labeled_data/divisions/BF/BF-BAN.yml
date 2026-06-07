@@ -1,0 +1,11 @@
+name: Banwa
+name_zh: 巴瓦省
+type: Division-1
+meta:
+  alpha2: BF-BAN
+  includes:
+    - banwa
+    - bf-ban
+    - ban
+    - banwa province
+  category: PROVINCE

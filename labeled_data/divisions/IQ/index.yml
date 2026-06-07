@@ -93,7 +93,9 @@ data:
     - IQ-DQ
     - IQ-KA
     - IQ-KI
-    - IQ-KR
+    - IQ-AR
+    - IQ-DA
+    - IQ-SU
     - IQ-MA
     - IQ-MU
     - IQ-NA

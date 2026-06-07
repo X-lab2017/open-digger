@@ -1,5 +1,5 @@
 name: Kairouan
-name_zh: 卡伊鲁恩区
+name_zh: 凯鲁万省
 type: Division-1
 meta:
   alpha2: TN-41
@@ -9,4 +9,5 @@ meta:
     - '41'
     - kairouan governorate
     - gouvernorat de kairouan
+    - 卡伊鲁恩区
   category: GOVERNORATE

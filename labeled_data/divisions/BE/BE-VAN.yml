@@ -1,0 +1,11 @@
+name: Antwerp
+name_zh: 安特卫普省
+type: Division-1
+meta:
+  alpha2: BE-VAN
+  includes:
+    - antwerpen
+    - be-van
+    - van
+    - antwerpen province
+  category: PROVINCE

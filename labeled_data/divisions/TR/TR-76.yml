@@ -1,5 +1,5 @@
-name: Iğdır
-name_zh: 伊吉德
+name: Iğdir
+name_zh: 厄德尔省
 type: Division-1
 meta:
   alpha2: TR-76
@@ -9,4 +9,5 @@ meta:
     - '76'
     - iğdır province
     - igdir
+    - 伊吉德
   category: PROVINCE

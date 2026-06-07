@@ -1,0 +1,11 @@
+name: Gnagna
+name_zh: 尼亚尼亚省
+type: Division-1
+meta:
+  alpha2: BF-GNA
+  includes:
+    - gnagna
+    - bf-gna
+    - gna
+    - gnagna province
+  category: PROVINCE

@@ -1,5 +1,5 @@
 name: Savannakhét
-name_zh: 占巴塞省
+name_zh: 沙湾拿吉省
 type: Division-1
 meta:
   alpha2: LA-SV
@@ -11,4 +11,5 @@ meta:
     - savannakhet
     - savannakhet province
     - vc
+    - 占巴塞省
   category: PROVINCE

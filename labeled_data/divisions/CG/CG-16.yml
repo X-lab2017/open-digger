@@ -1,5 +1,5 @@
-name: Pointe-Noire
-name_zh: 黑角市省
+name: Pointe Noire
+name_zh: 黑角
 type: Division-1
 meta:
   alpha2: CG-16
@@ -8,4 +8,5 @@ meta:
     - cg-16
     - '16'
     - pointe-noire department
+    - 黑角市省
   category: DEPARTMENT

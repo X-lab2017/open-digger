@@ -1,0 +1,11 @@
+name: Ntchisi
+name_zh: 恩奇斯县
+type: Division-1
+meta:
+  alpha2: MW-NI
+  includes:
+    - ntchisi
+    - mw-ni
+    - ni
+    - ntchisi district
+  category: PROVINCE

@@ -1,0 +1,11 @@
+name: Lecco
+name_zh: 莱科省
+type: Division-1
+meta:
+  alpha2: IT-LC
+  includes:
+    - lecco
+    - it-lc
+    - lc
+    - lecco province
+  category: PROVINCE

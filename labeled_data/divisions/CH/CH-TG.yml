@@ -1,5 +1,5 @@
 name: Thurgau
-name_zh: 图尔高
+name_zh: 图尔高州
 type: Division-1
 meta:
   alpha2: CH-TG
@@ -8,4 +8,5 @@ meta:
     - ch-tg
     - tg
     - thurgau canton
+    - 图尔高
   category: CANTON

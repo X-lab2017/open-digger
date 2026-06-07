@@ -1,5 +1,5 @@
-name: Būshehr
-name_zh: 布什尔省
+name: Kohgiluyeh and Buyer Ahmad
+name_zh: 科吉卢耶－博韦艾哈迈德省
 type: Division-1
 meta:
   alpha2: IR-18
@@ -9,4 +9,5 @@ meta:
     - '18'
     - būshehr province
     - bushehr province
+    - 布什尔省
   category: PROVINCE

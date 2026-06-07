@@ -1,0 +1,12 @@
+name: Escuintla
+name_zh: 埃斯昆特拉省
+type: Division-1
+meta:
+  alpha2: GT-ES
+  includes:
+    - escuintla
+    - gt-05
+    - '05'
+    - escuintla department
+    - 埃斯基因特拉省
+  category: DEPARTMENT

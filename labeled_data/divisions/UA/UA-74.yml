@@ -1,5 +1,5 @@
-name: Chernihivska oblast
-name_zh: 切尔尼戈夫
+name: Chernihiv
+name_zh: 切尔尼戈夫州
 type: Division-1
 meta:
   alpha2: UA-74
@@ -10,4 +10,5 @@ meta:
     - chernihivska oblast region
     - chernihiv oblast
     - chernihiv
+    - 切尔尼戈夫
   category: REGION

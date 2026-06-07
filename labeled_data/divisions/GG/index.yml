@@ -1,5 +1,5 @@
 name: Guernsey
-name_zh: 根西岛
+name_zh: 根西
 type: Division-0
 meta:
   alpha2: GG
@@ -8,6 +8,7 @@ meta:
     - GG
     - '831'
     - 格恩西岛
+    - 根西岛
   name_full: Guernsey
   developers:
     - year: 2020

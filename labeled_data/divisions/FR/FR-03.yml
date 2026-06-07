@@ -1,0 +1,11 @@
+name: Allier
+name_zh: 阿列省
+type: Division-1
+meta:
+  alpha2: FR-03
+  includes:
+    - allier
+    - fr-03
+    - '03'
+    - allier metropolitan department
+  category: PROVINCE

@@ -1,0 +1,11 @@
+name: Parma
+name_zh: 帕爾馬省
+type: Division-1
+meta:
+  alpha2: IT-PR
+  includes:
+    - parma
+    - it-pr
+    - pr
+    - parma province
+  category: PROVINCE

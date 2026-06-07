@@ -1,5 +1,5 @@
 name: Bayelsa
-name_zh: 贝耶尔萨州
+name_zh: 巴耶尔萨州
 type: Division-1
 meta:
   alpha2: NG-BY
@@ -8,4 +8,5 @@ meta:
     - ng-by
     - by
     - bayelsa state
+    - 贝耶尔萨州
   category: STATE

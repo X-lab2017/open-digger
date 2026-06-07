@@ -1,5 +1,5 @@
-name: Strășeni
-name_zh: 德涅斯特河左岸行政区单位
+name: Străşeni
+name_zh: 斯特勒谢尼区
 type: Division-1
 meta:
   alpha2: MD-ST
@@ -8,4 +8,5 @@ meta:
     - md-st
     - st
     - strășeni district
+    - 德涅斯特河左岸行政区单位
   category: DISTRICT

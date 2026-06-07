@@ -1,5 +1,5 @@
-name: Dakhla-Oued Ed-Dahab
-name_zh: 西撒哈拉
+name: Tadla - Azilal
+name_zh: 塔德莱-艾济拉勒大区
 type: Division-1
 meta:
   alpha2: MA-12
@@ -17,4 +17,5 @@ meta:
     - oud
     - oued ed-dahab province
     - western sahara
+    - 西撒哈拉
   category: REGION

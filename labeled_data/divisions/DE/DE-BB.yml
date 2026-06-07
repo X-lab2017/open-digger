@@ -1,5 +1,5 @@
 name: Brandenburg
-name_zh: 勃兰登堡州
+name_zh: 勃兰登堡
 type: Division-1
 meta:
   alpha2: DE-BB
@@ -8,4 +8,5 @@ meta:
     - de-bb
     - bb
     - brandenburg land
+    - 勃兰登堡州
   category: LAND

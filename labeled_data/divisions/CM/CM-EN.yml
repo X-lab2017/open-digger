@@ -1,5 +1,5 @@
-name: Far North
-name_zh: 极北大区
+name: Extrême-Nord
+name_zh: 极北区
 type: Division-1
 meta:
   alpha2: CM-EN
@@ -11,4 +11,5 @@ meta:
     - far north
     - far north region
     - far-north
+    - 极北大区
   category: REGION

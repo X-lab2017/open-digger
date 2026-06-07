@@ -1,5 +1,5 @@
 name: Valparaíso
-name_zh: 瓦尔帕莱索
+name_zh: 瓦尔帕莱索大区
 type: Division-1
 meta:
   alpha2: CL-VS
@@ -10,4 +10,5 @@ meta:
     - valparaíso region
     - valparaiso region
     - v
+    - 瓦尔帕莱索
   category: REGION

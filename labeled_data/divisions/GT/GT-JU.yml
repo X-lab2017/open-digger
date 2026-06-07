@@ -1,0 +1,11 @@
+name: Jutiapa
+name_zh: 胡蒂亚帕省
+type: Division-1
+meta:
+  alpha2: GT-JU
+  includes:
+    - jutiapa
+    - gt-22
+    - '22'
+    - jutiapa department
+  category: DEPARTMENT

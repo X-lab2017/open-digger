@@ -1,5 +1,5 @@
 name: Savanne
-name_zh: 萨瓦纳区
+name_zh: 萨凡纳区
 type: Division-1
 meta:
   alpha2: MU-SA
@@ -8,4 +8,5 @@ meta:
     - mu-sa
     - sa
     - savanne district
+    - 萨瓦纳区
   category: DISTRICT

@@ -1,4 +1,4 @@
-name: Ryangkangto
+name: Ryanggang
 type: Division-1
 meta:
   alpha2: KP-10
@@ -10,3 +10,4 @@ meta:
     - ryangkangto
     - ryangkangto province
   category: PROVINCE
+name_zh: 两江道

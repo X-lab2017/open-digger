@@ -1,5 +1,5 @@
 name: Bujumbura Mairie
-name_zh: 布琼布拉城市省
+name_zh: 布琼布拉市省
 type: Division-1
 meta:
   alpha2: BI-BM
@@ -8,4 +8,5 @@ meta:
     - bi-bm
     - bm
     - bujumbura mairie province
+    - 布琼布拉城市省
   category: PROVINCE

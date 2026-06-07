@@ -1,5 +1,5 @@
 name: Antioquia
-name_zh: 安蒂奥基亚
+name_zh: 安蒂奥基亚省
 type: Division-1
 meta:
   alpha2: CO-ANT
@@ -8,4 +8,5 @@ meta:
     - co-ant
     - ant
     - antioquia department
+    - 安蒂奥基亚
   category: DEPARTMENT

@@ -1,5 +1,5 @@
-name: Ciudad Autónoma de Buenos Aires
-name_zh: 布宜诺斯艾利斯省
+name: Ciudad de Buenos Aires
+name_zh: 布宜诺斯艾利斯
 type: Division-1
 meta:
   alpha2: AR-C
@@ -10,4 +10,5 @@ meta:
     - ciudad autónoma de buenos aires city
     - cba
     - buenos aires autonomous city
+    - 布宜诺斯艾利斯省
   category: CITY

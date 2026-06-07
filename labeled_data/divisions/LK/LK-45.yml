@@ -1,0 +1,11 @@
+name: Mulativ
+name_zh: 穆莱蒂武区
+type: Division-1
+meta:
+  alpha2: LK-45
+  includes:
+    - mulativ
+    - lk-45
+    - '45'
+    - mulativ district
+  category: PROVINCE

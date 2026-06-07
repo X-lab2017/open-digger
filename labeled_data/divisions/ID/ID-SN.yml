@@ -1,0 +1,11 @@
+name: Sulawesi Selatan
+name_zh: 南苏拉威西省
+type: Division-1
+meta:
+  alpha2: ID-SN
+  includes:
+    - sulawesi selatan
+    - id-sn
+    - sn
+    - sulawesi selatan province
+  category: PROVINCE

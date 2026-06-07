@@ -1,5 +1,5 @@
 name: Maradi
-name_zh: 马拉迪区
+name_zh: 马拉迪大区
 type: Division-1
 meta:
   alpha2: NE-4
@@ -8,4 +8,5 @@ meta:
     - ne-4
     - '4'
     - maradi region
+    - 马拉迪区
   category: REGION

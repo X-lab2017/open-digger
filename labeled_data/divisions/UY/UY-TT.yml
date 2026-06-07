@@ -1,5 +1,5 @@
 name: Treinta y Tres
-name_zh: 特雷斯德拉弗龙特拉省
+name_zh: 三十三人省
 type: Division-1
 meta:
   alpha2: UY-TT
@@ -8,4 +8,5 @@ meta:
     - uy-tt
     - tt
     - treinta y tres department
+    - 特雷斯德拉弗龙特拉省
   category: DEPARTMENT

@@ -1,5 +1,5 @@
-name: Sisačko-moslavačka županija
-name_zh: 西萨克-莫斯拉文县
+name: Sisacko-Moslavacka
+name_zh: 锡萨克-莫斯拉维纳县
 type: Division-1
 meta:
   alpha2: HR-03
@@ -10,4 +10,5 @@ meta:
     - sisačko-moslavačka županija county
     - sisak-moslavina
     - sisak-moslavina county
+    - 西萨克-莫斯拉文县
   category: COUNTY

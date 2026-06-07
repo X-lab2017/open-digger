@@ -1,5 +1,5 @@
 name: Nickerie
-name_zh: 瓦尼卡区
+name_zh: 尼克里区
 type: Division-1
 meta:
   alpha2: SR-NI
@@ -8,4 +8,5 @@ meta:
     - sr-ni
     - ni
     - nickerie district
+    - 瓦尼卡区
   category: DISTRICT

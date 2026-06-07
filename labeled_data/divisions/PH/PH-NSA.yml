@@ -1,0 +1,11 @@
+name: Northern Samar
+name_zh: 北薩馬
+type: Division-1
+meta:
+  alpha2: PH-NSA
+  includes:
+    - hilagang samar
+    - ph-nsa
+    - nsa
+    - hilagang samar province
+  category: PROVINCE

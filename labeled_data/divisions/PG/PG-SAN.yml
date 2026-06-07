@@ -1,4 +1,4 @@
-name: West Sepik
+name: Sandaun
 type: Division-1
 meta:
   alpha2: PG-SAN
@@ -8,3 +8,4 @@ meta:
     - san
     - west sepik province
   category: PROVINCE
+name_zh: 桑道恩省

@@ -1,0 +1,11 @@
+name: Monaghan
+name_zh: 莫纳亨郡
+type: Division-1
+meta:
+  alpha2: IE-MN
+  includes:
+    - monaghan
+    - ie-mn
+    - mn
+    - monaghan county
+  category: PROVINCE

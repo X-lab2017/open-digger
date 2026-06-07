@@ -1,5 +1,5 @@
 name: Saint Andrew
-name_zh: 圣安德鲁
+name_zh: 圣安德鲁区
 type: Division-1
 meta:
   alpha2: GD-01
@@ -8,4 +8,5 @@ meta:
     - gd-01
     - '01'
     - saint andrew parish
+    - 圣安德鲁
   category: PARISH

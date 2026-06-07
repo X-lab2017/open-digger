@@ -1,5 +1,5 @@
 name: Kecskemét
-name_zh: 凯克什凯梅特
+name_zh: 凯奇凯梅特
 type: Division-1
 meta:
   alpha2: HU-KM
@@ -8,4 +8,5 @@ meta:
     - hu-km
     - km
     - kecskemét city with county rights
+    - 凯克什凯梅特
   category: CITY WITH COUNTY RIGHTS

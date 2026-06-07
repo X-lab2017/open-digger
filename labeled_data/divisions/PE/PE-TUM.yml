@@ -1,5 +1,5 @@
 name: Tumbes
-name_zh: 通贝斯
+name_zh: 通贝斯大区
 type: Division-1
 meta:
   alpha2: PE-TUM
@@ -10,4 +10,5 @@ meta:
     - tumbes region
     - tumpis
     - tumpis region
+    - 通贝斯
   category: REGION

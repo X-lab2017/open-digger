@@ -1,5 +1,5 @@
 name: Matagalpa
-name_zh: 马塔加尔帕
+name_zh: 马塔加尔帕省
 type: Division-1
 meta:
   alpha2: NI-MT
@@ -8,4 +8,5 @@ meta:
     - ni-mt
     - mt
     - matagalpa department
+    - 马塔加尔帕
   category: DEPARTMENT

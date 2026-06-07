@@ -1,0 +1,11 @@
+name: Kerry
+name_zh: 凯里郡
+type: Division-1
+meta:
+  alpha2: IE-KY
+  includes:
+    - ciarraí
+    - ie-ky
+    - ky
+    - ciarraí county
+  category: PROVINCE

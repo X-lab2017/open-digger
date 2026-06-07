@@ -1,0 +1,11 @@
+name: Nkhotakota
+name_zh: 恩科塔科塔县
+type: Division-1
+meta:
+  alpha2: MW-NK
+  includes:
+    - nkhotakota
+    - mw-nk
+    - nk
+    - nkhotakota district
+  category: PROVINCE

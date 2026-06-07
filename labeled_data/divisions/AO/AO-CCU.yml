@@ -1,5 +1,5 @@
 name: Cuando Cubango
-name_zh: 宽多库邦戈省
+name_zh: 宽多-库邦戈省
 type: Division-1
 meta:
   alpha2: AO-CCU
@@ -10,4 +10,5 @@ meta:
     - cuando cubango province
     - kuando kubango
     - kuando kubango province
+    - 宽多库邦戈省
   category: PROVINCE

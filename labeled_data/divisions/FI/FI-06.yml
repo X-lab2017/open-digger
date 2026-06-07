@@ -1,5 +1,5 @@
-name: Egentliga Tavastland
-name_zh: 汉塔海梅
+name: Tavastia Proper
+name_zh: 坎塔海梅区
 type: Division-1
 meta:
   alpha2: FI-06
@@ -10,4 +10,5 @@ meta:
     - egentliga tavastland region
     - kanta-häme
     - kanta-häme region
+    - 汉塔海梅
   category: REGION

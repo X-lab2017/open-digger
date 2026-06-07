@@ -1,5 +1,5 @@
 name: Daugavpils
-name_zh: 陶格夫皮尔斯市
+name_zh: 陶格夫匹尔斯
 type: Division-1
 meta:
   alpha2: LV-DGV
@@ -8,4 +8,5 @@ meta:
     - lv-dgv
     - dgv
     - daugavpils state city
+    - 陶格夫皮尔斯市
   category: STATE CITY

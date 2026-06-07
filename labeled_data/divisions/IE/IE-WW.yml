@@ -1,0 +1,11 @@
+name: Wicklow
+name_zh: 威克洛郡
+type: Division-1
+meta:
+  alpha2: IE-WW
+  includes:
+    - cill mhantáin
+    - ie-ww
+    - ww
+    - cill mhantáin county
+  category: PROVINCE

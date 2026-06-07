@@ -1,5 +1,5 @@
-name: Wallis
-name_zh: 瓦莱
+name: Valais
+name_zh: 瓦莱州
 type: Division-1
 meta:
   alpha2: CH-VS
@@ -10,4 +10,5 @@ meta:
     - valais canton
     - wallis
     - wallis canton
+    - 瓦莱
   category: CANTON

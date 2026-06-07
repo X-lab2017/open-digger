@@ -1,5 +1,5 @@
 name: Mbeya
-name_zh: 姆贝亚
+name_zh: 姆贝亚区
 type: Division-1
 meta:
   alpha2: TZ-14
@@ -8,4 +8,5 @@ meta:
     - tz-14
     - '14'
     - mbeya region
+    - 姆贝亚
   category: REGION

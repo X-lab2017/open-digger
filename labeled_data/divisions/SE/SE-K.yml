@@ -1,5 +1,5 @@
-name: Blekinge län
-name_zh: 布莱金厄县
+name: Blekinge
+name_zh: 布莱金厄省
 type: Division-1
 meta:
   alpha2: SE-K
@@ -9,4 +9,5 @@ meta:
     - k
     - blekinge län county
     - blekinge county
+    - 布莱金厄县
   category: COUNTY

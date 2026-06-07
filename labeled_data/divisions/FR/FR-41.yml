@@ -1,0 +1,11 @@
+name: Loir-et-Cher
+name_zh: 卢瓦-谢尔省
+type: Division-1
+meta:
+  alpha2: FR-41
+  includes:
+    - loir-et-cher
+    - fr-41
+    - '41'
+    - loir-et-cher metropolitan department
+  category: PROVINCE

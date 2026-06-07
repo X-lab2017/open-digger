@@ -1,5 +1,5 @@
 name: Saint James
-name_zh: 圣詹姆斯区
+name_zh: 聖詹姆斯教區
 type: Division-1
 meta:
   alpha2: BB-04
@@ -8,4 +8,5 @@ meta:
     - bb-04
     - '04'
     - saint james parish
+    - 圣詹姆斯区
   category: PARISH

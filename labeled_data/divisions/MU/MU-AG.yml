@@ -1,4 +1,4 @@
-name: Agalega Islands
+name: Agaléga
 type: Division-1
 meta:
   alpha2: MU-AG
@@ -8,3 +8,4 @@ meta:
     - ag
     - agalega islands dependency
   category: DEPENDENCY
+name_zh: 阿加莱加群岛

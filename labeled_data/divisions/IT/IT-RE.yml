@@ -1,0 +1,11 @@
+name: Reggio Emilia
+name_zh: 雷焦艾米利亚省
+type: Division-1
+meta:
+  alpha2: IT-RE
+  includes:
+    - reggio emilia
+    - it-re
+    - re
+    - reggio emilia province
+  category: PROVINCE

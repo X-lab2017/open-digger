@@ -1,5 +1,5 @@
 name: Mato Grosso do Sul
-name_zh: 马托格罗索
+name_zh: 南马托格罗索州
 type: Division-1
 meta:
   alpha2: BR-MS
@@ -9,4 +9,5 @@ meta:
     - ms
     - mato grosso do sul state
     - state of mato grosso do sul
+    - 马托格罗索
   category: STATE

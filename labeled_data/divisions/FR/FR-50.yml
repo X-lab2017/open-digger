@@ -1,0 +1,11 @@
+name: Manche
+name_zh: 芒什省
+type: Division-1
+meta:
+  alpha2: FR-50
+  includes:
+    - manche
+    - fr-50
+    - '50'
+    - manche metropolitan department
+  category: PROVINCE

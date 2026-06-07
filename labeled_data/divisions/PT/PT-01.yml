@@ -1,5 +1,5 @@
 name: Aveiro
-name_zh: 阿威罗
+name_zh: 阿威罗区
 type: Division-1
 meta:
   alpha2: PT-01
@@ -8,4 +8,5 @@ meta:
     - pt-01
     - '01'
     - aveiro district
+    - 阿威罗
   category: DISTRICT

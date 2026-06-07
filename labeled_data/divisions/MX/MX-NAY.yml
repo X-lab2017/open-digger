@@ -1,5 +1,5 @@
 name: Nayarit
-name_zh: 纳亚里特
+name_zh: 纳亚里特州
 type: Division-1
 meta:
   alpha2: MX-NAY
@@ -8,4 +8,5 @@ meta:
     - mx-nay
     - nay
     - nayarit state
+    - 纳亚里特
   category: STATE

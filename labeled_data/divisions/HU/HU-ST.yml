@@ -1,5 +1,5 @@
 name: Salgótarján
-name_zh: 萨尔格马罗尔
+name_zh: 绍尔戈陶尔扬
 type: Division-1
 meta:
   alpha2: HU-ST
@@ -8,4 +8,5 @@ meta:
     - hu-st
     - st
     - salgótarján city with county rights
+    - 萨尔格马罗尔
   category: CITY WITH COUNTY RIGHTS

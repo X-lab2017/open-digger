@@ -1,5 +1,5 @@
-name: Brunei-Muara
-name_zh: 摩拉县
+name: Brunei and Muara
+name_zh: 汶莱摩拉县
 type: Division-1
 meta:
   alpha2: BN-BM
@@ -11,4 +11,5 @@ meta:
     - brunei-muara
     - brunei-muara district
     - daerah brunei-muara
+    - 摩拉县
   category: DISTRICT

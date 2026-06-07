@@ -1,5 +1,5 @@
 name: Bay
-name_zh: 贝伊
+name_zh: 拜州
 type: Division-1
 meta:
   alpha2: SO-BY
@@ -8,4 +8,5 @@ meta:
     - so-by
     - by
     - bay region
+    - 贝伊
   category: REGION

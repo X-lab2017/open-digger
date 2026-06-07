@@ -1,0 +1,11 @@
+name: Catanzaro
+name_zh: 卡坦札羅省
+type: Division-1
+meta:
+  alpha2: IT-CZ
+  includes:
+    - catanzaro
+    - it-cz
+    - cz
+    - catanzaro province
+  category: PROVINCE

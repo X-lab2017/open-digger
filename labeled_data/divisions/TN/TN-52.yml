@@ -1,5 +1,5 @@
 name: Monastir
-name_zh: 莫纳斯提尔市
+name_zh: 莫纳斯提尔省
 type: Division-1
 meta:
   alpha2: TN-52
@@ -8,4 +8,5 @@ meta:
     - tn-52
     - '52'
     - monastir governorate
+    - 莫纳斯提尔市
   category: GOVERNORATE

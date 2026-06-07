@@ -1,5 +1,5 @@
-name: Tôkyô
-name_zh: 东京都
+name: Tokyo
+name_zh: 东京
 type: Division-1
 meta:
   alpha2: JP-13
@@ -12,4 +12,5 @@ meta:
     - tôkyô prefecture
     - 東京都
     - toukyou
+    - 东京都
   category: PREFECTURE

@@ -1,0 +1,11 @@
+name: Mayenne
+name_zh: 马耶讷省
+type: Division-1
+meta:
+  alpha2: FR-53
+  includes:
+    - mayenne
+    - fr-53
+    - '53'
+    - mayenne metropolitan department
+  category: PROVINCE

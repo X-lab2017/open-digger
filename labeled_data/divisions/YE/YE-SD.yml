@@ -1,5 +1,5 @@
-name: Şāʻdah
-name_zh: 萨达省
+name: Sa`dah
+name_zh: 萨达
 type: Division-1
 meta:
   alpha2: YE-SD
@@ -8,4 +8,5 @@ meta:
     - ye-sd
     - sd
     - şāʻdah governorate
+    - 萨达省
   category: GOVERNORATE

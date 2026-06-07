@@ -1,0 +1,11 @@
+name: Ratnapura
+name_zh: 拉特纳普勒区
+type: Division-1
+meta:
+  alpha2: LK-91
+  includes:
+    - irattiṉapuri
+    - lk-91
+    - '91'
+    - irattiṉapuri district
+  category: PROVINCE

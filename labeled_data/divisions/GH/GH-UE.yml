@@ -1,5 +1,5 @@
 name: Upper East
-name_zh: 上东部区
+name_zh: 东北地区
 type: Division-1
 meta:
   alpha2: GH-UE
@@ -8,4 +8,5 @@ meta:
     - gh-ue
     - ue
     - upper east region
+    - 上东部区
   category: REGION

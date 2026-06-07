@@ -1,5 +1,5 @@
 name: Pinar del Río
-name_zh: 比那尔德里奥
+name_zh: 比那尔德里奥省
 type: Division-1
 meta:
   alpha2: CU-01
@@ -9,4 +9,5 @@ meta:
     - '01'
     - pinar del río province
     - pinar del rio
+    - 比那尔德里奥
   category: PROVINCE

@@ -1,0 +1,11 @@
+name: Agusan del Norte
+name_zh: 北阿古桑省
+type: Division-1
+meta:
+  alpha2: PH-AGN
+  includes:
+    - agusan del norte
+    - ph-agn
+    - agn
+    - agusan del norte province
+  category: PROVINCE

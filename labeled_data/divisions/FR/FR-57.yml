@@ -1,0 +1,11 @@
+name: Moselle
+name_zh: 摩泽尔省
+type: Division-1
+meta:
+  alpha2: FR-57
+  includes:
+    - moselle
+    - fr-57
+    - '57'
+    - moselle metropolitan department
+  category: PROVINCE

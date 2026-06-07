@@ -1,5 +1,5 @@
 name: Zacatecas
-name_zh: 萨卡特卡斯
+name_zh: 萨卡特卡斯州
 type: Division-1
 meta:
   alpha2: MX-ZAC
@@ -8,4 +8,5 @@ meta:
     - mx-zac
     - zac
     - zacatecas state
+    - 萨卡特卡斯
   category: STATE

@@ -1,5 +1,5 @@
-name: Sowa Town
-name_zh: 索瓦镇
+name: Sowa
+name_zh: 索瓦
 type: Division-1
 meta:
   alpha2: BW-ST
@@ -8,4 +8,5 @@ meta:
     - bw-st
     - st
     - sowa town town
+    - 索瓦镇
   category: TOWN

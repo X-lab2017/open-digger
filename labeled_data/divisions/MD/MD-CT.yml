@@ -1,5 +1,5 @@
 name: Cantemir
-name_zh: 卡胡尔区
+name_zh: 冈代米尔区
 type: Division-1
 meta:
   alpha2: MD-CT
@@ -8,4 +8,5 @@ meta:
     - md-ct
     - ct
     - cantemir district
+    - 卡胡尔区
   category: DISTRICT

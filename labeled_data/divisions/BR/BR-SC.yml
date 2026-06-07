@@ -1,5 +1,5 @@
 name: Santa Catarina
-name_zh: 圣卡塔琳娜
+name_zh: 圣卡塔琳娜州
 type: Division-1
 meta:
   alpha2: BR-SC
@@ -9,4 +9,5 @@ meta:
     - sc
     - santa catarina state
     - state of santa catarina
+    - 圣卡塔琳娜
   category: STATE

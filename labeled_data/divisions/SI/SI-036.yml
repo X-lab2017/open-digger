@@ -1,5 +1,5 @@
 name: Idrija
-name_zh: 伊德里亚
+name_zh: 伊德里亞鎮
 type: Division-1
 meta:
   alpha2: SI-036
@@ -8,4 +8,5 @@ meta:
     - si-036
     - '036'
     - idrija municipality
+    - 伊德里亚
   category: MUNICIPALITY

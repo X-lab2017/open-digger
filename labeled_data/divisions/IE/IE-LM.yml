@@ -1,0 +1,11 @@
+name: Leitrim
+name_zh: 利特里姆郡
+type: Division-1
+meta:
+  alpha2: IE-LM
+  includes:
+    - leitrim
+    - ie-lm
+    - lm
+    - leitrim county
+  category: PROVINCE

@@ -1,5 +1,5 @@
 name: México
-name_zh: 墨西哥城
+name_zh: 墨西哥州
 type: Division-1
 meta:
   alpha2: MX-MEX
@@ -10,4 +10,5 @@ meta:
     - méxico state
     - estado de méxico
     - state of mexico
+    - 墨西哥城
   category: STATE

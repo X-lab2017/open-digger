@@ -1,5 +1,5 @@
-name: Podunavski okrug
-name_zh: 波德诺瓦尼克
+name: Podunavski
+name_zh: 波杜那瓦州
 type: Division-1
 meta:
   alpha2: RS-10
@@ -8,4 +8,5 @@ meta:
     - rs-10
     - '10'
     - podunavski okrug district
+    - 波德诺瓦尼克
   category: DISTRICT

@@ -1,5 +1,5 @@
-name: Borski okrug
-name_zh: 博尔什尼克
+name: Borski
+name_zh: 博尔州
 type: Division-1
 meta:
   alpha2: RS-14
@@ -8,4 +8,5 @@ meta:
     - rs-14
     - '14'
     - borski okrug district
+    - 博尔什尼克
   category: DISTRICT

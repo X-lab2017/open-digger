@@ -1,5 +1,5 @@
 name: Orange Walk
-name_zh: 奥兰治沃克区
+name_zh: 橘园区
 type: Division-1
 meta:
   alpha2: BZ-OW
@@ -8,4 +8,5 @@ meta:
     - bz-ow
     - ow
     - orange walk district
+    - 奥兰治沃克区
   category: DISTRICT

@@ -1,0 +1,11 @@
+name: Hainaut
+name_zh: 埃诺省
+type: Division-1
+meta:
+  alpha2: BE-WHT
+  includes:
+    - hainaut
+    - be-wht
+    - wht
+    - hainaut province
+  category: PROVINCE

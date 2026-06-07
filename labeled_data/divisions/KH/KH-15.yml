@@ -1,5 +1,5 @@
-name: Poŭthĭsăt
-name_zh: 马德望省
+name: Pouthisat
+name_zh: 菩萨省
 type: Division-1
 meta:
   alpha2: KH-15
@@ -13,4 +13,5 @@ meta:
     - poŭthĭsăt
     - poŭthĭsăt province
     - ps
+    - 马德望省
   category: PROVINCE

@@ -1,5 +1,5 @@
 name: Médéa
-name_zh: 麦地亚省
+name_zh: 麦迪亚省
 type: Division-1
 meta:
   alpha2: DZ-26
@@ -8,4 +8,5 @@ meta:
     - dz-26
     - '26'
     - médéa province
+    - 麦地亚省
   category: PROVINCE

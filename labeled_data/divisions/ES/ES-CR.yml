@@ -1,0 +1,11 @@
+name: Ciudad Real
+name_zh: 雷阿尔城省
+type: Division-1
+meta:
+  alpha2: ES-CR
+  includes:
+    - ciudad real
+    - es-cr
+    - cr
+    - ciudad real province
+  category: PROVINCE

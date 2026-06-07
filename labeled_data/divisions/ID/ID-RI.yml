@@ -1,0 +1,11 @@
+name: Riau
+name_zh: 廖内省
+type: Division-1
+meta:
+  alpha2: ID-RI
+  includes:
+    - riau
+    - id-ri
+    - ri
+    - riau province
+  category: PROVINCE

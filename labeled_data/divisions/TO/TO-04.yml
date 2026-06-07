@@ -1,5 +1,5 @@
 name: Tongatapu
-name_zh: 汤加塔普
+name_zh: 汤加塔布岛
 type: Division-1
 meta:
   alpha2: TO-04
@@ -8,4 +8,5 @@ meta:
     - to-04
     - '04'
     - tongatapu division
+    - 汤加塔普
   category: DIVISION

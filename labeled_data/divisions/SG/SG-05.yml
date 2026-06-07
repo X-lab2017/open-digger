@@ -1,5 +1,5 @@
 name: South West
-name_zh: 新加坡西南区
+name_zh: 西南社区发展理事会
 type: Division-1
 meta:
   alpha2: SG-05
@@ -8,4 +8,5 @@ meta:
     - sg-05
     - '05'
     - south west district
+    - 新加坡西南区
   category: DISTRICT

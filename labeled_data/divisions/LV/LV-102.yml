@@ -1,5 +1,5 @@
-name: Varakļānu novads
-name_zh: 瓦尔卡尔努市镇
+name: Varaklanu
+name_zh: 瓦尔米耶拉
 type: Division-1
 meta:
   alpha2: LV-102
@@ -10,4 +10,5 @@ meta:
     - varakļānu novads municipality
     - varakļāni
     - varakļāni municipality
+    - 瓦尔卡尔努市镇
   category: MUNICIPALITY

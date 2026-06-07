@@ -1,0 +1,11 @@
+name: Porto Novo
+name_zh: 波多诺伏县
+type: Division-1
+meta:
+  alpha2: CV-PN
+  includes:
+    - porto novo
+    - cv-pn
+    - pn
+    - porto novo municipality
+  category: PROVINCE

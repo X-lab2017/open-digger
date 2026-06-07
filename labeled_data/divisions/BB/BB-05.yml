@@ -1,5 +1,5 @@
 name: Saint John
-name_zh: 圣约翰区
+name_zh: 圣约翰教区
 type: Division-1
 meta:
   alpha2: BB-05
@@ -8,4 +8,5 @@ meta:
     - bb-05
     - '05'
     - saint john parish
+    - 圣约翰区
   category: PARISH

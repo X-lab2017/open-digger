@@ -1,5 +1,5 @@
 name: Caquetá
-name_zh: 卡克塔
+name_zh: 卡克塔省
 type: Division-1
 meta:
   alpha2: CO-CAQ
@@ -9,4 +9,5 @@ meta:
     - caq
     - caquetá department
     - caqueta
+    - 卡克塔
   category: DEPARTMENT

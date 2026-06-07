@@ -1,0 +1,11 @@
+name: Vicenza
+name_zh: 维琴察省
+type: Division-1
+meta:
+  alpha2: IT-VI
+  includes:
+    - vicenza
+    - it-vi
+    - vi
+    - vicenza province
+  category: PROVINCE

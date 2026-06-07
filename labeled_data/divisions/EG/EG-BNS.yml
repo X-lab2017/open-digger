@@ -1,5 +1,5 @@
-name: Banī Suwayf
-name_zh: 本努埃夫省
+name: Bani Suwayf
+name_zh: 贝尼苏韦夫省
 type: Division-1
 meta:
   alpha2: EG-BNS
@@ -10,4 +10,5 @@ meta:
     - banī suwayf governorate
     - bani suwayf
     - beni suef governorate
+    - 本努埃夫省
   category: GOVERNORATE

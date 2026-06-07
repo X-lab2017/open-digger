@@ -1,5 +1,5 @@
 name: Kärnten
-name_zh: 克恩顿
+name_zh: 克恩顿州
 type: Division-1
 meta:
   alpha2: AT-2
@@ -9,4 +9,5 @@ meta:
     - '2'
     - kärnten state
     - carinthia
+    - 克恩顿
   category: STATE

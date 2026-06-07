@@ -1,4 +1,4 @@
-name: Beler
+name: Bel Air
 type: Division-1
 meta:
   alpha2: SC-09
@@ -10,3 +10,4 @@ meta:
     - beler
     - beler district
   category: DISTRICT
+name_zh: 贝尔艾尔区

@@ -1,0 +1,11 @@
+name: Bafatá
+name_zh: 巴法塔区
+type: Division-1
+meta:
+  alpha2: GW-BA
+  includes:
+    - bafatá
+    - gw-ba
+    - ba
+    - bafatá region
+  category: PROVINCE

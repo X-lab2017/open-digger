@@ -1,0 +1,11 @@
+name: Quezaltenango
+name_zh: 克萨尔特南戈省
+type: Division-1
+meta:
+  alpha2: GT-QZ
+  includes:
+    - quetzaltenango
+    - gt-09
+    - '09'
+    - quetzaltenango department
+  category: DEPARTMENT

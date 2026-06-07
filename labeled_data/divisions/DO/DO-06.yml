@@ -1,0 +1,11 @@
+name: Duarte
+name_zh: 杜华德省
+type: Division-1
+meta:
+  alpha2: DO-06
+  includes:
+    - duarte
+    - do-06
+    - '06'
+    - duarte province
+  category: PROVINCE
