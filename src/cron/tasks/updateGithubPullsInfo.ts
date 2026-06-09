@@ -23,7 +23,7 @@ const MISSING_DATA_START = '2025-05-01 00:00:00';
 const FETCH_COOLDOWN_DAYS = 1;
 
 const task: Task = {
-  cron: '*/10 * * * *',
+  cron: '10 * * * *',
   singleInstance: true,
   callback: async () => {
     const logger = getLogger('UpdateGithubPullsInfoTask');
