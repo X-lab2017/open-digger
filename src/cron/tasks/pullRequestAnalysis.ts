@@ -5,7 +5,7 @@ import { insertRecords, query } from "../../db/clickhouse";
 import { Task } from "..";
 
 const task: Task = {
-  cron: '30 * * * *',
+  cron: '55 * * * *',
   singleInstance: true,
   callback: async () => {
     const logger = getLogger('PullRequestAnalysisTask');
@@ -263,38 +263,62 @@ ${pullRequest.diff}
     };
 
     const getPullRequests = async (num: number): Promise<InputPullRequest[]> => {
-      // try to get pull requests from label data first
-      const q = `SELECT id, platform, substring(diff, 1, 10000)
-    FROM pull_diff WHERE status = 'normal' AND (platform, id) NOT IN (SELECT platform, id FROM pull_info)
-    AND (platform, id) IN (SELECT platform, id FROM pulls_with_label)
-    LIMIT ${num}`;
-      let diffs = await query(q);
-      if (diffs.length === 0) {
+      // Join pull_diff with the aggregated PR meta info from events in a single query,
+      // so that LIMIT only counts records that have both a valid diff and non-empty title/body.
+      // PRs whose title/body were never non-empty are excluded by the INNER JOIN, so they
+      // will NOT be persisted and can be picked up later once their title/body get supplemented.
+      const q = `
+    SELECT
+      d.id,
+      d.platform AS p,
+      d.diff,
+      e.repo_name,
+      e.issue_number,
+      e.title,
+      e.body_text
+    FROM
+    (
+      SELECT id, platform, substring(diff, 1, 10000) AS diff
+      FROM pull_diff
+      WHERE status = 'normal'
+        AND (platform, id) NOT IN (SELECT platform, id FROM pull_info)
+        AND (platform, id) IN (SELECT platform, id FROM pulls_with_label)
+    ) AS d
+    INNER JOIN
+    (
+      SELECT
+        issue_id,
+        platform,
+        any(repo_name) AS repo_name,
+        any(issue_number) AS issue_number,
+        argMax(issue_title, created_at) AS title,
+        argMax(body, created_at) AS body_text
+      FROM events
+      WHERE type = 'PullRequestEvent'
+        AND (issue_title != '' OR body != '')
+        AND (platform, issue_id) IN (
+          SELECT platform, id FROM pull_diff
+          WHERE status = 'normal'
+            AND (platform, id) NOT IN (SELECT platform, id FROM pull_info)
+            AND (platform, id) IN (SELECT platform, id FROM pulls_with_label)
+        )
+      GROUP BY issue_id, platform
+    ) AS e
+    ON d.id = e.issue_id AND d.platform = e.platform
+    LIMIT ${num} by p`;
+      const rows = await query(q);
+      if (rows.length === 0) {
         return [];
       }
-      const diffsObj = diffs.map(item => ({ id: +item[0], platform: item[1], diff: item[2] }));
-      const pullInfo = await query(`SELECT issue_id, platform, any(repo_name), any(issue_number), argMax(issue_title, created_at), argMax(body, created_at)
-    FROM events WHERE type = 'PullRequestEvent' AND (issue_title != '' OR body != '') AND (platform, issue_id) IN (${diffsObj.map(item => `('${item.platform}', ${item.id})`).join(',')})
-    GROUP BY issue_id, platform
-    `);
-      const pullInfoObj = pullInfo.map(item => ({ id: +item[0], platform: item[1], repoName: item[2], number: item[3], title: item[4], body: item[5] }));
-      const ret: InputPullRequest[] = [];
-      for (const item of diffsObj) {
-        const pullInfoItem = pullInfoObj.find(p => p.id === item.id && p.platform === item.platform);
-        if (!pullInfoItem) {
-          continue;
-        }
-        ret.push({
-          id: +item.id,
-          platform: item.platform,
-          repoName: pullInfoItem.repoName,
-          number: pullInfoItem.number,
-          diff: item.diff,
-          title: pullInfoItem.title,
-          body: pullInfoItem.body,
-        });
-      }
-      return ret;
+      return rows.map(item => ({
+        id: +item[0],
+        platform: item[1],
+        diff: item[2],
+        repoName: item[3],
+        number: +item[4],
+        title: item[5],
+        body: item[6],
+      }));
     };
 
     const savePullRequests = async (pullRequests: Array<OutputPullRequest | null>) => {

@@ -20,6 +20,35 @@ export interface Task {
     return;
   }
 
+  // If a task name is passed as a CLI argument, run that task immediately
+  // and ignore enable/immediate/cron config as well as all other tasks.
+  const targetTaskName = process.argv[2];
+  if (targetTaskName) {
+    const normalizedName = targetTaskName.endsWith('.js') ? targetTaskName.slice(0, -3) : targetTaskName;
+    const taskFiles = readdirSync(taskDir);
+    const matchedFile = taskFiles.find(taskFile => {
+      const name = taskFile.endsWith('.js') ? taskFile.slice(0, -3) : taskFile;
+      return name === normalizedName;
+    });
+    if (!matchedFile) {
+      logger.error(`Task ${normalizedName} not found in ${taskDir}.`);
+      return;
+    }
+    const task: Task = await import(join(taskDir, matchedFile));
+    if (!task.callback) {
+      logger.error(`Task in ${matchedFile} is invalid.`);
+      return;
+    }
+    logger.info(`Manually run task: ${normalizedName}`);
+    try {
+      await task.callback('manual');
+      logger.info(`Task ${normalizedName} finished.`);
+    } catch (e) {
+      logger.error(`Error on running ${normalizedName}, e=${e}`);
+    }
+    return;
+  }
+
   const enableTasks = new Set<string>(config.task.enable);
   const immediateTasks = new Set<string>(config.task.immediate);
 
