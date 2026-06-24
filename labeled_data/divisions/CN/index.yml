@@ -1,5 +1,5 @@
 name: China
-name_zh: 中华人民共和国
+name_zh: 中国
 type: Division-0
 meta:
   alpha2: CN
@@ -9,6 +9,7 @@ meta:
     - '156'
     - the People's Republic of China
     - 中国
+    - 中华人民共和国
     - Senkaku Islands/Diaoyutai Qundao
     - Paracel Islands
   name_full: the People's Republic of China
