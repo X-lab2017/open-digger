@@ -84,10 +84,10 @@ meta:
       count: 443160
 data:
   labels:
-    - NP-P1
-    - NP-P2
     - NP-BA
     - NP-GA
-    - NP-LU
     - NP-KA
+    - NP-LU
+    - NP-P1
+    - NP-P2
     - NP-P7

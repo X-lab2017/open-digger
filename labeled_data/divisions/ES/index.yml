@@ -97,6 +97,7 @@ data:
     - ES-C
     - ES-CA
     - ES-CC
+    - ES-CE
     - ES-CO
     - ES-CR
     - ES-CS
@@ -110,11 +111,19 @@ data:
     - ES-J
     - ES-L
     - ES-LE
+    - ES-LO
     - ES-LU
+    - ES-M
     - ES-MA
+    - ES-ML
+    - ES-MU
+    - ES-NA
+    - ES-O
     - ES-OR
     - ES-P
+    - ES-PM
     - ES-PO
+    - ES-S
     - ES-SA
     - ES-SE
     - ES-SG
@@ -129,12 +138,3 @@ data:
     - ES-VI
     - ES-Z
     - ES-ZA
-    - ES-O
-    - ES-S
-    - ES-CE
-    - ES-PM
-    - ES-MU
-    - ES-M
-    - ES-ML
-    - ES-NA
-    - ES-LO

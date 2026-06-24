@@ -85,17 +85,17 @@ meta:
       count: 101040
 data:
   labels:
-    - CI-AB
-    - CI-09
-    - CI-05
-    - CI-10
-    - CI-GD
-    - CI-07
     - CI-01
-    - CI-MG
-    - CI-SM
     - CI-03
     - CI-04
+    - CI-05
+    - CI-07
+    - CI-08
+    - CI-09
+    - CI-10
+    - CI-AB
+    - CI-GD
+    - CI-MG
+    - CI-SM
     - CI-WR
     - CI-YM
-    - CI-08

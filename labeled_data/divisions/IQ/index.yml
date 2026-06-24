@@ -86,20 +86,20 @@ meta:
 data:
   labels:
     - IQ-AN
+    - IQ-AR
     - IQ-BA
     - IQ-BB
     - IQ-BG
+    - IQ-DA
     - IQ-DI
     - IQ-DQ
     - IQ-KA
     - IQ-KI
-    - IQ-AR
-    - IQ-DA
-    - IQ-SU
     - IQ-MA
     - IQ-MU
     - IQ-NA
     - IQ-NI
     - IQ-QA
     - IQ-SD
+    - IQ-SU
     - IQ-WA

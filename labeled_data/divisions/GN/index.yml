@@ -87,9 +87,9 @@ data:
   labels:
     - GN-BK
     - GN-C
-    - GN-KD
     - GN-FA
     - GN-K
+    - GN-KD
     - GN-LA
     - GN-MM
     - GN-NZ

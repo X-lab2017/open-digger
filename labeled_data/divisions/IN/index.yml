@@ -97,8 +97,8 @@ data:
     - IN-AR
     - IN-AS
     - IN-BR
-    - IN-CT
     - IN-CH
+    - IN-CT
     - IN-DH
     - IN-DL
     - IN-GA
@@ -122,9 +122,9 @@ data:
     - IN-PY
     - IN-RJ
     - IN-SK
+    - IN-TG
     - IN-TN
     - IN-TR
-    - IN-TG
-    - IN-UT
     - IN-UP
+    - IN-UT
     - IN-WB

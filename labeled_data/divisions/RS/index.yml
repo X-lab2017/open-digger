@@ -87,6 +87,13 @@ meta:
 data:
   labels:
     - RS-00
+    - RS-01
+    - RS-02
+    - RS-03
+    - RS-04
+    - RS-05
+    - RS-06
+    - RS-07
     - RS-08
     - RS-09
     - RS-10
@@ -105,10 +112,3 @@ data:
     - RS-23
     - RS-24
     - RS-KM
-    - RS-01
-    - RS-02
-    - RS-03
-    - RS-04
-    - RS-05
-    - RS-06
-    - RS-07

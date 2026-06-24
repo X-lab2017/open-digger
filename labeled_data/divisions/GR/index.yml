@@ -87,6 +87,7 @@ data:
   labels:
     - GR-69
     - GR-A
+    - GR-A1
     - GR-B
     - GR-C
     - GR-D
@@ -94,7 +95,6 @@ data:
     - GR-F
     - GR-G
     - GR-H
-    - GR-A1
     - GR-J
     - GR-K
     - GR-L

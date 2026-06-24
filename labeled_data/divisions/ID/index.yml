@@ -103,8 +103,10 @@ data:
     - ID-KT
     - ID-KU
     - ID-LA
+    - ID-MA
     - ID-NB
     - ID-NT
+    - ID-PA
     - ID-RI
     - ID-SA
     - ID-SB
@@ -115,5 +117,3 @@ data:
     - ID-ST
     - ID-SU
     - ID-YO
-    - ID-MA
-    - ID-PA

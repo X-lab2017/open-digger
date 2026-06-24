@@ -89,7 +89,6 @@ data:
     - KZ-11
     - KZ-15
     - KZ-19
-    - KZ-ATY
     - KZ-27
     - KZ-31
     - KZ-33
@@ -97,11 +96,12 @@ data:
     - KZ-39
     - KZ-43
     - KZ-47
-    - KZ-PAV
     - KZ-59
     - KZ-61
     - KZ-62
     - KZ-63
-    - KZ-AST
-    - KZ-ALA
     - KZ-79
+    - KZ-ALA
+    - KZ-AST
+    - KZ-ATY
+    - KZ-PAV

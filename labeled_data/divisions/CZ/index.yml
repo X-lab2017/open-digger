@@ -87,16 +87,16 @@ data:
   labels:
     - ':companies/jetbrains'
     - CZ-10
-    - CZ-ST
     - CZ-JC
-    - CZ-PL
-    - CZ-KA
-    - CZ-US
-    - CZ-LI
-    - CZ-KR
-    - CZ-PA
-    - CZ-VY
     - CZ-JM
-    - CZ-OL
-    - CZ-ZL
+    - CZ-KA
+    - CZ-KR
+    - CZ-LI
     - CZ-MO
+    - CZ-OL
+    - CZ-PA
+    - CZ-PL
+    - CZ-ST
+    - CZ-US
+    - CZ-VY
+    - CZ-ZL

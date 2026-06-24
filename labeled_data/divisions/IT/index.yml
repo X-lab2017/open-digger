@@ -85,6 +85,7 @@ meta:
       count: 1829959
 data:
   labels:
+    - IT-23
     - IT-AG
     - IT-AL
     - IT-AN
@@ -191,4 +192,3 @@ data:
     - IT-VR
     - IT-VT
     - IT-VV
-    - IT-23

@@ -87,17 +87,17 @@ data:
   labels:
     - PL-02
     - PL-04
-    - PL-LU
     - PL-08
-    - PL-LD
     - PL-12
     - PL-14
-    - PL-OP
     - PL-18
-    - PL-PD
-    - PL-PM
     - PL-24
-    - PL-SK
-    - PL-WN
     - PL-30
     - PL-32
+    - PL-LD
+    - PL-LU
+    - PL-OP
+    - PL-PD
+    - PL-PM
+    - PL-SK
+    - PL-WN

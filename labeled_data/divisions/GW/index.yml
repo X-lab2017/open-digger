@@ -82,10 +82,10 @@ meta:
       count: 1216
 data:
   labels:
-    - GW-BS
     - GW-BA
     - GW-BL
     - GW-BM
+    - GW-BS
     - GW-CA
     - GW-GA
     - GW-OI
