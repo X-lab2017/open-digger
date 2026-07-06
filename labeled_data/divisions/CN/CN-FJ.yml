@@ -12,3 +12,6 @@ meta:
     - fujian
     - 福建省
   category: PROVINCE
+data:
+  labels:
+    - ':companies/fuzhi'

@@ -12,3 +12,6 @@ meta:
     - anhui
     - 安徽省
   category: PROVINCE
+data:
+  labels:
+    - ':companies/iflytek'

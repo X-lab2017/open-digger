@@ -9,3 +9,6 @@ meta:
     - il
     - illinois state
   category: STATE
+data:
+  labels:
+    - ':universities/illinois'

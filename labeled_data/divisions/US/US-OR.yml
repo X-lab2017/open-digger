@@ -9,3 +9,6 @@ meta:
     - or
     - oregon state
   category: STATE
+data:
+  labels:
+    - ':companies/puppet_labs'

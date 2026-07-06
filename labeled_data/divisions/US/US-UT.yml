@@ -9,3 +9,7 @@ meta:
     - ut
     - utah state
   category: STATE
+data:
+  labels:
+    - ':companies/instructure'
+    - ':companies/novell'

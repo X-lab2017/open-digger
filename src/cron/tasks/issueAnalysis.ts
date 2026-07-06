@@ -132,7 +132,7 @@ Body: ${issue.body}
     };
 
     const getIssues = async (num: number): Promise<InputIssue[]> => {
-      const q = `SELECT platform, id, repo_name, issue_number, issue_title, body
+      const q = `SELECT platform, id, repo_name, issue_number, issue_title, substring(body, 1, 10000)
     FROM issues_with_label WHERE (platform, id) NOT IN (SELECT platform, id FROM issue_info)
     LIMIT ${num}`;
       let issues = await query(q);

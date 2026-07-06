@@ -9,3 +9,12 @@ meta:
     - wa
     - washington state
   category: STATE
+data:
+  labels:
+    - ':companies/amazon'
+    - ':companies/bluesky'
+    - ':companies/microsoft'
+    - ':companies/mifos'
+    - ':companies/upbound'
+    - ':companies/valve'
+    - ':universities/uw'

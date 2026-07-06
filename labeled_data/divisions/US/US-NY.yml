@@ -9,3 +9,18 @@ meta:
     - ny
     - new york state
   category: STATE
+data:
+  labels:
+    - ':companies/cockroachlabs'
+    - ':companies/comet_ml'
+    - ':companies/consensys'
+    - ':companies/datadog'
+    - ':companies/grafana'
+    - ':companies/huggingface'
+    - ':companies/ibm'
+    - ':companies/kaltura'
+    - ':companies/mckinsey'
+    - ':companies/mongodb'
+    - ':companies/nomic'
+    - ':companies/tigerdata'
+    - ':universities/nyu'

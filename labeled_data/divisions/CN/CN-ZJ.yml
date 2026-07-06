@@ -12,3 +12,17 @@ meta:
     - zhejiang
     - 浙江省
   category: PROVINCE
+data:
+  labels:
+    - ':companies/alibaba'
+    - ':companies/antgroup'
+    - ':companies/deepseek'
+    - ':companies/emq'
+    - ':companies/juicedata'
+    - ':companies/lobehub'
+    - ':companies/netease'
+    - ':companies/segmentfault'
+    - ':companies/stoneatom'
+    - ':companies/vesoft'
+    - ':companies/xorbits'
+    - ':companies/youzan'

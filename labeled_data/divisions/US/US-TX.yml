@@ -9,3 +9,9 @@ meta:
     - tx
     - texas state
   category: STATE
+data:
+  labels:
+    - ':companies/anaconda'
+    - ':companies/hedera'
+    - ':companies/oracle'
+    - ':foundations/openinfra'

@@ -13,3 +13,13 @@ meta:
     - guangdong province
     - 广东省
   category: PROVINCE
+data:
+  labels:
+    - ':companies/api7'
+    - ':companies/gpustack'
+    - ':companies/huawei'
+    - ':companies/matrix_origin'
+    - ':companies/sequoiadb'
+    - ':companies/tencent'
+    - ':companies/vipshop'
+    - ':companies/webank'

@@ -9,3 +9,11 @@ meta:
     - ma
     - massachusetts state
   category: STATE
+data:
+  labels:
+    - ':companies/acquia'
+    - ':companies/ambassadorlabs'
+    - ':companies/dynatrace'
+    - ':companies/enterprisedb'
+    - ':companies/rapid7'
+    - ':universities/mit'

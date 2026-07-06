@@ -14,4 +14,18 @@ meta:
   category: MUNICIPALITY
 data:
   labels:
+    - ':companies/bilibili'
+    - ':companies/bytebase'
+    - ':companies/ctrip'
+    - ':companies/daocloud'
+    - ':companies/espressif'
+    - ':companies/koderover'
+    - ':companies/kyligence'
+    - ':companies/rtthread'
+    - ':companies/thinkphp'
+    - ':companies/openkylin'
+    - ':companies/zilliz'
+    - ':companies/zstack'
+    - ':communities/kaiyuanshe'
+    - ':communities/xlab'
     - ':institutions/sh_ai_lab'

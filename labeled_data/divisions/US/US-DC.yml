@@ -10,3 +10,8 @@ meta:
     - district of columbia district
     - 哥伦比亚特区州
   category: DISTRICT
+data:
+  labels:
+    - ':agencies/us_va'
+    - ':companies/mapbox'
+    - ':companies/prefect'

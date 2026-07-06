@@ -12,3 +12,7 @@ meta:
     - shandong
     - 山东省
   category: PROVINCE
+data:
+  labels:
+    - ':companies/easycorp'
+    - ':companies/inspur'

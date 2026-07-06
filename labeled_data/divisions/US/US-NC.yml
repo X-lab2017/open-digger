@@ -9,3 +9,6 @@ meta:
     - nc
     - north carolina state
   category: STATE
+data:
+  labels:
+    - ':companies/redhat'

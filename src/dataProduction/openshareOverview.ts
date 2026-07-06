@@ -487,8 +487,8 @@ const produceDevelopers = async () => {
         data: rankAndSlice(total),
       },
       {
-        title: `Active Developers by Country (${NATURAL_YEAR})`,
-        title_zh: `各国活跃开发者数量排行榜（${NATURAL_YEAR}年）`,
+        title: 'Active Developers by Country',
+        title_zh: '各国活跃开发者数量排行榜',
         options: [
           col('#', ['rank'], 80),
           col('Country', ['name'], 300),
@@ -505,9 +505,9 @@ const produceDevelopers = async () => {
       },
     ],
     trends: [
-      toTrend('Global Total Developers (5-Year Trend)', '全球开发者总量五年趋势', totalTrend),
-      toTrend('Global Active Developers (5-Year Trend)', '全球活跃开发者总量五年趋势', activeGlobalTrend),
-      toTrend('China Active Developers (5-Year Trend)', '中国活跃开发者数量五年趋势', activeChinaTrend),
+      toTrend('Global Total Developers', '全球开发者总量趋势', totalTrend),
+      toTrend('Global Active Developers', '全球活跃开发者总量趋势', activeGlobalTrend),
+      toTrend('China Active Developers', '中国活跃开发者数量趋势', activeChinaTrend),
     ],
   };
   writeJSON('developers.json', output);
@@ -670,9 +670,9 @@ const produceContribution = async () => {
       },
     ],
     trends: [
-      toTrend('Global Developer OpenRank Contribution (5-Year Trend)', '全球开发者 OpenRank 贡献度总量五年趋势', globalTrend),
-      toTrend('United States Developer OpenRank Contribution (5-Year Trend)', '美国开发者 OpenRank 贡献度总量五年趋势', usTrend),
-      toTrend('China Developer OpenRank Contribution (5-Year Trend)', '中国开发者 OpenRank 贡献度总量五年趋势', cnTrend),
+      toTrend('Global Developer OpenRank Contribution', '全球开发者 OpenRank 贡献度总量趋势', globalTrend),
+      toTrend('United States Developer OpenRank Contribution', '美国开发者 OpenRank 贡献度总量趋势', usTrend),
+      toTrend('China Developer OpenRank Contribution', '中国开发者 OpenRank 贡献度总量趋势', cnTrend),
     ],
   };
   writeJSON('contribution.json', output);
@@ -857,9 +857,9 @@ const produceInfluence = async () => {
       },
     ],
     trends: [
-      toTrend('Global Project OpenRank Influence (5-Year Trend)', '全球开源项目 OpenRank 影响力总量五年趋势', globalTrend),
-      toTrend('United States Project OpenRank Influence (5-Year Trend)', '美国开源项目 OpenRank 影响力总量五年趋势', usTrend),
-      toTrend('China Project OpenRank Influence (5-Year Trend)', '中国开源项目 OpenRank 影响力总量五年趋势', cnTrend),
+      toTrend('Global Project OpenRank Influence', '全球开源项目 OpenRank 影响力总量五年趋势', globalTrend),
+      toTrend('United States Project OpenRank Influence', '美国开源项目 OpenRank 影响力总量趋势', usTrend),
+      toTrend('China Project OpenRank Influence', '中国开源项目 OpenRank 影响力总量趋势', cnTrend),
     ],
   };
   writeJSON('influence.json', output);
@@ -1088,8 +1088,8 @@ const produceDrillDown = async (code: string, drill: { country: string; labelId:
           data: rankAndSlice(estimate),
         },
         {
-          title: `Active Developers by ${regionEn} (${enName}, ${NATURAL_YEAR})`,
-          title_zh: `${zhName}各${regionZhUnit}活跃开发者数量排行榜（${NATURAL_YEAR}年）`,
+          title: `Active Developers by ${regionEn} (${enName})`,
+          title_zh: `${zhName}各${regionZhUnit}活跃开发者数量排行榜`,
           options: [
             col('#', ['rank'], 80),
             col(regionEn, ['name'], 300),
@@ -1106,7 +1106,7 @@ const produceDrillDown = async (code: string, drill: { country: string; labelId:
         },
       ],
       trends: [
-        toTrend(`${enName} Active Developers (5-Year Trend)`, `${zhName}活跃开发者数量五年趋势`, activeTrend),
+        toTrend(`${enName} Active Developers`, `${zhName}活跃开发者数量趋势`, activeTrend),
       ],
     };
     writeJSON(`${code}/developers.json`, output);
@@ -1139,7 +1139,7 @@ const produceDrillDown = async (code: string, drill: { country: string; labelId:
         },
       ],
       trends: [
-        toTrend(`${enName} Developer OpenRank Contribution (5-Year Trend)`, `${zhName}开发者 OpenRank 贡献度总量五年趋势`, trend),
+        toTrend(`${enName} Developer OpenRank Contribution`, `${zhName}开发者 OpenRank 贡献度总量趋势`, trend),
       ],
     };
     writeJSON(`${code}/contribution.json`, output);
@@ -1172,7 +1172,7 @@ const produceDrillDown = async (code: string, drill: { country: string; labelId:
         },
       ],
       trends: [
-        toTrend(`${enName} Project OpenRank Influence (5-Year Trend)`, `${zhName}开源项目 OpenRank 影响力总量五年趋势`, trend),
+        toTrend(`${enName} Project OpenRank Influence`, `${zhName}开源项目 OpenRank 影响力总量趋势`, trend),
       ],
     };
     writeJSON(`${code}/influence.json`, output);

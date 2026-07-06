@@ -9,3 +9,7 @@ meta:
     - md
     - maryland state
   category: STATE
+data:
+  labels:
+    - ':agencies/nsa'
+    - ':companies/sourcefire'

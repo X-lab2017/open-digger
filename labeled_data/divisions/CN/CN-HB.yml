@@ -14,6 +14,7 @@ meta:
   category: PROVINCE
 data:
   labels:
+    - ':companies/deepin'
     - ':companies/2mui'
     - ':companies/bitland'
     - ':companies/carbit'

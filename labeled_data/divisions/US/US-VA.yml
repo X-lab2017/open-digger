@@ -9,3 +9,7 @@ meta:
     - va
     - virginia state
   category: STATE
+data:
+  labels:
+    - ':companies/capitalone'
+    - ':companies/cosmonic'

@@ -9,3 +9,6 @@ meta:
     - co
     - colorado state
   category: STATE
+data:
+  labels:
+    - ':companies/defense_unicorns'

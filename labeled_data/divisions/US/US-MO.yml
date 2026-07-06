@@ -9,3 +9,6 @@ meta:
     - mo
     - missouri state
   category: STATE
+data:
+  labels:
+    - ':companies/mycroftai'

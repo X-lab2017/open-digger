@@ -9,3 +9,7 @@ meta:
     - fl
     - florida state
   category: STATE
+data:
+  labels:
+    - ':companies/citrix'
+    - ':companies/pentaho'

@@ -198,39 +198,52 @@ SELECT
   any(a.rels) AS rels,
   MAX(a.refined) AS refined
 FROM
-  (SELECT platform, repo_id, groupArray((actor_id, issue_number, activity, merged, is_pull)) AS rels, MAX(from_api) AS refined FROM
+  (SELECT platform, repo_id, groupArray((actor_id, issue_number, activity, merged, is_pull, value_multiplier)) AS rels, MAX(from_api) AS refined FROM
     (SELECT
-      repo_id,
-      platform,
-      issue_number,
-      actor_id,
-      ROUND(uniqIf(issue_id, type='IssuesEvent' AND action='opened') * 22.235 +
-      uniqIf(issue_comment_id, type='IssueCommentEvent') * 5.252 +
-      uniqIf(issue_id, type='IssuesEvent' AND action='closed') * 9.712 + 
-      uniqIf(pull_review_comment_id, type='PullRequestReviewCommentEvent') * 7.427 + 
-      uniqIf(issue_id, type='PullRequestEvent' AND action='opened') * 40.679 + 
-      uniqIf(issue_id, type='PullRequestEvent' AND action='closed') * 14.695, 3) AS activity,
-      MAX(pull_merged) AS merged,
-      countIf(type IN ('PullRequestEvent', 'PullRequestReviewCommentEvent')) AS is_pull,
-      MAX(from_api) AS from_api
+      t.repo_id AS repo_id, t.platform AS platform, t.issue_number AS issue_number, t.actor_id AS actor_id, t.activity AS activity, t.merged AS merged, t.is_pull AS is_pull, t.from_api AS from_api,
+      IF(t.is_pull > 0,
+        IF(pi.id != 0, toFloat64(pi.value_level) * IF(pi.is_automatically_generated = 'Yes', 0.2, 1.0) * IF(pi.pr_type = 'Docs', 0.4, 1.0), 1.0),
+        IF(ii.id != 0, toFloat64(CAST(ii.information_quality AS Int8)) * IF(ii.is_automatically_generated = 'Yes', 0.2, 1.0), 1.0)
+      ) AS value_multiplier
     FROM
-      events
-    WHERE
-      toYYYYMM (created_at) = ${yyyymm}
-      AND repo_id IN (SELECT id FROM export_repo)
-      AND repo_id NOT IN (SELECT repo_id FROM ${openrankTable} WHERE toYYYYMM(created_at) = ${yyyymm})
-      AND type IN (
-        'IssuesEvent',
-        'IssueCommentEvent',
-        'PullRequestEvent',
-        'PullRequestReviewCommentEvent'
-      )
-    GROUP BY
-      repo_id,
-      issue_number,
-      actor_id,
-      platform
-    HAVING activity > 0)
+      (SELECT
+        repo_id,
+        platform,
+        issue_number,
+        actor_id,
+        ROUND(uniqIf(issue_id, type='IssuesEvent' AND action='opened') * 22.235 +
+        uniqIf(issue_comment_id, type='IssueCommentEvent') * 5.252 +
+        uniqIf(issue_id, type='IssuesEvent' AND action='closed') * 9.712 + 
+        uniqIf(pull_review_comment_id, type='PullRequestReviewCommentEvent') * 7.427 + 
+        uniqIf(issue_id, type='PullRequestEvent' AND action='opened') * 40.679 + 
+        uniqIf(issue_id, type='PullRequestEvent' AND action='closed') * 14.695, 3) AS activity,
+        MAX(pull_merged) AS merged,
+        countIf(type IN ('PullRequestEvent', 'PullRequestReviewCommentEvent')) AS is_pull,
+        MAX(from_api) AS from_api,
+        any(issue_id) AS iid
+      FROM
+        events
+      WHERE
+        toYYYYMM (created_at) = ${yyyymm}
+        AND repo_id IN (SELECT id FROM export_repo)
+        AND repo_id NOT IN (SELECT repo_id FROM ${openrankTable} WHERE toYYYYMM(created_at) = ${yyyymm})
+        AND type IN (
+          'IssuesEvent',
+          'IssueCommentEvent',
+          'PullRequestEvent',
+          'PullRequestReviewCommentEvent'
+        )
+        AND action != 'deleted'
+      GROUP BY
+        repo_id,
+        issue_number,
+        actor_id,
+        platform
+      HAVING activity > 0 AND actor_id > 0) t
+    LEFT JOIN (SELECT * FROM issue_info FINAL) ii ON ii.id = t.iid AND ii.platform = t.platform
+    LEFT JOIN (SELECT * FROM pull_info FINAL) pi ON pi.id = t.iid AND pi.platform = t.platform
+    WHERE (t.is_pull > 0 OR ii.hostile_or_abusive != 'Yes')
+      AND (t.is_pull = 0 OR pi.hostile_or_abuse != 'Yes'))
   GROUP BY repo_id, platform) a,
   global_openrank go
 WHERE
@@ -463,6 +476,7 @@ const localCalcTask = (param: { data: any[], cor: any, ctx: any[], exportPath: s
     const nodes = new Set<any>();
     const activityMap = new Map();
     const mergeSet = new Set();
+    const valueMultiplierMap = new Map<string, number>();
     rels.forEach(r => {
       const isPull = +r[4] > 0;
       const uId = 'u' + r[0];
@@ -476,13 +490,17 @@ const localCalcTask = (param: { data: any[], cor: any, ctx: any[], exportPath: s
       if (r[3] === 1) {
         mergeSet.add(iId);
       }
+      if (!valueMultiplierMap.has(iId)) {
+        valueMultiplierMap.set(iId, r[5] ?? 1);
+      }
     });
     const size = Math.ceil(Math.log(nodes.size));
     const nodesArr = Array.from(nodes);
     nodesArr.push(`r${repoId}`);
     const c0: any = add(zeros(nodesArr.length), nodesArr.map(id => {
       const lagecyIndex = ctx.findIndex(c => cor[`${repoId}_${id}_${c}`] > 0);
-      let openrank = lagecyIndex >= 0 ? cor[`${repoId}_${id}_${ctx[lagecyIndex]}`] * Math.pow(attenuationFactor, lagecyIndex) : 1;
+      const defaultInitValue = valueMultiplierMap.get(id) ?? 1;
+      let openrank = lagecyIndex >= 0 ? cor[`${repoId}_${id}_${ctx[lagecyIndex]}`] * Math.pow(attenuationFactor, lagecyIndex) : defaultInitValue;
       if (mergeSet.has(id)) openrank *= prMergeRatio;
       return openrank;
     }));  // initial value

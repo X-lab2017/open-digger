@@ -9,3 +9,6 @@ meta:
     - ar
     - arkansas state
   category: STATE
+data:
+  labels:
+    - ':companies/laravel'

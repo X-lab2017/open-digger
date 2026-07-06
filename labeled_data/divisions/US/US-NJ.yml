@@ -9,3 +9,8 @@ meta:
     - nj
     - new jersey state
   category: STATE
+data:
+  labels:
+    - ':companies/coreweave'
+    - ':institutions/bell_labs'
+    - ':universities/princeton'
