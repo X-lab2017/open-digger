@@ -1,0 +1,10 @@
+name: Sipeed
+name_zh: 矽速科技
+type: Company
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 44034752
+          name: sipeed

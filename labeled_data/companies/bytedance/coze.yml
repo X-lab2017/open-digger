@@ -1,0 +1,9 @@
+name: Coze
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 157483752
+          name: coze-dev

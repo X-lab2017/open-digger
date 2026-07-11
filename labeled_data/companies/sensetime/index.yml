@@ -1,0 +1,14 @@
+name: SenseTime
+name_zh: 商汤科技
+type: Company
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 173647548
+          name: sensetime
+        - id: 175909011
+          name: OpenSenseNova
+        - id: 69665675
+          name: ModelTC

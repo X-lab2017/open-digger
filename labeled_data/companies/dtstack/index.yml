@@ -1,0 +1,10 @@
+name: DTStack
+name_zh: 杭州玳数科技有限公司
+type: Company
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 15967650
+          name: DTStack

@@ -14,12 +14,12 @@ meta:
   category: PROVINCE
 data:
   labels:
-    - ':companies/deepin'
     - ':companies/2mui'
     - ':companies/bitland'
     - ':companies/carbit'
     - ':companies/cenboomh'
     - ':companies/cqzww'
+    - ':companies/deepin'
     - ':companies/dodoedu'
     - ':companies/douyu'
     - ':companies/e_ray'

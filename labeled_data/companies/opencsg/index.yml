@@ -1,0 +1,10 @@
+name: OpenCSG
+name_zh: 开放传神
+type: Company
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 153507210
+          name: OpenCSGs

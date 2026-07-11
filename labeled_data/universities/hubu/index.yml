@@ -4,3 +4,9 @@ type: University-0
 data:
   labels:
     - os
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 125889124
+          name: OpenHUTB

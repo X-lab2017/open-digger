@@ -1,0 +1,6 @@
+name: ModelBest
+name_zh: 面壁智能
+type: Company
+data:
+  labels:
+    - openbmb

@@ -1,0 +1,9 @@
+name: CodeWave
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 94613089
+          name: netease-lcap

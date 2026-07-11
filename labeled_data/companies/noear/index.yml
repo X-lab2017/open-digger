@@ -1,0 +1,10 @@
+name: Noear
+name_zh: 杭州无耳科技有限公司
+type: Company
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 168169536
+          name: opensolon

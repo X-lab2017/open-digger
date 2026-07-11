@@ -1,0 +1,10 @@
+name: Alauda
+name_zh: 灵雀云
+type: Company
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 22073292
+          name: alauda

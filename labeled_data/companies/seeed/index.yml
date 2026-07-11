@@ -1,0 +1,10 @@
+name: Seeed
+name_zh: 矽递科技
+type: Company
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 688117
+          name: Seeed-Studio

@@ -1,0 +1,10 @@
+name: DreamNum
+name_zh: 上海梦数科技有限公司
+type: Company
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 61444807
+          name: dream-num

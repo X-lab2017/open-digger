@@ -1,0 +1,6 @@
+name: Peking University
+name_zh: 北京大学
+type: University-0
+data:
+  labels:
+    - tilelang

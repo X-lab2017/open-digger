@@ -1,0 +1,10 @@
+name: ApeCloud
+name_zh: 杭州云猿生数据有限公司
+type: Company
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 110025631
+          name: apecloud

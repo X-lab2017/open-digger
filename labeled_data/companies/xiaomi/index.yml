@@ -12,3 +12,7 @@ data:
           name: MiCode
         - id: 11650082
           name: kaldi-asr
+        - id: 71431748
+          name: k2-fsa
+        - id: 174685051
+          name: open-vela

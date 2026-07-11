@@ -8,3 +8,5 @@ data:
       orgs:
         - id: 1592697
           name: linuxdeepin
+        - id: 102278842
+          name: deepin-community

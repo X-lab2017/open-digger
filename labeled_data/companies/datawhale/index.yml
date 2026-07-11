@@ -1,0 +1,10 @@
+name: DataWhale
+name_zh: 科鲸（杭州）信息技术有限公司
+type: Company
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 46047812
+          name: datawhalechina

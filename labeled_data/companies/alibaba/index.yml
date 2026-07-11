@@ -121,3 +121,13 @@ data:
           name: alibaba-archive
         - id: 141981933
           name: aigc-apps
+        - id: 191138128
+          name: springaialibaba
+        - id: 223222708
+          name: datajuicer
+        - id: 131607948
+          name: tair-opensource
+        - id: 141221163
+          name: QwenLM
+        - id: 167062371
+          name: FunAudioLLM

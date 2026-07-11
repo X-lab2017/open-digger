@@ -30,7 +30,7 @@ const MAX_GAP_SIZE = 2000;
 let round = 2;
 
 const task: Task = {
-  cron: '*/10 * * * *',
+  cron: '*/12 * * * *',
   singleInstance: true,
   callback: async () => {
     const logger = getLogger('BackfillMissingIssuesTask');

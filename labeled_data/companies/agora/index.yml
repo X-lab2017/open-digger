@@ -1,0 +1,12 @@
+name: Agora
+name_zh: 声网
+type: Company
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 18059420
+          name: agoraio
+        - id: 113095513
+          name: TEN-framework

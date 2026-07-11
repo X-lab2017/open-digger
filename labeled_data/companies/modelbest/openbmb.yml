@@ -1,0 +1,9 @@
+name: OpenBMB
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 89920203
+          name: OpenBMB

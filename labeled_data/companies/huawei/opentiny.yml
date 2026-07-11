@@ -1,0 +1,11 @@
+name: OpenTiny
+description: OpenTiny is a set of enterprise-level front-end development solutions
+description_zh: OpenTiny 是一套企业级前端开发解决方案
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 108050589
+          name: opentiny

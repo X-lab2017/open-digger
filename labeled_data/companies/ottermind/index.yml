@@ -1,0 +1,10 @@
+name: OtterMind
+name_zh: 爱獭科技（杭州）有限公司
+type: Company
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 131834193
+          name: OtterMind

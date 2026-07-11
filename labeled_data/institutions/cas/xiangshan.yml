@@ -1,0 +1,12 @@
+name: XiangShan
+name_zh: 香山处理器
+description: Open-source high-performance RISC-V processor
+description_zh: 香山是一个开源的高性能 RISC-V 处理器
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 66780499
+          name: OpenXiangShan

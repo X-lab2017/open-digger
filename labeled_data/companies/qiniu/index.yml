@@ -1,0 +1,12 @@
+name: Qiniu
+name_zh: 七牛云
+type: Company
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 1563636
+          name: qiniu
+        - id: 67939927
+          name: goplus

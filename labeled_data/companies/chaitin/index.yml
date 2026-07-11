@@ -1,0 +1,10 @@
+name: Chaitin
+name_zh: 北京长亭科技有限公司
+type: Company
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 7302766
+          name: chaitin

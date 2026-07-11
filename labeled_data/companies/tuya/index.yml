@@ -1,0 +1,10 @@
+name: Tuya
+name_zh: 杭州涂鸦信息技术有限公司
+type: Company
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 73523937
+          name: tuya

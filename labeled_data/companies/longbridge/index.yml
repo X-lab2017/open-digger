@@ -1,0 +1,9 @@
+name: LongBridge
+type: Company
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 68419756
+          name: longbridge

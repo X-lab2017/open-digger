@@ -1,0 +1,10 @@
+name: Hundsun
+name_zh: 恒生电子
+type: Company
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: ''
+          name: hundsun

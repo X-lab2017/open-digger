@@ -6,9 +6,12 @@ data:
     - byconity
     - bytees
     - cloudwego
+    - coze
     - deer_flow
     - lark
     - oceanengine
+    - seed
+    - trae
     - verl
   platforms:
     - name: GitHub
@@ -44,3 +47,7 @@ data:
           name: BabitMF
         - id: 133362294
           name: Bio-OS
+        - id: 200909301
+          name: lynx-family
+        - id: 67365215
+          name: volcengine

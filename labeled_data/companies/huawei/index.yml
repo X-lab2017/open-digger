@@ -16,6 +16,7 @@ data:
     - openfuyao
     - opengauss
     - openharmony
+    - opentiny
     - service_comb
     - volcano
   platforms:

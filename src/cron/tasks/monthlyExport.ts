@@ -9,7 +9,7 @@ import {
   chaossNewContributors, chaossTechnicalFork
 } from '../../metrics/chaoss';
 import { contributorEmailSuffixes, repoIssueComments, repoParticipants, repoStars } from '../../metrics/metrics';
-import { getRepoActivity, getRepoOpenrank, getUserActivity, getUserOpenrank, getAttention, getRepoCommunityOpenrank } from '../../metrics/indices';
+import { getRepoActivity, getRepoOpenrank, getAttention, getRepoCommunityOpenrank, getUserTalent, processCodeQuality, getUserActivity, getUserOpenrank } from '../../metrics/indices';
 import { getLogger } from '../../utils';
 import getConfig from '../../config';
 import { EOL } from 'os';
@@ -244,6 +244,19 @@ const task: Task = {
             [...['activity', 'open_issue', 'issue_comment', 'open_pull', 'merged_pull', 'review_comment'].map(f => getField(f))]);
           // user openrank
           await processMetric(getUserOpenrank, option, getField('openrank'));
+          // user talent
+          const talentData = await getUserTalent({
+            ...option,
+            startYear, startMonth, endYear, endMonth,
+            whereClause: option.whereClause,
+          });
+          for (const user of talentData) {
+            if (!user.platform || !user.name) continue;
+            const userDir = join(exportBasePath, user.platform.toLowerCase(), user.name);
+            if (!existsSync(userDir)) mkdirSync(userDir, { recursive: true });
+            const talentFilePath = join(userDir, 'talent.json');
+            writeFileSync(talentFilePath, JSON.stringify(user.years));
+          }
           logger.info(`Process user for round ${i} done.`);
         }
         logger.info('Process user export task done.');
@@ -276,8 +289,8 @@ const task: Task = {
         logger.info('Export label metrics done.');
       };
 
-      await exportRepoMetrics();
-      await exportUserMetrics();
+      await exportRepoMetrics;
+      await exportUserMetrics;
       await exportLabelMetrics();
     };
 
@@ -459,6 +472,63 @@ GROUP BY p, n`);
       logger.info('Export user info done');
     }
 
+    const exportTalentBaseline = async () => {
+      logger.info('Start to export talent baseline.');
+      const baselineSql = `
+        SELECT
+          avg(multiIf(code_quality = 1, 1, code_quality = 2, 0.8, code_quality = 3, 0.6, code_quality = 4, 0.4, 0.2)) AS codeQuality,
+          avg(multiIf(pr_title_and_description_quality = 1, 1, pr_title_and_description_quality = 2, 0.8, pr_title_and_description_quality = 3, 0.6, pr_title_and_description_quality = 4, 0.4, 0.2)) AS prTitleAndDescriptionQuality,
+          avg(value_level) AS valueLevel
+        FROM pull_info
+        WHERE code_quality > 0
+      `;
+      const issueBaselineSql = `
+        SELECT avg(multiIf(information_quality = 1, 0.2, information_quality = 2, 0.4, information_quality = 3, 0.6, information_quality = 4, 0.8, 1)) AS issueQuality
+        FROM issue_info
+        WHERE information_quality > 0
+      `;
+      const openrankBaselineSql = `
+        SELECT
+          avg(total_openrank) AS openrank,
+          max(total_openrank) AS maxOpenrank
+        FROM (
+          SELECT actor_id, sum(openrank) AS total_openrank
+          FROM normalized_community_openrank_with_bot
+          WHERE toYear(created_at) = toYear(now())
+          GROUP BY actor_id
+        )
+      `;
+
+      const [baselineResult, issueBaselineResult, openrankBaselineResult] = await Promise.all([
+        query(baselineSql),
+        query(issueBaselineSql),
+        query(openrankBaselineSql),
+      ]);
+
+      const codeQualityVal = baselineResult.length > 0 ? +baselineResult[0][0] : 0;
+      const prTitleVal = baselineResult.length > 0 ? +baselineResult[0][1] : 0;
+      const valueLevelVal = baselineResult.length > 0 ? +baselineResult[0][2] : 0;
+      const issueQualityVal = issueBaselineResult.length > 0 ? +issueBaselineResult[0][0] : 0;
+      const openrankVal = openrankBaselineResult.length > 0 ? +openrankBaselineResult[0][0] : 0;
+      const maxOpenrankVal = openrankBaselineResult.length > 0 ? +openrankBaselineResult[0][1] : 0;
+
+      const baseline = {
+        maxCodeQuality: 100,
+        codeQuality: processCodeQuality(codeQualityVal),
+        prTitleAndDescriptionQuality: +(prTitleVal * 100).toFixed(2),
+        maxPrTitleAndDescriptionQuality: 100,
+        valueLevel: +(valueLevelVal * 100).toFixed(2),
+        maxValueLevel: 100,
+        issueQuality: +(issueQualityVal * 100).toFixed(2),
+        maxIssueQuality: 100,
+        openrank: +openrankVal.toFixed(2),
+        maxOpenrank: +maxOpenrankVal.toFixed(2),
+      };
+
+      writeFileSync(join(exportBasePath, 'talent_baseline.json'), JSON.stringify(baseline));
+      logger.info('Export talent baseline done.');
+    };
+
     const exportAllRepoList = async () => {
       const filePath = join(exportBasePath, 'repo_list.csv');
       writeFileSync(filePath, `id,platform,repo_name${EOL}`);
@@ -510,6 +580,7 @@ ORDER BY
     };
 
     await exportMetrics();
+    await exportTalentBaseline();
     await exportLabelData();
     await exportUserInfo();
     await exportAllRepoList();

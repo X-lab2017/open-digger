@@ -10,3 +10,5 @@ data:
       orgs:
         - id: 135356492
           name: InternLM
+        - id: 94522163
+          name: OpenGVLab

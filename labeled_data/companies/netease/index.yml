@@ -2,6 +2,8 @@ name: Netease
 name_zh: 网易
 type: Company
 data:
+  labels:
+    - codewave
   platforms:
     - name: GitHub
       type: Code Hosting

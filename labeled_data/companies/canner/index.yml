@@ -1,0 +1,10 @@
+name: Canner
+name_zh: 易开科技
+type: Company
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 7250217
+          name: Canner

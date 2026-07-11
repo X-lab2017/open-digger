@@ -1,0 +1,11 @@
+name: Sealos
+type: Company
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 102226726
+          name: labring
+        - id: 120196139
+          name: labring-actions

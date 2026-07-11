@@ -1,0 +1,10 @@
+name: Datavane
+name_zh: 杭州晴朗网络科技有限公司
+type: Company
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 51055258
+          name: datavane

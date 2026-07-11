@@ -1,0 +1,10 @@
+name: CNBlogs
+name_zh: 杭州语源科技有限公司
+type: Company
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 3196067
+          name: cnblogs

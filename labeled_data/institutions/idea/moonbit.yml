@@ -1,0 +1,11 @@
+name: Moonbit
+description: MoonBit is an end-to-end programming language toolchain for cloud and edge computing
+description_zh: MoonBit 是一个端到端的编程语言工具链，用于云和边缘计算
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 124848646
+          name: moonbitlang

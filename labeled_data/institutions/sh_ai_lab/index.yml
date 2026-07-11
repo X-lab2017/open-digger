@@ -5,3 +5,9 @@ data:
   labels:
     - internlm
     - opencompass
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 97503431
+          name: opendatalab

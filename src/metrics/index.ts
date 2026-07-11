@@ -1,4 +1,4 @@
-import { getRepoOpenrank, getRepoActivity, getUserOpenrank, getUserActivity, getAttention, getRepoCommunityOpenrank } from './indices';
+import { getRepoOpenrank, getRepoActivity, getUserOpenrank, getUserActivity, getAttention, getRepoCommunityOpenrank, getUserTalent } from './indices';
 import {
   chaossCodeChangeCommits, chaossBusFactor, chaossIssuesNew, chaossIssuesClosed, chaossChangeRequestsAccepted,
   chaossChangeRequestsDeclined, chaossIssueResolutionDuration, chaossCodeChangeLines, chaossTechnicalFork,
@@ -14,6 +14,7 @@ module.exports = {
   getUserActivity: getUserActivity,
   getUserOpenrank: getUserOpenrank,
   getAttention: getAttention,
+  getUserTalent: getUserTalent,
   // chaoss metrics
   chaossCodeChangeCommits: chaossCodeChangeCommits,
   chaossIssuesNew: chaossIssuesNew,

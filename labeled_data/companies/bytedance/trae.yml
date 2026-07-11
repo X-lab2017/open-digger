@@ -1,0 +1,9 @@
+name: Trae
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 164546571
+          name: Trea-AI
