@@ -1,4 +1,7 @@
 name: Anolis OS
+name_zh: 龙蜥
+description: Anolis OS is a Linux distribution based on CentOS.
+description_zh: 龙蜥是基于 CentOS 的 Linux 发行版。
 type: Project
 data:
   platforms:

@@ -88,6 +88,7 @@ data:
     - ':companies/cloudwise'
     - ':companies/databend'
     - ':companies/hpc_ai'
+    - ':companies/lobehub'
     - ':companies/longbridge'
     - SG-01
     - SG-02

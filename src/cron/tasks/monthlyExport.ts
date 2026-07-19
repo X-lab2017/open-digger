@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { appendFileSync, existsSync, mkdirSync, readFileSync, writeFileSync } from 'fs';
 import { join } from 'path';
 import { Task } from '..';
@@ -250,7 +251,11 @@ const task: Task = {
             startYear, startMonth, endYear, endMonth,
             whereClause: option.whereClause,
           });
+          console.log(talentData.length);
           for (const user of talentData) {
+            if (['frank-zsy', 'tisonkun'].some(u => u === user.name)) {
+              console.log(user);
+            }
             if (!user.platform || !user.name) continue;
             const userDir = join(exportBasePath, user.platform.toLowerCase(), user.name);
             if (!existsSync(userDir)) mkdirSync(userDir, { recursive: true });
@@ -289,8 +294,8 @@ const task: Task = {
         logger.info('Export label metrics done.');
       };
 
-      await exportRepoMetrics;
-      await exportUserMetrics;
+      await exportRepoMetrics();
+      await exportUserMetrics();
       await exportLabelMetrics();
     };
 
@@ -474,35 +479,61 @@ GROUP BY p, n`);
 
     const exportTalentBaseline = async () => {
       logger.info('Start to export talent baseline.');
+      // 使用中位数作为 baseline（代表典型活跃开发者），避免长尾/极端样本拉偏均值
       const baselineSql = `
         SELECT
-          avg(multiIf(code_quality = 1, 1, code_quality = 2, 0.8, code_quality = 3, 0.6, code_quality = 4, 0.4, 0.2)) AS codeQuality,
-          avg(multiIf(pr_title_and_description_quality = 1, 1, pr_title_and_description_quality = 2, 0.8, pr_title_and_description_quality = 3, 0.6, pr_title_and_description_quality = 4, 0.4, 0.2)) AS prTitleAndDescriptionQuality,
-          avg(value_level) AS valueLevel
+          quantile(0.5)(multiIf(code_quality = 1, 1, code_quality = 2, 0.8, code_quality = 3, 0.6, code_quality = 4, 0.4, 0.2)) AS codeQuality,
+          quantile(0.5)(multiIf(pr_title_and_description_quality = 1, 1, pr_title_and_description_quality = 2, 0.8, pr_title_and_description_quality = 3, 0.6, pr_title_and_description_quality = 4, 0.4, 0.2)) AS prTitleAndDescriptionQuality,
+          quantile(0.5)((5 - value_level) * 0.2 / 0.8) AS valueLevel
         FROM pull_info
-        WHERE code_quality > 0
+        WHERE code_quality > 0 AND pr_title_and_description_quality > 0 AND value_level > 0
       `;
       const issueBaselineSql = `
-        SELECT avg(multiIf(information_quality = 1, 0.2, information_quality = 2, 0.4, information_quality = 3, 0.6, information_quality = 4, 0.8, 1)) AS issueQuality
+        SELECT quantile(0.5)(multiIf(information_quality = 1, 0.2, information_quality = 2, 0.4, information_quality = 3, 0.6, information_quality = 4, 0.8, 1)) AS issueQuality
         FROM issue_info
         WHERE information_quality > 0
       `;
+      // openrank：baseline 使用中位数，满刻度使用 P99.9，过滤年度贡献<1 的长尾避免拉低
       const openrankBaselineSql = `
         SELECT
-          avg(total_openrank) AS openrank,
-          max(total_openrank) AS maxOpenrank
+          quantile(0.5)(total_openrank) AS openrank,
+          quantile(0.999)(total_openrank) AS maxOpenrank
         FROM (
           SELECT actor_id, sum(openrank) AS total_openrank
           FROM normalized_community_openrank_with_bot
           WHERE toYear(created_at) = toYear(now())
           GROUP BY actor_id
+          HAVING total_openrank >= 1
         )
       `;
+      // 七级分级门槛数组 [SSS, SS, S, A, B, C, D]，每年独立计算（2015至今）：
+      //   SSS: Top 0.1% (>= P99.9)
+      //   SS : Top 1%   (>= P99)
+      //   S  : Top 3%   (>= P97)
+      //   A  : Top 5%   (>= P95)
+      //   B  : Top 10%  (>= P90)
+      //   C  : Top 20%  (>= P80)
+      //   D  : 其余（>=0，兜底）
+      const openrankTiersSql = `
+        SELECT
+          year,
+          quantiles(0.999, 0.99, 0.97, 0.95, 0.90, 0.80)(total_openrank) AS tiers
+        FROM (
+          SELECT actor_id, toYear(created_at) AS year, sum(openrank) AS total_openrank
+          FROM normalized_community_openrank_with_bot
+          WHERE toYear(created_at) >= 2015
+          GROUP BY actor_id, year
+          HAVING total_openrank >= 1
+        )
+        GROUP BY year
+        ORDER BY year
+      `;
 
-      const [baselineResult, issueBaselineResult, openrankBaselineResult] = await Promise.all([
+      const [baselineResult, issueBaselineResult, openrankBaselineResult, openrankTiersResult] = await Promise.all([
         query(baselineSql),
         query(issueBaselineSql),
         query(openrankBaselineSql),
+        query(openrankTiersSql),
       ]);
 
       const codeQualityVal = baselineResult.length > 0 ? +baselineResult[0][0] : 0;
@@ -511,6 +542,22 @@ GROUP BY p, n`);
       const issueQualityVal = issueBaselineResult.length > 0 ? +issueBaselineResult[0][0] : 0;
       const openrankVal = openrankBaselineResult.length > 0 ? +openrankBaselineResult[0][0] : 0;
       const maxOpenrankVal = openrankBaselineResult.length > 0 ? +openrankBaselineResult[0][1] : 0;
+      // openrankTiers 每年独立计算，key 为年份字符串，value 为七级阈值数组
+      const openrankTiers: Record<string, number[]> = {};
+      for (const row of openrankTiersResult) {
+        const year = String(row[0]);
+        const tierArr: any[] = row[1] ?? [];
+        // tierArr 顺序与 SQL 中分位数列表一致：[P99.9, P99, P97, P95, P90, P80]
+        openrankTiers[year] = [
+          +(+tierArr[0] || 0).toFixed(2), // SSS
+          +(+tierArr[1] || 0).toFixed(2), // SS
+          +(+tierArr[2] || 0).toFixed(2), // S
+          +(+tierArr[3] || 0).toFixed(2), // A
+          +(+tierArr[4] || 0).toFixed(2), // B
+          +(+tierArr[5] || 0).toFixed(2), // C
+          0,                              // D（兜底）
+        ];
+      }
 
       const baseline = {
         maxCodeQuality: 100,
@@ -523,6 +570,7 @@ GROUP BY p, n`);
         maxIssueQuality: 100,
         openrank: +openrankVal.toFixed(2),
         maxOpenrank: +maxOpenrankVal.toFixed(2),
+        openrankTiers,
       };
 
       writeFileSync(join(exportBasePath, 'talent_baseline.json'), JSON.stringify(baseline));

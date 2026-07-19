@@ -1,0 +1,11 @@
+name: Sealos
+type: Project
+description: Sealos is an AI-native Cloud Operating System that unifies the entire application lifecycle.
+description_zh: Sealos 是一个 AI 原生的云操作系统，统一了整个应用生命周期。
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 144849757
+          name: labring/sealos

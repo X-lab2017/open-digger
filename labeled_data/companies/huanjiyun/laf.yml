@@ -1,0 +1,11 @@
+name: Laf
+type: Project
+description: Laf is a vibrant cloud development platform that provides essential tools.
+description_zh: Laf 是一个提供了各类核心工具的云开发平台。
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 345325717
+          name: labring/laf

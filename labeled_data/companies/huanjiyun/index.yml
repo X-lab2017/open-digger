@@ -1,6 +1,11 @@
-name: Sealos
+name: Huanjiyun
+name_zh: 环际云
 type: Company
 data:
+  labels:
+    - fastgpt
+    - laf
+    - sealos
   platforms:
     - name: GitHub
       type: Code Hosting

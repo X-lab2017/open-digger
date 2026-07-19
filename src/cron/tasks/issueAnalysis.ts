@@ -34,7 +34,7 @@ const task: Task = {
 
     const openai = new OpenAI({
       apiKey: config.qwen.token,
-      baseURL: 'https://dashscope.aliyuncs.com/compatible-mode/v1',
+      baseURL: 'https://llm-pal3fage4gp5v6qu.cn-beijing.maas.aliyuncs.com/compatible-mode/v1',
     });
 
     const createIssueInfoTable = async () => {
@@ -87,7 +87,7 @@ Body: ${issue.body}
 
       try {
         const response = await openai.chat.completions.create({
-          model: 'qwen3-32b',
+          model: 'qwen3.7-plus',
           enable_thinking: false,
           messages: [{ role: 'user', content: prompt }],
         } as any);

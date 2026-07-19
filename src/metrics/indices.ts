@@ -441,14 +441,19 @@ export const getUserTalent = async (config: QueryConfig): Promise<any[]> => {
   const whereClause = config.whereClause ?? '1=1';
   const yearCondition = `toYear(created_at) BETWEEN ${startYear} AND ${endYear}`;
 
-  // Map: actor_id -> TalentUser
-  const userMap = new Map<number, TalentUser>();
+  // Map: "platform:actor_id" -> TalentUser
+  const userMap = new Map<string, TalentUser>();
 
-  const getOrCreateUser = (actorId: number): TalentUser => {
-    if (!userMap.has(actorId)) {
-      userMap.set(actorId, { id: actorId, platform: '', name: '', years: {} });
+  const getOrCreateUser = (platform: string, actorId: number): TalentUser => {
+    const key = `${platform}:${actorId}`;
+    if (!userMap.has(key)) {
+      userMap.set(key, { id: actorId, platform, name: '', years: {} });
     }
-    return userMap.get(actorId)!;
+    return userMap.get(key)!;
+  };
+
+  const getUserByKey = (platform: string, actorId: number): TalentUser | undefined => {
+    return userMap.get(`${platform}:${actorId}`);
   };
 
   const getOrCreateYear = (user: TalentUser, year: string): TalentYearData => {
@@ -476,6 +481,7 @@ export const getUserTalent = async (config: QueryConfig): Promise<any[]> => {
   // 1. Pull quality data
   const pullSql = `
 SELECT
+  platform,
   actor_id,
   toYear(created_at) AS year,
   AVG(multiIf(code_quality = 1, 1, code_quality = 2, 0.8, code_quality = 3, 0.6, code_quality = 4, 0.4, 0.2)) AS avg_code_quality,
@@ -489,11 +495,12 @@ FROM
   WHERE e.issue_id = p.id AND e.platform = p.platform AND e.type = 'PullRequestEvent' AND e.action = 'closed' AND e.pull_merged = 1
   AND ${yearCondition} AND ${whereClause}
 )
-GROUP BY actor_id, year`;
+GROUP BY platform, actor_id, year`;
 
   // 2. Issue quality data
   const issueSql = `
 SELECT
+  platform,
   actor_id,
   toYear(created_at) AS year,
   AVG(multiIf(information_quality = 1, 0.2, information_quality = 2, 0.4, information_quality = 3, 0.6, information_quality = 4, 0.8, 1)) AS avg_information_quality
@@ -504,14 +511,14 @@ FROM
   WHERE e.issue_id = p.id AND e.platform = p.platform AND e.type = 'IssuesEvent' AND e.action = 'opened'
   AND ${yearCondition} AND ${whereClause}
 )
-GROUP BY actor_id, year`;
+GROUP BY platform, actor_id, year`;
 
   // 3. Activity counts
   const activitySql = `
 SELECT
+  platform,
   actor_id,
   year,
-  any(platform) AS user_platform,
   argMax(login_value, created_at) AS actor_login,
   uniqExactIf(issue_id, type='IssuesEvent' AND action='opened') AS open_issue,
   uniqExact(issue_id) AS participant_issue,
@@ -537,77 +544,78 @@ FROM (
   WHERE ${yearCondition} AND type IN ('IssuesEvent', 'IssueCommentEvent', 'PullRequestEvent', 'PullRequestReviewCommentEvent')
   AND ${whereClause}
 )
-GROUP BY actor_id, year`;
+GROUP BY platform, actor_id, year`;
 
   // 4. OpenRank total contributions
   const openrankSql = `
-SELECT actor_id, toYear(created_at) AS year, SUM(openrank) AS o
-FROM normalized_community_openrank_with_bot
+SELECT platform, actor_id, toYear(created_at) AS year, SUM(openrank) AS o
+FROM normalized_community_openrank
 WHERE ${yearCondition} AND ${whereClause}
-GROUP BY actor_id, year`;
+GROUP BY platform, actor_id, year`;
 
   // 5. OpenRank top10 repos
   const openrankTop10Sql = `
-SELECT actor_id, year, arraySlice(groupArray(tuple(repo_id, repo_name, o)), 1, 10) AS openrank_contribution_top10 FROM (
-  SELECT actor_id, toYear(created_at) AS year, repo_id, any(repo_name) AS repo_name, SUM(openrank) AS o
-  FROM normalized_community_openrank_with_bot
+SELECT platform, actor_id, year, arraySlice(groupArray(tuple(repo_id, repo_name, o)), 1, 10) AS openrank_contribution_top10 FROM (
+  SELECT platform, actor_id, toYear(created_at) AS year, repo_id, any(repo_name) AS repo_name, SUM(openrank) AS o
+  FROM normalized_community_openrank
   WHERE ${yearCondition} AND ${whereClause}
-  GROUP BY actor_id, year, repo_id
+  GROUP BY platform, actor_id, year, repo_id
   ORDER BY o DESC
-) GROUP BY actor_id, year`;
+) GROUP BY platform, actor_id, year`;
 
   // 6. Tech area contributions
   const techAreaSql = `
-SELECT actor_id, year, groupArray(tuple(name, o)) AS openrank_contribution_by_tech_area FROM (
+SELECT platform, actor_id, year, groupArray(tuple(name, o)) AS openrank_contribution_by_tech_area FROM (
   SELECT
+    a.platform AS platform,
     a.actor_id AS actor_id,
     a.year AS year,
     l.name_zh AS name,
     SUM(a.o) AS o
   FROM
   (SELECT actor_id, platform, repo_id, toYear(created_at) AS year, any(org_id) AS org_id, SUM(openrank) AS o
-   FROM normalized_community_openrank_with_bot
+   FROM normalized_community_openrank
    WHERE ${yearCondition} AND ${whereClause}
    GROUP BY actor_id, repo_id, platform, year) a,
   flatten_labels l
   WHERE l.type='Tech-0' AND l.platform=a.platform AND ((l.entity_type='Repo' AND l.entity_id=a.repo_id) OR (l.entity_type='Org' AND l.entity_id=a.org_id))
-  GROUP BY actor_id, year, name
+  GROUP BY platform, actor_id, year, name
   ORDER BY o DESC
-) GROUP BY actor_id, year`;
+) GROUP BY platform, actor_id, year`;
+
+  // 7. Fallback identity query: get platform/login for all users in the partition
+  // This ensures users who only appear in openrank/pull data (not in activitySql) still get platform/name
+  const identitySql = `
+SELECT platform, actor_id, argMax(actor_login, created_at) AS login
+FROM normalized_community_openrank
+WHERE ${yearCondition} AND ${whereClause}
+GROUP BY platform, actor_id`;
 
   // Execute all queries
-  const [pullData, issueData, activityData, openrankData, openrankTop10Data, techAreaData] = await Promise.all([
+  const [pullData, issueData, activityData, openrankData, openrankTop10Data, techAreaData, identityData] = await Promise.all([
     clickhouse.query(pullSql),
     clickhouse.query(issueSql),
     clickhouse.query(activitySql),
     clickhouse.query(openrankSql),
     clickhouse.query(openrankTop10Sql),
     clickhouse.query(techAreaSql),
+    clickhouse.query(identitySql),
   ]);
 
-  // Process pull quality data
-  pullData.forEach((row: any) => {
-    const user = getOrCreateUser(+row[0]);
-    const yearData = getOrCreateYear(user, String(row[1]));
-    yearData.avgCodeQuality = processCodeQuality(+row[2]);
-    yearData.avgPrTitleAndDescriptionQuality = processPrTitleAndDescriptionQuality(+row[3]);
-    yearData.avgValueLevel = processValueLevel(+row[4]);
-    yearData.prTypes = processPrTypes(row[5]);
+  // Process identity data first to ensure all users have platform/name
+  identityData.forEach((row: any) => {
+    const platform = row[0];
+    const actorId = +row[1];
+    const user = getOrCreateUser(platform, actorId);
+    user.name = row[2];
   });
 
-  // Process issue quality data
-  issueData.forEach((row: any) => {
-    const user = getOrCreateUser(+row[0]);
-    const yearData = getOrCreateYear(user, String(row[1]));
-    yearData.avgIssueQuality = processInformationQuality(+row[2]);
-  });
-
-  // Process activity counts
+  // Process activity counts (may overwrite identity with more accurate login from events)
   activityData.forEach((row: any) => {
-    const user = getOrCreateUser(+row[0]);
-    user.platform = row[2];
-    user.name = row[3];
-    const yearData = getOrCreateYear(user, String(row[1]));
+    const platform = row[0];
+    const actorId = +row[1];
+    const user = getOrCreateUser(platform, actorId);
+    const yearData = getOrCreateYear(user, String(row[2]));
     yearData.openIssues = +row[4];
     yearData.participantIssues = +row[5];
     yearData.openPrs = +row[6];
@@ -616,18 +624,45 @@ SELECT actor_id, year, groupArray(tuple(name, o)) AS openrank_contribution_by_te
     yearData.codeChanges = +row[9];
   });
 
+  // Process pull quality data — only update users already in the map with valid identity
+  pullData.forEach((row: any) => {
+    const platform = row[0];
+    const actorId = +row[1];
+    const user = getUserByKey(platform, actorId);
+    if (!user) return; // skip cross-partition leaked PR authors
+    const yearData = getOrCreateYear(user, String(row[2]));
+    yearData.avgCodeQuality = processCodeQuality(+row[3]);
+    yearData.avgPrTitleAndDescriptionQuality = processPrTitleAndDescriptionQuality(+row[4]);
+    yearData.avgValueLevel = processValueLevel(+row[5]);
+    yearData.prTypes = processPrTypes(row[6]);
+  });
+
+  // Process issue quality data
+  issueData.forEach((row: any) => {
+    const platform = row[0];
+    const actorId = +row[1];
+    const user = getUserByKey(platform, actorId);
+    if (!user) return;
+    const yearData = getOrCreateYear(user, String(row[2]));
+    yearData.avgIssueQuality = processInformationQuality(+row[3]);
+  });
+
   // Process openrank total
   openrankData.forEach((row: any) => {
-    const user = getOrCreateUser(+row[0]);
-    const yearData = getOrCreateYear(user, String(row[1]));
-    yearData.totalOpenrankContributions = +(+row[2]).toFixed(2);
+    const platform = row[0];
+    const actorId = +row[1];
+    const user = getOrCreateUser(platform, actorId);
+    const yearData = getOrCreateYear(user, String(row[2]));
+    yearData.totalOpenrankContributions = +(+row[3]).toFixed(2);
   });
 
   // Process openrank top10
   openrankTop10Data.forEach((row: any) => {
-    const user = getOrCreateUser(+row[0]);
-    const yearData = getOrCreateYear(user, String(row[1]));
-    yearData.openRankContributionTop10 = row[2].map((i: any) => ({
+    const platform = row[0];
+    const actorId = +row[1];
+    const user = getOrCreateUser(platform, actorId);
+    const yearData = getOrCreateYear(user, String(row[2]));
+    yearData.openRankContributionTop10 = row[3].map((i: any) => ({
       repoId: +i[0],
       repoName: i[1],
       openrank: +(+i[2]).toFixed(2),
@@ -636,9 +671,11 @@ SELECT actor_id, year, groupArray(tuple(name, o)) AS openrank_contribution_by_te
 
   // Process tech area contributions
   techAreaData.forEach((row: any) => {
-    const user = getOrCreateUser(+row[0]);
-    const yearData = getOrCreateYear(user, String(row[1]));
-    yearData.openRankContributionByTechArea = row[2].map((i: any) => ({
+    const platform = row[0];
+    const actorId = +row[1];
+    const user = getOrCreateUser(platform, actorId);
+    const yearData = getOrCreateYear(user, String(row[2]));
+    yearData.openRankContributionByTechArea = row[3].map((i: any) => ({
       name: i[0],
       o: +(+i[1]).toFixed(2),
     }));
