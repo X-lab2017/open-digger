@@ -29,7 +29,6 @@ data:
     - ':companies/dcloud'
     - ':companies/didi'
     - ':companies/douban'
-    - ':companies/fit2cloud'
     - ':companies/gaas'
     - ':companies/galaxy_future'
     - ':companies/goodrain'

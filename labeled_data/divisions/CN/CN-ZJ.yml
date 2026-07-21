@@ -23,6 +23,7 @@ data:
     - ':companies/deepseek'
     - ':companies/dtstack'
     - ':companies/emq'
+    - ':companies/fit2cloud'
     - ':companies/huanjiyun'
     - ':companies/hundsun'
     - ':companies/juicedata'
