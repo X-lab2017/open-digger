@@ -1,0 +1,11 @@
+name: EdgeEver
+type: Project
+description: Open-source, AI-native knowledge base & Evernote alternative with native MCP. Zero-cost on Cloudflare or Docker.
+description_zh: 开源、AI 原生的知识库与印象笔记替代品，内置原生 MCP 支持，可零成本部署在 Cloudflare 或 Docker。
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 1281033762
+          name: tianma-if/edgeever

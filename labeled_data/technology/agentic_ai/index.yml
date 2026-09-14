@@ -170,6 +170,7 @@ data:
     - ':projects/crush'
     - ':projects/deepseek_tui'
     - ':projects/docling'
+    - ':projects/edgeever'
     - ':projects/eigent'
     - ':projects/eliza'
     - ':projects/everything_claude_code'
