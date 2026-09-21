@@ -5,6 +5,7 @@ data:
   labels:
     - ':companies/google/a2aproject'
     - ':companies/meta/spring_projects'
+    - aaif
     - sonic
     - valkey
     - zephyr

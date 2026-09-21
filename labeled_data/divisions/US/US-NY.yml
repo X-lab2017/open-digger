@@ -11,6 +11,7 @@ meta:
   category: STATE
 data:
   labels:
+    - ':companies/bloomberg'
     - ':companies/cockroachlabs'
     - ':companies/comet_ml'
     - ':companies/consensys'

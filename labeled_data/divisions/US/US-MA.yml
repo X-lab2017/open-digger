@@ -16,4 +16,5 @@ data:
     - ':companies/dynatrace'
     - ':companies/enterprisedb'
     - ':companies/rapid7'
+    - ':companies/solo_io'
     - ':universities/mit'

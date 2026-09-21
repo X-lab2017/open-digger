@@ -1,0 +1,19 @@
+name: Agentic AI Foundation (AAIF)
+name_zh: 智能体人工智能基金会（AAIF）
+description: A Linux Foundation initiative for open, interoperable, community-governed agentic AI standards and projects.
+description_zh: Linux 基金会旗下推动开放、可互操作、由社区治理的智能体人工智能标准与项目的基金会。
+type: Foundation
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 244048685
+          name: aaif
+  labels:
+    - ':companies/anthropic/modelcontextprotocol'
+    - ':companies/block/goose'
+    - ':companies/google/a2aproject'
+    - ':companies/openai/agents_md'
+    - ':companies/solo_io/agentgateway'
+    - ':companies/tetrate/agent_router'

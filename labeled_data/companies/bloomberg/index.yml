@@ -1,0 +1,14 @@
+name: Bloomberg
+name_zh: 彭博
+description: A company providing financial data, news, and technology services.
+description_zh: 提供金融数据、新闻和技术服务的企业。
+type: Company
+data:
+  labels:
+    - ':companies/tetrate/agent_router'
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 1416818
+          name: bloomberg

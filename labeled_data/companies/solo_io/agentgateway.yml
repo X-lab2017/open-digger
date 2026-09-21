@@ -1,0 +1,11 @@
+name: agentgateway
+description: An open source gateway created by Solo.io for secure, observable connections between AI agents, models, tools, and APIs.
+description_zh: Solo.io 创建的开源网关，为 AI 智能体、模型、工具和 API 之间的连接提供安全与可观测能力。
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 208695296
+          name: agentgateway

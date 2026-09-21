@@ -1,0 +1,11 @@
+name: Agent Router
+description: An Envoy-based gateway for AI models and MCP tools, originally developed through a Bloomberg and Tetrate collaboration as Envoy AI Gateway.
+description_zh: Bloomberg 与 Tetrate 以 Envoy AI Gateway 之名联合发起的网关项目，基于 Envoy 连接 AI 模型和 MCP 工具。
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 314453756
+          name: theagentrouter
