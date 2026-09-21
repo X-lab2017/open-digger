@@ -10,10 +10,14 @@ data:
           name: 4store/4store
         - id: 8335020
           name: BrightstarDB/BrightstarDB
+        - id: 27594187
+          name: ad-freiburg/qlever
         - id: 6235870
           name: ansell/openrdf-sesame
         - id: 7437073
           name: apache/jena
+        - id: 43734923
+          name: apache/rya
         - id: 111333972
           name: arun1729/cog
         - id: 48451041
@@ -36,6 +40,8 @@ data:
           name: gurneyalex/cubicweb
         - id: 754873
           name: njh/redstore
+        - id: 133687025
+          name: oxigraph/oxigraph
         - id: 16710751
           name: quoll/mulgara
         - id: 198466472

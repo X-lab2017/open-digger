@@ -9,20 +9,18 @@ data:
     - name: GitHub
       type: Code Hosting
       repos:
-        - id: 107504377
-          name: ADBSQL/AntDB
         - id: 37905036
           name: Alachisoft/TayzGrid
+        - id: 396867188
+          name: ArcadeData/arcadedb
         - id: 681142
           name: Bobris/BTDB
-        - id: 52080367
-          name: CUBRID/cubrid
         - id: 329729926
           name: CondensationDB/Condensation-java
         - id: 8799170
           name: DevrexLabs/OrigoDB
-        - id: 516821813
-          name: HydrasDB/hydra
+        - id: 366298992
+          name: Log2n-io/Typhon
         - id: 1244027
           name: ModeShape/modeshape
         - id: 1040715058
@@ -39,12 +37,8 @@ data:
           name: apache/jackrabbit
         - id: 246343828
           name: atoti/atoti
-        - id: 40787594
-          name: aur-archive/gigabase
         - id: 396856161
           name: authzed/spicedb
-        - id: 644742603
-          name: cloudberrydb/cloudberrydb
         - id: 95070401
           name: devrexlabs/memstate
         - id: 15001136
@@ -55,8 +49,8 @@ data:
           name: fern4lvarez/piladb
         - id: 240387847
           name: gaia-platform/GaiaPlatform
-        - id: 95817032
-          name: geldata/gel
+        - id: 6433550
+          name: glycerine/shore-mt
         - id: 32137101
           name: google-code-export/twig-persist
         - id: 48279725
@@ -67,12 +61,8 @@ data:
           name: jankotek/mapdb
         - id: 37340459
           name: jayhopeter/NDatabase
-        - id: 119234782
-          name: jonahharris/osdb-beaglesql
         - id: 1776883
           name: kimchy/compass
-        - id: 442441933
-          name: mabel-dev/opteryx
         - id: 89699591
           name: magma-database/magma
         - id: 25225465
@@ -81,22 +71,14 @@ data:
           name: mateusfreira/nun-db
         - id: 273564373
           name: morecraf/Siaqodb
-        - id: 351806852
-          name: neondatabase/neon
+        - id: 242776849
+          name: oracle/coherence
         - id: 79901405
           name: objectbox/objectbox-java
         - id: 7083240
           name: orientechnologies/orientdb
-        - id: 432844875
-          name: orioledb/orioledb
-        - id: 660776503
-          name: paradedb/paradedb
         - id: 37285717
           name: pilgr/Paper
-        - id: 14702444
-          name: pipelinedb/pipelinedb
-        - id: 927442
-          name: postgres/postgres
         - id: 90349373
           name: profanedb/ProfaneDB
         - id: 1917262
