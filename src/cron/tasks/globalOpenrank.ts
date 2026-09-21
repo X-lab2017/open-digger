@@ -11,7 +11,7 @@ const task: Task = {
   callback: async () => {
     const logger = getLogger('GlobalOpenRankTask');
 
-    const globalOpenrankTableName = 'global_openrank_with_dep';
+    const globalOpenrankTableName = 'global_openrank';
     const userRententionFactor = 0.5;
     const repoRententionFactor = 0.3;
     const backgroundRententionFactor = 0.15;

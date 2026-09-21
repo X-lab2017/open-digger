@@ -449,7 +449,7 @@ export const chaossChangeRequestAge = (config: QueryConfig<TimeDurationOption>) 
 // Evolution - Code Development Efficiency
 export const chaossChangeRequestsAccepted = async (config: QueryConfig) => {
   config = getMergedConfig(config);
-  const whereClauses: string[] = ["events.type = 'PullRequestEvent' AND events.action = 'closed' AND events.pull_merged = 1"];
+  const whereClauses: string[] = ["events.type = 'PullRequestEvent' AND ((events.action = 'closed' AND events.pull_merged = 1) OR (events.action = 'merged'))"];
   const repoWhereClause = await getRepoWhereClause(config);
   if (repoWhereClause) whereClauses.push(repoWhereClause);
   whereClauses.push(getTimeRangeWhereClause(config));
@@ -707,7 +707,7 @@ export const chaossBusFactor = async (config: QueryConfig<BusFactorOptions>) => 
   if (by === 'commit') {
     whereClauses.push("events.type = 'PushEvent'");
   } else if (by === 'change request') {
-    whereClauses.push("events.type = 'PullRequestEvent' AND events.action = 'closed' AND events.pull_merged = 1");
+    whereClauses.push("events.type = 'PullRequestEvent' AND ((events.action = 'closed' AND events.pull_merged = 1) OR (events.action = 'merged'))");
   } else if (by === 'activity') {
     whereClauses.push("events.type IN ('IssuesEvent', 'IssueCommentEvent', 'PullRequestEvent', 'PullRequestReviewCommentEvent')");
   }
@@ -786,7 +786,7 @@ export const chaossNewContributors = async (config: QueryConfig<NewContributorsO
   if (by === 'commit') {
     whereClauses.push("type = 'PushEvent'")
   } else if (by === 'change request') {
-    whereClauses.push("type = 'PullRequestEvent' AND action = 'closed' AND pull_merged = 1");
+    whereClauses.push("type = 'PullRequestEvent' AND ((action = 'closed' AND pull_merged = 1) OR (action = 'merged'))");
   }
   const repoWhereClause = await getRepoWhereClause(config);
   if (repoWhereClause) whereClauses.push(repoWhereClause);
@@ -869,7 +869,7 @@ ${getWithClause(config)}
 
 export const chaossContributors = async (config: QueryConfig) => {
   config = getMergedConfig(config);
-  const whereClauses: string[] = ["events.type = 'PullRequestEvent' AND events.action = 'closed' AND events.pull_merged = 1"];
+  const whereClauses: string[] = ["events.type = 'PullRequestEvent' AND ((events.action = 'closed' AND events.pull_merged = 1) OR (events.action = 'merged'))"];
   const repoWhereClause = await getRepoWhereClause(config);
   if (repoWhereClause) whereClauses.push(repoWhereClause);
   whereClauses.push(getTimeRangeWhereClause(config));
@@ -927,7 +927,7 @@ export const chaossInactiveContributors = async (config: QueryConfig<InactiveCon
   if (by === 'commit') {
     whereClauses.push("events.type = 'PushEvent'");
   } else if (by === 'change request') {
-    whereClauses.push("events.type = 'PullRequestEvent' AND events.action = 'closed' AND events.pull_merged = 1");
+    whereClauses.push("events.type = 'PullRequestEvent' AND ((events.action = 'closed' AND events.pull_merged = 1) OR (events.action = 'merged'))");
   }
   const repoWhereClause = await getRepoWhereClause(config);
   if (repoWhereClause) whereClauses.push(repoWhereClause);

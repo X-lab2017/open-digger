@@ -1,0 +1,11 @@
+name: DeepSeek Harness
+description: 'DeepSeek Harness: Everything is a Plugin.'
+description_zh: DeepSeek Harness：万物皆插件
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 1333065091
+          name: deepseek-ai/deepseek-harness

@@ -19,7 +19,7 @@ import { getLogger } from "../utils";
         SUM(pull_deletions + pull_additions) AS cc ,
         ROUND(toYYYYMMDDhhmmss(created_at) / 10000) AS t
       FROM events
-      WHERE toYYYYMM(created_at) = 202503 AND type = 'PullRequestEvent' AND action = 'closed' AND pull_merged = 1
+      WHERE toYYYYMM(created_at) = 202503 AND type = 'PullRequestEvent' AND ((action = 'closed' AND pull_merged = 1) OR (action = 'merged'))
       GROUP BY t
     )`);
     const [pr, codeChange] = res[0].map(i => Math.round(i));

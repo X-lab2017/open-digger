@@ -83,7 +83,7 @@ console.log('Importing AtomGit data...');
     await insertRecords(items, 'events');
   };
 
-  await forEveryMonth(2026, 7, new Date().getFullYear(), new Date().getMonth() + 1, importData);
+  await forEveryMonth(2026, 8, new Date().getFullYear(), new Date().getMonth() + 1, importData);
 
   console.log('Imported AtomGit data');
 })();

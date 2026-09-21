@@ -214,13 +214,13 @@ ${getOutterOrderAndLimit(config, 'openrank')}
 };
 
 export const basicActivitySqlComponent = `
-    if(type='PullRequestEvent' AND action='closed' AND pull_merged=1, issue_author_id, actor_id) AS actor_id,
-    argMax(if(type='PullRequestEvent' AND action='closed' AND pull_merged=1, issue_author_login, actor_login), created_at) AS actor_login,
+    if(type='PullRequestEvent' AND ((action='closed' AND pull_merged=1) OR (action='merged')), issue_author_id, actor_id) AS actor_id,
+    argMax(if(type='PullRequestEvent' AND ((action='closed' AND pull_merged=1) OR (action='merged')), issue_author_login, actor_login), created_at) AS actor_login,
     uniqExactIf(issue_comment_id, type='IssueCommentEvent' AND action='created') AS issue_comment,
     uniqExactIf(issue_id, type='IssuesEvent' AND action='opened') AS open_issue,
     uniqExactIf(issue_id, type='PullRequestEvent' AND action='opened') AS open_pull,
     uniqExactIf(pull_review_comment_id, type='PullRequestReviewCommentEvent' AND action IN ('created', 'added')) AS review_comment,
-    uniqExactIf(issue_id, type='PullRequestEvent' AND action='closed' AND pull_merged=1) AS merged_pull,
+    uniqExactIf(issue_id, type='PullRequestEvent' AND ((action='closed' AND pull_merged=1) OR (action='merged'))) AS merged_pull,
     sqrt(${ISSUE_COMMENT_WEIGHT}*issue_comment + ${OPEN_ISSUE_WEIGHT}*open_issue + ${OPEN_PULL_WEIGHT}*open_pull + ${REVIEW_COMMENT_WEIGHT}*review_comment + ${PULL_MERGED_WEIGHT}*merged_pull) AS activity
 `;
 
@@ -495,7 +495,7 @@ FROM
 (
   SELECT e.repo_id, e.issue_author_id AS actor_id, e.created_at, e.issue_id, e.platform, p.code_quality, p.pr_title_and_description_quality, p.value_level, p.pr_type
   FROM events e, pull_info p
-  WHERE e.issue_id = p.id AND e.platform = p.platform AND e.type = 'PullRequestEvent' AND e.action = 'closed' AND e.pull_merged = 1
+  WHERE e.issue_id = p.id AND e.platform = p.platform AND e.type = 'PullRequestEvent' AND ((e.action = 'closed' AND e.pull_merged = 1) OR (e.action = 'merged'))
   AND ${yearCondition} AND ${whereClause}
 )
 GROUP BY platform, actor_id, year`;
@@ -526,15 +526,15 @@ SELECT
   uniqExactIf(issue_id, type='IssuesEvent' AND action='opened') AS open_issue,
   uniqExact(issue_id) AS participant_issue,
   uniqExactIf(issue_id, type='PullRequestEvent' AND action='opened') AS open_pull,
-  uniqExactIf(issue_id, type='PullRequestEvent' AND action='closed' AND pull_merged=1) AS merged_pull,
+  uniqExactIf(issue_id, type='PullRequestEvent' AND ((action='closed' AND pull_merged=1) OR (action='merged'))) AS merged_pull,
   uniqExactIf(pull_review_comment_id, type='PullRequestReviewCommentEvent' AND action='created') AS pull_review_comment,
-  sumIf(pull_additions + pull_deletions, type='PullRequestEvent' AND action='closed' AND pull_merged=1) AS code_changes
+  sumIf(pull_additions + pull_deletions, type='PullRequestEvent' AND ((action='closed' AND pull_merged=1) OR (action='merged'))) AS code_changes
 FROM (
   SELECT
-    if(type='PullRequestEvent' AND action='closed' AND pull_merged=1, issue_author_id, actor_id) AS actor_id,
+    if(type='PullRequestEvent' AND ((action='closed' AND pull_merged=1) OR (action='merged')), issue_author_id, actor_id) AS actor_id,
     toYear(created_at) AS year,
     platform,
-    if(type='PullRequestEvent' AND action='closed' AND pull_merged=1, issue_author_login, actor_login) AS login_value,
+    if(type='PullRequestEvent' AND ((action='closed' AND pull_merged=1) OR (action='merged')), issue_author_login, actor_login) AS login_value,
     type,
     action,
     pull_merged,
