@@ -22,6 +22,7 @@ data:
     - ':companies/daocloud'
     - ':companies/dreamnum'
     - ':companies/espressif'
+    - ':companies/infiniflow'
     - ':companies/koderover'
     - ':companies/kyligence'
     - ':companies/openkylin'

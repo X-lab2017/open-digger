@@ -10,3 +10,6 @@ meta:
     - noord-holland province
     - north holland
   category: PROVINCE
+data:
+  labels:
+    - ':companies/jetbrains'

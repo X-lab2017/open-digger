@@ -1,0 +1,9 @@
+name: Workflow & agent builders
+type: Tech-2
+data:
+  labels:
+    - ':companies/activepieces/activepieces'
+    - ':companies/datastax/langflow'
+    - ':companies/dify_ai/dify'
+    - ':companies/n8n/n8n'
+    - ':companies/workday/flowiseai'

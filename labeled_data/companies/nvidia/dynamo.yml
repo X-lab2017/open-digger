@@ -9,3 +9,6 @@ data:
       orgs:
         - id: 201626793
           name: ai-dynamo
+      repos:
+        - id: 942206898
+          name: ai-dynamo/dynamo

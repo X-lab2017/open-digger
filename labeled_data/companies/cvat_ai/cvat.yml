@@ -9,3 +9,6 @@ data:
       orgs:
         - id: 105363648
           name: cvat-ai
+      repos:
+        - id: 139156354
+          name: cvat-ai/cvat

@@ -3,6 +3,7 @@ name_zh: 微软
 type: Company
 data:
   labels:
+    - agent_framework
     - autogen
     - azure
     - dapr
@@ -14,6 +15,7 @@ data:
     - hbase
     - interpretml
     - keda
+    - markitdown
     - omniparser
     - onnxruntime
     - playwright

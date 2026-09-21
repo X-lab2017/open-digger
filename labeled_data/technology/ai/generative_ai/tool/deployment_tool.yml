@@ -2,7 +2,7 @@ name: Artificial Intelligence - Generative Artificial Intelligence - Tool - Depl
 type: Tech-3
 data:
   labels:
-    - ':projects/vllm'
+    - ':universities/uc_berkeley/vllm'
   platforms:
     - name: GitHub
       type: Code Hosting

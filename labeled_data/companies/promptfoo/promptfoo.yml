@@ -9,3 +9,6 @@ data:
       orgs:
         - id: 137907881
           name: promptfoo
+      repos:
+        - id: 633927609
+          name: promptfoo/promptfoo

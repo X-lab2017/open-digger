@@ -1,0 +1,8 @@
+name: Data · Integration
+type: Tech-2
+data:
+  labels:
+    - ':companies/airbnb/airflow'
+    - ':companies/airbyte/airbyte'
+    - ':companies/ibm/docling'
+    - ':companies/microsoft/markitdown'

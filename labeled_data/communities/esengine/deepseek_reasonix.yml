@@ -1,0 +1,9 @@
+name: DeepSeek Reasonix
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 1216785679
+          name: esengine/DeepSeek-Reasonix

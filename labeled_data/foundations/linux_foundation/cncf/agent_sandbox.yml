@@ -1,0 +1,9 @@
+name: Agent Sandbox
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 1036441713
+          name: kubernetes-sigs/agent-sandbox

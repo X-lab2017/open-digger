@@ -9,3 +9,6 @@ data:
       orgs:
         - id: 252820863
           name: openclaw
+      repos:
+        - id: 1103012935
+          name: openclaw/openclaw

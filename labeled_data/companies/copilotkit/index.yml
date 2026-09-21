@@ -2,6 +2,7 @@ name: CopilotKit
 type: Company
 data:
   labels:
+    - ag_ui
     - copilotkit
   platforms:
     - name: GitHub

@@ -9,3 +9,6 @@ data:
       orgs:
         - id: 254743058
           name: multica-ai
+      repos:
+        - id: 1133707766
+          name: multica-ai/multica

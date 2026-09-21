@@ -9,3 +9,6 @@ data:
       orgs:
         - id: 134601687
           name: langfuse
+      repos:
+        - id: 642497346
+          name: langfuse/langfuse

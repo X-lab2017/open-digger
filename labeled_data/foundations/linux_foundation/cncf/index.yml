@@ -72,6 +72,7 @@ data:
     - ':projects/lima'
     - ':universities/nyu/in_toto'
     - ':universities/uw/the_update_framework'
+    - agent_sandbox
     - cloudevents
     - keptn
     - kubernetes

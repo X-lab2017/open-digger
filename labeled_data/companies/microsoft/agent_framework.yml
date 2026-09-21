@@ -1,0 +1,9 @@
+name: Microsoft Agent Framework
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 974445592
+          name: microsoft/agent-framework

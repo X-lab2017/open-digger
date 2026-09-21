@@ -9,3 +9,6 @@ data:
       orgs:
         - id: 147780389
           name: sgl-project
+      repos:
+        - id: 740303686
+          name: sgl-project/sglang

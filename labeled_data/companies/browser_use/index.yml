@@ -1,0 +1,5 @@
+name: Browser Use
+type: Company
+data:
+  labels:
+    - browser_use

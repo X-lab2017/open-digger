@@ -9,3 +9,6 @@ data:
       orgs:
         - id: 187777663
           name: CherryHQ
+      repos:
+        - id: 805155266
+          name: CherryHQ/cherry-studio

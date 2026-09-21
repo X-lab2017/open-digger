@@ -2,6 +2,7 @@ name: IBM
 type: Company
 data:
   labels:
+    - docling
     - mcp_context_forge
     - open_liberty
   platforms:

@@ -4,8 +4,10 @@ data:
   labels:
     - gradio
     - lerobot
+    - openenv
     - text_generation_inference
     - transformers
+    - trl
   platforms:
     - name: GitHub
       type: Code Hosting

@@ -1,0 +1,9 @@
+name: Koog
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 976095156
+          name: JetBrains/koog

@@ -12,6 +12,7 @@ meta:
 data:
   labels:
     - ':companies/acquia'
+    - ':companies/all_hands_ai'
     - ':companies/ambassadorlabs'
     - ':companies/dynatrace'
     - ':companies/enterprisedb'

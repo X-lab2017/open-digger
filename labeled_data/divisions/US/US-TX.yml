@@ -12,6 +12,8 @@ meta:
 data:
   labels:
     - ':companies/anaconda'
+    - ':companies/coder'
     - ':companies/hedera'
+    - ':companies/nousresearch'
     - ':companies/oracle'
     - ':foundations/openinfra'

@@ -1,0 +1,7 @@
+name: Post-Train · Supervised fine-tuning
+type: Tech-2
+data:
+  labels:
+    - ':companies/alibaba/ms_swift'
+    - ':companies/unsloth_ai/unsloth'
+    - ':projects/llama_factory'

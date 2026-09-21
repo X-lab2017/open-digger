@@ -9,3 +9,6 @@ data:
       orgs:
         - id: 59758427
           name: airbytehq
+      repos:
+        - id: 283046497
+          name: airbytehq/airbyte

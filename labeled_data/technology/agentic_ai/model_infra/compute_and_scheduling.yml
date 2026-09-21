@@ -1,0 +1,8 @@
+name: Compute & scheduling
+type: Tech-2
+data:
+  labels:
+    - ':companies/databricks/spark'
+    - ':companies/huawei/volcano'
+    - ':foundations/linux_foundation/lfai/kserve'
+    - ':universities/uc_berkeley/ray'

@@ -1,0 +1,9 @@
+name: QwenPaw
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 1165324947
+          name: agentscope-ai/QwenPaw

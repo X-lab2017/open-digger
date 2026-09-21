@@ -9,3 +9,6 @@ data:
       orgs:
         - id: 107584881
           name: openxla
+      repos:
+        - id: 523007292
+          name: openxla/xla

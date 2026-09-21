@@ -1,0 +1,18 @@
+name: Agentic coding
+type: Tech-2
+data:
+  labels:
+    - ':communities/esengine/deepseek_reasonix'
+    - ':companies/alibaba/qwen_code'
+    - ':companies/all_hands_ai/openhands'
+    - ':companies/anomaly/opencode'
+    - ':companies/anthropic/claude_code'
+    - ':companies/block/goose'
+    - ':companies/cline/cline'
+    - ':companies/github/copilot_cli'
+    - ':companies/google/gemini_cli'
+    - ':companies/kilo/kilocode'
+    - ':companies/moonshot/kimi_code'
+    - ':companies/openai/codex'
+    - ':companies/warp/warp'
+    - ':projects/pi_mono'

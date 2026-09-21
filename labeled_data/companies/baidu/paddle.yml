@@ -9,6 +9,9 @@ data:
       orgs:
         - id: 23534030
           name: PaddlePaddle
+      repos:
+        - id: 65711522
+          name: PaddlePaddle/Paddle
     - name: Gitee
       type: Code Hosting
       orgs:

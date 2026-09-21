@@ -9,3 +9,6 @@ data:
       orgs:
         - id: 169110177
           name: triton-lang
+      repos:
+        - id: 23496542
+          name: triton-lang/triton

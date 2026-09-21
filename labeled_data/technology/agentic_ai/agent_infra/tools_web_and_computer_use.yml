@@ -1,0 +1,10 @@
+name: Tools, web & computer use
+type: Tech-2
+data:
+  labels:
+    - ':companies/alibaba/page_agent'
+    - ':companies/browser_use/browser_use'
+    - ':companies/bytedance/lark_cli'
+    - ':companies/firecrawl/firecrawl'
+    - ':companies/trycua/cua'
+    - ':companies/vercel/agent_browser'

@@ -9,3 +9,6 @@ data:
       orgs:
         - id: 126733545
           name: langchain-ai
+      repos:
+        - id: 552661142
+          name: langchain-ai/langchain

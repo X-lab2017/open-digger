@@ -1,0 +1,10 @@
+name: Pre-Train · Framework & parallel
+type: Tech-2
+data:
+  labels:
+    - ':companies/baidu/paddle'
+    - ':companies/google/jax'
+    - ':companies/google/tensorflow'
+    - ':companies/meta/pytorch'
+    - ':companies/microsoft/deepspeed'
+    - ':companies/nvidia/megatron'

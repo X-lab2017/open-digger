@@ -1,0 +1,9 @@
+name: AG-UI
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 209775067
+          name: ag-ui-protocol

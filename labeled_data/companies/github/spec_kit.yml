@@ -1,0 +1,9 @@
+name: Spec Kit
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 1042367133
+          name: github/spec-kit

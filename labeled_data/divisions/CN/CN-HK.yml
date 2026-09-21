@@ -13,3 +13,6 @@ meta:
     - 香港
     - 香港特别行政区
   category: SPECIAL ADMINISTRATIVE REGION
+data:
+  labels:
+    - ':universities/hku'

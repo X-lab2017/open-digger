@@ -3,7 +3,10 @@ name_zh: 加州大学伯克利分校
 type: University-0
 data:
   labels:
+    - ray
     - sglang
+    - vllm
+    - vllm_omni
   platforms:
     - name: GitHub
       type: Code Hosting

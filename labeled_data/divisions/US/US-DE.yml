@@ -9,3 +9,7 @@ meta:
     - de
     - delaware state
   category: STATE
+data:
+  labels:
+    - ':companies/cvat_ai'
+    - ':companies/vectorize_io'

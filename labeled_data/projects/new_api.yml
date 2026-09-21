@@ -9,3 +9,6 @@ data:
       orgs:
         - id: 205075698
           name: QuantumNous
+      repos:
+        - id: 717197250
+          name: QuantumNous/new-api

@@ -1,0 +1,12 @@
+name: Coding workflows & harnesses
+type: Tech-2
+data:
+  labels:
+    - ':communities/herdr/herdr'
+    - ':companies/deepseek/deepseek_harness'
+    - ':companies/github/spec_kit'
+    - ':companies/pingdotgg/t3code'
+    - ':projects/cc_switch'
+    - ':projects/everything_claude_code'
+    - ':projects/oh_my_opencode'
+    - ':projects/superpowers'

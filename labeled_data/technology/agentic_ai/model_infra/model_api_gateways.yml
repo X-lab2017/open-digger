@@ -1,0 +1,8 @@
+name: Model API gateways
+type: Tech-2
+data:
+  labels:
+    - ':communities/omniroute/omniroute'
+    - ':companies/alibaba/higress'
+    - ':companies/berriai/litellm'
+    - ':projects/new_api'

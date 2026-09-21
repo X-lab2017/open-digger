@@ -10,3 +10,7 @@ meta:
     - berlin land
     - 柏林市
   category: LAND
+data:
+  labels:
+    - ':companies/langfuse'
+    - ':companies/n8n'

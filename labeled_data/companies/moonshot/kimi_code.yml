@@ -1,0 +1,9 @@
+name: Kimi Code
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 1246459259
+          name: MoonshotAI/kimi-code

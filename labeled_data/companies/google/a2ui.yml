@@ -1,0 +1,9 @@
+name: A2UI
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 265316950
+          name: a2ui-project

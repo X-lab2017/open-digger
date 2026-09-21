@@ -9,3 +9,6 @@ data:
       orgs:
         - id: 145061914
           name: flashinfer-ai
+      repos:
+        - id: 669331976
+          name: flashinfer-ai/flashinfer

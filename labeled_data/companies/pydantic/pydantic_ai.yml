@@ -1,0 +1,9 @@
+name: Pydantic AI
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 818331198
+          name: pydantic/pydantic-ai

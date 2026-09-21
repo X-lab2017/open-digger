@@ -1,0 +1,11 @@
+name: Personal AI assistants
+type: Tech-2
+data:
+  labels:
+    - ':companies/alibaba/qwenpaw'
+    - ':companies/lobehub/lobe_chat'
+    - ':companies/nousresearch/hermes_agent'
+    - ':projects/astrbot'
+    - ':projects/openclaw'
+    - ':projects/zeroclaw'
+    - ':universities/hku/nanobot'

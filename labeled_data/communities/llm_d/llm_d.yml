@@ -1,0 +1,9 @@
+name: llm-d
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 211385051
+          name: llm-d

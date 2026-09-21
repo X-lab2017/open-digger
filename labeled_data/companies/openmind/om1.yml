@@ -9,3 +9,6 @@ data:
       orgs:
         - id: 468194
           name: OpenMind
+      repos:
+        - id: 914053359
+          name: OpenMind/OM1

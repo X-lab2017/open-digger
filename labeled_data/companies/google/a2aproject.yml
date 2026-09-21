@@ -9,3 +9,6 @@ data:
       orgs:
         - id: 217270365
           name: a2aproject
+      repos:
+        - id: 954873280
+          name: a2aproject/A2A

@@ -1,0 +1,9 @@
+name: ToolHive
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 947349598
+          name: stacklok/toolhive

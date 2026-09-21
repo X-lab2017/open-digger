@@ -1,0 +1,16 @@
+name: Agent Infra
+type: Tech-1
+data:
+  labels:
+    - agentic_coding
+    - chatbot_workspaces
+    - code_first_frameworks
+    - coding_workflows_and_harnesses
+    - development_sandboxes
+    - memory_knowledge_and_context
+    - multi_agent_orchestration
+    - observability_and_evaluation
+    - personal_ai_assistants
+    - protocols_and_interoperability
+    - tools_web_and_computer_use
+    - workflow_and_agent_builders
