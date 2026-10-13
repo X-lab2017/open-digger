@@ -38,20 +38,26 @@ data:
           name: baidu/tera
         - id: 182849188
           name: delta-io/delta
-        - id: 191676087
-          name: eleme/lindb
         - id: 1584552
           name: hypertable/hypertable
         - id: 13124802
           name: influxdata/influxdb
+        - id: 8039659
+          name: kairosdb/kairosdb
         - id: 191442206
           name: kashirin-alex/swc-db
+        - id: 1230283259
+          name: katehonz/barabaDB
+        - id: 191676087
+          name: lindb/lindb
         - id: 473235285
           name: polarsignals/frostdb
         - id: 5349565
           name: prestodb/presto
+        - id: 10081109
+          name: rax-maas/blueflood
         - id: 28449431
-          name: scylladb/scylla
+          name: scylladb/scylladb
         - id: 41209174
           name: strapdata/elassandra
         - id: 872645739

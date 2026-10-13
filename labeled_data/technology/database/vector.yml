@@ -12,30 +12,60 @@ data:
       repos:
         - id: 753244287
           name: DeployQL/LintDB
+        - id: 40127179
+          name: FeatureBaseDB/featurebase
         - id: 893031915
           name: HelixDB/helix-db
+        - id: 1244916331
+          name: IssunDB/issun-db
+        - id: 1111440285
+          name: MauricioPerera/LOKIVECTOR
         - id: 1183612568
           name: NodeDB-Lab/nodedb
         - id: 1041584089
           name: RijinRaju/octanedb
         - id: 685897222
           name: Shannon-Data/ShannonBase
+        - id: 1182378589
+          name: VincentKaufmann/GitDB
         - id: 201403923
           name: activeloopai/deeplake
         - id: 124315604
           name: aerospike/aerospike-server
+        - id: 1110443421
+          name: alibaba/zvec
+        - id: 1182753977
+          name: antflydb/antfly
         - id: 642912355
           name: awa-ai/awadb
+        - id: 1237465314
+          name: ayoubnabil/aiondb
+        - id: 1296163320
+          name: barrel-db/barrel
+        - id: 18893367
+          name: blevesearch/bleve
         - id: 793209340
           name: carsonpo/haystackdb
         - id: 546206616
           name: chroma-core/chroma
+        - id: 722854801
+          name: edwinkys/oasysdb
+        - id: 1141278752
+          name: endee-io/endee
         - id: 304530333
-          name: featureform/embeddinghub
+          name: featureform/featureform
+        - id: 1150783842
+          name: ferres-db/ferres-db
+        - id: 1208697458
+          name: hexxla/hexxladb
+        - id: 869784587
+          name: hicder/muopdb
         - id: 628503457
           name: jdagdelen/hyperDB
         - id: 635374751
           name: jina-ai/vectordb
+        - id: 1210826829
+          name: jose-compu/logosdb
         - id: 632269609
           name: kagisearch/vectordb
         - id: 242383787
@@ -44,21 +74,29 @@ data:
           name: marqo-ai/marqo
         - id: 208728772
           name: milvus-io/milvus
+        - id: 1201033913
+          name: nambok/mentedb
+        - id: 1108658403
+          name: nubskr/satoriDB
         - id: 478288303
           name: nuclia/nucliadb
-        - id: 722854801
-          name: oasysai/oasysdb
+        - id: 1080442728
+          name: oceanbase/seekdb
         - id: 735283134
           name: philippgille/chromem-go
-        - id: 40127179
-          name: pilosa/pilosa
         - id: 268163609
           name: qdrant/qdrant
-        - id: 55072677
-          name: semi-technologies/weaviate
+        - id: 1126115972
+          name: sochdb/sochdb
         - id: 195619075
           name: vdaas/vald
         - id: 186332888
           name: vearch/vearch
         - id: 634656527
           name: vector5ai/vector5db
+        - id: 55072677
+          name: weaviate/weaviate
+        - id: 1164482810
+          name: yantrikos/yantrikdb
+        - id: 1242559745
+          name: zaydmulani09/vecdb
