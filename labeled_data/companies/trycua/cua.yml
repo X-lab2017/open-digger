@@ -1,0 +1,9 @@
+name: Cua
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 191107687
+          name: trycua

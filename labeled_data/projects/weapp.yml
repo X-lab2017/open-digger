@@ -1,0 +1,21 @@
+name: weapp
+type: Project
+description: A collection of open-source tools for WeChat mini-program development, including build tooling, styling, and SQLite integration.
+description_zh: 面向微信小程序开发的开源工具集合，涵盖构建工具、样式开发和 SQLite 集成。
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 321281321
+          name: weapp-tailwindcss
+        - id: 181996268
+          name: weapp-vite
+        - id: 320956712
+          name: weapp-sqlite
+        - id: 344189287
+          name: weapp-container
+        - id: 339197508
+          name: weapp-stylex
+        - id: 339384689
+          name: weapp-pandacss

@@ -1,0 +1,13 @@
+name: Solo.io
+description: A cloud-native networking company focused on application connectivity, security, and observability.
+description_zh: 专注于应用连接、安全和可观测性的云原生网络企业。
+type: Company
+data:
+  labels:
+    - agentgateway
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 26319377
+          name: solo-io

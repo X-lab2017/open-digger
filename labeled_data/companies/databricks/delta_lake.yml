@@ -9,3 +9,6 @@ data:
       orgs:
         - id: 49767398
           name: delta-io
+      repos:
+        - id: 182849188
+          name: delta-io/delta

@@ -3,6 +3,7 @@ type: Company
 data:
   labels:
     - claude_code
+    - mcp_servers
     - modelcontextprotocol
     - skills
   platforms:

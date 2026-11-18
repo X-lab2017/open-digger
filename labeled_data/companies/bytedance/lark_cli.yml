@@ -1,0 +1,9 @@
+name: Lark CLI
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 1191372811
+          name: larksuite/cli

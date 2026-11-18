@@ -7,6 +7,7 @@ data:
     - ':companies/google/angular'
     - ':companies/google/flutter'
     - ':projects/svelte'
+    - ':projects/weapp'
   platforms:
     - name: GitHub
       type: Code Hosting

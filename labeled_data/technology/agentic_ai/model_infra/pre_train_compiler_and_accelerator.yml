@@ -1,0 +1,12 @@
+name: Pre-Train · Compiler & accelerator
+type: Tech-2
+data:
+  labels:
+    - ':companies/deepseek/deepep'
+    - ':companies/google/openxla'
+    - ':companies/nvidia/cutlass'
+    - ':companies/nvidia/model_optimizer'
+    - ':companies/nvidia/transformer_engine'
+    - ':companies/openai/triton'
+    - ':universities/princeton/dao_ai_lab/flash_attention'
+    - ':universities/uw/flashinfer'

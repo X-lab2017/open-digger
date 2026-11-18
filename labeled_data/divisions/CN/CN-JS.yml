@@ -12,3 +12,6 @@ meta:
     - jiangsu
     - 江苏省
   category: PROVINCE
+data:
+  labels:
+    - ':projects/weapp'

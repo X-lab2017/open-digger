@@ -9,3 +9,6 @@ data:
       orgs:
         - id: 45487711
           name: n8n-io
+      repos:
+        - id: 193215554
+          name: n8n-io/n8n

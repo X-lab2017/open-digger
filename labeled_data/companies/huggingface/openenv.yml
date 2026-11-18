@@ -1,0 +1,9 @@
+name: OpenEnv
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 1067949357
+          name: huggingface/OpenEnv

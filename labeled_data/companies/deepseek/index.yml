@@ -4,6 +4,7 @@ type: Company
 data:
   labels:
     - deepep
+    - deepseek_harness
   platforms:
     - name: GitHub
       type: Code Hosting

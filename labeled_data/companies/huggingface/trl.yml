@@ -1,0 +1,9 @@
+name: TRL
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 250510075
+          name: huggingface/trl

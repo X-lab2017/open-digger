@@ -9,3 +9,6 @@ data:
       orgs:
         - id: 127165244
           name: langgenius
+      repos:
+        - id: 626805178
+          name: langgenius/dify

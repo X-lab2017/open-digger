@@ -1,0 +1,9 @@
+name: Multi-agent orchestration
+type: Tech-2
+data:
+  labels:
+    - ':companies/bytedance/deer_flow'
+    - ':companies/mastra/mastra'
+    - ':companies/stablyai/orca'
+    - ':projects/multica'
+    - ':projects/paperclip'

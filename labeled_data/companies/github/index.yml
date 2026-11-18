@@ -4,6 +4,7 @@ data:
   labels:
     - copilot_cli
     - electron
+    - spec_kit
   platforms:
     - name: GitHub
       type: Code Hosting

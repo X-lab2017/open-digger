@@ -22,4 +22,7 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
       - run: npm install
+        env:
+          # CI tests do not need the optional ONNX Runtime CUDA binaries.
+          npm_config_onnxruntime_node_install_cuda: skip
       - run: npm test

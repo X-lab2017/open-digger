@@ -1,0 +1,9 @@
+name: NeMo RL
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 949546994
+          name: NVIDIA-NeMo/RL

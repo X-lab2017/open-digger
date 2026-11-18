@@ -46,6 +46,7 @@ data:
     - polardb-pg
     - polardb-x
     - qwen_code
+    - qwenpaw
     - rocketmq
     - sca
     - sealer

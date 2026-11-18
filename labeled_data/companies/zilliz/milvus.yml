@@ -9,3 +9,6 @@ data:
       orgs:
         - id: 51735404
           name: milvus-io
+      repos:
+        - id: 208728772
+          name: milvus-io/milvus

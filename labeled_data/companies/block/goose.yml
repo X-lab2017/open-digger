@@ -1,6 +1,6 @@
 name: Goose
-description: Open source, extensible AI agent that goes beyond code suggestions.
-description_zh: 开源且可扩展的 AI 智能体，不止提供代码建议。
+description: An open source, extensible AI agent initiated by Block that can execute, edit, and test code with any LLM.
+description_zh: Block 发起的开源可扩展 AI 智能体，可借助不同大语言模型执行、编辑和测试代码。
 type: Project
 data:
   platforms:

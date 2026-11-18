@@ -13,6 +13,10 @@ import { getLogger } from '../utils';
  *   - contribution.json 开发者 OpenRank 贡献度
  *   - influence.json    开源项目 OpenRank 影响力
  *
+ * 同时产出两套时间口径：
+ *   - local_files/openshare_overview           自然年（1 月至 12 月）
+ *   - local_files/openshare_overview_half_year 年中年度（上年 7 月至当年 6 月）
+ *
  * 不再区分平台（AtomGit 无地理位置数据）。排行榜标题、趋势标题、
  * 排行榜每行数据均提供中英文（取标签数据中的 name / name_zh）。
  *
@@ -23,15 +27,43 @@ import { getLogger } from '../utils';
 
 const logger = getLogger('openshareOverview');
 
-const OUTPUT_DIR = 'local_files/openshare_overview';
 const OSS_URL = 'https://oss.open-digger.cn/';
 
-// 当前完整自然年（如不完整可回退 2024）
-const NATURAL_YEAR = 2025;
-const PREV_YEAR = NATURAL_YEAR - 1;
-// 五年趋势：最近 5 个完整自然年（动态）
-const TREND_YEARS: number[] = Array.from({ length: 5 }, (_, i) => NATURAL_YEAR - 4 + i);
-const TREND_RANGE = { start: `${TREND_YEARS[0]}-01-01`, end: `${NATURAL_YEAR + 1}-01-01` };
+export type OverviewTimeDimension = 'natural_year' | 'half_year';
+
+/**
+ * 根据执行日期返回最新已完整结束的报表年度。
+ * 自然年在次年 1 月切换；年中年度（上年 7 月至当年 6 月）在当年 7 月切换。
+ */
+export const latestOverviewReportYear = (dimension: OverviewTimeDimension, now = new Date()): number => {
+  const currentYear = now.getFullYear();
+  if (dimension === 'natural_year') return currentYear - 1;
+  return now.getMonth() >= 6 ? currentYear : currentYear - 1;
+};
+
+interface ExportDimension {
+  key: OverviewTimeDimension;
+  outputDir: string;
+  /** 累计总量使用的目标季度；不设置时沿用自然年内最大季度的旧逻辑。 */
+  totalSnapshotQuarter?: number;
+}
+
+const EXPORT_DIMENSIONS: ExportDimension[] = [
+  { key: 'natural_year', outputDir: 'local_files/openshare_overview' },
+  { key: 'half_year', outputDir: 'local_files/openshare_overview_half_year', totalSnapshotQuarter: 2 },
+];
+
+let currentDimension = EXPORT_DIMENSIONS[0];
+let reportYear = latestOverviewReportYear(currentDimension.key);
+let previousYear = reportYear - 1;
+let trendYears: number[] = Array.from({ length: 5 }, (_, i) => reportYear - 4 + i);
+
+const selectDimension = (dimension: ExportDimension) => {
+  currentDimension = dimension;
+  reportYear = latestOverviewReportYear(dimension.key);
+  previousYear = reportYear - 1;
+  trendYears = Array.from({ length: 5 }, (_, i) => reportYear - 4 + i);
+};
 
 // 活跃开发者修正：自 2025 年起，全球 GitHub 平台活跃开发者数量乘以 1.15（GitHub 口径修正）
 const GITHUB_ACTIVE_ADJUST_FROM_YEAR = 2025;
@@ -39,7 +71,7 @@ const GITHUB_ACTIVE_ADJUST_FACTOR = 1.15;
 // user_info 仅含 GitHub 平台用户，中国活跃开发者需补充 AtomGit 平台活跃用户总量的 80%（Gitee 不计入）
 const CN_EXTRA_PLATFORMS = ['AtomGit'];
 const CN_EXTRA_PLATFORM_RATIO = 0.8;
-// 中国开发者总量需在标签数据（InnovationGraph）基础上叠加 AtomGit、Gitee 平台用户去重总数（累计到年末）
+// 中国开发者总量需在标签数据（InnovationGraph）基础上叠加 AtomGit、Gitee 平台用户去重总数（累计到报表截止日）
 const CN_EXTRA_TOTAL_PLATFORMS = ['AtomGit', 'Gitee'];
 // 贡献度与影响力修正：自 2025 年起，排行/趋势数值统一乘以 1.15
 const OPENRANK_ADJUST_FROM_YEAR = 2025;
@@ -105,9 +137,9 @@ const ensureDir = (dir: string) => {
   if (!existsSync(dir)) mkdirSync(dir, { recursive: true });
 };
 
-/** 写出 JSON 文件，relPath 相对 OUTPUT_DIR。 */
+/** 写出 JSON 文件，relPath 相对当前导出维度的输出目录。 */
 const writeJSON = (relPath: string, obj: any) => {
-  const fullPath = join(OUTPUT_DIR, relPath);
+  const fullPath = join(currentDimension.outputDir, relPath);
   ensureDir(dirname(fullPath));
   writeFileSync(fullPath, JSON.stringify(obj));
 };
@@ -155,11 +187,26 @@ const rankAndSlice = (items: RankItem[]) =>
 const toTrend = (title: string, title_zh: string, map: Map<number, number>): Trend => ({
   title,
   title_zh,
-  labels: TREND_YEARS.map(String),
-  values: TREND_YEARS.map(y => round2(map.get(y) ?? 0)),
+  labels: trendYears.map(String),
+  values: trendYears.map(y => round2(map.get(y) ?? 0)),
 });
 
-const yearRange = (year: number) => ({ start: `${year}-01-01`, end: `${year + 1}-01-01` });
+/**
+ * 报表年度的左闭右开区间。
+ * half_year 的 2025 年为 [2024-07-01, 2025-07-01)，即 2024.7 至 2025.6。
+ */
+export const overviewYearRange = (dimension: OverviewTimeDimension, year: number) =>
+  dimension === 'half_year'
+    ? { start: `${year - 1}-07-01`, end: `${year}-07-01` }
+    : { start: `${year}-01-01`, end: `${year + 1}-01-01` };
+
+/** ClickHouse 中将日期映射到报表年度。 */
+export const overviewYearSql = (dimension: OverviewTimeDimension, dateColumn: string) =>
+  dimension === 'half_year' ? `toYear(addMonths(${dateColumn}, 6))` : `toYear(${dateColumn})`;
+
+const yearRange = (year: number) => overviewYearRange(currentDimension.key, year);
+const yearSql = (dateColumn: string) => overviewYearSql(currentDimension.key, dateColumn);
+const trendRange = () => ({ start: yearRange(trendYears[0]).start, end: yearRange(reportYear).end });
 
 /* --------------------------------------------------------------------------
  * 国家中英文 / alpha2 映射
@@ -190,7 +237,7 @@ WHERE type = 'Division-0'`);
  * 开发者数量（developers）
  * ------------------------------------------------------------------------ */
 
-interface DeveloperEntry {
+export interface DeveloperEntry {
   year: number;
   quarter: number;
   count: number;
@@ -232,17 +279,34 @@ WHERE type = 'Division-0' AND notEmpty(JSONExtractArrayRaw(data, 'developers'))`
   return result;
 };
 
-/** 指定年份开发者总量（取该年最大季度；若该年无数据则取 <= 该年的最近季度）。 */
-const developerCountForYear = (entries: DeveloperEntry[], year: number): number => {
+/**
+ * 指定报表年份的开发者累计总量。
+ * 自然年口径保持原逻辑：取该年最大季度，无数据时回退到更早年份的最近季度。
+ * 年中口径取目标年 Q2；尚未发布时按季度向前寻找最近快照。
+ */
+export const developerCountForOverviewYear = (
+  entries: DeveloperEntry[],
+  year: number,
+  dimension: OverviewTimeDimension,
+): number => {
+  if (dimension === 'half_year') {
+    const snapshotQuarter = 2;
+    const candidates = entries.filter(e => e.year * 10 + e.quarter <= year * 10 + snapshotQuarter);
+    if (!candidates.length) return 0;
+    return [...candidates].sort((a, b) => a.year * 10 + a.quarter - (b.year * 10 + b.quarter)).pop()!.count;
+  }
   const sameYear = entries.filter(e => e.year === year);
   if (sameYear.length) return Math.max(...sameYear.map(e => e.count));
   const before = entries.filter(e => e.year < year);
   if (!before.length) return 0;
-  const latest = before.sort((a, b) => a.year * 10 + a.quarter - (b.year * 10 + b.quarter)).pop()!;
+  const latest = [...before].sort((a, b) => a.year * 10 + a.quarter - (b.year * 10 + b.quarter)).pop()!;
   return latest.count;
 };
 
-const _cnExtraTotalCache = new Map<number, number>();
+const developerCountForYear = (entries: DeveloperEntry[], year: number): number =>
+  developerCountForOverviewYear(entries, year, currentDimension.key);
+
+const _cnExtraTotalCache = new Map<string, number>();
 
 /**
  * 贡献度/影响力中 AtomGit + Gitee 平台某年的 openrank 总量（无地理信息，全部计入中国）。
@@ -253,7 +317,7 @@ const cnExtraOpenrankForYear = async (
   table: 'normalized_community_openrank' | 'global_openrank',
   year: number,
 ): Promise<number> => {
-  const cacheKey = `${table}:${year}`;
+  const cacheKey = `${currentDimension.key}:${table}:${year}`;
   if (_cnExtraOpenrankCache.has(cacheKey)) return _cnExtraOpenrankCache.get(cacheKey)!;
   const platformList = CN_OPENRANK_EXTRA_PLATFORMS.map(p => `'${p}'`).join(', ');
   const { start, end } = yearRange(year);
@@ -268,20 +332,22 @@ WHERE platform IN (${platformList})${typeCond} AND created_at >= '${start}' AND 
 };
 
 /**
- * 中国开发者总量补充：AtomGit + Gitee 平台累计到指定年末的去重用户总数。
+ * 中国开发者总量补充：AtomGit + Gitee 平台累计到指定报表截止日的去重用户总数。
  * 两平台用户 ID 体系不同，无法跨平台识别同一人，故各平台内去重后相加，
  * 即 COUNT(DISTINCT (platform, actor_id))。这些平台无地理信息（user_info 仅含
  * GitHub 用户），直接按平台统计全量，仅计入中国。
  */
 const cnExtraTotalDevelopersForYear = async (year: number): Promise<number> => {
-  if (_cnExtraTotalCache.has(year)) return _cnExtraTotalCache.get(year)!;
+  const cacheKey = `${currentDimension.key}:${year}`;
+  if (_cnExtraTotalCache.has(cacheKey)) return _cnExtraTotalCache.get(cacheKey)!;
   const platformList = CN_EXTRA_TOTAL_PLATFORMS.map(p => `'${p}'`).join(', ');
+  const { end } = yearRange(year);
   const rows = await query<[string]>(`
 SELECT COUNT(DISTINCT (platform, actor_id)) AS c
 FROM events
-WHERE platform IN (${platformList}) AND created_at < '${year + 1}-01-01'`);
+WHERE platform IN (${platformList}) AND created_at < '${end}'`);
   const v = +(rows[0]?.[0] ?? 0);
-  _cnExtraTotalCache.set(year, v);
+  _cnExtraTotalCache.set(cacheKey, v);
   return v;
 };
 
@@ -290,12 +356,12 @@ const developerTotalRanking = async (): Promise<RankItem[]> => {
   const countries = await getCountryDevelopers();
   const items: RankItem[] = [];
   for (const c of countries) {
-    let cur = developerCountForYear(c.entries, NATURAL_YEAR);
-    let prev = developerCountForYear(c.entries, PREV_YEAR);
+    let cur = developerCountForYear(c.entries, reportYear);
+    let prev = developerCountForYear(c.entries, previousYear);
     // 中国在标签数据基础上叠加 AtomGit + Gitee 平台用户去重总数
     if (c.name === DRILL.CN.country) {
-      cur += await cnExtraTotalDevelopersForYear(NATURAL_YEAR);
-      prev += await cnExtraTotalDevelopersForYear(PREV_YEAR);
+      cur += await cnExtraTotalDevelopersForYear(reportYear);
+      prev += await cnExtraTotalDevelopersForYear(previousYear);
     }
     if (cur <= 0) continue;
     items.push({ identifier: c.identifier, name: c.name, name_zh: c.name_zh, code: c.alpha2, value: cur, change: cur - prev });
@@ -311,7 +377,7 @@ const developerTotalRanking = async (): Promise<RankItem[]> => {
 const cnExtraActiveByYear = async (start: string, end: string): Promise<Map<number, number>> => {
   const platformList = CN_EXTRA_PLATFORMS.map(p => `'${p}'`).join(', ');
   const rows = await query<[string, string]>(`
-SELECT toYear(created_at) AS y, COUNT(DISTINCT actor_id) AS c
+SELECT ${yearSql('created_at')} AS y, COUNT(DISTINCT actor_id) AS c
 FROM events
 WHERE platform IN (${platformList}) AND created_at >= '${start}' AND created_at < '${end}'
 GROUP BY y`);
@@ -323,7 +389,7 @@ GROUP BY y`);
 /** 全球 GitHub 平台各年活跃开发者去重总量（含无国家信息用户）。返回 year -> count。 */
 const githubActiveTotalByYear = async (start: string, end: string): Promise<Map<number, number>> => {
   const rows = await query<[string, string]>(`
-SELECT toYear(created_at) AS y, COUNT(DISTINCT actor_id) AS c
+SELECT ${yearSql('created_at')} AS y, COUNT(DISTINCT actor_id) AS c
 FROM events
 WHERE platform = 'GitHub' AND created_at >= '${start}' AND created_at < '${end}'
 GROUP BY y`);
@@ -343,11 +409,12 @@ GROUP BY y`);
  */
 const developerActiveRanking = async (): Promise<RankItem[]> => {
   const meta = await getCountryMeta();
+  const comparisonRange = { start: yearRange(previousYear).start, end: yearRange(reportYear).end };
   const rows = await query<[string, string, string, string]>(`
-SELECT u.country AS name, u.country_zh AS name_zh, toYear(e.created_at) AS y, COUNT(DISTINCT e.actor_id) AS c
+SELECT u.country AS name, u.country_zh AS name_zh, ${yearSql('e.created_at')} AS y, COUNT(DISTINCT e.actor_id) AS c
 FROM events e
 INNER JOIN user_info u ON e.platform = u.platform AND e.actor_id = u.id
-WHERE u.country != '' AND e.created_at >= '${PREV_YEAR}-01-01' AND e.created_at < '${NATURAL_YEAR + 1}-01-01'
+WHERE u.country != '' AND e.created_at >= '${comparisonRange.start}' AND e.created_at < '${comparisonRange.end}'
 GROUP BY u.country, u.country_zh, y`);
   // 各国 GitHub 活跃去重数（仅含有国家信息用户），以及各年度合计用于求占比
   const agg = new Map<string, { name_zh: string; cur: number; prev: number }>();
@@ -356,25 +423,25 @@ GROUP BY u.country, u.country_zh, y`);
   for (const [name, name_zh, y, c] of rows) {
     if (!name) continue;
     const entry = agg.get(name) ?? { name_zh: name_zh || name, cur: 0, prev: 0 };
-    if (+y === NATURAL_YEAR) { entry.cur = +c; curKnownTotal += +c; }
-    else if (+y === PREV_YEAR) { entry.prev = +c; prevKnownTotal += +c; }
+    if (+y === reportYear) { entry.cur = +c; curKnownTotal += +c; }
+    else if (+y === previousYear) { entry.prev = +c; prevKnownTotal += +c; }
     agg.set(name, entry);
   }
   // 基数：全球 GitHub 活跃去重总量（含无国家信息用户），自 2025 年起 ×1.15
-  const ghTotal = await githubActiveTotalByYear(`${PREV_YEAR}-01-01`, `${NATURAL_YEAR + 1}-01-01`);
-  const curBase = adjustGithubActive(ghTotal.get(NATURAL_YEAR) ?? 0, NATURAL_YEAR);
-  const prevBase = adjustGithubActive(ghTotal.get(PREV_YEAR) ?? 0, PREV_YEAR);
+  const ghTotal = await githubActiveTotalByYear(comparisonRange.start, comparisonRange.end);
+  const curBase = adjustGithubActive(ghTotal.get(reportYear) ?? 0, reportYear);
+  const prevBase = adjustGithubActive(ghTotal.get(previousYear) ?? 0, previousYear);
   // 各国估计值 = 占比 × 基数（将未知国家用户按占比分摊）
   for (const [, v] of agg) {
     v.cur = curKnownTotal > 0 ? (v.cur / curKnownTotal) * curBase : 0;
     v.prev = prevKnownTotal > 0 ? (v.prev / prevKnownTotal) * prevBase : 0;
   }
   // 中国额外补充 AtomGit 平台活跃用户总量的 80%（无地理数据，仅计入中国）
-  const cnExtra = await cnExtraActiveByYear(`${PREV_YEAR}-01-01`, `${NATURAL_YEAR + 1}-01-01`);
+  const cnExtra = await cnExtraActiveByYear(comparisonRange.start, comparisonRange.end);
   const cnEntry = agg.get(DRILL.CN.country);
   if (cnEntry) {
-    cnEntry.cur += (cnExtra.get(NATURAL_YEAR) ?? 0) * CN_EXTRA_PLATFORM_RATIO;
-    cnEntry.prev += (cnExtra.get(PREV_YEAR) ?? 0) * CN_EXTRA_PLATFORM_RATIO;
+    cnEntry.cur += (cnExtra.get(reportYear) ?? 0) * CN_EXTRA_PLATFORM_RATIO;
+    cnEntry.prev += (cnExtra.get(previousYear) ?? 0) * CN_EXTRA_PLATFORM_RATIO;
   }
   const items: RankItem[] = [];
   for (const [name, v] of agg) {
@@ -389,7 +456,7 @@ GROUP BY u.country, u.country_zh, y`);
 const developerTotalTrend = async (): Promise<Map<number, number>> => {
   const countries = await getCountryDevelopers();
   const map = new Map<number, number>();
-  for (const year of TREND_YEARS) {
+  for (const year of trendYears) {
     let total = 0;
     for (const c of countries) total += developerCountForYear(c.entries, year);
     // 全球总量中的中国部分叠加 AtomGit + Gitee 平台用户去重总数
@@ -408,27 +475,28 @@ const developerTotalTrend = async (): Promise<Map<number, number>> => {
  */
 const developerActiveTrend = async (countryName?: string): Promise<Map<number, number>> => {
   const map = new Map<number, number>();
+  const range = trendRange();
   if (countryName) {
     // 各国按年 GitHub 活跃去重数（仅含有国家信息用户），用于计算该国逐年占比
     const targetRows = await query<[string, string]>(`
-SELECT toYear(e.created_at) AS y, COUNT(DISTINCT e.actor_id) AS c
+SELECT ${yearSql('e.created_at')} AS y, COUNT(DISTINCT e.actor_id) AS c
 FROM events e
 INNER JOIN user_info u ON e.platform = u.platform AND e.actor_id = u.id
-WHERE u.country = '${countryName}' AND e.created_at >= '${TREND_RANGE.start}' AND e.created_at < '${TREND_RANGE.end}'
+WHERE u.country = '${countryName}' AND e.created_at >= '${range.start}' AND e.created_at < '${range.end}'
 GROUP BY y`);
     const knownRows = await query<[string, string]>(`
-SELECT toYear(e.created_at) AS y, COUNT(DISTINCT e.actor_id) AS c
+SELECT ${yearSql('e.created_at')} AS y, COUNT(DISTINCT e.actor_id) AS c
 FROM events e
 INNER JOIN user_info u ON e.platform = u.platform AND e.actor_id = u.id
-WHERE u.country != '' AND e.created_at >= '${TREND_RANGE.start}' AND e.created_at < '${TREND_RANGE.end}'
+WHERE u.country != '' AND e.created_at >= '${range.start}' AND e.created_at < '${range.end}'
 GROUP BY y`);
     const targetMap = new Map<number, number>();
     targetRows.forEach(([y, c]) => targetMap.set(+y, +c));
     const knownMap = new Map<number, number>();
     knownRows.forEach(([y, c]) => knownMap.set(+y, +c));
     // 基数：全球 GitHub 活跃去重总量（含无国家信息用户）
-    const ghTotal = await githubActiveTotalByYear(TREND_RANGE.start, TREND_RANGE.end);
-    for (const year of TREND_YEARS) {
+    const ghTotal = await githubActiveTotalByYear(range.start, range.end);
+    for (const year of trendYears) {
       const known = knownMap.get(year) ?? 0;
       const base = adjustGithubActive(ghTotal.get(year) ?? 0, year);
       const estimate = known > 0 ? ((targetMap.get(year) ?? 0) / known) * base : 0;
@@ -436,8 +504,8 @@ GROUP BY y`);
     }
     // 中国趋势额外补充 AtomGit 平台活跃用户总量的 80%（所有年份）
     if (countryName === DRILL.CN.country) {
-      const cnExtra = await cnExtraActiveByYear(TREND_RANGE.start, TREND_RANGE.end);
-      for (const year of TREND_YEARS) {
+      const cnExtra = await cnExtraActiveByYear(range.start, range.end);
+      for (const year of trendYears) {
         const extra = (cnExtra.get(year) ?? 0) * CN_EXTRA_PLATFORM_RATIO;
         if (extra > 0) map.set(year, (map.get(year) ?? 0) + extra);
       }
@@ -445,9 +513,9 @@ GROUP BY y`);
   } else {
     // 全球：跨平台去重总量 c，另单独统计 GitHub 去重数 gh；仅对 GitHub 部分自 2025 年起加成 15%
     const rows = await query<[string, string, string]>(`
-SELECT toYear(created_at) AS y, COUNT(DISTINCT actor_id) AS c, uniqExactIf(actor_id, platform = 'GitHub') AS gh
+SELECT ${yearSql('created_at')} AS y, COUNT(DISTINCT actor_id) AS c, uniqExactIf(actor_id, platform = 'GitHub') AS gh
 FROM events
-WHERE created_at >= '${TREND_RANGE.start}' AND created_at < '${TREND_RANGE.end}'
+WHERE created_at >= '${range.start}' AND created_at < '${range.end}'
 GROUP BY y
 ORDER BY y`);
     rows.forEach(([y, c, gh]) => {
@@ -492,14 +560,14 @@ const produceDevelopers = async () => {
         options: [
           col('#', ['rank'], 80),
           col('Country', ['name'], 300),
-          col(`Active Developers (${NATURAL_YEAR})`, ['value'], 300),
-          col(`Change vs ${PREV_YEAR}`, ['change'], 300),
+          col(`Active Developers (${reportYear})`, ['value'], 300),
+          col(`Change vs ${previousYear}`, ['change'], 300),
         ],
         options_zh: [
           col('#', ['rank'], 80),
           col('国家', ['name_zh'], 300),
-          col(`${NATURAL_YEAR}年活跃开发者数`, ['value'], 300),
-          col(`较${PREV_YEAR}年变化`, ['change'], 300),
+          col(`${reportYear}年活跃开发者数`, ['value'], 300),
+          col(`较${previousYear}年变化`, ['change'], 300),
         ],
         data: rankAndSlice(active),
       },
@@ -520,7 +588,7 @@ const produceDevelopers = async () => {
 /** GitHub 平台各年贡献度总量（含无国家信息用户）。返回 year -> value。 */
 const githubContributionTotalByYear = async (start: string, end: string): Promise<Map<number, number>> => {
   const rows = await query<[string, string]>(`
-SELECT toYear(created_at) AS y, SUM(openrank) AS value
+SELECT ${yearSql('created_at')} AS y, SUM(openrank) AS value
 FROM normalized_community_openrank
 WHERE platform = 'GitHub' AND created_at >= '${start}' AND created_at < '${end}'
 GROUP BY y`);
@@ -577,8 +645,8 @@ ORDER BY value DESC`);
 /** 排行榜：全球各国当年贡献度总量（同比绝对变化）。 */
 const contributionRanking = async (): Promise<RankItem[]> => {
   const meta = await getCountryMeta();
-  const cur = await contributionByCountry(NATURAL_YEAR);
-  const prev = await contributionByCountry(PREV_YEAR);
+  const cur = await contributionByCountry(reportYear);
+  const prev = await contributionByCountry(previousYear);
   const items: RankItem[] = [];
   for (const [name, c] of cur) {
     if (c.value <= 0) continue;
@@ -592,21 +660,22 @@ const contributionRanking = async (): Promise<RankItem[]> => {
 /** 趋势：贡献度总量五年趋势。countryName 为空时统计全球。 */
 const contributionTrend = async (countryName?: string): Promise<Map<number, number>> => {
   const map = new Map<number, number>();
+  const range = trendRange();
   if (countryName) {
     // 该国 GitHub 平台贡献度逐年值（仅含有国家信息用户）
     const targetRows = await query<[string, string]>(`
-SELECT toYear(n.created_at) AS y, SUM(n.openrank) AS value
+SELECT ${yearSql('n.created_at')} AS y, SUM(n.openrank) AS value
 FROM normalized_community_openrank n
 INNER JOIN user_info u ON n.platform = u.platform AND n.actor_id = u.id
-WHERE u.country = '${countryName}' AND n.created_at >= '${TREND_RANGE.start}' AND n.created_at < '${TREND_RANGE.end}'
+WHERE u.country = '${countryName}' AND n.created_at >= '${range.start}' AND n.created_at < '${range.end}'
 GROUP BY y
 ORDER BY y`);
     // 所有已知国家用户 GitHub 贡献度逐年总和
     const knownRows = await query<[string, string]>(`
-SELECT toYear(n.created_at) AS y, SUM(n.openrank) AS value
+SELECT ${yearSql('n.created_at')} AS y, SUM(n.openrank) AS value
 FROM normalized_community_openrank n
 INNER JOIN user_info u ON n.platform = u.platform AND n.actor_id = u.id
-WHERE u.country != '' AND n.created_at >= '${TREND_RANGE.start}' AND n.created_at < '${TREND_RANGE.end}'
+WHERE u.country != '' AND n.created_at >= '${range.start}' AND n.created_at < '${range.end}'
 GROUP BY y
 ORDER BY y`);
     const targetMap = new Map<number, number>();
@@ -614,8 +683,8 @@ ORDER BY y`);
     const knownMap = new Map<number, number>();
     knownRows.forEach(([y, value]) => knownMap.set(+y, +value));
     // 基数：GitHub 平台全量贡献度（含无国家信息用户）
-    const ghTotal = await githubContributionTotalByYear(TREND_RANGE.start, TREND_RANGE.end);
-    for (const year of TREND_YEARS) {
+    const ghTotal = await githubContributionTotalByYear(range.start, range.end);
+    for (const year of trendYears) {
       const known = knownMap.get(year) ?? 0;
       const base = ghTotal.get(year) ?? 0;
       const estimate = known > 0 ? ((targetMap.get(year) ?? 0) / known) * base : 0;
@@ -623,16 +692,16 @@ ORDER BY y`);
     }
     // 中国趋势额外叠加 AtomGit + Gitee 平台贡献度（无地理信息，全部计入中国）
     if (countryName === DRILL.CN.country) {
-      for (const year of TREND_YEARS) {
+      for (const year of trendYears) {
         const extra = await cnExtraOpenrankForYear('normalized_community_openrank', year);
         if (extra > 0) map.set(year, (map.get(year) ?? 0) + extra);
       }
     }
   } else {
     const rows = await query<[string, string]>(`
-SELECT toYear(created_at) AS y, SUM(openrank) AS value
+SELECT ${yearSql('created_at')} AS y, SUM(openrank) AS value
 FROM normalized_community_openrank
-WHERE created_at >= '${TREND_RANGE.start}' AND created_at < '${TREND_RANGE.end}'
+WHERE created_at >= '${range.start}' AND created_at < '${range.end}'
 GROUP BY y
 ORDER BY y`);
     rows.forEach(([y, value]) => map.set(+y, +value));
@@ -720,22 +789,22 @@ GROUP BY ${keyCols}`;
 /** 排行榜 1：全球各国开源项目影响力（同比绝对变化）。 */
 const influenceCountryRanking = async (): Promise<RankItem[]> => {
   const meta = await getCountryMeta();
-  const cur = yearRange(NATURAL_YEAR);
-  const prev = yearRange(PREV_YEAR);
+  const cur = yearRange(reportYear);
+  const prev = yearRange(previousYear);
   const curMap = await influenceByLabel(`fl.type = 'Division-0'`, false, cur.start, cur.end);
   const prevMap = await influenceByLabel(`fl.type = 'Division-0'`, false, prev.start, prev.end);
   // 中国叠加 AtomGit + Gitee 平台影响力总量（无地理信息，全部计入中国）
   const cnCur = curMap.get(DRILL.CN.country);
-  if (cnCur) cnCur.value += await cnExtraOpenrankForYear('global_openrank', NATURAL_YEAR);
+  if (cnCur) cnCur.value += await cnExtraOpenrankForYear('global_openrank', reportYear);
   const cnPrev = prevMap.get(DRILL.CN.country);
-  if (cnPrev) cnPrev.value += await cnExtraOpenrankForYear('global_openrank', PREV_YEAR);
+  if (cnPrev) cnPrev.value += await cnExtraOpenrankForYear('global_openrank', previousYear);
   const items: RankItem[] = [];
   for (const [name, c] of curMap) {
     if (c.value <= 0) continue;
     const p = prevMap.get(name)?.value ?? 0;
     // 自 2025 年起 ×1.15
-    const curValue = adjustOpenrank(c.value, NATURAL_YEAR);
-    const prevValue = adjustOpenrank(p, PREV_YEAR);
+    const curValue = adjustOpenrank(c.value, reportYear);
+    const prevValue = adjustOpenrank(p, previousYear);
     const cm = meta.get(name);
     items.push({ identifier: cm?.identifier ?? '', name, name_zh: c.name_zh, code: cm?.code ?? '', value: curValue, change: curValue - prevValue });
   }
@@ -744,8 +813,8 @@ const influenceCountryRanking = async (): Promise<RankItem[]> => {
 
 /** 排行榜 2：全球各企业开源项目影响力（同比绝对变化，附所属国家）。 */
 const influenceCompanyRanking = async (): Promise<RankItem[]> => {
-  const cur = yearRange(NATURAL_YEAR);
-  const prev = yearRange(PREV_YEAR);
+  const cur = yearRange(reportYear);
+  const prev = yearRange(previousYear);
   const curMap = await influenceByLabel(`fl.type = 'Company'`, true, cur.start, cur.end);
   const prevMap = await influenceByLabel(`fl.type = 'Company'`, true, prev.start, prev.end);
 
@@ -773,8 +842,8 @@ const influenceCompanyRanking = async (): Promise<RankItem[]> => {
     if (c.value <= 0) continue;
     const p = prevMap.get(id)?.value ?? 0;
     // 自 2025 年起 ×1.15
-    const curValue = adjustOpenrank(c.value, NATURAL_YEAR);
-    const prevValue = adjustOpenrank(p, PREV_YEAR);
+    const curValue = adjustOpenrank(c.value, reportYear);
+    const prevValue = adjustOpenrank(p, previousYear);
     const country = findCountry(id) ?? { country: '', country_zh: '' };
     items.push({
       identifier: id,
@@ -796,7 +865,7 @@ const influenceTrend = async (labelId?: string): Promise<Map<number, number>> =>
   // 全球（含中国）或中国下钻需叠加 AtomGit + Gitee 平台影响力（无地理信息，全部计入中国）
   const addCnExtra = !labelId || labelId === DRILL.CN.labelId;
   const map = new Map<number, number>();
-  for (const year of TREND_YEARS) {
+  for (const year of trendYears) {
     const { start, end } = yearRange(year);
     const yearMap = await influenceByLabel(baseCond, false, start, end);
     let total = 0;
@@ -896,12 +965,12 @@ const provinceDeveloperEstimateRanking = async (countryName: string, countryCode
   const provMeta = await getProvinceMeta(countryCode);
   const countries = await getCountryDevelopers();
   const country = countries.find(c => c.name === countryName);
-  let curTotal = country ? developerCountForYear(country.entries, NATURAL_YEAR) : 0;
-  let prevTotal = country ? developerCountForYear(country.entries, PREV_YEAR) : 0;
+  let curTotal = country ? developerCountForYear(country.entries, reportYear) : 0;
+  let prevTotal = country ? developerCountForYear(country.entries, previousYear) : 0;
   // 中国省级估算基数叠加 AtomGit + Gitee 平台用户去重总数
   if (countryCode === 'CN') {
-    curTotal += await cnExtraTotalDevelopersForYear(NATURAL_YEAR);
-    prevTotal += await cnExtraTotalDevelopersForYear(PREV_YEAR);
+    curTotal += await cnExtraTotalDevelopersForYear(reportYear);
+    prevTotal += await cnExtraTotalDevelopersForYear(previousYear);
   }
   const rows = await query<[string, string, string]>(`
 SELECT province AS name, province_zh AS name_zh, COUNT(DISTINCT id) AS cnt
@@ -938,26 +1007,27 @@ const provinceDeveloperActiveRanking = async (
   countryActiveTrend: Map<number, number>,
 ): Promise<RankItem[]> => {
   const provMeta = await getProvinceMeta(countryCode);
+  const comparisonRange = { start: yearRange(previousYear).start, end: yearRange(reportYear).end };
   const rows = await query<[string, string, string, string]>(`
-SELECT u.province AS name, u.province_zh AS name_zh, toYear(e.created_at) AS y, COUNT(DISTINCT e.actor_id) AS c
+SELECT u.province AS name, u.province_zh AS name_zh, ${yearSql('e.created_at')} AS y, COUNT(DISTINCT e.actor_id) AS c
 FROM events e
 INNER JOIN user_info u ON e.platform = u.platform AND e.actor_id = u.id
 WHERE u.country = '${countryName}' AND u.province != ''
-  AND e.created_at >= '${PREV_YEAR}-01-01' AND e.created_at < '${NATURAL_YEAR + 1}-01-01'
+  AND e.created_at >= '${comparisonRange.start}' AND e.created_at < '${comparisonRange.end}'
 GROUP BY u.province, u.province_zh, y`);
   const agg = new Map<string, { name_zh: string; cur: number; prev: number }>();
   for (const [name, name_zh, y, c] of rows) {
     if (!name) continue;
     const entry = agg.get(name) ?? { name_zh: name_zh || name, cur: 0, prev: 0 };
-    if (+y === NATURAL_YEAR) entry.cur = +c;
-    else if (+y === PREV_YEAR) entry.prev = +c;
+    if (+y === reportYear) entry.cur = +c;
+    else if (+y === previousYear) entry.prev = +c;
     agg.set(name, entry);
   }
   // 各省占比 × 国家活跃总量估算值（与国家级趋势同口径）
   const curProvTotal = [...agg.values()].reduce((s, v) => s + v.cur, 0);
   const prevProvTotal = [...agg.values()].reduce((s, v) => s + v.prev, 0);
-  const countryCur = countryActiveTrend.get(NATURAL_YEAR) ?? 0;
-  const countryPrev = countryActiveTrend.get(PREV_YEAR) ?? 0;
+  const countryCur = countryActiveTrend.get(reportYear) ?? 0;
+  const countryPrev = countryActiveTrend.get(previousYear) ?? 0;
   const items: RankItem[] = [];
   for (const [name, v] of agg) {
     const cur = curProvTotal > 0 ? (v.cur / curProvTotal) * countryCur : 0;
@@ -1010,12 +1080,12 @@ ORDER BY value DESC`);
 const provinceContributionRanking = async (countryName: string, countryCode: string): Promise<RankItem[]> => {
   const provMeta = await getProvinceMeta(countryCode);
   // 获取该国当年和上年的贡献度估计总量（与国家级排行榜同口径）
-  const countryMap = await contributionByCountry(NATURAL_YEAR);
-  const countryMapPrev = await contributionByCountry(PREV_YEAR);
+  const countryMap = await contributionByCountry(reportYear);
+  const countryMapPrev = await contributionByCountry(previousYear);
   const countryCurValue = countryMap.get(countryName)?.value ?? 0;
   const countryPrevValue = countryMapPrev.get(countryName)?.value ?? 0;
-  const cur = await provinceContributionByYear(countryName, NATURAL_YEAR, countryCurValue);
-  const prev = await provinceContributionByYear(countryName, PREV_YEAR, countryPrevValue);
+  const cur = await provinceContributionByYear(countryName, reportYear, countryCurValue);
+  const prev = await provinceContributionByYear(countryName, previousYear, countryPrevValue);
   const items: RankItem[] = [];
   for (const [name, c] of cur) {
     if (c.value <= 0) continue;
@@ -1029,23 +1099,23 @@ const provinceContributionRanking = async (countryName: string, countryCode: str
 /** 下钻排行榜：各省/州开源项目影响力（Division-1 标签，限定国家前缀，同比绝对变化）。 */
 const provinceInfluenceRanking = async (countryCode: string): Promise<RankItem[]> => {
   const provMeta = await getProvinceMeta(countryCode);
-  const cur = yearRange(NATURAL_YEAR);
-  const prev = yearRange(PREV_YEAR);
+  const cur = yearRange(reportYear);
+  const prev = yearRange(previousYear);
   const cond = `fl.type = 'Division-1' AND fl.id LIKE ':divisions/${countryCode}/%'`;
   const curMap = await influenceByLabel(cond, false, cur.start, cur.end);
   const prevMap = await influenceByLabel(cond, false, prev.start, prev.end);
   // 中国：将 AtomGit + Gitee 平台影响力总量按各省 GitHub 占比分配到各省
   if (countryCode === 'CN') {
-    distributeByProportion(curMap, await cnExtraOpenrankForYear('global_openrank', NATURAL_YEAR));
-    distributeByProportion(prevMap, await cnExtraOpenrankForYear('global_openrank', PREV_YEAR));
+    distributeByProportion(curMap, await cnExtraOpenrankForYear('global_openrank', reportYear));
+    distributeByProportion(prevMap, await cnExtraOpenrankForYear('global_openrank', previousYear));
   }
   const items: RankItem[] = [];
   for (const [name, c] of curMap) {
     if (c.value <= 0) continue;
     const p = prevMap.get(name)?.value ?? 0;
     // 自 2025 年起 ×1.15
-    const curValue = adjustOpenrank(c.value, NATURAL_YEAR);
-    const prevValue = adjustOpenrank(p, PREV_YEAR);
+    const curValue = adjustOpenrank(c.value, reportYear);
+    const prevValue = adjustOpenrank(p, previousYear);
     const pm = provMeta.get(name);
     items.push({ identifier: pm?.identifier ?? c.id, name, name_zh: c.name_zh, code: pm?.code ?? '', value: curValue, change: curValue - prevValue });
   }
@@ -1093,14 +1163,14 @@ const produceDrillDown = async (code: string, drill: { country: string; labelId:
           options: [
             col('#', ['rank'], 80),
             col(regionEn, ['name'], 300),
-            col(`Active Developers (${NATURAL_YEAR})`, ['value'], 300),
-            col(`Change vs ${PREV_YEAR}`, ['change'], 300),
+            col(`Active Developers (${reportYear})`, ['value'], 300),
+            col(`Change vs ${previousYear}`, ['change'], 300),
           ],
           options_zh: [
             col('#', ['rank'], 80),
             col(regionZh, ['name_zh'], 300),
-            col(`${NATURAL_YEAR}年活跃开发者数`, ['value'], 300),
-            col(`较${PREV_YEAR}年变化`, ['change'], 300),
+            col(`${reportYear}年活跃开发者数`, ['value'], 300),
+            col(`较${previousYear}年变化`, ['change'], 300),
           ],
           data: rankAndSlice(active),
         },
@@ -1188,7 +1258,7 @@ const produceDrillDown = async (code: string, drill: { country: string; labelId:
 /** 生成 meta.json：指标列表、下钻国家配置与全局概览统计。 */
 const produceMeta = async () => {
   logger.info('Producing metric: meta');
-  const { start, end } = yearRange(NATURAL_YEAR);
+  const { start, end } = yearRange(reportYear);
 
   // totalRecords：events 全表原始数据总量；totalRepos：全表去重仓库数（均不限年份）
   let totalRecords = 0;
@@ -1208,10 +1278,10 @@ FROM events`);
   try {
     const countries = await getCountryDevelopers();
     for (const c of countries) {
-      totalDevelopers += developerCountForYear(c.entries, NATURAL_YEAR);
+      totalDevelopers += developerCountForYear(c.entries, reportYear);
     }
     // 中国开发者总量叠加 AtomGit + Gitee 平台用户去重总数
-    totalDevelopers += await cnExtraTotalDevelopersForYear(NATURAL_YEAR);
+    totalDevelopers += await cnExtraTotalDevelopersForYear(reportYear);
   } catch (e) {
     logger.warn(`Failed to compute totalDevelopers: ${e}`);
   }
@@ -1225,7 +1295,7 @@ FROM events
 WHERE created_at >= '${start}' AND created_at < '${end}'`);
     const c = +(rows[0]?.[0] ?? 0);
     const gh = +(rows[0]?.[1] ?? 0);
-    const boost = NATURAL_YEAR >= GITHUB_ACTIVE_ADJUST_FROM_YEAR ? gh * (GITHUB_ACTIVE_ADJUST_FACTOR - 1) : 0;
+    const boost = reportYear >= GITHUB_ACTIVE_ADJUST_FROM_YEAR ? gh * (GITHUB_ACTIVE_ADJUST_FACTOR - 1) : 0;
     activeDevelopers = Math.round(c + boost);
   } catch (e) {
     logger.warn(`Failed to query activeDevelopers: ${e}`);
@@ -1242,6 +1312,13 @@ SELECT COUNT(*) FROM labels FINAL WHERE type = 'Division-0'`);
   }
 
   const output = {
+    timeDimension: currentDimension.key,
+    period: {
+      reportYear,
+      start,
+      endExclusive: end,
+      totalSnapshotQuarter: currentDimension.totalSnapshotQuarter ?? null,
+    },
     metrics: ['developers', 'contribution', 'influence'],
     drillDownCountries: {
       CN: { name: 'China', name_zh: '中国' },
@@ -1264,10 +1341,11 @@ SELECT COUNT(*) FROM labels FINAL WHERE type = 'Division-0'`);
  * 主流程
  * ------------------------------------------------------------------------ */
 
-(async () => {
-  try {
-    ensureDir(OUTPUT_DIR);
-    logger.info(`Output directory: ${OUTPUT_DIR}`);
+export const produceOpenShareOverview = async () => {
+  for (const dimension of EXPORT_DIMENSIONS) {
+    selectDimension(dimension);
+    ensureDir(dimension.outputDir);
+    logger.info(`Producing ${dimension.key} ${reportYear} data to: ${dimension.outputDir}`);
 
     await produceMeta();
     await produceDevelopers();
@@ -1278,10 +1356,14 @@ SELECT COUNT(*) FROM labels FINAL WHERE type = 'Division-0'`);
     for (const [code, drill] of Object.entries(DRILL)) {
       await produceDrillDown(code, drill);
     }
+  }
+};
 
-    logger.info('OpenShare overview data production completed.');
-  } catch (e) {
+if (require.main === module) {
+  produceOpenShareOverview().then(() => {
+    logger.info('OpenShare overview data production completed for all time dimensions.');
+  }).catch(e => {
     logger.error(`OpenShare overview data production failed: ${e}`);
     process.exit(1);
-  }
-})();
+  });
+}

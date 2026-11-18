@@ -1,7 +1,7 @@
 name: Model Context Protocol
 type: Project
-description: Reference server implementations for the Model Context Protocol ecosystem.
-description_zh: Model Context Protocol 生态的参考服务器实现集合。
+description: An open protocol for connecting AI applications to external tools and data sources, originally developed by Anthropic.
+description_zh: 由 Anthropic 发起的开放协议，用于连接 AI 应用与外部工具及数据源。
 data:
   platforms:
     - name: GitHub

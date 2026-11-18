@@ -1,0 +1,15 @@
+name: Code-first frameworks
+type: Tech-2
+data:
+  labels:
+    - ':companies/agno/agno'
+    - ':companies/copilotkit/copilotkit'
+    - ':companies/crewai/crewai'
+    - ':companies/daily/pipecat'
+    - ':companies/google/adk_python'
+    - ':companies/jetbrains/koog'
+    - ':companies/langchain/langchain'
+    - ':companies/livekit/agents'
+    - ':companies/microsoft/agent_framework'
+    - ':companies/pydantic/pydantic_ai'
+    - ':companies/vercel/ai'

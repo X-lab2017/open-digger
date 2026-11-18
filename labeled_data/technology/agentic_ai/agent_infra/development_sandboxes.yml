@@ -1,0 +1,8 @@
+name: Development sandboxes
+type: Tech-2
+data:
+  labels:
+    - ':companies/alibaba/opensandbox'
+    - ':companies/coder/coder'
+    - ':companies/daytona/daytona'
+    - ':foundations/linux_foundation/cncf/agent_sandbox'

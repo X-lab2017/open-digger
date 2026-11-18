@@ -9,3 +9,6 @@ data:
       orgs:
         - id: 264498616
           name: paperclipai
+      repos:
+        - id: 1170821064
+          name: paperclipai/paperclip

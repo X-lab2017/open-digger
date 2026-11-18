@@ -9,3 +9,6 @@ data:
       orgs:
         - id: 55443902
           name: openvinotoolkit
+      repos:
+        - id: 153097643
+          name: openvinotoolkit/openvino

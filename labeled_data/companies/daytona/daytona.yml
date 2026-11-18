@@ -9,3 +9,6 @@ data:
       orgs:
         - id: 130513197
           name: daytonaio
+      repos:
+        - id: 753490180
+          name: daytonaio/daytona

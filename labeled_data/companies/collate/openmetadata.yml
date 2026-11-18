@@ -9,3 +9,6 @@ data:
       orgs:
         - id: 86132257
           name: open-metadata
+      repos:
+        - id: 391740664
+          name: open-metadata/OpenMetadata

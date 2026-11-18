@@ -4,6 +4,7 @@ type: Company
 data:
   labels:
     - a2aproject
+    - a2ui
     - adk_python
     - angular
     - bazel

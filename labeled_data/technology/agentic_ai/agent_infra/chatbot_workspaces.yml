@@ -1,0 +1,7 @@
+name: Chatbot workspaces
+type: Tech-2
+data:
+  labels:
+    - ':projects/cherry_studio'
+    - ':projects/librechat'
+    - ':projects/open_webui'

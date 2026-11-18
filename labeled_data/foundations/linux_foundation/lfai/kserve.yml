@@ -9,3 +9,6 @@ data:
       orgs:
         - id: 83512434
           name: kserve
+      repos:
+        - id: 178075572
+          name: kserve/kserve

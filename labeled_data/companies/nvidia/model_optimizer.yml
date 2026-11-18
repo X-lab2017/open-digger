@@ -1,0 +1,9 @@
+name: Model Optimizer
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 790916393
+          name: NVIDIA/Model-Optimizer

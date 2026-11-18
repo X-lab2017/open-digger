@@ -2,6 +2,7 @@ name: OpenAI
 type: Company
 data:
   labels:
+    - agents_md
     - codex
     - openai_agents_python
     - parameter_golf

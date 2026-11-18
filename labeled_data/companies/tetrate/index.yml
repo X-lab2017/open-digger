@@ -1,0 +1,13 @@
+name: Tetrate
+description: A company providing application networking and service mesh technology for cloud-native systems.
+description_zh: 为云原生系统提供应用网络与服务网格技术的企业。
+type: Company
+data:
+  labels:
+    - agent_router
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 38483186
+          name: tetratelabs

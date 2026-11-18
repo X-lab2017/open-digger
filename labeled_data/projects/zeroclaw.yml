@@ -9,3 +9,6 @@ data:
       orgs:
         - id: 261820148
           name: zeroclaw-labs
+      repos:
+        - id: 1156956890
+          name: zeroclaw-labs/zeroclaw

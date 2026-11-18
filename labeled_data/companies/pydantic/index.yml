@@ -1,0 +1,5 @@
+name: Pydantic
+type: Company
+data:
+  labels:
+    - pydantic_ai

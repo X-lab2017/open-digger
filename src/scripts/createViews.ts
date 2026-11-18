@@ -243,7 +243,7 @@ SELECT
   argMax(issue_title, created_at) AS issue_title,
   argMax(body, created_at) AS body
 FROM events WHERE type = 'IssuesEvent' AND action = 'opened'
-AND toYear(created_at) >= 2025
+AND toYear(created_at) >= 2020
 AND (((platform, repo_id) IN (SELECT platform, entity_id FROM flatten_labels WHERE entity_type = 'Repo'))
    OR ((platform, org_id) IN (SELECT platform, entity_id FROM flatten_labels WHERE entity_type = 'Org')))
 GROUP BY id, platform

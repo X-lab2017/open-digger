@@ -9,3 +9,6 @@ data:
       orgs:
         - id: 47214749
           name: volcano-sh
+      repos:
+        - id: 175592968
+          name: volcano-sh/volcano

@@ -7,8 +7,10 @@ data:
     - cutlass
     - dynamo
     - megatron
+    - model_optimizer
     - nccl
     - nemo
+    - nemo_rl
     - tensorrt
     - transformer_engine
     - triton

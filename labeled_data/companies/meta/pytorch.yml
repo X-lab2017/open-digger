@@ -9,3 +9,6 @@ data:
       orgs:
         - id: 21003710
           name: pytorch
+      repos:
+        - id: 65600975
+          name: pytorch/pytorch

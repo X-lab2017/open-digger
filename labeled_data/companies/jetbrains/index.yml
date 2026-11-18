@@ -2,6 +2,7 @@ name: JetBrains
 type: Company
 data:
   labels:
+    - koog
     - kotlin
   platforms:
     - name: GitHub

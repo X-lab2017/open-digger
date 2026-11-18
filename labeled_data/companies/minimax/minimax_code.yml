@@ -1,0 +1,11 @@
+name: MiniMax Code
+type: Project
+description: An open-source terminal coding agent developed by MiniMax for building, testing, and iterating on software.
+description_zh: MiniMax 开发的开源终端编程智能体，用于软件构建、测试和迭代。
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 1256070689
+          name: MiniMax-AI/minimax-code

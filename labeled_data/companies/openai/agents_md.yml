@@ -1,0 +1,11 @@
+name: AGENTS.md
+description: An open format contributed by OpenAI for providing coding agents with repository-specific instructions.
+description_zh: OpenAI 贡献的开放格式，用于向编程智能体提供代码仓库专属的指导说明。
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 247225942
+          name: agentsmd

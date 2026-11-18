@@ -5,6 +5,7 @@ data:
   labels:
     - ':companies/amazon/bottlerocket'
     - ':companies/amazon/freertos'
+    - ':companies/didi/huatuo'
     - ':companies/huawei/openeuler'
     - ':companies/huawei/openharmony'
     - ':foundations/apache/nuttx'

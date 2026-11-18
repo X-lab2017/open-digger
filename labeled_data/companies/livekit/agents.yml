@@ -1,0 +1,9 @@
+name: LiveKit Agents
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 707441527
+          name: livekit/agents

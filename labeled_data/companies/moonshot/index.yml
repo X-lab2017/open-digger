@@ -3,6 +3,7 @@ type: Company
 data:
   labels:
     - kimi_cli
+    - kimi_code
   platforms:
     - name: GitHub
       type: Code Hosting

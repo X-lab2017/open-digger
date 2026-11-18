@@ -1,0 +1,14 @@
+name: MiniMax
+name_zh: 稀宇科技
+type: Company
+description: MiniMax is an artificial intelligence company developing multimodal foundation models and AI applications.
+description_zh: MiniMax 是一家研发多模态基础模型和人工智能应用的科技公司。
+data:
+  labels:
+    - minimax_code
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 194880281
+          name: MiniMax-AI

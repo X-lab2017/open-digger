@@ -1,0 +1,17 @@
+name: Model Infra
+type: Tech-1
+data:
+  labels:
+    - compute_and_scheduling
+    - data_governance
+    - data_integration
+    - data_labeling
+    - model_api_gateways
+    - post_train_rl_and_environments
+    - post_train_supervised_fine_tuning
+    - pre_train_compiler_and_accelerator
+    - pre_train_evaluation_and_observability
+    - pre_train_framework_and_parallel
+    - pre_train_robotics_infra
+    - serving_deploy
+    - serving_inference

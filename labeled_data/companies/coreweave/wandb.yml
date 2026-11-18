@@ -9,3 +9,6 @@ data:
       orgs:
         - id: 26401354
           name: wandb
+      repos:
+        - id: 86031674
+          name: wandb/wandb

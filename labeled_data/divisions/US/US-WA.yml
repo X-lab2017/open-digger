@@ -13,8 +13,10 @@ data:
   labels:
     - ':companies/amazon'
     - ':companies/bluesky'
+    - ':companies/copilotkit'
     - ':companies/microsoft'
     - ':companies/mifos'
+    - ':companies/stacklok'
     - ':companies/upbound'
     - ':companies/valve'
     - ':universities/uw'

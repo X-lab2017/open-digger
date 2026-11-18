@@ -1,0 +1,5 @@
+name: Daily
+type: Company
+data:
+  labels:
+    - pipecat

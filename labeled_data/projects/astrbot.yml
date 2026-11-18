@@ -9,3 +9,6 @@ data:
       orgs:
         - id: 197911947
           name: AstrBotDevs
+      repos:
+        - id: 575865240
+          name: AstrBotDevs/AstrBot

@@ -9,7 +9,9 @@ data:
     - coze
     - deer_flow
     - lark
+    - lark_cli
     - oceanengine
+    - openviking
     - seed
     - trae
     - verl

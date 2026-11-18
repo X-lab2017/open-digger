@@ -1,20 +1,20 @@
 from metrics.basic import QueryConfig, \
-                  getMergedConfig, \
-                  getRepoWhereClauseForNeo4j, \
-                  getTimeRangeWhereClauseForNeo4j, \
-                  getTimeRangeSumClauseForNeo4j, \
-                  getUserWhereClauseForNeo4j, \
-                  getRepoWhereClauseForClickhouse,\
-                  getUserWhereClauseForClickhouse,\
-                  getTimeRangeWhereClauseForClickhouse,\
-                  getGroupArrayInsertAtClauseForClickhouse,\
-                  getGroupTimeClauseForClickhouse,\
-                  getGroupIdClauseForClickhouse, \
-                  getInnerOrderAndLimit, \
-                  getOutterOrderAndLimit, \
-                  getTopLevelPlatform, \
-                  getInnerGroupBy, \
-                  processQueryResult
+    getMergedConfig, \
+    getRepoWhereClauseForNeo4j, \
+    getTimeRangeWhereClauseForNeo4j, \
+    getTimeRangeSumClauseForNeo4j, \
+    getUserWhereClauseForNeo4j, \
+    getRepoWhereClauseForClickhouse, \
+    getUserWhereClauseForClickhouse, \
+    getTimeRangeWhereClauseForClickhouse, \
+    getGroupArrayInsertAtClauseForClickhouse, \
+    getGroupTimeClauseForClickhouse, \
+    getGroupIdClauseForClickhouse, \
+    getInnerOrderAndLimit, \
+    getOutterOrderAndLimit, \
+    getTopLevelPlatform, \
+    getInnerGroupBy, \
+    processQueryResult
 from label_data_utils import getLabelData
 from db.neo4j_wrapper import Neo4jWrapper
 from db.clickhouse_wrapper import ClickhouseWrapper
@@ -25,7 +25,7 @@ from metrics.chaoss import chaossCodeChangeCommits, chaossBusFactor, chaossIssue
     chaossIssueResponseTime, chaossChangeRequestsAcceptanceRatio, \
     chaossChangeRequestResolutionDuration, chaossChangeRequestResponseTime, chaossIssueAge, chaossChangeRequestAge, chaossInactiveContributors, \
     __chaossActiveDatesAndTimes as chaossActiveDatesAndTimes, chaossRepoActiveDatesAndTimes, chaossUserActiveDatesAndTimes
-    # chaossCodeChangeLines, chaossTechnicalFork, chaossChangeRequestsDuration, chaossIssuesAndChangeRequestActive  # todo: define these functions in chaoss.py
+# chaossCodeChangeLines, chaossTechnicalFork, chaossChangeRequestsDuration, chaossIssuesAndChangeRequestActive  # todo: define these functions in chaoss.py
 
 # todo: define the functions [repoStars, repoIssueComments, repoParticipants, userEquivalentTimeZone, contributorEmailSuffixes]
 
@@ -134,15 +134,21 @@ def getUserOpenrank(config):
     calType = 'open_rank'
     userWhereClause = getUserWhereClauseForNeo4j(config)
     timeWhereClause = getTimeRangeWhereClauseForNeo4j(config, 'u')
-    timeActivityClause = getTimeRangeSumClauseForNeo4j(config, 'u.{}'.format(calType))
-    query = 'MATCH (u:User) WHERE {} {} RETURN u.login AS user_login, [{}] AS {} ORDER BY {} {} {};'.format(userWhereClause +' AND ' if userWhereClause else '', timeWhereClause, ','.join(timeActivityClause), calType, calType, config.get('order'), 'LIMIT {}'.format(config.get('limit')) if config.get('limit') > 0 else '')
+    timeActivityClause = getTimeRangeSumClauseForNeo4j(
+        config, 'u.{}'.format(calType))
+    query = 'MATCH (u:User) WHERE {} {} RETURN u.login AS user_login, [{}] AS {} ORDER BY {} {} {};'.format(userWhereClause + ' AND ' if userWhereClause else '', timeWhereClause, ','.join(
+        timeActivityClause), calType, calType, config.get('order'), 'LIMIT {}'.format(config.get('limit')) if config.get('limit') > 0 else '')
     return neo4j.query(query)
+
 
 def getRepoActivity(config):
     config = getMergedConfig(config)
-    whereClauses = ["type IN ('IssuesEvent', 'IssueCommentEvent', 'PullRequestEvent', 'PullRequestReviewCommentEvent')"] # specify types to reduce memory usage and calculation
+    # specify types to reduce memory usage and calculation
+    whereClauses = [
+        "type IN ('IssuesEvent', 'IssueCommentEvent', 'PullRequestEvent', 'PullRequestReviewCommentEvent')"]
     repoWhereClause = getRepoWhereClauseForClickhouse(config)
-    if repoWhereClause: whereClauses.append(repoWhereClause)
+    if repoWhereClause:
+        whereClauses.append(repoWhereClause)
     whereClauses.append(getTimeRangeWhereClauseForClickhouse(config))
     sql = "SELECT id, argMax(name, time) AS name, \
     {}, \
@@ -152,14 +158,19 @@ def getRepoActivity(config):
     {}, \
     {} \
 FROM \
-(".format(getGroupArrayInsertAtClauseForClickhouse(config, { 'key': 'activity', 'defaultValue': '0' }),
-            getGroupArrayInsertAtClauseForClickhouse(config, { 'key': 'issue_comment', 'defaultValue': '0' }),
-            getGroupArrayInsertAtClauseForClickhouse(config, { 'key': 'open_issue', 'defaultValue': '0' }),
-            getGroupArrayInsertAtClauseForClickhouse(config, { 'key': 'open_pull', 'defaultValue': '0' }),
-            getGroupArrayInsertAtClauseForClickhouse(config, { 'key': 'review_comment', 'defaultValue': '0' }),
-            getGroupArrayInsertAtClauseForClickhouse(config, { 'key': 'merged_pull', 'defaultValue': '0' }),
-            ) + \
-"SELECT \
+(".format(getGroupArrayInsertAtClauseForClickhouse(config, {'key': 'activity', 'defaultValue': '0'}),
+          getGroupArrayInsertAtClauseForClickhouse(
+              config, {'key': 'issue_comment', 'defaultValue': '0'}),
+          getGroupArrayInsertAtClauseForClickhouse(
+              config, {'key': 'open_issue', 'defaultValue': '0'}),
+          getGroupArrayInsertAtClauseForClickhouse(
+              config, {'key': 'open_pull', 'defaultValue': '0'}),
+          getGroupArrayInsertAtClauseForClickhouse(
+              config, {'key': 'review_comment', 'defaultValue': '0'}),
+          getGroupArrayInsertAtClauseForClickhouse(
+              config, {'key': 'merged_pull', 'defaultValue': '0'}),
+          ) + \
+        "SELECT \
     {}, \
     {}, \
     ROUND(SUM(activity), 2) AS activity, \
@@ -170,16 +181,16 @@ FROM \
     SUM(merged_pull) AS merged_pull \
     FROM \
     (".format(getGroupTimeClauseForClickhouse(config, 'month'), getGroupIdClauseForClickhouse(config, 'repo', 'month')) + \
-    "SELECT \
+        "SELECT \
         toStartOfMonth(created_at) AS month, \
         repo_id, argMax(repo_name, created_at) AS repo_name, \
         org_id, argMax(org_login, created_at) AS org_login, \
-        if(type='PullRequestEvent' AND action='closed' AND pull_merged=1, issue_author_id, actor_id) AS actor_id, \
+        if(type='PullRequestEvent' AND ((action='closed' AND pull_merged=1) OR (action='merged')), issue_author_id, actor_id) AS actor_id, \
         countIf(type='IssueCommentEvent' AND action='created') AS issue_comment, \
         countIf(type='IssuesEvent' AND action='opened')  AS open_issue, \
         countIf(type='PullRequestEvent' AND action='opened') AS open_pull, \
         countIf(type='PullRequestReviewCommentEvent' AND action='created') AS review_comment, \
-        countIf(type='PullRequestEvent' AND action='closed' AND pull_merged=1) AS merged_pull, \
+        countIf(type='PullRequestEvent' AND ((action='closed' AND pull_merged=1) OR (action='merged'))) AS merged_pull, \
         sqrt({}*issue_comment + {}*open_issue + {}*open_pull + {}*review_comment + {}*merged_pull) AS activity \
     FROM opensource.gh_events \
     WHERE {} \
@@ -191,33 +202,39 @@ FROM \
 ) \
 GROUP BY id \
 ORDER BY activity[-1] {} \
-FORMAT JSONCompact".format(Index.ISSUE_COMMENT_WEIGHT, Index.OPEN_ISSUE_WEIGHT, 
-                            Index.OPEN_PULL_WEIGHT, Index.REVIEW_COMMENT_WEIGHT, Index.PULL_MERGED_WEIGHT,
-                            ' AND '.join(whereClauses),
-                            'ORDER BY activity DESC LIMIT {} BY time'.format(config.get('limit')) if config.get('limit') > 0 else '',
-                            config.get('order')
-                            ) # use JSONCompact to reduce network I/O
+FORMAT JSONCompact".format(Index.ISSUE_COMMENT_WEIGHT, Index.OPEN_ISSUE_WEIGHT,
+                           Index.OPEN_PULL_WEIGHT, Index.REVIEW_COMMENT_WEIGHT, Index.PULL_MERGED_WEIGHT,
+                           ' AND '.join(whereClauses),
+                           'ORDER BY activity DESC LIMIT {} BY time'.format(
+                               config.get('limit')) if config.get('limit') > 0 else '',
+                           config.get('order')
+                           )  # use JSONCompact to reduce network I/O
 
     result = clickhouse.query(sql)
+
     def return_row(row):
         id, name, activity, issue_comment, open_issue, open_pull, review_comment, merged_pull = row
         return {
-        'id':id,
-        'name':name,
-        'activity':activity,
-        'issue_comment':issue_comment,
-        'open_issue':open_issue,
-        'open_pull':open_pull,
-        'review_comment':review_comment,
-        'merged_pull':merged_pull,
+            'id': id,
+            'name': name,
+            'activity': activity,
+            'issue_comment': issue_comment,
+            'open_issue': open_issue,
+            'open_pull': open_pull,
+            'review_comment': review_comment,
+            'merged_pull': merged_pull,
         }
     return list(map(return_row, result))
 
-def getUserActivity(config = QueryConfig, withBot = True):
+
+def getUserActivity(config=QueryConfig, withBot=True):
     config = getMergedConfig(config)
-    whereClauses = ["type IN ('IssuesEvent', 'IssueCommentEvent', 'PullRequestEvent', 'PullRequestReviewCommentEvent')"] # specify types to reduce memory usage and calculation
+    # specify types to reduce memory usage and calculation
+    whereClauses = [
+        "type IN ('IssuesEvent', 'IssueCommentEvent', 'PullRequestEvent', 'PullRequestReviewCommentEvent')"]
     userWhereClause = getUserWhereClauseForClickhouse(config)
-    if userWhereClause != None: whereClauses.append(userWhereClause)
+    if userWhereClause != None:
+        whereClauses.append(userWhereClause)
     whereClauses.append(getTimeRangeWhereClauseForClickhouse(config))
     sql = "SELECT id, argMax(name, time) AS name, \
 {}, \
@@ -227,14 +244,19 @@ def getUserActivity(config = QueryConfig, withBot = True):
 {}, \
 {} \
 FROM \
-(".format(getGroupArrayInsertAtClauseForClickhouse(config, { 'key': 'activity', 'defaultValue': '0' }),
-        getGroupArrayInsertAtClauseForClickhouse(config, { 'key': 'issue_comment', 'defaultValue': '0' }),
-        getGroupArrayInsertAtClauseForClickhouse(config, { 'key': 'open_issue', 'defaultValue': '0' }),
-        getGroupArrayInsertAtClauseForClickhouse(config, { 'key': 'open_pull', 'defaultValue': '0' }),
-        getGroupArrayInsertAtClauseForClickhouse(config, { 'key': 'review_comment', 'defaultValue': '0' }),
-        getGroupArrayInsertAtClauseForClickhouse(config, { 'key': 'merged_pull', 'defaultValue': '0' })
-        ) + \
-"SELECT \
+(".format(getGroupArrayInsertAtClauseForClickhouse(config, {'key': 'activity', 'defaultValue': '0'}),
+          getGroupArrayInsertAtClauseForClickhouse(
+              config, {'key': 'issue_comment', 'defaultValue': '0'}),
+          getGroupArrayInsertAtClauseForClickhouse(
+              config, {'key': 'open_issue', 'defaultValue': '0'}),
+          getGroupArrayInsertAtClauseForClickhouse(
+              config, {'key': 'open_pull', 'defaultValue': '0'}),
+          getGroupArrayInsertAtClauseForClickhouse(
+              config, {'key': 'review_comment', 'defaultValue': '0'}),
+          getGroupArrayInsertAtClauseForClickhouse(
+              config, {'key': 'merged_pull', 'defaultValue': '0'})
+          ) + \
+        "SELECT \
     {}, \
     {}, \
     ROUND(SUM(activity), 2) AS activity, \
@@ -245,16 +267,16 @@ FROM \
     SUM(merged_pull) AS merged_pull \
 FROM \
 (".format(getGroupTimeClauseForClickhouse(config, 'month'), getGroupIdClauseForClickhouse(config, 'actor', 'month')) + \
-    "SELECT \
+        "SELECT \
     toStartOfMonth(created_at) AS month, \
     repo_id, \
-    if(type='PullRequestEvent' AND action='closed' AND pull_merged=1, issue_author_id, actor_id) AS actor_id, \
-    argMax(if(type='PullRequestEvent' AND action='closed' AND pull_merged=1, issue_author_login, actor_login), created_at) AS actor_login, \
+    if(type='PullRequestEvent' AND ((action='closed' AND pull_merged=1) OR (action='merged')), issue_author_id, actor_id) AS actor_id, \
+    argMax(if(type='PullRequestEvent' AND ((action='closed' AND pull_merged=1) OR (action='merged')), issue_author_login, actor_login), created_at) AS actor_login, \
     countIf(type='IssueCommentEvent' AND action='created') AS issue_comment, \
     countIf(type='IssuesEvent' AND action='opened')  AS open_issue, \
     countIf(type='PullRequestEvent' AND action='opened') AS open_pull, \
     countIf(type='PullRequestReviewCommentEvent' AND action='created') AS review_comment, \
-    countIf(type='PullRequestEvent' AND action='closed' AND pull_merged=1) AS merged_pull, \
+    countIf(type='PullRequestEvent' AND ((action='closed' AND pull_merged=1) OR (action='merged'))) AS merged_pull, \
     sqrt({}*issue_comment + {}*open_issue + {}*open_pull + {}*review_comment + {}*merged_pull) AS activity \
     FROM opensource.gh_events \
     WHERE {} \
@@ -267,24 +289,28 @@ GROUP BY id, time \
 GROUP BY id \
 ORDER BY activity[-1] {} \
 FORMAT JSONCompact".format(Index.ISSUE_COMMENT_WEIGHT, Index.OPEN_ISSUE_WEIGHT, Index.OPEN_PULL_WEIGHT, Index.REVIEW_COMMENT_WEIGHT, Index.PULL_MERGED_WEIGHT,
-                        ' AND '.join(whereClauses), '' if withBot else 'AND actor_login NOT LIKE \'%[bot]\'',
-                        'ORDER BY activity DESC LIMIT {} BY time'.format(config.get('limit')) if config.get('limit') > 0 else '',
-                        config.get('order'))
+                           ' AND '.join(
+                               whereClauses), '' if withBot else 'AND actor_login NOT LIKE \'%[bot]\'',
+                           'ORDER BY activity DESC LIMIT {} BY time'.format(
+                               config.get('limit')) if config.get('limit') > 0 else '',
+                           config.get('order'))
 
     result = clickhouse.query(sql)
+
     def return_row(row):
         id, name, activity, issue_comment, open_issue, open_pull, review_comment, merged_pull = row
         return {
-        'id':id,
-        'name':name,
-        'activity':activity,
-        'issue_comment':issue_comment,
-        'open_issue':open_issue,
-        'open_pull':open_pull,
-        'review_comment':review_comment,
-        'merged_pull':merged_pull,
+            'id': id,
+            'name': name,
+            'activity': activity,
+            'issue_comment': issue_comment,
+            'open_issue': open_issue,
+            'open_pull': open_pull,
+            'review_comment': review_comment,
+            'merged_pull': merged_pull,
         }
     return list(map(return_row, result))
+
 
 def getAttention(config: QueryConfig):
     """_summary_
@@ -295,17 +321,18 @@ def getAttention(config: QueryConfig):
     config = getMergedConfig(config)
     whereClauses = ["type IN (\'WatchEvent\', \'ForkEvent\')"]
     repoWhereClause = getRepoWhereClauseForClickhouse(config)
-    if repoWhereClause != None: whereClauses.append(repoWhereClause)
+    if repoWhereClause != None:
+        whereClauses.append(repoWhereClause)
     whereClauses.append(getTimeRangeWhereClauseForClickhouse(config))
-    
+
     sql = ' \
     SELECT \
     id, \
     argMax(name, time) AS name, \
     {} \
     FROM \
-    ('.format(getGroupArrayInsertAtClauseForClickhouse(config, { 'key': 'attention' })) + \
-    'SELECT \
+    ('.format(getGroupArrayInsertAtClauseForClickhouse(config, {'key': 'attention'})) + \
+        'SELECT \
         {}, \
         {}, \
         countIf(type=\'WatchEvent\') AS stars, \
@@ -318,16 +345,18 @@ def getAttention(config: QueryConfig):
     ) \
     GROUP BY id \
     ORDER BY attention[-1] {} \
-    FORMAT JSONCompact'.format(getGroupTimeClauseForClickhouse(config), getGroupIdClauseForClickhouse(config), ' AND '.join(whereClauses), 
-                            'ORDER BY attention DESC LIMIT {} BY time'.format(config.get('limit')) if config.get('limit') > 0 else '', 
-                            config.get('order'))
+    FORMAT JSONCompact'.format(getGroupTimeClauseForClickhouse(config), getGroupIdClauseForClickhouse(config), ' AND '.join(whereClauses),
+                               'ORDER BY attention DESC LIMIT {} BY time'.format(
+                                   config.get('limit')) if config.get('limit') > 0 else '',
+                               config.get('order'))
 
     result = clickhouse.query(sql)
+
     def getResult(row):
         id, name, attention = row
         return {
-        'id':id,
-        'name':name,
-        'attention':attention,
+            'id': id,
+            'name': name,
+            'attention': attention,
         }
     return list(map(getResult, result))

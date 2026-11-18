@@ -9,3 +9,6 @@ data:
       orgs:
         - id: 71840468
           name: warpdotdev
+      repos:
+        - id: 384219990
+          name: warpdotdev/warp

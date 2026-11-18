@@ -9,3 +9,6 @@ data:
       orgs:
         - id: 136984999
           name: vllm-project
+      repos:
+        - id: 599547518
+          name: vllm-project/vllm
