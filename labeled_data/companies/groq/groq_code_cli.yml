@@ -1,0 +1,13 @@
+# Sources verified on 2026-11-18:
+# https://github.com/build-with-groq/groq-code-cli
+name: 'Groq Code CLI'
+description: 'A lightweight, customizable coding agent released by Groq, using models served through the Groq API in a command-line interface.'
+description_zh: 'Groq 发布的轻量可定制编程智能体，通过命令行界面使用 Groq API 提供的模型。'
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 1028704198
+          name: build-with-groq/groq-code-cli

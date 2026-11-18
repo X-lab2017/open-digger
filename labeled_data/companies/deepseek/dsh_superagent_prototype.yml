@@ -1,0 +1,13 @@
+# Sources verified on 2026-11-18:
+# https://github.com/deepseek-ai/dsh-superagent-prototype
+name: 'DeepSeek Superagent Prototype'
+description: 'A proactive coding-agent research prototype released by the DeepSeek team as a bundle for DeepSeek Harness, handling repository tasks from GitHub and optional Feishu messages. It is not an official DeepSeek product.'
+description_zh: 'DeepSeek 团队发布的主动式编程智能体研究原型，以 DeepSeek Harness 扩展包处理来自 GitHub 和可选飞书消息的仓库任务，并非 DeepSeek 正式产品。'
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 1440705679
+          name: deepseek-ai/dsh-superagent-prototype

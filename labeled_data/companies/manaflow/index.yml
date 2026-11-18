@@ -1,0 +1,16 @@
+# Sources verified on 2026-11-18:
+# https://www.ycombinator.com/companies/cmux
+# https://github.com/manaflow-ai/cmux/blob/main/LICENSE
+name: 'Manaflow'
+description: 'A software company developing terminal applications and tools for AI-assisted software development.'
+description_zh: '研发终端应用及人工智能辅助软件开发工具的软件企业。'
+type: Company
+data:
+  labels:
+    - cmux
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 171392238
+          name: manaflow-ai

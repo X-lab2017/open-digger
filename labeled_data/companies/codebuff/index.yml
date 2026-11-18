@@ -1,0 +1,16 @@
+# Sources verified on 2026-11-18:
+# https://www.ycombinator.com/companies/freebuff
+# https://github.com/CodebuffAI
+name: 'Freebuff'
+description: 'A software company providing AI-assisted coding and productivity applications.'
+description_zh: '提供人工智能辅助编程与生产力应用的软件企业。'
+type: Company
+data:
+  labels:
+    - freebuff
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 189203002
+          name: CodebuffAI

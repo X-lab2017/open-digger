@@ -1,0 +1,19 @@
+# Sources verified on 2026-11-18:
+# https://groq.com/
+# https://lda.gov/filings/public/filing/510aaf7b-c36b-4f47-ad1d-abc5e227b5e4/print/
+# https://groq.com/privacy-policy
+name: 'Groq'
+description: 'An artificial intelligence infrastructure company providing inference computing services.'
+description_zh: '提供推理计算服务的人工智能基础设施企业。'
+type: Company
+data:
+  labels:
+    - groq_code_cli
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 7464134
+          name: groq
+        - id: 221595922
+          name: build-with-groq

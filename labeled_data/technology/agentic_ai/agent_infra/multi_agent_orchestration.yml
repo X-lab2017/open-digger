@@ -2,8 +2,13 @@ name: Multi-agent orchestration
 type: Tech-2
 data:
   labels:
+    - ':companies/amazon/cli_agent_orchestrator'
     - ':companies/bytedance/deer_flow'
+    - ':companies/jcode/jcode'
     - ':companies/mastra/mastra'
+    - ':companies/openai/symphony'
+    - ':companies/paradev/paradev'
     - ':companies/stablyai/orca'
     - ':projects/multica'
     - ':projects/paperclip'
+    - ':universities/hku/deepcode'

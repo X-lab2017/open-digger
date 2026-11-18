@@ -1,0 +1,16 @@
+# Sources verified on 2026-11-18:
+# https://mistral.ai/
+# https://www.wipo.int/amc/en/domains/decisions/pdf/2026/d2026-1349.pdf
+name: 'Mistral AI'
+description: 'An artificial intelligence company developing foundation models and AI software services.'
+description_zh: '研发基础模型并提供人工智能软件服务的企业。'
+type: Company
+data:
+  labels:
+    - mistral_vibe
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 132372032
+          name: mistralai

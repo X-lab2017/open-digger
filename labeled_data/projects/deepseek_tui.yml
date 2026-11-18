@@ -1,11 +1,15 @@
-name: DeepSeek TUI
+# Sources verified on 2026-11-18:
+# https://github.com/codewhale-hq/Codewhale
+# https://codewhale.net/en
+# Keep the existing label identifier and stable repository ID after the rename.
+name: 'Codewhale'
+description: 'An open-source terminal coding agent written in Rust, formerly DeepSeek TUI, with support for multiple model providers and collaborating agents.'
+description_zh: '使用 Rust 编写的开源终端编程智能体，原名 DeepSeek TUI，支持多种模型服务及多智能体协作。'
 type: Project
-description: Coding agent for DeepSeek models that runs in your terminal.
-description_zh: 在终端中运行的 DeepSeek 模型编程助手。
 data:
   platforms:
     - name: GitHub
       type: Code Hosting
       repos:
         - id: 1137711311
-          name: Hmbown/DeepSeek-TUI
+          name: codewhale-hq/Codewhale

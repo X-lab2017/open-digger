@@ -1,0 +1,14 @@
+# Sources verified on 2026-11-18:
+# https://github.com/1jehuang/jcode
+# https://www.ycombinator.com/companies/jcode
+name: 'Jcode'
+description: 'An open-source Rust coding agent created by Jeremy Huang at Jcode, with terminal interaction and support for collaborating agents.'
+description_zh: 'Jcode 创始人 Jeremy Huang 开发的开源 Rust 编程智能体，提供终端交互并支持多个智能体协作。'
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 1128204614
+          name: 1jehuang/jcode

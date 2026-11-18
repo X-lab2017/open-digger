@@ -8,6 +8,7 @@ data:
     - aws_distro_for_opentelemetry
     - babelfish_for_postgresql
     - bottlerocket
+    - cli_agent_orchestrator
     - eks_distro
     - firecracker
     - freertos

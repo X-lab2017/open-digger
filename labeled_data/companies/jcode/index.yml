@@ -1,0 +1,12 @@
+# Sources verified on 2026-11-18:
+# https://www.ycombinator.com/companies/jcode
+# https://jcode.sh/
+# The official repository is hosted by founder 1jehuang (GitHub type: User).
+# No verified company GitHub organization; do not classify the personal account as an org.
+name: 'Jcode'
+description: 'A software company developing AI coding tools for software engineers.'
+description_zh: '面向软件工程师研发人工智能编程工具的软件企业。'
+type: Company
+data:
+  labels:
+    - jcode

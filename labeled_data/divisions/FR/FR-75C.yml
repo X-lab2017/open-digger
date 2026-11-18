@@ -9,3 +9,6 @@ meta:
     - 75c
     - paris metropolitan collectivity with special status
   category: PROVINCE
+data:
+  labels:
+    - ':companies/mistral_ai'

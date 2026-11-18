@@ -3,9 +3,15 @@ type: Tech-2
 data:
   labels:
     - ':communities/herdr/herdr'
+    - ':companies/amazon/cli_agent_orchestrator'
     - ':companies/deepseek/deepseek_harness'
+    - ':companies/deepseek/dsh_superagent_prototype'
     - ':companies/github/spec_kit'
+    - ':companies/manaflow/cmux'
+    - ':companies/openai/symphony'
+    - ':companies/paradev/paradev'
     - ':companies/pingdotgg/t3code'
+    - ':companies/zhipu/zcode'
     - ':projects/cc_switch'
     - ':projects/everything_claude_code'
     - ':projects/oh_my_opencode'

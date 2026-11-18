@@ -9,6 +9,7 @@ type: Company
 data:
   labels:
     - open_autoglm
+    - zcode
   platforms:
     - name: GitHub
       type: Code Hosting

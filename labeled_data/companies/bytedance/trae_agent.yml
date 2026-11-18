@@ -1,0 +1,14 @@
+# Sources verified on 2026-11-18:
+# https://github.com/bytedance/trae-agent
+# https://arxiv.org/abs/2507.23370
+name: 'Trae Agent'
+description: 'An open-source software engineering agent developed by ByteDance, with a command-line interface and support for multiple model providers.'
+description_zh: '字节跳动开发的开源软件工程智能体，提供命令行界面并支持多种模型服务。'
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 1001452682
+          name: bytedance/trae-agent
