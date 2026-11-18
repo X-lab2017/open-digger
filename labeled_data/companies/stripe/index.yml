@@ -1,6 +1,7 @@
 # Sources verified on 2026-11-18:
 # https://stripe.com/ie/newsroom/information
 # Stripe lists dual headquarters in San Francisco and Dublin; the California link represents its San Francisco headquarters.
+# https://github.com/stripe
 name: Stripe
 description: 'A financial infrastructure company providing payment processing and related business software.'
 description_zh: '提供支付处理及相关企业软件的金融基础设施企业。'
@@ -9,3 +10,9 @@ data:
   labels:
     - stripe_cli
     - stripe_sdks
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 856813
+          name: stripe

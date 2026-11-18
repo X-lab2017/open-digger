@@ -1,5 +1,6 @@
 # Sources verified on 2026-11-18:
 # https://wechat.dfrobot.com.cn/article-56.html
+# https://github.com/DFRobot
 name: DFRobot
 name_zh: 智位机器人
 description: 'A company developing robotics, electronics, and programming education products.'
@@ -8,3 +9,9 @@ type: Company
 data:
   labels:
     - mindplus_desktop
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 804319
+          name: DFRobot

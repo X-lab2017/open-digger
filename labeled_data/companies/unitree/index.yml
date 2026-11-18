@@ -1,5 +1,6 @@
 # Sources verified on 2026-11-18:
 # https://www.unitree.com/contact/
+# https://github.com/unitreerobotics
 name: Unitree Robotics
 name_zh: 宇树科技
 description: 'A robotics company developing quadruped and humanoid robots and related components.'
@@ -11,3 +12,9 @@ data:
     - unitree_rl_gym
     - unitree_rl_lab
     - unitree_sdk2
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 44998897
+          name: unitreerobotics

@@ -1,5 +1,6 @@
 # Sources verified on 2026-11-18:
 # https://www.figma.com/blog/config-2025-press-release/
+# https://github.com/figma
 name: Figma
 description: 'A software company providing collaborative interface design and product development tools.'
 description_zh: '提供协作式界面设计及产品开发工具的软件企业。'
@@ -8,3 +9,9 @@ data:
   labels:
     - code_connect
     - simple_design_system
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 5155369
+          name: figma

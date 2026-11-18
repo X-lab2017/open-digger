@@ -1,5 +1,6 @@
 # Sources verified on 2026-11-18:
 # https://www.harmonycloud.cn/trial/ai-infrastructure
+# https://github.com/harmonycloud
 name: HarmonyCloud
 name_zh: 谐云
 description: 'A software company providing cloud native platforms and computing infrastructure services.'
@@ -8,3 +9,9 @@ type: Company
 data:
   labels:
     - kindling
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 24667643
+          name: harmonycloud

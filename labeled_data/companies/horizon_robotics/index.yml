@@ -1,6 +1,7 @@
 # Sources verified on 2026-11-18:
 # https://www.hkexnews.hk/listedco/listconews/sehk/2026/0930/2026093000842.pdf
 # The 2026 interim report lists head office and principal places of business in both Beijing and Shanghai (page 2).
+# https://github.com/HorizonRobotics
 name: Horizon Robotics
 name_zh: 地平线
 description: 'A technology company developing computing hardware and software for intelligent driving.'
@@ -12,3 +13,9 @@ data:
     - embodiedgen
     - holomotion
     - sparse4d
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 46703330
+          name: HorizonRobotics

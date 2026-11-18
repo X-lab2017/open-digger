@@ -1,5 +1,6 @@
 # Sources verified on 2026-11-18:
 # https://www.zhipuai.cn/investor_relations/
+# https://github.com/zai-org
 name: Zhipu AI
 name_zh: 智谱
 description: 'An artificial intelligence company developing foundation models and AI software services.'
@@ -8,3 +9,9 @@ type: Company
 data:
   labels:
     - open_autoglm
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 223098841
+          name: zai-org

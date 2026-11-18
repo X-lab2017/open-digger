@@ -1,5 +1,6 @@
 # Sources verified on 2026-11-18:
 # https://www.supermap.com/zh-cn/a/news/Contact.html
+# https://github.com/SuperMap
 name: SuperMap
 name_zh: 超图软件
 description: 'A software company developing geographic information systems and geospatial technology products.'
@@ -8,3 +9,9 @@ type: Company
 data:
   labels:
     - iclient_javascript
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 2839337
+          name: SuperMap

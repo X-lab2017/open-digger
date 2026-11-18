@@ -1,5 +1,6 @@
 # Sources verified on 2026-11-18:
 # https://www.slamtec.com/cn/promotion
+# https://github.com/Slamtec
 name: SLAMTEC
 name_zh: 思岚科技
 description: 'A robotics technology company developing lidar sensors, localization, and navigation systems.'
@@ -8,3 +9,9 @@ type: Company
 data:
   labels:
     - rplidar
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 40712441
+          name: Slamtec
