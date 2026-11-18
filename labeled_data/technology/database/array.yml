@@ -10,6 +10,8 @@ data:
           name: EuclidOLAP/EuclidOLAP
         - id: 1183612568
           name: NodeDB-Lab/nodedb
+        - id: 1211040071
+          name: NumstoreDB/Numstore
         - id: 86868560
           name: TileDB-Inc/TileDB
         - id: 31373521
@@ -18,6 +20,8 @@ data:
           name: datajaguar/jaguardb
         - id: 664133375
           name: epsilla-cloud/vectordb
+        - id: 1208697458
+          name: hexxla/hexxladb
         - id: 45732002
           name: jnidzwetzki/bboxdb
         - id: 489656726

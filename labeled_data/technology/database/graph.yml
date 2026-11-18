@@ -16,10 +16,16 @@ data:
           name: CulturePlex/Sylva
         - id: 8799170
           name: DevrexLabs/OrigoDB
+        - id: 1096820313
+          name: GraphLite-AI/GraphLite
         - id: 893031915
           name: HelixDB/helix-db
+        - id: 1244916331
+          name: IssunDB/issun-db
         - id: 77385607
           name: JanusGraph/janusgraph
+        - id: 759929648
+          name: JetBrains/youtrackdb
         - id: 1071734040
           name: LadybugDB/ladybug
         - id: 1183612568
@@ -36,20 +42,26 @@ data:
           name: SparsityTechnologies/sparksee-server
         - id: 528766495
           name: TuGraph-family/tugraph-db
+        - id: 27594187
+          name: ad-freiburg/qlever
+        - id: 1170374747
+          name: alibaba/neug
         - id: 22475123
           name: amark/gun
+        - id: 1182753977
+          name: antflydb/antfly
         - id: 276293034
           name: apache/age
         - id: 2282376
           name: apache/giraph
         - id: 141376301
-          name: apache/incubator-hugegraph
+          name: apache/hugegraph
         - id: 30449481
           name: apache/tinkerpop
         - id: 2649214
           name: arangodb/arangodb
-        - id: 57401138
-          name: bitnine-oss/agensgraph
+        - id: 1237465314
+          name: ayoubnabil/aiondb
         - id: 48451041
           name: blazegraph/database
         - id: 511030127
@@ -62,6 +74,8 @@ data:
           name: dgraph-io/dgraph
         - id: 402209532
           name: dyedgreen/cqlite
+        - id: 590923204
+          name: estebanrfp/gdb
         - id: 668673665
           name: falkordb/falkordb
         - id: 74678263
@@ -76,6 +90,8 @@ data:
           name: hypergraphdb/hypergraphdb
         - id: 166429903
           name: jssmith/stigdb
+        - id: 1230283259
+          name: katehonz/barabaDB
         - id: 65619619
           name: krotik/eliasdb
         - id: 298763623
@@ -86,12 +102,18 @@ data:
           name: memgraph/memgraph
         - id: 81411018
           name: microsoft/GraphEngine
+        - id: 1201033913
+          name: nambok/mentedb
+        - id: 1242792159
+          name: namidb/namidb
         - id: 6650539
           name: neo4j/neo4j
         - id: 7083240
           name: orientechnologies/orientdb
         - id: 1111263109
           name: orneryd/NornicDB
+        - id: 133687025
+          name: oxigraph/oxigraph
         - id: 26917250
           name: pkumod/gStore
         - id: 166387176
@@ -104,6 +126,12 @@ data:
           name: rayokota/hgraphdb
         - id: 1051002990
           name: sanonone/kektordb
+        - id: 57401138
+          name: skaiworldwide-oss/agensgraph
+        - id: 1126115972
+          name: sochdb/sochdb
+        - id: 1169046116
+          name: softmaxdata/engram
         - id: 743502
           name: sones/sones
         - id: 55578752
@@ -122,5 +150,5 @@ data:
           name: typedb/typedb
         - id: 146459443
           name: vesoft-inc/nebula
-        - id: 759929648
-          name: youtrackdb/youtrackdb
+        - id: 1164482810
+          name: yantrikos/yantrikdb

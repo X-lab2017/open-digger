@@ -36,8 +36,14 @@ data:
           name: ALTIBASE/altibase
         - id: 25780780
           name: AlaSQL/alasql
+        - id: 621929252
+          name: ArroyoSystems/arroyo
         - id: 22427082
           name: BTrDB/btrdb-server
+        - id: 883391427
+          name: BemiHQ/BemiDB
+        - id: 150149024
+          name: BlazingDB/blazingsql
         - id: 581145740
           name: ByConity/ByConity
         - id: 52080367
@@ -70,14 +76,20 @@ data:
           name: GreatSQL/GreatSQL
         - id: 274000765
           name: GunterMueller/LEAP_RDBMS
-        - id: 516821813
-          name: HydrasDB/hydra
+        - id: 1188294539
+          name: JagritGumber/evolvsql
         - id: 858418
           name: JakSprats/Alchemy-Database
+        - id: 915978190
+          name: JakeRoggenbuck/RedoxQL
+        - id: 1047223442
+          name: JakeRoggenbuck/kronicler
         - id: 80645561
           name: JuliaData/JuliaDB.jl
         - id: 533032
           name: LinkedInAttic/sensei
+        - id: 3017505
+          name: LucidDB/luciddb
         - id: 19816070
           name: MariaDB/server
         - id: 135423959
@@ -88,6 +100,8 @@ data:
           name: NodeDB-Lab/nodedb
         - id: 684046299
           name: OpenTenBase/OpenTenBase
+        - id: 828849220
+          name: OxidizeLabs/ferrite
         - id: 41443810
           name: Postgres-XL/Postgres-XL
         - id: 605546193
@@ -100,24 +114,34 @@ data:
           name: RhizomeDB/rs-rhizome
         - id: 685897222
           name: Shannon-Data/ShannonBase
-        - id: 42580991
-          name: SnappyDataInc/snappydata
+        - id: 1211492976
+          name: SouravRoy-ETL/slothdb
         - id: 402945349
           name: StarRocks/StarRocks
         - id: 590507334
           name: StereoDB/StereoDB
         - id: 501460708
           name: StoneAtom/stonedb
+        - id: 972754006
+          name: SwellDB/SwellDB
+        - id: 42580991
+          name: TIBCOSoftware/snappydata
         - id: 2445970
           name: VoltDB/voltdb
+        - id: 16326644
+          name: akumuli/Akumuli
         - id: 416777125
           name: alexraffy/sksql
         - id: 692348247
           name: amelielabs/amelie
+        - id: 700017073
+          name: antoniosarosi/mkdb
         - id: 3927863
           name: antonmks/Alenka
         - id: 358917318
           name: apache/arrow-datafusion
+        - id: 644742603
+          name: apache/cloudberry
         - id: 1918497
           name: apache/derby
         - id: 99919302
@@ -130,12 +154,14 @@ data:
           name: apache/hawq
         - id: 206444
           name: apache/hive
+        - id: 496505424
+          name: apache/horaedb
         - id: 56128733
           name: apache/impala
-        - id: 496505424
-          name: apache/incubator-horaedb
         - id: 56214719
           name: apache/incubator-retired-quickstep
+        - id: 17971137
+          name: apache/incubator-tajo
         - id: 50647838
           name: apache/kudu
         - id: 28738447
@@ -156,30 +182,30 @@ data:
           name: apavlo/h-store
         - id: 134193743
           name: apavlo/metalbase
+        - id: 757281035
+          name: ariasql/ariasql
         - id: 40787594
           name: aur-archive/gigabase
+        - id: 1237465314
+          name: ayoubnabil/aiondb
         - id: 143436277
           name: baidu/BaikalDB
         - id: 141378316
           name: beardedeagle/mnesiac
         - id: 16109206
           name: biokoda/actordb
-        - id: 57401138
-          name: bitnine-oss/agensgraph
-        - id: 150149024
-          name: blazingdb/pyBlazing
         - id: 91593042
           name: bloomberg/comdb2
         - id: 92329433
           name: canonical/dqlite
+        - id: 1099507418
+          name: carlosbarbosamexico/narayana
         - id: 372181547
           name: cashapp/pranadb
         - id: 606433492
           name: chdb-io/chdb
         - id: 50874442
           name: citusdata/citus
-        - id: 644742603
-          name: cloudberrydb/cloudberrydb
         - id: 207663235
           name: cmu-db/bustub
         - id: 140325970
@@ -190,20 +216,20 @@ data:
           name: cockroachdb/cockroach
         - id: 296950535
           name: codemix/ts-sql
-        - id: 254418044
-          name: coilhq/tigerbeetle
         - id: 69400326
           name: confluentinc/ksql
         - id: 551374215
           name: cozodb/cozo
         - id: 132361668
           name: cswinter/LocustDB
+        - id: 173582015
+          name: cube2222/octosql
         - id: 14090388
           name: cznic/ql
         - id: 824462634
-          name: darshan117/BroDB
+          name: darshan117/BroSql
         - id: 302827809
-          name: datafuselabs/databend
+          name: databendlabs/databend
         - id: 2894420
           name: deveel/deveeldb
         - id: 52507351
@@ -216,6 +242,8 @@ data:
           name: dremio/dremio-oss
         - id: 138754790
           name: duckdb/duckdb
+        - id: 1268325095
+          name: earonesty/lakeql
         - id: 341208515
           name: edgelesssys/edgelessdb
         - id: 61373806
@@ -232,6 +260,8 @@ data:
           name: eyalroz/c-store
         - id: 172208960
           name: eztools-software/FileDb
+        - id: 13887383
+          name: facebookarchive/webscalesql-5.6
         - id: 388946490
           name: facebookincubator/velox
         - id: 40127179
@@ -249,13 +279,15 @@ data:
         - id: 95817032
           name: geldata/gel
         - id: 148087762
-          name: georgia-tech-db/eva
+          name: georgia-tech-db/evadb
         - id: 3084708
           name: ggaughan/ThinkSQL
         - id: 91715647
           name: gnocchixyz/gnocchi
         - id: 24650236
           name: google/lovefield
+        - id: 14753974
+          name: graemedouglas/LittleD
         - id: 385634291
           name: grafana/mimir
         - id: 805041952
@@ -268,26 +300,34 @@ data:
           name: hpides/skyrise
         - id: 291675222
           name: hstreamdb/hstream
+        - id: 516821813
+          name: hydradatabase/columnar
+        - id: 1101734601
+          name: hyparam/squirreling
         - id: 87414843
           name: hyrise/hyrise
         - id: 13589020
           name: infinidb/infinidb
         - id: 11630463
           name: infinisql/infinisql
+        - id: 1243401750
+          name: infino-ai/infino
         - id: 119234782
           name: jonahharris/osdb-beaglesql
         - id: 119234429
           name: jonahharris/osdb-typhoon
+        - id: 1174651148
+          name: kashyap-devansh/Ark
         - id: 371172777
           name: kelindar/column
         - id: 199466858
           name: kkuchta/tabdb
+        - id: 1193777419
+          name: lasect/discodb
         - id: 591417438
           name: launix-de/memcp
         - id: 7502247
           name: lealone/Lealone
-        - id: 543276238
-          name: libsql/libsql
         - id: 509396909
           name: lingo-db/lingo-db
         - id: 323389945
@@ -308,20 +348,32 @@ data:
           name: matrixorigin/matrixone
         - id: 71015036
           name: mattbostock/timbala
+        - id: 780362035
+          name: maxnilz/sboxdb
         - id: 463071559
           name: minovakovi/akdb
         - id: 62660036
           name: mozilla/mentat
+        - id: 999616035
+          name: multigres/multigres
         - id: 771847852
           name: myscale/MyScaleDB
         - id: 24494032
           name: mysql/mysql-server
+        - id: 460512584
+          name: mzinsmeister/OxidSQL
         - id: 351806852
           name: neondatabase/neon
         - id: 147880351
           name: njaard/sonnerie
+        - id: 31960975
+          name: nukep/llamadb
         - id: 372536760
           name: oceanbase/oceanbase
+        - id: 1080442728
+          name: oceanbase/seekdb
+        - id: 813146214
+          name: open-gpdb/gpdb
         - id: 507829396
           name: openGemini/openGemini
         - id: 276117477
@@ -360,8 +412,10 @@ data:
           name: qikkDB/qikkdb
         - id: 19257422
           name: questdb/questdb
+        - id: 95753144
+          name: quqiangsheng/abhot
         - id: 5665061
-          name: radare/sdb
+          name: radareorg/sdb
         - id: 117920609
           name: radondb/radon
         - id: 206686299
@@ -378,8 +432,16 @@ data:
           name: ryenus/hsqldb
         - id: 2529750
           name: sameeragarwal/blinkdb
+        - id: 1254385987
+          name: shuruheel/mnestic
         - id: 817507312
           name: sirius-db/sirius
+        - id: 57401138
+          name: skaiworldwide-oss/agensgraph
+        - id: 1179701067
+          name: skel84/allocdb
+        - id: 1126115972
+          name: sochdb/sochdb
         - id: 8582237
           name: splicemachine/spliceengine
         - id: 510375115
@@ -404,6 +466,8 @@ data:
           name: taosdata/TDengine
         - id: 285012797
           name: tensorbase/tensorbase
+        - id: 254418044
+          name: tigerbeetle/tigerbeetle
         - id: 678214856
           name: timeplus-io/proton
         - id: 443220240
@@ -412,14 +476,26 @@ data:
           name: traildb/traildb
         - id: 166515022
           name: trinodb/trino
+        - id: 543276238
+          name: tursodatabase/libsql
+        - id: 683347556
+          name: tursodatabase/turso
         - id: 697976
           name: twitter-archive/snowflake
+        - id: 646912783
+          name: ubco-db/EmbedDB
         - id: 149626591
           name: uber/aresdb
         - id: 234910993
           name: vectorengine/vectorsql
+        - id: 975757837
+          name: villagesql/villagesql-server
         - id: 11008207
           name: vitessio/vitess
+        - id: 104114230
+          name: viyadb/viyadb
+        - id: 964004742
+          name: warehouse-pg/warehouse-pg
         - id: 3900741
           name: wundrian/csql
         - id: 19503320
