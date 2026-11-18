@@ -12,6 +12,7 @@ data:
     - ':companies/github/copilot_cli'
     - ':companies/google/gemini_cli'
     - ':companies/kilo/kilocode'
+    - ':companies/minimax/minimax_code'
     - ':companies/moonshot/kimi_code'
     - ':companies/openai/codex'
     - ':companies/warp/warp'

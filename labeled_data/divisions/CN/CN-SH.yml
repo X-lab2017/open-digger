@@ -25,6 +25,7 @@ data:
     - ':companies/infiniflow'
     - ':companies/koderover'
     - ':companies/kyligence'
+    - ':companies/minimax'
     - ':companies/openkylin'
     - ':companies/qiniu'
     - ':companies/rtthread'
