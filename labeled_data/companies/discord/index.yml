@@ -1,0 +1,17 @@
+# Sources verified on 2026-11-18:
+# https://support.discord.com/hc/en-us/articles/24774824186263-Master-Services-Agreement
+# https://github.com/discord
+name: Discord
+description: 'A communications company providing voice, video, and text services for online communities.'
+description_zh: '为线上社区提供语音、视频及文字通信服务的企业。'
+type: Company
+data:
+  labels:
+    - manifold
+    - sorted_set_nif
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 1965106
+          name: discord

@@ -1,0 +1,16 @@
+# Sources verified on 2026-11-18:
+# https://github.com/gristlabs/grist-core
+# https://github.com/gristlabs/grist-desktop
+name: Grist
+description: 'A relational spreadsheet developed by Grist Labs and contributors, including the community server and desktop application. Commercial extensions have separate licensing.'
+description_zh: 'Grist Labs 与贡献者开发的关系型电子表格，包含社区版服务端及桌面应用；商业扩展采用单独许可。'
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 266033395
+          name: gristlabs/grist-core
+        - id: 588723486
+          name: gristlabs/grist-desktop

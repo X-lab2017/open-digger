@@ -1,0 +1,17 @@
+# Sources verified on 2026-11-18:
+# https://www.twosigma.com/office/new-york/
+# https://github.com/twosigma
+name: Two Sigma
+description: 'A financial services company applying data science and technology to investment management.'
+description_zh: '将数据科学与技术应用于投资管理的金融服务企业。'
+type: Company
+data:
+  labels:
+    - beakerx
+    - flint
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 4049181
+          name: twosigma

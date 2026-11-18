@@ -1,0 +1,17 @@
+# Sources verified on 2026-11-18:
+# https://www.zlg.cn/data/upload/software/Can/CANDTU-100R-mini-V1.00.pdf
+# https://github.com/zlgopen
+name: ZLG
+name_zh: 致远电子
+description: 'An electronics company providing embedded systems, industrial communication devices, and measurement instruments.'
+description_zh: '提供嵌入式系统、工业通信设备及测量仪器的电子企业。'
+type: Company
+data:
+  labels:
+    - awtk
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 25163330
+          name: zlgopen

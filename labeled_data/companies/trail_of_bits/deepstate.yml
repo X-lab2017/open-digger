@@ -1,0 +1,13 @@
+# Sources verified on 2026-11-18:
+# https://github.com/trailofbits/deepstate
+name: DeepState
+description: 'A C and C++ testing framework developed by Trail of Bits that integrates fuzzing and symbolic execution.'
+description_zh: 'Trail of Bits 开发的 C 和 C++ 测试框架，集成模糊测试与符号执行。'
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 108593287
+          name: trailofbits/deepstate

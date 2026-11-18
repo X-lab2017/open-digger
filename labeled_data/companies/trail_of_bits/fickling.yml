@@ -1,0 +1,13 @@
+# Sources verified on 2026-11-18:
+# https://github.com/trailofbits/fickling
+name: Fickling
+description: 'A Python pickle analysis and rewriting tool developed by Trail of Bits for inspecting serialized code and detecting suspicious behavior.'
+description_zh: 'Trail of Bits 开发的 Python pickle 分析与重写工具，用于检查序列化代码及识别可疑行为。'
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 331706754
+          name: trailofbits/fickling

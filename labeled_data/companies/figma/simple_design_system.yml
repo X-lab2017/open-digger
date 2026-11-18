@@ -1,0 +1,13 @@
+# Sources verified on 2026-11-18:
+# https://github.com/figma/sds
+name: Simple Design System
+description: 'A reference design system developed by Figma that pairs reusable design components with a React implementation.'
+description_zh: 'Figma 开发的参考设计系统，将可复用设计组件与 React 实现相对应。'
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 804514526
+          name: figma/sds

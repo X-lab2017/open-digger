@@ -15,6 +15,7 @@ data:
     - ':companies/meta/prestodb'
     - ':companies/microsoft/hbase'
     - ':companies/tigerdata/timescaledb'
+    - ':companies/two_sigma/flint'
     - ':companies/yandex/clickhouse'
     - ':foundations/apache/lucene'
     - ':foundations/trino/trino'

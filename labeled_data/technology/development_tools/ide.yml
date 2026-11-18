@@ -5,6 +5,7 @@ data:
   labels:
     - ':companies/anysphere/cursor'
     - ':companies/continue/continue'
+    - ':companies/dfrobot/mindplus_desktop'
     - ':companies/microsoft/vscode'
     - ':companies/myshell/ailice'
     - ':companies/oracle/netbeans'

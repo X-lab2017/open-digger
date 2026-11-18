@@ -1,0 +1,16 @@
+# Sources verified on 2026-11-18:
+# https://www.getgrist.com/about/
+# https://github.com/gristlabs
+name: Grist Labs
+description: 'A software company providing collaborative spreadsheet and data management tools.'
+description_zh: '提供协作式电子表格及数据管理工具的软件企业。'
+type: Company
+data:
+  labels:
+    - grist
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 19978005
+          name: gristlabs

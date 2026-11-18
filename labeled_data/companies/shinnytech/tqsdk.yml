@@ -1,0 +1,13 @@
+# Sources verified on 2026-11-18:
+# https://github.com/shinnytech/tqsdk-python
+name: TqSdk
+description: 'A Python quantitative trading SDK developed by ShinnyTech for market data, strategy development, backtesting, and trading.'
+description_zh: '信易科技开发的 Python 量化交易 SDK，支持行情、策略开发、回测及交易。'
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 136556542
+          name: shinnytech/tqsdk-python

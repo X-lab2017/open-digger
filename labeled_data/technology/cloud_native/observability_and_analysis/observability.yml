@@ -6,6 +6,7 @@ data:
     - ':companies/datadog/datadog'
     - ':companies/google/opentelemetry'
     - ':companies/grafana/cortex'
+    - ':companies/harmonycloud/kindling'
     - ':companies/improbable/thanos'
     - ':companies/influxdata/influxdb'
     - ':companies/parseable/parseable'

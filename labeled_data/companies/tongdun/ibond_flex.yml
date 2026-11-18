@@ -1,0 +1,13 @@
+# Sources verified on 2026-11-18:
+# https://github.com/tongdun/iBond-flex
+name: iBond FLEX
+description: 'A federated learning protocol implementation developed by Tongdun AI Research for secure data exchange between participants.'
+description_zh: '同盾人工智能研究团队开发的联邦学习协议实现，支持参与方之间的安全数据交换。'
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 321944620
+          name: tongdun/iBond-flex

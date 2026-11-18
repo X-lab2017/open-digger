@@ -1,0 +1,14 @@
+# Sources verified on 2026-11-18:
+# https://github.com/manycore-research/SpatialGen
+# https://manycore-research.github.io/SpatialGen/
+name: SpatialGen
+description: 'Code for layout-guided 3D indoor scene generation, jointly developed by Manycore Tech and HKUST researchers. Model weights and datasets have separate terms.'
+description_zh: '群核科技与香港科技大学研究者共同开发的布局引导三维室内场景生成代码；模型权重和数据集适用各自条款。'
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 1043576425
+          name: manycore-research/SpatialGen

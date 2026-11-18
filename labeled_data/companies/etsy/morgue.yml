@@ -1,0 +1,13 @@
+# Sources verified on 2026-11-18:
+# https://github.com/etsy/morgue
+name: Morgue
+description: 'An incident postmortem management application developed by Etsy. The upstream repository is archived.'
+description_zh: 'Etsy 开发的故障复盘管理应用，上游仓库已归档。'
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 13639712
+          name: etsy/morgue

@@ -3,6 +3,7 @@ name_zh: 数据集成
 type: Tech-1
 data:
   labels:
+    - ':companies/actiontech/dtle'
     - ':companies/airbyte/airbyte'
     - ':companies/databend/opendal'
     - ':companies/fivetran/dbt'

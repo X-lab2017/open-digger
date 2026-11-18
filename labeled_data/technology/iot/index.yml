@@ -4,8 +4,13 @@ type: Tech-0
 data:
   labels:
     - ':companies/alibaba/alios_things'
+    - ':companies/elephant_robotics/mycobot_ros'
+    - ':companies/elephant_robotics/pymycobot'
     - ':companies/nabucasa/home_assistant'
     - ':companies/rtthread/rtthread'
+    - ':companies/slamtec/rplidar'
+    - ':companies/unitree/unitree_sdk2'
+    - ':companies/zlg/awtk'
     - ':foundations/linux_foundation/zephyr'
     - ':projects/openwrt'
   platforms:

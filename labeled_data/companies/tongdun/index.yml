@@ -1,0 +1,19 @@
+# Sources verified on 2026-11-18:
+# https://consulting.tongdun.cn/contactUs
+# https://github.com/tongdun
+name: Tongdun Technology
+name_zh: 同盾科技
+description: 'A technology company providing decision intelligence and risk management software and services.'
+description_zh: '提供决策智能与风险管理软件及服务的科技企业。'
+type: Company
+data:
+  labels:
+    - data4test
+    - ibond_flex
+    - td_redis_operator
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 16436371
+          name: tongdun

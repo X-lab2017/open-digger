@@ -1,0 +1,13 @@
+# Sources verified on 2026-11-18:
+# https://github.com/stripe/stripe-cli
+name: Stripe CLI
+description: 'A command line tool developed by Stripe for developing, testing, and managing Stripe integrations.'
+description_zh: 'Stripe 开发的命令行工具，用于开发、测试和管理 Stripe 集成。'
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 191848501
+          name: stripe/stripe-cli

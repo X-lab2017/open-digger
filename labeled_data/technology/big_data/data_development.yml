@@ -2,6 +2,9 @@ name: Big Data - Data Development
 name_zh: 数据开发
 type: Tech-1
 data:
+  labels:
+    - ':companies/actiontech/sqle'
+    - ':companies/two_sigma/beakerx'
   platforms:
     - name: GitHub
       type: Code Hosting

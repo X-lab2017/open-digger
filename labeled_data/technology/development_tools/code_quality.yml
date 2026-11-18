@@ -1,4 +1,8 @@
 name: Development Tools - Code Quality
 name_zh: 代码质量
 type: Tech-1
-data: null
+data:
+  labels:
+    - ':companies/actiontech/sqle'
+    - ':companies/trail_of_bits/fickling'
+    - ':companies/trail_of_bits/graphtage'

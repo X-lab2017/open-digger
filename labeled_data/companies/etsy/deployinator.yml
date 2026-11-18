@@ -1,0 +1,13 @@
+# Sources verified on 2026-11-18:
+# https://github.com/etsy/deployinator
+name: Deployinator
+description: 'A web-based deployment tool developed by Etsy. The upstream repository is archived.'
+description_zh: 'Etsy 开发的 Web 部署工具，上游仓库已归档。'
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 2125665
+          name: etsy/deployinator

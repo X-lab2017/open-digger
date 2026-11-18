@@ -1,0 +1,13 @@
+# Sources verified on 2026-11-18:
+# https://github.com/HorizonRobotics/alf
+name: Agent Learning Framework
+description: 'A reinforcement learning framework developed by Horizon Robotics for building and experimenting with agent learning algorithms.'
+description_zh: '地平线开发的强化学习框架，用于构建和实验智能体学习算法。'
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 178459453
+          name: HorizonRobotics/alf

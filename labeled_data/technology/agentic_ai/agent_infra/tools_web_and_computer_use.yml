@@ -8,3 +8,4 @@ data:
     - ':companies/firecrawl/firecrawl'
     - ':companies/trycua/cua'
     - ':companies/vercel/agent_browser'
+    - ':companies/zhipu/open_autoglm'

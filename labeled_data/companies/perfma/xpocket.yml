@@ -1,0 +1,13 @@
+# Sources verified on 2026-11-18:
+# https://github.com/PerfMa/xpocket
+name: XPocket
+description: 'A pluggable command line diagnostic framework developed by PerfMa for integrating troubleshooting tools.'
+description_zh: 'PerfMa 开发的插件式命令行诊断框架，用于集成故障排查工具。'
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 318180706
+          name: PerfMa/xpocket

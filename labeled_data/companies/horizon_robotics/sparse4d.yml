@@ -1,0 +1,13 @@
+# Sources verified on 2026-11-18:
+# https://github.com/HorizonRobotics/Sparse4D
+name: Sparse4D
+description: 'A sparse 3D object detection and tracking research project from Horizon Robotics.'
+description_zh: '地平线推出的稀疏三维目标检测与跟踪研究项目。'
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 746467307
+          name: HorizonRobotics/Sparse4D

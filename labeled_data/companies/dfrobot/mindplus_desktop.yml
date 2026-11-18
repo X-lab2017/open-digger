@@ -1,0 +1,13 @@
+# Sources verified on 2026-11-18:
+# https://github.com/DFRobot/Mindplus-Desktop
+name: Mindplus Desktop
+description: 'The legacy desktop Mind+ programming application published by DFRobot for Windows, macOS, and Linux.'
+description_zh: 'DFRobot 发布的早期 Mind+ 桌面编程应用，支持 Windows、macOS 和 Linux。'
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 15392020
+          name: DFRobot/Mindplus-Desktop

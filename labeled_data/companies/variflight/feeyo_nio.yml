@@ -1,0 +1,13 @@
+# Sources verified on 2026-11-18:
+# https://github.com/variflight/feeyo-nio
+name: Feeyo NIO
+description: 'An asynchronous network application framework released by VariFlight.'
+description_zh: '飞常准发布的异步网络应用框架。'
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 260816657
+          name: variflight/feeyo-nio

@@ -1,0 +1,13 @@
+# Sources verified on 2026-11-18:
+# https://github.com/twosigma/flint
+name: Flint
+description: 'A time series analysis library developed by Two Sigma for Apache Spark.'
+description_zh: 'Two Sigma 开发的 Apache Spark 时间序列分析库。'
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 71383857
+          name: twosigma/flint

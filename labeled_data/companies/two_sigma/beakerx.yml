@@ -1,0 +1,13 @@
+# Sources verified on 2026-11-18:
+# https://github.com/twosigma/beakerx
+name: BeakerX
+description: 'A collection of Jupyter kernels and interactive data visualization tools developed by Two Sigma.'
+description_zh: 'Two Sigma 开发的 Jupyter 内核及交互式数据可视化工具集合。'
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 14895592
+          name: twosigma/beakerx

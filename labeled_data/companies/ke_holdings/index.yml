@@ -1,0 +1,19 @@
+# Sources verified on 2026-11-18:
+# https://investors.ke.com/investor-faqs
+# https://github.com/LianjiaTech
+name: KE Holdings
+name_zh: 贝壳
+description: 'A housing services company providing property transaction and home improvement services.'
+description_zh: '提供房产交易及家装等居住服务的企业。'
+type: Company
+data:
+  labels:
+    - belle
+    - bruno
+    - retrofit_spring_boot_starter
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 14540911
+          name: LianjiaTech

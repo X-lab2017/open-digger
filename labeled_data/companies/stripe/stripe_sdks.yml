@@ -1,0 +1,25 @@
+# Sources verified on 2026-11-18:
+# https://github.com/stripe/stripe-node
+# https://github.com/stripe/stripe-php
+# https://github.com/stripe/stripe-go
+# https://github.com/stripe/stripe-python
+# https://github.com/stripe/stripe-ruby
+name: Stripe API SDKs
+description: 'Official open source Stripe API client libraries for Node.js, PHP, Go, Python, and Ruby.'
+description_zh: 'Stripe 官方开源 API 客户端库，涵盖 Node.js、PHP、Go、Python 和 Ruby。'
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 2471804
+          name: stripe/stripe-node
+        - id: 1953386
+          name: stripe/stripe-php
+        - id: 20545279
+          name: stripe/stripe-go
+        - id: 1953389
+          name: stripe/stripe-python
+        - id: 1953385
+          name: stripe/stripe-ruby

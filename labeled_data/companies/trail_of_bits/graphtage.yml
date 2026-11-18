@@ -1,0 +1,13 @@
+# Sources verified on 2026-11-18:
+# https://github.com/trailofbits/graphtage
+name: Graphtage
+description: 'A structural comparison and merge tool developed by Trail of Bits for tree-structured data formats.'
+description_zh: 'Trail of Bits 开发的树形结构数据比较与合并工具。'
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 257655337
+          name: trailofbits/graphtage

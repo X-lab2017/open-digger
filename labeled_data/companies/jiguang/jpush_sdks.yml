@@ -1,0 +1,23 @@
+# Sources verified on 2026-11-18:
+# https://github.com/jpush/jpush-react-native
+# https://github.com/jpush/jpush-flutter-plugin
+# https://github.com/jpush/jpush-api-php-client
+# https://github.com/jpush/jpush-api-nodejs-client
+name: JPush SDKs
+name_zh: 极光推送 SDK
+description: 'Open source client and server SDKs provided by Jiguang for integrating JPush, including Flutter, React Native, PHP, and Node.js clients.'
+description_zh: '极光提供的推送服务开源客户端及服务端 SDK，包含 Flutter、React Native、PHP 和 Node.js 客户端。'
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 51740560
+          name: jpush/jpush-react-native
+        - id: 147779944
+          name: jpush/jpush-flutter-plugin
+        - id: 13467555
+          name: jpush/jpush-api-php-client
+        - id: 13517947
+          name: jpush/jpush-api-nodejs-client

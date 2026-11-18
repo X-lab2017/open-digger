@@ -1,0 +1,19 @@
+# Sources verified on 2026-11-18:
+# https://trailofbits.com/privacy-policy
+# https://github.com/trailofbits
+name: Trail of Bits
+description: 'A cybersecurity company providing security research, software assessment, and engineering services.'
+description_zh: '提供安全研究、软件评估及工程服务的网络安全企业。'
+type: Company
+data:
+  labels:
+    - deepstate
+    - fickling
+    - graphtage
+    - polytracker
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 2314423
+          name: trailofbits

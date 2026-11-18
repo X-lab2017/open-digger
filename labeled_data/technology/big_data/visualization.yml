@@ -3,7 +3,11 @@ name_zh: 数据可视化
 type: Tech-1
 data:
   labels:
+    - ':companies/kitware/trame'
+    - ':companies/kitware/vtk_js'
     - ':companies/metabase/metabase'
+    - ':companies/supermap/iclient_javascript'
+    - ':companies/two_sigma/beakerx'
     - ':projects/matplotlib'
   platforms:
     - name: GitHub

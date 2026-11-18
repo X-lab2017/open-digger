@@ -1,0 +1,13 @@
+# Sources verified on 2026-11-18:
+# https://github.com/tongdun/td-redis-operator
+name: TD Redis Operator
+description: 'A Kubernetes operator developed by Tongdun Technology for deploying and managing Redis clusters.'
+description_zh: '同盾科技开发的 Kubernetes Operator，用于部署和管理 Redis 集群。'
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 420949644
+          name: tongdun/td-redis-operator

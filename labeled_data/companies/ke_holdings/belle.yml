@@ -1,0 +1,13 @@
+# Sources verified on 2026-11-18:
+# https://github.com/LianjiaTech/BELLE
+name: BELLE
+description: 'A language model training and adaptation project released by the KE Holdings technical team. This label covers the code repository; model and dataset terms are separate.'
+description_zh: '贝壳技术团队发布的语言模型训练与适配项目；本标签收录代码仓库，模型和数据集适用各自条款。'
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 615256902
+          name: LianjiaTech/BELLE

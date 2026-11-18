@@ -5,5 +5,6 @@ data:
   labels:
     - ':companies/laravel/laravel'
     - ':companies/sensiolabs/symfony'
+    - ':companies/variflight/feeyo_nio'
     - ':foundations/linux_foundation/openjs/express'
     - ':foundations/ruby/rails'

@@ -1,0 +1,18 @@
+# Sources verified on 2026-11-18:
+# https://www.variflight.com/cn/about
+# https://github.com/variflight
+name: VariFlight
+name_zh: 飞常准
+description: 'An aviation technology company providing flight data and related information services.'
+description_zh: '提供航班数据及相关信息服务的航空科技企业。'
+type: Company
+data:
+  labels:
+    - feeyo_nio
+    - feeyo_redisproxy
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 30225483
+          name: variflight

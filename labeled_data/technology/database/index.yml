@@ -3,6 +3,8 @@ name_zh: 数据库
 type: Tech-0
 data:
   labels:
+    - ':companies/actiontech/dble'
+    - ':companies/variflight/feeyo_redisproxy'
     - array
     - columnar
     - content

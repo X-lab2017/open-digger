@@ -1,0 +1,19 @@
+# Sources verified on 2026-11-18:
+# https://opensource.actionsky.com/about_us/
+# https://github.com/actiontech
+name: ActionTech
+name_zh: 爱可生
+description: 'A software company providing database products, management tools, and technical services.'
+description_zh: '提供数据库产品、管理工具及技术服务的软件企业。'
+type: Company
+data:
+  labels:
+    - dble
+    - dtle
+    - sqle
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 15083522
+          name: actiontech

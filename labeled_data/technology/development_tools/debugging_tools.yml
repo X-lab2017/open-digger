@@ -1,4 +1,7 @@
 name: Development Tools - Debugging Tools
 name_zh: 调试工具
 type: Tech-1
-data: null
+data:
+  labels:
+    - ':companies/perfma/xpocket'
+    - ':companies/trail_of_bits/polytracker'

@@ -1,0 +1,19 @@
+# Sources verified on 2026-11-18:
+# https://github.com/Slamtec/rplidar_sdk
+# https://github.com/Slamtec/rplidar_ros
+# https://github.com/Slamtec/sllidar_ros2
+name: RPLIDAR SDK and ROS Drivers
+description: 'Lidar software development kits and ROS drivers provided by SLAMTEC, including the RPLIDAR SDK and ROS and ROS 2 integrations.'
+description_zh: '思岚科技提供的激光雷达开发工具包与 ROS 驱动，包含 RPLIDAR SDK 及 ROS、ROS 2 集成。'
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 139313348
+          name: Slamtec/rplidar_sdk
+        - id: 139397921
+          name: Slamtec/rplidar_ros
+        - id: 458759174
+          name: Slamtec/sllidar_ros2
