@@ -11,3 +11,4 @@ data:
     - ':companies/supermemory/supermemory'
     - ':companies/vectorize_io/hindsight'
     - ':companies/zilliz/milvus'
+    - ':projects/edgeever'
