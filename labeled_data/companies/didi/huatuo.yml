@@ -1,0 +1,12 @@
+name: HUATUO
+name_zh: 华佗
+type: Project
+description: An operating system observability tool open-sourced by DiDi, using eBPF for Linux kernel monitoring, automatic tracing, and continuous profiling.
+description_zh: 由滴滴开源的操作系统可观测性工具，基于 eBPF 提供 Linux 内核监控、自动追踪和持续性能剖析。
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 1031624042
+          name: ccfos/huatuo
