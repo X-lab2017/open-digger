@@ -12,6 +12,7 @@ data:
     - ':companies/meta/cassandra'
     - ':companies/neo4j/neo4j'
     - ':companies/pingcap/tikv'
+    - ':companies/tongdun/td_redis_operator'
     - ':companies/vk/tarantool'
     - ':companies/weaviate/weaviate'
     - ':companies/yandex/clickhouse'

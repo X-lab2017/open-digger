@@ -3,3 +3,6 @@ type: Tech-1
 data:
   labels:
     - ':companies/mifos/fineract'
+    - ':companies/shinnytech/tqsdk'
+    - ':companies/stripe/stripe_cli'
+    - ':companies/stripe/stripe_sdks'

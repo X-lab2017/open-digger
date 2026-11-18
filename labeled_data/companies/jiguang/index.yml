@@ -1,0 +1,10 @@
+# Sources verified on 2026-11-18:
+# https://www.jiguang.cn/about?isH5=1%2F%2F
+name: Jiguang
+name_zh: 极光
+description: 'A technology company providing developer services and mobile application engagement tools.'
+description_zh: '提供开发者服务及移动应用用户触达工具的科技企业。'
+type: Company
+data:
+  labels:
+    - jpush_sdks

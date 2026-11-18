@@ -1,0 +1,10 @@
+# Sources verified on 2026-11-18:
+# https://www.etsy.com/news/evolving-the-way-we-work
+name: Etsy
+description: 'An e-commerce company operating marketplaces for handmade goods, vintage items, and creative supplies.'
+description_zh: '运营手工艺品、古董商品及创意用品交易平台的电子商务企业。'
+type: Company
+data:
+  labels:
+    - deployinator
+    - morgue

@@ -2,5 +2,10 @@ name: Pre-Train · Robotics infra
 type: Tech-2
 data:
   labels:
+    - ':companies/horizon_robotics/embodiedgen'
+    - ':companies/horizon_robotics/holomotion'
     - ':companies/huggingface/lerobot'
     - ':companies/openmind/om1'
+    - ':companies/unitree/unitree_mujoco'
+    - ':companies/unitree/unitree_rl_gym'
+    - ':companies/unitree/unitree_rl_lab'

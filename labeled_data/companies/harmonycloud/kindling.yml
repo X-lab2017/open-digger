@@ -1,0 +1,16 @@
+# Sources verified on 2026-11-18:
+# https://github.com/harmonycloud/kindling
+# https://github.com/harmonycloud/kindling-java
+name: Kindling
+description: 'An eBPF-based cloud native monitoring project from HarmonyCloud, with Kubernetes network analysis and Java profiling components.'
+description_zh: '谐云推出的基于 eBPF 的云原生监控项目，包含 Kubernetes 网络分析和 Java 性能剖析组件。'
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 442068623
+          name: harmonycloud/kindling
+        - id: 551304165
+          name: harmonycloud/kindling-java

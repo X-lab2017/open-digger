@@ -1,0 +1,16 @@
+# Sources verified on 2026-11-18:
+# https://github.com/actiontech/sqle
+# https://github.com/actiontech/sqle-ui
+name: SQLE
+description: 'A SQL review platform developed by ActionTech for database change auditing and SQL quality checks.'
+description_zh: '爱可生开发的 SQL 审核平台，用于数据库变更审核及 SQL 质量检查。'
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 319254323
+          name: actiontech/sqle
+        - id: 406276026
+          name: actiontech/sqle-ui

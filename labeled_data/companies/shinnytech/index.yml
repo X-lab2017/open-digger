@@ -1,0 +1,10 @@
+# Sources verified on 2026-11-18:
+# https://www.shinnytech.com/about
+name: ShinnyTech
+name_zh: 信易科技
+description: 'A software company providing trading systems and quantitative investment tools.'
+description_zh: '提供交易系统与量化投资工具的软件企业。'
+type: Company
+data:
+  labels:
+    - tqsdk

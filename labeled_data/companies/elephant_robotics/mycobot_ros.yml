@@ -1,0 +1,13 @@
+# Sources verified on 2026-11-18:
+# https://github.com/elephantrobotics/mycobot_ros
+name: myCobot ROS
+description: 'ROS packages developed by Elephant Robotics for controlling and integrating its robotic arms.'
+description_zh: '大象机器人开发的 ROS 软件包，用于机械臂控制与集成。'
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 324108141
+          name: elephantrobotics/mycobot_ros

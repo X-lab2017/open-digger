@@ -1,0 +1,19 @@
+# Sources verified on 2026-11-18:
+# https://github.com/zlgopen/awtk
+# https://github.com/zlgopen/awtk-mvvm
+# https://github.com/zlgopen/awtk-linux-fb
+name: AWTK
+description: 'A cross-platform GUI toolkit developed by ZLG for embedded and desktop applications, including MVVM and Linux framebuffer integrations.'
+description_zh: '致远电子开发的跨平台 GUI 工具包，面向嵌入式及桌面应用，包含 MVVM 和 Linux framebuffer 集成。'
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 122325570
+          name: zlgopen/awtk
+        - id: 168610503
+          name: zlgopen/awtk-mvvm
+        - id: 147609908
+          name: zlgopen/awtk-linux-fb

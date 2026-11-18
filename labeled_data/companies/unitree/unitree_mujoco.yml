@@ -1,0 +1,13 @@
+# Sources verified on 2026-11-18:
+# https://github.com/unitreerobotics/unitree_mujoco
+name: Unitree MuJoCo
+description: 'A MuJoCo simulation environment from Unitree Robotics for testing robot control programs.'
+description_zh: '宇树科技提供的 MuJoCo 仿真环境，用于测试机器人控制程序。'
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 423362956
+          name: unitreerobotics/unitree_mujoco

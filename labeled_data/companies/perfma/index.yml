@@ -1,0 +1,10 @@
+# Sources verified on 2026-11-18:
+# https://www.perfma.com/about/team
+name: PerfMa
+name_zh: 笨马网络
+description: 'A software company providing application performance, stability, and development tools.'
+description_zh: '提供应用性能、稳定性及研发工具的软件企业。'
+type: Company
+data:
+  labels:
+    - xpocket

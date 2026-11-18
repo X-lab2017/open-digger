@@ -1,0 +1,13 @@
+# Sources verified on 2026-11-18:
+# https://github.com/variflight/feeyo-redisproxy
+name: Feeyo RedisProxy
+description: 'A Redis and Kafka proxy released by VariFlight for routing requests, managing backend clusters, and monitoring access.'
+description_zh: '飞常准发布的 Redis 和 Kafka 代理，用于请求路由、后端集群管理及访问监控。'
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 103362300
+          name: variflight/feeyo-redisproxy

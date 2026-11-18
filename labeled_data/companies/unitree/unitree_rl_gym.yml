@@ -1,0 +1,13 @@
+# Sources verified on 2026-11-18:
+# https://github.com/unitreerobotics/unitree_rl_gym
+name: Unitree RL Gym
+description: 'Reinforcement learning environments and deployment examples from Unitree Robotics for quadruped and humanoid robots, built on Isaac Gym.'
+description_zh: '宇树科技基于 Isaac Gym 提供的四足及人形机器人强化学习环境与部署示例。'
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 703406051
+          name: unitreerobotics/unitree_rl_gym

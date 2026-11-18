@@ -1,0 +1,13 @@
+# Sources verified on 2026-11-18:
+# https://github.com/HorizonRobotics/EmbodiedGen
+name: EmbodiedGen
+description: 'A generative 3D world engine developed by Horizon Robotics for creating simulation assets and environments for embodied AI.'
+description_zh: '地平线开发的三维世界生成引擎，用于构建具身智能仿真资产与环境。'
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 1000014156
+          name: HorizonRobotics/EmbodiedGen

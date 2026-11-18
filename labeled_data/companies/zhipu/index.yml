@@ -1,0 +1,10 @@
+# Sources verified on 2026-11-18:
+# https://www.zhipuai.cn/investor_relations/
+name: Zhipu AI
+name_zh: 智谱
+description: 'An artificial intelligence company developing foundation models and AI software services.'
+description_zh: '研发基础模型并提供人工智能软件服务的企业。'
+type: Company
+data:
+  labels:
+    - open_autoglm

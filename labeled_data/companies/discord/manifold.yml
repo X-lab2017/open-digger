@@ -1,0 +1,13 @@
+# Sources verified on 2026-11-18:
+# https://github.com/discord/manifold
+name: Manifold
+description: 'A library developed by Discord for efficient batched message passing across Erlang and Elixir nodes.'
+description_zh: 'Discord 开发的用于 Erlang 和 Elixir 节点间高效批量消息传递的程序库。'
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 82106048
+          name: discord/manifold

@@ -1,0 +1,10 @@
+# Sources verified on 2026-11-18:
+# https://www.harmonycloud.cn/trial/ai-infrastructure
+name: HarmonyCloud
+name_zh: 谐云
+description: 'A software company providing cloud native platforms and computing infrastructure services.'
+description_zh: '提供云原生平台及计算基础设施服务的软件企业。'
+type: Company
+data:
+  labels:
+    - kindling

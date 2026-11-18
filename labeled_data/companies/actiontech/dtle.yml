@@ -1,0 +1,13 @@
+# Sources verified on 2026-11-18:
+# https://github.com/actiontech/dtle
+name: DTLE
+description: 'A distributed MySQL data transfer and replication tool developed by ActionTech.'
+description_zh: '爱可生开发的分布式 MySQL 数据传输与复制工具。'
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 146254951
+          name: actiontech/dtle

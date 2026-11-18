@@ -1,0 +1,11 @@
+# Sources verified on 2026-11-18:
+# https://www.elephantrobotics.com/contact-us-cn/
+name: Elephant Robotics
+name_zh: 大象机器人
+description: 'A robotics company developing robotic arms and related automation products.'
+description_zh: '研发机械臂及相关自动化产品的机器人企业。'
+type: Company
+data:
+  labels:
+    - mycobot_ros
+    - pymycobot

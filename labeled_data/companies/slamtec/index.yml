@@ -1,0 +1,10 @@
+# Sources verified on 2026-11-18:
+# https://www.slamtec.com/cn/promotion
+name: SLAMTEC
+name_zh: 思岚科技
+description: 'A robotics technology company developing lidar sensors, localization, and navigation systems.'
+description_zh: '研发激光雷达、定位及导航系统的机器人技术企业。'
+type: Company
+data:
+  labels:
+    - rplidar

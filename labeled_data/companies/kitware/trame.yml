@@ -1,0 +1,15 @@
+# Sources verified on 2026-11-18:
+# https://github.com/Kitware/trame
+# https://www.kitware.com/trame/
+# https://github.com/Kitware/trame/blob/master/LICENSE
+name: trame
+description: 'A Python framework developed by Kitware for building interactive web applications for scientific visualization and data analysis.'
+description_zh: 'Kitware 开发的 Python 框架，用于构建科学可视化及数据分析交互式 Web 应用。'
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 410108340
+          name: Kitware/trame

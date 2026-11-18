@@ -1,0 +1,13 @@
+# Sources verified on 2026-11-18:
+# https://github.com/Kitware/vtk-js
+name: vtk.js
+description: 'A JavaScript scientific visualization library developed by Kitware for rendering and interacting with data in web applications.'
+description_zh: 'Kitware 开发的 JavaScript 科学可视化库，用于在 Web 应用中渲染数据并进行交互。'
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 57900965
+          name: Kitware/vtk-js

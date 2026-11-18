@@ -1,0 +1,14 @@
+# Sources verified on 2026-11-18:
+# https://github.com/manycore-research/PlankAssembly
+# https://manycore-research.github.io/PlankAssembly/
+name: PlankAssembly
+description: 'A 3D CAD reconstruction research project jointly developed by Manycore Tech, Sun Yat-sen University, and the University of Electronic Science and Technology of China.'
+description_zh: '群核科技、中山大学及电子科技大学共同开展的三维 CAD 重建研究项目。'
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 672807690
+          name: manycore-research/PlankAssembly

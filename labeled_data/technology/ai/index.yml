@@ -3,7 +3,11 @@ type: Tech-0
 data:
   labels:
     - ':companies/databricks/delta_lake'
+    - ':companies/horizon_robotics/sparse4d'
     - ':companies/intel/openvino'
+    - ':companies/manycore/plankassembly'
+    - ':companies/manycore/spatialgen'
+    - ':companies/tongdun/ibond_flex'
     - generative_ai
     - large_language_model
   platforms:

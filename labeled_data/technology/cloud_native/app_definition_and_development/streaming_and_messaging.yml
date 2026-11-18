@@ -4,6 +4,8 @@ data:
   labels:
     - ':agencies/nsa/nifi'
     - ':companies/alibaba/rocketmq'
+    - ':companies/discord/manifold'
+    - ':companies/jiguang/jpush_sdks'
     - ':companies/redhat/strimzi'
     - ':companies/synadia/nats'
     - ':companies/yahoo/pulsar'

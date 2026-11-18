@@ -1,0 +1,13 @@
+# Sources verified on 2026-11-18:
+# https://github.com/figma/code-connect
+name: Code Connect
+description: 'A tool developed by Figma for connecting design system components to their implementations in code.'
+description_zh: 'Figma 开发的工具，用于将设计系统组件关联到对应的代码实现。'
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 785640537
+          name: figma/code-connect

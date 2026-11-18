@@ -1,0 +1,16 @@
+# Sources verified on 2026-11-18:
+# https://github.com/unitreerobotics/unitree_sdk2
+# https://github.com/unitreerobotics/unitree_sdk2_python
+name: Unitree SDK2
+description: 'Unitree Robotics SDKs for communicating with and controlling its robots, including C++ and Python interfaces.'
+description_zh: '宇树科技提供的机器人通信与控制 SDK，包含 C++ 和 Python 接口。'
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 695166275
+          name: unitreerobotics/unitree_sdk2
+        - id: 792341110
+          name: unitreerobotics/unitree_sdk2_python

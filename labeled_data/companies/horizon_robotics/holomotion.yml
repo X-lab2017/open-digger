@@ -1,0 +1,14 @@
+# Sources verified on 2026-11-18:
+# https://github.com/HorizonRobotics/HoloMotion
+# https://www.horizon.auto/news/technology/456
+name: HoloMotion
+description: 'A humanoid whole-body control research framework released by Horizon Robotics.'
+description_zh: '地平线发布的人形机器人全身控制研究框架。'
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 1028843437
+          name: HorizonRobotics/HoloMotion

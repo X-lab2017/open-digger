@@ -3,9 +3,11 @@ name_zh: Web 开发框架 - 前端
 type: Tech-1
 data:
   labels:
+    - ':companies/figma/simple_design_system'
     - ':companies/github/electron'
     - ':companies/google/angular'
     - ':companies/google/flutter'
+    - ':companies/supermap/iclient_javascript'
     - ':projects/svelte'
     - ':projects/weapp'
   platforms:

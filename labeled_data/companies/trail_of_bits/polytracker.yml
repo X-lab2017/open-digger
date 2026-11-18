@@ -1,0 +1,13 @@
+# Sources verified on 2026-11-18:
+# https://github.com/trailofbits/polytracker
+name: PolyTracker
+description: 'An LLVM instrumentation tool developed by Trail of Bits for taint tracking, dataflow analysis, and tracing.'
+description_zh: 'Trail of Bits 开发的 LLVM 插桩工具，用于污点跟踪、数据流分析及执行追踪。'
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 218835361
+          name: trailofbits/polytracker

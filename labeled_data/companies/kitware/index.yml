@@ -1,0 +1,10 @@
+# Sources verified on 2026-11-18:
+# https://www.kitware.com/contact/
+name: Kitware
+description: 'A software company providing scientific computing, visualization, and research software services.'
+description_zh: '提供科学计算、可视化及科研软件服务的软件企业。'
+type: Company
+data:
+  labels:
+    - trame
+    - vtk_js

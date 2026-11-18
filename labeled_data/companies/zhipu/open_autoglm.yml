@@ -1,0 +1,13 @@
+# Sources verified on 2026-11-18:
+# https://github.com/zai-org/Open-AutoGLM
+name: Open-AutoGLM
+description: 'A phone automation agent framework released by Zhipu AI for interpreting instructions and operating mobile application interfaces.'
+description_zh: '智谱发布的手机自动化智能体框架，用于理解指令并操作移动应用界面。'
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 1112189620
+          name: zai-org/Open-AutoGLM

@@ -1,0 +1,13 @@
+# Sources verified on 2026-11-18:
+# https://github.com/elephantrobotics/pymycobot
+name: pymycobot
+description: 'A Python robot control library developed by Elephant Robotics for its robotic arms and related products.'
+description_zh: '大象机器人开发的 Python 机器人控制库，用于其机械臂及相关产品。'
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 329835509
+          name: elephantrobotics/pymycobot

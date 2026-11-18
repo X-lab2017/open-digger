@@ -1,0 +1,10 @@
+# Sources verified on 2026-11-18:
+# https://wechat.dfrobot.com.cn/article-56.html
+name: DFRobot
+name_zh: 智位机器人
+description: 'A company developing robotics, electronics, and programming education products.'
+description_zh: '研发机器人、电子硬件及编程教育产品的企业。'
+type: Company
+data:
+  labels:
+    - mindplus_desktop

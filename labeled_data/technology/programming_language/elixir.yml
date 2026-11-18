@@ -3,6 +3,8 @@ description: Elixir is a dynamic, functional language for building scalable and 
 description_zh: Elixir 是一种动态函数式语言，用于构建可扩展且易于维护的应用程序。
 type: Project
 data:
+  labels:
+    - ':companies/discord/sorted_set_nif'
   platforms:
     - name: GitHub
       type: Code Hosting

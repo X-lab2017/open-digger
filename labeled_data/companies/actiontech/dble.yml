@@ -1,0 +1,13 @@
+# Sources verified on 2026-11-18:
+# https://github.com/actiontech/dble
+name: DBLE
+description: 'A distributed MySQL proxy developed by ActionTech based on MyCat, providing sharding and read/write splitting.'
+description_zh: '爱可生基于 MyCat 开发的分布式 MySQL 代理，提供分片及读写分离功能。'
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 101285574
+          name: actiontech/dble

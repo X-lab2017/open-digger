@@ -1,0 +1,13 @@
+# Sources verified on 2026-11-18:
+# https://github.com/LianjiaTech/retrofit-spring-boot-starter
+name: Retrofit Spring Boot Starter
+description: 'A Spring Boot integration for Retrofit released by the Lianjia technical team, with configuration and HTTP client extensions.'
+description_zh: '链家技术团队发布的 Retrofit 与 Spring Boot 集成组件，提供配置及 HTTP 客户端扩展。'
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 252883578
+          name: LianjiaTech/retrofit-spring-boot-starter

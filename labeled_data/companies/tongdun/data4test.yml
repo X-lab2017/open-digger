@@ -1,0 +1,14 @@
+# Sources verified on 2026-11-18:
+# https://github.com/tongdun/data4test
+name: Data4Test
+name_zh: 盾测
+description: 'An automated testing platform developed by Tongdun Technology for API testing, test data generation, and scenario orchestration.'
+description_zh: '同盾科技开发的自动化测试平台，支持接口测试、测试数据生成及场景编排。'
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 728924273
+          name: tongdun/data4test

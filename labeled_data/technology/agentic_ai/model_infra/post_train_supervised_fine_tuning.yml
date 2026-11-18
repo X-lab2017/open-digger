@@ -3,5 +3,6 @@ type: Tech-2
 data:
   labels:
     - ':companies/alibaba/ms_swift'
+    - ':companies/ke_holdings/belle'
     - ':companies/unsloth_ai/unsloth'
     - ':projects/llama_factory'

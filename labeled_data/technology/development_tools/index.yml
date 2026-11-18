@@ -3,6 +3,11 @@ name_zh: 开发工具
 type: Tech-0
 data:
   labels:
+    - ':companies/etsy/morgue'
+    - ':companies/figma/code_connect'
+    - ':companies/ke_holdings/bruno'
+    - ':companies/ke_holdings/retrofit_spring_boot_starter'
+    - ':companies/stripe/stripe_cli'
     - build_tools
     - code_quality
     - debugging_tools

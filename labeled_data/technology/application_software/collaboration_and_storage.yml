@@ -2,4 +2,5 @@ name: Application Software - Collaboration and Storage
 type: Tech-1
 data:
   labels:
+    - ':companies/grist_labs/grist'
     - ':companies/nextcloud/nextcloud'

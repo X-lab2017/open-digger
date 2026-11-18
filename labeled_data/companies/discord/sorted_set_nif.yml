@@ -1,0 +1,13 @@
+# Sources verified on 2026-11-18:
+# https://github.com/discord/sorted_set_nif
+name: Discord SortedSet
+description: 'An Elixir sorted set library developed by Discord with native functions implemented in Rust.'
+description_zh: 'Discord 开发的 Elixir 有序集合库，使用 Rust 实现原生函数。'
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 159237051
+          name: discord/sorted_set_nif

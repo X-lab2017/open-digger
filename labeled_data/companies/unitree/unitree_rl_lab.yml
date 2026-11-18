@@ -1,0 +1,13 @@
+# Sources verified on 2026-11-18:
+# https://github.com/unitreerobotics/unitree_rl_lab
+name: Unitree RL Lab
+description: 'Reinforcement learning environments developed by Unitree Robotics on top of Isaac Lab.'
+description_zh: '宇树科技基于 Isaac Lab 开发的机器人强化学习环境。'
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 996673888
+          name: unitreerobotics/unitree_rl_lab

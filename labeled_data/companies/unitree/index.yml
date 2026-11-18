@@ -1,0 +1,13 @@
+# Sources verified on 2026-11-18:
+# https://www.unitree.com/contact/
+name: Unitree Robotics
+name_zh: 宇树科技
+description: 'A robotics company developing quadruped and humanoid robots and related components.'
+description_zh: '研发四足机器人、人形机器人及相关零部件的机器人企业。'
+type: Company
+data:
+  labels:
+    - unitree_mujoco
+    - unitree_rl_gym
+    - unitree_rl_lab
+    - unitree_sdk2

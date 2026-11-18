@@ -4,7 +4,11 @@ data:
   labels:
     - ':companies/antgroup/areal'
     - ':companies/bytedance/verl'
+    - ':companies/horizon_robotics/alf'
+    - ':companies/horizon_robotics/holomotion'
     - ':companies/huggingface/openenv'
     - ':companies/huggingface/trl'
     - ':companies/nvidia/nemo_rl'
+    - ':companies/unitree/unitree_rl_gym'
+    - ':companies/unitree/unitree_rl_lab'
     - ':projects/rlinf'

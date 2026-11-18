@@ -16,8 +16,10 @@ meta:
 data:
   labels:
     - ':companies/api7'
+    - ':companies/elephant_robotics'
     - ':companies/gpustack'
     - ':companies/huawei'
+    - ':companies/jiguang'
     - ':companies/matrix_origin'
     - ':companies/seeed'
     - ':companies/sequoiadb'
@@ -25,4 +27,5 @@ data:
     - ':companies/tencent'
     - ':companies/vipshop'
     - ':companies/webank'
+    - ':companies/zlg'
     - ':institutions/idea'
