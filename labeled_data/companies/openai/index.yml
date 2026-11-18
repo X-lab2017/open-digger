@@ -6,6 +6,7 @@ data:
     - codex
     - openai_agents_python
     - parameter_golf
+    - symphony
     - triton
   platforms:
     - name: GitHub

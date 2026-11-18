@@ -1,0 +1,13 @@
+# Sources verified on 2026-11-18:
+# https://github.com/awslabs/cli-agent-orchestrator
+name: 'CLI Agent Orchestrator'
+description: 'An AWS Labs tool for coordinating multiple command-line coding agents across software development workflows.'
+description_zh: 'AWS Labs 开发的工具，用于在软件开发工作流中协调多个命令行编程智能体。'
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 1028432181
+          name: awslabs/cli-agent-orchestrator

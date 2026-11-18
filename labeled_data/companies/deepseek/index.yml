@@ -5,6 +5,7 @@ data:
   labels:
     - deepep
     - deepseek_harness
+    - dsh_superagent_prototype
   platforms:
     - name: GitHub
       type: Code Hosting

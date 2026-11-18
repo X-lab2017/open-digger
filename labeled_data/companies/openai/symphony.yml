@@ -1,0 +1,13 @@
+# Sources verified on 2026-11-18:
+# https://github.com/openai/symphony
+name: 'Symphony'
+description: 'An engineering preview from OpenAI for turning project tasks into isolated, autonomous coding-agent runs, with a workflow specification and reference implementation.'
+description_zh: 'OpenAI 发布的工程预览项目，将项目任务转化为隔离的自主编程智能体执行过程，提供工作流规范与参考实现。'
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 1167965563
+          name: openai/symphony

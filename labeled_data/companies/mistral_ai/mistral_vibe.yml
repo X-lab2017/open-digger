@@ -1,0 +1,13 @@
+# Sources verified on 2026-11-18:
+# https://github.com/mistralai/mistral-vibe
+name: 'Mistral Vibe'
+description: 'An open-source terminal coding agent developed by Mistral AI for reading code, editing files, and running commands.'
+description_zh: 'Mistral AI 开发的开源终端编程智能体，可读取代码、编辑文件和执行命令。'
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 1112533539
+          name: mistralai/mistral-vibe

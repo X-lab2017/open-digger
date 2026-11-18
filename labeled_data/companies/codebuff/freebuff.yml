@@ -1,0 +1,14 @@
+# Sources verified on 2026-11-18:
+# https://github.com/CodebuffAI/freebuff
+# https://www.ycombinator.com/companies/freebuff
+name: 'Freebuff'
+description: 'An open-source coding agent developed by Freebuff, formerly Codebuff, for finding relevant files, modifying code, and running checks.'
+description_zh: 'Freebuff（原 Codebuff）开发的开源编程智能体，用于查找相关文件、修改代码和运行检查。'
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 826515105
+          name: CodebuffAI/freebuff

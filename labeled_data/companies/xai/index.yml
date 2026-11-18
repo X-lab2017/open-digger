@@ -1,0 +1,18 @@
+# Sources verified on 2026-11-18:
+# https://x.ai/legal/terms-of-service
+# https://github.com/xai-org
+# Current xAI service provider: SpaceX Super Intelligence LLC.
+# Principal place of business: Austin, Texas; Nevada is the incorporation jurisdiction.
+name: 'SpaceX Super Intelligence'
+description: 'An artificial intelligence company developing foundation models and AI services.'
+description_zh: '研发基础模型并提供人工智能服务的企业。'
+type: Company
+data:
+  labels:
+    - grok_build
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 130314967
+          name: xai-org

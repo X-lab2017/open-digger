@@ -1,0 +1,14 @@
+# Sources verified on 2026-11-18:
+# https://github.com/ParadevAI/Paradev
+# https://www.ycombinator.com/companies/paradev
+name: 'Paradev'
+description: 'An open-source desktop workspace developed by Paradev, formerly Superset, for running coding agents in parallel with separate Git worktrees, terminals, and code review.'
+description_zh: 'Paradev（原 Superset）开发的开源桌面工作区，通过独立 Git 工作树、终端和代码审查支持编程智能体并行工作。'
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 1080370450
+          name: ParadevAI/Paradev

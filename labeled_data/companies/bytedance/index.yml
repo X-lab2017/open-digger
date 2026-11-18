@@ -14,6 +14,7 @@ data:
     - openviking
     - seed
     - trae
+    - trae_agent
     - verl
   platforms:
     - name: GitHub

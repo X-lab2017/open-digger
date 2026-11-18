@@ -1,0 +1,13 @@
+# Sources verified on 2026-11-18:
+# https://github.com/zai-org/ZCode
+name: 'ZCode'
+description: 'An AI coding workbench developed by Zhipu AI, with desktop and web interfaces, a terminal agent, and an agent runtime.'
+description_zh: '智谱开发的人工智能编程工作台，提供桌面与网页界面、终端智能体及智能体运行时。'
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 1378288598
+          name: zai-org/ZCode

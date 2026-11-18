@@ -1,0 +1,14 @@
+# Sources verified on 2026-11-18:
+# https://github.com/xai-org/grok-build
+# https://x.ai/news/grok-build-open-source
+name: 'Grok Build'
+description: 'A terminal coding agent released by xAI for editing code, running commands, and automating software engineering tasks.'
+description_zh: 'xAI 发布的终端编程智能体，用于编辑代码、执行命令和自动化软件工程任务。'
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 1300902838
+          name: xai-org/grok-build

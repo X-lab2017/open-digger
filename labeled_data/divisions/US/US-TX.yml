@@ -16,4 +16,5 @@ data:
     - ':companies/hedera'
     - ':companies/nousresearch'
     - ':companies/oracle'
+    - ':companies/xai'
     - ':foundations/openinfra'

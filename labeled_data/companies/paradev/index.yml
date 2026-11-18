@@ -1,0 +1,16 @@
+# Sources verified on 2026-11-18:
+# https://www.ycombinator.com/companies/paradev
+# https://paradev.com/
+name: 'Paradev'
+description: 'A software company developing collaborative tools for AI-assisted software development.'
+description_zh: '研发人工智能辅助软件开发协作工具的软件企业。'
+type: Company
+data:
+  labels:
+    - paradev
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      orgs:
+        - id: 242687620
+          name: ParadevAI

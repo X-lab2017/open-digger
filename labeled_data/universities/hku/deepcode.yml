@@ -1,0 +1,14 @@
+# Sources verified on 2026-11-18:
+# https://github.com/HKUDS/DeepCode
+# https://hkuds.github.io/DeepCode/
+name: 'DeepCode'
+description: 'An open-source coding agent system developed by the Data Intelligence Lab at the University of Hong Kong, with multiple agents and terminal, desktop, and web clients.'
+description_zh: '香港大学数据智能实验室开发的开源编程智能体系统，支持多智能体以及终端、桌面和网页客户端。'
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 983246568
+          name: HKUDS/DeepCode

@@ -1,0 +1,14 @@
+# Sources verified on 2026-11-18:
+# https://github.com/SWE-agent/mini-swe-agent
+# https://mini-swe-agent.com/latest/
+name: 'mini-SWE-agent'
+description: 'A minimal software engineering agent developed by the Princeton and Stanford team behind SWE-agent and SWE-bench.'
+description_zh: '由 SWE-agent 与 SWE-bench 背后的普林斯顿大学和斯坦福大学团队开发的轻量软件工程智能体。'
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 1010318950
+          name: SWE-agent/mini-swe-agent

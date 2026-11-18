@@ -1,0 +1,14 @@
+# Sources verified on 2026-11-18:
+# https://github.com/manaflow-ai/cmux
+# https://github.com/manaflow-ai/cmux/blob/main/LICENSE
+name: 'cmux'
+description: 'A terminal workspace developed by Manaflow for running coding agents, with split panes, browser tools, and notifications. The client is GPL-licensed; designated server directories use the Business Source License.'
+description_zh: 'Manaflow 开发的编程智能体终端工作区，支持分屏、浏览器工具和通知。客户端采用 GPL 许可证，指定服务端目录采用 Business Source License。'
+type: Project
+data:
+  platforms:
+    - name: GitHub
+      type: Code Hosting
+      repos:
+        - id: 1144115288
+          name: manaflow-ai/cmux

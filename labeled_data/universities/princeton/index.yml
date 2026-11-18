@@ -4,6 +4,7 @@ type: University-0
 data:
   labels:
     - dao_ai_lab
+    - mini_swe_agent
   platforms:
     - name: GitHub
       type: Code Hosting
