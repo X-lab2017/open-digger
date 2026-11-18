@@ -2,6 +2,8 @@ name: Didi
 name_zh: 滴滴
 type: Company
 data:
+  labels:
+    - huatuo
   platforms:
     - name: GitHub
       type: Code Hosting
