@@ -16,6 +16,9 @@ jobs:
         with:
           node-version: 20
       - run: npm install
+        env:
+          # Label imports do not need the optional ONNX Runtime CUDA binaries.
+          npm_config_onnxruntime_node_install_cuda: skip
       - env:
           CLICKHOUSE_URL: ${{ secrets.CLICKHOUSE_URL }}
           CLICKHOUSE_USERNAME: ${{ secrets.CLICKHOUSE_USERNAME }}
