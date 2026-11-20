@@ -7,6 +7,7 @@ data:
     - ':companies/intel/openvino'
     - ':companies/microsoft/onnxruntime'
     - ':companies/nvidia/tensorrt'
+    - ':companies/xorbits/xinference'
     - ':universities/uc_berkeley/sglang'
     - ':universities/uc_berkeley/vllm'
     - ':universities/uc_berkeley/vllm_omni'
