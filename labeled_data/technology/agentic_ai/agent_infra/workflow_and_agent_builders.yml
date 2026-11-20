@@ -5,5 +5,7 @@ data:
     - ':companies/activepieces/activepieces'
     - ':companies/datastax/langflow'
     - ':companies/dify_ai/dify'
+    - ':companies/fit2cloud/maxkb'
+    - ':companies/huanjiyun/fastgpt'
     - ':companies/n8n/n8n'
     - ':companies/workday/flowiseai'

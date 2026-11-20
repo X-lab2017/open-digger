@@ -3,5 +3,6 @@ type: Tech-2
 data:
   labels:
     - ':communities/llm_d/llm_d'
+    - ':companies/fit2cloud/1panel'
     - ':companies/nvidia/dynamo'
     - ':companies/ollama/ollama'
