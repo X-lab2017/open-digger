@@ -1,0 +1,13 @@
+name: Accommodation and Food Services
+name_zh: 住宿和餐饮服务业
+type: Industry-0
+description: Lodging and preparation of meals, snacks, and beverages for immediate consumption.
+description_zh: 包括住宿服务，以及供即时消费的正餐、小吃和饮品制售。
+meta:
+  classification: NAICS
+  version: '2022'
+  code: '72'
+  level: sector
+  source: https://www.census.gov/programs-surveys/economic-census/year/2022/guidance/understanding-naics.html
+data:
+  labels: []

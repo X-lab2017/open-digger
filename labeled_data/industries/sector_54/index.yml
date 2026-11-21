@@ -1,0 +1,13 @@
+name: Professional, Scientific, and Technical Services
+name_zh: 专业、科学和技术服务业
+type: Industry-0
+description: Services requiring specialized professional, scientific, or technical expertise, including legal, engineering, consulting, and research services.
+description_zh: 包括法律、工程、咨询和研究等需要专业、科学或技术知识的服务。
+meta:
+  classification: NAICS
+  version: '2022'
+  code: '54'
+  level: sector
+  source: https://www.census.gov/programs-surveys/economic-census/year/2022/guidance/understanding-naics.html
+data:
+  labels: []

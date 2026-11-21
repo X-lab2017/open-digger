@@ -1,0 +1,13 @@
+name: Utilities
+name_zh: 公用事业
+type: Industry-0
+description: Provision of electric power, natural gas, steam, water, and sewage removal services.
+description_zh: 包括电力、天然气、蒸汽和供水服务，以及污水排放服务。
+meta:
+  classification: NAICS
+  version: '2022'
+  code: '22'
+  level: sector
+  source: https://www.census.gov/programs-surveys/economic-census/year/2022/guidance/understanding-naics.html
+data:
+  labels: []

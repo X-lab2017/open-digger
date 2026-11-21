@@ -1,0 +1,13 @@
+name: Transportation and Warehousing
+name_zh: 运输和仓储业
+type: Industry-0
+description: Transportation of passengers and cargo, warehousing and storage, and support activities for transportation.
+description_zh: 包括客货运输、仓储及运输支持活动。
+meta:
+  classification: NAICS
+  version: '2022'
+  code: '48-49'
+  level: sector
+  source: https://www.census.gov/programs-surveys/economic-census/year/2022/guidance/understanding-naics.html
+data:
+  labels: []

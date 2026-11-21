@@ -1,0 +1,13 @@
+name: Retail Trade
+name_zh: 零售业
+type: Industry-0
+description: Retail sale of merchandise, generally to the public for personal or household use, and related services.
+description_zh: 包括主要面向公众个人或家庭用途的商品零售及相关服务。
+meta:
+  classification: NAICS
+  version: '2022'
+  code: '44-45'
+  level: sector
+  source: https://www.census.gov/programs-surveys/economic-census/year/2022/guidance/understanding-naics.html
+data:
+  labels: []

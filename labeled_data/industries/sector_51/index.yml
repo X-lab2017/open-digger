@@ -1,0 +1,13 @@
+name: Information
+name_zh: 信息业
+type: Industry-0
+description: Production and distribution of information and cultural products, telecommunications, data processing, and related services.
+description_zh: 包括信息和文化产品的生产与传播、电信、数据处理及相关服务。
+meta:
+  classification: NAICS
+  version: '2022'
+  code: '51'
+  level: sector
+  source: https://www.census.gov/programs-surveys/economic-census/year/2022/guidance/understanding-naics.html
+data:
+  labels: []

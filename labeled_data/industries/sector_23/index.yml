@@ -1,0 +1,13 @@
+name: Construction
+name_zh: 建筑业
+type: Industry-0
+description: Construction of buildings and infrastructure, including alterations, repairs, and specialized construction trades.
+description_zh: 包括建筑物和基础设施建设、改建、修缮及专业施工作业。
+meta:
+  classification: NAICS
+  version: '2022'
+  code: '23'
+  level: sector
+  source: https://www.census.gov/programs-surveys/economic-census/year/2022/guidance/understanding-naics.html
+data:
+  labels: []

@@ -1,0 +1,13 @@
+name: Management of Companies and Enterprises
+name_zh: 公司和企业管理
+type: Industry-0
+description: Holding controlling interests in companies or administering, overseeing, and managing companies and enterprises.
+description_zh: 包括持有企业控股权益，以及对公司和企业进行管理、监督和经营统筹。
+meta:
+  classification: NAICS
+  version: '2022'
+  code: '55'
+  level: sector
+  source: https://www.census.gov/programs-surveys/economic-census/year/2022/guidance/understanding-naics.html
+data:
+  labels: []

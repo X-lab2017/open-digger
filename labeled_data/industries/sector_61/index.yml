@@ -1,0 +1,13 @@
+name: Educational Services
+name_zh: 教育服务业
+type: Industry-0
+description: Instruction and training provided by schools, colleges, universities, training centers, and other educational establishments.
+description_zh: 包括学校、学院、大学、培训中心及其他教育机构提供的教学和培训。
+meta:
+  classification: NAICS
+  version: '2022'
+  code: '61'
+  level: sector
+  source: https://www.census.gov/programs-surveys/economic-census/year/2022/guidance/understanding-naics.html
+data:
+  labels: []

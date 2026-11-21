@@ -1,0 +1,13 @@
+name: Mining, Quarrying, and Oil and Gas Extraction
+name_zh: 采矿、采石及石油天然气开采业
+type: Industry-0
+description: Extraction of minerals, oil, and natural gas, including quarrying and related support activities.
+description_zh: 包括矿物、石油和天然气开采、采石及相关支持活动。
+meta:
+  classification: NAICS
+  version: '2022'
+  code: '21'
+  level: sector
+  source: https://www.census.gov/programs-surveys/economic-census/year/2022/guidance/understanding-naics.html
+data:
+  labels: []

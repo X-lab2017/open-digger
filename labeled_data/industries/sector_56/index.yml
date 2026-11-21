@@ -1,0 +1,13 @@
+name: Administrative and Support and Waste Management and Remediation Services
+name_zh: 行政支持、废弃物管理和修复服务业
+type: Industry-0
+description: Routine support services for organizations, waste management, and remediation of contaminated sites.
+description_zh: 包括面向组织的日常支持服务、废弃物管理及污染场地修复。
+meta:
+  classification: NAICS
+  version: '2022'
+  code: '56'
+  level: sector
+  source: https://www.census.gov/programs-surveys/economic-census/year/2022/guidance/understanding-naics.html
+data:
+  labels: []

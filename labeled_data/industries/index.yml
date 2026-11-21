@@ -1,0 +1,31 @@
+name: North American Industry Classification System (2022)
+name_zh: 北美行业分类体系（2022 版）
+type: null
+description: NAICS 2022 industry sectors used to classify projects by the economic activities they serve.
+description_zh: 采用 NAICS 2022 行业大类，按项目所服务的经济活动进行分类。
+meta:
+  classification: NAICS
+  version: '2022'
+  source: https://www.census.gov/programs-surveys/economic-census/year/2022/guidance/understanding-naics.html
+data:
+  labels:
+    - sector_11
+    - sector_21
+    - sector_22
+    - sector_23
+    - sector_31_33
+    - sector_42
+    - sector_44_45
+    - sector_48_49
+    - sector_51
+    - sector_52
+    - sector_53
+    - sector_54
+    - sector_55
+    - sector_56
+    - sector_61
+    - sector_62
+    - sector_71
+    - sector_72
+    - sector_81
+    - sector_92
