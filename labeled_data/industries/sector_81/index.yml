@@ -1,0 +1,13 @@
+name: Other Services (except Public Administration)
+name_zh: 其他服务业（公共行政除外）
+type: Industry-0
+description: Repair, maintenance, personal, laundry, religious, civic, and similar services, including services of private households.
+description_zh: 包括维修保养、个人服务、洗衣、宗教和社会组织活动，以及私人家庭雇佣服务。
+meta:
+  classification: NAICS
+  version: '2022'
+  code: '81'
+  level: sector
+  source: https://www.census.gov/programs-surveys/economic-census/year/2022/guidance/understanding-naics.html
+data:
+  labels: []

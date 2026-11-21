@@ -38,7 +38,7 @@ function findCountryByChineseName(countryName: string, countryData: CountryData[
 const supportedTypes = new Set([
   'Division-0', 'Division-1', 'Region-0', 'Region-1', 'Company', 'Community',
   'Project', 'Foundation', 'University-0', 'Agency-0', 'Institution',
-  'Tech-0', 'Tech-1', 'Tech-2', 'Tech-3', 'Domain-0', 'Bot'
+  'Tech-0', 'Tech-1', 'Tech-2', 'Tech-3', 'Domain-0', 'Industry-0', 'Bot'
 ]);
 
 // 支持的平台

@@ -1,0 +1,13 @@
+name: Agriculture, Forestry, Fishing and Hunting
+name_zh: 农业、林业、渔业和狩猎业
+type: Industry-0
+description: Crop and animal production, forestry, fishing, hunting, and related support activities.
+description_zh: 包括农作物种植、动物养殖、林业、渔业、狩猎及相关支持活动。
+meta:
+  classification: NAICS
+  version: '2022'
+  code: '11'
+  level: sector
+  source: https://www.census.gov/programs-surveys/economic-census/year/2022/guidance/understanding-naics.html
+data:
+  labels: []

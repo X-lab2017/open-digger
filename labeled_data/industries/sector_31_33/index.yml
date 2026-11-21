@@ -1,0 +1,13 @@
+name: Manufacturing
+name_zh: 制造业
+type: Industry-0
+description: Mechanical, physical, or chemical transformation of materials, substances, or components into new products.
+description_zh: 通过机械、物理或化学方式，将材料、物质或零部件加工为新产品。
+meta:
+  classification: NAICS
+  version: '2022'
+  code: '31-33'
+  level: sector
+  source: https://www.census.gov/programs-surveys/economic-census/year/2022/guidance/understanding-naics.html
+data:
+  labels: []

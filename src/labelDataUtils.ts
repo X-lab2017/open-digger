@@ -15,6 +15,7 @@ const checkKeysAndTypes = {
     'Agency-0', 'Agency-1',
     'Institution-0', 'Institution-1',
     'Tech-0', 'Tech-1', 'Tech-2', 'Tech-3', 'Domain-0',
+    'Industry-0',
     'Bot'
   ]),
   labelKeys: new Set<string>([

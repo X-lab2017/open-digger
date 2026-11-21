@@ -1,0 +1,13 @@
+name: Wholesale Trade
+name_zh: 批发业
+type: Industry-0
+description: Wholesale distribution of goods and arrangements for their purchase or sale, generally to businesses.
+description_zh: 包括主要面向企业的商品批发，以及为商品采购或销售提供中介服务。
+meta:
+  classification: NAICS
+  version: '2022'
+  code: '42'
+  level: sector
+  source: https://www.census.gov/programs-surveys/economic-census/year/2022/guidance/understanding-naics.html
+data:
+  labels: []

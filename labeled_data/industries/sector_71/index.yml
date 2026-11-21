@@ -1,0 +1,13 @@
+name: Arts, Entertainment, and Recreation
+name_zh: 艺术、娱乐和休闲业
+type: Industry-0
+description: Cultural, entertainment, and recreational activities, including live performances, museums, sports, and amusement facilities.
+description_zh: 包括现场演出、博物馆、体育和游乐设施等文化、娱乐及休闲活动。
+meta:
+  classification: NAICS
+  version: '2022'
+  code: '71'
+  level: sector
+  source: https://www.census.gov/programs-surveys/economic-census/year/2022/guidance/understanding-naics.html
+data:
+  labels: []

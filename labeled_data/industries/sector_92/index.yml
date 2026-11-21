@@ -1,0 +1,13 @@
+name: Public Administration
+name_zh: 公共行政
+type: Industry-0
+description: Government administration, regulation, public safety, national security, and administration of public programs.
+description_zh: 包括政府行政管理、监管、公共安全、国家安全及公共事务管理。
+meta:
+  classification: NAICS
+  version: '2022'
+  code: '92'
+  level: sector
+  source: https://www.census.gov/programs-surveys/economic-census/year/2022/guidance/understanding-naics.html
+data:
+  labels: []

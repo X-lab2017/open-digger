@@ -1,0 +1,13 @@
+name: Health Care and Social Assistance
+name_zh: 医疗保健和社会援助
+type: Industry-0
+description: Health care and social assistance services for individuals, including medical care, residential care, and social support.
+description_zh: 包括面向个人的医疗保健、住宿照护和社会支持等服务。
+meta:
+  classification: NAICS
+  version: '2022'
+  code: '62'
+  level: sector
+  source: https://www.census.gov/programs-surveys/economic-census/year/2022/guidance/understanding-naics.html
+data:
+  labels: []

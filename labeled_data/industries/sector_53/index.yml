@@ -1,0 +1,13 @@
+name: Real Estate and Rental and Leasing
+name_zh: 房地产与租赁业
+type: Industry-0
+description: Real estate services, rental and leasing of tangible assets, and leasing of nonfinancial intangible assets.
+description_zh: 包括房地产服务、有形资产租赁及非金融无形资产出租。
+meta:
+  classification: NAICS
+  version: '2022'
+  code: '53'
+  level: sector
+  source: https://www.census.gov/programs-surveys/economic-census/year/2022/guidance/understanding-naics.html
+data:
+  labels: []
