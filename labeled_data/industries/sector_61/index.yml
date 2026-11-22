@@ -10,4 +10,16 @@ meta:
   level: sector
   source: https://www.census.gov/programs-surveys/economic-census/year/2022/guidance/understanding-naics.html
 data:
-  labels: []
+  labels:
+    # Direct-use assignments and primary sources are documented in ../README.md.
+    - ':companies/dfrobot/mindplus_desktop'
+    - ':companies/mozilla/mdn'
+    - ':foundations/free_ebook/free_programming_books'
+    - ':foundations/girlscript/gssoc24'
+    - ':foundations/linux_foundation/lfai/datapractices'
+    - ':foundations/openatom/open_brother'
+    - ':projects/daily_codeforce_problems'
+    - ':projects/first_contributions'
+    - ':projects/spring_boot_tutorials'
+    - ':projects/the_algorithms'
+    - ':projects/woowacourse_precourse'

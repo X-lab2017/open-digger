@@ -1,9 +1,15 @@
-name: Trae
+# Sources verified on 2026-11-22:
+# https://www.trae.ai/enterprise
+# https://github.com/Trae-AI/TRAE
+# https://api.github.com/orgs/Trae-AI
+name: TRAE
+description: An AI-powered development environment for code understanding, generation, and agent-assisted software development. This label covers its official GitHub organization.
+description_zh: 面向代码理解、生成和智能体辅助软件开发的 AI 开发环境。本标签覆盖其官方 GitHub 组织。
 type: Project
 data:
   platforms:
     - name: GitHub
       type: Code Hosting
       orgs:
-        - id: 164546571
-          name: Trea-AI
+        - id: 192691831
+          name: Trae-AI

@@ -30,7 +30,11 @@ manufacturing is `:industries/sector_31_33`.
 
 Only the two-digit sector level is included. Manufacturing (31-33), retail trade
 (44-45), and transportation and warehousing (48-49) each use a range of two-digit
-codes. Project assignments are currently empty.
+codes. Project assignments use their direct purpose: general-purpose software
+and computing infrastructure belong to Information (51), while projects with a
+verified sector-specific purpose belong to that sector. Projects without enough
+evidence are left unassigned. See [industry mapping notes](industries/README.md)
+for the assignment policy, sources, and entries requiring manual review.
 
 Each sector uses `index.yml`. Official codes are stored as strings in `meta.code`,
 alongside the classification, version, level, and source. English names follow the
