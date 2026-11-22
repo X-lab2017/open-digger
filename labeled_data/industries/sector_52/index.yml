@@ -10,4 +10,15 @@ meta:
   level: sector
   source: https://www.census.gov/programs-surveys/economic-census/year/2022/guidance/understanding-naics.html
 data:
-  labels: []
+  labels:
+    # Direct-use assignments and primary sources are documented in ../README.md.
+    - ':companies/consensys/metamask'
+    - ':companies/llama_corp/defillama'
+    - ':companies/llama_corp/llamapay'
+    - ':companies/mifos/fineract'
+    - ':companies/shinnytech/tqsdk'
+    - ':companies/stripe/stripe_cli'
+    - ':companies/stripe/stripe_sdks'
+    - ':foundations/anoma/namada'
+    - ':foundations/linux_foundation/openjs/interledger'
+    - ':projects/bitcoin'

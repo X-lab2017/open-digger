@@ -10,4 +10,6 @@ meta:
   level: sector
   source: https://www.census.gov/programs-surveys/economic-census/year/2022/guidance/understanding-naics.html
 data:
-  labels: []
+  labels:
+    # Direct-use assignments and primary sources are documented in ../README.md.
+    - ':foundations/linux_foundation/openjs/hospitalrun'

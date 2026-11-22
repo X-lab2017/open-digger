@@ -10,4 +10,18 @@ meta:
   level: sector
   source: https://www.census.gov/programs-surveys/economic-census/year/2022/guidance/understanding-naics.html
 data:
-  labels: []
+  labels:
+    # Direct-use assignments and primary sources are documented in ../README.md.
+    - ':companies/3drobotics/ardupilot'
+    - ':companies/baidu/apollo'
+    - ':companies/elephant_robotics/mycobot_ros'
+    - ':companies/elephant_robotics/pymycobot'
+    - ':companies/openmind/om1'
+    - ':companies/slamtec/rplidar'
+    - ':companies/taos/tdengine'
+    - ':companies/unitree/unitree_sdk2'
+    - ':foundations/linux_foundation/lfed/fledge'
+    - ':foundations/openatom/carsmos'
+    - ':foundations/openatom/opendacs'
+    - ':institutions/cas/xiangshan'
+    - ':projects/orca_slicer'

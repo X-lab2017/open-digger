@@ -10,4 +10,23 @@ meta:
   level: sector
   source: https://www.census.gov/programs-surveys/economic-census/year/2022/guidance/understanding-naics.html
 data:
-  labels: []
+  labels:
+    # Direct-use assignments and primary sources are documented in ../README.md.
+    - ':companies/bytedance/oceanengine'
+    - ':companies/expensify/expensify'
+    - ':companies/formbricks/formbricks'
+    - ':companies/horizon_robotics/embodiedgen'
+    - ':companies/horizon_robotics/holomotion'
+    - ':companies/horizon_robotics/sparse4d'
+    - ':companies/huggingface/lerobot'
+    - ':companies/kitware/trame'
+    - ':companies/kitware/vtk_js'
+    - ':companies/manycore/plankassembly'
+    - ':companies/manycore/spatialgen'
+    - ':companies/matra_datavision/freecad'
+    - ':companies/unitree/unitree_mujoco'
+    - ':companies/unitree/unitree_rl_gym'
+    - ':companies/unitree/unitree_rl_lab'
+    - ':institutions/cern/alice_o2'
+    - ':projects/bioconda'
+    - ':projects/genesis'
